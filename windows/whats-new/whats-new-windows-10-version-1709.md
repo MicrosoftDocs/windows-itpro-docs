@@ -41,12 +41,25 @@ A brief description of new or updated features in this version of Windows 10 is 
 
 &nbsp;
 
-[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false]
+[!video https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false]
 
 &nbsp;
 
-[![What's new in Windows 10 1709](images\video-1709.jpg)](https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false)
+[![What's new in Windows 10 1709](images\video-1709s.jpg)](https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false)
 
+&nbsp;
+
+<div align="center">
+  <a href="https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false"><img src="images\video-1709s.jpg" alt="What's new in Windows 10 1709"></a>
+</div>
+
+&nbsp;
+
+<iframe width="600" height="340" frameborder="0" allowfullscreen="true" style="width: 600px !important">
+
+[![What's new in Windows 10 1709](images\video-1709s.jpg)](https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false)
+
+</iframe>
 
 ## Deployment
 
