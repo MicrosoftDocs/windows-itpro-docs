@@ -39,6 +39,15 @@ A brief description of new or updated features in this version of Windows 10 is 
 <iframe class="video-iframe" width="960" height="540" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false"> 
 </iframe>
 
+<BR>&nbsp;Smaller with div
+
+<div id="centered" style="margin: 0 auto; width:480px;">
+
+<iframe class="video-iframe" width="480" height="270" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false"> 
+</iframe>
+
+</div>
+
 Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 
 
 
