@@ -7,6 +7,7 @@
 ## [Windows 10 diagnostic data for the Full telemetry level](windows-diagnostic-data-1703.md)
 ## [Beginning your General Data Protection Regulation (GDPR) journey for Windows 10](gdpr-win10-whitepaper.md)
 ## [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
+## [Manage Windows 10 connection endpoints](manage-windows-endpoints-version-1709.md)
 ## [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md)
 ## [Configure kiosk and shared devices running Windows 10 desktop editions](kiosk-shared-pc.md)
 ### [Set up a shared or guest PC with Windows 10](set-up-shared-or-guest-pc.md)

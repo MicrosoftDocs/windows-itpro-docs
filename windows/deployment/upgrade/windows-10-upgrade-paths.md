@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.pagetype: mobile
 author: greg-lindsay
-ms.date: 10/16/2017
+ms.date: 01/18/2018
 ---
 
 # Windows 10 upgrade paths
@@ -22,7 +22,7 @@ This topic provides a summary of available upgrade paths to Windows 10. You can 
 
 >**Windows 10 LTSB**: The upgrade paths displayed below do not apply to Windows 10 LTSB. In-place upgrade from Windows 7 or Windows 8.1 to Windows 10 LTSB is not supported.  (Note that Windows 10 LTSB 2015 did not block this upgrade path.  This was corrected in the Windows 10 LTSB 2016 release, which will now only allow data-only and clean install options.)
 
->**Windows N/KN**: Windows "N" and "KN" editions follow the same upgrade paths shown below. If the pre-upgrade and post-upgrade editions are not the same type (e.g. Windows 8.1 Pro N to Windows 10 Pro), personal data will be kept but applications and settings will be removed during the upgrade process.
+>**Windows N/KN**: Windows "N" and "KN" SKUs follow the same upgrade paths shown below. If the pre-upgrade and post-upgrade editions are not the same type (e.g. Windows 8.1 Pro N to Windows 10 Pro), personal data will be kept but applications and settings will be removed during the upgrade process.
 
 ✔ = Full upgrade is supported including personal data, settings, and applications.<BR>
 D = Edition downgrade; personal data is maintained, applications and settings are removed.
