@@ -29,7 +29,7 @@ When you run ADKsetup.exe for Windows 10, version 1607, select **Configuration D
 > [!NOTE]
 > In previous versions of the Windows 10 ADK, you had to install additional features for Windows Configuration Designer to run. Starting in version 1607, you can install Windows Configuration Designer without other ADK features.
 
-<span id="wizard" /.
+<span id="wizard" />
 ## Create a provisioning package for HoloLens using the HoloLens wizard
 
 The HoloLens wizard helps you configure the following settings in a provisioning package:
