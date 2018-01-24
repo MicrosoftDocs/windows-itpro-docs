@@ -18,6 +18,7 @@ This section describes the settings that you can configure in [provisioning pack
 
 | Setting group | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
+[AccountManagement](wcd-accountmanagement.md) | X | X | X | X |  |
 | [Accounts](wcd-accounts.md) | X | X | X | X | X |
 | [ADMXIngestion](wcd-admxingestion.md) | X | | | | |
 | [ApplicationManagement](wcd-applicationmanagement.md) |  |  |  |  | X |

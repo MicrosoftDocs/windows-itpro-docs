@@ -124,7 +124,7 @@ This section describes the **Policies** settings that you can configure in [prov
 
 | Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: | :---: |
-| [AllowCamera](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#camera-allowcamera) | Disable or enable the camera. | X | X | X |  |  |
+| [AllowCamera](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#camera-allowcamera) | Disable or enable the camera. | X | X | X | X |  |
 
 
 ## Connectivity
