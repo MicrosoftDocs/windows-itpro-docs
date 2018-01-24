@@ -217,12 +217,17 @@ Valid values:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Use this policy setting if you want to disable the display of the app and browser protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
 
-<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete. Valid values:
+<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete.
+
+<!--EndDescription-->
+
+<!--SupportedValues-->
+The following list shows the supported values:
 
 - 0 - (Disable) The users can see the display of the app and browser protection area in Windows Defender Security Center.
 - 1 - (Enable) The users cannot see the display of the app and browser protection area in Windows Defender Security Center.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -321,12 +326,16 @@ Valid values:
 > [!Note]  
 > If Suppress notification is enabled then users will not see critical or non-critical messages.
 
-<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete. Valid values:
+<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 - 0 - (Disable) Windows Defender Security Center will display critical and non-critical notifications to users..
 - 1 - (Enable) Windows Defender Security Center only display notifications which are considered critical on clients.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -367,12 +376,16 @@ Valid values:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Use this policy setting if you want to disable the display of the family options area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
 
-<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete. Valid values:
+<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 - 0 - (Disable) The users can see the display of the family options area in Windows Defender Security Center.
 - 1 - (Enable) The users cannot see the display of the family options area in Windows Defender Security Center.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -413,12 +426,16 @@ Valid values:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Use this policy setting if you want to disable the display of the device performance and health area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
 
-<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete. Valid values:
+<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 - 0 - (Disable) The users can see the display of the device performance and health area in Windows Defender Security Center.
 - 1 - (Enable) The users cannot see the display of the device performance and health area in Windows Defender Security Center.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -459,12 +476,16 @@ Valid values:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Use this policy setting if you want to disable the display of the firewall and network protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
 
-<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete. Valid values:
+<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 - 0 - (Disable) The users can see the display of the firewall and network protection area in Windows Defender Security Center.
 - 1 - (Enable) The users cannot see the display of the firewall and network protection area in Windows Defender Security Center.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -505,12 +526,16 @@ Valid values:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Use this policy setting if you want to disable the display of Windows Defender Security Center notifications. If you disable or do not configure this setting, Windows Defender Security Center notifications will display on devices.
 
-<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete. Valid values:
+<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 - 0 - (Disable) The users can see the display of Windows Defender Security Center notifications.
 - 1 - (Enable) The users cannot see the display of Windows Defender Security Center notifications.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -551,12 +576,16 @@ Valid values:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Use this policy setting if you want to disable the display of the virus and threat protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
 
-<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete. Valid values:
+<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 - 0 - (Disable) The users can see the display of the virus and threat protection area in Windows Defender Security Center.
 - 1 - (Enable) The users cannot see the display of the virus and threat protection area in Windows Defender Security Center.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -597,12 +626,16 @@ Valid values:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Prevent users from making changes to the exploit protection settings area in the Windows Defender Security Center. If you disable or do not configure this setting, local users can make changes in the exploit protection settings area.
 
-<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete.Valid values:
+<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 - 0 - (Disable) Local users are allowed to make changes in the exploit protection settings area.
 - 1 - (Enable) Local users cannot make changes in the exploit protection settings area.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -686,12 +719,16 @@ Valid values:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Enable this policy to display your company name and contact options in the notifications. If you disable or do not configure this setting, or do not provide CompanyName and a minimum of one contact method (Phone using Skype, Email, Help portal URL) Windows Defender Security Center will display a default notification text.
 
-<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace, and Delete. Valid values:
+<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 - 0 - (Disable) Notifications contain a default notification text.
 - 1 - (Enable) Notifications contain the company name and contact options.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -732,12 +769,16 @@ Valid values:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Enable this policy to have your company name and contact options displayed in a contact card fly out in Windows Defender Security Center. If you disable or do not configure this setting, or do not provide CompanyName and a minimum of one contact method (Phone using Skype, Email, Help portal URL) Windows Defender Security Center will not display the contact card fly out notification.
 
-<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace, and Delete. Valid values:
+<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 - 0 - (Disable) Do not display the company name and contact options in the card fly out notification.
 - 1 - (Enable) Display the company name and contact options in the card fly out notification.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
