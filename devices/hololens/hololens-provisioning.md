@@ -18,7 +18,7 @@ Some of the HoloLens configurations that you can apply in a provisioning package
 - Upgrade to Windows Holographic for Business
 - Set up a local account
 - Set up a Wi-Fi connection
-- Apply certificatess to the device
+- Apply certificates to the device
 
 To install Windows Configuration Designer and create provisioning packages, you must [install the Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) or install [Windows Configuration Designer](https://www.microsoft.com/store/apps/9nblggh4tx22) from the Microsoft Store.
 
