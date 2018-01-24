@@ -3338,13 +3338,16 @@ User Account Control: Virtualize file and registry write failures to per-user lo
 
 This policy setting controls whether application write failures are redirected to defined registry and file system locations. This policy setting mitigates applications that run as administrator and write run-time application data to %ProgramFiles%, %Windir%, %Windir%\system32, or HKLM\Software.
 
-The options are:
-- 0 - Disabled: Applications that write data to protected locations fail.
-- 1 - Enabled: (Default) Application write failures are redirected at run time to defined user locations for both the file system and registry.
-
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0 - Disabled: Applications that write data to protected locations fail.
+- 1 - Enabled: (Default) Application write failures are redirected at run time to defined user locations for both the file system and registry.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 

@@ -403,16 +403,20 @@ ms.date: 12/19/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. Option to download updates automatically over metered connections (off by default). Value type is integer.  
-
-- 0 (default) - Not allowed
-- 1 - Allowed
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Option to download updates automatically over metered connections (off by default). Value type is integer.
 
 A significant number of devices primarily use cellular data and do not have Wi-Fi access, which leads to a lower number of devices getting updates. Since a large number of devices have large data plans or unlimited data, this policy can unblock devices from getting updates.
 
 This policy is accessible through the Update setting in the user interface or Group Policy.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0 (default) - Not allowed
+- 1 - Allowed
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1152,14 +1156,18 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <p style="margin-left: 20px">For more information about dual scan, see [Demystifying "Dual Scan"](https://blogs.technet.microsoft.com/wsus/2017/05/05/demystifying-dual-scan/) and [Improving Dual Scan on 1607](https://blogs.technet.microsoft.com/wsus/2017/08/04/improving-dual-scan-on-1607/).
 
-- 0 - allow scan against Windows Update
-- 1 - do not allow update deferral policies to cause scans against Windows Update 
-
 <p style="margin-left: 20px">This is the same as the Group Policy in Windows Components > Window Update "Do not allow update deferral policies to cause scans against Windows Update."
 
 <p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0 - allow scan against Windows Update
+- 1 - do not allow update deferral policies to cause scans against Windows Update 
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1436,8 +1444,16 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 > [!WARNING]
 > Setting this policy might cause devices to incur costs from MO operators.
 
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
-<p style="margin-left: 20px">To validate this policy:
+-   0 (default) – Do not ignore MO download limit for apps and their updates.
+-   1 – Ignore MO download limit (allow unlimited downloading) for apps and their updates.
+
+<!--/SupportedValues-->
+<!--Validation-->
+To validate this policy:
 
 1.  Enable the policy ensure the device is on a cellular network.
 2.  Run the scheduled task on your device to check for app updates in the background. For example, on a mobile device, run the following commands in TShell: 
@@ -1447,14 +1463,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 3.   Verify that any downloads that are above the download size limit will complete without being paused.
 
-<!--EndDescription-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 (default) – Do not ignore MO download limit for apps and their updates.
--   1 – Ignore MO download limit (allow unlimited downloading) for apps and their updates.
-
-<!--/SupportedValues-->
+<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
