@@ -19,7 +19,7 @@ Below is a list of some of the new and updated content that discusses IT Pro fea
 
 A brief description of new or updated features in this version of Windows 10 is provided, with links to content with more detailed information.
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 
+ 
 
 
 ## Deployment
