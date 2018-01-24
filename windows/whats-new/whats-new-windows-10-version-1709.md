@@ -18,23 +18,16 @@ ms.localizationpriority: high
 Below is a list of some of the new and updated content that discusses IT Pro features in Windows 10, version 1709, also known as the Fall Creators Update. Windows 10, version 1709 also contains all features and fixes included in previous cumulative updates to Windows 10, version 1703.
 
 A brief description of new or updated features in this version of Windows 10 is provided, with links to content with more detailed information. The following 3-minute video summarizes these features.
-<<<<<<< HEAD
 
 &nbsp;
 
 <iframe class="video-iframe" width="600" height="340" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false"> 
 </iframe>
 
-=======
->>>>>>> b11a38deca48d2ee7a42ce4175986237fdd6a413
-
 &nbsp;
 
-<iframe class="video-iframe" width="600" height="340" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false"> 
+<iframe class="video-iframe" style="width: 600px !important"  frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false"> 
 </iframe>
-
-
- 
 
 
 ## Deployment
