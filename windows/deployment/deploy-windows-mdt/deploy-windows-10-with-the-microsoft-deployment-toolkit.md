@@ -93,5 +93,3 @@ The information in this guide is designed to help you deploy Windows 10. In ord
 
 [Volume Activation for Windows 10](../volume-activation/volume-activation-windows-10.md)
 
-
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=deploy-windows-10-with-the-microsoft-deployment-toolkit.md).

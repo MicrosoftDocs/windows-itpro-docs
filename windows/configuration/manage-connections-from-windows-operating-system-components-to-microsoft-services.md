@@ -31,8 +31,6 @@ To help make it easier to deploy settings to restrict connections from Windows 1
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=manage-connections-from-windows-operating-system-components-to-microsoft-services.md). 
-
 ## What's new in Windows 10, version 1709
 
 Here's a list of changes that were made to this article for Windows 10, version 1709:
