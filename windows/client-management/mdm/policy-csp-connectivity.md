@@ -105,8 +105,6 @@ ms.date: 12/14/2017
 > [!NOTE]
 >  This value is not supported in Windows Phone 8.1 MDM and EAS, Windows 10 for desktop, or Windows 10 Mobile.
 
--   2 (default) – Allow Bluetooth. If this is set to 2, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on.
-
 <p style="margin-left: 20px">If this is not set or it is deleted, the default value of 2 (Allow) is used.
 
 <p style="margin-left: 20px">Most restricted value is 0.
@@ -117,6 +115,7 @@ The following list shows the supported values:
 
 -   0 – Disallow Bluetooth. If this is set to 0, the radio in the Bluetooth control panel will be greyed out and the user will not be able to turn Bluetooth on.
 -   1 – Reserved. If this is set to 1, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on.
+-   2 (default) – Allow Bluetooth. If this is set to 2, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on.
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
@@ -159,13 +158,15 @@ The following list shows the supported values:
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows the cellular data channel on the device. Device reboot is not required to enforce the policy.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Do not allow the cellular data channel. The user cannot turn it on. This value is not supported in Windows 10, version 1511.
 -   1 (default) – Allow the cellular data channel. The user can turn it off.
 -   2 - Allow the cellular data channel. The user cannot turn it off.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -206,14 +207,18 @@ The following list shows the supported values:
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows or disallows cellular data roaming on the device. Device reboot is not required to enforce the policy.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Do not allow cellular data roaming. The user cannot turn it on. This value is not supported in Windows 10, version 1511.
 -   1 (default) – Allow cellular data roaming.
 -   2 - Allow cellular data roaming on. The user cannot turn it off.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
+<!--/SupportedValues-->
+<!--Validation-->
 <p style="margin-left: 20px">To validate, the enterprise can confirm by observing the roaming enable switch in the UX. It will be inactive if the roaming policy is being enforced by the enterprise policy.
 
 <p style="margin-left: 20px">To validate on mobile devices, do the following:
@@ -222,7 +227,7 @@ The following list shows the supported values:
 2.  Click on the SIM (next to the signal strength icon) and select **Properties**.
 3.  On the Properties page, select **Data roaming options**.
 
-<!--EndDescription-->
+<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
