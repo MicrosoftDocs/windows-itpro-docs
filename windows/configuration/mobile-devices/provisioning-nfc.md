@@ -16,7 +16,6 @@ ms.date: 07/27/2017
 
 -   Windows 10 Mobile
 
-[Link test 2](provisioning-configure-mobile.md#one)
 
 Near field communication (NFC) enables Windows 10 Mobile Enterprise and Windows 10 Mobile devices to communicate with an NFC tag or another NFC-enabled transmitting device. Enterprises that do bulk provisioning can use NFC-based device provisioning to provide a provisioning package to the device that's being provisioned. NFC provisioning is simple and convenient and it can easily store an entire provisioning package. 
 
