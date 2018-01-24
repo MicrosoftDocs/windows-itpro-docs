@@ -35,8 +35,10 @@ When you run ADKsetup.exe for Windows 10, version 1607, select **Configuration D
 The HoloLens wizard helps you configure the following settings in a provisioning package:
 
 - Upgrade to the enterprise edition
+
     >[!NOTE]
     >Settings in a provisioning package will only be applied if the provisioning package includes an edition upgrade license to Windows Holographic for Business or if [the device has already been upgraded to Windows Holographic for Business](hololens-upgrade-enterprise.md).
+    
 - Configure the HoloLens first experience (OOBE)
 - Configure Wi-Fi network 
 - Enroll device in Azure Active Directory or create a local account
