@@ -69,7 +69,8 @@ Provisioning packages can be:
 ### Configuration Designer wizards
 
 The following table describes settings that you can configure using the wizards in Windows Configuration Designer to create provisioning packages.
-[!div class="mx-tdBreakAll"]
+
+
 <table><tr><td align="left">**Step**</td><td align="left">**Description**</td><td>**Desktop wizard**</td><td align="center">**Mobile wizard**</td><td>**Kiosk wizard**</td><td>**HoloLens wizard**</td></tr>
 <tr><td valign="top">Set up device</td><td valign="top">Assign device name,</br>enter product key to upgrade Windows,</br>configure shared used,</br>remove pre-installed software</td><td align="center" valign="top">![yes](../images/checkmark.png)</td><td align="center" valign="top">![yes](../images/checkmark.png)</br>(Only device name and upgrade key)</td><td align="center" valign="top">![yes](../images/checkmark.png)</td><td align="center" valign="top">![yes](../images/checkmark.png)</td></tr>
 <tr><td valign="top">Set up network</td><td valign="top">Connect to a Wi-Fi network</td><td align="center" valign="top">![yes](../images/checkmark.png)</td><td align="center" valign="top">![yes](../images/checkmark.png)</td><td align="center" valign="top">![yes](../images/checkmark.png)</td><td align="center" valign="top">![yes](../images/checkmark.png)</td></tr>
