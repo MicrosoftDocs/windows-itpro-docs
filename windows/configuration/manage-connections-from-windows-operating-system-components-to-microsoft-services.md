@@ -1800,7 +1800,10 @@ For more info, see [Windows Spotlight on the lock screen](windows-spotlight.md).
 
 ### <a href="" id="bkmk-windowsstore"></a>26. Microsoft Store
 
-You can turn off the ability to launch apps from the Microsoft Store that were preinstalled or downloaded. This will also turn off automatic app updates, and the Microsoft Store will be disabled. In addition, new email accounts cannot be created. On Windows Server 2016, this will block Microsoft Store calls from Universal Windows Apps.
+You can turn off the ability to launch apps from the Microsoft Store that were preinstalled or downloaded. 
+This will also turn off automatic app updates, and the Microsoft Store will be disabled. 
+In addition, new email accounts cannot be created by clicking **Settings** > **Accounts** > **Email & app accounts** > **Add an account**. 
+On Windows Server 2016, this will block Microsoft Store calls from Universal Windows Apps.
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Store** &gt; **Disable all apps from Microsoft Store**.
 
