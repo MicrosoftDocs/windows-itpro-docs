@@ -87,13 +87,15 @@ If you disable or do not configure this policy setting, employees in your organi
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.”
 
-Suported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 - 0 - User is in control
 - 1 - Force Allow
 - 2 - Force Deny
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->

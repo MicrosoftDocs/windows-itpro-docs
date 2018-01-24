@@ -123,7 +123,11 @@ ms.date: 11/01/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Sets the enterprise IP ranges that define the computers in the enterprise network. Data that comes from those computers will be considered part of the enterprise and protected. These locations will be considered a safe destination for enterprise data to be shared to. This is a comma-separated list of IPv4 and IPv6 ranges. For example:
+<p style="margin-left: 20px">Sets the enterprise IP ranges that define the computers in the enterprise network. Data that comes from those computers will be considered part of the enterprise and protected. These locations will be considered a safe destination for enterprise data to be shared to. This is a comma-separated list of IPv4 and IPv6 ranges.
+
+<!--EndDescription-->
+<!--Example-->
+For example:
 
 ``` syntax
 10.0.0.0-10.255.255.255,157.54.0.0-157.54.255.255,
@@ -134,7 +138,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
        
 ```
 
-<!--EndDescription-->
+<!--/Example-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
