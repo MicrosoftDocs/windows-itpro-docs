@@ -269,10 +269,6 @@ The following list shows the supported values:
 > [!Note]  
 > Reboot is required after setting the policy; alternatively you can stop and restart the FontCache service.
 
-<p style="margin-left: 20px">To verify if System/AllowFontProviders is set to true:  
-
--  After a client machine is rebooted, check whether there is any network traffic from client machine to fs.microsoft.com.
-
 <!--EndDescription-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -281,6 +277,12 @@ The following list shows the supported values:
 -   1 - true (default) - There may be network traffic to fs.microsoft.com and downloadable fonts are available to apps that support them.
 
 <!--/SupportedValues-->
+<!--Validation-->
+<p style="margin-left: 20px">To verify if System/AllowFontProviders is set to true:  
+
+-  After a client machine is rebooted, check whether there is any network traffic from client machine to fs.microsoft.com.
+
+<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
