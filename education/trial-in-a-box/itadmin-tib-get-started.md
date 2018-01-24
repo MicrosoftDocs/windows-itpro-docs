@@ -25,7 +25,7 @@ ms.date: 12/11/2017
 | [![Log in to Device A](images/admin-TIB-setp-1-v3.png)](#it-task1) | [Log in](#it-task1) to **Device A** with your IT Admin credentials and connect to your school's network. |
 | [![Configure Device B with Set up School PCs](images/admin-TIB-setp-2-v3.png)](#it-task2) | [Configure Device B](#it-task2) with the Set up School PCs app. |
 | [![Configure Intune for Education](images/admin-TIB-setp-3-v3.png)](#it-task3) | [Express configure Intune for Education](#it-task3) to manage devices, users, and policies. |
-| [![Buy and deploy apps](images/admin-TIB-setp-4-v3.png)](#it-task4) | [Buy apps from the Microsoft Store for Education](#it-task4) and deploy them to manage devices in your tenant. |
+| [![Find and deploy apps](images/admin-TIB-setp-4-v3.png)](#it-task4) | [Find apps from the Microsoft Store for Education](#it-task4) and deploy them to manage devices in your tenant. |
 | [![Create custom folders](images/admin-TIB-setp-5-v3.png)](#it-task5) | [Create custom folders](#it-task5) that will appear on each managed device's **Start** menu. |
 |  |  |
 
