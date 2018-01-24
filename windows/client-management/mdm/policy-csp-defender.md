@@ -969,16 +969,18 @@ ms.date: 11/01/2017
 <p style="margin-left: 20px">For more information about specific values that are supported, see the Windows Defender Antivirus documentation site.
       
 > [!Note]  
-> This feature requires the "Join Microsoft MAPS" setting enabled in order to function.  
-
-<p style="margin-left: 20px">Possible options are:  
-
-- (0x0) Default windows defender blocking level
-- (0x2) High blocking level - aggressively block unknowns while optimizing client performance (greater chance of false positives)       
-- (0x4) High+ blocking level – aggressively block unknowns and apply additional protection measures (may impact  client performance)
-- (0x6) Zero tolerance blocking level – block all unknown executables
+> This feature requires the "Join Microsoft MAPS" setting enabled in order to function.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0x0 - Default windows defender blocking level
+- 0x2 - High blocking level - aggressively block unknowns while optimizing client performance (greater chance of false positives)       
+- 0x4 - High+ blocking level – aggressively block unknowns and apply additional protection measures (may impact  client performance)
+- 0x6 - Zero tolerance blocking level – block all unknown executables
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1210,11 +1212,15 @@ ms.date: 11/01/2017
 
 <p style="margin-left: 20px">Added in Windows 10, version 1709. This policy enables setting the state (On/Off/Audit) for the guard my folders feature. The guard my folders feature removes modify and delete permissions from untrusted applications to certain folders such as My Documents. Value type is integer and the range is 0 - 2.  
 
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
 - 0 (default) - Disabled
 - 1 - Enabled
 - 2 - Audit Mode
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
