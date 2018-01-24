@@ -355,5 +355,3 @@ Now that you have the All Windows 10 Upgrades view, complete the following steps
 - [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
 - [Deploy Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md)
 - [Manage device restarts after updates](waas-restart.md)
-
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=waas-manage-updates-wsus.md).

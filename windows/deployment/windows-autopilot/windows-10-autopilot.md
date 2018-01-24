@@ -77,7 +77,7 @@ Once devices are registered, these are the OOBE customization options available 
 * Skipping Work or Home usage selection (*Automatic*)
 * Skipping OEM registration, OneDrive and Cortana (*Automatic*)
 * Skipping privacy settings
-* Skipping EULA (*staring with Windows 10, version 1709*)
+* Skipping EULA (*starting with Windows 10, version 1709*)
 * Preventing the account used to set-up the device from getting local administrator permissions
 
 For guidance on how to register devices, configure and apply deployment profiles, follow one of the available administration options:
@@ -129,5 +129,3 @@ If you are planning to configure devices with traditional on-premises or cloud-b
 
 If you're an IT pro or a technical staff member at a school, your scenario might be simpler. The [Set Up School PCs](http://www.microsoft.com/store/p/set-up-school-pcs/9nblggh4ls40) app can be used to quickly set up PCs for students and will get you to a productive state faster and simpler. Please see [Use the Set up School PCs app](https://docs.microsoft.com/education/windows/use-set-up-school-pcs-app) for all the details.
 
-
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=windows-10-auto-pilot.md). 
