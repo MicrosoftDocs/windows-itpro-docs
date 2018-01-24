@@ -77,7 +77,7 @@ Once devices are registered, these are the OOBE customization options available 
 * Skipping Work or Home usage selection (*Automatic*)
 * Skipping OEM registration, OneDrive and Cortana (*Automatic*)
 * Skipping privacy settings
-* Skipping EULA (*staring with Windows 10, version 1709*)
+* Skipping EULA (*starting with Windows 10, version 1709*)
 * Preventing the account used to set-up the device from getting local administrator permissions
 
 For guidance on how to register devices, configure and apply deployment profiles, follow one of the available administration options:
