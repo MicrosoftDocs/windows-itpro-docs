@@ -26,7 +26,7 @@ A brief description of new or updated features in this version of Windows 10 is 
 
 &nbsp;
 
-<iframe class="video-iframe" width="600" height="340" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false" style="width: 600px !important"> 
+<iframe class="video-iframe" width="600" height="340" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false" style='width:600px !important'> 
 </iframe>
 
 &nbsp;
@@ -38,6 +38,15 @@ A brief description of new or updated features in this version of Windows 10 is 
 
 <iframe class="video-iframe" width="600 !important" height="340" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false"> 
 </iframe>
+
+&nbsp;
+
+[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false]
+
+&nbsp;
+
+[![What's new in Windows 10 1709](images\video-1709.jpg)](https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false)
+
 
 ## Deployment
 
