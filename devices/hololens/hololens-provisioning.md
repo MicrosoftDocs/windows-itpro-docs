@@ -32,6 +32,8 @@ When you run ADKsetup.exe for Windows 10, version 1607, select **Configuration D
 <span id="wizard" />
 ## Create a provisioning package for HoloLens using the HoloLens wizard
 
+[This information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
 The HoloLens wizard helps you configure the following settings in a provisioning package:
 
 - Upgrade to the enterprise edition
