@@ -338,8 +338,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
 [Windows 10 deployment scenarios](../windows-10-deployment-scenarios.md)<BR>
 [Windows upgrade and migration considerations](windows-upgrade-and-migration-considerations.md)
  
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=windows-10-upgrade-paths.md).
- 
 
 
 
