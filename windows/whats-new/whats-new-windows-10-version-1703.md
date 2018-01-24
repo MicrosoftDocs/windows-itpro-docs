@@ -20,8 +20,6 @@ For more general info about Windows 10 features, see [Features available only on
 >[!NOTE]
 >Windows 10, version 1703 contains all fixes included in previous cumulative updates to Windows 10, version 1607. For info about each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info). For a list of removed features, see [Features that are removed or deprecated in Windows 10 Creators Update](https://support.microsoft.com/help/4014193/features-that-are-removed-or-deprecated-in-windows-10-creators-update).
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=whats-new-windows-10-version-1703.md). 
- 
 ## Configuration
 
 ### Windows Configuration Designer

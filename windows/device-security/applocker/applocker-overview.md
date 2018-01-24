@@ -136,4 +136,3 @@ For reference in your security planning, the following table identifies the base
 | [AppLocker deployment guide](applocker-policies-deployment-guide.md) | This topic for IT professionals introduces the concepts and describes the steps required to deploy AppLocker policies. |
 | [AppLocker technical reference](applocker-technical-reference.md) | This overview topic for IT professionals provides links to the topics in the technical reference. |
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=applocker-overview.md). 
