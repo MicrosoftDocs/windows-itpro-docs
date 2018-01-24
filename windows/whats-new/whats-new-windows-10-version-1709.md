@@ -19,29 +19,11 @@ Below is a list of some of the new and updated content that discusses IT Pro fea
 
 A brief description of new or updated features in this version of Windows 10 is provided, with links to content with more detailed information. The following 3-minute video summarizes these features.
 
-<BR>&nbsp;width="600" height="340"
+&nbsp;
 
 <iframe class="video-iframe" width="600" height="340" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false"> 
 </iframe>
 
-<BR>&nbsp;width="960" height="580"
-
-<iframe class="video-iframe" width="960" height="580" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false"> 
-</iframe>
-
-<BR>&nbsp;width="960" height="540" 
-
-<iframe class="video-iframe" width="960" height="540" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false"> 
-</iframe>
-
-<BR>&nbsp;Smaller with div width="480" height="270"
-
-<div id="centered" style="margin: 0 auto; width:480px;">
-
-<iframe class="video-iframe" width="480" height="270" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false"> 
-</iframe>
-
-</div>
 
 Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 
 
