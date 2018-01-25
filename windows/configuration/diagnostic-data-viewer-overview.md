@@ -49,7 +49,7 @@ You must start this app from the **Settings** panel.
 
     ![Location to turn on the Diagnostic Data Viewer](images/ddv-settings-launch.png)
 
-    -OR-
+f    -OR-
 
     Go to **Start** and search for _Diagnostic Data Viewer_.
 
