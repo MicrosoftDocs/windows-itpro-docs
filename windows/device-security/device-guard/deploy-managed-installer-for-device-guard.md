@@ -29,7 +29,7 @@ If there are no deny rules present for the file, it will be authorized based on 
 > Admins needs to ensure that there is a WDAC policy in place to allow the system to boot and run any other authorized applications that may not be deployed through a managed installer. 
 >
 > Examples of WDAC policies available in C:\Windows\schemas\CodeIntegrity\ExamplePolicies help authorize Windows OS components, WHQL signed drivers and all Store apps. 
-> Admins can reference and customize them as needed for their Windows Defender Application Control deployment or create a custom WDAC policy as described in [Deploy Windows Defender Application Control: steps](deploy-code-integrity-policies-steps.md#create-a-windows-defender-application-control-policy-from-a-reference-computer).
+> Admins can reference and customize them as needed for their Windows Defender Application Control deployment or create a custom WDAC policy as described in [Deploy Windows Defender Application Control: steps](steps-to-deploy-windows-defender-application-control.md#create-a-windows-defender-application-control-policy-from-a-reference-computer).
 
 ## Configuring a managed installer with AppLocker and Windows Defender Application Control
 
