@@ -808,7 +808,7 @@ You can now use this file to update the existing WDAC policy that you ran in aud
 > [!Note] 
 > You may have noticed that you did not generate a binary version of this policy as you did in [Create a Windows Defender Application Control policy from a reference computer](#create-a-windows-defender-application-control-policy-from-a-reference-computer). This is because WDAC policies created from an audit log are not intended to run as stand-alone policies but rather to update existing WDAC policies.
 
-## <a href="" id="plug-ins"></a>Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules
+## Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules
 
 As of Windows 10, version 1703, you can use WDAC policies not only to control applications, but also to control whether specific plug-ins, add-ins, and modules can run from specific apps (such as a line-of-business application or a browser):
 
