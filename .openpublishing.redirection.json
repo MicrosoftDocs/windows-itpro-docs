@@ -1,12 +1,12 @@
 {
 "redirections": [
 {
-"source_path": "/windows/device-security/device-guard/deploy-code-integrity-policies-steps.md",
+"source_path": "windows/device-security/device-guard/deploy-code-integrity-policies-steps.md",
 "redirect_url": "/windows/device-security/device-guard/steps-to-deploy-windows-defender-application-control",
 "redirect_document_id": true
 },
 {
-"source_path": "/windows/device-security/device-guard/optional-create-a-code-signing-certificate-for-code-integrity-policies.md",
+"source_path": "windows/device-security/device-guard/optional-create-a-code-signing-certificate-for-code-integrity-policies.md",
 "redirect_url": "/windows/device-security/device-guard/optional-create-a-code-signing-certificate-for-windows-defender-application-control",
 "redirect_document_id": true
 },
@@ -17,17 +17,17 @@
 },
 {
 "source_path": "windows/device-security/device-guard/deploy-code-integrity-policies-policy-rules-and-file-rules.md",
-"redirect_url": "windows/device-security/device-guard/deploy-windows-defender-application-control-policy-rules-and-file-rules",
+"redirect_url": "/windows/device-security/device-guard/deploy-windows-defender-application-control-policy-rules-and-file-rules",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/device-guard/deploy-device-guard-deploy-code-integrity-policies.md",
-"redirect_url": "windows/device-security/device-guard/deploy-windows-defender-application-control",
+"redirect_url": "/windows/device-security/device-guard/deploy-windows-defender-application-control",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/device-guard/deploy-catalog-files-to-support-code-integrity-policies.md",
-"redirect_url": "windows/device-security/device-guard/deploy-catalog-files-to-support-windows-defender-application-control",
+"redirect_url": "/windows/device-security/device-guard/deploy-catalog-files-to-support-windows-defender-application-control",
 "redirect_document_id": true
 },
 {
