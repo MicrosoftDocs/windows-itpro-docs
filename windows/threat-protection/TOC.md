@@ -269,8 +269,7 @@
 #### [Customize Controlled folder access](windows-defender-exploit-guard\customize-controlled-folders-exploit-guard.md)
 
 
-
-
+## [Windows Defender Application Control](windows-defender-application-control.md)
 
 
 ## [Windows Defender SmartScreen](windows-defender-smartscreen\windows-defender-smartscreen-overview.md)

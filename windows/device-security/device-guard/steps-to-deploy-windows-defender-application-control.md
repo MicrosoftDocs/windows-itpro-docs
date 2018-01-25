@@ -9,13 +9,13 @@ author: brianlic-msft
 ms.date: 11/02/2017
 ---
 
-# Deploy Windows Defender Application Control: steps
+# Steps to Deploy Windows Defender Application Control
 
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
 
-For an overview of the process described in the following procedures, see [Deploy Windows Defender Application Control: policy rules and file rules](deploy-code-integrity-policies-policy-rules-and-file-rules.md). To understand how the deployment of Windows Defender Application Control (WDAC) fits with other steps in the Windows Defender Device Guard deployment process, see [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
+For an overview of the process described in the following procedures, see [Deploy Windows Defender Application Control: policy rules and file rules](deploy-windows-defender-application-control-policy-rules-and-file-rules.md). To understand how the deployment of Windows Defender Application Control (WDAC) fits with other steps in the Windows Defender Device Guard deployment process, see [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
 
 ## Create a Windows Defender Application Control policy from a reference computer
 
@@ -33,7 +33,7 @@ Each installed software application should be validated as trustworthy before yo
 We recommend that you review the reference computer for software that can load arbitrary DLLs and run code or scripts that could render the PC more vulnerable. 
 Examples include software aimed at development or scripting such as msbuild.exe (part of Visual Studio and the .NET Framework) which can be removed if you do not want it to run scripts. 
 You can remove or disable such software on the reference computer. 
-You can also fine-tune your control by [using Windows Defender Application Control in combination with AppLocker](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#windows-defender-device-guard-with-applocker). 
+You can also fine-tune your control by [using Windows Defender Application Control in combination with AppLocker](introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md#windows-defender-device-guard-with-applocker). 
 
 Members of the security community<sup>\*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Application Control. 
 
@@ -708,7 +708,7 @@ To create a WDAC policy, copy each of the following commands into an elevated Wi
     
     > - When you specify the **-UserPEs** parameter (to include user mode executables in the scan), rule option **0 Enabled:UMCI** is automatically added to the WDAC policy. In contrast, if you do not specify **-UserPEs**, the policy will be empty of user mode executables and will only have rules for kernel mode binaries like drivers, in other words, the whitelist will not include applications. If you create such a policy and later add rule option **0 Enabled:UMCI**, all attempts to start applications will cause a response from Windows Defender Application Control. In audit mode, the response is logging an event, and in enforced mode, the response is blocking the application. 
     
-    > - You can add the **-Fallback** parameter to catch any applications not discovered using the primary file rule level specified by the **-Level** parameter. For more information about file rule level options, see [Windows Defender Application Control file rule levels](deploy-code-integrity-policies-policy-rules-and-file-rules.md#windows-defender-application-control-file-rule-levels) in “Deploy Windows Defender Application Control: policy rules and file rules.”
+    > - You can add the **-Fallback** parameter to catch any applications not discovered using the primary file rule level specified by the **-Level** parameter. For more information about file rule level options, see [Windows Defender Application Control file rule levels](deploy-windows-defender-application-control-policy-rules-and-file-rules.md#windows-defender-application-control-file-rule-levels) in “Deploy Windows Defender Application Control: policy rules and file rules.”
 
     > - To specify that the WDAC policy scan only a specific drive, include the **-ScanPath** parameter followed by a path. Without this parameter, the entire system is scanned.
     
@@ -768,7 +768,7 @@ When WDAC policies are run in audit mode, it allows administrators to discover a
 
    You will be reviewing the exceptions that appear in the event log, and making a list of any applications that should be allowed to run in your environment.
    
-6. If you want to create a catalog file to simplify the process of including unsigned LOB applications in your WDAC policy, this is a good time to create it. For information, see [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-code-integrity-policies.md).   
+6. If you want to create a catalog file to simplify the process of including unsigned LOB applications in your WDAC policy, this is a good time to create it. For information, see [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-windows-defender-application-control.md).   
 
 Now that you have a WDAC policy deployed in audit mode, you can capture any audit information that appears in the event log. This is described in the next section.
 
@@ -780,7 +780,7 @@ Use the following procedure after you have been running a computer with a WDAC p
 
 1.  Review the audit information in the event log. From the WDAC policy exceptions that you see, make a list of any applications that should be allowed to run in your environment, and decide on the file rule level that should be used to trust these applications.
 
-    Although the Hash file rule level will catch all of these exceptions, it may not be the best way to trust all of them. For information about file rule levels, see [Windows Defender Application Control file rule levels](deploy-code-integrity-policies-policy-rules-and-file-rules.md#windows-defender-application-control-file-rule-levels) in "Deploy Windows Defender Application Control: policy rules and file rules."
+    Although the Hash file rule level will catch all of these exceptions, it may not be the best way to trust all of them. For information about file rule levels, see [Windows Defender Application Control file rule levels](deploy-windows-defender-application-control-policy-rules-and-file-rules.md#windows-defender-application-control-file-rule-levels) in "Deploy Windows Defender Application Control: policy rules and file rules."
     
     Your event log might also contain exceptions for applications that you eventually want your WDAC policy to block. If these appear, make a list of these also, for a later step in this procedure.
 
@@ -808,7 +808,7 @@ You can now use this file to update the existing WDAC policy that you ran in aud
 > [!Note] 
 > You may have noticed that you did not generate a binary version of this policy as you did in [Create a Windows Defender Application Control policy from a reference computer](#create-a-windows-defender-application-control-policy-from-a-reference-computer). This is because WDAC policies created from an audit log are not intended to run as stand-alone policies but rather to update existing WDAC policies.
 
-## <a href="" id="plug-ins"></a>Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules
+## Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules
 
 As of Windows 10, version 1703, you can use WDAC policies not only to control applications, but also to control whether specific plug-ins, add-ins, and modules can run from specific apps (such as a line-of-business application or a browser):
 
@@ -922,9 +922,9 @@ With this in mind, it is much more difficult to remove signed WDAC policies.
 Before you sign and deploy a signed WDAC policy, we recommend that you [audit the policy](#audit-windows-defender-application-control-policies) to discover any blocked applications that should be allowed to run. 
 
 Signing WDAC policies by using an on-premises CA-generated certificate or a purchased code signing certificate is straightforward. 
-If you do not currently have a code signing certificate exported in .pfx format (containing private keys, extensions, and root certificates), see [Optional: Create a code signing certificate for Windows Defender Application Control](optional-create-a-code-signing-certificate-for-code-integrity-policies.md) to create one with your on-premises CA. 
+If you do not currently have a code signing certificate exported in .pfx format (containing private keys, extensions, and root certificates), see [Optional: Create a code signing certificate for Windows Defender Application Control](optional-create-a-code-signing-certificate-for-windows-defender-application-control.md) to create one with your on-premises CA. 
 
-Before signing WDAC policies for the first time, be sure to enable rule options 9 (“Advanced Boot Options Menu”) and 10 (“Boot Audit on Failure”) to leave troubleshooting options available to administrators. To ensure that a rule option is enabled, you can run a command such as `Set-RuleOption -FilePath <PathAndFilename> -Option 9` even if you're not sure whether the option is already enabled—if so, the command has no effect. When validated and ready for enterprise deployment, you can remove these options. For more information about rule options, see [Windows Defender Application Control policy rules](deploy-code-integrity-policies-policy-rules-and-file-rules.md#windows-defender-application-control-policy-rules) in "Deploy Windows Defender Application Control: policy rules and file rules."
+Before signing WDAC policies for the first time, be sure to enable rule options 9 (“Advanced Boot Options Menu”) and 10 (“Boot Audit on Failure”) to leave troubleshooting options available to administrators. To ensure that a rule option is enabled, you can run a command such as `Set-RuleOption -FilePath <PathAndFilename> -Option 9` even if you're not sure whether the option is already enabled—if so, the command has no effect. When validated and ready for enterprise deployment, you can remove these options. For more information about rule options, see [Windows Defender Application Control policy rules](deploy-windows-defender-application-control-policy-rules-and-file-rules.md#windows-defender-application-control-policy-rules) in "Deploy Windows Defender Application Control: policy rules and file rules."
 
 To sign a WDAC policy with SignTool.exe, you need the following components:
 
@@ -934,7 +934,7 @@ To sign a WDAC policy with SignTool.exe, you need the following components:
 
 -   An internal CA code signing certificate or a purchased code signing certificate
 
-If you do not have a code signing certificate, see the [Optional: Create a code signing certificate for Windows Defender Application Control](optional-create-a-code-signing-certificate-for-code-integrity-policies.md) section for instructions on how to create one. If you use an alternate certificate or WDAC policy, be sure to update the following steps with the appropriate variables and certificate so that the commands will function properly. To sign the existing WDAC policy, copy each of the following commands into an elevated Windows PowerShell session:
+If you do not have a code signing certificate, see the [Optional: Create a code signing certificate for Windows Defender Application Control](optional-create-a-code-signing-certificate-for-windows-defender-application-control.md) section for instructions on how to create one. If you use an alternate certificate or WDAC policy, be sure to update the following steps with the appropriate variables and certificate so that the commands will function properly. To sign the existing WDAC policy, copy each of the following commands into an elevated Windows PowerShell session:
 
 1.  Initialize the variables that will be used:
 
@@ -947,7 +947,7 @@ If you do not have a code signing certificate, see the [Optional: Create a code 
    > [!Note] 
    > This example uses the WDAC policy that you created in the [Create a Windows Defender Application Control policy from a reference computer](#create-a-windows-defender-application-control-policy-from-a-reference-computer) section. If you are signing another policy, be sure to update the **$CIPolicyPath** and **$CIPolicyBin** variables with the correct information.
 
-2.  Import the .pfx code signing certificate. Import the code signing certificate that you will use to sign the WDAC policy into the signing user’s personal store on the computer that will be doing the signing. In this example, you use the certificate that was created in [Optional: Create a code signing certificate for Windows Defender Application Control](optional-create-a-code-signing-certificate-for-code-integrity-policies.md).
+2.  Import the .pfx code signing certificate. Import the code signing certificate that you will use to sign the WDAC policy into the signing user’s personal store on the computer that will be doing the signing. In this example, you use the certificate that was created in [Optional: Create a code signing certificate for Windows Defender Application Control](optional-create-a-code-signing-certificate-for-windows-defender-application-control.md).
 
 3.  Export the .cer code signing certificate. After the code signing certificate has been imported, export the .cer version to your desktop. This version will be added to the policy so that it can be updated later.
 
@@ -1092,7 +1092,7 @@ To deploy and manage a WDAC policy with Group Policy:
 
 ## Related topics
 
-[Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md)
+[Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control](introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 
 [Enable virtualization-based protection of code integrity](deploy-device-guard-enable-virtualization-based-security.md)
 
