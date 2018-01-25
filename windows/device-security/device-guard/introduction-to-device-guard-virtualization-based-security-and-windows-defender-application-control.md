@@ -42,7 +42,7 @@ In this guide, you learn about the individual features found within Windows Defe
 
 Prior to Windows 10, version 1709, Windows Defender Application Control (WDAC) was known as configurable code integrity policies. 
 
-Beginning with Windows 10, version 1703, you can use WDAC not only to control applications, but also to control whether specific plug-ins, add-ins, and modules can run from specific apps (such as a line-of-business application or a browser). For more information, see [Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules](steps-to-deploy-windows-defender-application-control.md#plug-ins).
+Beginning with Windows 10, version 1703, you can use WDAC not only to control applications, but also to control whether specific plug-ins, add-ins, and modules can run from specific apps (such as a line-of-business application or a browser). For more information, see [Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules](steps-to-deploy-windows-defender-application-control.md#use-a-windows-defender-application-control-policy-to-control-specific-plug-ins-add-ins-and-modules).
 
 ## Tools for managing Windows Defender Device Guard features
 
