@@ -23,7 +23,7 @@ The information in this article is intended for IT professionals, and provides a
 
 To deploy Windows Defender Device Guard in a way that uses all of its virtualization-based security (VBS) features, the computers you are protecting must meet certain hardware, firmware, and software requirements. However, computers lacking some of the hardware and firmware requirements will still receive some protection when you deploy Windows Defender Application Control (WDAC) policies—the difference is that those computers will not be as hardened against certain threats. 
 
-For example, hardware that includes CPU virtualization extensions and SLAT will be hardened against malware that attempts to gain access to the kernel, but without protected BIOS options such as “Boot only from internal hard drive,” the computer could be booted (by a malicious person who has physical access) into an operating system on bootable media. For an outline of how VBS-related hardware strengthens the hardening offered by Windows Defender Device Guard, see [Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md).
+For example, hardware that includes CPU virtualization extensions and SLAT will be hardened against malware that attempts to gain access to the kernel, but without protected BIOS options such as “Boot only from internal hard drive,” the computer could be booted (by a malicious person who has physical access) into an operating system on bootable media. For an outline of how VBS-related hardware strengthens the hardening offered by Windows Defender Device Guard, see [Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control](introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md).
 
 You can deploy Windows Defender Device Guard in phases, and plan these phases in relation to the computer purchases you plan for your next hardware refresh.
 
@@ -33,7 +33,7 @@ You can deploy Windows Defender Device Guard in phases, and plan these phases in
 The following tables provide more information about the hardware, firmware, and software required for deployment of various Windows Defender Device Guard features. The tables describe baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, 2016, and 2017.
 
 > **Notes**<br>
-> • To understand the requirements in the following tables, you will need to be familiar with the main features in Windows Defender Device Guard: Windows Defender Application Control (WDAC), virtualization-based protection of code integrity, and Universal Extensible Firmware Interface (UEFI) Secure Boot. For information about these features, see [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-windows-defender-device-guard-features-help-protect-against-threats).<br>
+> • To understand the requirements in the following tables, you will need to be familiar with the main features in Windows Defender Device Guard: Windows Defender Application Control (WDAC), virtualization-based protection of code integrity, and Universal Extensible Firmware Interface (UEFI) Secure Boot. For information about these features, see [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md#how-windows-defender-device-guard-features-help-protect-against-threats).<br>
 > • Beginning with Windows 10, version 1607, Trusted Platform Module (TPM 2.0) must be enabled by default on new computers. 
 
 ## Baseline protections
@@ -139,7 +139,7 @@ After you have created and signed your catalog files, you can configure your WDA
 
 > **Note**&nbsp;&nbsp;Package Inspector only works on operating systems that support Windows Defender Device Guard, such as Windows 10 Enterprise, Windows 10 Education, Windows 2016 Server, or Windows Enterprise IoT.
 
-For information about how creating catalog files fits into Windows Defender Device Guard deployment, see [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md). For procedures for working with catalog files, see [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-code-integrity-policies.md).
+For information about how creating catalog files fits into Windows Defender Device Guard deployment, see [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md). For procedures for working with catalog files, see [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-windows-defender-application-control.md).
 
 ## Windows Defender Application Control policy formats and signing
 
@@ -152,6 +152,6 @@ When the WDAC policy is deployed, it restricts the software that can run on a de
 ## Related topics
 
 - [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md)
-- [Deploy Windows Defender Application Control](deploy-device-guard-deploy-code-integrity-policies.md)
+- [Deploy Windows Defender Application Control](deploy-windows-defender-application-control.md)
 
 

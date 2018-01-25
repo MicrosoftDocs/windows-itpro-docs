@@ -15,7 +15,7 @@ ms.date: 10/20/2017
 -   Windows 10
 -   Windows Server 2016
 
-As you deploy Windows Defender Application Control (WDAC) (also part of Windows Defender Device Guard), you might need to sign catalog files or WDAC policies internally. To do this, you will either need a publicly issued code signing certificate or an internal CA. If you have purchased a code signing certificate, you can skip this topic and instead follow other topics listed in [Deploy Windows Defender Application Control](deploy-device-guard-deploy-code-integrity-policies.md). 
+As you deploy Windows Defender Application Control (WDAC) (also part of Windows Defender Device Guard), you might need to sign catalog files or WDAC policies internally. To do this, you will either need a publicly issued code signing certificate or an internal CA. If you have purchased a code signing certificate, you can skip this topic and instead follow other topics listed in [Deploy Windows Defender Application Control](deploy-windows-defender-application-control.md). 
 
 If you have an internal CA, complete these steps to create a code signing certificate. 
 Only RSA algorithm is supported for the code signing certificate, and signatures must be PKCS 1.5 padded. 
@@ -99,7 +99,7 @@ When the certificate has been exported, import it into the personal store for th
 
 ## Related topics
 
-- [Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md)
+- [Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control](introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 
-- [Deploy Windows Defender Application Control](deploy-device-guard-deploy-code-integrity-policies.md)
+- [Deploy Windows Defender Application Control](deploy-windows-defender-application-control.md)
 
