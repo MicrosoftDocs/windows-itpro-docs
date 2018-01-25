@@ -28,13 +28,31 @@ Use to configure settings for Calling.
 
 See [Branding for phone calls](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/branding-for-phone-calls).
 
+## CallIDMatchOverrides
+
+Enter a GEOID, select **Add**, and then enter the number of digits for matching caller ID. 
+
+For a list of GEOID codes and default number of digits for each country/region, see [Overriding the OS default minimu number of digits for caller ID matching](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/caller-id-matching#a-href-idoverriding-os-default-min-number-digitsaoverriding-the-os-default-minimum-number-of-digits-for-caller-id-matching).
+
+## CauseCodeRegistrationTable
+
+HELP NEEDED
+
+
+## CDMAHeuristics
+
+**CDMAPriorityCallPrefix** HELP NEEDED
+
+CDMA Heuristics (on by default) makes CDMA calling more user-friendly by exposing an interface that supports multiple calls with call waiting, swapping, and three-way calling. Set **DisableCdmaHeuristics** to **True** to disable the built-in heuristics.
+
+
 ## PartnerAppSupport
 
 See [Dialer codes to launch diagnostic applications](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/dialer-codes-to-launch-diagnostic-applications).
 
 ## PerSimSettings
 
-Use to configure settings for each subscriber identification module (SIM) card. Enter the Integrated Circuit Card Identifier (ICCID) for the SIM card, click Add, and then configure the folowing settings.
+Use to configure settings for each subscriber identification module (SIM) card. Enter the Integrated Circuit Card Identifier (ICCID) for the SIM card, select **Add**, and then configure the folowing settings.
 
 ### Critical
 
@@ -48,19 +66,44 @@ SimOverrideVoicemailNumber | Mobile operators can override the voicemail number 
 
 Setting | Description
 --- | ---
+AllowMixedAudioVideoConferencing | Set as **True** to enable audio and video calls in the same conference.
 AllowVideoConferencing | Set as **True** to enable the ability to conference video calls.
+AutoDismissUssedWaitingDialog | Set as **True** to enable automatic dismissal of "Waiting" dialog on USSD session termination.
+CallerIdBlockingPrefixList | ***HELP NEEDED HERE - what is list delimiter?***
 DefaultCallerIdSetting | Configure the default setting for caller ID. Select between `No one`, `Only contacts`, `Every one`, and `Network default`. If set to `Network default`, set `ShowCallerIdNetworkDefaultSetting` to **True**.
 DefaultEnableVideoCalling | Set as **True** to enable LTE video calling as the default setting.
+DefaultEnableVideoCapability | Set as **True** to enable LTE video capability sharing as the default setting.
+EnableSupplementaryServiceEraseToDeactivateOverride | Enables conversion of supplementary service erase commands to deactivate commands.
+IgnoreCallerIdBlockingPrefix | Ignore caller ID blocking prefixes.
 IgnoreMWINotifications | Set as **True** to configure the voicemail system so the phone ignores message waiting indicator (MWI) notifications.
+IgnoreProhibitedDialingPrefix | Ignore prohibited dialing prefix.
 IgnoreUssdExclusions | Set as **True** to ignore Unstructured Supplementary Service Data (USSD) exclusions.
+ProhibitedDialingPrefixList | ***HELP NEEDED HERE - what is list delimiter?***
 ResetCallForwarding | When set to **True**, user is provided with an option to retry call forwarding settings query.
 ShowCallerIdNetworkDefaultSetting | Indicates whether the network default setting can be allowed for outgoing caller ID.
 ShowVideoCallingSwitch | Use to specify whether to show the video capability sharing switch on the mobile device's Settings screen.
+ShowVideoCapabilitySwitch | Configure the phone settings to show the video capability sharing switch.
 SupressVideoCallingChargesDialog | Configure the phone settings CPL to supress the video calling charges dialog.
 UssdExclusionList | List used to exclude predefined USSD entries, allowing the number to be sent as standard DTMF tones instead. Set UssdExclusionList to the list of desired exclusions, separated by semicolons. For example, setting the value to 66;330 will override 66 and 330. Leading zeros are specified by using F. For example, to override code 079, set the value to F79. If you set UssdExclusionList, you must set IgnoreUssdExclusions as well. Otherwise, the list will be ignored. See [List of USSD codes](#list-of-ussd-codes) for values.
 WiFiCallingOperatorName | Enter the operator name to be shown when the phone is using WiFi calling. If you don't set a value for WiFiCallingOperatorName, the device will always display **SIMServiceProviderName Wi-Fi**, where *SIMServiceProviderName* is a string that corresponds to the SPN for the SIM on the device. If the service provider name in the SIM is not set, only **Wi-Fi** will be displayed.
 
+### HDAudio
 
+To customize call progress branding when a call is made using a specific audio codec, select the audio codec from the dropdown menu and select **Add**. Select the codec in **Available Customizations** and then enter a text string (up to 10 characters) to be used for call progress branding for calls using that codec. For more information, see [Use HD audio codec for call branding](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/use-hd-audio-codec-for-call-branding).
+
+### IMSSubscriptionUpdate
+
+Setting | Description
+--- | ---
+AlertData | text entry ***NEED HELP HERE***
+AlertDataType | numeric 0-7 ***NEED HELP HERE***
+AlertSource | text entry ***NEED HELP HERE***
+AlertType |  text entry ***NEED HELP HERE***
+ServiceID | text entry ***NEED HELP HERE***
+
+### RoamingNumberOverrides
+
+See [Dial string overrides when roaming](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/dial-string-overrides-when-roaming).
 
 ## PhoneSettings
 
