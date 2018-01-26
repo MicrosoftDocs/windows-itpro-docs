@@ -109,8 +109,8 @@ For SmartScreen Internet Explorer MDM policies, see [Policy CSP - InternetExplor
 <li><strong>URI full path.</strong> ./Vendor/MSFT/Policy/Config/SmartScreen/EnableSmartScreenInShell</li>
 <li><strong>Data type.</strong> Integer</li>
 <li><strong>Allowed values:</strong><ul>
-<li><strong>0 .</strong> Turns off SmartScreen in Windows when apps and files are executed.</li>
-<li><strong>1.</strong> Turns on SmartScreen in Windows when apps and files are executed.</li></ul></li></ul>
+<li><strong>0 .</strong> Turns off SmartScreen in Windows for app and file execution.</li>
+<li><strong>1.</strong> Turns on SmartScreen in Windows for app and file execution.</li></ul></li></ul>
 </td>
 </tr>
 <tr>
