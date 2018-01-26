@@ -1457,6 +1457,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Search/AllowCortanaInAAD</li>
 <li>Search/DoNotUseWebResults</li>
 <li>Security/ConfigureWindowsPasswords</li>
+<li>System/FeedbackHubAlwaysSaveDiagnosticsLocally</li>
 <li>SystemServices/ConfigureHomeGroupListenerServiceStartupMode</li>
 <li>SystemServices/ConfigureHomeGroupProviderServiceStartupMode</li>
 <li>SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode</li>
@@ -1507,6 +1508,11 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Settings/AllowOnlineTips</li>
 <li>System/DisableEnterpriseAuthProxy </li>
 </ul>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top"><p>Updated the description for AllowWarningForOtherDiskEncryption to describe changes added in Windows 10, next major update.</p>
+</td></tr>
 </tbody>
 </table>
 
