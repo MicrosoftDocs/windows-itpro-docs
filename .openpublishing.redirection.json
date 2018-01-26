@@ -8444,6 +8444,21 @@
 "source_path": "windows/deployment/windows-10-auto-pilot.md",
 "redirect_url": "/windows/deployment/windows-autopilot/windows-10-autopilot",
 "redirect_document_id": true
-}
+},
+{
+"source_path": "bcs/index.md",
+"redirect_url": "/microsoft-365/business/index",
+"redirect_document_id": true
+},
+{
+"source_path": "bcs/support/microsoft-365-business-faqs.md",
+"redirect_url": "/microsoft-365/business/microsoft-365-business-faqs",
+"redirect_document_id": true
+},
+{
+"source_path": "bcs/support/transition-csp-subscription.md",
+"redirect_url": "/microsoft-365/business/transition-csp-subscription",
+"redirect_document_id": true
+},
 ]
 }
