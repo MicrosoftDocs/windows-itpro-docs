@@ -25,10 +25,7 @@ Follow all the steps in this section to use SDS and sample CSV files in a trial 
 
 You can watch the video to see how this is done, or follow the step-by-step guide.</br>
 
-<center><iframe src="https://www.youtube.com/embed/ehSU8jr8T24" width="960" height="540" allowFullScreen frameBorder="0"></iframe></center>
-<!--
-<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/ehSU8jr8T24?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
--->
+<center><iframe src="https://www.youtube.com/embed/ehSU8jr8T24" width="560" height="315" allowFullScreen frameBorder="0"></iframe></center>
 
 You can watch the descriptive audio version here: [Microsoft Education: Use School Data Sync to import student data (DA)](https://www.youtube.com/watch?v=l4b086IMtvc)
 
@@ -62,86 +59,66 @@ To learn more about the CSV files that are required and the info you need to inc
 2.  Click Sign in. Then enter your O365 Global Admin account credentials. 
 3. After logging in, click **+ Add Profile** in the left hand navigation pane to create a Sync Profile..  This opens up the new profile setup wizard within the main page.
 
-
   **Figure 3** - New SDS profile setup wizard
     
   ![Screenshot that shows creating a new profile](images/03bfe22a-469b-4b73-ab8d-af5aaac8ff89.png)
 
 4. For the new profile, in the **How do you want to connect to your school?** screen:
   
-    a. Enter a name for your profile, such as *Contoso_Elementary_Profile*.
-    
-    b. Select a sync method for your profile. For this walkthrough, select **Upload CSV Files**.
-    
-    c. Select the type of CSV files that you're using. For this walkthrough, select **CSV files: SDS Format**.  
-    
-    d.  Click **Start**.
+    1. Enter a name for your profile, such as *Contoso_Elementary_Profile*.    
+    2. Select a sync method for your profile. For this walkthrough, select **Upload CSV Files**.    
+    3. Select the type of CSV files that you're using. For this walkthrough, select **CSV files: SDS Format**.     
+    4. Click **Start**.
 
 5. In the **Sync options** screen:
-    
-    a. In the **Select new or existing users** section, you can select either **Existing users** or **New users** based on the scenaro that applies to you. For this walkthrough, select **New users**.
-    
-    b. In the **Import data** section:
-    
-       i. Click **Upload Files** to bring up the **Select data files to be uploaded** window.
-       
-       ii. In the **Select data files to be uploaded** window, click **+ Add Files** and navigate to the directory where you saved the six CSV files required for data import.
-       
-       iii. In the File Explorer window, you will see a folder for the sample CSV files for the UK and six sample CSV files for the US. Select the CSV files that match your region/locale, and then click **Open**.
-       
-       iv.  In the **Select data files to be uploaded** window, confirm that all six CSV files (School.csv, Section.csv, Student.csv, StudentEnrollment.csv, Teacher.csv, and TeacherRoster.csv) are listed and then click **Upload**.
 
-      > [!NOTE]
-      > After you click **Upload**, the status in the **Select data files to be uploaded** window will indicate that files are being uploaded and verified.
+  1. In the **Select new or existing users** section, you can select either **Existing users** or **New users** based on the scenaro that applies to you. For this walkthrough, select **New users**.
+  2. In the **Import data** section, click **Upload Files** to bring up the **Select data files to be uploaded** window.  
+  3. In the **Select data files to be uploaded** window, click **+ Add Files** and navigate to the directory where you saved the six CSV files required for data import.
+  4. In the File Explorer window, you will see a folder for the sample CSV files for the UK and six sample CSV files for the US. Select the CSV files that match your region/locale, and then click **Open**.
+  5. In the **Select data files to be uploaded** window, confirm that all six CSV files (School.csv, Section.csv, Student.csv, StudentEnrollment.csv, Teacher.csv, and TeacherRoster.csv) are listed and then click **Upload**.
 
-       v.  After all the files are successfully uploaded, click **OK**. 
+    > [!NOTE]
+    > After you click **Upload**, the status in the **Select data files to be uploaded** window will indicate that files are being uploaded and verified.
 
-    c. In the **Select school and section properties** section, ensure the attributes that have been automatically selected for you align to your CSV files. If you select additional properties, or deselect any properties, make sure you have the properties and values contained within the CSV files. For the walkthrough, you don't have to change the default.
-
-    d. In the Replace Unsupported Special Characters section, checking this box will allow SDS to automatically replace unsupported special characters while the sync is running. Special characters will be replaced with an "_", and no longer result in an error during the sync process for that object.
-    
-    e. In the **Sync option for Section Group Display Name**, check the box if you want to allow teachers to overwrite the section names. Otherwise, SDS will always reset the display name value for sections to the value contained within the CSV files.
-    
-    f. In the **Student enrollment option** section:
+  6. After all the files are successfully uploaded, click **OK**. 
+  7. In the **Select school and section properties** section, ensure the attributes that have been automatically selected for you align to your CSV files. If you select additional properties, or deselect any properties, make sure you have the properties and values contained within the CSV files. For the walkthrough, you don't have to change the default.
+  8. In the Replace Unsupported Special Characters section, checking this box will allow SDS to automatically replace unsupported special characters while the sync is running. Special characters will be replaced with an "_", and no longer result in an error during the sync process for that object.
+  9. In the **Sync option for Section Group Display Name**, check the box if you want to allow teachers to overwrite the section names. Otherwise, SDS will always reset the display name value for sections to the value contained within the CSV files.
+  10. In the **Student enrollment option** section:
     * If you want to sync your student roster data immediately, leave the box unchecked.
     * If you prefer to sync student enrollment/rostering data at a later date, check this box and then pick a date by clicking the empty box and selecting the appropriate date in the calendar when you would like to begin syncing your student roster data. Some schools prefer to delay syncing student roster data so they don't expose rosters before the start of the new term, semester, or school year.  
-    
-    g. In the Default Term Dates section, You can set default start and end dates for Section terms. These dates will only be used if you do not provide these dates in your CSV files.  If you upload files with Section start and end dates, you will be asked to select the format of the dates provided. If the format that you enter does not match the format of start and end dates in your files, you will receive an error message and need to edit the date format so that it matches the format in your files.
-    
-    h. In the **License Options** section, check the box for **Intune for Education** to allow students and teachers to receive the Intune for Education license. This will also create the SDS dynamic groups and security groups, which will be used within Intune for Education.
-      
-       i. Click **Next**.
+  11. In the Default Term Dates section, You can set default start and end dates for Section terms. These dates will only be used if you do not provide these dates in your CSV files.  If you upload files with Section start and end dates, you will be asked to select the format of the dates provided. If the format that you enter does not match the format of start and end dates in your files, you will receive an error message and need to edit the date format so that it matches the format in your files.
+  12. In the **License Options** section, check the box for **Intune for Education** to allow students and teachers to receive the Intune for Education license. This will also create the SDS dynamic groups and security groups, which will be used within Intune for Education.
+  13. Click **Next**.
 
     **Figure 4** - Sync options for the new profile
 
     ![Specify sync options for the new SDS profile](images/how-to-deploy-SDS-using-CSV-files-2a.PNG)
 
 6. In the **Teacher options** screen:
-    
-    a. Select the domain for the teachers. SDS appends the selected domain suffix to the teacher's username attribute contained in the CSV file, to build the UserPrincipalName for each user in Office 365/Azure Active Directory during the account creation process. The teacher will log in to Office 365 with the UserPrincipalName once the account is created.
+
+  1. Select the domain for the teachers. SDS appends the selected domain suffix to the teacher's username attribute contained in the CSV file, to build the UserPrincipalName for each user in Office 365/Azure Active Directory during the account creation process. The teacher will log in to Office 365 with the UserPrincipalName once the account is created.
     * Primary Key (Source Directory) - This is the Teacher attribute in the CSV file used for SDS Identity Matching. Watch the Identity Matching video for additional information on how to select the appropriate source directory attribute, and properly configure the identity matching settings for teacher.
     * Primary Key (Target Directory) - This is the User attribute in Azure AD used for SDS Identity Matching. Watch the Identity Matching video for additional information on how to select the appropriate target directory attribute, and properly configure the identity matching settings for the teacher.
     * Domain (optional) - This is an optional domain value that you can add to the selected Source Directory attribute to complete your Teacher Identity Matching. If you need to match to a UserPrincipalName or Mail attribute, you must have a domain included in the string. Your source attribute must either include the domain already or you can append the appropriate domain to the source attribute using this dropdown menu.
 
-    b. In the **Select teacher properties** section, make sure the attributes that have been automatically selected for you align to your CSV files. If you select additional properties or deselect any properties, make sure you have the corresponding properties and values contained within the CSV files. For this walkthrough, you don't have to change the default.
+  2. In the **Select teacher properties** section, make sure the attributes that have been automatically selected for you align to your CSV files. If you select additional properties or deselect any properties, make sure you have the corresponding properties and values contained within the CSV files. For this walkthrough, you don't have to change the default.
     
-    c. In the **License assignment** section, choose the SKU to assign licenses for teachers. 
+  3. In the **License assignment** section, choose the SKU to assign licenses for teachers. 
     
-    d. Click **Next**.
+  4. Click **Next**.
 
     **Figure 5** - Specify options for teacher mapping
 
     ![Specify options for teacher mapping](images/how-to-deploy-SDS-using-CSV-files-3.PNG)
 
 7. In the **Student options** screen:
-  
-    a. Select the domain for the students. SDS appends the selected domain suffix to the student's username attribute contained in the CSV file, to build the UserPrincipalName for each user in Office 365/Azure Active Directory during the account creation process. The student will log in to Office 365 with the UserPrincipalName once the account is created.
-    
-    b. In the **Select student properties** section, make sure the attributes that have been automatically selected for you align to your CSV files. If you select additional properties or deselect any properties, make sure you have the corresponding properties and values contained within the CSV files. For this walkthrough, you don't have to change the default.
-    
-    c. In the **License assignment** section, choose the SKU to assign licenses for students. 
-    
-    d. Click **Next**.
+
+  1. Select the domain for the students. SDS appends the selected domain suffix to the student's username attribute contained in the CSV file, to build the UserPrincipalName for each user in Office 365/Azure Active Directory during the account creation process. The student will log in to Office 365 with the UserPrincipalName once the account is created.
+  2. In the **Select student properties** section, make sure the attributes that have been automatically selected for you align to your CSV files. If you select additional properties or deselect any properties, make sure you have the corresponding properties and values contained within the CSV files. For this walkthrough, you don't have to change the default.
+  3. In the **License assignment** section, choose the SKU to assign licenses for students. 
+  4. Click **Next**.
 
     **Figure 6** - Specify options for student mapping
 
@@ -186,11 +163,6 @@ To learn more about the CSV files that are required and the info you need to inc
   You can refresh the page to confirm that your profile synced successfully.
 
 That's it for importing sample school data using SDS.
-
-<!--
-> [!div class="nextstepaction"]
-> [Enable Microsoft Teams for your school](enable-microsoft-teams.md)
--->
 
 > [!div class="step-by-step"]
 [<< Set up an Office 365 education tenant](set-up-office365-edu-tenant.md)
