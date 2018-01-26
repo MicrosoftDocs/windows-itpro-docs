@@ -70,9 +70,9 @@ ms.date: 12/14/2017
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
-<p style="margin-left: 20px">Specifies whether to allow Action Center notifications above the device lock screen.
+Specifies whether to allow Action Center notifications above the device lock screen.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -120,7 +120,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether or not the user can interact with Cortana using speech while the system is locked. If you enable or don’t configure this setting, the user can interact with Cortana using speech while the system is locked. If you disable this setting, the system will need to be unlocked for the user to interact with Cortana using speech.
+Added in Windows 10, version 1607. Specifies whether or not the user can interact with Cortana using speech while the system is locked. If you enable or don’t configure this setting, the user can interact with Cortana using speech while the system is locked. If you disable this setting, the system will need to be unlocked for the user to interact with Cortana using speech.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -168,9 +168,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether to allow toast notifications above the device lock screen.
+Specifies whether to allow toast notifications above the device lock screen.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
