@@ -164,6 +164,10 @@ There are a few different ways to install apps on your Surface Hub depending on 
 | Microsoft Store app          |   | X |   |
 | Supported MDM provider     |   |   | X |
 
+## More information
+
+- [Blog post:  Deploy Windows Store apps to Surface Hub using Intune](https://blogs.technet.microsoft.com/y0av/2018/01/18/7-2/)
+
 
 ## Related topics
 

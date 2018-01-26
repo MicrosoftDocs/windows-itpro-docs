@@ -16,10 +16,10 @@ ms.date: 10/20/2017
 -   Windows Server 2016
 
 Windows Defender Application Control (WDAC) provides control over a computer running Windows 10 by specifying whether a driver or application is trusted and can be run. For an overview of WDAC, see:
-- [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-windows-defender-device-guard-features-help-protect-against-threats) in "Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control."
+- [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md#how-windows-defender-device-guard-features-help-protect-against-threats) in "Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control."
 - [Windows Defender Application Control policy formats and signing](requirements-and-deployment-planning-guidelines-for-device-guard.md#windows-defender-application-control-policy-formats-and-signing) in "Requirements and deployment planning guidelines for Windows Defender Device Guard."
 
-If you already understand the basics of WDAC and want procedures for creating, auditing, and merging WDAC policies, see [Deploy Windows Defender Application Control: steps](deploy-code-integrity-policies-steps.md).
+If you already understand the basics of WDAC and want procedures for creating, auditing, and merging WDAC policies, see [Deploy Windows Defender Application Control: steps](steps-to-deploy-windows-defender-application-control.md).
 
 This topic includes the following sections:
 
@@ -36,7 +36,7 @@ A common system imaging practice in today’s IT organization is to establish a 
 
 Optionally, WDAC can align with your software catalog as well as any IT department–approved applications. One straightforward method to implement WDAC is to use existing images to create one master WDAC policy. You do so by creating a WDAC policy from each image, and then by merging the policies. This way, what is installed on all of those images will be allowed to run, if the applications are installed on a computer based on a different image. Alternatively, you may choose to create a base applications policy and add policies based on the computer’s role or department. Organizations have a choice of how their policies are created, merged or serviced, and managed.
 
-If you plan to use an internal CA to sign catalog files or WDAC policies, see the steps in [Optional: Create a code signing certificate for Windows Defender Application Control](optional-create-a-code-signing-certificate-for-code-integrity-policies.md). 
+If you plan to use an internal CA to sign catalog files or WDAC policies, see the steps in [Optional: Create a code signing certificate for Windows Defender Application Control](optional-create-a-code-signing-certificate-for-windows-defender-application-control.md). 
 
 ## Windows Defender Application Control policy rules
 
@@ -120,5 +120,5 @@ They could also choose to create a catalog that captures information about the u
 
 ## Related topics
 
-- [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-windows-defender-device-guard-features-help-protect-against-threats)
-- [Deploy Windows Defender Application Control: steps](deploy-code-integrity-policies-steps.md)
+- [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md#how-windows-defender-device-guard-features-help-protect-against-threats)
+- [Deploy Windows Defender Application Control: steps](steps-to-deploy-windows-defender-application-control.md)
