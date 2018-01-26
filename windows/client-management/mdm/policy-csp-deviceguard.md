@@ -68,7 +68,7 @@ ms.date: 12/14/2017
 <!--EndScope-->
 <!--StartDescription-->
  
-<p style="margin-left: 20px">Added in Windows 10, version 1709. Turns on virtualization based security(VBS) at the next reboot. virtualization based security uses the Windows Hypervisor to provide support for security services. Value type is integer.
+Added in Windows 10, version 1709. Turns on virtualization based security(VBS) at the next reboot. virtualization based security uses the Windows Hypervisor to provide support for security services. Value type is integer.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -117,7 +117,7 @@ The following list shows the supported values:
 <!--EndScope-->
 <!--StartDescription-->
  
-<p style="margin-left: 20px">Added in Windows 10, version 1709. This setting lets users turn on Credential Guard with virtualization-based security to help protect credentials at next reboot. Value type is integer.
+Added in Windows 10, version 1709. This setting lets users turn on Credential Guard with virtualization-based security to help protect credentials at next reboot. Value type is integer.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -168,7 +168,7 @@ The following list shows the supported values:
 <!--StartDescription-->
 Added in Windows 10, version 1709. Specifies the platform security level at the next reboot. Value type is integer.
  
-<p style="margin-left: 20px">
+
 
 <!--EndDescription-->
 <!--SupportedValues-->

@@ -64,9 +64,9 @@ ms.date: 12/14/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the download and update of map data over metered connections.
+Added in Windows 10, version 1607. Allows the download and update of map data over metered connections.
 
-<p style="margin-left: 20px">After the policy is applied, you can verify the settings in the user interface in **System** &gt; **Offline Maps**.
+After the policy is applied, you can verify the settings in the user interface in **System** &gt; **Offline Maps**.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -115,9 +115,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Disables the automatic download and update of map data.
+Added in Windows 10, version 1607. Disables the automatic download and update of map data.
 
-<p style="margin-left: 20px">After the policy is applied, you can verify the settings in the user interface in **System** &gt; **Offline Maps**.
+After the policy is applied, you can verify the settings in the user interface in **System** &gt; **Offline Maps**.
 
 <!--EndDescription-->
 <!--SupportedValues-->

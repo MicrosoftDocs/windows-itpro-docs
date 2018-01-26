@@ -64,9 +64,9 @@ ms.date: 11/01/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Allows or disallows the Federal Information Processing Standard (FIPS) policy.
+Allows or disallows the Federal Information Processing Standard (FIPS) policy.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 (default) – Not allowed.
 -   1– Allowed.
@@ -110,7 +110,7 @@ ms.date: 11/01/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Lists the Cryptographic Cipher Algorithms allowed for SSL connections. Format is a semicolon delimited list. Last write win.
+Lists the Cryptographic Cipher Algorithms allowed for SSL connections. Format is a semicolon delimited list. Last write win.
 
 <!--EndDescription-->
 <!--EndPolicy-->

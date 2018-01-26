@@ -117,9 +117,9 @@ ms.date: 12/29/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. The company name that is displayed to the users. CompanyName is required for both EnableCustomizedToasts and EnableInAppCustomization. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display the contact options.
+Added in Windows 10, version 1709. The company name that is displayed to the users. CompanyName is required for both EnableCustomizedToasts and EnableInAppCustomization. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display the contact options.
 
-<p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace and Delete.
+Value type is string. Supported operations are Add, Get, Replace and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -215,9 +215,9 @@ Valid values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. Use this policy setting if you want to disable the display of the app and browser protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
+Added in Windows 10, version 1709. Use this policy setting if you want to disable the display of the app and browser protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
 
-<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete.
+Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
 <!--EndDescription-->
 
@@ -321,12 +321,12 @@ Valid values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. Use this policy if you want Windows Defender Security Center to only display notifications which are considered critical. If you disable or do not configure this setting, Windows Defender Security Center will display critical and non-critical notifications to users.
+Added in Windows 10, version 1709. Use this policy if you want Windows Defender Security Center to only display notifications which are considered critical. If you disable or do not configure this setting, Windows Defender Security Center will display critical and non-critical notifications to users.
 
 > [!Note]  
 > If Suppress notification is enabled then users will not see critical or non-critical messages.
 
-<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete.
+Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -374,9 +374,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. Use this policy setting if you want to disable the display of the family options area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
+Added in Windows 10, version 1709. Use this policy setting if you want to disable the display of the family options area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
 
-<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete.
+Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -424,9 +424,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. Use this policy setting if you want to disable the display of the device performance and health area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
+Added in Windows 10, version 1709. Use this policy setting if you want to disable the display of the device performance and health area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
 
-<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete.
+Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -474,9 +474,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. Use this policy setting if you want to disable the display of the firewall and network protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
+Added in Windows 10, version 1709. Use this policy setting if you want to disable the display of the firewall and network protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
 
-<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete.
+Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -524,9 +524,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. Use this policy setting if you want to disable the display of Windows Defender Security Center notifications. If you disable or do not configure this setting, Windows Defender Security Center notifications will display on devices.
+Added in Windows 10, version 1709. Use this policy setting if you want to disable the display of Windows Defender Security Center notifications. If you disable or do not configure this setting, Windows Defender Security Center notifications will display on devices.
 
-<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete.
+Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -574,9 +574,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. Use this policy setting if you want to disable the display of the virus and threat protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
+Added in Windows 10, version 1709. Use this policy setting if you want to disable the display of the virus and threat protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
 
-<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete.
+Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -624,9 +624,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. Prevent users from making changes to the exploit protection settings area in the Windows Defender Security Center. If you disable or do not configure this setting, local users can make changes in the exploit protection settings area.
+Added in Windows 10, version 1709. Prevent users from making changes to the exploit protection settings area in the Windows Defender Security Center. If you disable or do not configure this setting, local users can make changes in the exploit protection settings area.
 
-<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace and Delete.
+Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -674,9 +674,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. The email address that is displayed to users.  The default mail application is used to initiate email actions. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display contact options.
+Added in Windows 10, version 1709. The email address that is displayed to users.  The default mail application is used to initiate email actions. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display contact options.
 
-<p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace and Delete.
+Value type is string. Supported operations are Add, Get, Replace and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -717,9 +717,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. Enable this policy to display your company name and contact options in the notifications. If you disable or do not configure this setting, or do not provide CompanyName and a minimum of one contact method (Phone using Skype, Email, Help portal URL) Windows Defender Security Center will display a default notification text.
+Added in Windows 10, version 1709. Enable this policy to display your company name and contact options in the notifications. If you disable or do not configure this setting, or do not provide CompanyName and a minimum of one contact method (Phone using Skype, Email, Help portal URL) Windows Defender Security Center will display a default notification text.
 
-<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -767,9 +767,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. Enable this policy to have your company name and contact options displayed in a contact card fly out in Windows Defender Security Center. If you disable or do not configure this setting, or do not provide CompanyName and a minimum of one contact method (Phone using Skype, Email, Help portal URL) Windows Defender Security Center will not display the contact card fly out notification.
+Added in Windows 10, version 1709. Enable this policy to have your company name and contact options displayed in a contact card fly out in Windows Defender Security Center. If you disable or do not configure this setting, or do not provide CompanyName and a minimum of one contact method (Phone using Skype, Email, Help portal URL) Windows Defender Security Center will not display the contact card fly out notification.
 
-<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -979,9 +979,9 @@ Valid values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. The phone number or Skype ID that is displayed to users.  Skype is used to initiate the call. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display contact options.
+Added in Windows 10, version 1709. The phone number or Skype ID that is displayed to users.  Skype is used to initiate the call. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display contact options.
 
-<p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.
+Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -1022,9 +1022,9 @@ Valid values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. The help portal URL this is displayed to users. The default browser is used to initiate this action. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then the device will not display contact options.
+Added in Windows 10, version 1709. The help portal URL this is displayed to users. The default browser is used to initiate this action. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then the device will not display contact options.
 
-<p style="margin-left: 20px">Value type is Value type is string. Supported operations are Add, Get, Replace, and Delete.
+Value type is Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->

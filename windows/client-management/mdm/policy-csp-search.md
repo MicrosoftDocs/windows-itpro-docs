@@ -102,9 +102,9 @@ ms.date: 01/08/2018
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. Allow search and Cortana to search cloud sources like OneDrive and SharePoint. This policy allows corporate administrators to control whether employees can turn off/on the search of these cloud sources. The default policy value is to allow employees access to the setting that controls search of cloud sources.
+Added in Windows 10, version 1709. Allow search and Cortana to search cloud sources like OneDrive and SharePoint. This policy allows corporate administrators to control whether employees can turn off/on the search of these cloud sources. The default policy value is to allow employees access to the setting that controls search of cloud sources.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
@@ -203,13 +203,13 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Allows or disallows the indexing of items. This switch is for the Windows Search Indexer, which controls whether it will index items that are encrypted, such as the Windows Information Protection (WIP) protected files.
+Allows or disallows the indexing of items. This switch is for the Windows Search Indexer, which controls whether it will index items that are encrypted, such as the Windows Information Protection (WIP) protected files.
 
-<p style="margin-left: 20px">When the policy is enabled, WIP protected items are indexed and the metadata about them are stored in an unencrypted location. The metadata includes things like file path and date modified.
+When the policy is enabled, WIP protected items are indexed and the metadata about them are stored in an unencrypted location. The metadata includes things like file path and date modified.
 
-<p style="margin-left: 20px">When the policy is disabled, the WIP protected items are not indexed and do not show up in the results in Cortana or file explorer. There may also be a performance impact on photos and Groove apps if there are a lot of WIP protected media files on the device.
+When the policy is disabled, the WIP protected items are not indexed and do not show up in the results in Cortana or file explorer. There may also be a performance impact on photos and Groove apps if there are a lot of WIP protected media files on the device.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -257,9 +257,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether search can leverage location information.
+Specifies whether search can leverage location information.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -284,7 +284,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">This policy has been deprecated.
+This policy has been deprecated.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -325,14 +325,14 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Allows the use of diacritics.
+Allows the use of diacritics.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -373,7 +373,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Allow Windows indexer. Value type is integer.
+Allow Windows indexer. Value type is integer.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -414,14 +414,14 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether to always use automatic language detection when indexing content and properties.
+Specifies whether to always use automatic language detection when indexing content and properties.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -462,9 +462,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">If enabled, the search indexer backoff feature will be disabled. Indexing will continue at full speed even when system activity is high. If disabled, backoff logic will be used to throttle back indexing activity when system activity is high. Default is disabled.
+If enabled, the search indexer backoff feature will be disabled. Indexing will continue at full speed even when system activity is high. If disabled, backoff logic will be used to throttle back indexing activity when system activity is high. Default is disabled.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 (default) – Disable.
 -   1 – Enable.
@@ -508,13 +508,13 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">This policy setting configures whether or not locations on removable drives can be added to libraries.
+This policy setting configures whether or not locations on removable drives can be added to libraries.
 
-<p style="margin-left: 20px">If you enable this policy setting, locations on removable drives cannot be added to libraries. In addition, locations on removable drives cannot be indexed.
+If you enable this policy setting, locations on removable drives cannot be added to libraries. In addition, locations on removable drives cannot be indexed.
 
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, locations on removable drives can be added to libraries. In addition, locations on removable drives can be indexed.
+If you disable or do not configure this policy setting, locations on removable drives can be added to libraries. In addition, locations on removable drives can be indexed.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 (default) – Disable.
 -   1 – Enable.
@@ -617,13 +617,13 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Enabling this policy prevents indexing from continuing after less than the specified amount of hard drive space is left on the same drive as the index location. Select between 0 and 1.
+Enabling this policy prevents indexing from continuing after less than the specified amount of hard drive space is left on the same drive as the index location. Select between 0 and 1.
 
-<p style="margin-left: 20px">Enable this policy if computers in your environment have extremely limited hard drive space.
+Enable this policy if computers in your environment have extremely limited hard drive space.
 
-<p style="margin-left: 20px">When this policy is disabled or not configured, Windows Desktop Search automatically manages your index size.
+When this policy is disabled or not configured, Windows Desktop Search automatically manages your index size.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 – Disable.
 -   1 (default) – Enable.
@@ -667,9 +667,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">If enabled, clients will be unable to query this computer's index remotely. Thus, when they are browsing network shares that are stored on this computer, they will not search them using the index. If disabled, client search requests will use this computer's index..
+If enabled, clients will be unable to query this computer's index remotely. Thus, when they are browsing network shares that are stored on this computer, they will not search them using the index. If disabled, client search requests will use this computer's index..
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 – Disable.
 -   1 (default) – Enable.
@@ -717,14 +717,14 @@ The following list shows the supported values:
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
 
-<p style="margin-left: 20px">Specifies what level of safe search (filtering adult content) is required.
+Specifies what level of safe search (filtering adult content) is required.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 – Strict, highest filtering against adult content.
 -   1 (default) – Moderate filtering against adult content (valid search results will not be filtered).
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--EndPolicy-->
