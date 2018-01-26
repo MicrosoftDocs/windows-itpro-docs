@@ -145,7 +145,7 @@ ms.date: 12/14/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Documents shortcut on the Start menu.
+Added in Windows 10, version 1703. This policy controls the visibility of the Documents shortcut on the Start menu.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -194,7 +194,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Downloads shortcut on the Start menu.
+Added in Windows 10, version 1703. This policy controls the visibility of the Downloads shortcut on the Start menu.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -243,7 +243,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the File Explorer shortcut on the Start menu.
+Added in Windows 10, version 1703. This policy controls the visibility of the File Explorer shortcut on the Start menu.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -292,7 +292,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the HomeGroup shortcut on the Start menu.
+Added in Windows 10, version 1703. This policy controls the visibility of the HomeGroup shortcut on the Start menu.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -341,7 +341,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Music shortcut on the Start menu.
+Added in Windows 10, version 1703. This policy controls the visibility of the Music shortcut on the Start menu.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -390,7 +390,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Network shortcut on the Start menu.
+Added in Windows 10, version 1703. This policy controls the visibility of the Network shortcut on the Start menu.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -439,7 +439,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the PersonalFolder shortcut on the Start menu.
+Added in Windows 10, version 1703. This policy controls the visibility of the PersonalFolder shortcut on the Start menu.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -488,7 +488,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Pictures shortcut on the Start menu.
+Added in Windows 10, version 1703. This policy controls the visibility of the Pictures shortcut on the Start menu.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -537,7 +537,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Settings shortcut on the Start menu.
+Added in Windows 10, version 1703. This policy controls the visibility of the Settings shortcut on the Start menu.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -586,7 +586,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Videos shortcut on the Start menu.
+Added in Windows 10, version 1703. This policy controls the visibility of the Videos shortcut on the Start menu.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -639,15 +639,15 @@ The following list shows the supported values:
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
-<p style="margin-left: 20px">Forces the start screen size.
+Forces the start screen size.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 (default) – Do not force size of Start.
 -   1 – Force non-fullscreen size of Start.
 -   2 - Force a fullscreen size of Start.
 
-<p style="margin-left: 20px">If there is policy configuration conflict, the latest configuration request is applied to the device.
+If there is policy configuration conflict, the latest configuration request is applied to the device.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -691,19 +691,19 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy requires reboot to take effect.
 
-<p style="margin-left: 20px">Allows IT Admins to configure Start by collapsing or removing the all apps list.
+Allows IT Admins to configure Start by collapsing or removing the all apps list.
 
 > [!Note]
 > There were issues reported with the previous release of this policy and a fix was added in Windows 10, version 1709. 
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 (default) – None.
 -   1 – Hide all apps list.
 -   2 - Hide all apps list, and Disable "Show app list in Start menu" in Settings app.
 -   3 - Hide all apps list, remove all apps button, and Disable "Show app list in Start menu" in Settings app.
 
-<p style="margin-left: 20px">To validate on Desktop, do the following:
+To validate on Desktop, do the following:
 
 -   1 - Enable policy and restart explorer.exe
 -   2a - If set to '1': Verify that the all apps list is collapsed, and that the Settings toggle is not grayed out.
@@ -749,9 +749,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Change account settings" from appearing in the user tile.
+Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Change account settings" from appearing in the user tile.
 
-<p style="margin-left: 20px">To validate on Desktop, do the following:
+To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Open Start, click on the user tile, and verify that "Change account settings" is not available.
@@ -805,9 +805,9 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy requires reboot to take effect.
 
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding most used apps.
+Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding most used apps.
 
-<p style="margin-left: 20px">To validate on Desktop, do the following:
+To validate on Desktop, do the following:
 
 1.   Enable "Show most used apps" in the Settings app.
 2.   Use some apps to get them into the most used group in Start.
@@ -862,9 +862,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Hibernate" from appearing in the Power button.
+Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Hibernate" from appearing in the Power button.
 
-<p style="margin-left: 20px">To validate on Laptop, do the following:
+To validate on Laptop, do the following:
 
 1.   Enable policy.
 2.   Open Start, click on the Power button, and verify "Hibernate" is not available.
@@ -918,9 +918,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Lock" from appearing in the user tile.
+Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Lock" from appearing in the user tile.
 
-<p style="margin-left: 20px">To validate on Desktop, do the following:
+To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Open Start, click on the user tile, and verify "Lock" is not available.
@@ -971,9 +971,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. Enabling this policy removes the people icon from the taskbar as well as the corresponding settings toggle. It also prevents users from pinning people to the taskbar.
+Added in Windows 10, version 1709. Enabling this policy removes the people icon from the taskbar as well as the corresponding settings toggle. It also prevents users from pinning people to the taskbar.
 
-<p style="margin-left: 20px">Value type is integer.
+Value type is integer.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -1017,9 +1017,9 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy requires reboot to take effect.
 
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding the Power button from appearing.
+Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding the Power button from appearing.
 
-<p style="margin-left: 20px">To validate on Desktop, do the following:
+To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Open Start, and verify the power button is not available.
@@ -1073,9 +1073,9 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy requires reboot to take effect.
 
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding recently opened items in the jumplists from appearing.
+Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding recently opened items in the jumplists from appearing.
 
-<p style="margin-left: 20px">To validate on Desktop, do the following:
+To validate on Desktop, do the following:
 
 1.   Enable "Show recently opened items in Jump Lists on Start of the taskbar" in Settings.
 2.   Pin Photos to the taskbar, and open some images in the photos app.
@@ -1136,9 +1136,9 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy requires reboot to take effect.
 
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding recently added apps.
+Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding recently added apps.
 
-<p style="margin-left: 20px">To validate on Desktop, do the following:
+To validate on Desktop, do the following:
 
 1.   Enable "Show recently added apps" in the Settings app.
 2.   Check if there are recently added apps in Start (if not, install some).
@@ -1193,9 +1193,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Restart" and "Update and restart" from appearing in the Power button.
+Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Restart" and "Update and restart" from appearing in the Power button.
 
-<p style="margin-left: 20px">To validate on Desktop, do the following:
+To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Open Start, click on the Power button, and verify "Restart" and "Update and restart" are not available.
@@ -1246,9 +1246,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Shut down" and "Update and shut down" from appearing in the Power button.
+Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Shut down" and "Update and shut down" from appearing in the Power button.
 
-<p style="margin-left: 20px">To validate on Desktop, do the following:
+To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Open Start, click on the Power button, and verify "Shut down" and "Update and shut down" are not available.
@@ -1299,9 +1299,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Sign out" from appearing in the user tile.
+Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Sign out" from appearing in the user tile.
 
-<p style="margin-left: 20px">To validate on Desktop, do the following:
+To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Open Start, click on the user tile, and verify "Sign out" is not available.
@@ -1352,9 +1352,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Sleep" from appearing in the Power button.
+Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Sleep" from appearing in the Power button.
 
-<p style="margin-left: 20px">To validate on Desktop, do the following:
+To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Open Start, click on the Power button, and verify that "Sleep" is not available.
@@ -1405,9 +1405,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Switch account" from appearing in the user tile.
+Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Switch account" from appearing in the user tile.
 
-<p style="margin-left: 20px">To validate on Desktop, do the following:
+To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Open Start, click on the user tile, and verify that "Switch account" is not available.
@@ -1461,9 +1461,9 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy requires reboot to take effect.
 
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding the user tile.
+Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding the user tile.
 
-<p style="margin-left: 20px">To validate on Desktop, do the following:
+To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Log off.
@@ -1518,14 +1518,14 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy requires reboot to take effect.
 
-<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy imports Edge assets (e.g. .png/.jpg files) for secondary tiles into its local app data path which allows the StartLayout policy to pin Edge secondary tiles as weblink that tie to the image asset files.
+Added in Windows 10, version 1703. This policy imports Edge assets (e.g. .png/.jpg files) for secondary tiles into its local app data path which allows the StartLayout policy to pin Edge secondary tiles as weblink that tie to the image asset files.
 
 > [!IMPORTANT]
 > Please note that the import happens only when StartLayout policy is changed. So it is better to always change ImportEdgeAssets policy at the same time as StartLayout policy whenever there are Edge secondary tiles to be pinned from StartLayout policy.
 
-<p style="margin-left: 20px">The value set for this policy is an XML string containing Edge assets.  For an example XML string, see [Add image for secondary Microsoft Edge tiles](https://docs.microsoft.com/en-us/windows/configuration/start-secondary-tiles).
+The value set for this policy is an XML string containing Edge assets.  For an example XML string, see [Add image for secondary Microsoft Edge tiles](https://docs.microsoft.com/en-us/windows/configuration/start-secondary-tiles).
 
-<p style="margin-left: 20px">To validate on Desktop, do the following:
+To validate on Desktop, do the following:
 
 1.   Set policy with an XML for Edge assets.
 2.   Set StartLayout policy to anything so that it would trigger the Edge assets import.
@@ -1571,9 +1571,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure the taskbar by disabling pinning and unpinning apps on the taskbar.
+Added in Windows 10, version 1703. Allows IT Admins to configure the taskbar by disabling pinning and unpinning apps on the taskbar.
 
-<p style="margin-left: 20px">To validate on Desktop, do the following:
+To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Right click on a program pinned to taskbar.
@@ -1631,9 +1631,9 @@ The following list shows the supported values:
 > [!IMPORTANT]
 > Added in Windows 10 version 1703: In addition to being able to set this node on a per user-basis, it can now also be set on a per-device basis. For more information, see [Policy scope](./policy-configuration-service-provider.md#policy-scope)
 
-<p style="margin-left: 20px">Allows you to override the default Start layout and prevents the user from changing it. If both user and device policies are set, the user policy will be used. Apps pinned to the taskbar can also be changed with this policy
+Allows you to override the default Start layout and prevents the user from changing it. If both user and device policies are set, the user policy will be used. Apps pinned to the taskbar can also be changed with this policy
 
-<p style="margin-left: 20px">For further details on how to customize the Start layout, please see [Customize and export Start layout](https://docs.microsoft.com/en-us/windows/configuration/customize-and-export-start-layout) and [Configure Windows 10 taskbar](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-10-taskbar).
+For further details on how to customize the Start layout, please see [Customize and export Start layout](https://docs.microsoft.com/en-us/windows/configuration/customize-and-export-start-layout) and [Configure Windows 10 taskbar](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-10-taskbar).
 
 <!--EndDescription-->
 <!--EndPolicy-->

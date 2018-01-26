@@ -47,7 +47,7 @@ ms.date: 12/14/2017
 <a href="" id="wifi-allowwifihotspotreporting"></a>**WiFi/AllowWiFiHotSpotReporting**  
 
 <!--StartDescription-->
-<p style="margin-left: 20px">This policy has been deprecated.
+This policy has been deprecated.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -88,9 +88,9 @@ ms.date: 12/14/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Allow or disallow the device to automatically connect to Wi-Fi hotspots.
+Allow or disallow the device to automatically connect to Wi-Fi hotspots.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -138,9 +138,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Allow or disallow internet sharing.
+Allow or disallow internet sharing.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -188,9 +188,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Allow or disallow connecting to Wi-Fi outside of MDM server-installed networks.
+Allow or disallow connecting to Wi-Fi outside of MDM server-installed networks.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 > [!NOTE]
 > Setting this policy deletes any previously installed user-configured and Wi-Fi sense Wi-Fi profiles from the device. Certain Wi-Fi profiles that are not user configured nor Wi-Fi sense might not be deleted. In addition, not all non-MDM profiles are completely deleted.
@@ -241,9 +241,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Allow or disallow WiFi connection.
+Allow or disallow WiFi connection.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -291,7 +291,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allow WiFi Direct connection..
+Added in Windows 10, version 1703. Allow WiFi Direct connection..
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -339,13 +339,13 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Allow an enterprise to control the WLAN scanning behavior and how aggressively devices should be actively scanning for Wi-Fi networks to get devices connected.
+Allow an enterprise to control the WLAN scanning behavior and how aggressively devices should be actively scanning for Wi-Fi networks to get devices connected.
 
-<p style="margin-left: 20px">Supported values are 0-500, where 100 = normal scan frequency and 500 = low scan frequency.
+Supported values are 0-500, where 100 = normal scan frequency and 500 = low scan frequency.
 
-<p style="margin-left: 20px">The default value is 0.
+The default value is 0.
 
-<p style="margin-left: 20px">Supported operations are Add, Delete, Get, and Replace.
+Supported operations are Add, Delete, Get, and Replace.
 
 <!--EndDescription-->
 <!--EndPolicy-->
