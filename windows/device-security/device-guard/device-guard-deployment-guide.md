@@ -22,21 +22,21 @@ Windows Defender Device Guard also uses virtualization-based security to isolate
 
 This guide explores the individual features in Windows Defender Device Guard as well as how to plan for, configure, and deploy them. It includes:
 
-- [Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md)
+- [Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control](introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 
 - [Requirements and deployment planning guidelines for Windows Defender Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md)
 
 - [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md)
 
-- [Deploy Windows Defender Application Control](deploy-device-guard-deploy-code-integrity-policies.md)
+- [Deploy Windows Defender Application Control](deploy-windows-defender-application-control.md)
 
-    - [Optional: Create a code signing certificate for Windows Defender Application Control](optional-create-a-code-signing-certificate-for-code-integrity-policies.md)
+    - [Optional: Create a code signing certificate for Windows Defender Application Control](optional-create-a-code-signing-certificate-for-windows-defender-application-control.md)
 
-    - [Deploy Windows Defender Application Control: policy rules and file rules](deploy-code-integrity-policies-policy-rules-and-file-rules.md)
+    - [Deploy Windows Defender Application Control: policy rules and file rules](deploy-windows-defender-application-control-policy-rules-and-file-rules.md)
 
-    - [Deploy Windows Defender Application Control: steps](deploy-code-integrity-policies-steps.md)
+    - [Deploy Windows Defender Application Control: steps](steps-to-deploy-windows-defender-application-control.md)
 
-    - [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-code-integrity-policies.md)
+    - [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-windows-defender-application-control.md)
 
 - [Enable virtualization-based protection of code integrity](deploy-device-guard-enable-virtualization-based-security.md)
 
