@@ -61,7 +61,7 @@ ms.date: 12/14/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. Specifies whether advanced gaming services can be used. These services may send data to Microsoft or publishers of games that use these services. Value type is integer.
+Added in Windows 10, version 1709. Specifies whether advanced gaming services can be used. These services may send data to Microsoft or publishers of games that use these services. Value type is integer.
 
 <!--EndDescription-->
 <!--SupportedValues-->

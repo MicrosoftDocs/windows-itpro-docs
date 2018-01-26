@@ -61,7 +61,7 @@ ms.date: 12/14/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Allows for the configuration of the default clock setting to be the 24 hour format. Selecting 'Set 24 hour Clock' enables this setting. Selecting 'Locale default setting' uses the default clock as prescribed by the current locale setting.
+Allows for the configuration of the default clock setting to be the 24 hour format. Selecting 'Set 24 hour Clock' enables this setting. Selecting 'Locale default setting' uses the default clock as prescribed by the current locale setting.
 
 <!--EndDescription-->
 <!--SupportedValues-->

@@ -82,7 +82,7 @@ ms.date: 12/14/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. This policy setting allows you to turn off the Wireless Display multicast DNS service advertisement from a Wireless Display receiver. If the network administrator is concerned about network congestion, they may set this policy to 0, disabling mDNS advertisement.  
+Added in Windows 10, version 1709. This policy setting allows you to turn off the Wireless Display multicast DNS service advertisement from a Wireless Display receiver. If the network administrator is concerned about network congestion, they may set this policy to 0, disabling mDNS advertisement.  
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -130,7 +130,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. This policy setting allows you to turn off discovering the display service advertised over multicast DNS by a Wireless Display receiver. If the network administrator is concerned about network congestion, they may set this policy to 0, disabling mDNS discovery.  
+Added in Windows 10, version 1709. This policy setting allows you to turn off discovering the display service advertised over multicast DNS by a Wireless Display receiver. If the network administrator is concerned about network congestion, they may set this policy to 0, disabling mDNS discovery.  
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -178,7 +178,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy allows you to turn off projection from a PC.  
+Added in Windows 10, version 1703. This policy allows you to turn off projection from a PC.  
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -226,7 +226,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy allows you to turn off projection from a PC over infrastructure.  
+Added in Windows 10, version 1703. This policy allows you to turn off projection from a PC over infrastructure.  
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -274,11 +274,11 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Allow or disallow turning off the projection to a PC.
+Added in Windows 10, version 1607. Allow or disallow turning off the projection to a PC.
 
-<p style="margin-left: 20px">If you set it to 0 (zero), your PC is not discoverable and you cannot project to it. If you set it to 1, your PC is discoverable and you can project to it above the lock screen. The user has an option to turn it always on or always off except for manual launch. In PCs that support Miracast, after the policy is applied you can verify the setting from the user interface in **Settings** &gt; **System** &gt; **Projecting to this PC**.
+If you set it to 0 (zero), your PC is not discoverable and you cannot project to it. If you set it to 1, your PC is discoverable and you can project to it above the lock screen. The user has an option to turn it always on or always off except for manual launch. In PCs that support Miracast, after the policy is applied you can verify the setting from the user interface in **Settings** &gt; **System** &gt; **Projecting to this PC**.
 
-<p style="margin-left: 20px">Value type is integer.
+Value type is integer.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -326,7 +326,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy setting allows you to turn off projection to a PC over infrastructure.  
+Added in Windows 10, version 1703. This policy setting allows you to turn off projection to a PC over infrastructure.  
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -351,7 +351,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Setting this policy controls whether or not the wireless display can send input&#8212;keyboard, mouse, pen, and touch input if the display supports it&#8212;back to the source device.
+Added in Windows 10, version 1703. Setting this policy controls whether or not the wireless display can send input&#8212;keyboard, mouse, pen, and touch input if the display supports it&#8212;back to the source device.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -399,11 +399,11 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Allow or disallow requirement for a PIN for pairing.
+Added in Windows 10, version 1607. Allow or disallow requirement for a PIN for pairing.
 
-<p style="margin-left: 20px">If you turn this on, the pairing ceremony for new devices will always require a PIN. If you turn this off or do not configure it, a PIN is not required for pairing. In PCs that support Miracast, after the policy is applied you can verify the setting from the user interface in **Settings** &gt; **System** &gt; **Projecting to this PC**.
+If you turn this on, the pairing ceremony for new devices will always require a PIN. If you turn this off or do not configure it, a PIN is not required for pairing. In PCs that support Miracast, after the policy is applied you can verify the setting from the user interface in **Settings** &gt; **System** &gt; **Projecting to this PC**.
 
-<p style="margin-left: 20px">Value type is integer.
+Value type is integer.
 
 <!--EndDescription-->
 <!--SupportedValues-->

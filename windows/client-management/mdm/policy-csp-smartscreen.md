@@ -67,7 +67,7 @@ ms.date: 12/14/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
+Added in Windows 10, version 1703. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -115,7 +115,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure SmartScreen for Windows.
+Added in Windows 10, version 1703. Allows IT Admins to configure SmartScreen for Windows.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -163,7 +163,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.
+Added in Windows 10, version 1703. Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.
 
 <!--EndDescription-->
 <!--SupportedValues-->

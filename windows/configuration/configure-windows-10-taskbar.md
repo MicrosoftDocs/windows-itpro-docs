@@ -32,10 +32,11 @@ The following example shows how apps will be pinned: Windows default apps to the
 
 ## Configure taskbar (general)
 
-To configure the taskbar:
+**To configure the taskbar:**
+
 1. Create the XML file.
-   * If you are also [customizing the Start layout](customize-and-export-start-layout.md), use `Export-StartLayout` to create the XML, and then add the `<CustomTaskbarLayoutCollection>` section from the following sample to the file.
-   * If you are only configuring the taskbar, use the following sample to create a layout modification XML file.
+   * If you are also [customizing the Start layout](customize-and-export-start-layout.md), use `Export-StartLayout` to create the XML, and then add the `<CustomTaskbarLayoutCollection>` section from [the following sample](#sample-taskbar-configuration-added-to-start-layout-xml-file) to the file.
+   * If you are only configuring the taskbar, use [the following sample](#sample-taskbar-configuration-xml-file) to create a layout modification XML file.
 2. Edit and save the XML file. You can use [AUMID](https://go.microsoft.com/fwlink/p/?LinkId=614867) or Desktop Application Link Path to identify the apps to pin to the taskbar.
    * Use `<taskbar:UWA>` and [AUMID](https://go.microsoft.com/fwlink/p/?LinkId=614867) to pin Universal Windows Platform apps.
    * Use `<taskbar:DesktopApp>` and Desktop Application Link Path to pin desktop applications. 
