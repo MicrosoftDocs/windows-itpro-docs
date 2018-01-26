@@ -64,7 +64,7 @@ ms.date: 12/14/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Enables or Disable Windows license reactivation on managed devices.
+Added in Windows 10, version 1607. Enables or Disable Windows license reactivation on managed devices.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -112,7 +112,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Enabling this setting prevents this computer from sending data to Microsoft regarding its activation state.
+Added in Windows 10, version 1607. Enabling this setting prevents this computer from sending data to Microsoft regarding its activation state.
 
 <!--EndDescription-->
 <!--SupportedValues-->

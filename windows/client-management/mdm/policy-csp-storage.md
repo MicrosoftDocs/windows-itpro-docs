@@ -64,15 +64,15 @@ ms.date: 12/13/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709.  Allows disk health model updates.
+Added in Windows 10, version 1709.  Allows disk health model updates.
 
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 - Do not allow
 -   1 (default) - Allow
 
-<p style="margin-left: 20px">Value type is integer.
+Value type is integer.
 
 <!--EndDescription-->
 <!--EndPolicy-->
