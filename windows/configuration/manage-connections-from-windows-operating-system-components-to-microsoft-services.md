@@ -549,7 +549,7 @@ Alternatively, you can configure the Microsoft Group Policies using the followin
 
 | Policy | Registry path |
 | - | - |
-| AllowConfigurationUpdateForBooksLibrary | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\BooksLibrary<br/> REG_SZ: **no** |
+| Allow configuration for the Books Library  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\BooksLibrary!AllowConfigurationUpdateForBooksLibrary<br/> REG_SZ: **no** |
 | Configure Autofill  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main!Use FormSuggest<br/> REG_SZ: **no** |
 | Configure Do Not Track   | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main!DoNotTrack<br/> REG_DWORD: 1 |
 | Configure Password Manager | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main!FormSuggest Passwords<br /> REG_SZ: **no** |
