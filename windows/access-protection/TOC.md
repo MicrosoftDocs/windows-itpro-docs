@@ -65,6 +65,7 @@
 ### [VPN auto-triggered profile options](vpn\vpn-auto-trigger-profile.md)
 ### [VPN security features](vpn\vpn-security-features.md)
 ### [VPN profile options](vpn\vpn-profile-options.md)
+### [How to configure Diffie Hellman protocol over IKEv2 VPN connections](vpn\how-to-configure-diffie-hellman-protocol-over-ikev2-vpn-connections.md)
 ### [How to use single sign-on (SSO) over VPN and Wi-Fi connections](vpn\how-to-use-single-sign-on-sso-over-vpn-and-wi-fi-connections.md)
 ### [Windows 10 credential theft mitigation guide abstract](windows-credential-theft-mitigation-guide-abstract.md)
 
