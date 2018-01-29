@@ -47,7 +47,7 @@ ms.date: 01/29/2018
 <!--StartPolicy-->
 <a href="" id="kioskbrowser-blockedurlexceptions"></a>**KioskBrowser/BlockedUrlExceptions**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -69,8 +69,8 @@ ms.date: 01/29/2018
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportdSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -79,11 +79,11 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, next major update. List of exceptions to the blocked website URLs (with wildcard support). This is used to configure URLs kiosk browsers are allowed to navigate to, which are a subset of the blocked URLs.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--EndPolicy-->
 
 <hr/>
@@ -91,7 +91,7 @@ Added in Windows 10, next major update. List of exceptions to the blocked websit
 <!--StartPolicy-->
 <a href="" id="kioskbrowser-blockedurls"></a>**KioskBrowser/BlockedUrls**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -113,8 +113,8 @@ Added in Windows 10, next major update. List of exceptions to the blocked websit
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportdSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -123,11 +123,11 @@ Added in Windows 10, next major update. List of exceptions to the blocked websit
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, next major update. List of blocked website URLs (with wildcard support). This is used to configure blocked URLs kiosk browsers cannot navigate to.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--EndPolicy-->
 
 <hr/>
@@ -135,7 +135,7 @@ Added in Windows 10, next major update. List of blocked website URLs (with wildc
 <!--StartPolicy-->
 <a href="" id="kioskbrowser-defaulturl"></a>**KioskBrowser/DefaultURL**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -157,8 +157,8 @@ Added in Windows 10, next major update. List of blocked website URLs (with wildc
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportdSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -167,11 +167,11 @@ Added in Windows 10, next major update. List of blocked website URLs (with wildc
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, next major update. Configures the default URL kiosk browsers to navigate on launch and restart.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--EndPolicy-->
 
 <hr/>
@@ -179,7 +179,7 @@ Added in Windows 10, next major update. Configures the default URL kiosk browser
 <!--StartPolicy-->
 <a href="" id="kioskbrowser-enablehomebutton"></a>**KioskBrowser/EnableHomeButton**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -201,8 +201,8 @@ Added in Windows 10, next major update. Configures the default URL kiosk browser
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportdSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -211,11 +211,11 @@ Added in Windows 10, next major update. Configures the default URL kiosk browser
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, next major update. Enable/disable kiosk browser's home button.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--EndPolicy-->
 
 <hr/>
@@ -223,7 +223,7 @@ Added in Windows 10, next major update. Enable/disable kiosk browser's home butt
 <!--StartPolicy-->
 <a href="" id="kioskbrowser-enablenavigationbuttons"></a>**KioskBrowser/EnableNavigationButtons**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -245,8 +245,8 @@ Added in Windows 10, next major update. Enable/disable kiosk browser's home butt
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportdSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -255,11 +255,11 @@ Added in Windows 10, next major update. Enable/disable kiosk browser's home butt
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, next major update. Enable/disable kiosk browser's navigation buttons (forward/back).
 
-<!--EndDescription-->
+<!--/Description-->
 <!--EndPolicy-->
 
 <hr/>
@@ -267,7 +267,7 @@ Added in Windows 10, next major update. Enable/disable kiosk browser's navigatio
 <!--StartPolicy-->
 <a href="" id="kioskbrowser-restartonidletime"></a>**KioskBrowser/RestartOnIdleTime**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -289,8 +289,8 @@ Added in Windows 10, next major update. Enable/disable kiosk browser's navigatio
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportdSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -299,13 +299,13 @@ Added in Windows 10, next major update. Enable/disable kiosk browser's navigatio
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, next major update. Amount of time in minutes the session is idle until the kiosk browser restarts in a fresh state.  
 
 The value is an int 1-1440 that specifies the amount of minutes the session is idle until the kiosk browser restarts in a fresh state. The default value is empty which means there is no idle timeout within the kiosk browser.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--EndPolicy-->
 <hr/>
 

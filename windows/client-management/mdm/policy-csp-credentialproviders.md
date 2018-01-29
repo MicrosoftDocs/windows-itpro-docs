@@ -36,7 +36,7 @@ ms.date: 01/29/2018
 <!--StartPolicy-->
 <a href="" id="credentialproviders-allowpinlogon"></a>**CredentialProviders/AllowPINLogon**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -58,8 +58,8 @@ ms.date: 01/29/2018
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportdSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -67,8 +67,8 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 This policy setting allows you to control whether a domain user can sign in using a convenience PIN.
 
 If you enable this policy setting, a domain user can set up and sign in with a convenience PIN.
@@ -79,7 +79,7 @@ Note: The user's domain password will be cached in the system vault when using t
 
 To configure Windows Hello for Business, use the Administrative Template policies under Windows Hello for Business.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -87,14 +87,14 @@ To configure Windows Hello for Business, use the Administrative Template policie
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Turn on convenience PIN sign-in*
 -   GP name: *AllowDomainPINLogon*
 -   GP path: *System/Logon*
 -   GP ADMX file name: *credentialproviders.admx*
 
-<!--EndADMX-->
+<!--/ADMX-->
 <!--EndPolicy-->
 
 <hr/>
@@ -102,7 +102,7 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="credentialproviders-blockpicturepassword"></a>**CredentialProviders/BlockPicturePassword**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -124,8 +124,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportdSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -133,8 +133,8 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 This policy setting allows you to control whether a domain user can sign in using a picture password.
 
 If you enable this policy setting, a domain user can't set up or sign in with a picture password.
@@ -143,7 +143,7 @@ If you disable or don't configure this policy setting, a domain user can set up 
 
 Note that the user's domain password will be cached in the system vault when using this feature.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -151,14 +151,14 @@ Note that the user's domain password will be cached in the system vault when usi
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Turn off picture password sign-in*
 -   GP name: *BlockDomainPicturePassword*
 -   GP path: *System/Logon*
 -   GP ADMX file name: *credentialproviders.admx*
 
-<!--EndADMX-->
+<!--/ADMX-->
 <!--EndPolicy-->
 
 <hr/>
@@ -166,7 +166,7 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="credentialproviders-disableautomaticredeploymentcredentials"></a>**CredentialProviders/DisableAutomaticReDeploymentCredentials**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -188,8 +188,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportdSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -197,13 +197,13 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1709. Boolean policy to disable the visibility of the credential provider that triggers the PC refresh on a device. This policy does not actually trigger the refresh. The admin user is required to authenticate to trigger the refresh on the target device.
 
 The Windows 10 Automatic ReDeployment feature allows admin to reset devices to a known good managed state while preserving the management enrollment. After the automatic redeployment is triggered the devices are for ready for use by information workers or students.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
