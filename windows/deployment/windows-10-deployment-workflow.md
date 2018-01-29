@@ -12,6 +12,3 @@ ms.date: 12/4/2017
 
 # Windows 10 deployment workflow
 
-
-
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=windows-10-deployment-tools.md).

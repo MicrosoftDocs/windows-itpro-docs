@@ -35,7 +35,7 @@ This topic describes how to update Group Policy settings to display a customized
 ## Operating system requirements
 
 
-Start and taskbar layout control using Group Policy is supported in Windows 10 Enterprise and Windows 10 Education, version 1607. Start and taskbar layout control is supported in Windows 10 Pro in Windows 10, version 1703.
+In Windows 10, version 1607, Start and taskbar layout control using Group Policy is supported in Windows 10 Enterprise and Windows 10 Education. In Windows 10, version 1703, Start and taskbar layout control using Group Policy is also supported in Windows 10 Pro.
 
 The GPO can be configured from any computer on which the necessary ADMX and ADML files (StartMenu.admx and StartMenu.adml) for Windows 10 are installed. In Group Policy, ADMX files are used to define Registry-based policy settings in the Administrative Templates category. To find out how to create a central store for Administrative Templates files, see [article 929841, written for Windows Vista and still applicable](https://go.microsoft.com/fwlink/p/?LinkId=691687) in the Microsoft Knowledge Base.
 
@@ -130,7 +130,6 @@ After you use Group Policy to apply a customized Start and taskbar layout on a c
 - [Customize Windows 10 Start and tasbkar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 - [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
  
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=customize-windows-10-start-screens-by-using-group-policy.md).
  
 
 

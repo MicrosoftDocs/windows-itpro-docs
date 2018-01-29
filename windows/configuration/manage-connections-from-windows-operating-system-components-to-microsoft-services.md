@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic-msft
-ms.date: 11/30/2017
+ms.date: 01/24/2018
 ---
 
 # Manage connections from Windows operating system components to Microsoft services
@@ -30,8 +30,6 @@ You can configure telemetry at the Security level, turn off Windows Defender tel
 To help make it easier to deploy settings to restrict connections from Windows 10 to Microsoft, you can apply the [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887). This baseline was created in the same way as the [Windows security baselines](/windows/device-security/windows-security-baselines) that are often used to efficiently configure Windows to a known secure state. Running the Windows Restricted Traffic Limited Functionality Baseline on devices in your organization will allow you to quickly configure all of the settings covered in this document. However, some of the settings reduce the functionality and security configuration of your device and are therefore not recommended. Make sure should you've chosen the right settings configuration for your environment before applying. You should not extract this package to the windows\\system32 folder because it will not apply correctly. Applying this baseline is equivalent to applying the Windows 10 steps covered in this article.
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
-
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=manage-connections-from-windows-operating-system-components-to-microsoft-services.md). 
 
 ## What's new in Windows 10, version 1709
 
@@ -68,7 +66,7 @@ Here's a list of changes that were made to this article for Windows 10, version 
     - Accounts: Block Microsoft Accounts
     - Do not use diagnostic data for tailored experiences
 
-## <a href="" id="bkmk-othersettings"></a>Settings
+## <a href="" id="bkmk-othersettings"></a>Management options for each setting
 
 
 The following sections list the components that make network connections to Microsoft services by default. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all of these connections.
@@ -184,7 +182,7 @@ See the following table for a summary of the management settings for Windows Ser
 | [21. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) |
 | [28. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | |
 
-## Settings
+## How to configure each setting
 
 Use the following sections for more information about how to configure each setting.
 
@@ -359,9 +357,12 @@ If you're running Windows 10, version 1507 or Windows 10, version 1511, create a
 ### <a href="" id="bkmk-previewbuilds"></a>7. Insider Preview builds
 
 The Windows Insider Preview program lets you help shape the future of Windows, be part of the community, and get early access to releases of Windows 10.
+This setting stops communication with the Windows Insider Preview service that checks for new builds. 
+Windows Insider Preview builds only apply to Windows 10 and are not available for Windows Server 2016.
+
 
 > [!NOTE]  
-> This setting stops communication with the Windows Insider Preview service that checks for new builds. Windows Insider Preview builds only apply to Windows 10 and are not available for Windows Server 2016.
+> If you upgrade a device that is configured to minimize connections from Windows to Microsoft services (that is, a device configured for zero exhaust) to a Windows Insider Preview build, the Feedback & Diagnostic setting will automatically be set to **Full**. Although the telemetry level may initially appear as **Basic**, a few hours after the UI is refreshed or the machine is rebooted, the setting will become **Full**.
 
 To turn off Insider Preview builds for a released version of Windows 10:
 
@@ -1799,7 +1800,10 @@ For more info, see [Windows Spotlight on the lock screen](windows-spotlight.md).
 
 ### <a href="" id="bkmk-windowsstore"></a>26. Microsoft Store
 
-You can turn off the ability to launch apps from the Microsoft Store that were preinstalled or downloaded. This will also turn off automatic app updates, and the Microsoft Store will be disabled. On Windows Server 2016, this will block Microsoft Store calls from Universal Windows Apps.
+You can turn off the ability to launch apps from the Microsoft Store that were preinstalled or downloaded. 
+This will also turn off automatic app updates, and the Microsoft Store will be disabled. 
+In addition, new email accounts cannot be created by clicking **Settings** > **Accounts** > **Email & app accounts** > **Add an account**. 
+On Windows Server 2016, this will block Microsoft Store calls from Universal Windows Apps.
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Store** &gt; **Disable all apps from Microsoft Store**.
 

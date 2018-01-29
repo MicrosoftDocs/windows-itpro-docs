@@ -15,7 +15,10 @@ ms.date: 12/18/2017
 
 Find the latest how to and support content that IT pros need to evaluate, plan, deploy, secure and manage devices running Windows 10 or Windows 10 Mobile.
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/rsiyZEAnap8" frameborder="0" allowfullscreen></iframe></center>
+&nbsp;
+
+> [!video https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false]
+
 <br>
 <table border="0" width="100%" align='center'>
   <tr style="text-align:center;">

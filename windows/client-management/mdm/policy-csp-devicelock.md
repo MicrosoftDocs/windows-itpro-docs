@@ -6,11 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/14/2017
+ms.date: 01/12/2018
 ---
 
 # Policy CSP - DeviceLock
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -62,6 +64,9 @@ ms.date: 12/14/2017
     <a href="#devicelock-mindevicepasswordlength">DeviceLock/MinDevicePasswordLength</a>
   </dd>
   <dd>
+    <a href="#devicelock-minimumpasswordage">DeviceLock/MinimumPasswordAge</a>
+  </dd>
+  <dd>
     <a href="#devicelock-preventlockscreenslideshow">DeviceLock/PreventLockScreenSlideShow</a>
   </dd>
   <dd>
@@ -110,11 +115,10 @@ ms.date: 12/14/2017
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
  
-<p style="margin-left: 20px">Specifies whether the user must input a PIN or password when the device resumes from an idle state.
+Specifies whether the user must input a PIN or password when the device resumes from an idle state.
 
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
-
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -166,13 +170,13 @@ The following list shows the supported values:
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
  
-<p style="margin-left: 20px">Specifies whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices.
+Specifies whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices.
 
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
 
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 (default) – Not allowed.
 -   1 – Allowed.
@@ -219,18 +223,18 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For the desktop, it also controls the use of picture passwords.
+Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For the desktop, it also controls the use of picture passwords.
 
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
 
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<p style="margin-left: 20px">For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -271,7 +275,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Determines the type of PIN or password required. This policy only applies if the **DeviceLock/DevicePasswordEnabled** policy is set to 0 (required).
+Determines the type of PIN or password required. This policy only applies if the **DeviceLock/DevicePasswordEnabled** policy is set to 0 (required).
 
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
@@ -279,7 +283,7 @@ The following list shows the supported values:
 > Always use the Replace command instead of Add for this policy in Windows 10 for desktop editions (Home, Pro, Enterprise, and Education).
 
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 – Alphanumeric PIN or password required.
 -   1 – Numeric PIN or password required.
@@ -331,7 +335,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether device lock is enabled.
+Specifies whether device lock is enabled.
 
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
@@ -339,7 +343,7 @@ The following list shows the supported values:
 > Always use the Replace command instead of Add for this policy in Windows 10 for desktop editions.
  
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 (default) – Enabled
 -   1 – Disabled
@@ -417,20 +421,20 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies when the password expires (in days).
+Specifies when the password expires (in days).
 
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
 
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   An integer X where 0 &lt;= X &lt;= 730.
 -   0 (default) - Passwords do not expire.
 
-<p style="margin-left: 20px">If all policy values = 0 then 0; otherwise, Min policy value is the most secure value.
+If all policy values = 0 then 0; otherwise, Min policy value is the most secure value.
 
-<p style="margin-left: 20px">For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -471,22 +475,22 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies how many passwords can be stored in the history that can’t be used.
+Specifies how many passwords can be stored in the history that can’t be used.
 
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
 
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   An integer X where 0 &lt;= X &lt;= 50.
 -   0 (default)
 
-<p style="margin-left: 20px">The value includes the user's current password. This means that with a setting of 1 the user cannot reuse their current password when choosing a new password, while a setting of 5 means that a user cannot set their new password to their current password or any of their previous four passwords.
+The value includes the user's current password. This means that with a setting of 1 the user cannot reuse their current password when choosing a new password, while a setting of 5 means that a user cannot set their new password to their current password or any of their previous four passwords.
 
-<p style="margin-left: 20px">Max policy value is the most restricted.
+Max policy value is the most restricted.
 
-<p style="margin-left: 20px">For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -527,13 +531,13 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies the default lock screen and logon image shown when no user is signed in. It also sets the specified image for all users, which replaces the default image. The same image is used for both the lock and logon screens. Users will not be able to change this image.
+Added in Windows 10, version 1607. Specifies the default lock screen and logon image shown when no user is signed in. It also sets the specified image for all users, which replaces the default image. The same image is used for both the lock and logon screens. Users will not be able to change this image.
 
 > [!NOTE]
 > This policy is only enforced in Windows 10 Enterprise and Education editions and not supported in Windows 10 Home and Pro.
 
 
-<p style="margin-left: 20px">Value type is a string, which is the full image filepath and filename.
+Value type is a string, which is the full image filepath and filename.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -574,13 +578,13 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Restricts lock screen image to a specific lock screen provider. Users will not be able change this provider.
+Added in Windows 10, version 1607. Restricts lock screen image to a specific lock screen provider. Users will not be able change this provider.
 
 > [!NOTE]
 > This policy is only enforced in Windows 10 for mobile devices.
 
 
-<p style="margin-left: 20px">Value type is a string, which is the AppID.
+Value type is a string, which is the AppID.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -627,21 +631,21 @@ The number of authentication failures allowed before the device will be wiped. A
 > This policy must be wrapped in an Atomic command.
 
 
-<p style="margin-left: 20px">This policy has different behaviors on the mobile device and desktop.
+This policy has different behaviors on the mobile device and desktop.
 
 -   On a mobile device, when the user reaches the value set by this policy, then the device is wiped.
 -   On a desktop, when the user reaches the value set by this policy, it is not wiped. Instead, the desktop is put on BitLocker recovery mode, which makes the data inaccessible but recoverable. If BitLocker is not enabled, then the policy cannot be enforced.
 
     Prior to reaching the failed attempts limit, the user is sent to the lock screen and warned that more failed attempts will lock their computer. When the user reaches the limit, the device automatically reboots and shows the BitLocker recovery page. This page prompts the user for the BitLocker recovery key.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   An integer X where 4 &lt;= X &lt;= 16 for desktop and 0 &lt;= X &lt;= 999 for mobile devices.
 -   0 (default) - The device is never wiped after an incorrect PIN or password is entered.
 
-<p style="margin-left: 20px">Most secure value is 0 if all policy values = 0; otherwise, Min policy value is the most secure value.
+Most secure value is 0 if all policy values = 0; otherwise, Min policy value is the most secure value.
 
-<p style="margin-left: 20px">For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -682,18 +686,18 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked. Users can select any existing timeout value less than the specified maximum time in the Settings app. Note the Lumia 950 and 950XL have a maximum timeout value of 5 minutes, regardless of the value set by this policy.
+Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked. Users can select any existing timeout value less than the specified maximum time in the Settings app. Note the Lumia 950 and 950XL have a maximum timeout value of 5 minutes, regardless of the value set by this policy.
 
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
 
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   An integer X where 0 &lt;= X &lt;= 999.
 -   0 (default) - No timeout is defined. The default of "0" is Windows Phone 7.5 parity and is interpreted by as "No timeout is defined."
 
-<p style="margin-left: 20px">For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -734,13 +738,13 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked while connected to an external display.
+Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked while connected to an external display.
 
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
 
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   An integer X where 0 &lt;= X &lt;= 999.
 -   0 (default) - No timeout is defined. The default of "0" is Windows Phone 7.5 parity and is interpreted by as "No timeout is defined."
@@ -784,21 +788,21 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">The number of complex element types (uppercase and lowercase letters, numbers, and punctuation) required for a strong PIN or password.
+The number of complex element types (uppercase and lowercase letters, numbers, and punctuation) required for a strong PIN or password.
 
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
 >
 > Always use the Replace command instead of Add for this policy in Windows 10 for desktop editions.
 
-<p style="margin-left: 20px">PIN enforces the following behavior for desktop and mobile devices:
+PIN enforces the following behavior for desktop and mobile devices:
 
 -   1 - Digits only
 -   2 - Digits and lowercase letters are required
 -   3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts. 
 -   4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop.
 
-<p style="margin-left: 20px">The default value is 1. The following list shows the supported values and actual enforced values:
+The default value is 1. The following list shows the supported values and actual enforced values:
 
 <table style="margin-left: 20px">
 <colgroup>
@@ -839,7 +843,7 @@ The number of authentication failures allowed before the device will be wiped. A
 </table>
 
 
-<p style="margin-left: 20px">Enforced values for Local and Microsoft Accounts:
+Enforced values for Local and Microsoft Accounts:
 
 -   Local accounts support values of 1, 2, and 3, however they always enforce a value of 3.
 -   Passwords for local accounts must meet the following minimum requirements:
@@ -853,9 +857,9 @@ The number of authentication failures allowed before the device will be wiped. A
         -   Base 10 digits (0 through 9)
         -   Special characters (!, $, \#, %, etc.)
 
-<p style="margin-left: 20px">The enforcement of policies for Microsoft accounts happen on the server, and the server requires a password length of 8 and a complexity of 2. A complexity value of 3 or 4 is unsupported and setting this value on the server makes Microsoft accounts non-compliant.
+The enforcement of policies for Microsoft accounts happen on the server, and the server requires a password length of 8 and a complexity of 2. A complexity value of 3 or 4 is unsupported and setting this value on the server makes Microsoft accounts non-compliant.
 
-<p style="margin-left: 20px">For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -896,7 +900,7 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies the minimum number or characters required in the PIN or password.
+Specifies the minimum number or characters required in the PIN or password.
 
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
@@ -904,17 +908,71 @@ The number of authentication failures allowed before the device will be wiped. A
 > Always use the Replace command instead of Add for this policy in Windows 10 for desktop editions.
 
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   An integer X where 4 &lt;= X &lt;= 16 for mobile devices and desktop. However, local accounts will always enforce a minimum password length of 6.
 -   Not enforced.
 -   The default value is 4 for mobile devices and desktop devices.
 
-<p style="margin-left: 20px">Max policy value is the most restricted.
+Max policy value is the most restricted.
 
-<p style="margin-left: 20px">For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
 
 <!--EndDescription-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
+<a href="" id="devicelock-minimumpasswordage"></a>**DeviceLock/MinimumPasswordAge**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
+<!--StartDescription-->
+This security setting determines the period of time (in days) that a password must be used before the user can change it. You can set a value between 1 and 998 days, or you can allow changes immediately by setting the number of days to 0.
+
+The minimum password age must be less than the Maximum password age, unless the maximum password age is set to 0, indicating that passwords will never expire. If the maximum password age is set to 0, the minimum password age can be set to any value between 0 and 998.
+
+Configure the minimum password age to be more than 0 if you want Enforce password history to be effective. Without a minimum password age, users can cycle through passwords repeatedly until they get to an old favorite. The default setting does not follow this recommendation, so that an administrator can specify a password for a user and then require the user to change the administrator-defined password when the user logs on. If the password history is set to 0, the user does not have to choose a new password. For this reason, Enforce password history is set to 1 by default.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1016,15 +1074,15 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
  
-<p style="margin-left: 20px">Allows an enterprise to set the duration in seconds for the screen timeout while on the lock screen of Windows 10 Mobile devices.
+Allows an enterprise to set the duration in seconds for the screen timeout while on the lock screen of Windows 10 Mobile devices.
 
-<p style="margin-left: 20px">Minimum supported value is 10.
+Minimum supported value is 10.
 
-<p style="margin-left: 20px">Maximum supported value is 1800.
+Maximum supported value is 1800.
 
-<p style="margin-left: 20px">The default value is 10.
+The default value is 10.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--EndPolicy-->

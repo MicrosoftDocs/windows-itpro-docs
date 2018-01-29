@@ -42,7 +42,7 @@ In this guide, you learn about the individual features found within Windows Defe
 
 Prior to Windows 10, version 1709, Windows Defender Application Control (WDAC) was known as configurable code integrity policies. 
 
-Beginning with Windows 10, version 1703, you can use WDAC not only to control applications, but also to control whether specific plug-ins, add-ins, and modules can run from specific apps (such as a line-of-business application or a browser). For more information, see [Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules](deploy-code-integrity-policies-steps.md#plug-ins).
+Beginning with Windows 10, version 1703, you can use WDAC not only to control applications, but also to control whether specific plug-ins, add-ins, and modules can run from specific apps (such as a line-of-business application or a browser). For more information, see [Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules](steps-to-deploy-windows-defender-application-control.md#use-a-windows-defender-application-control-policy-to-control-specific-plug-ins-add-ins-and-modules).
 
 ## Tools for managing Windows Defender Device Guard features
 
@@ -53,18 +53,18 @@ You can easily manage Windows Defender Device Guard features by using familiar e
 -   **Group Policy**. Windows 10 provides an administrative template to configure and deploy the configurable WDAC policies for your organization. Another template allows you to specify which hardware-based security features you would like to enable and deploy. You can manage these settings along with your existing Group Policy Objects (GPOs), which makes it simpler to implement Windows Defender Device Guard features. In addition to these WDAC and hardware-based security features, you can use Group Policy to help you manage your catalog files.
 
     - For a description of catalog files, see the table row describing **Exposure to unsigned code** in [How Windows Defender Device Guard features help protect against threats](#how-windows-defender-device-guard-features-help-protect-against-threats), earlier in this topic.
-    - For information about using Group Policy as a deployment tool, see:<br>[Deploy catalog files with Group Policy](deploy-catalog-files-to-support-code-integrity-policies.md#deploy-catalog-files-with-group-policy)<br>[Deploy and manage WDAC with Group Policy](deploy-code-integrity-policies-steps.md#deploy-and-manage-windows-defender-application-control-with-group-policy)
+    - For information about using Group Policy as a deployment tool, see:<br>[Deploy catalog files with Group Policy](deploy-catalog-files-to-support-windows-defender-application-control.md#deploy-catalog-files-with-group-policy)<br>[Deploy and manage WDAC with Group Policy](steps-to-deploy-windows-defender-application-control.md#deploy-and-manage-windows-defender-application-control-with-group-policy)
 
--   **Microsoft System Center Configuration Manager**. You can use System Center Configuration Manager to simplify deployment and management of catalog files, WDAC policies, and hardware-based security features, as well as provide version control. For more information, see [Deploy catalog files with System Center Configuration Manager](deploy-catalog-files-to-support-code-integrity-policies.md#deploy-catalog-files-with-system-center-configuration-manager).
+-   **Microsoft System Center Configuration Manager**. You can use System Center Configuration Manager to simplify deployment and management of catalog files, WDAC policies, and hardware-based security features, as well as provide version control. For more information, see [Deploy catalog files with System Center Configuration Manager](deploy-catalog-files-to-support-windows-defender-application-control.md#deploy-catalog-files-with-system-center-configuration-manager).
 
 - **Microsoft Intune**. You can use Microsoft Intune to simplify deployment and management of WDAC policies, as well as provide version control. In a future release of Microsoft Intune, Microsoft is considering including features that will support the deployment and management of catalog files.
 
--   **Windows PowerShell**. You can use Windows PowerShell to create and service WDAC policies. For more information, see [Deploy Windows Defender Application Control: steps](deploy-code-integrity-policies-steps.md).
+-   **Windows PowerShell**. You can use Windows PowerShell to create and service WDAC policies. For more information, see [Deploy Windows Defender Application Control: steps](steps-to-deploy-windows-defender-application-control.md).
 
 These options provide the same experience you're used to in order to manage your existing enterprise management solutions. 
 
 For more information about the deployment of Windows Defender Device Guard features, see:
-- [Deploy Windows Defender Application Control](deploy-device-guard-deploy-code-integrity-policies.md)
+- [Deploy Windows Defender Application Control](deploy-windows-defender-application-control.md)
 - [Deploy virtualization-based protection of code integrity](deploy-device-guard-enable-virtualization-based-security.md)
 
 ## Other features that relate to Windows Defender Device Guard

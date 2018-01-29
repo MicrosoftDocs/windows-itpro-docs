@@ -58,7 +58,7 @@ New or changed topic | Description
 
 |New or changed topic | Description |
 | --- | --- |
-|[Surface device compatibility with Windows 10 Long-Term Servicing Branch](surface-device-compatibility-with-windows-10-ltsb.md) | New (supersedes [Long-Term Servicing Branch for Surface devices](ltsb-for-surface.md))|
+|[Surface device compatibility with Windows 10 Long-Term Servicing Branch](surface-device-compatibility-with-windows-10-ltsc.md) | New (supersedes [Long-Term Servicing Branch for Surface devices](ltsb-for-surface.md))|
 
 
 ## January 2017

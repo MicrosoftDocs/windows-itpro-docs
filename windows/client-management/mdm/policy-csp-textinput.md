@@ -106,9 +106,9 @@ ms.date: 12/19/2017
 > The policy is only enforced in Windows 10 for desktop.
 
 
-<p style="margin-left: 20px">Allows the user to turn on and off the logging for incorrect conversion and saving auto-tuning result to a file and history-based predictive input.
+Allows the user to turn on and off the logging for incorrect conversion and saving auto-tuning result to a file and history-based predictive input.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -160,9 +160,9 @@ The following list shows the supported values:
 > The policy is only enforced in Windows 10 for desktop.
 
 
-<p style="margin-left: 20px">Allows the user to turn on Open Extended Dictionary, Internet search integration, or cloud candidate features to provide input suggestions that do not exist in the device's local dictionary.
+Allows the user to turn on Open Extended Dictionary, Internet search integration, or cloud candidate features to provide input suggestions that do not exist in the device's local dictionary.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -214,9 +214,9 @@ The following list shows the supported values:
 > The policy is only enforced in Windows 10 for desktop.
 
 
-<p style="margin-left: 20px">Allows the IT admin to disable the touch/handwriting keyboard on Windows.
+Allows the IT admin to disable the touch/handwriting keyboard on Windows.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -268,14 +268,14 @@ The following list shows the supported values:
 > The policy is only enforced in Windows 10 for desktop.
 
 
-<p style="margin-left: 20px">Allows the Japanese IME surrogate pair characters.
+Allows the Japanese IME surrogate pair characters.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -320,9 +320,9 @@ The following list shows the supported values:
 > The policy is only enforced in Windows 10 for desktop.
 
 
-<p style="margin-left: 20px">Allows Japanese Ideographic Variation Sequence (IVS) characters.
+Allows Japanese Ideographic Variation Sequence (IVS) characters.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -374,9 +374,9 @@ The following list shows the supported values:
 > The policy is only enforced in Windows 10 for desktop.
 
 
-<p style="margin-left: 20px">Allows the Japanese non-publishing standard glyph.
+Allows the Japanese non-publishing standard glyph.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -428,9 +428,9 @@ The following list shows the supported values:
 > The policy is only enforced in Windows 10 for desktop.
 
 
-<p style="margin-left: 20px">Allows the Japanese user dictionary.
+Allows the Japanese user dictionary.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -481,11 +481,11 @@ The following list shows the supported values:
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
 
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether text prediction is enabled or disabled for the on-screen keyboard, touch keyboard, and handwriting recognition tool. When this policy is set to disabled, text prediction is disabled. 
+Added in Windows 10, version 1703. Specifies whether text prediction is enabled or disabled for the on-screen keyboard, touch keyboard, and handwriting recognition tool. When this policy is set to disabled, text prediction is disabled. 
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
-<p style="margin-left: 20px">To validate that text prediction is disabled on Windows 10 for desktop, do the following:
+To validate that text prediction is disabled on Windows 10 for desktop, do the following:
 
 1.  Search for and launch the on-screen keyboard. Verify that text prediction is disabled by typing some text. Text prediction on the keyboard will be disabled even if the “Use Text Prediction” setting is enabled from the options button.
 2.  Launch the input panel/touch keyboard by touching a text input field or launching it from the taskbar. Verify that text prediction is disabled by typing some text. Text prediction on the keyboard will be disabled even if the “Show text suggestions as I type” setting is enabled in the Settings app.
@@ -505,7 +505,7 @@ The following list shows the supported values:
 <a href="" id="textinput-allowkoreanextendedhanja"></a>**TextInput/AllowKoreanExtendedHanja**  
 
 <!--StartDescription-->
-<p style="margin-left: 20px">This policy has been deprecated.
+This policy has been deprecated.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -550,9 +550,9 @@ The following list shows the supported values:
 > The policy is only enforced in Windows 10 for desktop.
 
 
-<p style="margin-left: 20px">Allows the uninstall of language features, such as spell checkers, on a device.
+Allows the uninstall of language features, such as spell checkers, on a device.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -580,10 +580,10 @@ The following list shows the supported values:
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -600,7 +600,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-This policy allows the IT admin to enable the touch keyboard to automatically show up when the device is in the desktop mode. 
+Added in Windows 10, next major update. This policy allows the IT admin to enable the touch keyboard to automatically show up when the device is in the desktop mode. 
 
 The touch keyboard is enabled in both the tablet and desktop mode. In the tablet mode, when you touch a textbox, the touch keyboard automatically shows up. 
 But in the desktop mode, by default, the touch keyboard does not automatically show up when you touch a textbox. The user must click the system tray to enable the touch keyboard. 
@@ -665,9 +665,9 @@ The following list shows the supported values:
 > The policy is only enforced in Windows 10 for desktop.
 
 
-<p style="margin-left: 20px">Allows the users to restrict character code range of conversion by setting the character filter.
+Allows the users to restrict character code range of conversion by setting the character filter.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 (default) – No characters are filtered.
 -   1 – All characters except JIS0208 are filtered.
@@ -715,9 +715,9 @@ The following list shows the supported values:
 > The policy is only enforced in Windows 10 for desktop.
 
 
-<p style="margin-left: 20px">Allows the users to restrict character code range of conversion by setting the character filter.
+Allows the users to restrict character code range of conversion by setting the character filter.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 (default) – No characters are filtered.
 -   1 – All characters except JIS0208 and EUDC are filtered.
@@ -765,9 +765,9 @@ The following list shows the supported values:
 > The policy is only enforced in Windows 10 for desktop.
 
 
-<p style="margin-left: 20px">Allows the users to restrict character code range of conversion by setting the character filter.
+Allows the users to restrict character code range of conversion by setting the character filter.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 (default) – No characters are filtered.
 -   1 – All characters except ShiftJIS are filtered.

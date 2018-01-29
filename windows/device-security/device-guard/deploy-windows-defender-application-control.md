@@ -17,10 +17,10 @@ ms.date: 10/20/2017
 
 This section includes the following topics:
 
-- [Optional: Create a code signing certificate for Windows Defender Application Control](optional-create-a-code-signing-certificate-for-code-integrity-policies.md)
-- [Deploy Windows Defender Application Control: policy rules and file rules](deploy-code-integrity-policies-policy-rules-and-file-rules.md)
-- [Deploy Windows Defender Application Control: steps](deploy-code-integrity-policies-steps.md)
-- [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-code-integrity-policies.md)
+- [Optional: Create a code signing certificate for Windows Defender Application Control](optional-create-a-code-signing-certificate-for-windows-defender-application-control.md)
+- [Deploy Windows Defender Application Control: policy rules and file rules](deploy-windows-defender-application-control-policy-rules-and-file-rules.md)
+- [Deploy Windows Defender Application Control: steps](steps-to-deploy-windows-defender-application-control.md)
+- [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-windows-defender-application-control.md)
 - [Deploy Managed Installer for Windows Defender Application Control](deploy-managed-installer-for-device-guard.md)
 
 To increase the protection for devices that meet certain hardware requirements, you can use virtualization-based protection of code integrity with your Windows Defender Application Control (WDAC) policies.
@@ -29,5 +29,5 @@ To increase the protection for devices that meet certain hardware requirements, 
 
 ## Related topics
 
-[Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md)
+[Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control](introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 

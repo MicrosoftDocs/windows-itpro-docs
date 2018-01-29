@@ -233,6 +233,7 @@ Summary of steps to enable a policy:
                <Target>
                 <LocURI>./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer2</LocURI>
                </Target>
+               <Data>
                <![CDATA[<enabled/><data id="Publishing_Server2_Name_Prompt" value="name prompt"/><data 
                  id="Publishing_Server_URL_Prompt" value="URL prompt"/><data 
                  id="Global_Publishing_Refresh_Options" value="1"/><data 
@@ -243,6 +244,7 @@ Summary of steps to enable a policy:
                  id="User_Refresh_OnLogon_Options" value="0"/><data 
                  id="User_Refresh_Interval_Prompt" value="15"/><data 
                  id="User_Refresh_Unit_Options" value="1"/>]]>
+               </Data>
              </Item>
            </Replace>
            <Final/>
