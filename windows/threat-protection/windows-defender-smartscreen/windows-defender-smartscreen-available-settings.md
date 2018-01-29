@@ -70,7 +70,7 @@ SmartScreen uses registry-based Administrative Template policy settings. For mor
 
 ## MDM settings
 If you manage your policies using Microsoft Intune, you'll want to use these MDM policy settings. All settings support both desktop computers (running Windows 10 Pro or Windows 10 Enterprise, enrolled with Microsoft Intune) and Windows 10 Mobile devices.  <br><br> 
-For SmartScreen Internet Explorer MDM policies, see [Policy CSP - InternetExplorer](../../client-management/mdm/policy-csp-internetexplorer.md).
+For SmartScreen Internet Explorer MDM policies, see [Policy CSP - InternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer).
 <table>
 <tr>
 <th align="left">Setting</th>
