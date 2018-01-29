@@ -73,11 +73,11 @@ ms.date: 12/14/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether the device can send out Bluetooth advertisements.
+Specifies whether the device can send out Bluetooth advertisements.
 
-<p style="margin-left: 20px">If this is not set or it is deleted, the default value of 1 (Allow) is used.
+If this is not set or it is deleted, the default value of 1 (Allow) is used.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -125,11 +125,11 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether other Bluetooth-enabled devices can discover the device.
+Specifies whether other Bluetooth-enabled devices can discover the device.
 
-<p style="margin-left: 20px">If this is not set or it is deleted, the default value of 1 (Allow) is used.
+If this is not set or it is deleted, the default value of 1 (Allow) is used.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -177,7 +177,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether to allow specific bundled Bluetooth peripherals to automatically pair with the host device.
+Specifies whether to allow specific bundled Bluetooth peripherals to automatically pair with the host device.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -225,11 +225,11 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Sets the local Bluetooth device name.
+Sets the local Bluetooth device name.
 
-<p style="margin-left: 20px">If this is set, the value that it is set to will be used as the Bluetooth device name. To verify the policy is set, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel, and verify that the value that was specified.
+If this is set, the value that it is set to will be used as the Bluetooth device name. To verify the policy is set, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel, and verify that the value that was specified.
 
-<p style="margin-left: 20px">If this policy is not set or it is deleted, the default local radio name is used.
+If this policy is not set or it is deleted, the default local radio name is used.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -270,9 +270,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Set a list of allowable services and profiles. String hex formatted array of Bluetooth service UUIDs in canonical format, delimited by semicolons. For example, {782AFCFC-7CAA-436C-8BF0-78CD0FFBD4AF}.
+Set a list of allowable services and profiles. String hex formatted array of Bluetooth service UUIDs in canonical format, delimited by semicolons. For example, {782AFCFC-7CAA-436C-8BF0-78CD0FFBD4AF}.
 
-<p style="margin-left: 20px">The default value is an empty string.
+The default value is an empty string.
 
 <!--EndDescription-->
 <!--EndPolicy-->

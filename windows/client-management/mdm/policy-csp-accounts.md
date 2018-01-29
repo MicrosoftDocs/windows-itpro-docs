@@ -70,9 +70,9 @@ ms.date: 12/14/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether user is allowed to add non-MSA email accounts.
+Specifies whether user is allowed to add non-MSA email accounts.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 > [!NOTE]
 > This policy will only block UI/UX-based methods for adding non-Microsoft accounts. Even if this policy is enforced, you can still provision non-MSA accounts using the [EMAIL2 CSP](email2-csp.md).
@@ -123,9 +123,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether the user is allowed to use an MSA account for non-email related connection authentication and services.
+Specifies whether the user is allowed to use an MSA account for non-email related connection authentication and services.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -173,7 +173,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins the ability to disable the "Microsoft Account Sign-In Assistant" (wlidsvc) NT service.
+Added in Windows 10, version 1703. Allows IT Admins the ability to disable the "Microsoft Account Sign-In Assistant" (wlidsvc) NT service.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -221,11 +221,11 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies a list of the domains that are allowed to sync email on the device.
+Specifies a list of the domains that are allowed to sync email on the device.
 
-<p style="margin-left: 20px">The data type is a string.
+The data type is a string.
 
-<p style="margin-left: 20px">The default value is an empty string, which allows all email accounts on the device to sync email. Otherwise, the string should contain a pipe-separated list of domains that are allowed to sync email on the device. For example, "contoso.com|fabrikam.net|woodgrove.gov".
+The default value is an empty string, which allows all email accounts on the device to sync email. Otherwise, the string should contain a pipe-separated list of domains that are allowed to sync email on the device. For example, "contoso.com|fabrikam.net|woodgrove.gov".
 
 <!--EndDescription-->
 <!--EndPolicy-->

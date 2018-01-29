@@ -61,12 +61,12 @@ ms.date: 12/14/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies the BitLocker Drive Encryption method and cipher strength.
+Specifies the BitLocker Drive Encryption method and cipher strength.
 
 > [!NOTE]
 > XTS-AES 128-bit and XTS-AES 256-bit values are only supported on Windows 10 for desktop.
 
-<p style="margin-left: 20px">You can find the following policies in BitLocker CSP:
+You can find the following policies in BitLocker CSP:
 <dl>
   <dd>
     <a href="./bitlocker-csp.md#encryptionmethodbydrivetype" id="encryptionmethodbydrivetype">BitLocker/EncryptionMethodByDriveType</a>

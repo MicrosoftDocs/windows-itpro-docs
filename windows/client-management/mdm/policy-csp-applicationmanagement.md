@@ -91,9 +91,9 @@ ms.date: 12/14/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether non Microsoft Store apps are allowed.
+Specifies whether non Microsoft Store apps are allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -142,14 +142,14 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether automatic update of apps from Microsoft Store are allowed.
+Specifies whether automatic update of apps from Microsoft Store are allowed.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -190,9 +190,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether developer unlock is allowed.
+Specifies whether developer unlock is allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -244,9 +244,9 @@ The following list shows the supported values:
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
 
-<p style="margin-left: 20px">Specifies whether DVR and broadcasting is allowed.
+Specifies whether DVR and broadcasting is allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -294,9 +294,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether multiple users of the same app can share data.
+Specifies whether multiple users of the same app can share data.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -344,9 +344,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether app store is allowed at the device.
+Specifies whether app store is allowed at the device.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -398,7 +398,7 @@ The following list shows the supported values:
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. For desktop devices, use the [AppLocker CSP](applocker-csp.md) instead.
 
  
-<p style="margin-left: 20px">An XML blob that specifies the application restrictions company want to put to the device. It could be an app allow list, app disallow list, allowed publisher IDs, and so on. For a list of Windows apps and product IDs, see [inbox apps](applocker-csp.md#inboxappsandcomponents). For more information about the XML, see the [ApplicationRestrictions XSD](applicationrestrictions-xsd.md).
+An XML blob that specifies the application restrictions company want to put to the device. It could be an app allow list, app disallow list, allowed publisher IDs, and so on. For a list of Windows apps and product IDs, see [inbox apps](applocker-csp.md#inboxappsandcomponents). For more information about the XML, see the [ApplicationRestrictions XSD](applicationrestrictions-xsd.md).
 
 > [!NOTE]
 > When you upgrade Windows Phone 8.1 devices to Windows 10 Mobile with a list of allowed apps, some Windows inbox apps get blocked causing unexpected behavior. To work around this issue, you must include the [inbox apps](applocker-csp.md#inboxappsandcomponents) that you need to your list of allowed apps.
@@ -412,11 +412,11 @@ The following list shows the supported values:
 >  -   You cannot disable or enable **Contact Support** and **Windows Feedback** apps using ApplicationManagement/ApplicationRestrictions policy, although these are listed in the [inbox apps](applocker-csp.md#inboxappsandcomponents).
 
 
-<p style="margin-left: 20px">An application that is running may not be immediately terminated.
+An application that is running may not be immediately terminated.
 
-<p style="margin-left: 20px">Value type is chr.
+Value type is chr.
 
-<p style="margin-left: 20px">Value evaluation rule - The information for PolicyManager is opaque. There is no most restricted value evaluation. Whenever there is a change to the value, the device parses the node value and enforces specified policies.
+Value evaluation rule - The information for PolicyManager is opaque. There is no most restricted value evaluation. Whenever there is a change to the value, the device parses the node value and enforces specified policies.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -457,7 +457,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Boolean value that disables the launch of all apps from Microsoft Store that came pre-installed or were downloaded.
+Added in Windows 10, version 1607. Boolean value that disables the launch of all apps from Microsoft Store that came pre-installed or were downloaded.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -505,14 +505,14 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Allows disabling of the retail catalog and only enables the Private store.
+Allows disabling of the retail catalog and only enables the Private store.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 (default) – Allow both public and Private store.
 -   1 – Only Private store is enabled.
 
-<p style="margin-left: 20px">Most restricted value is 1.
+Most restricted value is 1.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -553,9 +553,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether application data is restricted to the system drive.
+Specifies whether application data is restricted to the system drive.
 
-<p style="margin-left: 20px">Most restricted value is 1.
+Most restricted value is 1.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -603,9 +603,9 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether the installation of applications is restricted to the system drive.
+Specifies whether the installation of applications is restricted to the system drive.
 
-<p style="margin-left: 20px">Most restricted value is 1.
+Most restricted value is 1.
 
 <!--EndDescription-->
 <!--SupportedValues-->
