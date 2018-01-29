@@ -130,7 +130,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 <p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
 
 > [!Note]  
-> The policies supported in Windows 10 S is the same as in Windows 10 Pro, except that policies under AppliationsDefaults are not suppported in Windows 10 S.
+> The policies supported in Windows 10 S are the same as those supported in Windows 10 Pro with the exception of the policies under ApplicationDefaults.  The ApplicationDefaults polices are not supported in Windows 10 S.
 
 ## Policies
 

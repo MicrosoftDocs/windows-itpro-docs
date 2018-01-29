@@ -44,6 +44,6 @@ Group Policy can also be used to distribute Group Policy Objects that contain WD
 Prior to Windows 10, version 1709, Windows Defender Application Control was known as Windows Defender Device Guard configurable code integrity policies.  
 
 Beginning with Windows 10, version 1703, you can use WDAC not only to control applications, but also to control whether specific plug-ins, add-ins, and modules can run from specific apps (such as a line-of-business application or a browser). 
-For more information, see [Steps to deploy Windows Defender Application Control](https://docs.microsoft.com/windows/device-security/device-guard/deploy-code-integrity-policies-steps).  
+For more information, see [Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules](https://docs.microsoft.com/windows/device-security/device-guard/steps-to-deploy-windows-defender-application-control#use-a-windows-defender-application-control-policy-to-control-specific-plug-ins-add-ins-and-modules).  
 
 
