@@ -96,7 +96,7 @@ ms.date: 01/29/2018
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -151,7 +151,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -203,7 +203,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -257,7 +257,7 @@ Most restricted value is 0.
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -320,7 +320,7 @@ To verify if System/AllowFontProviders is set to true:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -377,7 +377,7 @@ For example, an app's original Location setting is Off. The administrator then s
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -429,7 +429,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -548,7 +548,7 @@ Most restricted value is 0.
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -601,7 +601,7 @@ orted values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -657,7 +657,7 @@ ADMX Info:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -700,7 +700,7 @@ This policy setting blocks the Connected User Experience and Telemetry service f
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -764,7 +764,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -832,7 +832,7 @@ ADMX Info:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -882,7 +882,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -938,7 +938,7 @@ If you disable or do not configure this policy setting, then the level of diagno
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 

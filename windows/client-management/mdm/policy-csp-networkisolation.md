@@ -73,7 +73,7 @@ ms.date: 01/29/2018
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -116,7 +116,7 @@ Contains a list of Enterprise resource domains hosted in the cloud that need to 
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -172,7 +172,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -215,7 +215,7 @@ Boolean value that tells the client to accept the configured list and not to use
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -258,7 +258,7 @@ This is the comma-separated list of internal proxy servers. For example "157.54.
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -311,7 +311,7 @@ Here are the steps to create canonical domain names:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -354,7 +354,7 @@ This is a comma-separated list of proxy servers. Any server on this list is cons
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -397,7 +397,7 @@ Boolean value that tells the client to accept the configured list of proxies and
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 

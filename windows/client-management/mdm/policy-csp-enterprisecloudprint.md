@@ -67,7 +67,7 @@ ms.date: 01/29/2018
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -114,7 +114,7 @@ The default value is an empty string. Otherwise, the value should contain the UR
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -161,7 +161,7 @@ The default value is an empty string. Otherwise, the value should contain a GUID
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -208,7 +208,7 @@ The default value is an empty string. Otherwise, the value should contain a URL.
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -255,7 +255,7 @@ The default value is an empty string. Otherwise, the value should contain the UR
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -302,7 +302,7 @@ For Windows Mobile, the default value is 20.
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 

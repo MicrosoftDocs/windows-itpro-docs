@@ -136,7 +136,7 @@ ms.date: 01/29/2018
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -187,7 +187,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -238,7 +238,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -289,7 +289,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -340,7 +340,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -391,7 +391,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -442,7 +442,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -493,7 +493,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -544,7 +544,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -595,7 +595,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -646,7 +646,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -701,7 +701,7 @@ If there is policy configuration conflict, the latest configuration request is a
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -764,7 +764,7 @@ To validate on Desktop, do the following:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -819,7 +819,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -881,7 +881,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -939,7 +939,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -994,7 +994,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1039,7 +1039,7 @@ Value type is integer.
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1097,7 +1097,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1162,7 +1162,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1224,7 +1224,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1279,7 +1279,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1334,7 +1334,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1389,7 +1389,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1444,7 +1444,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1499,7 +1499,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1558,7 +1558,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1616,7 +1616,7 @@ To validate on Desktop, do the following:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1674,7 +1674,7 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 

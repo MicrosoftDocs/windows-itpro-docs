@@ -69,7 +69,7 @@ ms.date: 01/29/2018
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -112,7 +112,7 @@ Added in Windows 10, next major update. This setting determines whether the serv
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -155,7 +155,7 @@ Added in Windows 10, next major update. This setting determines whether the serv
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -198,7 +198,7 @@ Added in Windows 10, next major update. This setting determines whether the serv
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -241,7 +241,7 @@ Added in Windows 10, next major update. This setting determines whether the serv
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -284,7 +284,7 @@ Added in Windows 10, next major update. This setting determines whether the serv
 </tr>
 </table>
 
-<!--/SupportdSKUs-->
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
