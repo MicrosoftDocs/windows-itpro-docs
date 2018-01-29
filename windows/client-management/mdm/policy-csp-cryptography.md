@@ -33,7 +33,7 @@ ms.date: 01/29/2018
 <!--StartPolicy-->
 <a href="" id="cryptography-allowfipsalgorithmpolicy"></a>**Cryptography/AllowFipsAlgorithmPolicy**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -55,8 +55,8 @@ ms.date: 01/29/2018
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportdSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -64,8 +64,8 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Allows or disallows the Federal Information Processing Standard (FIPS) policy.
 
 The following list shows the supported values:
@@ -73,7 +73,7 @@ The following list shows the supported values:
 -   0 (default) – Not allowed.
 -   1– Allowed.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--EndPolicy-->
 
 <hr/>
@@ -81,7 +81,7 @@ The following list shows the supported values:
 <!--StartPolicy-->
 <a href="" id="cryptography-tlsciphersuites"></a>**Cryptography/TLSCipherSuites**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -103,8 +103,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportdSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -112,11 +112,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Lists the Cryptographic Cipher Algorithms allowed for SSL connections. Format is a semicolon delimited list. Last write win.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--EndPolicy-->
 <hr/>
 

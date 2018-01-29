@@ -33,7 +33,7 @@ ms.date: 01/29/2018
 <!--StartPolicy-->
 <a href="" id="credentialsui-disablepasswordreveal"></a>**CredentialsUI/DisablePasswordReveal**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -55,8 +55,8 @@ ms.date: 01/29/2018
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportdSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -65,8 +65,8 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 This policy setting allows you to configure the display of the password reveal button in password entry user experiences.
 
 If you enable this policy setting, the password reveal button will not be displayed after a user types a password in the password entry text box.
@@ -77,7 +77,7 @@ By default, the password reveal button is displayed after a user types a passwor
 
 The policy applies to all Windows components and applications that use the Windows system controls, including Internet Explorer.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -85,14 +85,14 @@ The policy applies to all Windows components and applications that use the Windo
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Do not display the password reveal button*
 -   GP name: *DisablePasswordReveal*
 -   GP path: *Windows Components/Credential User Interface*
 -   GP ADMX file name: *credui.admx*
 
-<!--EndADMX-->
+<!--/ADMX-->
 <!--EndPolicy-->
 
 <hr/>
@@ -100,7 +100,7 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="credentialsui-enumerateadministrators"></a>**CredentialsUI/EnumerateAdministrators**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -122,8 +122,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportdSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -131,15 +131,15 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 This policy setting controls whether administrator accounts are displayed when a user attempts to elevate a running application. By default, administrator accounts are not displayed when the user attempts to elevate a running application.
 
 If you enable this policy setting, all local administrator accounts on the PC will be displayed so the user can choose one and enter the correct password.
 
 If you disable this policy setting, users will always be required to type a user name and password to elevate.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -147,14 +147,14 @@ If you disable this policy setting, users will always be required to type a user
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Enumerate administrator accounts on elevation*
 -   GP name: *EnumerateAdministrators*
 -   GP path: *Windows Components/Credential User Interface*
 -   GP ADMX file name: *credui.admx*
 
-<!--EndADMX-->
+<!--/ADMX-->
 <!--EndPolicy-->
 <hr/>
 
