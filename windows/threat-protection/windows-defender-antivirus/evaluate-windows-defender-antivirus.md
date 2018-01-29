@@ -43,7 +43,7 @@ The guide is available in PDF format for offline viewing:
 - [Download the guide in PDF format](https://www.microsoft.com/download/details.aspx?id=54795)
 
 You can also download a PowerShell that will enable all the settings described in the guide automatically. You can obtain the script alongside the PDF download above, or individually from PowerShell Gallery:
-- [Download the PowerShell script to automatically configure the settings](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/1.0/DisplayScript)
+- [Download the PowerShell script to automatically configure the settings](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/1.2/DisplayScript)
 
 > [!IMPORTANT]
 > The guide is currently intended for single-machine evaluation of Windows Defender Antivirus protection. Enabling all of the settings in this guide may not be suitable for real-world deployment.
