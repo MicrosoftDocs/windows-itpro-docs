@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/11/2018
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - ControlPolicyConflict
@@ -26,11 +26,13 @@ ms.date: 01/11/2018
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="controlpolicyconflict-mdmwinsovergp"></a>**ControlPolicyConflict/MDMWinsOverGP**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -52,8 +54,8 @@ ms.date: 01/11/2018
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -61,8 +63,8 @@ ms.date: 01/11/2018
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, next major update. This policy allows the IT admin to control which policy will be used whenever both the MDM policy and its equivalent Group Policy are set on the device.
 
 This policy is used to ensure that MDM policy wins over GP when same setting is set by both GP and MDM channel. This policy doesn’t support Delete command. This policy doesn’t support setting the value to be 0 again after it was previously set 1. The default value is 0. In next major update, the MDM policies in Policy CSP will behave as described if this policy value is set 1.
@@ -73,21 +75,14 @@ The policy should be set at every sync to ensure the device removes any settings
 - The current Policy Manager policies are refreshed from what MDM has set 
 - Any values set by scripts/user outside of GP that conflict with MDM are removed
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
 - 0 (default)
 - 1 - The MDM policy is used and the GP policy is blocked.
 
-
 <!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 
