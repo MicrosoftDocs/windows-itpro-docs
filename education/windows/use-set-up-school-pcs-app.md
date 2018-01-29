@@ -110,7 +110,7 @@ You can watch the descriptive audio version here: [Microsoft Education: Use the 
 - Install the app on your work PC and make sure you're connected to your school's network. 
 - You must have Office 365 and Azure Active Directory.
 - You must have the Microsoft Store for Education configured.
-- You must be a global admin, store admin, or purchaser in the Microsoft Store for Education.
+- You must be a global admin in the Microsoft Store for Education.
 - It's best if you sign up for and [configure Intune for Education](../get-started/use-intune-for-education.md) before using the Set up School PCs app.
 - Have a USB drive, 1 GB or larger, to save the provisioning package. We recommend an 8 GB or larger USB drive if you're installing Office.
 
