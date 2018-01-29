@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/14/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - Handwriting
@@ -24,7 +24,9 @@ ms.date: 12/14/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="handwriting-paneldefaultmodedocked"></a>**Handwriting/PanelDefaultModeDocked**  
 
@@ -67,7 +69,7 @@ The handwriting panel has 2 modes - floats near the text box, or docked to the b
 
 In floating mode, the content is hidden behind a flying-in panel and results in end-user dissatisfaction. The end-user will need to drag the flying-in panel to see the rest of the content. In the fixed mode, the flying-in panel is fixed to the bottom of the screen and does not require any user interaction.
 
-The docked mode is especially useful in Kiosk mode where you do not expect the end-user to drag the flying-in panel out of the way. 
+The docked mode is especially useful in Kiosk mode where you do not expect the end-user to drag the flying-in panel out of the way.
 
 <!--EndDescription-->
 <!--SupportedValues-->

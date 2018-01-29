@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/19/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - System
@@ -68,7 +68,9 @@ ms.date: 12/19/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="system-allowbuildpreview"></a>**System/AllowBuildPreview**  
 
@@ -121,7 +123,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="system-allowembeddedmode"></a>**System/AllowEmbeddedMode**  
 
@@ -171,7 +175,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="system-allowexperimentation"></a>**System/AllowExperimentation**  
 
@@ -223,7 +229,9 @@ Most restricted value is 0.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="system-allowfontproviders"></a>**System/AllowFontProviders**  
 
@@ -284,7 +292,9 @@ To verify if System/AllowFontProviders is set to true:
 
 <!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="system-allowlocation"></a>**System/AllowLocation**  
 
@@ -339,7 +349,9 @@ For example, an app's original Location setting is Off. The administrator then s
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="system-allowstoragecard"></a>**System/AllowStorageCard**  
 
@@ -389,7 +401,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="system-allowtelemetry"></a>**System/AllowTelemetry**  
 
@@ -506,7 +520,9 @@ Most restricted value is 0.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="system-allowusertoresetphone"></a>**System/AllowUserToResetPhone**  
 
@@ -557,7 +573,9 @@ orted values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="system-bootstartdriverinitialization"></a>**System/BootStartDriverInitialization**  
 
@@ -611,7 +629,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="system-disableenterpriseauthproxy"></a>**System/DisableEnterpriseAuthProxy**  
 
@@ -651,11 +671,10 @@ ADMX Info:
 This policy setting blocks the Connected User Experience and Telemetry service from automatically using an authenticated proxy to send data back to Microsoft on Windows 10. If you disable or do not configure this policy setting, the Connected User Experience and Telemetry service will automatically use an authenticated proxy to send data back to Microsoft. Enabling this policy will block the Connected User Experience and Telemetry service from automatically using an authenticated proxy.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="system-disableonedrivefilesync"></a>**System/DisableOneDriveFileSync**  
 
@@ -717,7 +736,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="system-disablesystemrestore"></a>**System/DisableSystemRestore**  
 
@@ -783,7 +804,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="system-feedbackhubalwayssavediagnosticslocally"></a>**System/FeedbackHubAlwaysSaveDiagnosticsLocally**  
 
@@ -795,6 +818,8 @@ ADMX Info:
 	<th>Business</th>
 	<th>Enterprise</th>
 	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
@@ -802,6 +827,8 @@ ADMX Info:
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td></td>
+	<td></td>
 </tr>
 </table>
 
@@ -826,14 +853,10 @@ The following list shows the supported values:
 - 1 - True. The Feedback Hub should always save a local copy of diagnostics that may be created when a feedback is submitted.
 
 <!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="system-limitenhanceddiagnosticdatawindowsanalytics"></a>**System/LimitEnhancedDiagnosticDataWindowsAnalytics**  
 
@@ -887,7 +910,9 @@ If you disable or do not configure this policy setting, then the level of diagno
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="system-telemetryproxy"></a>**System/TelemetryProxy**  
 

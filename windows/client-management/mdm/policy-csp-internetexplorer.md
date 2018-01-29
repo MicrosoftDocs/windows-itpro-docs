@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - InternetExplorer
@@ -750,7 +750,9 @@ ms.date: 11/01/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-addsearchprovider"></a>**InternetExplorer/AddSearchProvider**  
 
@@ -811,7 +813,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowactivexfiltering"></a>**InternetExplorer/AllowActiveXFiltering**  
 
@@ -872,7 +876,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowaddonlist"></a>**InternetExplorer/AllowAddOnList**  
 
@@ -939,7 +945,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowautocomplete"></a>**InternetExplorer/AllowAutoComplete**  
 
@@ -976,6 +984,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -993,7 +1002,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowcertificateaddressmismatchwarning"></a>**InternetExplorer/AllowCertificateAddressMismatchWarning**  
 
@@ -1031,6 +1042,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -1048,7 +1060,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowdeletingbrowsinghistoryonexit"></a>**InternetExplorer/AllowDeletingBrowsingHistoryOnExit**  
 
@@ -1086,6 +1100,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -1103,7 +1118,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowenhancedprotectedmode"></a>**InternetExplorer/AllowEnhancedProtectedMode**  
 
@@ -1166,7 +1183,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowenterprisemodefromtoolsmenu"></a>**InternetExplorer/AllowEnterpriseModeFromToolsMenu**  
 
@@ -1227,7 +1246,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowenterprisemodesitelist"></a>**InternetExplorer/AllowEnterpriseModeSiteList**  
 
@@ -1288,7 +1309,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowfallbacktossl3"></a>**InternetExplorer/AllowFallbackToSSL3**  
 
@@ -1325,6 +1348,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -1342,7 +1366,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowinternetexplorer7policylist"></a>**InternetExplorer/AllowInternetExplorer7PolicyList**  
 
@@ -1403,7 +1429,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowinternetexplorerstandardsmode"></a>**InternetExplorer/AllowInternetExplorerStandardsMode**  
 
@@ -1466,7 +1494,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowinternetzonetemplate"></a>**InternetExplorer/AllowInternetZoneTemplate**  
 
@@ -1533,7 +1563,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowintranetzonetemplate"></a>**InternetExplorer/AllowIntranetZoneTemplate**  
 
@@ -1600,7 +1632,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowlocalmachinezonetemplate"></a>**InternetExplorer/AllowLocalMachineZoneTemplate**  
 
@@ -1667,7 +1701,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowlockeddowninternetzonetemplate"></a>**InternetExplorer/AllowLockedDownInternetZoneTemplate**  
 
@@ -1734,7 +1770,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowlockeddownintranetzonetemplate"></a>**InternetExplorer/AllowLockedDownIntranetZoneTemplate**  
 
@@ -1801,7 +1839,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowlockeddownlocalmachinezonetemplate"></a>**InternetExplorer/AllowLockedDownLocalMachineZoneTemplate**  
 
@@ -1868,7 +1908,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowlockeddownrestrictedsiteszonetemplate"></a>**InternetExplorer/AllowLockedDownRestrictedSitesZoneTemplate**  
 
@@ -1935,7 +1977,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowonewordentry"></a>**InternetExplorer/AllowOneWordEntry**  
 
@@ -1996,7 +2040,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowsitetozoneassignmentlist"></a>**InternetExplorer/AllowSiteToZoneAssignmentList**  
 
@@ -2063,7 +2109,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowsoftwarewhensignatureisinvalid"></a>**InternetExplorer/AllowSoftwareWhenSignatureIsInvalid**  
 
@@ -2101,6 +2149,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -2118,7 +2167,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowsuggestedsites"></a>**InternetExplorer/AllowSuggestedSites**  
 
@@ -2181,7 +2232,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowtrustedsiteszonetemplate"></a>**InternetExplorer/AllowTrustedSitesZoneTemplate**  
 
@@ -2248,7 +2301,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowslockeddowntrustedsiteszonetemplate"></a>**InternetExplorer/AllowsLockedDownTrustedSitesZoneTemplate**  
 
@@ -2315,7 +2370,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-allowsrestrictedsiteszonetemplate"></a>**InternetExplorer/AllowsRestrictedSitesZoneTemplate**  
 
@@ -2382,7 +2439,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-checkservercertificaterevocation"></a>**InternetExplorer/CheckServerCertificateRevocation**  
 
@@ -2420,6 +2479,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -2437,7 +2497,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-checksignaturesondownloadedprograms"></a>**InternetExplorer/CheckSignaturesOnDownloadedPrograms**  
 
@@ -2475,6 +2537,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -2492,7 +2555,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-consistentmimehandlinginternetexplorerprocesses"></a>**InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses**  
 
@@ -2530,6 +2595,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -2547,7 +2613,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-disableadobeflash"></a>**InternetExplorer/DisableAdobeFlash**  
 
@@ -2610,7 +2678,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-disablebypassofsmartscreenwarnings"></a>**InternetExplorer/DisableBypassOfSmartScreenWarnings**  
 
@@ -2671,7 +2741,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles"></a>**InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles**  
 
@@ -2732,7 +2804,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-disableconfiguringhistory"></a>**InternetExplorer/DisableConfiguringHistory**  
 
@@ -2770,6 +2844,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -2787,7 +2862,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-disablecrashdetection"></a>**InternetExplorer/DisableCrashDetection**  
 
@@ -2825,6 +2902,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -2842,7 +2920,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-disablecustomerexperienceimprovementprogramparticipation"></a>**InternetExplorer/DisableCustomerExperienceImprovementProgramParticipation**  
 
@@ -2905,7 +2985,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-disabledeletinguservisitedwebsites"></a>**InternetExplorer/DisableDeletingUserVisitedWebsites**  
 
@@ -2943,6 +3025,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -2960,7 +3043,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-disableenclosuredownloading"></a>**InternetExplorer/DisableEnclosureDownloading**  
 
@@ -3021,7 +3106,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-disableencryptionsupport"></a>**InternetExplorer/DisableEncryptionSupport**  
 
@@ -3084,7 +3171,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-disablefirstrunwizard"></a>**InternetExplorer/DisableFirstRunWizard**  
 
@@ -3149,7 +3238,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-disableflipaheadfeature"></a>**InternetExplorer/DisableFlipAheadFeature**  
 
@@ -3214,7 +3305,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-disablehomepagechange"></a>**InternetExplorer/DisableHomePageChange**  
 
@@ -3274,7 +3367,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-disableignoringcertificateerrors"></a>**InternetExplorer/DisableIgnoringCertificateErrors**  
 
@@ -3312,6 +3407,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -3329,7 +3425,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-disableinprivatebrowsing"></a>**InternetExplorer/DisableInPrivateBrowsing**  
 
@@ -3367,6 +3465,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -3384,7 +3483,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-disableprocessesinenhancedprotectedmode"></a>**InternetExplorer/DisableProcessesInEnhancedProtectedMode**  
 
@@ -3422,6 +3523,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -3439,7 +3541,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-disableproxychange"></a>**InternetExplorer/DisableProxyChange**  
 
@@ -3500,7 +3604,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-disablesearchproviderchange"></a>**InternetExplorer/DisableSearchProviderChange**  
 
@@ -3561,7 +3667,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-disablesecondaryhomepagechange"></a>**InternetExplorer/DisableSecondaryHomePageChange**  
 
@@ -3624,7 +3732,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-disablesecuritysettingscheck"></a>**InternetExplorer/DisableSecuritySettingsCheck**  
 
@@ -3662,6 +3772,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -3679,7 +3790,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-disableupdatecheck"></a>**InternetExplorer/DisableUpdateCheck**  
 
@@ -3741,7 +3854,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-donotallowactivexcontrolsinprotectedmode"></a>**InternetExplorer/DoNotAllowActiveXControlsInProtectedMode**  
 
@@ -3779,6 +3894,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -3796,7 +3912,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-donotallowuserstoaddsites"></a>**InternetExplorer/DoNotAllowUsersToAddSites**  
 
@@ -3862,7 +3980,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-donotallowuserstochangepolicies"></a>**InternetExplorer/DoNotAllowUsersToChangePolicies**  
 
@@ -3928,7 +4048,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-donotblockoutdatedactivexcontrols"></a>**InternetExplorer/DoNotBlockOutdatedActiveXControls**  
 
@@ -3991,7 +4113,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-donotblockoutdatedactivexcontrolsonspecificdomains"></a>**InternetExplorer/DoNotBlockOutdatedActiveXControlsOnSpecificDomains**  
 
@@ -4058,7 +4182,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-includealllocalsites"></a>**InternetExplorer/IncludeAllLocalSites**  
 
@@ -4121,7 +4247,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-includeallnetworkpaths"></a>**InternetExplorer/IncludeAllNetworkPaths**  
 
@@ -4184,7 +4312,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneallowaccesstodatasources"></a>**InternetExplorer/InternetZoneAllowAccessToDataSources**  
 
@@ -4247,7 +4377,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/InternetZoneAllowAutomaticPromptingForActiveXControls**  
 
@@ -4310,7 +4442,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/InternetZoneAllowAutomaticPromptingForFileDownloads**  
 
@@ -4371,7 +4505,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneallowcopypasteviascript"></a>**InternetExplorer/InternetZoneAllowCopyPasteViaScript**  
 
@@ -4409,6 +4545,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -4426,7 +4563,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneallowdraganddropcopyandpastefiles"></a>**InternetExplorer/InternetZoneAllowDragAndDropCopyAndPasteFiles**  
 
@@ -4464,6 +4603,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -4481,7 +4621,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneallowfontdownloads"></a>**InternetExplorer/InternetZoneAllowFontDownloads**  
 
@@ -4544,7 +4686,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneallowlessprivilegedsites"></a>**InternetExplorer/InternetZoneAllowLessPrivilegedSites**  
 
@@ -4607,7 +4751,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneallowloadingofxamlfiles"></a>**InternetExplorer/InternetZoneAllowLoadingOfXAMLFiles**  
 
@@ -4645,6 +4791,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -4662,7 +4809,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/InternetZoneAllowNETFrameworkReliantComponents**  
 
@@ -4725,7 +4874,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneallowonlyapproveddomainstouseactivexcontrols"></a>**InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls**  
 
@@ -4763,6 +4914,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -4780,7 +4932,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneallowonlyapproveddomainstousetdcactivexcontrol"></a>**InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl**  
 
@@ -4818,6 +4972,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -4835,7 +4990,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneallowscriptinitiatedwindows"></a>**InternetExplorer/InternetZoneAllowScriptInitiatedWindows**  
 
@@ -4873,6 +5030,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -4890,7 +5048,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneallowscriptingofinternetexplorerwebbrowsercontrols"></a>**InternetExplorer/InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls**  
 
@@ -4928,6 +5088,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -4945,7 +5106,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneallowscriptlets"></a>**InternetExplorer/InternetZoneAllowScriptlets**  
 
@@ -5008,7 +5171,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneallowsmartscreenie"></a>**InternetExplorer/InternetZoneAllowSmartScreenIE**  
 
@@ -5073,7 +5238,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneallowupdatestostatusbarviascript"></a>**InternetExplorer/InternetZoneAllowUpdatesToStatusBarViaScript**  
 
@@ -5111,6 +5278,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -5128,7 +5296,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneallowuserdatapersistence"></a>**InternetExplorer/InternetZoneAllowUserDataPersistence**  
 
@@ -5191,7 +5361,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControls**  
 
@@ -5229,6 +5401,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -5246,7 +5419,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzonedownloadsignedactivexcontrols"></a>**InternetExplorer/InternetZoneDownloadSignedActiveXControls**  
 
@@ -5284,6 +5459,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -5301,7 +5477,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzonedownloadunsignedactivexcontrols"></a>**InternetExplorer/InternetZoneDownloadUnsignedActiveXControls**  
 
@@ -5339,6 +5517,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -5356,7 +5535,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneenablecrosssitescriptingfilter"></a>**InternetExplorer/InternetZoneEnableCrossSiteScriptingFilter**  
 
@@ -5394,6 +5575,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -5411,7 +5593,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneenabledraggingofcontentfromdifferentdomainsacrosswindows"></a>**InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows**  
 
@@ -5449,6 +5633,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -5466,7 +5651,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneenabledraggingofcontentfromdifferentdomainswithinwindows"></a>**InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows**  
 
@@ -5504,6 +5691,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -5521,7 +5709,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneenablemimesniffing"></a>**InternetExplorer/InternetZoneEnableMIMESniffing**  
 
@@ -5559,6 +5749,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -5576,7 +5767,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneenableprotectedmode"></a>**InternetExplorer/InternetZoneEnableProtectedMode**  
 
@@ -5614,6 +5807,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -5631,7 +5825,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneincludelocalpathwhenuploadingfilestoserver"></a>**InternetExplorer/InternetZoneIncludeLocalPathWhenUploadingFilesToServer**  
 
@@ -5669,6 +5865,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -5686,7 +5883,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/InternetZoneInitializeAndScriptActiveXControls**  
 
@@ -5751,7 +5950,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneinitializeandscriptactivexcontrolsnotmarkedsafe"></a>**InternetExplorer/InternetZoneInitializeAndScriptActiveXControlsNotMarkedSafe**  
 
@@ -5779,9 +5980,12 @@ ADMX Info:
 
 <!--EndSKU-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzonejavapermissions"></a>**InternetExplorer/InternetZoneJavaPermissions**  
 
@@ -5819,6 +6023,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -5836,7 +6041,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzonelaunchingapplicationsandfilesiniframe"></a>**InternetExplorer/InternetZoneLaunchingApplicationsAndFilesInIFRAME**  
 
@@ -5874,6 +6081,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -5891,7 +6099,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzonelogonoptions"></a>**InternetExplorer/InternetZoneLogonOptions**  
 
@@ -5929,6 +6139,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -5946,7 +6157,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzonenavigatewindowsandframes"></a>**InternetExplorer/InternetZoneNavigateWindowsAndFrames**  
 
@@ -6009,7 +6222,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzonerunnetframeworkreliantcomponentssignedwithauthenticode"></a>**InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode**  
 
@@ -6047,6 +6262,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -6064,7 +6280,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneshowsecuritywarningforpotentiallyunsafefiles"></a>**InternetExplorer/InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles**  
 
@@ -6102,6 +6320,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -6119,7 +6338,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneusepopupblocker"></a>**InternetExplorer/InternetZoneUsePopupBlocker**  
 
@@ -6157,6 +6378,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -6174,7 +6396,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-intranetzoneallowaccesstodatasources"></a>**InternetExplorer/IntranetZoneAllowAccessToDataSources**  
 
@@ -6237,7 +6461,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-intranetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/IntranetZoneAllowAutomaticPromptingForActiveXControls**  
 
@@ -6300,7 +6526,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-intranetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/IntranetZoneAllowAutomaticPromptingForFileDownloads**  
 
@@ -6361,7 +6589,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-intranetzoneallowfontdownloads"></a>**InternetExplorer/IntranetZoneAllowFontDownloads**  
 
@@ -6424,7 +6654,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-intranetzoneallowlessprivilegedsites"></a>**InternetExplorer/IntranetZoneAllowLessPrivilegedSites**  
 
@@ -6487,7 +6719,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-intranetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/IntranetZoneAllowNETFrameworkReliantComponents**  
 
@@ -6550,7 +6784,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-intranetzoneallowscriptlets"></a>**InternetExplorer/IntranetZoneAllowScriptlets**  
 
@@ -6613,7 +6849,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-intranetzoneallowsmartscreenie"></a>**InternetExplorer/IntranetZoneAllowSmartScreenIE**  
 
@@ -6678,7 +6916,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-intranetzoneallowuserdatapersistence"></a>**InternetExplorer/IntranetZoneAllowUserDataPersistence**  
 
@@ -6741,7 +6981,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-intranetzonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/IntranetZoneDoNotRunAntimalwareAgainstActiveXControls**  
 
@@ -6779,6 +7021,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -6796,7 +7039,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-intranetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/IntranetZoneInitializeAndScriptActiveXControls**  
 
@@ -6861,7 +7106,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-intranetzonejavapermissions"></a>**InternetExplorer/IntranetZoneJavaPermissions**  
 
@@ -6899,6 +7146,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -6916,7 +7164,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-intranetzonenavigatewindowsandframes"></a>**InternetExplorer/IntranetZoneNavigateWindowsAndFrames**  
 
@@ -6979,7 +7229,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-localmachinezoneallowaccesstodatasources"></a>**InternetExplorer/LocalMachineZoneAllowAccessToDataSources**  
 
@@ -7042,7 +7294,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-localmachinezoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForActiveXControls**  
 
@@ -7105,7 +7359,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-localmachinezoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForFileDownloads**  
 
@@ -7166,7 +7422,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-localmachinezoneallowfontdownloads"></a>**InternetExplorer/LocalMachineZoneAllowFontDownloads**  
 
@@ -7229,7 +7487,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-localmachinezoneallowlessprivilegedsites"></a>**InternetExplorer/LocalMachineZoneAllowLessPrivilegedSites**  
 
@@ -7292,7 +7552,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-localmachinezoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LocalMachineZoneAllowNETFrameworkReliantComponents**  
 
@@ -7355,7 +7617,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-localmachinezoneallowscriptlets"></a>**InternetExplorer/LocalMachineZoneAllowScriptlets**  
 
@@ -7418,7 +7682,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-localmachinezoneallowsmartscreenie"></a>**InternetExplorer/LocalMachineZoneAllowSmartScreenIE**  
 
@@ -7483,7 +7749,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-localmachinezoneallowuserdatapersistence"></a>**InternetExplorer/LocalMachineZoneAllowUserDataPersistence**  
 
@@ -7546,7 +7814,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-localmachinezonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls**  
 
@@ -7584,6 +7854,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -7601,7 +7872,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-localmachinezoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LocalMachineZoneInitializeAndScriptActiveXControls**  
 
@@ -7666,7 +7939,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-localmachinezonejavapermissions"></a>**InternetExplorer/LocalMachineZoneJavaPermissions**  
 
@@ -7704,6 +7979,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -7721,7 +7997,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-localmachinezonenavigatewindowsandframes"></a>**InternetExplorer/LocalMachineZoneNavigateWindowsAndFrames**  
 
@@ -7784,7 +8062,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowninternetzoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownInternetZoneAllowAccessToDataSources**  
 
@@ -7847,7 +8127,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowninternetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls**  
 
@@ -7910,7 +8192,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowninternetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads**  
 
@@ -7971,7 +8255,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowninternetzoneallowfontdownloads"></a>**InternetExplorer/LockedDownInternetZoneAllowFontDownloads**  
 
@@ -8034,7 +8320,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowninternetzoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownInternetZoneAllowLessPrivilegedSites**  
 
@@ -8097,7 +8385,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowninternetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownInternetZoneAllowNETFrameworkReliantComponents**  
 
@@ -8160,7 +8450,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowninternetzoneallowscriptlets"></a>**InternetExplorer/LockedDownInternetZoneAllowScriptlets**  
 
@@ -8223,7 +8515,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowninternetzoneallowsmartscreenie"></a>**InternetExplorer/LockedDownInternetZoneAllowSmartScreenIE**  
 
@@ -8288,7 +8582,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowninternetzoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownInternetZoneAllowUserDataPersistence**  
 
@@ -8351,7 +8647,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowninternetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownInternetZoneInitializeAndScriptActiveXControls**  
 
@@ -8416,7 +8714,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowninternetzonejavapermissions"></a>**InternetExplorer/LockedDownInternetZoneJavaPermissions**  
 
@@ -8454,6 +8754,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -8471,7 +8772,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowninternetzonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownInternetZoneNavigateWindowsAndFrames**  
 
@@ -8534,7 +8837,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownintranetzoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownIntranetZoneAllowAccessToDataSources**  
 
@@ -8597,7 +8902,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownintranetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls**  
 
@@ -8660,7 +8967,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownintranetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads**  
 
@@ -8721,7 +9030,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownintranetzoneallowfontdownloads"></a>**InternetExplorer/LockedDownIntranetZoneAllowFontDownloads**  
 
@@ -8784,7 +9095,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownintranetzoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownIntranetZoneAllowLessPrivilegedSites**  
 
@@ -8847,7 +9160,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownintranetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownIntranetZoneAllowNETFrameworkReliantComponents**  
 
@@ -8910,7 +9225,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownintranetzoneallowscriptlets"></a>**InternetExplorer/LockedDownIntranetZoneAllowScriptlets**  
 
@@ -8973,7 +9290,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownintranetzoneallowsmartscreenie"></a>**InternetExplorer/LockedDownIntranetZoneAllowSmartScreenIE**  
 
@@ -9038,7 +9357,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownintranetzoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownIntranetZoneAllowUserDataPersistence**  
 
@@ -9101,7 +9422,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownintranetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownIntranetZoneInitializeAndScriptActiveXControls**  
 
@@ -9166,7 +9489,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownintranetzonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownIntranetZoneNavigateWindowsAndFrames**  
 
@@ -9229,7 +9554,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAccessToDataSources**  
 
@@ -9292,7 +9619,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls**  
 
@@ -9355,7 +9684,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads**  
 
@@ -9416,7 +9747,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezoneallowfontdownloads"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowFontDownloads**  
 
@@ -9479,7 +9812,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowLessPrivilegedSites**  
 
@@ -9542,7 +9877,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents**  
 
@@ -9605,7 +9942,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezoneallowscriptlets"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowScriptlets**  
 
@@ -9668,7 +10007,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezoneallowsmartscreenie"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowSmartScreenIE**  
 
@@ -9733,7 +10074,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowUserDataPersistence**  
 
@@ -9796,7 +10139,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownLocalMachineZoneInitializeAndScriptActiveXControls**  
 
@@ -9861,7 +10206,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezonejavapermissions"></a>**InternetExplorer/LockedDownLocalMachineZoneJavaPermissions**  
 
@@ -9899,6 +10246,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -9916,7 +10264,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownLocalMachineZoneNavigateWindowsAndFrames**  
 
@@ -9979,7 +10329,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAccessToDataSources**  
 
@@ -10042,7 +10394,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls**  
 
@@ -10105,7 +10459,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads**  
 
@@ -10166,7 +10522,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowfontdownloads"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowFontDownloads**  
 
@@ -10229,7 +10587,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowLessPrivilegedSites**  
 
@@ -10292,7 +10652,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents**  
 
@@ -10355,7 +10717,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowscriptlets"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowScriptlets**  
 
@@ -10418,7 +10782,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowsmartscreenie"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowSmartScreenIE**  
 
@@ -10483,7 +10849,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowUserDataPersistence**  
 
@@ -10546,7 +10914,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls**  
 
@@ -10611,7 +10981,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszonejavapermissions"></a>**InternetExplorer/LockedDownRestrictedSitesZoneJavaPermissions**  
 
@@ -10649,6 +11021,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -10666,7 +11039,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownRestrictedSitesZoneNavigateWindowsAndFrames**  
 
@@ -10729,7 +11104,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAccessToDataSources**  
 
@@ -10792,7 +11169,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls**  
 
@@ -10855,7 +11234,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads**  
 
@@ -10916,7 +11297,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowfontdownloads"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowFontDownloads**  
 
@@ -10979,7 +11362,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowLessPrivilegedSites**  
 
@@ -11042,7 +11427,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents**  
 
@@ -11105,7 +11492,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowscriptlets"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowScriptlets**  
 
@@ -11168,7 +11557,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowsmartscreenie"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowSmartScreenIE**  
 
@@ -11233,7 +11624,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowUserDataPersistence**  
 
@@ -11296,7 +11689,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls**  
 
@@ -11361,7 +11756,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszonejavapermissions"></a>**InternetExplorer/LockedDownTrustedSitesZoneJavaPermissions**  
 
@@ -11399,6 +11796,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -11416,7 +11814,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownTrustedSitesZoneNavigateWindowsAndFrames**  
 
@@ -11479,7 +11879,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-mkprotocolsecurityrestrictioninternetexplorerprocesses"></a>**InternetExplorer/MKProtocolSecurityRestrictionInternetExplorerProcesses**  
 
@@ -11517,6 +11919,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -11534,7 +11937,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-mimesniffingsafetyfeatureinternetexplorerprocesses"></a>**InternetExplorer/MimeSniffingSafetyFeatureInternetExplorerProcesses**  
 
@@ -11572,6 +11977,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -11589,7 +11995,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-notificationbarinternetexplorerprocesses"></a>**InternetExplorer/NotificationBarInternetExplorerProcesses**  
 
@@ -11627,6 +12035,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -11644,7 +12053,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-preventmanagingsmartscreenfilter"></a>**InternetExplorer/PreventManagingSmartScreenFilter**  
 
@@ -11682,6 +12093,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -11699,7 +12111,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-preventperuserinstallationofactivexcontrols"></a>**InternetExplorer/PreventPerUserInstallationOfActiveXControls**  
 
@@ -11737,6 +12151,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -11754,7 +12169,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-protectionfromzoneelevationinternetexplorerprocesses"></a>**InternetExplorer/ProtectionFromZoneElevationInternetExplorerProcesses**  
 
@@ -11792,6 +12209,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -11809,7 +12227,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-removerunthistimebuttonforoutdatedactivexcontrols"></a>**InternetExplorer/RemoveRunThisTimeButtonForOutdatedActiveXControls**  
 
@@ -11847,6 +12267,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -11864,7 +12285,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictactivexinstallinternetexplorerprocesses"></a>**InternetExplorer/RestrictActiveXInstallInternetExplorerProcesses**  
 
@@ -11902,6 +12325,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -11919,7 +12343,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictfiledownloadinternetexplorerprocesses"></a>**InternetExplorer/RestrictFileDownloadInternetExplorerProcesses**  
 
@@ -11957,6 +12383,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -11974,7 +12401,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/RestrictedSitesZoneAllowAccessToDataSources**  
 
@@ -12037,7 +12466,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowactivescripting"></a>**InternetExplorer/RestrictedSitesZoneAllowActiveScripting**  
 
@@ -12075,6 +12506,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -12092,7 +12524,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls**  
 
@@ -12155,7 +12589,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads**  
 
@@ -12216,7 +12652,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowbinaryandscriptbehaviors"></a>**InternetExplorer/RestrictedSitesZoneAllowBinaryAndScriptBehaviors**  
 
@@ -12254,6 +12692,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -12271,7 +12710,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowcopypasteviascript"></a>**InternetExplorer/RestrictedSitesZoneAllowCopyPasteViaScript**  
 
@@ -12309,6 +12750,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -12326,7 +12768,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowdraganddropcopyandpastefiles"></a>**InternetExplorer/RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles**  
 
@@ -12364,6 +12808,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -12381,7 +12826,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowfiledownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowFileDownloads**  
 
@@ -12419,6 +12866,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -12436,7 +12884,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowfontdownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowFontDownloads**  
 
@@ -12499,7 +12949,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/RestrictedSitesZoneAllowLessPrivilegedSites**  
 
@@ -12562,7 +13014,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowloadingofxamlfiles"></a>**InternetExplorer/RestrictedSitesZoneAllowLoadingOfXAMLFiles**  
 
@@ -12600,6 +13054,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -12617,7 +13072,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowmetarefresh"></a>**InternetExplorer/RestrictedSitesZoneAllowMETAREFRESH**  
 
@@ -12655,6 +13112,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -12672,7 +13130,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/RestrictedSitesZoneAllowNETFrameworkReliantComponents**  
 
@@ -12735,7 +13195,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowonlyapproveddomainstouseactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls**  
 
@@ -12773,6 +13235,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -12790,7 +13253,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowonlyapproveddomainstousetdcactivexcontrol"></a>**InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl**  
 
@@ -12828,6 +13293,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -12845,7 +13311,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowscriptinitiatedwindows"></a>**InternetExplorer/RestrictedSitesZoneAllowScriptInitiatedWindows**  
 
@@ -12883,6 +13351,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -12900,7 +13369,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowscriptingofinternetexplorerwebbrowsercontrols"></a>**InternetExplorer/RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls**  
 
@@ -12938,6 +13409,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -12955,7 +13427,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowscriptlets"></a>**InternetExplorer/RestrictedSitesZoneAllowScriptlets**  
 
@@ -13018,7 +13492,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowsmartscreenie"></a>**InternetExplorer/RestrictedSitesZoneAllowSmartScreenIE**  
 
@@ -13083,7 +13559,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowupdatestostatusbarviascript"></a>**InternetExplorer/RestrictedSitesZoneAllowUpdatesToStatusBarViaScript**  
 
@@ -13121,6 +13599,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -13138,7 +13617,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/RestrictedSitesZoneAllowUserDataPersistence**  
 
@@ -13201,7 +13682,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls**  
 
@@ -13239,6 +13722,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -13256,7 +13740,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszonedownloadsignedactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneDownloadSignedActiveXControls**  
 
@@ -13294,6 +13780,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -13311,7 +13798,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszonedownloadunsignedactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneDownloadUnsignedActiveXControls**  
 
@@ -13349,6 +13838,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -13366,7 +13856,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneenablecrosssitescriptingfilter"></a>**InternetExplorer/RestrictedSitesZoneEnableCrossSiteScriptingFilter**  
 
@@ -13404,6 +13896,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -13421,7 +13914,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneenabledraggingofcontentfromdifferentdomainsacrosswindows"></a>**InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows**  
 
@@ -13459,6 +13954,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -13476,7 +13972,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneenabledraggingofcontentfromdifferentdomainswithinwindows"></a>**InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows**  
 
@@ -13514,6 +14012,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -13531,7 +14030,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneenablemimesniffing"></a>**InternetExplorer/RestrictedSitesZoneEnableMIMESniffing**  
 
@@ -13569,6 +14070,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -13586,7 +14088,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneincludelocalpathwhenuploadingfilestoserver"></a>**InternetExplorer/RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer**  
 
@@ -13624,6 +14128,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -13641,7 +14146,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneInitializeAndScriptActiveXControls**  
 
@@ -13706,7 +14213,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszonejavapermissions"></a>**InternetExplorer/RestrictedSitesZoneJavaPermissions**  
 
@@ -13744,6 +14253,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -13761,7 +14271,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszonelaunchingapplicationsandfilesiniframe"></a>**InternetExplorer/RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME**  
 
@@ -13799,6 +14311,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -13816,7 +14329,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszonelogonoptions"></a>**InternetExplorer/RestrictedSitesZoneLogonOptions**  
 
@@ -13854,6 +14369,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -13871,7 +14387,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFrames**  
 
@@ -13934,7 +14452,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszonerunactivexcontrolsandplugins"></a>**InternetExplorer/RestrictedSitesZoneRunActiveXControlsAndPlugins**  
 
@@ -13972,6 +14492,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -13989,7 +14510,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszonerunnetframeworkreliantcomponentssignedwithauthenticode"></a>**InternetExplorer/RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode**  
 
@@ -14027,6 +14550,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -14044,7 +14568,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszonescriptactivexcontrolsmarkedsafeforscripting"></a>**InternetExplorer/RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting**  
 
@@ -14082,6 +14608,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -14099,7 +14626,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszonescriptingofjavaapplets"></a>**InternetExplorer/RestrictedSitesZoneScriptingOfJavaApplets**  
 
@@ -14137,6 +14666,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -14154,7 +14684,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneshowsecuritywarningforpotentiallyunsafefiles"></a>**InternetExplorer/RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles**  
 
@@ -14192,6 +14724,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -14209,7 +14742,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneturnonprotectedmode"></a>**InternetExplorer/RestrictedSitesZoneTurnOnProtectedMode**  
 
@@ -14247,6 +14782,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -14264,7 +14800,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneusepopupblocker"></a>**InternetExplorer/RestrictedSitesZoneUsePopupBlocker**  
 
@@ -14302,6 +14840,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -14319,7 +14858,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-scriptedwindowsecurityrestrictionsinternetexplorerprocesses"></a>**InternetExplorer/ScriptedWindowSecurityRestrictionsInternetExplorerProcesses**  
 
@@ -14357,6 +14898,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -14374,7 +14916,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-searchproviderlist"></a>**InternetExplorer/SearchProviderList**  
 
@@ -14435,7 +14979,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-securityzonesuseonlymachinesettings"></a>**InternetExplorer/SecurityZonesUseOnlyMachineSettings**  
 
@@ -14472,6 +15018,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -14489,7 +15036,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-specifyuseofactivexinstallerservice"></a>**InternetExplorer/SpecifyUseOfActiveXInstallerService**  
 
@@ -14527,6 +15076,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -14544,7 +15094,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-trustedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/TrustedSitesZoneAllowAccessToDataSources**  
 
@@ -14607,7 +15159,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-trustedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForActiveXControls**  
 
@@ -14670,7 +15224,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-trustedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForFileDownloads**  
 
@@ -14731,7 +15287,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-trustedsiteszoneallowfontdownloads"></a>**InternetExplorer/TrustedSitesZoneAllowFontDownloads**  
 
@@ -14794,7 +15352,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-trustedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/TrustedSitesZoneAllowLessPrivilegedSites**  
 
@@ -14857,7 +15417,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-trustedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/TrustedSitesZoneAllowNETFrameworkReliantComponents**  
 
@@ -14920,7 +15482,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-trustedsiteszoneallowscriptlets"></a>**InternetExplorer/TrustedSitesZoneAllowScriptlets**  
 
@@ -14983,7 +15547,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-trustedsiteszoneallowsmartscreenie"></a>**InternetExplorer/TrustedSitesZoneAllowSmartScreenIE**  
 
@@ -15048,7 +15614,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-trustedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/TrustedSitesZoneAllowUserDataPersistence**  
 
@@ -15111,7 +15679,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-trustedsiteszonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls**  
 
@@ -15149,6 +15719,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -15166,7 +15737,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControls**  
 
@@ -15231,7 +15804,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-trustedsiteszonejavapermissions"></a>**InternetExplorer/TrustedSitesZoneJavaPermissions**  
 
@@ -15269,6 +15844,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -15286,7 +15862,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="internetexplorer-trustedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/TrustedSitesZoneNavigateWindowsAndFrames**  
 

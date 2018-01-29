@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/03/2018
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - Browser
@@ -137,7 +137,9 @@ ms.date: 01/03/2018
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-allowaddressbardropdown"></a>**Browser/AllowAddressBarDropdown**  
 
@@ -191,7 +193,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-allowautofill"></a>**Browser/AllowAutofill**  
 
@@ -249,7 +253,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-allowbrowser"></a>**Browser/AllowBrowser**  
 
@@ -306,7 +312,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-allowcookies"></a>**Browser/AllowCookies**  
 
@@ -362,7 +370,9 @@ To verify AllowCookies is set to 0 (not allowed):
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-allowdevelopertools"></a>**Browser/AllowDeveloperTools**  
 
@@ -417,7 +427,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-allowdonottrack"></a>**Browser/AllowDoNotTrack**  
 
@@ -475,7 +487,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-allowextensions"></a>**Browser/AllowExtensions**  
 
@@ -524,7 +538,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-allowflash"></a>**Browser/AllowFlash**  
 
@@ -573,7 +589,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-allowflashclicktorun"></a>**Browser/AllowFlashClickToRun**  
 
@@ -622,7 +640,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-allowinprivate"></a>**Browser/AllowInPrivate**  
 
@@ -673,7 +693,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-allowmicrosoftcompatibilitylist"></a>**Browser/AllowMicrosoftCompatibilityList**  
 
@@ -727,7 +749,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-allowpasswordmanager"></a>**Browser/AllowPasswordManager**  
 
@@ -785,7 +809,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-allowpopups"></a>**Browser/AllowPopups**  
 
@@ -843,7 +869,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-allowsearchenginecustomization"></a>**Browser/AllowSearchEngineCustomization**  
 
@@ -896,7 +924,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-allowsearchsuggestionsinaddressbar"></a>**Browser/AllowSearchSuggestionsinAddressBar**  
 
@@ -947,7 +977,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-allowsmartscreen"></a>**Browser/AllowSmartScreen**  
 
@@ -1005,7 +1037,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-alwaysenablebookslibrary"></a>**Browser/AlwaysEnableBooksLibrary**  
 
@@ -1032,7 +1066,6 @@ The following list shows the supported values:
 </table>
 
 <!--EndSKU-->
-
 <!--StartScope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1044,8 +1077,6 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-
-
 Added in Windows 10, next majot update. Always show the Books Library in Microsoft Edge
 
 <!--EndDescription-->
@@ -1057,7 +1088,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-clearbrowsingdataonexit"></a>**Browser/ClearBrowsingDataOnExit**  
 
@@ -1114,7 +1147,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-configureadditionalsearchengines"></a>**Browser/ConfigureAdditionalSearchEngines**  
 
@@ -1171,7 +1206,9 @@ Most restricted value is 0.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-disablelockdownofstartpages"></a>**Browser/DisableLockdownOfStartPages**  
 
@@ -1224,11 +1261,13 @@ Most restricted value is 0.
 The following list shows the supported values:
 
 -   0 (default) – Enable lockdown of the Start pages according to the settings specified in the Browser/HomePages policy. Users cannot change the Start pages. 
--   1  – Disable lockdown of the Start pages and allow users to modify them.  
+-   1  – Disable lockdown of the Start pages and allow users to modify them.
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-enableextendedbookstelemetry"></a>**Browser/EnableExtendedBooksTelemetry**  
 
@@ -1277,16 +1316,11 @@ The following list shows the supported values:
 -   0 (default) - Disable. No additional telemetry.
 -   1 - Enable. Additional telemetry for schools.
 
-
 <!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-enterprisemodesitelist"></a>**Browser/EnterpriseModeSiteList**  
 
@@ -1337,7 +1371,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-enterprisesitelistserviceurl"></a>**Browser/EnterpriseSiteListServiceUrl**  
 
@@ -1380,7 +1416,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-firstrunurl"></a>**Browser/FirstRunURL**  
 
@@ -1430,7 +1468,9 @@ The default value is an empty string. Otherwise, the string should contain the U
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-homepages"></a>**Browser/HomePages**  
 
@@ -1482,7 +1522,9 @@ Starting in Windows 10, version 1703, if you don’t want to send traffic to Mi
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-lockdownfavorites"></a>**Browser/LockdownFavorites**  
 
@@ -1540,7 +1582,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-preventaccesstoaboutflagsinmicrosoftedge"></a>**Browser/PreventAccessToAboutFlagsInMicrosoftEdge**  
 
@@ -1589,7 +1633,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-preventfirstrunpage"></a>**Browser/PreventFirstRunPage**  
 
@@ -1640,7 +1686,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-preventlivetiledatacollection"></a>**Browser/PreventLiveTileDataCollection**  
 
@@ -1691,7 +1739,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-preventsmartscreenpromptoverride"></a>**Browser/PreventSmartScreenPromptOverride**  
 
@@ -1742,7 +1792,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-preventsmartscreenpromptoverrideforfiles"></a>**Browser/PreventSmartScreenPromptOverrideForFiles**  
 
@@ -1791,7 +1843,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-preventusinglocalhostipaddressforwebrtc"></a>**Browser/PreventUsingLocalHostIPAddressForWebRTC**  
 
@@ -1844,7 +1898,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-provisionfavorites"></a>**Browser/ProvisionFavorites**  
 
@@ -1899,7 +1955,9 @@ Data type is string.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-sendintranettraffictointernetexplorer"></a>**Browser/SendIntranetTraffictoInternetExplorer**  
 
@@ -1954,7 +2012,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-setdefaultsearchengine"></a>**Browser/SetDefaultSearchEngine**  
 
@@ -2010,7 +2070,9 @@ Most restricted value is 0.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-showmessagewhenopeningsitesininternetexplorer"></a>**Browser/ShowMessageWhenOpeningSitesInInternetExplorer**  
 
@@ -2065,7 +2127,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-syncfavoritesbetweenieandmicrosoftedge"></a>**Browser/SyncFavoritesBetweenIEAndMicrosoftEdge**  
 
@@ -2127,7 +2191,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="browser-usesharedfolderforbooks"></a>**Browser/UseSharedFolderForBooks**  
 
@@ -2174,14 +2240,7 @@ The following list shows the supported values:
 -   0 - No shared folder.
 -   1 - Use a shared folder.
 
-
 <!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 

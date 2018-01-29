@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/04/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - ApplicationDefaults
@@ -24,7 +24,9 @@ ms.date: 12/04/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="applicationdefaults-defaultassociationsconfiguration"></a>**ApplicationDefaults/DefaultAssociationsConfiguration**  
 
@@ -128,5 +130,4 @@ Footnote:
 -   3 - Added in Windows 10, version 1709.
 
 <!--EndPolicies-->
-
 

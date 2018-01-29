@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/03/2018
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - KioskBrowser
@@ -41,7 +41,9 @@ ms.date: 01/03/2018
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="kioskbrowser-blockedurlexceptions"></a>**KioskBrowser/BlockedUrlExceptions**  
 
@@ -82,17 +84,10 @@ ms.date: 01/03/2018
 Added in Windows 10, next major update. List of exceptions to the blocked website URLs (with wildcard support). This is used to configure URLs kiosk browsers are allowed to navigate to, which are a subset of the blocked URLs.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="kioskbrowser-blockedurls"></a>**KioskBrowser/BlockedUrls**  
 
@@ -133,17 +128,10 @@ Added in Windows 10, next major update. List of exceptions to the blocked websit
 Added in Windows 10, next major update. List of blocked website URLs (with wildcard support). This is used to configure blocked URLs kiosk browsers cannot navigate to.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="kioskbrowser-defaulturl"></a>**KioskBrowser/DefaultURL**  
 
@@ -184,17 +172,10 @@ Added in Windows 10, next major update. List of blocked website URLs (with wildc
 Added in Windows 10, next major update. Configures the default URL kiosk browsers to navigate on launch and restart.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="kioskbrowser-enablehomebutton"></a>**KioskBrowser/EnableHomeButton**  
 
@@ -235,17 +216,10 @@ Added in Windows 10, next major update. Configures the default URL kiosk browser
 Added in Windows 10, next major update. Enable/disable kiosk browser's home button.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="kioskbrowser-enablenavigationbuttons"></a>**KioskBrowser/EnableNavigationButtons**  
 
@@ -286,17 +260,10 @@ Added in Windows 10, next major update. Enable/disable kiosk browser's home butt
 Added in Windows 10, next major update. Enable/disable kiosk browser's navigation buttons (forward/back).
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="kioskbrowser-restartonidletime"></a>**KioskBrowser/RestartOnIdleTime**  
 
@@ -339,15 +306,6 @@ Added in Windows 10, next major update. Amount of time in minutes the session is
 The value is an int 1-1440 that specifies the amount of minutes the session is idle until the kiosk browser restarts in a fresh state. The default value is empty which means there is no idle timeout within the kiosk browser.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 

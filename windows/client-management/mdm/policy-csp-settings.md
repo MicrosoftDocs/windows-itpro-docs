@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/19/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - Settings
@@ -65,7 +65,9 @@ ms.date: 12/19/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowautoplay"></a>**Settings/AllowAutoPlay**  
 
@@ -120,7 +122,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowdatasense"></a>**Settings/AllowDataSense**  
 
@@ -168,7 +172,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowdatetime"></a>**Settings/AllowDateTime**  
 
@@ -216,7 +222,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-alloweditdevicename"></a>**Settings/AllowEditDeviceName**  
 
@@ -264,7 +272,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowlanguage"></a>**Settings/AllowLanguage**  
 
@@ -316,7 +326,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowonlinetips"></a>**Settings/AllowOnlineTips**  
 
@@ -356,18 +368,12 @@ The following list shows the supported values:
 Enables or disables the retrieval of online tips and help for the Settings app.
 
 If disabled, Settings will not contact Microsoft content services to retrieve tips and help content.
+
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowpowersleep"></a>**Settings/AllowPowerSleep**  
 
@@ -419,7 +425,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowregion"></a>**Settings/AllowRegion**  
 
@@ -471,7 +479,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowsigninoptions"></a>**Settings/AllowSignInOptions**  
 
@@ -523,7 +533,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowvpn"></a>**Settings/AllowVPN**  
 
@@ -571,7 +583,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowworkplace"></a>**Settings/AllowWorkplace**  
 
@@ -623,7 +637,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowyouraccount"></a>**Settings/AllowYourAccount**  
 
@@ -671,7 +687,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-configuretaskbarcalendar"></a>**Settings/ConfigureTaskbarCalendar**  
 
@@ -719,7 +737,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-pagevisibilitylist"></a>**Settings/PageVisibilityList**  
 

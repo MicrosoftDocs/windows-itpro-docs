@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - Printers
@@ -30,7 +30,9 @@ ms.date: 11/01/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="printers-pointandprintrestrictions"></a>**Printers/PointAndPrintRestrictions**  
 
@@ -103,7 +105,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="printers-pointandprintrestrictions-user"></a>**Printers/PointAndPrintRestrictions_User**  
 
@@ -176,7 +180,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="printers-publishprinters"></a>**Printers/PublishPrinters**  
 

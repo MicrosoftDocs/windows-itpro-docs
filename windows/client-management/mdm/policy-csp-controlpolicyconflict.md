@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/11/2018
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - ControlPolicyConflict
@@ -26,7 +26,9 @@ ms.date: 01/11/2018
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="controlpolicyconflict-mdmwinsovergp"></a>**ControlPolicyConflict/MDMWinsOverGP**  
 
@@ -80,14 +82,7 @@ The following list shows the supported values:
 - 0 (default)
 - 1 - The MDM policy is used and the GP policy is blocked.
 
-
 <!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/19/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - Update
@@ -167,7 +167,9 @@ ms.date: 12/19/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-activehoursend"></a>**Update/ActiveHoursEnd**  
 
@@ -215,7 +217,9 @@ The default is 17 (5 PM).
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-activehoursmaxrange"></a>**Update/ActiveHoursMaxRange**  
 
@@ -260,7 +264,9 @@ The default value is 18 (hours).
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-activehoursstart"></a>**Update/ActiveHoursStart**  
 
@@ -308,7 +314,9 @@ The default value is 8 (8 AM).
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-allowautoupdate"></a>**Update/AllowAutoUpdate**  
 
@@ -366,7 +374,9 @@ If the policy is not configured, end-users get the default behavior (Auto instal
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-allowautowindowsupdatedownloadovermeterednetwork"></a>**Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork**  
 
@@ -418,7 +428,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-allowmuupdateservice"></a>**Update/AllowMUUpdateService**  
 
@@ -464,7 +476,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-allownonmicrosoftsignedupdate"></a>**Update/AllowNonMicrosoftSignedUpdate**  
 
@@ -516,7 +530,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-allowupdateservice"></a>**Update/AllowUpdateService**  
 
@@ -571,7 +587,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-autorestartdeadlineperiodindays"></a>**Update/AutoRestartDeadlinePeriodInDays**  
 
@@ -616,7 +634,9 @@ The default value is 7 days.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-autorestartnotificationschedule"></a>**Update/AutoRestartNotificationSchedule**  
 
@@ -663,7 +683,9 @@ Supported values are 15, 30, 60, 120, and 240 (minutes).
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-autorestartrequirednotificationdismissal"></a>**Update/AutoRestartRequiredNotificationDismissal**  
 
@@ -709,7 +731,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-branchreadinesslevel"></a>**Update/BranchReadinessLevel**  
 
@@ -760,7 +784,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-configurefeatureupdateuninstallperiod"></a>**Update/ConfigureFeatureUpdateUninstallPeriod**  
 
@@ -787,16 +813,14 @@ The following list shows the supported values:
 </table>
 
 <!--EndSKU-->
-
 <!--StartDescription-->
 Added in Windows 10, next major update. Enable IT admin to configure feature update uninstall period. Values range 2 - 60 days. Default is 10 days.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-deferfeatureupdatesperiodindays"></a>**Update/DeferFeatureUpdatesPeriodInDays**  
 
@@ -844,7 +868,9 @@ Supported values are 0-365 days.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-deferqualityupdatesperiodindays"></a>**Update/DeferQualityUpdatesPeriodInDays**  
 
@@ -887,7 +913,9 @@ Supported values are 0-30.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-deferupdateperiod"></a>**Update/DeferUpdatePeriod**  
 
@@ -1021,7 +1049,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-deferupgradeperiod"></a>**Update/DeferUpgradePeriod**  
 
@@ -1074,7 +1104,9 @@ If the "Allow Telemetry" policy is enabled and the Options value is set to 0, th
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-detectionfrequency"></a>**Update/DetectionFrequency**  
 
@@ -1115,7 +1147,9 @@ Added in Windows 10, version 1703. Specifies the scan frequency from every 1 - 2
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-disabledualscan"></a>**Update/DisableDualScan**  
 
@@ -1165,11 +1199,13 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 The following list shows the supported values:
 
 - 0 - allow scan against Windows Update
-- 1 - do not allow update deferral policies to cause scans against Windows Update 
+- 1 - do not allow update deferral policies to cause scans against Windows Update
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-engagedrestartdeadline"></a>**Update/EngagedRestartDeadline**  
 
@@ -1214,7 +1250,9 @@ The default value is 0 days (not specified).
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-engagedrestartsnoozeschedule"></a>**Update/EngagedRestartSnoozeSchedule**  
 
@@ -1259,7 +1297,9 @@ The default value is 3 days.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-engagedrestarttransitionschedule"></a>**Update/EngagedRestartTransitionSchedule**  
 
@@ -1304,7 +1344,9 @@ The default value is 7 days.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-excludewudriversinqualityupdate"></a>**Update/ExcludeWUDriversInQualityUpdate**  
 
@@ -1353,7 +1395,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-fillemptycontenturls"></a>**Update/FillEmptyContentUrls**  
 
@@ -1402,7 +1446,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-ignoremoappdownloadlimit"></a>**Update/IgnoreMOAppDownloadLimit**  
 
@@ -1465,7 +1511,9 @@ To validate this policy:
 
 <!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-ignoremoupdatedownloadlimit"></a>**Update/IgnoreMOUpdateDownloadLimit**  
 
@@ -1525,7 +1573,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-managepreviewbuilds"></a>**Update/ManagePreviewBuilds**  
 
@@ -1572,7 +1622,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-pausedeferrals"></a>**Update/PauseDeferrals**  
 
@@ -1626,7 +1678,9 @@ If the "Allow Telemetry" policy is enabled and the Options value is set to 0, th
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-pausefeatureupdates"></a>**Update/PauseFeatureUpdates**  
 
@@ -1675,7 +1729,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-pausefeatureupdatesstarttime"></a>**Update/PauseFeatureUpdatesStartTime**  
 
@@ -1718,7 +1774,9 @@ Value type is string. Supported operations are Add, Get, Delete, and Replace.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-pausequalityupdates"></a>**Update/PauseQualityUpdates**  
 
@@ -1764,7 +1822,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-pausequalityupdatesstarttime"></a>**Update/PauseQualityUpdatesStartTime**  
 
@@ -1807,24 +1867,20 @@ Value type is string. Supported operations are Add, Get, Delete, and Replace.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-phoneupdaterestrictions"></a>**Update/PhoneUpdateRestrictions**  
 
 <!--StartDescription-->
 This policy is deprecated. Use [Update/RequireUpdateApproval](#update-requireupdateapproval) instead.
+
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-requiredeferupgrade"></a>**Update/RequireDeferUpgrade**  
 
@@ -1874,7 +1930,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-requireupdateapproval"></a>**Update/RequireUpdateApproval**  
 
@@ -1926,7 +1984,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-scheduleimminentrestartwarning"></a>**Update/ScheduleImminentRestartWarning**  
 
@@ -1973,7 +2033,9 @@ Supported values are 15, 30, or 60 (minutes).
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-schedulerestartwarning"></a>**Update/ScheduleRestartWarning**  
 
@@ -2024,7 +2086,9 @@ Supported values are 2, 4, 8, 12, or 24 (hours).
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-scheduledinstallday"></a>**Update/ScheduledInstallDay**  
 
@@ -2080,7 +2144,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-scheduledinstalleveryweek"></a>**Update/ScheduledInstallEveryWeek**  
 
@@ -2125,7 +2191,9 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-scheduledinstallfirstweek"></a>**Update/ScheduledInstallFirstWeek**  
 
@@ -2170,7 +2238,9 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-scheduledinstallfourthweek"></a>**Update/ScheduledInstallFourthWeek**  
 
@@ -2215,7 +2285,9 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-scheduledinstallsecondweek"></a>**Update/ScheduledInstallSecondWeek**  
 
@@ -2260,7 +2332,9 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-scheduledinstallthirdweek"></a>**Update/ScheduledInstallThirdWeek**  
 
@@ -2305,7 +2379,9 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-scheduledinstalltime"></a>**Update/ScheduledInstallTime**  
 
@@ -2358,7 +2434,9 @@ The default value is 3.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-setautorestartnotificationdisable"></a>**Update/SetAutoRestartNotificationDisable**  
 
@@ -2404,7 +2482,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-setedurestart"></a>**Update/SetEDURestart**  
 
@@ -2450,7 +2530,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-updateserviceurl"></a>**Update/UpdateServiceUrl**  
 
@@ -2519,7 +2601,9 @@ Example
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="update-updateserviceurlalternate"></a>**Update/UpdateServiceUrlAlternate**  
 

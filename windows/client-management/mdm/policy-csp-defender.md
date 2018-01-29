@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - Defender
@@ -126,7 +126,9 @@ ms.date: 11/01/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-allowarchivescanning"></a>**Defender/AllowArchiveScanning**  
 
@@ -176,7 +178,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-allowbehaviormonitoring"></a>**Defender/AllowBehaviorMonitoring**  
 
@@ -226,7 +230,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-allowcloudprotection"></a>**Defender/AllowCloudProtection**  
 
@@ -276,7 +282,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-allowemailscanning"></a>**Defender/AllowEmailScanning**  
 
@@ -326,7 +334,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-allowfullscanonmappednetworkdrives"></a>**Defender/AllowFullScanOnMappedNetworkDrives**  
 
@@ -376,7 +386,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-allowfullscanremovabledrivescanning"></a>**Defender/AllowFullScanRemovableDriveScanning**  
 
@@ -426,7 +438,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-allowioavprotection"></a>**Defender/AllowIOAVProtection**  
 
@@ -476,7 +490,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-allowintrusionpreventionsystem"></a>**Defender/AllowIntrusionPreventionSystem**  
 
@@ -526,7 +542,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-allowonaccessprotection"></a>**Defender/AllowOnAccessProtection**  
 
@@ -576,7 +594,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-allowrealtimemonitoring"></a>**Defender/AllowRealtimeMonitoring**  
 
@@ -626,7 +646,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-allowscanningnetworkfiles"></a>**Defender/AllowScanningNetworkFiles**  
 
@@ -676,7 +698,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-allowscriptscanning"></a>**Defender/AllowScriptScanning**  
 
@@ -726,7 +750,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-allowuseruiaccess"></a>**Defender/AllowUserUIAccess**  
 
@@ -776,7 +802,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-attacksurfacereductiononlyexclusions"></a>**Defender/AttackSurfaceReductionOnlyExclusions**  
 
@@ -823,7 +851,9 @@ Value type is string.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-attacksurfacereductionrules"></a>**Defender/AttackSurfaceReductionRules**  
 
@@ -872,7 +902,9 @@ Value type is string.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-avgcpuloadfactor"></a>**Defender/AvgCPULoadFactor**  
 
@@ -921,7 +953,9 @@ The default value is 50.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-cloudblocklevel"></a>**Defender/CloudBlockLevel**  
 
@@ -982,7 +1016,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-cloudextendedtimeout"></a>**Defender/CloudExtendedTimeout**  
 
@@ -1033,7 +1069,9 @@ For example, if the desired timeout is 60 seconds, specify 50 seconds in this se
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-controlledfolderaccessallowedapplications"></a>**Defender/ControlledFolderAccessAllowedApplications**  
 
@@ -1077,7 +1115,9 @@ Added in Windows 10, version 1709. This policy setting allows user-specified app
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-controlledfolderaccessprotectedfolders"></a>**Defender/ControlledFolderAccessProtectedFolders**  
 
@@ -1121,7 +1161,9 @@ Added in Windows 10, version 1709. This policy settings allows adding user-speci
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-daystoretaincleanedmalware"></a>**Defender/DaysToRetainCleanedMalware**  
 
@@ -1170,7 +1212,9 @@ The default value is 0, which keeps items in quarantine, and does not automatica
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-enablecontrolledfolderaccess"></a>**Defender/EnableControlledFolderAccess**  
 
@@ -1210,7 +1254,7 @@ The default value is 0, which keeps items in quarantine, and does not automatica
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop. The previous name was EnableGuardMyFolders  and changed to EnableControlledFolderAccess.
 
-Added in Windows 10, version 1709. This policy enables setting the state (On/Off/Audit) for the guard my folders feature. The guard my folders feature removes modify and delete permissions from untrusted applications to certain folders such as My Documents. Value type is integer and the range is 0 - 2.  
+Added in Windows 10, version 1709. This policy enables setting the state (On/Off/Audit) for the guard my folders feature. The guard my folders feature removes modify and delete permissions from untrusted applications to certain folders such as My Documents. Value type is integer and the range is 0 - 2.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -1222,7 +1266,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-enablenetworkprotection"></a>**Defender/EnableNetworkProtection**  
 
@@ -1280,7 +1326,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-excludedextensions"></a>**Defender/ExcludedExtensions**  
 
@@ -1325,7 +1373,9 @@ Allows an administrator to specify a list of file type extensions to ignore duri
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-excludedpaths"></a>**Defender/ExcludedPaths**  
 
@@ -1370,7 +1420,9 @@ Allows an administrator to specify a list of directory paths to ignore during a 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-excludedprocesses"></a>**Defender/ExcludedProcesses**  
 
@@ -1421,7 +1473,9 @@ Each file type must be separated by a **|**. For example, "C:\\Example.exe|C:\\E
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-puaprotection"></a>**Defender/PUAProtection**  
 
@@ -1472,7 +1526,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-realtimescandirection"></a>**Defender/RealTimeScanDirection**  
 
@@ -1527,7 +1583,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-scanparameter"></a>**Defender/ScanParameter**  
 
@@ -1577,7 +1635,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-schedulequickscantime"></a>**Defender/ScheduleQuickScanTime**  
 
@@ -1632,7 +1692,9 @@ The default value is 120
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-schedulescanday"></a>**Defender/ScheduleScanDay**  
 
@@ -1693,7 +1755,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-schedulescantime"></a>**Defender/ScheduleScanTime**  
 
@@ -1748,7 +1812,9 @@ The default value is 120.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-signatureupdateinterval"></a>**Defender/SignatureUpdateInterval**  
 
@@ -1799,7 +1865,9 @@ The default value is 8.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-submitsamplesconsent"></a>**Defender/SubmitSamplesConsent**  
 
@@ -1851,7 +1919,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="defender-threatseveritydefaultaction"></a>**Defender/ThreatSeverityDefaultAction**  
 

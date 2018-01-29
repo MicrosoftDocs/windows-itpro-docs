@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/14/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - Education
@@ -30,7 +30,9 @@ ms.date: 12/14/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="education-defaultprintername"></a>**Education/DefaultPrinterName**  
 
@@ -73,7 +75,9 @@ The policy value is expected to be the name (network host name) of an installed 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="education-preventaddingnewprinters"></a>**Education/PreventAddingNewPrinters**  
 
@@ -121,7 +125,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="education-printernames"></a>**Education/PrinterNames**  
 
