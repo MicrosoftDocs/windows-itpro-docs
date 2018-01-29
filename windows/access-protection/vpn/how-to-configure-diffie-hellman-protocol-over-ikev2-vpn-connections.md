@@ -19,7 +19,7 @@ ms.date: 01/29/2018
 In IKEv2 VPN connections, the default configuration for Diffie Hellman group is Group 2, which is not secure for IKE exchanges. 
 To secure VPN connections, update the VPN configuration by running VPN cmdlets with the CustomPolicy parameter.
 
-For VPN servers, configure each tunnel type. That is, if you update the IKEv2 tunnel configuration, all IKE exchanges on IKEv2 tunnel use the secure configuration.
+For VPN server, you need to configure the tunnel type. This makes all IKE exchanges on IKEv2 tunnel use the secure configuration.
 
 For example, on a VPN server that runs Windows Server 2016, run [Set-VpnServerConfiguration](https://docs.microsoft.com/powershell/module/remoteaccess/set-vpnserverconfiguration?view=win10-ps):
 
@@ -33,8 +33,7 @@ On a VPN server that runs Windows Server 2012 R2, run [Set-VpnServerIPsecConfigu
 Set-VpnServerIPsecConfiguration -CustomPolicy
 ```
 
-For VPN clients, configure each VPN connection. 
-
+For VPN client, youy need to configure each VPN connection. 
 For example, on a VPN client that runs Windows 10, run [Set-VpnConnectionIPsecConfiguration (version 4.0)](https://docs.microsoft.com/powershell/module/vpnclient/set-vpnconnectionipsecconfiguration?view=win10-ps):
 
 ```powershell
