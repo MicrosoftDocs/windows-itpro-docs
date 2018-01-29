@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/13/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - Cellular
@@ -36,7 +36,9 @@ ms.date: 12/13/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="cellular-letappsaccesscellulardata"></a>**Cellular/LetAppsAccessCellularData**  
 
@@ -97,7 +99,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="cellular-letappsaccesscellulardata_forceallowtheseapps"></a>**Cellular/LetAppsAccessCellularData_ForceAllowTheseApps**  
 
@@ -138,7 +142,9 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="cellular-letappsaccesscellulardata_forcedenytheseapps"></a>**Cellular/LetAppsAccessCellularData_ForceDenyTheseApps**  
 
@@ -179,7 +185,9 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="cellular-letappsaccesscellulardata_userincontroloftheseapps"></a>**Cellular/LetAppsAccessCellularData_UserInControlOfTheseApps**  
 
@@ -220,7 +228,9 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="cellular-showappcellularaccessui"></a>**Cellular/ShowAppCellularAccessUI**  
 

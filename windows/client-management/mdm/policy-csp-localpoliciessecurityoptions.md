@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/29/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - LocalPoliciesSecurityOptions
@@ -188,7 +188,9 @@ ms.date: 12/29/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-accounts-blockmicrosoftaccounts"></a>**LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts**  
 
@@ -244,7 +246,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-accounts-enableadministratoraccountstatus"></a>**LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus**  
 
@@ -297,7 +301,9 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-accounts-enableguestaccountstatus"></a>**LocalPoliciesSecurityOptions/Accounts_EnableGuestAccountStatus**  
 
@@ -347,7 +353,9 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-accounts-limitlocalaccountuseofblankpasswordstoconsolelogononly"></a>**LocalPoliciesSecurityOptions/Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly**  
 
@@ -405,7 +413,9 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-accounts-renameadministratoraccount"></a>**LocalPoliciesSecurityOptions/Accounts_RenameAdministratorAccount**  
 
@@ -452,7 +462,9 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-accounts-renameguestaccount"></a>**LocalPoliciesSecurityOptions/Accounts_RenameGuestAccount**  
 
@@ -499,7 +511,9 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-devices-allowundockwithouthavingtologon"></a>**LocalPoliciesSecurityOptions/Devices_AllowUndockWithoutHavingToLogon**  
 
@@ -546,17 +560,10 @@ Caution:
 Disabling this policy may tempt users to try and physically remove the laptop from its docking station using methods other than the external hardware eject button. Since this may cause damage to the hardware, this setting, in general, should only be disabled on laptop configurations that are physically securable.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-devices-allowedtoformatandejectremovablemedia"></a>**LocalPoliciesSecurityOptions/Devices_AllowedToFormatAndEjectRemovableMedia**  
 
@@ -603,17 +610,10 @@ This security setting determines who is allowed to format and eject removable NT
 Default: This policy is not defined and only Administrators have this ability.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-devices-preventusersfrominstallingprinterdriverswhenconnectingtosharedprinters"></a>**LocalPoliciesSecurityOptions/Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters**  
 
@@ -662,17 +662,10 @@ Note
 This setting does not affect the ability to add a local printer. This setting does not affect Administrators.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-devices-restrictcdromaccesstolocallyloggedonuseronly"></a>**LocalPoliciesSecurityOptions/Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly**  
 
@@ -718,17 +711,10 @@ If this policy is enabled, it allows only the interactively logged-on user to ac
 Default: This policy is not defined and CD-ROM access is not restricted to the locally logged-on user.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-domainmember-digitallyencryptorsignsecurechanneldataalways"></a>**LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways**  
 
@@ -785,17 +771,10 @@ If this policy is enabled, the policy Domain member: Digitally sign secure chann
 Logon information transmitted over the secure channel is always encrypted regardless of whether encryption of ALL other secure channel traffic is negotiated or not.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-domainmember-digitallyencryptsecurechanneldatawhenpossible"></a>**LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible**  
 
@@ -849,17 +828,10 @@ There is no known reason for disabling this setting. Besides unnecessarily reduc
 Note: Domain controllers are also domain members and establish secure channels with other domain controllers in the same domain as well as domain controllers in trusted domains.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-domainmember-digitallysignsecurechanneldatawhenpossible"></a>**LocalPoliciesSecurityOptions/DomainMember_DigitallySignSecureChannelDataWhenPossible**  
 
@@ -907,17 +879,10 @@ This setting determines whether or not the domain member attempts to negotiate s
 Default: Enabled.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-domainmember-disablemachineaccountpasswordchanges"></a>**LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges**  
 
@@ -966,17 +931,10 @@ This security setting should not be enabled. Computer account passwords are used
 This setting should not be used in an attempt to support dual-boot scenarios that use the same computer account. If you want to dual-boot two installations that are joined to the same domain, give the two installations different computer names.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-domainmember-maximummachineaccountpasswordage"></a>**LocalPoliciesSecurityOptions/DomainMember_MaximumMachineAccountPasswordAge**  
 
@@ -1024,17 +982,10 @@ Important
 This setting applies to Windows 2000 computers, but it is not available through the Security Configuration Manager tools on these computers.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-domainmember-requirestrongsessionkey"></a>**LocalPoliciesSecurityOptions/DomainMember_RequireStrongSessionKey**  
 
@@ -1093,17 +1044,10 @@ In order to take advantage of this policy on member workstations and servers, al
 In order to take advantage of this policy on domain controllers, all domain controllers in the same domain as well as all trusted domains must run Windows 2000 or later.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-interactivelogon-displayuserinformationwhenthesessionislocked"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked**  
 
@@ -1151,7 +1095,9 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-interactivelogon-donotdisplaylastsignedin"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_DoNotDisplayLastSignedIn**  
 
@@ -1204,7 +1150,9 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-interactivelogon-donotdisplayusernameatsignin"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_DoNotDisplayUsernameAtSignIn**  
 
@@ -1258,7 +1206,9 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-interactivelogon-donotrequirectrlaltdel"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_DoNotRequireCTRLALTDEL**  
 
@@ -1313,7 +1263,9 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-interactivelogon-machineinactivitylimit"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_MachineInactivityLimit**  
 
@@ -1363,7 +1315,9 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-interactivelogon-messagetextforusersattemptingtologon"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_MessageTextForUsersAttemptingToLogOn**  
 
@@ -1412,7 +1366,9 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-interactivelogon-messagetitleforusersattemptingtologon"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_MessageTitleForUsersAttemptingToLogOn**  
 
@@ -1459,7 +1415,9 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior**  
 
@@ -1520,17 +1478,10 @@ Default: This policy is not defined, which means that the system treats it as No
 On Windows Vista and above: For this setting to work, the Smart Card Removal Policy service must be started.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-microsoftnetworkclient-digitallysigncommunicationsalways"></a>**LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsAlways**  
 
@@ -1592,17 +1543,10 @@ SMB packet signing can significantly degrade SMB performance, depending on diale
 For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-microsoftnetworkclient-digitallysigncommunicationsifserveragrees"></a>**LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees**  
 
@@ -1661,17 +1605,10 @@ SMB packet signing can significantly degrade SMB performance, depending on diale
 For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-microsoftnetworkclient-sendunencryptedpasswordtothirdpartysmbservers"></a>**LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers**  
 
@@ -1717,17 +1654,10 @@ Sending unencrypted passwords is a security risk.
 Default: Disabled.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-microsoftnetworkserver-amountofidletimerequiredbeforesuspendingsession"></a>**LocalPoliciesSecurityOptions/MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession**  
 
@@ -1775,17 +1705,10 @@ For this policy setting, a value of 0 means to disconnect an idle session as qui
 Default:This policy is not defined, which means that the system treats it as 15 minutes for servers and undefined for workstations.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-microsoftnetworkserver-digitallysigncommunicationsalways"></a>**LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsAlways**  
 
@@ -1856,17 +1779,10 @@ HKLM\System\CurrentControlSet\Services\lanmanserver\parameters\enableW9xsecurity
 For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-microsoftnetworkserver-digitallysigncommunicationsifclientagrees"></a>**LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees**  
 
@@ -1929,17 +1845,10 @@ SMB packet signing can significantly degrade SMB performance, depending on diale
 For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-networkaccess-donotallowanonymousenumerationofsamaccounts"></a>**LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts**  
 
@@ -1995,17 +1904,10 @@ Important
 This policy has no impact on domain controllers.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-networkaccess-donotallowanonymousenumerationofsamaccountsandshares"></a>**LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares**  
 
@@ -2051,17 +1953,10 @@ Windows allows anonymous users to perform certain activities, such as enumeratin
 Default: Disabled.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-networkaccess-leteveryonepermissionsapplytoanonymoususers"></a>**LocalPoliciesSecurityOptions/NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers**  
 
@@ -2109,17 +2004,10 @@ If this policy is enabled, the Everyone SID is added to the token that is create
 Default: Disabled.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-networkaccess-restrictanonymousaccesstonamedpipesandshares"></a>**LocalPoliciesSecurityOptions/NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares**  
 
@@ -2165,17 +2053,10 @@ Network access: Shares that can be accessed anonymously
 Default: Enabled.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-networkaccess-restrictclientsallowedtomakeremotecallstosam"></a>**LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM**  
 
@@ -2221,17 +2102,10 @@ If not selected, the default security descriptor will be used.
 This policy is supported on at least Windows Server 2016.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-networksecurity-allowlocalsystemtousecomputeridentityforntlm"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM**  
 
@@ -2285,17 +2159,10 @@ This policy is supported on at least Windows Vista or Windows Server 2008.
 Note: Windows Vista or Windows Server 2008 do not expose this setting in Group Policy.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-networksecurity-allowpku2uauthenticationrequests"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests**  
 
@@ -2344,7 +2211,9 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-networksecurity-donotstorelanmanagerhashvalueonnextpasswordchange"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange**  
 
@@ -2395,17 +2264,10 @@ Windows 2000 Service Pack 2 (SP2) and above offer compatibility with authenticat
 This setting can affect the ability of computers running Windows 2000 Server, Windows 2000 Professional, Windows XP, and the Windows Server 2003 family to communicate with computers running Windows 95 and Windows 98.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-networksecurity-lanmanagerauthenticationlevel"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel**  
 
@@ -2471,17 +2333,10 @@ Windows Server 2003: Send NTLM response only
 Windows Vista, Windows Server 2008, Windows 7, and Windows Server 2008 R2: Send NTLMv2 response only
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedclients"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients**  
 
@@ -2532,17 +2387,10 @@ Windows XP, Windows Vista, Windows 2000 Server, Windows Server 2003, and Windows
 Windows 7 and Windows Server 2008 R2: Require 128-bit encryption
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedservers"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers**  
 
@@ -2593,17 +2441,10 @@ Windows XP, Windows Vista, Windows 2000 Server, Windows Server 2003, and Windows
 Windows 7 and Windows Server 2008 R2: Require 128-bit encryption
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-recoveryconsole-allowautomaticadministrativelogon"></a>**LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon**  
 
@@ -2644,7 +2485,9 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-shutdown-allowsystemtobeshutdownwithouthavingtologon"></a>**LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn**  
 
@@ -2699,7 +2542,9 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-shutdown-clearvirtualmemorypagefile"></a>**LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile**  
 
@@ -2747,17 +2592,10 @@ When this policy is enabled, it causes the system pagefile to be cleared upon cl
 Default: Disabled.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-systemobjects-requirecaseinsensitivityfornonwindowssubsystems"></a>**LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems**  
 
@@ -2803,17 +2641,10 @@ If this setting is enabled, case insensitivity is enforced for all directory obj
 Default: Enabled.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-useraccountcontrol-allowuiaccessapplicationstopromptforelevation"></a>**LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation**  
 
@@ -2867,7 +2698,9 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-useraccountcontrol-behavioroftheelevationpromptforadministrators"></a>**LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForAdministrators**  
 
@@ -2926,7 +2759,9 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-useraccountcontrol-behavioroftheelevationpromptforstandardusers"></a>**LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers**  
 
@@ -2978,7 +2813,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-useraccountcontrol-detectapplicationinstallationsandpromptforelevation"></a>**LocalPoliciesSecurityOptions/UserAccountControl_DetectApplicationInstallationsAndPromptForElevation**  
 
@@ -3026,17 +2863,10 @@ Enabled: (Default) When an application installation package is detected that req
 Disabled: Application installation packages are not detected and prompted for elevation. Enterprises that are running standard user desktops and use delegated installation technologies such as Group Policy Software Installation or Systems Management Server (SMS) should disable this policy setting. In this case, installer detection is unnecessary.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-useraccountcontrol-onlyelevateexecutablefilesthataresignedandvalidated"></a>**LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated**  
 
@@ -3085,7 +2915,9 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-useraccountcontrol-onlyelevateuiaccessapplicationsthatareinstalledinsecurelocations"></a>**LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations**  
 
@@ -3140,7 +2972,9 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-useraccountcontrol-runalladministratorsinadminapprovalmode"></a>**LocalPoliciesSecurityOptions/UserAccountControl_RunAllAdministratorsInAdminApprovalMode**  
 
@@ -3190,7 +3024,9 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-useraccountcontrol-switchtothesecuredesktopwhenpromptingforelevation"></a>**LocalPoliciesSecurityOptions/UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation**  
 
@@ -3239,7 +3075,9 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-useraccountcontrol-useadminapprovalmode"></a>**LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode**  
 
@@ -3287,17 +3125,10 @@ The options are:
 • Disabled: (Default) The built-in Administrator account runs all applications with full administrative privilege.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="localpoliciessecurityoptions-useraccountcontrol-virtualizefileandregistrywritefailurestoperuserlocations"></a>**LocalPoliciesSecurityOptions/UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations**  
 

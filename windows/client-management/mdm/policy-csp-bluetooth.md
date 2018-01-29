@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/14/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - Bluetooth
@@ -36,7 +36,9 @@ ms.date: 12/14/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="bluetooth-allowadvertising"></a>**Bluetooth/AllowAdvertising**  
 
@@ -88,7 +90,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="bluetooth-allowdiscoverablemode"></a>**Bluetooth/AllowDiscoverableMode**  
 
@@ -140,7 +144,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="bluetooth-allowprepairing"></a>**Bluetooth/AllowPrepairing**  
 
@@ -188,7 +194,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="bluetooth-localdevicename"></a>**Bluetooth/LocalDeviceName**  
 
@@ -233,7 +241,9 @@ If this policy is not set or it is deleted, the default local radio name is used
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="bluetooth-servicesallowedlist"></a>**Bluetooth/ServicesAllowedList**  
 

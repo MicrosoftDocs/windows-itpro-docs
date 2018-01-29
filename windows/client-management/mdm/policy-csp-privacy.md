@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/14/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - Privacy
@@ -252,7 +252,9 @@ ms.date: 12/14/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-allowautoacceptpairingandprivacyconsentprompts"></a>**Privacy/AllowAutoAcceptPairingAndPrivacyConsentPrompts**  
 
@@ -306,7 +308,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-allowinputpersonalization"></a>**Privacy/AllowInputPersonalization**  
 
@@ -346,7 +350,6 @@ The following list shows the supported values:
 Updated in Windows 10, version 1709. Allows the usage of cloud based speech services for Cortana, dictation, or Store applications. Setting this policy to 1, lets Microsoft use the user's voice data to improve cloud speech services for all users.
 
 Most restricted value is 0.
- 
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -355,10 +358,11 @@ The following list shows the supported values:
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-disableadvertisingid"></a>**Privacy/DisableAdvertisingId**  
 
@@ -409,7 +413,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-enableactivityfeed"></a>**Privacy/EnableActivityFeed**  
 
@@ -457,7 +463,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessaccountinfo"></a>**Privacy/LetAppsAccessAccountInfo**  
 
@@ -506,7 +514,9 @@ Most restricted value is 2.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessaccountinfo-forceallowtheseapps"></a>**Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps**  
 
@@ -547,7 +557,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessaccountinfo-forcedenytheseapps"></a>**Privacy/LetAppsAccessAccountInfo_ForceDenyTheseApps**  
 
@@ -588,7 +600,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessaccountinfo-userincontroloftheseapps"></a>**Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps**  
 
@@ -629,7 +643,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscalendar"></a>**Privacy/LetAppsAccessCalendar**  
 
@@ -678,7 +694,9 @@ Most restricted value is 2.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscalendar-forceallowtheseapps"></a>**Privacy/LetAppsAccessCalendar_ForceAllowTheseApps**  
 
@@ -719,7 +737,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscalendar-forcedenytheseapps"></a>**Privacy/LetAppsAccessCalendar_ForceDenyTheseApps**  
 
@@ -760,7 +780,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscalendar-userincontroloftheseapps"></a>**Privacy/LetAppsAccessCalendar_UserInControlOfTheseApps**  
 
@@ -801,7 +823,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscallhistory"></a>**Privacy/LetAppsAccessCallHistory**  
 
@@ -850,7 +874,9 @@ Most restricted value is 2.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscallhistory-forceallowtheseapps"></a>**Privacy/LetAppsAccessCallHistory_ForceAllowTheseApps**  
 
@@ -891,7 +917,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscallhistory-forcedenytheseapps"></a>**Privacy/LetAppsAccessCallHistory_ForceDenyTheseApps**  
 
@@ -932,7 +960,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscallhistory-userincontroloftheseapps"></a>**Privacy/LetAppsAccessCallHistory_UserInControlOfTheseApps**  
 
@@ -973,7 +1003,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscamera"></a>**Privacy/LetAppsAccessCamera**  
 
@@ -1022,7 +1054,9 @@ Most restricted value is 2.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscamera-forceallowtheseapps"></a>**Privacy/LetAppsAccessCamera_ForceAllowTheseApps**  
 
@@ -1063,7 +1097,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscamera-forcedenytheseapps"></a>**Privacy/LetAppsAccessCamera_ForceDenyTheseApps**  
 
@@ -1104,7 +1140,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscamera-userincontroloftheseapps"></a>**Privacy/LetAppsAccessCamera_UserInControlOfTheseApps**  
 
@@ -1145,7 +1183,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscontacts"></a>**Privacy/LetAppsAccessContacts**  
 
@@ -1194,7 +1234,9 @@ Most restricted value is 2.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscontacts-forceallowtheseapps"></a>**Privacy/LetAppsAccessContacts_ForceAllowTheseApps**  
 
@@ -1235,7 +1277,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscontacts-forcedenytheseapps"></a>**Privacy/LetAppsAccessContacts_ForceDenyTheseApps**  
 
@@ -1276,7 +1320,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscontacts-userincontroloftheseapps"></a>**Privacy/LetAppsAccessContacts_UserInControlOfTheseApps**  
 
@@ -1317,7 +1363,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessemail"></a>**Privacy/LetAppsAccessEmail**  
 
@@ -1366,7 +1414,9 @@ Most restricted value is 2.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessemail-forceallowtheseapps"></a>**Privacy/LetAppsAccessEmail_ForceAllowTheseApps**  
 
@@ -1407,7 +1457,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessemail-forcedenytheseapps"></a>**Privacy/LetAppsAccessEmail_ForceDenyTheseApps**  
 
@@ -1448,7 +1500,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessemail-userincontroloftheseapps"></a>**Privacy/LetAppsAccessEmail_UserInControlOfTheseApps**  
 
@@ -1489,7 +1543,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesslocation"></a>**Privacy/LetAppsAccessLocation**  
 
@@ -1538,7 +1594,9 @@ Most restricted value is 2.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesslocation-forceallowtheseapps"></a>**Privacy/LetAppsAccessLocation_ForceAllowTheseApps**  
 
@@ -1579,7 +1637,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesslocation-forcedenytheseapps"></a>**Privacy/LetAppsAccessLocation_ForceDenyTheseApps**  
 
@@ -1620,7 +1680,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesslocation-userincontroloftheseapps"></a>**Privacy/LetAppsAccessLocation_UserInControlOfTheseApps**  
 
@@ -1661,7 +1723,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmessaging"></a>**Privacy/LetAppsAccessMessaging**  
 
@@ -1710,7 +1774,9 @@ Most restricted value is 2.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmessaging-forceallowtheseapps"></a>**Privacy/LetAppsAccessMessaging_ForceAllowTheseApps**  
 
@@ -1751,7 +1817,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmessaging-forcedenytheseapps"></a>**Privacy/LetAppsAccessMessaging_ForceDenyTheseApps**  
 
@@ -1792,7 +1860,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmessaging-userincontroloftheseapps"></a>**Privacy/LetAppsAccessMessaging_UserInControlOfTheseApps**  
 
@@ -1833,7 +1903,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmicrophone"></a>**Privacy/LetAppsAccessMicrophone**  
 
@@ -1882,7 +1954,9 @@ Most restricted value is 2.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmicrophone-forceallowtheseapps"></a>**Privacy/LetAppsAccessMicrophone_ForceAllowTheseApps**  
 
@@ -1923,7 +1997,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmicrophone-forcedenytheseapps"></a>**Privacy/LetAppsAccessMicrophone_ForceDenyTheseApps**  
 
@@ -1964,7 +2040,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmicrophone-userincontroloftheseapps"></a>**Privacy/LetAppsAccessMicrophone_UserInControlOfTheseApps**  
 
@@ -2005,7 +2083,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmotion"></a>**Privacy/LetAppsAccessMotion**  
 
@@ -2054,7 +2134,9 @@ Most restricted value is 2.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmotion-forceallowtheseapps"></a>**Privacy/LetAppsAccessMotion_ForceAllowTheseApps**  
 
@@ -2095,7 +2177,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmotion-forcedenytheseapps"></a>**Privacy/LetAppsAccessMotion_ForceDenyTheseApps**  
 
@@ -2136,7 +2220,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmotion-userincontroloftheseapps"></a>**Privacy/LetAppsAccessMotion_UserInControlOfTheseApps**  
 
@@ -2177,7 +2263,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessnotifications"></a>**Privacy/LetAppsAccessNotifications**  
 
@@ -2226,7 +2314,9 @@ Most restricted value is 2.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessnotifications-forceallowtheseapps"></a>**Privacy/LetAppsAccessNotifications_ForceAllowTheseApps**  
 
@@ -2267,7 +2357,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessnotifications-forcedenytheseapps"></a>**Privacy/LetAppsAccessNotifications_ForceDenyTheseApps**  
 
@@ -2308,7 +2400,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessnotifications-userincontroloftheseapps"></a>**Privacy/LetAppsAccessNotifications_UserInControlOfTheseApps**  
 
@@ -2349,7 +2443,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessphone"></a>**Privacy/LetAppsAccessPhone**  
 
@@ -2398,7 +2494,9 @@ Most restricted value is 2.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessphone-forceallowtheseapps"></a>**Privacy/LetAppsAccessPhone_ForceAllowTheseApps**  
 
@@ -2439,7 +2537,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessphone-forcedenytheseapps"></a>**Privacy/LetAppsAccessPhone_ForceDenyTheseApps**  
 
@@ -2480,7 +2580,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessphone-userincontroloftheseapps"></a>**Privacy/LetAppsAccessPhone_UserInControlOfTheseApps**  
 
@@ -2521,7 +2623,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessradios"></a>**Privacy/LetAppsAccessRadios**  
 
@@ -2570,7 +2674,9 @@ Most restricted value is 2.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessradios-forceallowtheseapps"></a>**Privacy/LetAppsAccessRadios_ForceAllowTheseApps**  
 
@@ -2611,7 +2717,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessradios-forcedenytheseapps"></a>**Privacy/LetAppsAccessRadios_ForceDenyTheseApps**  
 
@@ -2652,7 +2760,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessradios-userincontroloftheseapps"></a>**Privacy/LetAppsAccessRadios_UserInControlOfTheseApps**  
 
@@ -2693,7 +2803,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesstasks"></a>**Privacy/LetAppsAccessTasks**  
 
@@ -2734,7 +2846,9 @@ Added in Windows 10, version 1703. Specifies whether Windows apps can access tas
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesstasks-forceallowtheseapps"></a>**Privacy/LetAppsAccessTasks_ForceAllowTheseApps**  
 
@@ -2775,7 +2889,9 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family N
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesstasks-forcedenytheseapps"></a>**Privacy/LetAppsAccessTasks_ForceDenyTheseApps**  
 
@@ -2816,7 +2932,9 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family N
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesstasks-userincontroloftheseapps"></a>**Privacy/LetAppsAccessTasks_UserInControlOfTheseApps**  
 
@@ -2857,7 +2975,9 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family N
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesstrusteddevices"></a>**Privacy/LetAppsAccessTrustedDevices**  
 
@@ -2906,7 +3026,9 @@ Most restricted value is 2.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesstrusteddevices-forceallowtheseapps"></a>**Privacy/LetAppsAccessTrustedDevices_ForceAllowTheseApps**  
 
@@ -2947,7 +3069,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesstrusteddevices-forcedenytheseapps"></a>**Privacy/LetAppsAccessTrustedDevices_ForceDenyTheseApps**  
 
@@ -2988,7 +3112,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesstrusteddevices-userincontroloftheseapps"></a>**Privacy/LetAppsAccessTrustedDevices_UserInControlOfTheseApps**  
 
@@ -3029,7 +3155,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsgetdiagnosticinfo"></a>**Privacy/LetAppsGetDiagnosticInfo**  
 
@@ -3078,7 +3206,9 @@ Most restricted value is 2.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsgetdiagnosticinfo-forceallowtheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps**  
 
@@ -3119,7 +3249,9 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsgetdiagnosticinfo-forcedenytheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps**  
 
@@ -3160,7 +3292,9 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsgetdiagnosticinfo-userincontroloftheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps**  
 
@@ -3201,7 +3335,9 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsruninbackground"></a>**Privacy/LetAppsRunInBackground**  
 
@@ -3252,7 +3388,9 @@ Most restricted value is 2.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsruninbackground-forceallowtheseapps"></a>**Privacy/LetAppsRunInBackground_ForceAllowTheseApps**  
 
@@ -3293,7 +3431,9 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsruninbackground-forcedenytheseapps"></a>**Privacy/LetAppsRunInBackground_ForceDenyTheseApps**  
 
@@ -3334,7 +3474,9 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappsruninbackground-userincontroloftheseapps"></a>**Privacy/LetAppsRunInBackground_UserInControlOfTheseApps**  
 
@@ -3375,7 +3517,9 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappssyncwithdevices"></a>**Privacy/LetAppsSyncWithDevices**  
 
@@ -3424,7 +3568,9 @@ Most restricted value is 2.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappssyncwithdevices-forceallowtheseapps"></a>**Privacy/LetAppsSyncWithDevices_ForceAllowTheseApps**  
 
@@ -3465,7 +3611,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappssyncwithdevices-forcedenytheseapps"></a>**Privacy/LetAppsSyncWithDevices_ForceDenyTheseApps**  
 
@@ -3506,7 +3654,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-letappssyncwithdevices-userincontroloftheseapps"></a>**Privacy/LetAppsSyncWithDevices_UserInControlOfTheseApps**  
 
@@ -3547,7 +3697,9 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="privacy-publishuseractivities"></a>**Privacy/PublishUserActivities**  
 

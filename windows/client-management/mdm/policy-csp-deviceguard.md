@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/14/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - DeviceGuard
@@ -30,7 +30,9 @@ ms.date: 12/14/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="deviceguard-enablevirtualizationbasedsecurity"></a>**DeviceGuard/EnableVirtualizationBasedSecurity**  
 
@@ -67,7 +69,6 @@ ms.date: 12/14/2017
 
 <!--EndScope-->
 <!--StartDescription-->
- 
 Added in Windows 10, version 1709. Turns on virtualization based security(VBS) at the next reboot. virtualization based security uses the Windows Hypervisor to provide support for security services. Value type is integer.
 
 <!--EndDescription-->
@@ -79,7 +80,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="deviceguard-lsacfgflags"></a>**DeviceGuard/LsaCfgFlags**  
 
@@ -116,7 +119,6 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
- 
 Added in Windows 10, version 1709. This setting lets users turn on Credential Guard with virtualization-based security to help protect credentials at next reboot. Value type is integer.
 
 <!--EndDescription-->
@@ -129,7 +131,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="deviceguard-requireplatformsecurityfeatures"></a>**DeviceGuard/RequirePlatformSecurityFeatures**  
 
@@ -167,8 +171,6 @@ The following list shows the supported values:
 <!--EndScope-->
 <!--StartDescription-->
 Added in Windows 10, version 1709. Specifies the platform security level at the next reboot. Value type is integer.
- 
-
 
 <!--EndDescription-->
 <!--SupportedValues-->

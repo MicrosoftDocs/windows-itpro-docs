@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - RemoteShell
@@ -42,7 +42,9 @@ ms.date: 11/01/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="remoteshell-allowremoteshellaccess"></a>**RemoteShell/AllowRemoteShellAccess**  
 
@@ -79,6 +81,7 @@ ms.date: 11/01/2017
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -96,7 +99,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="remoteshell-maxconcurrentusers"></a>**RemoteShell/MaxConcurrentUsers**  
 
@@ -133,6 +138,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -150,7 +156,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="remoteshell-specifyidletimeout"></a>**RemoteShell/SpecifyIdleTimeout**  
 
@@ -187,6 +195,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -204,7 +213,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="remoteshell-specifymaxmemory"></a>**RemoteShell/SpecifyMaxMemory**  
 
@@ -241,6 +252,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -258,7 +270,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="remoteshell-specifymaxprocesses"></a>**RemoteShell/SpecifyMaxProcesses**  
 
@@ -295,6 +309,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -312,7 +327,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="remoteshell-specifymaxremoteshells"></a>**RemoteShell/SpecifyMaxRemoteShells**  
 
@@ -349,6 +366,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -366,7 +384,9 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="remoteshell-specifyshelltimeout"></a>**RemoteShell/SpecifyShellTimeout**  
 
@@ -403,6 +423,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).

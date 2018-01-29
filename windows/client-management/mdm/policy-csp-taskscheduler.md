@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/03/2018
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - TaskScheduler
@@ -26,7 +26,9 @@ ms.date: 01/03/2018
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="taskscheduler-enablexboxgamesavetask"></a>**TaskScheduler/EnableXboxGameSaveTask**  
 
@@ -66,15 +68,6 @@ ms.date: 01/03/2018
 Added in Windows 10, next major update. This setting determines whether the specific task is enabled (1) or disabled (0). Default: Enabled.
 
 <!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/14/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - WirelessDisplay
@@ -45,7 +45,9 @@ ms.date: 12/14/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="wirelessdisplay-allowmdnsadvertisement"></a>**WirelessDisplay/AllowMdnsAdvertisement**  
 
@@ -82,7 +84,7 @@ ms.date: 12/14/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-Added in Windows 10, version 1709. This policy setting allows you to turn off the Wireless Display multicast DNS service advertisement from a Wireless Display receiver. If the network administrator is concerned about network congestion, they may set this policy to 0, disabling mDNS advertisement.  
+Added in Windows 10, version 1709. This policy setting allows you to turn off the Wireless Display multicast DNS service advertisement from a Wireless Display receiver. If the network administrator is concerned about network congestion, they may set this policy to 0, disabling mDNS advertisement.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -93,7 +95,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="wirelessdisplay-allowmdnsdiscovery"></a>**WirelessDisplay/AllowMdnsDiscovery**  
 
@@ -130,7 +134,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-Added in Windows 10, version 1709. This policy setting allows you to turn off discovering the display service advertised over multicast DNS by a Wireless Display receiver. If the network administrator is concerned about network congestion, they may set this policy to 0, disabling mDNS discovery.  
+Added in Windows 10, version 1709. This policy setting allows you to turn off discovering the display service advertised over multicast DNS by a Wireless Display receiver. If the network administrator is concerned about network congestion, they may set this policy to 0, disabling mDNS discovery.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -141,7 +145,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="wirelessdisplay-allowprojectionfrompc"></a>**WirelessDisplay/AllowProjectionFromPC**  
 
@@ -178,7 +184,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-Added in Windows 10, version 1703. This policy allows you to turn off projection from a PC.  
+Added in Windows 10, version 1703. This policy allows you to turn off projection from a PC.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -189,7 +195,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="wirelessdisplay-allowprojectionfrompcoverinfrastructure"></a>**WirelessDisplay/AllowProjectionFromPCOverInfrastructure**  
 
@@ -226,7 +234,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-Added in Windows 10, version 1703. This policy allows you to turn off projection from a PC over infrastructure.  
+Added in Windows 10, version 1703. This policy allows you to turn off projection from a PC over infrastructure.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -237,7 +245,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="wirelessdisplay-allowprojectiontopc"></a>**WirelessDisplay/AllowProjectionToPC**  
 
@@ -289,7 +299,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="wirelessdisplay-allowprojectiontopcoverinfrastructure"></a>**WirelessDisplay/AllowProjectionToPCOverInfrastructure**  
 
@@ -326,7 +338,7 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-Added in Windows 10, version 1703. This policy setting allows you to turn off projection to a PC over infrastructure.  
+Added in Windows 10, version 1703. This policy setting allows you to turn off projection to a PC over infrastructure.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -337,7 +349,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="wirelessdisplay-allowuserinputfromwirelessdisplayreceiver"></a>**WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver**  
 
@@ -362,7 +376,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="wirelessdisplay-requirepinforpairing"></a>**WirelessDisplay/RequirePinForPairing**  
 

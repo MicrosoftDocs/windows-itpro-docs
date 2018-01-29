@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/08/2018
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - Search
@@ -65,7 +65,9 @@ ms.date: 01/08/2018
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="search-allowcloudsearch"></a>**Search/AllowCloudSearch**  
 
@@ -111,7 +113,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="search-allowcortanainaad"></a>**Search/AllowCortanaInAAD**  
 
@@ -157,16 +161,11 @@ The following list shows the supported values:
 -   0 (default) - Not allowed. The Cortana consent page will not appear in AAD OOBE during setup.
 -   1 - Allowed. The Cortana consent page will appear in Azure AAD OOBE during setup.
 
-
 <!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="search-allowindexingencryptedstoresoritems"></a>**Search/AllowIndexingEncryptedStoresOrItems**  
 
@@ -220,7 +219,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="search-allowsearchtouselocation"></a>**Search/AllowSearchToUseLocation**  
 
@@ -270,7 +271,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="search-allowstoringimagesfromvisionsearch"></a>**Search/AllowStoringImagesFromVisionSearch**  
 
@@ -288,7 +291,9 @@ This policy has been deprecated.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="search-allowusingdiacritics"></a>**Search/AllowUsingDiacritics**  
 
@@ -336,7 +341,9 @@ Most restricted value is 0.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="search-allowwindowsindexer"></a>**Search/AllowWindowsIndexer**  
 
@@ -377,7 +384,9 @@ Allow Windows indexer. Value type is integer.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="search-alwaysuseautolangdetection"></a>**Search/AlwaysUseAutoLangDetection**  
 
@@ -425,7 +434,9 @@ Most restricted value is 0.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="search-disablebackoff"></a>**Search/DisableBackoff**  
 
@@ -471,7 +482,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="search-disableremovabledriveindexing"></a>**Search/DisableRemovableDriveIndexing**  
 
@@ -521,7 +534,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="search-donotusewebresults"></a>**Search/DoNotUseWebResults**  
 
@@ -573,14 +588,10 @@ The following list shows the supported values:
 - 1 (default) - Allowed. Queries will be performed on the web and web results will be displayed when a user performs a query in Search.
 
 <!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="search-preventindexinglowdiskspacemb"></a>**Search/PreventIndexingLowDiskSpaceMB**  
 
@@ -630,7 +641,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="search-preventremotequeries"></a>**Search/PreventRemoteQueries**  
 
@@ -676,7 +689,9 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="search-safesearchpermissions"></a>**Search/SafeSearchPermissions**  
 
