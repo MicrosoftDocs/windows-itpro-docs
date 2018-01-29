@@ -25,6 +25,7 @@ New or changed topic | Description
 | [Diagnostic Data Viewer Overview](diagnostic-data-viewer-overview.md) | New topic |
 [Configure Windows 10 taskbar](configure-windows-10-taskbar.md) | Added section for removing default apps from the taskbar.
 [Manage Windows 10 connection endpoints](manage-windows-endpoints-version-1709.md) | New topic for Windows 10, version 1709 that explains the purpose for connections to Microsoft services and how to manage them.  
+[Configure Windows Spotlight on the lock screen](windows-spotlight.md) | Added section for resolution of custom lock screen images.
 
 ## November 2017
 
