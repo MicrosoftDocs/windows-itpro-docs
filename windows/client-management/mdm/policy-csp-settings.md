@@ -728,6 +728,8 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1703.  Allows IT Admins to configure the default setting for showing additional calendars (besides the default calendar for the locale) in the taskbar clock and calendar flyout.  In this version of Windows 10, supported additional calendars are: Simplified or Traditional Chinese lunar calendar. Turning on one of these calendars will display Chinese lunar dates below the default calendar for the locale.  Select "Don't show additional calendars" to prevent showing other calendars besides the default calendar for the locale.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – User will be allowed to configure the setting.
@@ -735,7 +737,7 @@ The following list shows the supported values:
 -   2  - Simplified Chinese (Lunar).
 -   3  - Traditional Chinese (Lunar).
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -802,13 +804,15 @@ Example 2, specifies that the wifi page should not be shown:
 
 hide:wifi
 
+<!--/Description-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Open System Settings and verfiy that the About page is visible and accessible.
 2.   Configure the policy with the following string: "hide:about".
 3.   Open System Settings again and verify that the About page is no longer accessible.
 
-<!--/Description-->
+<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 

@@ -663,15 +663,18 @@ The following list shows the supported values:
 
 Forces the start screen size.
 
+
+If there is policy configuration conflict, the latest configuration request is applied to the device.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Do not force size of Start.
 -   1 – Force non-fullscreen size of Start.
 -   2 - Force a fullscreen size of Start.
 
-If there is policy configuration conflict, the latest configuration request is applied to the device.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -720,12 +723,6 @@ Allows IT Admins to configure Start by collapsing or removing the all apps list.
 > [!Note]
 > There were issues reported with the previous release of this policy and a fix was added in Windows 10, version 1709. 
 
-The following list shows the supported values:
-
--   0 (default) – None.
--   1 – Hide all apps list.
--   2 - Hide all apps list, and Disable "Show app list in Start menu" in Settings app.
--   3 - Hide all apps list, remove all apps button, and Disable "Show app list in Start menu" in Settings app.
 
 To validate on Desktop, do the following:
 
@@ -735,6 +732,15 @@ To validate on Desktop, do the following:
 -   2c - If set to '3': Verify that there is no way of opening the all apps list from Start, and that the Settings toggle is grayed out.
 
 <!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – None.
+-   1 – Hide all apps list.
+-   2 - Hide all apps list, and Disable "Show app list in Start menu" in Settings app.
+-   3 - Hide all apps list, remove all apps button, and Disable "Show app list in Start menu" in Settings app.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -777,11 +783,6 @@ To validate on Desktop, do the following:
 <!--Description-->
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Change account settings" from appearing in the user tile.
 
-To validate on Desktop, do the following:
-
-1.   Enable policy.
-2.   Open Start, click on the user tile, and verify that "Change account settings" is not available.
-
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -790,6 +791,13 @@ The following list shows the supported values:
 -   1 - True (hide).
 
 <!--/SupportedValues-->
+<!--Validation-->
+To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Open Start, click on the user tile, and verify that "Change account settings" is not available.
+
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -835,6 +843,15 @@ The following list shows the supported values:
 
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding most used apps.
 
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Enable "Show most used apps" in the Settings app.
@@ -844,14 +861,7 @@ To validate on Desktop, do the following:
 5.   Check that  "Show most used apps" Settings toggle is grayed out.
 6.   Check that most used apps do not appear in Start.
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
-<!--/SupportedValues-->
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -894,10 +904,6 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Hibernate" from appearing in the Power button.
 
-To validate on Laptop, do the following:
-
-1.   Enable policy.
-2.   Open Start, click on the Power button, and verify "Hibernate" is not available.
 
 > [!NOTE]
 > This policy can only be verified on laptops as "Hibernate" does not appear on regular PC's.
@@ -910,6 +916,13 @@ The following list shows the supported values:
 -   1 - True (hide).
 
 <!--/SupportedValues-->
+<!--Validation-->
+To validate on Laptop, do the following:
+
+1.   Enable policy.
+2.   Open Start, click on the Power button, and verify "Hibernate" is not available.
+
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -952,11 +965,6 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Lock" from appearing in the user tile.
 
-To validate on Desktop, do the following:
-
-1.   Enable policy.
-2.   Open Start, click on the user tile, and verify "Lock" is not available.
-
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -965,6 +973,13 @@ The following list shows the supported values:
 -   1 - True (hide).
 
 <!--/SupportedValues-->
+<!--Validation-->
+To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Open Start, click on the user tile, and verify "Lock" is not available.
+
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1055,11 +1070,6 @@ Value type is integer.
 
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding the Power button from appearing.
 
-To validate on Desktop, do the following:
-
-1.   Enable policy.
-2.   Open Start, and verify the power button is not available.
-
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -1068,6 +1078,13 @@ The following list shows the supported values:
 -   1 - True (hide).
 
 <!--/SupportedValues-->
+<!--Validation-->
+To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Open Start, and verify the power button is not available.
+
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1113,6 +1130,15 @@ The following list shows the supported values:
 
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding recently opened items in the jumplists from appearing.
 
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Enable "Show recently opened items in Jump Lists on Start of the taskbar" in Settings.
@@ -1125,14 +1151,7 @@ To validate on Desktop, do the following:
 8.   Repeat Step 2.
 9.   Right Click pinned photos app and verify that there is no jumplist of recent items.
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
-<!--/SupportedValues-->
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1178,6 +1197,15 @@ The following list shows the supported values:
 
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding recently added apps.
 
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Enable "Show recently added apps" in the Settings app.
@@ -1187,14 +1215,7 @@ To validate on Desktop, do the following:
 5.   Check that "Show recently added apps" Settings toggle is grayed out.
 6.   Check that recently added apps do not appear in Start.
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
-<!--/SupportedValues-->
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1237,11 +1258,6 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Restart" and "Update and restart" from appearing in the Power button.
 
-To validate on Desktop, do the following:
-
-1.   Enable policy.
-2.   Open Start, click on the Power button, and verify "Restart" and "Update and restart" are not available.
-
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -1250,6 +1266,13 @@ The following list shows the supported values:
 -   1 - True (hide).
 
 <!--/SupportedValues-->
+<!--Validation-->
+To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Open Start, click on the Power button, and verify "Restart" and "Update and restart" are not available.
+
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1292,11 +1315,6 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Shut down" and "Update and shut down" from appearing in the Power button.
 
-To validate on Desktop, do the following:
-
-1.   Enable policy.
-2.   Open Start, click on the Power button, and verify "Shut down" and "Update and shut down" are not available.
-
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -1305,6 +1323,13 @@ The following list shows the supported values:
 -   1 - True (hide).
 
 <!--/SupportedValues-->
+<!--Validation-->
+To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Open Start, click on the Power button, and verify "Shut down" and "Update and shut down" are not available.
+
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1347,11 +1372,6 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Sign out" from appearing in the user tile.
 
-To validate on Desktop, do the following:
-
-1.   Enable policy.
-2.   Open Start, click on the user tile, and verify "Sign out" is not available.
-
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -1360,6 +1380,13 @@ The following list shows the supported values:
 -   1 - True (hide).
 
 <!--/SupportedValues-->
+<!--Validation-->
+To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Open Start, click on the user tile, and verify "Sign out" is not available.
+
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1402,11 +1429,6 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Sleep" from appearing in the Power button.
 
-To validate on Desktop, do the following:
-
-1.   Enable policy.
-2.   Open Start, click on the Power button, and verify that "Sleep" is not available.
-
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -1415,6 +1437,13 @@ The following list shows the supported values:
 -   1 - True (hide).
 
 <!--/SupportedValues-->
+<!--Validation-->
+To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Open Start, click on the Power button, and verify that "Sleep" is not available.
+
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1457,11 +1486,6 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Switch account" from appearing in the user tile.
 
-To validate on Desktop, do the following:
-
-1.   Enable policy.
-2.   Open Start, click on the user tile, and verify that "Switch account" is not available.
-
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -1470,6 +1494,13 @@ The following list shows the supported values:
 -   1 - True (hide).
 
 <!--/SupportedValues-->
+<!--Validation-->
+To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Open Start, click on the user tile, and verify that "Switch account" is not available.
+
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1515,12 +1546,6 @@ The following list shows the supported values:
 
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding the user tile.
 
-To validate on Desktop, do the following:
-
-1.   Enable policy.
-2.   Log off.
-3.   Log in, and verify that the user tile is gone from Start.
-
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -1529,6 +1554,14 @@ The following list shows the supported values:
 -   1 - True (hide).
 
 <!--/SupportedValues-->
+<!--Validation-->
+To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Log off.
+3.   Log in, and verify that the user tile is gone from Start.
+
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1579,6 +1612,8 @@ Added in Windows 10, version 1703. This policy imports Edge assets (e.g. .png/.
 
 The value set for this policy is an XML string containing Edge assets.  For an example XML string, see [Add image for secondary Microsoft Edge tiles](https://docs.microsoft.com/en-us/windows/configuration/start-secondary-tiles).
 
+<!--/Description-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Set policy with an XML for Edge assets.
@@ -1586,7 +1621,7 @@ To validate on Desktop, do the following:
 3.   Sign out/in.
 4.   Verify that all Edge assets defined in XML show up in %LOCALAPPDATA%\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState path.
 
-<!--/Description-->
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1629,14 +1664,6 @@ To validate on Desktop, do the following:
 <!--Description-->
 Added in Windows 10, version 1703. Allows IT Admins to configure the taskbar by disabling pinning and unpinning apps on the taskbar.
 
-To validate on Desktop, do the following:
-
-1.   Enable policy.
-2.   Right click on a program pinned to taskbar.
-3.   Verify that "Unpin from taskbar" menu does not show.
-4.   Open Start and right click on one of the app list icons.
-5.   Verify that More->Pin to taskbar menu does not show.
-
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -1645,6 +1672,16 @@ The following list shows the supported values:
 -   1 - True (pinning disabled).
 
 <!--/SupportedValues-->
+<!--Validation-->
+To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Right click on a program pinned to taskbar.
+3.   Verify that "Unpin from taskbar" menu does not show.
+4.   Open Start and right click on one of the app list icons.
+5.   Verify that More->Pin to taskbar menu does not show.
+
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>

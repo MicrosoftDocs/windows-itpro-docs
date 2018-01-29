@@ -148,14 +148,17 @@ The following list shows the supported values:
 <!--Description-->
 Specifies whether automatic update of apps from Microsoft Store are allowed.
 
+
+Most restricted value is 0.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-Most restricted value is 0.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -525,14 +528,17 @@ The following list shows the supported values:
 <!--Description-->
 Allows disabling of the retail catalog and only enables the Private store.
 
+
+Most restricted value is 1.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Allow both public and Private store.
 -   1 – Only Private store is enabled.
 
-Most restricted value is 1.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>

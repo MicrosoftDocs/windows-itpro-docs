@@ -171,12 +171,14 @@ ms.date: 01/29/2018
 
 Allows or disallows scanning of archives.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -223,12 +225,14 @@ The following list shows the supported values:
  
 Allows or disallows Windows Defender Behavior Monitoring functionality.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -275,12 +279,14 @@ The following list shows the supported values:
 
 To best protect your PC, Windows Defender will send information to Microsoft about any problems it finds. Microsoft will analyze that information, learn more about problems affecting you and other customers, and offer improved solutions.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -327,12 +333,14 @@ The following list shows the supported values:
 
 Allows or disallows scanning of email.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Not allowed.
 -   1 – Allowed.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -379,12 +387,14 @@ The following list shows the supported values:
 
 Allows or disallows a full scan of mapped network drives.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Not allowed.
 -   1 – Allowed.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -431,12 +441,14 @@ The following list shows the supported values:
 
 Allows or disallows a full scan of removable drives.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -483,12 +495,14 @@ The following list shows the supported values:
  
 Allows or disallows Windows Defender IOAVP Protection functionality.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -535,12 +549,14 @@ The following list shows the supported values:
 
 Allows or disallows Windows Defender Intrusion Prevention functionality.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -587,12 +603,14 @@ The following list shows the supported values:
 
 Allows or disallows Windows Defender On Access Protection functionality.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -639,12 +657,14 @@ The following list shows the supported values:
 
 Allows or disallows Windows Defender Realtime Monitoring functionality.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -691,12 +711,14 @@ The following list shows the supported values:
  
 Allows or disallows a scanning of network files.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -743,12 +765,14 @@ The following list shows the supported values:
 
 Allows or disallows Windows Defender Script Scanning functionality.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -795,12 +819,14 @@ The following list shows the supported values:
 
 Allows or disallows user access to the Windows Defender UI. If disallowed, all Windows Defender notifications will also be suppressed.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -947,11 +973,14 @@ Value type is string.
  
 Represents the average CPU load factor for the Windows Defender scan (in percent).
 
-Valid values: 0–100
 
 The default value is 50.
 
 <!--/Description-->
+<!--SupportedValues-->
+Valid values: 0–100
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1206,11 +1235,14 @@ Added in Windows 10, version 1709. This policy settings allows adding user-speci
  
 Time period (in days) that quarantine items will be stored on the system.
 
-Valid values: 0–90
 
 The default value is 0, which keeps items in quarantine, and does not automatically remove them.
 
 <!--/Description-->
+<!--SupportedValues-->
+Valid values: 0–90
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1518,13 +1550,15 @@ Each file type must be separated by a **|**. For example, "C:\\Example.exe|C:\\E
 
 Added in Windows 10, version 1607. Specifies the level of detection for potentially unwanted applications (PUAs). Windows Defender alerts you when potentially unwanted software is being downloaded or attempts to install itself on your computer.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – PUA Protection off. Windows Defender will not protect against potentially unwanted applications.
 -   1 – PUA Protection on. Detected items are blocked. They will show in history along with other threats.
 -   2 – Audit mode. Windows Defender will detect potentially unwanted applications, but take no action. You can review information about the applications Windows Defender would have taken action against by searching for events created by Windows Defender in the Event Viewer.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1574,14 +1608,15 @@ Controls which sets of files should be monitored.
 > [!NOTE]
 > If **AllowOnAccessProtection** is not allowed, then this configuration can be used to monitor specific files.
 
-
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Monitor all files (bi-directional).
 -   1 – Monitor incoming files.
 -   2 – Monitor outgoing files.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1628,12 +1663,14 @@ The following list shows the supported values:
 
 Selects whether to perform a quick scan or full scan.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   1 (default) – Quick scan
 -   2 – Full scan
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1684,13 +1721,16 @@ Selects the time of day that the Windows Defender quick scan should run.
 > The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
 
  
-Valid values: 0–1380
 
 For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM.
 
 The default value is 120
 
 <!--/Description-->
+<!--SupportedValues-->
+Valid values: 0–1380
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1740,7 +1780,8 @@ Selects the day that the Windows Defender scan should run.
 > [!NOTE]
 > The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
 
-
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Every day
@@ -1753,7 +1794,7 @@ The following list shows the supported values:
 -   7 – Sunday
 -   8 – No scheduled scan
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1804,13 +1845,16 @@ Selects the time of day that the Windows Defender scan should run.
 > The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
 
 
-Valid values: 0–1380.
 
 For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM.
 
 The default value is 120.
 
 <!--/Description-->
+<!--SupportedValues-->
+Valid values: 0–1380.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1857,13 +1901,16 @@ The default value is 120.
  
 Specifies the interval (in hours) that will be used to check for signatures, so instead of using the ScheduleDay and ScheduleTime the check for new signatures will be set according to the interval.
 
-Valid values: 0–24.
 
 A value of 0 means no check for new signatures, a value of 1 means to check every hour, a value of 2 means to check every two hours, and so on, up to a value of 24, which means to check every day.
 
 The default value is 8.
 
 <!--/Description-->
+<!--SupportedValues-->
+Valid values: 0–24.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1910,6 +1957,8 @@ The default value is 8.
  
 Checks for the user consent level in Windows Defender to send data. If the required consent has already been granted, Windows Defender submits them. If not, (and if the user has specified never to ask), the UI is launched to ask for user consent (when **Defender/AllowCloudProtection** is allowed) before sending data.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Always prompt.
@@ -1917,7 +1966,7 @@ The following list shows the supported values:
 -   2 – Never send.
 -   3 – Send all samples automatically.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>

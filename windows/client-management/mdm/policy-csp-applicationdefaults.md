@@ -67,6 +67,8 @@ Added in Windows 10, version 1703. This policy allows an administrator to set de
  
 If policy is enabled and the client machine is Azure Active Directory joined, the associations assigned in SyncML will be processed and default associations will be applied.
 
+<!--/Description-->
+<!--Example-->
 To create create the SyncML, follow these steps:
 <ol>
 <li>Install a few apps and change your defaults.</li>
@@ -119,7 +121,7 @@ Here is the SyncMl example:
 </SyncML>
 ```
 
-<!--/Description-->
+<!--/Example-->
 <!--EndPolicy-->
 <hr/>
 
