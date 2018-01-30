@@ -115,13 +115,15 @@ This policy setting determines whether users can access the Insider build contro
 
 If you enable or do not configure this policy setting, users can download and install Windows preview software on their devices. If you disable this policy setting, the item "Get Insider builds" will be unavailable.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed. The item "Get Insider builds" is unavailable, users are unable to make their devices available for preview software.
 -   1 – Allowed. Users can make their devices available for downloading and installing preview software.
 -   2 (default) – Not configured. Users can make their devices available for downloading and installing preview software.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -219,15 +221,18 @@ The following list shows the supported values:
 
 This policy setting determines the level that Microsoft can experiment with the product to study user preferences or device behavior.
 
+
+Most restricted value is 0.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Disabled.
 -   1 (default) – Permits Microsoft to configure device settings only.
 -   2 – Allows Microsoft to conduct full experimentations.
 
-Most restricted value is 0.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -333,11 +338,6 @@ To verify if System/AllowFontProviders is set to true:
 <!--Description-->
 Specifies whether to allow app access to the Location service.
 
-The following list shows the supported values:
-
--   0 – Force Location Off. All Location Privacy settings are toggled off and greyed out. Users cannot change the settings, and no apps are allowed access to the Location service, including Cortana and Search.
--   1 (default) – Location service is allowed. The user has control and can change Location Privacy settings on or off.
--   2 – Force Location On. All Location Privacy settings are toggled on and greyed out. Users cannot change the settings and all consent permissions will be automatically suppressed.
 
 Most restricted value is 0.
 
@@ -348,6 +348,14 @@ When switching the policy back from 0 (Force Location Off) or 2 (Force Location 
 For example, an app's original Location setting is Off. The administrator then sets the **AllowLocation** policy to 2 (Force Location On.) The Location service starts working for that app, overriding the original setting. Later, if the administrator switches the **AllowLocation** policy back to 1 (User Control), the app will revert to using its original setting of Off.
 
 <!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 – Force Location Off. All Location Privacy settings are toggled off and greyed out. Users cannot change the settings, and no apps are allowed access to the Location service, including Cortana and Search.
+-   1 (default) – Location service is allowed. The user has control and can change Location Privacy settings on or off.
+-   2 – Force Location On. All Location Privacy settings are toggled on and greyed out. Users cannot change the settings and all consent permissions will be automatically suppressed.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -721,12 +729,6 @@ Added in Windows 10, version 1703. Allows IT Admins to prevent apps and features
 
 If you disable or do not configure this policy setting, apps and features can work with OneDrive file storage.
 
-To validate on Desktop, do the following:
-
-1.   Enable policy.
-2.   Restart machine.
-3.   Verify that OneDrive.exe is not running in Task Manager.
-
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -735,6 +737,14 @@ The following list shows the supported values:
 -   1 – True (sync disabled).
 
 <!--/SupportedValues-->
+<!--Validation-->
+To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Restart machine.
+3.   Verify that OneDrive.exe is not running in Task Manager.
+
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>

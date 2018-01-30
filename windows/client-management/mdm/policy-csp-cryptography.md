@@ -68,12 +68,14 @@ ms.date: 01/29/2018
 <!--Description-->
 Allows or disallows the Federal Information Processing Standard (FIPS) policy.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Not allowed.
 -   1– Allowed.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>

@@ -118,13 +118,15 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1607. Specifies whether to allow the user to access the ink workspace.
 
+<!--/Description-->
+<!--SupportedValues-->
 Value type is int. The following list shows the supported values:
 
 -   0 - access to ink workspace is disabled. The feature is turned off.
 -   1 - ink workspace is enabled (feature is turned on), but the user cannot access it above the lock screen.
 -   2 (default) - ink workspace is enabled (feature is turned on), and the user is allowed to use it above the lock screen.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 

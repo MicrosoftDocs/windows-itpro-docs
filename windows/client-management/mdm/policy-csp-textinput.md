@@ -278,14 +278,17 @@ The following list shows the supported values:
 
 Allows the Japanese IME surrogate pair characters.
 
+
+Most restricted value is 0.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-Most restricted value is 0.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -501,12 +504,6 @@ Added in Windows 10, version 1703. Specifies whether text prediction is enabled 
 
 Most restricted value is 0.
 
-To validate that text prediction is disabled on Windows 10 for desktop, do the following:
-
-1.  Search for and launch the on-screen keyboard. Verify that text prediction is disabled by typing some text. Text prediction on the keyboard will be disabled even if the “Use Text Prediction” setting is enabled from the options button.
-2.  Launch the input panel/touch keyboard by touching a text input field or launching it from the taskbar. Verify that text prediction is disabled by typing some text. Text prediction on the keyboard will be disabled even if the “Show text suggestions as I type” setting is enabled in the Settings app.
-3.  Launch the handwriting tool from the touch keyboard. Verify that text prediction is disabled when you write using the tool.
-
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -515,6 +512,14 @@ The following list shows the supported values:
 -   1 (default) – Enabled.
 
 <!--/SupportedValues-->
+<!--Validation-->
+To validate that text prediction is disabled on Windows 10 for desktop, do the following:
+
+1.  Search for and launch the on-screen keyboard. Verify that text prediction is disabled by typing some text. Text prediction on the keyboard will be disabled even if the “Use Text Prediction” setting is enabled from the options button.
+2.  Launch the input panel/touch keyboard by touching a text input field or launching it from the taskbar. Verify that text prediction is disabled by typing some text. Text prediction on the keyboard will be disabled even if the “Show text suggestions as I type” setting is enabled in the Settings app.
+3.  Launch the handwriting tool from the touch keyboard. Verify that text prediction is disabled when you write using the tool.
+
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -684,12 +689,14 @@ The following list shows the supported values:
 
 Allows the users to restrict character code range of conversion by setting the character filter.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – No characters are filtered.
 -   1 – All characters except JIS0208 are filtered.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -736,12 +743,14 @@ The following list shows the supported values:
 
 Allows the users to restrict character code range of conversion by setting the character filter.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – No characters are filtered.
 -   1 – All characters except JIS0208 and EUDC are filtered.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -788,12 +797,14 @@ The following list shows the supported values:
 
 Allows the users to restrict character code range of conversion by setting the character filter.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – No characters are filtered.
 -   1 – All characters except ShiftJIS are filtered.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 
