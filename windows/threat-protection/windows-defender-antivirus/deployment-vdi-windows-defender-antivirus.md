@@ -88,7 +88,11 @@ After creating the image, you should ensure it is fully updated. See [Configure 
 ### Seal the base image
 When the base image is fully updated, you should run a quick scan on the image. 
 
+After running a scan and buliding the cache, remove the machine GUID that uniquely identifies the device in telemetry for both Windows Defender Antivirus and the Microsoft Security Removal Tool. This key is located here:
 
+'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\RemovalTools\MRT'
+
+Remove the string found in the 'GUID' value
 
 This “sealing” or “locking” of the image helps Windows Defender AV build a cache of known-good files and avoid scanning them again on your VMs. In turn, this can help ensure performance on the VM is not impacted.
 
