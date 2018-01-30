@@ -51,7 +51,7 @@ In order for devices to properly show up in Update Compliance, you have to meet 
 >- Endpoints are using Windows Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Windows Defender AV to disable itself](windows-defender-antivirus-compatibility.md) and the endpoint will not be reported in Update Compliance.
 > - [Cloud-delivered protection is enabled](enable-cloud-protection-windows-defender-antivirus.md).
 > - Endpoints can [connect to the Windows Defender AV cloud](configure-network-connections-windows-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
-> - If the endpoint is running Windows 10 version 1607 or earlier, [Windows 10 telemetry must be set to the Enhanced level](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-telemetry-in-your-organization#enhanced-level).
+> - If the endpoint is running Windows 10 version 1607 or earlier, [Windows 10 diagnostic data must be set to the Enhanced level](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level).
 > - It has been 3 days since all requirements have been met
 
 If the above pre-requisites have all been met, you may need to proceed to the next step to collect diagnostic information and send it to us.

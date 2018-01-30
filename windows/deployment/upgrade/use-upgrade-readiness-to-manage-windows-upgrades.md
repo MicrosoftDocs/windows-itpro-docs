@@ -10,7 +10,7 @@ ms.date: 08/30/2017
 
 You can use Upgrade Readiness to prioritize and work through application and driver issues, assign and track issue resolution status, and identify computers that are ready to upgrade. Upgrade Readiness enables you to deploy Windows with confidence, knowing that you’ve addressed potential blocking issues.
 
-- Based on telemetry data from user computers, Upgrade Readiness identifies application and driver compatibility issues that may block Windows upgrades, allowing you to make data-driven decisions about your organization’s upgrade readiness.
+- Based on diagnostic data from user computers, Upgrade Readiness identifies application and driver compatibility issues that may block Windows upgrades, allowing you to make data-driven decisions about your organization’s upgrade readiness.
 - Information is refreshed daily so you can monitor upgrade progress. Any changes your team makes, such as assigning application importance and marking applications as ready to upgrade, are reflected 24 hours after you make them.
 
 When you are ready to begin the upgrade process, a workflow is provided to guide you through critical high-level tasks. 

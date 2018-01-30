@@ -1,7 +1,7 @@
 ---
 description: Use this article to learn more about what Windows diagnostic data is gathered at the basic level.
 title: Windows 10, version 1709 basic diagnostic events and fields (Windows 10)
-keywords: privacy, telemetry
+keywords: privacy, diagnostic data
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -32,7 +32,7 @@ You can learn more about Windows functional and diagnostic data through these ar
 
 - [Windows 10, version 1703 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md)
 - [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
-- [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md)
+- [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md)
 
 
 
@@ -106,7 +106,7 @@ The following fields are available:
 - **osVer**  Represents the OS version, and its format is OS dependent.
 - **appId**  Represents a unique identifier of the client application currently loaded in the process producing the event; and is used to group events together and understand usage pattern, errors by application.
 - **appVer**  Represents the version number of the application. Used to understand errors by Version, Usage by Version across an app.
-- **cV**  Represents the Correlation Vector: A single field for tracking partial order of related telemetry events across component boundaries.
+- **cV**  Represents the Correlation Vector: A single field for tracking partial order of related diagnostic data events across component boundaries.
 
 
 ### Common Data Extensions.OS
@@ -148,7 +148,7 @@ The following fields are available:
 
 ### Common Data Extensions.Consent UI Event
 
-This User Account Control (UAC) telemetry point collects information on elevations that originate from low integrity levels. This occurs when a process running at low integrity level (IL) requires higher (administrator) privileges, and therefore requests for elevation via UAC (consent.exe). By better understanding the processes requesting these elevations, Microsoft can in turn improve the detection and handling of potentially malicious behavior in this path.
+This User Account Control (UAC) diagnostic data point collects information on elevations that originate from low integrity levels. This occurs when a process running at low integrity level (IL) requires higher (administrator) privileges, and therefore requests for elevation via UAC (consent.exe). By better understanding the processes requesting these elevations, Microsoft can in turn improve the detection and handling of potentially malicious behavior in this path.
 
 The following fields are available:
 
@@ -262,39 +262,39 @@ The following fields are available:
 - **AppraiserBranch**  The source branch in which the currently running version of Appraiser was built.
 - **AppraiserProcess**  The name of the process that launched Appraiser.
 - **AppraiserVersion**  The version of the Appraiser file generating the events.
-- **Context**  Indicates what mode Appraiser is running in. Example: Setup or Telemetry.
+- **Context**  Indicates what mode Appraiser is running in. Example: Setup or Diagnostic Data.
 - **PCFP**  An ID for the system calculated by hashing hardware identifiers.
 - **Time**  The client time of the event.
 
 
 ### Microsoft.Windows.Appraiser.General.TelemetryRunHealth
 
-A summary event indicating the parameters and result of a telemetry run. This allows the rest of the data sent over the course of the run to be properly contextualized and understood, which is then used to keep Windows up-to-date.
+A summary event indicating the parameters and result of a diagnostic data run. This allows the rest of the data sent over the course of the run to be properly contextualized and understood, which is then used to keep Windows up-to-date.
 
 The following fields are available:
 
 - **AppraiserBranch**  The source branch in which the version of Appraiser that is running was built.
-- **AppraiserDataVersion**  The version of the data files being used by the Appraiser telemetry run.
+- **AppraiserDataVersion**  The version of the data files being used by the Appraiser diagnostic data run.
 - **AppraiserProcess**  The name of the process that launched Appraiser.
 - **AppraiserVersion**  The file version (major, minor and build) of the Appraiser DLL, concatenated without dots.
 - **AuxFinal**  Obsolete, always set to false
 - **AuxInitial**  Obsolete, indicates if Appraiser is writing data files to be read by the Get Windows 10 app.
 - **DeadlineDate**  A timestamp representing the deadline date, which is the time until which appraiser will wait to do a full scan.
-- **EnterpriseRun**  Indicates if the telemetry run is an enterprise run, which means appraiser was run from the command line with an extra enterprise parameter.
+- **EnterpriseRun**  Indicates if the diagnostic data run is an enterprise run, which means appraiser was run from the command line with an extra enterprise parameter.
 - **FullSync**  Indicates if Appraiser is performing a full sync, which means that full set of events representing the state of the machine are sent. Otherwise, only the changes from the previous run are sent.
 - **InventoryFullSync**  Indicates if inventory is performing a full sync, which means that the full set of events representing the inventory of machine are sent.
 - **PCFP**  An ID for the system calculated by hashing hardware identifiers.
 - **PerfBackoff**  Indicates if the run was invoked with logic to stop running when a user is present. Helps to understand why a run may have a longer elapsed time than normal.
 - **PerfBackoffInsurance**  Indicates if appraiser is running without performance backoff because it has run with perf backoff and failed to complete several times in a row.
 - **RunAppraiser**  Indicates if Appraiser was set to run at all. If this if false, it is understood that data events will not be received from this device.
-- **RunDate**  The date that the telemetry run was stated, expressed as a filetime.
-- **RunGeneralTel**  Indicates if the generaltel.dll component was run. Generaltel collects additional telemetry on an infrequent schedule and only from machines at telemetry levels higher than Basic.
+- **RunDate**  The date that the diagnostic data run was stated, expressed as a filetime.
+- **RunGeneralTel**  Indicates if the generaltel.dll component was run. Generaltel collects additional diagnostic data on an infrequent schedule and only from machines at diagnostic data levels higher than Basic.
 - **RunOnline**  Indicates if appraiser was able to connect to Windows Update and theefore is making decisions using up-to-date driver coverage information.
-- **RunResult**  The hresult of the Appraiser telemetry run.
-- **SendingUtc**  Indicates if the Appraiser client is sending events during the current telemetry run.
+- **RunResult**  The hresult of the Appraiser diagnostic data run.
+- **SendingUtc**  Indicates if the Appraiser client is sending events during the current diagnostic data run.
 - **StoreHandleIsNotNull**  Obsolete, always set to false
-- **TelementrySent**  Indicates if telemetry was successfully sent.
-- **ThrottlingUtc**  Indicates if the Appraiser client is throttling its output of CUET events to avoid being disabled. This increases runtime but also telemetry reliability.
+- **TelementrySent**  Indicates if diagnostic data was successfully sent.
+- **ThrottlingUtc**  Indicates if the Appraiser client is throttling its output of CUET events to avoid being disabled. This increases runtime but also diagnostic data reliability.
 - **Time**  The client time of the event.
 - **VerboseMode**  Indicates if appraiser ran in Verbose mode, which is a test-only mode with extra logging.
 - **WhyFullSyncWithoutTablePrefix**  Indicates the reason or reasons that a full sync was generated.
@@ -1461,7 +1461,7 @@ This event sends Windows Insider data from customers participating in improvemen
 
 The following fields are available:
 
-- **DeviceSampleRate**  The telemetry sample rate assigned to the device.
+- **DeviceSampleRate**  The diagnostic data sample rate assigned to the device.
 - **EnablePreviewBuilds**  Used to enable Windows Insider builds on a device.
 - **FlightIds**  A list of the different Windows Insider builds on this device.
 - **FlightingBranchName**  The name of the Windows Insider branch currently used by the device.
@@ -1472,7 +1472,7 @@ The following fields are available:
 
 ### Census.Hardware
 
-This event sends data about the device, including hardware type, OEM brand, model line, model, telemetry level setting, and TPM support, to help keep Windows up-to-date.
+This event sends data about the device, including hardware type, OEM brand, model line, model, diagnostic data level setting, and TPM support, to help keep Windows up-to-date.
 
 The following fields are available:
 
@@ -1504,9 +1504,9 @@ The following fields are available:
 - **PowerPlatformRole**  The OEM preferred power management profile. It's used to help to identify the basic form factor of the device.
 - **SoCName**  The firmware manufacturer of the device.
 - **StudyID**  Used to identify retail and non-retail device.
-- **TelemetryLevel**  The telemetry level the user has opted into, such as Basic or Enhanced.
-- **TelemetryLevelLimitEnhanced** The telemetry level for Windows Analytics-based solutions.
-- **TelemetrySettingAuthority**  Determines who set the telemetry level, such as GP, MDM, or the user.
+- **TelemetryLevel**  The diagnostic data level the user has opted into, such as Basic or Enhanced.
+- **TelemetryLevelLimitEnhanced** The diagnostic data level for Windows Analytics-based solutions.
+- **TelemetrySettingAuthority**  Determines who set the diagnostic data level, such as GP, MDM, or the user.
 - **TPMVersion**  The supported Trusted Platform Module (TPM) on the device. If no TPM is present, the value is 0.
 - **VoiceSupported**  Does the device have a cellular radio capable of making voice calls?
 
@@ -1729,45 +1729,45 @@ This event provides information on about security settings used to help keep Win
 
 ### TelClientSynthetic.AuthorizationInfo_Startup
 
-This event sends data indicating that a device has undergone a change of telemetry opt-in level detected at UTC startup, to help keep Windows up to date.
+This event sends data indicating that a device has undergone a change of diagnostic data opt-in level detected at UTC startup, to help keep Windows up to date.
 
 The following fields are available:
 
-- **CanAddMsaToMsTelemetry**  True if UTC is allowed to add MSA user identity onto telemetry from the OS provider groups.
-- **CanCollectAnyTelemetry**  True if UTC is allowed to collect non-OS telemetry. Non-OS telemetry is responsible for providing its own opt-in mechanism.
+- **CanAddMsaToMsTelemetry**  True if UTC is allowed to add MSA user identity onto diagnostic data from the OS provider groups.
+- **CanCollectAnyTelemetry**  True if UTC is allowed to collect non-OS diagnostic data. Non-OS diagnostic data is responsible for providing its own opt-in mechanism.
 - **CanCollectCoreTelemetry**  True if UTC is allowed to collect data which is tagged with both MICROSOFT_KEYWORD_CRITICAL_DATA and MICROSOFT_EVENTTAG_CORE_DATA.
 - **CanCollectHeartbeats**  True if UTC is allowed to collect heartbeats.
-- **CanCollectOsTelemetry**  True if UTC is allowed to collect telemetry from the OS provider groups (often called Microsoft Telemetry).
+- **CanCollectOsTelemetry**  True if UTC is allowed to collect diagnostic data from the OS provider groups.
 - **CanPerformDiagnosticEscalations**  True if UTC is allowed to perform all scenario escalations.
 - **CanPerformScripting**  True if UTC is allowed to perform scripting.
 - **CanPerformTraceEscalations**  True if UTC is allowed to perform scenario escalations with tracing actions.
 - **CanReportScenarios**  True if UTC is allowed to load and report scenario completion, failure, and cancellation events.
-- **PreviousPermissions**  Bitmask representing the previously configured permissions since the telemetry client was last started.
-- **TransitionFromEverythingOff**  True if this transition is moving from not allowing core telemetry to allowing core telemetry.
+- **PreviousPermissions**  Bitmask representing the previously configured permissions since the diagnostic data client was last started.
+- **TransitionFromEverythingOff**  True if this transition is moving from not allowing core diagnostic data to allowing core diagnostic data.
 
 
 ### TelClientSynthetic.AuthorizationInfo_RuntimeTransition
 
-This event sends data indicating that a device has undergone a change of telemetry opt-in level during the runtime of the device (not at UTC boot or offline), to help keep Windows up to date.
+This event sends data indicating that a device has undergone a change of diagnostic data opt-in level during the runtime of the device (not at UTC boot or offline), to help keep Windows up to date.
 
 The following fields are available:
 
-- **CanAddMsaToMsTelemetry**  True if UTC is allowed to add MSA user identity onto telemetry from the OS provider groups.
-- **CanCollectAnyTelemetry**  True if UTC is allowed to collect non-OS telemetry. Non-OS telemetry is responsible for providing its own opt-in mechanism.
+- **CanAddMsaToMsTelemetry**  True if UTC is allowed to add MSA user identity onto diagnostic data from the OS provider groups.
+- **CanCollectAnyTelemetry**  True if UTC is allowed to collect non-OS diagnostic data. Non-OS diagnostic data is responsible for providing its own opt-in mechanism.
 - **CanCollectCoreTelemetry**  True if UTC is allowed to collect data which is tagged with both MICROSOFT_KEYWORD_CRITICAL_DATA and MICROSOFT_EVENTTAG_CORE_DATA.
 - **CanCollectHeartbeats**  True if UTC is allowed to collect heartbeats.
-- **CanCollectOsTelemetry**  True if UTC is allowed to collect telemetry from the OS provider groups (often called Microsoft Telemetry).
+- **CanCollectOsTelemetry**  True if UTC is allowed to collect diagnostic data from the OS provider groups.
 - **CanPerformDiagnosticEscalations**  True if UTC is allowed to perform all scenario escalations.
 - **CanPerformScripting**  True if UTC is allowed to perform scripting.
 - **CanPerformTraceEscalations**  True if UTC is allowed to perform scenario escalations with tracing actions.
 - **CanReportScenarios**  True if UTC is allowed to load and report scenario completion, failure, and cancellation events.
-- **PreviousPermissions**  Bitmask representing the previously configured permissions since the telemetry opt-in level was last changed.
-- **TransitionFromEverythingOff**  True if this transition is moving from not allowing core telemetry to allowing core telemetry.
+- **PreviousPermissions**  Bitmask representing the previously configured permissions since the diagnostic data opt-in level was last changed.
+- **TransitionFromEverythingOff**  True if this transition is moving from not allowing core diagnostic data to allowing core diagnostic data.
 
 
 ### TelClientSynthetic.ConnectivityHeartBeat_0
 
-This event sends data about the connectivity status of the Connected User Experience and Telemetry component that uploads telemetry events. If an unrestricted free network (such as Wi-Fi) is available, this event updates the last successful upload time. Otherwise, it checks whether a Connectivity Heartbeat event was fired in the past 24 hours, and if not, it fires an event. A Connectivity Heartbeat event also fires when a device recovers from costed network to free network.
+This event sends data about the connectivity status of the Connected User Experience and Telemetry component that uploads diagnostic data events. If an unrestricted free network (such as Wi-Fi) is available, this event updates the last successful upload time. Otherwise, it checks whether a Connectivity Heartbeat event was fired in the past 24 hours, and if not, it fires an event. A Connectivity Heartbeat event also fires when a device recovers from costed network to free network.
 
 The following fields are available:
 
@@ -1783,7 +1783,7 @@ The following fields are available:
 
 ### TelClientSynthetic.HeartBeat_5
 
-This event sends data about the health and quality of the telemetry data from the given device, to help keep Windows up to date. It also enables data analysts to determine how 'trusted' the data is from a given device.
+This event sends data about the health and quality of the diagnostic data data from the given device, to help keep Windows up to date. It also enables data analysts to determine how 'trusted' the data is from a given device.
 
 The following fields are available:
 
@@ -1791,7 +1791,7 @@ The following fields are available:
 - **CensusExitCode**  The last exit code of the Census task.
 - **CensusStartTime**  The time of the last Census run.
 - **CensusTaskEnabled**  Indicates whether Census is enabled.
-- **ConsumerDroppedCount**  The number of events dropped by the consumer layer of the telemetry client.
+- **ConsumerDroppedCount**  The number of events dropped by the consumer layer of the diagnostic data client.
 - **CriticalDataDbDroppedCount**  The number of critical data sampled events that were dropped at the database layer.
 - **CriticalDataThrottleDroppedCount**  The number of critical data sampled events that were dropped because of throttling.
 - **CriticalOverflowEntersCounter**  The number of times a critical overflow mode was entered into the event database.
@@ -1800,7 +1800,7 @@ The following fields are available:
 - **DecodingDroppedCount**  The number of events dropped because of decoding failures.
 - **EnteringCriticalOverflowDroppedCounter**  The number of events that was dropped because a critical overflow mode was initiated.
 - **EtwDroppedBufferCount**  The number of buffers dropped in the CUET ETW session.
-- **EtwDroppedCount**  The number of events dropped by the ETW layer of the telemetry client.
+- **EtwDroppedCount**  The number of events dropped by the ETW layer of the diagnostic data client.
 - **EventSubStoreResetCounter**  The number of times the event database was reset.
 - **EventSubStoreResetSizeSum**  The total size of the event database across all resets reports in this instance.
 - **EventsUploaded**  The number of events that have been uploaded.
@@ -1817,7 +1817,7 @@ The following fields are available:
 - **SettingsHttpAttempts**  The number of attempts to contact the OneSettings service.
 - **SettingsHttpFailures**  The number of failures from contacting the OneSettings service.
 - **ThrottledDroppedCount**  The number of events dropped due to throttling of noisy providers.
-- **UploaderDroppedCount**  The number of events dropped by the uploader layer of the telemetry client.
+- **UploaderDroppedCount**  The number of events dropped by the uploader layer of the diagnostic data client.
 - **VortexFailuresTimeout**  The number of timeout failures received from Vortex.
 - **VortexHttpAttempts**  The number of attempts to contact the Vortex service.
 - **VortexHttpFailures4xx**  The number of 400-499 error codes received from Vortex.
@@ -1888,7 +1888,7 @@ The following fields are available:
 The following fields are available:
 
 - **AppName**  The name of the app that has crashed.
-- **AppSessionGuid**  GUID made up of process ID and is used as a correlation vector for process instances in the telemetry backend.
+- **AppSessionGuid**  GUID made up of process ID and is used as a correlation vector for process instances in the diagnostic data backend.
 - **AppTimeStamp**  The date/time stamp of the app.
 - **AppVersion**  The version of the app that has crashed.
 - **ExceptionCode**  The exception code returned by the process that has crashed.
@@ -1938,7 +1938,7 @@ This event sends data about hangs for both native and managed applications, to h
 The following fields are available:
 
 - **AppName**  The name of the app that has hung.
-- **AppSessionGuid**  GUID made up of process id used as a correlation vector for process instances in the telemetry backend.
+- **AppSessionGuid**  GUID made up of process id used as a correlation vector for process instances in the diagnostic data backend.
 - **AppVersion**  The version of the app that has hung.
 - **PackageFullName**  Store application identity.
 - **PackageRelativeAppId**  Store application identity.
@@ -3185,7 +3185,7 @@ The following fields are available:
 
 ### Microsoft.Windows.UpdateNotificationPipeline.JavascriptJavascriptCriticalGenericMessage
 
-This event indicates that Javascript is reporting a schema and a set of values for critical telemetry
+This event indicates that Javascript is reporting a schema and a set of values for critical diagnostic data.
 
 The following fields are available:
 

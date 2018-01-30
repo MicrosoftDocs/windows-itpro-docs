@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - Messaging
@@ -15,7 +15,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## Messaging policies  
 
 <dl>
@@ -33,7 +33,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="messaging-allowmms"></a>**Messaging/AllowMMS**  
 
 <!--SupportedSKUs-->
@@ -82,11 +82,11 @@ The following list shows the supported values:
 -   1 (default) - Enabled.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="messaging-allowmessagesync"></a>**Messaging/AllowMessageSync**  
 
 <!--SupportedSKUs-->
@@ -132,11 +132,11 @@ The following list shows the supported values:
 -   1 - message sync is allowed. The user can change this setting.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="messaging-allowrcs"></a>**Messaging/AllowRCS**  
 
 <!--SupportedSKUs-->
@@ -185,7 +185,7 @@ The following list shows the supported values:
 -   1 (default) - Enabled.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -194,5 +194,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

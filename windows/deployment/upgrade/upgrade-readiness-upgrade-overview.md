@@ -54,7 +54,7 @@ Select **Total computers** for a list of computers and details about them, inclu
 -   Computer model
 -   Operating system version and build
 -   Count of system requirement, application, and driver issues per computer
--   Upgrade assessment based on analysis of computer telemetry data
+-   Upgrade assessment based on analysis of computer diagnostic data
 -   Upgrade decision status
 
 Select **Total applications** for a list of applications discovered on user computers and details about them, including:
