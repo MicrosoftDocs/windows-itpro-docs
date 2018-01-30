@@ -133,10 +133,10 @@ https://msdl.microsoft.com/download/symbols
 Universal Telemetry Client
 </td>
 <td>
-Used by Windows to send client telemetry, Windows Defender Antivirus uses this for product quality monitoring purposes
+Used by Windows to send client diagnostic data, Windows Defender Antivirus uses this for product quality monitoring purposes
 </td>
 <td>
-This update uses SSL (TCP Port 443) to download manifests and upload telemetry to Microsoft that uses the following DNS endpoints:  <ul><li>vortex-win.data.microsoft.com</li><li>settings-win.data.microsoft.com</li></ul></td>
+This update uses SSL (TCP Port 443) to download manifests and upload diagnostic data to Microsoft that uses the following DNS endpoints:  <ul><li>vortex-win.data.microsoft.com</li><li>settings-win.data.microsoft.com</li></ul></td>
 </tr>
 
 </table>
