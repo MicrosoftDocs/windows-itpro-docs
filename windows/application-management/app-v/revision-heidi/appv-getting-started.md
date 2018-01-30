@@ -42,32 +42,28 @@ If you're new to App-V, it's a good idea to read the documentation thoroughly. B
 
 ## Getting started with App-V
 
--   [What's new in App-V](appv-about-appv.md)
+* [What's new in App-V](appv-about-appv.md)
 
     Provides a high-level overview of App-V and how it can be used in your organization.
 
--   [Evaluating App-V](appv-evaluating-appv.md)
+* [Evaluating App-V](appv-evaluating-appv.md)
 
     Provides information about how you can best evaluate App-V for use in your organization.
 
--   [High Level Architecture for App-V](appv-high-level-architecture.md)
+* [High Level Architecture for App-V](appv-high-level-architecture.md)
 
     Provides a description of the App-V features and how they work together.
 
 ## Other resources for this product
 
--   [Application Virtualization (App-V) overview](appv-for-windows.md)
+* [Application Virtualization (App-V) overview](appv-for-windows.md)
 
--   [Planning for App-V](appv-planning-for-appv.md)
+* [Planning for App-V](appv-planning-for-appv.md)
 
--   [Deploying App-V](appv-deploying-appv.md)
+* [Deploying App-V](appv-deploying-appv.md)
 
--   [Operations for App-V](appv-operations.md)
+* [Operations for App-V](appv-operations.md)
 
--   [Troubleshooting App-V](appv-troubleshooting.md)
+* [Troubleshooting App-V](appv-troubleshooting.md)
 
--   [Technical reference for App-V](appv-technical-reference.md)
-
-## Have a suggestion for App-V?
-
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+* [Technical reference for App-V](appv-technical-reference.md)
