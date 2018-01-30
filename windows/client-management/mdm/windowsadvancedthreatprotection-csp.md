@@ -77,7 +77,7 @@ The following list describes the characteristics and parameters.
 <p style="margin-left: 20px">Supported operations are Get and Replace.
 
 <a href="" id="configuration-telemetryreportingfrequency"></a>**Configuration/TelemetryReportingFrequency**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Returns or sets the Windows Defender Advanced Threat Protection telemetry reporting frequency. 
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Returns or sets the Windows Defender Advanced Threat Protection diagnostic data reporting frequency. 
 
 <p style="margin-left: 20px">The following list shows the supported values:
 

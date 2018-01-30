@@ -1,7 +1,7 @@
 ---
-description: Use this article to learn more about the enhanced telemetry events used by Windows Analytics
+description: Use this article to learn more about the enhanced diagnostic data events used by Windows Analytics
 title: Windows 10, version 1709 enhanced telemtry events and fields used by Windows Analytics (Windows 10)
-keywords: privacy, telemetry
+keywords: privacy, diagnostic data
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -13,15 +13,15 @@ ms.author: jaimeo
 ---
 
 
-# Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics
+# Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics
 
  **Applies to**
 
 - Windows 10, version 1709 and later
 
-Windows Analytics Device Health reports are powered by diagnostic data not included in the Basic level. This includes crash reports and certain OS telemetry events. Organizations sending Enhanced or Full level diagnostic data were able to participate in Device Health, but some organizations which required detailed event and field level documentation were unable to move from Basic to Enhanced. 
+Windows Analytics Device Health reports are powered by diagnostic data not included in the Basic level. This includes crash reports and certain OS diagnostic data events. Organizations sending Enhanced or Full level diagnostic data were able to participate in Device Health, but some organizations which required detailed event and field level documentation were unable to move from Basic to Enhanced. 
 
-In Windows 10, version 1709, we introduce a new feature: "Limit Enhanced diagnostic data to the minimum required by Windows Analytics". When enabled, this feature limits the operating system telemetry events included in the Enhanced level to only those described below. Note that the Enhanced level also includes limited crash reports, which are not described below. For more information on the Enhanced level, see [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md).
+In Windows 10, version 1709, we introduce a new feature: "Limit Enhanced diagnostic data to the minimum required by Windows Analytics". When enabled, this feature limits the operating system diagnostic data events included in the Enhanced level to only those described below. Note that the Enhanced level also includes limited crash reports, which are not described below. For more information on the Enhanced level, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
 
 
 ## KernelProcess.AppStateChangeSummary

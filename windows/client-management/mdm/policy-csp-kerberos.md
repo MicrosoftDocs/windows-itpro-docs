@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - Kerberos
@@ -15,7 +15,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## Kerberos policies  
 
 <dl>
@@ -39,7 +39,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="kerberos-allowforestsearchorder"></a>**Kerberos/AllowForestSearchOrder**  
 
 <!--SupportedSKUs-->
@@ -97,11 +97,11 @@ ADMX Info:
 -   GP ADMX file name: *Kerberos.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="kerberos-kerberosclientsupportsclaimscompoundarmor"></a>**Kerberos/KerberosClientSupportsClaimsCompoundArmor**  
 
 <!--SupportedSKUs-->
@@ -158,11 +158,11 @@ ADMX Info:
 -   GP ADMX file name: *Kerberos.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="kerberos-requirekerberosarmoring"></a>**Kerberos/RequireKerberosArmoring**  
 
 <!--SupportedSKUs-->
@@ -224,11 +224,11 @@ ADMX Info:
 -   GP ADMX file name: *Kerberos.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="kerberos-requirestrictkdcvalidation"></a>**Kerberos/RequireStrictKDCValidation**  
 
 <!--SupportedSKUs-->
@@ -286,11 +286,11 @@ ADMX Info:
 -   GP ADMX file name: *Kerberos.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="kerberos-setmaximumcontexttokensize"></a>**Kerberos/SetMaximumContextTokenSize**  
 
 <!--SupportedSKUs-->
@@ -352,7 +352,7 @@ ADMX Info:
 -   GP ADMX file name: *Kerberos.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -361,5 +361,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

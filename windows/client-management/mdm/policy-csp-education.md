@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - Education
@@ -15,7 +15,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## Education policies  
 
 <dl>
@@ -33,7 +33,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="education-defaultprintername"></a>**Education/DefaultPrinterName**  
 
 <!--SupportedSKUs-->
@@ -74,11 +74,11 @@ Added in Windows 10, version 1709. This policy allows IT Admins to set the user
 The policy value is expected to be the name (network host name) of an installed printer.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="education-preventaddingnewprinters"></a>**Education/PreventAddingNewPrinters**  
 
 <!--SupportedSKUs-->
@@ -124,11 +124,11 @@ The following list shows the supported values:
 -   1 – Prevent user installation.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="education-printernames"></a>**Education/PrinterNames**  
 
 <!--SupportedSKUs-->
@@ -169,7 +169,7 @@ Added in Windows 10, version 1709. Allows IT Admins to automatically provision 
 The policy value is expected to be a ```&#xF000;``` seperated list of printer names.  The OS will attempt to search and install the matching printer driver for each listed printer.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -178,5 +178,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - Update
@@ -17,7 +17,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## Update policies  
 
 <dl>
@@ -170,7 +170,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-activehoursend"></a>**Update/ActiveHoursEnd**  
 
 <!--SupportedSKUs-->
@@ -216,11 +216,11 @@ Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
 The default is 17 (5 PM).
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-activehoursmaxrange"></a>**Update/ActiveHoursMaxRange**  
 
 <!--SupportedSKUs-->
@@ -263,11 +263,11 @@ Supported values are 8-18.
 The default value is 18 (hours).
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-activehoursstart"></a>**Update/ActiveHoursStart**  
 
 <!--SupportedSKUs-->
@@ -313,11 +313,11 @@ Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
 The default value is 8 (8 AM).
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-allowautoupdate"></a>**Update/AllowAutoUpdate**  
 
 <!--SupportedSKUs-->
@@ -376,11 +376,11 @@ The following list shows the supported values:
 -   5 – Turn off automatic updates.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-allowautowindowsupdatedownloadovermeterednetwork"></a>**Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork**  
 
 <!--SupportedSKUs-->
@@ -430,11 +430,11 @@ The following list shows the supported values:
 - 1 - Allowed
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-allowmuupdateservice"></a>**Update/AllowMUUpdateService**  
 
 <!--SupportedSKUs-->
@@ -480,11 +480,11 @@ The following list shows the supported values:
 -   1 – Allowed. Accepts updates received through Microsoft Update.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-allownonmicrosoftsignedupdate"></a>**Update/AllowNonMicrosoftSignedUpdate**  
 
 <!--SupportedSKUs-->
@@ -534,11 +534,11 @@ The following list shows the supported values:
 -   1 – Allowed. Accepts updates received through an intranet Microsoft update service location, if they are signed by a certificate found in the "Trusted Publishers" certificate store of the local computer.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-allowupdateservice"></a>**Update/AllowUpdateService**  
 
 <!--SupportedSKUs-->
@@ -591,11 +591,11 @@ The following list shows the supported values:
 -   1 (default) – Update service is allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-autorestartdeadlineperiodindays"></a>**Update/AutoRestartDeadlinePeriodInDays**  
 
 <!--SupportedSKUs-->
@@ -638,11 +638,11 @@ Supported values are 2-30 days.
 The default value is 7 days.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-autorestartnotificationschedule"></a>**Update/AutoRestartNotificationSchedule**  
 
 <!--SupportedSKUs-->
@@ -687,11 +687,11 @@ The default value is 15 (minutes).
 Supported values are 15, 30, 60, 120, and 240 (minutes).
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-autorestartrequirednotificationdismissal"></a>**Update/AutoRestartRequiredNotificationDismissal**  
 
 <!--SupportedSKUs-->
@@ -737,11 +737,11 @@ The following list shows the supported values:
 -   2 – User Dismissal.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-branchreadinesslevel"></a>**Update/BranchReadinessLevel**  
 
 <!--SupportedSKUs-->
@@ -790,11 +790,11 @@ The following list shows the supported values:
 -  32 {0x20} - Semi-annual Channel. Device gets feature updates from Semi-annual Channel.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-configurefeatureupdateuninstallperiod"></a>**Update/ConfigureFeatureUpdateUninstallPeriod**  
 
 <!--SupportedSKUs-->
@@ -824,11 +824,11 @@ The following list shows the supported values:
 Added in Windows 10, next major update. Enable IT admin to configure feature update uninstall period. Values range 2 - 60 days. Default is 10 days.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-deferfeatureupdatesperiodindays"></a>**Update/DeferFeatureUpdatesPeriodInDays**  
 
 <!--SupportedSKUs-->
@@ -874,11 +874,11 @@ Supported values are 0-365 days.
 > The default maximum number of days to defer an update has been increased from 180 (Windows 10, version 1607) to 365 in Windows 10, version 1703.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-deferqualityupdatesperiodindays"></a>**Update/DeferQualityUpdatesPeriodInDays**  
 
 <!--SupportedSKUs-->
@@ -919,11 +919,11 @@ Added in Windows 10, version 1607. Defers Quality Updates for the specified num
 Supported values are 0-30.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-deferupdateperiod"></a>**Update/DeferUpdatePeriod**  
 
 <!--SupportedSKUs-->
@@ -1055,11 +1055,11 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>-->
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-deferupgradeperiod"></a>**Update/DeferUpgradePeriod**  
 
 <!--SupportedSKUs-->
@@ -1110,11 +1110,11 @@ If the "Specify intranet Microsoft update service location" policy is enabled, t
 If the "Allow Telemetry" policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-detectionfrequency"></a>**Update/DetectionFrequency**  
 
 <!--SupportedSKUs-->
@@ -1153,11 +1153,11 @@ If the "Allow Telemetry" policy is enabled and the Options value is set to 0, th
 Added in Windows 10, version 1703. Specifies the scan frequency from every 1 - 22 hours. Default is 22 hours.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-disabledualscan"></a>**Update/DisableDualScan**  
 
 <!--SupportedSKUs-->
@@ -1209,11 +1209,11 @@ The following list shows the supported values:
 - 1 - do not allow update deferral policies to cause scans against Windows Update
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-engagedrestartdeadline"></a>**Update/EngagedRestartDeadline**  
 
 <!--SupportedSKUs-->
@@ -1256,11 +1256,11 @@ Supported values are 2-30 days.
 The default value is 0 days (not specified).
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-engagedrestartsnoozeschedule"></a>**Update/EngagedRestartSnoozeSchedule**  
 
 <!--SupportedSKUs-->
@@ -1303,11 +1303,11 @@ Supported values are 1-3 days.
 The default value is 3 days.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-engagedrestarttransitionschedule"></a>**Update/EngagedRestartTransitionSchedule**  
 
 <!--SupportedSKUs-->
@@ -1350,11 +1350,11 @@ Supported values are 2-30 days.
 The default value is 7 days.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-excludewudriversinqualityupdate"></a>**Update/ExcludeWUDriversInQualityUpdate**  
 
 <!--SupportedSKUs-->
@@ -1403,11 +1403,11 @@ The following list shows the supported values:
 -   1 – Exclude Windows Update drivers.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-fillemptycontenturls"></a>**Update/FillEmptyContentUrls**  
 
 <!--SupportedSKUs-->
@@ -1456,11 +1456,11 @@ The following list shows the supported values:
 -   1 – Enabled.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-ignoremoappdownloadlimit"></a>**Update/IgnoreMOAppDownloadLimit**  
 
 <!--SupportedSKUs-->
@@ -1521,11 +1521,11 @@ To validate this policy:
 3.   Verify that any downloads that are above the download size limit will complete without being paused.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-ignoremoupdatedownloadlimit"></a>**Update/IgnoreMOUpdateDownloadLimit**  
 
 <!--SupportedSKUs-->
@@ -1586,11 +1586,11 @@ To validate this policy:
 2.  Run the scheduled task on phone to check for OS updates in the background. For example, on a mobile device, run the following commands in TShell:
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-managepreviewbuilds"></a>**Update/ManagePreviewBuilds**  
 
 <!--SupportedSKUs-->
@@ -1637,11 +1637,11 @@ The following list shows the supported values:
 -   2 - Enable Preview builds
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-pausedeferrals"></a>**Update/PauseDeferrals**  
 
 <!--SupportedSKUs-->
@@ -1696,11 +1696,11 @@ The following list shows the supported values:
 -   1 – Deferrals are paused.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-pausefeatureupdates"></a>**Update/PauseFeatureUpdates**  
 
 <!--SupportedSKUs-->
@@ -1749,11 +1749,11 @@ The following list shows the supported values:
 -   1 – Feature Updates are paused for 60 days or until value set to back to 0, whichever is sooner.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-pausefeatureupdatesstarttime"></a>**Update/PauseFeatureUpdatesStartTime**  
 
 <!--SupportedSKUs-->
@@ -1794,11 +1794,11 @@ Added in Windows 10, version 1703. Specifies the date and time when the IT admi
 Value type is string. Supported operations are Add, Get, Delete, and Replace.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-pausequalityupdates"></a>**Update/PauseQualityUpdates**  
 
 <!--SupportedSKUs-->
@@ -1844,11 +1844,11 @@ The following list shows the supported values:
 -   1 – Quality Updates are paused for 35 days or until value set back to 0, whichever is sooner.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-pausequalityupdatesstarttime"></a>**Update/PauseQualityUpdatesStartTime**  
 
 <!--SupportedSKUs-->
@@ -1889,22 +1889,22 @@ Added in Windows 10, version 1703. Specifies the date and time when the IT admi
 Value type is string. Supported operations are Add, Get, Delete, and Replace.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-phoneupdaterestrictions"></a>**Update/PhoneUpdateRestrictions**  
 
 <!--Description-->
 This policy is deprecated. Use [Update/RequireUpdateApproval](#update-requireupdateapproval) instead.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-requiredeferupgrade"></a>**Update/RequireDeferUpgrade**  
 
 <!--SupportedSKUs-->
@@ -1954,11 +1954,11 @@ The following list shows the supported values:
 -   1 – User gets upgrades from Semi-Annual Channel.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-requireupdateapproval"></a>**Update/RequireUpdateApproval**  
 
 <!--SupportedSKUs-->
@@ -2010,11 +2010,11 @@ The following list shows the supported values:
 -   1 – The device only installs updates that are both applicable and on the Approved Updates list. Set this policy to 1 if IT wants to control the deployment of updates on devices, such as when testing is required prior to deployment.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-scheduleimminentrestartwarning"></a>**Update/ScheduleImminentRestartWarning**  
 
 <!--SupportedSKUs-->
@@ -2059,11 +2059,11 @@ The default value is 15 (minutes).
 Supported values are 15, 30, or 60 (minutes).
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-schedulerestartwarning"></a>**Update/ScheduleRestartWarning**  
 
 <!--SupportedSKUs-->
@@ -2112,11 +2112,11 @@ The default value is 4 (hours).
 Supported values are 2, 4, 8, 12, or 24 (hours).
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-scheduledinstallday"></a>**Update/ScheduledInstallDay**  
 
 <!--SupportedSKUs-->
@@ -2172,11 +2172,11 @@ The following list shows the supported values:
 -   7 – Saturday
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-scheduledinstalleveryweek"></a>**Update/ScheduledInstallEveryWeek**  
 
 <!--SupportedSKUs-->
@@ -2219,11 +2219,11 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 </ul>
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-scheduledinstallfirstweek"></a>**Update/ScheduledInstallFirstWeek**  
 
 <!--SupportedSKUs-->
@@ -2266,11 +2266,11 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 </ul>
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-scheduledinstallfourthweek"></a>**Update/ScheduledInstallFourthWeek**  
 
 <!--SupportedSKUs-->
@@ -2313,11 +2313,11 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 </ul>
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-scheduledinstallsecondweek"></a>**Update/ScheduledInstallSecondWeek**  
 
 <!--SupportedSKUs-->
@@ -2360,11 +2360,11 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 </ul>
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-scheduledinstallthirdweek"></a>**Update/ScheduledInstallThirdWeek**  
 
 <!--SupportedSKUs-->
@@ -2407,11 +2407,11 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 </ul>
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-scheduledinstalltime"></a>**Update/ScheduledInstallTime**  
 
 <!--SupportedSKUs-->
@@ -2462,11 +2462,11 @@ Supported values are 0-23, where 0 = 12 AM and 23 = 11 PM.
 The default value is 3.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-setautorestartnotificationdisable"></a>**Update/SetAutoRestartNotificationDisable**  
 
 <!--SupportedSKUs-->
@@ -2512,11 +2512,11 @@ The following list shows the supported values:
 -   1 – Disabled
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-setedurestart"></a>**Update/SetEDURestart**  
 
 <!--SupportedSKUs-->
@@ -2562,11 +2562,11 @@ The following list shows the supported values:
 - 1 - configured
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-updateserviceurl"></a>**Update/UpdateServiceUrl**  
 
 <!--SupportedSKUs-->
@@ -2637,11 +2637,11 @@ Example
 ```
 
 <!--/Example-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="update-updateserviceurlalternate"></a>**Update/UpdateServiceUrlAlternate**  
 
 <!--SupportedSKUs-->
@@ -2691,7 +2691,7 @@ Value type is string and the default value is an empty string, "". If the settin
 > This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -2700,7 +2700,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 
 <!--StartHoloLens-->
 ## <a href="" id="hololenspolicies"></a>Update policies supported by Windows Holographic for Business  

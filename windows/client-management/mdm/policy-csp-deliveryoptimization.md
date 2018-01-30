@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - DeliveryOptimization
@@ -17,7 +17,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## DeliveryOptimization policies  
 
 <dl>
@@ -98,7 +98,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-doabsolutemaxcachesize"></a>**DeliveryOptimization/DOAbsoluteMaxCacheSize**  
 
 <!--SupportedSKUs-->
@@ -143,11 +143,11 @@ Added in Windows 10, version 1607. Specifies the maximum size in GB of Delivery
 The default value is 10.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-doallowvpnpeercaching"></a>**DeliveryOptimization/DOAllowVPNPeerCaching**  
 
 <!--SupportedSKUs-->
@@ -197,11 +197,11 @@ The following list shows the supported values:
 -   1 - Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-dodelaybackgrounddownloadfromhttp"></a>**DeliveryOptimization/DODelayBackgroundDownloadFromHttp**  
 
 <!--SupportedSKUs-->
@@ -242,11 +242,11 @@ Added in Windows 10, next major update. This policy allows you to delay the use 
 After the max delay is reached, the download will resume using HTTP, either downloading the entire payload or complementing the bytes that could not be downloaded from peers. Note that a download that is waiting for peer sources, will appear to be stuck for the end user. The recommended value is 1 hour (3600).
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-dodelayforegrounddownloadfromhttp"></a>**DeliveryOptimization/DODelayForegroundDownloadFromHttp**  
 
 <!--SupportedSKUs-->
@@ -299,11 +299,11 @@ The following list shows the supported values as number of seconds:
 -   Default is not configured.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-dodownloadmode"></a>**DeliveryOptimization/DODownloadMode**  
 
 <!--SupportedSKUs-->
@@ -357,11 +357,11 @@ The following list shows the supported values:
 -   100 - Bypass mode. Do not use Delivery Optimization and use BITS instead. Added in Windows 10, version 1607.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-dogroupid"></a>**DeliveryOptimization/DOGroupId**  
 
 <!--SupportedSKUs-->
@@ -407,11 +407,11 @@ This Policy specifies an arbitrary group ID that the device belongs to. Use this
 > You must use a GUID as the group ID.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-dogroupidsource"></a>**DeliveryOptimization/DOGroupIdSource**  
 
 <!--SupportedSKUs-->
@@ -467,11 +467,11 @@ The following list shows the supported values:
 -   4 - DNS suffix
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-domaxcacheage"></a>**DeliveryOptimization/DOMaxCacheAge**  
 
 <!--SupportedSKUs-->
@@ -516,11 +516,11 @@ Specifies the maximum time in seconds that each file is held in the Delivery Opt
 The default value is 259200 seconds (3 days).
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-domaxcachesize"></a>**DeliveryOptimization/DOMaxCacheSize**  
 
 <!--SupportedSKUs-->
@@ -565,11 +565,11 @@ Specifies the maximum cache size that Delivery Optimization can utilize, as a pe
 The default value is 20.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-domaxdownloadbandwidth"></a>**DeliveryOptimization/DOMaxDownloadBandwidth**  
 
 <!--SupportedSKUs-->
@@ -614,11 +614,11 @@ Added in Windows 10, version 1607. Specifies the maximum download bandwidth in 
 The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-domaxuploadbandwidth"></a>**DeliveryOptimization/DOMaxUploadBandwidth**  
 
 <!--SupportedSKUs-->
@@ -663,11 +663,11 @@ Specifies the maximum upload bandwidth in KiloBytes/second that a device will us
 The default value is 0, which permits unlimited possible bandwidth (optimized for minimal usage of upload bandwidth).
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-dominbackgroundqos"></a>**DeliveryOptimization/DOMinBackgroundQos**  
 
 <!--SupportedSKUs-->
@@ -712,11 +712,11 @@ Added in Windows 10, version 1607. Specifies the minimum download QoS (Quality 
 The default value is 500.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-dominbatterypercentageallowedtoupload"></a>**DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload**  
 
 <!--SupportedSKUs-->
@@ -760,11 +760,11 @@ Added in Windows 10, version 1703. Specifies any value between 1 and 100 (in pe
 The default value is 0. The value 0 (zero) means "not limited" and the cloud service default value will be used.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-domindisksizeallowedtopeer"></a>**DeliveryOptimization/DOMinDiskSizeAllowedToPeer**  
 
 <!--SupportedSKUs-->
@@ -812,11 +812,11 @@ Added in Windows 10, version 1703. Specifies the required minimum disk size (cap
 The default value is 32 GB.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-dominfilesizetocache"></a>**DeliveryOptimization/DOMinFileSizeToCache**  
 
 <!--SupportedSKUs-->
@@ -861,11 +861,11 @@ Added in Windows 10, version 1703. Specifies the minimum content file size in MB
 The default value is 100 MB.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-dominramallowedtopeer"></a>**DeliveryOptimization/DOMinRAMAllowedToPeer**  
 
 <!--SupportedSKUs-->
@@ -910,11 +910,11 @@ Added in Windows 10, version 1703. Specifies the minimum RAM size in GB required
 The default value is 4 GB.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-domodifycachedrive"></a>**DeliveryOptimization/DOModifyCacheDrive**  
 
 <!--SupportedSKUs-->
@@ -959,11 +959,11 @@ Added in Windows 10, version 1607. Specifies the drive that Delivery Optimizati
 By default, %SystemDrive% is used to store the cache.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-domonthlyuploaddatacap"></a>**DeliveryOptimization/DOMonthlyUploadDataCap**  
 
 <!--SupportedSKUs-->
@@ -1010,11 +1010,11 @@ The value 0 (zero) means "unlimited"; No monthly upload limit is applied if 0 is
 The default value is 20.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-dopercentagemaxbackdownloadbandwidth"></a>**DeliveryOptimization/DOPercentageMaxBackDownloadBandwidth**  
 
 <!--SupportedSKUs-->
@@ -1055,22 +1055,22 @@ Added in Windows 10, next major update. Specifies the maximum background downloa
 Note that downloads from LAN peers will not be throttled even when this policy is set.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-dopercentagemaxdownloadbandwidth"></a>**DeliveryOptimization/DOPercentageMaxDownloadBandwidth**  
 
 <!--Description-->
 This policy is deprecated. Use [DOPercentageMaxForeDownloadBandwidth](#deliveryoptimization-dopercentagemaxforedownloadbandwidth) and [DOPercentageMaxBackDownloadBandwidth](#deliveryoptimization-dopercentagemaxbackdownloadbandwidth) policies instead.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-dopercentagemaxforedownloadbandwidth"></a>**DeliveryOptimization/DOPercentageMaxForeDownloadBandwidth**  
 
 <!--SupportedSKUs-->
@@ -1111,11 +1111,11 @@ Added in Windows 10, next major update. Specifies the maximum foreground downloa
 Note that downloads from LAN peers will not be throttled even when this policy is set.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-dorestrictpeerselectionby"></a>**DeliveryOptimization/DORestrictPeerSelectionBy**  
 
 <!--SupportedSKUs-->
@@ -1163,11 +1163,11 @@ The following list shows the supported values:
 -   1 - Subnet mask.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth"></a>**DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth**  
 
 <!--SupportedSKUs-->
@@ -1216,11 +1216,11 @@ This policy allows an IT Admin to define the following:
 -  % of throttle for foreground traffic outside of business hours
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth"></a>**DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth**  
 
 <!--SupportedSKUs-->
@@ -1269,7 +1269,7 @@ This policy allows an IT Admin to define the following:
 -  % of throttle for foreground traffic outside of business hours
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -1278,7 +1278,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>DeliveryOptimization policies supported by Microsoft Surface Hub  
