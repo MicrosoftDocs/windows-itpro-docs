@@ -53,25 +53,22 @@ The changes in App-V for Windows 10, version 1607 impact existing implementation
 
 * The App-V client is installed on user devices automatically with Windows 10, version 1607, and no longer has to be deployed separately. Performing an in-place upgrade to Windows 10, version 1607, on user devices automatically installs the App-V client.
 
-* The App-V application sequencer is available from the [Windows 10 Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). In previous releases of App-V, the application sequencer was included in the Microsoft Desktop Optimization Pack. Although you’ll need to use the new application sequencer to create new virtualized applications, existing virtualized applications will continue to work.
+* In previous releases of App-V, the application sequencer was included in the Microsoft Desktop Optimization Pack. Although you’ll need to use the new application sequencer to create new virtualized applications, existing virtualized applications will continue to work. The App-V application sequencer is available from the [Windows 10 Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).
 
-    >[!NOTE]
-    >If you're already using App-V 5.x, you don't need to re-deploy the App-V server components as they haven't changed since App-V 5.0 was released. 
+ >[!NOTE]
+ >If you're already using App-V 5.x, you don't need to redeploy the App-V server components, as they haven't changed since App-V 5.0's release.
 
 For more information about how to configure an existing App-V installation after upgrading user devices to Windows 10, see [Upgrading to App-V for Windows 10 from an existing installation](appv-upgrading-to-app-v-for-windows-10-from-an-existing-installation.md) and [Migrating to App-V for Windows 10 from a previous version](appv-migrating-to-appv-from-a-previous-version.md).
 
 >[!IMPORTANT]
->You can upgrade your existing App-V installation to Windows 10, version 1607 from App-V versions 5.0 SP2 and higher only. If you are using a previous version of App-V, you’ll need to upgrade from that version to App-V 5.0 SP2 before you upgrade to Windows 10, version 1607.
- 
-## Support for System Center 
+>You can only upgrade your existing App-V installation to Windows 10, version 1607 if it's version 5.0 SP2 or higher. If you're using an older version of App-V, you’ll need to upgrade from that version to App-V 5.0 SP2 before you can upgrade to Windows 10, version 1607.
+
+## Support for System Center
+
 App-V supports System Center 2016 and System Center 2012 R2 Configuration Manager SP1. See [Planning for App-V Integration with Configuration Manager](https://technet.microsoft.com/library/jj822982.aspx) for information about integrating your App-V environment with Configuration Manager.
 
 ## Related topics
-- [Release Notes for App-V for Windows 10, version 1607](appv-release-notes-for-appv-for-windows.md)
 
-- [Release Notes for App-V for Windows 10, version 1703](appv-release-notes-for-appv-for-windows-1703.md)
+* [Release Notes for App-V for Windows 10, version 1607](appv-release-notes-for-appv-for-windows.md)
 
-## Have a suggestion for App-V?
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
-
-
+* [Release Notes for App-V for Windows 10, version 1703](appv-release-notes-for-appv-for-windows-1703.md)
