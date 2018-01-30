@@ -1327,14 +1327,14 @@ The following list shows the supported values:
 <!--Description-->
 This policy setting lets you decide how much data to send to Microsoft about the book you're reading from the Books tab in Microsoft Edge.
 
-If you enable this setting, Microsoft Edge sends additional telemetry data, on top of the basic telemetry data, from the Books tab. If you disable or don't configure this setting, Microsoft Edge only sends basic telemetry data, depending on your device configuration.
+If you enable this setting, Microsoft Edge sends additional diagnostic data, on top of the basic diagnostic data, from the Books tab. If you disable or don't configure this setting, Microsoft Edge only sends basic diagnostic data, depending on your device configuration.
 
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) - Disable. No additional telemetry.
--   1 - Enable. Additional telemetry for schools.
+-   0 (default) - Disable. No additional diagnostic data.
+-   1 - Enable. Additional diagnostic data for schools.
 
 <!--/SupportedValues-->
 <!--/Policy-->

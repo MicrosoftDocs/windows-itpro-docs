@@ -216,7 +216,7 @@ Added in Windows 10, version 1607. Returns the hardware device ID.
 Supported operation is Get.
 
 <a href="" id="provider-providerid-commercialid"></a>**Provider/*ProviderID*/CommercialID**  
-Added in Windows 10, version 1607. Configures the identifier used to uniquely associate this telemetry data of this device as belonging to a given organization. If your organization is participating in a program that requires this device to be identified as belonging to your organization then use this setting to provide that identification. The value for this setting will be provided by Microsoft as part of the onboarding process for the program. If you disable or do not configure this policy setting, then Microsoft will not be able to use this identifier to associate this machine and its telemetry data with your organization..
+Added in Windows 10, version 1607. Configures the identifier used to uniquely associate this diagnostic data of this device as belonging to a given organization. If your organization is participating in a program that requires this device to be identified as belonging to your organization then use this setting to provide that identification. The value for this setting will be provided by Microsoft as part of the onboarding process for the program. If you disable or do not configure this policy setting, then Microsoft will not be able to use this identifier to associate this machine and its diagnostic data with your organization..
 
 Supported operations are Add, Get, Replace, and Delete.
 

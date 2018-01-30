@@ -227,7 +227,7 @@ The XML below is the current version for this CSP.
                 <Replace />
               </AccessType>
               <DefaultValue>1</DefaultValue>
-              <Description>Return or set Windows Defender Advanced Threat Protection telemetry reporting frequency. Allowed values are: 1 - Normal, 2 - Expedite</Description>
+              <Description>Return or set Windows Defender Advanced Threat Protection diagnostic data reporting frequency. Allowed values are: 1 - Normal, 2 - Expedite</Description>
               <DFFormat>
                 <int />
               </DFFormat>

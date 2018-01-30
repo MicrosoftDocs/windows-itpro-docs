@@ -60,7 +60,7 @@ To effectively offboard the endpoints from the service, you'll need to disable t
 
 2. In Windows Defender Security Center portal, select **Endpoint management**> **Non-Windows**.
 
-3. Toggle the third-party provider switch button to turn stop telemetry from endpoints. 
+3. Toggle the third-party provider switch button to turn stop diagnostic data from endpoints. 
 
 >[!WARNING]
 >If you decide to turn on the third-party integration again after disabling the integration, you'll need to regenerate the token and reapply it on endpoints. 
