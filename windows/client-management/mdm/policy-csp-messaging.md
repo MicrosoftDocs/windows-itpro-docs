@@ -74,12 +74,14 @@ ms.date: 01/29/2018
 
 Added in Windows 10, version 1703. Enables or disables the MMS send/receive functionality on the device. For enterprises, this policy can be used to disable MMS on devices as part of the auditing or management requirement.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 - Disabled.
 -   1 (default) - Enabled.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -122,12 +124,14 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1607. Enables text message back up and restore and Messaging Everywhere. This policy allows an organization to disable these features to avoid information being stored on servers outside of their control.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 - message sync is not allowed and cannot be changed by the user.
 -   1 - message sync is allowed. The user can change this setting.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -173,12 +177,14 @@ The following list shows the supported values:
 
 Added in Windows 10, version 1703. Enables or disables the RCS send/receive functionality on the device. For enterprises, this policy can be used to disable RCS on devices as part of the auditing or management requirement.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 - Disabled.
 -   1 (default) - Enabled.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 

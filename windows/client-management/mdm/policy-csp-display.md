@@ -76,12 +76,14 @@ If you disable or do not configure this policy setting, GDI DPI Scaling might st
 
 If GDI DPI Scaling is configured to both turn off and turn on an application, the application will be turned off.
 
+<!--/Description-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Configure the setting for an app which has GDI DPI scaling enabled via MDM or any other supported mechanisms.
 2.   Run the app and observe blurry text.
 
-<!--/Description-->
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -132,12 +134,14 @@ If you disable or do not configure this policy setting, GDI DPI Scaling will not
 
 If GDI DPI Scaling is configured to both turn off and turn on an application, the application will be turned off.
 
+<!--/Description-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Configure the setting for an app which uses GDI.
 2.   Run the app and observe crisp text.
 
-<!--/Description-->
+<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 

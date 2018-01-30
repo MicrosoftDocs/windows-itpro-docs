@@ -166,12 +166,14 @@ Value type is string. Supported operations are Add, Get, Replace and Delete.
 <!--Description-->
 Added in Windows 10, next major release. Use this policy setting to specify if to display the Account protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
 
+<!--/Description-->
+<!--SupportedValues-->
 Valid values:
 
 - 0 - (Disable) The users can see the display of the Account protection area in Windows Defender Security Center.
 - 1 - (Enable) The users cannot see the display of the Account protection area in Windows Defender Security Center.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -266,12 +268,14 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, next major release. Use this policy setting if you want to disable the display of the Device security area in the Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
 
+<!--/Description-->
+<!--SupportedValues-->
 Valid values:
 
 - 0 - (Disable) The users can see the display of the Device security area in Windows Defender Security Center.
 - 1 - (Enable) The users cannot see the display of the Device secuirty area in Windows Defender Security Center.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -830,12 +834,14 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, next major update. Use this policy setting to hide the Ransomware data recovery area in Windows Defender Security Center.
 
+<!--/Description-->
+<!--SupportedValues-->
 Valid values:
 
 - 0 - (Disable or not configured) The Ransomware data recovery area will be visible.
 - 1 - (Enable) The Ransomware data recovery area is hidden.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -878,12 +884,14 @@ Valid values:
 <!--Description-->
 Added in Windows 10, next major update. Use this policy to hide the Secure boot area in the Windows Defender Security Center.
 
+<!--/Description-->
+<!--SupportedValues-->
 Valid values:
 
 - 0 - (Disable or not configured) The Secure boot area is displayed.
 - 1 - (Enable) The Secure boot area is hidden.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -926,12 +934,14 @@ Valid values:
 <!--Description-->
 Added in Windows 10, next major update. Use this policy to hide the Security processor (TPM) troubleshooting area in the Windows Defender Security Center.
 
+<!--/Description-->
+<!--SupportedValues-->
 Valid values:
 
 - 0 - (Disable or not configured) The Security processor (TPM) troubleshooting area is displayed.
 - 1 - (Enable) The Security processor (TPM) troubleshooting area is hidden.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>

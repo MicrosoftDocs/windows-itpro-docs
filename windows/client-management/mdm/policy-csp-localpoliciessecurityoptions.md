@@ -293,13 +293,16 @@ Disabling the Administrator account can become a maintenance issue under certain
 Under Safe Mode boot, the disabled Administrator account will only be enabled if the machine is non-domain joined and there are no other local active administrator accounts.  If the computer is domain joined the disabled administrator will not be enabled.
 
 Default: Disabled.
-Valid values:  
-- 0 - local Administrator account is disabled
-- 1 - local Administrator account is enabled
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--SupportedValues-->
+Valid values:  
+- 0 - local Administrator account is disabled
+- 1 - local Administrator account is enabled
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -343,15 +346,18 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 This security setting determines if the Guest account is enabled or disabled.
 
 Default: Disabled.
-Valid values:  
-- 0 - local Guest account is disabled
-- 1 - local Guest account is enabled
 
 Note: If the Guest account is disabled and the security option Network Access: Sharing and Security Model for local accounts is set to Guest Only, network logons, such as those performed by the Microsoft Network Server (SMB Service), will fail.
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--SupportedValues-->
+Valid values:  
+- 0 - local Guest account is disabled
+- 1 - local Guest account is enabled
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -397,9 +403,6 @@ Accounts: Limit local account use of blank passwords to console logon only
 This security setting determines whether local accounts that are not password protected can be used to log on from locations other than the physical computer console. If enabled, local accounts that are not password protected will only be able to log on at the computer's keyboard.
 
 Default: Enabled.
-Valid values:  
-- 0 -  disabled - local accounts that are not password protected can be used to log on from locations other than the physical computer console
-- 1 -  enabled - local accounts that are not password protected will only be able to log on at the computer's keyboard
 
 Warning:
 
@@ -412,6 +415,12 @@ It is possible for applications that use remote interactive logons to bypass thi
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--SupportedValues-->
+Valid values:  
+- 0 -  disabled - local accounts that are not password protected can be used to log on from locations other than the physical computer console
+- 1 -  enabled - local accounts that are not password protected will only be able to log on at the computer's keyboard
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1086,14 +1095,17 @@ In order to take advantage of this policy on domain controllers, all domain cont
 <!--Description-->
 Interactive Logon:Display user information when the session is locked  
 
+
+Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
+<!--/Description-->
+<!--SupportedValues-->
 Valid values:
 - 1 - User display name, domain and user names
 - 2 - User display name only
 - 3 - Do not display user information
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1142,13 +1154,16 @@ If this policy is enabled, the username will not be shown.
 If this policy is disabled, the username will be shown.
 
 Default: Disabled.
-Valid values:  
-- 0 - disabled (username will be shown)
-- 1 - enabled (username will not be shown)
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--SupportedValues-->
+Valid values:  
+- 0 - disabled (username will be shown)
+- 1 - enabled (username will not be shown)
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1198,13 +1213,16 @@ If this policy is enabled, the username will not be shown.
 If this policy is disabled, the username will be shown.
 
 Default: Disabled.
-Valid values:  
-- 0 - disabled (username will be shown)
-- 1 - enabled (username will not be shown)
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--SupportedValues-->
+Valid values:  
+- 0 - disabled (username will be shown)
+- 1 - enabled (username will not be shown)
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1255,13 +1273,16 @@ If this policy is disabled, any user is required to press CTRL+ALT+DEL before lo
 
 Default on domain-computers: Enabled: At least Windows  8/Disabled: Windows 7 or earlier.
 Default on stand-alone computers: Enabled.
-Valid values:  
-- 0 - disabled
-- 1 - enabled (a user is not required to press CTRL+ALT+DEL to log on)
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--SupportedValues-->
+Valid values:  
+- 0 - disabled
+- 1 - enabled (a user is not required to press CTRL+ALT+DEL to log on)
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1307,13 +1328,16 @@ Interactive logon: Machine inactivity limit.
 Windows notices inactivity of a logon session, and if the amount of inactive time exceeds the inactivity limit, then the screen saver will run, locking the session.
 
 Default: not enforced.
-Valid values:  
-- 0 - disabled 
-- 1 - enabled (session will lock after amount of inactive time exceeds the inactivity limit)
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--SupportedValues-->
+Valid values:  
+- 0 - disabled 
+- 1 - enabled (session will lock after amount of inactive time exceeds the inactivity limit)
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -2203,13 +2227,16 @@ Network security: Allow PKU2U authentication requests to this computer to use on
 
 This policy will be turned off by default on domain joined machines. This would prevent online identities from authenticating to the domain joined machine.
 
-Valid values:  
-- 0 - disabled
-- 1 - enabled (allow PKU2U authentication requests to this computer to use online identities.)
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--SupportedValues-->
+Valid values:  
+- 0 - disabled
+- 1 - enabled (allow PKU2U authentication requests to this computer to use online identities.)
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -2477,13 +2504,16 @@ Recovery console: Allow automatic administrative logon
 This security setting determines if the password for the Administrator account must be given before access to the system is granted. If this option is enabled, the Recovery Console does not require you to provide a password, and it automatically logs on to the system.
 
 Default: This policy is not defined and automatic administrative logon is not allowed.
-Valid values:  
-- 0 - disabled
-- 1 - enabled (allow automatic administrative logon)
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--SupportedValues-->
+Valid values:  
+- 0 - disabled
+- 1 - enabled (allow automatic administrative logon)
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -2534,13 +2564,16 @@ When this policy is disabled, the option to shut down the computer does not appe
 
 Default on workstations: Enabled.
 Default on servers: Disabled.
-Valid values:  
-- 0 - disabled
-- 1 - enabled (allow system to be shut down without having to log on)
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--SupportedValues-->
+Valid values:  
+- 0 - disabled
+- 1 - enabled (allow system to be shut down without having to log on)
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -2688,15 +2721,18 @@ This policy setting controls whether User Interface Accessibility (UIAccess or U
 Enabled: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you do not disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop.
 
 Disabled: (Default)  
-Valid values:  
-- 0 - disabled
-- 1 - enabled (allow UIAccess applications to prompt for elevation without using the secure desktop)
 
 The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--SupportedValues-->
+Valid values:  
+- 0 - disabled
+- 1 - enabled (allow UIAccess applications to prompt for elevation without using the secure desktop)
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>

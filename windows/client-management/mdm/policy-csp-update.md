@@ -357,6 +357,15 @@ Enables the IT admin to manage automatic update behavior to scan, download, and 
 
 Supported operations are Get and Replace.
 
+
+> [!IMPORTANT]
+> This option should be used only for systems under regulatory compliance, as you will not get security updates as well.
+ 
+
+If the policy is not configured, end-users get the default behavior (Auto install and restart).
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Notify the user before downloading the update. This policy is used by the enterprise who wants to enable the end-users to manage data usage. With this option users are notified when there are updates that apply to the device and are ready for download. Users can download and install the updates from the Windows Update control panel.
@@ -366,13 +375,7 @@ The following list shows the supported values:
 -   4 – Auto install and restart without end-user control. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This setting option also sets the end-user control panel to read-only.
 -   5 – Turn off automatic updates.
 
-> [!IMPORTANT]
-> This option should be used only for systems under regulatory compliance, as you will not get security updates as well.
- 
-
-If the policy is not configured, end-users get the default behavior (Auto install and restart).
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -469,12 +472,14 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1607. Allows the IT admin to manage whether to scan for app updates from Microsoft Update.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed or not configured.
 -   1 – Allowed. Accepts updates received through Microsoft Update.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -724,12 +729,14 @@ Supported values are 15, 30, 60, 120, and 240 (minutes).
 <!--Description-->
 Added in Windows 10, version 1703. Allows the IT Admin to specify the method by which the auto-restart required notification is dismissed.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   1 (default) – Auto Dismissal.
 -   2 – User Dismissal.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1388,12 +1395,14 @@ The default value is 7 days.
 
 Added in Windows 10, version 1607. Allows IT Admins to exclude Windows Update (WU) drivers during updates.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Allow Windows Update drivers.
 -   1 – Exclude Windows Update drivers.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1439,12 +1448,14 @@ Added in the April service release of Windows 10, version 1607. Allows Windows U
 > [!NOTE]
 > This setting should only be used in combination with an alternate download URL and configured to use ISV file cache.  This setting is used when the intranet update service does not provide download URLs in the update metadata for files which are available on the alternate download server.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Disabled.
 -   1 – Enabled.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1556,10 +1567,6 @@ Added in Windows 10, version 1703. Specifies whether to ignore the MO download 
 > Setting this policy might cause devices to incur costs from MO operators.
 
 
-To validate this policy:
-
-1.  Enable the policy and ensure the device is on a cellular network.
-2.  Run the scheduled task on phone to check for OS updates in the background. For example, on a mobile device, run the following commands in TShell: 
       - `exec-device schtasks.exe -arguments ""/run /tn """"\Microsoft\Windows\WindowsUpdate\AUScheduledInstall"""" /I""`
 
 3.   Verify that any downloads that are above the download size limit will complete without being paused.
@@ -1572,6 +1579,13 @@ The following list shows the supported values:
 -   1 – Ignore MO download limit (allow unlimited downloading) for OS updates.
 
 <!--/SupportedValues-->
+<!--Validation-->
+To validate this policy:
+
+1.  Enable the policy and ensure the device is on a cellular network.
+2.  Run the scheduled task on phone to check for OS updates in the background. For example, on a mobile device, run the following commands in TShell:
+
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1614,13 +1628,15 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1709. Used to manage Windows 10 Insider Preview builds. Value type is integer.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 - Disable Preview builds
 -   1 - Disable Preview builds once the next release is public
 -   2 - Enable Preview builds
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1667,16 +1683,19 @@ The following list shows the supported values:
 
 Allows IT Admins to pause updates and upgrades for up to 5 weeks. Paused deferrals will be reset after 5 weeks.
 
-The following list shows the supported values:
-
--   0 (default) – Deferrals are not paused.
--   1 – Deferrals are paused.
 
 If the "Specify intranet Microsoft update service location" policy is enabled, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
 If the "Allow Telemetry" policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
 <!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – Deferrals are not paused.
+-   1 – Deferrals are paused.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1722,12 +1741,14 @@ Since this policy is not blocked, you will not get a failure message when you us
 
 Added in Windows 10, version 1607. Allows IT Admins to pause Feature Updates for up to 60 days.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Feature Updates are not paused.
 -   1 – Feature Updates are paused for 60 days or until value set to back to 0, whichever is sooner.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1815,12 +1836,14 @@ Value type is string. Supported operations are Add, Get, Delete, and Replace.
 <!--Description-->
 Added in Windows 10, version 1607. Allows IT Admins to pause Quality Updates.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Quality Updates are not paused.
 -   1 – Quality Updates are paused for 35 days or until value set back to 0, whichever is sooner.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1923,12 +1946,14 @@ This policy is deprecated. Use [Update/RequireUpdateApproval](#update-requireupd
 
 Allows the IT admin to set a device to Semi-Annual Channel train.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – User gets upgrades from Semi-Annual Channel (Targeted).
 -   1 – User gets upgrades from Semi-Annual Channel.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1977,12 +2002,14 @@ Allows the IT admin to restrict the updates that are installed on a device to on
 
 Supported operations are Get and Replace.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not configured. The device installs all applicable updates.
 -   1 – The device only installs updates that are both applicable and on the Approved Updates list. Set this policy to 1 if IT wants to control the deployment of updates on devices, such as when testing is required prior to deployment.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -2131,6 +2158,8 @@ The data type is a integer.
 
 Supported operations are Add, Delete, Get, and Replace.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Every day
@@ -2142,7 +2171,7 @@ The following list shows the supported values:
 -   6 – Friday
 -   7 – Saturday
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -2475,12 +2504,14 @@ The default value is 3.
 <!--Description-->
 Added in Windows 10, version 1703. Allows the IT Admin to disable auto-restart notifications for update installations.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Enabled
 -   1 – Disabled
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -2523,12 +2554,14 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1703. For devices in a cart, this policy skips all restart checks to ensure that the reboot will happen at ScheduledInstallTime.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 - 0 - not configured
 - 1 - configured
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -2576,11 +2609,15 @@ Allows the device to check for updates from a WSUS server instead of Microsoft U
 
 Supported operations are Get and Replace.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   Not configured. The device checks for updates from Microsoft Update.
 -   Set to a URL, such as `http://abcd-srv:8530`. The device checks for updates from the WSUS server at the specified URL.
 
+<!--/SupportedValues-->
+<!--Example-->
 Example
 
 ``` syntax
@@ -2599,7 +2636,7 @@ Example
         </Replace>
 ```
 
-<!--/Description-->
+<!--/Example-->
 <!--EndPolicy-->
 
 <hr/>

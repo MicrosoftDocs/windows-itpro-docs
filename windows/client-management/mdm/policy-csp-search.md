@@ -106,12 +106,14 @@ ms.date: 01/29/2018
 <!--Description-->
 Added in Windows 10, version 1709. Allow search and Cortana to search cloud sources like OneDrive and SharePoint. This policy allows corporate administrators to control whether employees can turn off/on the search of these cloud sources. The default policy value is to allow employees access to the setting that controls search of cloud sources.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -332,14 +334,17 @@ This policy has been deprecated.
 <!--Description-->
 Allows the use of diacritics.
 
+
+Most restricted value is 0.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-Most restricted value is 0.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -425,14 +430,17 @@ Allow Windows indexer. Value type is integer.
 <!--Description-->
 Specifies whether to always use automatic language detection when indexing content and properties.
 
+
+Most restricted value is 0.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-Most restricted value is 0.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -475,12 +483,14 @@ Most restricted value is 0.
 <!--Description-->
 If enabled, the search indexer backoff feature will be disabled. Indexing will continue at full speed even when system activity is high. If disabled, backoff logic will be used to throttle back indexing activity when system activity is high. Default is disabled.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Disable.
 -   1 – Enable.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -527,12 +537,14 @@ If you enable this policy setting, locations on removable drives cannot be added
 
 If you disable or do not configure this policy setting, locations on removable drives can be added to libraries. In addition, locations on removable drives can be indexed.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Disable.
 -   1 – Enable.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -634,12 +646,14 @@ Enable this policy if computers in your environment have extremely limited hard 
 
 When this policy is disabled or not configured, Windows Desktop Search automatically manages your index size.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Disable.
 -   1 (default) – Enable.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -682,12 +696,14 @@ The following list shows the supported values:
 <!--Description-->
 If enabled, clients will be unable to query this computer's index remotely. Thus, when they are browsing network shares that are stored on this computer, they will not search them using the index. If disabled, client search requests will use this computer's index..
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Disable.
 -   1 (default) – Enable.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -734,14 +750,17 @@ The following list shows the supported values:
 
 Specifies what level of safe search (filtering adult content) is required.
 
+
+Most restricted value is 0.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Strict, highest filtering against adult content.
 -   1 (default) – Moderate filtering against adult content (valid search results will not be filtered).
 
-Most restricted value is 0.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 

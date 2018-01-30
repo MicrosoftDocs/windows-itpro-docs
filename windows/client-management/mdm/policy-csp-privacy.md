@@ -504,15 +504,18 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1607. Specifies whether Windows apps can access account information.
 
+
+Most restricted value is 2.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – User in control.
 -   1 – Force allow.
 -   2 - Force deny.
 
-Most restricted value is 2.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -684,15 +687,18 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 <!--Description-->
 Added in Windows 10, version 1607. Specifies whether Windows apps can access the calendar.
 
+
+Most restricted value is 2.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – User in control.
 -   1 – Force allow.
 -   2 - Force deny.
 
-Most restricted value is 2.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -864,15 +870,18 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 <!--Description-->
 Added in Windows 10, version 1607. Specifies whether Windows apps can access call history.
 
+
+Most restricted value is 2.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – User in control.
 -   1 – Force allow.
 -   2 - Force deny.
 
-Most restricted value is 2.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1044,15 +1053,18 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 <!--Description-->
 Added in Windows 10, version 1607. Specifies whether Windows apps can access the camera.
 
+
+Most restricted value is 2.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – User in control.
 -   1 – Force allow.
 -   2 - Force deny.
 
-Most restricted value is 2.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1224,15 +1236,18 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 <!--Description-->
 Added in Windows 10, version 1607. Specifies whether Windows apps can access contacts.
 
+
+Most restricted value is 2.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – User in control.
 -   1 – Force allow.
 -   2 - Force deny.
 
-Most restricted value is 2.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1404,15 +1419,18 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 <!--Description-->
 Added in Windows 10, version 1607. Specifies whether Windows apps can access email.
 
+
+Most restricted value is 2.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – User in control.
 -   1 – Force allow.
 -   2 - Force deny.
 
-Most restricted value is 2.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1584,15 +1602,18 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 <!--Description-->
 Added in Windows 10, version 1607. Specifies whether Windows apps can access location.
 
+
+Most restricted value is 2.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – User in control.
 -   1 – Force allow.
 -   2 - Force deny.
 
-Most restricted value is 2.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1764,15 +1785,18 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 <!--Description-->
 Added in Windows 10, version 1607. Specifies whether Windows apps can read or send messages (text or MMS).
 
+
+Most restricted value is 2.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – User in control.
 -   1 – Force allow.
 -   2 - Force deny.
 
-Most restricted value is 2.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1944,15 +1968,18 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 <!--Description-->
 Added in Windows 10, version 1607. Specifies whether Windows apps can access the microphone.
 
+
+Most restricted value is 2.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – User in control.
 -   1 – Force allow.
 -   2 - Force deny.
 
-Most restricted value is 2.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -2124,15 +2151,18 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 <!--Description-->
 Added in Windows 10, version 1607. Specifies whether Windows apps can access motion data.
 
+
+Most restricted value is 2.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – User in control.
 -   1 – Force allow.
 -   2 - Force deny.
 
-Most restricted value is 2.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -2304,15 +2334,18 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 <!--Description-->
 Added in Windows 10, version 1607. Specifies whether Windows apps can access notifications.
 
+
+Most restricted value is 2.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – User in control.
 -   1 – Force allow.
 -   2 - Force deny.
 
-Most restricted value is 2.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -2484,15 +2517,18 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 <!--Description-->
 Added in Windows 10, version 1607. Specifies whether Windows apps can make phone calls.
 
+
+Most restricted value is 2.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – User in control.
 -   1 – Force allow.
 -   2 - Force deny.
 
-Most restricted value is 2.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -2664,15 +2700,18 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 <!--Description-->
 Added in Windows 10, version 1607. Specifies whether Windows apps have access to control radios.
 
+
+Most restricted value is 2.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – User in control.
 -   1 – Force allow.
 -   2 - Force deny.
 
-Most restricted value is 2.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -3016,15 +3055,18 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family N
 <!--Description-->
 Added in Windows 10, version 1607. Specifies whether Windows apps can access trusted devices.
 
+
+Most restricted value is 2.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – User in control.
 -   1 – Force allow.
 -   2 - Force deny.
 
-Most restricted value is 2.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -3196,15 +3238,18 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 <!--Description-->
 Added in Windows 10, version 1703. Force allow, force deny or give user control of apps that can get diagnostic information about other running apps.
 
+
+Most restricted value is 2.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – User in control.
 -   1 – Force allow.
 -   2 - Force deny.
 
-Most restricted value is 2.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -3376,17 +3421,20 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family 
 <!--Description-->
 Added in Windows 10, version 1703. Specifies whether Windows apps can run in the background.
 
-The following list shows the supported values:
-
--   0 – User in control (default).
--   1 – Force allow.
--   2 - Force deny.
 
 Most restricted value is 2.
 > [!WARNING]
 > Be careful when determining which apps should have their background activity disabled. Communication apps normally update tiles and notifications through background processes. Turning off background activity for these types of apps could cause text message, email, and voicemail notifications to not function. This could also cause background email syncing to not function properly.
 
 <!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 – User in control (default).
+-   1 – Force allow.
+-   2 - Force deny.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -3558,15 +3606,18 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family 
 <!--Description-->
 Added in Windows 10, version 1607. Specifies whether Windows apps can sync with devices.
 
+
+Most restricted value is 2.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – User in control.
 -   1 – Force allow.
 -   2 - Force deny.
 
-Most restricted value is 2.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>

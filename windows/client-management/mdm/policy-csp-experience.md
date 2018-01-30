@@ -1080,13 +1080,15 @@ The following list shows the supported values:
 
 Allows IT admins to specify whether spotlight should be used on the user's lock screen. If your organization does not have an Enterprise spotlight content service, then this policy will behave the same as a setting of 1.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – None.
 -   1 (default) – Windows spotlight enabled.
 -   2 – placeholder only for future extension. Using this value has no effect.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1133,12 +1135,14 @@ If you enable this policy setting, users will no longer see feedback notificatio
 
 If you disable or do not configure this policy setting, users can control how often they receive feedback questions.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Feedback notifications are not disabled. The actual state of feedback notifications on the device will then depend on what GP has configured or what the user has configured locally.
 -   1 – Feedback notifications are disabled.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 
