@@ -117,7 +117,7 @@ Configuration for onboarded machines: telemetry reporting frequency | ./Device/V
 >[!TIP]
 > After onboarding the endpoint, you can choose to run a detection test to verify that an endpoint is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md).
 
-
+<!---
 ### Using the Azure Intune Portal to deploy Windows Defender Advanced Threat Protection policies on Windows 10 1607 and higher
 
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
@@ -179,6 +179,8 @@ Configuration for onboarded machines: telemetry reporting frequency | ./Device/V
 
   ![Image of deployment](images/atp-intune-save-deployment.png)
 
+
+-->
 ### Offboard and monitor endpoints
 
 For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
