@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - WindowsLogon
@@ -15,7 +15,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## WindowsLogon policies  
 
 <dl>
@@ -33,7 +33,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowslogon-disablelockscreenappnotifications"></a>**WindowsLogon/DisableLockScreenAppNotifications**  
 
 <!--SupportedSKUs-->
@@ -91,11 +91,11 @@ ADMX Info:
 -   GP ADMX file name: *logon.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowslogon-dontdisplaynetworkselectionui"></a>**WindowsLogon/DontDisplayNetworkSelectionUI**  
 
 <!--SupportedSKUs-->
@@ -153,11 +153,11 @@ ADMX Info:
 -   GP ADMX file name: *logon.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowslogon-hidefastuserswitching"></a>**WindowsLogon/HideFastUserSwitching**  
 
 <!--SupportedSKUs-->
@@ -210,7 +210,7 @@ To validate on Desktop, do the following:
 2.   Verify that the Switch account button in Start is hidden.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -219,5 +219,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

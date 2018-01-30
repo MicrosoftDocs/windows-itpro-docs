@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - Browser
@@ -17,7 +17,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## Browser policies  
 
 <dl>
@@ -140,7 +140,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-allowaddressbardropdown"></a>**Browser/AllowAddressBarDropdown**  
 
 <!--SupportedSKUs-->
@@ -192,11 +192,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed. Address bar drop-down is enabled.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-allowautofill"></a>**Browser/AllowAutofill**  
 
 <!--SupportedSKUs-->
@@ -254,11 +254,11 @@ To verify AllowAutofill is set to 0 (not allowed):
 4.  Verify the setting **Save form entries** is greyed out.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-allowbrowser"></a>**Browser/AllowBrowser**  
 
 <!--SupportedSKUs-->
@@ -313,11 +313,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-allowcookies"></a>**Browser/AllowCookies**  
 
 <!--SupportedSKUs-->
@@ -376,11 +376,11 @@ To verify AllowCookies is set to 0 (not allowed):
 4.  Verify the setting **Cookies** is greyed out.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-allowdevelopertools"></a>**Browser/AllowDeveloperTools**  
 
 <!--SupportedSKUs-->
@@ -433,11 +433,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-allowdonottrack"></a>**Browser/AllowDoNotTrack**  
 
 <!--SupportedSKUs-->
@@ -495,11 +495,11 @@ To verify AllowDoNotTrack is set to 0 (not allowed):
 4.  Verify the setting **Send Do Not Track requests** is greyed out.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-allowextensions"></a>**Browser/AllowExtensions**  
 
 <!--SupportedSKUs-->
@@ -546,11 +546,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-allowflash"></a>**Browser/AllowFlash**  
 
 <!--SupportedSKUs-->
@@ -597,11 +597,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-allowflashclicktorun"></a>**Browser/AllowFlashClickToRun**  
 
 <!--SupportedSKUs-->
@@ -648,11 +648,11 @@ The following list shows the supported values:
 -   1 (default) – Users must click the content, click a Click-to-Run button, or have the site appear on an auto-allow list before Microsoft Edge loads and runs Adobe Flash content.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-allowinprivate"></a>**Browser/AllowInPrivate**  
 
 <!--SupportedSKUs-->
@@ -701,11 +701,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-allowmicrosoftcompatibilitylist"></a>**Browser/AllowMicrosoftCompatibilityList**  
 
 <!--SupportedSKUs-->
@@ -757,11 +757,11 @@ The following list shows the supported values:
 -   1 (default) – Enabled.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-allowpasswordmanager"></a>**Browser/AllowPasswordManager**  
 
 <!--SupportedSKUs-->
@@ -819,11 +819,11 @@ To verify AllowPasswordManager is set to 0 (not allowed):
 4.  Verify the settings **Offer to save password** and **Manage my saved passwords** are greyed out.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-allowpopups"></a>**Browser/AllowPopups**  
 
 <!--SupportedSKUs-->
@@ -881,11 +881,11 @@ To verify AllowPopups is set to 0 (not allowed):
 4.  Verify the setting **Block pop-ups** is greyed out.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-allowsearchenginecustomization"></a>**Browser/AllowSearchEngineCustomization**  
 
 <!--SupportedSKUs-->
@@ -936,11 +936,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-allowsearchsuggestionsinaddressbar"></a>**Browser/AllowSearchSuggestionsinAddressBar**  
 
 <!--SupportedSKUs-->
@@ -989,11 +989,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-allowsmartscreen"></a>**Browser/AllowSmartScreen**  
 
 <!--SupportedSKUs-->
@@ -1051,11 +1051,11 @@ To verify AllowSmartScreen is set to 0 (not allowed):
 4.  Verify the setting **Help protect me from malicious sites and download with SmartScreen Filter** is greyed out.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-alwaysenablebookslibrary"></a>**Browser/AlwaysEnableBooksLibrary**  
 
 <!--SupportedSKUs-->
@@ -1102,11 +1102,11 @@ The following list shows the supported values:
 -   1 - Enable. Always show the Books Library, regardless of countries or region of activation.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-clearbrowsingdataonexit"></a>**Browser/ClearBrowsingDataOnExit**  
 
 <!--SupportedSKUs-->
@@ -1163,11 +1163,11 @@ To verify that browsing data is cleared on exit (ClearBrowsingDataOnExit is set 
 3.  Open Microsoft Edge and start typing the same URL in address bar. Verify that it does not auto-complete from history.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-configureadditionalsearchengines"></a>**Browser/ConfigureAdditionalSearchEngines**  
 
 <!--SupportedSKUs-->
@@ -1225,11 +1225,11 @@ The following list shows the supported values:
 -   1 – Additional search engines are allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-disablelockdownofstartpages"></a>**Browser/DisableLockdownOfStartPages**  
 
 <!--SupportedSKUs-->
@@ -1284,11 +1284,11 @@ The following list shows the supported values:
 -   1  – Disable lockdown of the Start pages and allow users to modify them.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-enableextendedbookstelemetry"></a>**Browser/EnableExtendedBooksTelemetry**  
 
 <!--SupportedSKUs-->
@@ -1327,21 +1327,21 @@ The following list shows the supported values:
 <!--Description-->
 This policy setting lets you decide how much data to send to Microsoft about the book you're reading from the Books tab in Microsoft Edge.
 
-If you enable this setting, Microsoft Edge sends additional telemetry data, on top of the basic telemetry data, from the Books tab. If you disable or don't configure this setting, Microsoft Edge only sends basic telemetry data, depending on your device configuration.
+If you enable this setting, Microsoft Edge sends additional diagnostic data, on top of the basic diagnostic data, from the Books tab. If you disable or don't configure this setting, Microsoft Edge only sends basic diagnostic data, depending on your device configuration.
 
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) - Disable. No additional telemetry.
--   1 - Enable. Additional telemetry for schools.
+-   0 (default) - Disable. No additional diagnostic data.
+-   1 - Enable. Additional diagnostic data for schools.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-enterprisemodesitelist"></a>**Browser/EnterpriseModeSiteList**  
 
 <!--SupportedSKUs-->
@@ -1392,11 +1392,11 @@ The following list shows the supported values:
 -   Set to a URL location of the enterprise site list.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-enterprisesitelistserviceurl"></a>**Browser/EnterpriseSiteListServiceUrl**  
 
 <!--SupportedSKUs-->
@@ -1437,11 +1437,11 @@ The following list shows the supported values:
 > This policy (introduced in Windows 10, version 1507) was deprecated in Windows 10, version 1511 by [Browser/EnterpriseModeSiteList](#browser-enterprisemodesitelist).
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-firstrunurl"></a>**Browser/FirstRunURL**  
 
 <!--SupportedSKUs-->
@@ -1489,11 +1489,11 @@ The data type is a string.
 The default value is an empty string. Otherwise, the string should contain the URL of the webpage users will see the first time Microsoft Edge is run. For example, “contoso.com”.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-homepages"></a>**Browser/HomePages**  
 
 <!--SupportedSKUs-->
@@ -1543,11 +1543,11 @@ Starting in Windows 10, version 1703, if you don’t want to send traffic to Mi
 > Turning this setting off, or not configuring it, sets your default Start pages to the webpages specified in App settings.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-lockdownfavorites"></a>**Browser/LockdownFavorites**  
 
 <!--SupportedSKUs-->
@@ -1603,11 +1603,11 @@ The following list shows the supported values:
 -   1 - Enabled. Lockdown Favorites.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-preventaccesstoaboutflagsinmicrosoftedge"></a>**Browser/PreventAccessToAboutFlagsInMicrosoftEdge**  
 
 <!--SupportedSKUs-->
@@ -1654,11 +1654,11 @@ The following list shows the supported values:
 -   1 – Users can't access the about:flags page in Microsoft Edge.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-preventfirstrunpage"></a>**Browser/PreventFirstRunPage**  
 
 <!--SupportedSKUs-->
@@ -1707,11 +1707,11 @@ The following list shows the supported values:
 -   1 – Employees don't see the First Run webpage.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-preventlivetiledatacollection"></a>**Browser/PreventLiveTileDataCollection**  
 
 <!--SupportedSKUs-->
@@ -1760,11 +1760,11 @@ The following list shows the supported values:
 -   1 – Microsoft servers will not be contacted if a site is pinned to Start from Microsoft Edge.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-preventsmartscreenpromptoverride"></a>**Browser/PreventSmartScreenPromptOverride**  
 
 <!--SupportedSKUs-->
@@ -1813,11 +1813,11 @@ The following list shows the supported values:
 -   1 – On.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-preventsmartscreenpromptoverrideforfiles"></a>**Browser/PreventSmartScreenPromptOverrideForFiles**  
 
 <!--SupportedSKUs-->
@@ -1864,11 +1864,11 @@ The following list shows the supported values:
 -   1 – On.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-preventusinglocalhostipaddressforwebrtc"></a>**Browser/PreventUsingLocalHostIPAddressForWebRTC**  
 
 <!--SupportedSKUs-->
@@ -1919,11 +1919,11 @@ The following list shows the supported values:
 -   1 – The localhost IP address is hidden.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-provisionfavorites"></a>**Browser/ProvisionFavorites**  
 
 <!--SupportedSKUs-->
@@ -1976,11 +1976,11 @@ If you disable or don't configure this setting, employees will see the favorites
 Data type is string.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-sendintranettraffictointernetexplorer"></a>**Browser/SendIntranetTraffictoInternetExplorer**  
 
 <!--SupportedSKUs-->
@@ -2033,11 +2033,11 @@ The following list shows the supported values:
 -   1 – Intranet traffic is sent to Microsoft Edge.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-setdefaultsearchengine"></a>**Browser/SetDefaultSearchEngine**  
 
 <!--SupportedSKUs-->
@@ -2094,11 +2094,11 @@ The following list shows the supported values:
 -   1 - Allows you to configure the default search engine for your employees.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-showmessagewhenopeningsitesininternetexplorer"></a>**Browser/ShowMessageWhenOpeningSitesInInternetExplorer**  
 
 <!--SupportedSKUs-->
@@ -2151,11 +2151,11 @@ The following list shows the supported values:
 -   1 – Interstitial pages are shown.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-syncfavoritesbetweenieandmicrosoftedge"></a>**Browser/SyncFavoritesBetweenIEAndMicrosoftEdge**  
 
 <!--SupportedSKUs-->
@@ -2217,11 +2217,11 @@ To verify that favorites are in synchronized between Internet Explorer and Micro
 </ol>
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="browser-usesharedfolderforbooks"></a>**Browser/UseSharedFolderForBooks**  
 
 <!--SupportedSKUs-->
@@ -2268,7 +2268,7 @@ The following list shows the supported values:
 -   1 - Use a shared folder.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -2277,7 +2277,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 
 <!--StartEAS-->
 ## <a href="" id="eas"></a>Browser policies that can be set using Exchange Active Sync (EAS)  

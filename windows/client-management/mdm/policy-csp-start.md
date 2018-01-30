@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - Start
@@ -15,7 +15,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## Start policies  
 
 <dl>
@@ -111,7 +111,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-allowpinnedfolderdocuments"></a>**Start/AllowPinnedFolderDocuments**  
 
 <!--SupportedSKUs-->
@@ -158,11 +158,11 @@ The following list shows the supported values:
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-allowpinnedfolderdownloads"></a>**Start/AllowPinnedFolderDownloads**  
 
 <!--SupportedSKUs-->
@@ -209,11 +209,11 @@ The following list shows the supported values:
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-allowpinnedfolderfileexplorer"></a>**Start/AllowPinnedFolderFileExplorer**  
 
 <!--SupportedSKUs-->
@@ -260,11 +260,11 @@ The following list shows the supported values:
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-allowpinnedfolderhomegroup"></a>**Start/AllowPinnedFolderHomeGroup**  
 
 <!--SupportedSKUs-->
@@ -311,11 +311,11 @@ The following list shows the supported values:
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-allowpinnedfoldermusic"></a>**Start/AllowPinnedFolderMusic**  
 
 <!--SupportedSKUs-->
@@ -362,11 +362,11 @@ The following list shows the supported values:
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-allowpinnedfoldernetwork"></a>**Start/AllowPinnedFolderNetwork**  
 
 <!--SupportedSKUs-->
@@ -413,11 +413,11 @@ The following list shows the supported values:
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-allowpinnedfolderpersonalfolder"></a>**Start/AllowPinnedFolderPersonalFolder**  
 
 <!--SupportedSKUs-->
@@ -464,11 +464,11 @@ The following list shows the supported values:
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-allowpinnedfolderpictures"></a>**Start/AllowPinnedFolderPictures**  
 
 <!--SupportedSKUs-->
@@ -515,11 +515,11 @@ The following list shows the supported values:
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-allowpinnedfoldersettings"></a>**Start/AllowPinnedFolderSettings**  
 
 <!--SupportedSKUs-->
@@ -566,11 +566,11 @@ The following list shows the supported values:
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-allowpinnedfoldervideos"></a>**Start/AllowPinnedFolderVideos**  
 
 <!--SupportedSKUs-->
@@ -617,11 +617,11 @@ The following list shows the supported values:
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-forcestartsize"></a>**Start/ForceStartSize**  
 
 <!--SupportedSKUs-->
@@ -675,11 +675,11 @@ The following list shows the supported values:
 -   2 - Force a fullscreen size of Start.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-hideapplist"></a>**Start/HideAppList**  
 
 <!--SupportedSKUs-->
@@ -741,11 +741,11 @@ The following list shows the supported values:
 -   3 - Hide all apps list, remove all apps button, and Disable "Show app list in Start menu" in Settings app.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-hidechangeaccountsettings"></a>**Start/HideChangeAccountSettings**  
 
 <!--SupportedSKUs-->
@@ -798,11 +798,11 @@ To validate on Desktop, do the following:
 2.   Open Start, click on the user tile, and verify that "Change account settings" is not available.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-hidefrequentlyusedapps"></a>**Start/HideFrequentlyUsedApps**  
 
 <!--SupportedSKUs-->
@@ -862,11 +862,11 @@ To validate on Desktop, do the following:
 6.   Check that most used apps do not appear in Start.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-hidehibernate"></a>**Start/HideHibernate**  
 
 <!--SupportedSKUs-->
@@ -923,11 +923,11 @@ To validate on Laptop, do the following:
 2.   Open Start, click on the Power button, and verify "Hibernate" is not available.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-hidelock"></a>**Start/HideLock**  
 
 <!--SupportedSKUs-->
@@ -980,11 +980,11 @@ To validate on Desktop, do the following:
 2.   Open Start, click on the user tile, and verify "Lock" is not available.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-hidepeoplebar"></a>**Start/HidePeopleBar**  
 
 <!--SupportedSKUs-->
@@ -1025,11 +1025,11 @@ Added in Windows 10, version 1709. Enabling this policy removes the people icon
 Value type is integer.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-hidepowerbutton"></a>**Start/HidePowerButton**  
 
 <!--SupportedSKUs-->
@@ -1085,11 +1085,11 @@ To validate on Desktop, do the following:
 2.   Open Start, and verify the power button is not available.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-hiderecentjumplists"></a>**Start/HideRecentJumplists**  
 
 <!--SupportedSKUs-->
@@ -1152,11 +1152,11 @@ To validate on Desktop, do the following:
 9.   Right Click pinned photos app and verify that there is no jumplist of recent items.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-hiderecentlyaddedapps"></a>**Start/HideRecentlyAddedApps**  
 
 <!--SupportedSKUs-->
@@ -1216,11 +1216,11 @@ To validate on Desktop, do the following:
 6.   Check that recently added apps do not appear in Start.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-hiderestart"></a>**Start/HideRestart**  
 
 <!--SupportedSKUs-->
@@ -1273,11 +1273,11 @@ To validate on Desktop, do the following:
 2.   Open Start, click on the Power button, and verify "Restart" and "Update and restart" are not available.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-hideshutdown"></a>**Start/HideShutDown**  
 
 <!--SupportedSKUs-->
@@ -1330,11 +1330,11 @@ To validate on Desktop, do the following:
 2.   Open Start, click on the Power button, and verify "Shut down" and "Update and shut down" are not available.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-hidesignout"></a>**Start/HideSignOut**  
 
 <!--SupportedSKUs-->
@@ -1387,11 +1387,11 @@ To validate on Desktop, do the following:
 2.   Open Start, click on the user tile, and verify "Sign out" is not available.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-hidesleep"></a>**Start/HideSleep**  
 
 <!--SupportedSKUs-->
@@ -1444,11 +1444,11 @@ To validate on Desktop, do the following:
 2.   Open Start, click on the Power button, and verify that "Sleep" is not available.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-hideswitchaccount"></a>**Start/HideSwitchAccount**  
 
 <!--SupportedSKUs-->
@@ -1501,11 +1501,11 @@ To validate on Desktop, do the following:
 2.   Open Start, click on the user tile, and verify that "Switch account" is not available.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-hideusertile"></a>**Start/HideUserTile**  
 
 <!--SupportedSKUs-->
@@ -1562,11 +1562,11 @@ To validate on Desktop, do the following:
 3.   Log in, and verify that the user tile is gone from Start.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-importedgeassets"></a>**Start/ImportEdgeAssets**  
 
 <!--SupportedSKUs-->
@@ -1622,11 +1622,11 @@ To validate on Desktop, do the following:
 4.   Verify that all Edge assets defined in XML show up in %LOCALAPPDATA%\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState path.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-nopinningtotaskbar"></a>**Start/NoPinningToTaskbar**  
 
 <!--SupportedSKUs-->
@@ -1682,11 +1682,11 @@ To validate on Desktop, do the following:
 5.   Verify that More->Pin to taskbar menu does not show.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="start-startlayout"></a>**Start/StartLayout**  
 
 <!--SupportedSKUs-->
@@ -1731,7 +1731,7 @@ Allows you to override the default Start layout and prevents the user from chang
 For further details on how to customize the Start layout, please see [Customize and export Start layout](https://docs.microsoft.com/en-us/windows/configuration/customize-and-export-start-layout) and [Configure Windows 10 taskbar](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-10-taskbar).
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -1740,5 +1740,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

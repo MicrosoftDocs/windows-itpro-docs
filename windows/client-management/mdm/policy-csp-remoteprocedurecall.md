@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - RemoteProcedureCall
@@ -15,7 +15,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## RemoteProcedureCall policies  
 
 <dl>
@@ -30,7 +30,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="remoteprocedurecall-rpcendpointmapperclientauthentication"></a>**RemoteProcedureCall/RPCEndpointMapperClientAuthentication**  
 
 <!--SupportedSKUs-->
@@ -92,11 +92,11 @@ ADMX Info:
 -   GP ADMX file name: *rpc.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="remoteprocedurecall-restrictunauthenticatedrpcclients"></a>**RemoteProcedureCall/RestrictUnauthenticatedRPCClients**  
 
 <!--SupportedSKUs-->
@@ -166,7 +166,7 @@ ADMX Info:
 -   GP ADMX file name: *rpc.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -175,5 +175,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - ApplicationManagement
@@ -15,7 +15,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## ApplicationManagement policies  
 
 <dl>
@@ -57,7 +57,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="applicationmanagement-allowalltrustedapps"></a>**ApplicationManagement/AllowAllTrustedApps**  
 
 <!--SupportedSKUs-->
@@ -106,11 +106,11 @@ The following list shows the supported values:
 -   65535 (default) - Not configured.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="applicationmanagement-allowappstoreautoupdate"></a>**ApplicationManagement/AllowAppStoreAutoUpdate**  
 
 <!--SupportedSKUs-->
@@ -159,11 +159,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="applicationmanagement-allowdeveloperunlock"></a>**ApplicationManagement/AllowDeveloperUnlock**  
 
 <!--SupportedSKUs-->
@@ -212,11 +212,11 @@ The following list shows the supported values:
 -   65535 (default) - Not configured.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="applicationmanagement-allowgamedvr"></a>**ApplicationManagement/AllowGameDVR**  
 
 <!--SupportedSKUs-->
@@ -267,11 +267,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="applicationmanagement-allowshareduserappdata"></a>**ApplicationManagement/AllowSharedUserAppData**  
 
 <!--SupportedSKUs-->
@@ -319,11 +319,11 @@ The following list shows the supported values:
 -   1 – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="applicationmanagement-allowstore"></a>**ApplicationManagement/AllowStore**  
 
 <!--SupportedSKUs-->
@@ -371,11 +371,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="applicationmanagement-applicationrestrictions"></a>**ApplicationManagement/ApplicationRestrictions**  
 
 <!--SupportedSKUs-->
@@ -436,11 +436,11 @@ Value type is chr.
 Value evaluation rule - The information for PolicyManager is opaque. There is no most restricted value evaluation. Whenever there is a change to the value, the device parses the node value and enforces specified policies.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="applicationmanagement-disablestoreoriginatedapps"></a>**ApplicationManagement/DisableStoreOriginatedApps**  
 
 <!--SupportedSKUs-->
@@ -486,11 +486,11 @@ The following list shows the supported values:
 -   1 – Disable launch of apps.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="applicationmanagement-requireprivatestoreonly"></a>**ApplicationManagement/RequirePrivateStoreOnly**  
 
 <!--SupportedSKUs-->
@@ -539,11 +539,11 @@ The following list shows the supported values:
 -   1 – Only Private store is enabled.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="applicationmanagement-restrictappdatatosystemvolume"></a>**ApplicationManagement/RestrictAppDataToSystemVolume**  
 
 <!--SupportedSKUs-->
@@ -591,11 +591,11 @@ The following list shows the supported values:
 -   1 – Restricted.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="applicationmanagement-restrictapptosystemvolume"></a>**ApplicationManagement/RestrictAppToSystemVolume**  
 
 <!--SupportedSKUs-->
@@ -643,7 +643,7 @@ The following list shows the supported values:
 -   1 – Restricted.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -652,7 +652,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 
 <!--StartHoloLens-->
 ## <a href="" id="hololenspolicies"></a>ApplicationManagement policies supported by Windows Holographic for Business  

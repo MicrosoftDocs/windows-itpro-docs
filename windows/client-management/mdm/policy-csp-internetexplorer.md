@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - InternetExplorer
@@ -15,7 +15,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## InternetExplorer policies  
 
 <dl>
@@ -753,7 +753,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-addsearchprovider"></a>**InternetExplorer/AddSearchProvider**  
 
 <!--SupportedSKUs-->
@@ -812,11 +812,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowactivexfiltering"></a>**InternetExplorer/AllowActiveXFiltering**  
 
 <!--SupportedSKUs-->
@@ -875,11 +875,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowaddonlist"></a>**InternetExplorer/AllowAddOnList**  
 
 <!--SupportedSKUs-->
@@ -944,11 +944,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowautocomplete"></a>**InternetExplorer/AllowAutoComplete**  
 
 <!--SupportedSKUs-->
@@ -1001,11 +1001,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowcertificateaddressmismatchwarning"></a>**InternetExplorer/AllowCertificateAddressMismatchWarning**  
 
 <!--SupportedSKUs-->
@@ -1059,11 +1059,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowdeletingbrowsinghistoryonexit"></a>**InternetExplorer/AllowDeletingBrowsingHistoryOnExit**  
 
 <!--SupportedSKUs-->
@@ -1117,11 +1117,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowenhancedprotectedmode"></a>**InternetExplorer/AllowEnhancedProtectedMode**  
 
 <!--SupportedSKUs-->
@@ -1182,11 +1182,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowenterprisemodefromtoolsmenu"></a>**InternetExplorer/AllowEnterpriseModeFromToolsMenu**  
 
 <!--SupportedSKUs-->
@@ -1245,11 +1245,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowenterprisemodesitelist"></a>**InternetExplorer/AllowEnterpriseModeSiteList**  
 
 <!--SupportedSKUs-->
@@ -1308,11 +1308,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowfallbacktossl3"></a>**InternetExplorer/AllowFallbackToSSL3**  
 
 <!--SupportedSKUs-->
@@ -1365,11 +1365,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowinternetexplorer7policylist"></a>**InternetExplorer/AllowInternetExplorer7PolicyList**  
 
 <!--SupportedSKUs-->
@@ -1428,11 +1428,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowinternetexplorerstandardsmode"></a>**InternetExplorer/AllowInternetExplorerStandardsMode**  
 
 <!--SupportedSKUs-->
@@ -1493,11 +1493,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowinternetzonetemplate"></a>**InternetExplorer/AllowInternetZoneTemplate**  
 
 <!--SupportedSKUs-->
@@ -1562,11 +1562,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowintranetzonetemplate"></a>**InternetExplorer/AllowIntranetZoneTemplate**  
 
 <!--SupportedSKUs-->
@@ -1631,11 +1631,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowlocalmachinezonetemplate"></a>**InternetExplorer/AllowLocalMachineZoneTemplate**  
 
 <!--SupportedSKUs-->
@@ -1700,11 +1700,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowlockeddowninternetzonetemplate"></a>**InternetExplorer/AllowLockedDownInternetZoneTemplate**  
 
 <!--SupportedSKUs-->
@@ -1769,11 +1769,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowlockeddownintranetzonetemplate"></a>**InternetExplorer/AllowLockedDownIntranetZoneTemplate**  
 
 <!--SupportedSKUs-->
@@ -1838,11 +1838,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowlockeddownlocalmachinezonetemplate"></a>**InternetExplorer/AllowLockedDownLocalMachineZoneTemplate**  
 
 <!--SupportedSKUs-->
@@ -1907,11 +1907,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowlockeddownrestrictedsiteszonetemplate"></a>**InternetExplorer/AllowLockedDownRestrictedSitesZoneTemplate**  
 
 <!--SupportedSKUs-->
@@ -1976,11 +1976,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowonewordentry"></a>**InternetExplorer/AllowOneWordEntry**  
 
 <!--SupportedSKUs-->
@@ -2039,11 +2039,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowsitetozoneassignmentlist"></a>**InternetExplorer/AllowSiteToZoneAssignmentList**  
 
 <!--SupportedSKUs-->
@@ -2108,11 +2108,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowsoftwarewhensignatureisinvalid"></a>**InternetExplorer/AllowSoftwareWhenSignatureIsInvalid**  
 
 <!--SupportedSKUs-->
@@ -2166,11 +2166,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowsuggestedsites"></a>**InternetExplorer/AllowSuggestedSites**  
 
 <!--SupportedSKUs-->
@@ -2231,11 +2231,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowtrustedsiteszonetemplate"></a>**InternetExplorer/AllowTrustedSitesZoneTemplate**  
 
 <!--SupportedSKUs-->
@@ -2300,11 +2300,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowslockeddowntrustedsiteszonetemplate"></a>**InternetExplorer/AllowsLockedDownTrustedSitesZoneTemplate**  
 
 <!--SupportedSKUs-->
@@ -2369,11 +2369,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-allowsrestrictedsiteszonetemplate"></a>**InternetExplorer/AllowsRestrictedSitesZoneTemplate**  
 
 <!--SupportedSKUs-->
@@ -2438,11 +2438,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-checkservercertificaterevocation"></a>**InternetExplorer/CheckServerCertificateRevocation**  
 
 <!--SupportedSKUs-->
@@ -2496,11 +2496,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-checksignaturesondownloadedprograms"></a>**InternetExplorer/CheckSignaturesOnDownloadedPrograms**  
 
 <!--SupportedSKUs-->
@@ -2554,11 +2554,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-consistentmimehandlinginternetexplorerprocesses"></a>**InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses**  
 
 <!--SupportedSKUs-->
@@ -2612,11 +2612,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-disableadobeflash"></a>**InternetExplorer/DisableAdobeFlash**  
 
 <!--SupportedSKUs-->
@@ -2677,11 +2677,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-disablebypassofsmartscreenwarnings"></a>**InternetExplorer/DisableBypassOfSmartScreenWarnings**  
 
 <!--SupportedSKUs-->
@@ -2740,11 +2740,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles"></a>**InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles**  
 
 <!--SupportedSKUs-->
@@ -2803,11 +2803,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-disableconfiguringhistory"></a>**InternetExplorer/DisableConfiguringHistory**  
 
 <!--SupportedSKUs-->
@@ -2861,11 +2861,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-disablecrashdetection"></a>**InternetExplorer/DisableCrashDetection**  
 
 <!--SupportedSKUs-->
@@ -2919,11 +2919,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-disablecustomerexperienceimprovementprogramparticipation"></a>**InternetExplorer/DisableCustomerExperienceImprovementProgramParticipation**  
 
 <!--SupportedSKUs-->
@@ -2984,11 +2984,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-disabledeletinguservisitedwebsites"></a>**InternetExplorer/DisableDeletingUserVisitedWebsites**  
 
 <!--SupportedSKUs-->
@@ -3042,11 +3042,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-disableenclosuredownloading"></a>**InternetExplorer/DisableEnclosureDownloading**  
 
 <!--SupportedSKUs-->
@@ -3105,11 +3105,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-disableencryptionsupport"></a>**InternetExplorer/DisableEncryptionSupport**  
 
 <!--SupportedSKUs-->
@@ -3170,11 +3170,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-disablefirstrunwizard"></a>**InternetExplorer/DisableFirstRunWizard**  
 
 <!--SupportedSKUs-->
@@ -3237,11 +3237,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-disableflipaheadfeature"></a>**InternetExplorer/DisableFlipAheadFeature**  
 
 <!--SupportedSKUs-->
@@ -3304,11 +3304,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-disablehomepagechange"></a>**InternetExplorer/DisableHomePageChange**  
 
 <!--SupportedSKUs-->
@@ -3366,11 +3366,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-disableignoringcertificateerrors"></a>**InternetExplorer/DisableIgnoringCertificateErrors**  
 
 <!--SupportedSKUs-->
@@ -3424,11 +3424,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-disableinprivatebrowsing"></a>**InternetExplorer/DisableInPrivateBrowsing**  
 
 <!--SupportedSKUs-->
@@ -3482,11 +3482,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-disableprocessesinenhancedprotectedmode"></a>**InternetExplorer/DisableProcessesInEnhancedProtectedMode**  
 
 <!--SupportedSKUs-->
@@ -3540,11 +3540,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-disableproxychange"></a>**InternetExplorer/DisableProxyChange**  
 
 <!--SupportedSKUs-->
@@ -3603,11 +3603,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-disablesearchproviderchange"></a>**InternetExplorer/DisableSearchProviderChange**  
 
 <!--SupportedSKUs-->
@@ -3666,11 +3666,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-disablesecondaryhomepagechange"></a>**InternetExplorer/DisableSecondaryHomePageChange**  
 
 <!--SupportedSKUs-->
@@ -3731,11 +3731,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-disablesecuritysettingscheck"></a>**InternetExplorer/DisableSecuritySettingsCheck**  
 
 <!--SupportedSKUs-->
@@ -3789,11 +3789,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-disableupdatecheck"></a>**InternetExplorer/DisableUpdateCheck**  
 
 <!--SupportedSKUs-->
@@ -3853,11 +3853,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-donotallowactivexcontrolsinprotectedmode"></a>**InternetExplorer/DoNotAllowActiveXControlsInProtectedMode**  
 
 <!--SupportedSKUs-->
@@ -3911,11 +3911,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-donotallowuserstoaddsites"></a>**InternetExplorer/DoNotAllowUsersToAddSites**  
 
 <!--SupportedSKUs-->
@@ -3979,11 +3979,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-donotallowuserstochangepolicies"></a>**InternetExplorer/DoNotAllowUsersToChangePolicies**  
 
 <!--SupportedSKUs-->
@@ -4047,11 +4047,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-donotblockoutdatedactivexcontrols"></a>**InternetExplorer/DoNotBlockOutdatedActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -4112,11 +4112,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-donotblockoutdatedactivexcontrolsonspecificdomains"></a>**InternetExplorer/DoNotBlockOutdatedActiveXControlsOnSpecificDomains**  
 
 <!--SupportedSKUs-->
@@ -4181,11 +4181,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-includealllocalsites"></a>**InternetExplorer/IncludeAllLocalSites**  
 
 <!--SupportedSKUs-->
@@ -4246,11 +4246,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-includeallnetworkpaths"></a>**InternetExplorer/IncludeAllNetworkPaths**  
 
 <!--SupportedSKUs-->
@@ -4311,11 +4311,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneallowaccesstodatasources"></a>**InternetExplorer/InternetZoneAllowAccessToDataSources**  
 
 <!--SupportedSKUs-->
@@ -4376,11 +4376,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/InternetZoneAllowAutomaticPromptingForActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -4441,11 +4441,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/InternetZoneAllowAutomaticPromptingForFileDownloads**  
 
 <!--SupportedSKUs-->
@@ -4504,11 +4504,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneallowcopypasteviascript"></a>**InternetExplorer/InternetZoneAllowCopyPasteViaScript**  
 
 <!--SupportedSKUs-->
@@ -4562,11 +4562,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneallowdraganddropcopyandpastefiles"></a>**InternetExplorer/InternetZoneAllowDragAndDropCopyAndPasteFiles**  
 
 <!--SupportedSKUs-->
@@ -4620,11 +4620,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneallowfontdownloads"></a>**InternetExplorer/InternetZoneAllowFontDownloads**  
 
 <!--SupportedSKUs-->
@@ -4685,11 +4685,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneallowlessprivilegedsites"></a>**InternetExplorer/InternetZoneAllowLessPrivilegedSites**  
 
 <!--SupportedSKUs-->
@@ -4750,11 +4750,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneallowloadingofxamlfiles"></a>**InternetExplorer/InternetZoneAllowLoadingOfXAMLFiles**  
 
 <!--SupportedSKUs-->
@@ -4808,11 +4808,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/InternetZoneAllowNETFrameworkReliantComponents**  
 
 <!--SupportedSKUs-->
@@ -4873,11 +4873,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneallowonlyapproveddomainstouseactivexcontrols"></a>**InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -4931,11 +4931,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneallowonlyapproveddomainstousetdcactivexcontrol"></a>**InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl**  
 
 <!--SupportedSKUs-->
@@ -4989,11 +4989,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneallowscriptinitiatedwindows"></a>**InternetExplorer/InternetZoneAllowScriptInitiatedWindows**  
 
 <!--SupportedSKUs-->
@@ -5047,11 +5047,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneallowscriptingofinternetexplorerwebbrowsercontrols"></a>**InternetExplorer/InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls**  
 
 <!--SupportedSKUs-->
@@ -5105,11 +5105,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneallowscriptlets"></a>**InternetExplorer/InternetZoneAllowScriptlets**  
 
 <!--SupportedSKUs-->
@@ -5170,11 +5170,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneallowsmartscreenie"></a>**InternetExplorer/InternetZoneAllowSmartScreenIE**  
 
 <!--SupportedSKUs-->
@@ -5237,11 +5237,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneallowupdatestostatusbarviascript"></a>**InternetExplorer/InternetZoneAllowUpdatesToStatusBarViaScript**  
 
 <!--SupportedSKUs-->
@@ -5295,11 +5295,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneallowuserdatapersistence"></a>**InternetExplorer/InternetZoneAllowUserDataPersistence**  
 
 <!--SupportedSKUs-->
@@ -5360,11 +5360,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -5418,11 +5418,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzonedownloadsignedactivexcontrols"></a>**InternetExplorer/InternetZoneDownloadSignedActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -5476,11 +5476,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzonedownloadunsignedactivexcontrols"></a>**InternetExplorer/InternetZoneDownloadUnsignedActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -5534,11 +5534,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneenablecrosssitescriptingfilter"></a>**InternetExplorer/InternetZoneEnableCrossSiteScriptingFilter**  
 
 <!--SupportedSKUs-->
@@ -5592,11 +5592,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneenabledraggingofcontentfromdifferentdomainsacrosswindows"></a>**InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows**  
 
 <!--SupportedSKUs-->
@@ -5650,11 +5650,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneenabledraggingofcontentfromdifferentdomainswithinwindows"></a>**InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows**  
 
 <!--SupportedSKUs-->
@@ -5708,11 +5708,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneenablemimesniffing"></a>**InternetExplorer/InternetZoneEnableMIMESniffing**  
 
 <!--SupportedSKUs-->
@@ -5766,11 +5766,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneenableprotectedmode"></a>**InternetExplorer/InternetZoneEnableProtectedMode**  
 
 <!--SupportedSKUs-->
@@ -5824,11 +5824,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneincludelocalpathwhenuploadingfilestoserver"></a>**InternetExplorer/InternetZoneIncludeLocalPathWhenUploadingFilesToServer**  
 
 <!--SupportedSKUs-->
@@ -5882,11 +5882,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/InternetZoneInitializeAndScriptActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -5949,11 +5949,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneinitializeandscriptactivexcontrolsnotmarkedsafe"></a>**InternetExplorer/InternetZoneInitializeAndScriptActiveXControlsNotMarkedSafe**  
 
 <!--SupportedSKUs-->
@@ -5982,11 +5982,11 @@ ADMX Info:
 <!--Description-->
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzonejavapermissions"></a>**InternetExplorer/InternetZoneJavaPermissions**  
 
 <!--SupportedSKUs-->
@@ -6040,11 +6040,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzonelaunchingapplicationsandfilesiniframe"></a>**InternetExplorer/InternetZoneLaunchingApplicationsAndFilesInIFRAME**  
 
 <!--SupportedSKUs-->
@@ -6098,11 +6098,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzonelogonoptions"></a>**InternetExplorer/InternetZoneLogonOptions**  
 
 <!--SupportedSKUs-->
@@ -6156,11 +6156,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzonenavigatewindowsandframes"></a>**InternetExplorer/InternetZoneNavigateWindowsAndFrames**  
 
 <!--SupportedSKUs-->
@@ -6221,11 +6221,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzonerunnetframeworkreliantcomponentssignedwithauthenticode"></a>**InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode**  
 
 <!--SupportedSKUs-->
@@ -6279,11 +6279,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneshowsecuritywarningforpotentiallyunsafefiles"></a>**InternetExplorer/InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles**  
 
 <!--SupportedSKUs-->
@@ -6337,11 +6337,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-internetzoneusepopupblocker"></a>**InternetExplorer/InternetZoneUsePopupBlocker**  
 
 <!--SupportedSKUs-->
@@ -6395,11 +6395,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-intranetzoneallowaccesstodatasources"></a>**InternetExplorer/IntranetZoneAllowAccessToDataSources**  
 
 <!--SupportedSKUs-->
@@ -6460,11 +6460,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-intranetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/IntranetZoneAllowAutomaticPromptingForActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -6525,11 +6525,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-intranetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/IntranetZoneAllowAutomaticPromptingForFileDownloads**  
 
 <!--SupportedSKUs-->
@@ -6588,11 +6588,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-intranetzoneallowfontdownloads"></a>**InternetExplorer/IntranetZoneAllowFontDownloads**  
 
 <!--SupportedSKUs-->
@@ -6653,11 +6653,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-intranetzoneallowlessprivilegedsites"></a>**InternetExplorer/IntranetZoneAllowLessPrivilegedSites**  
 
 <!--SupportedSKUs-->
@@ -6718,11 +6718,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-intranetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/IntranetZoneAllowNETFrameworkReliantComponents**  
 
 <!--SupportedSKUs-->
@@ -6783,11 +6783,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-intranetzoneallowscriptlets"></a>**InternetExplorer/IntranetZoneAllowScriptlets**  
 
 <!--SupportedSKUs-->
@@ -6848,11 +6848,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-intranetzoneallowsmartscreenie"></a>**InternetExplorer/IntranetZoneAllowSmartScreenIE**  
 
 <!--SupportedSKUs-->
@@ -6915,11 +6915,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-intranetzoneallowuserdatapersistence"></a>**InternetExplorer/IntranetZoneAllowUserDataPersistence**  
 
 <!--SupportedSKUs-->
@@ -6980,11 +6980,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-intranetzonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/IntranetZoneDoNotRunAntimalwareAgainstActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -7038,11 +7038,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-intranetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/IntranetZoneInitializeAndScriptActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -7105,11 +7105,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-intranetzonejavapermissions"></a>**InternetExplorer/IntranetZoneJavaPermissions**  
 
 <!--SupportedSKUs-->
@@ -7163,11 +7163,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-intranetzonenavigatewindowsandframes"></a>**InternetExplorer/IntranetZoneNavigateWindowsAndFrames**  
 
 <!--SupportedSKUs-->
@@ -7228,11 +7228,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-localmachinezoneallowaccesstodatasources"></a>**InternetExplorer/LocalMachineZoneAllowAccessToDataSources**  
 
 <!--SupportedSKUs-->
@@ -7293,11 +7293,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-localmachinezoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -7358,11 +7358,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-localmachinezoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForFileDownloads**  
 
 <!--SupportedSKUs-->
@@ -7421,11 +7421,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-localmachinezoneallowfontdownloads"></a>**InternetExplorer/LocalMachineZoneAllowFontDownloads**  
 
 <!--SupportedSKUs-->
@@ -7486,11 +7486,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-localmachinezoneallowlessprivilegedsites"></a>**InternetExplorer/LocalMachineZoneAllowLessPrivilegedSites**  
 
 <!--SupportedSKUs-->
@@ -7551,11 +7551,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-localmachinezoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LocalMachineZoneAllowNETFrameworkReliantComponents**  
 
 <!--SupportedSKUs-->
@@ -7616,11 +7616,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-localmachinezoneallowscriptlets"></a>**InternetExplorer/LocalMachineZoneAllowScriptlets**  
 
 <!--SupportedSKUs-->
@@ -7681,11 +7681,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-localmachinezoneallowsmartscreenie"></a>**InternetExplorer/LocalMachineZoneAllowSmartScreenIE**  
 
 <!--SupportedSKUs-->
@@ -7748,11 +7748,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-localmachinezoneallowuserdatapersistence"></a>**InternetExplorer/LocalMachineZoneAllowUserDataPersistence**  
 
 <!--SupportedSKUs-->
@@ -7813,11 +7813,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-localmachinezonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -7871,11 +7871,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-localmachinezoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LocalMachineZoneInitializeAndScriptActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -7938,11 +7938,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-localmachinezonejavapermissions"></a>**InternetExplorer/LocalMachineZoneJavaPermissions**  
 
 <!--SupportedSKUs-->
@@ -7996,11 +7996,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-localmachinezonenavigatewindowsandframes"></a>**InternetExplorer/LocalMachineZoneNavigateWindowsAndFrames**  
 
 <!--SupportedSKUs-->
@@ -8061,11 +8061,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowninternetzoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownInternetZoneAllowAccessToDataSources**  
 
 <!--SupportedSKUs-->
@@ -8126,11 +8126,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowninternetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -8191,11 +8191,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowninternetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads**  
 
 <!--SupportedSKUs-->
@@ -8254,11 +8254,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowninternetzoneallowfontdownloads"></a>**InternetExplorer/LockedDownInternetZoneAllowFontDownloads**  
 
 <!--SupportedSKUs-->
@@ -8319,11 +8319,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowninternetzoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownInternetZoneAllowLessPrivilegedSites**  
 
 <!--SupportedSKUs-->
@@ -8384,11 +8384,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowninternetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownInternetZoneAllowNETFrameworkReliantComponents**  
 
 <!--SupportedSKUs-->
@@ -8449,11 +8449,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowninternetzoneallowscriptlets"></a>**InternetExplorer/LockedDownInternetZoneAllowScriptlets**  
 
 <!--SupportedSKUs-->
@@ -8514,11 +8514,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowninternetzoneallowsmartscreenie"></a>**InternetExplorer/LockedDownInternetZoneAllowSmartScreenIE**  
 
 <!--SupportedSKUs-->
@@ -8581,11 +8581,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowninternetzoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownInternetZoneAllowUserDataPersistence**  
 
 <!--SupportedSKUs-->
@@ -8646,11 +8646,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowninternetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownInternetZoneInitializeAndScriptActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -8713,11 +8713,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowninternetzonejavapermissions"></a>**InternetExplorer/LockedDownInternetZoneJavaPermissions**  
 
 <!--SupportedSKUs-->
@@ -8771,11 +8771,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowninternetzonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownInternetZoneNavigateWindowsAndFrames**  
 
 <!--SupportedSKUs-->
@@ -8836,11 +8836,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownintranetzoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownIntranetZoneAllowAccessToDataSources**  
 
 <!--SupportedSKUs-->
@@ -8901,11 +8901,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownintranetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -8966,11 +8966,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownintranetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads**  
 
 <!--SupportedSKUs-->
@@ -9029,11 +9029,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownintranetzoneallowfontdownloads"></a>**InternetExplorer/LockedDownIntranetZoneAllowFontDownloads**  
 
 <!--SupportedSKUs-->
@@ -9094,11 +9094,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownintranetzoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownIntranetZoneAllowLessPrivilegedSites**  
 
 <!--SupportedSKUs-->
@@ -9159,11 +9159,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownintranetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownIntranetZoneAllowNETFrameworkReliantComponents**  
 
 <!--SupportedSKUs-->
@@ -9224,11 +9224,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownintranetzoneallowscriptlets"></a>**InternetExplorer/LockedDownIntranetZoneAllowScriptlets**  
 
 <!--SupportedSKUs-->
@@ -9289,11 +9289,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownintranetzoneallowsmartscreenie"></a>**InternetExplorer/LockedDownIntranetZoneAllowSmartScreenIE**  
 
 <!--SupportedSKUs-->
@@ -9356,11 +9356,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownintranetzoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownIntranetZoneAllowUserDataPersistence**  
 
 <!--SupportedSKUs-->
@@ -9421,11 +9421,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownintranetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownIntranetZoneInitializeAndScriptActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -9488,11 +9488,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownintranetzonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownIntranetZoneNavigateWindowsAndFrames**  
 
 <!--SupportedSKUs-->
@@ -9553,11 +9553,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAccessToDataSources**  
 
 <!--SupportedSKUs-->
@@ -9618,11 +9618,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -9683,11 +9683,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads**  
 
 <!--SupportedSKUs-->
@@ -9746,11 +9746,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezoneallowfontdownloads"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowFontDownloads**  
 
 <!--SupportedSKUs-->
@@ -9811,11 +9811,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowLessPrivilegedSites**  
 
 <!--SupportedSKUs-->
@@ -9876,11 +9876,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents**  
 
 <!--SupportedSKUs-->
@@ -9941,11 +9941,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezoneallowscriptlets"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowScriptlets**  
 
 <!--SupportedSKUs-->
@@ -10006,11 +10006,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezoneallowsmartscreenie"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowSmartScreenIE**  
 
 <!--SupportedSKUs-->
@@ -10073,11 +10073,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowUserDataPersistence**  
 
 <!--SupportedSKUs-->
@@ -10138,11 +10138,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownLocalMachineZoneInitializeAndScriptActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -10205,11 +10205,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezonejavapermissions"></a>**InternetExplorer/LockedDownLocalMachineZoneJavaPermissions**  
 
 <!--SupportedSKUs-->
@@ -10263,11 +10263,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownlocalmachinezonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownLocalMachineZoneNavigateWindowsAndFrames**  
 
 <!--SupportedSKUs-->
@@ -10328,11 +10328,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAccessToDataSources**  
 
 <!--SupportedSKUs-->
@@ -10393,11 +10393,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -10458,11 +10458,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads**  
 
 <!--SupportedSKUs-->
@@ -10521,11 +10521,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowfontdownloads"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowFontDownloads**  
 
 <!--SupportedSKUs-->
@@ -10586,11 +10586,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowLessPrivilegedSites**  
 
 <!--SupportedSKUs-->
@@ -10651,11 +10651,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents**  
 
 <!--SupportedSKUs-->
@@ -10716,11 +10716,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowscriptlets"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowScriptlets**  
 
 <!--SupportedSKUs-->
@@ -10781,11 +10781,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowsmartscreenie"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowSmartScreenIE**  
 
 <!--SupportedSKUs-->
@@ -10848,11 +10848,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowUserDataPersistence**  
 
 <!--SupportedSKUs-->
@@ -10913,11 +10913,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -10980,11 +10980,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszonejavapermissions"></a>**InternetExplorer/LockedDownRestrictedSitesZoneJavaPermissions**  
 
 <!--SupportedSKUs-->
@@ -11038,11 +11038,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownrestrictedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownRestrictedSitesZoneNavigateWindowsAndFrames**  
 
 <!--SupportedSKUs-->
@@ -11103,11 +11103,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAccessToDataSources**  
 
 <!--SupportedSKUs-->
@@ -11168,11 +11168,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -11233,11 +11233,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads**  
 
 <!--SupportedSKUs-->
@@ -11296,11 +11296,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowfontdownloads"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowFontDownloads**  
 
 <!--SupportedSKUs-->
@@ -11361,11 +11361,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowLessPrivilegedSites**  
 
 <!--SupportedSKUs-->
@@ -11426,11 +11426,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents**  
 
 <!--SupportedSKUs-->
@@ -11491,11 +11491,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowscriptlets"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowScriptlets**  
 
 <!--SupportedSKUs-->
@@ -11556,11 +11556,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowsmartscreenie"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowSmartScreenIE**  
 
 <!--SupportedSKUs-->
@@ -11623,11 +11623,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowUserDataPersistence**  
 
 <!--SupportedSKUs-->
@@ -11688,11 +11688,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -11755,11 +11755,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszonejavapermissions"></a>**InternetExplorer/LockedDownTrustedSitesZoneJavaPermissions**  
 
 <!--SupportedSKUs-->
@@ -11813,11 +11813,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddowntrustedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownTrustedSitesZoneNavigateWindowsAndFrames**  
 
 <!--SupportedSKUs-->
@@ -11878,11 +11878,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-mkprotocolsecurityrestrictioninternetexplorerprocesses"></a>**InternetExplorer/MKProtocolSecurityRestrictionInternetExplorerProcesses**  
 
 <!--SupportedSKUs-->
@@ -11936,11 +11936,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-mimesniffingsafetyfeatureinternetexplorerprocesses"></a>**InternetExplorer/MimeSniffingSafetyFeatureInternetExplorerProcesses**  
 
 <!--SupportedSKUs-->
@@ -11994,11 +11994,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-notificationbarinternetexplorerprocesses"></a>**InternetExplorer/NotificationBarInternetExplorerProcesses**  
 
 <!--SupportedSKUs-->
@@ -12052,11 +12052,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-preventmanagingsmartscreenfilter"></a>**InternetExplorer/PreventManagingSmartScreenFilter**  
 
 <!--SupportedSKUs-->
@@ -12110,11 +12110,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-preventperuserinstallationofactivexcontrols"></a>**InternetExplorer/PreventPerUserInstallationOfActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -12168,11 +12168,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-protectionfromzoneelevationinternetexplorerprocesses"></a>**InternetExplorer/ProtectionFromZoneElevationInternetExplorerProcesses**  
 
 <!--SupportedSKUs-->
@@ -12226,11 +12226,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-removerunthistimebuttonforoutdatedactivexcontrols"></a>**InternetExplorer/RemoveRunThisTimeButtonForOutdatedActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -12284,11 +12284,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictactivexinstallinternetexplorerprocesses"></a>**InternetExplorer/RestrictActiveXInstallInternetExplorerProcesses**  
 
 <!--SupportedSKUs-->
@@ -12342,11 +12342,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictfiledownloadinternetexplorerprocesses"></a>**InternetExplorer/RestrictFileDownloadInternetExplorerProcesses**  
 
 <!--SupportedSKUs-->
@@ -12400,11 +12400,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/RestrictedSitesZoneAllowAccessToDataSources**  
 
 <!--SupportedSKUs-->
@@ -12465,11 +12465,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowactivescripting"></a>**InternetExplorer/RestrictedSitesZoneAllowActiveScripting**  
 
 <!--SupportedSKUs-->
@@ -12523,11 +12523,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -12588,11 +12588,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads**  
 
 <!--SupportedSKUs-->
@@ -12651,11 +12651,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowbinaryandscriptbehaviors"></a>**InternetExplorer/RestrictedSitesZoneAllowBinaryAndScriptBehaviors**  
 
 <!--SupportedSKUs-->
@@ -12709,11 +12709,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowcopypasteviascript"></a>**InternetExplorer/RestrictedSitesZoneAllowCopyPasteViaScript**  
 
 <!--SupportedSKUs-->
@@ -12767,11 +12767,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowdraganddropcopyandpastefiles"></a>**InternetExplorer/RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles**  
 
 <!--SupportedSKUs-->
@@ -12825,11 +12825,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowfiledownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowFileDownloads**  
 
 <!--SupportedSKUs-->
@@ -12883,11 +12883,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowfontdownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowFontDownloads**  
 
 <!--SupportedSKUs-->
@@ -12948,11 +12948,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/RestrictedSitesZoneAllowLessPrivilegedSites**  
 
 <!--SupportedSKUs-->
@@ -13013,11 +13013,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowloadingofxamlfiles"></a>**InternetExplorer/RestrictedSitesZoneAllowLoadingOfXAMLFiles**  
 
 <!--SupportedSKUs-->
@@ -13071,11 +13071,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowmetarefresh"></a>**InternetExplorer/RestrictedSitesZoneAllowMETAREFRESH**  
 
 <!--SupportedSKUs-->
@@ -13129,11 +13129,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/RestrictedSitesZoneAllowNETFrameworkReliantComponents**  
 
 <!--SupportedSKUs-->
@@ -13194,11 +13194,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowonlyapproveddomainstouseactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -13252,11 +13252,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowonlyapproveddomainstousetdcactivexcontrol"></a>**InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl**  
 
 <!--SupportedSKUs-->
@@ -13310,11 +13310,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowscriptinitiatedwindows"></a>**InternetExplorer/RestrictedSitesZoneAllowScriptInitiatedWindows**  
 
 <!--SupportedSKUs-->
@@ -13368,11 +13368,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowscriptingofinternetexplorerwebbrowsercontrols"></a>**InternetExplorer/RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls**  
 
 <!--SupportedSKUs-->
@@ -13426,11 +13426,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowscriptlets"></a>**InternetExplorer/RestrictedSitesZoneAllowScriptlets**  
 
 <!--SupportedSKUs-->
@@ -13491,11 +13491,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowsmartscreenie"></a>**InternetExplorer/RestrictedSitesZoneAllowSmartScreenIE**  
 
 <!--SupportedSKUs-->
@@ -13558,11 +13558,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowupdatestostatusbarviascript"></a>**InternetExplorer/RestrictedSitesZoneAllowUpdatesToStatusBarViaScript**  
 
 <!--SupportedSKUs-->
@@ -13616,11 +13616,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/RestrictedSitesZoneAllowUserDataPersistence**  
 
 <!--SupportedSKUs-->
@@ -13681,11 +13681,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -13739,11 +13739,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszonedownloadsignedactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneDownloadSignedActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -13797,11 +13797,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszonedownloadunsignedactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneDownloadUnsignedActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -13855,11 +13855,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneenablecrosssitescriptingfilter"></a>**InternetExplorer/RestrictedSitesZoneEnableCrossSiteScriptingFilter**  
 
 <!--SupportedSKUs-->
@@ -13913,11 +13913,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneenabledraggingofcontentfromdifferentdomainsacrosswindows"></a>**InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows**  
 
 <!--SupportedSKUs-->
@@ -13971,11 +13971,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneenabledraggingofcontentfromdifferentdomainswithinwindows"></a>**InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows**  
 
 <!--SupportedSKUs-->
@@ -14029,11 +14029,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneenablemimesniffing"></a>**InternetExplorer/RestrictedSitesZoneEnableMIMESniffing**  
 
 <!--SupportedSKUs-->
@@ -14087,11 +14087,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneincludelocalpathwhenuploadingfilestoserver"></a>**InternetExplorer/RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer**  
 
 <!--SupportedSKUs-->
@@ -14145,11 +14145,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneInitializeAndScriptActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -14212,11 +14212,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszonejavapermissions"></a>**InternetExplorer/RestrictedSitesZoneJavaPermissions**  
 
 <!--SupportedSKUs-->
@@ -14270,11 +14270,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszonelaunchingapplicationsandfilesiniframe"></a>**InternetExplorer/RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME**  
 
 <!--SupportedSKUs-->
@@ -14328,11 +14328,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszonelogonoptions"></a>**InternetExplorer/RestrictedSitesZoneLogonOptions**  
 
 <!--SupportedSKUs-->
@@ -14386,11 +14386,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFrames**  
 
 <!--SupportedSKUs-->
@@ -14451,11 +14451,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszonerunactivexcontrolsandplugins"></a>**InternetExplorer/RestrictedSitesZoneRunActiveXControlsAndPlugins**  
 
 <!--SupportedSKUs-->
@@ -14509,11 +14509,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszonerunnetframeworkreliantcomponentssignedwithauthenticode"></a>**InternetExplorer/RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode**  
 
 <!--SupportedSKUs-->
@@ -14567,11 +14567,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszonescriptactivexcontrolsmarkedsafeforscripting"></a>**InternetExplorer/RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting**  
 
 <!--SupportedSKUs-->
@@ -14625,11 +14625,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszonescriptingofjavaapplets"></a>**InternetExplorer/RestrictedSitesZoneScriptingOfJavaApplets**  
 
 <!--SupportedSKUs-->
@@ -14683,11 +14683,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneshowsecuritywarningforpotentiallyunsafefiles"></a>**InternetExplorer/RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles**  
 
 <!--SupportedSKUs-->
@@ -14741,11 +14741,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneturnonprotectedmode"></a>**InternetExplorer/RestrictedSitesZoneTurnOnProtectedMode**  
 
 <!--SupportedSKUs-->
@@ -14799,11 +14799,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-restrictedsiteszoneusepopupblocker"></a>**InternetExplorer/RestrictedSitesZoneUsePopupBlocker**  
 
 <!--SupportedSKUs-->
@@ -14857,11 +14857,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-scriptedwindowsecurityrestrictionsinternetexplorerprocesses"></a>**InternetExplorer/ScriptedWindowSecurityRestrictionsInternetExplorerProcesses**  
 
 <!--SupportedSKUs-->
@@ -14915,11 +14915,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-searchproviderlist"></a>**InternetExplorer/SearchProviderList**  
 
 <!--SupportedSKUs-->
@@ -14978,11 +14978,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-securityzonesuseonlymachinesettings"></a>**InternetExplorer/SecurityZonesUseOnlyMachineSettings**  
 
 <!--SupportedSKUs-->
@@ -15035,11 +15035,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-specifyuseofactivexinstallerservice"></a>**InternetExplorer/SpecifyUseOfActiveXInstallerService**  
 
 <!--SupportedSKUs-->
@@ -15093,11 +15093,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-trustedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/TrustedSitesZoneAllowAccessToDataSources**  
 
 <!--SupportedSKUs-->
@@ -15158,11 +15158,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-trustedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -15223,11 +15223,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-trustedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForFileDownloads**  
 
 <!--SupportedSKUs-->
@@ -15286,11 +15286,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-trustedsiteszoneallowfontdownloads"></a>**InternetExplorer/TrustedSitesZoneAllowFontDownloads**  
 
 <!--SupportedSKUs-->
@@ -15351,11 +15351,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-trustedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/TrustedSitesZoneAllowLessPrivilegedSites**  
 
 <!--SupportedSKUs-->
@@ -15416,11 +15416,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-trustedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/TrustedSitesZoneAllowNETFrameworkReliantComponents**  
 
 <!--SupportedSKUs-->
@@ -15481,11 +15481,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-trustedsiteszoneallowscriptlets"></a>**InternetExplorer/TrustedSitesZoneAllowScriptlets**  
 
 <!--SupportedSKUs-->
@@ -15546,11 +15546,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-trustedsiteszoneallowsmartscreenie"></a>**InternetExplorer/TrustedSitesZoneAllowSmartScreenIE**  
 
 <!--SupportedSKUs-->
@@ -15613,11 +15613,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-trustedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/TrustedSitesZoneAllowUserDataPersistence**  
 
 <!--SupportedSKUs-->
@@ -15678,11 +15678,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-trustedsiteszonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -15736,11 +15736,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControls**  
 
 <!--SupportedSKUs-->
@@ -15803,11 +15803,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-trustedsiteszonejavapermissions"></a>**InternetExplorer/TrustedSitesZoneJavaPermissions**  
 
 <!--SupportedSKUs-->
@@ -15861,11 +15861,11 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="internetexplorer-trustedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/TrustedSitesZoneNavigateWindowsAndFrames**  
 
 <!--SupportedSKUs-->
@@ -15926,7 +15926,7 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -15935,5 +15935,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

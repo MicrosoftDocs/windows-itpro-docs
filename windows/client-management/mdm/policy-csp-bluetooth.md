@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - Bluetooth
@@ -15,7 +15,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## Bluetooth policies  
 
 <dl>
@@ -39,7 +39,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="bluetooth-allowadvertising"></a>**Bluetooth/AllowAdvertising**  
 
 <!--SupportedSKUs-->
@@ -89,11 +89,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed. When set to 1, the device will send out advertisements. To verify, use any Bluetooth LE app and enable it to do advertising. Then, verify that the advertisement is received by the peripheral.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="bluetooth-allowdiscoverablemode"></a>**Bluetooth/AllowDiscoverableMode**  
 
 <!--SupportedSKUs-->
@@ -143,11 +143,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed. When set to 1, other devices will be able to detect the device. To verify, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel and verify that you can discover it.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="bluetooth-allowprepairing"></a>**Bluetooth/AllowPrepairing**  
 
 <!--SupportedSKUs-->
@@ -193,11 +193,11 @@ The following list shows the supported values:
 -   1 (default)– Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="bluetooth-localdevicename"></a>**Bluetooth/LocalDeviceName**  
 
 <!--SupportedSKUs-->
@@ -240,11 +240,11 @@ If this is set, the value that it is set to will be used as the Bluetooth device
 If this policy is not set or it is deleted, the default local radio name is used.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="bluetooth-servicesallowedlist"></a>**Bluetooth/ServicesAllowedList**  
 
 <!--SupportedSKUs-->
@@ -285,7 +285,7 @@ Set a list of allowable services and profiles. String hex formatted array of Blu
 The default value is an empty string.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -294,7 +294,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 
 <!--StartHoloLens-->
 ## <a href="" id="hololenspolicies"></a>Bluetooth policies supported by Windows Holographic for Business  
