@@ -42,7 +42,6 @@ If you're new to App-V, it's a good idea to read the documentation thoroughly. B
 
 ## Getting started with App-V
 
-
 -   [What's new in App-V](appv-about-appv.md)
 
     Provides a high-level overview of App-V and how it can be used in your organization.
@@ -55,8 +54,7 @@ If you're new to App-V, it's a good idea to read the documentation thoroughly. B
 
     Provides a description of the App-V features and how they work together.
 
-## <a href="" id="other-resources-for-this-product-"></a>Other resources for this product
-
+## Other resources for this product
 
 -   [Application Virtualization (App-V) overview](appv-for-windows.md)
 
@@ -68,7 +66,7 @@ If you're new to App-V, it's a good idea to read the documentation thoroughly. B
 
 -   [Troubleshooting App-V](appv-troubleshooting.md)
 
--   [Technical Reference for App-V](appv-technical-reference.md)
+-   [Technical reference for App-V](appv-technical-reference.md)
 
 ## Have a suggestion for App-V?
 
