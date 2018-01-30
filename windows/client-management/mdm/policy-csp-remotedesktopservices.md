@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - RemoteDesktopServices
@@ -39,11 +39,13 @@ ms.date: 11/01/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="remotedesktopservices-allowuserstoconnectremotely"></a>**RemoteDesktopServices/AllowUsersToConnectRemotely**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -65,8 +67,8 @@ ms.date: 11/01/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -74,8 +76,8 @@ ms.date: 11/01/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 This policy setting allows you to configure remote access to computers by using Remote Desktop Services.
 
 If you enable this policy setting, users who are members of the Remote Desktop Users group on the target computer can connect remotely to the target computer by using Remote Desktop Services.
@@ -88,7 +90,7 @@ Note: You can limit which clients are able to connect remotely by using Remote D
 
 You can limit the number of users who can connect simultaneously by configuring the policy setting at Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Connections\Limit number of connections, or by configuring the policy setting Maximum Connections by using the Remote Desktop Session Host WMI Provider.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -96,20 +98,22 @@ You can limit the number of users who can connect simultaneously by configuring 
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Allow users to connect remotely by using Remote Desktop Services*
 -   GP name: *TS_DISABLE_CONNECTIONS*
 -   GP path: *Windows Components/Remote Desktop Services/Remote Desktop Session Host/Connections*
 -   GP ADMX file name: *terminalserver.admx*
 
-<!--EndADMX-->
+<!--/ADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="remotedesktopservices-clientconnectionencryptionlevel"></a>**RemoteDesktopServices/ClientConnectionEncryptionLevel**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -131,8 +135,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -140,8 +144,8 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Specifies whether to require the use of a specific encryption level to secure communications between client computers and RD Session Host servers during Remote Desktop Protocol (RDP) connections. This policy only applies when you are using native RDP encryption. However, native RDP encryption (as opposed to SSL encryption) is not recommended. This policy does not apply to SSL encryption.
 
 If you enable this policy setting, all communications between clients and RD Session Host servers during remote connections must use the encryption method specified in this setting. By default, the encryption level is set to High. The following encryption methods are available:
@@ -158,7 +162,7 @@ Important
 
 FIPS compliance can be configured through the System cryptography. Use FIPS compliant algorithms for encryption, hashing, and signing settings in Group Policy (under Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options.) The FIPS compliant setting encrypts and decrypts data sent from the client to the server and from the server to the client, with the Federal Information Processing Standard (FIPS) 140 encryption algorithms, by using Microsoft cryptographic modules. Use this encryption level when communications between clients and RD Session Host servers requires the highest level of encryption.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -166,20 +170,22 @@ FIPS compliance can be configured through the System cryptography. Use FIPS comp
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Set client connection encryption level*
 -   GP name: *TS_ENCRYPTION_POLICY*
 -   GP path: *Windows Components/Remote Desktop Services/Remote Desktop Session Host/Security*
 -   GP ADMX file name: *terminalserver.admx*
 
-<!--EndADMX-->
+<!--/ADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="remotedesktopservices-donotallowdriveredirection"></a>**RemoteDesktopServices/DoNotAllowDriveRedirection**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -201,8 +207,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -210,8 +216,8 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 This policy setting specifies whether to prevent the mapping of client drives in a Remote Desktop Services session (drive redirection).
 
 By default, an RD Session Host server maps client drives automatically upon connection. Mapped drives appear in the session folder tree in File Explorer or Computer in the format <driveletter> on <computername>. You can use this policy setting to override this behavior.
@@ -222,7 +228,7 @@ If you disable this policy setting, client drive redirection is always allowed. 
 
 If you do not configure this policy setting, client drive redirection and Clipboard file copy redirection are not specified at the Group Policy level.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -230,20 +236,22 @@ If you do not configure this policy setting, client drive redirection and Clipbo
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Do not allow drive redirection*
 -   GP name: *TS_CLIENT_DRIVE_M*
 -   GP path: *Windows Components/Remote Desktop Services/Remote Desktop Session Host/Device and Resource Redirection*
 -   GP ADMX file name: *terminalserver.admx*
 
-<!--EndADMX-->
+<!--/ADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="remotedesktopservices-donotallowpasswordsaving"></a>**RemoteDesktopServices/DoNotAllowPasswordSaving**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -265,8 +273,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -274,15 +282,15 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Controls whether passwords can be saved on this computer from Remote Desktop Connection.
 
 If you enable this setting the password saving checkbox in Remote Desktop Connection will be disabled and users will no longer be able to save passwords. When a user opens an RDP file using Remote Desktop Connection and saves his settings, any password that previously existed in the RDP file will be deleted.
 
 If you disable this setting or leave it not configured, the user will be able to save passwords using Remote Desktop Connection.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -290,20 +298,22 @@ If you disable this setting or leave it not configured, the user will be able to
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Do not allow passwords to be saved*
 -   GP name: *TS_CLIENT_DISABLE_PASSWORD_SAVING_2*
 -   GP path: *Windows Components/Remote Desktop Services/Remote Desktop Connection Client*
 -   GP ADMX file name: *terminalserver.admx*
 
-<!--EndADMX-->
+<!--/ADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="remotedesktopservices-promptforpassworduponconnection"></a>**RemoteDesktopServices/PromptForPasswordUponConnection**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -325,8 +335,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -334,8 +344,8 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 This policy setting specifies whether Remote Desktop Services always prompts the client for a password upon connection.
 
 You can use this setting to enforce a password prompt for users logging on to Remote Desktop Services, even if they already provided the password in the Remote Desktop Connection client.
@@ -348,7 +358,7 @@ If you disable this policy setting, users can always log on to Remote Desktop Se
 
 If you do not configure this policy setting, automatic logon is not specified at the Group Policy level.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -356,20 +366,22 @@ If you do not configure this policy setting, automatic logon is not specified at
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Always prompt for password upon connection*
 -   GP name: *TS_PASSWORD*
 -   GP path: *Windows Components/Remote Desktop Services/Remote Desktop Session Host/Security*
 -   GP ADMX file name: *terminalserver.admx*
 
-<!--EndADMX-->
+<!--/ADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="remotedesktopservices-requiresecurerpccommunication"></a>**RemoteDesktopServices/RequireSecureRPCCommunication**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -391,8 +403,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -400,8 +412,8 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Specifies whether a Remote Desktop Session Host server requires secure RPC communication with all clients or allows unsecured communication.
 
 You can use this setting to strengthen the security of RPC communication with clients by allowing only authenticated and encrypted requests.
@@ -414,7 +426,7 @@ If the status is set to Not Configured, unsecured communication is allowed.
 
 Note: The RPC interface is used for administering and configuring Remote Desktop Services.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -422,14 +434,14 @@ Note: The RPC interface is used for administering and configuring Remote Desktop
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Require secure RPC communication*
 -   GP name: *TS_RPC_ENCRYPTION*
 -   GP path: *Windows Components/Remote Desktop Services/Remote Desktop Session Host/Security*
 -   GP ADMX file name: *terminalserver.admx*
 
-<!--EndADMX-->
+<!--/ADMX-->
 <!--EndPolicy-->
 <hr/>
 

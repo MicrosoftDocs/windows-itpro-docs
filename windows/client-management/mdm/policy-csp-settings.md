@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/19/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - Settings
@@ -65,11 +65,13 @@ ms.date: 12/19/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowautoplay"></a>**Settings/AllowAutoPlay**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -91,8 +93,8 @@ ms.date: 12/19/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -100,8 +102,8 @@ ms.date: 12/19/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
@@ -111,7 +113,7 @@ Allows the user to change Auto Play settings.
 > [!NOTE]
 > Setting this policy to 0 (Not allowed) does not affect the autoplay dialog box that appears when a device is connected.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -120,11 +122,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowdatasense"></a>**Settings/AllowDataSense**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -146,8 +150,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -155,11 +159,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Allows the user to change Data Sense settings.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -168,11 +172,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowdatetime"></a>**Settings/AllowDateTime**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -194,8 +200,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -203,11 +209,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Allows the user to change date and time settings.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -216,11 +222,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-alloweditdevicename"></a>**Settings/AllowEditDeviceName**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -242,8 +250,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -251,11 +259,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Allows editing of the device name.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -264,11 +272,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowlanguage"></a>**Settings/AllowLanguage**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -290,8 +300,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -299,15 +309,15 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
 Allows the user to change the language settings.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -316,11 +326,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowonlinetips"></a>**Settings/AllowOnlineTips**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -342,8 +354,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -351,27 +363,21 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Enables or disables the retrieval of online tips and help for the Settings app.
 
 If disabled, Settings will not contact Microsoft content services to retrieve tips and help content.
-<!--EndDescription-->
-<!--SupportedValues-->
 
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
+<!--/Description-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowpowersleep"></a>**Settings/AllowPowerSleep**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -393,8 +399,8 @@ If disabled, Settings will not contact Microsoft content services to retrieve ti
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -402,15 +408,15 @@ If disabled, Settings will not contact Microsoft content services to retrieve ti
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
 Allows the user to change power and sleep settings.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -419,11 +425,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowregion"></a>**Settings/AllowRegion**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -445,8 +453,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -454,15 +462,15 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
 Allows the user to change the region settings.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -471,11 +479,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowsigninoptions"></a>**Settings/AllowSignInOptions**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -497,8 +507,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -506,15 +516,15 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
 Allows the user to change sign-in options.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -523,11 +533,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowvpn"></a>**Settings/AllowVPN**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -549,8 +561,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -558,11 +570,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Allows the user to change VPN settings.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -571,11 +583,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowworkplace"></a>**Settings/AllowWorkplace**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -597,8 +611,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -606,15 +620,15 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
 Allows user to change workplace settings.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -623,11 +637,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-allowyouraccount"></a>**Settings/AllowYourAccount**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -649,8 +665,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -658,11 +674,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Allows user to change account settings.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -671,11 +687,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-configuretaskbarcalendar"></a>**Settings/ConfigureTaskbarCalendar**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -697,8 +715,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -706,10 +724,12 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703.  Allows IT Admins to configure the default setting for showing additional calendars (besides the default calendar for the locale) in the taskbar clock and calendar flyout.  In this version of Windows 10, supported additional calendars are: Simplified or Traditional Chinese lunar calendar. Turning on one of these calendars will display Chinese lunar dates below the default calendar for the locale.  Select "Don't show additional calendars" to prevent showing other calendars besides the default calendar for the locale.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – User will be allowed to configure the setting.
@@ -717,13 +737,15 @@ The following list shows the supported values:
 -   2  - Simplified Chinese (Lunar).
 -   3  - Traditional Chinese (Lunar).
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="settings-pagevisibilitylist"></a>**Settings/PageVisibilityList**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -745,8 +767,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -754,8 +776,8 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703.  Allows IT Admins to either  prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified.  The mode will be specified by the policy string beginning with either the string "showonly:" or "hide:".  Pages are identified by a shortened version of their already published URIs, which is the URI minus the "ms-settings:" prefix. For example, if the URI for a settings page is "ms-settings:foo", the page identifier used in the policy will be just "foo".  Multiple page identifiers are separated by semicolons.
 
 The following example illustrates a policy that would allow access only to the about and bluetooth pages, which have URI "ms-settings:about" and "ms-settings:bluetooth" respectively:
@@ -782,13 +804,15 @@ Example 2, specifies that the wifi page should not be shown:
 
 hide:wifi
 
+<!--/Description-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Open System Settings and verfiy that the About page is visible and accessible.
 2.   Configure the policy with the following string: "hide:about".
 3.   Open System Settings again and verify that the About page is no longer accessible.
 
-<!--EndDescription-->
+<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 

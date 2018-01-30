@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/14/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - Games
@@ -24,11 +24,13 @@ ms.date: 12/14/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="games-allowadvancedgamingservices"></a>**Games/AllowAdvancedGamingServices**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -50,8 +52,8 @@ ms.date: 12/14/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -59,11 +61,11 @@ ms.date: 12/14/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1709. Specifies whether advanced gaming services can be used. These services may send data to Microsoft or publishers of games that use these services. Value type is integer.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 

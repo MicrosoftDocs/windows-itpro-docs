@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/14/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - Start
@@ -108,11 +108,13 @@ ms.date: 12/14/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-allowpinnedfolderdocuments"></a>**Start/AllowPinnedFolderDocuments**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -134,8 +136,8 @@ ms.date: 12/14/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -143,11 +145,11 @@ ms.date: 12/14/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703. This policy controls the visibility of the Documents shortcut on the Start menu.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -157,11 +159,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-allowpinnedfolderdownloads"></a>**Start/AllowPinnedFolderDownloads**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -183,8 +187,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -192,11 +196,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703. This policy controls the visibility of the Downloads shortcut on the Start menu.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -206,11 +210,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-allowpinnedfolderfileexplorer"></a>**Start/AllowPinnedFolderFileExplorer**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -232,8 +238,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -241,11 +247,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703. This policy controls the visibility of the File Explorer shortcut on the Start menu.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -255,11 +261,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-allowpinnedfolderhomegroup"></a>**Start/AllowPinnedFolderHomeGroup**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -281,8 +289,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -290,11 +298,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703. This policy controls the visibility of the HomeGroup shortcut on the Start menu.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -304,11 +312,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-allowpinnedfoldermusic"></a>**Start/AllowPinnedFolderMusic**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -330,8 +340,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -339,11 +349,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703. This policy controls the visibility of the Music shortcut on the Start menu.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -353,11 +363,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-allowpinnedfoldernetwork"></a>**Start/AllowPinnedFolderNetwork**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -379,8 +391,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -388,11 +400,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703. This policy controls the visibility of the Network shortcut on the Start menu.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -402,11 +414,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-allowpinnedfolderpersonalfolder"></a>**Start/AllowPinnedFolderPersonalFolder**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -428,8 +442,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -437,11 +451,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703. This policy controls the visibility of the PersonalFolder shortcut on the Start menu.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -451,11 +465,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-allowpinnedfolderpictures"></a>**Start/AllowPinnedFolderPictures**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -477,8 +493,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -486,11 +502,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703. This policy controls the visibility of the Pictures shortcut on the Start menu.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -500,11 +516,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-allowpinnedfoldersettings"></a>**Start/AllowPinnedFolderSettings**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -526,8 +544,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -535,11 +553,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703. This policy controls the visibility of the Settings shortcut on the Start menu.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -549,11 +567,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-allowpinnedfoldervideos"></a>**Start/AllowPinnedFolderVideos**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -575,8 +595,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -584,11 +604,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703. This policy controls the visibility of the Videos shortcut on the Start menu.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -598,11 +618,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-forcestartsize"></a>**Start/ForceStartSize**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -624,8 +646,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -633,29 +655,34 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
 Forces the start screen size.
 
+
+If there is policy configuration conflict, the latest configuration request is applied to the device.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Do not force size of Start.
 -   1 – Force non-fullscreen size of Start.
 -   2 - Force a fullscreen size of Start.
 
-If there is policy configuration conflict, the latest configuration request is applied to the device.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-hideapplist"></a>**Start/HideAppList**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -677,8 +704,8 @@ If there is policy configuration conflict, the latest configuration request is a
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -686,8 +713,8 @@ If there is policy configuration conflict, the latest configuration request is a
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy requires reboot to take effect.
 
@@ -696,12 +723,6 @@ Allows IT Admins to configure Start by collapsing or removing the all apps list.
 > [!Note]
 > There were issues reported with the previous release of this policy and a fix was added in Windows 10, version 1709. 
 
-The following list shows the supported values:
-
--   0 (default) – None.
--   1 – Hide all apps list.
--   2 - Hide all apps list, and Disable "Show app list in Start menu" in Settings app.
--   3 - Hide all apps list, remove all apps button, and Disable "Show app list in Start menu" in Settings app.
 
 To validate on Desktop, do the following:
 
@@ -710,13 +731,24 @@ To validate on Desktop, do the following:
 -   2b - If set to '2': Verify that the all apps list is collapsed, and that the Settings toggle is grayed out.
 -   2c - If set to '3': Verify that there is no way of opening the all apps list from Start, and that the Settings toggle is grayed out.
 
-<!--EndDescription-->
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – None.
+-   1 – Hide all apps list.
+-   2 - Hide all apps list, and Disable "Show app list in Start menu" in Settings app.
+-   3 - Hide all apps list, remove all apps button, and Disable "Show app list in Start menu" in Settings app.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-hidechangeaccountsettings"></a>**Start/HideChangeAccountSettings**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -738,8 +770,8 @@ To validate on Desktop, do the following:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -747,16 +779,11 @@ To validate on Desktop, do the following:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Change account settings" from appearing in the user tile.
 
-To validate on Desktop, do the following:
-
-1.   Enable policy.
-2.   Open Start, click on the user tile, and verify that "Change account settings" is not available.
-
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -764,12 +791,21 @@ The following list shows the supported values:
 -   1 - True (hide).
 
 <!--/SupportedValues-->
+<!--Validation-->
+To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Open Start, click on the user tile, and verify that "Change account settings" is not available.
+
+<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-hidefrequentlyusedapps"></a>**Start/HideFrequentlyUsedApps**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -791,8 +827,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -800,13 +836,22 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy requires reboot to take effect.
 
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding most used apps.
 
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Enable "Show most used apps" in the Settings app.
@@ -816,20 +861,15 @@ To validate on Desktop, do the following:
 5.   Check that  "Show most used apps" Settings toggle is grayed out.
 6.   Check that most used apps do not appear in Start.
 
-<!--EndDescription-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
-<!--/SupportedValues-->
+<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-hidehibernate"></a>**Start/HideHibernate**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -851,8 +891,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -860,32 +900,37 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Hibernate" from appearing in the Power button.
 
+
+> [!NOTE]
+> This policy can only be verified on laptops as "Hibernate" does not appear on regular PC's.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
+<!--Validation-->
 To validate on Laptop, do the following:
 
 1.   Enable policy.
 2.   Open Start, click on the Power button, and verify "Hibernate" is not available.
 
-> [!NOTE]
-> This policy can only be verified on laptops as "Hibernate" does not appear on regular PC's.
-
-<!--EndDescription-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
-<!--/SupportedValues-->
+<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-hidelock"></a>**Start/HideLock**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -907,8 +952,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -916,16 +961,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Lock" from appearing in the user tile.
 
-To validate on Desktop, do the following:
-
-1.   Enable policy.
-2.   Open Start, click on the user tile, and verify "Lock" is not available.
-
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -933,12 +973,21 @@ The following list shows the supported values:
 -   1 - True (hide).
 
 <!--/SupportedValues-->
+<!--Validation-->
+To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Open Start, click on the user tile, and verify "Lock" is not available.
+
+<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-hidepeoplebar"></a>**Start/HidePeopleBar**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -960,8 +1009,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -969,19 +1018,21 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1709. Enabling this policy removes the people icon from the taskbar as well as the corresponding settings toggle. It also prevents users from pinning people to the taskbar.
 
 Value type is integer.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-hidepowerbutton"></a>**Start/HidePowerButton**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1003,8 +1054,8 @@ Value type is integer.
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1012,19 +1063,14 @@ Value type is integer.
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy requires reboot to take effect.
 
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding the Power button from appearing.
 
-To validate on Desktop, do the following:
-
-1.   Enable policy.
-2.   Open Start, and verify the power button is not available.
-
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1032,12 +1078,21 @@ The following list shows the supported values:
 -   1 - True (hide).
 
 <!--/SupportedValues-->
+<!--Validation-->
+To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Open Start, and verify the power button is not available.
+
+<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-hiderecentjumplists"></a>**Start/HideRecentJumplists**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1059,8 +1114,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1068,13 +1123,22 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy requires reboot to take effect.
 
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding recently opened items in the jumplists from appearing.
 
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Enable "Show recently opened items in Jump Lists on Start of the taskbar" in Settings.
@@ -1087,20 +1151,15 @@ To validate on Desktop, do the following:
 8.   Repeat Step 2.
 9.   Right Click pinned photos app and verify that there is no jumplist of recent items.
 
-<!--EndDescription-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
-<!--/SupportedValues-->
+<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-hiderecentlyaddedapps"></a>**Start/HideRecentlyAddedApps**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1122,8 +1181,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1131,13 +1190,22 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy requires reboot to take effect.
 
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding recently added apps.
 
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Enable "Show recently added apps" in the Settings app.
@@ -1147,20 +1215,15 @@ To validate on Desktop, do the following:
 5.   Check that "Show recently added apps" Settings toggle is grayed out.
 6.   Check that recently added apps do not appear in Start.
 
-<!--EndDescription-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
-<!--/SupportedValues-->
+<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-hiderestart"></a>**Start/HideRestart**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1182,8 +1245,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1191,29 +1254,33 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Restart" and "Update and restart" from appearing in the Power button.
 
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Open Start, click on the Power button, and verify "Restart" and "Update and restart" are not available.
 
-<!--EndDescription-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
-<!--/SupportedValues-->
+<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-hideshutdown"></a>**Start/HideShutDown**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1235,8 +1302,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1244,29 +1311,33 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Shut down" and "Update and shut down" from appearing in the Power button.
 
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Open Start, click on the Power button, and verify "Shut down" and "Update and shut down" are not available.
 
-<!--EndDescription-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
-<!--/SupportedValues-->
+<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-hidesignout"></a>**Start/HideSignOut**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1288,8 +1359,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1297,29 +1368,33 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Sign out" from appearing in the user tile.
 
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Open Start, click on the user tile, and verify "Sign out" is not available.
 
-<!--EndDescription-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
-<!--/SupportedValues-->
+<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-hidesleep"></a>**Start/HideSleep**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1341,8 +1416,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1350,29 +1425,33 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Sleep" from appearing in the Power button.
 
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Open Start, click on the Power button, and verify that "Sleep" is not available.
 
-<!--EndDescription-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
-<!--/SupportedValues-->
+<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-hideswitchaccount"></a>**Start/HideSwitchAccount**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1394,8 +1473,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1403,29 +1482,33 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Switch account" from appearing in the user tile.
 
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Open Start, click on the user tile, and verify that "Switch account" is not available.
 
-<!--EndDescription-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
-<!--/SupportedValues-->
+<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-hideusertile"></a>**Start/HideUserTile**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1447,8 +1530,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1456,33 +1539,37 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy requires reboot to take effect.
 
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding the user tile.
 
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Log off.
 3.   Log in, and verify that the user tile is gone from Start.
 
-<!--EndDescription-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
-<!--/SupportedValues-->
+<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-importedgeassets"></a>**Start/ImportEdgeAssets**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1504,8 +1591,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1513,8 +1600,8 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy requires reboot to take effect.
 
@@ -1525,6 +1612,8 @@ Added in Windows 10, version 1703. This policy imports Edge assets (e.g. .png/.
 
 The value set for this policy is an XML string containing Edge assets.  For an example XML string, see [Add image for secondary Microsoft Edge tiles](https://docs.microsoft.com/en-us/windows/configuration/start-secondary-tiles).
 
+<!--/Description-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Set policy with an XML for Edge assets.
@@ -1532,13 +1621,15 @@ To validate on Desktop, do the following:
 3.   Sign out/in.
 4.   Verify that all Edge assets defined in XML show up in %LOCALAPPDATA%\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState path.
 
-<!--EndDescription-->
+<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-nopinningtotaskbar"></a>**Start/NoPinningToTaskbar**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1560,8 +1651,8 @@ To validate on Desktop, do the following:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1569,10 +1660,19 @@ To validate on Desktop, do the following:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703. Allows IT Admins to configure the taskbar by disabling pinning and unpinning apps on the taskbar.
 
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (pinning enabled).
+-   1 - True (pinning disabled).
+
+<!--/SupportedValues-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Enable policy.
@@ -1581,20 +1681,15 @@ To validate on Desktop, do the following:
 4.   Open Start and right click on one of the app list icons.
 5.   Verify that More->Pin to taskbar menu does not show.
 
-<!--EndDescription-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 (default) – False (pinning enabled).
--   1 - True (pinning disabled).
-
-<!--/SupportedValues-->
+<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="start-startlayout"></a>**Start/StartLayout**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1616,8 +1711,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1626,8 +1721,8 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!IMPORTANT]
 > Added in Windows 10 version 1703: In addition to being able to set this node on a per user-basis, it can now also be set on a per-device basis. For more information, see [Policy scope](./policy-configuration-service-provider.md#policy-scope)
 
@@ -1635,7 +1730,7 @@ Allows you to override the default Start layout and prevents the user from chang
 
 For further details on how to customize the Start layout, please see [Customize and export Start layout](https://docs.microsoft.com/en-us/windows/configuration/customize-and-export-start-layout) and [Configure Windows 10 taskbar](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-10-taskbar).
 
-<!--EndDescription-->
+<!--/Description-->
 <!--EndPolicy-->
 <hr/>
 

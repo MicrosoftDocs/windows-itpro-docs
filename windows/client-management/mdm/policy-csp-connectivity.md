@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/14/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - Connectivity
@@ -63,11 +63,13 @@ ms.date: 12/14/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="connectivity-allowbluetooth"></a>**Connectivity/AllowBluetooth**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -89,8 +91,8 @@ ms.date: 12/14/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -98,8 +100,8 @@ ms.date: 12/14/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Allows the user to enable Bluetooth or restrict access.
 
 > [!NOTE]
@@ -109,7 +111,7 @@ If this is not set or it is deleted, the default value of 2 (Allow) is used.
 
 Most restricted value is 0.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -119,11 +121,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="connectivity-allowcellulardata"></a>**Connectivity/AllowCellularData**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -145,8 +149,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -154,11 +158,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Allows the cellular data channel on the device. Device reboot is not required to enforce the policy.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -168,11 +172,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="connectivity-allowcellulardataroaming"></a>**Connectivity/AllowCellularDataRoaming**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -194,8 +200,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -203,13 +209,13 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Allows or disallows cellular data roaming on the device. Device reboot is not required to enforce the policy.
 
 Most restricted value is 0.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -229,11 +235,13 @@ To validate on mobile devices, do the following:
 
 <!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="connectivity-allowconnecteddevices"></a>**Connectivity/AllowConnectedDevices**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -255,8 +263,8 @@ To validate on mobile devices, do the following:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -264,14 +272,14 @@ To validate on mobile devices, do the following:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy requires reboot to take effect.
 
 Added in Windows 10, version 1703. Allows IT Admins the ability to disable the Connected Devices Platform (CDP) component. CDP enables discovery and connection to other devices (either proximally with BT/LAN or through the cloud) to support remote app launching, remote messaging, remote app sessions, and other cross-device experiences.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -280,11 +288,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="connectivity-allownfc"></a>**Connectivity/AllowNFC**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -306,8 +316,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -315,8 +325,8 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
@@ -325,7 +335,7 @@ Allows or disallows near field communication (NFC) on the device.
 
 Most restricted value is 0.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -334,11 +344,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="connectivity-allowusbconnection"></a>**Connectivity/AllowUSBConnection**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -360,8 +372,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -369,8 +381,8 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
@@ -381,7 +393,7 @@ Both Media Transfer Protocol (MTP) and IP over USB are disabled when this policy
 
 Most restricted value is 0.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -390,11 +402,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="connectivity-allowvpnovercellular"></a>**Connectivity/AllowVPNOverCellular**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -416,8 +430,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -425,13 +439,13 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Specifies what type of underlying connections VPN is allowed to use.
 
 Most restricted value is 0.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -440,11 +454,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="connectivity-allowvpnroamingovercellular"></a>**Connectivity/AllowVPNRoamingOverCellular**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -466,8 +482,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -475,13 +491,13 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Prevents the device from connecting to VPN when the device roams over cellular networks.
 
 Most restricted value is 0.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -490,11 +506,13 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="connectivity-diableprintingoverhttp"></a>**Connectivity/DiablePrintingOverHTTP**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -516,8 +534,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -525,10 +543,10 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -536,20 +554,22 @@ The following list shows the supported values:
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Turn off printing over HTTP*
 -   GP name: *DisableHTTPPrinting_2*
 -   GP path: *Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
 
-<!--EndADMX-->
+<!--/ADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="connectivity-disabledownloadingofprintdriversoverhttp"></a>**Connectivity/DisableDownloadingOfPrintDriversOverHTTP**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -571,8 +591,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -580,10 +600,10 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -591,20 +611,22 @@ ADMX Info:
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Turn off downloading of print drivers over HTTP*
 -   GP name: *DisableWebPnPDownload_2*
 -   GP path: *Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
 
-<!--EndADMX-->
+<!--/ADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="connectivity-disableinternetdownloadforwebpublishingandonlineorderingwizards"></a>**Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -626,8 +648,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -635,10 +657,10 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -646,20 +668,22 @@ ADMX Info:
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Turn off Internet download for Web publishing and online ordering wizards*
 -   GP name: *ShellPreventWPWDownload_2*
 -   GP path: *Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
 
-<!--EndADMX-->
+<!--/ADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="connectivity-disallownetworkconnectivityactivetests"></a>**Connectivity/DisallowNetworkConnectivityActiveTests**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -681,8 +705,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -690,19 +714,21 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703. Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to http://www.msftconnecttest.com/connecttest.txt to determine if the device can communicate with the Internet.  This policy disables the NCSI active probe, preventing network connectivity to www.msftconnecttest.com.
 
 Value type is integer.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="connectivity-hardeneduncpaths"></a>**Connectivity/HardenedUNCPaths**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -724,8 +750,8 @@ Value type is integer.
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -733,13 +759,13 @@ Value type is integer.
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 This policy setting configures secure access to UNC paths.
 
 If you enable this policy, Windows only allows access to the specified UNC paths after fulfilling additional security requirements.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -747,20 +773,22 @@ If you enable this policy, Windows only allows access to the specified UNC paths
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Hardened UNC Paths*
 -   GP name: *Pol_HardenedPaths*
 -   GP path: *Network/Network Provider*
 -   GP ADMX file name: *networkprovider.admx*
 
-<!--EndADMX-->
+<!--/ADMX-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="connectivity-prohibitinstallationandconfigurationofnetworkbridge"></a>**Connectivity/ProhibitInstallationAndConfigurationOfNetworkBridge**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -782,8 +810,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -791,10 +819,10 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -802,14 +830,14 @@ ADMX Info:
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Prohibit installation and configuration of Network Bridge on your DNS domain network*
 -   GP name: *NC_AllowNetBridge_NLA*
 -   GP path: *Network/Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
 
-<!--EndADMX-->
+<!--/ADMX-->
 <!--EndPolicy-->
 <hr/>
 

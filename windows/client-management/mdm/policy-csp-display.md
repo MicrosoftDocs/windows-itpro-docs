@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 01/29/2018
 ---
 
 # Policy CSP - Display
@@ -27,11 +27,13 @@ ms.date: 11/01/2017
   </dd>
 </dl>
 
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="display-turnoffgdidpiscalingforapps"></a>**Display/TurnOffGdiDPIScalingForApps**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -53,8 +55,8 @@ ms.date: 11/01/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -62,8 +64,8 @@ ms.date: 11/01/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 GDI DPI Scaling enables applications that are not DPI aware to become per monitor DPI aware.
 
 This policy setting lets you specify legacy applications that have GDI DPI Scaling turned off.
@@ -74,18 +76,22 @@ If you disable or do not configure this policy setting, GDI DPI Scaling might st
 
 If GDI DPI Scaling is configured to both turn off and turn on an application, the application will be turned off.
 
+<!--/Description-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Configure the setting for an app which has GDI DPI scaling enabled via MDM or any other supported mechanisms.
 2.   Run the app and observe blurry text.
 
-<!--EndDescription-->
+<!--/Validation-->
 <!--EndPolicy-->
+
 <hr/>
+
 <!--StartPolicy-->
 <a href="" id="display-turnongdidpiscalingforapps"></a>**Display/TurnOnGdiDPIScalingForApps**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -107,8 +113,8 @@ To validate on Desktop, do the following:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -116,8 +122,8 @@ To validate on Desktop, do the following:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 GDI DPI Scaling enables applications that are not DPI aware to become per monitor DPI aware.
 
 This policy setting lets you specify legacy applications that have GDI DPI Scaling turned on.
@@ -128,12 +134,14 @@ If you disable or do not configure this policy setting, GDI DPI Scaling will not
 
 If GDI DPI Scaling is configured to both turn off and turn on an application, the application will be turned off.
 
+<!--/Description-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Configure the setting for an app which uses GDI.
 2.   Run the app and observe crisp text.
 
-<!--EndDescription-->
+<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 
