@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - SystemServices
@@ -17,7 +17,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## SystemServices policies  
 
 <dl>
@@ -44,7 +44,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="systemservices-configurehomegrouplistenerservicestartupmode"></a>**SystemServices/ConfigureHomeGroupListenerServiceStartupMode**  
 
 <!--SupportedSKUs-->
@@ -83,11 +83,11 @@ ms.date: 01/29/2018
 Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="systemservices-configurehomegroupproviderservicestartupmode"></a>**SystemServices/ConfigureHomeGroupProviderServiceStartupMode**  
 
 <!--SupportedSKUs-->
@@ -126,11 +126,11 @@ Added in Windows 10, next major update. This setting determines whether the serv
 Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="systemservices-configurexboxaccessorymanagementservicestartupmode"></a>**SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode**  
 
 <!--SupportedSKUs-->
@@ -169,11 +169,11 @@ Added in Windows 10, next major update. This setting determines whether the serv
 Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="systemservices-configurexboxliveauthmanagerservicestartupmode"></a>**SystemServices/ConfigureXboxLiveAuthManagerServiceStartupMode**  
 
 <!--SupportedSKUs-->
@@ -212,11 +212,11 @@ Added in Windows 10, next major update. This setting determines whether the serv
 Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="systemservices-configurexboxlivegamesaveservicestartupmode"></a>**SystemServices/ConfigureXboxLiveGameSaveServiceStartupMode**  
 
 <!--SupportedSKUs-->
@@ -255,11 +255,11 @@ Added in Windows 10, next major update. This setting determines whether the serv
 Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="systemservices-configurexboxlivenetworkingservicestartupmode"></a>**SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode**  
 
 <!--SupportedSKUs-->
@@ -298,7 +298,7 @@ Added in Windows 10, next major update. This setting determines whether the serv
 Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -307,5 +307,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

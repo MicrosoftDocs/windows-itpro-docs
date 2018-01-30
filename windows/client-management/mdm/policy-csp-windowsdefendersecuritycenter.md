@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - WindowsDefenderSecurityCenter
@@ -17,7 +17,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## WindowsDefenderSecurityCenter policies  
 
 <dl>
@@ -83,7 +83,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-companyname"></a>**WindowsDefenderSecurityCenter/CompanyName**  
 
 <!--SupportedSKUs-->
@@ -124,11 +124,11 @@ Added in Windows 10, version 1709. The company name that is displayed to the use
 Value type is string. Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-disableaccountprotectionui"></a>**WindowsDefenderSecurityCenter/DisableAccountProtectionUI**  
 
 <!--SupportedSKUs-->
@@ -174,11 +174,11 @@ Valid values:
 - 1 - (Enable) The users cannot see the display of the Account protection area in Windows Defender Security Center.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-disableappbrowserui"></a>**WindowsDefenderSecurityCenter/DisableAppBrowserUI**  
 
 <!--SupportedSKUs-->
@@ -226,11 +226,11 @@ The following list shows the supported values:
 - 1 - (Enable) The users cannot see the display of the app and browser protection area in Windows Defender Security Center.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-disabledevicesecurityui"></a>**WindowsDefenderSecurityCenter/DisableDeviceSecurityUI**  
 
 <!--SupportedSKUs-->
@@ -276,11 +276,11 @@ Valid values:
 - 1 - (Enable) The users cannot see the display of the Device secuirty area in Windows Defender Security Center.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-disableenhancednotifications"></a>**WindowsDefenderSecurityCenter/DisableEnhancedNotifications**  
 
 <!--SupportedSKUs-->
@@ -331,11 +331,11 @@ The following list shows the supported values:
 - 1 - (Enable) Windows Defender Security Center only display notifications which are considered critical on clients.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-disablefamilyui"></a>**WindowsDefenderSecurityCenter/DisableFamilyUI**  
 
 <!--SupportedSKUs-->
@@ -383,11 +383,11 @@ The following list shows the supported values:
 - 1 - (Enable) The users cannot see the display of the family options area in Windows Defender Security Center.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-disablehealthui"></a>**WindowsDefenderSecurityCenter/DisableHealthUI**  
 
 <!--SupportedSKUs-->
@@ -435,11 +435,11 @@ The following list shows the supported values:
 - 1 - (Enable) The users cannot see the display of the device performance and health area in Windows Defender Security Center.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-disablenetworkui"></a>**WindowsDefenderSecurityCenter/DisableNetworkUI**  
 
 <!--SupportedSKUs-->
@@ -487,11 +487,11 @@ The following list shows the supported values:
 - 1 - (Enable) The users cannot see the display of the firewall and network protection area in Windows Defender Security Center.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-disablenotifications"></a>**WindowsDefenderSecurityCenter/DisableNotifications**  
 
 <!--SupportedSKUs-->
@@ -539,11 +539,11 @@ The following list shows the supported values:
 - 1 - (Enable) The users cannot see the display of Windows Defender Security Center notifications.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-disablevirusui"></a>**WindowsDefenderSecurityCenter/DisableVirusUI**  
 
 <!--SupportedSKUs-->
@@ -591,11 +591,11 @@ The following list shows the supported values:
 - 1 - (Enable) The users cannot see the display of the virus and threat protection area in Windows Defender Security Center.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-disallowexploitprotectionoverride"></a>**WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride**  
 
 <!--SupportedSKUs-->
@@ -643,11 +643,11 @@ The following list shows the supported values:
 - 1 - (Enable) Local users cannot make changes in the exploit protection settings area.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-email"></a>**WindowsDefenderSecurityCenter/Email**  
 
 <!--SupportedSKUs-->
@@ -688,11 +688,11 @@ Added in Windows 10, version 1709. The email address that is displayed to users.
 Value type is string. Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-enablecustomizedtoasts"></a>**WindowsDefenderSecurityCenter/EnableCustomizedToasts**  
 
 <!--SupportedSKUs-->
@@ -740,11 +740,11 @@ The following list shows the supported values:
 - 1 - (Enable) Notifications contain the company name and contact options.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-enableinappcustomization"></a>**WindowsDefenderSecurityCenter/EnableInAppCustomization**  
 
 <!--SupportedSKUs-->
@@ -792,11 +792,11 @@ The following list shows the supported values:
 - 1 - (Enable) Display the company name and contact options in the card fly out notification.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-hideransomwaredatarecovery"></a>**WindowsDefenderSecurityCenter/HideRansomwareDataRecovery**  
 
 <!--SupportedSKUs-->
@@ -842,11 +842,11 @@ Valid values:
 - 1 - (Enable) The Ransomware data recovery area is hidden.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-hidesecureboot"></a>**WindowsDefenderSecurityCenter/HideSecureBoot**  
 
 <!--SupportedSKUs-->
@@ -892,11 +892,11 @@ Valid values:
 - 1 - (Enable) The Secure boot area is hidden.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-hidetpmtroubleshooting"></a>**WindowsDefenderSecurityCenter/HideTPMTroubleshooting**  
 
 <!--SupportedSKUs-->
@@ -942,11 +942,11 @@ Valid values:
 - 1 - (Enable) The Security processor (TPM) troubleshooting area is hidden.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-phone"></a>**WindowsDefenderSecurityCenter/Phone**  
 
 <!--SupportedSKUs-->
@@ -987,11 +987,11 @@ Added in Windows 10, version 1709. The phone number or Skype ID that is displaye
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-url"></a>**WindowsDefenderSecurityCenter/URL**  
 
 <!--SupportedSKUs-->
@@ -1032,7 +1032,7 @@ Added in Windows 10, version 1709. The help portal URL this is displayed to user
 Value type is Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -1041,5 +1041,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

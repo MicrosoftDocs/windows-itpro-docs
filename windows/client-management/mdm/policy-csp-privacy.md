@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - Privacy
@@ -15,7 +15,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## Privacy policies  
 
 <dl>
@@ -255,7 +255,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-allowautoacceptpairingandprivacyconsentprompts"></a>**Privacy/AllowAutoAcceptPairingAndPrivacyConsentPrompts**  
 
 <!--SupportedSKUs-->
@@ -307,11 +307,11 @@ The following list shows the supported values:
 -   1 – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-allowinputpersonalization"></a>**Privacy/AllowInputPersonalization**  
 
 <!--SupportedSKUs-->
@@ -359,11 +359,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-disableadvertisingid"></a>**Privacy/DisableAdvertisingId**  
 
 <!--SupportedSKUs-->
@@ -412,11 +412,11 @@ The following list shows the supported values:
 -   65535 (default)- Not configured.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-enableactivityfeed"></a>**Privacy/EnableActivityFeed**  
 
 <!--SupportedSKUs-->
@@ -462,11 +462,11 @@ The following list shows the supported values:
 -   1 – (default) Enabled. Apps/OS can publish the activities and will be roamed across device graph.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessaccountinfo"></a>**Privacy/LetAppsAccessAccountInfo**  
 
 <!--SupportedSKUs-->
@@ -516,11 +516,11 @@ The following list shows the supported values:
 -   2 - Force deny.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessaccountinfo-forceallowtheseapps"></a>**Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps**  
 
 <!--SupportedSKUs-->
@@ -559,11 +559,11 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed access to account information. This setting overrides the default LetAppsAccessAccountInfo policy setting for the specified Windows apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessaccountinfo-forcedenytheseapps"></a>**Privacy/LetAppsAccessAccountInfo_ForceDenyTheseApps**  
 
 <!--SupportedSKUs-->
@@ -602,11 +602,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are denied access to account information. This setting overrides the default LetAppsAccessAccountInfo policy setting for the specified Windows apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessaccountinfo-userincontroloftheseapps"></a>**Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps**  
 
 <!--SupportedSKUs-->
@@ -645,11 +645,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the account information privacy setting for the listed Windows apps. This setting overrides the default LetAppsAccessAccountInfo policy setting for the specified Windows apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesscalendar"></a>**Privacy/LetAppsAccessCalendar**  
 
 <!--SupportedSKUs-->
@@ -699,11 +699,11 @@ The following list shows the supported values:
 -   2 - Force deny.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesscalendar-forceallowtheseapps"></a>**Privacy/LetAppsAccessCalendar_ForceAllowTheseApps**  
 
 <!--SupportedSKUs-->
@@ -742,11 +742,11 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed access to the calendar. This setting overrides the default LetAppsAccessCalendar policy setting for the specified Windows apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesscalendar-forcedenytheseapps"></a>**Privacy/LetAppsAccessCalendar_ForceDenyTheseApps**  
 
 <!--SupportedSKUs-->
@@ -785,11 +785,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are denied access to the calendar. This setting overrides the default LetAppsAccessCalendar policy setting for the specified Windows apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesscalendar-userincontroloftheseapps"></a>**Privacy/LetAppsAccessCalendar_UserInControlOfTheseApps**  
 
 <!--SupportedSKUs-->
@@ -828,11 +828,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the calendar privacy setting for the listed Windows apps. This setting overrides the default LetAppsAccessCalendar policy setting for the specified Windows apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesscallhistory"></a>**Privacy/LetAppsAccessCallHistory**  
 
 <!--SupportedSKUs-->
@@ -882,11 +882,11 @@ The following list shows the supported values:
 -   2 - Force deny.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesscallhistory-forceallowtheseapps"></a>**Privacy/LetAppsAccessCallHistory_ForceAllowTheseApps**  
 
 <!--SupportedSKUs-->
@@ -925,11 +925,11 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed access to call history. This setting overrides the default LetAppsAccessCallHistory policy setting for the specified Windows apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesscallhistory-forcedenytheseapps"></a>**Privacy/LetAppsAccessCallHistory_ForceDenyTheseApps**  
 
 <!--SupportedSKUs-->
@@ -968,11 +968,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are denied access to call history. This setting overrides the default LetAppsAccessCallHistory policy setting for the specified Windows apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesscallhistory-userincontroloftheseapps"></a>**Privacy/LetAppsAccessCallHistory_UserInControlOfTheseApps**  
 
 <!--SupportedSKUs-->
@@ -1011,11 +1011,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the call history privacy setting for the listed Windows apps. This setting overrides the default LetAppsAccessCallHistory policy setting for the specified Windows apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesscamera"></a>**Privacy/LetAppsAccessCamera**  
 
 <!--SupportedSKUs-->
@@ -1065,11 +1065,11 @@ The following list shows the supported values:
 -   2 - Force deny.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesscamera-forceallowtheseapps"></a>**Privacy/LetAppsAccessCamera_ForceAllowTheseApps**  
 
 <!--SupportedSKUs-->
@@ -1108,11 +1108,11 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesscamera-forcedenytheseapps"></a>**Privacy/LetAppsAccessCamera_ForceDenyTheseApps**  
 
 <!--SupportedSKUs-->
@@ -1151,11 +1151,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesscamera-userincontroloftheseapps"></a>**Privacy/LetAppsAccessCamera_UserInControlOfTheseApps**  
 
 <!--SupportedSKUs-->
@@ -1194,11 +1194,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the camera privacy setting for the listed apps. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesscontacts"></a>**Privacy/LetAppsAccessContacts**  
 
 <!--SupportedSKUs-->
@@ -1248,11 +1248,11 @@ The following list shows the supported values:
 -   2 - Force deny.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesscontacts-forceallowtheseapps"></a>**Privacy/LetAppsAccessContacts_ForceAllowTheseApps**  
 
 <!--SupportedSKUs-->
@@ -1291,11 +1291,11 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesscontacts-forcedenytheseapps"></a>**Privacy/LetAppsAccessContacts_ForceDenyTheseApps**  
 
 <!--SupportedSKUs-->
@@ -1334,11 +1334,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesscontacts-userincontroloftheseapps"></a>**Privacy/LetAppsAccessContacts_UserInControlOfTheseApps**  
 
 <!--SupportedSKUs-->
@@ -1377,11 +1377,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the contacts privacy setting for the listed apps. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessemail"></a>**Privacy/LetAppsAccessEmail**  
 
 <!--SupportedSKUs-->
@@ -1431,11 +1431,11 @@ The following list shows the supported values:
 -   2 - Force deny.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessemail-forceallowtheseapps"></a>**Privacy/LetAppsAccessEmail_ForceAllowTheseApps**  
 
 <!--SupportedSKUs-->
@@ -1474,11 +1474,11 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessemail-forcedenytheseapps"></a>**Privacy/LetAppsAccessEmail_ForceDenyTheseApps**  
 
 <!--SupportedSKUs-->
@@ -1517,11 +1517,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessemail-userincontroloftheseapps"></a>**Privacy/LetAppsAccessEmail_UserInControlOfTheseApps**  
 
 <!--SupportedSKUs-->
@@ -1560,11 +1560,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the email privacy setting for the listed apps. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesslocation"></a>**Privacy/LetAppsAccessLocation**  
 
 <!--SupportedSKUs-->
@@ -1614,11 +1614,11 @@ The following list shows the supported values:
 -   2 - Force deny.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesslocation-forceallowtheseapps"></a>**Privacy/LetAppsAccessLocation_ForceAllowTheseApps**  
 
 <!--SupportedSKUs-->
@@ -1657,11 +1657,11 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesslocation-forcedenytheseapps"></a>**Privacy/LetAppsAccessLocation_ForceDenyTheseApps**  
 
 <!--SupportedSKUs-->
@@ -1700,11 +1700,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesslocation-userincontroloftheseapps"></a>**Privacy/LetAppsAccessLocation_UserInControlOfTheseApps**  
 
 <!--SupportedSKUs-->
@@ -1743,11 +1743,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the location privacy setting for the listed apps. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessmessaging"></a>**Privacy/LetAppsAccessMessaging**  
 
 <!--SupportedSKUs-->
@@ -1797,11 +1797,11 @@ The following list shows the supported values:
 -   2 - Force deny.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessmessaging-forceallowtheseapps"></a>**Privacy/LetAppsAccessMessaging_ForceAllowTheseApps**  
 
 <!--SupportedSKUs-->
@@ -1840,11 +1840,11 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessmessaging-forcedenytheseapps"></a>**Privacy/LetAppsAccessMessaging_ForceDenyTheseApps**  
 
 <!--SupportedSKUs-->
@@ -1883,11 +1883,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are not allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessmessaging-userincontroloftheseapps"></a>**Privacy/LetAppsAccessMessaging_UserInControlOfTheseApps**  
 
 <!--SupportedSKUs-->
@@ -1926,11 +1926,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the messaging privacy setting for the listed apps. This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessmicrophone"></a>**Privacy/LetAppsAccessMicrophone**  
 
 <!--SupportedSKUs-->
@@ -1980,11 +1980,11 @@ The following list shows the supported values:
 -   2 - Force deny.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessmicrophone-forceallowtheseapps"></a>**Privacy/LetAppsAccessMicrophone_ForceAllowTheseApps**  
 
 <!--SupportedSKUs-->
@@ -2023,11 +2023,11 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessmicrophone-forcedenytheseapps"></a>**Privacy/LetAppsAccessMicrophone_ForceDenyTheseApps**  
 
 <!--SupportedSKUs-->
@@ -2066,11 +2066,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessmicrophone-userincontroloftheseapps"></a>**Privacy/LetAppsAccessMicrophone_UserInControlOfTheseApps**  
 
 <!--SupportedSKUs-->
@@ -2109,11 +2109,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the microphone privacy setting for the listed apps. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessmotion"></a>**Privacy/LetAppsAccessMotion**  
 
 <!--SupportedSKUs-->
@@ -2163,11 +2163,11 @@ The following list shows the supported values:
 -   2 - Force deny.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessmotion-forceallowtheseapps"></a>**Privacy/LetAppsAccessMotion_ForceAllowTheseApps**  
 
 <!--SupportedSKUs-->
@@ -2206,11 +2206,11 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessmotion-forcedenytheseapps"></a>**Privacy/LetAppsAccessMotion_ForceDenyTheseApps**  
 
 <!--SupportedSKUs-->
@@ -2249,11 +2249,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessmotion-userincontroloftheseapps"></a>**Privacy/LetAppsAccessMotion_UserInControlOfTheseApps**  
 
 <!--SupportedSKUs-->
@@ -2292,11 +2292,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the motion privacy setting for the listed apps. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessnotifications"></a>**Privacy/LetAppsAccessNotifications**  
 
 <!--SupportedSKUs-->
@@ -2346,11 +2346,11 @@ The following list shows the supported values:
 -   2 - Force deny.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessnotifications-forceallowtheseapps"></a>**Privacy/LetAppsAccessNotifications_ForceAllowTheseApps**  
 
 <!--SupportedSKUs-->
@@ -2389,11 +2389,11 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessnotifications-forcedenytheseapps"></a>**Privacy/LetAppsAccessNotifications_ForceDenyTheseApps**  
 
 <!--SupportedSKUs-->
@@ -2432,11 +2432,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessnotifications-userincontroloftheseapps"></a>**Privacy/LetAppsAccessNotifications_UserInControlOfTheseApps**  
 
 <!--SupportedSKUs-->
@@ -2475,11 +2475,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the notifications privacy setting for the listed apps. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessphone"></a>**Privacy/LetAppsAccessPhone**  
 
 <!--SupportedSKUs-->
@@ -2529,11 +2529,11 @@ The following list shows the supported values:
 -   2 - Force deny.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessphone-forceallowtheseapps"></a>**Privacy/LetAppsAccessPhone_ForceAllowTheseApps**  
 
 <!--SupportedSKUs-->
@@ -2572,11 +2572,11 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessphone-forcedenytheseapps"></a>**Privacy/LetAppsAccessPhone_ForceDenyTheseApps**  
 
 <!--SupportedSKUs-->
@@ -2615,11 +2615,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are not allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessphone-userincontroloftheseapps"></a>**Privacy/LetAppsAccessPhone_UserInControlOfTheseApps**  
 
 <!--SupportedSKUs-->
@@ -2658,11 +2658,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the phone call privacy setting for the listed apps. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessradios"></a>**Privacy/LetAppsAccessRadios**  
 
 <!--SupportedSKUs-->
@@ -2712,11 +2712,11 @@ The following list shows the supported values:
 -   2 - Force deny.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessradios-forceallowtheseapps"></a>**Privacy/LetAppsAccessRadios_ForceAllowTheseApps**  
 
 <!--SupportedSKUs-->
@@ -2755,11 +2755,11 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessradios-forcedenytheseapps"></a>**Privacy/LetAppsAccessRadios_ForceDenyTheseApps**  
 
 <!--SupportedSKUs-->
@@ -2798,11 +2798,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccessradios-userincontroloftheseapps"></a>**Privacy/LetAppsAccessRadios_UserInControlOfTheseApps**  
 
 <!--SupportedSKUs-->
@@ -2841,11 +2841,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the radios privacy setting for the listed apps. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesstasks"></a>**Privacy/LetAppsAccessTasks**  
 
 <!--SupportedSKUs-->
@@ -2884,11 +2884,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1703. Specifies whether Windows apps can access tasks.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesstasks-forceallowtheseapps"></a>**Privacy/LetAppsAccessTasks_ForceAllowTheseApps**  
 
 <!--SupportedSKUs-->
@@ -2927,11 +2927,11 @@ Added in Windows 10, version 1703. Specifies whether Windows apps can access tas
 Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesstasks-forcedenytheseapps"></a>**Privacy/LetAppsAccessTasks_ForceDenyTheseApps**  
 
 <!--SupportedSKUs-->
@@ -2970,11 +2970,11 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family N
 Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesstasks-userincontroloftheseapps"></a>**Privacy/LetAppsAccessTasks_UserInControlOfTheseApps**  
 
 <!--SupportedSKUs-->
@@ -3013,11 +3013,11 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family N
 Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the tasks privacy setting for the listed apps. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesstrusteddevices"></a>**Privacy/LetAppsAccessTrustedDevices**  
 
 <!--SupportedSKUs-->
@@ -3067,11 +3067,11 @@ The following list shows the supported values:
 -   2 - Force deny.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesstrusteddevices-forceallowtheseapps"></a>**Privacy/LetAppsAccessTrustedDevices_ForceAllowTheseApps**  
 
 <!--SupportedSKUs-->
@@ -3110,11 +3110,11 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesstrusteddevices-forcedenytheseapps"></a>**Privacy/LetAppsAccessTrustedDevices_ForceDenyTheseApps**  
 
 <!--SupportedSKUs-->
@@ -3153,11 +3153,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsaccesstrusteddevices-userincontroloftheseapps"></a>**Privacy/LetAppsAccessTrustedDevices_UserInControlOfTheseApps**  
 
 <!--SupportedSKUs-->
@@ -3196,11 +3196,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'trusted devices' privacy setting for the listed apps. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsgetdiagnosticinfo"></a>**Privacy/LetAppsGetDiagnosticInfo**  
 
 <!--SupportedSKUs-->
@@ -3250,11 +3250,11 @@ The following list shows the supported values:
 -   2 - Force deny.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsgetdiagnosticinfo-forceallowtheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps**  
 
 <!--SupportedSKUs-->
@@ -3293,11 +3293,11 @@ The following list shows the supported values:
 Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to diagnostic information about other running apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsgetdiagnosticinfo-forcedenytheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps**  
 
 <!--SupportedSKUs-->
@@ -3336,11 +3336,11 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to diagnostic information about other running apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsgetdiagnosticinfo-userincontroloftheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps**  
 
 <!--SupportedSKUs-->
@@ -3379,11 +3379,11 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'get diagnostic info' privacy setting for the listed apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsruninbackground"></a>**Privacy/LetAppsRunInBackground**  
 
 <!--SupportedSKUs-->
@@ -3435,11 +3435,11 @@ The following list shows the supported values:
 -   2 - Force deny.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsruninbackground-forceallowtheseapps"></a>**Privacy/LetAppsRunInBackground_ForceAllowTheseApps**  
 
 <!--SupportedSKUs-->
@@ -3478,11 +3478,11 @@ The following list shows the supported values:
 Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are able to run in the background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsruninbackground-forcedenytheseapps"></a>**Privacy/LetAppsRunInBackground_ForceDenyTheseApps**  
 
 <!--SupportedSKUs-->
@@ -3521,11 +3521,11 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied the ability to run in the background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappsruninbackground-userincontroloftheseapps"></a>**Privacy/LetAppsRunInBackground_UserInControlOfTheseApps**  
 
 <!--SupportedSKUs-->
@@ -3564,11 +3564,11 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the background apps privacy setting for the listed apps. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappssyncwithdevices"></a>**Privacy/LetAppsSyncWithDevices**  
 
 <!--SupportedSKUs-->
@@ -3618,11 +3618,11 @@ The following list shows the supported values:
 -   2 - Force deny.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappssyncwithdevices-forceallowtheseapps"></a>**Privacy/LetAppsSyncWithDevices_ForceAllowTheseApps**  
 
 <!--SupportedSKUs-->
@@ -3661,11 +3661,11 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to sync with devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappssyncwithdevices-forcedenytheseapps"></a>**Privacy/LetAppsSyncWithDevices_ForceDenyTheseApps**  
 
 <!--SupportedSKUs-->
@@ -3704,11 +3704,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to sync with devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-letappssyncwithdevices-userincontroloftheseapps"></a>**Privacy/LetAppsSyncWithDevices_UserInControlOfTheseApps**  
 
 <!--SupportedSKUs-->
@@ -3747,11 +3747,11 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'sync with devices' privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="privacy-publishuseractivities"></a>**Privacy/PublishUserActivities**  
 
 <!--SupportedSKUs-->
@@ -3797,7 +3797,7 @@ The following list shows the supported values:
 -   1 – (default) Enabled. Apps/OS can publish the *user activities*.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -3806,7 +3806,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 
 <!--StartHoloLens-->
 ## <a href="" id="hololenspolicies"></a>Privacy policies supported by Windows Holographic for Business  

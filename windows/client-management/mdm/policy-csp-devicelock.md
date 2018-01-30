@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - DeviceLock
@@ -17,7 +17,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## DeviceLock policies  
 
 <dl>
@@ -77,7 +77,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="devicelock-allowidlereturnwithoutpassword"></a>**DeviceLock/AllowIdleReturnWithoutPassword**  
 
 <!--SupportedSKUs-->
@@ -130,11 +130,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="devicelock-allowscreentimeoutwhilelockeduserconfig"></a>**DeviceLock/AllowScreenTimeoutWhileLockedUserConfig**  
 
 <!--SupportedSKUs-->
@@ -192,11 +192,11 @@ The following list shows the supported values:
 -   1 – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="devicelock-allowsimpledevicepassword"></a>**DeviceLock/AllowSimpleDevicePassword**  
 
 <!--SupportedSKUs-->
@@ -249,11 +249,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="devicelock-alphanumericdevicepasswordrequired"></a>**DeviceLock/AlphanumericDevicePasswordRequired**  
 
 <!--SupportedSKUs-->
@@ -312,11 +312,11 @@ The following list shows the supported values:
 -   2 (default) – Users can choose: Numeric PIN or password, or Alphanumeric PIN or password.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="devicelock-devicepasswordenabled"></a>**DeviceLock/DevicePasswordEnabled**  
 
 <!--SupportedSKUs-->
@@ -403,11 +403,11 @@ The following list shows the supported values:
 -   1 – Disabled
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="devicelock-devicepasswordexpiration"></a>**DeviceLock/DevicePasswordExpiration**  
 
 <!--SupportedSKUs-->
@@ -462,11 +462,11 @@ The following list shows the supported values:
 -   0 (default) - Passwords do not expire.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="devicelock-devicepasswordhistory"></a>**DeviceLock/DevicePasswordHistory**  
 
 <!--SupportedSKUs-->
@@ -523,11 +523,11 @@ The following list shows the supported values:
 -   0 (default)
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="devicelock-enforcelockscreenandlogonimage"></a>**DeviceLock/EnforceLockScreenAndLogonImage**  
 
 <!--SupportedSKUs-->
@@ -572,11 +572,11 @@ Added in Windows 10, version 1607. Specifies the default lock screen and logon 
 Value type is a string, which is the full image filepath and filename.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="devicelock-enforcelockscreenprovider"></a>**DeviceLock/EnforceLockScreenProvider**  
 
 <!--SupportedSKUs-->
@@ -621,11 +621,11 @@ Added in Windows 10, version 1607. Restricts lock screen image to a specific lo
 Value type is a string, which is the AppID.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="devicelock-maxdevicepasswordfailedattempts"></a>**DeviceLock/MaxDevicePasswordFailedAttempts**  
 
 <!--SupportedSKUs-->
@@ -687,11 +687,11 @@ The following list shows the supported values:
 -   0 (default) - The device is never wiped after an incorrect PIN or password is entered.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="devicelock-maxinactivitytimedevicelock"></a>**DeviceLock/MaxInactivityTimeDeviceLock**  
 
 <!--SupportedSKUs-->
@@ -744,11 +744,11 @@ The following list shows the supported values:
 -   0 (default) - No timeout is defined. The default of "0" is Windows Phone 7.5 parity and is interpreted by as "No timeout is defined."
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="devicelock-maxinactivitytimedevicelockwithexternaldisplay"></a>**DeviceLock/MaxInactivityTimeDeviceLockWithExternalDisplay**  
 
 <!--SupportedSKUs-->
@@ -797,11 +797,11 @@ The following list shows the supported values:
 -   0 (default) - No timeout is defined. The default of "0" is Windows Phone 7.5 parity and is interpreted by as "No timeout is defined."
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="devicelock-mindevicepasswordcomplexcharacters"></a>**DeviceLock/MinDevicePasswordComplexCharacters**  
 
 <!--SupportedSKUs-->
@@ -911,11 +911,11 @@ The enforcement of policies for Microsoft accounts happen on the server, and the
 For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="devicelock-mindevicepasswordlength"></a>**DeviceLock/MinDevicePasswordLength**  
 
 <!--SupportedSKUs-->
@@ -973,11 +973,11 @@ The following list shows the supported values:
 -   The default value is 4 for mobile devices and desktop devices.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="devicelock-minimumpasswordage"></a>**DeviceLock/MinimumPasswordAge**  
 
 <!--SupportedSKUs-->
@@ -1020,11 +1020,11 @@ The minimum password age must be less than the Maximum password age, unless the 
 Configure the minimum password age to be more than 0 if you want Enforce password history to be effective. Without a minimum password age, users can cycle through passwords repeatedly until they get to an old favorite. The default setting does not follow this recommendation, so that an administrator can specify a password for a user and then require the user to change the administrator-defined password when the user logs on. If the password history is set to 0, the user does not have to choose a new password. For this reason, Enforce password history is set to 1 by default.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="devicelock-preventlockscreenslideshow"></a>**DeviceLock/PreventLockScreenSlideShow**  
 
 <!--SupportedSKUs-->
@@ -1082,11 +1082,11 @@ ADMX Info:
 -   GP ADMX file name: *ControlPanelDisplay.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="devicelock-screentimeoutwhilelocked"></a>**DeviceLock/ScreenTimeoutWhileLocked**  
 
 <!--SupportedSKUs-->
@@ -1136,7 +1136,7 @@ The default value is 10.
 Most restricted value is 0.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -1145,7 +1145,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 
 <!--StartEAS-->
 ## <a href="" id="eas"></a>DeviceLock policies that can be set using Exchange Active Sync (EAS)  

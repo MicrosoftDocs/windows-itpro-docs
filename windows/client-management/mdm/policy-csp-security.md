@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - Security
@@ -17,7 +17,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## Security policies  
 
 <dl>
@@ -59,7 +59,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="security-allowaddprovisioningpackage"></a>**Security/AllowAddProvisioningPackage**  
 
 <!--SupportedSKUs-->
@@ -105,11 +105,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="security-allowautomaticdeviceencryptionforazureadjoineddevices"></a>**Security/AllowAutomaticDeviceEncryptionForAzureADJoinedDevices**  
 
 <!--SupportedSKUs-->
@@ -155,11 +155,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="security-allowmanualrootcertificateinstallation"></a>**Security/AllowManualRootCertificateInstallation**  
 
 <!--SupportedSKUs-->
@@ -211,11 +211,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="security-allowremoveprovisioningpackage"></a>**Security/AllowRemoveProvisioningPackage**  
 
 <!--SupportedSKUs-->
@@ -261,11 +261,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="security-antitheftmode"></a>**Security/AntiTheftMode**  
 
 <!--SupportedSKUs-->
@@ -315,11 +315,11 @@ The following list shows the supported values:
 -   1 (default) – Anti Theft Mode will follow the default device configuration (region-dependent).
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="security-cleartpmifnotready"></a>**Security/ClearTPMIfNotReady**  
 
 <!--SupportedSKUs-->
@@ -368,11 +368,11 @@ The following list shows the supported values:
 -   1 – Will prompt to clear the TPM if the TPM is in a non-ready state (or reduced functionality) which can be remediated with a TPM Clear.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="security-configurewindowspasswords"></a>**Security/ConfigureWindowsPasswords**  
 
 <!--SupportedSKUs-->
@@ -422,11 +422,11 @@ The following list shows the supported values:
 -  2- Default (Feature defaults as per SKU and device capabilities. Windows 10 S devices will exhibit "Disallow passwords" default, and all other devices will default to "Allow passwords")
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="security-preventautomaticdeviceencryptionforazureadjoineddevices"></a>**Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices**  
 
 <!--SupportedSKUs-->
@@ -478,11 +478,11 @@ The following list shows the supported values:
 -   1 – Encryption disabled.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="security-requiredeviceencryption"></a>**Security/RequireDeviceEncryption**  
 
 <!--SupportedSKUs-->
@@ -534,11 +534,11 @@ The following list shows the supported values:
 -   1 – Encryption is required.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="security-requireprovisioningpackagesignature"></a>**Security/RequireProvisioningPackageSignature**  
 
 <!--SupportedSKUs-->
@@ -584,11 +584,11 @@ The following list shows the supported values:
 -   1 – Required.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="security-requireretrievehealthcertificateonboot"></a>**Security/RequireRetrieveHealthCertificateOnBoot**  
 
 <!--SupportedSKUs-->
@@ -646,7 +646,7 @@ The following list shows the supported values:
 -   1 – Required.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -655,7 +655,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 
 <!--StartEAS-->
 ## <a href="" id="eas"></a>Security policies that can be set using Exchange Active Sync (EAS)  

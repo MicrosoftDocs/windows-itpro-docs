@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - Cellular
@@ -15,7 +15,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## Cellular policies  
 
 <dl>
@@ -39,7 +39,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="cellular-letappsaccesscellulardata"></a>**Cellular/LetAppsAccessCellularData**  
 
 <!--SupportedSKUs-->
@@ -98,11 +98,11 @@ The following list shows the supported values:
 - 2 - Force Deny
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="cellular-letappsaccesscellulardata_forceallowtheseapps"></a>**Cellular/LetAppsAccessCellularData_ForceAllowTheseApps**  
 
 <!--SupportedSKUs-->
@@ -141,11 +141,11 @@ The following list shows the supported values:
 Added in Windows 10, version 1709. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps. Value type is string.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="cellular-letappsaccesscellulardata_forcedenytheseapps"></a>**Cellular/LetAppsAccessCellularData_ForceDenyTheseApps**  
 
 <!--SupportedSKUs-->
@@ -184,11 +184,11 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 Added in Windows 10, version 1709. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps. Value type is string.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="cellular-letappsaccesscellulardata_userincontroloftheseapps"></a>**Cellular/LetAppsAccessCellularData_UserInControlOfTheseApps**  
 
 <!--SupportedSKUs-->
@@ -227,11 +227,11 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 Added in Windows 10, version 1709. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the cellular data access setting for the listed apps. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps. Value type is string.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="cellular-showappcellularaccessui"></a>**Cellular/ShowAppCellularAccessUI**  
 
 <!--SupportedSKUs-->
@@ -294,7 +294,7 @@ ADMX Info:
 -   GP ADMX file name: *wwansvc.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -303,7 +303,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 
 <!--StartEAS-->
 ## <a href="" id="eas"></a>Cellular policies that can be set using Exchange Active Sync (EAS)  

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - Power
@@ -15,7 +15,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## Power policies  
 
 <dl>
@@ -51,7 +51,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="power-allowstandbywhensleepingpluggedin"></a>**Power/AllowStandbyWhenSleepingPluggedIn**  
 
 <!--SupportedSKUs-->
@@ -109,11 +109,11 @@ ADMX Info:
 -   GP ADMX file name: *power.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="power-displayofftimeoutonbattery"></a>**Power/DisplayOffTimeoutOnBattery**  
 
 <!--SupportedSKUs-->
@@ -173,11 +173,11 @@ ADMX Info:
 -   GP ADMX file name: *power.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="power-displayofftimeoutpluggedin"></a>**Power/DisplayOffTimeoutPluggedIn**  
 
 <!--SupportedSKUs-->
@@ -237,11 +237,11 @@ ADMX Info:
 -   GP ADMX file name: *power.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="power-hibernatetimeoutonbattery"></a>**Power/HibernateTimeoutOnBattery**  
 
 <!--SupportedSKUs-->
@@ -302,11 +302,11 @@ ADMX Info:
 -   GP ADMX file name: *power.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="power-hibernatetimeoutpluggedin"></a>**Power/HibernateTimeoutPluggedIn**  
 
 <!--SupportedSKUs-->
@@ -366,11 +366,11 @@ ADMX Info:
 -   GP ADMX file name: *power.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="power-requirepasswordwhencomputerwakesonbattery"></a>**Power/RequirePasswordWhenComputerWakesOnBattery**  
 
 <!--SupportedSKUs-->
@@ -428,11 +428,11 @@ ADMX Info:
 -   GP ADMX file name: *power.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="power-requirepasswordwhencomputerwakespluggedin"></a>**Power/RequirePasswordWhenComputerWakesPluggedIn**  
 
 <!--SupportedSKUs-->
@@ -490,11 +490,11 @@ ADMX Info:
 -   GP ADMX file name: *power.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="power-standbytimeoutonbattery"></a>**Power/StandbyTimeoutOnBattery**  
 
 <!--SupportedSKUs-->
@@ -554,11 +554,11 @@ ADMX Info:
 -   GP ADMX file name: *power.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="power-standbytimeoutpluggedin"></a>**Power/StandbyTimeoutPluggedIn**  
 
 <!--SupportedSKUs-->
@@ -618,7 +618,7 @@ ADMX Info:
 -   GP ADMX file name: *power.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -627,5 +627,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

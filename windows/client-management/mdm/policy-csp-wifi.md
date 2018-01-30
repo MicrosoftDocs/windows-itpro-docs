@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - Wifi
@@ -15,7 +15,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## Wifi policies  
 
 <dl>
@@ -45,18 +45,18 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="wifi-allowwifihotspotreporting"></a>**WiFi/AllowWiFiHotSpotReporting**  
 
 <!--Description-->
 This policy has been deprecated.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="wifi-allowautoconnecttowifisensehotspots"></a>**Wifi/AllowAutoConnectToWiFiSenseHotspots**  
 
 <!--SupportedSKUs-->
@@ -104,11 +104,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="wifi-allowinternetsharing"></a>**Wifi/AllowInternetSharing**  
 
 <!--SupportedSKUs-->
@@ -156,11 +156,11 @@ The following list shows the supported values:
 -   1 (default) – Allow the use of Internet Sharing.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="wifi-allowmanualwificonfiguration"></a>**Wifi/AllowManualWiFiConfiguration**  
 
 <!--SupportedSKUs-->
@@ -211,11 +211,11 @@ The following list shows the supported values:
 -   1 (default) – Adding new network SSIDs beyond the already MDM provisioned ones is allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="wifi-allowwifi"></a>**Wifi/AllowWiFi**  
 
 <!--SupportedSKUs-->
@@ -263,11 +263,11 @@ The following list shows the supported values:
 -   1 (default) – WiFi connection is allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="wifi-allowwifidirect"></a>**Wifi/AllowWiFiDirect**  
 
 <!--SupportedSKUs-->
@@ -313,11 +313,11 @@ The following list shows the supported values:
 - 1 - WiFi Direct connection is allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="wifi-wlanscanmode"></a>**Wifi/WLANScanMode**  
 
 <!--SupportedSKUs-->
@@ -362,7 +362,7 @@ The default value is 0.
 Supported operations are Add, Delete, Get, and Replace.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -371,7 +371,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 
 <!--StartEAS-->
 ## <a href="" id="eas"></a>Wifi policies that can be set using Exchange Active Sync (EAS)  
