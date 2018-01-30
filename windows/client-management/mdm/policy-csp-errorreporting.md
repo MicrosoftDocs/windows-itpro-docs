@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - ErrorReporting
@@ -15,7 +15,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## ErrorReporting policies  
 
 <dl>
@@ -39,7 +39,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="errorreporting-customizeconsentsettings"></a>**ErrorReporting/CustomizeConsentSettings**  
 
 <!--SupportedSKUs-->
@@ -107,11 +107,11 @@ ADMX Info:
 -   GP ADMX file name: *ErrorReporting.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="errorreporting-disablewindowserrorreporting"></a>**ErrorReporting/DisableWindowsErrorReporting**  
 
 <!--SupportedSKUs-->
@@ -169,11 +169,11 @@ ADMX Info:
 -   GP ADMX file name: *ErrorReporting.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="errorreporting-displayerrornotification"></a>**ErrorReporting/DisplayErrorNotification**  
 
 <!--SupportedSKUs-->
@@ -235,11 +235,11 @@ ADMX Info:
 -   GP ADMX file name: *ErrorReporting.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="errorreporting-donotsendadditionaldata"></a>**ErrorReporting/DoNotSendAdditionalData**  
 
 <!--SupportedSKUs-->
@@ -297,11 +297,11 @@ ADMX Info:
 -   GP ADMX file name: *ErrorReporting.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="errorreporting-preventcriticalerrordisplay"></a>**ErrorReporting/PreventCriticalErrorDisplay**  
 
 <!--SupportedSKUs-->
@@ -359,7 +359,7 @@ ADMX Info:
 -   GP ADMX file name: *ErrorReporting.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -368,5 +368,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 
