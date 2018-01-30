@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - Search
@@ -17,7 +17,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## Search policies  
 
 <dl>
@@ -68,7 +68,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="search-allowcloudsearch"></a>**Search/AllowCloudSearch**  
 
 <!--SupportedSKUs-->
@@ -114,11 +114,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="search-allowcortanainaad"></a>**Search/AllowCortanaInAAD**  
 
 <!--SupportedSKUs-->
@@ -164,11 +164,11 @@ The following list shows the supported values:
 -   1 - Allowed. The Cortana consent page will appear in Azure AAD OOBE during setup.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="search-allowindexingencryptedstoresoritems"></a>**Search/AllowIndexingEncryptedStoresOrItems**  
 
 <!--SupportedSKUs-->
@@ -220,11 +220,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="search-allowsearchtouselocation"></a>**Search/AllowSearchToUseLocation**  
 
 <!--SupportedSKUs-->
@@ -272,11 +272,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="search-allowstoringimagesfromvisionsearch"></a>**Search/AllowStoringImagesFromVisionSearch**  
 
 <!--Scope-->
@@ -292,11 +292,11 @@ The following list shows the supported values:
 This policy has been deprecated.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="search-allowusingdiacritics"></a>**Search/AllowUsingDiacritics**  
 
 <!--SupportedSKUs-->
@@ -345,11 +345,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="search-allowwindowsindexer"></a>**Search/AllowWindowsIndexer**  
 
 <!--SupportedSKUs-->
@@ -388,11 +388,11 @@ The following list shows the supported values:
 Allow Windows indexer. Value type is integer.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="search-alwaysuseautolangdetection"></a>**Search/AlwaysUseAutoLangDetection**  
 
 <!--SupportedSKUs-->
@@ -441,11 +441,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="search-disablebackoff"></a>**Search/DisableBackoff**  
 
 <!--SupportedSKUs-->
@@ -491,11 +491,11 @@ The following list shows the supported values:
 -   1 – Enable.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="search-disableremovabledriveindexing"></a>**Search/DisableRemovableDriveIndexing**  
 
 <!--SupportedSKUs-->
@@ -545,11 +545,11 @@ The following list shows the supported values:
 -   1 – Enable.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="search-donotusewebresults"></a>**Search/DoNotUseWebResults**  
 
 <!--SupportedSKUs-->
@@ -600,11 +600,11 @@ The following list shows the supported values:
 - 1 (default) - Allowed. Queries will be performed on the web and web results will be displayed when a user performs a query in Search.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="search-preventindexinglowdiskspacemb"></a>**Search/PreventIndexingLowDiskSpaceMB**  
 
 <!--SupportedSKUs-->
@@ -654,11 +654,11 @@ The following list shows the supported values:
 -   1 (default) – Enable.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="search-preventremotequeries"></a>**Search/PreventRemoteQueries**  
 
 <!--SupportedSKUs-->
@@ -704,11 +704,11 @@ The following list shows the supported values:
 -   1 (default) – Enable.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="search-safesearchpermissions"></a>**Search/SafeSearchPermissions**  
 
 <!--SupportedSKUs-->
@@ -761,7 +761,7 @@ The following list shows the supported values:
 -   1 (default) – Moderate filtering against adult content (valid search results will not be filtered).
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -770,7 +770,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 
 <!--StartEAS-->
 ## <a href="" id="eas"></a>Search policies that can be set using Exchange Active Sync (EAS)  

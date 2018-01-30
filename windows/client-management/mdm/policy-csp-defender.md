@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - Defender
@@ -15,7 +15,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## Defender policies  
 
 <dl>
@@ -129,7 +129,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-allowarchivescanning"></a>**Defender/AllowArchiveScanning**  
 
 <!--SupportedSKUs-->
@@ -179,11 +179,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-allowbehaviormonitoring"></a>**Defender/AllowBehaviorMonitoring**  
 
 <!--SupportedSKUs-->
@@ -233,11 +233,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-allowcloudprotection"></a>**Defender/AllowCloudProtection**  
 
 <!--SupportedSKUs-->
@@ -287,11 +287,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-allowemailscanning"></a>**Defender/AllowEmailScanning**  
 
 <!--SupportedSKUs-->
@@ -341,11 +341,11 @@ The following list shows the supported values:
 -   1 – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-allowfullscanonmappednetworkdrives"></a>**Defender/AllowFullScanOnMappedNetworkDrives**  
 
 <!--SupportedSKUs-->
@@ -395,11 +395,11 @@ The following list shows the supported values:
 -   1 – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-allowfullscanremovabledrivescanning"></a>**Defender/AllowFullScanRemovableDriveScanning**  
 
 <!--SupportedSKUs-->
@@ -449,11 +449,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-allowioavprotection"></a>**Defender/AllowIOAVProtection**  
 
 <!--SupportedSKUs-->
@@ -503,11 +503,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-allowintrusionpreventionsystem"></a>**Defender/AllowIntrusionPreventionSystem**  
 
 <!--SupportedSKUs-->
@@ -557,11 +557,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-allowonaccessprotection"></a>**Defender/AllowOnAccessProtection**  
 
 <!--SupportedSKUs-->
@@ -611,11 +611,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-allowrealtimemonitoring"></a>**Defender/AllowRealtimeMonitoring**  
 
 <!--SupportedSKUs-->
@@ -665,11 +665,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-allowscanningnetworkfiles"></a>**Defender/AllowScanningNetworkFiles**  
 
 <!--SupportedSKUs-->
@@ -719,11 +719,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-allowscriptscanning"></a>**Defender/AllowScriptScanning**  
 
 <!--SupportedSKUs-->
@@ -773,11 +773,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-allowuseruiaccess"></a>**Defender/AllowUserUIAccess**  
 
 <!--SupportedSKUs-->
@@ -827,11 +827,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-attacksurfacereductiononlyexclusions"></a>**Defender/AttackSurfaceReductionOnlyExclusions**  
 
 <!--SupportedSKUs-->
@@ -876,11 +876,11 @@ Added in Windows 10, version 1709. This policy setting allows you to prevent Att
 Value type is string.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-attacksurfacereductionrules"></a>**Defender/AttackSurfaceReductionRules**  
 
 <!--SupportedSKUs-->
@@ -927,11 +927,11 @@ For more information about ASR rule ID and status ID, see [Enable Attack Surface
 Value type is string.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-avgcpuloadfactor"></a>**Defender/AvgCPULoadFactor**  
 
 <!--SupportedSKUs-->
@@ -981,11 +981,11 @@ The default value is 50.
 Valid values: 0–100
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-cloudblocklevel"></a>**Defender/CloudBlockLevel**  
 
 <!--SupportedSKUs-->
@@ -1044,11 +1044,11 @@ The following list shows the supported values:
 - 0x6 - Zero tolerance blocking level – block all unknown executables
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-cloudextendedtimeout"></a>**Defender/CloudExtendedTimeout**  
 
 <!--SupportedSKUs-->
@@ -1097,11 +1097,11 @@ For example, if the desired timeout is 60 seconds, specify 50 seconds in this se
 > This feature depends on three other MAPS settings the must all be enabled- "Configure the 'Block at First Sight' feature; "Join Microsoft MAPS"; "Send file samples when further analysis is required".
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-controlledfolderaccessallowedapplications"></a>**Defender/ControlledFolderAccessAllowedApplications**  
 
 <!--SupportedSKUs-->
@@ -1143,11 +1143,11 @@ For example, if the desired timeout is 60 seconds, specify 50 seconds in this se
 Added in Windows 10, version 1709. This policy setting allows user-specified applications to the guard my folders feature. Adding an allowed application means the guard my folders feature will allow the application to modify or delete content in certain folders such as My Documents. In most cases it will not be necessary to add entries. Windows Defender Antivirus will automatically detect and dynamically add applications that are friendly. Value type is string. Use the | as the substring separator.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-controlledfolderaccessprotectedfolders"></a>**Defender/ControlledFolderAccessProtectedFolders**  
 
 <!--SupportedSKUs-->
@@ -1189,11 +1189,11 @@ Added in Windows 10, version 1709. This policy setting allows user-specified app
 Added in Windows 10, version 1709. This policy settings allows adding user-specified folder locations to the guard my folders feature. These folders will complement the system defined folders such as My Documents and My Pictures. The list of system folders will be displayed in the user interface and can not be changed. Value type is string. Use the | as the substring separator.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-daystoretaincleanedmalware"></a>**Defender/DaysToRetainCleanedMalware**  
 
 <!--SupportedSKUs-->
@@ -1243,11 +1243,11 @@ The default value is 0, which keeps items in quarantine, and does not automatica
 Valid values: 0–90
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-enablecontrolledfolderaccess"></a>**Defender/EnableControlledFolderAccess**  
 
 <!--SupportedSKUs-->
@@ -1297,11 +1297,11 @@ The following list shows the supported values:
 - 2 - Audit Mode
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-enablenetworkprotection"></a>**Defender/EnableNetworkProtection**  
 
 <!--SupportedSKUs-->
@@ -1357,11 +1357,11 @@ The following list shows the supported values:
 - 2 - Enabled (audit mode)
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-excludedextensions"></a>**Defender/ExcludedExtensions**  
 
 <!--SupportedSKUs-->
@@ -1404,11 +1404,11 @@ The following list shows the supported values:
 Allows an administrator to specify a list of file type extensions to ignore during a scan. Each file type in the list must be separated by a **|**. For example, "lib|obj".
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-excludedpaths"></a>**Defender/ExcludedPaths**  
 
 <!--SupportedSKUs-->
@@ -1451,11 +1451,11 @@ Allows an administrator to specify a list of file type extensions to ignore duri
 Allows an administrator to specify a list of directory paths to ignore during a scan. Each path in the list must be separated by a **|**. For example, "C:\\Example|C:\\Example1".
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-excludedprocesses"></a>**Defender/ExcludedProcesses**  
 
 <!--SupportedSKUs-->
@@ -1504,11 +1504,11 @@ Allows an administrator to specify a list of files opened by processes to ignore
 Each file type must be separated by a **|**. For example, "C:\\Example.exe|C:\\Example1.exe".
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-puaprotection"></a>**Defender/PUAProtection**  
 
 <!--SupportedSKUs-->
@@ -1559,11 +1559,11 @@ The following list shows the supported values:
 -   2 – Audit mode. Windows Defender will detect potentially unwanted applications, but take no action. You can review information about the applications Windows Defender would have taken action against by searching for events created by Windows Defender in the Event Viewer.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-realtimescandirection"></a>**Defender/RealTimeScanDirection**  
 
 <!--SupportedSKUs-->
@@ -1617,11 +1617,11 @@ The following list shows the supported values:
 -   2 – Monitor outgoing files.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-scanparameter"></a>**Defender/ScanParameter**  
 
 <!--SupportedSKUs-->
@@ -1671,11 +1671,11 @@ The following list shows the supported values:
 -   2 – Full scan
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-schedulequickscantime"></a>**Defender/ScheduleQuickScanTime**  
 
 <!--SupportedSKUs-->
@@ -1731,11 +1731,11 @@ The default value is 120
 Valid values: 0–1380
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-schedulescanday"></a>**Defender/ScheduleScanDay**  
 
 <!--SupportedSKUs-->
@@ -1795,11 +1795,11 @@ The following list shows the supported values:
 -   8 – No scheduled scan
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-schedulescantime"></a>**Defender/ScheduleScanTime**  
 
 <!--SupportedSKUs-->
@@ -1855,11 +1855,11 @@ The default value is 120.
 Valid values: 0–1380.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-signatureupdateinterval"></a>**Defender/SignatureUpdateInterval**  
 
 <!--SupportedSKUs-->
@@ -1911,11 +1911,11 @@ The default value is 8.
 Valid values: 0–24.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-submitsamplesconsent"></a>**Defender/SubmitSamplesConsent**  
 
 <!--SupportedSKUs-->
@@ -1967,11 +1967,11 @@ The following list shows the supported values:
 -   3 – Send all samples automatically.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="defender-threatseveritydefaultaction"></a>**Defender/ThreatSeverityDefaultAction**  
 
 <!--SupportedSKUs-->
@@ -2032,7 +2032,7 @@ The following list shows the supported values for possible actions:
 -   10 – Block
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -2041,7 +2041,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>Defender policies supported by Microsoft Surface Hub  

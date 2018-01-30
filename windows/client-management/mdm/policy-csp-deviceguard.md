@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - DeviceGuard
@@ -15,7 +15,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## DeviceGuard policies  
 
 <dl>
@@ -33,7 +33,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deviceguard-enablevirtualizationbasedsecurity"></a>**DeviceGuard/EnableVirtualizationBasedSecurity**  
 
 <!--SupportedSKUs-->
@@ -79,11 +79,11 @@ The following list shows the supported values:
 -   1 - enable virtualization based security.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deviceguard-lsacfgflags"></a>**DeviceGuard/LsaCfgFlags**  
 
 <!--SupportedSKUs-->
@@ -130,11 +130,11 @@ The following list shows the supported values:
 -   2 - (Enabled without lock) Turns on Credential Guard without UEFI lock.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="deviceguard-requireplatformsecurityfeatures"></a>**DeviceGuard/RequirePlatformSecurityFeatures**  
 
 <!--SupportedSKUs-->
@@ -180,7 +180,7 @@ The following list shows the supported values:
 -   3 - Turns on VBS with Secure Boot and direct memory access (DMA). DMA requires hardware support.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -189,5 +189,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

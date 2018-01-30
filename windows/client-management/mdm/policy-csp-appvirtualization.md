@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - AppVirtualization
@@ -15,7 +15,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## AppVirtualization policies  
 
 <dl>
@@ -108,7 +108,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-allowappvclient"></a>**AppVirtualization/AllowAppVClient**  
 
 <!--SupportedSKUs-->
@@ -162,11 +162,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-allowdynamicvirtualization"></a>**AppVirtualization/AllowDynamicVirtualization**  
 
 <!--SupportedSKUs-->
@@ -220,11 +220,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-allowpackagecleanup"></a>**AppVirtualization/AllowPackageCleanup**  
 
 <!--SupportedSKUs-->
@@ -278,11 +278,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-allowpackagescripts"></a>**AppVirtualization/AllowPackageScripts**  
 
 <!--SupportedSKUs-->
@@ -336,11 +336,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-allowpublishingrefreshux"></a>**AppVirtualization/AllowPublishingRefreshUX**  
 
 <!--SupportedSKUs-->
@@ -394,11 +394,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-allowreportingserver"></a>**AppVirtualization/AllowReportingServer**  
 
 <!--SupportedSKUs-->
@@ -462,11 +462,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-allowroamingfileexclusions"></a>**AppVirtualization/AllowRoamingFileExclusions**  
 
 <!--SupportedSKUs-->
@@ -520,11 +520,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-allowroamingregistryexclusions"></a>**AppVirtualization/AllowRoamingRegistryExclusions**  
 
 <!--SupportedSKUs-->
@@ -578,11 +578,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-allowstreamingautoload"></a>**AppVirtualization/AllowStreamingAutoload**  
 
 <!--SupportedSKUs-->
@@ -636,11 +636,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-clientcoexistenceallowmigrationmode"></a>**AppVirtualization/ClientCoexistenceAllowMigrationmode**  
 
 <!--SupportedSKUs-->
@@ -694,11 +694,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-integrationallowrootglobal"></a>**AppVirtualization/IntegrationAllowRootGlobal**  
 
 <!--SupportedSKUs-->
@@ -752,11 +752,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-integrationallowrootuser"></a>**AppVirtualization/IntegrationAllowRootUser**  
 
 <!--SupportedSKUs-->
@@ -810,11 +810,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-publishingallowserver1"></a>**AppVirtualization/PublishingAllowServer1**  
 
 <!--SupportedSKUs-->
@@ -886,11 +886,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-publishingallowserver2"></a>**AppVirtualization/PublishingAllowServer2**  
 
 <!--SupportedSKUs-->
@@ -962,11 +962,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-publishingallowserver3"></a>**AppVirtualization/PublishingAllowServer3**  
 
 <!--SupportedSKUs-->
@@ -1038,11 +1038,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-publishingallowserver4"></a>**AppVirtualization/PublishingAllowServer4**  
 
 <!--SupportedSKUs-->
@@ -1114,11 +1114,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-publishingallowserver5"></a>**AppVirtualization/PublishingAllowServer5**  
 
 <!--SupportedSKUs-->
@@ -1190,11 +1190,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-streamingallowcertificatefilterforclient-ssl"></a>**AppVirtualization/StreamingAllowCertificateFilterForClient_SSL**  
 
 <!--SupportedSKUs-->
@@ -1248,11 +1248,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-streamingallowhighcostlaunch"></a>**AppVirtualization/StreamingAllowHighCostLaunch**  
 
 <!--SupportedSKUs-->
@@ -1306,11 +1306,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-streamingallowlocationprovider"></a>**AppVirtualization/StreamingAllowLocationProvider**  
 
 <!--SupportedSKUs-->
@@ -1364,11 +1364,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-streamingallowpackageinstallationroot"></a>**AppVirtualization/StreamingAllowPackageInstallationRoot**  
 
 <!--SupportedSKUs-->
@@ -1422,11 +1422,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-streamingallowpackagesourceroot"></a>**AppVirtualization/StreamingAllowPackageSourceRoot**  
 
 <!--SupportedSKUs-->
@@ -1480,11 +1480,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-streamingallowreestablishmentinterval"></a>**AppVirtualization/StreamingAllowReestablishmentInterval**  
 
 <!--SupportedSKUs-->
@@ -1538,11 +1538,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-streamingallowreestablishmentretries"></a>**AppVirtualization/StreamingAllowReestablishmentRetries**  
 
 <!--SupportedSKUs-->
@@ -1596,11 +1596,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-streamingsharedcontentstoremode"></a>**AppVirtualization/StreamingSharedContentStoreMode**  
 
 <!--SupportedSKUs-->
@@ -1654,11 +1654,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-streamingsupportbranchcache"></a>**AppVirtualization/StreamingSupportBranchCache**  
 
 <!--SupportedSKUs-->
@@ -1712,11 +1712,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-streamingverifycertificaterevocationlist"></a>**AppVirtualization/StreamingVerifyCertificateRevocationList**  
 
 <!--SupportedSKUs-->
@@ -1770,11 +1770,11 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="appvirtualization-virtualcomponentsallowlist"></a>**AppVirtualization/VirtualComponentsAllowList**  
 
 <!--SupportedSKUs-->
@@ -1828,7 +1828,7 @@ ADMX Info:
 -   GP ADMX file name: *appv.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -1837,5 +1837,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

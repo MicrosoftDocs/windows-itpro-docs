@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - RemoteManagement
@@ -15,7 +15,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## RemoteManagement policies  
 
 <dl>
@@ -69,7 +69,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="remotemanagement-allowbasicauthentication-client"></a>**RemoteManagement/AllowBasicAuthentication_Client**  
 
 <!--SupportedSKUs-->
@@ -122,11 +122,11 @@ ADMX Info:
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="remotemanagement-allowbasicauthentication-service"></a>**RemoteManagement/AllowBasicAuthentication_Service**  
 
 <!--SupportedSKUs-->
@@ -179,11 +179,11 @@ ADMX Info:
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="remotemanagement-allowcredsspauthenticationclient"></a>**RemoteManagement/AllowCredSSPAuthenticationClient**  
 
 <!--SupportedSKUs-->
@@ -236,11 +236,11 @@ ADMX Info:
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="remotemanagement-allowcredsspauthenticationservice"></a>**RemoteManagement/AllowCredSSPAuthenticationService**  
 
 <!--SupportedSKUs-->
@@ -293,11 +293,11 @@ ADMX Info:
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="remotemanagement-allowremoteservermanagement"></a>**RemoteManagement/AllowRemoteServerManagement**  
 
 <!--SupportedSKUs-->
@@ -350,11 +350,11 @@ ADMX Info:
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="remotemanagement-allowunencryptedtraffic-client"></a>**RemoteManagement/AllowUnencryptedTraffic_Client**  
 
 <!--SupportedSKUs-->
@@ -407,11 +407,11 @@ ADMX Info:
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="remotemanagement-allowunencryptedtraffic-service"></a>**RemoteManagement/AllowUnencryptedTraffic_Service**  
 
 <!--SupportedSKUs-->
@@ -464,11 +464,11 @@ ADMX Info:
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="remotemanagement-disallowdigestauthentication"></a>**RemoteManagement/DisallowDigestAuthentication**  
 
 <!--SupportedSKUs-->
@@ -521,11 +521,11 @@ ADMX Info:
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="remotemanagement-disallownegotiateauthenticationclient"></a>**RemoteManagement/DisallowNegotiateAuthenticationClient**  
 
 <!--SupportedSKUs-->
@@ -578,11 +578,11 @@ ADMX Info:
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="remotemanagement-disallownegotiateauthenticationservice"></a>**RemoteManagement/DisallowNegotiateAuthenticationService**  
 
 <!--SupportedSKUs-->
@@ -635,11 +635,11 @@ ADMX Info:
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="remotemanagement-disallowstoringofrunascredentials"></a>**RemoteManagement/DisallowStoringOfRunAsCredentials**  
 
 <!--SupportedSKUs-->
@@ -692,11 +692,11 @@ ADMX Info:
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="remotemanagement-specifychannelbindingtokenhardeninglevel"></a>**RemoteManagement/SpecifyChannelBindingTokenHardeningLevel**  
 
 <!--SupportedSKUs-->
@@ -749,11 +749,11 @@ ADMX Info:
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="remotemanagement-trustedhosts"></a>**RemoteManagement/TrustedHosts**  
 
 <!--SupportedSKUs-->
@@ -806,11 +806,11 @@ ADMX Info:
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="remotemanagement-turnoncompatibilityhttplistener"></a>**RemoteManagement/TurnOnCompatibilityHTTPListener**  
 
 <!--SupportedSKUs-->
@@ -863,11 +863,11 @@ ADMX Info:
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="remotemanagement-turnoncompatibilityhttpslistener"></a>**RemoteManagement/TurnOnCompatibilityHTTPSListener**  
 
 <!--SupportedSKUs-->
@@ -920,7 +920,7 @@ ADMX Info:
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -929,5 +929,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - AccountPoliciesAccountLockoutPolicy
@@ -17,7 +17,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## AccountPoliciesAccountLockoutPolicy policies  
 
 <dl>
@@ -35,7 +35,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="accountpoliciesaccountlockoutpolicy-accountlockoutduration"></a>**AccountPoliciesAccountLockoutPolicy/AccountLockoutDuration**  
 
 <!--SupportedSKUs-->
@@ -78,11 +78,11 @@ If an account lockout threshold is defined, the account lockout duration must be
 Default: None, because this policy setting only has meaning when an Account lockout threshold is specified.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="accountpoliciesaccountlockoutpolicy-accountlockoutthreshold"></a>**AccountPoliciesAccountLockoutPolicy/AccountLockoutThreshold**  
 
 <!--SupportedSKUs-->
@@ -125,11 +125,11 @@ Failed password attempts against workstations or member servers that have been l
 Default: 0.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="accountpoliciesaccountlockoutpolicy-resetaccountlockoutcounterafter"></a>**AccountPoliciesAccountLockoutPolicy/ResetAccountLockoutCounterAfter**  
 
 <!--SupportedSKUs-->
@@ -172,7 +172,7 @@ If an account lockout threshold is defined, this reset time must be less than or
 Default: None, because this policy setting only has meaning when an Account lockout threshold is specified.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -181,5 +181,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

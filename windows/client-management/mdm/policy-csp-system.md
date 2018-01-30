@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - System
@@ -17,7 +17,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## System policies  
 
 <dl>
@@ -71,7 +71,7 @@ ms.date: 01/29/2018
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="system-allowbuildpreview"></a>**System/AllowBuildPreview**  
 
 <!--SupportedSKUs-->
@@ -124,11 +124,11 @@ The following list shows the supported values:
 -   2 (default) – Not configured. Users can make their devices available for downloading and installing preview software.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="system-allowembeddedmode"></a>**System/AllowEmbeddedMode**  
 
 <!--SupportedSKUs-->
@@ -176,11 +176,11 @@ The following list shows the supported values:
 -   1 – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="system-allowexperimentation"></a>**System/AllowExperimentation**  
 
 <!--SupportedSKUs-->
@@ -233,11 +233,11 @@ The following list shows the supported values:
 -   2 – Allows Microsoft to conduct full experimentations.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="system-allowfontproviders"></a>**System/AllowFontProviders**  
 
 <!--SupportedSKUs-->
@@ -296,11 +296,11 @@ To verify if System/AllowFontProviders is set to true:
 -  After a client machine is rebooted, check whether there is any network traffic from client machine to fs.microsoft.com.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="system-allowlocation"></a>**System/AllowLocation**  
 
 <!--SupportedSKUs-->
@@ -356,11 +356,11 @@ The following list shows the supported values:
 -   2 – Force Location On. All Location Privacy settings are toggled on and greyed out. Users cannot change the settings and all consent permissions will be automatically suppressed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="system-allowstoragecard"></a>**System/AllowStorageCard**  
 
 <!--SupportedSKUs-->
@@ -408,11 +408,11 @@ The following list shows the supported values:
 -   1 (default) – Allow a storage card.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="system-allowtelemetry"></a>**System/AllowTelemetry**  
 
 <!--SupportedSKUs-->
@@ -527,11 +527,11 @@ Windows 10 Values:
 Most restricted value is 0.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="system-allowusertoresetphone"></a>**System/AllowUserToResetPhone**  
 
 <!--SupportedSKUs-->
@@ -580,11 +580,11 @@ orted values:
 -   1 (default) – Allowed to reset to factory default settings.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="system-bootstartdriverinitialization"></a>**System/BootStartDriverInitialization**  
 
 <!--SupportedSKUs-->
@@ -636,11 +636,11 @@ ADMX Info:
 -   GP ADMX file name: *earlylauncham.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="system-disableenterpriseauthproxy"></a>**System/DisableEnterpriseAuthProxy**  
 
 <!--SupportedSKUs-->
@@ -679,11 +679,11 @@ ADMX Info:
 This policy setting blocks the Connected User Experience and Telemetry service from automatically using an authenticated proxy to send data back to Microsoft on Windows 10. If you disable or do not configure this policy setting, the Connected User Experience and Telemetry service will automatically use an authenticated proxy to send data back to Microsoft. Enabling this policy will block the Connected User Experience and Telemetry service from automatically using an authenticated proxy.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="system-disableonedrivefilesync"></a>**System/DisableOneDriveFileSync**  
 
 <!--SupportedSKUs-->
@@ -745,11 +745,11 @@ To validate on Desktop, do the following:
 3.   Verify that OneDrive.exe is not running in Task Manager.
 
 <!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="system-disablesystemrestore"></a>**System/DisableSystemRestore**  
 
 <!--SupportedSKUs-->
@@ -813,11 +813,11 @@ ADMX Info:
 -   GP ADMX file name: *systemrestore.admx*
 
 <!--/ADMX-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="system-feedbackhubalwayssavediagnosticslocally"></a>**System/FeedbackHubAlwaysSaveDiagnosticsLocally**  
 
 <!--SupportedSKUs-->
@@ -863,11 +863,11 @@ The following list shows the supported values:
 - 1 - True. The Feedback Hub should always save a local copy of diagnostics that may be created when a feedback is submitted.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="system-limitenhanceddiagnosticdatawindowsanalytics"></a>**System/LimitEnhancedDiagnosticDataWindowsAnalytics**  
 
 <!--SupportedSKUs-->
@@ -919,11 +919,11 @@ Enabling enhanced diagnostic data in the System/AllowTelemetry policy in combina
 If you disable or do not configure this policy setting, then the level of diagnostic data sent to Microsoft is determined by the System/AllowTelemetry policy.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 
 <hr/>
 
-<!--StartPolicy-->
+<!--Policy-->
 <a href="" id="system-telemetryproxy"></a>**System/TelemetryProxy**  
 
 <!--SupportedSKUs-->
@@ -964,7 +964,7 @@ Allows you to specify the fully qualified domain name (FQDN) or IP address of a 
 If you disable or do not configure this policy setting, Connected User Experiences and Telemetry will go to Microsoft using the default proxy configuration.
 
 <!--/Description-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -973,7 +973,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 
 <!--StartEAS-->
 ## <a href="" id="eas"></a>System policies that can be set using Exchange Active Sync (EAS)  
