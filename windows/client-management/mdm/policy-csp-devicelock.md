@@ -180,15 +180,18 @@ Specifies whether to show a user-configurable setting to control the screen time
 > This policy must be wrapped in an Atomic command.
 
 
-The following list shows the supported values:
-
--   0 (default) – Not allowed.
--   1 – Allowed.
 
 > [!IMPORTANT]
 > If this policy is set to 1 (Allowed), the value set by **DeviceLock/ScreenTimeOutWhileLocked** is ignored. To ensure enterprise control over the screen timeout, set this policy to 0 (Not allowed) and use **DeviceLock/ScreenTimeOutWhileLocked** to set the screen timeout period.
 
 <!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – Not allowed.
+-   1 – Allowed.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -235,14 +238,17 @@ Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For th
 > This policy must be wrapped in an Atomic command.
 
 
+
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -291,11 +297,6 @@ Determines the type of PIN or password required. This policy only applies if the
 > Always use the Replace command instead of Add for this policy in Windows 10 for desktop editions (Home, Pro, Enterprise, and Education).
 
 
-The following list shows the supported values:
-
--   0 – Alphanumeric PIN or password required.
--   1 – Numeric PIN or password required.
--   2 (default) – Users can choose: Numeric PIN or password, or Alphanumeric PIN or password.
 
 > [!NOTE]
 > If **AlphanumericDevicePasswordRequired** is set to 1 or 2, then MinDevicePasswordLength = 0 and MinDevicePasswordComplexCharacters = 1.
@@ -303,6 +304,14 @@ The following list shows the supported values:
 > If **AlphanumericDevicePasswordRequired** is set to 0, then MinDevicePasswordLength = 4 and MinDevicePasswordComplexCharacters = 2.
 
 <!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 – Alphanumeric PIN or password required.
+-   1 – Numeric PIN or password required.
+-   2 (default) – Users can choose: Numeric PIN or password, or Alphanumeric PIN or password.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -351,10 +360,6 @@ Specifies whether device lock is enabled.
 > Always use the Replace command instead of Add for this policy in Windows 10 for desktop editions.
  
 
-The following list shows the supported values:
-
--   0 (default) – Enabled
--   1 – Disabled
 
 > [!IMPORTANT]
 > The **DevicePasswordEnabled** setting must be set to 0 (device password is enabled) for the following policy settings to take effect:
@@ -391,6 +396,13 @@ The following list shows the supported values:
 >   - MaxInactivityTimeDeviceLock
 
 <!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – Enabled
+-   1 – Disabled
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -437,16 +449,19 @@ Specifies when the password expires (in days).
 > This policy must be wrapped in an Atomic command.
 
 
-The following list shows the supported values:
-
--   An integer X where 0 &lt;= X &lt;= 730.
--   0 (default) - Passwords do not expire.
 
 If all policy values = 0 then 0; otherwise, Min policy value is the most secure value.
 
 For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
 
 <!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   An integer X where 0 &lt;= X &lt;= 730.
+-   0 (default) - Passwords do not expire.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -493,10 +508,6 @@ Specifies how many passwords can be stored in the history that can’t be used.
 > This policy must be wrapped in an Atomic command.
 
 
-The following list shows the supported values:
-
--   An integer X where 0 &lt;= X &lt;= 50.
--   0 (default)
 
 The value includes the user's current password. This means that with a setting of 1 the user cannot reuse their current password when choosing a new password, while a setting of 5 means that a user cannot set their new password to their current password or any of their previous four passwords.
 
@@ -505,6 +516,13 @@ Max policy value is the most restricted.
 For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
 
 <!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   An integer X where 0 &lt;= X &lt;= 50.
+-   0 (default)
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -656,16 +674,19 @@ This policy has different behaviors on the mobile device and desktop.
 
     Prior to reaching the failed attempts limit, the user is sent to the lock screen and warned that more failed attempts will lock their computer. When the user reaches the limit, the device automatically reboots and shows the BitLocker recovery page. This page prompts the user for the BitLocker recovery key.
 
-The following list shows the supported values:
-
--   An integer X where 4 &lt;= X &lt;= 16 for desktop and 0 &lt;= X &lt;= 999 for mobile devices.
--   0 (default) - The device is never wiped after an incorrect PIN or password is entered.
 
 Most secure value is 0 if all policy values = 0; otherwise, Min policy value is the most secure value.
 
 For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
 
 <!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   An integer X where 4 &lt;= X &lt;= 16 for desktop and 0 &lt;= X &lt;= 999 for mobile devices.
+-   0 (default) - The device is never wiped after an incorrect PIN or password is entered.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -712,14 +733,17 @@ Specifies the maximum amount of time (in minutes) allowed after the device is id
 > This policy must be wrapped in an Atomic command.
 
 
+
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   An integer X where 0 &lt;= X &lt;= 999.
 -   0 (default) - No timeout is defined. The default of "0" is Windows Phone 7.5 parity and is interpreted by as "No timeout is defined."
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -765,13 +789,14 @@ Specifies the maximum amount of time (in minutes) allowed after the device is id
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
 
-
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   An integer X where 0 &lt;= X &lt;= 999.
 -   0 (default) - No timeout is defined. The default of "0" is Windows Phone 7.5 parity and is interpreted by as "No timeout is defined."
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -934,17 +959,20 @@ Specifies the minimum number or characters required in the PIN or password.
 > Always use the Replace command instead of Add for this policy in Windows 10 for desktop editions.
 
 
-The following list shows the supported values:
-
--   An integer X where 4 &lt;= X &lt;= 16 for mobile devices and desktop. However, local accounts will always enforce a minimum password length of 6.
--   Not enforced.
--   The default value is 4 for mobile devices and desktop devices.
 
 Max policy value is the most restricted.
 
 For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
 
 <!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   An integer X where 4 &lt;= X &lt;= 16 for mobile devices and desktop. However, local accounts will always enforce a minimum password length of 6.
+-   Not enforced.
+-   The default value is 4 for mobile devices and desktop devices.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>

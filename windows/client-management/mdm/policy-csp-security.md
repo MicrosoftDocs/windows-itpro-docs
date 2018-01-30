@@ -147,12 +147,14 @@ The following list shows the supported values:
 
 Specifies whether to allow automatic device encryption during OOBE when the device is Azure AD joined.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -468,12 +470,14 @@ Added in Windows 10, version 1607 to replace the deprecated policy **Security/A
 
 Specifies whether to allow automatic device encryption during OOBE when the device is Azure AD joined.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Encryption enabled.
 -   1 – Encryption disabled.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -516,10 +520,6 @@ The following list shows the supported values:
 <!--Description-->
 Allows enterprise to turn on internal storage encryption.
 
-The following list shows the supported values:
-
--   0 (default) – Encryption is not required.
--   1 – Encryption is required.
 
 Most restricted value is 1.
 
@@ -527,6 +527,13 @@ Most restricted value is 1.
 > If encryption has been enabled, it cannot be turned off by using this policy.
 
 <!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – Encryption is not required.
+-   1 – Encryption is required.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -569,12 +576,14 @@ Most restricted value is 1.
 <!--Description-->
 Specifies whether provisioning packages must have a certificate signed by a device trusted authority.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Not required.
 -   1 – Required.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -617,10 +626,6 @@ The following list shows the supported values:
 <!--Description-->
 Specifies whether to retrieve and post TCG Boot logs, and get or cache an encrypted or signed Health Attestation Report from the Microsoft Health Attestation Service (HAS) when a device boots or reboots.
 
-The following list shows the supported values:
-
--   0 (default) – Not required.
--   1 – Required.
 
 Setting this policy to 1 (Required):
 
@@ -634,6 +639,13 @@ Setting this policy to 1 (Required):
 Most restricted value is 1.
 
 <!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – Not required.
+-   1 – Required.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 

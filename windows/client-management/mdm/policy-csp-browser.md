@@ -237,13 +237,6 @@ Specifies whether autofill on websites is allowed.
 
 Most restricted value is 0.
 
-To verify AllowAutofill is set to 0 (not allowed):
-
-1.  Open Microsoft Edge.
-2.  In the upper-right corner of the browser, click **…**.
-3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
-4.  Verify the setting **Save form entries** is greyed out.
-
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -252,6 +245,15 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
+<!--Validation-->
+To verify AllowAutofill is set to 0 (not allowed):
+
+1.  Open Microsoft Edge.
+2.  In the upper-right corner of the browser, click **…**.
+3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
+4.  Verify the setting **Save form entries** is greyed out.
+
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -354,13 +356,18 @@ The following list shows the supported values:
 <!--Description-->
 Specifies whether cookies are allowed.
 
+
+Most restricted value is 0.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-Most restricted value is 0.
-
+<!--/SupportedValues-->
+<!--Validation-->
 To verify AllowCookies is set to 0 (not allowed):
 
 1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
@@ -368,7 +375,7 @@ To verify AllowCookies is set to 0 (not allowed):
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
 4.  Verify the setting **Cookies** is greyed out.
 
-<!--/Description-->
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -471,13 +478,6 @@ Specifies whether Do Not Track headers are allowed.
 
 Most restricted value is 1.
 
-To verify AllowDoNotTrack is set to 0 (not allowed):
-
-1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
-2.  In the upper-right corner of the browser, click **…**.
-3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
-4.  Verify the setting **Send Do Not Track requests** is greyed out.
-
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -486,6 +486,15 @@ The following list shows the supported values:
 -   1 – Allowed.
 
 <!--/SupportedValues-->
+<!--Validation-->
+To verify AllowDoNotTrack is set to 0 (not allowed):
+
+1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
+2.  In the upper-right corner of the browser, click **…**.
+3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
+4.  Verify the setting **Send Do Not Track requests** is greyed out.
+
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -793,13 +802,6 @@ Specifies whether saving and managing passwords locally on the device is allowed
 
 Most restricted value is 0.
 
-To verify AllowPasswordManager is set to 0 (not allowed):
-
-1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
-2.  In the upper-right corner of the browser, click **…**.
-3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
-4.  Verify the settings **Offer to save password** and **Manage my saved passwords** are greyed out.
-
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -808,6 +810,15 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
+<!--Validation-->
+To verify AllowPasswordManager is set to 0 (not allowed):
+
+1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
+2.  In the upper-right corner of the browser, click **…**.
+3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
+4.  Verify the settings **Offer to save password** and **Manage my saved passwords** are greyed out.
+
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -853,13 +864,6 @@ Specifies whether pop-up blocker is allowed or enabled.
 
 Most restricted value is 1.
 
-To verify AllowPopups is set to 0 (not allowed):
-
-1.  Open Microsoft Edge.
-2.  In the upper-right corner of the browser, click **…**.
-3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
-4.  Verify the setting **Block pop-ups** is greyed out.
-
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -868,6 +872,15 @@ The following list shows the supported values:
 -   1 – Pop-up blocker is allowed or enabled. It means that pop-up browser windows are blocked.
 
 <!--/SupportedValues-->
+<!--Validation-->
+To verify AllowPopups is set to 0 (not allowed):
+
+1.  Open Microsoft Edge.
+2.  In the upper-right corner of the browser, click **…**.
+3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
+4.  Verify the setting **Block pop-ups** is greyed out.
+
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1021,13 +1034,6 @@ Specifies whether Windows Defender SmartScreen is allowed.
 
 Most restricted value is 1.
 
-To verify AllowSmartScreen is set to 0 (not allowed):
-
-1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
-2.  In the upper-right corner of the browser, click **…**.
-3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
-4.  Verify the setting **Help protect me from malicious sites and download with SmartScreen Filter** is greyed out.
-
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -1036,6 +1042,15 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
+<!--Validation-->
+To verify AllowSmartScreen is set to 0 (not allowed):
+
+1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
+2.  In the upper-right corner of the browser, click **…**.
+3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
+4.  Verify the setting **Help protect me from malicious sites and download with SmartScreen Filter** is greyed out.
+
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1132,12 +1147,6 @@ Added in Windows 10, version 1703. Specifies whether to clear browsing data on e
 
 Most restricted value is 1.
 
-To verify that browsing data is cleared on exit (ClearBrowsingDataOnExit is set to 1): 
-
-1.  Open Microsoft Edge and browse to websites.
-2.  Close the Microsoft Edge window.
-3.  Open Microsoft Edge and start typing the same URL in address bar. Verify that it does not auto-complete from history.
-
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -1146,6 +1155,14 @@ The following list shows the supported values:
 -   1 – Browsing data is cleared on exit.
 
 <!--/SupportedValues-->
+<!--Validation-->
+To verify that browsing data is cleared on exit (ClearBrowsingDataOnExit is set to 1): 
+
+1.  Open Microsoft Edge and browse to websites.
+2.  Close the Microsoft Edge window.
+3.  Open Microsoft Edge and start typing the same URL in address bar. Verify that it does not auto-complete from history.
+
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1197,14 +1214,17 @@ If this setting is not configured, the search engines used are the ones that are
 > [!IMPORTANT]
 > Due to Protected Settings (aka.ms/browserpolicy), this setting will apply only on domain-joined machines or when the device is MDM-enrolled. 
 
+
+Most restricted value is 0.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Additional search engines are not allowed.
 -   1 – Additional search engines are allowed.
 
-Most restricted value is 0.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -1364,12 +1384,14 @@ The following list shows the supported values:
  
 Allows the user to specify an URL of an enterprise site list.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   Not configured. The device checks for updates from Microsoft Update.
 -   Set to a URL location of the enterprise site list.
 
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -2061,14 +2083,17 @@ If this setting is not configured, the default search engine is set to the one s
 > [!IMPORTANT]
 > This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the Microsoft browser extension policy (aka.ms/browserpolicy).
 
+
+Most restricted value is 0.
+
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) - The default search engine is set to the one specified in App settings.
 -   1 - Allows you to configure the default search engine for your employees.
 
-Most restricted value is 0.
-
-<!--/Description-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 
 <hr/>
@@ -2174,14 +2199,6 @@ Added in Windows 10, version 1703. Specifies whether favorites are kept in sync 
 >
 > Enabling this setting stops Microsoft Edge favorites from syncing between connected Windows 10 devices.
 
-To verify that favorites are in synchronized between Internet Explorer and Microsoft Edge:
-
-<ol>
-<li>Open Internet Explorer and add some favorites.
-<li>Open Microsoft Edge, then select Hub > Favorites.
-<li>Verify that the favorites added to Internet Explorer show up in the favorites list in Microsoft Edge.
-</ol>
-
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -2190,6 +2207,16 @@ The following list shows the supported values:
 -   1 – Synchronization is on.
 
 <!--/SupportedValues-->
+<!--Validation-->
+To verify that favorites are in synchronized between Internet Explorer and Microsoft Edge:
+
+<ol>
+<li>Open Internet Explorer and add some favorites.
+<li>Open Microsoft Edge, then select Hub > Favorites.
+<li>Verify that the favorites added to Internet Explorer show up in the favorites list in Microsoft Edge.
+</ol>
+
+<!--/Validation-->
 <!--EndPolicy-->
 
 <hr/>

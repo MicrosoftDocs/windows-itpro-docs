@@ -68,17 +68,21 @@ Added in Windows 10, version 1703. Optional policy that allows for IT admin to 
 > [!IMPORTANT]
 > This policy is not intended to ever be set, pushed, or refreshed more than one time after the first boot of the device because it is meant as initial configuration. Refreshing this policy might result in the Location Service's Device Switch changing state to something the user did not select, which is not an intended use for this policy.
 
+<!--/Description-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Disabled.
 -   1 – Enabled.
 
+<!--/SupportedValues-->
+<!--Validation-->
 To validate on Desktop, do the following:
 
 1.   Verify that Settings -> Privacy -> Location -> Location for this device is On/Off as expected.
 2.   Use Windows Maps Application (or similar) to see if a location can or cannot be obtained.
 
-<!--/Description-->
+<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 
