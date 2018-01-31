@@ -7,11 +7,14 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/26/2017
+ms.date: 01/29/2018
 ---
 
 # Defender CSP
 
+
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
 
@@ -307,6 +310,11 @@ Supported operations are Get and Execute.
 
 <a href="" id="updatesignature"></a>**UpdateSignature**  
 Node that can be used to perform signature updates for Windows Defender.
+
+Supported operations are Get and Execute.
+
+<a href="" id="offlinescan"></a>**OfflineScan**  
+Added in Windows 10, next major update. OfflineScan action starts a Windows Defender offline scan on the computer where you run the command. This command causes the computer reboot and start in Windows Defender offline mode to begin the scan.
 
 Supported operations are Get and Execute.
 
