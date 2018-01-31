@@ -166,24 +166,24 @@ Install the required prerequisite software for the App-V server components.
 </tr>
 <tr class="odd">
 <td align="left"><p>Web Server Role Services</p></td>
-<td align="left"><p><strong>Common HTTP Features:</strong></p>
+<td align="left"><p><strong>Common HTTP features:</strong></p>
 <ul>
-<li><p>Static Content</p></li>
-<li><p>Default Document</p></li>
+<li><p>Static content</p></li>
+<li><p>Default document</p></li>
 </ul>
-<p><strong>Application Development:</strong></p>
+<p><strong>Application development:</strong></p>
 <ul>
 <li><p>ASP.NET</p></li>
-<li><p>.NET Extensibility</p></li>
-<li><p>ISAPI Extensions</p></li>
-<li><p>ISAPI Filters</p></li>
+<li><p>.NET extensibility</p></li>
+<li><p>ISAPI extensions</p></li>
+<li><p>ISAPI filters</p></li>
 </ul>
 <p><strong>Security:</strong></p>
 <ul>
-<li><p>Windows Authentication</p></li>
-<li><p>Request Filtering</p></li>
+<li><p>Windows authentication</p></li>
+<li><p>Request filtering</p></li>
 </ul>
-<p><strong>Management Tools:</strong></p>
+<p><strong>Management tools:</strong></p>
 <ul>
 <li><p>IIS Management Console</p></li>
 </ul></td>
@@ -211,12 +211,12 @@ Install the required prerequisite software for the App-V server components.
 </tbody>
 </table>
 
-> [!IMPORTANT]  
-> JavaScript must be enabled on the browser that opens the Web Management Console.
+>[!IMPORTANT]
+>JavaScript must be enabled on the browser that opens the Web Management Console.
 
 ### Management server database prerequisite software
 
-The Management database is required only if you are using the App-V Management server.
+The Management database is only required if you use the App-V Management server.
 
 <table>
 <colgroup>
@@ -245,7 +245,7 @@ The Management database is required only if you are using the App-V Management s
 <tr class="even">
 <td align="left"><p>Custom SQL Server instance name (if applicable)</p></td>
 <td align="left"><p>Format to use: <strong>INSTANCENAME</strong></p>
-<p>This format is based on the assumption that the installation is on the local computer.</p>
+<p>This format assumes that the installation is on the local computer.</p>
 <p>If you specify the name with the format <strong>SVR\INSTANCE</strong>, the installation will fail.</p></td>
 </tr>
 <tr class="odd">
@@ -265,12 +265,10 @@ The Management database is required only if you are using the App-V Management s
 </tr>
 <tr class="even">
 <td align="left"><p>Microsoft SQL Server Service Agent</p></td>
-<td align="left"><p>Configure the Management database computer so that the Microsoft SQL Server Agent service is restarted automatically. For instructions, see [Configure SQL Server Agent to Restart Services Automatically](http://technet.microsoft.com/magazine/gg313742.aspx).</p></td>
+<td align="left"><p>Configure the Management database computer so that the Microsoft SQL Server Agent service is restarted automatically. For instructions, see [Configure SQL Server Agent to restart services automatically](http://technet.microsoft.com/magazine/gg313742.aspx).</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
 ### Publishing server prerequisite software
 
@@ -299,7 +297,7 @@ The Management database is required only if you are using the App-V Management s
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Web Server Role</p></td>
+<td align="left"><p>Web Server role</p></td>
 <td align="left"><p>This role must be added to a server operating system that is supported for the Management server.</p></td>
 </tr>
 <tr class="odd">
@@ -308,22 +306,22 @@ The Management database is required only if you are using the App-V Management s
 </tr>
 <tr class="even">
 <td align="left"><p>Web Server Role Services</p></td>
-<td align="left"><p><strong>Common HTTP Features:</strong></p>
+<td align="left"><p><strong>Common HTTP reatures:</strong></p>
 <ul>
-<li><p>Static Content</p></li>
-<li><p>Default Document</p></li>
+<li><p>Static content</p></li>
+<li><p>Default document</p></li>
 </ul>
-<p><strong>Application Development:</strong></p>
+<p><strong>Application development:</strong></p>
 <ul>
 <li><p>ASP.NET</p></li>
-<li><p>.NET Extensibility</p></li>
-<li><p>ISAPI Extensions</p></li>
-<li><p>ISAPI Filters</p></li>
+<li><p>.NET extensibility</p></li>
+<li><p>ISAPI extensions</p></li>
+<li><p>ISAPI filters</p></li>
 </ul>
 <p><strong>Security:</strong></p>
 <ul>
-<li><p>Windows Authentication</p></li>
-<li><p>Request Filtering</p></li>
+<li><p>Windows authentication</p></li>
+<li><p>Request filtering</p></li>
 </ul>
 <p><strong>Management Tools:</strong></p>
 <ul>
@@ -345,7 +343,7 @@ The Management database is required only if you are using the App-V Management s
 <thead>
 <tr class="header">
 <th align="left">Installation architecture</th>
-<th align="left">Format to use for the URL</th>
+<th align="left">URL format</th>
 </tr>
 </thead>
 <tbody>
@@ -364,7 +362,7 @@ The Management database is required only if you are using the App-V Management s
 </tr>
 <tr class="odd">
 <td align="left"><p>Publishing service website name</p></td>
-<td align="left"><p>Name for the Publishing website.</p></td>
+<td align="left"><p>Name for the Publishing website</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Publishing service port binding</p></td>
@@ -372,8 +370,6 @@ The Management database is required only if you are using the App-V Management s
 </tr>
 </tbody>
 </table>
-
- 
 
 ### Reporting server prerequisite software
 
@@ -391,7 +387,7 @@ The Management database is required only if you are using the App-V Management s
 <tbody>
 <tr class="odd">
 <td align="left"><p>Supported version of SQL Server</p></td>
-<td align="left"><p>For supported versions, see [App-V Supported Configurations](appv-supported-configurations.md).</p></td>
+<td align="left"><p>For supported versions, see [App-V supported configurations](appv-supported-configurations.md).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](http://www.microsoft.com//download/details.aspx?id=40773)</p></td>
@@ -406,7 +402,7 @@ The Management database is required only if you are using the App-V Management s
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Windows Server Web Server Role</p></td>
+<td align="left"><p>Windows Server Web Server role</p></td>
 <td align="left"><p>This role must be added to a server operating system that is supported for the Management server.</p></td>
 </tr>
 <tr class="even">
@@ -414,26 +410,26 @@ The Management database is required only if you are using the App-V Management s
 <td align="left"><p>Click <strong>IIS Management Scripts and Tools</strong>.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Web Server Role Services</p></td>
+<td align="left"><p>Web Server role services</p></td>
 <td align="left"><p>To reduce the risk of unwanted or malicious data being sent to the Reporting server, you should restrict access to the Reporting Web Service per your corporate security policy.</p>
-<p><strong>Common HTTP Features:</strong></p>
+<p><strong>Common HTTP features:</strong></p>
 <ul>
-<li><p>Static Content</p></li>
-<li><p>Default Document</p></li>
+<li><p>Static content</p></li>
+<li><p>Default document</p></li>
 </ul>
-<p><strong>Application Development:</strong></p>
+<p><strong>Application development:</strong></p>
 <ul>
 <li><p>ASP.NET</p></li>
-<li><p>.NET Extensibility</p></li>
-<li><p>ISAPI Extensions</p></li>
-<li><p>ISAPI Filters</p></li>
+<li><p>.NET extensibility</p></li>
+<li><p>ISAPI extensions</p></li>
+<li><p>ISAPI filters</p></li>
 </ul>
 <p><strong>Security:</strong></p>
 <ul>
-<li><p>Windows Authentication</p></li>
-<li><p>Request Filtering</p></li>
+<li><p>Windows authentication</p></li>
+<li><p>Request filtering</p></li>
 </ul>
-<p><strong>Management Tools:</strong></p>
+<p><strong>Management tools:</strong></p>
 <ul>
 <li><p>IIS Management Console</p></li>
 </ul></td>
@@ -453,11 +449,9 @@ The Management database is required only if you are using the App-V Management s
 </tbody>
 </table>
 
- 
-
 ### Reporting database prerequisite software
 
-The Reporting database is required only if you are using the App-V Reporting server.
+You only require the Reporting database if you're using the App-V Reporting server.
 
 <table>
 <colgroup>
@@ -486,7 +480,7 @@ The Reporting database is required only if you are using the App-V Reporting ser
 <tr class="even">
 <td align="left"><p>Custom SQL Server instance name (if applicable)</p></td>
 <td align="left"><p>Format to use: <strong>INSTANCENAME</strong></p>
-<p>This format is based on the assumption that the installation is on the local computer.</p>
+<p>This format assumes that the installation is on the local computer.</p>
 <p>If you specify the name with the format <strong>SVR\INSTANCE</strong>, the installation will fail.</p></td>
 </tr>
 <tr class="odd">
@@ -496,7 +490,7 @@ The Reporting database is required only if you are using the App-V Reporting ser
 </tr>
 <tr class="even">
 <td align="left"><p>Reporting server location</p></td>
-<td align="left"><p>Machine account on which the Reporting server is deployed.</p>
+<td align="left"><p>The Reporting server will be deployed on this machine account.</p>
 <p>Format to use: Domain\MachineAccount</p></td>
 </tr>
 <tr class="odd">
@@ -511,15 +505,13 @@ The Reporting database is required only if you are using the App-V Reporting ser
 </tbody>
 </table>
 
-
 ## Sequencer prerequisite software
 
+What to know before installing the prerequisites:
 
-**What to know before installing the prerequisites:**
+* Best practice: The computer that runs the sequencer should have the same hardware and software configurations as the computers running the virtual applications.
 
--   Best practice: The computer that runs the Sequencer should have the same hardware and software configurations as the computers that will run the virtual applications.
-
--   The sequencing process is resource intensive, so make sure that the computer that runs the Sequencer has plenty of memory, a fast processor, and a fast hard drive. The system requirements of locally installed applications cannot exceed those of the Sequencer. For more information, see [App-V Supported Configurations](appv-supported-configurations.md).
+* The sequencing process is resource-intensive, so make sure that the computer running the sequencer has plenty of memory, a fast processor, and a fast hard drive. The system requirements of locally installed applications must not exceed those of the sequencer. For more information, see [App-V supported configurations](appv-supported-configurations.md).
 
 <table>
 <colgroup>
@@ -544,27 +536,12 @@ The Reporting database is required only if you are using the App-V Reporting ser
 </tr>
 <tr class="odd">
 <td align="left"><p>[KB2533623](http://support.microsoft.com/kb/2533623)</p></td>
-<td align="left"><p>Applies to Windows 7 only: Download and install the KB.</p></td>
+<td align="left"><p>Applies to Windows 7 only: download and install the KB.</p></td>
 </tr>
 </tbody>
 </table>
 
-
-## Have a suggestion for App-V?
-
-
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
-
 ## Related topics
 
-- [Planning for App-V](appv-planning-for-appv.md)
-- [App-V Supported Configurations](appv-supported-configurations.md)
-
- 
-
- 
-
-
-
-
-
+* [Planning for App-V](appv-planning-for-appv.md)
+* [App-V Supported Configurations](appv-supported-configurations.md)
