@@ -37,7 +37,7 @@ Answering frequently asked questions about Windows Defender Application Guard (A
 | | |
 |---|----------------------------|
 |**Q:** |Can employees copy and paste between the host device and the Application Guard Edge session?|
-|**A:** |Depending on your organization's settings, employees can copy and paste images and text (.bmp) to and from the isolated container.|
+|**A:** |Depending on your organization's settings, employees can copy and paste images (.bmp) and text to and from the isolated container.|
 <br>
 
 | | |
