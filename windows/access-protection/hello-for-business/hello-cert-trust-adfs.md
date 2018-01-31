@@ -346,13 +346,6 @@ Sign-in the AD FS server with Domain Admin equivalent credentials.
     ```PowerShell
     Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplate WHFBEnrollmentAgent -WindowsHelloCertificateTemplate WHFBAuthentication
     ```
-
-
-The `Set-AdfsCertificateAuthority` cmdlet may show the following warning:
->WARNING: PS0343: Issuing Windows Hello certificates requires enabling a permitted strong authentication provider, but no usable providers are currently configured.  These authentication providers are not supported for Windows Hello certificates: CertificateAuthentication,MicrosoftPassportAuthentication. Windows Hello certificates will not be issued until a permitted strong authentication provider is configured.
-
-This warning indicates that you have not configured multi-factor authentication in AD FS and until it is configured, the AD FS server will not issue Windows Hello certificates.  Windows 10, version 1703 clients check this configuration during prerequisite checks.  If detected, the prerequisite check will not succeed and the user will not provision Windows Hello for Business on sign-in.
-
 >[!NOTE]
 > If you gave your Windows Hello for Business Enrollment Agent and Windows Hello for Business Authentication certificate templates different names, then replace **WHFBEnrollmentAgent** and WHFBAuthentication in the above command with the name of your certificate templates.  It’s important that you use the template name rather than the template display name.  You can view the template name on the **General** tab of the certificate template using the **Certificate Template** management console (certtmpl.msc).  Or, you can view the template name using the **Get-CATemplate** ADCS Administration Windows PowerShell cmdlet on a Windows Server 2012 or later certificate authority.
 
