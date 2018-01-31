@@ -77,7 +77,7 @@ The following procedures describe how to manage the TPM command lists. You must 
 
 ## Use the TPM cmdlets
 
-You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx).
+You can manage the TPM using Windows PowerShell. For details, see [TrustedPlatformModule PowerShell cmdlets](https://docs.microsoft.com/powershell/module/trustedplatformmodule/?view=win10-ps).
 
 ## Related topics
 

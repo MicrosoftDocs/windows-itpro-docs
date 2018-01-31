@@ -263,7 +263,7 @@ The following diagram shows the Firewall configuration service provider in tree 
 <p style="margin-left: 20px">If not specified - a new rule is disabled by default.</p>
 <p style="margin-left: 20px">Boolean value. Supported operations are Get and Replace.</p>
 
-<a href="" id="profiles"></a>**FirewallRules_FirewallRuleName_/Profiles**
+<a href="" id="profiles"></a>**FirewallRules/_FirewallRuleName_/Profiles**
 <p style="margin-left: 20px">Specifies the profiles to which the rule belongs: Domain, Private, Public. .  See [FW_PROFILE_TYPE](https://msdn.microsoft.com/en-us/library/cc231559.aspx) for the bitmasks that are used to identify profile types.</p>
 <p style="margin-left: 20px">If not specified, the default is All.</p>
 <p style="margin-left: 20px">Value type is integer. Supported operations are Get and Replace.</p>
@@ -290,7 +290,7 @@ The following diagram shows the Firewall configuration service provider in tree 
 </ul>
 <p style="margin-left: 20px">Value type is string. Supported operations are Get and Replace.</p>
 
-<a href="" id="interfacetypes"></a>**FirewallRules/FirewallRuleName/InterfaceTypes**
+<a href="" id="interfacetypes"></a>**FirewallRules/_FirewallRuleName_/InterfaceTypes**
 <p style="margin-left: 20px">Comma separated list of interface types. Valid values:</p>
 <ul>
 <li>RemoteAccess</li>

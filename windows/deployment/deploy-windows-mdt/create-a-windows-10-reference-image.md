@@ -373,7 +373,7 @@ Figure 9. The Windows 10 desktop with the Resume Task Sequence shortcut.
 When using MDT, you don't need to edit the Unattend.xml file very often because most configurations are taken care of by MDT. However if, for example, you want to configure Internet Explorer 11 behavior, then you can edit the Unattend.xml for this. Editing the Unattend.xml for basic Internet Explorer settings is easy, but for more advanced settings, you will want to use Internet Explorer Administration Kit (IEAK).
 
 >[!WARNING]
->Do not use **SkipMachineOOBE** or **SkipUserOOBE** in your Unattend.xml 
+>Do not use **SkipMachineOOBE** or **SkipUserOOBE** in your Unattend.xml file. These settings are deprecated and can have unintended effects if used.
 
 >[!NOTE]  
 >You also can use the Unattend.xml to enable components in Windows 10, like the Telnet Client or Hyper-V client. Normally we prefer to do this via the **Install Roles and Features** action, or using Deployment Image Servicing and Management (DISM) command-line tools, because then we can add that as an application, being dynamic, having conditions, and so forth. Also, if you are adding packages via Unattend.xml, it is version specific, so Unattend.xml must match the exact version of the operating system you are servicing.
@@ -469,8 +469,8 @@ For that reason, add only a minimal set of rules to Bootstrap.ini, such as which
     2.  ISO file name: MDT Build Lab x64.iso
 8.  Click **OK**.
 
-**Note**  
-In MDT, the x86 boot image can deploy both x86 and x64 operating systems (except on computers based on Unified Extensible Firmware Interface).
+>[!NOTE]  
+>In MDT, the x86 boot image can deploy both x86 and x64 operating systems (except on computers based on Unified Extensible Firmware Interface).
  
 
 ### Update the deployment share
@@ -480,8 +480,8 @@ After the deployment share has been configured, it needs to be updated. This is 
 1.  Using the Deployment Workbench, right-click the **MDT Build Lab deployment share** and select **Update Deployment Share**.
 2.  Use the default options for the Update Deployment Share Wizard.
 
-**Note**  
-The update process will take 5 to 10 minutes.
+>[!NOTE]  
+>The update process will take 5 to 10 minutes.
  
 ### The rules explained
 
@@ -491,8 +491,8 @@ The Bootstrap.ini and CustomSettings.ini files work together. The Bootstrap.ini 
 
 The CustomSettings.ini file is normally stored on the server, in the Deployment share\\Control folder, but also can be stored on the media (when using offline media).
 
-**Note**  
-The settings, or properties, that are used in the rules (CustomSettings.ini and Bootstrap.ini) are listed in the MDT documentation, in the Microsoft Deployment Toolkit Reference / Properties / Property Definition section.
+>[!NOTE]  
+>The settings, or properties, that are used in the rules (CustomSettings.ini and Bootstrap.ini) are listed in the MDT documentation, in the Microsoft Deployment Toolkit Reference / Properties / Property Definition section.
  
 ### The Bootstrap.ini file
 
@@ -519,8 +519,8 @@ So, what are these settings?
      
 -   **SkipBDDWelcome.** Even if it is nice to be welcomed every time we start a deployment, we prefer to skip the initial welcome page of the Windows Deployment Wizard.
 
-**Note**  
-All properties beginning with "Skip" control only whether to display that pane in the Windows Deployment Wizard. Most of the panes also require you to actually set one or more values.
+>[!NOTE]  
+>All properties beginning with "Skip" control only whether to display that pane in the Windows Deployment Wizard. Most of the panes also require you to actually set one or more values.
  
 ### The CustomSettings.ini file
 

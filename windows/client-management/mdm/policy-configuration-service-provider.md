@@ -335,6 +335,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-authentication.md#authentication-allowfastreconnect" id="authentication-allowfastreconnect">Authentication/AllowFastReconnect</a>
   </dd>
   <dd>
+    <a href="./policy-csp-authentication.md#authentication-allowfidodevicesignon" id="authentication-allowfidodevicesignon">Authentication/AllowFidoDeviceSignon</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-authentication.md#authentication-allowsecondaryauthenticationdevice" id="authentication-allowsecondaryauthenticationdevice">Authentication/AllowSecondaryAuthenticationDevice</a>
   </dd>
 </dl>
@@ -530,6 +533,18 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
+    <a href="./policy-csp-cellular.md#cellular-letappsaccesscellulardata" id="cellular-letappsaccesscellulardata">Cellular/LetAppsAccessCellularData</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-cellular.md#cellular-letappsaccesscellulardata_forceallowtheseapps" id="cellular-letappsaccesscellulardata_forceallowtheseapps">Cellular/LetAppsAccessCellularData_ForceAllowTheseApps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-cellular.md#cellular-letappsaccesscellulardata_forcedenytheseapps" id="cellular-letappsaccesscellulardata_forcedenytheseapps">Cellular/LetAppsAccessCellularData_ForceDenyTheseApps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-cellular.md#cellular-letappsaccesscellulardata_userincontroloftheseapps" id="cellular-letappsaccesscellulardata_userincontroloftheseapps">Cellular/LetAppsAccessCellularData_UserInControlOfTheseApps</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-cellular.md#cellular-showappcellularaccessui" id="cellular-showappcellularaccessui">Cellular/ShowAppCellularAccessUI</a>
   </dd>
 </dl>
@@ -569,6 +584,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-connectivity.md#connectivity-disableinternetdownloadforwebpublishingandonlineorderingwizards" id="connectivity-disableinternetdownloadforwebpublishingandonlineorderingwizards">Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-connectivity.md#connectivity-disallownetworkconnectivityactivetests" id="connectivity-disallownetworkconnectivityactivetests">Connectivity/DisallowNetworkConnectivityActiveTests</a>
   </dd>
   <dd>
     <a href="./policy-csp-connectivity.md#connectivity-hardeneduncpaths" id="connectivity-hardeneduncpaths">Connectivity/HardenedUNCPaths</a>
@@ -2398,7 +2416,13 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-search.md#search-allowsearchtouselocation" id="search-allowsearchtouselocation">Search/AllowSearchToUseLocation</a>
   </dd>
   <dd>
+    <a href="./policy-csp-search.md#search-allowstoringimagesfromvisionsearch">Search/AllowStoringImagesFromVisionSearch</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-search.md#search-allowusingdiacritics" id="search-allowusingdiacritics">Search/AllowUsingDiacritics</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-search.md#search-allowwindowsindexer" id="search-allowwindowsindexer">Search/AllowWindowsIndexer</a>
   </dd>
   <dd>
     <a href="./policy-csp-search.md#search-alwaysuseautolangdetection" id="search-alwaysuseautolangdetection">Search/AlwaysUseAutoLangDetection</a>
@@ -2573,6 +2597,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-start.md#start-hidelock" id="start-hidelock">Start/HideLock</a>
   </dd>
   <dd>
+    <a href="./policy-csp-start.md#start-hidepeoplebar" id="start-hidepeoplebar">Start/HidePeopleBar</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-start.md#start-hidepowerbutton" id="start-hidepowerbutton">Start/HidePowerButton</a>
   </dd>
   <dd>
@@ -2615,6 +2642,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 <dl>
   <dd>
     <a href="./policy-csp-storage.md#storage-enhancedstoragedevices" id="storage-enhancedstoragedevices">Storage/EnhancedStorageDevices</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-allowdiskhealthmodelupdates">Storage/AllowDiskHealthModelUpdates</a>
   </dd>
 </dl>
 
@@ -2793,6 +2823,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-update.md#update-ignoremoupdatedownloadlimit" id="update-ignoremoupdatedownloadlimit">Update/IgnoreMOUpdateDownloadLimit</a>
   </dd>
   <dd>
+    <a href="./policy-csp-update.md#update-managepreviewbuilds">Update/ManagePreviewBuilds</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-update.md#update-pausedeferrals" id="update-pausedeferrals">Update/PauseDeferrals</a>
   </dd>
   <dd>
@@ -2955,6 +2988,12 @@ The following diagram shows the Policy configuration service provider in tree fo
 ### WirelessDisplay policies
 
 <dl>
+  <dd>
+    <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-allowmdnsadvertisement">WirelessDisplay/AllowMdnsAdvertisement</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-allowmdnsdiscovery">WirelessDisplay/AllowMdnsDiscovery</a>
+  </dd>
   <dd>
     <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectionfrompc" id="wirelessdisplay-allowprojectionfrompc">WirelessDisplay/AllowProjectionFromPC</a>
   </dd>

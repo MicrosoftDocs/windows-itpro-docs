@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
-ms.date: 10/24/2017
+ms.date: 11/30/2017
 ---
 
 # Microsoft Store for Business and Education release history
@@ -15,8 +15,11 @@ Microsoft Store for Business and Education regularly releases new and improved f
 
 Looking for info on the latest release? Check out [What's new in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md) 
 
+## October 2017
+
+- Bug fixes and permformance improvements.  
+
 ## September 2017
-We shared info about these updates in September, 2017. 
 
 - **Manage Windows device deployment with Windows AutoPilot Deployment** - In Microsoft Store for Business, you can manage devices for your organization and apply an AutoPilot deployment profile to your devices. When people in your organization run the out-of-box experience on the device, the profile configures Windows, based on the AutoPilot deployment profile you applied to the device. [Get more info](add-profile-to-devices.md)
 - **Request an app** - People in your organization can reqest additional licenses for apps in your private store, and then Admins or Purchasers can make the purchases. [Get more info](https://docs.microsoft.com/microsoft-store/acquire-apps-microsoft-store-for-business#request-apps)

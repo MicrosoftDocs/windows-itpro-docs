@@ -10,7 +10,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 10/20/2017
+ms.date: 12/04/2017
 ---
 # Windows Hello for Business
 
@@ -104,7 +104,7 @@ There are many deployment options from which to choose. Some of those options re
 Windows Hello for Business is two-factor authentication based the observed authentication factors of: something you have, something you know, and something part of you.  Windows Hello for Business incorporates two of these factors: something you have (the user's private key protected by the device's security module) and something you know (your PIN). With the proper hardware, you can enhance the user experience by introducing biometrics. Using biometrics, you can replace the "something you know" authentication factor with the "something that is part of you" factor, with the assurances that users can fall back to the "something you know factor".
 
 ### Can I use PIN and biometrics to unlock my device?
-No. Windows Hello for Business provides two-factor authentication. However, we are investigating the ability to unlock the desktop with additional factors.
+Starting in Windows 10, version 1709, you can use multifactor unlock to require the user to provide an additional factor to unlock the device.  Authentication remains two-factor, but another factor is required before Windows allows the user to reach the desktop.  Read more about [multifactor unlock](https://docs.microsoft.com/en-us/windows/access-protection/hello-for-business/hello-features#multifactor-unlock) in [Windows Hello for Business Features](#hello-features.md)
 
 ### What is the difference between Windows Hello and Windows Hello for Business
 Windows Hello represents the biometric framework provided in Windows 10.  Windows Hello enables users to use biometrics to sign into their devices by securely storing their username and password and releasing it for authentication when the user successfully identifies themselves using biometrics.  Windows Hello for Business uses asymmetric keys protected by the device's security module that requires a user gesture (PIN or biometrics) to authenticate.
