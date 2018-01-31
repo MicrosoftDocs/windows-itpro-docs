@@ -22,7 +22,7 @@ Use the following information to plan to deploy App-V without disrupting your ex
 
 [App-V planning checklist](appv-planning-checklist.md) is a planning checklist that can assist you with App-V deployment planning.
 
-## Other resources for App-V planning
+## Other App-V planning resources
 
 * [Application Virtualization (App-V) overview](appv-for-windows.md)
 

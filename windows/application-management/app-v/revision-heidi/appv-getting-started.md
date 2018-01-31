@@ -42,17 +42,11 @@ If you're new to App-V, it's a good idea to read the documentation thoroughly. B
 
 ## Getting started with App-V
 
-* [What's new in App-V](appv-about-appv.md)
+[What's new in App-V](appv-about-appv.md) provides a high-level overview of App-V and how it can be used in your organization.
 
-    Provides a high-level overview of App-V and how it can be used in your organization.
+[Evaluating App-V](appv-evaluating-appv.md) provides information about how you can best evaluate App-V for use in your organization.
 
-* [Evaluating App-V](appv-evaluating-appv.md)
-
-    Provides information about how you can best evaluate App-V for use in your organization.
-
-* [High Level Architecture for App-V](appv-high-level-architecture.md)
-
-    Provides a description of the App-V features and how they work together.
+[High Level Architecture for App-V](appv-high-level-architecture.md) provides a description of the App-V features and how they work together.
 
 ## Other resources for this product
 
