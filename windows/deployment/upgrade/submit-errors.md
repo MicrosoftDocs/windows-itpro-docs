@@ -34,7 +34,7 @@ The Feedback Hub will open.
 
 - Under **Tell us about it**, and then under **Summarize your issue**, type **Upgrade failing**.
 - Under **Give us more detail**, provide additional information about the failed upgrade, such as:
-    - When did the failures occurs?
+    - When did the failure occur?
         - Were there any reboots?
         - How many times did the system reboot?
     - How did the upgrade fail?
