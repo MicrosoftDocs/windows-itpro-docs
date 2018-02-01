@@ -1,6 +1,61 @@
 {
 "redirections": [
 {
+"source_path": "windows/device-security/device-guard/deploy-catalog-files-to-support-windows-defender-application-control.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/deploy-catalog-files-to-support-windows-defender-application-control",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/deploy-device-guard-enable-virtualization-based-security.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/deploy-device-guard-enable-virtualization-based-security",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/deploy-managed-installer-for-device-guard.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/deploy-managed-installer-for-device-guard",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/deploy-windows-defender-application-control-policy-rules-and-file-rules.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/deploy-windows-defender-application-control-policy-rules-and-file-rules",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/deploy-windows-defender-application-control.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/deploy-windows-defender-application-control",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/device-guard-deployment-guide.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/device-guard-deployment-guide",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/optional-create-a-code-signing-certificate-for-windows-defender-application-control.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/optional-create-a-code-signing-certificate-for-windows-defender-application-control",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/planning-and-getting-started-on-the-device-guard-deployment-process.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/planning-and-getting-started-on-the-device-guard-deployment-process",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/steps-to-deploy-windows-defender-application-control.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/steps-to-deploy-windows-defender-application-control",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/device-security/auditing/advanced-security-audit-policy-settings.md",
 "redirect_url": "/windows/security/threat-protection/auditing/advanced-security-audit-policy-settings",
 "redirect_document_id": true
