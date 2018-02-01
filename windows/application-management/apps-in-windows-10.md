@@ -105,6 +105,54 @@ Here are the typical installed Windows apps in Windows 10 versions 1703, 1709, a
 | Duolingo           | D5EA27B7.Duolingo- LearnLanguagesforFree | x    | x    | x    | Yes                  |
 | Network Speed Test | Microsoft.NetworkSpeedTest               | x    | x    |      | Yes                  |
 | Paid Wi-FI         |                                          | x    |      |      | Yes                  |
+| Flipboard          |                                          |      |      |      | Yes                  |
+|                    | Microsoft.Advertising.Xaml               | x    | x    | x    | Yes                  |
+|                    | Microsoft.NET.Native.Framework.1.2       | x    | x    | x    | Yes                  |
+|                    | Microsoft.NET.Native.Framework.1.3       | x    | x    |      | Yes                  |
+|                    | Microsoft.NET.Native.Framework.1.6       |      | x    | x    | Yes                  |
+|                    | Microsoft.NET.Native.Framework.1.7       |      |      | x    | Yes                  |
+|                    | Microsoft.NET.Native.Framework.2.0       |      | x    | x    | Yes                  |
+|                    | Microsoft.NET.Native.Runtime.1.1         |      | x    | x    | Yes                  |
+|                    | Microsoft.NET.Native.Runtime.1.3         | x    | x    |      | Yes                  |
+|                    | Microsoft.NET.Native.Runtime.1.4         | x    | x    | x    | Yes                  |
+|                    | Microsoft.NET.Native.Runtime.1.6         |      | x    | x    | Yes                  |
+|                    | Microsoft.NET.Native.Runtime.1.7         |      |      | x    | Yes                  |
+|                    | Microsoft.NET.Native.Runtime.2.0         |      | x    | x    | Yes                  |
+|                    | Microsoft.Services.Store.Engagement      |      | x    | x    | Yes                  |
+|                    | Microsoft.VCLibs.120.00                  | x    | x    | x    | Yes                  |
+|                    | Microsoft.VCLibs.140.00                  | x    | x    | x    | Yes                  |
+|                    | Microsoft.VCLibs.120.00.Universal        |      | x    |      | Yes                  |
+|                    | Microsoft.WinJS.2.0                      | x    |      |      | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
+|                    |                                          | x    | x    | x    | Yes                  |
 
 
 ## Provisioned Windows apps
