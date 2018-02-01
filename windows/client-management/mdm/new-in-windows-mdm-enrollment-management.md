@@ -1514,6 +1514,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
 <td style="vertical-align:top"><p>Updated the description for AllowWarningForOtherDiskEncryption to describe changes added in Windows 10, next major update.</p>
 </td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Defender CSP](defender-csp.md)</td>
+<td style="vertical-align:top"><p>Added new node (OfflineScan) in Windows 10, next major update.</p>
+</td></tr>
 </tbody>
 </table>
 
