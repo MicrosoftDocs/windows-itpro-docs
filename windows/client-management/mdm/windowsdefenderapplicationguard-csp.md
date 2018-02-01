@@ -83,6 +83,9 @@ The following diagram shows the WindowsDefenderApplicationGuard configuration se
 <a href="" id="installwindowsdefenderapplicationguard"></a>**InstallWindowsDefenderApplicationGuard**  
 <p style="margin-left: 20px">Initiates remote installation of Application Guard feature. Supported operations are Get and Execute.</p>
 
+- Install - Will initiate feature install
+- Uninstall - Will initiate feature uninstall
+
 <a href="" id="audit"></a>**Audit**  
 <p style="margin-left: 20px">Interior node. Supported operation is Get</p>
 
