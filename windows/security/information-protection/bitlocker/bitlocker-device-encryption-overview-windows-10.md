@@ -89,7 +89,7 @@ Exercise caution when encrypting only used space on an existing volume on which 
 
 SEDs have been available for years, but Microsoft couldn’t support their use with some earlier versions of Windows because the drives lacked important key management features. Microsoft worked with storage vendors to improve the hardware capabilities, and now BitLocker supports the next generation of SEDs, which are called encrypted hard drives.
 Encrypted hard drives provide onboard cryptographic capabilities to encrypt data on drives, which improves both drive and system performance by offloading cryptographic calculations from the PC’s processor to the drive itself and rapidly encrypting the drive by using dedicated, purpose-built hardware. If you plan to use whole-drive encryption with Windows 10, Microsoft recommends that you investigate hard drive manufacturers and models to determine whether any of their encrypted hard drives meet your security and budget requirements.
-For more information about encrypted hard drives, see [Encrypted Hard Drive](../encrypted-hard-drive.md).
+For more information about encrypted hard drives, see [Encrypted Hard Drive](/windows/security/hardware-protection/encrypted-hard-drive.md).
 
 ## Preboot information protection
 
