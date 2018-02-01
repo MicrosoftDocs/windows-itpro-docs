@@ -35,8 +35,7 @@
 	  "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
 	  "ms.technology": "windows",
 	  "ms.topic": "article",
-	  "ms.author": "justinha",
-      "extendBreadcrumb": true
+	  "ms.author": "justinha"
     },
     "fileMetadata": {},
     "template": [],

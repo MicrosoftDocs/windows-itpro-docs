@@ -1,6 +1,3571 @@
 {
 "redirections": [
 {
+"source_path": "windows/device-security/security-policy-settings/access-credential-manager-as-a-trusted-caller.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/access-credential-manager-as-a-trusted-caller",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/access-this-computer-from-the-network.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/access-this-computer-from-the-network",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/account-lockout-duration.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/account-lockout-duration",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/account-lockout-policy.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/account-lockout-policy",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/account-lockout-threshold.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/account-lockout-threshold",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/account-policies.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/account-policies",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/accounts-administrator-account-status.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/accounts-administrator-account-status",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/accounts-block-microsoft-accounts.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/accounts-block-microsoft-accounts",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/accounts-guest-account-status.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/accounts-guest-account-status",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/accounts-limit-local-account-use-of-blank-passwords-to-console-logon-only.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/accounts-limit-local-account-use-of-blank-passwords-to-console-logon-only",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/accounts-rename-administrator-account.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/accounts-rename-administrator-account",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/accounts-rename-guest-account.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/accounts-rename-guest-account",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/act-as-part-of-the-operating-system.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/act-as-part-of-the-operating-system",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/add-workstations-to-domain.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/adjust-memory-quotas-for-a-process.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/adjust-memory-quotas-for-a-process",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/administer-security-policy-settings.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/administer-security-policy-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/allow-log-on-locally.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/allow-log-on-locally",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/allow-log-on-through-remote-desktop-services.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/allow-log-on-through-remote-desktop-services",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/audit-audit-the-access-of-global-system-objects.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/audit-audit-the-access-of-global-system-objects",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/audit-audit-the-use-of-backup-and-restore-privilege.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/audit-audit-the-use-of-backup-and-restore-privilege",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/audit-force-audit-policy-subcategory-settings-to-override.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/audit-force-audit-policy-subcategory-settings-to-override",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/audit-policy.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/audit-policy",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/audit-shut-down-system-immediately-if-unable-to-log-security-audits.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/audit-shut-down-system-immediately-if-unable-to-log-security-audits",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/back-up-files-and-directories.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/back-up-files-and-directories",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/bypass-traverse-checking.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/bypass-traverse-checking",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/change-the-system-time.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/change-the-system-time",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/change-the-time-zone.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/change-the-time-zone",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/create-a-pagefile.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/create-a-pagefile",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/create-a-token-object.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/create-a-token-object",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/create-global-objects.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/create-global-objects",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/create-permanent-shared-objects.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/create-permanent-shared-objects",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/create-symbolic-links.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/create-symbolic-links",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/dcom-machine-access-restrictions-in-security-descriptor-definition-language-sddl-syntax.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/dcom-machine-access-restrictions-in-security-descriptor-definition-language-sddl-syntax",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/dcom-machine-launch-restrictions-in-security-descriptor-definition-language-sddl-syntax.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/dcom-machine-launch-restrictions-in-security-descriptor-definition-language-sddl-syntax",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/debug-programs.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/debug-programs",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/deny-access-to-this-computer-from-the-network.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/deny-access-to-this-computer-from-the-network",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/deny-log-on-as-a-batch-job.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/deny-log-on-as-a-batch-job",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/deny-log-on-as-a-service.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/deny-log-on-as-a-service",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/deny-log-on-locally.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/deny-log-on-locally",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/deny-log-on-through-remote-desktop-services.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/deny-log-on-through-remote-desktop-services",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/devices-allow-undock-without-having-to-log-on.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/devices-allow-undock-without-having-to-log-on",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/devices-allowed-to-format-and-eject-removable-media.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/devices-allowed-to-format-and-eject-removable-media",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/devices-prevent-users-from-installing-printer-drivers.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/devices-prevent-users-from-installing-printer-drivers",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/devices-restrict-cd-rom-access-to-locally-logged-on-user-only.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/devices-restrict-cd-rom-access-to-locally-logged-on-user-only",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/devices-restrict-floppy-access-to-locally-logged-on-user-only.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/devices-restrict-floppy-access-to-locally-logged-on-user-only",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/domain-controller-allow-server-operators-to-schedule-tasks.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/domain-controller-allow-server-operators-to-schedule-tasks",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/domain-controller-ldap-server-signing-requirements.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/domain-controller-ldap-server-signing-requirements",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/domain-controller-refuse-machine-account-password-changes.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/domain-controller-refuse-machine-account-password-changes",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/domain-member-digitally-encrypt-or-sign-secure-channel-data-always.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/domain-member-digitally-encrypt-or-sign-secure-channel-data-always",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/domain-member-digitally-encrypt-secure-channel-data-when-possible.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/domain-member-digitally-encrypt-secure-channel-data-when-possible",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/domain-member-digitally-sign-secure-channel-data-when-possible.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/domain-member-digitally-sign-secure-channel-data-when-possible",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/domain-member-disable-machine-account-password-changes.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/domain-member-disable-machine-account-password-changes",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/domain-member-maximum-machine-account-password-age.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/domain-member-maximum-machine-account-password-age",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/domain-member-require-strong-windows-2000-or-later-session-key.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/domain-member-require-strong-windows-2000-or-later-session-key",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/enable-computer-and-user-accounts-to-be-trusted-for-delegation.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/enable-computer-and-user-accounts-to-be-trusted-for-delegation",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/enforce-password-history.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/enforce-password-history",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/enforce-user-logon-restrictions.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/enforce-user-logon-restrictions",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/force-shutdown-from-a-remote-system.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/force-shutdown-from-a-remote-system",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/generate-security-audits.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/generate-security-audits",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/how-to-configure-security-policy-settings.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/how-to-configure-security-policy-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/impersonate-a-client-after-authentication.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/impersonate-a-client-after-authentication",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/increase-a-process-working-set.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/increase-a-process-working-set",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/increase-scheduling-priority.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/increase-scheduling-priority",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/interactive-logon-display-user-information-when-the-session-is-locked.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/interactive-logon-display-user-information-when-the-session-is-locked",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/interactive-logon-do-not-display-last-user-name.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/interactive-logon-do-not-display-last-user-name",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/interactive-logon-do-not-require-ctrl-alt-del.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/interactive-logon-do-not-require-ctrl-alt-del",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/interactive-logon-dont-display-username-at-sign-in.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/interactive-logon-dont-display-username-at-sign-in",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/interactive-logon-machine-account-lockout-threshold.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/interactive-logon-machine-account-lockout-threshold",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/interactive-logon-machine-inactivity-limit.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/interactive-logon-machine-inactivity-limit",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/interactive-logon-message-text-for-users-attempting-to-log-on.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/interactive-logon-message-text-for-users-attempting-to-log-on",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/interactive-logon-message-title-for-users-attempting-to-log-on.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/interactive-logon-message-title-for-users-attempting-to-log-on",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/interactive-logon-number-of-previous-logons-to-cache-in-case-domain-controller-is-not-available.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/interactive-logon-number-of-previous-logons-to-cache-in-case-domain-controller-is-not-available",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/interactive-logon-prompt-user-to-change-password-before-expiration.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/interactive-logon-prompt-user-to-change-password-before-expiration",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/interactive-logon-require-domain-controller-authentication-to-unlock-workstation.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/interactive-logon-require-domain-controller-authentication-to-unlock-workstation",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/interactive-logon-require-smart-card.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/interactive-logon-require-smart-card",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/interactive-logon-smart-card-removal-behavior.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/interactive-logon-smart-card-removal-behavior",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/kerberos-policy.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/kerberos-policy",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/load-and-unload-device-drivers.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/load-and-unload-device-drivers",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/lock-pages-in-memory.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/lock-pages-in-memory",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/log-on-as-a-batch-job.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/log-on-as-a-batch-job",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/log-on-as-a-service.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/log-on-as-a-service",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/manage-auditing-and-security-log.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/manage-auditing-and-security-log",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/maximum-lifetime-for-service-ticket.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/maximum-lifetime-for-service-ticket",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/maximum-lifetime-for-user-ticket-renewal.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/maximum-lifetime-for-user-ticket-renewal",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/maximum-lifetime-for-user-ticket.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/maximum-lifetime-for-user-ticket",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/maximum-password-age.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/maximum-password-age",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/maximum-tolerance-for-computer-clock-synchronization.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/maximum-tolerance-for-computer-clock-synchronization",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/microsoft-network-client-digitally-sign-communications-always.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-client-digitally-sign-communications-always",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/microsoft-network-client-digitally-sign-communications-if-server-agrees.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-client-digitally-sign-communications-if-server-agrees",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/microsoft-network-client-send-unencrypted-password-to-third-party-smb-servers.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-client-send-unencrypted-password-to-third-party-smb-servers",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/microsoft-network-server-amount-of-idle-time-required-before-suspending-session.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-amount-of-idle-time-required-before-suspending-session",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/microsoft-network-server-attempt-s4u2self-to-obtain-claim-information.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-attempt-s4u2self-to-obtain-claim-information",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/microsoft-network-server-digitally-sign-communications-always.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-always",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/microsoft-network-server-digitally-sign-communications-if-client-agrees.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-if-client-agrees",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/microsoft-network-server-disconnect-clients-when-logon-hours-expire.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-disconnect-clients-when-logon-hours-expire",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/microsoft-network-server-server-spn-target-name-validation-level.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-server-spn-target-name-validation-level",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/minimum-password-age.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/minimum-password-age",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/minimum-password-length.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/minimum-password-length",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/modify-an-object-label.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/modify-an-object-label",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/modify-firmware-environment-values.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/modify-firmware-environment-values",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-access-allow-anonymous-sidname-translation.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-access-allow-anonymous-sidname-translation",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-access-do-not-allow-anonymous-enumeration-of-sam-accounts-and-shares.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-access-do-not-allow-anonymous-enumeration-of-sam-accounts-and-shares",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-access-do-not-allow-anonymous-enumeration-of-sam-accounts.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-access-do-not-allow-anonymous-enumeration-of-sam-accounts",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-access-do-not-allow-storage-of-passwords-and-credentials-for-network-authentication.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-access-do-not-allow-storage-of-passwords-and-credentials-for-network-authentication",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-access-let-everyone-permissions-apply-to-anonymous-users.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-access-let-everyone-permissions-apply-to-anonymous-users",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-access-named-pipes-that-can-be-accessed-anonymously.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-access-named-pipes-that-can-be-accessed-anonymously",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-access-remotely-accessible-registry-paths-and-subpaths.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-access-remotely-accessible-registry-paths-and-subpaths",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-access-remotely-accessible-registry-paths.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-access-remotely-accessible-registry-paths",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-access-restrict-anonymous-access-to-named-pipes-and-shares.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-access-restrict-anonymous-access-to-named-pipes-and-shares",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-access-shares-that-can-be-accessed-anonymously.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-access-shares-that-can-be-accessed-anonymously",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-access-sharing-and-security-model-for-local-accounts.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-access-sharing-and-security-model-for-local-accounts",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-list-manager-policies.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-list-manager-policies",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-security-allow-local-system-to-use-computer-identity-for-ntlm.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-security-allow-local-system-to-use-computer-identity-for-ntlm",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-security-allow-localsystem-null-session-fallback.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-security-allow-localsystem-null-session-fallback",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-security-allow-pku2u-authentication-requests-to-this-computer-to-use-online-identities.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-security-allow-pku2u-authentication-requests-to-this-computer-to-use-online-identities",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-security-configure-encryption-types-allowed-for-kerberos.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-security-configure-encryption-types-allowed-for-kerberos",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-security-do-not-store-lan-manager-hash-value-on-next-password-change.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-security-do-not-store-lan-manager-hash-value-on-next-password-change",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-security-force-logoff-when-logon-hours-expire.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-security-force-logoff-when-logon-hours-expire",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-security-lan-manager-authentication-level.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-security-lan-manager-authentication-level",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-security-ldap-client-signing-requirements.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-security-ldap-client-signing-requirements",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-security-minimum-session-security-for-ntlm-ssp-based-including-secure-rpc-clients.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-security-minimum-session-security-for-ntlm-ssp-based-including-secure-rpc-clients",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-security-minimum-session-security-for-ntlm-ssp-based-including-secure-rpc-servers.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-security-minimum-session-security-for-ntlm-ssp-based-including-secure-rpc-servers",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-security-restrict-ntlm-add-remote-server-exceptions-for-ntlm-authentication.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-add-remote-server-exceptions-for-ntlm-authentication",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-security-restrict-ntlm-add-server-exceptions-in-this-domain.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-add-server-exceptions-in-this-domain",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-security-restrict-ntlm-audit-incoming-ntlm-traffic.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-audit-incoming-ntlm-traffic",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-security-restrict-ntlm-audit-ntlm-authentication-in-this-domain.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-audit-ntlm-authentication-in-this-domain",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-security-restrict-ntlm-incoming-ntlm-traffic.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-incoming-ntlm-traffic",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-security-restrict-ntlm-ntlm-authentication-in-this-domain.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-ntlm-authentication-in-this-domain",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/network-security-restrict-ntlm-outgoing-ntlm-traffic-to-remote-servers.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-outgoing-ntlm-traffic-to-remote-servers",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/password-must-meet-complexity-requirements.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/password-must-meet-complexity-requirements",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/password-policy.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/password-policy",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/perform-volume-maintenance-tasks.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/perform-volume-maintenance-tasks",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/profile-single-process.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/profile-single-process",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/profile-system-performance.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/profile-system-performance",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/recovery-console-allow-automatic-administrative-logon.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/recovery-console-allow-automatic-administrative-logon",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/recovery-console-allow-floppy-copy-and-access-to-all-drives-and-folders.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/recovery-console-allow-floppy-copy-and-access-to-all-drives-and-folders",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/remove-computer-from-docking-station.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/remove-computer-from-docking-station",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/replace-a-process-level-token.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/replace-a-process-level-token",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/reset-account-lockout-counter-after.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/reset-account-lockout-counter-after",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/restore-files-and-directories.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/restore-files-and-directories",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/secpol-advanced-security-audit-policy-settings.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/secpol-advanced-security-audit-policy-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/security-options.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/security-options",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/security-policy-settings-reference.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/security-policy-settings-reference",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/security-policy-settings.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/security-policy-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/shut-down-the-system.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/shut-down-the-system",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/shutdown-allow-system-to-be-shut-down-without-having-to-log-on.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/shutdown-allow-system-to-be-shut-down-without-having-to-log-on",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/shutdown-clear-virtual-memory-pagefile.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/shutdown-clear-virtual-memory-pagefile",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/store-passwords-using-reversible-encryption.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/store-passwords-using-reversible-encryption",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/synchronize-directory-service-data.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/synchronize-directory-service-data",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/system-cryptography-force-strong-key-protection-for-user-keys-stored-on-the-computer.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/system-cryptography-force-strong-key-protection-for-user-keys-stored-on-the-computer",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/system-objects-require-case-insensitivity-for-non-windows-subsystems.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/system-objects-require-case-insensitivity-for-non-windows-subsystems",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/system-objects-strengthen-default-permissions-of-internal-system-objects.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/system-objects-strengthen-default-permissions-of-internal-system-objects",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/system-settings-optional-subsystems.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/system-settings-optional-subsystems",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/system-settings-use-certificate-rules-on-windows-executables-for-software-restriction-policies.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/system-settings-use-certificate-rules-on-windows-executables-for-software-restriction-policies",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/take-ownership-of-files-or-other-objects.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/take-ownership-of-files-or-other-objects",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/user-account-control-admin-approval-mode-for-the-built-in-administrator-account.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/user-account-control-admin-approval-mode-for-the-built-in-administrator-account",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/user-account-control-allow-uiaccess-applications-to-prompt-for-elevation-without-using-the-secure-desktop.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/user-account-control-allow-uiaccess-applications-to-prompt-for-elevation-without-using-the-secure-desktop",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/user-account-control-behavior-of-the-elevation-prompt-for-administrators-in-admin-approval-mode.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/user-account-control-behavior-of-the-elevation-prompt-for-administrators-in-admin-approval-mode",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/user-account-control-behavior-of-the-elevation-prompt-for-standard-users.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/user-account-control-behavior-of-the-elevation-prompt-for-standard-users",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/user-account-control-detect-application-installations-and-prompt-for-elevation.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/user-account-control-detect-application-installations-and-prompt-for-elevation",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/user-account-control-only-elevate-executables-that-are-signed-and-validated.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/user-account-control-only-elevate-executables-that-are-signed-and-validated",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/user-account-control-only-elevate-uiaccess-applications-that-are-installed-in-secure-locations.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/user-account-control-only-elevate-uiaccess-applications-that-are-installed-in-secure-locations",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/user-account-control-switch-to-the-secure-desktop-when-prompting-for-elevation.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/user-account-control-switch-to-the-secure-desktop-when-prompting-for-elevation",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/user-account-control-virtualize-file-and-registry-write-failures-to-per-user-locations.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/user-account-control-virtualize-file-and-registry-write-failures-to-per-user-locations",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-policy-settings/user-rights-assignment.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/user-rights-assignment",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/deploy-catalog-files-to-support-windows-defender-application-control.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/deploy-catalog-files-to-support-windows-defender-application-control",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/deploy-device-guard-enable-virtualization-based-security.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/deploy-device-guard-enable-virtualization-based-security",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/deploy-managed-installer-for-device-guard.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/deploy-managed-installer-for-device-guard",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/deploy-windows-defender-application-control-policy-rules-and-file-rules.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/deploy-windows-defender-application-control-policy-rules-and-file-rules",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/deploy-windows-defender-application-control.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/deploy-windows-defender-application-control",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/device-guard-deployment-guide.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/device-guard-deployment-guide",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/optional-create-a-code-signing-certificate-for-windows-defender-application-control.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/optional-create-a-code-signing-certificate-for-windows-defender-application-control",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/planning-and-getting-started-on-the-device-guard-deployment-process.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/planning-and-getting-started-on-the-device-guard-deployment-process",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/steps-to-deploy-windows-defender-application-control.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/steps-to-deploy-windows-defender-application-control",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/advanced-security-audit-policy-settings.md",
+"redirect_url": "/windows/security/threat-protection/auditing/advanced-security-audit-policy-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/advanced-security-auditing-faq.md",
+"redirect_url": "/windows/security/threat-protection/auditing/advanced-security-auditing.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/appendix-a-security-monitoring-recommendations-for-many-audit-events.md",
+"redirect_url": "/windows/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-account-lockout.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-application-generated.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-application-group-management.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-audit-policy-change.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-authentication-policy-change.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-authorization-policy-change.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-central-access-policy-staging.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-certification-services.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-computer-account-management.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-credential-validation.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-detailed-directory-service-replication.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-detailed-file-share.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-directory-service-access.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-directory-service-changes.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-directory-service-replication.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-distribution-group-management.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-dpapi-activity.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-file-share.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-file-system.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-filtering-platform-connection.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-filtering-platform-packet-drop.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-filtering-platform-policy-change.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-group-membership.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-handle-manipulation.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-ipsec-driver.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-ipsec-extended-mode.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-ipsec-main-mode.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-ipsec-quick-mode.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-kerberos-authentication-service.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-kerberos-service-ticket-operations.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-kernel-object.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-logoff.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-logon.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-mpssvc-rule-level-policy-change.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-network-policy-server.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-non-sensitive-privilege-use.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-other-account-logon-events.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-other-account-management-events.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-other-logonlogoff-events.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-other-object-access-events.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-other-policy-change-events.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-other-privilege-use-events.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-other-system-events.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-pnp-activity.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-process-creation.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-process-termination.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-registry.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-removable-storage.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-rpc-events.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-sam.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-security-group-management.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-security-state-change.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-security-system-extension.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-sensitive-privilege-use.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-special-logon.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-system-integrity.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-user-account-management.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-user-device-claims.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/basic-audit-account-logon-events.md",
+"redirect_url": "/windows/security/threat-protection/auditing/basic-audit-account-management.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/basic-audit-directory-service-access.md",
+"redirect_url": "/windows/security/threat-protection/auditing/basic-audit-logon-events.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/basic-audit-object-access.md",
+"redirect_url": "/windows/security/threat-protection/auditing/basic-audit-policy-change.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/basic-audit-privilege-use.md",
+"redirect_url": "/windows/security/threat-protection/auditing/basic-audit-process-tracking.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/basic-audit-system-events.md",
+"redirect_url": "/windows/security/threat-protection/auditing/basic-security-audit-policies.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/basic-security-audit-policy-settings.md",
+"redirect_url": "/windows/security/threat-protection/auditing/create-a-basic-audit-policy-settings-for-an-event-category.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-1100.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-1102.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-1104.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-1105.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-1108.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4608.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4610.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4611.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4612.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4614.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4615.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4616.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4618.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4621.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4622.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4624.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4625.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4626.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4627.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4634.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4647.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4648.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4649.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4656.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4657.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4658.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4660.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4661.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4662.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4663.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4664.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4670.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4671.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4672.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4673.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4674.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4675.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4688.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4689.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4690.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4691.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4692.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4693.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4694.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4695.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4696.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4697.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4698.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4699.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4700.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4701.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4702.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4703.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4704.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4705.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4706.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4707.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4713.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4714.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4715.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4716.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4717.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4718.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4719.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4720.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4722.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4723.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4724.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4725.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4726.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4731.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4732.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4733.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4734.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4735.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4738.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4739.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4740.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4741.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4742.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4743.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4749.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4750.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4751.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4752.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4753.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4764.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4765.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4766.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4767.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4768.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4769.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4770.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4771.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4772.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4773.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4774.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4775.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4776.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4777.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4778.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4779.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4780.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4781.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4782.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4793.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4794.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4798.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4799.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4800.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4801.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4802.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4803.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4816.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4817.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4818.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4819.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4826.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4864.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4865.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4866.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4867.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4902.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4904.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4905.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4906.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4907.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4908.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4909.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4910.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4911.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4912.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4913.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4928.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4929.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4930.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4931.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4932.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4933.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4934.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4935.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4936.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4937.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4944.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4945.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4946.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4947.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4948.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4949.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4950.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4951.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4952.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4953.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4954.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4956.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4957.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4958.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4964.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4985.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5024.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5025.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5027.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5028.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5029.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5030.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5031.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5032.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5033.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5034.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5035.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5037.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5038.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5039.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5051.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5056.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5057.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5058.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5059.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5060.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5061.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5062.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5063.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5064.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5065.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5066.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5067.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5068.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5069.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5070.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5136.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5137.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5138.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5139.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5140.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5141.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5142.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5143.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5144.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5145.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5148.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5149.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5150.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5151.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5152.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5153.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5154.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5155.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5156.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5157.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5158.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5159.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5168.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5376.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5377.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5378.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5447.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5632.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5633.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5712.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5888.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5889.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5890.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6144.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-6145.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6281.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-6400.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6401.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-6402.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6403.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-6404.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6405.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-6406.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6407.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-6408.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6409.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-6410.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6416.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-6419.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6420.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-6421.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6422.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-6423.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6424.md",
+"redirect_url": "/windows/security/threat-protection/auditing/file-system-global-object-access-auditing.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/monitor-central-access-policy-and-rule-definitions.md",
+"redirect_url": "/windows/security/threat-protection/auditing/monitor-claim-types.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/monitor-resource-attribute-definitions.md",
+"redirect_url": "/windows/security/threat-protection/auditing/monitor-the-central-access-policies-associated-with-files-and-folders.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/monitor-the-central-access-policies-that-apply-on-a-file-server.md",
+"redirect_url": "/windows/security/threat-protection/auditing/monitor-the-resource-attributes-on-files-and-folders.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/monitor-the-use-of-removable-storage-devices.md",
+"redirect_url": "/windows/security/threat-protection/auditing/monitor-user-and-device-claims-during-sign-in.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/other-events.md",
+"redirect_url": "/windows/security/threat-protection/auditing/planning-and-deploying-advanced-security-audit-policies.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/registry-global-object-access-auditing.md",
+"redirect_url": "/windows/security/threat-protection/auditing/security-auditing-overview.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/using-advanced-security-auditing-options-to-monitor-dynamic-access-control-objects.md",
+"redirect_url": "/windows/security/threat-protection/auditing/view-the-security-event-log.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/which-editions-of-windows-support-advanced-audit-policy-configuration.md",
+"redirect_url": "/windows/security/threat-protection/auditing/which-editions-of-windows-support-advanced-audit-policy-configuration",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/add-rules-for-packaged-apps-to-existing-applocker-rule-set.md",
+"redirect_url": "/windows/security/threat-protection/applocker/add-rules-for-packaged-apps-to-existing-applocker-rule-set",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/administer-applocker.md",
+"redirect_url": "/windows/security/threat-protection/applocker/administer-applocker",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/applocker-architecture-and-components.md",
+"redirect_url": "/windows/security/threat-protection/applocker/applocker-architecture-and-components",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/applocker-functions.md",
+"redirect_url": "/windows/security/threat-protection/applocker/applocker-functions",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/applocker-overview.md",
+"redirect_url": "/windows/security/threat-protection/applocker/applocker-overview",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/applocker-policies-deployment-guide.md",
+"redirect_url": "/windows/security/threat-protection/applocker/applocker-policies-deployment-guide",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/applocker-policies-design-guide.md",
+"redirect_url": "/windows/security/threat-protection/applocker/applocker-policies-design-guide",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/applocker-policy-use-scenarios.md",
+"redirect_url": "/windows/security/threat-protection/applocker/applocker-policy-use-scenarios",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/applocker-processes-and-interactions.md",
+"redirect_url": "/windows/security/threat-protection/applocker/applocker-processes-and-interactions",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/applocker-settings.md",
+"redirect_url": "/windows/security/threat-protection/applocker/applocker-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/applocker-technical-reference.md",
+"redirect_url": "/windows/security/threat-protection/applocker/applocker-technical-reference",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/configure-an-applocker-policy-for-audit-only.md",
+"redirect_url": "/windows/security/threat-protection/applocker/configure-an-applocker-policy-for-audit-only",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/configure-an-applocker-policy-for-enforce-rules.md",
+"redirect_url": "/windows/security/threat-protection/applocker/configure-an-applocker-policy-for-enforce-rules",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/configure-exceptions-for-an-applocker-rule.md",
+"redirect_url": "/windows/security/threat-protection/applocker/configure-exceptions-for-an-applocker-rule",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/configure-the-application-identity-service.md",
+"redirect_url": "/windows/security/threat-protection/applocker/configure-the-application-identity-service",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/configure-the-appLocker-reference-device.md",
+"redirect_url": "/windows/security/threat-protection/applocker/configure-the-appLocker-reference-device",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/create-a-rule-for-packaged-apps.md",
+"redirect_url": "/windows/security/threat-protection/applocker/create-a-rule-for-packaged-apps",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/create-a-rule-that-uses-a-file-hash-condition.md",
+"redirect_url": "/windows/security/threat-protection/applocker/create-a-rule-that-uses-a-file-hash-condition",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/create-a-rule-that-uses-a-path-condition.md",
+"redirect_url": "/windows/security/threat-protection/applocker/create-a-rule-that-uses-a-path-condition",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/create-a-rule-that-uses-a-publisher-condition.md",
+"redirect_url": "/windows/security/threat-protection/applocker/create-a-rule-that-uses-a-publisher-condition",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/create-applocker-default-rules.md",
+"redirect_url": "/windows/security/threat-protection/applocker/create-applocker-default-rules",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/create-list-of-applications-deployed-to-each-business-group.md",
+"redirect_url": "/windows/security/threat-protection/applocker/create-list-of-applications-deployed-to-each-business-group",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/create-your-applocker-planning-document.md",
+"redirect_url": "/windows/security/threat-protection/applocker/create-your-applocker-planning-document",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/create-your-applocker-policies.md",
+"redirect_url": "/windows/security/threat-protection/applocker/create-your-applocker-policies",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/create-your-applocker-rules.md",
+"redirect_url": "/windows/security/threat-protection/applocker/create-your-applocker-rules",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/delete-an-applocker-rule.md",
+"redirect_url": "/windows/security/threat-protection/applocker/delete-an-applocker-rule",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/deploy-applocker-policies-by-using-the-enforce-rules-setting.md",
+"redirect_url": "/windows/security/threat-protection/applocker/deploy-applocker-policies-by-using-the-enforce-rules-setting",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/deploy-the-applocker-policy-into-production.md",
+"redirect_url": "/windows/security/threat-protection/applocker/deploy-the-applocker-policy-into-production",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/determine-group-policy-structure-and-rule-enforcement.md",
+"redirect_url": "/windows/security/threat-protection/applocker/determine-group-policy-structure-and-rule-enforcement",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/determine-which-applications-are-digitally-signed-on-a-reference-computer.md",
+"redirect_url": "/windows/security/threat-protection/applocker/determine-which-applications-are-digitally-signed-on-a-reference-computer",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/determine-your-application-control-objectives.md",
+"redirect_url": "/windows/security/threat-protection/applocker/determine-your-application-control-objectives",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/display-a-custom-url-message-when-users-try-to-run-a-blocked-application.md",
+"redirect_url": "/windows/security/threat-protection/applocker/display-a-custom-url-message-when-users-try-to-run-a-blocked-application",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/dll-rules-in-applocker.md",
+"redirect_url": "/windows/security/threat-protection/applocker/dll-rules-in-applocker",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/document-group-policy-structure-and-applocker-rule-enforcement.md",
+"redirect_url": "/windows/security/threat-protection/applocker/document-group-policy-structure-and-applocker-rule-enforcement",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/document-your-application-control-management-processes.md",
+"redirect_url": "/windows/security/threat-protection/applocker/document-your-application-control-management-processes",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/document-your-application-list.md",
+"redirect_url": "/windows/security/threat-protection/applocker/document-your-application-list",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/document-your-applocker-rules.md",
+"redirect_url": "/windows/security/threat-protection/applocker/document-your-applocker-rules",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/edit-an-applocker-policy.md",
+"redirect_url": "/windows/security/threat-protection/applocker/edit-an-applocker-policy",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/edit-applocker-rules.md",
+"redirect_url": "/windows/security/threat-protection/applocker/edit-applocker-rules",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/enable-the-dll-rule-collection.md",
+"redirect_url": "/windows/security/threat-protection/applocker/enable-the-dll-rule-collection",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/enforce-applocker-rules.md",
+"redirect_url": "/windows/security/threat-protection/applocker/enforce-applocker-rules",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/executable-rules-in-applocker.md",
+"redirect_url": "/windows/security/threat-protection/applocker/executable-rules-in-applocker",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/export-an-applocker-policy-from-a-gpo.md",
+"redirect_url": "/windows/security/threat-protection/applocker/export-an-applocker-policy-from-a-gpo",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/export-an-applocker-policy-to-an-xml-file.md",
+"redirect_url": "/windows/security/threat-protection/applocker/export-an-applocker-policy-to-an-xml-file",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/how-applocker-works-techref.md",
+"redirect_url": "/windows/security/threat-protection/applocker/how-applocker-works-techref",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/import-an-applocker-policy-from-another-computer.md",
+"redirect_url": "/windows/security/threat-protection/applocker/import-an-applocker-policy-from-another-computer",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/import-an-applocker-policy-into-a-gpo.md",
+"redirect_url": "/windows/security/threat-protection/applocker/import-an-applocker-policy-into-a-gpo",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/maintain-applocker-policies.md",
+"redirect_url": "/windows/security/threat-protection/applocker/maintain-applocker-policies",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/manage-packaged-apps-with-applocker.md",
+"redirect_url": "/windows/security/threat-protection/applocker/manage-packaged-apps-with-applocker",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/merge-applocker-policies-by-using-set-applockerpolicy.md",
+"redirect_url": "/windows/security/threat-protection/applocker/merge-applocker-policies-by-using-set-applockerpolicy",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/merge-applocker-policies-manually.md",
+"redirect_url": "/windows/security/threat-protection/applocker/merge-applocker-policies-manually",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/monitor-application-usage-with-applocker.md",
+"redirect_url": "/windows/security/threat-protection/applocker/monitor-application-usage-with-applocker",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/optimize-applocker-performance.md",
+"redirect_url": "/windows/security/threat-protection/applocker/optimize-applocker-performance",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/packaged-apps-and-packaged-app-installer-rules-in-applocker.md",
+"redirect_url": "/windows/security/threat-protection/applocker/packaged-apps-and-packaged-app-installer-rules-in-applocker",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/plan-for-applocker-policy-management.md",
+"redirect_url": "/windows/security/threat-protection/applocker/plan-for-applocker-policy-management",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/refresh-an-applocker-policy.md",
+"redirect_url": "/windows/security/threat-protection/applocker/refresh-an-applocker-policy",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/requirements-for-deploying-applocker-policies.md",
+"redirect_url": "/windows/security/threat-protection/applocker/requirements-for-deploying-applocker-policies",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/requirements-to-use-applocker.md",
+"redirect_url": "/windows/security/threat-protection/applocker/requirements-to-use-applocker",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/run-the-automatically-generate-rules-wizard.md",
+"redirect_url": "/windows/security/threat-protection/applocker/run-the-automatically-generate-rules-wizard",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/script-rules-in-applocker.md",
+"redirect_url": "/windows/security/threat-protection/applocker/script-rules-in-applocker",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/security-considerations-for-applocker.md",
+"redirect_url": "/windows/security/threat-protection/applocker/security-considerations-for-applocker",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/select-types-of-rules-to-create.md",
+"redirect_url": "/windows/security/threat-protection/applocker/select-types-of-rules-to-create",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/test-an-applocker-policy-by-using-test-applockerpolicy.md",
+"redirect_url": "/windows/security/threat-protection/applocker/test-an-applocker-policy-by-using-test-applockerpolicy",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/test-and-update-an-applocker-policy.md",
+"redirect_url": "/windows/security/threat-protection/applocker/test-and-update-an-applocker-policy",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/tools-to-use-with-applocker.md",
+"redirect_url": "/windows/security/threat-protection/applocker/tools-to-use-with-applocker",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/understand-applocker-enforcement-settings.md",
+"redirect_url": "/windows/security/threat-protection/applocker/understand-applocker-enforcement-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/understand-applocker-policy-design-decisions.md",
+"redirect_url": "/windows/security/threat-protection/applocker/understand-applocker-policy-design-decisions",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/understand-applocker-rules-and-enforcement-setting-inheritance-in-group-policy.md",
+"redirect_url": "/windows/security/threat-protection/applocker/understand-applocker-rules-and-enforcement-setting-inheritance-in-group-policy",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/understand-the-applocker-policy-deployment-process.md",
+"redirect_url": "/windows/security/threat-protection/applocker/understand-the-applocker-policy-deployment-process",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/understanding-applocker-allow-and-deny-actions-on-rules.md",
+"redirect_url": "/windows/security/threat-protection/applocker/understanding-applocker-allow-and-deny-actions-on-rules",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/understanding-applocker-default-rules.md",
+"redirect_url": "/windows/security/threat-protection/applocker/understanding-applocker-default-rules",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/understanding-applocker-rule-behavior.md",
+"redirect_url": "/windows/security/threat-protection/applocker/understanding-applocker-rule-behavior",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/understanding-applocker-rule-collections.md",
+"redirect_url": "/windows/security/threat-protection/applocker/understanding-applocker-rule-collections",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/understanding-applocker-rule-condition-types.md",
+"redirect_url": "/windows/security/threat-protection/applocker/understanding-applocker-rule-condition-types",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/understanding-applocker-rule-exceptions.md",
+"redirect_url": "/windows/security/threat-protection/applocker/understanding-applocker-rule-exceptions",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/understanding-the-file-hash-rule-condition-in-applocker.md",
+"redirect_url": "/windows/security/threat-protection/applocker/understanding-the-file-hash-rule-condition-in-applocker",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/understanding-the-path-rule-condition-in-applocker.md",
+"redirect_url": "/windows/security/threat-protection/applocker/understanding-the-path-rule-condition-in-applocker",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/understanding-the-publisher-rule-condition-in-applocker.md",
+"redirect_url": "/windows/security/threat-protection/applocker/understanding-the-publisher-rule-condition-in-applocker",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/use-a-reference-computer-to-create-and-maintain-applocker-policies.md",
+"redirect_url": "/windows/security/threat-protection/applocker/use-a-reference-computer-to-create-and-maintain-applocker-policies",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/use-applocker-and-software-restriction-policies-in-the-same-domain.md",
+"redirect_url": "/windows/security/threat-protection/applocker/use-applocker-and-software-restriction-policies-in-the-same-domain",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/use-the-applocker-windows-powershell-cmdlets.md",
+"redirect_url": "/windows/security/threat-protection/applocker/use-the-applocker-windows-powershell-cmdlets",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/using-event-viewer-with-applocker.md",
+"redirect_url": "/windows/security/threat-protection/applocker/using-event-viewer-with-applocker",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/using-software-restriction-policies-and-applocker-policies.md",
+"redirect_url": "/windows/security/threat-protection/applocker/using-software-restriction-policies-and-applocker-policies",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/what-is-applocker.md",
+"redirect_url": "/windows/security/threat-protection/applocker/what-is-applocker",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/windows-installer-rules-in-applocker.md",
+"redirect_url": "/windows/security/threat-protection/applocker/windows-installer-rules-in-applocker",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/working-with-applocker-policies.md",
+"redirect_url": "/windows/security/threat-protection/applocker/working-with-applocker-policies",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/applocker/working-with-applocker-rules.md",
+"redirect_url": "/windows/security/threat-protection/applocker/working-with-applocker-rules",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/change-history-for-device-security.md",
+"redirect_url": "/windows/security/threat-protection/change-history-for-device-security",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/enable-virtualization-based-protection-of-code-integrity.md",
+"redirect_url": "/windows/security/threat-protection/enable-virtualization-based-protection-of-code-integrity",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/get-support-for-security-baselines.md",
+"redirect_url": "/windows/security/threat-protection/get-support-for-security-baselines",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md",
+"redirect_url": "/windows/security/threat-protection/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/security-compliance-toolkit-10.md",
+"redirect_url": "/windows/security/threat-protection/security-compliance-toolkit-10",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/windows-10-mobile-security-guide.md",
+"redirect_url": "/windows/security/threat-protection/windows-10-mobile-security-guide",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/windows-security-baselines.md",
+"redirect_url": "/windows/security/threat-protection/windows-security-baselines",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/app-behavior-with-wip.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/app-behavior-with-wip",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/collect-wip-audit-event-logs.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/collect-wip-audit-event-logs",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune-azure.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune-azure",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/create-wip-policy-using-intune-azure.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/create-wip-policy-using-intune.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/create-wip-policy-using-sccm.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/deploy-wip-policy-using-intune-azure.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/deploy-wip-policy-using-intune-azure",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/deploy-wip-policy-using-intune.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/deploy-wip-policy-using-intune",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/enlightened-microsoft-apps-and-wip.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/enlightened-microsoft-apps-and-wip",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/guidance-and-best-practices-wip.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/guidance-and-best-practices-wip",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/limitations-with-wip.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/limitations-with-wip",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/mandatory-settings-for-wip.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/mandatory-settings-for-wip",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/overview-create-wip-policy-sccm.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/overview-create-wip-policy-sccm",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/overview-create-wip-policy.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/overview-create-wip-policy",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/recommended-network-definitions-for-wip.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/recommended-network-definitions-for-wip",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/testing-scenarios-for-wip.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/testing-scenarios-for-wip",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/using-owa-with-wip.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/using-owa-with-wip",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-information-protection/wip-app-enterprise-context.md",
+"redirect_url": "/windows/security/information-protection/windows-information-protection/wip-app-enterprise-context",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/encrypted-hard-drive.md",
+"redirect_url": "/windows/security/hardware-protection/encrypted-hard-drive",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/how-hardware-based-containers-help-protect-windows.md",
+"redirect_url": "/windows/security/hardware-protection/how-hardware-based-containers-help-protect-windows",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/secure-the-windows-10-boot-process.md",
+"redirect_url": "/windows/security/hardware-protection/secure-the-windows-10-boot-process",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/tpm/backup-tpm-recovery-information-to-ad-ds.md",
+"redirect_url": "/windows/security/hardware-protection/tpm/backup-tpm-recovery-information-to-ad-ds",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/tpm/change-the-tpm-owner-password.md",
+"redirect_url": "/windows/securityhardware-protection/tpm/change-the-tpm-owner-password",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/tpm/how-windows-uses-the-tpm.md",
+"redirect_url": "/windows/securityhardware-protection/tpm/how-windows-uses-the-tpm",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/tpm/initialize-and-configure-ownership-of-the-tpm.md",
+"redirect_url": "/windows/security/hardware-protection/tpm/initialize-and-configure-ownership-of-the-tpm",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/tpm/manage-tpm-commands.md",
+"redirect_url": "/windows/security/hardware-protection/tpm/manage-tpm-commands",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/tpm/manage-tpm-lockout.md",
+"redirect_url": "/windows/security/hardware-protection/tpm/manage-tpm-lockout",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/tpm/switch-pcr-banks-on-tpm-2-0-devices.md",
+"redirect_url": "/windows/security/hardware-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/tpm/tpm-fundamentals.md",
+"redirect_url": "/windows/security/hardware-protection/tpm/tpm-fundamentals",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/tpm/tpm-recommendations.md",
+"redirect_url": "/windows/security/hardware-protection/tpm/tpm-recommendations",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/tpm/trusted-platform-module-overview.md",
+"redirect_url": "/windows/security/hardware-protection/tpm/trusted-platform-module-overview",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/tpm/trusted-platform-module-services-group-policy-settings.md",
+"redirect_url": "/windows/security/hardware-protection/tpm/trusted-platform-module-services-group-policy-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/tpm/trusted-platform-module-top-node.md",
+"redirect_url": "/windows/security/hardware-protection/tpm/trusted-platform-module-top-node",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/bitlocker/bcd-settings-and-bitlocker.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/bcd-settings-and-bitlocker",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/bitlocker/bitlocker-basic-deployment.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-basic-deployment",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/bitlocker/bitlocker-countermeasures.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-countermeasures",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/bitlocker/bitlocker-device-encryption-overview-windows-10.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/bitlocker/bitlocker-frequently-asked-questions.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/bitlocker/bitlocker-group-policy-settings.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/bitlocker/bitlocker-how-to-deploy-on-windows-server.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/bitlocker/bitlocker-how-to-enable-network-unlock.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/bitlocker/bitlocker-management-for-enterprises.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-management-for-enterprises",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/bitlocker/bitlocker-overview.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-overview",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/bitlocker/bitlocker-recovery-guide-plan.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/bitlocker/bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/bitlocker/bitlocker-use-bitlocker-recovery-password-viewer.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-use-bitlocker-recovery-password-viewer",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/bitlocker/choose-the-right-bitlocker-countermeasure.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/choose-the-right-bitlocker-countermeasure",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/bitlocker/protect-bitlocker-from-pre-boot-attacks.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/protect-bitlocker-from-pre-boot-attacks",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/bitlocker/protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/bitlocker/types-of-attacks-for-volume-encryption-keys.md",
+"redirect_url": "/windows/security/information-protection/bitlocker/types-of-attacks-for-volume-encryption-keys",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-credential-theft-mitigation-guide-abstract.md",
+"redirect_url": "/windows/security/identity-protection/windows-credential-theft-mitigation-guide-abstract",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/change-history-for-access-protection.md",
+"redirect_url": "/windows/security/identity-protection/change-history-for-access-protection",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/configure-s-mime.md",
+"redirect_url": "/windows/security/identity-protection/configure-s-mime",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/enterprise-certificate-pinning.md",
+"redirect_url": "/windows/security/identity-protection/enterprise-certificate-pinning",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/installing-digital-certificates-on-windows-10-mobile.md",
+"redirect_url": "/windows/security/identity-protection/installing-digital-certificates-on-windows-10-mobile",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/remote-credential-guard.md",
+"redirect_url": "/windows/security/identity-protection/remote-credential-guard",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/add-production-devices-to-the-membership-group-for-a-zone.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/add-production-devices-to-the-membership-group-for-a-zone",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/add-test-devices-to-the-membership-group-for-a-zone.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/add-test-devices-to-the-membership-group-for-a-zone",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/assign-security-group-filters-to-the-gpo.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/assign-security-group-filters-to-the-gpo",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/basic-firewall-policy-design.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/basic-firewall-policy-design",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/boundary-zone-gpos.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/boundary-zone-gpos",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/boundary-zone.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/boundary-zone",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/certificate-based-isolation-policy-design-example.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/certificate-based-isolation-policy-design-example",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/certificate-based-isolation-policy-design.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/certificate-based-isolation-policy-design",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/change-rules-from-request-to-require-mode.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/change-rules-from-request-to-require-mode",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/checklist-configuring-basic-firewall-settings.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/checklist-configuring-basic-firewall-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/checklist-configuring-rules-for-an-isolated-server-zone.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/checklist-configuring-rules-for-an-isolated-server-zone",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/checklist-configuring-rules-for-servers-in-a-standalone-isolated-server-zone.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/checklist-configuring-rules-for-servers-in-a-standalone-isolated-server-zone",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/checklist-configuring-rules-for-the-boundary-zone.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/checklist-configuring-rules-for-the-boundary-zone",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/checklist-configuring-rules-for-the-encryption-zone.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/checklist-configuring-rules-for-the-encryption-zone",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/checklist-configuring-rules-for-the-isolated-domain.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/checklist-configuring-rules-for-the-isolated-domain",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/checklist-creating-group-policy-objects.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/checklist-creating-group-policy-objects",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/checklist-creating-inbound-firewall-rules.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/checklist-creating-inbound-firewall-rules",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/checklist-creating-outbound-firewall-rules.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/checklist-creating-outbound-firewall-rules",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/checklist-creating-rules-for-clients-of-a-standalone-isolated-server-zone.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/checklist-creating-rules-for-clients-of-a-standalone-isolated-server-zone",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/checklist-implementing-a-basic-firewall-policy-design.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/checklist-implementing-a-basic-firewall-policy-design",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/checklist-implementing-a-certificate-based-isolation-policy-design.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/checklist-implementing-a-certificate-based-isolation-policy-design",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/checklist-implementing-a-domain-isolation-policy-design.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/checklist-implementing-a-domain-isolation-policy-design",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/checklist-implementing-a-standalone-server-isolation-policy-design.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/checklist-implementing-a-standalone-server-isolation-policy-design",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/configure-authentication-methods.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/configure-authentication-methods",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/configure-data-protection-quick-mode-settings.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/configure-data-protection-quick-mode-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/configure-group-policy-to-autoenroll-and-deploy-certificates.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/configure-group-policy-to-autoenroll-and-deploy-certificates",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/configure-key-exchange-main-mode-settings.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/configure-key-exchange-main-mode-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/configure-the-rules-to-require-encryption.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/configure-the-rules-to-require-encryption",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/configure-the-windows-firewall-log.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/configure-the-windows-firewall-log",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/configure-the-workstation-authentication-certificate-template.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/configure-the-workstation-authentication-certificate-template",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/configure-windows-firewall-to-suppress-notifications-when-a-program-is-blocked.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/configure-windows-firewall-to-suppress-notifications-when-a-program-is-blocked",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/confirm-that-certificates-are-deployed-correctly.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/confirm-that-certificates-are-deployed-correctly",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/copy-a-gpo-to-create-a-new-gpo.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/copy-a-gpo-to-create-a-new-gpo",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/create-a-group-account-in-active-directory.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/create-a-group-account-in-active-directory",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/create-a-group-policy-object.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/create-a-group-policy-object",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/create-an-authentication-exemption-list-rule.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/create-an-authentication-exemption-list-rule",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/create-an-authentication-request-rule.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/create-an-authentication-request-rule",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/create-an-inbound-icmp-rule.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/create-an-inbound-icmp-rule",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/create-an-inbound-port-rule.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/create-an-inbound-port-rule",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/create-an-inbound-program-or-service-rule.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/create-an-inbound-program-or-service-rule",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/create-an-outbound-port-rule.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/create-an-outbound-port-rule",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/create-an-outbound-program-or-service-rule.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/create-an-outbound-program-or-service-rule",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/create-inbound-rules-to-support-rpc.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/create-inbound-rules-to-support-rpc",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/create-wmi-filters-for-the-gpo.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/create-wmi-filters-for-the-gpo",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/designing-a-windows-firewall-with-advanced-security-strategy.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/designing-a-windows-firewall-with-advanced-security-strategy",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/determining-the-trusted-state-of-your-devices.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/determining-the-trusted-state-of-your-devices",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/documenting-the-zones.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/documenting-the-zones",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/domain-isolation-policy-design-example.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/domain-isolation-policy-design-example",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/domain-isolation-policy-design.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/domain-isolation-policy-design",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/enable-predefined-inbound-rules.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/enable-predefined-inbound-rules",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/enable-predefined-outbound-rules.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/enable-predefined-outbound-rules",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/encryption-zone-gpos.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/encryption-zone-gpos",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/encryption-zone.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/encryption-zone",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/exempt-icmp-from-authentication.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/exempt-icmp-from-authentication",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/exemption-list.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/exemption-list",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/firewall-gpos.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/firewall-gpos",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/firewall-policy-design-example.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/firewall-policy-design-example",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/gathering-information-about-your-active-directory-deployment.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/gathering-information-about-your-active-directory-deployment",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/gathering-information-about-your-current-network-infrastructure.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/gathering-information-about-your-current-network-infrastructure",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/gathering-information-about-your-devices.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/gathering-information-about-your-devices",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/gathering-other-relevant-information.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/gathering-other-relevant-information",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/gathering-the-information-you-need.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/gathering-the-information-you-need",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/gpo-domiso-boundary.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/gpo-domiso-boundary",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/gpo-domiso-encryption.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/gpo-domiso-encryption",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/gpo-domiso-firewall.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/gpo-domiso-firewall",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/gpo-domiso-isolateddomain-clients.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/gpo-domiso-isolateddomain-clients",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/gpo-domiso-isolateddomain-servers.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/gpo-domiso-isolateddomain-servers",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/identifying-your-windows-firewall-with-advanced-security-deployment-goals.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/identifying-your-windows-firewall-with-advanced-security-deployment-goals",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/implementing-your-windows-firewall-with-advanced-security-design-plan.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/implementing-your-windows-firewall-with-advanced-security-design-plan",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/isolated-domain-gpos.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/isolated-domain-gpos",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/isolated-domain.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/isolated-domain",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/isolating-apps-on-your-network.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/isolating-apps-on-your-network",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/link-the-gpo-to-the-domain.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/link-the-gpo-to-the-domain",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/mapping-your-deployment-goals-to-a-windows-firewall-with-advanced-security-design.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/mapping-your-deployment-goals-to-a-windows-firewall-with-advanced-security-design",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/modify-gpo-filters-to-apply-to-a-different-zone-or-version-of-windows.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/modify-gpo-filters-to-apply-to-a-different-zone-or-version-of-windows",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/open-the-group-policy-management-console-to-ip-security-policies.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/open-the-group-policy-management-console-to-ip-security-policies",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/open-the-group-policy-management-console-to-windows-firewall.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/open-the-group-policy-management-console-to-windows-firewall",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/open-windows-firewall-with-advanced-security.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/open-windows-firewall-with-advanced-security",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/planning-certificate-based-authentication.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/planning-certificate-based-authentication",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/planning-domain-isolation-zones.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/planning-domain-isolation-zones",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/planning-gpo-deployment.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/planning-gpo-deployment",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/planning-group-policy-deployment-for-your-isolation-zones.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/planning-group-policy-deployment-for-your-isolation-zones",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/planning-isolation-groups-for-the-zones.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/planning-isolation-groups-for-the-zones",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/planning-network-access-groups.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/planning-network-access-groups",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/planning-server-isolation-zones.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/planning-server-isolation-zones",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/planning-settings-for-a-basic-firewall-policy.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/planning-settings-for-a-basic-firewall-policy",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/planning-the-gpos.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/planning-the-gpos",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/planning-to-deploy-windows-firewall-with-advanced-security.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/planning-to-deploy-windows-firewall-with-advanced-security",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/planning-your-windows-firewall-with-advanced-security-design.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/planning-your-windows-firewall-with-advanced-security-design",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/procedures-used-in-this-guide.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/procedures-used-in-this-guide",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/protect-devices-from-unwanted-network-traffic.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/protect-devices-from-unwanted-network-traffic",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/require-encryption-when-accessing-sensitive-network-resources.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/require-encryption-when-accessing-sensitive-network-resources",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/restrict-access-to-only-specified-users-or-devices.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/restrict-access-to-only-specified-users-or-devices",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/restrict-access-to-only-trusted-devices.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/restrict-access-to-only-trusted-devices",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/restrict-server-access-to-members-of-a-group-only.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/restrict-server-access-to-members-of-a-group-only",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/securing-end-to-end-ipsec-connections-by-using-ikev2.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/securing-end-to-end-ipsec-connections-by-using-ikev2",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/server-isolation-gpos.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/server-isolation-gpos",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/server-isolation-policy-design-example.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/server-isolation-policy-design-example",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/server-isolation-policy-design.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/server-isolation-policy-design",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/turn-on-windows-firewall-and-configure-default-behavior.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/turn-on-windows-firewall-and-configure-default-behavior",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/understanding-the-windows-firewall-with-advanced-security-design-process.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/understanding-the-windows-firewall-with-advanced-security-design-process",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/verify-that-network-traffic-is-authenticated.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/verify-that-network-traffic-is-authenticated",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/windows-firewall/windows-firewall-with-advanced-security.md",
+"redirect_url": "/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/vpn/how-to-use-single-sign-on-sso-over-vpn-and-wi-fi-connections.md",
+"redirect_url": "/windows/security/identity-protection/vpn/how-to-use-single-sign-on-sso-over-vpn-and-wi-fi-connections",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/vpn/vpn-authentication.md",
+"redirect_url": "/windows/security/identity-protection/vpn/vpn-authentication",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/vpn/vpn-auto-trigger-profile.md",
+"redirect_url": "/windows/security/identity-protection/vpn/vpn-auto-trigger-profile",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/vpn/vpn-conditional-access.md",
+"redirect_url": "/windows/security/identity-protection/vpn/vpn-conditional-access",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/vpn/vpn-connection-type.md",
+"redirect_url": "/windows/security/identity-protection/vpn/vpn-connection-type",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/vpn/vpn-guide.md",
+"redirect_url": "/windows/security/identity-protection/vpn/vpn-guide",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/vpn/vpn-name-resolution.md",
+"redirect_url": "/windows/security/identity-protection/vpn/vpn-name-resolution",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/vpn/vpn-profile-options.md",
+"redirect_url": "/windows/security/identity-protection/vpn/vpn-profile-options",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/vpn/vpn-routing.md",
+"redirect_url": "/windows/security/identity-protection/vpn/vpn-routing",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/vpn/vpn-security-features.md",
+"redirect_url": "/windows/security/identity-protection/vpn/vpn-security-features",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/virtual-smart-cards/virtual-smart-card-deploy-virtual-smart-cards.md",
+"redirect_url": "/windows/security/identity-protection/virtual-smart-cards/virtual-smart-card-deploy-virtual-smart-cards",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/virtual-smart-cards/virtual-smart-card-evaluate-security.md",
+"redirect_url": "/windows/security/identity-protection/virtual-smart-cards/virtual-smart-card-evaluate-security",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/virtual-smart-cards/virtual-smart-card-get-started.md",
+"redirect_url": "/windows/security/identity-protection/virtual-smart-cards/virtual-smart-card-get-started",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/virtual-smart-cards/virtual-smart-card-overview.md",
+"redirect_url": "/windows/security/identity-protection/virtual-smart-cards/virtual-smart-card-overview",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/virtual-smart-cards/virtual-smart-card-tpmvscmgr.md",
+"redirect_url": "/windows/security/identity-protection/virtual-smart-cards/virtual-smart-card-tpmvscmgr",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/virtual-smart-cards/virtual-smart-card-understanding-and-evaluating.md",
+"redirect_url": "/windows/security/identity-protection/virtual-smart-cards/virtual-smart-card-understanding-and-evaluating",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/virtual-smart-cards/virtual-smart-card-use-virtual-smart-cards.md",
+"redirect_url": "/windows/security/identity-protection/virtual-smart-cards/virtual-smart-card-use-virtual-smart-cards",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/user-account-control/how-user-account-control-works.md",
+"redirect_url": "/windows/security/identity-protection/user-account-control/how-user-account-control-works",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/user-account-control/user-account-control-group-policy-and-registry-key-settings.md",
+"redirect_url": "/windows/security/identity-protection/user-account-control/user-account-control-group-policy-and-registry-key-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/user-account-control/user-account-control-overview.md",
+"redirect_url": "/windows/security/identity-protection/user-account-control/user-account-control-overview",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/user-account-control/user-account-control-security-policy-settings.md",
+"redirect_url": "/windows/security/identity-protection/user-account-control/user-account-control-security-policy-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/smart-cards/smart-card-certificate-requirements-and-enumeration.md",
+"redirect_url": "/windows/security/identity-protection/smart-cards/smart-card-certificate-requirements-and-enumeration",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/smart-cards/smart-card-debugging-information.md",
+"redirect_url": "/windows/security/identity-protection/smart-cards/smart-card-debugging-information",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/smart-cards/smart-card-events.md",
+"redirect_url": "/windows/security/identity-protection/smart-cards/smart-card-events",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/smart-cards/smart-card-group-policy-and-registry-settings.md",
+"redirect_url": "/windows/security/identity-protection/smart-cards/smart-card-group-policy-and-registry-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/smart-cards/smart-card-how-smart-card-sign-in-works-in-windows.md",
+"redirect_url": "/windows/security/identity-protection/smart-cards/smart-card-how-smart-card-sign-in-works-in-windows",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/smart-cards/smart-card-removal-policy-service.md",
+"redirect_url": "/windows/security/identity-protection/smart-cards/smart-card-removal-policy-service",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/smart-cards/smart-card-smart-cards-for-windows-service.md",
+"redirect_url": "/windows/security/identity-protection/smart-cards/smart-card-smart-cards-for-windows-service",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/smart-cards/smart-card-tools-and-settings.md",
+"redirect_url": "/windows/security/identity-protection/smart-cards/smart-card-tools-and-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/smart-cards/smart-card-windows-smart-card-technical-reference.md",
+"redirect_url": "/windows/security/identity-protection/smart-cards/smart-card-windows-smart-card-technical-reference",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/smart-cards/smart-card-and-remote-desktop-services.md",
+"redirect_url": "/windows/security/identity-protection/smart-cards/smart-card-and-remote-desktop-services",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/smart-cards/smart-card-architecture.md",
+"redirect_url": "/windows/security/identity-protection/smart-cards/smart-card-architecture",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/smart-cards/smart-card-certificate-propagation-service.md",
+"redirect_url": "/windows/security/identity-protection/smart-cards/smart-card-certificate-propagation-service",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-and-password-changes.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-and-password-changes",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-biometrics-in-enterprise.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-cert-trust-adfs.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-cert-trust-adfs",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-cert-trust-deploy-mfa.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-cert-trust-deploy-mfa",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-cert-trust-policy-settings.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-cert-trust-validate-ad-prereq.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-cert-trust-validate-ad-prereq",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-cert-trust-validate-deploy-mfa.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-cert-trust-validate-deploy-mfa",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-cert-trust-validate-pki.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-cert-trust-validate-pki",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-deployment-cert-trust.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-deployment-cert-trust",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-deployment-guide.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-deployment-guide",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-deployment-key-trust.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-deployment-key-trust",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-errors-during-pin-creation.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-errors-during-pin-creation",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-event-300.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-event-300",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-features.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-features",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-how-it-works.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-how-it-works",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-cert-new-install.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-new-install",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-cert-trust.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-cert-trust-devreg.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust-devreg",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-cert-trust-prereqs.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust-prereqs",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-cert-whfb-provision.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-provision",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-cert-whfb-settings.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-cert-whfb-settings-ad.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings-ad",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-cert-whfb-settings-adfs.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings-adfs",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-cert-whfb-settings-dir-sync.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings-dir-sync",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-cert-whfb-settings-pki.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings-pki",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-cert-whfb-settings-policy.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings-policy",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-key-new-install.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-new-install",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-key-trust.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-key-trust-devreg.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust-devreg",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-key-trust-dirsync.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust-dirsync",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-key-trust-prereqs.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust-prereqs",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-key-whfb-provision.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-provision",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-key-whfb-settings.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-key-whfb-settings-ad.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings-ad",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-key-whfb-settings-dir-sync.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings-dir-sync",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-key-whfb-settings-pki.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings-pki",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-hybrid-key-whfb-settings-policy.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings-policy",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-identity-verification.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-identity-verification",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-key-trust-adfs.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-key-trust-adfs",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-key-trust-deploy-mfa.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-key-trust-deploy-mfa",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-key-trust-policy-settings.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-key-trust-policy-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-key-trust-validate-ad-prereq.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-key-trust-validate-ad-prereq",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-key-trust-validate-deploy-mfa.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-key-trust-validate-deploy-mfa",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-key-trust-validate-pki.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-key-trust-validate-pki",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-manage-in-organization.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-manage-in-organization",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-overview.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-overview",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-planning-guide.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-planning-guide",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-prepare-people-to-use.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-prepare-people-to-use",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/hello-for-business/hello-why-pin-is-better-than-password.md",
+"redirect_url": "/windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/credential-guard/additional-mitigations.md",
+"redirect_url": "/windows/security/identity-protection/credential-guard/additional-mitigations",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/credential-guard/credential-guard.md",
+"redirect_url": "/windows/security/identity-protection/credential-guard/credential-guard",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/credential-guard/credential-guard-considerations.md",
+"redirect_url": "/windows/security/identity-protection/credential-guard/credential-guard-considerations",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/credential-guard/credential-guard-how-it-works.md",
+"redirect_url": "/windows/security/identity-protection/credential-guard/credential-guard-how-it-works",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/credential-guard/credential-guard-known-issues.md",
+"redirect_url": "/windows/security/identity-protection/credential-guard/credential-guard-known-issues",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/credential-guard/credential-guard-manage.md",
+"redirect_url": "/windows/security/identity-protection/credential-guard/credential-guard-manage",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/credential-guard/credential-guard-not-protected-scenarios.md",
+"redirect_url": "/windows/security/identity-protection/credential-guard/credential-guard-not-protected-scenarios",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/credential-guard/credential-guard-protection-limits.md",
+"redirect_url": "/windows/security/identity-protection/credential-guard/credential-guard-protection-limits",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/credential-guard/credential-guard-requirements.md",
+"redirect_url": "/windows/security/identity-protection/credential-guard/credential-guard-requirements",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/credential-guard/credential-guard-scripts.md",
+"redirect_url": "/windows/security/identity-protection/credential-guard/credential-guard-scripts",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/access-control/access-control.md",
+"redirect_url": "/windows/security/identity-protection/access-control/access-control",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/access-control/active-directory-accounts.md",
+"redirect_url": "/windows/security/identity-protection/access-control/active-directory-accounts",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/access-control/active-directory-security-groups.md",
+"redirect_url": "/windows/security/identity-protection/access-control/active-directory-security-groups",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/access-control/dynamic-access-control.md",
+"redirect_url": "/windows/security/identity-protection/access-control/dynamic-access-control",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/access-control/local-accounts.md",
+"redirect_url": "/windows/security/identity-protection/access-control/local-accounts",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/access-control/microsoft-accounts.md",
+"redirect_url": "/windows/security/identity-protection/access-control/microsoft-accounts",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/access-control/security-identifiers.md",
+"redirect_url": "/windows/security/identity-protection/access-control/security-identifiers",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/access-control/security-principals.md",
+"redirect_url": "/windows/security/identity-protection/access-control/security-principals",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/access-control/service-accounts.md",
+"redirect_url": "/windows/security/identity-protection/access-control/service-accounts",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/access-protection/access-control/special-identities.md",
+"redirect_url": "/windows/security/identity-protection/access-control/special-identities",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/device-security/device-guard/deploy-code-integrity-policies-steps.md",
 "redirect_url": "/windows/device-security/device-guard/steps-to-deploy-windows-defender-application-control",
 "redirect_document_id": true
@@ -48,11 +3613,6 @@
 {
 "source_path": "windows/configuration/windows-diagnostic-data-1709.md",
 "redirect_url": "/windows/configuration/windows-diagnostic-data",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/configuration/configure-windows-telemetry-in-your-organization.md",
-"redirect_url": "/windows/configuration/configure-windows-diagnostic-data-in-your-organization",
 "redirect_document_id": true
 },
 {
