@@ -11,7 +11,7 @@ ms.date: 1/8/2018
 
 # What's new in Microsoft Store for Business and Education
 
-Microsoft Store for Business and Education regularly releases new and improved feaures.  
+Microsoft Store for Business and Education regularly releases new and improved features.  
 
 ## Latest updates for Store for Business and Education
 
