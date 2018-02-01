@@ -94,7 +94,7 @@ sections:
 
     items:
 
-    - href: \windows\security\identity-protection\how-hardware-based-containers-help-protect-windows
+    - href: \windows\security\hardware-protection\how-hardware-based-containers-help-protect-windows
 
       html: <p>Protect the boot process and maintain system integrity</p>
 
