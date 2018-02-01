@@ -2487,6 +2487,13 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### RestrictedGroups policies
+
+  <dd>
+    <a href="policy-csp-restrictedgroups.md#restrictedgroups-configuregroupmembership">RestrictedGroups/ConfigureGroupMembership</a>
+  </dd>
+
+
 ### Search policies
 
 <dl>
