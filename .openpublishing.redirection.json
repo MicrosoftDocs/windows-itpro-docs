@@ -1,6 +1,46 @@
 {
 "redirections": [
 {
+"source_path": "windows/threat-protection/windows-defender-security-center/wdsc-app-browser-control.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-security-center/wdsc-app-browser-control",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-defender-security-center/wdsc-customize-contact-information.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-defender-security-center/wdsc-device-performance-health.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-security-center/wdsc-device-performance-health",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-defender-security-center/wdsc-family-options.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-security-center/wdsc-family-options",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-defender-security-center/wdsc-firewall-network-protection.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-security-center/wdsc-firewall-network-protection",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-defender-security-center/wdsc-hide-notifications.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-security-center/wdsc-hide-notifications",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-defender-security-center/windows-defender-security-center.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard",
 "redirect_document_id": true
