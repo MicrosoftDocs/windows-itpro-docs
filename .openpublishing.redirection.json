@@ -1,6 +1,846 @@
 {
 "redirections": [
 {
+"source_path": "windows/device-security/auditing/advanced-security-audit-policy-settings.md",
+"redirect_url": "/windows/security/threat-protection/auditing/advanced-security-audit-policy-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/advanced-security-auditing-faq.md",
+"redirect_url": "/windows/security/threat-protection/auditing/advanced-security-auditing.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/appendix-a-security-monitoring-recommendations-for-many-audit-events.md",
+"redirect_url": "/windows/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-account-lockout.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-application-generated.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-application-group-management.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-audit-policy-change.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-authentication-policy-change.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-authorization-policy-change.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-central-access-policy-staging.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-certification-services.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-computer-account-management.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-credential-validation.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-detailed-directory-service-replication.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-detailed-file-share.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-directory-service-access.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-directory-service-changes.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-directory-service-replication.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-distribution-group-management.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-dpapi-activity.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-file-share.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-file-system.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-filtering-platform-connection.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-filtering-platform-packet-drop.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-filtering-platform-policy-change.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-group-membership.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-handle-manipulation.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-ipsec-driver.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-ipsec-extended-mode.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-ipsec-main-mode.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-ipsec-quick-mode.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-kerberos-authentication-service.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-kerberos-service-ticket-operations.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-kernel-object.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-logoff.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-logon.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-mpssvc-rule-level-policy-change.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-network-policy-server.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-non-sensitive-privilege-use.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-other-account-logon-events.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-other-account-management-events.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-other-logonlogoff-events.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-other-object-access-events.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-other-policy-change-events.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-other-privilege-use-events.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-other-system-events.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-pnp-activity.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-process-creation.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-process-termination.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-registry.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-removable-storage.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-rpc-events.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-sam.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-security-group-management.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-security-state-change.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-security-system-extension.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-sensitive-privilege-use.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-special-logon.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-system-integrity.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/audit-user-account-management.md",
+"redirect_url": "/windows/security/threat-protection/auditing/audit-user-device-claims.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/basic-audit-account-logon-events.md",
+"redirect_url": "/windows/security/threat-protection/auditing/basic-audit-account-management.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/basic-audit-directory-service-access.md",
+"redirect_url": "/windows/security/threat-protection/auditing/basic-audit-logon-events.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/basic-audit-object-access.md",
+"redirect_url": "/windows/security/threat-protection/auditing/basic-audit-policy-change.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/basic-audit-privilege-use.md",
+"redirect_url": "/windows/security/threat-protection/auditing/basic-audit-process-tracking.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/basic-audit-system-events.md",
+"redirect_url": "/windows/security/threat-protection/auditing/basic-security-audit-policies.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/basic-security-audit-policy-settings.md",
+"redirect_url": "/windows/security/threat-protection/auditing/create-a-basic-audit-policy-settings-for-an-event-category.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-1100.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-1102.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-1104.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-1105.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-1108.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4608.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4610.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4611.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4612.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4614.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4615.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4616.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4618.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4621.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4622.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4624.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4625.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4626.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4627.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4634.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4647.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4648.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4649.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4656.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4657.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4658.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4660.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4661.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4662.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4663.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4664.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4670.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4671.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4672.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4673.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4674.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4675.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4688.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4689.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4690.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4691.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4692.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4693.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4694.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4695.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4696.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4697.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4698.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4699.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4700.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4701.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4702.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4703.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4704.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4705.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4706.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4707.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4713.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4714.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4715.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4716.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4717.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4718.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4719.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4720.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4722.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4723.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4724.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4725.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4726.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4731.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4732.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4733.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4734.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4735.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4738.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4739.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4740.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4741.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4742.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4743.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4749.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4750.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4751.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4752.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4753.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4764.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4765.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4766.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4767.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4768.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4769.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4770.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4771.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4772.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4773.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4774.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4775.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4776.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4777.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4778.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4779.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4780.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4781.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4782.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4793.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4794.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4798.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4799.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4800.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4801.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4802.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4803.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4816.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4817.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4818.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4819.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4826.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4864.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4865.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4866.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4867.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4902.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4904.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4905.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4906.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4907.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4908.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4909.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4910.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4911.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4912.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4913.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4928.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4929.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4930.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4931.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4932.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4933.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4934.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4935.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4936.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4937.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4944.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4945.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4946.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4947.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4948.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4949.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4950.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4951.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4952.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4953.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4954.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4956.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4957.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4958.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-4964.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-4985.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5024.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5025.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5027.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5028.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5029.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5030.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5031.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5032.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5033.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5034.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5035.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5037.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5038.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5039.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5051.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5056.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5057.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5058.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5059.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5060.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5061.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5062.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5063.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5064.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5065.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5066.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5067.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5068.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5069.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5070.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5136.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5137.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5138.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5139.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5140.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5141.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5142.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5143.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5144.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5145.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5148.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5149.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5150.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5151.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5152.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5153.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5154.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5155.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5156.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5157.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5158.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5159.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5168.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5376.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5377.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5378.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5447.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5632.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5633.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5712.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5888.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-5889.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-5890.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6144.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-6145.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6281.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-6400.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6401.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-6402.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6403.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-6404.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6405.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-6406.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6407.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-6408.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6409.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-6410.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6416.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-6419.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6420.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-6421.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6422.md",
+"redirect_url": "/windows/security/threat-protection/auditing/event-6423.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/event-6424.md",
+"redirect_url": "/windows/security/threat-protection/auditing/file-system-global-object-access-auditing.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/monitor-central-access-policy-and-rule-definitions.md",
+"redirect_url": "/windows/security/threat-protection/auditing/monitor-claim-types.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/monitor-resource-attribute-definitions.md",
+"redirect_url": "/windows/security/threat-protection/auditing/monitor-the-central-access-policies-associated-with-files-and-folders.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/monitor-the-central-access-policies-that-apply-on-a-file-server.md",
+"redirect_url": "/windows/security/threat-protection/auditing/monitor-the-resource-attributes-on-files-and-folders.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/monitor-the-use-of-removable-storage-devices.md",
+"redirect_url": "/windows/security/threat-protection/auditing/monitor-user-and-device-claims-during-sign-in.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/other-events.md",
+"redirect_url": "/windows/security/threat-protection/auditing/planning-and-deploying-advanced-security-audit-policies.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/registry-global-object-access-auditing.md",
+"redirect_url": "/windows/security/threat-protection/auditing/security-auditing-overview.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/using-advanced-security-auditing-options-to-monitor-dynamic-access-control-objects.md",
+"redirect_url": "/windows/security/threat-protection/auditing/view-the-security-event-log.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/auditing/which-editions-of-windows-support-advanced-audit-policy-configuration.md",
+"redirect_url": "/windows/security/threat-protection/auditing/which-editions-of-windows-support-advanced-audit-policy-configuration",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/device-security/applocker/add-rules-for-packaged-apps-to-existing-applocker-rule-set.md",
 "redirect_url": "/windows/security/threat-protection/applocker/add-rules-for-packaged-apps-to-existing-applocker-rule-set",
 "redirect_document_id": true
