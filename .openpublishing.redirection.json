@@ -1,6 +1,21 @@
 {
 "redirections": [
 {
+"source_path": "windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview.md",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/threat-protection/windows-defender-security-center/wdsc-app-browser-control.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-security-center/wdsc-app-browser-control",
 "redirect_document_id": true
