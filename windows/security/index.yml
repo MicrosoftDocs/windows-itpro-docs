@@ -46,7 +46,7 @@ sections:
 
     items:
 
-    - href: \windows\access-protection\
+    - href: \windows\security\identity-protection\
 
       html: <p>Deploy secure enterprise-grade authentication and access control to protect accounts and data</p>
 
@@ -56,7 +56,7 @@ sections:
 
       title: Identity and access protection
 
-    - href: \windows\threat-protection\
+    - href: \windows\security\threat-protection\
 
       html: <p>Stop cyberthreats and quickly identify and respond to breaches</p>
 
@@ -66,7 +66,7 @@ sections:
 
       title: Threat protection
 
-    - href: \windows\information-protection\
+    - href: \windows\security\information-protection\
 
       html: <p>Identify and secure critical data to prevent data loss</p>
 
@@ -94,7 +94,7 @@ sections:
 
     items:
 
-    - href: \windows\threat-protection\how-hardware-based-containers-help-protect-windows
+    - href: \windows\security\identity-protection\how-hardware-based-containers-help-protect-windows
 
       html: <p>Protect the boot process and maintain system integrity</p>
 
@@ -104,7 +104,7 @@ sections:
       
       title: Windows Defender System Guard
 
-    - href: \windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10
+    - href: \windows\security\threat-protection\windows-defender-antivirus\windows-defender-antivirus-in-windows-10
 
       html: <p>Protect against malware management using next-generation antivirus technologies</p>
 
@@ -114,7 +114,7 @@ sections:
       
       title: Windows Defender Antivirus
 
-    - href: \windows\information-protection\bitlocker\bitlocker-overview
+    - href: \windows\security\information-protection\bitlocker\bitlocker-overview
 
       html: <p>Prevent data theft from lost or stolen devices</p>
 
