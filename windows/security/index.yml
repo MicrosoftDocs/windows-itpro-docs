@@ -66,7 +66,7 @@ sections:
 
       title: Threat protection
 
-    - href: \windows\threat-protection\windows-information-protection\protect-enterprise-data-using-wip 
+    - href: \windows\information-protection\
 
       html: <p>Identify and secure critical data to prevent data loss</p>
 
@@ -114,7 +114,7 @@ sections:
       
       title: Windows Defender Antivirus
 
-    - href: https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-abovefoldlink
+    - href: \windows\information-protection\bitlocker\bitlocker-overview
 
       html: <p>Prevent data theft from lost or stolen devices</p>
 
@@ -142,7 +142,7 @@ sections:
 
     items:
 
-    - href: \windows\access-protection\hello-for-business\hello-overview
+    - href: \windows\security\identity-protection\hello-for-business\hello-overview
 
       html: <p>Give users a more personal and secure way to access their devices</p>
 
@@ -152,7 +152,7 @@ sections:
       
       title: Windows Hello for Business
       
-    - href: \windows\device-security\device-guard\device-guard-deployment-guide
+    - href: \windows\security\threat-protection\device-guard\device-guard-deployment-guide
 
       html: <p>Lock down applications that run on a device</p>
 
@@ -162,7 +162,7 @@ sections:
       
       title: Windows Defender Device Guard
 
-    - href: \windows\threat-protection\windows-information-protection\protect-enterprise-data-using-wip
+    - href: \windows\security\information-protection\windows-information-protection\protect-enterprise-data-using-wip
 
       html: <p>Prevent accidental data leaks from enterprise devices</p>
 
@@ -200,7 +200,7 @@ sections:
       
       title: Azure Active Directory P2
 
-    - href: \windows\threat-protection\Windows-defender-atp\windows-defender-advanced-threat-protection
+    - href: \windows\security\threat-protection\Windows-defender-atp\windows-defender-advanced-threat-protection
 
       html: <p>Detect, investigate, and respond to advanced cyberattacks</p>
 
@@ -234,13 +234,13 @@ sections:
 
     items:
 
-    - html: <a href="/windows/access-protection/windows-firewall/windows-firewall-with-advanced-security">Windows Defender Firewall</a>
-    - html: <a href="/windows/threat-protection/windows-defender-exploit-guard/evaluate-attack-surface-reduction">Windows Defender Exploit Guard</a>
-    - html: <a href="/windows/access-protection/credential-guard/credential-guard">Windows Defender Credential Guard</a>
-    - html: <a href="/windows/device-security/device-guard/device-guard-deployment-guide">Windows Defender Device Guard</a>  
-    - html: <a href="/windows/threat-protection/windows-defender-application-guard/wd-app-guard-overview">Windows Defender Application Guard</a>
-    - html: <a href="/windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview">Windows Defender SmartScreen</a>  
-    - html: <a href="/windows/threat-protection/windows-defender-security-center/windows-defender-security-center">Windows Defender Security Center</a>
+    - html: <a href="/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security">Windows Defender Firewall</a>
+    - html: <a href="/windows/security/threat-protection/windows-defender-exploit-guard/evaluate-attack-surface-reduction">Windows Defender Exploit Guard</a>
+    - html: <a href="/windows/security/identity-protection/credential-guard/credential-guard">Windows Defender Credential Guard</a>
+    - html: <a href="/windows/security/threat-protection/device-guard/device-guard-deployment-guide">Windows Defender Device Guard</a>  
+    - html: <a href="/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview">Windows Defender Application Guard</a>
+    - html: <a href="/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview">Windows Defender SmartScreen</a>  
+    - html: <a href="/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center">Windows Defender Security Center</a>
       
 - title: Security Resources
 
