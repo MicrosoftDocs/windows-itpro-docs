@@ -114,12 +114,3 @@ During App-V setup, setup log files are created in the **%temp%** folder of the 
 ## Related topics
 
 [Preparing Your Environment for App-V](appv-preparing-your-environment.md)
-
- 
-
- 
-
-
-
-
-
