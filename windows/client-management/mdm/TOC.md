@@ -228,6 +228,7 @@
 #### [RemoteManagement](policy-csp-remotemanagement.md)
 #### [RemoteProcedureCall](policy-csp-remoteprocedurecall.md)
 #### [RemoteShell](policy-csp-remoteshell.md)
+#### [RestrictedGroups](policy-csp-restrictedgroups.md)
 #### [Search](policy-csp-search.md)
 #### [Security](policy-csp-security.md)
 #### [Settings](policy-csp-settings.md)

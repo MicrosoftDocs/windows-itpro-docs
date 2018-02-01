@@ -1455,6 +1455,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li> 
 <li>LocalPoliciesSecurityOptions/UserAccountControl_DetectApplicationInstallationsAndPromptForElevation</li> 
 <li>LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode</li> 
+<li>RestrictedGroups/ConfigureGroupMembership</li>
 <li>Search/AllowCortanaInAAD</li>
 <li>Search/DoNotUseWebResults</li>
 <li>Security/ConfigureWindowsPasswords</li>
