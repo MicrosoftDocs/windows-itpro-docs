@@ -60,7 +60,7 @@ These phases are explained in greater detail [below](#the-windows-10-upgrade-pro
 
 3. **First boot phase**: Boot failures in this phase are relatively rare, and almost exclusively caused by device drivers.  Disconnect all peripheral devices except for the mouse, keyboard, and display. Obtain and install updated device drivers, then retry the upgrade.
 
-4. **Second boot phase**: In this phase, the system is running under the target OS with new drivers. Boot failures are most commonly due to anti-virus software or filter drivers. Disconnect all peripheral devices except for the mouse, keyboard, and display. Obtain and install updated device drivers, then retry the upgrade.
+4. **Second boot phase**: In this phase, the system is running under the target OS with new drivers. Boot failures are most commonly due to anti-virus software or filter drivers. Disconnect all peripheral devices except for the mouse, keyboard, and display. Obtain and install updated device drivers, temporarily uninstall anti-virus software, then retry the upgrade.
  
 If the general troubleshooting techniques described above or the [quick fixes](#quick-fixes) detailed below do not resolve your issue, you can attempt to analyze [log files](#log-files) and interpret [upgrade error codes](#upgrade-error-codes). You can also [Submit Windows 10 upgrade errors using Feedback Hub](submit-errors.md) so that Microsoft can diagnose your issue.
 
@@ -175,7 +175,7 @@ Some result codes are self-explanatory, whereas others are more generic and requ
 
 ### Extend codes
 
->Important: Extend codes reflect the current Windows 10 upgrade process, and might change in future releases of Windows 10. The codes discussed in this section apply to Windows 10 version 1607, also known as the Anniversary Update.
+>**Important**: Extend codes reflect the current Windows 10 upgrade process, and might change in future releases of Windows 10. The codes discussed in this section apply to Windows 10 version 1607, also known as the Anniversary Update.
 
 Extend codes can be matched to the phase and operation when an error occurred. To match an extend code to the phase and operation:
 
