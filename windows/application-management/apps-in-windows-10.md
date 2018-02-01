@@ -32,53 +32,59 @@ Some of the apps show up in multiple tables - that's because their status change
 > ```powershell
 > Get-AppxPackage |Select Name,PackageFamilyName
 > Get-AppxProvisionedPackage -Online | select DisplayName,PackageName
-> ``` 
+> ```
 
 
 ## System apps
-System apps are integral to the operating system. Here are the typical system apps in Windows 10 versions 1607, 1703, and 1709. 
+System apps are integral to the operating system. Here are the typical system apps in Windows 10 versions 1703, 1709, and 1803.
 
-| Name             | Full name                                 |1703 | 1709 |Uninstall through UI?                                  |
-|------------------|-------------------------------------------|------|------|-------------------------------------------------------|
-| Cortana UI       | CortanaListenUIApp                        | x    |       | No                                                     |
-|                  | Desktop Learning                          | x    |       | No                                                     |
-|                  | DesktopView                               | x    |       | No                                                     |
-|                  | EnvironmentsApp                           | x    |       | No                                                     |
-| Mixed Reality +  | HoloCamera                                | x    |       | No                                                     |
-| Mixed Reality +  | HoloItemPlayerApp                         | x    |       | No                                                     |
-| Mixed Reality +  | HoloShell                                 | x    |       | No                                                     |
-|                  | InputApp                                  |      |   x   | No                                                     |
-|                  | Microsoft.AAD.Broker.Plugin               | x    |   x   | No                                                     |
-|                  | Microsoft.AccountsControl                 | x    |   x   | No                                                     |
-| Hello setup UI   | Microsoft.BioEnrollment                   | x    |   x   | No                                                     |
-|                  | Microsoft.CredDialogHost                  | x    |   x   | No                                                     |
-|                  | Microsoft.ECApp                           |      |   x   | No                                                     |
-|                  | Microsoft.LockApp                         | x    |   x   | No                                                     |
-| Microsoft Edge   | Microsoft.Microsoft.Edge                  | x    |   x   | No                                                     |
-|                  | Microsoft.PPIProjection                   | x    |   x   | No                                                     |
-|                  | Microsoft.Windows. Apprep.ChxApp           | x    |  x    | No                                                     |
-|                  | Microsoft.Windows. AssignedAccessLockApp   | x    |  x    | No                                                     |
-|                  | Microsoft.Windows. CloudExperienceHost     | x    |  x    | No                                                     |
-|                  | Microsoft.Windows. ContentDeliveryManager  | x    |  x    | No                                                     |
-| Cortana          | Microsoft.Windows.Cortana                  | x    |  x    | No                                                     |
-|                  | Microsoft.Windows. Holographic.FirstRun    | x    |  x    | No                                                     |
-|                  | Microsoft.Windows. ModalSharePickerHost    | x    |      | No                                                     |
-|                  | Microsoft.Windows. OOBENetworkCaptivePort  | x    |  x    | No                                                     |
-|                  | Microsoft.Windows. OOBENetworkConnectionFlow   | x    |  x    | No                                                 |
-|                  | Microsoft.Windows. ParentalControls        | x    |  x    | No                                                     |
-| People Hub       | Microsoft.Windows. PeopleExperienceHost    |      |  x    | No                                                   |
-|                  | Microsoft.Windows. PinningConfirmationDialog        |   |  x    | No                                              |
-|                  | Microsoft.Windows. SecHealthUI             | x    |  x    | No                                                     |
-|                  | Microsoft.Windows. SecondaryTileExperience | x    |  x    | No                                                     |
-|                  | Microsoft.Windows. SecureAssessmentBrowser | x    |  x    | No                                                     |
-| Start            | Microsoft.Windows. ShellExperienceHost     | x    |  x   | No                                                     |
-| Windows Feedback | Microsoft.WindowsFeedback                  | *    |  *    | No                                                     |
-|                  | Microsoft.XboxGameCallableUI               | x    |  x    | No                                                     |
-| Contact Support* | Windows.ContactSupport                     | x    |  *    | Through the Optional Features app |
-| Settings         | Windows.ImmersiveControlPanel              | x    |  x    | No                                                     |
-| Connect          | Windows.MiracastView                       | x    |      | No                                                     |
-| Print 3D         | Windows.Print3D                            |      |  x    | Yes                                                    |
-| Print UI         | Windows.PrintDialog                        | x    |  x    | No                                                     |
+| Name             | Full name                                 |1703  | 1709 | 1803 |Uninstall through UI?                                  |
+|------------------|-------------------------------------------|------|------|------|-------------------------------------------------------|
+| Cortana UI       | CortanaListenUIApp                        | x    |      |      |No                                                     |
+|                  | Desktop Learning                          | x    |      |      |No                                                     |
+|                  | DesktopView                               | x    |      |      |No                                                     |
+|                  | EnvironmentsApp                           | x    |      |      |No                                                     |
+| Mixed Reality +  | HoloCamera                                | x    |      |      |No                                                     |
+| Mixed Reality +  | HoloItemPlayerApp                         | x    |      |      |No                                                     |
+| Mixed Reality +  | HoloShell                                 | x    |      |      |No                                                     |
+|                  | InputApp                                  |      |  x   | x    |No                                                     |
+|                  | Microsoft.AAD.Broker.Plugin               | x    |  x   | x    |No                                                     |
+|                  | Microsoft.AccountsControl                 | x    |  x   | x    |No                                                     |
+| Hello setup UI   | Microsoft.BioEnrollment                   | x    |  x   | x    |No                                                     |
+|                  | Microsoft.CredDialogHost                  | x    |  x   | x    |No                                                     |
+|                  | Microsoft.ECApp                           |      |  x   | x    |No                                                     |
+|                  | Microsoft.LockApp                         | x    |  x   | x    |No                                                     |
+| Microsoft Edge   | Microsoft.Microsoft.Edge                  | x    |  x   | x    |No                                                     |
+|                  | Microsoft.PPIProjection                   | x    |  x   | x    |No                                                     |
+|                  | Microsoft.Windows. Apprep.ChxApp           | x    |  x  | x    |No                                                     |
+|                  | Microsoft.Windows. AssignedAccessLockApp   | x    |  x  | x    |No                                                     |
+|                  | Microsoft.Windows. CloudExperienceHost     | x    |  x  | x    |No                                                     |
+|                  | Microsoft.Windows. ContentDeliveryManager  | x    |  x  | x    |No                                                     |
+| Cortana          | Microsoft.Windows.Cortana                  | x    |  x  | x    |No                                                     |
+|                  | Microsoft.Windows. Holographic.FirstRun    | x    |  x  | x    |No                                                     |
+|                  | Microsoft.Windows. ModalSharePickerHost    | x    |     |      |No                                                     |
+|                  | Microsoft.Windows. OOBENetworkCaptivePort  | x    |  x  | x    |No                                                     |
+|                  | Microsoft.Windows. OOBENetworkConnectionFlow   | x|  x  | x    |No                                                     |
+|                  | Microsoft.Windows. ParentalControls        | x    |  x  | x    |No                                                     |
+| People Hub       | Microsoft.Windows. PeopleExperienceHost    |      |  x  | x    |No                                                     |
+|                  | Microsoft.Windows. PinningConfirmationDialog  |   |  x  | x    |No                                                     |
+|                  | Microsoft.Windows. SecHealthUI             | x    |  x  | x    |No                                                     |
+|                  | Microsoft.Windows. SecondaryTileExperience | x    |  x  |      |No                                                     |
+|                  | Microsoft.Windows. SecureAssessmentBrowser | x    |  x  | x    |No                                                     |
+| Start            | Microsoft.Windows. ShellExperienceHost     | x    |  x  | x    |No                                                     |
+| Windows Feedback | Microsoft.WindowsFeedback                  | *    |  *  |      |No                                                     |
+|                  | Microsoft.XboxGameCallableUI               | x    |  x  |      |No                                                     |
+| Contact Support* | Windows.ContactSupport                     | x    |  *  |      |Through the Optional Features app                      |
+| Settings         | Windows.ImmersiveControlPanel              | x    |  x  |      |No                                                     |
+| Connect          | Windows.MiracastView                       | x    |     |      |No                                                     |
+| Print 3D         | Windows.Print3D                            |      |  x  |      |Yes                                                    |
+| Print UI         | Windows.PrintDialog                        | x    |  x  |      |No                                                     |
+| Purchase UI      | Windows.PrintDialog                        |      |     | x    |No                                                     |
+|                  | Microsoft.AsyncTextService                 |      |     | x    |No                                                     |
+|                  | Microsoft.MicrosoftEdgeDevToolsClient      |      |     | x    |No                                                     |
+|                  | Microsoft.Win32WebViewHost                 |      |     | x    |No                                                     |
+|                  | Microsoft.Windows.CapturePicker            |      |     | x    |No                                                     |
+|                  | Windows.CBSPreview                         |      |     | x    |No                                                     |
 
 > [!NOTE] 
 > - The Windows Feedback app changed to the Feedback Hub in version 1607. It's listed in the provisioned apps table below.
@@ -86,23 +92,23 @@ System apps are integral to the operating system. Here are the typical system ap
 > - As of Windows 10 version 1607, you can use the Optional Features app to uninstall the Contact Support app.
 
 ## Installed Windows apps
-Here are the typical installed Windows apps in Windows 10 versions 1607, 1703, and 1709.
+Here are the typical installed Windows apps in Windows 10 versions 1703, 1709, and 1803.
 
-| Name               | Full name                               | 1607 | 1703 | 1709 |Uninstall through UI? |
-|--------------------|-----------------------------------------|------|------|------|----------------------|
-| Remote Desktop     | Microsoft.RemoteDesktop                 | x    | x    |   x   | Yes                       |
-| PowerBI            | Microsoft.Microsoft PowerBIforWindows   | x    | x    |       | Yes                        |
-| Code Writer        | ActiproSoftwareLLC.562882FEEB491        | x    | x    |   x   | Yes                       |
-| Eclipse Manager    | 46928bounde.EclipseManager              | x    | x    |   x   | Yes                       |
-| Pandora            | PandoraMediaInc.29680B314EFC2           | x    | x    |   x   | Yes                       |
-| Photoshop Express  | AdobeSystemIncorporated. AdobePhotoshop  | x    | x    |  x    | Yes                       |
-| Duolingo           | D5EA27B7.Duolingo- LearnLanguagesforFree |      | x    |  x    | Yes                       |
-| Network Speed Test | Microsoft.NetworkSpeedTest              | x    | x    |   x   | Yes                       |
-| Paid Wi-FI         |                                         |      | x     |       | Yes                       |
+| Name               | Full name                                | 1703 | 1709 | 1803 |Uninstall through UI? |
+|--------------------|------------------------------------------|------|------|------|----------------------|
+| Remote Desktop     | Microsoft.RemoteDesktop                  | x    | x    |      | Yes                  |
+| PowerBI            | Microsoft.Microsoft PowerBIforWindows    | x    |      |      | Yes                  |
+| Code Writer        | ActiproSoftwareLLC.562882FEEB491         | x    | x    | x    | Yes                  |
+| Eclipse Manager    | 46928bounde.EclipseManager               | x    | x    | x    | Yes                  |
+| Pandora            | PandoraMediaInc.29680B314EFC2            | x    | x    | x    | Yes                  |
+| Photoshop Express  | AdobeSystemIncorporated. AdobePhotoshop  | x    | x    | x    | Yes                  |
+| Duolingo           | D5EA27B7.Duolingo- LearnLanguagesforFree | x    | x    | x    | Yes                  |
+| Network Speed Test | Microsoft.NetworkSpeedTest               | x    | x    |      | Yes                  |
+| Paid Wi-FI         |                                          | x    |      |      | Yes                  |
 
 
 ## Provisioned Windows apps
-Here are the typical provisioned Windows apps in Windows 10 versions 1607, 1703, and 1709.
+Here are the typical provisioned Windows apps in Windows 10 versions 1703, 1709, and 1803.
 
 | Name                            | Full name                              | 1607 | 1703 | 1709 | Uninstall through UI?     |
 |---------------------------------|----------------------------------------|------|------|------|---------------------|
