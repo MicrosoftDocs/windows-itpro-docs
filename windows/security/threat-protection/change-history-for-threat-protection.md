@@ -26,8 +26,8 @@ This topic lists new and updated topics in the [Threat protection](index.md) doc
 ## October 2017
 |New or changed topic |Description |
 |---------------------|------------|
-|[Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](windows-information-protection\create-and-verify-an-efs-dra-certificate.md)|Added auto-recovery section.
-|[Create a Windows Information Protection (WIP) policy with MAM using the Azure portal for Microsoft Intune](windows-information-protection\create-wip-policy-using-mam-intune-azure.md)|New topic for MAM using the Azure portal.|
+|[Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](/windows/security/information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate.md)|Added auto-recovery section.
+|[Create a Windows Information Protection (WIP) policy with MAM using the Azure portal for Microsoft Intune](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure.md)|New topic for MAM using the Azure portal.|
 | [TPM fundamentals](/windows/security/hardware-protection/tpm/tpm-fundamentals.md)<br>[BitLocker Group Policy settings](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings.md) | Explained the change to allow reducing the maximum PIN length from 6 characters to 4. |
 | [Windows security baselines](windows-security-baselines.md) | New. Security baselines added for Windows 10, versions 1703 and 1709. |
 | [Security Compliance Toolkit](security-compliance-toolkit-10.md) | New. Includes a link to tools for managing security baselines. |
@@ -66,9 +66,9 @@ This topic lists new and updated topics in the [Threat protection](index.md) doc
 ## March 2017
 |New or changed topic |Description |
 |---------------------|------------|
-|[How to collect Windows Information Protection (WIP) audit event logs](windows-information-protection\collect-wip-audit-event-logs.md) |New |
-|[Mandatory tasks and settings required to turn on Windows Information Protection (WIP)](windows-information-protection\mandatory-settings-for-wip.md) |Updated based on Windows 10, version 1703. |
-|[Limitations while using Windows Information Protection (WIP)](windows-information-protection\limitations-with-wip.md) |Added additional limitations for Windows 10, version 1703.|
+|[How to collect Windows Information Protection (WIP) audit event logs](/windows/security//information-protection/windows-information-protection/collect-wip-audit-event-logs.md) |New |
+|[Mandatory tasks and settings required to turn on Windows Information Protection (WIP)](/windows/security//information-protection/windows-information-protection/mandatory-settings-for-wip.md) |Updated based on Windows 10, version 1703. |
+|[Limitations while using Windows Information Protection (WIP)](/windows/security//information-protection/windows-information-protection/limitations-with-wip.md) |Added additional limitations for Windows 10, version 1703.|
 |[Windows Defender SmartScreen overview](windows-defender-smartscreen\windows-defender-smartscreen-overview.md)|New |
 |[Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen\windows-defender-smartscreen-available-settings.md)|New |
 |[Use Windows Defender Security Center to set Windows Defender SmartScreen for individual devices](windows-defender-smartscreen\windows-defender-smartscreen-set-individual-device.md)|New |
