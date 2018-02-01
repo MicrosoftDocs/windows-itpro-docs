@@ -182,8 +182,9 @@ Table 1: Cross compatibility for Windows 10, Windows 8.1, Windows 8, and Window
 </tr>
 </tbody>
 </table>
- 
-### Encrypting volumes using the manage-bde command line interface
+
+
+## <a href="" id="bkmk-dep3"></a>Encrypting volumes using the manage-bde command line interface
 
 Manage-bde is a command-line utility that can be used for scripting BitLocker operations. Manage-bde offers additional options not displayed in the BitLocker control panel. For a complete list of the options, see [Manage-bde](http://technet.microsoft.com/library/ff829849.aspx).
 Manage-bde offers a multitude of wider options for configuring BitLocker. This means that using the command syntax may require care and possibly later customization by the user. For example, using just the `manage-bde -on` command on a data volume will fully encrypt the volume without any authenticating protectors. A volume encrypted in this manner still requires user interaction to turn on BitLocker protection, even though the command successfully completed because an authentication method needs to be added to the volume for it to be fully protected.
@@ -240,9 +241,8 @@ A common protector for a data volume is the password protector. In the example b
 manage-bde -protectors -add -pw C:
 manage-bde -on C:
 ```
-## <a href="" id="bkmk-dep3"></a>Using manage-bde to encrypt volumes with BitLocker
 
-### Encrypting volumes using the BitLocker Windows PowerShell cmdlets
+## <a href="" id="bkmk-dep4"></a>Encrypting volumes using the BitLocker Windows PowerShell cmdlets
 
 Windows PowerShell cmdlets provide an alternative way to work with BitLocker. Using Windows PowerShell's scripting capabilities, administrators can integrate BitLocker options into existing scripts with ease. The list below displays the available BitLocker cmdlets.
 <table>
@@ -442,9 +442,7 @@ Add-BitLockerKeyProtector C: -ADAccountOrGroupProtector -ADAccountOrGroup "<SID>
 ```
 > **Note:**  Active Directory-based protectors are normally used to unlock Failover Cluster enabled volumes.
  
-## <a href="" id="bkmk-dep4"></a>Using PowerShell to encrypt volumes with BitLocker
-
-### Checking BitLocker status
+## <a href="" id="bkmk-dep5"></a> Checking BitLocker status
 
 To check the BitLocker status of a particular volume, administrators can look at the status of the drive in the BitLocker control panel applet, Windows Explorer, manage-bde command line tool, or Windows PowerShell cmdlets. Each option offers different levels of detail and ease of use. We will look at each of the available methods in the following section.
 
