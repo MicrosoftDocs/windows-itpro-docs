@@ -1,2 +1,0 @@
-# [Device security](index.md)
-
