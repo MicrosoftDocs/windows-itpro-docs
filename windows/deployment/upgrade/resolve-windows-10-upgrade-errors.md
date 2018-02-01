@@ -59,6 +59,7 @@ These phases are explained in greater detail [below](#the-windows-10-upgrade-pro
     If the computer successfully boots into Windows PE, but you are not able to browse the system drive on the computer, it is possible that non-Microsoft disk encryption software is blocking your ability to perform a Windows 10 upgrade. Update or temporarily remove the disk encryption.
 
 3. **First boot phase**: Boot failures in this phase are relatively rare, and almost exclusively caused by device drivers.  Disconnect all peripheral devices except for the mouse, keyboard, and display. Obtain and install updated device drivers, then retry the upgrade.
+
 4. **Second boot phase**: In this phase, the system is running under the target OS with new drivers. Boot failures are most commonly due to anti-virus software or filter drivers. Disconnect all peripheral devices except for the mouse, keyboard, and display. Obtain and install updated device drivers, then retry the upgrade.
  
 If the general troubleshooting techniques described above or the [quick fixes](#quick-fixes) detailed below do not resolve your issue, you can attempt to analyze [log files](#log-files) and interpret [upgrade error codes](#upgrade-error-codes). You can also [Submit Windows 10 upgrade errors using Feedback Hub](submit-errors.md) so that Microsoft can diagnose your issue.
@@ -67,9 +68,7 @@ If the general troubleshooting techniques described above or the [quick fixes](#
 
 The **Windows Setup** application is used to upgrade a computer to Windows 10, or to perform a clean installation. Windows Setup starts and restarts the computer, gathers information, copies files, and creates or adjusts configuration settings. 
 
-When performing an operating system upgrade, Windows Setup uses the following phases. A reboot occurs between each of the phases.
-
-The user interface will be the same during the Safe OS phase, the first boot phase, and the beginning of the second boot phase. Percent progress is displayed and will advance as you move through each phase, reaching 100% at the end of the second boot phase.
+When performing an operating system upgrade, Windows Setup uses phases described below. A reboot occurs between each of the phases. After the first reboot, the user interface will remain the same until the upgrade is completed. Percent progress is displayed and will advance as you move through each phase, reaching 100% at the end of the second boot phase.
 
 1. **Downlevel phase**: The downlevel phase is run within the previous operating system. Windows files are copied and installation components are gathered.
 
@@ -270,7 +269,7 @@ To use Event Viewer:
 Note: For legacy operating systems, the Event Name was WinSetupDiag01. 
 
 Ten parameters are listed in the event:
-
+<br>
 <table border="0">
 <tr><td>P1: The Setup Scenario (1=Media,5=WindowsUpdate,7=Media Creation Tool)</td></tr>
 <tr><td>P2: Setup Mode (x=default,1=Downlevel,5=Rollback)</td></tr>
@@ -284,8 +283,9 @@ Ten parameters are listed in the event:
 <tr><td>P10: New OS branch (Ex: rs3_release}</td></tr>
 </table>
 
-The event will also contain links to log files that can be used to perform a detailed diagnosis of the error.
+The event will also contain links to log files that can be used to perform a detailed diagnosis of the error.  An example of this event from a successful upgrade is shown below.
 
+![Windows Error Reporting](../images/event.png)
 
 ## Log files
 
