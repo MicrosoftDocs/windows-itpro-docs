@@ -47,10 +47,8 @@ You must start this app from the **Settings** panel.
 
 2. Under **Diagnostic data**, select the **Diagnostic Data Viewer** button.
 
-    ![Location to turn on the Diagnostic Data Viewer](images/ddv-settings-launch.png)
-
-f    -OR-
-
+    ![Location to turn on the Diagnostic Data Viewer](images/ddv-settings-launch.png)<br><br>-OR-<br><br>
+    
     Go to **Start** and search for _Diagnostic Data Viewer_.
 
 3. Close the Diagnostic Data Viewer app, use your device as you normally would for a few days, and then open Diagnostic Data Viewer again to review the updated list of diagnostic data.
@@ -98,11 +96,8 @@ When you're done reviewing your diagnostic data, you should turn of data viewing
 You can review additional Windows Error Reporting diagnostic data in the **View problem reports** tool. This tool provides you with a summary of various crash reports that are sent to Microsoft as part of Windows Error Reporting. We use this data to find and fix specific issues that are hard to replicate and to improve the Windows operating system.
 
 **To view your Windows Error Reporting diagnostic data**
-1. Go to **Start**, select **Control Panel** > **All Control Panel Items** > **Security and Maintenance** > **Problem Reports**.
-
-- OR - 
-
-    Go to **Start** and search for _Problem Reports_.
+1. Go to **Start**, select **Control Panel** > **All Control Panel Items** > **Security and Maintenance** > **Problem Reports**.<br><br>-OR-<br><br>
+	Go to **Start** and search for _Problem Reports_.
 
     The **Review problem reports** tool opens, showing you your Windows Error Reporting reports, along with a status about whether it was sent to Microsoft.
 
