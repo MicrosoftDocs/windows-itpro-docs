@@ -20,6 +20,7 @@ Enterprises often need to apply custom configurations to devices for their users
 | Topic | Description |
 | --- | --- |
 | [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md) | Use this article to make informed decisions about how you can configure Windows diagnostic data in your organization. |
+|[Diagnostic Data Viewer overview](diagnostic-data-viewer-overview.md) |Learn about the categories of diagnostic data your device is sending to Microsoft, along with how it's being used.|
 | [Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md) | Learn about diagnostic data that is collected at the basic level in Windows 10, version 1709. |
 |[Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](enhanced-diagnostic-data-windows-analytics-events-and-fields.md)|Learn about diagnostic data that is collected by Windows Analytics.|
 | [Windows 10, version 1703 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md) | Learn about diagnostic data that is collected at the basic level in Windows 10, version 1703. |
