@@ -72,13 +72,14 @@ The Windows Defender ATP sensor can utilize up to 5MB daily of bandwidth  to com
 
 For more information on additional proxy configuration settings see, [Configure Windows Defender ATP endpoint proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) .
 
-Before you configure endpoints, the telemetry and diagnostics service must be enabled. The service is enabled by default in Windows 10.
+Before you configure endpoints, the diagnostic data service must be enabled. The service is enabled by default in Windows 10.
 
-### Telemetry and diagnostics settings
-You must ensure that the telemetry and diagnostics service is enabled on all the endpoints in your organization.
+<span id="telemetry-and-diagnostics-settings" />
+### Diagnostic data settings
+You must ensure that the diagnostic data service is enabled on all the endpoints in your organization.
 By default, this service is enabled, but it's good practice to check to ensure that you'll get sensor data from them.
 
-**Use the command line to check the Windows 10 telemetry and diagnostics service startup type**:
+**Use the command line to check the Windows 10 diagnostic data service startup type**:
 
 1.  Open an elevated command-line prompt on the endpoint:
 
@@ -100,7 +101,7 @@ If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the 
 
 
 
-**Use the command line to set the Windows 10 telemetry and diagnostics service to automatically start:**
+**Use the command line to set the Windows 10 diagnostic data service to automatically start:**
 
 1.  Open an elevated command-line prompt on the endpoint:
 

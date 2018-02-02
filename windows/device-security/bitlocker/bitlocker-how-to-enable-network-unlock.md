@@ -260,7 +260,7 @@ After adding the Network Unlock template to the Certification Authority, this ce
 
 By default, all clients with the correct Network Unlock Certificate and valid Network Unlock protectors that have wired access to a Network Unlock-enabled WDS server via DHCP are unlocked by the server. A subnet policy configuration file on the WDS server can be created to limit which subnet(s) Network Unlock clients can use to unlock.
 
-The configuration file, called bde-network-unlock.ini, must be located in the same directory as the Network Unlock provider DLL and it applies to both IPv6 and IPv4 DHCP implementations. If the subnet configuration policy becomes corrupted, the provider will fail and stop responding to requests.
+The configuration file, called bde-network-unlock.ini, must be located in the same directory as the Network Unlock provider DLL (%windir%\System32\Nkpprov.dll) and it applies to both IPv6 and IPv4 DHCP implementations. If the subnet configuration policy becomes corrupted, the provider will fail and stop responding to requests.
 
 The subnet policy configuration file must use a “\[SUBNETS\]” section to identify the specific subnets. The named subnets may then be used to specify restrictions in certificate subsections. Subnets are defined as simple name-value pairs, in the common INI format, where each subnet has its own line, with the name on the left of the equals sign, and the subnet identified on the right of the equal sign as a Classless Inter-Domain Routing (CIDR) address or range. The key word “ENABLED” is disallowed for subnet names.
 

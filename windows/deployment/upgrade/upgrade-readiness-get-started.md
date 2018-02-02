@@ -31,11 +31,11 @@ When you are ready to begin using Upgrade Readiness, perform the following steps
 
 ## Data collection and privacy 
 
-To enable system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what telemetry data Microsoft collects and how that data is used and protected by Microsoft, see the following topics:
+To enable system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what diagnostic data Microsoft collects and how that data is used and protected by Microsoft, see the following topics:
 
-- [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization)
+- [Configure Windows diagnostic data in your organization](/windows/configuration/configure-windows-diagnostic-data-in-your-organization)
 - [Manage connections from Windows operating system components to Microsoft services](/windows/configuration/manage-connections-from-windows-operating-system-components-to-microsoft-services)
-- [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)
+- [Windows 7, Windows 8, and Windows 8.1 appraiser diagnostic data events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)
 
 ## Add Upgrade Readiness to Operations Management Suite
 
@@ -90,7 +90,7 @@ Note: The compatibility update KB runs under the computer’s system account.
 
 ### Connection settings
 
-The settings that are used to enable client computers to connect to Windows Telemetry depend on the type of connection scenario you use. These scenarios are discussed in [this blog post](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) and are summarized below.
+The settings that are used to enable client computers to connect to Windows diagnostic data depend on the type of connection scenario you use. These scenarios are discussed in [this blog post](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) and are summarized below.
 
 | **Connection scenario** | **ClientProxy setting** <BR>in **runconfig.bat**  | **Local computer configuration** |
 |---------------------------------------------------------|-----------|-----------|

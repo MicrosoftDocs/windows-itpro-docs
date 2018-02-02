@@ -1405,6 +1405,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>AccountPoliciesAccountLockoutPolicy/AccountLockoutDuration</li>
 <li>AccountPoliciesAccountLockoutPolicy/AccountLockoutThreshold</li>
+<li>Browser/AllowConfigurationUpdateForBooksLibrary</li>
 <li>Browser/AlwaysEnableBooksLibrary</li>
 <li>Browser/EnableExtendedBooksTelemetry</li>
 <li>Browser/UseSharedFolderForBooks</li>
@@ -1454,9 +1455,11 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li> 
 <li>LocalPoliciesSecurityOptions/UserAccountControl_DetectApplicationInstallationsAndPromptForElevation</li> 
 <li>LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode</li> 
+<li>RestrictedGroups/ConfigureGroupMembership</li>
 <li>Search/AllowCortanaInAAD</li>
 <li>Search/DoNotUseWebResults</li>
 <li>Security/ConfigureWindowsPasswords</li>
+<li>System/FeedbackHubAlwaysSaveDiagnosticsLocally</li>
 <li>SystemServices/ConfigureHomeGroupListenerServiceStartupMode</li>
 <li>SystemServices/ConfigureHomeGroupProviderServiceStartupMode</li>
 <li>SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode</li>
@@ -1507,6 +1510,26 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Settings/AllowOnlineTips</li>
 <li>System/DisableEnterpriseAuthProxy </li>
 </ul>
+<p>Security/RequireDeviceEncrption - updated to show it is supported in desktop.</p>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top"><p>Updated the description for AllowWarningForOtherDiskEncryption to describe changes added in Windows 10, next major update.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[RemoteWipe CSP](remotewipe-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following nodes in Windows 10, next major update:</p>
+<ul>
+<li>AutomaticRedeployment</li>
+<li>doAutomaticRedeployment</li>
+<li>LastError</li>
+<li>Status</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Defender CSP](defender-csp.md)</td>
+<td style="vertical-align:top"><p>Added new node (OfflineScan) in Windows 10, next major update.</p>
+</td></tr>
 </tbody>
 </table>
 

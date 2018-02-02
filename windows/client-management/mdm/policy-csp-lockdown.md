@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/14/2017
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - LockDown
@@ -15,7 +15,7 @@ ms.date: 12/14/2017
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## LockDown policies  
 
 <dl>
@@ -24,11 +24,13 @@ ms.date: 12/14/2017
   </dd>
 </dl>
 
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="lockdown-allowedgeswipe"></a>**LockDown/AllowEdgeSwipe**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -50,8 +52,8 @@ ms.date: 12/14/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -59,13 +61,13 @@ ms.date: 12/14/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the user to invoke any system user interface by swiping in from any screen edge using touch.
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1607. Allows the user to invoke any system user interface by swiping in from any screen edge using touch.
 
-<p style="margin-left: 20px">The easiest way to verify the policy is to restart the explorer process or to reboot after the policy is applied. And then try to swipe from the right edge of the screen. The desired result is for Action Center to not be invoked by the swipe. You can also enter tablet mode and attempt to swipe from the top of the screen to rearrange. That will also be disabled.
+The easiest way to verify the policy is to restart the explorer process or to reboot after the policy is applied. And then try to swipe from the right edge of the screen. The desired result is for Action Center to not be invoked by the swipe. You can also enter tablet mode and attempt to swipe from the top of the screen to rearrange. That will also be disabled.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -73,7 +75,7 @@ The following list shows the supported values:
 -   1 (default, not configured) - allow edge swipe.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -82,5 +84,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

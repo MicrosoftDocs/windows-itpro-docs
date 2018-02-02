@@ -106,11 +106,11 @@ Health Status for onboarded machines: Sense Is Running | ./Device/Vendor/MSFT/Wi
 Health Status for onboarded machines: Onboarding State | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OnBoardingState | Integer | 1 | Onboarded to Windows Defender ATP
 Health Status for onboarded machines: Organization ID | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OrgId | String | Use OrgID from onboarding file | Onboarded to Organization ID
 Configuration for onboarded machines  | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Configuration/SampleSharing | Integer | 0 or 1 <br> Default value: 1 | Windows Defender ATP Sample sharing is enabled
-Configuration for onboarded machines: telemetry reporting frequency | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Configuration/TelemetryReportingFrequency | Integer | 1 or 2 <br> 1: Normal (default)<br><br> 2: Expedite | Windows Defender ATP telemetry reporting
+Configuration for onboarded machines: diagnostic data reporting frequency | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Configuration/TelemetryReportingFrequency | Integer | 1 or 2 <br> 1: Normal (default)<br><br> 2: Expedite | Windows Defender ATP diagnostic data reporting
 
 > [!NOTE]
 > - The **Health Status for onboarded machines** policy uses read-only properties and can't be remediated.
-> - Configuration of telemetry reporting frequency is only available for machines on Windows 10, version 1703.
+> - Configuration of diagnostic data reporting frequency is only available for machines on Windows 10, version 1703.
 > - Using the Expedite mode might have an impact on the machine's battery usage and actual bandwidth used for sensor data. You should consider this when these measures are critical.
 
 
@@ -118,66 +118,6 @@ Configuration for onboarded machines: telemetry reporting frequency | ./Device/V
 > After onboarding the endpoint, you can choose to run a detection test to verify that an endpoint is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md).
 
 
-### Using the Azure Intune Portal to deploy Windows Defender Advanced Threat Protection policies on Windows 10 1607 and higher
-
-1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
-
-    a.  Select **Endpoint management** > **Clients** on the **Navigation pane**.
-
-    b.  Select **Mobile Device Management/Microsoft Intune** > **Download package** and save the .zip file.
-
-      ![Endpoint onboarding](images/atp-mdm-onboarding-package.png)
-
-2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATP.onboarding*.
-
-3. Login to the [Microsoft Azure portal](https://portal.azure.com).
-
-4. From the Intune blade, choose **Device configuration**.
-
-  ![Image of device configuration menu in Microsoft Azure](images/atp-azure-intune-device-config.png)
-
-5. Under **Manage**, choose **Profiles** and click **Create Profile**.
-
-  ![Image of policy creation in Azure](images/atp-azure-intune-create-profile.png)
-
-6. Type a name, description and choose **Windows 10 and later** as the Platform and **Custom** as the Profile type.
-
-  ![Image of naming a policy](images/atp-intune-custom.png)
-
-7. Click **Settings** > **Configure**.
-
-  ![Image of settings](images/atp-intune-configure.png)
-
-8. Under Custom OMA-URI Settings, click **Add**.
-
-  ![Image of configuration settings](images/atp-custom-oma-uri.png)
-
-9. Enter the following values, then click **OK**.
-
-  ![Image of profile creation](images/atp-oma-uri-values.png)
-
-  - **Name**: Type a name for the setting.
-  - **Description**: Type a description for the setting.
-  - **OMA-URI**: _./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Onboarding_
-  - **Value**: Copy and paste the contents of the WindowsDefenderATP.onboarding file you downloaded.
-
-10. Save the settings by clicking **OK**.
-  
-11. Click **Create**.
-
-  ![Image of the policy being created](images/atp-intune-create-policy.png)
-
-12. To deploy the Profile, click **Assignments**. 
-
-  ![Image of groups](images/atp-intune-assignments.png)
-
-13. Search for and select the Group you want to apply the Configuration Profile to, then click **Select**.
-
-  ![Image of groups](images/atp-intune-group.png)
-
-14. Click **Save** to finish deploying the Configuration Profile.
-
-  ![Image of deployment](images/atp-intune-save-deployment.png)
 
 ### Offboard and monitor endpoints
 

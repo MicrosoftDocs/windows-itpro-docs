@@ -8,7 +8,7 @@ ms.pagetype: mobile
 ms.author: elizapo
 author: lizap
 ms.localizationpriority: low
-ms.date: 01/23/2018
+ms.date: 01/24/2018
 ---
 # Understand the different apps included in Windows 10
 
@@ -31,7 +31,7 @@ Some of the apps show up in multiple tables - that's because their status change
 > Want to see a list of the apps installed on your specific image? You can run the following PowerShell cmdlet:
 > ```powershell
 > Get-AppxPackage |Select Name,PackageFamilyName
-> Get-AppsProvisionedPackage -Online | select DisplayName,PackageName
+> Get-AppxProvisionedPackage -Online | select DisplayName,PackageName
 > ``` 
 
 

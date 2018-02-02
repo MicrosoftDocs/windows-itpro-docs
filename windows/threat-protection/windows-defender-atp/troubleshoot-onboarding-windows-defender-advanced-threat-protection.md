@@ -128,7 +128,7 @@ ID | Severity | Event description | Troubleshooting steps
 ## Troubleshoot onboarding issues on the endpoint
 If the deployment tools used does not indicate an error in the onboarding process, but endpoints are still not appearing in the machines list in an hour, go through the following verification topics to check if an error occurred with the Windows Defender ATP agent:
 - [View agent onboarding errors in the endpoint event log](#view-agent-onboarding-errors-in-the-endpoint-event-log)
-- [Ensure the telemetry and diagnostics service is enabled](#ensure-the-telemetry-and-diagnostics-service-is-enabled)
+- [Ensure the diagnostic data service is enabled](#ensure-the-diagnostics-service-is-enabled)
 - [Ensure the service is set to start](#ensure-the-service-is-set-to-start)
 - [Ensure the endpoint has an Internet connection](#ensure-the-endpoint-has-an-internet-connection)
 - [Ensure that Windows Defender Antivirus is not disabled by a policy](#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)
@@ -176,14 +176,15 @@ Event ID | Message | Resolution steps
 <br>
 There are additional components on the endpoint that the Windows Defender ATP agent depends on to function properly. If there are no onboarding related errors in the Windows Defender ATP agent event log, proceed with the following steps to ensure that the additional components are configured correctly.
 
-### Ensure the telemetry and diagnostics service is enabled
-If the endpoints aren't reporting correctly, you might need to check that the Windows 10 telemetry and diagnostics service is set to automatically start and is running on the endpoint. The service might have been disabled by other programs or user configuration changes.
+<span id="ensure-the-diagnostics-service-is-enabled" />
+### Ensure the diagnostic data service is enabled
+If the endpoints aren't reporting correctly, you might need to check that the Windows 10 diagnostic data service is set to automatically start and is running on the endpoint. The service might have been disabled by other programs or user configuration changes.
 
 First, you should check that the service is set to start automatically when Windows starts, then you should check that the service is currently running (and start it if it isn't).
 
 ### Ensure the service is set to start
 
-**Use the command line to check the Windows 10 telemetry and diagnostics service startup type**:
+**Use the command line to check the Windows 10 diagnostic data service startup type**:
 
 1.  Open an elevated command-line prompt on the endpoint:
 
@@ -204,7 +205,7 @@ First, you should check that the service is set to start automatically when Wind
     If the `START_TYPE` is not set to `AUTO_START`, then you'll need to set the service to automatically start.
 
 
-**Use the command line to set the Windows 10 telemetry and diagnostics service to automatically start:**
+**Use the command line to set the Windows 10 diagnostic data service to automatically start:**
 
 1.  Open an elevated command-line prompt on the endpoint:
 
