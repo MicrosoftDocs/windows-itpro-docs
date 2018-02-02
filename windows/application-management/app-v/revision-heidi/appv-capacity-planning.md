@@ -586,10 +586,10 @@ Computers running the App-V client connect to the App-V publishing server to sen
 </ul></td>
 <td align="left"><p></p>
 <ul>
-<li><p>Dual Core</p></li>
-<li><p>Dual Core</p></li>
-<li><p>Quad Core</p></li>
-<li><p>Quad Core</p></li>
+<li><p>Dual core</p></li>
+<li><p>Dual core</p></li>
+<li><p>Quad core</p></li>
+<li><p>Quad core</p></li>
 </ul></td>
 <td align="left"><p></p>
 <ul>
@@ -628,8 +628,8 @@ Computers running the App-V client connect to the App-V publishing server to sen
 </ul></td>
 <td align="left"><p></p>
 <ul>
-<li><p>Quad Core</p></li>
-<li><p>Quad Core</p></li>
+<li><p>Quad core</p></li>
+<li><p>Quad core</p></li>
 </ul></td>
 <td align="left"><p></p>
 <ul>
@@ -664,13 +664,13 @@ Computers running the App-V client connect to the App-V publishing server to sen
 </ul></td>
 <td align="left"><p></p>
 <ul>
-<li><p>Quad Core</p></li>
-<li><p>Quad Core</p></li>
-<li><p>Quad Core</p></li>
+<li><p>Quad core</p></li>
+<li><p>Quad core</p></li>
+<li><p>Quad core</p></li>
 </ul></td>
 <td align="left"><p></p>
 <ul>
-<li><p>1.5 Mbps Intra-Continental Network</p></li>
+<li><p>1.5 Mbps intra-continental network</p></li>
 </ul></td>
 <td align="left"><p></p>
 <ul>
@@ -683,23 +683,16 @@ Computers running the App-V client connect to the App-V publishing server to sen
 </tbody>
 </table>
 
- 
-
-## <a href="" id="---------app-v-5-1-streaming-capacity-planning-recommendations"></a> App-V Streaming Capacity Planning Recommendations
-
+## App-V streaming capacity planning recommendations
 
 Computers running the App-V client stream the virtual application package from the streaming server. Round trip response time is measured on the computer running the App-V client, and is the time taken to stream the entire package.
 
-**Important**  
-The following list identifies the main factors to consider when setting up the App-V streaming server:
+>[!IMPORTANT]
+>The following list identifies the main factors to consider when setting up the App-V streaming server:
 
-* The number of clients streaming application packages simultaneously from a single streaming server.
-
-* The size of the package being streamed.
-
-* The available network bandwidth in your environment between the client and the streaming server.
-
- 
+  * The number of clients streaming application packages simultaneously from a single streaming server.
+  * The size of the package being streamed.
+  * The available network bandwidth in your environment between the client and the streaming server.
 
 <table>
 <colgroup>
@@ -725,7 +718,7 @@ The following list identifies the main factors to consider when setting up the A
 <p></p></td>
 <td align="left"><p></p>
 <ul>
-<li><p>The package size has a significant impact on the streaming/download time only for larger packages with a size ~ 1GB. For package sizes ranging from 3 MB to 100 MB, the streaming time ranges from 20 seconds to 100 seconds, with 100 simultaneous clients.</p></li>
+<li><p>The package size has a significant impact on the streaming/download time only for larger packages with a size of about 1 GB. For package sizes ranging from 3 MB to 100 MB, the streaming time ranges from 20 seconds to 100 seconds, with 100 simultaneous clients.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -733,13 +726,11 @@ The following list identifies the main factors to consider when setting up the A
 <p></p></td>
 <td align="left"><p></p>
 <ul>
-<li><p>Across a slow network (1.5 Mbps bandwidth), there is a 70-80% increase in response time compared to LAN (up to 100 users).</p></li>
+<li><p>Across a slow network (1.5 Mbps bandwidth), there is a 70–80% increase in response time compared to LAN (up to 100 users).</p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
-
- 
 
 The following table displays sample values for each of the factors in the previous list:
 
@@ -758,7 +749,7 @@ The following table displays sample values for each of the factors in the previo
 <th align="left">Variation</th>
 <th align="left">Number of App-V clients</th>
 <th align="left">Size of each package</th>
-<th align="left">Network connection type streaming server / App-V client</th>
+<th align="left">Network connection type streaming server/App-V client</th>
 <th align="left">Round trip time on the App-V client (in seconds)</th>
 </tr>
 </thead>
@@ -770,11 +761,11 @@ The following table displays sample values for each of the factors in the previo
 <ul>
 <li><p>100</p></li>
 <li><p>200</p></li>
-<li><p>1000</p></li>
+<li><p>1,000</p></li>
 <li><p></p></li>
 <li><p>100</p></li>
 <li><p>200</p></li>
-<li><p>1000</p></li>
+<li><p>1,000</p></li>
 </ul></td>
 <td align="left"><p></p>
 <ul>
@@ -843,7 +834,7 @@ The following table displays sample values for each of the factors in the previo
 </tr>
 <tr class="odd">
 <td align="left"><p>Network connection between client and App-V streaming server.</p></td>
-<td align="left"><p>1.5 Mbps Slow link network.</p></td>
+<td align="left"><p>1.5 Mbps slow link network.</p></td>
 <td align="left"><p></p>
 <ul>
 <li><p>100</p></li>
@@ -858,7 +849,7 @@ The following table displays sample values for each of the factors in the previo
 </ul></td>
 <td align="left"><p></p>
 <ul>
-<li><p>1.5 Mbps Intra-Continental Network</p></li>
+<li><p>1.5 Mbps intra-continental network</p></li>
 </ul></td>
 <td align="left"><p></p>
 <p>102</p>
@@ -868,47 +859,27 @@ The following table displays sample values for each of the factors in the previo
 </tbody>
 </table>
 
- 
-
 Each App-V streaming server should be able to handle a minimum of 200 clients concurrently streaming virtualized applications.
 
-**Note**  
-The actual time to it will take to stream is determined primarily by the number of clients streaming simultaneously, number of packages, package size, the server’s network activity, and network conditions.
+>[!NOTE]
+>The actual time to it will take to stream is determined primarily by the number of clients streaming simultaneously, number of packages, package size, the server’s network activity, and network conditions.
 
- 
-
-For example, an average user can stream a 100 MB package in less than 2 minutes, when 100 simultaneous clients are streaming from the server. However, a package of size 1 GB could take up to 30 minutes. In most real world environments streaming demand is not uniformly distributed, you will need to understand the approximate peak streaming requirements present in your environment in order to properly size the number of required streaming servers.
+For example, an average user can stream a 100 MB package in less than 2 minutes, when 100 simultaneous clients are streaming from the server. However, a package of size 1 GB could take up to 30 minutes. In most real-world environments, streaming demand is not uniformly distributed, you will need to understand the approximate peak streaming requirements present in your environment to properly size the number of required streaming servers.
 
 The number of clients a streaming server can support can be significantly increased and the peak streaming requirements reduced if you pre-cache your applications. You can also increase the number of clients a streaming server can support by using on-demand streaming delivery and stream optimized packages.
 
-## Combining App-V Server Roles
+## Combining App-V server roles
 
+Discounting scaling and fault-tolerance requirements, the minimum number of servers that a location with Active Directory connectivity needs is one. This server will host the management server, management server service, and Microsoft SQL Server roles. This means that you can arrange server roles in any combination you like, as they don't conflict with one another.
 
-Discounting scaling and fault-tolerance requirements, the minimum number of servers needed for a location with connectivity to Active Directory is one. This server will host the management server, management server service, and Microsoft SQL Server roles. Server roles, therefore, can be arranged in any desired combination since they do not conflict with one another.
+Ignoring scaling requirements, the minimum number of servers that a fault-tolerant implementation needs is four. The management server and Microsoft SQL Server roles support placement in fault-tolerant configurations. The management server service can be combined with any of the roles, but remains a single point of failure.
 
-Ignoring scaling requirements, the minimum number of servers necessary to provide a fault-tolerant implementation is four. The management server, and Microsoft SQL Server roles support being placed in fault-tolerant configurations. The management server service can be combined with any of the roles, but remains a single point of failure.
-
-Although there are a number of fault-tolerance strategies and technologies available, not all are applicable to a given service. Additionally, if App-V roles are combined, certain fault-tolerance options may no longer apply due to incompatibilities.
-
-## Have a suggestion for App-V?
-
-
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Although there are many fault-tolerance strategies and technologies you can use, not all are applicable to a given service. Additionally, if App-V roles are combined, certain fault-tolerance options may no longer apply due to incompatibilities.
 
 ## Related topics
 
+[App-V supported configurations](appv-supported-configurations.md)
 
-[App-V Supported Configurations](appv-supported-configurations.md)
+[Planning for high availability with App-V](appv-planning-for-high-availability-with-appv.md)
 
-[Planning for High Availability with App-V](appv-planning-for-high-availability-with-appv.md)
-
-[Planning to Deploy App-V](appv-planning-to-deploy-appv.md)
-
- 
-
- 
-
-
-
-
-
+[Planning to deploy App-V](appv-planning-to-deploy-appv.md)
