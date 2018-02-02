@@ -8453,7 +8453,7 @@
 {
 "source_path": "bcs/index.md",
 "redirect_url": "/microsoft-365/business/index",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "bcs/support/microsoft-365-business-faqs.md",
