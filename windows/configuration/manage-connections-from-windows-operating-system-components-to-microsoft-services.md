@@ -1430,11 +1430,14 @@ To change the level of diagnostic and usage data sent when you **Send your devic
 
    -or-
 
--   Apply the Group Policy: **Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection And Preview Builds\\Allow Telemetry**
+-   Apply the Group Policy: **Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection And Preview Builds\\Allow Telemetry** and select the appropriate option for your deployment. 
 
    -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection\\AllowTelemetry**, with a value of 0 (zero).
+-   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection\\AllowTelemetry**, with a value of 0-3, as appropriate for your deployment (see below for the values for each level). 
+
+> [!NOTE] 
+> If **Security** or **Enhanced** options are configured by using Group Policy or the Registry, the value will not be reflected in the UI.
 
    -or-
 
