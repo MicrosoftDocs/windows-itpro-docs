@@ -435,6 +435,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-browser.md#browser-allowbrowser" id="browser-allowbrowser">Browser/AllowBrowser</a>
   </dd>
   <dd>
+    <a href="./policy-csp-browser.md#browser-allowconfigurationupdateforbookslibrary" id="browser-allowconfigurationupdateforbookslibrary">Browser/AllowConfigurationUpdateForBooksLibrary</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-browser.md#browser-allowcookies" id="browser-allowcookies">Browser/AllowCookies</a>
   </dd>
   <dd>
@@ -473,9 +476,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-browser.md#browser-allowsmartscreen" id="browser-allowsmartscreen">Browser/AllowSmartScreen</a>
   </dd>
-  <!--<dd>
+  <dd>
     <a href="./policy-csp-browser.md#browser-alwaysenablebookslibrary" id="browser-alwaysenablebookslibrary">Browser/AlwaysEnableBooksLibrary</a>
-  </dd>-->
+  </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-clearbrowsingdataonexit" id="browser-clearbrowsingdataonexit">Browser/ClearBrowsingDataOnExit</a>
   </dd>
@@ -2483,6 +2486,13 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-remoteshell.md#remoteshell-specifyshelltimeout" id="remoteshell-specifyshelltimeout">RemoteShell/SpecifyShellTimeout</a>
   </dd>
 </dl>
+
+### RestrictedGroups policies
+
+  <dd>
+    <a href="policy-csp-restrictedgroups.md#restrictedgroups-configuregroupmembership">RestrictedGroups/ConfigureGroupMembership</a>
+  </dd>
+
 
 ### Search policies
 

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/04/2017
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - ApplicationDefaults
@@ -15,7 +15,7 @@ ms.date: 12/04/2017
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## ApplicationDefaults policies  
 
 <dl>
@@ -24,11 +24,13 @@ ms.date: 12/04/2017
   </dd>
 </dl>
 
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="applicationdefaults-defaultassociationsconfiguration"></a>**ApplicationDefaults/DefaultAssociationsConfiguration**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -50,8 +52,8 @@ ms.date: 12/04/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -59,12 +61,14 @@ ms.date: 12/04/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1703. This policy allows an administrator to set default file type and protocol associations. When set, default associations will be applied on sign-in to the PC. The association file can be created using the DISM tool (dism /online /export-defaultappassociations:appassoc.xml), and then needs to be  base64 encoded before being added to SyncML.
  
 If policy is enabled and the client machine is Azure Active Directory joined, the associations assigned in SyncML will be processed and default associations will be applied.
 
+<!--/Description-->
+<!--Example-->
 To create create the SyncML, follow these steps:
 <ol>
 <li>Install a few apps and change your defaults.</li>
@@ -117,8 +121,8 @@ Here is the SyncMl example:
 </SyncML>
 ```
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/Example-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -127,6 +131,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
-
+<!--/Policies-->
 

@@ -2,7 +2,7 @@
 title: Windows 10 Mobile deployment and management guide (Windows 10)
 description: This guide helps IT professionals plan for and deploy Windows 10 Mobile devices.
 ms.assetid: 6CAA1004-CB65-4FEC-9B84-61AAD2125E5E
-keywords: Mobile, telemetry, BYOD, MDM
+keywords: Mobile, diagnostic data, BYOD, MDM
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,7 +14,8 @@ ms.date: 09/21/2017
 
 # Windows 10 Mobile deployment and management guide
 
-*Applies to:  Windows 10 Mobile, version 1511 and Windows 10 Mobile, version 1607*
+**Applies to:**
+- Windows 10 Mobile, version 1511 and Windows 10 Mobile, version 1607
 
 This guide helps IT professionals plan for and deploy Windows 10 Mobile devices.
 
@@ -189,7 +190,7 @@ Multiple MDM systems support Windows 10 and most support personal and corporate 
 In addition, Microsoft recently added MDM capabilities powered by Intune to Office 365. MDM for Office 365 supports mobile devices only, such as those running Windows 10 Mobile, iOS, and Android. MDM for Office 365 offers a subset of the management capabilities found in Intune, including the ability to remotely wipe a device, block a device from accessing Exchange Server email, and configure device policies (e.g., passcode requirements). For more information about MDM for Office 365 capabilities, see [Overview of Mobile Device Management for Office 365](http://technet.microsoft.com/en-us/library/ms.o365.cc.devicepolicy.aspx). 
 
 **Cloud services**
-On mobile devices that run Windows 10 Mobile, users can easily connect to cloud services that provide user notifications and collect telemetry (usage data). Windows 10 Mobile enables organizations to manage how devices consume these cloud services.
+On mobile devices that run Windows 10 Mobile, users can easily connect to cloud services that provide user notifications and collect diagnostic and usage data. Windows 10 Mobile enables organizations to manage how devices consume these cloud services.
 
 **Windows Push Notification Services**
 The Windows Push Notification Services enable software developers to send toast, tile, badge, and raw updates from their cloud services. It provides a mechanism to deliver updates to users in a power-efficient and dependable way.
@@ -795,9 +796,9 @@ While Windows 10 Mobile provides updates directly to user devices from Windows U
 Upgrading to Windows 10 Mobile Enterprise edition provides additional device and app management capabilities for organizations that want to:
 -   **Defer, approve and deploy feature and quality updates:** Windows 10 Mobile devices get updates directly from Windows Update. If you want to curate updates prior to deploying them, an upgrade to Windows 10 Mobile Enterprise edition is required. Once Enterprise edition is enabled, the phone can be set to the Current Branch for Business servicing option, giving IT additional time to test updates before they are released. 
 -   **Deploy an unlimited number of self-signed LOB apps to a single device:** To use an MDM system to deploy LOB apps directly to devices, you must cryptographically sign the software packages with a code signing certificate that your organization’s certificate authority (CA) generates. You can deploy a maximum of 20 self-signed LOB apps to a Windows 10 Mobile device. To deploy more than 20 self-signed LOB apps, Windows 10 Mobile Enterprise is required.
--   **Set the telemetry level:** Microsoft collects telemetry data to help keep Windows devices secure and to help Microsoft improve the quality of Windows and Microsoft services. An upgrade to Windows 10 Mobile Enterprise edition is required to set the telemetry level so that only telemetry information required to keep devices secured is gathered. 
+-   **Set the diagnostic data level:** Microsoft collects diagnostic data to help keep Windows devices secure and to help Microsoft improve the quality of Windows and Microsoft services. An upgrade to Windows 10 Mobile Enterprise edition is required to set the diagnostic data level so that only diagnostic information required to keep devices secured is gathered. 
 
-To learn more about telemetry, visit [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization).
+To learn more about diagnostic, see [Configure Windows diagnostic data in your organization](/windows/configuration/configure-windows-diagnostic-data-in-your-organization).
 
 To activate Windows 10 Mobile Enterprise, use your MDM system or a provisioning package to inject the Windows 10 Enterprise license on a Windows 10 Mobile device. Licenses can be obtained from the Volume Licensing portal. For testing purposes, you can obtain a licensing file from the MSDN download center. A valid MSDN subscription is required.
 
@@ -1007,17 +1008,17 @@ The following list shows examples of the Windows 10 Mobile software and hardware
 -   **Secure Boot state** Indicates whether Secure Boot is enabled
 -   **Enterprise encryption policy compliance** Indicates whether the device is encrypted
 
-### <a href="" id="manage-telemetry"></a>Manage telemetry
+### <a href="" id="manage-telemetry"></a>Manage diagnostic data
 
 *Applies to: Corporate devices with Windows 10 Mobile Enterprise edition*
 
-Microsoft uses telemetry (diagnostics, performance, and usage data) from Windows devices to help inform decisions and focus efforts to provide the most robust and valuable platform for your business and the people who count on Windows to enable them to be as productive as possible. Telemetry helps keep Windows devices healthy, improve the operating system, and personalize features and services. 
+Microsoft uses diagnostics, performance, and usage data from Windows devices to help inform decisions and focus efforts to provide the most robust and valuable platform for your business and the people who count on Windows to enable them to be as productive as possible. Diagnostic data helps keep Windows devices healthy, improve the operating system, and personalize features and services. 
 
-You can control the level of data that telemetry systems collect. To configure devices, specify one of these levels in the Allow Telemetry setting with your MDM system.
+You can control the level of data that diagnostic data systems collect. To configure devices, specify one of these levels in the Allow Telemetry setting with your MDM system.
 
-For more information, see [Configure Windows telemetry in Your organization](/windows/configuration/configure-windows-telemetry-in-your-organization).
+For more information, see [Configure Windows diagnostic data in Your organization](/windows/configuration/configure-windows-diagnostic-data-in-your-organization).
 
->**Note:** Telemetry can only be managed when the device is upgraded to Windows 10 Mobile Enterprise edition.
+>**Note:** Diagnostic data can only be managed when the device is upgraded to Windows 10 Mobile Enterprise edition.
 
 ### <a href="" id="mremote-assistance"></a>Remote assistance
 

@@ -133,7 +133,7 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 |----------------|----------|------------|
 | backgroundtaskhost  | HTTPS   | www.bing.com/proactive/v2/spark?cc=US&setlang=en-US |
 
-The following endpoint is used by Cortana to report diagnostic and telemetry information.
+The following endpoint is used by Cortana to report diagnostic and diagnostic data information.
 If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-cortana), Microsoft won't be aware of issues with Cortana and won't be able to fix them.
 
 | Source process | Protocol | Destination |
@@ -174,6 +174,30 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
 |   |    | dmd.metaservices.microsoft.com.akadns.net |
+
+## Diagnostic Data
+
+The following endpoint is used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service.
+If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback), diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, will not be sent back to Microsoft.
+
+| Source process | Protocol | Destination |
+|----------------|----------|------------|
+| svchost |   | cy2.vortex.data.microsoft.com.akadns.net |
+
+The following endpoint is used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service.
+If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback), diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, will not be sent back to Microsoft.
+
+| Source process | Protocol | Destination |
+|----------------|----------|------------|
+| svchost |    | v10.vortex-win.data.microsoft.com/collect/v1 |
+
+The following endpoints are used by Windows Error Reporting.
+To turn off traffic for these endpoints, enable the following Group Policy: Administrative Templates > Windows Components > Windows Error Reporting > Disable Windows Error Reporting. This means error reporting information will not be sent back to Microsoft.
+
+| Source process | Protocol | Destination |
+|----------------|----------|------------|
+| wermgr |        | watson.telemetry.microsoft.com/Telemetry.Request  |
+|        |TLS v1.2 |modern.watson.data.microsoft.com.akadns.net|
 
 ## Font streaming
 
@@ -340,7 +364,7 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 |----------------|----------|------------|
 | dmclient  | HTTPS  | settings.data.microsoft.com |
 
-The following endpoint is used as a way for apps to dynamically update their configuration. Apps such as Windows Connected User Experience and Telemetry component and Windows Insider Program use it.
+The following endpoint is used as a way for apps to dynamically update their configuration. Apps such as Windows Connected User Experiences and Telemetry component and Windows Insider Program use it.
 If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback), an app that uses this endpoint may stop working.
 
 | Source process | Protocol | Destination |
@@ -355,29 +379,7 @@ The following endpoint is used to retrieve Skype configuration values. To turn o
 |----------------|----------|------------|
 |microsoft.windowscommunicationsapps.exe | HTTPS | config.edge.skype.com |
 
-## Telemetry
 
-The following endpoint is used by the Connected User Experience and Telemetry component and connects to the Microsoft Data Management service.
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback), diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, will not be sent back to Microsoft.
-
-| Source process | Protocol | Destination |
-|----------------|----------|------------|
-| svchost |   | cy2.vortex.data.microsoft.com.akadns.net |
-
-The following endpoint is used by the Connected User Experience and Telemetry component and connects to the Microsoft Data Management service.
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback), diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, will not be sent back to Microsoft.
-
-| Source process | Protocol | Destination |
-|----------------|----------|------------|
-| svchost |    | v10.vortex-win.data.microsoft.com/collect/v1 |
-
-The following endpoints are used by Windows Error Reporting.
-To turn off traffic for these endpoints, enable the following Group Policy: Administrative Templates > Windows Components > Windows Error Reporting > Disable Windows Error Reporting. This means error reporting information will not be sent back to Microsoft.
-
-| Source process | Protocol | Destination |
-|----------------|----------|------------|
-| wermgr |        | watson.telemetry.microsoft.com/Telemetry.Request  |
-|        |TLS v1.2 |modern.watson.data.microsoft.com.akadns.net|
 
 ## Windows Defender
 

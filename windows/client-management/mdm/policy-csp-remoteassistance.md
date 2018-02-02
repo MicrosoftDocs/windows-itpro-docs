@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - RemoteAssistance
@@ -15,7 +15,7 @@ ms.date: 11/01/2017
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## RemoteAssistance policies  
 
 <dl>
@@ -33,11 +33,13 @@ ms.date: 11/01/2017
   </dd>
 </dl>
 
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="remoteassistance-customizewarningmessages"></a>**RemoteAssistance/CustomizeWarningMessages**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -59,8 +61,8 @@ ms.date: 11/01/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -68,8 +70,8 @@ ms.date: 11/01/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 This policy setting lets you customize warning messages.
 
 The "Display warning message before sharing control" policy setting allows you to specify a custom message to display before a user shares control of his or her computer.
@@ -82,7 +84,7 @@ If you disable this policy setting, the user sees the default warning message.
 
 If you do not configure this policy setting, the user sees the default warning message.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -90,20 +92,22 @@ If you do not configure this policy setting, the user sees the default warning m
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Customize warning messages*
 -   GP name: *RA_Options*
 -   GP path: *System/Remote Assistance*
 -   GP ADMX file name: *remoteassistance.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="remoteassistance-sessionlogging"></a>**RemoteAssistance/SessionLogging**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -125,8 +129,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -134,8 +138,8 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 This policy setting allows you to turn logging on or off. Log files are located in the user's Documents folder under Remote Assistance.
 
 If you enable this policy setting, log files are generated.
@@ -144,7 +148,7 @@ If you disable this policy setting, log files are not generated.
 
 If you do not configure this setting, application-based settings are used.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -152,20 +156,22 @@ If you do not configure this setting, application-based settings are used.
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Turn on session logging*
 -   GP name: *RA_Logging*
 -   GP path: *System/Remote Assistance*
 -   GP ADMX file name: *remoteassistance.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="remoteassistance-solicitedremoteassistance"></a>**RemoteAssistance/SolicitedRemoteAssistance**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -187,8 +193,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -196,8 +202,8 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 This policy setting allows you to turn on or turn off Solicited (Ask for) Remote Assistance on this computer.
 
 If you enable this policy setting, users on this computer can use email or file transfer to ask someone for help. Also, users can use instant messaging programs to allow connections to this computer, and you can configure additional Remote Assistance settings.
@@ -214,7 +220,7 @@ The "Select the method for sending email invitations" setting specifies which em
 
 If you enable this policy setting you should also enable appropriate firewall exceptions to allow Remote Assistance communications.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -222,20 +228,22 @@ If you enable this policy setting you should also enable appropriate firewall ex
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Configure Solicited Remote Assistance*
 -   GP name: *RA_Solicit*
 -   GP path: *System/Remote Assistance*
 -   GP ADMX file name: *remoteassistance.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="remoteassistance-unsolicitedremoteassistance"></a>**RemoteAssistance/UnsolicitedRemoteAssistance**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -257,8 +265,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -266,8 +274,8 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 This policy setting allows you to turn on or turn off Offer (Unsolicited) Remote Assistance on this computer.
 
 If you enable this policy setting, users on this computer can get help from their corporate technical support staff using Offer (Unsolicited) Remote Assistance.
@@ -307,7 +315,7 @@ Port 135:TCP
 %WINDIR%\PCHealth\HelpCtr\Binaries\Helpctr.exe
 Allow Remote Desktop Exception
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -315,15 +323,15 @@ Allow Remote Desktop Exception
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Configure Offer Remote Assistance*
 -   GP name: *RA_Unsolicit*
 -   GP path: *System/Remote Assistance*
 -   GP ADMX file name: *remoteassistance.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -332,5 +340,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

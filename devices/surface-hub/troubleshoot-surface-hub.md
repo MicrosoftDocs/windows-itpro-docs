@@ -524,7 +524,7 @@ This section lists status codes, mapping, user messages, and actions an admin ca
 <tr class="even">
 <td align="left"><p>0x85002004</p></td>
 <td align="left"><p>E_FAIL_ABORT</p></td>
-<td align="left"><p>This error is used to interrupt the hanging sync, and will not be exposed to users. It will be shown in the telemetry if you force an interactive sync, delete the account, or update its settings.</p></td>
+<td align="left"><p>This error is used to interrupt the hanging sync, and will not be exposed to users. It will be shown in the diagnostic data if you force an interactive sync, delete the account, or update its settings.</p></td>
 <td align="left"><p>Nothing.</p></td>
 </tr>
 <tr class="odd">
