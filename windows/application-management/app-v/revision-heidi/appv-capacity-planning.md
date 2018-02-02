@@ -46,67 +46,54 @@ Before you design the App-V infrastructure, determining which applications will 
 
 ## Determine which App-V infrastructure is required
 
-You can also manage your App-V environment using an Electronic Software Distribution (ESD) solution such as Microsoft Systems Center Configuration Manager. For more information see [How to deploy App-V Packages Using Electronic Software Distribution](appv-deploy-appv-packages-with-electronic-software-distribution-solutions.md).
+You can also manage your App-V environment using an electronic software distribution (ESD) solution such as Microsoft Systems Center Configuration Manager. For more information see [How to deploy App-V packages using electronic software distribution](appv-deploy-appv-packages-with-electronic-software-distribution-solutions.md).
 
--   **Standalone Model** - The standalone model allows virtual applications to be Windows Installer-enabled for distribution without streaming. App-V in Standalone Mode consists of the sequencer and the client; no additional components are required. Applications are prepared for virtualization using a process called sequencing. For more information see, [Planning for the App-V Sequencer and Client Deployment](appv-planning-for-sequencer-and-client-deployment.md). The stand-alone model is recommended for the following scenarios:
+* **Standalone model**—The standalone model allows virtual applications to be Windows Installer-enabled for distribution without streaming. App-V in Standalone mode only needs the sequencer and the client; no additional components are required. Applications are prepared for virtualization using a process called sequencing. For more information, see [Planning for the App-V Sequencer and Client deployment](appv-planning-for-sequencer-and-client-deployment.md). The standalone model is recommended for the following scenarios:
 
-    -   With disconnected remote users who cannot connect to the App-V infrastructure.
+    * When there are disconnected remote users who can't connect to the App-V infrastructure.
 
-    -   When you are running a software management system, such as System Center 2012 Configuration Manager.
+    * When you're running a software management system, such as System Center 2012 Configuration Manager.
 
-    -   When network bandwidth limitations inhibit electronic software distribution.
+    * When network bandwidth limitations inhibit electronic software distribution.
 
--   **Full Infrastructure Model** - The full infrastructure model provides for software distribution, management, and reporting capabilities; it also includes the streaming of applications across the network. The App-V Full Infrastructure Model consists of one or more App-V management servers. The Management Server can be used to publish applications to all clients. The publishing process places the virtual application icons and shortcuts on the target computer. It can also stream applications to local users. For more information about installing the management server see, [Planning for App-V Server Deployment](appv-planning-for-appv-server-deployment.md). The full infrastructure model is recommended for the following scenarios:
+* **Full infrastructure model**—The full infrastructure model provides for software distribution, management, and reporting capabilities; it also includes the streaming of applications across the network. The App-V full infrastructure model consists of one or more App-V management servers that can be used to publish applications to all clients. Publishing places the virtual application icons and shortcuts on the target computer. It can also stream applications to local users. For more information about how to install the management server, see [Planning for App-V Server deployment](appv-planning-for-appv-server-deployment.md). The full infrastructure model is recommended for the following scenarios:
 
-    >**Important**  
-    The App-V full infrastructure model requires Microsoft SQL Server to store configuration data. For more information see [App-V Supported Configurations](appv-supported-configurations.md).
+    * When you want to use the Management Server to publish the application to target computers.
 
-     
+    * For rapid provisioning of applications to target computers.
 
-    -   When you want to use the Management Server to publish the application to target computers.
+    * When you want to use App-V reporting.
 
-    -   For rapid provisioning of applications to target computers.
+>[!IMPORTANT]
+>The App-V full infrastructure model requires Microsoft SQL Server to store configuration data. For more information, see [App-V supported configurations](appv-supported-configurations.md).
 
-    -   When you want to use App-V reporting.
+## End-to-end server sizing guidance
 
-## End-to-end Server Sizing Guidance
+The following section describes end-to-end App-V sizing and planning. For more specific information, refer to the subsequent sections.
 
+>[!NOTE]
+>Round trip response time on the client is the time taken by the computer running the App-V client to receive a successful notification from the publishing server. Round trip response time on the publishing server is the time taken by the computer running the publishing server to receive a successful package metadata update from the management server.
 
-The following section provides information about end-to-end App-V sizing and planning. For more specific information, refer to the subsequent sections.
+* 20,000 clients can target a single publishing server to obtain the package refreshes in an acceptable round trip time. (&lt;3 seconds.)
+* A single management server can support up to 50 publishing servers for package metadata refreshes in an acceptable round trip time. (&lt;5 seconds.)
 
-**Note**  
-Round trip response time on the client is the time taken by the computer running the App-V client to receive a successful notification from the publishing server. Round trip response time on the publishing server is the time taken by the computer running the publishing server to receive a successful package metadata update from the management server.
+## App-V Management Server capacity planning recommendations
 
- 
+The App-V publishing servers require the management server for package refresh requests and package refresh responses. The management server then sends the information to the management database to retrieve information. For more information about App-V management server supported configurations, see [App-V supported configurations](appv-supported-configurations.md).
 
--   20,000 clients can target a single publishing server to obtain the package refreshes in an acceptable round trip time. (&lt;3 seconds)
+>[!NOTE]
+>The default refresh time on the App-V publishing server is ten minutes.
 
--   A single management server can support up to 50 publishing servers for package metadata refreshes in an acceptable round trip time. (&lt;5 seconds)
+When multiple simultaneous publishing servers contact a single management server for package metadata refreshes, the following three factors will influence the publishing server's round-trip response time:
 
-## <a href="" id="---------app-v-5-1-management-server-capacity-planning-recommendations"></a> App-V Management Server Capacity Planning Recommendations
+1. The number of publishing servers making simultaneous requests.
+2. The number of connection groups configured on the management server.
+3. The number of access groups configured on the management server.
 
+The following table describes each factor that impacts round-trip time in more detail.
 
-The App-V publishing servers require the management server for package refresh requests and package refresh responses. The management server then sends the information to the management database to retrieve information. For more information about App-V management server supported configurations see [App-V Supported Configurations](appv-supported-configurations.md).
-
-**Note**  
-The default refresh time on the App-V publishing server is ten minutes.
-
- 
-
-When multiple simultaneous publishing servers contact a single management server for package metadata refreshes, the following three factors influence the round trip response time on the publishing server:
-
-1.  Number of publishing servers making simultaneous requests.
-
-2.  Number of connection groups configured on the management server.
-
-3.  Number of access groups configured on the management server.
-
-The following table displays more information about each factor that impacts round trip time.
-
-**Note**  
-Round trip response time is the time taken by the computer running the App-V publishing server to receive a successful package metadata update from the management server.
-
- 
+>[!NOTE]
+>Round trip response time is the time taken by the computer running the App-V publishing server to receive a successful package metadata update from the management server.
 
 <table>
 <colgroup>
@@ -115,8 +102,8 @@ Round trip response time is the time taken by the computer running the App-V pub
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">Factors impacting round trip response time</th>
-<th align="left">More Information</th>
+<th align="left">Factors impacting round-trip response time</th>
+<th align="left">Description</th>
 </tr>
 </thead>
 <tbody>
@@ -124,10 +111,10 @@ Round trip response time is the time taken by the computer running the App-V pub
 <td align="left"><p>The number of publishing servers simultaneously requesting package metadata refreshes.</p></td>
 <td align="left"><p></p>
 <ul>
-<li><p>A single management server can respond to up to 320 publishing servers requesting publishing metadata simultaneously.</p></li>
-<li><p>Round trip response time for 320 pub servers is ~40 seconds.</p></li>
-<li><p>For &lt;50 publishing servers requesting metadata simultaneously, the round trip response time is &lt;5 seconds.</p></li>
-<li><p>From 50 to 320 publishing servers, the response time increases linearly (approximately 2x).</p></li>
+<li><p>A single management server can respond to up to 320 publishing servers simultaneously requesting publishing metadata.</p></li>
+<li><p>Round-trip response time for 320 pub servers is ~40 seconds.</p></li>
+<li><p>For &lt;50 publishing servers simultaneously requesting metadata, the round-trip response time is &lt;5 seconds.</p></li>
+<li><p>From 50 to 320 publishing servers, the response time increases linearly (approximately 2×).</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -135,8 +122,8 @@ Round trip response time is the time taken by the computer running the App-V pub
 <p></p></td>
 <td align="left"><p></p>
 <ul>
-<li><p>For up to 100 connection groups, there is no significant change in the round trip response time on the publishing server.</p></li>
-<li><p>For 100 - 400 connection groups, there is a minor linear increase in the round trip response time.</p></li>
+<li><p>For up to 100 connection groups, there is no significant change in the round-trip response time on the publishing server.</p></li>
+<li><p>For 100–400 connection groups, there is a minor linear increase in the round-trip response time.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -144,15 +131,13 @@ Round trip response time is the time taken by the computer running the App-V pub
 <p></p></td>
 <td align="left"><p></p>
 <ul>
-<li><p>For up to 40 access groups, there is a linear (approximately 3x) increase in the round trip response time on the publishing server.</p></li>
+<li><p>For up to 40 access groups, there is a linear (approximately 3×) increase in the round-trip response time on the publishing server.</p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
- 
-
-The following table displays sample values for each of the previous factors. In each variation, 120 packages are refreshed from the App-Vmanagement server.
+The following table displays sample values for each of the previous factors. In each variation, 120 packages are refreshed from the App-V management server.
 
 <table>
 <colgroup>
@@ -172,7 +157,7 @@ The following table displays sample values for each of the previous factors. In 
 <th align="left">Number of connection groups</th>
 <th align="left">Number of access groups</th>
 <th align="left">Number of publishing servers</th>
-<th align="left">Network connection type publishing server / management server</th>
+<th align="left">Network connection type publishing server/management server</th>
 <th align="left">Round trip response time on the publishing server (in seconds)</th>
 <th align="left">CPU utilization on management server</th>
 </tr>
@@ -343,11 +328,9 @@ The following table displays sample values for each of the previous factors. In 
 </tbody>
 </table>
 
- 
+The CPU utilization of the computer running the management server is around 25% irrespective of the number of publishing servers targeting it. The Microsoft SQL Server database transactions/sec, batch requests/sec and user connections are identical irrespective of the number of publishing servers. For example, transactions/sec is ~30, batch requests ~200, and user connects ~6.
 
-The CPU utilization of the computer running the management server is around 25% irrespective of the number of publishing servers targeting it. The Microsoft SQL Server database transactions/sec, batch requests/sec and user connections are identical irrespective of the number of publishing servers. For example: Transactions/sec is ~30, batch requests ~200, and user connects ~6.
-
-Using a geographically distributed deployment, where the management server & publishing servers utilize a slow link network between them, the round trip response time on the publishing servers is within acceptable time limits (&lt;5 seconds), even for 100 simultaneous requests on a single management server.
+Using a geographically distributed deployment, where the management server and publishing servers utilize a slow link network between them, the round-trip response time on the publishing servers is within acceptable time limits (&lt;5 seconds), even for 100 simultaneous requests on a single management server.
 
 <table>
 <colgroup>
@@ -367,7 +350,7 @@ Using a geographically distributed deployment, where the management server & pub
 <th align="left">Number of connection groups</th>
 <th align="left">Number of access groups</th>
 <th align="left">Number of publishing servers</th>
-<th align="left">Network connection type publishing server / management server</th>
+<th align="left">Network connection type publishing server/management server</th>
 <th align="left">Round trip response time on the publishing server (in seconds)</th>
 <th align="left">CPU utilization on management server</th>
 </tr>
@@ -375,7 +358,7 @@ Using a geographically distributed deployment, where the management server & pub
 <tbody>
 <tr class="odd">
 <td align="left"><p>Network connection between the publishing server and management server</p></td>
-<td align="left"><p>1.5 Mbps Slow link Network</p></td>
+<td align="left"><p>1.5 Mbps slow link network</p></td>
 <td align="left"><p></p>
 <ul>
 <li><p>0</p></li>
@@ -393,8 +376,8 @@ Using a geographically distributed deployment, where the management server & pub
 </ul></td>
 <td align="left"><p></p>
 <ul>
-<li><p>1.5Mbps Cable DSL</p></li>
-<li><p>1.5Mbps Cable DSL</p></li>
+<li><p>1.5 Mbps Cable DSL</p></li>
+<li><p>1.5 Mbps Cable DSL</p></li>
 </ul></td>
 <td align="left"><p></p>
 <ul>
@@ -409,7 +392,7 @@ Using a geographically distributed deployment, where the management server & pub
 </tr>
 <tr class="even">
 <td align="left"><p>Network connection between the publishing server and management server</p></td>
-<td align="left"><p>LAN / WIFI Network</p></td>
+<td align="left"><p>LAN/WiFi network</p></td>
 <td align="left"><p></p>
 <ul>
 <li><p>0</p></li>
@@ -444,19 +427,14 @@ Using a geographically distributed deployment, where the management server & pub
 </tbody>
 </table>
 
- 
-
 Whether the management server and publishing servers are connected over a slow link network, or a high speed network, the management server can handle approximately 15,000 package refresh requests in 30 minutes.
 
-## <a href="" id="---------app-v-5-1-reporting-server-capacity-planning-recommendations"></a> App-V Reporting Server Capacity Planning Recommendations
+## App-V Reporting Server capacity planning recommendations
 
+App-V clients send reporting data to the reporting server. The reporting server then records the information in the Microsoft SQL Server database and returns a successful notification back to the computer running App-V client. For more information about the App-V Reporting Server's supported configurations see [App-V supported configurations](appv-supported-configurations.md).
 
-App-V clients send reporting data to the reporting server. The reporting server then records the information in the Microsoft SQL Server database and returns a successful notification back to the computer running App-V client. For more information about App-V Reporting Server supported configurations see [App-V Supported Configurations](appv-supported-configurations.md).
-
-**Note**  
-Round trip response time is the time taken by the computer running the App-V client to send the reporting information to the reporting server and receive a successful notification from the reporting server.
-
- 
+>[!NOTE]
+>Round-trip response time is the time taken by the computer running the App-V client to send the reporting information to the reporting server and receive a successful notification from the reporting server.
 
 <table>
 <colgroup>
@@ -485,7 +463,7 @@ Round trip response time is the time taken by the computer running the App-V cli
 <td align="left"><p></p>
 <ul>
 <li><p>A single reporting server and a single database, can process a maximum of 139 requests per second. The average is 121 requests/second.</p></li>
-<li><p>Using two reporting servers reporting to the same Microsoft SQL Server database, the average requests/second is similar to a single reporting server = ~127, with a max of 278 requests/second.</p></li>
+<li><p>Using two reporting servers reporting to the same Microsoft SQL Server database, the average requests/second,like a single reporting server, is ~127, with a max of 278 requests/second.</p></li>
 <li><p>A single reporting server can process 500 concurrent/active connections.</p></li>
 <li><p>A single reporting server can process a maximum 1500 concurrent connections.</p></li>
 </ul></td>
@@ -520,11 +498,11 @@ Computers running the App-V client connect to the App-V publishing server to sen
 **Important**  
 The following list displays the main factors to consider when setting up the App-V publishing server:
 
--   The number of clients connecting simultaneously to a single publishing server.
+* The number of clients connecting simultaneously to a single publishing server.
 
--   The number of packages in each refresh.
+* The number of packages in each refresh.
 
--   The available network bandwidth in your environment between the client and the App-V publishing server.
+* The available network bandwidth in your environment between the client and the App-V publishing server.
 
  
 
@@ -726,11 +704,11 @@ Computers running the App-V client stream the virtual application package from t
 **Important**  
 The following list identifies the main factors to consider when setting up the App-V streaming server:
 
--   The number of clients streaming application packages simultaneously from a single streaming server.
+* The number of clients streaming application packages simultaneously from a single streaming server.
 
--   The size of the package being streamed.
+* The size of the package being streamed.
 
--   The available network bandwidth in your environment between the client and the streaming server.
+* The available network bandwidth in your environment between the client and the streaming server.
 
  
 
