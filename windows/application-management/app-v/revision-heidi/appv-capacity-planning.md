@@ -452,9 +452,9 @@ App-V clients send reporting data to the reporting server. The reporting server 
 <td align="left"><p>Multiple App-V clients send reporting information to the reporting server simultaneously.</p></td>
 <td align="left"><p></p>
 <ul>
-<li><p>Round trip response time from the reporting server is 2.6 seconds for 500 clients.</p></li>
-<li><p>Round trip response time from the reporting server is 5.65 seconds for 1000 clients.</p></li>
-<li><p>Round trip response time increases linearly depending on number of clients.</p></li>
+<li><p>Round-trip response time from the reporting server is 2.6 seconds for 500 clients.</p></li>
+<li><p>Round-trip response time from the reporting server is 5.65 seconds for 1000 clients.</p></li>
+<li><p>Round-trip response time increases linearly depending on number of clients.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -469,7 +469,7 @@ App-V clients send reporting data to the reporting server. The reporting server 
 </ul></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Reporting Database.</p>
+<td align="left"><p>Reporting database.</p>
 <p></p></td>
 <td align="left"><p></p>
 <ul>
@@ -480,31 +480,24 @@ App-V clients send reporting data to the reporting server. The reporting server 
 </tbody>
 </table>
 
- 
-
-**Calculating random delay**:
+### Calculating random delay
 
 The random delay specifies the maximum delay (in minutes) for data to be sent to the reporting server. When the scheduled task is started, the client generates a random delay between **0** and **ReportingRandomDelay** and will wait the specified duration before sending data.
 
-Random delay = 4 \* number of clients / average requests per second.
+Random delay = 4 \* number of clients / average requests per second. (CHECK)
 
-Example: For 500 clients, with 120 requests per second, the Random delay is, 4 \* 500 / 120 = ~17 minutes.
+Example: For 500 clients, with 120 requests per second, the Random delay is, 4 \* 500 / 120 = ~17 minutes. (CHECK)
 
-## <a href="" id="---------app-v-5-1-publishing-server-capacity-planning-recommendations"></a> App-V Publishing Server Capacity Planning Recommendations
+## App-V publishing server capacity planning recommendations
 
+Computers running the App-V client connect to the App-V publishing server to send a publishing refresh request and receive a response. Round trip response time is measured on the computer running the App-V client, while processor time is measured on the publishing server. For more information about App-V Publishing Server supported configurations, see [App-V supported configurations](appv-supported-configurations.md).
 
-Computers running the App-V client connect to the App-V publishing server to send a publishing refresh request and to receive a response. Round trip response time is measured on the computer running the App-V client. Processor time is measured on the publishing server. For more information about App-V Publishing Server supported configurations see [App-V Supported Configurations](appv-supported-configurations.md).
-
-**Important**  
-The following list displays the main factors to consider when setting up the App-V publishing server:
-
-* The number of clients connecting simultaneously to a single publishing server.
-
-* The number of packages in each refresh.
-
-* The available network bandwidth in your environment between the client and the App-V publishing server.
-
- 
+>[!IMPORTANT]
+>The following list displays the main factors to consider when setting up the App-V publishing server:
+  
+  * The number of clients connecting simultaneously to a single publishing server.
+  * The number of packages in each refresh.
+  * The available network bandwidth in your environment between the client and the App-V publishing server.
 
 <table>
 <colgroup>
@@ -523,9 +516,9 @@ The following list displays the main factors to consider when setting up the App
 <td align="left"><p></p>
 <ul>
 <li><p>A publishing server running dual core processors can respond to at most 5000 clients requesting a refresh simultaneously.</p></li>
-<li><p>For 5000-10000 clients, the publishing server requires a minimum quad core.</p></li>
-<li><p>For 10000-20000 clients, the publishing server should have dual quad cores for more efficient response times.</p></li>
-<li><p>A publishing server with a quad core can refresh up to 10000 packages within 3 seconds. (Supporting 10000 simultaneous clients)</p></li>
+<li><p>For 5,000–10,000 clients, the publishing server requires a minimum quad core.</p></li>
+<li><p>For 10,000–20,000 clients, the publishing server should have dual quad cores for more efficient response times.</p></li>
+<li><p>A publishing server with a quad core can refresh up to 10,000 packages within three seconds. (Supports 10,000 simultaneous clients.)</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -533,7 +526,7 @@ The following list displays the main factors to consider when setting up the App
 <p></p></td>
 <td align="left"><p></p>
 <ul>
-<li><p>Increasing number of packages will increase response time by ~40% (up to 1000 packages).</p></li>
+<li><p>Increasing number of packages will increase response time by ~40% (up to 1,000 packages).</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -541,18 +534,14 @@ The following list displays the main factors to consider when setting up the App
 <p></p></td>
 <td align="left"><p></p>
 <ul>
-<li><p>Across a slow network (1.5 Mbps bandwidth), there is a 97% increase in response time compared to LAN (up to 1000 users).</p></li>
+<li><p>Across a slow network (1.5 Mbps bandwidth), there is a 97% increase in response time compared to LAN (up to 1,000 users).</p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
- 
-
-**Note**  
-The publishing server CPU usage is always high during the time interval when it has to process simultaneous requests (&gt;90% in most cases). The publishing server can handle ~1500 client requests in 1 second.
-
- 
+>[!NOTE]
+>The publishing server CPU usage is always high during the time interval when it must process simultaneous requests (&gt;90% in most cases). The publishing server can handle ~1,500 client requests in one second.
 
 <table>
 <colgroup>
@@ -572,7 +561,7 @@ The publishing server CPU usage is always high during the time interval when it 
 <th align="left">Number of App-V clients</th>
 <th align="left">Number of packages</th>
 <th align="left">Processor configuration on the publishing server</th>
-<th align="left">Network connection type publishing server / App-V client</th>
+<th align="left">Network connection type publishing server/App-V client</th>
 <th align="left">Round trip time on the App-V client (in seconds)</th>
 <th align="left">CPU utilization on publishing server (in %)</th>
 </tr>
@@ -584,9 +573,9 @@ The publishing server CPU usage is always high during the time interval when it 
 <td align="left"><p></p>
 <ul>
 <li><p>100</p></li>
-<li><p>1000</p></li>
-<li><p>5000</p></li>
-<li><p>10000</p></li>
+<li><p>1,000</p></li>
+<li><p>5,000</p></li>
+<li><p>10,000</p></li>
 </ul></td>
 <td align="left"><p></p>
 <ul>
@@ -629,13 +618,13 @@ The publishing server CPU usage is always high during the time interval when it 
 <td align="left"><p>Number of packages</p></td>
 <td align="left"><p></p>
 <ul>
-<li><p>1000</p></li>
-<li><p>1000</p></li>
+<li><p>1,000</p></li>
+<li><p>1,000</p></li>
 </ul></td>
 <td align="left"><p></p>
 <ul>
 <li><p>500</p></li>
-<li><p>1000</p></li>
+<li><p>1,000</p></li>
 </ul></td>
 <td align="left"><p></p>
 <ul>
@@ -660,12 +649,12 @@ The publishing server CPU usage is always high during the time interval when it 
 </tr>
 <tr class="odd">
 <td align="left"><p>Network between client and publishing server</p></td>
-<td align="left"><p>1.5 Mbps Slow link network</p></td>
+<td align="left"><p>1.5 Mbps slow link network</p></td>
 <td align="left"><p></p>
 <ul>
 <li><p>100</p></li>
 <li><p>500</p></li>
-<li><p>1000</p></li>
+<li><p>1,000</p></li>
 </ul></td>
 <td align="left"><p></p>
 <ul>
