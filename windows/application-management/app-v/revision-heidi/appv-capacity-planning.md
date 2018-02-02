@@ -29,22 +29,22 @@ Before you design the App-V infrastructure, determining which applications will 
 <thead>
 <tr class="header">
 <th align="left">Task</th>
-<th align="left">More Information</th>
+<th align="left">More information</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Determine Application Scope</p></td>
-<td align="left"><p>Depending on the applications to be virtualized, the App-V infrastructure can be set up in different ways. The first task is to define what applications you want to virtualize.</p></td>
+<td align="left"><p>Determine application scope</p></td>
+<td align="left"><p>The App-V infrastructure can be set up in different ways depending on which applications you want to virtualize. This means your first task is to define which applications you want to virtualize.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Determine Location Scope</p></td>
-<td align="left"><p>Location scope refers to the physical locations (for example, enterprise-wide or a specific geographic location) where you plan to run the virtualized applications. It can also refer to the user population (for example, a single department) who will run the virtual applications. You should obtain a network map that includes the connection paths as well as available bandwidth to each location and the number of users using virtualized applications and the WAN link speed.</p></td>
+<td align="left"><p>Determine location scope</p></td>
+<td align="left"><p>"Location scope" refers to the physical locations where you plan to run the virtualized applications (for example, enterprise-wide or a specific geographic location). It can also refer to the user population that will run the virtual applications (for example, a single department). You should obtain a network map that includes the connection paths, the available bandwidth for each location, the number of users using virtualized applications, and the WAN link speed.</p></td>
 </tr>
 </tbody>
 </table>
 
-## Determine Which App-V Infrastructure is Required
+## Determine which App-V infrastructure is required
 
 You can also manage your App-V environment using an Electronic Software Distribution (ESD) solution such as Microsoft Systems Center Configuration Manager. For more information see [How to deploy App-V Packages Using Electronic Software Distribution](appv-deploy-appv-packages-with-electronic-software-distribution-solutions.md).
 
