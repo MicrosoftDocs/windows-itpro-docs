@@ -21,7 +21,7 @@ To secure the connections, update the configuration of VPN servers and clients b
 
 For VPN server, you need to configure the tunnel type. This makes all IKE exchanges on IKEv2 tunnel use the secure configuration.
 
-For example, on a VPN server that runs Windows Server 2016, run [Set-VpnServerConfiguration](https://docs.microsoft.com/powershell/module/remoteaccess/set-vpnserverconfiguration?view=win10-ps):
+For example, on a site-to-site VPN server that runs Windows Server 2016, run [Set-VpnServerConfiguration](https://docs.microsoft.com/powershell/module/remoteaccess/set-vpnserverconfiguration?view=win10-ps):
 
 ```powershell
 Set-VpnServerConfiguration -TunnelType IKEv2 -CustomPolicy
