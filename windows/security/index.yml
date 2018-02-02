@@ -235,7 +235,7 @@ sections:
     items:
 
     - html: <a href="/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security">Windows Defender Firewall</a>
-    - html: <a href="/windows/security/threat-protection/windows-defender-exploit-guard/evaluate-attack-surface-reduction">Windows Defender Exploit Guard</a>
+    - html: <a href="/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard">Windows Defender Exploit Guard</a>
     - html: <a href="/windows/security/identity-protection/credential-guard/credential-guard">Windows Defender Credential Guard</a>
     - html: <a href="/windows/security/threat-protection/device-guard/device-guard-deployment-guide">Windows Defender Device Guard</a>  
     - html: <a href="/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview">Windows Defender Application Guard</a>
