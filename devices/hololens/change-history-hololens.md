@@ -8,12 +8,18 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 12/20/2017
+ms.date: 02/02/2018
 ---
 
 # Change history for Microsoft HoloLens documentation
 
 This topic lists new and updated topics in the [Microsoft HoloLens documentation](index.md).
+
+## February 2018
+
+New or changed topic | Description
+--- | ---
+[Unlock Windows Holographic for Business features](hololens-upgrade-enterprise.md)  | Replaced the instructions for upgrading to Windows Holographic for Business using Microsoft Intune with a link to the new Intune topic.
 
 ## December 2017
 
