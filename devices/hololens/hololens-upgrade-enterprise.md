@@ -7,7 +7,7 @@ ms.pagetype: hololens, devices
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 07/27/2017
+ms.date: 02/02/2018
 ---
 
 # Unlock Windows Holographic for Business features
@@ -25,49 +25,11 @@ When you purchase the Commercial Suite, you receive a license that upgrades Wind
 
 The enterprise license can be applied by any MDM provider that supports the [WindowsLicensing configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn904983.aspx). The latest version of the Microsoft MDM API will support WindowsLicensing CSP.
 
+For step-by-step instructions for upgrading HoloLens using Microsoft Intune, see [Upgrade devices running Windows Holographic to Windows Holographic for Business](https://docs.microsoft.com/intune/holographic-upgrade).
 
-**Overview**
-
-1.	Set up the edition upgrade policy.
-2.	Deploy the policy.
-3.	[Enroll the device through the Settings app](hololens-enroll-mdm.md).
-
-The procedures in this topic use Microsoft Intune as an example. On other MDM providers, the specific steps for setting up and deploying the policy might vary.
-
-### Set up the Edition Upgrade policy
-
-1.	Sign into the Intune Dashboard with your Intune admin account.
-
-2.	In the **Policy** workspace, select **Configuration Policies** and then **Add**.
-
-    ![Click Add](images/intune1.png)
-
-3.	In **Create a new policy**, select the **Edition Upgrade Policy (Windows 10 Holographic and later** template, and click **Create Policy**.
-
-    ![Select template](images/intune2.png)
-
-4.	Enter a name for the policy. 
-
-5. In the **Edition Upgrade** section, in **License File**, browse to and select the XML license file that was provided when you purchased the Commercial Suite.
-
-    ![Enter the XML file name](images/intune3.png)
- 
-5.	Click **Save Policy**.
+ On other MDM providers, the specific steps for setting up and deploying the policy might vary.
 
 
-
-### Deploy the Edition Upgrade policy
-
-Next, you will assign the Edition Upgrade policy to selected groups.
-
-1. In the **Policy** workspace, select the Edition upgrade policy that you created, and then choose **Manage Deployment**.
-
-2. In the **Manage Deployment** dialog box, select one or more groups to which you want to deploy the policy, and then choose **Add** > **OK**.
-
-When these users enroll their devices in MDM, the Edition Upgrade policy will be applied. 
-
-
-For more information about groups, see [Use groups to manage users and devices in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ## Edition upgrade using a provisioning package
 
