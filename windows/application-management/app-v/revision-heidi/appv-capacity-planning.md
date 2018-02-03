@@ -870,11 +870,11 @@ The number of clients a streaming server can support can be significantly increa
 
 ## Combining App-V server roles
 
-Discounting scaling and fault-tolerance requirements, the minimum number of servers that a location with Active Directory connectivity needs is one. This server will host the management server, management server service, and Microsoft SQL Server roles. This means that you can arrange server roles in any combination you like, as they don't conflict with one another.
+Discounting scaling and fault-tolerance requirements, the minimum number of servers that a location with Active Directory connectivity needs to function is one. This server will host the management server, management server service, and Microsoft SQL Server roles. This means that you can arrange server roles in any combination you like, as they don't conflict with one another.
 
-Ignoring scaling requirements, the minimum number of servers that a fault-tolerant implementation needs is four. The management server and Microsoft SQL Server roles support placement in fault-tolerant configurations. The management server service can be combined with any of the roles, but remains a single point of failure.
+Ignoring scaling requirements, the minimum number of servers that a fault-tolerant implementation needs to function is four. The management server and Microsoft SQL Server roles support placement in fault-tolerant configurations. The management server service can be combined with any of the roles, but remains a single point of failure.
 
-Although there are many fault-tolerance strategies and technologies you can use, not all are applicable to a given service. Additionally, if App-V roles are combined, certain fault-tolerance options may no longer apply due to incompatibilities.
+Although there are many fault-tolerance strategies and technologies you can use, not all are applicable to a given service. Additionally, if App-V roles are combined, the resulting incompatabilities could cause certain fault-tolerance options to stop working.
 
 ## Related topics
 
