@@ -1530,6 +1530,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[Defender CSP](defender-csp.md)</td>
 <td style="vertical-align:top"><p>Added new node (OfflineScan) in Windows 10, next major update.</p>
 </td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Uefi CSP](uefi-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, next major update.</p>
+</td></tr>
 </tbody>
 </table>
 
