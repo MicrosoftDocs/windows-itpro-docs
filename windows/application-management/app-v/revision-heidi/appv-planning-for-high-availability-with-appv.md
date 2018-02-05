@@ -69,9 +69,7 @@ Review the following to learn more about how to configure Microsoft SQL Server m
 The following steps can be used to validate the configuration:
 
 1. Initiate a Microsoft SQL Server Mirroring session.
-
 2. Select **Failover** to designate a new master Microsoft SQL Server instance.
-
 3. Verify that the App-V management server continues to function as expected after the failover.
 
 The connection string on the management server can be modified to include ```failover partner = <server2>```. This will only help when the primary on the mirror has failed over to the secondary and the computer running the App-V client is doing a fresh connection (say after reboot).
@@ -79,36 +77,33 @@ The connection string on the management server can be modified to include ```fai
 Use the following steps to modify the connection string to include ```failover partner = <server2>```:
 
 >[!IMPORTANT]
->This topic describes how to change the Windows registry by using Registry Editor. If you change the Windows registry incorrectly, you can cause serious problems that might require you to reinstall Windows. You should make a backup copy of the registry files (System.dat and User.dat) before you change the registry. Microsoft cannot guarantee that the problems that might occur when you change the registry can be resolved. Change the registry at your own risk.
+>This process involves changing the Windows registry with Registry Editor. If you change the Windows registry incorrectly, you can cause serious problems that might require you to reinstall Windows. Always make a backup copy of the registry files (**System.dat** and **User.dat**) before chagning the registry. Microsoft can't guarantee that problems caused by changing the registry can be resolved, so change the registry at your own risk.
 
-
-1.  Login to the management server and open **regedit**.
-
-2.  Navigate to **HKEY\_LOCAL\_MACHINE** \\ **Software** \\ **Microsoft** \\ **AppV** \\ **Server** \\ **ManagementService**.
-
-3.  Modify the **MANAGEMENT\_SQL\_CONNECTION\_STRING** value with the **failover partner = &lt;server2&gt;**.
-
-4.  Restart management service using the IIS console.
-
-    **Note**  
-    Database Mirroring is on the list of Deprecated Database Engine Features for Microsoft SQL Server 2012 due to the **AlwaysOn** feature available starting with Microsoft SQL Server 2012.
+1. Log in to the management server and open **regedit**.
+2. Navigate to **HKEY\_LOCAL\_MACHINE** \\ **Software** \\ **Microsoft** \\ **AppV** \\ **Server** \\ **ManagementService**.
+3. Modify the **MANAGEMENT\_SQL\_CONNECTION\_STRING** value with the ```failover partner = <server2>``` value.
+4. Restart management service using the IIS console.
+ >[!NOTE]
+ >Database Mirroring is on the list of [deprecated database engine features in SQL Server 2012](<https://msdn.microsoft.com/library/ms143729(v=sql.110).aspx>) due to the **AlwaysOn** feature available starting with Microsoft SQL Server 2012.
 
 Click any of the following links for more information:
 
-* [Prepare a Mirror Database for Mirroring (SQL Server)](https://technet.microsoft.com/library/ms189053.aspx).
+* [Prepare a mirror database for mirroring (SQL Server)](https://technet.microsoft.com/library/ms189053.aspx).
 
-* [Establish a Database Mirroring Session Using Windows Authentication (SQL Server Management Studio)](https://technet.microsoft.com/library/ms188712(v=sql.130).aspx).
+* [Establish a database mirroring session using Windows Authentication (SQL Server Management Studio)](https://technet.microsoft.com/library/ms188712(v=sql.130).aspx).
 
-* [Deprecated Database Engine Features in SQL Server 2012](https://msdn.microsoft.com/library/ms143729(v=sql.110).aspx).
+* [Deprecated database engine features in SQL Server 2012](<https://msdn.microsoft.com/library/ms143729(v=sql.110).aspx>).
 
-## <a href="" id="bkmk-sqlalwayson"></a>Support for Microsoft SQL Server Always On configuration
+## Support for Microsoft SQL Server Always On configuration
 
 The App-V management server database supports deployments to computers running Microsoft SQL Server with the **Always On** configuration. For more information, see [Always On Availability Groups (SQL Server)](https://technet.microsoft.com/library/hh510230.aspx).
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
-[Planning to Deploy App-V](appv-planning-to-deploy-appv.md)
+[Planning to deploy App-V](appv-planning-to-deploy-appv.md)
