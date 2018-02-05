@@ -254,6 +254,7 @@
 #### [Enable Exploit protection](windows-defender-exploit-guard\enable-exploit-protection.md)
 #### [Customize Exploit protection](windows-defender-exploit-guard\customize-exploit-protection.md)
 ##### [Import, export, and deploy Exploit protection configurations](windows-defender-exploit-guard\import-export-exploit-protection-emet-xml.md)
+#### [Troubleshoot Exploit protection mitigations](windows-defender-exploit-guard\troubleshoot-exploit-protection-mitigations.md)
 ### [Attack surface reduction](windows-defender-exploit-guard\attack-surface-reduction-exploit-guard.md)
 #### [Evaluate Attack surface reduction](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
 #### [Enable Attack surface reduction](windows-defender-exploit-guard\enable-attack-surface-reduction.md)
@@ -269,8 +270,7 @@
 #### [Customize Controlled folder access](windows-defender-exploit-guard\customize-controlled-folders-exploit-guard.md)
 
 
-
-
+## [Windows Defender Application Control](windows-defender-application-control.md)
 
 
 ## [Windows Defender SmartScreen](windows-defender-smartscreen\windows-defender-smartscreen-overview.md)

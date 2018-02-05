@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/13/2017
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - Storage
@@ -15,7 +15,7 @@ ms.date: 12/13/2017
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## Storage policies  
 
 <dl>
@@ -27,11 +27,13 @@ ms.date: 12/13/2017
   </dd>
 </dl>
 
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="storage-allowdiskhealthmodelupdates"></a>**Storage/AllowDiskHealthModelUpdates**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -53,8 +55,8 @@ ms.date: 12/13/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -62,25 +64,30 @@ ms.date: 12/13/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709.  Allows disk health model updates.
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1709.  Allows disk health model updates.
 
 
-<p style="margin-left: 20px">The following list shows the supported values:
+
+Value type is integer.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 - Do not allow
 -   1 (default) - Allow
 
-<p style="margin-left: 20px">Value type is integer.
+<!--/SupportedValues-->
+<!--/Policy-->
 
-<!--EndDescription-->
-<!--EndPolicy-->
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="storage-enhancedstoragedevices"></a>**Storage/EnhancedStorageDevices**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -102,8 +109,8 @@ ms.date: 12/13/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -111,15 +118,15 @@ ms.date: 12/13/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 This policy setting configures whether or not Windows will activate an Enhanced Storage device.
 
 If you enable this policy setting, Windows will not activate unactivated Enhanced Storage devices.
 
 If you disable or do not configure this policy setting, Windows will activate unactivated Enhanced Storage devices.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -127,15 +134,15 @@ If you disable or do not configure this policy setting, Windows will activate un
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Do not allow Windows to activate Enhanced Storage devices*
 -   GP name: *TCGSecurityActivationDisabled*
 -   GP path: *System/Enhanced Storage Access*
 -   GP ADMX file name: *enhancedstorage.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -144,5 +151,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

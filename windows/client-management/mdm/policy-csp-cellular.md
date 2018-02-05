@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/13/2017
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - Cellular
@@ -15,7 +15,7 @@ ms.date: 12/13/2017
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## Cellular policies  
 
 <dl>
@@ -36,11 +36,13 @@ ms.date: 12/13/2017
   </dd>
 </dl>
 
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="cellular-letappsaccesscellulardata"></a>**Cellular/LetAppsAccessCellularData**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -62,8 +64,8 @@ ms.date: 12/13/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -71,8 +73,8 @@ ms.date: 12/13/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1709. This policy setting specifies whether Windows apps can access cellular data.
 
 You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
@@ -87,19 +89,23 @@ If you disable or do not configure this policy setting, employees in your organi
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.”
 
-Suported values:
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 - 0 - User is in control
 - 1 - Force Allow
 - 2 - Force Deny
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/SupportedValues-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="cellular-letappsaccesscellulardata_forceallowtheseapps"></a>**Cellular/LetAppsAccessCellularData_ForceAllowTheseApps**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -121,8 +127,8 @@ Suported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -130,17 +136,19 @@ Suported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1709. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps. Value type is string.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/Description-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="cellular-letappsaccesscellulardata_forcedenytheseapps"></a>**Cellular/LetAppsAccessCellularData_ForceDenyTheseApps**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -162,8 +170,8 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -171,17 +179,19 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1709. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps. Value type is string.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/Description-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="cellular-letappsaccesscellulardata_userincontroloftheseapps"></a>**Cellular/LetAppsAccessCellularData_UserInControlOfTheseApps**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -203,8 +213,8 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -212,17 +222,19 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, version 1709. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the cellular data access setting for the listed apps. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps. Value type is string.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/Description-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="cellular-showappcellularaccessui"></a>**Cellular/ShowAppCellularAccessUI**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -244,8 +256,8 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -253,8 +265,8 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 This policy setting configures the visibility of the link to the per-application cellular access control page in the cellular setting UX.
 
 If this policy setting is enabled, a drop-down list box presenting possible values will be active.  Select "Hide" or "Show" to hide or show the link to the per-application cellular access control page.
@@ -266,7 +278,7 @@ Supported values:
 - 0 - Hide
 - 1 - Show
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -274,15 +286,15 @@ Supported values:
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Set Per-App Cellular Access UI Visibility*
 -   GP name: *ShowAppCellularAccessUI*
 -   GP path: *Network/WWAN Service/WWAN UI Settings*
 -   GP ADMX file name: *wwansvc.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -291,7 +303,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 
 <!--StartEAS-->
 ## <a href="" id="eas"></a>Cellular policies that can be set using Exchange Active Sync (EAS)  

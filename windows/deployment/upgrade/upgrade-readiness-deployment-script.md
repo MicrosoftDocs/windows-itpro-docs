@@ -27,7 +27,7 @@ The Upgrade Readiness deployment script does the following:
 3.  Checks whether the computer has a pending restart.  
 4.  Verifies that the latest version of KB package 10.0.x is installed (version 10.0.14348 or later is required, but version 10.0.14913 or later is recommended).
 5.  If enabled, turns on verbose mode for troubleshooting.
-6.  Initiates the collection of the telemetry data that Microsoft needs to assess your organization’s upgrade readiness.
+6.  Initiates the collection of the diagnostic data that Microsoft needs to assess your organization’s upgrade readiness.
 7.  If enabled, displays the script’s progress in a cmd window, providing you immediate visibility into issues (success or fail for each step) and/or writes to log file.
 
 ## Running the script
@@ -169,7 +169,7 @@ The deployment script displays the following exit codes to let you know if it wa
     </tr>
     <tr>
         <td>18 - Appraiser KBs not installed or **appraiser.dll** not found.</td>
-        <td>Either the Appraiser KBs are not installed, or the **appraiser.dll** file was not found. For more information, see appraiser telemetry events and fields information in the [Data collection](https://technet.microsoft.com/itpro/windows/deploy/upgrade-readiness-get-started#data-collection-and-privacy) and privacy topic.</td>
+        <td>Either the Appraiser KBs are not installed, or the **appraiser.dll** file was not found. For more information, see appraiser diagnostic data events and fields information in the [Data collection](https://technet.microsoft.com/itpro/windows/deploy/upgrade-readiness-get-started#data-collection-and-privacy) and privacy topic.</td>
     </tr>
     <tr>
         <td>19 - Function **CheckAppraiserKB**, which checks the compatibility update KBs, failed with unexpected exception.</td>
@@ -263,7 +263,7 @@ The deployment script displays the following exit codes to let you know if it wa
 \Windows\DataCollection**</font>
         or <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows
 \CurrentVersion\Policies\DataCollection**</font></td>
-        <td>For Windows 10 machines, the **AllowTelemetry** property should be set to 1 or greater to enable data collection. The script will throw an error if this is not true. For more information, see [Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization).</td>
+        <td>For Windows 10 machines, the **AllowTelemetry** property should be set to 1 or greater to enable data collection. The script will throw an error if this is not true. For more information, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization).</td>
     </tr>
     <tr>
         <td>40 - Function **CheckTelemetryOptIn** failed with an unexpected exception. </td>

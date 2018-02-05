@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/03/2018
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - DeliveryOptimization
@@ -17,7 +17,7 @@ ms.date: 01/03/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## DeliveryOptimization policies  
 
 <dl>
@@ -95,11 +95,13 @@ ms.date: 01/03/2018
   </dd>
 </dl>
 
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-doabsolutemaxcachesize"></a>**DeliveryOptimization/DOAbsoluteMaxCacheSize**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -121,8 +123,8 @@ ms.date: 01/03/2018
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -130,23 +132,25 @@ ms.date: 01/03/2018
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
 
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies the maximum size in GB of Delivery Optimization cache. This policy overrides the DOMaxCacheSize policy. The value 0 (zero) means "unlimited" cache. Delivery Optimization will clear the cache when the device is running low on disk space.
+Added in Windows 10, version 1607. Specifies the maximum size in GB of Delivery Optimization cache. This policy overrides the DOMaxCacheSize policy. The value 0 (zero) means "unlimited" cache. Delivery Optimization will clear the cache when the device is running low on disk space.
 
-<p style="margin-left: 20px">The default value is 10.
+The default value is 10.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/Description-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-doallowvpnpeercaching"></a>**DeliveryOptimization/DOAllowVPNPeerCaching**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -168,8 +172,8 @@ ms.date: 01/03/2018
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -177,15 +181,15 @@ ms.date: 01/03/2018
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
 
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether the device is allowed to participate in Peer Caching while connected via VPN to the domain network. This means the device can download from or upload to other domain network devices, either on VPN or on the corporate domain network.
+Added in Windows 10, version 1703. Specifies whether the device is allowed to participate in Peer Caching while connected via VPN to the domain network. This means the device can download from or upload to other domain network devices, either on VPN or on the corporate domain network.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -193,12 +197,14 @@ The following list shows the supported values:
 -   1 - Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-dodelaybackgrounddownloadfromhttp"></a>**DeliveryOptimization/DODelayBackgroundDownloadFromHttp**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -220,8 +226,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -229,28 +235,21 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, next major update. This policy allows you to delay the use of an HTTP source in a background download that is allowed to use peer-to-peer.
 
 After the max delay is reached, the download will resume using HTTP, either downloading the entire payload or complementing the bytes that could not be downloaded from peers. Note that a download that is waiting for peer sources, will appear to be stuck for the end user. The recommended value is 1 hour (3600).
 
-<!--EndDescription-->
-<!--SupportedValues-->
+<!--/Description-->
+<!--/Policy-->
 
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--EndPolicy-->
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-dodelayforegrounddownloadfromhttp"></a>**DeliveryOptimization/DODelayForegroundDownloadFromHttp**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -272,8 +271,8 @@ After the max delay is reached, the download will resume using HTTP, either down
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -281,8 +280,8 @@ After the max delay is reached, the download will resume using HTTP, either down
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, next major update. This policy allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use peer-to-peer.
 
 After the max delay has reached, the download will resume using HTTP, either downloading the entire payload or complementing the bytes that could not be downloaded from Peers.
@@ -291,26 +290,23 @@ Note that a download that is waiting for peer sources, will appear to be stuck f
 
 The recommended value is 1 minute (60).
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values as number of seconds:
 
 -   0 to 86400 (1 day)
 -   0 - managed by the cloud service
 -   Default is not configured.
+
 <!--/SupportedValues-->
-<!--Example-->
+<!--/Policy-->
 
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--EndPolicy-->
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-dodownloadmode"></a>**DeliveryOptimization/DODownloadMode**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -332,8 +328,8 @@ The following list shows the supported values as number of seconds:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -341,15 +337,15 @@ The following list shows the supported values as number of seconds:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
 
-<p style="margin-left: 20px">Specifies the download method that Delivery Optimization can use in downloads of Windows Updates, Apps and App updates.
+Specifies the download method that Delivery Optimization can use in downloads of Windows Updates, Apps and App updates.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -361,12 +357,14 @@ The following list shows the supported values:
 -   100 - Bypass mode. Do not use Delivery Optimization and use BITS instead. Added in Windows 10, version 1607.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-dogroupid"></a>**DeliveryOptimization/DOGroupId**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -388,8 +386,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -397,24 +395,26 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
 
-<p style="margin-left: 20px">This Policy specifies an arbitrary group ID that the device belongs to. Use this if you need to create a single group for Local Network Peering for branches that are on different domains or are not on the same LAN. Note that this is a best effort optimization and should not be relied on for an authentication of identity.
+This Policy specifies an arbitrary group ID that the device belongs to. Use this if you need to create a single group for Local Network Peering for branches that are on different domains or are not on the same LAN. Note that this is a best effort optimization and should not be relied on for an authentication of identity.
 
 > [!NOTE]
 > You must use a GUID as the group ID.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/Description-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-dogroupidsource"></a>**DeliveryOptimization/DOGroupIdSource**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -436,8 +436,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -445,8 +445,8 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, next major update. Set this policy to restrict peer selection to a specific source. Options available are: 1 = AD Site, 2 = Authenticated domain SID, 3 = DHCP Option ID, 4 = DNS Suffix
 
 When set, the Group ID will be assigned automatically from the selected source.
@@ -457,7 +457,7 @@ The options set in this policy only apply to Group (2) download mode. If Group (
 
 For option 4 - DHCP Option ID, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -465,19 +465,16 @@ The following list shows the supported values:
 -   2 - Authenticated domain SID
 -   3 - DHCP user option
 -   4 - DNS suffix
+
 <!--/SupportedValues-->
-<!--Example-->
+<!--/Policy-->
 
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--EndPolicy-->
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-domaxcacheage"></a>**DeliveryOptimization/DOMaxCacheAge**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -499,8 +496,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -508,23 +505,25 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
 
-<p style="margin-left: 20px">Specifies the maximum time in seconds that each file is held in the Delivery Optimization cache after downloading successfully. The value 0 (zero) means "unlimited"; Delivery Optimization will hold the files in the cache longer and make the files available for uploads to other devices, as long as the cache size has not exceeded. The value 0 is new in Windows 10, version 1607.
+Specifies the maximum time in seconds that each file is held in the Delivery Optimization cache after downloading successfully. The value 0 (zero) means "unlimited"; Delivery Optimization will hold the files in the cache longer and make the files available for uploads to other devices, as long as the cache size has not exceeded. The value 0 is new in Windows 10, version 1607.
 
-<p style="margin-left: 20px">The default value is 259200 seconds (3 days).
+The default value is 259200 seconds (3 days).
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/Description-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-domaxcachesize"></a>**DeliveryOptimization/DOMaxCacheSize**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -546,8 +545,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -555,23 +554,25 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
  
-<p style="margin-left: 20px">Specifies the maximum cache size that Delivery Optimization can utilize, as a percentage of disk size (1-100).
+Specifies the maximum cache size that Delivery Optimization can utilize, as a percentage of disk size (1-100).
 
-<p style="margin-left: 20px">The default value is 20.
+The default value is 20.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/Description-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-domaxdownloadbandwidth"></a>**DeliveryOptimization/DOMaxDownloadBandwidth**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -593,8 +594,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -602,23 +603,25 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
  
 
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies the maximum download bandwidth in KiloBytes/second that the device can use across all concurrent download activities using Delivery Optimization.
+Added in Windows 10, version 1607. Specifies the maximum download bandwidth in KiloBytes/second that the device can use across all concurrent download activities using Delivery Optimization.
 
-<p style="margin-left: 20px">The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
+The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/Description-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-domaxuploadbandwidth"></a>**DeliveryOptimization/DOMaxUploadBandwidth**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -640,8 +643,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -649,23 +652,25 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
  
-<p style="margin-left: 20px">Specifies the maximum upload bandwidth in KiloBytes/second that a device will use across all concurrent upload activity using Delivery Optimization.
+Specifies the maximum upload bandwidth in KiloBytes/second that a device will use across all concurrent upload activity using Delivery Optimization.
 
-<p style="margin-left: 20px">The default value is 0, which permits unlimited possible bandwidth (optimized for minimal usage of upload bandwidth).
+The default value is 0, which permits unlimited possible bandwidth (optimized for minimal usage of upload bandwidth).
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/Description-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-dominbackgroundqos"></a>**DeliveryOptimization/DOMinBackgroundQos**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -687,8 +692,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -696,23 +701,25 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
 
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies the minimum download QoS (Quality of Service or speed) in KiloBytes/sec for background downloads. This policy affects the blending of peer and HTTP sources. Delivery Optimization complements the download from the HTTP source to achieve the minimum QoS value set.
+Added in Windows 10, version 1607. Specifies the minimum download QoS (Quality of Service or speed) in KiloBytes/sec for background downloads. This policy affects the blending of peer and HTTP sources. Delivery Optimization complements the download from the HTTP source to achieve the minimum QoS value set.
 
-<p style="margin-left: 20px">The default value is 500.
+The default value is 500.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/Description-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-dominbatterypercentageallowedtoupload"></a>**DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -734,8 +741,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -743,22 +750,24 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Business, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies any value between 1 and 100 (in percentage) to allow the device to upload data to LAN and Group peers while on battery power. Uploads will automatically pause when the battery level drops below the set minimum battery level. The recommended value to set is 40 (for 40%) if you allow uploads on battery.
+Added in Windows 10, version 1703. Specifies any value between 1 and 100 (in percentage) to allow the device to upload data to LAN and Group peers while on battery power. Uploads will automatically pause when the battery level drops below the set minimum battery level. The recommended value to set is 40 (for 40%) if you allow uploads on battery.
 
-<p style="margin-left: 20px">The default value is 0. The value 0 (zero) means "not limited" and the cloud service default value will be used.
+The default value is 0. The value 0 (zero) means "not limited" and the cloud service default value will be used.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/Description-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-domindisksizeallowedtopeer"></a>**DeliveryOptimization/DOMinDiskSizeAllowedToPeer**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -780,8 +789,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -789,26 +798,28 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Business, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
 
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the required minimum disk size (capacity in GB) for the device to use Peer Caching. The value 0 means "not-limited" which means the cloud service set default value will be used. Recommended values: 64 GB to 256 GB.
+Added in Windows 10, version 1703. Specifies the required minimum disk size (capacity in GB) for the device to use Peer Caching. The value 0 means "not-limited" which means the cloud service set default value will be used. Recommended values: 64 GB to 256 GB.
 
 > [!NOTE]
 > If the DOMofidyCacheDrive policy is set, the disk size check will apply to the new working directory specified by this policy.
 
-<p style="margin-left: 20px">The default value is 32 GB.
+The default value is 32 GB.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/Description-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-dominfilesizetocache"></a>**DeliveryOptimization/DOMinFileSizeToCache**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -830,8 +841,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -839,23 +850,25 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Business, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
 
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the minimum content file size in MB enabled to use Peer Caching. The value 0 means "unlimited" which means the cloud service set default value will be used. Recommended values: 1 MB to 100,000 MB.
+Added in Windows 10, version 1703. Specifies the minimum content file size in MB enabled to use Peer Caching. The value 0 means "unlimited" which means the cloud service set default value will be used. Recommended values: 1 MB to 100,000 MB.
 
-<p style="margin-left: 20px">The default value is 100 MB.
+The default value is 100 MB.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/Description-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-dominramallowedtopeer"></a>**DeliveryOptimization/DOMinRAMAllowedToPeer**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -877,8 +890,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -886,23 +899,25 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Business, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
 
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the minimum RAM size in GB required to use Peer Caching. The value 0 means "not-limited" which means the cloud service set default value will be used. For example if the minimum set is 1 GB, then devices with 1 GB or higher available RAM will be allowed to use Peer caching. Recommended values: 1 GB to 4 GB.
+Added in Windows 10, version 1703. Specifies the minimum RAM size in GB required to use Peer Caching. The value 0 means "not-limited" which means the cloud service set default value will be used. For example if the minimum set is 1 GB, then devices with 1 GB or higher available RAM will be allowed to use Peer caching. Recommended values: 1 GB to 4 GB.
 
-<p style="margin-left: 20px">The default value is 4 GB.
+The default value is 4 GB.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/Description-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-domodifycachedrive"></a>**DeliveryOptimization/DOModifyCacheDrive**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -924,8 +939,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -933,23 +948,25 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
 
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies the drive that Delivery Optimization should use for its cache. The drive location can be specified using environment variables, drive letter or using a full path.
+Added in Windows 10, version 1607. Specifies the drive that Delivery Optimization should use for its cache. The drive location can be specified using environment variables, drive letter or using a full path.
 
-<p style="margin-left: 20px">By default, %SystemDrive% is used to store the cache.
+By default, %SystemDrive% is used to store the cache.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/Description-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-domonthlyuploaddatacap"></a>**DeliveryOptimization/DOMonthlyUploadDataCap**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -971,8 +988,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -980,25 +997,27 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
 
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies the maximum total bytes in GB that Delivery Optimization is allowed to upload to Internet peers in each calendar month.
+Added in Windows 10, version 1607. Specifies the maximum total bytes in GB that Delivery Optimization is allowed to upload to Internet peers in each calendar month.
 
-<p style="margin-left: 20px">The value 0 (zero) means "unlimited"; No monthly upload limit is applied if 0 is set.
+The value 0 (zero) means "unlimited"; No monthly upload limit is applied if 0 is set.
 
-<p style="margin-left: 20px">The default value is 20.
+The default value is 20.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/Description-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-dopercentagemaxbackdownloadbandwidth"></a>**DeliveryOptimization/DOPercentageMaxBackDownloadBandwidth**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1020,8 +1039,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1029,36 +1048,32 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, next major update. Specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for background downloads.
 
 Note that downloads from LAN peers will not be throttled even when this policy is set.
-<!--EndDescription-->
-<!--SupportedValues-->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!--/Description-->
+<!--/Policy-->
 
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--EndPolicy-->
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-dopercentagemaxdownloadbandwidth"></a>**DeliveryOptimization/DOPercentageMaxDownloadBandwidth**  
 
-<!--StartDescription-->
+<!--Description-->
 This policy is deprecated. Use [DOPercentageMaxForeDownloadBandwidth](#deliveryoptimization-dopercentagemaxforedownloadbandwidth) and [DOPercentageMaxBackDownloadBandwidth](#deliveryoptimization-dopercentagemaxbackdownloadbandwidth) policies instead.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/Description-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-dopercentagemaxforedownloadbandwidth"></a>**DeliveryOptimization/DOPercentageMaxForeDownloadBandwidth**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1080,8 +1095,8 @@ This policy is deprecated. Use [DOPercentageMaxForeDownloadBandwidth](#deliveryo
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1089,27 +1104,21 @@ This policy is deprecated. Use [DOPercentageMaxForeDownloadBandwidth](#deliveryo
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, next major update. Specifies the maximum foreground download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads.
 
 Note that downloads from LAN peers will not be throttled even when this policy is set.
-<!--EndDescription-->
-<!--SupportedValues-->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!--/Description-->
+<!--/Policy-->
 
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--EndPolicy-->
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-dorestrictpeerselectionby"></a>**DeliveryOptimization/DORestrictPeerSelectionBy**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1131,8 +1140,8 @@ Note that downloads from LAN peers will not be throttled even when this policy i
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1140,32 +1149,28 @@ Note that downloads from LAN peers will not be throttled even when this policy i
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, next major update. Set this policy to restrict peer selection via selected option. 
 Options available are: 1=Subnet mask (more options will be added in a future release).
 
 Option 1 (Subnet mask) applies to both Download Mode LAN (1) and Group (2).
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
 -   1 - Subnet mask.
 
 <!--/SupportedValues-->
-<!--Example-->
+<!--/Policy-->
 
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--EndPolicy-->
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth"></a>**DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1187,8 +1192,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1196,31 +1201,29 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, next major update. Specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth. 
  
 Note that downloads from LAN peers will not be throttled even when this policy is set.
-<!--EndDescription-->
+
+<!--/Description-->
 <!--SupportedValues-->
 This policy allows an IT Admin to define the following:
 
 -  Business hours range (for example 06:00 to 18:00)
 -  % of throttle for foreground traffic during business hours
 -  % of throttle for foreground traffic outside of business hours
+
 <!--/SupportedValues-->
-<!--Example-->
+<!--/Policy-->
 
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--EndPolicy-->
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth"></a>**DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1242,8 +1245,8 @@ This policy allows an IT Admin to define the following:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1251,26 +1254,22 @@ This policy allows an IT Admin to define the following:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, next major update. Specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth. 
  
 Note that downloads from LAN peers will not be throttled even when this policy is set.
-<!--EndDescription-->
+
+<!--/Description-->
 <!--SupportedValues-->
 This policy allows an IT Admin to define the following:
 
 -  Business hours range (for example 06:00 to 18:00)
 -  % of throttle for foreground traffic during business hours
 -  % of throttle for foreground traffic outside of business hours
+
 <!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -1279,7 +1278,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>DeliveryOptimization policies supported by Microsoft Surface Hub  

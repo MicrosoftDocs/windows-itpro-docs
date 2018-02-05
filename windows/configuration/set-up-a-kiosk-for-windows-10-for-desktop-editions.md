@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.date: 01/31/2018
 ---
 
 # Set up a kiosk on Windows 10 Pro, Enterprise, or Education
@@ -37,9 +37,15 @@ To return the device to the regular shell, see [Sign out of assigned access](#si
 >[!NOTE]
 >A Universal Windows app is built on the Universal Windows Platform (UWP), which was first introduced in Windows 8 as the Windows Runtime. A Classic Windows application uses the Classic Windows Platform (CWP) (e.g., COM, Win32, WPF, WinForms, etc.) and is typically launched using an .EXE or .DLL file.
 
- 
+## Using a local device as a kiosk
 
+When your kiosk is a local device that is not managed by Active Directory or Azure Active Directory, there is a default setting that enables automatic sign-in after a restart. That means that when the device restarts, the last signed-in user will be signed in automatically. If the last signed-in user is the kiosk account, the kiosk app will be launched automatically after the device restarts.
 
+If you want the kiosk account signed in automatically and the kiosk app launched when the device restarts, there is nothing you need to do.
+
+If you do not want the kiosk account signed in automatically when the device restarts, you must change the default setting before you configure the device as a kiosk. Sign in with the account that you will assign as the kiosk account, go to **Settings** > **Accounts** > **Sign-in options**, and toggle the **Use my sign-in info to automatically finish setting up my device after an update or restart** setting to **Off**. After you change the setting, you can apply the kiosk configuration to the device.
+
+![Screenshot of automatic sign-in setting](images/auto-signin.png)
 
 <span id="wizard" />
 ## Set up a kiosk using Windows Configuration Designer
@@ -433,6 +439,5 @@ For a more secure kiosk experience, we recommend that you make the following con
 
 - [Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise](mobile-devices/set-up-a-kiosk-for-windows-10-for-mobile-edition.md)
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=set-up-a-kiosk-for-windows-10-for-desktop-editions.md).
 
 

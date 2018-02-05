@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/19/2017
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - System
@@ -17,7 +17,7 @@ ms.date: 12/19/2017
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## System policies  
 
 <dl>
@@ -68,11 +68,13 @@ ms.date: 12/19/2017
   </dd>
 </dl>
 
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="system-allowbuildpreview"></a>**System/AllowBuildPreview**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -94,8 +96,8 @@ ms.date: 12/19/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -103,29 +105,33 @@ ms.date: 12/19/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy setting applies only to devices running Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, Windows 10 Mobile, and Windows 10 Mobile Enterprise.
 
 
-<p style="margin-left: 20px">This policy setting determines whether users can access the Insider build controls in the Advanced Options for Windows Update. These controls are located under "Get Insider builds," and enable users to make their devices available for downloading and installing Windows preview software.
+This policy setting determines whether users can access the Insider build controls in the Advanced Options for Windows Update. These controls are located under "Get Insider builds," and enable users to make their devices available for downloading and installing Windows preview software.
 
-<p style="margin-left: 20px">If you enable or do not configure this policy setting, users can download and install Windows preview software on their devices. If you disable this policy setting, the item "Get Insider builds" will be unavailable.
+If you enable or do not configure this policy setting, users can download and install Windows preview software on their devices. If you disable this policy setting, the item "Get Insider builds" will be unavailable.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed. The item "Get Insider builds" is unavailable, users are unable to make their devices available for preview software.
 -   1 – Allowed. Users can make their devices available for downloading and installing preview software.
 -   2 (default) – Not configured. Users can make their devices available for downloading and installing preview software.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/SupportedValues-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="system-allowembeddedmode"></a>**System/AllowEmbeddedMode**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -147,8 +153,8 @@ ms.date: 12/19/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -156,13 +162,13 @@ ms.date: 12/19/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether set general purpose device to be in embedded mode.
+<!--/Scope-->
+<!--Description-->
+Specifies whether set general purpose device to be in embedded mode.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -170,12 +176,14 @@ The following list shows the supported values:
 -   1 – Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="system-allowexperimentation"></a>**System/AllowExperimentation**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -197,8 +205,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -206,28 +214,33 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 > [!NOTE]
 > This policy is not supported in Windows 10, version 1607.
 
-<p style="margin-left: 20px">This policy setting determines the level that Microsoft can experiment with the product to study user preferences or device behavior.
+This policy setting determines the level that Microsoft can experiment with the product to study user preferences or device behavior.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+
+Most restricted value is 0.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Disabled.
 -   1 (default) – Permits Microsoft to configure device settings only.
 -   2 – Allows Microsoft to conduct full experimentations.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+<!--/SupportedValues-->
+<!--/Policy-->
 
-<!--EndDescription-->
-<!--EndPolicy-->
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="system-allowfontproviders"></a>**System/AllowFontProviders**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -249,8 +262,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -258,22 +271,18 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Boolean policy setting that determines whether Windows is allowed to download fonts and font catalog data from an online font provider. If you enable this setting, Windows periodically queries an online font provider to determine whether a new font catalog is available. Windows may also download font data if needed to format or render text. If you disable this policy setting, Windows does not connect to an online font provider and only enumerates locally-installed fonts.
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1703. Boolean policy setting that determines whether Windows is allowed to download fonts and font catalog data from an online font provider. If you enable this setting, Windows periodically queries an online font provider to determine whether a new font catalog is available. Windows may also download font data if needed to format or render text. If you disable this policy setting, Windows does not connect to an online font provider and only enumerates locally-installed fonts.
 
-<p style="margin-left: 20px">This MDM setting corresponds to the EnableFontProviders Group Policy setting. If both the Group Policy and the MDM settings are configured, the group policy setting takes precedence. If neither is configured, the behavior depends on a DisableFontProviders registry value. In server editions, this registry value is set to 1 by default, so the default behavior is false (disabled). In all other editions, the registry value is not set by default, so the default behavior is true (enabled).
+This MDM setting corresponds to the EnableFontProviders Group Policy setting. If both the Group Policy and the MDM settings are configured, the group policy setting takes precedence. If neither is configured, the behavior depends on a DisableFontProviders registry value. In server editions, this registry value is set to 1 by default, so the default behavior is false (disabled). In all other editions, the registry value is not set by default, so the default behavior is true (enabled).
 
-<p style="margin-left: 20px">This setting is used by lower-level components for text display and fond handling and has not direct effect on web browsers, which may download web fonts used in web content.
+This setting is used by lower-level components for text display and fond handling and has not direct effect on web browsers, which may download web fonts used in web content.
 
 > [!Note]  
 > Reboot is required after setting the policy; alternatively you can stop and restart the FontCache service.
 
-<p style="margin-left: 20px">To verify if System/AllowFontProviders is set to true:  
-
--  After a client machine is rebooted, check whether there is any network traffic from client machine to fs.microsoft.com.
-
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -281,12 +290,20 @@ The following list shows the supported values:
 -   1 - true (default) - There may be network traffic to fs.microsoft.com and downloadable fonts are available to apps that support them.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--Validation-->
+To verify if System/AllowFontProviders is set to true:  
+
+-  After a client machine is rebooted, check whether there is any network traffic from client machine to fs.microsoft.com.
+
+<!--/Validation-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="system-allowlocation"></a>**System/AllowLocation**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -308,8 +325,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -317,31 +334,36 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether to allow app access to the Location service.
+<!--/Scope-->
+<!--Description-->
+Specifies whether to allow app access to the Location service.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+
+Most restricted value is 0.
+
+While the policy is set to 0 (Force Location Off) or 2 (Force Location On), any Location service call from an app would trigger the value set by this policy.
+
+When switching the policy back from 0 (Force Location Off) or 2 (Force Location On) to 1 (User Control), the app reverts to its original Location service setting.
+
+For example, an app's original Location setting is Off. The administrator then sets the **AllowLocation** policy to 2 (Force Location On.) The Location service starts working for that app, overriding the original setting. Later, if the administrator switches the **AllowLocation** policy back to 1 (User Control), the app will revert to using its original setting of Off.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Force Location Off. All Location Privacy settings are toggled off and greyed out. Users cannot change the settings, and no apps are allowed access to the Location service, including Cortana and Search.
 -   1 (default) – Location service is allowed. The user has control and can change Location Privacy settings on or off.
 -   2 – Force Location On. All Location Privacy settings are toggled on and greyed out. Users cannot change the settings and all consent permissions will be automatically suppressed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+<!--/SupportedValues-->
+<!--/Policy-->
 
-<p style="margin-left: 20px">While the policy is set to 0 (Force Location Off) or 2 (Force Location On), any Location service call from an app would trigger the value set by this policy.
-
-<p style="margin-left: 20px">When switching the policy back from 0 (Force Location Off) or 2 (Force Location On) to 1 (User Control), the app reverts to its original Location service setting.
-
-<p style="margin-left: 20px">For example, an app's original Location setting is Off. The administrator then sets the **AllowLocation** policy to 2 (Force Location On.) The Location service starts working for that app, overriding the original setting. Later, if the administrator switches the **AllowLocation** policy back to 1 (User Control), the app will revert to using its original setting of Off.
-
-<!--EndDescription-->
-<!--EndPolicy-->
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="system-allowstoragecard"></a>**System/AllowStorageCard**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -363,8 +385,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -372,13 +394,13 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Controls whether the user is allowed to use the storage card for device storage. This setting prevents programmatic access to the storage card.
+<!--/Scope-->
+<!--Description-->
+Controls whether the user is allowed to use the storage card for device storage. This setting prevents programmatic access to the storage card.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -386,12 +408,14 @@ The following list shows the supported values:
 -   1 (default) – Allow a storage card.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="system-allowtelemetry"></a>**System/AllowTelemetry**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -413,8 +437,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -423,11 +447,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Allow the device to send diagnostic and usage telemetry data, such as Watson.
+<!--/Scope-->
+<!--Description-->
+Allow the device to send diagnostic and usage telemetry data, such as Watson.
 
-<p style="margin-left: 20px">The following tables describe the supported values:
+The following tables describe the supported values:
 
 Windows 8.1 Values:
 
@@ -500,15 +524,17 @@ Windows 10 Values:
 > If you are using Windows 8.1 MDM server and set a value of 0 using the legacy AllowTelemetry policy on a Windows 10 Mobile device, then the value is not respected and the telemetry level is silently set to level 1.
 
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/Description-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="system-allowusertoresetphone"></a>**System/AllowUserToResetPhone**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -530,8 +556,8 @@ Windows 10 Values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -539,13 +565,13 @@ Windows 10 Values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether to allow the user to factory reset the phone by using control panel and hardware key combination.
+<!--/Scope-->
+<!--Description-->
+Specifies whether to allow the user to factory reset the phone by using control panel and hardware key combination.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+Most restricted value is 0.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 orted values:
@@ -554,12 +580,14 @@ orted values:
 -   1 (default) – Allowed to reset to factory default settings.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="system-bootstartdriverinitialization"></a>**System/BootStartDriverInitialization**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -581,8 +609,8 @@ orted values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -590,11 +618,11 @@ orted values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 N/A
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -602,18 +630,20 @@ N/A
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP name: *POL_DriverLoadPolicy_Name*
 -   GP ADMX file name: *earlylauncham.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="system-disableenterpriseauthproxy"></a>**System/DisableEnterpriseAuthProxy**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -635,8 +665,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -644,20 +674,19 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 This policy setting blocks the Connected User Experience and Telemetry service from automatically using an authenticated proxy to send data back to Microsoft on Windows 10. If you disable or do not configure this policy setting, the Connected User Experience and Telemetry service will automatically use an authenticated proxy to send data back to Microsoft. Enabling this policy will block the Connected User Experience and Telemetry service from automatically using an authenticated proxy.
 
-<!--EndDescription-->
-<!--SupportedValues-->
+<!--/Description-->
+<!--/Policy-->
 
-<!--/SupportedValues-->
-<!--EndPolicy-->
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="system-disableonedrivefilesync"></a>**System/DisableOneDriveFileSync**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -679,8 +708,8 @@ This policy setting blocks the Connected User Experience and Telemetry service f
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -688,9 +717,9 @@ This policy setting blocks the Connected User Experience and Telemetry service f
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to prevent apps and features from working with files on OneDrive. If you enable this policy setting:
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1703. Allows IT Admins to prevent apps and features from working with files on OneDrive. If you enable this policy setting:
 
 * Users cannot access OneDrive from the OneDrive app or file picker.
 * Microsoft Store apps cannot access OneDrive using the WinRT API.
@@ -698,15 +727,9 @@ This policy setting blocks the Connected User Experience and Telemetry service f
 * OneDrive files are not kept in sync with the cloud.
 * Users cannot automatically upload photos and videos from the camera roll folder. 
 
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, apps and features can work with OneDrive file storage.
+If you disable or do not configure this policy setting, apps and features can work with OneDrive file storage.
 
-<p style="margin-left: 20px">To validate on Desktop, do the following:
-
-1.   Enable policy.
-2.   Restart machine.
-3.   Verify that OneDrive.exe is not running in Task Manager.
-
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -714,12 +737,22 @@ The following list shows the supported values:
 -   1 – True (sync disabled).
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--Validation-->
+To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Restart machine.
+3.   Verify that OneDrive.exe is not running in Task Manager.
+
+<!--/Validation-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="system-disablesystemrestore"></a>**System/DisableSystemRestore**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -741,8 +774,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -750,8 +783,8 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Allows you to disable System Restore.
 
 This policy setting allows you to turn off System Restore.
@@ -764,7 +797,7 @@ If you disable or do not configure this policy setting, users can perform System
 
 Also, see the "Turn off System Restore configuration" policy setting. If the "Turn off System Restore" policy setting is disabled or not configured, the "Turn off System Restore configuration" policy setting is used to determine whether the option to configure System Restore is available.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -772,20 +805,22 @@ Also, see the "Turn off System Restore configuration" policy setting. If the "Tu
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Turn off System Restore*
 -   GP name: *SR_DisableSR*
 -   GP path: *System/System Restore*
 -   GP ADMX file name: *systemrestore.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="system-feedbackhubalwayssavediagnosticslocally"></a>**System/FeedbackHubAlwaysSaveDiagnosticsLocally**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -793,6 +828,8 @@ ADMX Info:
 	<th>Business</th>
 	<th>Enterprise</th>
 	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
@@ -800,11 +837,13 @@ ADMX Info:
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td></td>
+	<td></td>
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -812,11 +851,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Added in Windows 10, next major update. When filing feedback in the Feedback Hub, diagnostic logs are collected for certain types of feedback. We now offer the option for users to save it locally, in addition to sending it to Microsoft. This policy will allow enterprises to mandate that all diagnostics are saved locally for use in internal investigations.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:  
 
@@ -824,18 +863,14 @@ The following list shows the supported values:
 - 1 - True. The Feedback Hub should always save a local copy of diagnostics that may be created when a feedback is submitted.
 
 <!--/SupportedValues-->
-<!--Example-->
+<!--/Policy-->
 
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--EndPolicy-->
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="system-limitenhanceddiagnosticdatawindowsanalytics"></a>**System/LimitEnhancedDiagnosticDataWindowsAnalytics**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -857,8 +892,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -866,30 +901,32 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">This policy setting, in combination with the System/AllowTelemetry 
+<!--/Scope-->
+<!--Description-->
+This policy setting, in combination with the System/AllowTelemetry 
  policy setting, enables organizations to send Microsoft a specific set of diagnostic data for IT insights via Windows Analytics services. 
  
-<p style="margin-left: 20px">To enable this behavior you must complete two steps:
+To enable this behavior you must complete two steps:
 <ul>
 <li>Enable this policy setting</li>
 <li>Set Allow Telemetry to level 2 (Enhanced)</li>
 </ul>
  
-<p style="margin-left: 20px">When you configure these policy settings, a basic level of  diagnostic data plus additional events that are required for Windows Analytics are sent to Microsoft. These events are documented here: [Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](https://go.microsoft.com/fwlink/?linkid=847594).
+When you configure these policy settings, a basic level of  diagnostic data plus additional events that are required for Windows Analytics are sent to Microsoft. These events are documented here: [Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](https://go.microsoft.com/fwlink/?linkid=847594).
  
-<p style="margin-left: 20px">Enabling enhanced diagnostic data in the System/AllowTelemetry policy in combination with not configuring this policy will also send the required events for Windows Analytics, plus additional enhanced level telemetry data. This setting has no effect on computers configured to send full, basic or security level diagnostic data to Microsoft.
+Enabling enhanced diagnostic data in the System/AllowTelemetry policy in combination with not configuring this policy will also send the required events for Windows Analytics, plus additional enhanced level telemetry data. This setting has no effect on computers configured to send full, basic or security level diagnostic data to Microsoft.
    
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, then the level of diagnostic data sent to Microsoft is determined by the System/AllowTelemetry policy.
+If you disable or do not configure this policy setting, then the level of diagnostic data sent to Microsoft is determined by the System/AllowTelemetry policy.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/Description-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="system-telemetryproxy"></a>**System/TelemetryProxy**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -911,8 +948,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -920,14 +957,14 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Allows you to specify the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests. The format for this setting is *&lt;server&gt;:&lt;port&gt;*. The connection is made over a Secure Sockets Layer (SSL) connection. If the named proxy fails, or if there is no proxy specified when this policy is enabled, the Connected User Experiences and Telemetry data will not be transmitted and will remain on the local device.
+<!--/Scope-->
+<!--Description-->
+Allows you to specify the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests. The format for this setting is *&lt;server&gt;:&lt;port&gt;*. The connection is made over a Secure Sockets Layer (SSL) connection. If the named proxy fails, or if there is no proxy specified when this policy is enabled, the Connected User Experiences and Telemetry data will not be transmitted and will remain on the local device.
 
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, Connected User Experiences and Telemetry will go to Microsoft using the default proxy configuration.
+If you disable or do not configure this policy setting, Connected User Experiences and Telemetry will go to Microsoft using the default proxy configuration.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/Description-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -936,7 +973,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 
 <!--StartEAS-->
 ## <a href="" id="eas"></a>System policies that can be set using Exchange Active Sync (EAS)  

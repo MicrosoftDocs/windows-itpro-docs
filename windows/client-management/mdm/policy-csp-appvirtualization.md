@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - AppVirtualization
@@ -15,7 +15,7 @@ ms.date: 11/01/2017
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## AppVirtualization policies  
 
 <dl>
@@ -105,11 +105,13 @@ ms.date: 11/01/2017
   </dd>
 </dl>
 
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-allowappvclient"></a>**AppVirtualization/AllowAppVClient**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -131,8 +133,8 @@ ms.date: 11/01/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -140,11 +142,11 @@ ms.date: 11/01/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 This policy setting allows you to enable or disable Microsoft Application Virtualization (App-V) feature. Reboot is needed for disable to take effect.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -152,20 +154,22 @@ This policy setting allows you to enable or disable Microsoft Application Virtua
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Enable App-V Client*
 -   GP name: *EnableAppV*
 -   GP path: *System/App-V*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-allowdynamicvirtualization"></a>**AppVirtualization/AllowDynamicVirtualization**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -187,8 +191,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -196,11 +200,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Enables Dynamic Virtualization of supported shell extensions, browser helper objects, and ActiveX controls.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -208,20 +212,22 @@ Enables Dynamic Virtualization of supported shell extensions, browser helper obj
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Enable Dynamic Virtualization*
 -   GP name: *Virtualization_JITVEnable*
 -   GP path: *System/App-V/Virtualization*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-allowpackagecleanup"></a>**AppVirtualization/AllowPackageCleanup**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -243,8 +249,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -252,11 +258,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Enables automatic cleanup of appv packages that were added after Windows10 anniversary release.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -264,20 +270,22 @@ Enables automatic cleanup of appv packages that were added after Windows10 anniv
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Enable automatic cleanup of unused appv packages*
 -   GP name: *PackageManagement_AutoCleanupEnable*
 -   GP path: *System/App-V/PackageManagement*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-allowpackagescripts"></a>**AppVirtualization/AllowPackageScripts**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -299,8 +307,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -308,11 +316,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Enables scripts defined in the package manifest of configuration files that should run.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -320,20 +328,22 @@ Enables scripts defined in the package manifest of configuration files that shou
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Enable Package Scripts*
 -   GP name: *Scripting_Enable_Package_Scripts*
 -   GP path: *System/App-V/Scripting*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-allowpublishingrefreshux"></a>**AppVirtualization/AllowPublishingRefreshUX**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -355,8 +365,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -364,11 +374,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Enables a UX to display to the user when a publishing refresh is performed on the client.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -376,20 +386,22 @@ Enables a UX to display to the user when a publishing refresh is performed on th
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Enable Publishing Refresh UX*
 -   GP name: *Enable_Publishing_Refresh_UX*
 -   GP path: *System/App-V/Publishing*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-allowreportingserver"></a>**AppVirtualization/AllowReportingServer**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -411,8 +423,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -420,8 +432,8 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Reporting Server URL: Displays the URL of reporting server.
 
 Reporting Time: When the client data should be reported to the server. Acceptable range is 0~23, corresponding to the 24 hours in a day. A good practice is, don't set this time to a busy hour, e.g. 9AM.
@@ -434,7 +446,7 @@ Data Cache Limit: This value specifies the maximum size in megabytes (MB) of the
 
 Data Block Size: This value specifies the maximum size in bytes to transmit to the server at once on a reporting upload, to avoid permanent transmission failures when the log has reached a significant size. The  default value is 65536. When transmitting report data to the server, one block at a time of application records that is less than or equal to the block size in bytes of XML data will be removed from the cache and sent to the server. Each block will have the general Client data and global package list data prepended, and these will not factor into the block size calculations; the potential exists for an extremely large package list to result in transmission failures over low bandwidth or unreliable connections.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -442,20 +454,22 @@ Data Block Size: This value specifies the maximum size in bytes to transmit to t
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Reporting Server*
 -   GP name: *Reporting_Server_Policy*
 -   GP path: *System/App-V/Reporting*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-allowroamingfileexclusions"></a>**AppVirtualization/AllowRoamingFileExclusions**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -477,8 +491,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -486,11 +500,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Specifies the file paths relative to %userprofile% that do not roam with a user's profile. Example usage: /FILEEXCLUSIONLIST='desktop;my pictures'.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -498,20 +512,22 @@ Specifies the file paths relative to %userprofile% that do not roam with a user'
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Roaming File Exclusions*
 -   GP name: *Integration_Roaming_File_Exclusions*
 -   GP path: *System/App-V/Integration*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-allowroamingregistryexclusions"></a>**AppVirtualization/AllowRoamingRegistryExclusions**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -533,8 +549,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -542,11 +558,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Specifies the registry paths that do not roam with a user profile. Example usage: /REGISTRYEXCLUSIONLIST=software\classes;software\clients.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -554,20 +570,22 @@ Specifies the registry paths that do not roam with a user profile. Example usage
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Roaming Registry Exclusions*
 -   GP name: *Integration_Roaming_Registry_Exclusions*
 -   GP path: *System/App-V/Integration*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-allowstreamingautoload"></a>**AppVirtualization/AllowStreamingAutoload**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -589,8 +607,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -598,11 +616,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Specifies how new packages should be loaded automatically by App-V on a specific computer.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -610,20 +628,22 @@ Specifies how new packages should be loaded automatically by App-V on a specific
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Specify what to load in background (aka AutoLoad)*
 -   GP name: *Steaming_Autoload*
 -   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-clientcoexistenceallowmigrationmode"></a>**AppVirtualization/ClientCoexistenceAllowMigrationmode**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -645,8 +665,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -654,11 +674,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Migration mode allows the App-V client to modify shortcuts and FTA's for packages created using a previous version of App-V.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -666,20 +686,22 @@ Migration mode allows the App-V client to modify shortcuts and FTA's for package
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Enable Migration Mode*
 -   GP name: *Client_Coexistence_Enable_Migration_mode*
 -   GP path: *System/App-V/Client Coexistence*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-integrationallowrootglobal"></a>**AppVirtualization/IntegrationAllowRootGlobal**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -701,8 +723,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -710,11 +732,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Specifies the location where symbolic links are created to the current version of a per-user published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links are not used during publishing. Example: %localappdata%\Microsoft\AppV\Client\Integration.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -722,20 +744,22 @@ Specifies the location where symbolic links are created to the current version o
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Integration Root User*
 -   GP name: *Integration_Root_User*
 -   GP path: *System/App-V/Integration*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-integrationallowrootuser"></a>**AppVirtualization/IntegrationAllowRootUser**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -757,8 +781,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -766,11 +790,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Specifies the location where symbolic links are created to the current version of a globally published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links are not used during publishing. Example: %allusersprofile%\Microsoft\AppV\Client\Integration.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -778,20 +802,22 @@ Specifies the location where symbolic links are created to the current version o
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Integration Root Global*
 -   GP name: *Integration_Root_Global*
 -   GP path: *System/App-V/Integration*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-publishingallowserver1"></a>**AppVirtualization/PublishingAllowServer1**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -813,8 +839,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -822,8 +848,8 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Publishing Server Display Name: Displays the name of publishing server.
 
 Publishing Server URL: Displays the URL of publishing server.
@@ -844,7 +870,7 @@ User Publishing Refresh Interval: Specifies the publishing refresh interval usin
 
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -852,20 +878,22 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Publishing Server 1 Settings*
 -   GP name: *Publishing_Server1_Policy*
 -   GP path: *System/App-V/Publishing*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-publishingallowserver2"></a>**AppVirtualization/PublishingAllowServer2**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -887,8 +915,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -896,8 +924,8 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Publishing Server Display Name: Displays the name of publishing server.
 
 Publishing Server URL: Displays the URL of publishing server.
@@ -918,7 +946,7 @@ User Publishing Refresh Interval: Specifies the publishing refresh interval usin
 
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -926,20 +954,22 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Publishing Server 2 Settings*
 -   GP name: *Publishing_Server2_Policy*
 -   GP path: *System/App-V/Publishing*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-publishingallowserver3"></a>**AppVirtualization/PublishingAllowServer3**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -961,8 +991,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -970,8 +1000,8 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Publishing Server Display Name: Displays the name of publishing server.
 
 Publishing Server URL: Displays the URL of publishing server.
@@ -992,7 +1022,7 @@ User Publishing Refresh Interval: Specifies the publishing refresh interval usin
 
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -1000,20 +1030,22 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Publishing Server 3 Settings*
 -   GP name: *Publishing_Server3_Policy*
 -   GP path: *System/App-V/Publishing*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-publishingallowserver4"></a>**AppVirtualization/PublishingAllowServer4**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1035,8 +1067,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1044,8 +1076,8 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Publishing Server Display Name: Displays the name of publishing server.
 
 Publishing Server URL: Displays the URL of publishing server.
@@ -1066,7 +1098,7 @@ User Publishing Refresh Interval: Specifies the publishing refresh interval usin
 
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -1074,20 +1106,22 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Publishing Server 4 Settings*
 -   GP name: *Publishing_Server4_Policy*
 -   GP path: *System/App-V/Publishing*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-publishingallowserver5"></a>**AppVirtualization/PublishingAllowServer5**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1109,8 +1143,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1118,8 +1152,8 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Publishing Server Display Name: Displays the name of publishing server.
 
 Publishing Server URL: Displays the URL of publishing server.
@@ -1140,7 +1174,7 @@ User Publishing Refresh Interval: Specifies the publishing refresh interval usin
 
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -1148,20 +1182,22 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Publishing Server 5 Settings*
 -   GP name: *Publishing_Server5_Policy*
 -   GP path: *System/App-V/Publishing*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-streamingallowcertificatefilterforclient-ssl"></a>**AppVirtualization/StreamingAllowCertificateFilterForClient_SSL**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1183,8 +1219,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1192,11 +1228,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Specifies the path to a valid certificate in the certificate store.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -1204,20 +1240,22 @@ Specifies the path to a valid certificate in the certificate store.
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Certificate Filter For Client SSL*
 -   GP name: *Streaming_Certificate_Filter_For_Client_SSL*
 -   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-streamingallowhighcostlaunch"></a>**AppVirtualization/StreamingAllowHighCostLaunch**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1239,8 +1277,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1248,11 +1286,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 This setting controls whether virtualized applications are launched on Windows 8 machines connected via a metered network connection (e.g. 4G).
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -1260,20 +1298,22 @@ This setting controls whether virtualized applications are launched on Windows 8
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Allow First Time Application Launches if on a High Cost Windows 8 Metered Connection*
 -   GP name: *Streaming_Allow_High_Cost_Launch*
 -   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-streamingallowlocationprovider"></a>**AppVirtualization/StreamingAllowLocationProvider**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1295,8 +1335,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1304,11 +1344,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Specifies the CLSID for a compatible implementation of the IAppvPackageLocationProvider interface.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -1316,20 +1356,22 @@ Specifies the CLSID for a compatible implementation of the IAppvPackageLocationP
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Location Provider*
 -   GP name: *Streaming_Location_Provider*
 -   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-streamingallowpackageinstallationroot"></a>**AppVirtualization/StreamingAllowPackageInstallationRoot**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1351,8 +1393,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1360,11 +1402,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Specifies directory where all new applications and updates will be installed.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -1372,20 +1414,22 @@ Specifies directory where all new applications and updates will be installed.
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Package Installation Root*
 -   GP name: *Streaming_Package_Installation_Root*
 -   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-streamingallowpackagesourceroot"></a>**AppVirtualization/StreamingAllowPackageSourceRoot**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1407,8 +1451,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1416,11 +1460,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Overrides source location for downloading package content.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -1428,20 +1472,22 @@ Overrides source location for downloading package content.
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Package Source Root*
 -   GP name: *Streaming_Package_Source_Root*
 -   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-streamingallowreestablishmentinterval"></a>**AppVirtualization/StreamingAllowReestablishmentInterval**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1463,8 +1509,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1472,11 +1518,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Specifies the number of seconds between attempts to reestablish a dropped session.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -1484,20 +1530,22 @@ Specifies the number of seconds between attempts to reestablish a dropped sessio
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Reestablishment Interval*
 -   GP name: *Streaming_Reestablishment_Interval*
 -   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-streamingallowreestablishmentretries"></a>**AppVirtualization/StreamingAllowReestablishmentRetries**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1519,8 +1567,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1528,11 +1576,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Specifies the number of times to retry a dropped session.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -1540,20 +1588,22 @@ Specifies the number of times to retry a dropped session.
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Reestablishment Retries*
 -   GP name: *Streaming_Reestablishment_Retries*
 -   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-streamingsharedcontentstoremode"></a>**AppVirtualization/StreamingSharedContentStoreMode**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1575,8 +1625,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1584,11 +1634,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Specifies that streamed package contents will be not be saved to the local hard disk.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -1596,20 +1646,22 @@ Specifies that streamed package contents will be not be saved to the local hard 
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Shared Content Store (SCS) mode*
 -   GP name: *Streaming_Shared_Content_Store_Mode*
 -   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-streamingsupportbranchcache"></a>**AppVirtualization/StreamingSupportBranchCache**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1631,8 +1683,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1640,11 +1692,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 If enabled, the App-V client will support BrancheCache compatible HTTP streaming. If BranchCache support is not desired, this should be disabled. The client can then apply HTTP optimizations which are incompatible with BranchCache
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -1652,20 +1704,22 @@ If enabled, the App-V client will support BrancheCache compatible HTTP streaming
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Enable Support for BranchCache*
 -   GP name: *Streaming_Support_Branch_Cache*
 -   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-streamingverifycertificaterevocationlist"></a>**AppVirtualization/StreamingVerifyCertificateRevocationList**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1687,8 +1741,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1696,11 +1750,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Verifies Server certificate revocation status before streaming using HTTPS.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -1708,20 +1762,22 @@ Verifies Server certificate revocation status before streaming using HTTPS.
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Verify certificate revocation list*
 -   GP name: *Streaming_Verify_Certificate_Revocation_List*
 -   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="appvirtualization-virtualcomponentsallowlist"></a>**AppVirtualization/VirtualComponentsAllowList**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -1743,8 +1799,8 @@ ADMX Info:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -1752,11 +1808,11 @@ ADMX Info:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
+<!--/Scope-->
+<!--Description-->
 Specifies a list of process paths (may contain wildcards) which are candidates for using virtual components (shell extensions, browser helper objects, etc). Only processes whose full path matches one of these items can use virtual components.
 
-<!--EndDescription-->
+<!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -1764,15 +1820,15 @@ Specifies a list of process paths (may contain wildcards) which are candidates f
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--StartADMX-->
+<!--ADMX-->
 ADMX Info:  
 -   GP English name: *Virtual Component Process Allow List*
 -   GP name: *Virtualization_JITVAllowList*
 -   GP path: *System/App-V/Virtualization*
 -   GP ADMX file name: *appv.admx*
 
-<!--EndADMX-->
-<!--EndPolicy-->
+<!--/ADMX-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -1781,5 +1837,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

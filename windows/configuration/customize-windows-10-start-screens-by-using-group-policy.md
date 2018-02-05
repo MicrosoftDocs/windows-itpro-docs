@@ -44,7 +44,7 @@ The GPO can be configured from any computer on which the necessary ADMX and ADML
 
 Three features enable Start and taskbar layout control:
 
--   The [Export-StartLayout](https://go.microsoft.com/fwlink/p/?LinkID=620879) cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. 
+-   The [Export-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/export-startlayout?view=win10-ps) cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. 
 
     >[!NOTE]  
     >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/import-startlayout) cmdlet.
@@ -130,7 +130,6 @@ After you use Group Policy to apply a customized Start and taskbar layout on a c
 - [Customize Windows 10 Start and tasbkar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 - [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
  
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=customize-windows-10-start-screens-by-using-group-policy.md).
  
 
 

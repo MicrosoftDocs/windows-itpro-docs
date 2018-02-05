@@ -23,17 +23,17 @@ Steps are provided in sections that follow the recommended setup process:
 
 Device Health has the following requirements: 
 1. Device Health is currently only compatible with Windows 10 and Windows Server 2016 devices. The solution is intended to be used with desktop devices (Windows 10 workstations and laptops). 
-2. The solution requires that at least the [enhanced level of telemetry](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#basic-level) is enabled on all devices that are intended to be displayed in the solution. To learn more about Windows telemetry, see [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization). 
-3. The telemetry of your organization’s Windows devices must be successfully transmitted to Microsoft. Microsoft has specified [endpoints for each of the telemetry services](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#endpoints), which must be whitelisted by your organization so the data can be transmitted. The following table is taken from the article on telemetry endpoints and summarizes the use of each endpoint:
+2. The solution requires that at least the [enhanced level of diagnostic data](https://technet.microsoft.com/itpro/windows/manage/configure-windows-diagnostic-data-in-your-organization#basic-level) is enabled on all devices that are intended to be displayed in the solution. To learn more about Windows diagnostic data, see [Configure Windows diagnostic data in your organization](/windows/configuration/configure-windows-diagnostic-data-in-your-organization). 
+3. The diagnostic data of your organization’s Windows devices must be successfully transmitted to Microsoft. Microsoft has specified [endpoints for each of the diagnostic data services](/windows/configuration//configure-windows-diagnostic-data-in-your-organization#endpoints), which must be whitelisted by your organization so the data can be transmitted. The following table is taken from the article on diagnostic data endpoints and summarizes the use of each endpoint:
 
 Service | Endpoint
 --- | ---
-Connected User Experience and Telemetry component | v10.vortex-win.data.microsoft.com<BR>settings-win.data.microsoft.com
+Connected User Experiences and Telemetry component | v10.vortex-win.data.microsoft.com<BR>settings-win.data.microsoft.com
 Windows Error Reporting | watson.telemetry.microsoft.com
 Online Crash Analysis | oca.telemetry.microsoft.com
 
 >[!NOTE]  
-> If your deployment includes devices running Windows 10 versions prior to Windows 10, version 1703, you must **exclude** *authentication* for the endpoints listed in Step 3. Windows Error Reporting did not support authenticating proxies until Windows 10, version 1703. See [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization) for steps to exclude authentication for these endpoints.
+> If your deployment includes devices running Windows 10 versions prior to Windows 10, version 1703, you must **exclude** *authentication* for the endpoints listed in Step 3. Windows Error Reporting did not support authenticating proxies until Windows 10, version 1703. See [Configure Windows diagnostic data in your organization](/windows/configuration/configure-windows-diagnostic-data-in-your-organization) for steps to exclude authentication for these endpoints.
 
 
 ## Add Device Health to Microsoft Operations Management Suite
@@ -79,7 +79,7 @@ After you have added Device Health and devices have a Commercial ID, you will be
 >[!NOTE]
 >You can unsubscribe from the Device Health solution if you no longer want to monitor your organization’s devices. User device data will continue to be shared with Microsoft while the opt-in keys are set on user devices and the proxy allows traffic.
 
-## Deploy your Commercial ID to your Windows 10 devices and set the telemetry level
+## Deploy your Commercial ID to your Windows 10 devices and set the diagnostic data level
 
 In order for your devices to show up in Windows Analytics: Device Health, they must be configured with your organization’s Commercial ID. This is so that Microsoft knows that a given device is a member of your organization and to feed that device’s data back to you. There are two primary methods for widespread deployment of your Commercial ID: Group Policy and Mobile Device Management (MDM). 
 
@@ -114,7 +114,7 @@ If you need further information on Windows Error Reporting (WER) settings, see [
 Devices must be able to reach the endpoints specified in the "Device Health prerequisites" section of this topic. 
 
 >[!NOTE]  
-> If your deployment includes devices running Windows 10 versions prior to Windows 10, version 1703, you must **exclude** *authentication* for the endpoints listed in Step 3 of the "Device Health prerequisites" section of this topic. Windows Error Reporting did not support authenticating proxies until Windows 10, version 1703. (If you need more information about telemetry endpoints and how to manage them, see [Configure Windows telemetry in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-telemetry-in-your-organization).
+> If your deployment includes devices running Windows 10 versions prior to Windows 10, version 1703, you must **exclude** *authentication* for the endpoints listed in Step 3 of the "Device Health prerequisites" section of this topic. Windows Error Reporting did not support authenticating proxies until Windows 10, version 1703. (If you need more information about diagnostic data endpoints and how to manage them, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization).
 
 If you are using proxy server authentication, it is worth taking extra care to check the configuration. Prior to Windows 10, version 1703, WER uploads error reports in the machine context. Both user (typically authenticated) and machine (typically anonymous) contexts require access through proxy servers to the diagnostic endpoints. In Windows 10, version 1703, and later WER will attempt to use the context of the user that is logged on for proxy authentication such that only the user account requires proxy access.
 

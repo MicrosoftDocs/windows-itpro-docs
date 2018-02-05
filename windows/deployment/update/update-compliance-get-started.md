@@ -24,19 +24,19 @@ Steps are provided in sections that follow the recommended setup process:
 
 Update Compliance has the following requirements: 
 1. Update Compliance is currently only compatible with Windows 10 devices. The solution is intended to be used with desktop devices (Windows 10 workstations and laptops). 
-2. The solution requires that Windows 10 telemetry is enabled on all devices that are intended to be displayed in the solution. These devices must have at least the [basic level of telemetry](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#basic-level) enabled. To learn more about Windows telemetry, see [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization). 
-3. The telemetry of your organization’s Windows devices must be successfully transmitted to Microsoft. Microsoft has specified [endpoints for each of the telemetry services](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#endpoints), which must be whitelisted by your organization so the data can be transmitted. The following table is taken from the article on telemetry endpoints and summarizes the use of each endpoint:
+2. The solution requires that Windows 10 diagnostic data is enabled on all devices that are intended to be displayed in the solution. These devices must have at least the [basic level of diagnostic data](/configuration/configure-windows-diagnostic-data-in-your-organization#basic-level) enabled. To learn more about Windows diagnostic data, see [Configure Windows diagnostic data in your organization](/windows/configuration/configure-windows-diagnostic-data-in-your-organization). 
+3. The diagnostic data of your organization’s Windows devices must be successfully transmitted to Microsoft. Microsoft has specified [endpoints for each of the diagnostic data services](/configuration/configure-windows-diagnostic-data-in-your-organization#endpoints), which must be whitelisted by your organization so the data can be transmitted. The following table is taken from the article on diagnostic data endpoints and summarizes the use of each endpoint:
 
     Service | Endpoint
     --- | ---
-    Connected User Experience and Telemetry component | v10.vortex-win.data.microsoft.com<BR>settings-win.data.microsoft.com
+    Connected User Experiences and Telemetry component | v10.vortex-win.data.microsoft.com<BR>settings-win.data.microsoft.com
     Windows Error Reporting | watson.telemetry.microsoft.com
     Online Crash Analysis | oca.telemetry.microsoft.com
 
 
  4. To use Windows Defender Antivirus Assessment, devices must be protected by Windows Defender AV (and not a 3rd party AV program), and must have enabled [cloud-delivered protection](/windows/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus). See the [Troublehsoot Windows Defender Antivirus reporting](/windows/threat-protection/windows-defender-antivirus/troubleshoot-reporting.md) topic for help on ensuring the configuration is correct.
  
-     For endpoints running Windows 10, version 1607 or earlier, [Windows telemetry must also be set to **Enhanced**](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-telemetry-in-your-organization#enhanced-level), to be compatible with Windows Defender Antivirus. 
+     For endpoints running Windows 10, version 1607 or earlier, [Windows diagnostic data must also be set to **Enhanced**](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level), to be compatible with Windows Defender Antivirus. 
     
     See the [Windows Defender Antivirus in Windows 10](/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) content library for more information on enabling, configuring, and validating Windows Defender AV.
 
@@ -74,7 +74,7 @@ If you are not yet using OMS, use the following steps to subscribe to OMS Update
   ![OMS workspace with new Update Compliance tile on the right side highlighted](images/uc-09a.png)  
   
 9.	Click **Subscribe** to subscribe to OMS Update Compliance. You will then need to distribute your Commercial ID across all your organization’s devices. More information on the Commercial ID is provided below.   
-  ![Series of blades showing Connected Sources, Windows Telemetry, and Upgrade Analytics solution with Subscribe button](images/uc-10a.png)  
+  ![Series of blades showing Connected Sources, Windows Diagnostic Data, and Upgrade Analytics solution with Subscribe button](images/uc-10a.png)  
   
 After you are subscribed to OMS Update Compliance and your devices have a Commercial ID, you will begin receiving data. It will typically take 24 hours for the first data to begin appearing. The following section explains how to deploy your Commercial ID to your Windows 10 devices.
 

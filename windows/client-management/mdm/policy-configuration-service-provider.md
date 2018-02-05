@@ -130,7 +130,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 <p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
 
 > [!Note]  
-> The policies supported in Windows 10 S is the same as in Windows 10 Pro, except that policies under AppliationsDefaults are not suppported in Windows 10 S.
+> The policies supported in Windows 10 S are the same as those supported in Windows 10 Pro with the exception of the policies under ApplicationDefaults.  The ApplicationDefaults polices are not supported in Windows 10 S.
 
 ## Policies
 
@@ -435,6 +435,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-browser.md#browser-allowbrowser" id="browser-allowbrowser">Browser/AllowBrowser</a>
   </dd>
   <dd>
+    <a href="./policy-csp-browser.md#browser-allowconfigurationupdateforbookslibrary" id="browser-allowconfigurationupdateforbookslibrary">Browser/AllowConfigurationUpdateForBooksLibrary</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-browser.md#browser-allowcookies" id="browser-allowcookies">Browser/AllowCookies</a>
   </dd>
   <dd>
@@ -473,9 +476,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-browser.md#browser-allowsmartscreen" id="browser-allowsmartscreen">Browser/AllowSmartScreen</a>
   </dd>
-  <!--<dd>
+  <dd>
     <a href="./policy-csp-browser.md#browser-alwaysenablebookslibrary" id="browser-alwaysenablebookslibrary">Browser/AlwaysEnableBooksLibrary</a>
-  </dd>-->
+  </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-clearbrowsingdataonexit" id="browser-clearbrowsingdataonexit">Browser/ClearBrowsingDataOnExit</a>
   </dd>
@@ -2484,6 +2487,13 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### RestrictedGroups policies
+
+  <dd>
+    <a href="policy-csp-restrictedgroups.md#restrictedgroups-configuregroupmembership">RestrictedGroups/ConfigureGroupMembership</a>
+  </dd>
+
+
 ### Search policies
 
 <dl>
@@ -2911,6 +2921,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-branchreadinesslevel" id="update-branchreadinesslevel">Update/BranchReadinessLevel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-configurefeatureupdateuninstallperiod" id="update-configurefeatureupdateuninstallperiod">Update/ConfigureFeatureUpdateUninstallPeriod</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-deferfeatureupdatesperiodindays" id="update-deferfeatureupdatesperiodindays">Update/DeferFeatureUpdatesPeriodInDays</a>
@@ -3794,6 +3807,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Privacy/PublishUserActivities](#privacy-publishuseractivities)  
 -   [Security/RequireProvisioningPackageSignature](#security-requireprovisioningpackagesignature)  
 -   [Security/RequireRetrieveHealthCertificateOnBoot](#security-requireretrievehealthcertificateonboot)  
+-   [Start/StartLayout](#start-startlayout)
 -   [System/AllowFontProviders](#system-allowfontproviders)  
 -   [System/AllowLocation](#system-allowlocation)  
 -   [System/AllowTelemetry](#system-allowtelemetry)  

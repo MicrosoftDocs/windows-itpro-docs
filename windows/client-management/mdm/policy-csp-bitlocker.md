@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/14/2017
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - Bitlocker
@@ -15,7 +15,7 @@ ms.date: 12/14/2017
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## Bitlocker policies  
 
 <dl>
@@ -24,11 +24,13 @@ ms.date: 12/14/2017
   </dd>
 </dl>
 
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="bitlocker-encryptionmethod"></a>**Bitlocker/EncryptionMethod**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -50,8 +52,8 @@ ms.date: 12/14/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -59,14 +61,14 @@ ms.date: 12/14/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Specifies the BitLocker Drive Encryption method and cipher strength.
+<!--/Scope-->
+<!--Description-->
+Specifies the BitLocker Drive Encryption method and cipher strength.
 
 > [!NOTE]
 > XTS-AES 128-bit and XTS-AES 256-bit values are only supported on Windows 10 for desktop.
 
-<p style="margin-left: 20px">You can find the following policies in BitLocker CSP:
+You can find the following policies in BitLocker CSP:
 <dl>
   <dd>
     <a href="./bitlocker-csp.md#encryptionmethodbydrivetype" id="encryptionmethodbydrivetype">BitLocker/EncryptionMethodByDriveType</a>
@@ -94,7 +96,7 @@ ms.date: 12/14/2017
   </dd>
 </dl>
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -104,7 +106,7 @@ The following list shows the supported values:
 -   7 - XTS-AES 256-bit (Desktop only)
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -113,5 +115,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

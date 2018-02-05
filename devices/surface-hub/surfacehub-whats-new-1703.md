@@ -7,7 +7,7 @@ ms.pagetype: devices
 ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
-ms.date: 07/27/2017
+ms.date: 01/18/2018
 ms.localizationpriority: medium
 ---
 
@@ -15,11 +15,9 @@ ms.localizationpriority: medium
 
 Watch Surface Hub engineer Jordan Marchese present updates to Microsoft Surface Hub with Windows 10, version 1703 (Creators Update). 
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=R8tX10VIgq0
-" target="_blank"><img src="http://img.youtube.com/vi/R8tX10VIgq0/0.jpg" 
-alt="Watch a video about Creators Update on Surface Hub" width="240" height="180" border="10" /></a>
+<a href="https://www.youtube.com/watch?v=R8tX10VIgq0" target="_blank"> <img src="images/whats-new-video-thumbnail.png" alt="Link to Surface Hub video on Youtube" /></a>
 
-Windows 10, version 1703 (also called the Creators Update), introduces the following changes for Microsoft Surface Hub:
+Windows 10, version 1703 (also called the Creators Update), introduces the following changes for Microsoft Surface Hub.
 
 ## New settings
 
@@ -40,7 +38,7 @@ Settings have been added to mobile device management (MDM) and configuration ser
 Plus settings based on the new [NetworkQoSPolicy CSP](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/networkqospolicy-csp) and [NetworkProxy CSP](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/networkproxy-csp).
 </br>
 
-## Provizioning wizard
+## Provisioning wizard
 
 An easy-to-use wizard helps you quickly create provisioning packages that you can apply to multiple Surface Hub devices, and includes bulk join to Azure Active Directory. [Learn how to create a provisioning package for Surface Hub.](provisioning-packages-for-certificates-surface-hub.md)
 

@@ -16,7 +16,7 @@ In this section you'll learn how to use Update Compliance to monitor your device
 
 
 Update Compliance: 
-- Uses telemetry gathered from user devices to form an all-up view of Windows 10 devices in your organization. 
+- Uses diagnostic data gathered from user devices to form an all-up view of Windows 10 devices in your organization. 
 - Enables you to maintain a high-level perspective on the progress and status of updates across all devices.
 - Provides a workflow that can be used to quickly identify which devices require attention. 
 - Enables you to track deployment compliance targets for updates.

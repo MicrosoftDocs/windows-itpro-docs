@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: jdeckerms
-ms.date: 01/02/2018
+ms.date: 01/31/2018
 ---
 
 # Change history for Configure Windows 10
@@ -19,8 +19,15 @@ This topic lists new and updated topics in the [Configure Windows 10](index.md) 
 
 New or changed topic | Description
 --- | ---
+[Create a Windows 10 kiosk that runs multiple apps](lock-down-windows-10-to-specific-apps.md) | Added videos demonstrating how to use Microsoft Intune and how to use provisioning packages to configure multi-app kiosks.
 [ConnectivityProfiles](wcd/wcd-connectivityprofiles.md) | Added settings for VPN **Native** and **Third Party** profile types.
 [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md) | Clarified that the TopMFUApps elements in layoutmodification.xml are not supported in Windows 10, version 1709.
+| [Diagnostic Data Viewer Overview](diagnostic-data-viewer-overview.md) | New topic |
+[Configure Windows 10 taskbar](configure-windows-10-taskbar.md) | Added section for removing default apps from the taskbar.
+[Manage Windows 10 connection endpoints](manage-windows-endpoints-version-1709.md) | New topic for Windows 10, version 1709 that explains the purpose for connections to Microsoft services and how to manage them.  
+[Configure Windows Spotlight on the lock screen](windows-spotlight.md) | Added section for resolution of custom lock screen images.
+[Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) | Added section for automatic sign-in after restart on unmanaged devices.
+
 
 ## November 2017
 
@@ -43,7 +50,7 @@ The topics in this library have been updated for Windows 10, version 1709 (also 
 - [Create a Windows 10 kiosk that runs multiple apps](lock-down-windows-10-to-specific-apps.md)
 - [Multi-app kiosk XML reference](multi-app-kiosk-xml.md)
 - [Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md)
-- [Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](enhanced-telemetry-windows-analytics-events-and-fields.md)
+- [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](enhanced-diagnostic-data-windows-analytics-events-and-fields.md)
 
 
 ## September 2017

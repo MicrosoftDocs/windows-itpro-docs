@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/14/2017
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - WirelessDisplay
@@ -15,7 +15,7 @@ ms.date: 12/14/2017
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## WirelessDisplay policies  
 
 <dl>
@@ -45,11 +45,13 @@ ms.date: 12/14/2017
   </dd>
 </dl>
 
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="wirelessdisplay-allowmdnsadvertisement"></a>**WirelessDisplay/AllowMdnsAdvertisement**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -71,8 +73,8 @@ ms.date: 12/14/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -80,11 +82,11 @@ ms.date: 12/14/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. This policy setting allows you to turn off the Wireless Display multicast DNS service advertisement from a Wireless Display receiver. If the network administrator is concerned about network congestion, they may set this policy to 0, disabling mDNS advertisement.  
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1709. This policy setting allows you to turn off the Wireless Display multicast DNS service advertisement from a Wireless Display receiver. If the network administrator is concerned about network congestion, they may set this policy to 0, disabling mDNS advertisement.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -92,12 +94,14 @@ The following list shows the supported values:
 - 1 - Allow
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="wirelessdisplay-allowmdnsdiscovery"></a>**WirelessDisplay/AllowMdnsDiscovery**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -119,8 +123,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -128,11 +132,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. This policy setting allows you to turn off discovering the display service advertised over multicast DNS by a Wireless Display receiver. If the network administrator is concerned about network congestion, they may set this policy to 0, disabling mDNS discovery.  
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1709. This policy setting allows you to turn off discovering the display service advertised over multicast DNS by a Wireless Display receiver. If the network administrator is concerned about network congestion, they may set this policy to 0, disabling mDNS discovery.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -140,12 +144,14 @@ The following list shows the supported values:
 -   1 - Allow
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="wirelessdisplay-allowprojectionfrompc"></a>**WirelessDisplay/AllowProjectionFromPC**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -167,8 +173,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -176,11 +182,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy allows you to turn off projection from a PC.  
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1703. This policy allows you to turn off projection from a PC.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -188,12 +194,14 @@ The following list shows the supported values:
 -   1 - your PC can discover and project to other devices
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="wirelessdisplay-allowprojectionfrompcoverinfrastructure"></a>**WirelessDisplay/AllowProjectionFromPCOverInfrastructure**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -215,8 +223,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -224,11 +232,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy allows you to turn off projection from a PC over infrastructure.  
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1703. This policy allows you to turn off projection from a PC over infrastructure.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -236,12 +244,14 @@ The following list shows the supported values:
 -   1 - your PC can discover and project to other devices over infrastructure.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="wirelessdisplay-allowprojectiontopc"></a>**WirelessDisplay/AllowProjectionToPC**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -263,8 +273,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -272,15 +282,15 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Allow or disallow turning off the projection to a PC.
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1607. Allow or disallow turning off the projection to a PC.
 
-<p style="margin-left: 20px">If you set it to 0 (zero), your PC is not discoverable and you cannot project to it. If you set it to 1, your PC is discoverable and you can project to it above the lock screen. The user has an option to turn it always on or always off except for manual launch. In PCs that support Miracast, after the policy is applied you can verify the setting from the user interface in **Settings** &gt; **System** &gt; **Projecting to this PC**.
+If you set it to 0 (zero), your PC is not discoverable and you cannot project to it. If you set it to 1, your PC is discoverable and you can project to it above the lock screen. The user has an option to turn it always on or always off except for manual launch. In PCs that support Miracast, after the policy is applied you can verify the setting from the user interface in **Settings** &gt; **System** &gt; **Projecting to this PC**.
 
-<p style="margin-left: 20px">Value type is integer.
+Value type is integer.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -288,12 +298,14 @@ The following list shows the supported values:
 -   1 (default) - projection to PC is allowed. Enabled only above the lock screen.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="wirelessdisplay-allowprojectiontopcoverinfrastructure"></a>**WirelessDisplay/AllowProjectionToPCOverInfrastructure**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -315,8 +327,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -324,11 +336,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy setting allows you to turn off projection to a PC over infrastructure.  
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1703. This policy setting allows you to turn off projection to a PC over infrastructure.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -336,12 +348,14 @@ The following list shows the supported values:
 -   1 - your PC is discoverable and other devices can project to it over infrastructure.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="wirelessdisplay-allowuserinputfromwirelessdisplayreceiver"></a>**WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver**  
 
-<!--StartScope-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -349,11 +363,11 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Setting this policy controls whether or not the wireless display can send input&#8212;keyboard, mouse, pen, and touch input if the display supports it&#8212;back to the source device.
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1703. Setting this policy controls whether or not the wireless display can send input&#8212;keyboard, mouse, pen, and touch input if the display supports it&#8212;back to the source device.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -361,12 +375,14 @@ The following list shows the supported values:
 -   1 (default) - Wireless display input enabled.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="wirelessdisplay-requirepinforpairing"></a>**WirelessDisplay/RequirePinForPairing**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -388,8 +404,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -397,15 +413,15 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Allow or disallow requirement for a PIN for pairing.
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1607. Allow or disallow requirement for a PIN for pairing.
 
-<p style="margin-left: 20px">If you turn this on, the pairing ceremony for new devices will always require a PIN. If you turn this off or do not configure it, a PIN is not required for pairing. In PCs that support Miracast, after the policy is applied you can verify the setting from the user interface in **Settings** &gt; **System** &gt; **Projecting to this PC**.
+If you turn this on, the pairing ceremony for new devices will always require a PIN. If you turn this off or do not configure it, a PIN is not required for pairing. In PCs that support Miracast, after the policy is applied you can verify the setting from the user interface in **Settings** &gt; **System** &gt; **Projecting to this PC**.
 
-<p style="margin-left: 20px">Value type is integer.
+Value type is integer.
 
-<!--EndDescription-->
+<!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -413,7 +429,7 @@ The following list shows the supported values:
 -   1 - PIN is required.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -422,5 +438,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 
