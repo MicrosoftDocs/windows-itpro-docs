@@ -34,7 +34,7 @@ However, some of the settings reduce the functionality and security configuratio
 Make sure should you've chosen the right settings configuration for your environment before applying. 
 You should not extract this package to the windows\\system32 folder because it will not apply correctly. 
 
-Applying the Windows Restricted Traffic Limited Functionality Baseline is equivalent to applying the Windows 10 steps covered in this article. 
+Applying the Windows Restricted Traffic Limited Functionality Baseline is the same as applying the steps covered in this article on a device that Windows 10 Enterprise edition. 
 It is recommended that you restart a device after making configuration changes to it. 
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
