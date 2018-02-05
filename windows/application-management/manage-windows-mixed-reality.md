@@ -37,7 +37,7 @@ Enterprises devices running Windows 10, version 1709, will not be able to instal
 
   - Obtain the latest Data Assets update package (which is a stand-alone package and not the feature on demand). The package title contains following keywords: **Oasis Asset Update for Windows**. 
  
-  - Use `Add-Capability` to add the Windows Mixed Reality feature on demand into the image, then `Add-Package` to apply the latest cumulative update, and then another `Add-Package command` to add the Data Assets update package. 
+  - Use `Add-Capability` to add the Windows Mixed Reality feature on demand package to the image, then use `Add-Package` to apply the latest cumulative update, and then use `Add-Package` to add the Data Assets update package. 
   
     For reference: here are the dism commands available to add feature on demand packages and update packages to the image. 
  
