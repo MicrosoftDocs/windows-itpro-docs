@@ -13,6 +13,9 @@ ms.date: 11/01/2017
 # DMClient CSP
 
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 The DMClient configuration service provider is used to specify additional enterprise-specific mobile device management configuration settings for identifying the device in the enterprise domain, security mitigation for certificate renewal, and server-triggered enterprise unenrollment.
 
 The following diagram shows the DMClient configuration service provider in tree format.
@@ -256,6 +259,11 @@ Supported operations are Add, Delete, Get, and Replace. Value type is string.
 Optional. Number of days after last sucessful sync to unenroll.
 
 Supported operations are Add, Delete, Get, and Replace. Value type is integer.
+
+<a href="" id="provider-providerid-aadsenddevicetoken"></a>**Provider/*ProviderID*/AADSendDeviceToken**  
+Device. Added in Windows 10 next major update. For AZure AD backed enrollments, this will cause the client to send a Device Token if the User Token can not be obtained.
+
+Supported operations are Add, Delete, Get, and Replace. Value type is bool.
 
 <a href="" id="provider-providerid-poll"></a>**Provider/*ProviderID*/Poll**  
 Optional. Polling schedules must utilize the DMClient CSP. The Registry paths previously associated with polling using the Registry CSP are now deprecated.
@@ -690,18 +698,44 @@ Required. Added in Windows 10, version 1709. This node determines how long we wi
 Supported operations are Get and Replace. Value type is integer.
 
 <a href="" id="provider-providerid-firstsyncstatus-serverhasfinishedprovisioning"></a>**Provider/*ProviderID*/FirstSyncStatus/ServerHasFinishedProvisioning**  
-Required. Added in Windows 10, version 1709. This node is set by the server to inform the UX that the server has finished provisioning the device. This was added so that the server can “change its mind" about what it needs to provision on the device. When this node is set, many other DM Client nodes will no longer be able to be changed. If this node is not True, the UX will consider the provisioning a failure. Once set to true, it would reject attempts to change it back to false with CFGMGR_E_COMMANDNOTALLOWED.
+Required. Added in Windows 10, version 1709. This node is set by the server to inform the UX that the server has finished provisioning the device. This was added so that the server can “change its mind" about what it needs to provision on the device. When this node is set, many other DM Client nodes will no longer be able to be changed. If this node is not True, the UX will consider the provisioning a failure. Once set to true, it would reject attempts to change it back to false with CFGMGR_E_COMMANDNOTALLOWED. This node applies to the per user expected policies and resources lists.
 
 Supported operations are Get and Replace. Value type is boolean.
 
-<a href="" id="provider-providerid-firstsyncstatus-issyncdone"></a>**Provider/*ProviderID*/FirstSyncStatus/IsSyncDone**Required. Added in Windows 10, version 1709. This node, when doing a get, tells the server if the “First Syncs" are done and the device is fully provisioned. When doing a Set, this triggers the UX to override whatever state it is in and tell the user that the device is provisioned. It cannot be set from True to False (it will not change its mind on whether or not the sync is done), and it cannot be set from True to True (to prevent notifications from firing multiple times).
+<a href="" id="provider-providerid-firstsyncstatus-issyncdone"></a>**Provider/*ProviderID*/FirstSyncStatus/IsSyncDone**  
+Required. Added in Windows 10, version 1709. This node, when doing a get, tells the server if the “First Syncs" are done and the device is fully provisioned. When doing a Set, this triggers the UX to override whatever state it is in and tell the user that the device is provisioned. It cannot be set from True to False (it will not change its mind on whether or not the sync is done), and it cannot be set from True to True (to prevent notifications from firing multiple times). This node only applies to the user MDM status page (on a per user basis).
 
 Supported operations are Get and Replace. Value type is boolean.
 
 <a href="" id="provider-providerid-firstsyncstatus-wasdevicesuccessfullyprovisioned"></a>**Provider/*ProviderID*/FirstSyncStatus/WasDeviceSuccessfullyProvisioned**  
-Required. Added in Windows 10, version 1709. Integer node determining if a device was successfully provisioned.  0 is failure, 1 is success, 2 is in progress.  Once the value is changed to 0 or 1, the value cannot be changed again. The client will change the value of success or failure and update the node. The server can, however, force a failure or success message to appear on the device by setting this value and then setting the IsSyncDone node to true.
+Required. Added in Windows 10, version 1709. Integer node determining if a device was successfully provisioned.  0 is failure, 1 is success, 2 is in progress.  Once the value is changed to 0 or 1, the value cannot be changed again. The client will change the value of success or failure and update the node. The server can, however, force a failure or success message to appear on the device by setting this value and then setting the IsSyncDone node to true. This node only applies to the user MDM status page (on a per user basis).
 
 Supported operations are Get and Replace. Value type is integer.
+
+<a href="" id="provider-providerid-firstsyncstatus-blockinstatuspage"></a>**Provider/*ProviderID*/FirstSyncStatus/BlockInStatusPage**  
+Required. Device Only. Added in Windows 10, next major update. This node determines whether or not the MDM progress page is blocking in the Azure AD joined or DJ++ case, as well as which remediation options are available.
+
+Supported operations are Get and Replace. Value type is integer.
+
+<a href="" id="provider-providerid-firstsyncstatus-allowcollectlogsbutton"></a>**Provider/*ProviderID*/FirstSyncStatus/AllowCollectLogsButton**  
+Required. Added in Windows 10, next major update. This node decides whether or not the MDM progress page displays the Collect Logs button.  
+
+Supported operations are Get and Replace. Value type is bool.
+
+<a href="" id="provider-providerid-firstsyncstatus-customerrortext"></a>**Provider/*ProviderID*/FirstSyncStatus/CustomErrorText**  
+Required. Added in Windows 10, next major update. This node allows the MDM to set custom error text, detailing what the user needs to do in case of error.  
+
+Supported operations are Add, Get, Delete, and Replace. Value type is string.
+
+<a href="" id="provider-providerid-firstsyncstatus-skipdevicestatuspage"></a>**Provider/*ProviderID*/FirstSyncStatus/SkipDeviceStatusPage**  
+Required. Device only. Added in Windows 10, next major update. This node decides wheter or not the MDM device progress page skips after Azure AD joined or Hybrid Azure AD joined in OOBE.
+
+Supported operations are Get and Replace. Value type is bool.
+
+<a href="" id="provider-providerid-firstsyncstatus-skipuserstatuspage"></a>**Provider/*ProviderID*/FirstSyncStatus/SkipUserStatusPage**  
+Required. Device only. Added in Windows 10, next major update. This node decides wheter or not the MDM user progress page skips after Azure AD joined or DJ++ after user login.
+
+Supported operations are Get and Replace. Value type is bool.
 
 <a href="" id="provider-providerid-enhancedapplayersecurity"></a>**Provider/*ProviderID*/EnhancedAppLayerSecurity**  
 Required node. Added in Windows 10, version 1709.

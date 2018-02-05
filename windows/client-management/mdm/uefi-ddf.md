@@ -1,6 +1,6 @@
 ---
-title: Uefi DDF file
-description: Uefi DDF file
+title: UEFI DDF file
+description: UEFI DDF file
 ms.author: maricia
 ms.topic: article
 ms.prod: w10
@@ -9,7 +9,7 @@ author: nickbrower
 ms.date: 02/01/2018
 ---
 
-# TPMPolicy DDF file
+# UEFI DDF file
 
 
 > [!WARNING]
