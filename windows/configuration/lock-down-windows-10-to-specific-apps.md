@@ -92,7 +92,7 @@ You can start your file by pasting the following XML (or any other examples in t
 
 ### Profile
 
-There are two types of profiles tha tyou can specify in the XML:
+There are two types of profiles that you can specify in the XML:
 
 - **Lockdown profile**: Users assigned a lockdown profile will see the desktop in tablet mode with the specific apps on the Start screen.
 - **Kiosk profile**: New in Windows 10, version (1804?), this profile replaces the KioskModeApp node of the [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp). Users assigned a kiosk profile will not see the desktop, but only the kiosk app running in full-screen mode.
@@ -287,6 +287,7 @@ Before applying the multi-app configuration, make sure the specified user accoun
 Group accounts are specified using `<UserGroup>`.
 
 - Local group: Specify the group type as **LocalGroup** and put the group name in Name attribute. 
+
   ```xml
   <Config> 
     <UserGroup Type="LocalGroup" Name="mygroup" /> 
