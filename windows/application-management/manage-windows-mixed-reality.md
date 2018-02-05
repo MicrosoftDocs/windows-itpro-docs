@@ -39,7 +39,7 @@ Enterprises devices running Windows 10, version 1709, will not be able to instal
  
   - Use `Add-Capability` to add the Windows Mixed Reality feature on demand into the image, then `Add-Package` to apply the latest cumulative update, and then another `Add-Package command` to add the Data Assets update package. 
   
-    For reference: here are the dism commands available to add FODs and update packages to the image. 
+    For reference: here are the dism commands available to add feature on demand packages and update packages to the image. 
  
     ```
     Add-Package  
