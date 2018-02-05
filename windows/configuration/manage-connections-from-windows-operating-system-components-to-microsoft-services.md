@@ -73,9 +73,9 @@ The following sections list the components that make network connections to Micr
 
 If you're running Windows 10, they will be included in the next update for the Long Term Servicing Branch.
 
-### Settings for Windows 10 Enterprise, version 1703
+### Settings for Windows 10 Enterprise
 
-See the following table for a summary of the management settings for Windows 10 Enterprise, version 1703.
+See the following table for a summary of the management settings for Windows 10 Enterprise, version 1709 and Windows 10 Enterprise, version 1703.
 
 | Setting | UI | Group Policy | MDM policy | Registry | Command line |
 | - | :-: | :-: | :-: | :-: | :-: |
