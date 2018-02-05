@@ -1437,7 +1437,7 @@ To change the level of diagnostic and usage data sent when you **Send your devic
 -   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection\\AllowTelemetry**, with a value of 0-3, as appropriate for your deployment (see below for the values for each level). 
 
 > [!NOTE] 
-> If **Security** or **Enhanced** options are configured by using Group Policy or the Registry, the value will not be reflected in the UI.
+> If the **Security** option is configured by using Group Policy or the Registry, the value will not be reflected in the UI.
 
    -or-
 
