@@ -17,13 +17,16 @@ ms.date: 11/09/2017
 
 -   Windows 10
 
-Windows 10, version 1709 (also known as the Fall Creators Update), introduced [Windows Mixed Reality](https://blogs.windows.com/windowsexperience/2017/10/03/the-era-of-windows-mixed-reality-begins-october-17/). Organizations that use Windows Server Update Services (WSUS) must take action to [enable Windows Mixed Reality](#enable). Any organization that wants to prohibit use of Windows Mixed Reality can [block the installation of the Mixed Reality Portal](#block).
+
+[Windows Mixed Reality](https://blogs.windows.com/windowsexperience/2017/10/03/the-era-of-windows-mixed-reality-begins-october-17/) was introduced in Windows 10, version 1709 (also known as the Fall Creators Update). Organizations that use Windows Server Update Services (WSUS) must take action to [enable Windows Mixed Reality](#enable). Any organization that wants to prohibit use of Windows Mixed Reality can [block the installation of the Mixed Reality Portal](#block).
 
 
 <span id="enable" />
 ## Enable Windows Mixed Reality in WSUS
 
-To enable users to download the Windows Mixed Reality software, enterprises using WSUS can approve Windows Mixed Reality package by unblocking **KB4016509: FeatureOnDemandOasis - Windows 10 version 1703 for x64-based Systems**.
+To enable users to download the Windows Mixed Reality software, enterprises using WSUS can approve Windows Mixed Reality package by unblocking **KB4016509: FeatureOnDemandOasis - Windows 10 version 1703 for x64-based Systems**. 
+
+Windows Mixed Reality will also requre a Data Assets update package. In Windows 10, version (1804?), you must import the Data Assets update package from the [Microsoft Update Catalog](http://www.catalog.update.microsoft.com/). In Windows 10, version 1709, you can import the Data Assets update package from the catalog or from WSUS.
 
  
 Enterprises devices running Windows 10, version 1709, will not be able to install Windows Mixed Reality Feature on Demand (FOD) directly from WSUS. Instead, use one of the following options to install Windows Mixed Reality software:
@@ -31,11 +34,22 @@ Enterprises devices running Windows 10, version 1709, will not be able to instal
 - Manually install the Mixed Reality software 
   
   - [Download the Microsoft Windows Holographic Desktop Feature on Demand package.](http://download.microsoft.com/download/6/F/8/6F816172-AC7D-4F45-B967-D573FB450CB7/Microsoft-Windows-Holographic-Desktop-FOD-Package.cab)
+
+  - Obtain the latest Data Assets update package (which is a stand-alone package and not the feature on demand). The package title contains following keywords: **Oasis Asset Update for Windows**. 
  
-  - Open a command prompt as administrator and run the following command to install the package:
+  - Use `Add-Capability` to add the Windows Mixed Reality feature on demand into the image, then `Add-Package` to apply the latest cumulative update, and then another `Add-Package command` to add the Data Assets update package. 
   
-    `dism /online /add-package /packagepath:"path to the cab file"`
-  
+    For reference: here are the dism commands available to add FODs and update packages to the image. 
+ 
+    ```
+    Add-Package  
+    Dism /Image:C:\test\offline /Add-Package /PackagePath:C:\packages\package1.cab 
+    ``` 
+    ```
+    Add-Capability  
+    Dism /Online /Add-Capability /Name: OpenSSH.Client~~~~0.0.1.0  
+    ```
+ 
   - Go to **Settings** > **Update & Security** > **Windows Update** and **Check for updates**.
       
 - IT admin can create [Side by side feature store (shared folder)](https://technet.microsoft.com/library/jj127275.aspx)
