@@ -263,7 +263,7 @@ The deployment script displays the following exit codes to let you know if it wa
 \Windows\DataCollection**</font>
         or <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows
 \CurrentVersion\Policies\DataCollection**</font></td>
-        <td>For Windows 10 machines, the **AllowTelemetry** property should be set to 1 or greater to enable data collection. The script will throw an error if this is not true. For more information, see [Configure Windows diagnostic data in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-diagnostic-data-in-your-organization).</td>
+        <td>For Windows 10 machines, the **AllowTelemetry** property should be set to 1 or greater to enable data collection. The script will throw an error if this is not true. For more information, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization).</td>
     </tr>
     <tr>
         <td>40 - Function **CheckTelemetryOptIn** failed with an unexpected exception. </td>

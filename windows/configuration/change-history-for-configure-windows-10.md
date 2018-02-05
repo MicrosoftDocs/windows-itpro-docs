@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: jdeckerms
-ms.date: 01/26/2018
+ms.date: 01/31/2018
 ---
 
 # Change history for Configure Windows 10
@@ -26,6 +26,8 @@ New or changed topic | Description
 [Configure Windows 10 taskbar](configure-windows-10-taskbar.md) | Added section for removing default apps from the taskbar.
 [Manage Windows 10 connection endpoints](manage-windows-endpoints-version-1709.md) | New topic for Windows 10, version 1709 that explains the purpose for connections to Microsoft services and how to manage them.  
 [Configure Windows Spotlight on the lock screen](windows-spotlight.md) | Added section for resolution of custom lock screen images.
+[Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) | Added section for automatic sign-in after restart on unmanaged devices.
+
 
 ## November 2017
 
