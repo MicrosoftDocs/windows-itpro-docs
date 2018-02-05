@@ -45,9 +45,10 @@ If you run into any problems while following the steps in this guide, or you hav
 ## <a name="it-task1"></a>1. Log in to Device A with your IT Admin credentials and connect to the school network
 To try out the IT admin tasks, start by logging in as an IT admin.
 
-1. Log in to **Device A** using the **Administrator Username** and **Administrator Password** included in the **Credentials Sheet** located in your kit.
-2. Connect to your school's Wi-Fi network or connect with a local Ethernet connection.
-3. Note the serial numbers on the Trial in a Box devices and register both devices with the hardware manufacturer to activate the manufacturer's warranty.
+1. Turn on **Device A** and ensure you plug in the PC to an electrical outlet.
+2. Log in to **Device A** using the **Administrator Username** and **Administrator Password** included in the **Credentials Sheet** located in your kit.
+3. Connect to your school's Wi-Fi network or connect with a local Ethernet connection.
+4. Note the serial numbers on the Trial in a Box devices and register both devices with the hardware manufacturer to activate the manufacturer's warranty.
 
 </br>
 
