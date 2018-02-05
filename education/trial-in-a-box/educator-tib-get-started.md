@@ -40,8 +40,9 @@ ms.date: 01/12/2017
 ## <a name="edu-task1"></a>1. Log in and connect to the school network
 To try out the educator tasks, start by logging in as a teacher.
 
-1. Log in to **Device A** using the **Teacher Username** and **Teacher Password** included in the **Credentials Sheet** located in your kit.
-2. Connect to your school's Wi-Fi network or connect with a local Ethernet connection.
+1. Turn on **Device A** and ensure you plug in the PC to an electrical outlet.
+2. Log in to **Device A** using the **Teacher Username** and **Teacher Password** included in the **Credentials Sheet** located in your kit.
+3. Connect to your school's Wi-Fi network or connect with a local Ethernet connection.
 
 </br>
 
