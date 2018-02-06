@@ -20,7 +20,7 @@ metadata:
 
   manager: brianlic
 
-  ms.date: 01/12/2018
+  ms.date: 02/06/2018
 
   ms.topic: article
 
@@ -152,7 +152,7 @@ sections:
       
       title: Windows Hello for Business
       
-    - href: \windows\security\threat-protection\device-guard\device-guard-deployment-guide
+    - href: \windows\security\threat-protection\windows-defender-application-control
 
       html: <p>Lock down applications that run on a device</p>
 
@@ -160,7 +160,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_threat-protection.svg
       
-      title: Windows Defender Device Guard
+      title: Windows Defender Application Control
 
     - href: \windows\security\information-protection\windows-information-protection\protect-enterprise-data-using-wip
 
