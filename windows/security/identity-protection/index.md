@@ -1,5 +1,5 @@
 ---
-title: Identity and access protection (Windows 10)
+title: Identity and access management (Windows 10)
 description: Learn more about identity and access protection technologies in Windows 10 and Windows 10 Mobile.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -9,9 +9,9 @@ author: brianlic-msft
 ms.date: 01/30/2018
 ---
 
-# Identity and access protection
+# Identity and access management
 
-Learn more about identity annd access protection technologies in Windows 10 and Windows 10 Mobile.
+Learn more about identity annd access management technologies in Windows 10 and Windows 10 Mobile.
 
 | Section | Description |
 |-|-|

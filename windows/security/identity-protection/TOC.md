@@ -1,4 +1,4 @@
-# [Identity and access protection](index.md)
+# [Identity and access management](index.md)
 
 ## [Access Control Overview](access-control/access-control.md)
 ### [Dynamic Access Control Overview](access-control/dynamic-access-control.md)
