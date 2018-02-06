@@ -257,7 +257,7 @@ Individual accounts can be local, domain, or Azure Active Directory (Azure AD). 
 
 #### Configs for individual accounts
 
-Individual accounts are specified using `<Account>`.
+Individual accounts are specified using `<Account>` or `<AutoLogonAccount>`. When you use `<AutoLogonAccount>`, the specific account is signed in automatically after restart.
 
 - Local account can be entered as `machinename\account` or `.\account` or just `account`.
 - Domain account should be entered as `domain\account`.
