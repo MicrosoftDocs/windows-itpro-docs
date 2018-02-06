@@ -56,7 +56,7 @@ Microsoft Application Virtualization (App-V) supports the use of folder redirect
 
 ## How to configure folder redirection for use with App-V
 
-Folder redirection can be applied to different folders, such as Desktop, My Documents, My Pictures, etc. However, the only folder that impacts the use of App-V applications is the user’s roaming AppData folder (%AppData%). You can apply folder redirection to any other supported folders without impacting App-V.
+Folder redirection can be applied to different folders, such as Desktop, My Documents, My Pictures, and so on. However, the only folder that impacts the use of App-V applications is the user’s roaming AppData folder (%AppData%). You can apply folder redirection to any other supported folders without impacting App-V.
 
 ## How folder redirection works with App-V
 
@@ -88,17 +88,14 @@ The following table describes how folder redirection works when %AppData% is red
 </tr>
 <tr class="even">
 <td align="left"><p>When the virtual environment shuts down</p></td>
-<td align="left"><p>The local cached data in AppData (roaming) is zipped up and copied to the “real” roaming AppData folder in %AppData%. A time stamp, which indicates the last known upload, is simultaneously saved as a registry key under:</p>
+<td align="left"><p>The local cached data in AppData (roaming) is zipped up and copied to the “real” roaming AppData folder in %AppData%. A time stamp that indicates the last known upload is simultaneously saved as a registry key under:</p>
 <p><code>HKCU\Software\Microsoft\AppV\Client\Packages\&lt;PACKAGE_GUID&gt;\AppDataTime</code></p>
-<p>To provide redundancy, App-V keeps the three most recent copies of the compressed data under %AppData%.</p></td>
+<p>App-V keeps the three most recent copies of the compressed data under %AppData% for redundancy.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
-
-## <a href="" id="bkmk-folder-redir-overview"></a>Overview of folder redirection
-
+## Overview of folder redirection
 
 <table>
 <colgroup>
@@ -108,20 +105,19 @@ The following table describes how folder redirection works when %AppData% is red
 <tbody>
 <tr class="odd">
 <td align="left"><p>Purpose</p></td>
-<td align="left"><p>Enables end users to work with files, which have been redirected to another folder, as if the files still existed on the local drive.</p></td>
+<td align="left"><p>Lets end users work with files that have been redirected to another folder as if the files still exist on the local drive.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Description</p></td>
-<td align="left"><p>Folder redirection allows users and administrators to redirect the path of a folder to a network location. The documents in the folder are available to the user from any computer on the network.</p>
+<td align="left"><p>Folder redirection allows users and administrators to redirect the path of a folder to a network location. The documents in the specified folder are will be available from any computer on the network.</p>
 <ul>
-<li><p>Folder redirection allows users and administrators to redirect the path of a folder to a network location. The documents in the folder are available to the user from any computer on the network.</p></li>
-<li><p>The new location can be a folder on the local computer or a folder on a shared network.</p></li>
+<li><p>The new location can be a folder on either the local computer or a shared network.</p></li>
 <li><p>Folder redirection updates the files immediately, whereas roaming data is typically synchronized when the user logs in or logs off.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Usage example</p></td>
-<td align="left"><p>You can redirect the Documents folder, which is usually stored on the computer's local hard disk, to a network location. The user can access the documents in the folder from any computer on the network.</p></td>
+<td align="left"><p>You can redirect the Documents folder from your computer's local hard disk to a network location. The user can then access the folder's documents from any computer on the network.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>More resources</p></td>
@@ -132,4 +128,6 @@ The following table describes how folder redirection works when %AppData% is red
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
