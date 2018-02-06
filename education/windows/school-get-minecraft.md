@@ -10,7 +10,7 @@ author: trudyha
 searchScope:
   - Store
 ms.author: trudyha
-ms.date: 10/13/2017
+ms.date: 1/5/2018
 ---
 
 # For IT administrators - get Minecraft: Education Edition
@@ -152,7 +152,7 @@ You can install the app on your PC. This gives you a chance to test the app and 
 1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com). 
 2. Click **Manage**, and then click **Install**.
 
-    ![Minecraft Education Edition product page](images/mc-install-for-me-teacher.png)
+    <!-- ![Minecraft Education Edition product page](images/mc-install-for-me-teacher.png) -->
 
 3. Click **Install**.  
 
