@@ -293,7 +293,7 @@ Before applying the multi-app configuration, make sure the specified user accoun
 
 #### Configs for group accounts
 
-Group accounts are specified using `<UserGroup>`. Nested groups are not supported. For example, if user A is member of Group 1, Group 1 is member of Group 2, and Group 2 is used in <Config/>, user A will not have the kiosk experience. 
+Group accounts are specified using `<UserGroup>`. Nested groups are not supported. For example, if user A is member of Group 1, Group 1 is member of Group 2, and Group 2 is used in `<Config/>`, user A will not have the kiosk experience. 
 
 - Local group: Specify the group type as **LocalGroup** and put the group name in Name attribute. 
 
