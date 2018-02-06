@@ -282,6 +282,15 @@ Before applying the multi-app configuration, make sure the specified user accoun
 </Configs> 
 ```
 
+```xml
+<Configs>
+  <Config>
+    <AutoLogonAccount>MultiAppKioskUser</AutoLogonAccount>
+    <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+  </Config>
+</Configs> 
+```
+
 #### Configs for group accounts
 
 Group accounts are specified using `<UserGroup>`. Nested groups are not supported. For example, if user A is member of Group 1, Group 1 is member of Group 2, and Group 2 is used in <Config/>, user A will not have the kiosk experience. 
