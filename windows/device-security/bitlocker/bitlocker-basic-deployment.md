@@ -17,14 +17,7 @@ ms.date: 04/19/2017
 
 This topic for the IT professional explains how BitLocker features can be used to protect your data through drive encryption.
 
-The following sections provide information that will help you put together your basic deployment plan for implementing BitLocker in your organization:
-
--   [Using BitLocker to encrypt volumes](#bkmk-dep1)
--   [Down-level compatibility](#bkmk-dep2)
--   [Using manage-bde to encrypt volumes with BitLocker](#bkmk-dep3)
--   [Using PowerShell to encrypt volumes with BitLocker](#bkmk-dep4)
-
-## <a href="" id="bkmk-dep1"></a>Using BitLocker to encrypt volumes
+## Using BitLocker to encrypt volumes
 
 BitLocker provides full volume encryption (FVE) for operating system volumes, as well as fixed and removable data volumes. To support fully encrypted operating system volumes, BitLocker uses an unencrypted system volume for the files required to boot, decrypt, and load the operating system. This volume is automatically created during a new installation of both client and server operating systems.
 
