@@ -1,5 +1,5 @@
 # [Security](index.yml)
-## [Identity and access protection](identity-protection/index.md)
+## [Identity and access management](identity-protection/index.md)
 ## [Threat protection](threat-protection/index.md)
 ## [Information protection](information-protection/index.md)
 ## [Hardware-based protection](hardware-protection/index.md)

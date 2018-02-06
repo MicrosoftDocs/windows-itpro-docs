@@ -54,7 +54,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_identity-protection.svg
 
-      title: Identity and access protection
+      title: Identity and access management
 
     - href: \windows\security\threat-protection\
 
