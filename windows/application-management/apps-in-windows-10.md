@@ -23,7 +23,7 @@ Digging into the Windows apps, there are two categories:
    - Provisioned: Installed the first time you sign into Windows. You'll see a tile or Start menu item for these apps, but they aren't installed until the first sign-in.
    - Installed: Installed as part of the OS.
 
-The following tables list the system apps, installed Windows apps, and provisioned Windows apps in a standard Windows 10 Enterprise installation. (If you have a custom image, your specific apps might differ.) The tables list the app, the full name, show the app's status in Windows 10 version 1607, 1703, and 1709, and indicate whether an app can be uninstalled through the UI. 
+The following tables list the system apps, installed Windows apps, and provisioned Windows apps in a standard Windows 10 Enterprise installation. (If you have a custom image, your specific apps might differ.) The tables list the app, the full name, show the app's status in Windows 10 version 1607, 1703, and 1709, and indicate whether an app can be uninstalled through the UI.
 
 Some of the apps show up in multiple tables - that's because their status changed between versions. Make sure to check the version column for the version you are currently running.
 
@@ -86,8 +86,7 @@ System apps are integral to the operating system. Here are the typical system ap
 |                  | Microsoft.Windows.CapturePicker            |      |     | x    |No                                                     |
 |                  | Windows.CBSPreview                         |      |     | x    |No                                                     |
 
-> [!NOTE] 
-> - The Windows Feedback app changed to the Feedback Hub in version 1607. It's listed in the provisioned apps table below.
+> [!NOTE]
 > - The Contact Support app changed to Get Help in version 1709. Get Help is a provisioned app (instead of system app like Contact Support).
 > - As of Windows 10 version 1607, you can use the Optional Features app to uninstall the Contact Support app.
 
