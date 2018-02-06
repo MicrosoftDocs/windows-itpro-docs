@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/26/2017
+ms.date: 02/05/2018
 ---
 
 # ProfileXML XSD
@@ -31,6 +31,8 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
         <xs:element name="DnsSuffix" type="xs:string" minOccurs="0" maxOccurs="1"/>
         <xs:element name="TrustedNetworkDetection" type="xs:string" minOccurs="0" maxOccurs="1"/>
         <xs:element name="LockDown" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="DeviceTunnel" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="RegisterDNS" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
         <xs:element name="ByPassForLocal" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
         <xs:element name="Proxy" minOccurs="0" maxOccurs="1">
           <xs:complexType>
@@ -46,6 +48,20 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+
+                <xs:element name="APNBinding" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProviderId" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="AccessPointName" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                      <xs:element name="UserName" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                      <xs:element name="Password" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                      <xs:element name="IsCompressionEnabled" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+                      <xs:element name="AuthenticationType" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
         <xs:element name="DeviceCompliance" minOccurs="0" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
@@ -388,6 +404,8 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
     <!--<EdpModeId>corp.contoso.com</EdpModeId>-->
     <RememberCredentials>true</RememberCredentials>
     <AlwaysOn>false</AlwaysOn>
+    <DeviceTunnel>false</DeviceTunnel>
+    <RegisterDNS>false</RegisterDNS>
     <DnsSuffix>corp.contoso.com</DnsSuffix>
     <TrustedNetworkDetection>contoso.com,test.corp.contoso.com</TrustedNetworkDetection>
     <Proxy>
@@ -396,6 +414,14 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
         </Manual>
         <AutoConfigUrl>Helloworld.Com</AutoConfigUrl>
     </Proxy>
+    <APNBinding>
+                <ProviderId></ProviderId>
+                <AccessPointName></AccessPointName>
+                <UserName></UserName>
+                <Password></Password>
+                <IsCompressionEnabled></IsCompressionEnabled>
+                <AuthenticationType></AuthenticationType>
+    </APNBinding>
 </VPNProfile>  
 ```
 
