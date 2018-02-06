@@ -16,7 +16,7 @@ ms.date: 01/29/2018
  
 **Applies to**
 
--   Windows 10
+-   Windows 10 Enterprise edition
 -   Windows Server 2016
 
 If you're looking for content on what each diagnostic data level means and how to configure it in your organization, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
@@ -39,7 +39,7 @@ It is recommended that you restart a device after making configuration changes t
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
 
-## What's new in Windows 10, version 1709
+## What's new in Windows 10, version 1709 Enterprise edition
 
 Here's a list of changes that were made to this article for Windows 10, version 1709:
 
@@ -47,7 +47,7 @@ Here's a list of changes that were made to this article for Windows 10, version 
 - Added the Storage Health section.
 - Added discussion of apps for websites in the Microsoft Store section.
 
-## What's new in Windows 10, version 1703
+## What's new in Windows 10, version 1703 Enterprise edition
 
 Here's a list of changes that were made to this article for Windows 10, version 1703:
 
@@ -81,7 +81,7 @@ The following sections list the components that make network connections to Micr
 
 If you're running Windows 10, they will be included in the next update for the Long Term Servicing Branch.
 
-### Settings for Windows 10 Enterprise
+### Settings for Windows 10 Enterprise edition 
 
 See the following table for a summary of the management settings for Windows 10 Enterprise, version 1709 and Windows 10 Enterprise, version 1703.
 
@@ -1445,7 +1445,7 @@ To change the level of diagnostic and usage data sent when you **Send your devic
 -   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection\\AllowTelemetry**, with a value of 0-3, as appropriate for your deployment (see below for the values for each level). 
 
 > [!NOTE] 
-> If the **Security** option is configured by using Group Policy or the Registry, the value will not be reflected in the UI. The **Security** option is only availble in Windows 10 Enterprise edition.
+> If the **Security** option is configured by using Group Policy or the Registry, the value will not be reflected in the UI. The **Security** option is only available in Windows 10 Enterprise edition.
 
    -or-
 
