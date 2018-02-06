@@ -284,7 +284,7 @@ Before applying the multi-app configuration, make sure the specified user accoun
 
 #### Configs for group accounts
 
-Group accounts are specified using `<UserGroup>`.
+Group accounts are specified using `<UserGroup>`. Nested groups are not supported. For example, if user A is member of Group 1, Group 1 is member of Group 2, and Group 2 is used in <Config/>, user A will not have the kiosk experience. 
 
 - Local group: Specify the group type as **LocalGroup** and put the group name in Name attribute. 
 
@@ -633,7 +633,6 @@ Lock the Taskbar	 |	Enabled
 Prevent users from adding or removing toolbars |		Enabled
 Prevent users from resizing the taskbar	 |	Enabled
 Remove frequent programs list from the Start Menu |		Enabled
-Remove Pinned programs from the taskbar	 |	Enabled
 Remove the Security and Maintenance icon	 |	Enabled
 Turn off all balloon notifications |		Enabled
 Turn off feature advertisement balloon notifications	 |	Enabled
@@ -657,9 +656,19 @@ Some of the MDM policies based on the [Policy configuration service provider (CS
 Setting	| 	Value	| System-wide
  --- | --- | ---
 [Experience/AllowCortana](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowcortana)		| 0 - Not allowed	| 	Yes
+[Start/AllowPinnedFolderDocuments](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderdocuments) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Start/AllowPinnedFolderDownloads](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderdownloads) |	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Start/AllowPinnedFolderFileExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderfileexplorer) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Start/AllowPinnedFolderHomeGroup](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderhomegroup) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Start/AllowPinnedFolderMusic](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldermusic) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Start/AllowPinnedFolderNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldernetwork) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Start/AllowPinnedFolderPersonalFolder](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderpersonalfolder) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Start/AllowPinnedFolderPictures](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderpictures) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
 [Start/AllowPinnedFolderSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldersettings)	| 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
-Start/HidePeopleBar		| 1 - True (hide)	| 	No
-[Start/HideChangeAccountSettings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-start#start-hidechangeaccountsettings)		| 1 - True (hide) | Yes
+[Start/AllowPinnedFolderVideos](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldervideos) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+Start/DisableContextMenus | 1 - Context menus are hidden for Start apps | No
+[Start/HidePeopleBar](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-hidepeoplebar)		| 1 - True (hide)	| 	No
+[Start/HideChangeAccountSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-hidechangeaccountsettings)		| 1 - True (hide) | Yes
 [WindowsInkWorkspace/AllowWindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace#windowsinkworkspace-allowwindowsinkworkspace)	| 	0 - Access to ink workspace is disabled and the feature is turned off	| 	Yes
 [Start/StartLayout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-startlayout)	| Configuration dependent	| 	No
 [WindowsLogon/DontDisplayNetworkSelectionUI](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-dontdisplaynetworkselectionui)	| 	&lt;Enabled/&gt;	| 	Yes
