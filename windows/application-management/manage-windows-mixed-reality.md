@@ -26,7 +26,7 @@ ms.date: 11/09/2017
 
 To enable users to download the Windows Mixed Reality software, enterprises using WSUS can approve Windows Mixed Reality package by unblocking **KB4016509: FeatureOnDemandOasis - Windows 10 version 1703 for x64-based Systems**. 
 
-Windows Mixed Reality will also requre a Data Assets update package. In Windows 10, version (1804?), you must import the Data Assets update package from the [Microsoft Update Catalog](http://www.catalog.update.microsoft.com/). In Windows 10, version 1709, you can import the Data Assets update package from the catalog or from WSUS.
+Windows Mixed Reality will also require a Data Assets update package, if available. In Windows 10, version (1804?), you must import the Data Assets update package from the [Microsoft Update Catalog](http://www.catalog.update.microsoft.com/). In Windows 10, version 1709, you can import the Data Assets update package from the catalog or from WSUS.
 
  
 Enterprises devices running Windows 10, version 1709, will not be able to install Windows Mixed Reality Feature on Demand (FOD) directly from WSUS. Instead, use one of the following options to install Windows Mixed Reality software:
@@ -35,7 +35,7 @@ Enterprises devices running Windows 10, version 1709, will not be able to instal
   
   - [Download the Microsoft Windows Holographic Desktop Feature on Demand package.](http://download.microsoft.com/download/6/F/8/6F816172-AC7D-4F45-B967-D573FB450CB7/Microsoft-Windows-Holographic-Desktop-FOD-Package.cab)
 
-  - Obtain the latest Data Assets update package (which is a stand-alone package and not the feature on demand). The package title contains following keywords: **Oasis Asset Update for Windows**. 
+  - Obtain the latest Data Assets update package (which is a stand-alone package and not the feature on demand). *Add instructions on locating asset package when we know what an MR KB title will look like* 
  
   - Use `Add-Capability` to add the Windows Mixed Reality feature on demand package to the image, then use `Add-Package` to apply the latest cumulative update, and then use `Add-Package` to add the Data Assets update package. 
   
