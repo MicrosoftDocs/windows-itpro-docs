@@ -56,9 +56,9 @@ There are a couple of things we need to know when you pay for apps. You can add 
 6.	If you don’t have a payment method saved in **Billing - Payment methods**, we will prompt you for one.
 7.	Add your credit card or debit card info, and click **Next**. Your card info is saved as a payment option on **Billing - Payment methods**.
 
-You’ll also need to have your business address saved on ****Billing - Account profile***. The address is used to generate tax rates. For more information on taxes for apps, see [organization tax information](https://docs.microsoft.com/microsoft-store/update-microsoft-store-for-business-account-settings#organization-tax-information). 
+You’ll also need to have your business address saved on **Billing - Account profile**. The address is used to generate tax rates. For more information on taxes for apps, see [organization tax information](https://docs.microsoft.com/microsoft-store/update-microsoft-store-for-business-account-settings#organization-tax-information). 
 
-Microsoft Store adds the app to your inventory. From **Inventory** or **Apps & software**, you can:
+Microsoft Store adds the app to your inventory. From **Products & services**, you can:
 - Distribute the app: add to private store, or assign licenses
 - View app licenses: review current licenses, reclaim and reassign licenses
 - View app details: review the app details page and purchase more licenses
