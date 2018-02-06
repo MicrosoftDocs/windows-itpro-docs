@@ -130,7 +130,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 <p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
 
 > [!Note]  
-> The policies supported in Windows 10 S is the same as in Windows 10 Pro, except that policies under AppliationsDefaults are not suppported in Windows 10 S.
+> The policies supported in Windows 10 S are the same as those supported in Windows 10 Pro with the exception of the policies under ApplicationDefaults.  The ApplicationDefaults polices are not supported in Windows 10 S.
 
 ## Policies
 
@@ -376,30 +376,6 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-bitlocker.md#bitlocker-encryptionmethod" id="bitlocker-encryptionmethod">Bitlocker/EncryptionMethod</a>
   </dd>
-  <dd>
-    <a href="./bitlocker-csp.md#encryptionmethodbydrivetype" id="encryptionmethodbydrivetype">BitLocker/EncryptionMethodByDriveType</a> in BitLocker CSP
-  </dd>
-  <dd>
-    <a href="./bitlocker-csp.md#fixeddrivesrecoveryoptions" id="fixeddrivesrecoveryoptions">BitLocker/FixedDrivesRecoveryOptions</a> in BitLocker CSP
-  </dd>
-  <dd>
-    <a href="./bitlocker-csp.md#fixeddrivesrequireencryption" id="fixeddrivesrequireencryption">BitLocker/FixedDrivesRequireEncryption</a> in BitLocker CSP
-  </dd>
-  <dd>
-    <a href="./bitlocker-csp.md#removabledrivesrequireencryption" id="removabledrivesrequireencryption">BitLocker/RemovableDrivesRequireEncryption</a> in BitLocker CSP
-  </dd>
-  <dd>
-    <a href="./bitlocker-csp.md#systemdrivesminimumpinlength" id="systemdrivesminimumpinlength">BitLocker/SystemDrivesMinimumPINLength</a> in BitLocker CSP
-  </dd>
-  <dd>
-    <a href="./bitlocker-csp.md#systemdrivesrecoverymessage" id="systemdrivesrecoverymessage">BitLocker/SystemDrivesRecoveryMessage</a> in BitLocker CSP
-  </dd>
-  <dd>
-    <a href="./bitlocker-csp.md#systemdrivesrecoveryoptions" id="systemdrivesrecoveryoptions">BitLocker/SystemDrivesRecoveryOptions</a> in BitLocker CSP
-  </dd>
-  <dd>
-    <a href="./bitlocker-csp.md#systemdrivesrequirestartupauthentication" id="systemdrivesrequirestartupauthentication">BitLocker/SystemDrivesRequireStartupAuthentication</a> in BitLocker CSP
-  </dd>
 </dl>
 
 ### Bluetooth policies
@@ -433,6 +409,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-allowbrowser" id="browser-allowbrowser">Browser/AllowBrowser</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-browser.md#browser-allowconfigurationupdateforbookslibrary" id="browser-allowconfigurationupdateforbookslibrary">Browser/AllowConfigurationUpdateForBooksLibrary</a>
   </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-allowcookies" id="browser-allowcookies">Browser/AllowCookies</a>
@@ -473,9 +452,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-browser.md#browser-allowsmartscreen" id="browser-allowsmartscreen">Browser/AllowSmartScreen</a>
   </dd>
-  <!--<dd>
+  <dd>
     <a href="./policy-csp-browser.md#browser-alwaysenablebookslibrary" id="browser-alwaysenablebookslibrary">Browser/AlwaysEnableBooksLibrary</a>
-  </dd>-->
+  </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-clearbrowsingdataonexit" id="browser-clearbrowsingdataonexit">Browser/ClearBrowsingDataOnExit</a>
   </dd>
@@ -2484,6 +2463,13 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### RestrictedGroups policies
+
+  <dd>
+    <a href="policy-csp-restrictedgroups.md#restrictedgroups-configuregroupmembership">RestrictedGroups/ConfigureGroupMembership</a>
+  </dd>
+
+
 ### Search policies
 
 <dl>
@@ -2812,6 +2798,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="policy-csp-systemservices.md#systemservices-configurexboxlivenetworkingservicestartupmode" id="systemservices-configurexboxlivenetworkingservicestartupmode">SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode</a>
+  </dd>
 
 ### TaskScheduler policies
 
