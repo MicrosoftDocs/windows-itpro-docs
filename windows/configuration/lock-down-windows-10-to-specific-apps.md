@@ -633,6 +633,7 @@ Lock the Taskbar	 |	Enabled
 Prevent users from adding or removing toolbars |		Enabled
 Prevent users from resizing the taskbar	 |	Enabled
 Remove frequent programs list from the Start Menu |		Enabled
+Remove ‘Map Network Drive’ and ‘Disconnect Network Drive’ | Enabled
 Remove the Security and Maintenance icon	 |	Enabled
 Turn off all balloon notifications |		Enabled
 Turn off feature advertisement balloon notifications	 |	Enabled
