@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
-ms.date: 01/26/2018
+ms.date: 02/05/2018
 ---
 
 # Hardware-based protection
