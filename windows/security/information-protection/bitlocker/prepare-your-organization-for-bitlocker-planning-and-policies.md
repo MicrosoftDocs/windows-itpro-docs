@@ -245,8 +245,8 @@ However, you cannot use recovery passwords generated on a system in FIPS mode fo
 
 ## More information
 
-- [Trusted Platform Module](../tpm/trusted-platform-module-overview.md)
-- [TPM Group Policy settings](../tpm/trusted-platform-module-services-group-policy-settings.md)
+- [Trusted Platform Module](/windows/security/hardware-protection/tpm/trusted-platform-module-overview.md)
+- [TPM Group Policy settings](/windows/security/hardware-protection/tpm/trusted-platform-module-services-group-policy-settings.md)
 - [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.md)
 - [BitLocker](bitlocker-overview.md)
 - [BitLocker Group Policy settings](bitlocker-group-policy-settings.md)
