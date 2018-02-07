@@ -230,7 +230,7 @@ sections:
 
   - type: markdown
 
-    text: ">[!VIDEO https://www.youtube.com/embed/Cn29dmgDcIw]"
+    text: ">[![VIDEO](images/fall-creators-update-next-gen-security.png)](https://www.youtube.com/watch?v=JDGMNFwyUg8)"
     
 - title: Additional security features in Windows 10 
 
