@@ -1068,7 +1068,7 @@ To deploy and manage a WDAC policy with Group Policy:
 
 4.  Open the Group Policy Management Editor: right-click the new GPO, and then click **Edit**.
 
-5.  In the selected GPO, navigate to Computer Configuration\\Administrative Templates\\System\\Windows Defender Device Guard. Right-click **Deploy Windows Defender Application Control** and then click **Edit**.
+5.  In the selected GPO, navigate to Computer Configuration\\Administrative Templates\\System\\Device Guard. Right-click **Deploy Windows Defender Application Control** and then click **Edit**.
 
     ![Edit the Group Policy for Windows Defender Application Control](images/wdac-edit-gp.png)
 
