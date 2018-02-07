@@ -248,16 +248,33 @@ The following example hides the taskbar:
 
 Under **Configs**, define which user account will be associated with the profile. When this user account signs in on the device, the associated assigned access profile will be enforced, including the allowed apps, Start layout, and taskbar configuration, as well as other local group policies or mobile device management (MDM) policies set as part of the multi-app experience. 
 
-The full multi-app assigned access experience can only work for non-admin users. It’s not supported to associate an admin user with the assigned access profile; doing this in the XML file will result in unexpected/unsupported experiences when this admin user signs in.  
+The full multi-app assigned access experience can only work for non-admin users. It’s not supported to associate an admin user with the assigned access profile; doing this in the XML file will result in unexpected/unsupported experiences when this admin user signs in. 
 
-Individual accounts can be local, domain, or Azure Active Directory (Azure AD). In Windows 10, version (1804?), group accounts are also supported. Group accounts can be local, Active Directory (domain), or Azure AD.
+You can assign:
+
+- [A local standard user account that signs in automatically](#config-for-autologon-account) (Applies to Windows 10, version (1804?) only)
+- [An individual account, which can be local, domain, or Azure Active Directory (Azure AD)](#config-for-individual-accounts)
+- [A group account, which can be local, Active Directory (domain), or Azure AD](#config-for-group-accounts) (Applies to Windows 10, version (1804?) only) 
 
 >[!NOTE]
->Configs that specify group accounts cannot use a kiosk profile, only a lockdown profile. If a group is configured to a kiosk profile, the CSP will reject the request.   
+>Configs that specify group accounts cannot use a kiosk profile, only a lockdown profile. If a group is configured to a kiosk profile, the CSP will reject the request.  
 
-#### Configs for individual accounts
+#### Config for AutoLogon Account
 
-Individual accounts are specified using `<Account>` or `<AutoLogonAccount>`. When you use `<AutoLogonAccount>`, the specific account is signed in automatically after restart.
+When you use `<AutoLogonAccount>` and the configuration is applied to a device, the specified account is created on the device as a local standard user account. The specified account is signed in automatically after restart.
+
+```xml
+<Configs>
+  <Config>
+    <AutoLogonAccount>MultiAppKioskUser</AutoLogonAccount>
+    <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+  </Config>
+</Configs> 
+```
+
+#### Config for individual accounts
+
+Individual accounts are specified using `<Account>`. 
 
 - Local account can be entered as `machinename\account` or `.\account` or just `account`.
 - Domain account should be entered as `domain\account`.
@@ -282,16 +299,9 @@ Before applying the multi-app configuration, make sure the specified user accoun
 </Configs> 
 ```
 
-```xml
-<Configs>
-  <Config>
-    <AutoLogonAccount>MultiAppKioskUser</AutoLogonAccount>
-    <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
-  </Config>
-</Configs> 
-```
 
-#### Configs for group accounts
+
+#### Config for group accounts
 
 Group accounts are specified using `<UserGroup>`. Nested groups are not supported. For example, if user A is member of Group 1, Group 1 is member of Group 2, and Group 2 is used in `<Config/>`, user A will not have the kiosk experience. 
 
