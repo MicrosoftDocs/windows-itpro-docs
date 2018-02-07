@@ -226,11 +226,11 @@ sections:
 
   - type: markdown
 
-    text: ">[!VIDEO https://www.youtube.com/watch?v=JDGMNFwyUg8](images/next-generation-windows-security-vision.png)"
+    text: ">[images/next-generation-windows-security-vision.png](https://www.youtube.com/watch?v=JDGMNFwyUg8)"
 
   - type: markdown
 
-    text: ">[!VIDEO https://www.youtube.com/watch?v=mMJfXnLnJ30](images/fall-creators-update-next-gen-security.png"
+    text: ">[!VIDEO https://www.youtube.com/embed/v=mMJfXnLnJ30](images/fall-creators-update-next-gen-security.png)"
 
 - title: Additional security features in Windows 10 
 
