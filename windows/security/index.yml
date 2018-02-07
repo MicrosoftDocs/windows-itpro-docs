@@ -1,0 +1,262 @@
+### YamlMime:YamlDocument
+
+documentType: LandingData
+
+title: Windows 10 Enterprise Security
+
+metadata:
+
+  document_id: 
+
+  title: Windows 10 Enterprise Security
+
+  description: Learn about enterprise-grade security features for Windows 10.
+
+  keywords: protect, company, data, Windows, device, app, management, Microsoft365, e5, e3
+
+  author: brianlic-msft
+
+  ms.author: brianlic
+
+  manager: brianlic
+
+  ms.date: 02/06/2018
+
+  ms.topic: article
+
+  ms.devlang: na
+
+sections:
+
+- items:
+
+  - type: markdown
+
+    text: Secure corporate data and manage risk. 
+
+- items:
+
+  - type: list
+
+    style: cards
+
+    className: cardsM
+
+    columns: 3
+
+    items:
+
+    - href: \windows\security\identity-protection\
+
+      html: <p>Deploy secure enterprise-grade authentication and access control to protect accounts and data</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_identity-protection.svg
+
+      title: Identity and access management
+
+    - href: \windows\security\threat-protection\
+
+      html: <p>Stop cyberthreats and quickly identify and respond to breaches</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_threat-protection.svg
+
+      title: Threat protection
+
+    - href: \windows\security\information-protection\
+
+      html: <p>Identify and secure critical data to prevent data loss</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_information-protection.svg
+
+      title: Information protection
+
+- title: Security features built in to Windows 10 
+
+  items:
+
+  - type: paragraph
+
+    text: 'Windows 10 enables critical security features to protect your device right from the start.'
+
+  - type: list
+
+    style: cards
+
+    className: cardsM
+
+    columns: 3
+
+    items:
+
+    - href: \windows\security\hardware-protection\how-hardware-based-containers-help-protect-windows
+
+      html: <p>Protect the boot process and maintain system integrity</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_identity-protection.svg
+      
+      title: Windows Defender System Guard
+
+    - href: \windows\security\threat-protection\windows-defender-antivirus\windows-defender-antivirus-in-windows-10
+
+      html: <p>Protect against malware management using next-generation antivirus technologies</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_threat-protection.svg
+      
+      title: Windows Defender Antivirus
+
+    - href: \windows\security\information-protection\bitlocker\bitlocker-overview
+
+      html: <p>Prevent data theft from lost or stolen devices</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_information-protection.svg
+      
+      title: BitLocker
+
+- title: Security features in Microsoft 365 E3
+
+  items:
+
+  - type: paragraph
+
+    text: 'Windows 10 Enterprise provides the foundation for Microsoft 365 E3 and a secure modern workplace.'
+
+  - type: list
+
+    style: cards
+
+    className: cardsM
+
+    columns: 3
+
+    items:
+
+    - href: \windows\security\identity-protection\hello-for-business\hello-overview
+
+      html: <p>Give users a more personal and secure way to access their devices</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_identity-protection.svg
+      
+      title: Windows Hello for Business
+      
+    - href: \windows\security\threat-protection\windows-defender-application-control
+
+      html: <p>Lock down applications that run on a device</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_threat-protection.svg
+      
+      title: Windows Defender Application Control
+
+    - href: \windows\security\information-protection\windows-information-protection\protect-enterprise-data-using-wip
+
+      html: <p>Prevent accidental data leaks from enterprise devices</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_information-protection.svg
+      
+      title: Windows Information Protection 
+
+- title: Security features in Microsoft 365 E5
+
+  items:
+
+  - type: paragraph
+
+    text: 'Get all of the protection from Microsoft 365 E3 security, plus these cloud-based security features to help you defend against even the most advanced threats.'
+
+  - type: list
+
+    style: cards
+
+    className: cardsM
+
+    columns: 3
+
+    items:
+
+    - href: https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection
+
+      html: <p>Identity Protection and Privileged Identity Management</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_identity-protection.svg
+      
+      title: Azure Active Directory P2
+
+    - href: \windows\security\threat-protection\Windows-defender-atp\windows-defender-advanced-threat-protection
+
+      html: <p>Detect, investigate, and respond to advanced cyberattacks</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_threat-protection.svg
+      
+      title: Windows Defender Advanced Threat Protection 
+
+    - href: https://www.microsoft.com/cloud-platform/azure-information-protection
+
+      html: <p>Protect documents and email automatically</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_information-protection.svg
+      
+      title: Azure Information Protection P2
+
+- title: Additional security features in Windows 10 
+
+  items:
+
+  - type: paragraph
+
+    text: 'These additional security features are also built in to Windows 10 Enterprise.'
+
+  - type: list
+
+    style: unordered
+
+    items:
+
+    - html: <a href="/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security">Windows Defender Firewall</a>
+    - html: <a href="/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard">Windows Defender Exploit Guard</a>
+    - html: <a href="/windows/security/identity-protection/credential-guard/credential-guard">Windows Defender Credential Guard</a>
+    - html: <a href="/windows/security/threat-protection/device-guard/device-guard-deployment-guide">Windows Defender Device Guard</a>  
+    - html: <a href="/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview">Windows Defender Application Guard</a>
+    - html: <a href="/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview">Windows Defender SmartScreen</a>  
+    - html: <a href="/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center">Windows Defender Security Center</a>
+      
+- title: Security Resources
+
+  items:
+
+  - type: list
+
+    style: unordered
+
+    items:
+
+    - html: <a href="https://www.microsoft.com/wdsi">Windows Defender Security Intelligence</a>
+    - html: <a href="https://cloudblogs.microsoft.com/microsoftsecure/">Microsoft Secure blog</a>
+    - html: <a href="https://portal.msrc.microsoft.com/">Security Update blog</a>
+    - html: <a href="https://technet.microsoft.com/security/dn440717.aspx(d=robot)">Microsoft Security Response Center (MSRC)</a>
+    - html: <a href="https://blogs.technet.microsoft.com/msrc/">MSRC Blog</a>
+    - html: <a href="https://www.microsoft.com/wdsi/threats/ransomware">Ransomware FAQ</a>
+    
+
