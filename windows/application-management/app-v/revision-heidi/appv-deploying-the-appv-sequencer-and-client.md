@@ -63,7 +63,7 @@ Use the following steps to locate and configure the Group Policy setting for the
 1. In the Group Policy Management Console, navigate to **Computer Configuration** > **Administrative Templates** > **System** > **App-V** > **Streaming**.
 2. Enable the **Set the Shared Content Mode (SCS) mode** setting.
 
-### Configure an individual client to use the SCS mode
+### Configure an individual client to use SCS mode
 
 To configure the App-V client to run in SCS mode, on the client, enter the following Windows PowerShell command:
 
@@ -79,11 +79,14 @@ For a list of changes in the App-V Sequencer, see [What's new in App-V](appv-abo
 
 To deploy the sequencer, see [How to install the Sequencer](appv-install-the-sequencer.md).
 
-## App-V Client and Sequencer logs
+## App-V client and Sequencer logs
 
-You can use the App-V Sequencer log information to help troubleshoot the Sequencer installation and operational events while using App-V. The Sequencer-related log information can be reviewed with the **Event Viewer**. The following line displays the specific path for Sequencer-related events:
+You can use the App-V Sequencer log information to troubleshoot Sequencer installation and operational events while using App-V. The Sequencer-related log information can be reviewed with the **Event Viewer**. The following file path is the specific path for Sequencer-related events:
 
-**Event Viewer \\ Applications and Services Logs \\ Microsoft \\ App V**. Sequencer-related events are prepended with **AppV\_Sequencer**. Client-related events are prepended with **AppV\_Client**.
+**Event Viewer \\ Applications and Services Logs \\ Microsoft \\ App V**.
+
+>[!NOTE]
+>Sequencer-related events are prepended with **AppV\_Sequencer**. Client-related events are prepended with **AppV\_Client**.
 
 ## Have a suggestion for App-V?
 
