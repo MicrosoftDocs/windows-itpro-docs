@@ -220,6 +220,18 @@ sections:
       
       title: Azure Information Protection P2
 
+- title: Videos
+
+  items:
+
+  - type: markdown
+
+    text: ">[![VIDEO](images/next-generation-windows-security-vision.png)](https://www.youtube.com/watch?v=IvZySDNfNpo)"
+
+  - type: markdown
+
+    text: ">[!VIDEO https://www.youtube.com/embed/Cn29dmgDcIw]"
+    
 - title: Additional security features in Windows 10 
 
   items:
