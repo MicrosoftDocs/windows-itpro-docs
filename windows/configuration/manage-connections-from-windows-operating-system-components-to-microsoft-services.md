@@ -1065,7 +1065,17 @@ To turn off **Choose apps that can use your microphone**:
 
 ### <a href="" id="bkmk-priv-notifications"></a>17.5 Notifications
 
-In the **Notifications** area, you can choose which apps have access to notifications.
+To turn off notifications network usage:
+
+-   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Notifications** > **Turn off Notifications network usage**
+
+    -   Set to **Enabled**.
+
+        -or-
+
+-   Create a REG\_DWORD registry setting in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\PushNotifications!NoCloudApplicationNotification**, with a value of 1 (one)
+
+In the **Notifications** area, you can also choose which apps have access to notifications.
 
 To turn off **Let apps access my notifications**:
 
