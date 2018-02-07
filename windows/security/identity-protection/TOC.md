@@ -17,6 +17,8 @@
 
 ## [Install digital certificates on Windows 10 Mobile](installing-digital-certificates-on-windows-10-mobile.md)
 
+## [How hardware-based containers help protect Windows 10](how-hardware-based-containers-help-protect-windows.md)
+
 ## [Protect derived domain credentials with Credential Guard](credential-guard/credential-guard.md)
 ### [How Credential Guard works](credential-guard/credential-guard-how-it-works.md)
 ### [Credential Guard Requirements](credential-guard/credential-guard-requirements.md)
