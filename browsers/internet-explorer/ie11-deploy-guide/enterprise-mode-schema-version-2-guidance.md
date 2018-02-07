@@ -191,6 +191,17 @@ The &lt;url&gt; attribute, as part of the &lt;site&gt; element in the v.2 versio
 </thead>
 <tbody>
 <tr>
+<td>allow-redirect</td>
+<td>A boolean attribute of the &lt;open-in&gt; element that controls the behavior for redirected sites. Setting this attribute to "true" indicates that the site will open in IE11 or Microsoft Edge even if the site is navigated to as part of a HTTP or meta refresh redirection chain. Omitting the attribute is equivalent to "false" (sites in redirect chain will not open in another browser).
+<p><b>Example</b>
+<pre class="syntax">
+&lt;site url="contoso.com/travel"&gt;
+  &lt;open-in allow-redirect="true"&gt;IE11&lt;/open-in&gt;
+&lt;/site&gt;</pre>
+In this example, if contoso.com/travel is encountered in a redirect chain in Microsoft Edge, it will be opened in Internet Explorer.</td>
+<td>Internet Explorer 11 and Microsoft Edge</td>
+</tr>
+<tr>
 <td>version</td>
 <td>Specifies the version of the Enterprise Mode Site List. This attribute is supported for the &lt;site-list&gt; element.</td>
 <td>Internet Explorer 11 and Microsoft Edge</td>
