@@ -1485,7 +1485,11 @@ In the **Background Apps** area, you can choose which apps can run in the backgr
 
 To turn off **Let apps run in the background**:
 
--   Turn off the feature in the UI for each app.
+-   In **Background apps**, set **Let apps run in the background** to **Off**.
+
+     -or-
+
+-   In **Background apps**, turn off the feature for each app.
     
      -or-
 

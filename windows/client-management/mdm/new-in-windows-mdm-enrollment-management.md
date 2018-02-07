@@ -1389,6 +1389,27 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### February 2018
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[VPNv2 ProfileXML XSD](vpnv2-profile-xsd.md)</td>
+<td style="vertical-align:top"><p>Updated the XSD and Plug-in profile example for VPNv2 CSP.</p>
+</td></tr>
+</tbody>
+</table>
+
 ### January 2018
 
 <table class="mx-tdBreakAll">
