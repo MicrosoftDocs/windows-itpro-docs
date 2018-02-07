@@ -8449,11 +8449,6 @@
 "source_path": "windows/deployment/windows-10-auto-pilot.md",
 "redirect_url": "/windows/deployment/windows-autopilot/windows-10-autopilot",
 "redirect_document_id": true
-},
-{
-"source_path": "bcs/support/transition-csp-subscription.md",
-"redirect_url": "/microsoft-365/business/support/transition-csp-subscription",
-"redirect_document_id": true
 }
 ]
 }
