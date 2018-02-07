@@ -1064,7 +1064,7 @@ To deploy and manage a WDAC policy with Group Policy:
 
     Figure 3. Create a GPO
 
-3.  Name new GPO. You can choose any name. 
+3.  Name the new GPO. You can choose any name. 
 
 4.  Open the Group Policy Management Editor: right-click the new GPO, and then click **Edit**.
 
