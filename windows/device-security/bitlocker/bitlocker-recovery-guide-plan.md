@@ -100,15 +100,16 @@ Before you create a thorough BitLocker recovery process, we recommend that you t
 
 1.  Click the **Start** button, type **cmd** in the **Start Search** box, right-click **cmd.exe**, and then click **Run as administrator**.
 2.  At the command prompt, type the following command and then press ENTER:
-    `manage-bde -forcerecovery <Volume>`
+    `manage-bde -forcerecovery <BitLockerVolume>`
+
     
 **To force recovery for a remote computer**
 
 1.  On the Start screen, type **cmd.exe**, and then click **Run as administrator**.
 2.  At the command prompt, type the following command and then press ENTER:
-    `manage-bde. -ComputerName <ComputerName> -forcerecovery <Volume>`
+    `manage-bde. -ComputerName <RemoteComputerName> -forcerecovery <BitLockerVolume>`
 
-> **Note:**  *ComputerName* represents the name of the remote computer. *Volume* represents the volume on the remote computer that is protected with BitLocker.
+> **Note:**  Recovery triggered by `-forcerecovery` persists for multiple restarts until a TPM protector is added or protection is suspended by the user.
  
 ## <a href="" id="bkmk-planningrecovery"></a>Planning your recovery process
 
