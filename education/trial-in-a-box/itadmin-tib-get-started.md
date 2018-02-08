@@ -36,7 +36,7 @@ If you run into any problems while following the steps in this guide, or you hav
 
 </br>
 
-<center><iframe width="560" height="315" src="https://aka.ms/EDU-IT-Admin-Setup" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+> [!VIDEO https://aka.ms/edu-it-admin-setup]
 
 </br>
 

@@ -20,7 +20,7 @@ ms.date: 12/11/2017
 
 </br>
 
-<center><iframe width="560" height="315" src="https://aka.ms/edu-welcome" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+> [!VIDEO https://aka.ms/edu-welcome]
 
 </br>
 
