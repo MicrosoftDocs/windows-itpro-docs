@@ -1,4 +1,4 @@
-# [Access protection](access-control/access-control.md)
+# [Identity and access management](index.md)
 
 ## [Access Control Overview](access-control/access-control.md)
 ### [Dynamic Access Control Overview](access-control/dynamic-access-control.md)
@@ -16,6 +16,8 @@
 ## [Enterprise Certificate Pinning](enterprise-certificate-pinning.md)
 
 ## [Install digital certificates on Windows 10 Mobile](installing-digital-certificates-on-windows-10-mobile.md)
+
+## [How hardware-based containers help protect Windows 10](how-hardware-based-containers-help-protect-windows.md)
 
 ## [Protect derived domain credentials with Credential Guard](credential-guard/credential-guard.md)
 ### [How Credential Guard works](credential-guard/credential-guard-how-it-works.md)
