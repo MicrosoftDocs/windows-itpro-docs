@@ -20,7 +20,7 @@ ms.date: 12/11/2017
 
 </br>
 
-> [!VIDEO https://aka.ms/edu-welcome]
+> [!VIDEO https://www.youtube.com/watch?v=azoxUYWbeGg]
 
 </br>
 
