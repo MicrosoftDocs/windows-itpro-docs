@@ -20,6 +20,7 @@ This topic lists new and updated topics in the [Configure Windows 10](index.md) 
 New or changed topic | Description
 --- | ---
 [Create a Windows 10 kiosk that runs multiple apps](lock-down-windows-10-to-specific-apps.md) | Added steps for configuring a kiosk in Microsoft Intune.
+[Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md) | Updated the instructions for applying a customized Start layout using Microsoft Intune.
 
 ## January 2018
 
