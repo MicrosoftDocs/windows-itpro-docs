@@ -262,8 +262,7 @@ The following example hides the taskbar:
 >[!NOTE]
 >This is different from the **Automatically hide the taskbar** option in tablet mode, which shows the taskbar when swiping up from or moving the mouse pointer down to the bottom of the screen. Setting **ShowTaskbar** as **false** will always keep the taskbar hidden. 
 
-<<<<<<< HEAD
-#### KioskModeApp 
+##### KioskModeApp 
 
 **KioskModeApp** is used for a [kiosk profile](#profile) only. Enter the AUMID for a single app.
 
@@ -274,10 +273,8 @@ The following example hides the taskbar:
 >[!IMPORTANT]
 >The kiosk profile is designed for public-facing kiosk devices. We recommend that you use a local, non-administrator account. If the device is connected to your company network, using a domain or Azure Active Direcotry account could potentially compromise confidential information.  
 
-### Configs
-=======
+
 #### Configs
->>>>>>> refs/remotes/origin/master
 
 Under **Configs**, define which user account will be associated with the profile. When this user account signs in on the device, the associated assigned access profile will be enforced, including the allowed apps, Start layout, and taskbar configuration, as well as other local group policies or mobile device management (MDM) policies set as part of the multi-app experience. 
 
@@ -292,7 +289,7 @@ You can assign:
 >[!NOTE]
 >Configs that specify group accounts cannot use a kiosk profile, only a lockdown profile. If a group is configured to a kiosk profile, the CSP will reject the request.  
 
-#### Config for AutoLogon Account
+##### Config for AutoLogon Account
 
 When you use `<AutoLogonAccount>` and the configuration is applied to a device, the specified account is created on the device as a local standard user account. The specified account is signed in automatically after restart.
 
@@ -305,7 +302,7 @@ When you use `<AutoLogonAccount>` and the configuration is applied to a device, 
 </Configs> 
 ```
 
-#### Config for individual accounts
+##### Config for individual accounts
 
 Individual accounts are specified using `<Account>`. 
 
@@ -334,7 +331,7 @@ Before applying the multi-app configuration, make sure the specified user accoun
 
 
 
-#### Config for group accounts
+##### Config for group accounts
 
 Group accounts are specified using `<UserGroup>`. Nested groups are not supported. For example, if user A is member of Group 1, Group 1 is member of Group 2, and Group 2 is used in `<Config/>`, user A will not have the kiosk experience. 
 
