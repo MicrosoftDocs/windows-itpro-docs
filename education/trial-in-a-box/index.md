@@ -20,7 +20,7 @@ ms.date: 12/11/2017
 
 </br>
 
-> [!VIDEO https://www.youtube.com/watch?v=azoxUYWbeGg]
+> [!VIDEO https://www.youtube.com/embed/azoxUYWbeGg]
 
 </br>
 

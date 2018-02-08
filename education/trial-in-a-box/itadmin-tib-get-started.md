@@ -36,7 +36,7 @@ If you run into any problems while following the steps in this guide, or you hav
 
 </br>
 
-> [!VIDEO https://www.youtube.com/watch?v=cVVKCpO2tyI]
+> [!VIDEO https://www.youtube.com/embed/cVVKCpO2tyI]
 
 </br>
 

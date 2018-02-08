@@ -31,7 +31,7 @@ ms.date: 01/12/2017
 
 </br>
 
-> [!VIDEO https://www.youtube.com/watch?v=3nqooY9Iqq4]
+> [!VIDEO https://www.youtube.com/embed/3nqooY9Iqq4]
 
 </br>
 
@@ -49,7 +49,7 @@ To try out the educator tasks, start by logging in as a teacher.
 ![Improve student reading speed and comprehension](images/edu-TIB-setp-2-jump.png) 
 ## <a name="edu-task2"></a>2. Significantly improve student reading speed and comprehension
 
-> [!VIDEO https://www.youtube.com/watch?v=GCzSAslq_2Y]
+> [!VIDEO https://www.youtube.com/embed/GCzSAslq_2Y]
 
 </br>
 
@@ -80,7 +80,7 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 ![Spark communication, critical thinking, and creativity with Microsoft Teams](images/edu-TIB-setp-3-jump.png) 
 ## <a name="edu-task3"></a>3. Spark communication, critical thinking, and creativity in the classroom
 
-> [!VIDEO https://www.youtube.com/watch?v=riQr4Dqb8B8]
+> [!VIDEO https://www.youtube.com/embed/riQr4Dqb8B8]
 
 </br>
 
@@ -99,7 +99,7 @@ Take a guided tour of Microsoft Teams and test drive this digital hub.
 ![Expand classroom collaboration and interaction with OneNote](images/edu-TIB-setp-4-jump.png) 
 ## <a name="edu-task4"></a>4. Expand classroom collaboration and interaction between students
 
-> [!VIDEO https://www.youtube.com/watch?v=dzDSWMb_fIE]
+> [!VIDEO https://www.youtube.com/embed/dzDSWMb_fIE]
 
 </br>
 
@@ -130,7 +130,7 @@ See how a group project comes together with opportunities to interact with other
 ![Further collaborate and problem solve with Minecraft: Education Edition](images/edu-TIB-setp-5-jump.png) 
 ## <a name="edu-task5"></a>5. Get kids to further collaborate and problem solve
 
-> [!VIDEO https://www.youtube.com/watch?v=QI_bRNUugog]
+> [!VIDEO https://www.youtube.com/embed/QI_bRNUugog]
 
 </br>
 
