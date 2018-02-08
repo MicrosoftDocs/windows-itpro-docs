@@ -40,7 +40,7 @@ It is enabled by default when certain pre-requisite settings are also enabled. I
 
 You can [specify how long the file should be prevented from running](configure-cloud-block-timeout-period-windows-defender-antivirus.md) while the cloud-based protection service analyzes the file.
 
-You can also [customize the message displayed on users' desktops](wdsc-customize-contact-information.md) when a file is blocked. You can change the company name, contact information, and message URL.
+You can also [customize the message displayed on users' desktops](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information) when a file is blocked. You can change the company name, contact information, and message URL.
 
 > [!IMPORTANT]
 > There is no specific individual setting in System Center Configuration Manager to enable or disable Block at First Sight. It is enabled by default when the pre-requisite settings are configured correctly. You must use Group Policy settings to enable or disable the feature.
