@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
-ms.date: 1/8/2018
+ms.date: 2/8/2018
 ---
 
 # Microsoft Store for Business and Education release history
@@ -14,6 +14,10 @@ ms.date: 1/8/2018
 Microsoft Store for Business and Education regularly releases new and improved feaures. Here's a summary of new or updated features in previous releases. 
 
 Looking for info on the latest release? Check out [What's new in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md) 
+
+## December 2017
+
+- Bug fixes and permformance improvements.
 
 ## November 2017
 
