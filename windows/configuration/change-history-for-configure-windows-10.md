@@ -8,12 +8,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: jdeckerms
-ms.date: 01/31/2018
+ms.date: 02/08/2018
 ---
 
 # Change history for Configure Windows 10
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
+
+## February 2018
+
+New or changed topic | Description
+--- | ---
+[Create a Windows 10 kiosk that runs multiple apps](lock-down-windows-10-to-specific-apps.md) | Added steps for configuring a kiosk in Microsoft Intune.
 
 ## January 2018
 
