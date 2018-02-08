@@ -32,7 +32,8 @@ A single-use or *kiosk* device is easy to set up in Windows 10 for desktop edit
     
 - For a kiosk device to run a Classic Windows application, use [Shell Launcher](#shell-launcher) to set a custom user interface as the shell (Windows 10 Enterprise or Education only). 
 
-To return the device to the regular shell, see [Sign out of assigned access](#sign-out-of-assigned-access).
+>[!TIP]
+>To return the device to the regular shell, see [Sign out of assigned access](#sign-out-of-assigned-access).
 
 >[!NOTE]
 >A Universal Windows app is built on the Universal Windows Platform (UWP), which was first introduced in Windows 8 as the Windows Runtime. A Classic Windows application uses the Classic Windows Platform (CWP) (e.g., COM, Win32, WPF, WinForms, etc.) and is typically launched using an .EXE or .DLL file.
