@@ -9,6 +9,8 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
@@ -20,26 +22,24 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg",
-           "**/*.gif"
+          "**/*.jpg"
         ],
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**"
         ]
       }
     ],
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-	  "uhfHeaderId": "MSDocsHeader-WindowsIT", 
-	  "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
-	  "ms.technology": "windows",
-	  "ms.topic": "article",
-	  "ms.author": "justinha"
+      "breadcrumb_path": "/microsoft-365/business/breadcrumb/toc.json",
+      "extendBreadcrumb": true
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "security"
+    "dest": "bcs-vsts"
   }
 }
