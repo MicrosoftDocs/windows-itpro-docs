@@ -31,7 +31,8 @@ ms.date: 01/12/2017
 
 </br>
 
-<center><iframe width="560" height="315" src="https://aka.ms/EDU-Get-Started" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+> [!VIDEO https://www.youtube.com/watch?v=3nqooY9Iqq4]
+
 </br>
 
 
@@ -48,8 +49,8 @@ To try out the educator tasks, start by logging in as a teacher.
 ![Improve student reading speed and comprehension](images/edu-TIB-setp-2-jump.png) 
 ## <a name="edu-task2"></a>2. Significantly improve student reading speed and comprehension
 
+> [!VIDEO https://www.youtube.com/watch?v=GCzSAslq_2Y]
 
-<center><iframe width="560" height="315" src="https://aka.ms/EDU-Learning-Tools" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 </br>
 
 
@@ -79,7 +80,8 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 ![Spark communication, critical thinking, and creativity with Microsoft Teams](images/edu-TIB-setp-3-jump.png) 
 ## <a name="edu-task3"></a>3. Spark communication, critical thinking, and creativity in the classroom
 
-<center><iframe width="560" height="315" src="https://aka.ms/EDU-Teams" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+> [!VIDEO https://www.youtube.com/watch?v=riQr4Dqb8B8]
+
 </br>
 
 
@@ -97,8 +99,8 @@ Take a guided tour of Microsoft Teams and test drive this digital hub.
 ![Expand classroom collaboration and interaction with OneNote](images/edu-TIB-setp-4-jump.png) 
 ## <a name="edu-task4"></a>4. Expand classroom collaboration and interaction between students
 
+> [!VIDEO https://www.youtube.com/watch?v=dzDSWMb_fIE]
 
-<center><iframe width="560" height="315" src="https://aka.ms/EDU-OneNote" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 </br>
 
 
@@ -128,8 +130,8 @@ See how a group project comes together with opportunities to interact with other
 ![Further collaborate and problem solve with Minecraft: Education Edition](images/edu-TIB-setp-5-jump.png) 
 ## <a name="edu-task5"></a>5. Get kids to further collaborate and problem solve
 
+> [!VIDEO https://www.youtube.com/watch?v=QI_bRNUugog]
 
-<center><iframe width="560" height="315" src="https://aka.ms/EDU-Minecraft-EE" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 </br>
 
 Minecraft: Education Edition provides an immersive environment to develop creativity, collaboration, and problem-solving in an immersive environment where the only limit is your imagination.   
