@@ -291,12 +291,12 @@ You can assign:
 
 ##### Config for AutoLogon Account
 
-When you use `<AutoLogonAccount>` and the configuration is applied to a device, the specified account is created on the device as a local standard user account. The specified account is signed in automatically after restart.
+When you use `<AutoLogonAccount>` and the configuration is applied to a device, the specified account (managed by Assigned Access) is created on the device as a local standard user account. The specified account is signed in automatically after restart.
 
 ```xml
 <Configs>
   <Config>
-    <AutoLogonAccount>MultiAppKioskUser</AutoLogonAccount>
+    <AutoLogonAccount/>
     <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
   </Config>
 </Configs> 
