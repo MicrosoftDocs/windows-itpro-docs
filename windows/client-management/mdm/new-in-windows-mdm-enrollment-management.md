@@ -10,10 +10,14 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/12/2018
+ms.date: 02/05/2018
 ---
 
 # What's new in MDM enrollment and management
+
+
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 This topic provides information about what's new and breaking changes in Windows 10 mobile device management (MDM) enrollment and management experience across all Windows 10 devices.
@@ -1385,6 +1389,27 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### February 2018
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[VPNv2 ProfileXML XSD](vpnv2-profile-xsd.md)</td>
+<td style="vertical-align:top"><p>Updated the XSD and Plug-in profile example for VPNv2 CSP.</p>
+</td></tr>
+</tbody>
+</table>
+
 ### January 2018
 
 <table class="mx-tdBreakAll">
@@ -1405,6 +1430,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>AccountPoliciesAccountLockoutPolicy/AccountLockoutDuration</li>
 <li>AccountPoliciesAccountLockoutPolicy/AccountLockoutThreshold</li>
+<li>Browser/AllowConfigurationUpdateForBooksLibrary</li>
 <li>Browser/AlwaysEnableBooksLibrary</li>
 <li>Browser/EnableExtendedBooksTelemetry</li>
 <li>Browser/UseSharedFolderForBooks</li>
@@ -1454,6 +1480,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li> 
 <li>LocalPoliciesSecurityOptions/UserAccountControl_DetectApplicationInstallationsAndPromptForElevation</li> 
 <li>LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode</li> 
+<li>RestrictedGroups/ConfigureGroupMembership</li>
 <li>Search/AllowCortanaInAAD</li>
 <li>Search/DoNotUseWebResults</li>
 <li>Security/ConfigureWindowsPasswords</li>
@@ -1513,6 +1540,36 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tr class="odd">
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
 <td style="vertical-align:top"><p>Updated the description for AllowWarningForOtherDiskEncryption to describe changes added in Windows 10, next major update.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[DMClient CSP](dmclient-csp.md)</td>
+<td style="vertical-align:top"><p>Added ./User/Vendor/MSFT/DMClient/Provider/[ProviderID]/FirstSyncStatus node. Also added the following nodes in Windows 10, next major update:</p>
+<ul>
+<li>AADSendDeviceToken</li>
+<li>BlockInStatusPage</li>
+<li>AllowCollectLogsButton</li>
+<li>CustomErrorText</li>
+<li>SkipDeviceStatusPage</li>
+<li>SkipUserStatusPage</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[RemoteWipe CSP](remotewipe-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following nodes in Windows 10, next major update:</p>
+<ul>
+<li>AutomaticRedeployment</li>
+<li>doAutomaticRedeployment</li>
+<li>LastError</li>
+<li>Status</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Defender CSP](defender-csp.md)</td>
+<td style="vertical-align:top"><p>Added new node (OfflineScan) in Windows 10, next major update.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[UEFI CSP](uefi-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, next major update.</p>
 </td></tr>
 </tbody>
 </table>

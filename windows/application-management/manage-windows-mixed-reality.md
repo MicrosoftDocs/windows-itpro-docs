@@ -23,11 +23,7 @@ Windows 10, version 1709 (also known as the Fall Creators Update), introduces [W
 <span id="enable" />
 ## Enable Windows Mixed Reality in WSUS
 
-To enable users to download the Windows Mixed Reality software, enterprises using WSUS can approve Windows Mixed Reality package by unblocking the following KBs:
-  
-- KB4016509: FeatureOnDemandOasis - Windows 10 version 1703 for x64-based Systems
-- KB3180030: language packs
-- KB3197985: language packs
+To enable users to download the Windows Mixed Reality software for devices running Windows 10, version 1703, enterprises using WSUS can approve Windows Mixed Reality package by unblocking **KB4016509: FeatureOnDemandOasis - Windows 10 version 1703 for x64-based Systems**. 
  
 Enterprises devices running Windows 10, version 1709, will not be able to install Windows Mixed Reality Feature on Demand (FOD) directly from WSUS. Instead, use one of the following options to install Windows Mixed Reality software:
 

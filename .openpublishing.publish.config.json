@@ -2,6 +2,22 @@
   "build_entry_point": "",
   "docsets_to_publish": [
     {
+      "docset_name": "bcs-vsts",
+      "build_source_folder": "bcs",
+      "build_output_subfolder": "bcs-vsts",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
       "docset_name": "education-VSTS",
       "build_source_folder": "education",
       "build_output_subfolder": "education-VSTS",
@@ -103,24 +119,6 @@
       "version": 0
     },
     {
-      "docset_name": "microsoft-365",
-      "build_source_folder": "microsoft-365",
-      "build_output_subfolder": "microsoft-365",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "moniker_groups": [],
-      "version": 0
-    },
-    {
       "docset_name": "microsoft-edge-VSTS",
       "build_source_folder": "browsers/edge",
       "build_output_subfolder": "microsoft-edge-VSTS",
@@ -144,7 +142,7 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",

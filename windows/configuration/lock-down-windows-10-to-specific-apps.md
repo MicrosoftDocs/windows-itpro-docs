@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerms
 ms.localizationpriority: high
-ms.date: 11/26/2018
+ms.date: 01/31/2018
 ms.author: jdecker
 ---
 
@@ -50,6 +50,7 @@ If you don't want to use a provisioning package, you can deploy the configuratio
 
 - Windows Configuration Designer (Windows 10, version 1709)
 - The kiosk device must be running Windows 10 (S, Pro, Enterprise, or Education), version 1709
+
 
 
 ## Create XML file
