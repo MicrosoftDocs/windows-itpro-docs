@@ -17,17 +17,21 @@ ms.date: 02/08/2018
 -   Windows 10
 -   Windows Server 2016
 
+## Introduction
+
+You can deploy WDAC policies using Group Policy, System Center Configuration Manager (SCCM), or Microsoft Intune. 
+
 ## Deployment options
 
-# [Group Policy](#tab/rs1)
+# [Group Policy](#tab/GP)
 
 If you use Group Policy, follow these steps.
 
-# [SCCM](#tab/rs3)
+# [SCCM](#tab/SCCM)
 
 If you use SCCM, follow these steps.
 
-# [Intune](#tab/rs4)
+# [Intune](#tab/Intune)
 
 If you use Microsoft Intune, follow these steps. 
 
