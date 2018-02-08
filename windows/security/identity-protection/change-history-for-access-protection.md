@@ -17,6 +17,12 @@ This topic lists new and updated topics in the [Access protection](index.md) doc
 |---------------------|------------|
 |[Microsoft accounts](access-control/microsoft-accounts.md) |Revised to cover new Group Policy setting in Windows 10, version 1703, named **Block all consumer Microsoft account user authentication**.|
 
+## June 2017
+|New or changed topic |Description |
+|---------------------|------------|
+|[How hardware-based containers help protect Windows 10](how-hardware-based-containers-help-protect-windows.md) | New | 
+
+
 ## March 2017
 |New or changed topic |Description |
 |---------------------|------------|
