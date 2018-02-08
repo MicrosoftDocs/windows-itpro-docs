@@ -9,6 +9,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
 author: iaanw
+ms.date: 07/27/2017
 ---
 
 #   WannaCrypt ransomware worm targets out-of-date systems
@@ -16,7 +17,7 @@ author: iaanw
 
 On May 12, 2017 we detected a new ransomware that spreads like a worm by leveraging vulnerabilities that have been previously fixed. While security updates are automatically applied in most computers, some users and enterprises may delay deployment of patches. Unfortunately, the ransomware, known as [WannaCrypt](https://www.microsoft.com/security/portal/threat/encyclopedia/Entry.aspx?Name=Ransom:Win32/WannaCrypt), appears to have affected computers that have not applied the patch for these vulnerabilities. While the attack is unfolding, we remind users to install [MS17-010](https://technet.microsoft.com/en-us/library/security/ms17-010.aspx) if they have not already done so.
 
-Microsoft antimalware telemetry immediately picked up signs of this campaign. Our expert systems gave us visibility and context into this new attack as it happened, allowing [Windows Defender Antivirus](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/windows-defender-in-windows-10) to deliver real-time defense. Through automated analysis, machine learning, and predictive modeling, we were able to rapidly protect against this malware.
+Microsoft antimalware diagnostic data immediately picked up signs of this campaign. Our expert systems gave us visibility and context into this new attack as it happened, allowing [Windows Defender Antivirus](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/windows-defender-in-windows-10) to deliver real-time defense. Through automated analysis, machine learning, and predictive modeling, we were able to rapidly protect against this malware.
 
 In this blog, we provide an early analysis of the end-to-end ransomware attack. Please note this threat is still under investigation. The attack is still active, and there is a possibility that the attacker will attempt to react to our detection response.
 

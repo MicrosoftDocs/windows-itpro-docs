@@ -3,6 +3,7 @@ title: Manage Windows upgrades with Upgrade Readiness (Windows 10)
 description: Provides an overview of the process of managing Windows upgrades with Upgrade Readiness.
 ms.prod: w10
 author: greg-lindsay
+ms.date: 04/25/2017
 ---
 
 # Manage Windows upgrades with Upgrade Readiness
@@ -13,7 +14,7 @@ With the release of Upgrade Readiness, enterprises now have the tools to plan an
 
 Microsoft developed Upgrade Readiness in response to demand from enterprise customers looking for additional direction and details about upgrading to Windows 10. Upgrade Readiness was built taking into account multiple channels of customer feedback, testing, and Microsoft’s experience upgrading millions of devices to Windows 10. 
 
-With Windows telemetry enabled, Upgrade Readiness collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they are known to Microsoft.
+With Windows diagnostic data enabled, Upgrade Readiness collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they are known to Microsoft.
 
 Use Upgrade Readiness to get:
 
@@ -27,11 +28,11 @@ Use Upgrade Readiness to get:
 
 The Upgrade Readiness workflow steps you through the discovery and rationalization process until you have a list of computers that are ready to be upgraded.
 
-**Important**  For system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what telemetry data Microsoft collects and how that data is used and protected by Microsoft, see:
+**Important**  For system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what diagnostic data Microsoft collects and how that data is used and protected by Microsoft, see:
 
-- [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization)
+- [Configure Windows diagnostic data in your organization](/windows/configuration/configure-windows-diagnostic-data-in-your-organization)
 - [Manage connections from Windows operating system components to Microsoft services](/windows/configuration/manage-connections-from-windows-operating-system-components-to-microsoft-services)
-- [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)
+- [Windows 7, Windows 8, and Windows 8.1 appraiser diagnostic data events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)
 
 ##**Related topics**
 

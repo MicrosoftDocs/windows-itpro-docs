@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/16/2017
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - Authentication
@@ -15,7 +15,7 @@ ms.date: 11/16/2017
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## Authentication policies  
 
 <dl>
@@ -36,11 +36,13 @@ ms.date: 11/16/2017
   </dd>
 </dl>
 
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="authentication-allowaadpasswordreset"></a>**Authentication/AllowAadPasswordReset**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -62,8 +64,8 @@ ms.date: 11/16/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -71,22 +73,26 @@ ms.date: 11/16/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. Specifies whether password reset is enabled for Azure Active Directory accounts. This policy allows the Azure AD tenant administrators to enable self service password reset feature on the windows logon screen. 
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1709. Specifies whether password reset is enabled for Azure Active Directory accounts. This policy allows the Azure AD tenant administrators to enable self service password reset feature on the windows logon screen.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 (default) – Not allowed.
 -   1 – Allowed.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/SupportedValues-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="authentication-alloweapcertsso"></a>**Authentication/AllowEAPCertSSO**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -108,8 +114,8 @@ ms.date: 11/16/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -117,22 +123,26 @@ ms.date: 11/16/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Allows an EAP cert-based authentication for a single sign on (SSO) to access internal resources.
+<!--/Scope-->
+<!--Description-->
+Allows an EAP cert-based authentication for a single sign on (SSO) to access internal resources.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/SupportedValues-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="authentication-allowfastreconnect"></a>**Authentication/AllowFastReconnect**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -154,8 +164,8 @@ ms.date: 11/16/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -163,24 +173,28 @@ ms.date: 11/16/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Allows EAP Fast Reconnect from being attempted for EAP Method TLS.
+<!--/Scope-->
+<!--Description-->
+Allows EAP Fast Reconnect from being attempted for EAP Method TLS.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+Most restricted value is 0.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
+<!--/SupportedValues-->
+<!--/Policy-->
 
-<!--EndDescription-->
-<!--EndPolicy-->
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="authentication-allowfidodevicesignon"></a>**Authentication/AllowFidoDeviceSignon**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -202,26 +216,39 @@ ms.date: 11/16/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Preview release in Windows 10, version 1709. Supported in the next release. Specifies whether Fast Identity Online (FIDO) device can be used to sign on. This policy enables the Windows logon credential provider for FIDO 2.0
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
 
-<p style="margin-left: 20px">Value type is integer.
+> [!div class = "checklist"]
+> * Device
 
-<p style="margin-left: 20px">Here is an example scenario: At Contoso, there are a lot of shared devices and kiosks that employees throughout the day using as many as 20 different devices. To minimize the loss in productivity when employees have to login with username and password everytime they pick up a device, the IT admin deploys SharePC CSP and Authentication/AllowFidoDeviceSignon policy to shared devices. The IT admin provisions and distributes FIDO 2.0 devices to employees, which allows them to authenticate to various shared devices and PCs.
+<hr/>
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--/Scope-->
+<!--Description-->
+Preview release in Windows 10, version 1709. Supported in the next release. Specifies whether Fast Identity Online (FIDO) device can be used to sign on. This policy enables the Windows logon credential provider for FIDO 2.0
+
+Value type is integer.
+
+Here is an example scenario: At Contoso, there are a lot of shared devices and kiosks that employees throughout the day using as many as 20 different devices. To minimize the loss in productivity when employees have to login with username and password everytime they pick up a device, the IT admin deploys SharePC CSP and Authentication/AllowFidoDeviceSignon policy to shared devices. The IT admin provisions and distributes FIDO 2.0 devices to employees, which allows them to authenticate to various shared devices and PCs.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 - Do not allow. The FIDO device credential provider disabled. 
 -   1 - Allow. The FIDO device credential provider is enabled and allows usage of FIDO devices to sign into an Windows.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/SupportedValues-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="authentication-allowsecondaryauthenticationdevice"></a>**Authentication/AllowSecondaryAuthenticationDevice**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -243,8 +270,8 @@ ms.date: 11/16/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -252,19 +279,21 @@ ms.date: 11/16/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Allows secondary authentication devices to work with Windows.
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1607. Allows secondary authentication devices to work with Windows.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The default for this policy must be on for consumer devices (defined as local or Microsoft account connected device) and off for enterprise devices (such as cloud domain-joined, cloud domain-joined in an on-premise only environment, cloud domain-joined in a hybrid environment, and BYOD).
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 – Allowed.
 
-<p style="margin-left: 20px">The default for this policy must be on for consumer devices (defined as local or Microsoft account connected device) and off for enterprise devices (such as cloud domain-joined, cloud domain-joined in an on-premise only environment, cloud domain-joined in a hybrid environment, and BYOD).
-
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/SupportedValues-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -273,7 +302,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 
 <!--StartHoloLens-->
 ## <a href="" id="hololenspolicies"></a>Authentication policies supported by Windows Holographic for Business  

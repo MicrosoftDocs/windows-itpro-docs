@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
+ms.date: 10/16/2017
 ---
 
 # User State Migration Tool (USMT) Overview
@@ -46,9 +47,6 @@ There are some scenarios in which the use of USMT is not recommended. These incl
 ## Related topics
 - [User State Migration Tool (USMT) Technical Reference](usmt-technical-reference.md)
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=usmt-overview.md). 
-
- 
 
  
 

@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: jdeckerms
+ms.date: 07/27/2017
 ---
 
 # Use the Lockdown Designer app to create a Lockdown XML file

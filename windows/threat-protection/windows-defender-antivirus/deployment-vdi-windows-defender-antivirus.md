@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
 ms.author: iawilt
-ms.date: 08/25/2017
+ms.date: 08/26/2017
 ---
 
 # Deployment guide for Windows Defender Antivirus in a virtual desktop infrastructure (VDI) environment
@@ -86,7 +86,15 @@ First, you should create your base image according to your business needs, apply
 After creating the image, you should ensure it is fully updated. See [Configure Windows Defender in Windows 10]( https://technet.microsoft.com/en-us/itpro/windows/keep-secure/configure-windows-defender-in-windows-10) for instructions on how to update Windows Defender AV protection via WSUS, Microsoft Update, the MMPC site, or UNC file shares. You should ensure that your initial base image is also fully patched with Microsoft and Windows updates and patches.
 
 ### Seal the base image
-When the base image is fully updated, you should run a quick scan on the image. This “sealing” or “locking” of the image helps Windows Defender AV build a cache of known-good files and avoid scanning them again on your VMs. In turn, this can help ensure performance on the VM is not impacted.
+When the base image is fully updated, you should run a quick scan on the image. 
+
+After running a scan and buliding the cache, remove the machine GUID that uniquely identifies the device in telemetry for both Windows Defender Antivirus and the Microsoft Security Removal Tool. This key is located here:
+
+'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\RemovalTools\MRT'
+
+Remove the string found in the 'GUID' value
+
+This “sealing” or “locking” of the image helps Windows Defender AV build a cache of known-good files and avoid scanning them again on your VMs. In turn, this can help ensure performance on the VM is not impacted.
 
 You can run a quick scan [from the command line](command-line-arguments-windows-defender-antivirus.md) or via [System Center Configuration Manager](run-scan-windows-defender-antivirus.md).
 

@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: TrudyHa
 ms.localizationpriority: high
+ms.date: 10/16/2017
 ---
 
 # What's new in Windows 10, version 1607
@@ -15,8 +16,6 @@ Below is a list of some of the new and updated features in Windows 10, version 1
 
 >[!NOTE]
 >For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info).
-
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=whats-new-windows-10-version-1607.md). 
   
 ## Deployment
 
@@ -36,7 +35,7 @@ Windows ICD now includes simplified workflows for creating provisioning packages
 
 Microsoft developed Upgrade Readiness in response to demand from enterprise customers looking for additional direction and details about upgrading to Windows 10. Upgrade Readiness was built taking into account multiple channels of customer feedback, testing, and Microsoft’s experience upgrading millions of devices to Windows 10. 
 
-With Windows telemetry enabled, Upgrade Readiness collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they are known to Microsoft.
+With Windows diagnostic data enabled, Upgrade Readiness collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they are known to Microsoft.
 
 Use Upgrade Readiness to get:
 

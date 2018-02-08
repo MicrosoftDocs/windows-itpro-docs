@@ -8,6 +8,7 @@ ms.sitesec: library
 author: JasonGerend
 ms.localizationpriority: high
 ms.assetid: dca7c655-c4f6-45f8-aa02-64187b202617
+ms.date: 10/16/2017
 ---
 
 # What's new in Windows 10, version 1703 IT pro content
@@ -19,8 +20,6 @@ For more general info about Windows 10 features, see [Features available only on
 >[!NOTE]
 >Windows 10, version 1703 contains all fixes included in previous cumulative updates to Windows 10, version 1607. For info about each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info). For a list of removed features, see [Features that are removed or deprecated in Windows 10 Creators Update](https://support.microsoft.com/help/4014193/features-that-are-removed-or-deprecated-in-windows-10-creators-update).
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=whats-new-windows-10-version-1703.md). 
- 
 ## Configuration
 
 ### Windows Configuration Designer
@@ -262,8 +261,8 @@ For more info, see the following topics:
 
 Learn more about the diagnostic data that's collected at the Basic level and some examples of the types of data that is collected at the Full level.
 
-- [Windows 10, version 1703 basic level Windows diagnostic events and fields](/windows/configuration/basic-level-windows-diagnostic-events-and-fields)
-- [Windows 10, version 1703 Diagnostic Data](/windows/configuration/windows-diagnostic-data)
+- [Windows 10, version 1703 basic level Windows diagnostic events and fields](/windows/configuration/basic-level-windows-diagnostic-events-and-fields-1703)
+- [Windows 10, version 1703 Diagnostic Data](/windows/configuration/windows-diagnostic-data-1703)
 
 ### Group Policy spreadsheet
 

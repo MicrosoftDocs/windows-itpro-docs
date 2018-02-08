@@ -10,10 +10,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 12/08/2017
 ---
 
-# Get IP related machines 
+# Get IP related machines API
 Retrieves a collection of alerts related to a given IP address.
 
 ## Permissions

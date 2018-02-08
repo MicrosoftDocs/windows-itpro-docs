@@ -7,7 +7,7 @@ ms.sitesec: library
 author: JaimeO
 ms.localizationpriority: high
 ms.author: jaimeo
-ms.date: 11/13/2017
+ms.date: 11/21/2017
 ---
 
 # Configure Delivery Optimization for Windows 10 updates

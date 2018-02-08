@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
 ms.localizationpriority: high
+ms.date: 10/17/2017
 ---
 
 # Update Microsoft Store for Business and Microsoft Store for Education account settings

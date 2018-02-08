@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic-msft
-ms.date: 11/21/2017
+ms.date: 01/29/2018
 ---
 
 # Manage connections from Windows operating system components to Microsoft services
@@ -19,19 +19,17 @@ ms.date: 11/21/2017
 -   Windows 10
 -   Windows Server 2016
 
-If you're looking for content on what each telemetry level means and how to configure it in your organization, see [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md).
+If you're looking for content on what each diagnostic data level means and how to configure it in your organization, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
 
 Learn about the network connections that Windows components make to Microsoft and also the privacy settings that affect data that is shared with either Microsoft or apps and how they can be managed by an IT Pro.
 
-If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider. You can configure telemetry at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
+If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider. You can configure diagnostic data at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
 
-You can configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all other connections to Microsoft network endpoints as described in this article to help prevent Windows from sending any data to Microsoft. There are many reasons why these communications are enabled by default, such as updating malware definitions and maintain current certificate revocation lists, which is why we strongly recommend against this. This data helps us deliver a secure, reliable, and more delightful personalized experience.
+You can configure diagnostic data at the Security level, turn off Windows Defender diagnostic data and MSRT reporting, and turn off all other connections to Microsoft network endpoints as described in this article to help prevent Windows from sending any data to Microsoft. There are many reasons why these communications are enabled by default, such as updating malware definitions and maintain current certificate revocation lists, which is why we strongly recommend against this. This data helps us deliver a secure, reliable, and more delightful personalized experience.
 
 To help make it easier to deploy settings to restrict connections from Windows 10 to Microsoft, you can apply the [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887). This baseline was created in the same way as the [Windows security baselines](/windows/device-security/windows-security-baselines) that are often used to efficiently configure Windows to a known secure state. Running the Windows Restricted Traffic Limited Functionality Baseline on devices in your organization will allow you to quickly configure all of the settings covered in this document. However, some of the settings reduce the functionality and security configuration of your device and are therefore not recommended. Make sure should you've chosen the right settings configuration for your environment before applying. You should not extract this package to the windows\\system32 folder because it will not apply correctly. Applying this baseline is equivalent to applying the Windows 10 steps covered in this article.
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
-
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=manage-connections-from-windows-operating-system-components-to-microsoft-services.md). 
 
 ## What's new in Windows 10, version 1709
 
@@ -68,10 +66,10 @@ Here's a list of changes that were made to this article for Windows 10, version 
     - Accounts: Block Microsoft Accounts
     - Do not use diagnostic data for tailored experiences
 
-## <a href="" id="bkmk-othersettings"></a>Settings
+## <a href="" id="bkmk-othersettings"></a>Management options for each setting
 
 
-The following sections list the components that make network connections to Microsoft services by default. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all of these connections.
+The following sections list the components that make network connections to Microsoft services by default. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure diagnostic data at the Security level, turn off Windows Defender diagnostic data and MSRT reporting, and turn off all of these connections.
 
 If you're running Windows 10, they will be included in the next update for the Long Term Servicing Branch.
 
@@ -184,7 +182,7 @@ See the following table for a summary of the management settings for Windows Ser
 | [21. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) |
 | [28. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | |
 
-## Settings
+## How to configure each setting
 
 Use the following sections for more information about how to configure each setting.
 
@@ -359,9 +357,12 @@ If you're running Windows 10, version 1507 or Windows 10, version 1511, create a
 ### <a href="" id="bkmk-previewbuilds"></a>7. Insider Preview builds
 
 The Windows Insider Preview program lets you help shape the future of Windows, be part of the community, and get early access to releases of Windows 10.
+This setting stops communication with the Windows Insider Preview service that checks for new builds. 
+Windows Insider Preview builds only apply to Windows 10 and are not available for Windows Server 2016.
+
 
 > [!NOTE]  
-> This setting stops communication with the Windows Insider Preview service that checks for new builds. Windows Insider Preview builds only apply to Windows 10 and are not available for Windows Server 2016.
+> If you upgrade a device that is configured to minimize connections from Windows to Microsoft services (that is, a device configured for zero exhaust) to a Windows Insider Preview build, the Feedback & Diagnostic setting will automatically be set to **Full**. Although the diagnostic data level may initially appear as **Basic**, a few hours after the UI is refreshed or the machine is rebooted, the setting will become **Full**.
 
 To turn off Insider Preview builds for a released version of Windows 10:
 
@@ -521,6 +522,7 @@ Find the Microsoft Edge Group Policy objects under **Computer Configuration** &g
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Allow configuration updates for the Books Library            | Choose whether configuration updates are done for the Books Library. <br /> Default: Not configured       |
 | Configure Autofill                                    | Choose whether employees can use autofill on websites. <br /> Default: Enabled                      |
 | Configure Do Not Track         | Choose whether employees can send Do Not Track headers.<br /> Default: Disabled                     |
 | Configure Password Manager                            | Choose whether employees can save passwords locally on their devices. <br /> Default: Enabled       |
@@ -547,7 +549,8 @@ Alternatively, you can configure the Microsoft Group Policies using the followin
 
 | Policy | Registry path |
 | - | - |
-| Configure Autofill  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main!Use FormSuggest <br/ > REG_SZ: **no** |
+| Allow configuration updates for the Books Library  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\BooksLibrary!AllowConfigurationUpdateForBooksLibrary<br/> REG_DWORD: **0** |
+| Configure Autofill  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main!Use FormSuggest<br/> REG_SZ: **no** |
 | Configure Do Not Track   | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main!DoNotTrack<br/> REG_DWORD: 1 |
 | Configure Password Manager | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main!FormSuggest Passwords<br /> REG_SZ: **no** |
 | Configure search suggestions in Address bar | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\SearchScopes!ShowSearchSuggestionsGlobal <br /> REG_DWORD: 0|
@@ -577,7 +580,7 @@ For a complete list of the Microsoft Edge policies, see [Available policies for 
 
 Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to http://www.msftconnecttest.com/connecttest.txt to determine if the device can communicate with the Internet. For more info about NCSI, see [The Network Connection Status Icon](http://blogs.technet.com/b/networking/archive/2012/12/20/the-network-connection-status-icon.aspx).
 
-In versions of Windows 10 prior to Windows 10, version 1607 and Windows Server 2016, the URL was http://www.msftncsi.com. 
+In versions of Windows 10 prior to Windows 10, version 1607 and Windows Server 2016, the URL was [http://www.msftncsi.com](). 
 
 You can turn off NCSI by doing one of the following:
 
@@ -883,7 +886,7 @@ To turn off **Turn on SmartScreen Filter to check web content (URLs) that Micros
 To turn off **Send Microsoft info about how I write to help us improve typing and writing in the future**:
 
 > [!NOTE] 
-> If the telemetry level is set to either **Basic** or **Security**, this is turned off automatically.
+> If the diagnostic data level is set to either **Basic** or **Security**, this is turned off automatically.
 
  
 
@@ -1722,7 +1725,7 @@ For Windows 10 only, you can stop Enhanced Notifications:
 
 - Turn off the feature in the UI.
 
-You can also use the registry to turn off Malicious Software Reporting Tool telemetry by setting the REG\_DWORD value **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\MRT\\DontReportInfectionInformation** to 1.
+You can also use the registry to turn off Malicious Software Reporting Tool diagnostic data by setting the REG\_DWORD value **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\MRT\\DontReportInfectionInformation** to 1.
 
 ### <a href="" id="bkmk-wmp"></a>24. Windows Media Player
 
@@ -1799,7 +1802,10 @@ For more info, see [Windows Spotlight on the lock screen](windows-spotlight.md).
 
 ### <a href="" id="bkmk-windowsstore"></a>26. Microsoft Store
 
-You can turn off the ability to launch apps from the Microsoft Store that were preinstalled or downloaded. This will also turn off automatic app updates, and the Microsoft Store will be disabled. On Windows Server 2016, this will block Microsoft Store calls from Universal Windows Apps.
+You can turn off the ability to launch apps from the Microsoft Store that were preinstalled or downloaded. 
+This will also turn off automatic app updates, and the Microsoft Store will be disabled. 
+In addition, new email accounts cannot be created by clicking **Settings** > **Accounts** > **Email & app accounts** > **Add an account**. 
+On Windows Server 2016, this will block Microsoft Store calls from Universal Windows Apps.
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Store** &gt; **Disable all apps from Microsoft Store**.
 

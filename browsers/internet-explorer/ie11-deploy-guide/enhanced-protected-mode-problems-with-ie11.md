@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: 15890ad1-733d-4f7e-a318-10399b389f45
 title: Enhanced Protected Mode problems with Internet Explorer (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

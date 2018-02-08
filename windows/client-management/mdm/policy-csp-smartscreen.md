@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 01/30/2018
 ---
 
 # Policy CSP - SmartScreen
@@ -15,7 +15,7 @@ ms.date: 11/01/2017
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## SmartScreen policies  
 
 <dl>
@@ -30,11 +30,13 @@ ms.date: 11/01/2017
   </dd>
 </dl>
 
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="smartscreen-enableappinstallcontrol"></a>**SmartScreen/EnableAppInstallControl**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -56,8 +58,8 @@ ms.date: 11/01/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -65,22 +67,26 @@ ms.date: 11/01/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1703. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Turns off Application Installation Control, allowing users to download and install files from anywhere on the web.
 -   1 – Turns on Application Installation Control, allowing users to only install apps from the Store.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/SupportedValues-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="smartscreen-enablesmartscreeninshell"></a>**SmartScreen/EnableSmartScreenInShell**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -102,8 +108,8 @@ ms.date: 11/01/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -111,22 +117,26 @@ ms.date: 11/01/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure SmartScreen for Windows.
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1703. Allows IT Admins to configure SmartScreen for Windows.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Turns off SmartScreen in Windows.
 -   1 – Turns on SmartScreen in Windows.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/SupportedValues-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="smartscreen-preventoverrideforfilesinshell"></a>**SmartScreen/PreventOverrideForFilesInShell**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -148,8 +158,8 @@ ms.date: 11/01/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -157,17 +167,19 @@ ms.date: 11/01/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1703. Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Employees can ignore SmartScreen warnings and run malicious files.
 -   1 – Employees cannot ignore SmartScreen warnings and run malicious files.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/SupportedValues-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -176,5 +188,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

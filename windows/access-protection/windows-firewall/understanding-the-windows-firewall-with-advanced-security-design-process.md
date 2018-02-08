@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
+ms.date: 08/17/2017
 ---
 
 # Understanding the Windows Defender Firewall with Advanced Security Design Process

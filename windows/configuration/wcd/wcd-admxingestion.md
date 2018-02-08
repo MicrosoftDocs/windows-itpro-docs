@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 08/21/2017
+ms.date: 09/06/2017
 ---
 
 # ADMXIngestion (Windows Configuration Designer reference)
@@ -77,7 +77,7 @@ Use the following PowerShell cmdlet to remove carriage returns and line feeds fr
 
 ```PS
 $path="file path"
-Get-Content $path -Raw).Replace("'r'n","") | Set-Content $path -Force
+(Get-Content $path -Raw).Replace("'r'n","") | Set-Content $path -Force
 ```
 
 ## Category and policy in ADMX

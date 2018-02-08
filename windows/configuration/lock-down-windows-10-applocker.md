@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerms
 ms.localizationpriority: high
-ms.date: 10/05/2017
+ms.date: 08/14/2017
 ms.author: jdecker
 ---
 

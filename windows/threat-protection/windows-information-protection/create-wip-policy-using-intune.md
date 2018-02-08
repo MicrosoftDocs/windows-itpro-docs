@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
 ms.localizationpriority: medium
+ms.date: 10/16/2017
 ---
 
 # Create a Windows Information Protection (WIP) policy using the classic console for Microsoft Intune

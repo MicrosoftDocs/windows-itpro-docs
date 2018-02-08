@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 08/21/2017
+ms.date: 10/16/2017
 ---
 
 # SharedPC (Windows Configuration Designer reference)
@@ -60,4 +60,3 @@ Use these settings to configure policies for shared PC mode.
 
 - [Set up shared or guest PC](../set-up-shared-or-guest-pc.md)
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=wcd-sharedpc.md). 

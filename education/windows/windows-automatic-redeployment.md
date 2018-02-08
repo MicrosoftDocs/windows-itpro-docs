@@ -9,7 +9,7 @@ ms.pagetype: edu
 ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
-ms.date: 10/17/2017
+ms.date: 12/11/2017
 ---
 
 # Reset devices with Windows Automatic Redeployment 
@@ -25,7 +25,7 @@ To enable Windows Automatic Redeployment in Windows 10, version 1709 (Fall Creat
 2. [Trigger a reset for each device](#trigger-windows-automatic-redeployment)
 
 ## Enable Windows Automatic Redeployment
-**DisableAutomaticReDeploymentCredentials** is a policy that enables or disables the visibility of the credentials for Windows Automatic Redeployment. It is a policy node in the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialproviders), **CredentialProviders/DisableAutomaticReDeploymentCredentials**. By default, this policy is set to 1 (True). This ensures that Windows Automatic Redeployment isn't triggered by accident.
+**DisableAutomaticReDeploymentCredentials** is a policy that enables or disables the visibility of the credentials for Windows Automatic Redeployment. It is a policy node in the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialproviders), **CredentialProviders/DisableAutomaticReDeploymentCredentials**. By default, this policy is set to 1 (Disable). This ensures that Windows Automatic Redeployment isn't triggered by accident.
 
 You can set the policy using one of these methods:
 
@@ -36,8 +36,8 @@ You can set the policy using one of these methods:
 
         For example, in Intune, create a new configuration policy and add an OMA-URI. 
         - OMA-URI:  ./Vendor/MSFT/Policy/Config/CredentialProviders/DisableAutomaticReDeploymentCredentials
-        - Data type:  Boolean
-        - Value:  1
+        - Data type:  Integer
+        - Value:  0
 
 - Windows Configuration Designer
     
@@ -45,11 +45,16 @@ You can set the policy using one of these methods:
 
 - Set up School PCs app
 
-    Windows Automatic Redeployment in the Set up School PCs app is coming soon. We'll update the documentation once the feature is available on the app. In the meantime, you'll want to make sure you are running Windows 10, version 1709 on the student PCs if you want to use Windows Automatic Redeployment through the Set up School PCs app. You can check the version several ways:
+    Windows Automatic Redeployment in the Set up School PCs app is available in the latest release of the app. Make sure you are running Windows 10, version 1709 on the student PCs if you want to use Windows Automatic Redeployment through the Set up School PCs app. You can check the version several ways:
     - Reach out to your device manufacturer.
     - If you manage your PCs using Intune or Intune for Education, you can check the OS version by checking the **OS version** info for the device. If  you are using another MDM provider, check the documentation for the MDM provider to confirm the OS version.
     - Log into the PCs, go to the **Settings > System > About** page, look in the **Windows specifications** section and confirm **Version** is set to 1709.
 
+    To use the Windows Automatic Redeployment setting in the Set up School PCs app:
+    * When using [Set up School PCs](use-set-up-school-pcs-app.md), in the **Configure student PC settings** screen, select **Enable Windows 10 Automatic Redeployment** among the list of settings for the student PC as shown in the following example:
+
+    ![Configure student PC settings in Set up School PCs](images/suspc_configure_pc2.jpg)
+    
 ## Trigger Windows Automatic Redeployment
 Windows Automatic Redeployment is a two-step process: trigger it and then authenticate. Once you've done these two steps, you can let the process execute and once it's done, the device is again ready for use. 
 

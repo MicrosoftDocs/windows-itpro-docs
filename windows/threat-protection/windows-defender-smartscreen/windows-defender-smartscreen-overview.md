@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
 ms.localizationpriority: high
+ms.date: 07/27/2017
 ---
 
 # Windows Defender SmartScreen
@@ -42,7 +43,7 @@ Windows Defender SmartScreen helps to provide an early warning system against we
 
 - **Operating system integration.** SmartScreen is integrated into the Windows 10 operating system, meaning that it checks any files an app (including 3rd-party browsers and email clients) attempts to download and run.
 
-- **Improved heuristics and telemetry.** SmartScreen is constantly learning and endeavoring to stay up-to-date, so it can help to protect you against potentially malicious sites and files.
+- **Improved heuristics and diagnostic data.** SmartScreen is constantly learning and endeavoring to stay up-to-date, so it can help to protect you against potentially malicious sites and files.
 
 - **Management through Group Policy and Microsoft Intune.** SmartScreen supports using both Group Policy and Microsoft Intune settings. For more info about all available settings, see [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen-available-settings.md).
 

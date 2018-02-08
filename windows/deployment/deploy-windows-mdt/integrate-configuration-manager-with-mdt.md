@@ -9,6 +9,7 @@ ms.localizationpriority: high
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mtniehaus
+ms.date: 07/27/2017
 ---
 
 # Integrate Configuration Manager with MDT

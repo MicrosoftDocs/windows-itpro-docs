@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
-ms.date: 10/26/2017
+ms.date: 1/4/2018
 ms.localizationpriority: high
 ---
 
@@ -16,9 +16,9 @@ ms.localizationpriority: high
 **Applies to**
 -   Windows 10
 
-Windows AutoPilot Deployment Program simplifies device set up for IT Admins. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot). 
+Windows AutoPilot Deployment Program simplifies device set up for IT Admins. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
-Watch this video to learn more about Windows AutoPilot in Micrsoft Store for Business. 
+Watch this video to learn more about Windows AutoPilot in Micrsoft Store for Business. </br>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IpLIZU_j7Z0" frameborder="0" allowfullscreen></iframe>
 

@@ -2,23 +2,6 @@
   "build_entry_point": "",
   "docsets_to_publish": [
     {
-      "docset_name": "bcs-VSTS",
-      "build_source_folder": "bcs",
-      "build_output_subfolder": "bcs-VSTS",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "moniker_groups": [],
-      "version": 0
-    },
-    {
       "docset_name": "education-VSTS",
       "build_source_folder": "education",
       "build_output_subfolder": "education-VSTS",
@@ -125,6 +108,7 @@
       "build_output_subfolder": "microsoft-365",
       "locale": "en-us",
       "monikers": [],
+      "moniker_ranges": [],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
@@ -152,6 +136,23 @@
       "template_folder": "_themes",
       "moniker_groups": [],
       "version": 0
+    },
+    {
+      "docset_name": "security",
+      "build_source_folder": "windows/security",
+      "build_output_subfolder": "security",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content",
+        "LandingData": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
     },
     {
       "docset_name": "smb-VSTS",

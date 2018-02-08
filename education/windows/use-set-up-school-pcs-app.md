@@ -9,7 +9,7 @@ ms.pagetype: edu
 ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
-ms.date: 09/18/2017
+ms.date: 12/11/2017
 ---
 
 # Use the Set up School PCs app 
@@ -30,6 +30,7 @@ Set up School PCs makes it easy to set up Windows 10 PCs with Microsoft's recomm
 - Sets Microsoft-recommended school PC settings, including shared PC mode which provides faster sign-in and automatic account cleanup
 - Enables optional guest account for younger students, lost passwords, or visitors
 - Enables optional secure testing account
+- Enables optional Windows Automatic Redeployment feature to return devices to a fully configured or known IT-approved state
 - Locks down the student PC to prevent mischievous activity:
     * Prevents students from removing the PC from the school's device management system
     * Prevents students from removing the Set up School PCs settings
@@ -41,7 +42,7 @@ Set up School PCs makes it easy to set up Windows 10 PCs with Microsoft's recomm
 
 You can watch the video to see how to use the Set up School PCs app, or follow the step-by-step guide. </br>
 
-<center><iframe src="https://www.youtube.com/embed/2ZLup_-PhkA" width="960" height="540" allowFullScreen frameBorder="0"></iframe></center>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2ZLup_-PhkA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 You can watch the descriptive audio version here: [Microsoft Education: Use the Set up School PCs app (DA)](https://www.youtube.com/watch?v=qqe_T2LkGsI)
 
@@ -49,10 +50,13 @@ You can watch the descriptive audio version here: [Microsoft Education: Use the 
 
 * **Run the same Windows 10 build on the admin device and the student PCs**
 
-  It's critical that the IT administrator's or technical teacher's device is running the same Windows 10 build (Windows 10, version 1607 or Windows 10, version 1703) as the student PCs that you're provisioning. 
+  It's critical that the IT administrator's or technical teacher's device is running the same Windows 10 build as the student PCs that you're provisioning. 
 
-  > [!NOTE]
-  > If you're using the Windows 10, version 1607 build of the Set up School PCs app, do not use it to provision student PCs with Windows 10, version 1703 images. Conversely, if you're using the Windows 10, version 1703 build of Set up School PCs, do not use it to provision student PCs with Windows 10, version 1607 images. We recommend using the latest Set up School PCs app (for Windows 10, version 1703) along with Windows 10, version 1703 images on the student PCs that you're provisioning. 
+* **Ensure that the student PCs meet the minimum OS requirements for the version of Set up School PCs**
+
+ Check the minimum OS requirements for the Set up School PCs app in the **System Requirements > OS** section of the app's description on the Microsoft Store. For example, the latest version of Set up School PCs requires Windows 10 versions with build 15063.0 or higher. Do not use the app to provision student PCs with Windows 10, version 1607 (build 14393) images. 
+ 
+ We recommend using the latest Set up School PCs app along with the latest Windows 10 images on the student PCs that you're provisioning. 
 
 * **Run the app at work**
 
@@ -106,7 +110,7 @@ You can watch the descriptive audio version here: [Microsoft Education: Use the 
 - Install the app on your work PC and make sure you're connected to your school's network. 
 - You must have Office 365 and Azure Active Directory.
 - You must have the Microsoft Store for Education configured.
-- You must be a global admin, store admin, or purchaser in the Microsoft Store for Education.
+- You must be a global admin in the Microsoft Store for Education.
 - It's best if you sign up for and [configure Intune for Education](../get-started/use-intune-for-education.md) before using the Set up School PCs app.
 - Have a USB drive, 1 GB or larger, to save the provisioning package. We recommend an 8 GB or larger USB drive if you're installing Office.
 
@@ -181,12 +185,13 @@ The **Set up School PCs** app guides you through the configuration choices for t
   - Select **Let guests sign-in to these PCs** to allow guests to use student PCs without a school account. For example, if the device will be in a library and you want other users (like visiting students or teachers) to be able to use the device, you can select this option.
 
     If you select this option, this adds a **Guest** account button in the PC's sign-in screen to allow anyone to use the PC.
-
+ 
+  - Select **Enable Windows Automatic Redeployment** to reset student PCs from the lock screen any time and apply original settings and device management enrollment (Azure AD and MDM) so they’re ready to use. Make sure you are running Windows 10, version 1709 on the student PCs if you want to use Windows Automatic Redeployment through the Set up School PCs app.
   - To change the default lock screen background or to use your school's custom lock screen background, click **Browse** to select a new lock screen background.
 
     **Figure 4** - Configure student PC settings
 
-    ![Configure student PC settings](images/suspc_createpackage_configurestudentpcsettings.png)
+    ![Configure student PC settings](images/suspc_createpackage_configurestudentpcsettings_121117.png)
 
  When you're doing configuring the student PC settings, click **Next**.
 
@@ -195,7 +200,7 @@ The **Set up School PCs** app guides you through the configuration choices for t
   2. Check the options whether to allow keyboard text suggestions to appear and to allow teachers to monitor online tests. 
   3. Enter the assessment URL.
 
-    You can leave the URL blank so that students can enter one later. This enables teachers to use the the Take a Test account for daily quizzes or tests by having students manually enter a URL.
+    You can leave the URL blank so that students can enter one later. This enables teachers to use the Take a Test account for daily quizzes or tests by having students manually enter a URL.
 
     **Figure 5** - Configure the Take a Test app
 

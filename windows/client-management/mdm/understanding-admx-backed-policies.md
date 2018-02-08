@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 08/11/2017
 ---
 
 # Understanding ADMX-backed policies
@@ -131,6 +131,7 @@ The following SyncML examples describe how to set a MDM policy that is defined b
         <Target>
           <LocURI>./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer2</LocURI>
         </Target>
+        <Data>
         <![CDATA[<enabled/><data id="Publishing_Server2_Name_Prompt" value="name prompt"/><data 
           id="Publishing_Server_URL_Prompt" value="URL prompt"/><data 
           id="Global_Publishing_Refresh_Options" value="1"/><data 
@@ -141,6 +142,7 @@ The following SyncML examples describe how to set a MDM policy that is defined b
           id="User_Refresh_OnLogon_Options" value="0"/><data 
           id="User_Refresh_Interval_Prompt" value="15"/><data 
           id="User_Refresh_Unit_Options" value="1"/>]]>
+        </Data>
       </Item>
     </Replace>
     <Final/>

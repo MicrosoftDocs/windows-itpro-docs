@@ -7,7 +7,7 @@ ms.sitesec: library
 author: DaniHalfin
 ms.localizationpriority: high
 ms.author: daniha
-ms.date: 07/27/2017
+ms.date: 10/13/2017
 ---
 
 # Assign devices to servicing channels for Windows 10 updates
@@ -23,7 +23,7 @@ ms.date: 07/27/2017
 >[!TIP]
 >If you're not familiar with the Windows 10 servicing or release channels, read [Servicing Channels](waas-overview.md#servicing-channels) first.
 >
->Due to [naming changes](waas-overview.md#naming-changes), older terms like CB,CBB and LTSB may still be displayed in some of our products.
+>Due to [naming changes](waas-overview.md#naming-changes), older terms like CB, CBB and LTSB may still be displayed in some of our products.
 
 Semi-Annual Channel (Targeted) is the default servicing channel for all Windows 10 devices except those with the LTSB edition installed. The following table shows the servicing channels available to each edition of Windows 10. 
 
@@ -46,7 +46,7 @@ Semi-Annual Channel (Targeted) is the default servicing channel for all Windows 
 ## Assign devices to Semi-Annual Channel
 
 >[!IMPORTANT]
->Due to [naming changes](waas-overview.md#naming-changes), older terms like CB,CBB and LTSB may still be displayed in some of our products.
+>Due to [naming changes](waas-overview.md#naming-changes), older terms like CB, CBB and LTSB may still be displayed in some of our products.
 >
 >In the following settings CB refers to Semi-Annual Channel (Targeted), while CBB refers to Semi-Annual Channel.
 
@@ -220,5 +220,3 @@ By enabling the Group Policy setting under **Computer Configuration\Administrati
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
 - [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
 - [Manage device restarts after updates](waas-restart.md)
-
-

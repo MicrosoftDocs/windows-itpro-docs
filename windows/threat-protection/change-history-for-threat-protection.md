@@ -6,10 +6,17 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
+ms.date: 10/31/2017
 ---
 
 # Change history for threat protection
 This topic lists new and updated topics in the [Threat protection](index.md) documentation.
+
+## January 2018
+|New or changed topic |Description |
+|---------------------|------------|
+|[Windows Defender Application Control](windows-defender-application-control.md)|New topic. WDAC replaces cofigurable code integrity policies. |
+
 
 ## October 2017
 |New or changed topic |Description |

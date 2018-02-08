@@ -7,6 +7,7 @@ ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
 author: eross-msft
+ms.date: 04/19/2017
 ---
 
 # Application Compatibility Toolkit (ACT) Technical Reference
@@ -19,7 +20,7 @@ We've replaced the majority of functionality included in the Application Compati
  
 Microsoft developed Upgrade Analytics in response to demand from enterprise customers looking for additional direction and details about upgrading to Windows 10. Upgrade Analytics was built taking into account multiple channels of customer feedback, testing, and Microsoft’s experience upgrading millions of devices to Windows 10. 
  
-With Windows telemetry enabled, Upgrade Analytics collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they are known to Microsoft. 
+With Windows diagnostic data enabled, Upgrade Analytics collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they are known to Microsoft. 
  
 Use Upgrade Analytics to get:
 - A visual workflow that guides you from pilot to production

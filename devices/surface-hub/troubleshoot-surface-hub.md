@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 06/19/2017
+ms.date: 09/07/2017
 ms.localizationpriority: medium
 ---
 
@@ -524,7 +524,7 @@ This section lists status codes, mapping, user messages, and actions an admin ca
 <tr class="even">
 <td align="left"><p>0x85002004</p></td>
 <td align="left"><p>E_FAIL_ABORT</p></td>
-<td align="left"><p>This error is used to interrupt the hanging sync, and will not be exposed to users. It will be shown in the telemetry if you force an interactive sync, delete the account, or update its settings.</p></td>
+<td align="left"><p>This error is used to interrupt the hanging sync, and will not be exposed to users. It will be shown in the diagnostic data if you force an interactive sync, delete the account, or update its settings.</p></td>
 <td align="left"><p>Nothing.</p></td>
 </tr>
 <tr class="odd">
@@ -602,7 +602,7 @@ This section lists status codes, mapping, user messages, and actions an admin ca
  
 ## Related content
 
-- [Troubleshooting Miracast connection to the Surface Hub](https://blogs.msdn.microsoft.com/surfacehub/2017/01/30/troubleshooting-miracast-connection-to-the-surface-hub/)
+- [Troubleshooting Miracast connection to the Surface Hub](https://docs.microsoft.com/surface-hub/miracast-troubleshooting)
  
 
 

@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: mobile
 ms.author: kaushika-ainapure
 author: kaushika-msft
-ms.date: 07/19/2017
+ms.date: 07/20/2017
 ---
 
 # Changes to Service Host grouping in Windows 10
@@ -33,7 +33,7 @@ Benefits of this design change include:
 * Reduced support costs by eliminating the troubleshooting overhead associated with isolating misbehaving services in the shared host.
 * Increased security by providing additional inter-service isolation 
 * Increased scalability by allowing per-service settings and privileges 
-* Improved resource management through per-service CPU, I/O and memory management and increase clear telemetry (report CPU, I/O and network usage per service).
+* Improved resource management through per-service CPU, I/O and memory management and increase clear diagnostic data (report CPU, I/O and network usage per service).
 
 >**Try This**
 >

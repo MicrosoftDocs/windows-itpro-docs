@@ -7,6 +7,7 @@ ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.prod: w10
+ms.date: 06/16/2016
 ---
 
 
@@ -43,7 +44,7 @@ A user account with the AGPM Administrator (Full Control) role, the user account
 
     -   Client: %LocalAppData%\\Microsoft\\AGPM\\agpm.log
 
-    -   Server: %CommonAppData%\\Microsoft\\AGPM\\agpmserv.log
+    -   Server: %ProgramData%\\Microsoft\\AGPM\\agpmserv.log
 
 ### Additional considerations
 

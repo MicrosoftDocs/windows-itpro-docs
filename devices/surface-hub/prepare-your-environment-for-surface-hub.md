@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 07/27/2017
+ms.date: 12/04/2017
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +40,9 @@ Depending on your environment, access to additional ports may be needed:
 - For online environments, see [Office 365 IP URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US).
 - For on-premises installations, see [Skype for Business Server: Ports and protocols for internal servers](https://technet.microsoft.com/library/gg398833.aspx). 
 
-Microsoft collects telemetry to help improve your Surface Hub experience. Add these sites to your allow list:
-- Telemetry client endpoint: `https://vortex.data.microsoft.com/`
-- Telemetry settings endpoint: `https://settings.data.microsoft.com/`
+Microsoft collects diagnostic data to help improve your Surface Hub experience. Add these sites to your allow list:
+- Diagnostic data client endpoint: `https://vortex.data.microsoft.com/`
+- Diagnostic data settings endpoint: `https://settings.data.microsoft.com/`
 
 ### Proxy configuration
 

@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.date: 10/26/2017
+ms.date: 10/27/2017
 ms.localizationpriority: high
 ---
 
@@ -401,5 +401,3 @@ In this example, Disk 0 is formatted with the MBR partition style, and Disk 1 is
 [Windows 10 Enterprise system requirements](https://technet.microsoft.com/en-us/windows/dn798752.aspx)
 <BR>[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/Windows-10-specifications)
 <BR>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
-
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=mbr-to-gpt.md). 

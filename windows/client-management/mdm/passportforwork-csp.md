@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 06/26/2017
 ---
 
 # PassportForWork CSP
@@ -54,6 +54,7 @@ The following diagram shows the PassportForWork configuration service provider i
 
 <a href="" id="tenantid-policies-excludesecuritydevices--only-for---device-vendor-msft-"></a>***TenantId*/Policies/ExcludeSecurityDevices** (only for ./Device/Vendor/MSFT)  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Root node for excluded security devices.
+<p style="margin-left: 20px">*Not supported on Windows Holographic and Windows Holographic for Business.*
 
 <a href="" id="tenantid-policies-excludesecuritydevices-tpm12--only-for---device-vendor-msft-"></a>***TenantId*/Policies/ExcludeSecurityDevices/TPM12** (only for ./Device/Vendor/MSFT)  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Some Trusted Platform Modules (TPMs) are compliant only with the older 1.2 revision of the TPM specification defined by the Trusted Computing Group (TCG).
@@ -178,26 +179,36 @@ This cloud service encrypts a recovery secret, which is stored locally on the cl
 
 <a href="" id="tenantid-policies-remote--only-for---device-vendor-msft-"></a>***TenantId*/Policies/Remote** (only for ./Device/Vendor/MSFT)  
 <p style="margin-left: 20px">Interior node for defining remote Windows Hello for Business policies. This node was added in Windows 10, version 1511.
+<p style="margin-left: 20px">*Not supported on Windows Holographic and Windows Holographic for Business.*
 
 <a href="" id="tenantid-policies-remote-useremotepassport--only-for---device-vendor-msft-"></a>***TenantId*/Policies/Remote/UseRemotePassport** (only for ./Device/Vendor/MSFT)  
 <p style="margin-left: 20px">Boolean value used to enable or disable the use of remote Windows Hello for Business. Remote Windows Hello for Business provides the ability for a portable, registered device to be usable as a companion device for desktop authentication. Remote Windows Hello for Business requires that the desktop be Azure AD joined and that the companion device has a Windows Hello for Business PIN. This node was added in Windows 10, version 1511.
 
 <p style="margin-left: 20px">Default value is false. If you set this policy to true, Remote Windows Hello for Business will be enabled and a portable, registered device can be used as a companion device for desktop authentication. If you set this policy to false, Remote Windows Hello for Business will be disabled.
 
+
+
 <p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
+
+<p style="margin-left: 20px">*Not supported on Windows Holographic and Windows Holographic for Business.*
 
 <a href="" id="usebiometrics"></a>**UseBiometrics**  
 <p style="margin-left: 20px">This node is deprecated. Use **Biometrics/UseBiometrics** node instead.
 
 <a href="" id="biometrics--only-for---device-vendor-msft-"></a>**Biometrics** (only for ./Device/Vendor/MSFT)  
 <p style="margin-left: 20px">Node for defining biometric settings. This node was added in Windows 10, version 1511.
+<p style="margin-left: 20px">*Not supported on Windows Holographic and Windows Holographic for Business.*
 
 <a href="" id="biometrics-usebiometrics--only-for---device-vendor-msft-"></a>**Biometrics/UseBiometrics** (only for ./Device/Vendor/MSFT)  
 <p style="margin-left: 20px">Boolean value used to enable or disable the use of biometric gestures, such as face and fingerprint, as an alternative to the PIN gesture for Windows Hello for Business. Users must still configure a PIN if they configure biometric gestures to use in case of failures. This node was added in Windows 10, version 1511.
 
 <p style="margin-left: 20px">Default value is false. If you set this policy to true, biometric gestures are enabled for use with Windows Hello for Business. If you set this policy to false, biometric gestures are disabled for use with Windows Hello for Business.
 
+
+
 <p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
+
+<p style="margin-left: 20px">*Not supported on Windows Holographic and Windows Holographic for Business.*
 
 <a href="" id="biometrics-facialfeaturesuseenhancedantispoofing--only-for---device-vendor-msft-"></a>**Biometrics/FacialFeaturesUseEnhancedAntiSpoofing** (only for ./Device/Vendor/MSFT)  
 <p style="margin-left: 20px">Boolean value used to enable or disable enhanced anti-spoofing for facial feature recognition on Windows Hello face authentication. This node was added in Windows 10, version 1511.
@@ -208,7 +219,11 @@ This cloud service encrypts a recovery secret, which is stored locally on the cl
 
 <p style="margin-left: 20px">Note that enhanced anti-spoofing for Windows Hello face authentication is not required on unmanaged devices.
 
+
+
 <p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
+
+<p style="margin-left: 20px">*Not supported on Windows Holographic and Windows Holographic for Business.*
 
 ## Examples
 

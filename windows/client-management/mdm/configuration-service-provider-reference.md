@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/05/2017
 ---
 
 # Configuration service provider reference
@@ -15,7 +15,8 @@ ms.date: 11/01/2017
 
 A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device. These settings map to registry keys or files. Some configuration service providers support the WAP format, some support SyncML, and some support both. SyncML is only used over–the–air for Open Mobile Alliance Device Management (OMA DM), whereas WAP can be used over–the–air for OMA Client Provisioning, or it can be included in the phone image as a .provxml file that is installed during boot.
 
-For information about the bridge WMI provider classes that map to these CSPs, see [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224). 
+For information about the bridge WMI provider classes that map to these CSPs, see [MDM Bridge WMI Provider](https://msdn.microsoft.com/en-us/library/windows/desktop/dn905224). For CSP DDF files, see [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+
 
 Additional lists:
 - [List of CSPs supported in Windows Holographic](#hololens)
@@ -2426,8 +2427,13 @@ Footnotes:
 - 2 - Added in Windows 10, version 1703  
 - 3 - Added in the next major update to Windows 10  
 
-> [!Note]  
-> You can download the Windows 10 version 1607 DDF files from [here](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip).
+## CSP DDF files download
+
+You can download the DDF files for various CSPs from the links below:
+
+- [Download all the DDF files for Windows 10, version 1709](http://download.microsoft.com/download/9/7/C/97C6CF99-F75C-475E-AF18-845F8CECCFA4/Windows10_1709_DDF_download.zip)
+- [Download all the DDF files for Windows 10, version 1703](http://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)
+- [Download all the DDF files for Windows 10, version 1607](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
 
 
 ## <a href="" id="hololens"></a>CSPs supported in Windows Holographic
@@ -2435,27 +2441,28 @@ Footnotes:
 
 The following list shows the configuration service providers supported in Windows Holographic editions.
 
-| Configuration service provider                                                                        | Windows Holographic edition      | Windows Holographic for Business edition |
-|-------------------------------------------------------------------------------------------------------|-------------------------------------|-------------------------------------------|
-| [Application CSP](application-csp.md)                                     | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [AppLocker CSP](applocker-csp.md)                                         | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [CertificateStore CSP](certificatestore-csp.md)                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)           | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [DevDetail CSP](devdetail-csp.md)                                         | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [DeveloperSetup CSP](developersetup-csp.md)                               | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)2   (Provisioning only)|
-| [DeviceStatus CSP](devicestatus-csp.md)                                   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [DevInfo CSP](devinfo-csp.md)                                             | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [DiagnosticLog CSP](diagnosticlog-csp.md)                                 | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [DMAcc CSP](dmacc-csp.md)                                                 | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [DMClient CSP](dmclient-csp.md)                                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| Configuration service provider        | Windows Holographic edition      | Windows Holographic for Business edition |
+|--------|--------|------------|
+| [Application CSP](application-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [AppLocker CSP](applocker-csp.md)      | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [CertificateStore CSP](certificatestore-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)|
+| [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [DevDetail CSP](devdetail-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [DeveloperSetup CSP](developersetup-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)2   (Provisioning only)|
+| [DeviceStatus CSP](devicestatus-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)  |
+| [DevInfo CSP](devinfo-csp.md)  | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [DiagnosticLog CSP](diagnosticlog-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)    |
+| [DMAcc CSP](dmacc-csp.md)      | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [DMClient CSP](dmclient-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [NodeCache CSP](nodecache-csp.md)                                         | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [Policy CSP](policy-configuration-service-provider.md)                    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [RootCATrustedCertificates CSP](rootcacertificates-csp.md)                | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [Update CSP](update-csp.md)                                               | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [VPN2 CSP](vpnv2-csp.md)                                                  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [WiFi CSP](wifi-csp.md)                                                   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [WindowsLicensing CSP](windowslicensing-csp.md)                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [NodeCache CSP](nodecache-csp.md)  | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+[PassportForWork CSP](passportforwork-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
+| [Policy CSP](policy-configuration-service-provider.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [RootCATrustedCertificates CSP](rootcacertificates-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [Update CSP](update-csp.md)     | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [VPN2 CSP](vpnv2-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [WiFi CSP](wifi-csp.md)     | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [WindowsLicensing CSP](windowslicensing-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 
 Footnotes: 
 - 2 - Added in Windows 10, version 1703

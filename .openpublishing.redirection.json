@@ -1,6 +1,61 @@
 {
 "redirections": [
 {
+"source_path": "windows/device-security/device-guard/deploy-code-integrity-policies-steps.md",
+"redirect_url": "/windows/device-security/device-guard/steps-to-deploy-windows-defender-application-control",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/optional-create-a-code-signing-certificate-for-code-integrity-policies.md",
+"redirect_url": "/windows/device-security/device-guard/optional-create-a-code-signing-certificate-for-windows-defender-application-control",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md",
+"redirect_url": "/windows/device-security/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/deploy-code-integrity-policies-policy-rules-and-file-rules.md",
+"redirect_url": "/windows/device-security/device-guard/deploy-windows-defender-application-control-policy-rules-and-file-rules",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/deploy-device-guard-deploy-code-integrity-policies.md",
+"redirect_url": "/windows/device-security/device-guard/deploy-windows-defender-application-control",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/device-guard/deploy-catalog-files-to-support-code-integrity-policies.md",
+"redirect_url": "/windows/device-security/device-guard/deploy-catalog-files-to-support-windows-defender-application-control",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/threat-protection/use-windows-event-forwarding-to-assist-in-instrusion-detection.md",
+"redirect_url": "/windows/threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection",
+"redirect_document_id": true
+},
+{
+"source_path": "devices/surface/surface-device-compatibility-with-windows-10-ltsb.md",
+"redirect_url": "/devices/surface/surface-device-compatibility-with-windows-10-ltsc",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/basic-level-windows-diagnostic-events-and-fields-1709.md",
+"redirect_url": "/windows/configuration/basic-level-windows-diagnostic-events-and-fields",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/windows-diagnostic-data-1709.md",
+"redirect_url": "/windows/configuration/windows-diagnostic-data",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/EventName.md",
+"redirect_url": "/windows/configuration/enhanced-telemetry-windows-analytics-events-and-fields",
+"redirect_document_id": true
+},
+{
 "source_path": "education/windows/windows-10-pro-to-pro-edu-upgrade.md",
 "redirect_url": "/education/windows/switch-to-pro-education",
 "redirect_document_id": true
@@ -1201,7 +1256,7 @@
 "redirect_document_id": false
 },
 {
-"source_path": "windows/configure/basic-level-windows-diagnostic-events-and-fields.md",
+"source_path": "windows/configure/basic-level-windows-diagnostic-events-and-fields-1703.md",
 "redirect_url": "/windows/configuration/basic-level-windows-diagnostic-events-and-fields",
 "redirect_document_id": true
 },
@@ -1526,7 +1581,7 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/configure/windows-diagnostic-data.md",
+"source_path": "windows/configure/windows-diagnostic-data-1703.md",
 "redirect_url": "/windows/configuration/windows-diagnostic-data",
 "redirect_document_id": true
 },
@@ -8383,6 +8438,26 @@
 {
 "source_path": "windows/deployment/windows-10-enterprise-activation-subscription.md",
 "redirect_url": "/windows/deployment/windows-10-enterprise-subscription-activation",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/windows-10-auto-pilot.md",
+"redirect_url": "/windows/deployment/windows-autopilot/windows-10-autopilot",
+"redirect_document_id": true
+},
+{
+"source_path": "bcs/index.md",
+"redirect_url": "/microsoft-365/business/index",
+"redirect_document_id": true
+},
+{
+"source_path": "bcs/support/microsoft-365-business-faqs.md",
+"redirect_url": "/microsoft-365/business/support/microsoft-365-business-faqs",
+"redirect_document_id": true
+},
+{
+"source_path": "bcs/support/transition-csp-subscription.md",
+"redirect_url": "/microsoft-365/business/support/transition-csp-subscription",
 "redirect_document_id": true
 }
 ]

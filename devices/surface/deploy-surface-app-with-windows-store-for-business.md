@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: surface, store
 ms.sitesec: library
 author: miladCA
+ms.date: 09/21/2017
 ---
 
 #Deploy Surface app with Microsoft Store for Business and Education

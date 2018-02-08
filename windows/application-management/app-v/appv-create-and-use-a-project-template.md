@@ -6,6 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
+ms.date: 04/19/2017
 ---
 
 # Create and apply an App-V project template to a sequenced App-V package

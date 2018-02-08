@@ -53,10 +53,7 @@ The following Group Policy settings were added in Windows 10, version 1709:
 - Windows Components\MDM\Auto MDM Enrollment with AAD Token
 - Windows Components\Messaging\Allow Message Service Cloud Sync
 - Windows Components\Microsoft Edge\Always show the Books Library in Microsoft Edge
-- Windows Components\Microsoft Edge\Always show the Books Library in Microsoft Edge
 - Windows Components\Microsoft Edge\Provision Favorites
-- Windows Components\Microsoft Edge\Provision Favorites
-- Windows Components\Microsoft Edge\Prevent changes to Favorites on Microsoft Edge
 - Windows Components\Microsoft Edge\Prevent changes to Favorites on Microsoft Edge
 - Windows Components\Microsoft FIDO Authentication\Enable usage of FIDO devices to sign on
 - Windows Components\OneDrive\Prevent OneDrive from generating network traffic until the user signs in to OneDrive
@@ -144,7 +141,6 @@ The following Group Policy settings were added in Windows 10, version 1703:
 - Windows Components\ActiveX Installer Service\Establish ActiveX installation policy for sites in Trusted zones
 - Windows Components\Application Compatibility\Turn off Application Compatibility Engine
 - Windows Components\Application Compatibility\Turn off Program Compatibility Assistant
-- Windows Components\Application Compatibility\Turn off Program Compatibility Assistant
 - Windows Components\Application Compatibility\Turn off Steps Recorder
 - Windows Components\Attachment Manager\Notify antivirus programs when opening attachments
 - Windows Components\Biometrics\Allow the use of biometrics
@@ -179,34 +175,23 @@ The following Group Policy settings were added in Windows 10, version 1703:
 - Windows Components\Microsoft Account\Block all consumer Microsoft account user authentication
 - Windows Components\Microsoft Edge\Configure Autofill
 - Windows Components\Microsoft Edge\Allow Developer Tools
-- Windows Components\Microsoft Edge\Allow Developer Tools
 - Windows Components\Microsoft Edge\Configure Do Not Track
 - Windows Components\Microsoft Edge\Allow InPrivate browsing
 - Windows Components\Microsoft Edge\Configure Password Manager
-- Windows Components\Microsoft Edge\Configure Password Manager
 - Windows Components\Microsoft Edge\Configure Pop-up Blocker
-- Windows Components\Microsoft Edge\Configure Pop-up Blocker
-- Windows Components\Microsoft Edge\Allow search engine customization
 - Windows Components\Microsoft Edge\Allow search engine customization
 - Windows Components\Microsoft Edge\Configure search suggestions in Address bar
 - Windows Components\Microsoft Edge\Set default search engine
 - Windows Components\Microsoft Edge\Configure additional search engines
-- Windows Components\Microsoft Edge\Configure additional search engines
-- Windows Components\Microsoft Edge\Configure the Enterprise Mode Site List
 - Windows Components\Microsoft Edge\Configure the Enterprise Mode Site List
 - Windows Components\Microsoft Edge\Prevent using Localhost IP address for WebRTC
-- Windows Components\Microsoft Edge\Prevent using Localhost IP address for WebRTC
-- Windows Components\Microsoft Edge\Configure Start pages
 - Windows Components\Microsoft Edge\Configure Start pages
 - Windows Components\Microsoft Edge\Disable lockdown of Start pages
-- Windows Components\Microsoft Edge\Disable lockdown of Start pages
-- Windows Components\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for sites
 - Windows Components\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for sites
 - Windows Components\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for files
 - Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\.Net Framework Configuration
 - Windows Components\Windows Installer\Prohibit use of Restart Manager
 - Windows Components\Desktop Gadgets\Restrict unpacking and installation of gadgets that are not digitally signed.
-- Windows Components\Desktop Gadgets\Turn Off user-installed desktop gadgets
 - Windows Components\Desktop Gadgets\Turn Off user-installed desktop gadgets
 - Windows Components\OneDrive\Prevent the usage of OneDrive for file storage
 - Windows Components\OneDrive\Prevent the usage of OneDrive for file storage on Windows 8.1
@@ -275,7 +260,6 @@ No new [Exchange ActiveSync policies](https://go.microsoft.com/fwlink/p/?LinkId=
 
 [Windows 10 Mobile and MDM](windows-10-mobile-and-mdm.md)
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=new-policies-for-windows-10.md).  
 
  
 

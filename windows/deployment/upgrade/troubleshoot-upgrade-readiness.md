@@ -3,6 +3,7 @@ title: Troubleshoot Upgrade Readiness (Windows 10)
 description: Provides troubleshooting information for Upgrade Readiness.
 ms.prod: w10
 author: greg-lindsay
+ms.date: 04/19/2017
 ---
 
 # Troubleshoot Upgrade Readiness
@@ -23,16 +24,16 @@ If you still don’t see data in Upgrade Readiness, follow these steps:
 
 ## Disable Upgrade Readiness
 
-If you want to stop using Upgrade Readiness and stop sending telemetry data to Microsoft, follow these steps:
+If you want to stop using Upgrade Readiness and stop sending diagnostic data data to Microsoft, follow these steps:
 
 1.  Unsubscribe from the Upgrade Readiness solution in the OMS portal. In the OMS portal, go to **Settings** > **Connected Sources** > **Windows Telemetry** and choose the **Unsubscribe** option.
 
   ![Upgrade Readiness unsubscribe](../images/upgrade-analytics-unsubscribe.png)
 
-2.  Disable the Commercial Data Opt-in Key on computers running Windows 7 SP1 or 8.1. On computers running Windows 10, set the telemetry level to **Security**:
+2.  Disable the Commercial Data Opt-in Key on computers running Windows 7 SP1 or 8.1. On computers running Windows 10, set the diagnostic data level to **Security**:
 
   **Windows 7 and Windows 8.1**: Delete CommercialDataOptIn registry property from *HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection*
-  **Windows 10**: Follow the instructions in the [Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#enterprise-management) topic.
+  **Windows 10**: Follow the instructions in the [Configure Windows diagnostic data in your organization](/configuration/configure-windows-diagnostic-data-in-your-organization.md) topic.
 
 3.	If you enabled **Internet Explorer Site Discovery**, you can disable Internet Explorer data collection by setting the *IEDataOptIn* registry key to value "0".  The IEDataOptIn key can be found under: *HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection*.
 4.	You can also remove the “CommercialId” key from: "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection". **This is an optional step**.

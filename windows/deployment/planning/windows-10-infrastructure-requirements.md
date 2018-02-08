@@ -8,6 +8,7 @@ ms.mktglfcycl: plan
 ms.localizationpriority: high
 ms.sitesec: library
 author: mtniehaus
+ms.date: 07/27/2017
 ---
 
 # Windows 10 infrastructure requirements

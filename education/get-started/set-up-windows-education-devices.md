@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
-ms.date: 07/10/2017
+ms.date: 07/28/2017
 ---
 
 # Set up Windows 10 devices using Windows OOBE
@@ -19,7 +19,7 @@ If you are setting up a Windows 10 device invidividually, and network bandwidth 
 
 You can watch the video to see how this is done, or follow the step-by-step guide. </br>
 
-<center><iframe src="https://www.youtube.com/embed/nADWqBYvqXk" width="960" height="540" allowFullScreen frameBorder="0"></iframe></center>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nADWqBYvqXk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 You can watch the descriptive audio version here: [Microsoft Education: Set up a new Windows 10 education devices using the Windows setup experience (DA)](https://www.youtube.com/watch?v=_UtS1Cz2Pno)
 

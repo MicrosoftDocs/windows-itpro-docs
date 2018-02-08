@@ -6,10 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 10/16/2017
+ms.date: 01/04/2018
 ---
 
 # BitLocker CSP
+
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices. This CSP was added in Windows 10, version 1703.
 
@@ -794,6 +797,12 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">Allows the Admin to disable the warning prompt for other disk encryption on the user machines.</p>
 
+> [!Important]  
+> Starting in Windows 10, next major update, the value 0 can only be set for Azure Active Directory joined devices.  Windows will attempt to silently enable [BitLocker](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overview) for value 0.
+
+> [!Warning]
+> When you enable BitLocker on a device with third party encryption, it may render the device unusable and will require reinstallation of Windows.
+
 <table>
 <tr>
 	<th>Home</th>
@@ -817,10 +826,8 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">The following list shows the supported values:</p>
 
--   0 – Disables the warning prompt.
+-   0 – Disables the warning prompt. Starting in Windows 10, next major update, the value 0 can only be set for Azure Active Directory joined devices.  Windows will attempt to silently enable BitLocker for value 0.
 -   1 (default) – Warning prompt allowed.
-
-<p style="margin-left: 20px">Admin should set the value to 0 to disable the warning. If you want to disable this policy use the following SyncML:</p>
 
 ``` syntax
 <Replace>

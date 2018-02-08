@@ -9,6 +9,7 @@ ms.pagetype: edu
 ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
+ms.date: 10/30/2017
 ---
 
 # Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S

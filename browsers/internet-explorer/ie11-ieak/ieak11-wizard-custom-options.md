@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: 4b804da3-c3ac-4b60-ab1c-99536ff6e31b
 title: Internet Explorer Administration Kit 11 (IEAK 11) Customization Wizard options (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

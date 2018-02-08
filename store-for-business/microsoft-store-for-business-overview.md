@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: TrudyHa
 ms.localizationpriority: high
+ms.date: 10/17/2017
 ---
 
 # Microsoft Store for Business and Microsoft Store for Education overview
@@ -29,7 +30,7 @@ Organizations or schools of any size can benefit from using Microsoft Store for 
     - **Microsoft Store for Education** – Apps and subscriptions
     - **Office 365** – Subscriptions
     - **Volume licensing** - Apps purchased with volume licensing
-- **Private store** - Curate a private store for your business that’s easily available from any Windows 10 device. Your private store is available from Microsoft Store on Windows 10, or with a browser on the Web. People in your organization can download apps from your organization's private store on Windows 10 devices. 
+- **Private store** - Create a private store for your business that’s easily available from any Windows 10 device. Your private store is available from Microsoft Store on Windows 10, or with a browser on the Web. People in your organization can download apps from your organization's private store on Windows 10 devices. 
 - **Flexible distribution options** - Flexible options for distributing content and apps to your employee devices:
     - Distribute through Microsoft Store services. You can assign apps to individual employees, or make apps available to all employees in your private store.
     - Use a management tool from Microsoft, or a 3rd-party tool for advanced distribution and management functions, or for managing images.

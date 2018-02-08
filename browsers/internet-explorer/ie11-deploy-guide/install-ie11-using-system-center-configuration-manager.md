@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: 9ede9722-29b3-4cb7-956d-ffa91e7bedbd
 title: Install Internet Explorer 11 (IE11) using System Center 2012 R2 Configuration Manager (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

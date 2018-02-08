@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: Justinha
+ms.date: 10/13/2017
 ---
 
 # Use Virtual Smart Cards

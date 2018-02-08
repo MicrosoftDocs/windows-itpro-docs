@@ -9,6 +9,7 @@ ms.localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus
+ms.date: 10/16/2017
 ---
 
 # Deploy a Windows 10 image using MDT
@@ -652,5 +653,3 @@ Figure 14. The partitions when deploying an UEFI-based machine.
 [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md)
 
 [Configure MDT settings](configure-mdt-settings.md)
-
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=deploy-a-windows-10-image-using-mdt.md). 

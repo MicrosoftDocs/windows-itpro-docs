@@ -8,6 +8,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
+ms.date: 06/21/2016
 ---
 
 # How to Use an App-V 4.6 Application From an App-V 5.0 Application

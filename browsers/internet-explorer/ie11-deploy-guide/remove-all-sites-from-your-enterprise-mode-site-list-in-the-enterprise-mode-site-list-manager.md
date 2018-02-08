@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: 90f38a6c-e0e2-4c93-9a9e-c425eca99e97
 title: Remove all sites from your Enterprise Mode site list using the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

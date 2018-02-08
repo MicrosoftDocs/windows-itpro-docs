@@ -6,13 +6,15 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/05/2017
 ---
 
 # TPMPolicy DDF file
 
 
 This topic shows the OMA DM device description framework (DDF) for the **TPMPolicy** configuration service provider. The TPMPolicy CSP was added in Windows 10, version 1703.
+
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
 The XML below is the current version for this CSP. 
 

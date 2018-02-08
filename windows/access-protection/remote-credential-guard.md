@@ -6,6 +6,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
+ms.date: 01/12/2018
 ---
 #  Protect Remote Desktop credentials with Windows Defender Remote Credential Guard
 
@@ -82,7 +83,7 @@ To use Windows Defender Remote Credential Guard, the Remote Desktop client and r
 
 The Remote Desktop client device:
 
--   Must be running at least Windows 10, version 1703 to be able to supply credentials.
+-  Must be running at least Windows 10, version 1703 to be able to supply credentials.
 -  Must be running at least Windows 10, version 1607 or Windows Server 2016 to use the user’s signed-in credentials. This requires the user’s account be able to sign in to both the client device and the remote host.
 -  Must be running the Remote Desktop Classic Windows application. The Remote Desktop Universal Windows Platform application doesn't support Windows Defender Remote Credential Guard.
 -  Must use Kerberos authentication to connect to the remote host. If the client cannot connect to a domain controller, then RDP attempts to fall back to NTLM. Windows Defender Remote Credential Guard does not allow NTLM fallback because this would expose credentials to risk.
@@ -161,7 +162,7 @@ mstsc.exe /remoteGuard
 
 - Windows Defender Remote Credential Guard does not support compound authentication. For example, if you’re trying to access a file server from a remote host that requires a device claim, access will be denied.
 
-- Windows Defender Remote Credential Guard cannot be used to connect to a device that is not domain-joined to Active Directory, for example, remote hosts joined to Azure Active Directory. 
+- Windows Defender Remote Credential Guard can be used only when connecting to a device that is joined to a Windows Server Active Directory domain, including AD domain-joined servers that run as Azure virtual machines (VMs). Windows Defender Remote Credential Guard cannot be used when connecting to remote devices joined to Azure Active Directory. 
 
 - Remote Desktop Credential Guard only works with the RDP protocol.
 

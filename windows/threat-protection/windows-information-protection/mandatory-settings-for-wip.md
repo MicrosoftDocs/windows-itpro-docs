@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
 ms.localizationpriority: medium
+ms.date: 09/11/2017
 ---
 
 # Mandatory tasks and settings required to turn on Windows Information Protection (WIP)

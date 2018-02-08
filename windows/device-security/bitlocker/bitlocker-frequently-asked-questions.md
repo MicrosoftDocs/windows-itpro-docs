@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
+ms.date: 10/16/2017
 ---
 
 # BitLocker frequently asked questions (FAQ)
@@ -28,8 +29,6 @@ BitLocker is a data protection feature that encrypts the hard drives on your com
 -   [Security](#bkmk-security)
 -   [BitLocker Network Unlock](#bkmk-bnusect)
 -   [Other questions](#bkmk-other)
-
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=bitlocker-frequently-asked-questions.md). 
 
 ## <a href="" id="bkmk-overview"></a>Overview and requirements
 

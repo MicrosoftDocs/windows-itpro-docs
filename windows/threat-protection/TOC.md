@@ -65,7 +65,7 @@
 ###### [Restrict app execution](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#restrict-app-execution)
 ###### [Remove app restriction](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#remove-app-restriction)
 ###### [Isolate machines from the network](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#isolate-machines-from-the-network)
-###### [Release machine from the isolation](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#release-machine-from-isolation)
+###### [Release machine from isolation](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#release-machine-from-isolation)
 ###### [Check activity details in Action center](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#check-activity-details-in-action-center)
 ##### [Take response actions on a file](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md)
 ###### [Stop and quarantine files in your network](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md#stop-and-quarantine-files-in-your-network)
@@ -110,27 +110,51 @@
 ###### [Get domain related machines](windows-defender-atp\get-domain-related-machines-windows-defender-advanced-threat-protection.md)
 ###### [Get domain statistics](windows-defender-atp\get-domain-statistics-windows-defender-advanced-threat-protection.md)
 ###### [Is domain seen in organization](windows-defender-atp\is-domain-seen-in-org-windows-defender-advanced-threat-protection.md)
+
 ##### File
+###### [Block file API](windows-defender-atp\block-file-windows-defender-advanced-threat-protection.md)
 ###### [Get file information](windows-defender-atp\get-file-information-windows-defender-advanced-threat-protection.md)
 ###### [Get file related alerts](windows-defender-atp\get-file-related-alerts-windows-defender-advanced-threat-protection.md)
 ###### [Get file related machines](windows-defender-atp\get-file-related-machines-windows-defender-advanced-threat-protection.md)
 ###### [Get file statistics](windows-defender-atp\get-file-statistics-windows-defender-advanced-threat-protection.md)
+###### [Get FileActions collection API](windows-defender-atp\get-fileactions-collection-windows-defender-advanced-threat-protection.md)
+###### [Unblock file API](windows-defender-atp\unblock-file-windows-defender-advanced-threat-protection.md)
+
 ##### IP
 ###### [Get IP related alerts](windows-defender-atp\get-ip-related-alerts-windows-defender-advanced-threat-protection.md)
 ###### [Get IP related machines](windows-defender-atp\get-ip-related-machines-windows-defender-advanced-threat-protection.md)
 ###### [Get IP statistics](windows-defender-atp\get-ip-statistics-windows-defender-advanced-threat-protection.md)
 ###### [Is IP seen in organization](windows-defender-atp\is-ip-seen-org-windows-defender-advanced-threat-protection.md)
 ##### Machines
+###### [Collect investigation package API](windows-defender-atp\collect-investigation-package-windows-defender-advanced-threat-protection.md)
 ###### [Find machine information by IP](windows-defender-atp\find-machine-info-by-ip-windows-defender-advanced-threat-protection.md)
 ###### [Get machines](windows-defender-atp\get-machines-windows-defender-advanced-threat-protection.md)
+###### [Get FileMachineAction object API](windows-defender-atp\get-filemachineaction-object-windows-defender-advanced-threat-protection.md)
+###### [Get FileMachineActions collection API](windows-defender-atp\get-filemachineactions-collection-windows-defender-advanced-threat-protection.md)
 ###### [Get machine by ID](windows-defender-atp\get-machine-by-id-windows-defender-advanced-threat-protection.md)
 ###### [Get machine log on users](windows-defender-atp\get-machine-log-on-users-windows-defender-advanced-threat-protection.md)
 ###### [Get machine related alerts](windows-defender-atp\get-machine-related-alerts-windows-defender-advanced-threat-protection.md)
+###### [Get MachineAction object API](windows-defender-atp\get-machineaction-object-windows-defender-advanced-threat-protection.md)
+###### [Get MachineActions collection API](windows-defender-atp\get-machineactions-collection-windows-defender-advanced-threat-protection.md)
+###### [Get machines](windows-defender-atp\get-machines-windows-defender-advanced-threat-protection.md)
+###### [Get package SAS URI API](windows-defender-atp\get-package-sas-uri-windows-defender-advanced-threat-protection.md)
+###### [Isolate machine API](windows-defender-atp\isolate-machine-windows-defender-advanced-threat-protection.md)
+###### [Release machine from isolation API](windows-defender-atp\unisolate-machine-windows-defender-advanced-threat-protection.md)
+###### [Remove app restriction API](windows-defender-atp\unrestrict-code-execution-windows-defender-advanced-threat-protection.md)
+###### [Request sample API](windows-defender-atp\request-sample-windows-defender-advanced-threat-protection.md)
+###### [Restrict app execution API](windows-defender-atp\restrict-code-execution-windows-defender-advanced-threat-protection.md)
+###### [Run antivirus scan API](windows-defender-atp\run-av-scan-windows-defender-advanced-threat-protection.md)
+###### [Stop and quarantine file API](windows-defender-atp\stop-quarantine-file-windows-defender-advanced-threat-protection.md)
+
+
+
 ##### User
 ###### [Get alert related user information](windows-defender-atp\get-alert-related-user-info-windows-defender-advanced-threat-protection.md)
 ###### [Get user information](windows-defender-atp\get-user-information-windows-defender-advanced-threat-protection.md)
 ###### [Get user related alerts](windows-defender-atp\get-user-related-alerts-windows-defender-advanced-threat-protection.md)
 ###### [Get user related machines](windows-defender-atp\get-user-related-machines-windows-defender-advanced-threat-protection.md)
+
+
 ### [Create and build Power BI reports using Windows Defender ATP data](windows-defender-atp\powerbi-reports-windows-defender-advanced-threat-protection.md)
 ### [Check sensor state](windows-defender-atp\check-sensor-status-windows-defender-advanced-threat-protection.md)
 #### [Fix unhealthy sensors](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
@@ -234,17 +258,18 @@
 #### [Evaluate Attack surface reduction](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
 #### [Enable Attack surface reduction](windows-defender-exploit-guard\enable-attack-surface-reduction.md)
 #### [Customize Attack surface reduction](windows-defender-exploit-guard\customize-attack-surface-reduction.md)
+#### [Troubleshoot Attack surface reduction rules](windows-defender-exploit-guard\troubleshoot-asr.md)
 ### [Network Protection](windows-defender-exploit-guard\network-protection-exploit-guard.md)
 #### [Evaluate Network Protection](windows-defender-exploit-guard\evaluate-network-protection.md)
 #### [Enable Network Protection](windows-defender-exploit-guard\enable-network-protection.md)
+#### [Troubleshoot Network protection](windows-defender-exploit-guard\troubleshoot-np.md)
 ### [Controlled folder access](windows-defender-exploit-guard\controlled-folders-exploit-guard.md)
 #### [Evaluate Controlled folder access](windows-defender-exploit-guard\evaluate-controlled-folder-access.md)
 #### [Enable Controlled folder access](windows-defender-exploit-guard\enable-controlled-folders-exploit-guard.md)
 #### [Customize Controlled folder access](windows-defender-exploit-guard\customize-controlled-folders-exploit-guard.md)
 
 
-
-
+## [Windows Defender Application Control](windows-defender-application-control.md)
 
 
 ## [Windows Defender SmartScreen](windows-defender-smartscreen\windows-defender-smartscreen-overview.md)
@@ -289,7 +314,7 @@
 
 ## [Secure the Windows 10 boot process](secure-the-windows-10-boot-process.md)
 
-## [Use Windows Event Forwarding to help with intrusion detection](use-windows-event-forwarding-to-assist-in-instrusion-detection.md)
+## [Use Windows Event Forwarding to help with intrusion detection](use-windows-event-forwarding-to-assist-in-intrusion-detection.md)
 
 ## [Block untrusted fonts in an enterprise](block-untrusted-fonts-in-enterprise.md)
 

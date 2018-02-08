@@ -1,6 +1,6 @@
 ---
-title: REST API reference for Micosoft Store for Business
-description: REST API reference for Micosoft Store for Business
+title: REST API reference for Microsoft Store for Business
+description: REST API reference for Microsoft Store for Business
 MS-HAID:
 - 'p\_phdevicemgmt.business\_store\_portal\_management\_rest\_api\_reference'
 - 'p\_phDeviceMgmt.rest\_api\_reference\_windows\_store\_for\_Business'
@@ -10,10 +10,10 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 09/18/2017
 ---
 
-# REST API reference for Micosoft Store for Business
+# REST API reference for Microsoft Store for Business
 
 Here's the list of available operations:
 

@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
 ms.localizationpriority: high
+ms.date: 1/6/2018
 ---
 
 # Configure an MDM provider
@@ -22,17 +23,19 @@ Your management tool needs to be installed and configured with Azure AD, in the 
 
 **To configure a management tool in Azure AD**
 
-1.  Sign in to the Azure Portal as an Administrator.
-2.  Click **Active Directory**, and then choose your directory. 
-3.  Click **Applications**, find the application, and add it to your directory.
+1. Sign in to the Azure Portal as an Administrator.
+2. Click **Azure Active Directory**, and then choose your directory.
+4. Click **Mobility (MDM and MAM)**.  
+3. Click **+Add Applications**, find the application, and add it to your directory.
 
 After your management tool is added to your Azure AD directory, you can configure it to work with Microsoft Store. You can configure multiple management tools - just repeat the following procedure. 
 
-**To configure a management tool in Store for Business**
+**To configure a management tool in Microsoft Store for Business**
 
-1.  Sign in to the [Store for Business](http://businessstore.microsoft.com) or [Store for Education](https://educationstore.microsoft.com)
-2.  Click **Manage**, click **Store settings**, and then click  **Management tools**.
-3.  From the list of MDM tools, select the one you want to synchronize with Microsoft Store, and then click **Activate.**
+1. Sign in to the [Store for Business](http://businessstore.microsoft.com) or [Store for Education](https://educationstore.microsoft.com)
+2. Click **Manage**, click **Settings**. 
+3. Under **Distribute**, click **Management tools**.
+3. From the list of MDM tools, select the one you want to synchronize with Microsoft Store, and then click **Activate.**
 
 Your MDM tool is ready to use with Microsoft Store. To learn how to configure synchronization and deploy apps, see these topics:
 - [Manage apps you purchased from Microsoft Store for Business with Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)

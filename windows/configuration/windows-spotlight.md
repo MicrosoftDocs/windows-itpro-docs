@@ -8,6 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 01/26/2018
 ---
 
 # Configure Windows Spotlight on the lock screen
@@ -24,7 +25,7 @@ For managed devices running Windows 10 Enterprise and Windows 10 Education, en
 
 
 >[!NOTE]
->In Windows 10, version 1607, the lock screen background does not display if you disable the **Animate windows when minimizing and mazimizing** setting in **This PC** > **Properties** > **Advanced system settings** > **Performance settings** > **Visual Effects**, or if you enable the Group Policy setting **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Desktop Windows Manager** > **Do not allow windows animations**.
+>In Windows 10, version 1607, the lock screen background does not display if you disable the **Animate windows when minimizing and maximizing** setting in **This PC** > **Properties** > **Advanced system settings** > **Performance settings** > **Visual Effects**, or if you enable the Group Policy setting **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Desktop Windows Manager** > **Do not allow windows animations**.
 >
 >In Windows 10, version 1703, you can use the [Personalization CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/personalization-csp) settings to set lock screen and desktop background images.
 
@@ -67,19 +68,29 @@ Windows Spotlight is enabled by default. Windows 10 provides Group Policy and mo
 
  In addition to the specific policy settings for Windows Spotlight, administrators can replace Windows Spotlight with a selected image using the Group Policy setting **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Force a specific default lock screen image**.
 
+ >[!TIP]
+ >If you want to use a custom lock screen image that contains text, see [Resolution for custom lock screen image](#resolution-for-custom-lock-screen-image).
+
 
 ![lockscreen policy details](images/lockscreenpolicy.png)
 
 Pay attention to the checkbox in **Options**. In addition to providing the path to the lock screen image, administrators can choose to allow or **Turn off fun facts, tips, tricks, and more on lock screen**. If the checkbox is not selected, users will see the lock screen image that is defined in the policy setting, and will also see occasional messages.
 
+## Resolution for custom lock screen image
 
+A concern with custom lock screen images is how they will appear on different screen sizes and resolutions.
+
+A custom lock screen image created in 16:9 aspect ratio (1600x900) will scale properly on devices using a 16:9 resolution, such as 1280x720 or 1920x1080. On devices using other aspect ratios, such as 4:3 (1024x768) or 16:10 (1280x800), height scales correctly and width is cropped to a size equal to the aspect ratio. The image will remain centered on the screen
+
+Lock screen images created at other aspect ratios may scale and center unpredictably on your device when changing aspect ratios.
+
+The recommendation for custom lock screen images that include text (such as a legal statement) is to create the lock screen image in 16:9 resolution with text contained in the 4:3 region, allowing the text to remain visible at any aspect ratio. 
 
 ## Related topics
 
 
 [Manage Windows 10 Start layout options](windows-10-start-layout-options-and-policies.md)
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=windows-spotlight.md). 
 
  
 

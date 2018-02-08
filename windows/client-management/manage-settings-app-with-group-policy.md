@@ -5,6 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: brianlic-msft
+ms.date: 04/19/2017
 ---
 
 # Manage the Settings app with Group Policy

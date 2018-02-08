@@ -6,4 +6,5 @@
 ## [Set up HoloLens in kiosk mode](hololens-kiosk.md)
 ## [Configure HoloLens using a provisioning package](hololens-provisioning.md)
 ## [Install apps on HoloLens](hololens-install-apps.md)
+## [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md)
 ## [Change history for Microsoft HoloLens documentation](change-history-hololens.md)

@@ -9,6 +9,7 @@ ms.pagetype: appcompat
 ms.localizationpriority: high
 ms.sitesec: library
 author: mtniehaus
+ms.date: 07/27/2017
 ---
 
 # Windows 10 compatibility

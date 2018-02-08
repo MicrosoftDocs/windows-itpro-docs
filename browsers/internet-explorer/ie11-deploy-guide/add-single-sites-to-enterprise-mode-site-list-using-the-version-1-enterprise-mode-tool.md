@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: 042e44e8-568d-4717-8fd3-69dd198bbf26
 title: Add sites to the Enterprise Mode site list using the Enterprise Mode Site List Manager (schema v.1) (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

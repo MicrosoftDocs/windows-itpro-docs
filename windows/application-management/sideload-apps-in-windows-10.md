@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: greg-lindsay
+ms.date: 04/19/2017
 ---
 
 # Sideload LOB apps in Windows 10

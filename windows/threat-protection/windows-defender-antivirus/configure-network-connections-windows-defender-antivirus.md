@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
 ms.author: iawilt
-ms.date: 08/25/2017
+ms.date: 11/20/2017
 ---
 
 # Configure and validate network connections for Windows Defender Antivirus
@@ -35,7 +35,7 @@ See the Enterprise Mobility and Security blog post [Important changes to Microso
 >[!TIP]
 >You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
 >- Cloud-delivered protection
->- Fast learning (including Black at first sight)
+>- Fast learning (including Block at first sight)
 >- Potentially unwanted application blocking
 
 ## Allow connections to the Windows Defender Antivirus cloud
@@ -133,10 +133,10 @@ https://msdl.microsoft.com/download/symbols
 Universal Telemetry Client
 </td>
 <td>
-Used by Windows to send client telemetry, Windows Defender Antivirus uses this for product quality monitoring purposes
+Used by Windows to send client diagnostic data, Windows Defender Antivirus uses this for product quality monitoring purposes
 </td>
 <td>
-This update uses SSL (TCP Port 443) to download manifests and upload telemetry to Microsoft that uses the following DNS endpoints:  <ul><li>vortex-win.data.microsoft.com</li><li>settings-win.data.microsoft.com</li></ul></td>
+This update uses SSL (TCP Port 443) to download manifests and upload diagnostic data to Microsoft that uses the following DNS endpoints:  <ul><li>vortex-win.data.microsoft.com</li><li>settings-win.data.microsoft.com</li></ul></td>
 </tr>
 
 </table>

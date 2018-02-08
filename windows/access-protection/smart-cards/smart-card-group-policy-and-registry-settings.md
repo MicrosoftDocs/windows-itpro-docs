@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: Justinha
+ms.date: 04/19/2017
 ---
 
 # Smart Card Group Policy and Registry Settings
@@ -61,6 +62,8 @@ The following sections and tables list the smart card-related Group Policy setti
 The following smart card Group Policy settings are located in Computer Configuration\\Administrative Templates\\Windows Components\\Smart Card.
 
 The registry keys are in the following locations:
+
+-   HKEY\_LOCAL\_MACHINE\\SOFTWARE\Policies\\Microsoft\\Windows\\ScPnP\\EnableScPnP
 
 -   HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\SmartCardCredentialProvider
 

@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 10/17/2017
+ms.date: 11/14/2017
 ms.pagetype: deploy
 author: jaimeo
 ---
@@ -19,7 +19,7 @@ Device Health is the newest Windows Analytics solution that complements the exis
 
 Like Upgrade Readiness and Update Compliance, Device Health is a solution built within Operations Management Suite (OMS), a cloud-based monitoring and automation service that has a flexible servicing subscription based on data usage and retention. This release is free for customers to try and will not incur charges on your OMS workspace for its use. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/).
 
-Device Health uses Windows diagnostic data that is part of all Windows 10 devices. If you have already employed Upgrade Readiness or Update Compliance solutions, all you need to do is select Device Health from the OMS solution gallery and add it to your OMS workspace. Device Health requires enhanced telemetry, so you might need to implement this policy if you've not already done so.
+Device Health uses Windows diagnostic data that is part of all Windows 10 devices. If you have already employed Upgrade Readiness or Update Compliance solutions, all you need to do is select Device Health from the OMS solution gallery and add it to your OMS workspace. Device Health requires enhanced diagnostic data, so you might need to implement this policy if you've not already done so.
 
 
 Device Health provides the following:
@@ -27,7 +27,7 @@ Device Health provides the following:
 - Identification of devices that crash frequently, and therefore might need to be rebuilt or replaced
 - Identification of device drivers that are causing device crashes, with suggestions of alternative versions of those drivers that might reduce the number of crashes
 - Notification of Windows Information Protection misconfigurations that send prompts to end users
-- No need for new complex customized infrastructure, thanks to cloud-connected access using Windows 10 telemetry
+- No need for new complex customized infrastructure, thanks to cloud-connected access using Windows 10 diagnostic data
 
 See the following topics in this guide for detailed information about configuring and using the Device Health solution:
 
@@ -56,10 +56,10 @@ The Device Health architecture and data flow is summarized by the following five
 
 
 
-**(1)** User computers send telemetry data to a secure Microsoft data center using the Microsoft Data Management Service.<BR>
-**(2)** Telemetry data is analyzed by the Microsoft Telemetry Service.<BR>
-**(3)** Telemetry data is pushed from the Microsoft Telemetry Service to your OMS workspace.<BR>
-**(4)** Telemetry data is available in the Device Health solution.<BR>
+**(1)** User computers send diagnostic data to a secure Microsoft data center using the Microsoft Data Management Service.<BR>
+**(2)** Diagnostic data is analyzed by the Microsoft Telemetry Service.<BR>
+**(3)** Diagnostic data is pushed from the Microsoft Telemetry Service to your OMS workspace.<BR>
+**(4)** Diagnostic data is available in the Device Health solution.<BR>
 **(5)** You are now able to proactively monitor Device Health issues in your environment.<BR>
 
 These steps are illustrated in following diagram:
@@ -67,7 +67,7 @@ These steps are illustrated in following diagram:
  [![](images/analytics-architecture.png)](images/analytics-architecture.png)
 
 >[!NOTE]
->This process assumes that Windows telemetry is enabled and you [have assigned your Commercial ID to devices](update-compliance-get-started.md#deploy-your-commercial-id-to-your-windows-10-devices).
+>This process assumes that Windows diagnostic data is enabled and you [have assigned your Commercial ID to devices](update-compliance-get-started.md#deploy-your-commercial-id-to-your-windows-10-devices).
 
 
 

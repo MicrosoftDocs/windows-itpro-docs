@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 07/27/2017
 ---
 
 # Set up a shared or guest PC with Windows 10
@@ -49,7 +50,7 @@ Apps can take advantage of shared PC mode with the following three APIs:
 
 - [IsEnabled](https://docs.microsoft.com/uwp/api/windows.system.profile.sharedmodesettings) - This informs apps when the PC has been configured for shared use scenarios. For example, an app might only download content on demand on a device in shared PC mode, or might skip first run experiences.   
 - [ShouldAvoidLocalStorage](https://docs.microsoft.com/uwp/api/windows.system.profile.sharedmodesettings) - This informs apps when the PC has been configured to not allow the user to save to the local storage of the PC. Instead, only cloud save locations should be offered by the app or saved automatically by the app.  
-- [IsEducationEnvironment](https://docs.microsoft.com/uwp/api/windows.system.profile.educationsettings) - This informs apps when the PC is used in an education environment. Apps may want to handle telemetry differently or hide advertising functionality.  
+- [IsEducationEnvironment](https://docs.microsoft.com/uwp/api/windows.system.profile.educationsettings) - This informs apps when the PC is used in an education environment. Apps may want to handle diagnostic data differently or hide advertising functionality.  
  
 
 ###Customization

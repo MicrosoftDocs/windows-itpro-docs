@@ -6,8 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: eross-msft
+author: jasongerend
 ms.localizationpriority: high
+ms.date: 1/26/2018
 ---
 # Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings
 **Applies to:**
@@ -68,7 +69,8 @@ SmartScreen uses registry-based Administrative Template policy settings. For mor
 </table>
 
 ## MDM settings
-If you manage your policies using Microsoft Intune, you'll want to use these MDM policy settings. All settings support both desktop computers (running Windows 10 Pro or Windows 10 Enterprise, enrolled with Microsoft Intune) and Windows 10 Mobile devices.
+If you manage your policies using Microsoft Intune, you'll want to use these MDM policy settings. All settings support both desktop computers (running Windows 10 Pro or Windows 10 Enterprise, enrolled with Microsoft Intune) and Windows 10 Mobile devices.  <br><br> 
+For SmartScreen Internet Explorer MDM policies, see [Policy CSP - InternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer).
 <table>
 <tr>
 <th align="left">Setting</th>
@@ -83,8 +85,8 @@ If you manage your policies using Microsoft Intune, you'll want to use these MDM
 <li><strong>URI full path.</strong> ./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen</li>
 <li><strong>Data type.</strong> Integer</li>
 <li><strong>Allowed values:</strong><ul>
-<li><strong>0 .</strong> Turns off Windows Defender SmartScreen.</li>
-<li><strong>1.</strong> Turns on Windows Defender SmartScreen.</li></ul></li></ul>
+<li><strong>0 .</strong> Turns off Windows Defender SmartScreen in Edge.</li>
+<li><strong>1.</strong> Turns on Windows Defender SmartScreen in Edge.</li></ul></li></ul>
 </td>
 </tr>
 <tr>
@@ -107,8 +109,8 @@ If you manage your policies using Microsoft Intune, you'll want to use these MDM
 <li><strong>URI full path.</strong> ./Vendor/MSFT/Policy/Config/SmartScreen/EnableSmartScreenInShell</li>
 <li><strong>Data type.</strong> Integer</li>
 <li><strong>Allowed values:</strong><ul>
-<li><strong>0 .</strong> Turns off SmartScreen in Windows.</li>
-<li><strong>1.</strong> Turns on SmartScreen in Windows.</li></ul></li></ul>
+<li><strong>0 .</strong> Turns off SmartScreen in Windows for app and file execution.</li>
+<li><strong>1.</strong> Turns on SmartScreen in Windows for app and file execution.</li></ul></li></ul>
 </td>
 </tr>
 <tr>

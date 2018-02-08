@@ -7,6 +7,7 @@ ms.pagetype: hololens, devices
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
+ms.date: 11/29/2017
 ---
 
 # Configure HoloLens using a provisioning package test
@@ -95,7 +96,7 @@ When you run ADKsetup.exe for Windows 10, version 1607, select **Configuration D
 7. You will see whether the package was applied successfully or not. If it failed, you can fix your package and try again. If it succeeded, proceed with OOBE.
 
 >[!NOTE]
->If the device was purchased before August 2016, you will need to sign into the device with aa Microsoft account, get the latest OS update, and then reset the OS in order to apply the provisioning package.
+>If the device was purchased before August 2016, you will need to sign into the device with a Microsoft account, get the latest OS update, and then reset the OS in order to apply the provisioning package.
 
 ## What you can configure
 

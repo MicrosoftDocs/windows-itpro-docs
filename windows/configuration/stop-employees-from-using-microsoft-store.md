@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: store, mobile
 author: TrudyHa
 ms.localizationpriority: high
+ms.date: 10/16/2017
 ---
 
 # Configure access to Microsoft Store
@@ -114,7 +115,6 @@ If you're using Microsoft Store for Business and you want employees to only see 
 
 [Manage access to private store](/microsoft-store/manage-access-to-private-store)
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=stop-employees-from-using-microsoft-store.md).  
 
  
 

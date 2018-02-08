@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
+ms.date: 05/03/2017
 ---
 
 # USMT Requirements

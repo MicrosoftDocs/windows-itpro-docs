@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 localizationpriority: high
 author: mikestephens-MS
 ms.author: mstephen
-ms.date: 09/08/2017
+ms.date: 10/23/2017
 ---
 # Configure Hybrid Windows Hello for Business: Directory Synchronization
 

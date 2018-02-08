@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 08/02/2017
 ---
 
 # CM\_CellularEntries CSP
@@ -192,6 +192,7 @@ The following diagram shows the CM\_CellularEntries configuration service provid
 -   Purchase - 95522B2B-A6D1-4E40-960B-05E6D3F962AB  
 -   Administrative - 2FFD9261-C23C-4D27-8DCF-CDE4E14A3364  
 -   Application - 52D7654A-00A8-4140-806C-087D66705306
+-   eSIM provisioning - A36E171F-2377-4965-88FE-1F53EB4B47C0
 
 ## Additional information
 

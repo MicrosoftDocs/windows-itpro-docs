@@ -9,6 +9,7 @@ ms.localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus
+ms.date: 07/27/2017
 ---
 
 # Configure MDT settings

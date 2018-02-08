@@ -4,70 +4,69 @@ description: Find the latest how to and support content that IT pros need to eva
 ms.assetid: 345A4B4E-BC1B-4F5C-9E90-58E647D11C60
 ms.prod: w10
 ms.localizationpriority: high
-author: brianlic-msft
+author: greg-lindsay
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.date: 10/17/2017
+ms.date: 12/18/2017
 ---
 
 # Windows 10 and Windows 10 Mobile
 
 Find the latest how to and support content that IT pros need to evaluate, plan, deploy, secure and manage devices running Windows 10 or Windows 10 Mobile.
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/rsiyZEAnap8" frameborder="0" allowfullscreen></iframe></center>
+&nbsp;
 
+> [!video https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false]
+
+<br>
 <table border="0" width="100%" align='center'>
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;">
       <a href="/windows/whats-new/whats-new-windows-10-version-1709"> 
-        <img src="images/whats-new-highlight.png" width='142' height='142' alt="Read what's new in Windows 10" title="whats new icon" />
-      </a>
-      <br/>What's New?
+        <img src="images/whatsnew.png" alt="Read what's new in Windows 10" title="Whats new" />
+      <br/>What's New? </a>
     </td>
      <td align="center" style="width:25%; border:0;">
       <a href="/windows/configuration/index">
         <img src="images/configuration.png" alt="Configure Windows 10 in your enterprise" title="Configure Windows 10" />
-      </a>
-      <br/>Configuration
+      <br/>Configuration </a>
     </td>
     <td align="center" style="width:25%; border:0;">
       <a href="/windows/deployment/index">
-        <img src="images/deployment.png" alt="W10 deployment" title="W10 deployment" />
-      </a>
-      <br/>Deployment
+        <img src="images/deployment.png" alt="Windows 10 deployment" title="Windows 10 deployment" />
+      <br/>Deployment </a>
     </td>
        <td align="center" style="width:25%; border:0;">
       <a href="/windows/client-management/index">
-        <img src="images/client-management.png" alt="W10 client management" title="client management icon" />
-      </a>
-      <br/>Client Management
+        <img src="images/clientmanagement.png" alt="Windows 10 client management" title="Client management" />
+      <br/>Client Management </a>
     </td>
+  </tr>
+  <tr>
+   <td align="center" style="width:25%; border:0;"><BR>
+   </td>
   </tr>
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;">
       <a href="/windows/application-management/index">
-        <img src="images/application-management.png" alt="Manage application in your Windows 10 enterprise deployment" title="application management icon" />
-      </a>
-      <br/>Application Management
+        <img src="images/applicationmanagement.png" alt="Manage applications in your Windows 10 enterprise deployment" title="Application management" />
+      <br/>Application Management </a>
     </td>
     <td align="center" style="width:25%; border:0;">
       <a href="/windows/access-protection/index">
-        <img src="images/access-protection.png" alt="W10 Access Protection" title="W10 Access Protection" />
-      </a>
-      <br/>Access Protection
+        <img src="images/accessprotection.png" alt="Windows 10 access protection" title="Windows 10 access protection" />
+      <br/>Access Protection </a>
     </td>
     <td align="center" style="width:25%; border:0;">
       <a href="/windows/device-security/index">
-        <img src="images/device-security.png" alt="W10 device security" title="W10 device security" />
-      </a>
-      <br/>Device Security
+        <img src="images/devicesecurity.png" alt="Windows 10 device security" title="W10 device security" />
+      <br/>Device Security </a>
     </td>
     <td align="center" style="width:25%; border:0;">
       <a href="/windows/threat-protection/index">
-        <img src="images/threat-protection.png" alt="W10 Threat Protection" title="W10 Threat Protection" />
-      </a>
-      <br/>Threat Protection
+        <img src="images/threatprotection.png" alt="Windows 10 threat protection" title="Windows 10 threat protection" />
+      <br/>Threat Protection </a>
     </td>
   </tr>
 </table>

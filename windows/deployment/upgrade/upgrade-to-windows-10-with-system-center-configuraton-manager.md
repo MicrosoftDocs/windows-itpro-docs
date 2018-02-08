@@ -7,6 +7,7 @@ ms.prod: w10
 ms.localizationpriority: high
 ms.mktglfcycl: deploy
 author: mtniehaus
+ms.date: 07/27/2017
 ---
 
 # Perform an in-place upgrade to Windows 10 using Configuration Manager

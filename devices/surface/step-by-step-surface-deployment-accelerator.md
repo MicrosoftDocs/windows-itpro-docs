@@ -9,6 +9,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: miladCA
+ms.date: 07/27/2017
 ---
 
 # Step by step: Surface Deployment Accelerator
