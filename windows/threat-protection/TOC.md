@@ -1,2 +1,0 @@
-# [Threat protection](index.md)
-
