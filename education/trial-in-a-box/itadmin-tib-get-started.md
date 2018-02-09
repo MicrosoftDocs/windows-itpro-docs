@@ -35,9 +35,8 @@ To get the most out of Microsoft Education, we've pre-configured your tenant for
 If you run into any problems while following the steps in this guide, or you have questions about Trial in a Box or Microsoft Education, see [Microsoft Education Trial in a Box Support](support-options.md).
 
 </br>
-<!-- hiding placeholder
-<center><iframe width="560" height="315" src="https://aka.ms/EDU-IT-Admin-Setup" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
--->
+
+> [!VIDEO https://www.youtube.com/embed/cVVKCpO2tyI]
 
 </br>
 
