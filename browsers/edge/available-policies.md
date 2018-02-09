@@ -10,12 +10,11 @@ ms.localizationpriority: high
 ms.date: 09/13/2017
 ---
 
+<!-- pashort 2/9/2018: as per Brian Atman, the documentation descrpancies must be addressed for RS5. Find out what those discrepancies are. Scenario 15403628 -->
+
 # Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge
 
-**Applies to:**
-
-- Windows 10
-- Windows 10 Mobile
+> Applies to: Windows 10, Windows 10 Mobile
 
 Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings. Group Policy objects (GPO's) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences.
 
@@ -26,6 +25,12 @@ By using Group Policy and Intune, you can set up a policy setting once, and then
 
 ## Group Policy settings
 Microsoft Edge works with these Group Policy settings (`Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge\`) to help you manage your company's web browser configurations:
+
+<!-- will the following information read and flow better in a table? -->
+
+Group Policy Setting | Supported versions | Description 
+--- | --- | ---
+Allow Address bar drop-down list suggestions | Windows 10, version 1703 | This policy setting lets you decide whether the Address bar drop-down functionality is available in Microsoft Edge. We recommend disabling this setting if you want to minimize network connections from Microsoft Edge to Microsoft services.<br><table><tr><th>If you...</th><th>Then...</th></tr><tr><td>Enable or don't configure this setting (default),</td><td>employees can see the Address bar drop-down functionality in Microsoft Edge.</td></tr><tr><td>Disable this setting,</td><td>employees won't see the Address bar drop-down functionality in Microsoft Edge. This setting also disables the user-defined setting, "Show search and site suggestions as I type."</td></tr></table>Disabling this setting turns off the Address bar drop-down functionality. Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the "Configure search suggestions in Address bar" setting.
 
 ### Allow Address bar drop-down list suggestions
 - **Supported versions:** Windows 10, version 1703
