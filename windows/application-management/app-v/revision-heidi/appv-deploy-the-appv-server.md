@@ -60,45 +60,44 @@ ms.date: 04/19/2017
     | You are using a custom database name. | Select **Custom configuration** and type the database name.<br/>The database name must be unique, or the installation will fail.|
 10. On the **Configure** page, accept the default value: **Use this local computer**.
 
-    >**Note** 
-    > If you are installing the Management server and Management database side by side, some options on this page are not available. In this case, the appropriate options are selected by default and cannot be changed.
+    >[!NOTE]
+    >If you're installing the Management server and Management database side-by-side, the appropriate options are selected by default and cannot be changed.
 11. On the **Configure** (Management Server Configuration) page, specify the following:
 
     |  Item to configure | Description and examples |
     | - | - |
-    | Type the AD group with sufficient permissions to manage the App-V environment. | Example: MyDomain\MyUser<br><br/>After installation, you can add users or groups on the management console. However, global security groups and Active Directory Domain Services (AD DS) distribution groups are not supported. You must use <strong>Domain local</strong> or <strong>Universal</strong> groups to perform this action.|    
-    | **Website name**: Specify the custom name that will be used to run the publishing service.<br/> | If you do not have a custom name, do not make any changes.|
-    |**Port binding**: Specify a unique port number that will be used by App-V. | Example: **12345**<br/>Ensure that the port specified is not being used by another website. |
+    | Specify AD group | Specify the AD group with sufficient permissions to manage the App-V environment. Example: MyDomain\MyUser<br><br/>After installation, you can add users or groups on the management console. However, global security groups and Active Directory Domain Services (AD DS) distribution groups are not supported. You must use <strong>Domain local</strong> or <strong>Universal</strong> groups to perform this action.|
+    |Website name | Specify the custom name that will be used to run the publishing service.<br>If you do not have a custom name, you don't have to change it.|
+    |Port binding | Specify a unique port number that will be used by App-V. Example: **12345**<br>Ensure that the port specified is not being used by another website. |
 12. On the **Configure Publishing Server Configuration** page, specify the following:
 
     | Item to configure | Description and examples |
     | - | - |
-    | Specify the URL for the management service. | Example: http://localhost:12345 |
-    | **Website name**: Specify the custom name that will be used to run the publishing service.| If you do not have a custom name, do not make any changes. |
-    | **Port binding**: Specify a unique port number that will be used by App-V. | Example: 54321<br/>Ensure that the port specified is not being used by another website. |
+    | Specify the management service URL | Example: http://localhost:12345 |
+    | Website name | Specify the custom website name that will be used to run the publishing service. <br>If you do not have a custom name, do not make any changes. |
+    | Port binding | Specify a unique port number that will be used by App-V. Example: 54321<br>Ensure that the port specified is not being used by another website. |
 13. On the **Reporting Server** page, specify the following:
 
     | Item to configure | Description and examples |
     | - | - |
-    | **Website name**: Specify the custom name that will be used to run the Reporting Service. | If you do not have a custom name, do not make any changes. |
-    | **Port binding**: Specify a unique port number that will be used by App-V. | Example: 55555<br/>Ensure that the port specified is not being used by another website. |
+    | Website name | Specify the custom name that will be used to run the Reporting Service.  <br>If you do not have a custom name, do not make any changes. |
+    | Port binding | Specify a unique port number that will be used by App-V. Example: 55555<br/>Ensure that the port specified is not being used by another website.|
 14. To start the installation, click **Install** on the **Ready** page, and then click **Close** on the **Finished** page.
-15. To verify that the setup completed successfully, open a web browser, and type the following URL:
+15. To verify that the setup completed successfully, open a web browser, and type the following URL with the bracketed variables adjusted according to your specifications in the earlier steps:
 
-    **http://\<_Management server machine name_\>:\<_Management service port number_\>/console.html**.
+    ```http://<Management server machine name>:<Management service port number>/console.html```
 
-    Example: **http://localhost:12345/console.html**. If the installation succeeded, the App-V Management console is displayed with no errors.
+    Example: ```http://localhost:12345/console.html```. If the installation succeeded, the App-V Management console will display with no errors.
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
-- [Deploying App-V](appv-deploying-appv.md)
-
-- [How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services](appv-install-the-management-and-reporting-databases-on-separate-computers.md)
-
-- [How to Install the Publishing Server on a Remote Computer](appv-install-the-publishing-server-on-a-remote-computer.md)
-
-- [How to Deploy the App-V Server Using a Script](appv-deploy-the-appv-server-with-a-script.md)
+* [Deploying App-V](appv-deploying-appv.md)
+* [How to install the management and reporting databases on separate computers from the management and reporting services](appv-install-the-management-and-reporting-databases-on-separate-computers.md)
+* [How to install the publishing server on a remote computer](appv-install-the-publishing-server-on-a-remote-computer.md)
+* [How to deploy the App-V server using a script](appv-deploy-the-appv-server-with-a-script.md)
