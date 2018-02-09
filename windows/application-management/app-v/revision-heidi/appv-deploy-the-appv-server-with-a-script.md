@@ -22,6 +22,8 @@ The information in the following lists and tables can also be accessed through t
 
 ## How to use common parameters to install the Management server and Management database on a local machine
 
+The following examples will show you how to install the Management server and database on a local machine.
+
 ### Parameters for a default instance of Microsoft SQL Server for a new installation on a local machine
 
 To use the default instance of Microsoft SQL Server, use the following parameters:
@@ -60,6 +62,8 @@ To use a custom instance of Microsoft SQL Server, use the following parameters:
 ```
 
 ## How to use common parameters to install the Management server using an existing Management database on a local machine
+
+The following examples will show you how to install the Management server on a local machine with an existing Management database.
 
 ### Default instance of Microsoft SQL Server for installation with an existing Management database on a local machine
 
@@ -114,7 +118,7 @@ To use the default instance of Microsoft SQL Server, use the following parameter
 
 ### Custom instance of Microsoft SQL Server with an existing Management database on a remote machine
 
-To use a custom instance of Microsoft SQL Server, use these parameters: 
+To use a custom instance of Microsoft SQL Server, use these parameters:
 
 * /MANAGEMENT_SERVER
 * /MANAGEMENT_ADMINACCOUNT
@@ -137,11 +141,13 @@ To use a custom instance of Microsoft SQL Server, use these parameters:
 /EXISTING_MANAGEMENT_DB_NAME ="AppVManagement"
 ```
 
-## To install the Management database and the Management Server on the same computer
+## Installing the Management database and the Management Server on the same computer
 
-### Default instance of Microsoft SQL Server when the Management database and the Management Server are on the same computer
+The following examples will show you how to install the Management server and database on the same computer.
 
-To use the default instance of Microsoft SQL Server, use the following parameters:
+### Default instance of Microsoft SQL Server for installation on the same computer
+
+To use the default instance of Microsoft SQL Server, use these parameters:
 
 * /DB_PREDEPLOY_MANAGEMENT
 * /MANAGEMENT_DB_SQLINSTANCE_USE_DEFAULT
@@ -149,7 +155,7 @@ To use the default instance of Microsoft SQL Server, use the following parameter
 * /MANAGEMENT_SERVER_MACHINE_USE_LOCAL
 * /MANAGEMENT_SERVER_INSTALL_ADMIN_ACCOUNT
 
-### Custom instance of Microsoft SQL Server when the Management database and the Management Server are on the same computer
+### Custom instance of Microsoft SQL Server for installation on the same computer
 
 To use a custom instance of Microsoft SQL Server, use these parameters:
 
@@ -159,7 +165,7 @@ To use a custom instance of Microsoft SQL Server, use these parameters:
 * /MANAGEMENT_SERVER_MACHINE_USE_LOCAL
 * /MANAGEMENT_SERVER_INSTALL_ADMIN_ACCOUNT
 
-### Example for using a custom instance of Microsoft SQL Server when the Management database and the Management Server are on the same computer
+### Example for using a custom instance of Microsoft SQL Server for installation on the same computer
 
 ```SQL
 /appv_server_setup.exe /QUIET
@@ -171,6 +177,8 @@ To use a custom instance of Microsoft SQL Server, use these parameters:
 ```
 
 ## Installing the Management database on a different computer than the Management server
+
+The following examples will show you how to install the Management database and server on different computers.
 
 ### Default instance of Microsoft SQL Server for installing the Management database on a different computer than the Management server
 
@@ -205,6 +213,8 @@ To use a custom instance of Microsoft SQL Server, use these parameters:
 
 ## Installing the Publishing server
 
+The following examples will show you how to install the Publishing server.
+
 ### Default instance of Microsoft SQL Server for installing the Publishing server
 
 To use the default instance of Microsoft SQL Server, use the following parameters:
@@ -216,13 +226,17 @@ To use the default instance of Microsoft SQL Server, use the following parameter
 
 ### Example for installing the Publishing server
 
-/appv_server_setup.exe /QUIET<br>
-/PUBLISHING_SERVER<br>
-/PUBLISHING_MGT_SERVER="http://ManagementServerName:ManagementPort"<br>
-/PUBLISHING_WEBSITE_NAME="Microsoft AppV Publishing Service"<br>
+```SQL
+/appv_server_setup.exe /QUIET
+/PUBLISHING_SERVER
+/PUBLISHING_MGT_SERVER="http://ManagementServerName:ManagementPort"
+/PUBLISHING_WEBSITE_NAME="Microsoft AppV Publishing Service"
 /PUBLISHING_WEBSITE_PORT="8081"
+```
 
 ## Installing the Reporting server and Reporting database on a local machine
+
+The following examples will show you how to install the Reporting server and database on a local machine.
 
 ### Default instance of Microsoft SQL Server for installing the Reporting server and Reporting database on a local machine
 
@@ -261,6 +275,8 @@ To use a custom instance of Microsoft SQL Server, use these parameters:
 
 ## Installing the Reporting server using an existing Reporting database on a local machine
 
+The following examples will show you how to install the reporting machine on a local machine with an existing Reporting database.
+
 ### Default instance of Microsoft SQL Server for installing the Reporting server using an existing Reporting database on a local machine
 
 To use the default instance of Microsoft SQL Server, use the following parameters:
@@ -297,6 +313,8 @@ To use a custom instance of Microsoft SQL Server, use these parameters:
 ```
 
 ## Installing the Reporting server using an existing Reporting database on a remote machine
+
+The following examples will show you how to install the Reporting server and on a remote machine with an existing database.
 
 ### Default instance of Microsoft SQL Server for installing the Reporting server using an existing Reporting database on a remote machine
 
@@ -335,6 +353,8 @@ To use a custom instance of Microsoft SQL Server, use these parameters:
 
 ## Installing the Reporting database on the same computer as the Reporting server
 
+The following examples will show you how to install the Reporting database and server on the same computer.
+
 ### Default instance of Microsoft SQL Server for installing the Reporting database on the same computer as the Reporting server
 
 To use the default instance of Microsoft SQL Server, use the following parameters:
@@ -367,6 +387,8 @@ To use a custom instance of Microsoft SQL Server, use these parameters:
 ```
 
 ## Installing the Reporting database on a different computer than the Reporting server
+
+The following examples will show you how to install the Reporting database and server on different computers.
 
 ### Default instance of Microsoft SQL Server for installing the Reporting database on a different computer than the Reporting server
 
@@ -417,20 +439,20 @@ Using a custom instance of Microsoft SQL Server example:<br>
 |-----------|-------------|
 | /QUIET | Specifies silent install. |
 | /UNINSTALL | Specifies an uninstall. |
-| /LAYOUT | Specifies layout action. This extracts the MSIs and script files to a folder without actually installing the product. No value is expected. |
-| /LAYOUTDIR | Specifies the layout directory. Takes a string. For example, /LAYOUTDIR="C:\Application Virtualization Server" |
-| /INSTALLDIR | Specifies the installation directory. Takes a string. E.g. /INSTALLDIR="C:\Program Files\Application Virtualization\Server" |
+| /LAYOUT | Specifies layout action. This extracts the MSIs and script files to a folder without installing the actual product. No value is expected. |
+| /LAYOUTDIR | Specifies the layout directory with a string. For example, ```/LAYOUTDIR="C:\Application Virtualization Server"``` |
+| /INSTALLDIR | Specifies the installation directory with a string. For example, ```/INSTALLDIR="C:\Program Files\Application Virtualization\Server"``` |
 | /MUOPTIN | Enables Microsoft Update. No value is expected |
-| /ACCEPTEULA | Accepts the license agreement. This is required for an unattended installation. Example usage: **/ACCEPTEULA** or **/ACCEPTEULA=1**. |
+| /ACCEPTEULA | Accepts the license agreement. This is required for an unattended installation. For example, ```/ACCEPTEULA``` or ```/ACCEPTEULA=1```. |
 
 ### Parameter definitions for Management Server installation parameters
 
 | Parameter | Description |
 |-----------|-------------|
 | /MANAGEMENT_SERVER | Specifies that the management server will be installed. No value is expected |
-| /MANAGEMENT_ADMINACCOUNT | Specifies the account that will be allowed to Administrator access to the management server This account can be an individual user account or a group. Example usage: **/MANAGEMENT_ADMINACCOUNT="mydomain\admin"**. If **/MANAGEMENT_SERVER** is not specified, this will be ignored. Specifies the account that will be allowed to Administrator access to the management server. This can be a user account or a group. For example, **/MANAGEMENT_ADMINACCOUNT="mydomain\admin"**. |
-| /MANAGEMENT_WEBSITE_NAME | Specifies name of the website that will be created for the management service. For example, /MANAGEMENT_WEBSITE_NAME="Microsoft App-V Management Service" |
-| /MANAGEMENT_WEBSITE_PORT | Specifies the port number that will be used by the management service will use. For example, /MANAGEMENT_WEBSITE_PORT=82. |
+| /MANAGEMENT_ADMINACCOUNT | Specifies the account that will be allowed administrator access to the management server. This account can be an individual user account or a group. For example, ```/MANAGEMENT_ADMINACCOUNT="mydomain\admin"```. If **/MANAGEMENT_SERVER** isn't specified, this parameter will be ignored.|
+| /MANAGEMENT_WEBSITE_NAME | Specifies name of the website that will be created for the management service. For example, ```/MANAGEMENT_WEBSITE_NAME="Microsoft App-V Management Service"``` |
+| /MANAGEMENT_WEBSITE_PORT | Specifies the port number that will be used by the management service will use. For example, ```/MANAGEMENT_WEBSITE_PORT=82```. |
 
 ### Parameter definitions for the Management Server Database
 
@@ -438,65 +460,65 @@ Using a custom instance of Microsoft SQL Server example:<br>
 |-----------|-------------|
 | /DB\_PREDEPLOY\_MANAGEMENT | Specifies that the management database will be installed. You must have sufficient database permissions to complete this installation. No value is expected |
 | /MANAGEMENT_DB_SQLINSTANCE_USE_DEFAULT | Indicates that the default SQL instance should be used. No value is expected. |
-| /MANAGEMENT_DB_CUSTOM_SQLINSTANCE | Specifies the name of the custom SQL instance that should be used to create a new database. Example usage: **/MANAGEMENT_DB_CUSTOM_SQLINSTANCE="MYSQLSERVER"**. If /DB_PREDEPLOY_MANAGEMENT is not specified, this will be ignored. |
-| /MANAGEMENT_DB_NAME | Specifies the name of the new management database that should be created. Example usage: **/MANAGEMENT_DB_NAME="AppVMgmtDB"**. If /DB_PREDEPLOY_MANAGEMENT is not specified, this will be ignored. |
-| /MANAGEMENT_SERVER_MACHINE_USE_LOCAL | Indicates if the management server that will be accessing the database is installed on the local server. Switch parameter so no value is expected. |
-| /MANAGEMENT_REMOTE_SERVER_MACHINE_ACCOUNT | Specifies the machine account of the remote machine that the management server will be installed on. Example usage: **/MANAGEMENT_REMOTE_SERVER_MACHINE_ACCOUNT="domain\computername"** |
-| /MANAGEMENT_SERVER_INSTALL_ADMIN_ACCOUNT | Indicates the Administrator account that will be used to install the management server. Example usage: **/MANAGEMENT_SERVER_INSTALL_ADMIN_ACCOUNT ="domain\alias"** |
+| /MANAGEMENT_DB_CUSTOM_SQLINSTANCE | Specifies the name of the custom SQL instance that should be used to create a new database. For example, ```/MANAGEMENT_DB_CUSTOM_SQLINSTANCE="MYSQLSERVER"```. If **/DB_PREDEPLOY_MANAGEMENT** isn't specified, this parameter will be ignored. |
+| /MANAGEMENT_DB_NAME | Specifies the name of the new management database that should be created. For example, ```/MANAGEMENT_DB_NAME="AppVMgmtDB"```. If **/DB_PREDEPLOY_MANAGEMENT** isn't specified, this will be ignored. |
+| /MANAGEMENT_SERVER_MACHINE_USE_LOCAL | Indicates if the management server that will be accessing the database is installed on the local server. This is a switch parameter, so no value is expected. |
+| /MANAGEMENT_REMOTE_SERVER_MACHINE_ACCOUNT | Specifies the machine account of the remote machine that the management server will be installed on. For example, ```/MANAGEMENT_REMOTE_SERVER_MACHINE_ACCOUNT="domain\computername"```. |
+| /MANAGEMENT_SERVER_INSTALL_ADMIN_ACCOUNT | Indicates the Administrator account that will be used to install the management server. For example, ```/MANAGEMENT_SERVER_INSTALL_ADMIN_ACCOUNT ="domain\alias"```. |
 
 ### Parameter definitions for Publishing Server installation parameters
 
 | Parameter | Description |
 |-----------|-------------|
-| /PUBLISHING_SERVER | Specifies that the Publishing Server will be installed. No value is expected |
-| /PUBLISHING_MGT_SERVER | Specifies the URL to Management Service the Publishing server will connect to. Example usage: **http://&lt;management server name&gt;:&lt;Management server port number&gt;**. If /PUBLISHING_SERVER is not used, this parameter will be ignored |
-| /PUBLISHING_WEBSITE_NAME | Specifies name of the website that will be created for the publishing service. For example, /PUBLISHING_WEBSITE_NAME="Microsoft App-V Publishing Service" |
-| /PUBLISHING_WEBSITE_PORT | Specifies the port number used by the publishing service. For example, /PUBLISHING_WEBSITE_PORT=83 |
+| /PUBLISHING_SERVER | Specifies that the publishing server will be installed. No value is expected. |
+| /PUBLISHING_MGT_SERVER | Specifies the URL to Management Service the Publishing server will connect to. For example, ```http://<management server name>;<Management server port number>```. If **/PUBLISHING_SERVER** isn't used, this parameter will be ignored. |
+| /PUBLISHING_WEBSITE_NAME | Specifies name of the website that will be created for the publishing service. For example, ```/PUBLISHING_WEBSITE_NAME="Microsoft App-V Publishing Service"```. |
+| /PUBLISHING_WEBSITE_PORT | Specifies the port number used by the publishing service. For example, ```/PUBLISHING_WEBSITE_PORT=83```. |
 
 ### Parameter definitions for Reporting Server
 
 | Parameter | Description |
 |-----------|-------------|
-| /REPORTING_SERVER | Specifies that the Reporting Server will be installed. No value is expected |
-| /REPORTING_WEBSITE_NAME | Specifies name of the website that will be created for the Reporting Service. E.g. /REPORTING_WEBSITE_NAME="Microsoft App-V ReportingService" |
-| /REPORTING_WEBSITE_PORT | Specifies the port number that the Reporting Service will use. E.g. /REPORTING_WEBSITE_PORT=82 |
-</tbody>
-</table>  
+| /REPORTING_SERVER | Specifies that the Reporting Server will be installed. No value is expected. |
+| /REPORTING_WEBSITE_NAME | Specifies name of the website that will be created for the Reporting Service. For example, ```/REPORTING_WEBSITE_NAME="Microsoft App-V ReportingService"```. |
+| /REPORTING_WEBSITE_PORT | Specifies the port number that the Reporting Service will use. For example, ```/REPORTING_WEBSITE_PORT=82```. |
 
 ### Parameters for using an existing Reporting Server database
 
 | Parameter | Description |
 |-----------|-------------|
-| /EXISTING\_REPORTING\_DB_SQL_SERVER_USE_LOCAL | Indicates that the Microsoft SQL Server is installed on the local server. Switch parameter so no value is expected. |
-| /EXISTING_REPORTING_DB_REMOTE_SQL_SERVER_NAME | Specifies the name of the remote computer that SQL Server is installed on. Takes a string. E.g. /EXISTING_REPORTING_DB_REMOTE_SQL_SERVER_NAME="mycomputer1" |
-| /EXISTING_REPORTING_DB_SQLINSTANCE_USE_DEFAULT | Indicates that the default SQL instance is to be used. Switch parameter so no value is expected. |
-| /EXISTING_REPORTING_DB_CUSTOM_SQLINSTANCE | Specifies the name of the custom SQL instance that should be used. Takes a string. E.g. /EXISTING_REPORTING_DB_CUSTOM_SQLINSTANCE="MYSQLSERVER" |
-| /EXISTING_REPORTING_DB_NAME | Specifies the name of the existing Reporting database that should be used. Takes a string. E.g. /EXISTING_REPORTING_DB_NAME="AppVReporting" |
+| /EXISTING\_REPORTING\_DB_SQL_SERVER_USE_LOCAL | Indicates that the Microsoft SQL Server is installed on the local server. This is a switch parameter, so no value is expected. |
+| /EXISTING_REPORTING_DB_REMOTE_SQL_SERVER_NAME | Specifies the name of the remote computer that SQL Server is installed on. Takes a string. For example,  ```/EXISTING_REPORTING_DB_REMOTE_SQL_SERVER_NAME="mycomputer1"```. |
+| /EXISTING_REPORTING_DB_SQLINSTANCE_USE_DEFAULT | Indicates that the default SQL instance is to be used. This is a switch parameter, so no value is expected. |
+| /EXISTING_REPORTING_DB_CUSTOM_SQLINSTANCE | Specifies the name of the custom SQL instance that should be used. Takes a string. For example, ```/EXISTING_REPORTING_DB_CUSTOM_SQLINSTANCE="MYSQLSERVER"```. |
+| /EXISTING_REPORTING_DB_NAME | Specifies the name of the existing Reporting database that should be used. Takes a string. For example, ```/EXISTING_REPORTING_DB_NAME="AppVReporting"```. |
 
 ### Parameter definitions for Reporting Server database installation
 
 | Parameter | Description |
 |-----------|-------------|
 | /DB\_PREDEPLOY\_REPORTING | Specifies that the Reporting Database will be installed. DBA permissions are required for this installation. No value is expected |
-| /REPORTING_DB_SQLINSTANCE_USE_DEFAULT | Specifies the name of the custom SQL instance that should be used. Takes a string. E.g. /REPORTING_DB_CUSTOM_SQLINSTANCE="MYSQLSERVER" |
-| /REPORTING_DB_NAME | Specifies the name of the new Reporting database that should be created. Takes a string. E.g. /REPORTING_DB_NAME="AppVMgmtDB" |
-| /REPORTING_SERVER_MACHINE_USE_LOCAL | Indicates that the Reporting server that will be accessing the database is installed on the local server. Switch parameter so no value is expected. |
-| /REPORTING_REMOTE_SERVER_MACHINE_ACCOUNT | Specifies the machine account of the remote machine that the Reporting server will be installed on. Takes a string. E.g. /REPORTING_REMOTE_SERVER_MACHINE_ACCOUNT = "domain\computername" |
-| /REPORTING_SERVER_INSTALL_ADMIN_ACCOUNT | Indicates the Administrator account that will be used to install the App-V Reporting Server. Takes a string. E.g. /REPORTING_SERVER_INSTALL_ADMIN_ACCOUNT = "domain\alias" |
+| /REPORTING_DB_SQLINSTANCE_USE_DEFAULT | Specifies the name of the custom SQL instance that should be used. Takes a string. For example, ```/REPORTING_DB_CUSTOM_SQLINSTANCE="MYSQLSERVER"```. |
+| /REPORTING_DB_NAME | Specifies the name of the new Reporting database that should be created. Takes a string. For example, ```/REPORTING_DB_NAME="AppVMgmtDB"```. |
+| /REPORTING_SERVER_MACHINE_USE_LOCAL | Indicates that the Reporting server that will be accessing the database is installed on the local server. This is a switch parameter, so no value is expected. |
+| /REPORTING_REMOTE_SERVER_MACHINE_ACCOUNT | Specifies the machine account of the remote machine that the Reporting server will be installed on. Takes a string. For example, ```/REPORTING_REMOTE_SERVER_MACHINE_ACCOUNT = "domain\computername"```. |
+| /REPORTING_SERVER_INSTALL_ADMIN_ACCOUNT | Indicates the Administrator account that will be used to install the App-V Reporting Server. Takes a string. For example, ```/REPORTING_SERVER_INSTALL_ADMIN_ACCOUNT = "domain\alias"```. |
 
 ### Parameters for using an existing Management Server database
 
 | Parameter | Description |
 |-----------|-------------|
-| /EXISTING\_MANAGEMENT\_DB_SQL_SERVER_USE_LOCAL | Indicates that the SQL Server is installed on the local server. Switch parameter so no value is expected.If /DB_PREDEPLOY_MANAGEMENT is specified, this will be ignored. |
-| /EXISTING_MANAGEMENT_DB_REMOTE_SQL_SERVER_NAME | Specifies the name of the remote computer that SQL Server is installed on. Takes a string. E.g. /EXISTING_MANAGEMENT_DB_REMOTE_SQL_SERVER_NAME="mycomputer1" |
-| /EXISTING_MANAGEMENT_DB_SQLINSTANCE_USE_DEFAULT | Indicates that the default SQL instance is to be used. Switch parameter so no value is expected. If /DB_PREDEPLOY_MANAGEMENT is specified, this will be ignored. |
-| /EXISTING_MANAGEMENT_DB_CUSTOM_SQLINSTANCE | Specifies the name of the custom SQL instance that will be used. Example usage **/EXISTING_MANAGEMENT_DB_CUSTOM_SQLINSTANCE="AppVManagement"**. If /DB_PREDEPLOY_MANAGEMENT is specified, this will be ignored. |
-| /EXISTING_MANAGEMENT_DB_NAME | Specifies the name of the existing management database that should be used. Example usage: **/EXISTING_MANAGEMENT_DB_NAME="AppVMgmtDB"**. If /DB_PREDEPLOY_MANAGEMENT is specified, this will be ignored. |
+| /EXISTING\_MANAGEMENT\_DB_SQL_SERVER_USE_LOCAL | Indicates that the SQL Server is installed on the local server. Switch parameter so no value is expected. If **/DB_PREDEPLOY_MANAGEMENT** isn't specified, this variable will be ignored. |
+| /EXISTING_MANAGEMENT_DB_REMOTE_SQL_SERVER_NAME | Specifies the name of the remote computer that SQL Server is installed on. Takes a string. For example, ```/EXISTING_MANAGEMENT_DB_REMOTE_SQL_SERVER_NAME="mycomputer1"```. |
+| /EXISTING_MANAGEMENT_DB_SQLINSTANCE_USE_DEFAULT | Indicates that the default SQL instance is to be used. Switch parameter so no value is expected. If **/DB_PREDEPLOY_MANAGEMENT** isn't specified, this variable will be ignored. |
+| /EXISTING_MANAGEMENT_DB_CUSTOM_SQLINSTANCE | Specifies the name of the custom SQL instance that will be used. For example, ```/EXISTING_MANAGEMENT_DB_CUSTOM_SQLINSTANCE="AppVManagement"```. If **/DB_PREDEPLOY_MANAGEMENT** isn't specified, this will be ignored. |
+| /EXISTING_MANAGEMENT_DB_NAME | Specifies the name of the existing management database that should be used. For example, ```/EXISTING_MANAGEMENT_DB_NAME="AppVMgmtDB"```. If **/DB_PREDEPLOY_MANAGEMENT** isn't specified, this will be ignored. |
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
+For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
