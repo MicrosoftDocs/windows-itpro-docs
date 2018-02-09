@@ -51,7 +51,7 @@ The following policy settings can be configured for UE-V.
 <td align="left"><p>The default is enabled.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Roam Windows settings</p></td>
+<td align="left"><p>Synchronize Windows settings</p></td>
 <td align="left"><p>Computers and Users</p></td>
 <td align="left"><p>This Group Policy setting configures the synchronization of Windows settings.</p></td>
 <td align="left"><p>Select which Windows settings synchronize between computers.</p>
