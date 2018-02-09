@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
-ms.date: 1/29/2018
+ms.date: 2/9/2018
 ms.localizationpriority: high
 ---
 
@@ -20,7 +20,7 @@ Windows AutoPilot Deployment Program simplifies device set up for IT Admins. For
 
 Watch this video to learn more about Windows AutoPilot in Micrsoft Store for Business. </br>
 
-[!video https://www.microsoft.com/en-us/videoplayer/embed/3b30f2c2-a3e2-4778-aa92-f65dbc3ecf54?autoplay=false]
+> [!video https://www.microsoft.com/en-us/videoplayer/embed/3b30f2c2-a3e2-4778-aa92-f65dbc3ecf54?autoplay=false]
 
 ## What is Windows AutoPilot Deployment Program?
 In Microsoft Store for Business, you can manage devices for your organization and apply an *AutoPilot deployment profile* to your devices. When people in your organization run the out-of-box experience on the device, the profile configures Windows based on the AutoPilot deployment profile you applied to the device. 
