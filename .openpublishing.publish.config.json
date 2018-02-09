@@ -2,9 +2,9 @@
   "build_entry_point": "",
   "docsets_to_publish": [
     {
-      "docset_name": "bcs-vsts",
+      "docset_name": "bcs-VSTS",
       "build_source_folder": "bcs",
-      "build_output_subfolder": "bcs-vsts",
+      "build_output_subfolder": "bcs-VSTS",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
