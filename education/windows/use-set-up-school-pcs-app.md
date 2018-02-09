@@ -42,7 +42,7 @@ Set up School PCs makes it easy to set up Windows 10 PCs with Microsoft's recomm
 
 You can watch the video to see how to use the Set up School PCs app, or follow the step-by-step guide. </br>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2ZLup_-PhkA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/2ZLup_-PhkA]
 
 You can watch the descriptive audio version here: [Microsoft Education: Use the Set up School PCs app (DA)](https://www.youtube.com/watch?v=qqe_T2LkGsI)
 
@@ -89,9 +89,19 @@ You can watch the descriptive audio version here: [Microsoft Education: Use the 
     5. Click **Just remove my files**.
     6. Click **Reset**.
 
+* **Use an NTFS-formatted USB key**
+
+    If you're planning to install several apps, the Set up School PCs package may exceed 4 GB. Check if your USB drive format is FAT32. If it is, you won't be able to save more than 4 GB of data on the drive. To work around this, reformat the USB drive to use the NTFS format. To do this:
+
+    1. Insert the USB key into your computer.
+    2. Go to the Start menu and type **This PC** and then select the **This PC (Desktop app)** from the search results. 
+    3. In the **Devices and drivers** section, find the USB drive, select and then right-click to bring up options.
+    4. Select **Format** from the list to bring up the **Format <DRIVE NAME>** window.
+    5. Set **File system** to **NTFS** and then click **Start** to format the drive.
+
 * **Use more than one USB key**
 
-    If you are setting up multiple PCs, you can set them up at the same time.  Just save the provisioning package to another USB drive. Create two keys and you can run it on two PCs at once, and so on.
+    If you are setting up multiple PCs, you can set them up at the same time. Just save the provisioning package to another USB drive. Create two keys and you can run it on two PCs at once, and so on.
 
 * **Keep it clean**
 
@@ -112,7 +122,8 @@ You can watch the descriptive audio version here: [Microsoft Education: Use the 
 - You must have the Microsoft Store for Education configured.
 - You must be a global admin in the Microsoft Store for Education.
 - It's best if you sign up for and [configure Intune for Education](../get-started/use-intune-for-education.md) before using the Set up School PCs app.
-- Have a USB drive, 1 GB or larger, to save the provisioning package. We recommend an 8 GB or larger USB drive if you're installing Office.
+- Have a USB drive, 1 GB or larger, to save the provisioning package. We recommend an 8 GB or larger USB drive if you're installing Office. 
+- Check the default file system format for your USB drive. You may need to set this to NTFS to save a provisioning package that's 4 GB or larger. 
 
 ## Set up School PCs step-by-step
 

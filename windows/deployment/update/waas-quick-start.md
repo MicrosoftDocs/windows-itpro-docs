@@ -4,10 +4,10 @@ description: In Windows 10, Microsoft has streamlined servicing to make operatin
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: DaniHalfin
+author: Jaimeo
 ms.localizationpriority: high
-ms.author: daniha
-ms.date: 07/27/2017
+ms.author: jaimeo
+ms.date: 02/09/2018
 ---
 
 # Quick guide to Windows as a service
@@ -29,7 +29,7 @@ Some new terms have been introduced as part of Windows as a service, so you shou
 - **Insider Preview** builds are made available during the development of the features that will be shipped in the next feature update, enabling organizations to validate new features as well as compatibility with existing apps and infrastructure, providing feedback to Microsoft on any issues encountered.
 - **Servicing channels** allow organizations to choose when to deploy new features. 
     - The **Semi-Annual Channel** receives feature updates twice per year. 
-    - The **Long Term Servicing Channel**, which is designed to be used only for specialized devices (which typically don't run Office) such as those that control medical equipment or ATM machines, receives new feature releases about every three years.
+    - The **Long Term Servicing Channel**, which is designed to be used only for specialized devices (which typically don't run Office) such as those that control medical equipment or ATM machines, receives new feature releases every two to three years.
 - **Deployment rings** are groups of devices used to initially pilot, and then to broadly deploy, each feature update in an organization.  
 
 See [Overview of Windows as a service](waas-overview.md) for more information.
@@ -58,7 +58,10 @@ See [Build deployment rings for Windows 10 updates](waas-deployment-rings-window
 
 ## Video: An overview of Windows as a service
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qSAsiM01GOU" frameborder="0" allowfullscreen></iframe> 
+Click the following Microsoft Mechanics video for an overview of the updated release model, particularly the Semi-Annual Channel.
+
+
+[![YouTube video of Michael Niehouse explaining how the Semi-Annual Channel works](images/SAC_vid_crop.jpg)](https://youtu.be/qSAsiM01GOU) 
  
 ## Learn more
 
