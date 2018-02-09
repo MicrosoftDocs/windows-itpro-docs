@@ -70,13 +70,13 @@ RuleOption -Help** in a Windows PowerShell session. Table 2 describes each rule 
 | **2 Required:WHQL** | By default, legacy drivers that are not Windows Hardware Quality Labs (WHQL) signed are allowed to execute. Enabling this rule requires that every executed driver is WHQL signed and removes legacy driver support. Going forward, every new Windows 10–compatible driver must be WHQL certified. |
 | **3 Enabled:Audit Mode (Default)** | Enables the execution of binaries outside of the WDAC policy but logs each occurrence in the CodeIntegrity event log, which can be used to update the existing policy before enforcement. To begin enforcing a WDAC policy, delete this option. |
 | **4 Disabled:Flight Signing** | If enabled, WDAC policies will not trust flightroot-signed binaries. This would be used in the scenario in which organizations only want to run released binaries, not flighted builds. |
-| **5 Enabled:Inherent Default Policy** | This option is not currently supported. |
+| **5 Enabled:Inherit Default Policy** | This option is not currently supported. |
 | **6 Enabled:Unsigned System Integrity Policy (Default)** | Allows the policy to remain unsigned. When this option is removed, the policy must be signed and have UpdatePolicySigners added to the policy to enable future policy modifications. |
 | **7 Allowed:Debug Policy Augmented** | This option is not currently supported. |
 | **8 Required:EV Signers** | In addition to being WHQL signed, this rule requires that drivers must have been submitted by a partner that has an Extended Verification (EV) certificate. All future Windows 10 and later drivers will meet this requirement. |
 | **9 Enabled:Advanced Boot Options Menu** | The F8 preboot menu is disabled by default for all WDAC policies. Setting this rule option allows the F8 menu to appear to physically present users. |
 | **10 Enabled:Boot Audit on Failure** | Used when the WDAC policy is in enforcement mode. When a driver fails during startup, the WDAC policy will be placed in audit mode so that Windows will load. Administrators can validate the reason for the failure in the CodeIntegrity event log. |
-| **11 Disabled:Script Enforcement** | WDAC policies also restrict scripts and MSIs, and PowerShell runs in constrained language mode. Enabling this rule option will allow unsigned scripts to run and will leave PowerShell in full language mode. |
+| **11 Disabled:Script Enforcement** | This option is not currently supported. |
 | **12 Required:Enforce Store Applications** | If this rule option is enabled, WDAC policies will also apply to Universal Windows applications. |
 | **13 Enabled:Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as System Center Configuration Manager, that has been defined as a managed installer. |
 | **14 Enabled:Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). |
