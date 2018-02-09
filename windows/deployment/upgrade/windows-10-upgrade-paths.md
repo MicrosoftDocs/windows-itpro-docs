@@ -343,8 +343,8 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
     </tr>
 </table>
 
-> [!NOTE]
-> Due to [naming changes](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#naming-changes) the term LTSB might still be displayed in some products. This name will change to LTSC with subsequent feature updates.  You cannot upgrade from another version of Window to Windows 10 LTSC.
+> [!IMPORTANT]
+> Due to [naming changes](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#naming-changes) the term LTSB might still be displayed in some products. This name will change to LTSC with subsequent feature updates.  You cannot upgrade from another version of Window to Windows 10 LTSC. To upgrade Windows 10 LTSC to Windows 10 semi-annual channel, you must upgrade to a newer build version.
 
 ## Related Topics
 
