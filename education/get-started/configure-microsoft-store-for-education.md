@@ -23,7 +23,7 @@ You'll need to configure Microsoft Store for Education to accept the services ag
 
 You can watch the video to see how this is done, or follow the step-by-step guide. </br>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Jnbssq0gC_g" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/Jnbssq0gC_g]
 
 You can watch the descriptive audio version here: [Microsoft Education: Configure Microsoft Store for Education (DA)](https://www.youtube.com/watch?v=bStgEpHbEXw)
 
@@ -52,11 +52,6 @@ You can watch the descriptive audio version here: [Microsoft Education: Configur
   ![Activate Intune for Education as the management tool](images/msfe_managementtools_activateintune.png) 
 
 Your Microsoft Store for Education account is now linked to Intune for Education so let's set that up next.
-
-<!--
-> [!div class="nextstepaction"]
-> [Use Intune for Education to manage groups, apps, and settings](use-intune-for-education.md)
--->
 
 > [!div class="step-by-step"]
 [<< Use School Data Sync to import student data](use-school-data-sync.md)

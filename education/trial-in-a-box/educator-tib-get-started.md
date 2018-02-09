@@ -31,10 +31,10 @@ ms.date: 01/12/2017
 
 </br>
 
-<!-- hiding placeholder
-<center><iframe width="560" height="315" src="https://aka.ms/EDU-Get-Started" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+> [!VIDEO https://www.youtube.com/embed/3nqooY9Iqq4]
+
 </br>
--->
+
 
 ![Log in to Device A and connect to the school network](images/edu-TIB-setp-1-jump.png) 
 ## <a name="edu-task1"></a>1. Log in and connect to the school network
@@ -49,10 +49,10 @@ To try out the educator tasks, start by logging in as a teacher.
 ![Improve student reading speed and comprehension](images/edu-TIB-setp-2-jump.png) 
 ## <a name="edu-task2"></a>2. Significantly improve student reading speed and comprehension
 
-<!-- hiding placeholder
-<center><iframe width="560" height="315" src="https://aka.ms/EDU-Learning-Tools" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+> [!VIDEO https://www.youtube.com/embed/GCzSAslq_2Y]
+
 </br>
--->
+
 
 Learning Tools and the Immersive Reader can be used in the Microsoft Edge browser, Microsoft Word, and Microsoft OneNote to:
 * Increase fluency for English language learners
@@ -80,10 +80,10 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 ![Spark communication, critical thinking, and creativity with Microsoft Teams](images/edu-TIB-setp-3-jump.png) 
 ## <a name="edu-task3"></a>3. Spark communication, critical thinking, and creativity in the classroom
 
-<!-- hiding placeholder
-<center><iframe width="560" height="315" src="https://aka.ms/EDU-Teams" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+> [!VIDEO https://www.youtube.com/embed/riQr4Dqb8B8]
+
 </br>
--->
+
 
 Microsoft Teams is a digital hub that brings conversations, content, and apps together in one place. This guided tour walks you through the essential teaching features of the app. Then, through interactive prompts, experience how you can use this tool in your own classroom to spark digital classroom discussions, respond to student questions, organize content, and more!  
 
@@ -99,10 +99,10 @@ Take a guided tour of Microsoft Teams and test drive this digital hub.
 ![Expand classroom collaboration and interaction with OneNote](images/edu-TIB-setp-4-jump.png) 
 ## <a name="edu-task4"></a>4. Expand classroom collaboration and interaction between students
 
-<!-- hiding placeholder
-<center><iframe width="560" height="315" src="https://aka.ms/EDU-OneNote" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+> [!VIDEO https://www.youtube.com/embed/dzDSWMb_fIE]
+
 </br>
--->
+
 
 Microsoft OneNote organizes curriculum and lesson plans for teachers and students to work together and at their own pace. It provides a digital canvas to store text, images, handwritten drawings, attachments, links, voice, and video.
 
@@ -130,10 +130,9 @@ See how a group project comes together with opportunities to interact with other
 ![Further collaborate and problem solve with Minecraft: Education Edition](images/edu-TIB-setp-5-jump.png) 
 ## <a name="edu-task5"></a>5. Get kids to further collaborate and problem solve
 
-<!-- hiding placeholder
-<center><iframe width="560" height="315" src="https://aka.ms/EDU-Minecraft-EE" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+> [!VIDEO https://www.youtube.com/embed/QI_bRNUugog]
+
 </br>
--->
 
 Minecraft: Education Edition provides an immersive environment to develop creativity, collaboration, and problem-solving in an immersive environment where the only limit is your imagination.   
 
