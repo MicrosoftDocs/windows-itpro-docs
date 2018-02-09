@@ -97,7 +97,5 @@ You can add the **Send all intranet traffic over to Internet Explorer** Group Po
 * [Set the default browser using Group Policy]( https://go.microsoft.com/fwlink/p/?LinkId=620714)
  
 
- 
-
 
 
