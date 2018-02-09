@@ -6,9 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: DaniHalfin
-ms.author: daniha
-ms.date: 10/13/2017
+author: Jaimeo
+ms.author: jaimeo
+ms.date: 02/09/2018
 ---
 
 # Monitor Windows Updates and Windows Defender Antivirus with Update Compliance
@@ -35,9 +35,9 @@ See the following topics in this guide for detailed information about configurin
 - [Get started with Update Compliance](update-compliance-get-started.md): How to add Update Compliance to your environment.
 - [Using Update Compliance](update-compliance-using.md): How to begin using Update Compliance.
 
-<iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/1cmF5c_R8I4" frameborder="0" allowfullscreen></iframe>
+Click the following link to see a video demonstrating Update Compliance features.
 
-An overview of the processes used by the Update Compliance solution is provided below.
+[![YouTube video demonstrating Update Compliance](images/UC-vid-crop.jpg)](https://www.youtube.com/embed/1cmF5c_R8I4) 
 
 ## Update Compliance architecture
  
