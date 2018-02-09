@@ -27,7 +27,7 @@ This topic provides a summary of available upgrade paths to Windows 10. You can 
 ✔ = Full upgrade is supported including personal data, settings, and applications.<BR>
 D = Edition downgrade; personal data is maintained, applications and settings are removed.
 
-<table border="1" cellpadding="3">
+<table border="1" cellpadding="2">
     <tr>
         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
         <td></td>
@@ -312,6 +312,16 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
     </tr>
     <tr>
+        <td>Enterprise LTSC</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>✔</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
         <td>Mobile</td>
         <td></td>
         <td></td>
@@ -332,6 +342,9 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
     </tr>
 </table>
+
+> [!NOTE]
+> Due to [naming changes](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#naming-changes) the term LTSB might still be displayed in some products. This name will change to LTSC with subsequent feature updates.  You cannot upgrade from another version of Window to Windows 10 LTSC.
 
 ## Related Topics
 
