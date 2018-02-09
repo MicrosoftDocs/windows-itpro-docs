@@ -8,21 +8,18 @@ ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ---
-
-
 # How to Deploy the App-V Databases by Using SQL Scripts
 
-**Applies to**
--   Windows Server 2016
+>Applies to Windows Server 2016.
 
 Use the following instructions to use SQL scripts, rather than the Windows Installer, to:
 
--   Install the App-V databases
+* Install the App-V databases
 
--   Upgrade the App-V databases to a later version
+* Upgrade the App-V databases to a later version
 
->**Note**  
-> If you have already deployed an App-V 5.0 SP3 database or later, the SQL scripts are not required to upgrade to App-V for Windows.
+>[!NOTE]
+>If you have already deployed an App-V 5.0 SP3 database or later, the SQL scripts are not required to upgrade to App-V for Windows.
 
 ## How to install the App-V databases by using SQL scripts
 
