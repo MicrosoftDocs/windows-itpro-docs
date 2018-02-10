@@ -28,13 +28,11 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
 
 <!-- will the following information read and flow better in a table? OR would a drop down work better for this kind of content?  get the correct syntax and try it out.-->
 
-Group Policy Setting | Supported versions | Description 
+Setting | Supported versions | Description 
 --- | --- | ---
 Allow Address bar drop-down list suggestions | Windows 10, version 1703 | This policy setting lets you decide whether the Address bar drop-down functionality is available in Microsoft Edge. We recommend disabling this setting if you want to minimize network connections from Microsoft Edge to Microsoft services.<br><table><tr><th>If you...</th><th>Then...</th></tr><tr><td>Enable or don't configure this setting (default),</td><td>employees can see the Address bar drop-down functionality in Microsoft Edge.</td></tr><tr><td>Disable this setting,</td><td>employees won't see the Address bar drop-down functionality in Microsoft Edge. This setting also disables the user-defined setting, "Show search and site suggestions as I type."</td></tr></table>Disabling this setting turns off the Address bar drop-down functionality. Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the "Configure search suggestions in Address bar" setting.
 
-<div style="background-color: #c3c3c3;">
 <details><summary>Allow Address bar drop-down list suggestions</summary>
-
 - **Supported versions:** Windows 10, version 1703
 - **Description:** This policy setting lets you decide whether the Address bar drop-down functionality is available in Microsoft Edge. We recommend disabling this setting if you want to minimize network connections from Microsoft Edge to Microsoft services.
 
@@ -45,7 +43,7 @@ Allow Address bar drop-down list suggestions | Windows 10, version 1703 | This p
         > [!Note]
         > Disabling this setting turns off the Address bar drop-down functionality. Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the "Configure search suggestions in Address bar" setting.
 </details>
-</div>
+
 ### Allow Address bar drop-down list suggestions
 - **Supported versions:** Windows 10, version 1703
 
