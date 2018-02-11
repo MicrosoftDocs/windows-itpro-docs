@@ -32,17 +32,20 @@ Setting | Supported versions | Description
 --- | --- | ---
 Allow Address bar drop-down list suggestions | Windows 10, version 1703 | This policy setting lets you decide whether the Address bar drop-down functionality is available in Microsoft Edge. We recommend disabling this setting if you want to minimize network connections from Microsoft Edge to Microsoft services.<br><table><tr><th>If you...</th><th>Then...</th></tr><tr><td>Enable or don't configure this setting (default),</td><td>employees can see the Address bar drop-down functionality in Microsoft Edge.</td></tr><tr><td>Disable this setting,</td><td>employees won't see the Address bar drop-down functionality in Microsoft Edge. This setting also disables the user-defined setting, "Show search and site suggestions as I type."</td></tr></table>Disabling this setting turns off the Address bar drop-down functionality. Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the "Configure search suggestions in Address bar" setting.
 
-<details><summary>Allow Address bar drop-down list suggestions</summary>
-- **Supported versions:** Windows 10, version 1703
-- **Description:** This policy setting lets you decide whether the Address bar drop-down functionality is available in Microsoft Edge. We recommend disabling this setting if you want to minimize network connections from Microsoft Edge to Microsoft services.
-
-    - If you enable or don't configure this setting (default), employees can see the Address bar drop-down functionality in Microsoft Edge.
-
-    - If you disable this setting, employees won't see the Address bar drop-down functionality in Microsoft Edge. This setting also disables the user-defined setting, "Show search and site suggestions as I type".
-
-        > [!Note]
-        > Disabling this setting turns off the Address bar drop-down functionality. Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the "Configure search suggestions in Address bar" setting.
+<!-- drop down test 
+<details>
+<summary>Allow Address bar drop-down list suggestions</summary>
+Supported versions | Description 
+--- | ---
+Windows 10, version 1703 | This policy setting lets you decide whether the Address bar drop-down functionality is available in Microsoft Edge. We recommend disabling this setting if you want to minimize network connections from Microsoft Edge to Microsoft services.<br>
+<table>
+<tr><th>If you...</th><th>Then...</th></tr>
+<tr><td>Enable or don't configure this setting (default),</td><td>employees can see the Address bar drop-down functionality in Microsoft Edge.</td></tr>
+<tr><td>Disable this setting,</td><td>employees won't see the Address bar drop-down functionality in Microsoft Edge. This setting also disables the user-defined setting, "Show search and site suggestions as I type."</td></tr>
+</table>
+Disabling this setting turns off the Address bar drop-down functionality. Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the "Configure search suggestions in Address bar" setting.
 </details>
+-->
 
 ### Allow Address bar drop-down list suggestions
 - **Supported versions:** Windows 10, version 1703
