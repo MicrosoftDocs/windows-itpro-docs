@@ -26,7 +26,7 @@ Once you've set up your Windows 10 education device, it's worth checking to veri
 
 You can watch the video to see how this is done, or follow the step-by-step guide. </br>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nhQ_4okWFmk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/nhQ_4okWFmk]
 
 You can watch the descriptive audio version here: [Microsoft Education: Verify Windows 10 education devices are Azure AD joined and managed (DA)](https://www.youtube.com/watch?v=_hVIxaEsu2Y)
 
@@ -78,7 +78,7 @@ You can follow the rest of the walkthrough to finish setup and complete other ta
 
 You can watch the following video to see how to update group settings in Intune for Education and configure Azure settings. Or, you can follow the step-by-step guide for these tasks and the other tasks listed above.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/M6-k73dZOfw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/M6-k73dZOfw]
 
 You can watch the descriptive audio version here: [Microsoft Education: Update settings, apps, and Azure AD settings for your education tenant (DA)](https://www.youtube.com/watch?v=-Rz3VcDXbzs)
 

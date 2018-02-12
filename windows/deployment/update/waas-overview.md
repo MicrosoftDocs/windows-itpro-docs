@@ -4,10 +4,10 @@ description: In Windows 10, Microsoft has streamlined servicing to make operatin
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: DaniHalfin
+author: Jaimeo
 ms.localizationpriority: high
-ms.author: daniha
-ms.date: 10/16/2017
+ms.author: jaimeo
+ms.date: 02/09/2018
 ---
 
 # Overview of Windows as a service
@@ -23,7 +23,10 @@ ms.date: 10/16/2017
 
 The Windows 10 operating system introduces a new way to build, deploy, and service Windows: Windows as a service. Microsoft has reimagined each part of the process, to simplify the lives of IT pros and maintain a consistent Windows 10 experience for its customers. These improvements focus on maximizing customer involvement in Windows development, simplifying the deployment and servicing of Windows client computers, and leveling out the resources needed to deploy and maintain Windows over time. 
 
-<iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/qSAsiM01GOU" frameborder="0" allowfullscreen></iframe>
+Click the following Microsoft Mechanics video for an overview of the release model, particularly the Semi-Annual Channel.
+
+
+[![YouTube video of Michael Niehouse explaining how the Semi-Annual Channel works](images/SAC_vid_crop.jpg)](https://youtu.be/qSAsiM01GOU) 
 
 ## Building
 
