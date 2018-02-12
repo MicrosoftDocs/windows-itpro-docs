@@ -109,15 +109,46 @@ See [Dial string overrides when roaming](https://docs.microsoft.com/windows-hard
 
 Setting | Description
 --- | ---
+AdjustCDMACallTime | Change the calculation of CDMA call duration to exclude the time before the call connects. 
 AssistedDialSetting | Turn off the international assist feature that helps users with the country codes needed for dialing international phone numbers.
 CallIDMatch | Sets the number of digits that the OS will try to match against contacts for Caller ID. For any country/region that doesn't exist in the default mapping table, mobile operators can use this legacy CallIDMatch setting to specify the minimum number of digits to use for matching caller ID.
+CallRecordingOff | Indicates if call recording is turned off. Users will not see the call recording functionality when this is set to **True**.
+ConferenceCallMaximumPartyCount | Enter a number to limit the number of parties that can participate in a conference call.
 ContinuousDTMFEnabled | Enable DTMF tone duration for as long as the user presses a dialpad key.
+DisableVideoUpgradeStoreNavigation | If there are no compatible video upgrade apps installed, tapping the video upgrade button will launch a dialog that will navigate to the Microsoft Store. If this option is enabled, it will show a dialog that informs the user that no video app is installed, but it will not navigate to the Microsoft Store.
 DisableVoicemailPhoneNumberDisplay | Disable the display of the voicemail phone number below the Voicemail label in call progress dialog.
+DisplayNoDataMessageDuringCall | Display a message to the user indicating that there is no Internet connectivity during a phone call.
+DisplayNumberAsDialed | Display the outgoing number "as dialed" rather than "as connected".
+EnableVideoCalling | Set to **True** to enable video calling.
 HideCallForwarding | Partners can hide the user option to turn on call forwarding. By default, users can decide whether to turn on call forwarding. Partners can hide this user option so that call forwarding is permanently disabled.
+HideSIMSecurityUI | Hide the SIM Security panel from phone Settings.
+LowVideoQualityTimeout | Configure the phone timer to automatically drop video when the quality is low, in milliseconds.
+MinTimeBetweenCallSwaps | Configure how often the user can swap between two active phone calls, in milliseconds.
+PromptVideoCallingCharges | Prompt user for charges associated with video calls.
 ShowLongTones | Partners can make a user option visible that makes it possible to toggle between short and long DTMF tones, instead of the default continuous tones. By default, the phone supports Dual-Tone Multi-frequency (DTMF) with continuous tones. Partners can make a user option visible that makes it possible to toggle between short and long tones instead.
 UseOKForUssdDialogs | OEMs can change the button label in USSD dialogs from **Close** (the default) to **OK**.
+UseVoiceDomainForEmergencyCallBranding | Use voice domain to decide whether to use **Emergency calls only** or **No service** in branding.
+VideoCallingChargesMessage | Enter text for the message informing the user about the charges associated with video calls.
+VideoCallingChargesTitle | Enter text for the title of the dialog informing the user about the charges associated with video calls.
+VideoCallingDescription | Enter text to describe the video calling feature.
+VideoCallingLabel | Enter text to describe the video calling toggle.
+VideoCapabilityDescription | Enter text to describe the video capability feature.
+VideoCapabilityLabel | Enter text to describe the video capability toggle.
+VideoTransitionTimeout | Enter the the time in milliseconds to check how long the video transition state will remain until the remote party responds. The minimum value is 10000 and the maximum value is 30000. 
 VoLTEAudioQualityString | Partners can add a string to the call progress screen to indicate if the active call is a high quality voice over LTE (VoLTE). Set the value of VoLTEAudioQualityString to the string that you want to display in the call progress screen to indicate that the call is a VoLTE call. This string is combined with the PLMN so if the string is "VoLTE", the resulting string is "PLMN_String VoLTE". For example, the string displayed in the call progress screen can be "Litware VoLTE" if the PLMN_String is "Litware". The value you specify for VoLTEAudioQualityString must exceed 10 characters.
 
+
+## PhoneShellUI
+
+Setting | Description
+--- | ---
+EnableSoftwareProximitySensorMitigation | Enable software proximity sensor mitigation.
+
+## PhoneSmsFilter
+
+Setting | Description
+--- | ---
+AppId | Enter the app ID for your phone call/SMS filter application.
 
 ## SupplementaryServiceCodeOverrides
 

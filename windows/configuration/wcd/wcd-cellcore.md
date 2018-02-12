@@ -22,24 +22,21 @@ Use to configure settings for cellular data.
  Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core 
  --- | :---: | :---: | :---: | :---: | :---: 
  PerDevice: [CellConfigurations](#cellconfigurations) |  | X |  |  | 
- PerDevice: [CellData](#celldata) CellularFailover | X | X |   |  |   
- PerDevice: [CellData](#celldata) MaxNumberOfPDPContexts |  | X |  |  |  
- PerDevice: [CellData](#celldata) ModemProfiles |  | X |  |  | 
- PerDevice: [CellData](#celldata) PersistAtImaging |  | X |  |  |  
- PerDevice: [CellUX](#cellux)  |  | X |  |  |
+ PerDevice: [CellData](#celldata) CellularFailover | X | X | X  |  |   
+ PerDevice: [CellUX](#cellux)  | X | X | X |  |
  PerDevice: [CGDual](#cgdual)  |  | X |  |  |
- PerDevice: [eSim](#esim) | X | X |   |  | 
+ PerDevice: [eSim](#esim) | X | X | X  |  | 
  PerDevice: [External](#external)  |  | X |  |  |
  PerDevice: [General](#general)  |  | X |  |  |
  PerDevice: [RCS](#rcs)  |  | X |  |  |
- PerDevice: [SMS](#sms)  | X | X |   |  |  
+ PerDevice: [SMS](#sms)  | X | X | X  |  |  
  PerDevice: [UIX](#uix)  |  | X |  |  |
  PerDevice: [UTK](#utk)  |  | X |  |  |
  PerlMSI: [CellData](#celldata2) |  | X |  |  |
  PerIMSI: [CellUX](#cellux2) |  | X |  |  |
  PerIMSI: [General](#general2) |  | X |  |  |
  PerIMSI: [RCS](#rcs2) |  | X |  |  |
- PerIMSI: [SMS](#sms2) | X | X |   |  | 
+ PerIMSI: [SMS](#sms2) | X | X | X  |  | 
  PerIMSI: [UTK](#utk2) |  | X |  |  |
  PerIMSI: [VoLTE](#volte) |  | X |  |  |
 
@@ -78,6 +75,7 @@ APNIPTypeIfHidden | Select between **IPV4**, **IPV6**, **IPV4V6**, and **IPV4V6X
 Critical > ShowVoLTEToggle | Select **Yes** to show the VoLTE toggle in the **Settings** > **Cellular+SIM** > **SIM** settings page. Select **No** to hide the toggle.
 Disable2GByDefault | Select **Yes** to disable 2G by default. Select **No** to enable 2G.
 Disabled2GNoticeDescription | Enter text to customize the notification for disabled 2G.
+EmbeddedUiccSlotId |  ID for embedded UICC (eUICC) slot.
 GenericWifiCallingErrorMessage | Enter text to customize the generic error message when a Wi-Fi calling error occurs.
 Hide3GPP2ModeSelection | Select **Yes** to hide the **CDMA** option in the network **Mode** selection drop-down menu. Select **No** to show the **CDMA** option.
 Hide3GPP2Selection | For 3GPP2 or CDMA phones, select **Yes** to hide the **Network Type** drop-down menu in the **SIM** settings screen. Select **No** to show **Network Type**.
@@ -118,6 +116,8 @@ ShowSpecificWifiCallingError | Select **Yes** to show a specific error message b
 ShowViewAPN | Select **Yes** to show the **View Internet APN** button in **Settings** > **cellular+SIM**.
 ShowWifiCallingEmergencyCallWarning | Select **Yes** to show Wi-Fi emergency call warning.
 ShowWifiCallingError | Select **Yes** to show Wi-Fi calling error message.
+SlotSelectionSim1Name | Enter text for the name of SIM 1 in slot selection UI.
+SlotSelectionSim2Name | Enter text for the name of SIM 2 in slot selection UI.
 SuppressDePersoUI | Select **Yes** to hide the perso unlock UI.
 
 
@@ -318,6 +318,9 @@ ShowSpecificWifiCallingError | Select **Yes** to show a specific error message b
 ShowViewAPN | Select **Yes** to show the **View Internet APN** button in **Settings** > **cellular+SIM**.
 ShowWifiCallingEmergencyCallWarning | Select **Yes** to show Wi-Fi emergency call warning.
 ShowWifiCallingError | Select **Yes** to show Wi-Fi calling error message.
+SlotSelectionSim1Name | Enter text for the name of SIM 1 in slot selection UI.
+SlotSelectionSim2Name | Enter text for the name of SIM 2 in slot selection UI.
+SuppressDePersoUI | Suppress DePerso UI to unlock Perso.
 
 
 

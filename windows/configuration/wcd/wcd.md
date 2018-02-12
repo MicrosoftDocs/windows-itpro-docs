@@ -61,6 +61,7 @@ This section describes the settings that you can configure in [provisioning pack
 | [Personalization](wcd-personalization.md) | X |  |  |  |  |
 | [Policies](wcd-policies.md) | X | X | X | X | X |
 | [ProvisioningCommands](wcd-provisioningcommands.md) | X |  |  |  |  |
+[RcsPresence](wcd/wcd-rcspresence.md) |  | X |  |  |  |
 | [SharedPC](wcd-sharedpc.md) | X |  |  |  |  |
 | [Shell](wcd-shell.md) |  | X |  |  |  |
 | [SMISettings](wcd-smisettings.md) | X |  |  |  |  |
