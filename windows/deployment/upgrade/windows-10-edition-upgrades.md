@@ -69,7 +69,7 @@ X = unsupported <BR>
 Starting with Windows 10 - 1703, you can quickly downgrade from one edition of Windows 10 to another, provided the downgrade path is supported.
 
 The following table shows the methods and paths available to change the edition of Windows 10 that is running on your computer.
-Note: You must have the license key of the previous edition, in order to downgrade.  Downgrading to an OEM license key (without a clean install) is not supported.
+Note: You must have the license key of the previous edition, in order to downgrade. If you have a Windows 10 firmware, embeded product key, check out this [link](https://docs.microsoft.com/en-us/windows/deployment/windows-10-enterprise-subscription-activation) for retrieving the product key.
 
 ![not supported](../images/x_blk.png) (X) = not supported</br>
 ![supported, reboot required](../images/check_grn.png) (green checkmark) = supported, reboot required</br>
