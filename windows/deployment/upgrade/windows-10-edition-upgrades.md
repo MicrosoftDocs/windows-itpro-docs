@@ -66,7 +66,7 @@ X = unsupported <BR>
 > Each desktop edition in the table also has an N and KN SKU. These editions have had media-related functionality removed. Devices with N or KN SKUs installed can be upgraded to corresponding N or KN SKUs using the same methods.
 
 ## Edition downgrade
-With Windows 10, you can quickly downgrade from one edition of Windows 10 to another, provided the downgrade path is supported.
+Starting with Windows 10 - 1703, you can quickly downgrade from one edition of Windows 10 to another, provided the downgrade path is supported.
 
 The following table shows the methods and paths available to change the edition of Windows 10 that is running on your computer.
 Note: You must have the license key of the previous edition, in order to downgrade.  Downgrading to an OEM license key (without a clean install) is not supported.
