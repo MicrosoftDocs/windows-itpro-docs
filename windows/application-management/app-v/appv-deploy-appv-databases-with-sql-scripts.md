@@ -8,14 +8,13 @@ ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ---
-# How to Deploy the App-V Databases by Using SQL Scripts
+# How to deploy the App-V databases by using SQL scripts
 
 >Applies to Windows Server 2016.
 
 Use the following instructions to use SQL scripts, rather than the Windows Installer, to:
 
 * Install the App-V databases
-
 * Upgrade the App-V databases to a later version
 
 >[!NOTE]
@@ -23,31 +22,28 @@ Use the following instructions to use SQL scripts, rather than the Windows Insta
 
 ## How to install the App-V databases by using SQL scripts
 
-1.  Before you install the database scripts, review and keep a copy of the App-V license terms. By running the database scripts, you are agreeing to the license terms. If you do not accept them, you should not use this software.
+1. Before you install the database scripts, review and keep a copy of the App-V license terms. By running the database scripts, you are agreeing to the license terms. If you do not accept them, you should not use this software.
+2. Copy the **appv\_server\_setup.exe** from the App-V release media to a temporary location.
+3. From a command prompt, run **appv\_server\_setup.exe** and specify a temporary location for extracting the database scripts.
 
-2.  Copy the **appv\_server\_setup.exe** from the App-V release media to a temporary location.
+    For example, ```appv\_server\_setup.exe /layout c:\\_<temporary location path>_```.
+4. Browse to the temporary location that you created, open the extracted **DatabaseScripts** folder, and review the appropriate **readme.txt** file for instructions:
 
-3.  From a command prompt, run **appv\_server\_setup.exe** and specify a temporary location for extracting the database scripts.
-
-    Example: appv\_server\_setup.exe /layout c:\\_<temporary location path>_
-
-4.  Browse to the temporary location that you created, open the extracted **DatabaseScripts** folder, and review the appropriate readme.txt file for instructions:
-
-    | Database | Location of readme.txt file to use 
-    | - | - |
+    | Database | Location of **readme.txt** file to use |
+    |---|---|
     | Management database | ManagementDatabase subfolder |
     | Reporting database | ReportingDatabase subfolder |
 
-> [!CAUTION]  
-> The readme.txt file in the ManagementDatabase subfolder is out of date. The information in the updated readme files below is the most current and should supersede the readme information provided in the **DatabaseScripts** folders.
+>[!CAUTION]
+>The **readme.txt** file in the ManagementDatabase subfolder is out of date. The information in the following updated readme files is the most current and should supersede the readme information provided in the **DatabaseScripts** folders.
 
-> [!IMPORTANT]  
-> The InsertVersionInfo.sql script is not required for versions of the App-V management database later than App-V 5.0 SP3.
-> The Permissions.sql script should be updated according to **Step 2** in [KB article 3031340](https://support.microsoft.com/kb/3031340). **Step 1** is not required for versions of App-V later than App-V 5.0 SP3.
+>[!IMPORTANT]
+> The **InsertVersionInfo.sql** script is not required for versions of the App-V management database later than App-V 5.0 SP3.
+> The **Permissions.sql script** should be updated according to Step 2 in [KB article 3031340](https://support.microsoft.com/kb/3031340). Step 1 is not required for versions of App-V later than App-V 5.0 SP3.
 
 ### Updated management database README file content
 
-``` syntax
+```syntax
 ***********************************************************************************************************
 Before you install and use the Application Virtualization Database Scripts, you must:
 
@@ -101,7 +97,6 @@ Steps to install "AppVManagement" schema in SQL SERVER.
     CreateStoredProcs.sql
     UpdateTables.sql
     Permissions.sql 
-
 ```
 
 ### Updated reporting database README file content
@@ -180,5 +175,5 @@ Add or vote on suggestions on the [Application Virtualization feedback site](htt
 
 ## Related topics
 
-- [Deploying the App-V Server](appv-deploying-the-appv-server.md)
-- [How to Deploy the App-V Server](appv-deploy-the-appv-server.md)
+* [Deploying the App-V server](appv-deploying-the-appv-server.md)
+* [How to deploy the App-V server](appv-deploy-the-appv-server.md)
