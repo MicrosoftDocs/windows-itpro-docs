@@ -77,7 +77,7 @@ Note: You must have the license key of the previous edition, in order to downgra
 
 | Edition downgrade | Using mobile device management (MDM) | Using a provisioning package | Using a command-line tool | Using Microsoft Store for Business or PC | Entering a product key manually |
 |-----------------| ------------------------------------ | --------------------------- | ------------------------- | -------------------------------------- | ----------------------------------- |
-| **Enterprise > Pro** | ![not supported](../images/x_blk.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) (MSfB) | ![supported, reboot required](../images/check_grn.png) |
+| **Enterprise > Pro** | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) (MSfB) | ![supported, reboot required](../images/check_grn.png) |
 
 
 ## Upgrade using mobile device management (MDM)
