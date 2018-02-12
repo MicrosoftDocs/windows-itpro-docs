@@ -20,7 +20,7 @@ ms.date: 02/9/2018
 
 With Windows 10, you can quickly upgrade from one edition of Windows 10 to another, provided the upgrade path is supported. For information on what edition of Windows 10 is right for you, see [Compare Windows 10 Editions](https://go.microsoft.com/fwlink/p/?LinkID=690882). For a comprehensive list of all possible upgrade paths to Windows 10, see [Windows 10 upgrade paths](windows-10-upgrade-paths.md).
 
-The following table shows the methods and paths available to change the edition of Windows 10 that is running on your computer. Note that the reboot requirement for upgrading from Pro to Enterprise was removed in version 1607. 
+The following table shows the methods and paths available to change the edition of Windows 10 that is running on your computer. **Note**: The reboot requirement for upgrading from Pro to Enterprise was removed in version 1607. 
 
 ![not supported](../images/x_blk.png) (X) = not supported</br>
 ![supported, reboot required](../images/check_grn.png) (green checkmark) = supported, reboot required</br>
