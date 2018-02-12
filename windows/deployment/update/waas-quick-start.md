@@ -4,10 +4,10 @@ description: In Windows 10, Microsoft has streamlined servicing to make operatin
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: DaniHalfin
+author: Jaimeo
 ms.localizationpriority: high
-ms.author: daniha
-ms.date: 07/27/2017
+ms.author: jaimeo
+ms.date: 02/09/2018
 ---
 
 # Quick guide to Windows as a service
@@ -58,7 +58,10 @@ See [Build deployment rings for Windows 10 updates](waas-deployment-rings-window
 
 ## Video: An overview of Windows as a service
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qSAsiM01GOU" frameborder="0" allowfullscreen></iframe> 
+Click the following Microsoft Mechanics video for an overview of the updated release model, particularly the Semi-Annual Channel.
+
+
+[![YouTube video of Michael Niehouse explaining how the Semi-Annual Channel works](images/SAC_vid_crop.jpg)](https://youtu.be/qSAsiM01GOU) 
  
 ## Learn more
 
