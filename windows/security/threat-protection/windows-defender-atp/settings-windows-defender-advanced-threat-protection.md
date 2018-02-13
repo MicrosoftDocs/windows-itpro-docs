@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
-author: DulceMV
+author: mjcaparas
 ms.localizationpriority: high
 ms.date: 02/13/2018
 ---
