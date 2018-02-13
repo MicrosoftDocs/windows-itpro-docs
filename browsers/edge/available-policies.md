@@ -27,7 +27,7 @@ By using Group Policy and Intune, you can set up a policy setting once, and then
 Microsoft Edge works with these Group Policy settings (`Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge\`) to help you manage your company's web browser configurations:
 
 ### Allow Address bar drop-down list suggestions
-> Supported versions: Windows 10, version 1703
+>*Supporteded versions: Windows 10, version 1703*
 
 This policy setting lets you decide whether the Address bar drop-down functionality is available in Microsoft Edge. We recommend disabling this setting if you want to minimize network connections from Microsoft Edge to Microsoft services.
 | If you... | Then... |
@@ -37,7 +37,7 @@ This policy setting lets you decide whether the Address bar drop-down functional
 |
  
 ### Allow Adobe Flash
-> Supported version: Windows 10
+>*Supporteded version: Windows 10*
 
 This policy setting lets you decide whether employees can run Adobe Flash on Microsoft Edge.
 | If you… | Then… |
@@ -47,7 +47,7 @@ This policy setting lets you decide whether employees can run Adobe Flash on Mic
 | 
 
 ### Allow clearing browsing data on exit
-> Supported versions: Windows 10, version 1703 
+>*Supporteded versions: Windows 10, version 1703*
 
 This policy setting allows the automatic clearing of browsing data when Microsoft Edge closes.
 | If you… | Then… |
@@ -57,7 +57,7 @@ This policy setting allows the automatic clearing of browsing data when Microsof
 |
 
 ### Allow Developer Tools
-> Supported versions: Windows 10, version 1511 or later
+>*Supporteded versions: Windows 10, version 1511 or later*
 
 This policy setting lets you decide whether F12 Developer Tools are available on Microsoft Edge.
 | If you… | Then… | 
@@ -67,7 +67,7 @@ This policy setting lets you decide whether F12 Developer Tools are available on
 |
 
 ### Allow Extensions
-> Supported versions: Windows 10, version 1607 or later
+>*Supporteded versions: Windows 10, version 1607 or later*
 
 This policy setting lets you decide whether employees can use Edge Extensions.
 | If you… | Then… |
@@ -77,7 +77,7 @@ This policy setting lets you decide whether employees can use Edge Extensions.
 |
 
 ### Allow InPrivate browsing
-> Supported versions: Windows 10, version 1511 or later
+>*Supporteded versions: Windows 10, version 1511 or later*
 
 This policy setting lets you decide whether employees can browse using InPrivate website browsing.
 | If you… | Then… |
@@ -87,7 +87,7 @@ This policy setting lets you decide whether employees can browse using InPrivate
 |
 
 ### Allow Microsoft Compatibility List
-> Supported versions: Windows 10, version 1607 or later
+>*Supporteded versions: Windows 10, version 1607 or later*
 
 This policy setting lets you decide whether to use the Microsoft Compatibility List (a Microsoft-provided list that helps sites with known compatibility issues to display properly) in Microsoft Edge. By default, the Microsoft Compatibility List is enabled and can be viewed by visiting about:compat. <span style="background: #ffff99;">[@Reviewer: Is this supposed to be a link to another topic? Is the topic Use Enterprise Mode to improve compatibility emie-to-improve-compatibility.md?]</span>
 | If you… | Then… |
@@ -97,8 +97,7 @@ This policy setting lets you decide whether to use the Microsoft Compatibility L
 |
 
 ### Allow search engine customization
-
->Supported versions: Windows 10, version 1703
+>*Supported versions: Windows 10, version 1703*
 
 This policy setting lets you decide whether users can change their search engine. Important. You can only use this setting with domain-joined or MDM-enrolled devices. 
 
@@ -110,7 +109,7 @@ For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy)
 |
 
 ### Allow web content on New Tab page
->Supported versions: Windows 10
+>*Supported versions: Windows 10*
 
 This policy setting lets you configure what appears when Microsoft Edge opens a new tab. By default, Microsoft Edge opens the New Tab page. If you use this setting, employees can’t change it.
 | If you… | Then… |
@@ -121,7 +120,7 @@ This policy setting lets you configure what appears when Microsoft Edge opens a 
 |
 
 ### Configure additional search engines
->Supported versions: Windows 10, version 1703
+>*Supported versions: Windows 10, version 1703*
 
 This policy setting lets you add up to 5 additional search engines, which can't be removed by your employees but can make a personal default engine. This setting doesn't set the default search engine. For that, you must use the "Set default search engine" setting.
 | If you… | Then… |
@@ -131,7 +130,7 @@ This policy setting lets you add up to 5 additional search engines, which can't 
 |
 
 ### Configure Autofill
->Supported versions: Windows 10
+>*Supported versions: Windows 10*
 
 This policy setting lets you decide whether employees can use Autofill the form fields automatically while using Microsoft Edge. By default, employees can choose whether to use Autofill.
 | If you… | Then… |
@@ -142,7 +141,7 @@ This policy setting lets you decide whether employees can use Autofill the form 
 |
 
 ### Configure cookies
->Supported versions: Windows 10
+>*Supported versions: Windows 10*
 
 This setting lets you configure how to work with cookies.
 | If you… | Then… |
@@ -152,7 +151,7 @@ This setting lets you configure how to work with cookies.
 |
 
 ### Configure Do Not Track
->Supported versions: Windows 10
+>*Supported versions: Windows 10*
 
 This policy setting lets you decide whether employees can send Do Not Track requests to websites that ask for tracking info. By default, Do Not Track requests are never sent, but employees can choose to turn on and send requests.
 | If you… | Then… |
@@ -163,7 +162,7 @@ This policy setting lets you decide whether employees can send Do Not Track requ
 |
 
 ### Configure Favorites
->Supported versions: Windows 10, version 1511 or later
+>*Supported versions: Windows 10, version 1511 or later*
 
 This policy setting lets you configure the default list of Favorites that appear for your employees. Employees can change their Favorites by adding or removing items at any time. <span style="background: #ffff99;">[@Reviewer: what is the default setting, enabled or disabled? I’m guessing it’s Disabled is the default.]</span>
 | If you… | Then… |
@@ -173,7 +172,7 @@ This policy setting lets you configure the default list of Favorites that appear
 |
 
 ### Configure Password Manager
->Supported versions: Windows 10
+>*Supported versions: Windows 10*
 
 This policy setting lets you decide whether employees can save their passwords locally, using Password Manager. By default, Password Manager is turned on.
 | If you… | Then… |
@@ -184,7 +183,7 @@ This policy setting lets you decide whether employees can save their passwords l
 |
 
 ### Configure Pop-up Blocker
->Supported versions: Windows 10
+>*Supported versions: Windows 10*
 
 This policy setting lets you decide whether to turn on Pop-up Blocker. By default, Pop-up Blocker is turned on.
 | If you… | Then… |
@@ -195,7 +194,7 @@ This policy setting lets you decide whether to turn on Pop-up Blocker. By defaul
 |
 
 ### Configure search suggestions in Address bar
->Supported versions: Windows 10
+>*Supported versions: Windows 10*
 
 This policy setting lets you decide whether search suggestions appear in the Address bar of Microsoft Edge. By default, employees can choose whether search suggestions appear in the Address bar of Microsoft Edge.
 | If you… | Then… |
@@ -206,7 +205,7 @@ This policy setting lets you decide whether search suggestions appear in the Add
 |
 
 ### Configure Start pages
->Supported versions: Windows 10, version 1511 or later
+>*Supported versions: Windows 10, version 1511 or later*
 
 This policy setting lets you configure one or more Start pages, for domain-joined devices. Your employees won't be able to change this after you set it.
 | If you… | Then… |
@@ -216,7 +215,7 @@ This policy setting lets you configure one or more Start pages, for domain-joine
 |
 
 ### Configure the Adobe Flash Click-to-Run setting
->Supported versions: Windows 10, version 1703
+>*Supported versions: Windows 10, version 1703*
 
 This policy setting lets you decide whether employees must take action, such as clicking the content or a Click-to-Run button, before seeing content in Adobe Flash. <span style="background: #ffff99;">[@Reviewer: what is the default, enabled or disabled?]</span>
 | If you… | Then… |
@@ -226,7 +225,7 @@ This policy setting lets you decide whether employees must take action, such as 
 |
 
 ### Configure the Enterprise Mode Site List
->Supported versions: Windows 10
+>*Supported versions: Windows 10*
 
 This policy setting lets you configure whether to use Enterprise Mode and the Enterprise Mode Site List to address common compatibility problems with legacy apps.
 | If you… | Then… |
@@ -240,7 +239,7 @@ Disable or do not configure this setting (default) | Microsoft Edge won’t use 
 >If you already use a site list, enterprise mode continues to work during the 65-second wait; it just uses the existing site list instead of the new one.  
 
 ### Configure Windows Defender SmartScreen
->Supported versions: Windows 10
+>*Supported versions: Windows 10*
 
 This policy setting lets you configure whether to turn on Windows Defender SmartScreen. Windows Defender SmartScreen provides warning messages to help protect your employees from potential phishing scams and malicious software. By default, Windows Defender SmartScreen is turned on.
 | If you… | Then… |
@@ -251,9 +250,9 @@ This policy setting lets you configure whether to turn on Windows Defender Smart
 |
 
 ### Disable lockdown of Start pages
->Supported versions: Windows 10, version 1703
+>*Supported versions: Windows 10, version 1703*
 
-This policy setting lets you disable the lockdown of Start pages if the Configure Start pages setting is in effect <span style="background: #ffff99;">[@Reviewer: shouldn't this be “…is enabled” instead of "...is in effect"?]</span>. This setting only applies to domain-joined or MDM-enrolled devices. For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).
+This policy setting lets you disable the lockdown of Start pages if the Configure Start pages setting is in effect <span style="background: #ffff99;">[@Reviewer: shouldn't this be “…is enabled” instead of "...is in effect"?]</span>. This setting only applies to domain-joined or MDM-enrolled devices. For more info, see the [Microsoft browser extension policy](aka.ms/browserpolicy).
 | If you… | Then… |
 | --- | --- |
 | Enable this setting | You cannot lock down Start pages that are configured using the “Configure Start pages” setting. Employees can, therefore, modify the pages. |
@@ -261,7 +260,7 @@ This policy setting lets you disable the lockdown of Start pages if the Configur
 |                                                                 
 
 ### Keep favorites in sync between Internet Explorer and Microsoft Edge
->Supported versions: Windows 10, version 1703
+>*Supported versions: Windows 10, version 1703*
 
 This policy setting lets you decide whether people can sync their favorites between Internet Explorer and Microsoft Edge, including additions, deletions, changes, and position.
 | If you… | Then… |
@@ -271,7 +270,7 @@ This policy setting lets you decide whether people can sync their favorites betw
 |
 
 ### Prevent access to the about:flags page
->Supported versions: Windows 10, version 1607 or later
+>*Supported versions: Windows 10, version 1607 or later*
 
 This policy setting lets you decide whether employees can access the about:flags page, which is used to change developer settings and to enable experimental features.
 | If you… | Then… |
@@ -281,7 +280,7 @@ This policy setting lets you decide whether employees can access the about:flags
 |                                                                 
 
 ### Prevent bypassing Windows Defender SmartScreen prompts for files
->Supported versions: Windows 10, version 1511 or later
+>*Supported versions: Windows 10, version 1511 or later*
 
 This policy setting lets you decide whether employees can override the Windows Defender SmartScreen warnings about downloading unverified files.
 | If you… | Then… |
@@ -290,7 +289,7 @@ This policy setting lets you decide whether employees can override the Windows D
 | Disable or do not configure this setting (default) | Employees can ignore Windows Defender SmartScreen warnings and can continue the download process. |
 |                                                                                                                                                  
 ### Prevent bypassing Windows Defender SmartScreen prompts for sites
->Supported versions: Windows 10, version 1511 or later
+>*Supported versions: Windows 10, version 1511 or later*
 
 This policy setting lets you decide whether employees can override the Windows Defender SmartScreen warnings about potentially malicious websites.
 | If you… | Then… |
@@ -300,7 +299,7 @@ This policy setting lets you decide whether employees can override the Windows D
 |
 
 ### Prevent Microsoft Edge from gathering Live Tile information when pinning a site to Start
->Supported versions: Windows 10, version 1703
+>*Supported versions: Windows 10, version 1703*
 
 This policy lets you decide whether Microsoft Edge can gather Live Tile metadata from the ieonline.microsoft.com service to provide a better experience while pinning a Live Tile to the Start menu.
 | If you… | Then… |
@@ -310,7 +309,10 @@ This policy lets you decide whether Microsoft Edge can gather Live Tile metadata
 |
 
 
-Prevent the First Run webpage from opening on Microsoft Edge | Windows 10, version 1703 | This policy setting lets you decide whether employees see Microsoft's First Run webpage when opening Microsoft Edge for the first time.
+### Prevent the First Run webpage from opening on Microsoft Edge
+>*Supported versions: Windows 10, version 1703*
+
+This policy setting lets you decide whether employees see Microsoft's First Run webpage when opening Microsoft Edge for the first time.
 | If you… | Then… |
 | --- | --- |
 | Enable this settin | Employees do not see the First Run page. |
@@ -318,7 +320,7 @@ Prevent the First Run webpage from opening on Microsoft Edge | Windows 10, versi
 |
 
 ### Prevent using Localhost IP address for WebRTC
->Supported versions: Windows 10, version 1511 or later
+>*Supported versions: Windows 10, version 1511 or later*
 
 This policy setting lets you decide whether localhost IP addresses are visible or hidden while making calls to the WebRTC protocol.
 | If you… | Then… |
@@ -328,7 +330,7 @@ This policy setting lets you decide whether localhost IP addresses are visible o
 |
 
 ### Send all intranet sites to Internet Explorer 11
->Supported versions: Windows 10
+>*Supported versions: Windows 10*
 
 This policy setting lets you decide whether your intranet sites should all open using Internet Explorer 11. This setting should only be used if there are known compatibility problems with Microsoft Edge.
 | If you… | Then… |
@@ -338,23 +340,22 @@ This policy setting lets you decide whether your intranet sites should all open 
 |
 
 ### Set default search engine
->Supported versions: Windows 10, version 1703
+>*Supported versions: Windows 10, version 1703*
 
 This policy setting applies only to domain-joined or MDM-enrolled devices and lets you configure the default search engine for Microsoft Edge. Employees can change the default search engine at any time unless you disable the "Allow search engine customization" setting, which restricts any changes. 
 
-For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).
+For more info, see the [Microsoft browser extension policy](aka.ms/browserpolicy).
 | If you… | Then… |
 | --- | --- |
 | Enable this setting | To set a default search engine, you must add a link to your OpenSearch XML file, including at least the short name and https URL of the search engine, using this format:<br><br>`https://fabrikam.com/opensearch.xml` |
-| Disable this setting | The policy-set default search engine is removed. If this is also the current in-use default, the search engine changes to the Microsoft Edge specified engine for the market [what does “market” mean in this context?]. |
+| Disable this setting | The policy-set default search engine is removed. If this is also the current in-use default, the search engine changes to the Microsoft Edge specified engine for the market <span style="background: #ffff99;">[@Reviewer: what does “market” mean in this context?]</span>. |
 | Do not configure this setting | The default search engine is set to the one specified in App settings. |
 |
-
 >[!Important]
->If you'd like your employees to use the default Microsoft Edge settings for each market [what does “each market” refer to?], you can set the string to EDGEDEFAULT. If you'd like your employees to use Microsoft Bing as the default search engine, you can set the string to EDGEBING.
+>If you'd like your employees to use the default Microsoft Edge settings for each market <span style="background: #ffff99;">[@Reviewer: what does “each market” refer to in this context?]</span>, you can set the string to EDGEDEFAULT. If you'd like your employees to use Microsoft Bing as the default search engine, you can set the string to EDGEBING.
 
 ### Show message when opening sites in Internet Explorer
->Supported versions: Windows 10, version 1607 and later
+>*Supported versions: Windows 10, version 1607 and later*
 
 This policy setting lets you decide whether employees see an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.
 | If you… | Then… |
