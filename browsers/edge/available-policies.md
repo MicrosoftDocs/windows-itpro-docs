@@ -7,7 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 title: Group Policy and Mobile Device Management settings for Microsoft Edge (Microsoft Edge for IT Pros)
 ms.localizationpriority: high
-ms.date: 09/13/2017
+ms.date: 09/13/2017 #Previsou release date
 ---
 
 <!-- pashort 2/9/2018: as per Brian Atman, the documentation descrepancies must be addressed for RS5. Find out what those discrepancies are. Scenario 15403628 -->
@@ -24,7 +24,13 @@ By using Group Policy and Intune, you can set up a policy setting once, and then
 > For more info about the tools you can use to change your Group Policy objects, see the Internet Explorer 11 topics, [Group Policy and the Group Policy Management Console (GPMC)](https://go.microsoft.com/fwlink/p/?LinkId=617921), [Group Policy and the Local Group Policy Editor](https://go.microsoft.com/fwlink/p/?LinkId=617922), [Group Policy and the Advanced Group Policy Management (AGPM)](https://go.microsoft.com/fwlink/p/?LinkId=617923), and [Group Policy and Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=617924).
 
 ## Group Policy settings
+Microsoft Edge works with the following Group Policy settings to help you manager your company's web browser configurations. The Group Policy settings are found in the Group Policy Editor in the following location: 
+
+`Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge\`
+
+<!-- original text 
 Microsoft Edge works with these Group Policy settings (`Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge\`) to help you manage your company's web browser configurations:
+-->
 
 ### Allow Address bar drop-down list suggestions
 >*Supporteded versions: Windows 10, version 1703*
@@ -33,7 +39,7 @@ This policy setting lets you decide whether the Address bar drop-down functional
 | If you... | Then... |
 | --- | --- |
 | Enable this setting (default) | Employees can see the Address bar drop-down functionality in Microsoft Edge. | 
-| Disable this setting | Employees won't see the Address bar drop-down functionality in Microsoft Edge. This setting also disables the user-defined setting, "Show search and site suggestions as I type."<p>Disabling this setting turns off the Address bar drop-down functionality. Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the "Configure search suggestions in Address bar" setting. |
+| Disable this setting | Employees do not see the Address bar drop-down functionality in Microsoft Edge. This setting also disables the user-defined setting, "Show search and site suggestions as I type."<p>Disabling this setting turns off the Address bar drop-down functionality. Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the "Configure search suggestions in Address bar" setting. |
 |
  
 ### Allow Adobe Flash
@@ -73,7 +79,7 @@ This policy setting lets you decide whether employees can use Edge Extensions.
 | If you… | Then… |
 | --- | --- |
 | Enable this setting | Employees can use Edge Extensions. |
-| Disable this setting | <span style="background: #ffff99;">[@Reviewer: why would a company disable this setting?]</span> Employees cannot use Edge Extensions. |
+| Disable this setting | <span style="background: #ffff99;">[@Reviewer: why would a company disable this setting? Is this because of potential memory leaks?]</span> Employees cannot use Edge Extensions. |
 |
 
 ### Allow InPrivate browsing
@@ -83,7 +89,7 @@ This policy setting lets you decide whether employees can browse using InPrivate
 | If you… | Then… |
 | --- | --- |
 | Enable this setting (default) | Employees can use InPrivate website browsing. |
-| Disable this setting | <span style="background: #ffff99;">[@Reviewer: why would a company disable this setting?]</span> Employees cannot use InPrivate website browsing. |
+| Disable this setting | <span style="background: #ffff99;">[@Reviewer: why would a company disable this setting? Is this to discourage users from browser inappropriate websites? What are the use cases for having this turned off?]</span> Employees cannot use InPrivate website browsing. |
 |
 
 ### Allow Microsoft Compatibility List
@@ -101,7 +107,7 @@ This policy setting lets you decide whether to use the Microsoft Compatibility L
 
 This policy setting lets you decide whether users can change their search engine. Important. You can only use this setting with domain-joined or MDM-enrolled devices. 
 
-For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).
+For more info, see the [Microsoft browser extension policy](http://aka.ms/browserpolicy).
 
 | If you… | Then… |
 | --- | --- |
@@ -123,7 +129,7 @@ This policy setting lets you configure what appears when Microsoft Edge opens a 
 ### Configure additional search engines
 >*Supported versions: Windows 10, version 1703*
 
-This policy setting lets you add up to 5 additional search engines, which can't be removed by your employees but can make a personal default engine. This setting doesn't set the default search engine. For that, you must use the "Set default search engine" setting.
+This policy setting lets you add up to 5 additional search engines, which cannot be removed by your employees but can make a personal default engine. This setting does not set the default search engine. For that, you must use the "Set default search engine" setting.
 | If you… | Then… |
 | --- | --- |
 | Enable this setting | You can add up to 5 additional search engines. For each additional search engine, you must add a link to your OpenSearch XML file, including at least the short name and https URL of the search engine, using this format:<br><br> `<https://www.contoso.com/opensearch.xml>` <p>For more info about creating the OpenSearch XML file, see the [Understanding OpenSearch Standards](https://msdn.microsoft.com/en-us/library/dd163546.aspx) topic. | Disable this setting (default) | Any added search engines are removed from the employee’s device. <span style="background: #ffff99;">[@Reviewer: is this implying that Bing is the only search engine on the employee’s device?]</span> |
@@ -201,14 +207,14 @@ This policy setting lets you decide whether search suggestions appear in the Add
 | If you… | Then… |
 | --- | --- |
 | Enable this setting | Employees can see search suggestions in the Address bar. |
-| Disable this setting | Employees can't see search suggestions in the Address bar. |
+| Disable this setting | Employees cannot see search suggestions in the Address bar. |
 | Do not configure this setting (default) | Employees can choose whether search suggestions appear in the Address bar. |
 |
 
 ### Configure Start pages
 >*Supported versions: Windows 10, version 1511 or later*
 
-This policy setting lets you configure one or more Start pages, for domain-joined devices. Your employees won't be able to change this after you set it.
+This policy setting lets you configure one or more Start pages, for domain-joined devices. Your employees will not be able to change this after you set it.
 | If you… | Then… |
 | --- | --- |
 | Enable this setting | You must include URLs to the pages, separating multiple pages by using angle brackets in this format: <br><br>`<support.contoso.com><support.microsoft.com>` |  
@@ -255,7 +261,7 @@ This policy setting lets you configure whether to turn on Windows Defender Smart
 
 This policy setting lets you disable the lockdown of Start pages if the Configure Start pages setting is in effect <span style="background: #ffff99;">[@Reviewer: shouldn't this be “…is enabled” instead of "...is in effect"?]</span>. This setting only applies to domain-joined or MDM-enrolled devices. 
 
-For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).
+For more info, see the [Microsoft browser extension policy](http://aka.ms/browserpolicy).
 
 | If you… | Then… |
 | --- | --- |
@@ -267,9 +273,11 @@ For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy)
 >*Supported versions: Windows 10, version 1703*
 
 This policy setting lets you decide whether people can sync their favorites between Internet Explorer and Microsoft Edge, including additions, deletions, changes, and position.
+
+<span style="background: #ffff99;">[@Reviewer: what is the default: enable or disable?]</span>
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | Employees can sync their favorites between Internet Explorer and Microsoft Edge. Note. Enabling this setting stops Edge favorites from syncing between connected Windows 10 devices. [what does this mean? I want to know more about what this note is saying. More details and maybe an example or scenario.] |
+| Enable this setting | Employees can sync their favorites between Internet Explorer and Microsoft Edge.<br><br>Enabling this setting stops Edge favorites from syncing between connected Windows 10 devices. <span style="background: #ffff99;">[@Reviewer: what does this mean? I want to know more about what this is saying. More details and maybe an example or scenario.]</span> |
 | Disable or do not configure this setting | Employees cannot sync their favorites between Internet Explorer and Microsoft Edge. |
 |
 
@@ -348,7 +356,7 @@ This policy setting lets you decide whether your intranet sites should all open 
 
 This policy setting applies only to domain-joined or MDM-enrolled devices and lets you configure the default search engine for Microsoft Edge. Employees can change the default search engine at any time unless you disable the "Allow search engine customization" setting, which restricts any changes. 
 
-For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).
+For more info, see the [Microsoft browser extension policy](http://aka.ms/browserpolicy).
 
 | If you… | Then… |
 | --- | --- |
@@ -463,7 +471,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
     - **Allowed values:**
 
-        - **0.** Employees can't use the F12 Developer Tools.
+        - **0.** Employees cannot use the F12 Developer Tools.
         
         - **1 (default).** Employees can use the F12 Developer Tools.
 
@@ -565,7 +573,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
     - **Allowed values:** 
 
-        - **0.** Additional search engines aren't allowed and the default can’t be changed in the Address bar.
+        - **0.** Additional search engines are not allowed and the default can’t be changed in the Address bar.
         
         - **1 (default).** Additional search engines are allowed and the default can be changed in the Address bar.
 
@@ -582,7 +590,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
     - **Allowed values:**
 
-        - **0 (default).** Employees can't use Password Manager to save passwords locally.
+        - **0 (default).** Employees cannot use Password Manager to save passwords locally.
         
         - **1.** Employees can use Password Manager to save passwords locally.
 
@@ -748,7 +756,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
                 <contoso.com>
                 <fabrikam.com>
             
-            URLs must be on separate lines and aren't shared between Microsoft Edge and Internet Explorer 11.
+            URLs must be on separate lines and are not shared between Microsoft Edge and Internet Explorer 11.
 
 ### FirstRunURL
 - **Supported versions:** Windows 10, version 1511 or later
@@ -803,7 +811,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
         - **0 (default).** Employees can access the about:flags page in Microsoft Edge.
         
-        - **1.** Employees can't access the about:flags page in Microsoft Edge.
+        - **1.** Employees cannot access the about:flags page in Microsoft Edge.
 
 ### PreventFirstRunPage
 - **Supported versions:** Windows 10, version 1703
@@ -820,7 +828,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
         - **0 (default).** Employees see the First Run webpage.
         
-        - **1.** Employees don't see the First Run webpage.
+        - **1.** Employees do not see the First Run webpage.
 
 ### PreventLiveTileDataCollection
 - **Supported versions:** Windows 10, version 1703
@@ -888,7 +896,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
         - **0 (default).** Shows an employee's LocalHost IP address while using the WebRTC protocol.
         
-        - **1.** Doesn't show an employee's LocalHost IP address while using the WebRTC protocol.
+        - **1.** Does not show an employee's LocalHost IP address while using the WebRTC protocol.
 
 ### SendIntranetTraffictoInternetExplorer
 - **Supported versions:** Windows 10
@@ -969,9 +977,9 @@ These are additional Windows 10-specific Group Policy settings that work with M
 
 - **Description:** This policy settings lets you decide whether employees can use Cortana.
 
-    - If you enable or don't configure this setting, employees can use Cortana on their devices.
+    - If you enable or do not configure this setting, employees can use Cortana on their devices.
     
-    - If you disable this setting, employees won't be able to use Cortana on their devices.
+    - If you disable this setting, employees will not be able to use Cortana on their devices.
     
         >[!Note]
         >Employees can still perform searches even with Cortana turned off.
@@ -983,7 +991,7 @@ These are additional Windows 10-specific Group Policy settings that work with M
 
     - If you enable this setting, the Sync your Settings options are turned off and none of the Sync your Setting groups are synced on the device. You can use the Allow users to turn syncing on option to turn the feature off by default, but to let the employee change this setting.
     
-    - If you disable or don't configure this setting (default), the Sync your Settings options are turned on, letting employees pick what can sync on their device.
+    - If you disable or do not configure this setting (default), the Sync your Settings options are turned on, letting employees pick what can sync on their device.
     
 ### Do not sync browser settings
 - **Location:** Computer Configuration\Administrative Templates\Windows Components\sync your settings\Do not sync browser settings
@@ -992,7 +1000,7 @@ These are additional Windows 10-specific Group Policy settings that work with M
 
     - If you enable this setting, the Sync your Settings options are turned off so that browser groups are unable to sync their settings and info. You can use the Allow users to turn browser syncing on option to turn the feature off by default, but to let the employee change this setting.
     
-    - If you disable or don't configure this setting (default), the Sync your Settings options are turned on, letting browser groups pick what can sync on their device.
+    - If you disable or do not configure this setting (default), the Sync your Settings options are turned on, letting browser groups pick what can sync on their device.
 
 
 ## Microsoft Edge and Windows 10-specific MDM policy settings

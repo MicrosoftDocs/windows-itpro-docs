@@ -20,7 +20,8 @@ If you have specific web sites and apps that you know have compatibility problem
 Using Enterprise Mode means that you can continue to use Microsoft Edge as your default browser, while also ensuring that your apps continue working on IE11.
 
 <!-- Will RS5 have the need for the following note? -->
-> **Note**<br>
+[@Reviewer: will RS5 have the need for the following note?]
+>[!NOTE]
 >If you want to use Group Policy to set Internet Explorer as your default browser, you can find the info here, [Set the default browser using Group Policy]( https://go.microsoft.com/fwlink/p/?LinkId=620714).
 
 ## Fix specific websites
