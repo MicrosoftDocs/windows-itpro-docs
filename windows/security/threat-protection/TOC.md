@@ -165,12 +165,12 @@
 ###Reporting
 #### [Create and build Power BI reports using Windows Defender ATP data](windows-defender-atp\powerbi-reports-windows-defender-advanced-threat-protection.md)
 
-###Check service and sensor state
+###Check service health and sensor state
 #### [Check sensor state](windows-defender-atp\check-sensor-status-windows-defender-advanced-threat-protection.md)
 ##### [Fix unhealthy sensors](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
 ##### [Inactive machines](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#inactive-machines)
 ##### [Misconfigured machines](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#misconfigured-machines)
-#### [Windows Defender ATP service health](windows-defender-atp\service-status-windows-defender-advanced-threat-protection.md)
+#### [Check service health](windows-defender-atp\service-status-windows-defender-advanced-threat-protection.md)
 ### [Configure Windows Defender ATP preferences settings](windows-defender-atp\preferences-setup-windows-defender-advanced-threat-protection.md)
 #### [Update general settings](windows-defender-atp\general-settings-windows-defender-advanced-threat-protection.md)
 #### [Enable advanced features](windows-defender-atp\advanced-features-windows-defender-advanced-threat-protection.md)
