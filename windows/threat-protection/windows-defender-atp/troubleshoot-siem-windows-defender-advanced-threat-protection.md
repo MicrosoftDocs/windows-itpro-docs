@@ -53,7 +53,7 @@ If your client secret expires or if you've misplaced the copy provided when you 
 
 
 ## Error when getting a refresh access token
-If you encounter an error when trying to get a refresh token when using the threat intelligence API, you'll need to add reply URL for relevant application in Azure Active Directory.
+If you encounter an error when trying to get a refresh token when using the threat intelligence API or SIEM tools, you'll need to add reply URL for relevant application in Azure Active Directory.
 
 1. Login to the [Azure management portal](https://ms.portal.azure.com).
 
@@ -61,15 +61,13 @@ If you encounter an error when trying to get a refresh token when using the thre
 
 3. Select your tenant.
 
-4. Click **Application**, then select your SIEM tool application. The application name is `https://windowsdefenderatpsiemconnector`.
+4. Click **App Registrations**. Then in the applications list, select the application:
+    - For SIEM: `https://WindowsDefenderATPSiemConnector`
+    - For Threat intelligence API: `https://WindowsDefenderATPCustomerTiConnector`
 
-5. Select your threat intelligence API application. The name is `https://WindowsDefenderATPCustomerTiConnector`.
+5. Add the following URL: `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback`.
 
-6. Select **Settings** > **Reply URLs**. HI VADIM CAN YOU PLEASE CHECK IF THE BELOW IS ACCURATE - I TRIED TO ACCESS AZURE BUT I DON'T HAVE THE RIGHT PERMISSIONS.
-
-7. Add the following URL: `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback`.
-
-8. Click **Save**.
+6. Click **Save**.
 
 
 ## Related topics
