@@ -236,10 +236,10 @@ The following steps illustrate high-level phases of the MBR-to-GPT conversion pr
 
 For Windows to remain bootable after the conversion, an EFI system partition (ESP) must be in place. MBR2GPT creates the ESP using the following rules:
 
-1. The existing MBR system partition is reused if it meets these requirements:
-  a. It is not also the OS or Windows Recovery Environment partition
-  b. It is at least 100MB (or 260MB for 4K sector size disks) in size
-  c. It is less than or equal to 1GB in size. This is a safety precaution to ensure it is not a data partition.
+1. The existing MBR system partition is reused if it meets these requirements:<br>
+  a. It is not also the OS or Windows Recovery Environment partition.<br>
+  b. It is at least 100MB (or 260MB for 4K sector size disks) in size.<br>
+  c. It is less than or equal to 1GB in size. This is a safety precaution to ensure it is not a data partition.<br>
   d. If the conversion is being performed from the full OS, the disk being converted is not the system disk.
 2. If the existing MBR system partition cannot be reused, a new ESP is created by shrinking the OS partition. This new partition has a size of 100MB (or 260MB for 4K sector size disks) and is formatted FAT32.
 
