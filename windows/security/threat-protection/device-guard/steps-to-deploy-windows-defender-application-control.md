@@ -142,6 +142,11 @@ Microsoft recommends that you block the following Microsoft-signed applications 
     <Deny  ID="ID_DENY_ADDINPROCESS"      FriendlyName="AddInProcess.exe"            FileName="AddInProcess.exe" MinimumFileVersion="65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_ADDINPROCESS32"    FriendlyName="AddInProcess32.exe"          FileName="AddInProcess32.exe" MinimumFileVersion="65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_ADDINUTIL"         FriendlyName="AddInUtil.exe"               FileName="AddInUtil.exe" MinimumFileVersion="65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_WSL"               FriendlyName="wsl.exe"                     FileName="wsl.exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_WSLCONFIG"         FriendlyName="wslconfig.exe"               FileName="wslconfig.exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_WSLHOST"           FriendlyName="wslhost.exe"                 FileName="wslhost.exe" MinimumFileVersion = "65535.65535.65535.65535" />   
+    <Deny  ID="ID_DENY_INFINSTALL"        FriendlyName="infdefaultinstall.exe"       FileName="infdefaultinstall.exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_LXRUN"             FriendlyName="lxrun.exe"                   FileName="lxrun.exe" MinimumFileVersion = "65535.65535.65535.65535" />
 
     <Deny ID="ID_DENY_D_1" FriendlyName="Powershell 1" Hash="02BE82F63EE962BCD4B8303E60F806F6613759C6" />
     <Deny ID="ID_DENY_D_2" FriendlyName="Powershell 2" Hash="13765D9A16CC46B2113766822627F026A68431DF" />
@@ -392,6 +397,46 @@ Microsoft recommends that you block the following Microsoft-signed applications 
     <Deny ID="ID_DENY_D_246" FriendlyName="PowerShell 246" Hash="0C4688AACD02829850DE0F792AC06D3C87895412A910EA76F7F9BF31B3B4A3E9"/>
     <Deny ID="ID_DENY_D_247" FriendlyName="PowerShell 247" Hash="6DC048AFA50B5B1B0AD7DD3125AC83D46FED730A"/>
     <Deny ID="ID_DENY_D_248" FriendlyName="PowerShell 248" Hash="432F666CCE8CD222484E263AE02F63E0038143DD6AD07B3EB1633CD3C498C13D"/>
+    <!--pubprn.vbs-->
+    <!--rs2 x86fre-->
+    <Deny ID="ID_DENY_D_249" FriendlyName="PubPrn 249" Hash="68E96BE23748AA680D5E1E557778901F332ED5D3" />
+    <Deny ID="ID_DENY_D_250" FriendlyName="PubPrn 250" Hash="8FA30B5931806565C2058E565C06AD5F1C5A48CDBE609975EB31207C25214063" />
+    <!--rs2 amd64fre-->
+    <Deny ID="ID_DENY_D_251" FriendlyName="PubPrn 251" Hash="32C4B29FE428B1DF473F3F4FECF519D285E93521" />
+    <Deny ID="ID_DENY_D_252" FriendlyName="PubPrn 252" Hash="D44FB563198D60DFDC91608949FE2FADAD6161854D084EB1968C558AA36513C7" />
+    <!--rs2 amd64chk-->
+    <Deny ID="ID_DENY_D_253" FriendlyName="PubPrn 253" Hash="9EDBEF086D350863F29175F5AB5178B88B142C75" />
+    <Deny ID="ID_DENY_D_254" FriendlyName="PubPrn 254" Hash="9B22C98351F2B6DEDDCED0D805C65F5B166FF519A8DF41EB242CB909471892EB" />
+    <!--rs2 x86chk-->
+    <Deny ID="ID_DENY_D_255" FriendlyName="PubPrn 255" Hash="8A3B30F345C43246B3500721CFEEADBAC6B9D9C6" />
+    <Deny ID="ID_DENY_D_256" FriendlyName="PubPrn 256" Hash="37C20BF20A2BBACE50957F8D0AB3FD16174BC005E79D47E51E899AFD9E4B7724" />
+    <!--rs2 woafre-->
+    <Deny ID="ID_DENY_D_257" FriendlyName="PubPrn 257" Hash="C659DAD2B37375781E2D584E16AAE2A10B5A1156" />
+    <Deny ID="ID_DENY_D_258" FriendlyName="PubPRn 258" Hash="EBDACA86F10AC0446D60CC75628EC7A370B1E2236E6D20F22372F91033B6D429" />
+    <!--rs3 amd64chk-->
+    <Deny ID="ID_DENY_D_259" FriendlyName="PubPrn 259" Hash="C9D6394BBFF8CD9C6590F08C54EC6AFDEB5CFFB4" />
+    <Deny ID="ID_DENY_D_260" FriendlyName="PubPrn 260" Hash="518E4EA7A2B70713E1AEC6E7E75A488C39384B625C5F2779073E9294CBF2BD9F" />
+    <!--rs3 amd64fre-->
+    <Deny ID="ID_DENY_D_261" FriendlyName="PubPrn 261" Hash="C9D6394BBFF8CD9C6590F08C54EC6AFDEB5CFFB4" />
+    <Deny ID="ID_DENY_D_262" FriendlyName="PubPrn 262" Hash="518E4EA7A2B70713E1AEC6E7E75A488C39384B625C5F2779073E9294CBF2BD9F" />
+    <!--rs3 arm64chk-->
+    <Deny ID="ID_DENY_D_263" FriendlyName="PubPrn 263" Hash="763A652217A1E30F2D288B7F44E08346949A02CD" />
+    <Deny ID="ID_DENY_D_264" FriendlyName="PubPrn 264" Hash="FCDDA212B06602F642B29FC05316EF75E4EE9975E6E8A9526E842BE2EA237C5D" />
+    <!--rs3 arm64fre-->
+    <Deny ID="ID_DENY_D_265" FriendlyName="PubPrn 265" Hash="763A652217A1E30F2D288B7F44E08346949A02CD" />
+    <Deny ID="ID_DENY_D_266" FriendlyName="PubPrn 266" Hash="FCDDA212B06602F642B29FC05316EF75E4EE9975E6E8A9526E842BE2EA237C5D" />
+    <!--rs3 woachk-->
+    <Deny ID="ID_DENY_D_267" FriendlyName="PubPrn 267" Hash="60FD28D770B23A0477679311D247DA4D5C61074C" />
+    <Deny ID="ID_DENY_D_268" FriendlyName="PubPrn 268" Hash="D09A4B2EA611CDFDC6DCA44314289B622B2A5EDA09716EF4A16B91EC90BFBA8F" />
+    <!--rs3 woafre-->
+    <Deny ID="ID_DENY_D_269" FriendlyName="PubPrn 269" Hash="60FD28D770B23A0477679311D247DA4D5C61074C" />
+    <Deny ID="ID_DENY_D_270" FriendlyName="PubPrn 270" Hash="D09A4B2EA611CDFDC6DCA44314289B622B2A5EDA09716EF4A16B91EC90BFBA8F" />
+    <!--rs3 x86chk-->
+    <Deny ID="ID_DENY_D_271" FriendlyName="PubPrn 271" Hash="47CBE201ED224BF3F5C322F7A49EF64469AF2E1A" />
+    <Deny ID="ID_DENY_D_272" FriendlyName="PubPrn 272" Hash="24855B9CC420719D5AB93F4F1589CE09E4063E4FC98681BD91A1D18A3C8ACB43" />
+    <!--rs3 x86fre-->
+    <Deny ID="ID_DENY_D_273" FriendlyName="PubPrn 273" Hash="47CBE201ED224BF3F5C322F7A49EF64469AF2E1A" />
+    <Deny ID="ID_DENY_D_274" FriendlyName="PubPrn 274" Hash="24855B9CC420719D5AB93F4F1589CE09E4063E4FC98681BD91A1D18A3C8ACB43" />
 
   </FileRules>
   <!--Signers-->
@@ -430,6 +475,11 @@ Microsoft recommends that you block the following Microsoft-signed applications 
           <FileRuleRef RuleID="ID_DENY_ADDINPROCESS"/>
           <FileRuleRef RuleID="ID_DENY_ADDINPROCESS32"/>
           <FileRuleRef RuleID="ID_DENY_ADDINUTIL"/>
+          <FileRuleRef RuleID="ID_DENY_WSL"/>
+          <FileRuleRef RuleID="ID_DENY_WSLCONFIG"/>
+          <FileRuleRef RuleID="ID_DENY_WSLHOST"/>
+          <FileRuleRef RuleID="ID_DENY_INFINSTALL"/>
+          <FileRuleRef RuleID="ID_DENY_LXRUN"/>
           <FileRuleRef RuleID="ID_DENY_D_1" />
           <FileRuleRef RuleID="ID_DENY_D_2" />
           <FileRuleRef RuleID="ID_DENY_D_3" />
@@ -678,6 +728,32 @@ Microsoft recommends that you block the following Microsoft-signed applications 
           <FileRuleRef RuleID="ID_DENY_D_246"/>
           <FileRuleRef RuleID="ID_DENY_D_247"/>
           <FileRuleRef RuleID="ID_DENY_D_248"/>
+          <FileRuleRef RuleID="ID_DENY_D_249"/>
+          <FileRuleRef RuleID="ID_DENY_D_250"/>
+          <FileRuleRef RuleID="ID_DENY_D_251"/>
+          <FileRuleRef RuleID="ID_DENY_D_252"/>
+          <FileRuleRef RuleID="ID_DENY_D_253"/>
+          <FileRuleRef RuleID="ID_DENY_D_254"/>
+          <FileRuleRef RuleID="ID_DENY_D_255"/>
+          <FileRuleRef RuleID="ID_DENY_D_256"/>
+          <FileRuleRef RuleID="ID_DENY_D_257"/>
+          <FileRuleRef RuleID="ID_DENY_D_258"/>
+          <FileRuleRef RuleID="ID_DENY_D_259"/>
+          <FileRuleRef RuleID="ID_DENY_D_260"/>
+          <FileRuleRef RuleID="ID_DENY_D_261"/>
+          <FileRuleRef RuleID="ID_DENY_D_262"/>
+          <FileRuleRef RuleID="ID_DENY_D_263"/>
+          <FileRuleRef RuleID="ID_DENY_D_264"/>
+          <FileRuleRef RuleID="ID_DENY_D_265"/>
+          <FileRuleRef RuleID="ID_DENY_D_266"/>
+          <FileRuleRef RuleID="ID_DENY_D_267"/>
+          <FileRuleRef RuleID="ID_DENY_D_268"/>
+          <FileRuleRef RuleID="ID_DENY_D_269"/>
+          <FileRuleRef RuleID="ID_DENY_D_270"/>
+          <FileRuleRef RuleID="ID_DENY_D_271"/>
+          <FileRuleRef RuleID="ID_DENY_D_272"/>
+          <FileRuleRef RuleID="ID_DENY_D_273"/>
+          <FileRuleRef RuleID="ID_DENY_D_274"/>
         </FileRulesRef>
       </ProductSigners>
     </SigningScenario>
