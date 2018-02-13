@@ -281,6 +281,8 @@
 #### [SurfaceHub DDF file](surfacehub-ddf-file.md)
 ### [TPMPolicy CSP](tpmpolicy-csp.md)
 #### [TPMPolicy DDF file](tpmpolicy-ddf-file.md)
+### [UEFI CSP](uefi-csp.md)
+#### [UEFI DDF file](uefi-ddf.md)
 ### [UnifiedWriteFilter CSP](unifiedwritefilter-csp.md)
 #### [UnifiedWriteFilter DDF file](unifiedwritefilter-ddf.md)
 ### [Update CSP](update-csp.md)

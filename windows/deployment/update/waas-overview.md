@@ -4,10 +4,10 @@ description: In Windows 10, Microsoft has streamlined servicing to make operatin
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: DaniHalfin
+author: Jaimeo
 ms.localizationpriority: high
-ms.author: daniha
-ms.date: 10/16/2017
+ms.author: jaimeo
+ms.date: 02/09/2018
 ---
 
 # Overview of Windows as a service
@@ -23,7 +23,10 @@ ms.date: 10/16/2017
 
 The Windows 10 operating system introduces a new way to build, deploy, and service Windows: Windows as a service. Microsoft has reimagined each part of the process, to simplify the lives of IT pros and maintain a consistent Windows 10 experience for its customers. These improvements focus on maximizing customer involvement in Windows development, simplifying the deployment and servicing of Windows client computers, and leveling out the resources needed to deploy and maintain Windows over time. 
 
-<iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/qSAsiM01GOU" frameborder="0" allowfullscreen></iframe>
+Click the following Microsoft Mechanics video for an overview of the release model, particularly the Semi-Annual Channel.
+
+
+[![YouTube video of Michael Niehouse explaining how the Semi-Annual Channel works](images/SAC_vid_crop.jpg)](https://youtu.be/qSAsiM01GOU) 
 
 ## Building
 
@@ -98,7 +101,7 @@ In Windows 10, rather than receiving several updates each month and trying to fi
 
 To align with the new method of delivering feature updates and quality updates in Windows 10, Microsoft introduced the concept of servicing channels to allow customers to designate how frequently their individual devices are updated. For example, an organization may have test devices that the IT department can update with new features as soon as possible, and then specialized devices that require a longer feature update cycle to ensure continuity. 
 
-With that in mind, Windows 10 offers 3 servicing channels. The [Windows Insider Program](#windows-insider) provides organizations with the opportunity to test and provide feedback on features that will be shipped in the next feature update. The [Semi-Annual Channel](#semi-annual-channel) provides new functionality with twice-per-year feature update releases. Organizations can choose when to deploy updates from the Semi-Annual Channel. The [Long Term Servicing Channel](#long-term-servicing-channel), which is designed to be used only for specialized devices (which typically don't run Office) such as those that control medical equipment or ATM machines, receives new feature releases about every three years. For details about the versions in each servicing channel, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info.aspx).
+With that in mind, Windows 10 offers 3 servicing channels. The [Windows Insider Program](#windows-insider) provides organizations with the opportunity to test and provide feedback on features that will be shipped in the next feature update. The [Semi-Annual Channel](#semi-annual-channel) provides new functionality with twice-per-year feature update releases. Organizations can choose when to deploy updates from the Semi-Annual Channel. The [Long Term Servicing Channel](#long-term-servicing-channel), which is designed to be used only for specialized devices (which typically don't run Office) such as those that control medical equipment or ATM machines, receives new feature releases every two to three years. For details about the versions in each servicing channel, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info.aspx).
 
 The concept of servicing channels is new, but organizations can use the same management tools they used to manage updates and upgrades in previous versions of Windows. For more information about the servicing tool options for Windows 10 and their capabilities, see [Servicing tools](#servicing-tools).
 

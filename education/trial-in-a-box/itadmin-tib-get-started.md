@@ -35,9 +35,8 @@ To get the most out of Microsoft Education, we've pre-configured your tenant for
 If you run into any problems while following the steps in this guide, or you have questions about Trial in a Box or Microsoft Education, see [Microsoft Education Trial in a Box Support](support-options.md).
 
 </br>
-<!-- hiding placeholder
-<center><iframe width="560" height="315" src="https://aka.ms/EDU-IT-Admin-Setup" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
--->
+
+> [!VIDEO https://www.youtube.com/embed/cVVKCpO2tyI]
 
 </br>
 
@@ -45,9 +44,10 @@ If you run into any problems while following the steps in this guide, or you hav
 ## <a name="it-task1"></a>1. Log in to Device A with your IT Admin credentials and connect to the school network
 To try out the IT admin tasks, start by logging in as an IT admin.
 
-1. Log in to **Device A** using the **Administrator Username** and **Administrator Password** included in the **Credentials Sheet** located in your kit.
-2. Connect to your school's Wi-Fi network or connect with a local Ethernet connection.
-3. Note the serial numbers on the Trial in a Box devices and register both devices with the hardware manufacturer to activate the manufacturer's warranty.
+1. Turn on **Device A** and ensure you plug in the PC to an electrical outlet.
+2. Log in to **Device A** using the **Administrator Username** and **Administrator Password** included in the **Credentials Sheet** located in your kit.
+3. Connect to your school's Wi-Fi network or connect with a local Ethernet connection.
+4. Note the serial numbers on the Trial in a Box devices and register both devices with the hardware manufacturer to activate the manufacturer's warranty.
 
 </br>
 
