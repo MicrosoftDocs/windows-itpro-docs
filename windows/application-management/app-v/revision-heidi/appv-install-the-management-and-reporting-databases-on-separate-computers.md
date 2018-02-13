@@ -25,9 +25,9 @@ Use the following procedure to install the database server and management server
 4. On the **Feature selection** page, select the components you want to install by first selecting the **Management Server Database** checkbox, then selecting **Next**.
 5. On the **Installation location** page, accept the default location and select **Next**.
 6. On the initial **Create new management server database** page, accept the default selections if appropriate, then select **Next**.
-  * If you are using a custom SQL Server instance, then select **Use a custom instance** and type the name of the instance.
-  * If you are using a custom database name, then select **Custom configuration** and type the database name.
-7. On the next **Create new management server database** page, select **Use a remote computer**, and type the remote machine account using the following format: ```Domain\\MachineAccount```.
+  * If you are using a custom SQL Server instance, select **Use a custom instance** and enter the name of the instance.
+  * If you are using a custom database name, select **Custom configuration** and enter the database name.
+7. On the next **Create new management server database** page, select **Use a remote computer**, then enter the remote machine account using the following format: ```Domain\\MachineAccount```.
 
     >[!NOTE]
     >If you plan to deploy the management server on the same computer you must select **Use this local computer**. Specify the user name for the management server **Install Administrator** using the following format: ```Domain\\AdministratorLoginName```. After that, select **Next**.
@@ -41,9 +41,9 @@ Use the following procedure to install the database server and management server
 4. On the **Feature selection** page, select the components you want to install by first selecting the **Reporting Server Database** checkbox, then selecting **Next**.
 5. On the **Installation Location** page, accept the default location and select **Next**.
 6. On the initial **Create new management server database** page, accept the default selections if appropriate, then select **Next**.
- * If you're using a custom SQL Server instance, then select **Use a custom instance** and type the name of the instance.
- * If you're using a custom database name, then select **Custom configuration** and type the database name.
-7. On the next **Create new management server database** page, select **Use a remote computer**, and type the remote machine account using the following format: ```Domain\\MachineAccount```.
+ * If you're using a custom SQL Server instance, select **Use a custom instance** and enter the instance name.
+ * If you're using a custom database name, select **Custom configuration** and enter the database name.
+7. On the next **Create new management server database** page, select **Use a remote computer**, and enter the remote machine account using the following format: ```Domain\\MachineAccount```.
 
     >[!NOTE]
     >If you plan to deploy the reporting server on the same computer you must select **Use this local computer**. Specify the user name for the reporting server **Install Administrator** using the following format: Domain\\AdministratorLoginName. After that, select **Next**.
