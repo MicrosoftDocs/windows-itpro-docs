@@ -51,6 +51,26 @@ If your client secret expires or if you've misplaced the copy provided when you 
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
 
+## Error when getting a refresh access token
+If you encounter an error when trying to get a refresh token when using the threat intelligence API or SIEM tools, you'll need to add reply URL for relevant application in Azure Active Directory.
+
+1. Login to the [Azure management portal](https://ms.portal.azure.com).
+
+2. Select **Azure Active Directory**.
+
+3. Select your tenant.
+
+4. Click **App Registrations**. Then in the applications list, select the application:
+    - For SIEM: `https://WindowsDefenderATPSiemConnector`
+    - For Threat intelligence API: `https://WindowsDefenderATPCustomerTiConnector`
+
+5. Add the following URL:
+   - For US:  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback`.
+   - For Europe: `https://winatpmanagement-eu.securitycenter.windows.com/UserAuthenticationCallback`
+
+6. Click **Save**.
+
+
 
 ## Related topics
 - [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
