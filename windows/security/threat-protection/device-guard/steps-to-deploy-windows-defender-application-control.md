@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 author: brianlic-msft
-ms.date: 102/13/2018
+ms.date: 02/13/2018
 ---
 
 # Steps to Deploy Windows Defender Application Control
