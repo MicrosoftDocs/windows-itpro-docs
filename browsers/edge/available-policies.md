@@ -102,6 +102,7 @@ This policy setting lets you decide whether to use the Microsoft Compatibility L
 This policy setting lets you decide whether users can change their search engine. Important. You can only use this setting with domain-joined or MDM-enrolled devices. 
 
 For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).
+
 | If you… | Then… |
 | --- | --- |
 | Enable or don’t configure this setting (default) | Employees can add new search engines and change the default used in the Address bar from within Microsoft Edge Settings. | 
@@ -252,7 +253,10 @@ This policy setting lets you configure whether to turn on Windows Defender Smart
 ### Disable lockdown of Start pages
 >*Supported versions: Windows 10, version 1703*
 
-This policy setting lets you disable the lockdown of Start pages if the Configure Start pages setting is in effect <span style="background: #ffff99;">[@Reviewer: shouldn't this be “…is enabled” instead of "...is in effect"?]</span>. This setting only applies to domain-joined or MDM-enrolled devices. For more info, see the [Microsoft browser extension policy](aka.ms/browserpolicy).
+This policy setting lets you disable the lockdown of Start pages if the Configure Start pages setting is in effect <span style="background: #ffff99;">[@Reviewer: shouldn't this be “…is enabled” instead of "...is in effect"?]</span>. This setting only applies to domain-joined or MDM-enrolled devices. 
+
+For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).
+
 | If you… | Then… |
 | --- | --- |
 | Enable this setting | You cannot lock down Start pages that are configured using the “Configure Start pages” setting. Employees can, therefore, modify the pages. |
@@ -344,7 +348,8 @@ This policy setting lets you decide whether your intranet sites should all open 
 
 This policy setting applies only to domain-joined or MDM-enrolled devices and lets you configure the default search engine for Microsoft Edge. Employees can change the default search engine at any time unless you disable the "Allow search engine customization" setting, which restricts any changes. 
 
-For more info, see the [Microsoft browser extension policy](aka.ms/browserpolicy).
+For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).
+
 | If you… | Then… |
 | --- | --- |
 | Enable this setting | To set a default search engine, you must add a link to your OpenSearch XML file, including at least the short name and https URL of the search engine, using this format:<br><br>`https://fabrikam.com/opensearch.xml` |
