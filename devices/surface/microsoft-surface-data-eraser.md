@@ -10,7 +10,7 @@ ms.pagetype: surface, devices, security
 ms.sitesec: library
 author: brecords
 ms.author: jdecker
-ms.date: 01/03/2018
+ms.date: 02/12/2018
 ---
 
 # Microsoft Surface Data Eraser
@@ -139,25 +139,32 @@ After you create a Microsoft Surface Data Eraser USB stick, you can boot a suppo
 
 8.  Click the **Yes** button to continue erasing data on the Surface device.
 
+>[!NOTE]
+>When you run Surface Data Eraser on the Surface Data Eraser USB drive, a log file is generated in the **SurfaceDataEraserLogs** folder.
+
 ## Changes and updates
 
 Microsoft Surface Data Eraser is periodically updated by Microsoft. For information about the changes provided in each new version, see the following:
 
-### Version 3.2.45
+### Version 3.2.46.0
+This version of Microsoft Surface Data Eraser adds support for the following:
+
+- Surface Pro with LTE Advanced
+
+
+### Version 3.2.45.0
 
 This version of Microsoft Surface Data Eraser adds support for the following:
 
 - Surface Book 2
 
-- Surface Pro with LTE Advanced
-
 - Surface Pro 1TB
 
 >[!NOTE]
->Surface Data Eraser v3.2.45 and above can be used to restore Surface Pro or Surface Laptop devices with the 1TB storage option in the scenario that the device shows two separate 512GB volumes or encounters errors when attempting to deploy or install Windows 10. See [Surface Pro Model 1796 and Surface Laptop 1TB display two drives](https://support.microsoft.com/en-us/help/4046105/surface-pro-model-1796-and-surface-laptop-1tb-display-two-drives) for more information.
+>Surface Data Eraser v3.2.45.0 and above can be used to restore Surface Pro or Surface Laptop devices with the 1TB storage option in the scenario that the device shows two separate 512GB volumes or encounters errors when attempting to deploy or install Windows 10. See [Surface Pro Model 1796 and Surface Laptop 1TB display two drives](https://support.microsoft.com/en-us/help/4046105/surface-pro-model-1796-and-surface-laptop-1tb-display-two-drives) for more information.
 
 
-### Version 3.2.36
+### Version 3.2.36.0
 
 This version of Microsoft Surface Data Eraser adds support for the following:
 
