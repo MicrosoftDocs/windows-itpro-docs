@@ -11,19 +11,16 @@ ms.date: 10/16/2017
 
 # Security enhancements for Microsoft Edge
 
-**Applies to:**
-
-- Windows 10
-- Windows 10 Mobile
+>Applies to: Windows 10, Windows 10 Mobile
 
 Microsoft Edge is designed with significant security improvements, helping to defend people from increasingly sophisticated and prevalent web-based attacks against Windows.
 
 ## Help to protect against web-based security threats
 While most websites are safe, some sites have been designed to steal personal information or gain access to your system’s resources. Thieves by nature don’t care about rules, and will use any means to take advantage of victims, most often using trickery or hacking:
 
-- **Trickery.** Means using things like “phishing” attacks to convince a person to enter a banking password into a website that looks like the bank, but isn’t.
+- **Trickery** uses things like “phishing” attacks to convince a person to enter a banking password into a website that looks like the bank, but isn’t.
 
-- **Hacking.** Means attacking a system through malformed content that exploits subtle flaws in a browser, or in various browser extensions, such as video decoders. This exploit lets an attacker run code on a device, taking over first a browsing session, and perhaps ultimately the entire device.
+- **Hacking** attacks a system through malformed content that exploits subtle flaws in a browser, or in various browser extensions, such as video decoders. This exploit lets an attacker run code on a device, taking over first a browsing session, and perhaps ultimately the entire device.
 
 While trickery and hacking are threats faced by every browser, it’s important that we explore how Microsoft Edge addresses these threats and is helping make the web a safer experience.
 
@@ -55,8 +52,8 @@ The Microsoft EdgeHTML engine also helps to defend against hacking through these
 
 - Support for the [HTTP Strict Transport Security (HSTS)](https://developer.microsoft.com/microsoft-edge/platform/documentation/dev-guide/security/HSTS/) security feature (IETF-standard compliant). This helps ensure that connections to important sites, such as to your bank, are always secured.
 
-    **Note**<br>
-    Both Microsoft Edge and Internet Explorer 11 support HSTS.
+>[!NOTE]
+>Both Microsoft Edge and Internet Explorer 11 support HSTS.
 
 #### All web content runs in an app container sandbox
 Internet Explorer 7 on Windows Vista was the first web browser to provide a browsing sandbox, called [Protected Mode](http://windows.microsoft.com/windows-vista/What-does-Internet-Explorer-protected-mode-do). Protected Mode forced the part of the browser that rendered web content to run with less privilege than the browser controls or the user, providing a level of isolation and protection should a malicious website attempt to exploit a bug in the browser or one of its plug-ins.
