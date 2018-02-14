@@ -40,7 +40,7 @@ A typical query starts with a table name followed by a series of operators separ
 
 We start with the table name FileCreationEvents and add piped elements as needed.
 
-First, we define a time filter to review only records from the last 1 day. We then add a filter on the _FolderPath_ field to contain only the paths \AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup.
+First, we define a time filter to review only records from the last 1 day. We then add a filter on the _FolderPath_ field to contain only the path \AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup.
 
 Finally, we limit the results to 100 and click **Run query**.
 
@@ -67,20 +67,20 @@ For more information on the query language and supported operators, see [Query L
 
 The following tables are exposed as part of advanced hunting:
 
-- **ProcessCreationEvents** – stores all process creation events telemetry of the organization.
+- **ProcessCreationEvents** - stores all process creation events telemetry of the organization.
 - **NetworkCommunicationEvents** - stores all network communication events telemetry of the organization.
 - **FileCreationEvents** - stores all file creation, modification and rename events telemetry of the organization.
 - **AlertEvents** - stores all alerts related information trigged in the organization.
 - **RegistryEvents** - stores all registry key creation, modification, rename and deletion events telemetry of the organization.
-- **LogonEvents** – stores all Login events telemetry of the organization.
-- **ImageLoadEvents** – stores all load dll events telemetry of the organization.
-- **MiscEvents** – stores several types of events, including Exploit Guard, Smart Screen, Application Guard, and Firewall events.
+- **LogonEvents** - stores all Login events telemetry of the organization.
+- **ImageLoadEvents** - stores all load dll events telemetry of the organization.
+- **MiscEvents** - stores several types of events, including Exploit Guard, Smart Screen, Application Guard, and Firewall events.
 
 ## Results set in advanced hunting
 
 The results set has several capabilities to provide you with effective investigation, including:
 
-- Columns that return entity-related objects, such as Machine name, Machine ID, File name, SHA1, user, IP, and URL, are linked to their entity pages in the Windows Defender ATP portal.
+- Columns that return entity-related objects, such as Machine name, Machine ID, File name, SHA1, User, IP, and URL, are linked to their entity pages in the Windows Defender ATP portal.
 - If you right-click on a cell in the results set, you can add a filter to your written query. The current filtering options are **include** or **exclude**; these cell values are part of the row set. 
  
 ![Image of Windows Defender ATP advanced hunting results set](images/atp-advanced-hunting-results-set.png)
