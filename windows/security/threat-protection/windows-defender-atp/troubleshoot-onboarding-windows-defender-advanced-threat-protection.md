@@ -307,5 +307,6 @@ For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us
 
 
 ## Related topics
+- [Troubleshoot Windows Defender ATP](troubleshoot-windows-defender-advanced-threat-protection.md)
 - [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
 - [Configure endpoint proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
