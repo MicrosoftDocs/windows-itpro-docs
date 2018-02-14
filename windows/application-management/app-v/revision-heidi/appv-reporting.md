@@ -8,24 +8,24 @@ ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ---
-# About App-V Reporting
+# About App-V reporting
 
 >Applies to Windows 10, version 1607.
 
-Application Virtualization (App-V) includes a built-in reporting feature that helps you collect information about computers running the App-V client as well as information about virtual application package usage. You can use this information to generate reports from a centralized database.
+Application Virtualization (App-V) includes a built-in reporting feature that collects information about computers running the App-V client and virtual application package usage. You can generate reports from a centralized database with this information.
 
-## App-V Reporting overview
+## App-V reporting overview
 
 The following list displays the end–to-end high-level workflow for reporting in App-V.
 
-1. The App-V Reporting server has the following prerequisites:
+1. The App-V Reporting server requires the following things:
 
  * Internet Information Service (IIS) web server role
  * Windows Authentication role (under **IIS / Security**)
  * SQL Server installed and running with SQL Server Reporting Services (SSRS)
 
     To confirm SQL Server Reporting Services is running, enter <http://localhost/Reports> in a web browser as administrator on the server that will host App-V Reporting. The SQL Server Reporting Services Home page should appear.
-2. Install the App-V reporting server and associated database. For more information about installing the reporting server see [How to install the Reporting Server on a Standalone Computer and Connect it to the Database](appv-install-the-reporting-server-on-a-standalone-computer.md). Configure the time when the computer running the App-V client should send data to the reporting server.
+2. Install the App-V reporting server and associated database. For more information about installing the reporting server see [How to install the Reporting Server on a standalone computer and connect it to the database](appv-install-the-reporting-server-on-a-standalone-computer.md). Configure the time when the computer running the App-V client should send data to the reporting server.
 3. If you are not using an electronic software distribution system such as Configuration Manager to view reports then you can define reports in SQL Server Reporting Service. Download predefined appvshort Reports from the Download Center at [Application Virtualization SSRS Reports](https://www.microsoft.com/en-us/download/details.aspx?id=42630).
 
     >[!NOTE]
@@ -39,7 +39,7 @@ The following list displays the end–to-end high-level workflow for reporting i
     To immediately send App-V report data, run **Send-AppvClientReport** on the App-V client.
 
     For more information about configuring reporting on the App-V client, see [About client configuration settings](appv-client-configuration-settings.md). To administer App-V Reporting with Windows PowerShell, see [How to enable reporting on the App-V client by using PowerShell](appv-enable-reporting-on-the-appv-client-with-powershell.md).
-5. After the reporting server receives the data from the App-V client it sends the data to the reporting database. When the database receives and processes the client data, a successful reply is sent to the reporting server and then a notification is sent to the App-V client.
+5. After the reporting server receives the data from the App-V client it sends the data to the reporting database. When the database receives and processes the client data, a successful reply is sent to the reporting server, which then notifies the App-V client.
 6. When the App-V client receives the success notification, it empties the data cache to conserve space.
 
     >[!NOTE]
@@ -49,30 +49,30 @@ The following list displays the end–to-end high-level workflow for reporting i
 
 ### App-V reporting server frequently asked questions
 
-The following list displays answers to common questions about App-V reporting.
+The following sections provide answers to frequently asked questions about how App-V reporting works.
 
-#### What is the frequency that reporting information is sent to the reporting database?
+#### How frequently is reporting information sent to the reporting database?
 
-The frequency depends on how the reporting task is configured on the computer running the App-V client. You must configure the frequency or interval for sending the reporting data. App-V Reporting is not enabled by default.
+Frequency depends on the computer running the App-V client's reporting configuration. You must configure the frequency or interval for sending the reporting data manually, as App-V reporting is not enabled by default.
 
 #### What information is stored in the reporting server database?
 
-The following list displays what is stored in the reporting database:
+The following information is stored in the reporting database:
 
 * The operating system running on the computer running the App-V client: host name, version, service pack, type - client/server, processor architecture.
-* App-V Client information: version.
+* App-V client information: version.
 * Published package list: GUID, version GUID, name.
 * Application usage information: name, version, streaming server, user (domain\alias), package version GUID, launch status and time, shutdown time.
 
 #### What is the average volume of information that is sent to the reporting server?
 
-It depends. The following list displays the three sets of the data sent to the reporting server:
+It depends. Three sets of data can be sent to the reporting server:
 
-* Operating system, and App-V client information. ~150 Bytes, every time this data is sent.
-* Published package list. ~7 KB for 30 packages. This is sent only when the package list is updated with a publishing refresh, which is done infrequently; if there is no change, this information is not sent.
-* Virtual application usage information – about 0.25KB per event. Opening and closing count as one event if both occur before sending the information. When sending using a scheduled task, only the data since the last successful upload is sent to the server. If sending manually through the Windows PowerShell cmdlet, there is an optional argument that controls if the data needs to be re-sent next time around – that argument is **DeleteOnSuccess**.
+* Operating system and App-V client information, which is about 150 Bytes every time it gets sent to the server.
+* Published package lists, which are about 7 KB per 30 packages. This is sent only when the package list is updated with a publishing refresh, which is done infrequently; if there is no change, this information is not sent.
+* Virtual application usage information is about 0.25 KB per event. Opening and closing count as one event if both occur before sending the information. When sending using a scheduled task, only the data since the last successful upload is sent to the server. If sending manually through the Windows PowerShell cmdlet, there is an optional argument called **DeleteOnSuccess** that controls if the data needs to be re-sent the next time around.
 
-For example, if twenty applications are opened and closed and reporting information is scheduled to be sent daily, the typical daily traffic should be about 0.15KB + 20 × 0.25 KB, or about 5 KB/user.
+For example, if twenty applications are opened and closed and reporting information is scheduled to be sent daily, the typical daily traffic should be about 0.15 KB + 20 × 0.25 KB, or about 5 KB/user.
 
 #### Can I schedule reporting?
 
@@ -80,16 +80,15 @@ Yes. Besides manually sending reporting using Windows PowerShell cmdlets (**Send
 
 * Using a Windows PowerShell cmdlet: **Set-AppvClientConfiguration**. For example:
 
-```PowerShell
-Set-AppvClientConfiguration -ReportingEnabled 1 -ReportingServerURL http://any.com/appv-reporting
-```
-    
-For a complete list of client configuration settings see [About Client Configuration Settings](appv-client-configuration-settings.md) and look for the following entries: **ReportingEnabled**, **ReportingServerURL**, **ReportingDataCacheLimit**, **ReportingDataBlockSize**, **ReportingStartTime**, **ReportingRandomDelay**, **ReportingInterval**.
-    
-* By using Group Policy. If distributed using the domain controller, the settings are the same as previously listed.
-    
->[!NOTE]
->Group Policy settings override local settings configured using Windows PowerShell.
+    ```PowerShell
+    Set-AppvClientConfiguration -ReportingEnabled 1 -ReportingServerURL http://any.com/appv-reporting
+    ```
+
+    For a complete list of client configuration settings, go to [About client configuration settings](appv-client-configuration-settings.md) and look for the following entries: **ReportingEnabled**, **ReportingServerURL**, **ReportingDataCacheLimit**, **ReportingDataBlockSize**, **ReportingStartTime**, **ReportingRandomDelay**, **ReportingInterval**.
+* Using Group Policy. If distributed using the domain controller, the settings are the same as previously listed.
+
+    >[!NOTE]
+    >Group Policy settings override local settings configured using Windows PowerShell.
 
 ## App-V Client Reporting
 
