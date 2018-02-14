@@ -52,6 +52,9 @@
 ##### [Investigate a domain](windows-defender-atp\investigate-domain-windows-defender-advanced-threat-protection.md)
 ##### [Investigate a user account](windows-defender-atp\investigate-user-windows-defender-advanced-threat-protection.md)
 
+#### [Automated investigations](windows-defender-atp\automated-investigations-windows-defender-advanced-threat-protection.md)
+
+
 ####Machines list
 ##### [View and organize the Machines list](windows-defender-atp\machines-view-overview-windows-defender-advanced-threat-protection.md)
 ##### [Manage machine group and tags](windows-defender-atp\investigate-machines-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags)
