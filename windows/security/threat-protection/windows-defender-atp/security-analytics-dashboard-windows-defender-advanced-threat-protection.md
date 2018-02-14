@@ -72,7 +72,7 @@ The numbers beside the green triangle icon on each recommended action represents
 >[!IMPORTANT]
 >Recommendations that do not display a green triangle icon are informational only and no action is required. 
 
-Clicking **View machines** in a specific recommendation opens up the **Machines list** with filters applied to show only the list of machines where the the recommendation is applicable. You can export the list in Excel to create a target collection and apply relevant policies using a management solution of your choice. 
+Clicking **View machines** in a specific recommendation opens up the **Machines list** with filters applied to show only the list of machines where the recommendation is applicable. You can export the list in Excel to create a target collection and apply relevant policies using a management solution of your choice. 
 
 The following image shows an example list of machines where the EDR sensor is not turned on.
 
