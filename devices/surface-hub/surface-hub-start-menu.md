@@ -177,3 +177,7 @@ This example shows a link to a website and a link to a .pdf file.
 </LayoutModificationTemplate>
 
 ```
+
+## More information
+
+- [Blog post: Changing Surface Hub’s Start Menu](https://blogs.technet.microsoft.com/y0av/2018/02/13/47/)
