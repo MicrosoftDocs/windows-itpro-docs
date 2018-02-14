@@ -91,7 +91,7 @@ From here on, you'll need to finish the account creation process using PowerShel
 In order to run cmdlets used by these PowerShell scripts, the following must be installed for the admin PowerShell console:
 
 -   [Microsoft Online Services Sign-In Assistant for IT Professionals BETA](https://go.microsoft.com/fwlink/?LinkId=718149)
--   [Windows Azure Active Directory Module for Windows PowerShell](https://go.microsoft.com/fwlink/p/?linkid=236297)
+-   [Windows Azure Active Directory Module for Windows PowerShell](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/WindowsAzurePowershellGet.3f.3f.3fnew.appids)
 -   [Skype for Business Online, Windows PowerShell Module](http://www.microsoft.com/download/details.aspx?id=39366)
 
 ### Connecting to online services
