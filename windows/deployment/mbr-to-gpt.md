@@ -246,7 +246,7 @@ For Windows to remain bootable after the conversion, an EFI system partition (ES
 If the existing MBR system partition is not reused for the ESP, it is no longer used by the boot process after the conversion. Other partitions are not modified.
 
 >[!IMPORTANT]
->If the existing MBR system partition is not reused for the ESP, it might be assigned a drive letter. 
+>If the existing MBR system partition is not reused for the ESP, it might be assigned a drive letter. If you do not wish to use this small partition, you must manually hide the drive letter.
 
 ### Partition type mapping and partition attributes
 
