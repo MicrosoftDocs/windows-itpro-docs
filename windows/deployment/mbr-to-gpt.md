@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.date: 10/27/2017
+ms.date: 02/13/2018
 ms.localizationpriority: high
 ---
 
@@ -70,7 +70,7 @@ If any of these checks fails, the conversion will not proceed and an error will 
 |/disk:\<diskNumber\>| Specifies the disk number of the disk to be converted to GPT. If not specified, the system disk is used. The mechanism used is the same as that used by the diskpart.exe tool **SELECT DISK SYSTEM** command.|
 |/logs:\<logDirectory\>| Specifies the directory where MBR2GPT.exe logs should be written. If not specified, **%windir%** is used. If specified, the directory must already exist, it will not be automatically created or overwritten.|
 |/map:\<source\>=\<destination\>| Specifies additional partition type mappings between MBR and GPT. The MBR partition number is specified in decimal notation, not hexidecimal. The GPT GUID can contain brackets, for example: **/map:42={af9b60a0-1431-4f62-bc68-3311714a69ad}**. Multiple /map options can be specified if multiple mappings are required. |
-|/allowFullOS| By default, MBR2GPT.exe is blocked unless it is run from Windows PE. This option overrides this block and enables disk conversion while running in the full Windows environment.|
+|/allowFullOS| By default, MBR2GPT.exe is blocked unless it is run from Windows PE. This option overrides this block and enables disk conversion while running in the full Windows environment. <br>**Note**: Since the existing MBR system partition is in use while running the full Windows environment, it cannot be reused. In this case, a new ESP is created by shrinking the OS partition.|
 
 ## Examples
 
@@ -236,14 +236,17 @@ The following steps illustrate high-level phases of the MBR-to-GPT conversion pr
 
 For Windows to remain bootable after the conversion, an EFI system partition (ESP) must be in place. MBR2GPT creates the ESP using the following rules:
 
-1. The existing MBR system partition is reused if it meets these requirements:
-  a. It is not also the OS or Windows Recovery Environment partition
-  b. It is at least 100MB (or 260MB for 4K sector size disks) in size
-  c. It is less than or equal to 1GB in size. This is a safety precaution to ensure it is not a data partition.
-  d. If the conversion is being performed from the full OS, the disk being converted is not the system disk.
+1. The existing MBR system partition is reused if it meets these requirements:<br>
+  a. It is not also the OS or Windows Recovery Environment partition.<br>
+  b. It is at least 100MB (or 260MB for 4K sector size disks) in size.<br>
+  c. It is less than or equal to 1GB in size. This is a safety precaution to ensure it is not a data partition.<br>
+  d. The conversion is not being performed from the full OS. In this case, the existing MBR system partition is in use and cannot be repurposed.
 2. If the existing MBR system partition cannot be reused, a new ESP is created by shrinking the OS partition. This new partition has a size of 100MB (or 260MB for 4K sector size disks) and is formatted FAT32.
 
 If the existing MBR system partition is not reused for the ESP, it is no longer used by the boot process after the conversion. Other partitions are not modified.
+
+>[!IMPORTANT]
+>If the existing MBR system partition is not reused for the ESP, it might be assigned a drive letter. If you do not wish to use this small partition, you must manually hide the drive letter.
 
 ### Partition type mapping and partition attributes
 
