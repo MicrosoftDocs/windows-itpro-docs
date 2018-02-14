@@ -90,38 +90,48 @@ Yes. Besides manually sending reporting using Windows PowerShell cmdlets (**Send
     >[!NOTE]
     >Group Policy settings override local settings configured using Windows PowerShell.
 
-## App-V Client Reporting
+## App-V Client reporting
 
-To use App-V reporting you must enable and configure the App-V client. To configure reporting on the client, use the Windows PowerShell cmdlet **Set-AppVClientConfiguration**, or the Group Policy **ADMX Template**. For more information about the Windows PowerShell cmdlets, see [About Client Configuration Settings](appv-client-configuration-settings.md). The following section provides examples of Windows PowerShell commands for configuring App-V client reporting.
+To use App-V reporting you must enable and configure the App-V client. To configure reporting on the client, use the Windows PowerShell cmdlet **Set-AppVClientConfiguration**, or the Group Policy **ADMX Template**. For more information about the Windows PowerShell cmdlets, see [About client configuration settings](appv-client-configuration-settings.md). The following section provides examples of Windows PowerShell commands for configuring App-V client reporting.
 
-### Configuring App-V Client reporting using Windows PowerShell
+### Configuring App-V client reporting using Windows PowerShell
 
 The following examples show how Windows PowerShell parameters can configure the reporting features of the App-V client.
 
-**Note**  
-The following configuration task can also be configured using Group Policy settings in the App-V ADMX template. The App-V settings are under **Computer Configuration &gt; Administrative Templates &gt; System &gt; App-V**.
+>[!NOTE]
+>The following configuration task can also be configured using Group Policy settings in the App-V ADMX template. The App-V settings are under **Computer Configuration** > **Administrative Templates** > **System** > **App-V**.
 
-**To enable reporting and to initiate data collection on the computer running the App-V client**:
+#### Enabling reporting and initiating data collection on the computer running the App-V client
 
-`Set-AppVClientConfiguration –ReportingEnabled 1`
+Use the following command to enable reporting and initiate date collection on the computer running the App-V client:
 
-**To configure the client to automatically send data to a specific reporting server**:
+```PowerShell
+Set-AppVClientConfiguration –ReportingEnabled 1
+```
 
-``` syntax
+#### Configuring the client to automatically send data to a specific reporting server
+
+Use the following command to configure the client to automatically send data to a specific reporting server:
+
+```PowerShell
 Set-AppVClientConfiguration -ReportingServerURL http://MyReportingServer:MyPort/ -ReportingStartTime 20 -ReportingInterval 1 -ReportingRandomDelay 30
 ```
 
-The preceding example configures the client to automatically send the reporting data to the reporting server URL **http://MyReportingServer:MyPort/**. Additionally, the reporting data will be sent daily between 8:00 and 8:30 PM, depending on the random delay generated for the session.
+This command configures the client to automatically send the reporting data to the reporting server URL **http://MyReportingServer:MyPort/**. Additionally, the reporting data will be sent daily between 8:00 and 8:30 PM, depending on the random delay generated for the session.
 
-**To limit the size of the data cache on the client**:
+#### Limiting the size of the client's data cache
 
-`Set-AppvClientConfiguration –ReportingDataCacheLimit 100`
+```PowerShell
+Set-AppvClientConfiguration –ReportingDataCacheLimit 100
+```
 
-Configures the maximum size of the reporting cache on the computer running the App-V client to 100 MB. If the cache limit is reached before the data is sent to the server, then the log rolls over and data will be overwritten as necessary.
+This command configures the maximum size of the App-V client computer's reporting cache to 100 MB. If the cache limit is reached before the data is sent to the server, then the log rolls over and data will be overwritten as necessary.
 
 **To configure the data block size transmitted across the network between the client and the server**:
 
-`Set-AppvClientConfiguration –ReportingDataBlockSize 10240`
+```PowerShell
+Set-AppvClientConfiguration –ReportingDataBlockSize 10240
+```
 
 Specifies the maximum data block that the client sends to 10240 MB.
 
