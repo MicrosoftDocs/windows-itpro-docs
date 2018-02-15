@@ -113,6 +113,7 @@ Alerts are listed with the following columns:
 - **Severity** - Displays the severity of the alert. Possible values are informational, low, medium, or high.
 - **Last activity** - Date and time for when the last action was taken on the alert.
 - **Time in queue** - Length of time the alert has been in the alerts queue.
+- **Detection source** - Displays the detection source of the alert.
 - **Status** - Current status of the alert. Possible values include new, in progress, or resolved. 
 - **Investigation state** - Reflects the number of related investigations and it's current state.
 - **Assigned to** - Displays who is addressing the alert.
