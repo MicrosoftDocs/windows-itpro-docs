@@ -111,29 +111,33 @@ Set-AppVClientConfiguration –ReportingEnabled 1
 
 #### Configuring the client to automatically send data to a specific reporting server
 
-Use the following command to configure the client to automatically send data to a specific reporting server:
+To configure the client to automatically send data to a specific reporting server, use a command with the following format:
 
 ```PowerShell
 Set-AppVClientConfiguration -ReportingServerURL http://MyReportingServer:MyPort/ -ReportingStartTime 20 -ReportingInterval 1 -ReportingRandomDelay 30
 ```
 
-This command configures the client to automatically send the reporting data to the reporting server URL **http://MyReportingServer:MyPort/**. Additionally, the reporting data will be sent daily between 8:00 and 8:30 PM, depending on the random delay generated for the session.
+This example command configures the client to automatically send the reporting data to the reporting server URL ```http://MyReportingServer:MyPort/```. The reporting data will be sent to the URL daily between 8:00 PM and 8:30 PM, depending on the session's generated random delay.
 
 #### Limiting the size of the client's data cache
+
+To limit the client's data cache size, use a command with the following format:
 
 ```PowerShell
 Set-AppvClientConfiguration –ReportingDataCacheLimit 100
 ```
 
-This command configures the maximum size of the App-V client computer's reporting cache to 100 MB. If the cache limit is reached before the data is sent to the server, then the log rolls over and data will be overwritten as necessary.
+This example command configures the maximum size of the App-V client computer's reporting cache to 100 MB. If the cache limit is reached before the data is sent to the server, then the log rolls over and data will be overwritten as necessary.
 
-**To configure the data block size transmitted across the network between the client and the server**:
+#### Configuring the data block size transmitted across the network between the client and the server
+
+To configure the data block size, use a command with the following format:
 
 ```PowerShell
 Set-AppvClientConfiguration –ReportingDataBlockSize 10240
 ```
 
-Specifies the maximum data block that the client sends to 10240 MB.
+This example command specifies the maximum size of the data block as 10,240 MB.
 
 ### Types of data collected
 
@@ -147,51 +151,49 @@ The following table displays the types of information you can collect by using A
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">Client Information</th>
-<th align="left">Package Information</th>
-<th align="left">Application Usage</th>
+<th align="left">Client information</th>
+<th align="left">Package information</th>
+<th align="left">Application usage</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Host Name</p></td>
-<td align="left"><p>Package Name</p></td>
-<td align="left"><p>Start and End Times</p></td>
+<td align="left"><p>Host name</p></td>
+<td align="left"><p>Package name</p></td>
+<td align="left"><p>Start and end times</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>App-V Client Version</p></td>
-<td align="left"><p>Package Version</p></td>
-<td align="left"><p>Run Status</p></td>
+<td align="left"><p>App-V client version</p></td>
+<td align="left"><p>Package version</p></td>
+<td align="left"><p>Run status</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Processor Architecture</p></td>
-<td align="left"><p>Package Source</p></td>
-<td align="left"><p>Shutdown State</p></td>
+<td align="left"><p>Processor architecture</p></td>
+<td align="left"><p>Package source</p></td>
+<td align="left"><p>Shutdown state</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Operating System Version</p></td>
-<td align="left"><p>Percent Cached</p></td>
-<td align="left"><p>Application Name</p></td>
+<td align="left"><p>Operating system version</p></td>
+<td align="left"><p>Percent cached</p></td>
+<td align="left"><p>Application name</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Service Pack Level</p></td>
+<td align="left"><p>Service Pack level</p></td>
 <td align="left"><p></p></td>
-<td align="left"><p>Application Version</p></td>
+<td align="left"><p>Application version</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Operating System Type</p></td>
+<td align="left"><p>Operating system type</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>Username</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p></td>
 <td align="left"><p></p></td>
-<td align="left"><p>Connection Group</p></td>
+<td align="left"><p>Connection group</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
 The client collects and saves this data in an **.xml** format. The data cache is hidden by default and requires administrator rights to open the XML file.
 
@@ -199,23 +201,21 @@ The client collects and saves this data in an **.xml** format. The data cache is
 
 You can configure the computer that is running the App-V client to automatically send data to the specified reporting server. To specify the server use the **Set-AppvClientConfiguration** cmdlet with the following settings:
 
-*   ReportingEnabled
-
-*   ReportingServerURL
-
-*   ReportingStartTime
-
-*   ReportingInterval
-
-*   ReportingRandomDelay
+* ReportingEnabled
+* ReportingServerURL
+* ReportingStartTime
+* ReportingInterval
+* ReportingRandomDelay
 
 After you configure the previous settings, you must create a scheduled task. The scheduled task will contact the server specified by the **ReportingServerURL** setting and will initiate the transfer. If you want to manually send data outside of the scheduled times, use the following Windows PowerShell cmdlet:
 
-`Send-AppVClientReport –URL http://MyReportingServer:MyPort/ -DeleteOnSuccess`
+```PowerShell
+Send-AppVClientReport –URL http://MyReportingServer:MyPort/ -DeleteOnSuccess
+```
 
 If the reporting server has been previously configured, then the **–URL** parameter can be omitted. Alternatively, if the data should be sent to an alternate location, specify a different URL to override the configured **ReportingServerURL** for this data collection.
 
-The **-DeleteOnSuccess** parameter indicates that if the transfer is successful, then the data cache is cleared. If this is not specified, then the cache will not be cleared.
+The **-DeleteOnSuccess** parameter indicates that if the transfer is successful, then the data cache will be cleared. If this is not specified, then the cache will not be cleared.
 
 ### Manual Data Collection
 
@@ -228,18 +228,18 @@ You can also use the **Send-AppVClientReport** cmdlet to manually collect data. 
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">With a Reporting Server</th>
-<th align="left">Without a Reporting Server</th>
+<th align="left">With a reporting server</th>
+<th align="left">Without a reporting server</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>If you have an existing App-V reporting Server, create a customized scheduled task or script. Specify that the client send the data to the specified location with the desired frequency.</p></td>
+<td align="left"><p>If you have an existing App-V reporting server, create a customized scheduled task or script. Specify that the client sends the data to the specified location at the desired frequency.</p></td>
 <td align="left"><p>If you do not have an existing App-V reporting Server, use the <strong>–URL</strong> parameter to send the data to a specified share. For example:</p>
 <p><code>Send-AppVClientReport –URL \\Myshare\MyData\ -DeleteOnSuccess</code></p>
 <p>The previous example will send the reporting data to <strong>\\MyShare\MyData\</strong> location indicated by the <strong>-URL</strong> parameter. After the data has been sent, the cache is cleared.</p>
 <div class="alert">
-<strong>Note</strong>  
+<strong>Note</strong>
 <p>If a location other than the Reporting Server is specified, the data is sent using <strong>.xml</strong> format with no additional processing.</p>
 </div>
 <div>
@@ -249,45 +249,31 @@ You can also use the **Send-AppVClientReport** cmdlet to manually collect data. 
 </tbody>
 </table>
 
- 
-
-### Creating Reports
+### Creating reports
 
 To retrieve report information and create reports using App-V you must use one of the following methods:
 
-*   **Microsoft SQL Server Reporting Services (SSRS)** - Microsoft SQL Server Reporting Services is available with Microsoft SQL Server. SSRS is not installed when you install the App-V reporting server. It must be deployed separately to generate the associated reports.
+* Microsoft SQL Server Reporting Services (SSRS)—Microsoft SSRS is available with Microsoft SQL Server. SSRS is not installed when you install the App-V reporting server. It must be deployed separately to generate the associated reports. For more information, see [Microsoft SQL Server reporting services](https://technet.microsoft.com/en-us/library/ms159106(v=sql.130).aspx).
 
-    Use the following link for more information about using [Microsoft SQL Server Reporting Services](https://technet.microsoft.com/en-us/library/ms159106(v=sql.130).aspx).
-
-*   **Scripting** – You can generate reports by scripting directly against the App-V reporting database. For example:
+* Scripting—You can generate reports by scripting directly against the App-V reporting database. For example:
 
     **Stored Procedure:**
 
     **spProcessClientReport** is scheduled to run at midnight or 12:00 AM.
 
-    To run the Microsoft SQL Server Scheduled Stored procedure, the Microsoft SQL Server Agent must be running. You should ensure that the Microsoft SQL Server Agent is set to **AutoStart**. For more information see [Autostart SQL Server Agent (SQL Server Management Studio)](https://technet.microsoft.com/library/ms178130).
+    To run the Microsoft SQL Server Scheduled Stored procedure, the Microsoft SQL Server Agent must be running. Make sure the Microsoft SQL Server Agent is set to **AutoStart**. For more information, see [Autostart SQL Server Agent (SQL Server Management Studio)](https://technet.microsoft.com/library/ms178130).
 
-    The stored procedure is also created when using the App-V database scripts.
+    The stored procedure is also created when when you use the App-V database scripts.
 
-You should also ensure that the reporting server web service’s **Maximum Concurrent Connections** is set to a value that the server will be able to manage without impacting availability. The recommended number of **Maximum Concurrent Connections** for the **Reporting Web Service** is **10,000**.
+You should also ensure that the reporting server web service’s **Maximum Concurrent Connections** is set to a value that the server can manage without affecting availability. The recommended number of **Maximum Concurrent Connections** for the **Reporting Web Service** is **10,000**.
 
 ## Have a suggestion for App-V?
 
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
-
-[Deploying the App-V server](appv-deploying-the-appv-server.md)
-
-[How to install the Reporting Server on a Standalone Computer and Connect it to the Database](appv-install-the-reporting-server-on-a-standalone-computer.md)
-
- 
-
- 
-
-
-
-
-
+* [Deploying the App-V server](appv-deploying-the-appv-server.md)
+* [How to install the reporting server on a standalone computer and connect it to the database](appv-install-the-reporting-server-on-a-standalone-computer.md)
