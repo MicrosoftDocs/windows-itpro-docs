@@ -57,7 +57,6 @@ If you are not using OMS:
 
 5.  To add the Upgrade Readiness solution to your workspace, go to the **Solutions Gallery**. Select the **Upgrade Readiness** tile in the gallery and then select **Add** on the solution’s details page. The solution is now visible on your workspace. Note that you may need to scroll to find Upgrade Readiness.
 
-
 ### Copy your commercial ID key
 
 Microsoft uses a unique commercial ID to map information from user computers to your OMS workspace. This should be generated for you automatically. Copy your commercial ID key in OMS and then deploy it to user computers.
@@ -85,7 +84,7 @@ To enable data sharing, whitelist the following endpoints. Note that you may nee
 | `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for Windows 10 computers. User computers send data to Microsoft through this endpoint.
 | `https://vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for operating systems older than Windows 10
 | `https://settings-win.data.microsoft.com` | Enables the compatibility update to send data to Microsoft. 
-| `https://adl.windows.com` | Allows the compatibility update to receive the latest compatibility data from Microsoft. |
+| `http://adl.windows.com` | Allows the compatibility update to receive the latest compatibility data from Microsoft. |
 
 Note: The compatibility update KB runs under the computer’s system account. 
 
