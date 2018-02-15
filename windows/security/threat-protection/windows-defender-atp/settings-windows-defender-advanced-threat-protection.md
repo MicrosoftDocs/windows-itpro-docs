@@ -1,5 +1,5 @@
 ---
-title: Windows Defender Advanced Threat Protection settings
+title: Windows Defender Advanced Threat Protection time zone settings
 description: Use the menu to configure the time zone and view license information.
 keywords: Windows Defender ATP settings, Windows Defender, cybersecurity threat intelligence, advanced threat protection, time zone, utc, local time, license
 search.product: eADQiWindows 10XVcnh
@@ -8,12 +8,12 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
-author: DulceMV
+author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/30/2017
+ms.date: 02/13/2018
 ---
 
-# Windows Defender Advanced Threat Protection settings
+# Windows Defender Advanced Threat Protection time zone settings
 
 **Applies to:**
 
@@ -27,7 +27,7 @@ ms.date: 10/30/2017
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-settings-abovefoldlink)
 
-Use the **Settings** menu ![Settings icon](images/settings.png) to configure the time zone and view license information.
+Use the **Time zone** menu ![Time zone settings icon](images/atp-time-zone.png) to configure the time zone and view license information.
 
 ## Time zone settings
 The aspect of time is important in the assessment and analysis of perceived and actual cyberattacks.
@@ -36,7 +36,7 @@ Cyberforensic investigations often rely on time stamps to piece together the seq
 
 Windows Defender ATP can display either Coordinated Universal Time (UTC) or local time.
 
-Your current time zone setting is shown in the Windows Defender ATP menu. You can change the displayed time zone in the **Settings** menu ![Settings icon](images/settings.png).
+Your current time zone setting is shown in the Windows Defender ATP menu. You can change the displayed time zone in the **Time zone** menu ![Time zone settings icon](images/atp-time-zone.png).
 
 ### UTC time zone
 Windows Defender ATP uses UTC time by default.
@@ -55,7 +55,7 @@ The Windows Defender ATP time zone is set by default to UTC.
 Setting the time zone also changes the times for all Windows Defender ATP views.
 To set the time zone:
 
-1.	Click the **Settings** menu ![Settings icon](images/settings.png).
+1.	Click the **Time zone** menu ![Time zone settings icon](images/atp-time-zone.png).
 2.	Select the **Timezone UTC** indicator.
 3.	Select **Timezone UTC** or your local time zone, for example -7:00. 
 
@@ -88,5 +88,4 @@ The following date and time formats are currently not supported:
 **Decimal symbol used in numbers**<br>
 Decimal symbol used is always a dot, even if a comma is selected in  the **Numbers** format settings in **Region** settings. For example, 15,5K is displayed as 15.5K.
 
-## License
-Click the license link in the **Settings** menu to view the license agreement information for Windows Defender ATP.
+
