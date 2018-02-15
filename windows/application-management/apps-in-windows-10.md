@@ -34,8 +34,8 @@ Some of the apps show up in multiple tables - that's because their status change
 > Get-AppxProvisionedPackage -Online | select DisplayName,PackageName
 > ```
 
-
 ## System apps
+
 System apps are integral to the operating system. Here are the typical system apps in Windows 10 versions 1703, 1709, and 1803.
 
 | Name             | Full name                                 |1703  | 1709 | 1803 |Uninstall through UI?                                  |
@@ -64,7 +64,7 @@ System apps are integral to the operating system. Here are the typical system ap
 |                  | Microsoft.Windows. Holographic.FirstRun    | x    |  x  | x    |No                                                     |
 |                  | Microsoft.Windows. ModalSharePickerHost    | x    |     |      |No                                                     |
 |                  | Microsoft.Windows. OOBENetworkCaptivePort  | x    |  x  | x    |No                                                     |
-|                  | Microsoft.Windows. OOBENetworkConnectionFlow   | x|  x  | x    |No                                                     |
+|                  | Microsoft.Windows. OOBENetworkConnectionFlow  | x |  x  | x    |No                                                     |
 |                  | Microsoft.Windows. ParentalControls        | x    |  x  | x    |No                                                     |
 | People Hub       | Microsoft.Windows. PeopleExperienceHost    |      |  x  | x    |No                                                     |
 |                  | Microsoft.Windows. PinningConfirmationDialog  |   |  x  | x    |No                                                     |
@@ -153,8 +153,8 @@ Here are the typical installed Windows apps in Windows 10 versions 1703, 1709, a
 |                    |                                          | x    | x    | x    | Yes                  |
 |                    |                                          | x    | x    | x    | Yes                  |
 
-
 ## Provisioned Windows apps
+
 Here are the typical provisioned Windows apps in Windows 10 versions 1703, 1709, and 1803.
 
 | Name                            | Full name                              | 1703 | 1709 | 1803 | Uninstall through UI?     |
