@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.date: 09/13/2017 #Previsou release date
 ---
 
-<!-- pashort 2/9/2018: as per Brian Atman, the documentation descrepancies must be addressed for RS5. Find out what those discrepancies are. Scenario 15403628 -->
+<!-- pashort 2/9/2018: as per Brian Altman, the documentation descrepancies must be addressed for RS5. Find out what those discrepancies are. Scenario 15403628 -->
 
 # Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge
 
@@ -38,8 +38,8 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
 This policy setting lets you decide whether the Address bar drop-down functionality is available in Microsoft Edge. We recommend disabling this setting if you want to minimize network connections from Microsoft Edge to Microsoft services.
 | If you... | Then... |
 | --- | --- |
-| Enable this setting (default) | Employees can see the Address bar drop-down functionality in Microsoft Edge. | 
-| Disable this setting | Employees do not see the Address bar drop-down functionality in Microsoft Edge. This setting also disables the user-defined setting, "Show search and site suggestions as I type."<p>Disabling this setting turns off the Address bar drop-down functionality. Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the "Configure search suggestions in Address bar" setting. |
+| Enable setting (default) | Employees can see the Address bar drop-down functionality in Microsoft Edge. | 
+| Disable setting | Employees do not see the Address bar drop-down functionality in Microsoft Edge. This setting also disables the user-defined setting, "Show search and site suggestions as I type."<p>Disabling this setting turns off the Address bar drop-down functionality. Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the "Configure search suggestions in Address bar" setting. |
 |
  
 ### Allow Adobe Flash
@@ -49,7 +49,7 @@ This policy setting lets you decide whether employees can run Adobe Flash on Mic
 | If you… | Then… |
 | --- | --- |
 | Enable or don’t configure this setting (default) | Employees can use Adobe Flash. | 
-| Disable this setting | Employees cannot use Adobe Flash. |
+| Disable setting | Employees cannot use Adobe Flash. |
 | 
 
 ### Allow clearing browsing data on exit
@@ -58,7 +58,7 @@ This policy setting lets you decide whether employees can run Adobe Flash on Mic
 This policy setting allows the automatic clearing of browsing data when Microsoft Edge closes.
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | Clear browsing history on exit is turned on. <!-- <span style="background: #ffff99;">[@Reviewer: can employees do anything to this setting at this point? Or is this controlled by the system administrator?]</span> --> |
+| Enable setting | Clear browsing history on exit is turned on. <!-- <span style="background: #ffff99;">[@Reviewer: can employees do anything to this setting at this point? Or is this controlled by the system administrator?]</span> --> |
 | Disable or don’t configure this setting (default) | Employees can turn on and configure the Clear browsing data option under Settings. |
 |
 
@@ -68,8 +68,8 @@ This policy setting allows the automatic clearing of browsing data when Microsof
 This policy setting lets you decide whether F12 Developer Tools are available on Microsoft Edge.
 | If you… | Then… | 
 | --- | --- |
-| Enable this setting (default) | F12 Developer Tools are available. |
-| Disable this setting | F12 Developer Tools are not available. |
+| Enable setting (default) | F12 Developer Tools are available. |
+| Disable setting | F12 Developer Tools are not available. |
 |
 
 ### Allow Extensions
@@ -78,8 +78,8 @@ This policy setting lets you decide whether F12 Developer Tools are available on
 This policy setting lets you decide whether employees can use Edge Extensions.
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | Employees can use Edge Extensions. |
-| Disable this setting | <!-- <span style="background: #ffff99;">[@Reviewer: why would a company disable this setting? Is this because of potential memory leaks?]</span> --> Employees cannot use Edge Extensions. |
+| Enable setting | Employees can use Edge Extensions. |
+| Disable setting | <!-- <span style="background: #ffff99;">[@Reviewer: why would a company Disable setting? Is this because of potential memory leaks?]</span> --> Employees cannot use Edge Extensions. |
 |
 
 ### Allow InPrivate browsing
@@ -88,8 +88,8 @@ This policy setting lets you decide whether employees can use Edge Extensions.
 This policy setting lets you decide whether employees can browse using InPrivate website browsing.
 | If you… | Then… |
 | --- | --- |
-| Enable this setting (default) | Employees can use InPrivate website browsing. |
-| Disable this setting | <!-- <span style="background: #ffff99;">[@Reviewer: why would a company disable this setting? Is this to discourage users from browser inappropriate websites? What are the use cases for having this turned off?]</span> --> Employees cannot use InPrivate website browsing. |
+| Enable setting (default) | Employees can use InPrivate website browsing. |
+| Disable setting | <!-- <span style="background: #ffff99;">[@Reviewer: why would a company disable this setting? Is this to discourage users from browser inappropriate websites? What are the use cases for having this turned off?]</span> --> Employees cannot use InPrivate website browsing. |
 |
 
 ### Allow Microsoft Compatibility List
@@ -98,8 +98,8 @@ This policy setting lets you decide whether employees can browse using InPrivate
 This policy setting lets you decide whether to use the Microsoft Compatibility List (a Microsoft-provided list that helps sites with known compatibility issues to display properly) in Microsoft Edge. By default, the Microsoft Compatibility List is enabled and can be viewed by visiting about:compat. <!-- <span style="background: #ffff99;">[@Reviewer: Is this supposed to be a link to another topic? Is the topic Use Enterprise Mode to improve compatibility emie-to-improve-compatibility.md?]</span> -->
 | If you… | Then… |
 | --- | --- |
-| Enable this setting (default) | Microsoft Edge periodically downloads the latest version of the list from Microsoft, applying the updates during browser navigation <!-- <span style="background: #ffff99;">[@Reviewer: are the updates really applied “during browser navigation?" shouldn't just be as simple as "...applying the updates automatically”?]</span> -->. Visiting any site on the Microsoft Compatibility List prompts the employee to use Internet Explorer 11, where the site renders as though it’s in whatever version of IE is necessary for it to appear properly. |
-| Disable this setting | Browser navigation does not use the Microsoft Compatibility List. |
+| Enable setting (default) | Microsoft Edge periodically downloads the latest version of the list from Microsoft, applying the updates during browser navigation <!-- <span style="background: #ffff99;">[@Reviewer: are the updates really applied “during browser navigation?" shouldn't just be as simple as "...applying the updates automatically”?]</span> -->. Visiting any site on the Microsoft Compatibility List prompts the employee to use Internet Explorer 11, where the site renders as though it’s in whatever version of IE is necessary for it to appear properly. |
+| Disable setting | Browser navigation does not use the Microsoft Compatibility List. |
 |
 
 ### Allow search engine customization
@@ -112,7 +112,7 @@ For more info, see the [Microsoft browser extension policy](http://aka.ms/browse
 | If you… | Then… |
 | --- | --- |
 | Enable or don’t configure this setting (default) | Employees can add new search engines and change the default used in the Address bar from within Microsoft Edge Settings. | 
-| Disable this setting | Employees cannot add search engines or change the default used in the Address bar. | 
+| Disable setting | Employees cannot add search engines or change the default used in the Address bar. | 
 |
 
 ### Allow web content on New Tab page
@@ -121,9 +121,9 @@ For more info, see the [Microsoft browser extension policy](http://aka.ms/browse
 This policy setting lets you configure what appears when Microsoft Edge opens a new tab. By default, Microsoft Edge opens the New Tab page. If you use this setting, employees can’t change it.
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | Microsoft Edge opens a new tab with the New Tab page. |
-| Disable this setting | Microsoft Edge opens a new tab with a blank page. | 
-| Do not configure this setting (default) | Employees can choose how new tabs appear. |
+| Enable setting | Microsoft Edge opens a new tab with the New Tab page. |
+| Disable setting | Microsoft Edge opens a new tab with a blank page. | 
+| Do not configure setting (default) | Employees can choose how new tabs appear. |
 |
 
 ### Configure additional search engines
@@ -132,8 +132,8 @@ This policy setting lets you configure what appears when Microsoft Edge opens a 
 This policy setting lets you add up to 5 additional search engines, which cannot be removed by your employees but can make a personal default engine. This setting does not set the default search engine. For that, you must use the "Set default search engine" setting.
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | You can add up to 5 additional search engines. For each additional search engine, you must add a link to your OpenSearch XML file, including at least the short name and https URL of the search engine, using this format:<br><br> `<https://www.contoso.com/opensearch.xml>` <p>For more info about creating the OpenSearch XML file, see the [Understanding OpenSearch Standards](https://msdn.microsoft.com/en-us/library/dd163546.aspx) topic. | Disable this setting (default) | Any added search engines are removed from the employee’s device. <!-- <span style="background: #ffff99;">[@Reviewer: is this implying that Bing is the only search engine on the employee’s device?]</span> --> |
-| Do not configure this setting | The search engine list is set to what is specified in App settings. <!-- <span style="background: #ffff99;">[@Reviewer: what’s the difference between “don’t configure this setting”, “Enable this setting”, and “Disable this setting”?]</span> --> |
+| Enable setting | You can add up to 5 additional search engines. For each additional search engine, you must add a link to your OpenSearch XML file, including at least the short name and https URL of the search engine, using this format:<br><br> `<https://www.contoso.com/opensearch.xml>` <p>For more info about creating the OpenSearch XML file, see the [Understanding OpenSearch Standards](https://msdn.microsoft.com/en-us/library/dd163546.aspx) topic. | Disable setting (default) | Any added search engines are removed from the employee’s device. <!-- <span style="background: #ffff99;">[@Reviewer: is this implying that Bing is the only search engine on the employee’s device?]</span> --> |
+| Do not configure setting | The search engine list is set to what is specified in App settings. <!-- <span style="background: #ffff99;">[@Reviewer: what’s the difference between “don’t configure this setting”, “Enable setting”, and “Disable this setting”?]</span> --> |
 |
 
 ### Configure Autofill
@@ -142,9 +142,9 @@ This policy setting lets you add up to 5 additional search engines, which cannot
 This policy setting lets you decide whether employees can use Autofill the form fields automatically while using Microsoft Edge. By default, employees can choose whether to use Autofill.
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | Employees can use Autofill to populate form fields automatically. |
-| Disable this setting | Employees cannot use Autofill to populate form fields automatically. |
-| Do not configure this setting (default) | Employees can choose whether to use Autofill to populate the form fields automatically. |
+| Enable setting | Employees can use Autofill to populate form fields automatically. |
+| Disable setting | Employees cannot use Autofill to populate form fields automatically. |
+| Do not configure setting (default) | Employees can choose whether to use Autofill to populate the form fields automatically. |
 |
 
 ### Configure cookies
@@ -153,8 +153,8 @@ This policy setting lets you decide whether employees can use Autofill the form 
 This setting lets you configure how to work with cookies.
 | If you… | Then… |
 | --- | --- |
-| Enable this setting (default) | You must also decide whether to:<ul><li>**Allow all cookies (default)** from all websites.</li><li>**Block all cookies** from all websites.</li><li>**Block only 3rd-party cookies** from 3rd-party websites.</li></ul> |
-| Disable or do not configure this setting | All cookies are allowed from all sites. | 
+| Enable setting (default) | You must also decide whether to:<ul><li>**Allow all cookies (default)** from all websites.</li><li>**Block all cookies** from all websites.</li><li>**Block only 3rd-party cookies** from 3rd-party websites.</li></ul> |
+| Disable or do not configure setting | All cookies are allowed from all sites. | 
 |
 
 ### Configure Do Not Track
@@ -163,9 +163,9 @@ This setting lets you configure how to work with cookies.
 This policy setting lets you decide whether employees can send Do Not Track requests to websites that ask for tracking info. By default, Do Not Track requests are never sent, but employees can choose to turn on and send requests.
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | Do Not Track requests are always sent to websites asking for tracking information. |
-| Disable this setting | Do Not Track requests are never sent to websites asking for tracking information. | 
-| Do not configure this setting (default) | Employees can choose whether to send Do Not Track requests to websites asking for tracking information. |
+| Enable setting | Do Not Track requests are always sent to websites asking for tracking information. |
+| Disable setting | Do Not Track requests are never sent to websites asking for tracking information. | 
+| Do not configure setting (default) | Employees can choose whether to send Do Not Track requests to websites asking for tracking information. |
 |
 
 ### Configure Favorites
@@ -174,8 +174,8 @@ This policy setting lets you decide whether employees can send Do Not Track requ
 This policy setting lets you configure the default list of Favorites that appear for your employees. Employees can change their Favorites by adding or removing items at any time. <!-- <span style="background: #ffff99;">[@Reviewer: what is the default setting, enabled or disabled? I’m guessing it’s Disabled is the default.]</span> -->
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | You must provide a list of Favorites in the Options section. The list imports automatically after you deploy this policy. |
-| Disable or do not configure this setting | Employees will see the Favorites that they set in the Favorites hub. |
+| Enable setting | You must provide a list of Favorites in the Options section. The list imports automatically after you deploy this policy. |
+| Disable or do not configure setting | Employees will see the Favorites that they set in the Favorites hub. |
 |
 
 ### Configure Password Manager
@@ -184,9 +184,9 @@ This policy setting lets you configure the default list of Favorites that appear
 This policy setting lets you decide whether employees can save their passwords locally, using Password Manager. By default, Password Manager is turned on.
 | If you… | Then… |
 | --- | --- |
-| Enable this setting (default) | Employees can use Password Manager to save their passwords locally. |
-| Disable this setting | Employees can’t use Password Manager to save their passwords locally. | 
-| Do not configure this setting | Employees can choose whether to use Password Manager to save their passwords locally. |
+| Enable setting (default) | Employees can use Password Manager to save their passwords locally. |
+| Disable setting | Employees can’t use Password Manager to save their passwords locally. | 
+| Do not configure setting | Employees can choose whether to use Password Manager to save their passwords locally. |
 |
 
 ### Configure Pop-up Blocker
@@ -195,9 +195,9 @@ This policy setting lets you decide whether employees can save their passwords l
 This policy setting lets you decide whether to turn on Pop-up Blocker. By default, Pop-up Blocker is turned on.
 | If you… | Then… |
 | --- | --- |
-| Enable this setting (default) | Pop-up Blocker is turned on, stopping pop-up windows from appearing. |
-| Disable this setting | Pop-up Blocker is turned off, letting pop-up windows appear. |
-| Do not configure this setting | Employees can choose whether to use Pop-up Blocker. |
+| Enable setting (default) | Pop-up Blocker is turned on, stopping pop-up windows from appearing. |
+| Disable setting | Pop-up Blocker is turned off, letting pop-up windows appear. |
+| Do not configure setting | Employees can choose whether to use Pop-up Blocker. |
 |
 
 ### Configure search suggestions in Address bar
@@ -206,9 +206,9 @@ This policy setting lets you decide whether to turn on Pop-up Blocker. By defaul
 This policy setting lets you decide whether search suggestions appear in the Address bar of Microsoft Edge. By default, employees can choose whether search suggestions appear in the Address bar of Microsoft Edge.
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | Employees can see search suggestions in the Address bar. |
-| Disable this setting | Employees cannot see search suggestions in the Address bar. |
-| Do not configure this setting (default) | Employees can choose whether search suggestions appear in the Address bar. |
+| Enable setting | Employees can see search suggestions in the Address bar. |
+| Disable setting | Employees cannot see search suggestions in the Address bar. |
+| Do not configure setting (default) | Employees can choose whether search suggestions appear in the Address bar. |
 |
 
 ### Configure Start pages
@@ -217,8 +217,8 @@ This policy setting lets you decide whether search suggestions appear in the Add
 This policy setting lets you configure one or more Start pages, for domain-joined devices. Your employees will not be able to change this after you set it.
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | You must include URLs to the pages, separating multiple pages by using angle brackets in this format: <br><br>`<support.contoso.com><support.microsoft.com>` |  
-| Disable or do not configure this setting (default) | The default Start page is the webpage specified in App settings. |
+| Enable setting | You must include URLs to the pages, separating multiple pages by using angle brackets in this format: <br><br>`<support.contoso.com><support.microsoft.com>` |  
+| Disable or do not configure setting (default) | The default Start page is the webpage specified in App settings. |
 |
 
 ### Configure the Adobe Flash Click-to-Run setting
@@ -228,7 +228,7 @@ This policy setting lets you decide whether employees must take action, such as 
 | If you… | Then… |
 | --- | --- |
 | Enable or don’t configure this setting< | Employees must click the content, click a Click-to-Run button, or have the site appear on an auto-allow list before Microsoft Edge loads and runs Adobe Flash content. |
-| Disable this setting | Adobe Flash loads automatically and runs in Microsoft Edge. |
+| Disable setting | Adobe Flash loads automatically and runs in Microsoft Edge. |
 |
 
 ### Configure the Enterprise Mode Site List
@@ -237,8 +237,8 @@ This policy setting lets you decide whether employees must take action, such as 
 This policy setting lets you configure whether to use Enterprise Mode and the Enterprise Mode Site List to address common compatibility problems with legacy apps.
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | You must add the location to your site list in the **{URI}** box. When configured, Microsoft Edge looks for the Enterprise Mode Site List XML file, which includes the sites and domains that need to be viewed using Internet Explorer 11 and Enterprise Mode. |
-Disable or do not configure this setting (default) | Microsoft Edge won’t use the Enterprise Mode Site List XML file. In this case, employees might experience compatibility problems while using legacy apps. |
+| Enable setting | You must add the location to your site list in the **{URI}** box. When configured, Microsoft Edge looks for the Enterprise Mode Site List XML file, which includes the sites and domains that need to be viewed using Internet Explorer 11 and Enterprise Mode. |
+Disable or do not configure setting (default) | Microsoft Edge won’t use the Enterprise Mode Site List XML file. In this case, employees might experience compatibility problems while using legacy apps. |
 |
 
 >[!Note] 
@@ -251,9 +251,9 @@ Disable or do not configure this setting (default) | Microsoft Edge won’t use 
 This policy setting lets you configure whether to turn on Windows Defender SmartScreen. Windows Defender SmartScreen provides warning messages to help protect your employees from potential phishing scams and malicious software. By default, Windows Defender SmartScreen is turned on.
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | Windows Defender SmartScreen is turned on, and employees cannot turn it off. | 
-| Disable this setting | Windows Defender SmartScreen is turned off, and employees cannot turn it on. |
-| Do not configure this setting | Employees can choose whether to use Windows Defender SmartScreen. |
+| Enable setting | Windows Defender SmartScreen is turned on, and employees cannot turn it off. | 
+| Disable setting | Windows Defender SmartScreen is turned off, and employees cannot turn it on. |
+| Do not configure setting | Employees can choose whether to use Windows Defender SmartScreen. |
 |
 
 ### Disable lockdown of Start pages
@@ -265,8 +265,8 @@ For more info, see the [Microsoft browser extension policy](http://aka.ms/browse
 
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | You cannot lock down Start pages that are configured using the “Configure Start pages” setting. Employees can, therefore, modify the pages. |
-| Disable or do not configure this setting (default) | Employees cannot change Start pages configured using the “Configure Start pages” setting. | 
+| Enable setting | You cannot lock down Start pages that are configured using the “Configure Start pages” setting. Employees can, therefore, modify the pages. |
+| Disable or do not configure setting (default) | Employees cannot change Start pages configured using the “Configure Start pages” setting. | 
 |                                                                 
 
 ### Keep favorites in sync between Internet Explorer and Microsoft Edge
@@ -278,8 +278,8 @@ This policy setting lets you decide whether people can sync their favorites betw
 <span style="background: #ffff99;">[@Reviewer: what is the default: enable or disable?]</span> -->
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | Employees can sync their favorites between Internet Explorer and Microsoft Edge.<br><br>Enabling this setting stops Edge favorites from syncing between connected Windows 10 devices. <!-- <span style="background: #ffff99;">[@Reviewer: what does this mean? I want to know more about what this is saying. More details and maybe an example or scenario.]</span> --> |
-| Disable or do not configure this setting | Employees cannot sync their favorites between Internet Explorer and Microsoft Edge. |
+| Enable setting | Employees can sync their favorites between Internet Explorer and Microsoft Edge.<br><br>Enabling this setting stops Edge favorites from syncing between connected Windows 10 devices. <!-- <span style="background: #ffff99;">[@Reviewer: what does this mean? I want to know more about what this is saying. More details and maybe an example or scenario.]</span> --> |
+| Disable or do not configure setting | Employees cannot sync their favorites between Internet Explorer and Microsoft Edge. |
 |
 
 ### Prevent access to the about:flags page
@@ -288,8 +288,8 @@ This policy setting lets you decide whether people can sync their favorites betw
 This policy setting lets you decide whether employees can access the about:flags page, which is used to change developer settings and to enable experimental features.
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | Employees cannot access the about:flags page. |
-| Disable or do not configure this setting (default) | Employees can access the about:flags page. |
+| Enable setting | Employees cannot access the about:flags page. |
+| Disable or do not configure setting (default) | Employees can access the about:flags page. |
 |                                                                 
 
 ### Prevent bypassing Windows Defender SmartScreen prompts for files
@@ -298,8 +298,8 @@ This policy setting lets you decide whether employees can access the about:flags
 This policy setting lets you decide whether employees can override the Windows Defender SmartScreen warnings about downloading unverified files.
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | Employees cannot ignore Windows Defender SmartScreen warnings when downloading files. |
-| Disable or do not configure this setting (default) | Employees can ignore Windows Defender SmartScreen warnings and can continue the download process. |
+| Enable setting | Employees cannot ignore Windows Defender SmartScreen warnings when downloading files. |
+| Disable or do not configure setting (default) | Employees can ignore Windows Defender SmartScreen warnings and can continue the download process. |
 |                                                                                                                                                  
 ### Prevent bypassing Windows Defender SmartScreen prompts for sites
 >*Supported versions: Windows 10, version 1511 or later*
@@ -307,8 +307,8 @@ This policy setting lets you decide whether employees can override the Windows D
 This policy setting lets you decide whether employees can override the Windows Defender SmartScreen warnings about potentially malicious websites.
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | Employees cannot ignore Windows Defender SmartScreen warnings and prevents them from continuing to the site. |
-| Disable or do not configure this setting (default) | Employees can ignore Windows Defender SmartScreen warnings, allowing them to continue to the site. |
+| Enable setting | Employees cannot ignore Windows Defender SmartScreen warnings and prevents them from continuing to the site. |
+| Disable or do not configure setting (default) | Employees can ignore Windows Defender SmartScreen warnings, allowing them to continue to the site. |
 |
 
 ### Prevent Microsoft Edge from gathering Live Tile information when pinning a site to Start
@@ -317,8 +317,8 @@ This policy setting lets you decide whether employees can override the Windows D
 This policy lets you decide whether Microsoft Edge can gather Live Tile metadata from the ieonline.microsoft.com service to provide a better experience while pinning a Live Tile to the Start menu.
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | Microsoft Edge does not gather the Live Tile metadata, providing a minimal experience. | 
-| Disable or do not configure this setting (default) | Microsoft Edge gathers the Live Tile metadata, providing a fuller and complete experience. |
+| Enable setting | Microsoft Edge does not gather the Live Tile metadata, providing a minimal experience. | 
+| Disable or do not configure setting (default) | Microsoft Edge gathers the Live Tile metadata, providing a fuller and complete experience. |
 |
 
 
@@ -329,7 +329,7 @@ This policy setting lets you decide whether employees see Microsoft's First Run 
 | If you… | Then… |
 | --- | --- |
 | Enable this settin | Employees do not see the First Run page. |
-| Disable or do not configure this setting (default) | Employees see the First Run page. |
+| Disable or do not configure setting (default) | Employees see the First Run page. |
 |
 
 ### Prevent using Localhost IP address for WebRTC
@@ -338,8 +338,8 @@ This policy setting lets you decide whether employees see Microsoft's First Run 
 This policy setting lets you decide whether localhost IP addresses are visible or hidden while making calls to the WebRTC protocol.
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | Localhost IP addresses are hidden. |
-| Disable or do not configure this setting (default) | Localhost IP addresses are visible. |
+| Enable setting | Localhost IP addresses are hidden. |
+| Disable or do not configure setting (default) | Localhost IP addresses are visible. |
 |
 
 ### Send all intranet sites to Internet Explorer 11
@@ -348,8 +348,8 @@ This policy setting lets you decide whether localhost IP addresses are visible o
 This policy setting lets you decide whether your intranet sites should all open using Internet Explorer 11. This setting should only be used if there are known compatibility problems with Microsoft Edge.
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | All intranet sites are opened in Internet Explorer 11 automatically. |
-| Disable or do not configure this setting (default) | All websites, including intranet sites, open in Microsoft Edge. | 
+| Enable setting | All intranet sites are opened in Internet Explorer 11 automatically. |
+| Disable or do not configure setting (default) | All websites, including intranet sites, open in Microsoft Edge. | 
 |
 
 ### Set default search engine
@@ -361,9 +361,9 @@ For more info, see the [Microsoft browser extension policy](http://aka.ms/browse
 
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | To set a default search engine, you must add a link to your OpenSearch XML file, including at least the short name and https URL of the search engine, using this format:<br><br>`https://fabrikam.com/opensearch.xml` |
-| Disable this setting | The policy-set default search engine is removed. If this is also the current in-use default, the search engine changes to the Microsoft Edge specified engine for the market <!-- <span style="background: #ffff99;">[@Reviewer: what does “market” mean in this context?]</span> -->. |
-| Do not configure this setting | The default search engine is set to the one specified in App settings. |
+| Enable setting | To set a default search engine, you must add a link to your OpenSearch XML file, including at least the short name and https URL of the search engine, using this format:<br><br>`https://fabrikam.com/opensearch.xml` |
+| Disable setting | The policy-set default search engine is removed. If this is also the current in-use default, the search engine changes to the Microsoft Edge specified engine for the market <!-- <span style="background: #ffff99;">[@Reviewer: what does “market” mean in this context?]</span> -->. |
+| Do not configure setting | The default search engine is set to the one specified in App settings. |
 |
 >[!Important]
 >If you'd like your employees to use the default Microsoft Edge settings for each market <!-- <span style="background: #ffff99;">[@Reviewer: what does “each market” refer to in this context?]</span> -->, you can set the string to EDGEDEFAULT. If you'd like your employees to use Microsoft Bing as the default search engine, you can set the string to EDGEBING.
@@ -374,8 +374,8 @@ For more info, see the [Microsoft browser extension policy](http://aka.ms/browse
 This policy setting lets you decide whether employees see an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.
 | If you… | Then… |
 | --- | --- |
-| Enable this setting | Employees see an additional page. |
-| Disable or do not configure this setting (default) | No additional pages display. |
+| Enable setting | Employees see an additional page. |
+| Disable or do not configure setting (default) | No additional pages display. |
 |
 
 ## Using Microsoft Intune to manage your Mobile Device Management (MDM) settings for Microsoft Edge
