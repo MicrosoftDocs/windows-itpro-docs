@@ -42,10 +42,7 @@ To see a list of alerts, click any of the queues under the **Alerts queue** opti
 > [!NOTE]
 > By default, alerts in the queues are sorted from newest to oldest.
 
-![Image of alerts queue](images/atp-alertsq2.png)
-
-[JOEY: NEED TO UPDATE ALL IMAGES TO REFLECT ACTUAL NEW COLUMNS AND NAVIGATION PANE ETC!!!]
-
+![Image of alerts queue](images/atp-new-alerts-list.png)
 
 ##  Sort, filter, and group the alerts list
 You can sort and filter the alerts using the available filters or clicking on a column's header that will sort the view in ascending or descending order.
