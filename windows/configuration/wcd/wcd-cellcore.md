@@ -428,7 +428,7 @@ The following table shows the scenarios supported by this customization:
 
 
 Multivariant setting set?|SPN provisioned?|MSISDN (last 4 digits: 1234, for example) provisioned?|Default SIM name
---- | --- | ---
+--- | --- | --- | ---
 Yes|Yes|Yes|*MultivariantProvisionedSPN*1234 or *MultivariantProvisionedSPN*" "1234
 Yes|No|No|*MultivariantProvisionedSPN* (up to 16 characters)
 Yes|Yes|No|*MultivariantProvisionedSPN* (up to 16 characters)
