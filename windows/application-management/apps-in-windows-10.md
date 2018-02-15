@@ -117,7 +117,7 @@ Here are the typical provisioned Windows apps in Windows 10 versions 1607, 1703,
 | Get Skype/Skype (preview)/Skype | Microsoft.SkypeApp                     | x    | x    |  x    | Yes                       |
 | Get Started/Tips                | Microsoft.Getstarted                   | x    | x    |  x    | Yes                       |
 | Groove                          | Microsoft.ZuneMusic                    | x    | x    |  x    | No                        |
-| Mail and Calendar               | Microsoft.windows communicationsapps   | x    | x    |  x    | No                        |
+| Mail and Calendar               | microsoft.windowscommunicationsapps    | x    | x    |  x   | No                        |
 | Maps                            | Microsoft.WindowsMaps                  | x    | x    |  x    | No                        |
 | Messaging                       | Microsoft.Messaging                    | x    | x    |  x   | No                        |
 | Microsoft 3D Viewer             | Microsoft.Microsoft3DViewer            |      | x    |  x    | No                        |
@@ -128,11 +128,11 @@ Here are the typical provisioned Windows apps in Windows 10 versions 1607, 1703,
 | People                          | Microsoft.People                       | x    | x    |  x    | No                        |
 | Photos                          | Microsoft.Windows.Photos               | x    | x    |  x    | No                        |
 | Print 3D                        | Microsoft.Print3D                      |      |      |  x    | No                        |
-| Solitaire                       | Microsoft.Microsoft SolitaireCollection | x    | x    |  x    | Yes                       |
+| Solitaire                       | Microsoft.MicrosoftSolitaireCollection | x    | x    |  x    | Yes                       |
 | Sticky Notes                    | Microsoft.MicrosoftStickyNotes         | x    | x    |  x    | No                        |
 | Store                           | Microsoft.WindowsStore                 | x    | x    |  x    | No                        |
 | Sway                            | Microsoft.Office.Sway                  | *    | *    |  x   | Yes                       |
-| Voice Recorder                  | Microsoft.SoundRecorder                | x    | x    |  x    | No                        |
+| Voice Recorder                  | Microsoft.WindowsSoundRecorder         | x    | x    |  x   | No                        |
 | Wallet                          | Microsoft.Wallet                       |      | x    |  x    | No                        |
 | Weather                         | Microsoft.BingWeather                  | x    | x    |  x    | Yes                        |
 | Xbox                            | Microsoft.XboxApp                      | x    | x    |  x    | No                        |
