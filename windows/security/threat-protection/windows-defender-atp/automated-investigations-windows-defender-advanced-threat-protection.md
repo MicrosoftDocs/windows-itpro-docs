@@ -1,5 +1,5 @@
 ---
-title: View the Windows Defender ATP automated investigations list
+title: Automated investigations in Windows Defender Advanced Threat Protection
 description: View the list of automated investigations, its status, detection source and other details.
 keywords: automated, investigation, detection, source, threat types, id, tags, endpoints, duration, filter export
 search.product: eADQiWindows 10XVcnh
@@ -10,10 +10,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 02/23/2017
+ms.date: 03/15/2018
 ---
 
-# Use automated investigation to address alerts OR View the Windows Defender ATP automated investigations list or any other suggestion??
+# Automated investigations list in Windows Defender ATP
 
 **Applies to:**
 
@@ -23,7 +23,7 @@ ms.date: 02/23/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
+<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)
 
@@ -40,18 +40,18 @@ By default, the automated investigations list displays investigations initiated 
 
 Use the **Customize columns** drop-down menu to select columns that you'd like to show or hide. 
 
-This view allows you to download the entire list in CSV format using the **Export to CSV** feature, specify the number of items to show per page, and navigate between pages. You also have the flexibility to filter the list based on your preferred criteria.
+From this view, you can also download the entire list in CSV format using the **Export to CSV** feature, specify the number of items to show per page, and navigate between pages. You also have the flexibility to filter the list based on your preferred criteria.
 
  
-### Filters [JOEY: ARE THESE FILTERS FINAL? WHAT IS "IMPORTANT"]
+### Filters 
 You can use the following operations to customize the list of investigations displayed during an investigation:
 
 
-**ID**
+#### ID
 A designated identification number for the investigation. You can click on the link to open the details of the investigation.
 
 
-**Status**<br>
+#### Status
 The current state of an investigation classifications are classified as:
 
 
@@ -65,106 +65,105 @@ The current state of an investigation classifications are classified as:
 - Remediated - Malicious entities found were successfully remediated.
 - Terminated by system - Investigation was stopped. 
 
-
-**Detection source**<br>
+#### Detection source 
 Source of the alert that initiated the investigation. 
 
-**Automated investigation**<br>
+#### Automated investigation
 The alert that initiated the investigation.
 
-**Threat types**<br>
+#### Threat types
 The category of threat detected during the investigation.
 
 
-**Tags**<br>
+#### Tags
 Filter using manually added tags that capture the context of an investigation.
 
-**Machines**<br>
+#### Machines
 Multiple investigations can be initiated on an endpoint. You can filter the automated investigations list to zone in a specific endpoint to see other investigations related to the endpoint.
 
-**Status details**<br>
+#### Status details 
 You can filter based on the current status of ongoing or completed investigations.
 
-**Endpoint groups**<br>
+#### Endpoint groups
 Apply this filter to see specific machine groups that you might have created.
 
-**Comments**<br>
+#### Comments
 Select between filtering the list between investigations that have comments and those that don't.
 
-**Important**<br>
-?????
+## Analyze automated investigations 
+You can view the details of an automated investigation to see details of the investigation such as the investigation graph, alerts associated with the investigation, the endpoint that was investigated, and other information.
 
-### Columns
-You can choose specific columns to display to customize the automated investigation list. 
+In this view, you値l see the name of the investigation, when it started and the duration of time that has passed in the status state.
 
-Click on **Customize columns** and select any or all of the available fields from the drop-down list.
+The comments and tags allow you to add and review tags and comments that were added about the investigation.
+
+### Investigation page
+The investigation page gives you a quick summary on the status, alert severity, category, and detection source.
+
+You値l also have access to the following sections that help you see details of the investigation with finer granularity:
+
+- Investigation graph
+- Alerts
+- Machines
+- Threats
+- Entities
+- Log
+- Pending actions
+
+In any of the sections, you can customize columns to further expand to limit the details you see in a section.
+
+### Investigation graph
+The investigation graph provides a graphical representation of an investigation. All investigation related information is simplified and arranged in specific sections. Clicking on any of the icons brings you the relevant section where you can view more information.
+
+### Alerts
+Shows details such as a short description of the alert that initiated the investigation, severity, category, the machine associated with the alert, user, time in queue, status, investigation state, and who the investigation is assigned to. 
+
+Selecting an alert using the checkbox brings up the alerts details pane where you have the option of opening the alert page, manage the alert by changing its status, see alert details, automated investigation details, related machine, logged-on users, and comments and history. 
+
+Clicking on an alert title brings you the alert page.
+
+### Machines
+Shows details the endpoint name, IP address, group, users, operating system, remediation level, investigation count, and when it was last investigated.
+
+Selecting a machine using the checkbox brings up the machine details pane where you can see more information such as machine details and logged-on users.
+
+Clicking on an endpoint name brings you the machine page.
+
+### Threats
+Shows details related to threats associated with this investigation.
+
+### Entities
+Shows details about entities such as files, process, services, drives, and IP addresses. The table details such as the number of entities that were analyzed. You値l gain insight into details as how many are infected, remediated, suspicious, verified, or determined to be clean.
+
+### Log
+Gives a chronological detailed view of all the investigation actions taken on the alert. You値l see the action type, action, status, machine name, description of the action, comments entered by analysts who may have worked on the investigation, execution start time, duration, pending duration.
+
+As with other sections, you can customize columns, select the number of items to show per page, and filter the log.
+
+Available filters include action type, action, status, machine name, and description.
+
+You can also click on an action to bring up the details pane where you値l see information such as the summary of the action and input data. 
+
+### Pending actions history
+This tab is displayed if there are any pending actions on the investigation.
 
 
-### List
-You have the option of displaying between 15, 30, or 50 items to display on the page.
 
-You can pivot to the Investigation page to see details on a specific investigation.
+## Pending actions on investigations
+The pending actions view aggregates all the files and processes that require action for an investigation to proceed / completed.
 
-## Review / Analyze automated investigations [BARAK: SHOULD WE CREATE A STAND ALONE TOPIC FOR THIS?]
-From the automated investigations page you can navigate to the investigation pane view to see the details of each investigation. 
+Use the Customize columns drop-down menu to select columns that you'd like to show or hide. 
 
-![Image of automated investigation pane](images/atp-autoinvestigation-investigation-pane.png)
+From this view, you can also download the entire list in CSV format using the **Export to CSV** feature, specify the number of items to show per page, and navigate between pages.
 
-You値l see the main areas of this view:
+Selecting a file opens a panel where information such as file details, investigation details, and alert details is displayed.
 
-Area | Description
-:---|:---
-(1) Status and menu bar | Displays the following details:<br> **Elapsed time** - duration of time that the investigation is taking <br> **Actions** -  shows the number of actions the investigation has taken <br> **Comments** - shows the number of comments added to the investigation <br> **Tags** - shows the number of tags added to the investigation <br> **Menu** - allows you to cancel the investigation
-(2) Investigation pane | Displays a graphical representation of the investigation.
-(3) Details pane | Displays detailed information for a selected object in the Investigation pane. 
+Selecting a process also opens a panel where information such as process details, investigation details, alert details, comments and history is displayed.
 
-### Status and menu bar
-The status and menu bar displays general information about the incident and enables you to do an in-depth review of the incident, as it was managed by the automated investigation.
-
-#### Elapsed time
-The **Elapsed time** is a read-only field and shows the duration of time that has elapsed since the investigation commenced.
-
-#### Actions
-Clicking the **Actions** menu opens a detailed view of all the actions taken by the investigation. It displays the action in sequential order, with the most recent action displayed at the top. This view shows a table with the following columns:
-- Action type
-- Status
-- Endpoint name
-- Description
-- Comments
-- Execution start time
-
-You can apply filters to limit the actions displayed on the list. 
-
-#### Comments 
-The **Comments** pane opens when you click the menu icon. You can add and review comments that were added about the investigation.
-
-#### Tags
-The **Tags** menu allows you to add or remove tags to the investigation.
-
-You have the option of canceling the investigation by clicking the three horizontal dots (...) and selecting **Cancel investigation**.
-
-### Investigation pane
-The investigation pane displays specific investigation information in an user-friendly graphical representation. All investigation related information is simplified and arranged in specific sections, as described in following image:
+From either of these views, you can click on the Open investigation page link to see the investigation details.
 
 
-#### Alert originator
-Displays the alert that triggered the investigation. You can see details such as the detection, when it was received, the rule associated with the alert, and variables. 
-You can also pivot to the actual alert to navigate to the alert details page. If there are correlated alerts, you'll also see information about it.
 
-#### Data sources
-Shows the data sources that were queried during the investigation.
-
-#### Endpoints
-Shows the Endpoints involved in the investigation. 
-
-#### Entities Analyzed 
-Shows the files, processes, services, drivers and IP addresses that was analyzed during the investigation. You can open the entities details pane to view more information about each entity category. 
-
-#### Found threat types
-Shows the threat and remediation spoke. 
-
-#### Result
-Shows the result of the investigation.
 
 
 
