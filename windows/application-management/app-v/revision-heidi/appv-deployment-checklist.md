@@ -45,12 +45,8 @@ This checklist outlines the recommended steps and items to consider when deployi
 <tr class="odd">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
 <td align="left"><p>Run App-V Setup to deploy the required App-V features for your environment.</p>
-<div class="alert">
-<strong>Note</strong>
-<p>Keep track of the server names and associated URLs created during installation. You'll need this information throughout the installation process.</p>
 </div>
 <div>
- 
 </div></td>
 <td align="left"><p></p>
 <ul>
@@ -58,7 +54,7 @@ This checklist outlines the recommended steps and items to consider when deployi
 <li><p>[Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md)</p></li>
 <li><p>[How to deploy the App-V server](appv-deploy-the-appv-server.md)</p></li>
 </ul></td>
-<td align="left"><p></p></td>
+<td align="left"><p>Keep track of the server names and associated URLs created during installation. You'll need this information throughout the installation process.</p></td>
 </tr>
 </tbody>
 </table>
