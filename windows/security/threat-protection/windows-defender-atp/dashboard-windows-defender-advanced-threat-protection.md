@@ -118,17 +118,6 @@ The tile shows you a list of user accounts with the most active alerts.
 
 Click the user account to see details about the user account. For more information see [Investigate a user account](investigate-user-windows-defender-advanced-threat-protection.md).
 
-## Suspicious activities
-This tile shows suspicous activities detected from security sources that Windows Defender ATP has purview on. Depending on what security control your organization uses, you may see suspicous activites from the following security controls:
-- Windows Defende SmartScreen
-- Windows Firewall
-- Windows Defender Exploit Guard
-- Windows Defender Antivirus
-
-![Image of suspicious activities](images/atp-suspicious-activities.png)
-
-JOEY: REPLACE WITH UPDATED TILE WHEN IT BECOMES AVAILABLE!!!!
-
 
 ## Sensor health
 The **Sensor health** tile provides information on the individual endpoint’s ability to provide sensor data to the Windows Defender ATP service. It reports how many machines require attention and helps you identify problematic machines.
