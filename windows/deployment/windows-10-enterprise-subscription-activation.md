@@ -68,7 +68,7 @@ With Windows 10 Enterprise, businesses can benefit from enterprise-level securit
 You can benefit by moving to Windows as an online service in the following ways:
 
 1. Licenses for Windows 10 Enterprise are checked based on Azure Active Directory (Azure AD) credentials, so now businesses have a systematic way to assign licenses to end users and groups in their organization.
-2. Azure AD logon triggers a silent edition upgrade, with no reboot required 
+2. User logon triggers a silent edition upgrade, with no reboot required 
 3. Support for mobile worker/BYOD activation; transition away from on-prem KMS and MAK keys. 
 4. Compliance support via seat assignment.  
 
