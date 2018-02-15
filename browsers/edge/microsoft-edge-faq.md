@@ -12,10 +12,7 @@ ms.date: 09/19/2017
 
 # Microsoft Edge - Frequently Asked Questions (FAQs) for IT Pros
 
-**Applies to:**
-
-- Windows 10
-- Windows 10 Mobile
+>Applies to: Windows 10, Windows 10 Mobile
 
 **Q: What is the difference between Microsoft Edge and Internet Explorer 11? How do I know which one to use?**
 
