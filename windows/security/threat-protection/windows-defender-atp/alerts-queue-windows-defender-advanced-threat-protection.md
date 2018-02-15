@@ -44,6 +44,9 @@ To see a list of alerts, click any of the queues under the **Alerts queue** opti
 
 ![Image of alerts queue](images/atp-alertsq2.png)
 
+[JOEY: NEED TO UPDATE ALL IMAGES TO REFLECT ACTUAL NEW COLUMNS AND NAVIGATION PANE ETC!!!]
+
+
 ##  Sort, filter, and group the alerts list
 You can sort and filter the alerts using the available filters or clicking on a column's header that will sort the view in ascending or descending order.
 
@@ -99,6 +102,21 @@ So, for example:
 - **Grouped view** - Groups alerts by alert ID, file hash, malware family, or other attribute to enable more efficient alert triage and management. Alert grouping reduces the number of rows in the queue by aggregating similar alerts together.
 
 The grouped view allows for efficient alert triage and management.
+
+## Alert queue columns
+You can click on the first column to open up the **Alert management pane**. You can also select view the machine and user panes by selecting the icons beside the links.
+
+Alerts are listed with the following columns:
+
+- **Title** - Displays a brief description of the alert and its category.
+- **Machine and user** - Displays the machine name and user associated with the alert. You view the machine or user details pane or pivot the actual details page.
+- **Severity** - Displays the severity of the alert. Possible values are informational, low, medium, or high.
+- **Last activity** - Date and time for when the last action was taken on the alert.
+- **Time in queue** - Length of time the alert has been in the alerts queue.
+- **Status** - Current status of the alert. Possible values include new, in progress, or resolved. 
+- **Investigation state** - Reflects the number of related investigations and it's current state.
+- **Assigned to** - Displays who is addressing the alert.
+- **Manage icon** - You can click on the icon to bring up the alert management pane where you can manage and see details about the alert.
 
 ### Use the Alert management pane
 Selecting an alert brings up the **Alert management** pane where you can manage and see details about the alert.
