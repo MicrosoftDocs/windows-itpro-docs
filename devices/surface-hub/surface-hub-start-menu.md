@@ -28,7 +28,7 @@ The customized Start menu is defined in a Start layout XML file. You have two op
 - Configure the desired Start menu on a desktop (pinning only apps that are available on Surface Hub), and then [export the layout](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout#export-the-start-layout).
 
 >[!TIP]
->To add a tile with a web link to your desktop start menu, go the the link in Microsoft Edge, select `...` in the top right corner, and select **Pin this page to Start**. See [a Start layout that includes a Microsoft Edge link](#edge) for an example of how links will appear in the XML.
+>To add a tile with a web link to your desktop start menu, go to the link in Microsoft Edge, select `...` in the top right corner, and select **Pin this page to Start**. See [a Start layout that includes a Microsoft Edge link](#edge) for an example of how links will appear in the XML.
 
 To edit the default XML or the exported layout, familiarize yourself with the [Start layout XML](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop). There are a few [differences between Start layout on a deskop and a Surface Hub.](#differences)
 
@@ -177,3 +177,7 @@ This example shows a link to a website and a link to a .pdf file.
 </LayoutModificationTemplate>
 
 ```
+
+## More information
+
+- [Blog post: Changing Surface Hub’s Start Menu](https://blogs.technet.microsoft.com/y0av/2018/02/13/47/)
