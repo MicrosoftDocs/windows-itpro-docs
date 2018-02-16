@@ -177,6 +177,9 @@ Block Win32 imports from Macro code in Office | 92E97FA1-2EDF-4476-BDD6-9DD0B4DD
 Block process creations originating from Psexec and WMI commands | D1E49AAC-8F56-4280-B9BA-993A6D77406C
 Block untrusted and unsigned processes that run from USB (File ASR/Protection) | B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4
 Block executable files from running unless they meet a prevalence/age | 01443614-CD74-433A-B99E-2ECDC07BFC25
+Block credential stealing from the Windows local security authority subsystem (lsass.exe) | 9E6C4E1F-7D60-472F-BA1A-A39EF669E4B2 CHECK WITH EVALD!!!!
+Use advanced protection against ransomware | C1DB55AB-C21A-4637-BB3F-A12568109D35 CHECK WITH EVALD!!!!
+
 
 
 >[!NOTE]
