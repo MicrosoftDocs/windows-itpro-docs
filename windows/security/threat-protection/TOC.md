@@ -283,7 +283,8 @@
 #### [Customize Controlled folder access](windows-defender-exploit-guard\customize-controlled-folders-exploit-guard.md)
 
 
-## [Windows Defender Application Control](windows-defender-application-control.md)
+## [Windows Defender Application Control](windows-defender-application-control\windows-defender-application-control.md)
+### [Deploy WDAC policies](windows-defender-application-control\deploy-windows-defender-application-control-policies.md)
 
 ## [Enable HVCI](enable-virtualization-based-protection-of-code-integrity.md)
 
