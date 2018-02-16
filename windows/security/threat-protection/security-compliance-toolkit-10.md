@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.author: sagaudre
 author: brianlic-msft
-ms.date: 10/16/2017
+ms.date: 02/16/2018
 ---
 
 # Microsoft Security Compliance Toolkit 1.0
@@ -31,6 +31,9 @@ The Security Compliance Toolkit consists of:
 -   Windows Server Security Baselines
     -   Windows Server 2016
     -   Windows Server 2012 R2
+
+-   Microsoft Office Security Baselines
+    -   Office 2016 
 
 -   Tools
     -   Policy Analyzer tool
