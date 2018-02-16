@@ -29,8 +29,7 @@ ms.date: 03/05/2018
 
 The Security Analytics dashboard expands your visibility into the overall security posture of your organization. From this dashboard, you'll be able to quickly assess the security posture of your organization, see machines that require attention, as well as recommendations for actions to further reduce the attack surface in your organization - all in one place. From there you can take action based on the recommended configuration baselines.
 
->[!IMPORTANT]
-> This feature is available for machines on Windows 10, version  1703 or later. 
+ 
 
 The **Security analytics dashboard** displays a snapshot of:
 - Organizational security score
@@ -88,12 +87,15 @@ You can click on specific date points to see the total score for that security c
 ### Endpoint detection and response (EDR) optimization
 For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for your Endpoint detection and response tool.
 
+>[!IMPORTANT]
+> This feature is available for machines on Windows 10, version  1607 or later.  EVALD PLEASE DOUBLE CHECK!!!
+
 #### Minimum baseline configuration setting for EDR:
 - Windows Defender ATP sensor is on
 - Data collection is working correctly
 - Communication to Windows Defender ATP service is not impaired
 
-#### Minimum baseline configuration setting for EDR:
+##### Recommended actions:
 You can take the following actions to increase the overall security score of your organization:
 - Turn on sensor
 - Fix sensor data collection
@@ -103,6 +105,9 @@ For more  information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows
 
 ### Windows Defender Antivirus (Windows Defender AV) optimization
 For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender AV is fulfilled.
+
+>[!IMPORTANT]
+> This feature is available for machines on Windows 10, version  1607 or later.  EVALD PLEASE DOUBLE CHECK!!!
 
 #### Minimum baseline configuration setting for Windows Defender AV:
 Endpoints are considered "well configured" for Windows Defender AV if the following requirements are met:
@@ -132,6 +137,9 @@ For more information, see [Configure Windows Defender Antivirus](../windows-defe
 ### OS security updates optimization
 This tile shows you the exact number of machines that require the latest security updates. It also shows machines that are running on the latest Windows Insider preview build and serves as a reminder to ensure that users should run the latest builds.
  
+>[!IMPORTANT]
+> This feature is available for machines on Windows 10, version  1607 or later.  EVALD PLEASE DOUBLE CHECK!!!
+
 You can take the following actions to increase the overall security score of your organization:
 - Install the latest security updates
 - Fix sensor data collection
@@ -142,6 +150,10 @@ For more information, see [Windows Update Troubleshooter](https://support.micros
 
 ### Windows Defender Exploit Guard (Windows Defender EG) optimization
 For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender EG is fulfilled. When endpoints are configured according to the baseline you'll be able to see Windows Defender EG events on the Windows Defender ATP Machine timeline. 
+
+
+>[!IMPORTANT]
+> This feature is available for machines on Windows 10, version  1703 or later.
 
 #### Minimum baseline configuration setting for Windows Defender EG:
 Endpoints are considered "well configured" for Windows Defender EG if the following requirements are met:
@@ -206,6 +218,9 @@ For more information, see [Windows Defender Exploit Guard](../windows-defender-e
 ### Windows Defender Application Guard (Windows Defender AG) optimization
 For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender AG is fulfilled. When endpoints are configured according to the baseline you'll be able to see Windows Defender AG events on the Windows Defender ATP Machine timeline. 
 
+>[!IMPORTANT]
+>This security control is only applicable for endpoints with Windows 10, version 1709 or later.
+
 #### Minimum baseline configuration setting for Windows Defender AG:
 Endpoints are considered "well configured" for Windows Defender AG if the following requirements are met:
 
@@ -230,6 +245,9 @@ For more information, see [Windows Defender Application Guard overview](../windo
 ### Windows Defender SmartScreen optimization
 For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender SmartScreen is fulfilled.
 
+>[!IMPORTANT]
+>This security control is only applicable for endpoints with Windows 10, version 1709 or later.
+
 #### Minimum baseline configuration setting for Windows Defender SmartScreen:
 The following settings must be configured with the following settings:
 - Check apps and files: **Warn** or **Block** 
@@ -249,7 +267,7 @@ For more information, see [Windows Defender SmartScreen](../windows-defender-sma
 ### Windows Defender Firewall optimization
 For an endpoint to be considered "well configured", Windows Defender Firewall must be turned on and enabled for all profiles and inbound connections are blocked by default. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender Firewall is fulfilled. 
 
->[!NOTE]
+>[!IMPORTANT]
 >This security control is only applicable for endpoints with Windows 10, version 1709 or later.
 
 #### Minimum baseline configuration setting for Defender Firewall 
@@ -266,6 +284,7 @@ For more information on Windows Defender Firewall settings, see [Planning settin
 
 
 ##### Recommended actions:
+You can take the following actions to increase the overall security score of your organization:
 - Turn on firewall
 - Secure domain profile 
 - Secure private profile
@@ -279,11 +298,15 @@ For more information, see [Windows Defender Firewall with Advanced Security](htt
 ### Windows Hello optimization
 For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Hello is fulfilled. 
 
+>[!IMPORTANT]
+>This security control is only applicable for endpoints with Windows 10, version 1803 or later.
+
 #### Minimum baseline configuration setting for Windows Hello
 - Windows Hello is configured for all users
 - Users are encouraged to use Windows Hello
 
 ##### Recommended actions:
+You can take the following actions to increase the overall security score of your organization:
 - Configure Windows Hello for all users
 - Encourage all users to use Windows Hello
 
@@ -297,7 +320,11 @@ For an endpoint to be considered "well configured", it must comply to a minimum 
 - Ensure all supported internal drives are encrypted
 - Ensure that all suspended protection on drives resume protection 
 
+>[!IMPORTANT]
+>This security control is only applicable for endpoints with Windows 10, version 1803 or later.
+
 ##### Recommended actions:
+You can take the following actions to increase the overall security score of your organization:
 - Encrypt all supported drives
 - Resume protection on all drives
 - Fix sensor data collection
