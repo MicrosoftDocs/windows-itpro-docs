@@ -30,7 +30,7 @@ Windows Defender ATP supports the onboarding of the following servers:
 - Windows Server 2012 R2
 - Windows Server 2016
 
-## Onboard server endpoints [MICHAL - SHOULD THIS BE JUST FOR 2012R2?]
+## Onboard Windows Server 2012 R2 and Windows Server 2016 [MICHAL - SHOULD I JUST RENAME?]
 
 To onboard your servers to Windows Defender ATP, you’ll need to:
 
