@@ -174,6 +174,9 @@ Block Office applications from creating executable content  | 3B576869-A4EC-4529
 Impede JavaScript and VBScript to launch executables | D3E037E1-3EB8-44C8-A917-57927947596D
 Block execution of potentially obfuscated scripts  | 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC
 Block Win32 imports from Macro code in Office | 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B
+Block process creations originating from Psexec and WMI commands | D1E49AAC-8F56-4280-B9BA-993A6D77406C
+Block untrusted and unsigned processes that run from USB (File ASR/Protection) | B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4
+Block executable files from running unless they meet a prevalence/age | 01443614-CD74-433A-B99E-2ECDC07BFC25
 
 
 >[!NOTE]
