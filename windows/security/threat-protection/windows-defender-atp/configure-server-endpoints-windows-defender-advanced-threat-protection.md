@@ -54,7 +54,7 @@ You’ll be able to onboard in the same method available for Windows 10 client e
       - Name: ForceDefenderPassiveMode
       - Value: 1
 
-    b. Run the following PowerSHell command to verify that the passive mode was configured:
+    b. Run the following PowerShell command to verify that the passive mode was configured:
     ```Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}```
 
     c. Confirm  that a recent event containing the passive mode event is found:
