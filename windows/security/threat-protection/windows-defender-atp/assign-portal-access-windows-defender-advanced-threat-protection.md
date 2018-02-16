@@ -98,8 +98,8 @@ To implement role-based access, you'll need to define admin roles, assign corres
 When you first log in to the Windows Defender ATP portal, you’re granted either full access or read only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. Read only access is granted to users with a Security Reader role in Azure AD. 
 
 > [!WARNING]
-> Before enabling the feature, it’s important that you have a Global Administrator role in Azure AD and that have your Azure AD groups ready to reduce the risk of being locked out of the portal. 
-> Only those with Azure AD Global Administrator rights will be able to create and assign roles in the Windows Defender ATP portal, therefore, having the right groups ready in Azure AD is important.
+Before enabling the feature, it’s important that you have a Global Administrator role in Azure AD and that have your Azure AD groups ready to reduce the risk of being locked out of the portal. 
+Only those with Azure AD Global Administrator rights will be able to create and assign roles in the Windows Defender ATP portal, therefore, having the right groups ready in Azure AD is important.
 > Turning on role-based access control will cause users with read-only permissions to lose access until they are assigned to a role. Users with admin permissions are automatically assigned the global administrator role with full permissions.
 
 To use RBAC in Windows Defender ATP, you’ll need to enable it. 
