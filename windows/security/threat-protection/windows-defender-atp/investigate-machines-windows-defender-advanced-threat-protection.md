@@ -36,25 +36,25 @@ You can click on affected machines whenever you see them in the portal to open a
 - Any IP address or domain details view
 
 When you investigate a specific machine, you'll see:
-- Machine details, Azure Advanced Threat Protection alerts, Logged on users, and Machine Reporting
+- Machine details, Azure Advanced Threat Protection (Azure ATP) alerts, Logged on users, and Machine Reporting
 - Alerts related to this machine
 - Machine timeline
 
 ![Image of machine view](images/atp-azure-atp-machine.png)
 
-The machine details, Azure Advanced Threat Protection alerts, total logged on users, and machine reporting sections display various attributes about the machine.
+The machine details, Azure ATP alerts, total logged on users, and machine reporting sections display various attributes about the machine.
 
 
 The machine details tile provides information such as the domain and OS of the machine. If there's an investigation package available on the machine, you'll see a link that allows you to download the package.
 
 For more information on how to take action on a machine, see [Take response action on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md).
 
-If you have enabled the Azure Advanced Threat Protection feature and there are alerts related to the machine, you can click on the link that will take you to the Azure Advanced Threat Protection page where more information about the alerts are provided. The Azure Advanced Threat Protection tile also provides details such as the last Azure Active Directory site information and total domain group memberships.
+If you have enabled the Azure ATP feature and there are alerts related to the machine, you can click on the link that will take you to the Azure ATP page where more information about the alerts are provided. The Azure ATP tile also provides details such as the last Azure Active Directory site information and total domain group memberships.
 
 >[!NOTE]
 >You’ll need to enable the integration between Windows Defender ATP and Azure Advanced Threat Protection to use this feature.
 
-For more information on how to enable the Azure Advanced Threat Protection integration, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md).
+For more information on how to enable the Azure ATP integration, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md).
 
 Clicking on the number of total logged on users in the Logged on users tile opens the Users Details pane that displays the following information for logged on users in the past 30 days:
 
