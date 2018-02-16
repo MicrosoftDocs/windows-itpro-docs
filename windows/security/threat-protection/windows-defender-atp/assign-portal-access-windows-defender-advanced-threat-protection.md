@@ -108,7 +108,7 @@ To use RBAC in Windows Defender ATP, you’ll need to enable it.
 
 After opting in to use RBAC, you cannot revert to the initial roles as when you first logged into the portal. 
 
-### Create user roles and assign the role to a group
+## Create user roles and assign the role to a group
 
 1.	In the navigation pane, select **Preferences setup > Role based access control > Roles**.
 
@@ -136,7 +136,7 @@ After opting in to use RBAC, you cannot revert to the initial roles as when you 
 
 7.	Apply the configuration settings.
 
-### Edit user roles
+## Edit user roles
 
 1.	Select the user role you'd like to edit.
 
@@ -146,17 +146,17 @@ After opting in to use RBAC, you cannot revert to the initial roles as when you 
 
 4.	Click **Save and close**.
 
-### Delete user roles
+## Delete user roles
 
 1.	Select the user role row you'd like to delete.
 
 2.	Click the drop-down button and select **Delete role**.
 
-### Manage machine groups
+## Manage machine groups
 
 Create machine groups and set automated remediation levels on them, configure the rules to apply on the group, and assign the group to an Azure AD group and role. After configuring the groups and assignments, rank the group so that the corresponding rule is applied. 
 
-#### Add machine group
+### Add machine group
 
 1.	In the navigation pane, select **Preferences setup > Role based access control > Machine groups**.
 
@@ -188,7 +188,7 @@ Create machine groups and set automated remediation levels on them, configure th
 
 7.	Apply the configuration settings.
 
-#### Rank rules on machine groups
+## Rank rules on machine groups
 
 After creating groups, setting the remediation levels on them, and assigning user groups that can access the machine group, you’ll need to rank the rules that are applied on the groups.
 
