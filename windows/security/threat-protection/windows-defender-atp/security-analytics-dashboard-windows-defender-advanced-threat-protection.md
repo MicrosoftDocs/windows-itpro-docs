@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 localizationpriority: high
-ms.date: 11/17/2017
+ms.date: 03/05/2018
 ---
 
 # View the Windows Defender Advanced Threat Protection Security analytics dashboard
@@ -34,7 +34,7 @@ The Security Analytics dashboard expands your visibility into the overall securi
 
 The **Security analytics dashboard** displays a snapshot of:
 - Organizational security score
-- Security coverage
+- Windows Defender security controls
 - Improvement opportunities
 - Security score over time
 
@@ -54,11 +54,11 @@ In the example image, the total points from the **Improvement opportunities** ti
 
 You can set the baselines for calculating the score of Windows Defender security controls on the Security Analytics dashboard through the **Preferences settings**. For more information, see [Enable Security Analytics security controls](enable-security-analytics-windows-defender-advanced-threat-protection.md).
 
-## Security coverage
-The security coverage tile shows a bar graph where each bar represents a Windows Defender security control. Each bar reflects the number of machines that are well configured and those that require **any kind of attention** for each security control. Hovering on top of the individual bars will show exact numbers for each category. Machines that are green are well configured, while machines that are orange require some level of attention. 
+## Windows Defender security controls
+The security controls tile shows a bar graph where each bar represents a Windows Defender security control. Each bar reflects the number of machines that are well configured and those that require **any kind of attention** for each security control. Hovering on top of the individual bars will show exact numbers for each category. Machines that are green are well configured, while machines that are orange require some level of attention. 
 
 
-![Security coverage](images/atp-security-coverage.png)
+![Security coverage](images/atp-security-controls.png)
 
 ## Improvement opportunities 
 Improve your organizational security score by taking the recommended improvement actions listed on this tile. The goal is to reduce the gap between the perfect score and the current score for each control.
@@ -240,17 +240,67 @@ For more information, see [Windows Defender SmartScreen](../windows-defender-sma
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-sadashboard-belowfoldlink) 
 
+### Windows Defender Firewall optimization
+For an endpoint to be considered "well configured", Windows Defender Firewall must be turned on and enabled for all profiles and inbound connections are blocked by default. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender Firewall is fulfilled. 
+
+>[!NOTE]
+>This security control is only applicable for endpoints with Windows 10, version 1709 or later.
+
+#### Minimum baseline configuration setting for Defender Firewall 
+
+- Windows Defender Firewall is turned on for all network connections
+- Secure domain profile by enabling Windows Defender Firewall and ensure that Inbound connections is set to Blocked
+- Secure private profile by enabling Windows Defender Firewall and ensure that Inbound connections is set to Blocked
+- Secure public profile is configured by enabling Windows Defender Firewall and ensure that Inbound connections is set to Blocked
+
+For more information on Windows Defender Firewall settings, see [Planning settings for a basic firewall policy](https://docs.microsoft.com/en-us/windows/security/identity-protection/windows-firewall/planning-settings-for-a-basic-firewall-policy).
+
+>[!NOTE]
+> If Windows Defender Firewall is not your primary firewall, consider excluding it from the security score calculations and make sure that your third-party firewall is configured in a securely.
+
+
+##### Recommended actions:
+- Turn on firewall
+- Secure domain profile 
+- Secure private profile
+- Secure public profile
+- Verify secure configuration of third-party firewall
+- Fix sensor data collection
+  - The Windows Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
+
+For more information, see [Windows Defender Firewall with Advanced Security](https://docs.microsoft.com/en-us/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security).
+
+### Windows Hello optimization
+For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Hello is fulfilled. 
+
+#### Minimum baseline configuration setting for Windows Hello
+- Windows Hello is configured for all users
+- Users are encouraged to use Windows Hello
+
+##### Recommended actions:
+- Configure Windows Hello for all users
+- Encourage all users to use Windows Hello
+
+### BitLocker optimization
+For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for BitLocker is fulfilled. 
+
+>[!NOTE]
+>This security control is currently only applicable for endpoints with Windows 10, Insider Preview build.
+
+#### Minimum baseline configuration setting for BitLocker
+- Ensure all supported internal drives are encrypted
+- Ensure that all suspended protection on drives resume protection 
+
+##### Recommended actions:
+- Encrypt all supported drives
+- Resume protection on all drives
+- Fix sensor data collection
+  - The Windows Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
+
+
 ## Related topics
 - [Enable Security Analytics security controls](enable-security-analytics-windows-defender-advanced-threat-protection.md)
 - [View the Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
-- [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
-- [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
-- [Investigate an IP address associated with a Windows Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
-- [Investigate a domain associated with a Windows Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
-- [View and organize the Windows Defender ATP Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)
-- [Investigate machines in the Windows Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
-- [Investigate a user account in Windows Defender ATP ](investigate-user-windows-defender-advanced-threat-protection.md)
-- [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
-- [Take response actions in Windows Defender ATP](response-actions-windows-defender-advanced-threat-protection.md)
+
+
 
