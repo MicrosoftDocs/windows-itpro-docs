@@ -115,7 +115,9 @@ After opting in to use RBAC, you cannot revert to the initial roles as when you 
 3.	Enter the user group name, description, and active permissions you’d like to assign to the group.
 
 	 - **User group name**
+
 	 - **Description**
+
 	 - **Active permissions**
 		  - **View data** – Users can view information in the portal.
 		  - **Investigate alerts** – Users can manage alerts, initiate automated investigations, collect investigation packages, manage machine tags, and export machine timeline.
@@ -161,17 +163,20 @@ Create machine groups and set automated remediation levels on them, configure th
 3.	Set the machine group details, configure an association rule, preview the results, then assign the group to an Azure user group:
 
 	 - **Name**
+
 	 - **Remediation level for automated investigations**
 	  - **No remediation**
 	  - **Require approval (all folders)**
 	  - **Require approval (non-temp folders)**
 	  - **Require approval (core folders)**
 	  - **Fully automated**
+
 	 - **Description**
+
 	 - **Matching rule** – you can apply the rule based on machine name, domain, tag, or OS version. 
 
 		>[!TIP]
-		>If you want to group machines by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Manage machine group and tags](manage-machine-group-and-tags.md).
+		>If you want to group machines by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Manage machine group and tags](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection#manage-machine-group-and-tags).
 
 4.	Review the result of the preview of matched machines. If you are satisfied with the rules, click the **Access** tab.
 
