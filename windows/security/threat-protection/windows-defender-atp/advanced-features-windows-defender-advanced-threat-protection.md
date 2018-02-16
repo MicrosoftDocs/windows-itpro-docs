@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.date: 03/05/2018
 ---
 
 # Turn on advanced features in Windows Defender ATP
@@ -47,10 +47,20 @@ For more information, see [Investigate a user account](investigate-user-windows-
 ## Skype for Business integration
 Enabling the Skype for Business integration gives you the ability to communicate with users using Skype for Business, email, or phone. This can be handy when you need to communicate with the user and mitigate risks.
 
+## Azure Advanced Threat Protection integration
+The integration with Azure Advanced Threat Protection allows you to pivot directly into another Microsoft Identity security product. Azure Advanced Threat Protection augments an investigation with additional insights about a suspected compromised account and related resources. By enabling this feature, you'll enrich the machine-based investigation capability by pivoting across the network from an identify point of view.
+
+
+>[!NOTE]
+>You'll need to have the appropriate license to enable this feature. 
+
 ## Office 365 Threat Intelligence connection
 This feature is only available if you have an active Office 365 E5 or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
 
 When you enable this feature, you'll be able to incorporate data from Office 365 Advanced Threat Protection into the Windows Defender ATP portal to conduct a holistic security investigation across Office 365 mailboxes and Windows machines.
+
+>[!NOTE]
+>You'll need to have the appropriate license to enable this feature. 
 
 To receive contextual machine integration in Office 365 Threat Intelligence, you'll need to enable the Windows Defender ATP settings in the Security & Compliance dashboard. For more information, see [Office 365 Threat Intelligence overview](https://support.office.com/en-us/article/Office-365-Threat-Intelligence-overview-32405DA5-BEE1-4A4B-82E5-8399DF94C512).
 
