@@ -1,7 +1,7 @@
 ---
 title: Upgrading to MBAM 2.5 SP1 from MBAM 2.5
 description: Upgrading to MBAM 2.5 SP1 from MBAM 2.5
-author: kaushika
+author: kaushika-msft
 ms.assetid: 
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
@@ -35,7 +35,7 @@ Note: You will not see an option to remove the Databases; this is expected.  
 4. Install the September 2017 Rollup on the IIS server(https://www.microsoft.com/en-us/download/details.aspx?id=56126)
 5. Using the MBAM Configurator; re-add the Admin and Self Service Portals to the IIS server 
 6. This will configure the sites using the latest MBAM code from the June  Rollup
-7. - Open an elevated command prompt, Type: **IISRESET** and Hit Enter.
+- Open an elevated command prompt, Type: **IISRESET** and Hit Enter.
  
 #### Steps to upgrade the MBAM Clients/Endpoints
 1. Uninstall the 2.5 Agent from client endpoints
