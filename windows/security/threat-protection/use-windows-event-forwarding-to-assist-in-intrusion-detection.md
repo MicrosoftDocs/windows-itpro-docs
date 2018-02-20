@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: tedhardyMSFT
-ms.date: 10/27/2017
+ms.date: 02/16/2018
 ---
 
 # Use Windows Event Forwarding to help with intrusion detection
@@ -636,9 +636,9 @@ Here are the minimum steps for WEF to operate:
     <!-- Detect User-Mode drivers loaded - for potential BadUSB detection. -->
     <Select Path="Microsoft-Windows-DriverFrameworks-UserMode/Operational">*[System[(EventID=2004)]]</Select>
   </Query>
-<Query Id="14" Path=" Windows PowerShell">
+<Query Id="14" Path="Windows PowerShell">
     <!-- Legacy PowerShell pipeline execution details (800) -->
-    <Select Path=" Windows PowerShell">*[System[(EventID=800)]]</Select>
+    <Select Path="Windows PowerShell">*[System[(EventID=800)]]</Select>
   </Query>
 </QueryList> 
 ```

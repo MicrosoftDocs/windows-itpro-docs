@@ -29,6 +29,7 @@ This topic provides a summary of available upgrade paths to Windows 10. You can 
 ✔ = Full upgrade is supported including personal data, settings, and applications.<BR>
 D = Edition downgrade; personal data is maintained, applications and settings are removed.
 
+<br>
 <table border="0" cellpadding="1">
     <tr>
         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
@@ -380,7 +381,8 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
 
 [Windows 10 deployment scenarios](../windows-10-deployment-scenarios.md)<br>
 [Windows upgrade and migration considerations](windows-upgrade-and-migration-considerations.md)<br>
-[Windows 10 edition upgrade](windows-10-edition-upgrades.md)
+[Windows 10 edition upgrade](windows-10-edition-upgrades.md)<br>
+[Windows 10 downgrade paths](windows-10-downgrade-paths.md)
 
 
 
