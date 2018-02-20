@@ -331,6 +331,28 @@ You can take the following actions to increase the overall security score of you
   - The Windows Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
 
 
+### Windows Defender Credential Guard optimization
+For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender Credential Guard is fulfilled.
+
+>[!IMPORTANT]
+> This feature is available for machines on Windows 10, version  1703 or later.  
+
+#### Minimum baseline configuration setting for Windows Defender Credential Guard:
+Endpoints are considered "well configured" for Windows Defender Credential Guard if the following requirements are met:
+
+- Hardware and software prerequisites are met
+- Windows Defender Credential Guard is turned on on compatible machines
+
+
+##### Recommended actions:
+You can take the following actions to increase the overall security score of your organization:
+
+- Ensure hardware and software prerequisites are met
+- Turn on Credential Guard 
+- Fix sensor data collection
+  - The Windows Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
+
+
 ## Related topics
 - [Enable Security Analytics security controls](enable-security-analytics-windows-defender-advanced-threat-protection.md)
 - [View the Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
