@@ -55,6 +55,7 @@
 #### [How to Enable BitLocker by Using MBAM as Part of a Windows Deployment](how-to-enable-bitlocker-by-using-mbam-as-part-of-a-windows-deploymentmbam-25.md)
 #### [How to Deploy the MBAM Client by Using a Command Line](how-to-deploy-the-mbam-client-by-using-a-command-line.md)
 ### [MBAM 2.5 Deployment Checklist](mbam-25-deployment-checklist.md)
+### [Upgrading to MBAM 2.5 SP1 from MBAM 2.5](upgrading-to-mbam-25-sp1-from-mbam-25.md)
 ### [Upgrading to MBAM 2.5 or MBAM 2.5 SP1 from Previous Versions](upgrading-to-mbam-25-or-mbam-25-sp1-from-previous-versions.md)
 ### [Removing MBAM Server Features or Software](removing-mbam-server-features-or-software.md)
 ## [Operations for MBAM 2.5](operations-for-mbam-25.md)

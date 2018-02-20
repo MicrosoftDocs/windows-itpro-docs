@@ -83,7 +83,6 @@ If you've already added a Collection to your private store, you can easily add a
 3. Click the ellipses next to the collection name, and click **Edit collection**. 
 4. Add or remove products from the collection, and then click **Done**. 
 
-
 You can also add an app to a collection from the app details page. 
 1. Sign in to [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com).
 2. Click **Manage**, and then click **Products & services**. 
@@ -92,6 +91,7 @@ You can also add an app to a collection from the app details page.
 
 ![Image showing app details page with Add a Collection.](images/msfb-ps-collection-idp.png) 
 
+<!---
 ## Private store performance
 We've recently made performance improvements for changes in the private store. This table includes common actions, and the current estimate for amount of time required for the change. 
 
@@ -104,8 +104,4 @@ We've recently made performance improvements for changes in the private store. T
 | Edit or remove a collection | 15 minutes |
 | Create private store tab | 4-6 hours |
 | Rename private store tab | 4-6 hours |
-
-
-    
-  
- 
+--> 
