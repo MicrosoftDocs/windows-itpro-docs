@@ -31,7 +31,7 @@ To request an Olympia Corp account, please fill out the survey at [https://aka.m
 
 ## Enrollment guidelines
 
-Welcome to Olympia Corp. Here are the steps to add your account to your PC.
+Welcome to Olympia Corp. Here are the steps needed to Enroll.
 
 As part of Windows Insider Lab for Enterprise, you can upgrade to Windows 10 Enterprise from Windows 10 Pro. This upgrade is optional. Since certain features such as Windows Defender Application Guard are only available on Windows 10 Enterprise, we recommend you to upgrade.
 
@@ -43,7 +43,9 @@ Choose one of the following two enrollment options:
 
 <a id="enrollment-keep-current-edition"></a>
 
-### Keep your current Windows 10 edition
+### Set up an Azure Active Directory REGISTERED Windows 10 device
+
+-   This is the Bring Your Own Device (BYOD) method - your device will receive Olympia policies and features, but a new account will not be created ([additional info]).(https://docs.microsoft.com/en-us/azure/active-directory/device-management-azuread-registered-devices-windows10-setup)
 
 1. Go to **Start > Settings > Accounts > Access work or school**. To see this setting, you need to have administrator rights to your PC (see [local administrator](https://support.microsoft.com/en-us/instantanswers/5de907f1-f8ba-4fd9-a89d-efd23fee918c/create-a-local-user-or-administrator-account-in-windows-10)).
 
@@ -77,7 +79,9 @@ Choose one of the following two enrollment options:
 
 <a id="enrollment-upgrade-to-enterprise"></a>
 
-### Upgrade your Windows 10 edition from Pro to Enterprise
+### Set up Azure Active Directory JOINED Windows 10 device
+
+-   This method will upgrade your Windows 10 Pro license to Enterprise and create a new account ([additional info]).(https://docs.microsoft.com/en-us/azure/active-directory/device-management-azuread-joined-devices-setup)
 
 1. Go to **Start > Settings > Accounts > Access work or school**. To see this setting, you need to have administrator rights to your PC (see [local administrator](https://support.microsoft.com/en-us/instantanswers/5de907f1-f8ba-4fd9-a89d-efd23fee918c/create-a-local-user-or-administrator-account-in-windows-10)).
 
