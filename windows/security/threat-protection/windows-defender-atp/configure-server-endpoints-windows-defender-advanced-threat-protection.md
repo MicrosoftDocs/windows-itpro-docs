@@ -18,6 +18,7 @@ ms.date: 03/05/2018
 
 - Windows Server 2012 R2
 - Windows Server 2016
+- Windows Server version 1803
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
