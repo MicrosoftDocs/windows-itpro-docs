@@ -1,5 +1,5 @@
 ---
-description: Use this article to learn more about what Windows diagnostic data is gathered at the basic level.
+description: Learn more about the Windows diagnostic data that is gathered at the basic level.
 title: Windows 10, version 1709 basic diagnostic events and fields (Windows 10)
 keywords: privacy, diagnostic data
 ms.prod: w10
@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 author: eross-msft
 ms.author: lizross
-ms.date: 10/26/2017
+ms.date: 02/12/2018
 ---
 
 
@@ -101,7 +101,7 @@ The following fields are available:
 - **epoch**  Represents the epoch and seqNum fields, which help track how many events were fired and how many events were uploaded, and enables identification of data lost during upload and de-duplication of events on the ingress server.
 - **seqNum**  Represents the sequence field used to track absolute order of uploaded events. It is an incrementing identifier for each event added to the upload queue.  The Sequence helps track how many events were fired and how many events were uploaded and enables identification of data lost during upload and de-duplication of events on the ingress server.
 - **iKey**  Represents an ID for applications or other logical groupings of events.
-- **flags**  Represents a collection of bits that describe how the event should be processed by the Connected User Experience and Telemetry component pipeline. The lowest-order byte is the event persistence. The next byte is the event latency.
+- **flags**  Represents a collection of bits that describe how the event should be processed by the Connected User Experiences and Telemetry component pipeline. The lowest-order byte is the event persistence. The next byte is the event latency.
 - **os**  Represents the operating system name.
 - **osVer**  Represents the OS version, and its format is OS dependent.
 - **appId**  Represents a unique identifier of the client application currently loaded in the process producing the event; and is used to group events together and understand usage pattern, errors by application.
@@ -255,7 +255,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.RunContext
 
-"This event indicates what should be expected in the data payload. "
+This event indicates what should be expected in the data payload.
 
 The following fields are available:
 
@@ -1604,6 +1604,39 @@ The following fields are available:
 - **SocketCount**  Number of physical CPU sockets of the machine.
 
 
+### Census.Security
+
+This event provides information on about security settings used to help keep Windows up-to-date and secure.
+
+- **AvailableSecurityProperties** Enumerates and reports state on the relevant security properties for Device Guard.
+- **CGRunning** Is Credential Guard running?
+- **DGState** A summary of the Device Guard state.
+- **HVCIRunning** Is HVCI running?
+- **IsSawGuest** Describes whether the device is running as a Secure Admin Workstation Guest.
+- **IsSawHost** Describes whether the device is running as a Secure Admin Workstation Host.
+- **RequiredSecurityProperties** Describes the required security properties to enable virtualization-based security.
+- **SecureBootCapable** Is this device capable of running Secure Boot?
+- **VBSState** Is virtualization-based security enabled, disabled, or running?
+
+
+### Census.Speech
+
+This event is used to gather basic speech settings on the device.
+
+The following fields are available:
+
+- **AboveLockEnabled**  Cortana setting that represents if Cortana can be invoked when the device is locked.
+- **GPAllowInputPersonalization**  Indicates if a Group Policy setting has enabled speech functionalities.
+- **HolographicSpeechInputDisabled**  Holographic setting that represents if the attached HMD devices have speech functionality disabled by the user.
+- **HolographicSpeechInputDisabledRemote**  Indicates if a remote policy has disabled speech functionalities for the HMD devices.
+- **KWSEnabled**  "Cortana setting that represents if a user has enabled the ""Hey Cortana"" keyword spotter (KWS)."
+- **MDMAllowInputPersonalization**  Indicates if an MDM policy has enabled speech functionalities.
+- **RemotelyManaged**  Indicates if the device is being controlled by a remote admininistrator (MDM or Group Policy) in the context of speech functionalities.
+- **SpeakerIdEnabled**  Cortana setting that represents if keyword detection has been trained to try to respond to a single user's voice.
+- **SpeechServicesEnabled**  Windows setting that represents whether a user is opted-in for speech services on the device.
+
+
+
 ### Census.Storage
 
 This event sends data about the total capacity of the system volume and primary disk, to help keep Windows up to date.
@@ -1613,34 +1646,6 @@ The following fields are available:
 - **PrimaryDiskTotalCapacity**  Retrieves the amount of disk space on the primary disk of the device in MB.
 - **PrimaryDiskType**  Retrieves an enumerator value of type STORAGE_BUS_TYPE that indicates the type of bus to which the device is connected. This should be used to interpret the raw device properties at the end of this structure (if any).
 - **SystemVolumeTotalCapacity**  Retrieves the size of the partition that the System volume is installed on in MB.
-
-
-### Census.VM
-
-This event sends data indicating whether virtualization is enabled on the device, and its various characteristics, to help keep Windows up to date.
-
-The following fields are available:
-
-- **CloudService** Indicates which cloud service, if any, that this virtual machine is running within.
-- **HyperVisor**  Retrieves whether the current OS is running on top of a Hypervisor.
-- **IOMMUPresent**  Represents if an input/output memory management unit (IOMMU) is present.
-- **isVDI** Is the device using Virtual Desktop Infrastructure?
-- **IsVirtualDevice**  Retrieves that when the Hypervisor is Microsoft's Hyper-V Hypervisor or other Hv#HASH#1 Hypervisor, this field will be set to FALSE for the Hyper-V host OS and TRUE for any guest OS's. This field should not be relied upon for non-Hv#HASH#1 Hypervisors.
-- **SLATSupported**  Represents whether Second Level Address Translation (SLAT) is supported by the hardware.
-- **VirtualizationFirmwareEnabled**  Represents whether virtualization is enabled in the firmware.
-
-
-### Census.Xbox
-
-This event sends data about the Xbox Console, such as Serial Number and DeviceId, to help keep Windows up to date.
-
-The following fields are available:
-
-- **XboxConsolePreferredLanguage**  Retrieves the preferred language selected by the user on Xbox console.
-- **XboxConsoleSerialNumber**  Retrieves the serial number of the Xbox console.
-- **XboxLiveDeviceId**  Retrieves the unique device id of the console.
-- **XboxLiveSandboxId**  Retrieves the developer sandbox id if the device is internal to MS.
-
 
 ### Census.Userdefault
 
@@ -1663,6 +1668,25 @@ The following fields are available:
 - **HomeLocation**  The current user location, which is populated using GetUserGeoId() function.
 - **KeyboardInputLanguages**  The Keyboard input languages installed on the device.
 - **SpeechInputLanguages**  The Speech Input languages installed on the device.
+
+### Census.VM
+
+This event sends data indicating whether virtualization is enabled on the device, and its various characteristics, to help keep Windows up to date.
+
+The following fields are available:
+
+- **CloudService** Indicates which cloud service, if any, that this virtual machine is running within.
+- **HyperVisor**  Retrieves whether the current OS is running on top of a Hypervisor.
+- **IOMMUPresent**  Represents if an input/output memory management unit (IOMMU) is present.
+- **isVDI** Is the device using Virtual Desktop Infrastructure?
+- **IsVirtualDevice**  Retrieves that when the Hypervisor is Microsoft's Hyper-V Hypervisor or other Hv#HASH#1 Hypervisor, this field will be set to FALSE for the Hyper-V host OS and TRUE for any guest OS's. This field should not be relied upon for non-Hv#HASH#1 Hypervisors.
+- **SLATSupported**  Represents whether Second Level Address Translation (SLAT) is supported by the hardware.
+- **VirtualizationFirmwareEnabled**  Represents whether virtualization is enabled in the firmware.
+
+
+
+
+
 
 
 ### Census.WU
@@ -1695,34 +1719,18 @@ The following fields are available:
 - **WUPauseState**  Retrieves WU setting to determine if updates are paused
 - **WUServer**  Retrieves the HTTP(S) URL of the WSUS server that is used by Automatic Updates and API callers (by default).
 
+### Census.Xbox
 
-### Census.Speech
-
-This event is used to gather basic speech settings on the device.
+This event sends data about the Xbox Console, such as Serial Number and DeviceId, to help keep Windows up to date.
 
 The following fields are available:
 
-- **AboveLockEnabled**  Cortana setting that represents if Cortana can be invoked when the device is locked.
-- **GPAllowInputPersonalization**  Indicates if a Group Policy setting has enabled speech functionalities.
-- **HolographicSpeechInputDisabled**  Holographic setting that represents if the attached HMD devices have speech functionality disabled by the user.
-- **HolographicSpeechInputDisabledRemote**  Indicates if a remote policy has disabled speech functionalities for the HMD devices.
-- **KWSEnabled**  "Cortana setting that represents if a user has enabled the ""Hey Cortana"" keyword spotter (KWS)."
-- **MDMAllowInputPersonalization**  Indicates if an MDM policy has enabled speech functionalities.
-- **RemotelyManaged**  Indicates if the device is being controlled by a remote admininistrator (MDM or Group Policy) in the context of speech functionalities.
-- **SpeakerIdEnabled**  Cortana setting that represents if keyword detection has been trained to try to respond to a single user's voice.
-- **SpeechServicesEnabled**  Windows setting that represents whether a user is opted-in for speech services on the device.
+- **XboxConsolePreferredLanguage**  Retrieves the preferred language selected by the user on Xbox console.
+- **XboxConsoleSerialNumber**  Retrieves the serial number of the Xbox console.
+- **XboxLiveDeviceId**  Retrieves the unique device id of the console.
+- **XboxLiveSandboxId**  Retrieves the developer sandbox id if the device is internal to MS.
 
-### Census.Security
 
-This event provides information on about security settings used to help keep Windows up-to-date and secure.
-
-- **AvailableSecurityProperties** Enumerates and reports state on the relevant security properties for Device Guard.
-- **CGRunning** Is Credential Guard running?
-- **DGState** A summary of the Device Guard state.
-- **HVCIRunning** Is HVCI running?
-- **RequiredSecurityProperties** Describes the required security properties to enable virtualization-based security.
-- **SecureBootCapable** Is this device capable of running Secure Boot?
-- **VBSState** Is virtualization-based security enabled, disabled, or running?
 
 
 ## Diagnostic data events
@@ -1812,7 +1820,7 @@ The following fields are available:
 - **LastEventSizeOffender**  The name of the last event that exceeded the maximum event size.
 - **LastInvalidHttpCode**  The last invalid HTTP code received from Vortex.
 - **MaxActiveAgentConnectionCount**  The maximum number of active agents during this heartbeat timeframe.
-- **MaxInUseScenarioCounter**  The soft maximum number of scenarios loaded by the Connected User Experience and Telemetry component.
+- **MaxInUseScenarioCounter**  The soft maximum number of scenarios loaded by the Connected User Experiences and Telemetry component.
 - **PreviousHeartBeatTime**  The time of last heartbeat event. This allows chaining of events.
 - **SettingsHttpAttempts**  The number of attempts to contact the OneSettings service.
 - **SettingsHttpFailures**  The number of failures from contacting the OneSettings service.
@@ -1990,8 +1998,9 @@ The following fields are available:
 
 This event provides data on the installed Office Add-ins.
 
-- **AddInCLSID** The CLSID key office the Office addin.
-- **AddInId** The ID of the Office addin.
+- **AddInCLSID** The CLSID key office for the Office addin.
+- **AddInId** The identifier of the Office addin.
+- **AddinType** The type of the Office addin.
 - **BinFileTimestamp** The timestamp of the Office addin.
 - **BinFileVersion** The version of the Office addin.
 - **Description** The description of the Office addin.
@@ -2004,8 +2013,58 @@ This event provides data on the installed Office Add-ins.
 - **OfficeArchitecture** The architecture of the addin.
 - **OfficeVersion** The Office version for this addin.
 - **OutlookCrashingAddin** A boolean value that indicates if crashes have been found for this addin.
+- **ProductCompany** The name of the company associated with the Office addin.
+- **ProductName** The product name associated with the Office addin.
+- **ProductVersion** The version associated with the Office addin.
+- **ProgramId** The unique program identifier of the Office addin.
 - **Provider** The provider name for this addin.
 
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeAddInRemove
+
+This event indicates that the particular data object represented by the objectInstanceId is no longer present.
+
+There are no fields in this event.
+
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeInsightsAdd
+
+This event provides insight data on the installed Office products.
+
+The following fields are available:
+
+- **OfficeApplication** The name of the Office application.
+- **OfficeArchitecture** The bitness of the Office application.
+- **OfficeVersion** The version of the Office application.
+- **Value** The insights collected about this entity.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeInsightsRemove
+
+This event indicates that the particular data object represented by the objectInstanceId is no longer present.
+
+There are no fields in this event.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeInsightsStartSync
+
+This diagnostic event indicates that a new sync is being generated for this object type.
+
+There are no fields in this event.
+
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeSettingsAdd
+
+This event describes various Office settings.
+
+The following fields are available:
+
+- **BrowserFlags** Browser flags for Office-related products.
+- **ExchangeProviderFlags** Provider policies for Office Exchange.
+- **SharedComputerLicensing** Office shared computer licensing policies.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeSettingsStartSync
+
+Diagnostic event to indicate a new sync is being generated for this object type. 
+
+There are no fields in this event.
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBAAdd
 
@@ -2035,6 +2094,18 @@ The following fields are available:
 - **Validation**  Count of files that require additional manual validation
 - **Validation_x64**  Count of files that require additional manual validation for 64-bit issues
 
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBARemove
+
+This event indicates that the particular data object represented by the objectInstanceId is no longer present.
+
+There are no fields in this event.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBARuleViolationsRemove
+
+This event indicates that the particular data object represented by the objectInstanceId is no longer present.
+
+There are no fields in this event.
 
 ### Microsoft.Windows.Inventory.Core.InventoryApplicationFrameworkStartSync
 
@@ -2407,6 +2478,66 @@ The following fields are available:
 - **Temperature**  Indicates if a Temperature sensor is found.
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeAddInStartSync
+
+This event indicates that a new sync is being generated for this object type.
+
+There are no fields in this event.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIdentifiersAdd
+
+This event provides data on the installed Office identifiers.
+
+- **OAudienceData** The Office Audience descriptor.
+- **OAudienceId** The Office Audience ID.
+- **OMID** The Office machine ID.
+- **OPlatform** The Office architecture.
+- **OVersion** The Office version
+- **OTenantId** The Office 365 Tenant GUID.
+- **OWowMID** The Office machine ID.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIdentifiersStartSync
+
+This event indicates that a new sync is being generated for this object type.
+
+There are no fields in this event.
+
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIESettingsAdd
+
+This event provides data on the installed Office-related Internet Explorer features.
+
+- **OIeFeatureAddon** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeMachineLockdown** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeMimeHandling** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeMimeSniffing** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeNoAxInstall** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeNoDownload** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeObjectCaching** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIePasswordDisable** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeSafeBind** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeSecurityBand** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeUncSaveCheck** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeValidateUrl** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeWebOcPopup** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeWinRestrict** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeZoneElevate** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIESettingsStartSync
+
+This event indicates that a new sync is being generated for this object type.
+
+There are no fields in this event.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeProductsAdd
+
+This event describes the Office products that are installed.
+
+- **OC2rApps** The Office Click-to-Run apps.
+- **OC2rSkus** The Office Click-to-Run products.
+- **OMsiApps** The Office MSI apps.
+- **OProductCodes** The Office MSI product code.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeProductsStartSync
 
 This event indicates that a new sync is being generated for this object type.
 
