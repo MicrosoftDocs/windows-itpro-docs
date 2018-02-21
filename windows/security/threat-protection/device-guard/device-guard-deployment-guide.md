@@ -40,18 +40,3 @@ This guide explores the individual features in Windows Defender Device Guard as 
 
 - [Enable virtualization-based protection of code integrity](deploy-device-guard-enable-virtualization-based-security.md)
 
-## Related topics
-
-[AppLocker overview](/windows/device-security/applocker/applocker-overview)
-
-<!-- The following topic is EIGHT YEARS OLD, but I don't really see anything better out there on Code Integrity that existed before Windows 10. -->
-
-[Code integrity](https://technet.microsoft.com/library/dd348642.aspx)
-
-[Protect derived domain credentials with Windows Defender Credential Guard](/windows/access-protection/credential-guard/credential-guard)
-
-[Driver compatibility with Windows Defender Device Guard in Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10)
-
-[Dropping the Hammer Down on Malware Threats with Windows 10’s Windows Defender Device Guard](https://channel9.msdn.com/Events/Ignite/2015/BRK2336)
-
-
