@@ -29,20 +29,18 @@ Before you deploy Office 2016 by using App-V, review the following planning info
 
 Use the following table to get information about supported versions of Office and about running coexisting versions of Office.
 
-| Information to review           | Description        |
+| Information to review           | Why to review it        |
 |---------------------------------|------------------------|
-| [Supported versions of Microsoft Office](appv-planning-for-using-appv-with-office.md#bkmk-office-vers-supp-appv)     | - Supported versions of Office<br>- Supported deployment types (for example, desktop, personal Virtual Desktop Infrastructure (VDI), pooled VDI)<br>- Office licensing options |
+| [Supported versions of Microsoft Office](appv-planning-for-using-appv-with-office.md#bkmk-office-vers-supp-appv)     | - Supported versions of Office<br>- Supported deployment types, such as desktop, personal Virtual Desktop Infrastructure (VDI), and pooled VDI<br>- Office licensing options |
 | [Planning for using App-V with coexisting versions of Office](appv-planning-for-using-appv-with-office.md#bkmk-plan-coexisting) | Considerations for installing different versions of Office on the same computer   |
 
 ### Packaging, publishing, and deployment requirements
 
 Before you deploy Office by using App-V, review the following requirements.
 
- 
-
 | **Task**  | **Requirement**   |
 |-----------|-------------------|
-| Packaging  | - All of the Office applications that you want to deploy to users must be in a single package.<br>- In App-V 5.0 and later, you must use the Office Deployment Tool to create packages. You cannot use the Sequencer.<br>- If you are deploying Microsoft Visio 2016 and Microsoft Project 2016 along with Office, you must include them in the same package with Office. For more information, see [Deploying Visio 2016 and Project 2016 with Office](#deploying-visio-2016-and-project-2016-with-office). |
+| Packaging  | - All Office applications that you deploy to users must be in a single package.<br>- In App-V 5.0 and later, you must use the Office Deployment Tool to create packages. You can't use the Sequencer for this.<br>- If you are deploying Microsoft Visio 2016 and Microsoft Project 2016 along with Office, you must include them in the same package with Office. For more information, see [Deploying Visio 2016 and Project 2016 with Office](#deploying-visio-2016-and-project-2016-with-office). |
 | Publishing   | - You can publish only one Office package to each client computer.<br>- You must publish the Office package globally. You cannot publish to the user. |
 | Deploying any of the following products to a shared computer, for example, by using Remote Desktop Services:<br>- Office 365 ProPlus<br>- Visio Pro for Office 365<br>- Project Pro for Office 365 | You must enable [shared computer activation](https://technet.microsoft.com/library/dn782860.aspx). |
 
