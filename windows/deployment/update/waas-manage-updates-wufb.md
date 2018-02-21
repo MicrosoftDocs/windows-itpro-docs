@@ -25,7 +25,7 @@ ms.date: 10/13/2017
 >
 >In the following settings CB refers to Semi-Annual Channel (Targeted), while CBB refers to Semi-Annual Channel. 
 
-Windows Update for Business enables information technology administrators to keep the Windows 10 devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Windows Update service.  You can use Group Policy or MDM solutions such as Intune to configure the Windows Update for Business settings that control how and when Windows 10 devices are updated. In addition, by using Intune, organizations can manage devices that are not joined to a domain at all or are joined to Microsoft Azure Active Directory (Azure AD) alongside your on-premises domain-joined machines.  
+Windows Update for Business enables information technology administrators to keep the Windows 10 devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Windows Update service.  You can use Group Policy or MDM solutions such as Intune to configure the Windows Update for Business settings that control how and when Windows 10 devices are updated. In addition, by using Intune, organizations can manage devices that are not joined to a domain at all or are joined to Microsoft Azure Active Directory (Azure AD) alongside your on-premises domain-joined machines. Windows Update for Business leverages Windows telemetry to provide reporting and insights into an organization's Windows 10 devices.  
 
 Specifically, Windows Update for Business allows for: 
 
@@ -33,6 +33,7 @@ Specifically, Windows Update for Business allows for:
 - Selectively including or excluding drivers as part of Microsoft-provided updates
 - Integration with existing management tools such as Windows Server Update Services (WSUS), System Center Configuration Manager, and Microsoft Intune.
 - Peer-to-peer delivery for Microsoft updates, which optimizes bandwidth efficiency and reduces the need for an on-site server caching solution.
+- Control over telemetry level to provide reporting and insights in Windows Analytics.
 
 Windows Update for Business is a free service that is available for Windows Pro, Enterprise, Pro Education, and Education.
 
