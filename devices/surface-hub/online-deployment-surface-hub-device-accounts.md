@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 08/29/2017
+ms.date: 02/21/2018
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +25,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     Be sure you have the right permissions set to run the associated cmdlets.
 
     ```PowerShell
-    Set-ExecutionPolicy Unrestricted
+    Set-ExecutionPolicy RemoteSigned
     $org='contoso.microsoft.com'
     $cred=Get-Credential admin@$org
     $sess= New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $cred -Authentication Basic -AllowRedirection
@@ -70,37 +70,52 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     ```
 
 5.  Connect to Azure AD.
-
+    
+    You first need to install Azure AD module for PowerShell version 2. In an elevated powershell prompt run the following command :
+    
+    ```PowerShell
+    Install-Module -Name AzureAD
+    ```
     You need to connect to Azure AD to apply some account settings. You can run this cmdlet to connect.
 
     ```PowerShell
-    Connect-MsolService -Credential $cred
+    Import-Module AzureAD
+    Connect-AzureAD -Credential $cred
     ```
 
 6.  If you decide to have the password not expire, you can set that with PowerShell cmdlets too. See [Password management](password-management-for-surface-hub-device-accounts.md) for more information.
 
     ```PowerShell
-    Set-MsolUser -UserPrincipalName 'HUB01@contoso.com' -PasswordNeverExpires $true
+    Set-AzureADUser -ObjectId "HUB01@contoso.com" -PasswordPolicies "DisablePasswordExpiration"
     ```
 
 7.  Surface Hub requires a license for Skype for Business functionality. In order to enable Skype for Business, your environment will need to meet the [prerequisites for Skype for Business online](hybrid-deployment-surface-hub-device-accounts.md#sfb-online).
    
-    Next, you can use `Get-MsolAccountSku` to retrieve a list of available SKUs for your O365 tenant.
+    Next, you can use `Get-AzureADSubscribedSku` to retrieve a list of available SKUs for your O365 tenant.
 
-    Once you list out the SKUs, you can add a license using the `Set-MsolUserLicense` cmdlet. In this case, `$strLicense` is the SKU code that you see (for example, *contoso:STANDARDPACK*).
+    Once you list out the SKUs, you'll need to assign the SkuId you want to the `$License.SkuId` variable.
 
     ```PowerShell
-    Set-MsolUser -UserPrincipalName 'HUB01@contoso.com' -UsageLocation "US"
-    Get-MsolAccountSku
-    Set-MsolUserLicense -UserPrincipalName 'HUB01@contoso.com' -AddLicenses $strLicense
+    Set-AzureADUser -ObjectId "HUB01@contoso.com" -UsageLocation "US"
+	
+	Get-AzureADSubscribedSku | Select Sku*,*Units
+	$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+    $License.SkuId = SkuId You selected 
+	
+	$AssignedLicenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+    $AssignedLicenses.AddLicenses = $License
+    $AssignedLicenses.RemoveLicenses = @()
+	
+    Set-AzureADUserLicense -ObjectId "HUB01@contoso.com"  -AssignedLicenses $AssignedLicenses
     ```
 
 8.  Enable the device account with Skype for Business.
+	If the Skype for Business PowerShell module is not installed, [download the Skype for Business Online Windows PowerShell Module](https://www.microsoft.com/download/details.aspx?id=39366). 
 
     -   Start by creating a remote PowerShell session from a PC.
 
         ```PowerShell
-        Import-Module LyncOnlineConnector  
+        Import-Module SkypeOnlineConnector  
         $cssess=New-CsOnlineSession -Credential $cred  
         Import-PSSession $cssess -AllowClobber
         ```
@@ -108,12 +123,13 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
    - Next, if you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet (for example, *alice@contoso.com*):
 
         ```PowerShell
-        Get-CsOnlineUser -Identity ‘alice@contoso.com’| fl *registrarpool*
+        (Get-CsTenant).TenantPoolExtension
         ```
         OR by setting a variable
         
         ```PowerShell
-        $strRegistrarPool = (Get-CsOnlineUser -Identity ‘alice@contoso.com’).RegistrarPool
+		$strRegistrarPool = (Get-CsTenant).TenantPoolExtension
+		$strRegistrarPool = $strRegistrarPool[0].Substring($strRegistrarPool[0].IndexOf(':') + 1)
         ```
         
     - Enable the Surface Hub account with the following cmdlet:
