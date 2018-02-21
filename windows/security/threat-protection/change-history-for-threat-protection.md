@@ -17,6 +17,7 @@ This topic lists new and updated topics in the [Threat protection](index.md) doc
 New or changed topic | Description
 ---------------------|------------
 [Security Compliance Toolkit](security-compliance-toolkit-10.md) | Added Office 2016 Security Baseline.
+[Audi security group management](auditing/audit-security-group-management.md)| Added recommendation to audit Failure events.
 
 ## January 2018
 |New or changed topic |Description |
