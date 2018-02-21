@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 11/30/2017
+ms.date: 03/05/2018
 ---
 
 # Windows Defender ATP preview features
@@ -23,11 +23,12 @@ ms.date: 11/30/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
+[!include[Prerelease information](prerelease.md)]
 
 The Windows Defender ATP service is constantly being updated to include new feature enhancements and capabilities.
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-abovefoldlink) 
+
 
 Learn about new features in the Windows Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
 
@@ -35,8 +36,8 @@ You'll have access to upcoming features which you can provide feedback on to hel
 
 Turn on the preview experience setting to be among the first to try upcoming features.
 
-1. In the navigation pane, select **Preferences setup** > **Preview experience**.
-
+1. In the navigation pane, select **Settings** > **General** > **Advanced features**.
+JOEY UPDATE IMAGE!!
     ![Image of Preferences setup and preview experience](images/atp-preview-features.png)
 
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.

@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 localizationpriority: high
-ms.date: 11/30/2017
+ms.date: 03/05/2018
 ---
 
 # Configure Windows Defender ATP server endpoints
