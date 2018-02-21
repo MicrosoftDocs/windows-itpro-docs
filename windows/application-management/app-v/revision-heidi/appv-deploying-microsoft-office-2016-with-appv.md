@@ -40,9 +40,9 @@ Before you deploy Office by using App-V, review the following requirements.
 
 | **Task**  | **Requirement**   |
 |-----------|-------------------|
-| Packaging  | - All Office applications that you deploy to users must be in a single package.<br>- In App-V 5.0 and later, you must use the Office Deployment Tool to create packages. You can't use the Sequencer for this.<br>- If you are deploying Microsoft Visio 2016 and Microsoft Project 2016 along with Office, you must include them in the same package with Office. For more information, see [Deploying Visio 2016 and Project 2016 with Office](#deploying-visio-2016-and-project-2016-with-office). |
-| Publishing   | - You can publish only one Office package to each client computer.<br>- You must publish the Office package globally. You cannot publish to the user. |
-| Deploying any of the following products to a shared computer, for example, by using Remote Desktop Services:<br>- Office 365 ProPlus<br>- Visio Pro for Office 365<br>- Project Pro for Office 365 | You must enable [shared computer activation](https://technet.microsoft.com/library/dn782860.aspx). |
+| Packaging  | - All Office applications that you deploy to users must be in a single package.<br>- In App-V 5.0 and later, you must use the Office Deployment Tool to create packages. You can't use the Sequencer for this.<br>- If you are deploying Microsoft Visio 2016 and Microsoft Project 2016 at the same time as Office, you must put them all in the same package. For more information, see [Deploying Visio 2016 and Project 2016 with Office](#deploying-visio-2016-and-project-2016-with-office). |
+| Publishing   | - You can publish only one Office package per client computer.<br>- You must publish the Office package globally. You cannot publish to the user. |
+| Deploying any of the following products to a shared computer with Remote Desktop Services:<br>- Office 365 ProPlus<br>- Visio Pro for Office 365<br>- Project Pro for Office 365 | You must enable [shared computer activation](https://technet.microsoft.com/library/dn782860.aspx). |
 
 ### Excluding Office applications from a package
 
@@ -50,61 +50,59 @@ The following table describes the recommended methods for excluding specific Off
 
 | **Task**    | **Details**   |
 |-------------|---------------|
-| Use the **ExcludeApp** setting when you create the package by using the Office Deployment Tool. | Enables you to exclude specific Office applications from the package when the Office Deployment Tool creates the package. For example, you can use this setting to create a package that contains only Microsoft Word.<br><br>For more information, see [ExcludeApp element](https://technet.microsoft.com/library/jj219426.aspx#BKMK_ExcludeAppElement). |
+| Use the **ExcludeApp** setting when you create the package by using the Office Deployment Tool. | With this setting, you can exclude specific Office applications from the package that the Office Deployment Tool creates. For example, you can use this setting to create a package that contains only Microsoft Word.<br><br>For more information, see [ExcludeApp element](https://technet.microsoft.com/library/jj219426.aspx#BKMK_ExcludeAppElement). |
 | Modify the DeploymentConfig.xml file                                                            | Modify the DeploymentConfig.xml file after the package has been created. This file contains the default package settings for all users on a computer that is running the App-V Client.<br>For more information, see [Disabling Office 2016 applications](#disabling-office-2016-applications).                      |
 
 ## Creating an Office 2016 package for App-V with the Office Deployment Tool
 
 Complete the following steps to create an Office 2016 package for App-V.
 
->**Important**&nbsp;&nbsp;In App-V 5.0 and later, you must use the Office Deployment Tool to create a package. You cannot use the Sequencer to create packages.
+>[!IMPORTANT]
+>In App-V 5.0 and later, you must use the Office Deployment Tool to create a package. You cannot use the Sequencer to create packages.
 
 ### Review prerequisites for using the Office Deployment Tool
 
-The computer on which you are installing the Office Deployment Tool must have:
-
- 
+The computer on which you are installing the Office Deployment Tool must have the following:
 
 | **Prerequisite**     | **Description**    |
 |----------------------|--------------------|
 | Prerequisite software    | .Net Framework 4    |
 | Supported operating systems | * 64-bit version of Windows 10<br>- 64-bit version of Windows 8 or 8.1<br>- 64-bit version of Windows 7 |
 
->**Note**&nbsp;&nbsp;In this topic, the term “Office 2016 App-V package” refers to subscription licensing.
+>[!NOTE]
+>In this topic, the term “Office 2016 App-V package” refers to subscription licensing.
 
-### Create Office 2016 App-V Packages Using Office Deployment Tool
+### Create Office 2016 App-V packages with the Office Deployment Tool
 
-You create Office 2016 App-V packages by using the Office Deployment Tool. The following instructions explain how to create an Office 2016 App-V package with Subscription Licensing.
+You create Office 2016 App-V packages by using the Office Deployment Tool. The following instructions explain how to create an Office 2016 App-V package with subscription licensing.
 
 Create Office 2016 App-V packages on 64-bit Windows computers. Once created, the Office 2016 App-V package will run on 32-bit and 64-bit Windows 7, Windows 8.1, and Windows 10 computers.
 
 ### Download the Office Deployment Tool
 
-Office 2016 App-V Packages are created using the Office Deployment Tool, which generates an Office 2016 App-V Package. The package cannot be created or modified through the App-V sequencer. To begin package creation:
+Office 2016 App-V packages are created using the Office Deployment Tool, which generates an Office 2016 App-V Package. The package cannot be created or modified through the App-V sequencer. To begin package creation, follow these steps:
 
-1.  Download the [Office 2016 Deployment Tool for Click-to-Run](https://www.microsoft.com/download/details.aspx?id=49117).
+1. Download the [Office 2016 Deployment Tool for Click-to-Run](https://www.microsoft.com/download/details.aspx?id=49117).
 
-    > **Important**&nbsp;&nbsp;You must use the Office 2016 Deployment Tool to create Office 2016 App-V Packages.
+    >[!IMPORTANT]
+    >You must use the Office 2016 Deployment Tool to create Office 2016 App-V Packages.
+2. Run the .exe file and extract its features into the desired location. To make this process easier, you can create a shared network folder where the features will be saved.
 
-2.  Run the .exe file and extract its features into the desired location. To make this process easier, you can create a shared network folder where the features will be saved.
-
-    Example: \\\\Server\\Office2016
-
-3.  Check that a setup.exe and a configuration.xml file exist and are in the location you specified.
+    Example location: \\\\Server\\Office2016
+3. Check that the **setup.exe** and **configuration.xml** files exist and are in the location you specified.
 
 ### Download Office 2016 applications
 
 After you download the Office Deployment Tool, you can use it to get the latest Office 2016 applications. After getting the Office applications, you create the Office 2016 App-V package.
 
-The XML file that is included in the Office Deployment Tool specifies the product details, such as the languages and Office applications included.
+The XML file included in the Office Deployment Tool specifies the product details, such as the languages and Office applications included.
 
 **Step 1: Customize the sample XML configuration file:** Use the sample XML configuration file that you downloaded with the Office Deployment Tool to customize the Office applications:
 
-1.  Open the sample XML file in Notepad or your favorite text editor.
+1. Open the sample XML file in Notepad or your favorite text editor.
+2. With the sample **configuration.xml** file open and ready for editing, you can specify products, languages, and the path to which you save the Office 2016 applications. The following is a basic example of the **configuration.xml** file:
 
-2.  With the sample configuration.xml file open and ready for editing, you can specify products, languages, and the path to which you save the Office 2016 applications. The following is a basic example of the configuration.xml file:
-
-    ```
+    ```XML
     <Configuration>
        <Add SourcePath= ”\\Server\Office2016” OfficeClientEdition="32" >
         <Product ID="O365ProPlusRetail ">
@@ -113,11 +111,12 @@ The XML file that is included in the Office Deployment Tool specifies the produc
         <Product ID="VisioProRetail">
           <Language ID="en-us" />
         </Product>
-      </Add>  
+      </Add>
     </Configuration>
     ```
     
-    >**Note**&nbsp;&nbsp;The configuration XML is a sample XML file. The file includes lines that are commented out. You can “uncomment” these lines to customize additional settings with the file. To “uncomment” these lines, remove the “&lt;! - -“ from the beginning of the line, and the “-- &gt;” from the end of the line.
+    >[!NOTE]
+    >The configuration XML is a sample XML file. The file includes lines that are commented out. You can “uncomment” these lines to customize additional settings with the file. To uncomment these lines, remove the ```<! - -``` from the beginning of the line, and the ```-- >``` from the end of the line.
 
     The above XML configuration file specifies that Office 2016 ProPlus 32-bit edition, including Visio ProPlus, will be downloaded in English to the \\\\server\\Office2016, which is the location where Office applications will be saved. Note that the Product ID of the applications will not affect the final licensing of Office. Office 2016 App-V packages with various licensing can be created from the same applications through specifying licensing in a later stage. The table below summarizes the customizable attributes and elements of XML file:
 
