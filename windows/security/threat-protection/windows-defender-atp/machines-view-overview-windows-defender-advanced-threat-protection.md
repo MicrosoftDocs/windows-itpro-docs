@@ -43,7 +43,7 @@ Filter the **Machines list** by **Time**, **OS Platform**, **Health**, **Securit
 
 You can also download the entire list in CSV format using the **Export to CSV** feature.
 
-![Image of machines list with list of machines](images/atp-machines-list-view.png)
+![Image of machines list with list of machines](images/atp-machines-list-view2.png)
 
 You can use the following filters to limit the list of machines displayed during an investigation:
 
