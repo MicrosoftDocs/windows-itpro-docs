@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 08/29/2017
+ms.date: 02/21/2018
 ms.localizationpriority: medium
 ---
 
@@ -110,7 +110,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     ```
 
 8.  Enable the device account with Skype for Business.
-	If you do not have the Skype for Business Powershell module installed, you can download it [here](http://go.microsoft.com/fwlink/?LinkId=294688).
+	If the Skype for Business PowerShell module is not installed, [download the Skype for Business Online Windows PowerShell Module](https://www.microsoft.com/download/details.aspx?id=39366). 
 
     -   Start by creating a remote PowerShell session from a PC.
 
