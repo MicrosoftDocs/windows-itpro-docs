@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.date: 01/26/2018
+ms.date: 02/22/2018
 ms.localizationpriority: high
 ---
 
@@ -708,9 +708,7 @@ This error has more than one possible cause. Attempt [quick fixes](#quick-fixes)
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-The requested system device cannot be found.
-Sharing violation.
-The requested system device cannot be identified due to multiple indistinguishable devices potentially matching the identification criteria.
+The requested system device cannot be found, there is a sharing violation, or there are multiple devices matching the identification criteria.
 
 </table>
 </td>
