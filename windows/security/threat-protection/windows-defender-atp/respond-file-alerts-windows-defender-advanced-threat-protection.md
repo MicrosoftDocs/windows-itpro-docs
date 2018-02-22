@@ -247,5 +247,5 @@ HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
 > [!NOTE]
 > If the value *AllowSampleCollection* is not available, the client will allow sample collection by default.
 
-## Related topics
+## Related topic
 - [Take response actions on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md)

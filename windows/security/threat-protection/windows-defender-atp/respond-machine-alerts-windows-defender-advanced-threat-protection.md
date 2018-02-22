@@ -247,5 +247,5 @@ All other related details are also shown, for example, submission time, submitti
 
 ![Image of action center with information](images/atp-action-center-with-info.png)
 
-## Related topics
+## Related topic
 - [Take response actions on a file](respond-file-alerts-windows-defender-advanced-threat-protection.md)
