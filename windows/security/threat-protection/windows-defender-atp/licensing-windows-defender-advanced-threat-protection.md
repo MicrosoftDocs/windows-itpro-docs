@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: v-tanewt
 author: tbit0001
 ms.localizationpriority: high
-ms.date: 03/05/2018
+ms.date: 10/16/2017
 ---
 # Validate licensing provisioning and complete set up for Windows Defender ATP
 
