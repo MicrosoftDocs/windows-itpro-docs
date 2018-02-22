@@ -26,7 +26,6 @@ The OS includes support for Network Time Protocol (NTP), which enables devices t
 | [NTPRegularSyncInterval](#ntpregularsyncinterval)  |  | X |  |  |  |
 | [NTPRetryInterval](#ntpretryinterval)  |  | X |  |  |  |
 | [NTPServer](#ntpserver)  |  | X |  |  |  |
-| [NTPServers](#ntpservers)  |  | X |  |  |  |
 | [PreferredSlot](#preferredslot)  |  | X |  |  |  |
 
 ## EnableAutomaticTime
@@ -62,8 +61,13 @@ ntpserver1.contoso.com;ntpserver2.fabrikam.com;ntpserver3.contoso.com
 
 The list should contain one or more server names. The default NTP source server value is `time.windows.com`.
 
-## NTPServers
+
 
 
 
 ## PreferredSlot
+
+Specify which UICC slot will be preferred for NITZ handling on a C+G dual SIM phone.
+
+- Set to `0` to use the UICC in Slot 0 for NITZ handling.
+- Set to '1' to use the UICC in Slot 1 for NITZ handling.

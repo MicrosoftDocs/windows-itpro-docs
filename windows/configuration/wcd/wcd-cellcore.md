@@ -21,16 +21,16 @@ Use to configure settings for cellular data.
 
  Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core 
  --- | :---: | :---: | :---: | :---: | :---: 
- PerDevice: [CellConfigurations](#cellconfigurations) |  | X |  |  | 
- PerDevice: [CellData](#celldata) CellularFailover | X | X | X  |  |   
- PerDevice: [CellUX](#cellux)  | X | X | X |  |
- PerDevice: [CGDual](#cgdual)  |  | X |  |  |
+ PerDevice: [CellConfigurations](#cellconfigurations) |  | X |  |  |  |
+ PerDevice: [CellData](#celldata)  | X | X | X  |  |   
+ PerDevice: [CellUX](#cellux)  | X | X | X |  | 
+ PerDevice: [CGDual](#cgdual)  |  | X |  |  | 
  PerDevice: [eSim](#esim) | X | X | X  |  | 
- PerDevice: [External](#external)  |  | X |  |  |
- PerDevice: [General](#general)  |  | X |  |  |
- PerDevice: [RCS](#rcs)  |  | X |  |  |
+ PerDevice: [External](#external)  |  | X |  |  | 
+ PerDevice: [General](#general)  |  | X |  |  | 
+ PerDevice: [RCS](#rcs)  |  | X |  |  | 
  PerDevice: [SMS](#sms)  | X | X | X  |  |  
- PerDevice: [UIX](#uix)  |  | X |  |  |
+ PerDevice: [UIX](#uix)  |  | X |  |  | 
  PerDevice: [UTK](#utk)  |  | X |  |  |
  PerlMSI: [CellData](#celldata2) |  | X |  |  |
  PerIMSI: [CellUX](#cellux2) |  | X |  |  |
@@ -72,6 +72,7 @@ Setting | Description
 --- | ---
 APNAuthTypeDefault | Select between **Pap** and **Chap** for default APN authentication type.
 APNIPTypeIfHidden | Select between **IPV4**, **IPV6**, **IPV4V6**, and **IPV4V6XLAT** for default APN IP type.
+Critical > ShowVoLTERoaming | Select **Yes** to show the VoLTE roaming control in the **Settings** > **Cellular+SIM** > **SIM** settings page. Select **No** to hide the control.
 Critical > ShowVoLTEToggle | Select **Yes** to show the VoLTE toggle in the **Settings** > **Cellular+SIM** > **SIM** settings page. Select **No** to hide the toggle.
 Disable2GByDefault | Select **Yes** to disable 2G by default. Select **No** to enable 2G.
 Disabled2GNoticeDescription | Enter text to customize the notification for disabled 2G.
@@ -179,6 +180,7 @@ DisableLTESupportWhenRoaming | Set to **Yes** to disable LTE support when roamin
 DisableSystemTypeSupport | Enter the system types to be removed.
 DTMFOffTime | Sets the length of time, in milliseconds (between 64 and 1000 inclusive), of the pause between DTMF digits. For example, a value of 120 specifies 0.12 seconds.
 DTMFOnTime | Sets the length of time, in milliseconds (between 64 and 1000 inclusive), to generate the DTMF tone when a key is pressed. For example, a value of 120 specifies 0.12 seconds.
+EnableIMSWhenRoaming | Set to **Yes** to enable IMS when roaming.
 ExcludedSystemTypesByDefault | Set the default value for **Highest connection speed** in the **Settings** > **Cellular & SIM** > **SIM** screen by specifying the bitmask for any combination of radio technology to be excluded from the default value. The connection speed that has not been excluded will show up as the highest connection speed. On dual SIM phones that only support up to 3G connection speeds, the **Highest connection speed** option is replaced by a 3G on/off toggle based on the per-device setting. Enter the binary setting to exclude 4G (`10000`) or 3G (`01000`).
 ExcludedSystemTypesPerOperator | Exclude specified system types from SIM cards that match the MCC:MNC pairs listed in **OperatorListForExcludedSystemTypes**. This setting is used only for China. Set the value to match the system type to be excluded. For more information about the RIL system types, see [RILSYSTEMTYPE](https://msdn.microsoft.com/library/windows/hardware/dn931143.aspx). For example, a value of 0x8 specifies RIL_SYSTEMTYPE_UMTS (3G) while 0x10 specifies RIL_SYSTEMTYPE_LTE (4G). To exclude more than one system type, perform a bitwise OR operation on the radio technologies you want to exclude. For example, a bitwise OR operation on RIL_SYSTEMTYPE_LTE (4G) and RIL_SYSTEMTYPE_UMTS (3G) results in the value 11000 (binary) or 0x18 (hexadecimal). In this case, the ExcludedSystemTypesPerOperator value must be set to 0x18 to limit the matching MCC:MNC pairs to 2G.
 LTEEnabled | Select **Yes** to enable LTE, and **No** to disable LTE.
@@ -218,10 +220,13 @@ IncompleteMsgDeliverySeconds | Set the value, in seconds, for long to wait for a
 MessageExpirySeconds | Partners can set the expiration time before the phone deletes the received parts of a long SMS message. For example, if the phone is waiting for a three-part SMS message and the first part has been received, the first part will be deleted when the time expires and the other part of the message has not arrived. If the second part of the message arrives before the time expires, the first and second parts of the message will be deleted if the last part does not arrive after the time expires. The expiration time is reset whenever the next part of the long message is received. Set MessageExpirySeconds to the number seconds that the phone should wait before deleting the received parts of a long SMS messages. This value should be in hexadecimal and must be prefixed with 0x. The default value is 0x15180, which is equivalent to 1 day or 86,400 seconds.
 SmsFragmentLimit | Partners can specify a maximum length for SMS messages. This requires setting both the maximum number of SMS fragments per SMS message, from 1 to 255, and the maximum size in bytes of each SMS fragment, from 16 to 140 bytes. Use SmsFragmentLimit to set the maximum number of bytes in the user data body of an SMS message. You must set the value between 16 (0x10) and 140 (0x8C). You must also use SmsPageLimit to set the maximum number of segments in a concatenated SMS message.
 SmsPageLimit | Partners can specify a maximum length for SMS messages. This requires setting both the maximum number of SMS fragments per SMS message, from 1 to 255, and the maximum size in bytes of each SMS fragment, from 16 to 140 bytes. Use SmsPageLimit to set the maximum number of segments in a concatenated SMS message. You must set the value to 255 (0xFF) or smaller. You must also use SmsFragmentLimit to set the maximum number of bytes in the body of the SMS message.
+SmsStoreDeleteSize | Set the number of messages that can be deleted when a "message full" indication is received from the modem.
 SprintFragmentInfoInBody | Partners can enable the messaging client to allow users to enter more than 160 characters per message. Messages longer than 160 characters are sent as multiple SMS messages that contain a tag at the beginning of the message in the form "(1/2)", where the first number represents the segment or part number and the second number represents the total number of segments or parts. Multiple messages are limited to 6 total segments. When enabled, the user cannot enter more characters after the 6 total segments limit is reached. Any message received with tags at the beginning is recombined with its corresponding segments and shown as one composite message.
 Type3GPP > ErrorHandling > ErrorType | Enter a name for ERRORCODE3GPP, and click **Add**. Configure the error type that you added as **Transient Failure** or **Permanent Failure**.
 Type3GPP > ErrorHandling > FriendlyErrorClass | Enter a name for ERRORCODE3GPP, and click **Add**. Configure the error class that you added as **generic error**, **invalid recepient address**, or **network connectivity trouble**.
-Type3GPP > IMS > SmsUse16BitReferenceNumbers | Configure whether to use 8-bit or 16-bit message ID (reference number) in the UDH.
+Type3GPP > IMS > AttemptThresholdForIMS    | Set the maximum number of tries to send SMS on IMS.
+Type3GPP > IMS > RetryEnabled    | Configure whether to enable one automatic retry after failure to send over IMS.
+Type 3GPP > SmsUse16BitReferenceNumbers | Configure whether to use 8-bit or 16-bit message ID (reference number) in the UDH.
 Type3GPP2 > ErrorHandling > FriendlyErrorClass | Enter a name for ERRORCODE3GPP2, and click **Add**. Configure the error class that you added as **generic error**, **invalid recepient address**, or **network connectivity trouble**.
 Type3GPP2 > ErrorHandling > UseReservedAsPermanent | Set the 3GPP2 permanent error type.
 
@@ -298,7 +303,7 @@ HideLTEAttachAPN | Select **Yes** to hide the **LTE attach APN** button on the *
 HideMMSAPN | Select **Yes** to hide the **add mms apn** button on the **Settings** > **Cellular+SIM** > **SIM** settings page. Select **No** to show the **add mms apn** button.
 HideMMSAPNIPType | Select **Yes** to hide the APN IP type selector on the MMS APN page. Select **No** to show the APN IP type selector.
 HideModeSelection | Select **Yes** to hide the **Network Mode selection** drop-down menu on the **Settings** > **Cellular+SIM** > **SIM** settings page. Select **No** to show the **Network Mode selection**.
-HidePersoUnlock | Select **Yes** to hide the Perso unlock UI. Select **No** to show the Perso unlock UI.
+HidePersoUnlock | Select **Yes** to hide the Perso unlock UI. Select **No** to show the Perso unlock UI. (Removed in Windows 10, version (1804?).)
 HighestSpeed2G | You can customize the listed names of the connection speeds with their own character codes. To modify "2G" to another character code, change the value of HighestSpeed2G. Although there is no limit to the number of characters you can use, if the character code is too long, it will be truncated in the UI.
 HighestSpeed3G | You can customize the listed names of the connection speeds with their own character codes. To modify "3G" to another character code, change the value of HighestSpeed3G. Although there is no limit to the number of characters you can use, if the character code is too long, it will be truncated in the UI.
 HighestSpeed3GOnly | You can customize the listed names of the connection speeds with their own character codes. To modify "3G Only" to another character code, change the value of HighestSpeed3GOnly. Although there is no limit to the number of characters you can use, if the character code is too long, it will be truncated in the UI.
@@ -318,9 +323,9 @@ ShowSpecificWifiCallingError | Select **Yes** to show a specific error message b
 ShowViewAPN | Select **Yes** to show the **View Internet APN** button in **Settings** > **cellular+SIM**.
 ShowWifiCallingEmergencyCallWarning | Select **Yes** to show Wi-Fi emergency call warning.
 ShowWifiCallingError | Select **Yes** to show Wi-Fi calling error message.
-SlotSelectionSim1Name | Enter text for the name of SIM 1 in slot selection UI.
-SlotSelectionSim2Name | Enter text for the name of SIM 2 in slot selection UI.
-SuppressDePersoUI | Suppress DePerso UI to unlock Perso.
+SlotSelectionSim1Name | Enter text for the name of SIM 1 in slot selection UI.  (Removed in Windows 10, version (1804?).)
+SlotSelectionSim2Name | Enter text for the name of SIM 2 in slot selection UI.  (Removed in Windows 10, version (1804?).)
+SuppressDePersoUI | Suppress DePerso UI to unlock Perso.  (Removed in Windows 10, version (1804?).)
 
 
 
@@ -339,13 +344,14 @@ CardLock | Used to enforce either the card allow list or both the card allow and
 Critical > MultivariantProvisionedSPN | Used to change the default friendly SIM names in dual SIM phones. By default, the OS displays SIM 1 or SIM 2 as the default friendly name for the SIM in slot 1 or slot 2 if the service provider name (SPN) or mobile operator name has not been set. Partners can use this setting to change the default name read from the SIM to define the SPN for SIM cards that do not contain this information or to generate the default friendly name for the SIM. The OS uses the default value as the display name for the SIM or SPN in the Start screen and other parts of the UI including the SIM settings screen. For dual SIM phones that contain SIMs from the same mobile operator, the names that appear in the UI may be similar. See [Values for MultivariantProvisionedSPN](#spn).
 Critical > SimNameWithoutMSISDNENabled | Use this setting to remove the trailing MSISDN digits from the service provider name (SPN) in the phone UI. By default, the OS appends the trailing MSISDN digits to the service provider name (SPN) in the phone UI, including on the phone and messaging apps. If required by mobile operators, OEMs can use the SimNameWithoutMSISDNEnabled setting to remove the trailing MSISDN digits. However, you must use this setting together with **MultivariantProvisionedSPN** to suppress the MSISDN digits. 
 DisableLTESupportWhenRoaming | Set to **Yes** to disable LTE support when roaming.
+EnableIMSWhenRoaming | Set to **Yes** to enable IMS when roaming.
 ExcludedSystemTypesByDefault | Set the default value for **Highest connection speed** in the **Settings** > **Cellular & SIM** > **SIM** screen by specifying the bitmask for any combination of radio technology to be excluded from the default value. The connection speed that has not been excluded will show up as the highest connection speed. On dual SIM phones that only support up to 3G connection speeds, the **Highest connection speed** option is replaced by a 3G on/off toggle based on the per-device setting. Enter the binary setting to exclude 4G (`10000`) or 3G (`01000`).
 LTEEnabled | Select **Yes** to enable LTE, and **No** to disable LTE.
 LTEForced | Select **Yes** to force LTE.
 NetworkSuffix | To meet branding requirements for some mobile operators, you can add a suffix to the network name that is displayed on the phone. For example, you can change from ABC to ABC 3G when under 3G coverage. This feature can be applied for any radio access technology (RAT). For TD-SCDMA RAT, a 3G suffix is always appended by default, but partners can also customize this the same way as with any other RAT. In the setting name, set SYSTEMTYPE to the network type that you want to append the network name to and click **Add**:</br></br>- system type 4: 2G (GSM)</br>- system type 8: 3G (UMTS)</br>- system type 16: LTE</br>- system type 32: 3G (TS-SCDMA)</br></br>Select the system type that you added, and enter the network name and suffix that you want displayed.
 NitzFiltering | For mobile networks that can receive Network Identity and Time Zone (NITZ) information from multiple sources, partners can set the phone to ignore the time received from an LTE network. Time received from a CDMA network is not affected. Set the value of NitzFiltering to `0x10`. 
-OperatorListForExcludedSystemTypes | Enter a comma-separated list of MCC and MNC (MCC:MNC) for which system types should be restricted. For mobile operators that require more control over the system types that their phones use to connect to the mobile operators' networks, OEMs can specify the MCC and MNC of other specific operators that the main mobile operator wishes to limit. If the UICC's MCC and MNC matches any of the pairs that OEMs can specify for the operator, a specified RIL system type will be removed from the UICC regardless of its app types, slot position, or executor mapping. This setting is used only for China. OEMs should not use this setting unless required by the mobile operator. Set the value of the OperatorListForExcludedSystemTypes setting a comma separated list of MCC:MNC pairs for which the system types should be restricted. For example, the value can be set to 310:026,310:030 to restrict operators with an MCC:MNC of 310:026 and 310:030.
-OperatorPreferredForFasterRadio | Set Issuer Identification Number (IIN) or partial ICCID of preferred operator for the faster radio. For mobile operators that require more control over the system types that their phones use to connect to the mobile operators' networks, OEMs can map a partial ICCID or an Industry Identification Number (IIN) to the faster radio regardless of which SIM card is chosen for data connectivity. This setting is used only for China. OEMs should not use this setting unless required by the mobile operator. To map a partial ICCID or an IIN to the faster radio regardless of which SIM card is chosen for data connectivity, set the value of OperatorPreferredForFasterRadio to match the IIN or the ICCID, up to 7 digits, of the preferred operator.
+OperatorListForExcludedSystemTypes | Enter a comma-separated list of MCC and MNC (MCC:MNC) for which system types should be restricted. For mobile operators that require more control over the system types that their phones use to connect to the mobile operators' networks, OEMs can specify the MCC and MNC of other specific operators that the main mobile operator wishes to limit. If the UICC's MCC and MNC matches any of the pairs that OEMs can specify for the operator, a specified RIL system type will be removed from the UICC regardless of its app types, slot position, or executor mapping. This setting is used only for China. OEMs should not use this setting unless required by the mobile operator. Set the value of the OperatorListForExcludedSystemTypes setting a comma separated list of MCC:MNC pairs for which the system types should be restricted. For example, the value can be set to 310:026,310:030 to restrict operators with an MCC:MNC of 310:026 and 310:030. (Removed in Windows 10, version (1804?).)
+OperatorPreferredForFasterRadio | Set Issuer Identification Number (IIN) or partial ICCID of preferred operator for the faster radio. For mobile operators that require more control over the system types that their phones use to connect to the mobile operators' networks, OEMs can map a partial ICCID or an Industry Identification Number (IIN) to the faster radio regardless of which SIM card is chosen for data connectivity. This setting is used only for China. OEMs should not use this setting unless required by the mobile operator. To map a partial ICCID or an IIN to the faster radio regardless of which SIM card is chosen for data connectivity, set the value of OperatorPreferredForFasterRadio to match the IIN or the ICCID, up to 7 digits, of the preferred operator. (Removed in Windows 10, version (1804?).)
 SuggestDataRoamingARD | Use to show the data roaming suggestion dialog when roaming and the data roaming setting is set to no roaming.
 
 
