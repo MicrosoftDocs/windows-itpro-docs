@@ -944,6 +944,15 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
+    <a href="./policy-csp-display.md#display-disableperprocessdpiforapps" id="display-disableperprocessdpiforapps">Display/DisablePerProcessDpiForApps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-display.md#display-enableperprocessdpi" id="display-enableperprocessdpi">Display/EnablePerProcessDpi</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-display.md#display-enableperprocessdpiforapps" id="display-enableperprocessdpiforapps">Display/EnablePerProcessDpiForApps</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-display.md#display-turnoffgdidpiscalingforapps" id="display-turnoffgdidpiscalingforapps">Display/TurnOffGdiDPIScalingForApps</a>
   </dd>
   <dd>

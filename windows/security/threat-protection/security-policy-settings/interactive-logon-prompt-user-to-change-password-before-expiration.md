@@ -34,7 +34,7 @@ The **Interactive logon: Prompt user to change password before expiration** poli
 
 ### Location
 
-Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
+Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Local Policies\\Security Options
 
 ### Default values
 
