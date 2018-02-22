@@ -87,25 +87,18 @@ detect sophisticated cyber-attacks, providing:
 
 Topic | Description
 :---|:---
-[Minimum requirements](minimum-requirements-windows-defender-advanced-threat-protection.md) | This overview topic for IT professionals provides information on the minimum requirements to use Windows Defender ATP such as network and data storage configuration, and endpoint hardware and software requirements, and deployment channels.
-[Preview features](preview-windows-defender-advanced-threat-protection.md) | Learn about new features in the Windows Defender ATP preview release and enable the preview experience.
-[Data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md)| Learn about how Windows Defender ATP collects and handles information and where data is stored.
-[Assign user access to the Windows Defender ATP portal](assign-portal-access-windows-defender-advanced-threat-protection.md)| Before users can access the portal, they'll need to be granted specific roles in Azure Active Directory.
-[Onboard endpoints and set up access](onboard-configure-windows-defender-advanced-threat-protection.md) | You'll need to onboard and configure the Windows Defender ATP service and the endpoints in your network before you can use the service. Learn about how you can assign users to the Windows Defender ATP service in Azure Active Directory (AAD) and using a configuration package to configure endpoints.
-[Portal overview](portal-overview-windows-defender-advanced-threat-protection.md) | Understand the main features of the service and how it leverages Microsoft technology to protect enterprise endpoints from sophisticated cyber attacks.
-[Use the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md) | Learn about the capabilities of Windows Defender ATP to help you investigate alerts that might be indicators of possible breaches in your enterprise.
-[Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md) | Learn about pulling alerts from the Windows Defender ATP portal using supported security information and events management (SIEM) tools.
-[Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md) | Understand threat intelligence concepts, then enable the custom threat intelligence application so that you can proceed to create custom threat intelligence alerts that are specific to your organization.
-[Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md) | Windows Defender ATP exposes much of the available data and actions using a set of programmatic APIs that are part of the Microsoft Intelligence Security Graph. Those APIs will enable you to automate workflows and innovate based on Windows Defender ATP capabilities.
-[Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md) | Understand the security status of your organization, including the status of machines, alerts, and investigations using the Windows Defender ATP reporting feature that integrates with Power BI. 
-[Check sensor state](check-sensor-status-windows-defender-advanced-threat-protection.md) | Check the sensor health state on endpoints to verify that they are providing sensor data and communicating with the Windows Defender ATP service.
-[Configure Windows Defender ATP preferences settings](preferences-setup-windows-defender-advanced-threat-protection.md) | Use the Preferences setup menu to modify general settings, advanced features, enable the preview experience, email notifications, and the custom threat intelligence feature.
-[Access the Windows Defender ATP Community Center](community-windows-defender-advanced-threat-protection.md)| The Windows Defender ATP Community Center is a place where community members can learn, collaborate, and share experiences about the product. 
-[Windows Defender ATP settings](settings-windows-defender-advanced-threat-protection.md) | Configure time zone settings and view license information.
-[Windows Defender ATP service health](service-status-windows-defender-advanced-threat-protection.md) | Verify that the service health is running properly or if there are current issues.
-[Troubleshoot Windows Defender Advanced Threat Protection](troubleshoot-windows-defender-advanced-threat-protection.md) | This topic contains information to help IT Pros find workarounds for the known issues and troubleshoot issues in Windows Defender ATP.
-[Review events and errors on endpoints with Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md)| Review events and errors associated with event IDs to determine if further troubleshooting steps are required.
-[Windows Defender Antivirus compatibility with Windows Defender ATP](defender-compatibility-windows-defender-advanced-threat-protection.md) | Learn about how Windows Defender Antivirus works in conjunction with Windows Defender ATP.
+Get started  |  Learn about the minimum requirements, validate licensing and complete setup, know about preview features, understand data storage and privacy, and how to assign user access to the portal.
+[Onboard endpoints and set up access](onboard-configure-windows-defender-advanced-threat-protection.md) | Learn about configuring client, server, and non-Windows endpoints. Learn how to run a detection test, configure proxy and Internet connectivity settings, and how to troubleshoot potential onboarding issues.
+[Understand the Windows Defender ATP portal](use-windows-defender-advanced-threat-protection.md) | Understand the Security operations and Security analytics dashboard, and how to navigate the portal.
+Investigate and remediate threats | Investigate alerts, machines, and take response actions to remediate threats.
+API and SIEM support | Use the supported APIs to pull and create custom alerts, or automate workflows. Use the supported SIEM tools to pull alerts from the Windows Defender ATP portal.
+Reporting | Create and build Power BI reports using Windows Defender ATP data.
+Check service health and sensor state | Verify that the service is running and check the sensor state on endpoints.
+[Configure Windows Defender settings](preferences-setup-windows-defender-advanced-threat-protection.md) | Configure general settings, turn on the preview experience, notifications, and enable other features.
+[Access the Windows Defender ATP Community Center](community-windows-defender-advanced-threat-protection.md) | Access the Windows Defender ATP Community Center to learn, collaborate, and share experiences about the product.
+[Troubleshoot Windows Defender ATP](troubleshoot-windows-defender-advanced-threat-protection.md) | This section addresses issues that might arise as you use the Windows Defender Advanced Threat service.
+[Windows Defender Antivirus compatibility with Windows Defender ATP](defender-compatibility-windows-defender-advanced-threat-protection.md) | Understand how Windows Defender Antivirus integrates with Windows Defender ATP. 
+
 
 ## Related topic
 [Windows Defender ATP helps detect sophisticated threats](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
