@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 11/17/2017
+ms.date: 03/05/2018
 ---
 
 # Minimum requirements for Windows Defender ATP
@@ -23,7 +23,7 @@ ms.date: 11/17/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
+[!include[Prerelease information](prerelease.md)]
 
 There are some minimum requirements for onboarding your network and endpoints.
 

@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.date: 03/05/2018
 ---
 
 # Investigate Windows Defender Advanced Threat Protection alerts
@@ -19,17 +19,17 @@ ms.date: 10/16/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-investigatealerts-abovefoldlink) 
 
-Investigate alerts that are affecting your network, what they mean, and how to resolve them. 
+Investigate alerts that are affecting your network, understand what they mean, and how to resolve them. 
 
 Click an alert to see the alert details view and the various tiles that provide information about the alert. 
 
-You can also manage an alert and see alert metadata along with other information that can help you make better decisions on how to approach them.
+You can also manage an alert and see alert metadata along with other information that can help you make better decisions on how to approach them. You'll also see a status of the automated investigation on the upper right corner. Clicking on the link will take you to the Automated investigations view. For more information, see Automated investigations. 
 
-![Image of the alert page](images/atp-alert-details.png)
+![Image of the alert page](images/atp-alert-view.png)
 
 
 The alert context tile shows the where, who, and when context of the alert. As with other pages, you can click on the icon beside the name or user account to bring up the machine or user details pane. The alert details view also has a status tile that shows the status of the alert in the queue. You'll also see a description and a set of recommended actions which you can expand.
