@@ -94,6 +94,7 @@ So, for example:
 >[!NOTE]
 >The Windows Defender Antivirus filter will only appear if your endpoints are using Windows Defender Antivirus as the default real-time protection antimalware product.
 
+
 ### View
 - **Flat view** - Lists alerts individually with alerts having the latest activity displayed at the top.
 - **Grouped view** - Groups alerts by alert ID, file hash, malware family, or other attribute to enable more efficient alert triage and management. Alert grouping reduces the number of rows in the queue by aggregating similar alerts together.
