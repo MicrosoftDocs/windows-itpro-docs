@@ -92,7 +92,7 @@ Filter the list to view specific machines grouped together by the following malw
   -	**General malware** – Malware are malicious programs that perform unwanted actions, including actions that can disrupt, cause direct damage, and facilitate intrusion and data theft. Some malware can replicate and spread from one machine to another. Others are able to receive commands from remote attackers and perform activities associated with cyberattacks.
   -	**PUA** – Unwanted software is a category of applications that install and perform undesirable activity without adequate user consent. These applications are not necessarily malicious, but their behaviors often negatively impact the computing experience, even appearing to invade user privacy. Many of these applications display advertising, modify browser settings, and install bundled software.
 
-## Groups and tags
+**Groups and tags** </br>
 You can filter the list based on the grouping and tagging that you've added to individual machines. For more information, see [Manage machine group and tags](investigate-machines-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags).
 
 ## Export machine list to CSV
