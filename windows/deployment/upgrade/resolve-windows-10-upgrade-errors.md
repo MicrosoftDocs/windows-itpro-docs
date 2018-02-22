@@ -657,7 +657,7 @@ For more information, see [How to perform a clean boot in Windows](https://suppo
 
 <br>Result codes starting with the digits 0x800 are also important to understand. These error codes indicate general operating system errors, and are not unique to the Windows upgrade process. Examples include timeouts, devices not functioning, and a process stopping unexpectedly.
 
-<br>See the following general troubleshooting procedures associated with a result code of 0x800xxxxx:
+<br>See the following general troubleshooting procedures associated with a result code of 0x800xxxxx:<br>
 
 <br><table border="1" cellspacing="0" cellpadding="0">
 
@@ -687,6 +687,41 @@ An unspecified error occurred with a driver during the SafeOS phase.
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 This error has more than one possible cause. Attempt [quick fixes](#quick-fixes), and if not successful, [analyze log files](#analyze-log-files) in order to determine the problem and solution.
+
+</table>
+</td>
+</tr>
+
+<tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Code</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+0x80073BC3 - 0x20009<br>
+0x8007002 - 0x20009<br>
+0x80073B92 - 0x20009
+
+</table>
+
+<br><table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+The requested system device cannot be found.
+Sharing violation.
+The requested system device cannot be identified due to multiple indistinguishable devices potentially matching the identification criteria.
+
+</table>
+</td>
+
+<td align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+These errors occur during partition analysis and validation, and can be caused by the presence of multiple system partitions. For example, if you installed a new system drive but left the previous system drive connected, this can cause a conflict. To resolve the errors, disconnect or temporarily disable drives that contain the unused system partition. You can reconnect the drive after the upgrade has completed. Alternatively, you can delete the unused system partition.
 
 </table>
 </td>
