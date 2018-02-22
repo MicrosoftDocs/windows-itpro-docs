@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
 author: brianlic-msft
-ms.author: brianlic-msft
+ms.author: brianlic
 ms.date: 11/21/2017
 ---
 # Manage Windows 10 connection endpoints
@@ -318,7 +318,6 @@ If you turn off traffic for these endpoints, users won't be able to save documen
 | system32\Auth.Host.exe | HTTPS | outlook.office365.com |
 
 The following endpoint is OfficeHub traffic used to get the metadata of Office apps. To turn off traffic for this endpoint, either uninstall the app or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). If you disable the Microsoft store, other Microsoft Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them.
-ently used documents.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|

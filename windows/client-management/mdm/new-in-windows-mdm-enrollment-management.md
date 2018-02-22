@@ -1403,6 +1403,15 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, next major update:</p>
+<ul>
+<li>Display/DisablePerProcessDpiForApps</li>
+<li>Display/EnablePerProcessDpi</li>
+<li>Display/EnablePerProcessDpiForApps</li>
+<ul>
+</td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[VPNv2 ProfileXML XSD](vpnv2-profile-xsd.md)</td>
 <td style="vertical-align:top"><p>Updated the XSD and Plug-in profile example for VPNv2 CSP.</p>
