@@ -12,6 +12,13 @@ ms.date: 10/31/2017
 # Change history for threat protection
 This topic lists new and updated topics in the [Threat protection](index.md) documentation.
 
+## February 2018
+
+New or changed topic | Description
+---------------------|------------
+[Security Compliance Toolkit](security-compliance-toolkit-10.md) | Added Office 2016 Security Baseline.
+[Audit security group management](auditing/audit-security-group-management.md)| Added recommendation to audit Failure events.
+
 ## January 2018
 |New or changed topic |Description |
 |---------------------|------------|
