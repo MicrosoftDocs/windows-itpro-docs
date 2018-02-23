@@ -191,24 +191,23 @@ After you download the Office 2016 applications through the Office Deployment To
         **Product ID** for Office was changed to `O365ProPlusRetail`.<br>
         **Product ID** for Visio was changed to `VisioProRetail`.
         
-    - **ExcludeApp** (optional): Lets you specify Office programs that you don’t want included in the App-V package that the Office Deployment Tool creates. For example, you can exclude Access.
+    - **ExcludeApp** (optional): Lets you specify Office programs that you don’t want included in the App-V package created by the Office Deployment Tool. For example, you can exclude Access.
 
-    - **PACKAGEGUID** (optional): By default, all App-V packages created by the Office Deployment Tool share the same App-V Package ID. You can use **PACKAGEGUID** to specify a different package ID for each package, which allows you to publish multiple App-V packages, created by the Office Deployment Tool, and manage them by using the App-V Server.
+    - **PACKAGEGUID** (optional): By default, all App-V packages created by the Office Deployment Tool share the same App-V Package ID. You can use **PACKAGEGUID** to specify a different package ID for each package, which allows you to publish multiple App-V packages created by the Office Deployment Tool, and then manage your published packages with the App-V Server.
         
         An example of when to use this parameter is if you create different packages for different users. For example, you can create a package with just Office 2016 for some users, and create another package with Office 2016 and Visio 2016 for another set of users.
         
         >[!NOTE]
         >Even if you use unique package IDs, you can still deploy only one App-V package to a single device.
+2. Use the /packager command to convert the Office applications to an Office 2016 App-V package.
 
-2.	Use the /packager command to convert the Office applications to an Office 2016 App-V package.
+    The following is an example packager command:
 
-    For example:
-
-    ``` syntax
+    ```syntax
     \\server\Office2016\setup.exe /packager \\server\Office2016\Customconfig.xml  \\server\share\Office2016AppV
     ```
 
-    In the example:
+    The following table describes each element used in the example command:
 
     <table>
     <colgroup>
@@ -218,23 +217,23 @@ After you download the Office 2016 applications through the Office Deployment To
     <tbody>
     <tr class="odd">
     <td align="left"><p><code>\\server\Office2016</code></p></td>
-    <td align="left"><p>is the network share location that contains the Office Deployment Tool and the custom Configuration.xml file, Customconfig.xml.</p></td>
+    <td align="left"><p>This is the network share location that contains the Office Deployment Tool and the custom Configuration.xml file, which in this example is Customconfig.xml.</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p><code>Setup.exe</code></p></td>
-    <td align="left"><p>is the Office Deployment Tool.</p></td>
+    <td align="left"><p>This is the Office Deployment Tool.</p></td>
     </tr>
     <tr class="odd">
     <td align="left"><p><code>/packager</code></p></td>
-    <td align="left"><p>creates the Office 2016 App-V package with the type of licensing specified in the customConfig.xml file.</p></td>
+    <td align="left"><p>This command creates the Office 2016 App-V package with the license type specified in the Customconfig.xml file.</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p><code>\\server\Office2016\Customconfig.xml</code></p></td>
-    <td align="left"><p>passes the configuration XML file (in this case customConfig) that has been prepared for the packaging stage.</p></td>
+    <td align="left"><p>This passes the configuration XML file that has been prepared for the packaging stage. In this example, the file is Customconfig.xml.</p></td>
     </tr>
     <tr class="odd">
     <td align="left"><p><code>\\server\share\Office2016AppV</code></p></td>
-    <td align="left"><p>specifies the location of the newly created Office App-V package.</p></td>
+    <td align="left"><p>This specifies the location of the newly created Office App-V package.</p></td>
     </tr>
     </tbody>
     </table>
@@ -244,12 +243,12 @@ After you download the Office 2016 applications through the Office Deployment To
     - **App-V Packages** – contains an Office 2016 App-V package and two deployment configuration files.
     - **WorkingDir**
 
-    **Note**&nbsp;&nbsp;To troubleshoot any issues, see the log files in the %temp% directory (default).
+    >[!NOTE]
+    >To troubleshoot any issues, see the log files in the %temp% directory (default).
 
 3. Verify that the Office 2016 App-V package works correctly:
 
     1. Publish the Office 2016 App-V package, which you created globally, to a test computer, and verify that the Office 2016 shortcuts appear.
-
     2. Start a few Office 2016 applications, such as Excel or Word, to ensure that your package is working as expected.
 
 ## Publishing the Office package for App-V
@@ -268,7 +267,7 @@ Deploy the App-V package for Office 2016 by using the same methods you use for a
 
 ### Publishing prerequisites and requirements
 
-| **Prerequisite or requirement**       | **Details**        |
+| Prerequisite or requirement           | Details            |
 |---------------------------------------|--------------------|
 | Enable Windows PowerShell scripting on the App-V clients | To publish Office 2016 packages, you must run a script.<br><br>Package scripts are disabled by default on App-V clients. To enable scripting, run the following Windows PowerShell command:<br>`Set-AppvClientConfiguration -EnablePackageScripts 1`    |
 | Publish the Office 2016 package globally     | Extension points in the Office App-V package require installation at the computer level.<br><br>When you publish at the computer level, no prerequisite actions or redistributables are needed, and the Office 2016 package globally enables its applications to work like natively installed Office, eliminating the need for administrators to customize packages. |
