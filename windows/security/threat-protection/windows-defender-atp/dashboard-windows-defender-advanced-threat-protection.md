@@ -54,10 +54,7 @@ For more information see, [Alerts overview](alerts-queue-windows-defender-advanc
 
 The **Latest active alerts** section includes the latest active alerts in your network. Each row includes an alert severity category and a short description of the alert. Click an alert to see its detailed view, or **Alerts queue** at the top of the list to go directly to the Alerts queue. For more information see,  [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md) and [Alerts overview](alerts-queue-windows-defender-advanced-threat-protection.md).
 
-## Daily machines reporting
-The **Daily machines reporting** tile shows a bar graph that represents the number of machines reporting daily in the last 30 days. Hover over individual bars on the graph to see the exact number of machines reporting in each day.
 
-![Image of daily machines reporting tile](images/atp-daily-machines-reporting.png)
 
 ## Machines at risk
 This tile shows you a list of machines with the highest number of active alerts. The total number of alerts for each machine is shown in a circle next to the machine name, and then further categorized by severity levels at the far end of the tile (hover over each severity bar to see its label).
@@ -67,13 +64,6 @@ This tile shows you a list of machines with the highest number of active alerts.
 Click the name of the machine to see details about that machine. For more information see, [Investigate machines in the Windows Defender Advanced Threat Protection Machines list](investigate-machines-windows-defender-advanced-threat-protection.md).
 
 You can also click **Machines list** at the top of the tile to go directly to the **Machines list**, sorted by the number of active alerts. For more information see, [Investigate machines in the Windows Defender Advanced Threat Protection Machines list](investigate-machines-windows-defender-advanced-threat-protection.md).
-
-## Users at risk
-The tile shows you a list of user accounts with the most active alerts. 
-
-![User accounts at risk tile shows a list of user accounts with the highest number of alerts and a breakdown of the severity of the alerts](images/atp-users-at-risk.png)
-
-Click the user account to see details about the user account. For more information see [Investigate a user account](investigate-user-windows-defender-advanced-threat-protection.md).
 
 ## Machines with active malware detections
 The **Machines with active malware detections** tile will only appear if your endpoints are using Windows Defender Antivirus.
@@ -100,6 +90,33 @@ Clicking on any of these categories will navigate to the [Machines list](investi
 > [!NOTE]
 > The **Machines with active malware detections** tile will only appear if your endpoints are using [Windows Defender Antivirus](https://technet.microsoft.com/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
 
+
+## Daily machines reporting
+The **Daily machines reporting** tile shows a bar graph that represents the number of machines reporting daily in the last 30 days. Hover over individual bars on the graph to see the exact number of machines reporting in each day.
+
+![Image of daily machines reporting tile](images/atp-daily-machines-reporting.png)
+
+
+
+## Active automated investigations
+You can view the overall number of automated investigations from the last 30 days in your network from the **Active automated investigations** tile. Investigations are grouped into **Pending asset**, **Running**, and **Pending approval**.
+
+![Inmage of active automated investigations](images/atp-active-investigations-tile.png)
+
+
+## Automated investigations statistics
+This tile shows statistics related to automated investigations in the last 30 days. It shows the number of investigations completed, the number of successfully remediated investigations, the average pending time it takes for an investigaiton to be initiated, the average time it takes to remediate an alert, the number of alerts investigated, and the number of hours of automation saved from a typical manual investigation. 
+
+![Image of automated investigations statistics](images/atp-automated-investigations-statistics.png)
+
+You can click on **Investigations completed**, **Successfully remediated**, and **Alerts investigated** to navigate to the **Invesgations** page, filtered by the appropriate category. This lets you see a detailed breakdown of investigations in context.
+
+## Users at risk
+The tile shows you a list of user accounts with the most active alerts. 
+
+![User accounts at risk tile shows a list of user accounts with the highest number of alerts and a breakdown of the severity of the alerts](images/atp-users-at-risk.png)
+
+Click the user account to see details about the user account. For more information see [Investigate a user account](investigate-user-windows-defender-advanced-threat-protection.md).
 
 
 ## Sensor health
