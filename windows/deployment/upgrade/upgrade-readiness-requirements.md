@@ -82,7 +82,7 @@ Before you get started configuring Upgrade Anatlyics, review the following tips 
 
 **Upgrade Readiness does not support on-premises Windows deployments.** Upgrade Readiness is built as a cloud service, which allows Upgrade Readiness to provide you with insights based on the data from user computers and other Microsoft compatibility services. Cloud services are easy to get up and running and are cost-effective because there is no requirement to physically implement and maintain services on-premises.
 
-**In-region data storage requirements.** Windows diagnostic data from user computers is encrypted, sent to, and processed at Microsoft-managed secure data centers located in the US. Our analysis of the upgrade readiness-related data is then provided to you through the Upgrade Readiness solution in the Microsoft Operations Management Suite (OMS) portal. At the time this topic is being published, only OMS workspaces created in the East US and West Europe are supported. We’re adding support for additional regions and we’ll update this information when new international regions are supported.
+**In-region data storage requirements.** Windows diagnostic data from user computers is encrypted, sent to, and processed at Microsoft-managed secure data centers located in the US. Our analysis of the upgrade readiness-related data is then provided to you through the Upgrade Readiness solution in the Microsoft Operations Management Suite (OMS) portal. Upgrade Readiness is supported in all OMS regions; however, selecting an international OMS region does not prevent diagnostic data from being sent to and processed in Microsoft's secure data centers in the US.
 
 ### Tips
 
