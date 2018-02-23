@@ -16,6 +16,7 @@ This topic lists new and updated topics in the Surface documentation library.
 
 |New or changed topic | Description |
 | --- | --- |
+|[Surface Dock Updater](surface-dock-updater.md) | Added version 2.12.136.0 information  |
 |[Microsoft Surface Data Eraser](microsoft-surface-data-eraser.md) | Added version 3.2.46.0 information  |
 
 ## January 2018
