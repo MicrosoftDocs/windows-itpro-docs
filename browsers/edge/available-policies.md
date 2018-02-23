@@ -110,7 +110,7 @@ For more info, see the [Microsoft browser extension policy](http://aka.ms/browse
 ### Allow web content on New Tab page
 >*Supported versions: Windows 10*
 
-This policy setting lets you configure what appears when Microsoft Edge opens a new tab. By default, Microsoft Edge opens the New Tab page. If you use this setting, employees can’t change it.
+This policy setting lets you configure what appears when Microsoft Edge opens a new tab. By default, Microsoft Edge opens the New Tab page. If you use this setting, employees cannot change it.
 | If you… | Then… |
 | --- | --- |
 | Enable | Microsoft Edge opens a new tab with the New Tab page. |
@@ -171,7 +171,7 @@ This policy setting lets you decide whether employees can save their passwords l
 | If you… | Then… |
 | --- | --- |
 | Enable (default) | Employees can use Password Manager to save their passwords locally. |
-| Disable | Employees can’t use Password Manager to save their passwords locally. | 
+| Disable | Employees cannot use Password Manager to save their passwords locally. | 
 | Do not configure | Employees can choose whether to use Password Manager to save their passwords locally. |
 
 ### Configure Pop-up Blocker
@@ -987,7 +987,7 @@ These are additional Windows 10-specific MDM policy settings that work with Mic
 
     - **Allowed values:**
 
-        - **0.** Employees can’t use Cortana on their devices.
+        - **0.** Employees cannot use Cortana on their devices.
         
         - **1 (default).** Employees can use Cortana on their devices.
 
@@ -1002,7 +1002,7 @@ These are additional Windows 10-specific MDM policy settings that work with Mic
 
     - **Allowed values:**
 
-        - **0.** Employees can’t sync settings between PCs.
+        - **0.** Employees cannot sync settings between PCs.
         
         - **1 (default).** Employees can sync between PCs.
 
