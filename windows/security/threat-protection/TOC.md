@@ -83,7 +83,7 @@
 ####### [View deep analysis reports](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md#view-deep-analysis-reports)
 ####### [Troubleshoot deep analysis](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md#troubleshoot-deep-analysis)
 
-#### [Advanced hunting](\windows-defender-atp\advanced-hunting-windows-defender-advanced-threat-protection.md)
+#### [Advanced hunting in Windows Defender ATP](\windows-defender-atp\advanced-hunting-windows-defender-advanced-threat-protection.md)
 
 ###API and SIEM support
 #### [Pull alerts to your SIEM tools](windows-defender-atp\configure-siem-windows-defender-advanced-threat-protection.md)
