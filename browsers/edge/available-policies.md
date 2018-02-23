@@ -388,7 +388,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
     - **Allowed values:**
 
-        - **0.** Employees can’t use Autofill to complete form fields.
+        - **0.** Employees cannot use Autofill to complete form fields.
         
         - **1 (default).** Employees can use Autofill to complete form fields.
 
@@ -405,7 +405,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
     - **Allowed values:**
 
-        - **0.** Employees can’t use Microsoft Edge.
+        - **0.** Employees cannot use Microsoft Edge.
 
         - **1 (default).** Employees can use Microsoft Edge. 
 
@@ -475,7 +475,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
     - **Allowed values:**
 
-        - **0.** Employees can’t use Edge Extensions.
+        - **0.** Employees cannot use Edge Extensions.
         
         - **1 (default).** Employees can use Edge Extensions.    
 
@@ -492,7 +492,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
     - **Allowed values:**
 
-        - **0.** Not allowed. Employees can’t use Adobe Flash.
+        - **0.** Not allowed. Employees cannot use Adobe Flash.
         
         - **1 (default).** Allowed. Employees can use Adobe Flash.    
 
@@ -526,7 +526,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
     - **Allowed values:**
 
-        - **0.** Employees can’t use InPrivate browsing.
+        - **0.** Employees cannot use InPrivate browsing.
         
         - **1 (default).** Employees can use InPrivate browsing.
 
@@ -543,7 +543,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
     - **Allowed values:** 
 
-        - **0.** Additional search engines are not allowed and the default can’t be changed in the Address bar.
+        - **0.** Additional search engines are not allowed and the default cannot be changed in the Address bar.
         
         - **1 (default).** Additional search engines are allowed and the default can be changed in the Address bar.
 
@@ -594,7 +594,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
     - **Allowed values:**
 
-        - **0.** Additional search engines are not allowed and the default can’t be changed in the Address bar.
+        - **0.** Additional search engines are not allowed and the default cannot be changed in the Address bar.
         
         - **1 (default).** Additional search engines are allowed and the default can be changed in the Address bar.
 
@@ -612,7 +612,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
     - **Allowed values:**
 
-        - **0 (default).** Employees can’t see search suggestions in the Address bar of Microsoft Edge.
+        - **0 (default).** Employees cannot see search suggestions in the Address bar of Microsoft Edge.
         
         - **1.** Employees can see search suggestions in the Address bar of Microsoft Edge.
 
