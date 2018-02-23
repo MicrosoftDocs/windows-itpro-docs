@@ -442,7 +442,7 @@ For that reason, add only a minimal set of rules to Bootstrap.ini, such as which
 3.  Click **Edit Bootstrap.ini** and modify using the following information:
 
     ``` syntax
-    Settings]
+    [Settings]
     Priority=Default
     [Default]
     DeployRoot=\\MDT01\MDTBuildLab$
