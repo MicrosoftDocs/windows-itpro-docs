@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 02/14/2018
+ms.date: 03/05/2018
 ---
 
 # Advanced hunting in Windows Defender ATP
@@ -23,6 +23,8 @@ ms.date: 02/14/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+[!include[Prerelease information](prerelease.md)]
+
 Advanced hunting allows you to proactively hunt and investigate across your organization using a powerful search and query tool. Take advantage of the following capabilities: 
 
 - **Powerful query language with IntelliSense** - Built on top of a query language that gives you the flexibility you need to take hunting to the next level.
@@ -32,15 +34,17 @@ Advanced hunting allows you to proactively hunt and investigate across your orga
 
 To get you started in querying your Windows Defender ATP data, you can use the basic or advanced query examples that have some preloaded queries for you to understand the basic query syntax.
 
+![Image of Advanced hunting window](images/atp-advanced-hunting.png)
+
 ## Query data in advanced hunting
 
 A typical query starts with a table name followed by a series of operators separated by **|**.
 
 ![Image of Windows Defender ATP advanced hunting query](images/atp-advanced-hunting-query.png)
 
-We start with the table name FileCreationEvents and add piped elements as needed.
+We start with the table name **FileCreationEvents** and add piped elements as needed.
 
-First, we define a time filter to review only records from the last 1 day. We then add a filter on the _FolderPath_ field to contain only the path \AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup.
+First, we define a time filter to review only records from the previous day. We then add a filter on the _FolderPath_ field to contain only the path _\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup_.
 
 Finally, we limit the results to 100 and click **Run query**.
 
@@ -67,14 +71,15 @@ For more information on the query language and supported operators, see [Query L
 
 The following tables are exposed as part of advanced hunting:
 
-- **ProcessCreationEvents** - stores all process creation events telemetry of the organization.
-- **NetworkCommunicationEvents** - stores all network communication events telemetry of the organization.
-- **FileCreationEvents** - stores all file creation, modification and rename events telemetry of the organization.
-- **AlertEvents** - stores all alerts related information trigged in the organization.
-- **RegistryEvents** - stores all registry key creation, modification, rename and deletion events telemetry of the organization.
-- **LogonEvents** - stores all Login events telemetry of the organization.
-- **ImageLoadEvents** - stores all load dll events telemetry of the organization.
-- **MiscEvents** - stores several types of events, including Exploit Guard, Smart Screen, Application Guard, and Firewall events.
+- **AlertEvents** - Stores all alerts related information 
+- **ProcessCreationEvents** - Stores all process creation events 
+- **NetworkCommunicationEvents** - Stores all network communication events o
+- **FileCreationEvents** - Stores all file creation, modification, and rename events
+- **RegistryEvents** - Stores all registry key creation, modification, rename and deletion events 
+- **LogonEvents** - Stores all login events 
+- **ImageLoadEvents** - Stores all load dll events  
+- **MiscEvents** - Stores several types of events, including Windows Defender Exploit Guard, Windows Defender SmartScreen, Windows Defender Application Guard, and Firewall events.
+- **SuspiciousEvents** - Stores all events that deviate from typical event behavior
 
 ## Results set in advanced hunting
 
@@ -87,14 +92,3 @@ The results set has several capabilities to provide you with effective investiga
 
 ## Related topics
 
-- [View the Windows Defender Advanced Threat Protection Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
-- [View the Windows Defender Advanced Threat Protection Security analytics dashboard](security-analytics-dashboard-windows-defender-advanced-threat-protection.md)
-- [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
-- [Investigate an IP address associated with a Windows Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
-- [Investigate a domain associated with a Windows Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
-- [View and organize the Windows Defender ATP Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)
-- [Investigate machines in the Windows Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
-- [Investigate a user account in Windows Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)
-- [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
-- [Take response actions in Windows Defender ATP](response-actions-windows-defender-advanced-threat-protection.md)
