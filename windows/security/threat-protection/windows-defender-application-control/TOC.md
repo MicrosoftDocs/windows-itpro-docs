@@ -1,11 +1,11 @@
 # [Windows Defender Application Control](windows-defender-application-control.md)
 
 ## [Windows Defender Application Control design guide](windows-defender-application-control-design-guide.md)
-### [Understand Windows Defender Application Control policy design decisions](understand-windows=defender-application-control-policy-design-decisions.md)
-### [Select the types of rules to create](select-rules.md)
-### [Plan for Windows Defender Application Control policy management](plan-windows-defender-application-control-management.md)
-#### [Document your application control management processes](document-your-application-control-management-processes.md)
-### [Create your AppLocker planning document](create-your-indows-defender-application-control-planning-document.md)
+### [Understand WDAC policy design decisions](understand-windows=defender-application-control-policy-design-decisions.md)
+### [Select the types of rules to create](select-types-of-rules-to-create.md)
+### [Plan for WDAC policy management](plan-windows-defender-application-control-management.md)
+#### [Document your application control management processes](document-your-windows-defender-application-control-management-processes.md)
+### [Create your WDAC planning document](create-your-windows-defender-application-control-planning-document.md)
 
 
 
