@@ -34,14 +34,18 @@ The following diagram shows the WindowsDefenderApplicationGuard configuration se
 <a href="" id="clipboardfiletype"></a>**Settings/ClipboardFileType**  
 <p style="margin-left: 20px">Determines the type of content that can be copied from the host to Application Guard environment and vice versa. Value type is integer. Supported operations are Add, Get, Replace, and Delete.</p>
 
-- 0 - Allow text copying.
-- 1 - Allow text and image copying.
+- 0 - Disables content copying. 
+- 1 - Allow text copying.
+- 2 - Allow image copying.
+- 3 - Allow text and image copying.
 
 <a href="" id="clipboardsettings"></a>**Settings/ClipboardSettings**  
 <p style="margin-left: 20px">This policy setting allows you to decide how the clipboard behaves while in Application Guard. Value type is integer. Supported operations are Add, Get, Replace, and Delete</p>
 
 - 0 (default) - Completely turns Off the clipboard functionality for the Application Guard.
-- 1 - Turns On the clipboard functionality and lets you choose whether to additionally enable copying of certain content from Application Guard into Microsoft Edge and enable copying of certain content from Microsoft Edge into Application Guard.
+- 1 - Turns On clipboard operation from an isolated session to the host
+- 2 - Turns On clipboard operation from the host to an isolated session
+- 3 - Turns On clipboard operation in both the directions
 
 > [!Important]  
 > Allowing copied content to go from Microsoft Edge into Application Guard can cause potential security risks and isn't recommended. 
