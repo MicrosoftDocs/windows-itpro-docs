@@ -32,21 +32,22 @@ This page provides detailed steps to troubleshoot issues you might encounter.
 
 
 ## Learn how to get a new client secret
-If your client secret expires or if you've misplaced the copy provided when you were enabling the custom threat intelligence application,  you'll need to get a new secret.
+If your client secret expires or if you've misplaced the copy provided when you were enabling the SIEM tool application,  you'll need to get a new secret.
 
 1. Login to the [Azure management portal](https://ms.portal.azure.com).
 
-2. Select **Active Directory**.
+2. Select **Azure Active Directory**.
 
 3. Select your tenant.
 
-4. Click **App registrations** > **All apps**. Then select the application name **WindowsDefenderATPThreatIntelAPI** (formerly known as **WindowsDefenderATPCustomerTiConnector**).
+4. Click **App registrations** > **All apps**, then select your SIEM tool application. The application name is `https://windowsdefenderatpsiemconnector`.
 
-5. Under **Settings**, select **Keys**, then provide a key description and specify the key validity duration.
+5. Select **Keys** section, then provide a key description and specify the key validity duration.
 
 6. Click **Save**. The key value is displayed.
 
 7. Copy the value and save it in a safe place.
+
 
 ## Error when getting a refresh access token
 If you encounter an error when trying to get a refresh token when using the threat intelligence API or SIEM tools, you'll need to add reply URL for relevant application in Azure Active Directory.
