@@ -81,7 +81,7 @@ For more information, see [Create a Power BI dashboard from a report](https://po
 
 ## Create a Power BI dashboard from the Power BI portal
 
-1. Login to [Power BI](app.powerbi.com).
+1. Login to [Power BI](https://powerbi.microsoft.com/).
 
 2. Click **Get Data**.
 
