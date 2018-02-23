@@ -52,7 +52,7 @@ Across the docs.microsoft.com site, if you see **Edit** in the right-hand corner
 
        ![GitHub Web, showing the Preview Changes tab](images/preview-changes.png)
 
-6. When you’re done editing the topic, scroll to the bottom of the page, and then click **Propose file change**.
+6. When you’re done editing the topic, scroll to the bottom of the page, make sure **Create a new branch for this commit and start a pull request** is selected, and then click **Propose file change**.
 
     ![GitHub Web, showing the Propose file change button](images/propose-file-change.png)
 
