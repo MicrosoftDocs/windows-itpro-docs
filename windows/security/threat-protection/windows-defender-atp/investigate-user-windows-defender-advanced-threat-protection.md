@@ -48,7 +48,7 @@ If you have enabled the Azure ATP feature and there are alerts related to the us
 You'll also see a list of the machines that the user logged on to, and can expand these to see details of the logon events on each machine.
 
 >[!NOTE]
->You’ll need to enable the integration between Windows Defender ATP and Azure ATP to use this feature.
+>You'll need to enable the integration between Windows Defender ATP and Azure ATP to use this feature.
 
 
 For more information on how to enable advanced features, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md).
