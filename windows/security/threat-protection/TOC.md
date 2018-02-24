@@ -52,7 +52,7 @@
 ##### [Investigate a domain](windows-defender-atp\investigate-domain-windows-defender-advanced-threat-protection.md)
 ##### [Investigate a user account](windows-defender-atp\investigate-user-windows-defender-advanced-threat-protection.md)
 
-#### [Automated investigations](windows-defender-atp\automated-investigations-windows-defender-advanced-threat-protection.md)
+
 
 
 ####Machines list
@@ -86,6 +86,7 @@
 ####### [View deep analysis reports](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md#view-deep-analysis-reports)
 ####### [Troubleshoot deep analysis](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md#troubleshoot-deep-analysis)
 
+#### [Automated investigations](windows-defender-atp\automated-investigations-windows-defender-advanced-threat-protection.md)
 #### [Advanced hunting in Windows Defender ATP](windows-defender-atp\advanced-hunting-windows-defender-advanced-threat-protection.md)
 
 ###API and SIEM support

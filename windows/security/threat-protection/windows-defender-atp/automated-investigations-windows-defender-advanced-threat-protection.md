@@ -42,18 +42,18 @@ Use the **Customize columns** drop-down menu to select columns that you'd like t
 
 From this view, you can also download the entire list in CSV format using the **Export to CSV** feature, specify the number of items to show per page, and navigate between pages. You also have the flexibility to filter the list based on your preferred criteria.
 
+![Image of Auto investigations page](images/atp-auto-investigations-list.png)
+
  
-### Filters 
+**Filters**</br>
 You can use the following operations to customize the list of investigations displayed during an investigation:
 
 
-#### ID
-A designated identification number for the investigation. You can click on the link to open the details of the investigation.
+**Triggering alert**
+The source that initiated the alert.
 
-
-#### Status
+**Status**</br>
 The current state of an investigation classifications are classified as:
-
 
 - No threats found - No malicious entities found during the investigation.
 - Partially remediated - A problem prevented the remediation of some malicious entities.
@@ -65,42 +65,38 @@ The current state of an investigation classifications are classified as:
 - Remediated - Malicious entities found were successfully remediated.
 - Terminated by system - Investigation was stopped. 
 
-#### Detection source 
+**Detection source**</br>
 Source of the alert that initiated the investigation. 
 
-#### Automated investigation
-The alert that initiated the investigation.
-
-#### Threat types
+**Threat**</br>
 The category of threat detected during the investigation.
 
 
-#### Tags
+**Tags**</br>
 Filter using manually added tags that capture the context of an investigation.
 
-#### Machines
+**Machines**</br>
 Multiple investigations can be initiated on an endpoint. You can filter the automated investigations list to zone in a specific endpoint to see other investigations related to the endpoint.
 
-#### Status details 
-You can filter based on the current status of ongoing or completed investigations.
-
-#### Endpoint groups
+**Endpoint groups**</br>
 Apply this filter to see specific machine groups that you might have created.
 
-#### Comments
+**Comments**</br>
 Select between filtering the list between investigations that have comments and those that don't.
 
 ## Analyze automated investigations 
 You can view the details of an automated investigation to see details of the investigation such as the investigation graph, alerts associated with the investigation, the endpoint that was investigated, and other information.
 
-In this view, you値l see the name of the investigation, when it started and the duration of time that has passed in the status state.
+In this view, you'll see the name of the investigation, when it started and the duration of time that has passed in the status state.
 
 The comments and tags allow you to add and review tags and comments that were added about the investigation.
+
+![Image of investigation details window](images/atp-analyze-auto-ir.png)
 
 ### Investigation page
 The investigation page gives you a quick summary on the status, alert severity, category, and detection source.
 
-You値l also have access to the following sections that help you see details of the investigation with finer granularity:
+You'll also have access to the following sections that help you see details of the investigation with finer granularity:
 
 - Investigation graph
 - Alerts
@@ -133,34 +129,37 @@ Clicking on an endpoint name brings you the machine page.
 Shows details related to threats associated with this investigation.
 
 ### Entities
-Shows details about entities such as files, process, services, drives, and IP addresses. The table details such as the number of entities that were analyzed. You値l gain insight into details as how many are infected, remediated, suspicious, verified, or determined to be clean.
+Shows details about entities such as files, process, services, drives, and IP addresses. The table details such as the number of entities that were analyzed. You'll gain insight into details as how many are infected, remediated, suspicious, verified, or determined to be clean.
 
 ### Log
-Gives a chronological detailed view of all the investigation actions taken on the alert. You値l see the action type, action, status, machine name, description of the action, comments entered by analysts who may have worked on the investigation, execution start time, duration, pending duration.
+Gives a chronological detailed view of all the investigation actions taken on the alert. You'll see the action type, action, status, machine name, description of the action, comments entered by analysts who may have worked on the investigation, execution start time, duration, pending duration.
 
 As with other sections, you can customize columns, select the number of items to show per page, and filter the log.
 
 Available filters include action type, action, status, machine name, and description.
 
-You can also click on an action to bring up the details pane where you値l see information such as the summary of the action and input data. 
+You can also click on an action to bring up the details pane where you'll see information such as the summary of the action and input data. 
 
 ### Pending actions history
 This tab is displayed if there are any pending actions on the investigation.
 
 
-
 ## Pending actions on investigations
-The pending actions view aggregates all the files and processes that require action for an investigation to proceed / completed.
+The pending actions view aggregates all the file quarantine, persistence method removal, process termination, and release file handle that require action for an investigation to proceed or be completed.
 
 Use the Customize columns drop-down menu to select columns that you'd like to show or hide. 
 
 From this view, you can also download the entire list in CSV format using the **Export to CSV** feature, specify the number of items to show per page, and navigate between pages.
 
-Selecting a file opens a panel where information such as file details, investigation details, and alert details is displayed.
+![Image of Pending actions](images/atp-pending-actions-auto-ir.png)
 
-Selecting a process also opens a panel where information such as process details, investigation details, alert details, comments and history is displayed.
+Selecting a file opens a panel where you can approve or decline the remediation. Other details such as file details, investigation details, and alert details are displayed.
 
-From either of these views, you can click on the Open investigation page link to see the investigation details.
+![Image of pending action selected](images/atp-pending-actions-file.png)
+
+Selecting other investigation numbers from the other pending actions categories also gives you access to this panel.
+
+From the panel, you can click on the Open investigation page link to see the investigation details.
 
 
 
