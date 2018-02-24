@@ -22,14 +22,16 @@ ms.date: 03/05/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-sadashboard-abovefoldlink) 
 
 
 The Security Analytics dashboard expands your visibility into the overall security posture of your organization. From this dashboard, you'll be able to quickly assess the security posture of your organization, see machines that require attention, as well as recommendations for actions to further reduce the attack surface in your organization - all in one place. From there you can take action based on the recommended configuration baselines.
 
- 
+>[!IMPORTANT]
+> This feature is available for machines on Windows 10, version  1703 or later. 
+
 
 The **Security analytics dashboard** displays a snapshot of:
 - Organizational security score
@@ -356,6 +358,7 @@ You can take the following actions to increase the overall security score of you
 ## Related topics
 - [Enable Security Analytics security controls](enable-security-analytics-windows-defender-advanced-threat-protection.md)
 - [View the Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
 
 
 
