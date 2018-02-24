@@ -37,7 +37,7 @@ When you investigate a user account entity, you'll see:
 - Alerts related to this user
 - Observed in organization (machines logged on to)
 
-![Image of the user account entity details page](images/atp-user-details-view-tdp.png)
+![Image of the user account entity details page](images/atp-user-details-view-azureatp.png)
 
 The user account entity details, Azure ATP alerts, and logged on machines sections display various attributes about the user account.
 
