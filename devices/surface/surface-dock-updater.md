@@ -9,7 +9,7 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: brecords
-ms.date: 11/03/2017
+ms.date: 02/23/2018
 ms.author: jdecker
 ---
 
@@ -115,6 +115,22 @@ Microsoft periodically updates Surface Dock Updater. To learn more about the app
 
 >[!Note]
 >Each update to Surface Dock firmware is included in a new version of Surface Dock Updater. To update a Surface Dock to the latest firmware, you must use the latest version of Surface Dock Updater.
+
+### Version 2.12.136.0
+*Release Date: 29 January 2018*
+
+This version of Surface Dock Updater adds support for the following:
+* Update for Surface Dock Main Chipset Firmware
+* Update for Surface Dock DisplayPort Firmware
+* Improved display stability for external displays when used with Surface Book or Surface Book 2
+
+Additionally, installation of this version of Surface Dock Updater on Surface Book devices includes the following:
+* Update for Surface Book Base Firmware
+* Added support for Surface Dock firmware updates with improvements targeted to Surface Book devices
+
+>[!Note]
+>Before the Surface Dock firmware update applied by Surface Dock Updater v2.12.136.0 will take effect on a Surface Book device, a firmware update for the Surface Book Base is required. If you install Surface Dock Updater v2.12.136.0 on a Surface Book and update an attached Surface Dock from that same device, the firmware of the Surface Book Base will automatically be updated when installing the Surface Dock Updater. However, if you update a Surface Dock using Surface Dock Updater v2.12.136.0 on different device, and then connect that Surface Dock to a Surface Book where Surface Dock Updater v2.12.136.0 has not been installed, the benefits of the updated Surface Dock will not be enabled. To enable the benefits of the updated Surface Dock on a Surface Book device, Surface Book Base firmware must also be updated by installing Surface Dock Updater v2.12.136.0 on the Surface Book device. Surface Book Base firmware update is not required on a Surface Book 2 device.
+
 
 ### Version 2.9.136.0
 *Release date: November 3, 2017*
