@@ -128,6 +128,8 @@ You must configure the signature updates on the Windows Defender ATP endpoints w
 
 When Windows Defender Antivirus is not the active antimalware in your organization and you use the Windows Defender ATP service, Windows Defender Antivirus goes on passive mode. If your organization has disabled Windows Defender Antivirus through group policy or other methods, machines that are onboarded to Windows Defender ATP must be excluded from this group policy.
 
+Depending on the server version you're onboarding, you might need to configure a Group Policy setting to run on passive mode. For more information, see [Configure server endpoints](configure-server-endpoints-windows-defender-advanced-threat-protection.md).
+
 For more information, see [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
 
 ## Windows Defender Antivirus Early Launch Antimalware (ELAM) driver is enabled
