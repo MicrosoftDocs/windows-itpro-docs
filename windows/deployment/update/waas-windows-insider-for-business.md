@@ -50,32 +50,50 @@ Below are additional details to accomplish the steps described above.
 
 ## Register to the Windows Insider Program for Business
 
-Registration in the Windows Insider Program for Business can be done individually per user or for an entire organization: 
+The first step to installing a Windows 10 Insider Preview build is to register as a Windows Insider. You and your users have two registration options. 
 
-### Individual registration
-
->[!IMPORTANT]
->This step is a prerequisite to register your organization's Azure AD domain. 
-
-Navigate to the [**Getting Started**](https://insider.windows.com/en-us/getting-started/) page on [Windows Insider](https://insider.windows.com), go to **Register your organization account** and follow the instructions.
+### Register using your work account (recommended) 
+•	Registering with your work account in Azure Active Directory (AAD) is required to submit feedback on behalf of your organization and manage Insider Preview builds on other PCs in your domain.   
 
 >[!NOTE]
->Make sure your device is [connected to your company's Azure AD subscription](waas-windows-insider-for-business-faq.md#connected-to-aad). 
+>Requires Windows 10 Version 1703 or later. Confirm by going to Settings>System>About. If you do not have an AAD account, [find out how to get an Azure Active Directory tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-howto-tenant).
 
-### Organizational registration
+### Register your personal account
+Use the same account that you use for other Microsoft services. If you don’t have a Microsoft account, it is easy to get one. [Get a Microsoft account](https://account.microsoft.com/account).
 
-This method enables to your register your entire organization to the Windows Insider Program for Business, to avoid having to register each individual user.
+## Install Windows Insider Preview Builds
+You can install Windows 10 Insider Preview builds directly on individual PCs, manage installation across multiple PCs in an organization, or install on a virtual machine. 
 
->[!IMPORTANT] 
->The account performing these steps has to first be registered to the program individually. Additionally, Global Administrator privileges on the Azure AD domain are required.
+### Install on an individual PC
 
-1. On the [Windows Insider](https://insider.windows.com) website, go to **For Business > Getting Started** to [register your organizational Azure AD account](https://insider.windows.com/en-us/insidersigninaad/).
-2. **Register your domain**. Rather than have each user register individually for Insider Preview builds, administrators can simply [register their domain](https://insider.windows.com/en-us/for-business-organization-admin/) and control settings centrally.</br>**Note:** The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register the domain.
+1.	Open  [Windows Insider Program settings](ms-settings:windowsinsider) (On your Windows 10 PC, go to Start > Settings > Update & security > Windows Insider Program). Note: To see this setting, you need to have administrator rights to your PC.
+2.	Link your Microsoft or work account that you used to register as a Windows Insider. 
+3.	Follow the prompts. 
 
->[!NOTE]
->At this point, the Windows Insider Program for Business only supports [Azure Active Directory (Azure AD)](/azure/active-directory/active-directory-whatis) (and not Active Directory on premises) as a corporate authentication method.
->
->If your company is currently not using Azure AD – but has a paid subscription to Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services – you have a free subscription to Microsoft Azure Active Directory. This subscription can be used to create users for enrollment in the Windows Insider Program for Business.
+(images/WIP4Biz_Prompts.png)
+
+### Install across multiple PCs
+
+Administrators can install and manage Insider Preview builds centrally across multiple PCs within their domain. Here’s how: 
+
+1.	**Register your domain with the Windows Insider Program**
+To register a domain, you must be registered in the Windows Insider Program with your work account in Azure Active Directory and you must be assigned a **Global Administrator** role on that Azure AD domain. Also requires Windows 10 Version 1703 or later. 
+
+**Register your domain**. Rather than have each user register individually for Insider Preview builds, administrators can simply [register their domain](https://insider.windows.com/en-us/for-business-organization-admin/) and control settings centrally.</br>**Note:** The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register the domain.
+
+>[!Notes]
+>•	At this point, the Windows Insider Program for Business only supports [Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-whatis) (and not Active Directory on premises) as a corporate authentication method. 
+>•	If your company has a paid subscription to Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services – you have a free subscription to Microsoft Azure Active Directory. This subscription can be used to create users for enrollment in the Windows Insider Program for Business.
+>•	If you do not have an AAD account, install Insider Preview builds on individual PCs with a registered Microsoft account.    
+
+2. **Apply Policies**
+Once you have registered your enterprise domain, you can control how and when devices receive Windows Insider Preview builds on their devices. See: [How to manage Windows 10 Insider Preview builds across your organization](https://docs.microsoft.com/en-us/windows/deployment/update/waas-windows-insider-for-business).
+
+### Install on a virtual machine. 
+This option enables you to run Insider Preview builds without changing the Windows 10 production build already running on a PC.  
+•	For guidance on setting up virtual machines on your PC see: [Introduction to Hyper-V on Windows 10](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/). 
+•	To download the latest Insider Preview build to run on your virtual machine see: 
+[Windows Insider Preview downloads](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewadvanced) 
 
 ## Manage Windows Insider Preview builds
 
