@@ -198,13 +198,4 @@ You can also edit and delete groups.
 
 By default, there will always be a group for ungrouped machines. This group is designed to aggregate all the machines that didn’t meet any of the conditions set in the other machine groups. The default remediation for this group is Require approval, but you can also define the remediation level for the group.
 
-
-
-
-
-
-
-
-
-
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-portalaccess-belowfoldlink)
