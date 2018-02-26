@@ -81,7 +81,7 @@ ms.date: 01/30/2018
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. List of exceptions to the blocked website URLs (with wildcard support). This is used to configure URLs kiosk browsers are allowed to navigate to, which are a subset of the blocked URLs.
+Added in Windows 10, version 1803. List of exceptions to the blocked website URLs (with wildcard support). This is used to configure URLs kiosk browsers are allowed to navigate to, which are a subset of the blocked URLs.
 
 <!--/Description-->
 <!--/Policy-->
@@ -125,7 +125,7 @@ Added in Windows 10, next major update. List of exceptions to the blocked websit
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. List of blocked website URLs (with wildcard support). This is used to configure blocked URLs kiosk browsers cannot navigate to.
+Added in Windows 10, version 1803. List of blocked website URLs (with wildcard support). This is used to configure blocked URLs kiosk browsers cannot navigate to.
 
 <!--/Description-->
 <!--/Policy-->
@@ -169,7 +169,7 @@ Added in Windows 10, next major update. List of blocked website URLs (with wildc
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. Configures the default URL kiosk browsers to navigate on launch and restart.
+Added in Windows 10, version 1803. Configures the default URL kiosk browsers to navigate on launch and restart.
 
 <!--/Description-->
 <!--/Policy-->
@@ -213,7 +213,7 @@ Added in Windows 10, next major update. Configures the default URL kiosk browser
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. Enable/disable kiosk browser's home button.
+Added in Windows 10, version 1803. Enable/disable kiosk browser's home button.
 
 <!--/Description-->
 <!--/Policy-->
@@ -257,7 +257,7 @@ Added in Windows 10, next major update. Enable/disable kiosk browser's home butt
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. Enable/disable kiosk browser's navigation buttons (forward/back).
+Added in Windows 10, version 1803. Enable/disable kiosk browser's navigation buttons (forward/back).
 
 <!--/Description-->
 <!--/Policy-->
@@ -301,7 +301,7 @@ Added in Windows 10, next major update. Enable/disable kiosk browser's navigatio
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. Amount of time in minutes the session is idle until the kiosk browser restarts in a fresh state.  
+Added in Windows 10, version 1803. Amount of time in minutes the session is idle until the kiosk browser restarts in a fresh state.  
 
 The value is an int 1-1440 that specifies the amount of minutes the session is idle until the kiosk browser restarts in a fresh state. The default value is empty which means there is no idle timeout within the kiosk browser.
 

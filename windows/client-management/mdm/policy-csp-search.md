@@ -154,7 +154,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. This specifies whether the Cortana consent page can appear in the Azure Active Directory (AAD) device out-of-box-experience (OOBE) flow. If this policy is left in its default state, Cortana will not be shown in the AAD OOBE flow. If you opt-in to this policy, then the Cortana consent page will appear in the AAD OOBE flow..
+Added in Windows 10, version 1803. This specifies whether the Cortana consent page can appear in the Azure Active Directory (AAD) device out-of-box-experience (OOBE) flow. If this policy is left in its default state, Cortana will not be shown in the AAD OOBE flow. If you opt-in to this policy, then the Cortana consent page will appear in the AAD OOBE flow..
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -585,7 +585,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. Don't search the web or display web results in Search.
+Added in Windows 10, version 1803. Don't search the web or display web results in Search.
 
 This policy setting allows you to control whether or not Search can perform queries on the web, and if the web results are displayed in Search.
 If you enable this policy setting, queries won't be performed on the web and web results won't be displayed when a user performs a query in Search.

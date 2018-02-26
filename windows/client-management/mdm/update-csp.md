@@ -76,7 +76,7 @@ The following diagram shows the Update configuration service provider in tree fo
 <p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="failedupdates-failed-update-guid-revisionnumber"></a>**FailedUpdates/*Failed Update Guid*/RevisionNumber**  
-<p style="margin-left: 20px">Added in the next major update of Windows 10. The revision number for the update that must be passed in server to server sync to get the metadata for the update.
+<p style="margin-left: 20px">Added in the Windows 10, version 1803. The revision number for the update that must be passed in server to server sync to get the metadata for the update.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
@@ -91,7 +91,7 @@ The following diagram shows the Update configuration service provider in tree fo
 <p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="installedupdates-installed-update-guid-revisionnumber"></a>**InstalledUpdates/*Installed Update Guid*/RevisionNumber**  
-<p style="margin-left: 20px">Added in the next major update of Windows 10. The revision number for the update that must be passed in server to server sync to get the metadata for the update.
+<p style="margin-left: 20px">Added in Windows 10, version 1803. The revision number for the update that must be passed in server to server sync to get the metadata for the update.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
@@ -135,7 +135,7 @@ The following diagram shows the Update configuration service provider in tree fo
 <p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="pendingrebootupdates-pending-reboot-update-guid-revisionnumber"></a>**PendingRebootUpdates/*Pending Reboot Update Guid*/RevisionNumber**  
-<p style="margin-left: 20px">Added in the next major update of Windows 10. The revision number for the update that must be passed in server to server sync to get the metadata for the update.
+<p style="margin-left: 20px">Added in Windows 10, version 1803. The revision number for the update that must be passed in server to server sync to get the metadata for the update.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
