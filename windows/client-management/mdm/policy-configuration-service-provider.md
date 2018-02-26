@@ -1083,6 +1083,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-experience.md#experience-allowwindowsspotlightonactioncenter" id="experience-allowwindowsspotlightonactioncenter">Experience/AllowWindowsSpotlightOnActionCenter</a>
   </dd>
   <dd>
+    <a href="./policy-csp-experience.md#experience-allowwindowsspotlightonsettings" id="experience-allowwindowsspotlightonsettings">Experience/AllowWindowsSpotlightOnSettings</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-experience.md#experience-allowwindowsspotlightwindowswelcomeexperience" id="experience-allowwindowsspotlightwindowswelcomeexperience">Experience/AllowWindowsSpotlightWindowsWelcomeExperience</a>
   </dd>
   <dd>

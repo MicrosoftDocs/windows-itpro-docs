@@ -408,7 +408,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. Configures the use of passwords for Windows features.
+Added in Windows 10, version 1803. Configures the use of passwords for Windows features.
 
 > [!Note]
 > This policy is only supported in Windows 10 S.
