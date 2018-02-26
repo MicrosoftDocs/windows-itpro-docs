@@ -54,6 +54,17 @@ The integration with Azure Advanced Threat Protection allows you to pivot direct
 >[!NOTE]
 >You'll need to have the appropriate license to enable this feature. 
 
+### Enable the Windows Defender ATP integration from the Azure ATP portal
+To receive contextual machine integration in Azure ATP, you'll also need to enable the feature in the Azure ATP portal.
+
+1. Login to the [Azure portal](https://portal.atp.azure.com/) with a Global Administrator or Security Administrator role.
+
+2. Click **Create a workspace** or use your primary workspace.
+
+3. Toggle the Integration setting to **On** and click **Save**.
+
+When you complete the integration steps on both portals, you'll be able to see relevant alerts in the machine details or user details page.
+
 ## Office 365 Threat Intelligence connection
 This feature is only available if you have an active Office 365 E5 or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
 
