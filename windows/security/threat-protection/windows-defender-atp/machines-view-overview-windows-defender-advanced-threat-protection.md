@@ -54,6 +54,10 @@ You can use the following filters to limit the list of machines displayed during
 - 30 days
 - 6 months
 
+**Risk level**</br>
+Machine risk levels are quick indicators of the active threats that machines could be exposed to. A machine's risk level is determined using the number of active alerts and their severity levels. You can influence a machine's risk level by resolving associated alerts manually or automatically.
+
+
 **OS Platform**</br>
 - Windows 10
 - Windows Server 2012 R2
@@ -98,7 +102,8 @@ You can filter the list based on the grouping and tagging that you've added to i
 ## Export machine list to CSV
 You can  download a full list of all the machines in your organization, in CSV format. Click the **Export to CSV** button to download the entire list as a CSV file.
 
-**Note**: Exporting the list depends on the number of machines in your organization. It might take a significant amount of time to download, depending on how large your organization is.
+>[NOTE]
+> Exporting the list depends on the number of machines in your organization. It might take a significant amount of time to download, depending on how large your organization is.
 Exporting the list in CSV format displays the data in an unfiltered manner. The CSV file will include all machines in the organization, regardless of any filtering applied in the view itself.
 
 ## Sort the Machines list
