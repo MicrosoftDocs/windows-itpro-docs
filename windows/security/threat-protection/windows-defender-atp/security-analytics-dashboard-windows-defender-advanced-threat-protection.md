@@ -272,7 +272,7 @@ For an endpoint to be considered "well configured", Windows Defender Firewall mu
 >[!IMPORTANT]
 >This security control is only applicable for endpoints with Windows 10, version 1709 or later.
 
-#### Minimum baseline configuration setting for Defender Firewall 
+#### Minimum baseline configuration setting for Windows Defender Firewall 
 
 - Windows Defender Firewall is turned on for all network connections
 - Secure domain profile by enabling Windows Defender Firewall and ensure that Inbound connections is set to Blocked
