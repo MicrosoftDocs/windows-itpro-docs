@@ -99,6 +99,18 @@ After completing the steps in the Before you begin section, you can proceed with
 
 3.	Click **Accept**. Power BI Desktop will start downloading your Windows Defender ATP data from Microsoft Graph. When all data has been downloaded, you can proceed to customize your reports.
 
+
+
+## Using the Power BI reports
+There are a couple of tabs on the report that's generated:
+
+- Machine and alerts 
+- Investigation results and action center
+- Security analytics
+
+In general, if you know of a specific threat name, CVE, or KB, you can identify machines with upatched vulnerabilities that might be leveraged by threats. This report also helps you determine whether machine-level mitigations are configured correctly on the machines and prioritize those that might need attention.
+
+
 ## Mashup Windows Defender ATP data with other data sources
 You can use Power BI Desktop to analyse data from Windows Defender ATP and mash that data up with other data sources to gain better security perspective in your organization.
 
