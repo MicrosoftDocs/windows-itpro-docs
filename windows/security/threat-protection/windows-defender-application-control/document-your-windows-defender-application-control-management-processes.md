@@ -1,6 +1,6 @@
 ---
 title: Document your application control management processes (Windows 10)
-description: This planning topic describes the AppLocker policy maintenance information to record for your design document.
+description: This planning topic describes the WDAC policy maintenance information to record for your design document.
 ms.assetid: 6397f789-0e36-4933-9f86-f3f6489cf1fb
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -16,19 +16,16 @@ ms.date: 09/21/2017
  -   Windows 10 
  -   Windows Server
 
-This planning topic describes the AppLocker policy maintenance information to record for your design document.
+This planning topic describes the Windows Defender Application Control (WDAC) policy maintenance information to record for your design document.
 
 ## Record your findings
 
-To complete this AppLocker planning document, you should first complete the following steps:
+To complete this planning document, you should first complete the following steps:
 
-1.  [Determine your application control objectives](determine-your-application-control-objectives.md)
-2.  [Create a list of apps deployed to each business group](create-list-of-applications-deployed-to-each-business-group.md)
 3.  [Select the types of rules to create](select-types-of-rules-to-create.md)
-4.  [Determine the Group Policy structure and rule enforcement](determine-group-policy-structure-and-rule-enforcement.md)
-5.  [Plan for AppLocker policy management](plan-for-applocker-policy-management.md)
+5.  [Plan for AppLocker policy management](plan-windows-defender-application-control-management.md)
 
-The three key areas to determine for AppLocker policy management are:
+The three key areas to determine for WDAC policy management are:
 
 1.  Support policy
 
@@ -42,7 +39,7 @@ The three key areas to determine for AppLocker policy management are:
 
     Detail how rules will be added to the policy, in which Group Policy Object (GPO) the rules should be defined, and how to modify rules when apps are retired, updated, or added.
 
-The following table contains the added sample data that was collected when determining how to maintain and manage AppLocker policies.
+The following table contains the added sample data that was collected when determining how to maintain and manage WDAC policies.
 
 <table style="width:100%;">
 <colgroup>
@@ -60,7 +57,7 @@ The following table contains the added sample data that was collected when deter
 <tr class="header">
 <th align="left">Business group</th>
 <th align="left">Organizational unit</th>
-<th align="left">Implement AppLocker?</th>
+<th align="left">Implement WDAC?</th>
 <th align="left">Apps</th>
 <th align="left">Installation path</th>
 <th align="left">Use default rule or define new rule condition</th>
@@ -101,7 +98,7 @@ The following table contains the added sample data that was collected when deter
 <td align="left"><p>C:\Program Files\Woodgrove\HR\Checkcut.exe</p></td>
 <td align="left"><p>File is signed; create a publisher condition</p></td>
 <td align="left"><p>Allow</p></td>
-<td align="left"><p>HR-AppLockerHRRules</p></td>
+<td align="left"><p>HR-WDACHRRules</p></td>
 <td align="left"><p>Web help</p></td>
 </tr>
 <tr class="even">
@@ -141,7 +138,7 @@ The following table contains the added sample data that was collected when deter
 </tbody>
 </table>
  
-The following two tables illustrate examples of documenting considerations to maintain and manage AppLocker policies.
+The following two tables illustrate examples of documenting considerations to maintain and manage WDAC policies.
 
 **Event processing policy**
 

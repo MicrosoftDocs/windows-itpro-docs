@@ -1,6 +1,6 @@
 ---
 title: Create your Windows Defender Application Control (WDAC) planning document (Windows 10)
-description: This planning topic for the IT professional summarizes the information you need to research and include in your AppLocker planning document.
+description: This planning topic for the IT professional summarizes the information you need to research and include in your WDAC planning document.
 ms.assetid: 41e49644-baf4-4514-b089-88adae2d624e
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -25,8 +25,7 @@ The design process and the planning document help you investigate application us
 You should have completed these steps in the design and planning process:
 
 1.  [Select types of rules to create](select-types-of-rules-to-create.md)
-2.  [Determine Group Policy structure and rule enforcement](determine-group-policy-structure-and-rule-enforcement.md)
-3.  [Plan for WDAC policy management](document-your-windows-defender-application-control-management-processes.md)
+2.  [Plan for WDAC policy management](document-your-windows-defender-application-control-management-processes.md)
 
 ### WDAC planning document contents
 
