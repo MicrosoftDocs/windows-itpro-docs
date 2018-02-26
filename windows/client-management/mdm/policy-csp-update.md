@@ -821,7 +821,7 @@ The following list shows the supported values:
 
 <!--/SupportedSKUs-->
 <!--Description-->
-Added in Windows 10, next major update. Enable IT admin to configure feature update uninstall period. Values range 2 - 60 days. Default is 10 days.
+Added in Windows 10, version 1803. Enable IT admin to configure feature update uninstall period. Values range 2 - 60 days. Default is 10 days.
 
 <!--/Description-->
 <!--/Policy-->

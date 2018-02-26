@@ -49,16 +49,16 @@ Supported operation is Exec.
 Added in Windows 10, version 1709.  Exec on this node will perform a remote reset on the device and persist user accounts and data. The return status code shows whether the device accepted the Exec command.
 
 <a href="" id="automaticredeployment"></a>**AutomaticRedeployment**  
-Added in Windows 10, next major update. Node for the Automatic Redeployment operation.
+Added in Windows 10, version 1803. Node for the Automatic Redeployment operation.
 
 <a href="" id="doautomaticredeployment"></a>**AutomaticRedeployment/doAutomaticRedeployment**  
-Added in Windows 10, next major update. Exec on this node triggers Automatic Redeployment operation. This works like PC Reset, similar to other existing nodes in this RemoteWipe CSP, except that it keeps the device enrolled in Azure AD and MDM, keeps Wi-Fi profiles, and a few other settings like region, language, keyboard.
+Added in Windows 10, version 1803. Exec on this node triggers Automatic Redeployment operation. This works like PC Reset, similar to other existing nodes in this RemoteWipe CSP, except that it keeps the device enrolled in Azure AD and MDM, keeps Wi-Fi profiles, and a few other settings like region, language, keyboard.
 
 <a href="" id="lasterror"></a>**AutomaticRedeployment/LastError**  
-Added in Windows 10, next major update. Error value, if any, associated with Automatic Redeployment operation (typically an HRESULT).
+Added in Windows 10, version 1803. Error value, if any, associated with Automatic Redeployment operation (typically an HRESULT).
 
 <a href="" id="status"></a>**AutomaticRedeployment/Status**  
-Added in Windows 10, next major update. Status value indicating current state of an Automatic Redeployment operation. 
+Added in Windows 10, version 1803. Status value indicating current state of an Automatic Redeployment operation. 
 
 Supported values:  
 

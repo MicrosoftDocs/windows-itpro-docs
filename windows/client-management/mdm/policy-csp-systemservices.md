@@ -80,7 +80,7 @@ ms.date: 01/30/2018
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
 <!--/Policy-->
@@ -123,7 +123,7 @@ Added in Windows 10, next major update. This setting determines whether the serv
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
 <!--/Policy-->
@@ -166,7 +166,7 @@ Added in Windows 10, next major update. This setting determines whether the serv
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
 <!--/Policy-->
@@ -209,7 +209,7 @@ Added in Windows 10, next major update. This setting determines whether the serv
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
 <!--/Policy-->
@@ -252,7 +252,7 @@ Added in Windows 10, next major update. This setting determines whether the serv
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
 <!--/Policy-->
@@ -295,7 +295,7 @@ Added in Windows 10, next major update. This setting determines whether the serv
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
 <!--/Policy-->

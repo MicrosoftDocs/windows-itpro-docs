@@ -237,7 +237,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. This policy allows you to delay the use of an HTTP source in a background download that is allowed to use peer-to-peer.
+Added in Windows 10, version 1803. This policy allows you to delay the use of an HTTP source in a background download that is allowed to use peer-to-peer.
 
 After the max delay is reached, the download will resume using HTTP, either downloading the entire payload or complementing the bytes that could not be downloaded from peers. Note that a download that is waiting for peer sources, will appear to be stuck for the end user. The recommended value is 1 hour (3600).
 
@@ -282,7 +282,7 @@ After the max delay is reached, the download will resume using HTTP, either down
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. This policy allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use peer-to-peer.
+Added in Windows 10, version 1803. This policy allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use peer-to-peer.
 
 After the max delay has reached, the download will resume using HTTP, either downloading the entire payload or complementing the bytes that could not be downloaded from Peers.
 
@@ -447,7 +447,7 @@ This Policy specifies an arbitrary group ID that the device belongs to. Use this
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. Set this policy to restrict peer selection to a specific source. Options available are: 1 = AD Site, 2 = Authenticated domain SID, 3 = DHCP Option ID, 4 = DNS Suffix
+Added in Windows 10, version 1803. Set this policy to restrict peer selection to a specific source. Options available are: 1 = AD Site, 2 = Authenticated domain SID, 3 = DHCP Option ID, 4 = DNS Suffix
 
 When set, the Group ID will be assigned automatically from the selected source.
 
@@ -1050,7 +1050,7 @@ The default value is 20.
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. Specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for background downloads.
+Added in Windows 10, version 1803. Specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for background downloads.
 
 Note that downloads from LAN peers will not be throttled even when this policy is set.
 
@@ -1106,7 +1106,7 @@ This policy is deprecated. Use [DOPercentageMaxForeDownloadBandwidth](#deliveryo
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. Specifies the maximum foreground download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads.
+Added in Windows 10, version 1803. Specifies the maximum foreground download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads.
 
 Note that downloads from LAN peers will not be throttled even when this policy is set.
 
@@ -1151,7 +1151,7 @@ Note that downloads from LAN peers will not be throttled even when this policy i
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. Set this policy to restrict peer selection via selected option. 
+Added in Windows 10, version 1803. Set this policy to restrict peer selection via selected option. 
 Options available are: 1=Subnet mask (more options will be added in a future release).
 
 Option 1 (Subnet mask) applies to both Download Mode LAN (1) and Group (2).
@@ -1203,7 +1203,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. Specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth. 
+Added in Windows 10, version 1803. Specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth. 
  
 Note that downloads from LAN peers will not be throttled even when this policy is set.
 
@@ -1256,7 +1256,7 @@ This policy allows an IT Admin to define the following:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. Specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth. 
+Added in Windows 10, version 1803. Specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth. 
  
 Note that downloads from LAN peers will not be throttled even when this policy is set.
 

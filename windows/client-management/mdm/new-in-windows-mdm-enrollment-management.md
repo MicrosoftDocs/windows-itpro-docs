@@ -1405,7 +1405,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tbody>
 <tr>
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
-<td style="vertical-align:top"><p>Added the following new policies for Windows 10, next major update:</p>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1803:</p>
 <ul>
 <li>Display/DisablePerProcessDpiForApps</li>
 <li>Display/EnablePerProcessDpi</li>
