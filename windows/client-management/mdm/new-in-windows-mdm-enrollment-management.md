@@ -1410,6 +1410,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Display/DisablePerProcessDpiForApps</li>
 <li>Display/EnablePerProcessDpi</li>
 <li>Display/EnablePerProcessDpiForApps</li>
+<li>Experience/AllowWindowsSpotlightOnSettings</li>
 <ul>
 </td></tr>
 <tr class="odd">
