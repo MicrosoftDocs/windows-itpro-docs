@@ -34,7 +34,7 @@ This page provides detailed steps to troubleshoot issues you might encounter.
 ## Learn how to get a new client secret
 If your client secret expires or if you've misplaced the copy provided when you were enabling the SIEM tool application,  you'll need to get a new secret.
 
-1. Login to the [Azure management portal](https://ms.portal.azure.com).
+1. Login to the [Azure management portal](https://portal.azure.com).
 
 2. Select **Azure Active Directory**.
 
