@@ -15,18 +15,7 @@ ms.date: 10/20/2017
 -   Windows 10
 -   Windows Server 2016
 
-Windows Defender Application Control (WDAC) provides control over a computer running Windows 10 by specifying whether a driver or application is trusted and can be run. For an overview of WDAC, see:
-- [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md#how-windows-defender-device-guard-features-help-protect-against-threats) in "Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control."
-- [Windows Defender Application Control policy formats and signing](requirements-and-deployment-planning-guidelines-for-device-guard.md#windows-defender-application-control-policy-formats-and-signing) in "Requirements and deployment planning guidelines for Windows Defender Device Guard."
-
-If you already understand the basics of WDAC and want procedures for creating, auditing, and merging WDAC policies, see [Deploy Windows Defender Application Control: steps](steps-to-deploy-windows-defender-application-control.md).
-
-This topic includes the following sections:
-
-- [Overview of the process of creating Windows Defender Application Control policies](#overview-of-the-process-of-creating-windows-defender-application-control-policies): Helps familiarize you with the process described in this and related topics.
-- [Windows Defender Application Control policy rules](#windows-defender-application-control-policy-rules): Describes one key element you specify in a policy, the *policy rules*, which control options such as audit mode or whether user mode code integrity (UMCI) is enabled in a WDAC policy.
-- [Windows Defender Application Control file rule levels](#windows-defender-application-control-file-rule-levels): Describes the other key element you specify in a policy, the *file rules* (or *file rule levels*), which specify the level at which applications will be identified and trusted.
-- [Example of file rule levels in use](#example-of-file-rule-levels-in-use): Gives an example of how file rule levels can be applied.
+Windows Defender Application Control (WDAC) provides control over a computer running Windows 10 by using policies that specify whether a driver or application is trusted and can be run. A policy includes *policy rules* that control options such as audit mode or whether user mode code integrity (UMCI) is enabled in a WDAC policy, and *file rules* (or *file rule levels*) that specify the level at which applications will be identified and trusted.
 
 ## Overview of the process of creating Windows Defender Application Control policies
 
@@ -40,9 +29,7 @@ If you plan to use an internal CA to sign catalog files or WDAC policies, see th
 
 ## Windows Defender Application Control policy rules
 
-WDAC policies include *policy rules*, which control options such as audit mode or whether UMCI is enabled in a WDAC policy. You can modify these options in a new or existing WDAC policy. (For information about *file rules*, which specify the level at which applications will be identified and trusted, see the next section, [Windows Defender Application Control file rule levels](#windows-defender-application-control-file-rule-levels).)
-
-To modify the policy rule options of an existing WDAC policy, use the [Set-RuleOption](https://technet.microsoft.com/library/mt634483.aspx) Windows PowerShell cmdlet. Note the following examples of how to use this cmdlet to add and remove a rule option on an existing WDAC policy:
+To modify the policy rule options of an existing WDAC policy, use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption). Note the following examples of how to use this cmdlet to add and remove a rule option on an existing WDAC policy:
 
 -   To ensure that UMCI is enabled for a WDAC policy that was created with the `-UserPEs` (user mode) option, add rule option 0 to an existing policy by running the following command:
 
@@ -54,12 +41,9 @@ To modify the policy rule options of an existing WDAC policy, use the [Set-RuleO
 
     ` Set-RuleOption -FilePath <Path to policy> -Option 0 -Delete`
 
-You can set several rule options within a WDAC policy. To display a list of rule options, you can type **Set-
-RuleOption -Help** in a Windows PowerShell session. Table 2 describes each rule option. 
+You can set several rule options within a WDAC policy. Table 2 describes each rule option. 
 
-> **Note**&nbsp;&nbsp;**Enabled:Audit Mode** is an important rule option. We recommend that you use this option for a period of time with all new WDAC policies, because it allows you to test them before you enforce them. With audit mode, no application is blocked—the policy just logs an event whenever an application outside the policy is started. To expand the policy so that (when enforced) it will allow these applications, you can use Windows PowerShell commands to capture the needed policy information from the event log, and then merge that information into the existing policy.
-
-> The mode—audit mode or enforced mode—is set by including or deleting **Enabled:Audit Mode** in the WDAC policy. When this option is deleted, the policy runs in enforced mode.
+> [!NOTE] We recommend that you use **Enabled:Audit Mode** initially because it allows you to test new WDAC policies before you enforce them. With audit mode, no application is blocked—the policy just logs an event whenever an application outside the policy is started. allow these applications, you can capture the policy information from the event log, and then merge that information into the existing policy. When the **Enabled:Audit Mode** is deleted, the policy runs in enforced mode.
 
 **Table 2. Windows Defender Application Control policy - policy rule options**
 
