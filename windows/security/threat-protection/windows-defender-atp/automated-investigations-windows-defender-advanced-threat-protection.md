@@ -23,7 +23,7 @@ ms.date: 03/15/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)
 
@@ -49,7 +49,7 @@ From this view, you can also download the entire list in CSV format using the **
 You can use the following operations to customize the list of investigations displayed during an investigation:
 
 
-**Triggering alert**
+**Triggering alert**</br>
 The source that initiated the alert.
 
 **Status**</br>
