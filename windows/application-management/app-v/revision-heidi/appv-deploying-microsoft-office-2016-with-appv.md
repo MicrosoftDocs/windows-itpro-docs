@@ -381,7 +381,7 @@ Many additional settings can be changed through modifying the Deployment Configu
 
 ### Managing Office 2016 package upgrades
 
-To upgrade an Office 2016 package, use the Office Deployment Tool. To upgrade a previously deployed Office 2016 package, perform the following steps.
+To upgrade an Office 2016 package, use the Office Deployment Tool. To upgrade a previously deployed Office 2016 package, perform the steps outlined in the following section.
 
 #### How to upgrade a previously deployed Office 2016 package
 
@@ -389,26 +389,26 @@ To upgrade an Office 2016 package, use the Office Deployment Tool. To upgrade a 
 
     >[!NOTE]
     >Office App-V packages have two Version IDs:
-    > - An Office 2016 App-V Package Version ID that is unique across all packages created using the Office Deployment Tool.
-    > - A second App-V Package Version ID, x.x.x.x for example, in the AppX manifest that will only change if there is a new version of Office itself. For example, if a new Office 2016 release with upgrades is available, and a package is created through the Office Deployment Tool to incorporate these upgrades, the X.X.X.X version ID will change to reflect that the Office version itself has changed. The App-V server will use the X.X.X.X version ID to differentiate this package and recognize that it contains new upgrades to the previously published package, and as a result, publish it as an upgrade to the existing Office 2016 package.
-2. Globally publish the newly created Office 2016 App-V Packages onto computers where you would like to apply the new updates. Since the new package has the same lineage of the older Office 2016 App-V Package, publishing the new package with the updates will only apply the new changes to the old package, and thus will be fast.
-3. Upgrades will be applied in the same manner of any globally published App-V Packages. Because applications will probably be in use, upgrades might be delayed until the computer is rebooted.
+       - An Office 2016 App-V Package Version ID that is unique across all packages created using the Office Deployment Tool.
+       - A second App-V Package Version ID, formatted as X.X.X.X, in the AppX manifest that will only change if there is a new version of Office itself. For example, if a new Office 2016 release with upgrades is available, and a package is created through the Office Deployment Tool to incorporate these upgrades, the X.X.X.X version ID will change to reflect the new version of Office. The App-V server will use the X.X.X.X version ID to differentiate this package and recognize that it contains new upgrades to the previously published package, and as a result, publish it as an upgrade to the existing Office 2016 package.
+2. Globally publish the newly created Office 2016 App-V Packages onto the computers you want to apply the new updates to. Since the new package has the same lineage as the older Office 2016 App-V Package, publishing will be fast, as publishing the new package with the updates only applies the new changes to the old package.
+3. Upgrades will be applied in the same manner of any globally published App-V packages. Because applications will probably be in use, upgrades might be delayed until the computer is rebooted.
 
 ### Deploying Visio 2016 and Project 2016 with Office
 
 The following table describes the requirements and options for deploying Visio 2016 and Project 2016 with Office.
 
-| **Task**            | **Details**   |
+| Task                | Details       |
 |---------------------|---------------|
 | How do I package and publish Visio 2016 and Project 2016 with Office? | You must include Visio 2016 and Project 2016 in the same package with Office.<br>If you are not deploying Office, you can create a package that contains Visio and/or Project, as long as you follow the packaging, publishing, and deployment requirements described in this topic.  |
-| How can I deploy Visio 2016 and Project 2016 to specific users?       | Use one of the following methods:<br>**To create two different packages and deploy each one to a different group of users**:<br>Create and deploy the following packages:<br>- A package that contains only Office - deploy to computers whose users need only Office.<br>- A package that contains Office, Visio, and Project - deploy to computers whose users need all three applications.<br><br>**To create only one package for the whole organization, or create a package intended for users who share computers**:<br>Follow these steps:<br>1. Create a package that contains Office, Visio, and Project.<br>2. Deploy the package to all users.<br>3. Use [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) to prevent specific users from using Visio and Project. |
+| How can I deploy Visio 2016 and Project 2016 to specific users?       | Use one of the following methods:<br>**To create two different packages and deploy each one to a different group of users**:<br>Create and deploy the following packages:<br>- A package that contains only Office—deploy to computers whose users need only Office.<br>- A package that contains Office, Visio, and Project—deploy to computers whose users need all three applications.<br><br>**To create only one package for the whole organization, or to create a package intended for users who share computers**:<br>1. Create a package that contains Office, Visio, and Project.<br>2. Deploy the package to all users.<br>3. Use [AppLocker](https://docs.microsoft.com/en-us/windows/security/threat-protection/applocker/applocker-overview) to prevent specific users from using Visio and Project. |
 
 ## Related topics
 
-- [Deploying App-V for Windows 10](appv-deploying-appv.md)
-- [Deploying Microsoft Office 2013 by Using App-V](appv-deploying-microsoft-office-2013-with-appv.md)
-- [Deploying Microsoft Office 2010 by Using App-V](appv-deploying-microsoft-office-2010-wth-appv.md)
-- [Office 2016 Deployment Tool for Click-to-Run](https://www.microsoft.com/download/details.aspx?id=49117)
+* [Deploying App-V for Windows 10](appv-deploying-appv.md)
+* [Deploying Microsoft Office 2013 by using App-V](appv-deploying-microsoft-office-2013-with-appv.md)
+* [Deploying Microsoft Office 2010 by using App-V](appv-deploying-microsoft-office-2010-wth-appv.md)
+* [Office 2016 Deployment Tool for Click-to-Run](https://www.microsoft.com/download/details.aspx?id=49117)
 
 ## Have a suggestion for App-V?
 
