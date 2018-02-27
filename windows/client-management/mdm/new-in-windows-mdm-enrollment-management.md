@@ -1410,6 +1410,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Display/DisablePerProcessDpiForApps</li>
 <li>Display/EnablePerProcessDpi</li>
 <li>Display/EnablePerProcessDpiForApps</li>
+<li>Experience/AllowWindowsSpotlightOnSettings</li>
 <ul>
 </td></tr>
 <tr class="odd">
@@ -1589,6 +1590,16 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tr class="odd">
 <td style="vertical-align:top">[UEFI CSP](uefi-csp.md)</td>
 <td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Update CSP](update-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following nodes in Windows 10, version 1803:</p>
+<ul>
+<li>Rollback</li>
+<li>Rollback/FeatureUpdate</li>
+<li>Rollback/QualityUpdateStatus</li>
+<li>Rollback/FeatureUpdateStatus</li>
+</ul>
 </td></tr>
 </tbody>
 </table>
