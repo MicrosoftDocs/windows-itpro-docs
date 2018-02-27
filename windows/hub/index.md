@@ -42,17 +42,17 @@ Find the latest how to and support content that IT pros need to evaluate, plan, 
     <td align="center" style="width:25%; border:0;"><br>
       <a href="/windows/application-management/index">
         <img src="images/applicationmanagement.png" alt="Manage applications in your Windows 10 enterprise deployment" title="Application management" />
-      <br/>Application Management </a><br>
+      <br/>Application Management </a>
     </td>
-       <td align="center" style="width:25%; border:0;">
+       <td align="center" style="width:25%; border:0;"><br>
       <a href="/windows/client-management/index">
         <img src="images/clientmanagement.png" alt="Windows 10 client management" title="Client management" />
-      <br/>Client Management </a><br>
+      <br/>Client Management </a>
     </td>
     <td align="center" style="width:25%; border:0;"><br>
       <a href="/windows/security/index">
         <img src="images/threatprotection.png" alt="Windows 10 security" title="W10 security" />
-      <br/>Security </a><br>
+      <br/>Security </a>
   </tr>
 </table>
 
