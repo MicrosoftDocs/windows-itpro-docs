@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/12/2018
+ms.date: 02/26/2018
 ---
 
 # Policy CSP
@@ -2811,6 +2811,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="policy-csp-systemservices.md#systemservices-configurexboxlivenetworkingservicestartupmode" id="systemservices-configurexboxlivenetworkingservicestartupmode">SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode</a>
   </dd>
+</dl>
 
 ### TaskScheduler policies
 
@@ -2823,6 +2824,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 ### TextInput policies
 
 <dl>
+  <dd>
+    <a href="./policy-csp-textinput.md#textinput-allowhardwarekeyboardtextsuggestions" id="textinput-allowhardwarekeyboardtextsuggestions">TextInput/AllowHardwareKeyboardTextSuggestions</a>
+  </dd>
   <dd>
     <a href="./policy-csp-textinput.md#textinput-allowimelogging" id="textinput-allowimelogging">TextInput/AllowIMELogging</a>
   </dd>

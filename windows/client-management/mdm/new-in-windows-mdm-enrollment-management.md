@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 02/05/2018
+ms.date: 02/26/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -1411,6 +1411,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Display/EnablePerProcessDpi</li>
 <li>Display/EnablePerProcessDpiForApps</li>
 <li>Experience/AllowWindowsSpotlightOnSettings</li>
+<li>TextInput/AllowHardwareKeyboardTextSuggestions</li>
 <ul>
 </td></tr>
 <tr class="odd">
