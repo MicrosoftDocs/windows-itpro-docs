@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 author: brianlic-msft
-ms.date: 10/20/2017
+ms.date: 02/27/2018
 ---
 
 # Deploy Windows Defender Application Control: policy rules and file rules
@@ -43,7 +43,8 @@ To modify the policy rule options of an existing WDAC policy, use [Set-RuleOptio
 
 You can set several rule options within a WDAC policy. Table 2 describes each rule option. 
 
-> [!NOTE] We recommend that you use **Enabled:Audit Mode** initially because it allows you to test new WDAC policies before you enforce them. With audit mode, no application is blocked—the policy just logs an event whenever an application outside the policy is started. allow these applications, you can capture the policy information from the event log, and then merge that information into the existing policy. When the **Enabled:Audit Mode** is deleted, the policy runs in enforced mode.
+> [!NOTE] 
+> We recommend that you use **Enabled:Audit Mode** initially because it allows you to test new WDAC policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. To allow these applications, you can capture the policy information from the event log, and then merge that information into the existing policy. When the **Enabled:Audit Mode** is deleted, the policy runs in enforced mode.
 
 **Table 2. Windows Defender Application Control policy - policy rule options**
 
@@ -89,13 +90,14 @@ Table 3. Windows Defender Application Control policy - file rule levels
 | **WHQLPublisher** | This is a combination of the WHQL and the CN on the leaf certificate and is primarily for kernel binaries. |
 | **WHQLFilePublisher** | Specifies that the binaries are validated and signed by WHQL, with a specific publisher (WHQLPublisher), and that the binary is the specified version or newer. This is primarily for kernel binaries. |
 
-> **Note**&nbsp;&nbsp;When you create WDAC policies with the [New-CIPolicy](https://technet.microsoft.com/library/mt634473.aspx) cmdlet, you can specify a primary file rule level by including the **-Level** parameter. For discovered binaries that cannot be trusted based on the primary file rule criteria, use the **-Fallback** parameter. For example, if the primary file rule level is PCACertificate but you would like to trust the unsigned applications as well, using the Hash rule level as a fallback adds the hash values of binaries that did not have a signing certificate.
+> [!NOTE]
+> When you create WDAC policies with [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy), you can specify a primary file rule level by including the **-Level** parameter. For discovered binaries that cannot be trusted based on the primary file rule criteria, use the **-Fallback** parameter. For example, if the primary file rule level is PCACertificate but you would like to trust the unsigned applications as well, using the Hash rule level as a fallback adds the hash values of binaries that did not have a signing certificate.
 
 ## Example of file rule levels in use
 
 For example, consider some IT professionals in a department that runs many servers. They decide they want their servers to run only software signed by the providers of their software and drivers, that is, the companies that provide their hardware, operating system, antivirus, and other important software. They know that their servers also run an internally written application that is unsigned but is rarely updated. They want to allow this application to run.
 
-To create the WDAC policy, they build a reference server on their standard hardware, and install all of the software that their servers are known to run. Then they run [New-CIPolicy](https://technet.microsoft.com/library/mt634473.aspx) with **-Level Publisher** (to allow software from their software providers, the "Publishers") and **-Fallback Hash** (to allow the internal, unsigned application). They enable the policy in auditing mode and gather information about any necessary software that was not included on the reference server. They merge WDAC policies into the original policy to allow that additional software to run. Then they enable the WDAC policy in enforced mode for their servers.
+To create the WDAC policy, they build a reference server on their standard hardware, and install all of the software that their servers are known to run. Then they run [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy) with **-Level Publisher** (to allow software from their software providers, the "Publishers") and **-Fallback Hash** (to allow the internal, unsigned application). They enable the policy in auditing mode and gather information about any necessary software that was not included on the reference server. They merge WDAC policies into the original policy to allow that additional software to run. Then they enable the WDAC policy in enforced mode for their servers.
 
 As part of normal operations, they will eventually install software updates, or perhaps add software from the same software providers. Because the "Publisher" remains the same on those updates and software, they will not need to update their WDAC policy. If they come to a time when the internally-written, unsigned application must be updated, they must also update the WDAC policy so that the hash in the policy matches the hash of the updated internal application.
 
