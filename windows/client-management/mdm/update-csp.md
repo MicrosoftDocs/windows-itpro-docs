@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/26/2017
+ms.date: 02/23/2018
 ---
 
 # Update CSP
@@ -76,7 +76,7 @@ The following diagram shows the Update configuration service provider in tree fo
 <p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="failedupdates-failed-update-guid-revisionnumber"></a>**FailedUpdates/*Failed Update Guid*/RevisionNumber**  
-<p style="margin-left: 20px">Added in the next major update of Windows 10. The revision number for the update that must be passed in server to server sync to get the metadata for the update.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. The revision number for the update that must be passed in server to server sync to get the metadata for the update.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
@@ -91,7 +91,7 @@ The following diagram shows the Update configuration service provider in tree fo
 <p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="installedupdates-installed-update-guid-revisionnumber"></a>**InstalledUpdates/*Installed Update Guid*/RevisionNumber**  
-<p style="margin-left: 20px">Added in the next major update of Windows 10. The revision number for the update that must be passed in server to server sync to get the metadata for the update.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. The revision number for the update that must be passed in server to server sync to get the metadata for the update.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
@@ -135,7 +135,7 @@ The following diagram shows the Update configuration service provider in tree fo
 <p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="pendingrebootupdates-pending-reboot-update-guid-revisionnumber"></a>**PendingRebootUpdates/*Pending Reboot Update Guid*/RevisionNumber**  
-<p style="margin-left: 20px">Added in the next major update of Windows 10. The revision number for the update that must be passed in server to server sync to get the metadata for the update.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. The revision number for the update that must be passed in server to server sync to get the metadata for the update.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
@@ -148,6 +148,38 @@ The following diagram shows the Update configuration service provider in tree fo
 <p style="margin-left: 20px">Upgrades deferred until the next period.
 
 <p style="margin-left: 20px">Supported operation is Get.
+
+<a href="" id="rollback"></a>**Rollback**  
+Added in Windows 10, version 1803. Node for the rollback operations.
+
+<a href="" id="rollback-qualityupdate"></a>**Rollback/QualityUpdate**  
+Added in Windows 10, version 1803. Roll back latest Quality Update, if the machine meets the following conditions:  
+
+-  Condition 1: Device must be Windows Update for Business Connected
+-  Condition 2: Device must be in a Paused State
+-  Condition 3: Device must have the Latest Quality Update installed on the device (Current State)
+            
+If the conditions are not true, the device will not Roll Back the Latest Quality Update.
+
+<a href="" id="rollback-featureupdate"></a>**Rollback/FeatureUpdate**  
+Added in Windows 10, version 1803. Roll Back Latest Feature Update, if the machine meets the following conditions:  
+
+-  Condition 1: Device must be Windows Update for Business Connnected
+-  Condition 2: Device must be in Paused State
+-  Condition 3: Device must have the Latest Feature Update Installed on the device (Current State)
+-  Condition 4: Machine should be within the uninstall period  
+
+> [!Note]  
+> This only works for Semi Annual Channel Targeted devices.
+
+If the conditions are not true, the device will not Roll Back the Latest Feature Update.
+          
+
+<a href="" id="rollback-qualityupdatestatus"></a>**Rollback/QualityUpdateStatus**  
+Added in Windows 10, version 1803. Returns the result of last RollBack QualityUpdate operation. 
+
+<a href="" id="rollback-featureupdatestatus"></a>**Rollback/FeatureUpdateStatus**  
+Added in Windows 10, version 1803. Returns the result of last RollBack FeatureUpdate operation.
 
 ## Related topics
 
