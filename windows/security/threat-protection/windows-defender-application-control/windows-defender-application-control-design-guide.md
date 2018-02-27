@@ -25,7 +25,7 @@ This guide covers design and planning for Windows Defender Application Control (
 | [Understand WDAC policy design decisions](understand-windows-defender-application-control-policy-design-decisions.md) | This topic lists the design questions, possible answers, and ramifications of the decisions when you plan a deployment of application control policies. |
 | [Select the types of rules to create](select-types-of-rules-to-create.md) | This topic lists resources you can use when selecting your application control policy rules by using WDAC. |
 | [Plan for WDAC policy management](plan-windows-defender-application-control-management.md) | This topic describes the decisions you need to make to establish the processes for managing and maintaining WDAC policies. |
-| [Create your AppLocker planning document](create-your-windows-defender-application-control-planning-document.md) | This planning topic summarizes the information you need to research and include in your planning document. | 
+| [Create your WDAC planning document](create-your-windows-defender-application-control-planning-document.md) | This planning topic summarizes the information you need to research and include in your planning document. | 
  
-After planning is complete, the next step is to deploy WDAC. [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md) covers the creation and testing of policies, deploying the enforcement setting, and managing and maintaining the policies.
+After planning is complete, the next step is to deploy WDAC. The [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md) covers the creation and testing of policies, deploying the enforcement setting, and managing and maintaining the policies.
  
