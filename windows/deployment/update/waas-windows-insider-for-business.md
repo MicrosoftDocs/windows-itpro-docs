@@ -19,7 +19,7 @@ ms.date: 10/27/2017
 
 > **Looking for information about Windows 10 for personal or home use?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
-For many IT pros, gaining visibility into feature updates early, before they’re available to the Semi-Annual Channel, can be both intriguing and valuable for future end user communications as well as provide additional prestaging for Semi-Annual Channel devices. With Windows 10, feature flighting enables Windows Insiders to consume and deploy preproduction code to their test devices, gaining early visibility into the next build. Testing the early builds of Windows 10 helps both Microsoft and its customers because they have the opportunity to discover possible issues before the update is ever publicly available and can report it to Microsoft. Also, as flighted builds get closer to their release to the Semi-Annual Channel, organizations can test their deployment on test devices for compatibility validation.
+For many IT Pros, gaining visibility into feature updates early, before they’re available to the Semi-Annual Channel, can be both intriguing and valuable for future end user communications as well as provide additional prestaging for Semi-Annual Channel devices. With Windows 10, feature flighting enables Windows Insiders to consume and deploy preproduction code to their test devices, gaining early visibility into the next build. Testing the early builds of Windows 10 helps both Microsoft and its customers because they have the opportunity to discover possible issues before the update is ever publicly available and can report it to Microsoft. Also, as flighted builds get closer to their release to the Semi-Annual Channel, organizations can test their deployment on test devices for compatibility validation.
 
 The Windows Insider Program for Business gives you the opportunity to: 
 * Get early access to Windows Insider Preview Builds. 
@@ -50,32 +50,50 @@ Below are additional details to accomplish the steps described above.
 
 ## Register to the Windows Insider Program for Business
 
-Registration in the Windows Insider Program for Business can be done individually per user or for an entire organization: 
+The first step to installing a Windows 10 Insider Preview build is to register as a Windows Insider. You and your users have two registration options. 
 
-### Individual registration
-
->[!IMPORTANT]
->This step is a prerequisite to register your organization's Azure AD domain. 
-
-Navigate to the [**Getting Started**](https://insider.windows.com/en-us/getting-started/) page on [Windows Insider](https://insider.windows.com), go to **Register your organization account** and follow the instructions.
+### Register using your work account (recommended) 
+•	Registering with your work account in Azure Active Directory (AAD) is required to submit feedback on behalf of your organization and manage Insider Preview builds on other PCs in your domain.   
 
 >[!NOTE]
->Make sure your device is [connected to your company's Azure AD subscription](waas-windows-insider-for-business-faq.md#connected-to-aad). 
+>Requires Windows 10 Version 1703 or later. Confirm by going to Settings>System>About. If you do not have an AAD account, [find out how to get an Azure Active Directory tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-howto-tenant).
 
-### Organizational registration
+### Register your personal account
+Use the same account that you use for other Microsoft services. If you don’t have a Microsoft account, it is easy to get one. [Get a Microsoft account](https://account.microsoft.com/account).
 
-This method enables to your register your entire organization to the Windows Insider Program for Business, to avoid having to register each individual user.
+## Install Windows Insider Preview Builds
+You can install Windows 10 Insider Preview builds directly on individual PCs, manage installation across multiple PCs in an organization, or install on a virtual machine. 
 
->[!IMPORTANT] 
->The account performing these steps has to first be registered to the program individually. Additionally, Global Administrator privileges on the Azure AD domain are required.
+### Install on an individual PC
 
-1. On the [Windows Insider](https://insider.windows.com) website, go to **For Business > Getting Started** to [register your organizational Azure AD account](https://insider.windows.com/en-us/insidersigninaad/).
-2. **Register your domain**. Rather than have each user register individually for Insider Preview builds, administrators can simply [register their domain](https://insider.windows.com/en-us/for-business-organization-admin/) and control settings centrally.</br>**Note:** The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register the domain.
+1.	Open  [Windows Insider Program settings](ms-settings:windowsinsider) (On your Windows 10 PC, go to Start > Settings > Update & security > Windows Insider Program). Note: To see this setting, you need to have administrator rights to your PC.
+2.	Link your Microsoft or work account that you used to register as a Windows Insider. 
+3.	Follow the prompts. 
 
->[!NOTE]
->At this point, the Windows Insider Program for Business only supports [Azure Active Directory (Azure AD)](/azure/active-directory/active-directory-whatis) (and not Active Directory on premises) as a corporate authentication method.
->
->If your company is currently not using Azure AD – but has a paid subscription to Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services – you have a free subscription to Microsoft Azure Active Directory. This subscription can be used to create users for enrollment in the Windows Insider Program for Business.
+(images/WIP4Biz_Prompts.png)
+
+### Install across multiple PCs
+
+Administrators can install and manage Insider Preview builds centrally across multiple PCs within their domain. Here’s how: 
+
+1.	**Register your domain with the Windows Insider Program**
+To register a domain, you must be registered in the Windows Insider Program with your work account in Azure Active Directory and you must be assigned a **Global Administrator** role on that Azure AD domain. Also requires Windows 10 Version 1703 or later. 
+
+**Register your domain**. Rather than have each user register individually for Insider Preview builds, administrators can simply [register their domain](https://insider.windows.com/en-us/for-business-organization-admin/) and control settings centrally.</br>**Note:** The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register the domain.
+
+>[!Notes]
+>•	At this point, the Windows Insider Program for Business only supports [Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-whatis) (and not Active Directory on premises) as a corporate authentication method. 
+>•	If your company has a paid subscription to Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services – you have a free subscription to Microsoft Azure Active Directory. This subscription can be used to create users for enrollment in the Windows Insider Program for Business.
+>•	If you do not have an AAD account, install Insider Preview builds on individual PCs with a registered Microsoft account.    
+
+2. **Apply Policies**
+Once you have registered your enterprise domain, you can control how and when devices receive Windows Insider Preview builds on their devices. See: [How to manage Windows 10 Insider Preview builds across your organization](https://docs.microsoft.com/en-us/windows/deployment/update/waas-windows-insider-for-business).
+
+### Install on a virtual machine. 
+This option enables you to run Insider Preview builds without changing the Windows 10 production build already running on a PC.  
+•	For guidance on setting up virtual machines on your PC see: [Introduction to Hyper-V on Windows 10](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/). 
+•	To download the latest Insider Preview build to run on your virtual machine see: 
+[Windows Insider Preview downloads](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewadvanced) 
 
 ## Manage Windows Insider Preview builds
 
@@ -161,6 +179,58 @@ To switch flights prior to Windows 10, version 1709, follow these steps:
   * [Windows Insider Slow](#slow)
   * [Release Preview](#release-preview)
 
+## Explore new Insider Preview features
+Windows 10 Insider Preview builds offer organizations a valuable and exciting opportunity to evaluate new Windows features well before general release. What’s more, by providing feedback to Microsoft on these features, you and other Insiders in your organization can help shape Windows for your specific business needs. Here’s how to get the most out of your feature exploration: 
+
+**Objective: Release Channel**
+Feature Exploration: Fast Ring
+Insider Preview builds in the Fast Ring are released approximately once a week and contain the very latest features. This makes them ideal for feature exploration. 
+
+**Objective: Users**
+Feature Exploration: Because Fast Ring builds are released so early in the development cycle, we recommend limiting feature exploration in your organization to IT administrators and developers running Insider Preview builds on secondary machines.  
+
+**Objective: Tasks**
+Feature Exploration:
+•	Install and manage Insider Preview builds on PCs (per machine or centrally across multiple machines)  
+•	Explore new features in Windows designed for organizations, including new features related to current and planned line of business applications 
+•	Before running an Insider Preview build, check our [Windows Insider blog](https://blogs.windows.com/windowsexperience/tag/windows-insider-program/#k3WWwxKCTWHCO82H.97) for a summary current features. 
+
+**Objective: Feedback**
+Feature Exploration: 
+•	Provide feedback via [Feedback Hub app](insiderhub://home/). This helps us make adjustments to features as quickly as possible.
+•	Encourage users to sign into the Feedback Hub using their AAD work accounts. This enables both you and Microsoft to track feedback submitted by users within your specific organization. (Note: This tracking is only visible to Microsoft and registered Insiders within your organization’s domain.) 
+•	[Learn how to provide effective feedback in the Feedback Hub](https://insider.windows.com/en-us/how-to-feedback/)
+
+## Validate Insider Preview builds 
+Along with exploring new features, you also have the option to validate your apps and infrastructure on Insider Preview builds. This activity can play an important role in your [Windows 10 deployment strategy](https://docs.microsoft.com/en-us/windows/deployment/update/waas-windows-insider-for-business). Early validation has several benefits: 
+•	Get a head start on your Windows validation process 
+•	Identify issues sooner to accelerate your Windows deployment 
+•	Engage Microsoft earlier for help with potential compatibility issues 
+•	Deploy Windows 10 Semi-Annual releases faster and more confidently 
+•	Maximize the 18-month support Window that comes with each Semi-Annual release. 
+
+(images/WIP4Biz_deployment.png)
+Windows 10 Insider Preview builds enable organization to prepare sooner for Windows Semi-Annual releases and reduce the overall validation effort required with traditional deployments. 
+
+**Objective: Release Channel**
+Application and infrastructure validation: SLOW RING
+Insider Preview builds in the Slow Ring are released approximately once a month. They are more stable than Fast Ring releases, making them better suited for validation purposes. Slow Ring releases can be run on either secondary or primary production machines by skilled users.
+
+**Objective: Recommended Users**
+Application and infrastructure validation: In addition to Insiders who may have participated in feature exploration, we also recommend including a small group of application users from each business department to ensure a representative sample. 
+
+**Objective: Recommended Tasks**
+Application and infrastructure validation: Before running an Insider Preview build, check our [Windows Insider blog](https://blogs.windows.com/windowsexperience/tag/windows-insider-program/#k3WWwxKCTWHCO82H.97) and [Windows Insider Tech Community](https://techcommunity.microsoft.com/t5/Windows-Insider-Program/bd-p/WindowsInsiderProgram) pages for updates on current issues and fixes. 
+
+**Objective: Feedback**
+Application and infrastructure validation:Provide feedback in the Feedback Hub app and also inform app vendors of any significant issues.  
+
+**Objective: Guidance**
+Application and infrastructure validation:
+•	[Use Upgrade Readiness to create an app inventory and identify mission-critical apps](https://technet.microsoft.com/itpro/windows/deploy/upgrade-readiness-identify-apps) 
+•	[Use Device Health to identify problem devices and device drivers](https://docs.microsoft.com/en-us/windows/deployment/update/device-health-monitor)
+•	[Windows 10 application compatibility](https://technet.microsoft.com/windows/mt703793)
+
 ## How to switch between your MSA and your Corporate AAD account
 
 If you were using your Microsoft Account (MSA) to enroll to the Windows Insider Program, switch to your organizational account by going to **Settings > Updates & Security >  Windows Insider Program**, and under **Windows Insider account** select **Change**.
@@ -189,7 +259,7 @@ When providing feedback, please consider the following:
 
 ### User consent requirement
 
-With the current version of the Feedback Hub app, we need the user's consent to access their AAD account profile data (We read their name, organizational tenant ID and user ID). When they sign in for the first time with the AAD account, they will see a popup asking for their permission, like this:
+Feedback Hub needs the user’s consent to access their AAD account profile data (we read their name, organizational tenant ID and user ID). When they sign in for the first time with the AAD account, they will see a popup asking for their permission, like this:
 
 ![Feedback Hub consent to AAD pop-up](images/waas-wipfb-aad-consent.png)
 
@@ -271,6 +341,15 @@ Your individual registration with the Insider program will not be impacted. If y
 >[!IMPORTANT]
 >Once your domain is unregistered, setting the **Branch Readiness Level** to preview builds will have no effect. Return this setting to its unconfigured state in order to enable users to control it from their devices.
 
+## Community 
+
+Windows Insiders are a part of a global community focused on innovation, creativity, and growth in their world.  
+
+The Windows Insider program enables you to deepen connections to learn from peers and to connect to subject matter experts (inside Microsoft, Insiders in your local community and in another country) who understand your unique challenges, and who can provide strategic advice on how to maximize your impact.
+ 
+Collaborate and learn from experts in the [WINDOWS INSIDER TECH COMMUNITY](https://techcommunity.microsoft.com/t5/Windows-Insider-Program/bd-p/WindowsInsiderProgram)
+
+
 ## Additional help resources
 
 * [**Windows Blog**](https://blogs.windows.com/blog/tag/windows-insider-program/) - With each new build release we publish a Windows Blog post that outlines key feature changes as well as known issues that Insiders may encounter while using the build.
@@ -280,7 +359,6 @@ Your individual registration with the Insider program will not be impacted. If y
 ## Learn More
 - [Windows Insider Program for Business using Azure Active Directory](waas-windows-insider-for-business-aad.md)
 - [Windows Insider Program for Business Frequently Asked Questions](waas-windows-insider-for-business-faq.md)
-
 
 ## Related Topics
 - [Overview of Windows as a service](waas-overview.md)

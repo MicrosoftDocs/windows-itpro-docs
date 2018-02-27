@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 02/26/2018
 ---
 
 # Policy CSP - TextInput
@@ -21,6 +21,9 @@ ms.date: 01/30/2018
 ## TextInput policies  
 
 <dl>
+  <dd>
+    <a href="#textinput-allowhardwarekeyboardtextsuggestions">TextInput/AllowHardwareKeyboardTextSuggestions</a>
+  </dd>
   <dd>
     <a href="#textinput-allowimelogging">TextInput/AllowIMELogging</a>
   </dd>
@@ -65,6 +68,56 @@ ms.date: 01/30/2018
   </dd>
 </dl>
 
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="textinput-allowhardwarekeyboardtextsuggestions"></a>**TextInput/AllowHardwareKeyboardTextSuggestions**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803.  Specifies text prediction for hardware keyboard is always disabled. When this policy is set to 0, text prediction for hardware keyboard is always disabled.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 – Text prediction for the hardware keyboard is disabled and the switch is unusable (user cannot activate the feature).
+-   1 (default) – Text prediction for the hardware keyboard is enabled. User can change the setting.
+
+<!--/SupportedValues-->
+<!--/Policy-->
 
 <hr/>
 
