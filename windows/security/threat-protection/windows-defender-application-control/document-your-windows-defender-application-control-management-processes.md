@@ -23,7 +23,7 @@ This planning topic describes the Windows Defender Application Control (WDAC) po
 To complete this planning document, you should first complete the following steps:
 
 3.  [Select the types of rules to create](select-types-of-rules-to-create.md)
-5.  [Plan for AppLocker policy management](plan-windows-defender-application-control-management.md)
+5.  [Plan for WDAC policy management](plan-windows-defender-application-control-management.md)
 
 The three key areas to determine for WDAC policy management are:
 
@@ -75,7 +75,7 @@ The following table contains the added sample data that was collected when deter
 <td align="left"><p>C:\Program Files\Woodgrove\Teller.exe</p></td>
 <td align="left"><p>File is signed; create a publisher condition</p></td>
 <td align="left"><p>Allow</p></td>
-<td align="left"><p>Tellers-AppLockerTellerRules</p></td>
+<td align="left"><p>Tellers-WDACTellerRules</p></td>
 <td align="left"><p>Web help</p></td>
 </tr>
 <tr class="even">
@@ -142,7 +142,7 @@ The following two tables illustrate examples of documenting considerations to ma
 
 **Event processing policy**
 
-One discovery method for app usage is to set the AppLocker enforcement mode to **Audit only**. This will write events to the AppLocker logs, which can be managed and analyzed like other Windows logs. After apps have been identified, you can begin to develop policies regarding the processing and access to AppLocker events.
+One discovery method for app usage is to use Audit mode. This will write events to the CodeIntegrity log, which can be managed and analyzed like other Windows logs. 
 
 The following table is an example of what to consider and record.
 
@@ -157,7 +157,7 @@ The following table is an example of what to consider and record.
 <thead>
 <tr class="header">
 <th align="left">Business group</th>
-<th align="left">AppLocker event collection location</th>
+<th align="left">WDAC event collection location</th>
 <th align="left">Archival policy</th>
 <th align="left">Analyzed?</th>
 <th align="left">Security policy</th>
@@ -166,7 +166,7 @@ The following table is an example of what to consider and record.
 <tbody>
 <tr class="odd">
 <td align="left"><p>Bank Tellers</p></td>
-<td align="left"><p>Forwarded to: AppLocker Event Repository on srvBT093</p></td>
+<td align="left"><p>Forwarded to: CodeIntegrity Event Repository on srvBT093</p></td>
 <td align="left"><p>Standard</p></td>
 <td align="left"><p>None</p></td>
 <td align="left"><p>Standard</p></td>
@@ -229,5 +229,4 @@ The following table is an example of what to consider and record.
  
 ## Next steps
 
-After you have determined your application control management strategy for each of the business group's applications, the following task remains:
--   [Create your AppLocker planning document](create-your-applocker-planning-document.md)
+After you determine your application control management strategy for each business group, [create your WDAC planning document](create-your-windows-defender-application-control-planning-document.md).
