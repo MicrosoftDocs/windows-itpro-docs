@@ -41,7 +41,7 @@ When you open the portal, you’ll see the main areas of the application:
 
 - (1) Navigation pane
 - (2) Main portal
-- (3) Search, Tech community, Time settings, Help and support, Feedback
+- (3) Search, Community center, Time settings, Help and support, Feedback
 
 > [!NOTE]
 > Malware related detections will only appear if your endpoints are using [Windows Defender Antivirus](https://technet.microsoft.com/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
@@ -60,7 +60,7 @@ Area | Description
 **Preferences setup** |	Shows the settings you selected during onboarding and lets you update your industry preferences and retention policy period. You can also set other configuration settings such as email notifications, activate the preview experience, enable or turn off advanced features, SIEM integration, threat intel API, build Power BI reports, and set baselines for the Security analytics dashboard.
 **Endpoint management** | Provides access to endpoints such as clients and servers. Allows you to download the onboarding configuration package for endpoints. It also provides access to endpoint offboarding.
 **(2) Main portal** | Main area where you will see the different views such as the Dashboards, Alerts queue, and Machines list.
-**(3) Search, Community center, Time settings, Notifications,  Help and support, Feedback** | **Search** - Provides access to the search bar where you can search for file, IP, machine, URL, and user. Displays the Search box: the drop-down list allows you to select the entity type and then enter the search query text.</br></br> **Community center** -Access the Community center to learn, collaborate, and share experiences about the product. </br></br> **Time settings** - Gives you access to the configuration settings where you can set time zones and view license information. **Time settings** - Gives you access to the configuration settings where you can set time zones and view license information. </br></br>  **Help and support** - Gives you access to the Windows Defender ATP guide, Microsoft support, and Premier support.</br></br> **Feedback** - Access the feedback button to provide comments about the portal. 
+**(3) Search, Community center, Time settings,  Help and support, Feedback** | **Search** - Provides access to the search bar where you can search for file, IP, machine, URL, and user. Displays the Search box: the drop-down list allows you to select the entity type and then enter the search query text.</br></br> **Community center** -Access the Community center to learn, collaborate, and share experiences about the product. </br></br>  **Time settings** - Gives you access to the configuration settings where you can set time zones and view license information. </br></br>  **Help and support** - Gives you access to the Windows Defender ATP guide, Microsoft support, and Premier support.</br></br> **Feedback** - Access the feedback button to provide comments about the portal. 
 
 ## Windows Defender ATP icons
 The following table provides information on the icons used all throughout the portal:
