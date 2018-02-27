@@ -2453,7 +2453,7 @@ Footnotes:
  Footnotes: 
 - 1 - Added in Windows 10, version 1607
 - 2 - Added in Windows 10, version 1703  
-- 3 - Added in the next major update to Windows 10  
+- 3 - Added in Windows 10, version 1803  
 
 ## CSP DDF files download
 
