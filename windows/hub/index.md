@@ -51,7 +51,7 @@ Find the latest how to and support content that IT pros need to evaluate, plan, 
     </td>
     <td align="center" style="width:25%; border:0;"><br>
       <a href="/windows/security/index">
-        <img src="https://docs.microsoft.com/media/common/i_threat-protection.svg" alt="Windows 10 security" title="W10 security" />
+        <img src="images/threatprotection.png" alt="Windows 10 security" title="W10 security" />
       <br/>Security </a><br>
   </tr>
 </table>
