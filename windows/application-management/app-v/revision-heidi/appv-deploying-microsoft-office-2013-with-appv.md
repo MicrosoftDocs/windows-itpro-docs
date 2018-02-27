@@ -510,34 +510,25 @@ To manage your Office App-V packages, use the same operations as you would for a
 
 ### Enabling Office plug-ins by using connection groups
 
-Use the steps in this section to enable Office plug-ins with your Office package. To use Office plug-ins, you must use the App-V Sequencer to create a separate package that contains just the plug-ins. You cannot use the Office Deployment Tool to create the plug-ins package. You then create a connection group that contains the Office package and the plug-ins package, as described in the following steps.
+Use the steps in this section to enable Office plug-ins with your Office package. To use Office plug-ins, you must use the App-V Sequencer to create a separate package that contains just the plug-ins. You can't use the Office Deployment Tool to create the plug-ins package. You then create a connection group that contains the Office package and the plug-ins package, as described in the following steps.
 
 #### To enable plug-ins for Office App-V packages
 
-1.  Add a Connection Group through App-V Server, System Center Configuration Manager, or a Windows PowerShell cmdlet.
+1. Add a Connection Group through App-V Server, System Center Configuration Manager, or a Windows PowerShell cmdlet.
+2. Sequence your plug-ins using the App-V Sequencer. Ensure that Office 2013 is installed on the computer being used to sequence the plug-in. It's a good idea to use Office 365 ProPlus (non-virtual) on the sequencing computer when you sequence Office 2013 plug-ins.
+3. Create an App-V package that includes the desired plug-ins.
+4. Add a Connection Group through App-V Server, System Center Configuration Manager, or a Windows PowerShell cmdlet.
+5. Add the Office 2013 App-V package and the plug-ins package you sequenced to the Connection Group you created.
 
-2.  Sequence your plug-ins using the App-V Sequencer. Ensure that Office 2013 is installed on the computer being used to sequence the plug-in. It is recommended you use Office 365 ProPlus(non-virtual) on the sequencing computer when you sequence Office 2013 plug-ins.
-
-3.  Create an App-V package that includes the desired plug-ins.
-
-4.  Add a Connection Group through App-V server, System Center Configuration Manager, or a Windows PowerShell cmdlet.
-
-5.  Add the Office 2013 App-V package and the plug-ins package you sequenced to the Connection Group you created.
-
-    **Important**&nbsp;&nbsp;The order of the packages in the Connection Group determines the order in which the package contents are merged. In your Connection group descriptor file, add the Office 2013 App-V package first, and then add the plug-in App-V package.
-
-6.  Ensure that both packages are published to the target computer and that the plug-in package is published globally to match the global settings of the published Office 2013 App-V package.
-
-7.  Verify that the Deployment Configuration File of the plug-in package has the same settings that the Office 2013 App-V package has.
+    >[!IMPORTANT]
+    >The order of the packages in the Connection Group determines the order in which the package contents are merged. In your Connection group descriptor file, add the Office 2013 App-V package first, and then add the plug-in App-V package.
+6. Ensure that both packages are published to the target computer and that the plug-in package is published globally to match the global settings of the published Office 2013 App-V package.
+7. Verify that the Deployment Configuration File of the plug-in package has the same settings that the Office 2013 App-V package has.
 
     Since the Office 2013 App-V package is integrated with the operating system, the plug-in package settings should match. You can search the Deployment Configuration File for “COM Mode” and ensure that your plug-ins package has that value set as “Integrated” and that both "InProcessEnabled" and "OutOfProcessEnabled" match the settings of the Office 2013 App-V package you published.
-
-8.  Open the Deployment Configuration File and set the value for **Objects Enabled** to **false**.
-
-9.  If you made any changes to the Deployment Configuration file after sequencing, ensure that the plug-in package is published with the file.
-
+8. Open the Deployment Configuration File and set the value for **Objects Enabled** to **false**.
+9. If you made any changes to the Deployment Configuration file after sequencing, ensure that the plug-in package is published with the file.
 10. Ensure that the Connection Group you created is enabled onto your desired computer. The Connection Group created will likely “pend” if the Office 2013 App-V package is in use when the Connection Group is enabled. If that happens, you have to reboot to successfully enable the Connection Group.
-
 11. After you successfully publish both packages and enable the Connection Group, start the target Office 2013 application and verify that the plug-in you published and added to the connection group works as expected.
 
 ### Disabling Office 2013 applications
@@ -549,17 +540,13 @@ You may want to disable specific applications in your Office App-V package. For 
 
 **To disable an Office 2013 application**
 
-1.  Open a Deployment Configuration File with a text editor such as **Notepad** and search for “Applications."
+1. Open a Deployment Configuration File with a text editor such as **Notepad** and search for “Applications."
+2. Search for the Office application you want to disable, for example, Access 2013.
+3. Change the value of "Enabled" from "true" to "false."
+4. Save the Deployment Configuration File.
+5. Add the Office 2013 App-V Package with the new Deployment Configuration File.
 
-2.  Search for the Office application you want to disable, for example, Access 2013.
-
-3.  Change the value of "Enabled" from "true" to "false."
-
-4.  Save the Deployment Configuration File.
-
-5.  Add the Office 2013 App-V Package with the new Deployment Configuration File.
-
-    ``` syntax
+    ``` XML
     <Application Id="[{AppVPackageRoot)]\officefl5\INFOPATH.EXE" Enabled="true">
       <VisualElements>
         <Name>InfoPath Filler 2013</Name>
@@ -582,8 +569,7 @@ You may want to disable specific applications in your Office App-V package. For 
       </VisualElements>
     </Application>
     ```
-
-6.  Re-add the Office 2013 App-V package, and then republish it with the new Deployment Configuration File to apply the new settings to Office 2013 App-V Package applications.
+6. Re-add the Office 2013 App-V package, and then republish it with the new Deployment Configuration File to apply the new settings to Office 2013 App-V Package applications.
 
 ### Disabling Office 2013 shortcuts
 
