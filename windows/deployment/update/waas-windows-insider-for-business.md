@@ -71,9 +71,9 @@ To register a domain, you must be registered in the Windows Insider Program with
 **Register your domain**. 
 
 >[!Note]
->•	Currently, the Windows Insider Program for Business supports [Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-whatis)--but not on-premises Active Directory--as a corporate authentication method. 
->•	If your company has a paid subscription to Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services – you have a free subscription to Microsoft Azure Active Directory. This subscription can be used to create users for enrollment in the Windows Insider Program for Business.
->•	If you do not have an AAD account, install Insider Preview builds on individual devices with a registered Microsoft account.    
+>- Currently, the Windows Insider Program for Business supports [Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-whatis)--but not on-premises Active Directory--as a corporate authentication method. 
+>- If your company has a paid subscription to Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services – you have a free subscription to Microsoft Azure Active Directory. This subscription can be used to create users for enrollment in the Windows Insider Program for Business.
+>- If you do not have an AAD account, install Insider Preview builds on individual devices with a registered Microsoft account.    
 
 2. **Apply Policies**
 Once you have registered your enterprise domain, you can control how and when devices receive Windows Insider Preview builds on their devices. See: [How to manage Windows 10 Insider Preview builds across your organization](https://docs.microsoft.com/en-us/windows/deployment/update/waas-windows-insider-for-business).
