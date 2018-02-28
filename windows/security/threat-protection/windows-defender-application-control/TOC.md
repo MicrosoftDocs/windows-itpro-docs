@@ -14,7 +14,7 @@
 ### [Use WDAC with a managed installer](use-windows-defender-application-control-with-managed-installer.md)
 ### [Use WDAC with custom policies](use-windows-defender-application-control-with-custom policies.md)
 #### [Create an initial default policy](create-initial-default-policy.md)
-#### [Microsoft recommended block rules](recommended-block-rules.md)
+#### [Microsoft recommended block rules](microsoft-recommended-block-rules.md)
 ### [Audit WDAC policies](audit-windows-defender-application-control-policies.md)
 ### [Merge WDAC policies](merge-windows-defender-application-control-policies.md)
 ### [Enforce WDAC policies](enforce-windows-defender-application-control-policies.md)
