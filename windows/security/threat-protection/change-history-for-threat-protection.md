@@ -21,12 +21,12 @@ New or changed topic | Description
 ## January 2018
 |New or changed topic |Description |
 |---------------------|------------|
-|[Windows Defender Application Control](windows-defender-application-control/windows-defender-application-control.md)|New topic. WDAC replaces cofigurable code integrity policies. |
+|[Windows Defender Application Control](windows-defender-exploit-guardwindows-defender-application-control/windows-defender-application-control.md)|New topic. WDAC replaces cofigurable code integrity policies. |
 
 ## November 2017
 |New or changed topic |Description |
 |---------------------|------------|
-| [How to enable virtualization-based protection of code integrity](enable-virtualization-based-protection-of-code-integrity.md)| New. Explains how to enable HVCI.  |
+| [How to enable virtualization-based protection of code integrity](windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity.md)| New. Explains how to enable HVCI.  |
 
 
 ## October 2017

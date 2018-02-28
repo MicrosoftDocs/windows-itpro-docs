@@ -48,5 +48,5 @@ To merge two WDAC policies, complete the following steps in an elevated Windows 
 
     ` ConvertFrom-CIPolicy $MergedCIPolicy $CIPolicyBin `
 
-Now that you have created a new WDAC policy, you can deploy the policy binary to systems manually or by using Group Policy or Microsoft client management solutions. For information about how to deploy this new policy with Group Policy, see [Deploy and manage Windows Defender Application Control with Group Policy](deploy-windows-defender-application-control-policies-using-group-policy).
+Now that you have created a new WDAC policy, you can deploy the policy binary to systems manually or by using Group Policy or Microsoft client management solutions. For information about how to deploy this new policy with Group Policy, see [Deploy and manage Windows Defender Application Control with Group Policy](deploy-windows-defender-application-control-policies-using-group-policy.md).
 

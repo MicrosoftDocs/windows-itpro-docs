@@ -24,7 +24,7 @@ Use the following procedure to enable virtualization-based protection of code in
 
 1.  **Decide whether to use the procedures in this topic, or to use the Windows Defender Device Guard readiness tool**. To enable HVCI, you can use [the Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337) or follow the procedures in this topic.
 
-2.  **Verify that hardware and firmware requirements are met**. Verify that your client computers have the hardware and firmware to run HVCI. For a list of requirements, see [Hardware, firmware, and software requirements for Windows Defender Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-windows-defender-device-guard).
+2.  **Verify that hardware and firmware requirements are met**. Verify that your client computers have the hardware and firmware to run HVCI. For a list of requirements, see [Requirements and deployment planning guidelines for virtualization-based protection of code integrity](./windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md).
 
 3.  **Enable the necessary Windows features**. You can use the [hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337) or see [Windows feature requirements for virtualization-based security](#windows-feature-requirements-for-virtualization-based-protection-of-code-integrity).
 
@@ -70,7 +70,7 @@ If you don't want to use the [hardware readiness tool](https://www.microsoft.com
 5.  Select the **Enabled** button. For **Select Platform Security Level**:
 
     - **Secure Boot** provides as much protection as a computer’s hardware can support. If the computer does not have input/output memory management units (IOMMUs), enable **Secure Boot**.
-    - **Secure Boot with DMA** enables Secure Boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS or HVCI protection, although it can have WDAC enabled.<br>For information about how VBS uses the hypervisor to strengthen protections provided by WDAC, see [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md#how-windows-defender-device-guard-features-help-protect-against-threats).
+    - **Secure Boot with DMA** enables Secure Boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS or HVCI protection, although it can have WDAC enabled.
 
     For **Virtualization Based Protection of Code Integrity**:
 
@@ -90,10 +90,8 @@ If you don't want to use the [hardware readiness tool](https://www.microsoft.com
 
 Set the following registry keys to enable HVCI. This provides exactly the same set of configuration options provided by Group Policy.
 
-<!--This comment ensures that the Important above and the Warning below don't merge together. -->
-
 > [!IMPORTANT]
-> - Among the commands that follow, you can choose settings for **Secure Boot** and **Secure Boot with DMA**. In most situations, we recommend that you choose **Secure Boot**. This option provides Secure Boot with as much protection as is supported by a given computer’s hardware. A computer with input/output memory management units (IOMMUs) will have Secure Boot with DMA protection. A computer without IOMMUs will simply have Secure Boot enabled.<br>In contrast, with **Secure Boot with DMA**, the setting will enable Secure Boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS or HVCI protection, although it can still have WDAC enabled.<br>For information about how VBS uses the hypervisor to strengthen protections provided by WDAC, see [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md#how-windows-defender-device-guard-features-help-protect-against-threats).<br>
+> - Among the commands that follow, you can choose settings for **Secure Boot** and **Secure Boot with DMA**. In most situations, we recommend that you choose **Secure Boot**. This option provides Secure Boot with as much protection as is supported by a given computer’s hardware. A computer with input/output memory management units (IOMMUs) will have Secure Boot with DMA protection. A computer without IOMMUs will simply have Secure Boot enabled.<br>In contrast, with **Secure Boot with DMA**, the setting will enable Secure Boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS or HVCI protection, although it can still have WDAC enabled.<br>
 > - All drivers on the system must be compatible with virtualization-based protection of code integrity; otherwise, your system may fail. We recommend that you enable these features on a group of test computers before you enable them on users' computers.
 
 #### For Windows 1607 and above
@@ -196,7 +194,9 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Unlocked" /t REG
 
 Windows 10 and Windows Server 2016 have a WMI class for related properties and features: *Win32\_DeviceGuard*. This class can be queried from an elevated Windows PowerShell session by using the following command:
 
-` Get-CimInstance –ClassName Win32_DeviceGuard –Namespace root\Microsoft\Windows\DeviceGuard`
+```powershell
+Get-CimInstance –ClassName Win32_DeviceGuard –Namespace root\Microsoft\Windows\DeviceGuard
+```
 
 > [!NOTE]
 > The *Win32\_DeviceGuard* WMI class is only available on the Enterprise edition of Windows 10.
