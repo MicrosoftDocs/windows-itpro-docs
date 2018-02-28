@@ -261,7 +261,7 @@ Optional. Number of days after last sucessful sync to unenroll.
 Supported operations are Add, Delete, Get, and Replace. Value type is integer.
 
 <a href="" id="provider-providerid-aadsenddevicetoken"></a>**Provider/*ProviderID*/AADSendDeviceToken**  
-Device. Added in Windows 10 next major update. For AZure AD backed enrollments, this will cause the client to send a Device Token if the User Token can not be obtained.
+Device. Added in Windows 10 version 1803. For AZure AD backed enrollments, this will cause the client to send a Device Token if the User Token can not be obtained.
 
 Supported operations are Add, Delete, Get, and Replace. Value type is bool.
 
@@ -713,27 +713,27 @@ Required. Added in Windows 10, version 1709. Integer node determining if a devic
 Supported operations are Get and Replace. Value type is integer.
 
 <a href="" id="provider-providerid-firstsyncstatus-blockinstatuspage"></a>**Provider/*ProviderID*/FirstSyncStatus/BlockInStatusPage**  
-Required. Device Only. Added in Windows 10, next major update. This node determines whether or not the MDM progress page is blocking in the Azure AD joined or DJ++ case, as well as which remediation options are available.
+Required. Device Only. Added in Windows 10, version 1803. This node determines whether or not the MDM progress page is blocking in the Azure AD joined or DJ++ case, as well as which remediation options are available.
 
 Supported operations are Get and Replace. Value type is integer.
 
 <a href="" id="provider-providerid-firstsyncstatus-allowcollectlogsbutton"></a>**Provider/*ProviderID*/FirstSyncStatus/AllowCollectLogsButton**  
-Required. Added in Windows 10, next major update. This node decides whether or not the MDM progress page displays the Collect Logs button.  
+Required. Added in Windows 10, version 1803. This node decides whether or not the MDM progress page displays the Collect Logs button.  
 
 Supported operations are Get and Replace. Value type is bool.
 
 <a href="" id="provider-providerid-firstsyncstatus-customerrortext"></a>**Provider/*ProviderID*/FirstSyncStatus/CustomErrorText**  
-Required. Added in Windows 10, next major update. This node allows the MDM to set custom error text, detailing what the user needs to do in case of error.  
+Required. Added in Windows 10, version 1803. This node allows the MDM to set custom error text, detailing what the user needs to do in case of error.  
 
 Supported operations are Add, Get, Delete, and Replace. Value type is string.
 
 <a href="" id="provider-providerid-firstsyncstatus-skipdevicestatuspage"></a>**Provider/*ProviderID*/FirstSyncStatus/SkipDeviceStatusPage**  
-Required. Device only. Added in Windows 10, next major update. This node decides wheter or not the MDM device progress page skips after Azure AD joined or Hybrid Azure AD joined in OOBE.
+Required. Device only. Added in Windows 10, version 1803. This node decides wheter or not the MDM device progress page skips after Azure AD joined or Hybrid Azure AD joined in OOBE.
 
 Supported operations are Get and Replace. Value type is bool.
 
 <a href="" id="provider-providerid-firstsyncstatus-skipuserstatuspage"></a>**Provider/*ProviderID*/FirstSyncStatus/SkipUserStatusPage**  
-Required. Device only. Added in Windows 10, next major update. This node decides wheter or not the MDM user progress page skips after Azure AD joined or DJ++ after user login.
+Required. Device only. Added in Windows 10, version 1803. This node decides wheter or not the MDM user progress page skips after Azure AD joined or DJ++ after user login.
 
 Supported operations are Get and Replace. Value type is bool.
 

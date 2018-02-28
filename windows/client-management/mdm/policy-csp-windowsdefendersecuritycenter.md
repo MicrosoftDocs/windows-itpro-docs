@@ -832,7 +832,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. Use this policy setting to hide the Ransomware data recovery area in Windows Defender Security Center.
+Added in Windows 10, version 1803. Use this policy setting to hide the Ransomware data recovery area in Windows Defender Security Center.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -882,7 +882,7 @@ Valid values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. Use this policy to hide the Secure boot area in the Windows Defender Security Center.
+Added in Windows 10, version 1803. Use this policy to hide the Secure boot area in the Windows Defender Security Center.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -932,7 +932,7 @@ Valid values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. Use this policy to hide the Security processor (TPM) troubleshooting area in the Windows Defender Security Center.
+Added in Windows 10, version 1803. Use this policy to hide the Security processor (TPM) troubleshooting area in the Windows Defender Security Center.
 
 <!--/Description-->
 <!--SupportedValues-->
