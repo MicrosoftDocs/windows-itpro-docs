@@ -21,7 +21,7 @@ ms.date: 03/05/2018
 
 The Threat analytics report provides an overview of the Meltdown and Spectre threat and visibility on both Software and Firmware mitigations status.
 
-The OS mitigation tile provides visibility into OS mitigation status – whether it’s installed and active. You can see and download a CSV format of the list of machines with no OS mitigation active by clicking the inactive machines on the chart.
+The OS mitigation tile provides visibility into OS mitigation status - whether it's installed and active. You can see and download a CSV format of the list of machines with no OS mitigation active by clicking the inactive machines on the chart.
 
 Microcode mitigations tile provides visibility into Microcode mitigation/update deployment status.
 Overall mitigation status provides an aggregated view into OS and Microcode mitigation.
