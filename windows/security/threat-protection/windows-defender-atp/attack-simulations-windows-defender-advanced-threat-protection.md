@@ -25,17 +25,17 @@ ms.date: 28/02/2018
 
 ## Preparations
 
-To run the provided simulations, you need at least [one onboarded machine](onboard-configure-windows-defender-advanced-threat-protection.md). 
+To run any of the provided simulations, you need at least [one onboarded machine](onboard-configure-windows-defender-advanced-threat-protection.md). 
 
-Before running a simulation, ensure you read the walkthrough document provided with each attack scenario. The document provides detailed instructions as well as specific endpoint OS and application requirements. In general, running the latest Windows build on the test machine helps ensure compatibility.
+Read the walkthrough document provided with each attack scenario. Each document includes OS and application requirements as well as detailed instructions that are specific to an attack scenario.
 
 ## Run a simulation
 
-1. Select your desired simulation scenario from from **Help** > **Simulations and tutorials**.
+1. In **Help** > **Simulations & tutorials**, select the attack scenario you would like to simulate.
 
-2. Download and read the corresponding walkthrough document thoroughly. The document outlines the nature of the simulation and what you can do to fully experience the scenario.
+2. Download and read the corresponding walkthrough document provided with your selected scenario.
 
-3. Access **Simulation and tutorials** from the onboarded test machine. From that machine, download the simulation file or copy the simulation script.
+3. Use the onboarded test machine to access then the Windows Defender ATP portal and go to **Help** > **Simulations & tutorials**. From there, download the simulation file or copy the simulation script.
 
 4. Run the simulation file or script on the test machine as instructed in the walkthrough document.
 
