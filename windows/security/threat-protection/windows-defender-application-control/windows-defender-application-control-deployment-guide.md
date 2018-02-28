@@ -5,8 +5,8 @@ keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
-author: brianlic-msft
-ms.date: 10/20/2017
+author: jsuther1974
+ms.date: 02/27/2018
 ---
 
 # Planning and getting started on the Windows Defender Application Control deployment process

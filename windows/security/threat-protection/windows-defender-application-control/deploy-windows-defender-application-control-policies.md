@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jsuther1974
-ms.date: 02/08/2018
+ms.date: 02/28/2018
 ---
 
 # Deploy Windows Defender Application Control Policies

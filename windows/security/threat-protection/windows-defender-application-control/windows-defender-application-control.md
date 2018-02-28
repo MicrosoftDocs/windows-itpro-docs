@@ -6,8 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.localizationpriority: high
 author: jsuther1974
-ms.date: 01/24/2018
+ms.date: 02/27/2018
 ---
 
 # Windows Defender Application Control 
