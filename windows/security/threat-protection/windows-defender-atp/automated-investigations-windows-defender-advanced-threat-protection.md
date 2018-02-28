@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 03/15/2018
 ---
 
-# Automated investigations list in Windows Defender ATP
+# Automated investigations in Windows Defender ATP
 
 **Applies to:**
 
