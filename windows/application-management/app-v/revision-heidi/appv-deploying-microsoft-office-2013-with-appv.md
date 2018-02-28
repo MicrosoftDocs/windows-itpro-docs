@@ -521,15 +521,15 @@ Use the steps in this section to enable Office plug-ins with your Office package
 5. Add the Office 2013 App-V package and the plug-ins package you sequenced to the Connection Group you created.
 
     >[!IMPORTANT]
-    >The order of the packages in the Connection Group determines the order in which the package contents are merged. In your Connection group descriptor file, add the Office 2013 App-V package first, and then add the plug-in App-V package.
+    >The order of the packages in the Connection Group determines the order in which the package contents are merged. In your Connection group descriptor file, add the Office 2013 App-V package first, then add the plug-in App-V package.
 6. Ensure that both packages are published to the target computer and that the plug-in package is published globally to match the global settings of the published Office 2013 App-V package.
 7. Verify that the Deployment Configuration File of the plug-in package has the same settings that the Office 2013 App-V package has.
 
-    Since the Office 2013 App-V package is integrated with the operating system, the plug-in package settings should match. You can search the Deployment Configuration File for “COM Mode” and ensure that your plug-ins package has that value set as “Integrated” and that both "InProcessEnabled" and "OutOfProcessEnabled" match the settings of the Office 2013 App-V package you published.
+    Since the Office 2013 App-V package is integrated with the operating system, the plug-in package settings should match. You can search the Deployment Configuration File for “COM Mode” and ensure that your plug-ins package has that value set as **Integrated** and that both **InProcessEnabled** and **OutOfProcessEnabled** match the settings of the Office 2013 App-V package you published.
 8. Open the Deployment Configuration File and set the value for **Objects Enabled** to **false**.
-9. If you made any changes to the Deployment Configuration file after sequencing, ensure that the plug-in package is published with the file.
+9. If you made any changes to the Deployment Configuration file after sequencing, ensure that the plug-in package is published with the updated file.
 10. Ensure that the Connection Group you created is enabled onto your desired computer. The Connection Group created will likely “pend” if the Office 2013 App-V package is in use when the Connection Group is enabled. If that happens, you have to reboot to successfully enable the Connection Group.
-11. After you successfully publish both packages and enable the Connection Group, start the target Office 2013 application and verify that the plug-in you published and added to the connection group works as expected.
+11. After you successfully publish both packages and enable the Connection Group, start the target Office 2013 application and verify that the plug-in you published and added to the Connection Group works as expected.
 
 ### Disabling Office 2013 applications
 
@@ -538,7 +538,7 @@ You may want to disable specific applications in your Office App-V package. For 
 >[!NOTE]
 >To exclude specific Office applications (for example, Access and InfoPath) when you create the App-V package with the Office Deployment Tool, use the **ExcludeApp** setting. For more information, see [Reference for Click-to-Run configuration.xml file](http://technet.microsoft.com/library/jj219426.aspx).
 
-**To disable an Office 2013 application**
+#### To disable an Office 2013 application
 
 1. Open a Deployment Configuration File with a text editor such as **Notepad** and search for “Applications."
 2. Search for the Office application you want to disable, for example, Access 2013.
