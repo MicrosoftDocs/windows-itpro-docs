@@ -39,12 +39,15 @@ When you investigate a user account entity, you'll see:
 
 ![Image of the user account entity details page](images/atp-user-details-view-azureatp.png)
 
+**User details**</br>
 The user account entity details, Azure ATP alerts, and logged on machines sections display various attributes about the user account.
 
 The user entity tile provides details about the user such as when the user was first and last seen. Depending on the integration features you enable, you'll see other details. For example, if you enable the Skype for business integration, you'll be able to contact the user from the portal. 
 
+**Azure Advanced Threat Protection**</br>
 If you have enabled the Azure ATP feature and there are alerts related to the user, you can click on the link that will take you to the Azure ATP page where more information about the alerts are provided. The Azure ATP tile also provides details such as the last AD site, total group memberships, and login failure associated with the user.
 
+**Logged on machines**</br>
 You'll also see a list of the machines that the user logged on to, and can expand these to see details of the logon events on each machine.
 
 >[!NOTE]
@@ -53,9 +56,12 @@ You'll also see a list of the machines that the user logged on to, and can expan
 
 For more information on how to enable advanced features, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md).
 
-The **Alerts related to this user** section provides a list of alerts that are associated with the user account. This list  is a filtered view of the [Alert queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows alerts where the user context is the selected user account, the date when the last activity was detected, a short description of the alert, the machine associated with the alert, the alert's severity, the alert's status in the queue, and who is assigned the alert.
 
-The **Observed in organization** section allows you to specify a date range to see a list of machines where this user was observed logged on to, and the most frequent and least frequent logged on user account on each of these machines.
+**Alerts related to this user**</br>
+This section provides a list of alerts that are associated with the user account. This list  is a filtered view of the [Alert queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows alerts where the user context is the selected user account, the date when the last activity was detected, a short description of the alert, the machine associated with the alert, the alert's severity, the alert's status in the queue, and who is assigned the alert.
+
+**Observed in organization**</br>
+Thissection allows you to specify a date range to see a list of machines where this user was observed logged on to, and the most frequent and least frequent logged on user account on each of these machines.
 
 The machine health state is displayed in the machine icon and color as well as in a description text. Clicking on the icon displays additional details regarding machine health.
 
