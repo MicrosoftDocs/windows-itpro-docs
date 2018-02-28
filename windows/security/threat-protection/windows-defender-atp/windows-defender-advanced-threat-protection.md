@@ -56,7 +56,7 @@ Windows Defender ATP uses the following combination of technology built into Win
     are observed in collected sensor data.
 
 
-    ![Windows Defender ATP service components](images/atp-image.png)
+   ![Windows Defender ATP service components](images/atp-image.png)
 
 Endpoint investigation capabilities in this service let you drill down
 into security alerts and understand the scope and nature of a potential
