@@ -122,7 +122,7 @@ New features in Windows Defender Advanced Threat Protection (ATP) for Windows 10
 
 You can read more about ransomware mitigations and detection capability in Windows Defender Advanced Threat Protection in the blog: [Averting ransomware epidemics in corporate networks with Windows Defender ATP](https://blogs.technet.microsoft.com/mmpc/2017/01/30/averting-ransomware-epidemics-in-corporate-networks-with-windows-defender-atp/).
 
-Get a quick, but in-depth overview of Windows Defender ATP for Windows 10 and the new capabilities in Windows 10, version 1703 see (Windows Defender ATP for Windows 10 Creators Update)[https://technet.microsoft.com/en-au/windows/mt782787].
+Get a quick, but in-depth overview of Windows Defender ATP for Windows 10 and the new capabilities in Windows 10, version 1703 see [Windows Defender ATP for Windows 10 Creators Update](https://technet.microsoft.com/en-au/windows/mt782787).
 
 ### Windows Defender Antivirus
 Windows Defender is now called Windows Defender Antivirus, and we've [increased the breadth of the documentation library for enterprise security admins](/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
@@ -169,7 +169,7 @@ For Windows Phone devices, an administrator is able to initiate a remote PIN res
 
 For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**.
 
-For more details, check out [What if I forget my PIN?](/windows/access-protection/hello-for-business/hello-why-pin-is-better-than-password#what-if-i-forget-my-pin).
+For more details, check out [What if I forget my PIN?](/windows/security/identity-protection/hello-for-business/hello-features#pin-reset).
 
 ### Windows Information Protection (WIP) and Azure Active Directory (Azure AD)
 Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network. For more info, see [Create a Windows Information Protection (WIP) policy using Microsoft Intune](/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune) and [Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Intune](/windows/threat-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune).
