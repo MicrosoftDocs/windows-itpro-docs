@@ -56,7 +56,7 @@ This topic provides a roadmap for planning and getting started on the Windows De
     - [Deploy Windows Defender Application Control: policy rules and file rules](select-types-of-rules-to-create.md)
     - [Merge WDAC policies](merge-windows-defender-application-control-policies.md)<br>
 
-3.  **Audit the WDAC policy and capture information about applications that are outside the policy**. We recommend that you use “audit mode” to carefully test each WDAC policy before you enforce it. With audit mode, no application is blocked—the policy just logs an event whenever an application outside the policy is started. Later, you can expand the policy to allow these applications, as needed. For more information, see [Audit Windows Defender Application Control policies](saudit-windows-defender-application-control-policies).
+3.  **Audit the WDAC policy and capture information about applications that are outside the policy**. We recommend that you use “audit mode” to carefully test each WDAC policy before you enforce it. With audit mode, no application is blocked—the policy just logs an event whenever an application outside the policy is started. Later, you can expand the policy to allow these applications, as needed. For more information, see [Audit Windows Defender Application Control policies](audit-windows-defender-application-control-policies.md).
 
 4.  **Create a “catalog file” for unsigned LOB applications**. Use the Package Inspector tool to create and sign a catalog file for your unsigned LOB applications. For more information, review step 4 **Identify LOB applications that are currently unsigned**, earlier in this list, and see [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-windows-defender-application-control.md). In later steps, you can merge the catalog file's signature into your WDAC policy, so that applications in the catalog will be allowed by the policy. 
 
@@ -68,7 +68,7 @@ This topic provides a roadmap for planning and getting started on the Windows De
     - [Enforce Windows Defender Application Control policies](enforce-windows-defender-application-control-policies.md)
     - [Deploy and manage Windows Defender Application Control with Group Policy](deploy-windows-defender-application-control-policies-using-group-policy.md)<br>
 
-8.  **Enable desired virtualization-based security (VBS) features**. Hardware-based security features—also called virtualization-based security (VBS) features—strengthen the protections offered by [Windows Defender Application Control](windows-defender-application-control). 
+8.  **Enable desired virtualization-based security (VBS) features**. Hardware-based security features—also called virtualization-based security (VBS) features—strengthen the protections offered by [Windows Defender Application Control](windows-defender-application-control.md). 
 
     > [!WARNING]
     >  Virtualization-based protection of code integrity may be incompatible with some devices and applications. We strongly recommend testing this configuration in your lab before enabling virtualization-based protection of code integrity on production systems. Failure to do so may result in unexpected failures up to and including data loss or a blue screen error (also called a stop error).
