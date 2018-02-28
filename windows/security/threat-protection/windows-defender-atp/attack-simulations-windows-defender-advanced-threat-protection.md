@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 28/02/2018
 ---
 
-#  Experience Windows Defender ATP through simulated attacks 
+# Experience Windows Defender ATP through simulated attacks 
 
 **Applies to:**
 
@@ -23,13 +23,13 @@ ms.date: 28/02/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-**Preparations**
+## Preparations
 
 To run the provided simulations, you need at least [one onboarded machine](onboard-configure-windows-defender-advanced-threat-protection.md). 
 
 Before running a simulation, ensure you read the walkthrough document provided with each attack scenario. The document provides detailed instructions as well as specific endpoint OS and application requirements. In general, running the latest Windows build on the test machine helps ensure compatibility.
 
-**Run the simulations**
+## Run a simulation
 
 1. Select your desired simulation scenario from from **Help** > **Simulations and tutorials**.
 

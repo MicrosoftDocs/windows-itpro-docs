@@ -34,6 +34,7 @@
 #### [Configure server endpoints](windows-defender-atp\configure-server-endpoints-windows-defender-advanced-threat-protection.md)
 #### [Configure non-Windows endpoints](windows-defender-atp\configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)
 #### [Run a detection test on a newly onboarded endpoint](windows-defender-atp\run-detection-test-windows-defender-advanced-threat-protection.md)
+#### [Run simulated attacks](windows-defender-atp\attack-simulations-windows-defender-advanced-threat-protection.md)
 #### [Configure proxy and Internet connectivity settings](windows-defender-atp\configure-proxy-internet-windows-defender-advanced-threat-protection.md)
 #### [Troubleshoot onboarding issues](windows-defender-atp\troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
 ### [Understand the Windows Defender ATP portal](windows-defender-atp\use-windows-defender-advanced-threat-protection.md)
