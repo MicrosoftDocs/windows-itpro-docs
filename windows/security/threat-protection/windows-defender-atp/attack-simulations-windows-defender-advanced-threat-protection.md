@@ -33,11 +33,11 @@ Read the walkthrough document provided with each attack scenario. Each document 
 
 ## Run a simulation
 
-1. In **Help** > **Simulations & tutorials**, select which of the available attack scenario you would like to simulate:
+1. In **Help** > **Simulations & tutorials**, select which of the available attack scenarios you would like to simulate:
 
-  - **Scenario 1: Document drops backdoor** - simulates a fileless attack that relies on PowerShell, showcasing attack surface reduction and machine learning detection of malicious memory activity.
+  - **Scenario 1: Document drops backdoor** - simulates delivery of a socially engineered lure document. The document launches a specially crafted backdoor that gives attackers control.
 
-  - **Scenario 2: PowerShell script in fileless attack** - simulates delivery of a socially engineered lure document. The document launches a specially crafted backdoor that gives attackers control.
+  - **Scenario 2: PowerShell script in fileless attack** - simulates a fileless attack that relies on PowerShell, showcasing attack surface reduction and machine learning detection of malicious memory activity.
     
   - **Scenario 3: Automated incident response** - triggers Automated investigation, which automatically hunts for and remediates breach artifacts to scale your incident response capacity.
 
@@ -48,7 +48,7 @@ Read the walkthrough document provided with each attack scenario. Each document 
 4. Run the simulation file or script on the test machine as instructed in the walkthrough document.
 
 >[!NOTE]
->Simulation files or scripts mimic attack activity but are actually benign and will not harm or compromise to your test machine.
+>Simulation files or scripts mimic attack activity but are actually benign and will not harm or compromise the test machine.
 
 ## Related topics
 - [Onboard and set up Windows Defender ATP](onboard-configure-windows-defender-advanced-threat-protection.md)
