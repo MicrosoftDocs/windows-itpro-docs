@@ -155,6 +155,8 @@
 #### [Maps DDF](maps-ddf-file.md)
 ### [Messaging CSP](messaging-csp.md)
 #### [Messaging DDF file](messaging-ddf.md)
+### [MultiSIM CSP](multisim-csp.md)
+#### [MultiSIM DDF file](multisim-ddf.md)
 ### [NAP CSP](nap-csp.md)
 ### [NAPDEF CSP](napdef-csp.md)
 ### [NetworkProxy CSP](networkproxy-csp.md)
