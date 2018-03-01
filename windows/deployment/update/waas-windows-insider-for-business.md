@@ -66,16 +66,17 @@ Administrators can install and manage Insider Preview builds centrally across mu
 To register a domain, follow these steps: 
 
 1.	**Register your domain with the Windows Insider Program**
-Rather than have each user register individually for Insider Preview builds, administrators can simply [register their domain](https://insider.windows.com/for-business-organization-admin/) and control settings centrally.</br>**Note:** The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register the domain.
+Rather than have each user register individually for Insider Preview builds, administrators can simply [register their domain](https://insider.windows.com/for-business-organization-admin/) and control settings centrally.
 
-
->[!Note]
->- Currently, the Windows Insider Program for Business supports [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)--but not on-premises Active Directory--as a corporate authentication method. 
->- If your company has a paid subscription to Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services – you have a free subscription to Microsoft Azure Active Directory. This subscription can be used to create users for enrollment in the Windows Insider Program for Business.
->- If you do not have an AAD account, install Insider Preview builds on individual devices with a registered Microsoft account.    
 
 2. **Apply Policies**
 Once you have registered your enterprise domain, you can control how and when devices receive Windows Insider Preview builds on their devices. See: [How to manage Windows 10 Insider Preview builds across your organization](https://docs.microsoft.com/windows/deployment/update/waas-windows-insider-for-business).
+
+>[!Note]
+>- The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register the domain.
+>- Currently, the Windows Insider Program for Business supports [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)--but not on-premises Active Directory--as a corporate authentication method. 
+>- If your company has a paid subscription to Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services--you have a free subscription to Microsoft Azure Active Directory. This subscription can be used to create users for enrollment in the Windows Insider Program for Business.
+>- If you do not have an AAD account, install Insider Preview builds on individual devices with a registered Microsoft account.
 
 ### Install on a virtual machine 
 This option enables you to run Insider Preview builds without changing the Windows 10 production build already running on a device.
@@ -289,7 +290,7 @@ Windows Insiders are a part of a global community focused on innovation, creativ
 
 The Windows Insider program enables you to deepen connections to learn from peers and to connect to subject matter experts (inside Microsoft, Insiders in your local community and in another country) who understand your unique challenges, and who can provide strategic advice on how to maximize your impact.
  
-Collaborate and learn from experts in the [WINDOWS INSIDER TECH COMMUNITY](https://techcommunity.microsoft.com/t5/Windows-Insider-Program/bd-p/WindowsInsiderProgram)
+Collaborate and learn from experts in the [Windows Insider Tech Community](https://techcommunity.microsoft.com/t5/Windows-Insider-Program/bd-p/WindowsInsiderProgram)
 
 
 ## Additional help resources
