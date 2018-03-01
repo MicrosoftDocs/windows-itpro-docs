@@ -53,25 +53,24 @@ You can install Windows 10 Insider Preview builds directly on individual devices
 
 ### Install on an individual device
 
-1.	Open  [Windows Insider Program settings](ms-settings:windowsinsider) (On your Windows 10 device, go to Start > Settings > Update & security > Windows Insider Program). Note: To see this setting, you need to have administrator rights to your device.
-2.	Link your Microsoft or work account that you used to register as a Windows Insider. 
-3.	Follow the prompts. 
+1.	Open  [Windows Insider Program settings](ms-settings:windowsinsider) (On your Windows 10 device, go to Start > Settings > Update & security > Windows Insider Program). To see this setting, you must have administrator rights to your device.
+2.	Click **Get started** and follow the prompts to link your Microsoft or work account that you used to register as a Windows Insider. 
+
 
 [![Settings UI showing Windows Insider Program item selected in lower left](images/WIP4Biz_Prompts.png)](images/WIP4Biz_Prompts.png)
 
 ### Install across multiple devices
 
-Administrators can install and manage Insider Preview builds centrally across multiple devices within their domain. Here’s how: 
+Administrators can install and manage Insider Preview builds centrally across multiple devices within their domain. To register a domain, you must be registered in the Windows Insider Program with your work account in Azure Active Directory and you must be assigned a **Global Administrator** role on that Azure AD domain. Also requires Windows 10 Version 1703 or later. 
+
+To register a domain, follow these steps: 
 
 1.	**Register your domain with the Windows Insider Program**
 Rather than have each user register individually for Insider Preview builds, administrators can simply [register their domain](https://insider.windows.com/en-us/for-business-organization-admin/) and control settings centrally.</br>**Note:** The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register the domain.
 
-To register a domain, you must be registered in the Windows Insider Program with your work account in Azure Active Directory and you must be assigned a **Global Administrator** role on that Azure AD domain. Also requires Windows 10 Version 1703 or later. 
-
-**Register your domain**. 
 
 >[!Note]
->- Currently, the Windows Insider Program for Business supports [Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-whatis)--but not on-premises Active Directory--as a corporate authentication method. 
+>- Currently, the Windows Insider Program for Business supports [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)--but not on-premises Active Directory--as a corporate authentication method. 
 >- If your company has a paid subscription to Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services – you have a free subscription to Microsoft Azure Active Directory. This subscription can be used to create users for enrollment in the Windows Insider Program for Business.
 >- If you do not have an AAD account, install Insider Preview builds on individual devices with a registered Microsoft account.    
 
@@ -81,10 +80,10 @@ Once you have registered your enterprise domain, you can control how and when de
 ### Install on a virtual machine. 
 This option enables you to run Insider Preview builds without changing the Windows 10 production build already running on a device.
   
-For guidance on setting up virtual machines on your device, see [Introduction to Hyper-V on Windows 10](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/).
+For guidance on setting up virtual machines on your device, see [Introduction to Hyper-V on Windows 10](https://docs.microsoft.com/virtualization/hyper-v-on-windows/about/).
  
 To download the latest Insider Preview build to run on your virtual machine, see
-[Windows Insider Preview downloads](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewadvanced) 
+[Windows Insider Preview downloads](https://www.microsoft.com/software-download/windowsinsiderpreviewadvanced) 
 
 ## Manage Windows Insider Preview builds
 
