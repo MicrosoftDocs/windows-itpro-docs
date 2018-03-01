@@ -536,13 +536,13 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-cellular.md#cellular-letappsaccesscellulardata" id="cellular-letappsaccesscellulardata">Cellular/LetAppsAccessCellularData</a>
   </dd>
   <dd>
-    <a href="./policy-csp-cellular.md#cellular-letappsaccesscellulardata_forceallowtheseapps" id="cellular-letappsaccesscellulardata_forceallowtheseapps">Cellular/LetAppsAccessCellularData_ForceAllowTheseApps</a>
+    <a href="./policy-csp-cellular.md#cellular-letappsaccesscellulardata-forceallowtheseapps" id="cellular-letappsaccesscellulardata_forceallowtheseapps">Cellular/LetAppsAccessCellularData_ForceAllowTheseApps</a>
   </dd>
   <dd>
-    <a href="./policy-csp-cellular.md#cellular-letappsaccesscellulardata_forcedenytheseapps" id="cellular-letappsaccesscellulardata_forcedenytheseapps">Cellular/LetAppsAccessCellularData_ForceDenyTheseApps</a>
+    <a href="./policy-csp-cellular.md#cellular-letappsaccesscellulardata-forcedenytheseapps" id="cellular-letappsaccesscellulardata_forcedenytheseapps">Cellular/LetAppsAccessCellularData_ForceDenyTheseApps</a>
   </dd>
   <dd>
-    <a href="./policy-csp-cellular.md#cellular-letappsaccesscellulardata_userincontroloftheseapps" id="cellular-letappsaccesscellulardata_userincontroloftheseapps">Cellular/LetAppsAccessCellularData_UserInControlOfTheseApps</a>
+    <a href="./policy-csp-cellular.md#cellular-letappsaccesscellulardata-userincontroloftheseapps" id="cellular-letappsaccesscellulardata_userincontroloftheseapps">Cellular/LetAppsAccessCellularData_UserInControlOfTheseApps</a>
   </dd>
   <dd>
     <a href="./policy-csp-cellular.md#cellular-showappcellularaccessui" id="cellular-showappcellularaccessui">Cellular/ShowAppCellularAccessUI</a>
@@ -2865,6 +2865,30 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-textinput.md#textinput-excludejapaneseimeexceptshiftjis" id="textinput-excludejapaneseimeexceptshiftjis">TextInput/ExcludeJapaneseIMEExceptShiftJIS</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-textinput.md#textinput-forcetouchkeyboarddockedstate" id="textinput-forcetouchkeyboarddockedstate">TextInput/ForceTouchKeyboardDockedState</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-textinput.md#textinput-touchkeyboarddictationbuttonavailability" id="">TextInput/TouchKeyboardDictationButtonAvailability</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-textinput.md#textinput-touchkeyboardemojibuttonavailability" id="textinput-touchkeyboarddictationbuttonavailability">TextInput/TouchKeyboardEmojiButtonAvailability</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-textinput.md#textinput-touchkeyboardfullmodeavailability" id="textinput-touchkeyboardfullmodeavailability">TextInput/TouchKeyboardFullModeAvailability</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-textinput.md#textinput-touchkeyboardhandwritingmodeavailability" id="textinput-touchkeyboardhandwritingmodeavailability">TextInput/TouchKeyboardHandwritingModeAvailability</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-textinput.md#textinput-touchkeyboardnarrowmodeavailability" id="textinput-touchkeyboardnarrowmodeavailability">TextInput/TouchKeyboardNarrowModeAvailability</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-textinput.md#textinput-touchkeyboardsplitmodeavailability" id="textinput-touchkeyboardsplitmodeavailability">TextInput/TouchKeyboardSplitModeAvailability</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-textinput.md#textinput-touchkeyboardwidemodeavailability" id="textinput-touchkeyboardwidemodeavailability">TextInput/TouchKeyboardWideModeAvailability</a>
   </dd>
 </dl>
 

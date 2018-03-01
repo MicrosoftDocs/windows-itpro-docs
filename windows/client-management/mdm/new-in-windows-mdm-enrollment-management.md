@@ -1412,6 +1412,14 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Display/EnablePerProcessDpiForApps</li>
 <li>Experience/AllowWindowsSpotlightOnSettings</li>
 <li>TextInput/AllowHardwareKeyboardTextSuggestions</li>
+<li>TextInput/ForceTouchKeyboardDockedState</li>
+<li>TextInput/TouchKeyboardDictationButtonAvailability</li>
+<li>TextInput/TouchKeyboardEmojiButtonAvailability</li>
+<li>TextInput/TouchKeyboardFullModeAvailability</li>
+<li>TextInput/TouchKeyboardHandwritingModeAvailability</li>
+<li>TextInput/TouchKeyboardNarrowModeAvailability</li>
+<li>TextInput/TouchKeyboardSplitModeAvailability</li>
+<li>TextInput/TouchKeyboardWideModeAvailability</li>
 <ul>
 </td></tr>
 <tr class="odd">
