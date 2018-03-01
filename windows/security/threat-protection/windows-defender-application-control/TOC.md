@@ -10,6 +10,7 @@
 
 
 ## [Windows Defender Application Control deployment guide](windows-defender-application-control-deployment-guide.md)
+### [Types of devices](types-of-devices.md)
 ### [Use WDAC with the Microsoft Intelligent Security Graph](use-windows-defender-application-control-with-intelligent-security-graph.md)
 ### [Use WDAC with a managed installer](use-windows-defender-application-control-with-managed-installer.md)
 ### [Use WDAC with custom policies](use-windows-defender-application-control-with-custom policies.md)
