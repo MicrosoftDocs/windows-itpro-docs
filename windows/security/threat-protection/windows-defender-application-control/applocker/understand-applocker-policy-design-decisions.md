@@ -224,7 +224,7 @@ Because the effectiveness of application control policies is dependent on the ab
  
 ## Record your findings
 
-The next step in the process is to record and analyze your answers to the preceding questions. If AppLocker is the right solution for your goals, tyou can set your application control policy objectives and plan your AppLocker rules. This process culminates in creating your planning document.
+The next step in the process is to record and analyze your answers to the preceding questions. If AppLocker is the right solution for your goals, you can set your application control policy objectives and plan your AppLocker rules. This process culminates in creating your planning document.
 
 -   For info about setting your policy goals, see [Determine your application control objectives](determine-your-application-control-objectives.md).
 -   For info about creating your planning document, see [Create your AppLocker planning document](create-your-applocker-planning-document.md).
