@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 08/26/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 03/01/2018
 ---
 
 # Manage Windows Defender AV in your business
