@@ -21,7 +21,7 @@ New or changed topic | Description
 ## January 2018
 |New or changed topic |Description |
 |---------------------|------------|
-|[Windows Defender Application Control](windows-defender-exploit-guardwindows-defender-application-control/windows-defender-application-control.md)|New topic. WDAC replaces cofigurable code integrity policies. |
+|[Windows Defender Application Control](windows-defender-application-control/windows-defender-application-control.md)|New topic. WDAC replaces cofigurable code integrity policies. |
 
 ## November 2017
 |New or changed topic |Description |
