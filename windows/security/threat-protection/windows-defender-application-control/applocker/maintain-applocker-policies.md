@@ -27,10 +27,19 @@ Common AppLocker maintenance scenarios include:
 -   An app appears to be allowed but should be blocked.
 -   A single user or small subset of users needs to use a specific app that is blocked.
 
-There are two methods you can use to maintain AppLocker policies:
+There are three methods you can use to maintain AppLocker policies:
 
+-   [Maintaining AppLocker policies by using Mobile Device Management (MDM)](#bkmk-applkr-use-mdm)
 -   [Maintaining AppLocker policies by using Group Policy](#bkmk-applkr-use-gp)
 -   [Maintaining AppLocker policies on the local computer](#bkmk-applkr-use-locsnapin)
+
+## <a href="" id="bkmk-applkr-use-mdm"></a>Maintaining AppLocker policies by using Mobile Device Management (MDM)
+
+
+
+## <a href="" id="bkmk-applkr-use-gp"></a>Maintaining AppLocker policies by using Group Policy
+
+For every scenario, the steps to maintain an AppLocker policy distributed by Group Policy include the following tasks.
 
 As new apps are deployed or existing apps are removed by your organization or updated by the software publisher, you might need to make revisions to your rules and update the Group Policy Object (GPO) to ensure that your policy is current.
 
@@ -38,10 +47,6 @@ You can edit an AppLocker policy by adding, changing, or removing rules. However
 versions of GPOs.
 
 >**Caution:**  You should not edit an AppLocker rule collection while it is being enforced in Group Policy. Because AppLocker controls what files are allowed to run, making changes to a live policy can create unexpected behavior.
- 
-## <a href="" id="bkmk-applkr-use-gp"></a>Maintaining AppLocker policies by using Group Policy
-
-For every scenario, the steps to maintain an AppLocker policy distributed by Group Policy include the following tasks.
 
 ### Step 1: Understand the current behavior of the policy
 

@@ -20,10 +20,14 @@ This topic for IT professionals describes the steps required to modify an AppLoc
 
 You can edit an AppLocker policy by adding, changing, or removing rules. However, you cannot create a new version of the policy by importing additional rules. To modify an AppLocker policy that is in production, you should use Group Policy management software that allows you to version Group Policy Objects (GPOs). If you have created multiple AppLocker policies and need to merge them to create one AppLocker policy, you can either manually merge the policies or use the Windows PowerShell cmdlets for AppLocker. You cannot automatically merge policies by using the AppLocker snap-in. You must create one rule collection from two or more policies. The AppLocker policy is saved in XML format, and the exported policy can be edited with any text or XML editor. For info about merging policies, see [Merge AppLocker policies manually](merge-applocker-policies-manually.md) or [Merge AppLocker policies by using Set-ApplockerPolicy](merge-applocker-policies-by-using-set-applockerpolicy.md).
 
-There are two methods you can use to edit an AppLocker policy:
+There are three methods you can use to edit an AppLocker policy:
 
+-   [Editing an AppLocker policy by using Mobile Device Management (MDM)](#bkmk-editapppolinmdm)
 -   [Editing an AppLocker policy by using Group Policy](#bkmk-editapppolingpo)
 -   [Editing an AppLocker policy by using the Local Security Policy snap-in](#bkmk-editapplolnotingpo)
+
+## <a href="" id="bkmk-editapppolinmdm"></a>Editing an AppLocker policy by using Mobile Device Management (MDM)
+
 
 ## <a href="" id="bkmk-editapppolingpo"></a>Editing an AppLocker policy by using Group Policy
 
