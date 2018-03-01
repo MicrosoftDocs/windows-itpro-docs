@@ -38,9 +38,9 @@ As part of Windows Insider Lab for Enterprise, you can upgrade to Windows 10 Ent
 
 Choose one of the following two enrollment options:
 
-1. [Keep your current Windows 10 edition](#enrollment-keep-current-edition)
+- [Keep your current Windows 10 edition](#enrollment-keep-current-edition)
 
-2. [Upgrade your Windows 10 edition from Pro to Enterprise](#enrollment-upgrade-to-enterprise)
+- [Upgrade your Windows 10 edition from Pro to Enterprise](#enrollment-upgrade-to-enterprise)
 
 <a id="enrollment-keep-current-edition"></a>
 
@@ -124,6 +124,6 @@ This is the Bring Your Own Device (BYOD) method--your device will receive Olympi
 
 13. Open the **Feedback Hub**, and sign in with your **Olympia corporate account**.
 
-[!Note]
+>[!NOTE]
 > Your Windows 10 Enterprise license will not be renewed if your device is not connected to Olympia.
 

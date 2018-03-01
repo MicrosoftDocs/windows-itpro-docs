@@ -35,7 +35,7 @@ To get started with the Windows Insider Program for Business, follow these steps
 >In **Group Policy**, this setting is in **Computer Configuration/Administrative Templates/Windows Components/Data Collection and Preview Builds - Allow Telemetry**. In **MDM**, the setting is in [**System/AllowTelemetry**](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry). 
 
 
-## Register to the Windows Insider Program for Business
+## Register in the Windows Insider Program for Business
 
 The first step to installing a Windows 10 Insider Preview build is to register as a Windows Insider. You and your users have two registration options. 
 
@@ -43,7 +43,7 @@ The first step to installing a Windows 10 Insider Preview build is to register a
 Registering with your work account in Azure Active Directory (AAD) is required to submit feedback on behalf of your organization and manage Insider Preview builds on other devices in your domain.   
 
 >[!NOTE]
->Requires Windows 10 Version 1703 or later. Confirm by going to Settings>System>About. If you do not have an AAD account, [find out how to get an Azure Active Directory tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-howto-tenant).
+>Requires Windows 10 Version 1703 or later. Confirm by going to Settings>System>About. If you do not have an AAD account, [find out how to get an Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
 
 ### Register your personal account
 Use the same account that you use for other Microsoft services. If you don’t have a Microsoft account, it is easy to get one. [Get a Microsoft account](https://account.microsoft.com/account).
@@ -66,7 +66,7 @@ Administrators can install and manage Insider Preview builds centrally across mu
 To register a domain, follow these steps: 
 
 1.	**Register your domain with the Windows Insider Program**
-Rather than have each user register individually for Insider Preview builds, administrators can simply [register their domain](https://insider.windows.com/en-us/for-business-organization-admin/) and control settings centrally.</br>**Note:** The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register the domain.
+Rather than have each user register individually for Insider Preview builds, administrators can simply [register their domain](https://insider.windows.com/for-business-organization-admin/) and control settings centrally.</br>**Note:** The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register the domain.
 
 
 >[!Note]
@@ -75,9 +75,9 @@ Rather than have each user register individually for Insider Preview builds, adm
 >- If you do not have an AAD account, install Insider Preview builds on individual devices with a registered Microsoft account.    
 
 2. **Apply Policies**
-Once you have registered your enterprise domain, you can control how and when devices receive Windows Insider Preview builds on their devices. See: [How to manage Windows 10 Insider Preview builds across your organization](https://docs.microsoft.com/en-us/windows/deployment/update/waas-windows-insider-for-business).
+Once you have registered your enterprise domain, you can control how and when devices receive Windows Insider Preview builds on their devices. See: [How to manage Windows 10 Insider Preview builds across your organization](https://docs.microsoft.com/windows/deployment/update/waas-windows-insider-for-business).
 
-### Install on a virtual machine. 
+### Install on a virtual machine 
 This option enables you to run Insider Preview builds without changing the Windows 10 production build already running on a device.
   
 For guidance on setting up virtual machines on your device, see [Introduction to Hyper-V on Windows 10](https://docs.microsoft.com/virtualization/hyper-v-on-windows/about/).
@@ -274,11 +274,11 @@ To go from a Preview build to the Semi-Annual Channel, use the [Media Creation T
 
 ## Unregister
 
-If you no longer plan to manage Windows Insider Preview policies for your organization, you will need to [unregister your domain with the Windows Insider Program](https://insider.windows.com/en-us/insiderorgleaveprogram/). 
+If you no longer plan to manage Windows Insider Preview policies for your organization, you will need to [unregister your domain with the Windows Insider Program](https://insider.windows.com/insiderorgleaveprogram/). 
 
 Unregistering will not allow any other administrators at your organization to continue to set policies to manage Windows Insider Preview builds across your organization.
 
-Your individual registration with the Insider program will not be impacted. If you wish to leave the Insider program, see the [leave the program](https://insider.windows.com/en-us/how-to-overview/#leave-the-program) instructions.
+Your individual registration with the Insider program will not be impacted. If you wish to leave the Insider program, see the [leave the program](https://insider.windows.com/how-to-overview/#leave-the-program) instructions.
 
 >[!IMPORTANT]
 >Once your domain is unregistered, setting the **Branch Readiness Level** to preview builds will have no effect. Return this setting to its unconfigured state in order to enable users to control it from their devices.
