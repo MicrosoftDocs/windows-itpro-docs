@@ -19,9 +19,9 @@
 ### [Merge WDAC policies](merge-windows-defender-application-control-policies.md)
 ### [Enforce WDAC policies](enforce-windows-defender-application-control-policies.md)
 ### [Deploy WDAC policies](deploy-windows-defender-application-control-policies.md)
-#### [Deploy WDAC policies by using Group Policy](deploy-windows-defender-application-control-policies-using-group-policy.md)
-#### [Deploy Windows Defender Application Control policies by using System Center Configuration Manager](deploy-windows-defender-application-control-policies-using-sccm.md)
-#### [Deploy Windows Defender Application Control policies by using Microsoft Intune](deploy-windows-defender-application-control-policies-using-intune.md)
+#### [Use Group Policy](deploy-windows-defender-application-control-policies-using-group-policy.md)
+#### [Use SCCM](deploy-windows-defender-application-control-policies-using-sccm.md)
+#### [Use Intune](deploy-windows-defender-application-control-policies-using-intune.md)
 ### [Use code signing to simplify application control for classic Windows applications](use-code-signing-to-simplify-application-control-for-classic-windows-applications.md)
 #### [Optional: Use the Device Guard Signing Portal in the Microsoft Store for Business](use-device-guard-signing-portal-in-microsoft-store-for-business.md)
 #### [Optional: Create a code signing cert for WDAC](create-code-signing-cert-for-windows-defender-application-control.md)
@@ -29,6 +29,7 @@
 ### [Manage packaged apps with WDAC](manage-packaged-apps-with-windows-defender-application-control.md)
 ### [Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules](use-windows-defender-application-control-policy-to-control-specific-plug-ins-add-ins-and-modules.md)
 ### [Use signed policies to protect Windows Defender Application Control against tampering](use-signed-policies-to-protect-windows-defender-application-control-against-tampering.md)
+### [Disable WDAC policies](disable-windows-defender-application-control-policies.md)
 
 
 ## [Windows Defender Application Control and AppLocker](windows-defender-application-control-and-applocker.md)
