@@ -123,7 +123,11 @@ The following table describes each factor that impacts round-trip time in more d
 
 The following table displays sample values for each of the previous factors. In each variation, 120 packages are refreshed from the App-V management server.
 
-|||||||||
+|Scenario|Variation|Number of connection groups|Number of access groups|Number of publishing servers|Network connection type|Round-trip response time (seconds)|Management server CPU utilization|
+|---|---|---|---|---|---|---|
+|Publishing servers contact management server for publishing metadata at same time|0<br>0<br>0<br>0<br>0<br>0|1<br>1<br>1<br>1<br>1<br>1|50<br>100<br>200<br>300<br>315<br>320|LAN|5<br>10<br>19<br>32<br>30<br>37|17<br>17<br>17<br>15<br>17<br>15|
+|Publishing metadata contains connection groups|10<br>20<br>100<br>150<br>300<br>400|1<br>1<br>1<br>1<br>1<br>1|100<br>100<br>100<br>100<br>100<br>100|LAN|10<br>11<br>11<br>16<br>22<br>25|17<br>19<br>22<br>19<br>20<br>20|
+|Publishing metadata contains access groups|0<br>0<br>0<br>0|1<br>10<br>20<br>40|100<br>100<br>100<br>100|LAN|10<br>43<br>153<br>535|17<br>26<br>24<br>24|
 
 <table>
 <colgroup>
@@ -317,6 +321,11 @@ The following table displays sample values for each of the previous factors. In 
 The CPU utilization of the computer running the management server is around 25% irrespective of the number of publishing servers targeting it. The Microsoft SQL Server database transactions/sec, batch requests/sec and user connections are identical irrespective of the number of publishing servers. For example, transactions/sec is ~30, batch requests ~200, and user connects ~6.
 
 Using a geographically distributed deployment, where the management server and publishing servers utilize a slow link network between them, the round-trip response time on the publishing servers is within acceptable time limits (&lt;5 seconds), even for 100 simultaneous requests on a single management server.
+
+|Scenario|Variation|Number of connection groups|Number of access groups|Number of publishing servers|Network connection type|Round-trip response time (seconds)|Management server CPU utilization|
+|---|---|---|---|---|---|---|
+|Network connection between the publishing server and management server|1.5 Mbps Slow link Network|0<br>0|1<br>1|50<br>100|1.5 Mbps Cable DSL|4<br>5|1<br>2|
+|Network connection between the publishing server and management server|LAN/WiFi Network|0<br>0|1<br>1|100<br>200|WiFi|11<br>20|15<br>17|
 
 <table>
 <colgroup>
