@@ -5,8 +5,8 @@ ms.author: nibr
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
-ms.date: 02/28/2018
+author: jaimeo
+ms.date: 03/02/2018
 ---
 
 # Olympia Corp
@@ -40,7 +40,7 @@ Choose one of the following two enrollment options:
 
 - If you need to keep your current Windows 10 edition, follow the steps to [set up an AAD-registered device](#enrollment-keep-current-edition). However, you will not be able to log on to the device with your Olympia account.
 
-- If you want to upgrade your Windows 10 edition from Pro to Enterprise, follow the steps to  [set up an Azure Active Direcotry-joined device](#enrollment-upgrade-to-enterprise). You will be able to log on to the device with your Olympia account.
+- If you want to upgrade your Windows 10 edition from Pro to Enterprise, follow the steps to  [set up an Azure Active Directory-joined device](#enrollment-upgrade-to-enterprise). You will be able to log on to the device with your Olympia account.
 
 <a id="enrollment-keep-current-edition"></a>
 
