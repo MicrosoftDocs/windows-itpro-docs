@@ -21,28 +21,10 @@ The following recommendations can be used as a baseline to help determine capaci
 
 Before you design the App-V infrastructure, determining which applications will be available virtually, and also identify the target users and their locations. This information will determine what type of App-V infrastructure your project should implement. Your should base your decisions about your project's scope on your organization's specific needs.
 
-<table>
-<colgroup>
-<col width="30%" />
-<col width="70%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Task</th>
-<th align="left">More information</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Determine application scope</p></td>
-<td align="left"><p>The App-V infrastructure can be set up in different ways depending on which applications you want to virtualize. This means your first task is to define which applications you want to virtualize.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Determine location scope</p></td>
-<td align="left"><p>"Location scope" refers to the physical locations where you plan to run the virtualized applications (for example, enterprise-wide or a specific geographic location). It can also refer to the user population that will run the virtual applications (for example, a single department). You should obtain a network map that includes the connection paths, the available bandwidth for each location, the number of users using virtualized applications, and the WAN link speed.</p></td>
-</tr>
-</tbody>
-</table>
+|Task|More information|
+|----|----------------|
+|Determine application scope|The App-V infrastructure can be set up in different ways depending on which applications you want to virtualize. This means your first task is to define which applications you want to virtualize.|
+|Determine location scope|"Location scope" refers to the physical locations where you plan to run the virtualized applications (for example, enterprise-wide or a specific geographic location). It can also refer to the user population that will run the virtual applications (for example, a single department). You should obtain a network map that includes the connection paths, the available bandwidth for each location, the number of users using virtualized applications, and the WAN link speed.|
 
 ## Determine which App-V infrastructure is required
 
@@ -51,17 +33,13 @@ You can also manage your App-V environment using an electronic software distribu
 * **Standalone model**—The standalone model allows virtual applications to be Windows Installer-enabled for distribution without streaming. App-V in Standalone mode only needs the sequencer and the client; no additional components are required. Applications are prepared for virtualization using a process called sequencing. For more information, see [Planning for the App-V Sequencer and Client deployment](appv-planning-for-sequencer-and-client-deployment.md). The standalone model is recommended for the following scenarios:
 
     * When there are disconnected remote users who can't connect to the App-V infrastructure.
-
     * When you're running a software management system, such as System Center 2012 Configuration Manager.
-
     * When network bandwidth limitations inhibit electronic software distribution.
 
 * **Full infrastructure model**—The full infrastructure model provides for software distribution, management, and reporting capabilities; it also includes the streaming of applications across the network. The App-V full infrastructure model consists of one or more App-V management servers that can be used to publish applications to all clients. Publishing places the virtual application icons and shortcuts on the target computer. It can also stream applications to local users. For more information about how to install the management server, see [Planning for App-V Server deployment](appv-planning-for-appv-server-deployment.md). The full infrastructure model is recommended for the following scenarios:
 
     * When you want to use the Management Server to publish the application to target computers.
-
     * For rapid provisioning of applications to target computers.
-
     * When you want to use App-V reporting.
 
 >[!IMPORTANT]
@@ -94,6 +72,12 @@ The following table describes each factor that impacts round-trip time in more d
 
 >[!NOTE]
 >Round trip response time is the time taken by the computer running the App-V publishing server to receive a successful package metadata update from the management server.
+
+|Factors impacting round-trip response time|Description|
+|------------------------------------------|-----------|
+|The number of publishing servers simultaneously requesting package metadata refreshes.|A single management server can respond to up to 320 publishing servers simultaneously requesting publishing metadata. For example, in a case with 30 publishing servers simultaneously requesting publishing metadata, the round-trip response time is ~40 seconds, while for less than 50 servers it's less than 5 seconds. From 50 to 320 publishing servers, response team increases linearly (approximately 2×).|
+|The number of connection groups configured on the management server.|For up to 100 connection groups, there is no significant change in the round-trip response time on the publishing server. For 100–400 connection groups, there is a minor linear increase in the round-trip response time.|
+|The number of access groups configured on the management server.|For up to 40 access groups, there is a linear (approximately 3×) increase in the round-trip response time on the publishing server.|
 
 <table>
 <colgroup>
@@ -138,6 +122,8 @@ The following table describes each factor that impacts round-trip time in more d
 </table>
 
 The following table displays sample values for each of the previous factors. In each variation, 120 packages are refreshed from the App-V management server.
+
+|||||||||
 
 <table>
 <colgroup>
