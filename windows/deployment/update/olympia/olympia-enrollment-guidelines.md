@@ -23,7 +23,7 @@ As an Olympia user, you will have an opportunity to:
 -   Provide feedback.
 -   Interact with engineering team members through a variety of communication channels.
 
-[!Note]
+>[!Note]
 >Enterprise features may have reduced, or different security, privacy, accessibility, availability, and reliability standards relative to commercially provided services and software. We may change or discontinue any of the Enterprise features at any time without notice.
 
 For more information about Olympia Corp, see [https://olympia.windows.com/Info/FAQ](https://olympia.windows.com/Info/FAQ).
@@ -38,13 +38,13 @@ As part of Windows Insider Lab for Enterprise, you can upgrade to Windows 10 Ent
 
 Choose one of the following two enrollment options:
 
-- [Keep your current Windows 10 edition](#enrollment-keep-current-edition)
+- If you need to keep your current Windows 10 edition, follow the steps to [set up an AAD-registered device](#enrollment-keep-current-edition). However, you will not be able to log on to the device with your Olympia account.
 
-- [Upgrade your Windows 10 edition from Pro to Enterprise](#enrollment-upgrade-to-enterprise)
+- If you want to upgrade your Windows 10 edition from Pro to Enterprise, follow the steps to  [set up an Azure Active Direcotry-joined device](#enrollment-upgrade-to-enterprise). You will be able to log on to the device with your Olympia account.
 
 <a id="enrollment-keep-current-edition"></a>
 
-### Set up an Azure Active Directory REGISTERED Windows 10 device
+### Set up an Azure Active Directory-REGISTERED Windows 10 device
 
 This is the Bring Your Own Device (BYOD) method--your device will receive Olympia policies and features, but a new account will not be created. See [Set up Azure Active Directory registered Windows 10 devices](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup) for additional information.
 
@@ -80,7 +80,7 @@ This is the Bring Your Own Device (BYOD) method--your device will receive Olympi
 
 <a id="enrollment-upgrade-to-enterprise"></a>
 
-### Set up Azure Active Directory JOINED Windows 10 device
+### Set up Azure Active Directory-JOINED Windows 10 device
 
 -   This method will upgrade your Windows 10 Pro license to Enterprise and create a new account. See [Set up Azure Active Directory joined devices](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup) for more information.
 
