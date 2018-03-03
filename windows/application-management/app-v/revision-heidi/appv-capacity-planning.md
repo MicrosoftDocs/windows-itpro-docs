@@ -431,6 +431,12 @@ App-V clients send reporting data to the reporting server. The reporting server 
 >[!NOTE]
 >Round-trip response time is the time taken by the computer running the App-V client to send the reporting information to the reporting server and receive a successful notification from the reporting server.
 
+|Scenario|Summary|
+|---|---|
+|Multiple App-V clients send reporting information to the reporting server simultaneously.|Round-trip response time from the reporting server is 2.6 seconds for 500 clients. Round-trip response time from the reporting server is 5.65 seconds for 1000 clients. Round-trip response time increases linearly depending on number of clients.|
+|Requests per second processed by the reporting server.|A single reporting server and a single database, can process a maximum of 139 requests per second. The average is 121 requests/second. Using two reporting servers reporting to the same Microsoft SQL Server database, the average requests/second,like a single reporting server, is ~127, with a max of 278 requests/second. A single reporting server can process 500 concurrent/active connections. A single reporting server can process a maximum 1,500 concurrent connections.|
+|Reporting database.|Lock contention on the computer running Microsoft SQL Server is the limiting factor for requests/second. Throughput and response time are independent of database size.|
+
 <table>
 <colgroup>
 <col width="50%" />
@@ -494,6 +500,12 @@ Computers running the App-V client connect to the App-V publishing server to sen
   * The number of packages in each refresh.
   * The available network bandwidth in your environment between the client and the App-V publishing server.
 
+|Scenario|Summary|
+|---|---|
+|Multiple App-V clients connect to a single publishing server simultaneously.|A publishing server running dual core processors can respond to at most 5000 clients requesting a refresh simultaneously. For 5,000–10,000 clients, the publishing server requires a minimum quad core. For 10,000–20,000 clients, the publishing server should have dual quad cores for more efficient response times. A publishing server with a quad core can refresh up to 10,000 packages within three seconds. (Supports 10,000 simultaneous clients.)|
+|Number of packages in each refresh.|Increasing number of packages will increase response time by ~40% (up to 1,000 packages).|
+|Network between the App-V client and the publishing server.|Across a slow network (1.5 Mbps bandwidth), there is a 97% increase in response time compared to LAN (up to 1,000 users).|
+
 <table>
 <colgroup>
 <col width="50%" />
@@ -536,7 +548,18 @@ Computers running the App-V client connect to the App-V publishing server to sen
 </table>
 
 >[!NOTE]
->The publishing server CPU usage is always high during the time interval when it must process simultaneous requests (&gt;90% in most cases). The publishing server can handle ~1,500 client requests in one second.
+>The publishing server CPU usage is always high during the time interval when it must process simultaneous requests (>90% in most cases). The publishing server can handle ~1,500 client requests in one second.
+
+|Scenario|Variation|Number of App-V clients|Number of packages|Processor configuration on publishing server|Network connection type|Round trip time on the App-V client (in seconds)|CPU utilization on publishing server (in %)|
+|---|---|---|---|---|---|---|---|
+|App-V client sends publishing refresh request and receives response, each request containing 120 packages|Number of clients|100<br>1,000<br>5,000<br>10,000|120<br>120<br>120<br>120|Dual Core<br>Dual Core<br>Quad Core<br>Quad Core||||
+|Multiple packages in each refresh.|Number of packages|1,000<br>1,000|500<br>1,000|Quad Core||||
+|Network between client and publishing server.|1.5 Mbps Slow link network|100<br>500<br>1,000|120<br>120<br>120|Quad Core||||
+|||||||||
+|||||||||
+|||||||||
+|||||||||
+|||||||||
 
 <table>
 <colgroup>
