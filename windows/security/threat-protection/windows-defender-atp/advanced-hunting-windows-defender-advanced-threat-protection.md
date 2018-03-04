@@ -86,9 +86,17 @@ The following tables are exposed as part of advanced hunting:
 The results set has several capabilities to provide you with effective investigation, including:
 
 - Columns that return entity-related objects, such as Machine name, Machine ID, File name, SHA1, User, IP, and URL, are linked to their entity pages in the Windows Defender ATP portal.
-- If you right-click on a cell in the results set, you can add a filter to your written query. The current filtering options are **include** or **exclude**; these cell values are part of the row set. 
+- If you right-click on a cell in the results set, you can add a filter to your written query. The current filtering options are **include**, **exclude** or **advanced filter**, which provides you additional filtering options on the cell value; these cell values are part of the row set. 
  
 ![Image of Windows Defender ATP advanced hunting results set](images/atp-advanced-hunting-results-set.png)
+
+## Filters on results in advanced hunting
+In Advanced Hunting, you have an advanced filter on the output results set of the query - 
+The filters provide an overview of the result set - 
+each column has it's own section, which shows the distict values that appear in the column and their prevalence.
+you can refine your query based on the filters - 
+simply click the "+" or "-" buttons on the values you want to include or exclude and click on the **"Run query"** button.
+your filter selections will resolve into additional query term and the results will be updated accordingly.
 
 ## Related topics
 
