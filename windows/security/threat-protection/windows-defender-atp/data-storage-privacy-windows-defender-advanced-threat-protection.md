@@ -40,6 +40,14 @@ Microsoft uses this data to:
 
 Microsoft does not use your data for advertising or for any other purpose other than providing you the service.
 
+## Data protection and encryption
+The Windows Defender ATP service utilizes state of the art data protection technologies which are based on Microsoft Azure infrastructure. 
+
+Among the various data protection technologies used ensures that customer data is <u>always</u> encrypted. For more information on the encryption technologies used by Windows Defender ATP, such as encryption at rest, encryption in flight, and key management with Key Vault and other technologies, see [Azure encryption overview](https://docs.microsoft.com/en-us/azure/security/security-azure-encryption-overview). 
+
+In all scenarios, data is encrypted using 256-bit [AES encyption](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) at the minimum.
+
+
 ## Do I have the flexibility to select where to store my data?
 
 When onboarding the service for the first time, you can choose to store your data in Microsoft Azure datacenters in Europe or in the United States. Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Microsoft will not under any circumstance, transfer the data from the specified geolocation into another geolocation.
