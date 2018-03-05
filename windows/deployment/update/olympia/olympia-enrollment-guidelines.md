@@ -17,14 +17,14 @@ Windows Insider Lab for Enterprise is intended for Windows Insiders who want to 
 
 As an Olympia user, you will have an opportunity to: 
 
--   Use various Enterprise features like WIP (Windows Information Protection), ATP (Advanced Threat Protection), WDAG (Windows Defender Application Guard), and APP-V (Application virtualization).
+-   Use various Enterprise features like Windows Information Protection (WIP), Advanced Threat Protection (ATP), windows Defender Application Guard (WDAG), and Application Virtualization (APP-V).
 -   Learn how Microsoft is preparing for GDPR, as well as enabling enterprise customers to prepare for their own readiness.
 -   Validate and test pre-release software in your environment.
 -   Provide feedback.
 -   Interact with engineering team members through a variety of communication channels.
 
 >[!Note]
->Enterprise features may have reduced, or different security, privacy, accessibility, availability, and reliability standards relative to commercially provided services and software. We may change or discontinue any of the Enterprise features at any time without notice.
+>Enterprise features might have reduced or different security, privacy, accessibility, availability, and reliability standards relative to commercially provided services and software. We may change or discontinue any of the Enterprise features at any time without notice.
 
 For more information about Olympia Corp, see [https://olympia.windows.com/Info/FAQ](https://olympia.windows.com/Info/FAQ).
 
@@ -38,9 +38,9 @@ As part of Windows Insider Lab for Enterprise, you can upgrade to Windows 10 Ent
 
 Choose one of the following two enrollment options:
 
-- If you need to keep your current Windows 10 edition, follow the steps to [set up an AAD-registered device](#enrollment-keep-current-edition). However, you will not be able to log on to the device with your Olympia account.
+- To set up an AAD-registered device, [follow these steps](#enrollment-keep-current-edition). In this case, you log onto the device by using an existing (non-Olympa) account.
 
-- If you want to upgrade your Windows 10 edition from Pro to Enterprise, follow the steps to  [set up an Azure Active Directory-joined device](#enrollment-upgrade-to-enterprise). You will be able to log on to the device with your Olympia account.
+- If you are running Windows 10 Pro, we recommend that you upgrade to Windows 10 Enterprise by following these steps to  [set up an Azure Active Directory-joined device](#enrollment-upgrade-to-enterprise). In this case, you will be able to log on to the device with your Olympia account.
 
 <a id="enrollment-keep-current-edition"></a>
 
