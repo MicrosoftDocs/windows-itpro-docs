@@ -32,6 +32,7 @@ AppLocker helps administrators control how users can access and use files, such 
 
 | Topic | Description |
 | - | - |
+| [Administer AppLocker using Mobile Device Management (MDM)](administer-applocker-using-mdm.md) | This topic describes how to used MDM to manage AppLocker policies. |
 | [Maintain AppLocker policies](maintain-applocker-policies.md) | This topic describes how to maintain rules within AppLocker policies. |
 | [Edit an AppLocker policy](edit-an-applocker-policy.md) | This topic for IT professionals describes the steps required to modify an AppLocker policy. |
 | [Test and update an AppLocker policy](test-and-update-an-applocker-policy.md) | This topic discusses the steps required to test an AppLocker policy prior to deployment. |
