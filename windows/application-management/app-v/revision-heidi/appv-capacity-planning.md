@@ -550,16 +550,11 @@ Computers running the App-V client connect to the App-V publishing server to sen
 >[!NOTE]
 >The publishing server CPU usage is always high during the time interval when it must process simultaneous requests (>90% in most cases). The publishing server can handle ~1,500 client requests in one second.
 
-|Scenario|Variation|Number of App-V clients|Number of packages|Processor configuration on publishing server|Network connection type|Round trip time on the App-V client (in seconds)|CPU utilization on publishing server (in %)|
+|Scenario|Variation|Number of App-V clients|Number of packages|Processor configuration on publishing server|Network connection type|App-V client round-trip time (in seconds)|CPU utilization on publishing server (in %)|
 |---|---|---|---|---|---|---|---|
-|App-V client sends publishing refresh request and receives response, each request containing 120 packages|Number of clients|100<br>1,000<br>5,000<br>10,000|120<br>120<br>120<br>120|Dual Core<br>Dual Core<br>Quad Core<br>Quad Core||||
-|Multiple packages in each refresh.|Number of packages|1,000<br>1,000|500<br>1,000|Quad Core||||
-|Network between client and publishing server.|1.5 Mbps Slow link network|100<br>500<br>1,000|120<br>120<br>120|Quad Core||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
+|App-V client sends publishing refresh request and receives response, each request containing 120 packages|Number of clients|100<br>1,000<br>5,000<br>10,000|120<br>120<br>120<br>120|Dual Core<br>Dual Core<br>Quad Core<br>Quad Core|LAN|1<br>2<br>2<br>3|100<<br>99<br>89<br>77|
+|Multiple packages in each refresh.|Number of packages|1,000<br>1,000|500<br>1,000|Quad Core|LAN|2<br>3|92<br>91|
+|Network between client and publishing server.|1.5 Mbps Slow link network|100<br>500<br>1,000|120<br>120<br>120|Quad Core|1.5 Mbps intra-continental network|3<br>10 (0.2% failure rate)<br>7 (1% failure rate)||
 
 <table>
 <colgroup>
@@ -712,6 +707,12 @@ Computers running the App-V client stream the virtual application package from t
   * The size of the package being streamed.
   * The available network bandwidth in your environment between the client and the streaming server.
 
+|Scenario|Summary|
+|---|---|
+|Multiple App-V clients stream applications from a single streaming server simultaneously.|If the number of clients simultaneously streaming from the same server increases, there is a linear relationship with the package download/streaming time.|
+|Size of the package being streamed.|The package size has a significant impact on the streaming/download time only for larger packages with a size of about 1 GB. For package sizes ranging from 3 MB to 100 MB, the streaming time ranges from 20 seconds to 100 seconds, with 100 simultaneous clients.|
+|Network between the App-V client and the streaming server.|Across a slow network (1.5 Mbps bandwidth), there is a 70–80% increase in response time compared to LAN (up to 100 users).|
+
 <table>
 <colgroup>
 <col width="50%" />
@@ -751,6 +752,12 @@ Computers running the App-V client stream the virtual application package from t
 </table>
 
 The following table displays sample values for each of the factors in the previous list:
+
+|Scenario|Variation|Number of App-V clients|Size of each package|Network connection type|Round-trip time on the App-V client (in seconds)|
+|---|---|---|---|---|---|
+|Multiple App-V clients streaming virtual application packages from a streaming server.|Number of clients.|100<br>200<br>1,000<br>100<br>200<br>1,000|3.5 MB<br>3.5 MB<br>3.5 MB<br>5 MB<br>5 MB<br>5 MB|LAN|29<br>39<br>391<br>35<br>68<br>461|
+|Size of each package being streamed.|Size of each package.|100<br>200<br>100<br>200|21 MB<br>21 MB<br>109 MB<br>109 MB|LAN|33<br>83<br>100<br>160|
+|Network connection between client and App-V streaming server.|1.5 Mbps Slow link network.|100<br>100|3.5 MB<br>5 MB|1.5 Mbps intra-continental network|102<br>121|
 
 <table style="width:100%;">
 <colgroup>
