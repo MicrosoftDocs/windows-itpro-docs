@@ -52,8 +52,8 @@ The following section describes end-to-end App-V sizing and planning. For more s
 >[!NOTE]
 >Round trip response time on the client is the time taken by the computer running the App-V client to receive a successful notification from the publishing server. Round trip response time on the publishing server is the time taken by the computer running the publishing server to receive a successful package metadata update from the management server.
 
-* 20,000 clients can target a single publishing server to obtain the package refreshes in an acceptable round trip time. (&lt;3 seconds.)
-* A single management server can support up to 50 publishing servers for package metadata refreshes in an acceptable round trip time. (&lt;5 seconds.)
+* 20,000 clients can target a single publishing server to obtain the package refreshes in an acceptable round trip time. (<3 seconds.)
+* A single management server can support up to 50 publishing servers for package metadata refreshes in an acceptable round trip time. (<5 seconds.)
 
 ## App-V Management Server capacity planning recommendations
 
@@ -75,7 +75,7 @@ The following table describes each factor that impacts round-trip time in more d
 
 |Factors impacting round-trip response time|Description|
 |------------------------------------------|-----------|
-|The number of publishing servers simultaneously requesting package metadata refreshes.|A single management server can respond to up to 320 publishing servers simultaneously requesting publishing metadata. For example, in a case with 30 publishing servers simultaneously requesting publishing metadata, the round-trip response time is ~40 seconds, while for less than 50 servers it's less than 5 seconds. From 50 to 320 publishing servers, response team increases linearly (approximately 2×).|
+|The number of publishing servers simultaneously requesting package metadata refreshes.|A single management server can respond to up to 320 publishing servers simultaneously requesting publishing metadata. For example, in a case with 30 publishing servers simultaneously requesting publishing metadata, the round-trip response time is about 40 seconds, while for less than 50 servers it's less than 5 seconds. From 50 to 320 publishing servers, response team increases linearly (approximately 2×).|
 |The number of connection groups configured on the management server.|For up to 100 connection groups, there is no significant change in the round-trip response time on the publishing server. For 100–400 connection groups, there is a minor linear increase in the round-trip response time.|
 |The number of access groups configured on the management server.|For up to 40 access groups, there is a linear (approximately 3×) increase in the round-trip response time on the publishing server.|
 
@@ -96,7 +96,7 @@ The following table describes each factor that impacts round-trip time in more d
 <td align="left"><p></p>
 <ul>
 <li><p>A single management server can respond to up to 320 publishing servers simultaneously requesting publishing metadata.</p></li>
-<li><p>Round-trip response time for 320 pub servers is ~40 seconds.</p></li>
+<li><p>Round-trip response time for 320 pub servers is about 40 seconds.</p></li>
 <li><p>For &lt;50 publishing servers simultaneously requesting metadata, the round-trip response time is &lt;5 seconds.</p></li>
 <li><p>From 50 to 320 publishing servers, the response time increases linearly (approximately 2×).</p></li>
 </ul></td>
@@ -124,7 +124,7 @@ The following table describes each factor that impacts round-trip time in more d
 The following table displays sample values for each of the previous factors. In each variation, 120 packages are refreshed from the App-V management server.
 
 |Scenario|Variation|Number of connection groups|Number of access groups|Number of publishing servers|Network connection type|Round-trip response time (seconds)|Management server CPU utilization|
-|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|
 |Publishing servers contact management server for publishing metadata at same time|0<br>0<br>0<br>0<br>0<br>0|1<br>1<br>1<br>1<br>1<br>1|50<br>100<br>200<br>300<br>315<br>320|LAN|5<br>10<br>19<br>32<br>30<br>37|17<br>17<br>17<br>15<br>17<br>15|
 |Publishing metadata contains connection groups|10<br>20<br>100<br>150<br>300<br>400|1<br>1<br>1<br>1<br>1<br>1|100<br>100<br>100<br>100<br>100<br>100|LAN|10<br>11<br>11<br>16<br>22<br>25|17<br>19<br>22<br>19<br>20<br>20|
 |Publishing metadata contains access groups|0<br>0<br>0<br>0|1<br>10<br>20<br>40|100<br>100<br>100<br>100|LAN|10<br>43<br>153<br>535|17<br>26<br>24<br>24|
@@ -318,12 +318,12 @@ The following table displays sample values for each of the previous factors. In 
 </tbody>
 </table>
 
-The CPU utilization of the computer running the management server is around 25% irrespective of the number of publishing servers targeting it. The Microsoft SQL Server database transactions/sec, batch requests/sec and user connections are identical irrespective of the number of publishing servers. For example, transactions/sec is ~30, batch requests ~200, and user connects ~6.
+The CPU utilization of the computer running the management server is around 25% irrespective of the number of publishing servers targeting it. The Microsoft SQL Server database transactions/sec, batch requests/sec and user connections are identical irrespective of the number of publishing servers. For example, transactions/sec is approximately 30, batch requests approximately 200, and user connects approximately six.
 
-Using a geographically distributed deployment, where the management server and publishing servers utilize a slow link network between them, the round-trip response time on the publishing servers is within acceptable time limits (&lt;5 seconds), even for 100 simultaneous requests on a single management server.
+Using a geographically distributed deployment, where the management server and publishing servers utilize a slow link network between them, the round-trip response time on the publishing servers is within acceptable time limits (<5 seconds), even for 100 simultaneous requests on a single management server.
 
 |Scenario|Variation|Number of connection groups|Number of access groups|Number of publishing servers|Network connection type|Round-trip response time (seconds)|Management server CPU utilization|
-|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|
 |Network connection between the publishing server and management server|1.5 Mbps Slow link Network|0<br>0|1<br>1|50<br>100|1.5 Mbps Cable DSL|4<br>5|1<br>2|
 |Network connection between the publishing server and management server|LAN/WiFi Network|0<br>0|1<br>1|100<br>200|WiFi|11<br>20|15<br>17|
 
@@ -434,7 +434,7 @@ App-V clients send reporting data to the reporting server. The reporting server 
 |Scenario|Summary|
 |---|---|
 |Multiple App-V clients send reporting information to the reporting server simultaneously.|Round-trip response time from the reporting server is 2.6 seconds for 500 clients. Round-trip response time from the reporting server is 5.65 seconds for 1000 clients. Round-trip response time increases linearly depending on number of clients.|
-|Requests per second processed by the reporting server.|A single reporting server and a single database, can process a maximum of 139 requests per second. The average is 121 requests/second. Using two reporting servers reporting to the same Microsoft SQL Server database, the average requests/second,like a single reporting server, is ~127, with a max of 278 requests/second. A single reporting server can process 500 concurrent/active connections. A single reporting server can process a maximum 1,500 concurrent connections.|
+|Requests per second processed by the reporting server.|A single reporting server and a single database, can process a maximum of 139 requests per second. The average is 121 requests/second. Using two reporting servers reporting to the same Microsoft SQL Server database, the average requests/second,like a single reporting server, is about 127, with a max of 278 requests/second. A single reporting server can process 500 concurrent/active connections. A single reporting server can process a maximum 1,500 concurrent connections.|
 |Reporting database.|Lock contention on the computer running Microsoft SQL Server is the limiting factor for requests/second. Throughput and response time are independent of database size.|
 
 <table>
@@ -464,7 +464,7 @@ App-V clients send reporting data to the reporting server. The reporting server 
 <td align="left"><p></p>
 <ul>
 <li><p>A single reporting server and a single database, can process a maximum of 139 requests per second. The average is 121 requests/second.</p></li>
-<li><p>Using two reporting servers reporting to the same Microsoft SQL Server database, the average requests/second,like a single reporting server, is ~127, with a max of 278 requests/second.</p></li>
+<li><p>Using two reporting servers reporting to the same Microsoft SQL Server database, the average requests/second,like a single reporting server, is about 127, with a max of 278 requests/second.</p></li>
 <li><p>A single reporting server can process 500 concurrent/active connections.</p></li>
 <li><p>A single reporting server can process a maximum 1500 concurrent connections.</p></li>
 </ul></td>
@@ -487,7 +487,7 @@ The random delay specifies the maximum delay (in minutes) for data to be sent to
 
 Random delay = 4 \* number of clients / average requests per second. (CHECK)
 
-Example: For 500 clients, with 120 requests per second, the Random delay is, 4 \* 500 / 120 = ~17 minutes. (CHECK)
+Example: For 500 clients, with 120 requests per second, the Random delay is, 4 \* 500 / 120 = about 17 minutes. (CHECK)
 
 ## App-V publishing server capacity planning recommendations
 
@@ -503,7 +503,7 @@ Computers running the App-V client connect to the App-V publishing server to sen
 |Scenario|Summary|
 |---|---|
 |Multiple App-V clients connect to a single publishing server simultaneously.|A publishing server running dual core processors can respond to at most 5000 clients requesting a refresh simultaneously. For 5,000–10,000 clients, the publishing server requires a minimum quad core. For 10,000–20,000 clients, the publishing server should have dual quad cores for more efficient response times. A publishing server with a quad core can refresh up to 10,000 packages within three seconds. (Supports 10,000 simultaneous clients.)|
-|Number of packages in each refresh.|Increasing number of packages will increase response time by ~40% (up to 1,000 packages).|
+|Number of packages in each refresh.|Increasing number of packages will increase response time by about 40% (up to 1,000 packages).|
 |Network between the App-V client and the publishing server.|Across a slow network (1.5 Mbps bandwidth), there is a 97% increase in response time compared to LAN (up to 1,000 users).|
 
 <table>
@@ -533,7 +533,7 @@ Computers running the App-V client connect to the App-V publishing server to sen
 <p></p></td>
 <td align="left"><p></p>
 <ul>
-<li><p>Increasing number of packages will increase response time by ~40% (up to 1,000 packages).</p></li>
+<li><p>Increasing number of packages will increase response time by about 40% (up to 1,000 packages).</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -548,11 +548,11 @@ Computers running the App-V client connect to the App-V publishing server to sen
 </table>
 
 >[!NOTE]
->The publishing server CPU usage is always high during the time interval when it must process simultaneous requests (>90% in most cases). The publishing server can handle ~1,500 client requests in one second.
+>The publishing server CPU usage is always high during the time interval when it must process simultaneous requests (>90% in most cases). The publishing server can handle about 1,500 client requests in one second.
 
-|Scenario|Variation|Number of App-V clients|Number of packages|Processor configuration on publishing server|Network connection type|App-V client round-trip time (in seconds)|CPU utilization on publishing server (in %)|
+|Scenario|Variation|Number of App-V clients|Number of packages|Processor configuration on publishing server|Network connection type|App-V client round-trip time (in seconds)|Publishing server CPU utilization (in %)|
 |---|---|---|---|---|---|---|---|
-|App-V client sends publishing refresh request and receives response, each request containing 120 packages|Number of clients|100<br>1,000<br>5,000<br>10,000|120<br>120<br>120<br>120|Dual Core<br>Dual Core<br>Quad Core<br>Quad Core|LAN|1<br>2<br>2<br>3|100<<br>99<br>89<br>77|
+|App-V client sends publishing refresh request and receives response, each request containing 120 packages|Number of clients|100<br>1,000<br>5,000<br>10,000|120<br>120<br>120<br>120|Dual Core<br>Dual Core<br>Quad Core<br>Quad Core|LAN|1<br>2<br>2<br>3|100<br>99<br>89<br>77|
 |Multiple packages in each refresh.|Number of packages|1,000<br>1,000|500<br>1,000|Quad Core|LAN|2<br>3|92<br>91|
 |Network between client and publishing server.|1.5 Mbps Slow link network|100<br>500<br>1,000|120<br>120<br>120|Quad Core|1.5 Mbps intra-continental network|3<br>10 (0.2% failure rate)<br>7 (1% failure rate)||
 
