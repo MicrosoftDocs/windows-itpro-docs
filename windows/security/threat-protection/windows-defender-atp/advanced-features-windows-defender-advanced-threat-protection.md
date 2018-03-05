@@ -1,7 +1,7 @@
 ---
 title: Turn on advanced features in Windows Defender ATP
 description: Turn on advanced features such as block file in Windows Defender Advanced Threat Protection.
-keywords: advanced features, preferences setup, block file
+keywords: advanced features, settings, block file
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy

@@ -32,7 +32,7 @@ You'll need to configure Splunk so that it can pull Windows Defender ATP alerts.
 ## Before you begin
 
 - Install the [REST API Modular Input app](https://splunkbase.splunk.com/app/1546/) in Splunk.
-- Make sure you have enabled the **SIEM integration** feature from the **Preferences setup** menu. For more information, see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
+- Make sure you have enabled the **SIEM integration** feature from the **Settings** menu. For more information, see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
 
 - Have the details file you saved from enabling the **SIEM integration** feature ready. You'll need to get the following values:
   - OAuth 2 Token refresh URL

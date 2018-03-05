@@ -1,7 +1,7 @@
 ---
 title: Configure Windows Defender ATP preferences settings
 description: Use the preferences setup to configure and update your preferences settings such as enabling advanced features, preview experience, email notifications, or custom threat intelligence.
-keywords: preferences settings, settings, advanced features, preview experience, email notifications, custom threat intelligence
+keywords: settings, settings, advanced features, preview experience, email notifications, custom threat intelligence
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -26,7 +26,7 @@ ms.date: 03/05/2018
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-prefsettings-abovefoldlink)
 
-Use the **Preferences setup** menu to modify general settings, advanced features, enable the preview experience, email notifications, and the custom threat intelligence feature.
+Use the **Settings** menu to modify general settings, advanced features, enable the preview experience, email notifications, and the custom threat intelligence feature.
 
 ## In this section
 

@@ -110,7 +110,7 @@ After opting in to use RBAC, you cannot revert to the initial roles as when you 
 
 ## Create user roles and assign the role to a group
 
-1.	In the navigation pane, select **Preferences setup > Role based access control > Roles**.
+1.	In the navigation pane, select **Settings > Role based access control > Roles**.
 
 2.	Click **Add new role**. 
 
@@ -158,7 +158,7 @@ Create machine groups and set automated remediation levels on them, configure th
 
 ### Add machine group
 
-1.	In the navigation pane, select **Preferences setup > Role based access control > Machine groups**.
+1.	In the navigation pane, select **Settings > Role based access control > Machine groups**.
 
 2.	Click **Add machine group**. 
 

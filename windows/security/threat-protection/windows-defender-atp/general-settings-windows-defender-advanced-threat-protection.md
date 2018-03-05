@@ -26,9 +26,9 @@ ms.date: 03/05/2018
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-gensettings-abovefoldlink)
 
-During the onboarding process, a wizard takes you through the general settings of Windows Defender ATP. After onboarding, you might want to update some settings which you'll be able to do through the **Preferences setup** menu.
+During the onboarding process, a wizard takes you through the general settings of Windows Defender ATP. After onboarding, you might want to update some settings which you'll be able to do through the **Settings** menu.
 
-1. In the navigation pane, select **Preferences setup** > **General**.
+1. In the navigation pane, select **Settings** > **General**.
 
 2. Modify settings such as data retention policy or the industry that best describes your organization.
 
