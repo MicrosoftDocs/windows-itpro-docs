@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 02/22/2018
+ms.date: 03/01/2018
 ---
 
 # AssignedAccess CSP
@@ -62,7 +62,8 @@ The supported operations are Add, Delete, Get and Replace. When there's no confi
 Added in Windows 10, version 1709. Specifies the settings that you can configure in the kiosk or device. This node accepts an AssignedAccessConfiguration xml as input to configure the device experience. For details about the configuration settings in the XML, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps).Here is the schema for the [AssignedAccessConfiguration](#assignedaccessconfiguration-xsd). 
 
 > [!Note]  
-> You cannot set both KioskModeApp and Configuration at the same time in the device in Windows 10, version 1709.
+> You cannot set both KioskModeApp and Configuration at the same time on the device in Windows 10, version 1709.  
+> You cannot set both ShellLauncher and Configuration at the same time on the device.
 
 Enterprises can use this to easily configure and manage the curated lockdown experience. 
 
@@ -97,6 +98,9 @@ Supported operation is Get.
 
 <a href="" id="assignedaccess-shelllauncher"></a>**./Device/Vendor/MSFT/AssignedAccess/ShellLauncher**  
 Added in Windows 10,version 1803. This node accepts a ShellLauncherConfiguration xml as input. Click [link](#shelllauncherconfiguration-xsd) to see the schema.
+
+> [!Note]  
+> You cannot set both ShellLauncher and Configuration at the same time on the device.
 
 <a href="" id="assignedaccess-statusconfiguration"></a>**./Device/Vendor/MSFT/AssignedAccess/StatusConfiguration**  
 Added in Windows 10, version 1803. This node accepts a StatusConfiguration xml as input to configure the Kiosk App Health monitoring. There are three possible values for StatusEnabled node inside StatusConfiguration xml: On, OnWithAlerts, and Off. Click [link](#statusconfiguration-xsd) to see the StatusConfiguration schema.
