@@ -98,6 +98,8 @@ each column has it's own section and shows the distinct values that appear in th
 
 You can refine your query based on the filter by clicking the "+" or "-" buttons on the values that you want to include or exclude and click **Run query**.
 
+![Image of advanced hunting filter](images/atp-filter-advanced-hunting.png)
+
 The filter selections will resolve as an additional query term and the results will be updated accordingly.
 
 
