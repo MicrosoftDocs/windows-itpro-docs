@@ -30,7 +30,7 @@ ms.date: 03/06/2018
 Mitigating these vulnerabilities involves a complex multivendor update. It requires updates to Windows and Microsoft browsers using the [January 2018 Security Updates from Microsoft](https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/858123b8-25ca-e711-a957-000d3a33cf99) and updates to processor microcode using fixes released by OEM and CPU vendors.
 
 ## Prerequisites
-Note that the following requirements and limitations of the charts and what you might be able to do to improve visibility of the mitigation status of machines in your network:
+Note the following requirements and limitations of the charts and what you might be able to do to improve visibility of the mitigation status of machines in your network:
 
 - Only active machines running Windows 10 are checked for OS mitigations.
 - When checking for microcode mitgations, Windows Defender ATP currently checks for updates applicable to Intel CPU processors only.
