@@ -1296,6 +1296,34 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
+[MultiSIM CSP](multisim-csp.md)  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
 [NAP CSP](nap-csp.md)  
 
 <!--StartSKU-->
@@ -2453,7 +2481,7 @@ Footnotes:
  Footnotes: 
 - 1 - Added in Windows 10, version 1607
 - 2 - Added in Windows 10, version 1703  
-- 3 - Added in the next major update to Windows 10  
+- 3 - Added in Windows 10, version 1803  
 
 ## CSP DDF files download
 

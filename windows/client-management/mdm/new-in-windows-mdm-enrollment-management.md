@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 02/05/2018
+ms.date: 02/26/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -1403,9 +1403,42 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1803:</p>
+<ul>
+<li>Display/DisablePerProcessDpiForApps</li>
+<li>Display/EnablePerProcessDpi</li>
+<li>Display/EnablePerProcessDpiForApps</li>
+<li>Experience/AllowWindowsSpotlightOnSettings</li>
+<li>TextInput/AllowHardwareKeyboardTextSuggestions</li>
+<li>TextInput/ForceTouchKeyboardDockedState</li>
+<li>TextInput/TouchKeyboardDictationButtonAvailability</li>
+<li>TextInput/TouchKeyboardEmojiButtonAvailability</li>
+<li>TextInput/TouchKeyboardFullModeAvailability</li>
+<li>TextInput/TouchKeyboardHandwritingModeAvailability</li>
+<li>TextInput/TouchKeyboardNarrowModeAvailability</li>
+<li>TextInput/TouchKeyboardSplitModeAvailability</li>
+<li>TextInput/TouchKeyboardWideModeAvailability</li>
+<ul>
+</td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[VPNv2 ProfileXML XSD](vpnv2-profile-xsd.md)</td>
 <td style="vertical-align:top"><p>Updated the XSD and Plug-in profile example for VPNv2 CSP.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[AssignedAccess CSP](assignedaccess-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following nodes in Windows 10, version 1803:</p>
+<ul>
+<li>Status</li>
+<li>ShellLauncher</li>
+<li>StatusConfiguration</li>
+</ul>
+<p>Updated the AssigneAccessConfiguration schema.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[MultiSIM CSP](multisim-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
 </td></tr>
 </tbody>
 </table>
@@ -1426,7 +1459,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tbody>
 <tr>
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
-<td style="vertical-align:top"><p>Added the following new policies for Windows 10, next major update:</p>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1803:</p>
 <ul>
 <li>AccountPoliciesAccountLockoutPolicy/AccountLockoutDuration</li>
 <li>AccountPoliciesAccountLockoutPolicy/AccountLockoutThreshold</li>
@@ -1539,11 +1572,11 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
-<td style="vertical-align:top"><p>Updated the description for AllowWarningForOtherDiskEncryption to describe changes added in Windows 10, next major update.</p>
+<td style="vertical-align:top"><p>Updated the description for AllowWarningForOtherDiskEncryption to describe changes added in Windows 10, version 1803.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[DMClient CSP](dmclient-csp.md)</td>
-<td style="vertical-align:top"><p>Added ./User/Vendor/MSFT/DMClient/Provider/[ProviderID]/FirstSyncStatus node. Also added the following nodes in Windows 10, next major update:</p>
+<td style="vertical-align:top"><p>Added ./User/Vendor/MSFT/DMClient/Provider/[ProviderID]/FirstSyncStatus node. Also added the following nodes in Windows 10, version 1803:</p>
 <ul>
 <li>AADSendDeviceToken</li>
 <li>BlockInStatusPage</li>
@@ -1555,7 +1588,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[RemoteWipe CSP](remotewipe-csp.md)</td>
-<td style="vertical-align:top"><p>Added the following nodes in Windows 10, next major update:</p>
+<td style="vertical-align:top"><p>Added the following nodes in Windows 10, version 1803:</p>
 <ul>
 <li>AutomaticRedeployment</li>
 <li>doAutomaticRedeployment</li>
@@ -1565,11 +1598,21 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[Defender CSP](defender-csp.md)</td>
-<td style="vertical-align:top"><p>Added new node (OfflineScan) in Windows 10, next major update.</p>
+<td style="vertical-align:top"><p>Added new node (OfflineScan) in Windows 10, version 1803.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[UEFI CSP](uefi-csp.md)</td>
-<td style="vertical-align:top"><p>Added a new CSP in Windows 10, next major update.</p>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Update CSP](update-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following nodes in Windows 10, version 1803:</p>
+<ul>
+<li>Rollback</li>
+<li>Rollback/FeatureUpdate</li>
+<li>Rollback/QualityUpdateStatus</li>
+<li>Rollback/FeatureUpdateStatus</li>
+</ul>
 </td></tr>
 </tbody>
 </table>

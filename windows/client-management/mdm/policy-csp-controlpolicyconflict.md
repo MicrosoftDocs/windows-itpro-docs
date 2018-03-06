@@ -65,9 +65,9 @@ ms.date: 01/30/2018
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. This policy allows the IT admin to control which policy will be used whenever both the MDM policy and its equivalent Group Policy are set on the device.
+Added in Windows 10, version 1803. This policy allows the IT admin to control which policy will be used whenever both the MDM policy and its equivalent Group Policy are set on the device.
 
-This policy is used to ensure that MDM policy wins over GP when same setting is set by both GP and MDM channel. This policy doesn’t support Delete command. This policy doesn’t support setting the value to be 0 again after it was previously set 1. The default value is 0. In next major update, the MDM policies in Policy CSP will behave as described if this policy value is set 1.
+This policy is used to ensure that MDM policy wins over GP when same setting is set by both GP and MDM channel. This policy doesn’t support Delete command. This policy doesn’t support setting the value to be 0 again after it was previously set 1. The default value is 0. The MDM policies in Policy CSP will behave as described if this policy value is set 1.
 
 The policy should be set at every sync to ensure the device removes any settings that conflict with MDM just as it does on the very first set of the policy. This ensures that:
 
