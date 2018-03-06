@@ -1,7 +1,7 @@
 ---
 title: Create and build Power BI reports using Windows Defender ATP data
 description: Get security insights by creating and building Power BI dashboards using data from Windows Defender ATP and other data sources.
-keywords: preferences setup, power bi, power bi service, power bi desktop, reports, dashboards, connectors , security insights, mashup
+keywords: settings, power bi, power bi service, power bi desktop, reports, dashboards, connectors , security insights, mashup
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -40,11 +40,11 @@ You can access these options from the Windows Defender ATP portal. Both the Powe
 ## Create a Windows Defender ATP dashboard on Power BI service
 Windows Defender ATP makes it easy to create a Power BI dashboard by providing an option straight from the portal. 
 
-1. In the navigation pane, select **Preferences setup** > **Power BI reports**.
+1. In the navigation pane, select **Settings** > **Power BI reports**.
 
 2.	Click **Create dashboard**. This opens up a new tab in your browser and loads the Power BI service with data from your organization.
 
-    ![Preferences setup with create dashboard button](images/atp-create-dashboard.png)
+    ![Settings with create dashboard button](images/atp-create-dashboard.png)
 
     >[!NOTE]
     >Loading your data in the Power BI service can take a few minutes.
@@ -65,11 +65,11 @@ You can create a custom dashboard in Power BI Desktop to create visualizations t
 ### Before you begin
 1.	Make sure you use Power BI Desktop June 2017 and above. [Download the latest version](https://powerbi.microsoft.com/en-us/desktop/).
 
-2.	In the Windows Defender ATP portal navigation pane, select **Preferences setup** > **Power BI reports**.
+2.	In the Windows Defender ATP portal navigation pane, select **Settings** > **Power BI reports**.
 
 3.	Click **Download connector** to download the WDATPPowerBI.zip file and extract it.
 
-    ![Preferences setup with download connector button](images/atp-download-connector.png)
+    ![Settings with download connector button](images/atp-download-connector.png)
 
 4.	Create a new directory `Microsoft Power BI Desktop\Custom Connectors` under the user's Documents folder.
 

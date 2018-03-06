@@ -25,14 +25,14 @@ ms.date: 03/05/2018
 
 [!include[Prerelease information](prerelease.md)]
 
-Advanced hunting allows you to proactively hunt and investigate across your organization using a powerful search and query tool. Take advantage of the following capabilities: 
+Advanced hunting allows you to proactively hunt and investigate for possible threats across your organization using a powerful search and query tool. Take advantage of the following capabilities: 
 
 - **Powerful query language with IntelliSense** - Built on top of a query language that gives you the flexibility you need to take hunting to the next level.
 - **Query all stored telemetry** - All telemetry data is accessible in tables for you to query. For example, you can query process creation, network communication, and many other event types.
-- **Links to portal** - Certain query results, such as endpoint names and file names are actually direct links to the Windows Defender ATP portal, consolidating the Advanced hunting query experience and the existing portal investigation experience.
+- **Links to portal** - Certain query results, such as endpoint names and file names are actually direct links to the portal, consolidating the advanced hunting query experience and the existing portal investigation experience.
 - **Query examples** - A welcome page provides examples designed to get you started and get you familiar with the tables and the query language.
 
-To get you started in querying your Windows Defender ATP data, you can use the basic or advanced query examples that have some preloaded queries for you to understand the basic query syntax.
+To get you started in querying your data, you can use the basic or advanced query examples that have some preloaded queries for you to understand the basic query syntax.
 
 ![Image of Advanced hunting window](images/atp-advanced-hunting.png)
 
@@ -40,14 +40,15 @@ To get you started in querying your Windows Defender ATP data, you can use the b
 
 A typical query starts with a table name followed by a series of operators separated by **|**.
 
-![Image of Windows Defender ATP advanced hunting query](images/atp-advanced-hunting-query.png)
+In the following example, we start with the table name **FileCreationEvents** and add piped elements as needed.
 
-We start with the table name **FileCreationEvents** and add piped elements as needed.
+![Image of Windows Defender ATP advanced hunting query](images/atp-advanced-hunting-query.png)
 
 First, we define a time filter to review only records from the previous day. We then add a filter on the _FolderPath_ field to contain only the path _\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup_.
 
 Finally, we limit the results to 100 and click **Run query**.
 
+### Operators
 The query language is very powerful and has the following usable operators: 
 
 - **Limit** - Return up to the specified number of rows.
@@ -86,9 +87,19 @@ The following tables are exposed as part of advanced hunting:
 The results set has several capabilities to provide you with effective investigation, including:
 
 - Columns that return entity-related objects, such as Machine name, Machine ID, File name, SHA1, User, IP, and URL, are linked to their entity pages in the Windows Defender ATP portal.
-- If you right-click on a cell in the results set, you can add a filter to your written query. The current filtering options are **include** or **exclude**; these cell values are part of the row set. 
+- If you right-click on a cell in the results set, you can add a filter to your written query. The current filtering options are **include**, **exclude** or **advanced filter**, which provides additional filtering options on the cell value. These cell values are part of the row set. 
  
 ![Image of Windows Defender ATP advanced hunting results set](images/atp-advanced-hunting-results-set.png)
 
-## Related topics
+## Filter results in advanced hunting
+In advanced hunting, you can use the advanced filter on the output results set of the query. 
+The filters provide an overview of the result set where 
+each column has it's own section and shows the distinct values that appear in the column and their prevalence.
+
+You can refine your query based on the filter by clicking the "+" or "-" buttons on the values that you want to include or exclude and click **Run query**.
+
+![Image of advanced hunting filter](images/atp-filter-advanced-hunting.png)
+
+The filter selections will resolve as an additional query term and the results will be updated accordingly.
+
 

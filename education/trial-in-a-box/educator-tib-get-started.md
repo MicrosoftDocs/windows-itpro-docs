@@ -108,6 +108,7 @@ Microsoft OneNote organizes curriculum and lesson plans for teachers and student
 
 **Try this!**
 See how a group project comes together with opportunities to interact with other students and collaborate with peers. This one works best with the digital pen, included with your Trial in a Box.
+When you're not using the pen, just use the magnet to stick it to the left side of the screen until you need it again. 
 
 1. On the **Start** menu, click the OneNote shortcut named **Imagine Giza** to open the **Reimagine the Great Pyramid of Giza project**.
 2. Take the digital pen out of the box and make notes or draw.
@@ -121,7 +122,7 @@ See how a group project comes together with opportunities to interact with other
 
     ![OneNote To Do Tag](images/onenote_checkmark.png)
 
-  - The Researcher tool from the Insert tab can help find answers. 
+  - To find information without leaving OneNote, use the Researcher tool found under the Insert tab. 
 
     ![OneNote Researcher](images/onenote_researcher.png)
 
@@ -153,8 +154,9 @@ Today, we'll explore a Minecraft world through the eyes of a student.
 9. Explore the world by using the keys on your keyboard.
   * **W** moves forward.
   * **A** moves left.
-  * **D** moves right.
-  * **S** moves backward
+  * **S** moves right.
+  * **D** moves backward.
+  
 
 10. Use your mouse as your "eyes". Just move it to look around.
 11. For a bird's eye view, double-tap the SPACE BAR. Now press the SPACE BAR to fly higher. And then hold the SHIFT key to safely land.

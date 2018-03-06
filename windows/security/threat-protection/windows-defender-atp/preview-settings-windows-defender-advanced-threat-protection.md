@@ -1,7 +1,7 @@
 ---
 title: Turn on the preview experience in Windows Defender ATP
 description: Turn on the preview experience in Windows Defender Advanced Threat Protection to try upcoming features.
-keywords: advanced features, preferences setup, block file
+keywords: advanced features, settings, block file
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -28,9 +28,9 @@ ms.date: 03/05/2018
 
 Turn on the preview experience setting to be among the first to try upcoming features.
 
-1. In the navigation pane, select **Preferences setup** > **Preview experience**.
+1. In the navigation pane, select **Settings** > **Preview experience**.
 
-    ![Image of Preferences setup and preview experience](images/atp-preview-features.png)
+    ![Image of settings and preview experience](images/atp-preview-features.png)
 
 
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.

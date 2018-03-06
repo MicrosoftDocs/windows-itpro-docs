@@ -120,7 +120,7 @@ You can prevent further propagation of an attack in your organization by banning
 
 2.	Toggle the setting between **On** and **Off** and select **Save preferences**.
 
-  ![Image of preferences setup](images/atp-preferences-setup.png)
+  ![Image of settings](images/atp-preferences-setup.png)
 
 
 3. Type a comment and select **Yes, block file** to take action on the file.

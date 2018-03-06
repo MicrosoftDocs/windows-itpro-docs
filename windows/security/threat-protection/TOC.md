@@ -34,6 +34,7 @@
 #### [Configure server endpoints](windows-defender-atp\configure-server-endpoints-windows-defender-advanced-threat-protection.md)
 #### [Configure non-Windows endpoints](windows-defender-atp\configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)
 #### [Run a detection test on a newly onboarded endpoint](windows-defender-atp\run-detection-test-windows-defender-advanced-threat-protection.md)
+#### [Run simulated attacks](windows-defender-atp\attack-simulations-windows-defender-advanced-threat-protection.md)
 #### [Configure proxy and Internet connectivity settings](windows-defender-atp\configure-proxy-internet-windows-defender-advanced-threat-protection.md)
 #### [Troubleshoot onboarding issues](windows-defender-atp\troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
 ### [Understand the Windows Defender ATP portal](windows-defender-atp\use-windows-defender-advanced-threat-protection.md)
@@ -88,7 +89,7 @@
 ####### [Troubleshoot deep analysis](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md#troubleshoot-deep-analysis)
 
 #### [Automated investigations](windows-defender-atp\automated-investigations-windows-defender-advanced-threat-protection.md)
-#### [Advanced hunting in Windows Defender ATP](windows-defender-atp\advanced-hunting-windows-defender-advanced-threat-protection.md)
+#### [Advanced hunting](windows-defender-atp\advanced-hunting-windows-defender-advanced-threat-protection.md)
 
 ###API and SIEM support
 #### [Pull alerts to your SIEM tools](windows-defender-atp\configure-siem-windows-defender-advanced-threat-protection.md)
@@ -252,7 +253,7 @@
 
 
 
-### [Reference topics for management and configuration tools](windows-defender-antivirus\configuration-management-reference-windows-defender-antivirus.md)
+### [Manage Windows Defender AV in your business](windows-defender-antivirus\configuration-management-reference-windows-defender-antivirus.md)
 #### [Use Group Policy settings to configure and manage Windows Defender AV](windows-defender-antivirus\use-group-policy-windows-defender-antivirus.md)
 #### [Use System Center Configuration Manager and Microsoft Intune to configure and manage Windows Defender AV](windows-defender-antivirus\use-intune-config-manager-windows-defender-antivirus.md)
 #### [Use PowerShell cmdlets to configure and manage Windows Defender AV](windows-defender-antivirus\use-powershell-cmdlets-windows-defender-antivirus.md)
