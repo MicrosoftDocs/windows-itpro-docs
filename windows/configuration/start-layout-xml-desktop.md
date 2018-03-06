@@ -313,7 +313,7 @@ This tag is added in Windows 10, version 1803. You have two options in this tag:
 
 Use `Choice=DesktopBridgeSubscription` on devices running Windows 10, version 1803, that have Office 365 preinstalled. This will set the heading of the Office suite of tiles to **Office 365**, to highlight the Office 365 apps that you've made available on the device.
 
-Use `Choice=DesktopBridge` on devices running versions of Windows 10 earlier than version 1803, and on devices shipping with Activation for Office (AFO) Perpetual. This will set the heading of the Office suite of tiles to **Create**.
+Use `Choice=DesktopBridge` on devices running versions of Windows 10 earlier than version 1803, and on devices shipping with [perpetual licenses for Office](https://blogs.technet.microsoft.com/ausoemteam/2017/11/30/choosing-the-right-office-version-for-your-customers/). This will set the heading of the Office suite of tiles to **Create**.
 
 For more information, see [Customize the Office suite of tiles](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-start-layout#customize-the-office-suite-of-tiles).
 
