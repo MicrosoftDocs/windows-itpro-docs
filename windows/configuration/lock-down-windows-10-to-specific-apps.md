@@ -124,7 +124,7 @@ You can start your file by pasting the following XML (or any other examples in t
 There are two types of profiles that you can specify in the XML:
 
 - **Lockdown profile**: Users assigned a lockdown profile will see the desktop in tablet mode with the specific apps on the Start screen.
-- **Kiosk profile**: New in Windows 10, version (1804?), this profile replaces the KioskModeApp node of the [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp). Users assigned a kiosk profile will not see the desktop, but only the kiosk app running in full-screen mode.
+- **Kiosk profile**: New in Windows 10, version 1803, this profile replaces the KioskModeApp node of the [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp). Users assigned a kiosk profile will not see the desktop, but only the kiosk app running in full-screen mode.
 
 A lockdown profile section in the XML has the following entries: 
 
@@ -282,9 +282,9 @@ The full multi-app assigned access experience can only work for non-admin users.
 
 You can assign:
 
-- [A local standard user account that signs in automatically](#config-for-autologon-account) (Applies to Windows 10, version (1804?) only)
+- [A local standard user account that signs in automatically](#config-for-autologon-account) (Applies to Windows 10, version 1803 only)
 - [An individual account, which can be local, domain, or Azure Active Directory (Azure AD)](#config-for-individual-accounts)
-- [A group account, which can be local, Active Directory (domain), or Azure AD](#config-for-group-accounts) (Applies to Windows 10, version (1804?) only) 
+- [A group account, which can be local, Active Directory (domain), or Azure AD](#config-for-group-accounts) (Applies to Windows 10, version 1803 only) 
 
 >[!NOTE]
 >Configs that specify group accounts cannot use a kiosk profile, only a lockdown profile. If a group is configured to a kiosk profile, the CSP will reject the request.  
