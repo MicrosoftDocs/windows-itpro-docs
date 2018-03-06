@@ -52,7 +52,7 @@ Area | Description
 :---|:---
 (1) Navigation pane | Use the navigation pane to move between the **Dashboards**, **Alerts queue**, **Machines list**, **Service health**, **Preferences setup**, and **Endpoint management**.
 **Dashboards**	| Enables you to view the Security operations, the Security analytics dashboard, or 
-**Alerts queue** | Enables you to view separate queues of new, in progress, resolved alerts, alerts assigned to you, and suppression rules.
+**Alerts** | Enables you to view separate queues of new, in progress, resolved alerts, alerts assigned to you, and suppression rules.
 **Automated investigations** | Displays a list of automated investigations that's been conducted in the network, the status of each investigation and other details such as when the investigation started and the duration of the investigation.
 **Machines list** | Displays the list of machines that are onboarded to Windows Defender ATP, some information about them, and the corresponding number of alerts.
 **Service health** | Provides information on the current status of the Window Defender ATP service. You'll be able to verify that the service health is healthy or if there are current issues.
