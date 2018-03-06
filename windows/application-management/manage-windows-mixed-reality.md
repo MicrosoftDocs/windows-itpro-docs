@@ -29,10 +29,10 @@ To enable users to download the Windows Mixed Reality software for devices runni
 
 Enterprises devices running Windows 10, version 1709, will not be able to install Windows Mixed Reality Feature on Demand (FOD) directly from WSUS. 
 
-Windows Mixed Reality will also require a Data Assets update package, if available. In Windows 10, version (1804?), you must import the Data Assets update package from the [Microsoft Update Catalog](http://www.catalog.update.microsoft.com/). In Windows 10, version 1709, you can import the Data Assets update package from the catalog or from WSUS. 
+Windows Mixed Reality will also require a Data Assets update package, if available. In Windows 10, version 1803, you must import the Data Assets update package from the [Microsoft Update Catalog](http://www.catalog.update.microsoft.com/). In Windows 10, version 1709, you can import the Data Assets update package from the catalog or from WSUS. 
 
 
-For Windows 10, version 1709 and version (1804?), use one of the following options to install Windows Mixed Reality software:
+For Windows 10, version 1709 and version 1803, use one of the following options to install Windows Mixed Reality software:
 
 - Manually install the Mixed Reality software 
   
