@@ -82,16 +82,24 @@ The following tables are exposed as part of advanced hunting:
 - **MiscEvents** - Stores several types of events, including Windows Defender Exploit Guard, Windows Defender SmartScreen, Windows Defender Application Guard, and Firewall events.
 - **SuspiciousEvents** - Stores all events that deviate from typical event behavior
 
-## Results set in advanced hunting
+## Saved queries
+
+we provide built it saved queries, that will give you an initial starting point to hunt on you organizational data and provide you additional examples of the query langauge capabilties.
+we provide the following capabilities - 
+- save a query - simply click on the "Save as" button and name your query. you have 2 options of saving - 1. **Shared queries** section - visible to all users in the tenant. 2. **My queries** section - visible only to the user who saved the query
+- update a query - open the query, update the query content and click "Save".
+- delete a query - right click on the query you want to delete, and select the "delete" option.
+
+## Results set capabilities in advanced hunting
 
 The results set has several capabilities to provide you with effective investigation, including:
 
 - Columns that return entity-related objects, such as Machine name, Machine ID, File name, SHA1, User, IP, and URL, are linked to their entity pages in the Windows Defender ATP portal.
 - If you right-click on a cell in the results set, you can add a filter to your written query. The current filtering options are **include**, **exclude** or **advanced filter**, which provides additional filtering options on the cell value. These cell values are part of the row set. 
- 
+
 ![Image of Windows Defender ATP advanced hunting results set](images/atp-advanced-hunting-results-set.png)
 
-## Filter results in advanced hunting
+## Filters on results in advanced hunting
 In advanced hunting, you can use the advanced filter on the output results set of the query. 
 The filters provide an overview of the result set where 
 each column has it's own section and shows the distinct values that appear in the column and their prevalence.
