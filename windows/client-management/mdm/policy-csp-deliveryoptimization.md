@@ -76,13 +76,13 @@ ms.date: 01/30/2018
     <a href="#deliveryoptimization-domonthlyuploaddatacap">DeliveryOptimization/DOMonthlyUploadDataCap</a>
   </dd>
   <dd>
-    <a href="#deliveryoptimization-dopercentagemaxbackdownloadbandwidth">DeliveryOptimization/DOPercentageMaxBackDownloadBandwidth</a>
+    <a href="#deliveryoptimization-dopercentagemaxbackgroundbandwidth">DeliveryOptimization/DOPercentageMaxBackgroundBandwidth</a>
   </dd>
   <dd>
     <a href="#deliveryoptimization-dopercentagemaxdownloadbandwidth">DeliveryOptimization/DOPercentageMaxDownloadBandwidth</a>
   </dd>
   <dd>
-    <a href="#deliveryoptimization-dopercentagemaxforedownloadbandwidth">DeliveryOptimization/DOPercentageMaxForeDownloadBandwidth</a>
+    <a href="#deliveryoptimization-dopercentagemaxforegroundbandwidth">DeliveryOptimization/DOPercentageMaxForegroundBandwidth</a>
   </dd>
   <dd>
     <a href="#deliveryoptimization-dorestrictpeerselectionby">DeliveryOptimization/DORestrictPeerSelectionBy</a>
@@ -1015,7 +1015,7 @@ The default value is 20.
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-dopercentagemaxbackdownloadbandwidth"></a>**DeliveryOptimization/DOPercentageMaxBackDownloadBandwidth**  
+<a href="" id="deliveryoptimization-dopercentagemaxbackgroundbandwidth"></a>**DeliveryOptimization/DOPercentageMaxBackgroundBandwidth**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1063,7 +1063,7 @@ Note that downloads from LAN peers will not be throttled even when this policy i
 <a href="" id="deliveryoptimization-dopercentagemaxdownloadbandwidth"></a>**DeliveryOptimization/DOPercentageMaxDownloadBandwidth**  
 
 <!--Description-->
-This policy is deprecated. Use [DOPercentageMaxForeDownloadBandwidth](#deliveryoptimization-dopercentagemaxforedownloadbandwidth) and [DOPercentageMaxBackDownloadBandwidth](#deliveryoptimization-dopercentagemaxbackdownloadbandwidth) policies instead.
+This policy is deprecated. Use [DOPercentageMaxForegroundBandwidth](#deliveryoptimization-dopercentagemaxforegroundbandwidth) and [DOPercentageMaxBackgroundBandwidth](#deliveryoptimization-dopercentagemaxbackgroundbandwidth) policies instead.
 
 <!--/Description-->
 <!--/Policy-->
@@ -1071,7 +1071,7 @@ This policy is deprecated. Use [DOPercentageMaxForeDownloadBandwidth](#deliveryo
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-dopercentagemaxforedownloadbandwidth"></a>**DeliveryOptimization/DOPercentageMaxForeDownloadBandwidth**  
+<a href="" id="deliveryoptimization-dopercentagemaxforegroundbandwidth"></a>**DeliveryOptimization/DOPercentageMaxForegroundBandwidth**  
 
 <!--SupportedSKUs-->
 <table>

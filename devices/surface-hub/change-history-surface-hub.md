@@ -8,13 +8,19 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 02/16/2018
+ms.date: 03/06/2018
 ms.localizationpriority: medium
 ---
 
 # Change history for Surface Hub
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
+
+## March 2018
+
+New or changed topic | Description
+--- | ---
+[Create and test a device account (Surface Hub)](create-and-test-a-device-account-surface-hub.md) | Added section for account verification and testing, with link to new Surface Hub Hardware Diagnostic app. 
 
 ## February 2018
 
