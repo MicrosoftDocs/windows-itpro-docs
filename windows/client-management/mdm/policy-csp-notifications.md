@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/05/2018
 ---
 
 # Policy CSP - Notifications
@@ -70,6 +70,14 @@ For each user logged into the device, if you enable this policy (set value to 1)
 No reboot or service restart is required for this policy to take effect.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off notification mirroring*
+-   GP name: *NoNotificationMirroring*
+-   GP path: *Start Menu and Taskbar/Notifications*
+-   GP ADMX file name: *WPN.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
