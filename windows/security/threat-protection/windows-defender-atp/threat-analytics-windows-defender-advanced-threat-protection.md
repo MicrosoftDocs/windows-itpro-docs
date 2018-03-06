@@ -10,36 +10,41 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 03/05/2018
+ms.date: 03/06/2018
 ---
 
-# Windows Defender ATP Threat analytics for Meltdown and Spectre
+# Threat analytics for Spectre and Meltdown
 
 **Applies to:**
 
+- Windows 10 Enterprise
+- Windows 10 Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
-
-The Threat analytics report provides an overview of the Meltdown and Spectre threat and visibility on both Software and Firmware mitigations status.
-
-The OS mitigation tile provides visibility into OS mitigation status - whether it's installed and active. You can see and download a CSV format of the list of machines with no OS mitigation active by clicking the inactive machines on the chart.
-
-Microcode mitigations tile provides visibility into Microcode mitigation/update deployment status.
-Overall mitigation status provides an aggregated view into OS and Microcode mitigation.
 
 
-<!--- In a volatile security landscape, it's imperative to have the most up-to-date information about threats. More importantly, it's critical to know if your organization is at risk, identify the endpoints that are, and know the steps to take to mitigate it.
+[Spectre and Meltdown](https://cloudblogs.microsoft.com/microsoftsecure/2018/01/09/understanding-the-performance-impact-of-spectre-and-meltdown-mitigations-on-windows-systems/) is a new class of exploits that take advantage of critical vulnerabilities in the CPU processors, allowing attackers running user-level, non-admin code to steal data from kernel memory. These exploits can potentially allow arbitrary non-admin code running on a host machine to harvest sensitive data belonging to other apps or system processes, including apps on guest VMs.
 
-Windows Defender ATP Threat analytics is designed to deliver timely information about current security threats. It provides a tailored organizational risk evaluation and specific actionable steps you can take to minimize risks. 
+Mitigating these vulnerabilities involves a complex multivendor update. It requires updates to Windows and Microsoft browsers using the [January 2018 Security Updates from Microsoft](https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/858123b8-25ca-e711-a957-000d3a33cf99) and updates to processor microcode using fixes released by OEM and CPU vendors.
 
-The dashboard shows tiles and the current status of the endpoints in your organization. The individual tiles show how many endpoints require attention based on the threat and helps you identify where you need to apply OS and Microcode mitigation.
+## Prerequisites
+Note the following requirements and limitations of the charts and what you might be able to do to improve visibility of the mitigation status of machines in your network:
 
-You'll gain insight on the overall mitigation status in your organization and see missing mitigations over time. 
+- Only active machines running Windows 10 are checked for OS mitigations.
+- When checking for microcode mitgations, Windows Defender ATP currently checks for updates applicable to Intel CPU processors only.
+- To determine microcode mitigation status, machines must enable Windows Defender Antivirus and update to definition version 1.259.1545.0 or above.
+- To be covered under the overall mitigation status, machines must have both OS and microcode mitigation information.
 
--->
+## Assess organizational risk with Threat analytics
 
-## Access Threat analytics
-1. From the navigation pane, select **Dashboards** > **Threat analytics**.
+Threat analytics helps you continually assess and control risk exposure to Spectre and Meltdown. Use the charts to quickly identify machines for the presence or absence of the following mitigations:
 
-2. Take action based on the areas that have been identified to need attention. 
+- **OS mitigation**: Identifies machines that have installed the January 2018 Security Updates from Microsoft and have not explicitly disabled any of the OS mitigations provided with these updates
+- **Microcode mitigation**: Identifies machines that have installed the necessary microcode updates or those that do not require them
+- **Overall mitigation status**: Identifies the completeness by which machines have mitigated against the Spectre and Meltdown exploits 
+
+Click a section of each chart to get a list of the machines in the corresponding mitigation status.
+
+
