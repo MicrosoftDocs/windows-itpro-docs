@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/05/2018
 ---
 
 # Policy CSP - WirelessDisplay
@@ -291,6 +291,14 @@ If you set it to 0 (zero), your PC is not discoverable and you cannot project to
 Value type is integer.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Don't allow this PC to be projected to*
+-   GP name: *AllowProjectionToPC*
+-   GP path: *Windows Components/Connect*
+-   GP ADMX file name: *WirelessDisplay.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -422,6 +430,14 @@ If you turn this on, the pairing ceremony for new devices will always require a 
 Value type is integer.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Require pin for pairing*
+-   GP name: *RequirePinForPairing*
+-   GP path: *Windows Components/Connect*
+-   GP ADMX file name: *WirelessDisplay.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 

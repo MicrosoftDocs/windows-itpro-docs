@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/05/2017
+ms.date: 03/02/2018
 ---
 
 # eUICCs DDF file
@@ -16,6 +16,8 @@ ms.date: 12/05/2017
 This topic shows the OMA DM device description framework (DDF) for the **eUICCs** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+
+The XML below if for Windows 10, version 1803.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
@@ -26,7 +28,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
     <VerDTD>1.2</VerDTD>
     <Node>
         <NodeName>eUICCs</NodeName>
-        <Path>./Vendor/MSFT</Path>
+        <Path>./Device/Vendor/MSFT</Path>
         <DFProperties>
             <AccessType>
                 <Get />
@@ -45,7 +47,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
                 <CIS />
             </CaseSense>
             <DFType>
-                <MIME>com.microsoft/1.0/MDM/eUICCs</MIME>
+                <MIME>com.microsoft/1.1/MDM/eUICCs</MIME>
             </DFType>
         </DFProperties>
         <Node>
@@ -217,6 +219,29 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
                             <Description>Current state of the profile (Installing = 1, Installed = 2, Deleting = 3, Error = 4). Queried by the CSP and only updated by the LPA.</Description>
                             <DFFormat>
                                 <int />
+                            </DFFormat>
+                            <Occurrence>
+                                <One />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                        </DFProperties>
+                    </Node>
+                    <Node>
+                        <NodeName>IsEnabled</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Get />
+                                <Add />
+                                <Replace />
+                            </AccessType>
+                            <Description>Indicates whether this profile is enabled. Can be set by the MDM when the ICCID subtree is created. Can also be queried and updated by the CSP.</Description>
+                            <DFFormat>
+                                <bool />
                             </DFFormat>
                             <Occurrence>
                                 <One />
