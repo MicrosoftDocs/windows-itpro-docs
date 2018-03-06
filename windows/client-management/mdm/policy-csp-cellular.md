@@ -23,13 +23,13 @@ ms.date: 01/30/2018
     <a href="#cellular-letappsaccesscellulardata">Cellular/LetAppsAccessCellularData</a>
   </dd>
   <dd>
-    <a href="#cellular-letappsaccesscellulardata_forceallowtheseapps">Cellular/LetAppsAccessCellularData_ForceAllowTheseApps</a>
+    <a href="#cellular-letappsaccesscellulardata-forceallowtheseapps">Cellular/LetAppsAccessCellularData_ForceAllowTheseApps</a>
   </dd>
   <dd>
-    <a href="#cellular-letappsaccesscellulardata_forcedenytheseapps">Cellular/LetAppsAccessCellularData_ForceDenyTheseApps</a>
+    <a href="#cellular-letappsaccesscellulardata-forcedenytheseapps">Cellular/LetAppsAccessCellularData_ForceDenyTheseApps</a>
   </dd>
   <dd>
-    <a href="#cellular-letappsaccesscellulardata_userincontroloftheseapps">Cellular/LetAppsAccessCellularData_UserInControlOfTheseApps</a>
+    <a href="#cellular-letappsaccesscellulardata-userincontroloftheseapps">Cellular/LetAppsAccessCellularData_UserInControlOfTheseApps</a>
   </dd>
   <dd>
     <a href="#cellular-showappcellularaccessui">Cellular/ShowAppCellularAccessUI</a>
@@ -103,7 +103,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="cellular-letappsaccesscellulardata_forceallowtheseapps"></a>**Cellular/LetAppsAccessCellularData_ForceAllowTheseApps**  
+<a href="" id="cellular-letappsaccesscellulardata-forceallowtheseapps"></a>**Cellular/LetAppsAccessCellularData_ForceAllowTheseApps**  
 
 <!--SupportedSKUs-->
 <table>
@@ -146,7 +146,7 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 <hr/>
 
 <!--Policy-->
-<a href="" id="cellular-letappsaccesscellulardata_forcedenytheseapps"></a>**Cellular/LetAppsAccessCellularData_ForceDenyTheseApps**  
+<a href="" id="cellular-letappsaccesscellulardata-forcedenytheseapps"></a>**Cellular/LetAppsAccessCellularData_ForceDenyTheseApps**  
 
 <!--SupportedSKUs-->
 <table>
@@ -189,7 +189,7 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 <hr/>
 
 <!--Policy-->
-<a href="" id="cellular-letappsaccesscellulardata_userincontroloftheseapps"></a>**Cellular/LetAppsAccessCellularData_UserInControlOfTheseApps**  
+<a href="" id="cellular-letappsaccesscellulardata-userincontroloftheseapps"></a>**Cellular/LetAppsAccessCellularData_UserInControlOfTheseApps**  
 
 <!--SupportedSKUs-->
 <table>

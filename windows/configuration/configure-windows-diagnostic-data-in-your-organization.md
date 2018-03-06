@@ -278,7 +278,7 @@ Windows Analytics Device Health reports are powered by diagnostic data not inclu
 
 In Windows 10, version 1709, we introduce the **Limit Enhanced diagnostic data to the minimum required by Windows Analytics** feature. When enabled, this feature lets you send only the following subset of **Enhanced** level diagnostic data. For more info about Device Health, see the [Monitor the health of devices with Device Health](https://docs.microsoft.com/windows/deployment/update/device-health-monitor) topic.
 
-- **Operating system events.** Limited to a small set required for analytics reports and documented in the [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](https://docs.microsoft.com/windows/configuration/eventname) topic.
+- **Operating system events.** Limited to a small set required for analytics reports and documented in the [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](enhanced-diagnostic-data-windows-analytics-events-and-fields.md) topic.
 
 - **Some crash dump types.** All crash dump types, except for heap and full dumps.
 
