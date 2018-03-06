@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/05/2018
 ---
 
 # Policy CSP - LocalPoliciesSecurityOptions
@@ -238,6 +238,12 @@ If you disable or do not configure this policy (recommended), users will be able
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Accounts: Block Microsoft accounts*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -297,6 +303,12 @@ Default: Disabled.
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *Accounts: Administrator account status*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/DbMapped-->
 <!--SupportedValues-->
 Valid values:  
 - 0 - local Administrator account is disabled
@@ -352,6 +364,12 @@ Note: If the Guest account is disabled and the security option Network Access: S
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *Accounts: Guest account status*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/DbMapped-->
 <!--SupportedValues-->
 Valid values:  
 - 0 - local Guest account is disabled
@@ -415,6 +433,12 @@ It is possible for applications that use remote interactive logons to bypass thi
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Accounts: Limit local account use of blank passwords to console logon only*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
 - 0 -  disabled - local accounts that are not password protected can be used to log on from locations other than the physical computer console
@@ -470,6 +494,12 @@ Default: Administrator.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *Accounts: Rename administrator account*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/DbMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -519,6 +549,12 @@ Default: Guest.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *Accounts: Rename guest account*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/DbMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -569,6 +605,12 @@ Caution:
 Disabling this policy may tempt users to try and physically remove the laptop from its docking station using methods other than the external hardware eject button. Since this may cause damage to the hardware, this setting, in general, should only be disabled on laptop configurations that are physically securable.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Devices: Allow undock without having to log on*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -619,6 +661,12 @@ This security setting determines who is allowed to format and eject removable NT
 Default: This policy is not defined and only Administrators have this ability.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Devices: Allowed to format and eject removable media*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -671,6 +719,12 @@ Note
 This setting does not affect the ability to add a local printer. This setting does not affect Administrators.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Devices: Prevent users from installing printer drivers*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -720,6 +774,12 @@ If this policy is enabled, it allows only the interactively logged-on user to ac
 Default: This policy is not defined and CD-ROM access is not restricted to the locally logged-on user.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Devices: Restrict CD-ROM access to locally logged-on user only*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -780,6 +840,12 @@ If this policy is enabled, the policy Domain member: Digitally sign secure chann
 Logon information transmitted over the secure channel is always encrypted regardless of whether encryption of ALL other secure channel traffic is negotiated or not.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Domain member: Digitally encrypt or sign secure channel data (always)*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -837,6 +903,12 @@ There is no known reason for disabling this setting. Besides unnecessarily reduc
 Note: Domain controllers are also domain members and establish secure channels with other domain controllers in the same domain as well as domain controllers in trusted domains.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Domain member: Digitally encrypt secure channel data (when possible)*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -888,6 +960,12 @@ This setting determines whether or not the domain member attempts to negotiate s
 Default: Enabled.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Domain member: Digitally sign secure channel data (when possible)*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -940,6 +1018,12 @@ This security setting should not be enabled. Computer account passwords are used
 This setting should not be used in an attempt to support dual-boot scenarios that use the same computer account. If you want to dual-boot two installations that are joined to the same domain, give the two installations different computer names.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Domain member: Disable machine account password changes*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -991,6 +1075,12 @@ Important
 This setting applies to Windows 2000 computers, but it is not available through the Security Configuration Manager tools on these computers.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Domain member: Maximum machine account password age*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1053,6 +1143,12 @@ In order to take advantage of this policy on member workstations and servers, al
 In order to take advantage of this policy on domain controllers, all domain controllers in the same domain as well as all trusted domains must run Windows 2000 or later.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Domain member: Require strong (Windows 2000 or later) session key*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1099,6 +1195,12 @@ Interactive Logon:Display user information when the session is locked
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Interactive logon: Display user information when the session is locked*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:
 - 1 - User display name, domain and user names
@@ -1158,6 +1260,12 @@ Default: Disabled.
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Interactive logon: Don't display last signed-in*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
 - 0 - disabled (username will be shown)
@@ -1217,6 +1325,12 @@ Default: Disabled.
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Interactive logon: Don't display username at sign-in*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
 - 0 - disabled (username will be shown)
@@ -1277,6 +1391,12 @@ Default on stand-alone computers: Enabled.
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Interactive logon: Do not require CTRL+ALT+DEL*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
 - 0 - disabled
@@ -1332,6 +1452,12 @@ Default: not enforced.
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Interactive logon: Machine inactivity limit*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
 - 0 - disabled 
@@ -1389,6 +1515,12 @@ Default: No message.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Interactive logon: Message text for users attempting to log on*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1438,6 +1570,12 @@ Default: No message.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Interactive logon: Message title for users attempting to log on*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1502,6 +1640,12 @@ Default: This policy is not defined, which means that the system treats it as No
 On Windows Vista and above: For this setting to work, the Smart Card Removal Policy service must be started.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Interactive logon: Smart card removal behavior*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1567,6 +1711,12 @@ SMB packet signing can significantly degrade SMB performance, depending on diale
 For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Microsoft network client: Digitally sign communications (always)*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1629,6 +1779,12 @@ SMB packet signing can significantly degrade SMB performance, depending on diale
 For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Microsoft network client: Digitally sign communications (if server agrees)*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1678,6 +1834,12 @@ Sending unencrypted passwords is a security risk.
 Default: Disabled.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Microsoft network client: Send unencrypted password to third-party SMB servers*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1729,6 +1891,12 @@ For this policy setting, a value of 0 means to disconnect an idle session as qui
 Default:This policy is not defined, which means that the system treats it as 15 minutes for servers and undefined for workstations.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Microsoft network server: Amount of idle time required before suspending session*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1803,6 +1971,12 @@ HKLM\System\CurrentControlSet\Services\lanmanserver\parameters\enableW9xsecurity
 For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Microsoft network server: Digitally sign communications (always)*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1869,6 +2043,12 @@ SMB packet signing can significantly degrade SMB performance, depending on diale
 For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Microsoft network server: Digitally sign communications (if client agrees)*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1928,6 +2108,12 @@ Important
 This policy has no impact on domain controllers.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network access: Do not allow anonymous enumeration of SAM accounts*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1977,6 +2163,12 @@ Windows allows anonymous users to perform certain activities, such as enumeratin
 Default: Disabled.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network access: Do not allow anonymous enumeration of SAM accounts and shares*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2077,6 +2269,12 @@ Network access: Shares that can be accessed anonymously
 Default: Enabled.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network access: Restrict anonymous access to Named Pipes and Shares*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2126,6 +2324,12 @@ If not selected, the default security descriptor will be used.
 This policy is supported on at least Windows Server 2016.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network access: Restrict clients allowed to make remote calls to SAM*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2231,6 +2435,12 @@ This policy will be turned off by default on domain joined machines. This would 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network security: Allow PKU2U authentication requests to this computer to use online identities.*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
 - 0 - disabled
@@ -2291,6 +2501,12 @@ Windows 2000 Service Pack 2 (SP2) and above offer compatibility with authenticat
 This setting can affect the ability of computers running Windows 2000 Server, Windows 2000 Professional, Windows XP, and the Windows Server 2003 family to communicate with computers running Windows 95 and Windows 98.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network security: Do not store LAN Manager hash value on next password change*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2360,6 +2576,12 @@ Windows Server 2003: Send NTLM response only
 Windows Vista, Windows Server 2008, Windows 7, and Windows Server 2008 R2: Send NTLMv2 response only
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network security: LAN Manager authentication level*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2414,6 +2636,12 @@ Windows XP, Windows Vista, Windows 2000 Server, Windows Server 2003, and Windows
 Windows 7 and Windows Server 2008 R2: Require 128-bit encryption
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network security: Minimum session security for NTLM SSP based (including secure RPC) clients*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2468,6 +2696,12 @@ Windows XP, Windows Vista, Windows 2000 Server, Windows Server 2003, and Windows
 Windows 7 and Windows Server 2008 R2: Require 128-bit encryption
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network security: Minimum session security for NTLM SSP based (including secure RPC) servers*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2568,6 +2802,12 @@ Default on servers: Disabled.
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Shutdown: Allow system to be shut down without having to log on*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
 - 0 - disabled
@@ -2625,6 +2865,12 @@ When this policy is enabled, it causes the system pagefile to be cleared upon cl
 Default: Disabled.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Shutdown: Clear virtual memory pagefile*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2727,6 +2973,12 @@ The secure desktop can be disabled only by the user of the interactive desktop o
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
 - 0 - disabled
@@ -2794,6 +3046,12 @@ The options are:
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2840,6 +3098,12 @@ This policy setting controls the behavior of the elevation prompt for standard u
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *User Account Control: Behavior of the elevation prompt for standard users*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -2899,6 +3163,12 @@ Enabled: (Default) When an application installation package is detected that req
 Disabled: Application installation packages are not detected and prompted for elevation. Enterprises that are running standard user desktops and use delegated installation technologies such as Group Policy Software Installation or Systems Management Server (SMS) should disable this policy setting. In this case, installer detection is unnecessary.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *User Account Control: Detect application installations and prompt for elevation*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2950,6 +3220,12 @@ The options are:
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *User Account Control: Only elevate executables that are signed and validated*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3007,6 +3283,12 @@ The options are:
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *User Account Control: Only elevate UIAccess applications that are installed in secure locations*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3059,6 +3341,12 @@ The options are:
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *User Account Control: Run all administrators in Admin Approval Mode*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3110,6 +3398,12 @@ The options are:
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *User Account Control: Switch to the secure desktop when prompting for elevation*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3161,6 +3455,12 @@ The options are:
 • Disabled: (Default) The built-in Administrator account runs all applications with full administrative privilege.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *User Account Control: Admin Approval Mode for the Built-in Administrator account*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3208,6 +3508,12 @@ This policy setting controls whether application write failures are redirected t
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *User Account Control: Virtualize file and registry write failures to per-user locations*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 

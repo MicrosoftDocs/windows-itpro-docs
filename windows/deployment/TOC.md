@@ -224,6 +224,7 @@
 ### [Manage device restarts after updates](update/waas-restart.md)
 ### [Manage additional Windows Update settings](update/waas-wu-settings.md)
 ### [Windows Insider Program for Business](update/waas-windows-insider-for-business.md)
+#### [Introduction to the Windows Insider Program for Business](update/WIP4Biz-intro.md)
 #### [Windows Insider Program for Business Frequently Asked Questions](update/waas-windows-insider-for-business-faq.md)
 #### [Olympia Corp enrollment](update/olympia/olympia-enrollment-guidelines.md)
 ### [Change history for Update Windows 10](update/change-history-for-update-windows-10.md)
