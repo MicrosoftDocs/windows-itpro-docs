@@ -34,7 +34,7 @@ To let people in your organization sign in to Surface Hub with their phones and 
 
 - Surface Hub is set up with either a local or domain-joined account.
 
-Currently, you cannot use Microsoft Authenticator to sign in to Surface Hubs that are joined to an Active Directory domain or to Azure AD. 
+Currently, you cannot use Microsoft Authenticator to sign in to Surface Hubs that are joined to Azure AD. 
 
 ## Individual prerequisites
 
