@@ -1465,6 +1465,13 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[MultiSIM CSP](multisim-csp.md)</td>
 <td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
 </td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<ul>
+<li>MaintainProcessorArchitectureOnUpdate</li>
+</ul>
+</td></tr>
 </tbody>
 </table>
 
@@ -1598,6 +1605,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tr class="odd">
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
 <td style="vertical-align:top"><p>Updated the description for AllowWarningForOtherDiskEncryption to describe changes added in Windows 10, version 1803.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added new node MaintainProcessorArchitectureOnUpdate in Windows 10, next major update.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[DMClient CSP](dmclient-csp.md)</td>

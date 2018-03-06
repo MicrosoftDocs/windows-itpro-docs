@@ -7,10 +7,14 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 09/22/2017
+ms.date: 03/01/2018
 ---
 
 # EnterpriseModernAppManagement CSP
+
+
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The EnterpriseModernAppManagement configuration service provider (CSP) is used for the provisioning and reporting of modern enterprise apps. For details about how to use this CSP to for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](enterprise-app-management.md).
 
@@ -358,6 +362,20 @@ The following image shows the EnterpriseModernAppManagement configuration servic
    </Item>
 </Get>
 ```
+
+<a href="" id="----packagefamilyname-maintainprocessorarchitectureonupdate"></a>**.../*PackageFamilyName*/MaintainProcessorArchitectureOnUpdate**  
+Added in Windows 10, version 1803. Specify whether on a AMD64 device, across an app update, the architecture of the installed app must not change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
+
+Supported operations are Add, Get, Delete, and Replace. Value type is integer.
+
+Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (Most restrictive wins).
+
+|Applicability Setting |CSP state  |Result  |
+|---------|---------|---------|
+|True |Not configured     |X86 flavor is picked         |
+|True |Enabled    |X86 flavor is picked         |
+|True |Disabled         |X86 flavor is picked         |
+|False (not set) |Not configured         |X64 flavor is picked          |
 
 <a href="" id="appinstallation"></a>**AppInstallation**  
 <p style="margin-left: 20px">Required node. Used to perform app installation.
