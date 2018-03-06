@@ -45,6 +45,8 @@ Threat analytics helps you continually assess and control risk exposure to Spect
 - **Microcode mitigation**: Identifies machines that have installed the necessary microcode updates or those that do not require them
 - **Overall mitigation status**: Identifies the completeness by which machines have mitigated against the Spectre and Meltdown exploits 
 
+To access Threat analytics, from the navigation pane select **Dashboards** > **Threat analytics**.
+
 Click a section of each chart to get a list of the machines in the corresponding mitigation status.
 
 

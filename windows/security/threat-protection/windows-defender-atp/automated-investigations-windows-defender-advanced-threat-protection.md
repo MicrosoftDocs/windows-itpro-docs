@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 03/15/2018
+ms.date: 04/16/2018
 ---
 
 # Automated investigations in Windows Defender ATP
