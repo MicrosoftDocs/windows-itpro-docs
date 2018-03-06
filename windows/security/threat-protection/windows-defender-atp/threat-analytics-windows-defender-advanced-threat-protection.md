@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 03/05/2018
+ms.date: 03/06/2018
 ---
 
 # Threat analytics for Spectre and Meltdown
@@ -23,7 +23,7 @@ ms.date: 03/05/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 [Spectre and Meltdown](https://cloudblogs.microsoft.com/microsoftsecure/2018/01/09/understanding-the-performance-impact-of-spectre-and-meltdown-mitigations-on-windows-systems/) is a new class of exploits that take advantage of critical vulnerabilities in the CPU processors, allowing attackers running user-level, non-admin code to steal data from kernel memory. These exploits can potentially allow arbitrary non-admin code running on a host machine to harvest sensitive data belonging to other apps or system processes, including apps on guest VMs.
 
