@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/05/2018
 ---
 
 # Policy CSP - ErrorReporting
@@ -99,14 +99,14 @@ If you disable or do not configure this policy setting, then the default consent
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Customize consent settings*
 -   GP name: *WerConsentCustomize_2*
 -   GP path: *Windows Components/Windows Error Reporting/Consent*
 -   GP ADMX file name: *ErrorReporting.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -161,14 +161,14 @@ If you disable or do not configure this policy setting, the Turn off Windows Err
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Disable Windows Error Reporting*
 -   GP name: *WerDisable_2*
 -   GP path: *Windows Components/Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -227,14 +227,14 @@ See also the Configure Error Reporting policy setting.
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Display Error Notification*
 -   GP name: *PCH_ShowUI*
 -   GP path: *Windows Components/Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -289,14 +289,14 @@ If you disable or do not configure this policy setting, then consent policy sett
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Do not send additional data*
 -   GP name: *WerNoSecondLevelData_2*
 -   GP path: *Windows Components/Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -351,14 +351,14 @@ If you disable or do not configure this policy setting, Windows Error Reporting 
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Prevent display of the user interface for critical errors*
 -   GP name: *WerDoNotShowUI*
 -   GP path: *Windows Components/Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
 
