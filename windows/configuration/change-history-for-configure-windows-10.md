@@ -15,9 +15,9 @@ ms.date: 02/12/2018
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
-## RELEASE: Windows 10, version (1804?)
+## RELEASE: Windows 10, version 1803
 
-The topics in this library have been updated for Windows 10, version (1804?)). The following new topics have been added:
+The topics in this library have been updated for Windows 10, version 1803). The following new topics have been added:
 
 - Windows Configuration Designer setting: [AccountManagement](wcd/wcd-accountmanagement.md)
 - Windows Configuration Designer setting: [RcsPresence](wcd/wcd-rcspresence.md)
