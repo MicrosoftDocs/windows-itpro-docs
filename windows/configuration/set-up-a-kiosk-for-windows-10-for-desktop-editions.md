@@ -226,6 +226,8 @@ To change the default time for assigned access to resume, add *IdleTimeOut* (DWO
 Using Shell Launcher, you can configure a kiosk device that runs a Classic Windows application as the user interface. The application that you specify replaces the default shell (explorer.exe) that usually runs when a user logs on.
 
 >[!NOTE]
+>In Windows 10, version (1804?), you can configure Shell Launcher using the **ShellLauncher** node of the [Assigned Access CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/assignedaccess-csp).
+>
 >You can also configure a kiosk device that runs a Classic Windows application by using the [Provision kiosk devices wizard](#wizard).
 
 >[!WARNING]
