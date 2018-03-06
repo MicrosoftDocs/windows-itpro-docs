@@ -76,13 +76,8 @@ For example, if you include the PIN and fingerprint credential providers in both
 The **Signal rules for device unlock** setting contains the rules the Trusted Signal credential provider uses to satisfy unlocking the device.
 
 ### Rule element
-You represent signal rules in XML.  Each signal rule has an starting and ending **rule** element that contains the **schemaVersion** attribute and value.  The current supported scheam version is 1.0.
-
-|Attribute|Value|
-|---------|-----|
-|schemaVersion| "1.0"|
-
-**Example** <br>
+You represent signal rules in XML.  Each signal rule has an starting and ending **rule** element that contains the **schemaVersion** attribute and value.  The current supported scheam version is 1.0.<br>
+**Example**
 ```
 <rule schemaVersion="1.0">
 </rule>
@@ -105,7 +100,6 @@ You define the bluetooth signal with additional attribute in the signal elment. 
 |classOfDevice|"*number*"|no|
 |rssiMin|"*number*"|no|
 |rssiMaxDelta|"*number*"|no|
-|sessionId|"*number*"|no|
 
 Example:
 ```
@@ -155,13 +149,13 @@ The IPv4 network gateway represented in Internet standard dotted-decimal notatio
 The IPv4 DHCP server represented in Internet standard dotted-decimal notation. A network port or prefix must not be present in the network string.  A **signal** element may only contain one **ipv4DhcpServer** element.<br>
 **Example**
 ```
-<ipv4DhcpServer>192.168.100.10</ipv4Gateway>
+<ipv4DhcpServer>192.168.100.10</ipv4DhcpServer>
 ```
 ##### IPv4DnsServer
 The IPv4 DNS server represented in Internet standard dotted-decimal notation. A network port or prefix must not be present in the network string.The **signal** element may contain one or more **ipv4DnsServer** elements.<br>
 **Example:**
 ```
-<ipv4DbsServer>192.168.100.10</ipv4DbsServer>
+<ipv4DnsServer>192.168.100.10</ipv4DnsServer>
 ```
 
 ##### IPv6Prefix
@@ -187,24 +181,16 @@ The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IP
 
 ##### IPv6DnsServer
 The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IPv6 scope ID may be present in the network string. A network port or prefix must not be present in the network string. The **signal** element may contain one or more **ipv6DnsServer** elements.<br>
-**Example syntax**
+**Example**
 ```
 <ipv6DnsServer>21DA:00D3:0000:2F3B:02AA:00FF:FE28:9C5A%2</ipv6DnsServer>
 ```
 ##### dnsSuffix
-The fully qualified domain name of your organizations internal dns suffix where any part of the fully qualified domain name in this setting exists in the computer's primary dns suffix.  The **signal** element may contain one or more **dnsSuffix** elements.
-
-Windows 10, version 1703 includes two trusted signal types, which are bluetooth and IP configuration   
-
-The default signal rules for the policy setting include the proximity of any paired bluetooth phone.<br>
-`<rule schemaVersion="1.0"> <signal type="bluetooth" scenario="Authentication"/> </rule>`
-
-
-
->[!IMPORTANT]
-> * PIN **must** be in at least one of the groups
-> * Trusted signals **must** be combined with another credential provider
-> * You cannot use the same unlock factor to satisfy both categories. Therefore, if you include any credential provider in both categories, it means it can satisfy either category, but not both.
+The fully qualified domain name of your organizations internal dns suffix where any part of the fully qualified domain name in this setting exists in the computer's primary dns suffix.  The **signal** element may contain one or more **dnsSuffix** elements.<br>
+**Example**
+```
+<dnsSuffix>corp.contoso.com</dnsSuffix>
+```
 
 ### Sample Trusted Signal Congfigurations
 
@@ -264,9 +250,16 @@ You need a Windows 10, version 1709 workstation to run the Group Policy Manageme
 
 Alternatively, you can create copy the .ADMX and .ADML files from a Windows 10, version 1703 to their respective language folder on a Windows Server or you can create a Group Policy Central Store and copy them their respective language folder. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administrative-templates-in-windows) for more information.
 
+
 ### Create the Multifactor Unlock Group Policy object
 
 The Group Policy object contains the policy settings needed to trigger Windows Hello for Business provisioning and to ensure Windows Hello for Business authentication certificates are automatically renewed.
+
+>[!IMPORTANT]
+> * PIN **must** be in at least one of the groups
+> * Trusted signals **must** be combined with another credential provider
+> * You cannot use the same unlock factor to satisfy both categories. Therefore, if you include any credential provider in both categories, it means it can satisfy either category, but not both.
+
 1. Start the **Group Policy Management Console** (gpmc.msc)
 2. Expand the domain and select the **Group Policy Object** node in the navigation pane.
 3. Right-click **Group Policy object** and select **New**.
