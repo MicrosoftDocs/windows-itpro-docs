@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 02/23/2018
+ms.date: 03/5/2018
 ---
 # Multifactor Unlock
 
@@ -73,18 +73,187 @@ For example, if you include the PIN and fingerprint credential providers in both
 
 ## Configure Signal Rules for the Trusted Signal Credential Provider
 
-The **Signal rules for device unlock** setting contains the rules the Trusted Signal credential provider uses to satisfy unlocking the device. 
+The **Signal rules for device unlock** setting contains the rules the Trusted Signal credential provider uses to satisfy unlocking the device.
+
+### Rule element
+You represent signal rules in XML.  Each signal rule has an starting and ending **rule** element that contains the **schemaVersion** attribute and value.  The current supported scheam version is 1.0.
+
+|Attribute|Value|
+|---------|-----|
+|schemaVersion| "1.0"|
+
+**Example** <br>
+```
+<rule schemaVersion="1.0">
+</rule>
+```
+
+### Signal element
+Each rule element has a **signal** element.  All signal elements have a **type** element and value.  Windows 10, version 1709 supports the **ipConfig** and **bluetooth** type values.<br>
+
+|Attribute|Value|
+|---------|-----|
+| type| "bluetooth" or "ipConfig" (Windows 10, version 1709)| 
+
+#### Bluetooth
+You define the bluetooth signal with additional attribute in the signal elment. The bluetooth configuration does not use any other elements. You can end the signal element with short ending tag "\/>".
+
+|Attribute|Value|Required|
+|---------|-----|--------|
+|type|"bluetooth"|yes|
+|scenario|"Authentication"|yes|
+|classOfDevice|"*number*"|no|
+|rssiMin|"*number*"|no|
+|rssiMaxDelta|"*number*"|no|
+|sessionId|"*number*"|no|
+
+Example:
+```
+<rule schemaVersion="1.0">
+    <signal type="bluetooth" scenario="Authentication" classOfDevice="512" rssiMin="-10" rssiMaxDelta="-10"/>
+</rule>
+```
+The **classofDevice** attribute defaults Phones and uses the values from the following table 
+
+|Description|Value|
+|:-------------|:-------:|
+|Miscellaneous|0|
+|Computer|256|
+|Phone|512|
+|LAN/Network Access Point|768|
+|Audio/Video|1024|
+|Peripheral|1280|
+|Imaging|1536|
+|Wearable|1792|
+|Toy|2048|
+|Health|2304|
+|Uncategorized|7936|
+
+The **rssiMin** attribute value signal indicates the strength needed for the device to be considered "in-range".  The default value of **-10** enables a user to move about an average size office or cubicle without triggering Windows to lock the device.  The **rssiMaxDelta** has a default value of **-10**, which instruct Windows 10 to lock the device once the signal strength weakens by more than measurement of 10.  
+
+RSSI measurements are relative and lower as the bluetooth signals between the two paired devices reduces. Therefore a measurement of 0 is stronger than -10, which is stronger than -60, which is an indicator the devices are moving further apart from each other.
+
+>[!IMPORTANT]
+>Microsoft recommends using the default values for this policy settings.  Measurements are relative, based on the varying conditions of each environment.  Therefore, the same values may produce different results. Test policy settings in each environment prior to broadly deploying the setting.
+
+#### IP Configuration
+You define IP configuration signals using one or more ipConfiguration elements.  Each element has a string value.  IpConfiguraiton elements do not have attributes or nested elements.
+
+##### IPv4Prefix
+The IPv4 network prefix represented in Internet standard dotted-decimal notation. A network prefix that uses the Classless Inter-Domain Routing (CIDR) notation is required as part of the network string. A network port must not be present in the network string.  A **signal** element may only contain one **ipv4Prefix** element.<br>
+**Example**
+```
+<ipv4Prefix>192.168.100.0/24</ipv4Prefix>
+```
+##### IPv4Gateway
+The IPv4 network gateway represented in Internet standard dotted-decimal notation. A network port or prefix must not be present in the network string.  A **signal** element may only contain one **ipv4Gateway** element.<br>
+**Example**
+```
+<ipv4Gateway>192.168.100.10</ipv4Gateway>
+```
+##### IPv4DhcpServer
+The IPv4 DHCP server represented in Internet standard dotted-decimal notation. A network port or prefix must not be present in the network string.  A **signal** element may only contain one **ipv4DhcpServer** element.<br>
+**Example**
+```
+<ipv4DhcpServer>192.168.100.10</ipv4Gateway>
+```
+##### IPv4DnsServer
+The IPv4 DNS server represented in Internet standard dotted-decimal notation. A network port or prefix must not be present in the network string.The **signal** element may contain one or more **ipv4DnsServer** elements.<br>
+**Example:**
+```
+<ipv4DbsServer>192.168.100.10</ipv4DbsServer>
+```
+
+##### IPv6Prefix
+The IPv6 network prefix represented in IPv6 network using Internet standard hexadecimal encoding. A network prefix in CIDR notation is required as part of the network string. A network port or scope ID must not be present in the network string.  A **signal** element may only contain one **ipv6Prefix** element.<br>
+**Example** 
+```
+<ipv6Prefix>21DA:D3::/48</ipv6Prefix>
+```
+
+##### IPv6Gateway
+The IPv6 network gateway represented in Internet standard hexadecimal encoding. An IPv6 scope ID may be present in the network string. A network port or prefix must not be present in the network string.  A **signal** element may only contain one **ipv6Gateway** element.<br>
+**Example** 
+```
+<ipv6Gateway>21DA:00D3:0000:2F3B:02AA:00FF:FE28:9C5A%2</ipv6Gateway>
+```
+
+##### IPv6DhcpServer
+The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IPv6 scope ID may be present in the network string. A network port or prefix must not be present in the network string.  A **signal** element may only contain one **ipv6DhcpServer** element.<br>
+**Example**
+```
+<ipv6DhcpServer>21DA:00D3:0000:2F3B:02AA:00FF:FE28:9C5A%2</ipv6DhcpServer
+```
+
+##### IPv6DnsServer
+The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IPv6 scope ID may be present in the network string. A network port or prefix must not be present in the network string. The **signal** element may contain one or more **ipv6DnsServer** elements.<br>
+**Example syntax**
+```
+<ipv6DnsServer>21DA:00D3:0000:2F3B:02AA:00FF:FE28:9C5A%2</ipv6DnsServer>
+```
+##### dnsSuffix
+The fully qualified domain name of your organizations internal dns suffix where any part of the fully qualified domain name in this setting exists in the computer's primary dns suffix.  The **signal** element may contain one or more **dnsSuffix** elements.
+
+Windows 10, version 1703 includes two trusted signal types, which are bluetooth and IP configuration   
 
 The default signal rules for the policy setting include the proximity of any paired bluetooth phone.<br>
 `<rule schemaVersion="1.0"> <signal type="bluetooth" scenario="Authentication"/> </rule>`
 
 
+
 >[!IMPORTANT]
 > * PIN **must** be in at least one of the groups
 > * Trusted signals **must** be combined with another credential provider
-> * You cannot use the same unlock factor to satisfy both categories. Therefore, if you include any credential provider in both categories, it means it can be used to satisfy either category, but not both.
+> * You cannot use the same unlock factor to satisfy both categories. Therefore, if you include any credential provider in both categories, it means it can satisfy either category, but not both.
 
-## Configuring Multifactor Unlock
+### Sample Trusted Signal Congfigurations
+
+These examples are wrapped for readability.  Once properly formatted, the entire XML contents must be a single line.
+
+#### Example 1
+This example configures an IPConfig signal type using Ipv4Prefix, Ipv4DnsServer, and DnsSuffix elements.
+```
+<rule schemaVersion="1.0"> 
+    <signal type="ipConfig"> 
+        <ipv4Prefix>10.10.10.0/24</ipv4Prefix>
+        <ipv4DnsServer>10.10.0.1</ipv4DnsServer>
+        <ipv4DnsServer>10.10.0.2</ipv4DnsServer>
+        <dnsSuffix>corp.contoso.com</dnsSuffix> 
+	</signal> 
+</rule>
+```
+
+
+#### Example 2
+This example configures an IpConfig signal type using a dnsSuffix element and a bluetooth signal for phones.  This configuration is wrapped for reading.  Once properly formatted, the entire XML contents must be a single line.
+>[!NOTE] 
+>Separate each rule element using a comma.
+
+```
+<rule schemaVersion="1.0"> 
+	<signal type="ipConfig"> 
+	    <dnsSuffix>corp.contoso.com</dnsSuffix> 
+	</signal> 
+</rule>,
+<rule schemaVersion="1.0">
+	<signal type="bluetooth" scenario="Authentication" classOfDevice="512" rssiMin="-10" rssiMaxDelta="-10"/>
+</rule>
+```
+#### Example 3
+This example configures the same as example 2 using compounding And elements.
+```
+<rule schemaVersion="1.0">
+<and>
+  <signal type="ipConfig">
+   <dnsSuffix>corp.microsoft.com</dnsSuffix>
+  </signal> 
+  <signal type="bluetooth" scenario="Authentication" classOfDevice="512" rssiMin="-10" rssiMaxDelta="-10"/>
+</and>
+</rule>
+```
+
+
+## Deploying Multifactor Unlock
 
 >[!IMPORTANT]
 >Once the you deploy multifactor unlock policies, users are not be able to unlock their devices if they do not have the required factors. The fall back options are to use passwords or smart cards (both of which could be disabled as needed).
@@ -95,7 +264,7 @@ You need a Windows 10, version 1709 workstation to run the Group Policy Manageme
 
 Alternatively, you can create copy the .ADMX and .ADML files from a Windows 10, version 1703 to their respective language folder on a Windows Server or you can create a Group Policy Central Store and copy them their respective language folder. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administrative-templates-in-windows) for more information.
 
-#### Create the Multifactor Unlock Group Policy object
+### Create the Multifactor Unlock Group Policy object
 
 The Group Policy object contains the policy settings needed to trigger Windows Hello for Business provisioning and to ensure Windows Hello for Business authentication certificates are automatically renewed.
 1. Start the **Group Policy Management Console** (gpmc.msc)
@@ -108,4 +277,8 @@ The Group Policy object contains the policy settings needed to trigger Windows H
 ![Group Policy Editor](images/multifactorUnlock/gpme.png)
 8. In the content pane, double-click **Configure device unlock factors**. Click **Enable**.  The **Options** section populates the policy setting with default values.<br>
 ![Multifactor Policy Setting](images/multifactorUnlock/gp-setting.png)
+9. Configure first and second unlock factors using the information in the [Configure Unlock Factors](#configuring-unlock-factors) section.
+10. If using trusted signals, configure the trusted signals used by the unlock factor using the information in the [Configure Signal Rules for the Trusted Signal Credential Provider](#configure-signal-rules-for-the-trusted-signal-credential-provider) section.
+11. Click **Ok** to close the **Group Policy Management Editor**. Use the **Group Policy Management Console** to deploy the newly created Group Policy object to your organization's computers.
 
+ 
