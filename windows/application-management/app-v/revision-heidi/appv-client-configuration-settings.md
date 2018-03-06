@@ -104,12 +104,6 @@ The following table provides information about App-V client configuration settin
 | **HidePublishingRefreshUI**<br>1 (Enabled), 0 (Disabled)  | | |
 | **ProcessesUsingVirtualComponents**<br>String  | Virtualization\\ProcessesUsingVirtualComponents  | Empty string. |
 
-## Have a suggestion for App-V?
-
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
-
-For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
-
 ## Related topics
 
 [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md)
