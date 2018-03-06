@@ -73,7 +73,7 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 
     ![enter settings for first app](../images/wcd-app-commands.png)
 
-### Add a universal app to your package
+## Add a universal app to your package
 
 Universal apps that you can distribute in the provisioning package can be line-of-business (LOB) apps developed by your organization, Microsoft Store for Business apps that you acquire with [offline licensing](/microsoft-store/acquire-apps-windows-store-for-business), or third-party apps. This procedure will assume you are distributing apps from the Microsoft Store for Business. For other apps, obtain the necessary information (such as the package family name) from the app developer. 
 
@@ -108,7 +108,7 @@ Universal apps that you can distribute in the provisioning package can be line-o
 
 
 
-### Add a certificate to your package
+## Add a certificate to your package
 
 1. In the **Available customizations** pane, go to **Runtime settings** > **Certificates** > **ClientCertificates**. 
 
@@ -123,11 +123,11 @@ Universal apps that you can distribute in the provisioning package can be line-o
 5. For **KeyLocation**, select **Software only**. 
 
 
-### Add other settings to your package 
+## Add other settings to your package 
 
 For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( https://go.microsoft.com/fwlink/p/?LinkId=619012).
 
-### Build your package
+## Build your package
 
 1. When you are done configuring the provisioning package, on the **File** menu, click **Save**.
 
