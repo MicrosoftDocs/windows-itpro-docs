@@ -12,7 +12,7 @@ ms.date: 04/01/2018
 
 # What's new in Microsoft HoloLens
 
-Windows 10, version 1803, is the first feature update to Windows 10 Holographic for Business. This update introduces the following changes:
+Windows 10, version 1803, is the first feature update to Windows Holographic for Business since its release in Windows 10, version 1607. This update introduces the following changes:
 
 - Previously, you could only verify that upgrade license for Commercial Suite had been applied to your HoloLens device by checking to see if VPN was now an available option on the device. Now, **Settings** > **System** will display **Windows Holographic for Business** after the upgrade license is applied. Learn how to [unlock Windows Holographic for Business features](hololens-upgrade-enterprise.md). 
     
