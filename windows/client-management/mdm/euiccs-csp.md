@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/15/2017
+ms.date: 03/02/2018
 ---
 
 # eUICCs CSP
@@ -60,6 +60,11 @@ Supported operations are Add and Get. Value type is string.
 Required. Current state of the profile (Installing = 1, Installed = 2, Deleting = 3, Error = 4). Queried by the CSP and only updated by the LPA.
 
 Supported operation is Get. Value type is integer. Default value is 1.
+
+<a href="" id="euicc-profiles-iccid-isenabled"></a>**_eUICC_/Profiles/_ICCID_/IsEnabled**  
+Added in Windows 10, version 1803. Indicates whether this profile is enabled. Can be set by the MDM when the ICCID subtree is created to enable the profile once it’s successfully downloaded and installed on the device. Can also be queried and updated by the CSP.
+
+Supported operations are Add, Get, and Replace. Value type is bool.
 
 <a href="" id="euicc-policies"></a>**_eUICC_/Policies**  
 Interior node. Required. Device policies associated with the eUICC as a whole (not per-profile).
