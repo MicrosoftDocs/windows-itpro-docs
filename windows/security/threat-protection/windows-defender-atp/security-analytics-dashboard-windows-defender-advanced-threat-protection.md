@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 localizationpriority: high
-ms.date: 03/05/2018
+ms.date: 04/16/2018
 ---
 
 # View the Windows Defender Advanced Threat Protection Security analytics dashboard
