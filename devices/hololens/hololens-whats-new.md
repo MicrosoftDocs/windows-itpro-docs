@@ -16,7 +16,7 @@ Windows 10, version 1803, is the first feature update to Windows 10 Holographic 
 
 - Previously, you could only verify that upgrade license for Commercial Suite had been applied to your HoloLens device by checking to see if VPN was now an available option on the device. Now, **Settings** > **System** will display **Windows Holographic for Business** after the upgrade license is applied. Learn how to [unlock Windows Holographic for Business features](hololens-upgrade-enterprise.md). 
     
-- Provisioning a HoloLens device is now easier with the new **Provision HoloLens devices** wizard in the Windows Configuration Designer tool. In the wizard, you can configure the setup experience, network connections, set developer mode, and obtain bulk Azure AD tokens. Learn how to [use simple provisioning for HoloLens](hololens-provisioning.md#simple).
+- Provisioning a HoloLens device is now easier with the new **Provision HoloLens devices** wizard in the Windows Configuration Designer tool. In the wizard, you can configure the setup experience, network connections, set developer mode, and obtain bulk Azure AD tokens. Learn how to [use simple provisioning for HoloLens](hololens-provisioning.md#wizard).
 
     ![Provisioning HoloLens devices](images/provision-hololens-devices.png)
 
