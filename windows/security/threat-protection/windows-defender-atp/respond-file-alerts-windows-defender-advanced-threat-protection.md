@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 11/09/2017
+ms.date: 03/06/2018
 ---
 
 # Take response actions on a file
@@ -48,7 +48,7 @@ The **Stop and Quarantine File** action includes stopping running processes, qua
 The action takes effect on machines with Windows 10, version 1703 or later, where the file was observed in the last 30 days.
 
 >[!NOTE]
->You’ll be able to remove the file from quarantine at any time.
+>You’ll be able to restore the file from quarantine at any time.
 
 ### Stop and quarantine files
 1.	Select the file you want to stop and quarantine. You can select a file from any of the following views or use the Search box:
@@ -101,7 +101,7 @@ You can roll back and remove a file from quarantine if you’ve determined that 
   ```
 
 > [!NOTE]
-> Windows Defender ATP will remove all files that were quarantined on this machine in the last 30 days.
+> Windows Defender ATP will restore all files that were quarantined on this machine in the last 30 days.
 
 ## Block files in your network
 You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on machines in your organization.

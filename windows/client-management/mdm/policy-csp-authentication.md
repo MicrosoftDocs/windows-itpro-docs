@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/05/2018
 ---
 
 # Policy CSP - Authentication
@@ -286,6 +286,14 @@ Added in Windows 10, version 1607. Allows secondary authentication devices to w
 The default for this policy must be on for consumer devices (defined as local or Microsoft account connected device) and off for enterprise devices (such as cloud domain-joined, cloud domain-joined in an on-premise only environment, cloud domain-joined in a hybrid environment, and BYOD).
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow companion device for secondary authentication*
+-   GP name: *MSSecondaryAuthFactor_AllowSecondaryAuthenticationDevice*
+-   GP path: *Windows Components/Microsoft Secondary Authentication Factor*
+-   GP ADMX file name: *DeviceCredential.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 

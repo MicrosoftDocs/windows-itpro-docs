@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/05/2018
 ---
 
 # Policy CSP - DeliveryOptimization
@@ -143,6 +143,15 @@ Added in Windows 10, version 1607. Specifies the maximum size in GB of Delivery
 The default value is 10.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Absolute Max Cache Size (in GB)*
+-   GP name: *AbsoluteMaxCacheSize*
+-   GP element: *AbsoluteMaxCacheSize*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -190,6 +199,15 @@ The default value is 10.
 Added in Windows 10, version 1703. Specifies whether the device is allowed to participate in Peer Caching while connected via VPN to the domain network. This means the device can download from or upload to other domain network devices, either on VPN or on the corporate domain network.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Enable Peer Caching while the device connects via VPN*
+-   GP name: *AllowVPNPeerCaching*
+-   GP element: *AllowVPNPeerCaching*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -242,6 +260,15 @@ Added in Windows 10, version 1803. This policy allows you to delay the use of an
 After the max delay is reached, the download will resume using HTTP, either downloading the entire payload or complementing the bytes that could not be downloaded from peers. Note that a download that is waiting for peer sources, will appear to be stuck for the end user. The recommended value is 1 hour (3600).
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Delay background download from http (in secs)*
+-   GP name: *DelayBackgroundDownloadFromHttp*
+-   GP element: *DelayBackgroundDownloadFromHttp*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -291,6 +318,15 @@ Note that a download that is waiting for peer sources, will appear to be stuck f
 The recommended value is 1 minute (60).
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Delay Foreground download from http (in secs)*
+-   GP name: *DelayForegroundDownloadFromHttp*
+-   GP element: *DelayForegroundDownloadFromHttp*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values as number of seconds:
 
@@ -346,6 +382,15 @@ The following list shows the supported values as number of seconds:
 Specifies the download method that Delivery Optimization can use in downloads of Windows Updates, Apps and App updates.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Download Mode*
+-   GP name: *DownloadMode*
+-   GP element: *DownloadMode*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -407,6 +452,15 @@ This Policy specifies an arbitrary group ID that the device belongs to. Use this
 > You must use a GUID as the group ID.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Group ID*
+-   GP name: *GroupId*
+-   GP element: *GroupId*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -458,6 +512,15 @@ The options set in this policy only apply to Group (2) download mode. If Group (
 For option 4 - DHCP Option ID, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Select the source of Group IDs*
+-   GP name: *GroupIdSource*
+-   GP element: *GroupIdSource*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -516,6 +579,15 @@ Specifies the maximum time in seconds that each file is held in the Delivery Opt
 The default value is 259200 seconds (3 days).
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Max Cache Age (in seconds)*
+-   GP name: *MaxCacheAge*
+-   GP element: *MaxCacheAge*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -565,6 +637,15 @@ Specifies the maximum cache size that Delivery Optimization can utilize, as a pe
 The default value is 20.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Max Cache Size (percentage)*
+-   GP name: *MaxCacheSize*
+-   GP element: *MaxCacheSize*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -614,6 +695,15 @@ Added in Windows 10, version 1607. Specifies the maximum download bandwidth in 
 The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Maximum Download Bandwidth (in KB/s)*
+-   GP name: *MaxDownloadBandwidth*
+-   GP element: *MaxDownloadBandwidth*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -663,6 +753,15 @@ Specifies the maximum upload bandwidth in KiloBytes/second that a device will us
 The default value is 0, which permits unlimited possible bandwidth (optimized for minimal usage of upload bandwidth).
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Max Upload Bandwidth (in KB/s)*
+-   GP name: *MaxUploadBandwidth*
+-   GP element: *MaxUploadBandwidth*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -712,6 +811,15 @@ Added in Windows 10, version 1607. Specifies the minimum download QoS (Quality 
 The default value is 500.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Minimum Background QoS (in KB/s)*
+-   GP name: *MinBackgroundQos*
+-   GP element: *MinBackgroundQos*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -760,6 +868,15 @@ Added in Windows 10, version 1703. Specifies any value between 1 and 100 (in pe
 The default value is 0. The value 0 (zero) means "not limited" and the cloud service default value will be used.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow uploads while the device is on battery while under set Battery level (percentage)*
+-   GP name: *MinBatteryPercentageAllowedToUpload*
+-   GP element: *MinBatteryPercentageAllowedToUpload*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -812,6 +929,15 @@ Added in Windows 10, version 1703. Specifies the required minimum disk size (cap
 The default value is 32 GB.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Minimum disk size allowed to use Peer Caching (in GB)*
+-   GP name: *MinDiskSizeAllowedToPeer*
+-   GP element: *MinDiskSizeAllowedToPeer*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -861,6 +987,15 @@ Added in Windows 10, version 1703. Specifies the minimum content file size in MB
 The default value is 100 MB.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Minimum Peer Caching Content File Size (in MB)*
+-   GP name: *MinFileSizeToCache*
+-   GP element: *MinFileSizeToCache*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -910,6 +1045,15 @@ Added in Windows 10, version 1703. Specifies the minimum RAM size in GB required
 The default value is 4 GB.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Minimum RAM capacity (inclusive) required to enable use of Peer Caching (in GB)*
+-   GP name: *MinRAMAllowedToPeer*
+-   GP element: *MinRAMAllowedToPeer*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -959,6 +1103,15 @@ Added in Windows 10, version 1607. Specifies the drive that Delivery Optimizati
 By default, %SystemDrive% is used to store the cache.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Modify Cache Drive*
+-   GP name: *ModifyCacheDrive*
+-   GP element: *ModifyCacheDrive*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1010,6 +1163,15 @@ The value 0 (zero) means "unlimited"; No monthly upload limit is applied if 0 is
 The default value is 20.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Monthly Upload Data Cap (in GB)*
+-   GP name: *MonthlyUploadDataCap*
+-   GP element: *MonthlyUploadDataCap*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1157,6 +1319,15 @@ Options available are: 1=Subnet mask (more options will be added in a future rel
 Option 1 (Subnet mask) applies to both Download Mode LAN (1) and Group (2).
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Select a method to restrict Peer Selection*
+-   GP name: *RestrictPeerSelectionBy*
+-   GP element: *RestrictPeerSelectionBy*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1203,19 +1374,32 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. Specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth. 
- 
-Note that downloads from LAN peers will not be throttled even when this policy is set.
+Added in Windows 10, version 1803. Specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
 
 <!--/Description-->
 <!--SupportedValues-->
 This policy allows an IT Admin to define the following:
 
 -  Business hours range (for example 06:00 to 18:00)
--  % of throttle for foreground traffic during business hours
--  % of throttle for foreground traffic outside of business hours
+-  % of throttle for background traffic during business hours
+-  % of throttle for background traffic outside of business hours
 
 <!--/SupportedValues-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Set Business Hours to Limit Background Download Bandwidth*
+-   GP name: *SetHoursToLimitBackgroundDownloadBandwidth*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -1256,9 +1440,7 @@ This policy allows an IT Admin to define the following:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. Specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth. 
- 
-Note that downloads from LAN peers will not be throttled even when this policy is set.
+Added in Windows 10, version 1803. Specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -1269,6 +1451,21 @@ This policy allows an IT Admin to define the following:
 -  % of throttle for foreground traffic outside of business hours
 
 <!--/SupportedValues-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Set Business Hours to Limit Foreground Download Bandwidth*
+-   GP name: *SetHoursToLimitForegroundDownloadBandwidth*
+-   GP path: *Windows Components/Delivery Optimization*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
 

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/05/2018
 ---
 
 # Policy CSP - ApplicationDefaults
@@ -68,6 +68,15 @@ Added in Windows 10, version 1703. This policy allows an administrator to set de
 If policy is enabled and the client machine is Azure Active Directory joined, the associations assigned in SyncML will be processed and default associations will be applied.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Set a default associations configuration file*
+-   GP name: *DefaultAssociationsConfiguration*
+-   GP element: *DefaultAssociationsConfiguration_TextBox*
+-   GP path: *File Explorer*
+-   GP ADMX file name: *WindowsExplorer.admx*
+
+<!--/ADMXMapped-->
 <!--Example-->
 To create create the SyncML, follow these steps:
 <ol>

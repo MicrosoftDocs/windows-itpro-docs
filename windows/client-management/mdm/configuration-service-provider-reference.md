@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 02/02/2018
+ms.date: 03/02/2018
 ---
 
 # Configuration service provider reference
@@ -1121,6 +1121,34 @@ Footnotes:
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
+[eUICCs CSP](euiccs-csp.md)  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
 </tr>
 </table>
 
