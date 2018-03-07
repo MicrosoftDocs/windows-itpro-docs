@@ -63,7 +63,7 @@ Save the following sample as an XML file. You will select this file when you con
 </LayoutModificationTemplate>
 ```
 
-### Start layout provisioning package
+### Start layout for a provisioning package
 
 You will create an XML file to define the kiosk configuration to be included in a provisioning package. Use the following sample in your XML file.
 
