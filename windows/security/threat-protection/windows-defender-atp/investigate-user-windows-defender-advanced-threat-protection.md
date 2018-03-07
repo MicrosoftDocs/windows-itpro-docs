@@ -52,7 +52,7 @@ You'll also see a list of the machines that the user logged on to, and can expan
 
 >[!NOTE]
 >You'll need to enable the integration between Windows Defender ATP and Azure ATP to use this feature.
-
+the same note that I added in the Machine page- it should be the same in both cases: (this should be done in both sides, and on WDATP it would be in the "advanced settings")
 
 For more information on how to enable advanced features, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md).
 
