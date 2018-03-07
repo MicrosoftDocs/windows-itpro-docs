@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 07/27/2017
+ms.date: 03/06/2018
 ms.localizationpriority: medium
 ---
 
@@ -57,7 +57,9 @@ For detailed steps using PowerShell to provision a device account, choose an opt
 If you prefer to use a graphical user interface (UI), some steps can be done using UI instead of PowerShell. 
 For more information, see [Creating a device account using UI](create-a-device-account-using-office-365.md).
 
+## Account verification and testing
 
+There are two methods available that you can use to validate and test a Surface Hub device account: [account verifications scripts](appendix-a-powershell-scripts-for-surface-hub.md#acct-verification-ps-scripts) and the [Surface Hub Hardware Diagnostic app](https://www.microsoft.com/store/apps/9nblggh51f2g). The account verification script will validate a previously-created device account using PowerShell from your desktop. The Surface Hub Hardware Diagnostic app is installed on your Surface Hub and provides detailed feedback about signin and communication failures. Both are valuable tools to test newly created device accounts and should be used to ensure optimal account availability.
 
  
 

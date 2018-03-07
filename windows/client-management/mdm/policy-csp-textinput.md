@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 02/26/2018
+ms.date: 03/05/2018
 ---
 
 # Policy CSP - TextInput
@@ -657,6 +657,14 @@ Allows the uninstall of language features, such as spell checkers, on a device.
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Uninstallation of Language Features*
+-   GP name: *AllowLanguageFeaturesUninstall*
+-   GP path: *Windows Components/Text Input*
+-   GP ADMX file name: *TextInput.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1291,8 +1299,8 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--/Policy-->
-
 <hr/>
+
 Footnote:
 
 -   1 - Added in Windows 10, version 1607.

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/05/2018
 ---
 
 # Policy CSP - Defender
@@ -172,6 +172,14 @@ ms.date: 01/30/2018
 Allows or disallows scanning of archives.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Scan archive files*
+-   GP name: *Scan_DisableArchiveScanning*
+-   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -226,6 +234,14 @@ The following list shows the supported values:
 Allows or disallows Windows Defender Behavior Monitoring functionality.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn on behavior monitoring*
+-   GP name: *RealtimeProtection_DisableBehaviorMonitoring*
+-   GP path: *Windows Components/Windows Defender Antivirus/Real-time Protection*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -280,6 +296,15 @@ The following list shows the supported values:
 To best protect your PC, Windows Defender will send information to Microsoft about any problems it finds. Microsoft will analyze that information, learn more about problems affecting you and other customers, and offer improved solutions.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Join Microsoft MAPS*
+-   GP name: *SpynetReporting*
+-   GP element: *SpynetReporting*
+-   GP path: *Windows Components/Windows Defender Antivirus/MAPS*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -334,6 +359,14 @@ The following list shows the supported values:
 Allows or disallows scanning of email.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn on e-mail scanning*
+-   GP name: *Scan_DisableEmailScanning*
+-   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -388,6 +421,14 @@ The following list shows the supported values:
 Allows or disallows a full scan of mapped network drives.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Run full scan on mapped network drives*
+-   GP name: *Scan_DisableScanningMappedNetworkDrivesForFullScan*
+-   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -442,6 +483,14 @@ The following list shows the supported values:
 Allows or disallows a full scan of removable drives.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Scan removable drives*
+-   GP name: *Scan_DisableRemovableDriveScanning*
+-   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -496,6 +545,14 @@ The following list shows the supported values:
 Allows or disallows Windows Defender IOAVP Protection functionality.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Scan all downloaded files and attachments*
+-   GP name: *RealtimeProtection_DisableIOAVProtection*
+-   GP path: *Windows Components/Windows Defender Antivirus/Real-time Protection*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -604,6 +661,14 @@ The following list shows the supported values:
 Allows or disallows Windows Defender On Access Protection functionality.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Monitor file and program activity on your computer*
+-   GP name: *RealtimeProtection_DisableOnAccessProtection*
+-   GP path: *Windows Components/Windows Defender Antivirus/Real-time Protection*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -658,6 +723,14 @@ The following list shows the supported values:
 Allows or disallows Windows Defender Realtime Monitoring functionality.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off real-time protection*
+-   GP name: *DisableRealtimeMonitoring*
+-   GP path: *Windows Components/Windows Defender Antivirus/Real-time Protection*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -712,6 +785,14 @@ The following list shows the supported values:
 Allows or disallows a scanning of network files.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Scan network files*
+-   GP name: *Scan_DisableScanningNetworkFiles*
+-   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -820,6 +901,14 @@ The following list shows the supported values:
 Allows or disallows user access to the Windows Defender UI. If disallowed, all Windows Defender notifications will also be suppressed.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Enable headless UI mode*
+-   GP name: *UX_Configuration_UILockdown*
+-   GP path: *Windows Components/Windows Defender Antivirus/Client Interface*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -876,6 +965,15 @@ Added in Windows 10, version 1709. This policy setting allows you to prevent Att
 Value type is string.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Exclude files and paths from Attack Surface Reduction Rules*
+-   GP name: *ExploitGuard_ASR_ASROnlyExclusions*
+-   GP element: *ExploitGuard_ASR_ASROnlyExclusions*
+-   GP path: *Windows Components/Windows Defender Antivirus/Windows Defender Exploit Guard/Attack Surface Reduction*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -927,6 +1025,15 @@ For more information about ASR rule ID and status ID, see [Enable Attack Surface
 Value type is string.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Attack Surface Reduction rules*
+-   GP name: *ExploitGuard_ASR_Rules*
+-   GP element: *ExploitGuard_ASR_Rules*
+-   GP path: *Windows Components/Windows Defender Antivirus/Windows Defender Exploit Guard/Attack Surface Reduction*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -977,6 +1084,15 @@ Represents the average CPU load factor for the Windows Defender scan (in percent
 The default value is 50.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify the maximum percentage of CPU utilization during a scan*
+-   GP name: *Scan_AvgCPULoadFactor*
+-   GP element: *Scan_AvgCPULoadFactor*
+-   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 Valid values: 0–100
 
@@ -1035,6 +1151,15 @@ For more information about specific values that are supported, see the Windows D
 > This feature requires the "Join Microsoft MAPS" setting enabled in order to function.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Select cloud protection level*
+-   GP name: *MpEngine_MpCloudBlockLevel*
+-   GP element: *MpCloudBlockLevel*
+-   GP path: *Windows Components/Windows Defender Antivirus/MpEngine*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1097,6 +1222,15 @@ For example, if the desired timeout is 60 seconds, specify 50 seconds in this se
 > This feature depends on three other MAPS settings the must all be enabled- "Configure the 'Block at First Sight' feature; "Join Microsoft MAPS"; "Send file samples when further analysis is required".
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure extended cloud check*
+-   GP name: *MpEngine_MpBafsExtendedTimeout*
+-   GP element: *MpBafsExtendedTimeout*
+-   GP path: *Windows Components/Windows Defender Antivirus/MpEngine*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1143,6 +1277,15 @@ For example, if the desired timeout is 60 seconds, specify 50 seconds in this se
 Added in Windows 10, version 1709. This policy setting allows user-specified applications to the guard my folders feature. Adding an allowed application means the guard my folders feature will allow the application to modify or delete content in certain folders such as My Documents. In most cases it will not be necessary to add entries. Windows Defender Antivirus will automatically detect and dynamically add applications that are friendly. Value type is string. Use the | as the substring separator.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure allowed applications*
+-   GP name: *ExploitGuard_ControlledFolderAccess_AllowedApplications*
+-   GP element: *ExploitGuard_ControlledFolderAccess_AllowedApplications*
+-   GP path: *Windows Components/Windows Defender Antivirus/Windows Defender Exploit Guard/Controlled Folder Access*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1189,6 +1332,15 @@ Added in Windows 10, version 1709. This policy setting allows user-specified app
 Added in Windows 10, version 1709. This policy settings allows adding user-specified folder locations to the guard my folders feature. These folders will complement the system defined folders such as My Documents and My Pictures. The list of system folders will be displayed in the user interface and can not be changed. Value type is string. Use the | as the substring separator.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure protected folders*
+-   GP name: *ExploitGuard_ControlledFolderAccess_ProtectedFolders*
+-   GP element: *ExploitGuard_ControlledFolderAccess_ProtectedFolders*
+-   GP path: *Windows Components/Windows Defender Antivirus/Windows Defender Exploit Guard/Controlled Folder Access*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1239,6 +1391,15 @@ Time period (in days) that quarantine items will be stored on the system.
 The default value is 0, which keeps items in quarantine, and does not automatically remove them.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure removal of items from Quarantine folder*
+-   GP name: *Quarantine_PurgeItemsAfterDelay*
+-   GP element: *Quarantine_PurgeItemsAfterDelay*
+-   GP path: *Windows Components/Windows Defender Antivirus/Quarantine*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 Valid values: 0–90
 
@@ -1289,6 +1450,15 @@ Valid values: 0–90
 Added in Windows 10, version 1709. This policy enables setting the state (On/Off/Audit) for the guard my folders feature. The guard my folders feature removes modify and delete permissions from untrusted applications to certain folders such as My Documents. Value type is integer and the range is 0 - 2.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Controlled folder access*
+-   GP name: *ExploitGuard_ControlledFolderAccess_EnableControlledFolderAccess*
+-   GP element: *ExploitGuard_ControlledFolderAccess_EnableControlledFolderAccess*
+-   GP path: *Windows Components/Windows Defender Antivirus/Windows Defender Exploit Guard/Controlled Folder Access*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1349,6 +1519,15 @@ If you disable this policy, users/apps will not be blocked from connecting to da
 If you do not configure this policy, network blocking will be disabled by default.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Prevent users and apps from accessing dangerous websites*
+-   GP name: *ExploitGuard_EnableNetworkProtection*
+-   GP element: *ExploitGuard_EnableNetworkProtection*
+-   GP path: *Windows Components/Windows Defender Antivirus/Windows Defender Exploit Guard/Network Protection*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1404,6 +1583,15 @@ The following list shows the supported values:
 Allows an administrator to specify a list of file type extensions to ignore during a scan. Each file type in the list must be separated by a **|**. For example, "lib|obj".
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Path Exclusions*
+-   GP name: *Exclusions_Paths*
+-   GP element: *Exclusions_PathsList*
+-   GP path: *Windows Components/Windows Defender Antivirus/Exclusions*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1451,6 +1639,15 @@ Allows an administrator to specify a list of file type extensions to ignore duri
 Allows an administrator to specify a list of directory paths to ignore during a scan. Each path in the list must be separated by a **|**. For example, "C:\\Example|C:\\Example1".
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Extension Exclusions*
+-   GP name: *Exclusions_Extensions*
+-   GP element: *Exclusions_ExtensionsList*
+-   GP path: *Windows Components/Windows Defender Antivirus/Exclusions*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1504,6 +1701,15 @@ Allows an administrator to specify a list of files opened by processes to ignore
 Each file type must be separated by a **|**. For example, "C:\\Example.exe|C:\\Example1.exe".
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Process Exclusions*
+-   GP name: *Exclusions_Processes*
+-   GP element: *Exclusions_ProcessesList*
+-   GP path: *Windows Components/Windows Defender Antivirus/Exclusions*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1609,6 +1815,15 @@ Controls which sets of files should be monitored.
 > If **AllowOnAccessProtection** is not allowed, then this configuration can be used to monitor specific files.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure monitoring for incoming and outgoing file and program activity*
+-   GP name: *RealtimeProtection_RealtimeScanDirection*
+-   GP element: *RealtimeProtection_RealtimeScanDirection*
+-   GP path: *Windows Components/Windows Defender Antivirus/Real-time Protection*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1664,6 +1879,15 @@ The following list shows the supported values:
 Selects whether to perform a quick scan or full scan.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify the scan type to use for a scheduled scan*
+-   GP name: *Scan_ScanParameters*
+-   GP element: *Scan_ScanParameters*
+-   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1727,6 +1951,15 @@ For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, an
 The default value is 120
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify the time for a daily quick scan*
+-   GP name: *Scan_ScheduleQuickScantime*
+-   GP element: *Scan_ScheduleQuickScantime*
+-   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 Valid values: 0–1380
 
@@ -1781,6 +2014,15 @@ Selects the day that the Windows Defender scan should run.
 > The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify the day of the week to run a scheduled scan*
+-   GP name: *Scan_ScheduleDay*
+-   GP element: *Scan_ScheduleDay*
+-   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1851,6 +2093,15 @@ For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, an
 The default value is 120.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify the time of day to run a scheduled scan*
+-   GP name: *Scan_ScheduleTime*
+-   GP element: *Scan_ScheduleTime*
+-   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 Valid values: 0–1380.
 
@@ -1907,6 +2158,15 @@ A value of 0 means no check for new signatures, a value of 1 means to check ever
 The default value is 8.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify the interval to check for definition updates*
+-   GP name: *SignatureUpdate_SignatureUpdateInterval*
+-   GP element: *SignatureUpdate_SignatureUpdateInterval*
+-   GP path: *Windows Components/Windows Defender Antivirus/Signature Updates*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 Valid values: 0–24.
 
@@ -1958,6 +2218,15 @@ Valid values: 0–24.
 Checks for the user consent level in Windows Defender to send data. If the required consent has already been granted, Windows Defender submits them. If not, (and if the user has specified never to ask), the UI is launched to ask for user consent (when **Defender/AllowCloudProtection** is allowed) before sending data.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Send file samples when further analysis is required*
+-   GP name: *SubmitSamplesConsent*
+-   GP element: *SubmitSamplesConsent*
+-   GP path: *Windows Components/Windows Defender Antivirus/MAPS*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -2032,6 +2301,15 @@ The following list shows the supported values for possible actions:
 -   10 – Block
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify threat alert levels at which default action should not be taken when detected*
+-   GP name: *Threats_ThreatSeverityDefaultAction*
+-   GP element: *Threats_ThreatSeverityDefaultActionList*
+-   GP path: *Windows Components/Windows Defender Antivirus/Threats*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 <hr/>
 
