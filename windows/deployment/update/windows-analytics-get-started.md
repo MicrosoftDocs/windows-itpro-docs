@@ -15,7 +15,8 @@ ms.date: 03/06/2018
 
 The three Windows Analytics solutions (Update Compliance, Upgrade Readiness, and Device Health) have common prerequisites and configuration steps.
 
->[!NOTE] The steps in this topic are common to all of the Windwos Analytics solutions, but each of the individual solutions might require a few further steps to fully configure. Consult the topics for each solution you intend to use in addition to this topic.
+>[!NOTE]
+>The steps in this topic are common to all of the Windwos Analytics solutions, but each of the individual solutions might require a few further steps to fully configure. Consult the topics for each solution you intend to use in addition to this topic.
 
 ## Prerequisites
 [DO WE HAVE WA PREREQUISITES TO LIST HERE?]
@@ -55,12 +56,17 @@ To enable data sharing, configure your proxy sever to whitelist the following en
 | `https://oca.telemetry.microsoft.com`  | Online Crash Analysis; required for Device Health and Update Compliance AV reports. Not used by Upgrade Readiness. |
 
 >[!IMPORTANT]  
-> If your deployment includes devices running Windows 10 versions prior to Windows 10, version 1703, you must **exclude** *authentication* for these endpoints. Windows Error Reporting did not support authenticating proxies until Windows 10, version 1703. See the **Excluding endpoints** section for options.
+> If your deployment includes devices running Windows 10 versions prior to Windows 10, version 1703, you must **exclude** *authentication* for these endpoints. Windows Error Reporting did not support authenticating proxies until Windows 10, version 1703. See the **Configuring endpoint access with proxy servers** section for options.
 
->[!NOTE] The compatibility update runs under the device's system account.
+>[!NOTE] 
+>The compatibility update runs under the device's system account.
 
-#### Excluding endpoints
-[ADD FROM MATT'S MAIL]
+#### Configuring endpoint access with proxy servers
+If your organization uses proxy server authentication for outbound traffic, use one or more of the following approaches to ensure that the diagnostic data is not blocked by proxy authentication:
+
+- **Best option:** Configure your proxy servers to **not** require proxy authentication for any traffic to the diagnostic data endpoints. This is the most comprehensive solution and it works for all versions of Windows 10.
+- **User proxy authentication:** Alternatively, you can configure devices on the user side. First, update the devices to Windows 10, version 1703 or later. Then, ensure that users of the devices have proxy permission to reach the diagnostic data endpoints. This requires that the devices have console users with proxy permissions, so you couldn't use this method with headless devices.
+- **Device proxy authentication:** Another option--the most complex--is as follows: First, configure a system level proxy server on the devices. Then, configure these devices to use machine-account-based outbound proxy authentication. Finally, configure proxy servers to allow the machine accounts access to the diagnostic data endpoints. 
 
 ### Test data sharing
 Devices must be able to reach the endpoints specified in the "Enable data sharing" section of this topic, so it's worth taking some time now to verify that they are reachable.
@@ -133,7 +139,8 @@ The compatibility update scans your devices and enables application usage tracki
 | Windows 8.1          | [KB 2976978](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2976978)<br>Performs diagnostics on the Windows 8.1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2976978><br><BR>[KB 3150513](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=3150513)<br>Provides updated configuration and definitions for compatibility diagnostics performed on the system.<br>For more information about this KB, see <https://support.microsoft.com/kb/3150513><br>**NOTE:** KB2976978 must be installed before you can download and install KB3150513.   |
 | Windows 7 SP1        | [KB2952664](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2952664) <br>Performs diagnostics on the Windows 7 SP1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2952664><br><BR>[KB 3150513](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=3150513)<br>Provides updated configuration and definitions for compatibility diagnostics performed on the system.<br>For more information about this update, see <https://support.microsoft.com/kb/3150513><br>**NOTE:** KB2952664 must be installed before you can download and install KB3150513. |
 
->[!IMPORTANT] Restart computers after you install the compatibility updates for the first time.
+>[!IMPORTANT] 
+>Restart computers after you install the compatibility updates for the first time.
 
 If you are planning to enable IE Site Discovery in Upgrade Readiness, you will need to install a few additional updates.
 
