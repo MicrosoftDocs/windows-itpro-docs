@@ -28,6 +28,65 @@ For HoloLens devices running Windows 10, version 1803, there are three methods t
 
 For HoloLens devices running Windows 10, version 1607, you can [use the Windows Device Portal](#portal-kiosk) to configure single-app kiosks.
 
+<span id="start-kiosk"/>
+## Start layout for HoloLens kiosk mode
+
+If you use [Microsoft Intune](#intune-kiosk) or a [provisioning package](#ppkg-kiosk) to configure a kiosk, the procedure requires a Start layout. Start layout customization isn't supported in Holographic for Business, so you'll need to use a "fake" Start layout. 
+
+### Start layout file for Intune
+
+Save the following sample as an XML file. You will select this file when you configure the kiosk in Microsoft Intune.
+
+```xml
+<LayoutModificationTemplate Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+  <DefaultLayoutOverride>
+    <StartLayoutCollection>
+<!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
+            <StartLayout>
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                      <LayoutOptions StartTileGroupCellWidth="6" />
+                      <DefaultLayoutOverride>
+                        <StartLayoutCollection>
+                          <defaultlayout:StartLayout GroupCellWidth="6">
+                            <start:Group Name="Life at a glance">
+                              <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.SkypeApp_kzf8qxf38zg5c!App" />
+                            </start:Group>
+                          </defaultlayout:StartLayout>
+                        </StartLayoutCollection>
+                      </DefaultLayoutOverride>
+                    </LayoutModificationTemplate>
+                ]]>
+            </StartLayout>
+            <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens --> 
+    </StartLayoutCollection>
+  </DefaultLayoutOverride>
+</LayoutModificationTemplate>
+```
+
+### Start layout provisioning package
+
+You will create an XML file to define the kiosk configuration to be included in a provisioning package. Use the following sample in your XML file.
+
+```xml
+<!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
+            <StartLayout>
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                      <LayoutOptions StartTileGroupCellWidth="6" />
+                      <DefaultLayoutOverride>
+                        <StartLayoutCollection>
+                          <defaultlayout:StartLayout GroupCellWidth="6">
+                            <start:Group Name="Life at a glance">
+                              <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.SkypeApp_kzf8qxf38zg5c!App" />
+                            </start:Group>
+                          </defaultlayout:StartLayout>
+                        </StartLayoutCollection>
+                      </DefaultLayoutOverride>
+                    </LayoutModificationTemplate>
+                ]]>
+            </StartLayout>
+            <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
+``` 
+
 <span id="intune-kiosk"/>
 ## Set up kiosk mode using Microsoft Intune (Windows 10, version 1803)
 
