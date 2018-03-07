@@ -20,6 +20,11 @@ This topic lists new and updated topics in the [Microsoft HoloLens documentation
 The topics in this library have been updated for Windows 10 Holographic for Business, version 1803. The following new topics have been added:
 
 - >
+## February 2018
+
+New or changed topic | Description
+--- | ---
+[Unlock Windows Holographic for Business features](hololens-upgrade-enterprise.md)  | Replaced the instructions for upgrading to Windows Holographic for Business using Microsoft Intune with a link to the new Intune topic.
 
 ## December 2017
 

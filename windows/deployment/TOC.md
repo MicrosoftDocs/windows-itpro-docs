@@ -8,12 +8,14 @@
 ### [Configure VDA for Subscription Activation](vda-subscription-activation.md)
 ### [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md)
 ## [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md)
+### [Submit Windows 10 upgrade errors](upgrade/submit-errors.md)
 
 ## [Deploy Windows 10](deploy.md)
 
 ### [Overview of Windows AutoPilot](windows-autopilot/windows-10-autopilot.md)
 
 ### [Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)
+#### [Windows 10 downgrade paths](upgrade/windows-10-downgrade-paths.md)
 ### [Windows 10 edition upgrade](upgrade/windows-10-edition-upgrades.md)
 ### [Windows 10 volume license media](windows-10-media.md)
 
@@ -222,6 +224,7 @@
 ### [Manage device restarts after updates](update/waas-restart.md)
 ### [Manage additional Windows Update settings](update/waas-wu-settings.md)
 ### [Windows Insider Program for Business](update/waas-windows-insider-for-business.md)
+#### [Introduction to the Windows Insider Program for Business](update/WIP4Biz-intro.md)
 #### [Windows Insider Program for Business Frequently Asked Questions](update/waas-windows-insider-for-business-faq.md)
 #### [Olympia Corp enrollment](update/olympia/olympia-enrollment-guidelines.md)
 ### [Change history for Update Windows 10](update/change-history-for-update-windows-10.md)

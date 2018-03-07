@@ -4,11 +4,13 @@
       {
         "files": [
           "**/*.md",
-          "**/**.yml"
+          "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
@@ -20,28 +22,24 @@
       {
         "files": [
           "**/*.png",
-          "**/*.svg",
-          "**/*.jpg",
-          "**/*.json"
+          "**/*.jpg"
         ],
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**"
         ]
       }
     ],
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-    "breadcrumb_path": "/microsoft-365-business/breadcrumb/toc.json",
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "TechNet.bcs"
-			}
-		}
-	},
+      "breadcrumb_path": "/microsoft-365/business/breadcrumb/toc.json",
+      "extendBreadcrumb": true
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "bcs"
+    "dest": "bcs-vsts"
   }
 }

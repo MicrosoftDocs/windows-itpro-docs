@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerms
 ms.localizationpriority: high
-ms.date: 10/30/2017
+ms.date: 02/08/2018
 ms.author: jdecker
 ---
 
@@ -20,31 +20,69 @@ ms.author: jdecker
 
 -   Windows 10
 
-A [kiosk device](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) has been expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package.
-
->[!NOTE]
->For devices running versions of Windows 10 earlier than version 1709, you can [create AppLocker rules](lock-down-windows-10-applocker.md) to configure a multi-app kiosk. 
+A [kiosk device](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) has been expanded to make it easy for administrators to create kiosks that run more than one app. 
 
 The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access. 
 
 >[!WARNING]
->The assigned access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app assigned access configuration is applied on the device, certain policies are enforced system-wide, and will impact other users on the device. Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the policies enforced via assigned access.
+>The assigned access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app assigned access configuration is applied on the device, [certain policies](#policies-set-by-multi-app-kiosk-configuration) are enforced system-wide, and will impact other users on the device. Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the policies enforced via assigned access.
 
+You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provisioning package](#provision).
+
+<span id="intune"/>
+## Configure a kiosk in Microsoft Intune
+
+Watch how to use Intune to configure a multi-app kiosk.
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/ce9992ab-9fea-465d-b773-ee960b990c4a?autoplay=false]
+
+1. [Generate the Start layout for the kiosk device.](#startlayout)
+2. In the Microsoft Azure portal, search for **Intune** or go to **More services** > **Intune**.
+3. Select **Device configuration**.
+4. Select **Profiles**.
+5. Select **Create profile**.
+6. Enter a friendly name for the profile.
+7. Select **Windows 10 and later** for the platform.
+8. Select **Device restrictions** for the profile type.
+9. Select **Kiosk**.
+10. In **Kiosk Mode**, select **Multi app kiosk**.
+11. Select **Add** to define a configuration, which specifies the apps that will run and the layout for the Start menu.
+12. Enter a friendly name for the configuration.
+13. Select an app type, either **Win32 App** for a classic desktop application or **UWP App** for a Universal Windows Platform app.
+  - For **Win32 App**, enter the fully qualified pathname of the executable, with respect to the device.
+  - For **UWP App**, enter the Application User Model ID for an installed app.
+14. Select whether to enable the taskbar.
+15. Browse to and select the Start layout XML file that you generated in step 1.
+16. Add one or more accounts. When the account signs in, only the apps defined in the configuration will be available.
+17. Select **OK**. You can add additional configurations or finish.
+18. Assign the profile to a device group to configure the devices in that group as kiosks.
+
+
+
+
+
+## Configure a kiosk using a provisioning package
 
 Process:
 1. [Create XML file](#create-xml-file)
 2. [Add XML file to provisioning package](#add-xml)
 3. [Apply provisioning package to device](#apply-ppkg)
 
+Watch how to use a provisioning package to configure a multi-app kiosk.
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
+
 If you don't want to use a provisioning package, you can deploy the configuration XML file using [mobile device management (MDM)](#alternate-methods) or you can configure assigned access using the [MDM Bridge WMI Provider](#bridge).
 
-## Prerequisites
+### Prerequisites
 
 - Windows Configuration Designer (Windows 10, version 1709)
 - The kiosk device must be running Windows 10 (S, Pro, Enterprise, or Education), version 1709
 
+>[!NOTE]
+>For devices running versions of Windows 10 earlier than version 1709, you can [create AppLocker rules](lock-down-windows-10-applocker.md) to configure a multi-app kiosk. 
 
-## Create XML file
+### Create XML file
 
 Let's start by looking at the basic structure of the XML file. 
 
@@ -81,7 +119,7 @@ You can start your file by pasting the following XML (or any other examples in t
 </AssignedAccessConfiguration>
 ```
 
-### Profile
+#### Profile
 
 A profile section in the XML has the following entries: 
 
@@ -94,7 +132,7 @@ A profile section in the XML has the following entries:
 - [**Taskbar**](#taskbar)
 
 
-#### Id
+##### Id
 
 The profile **Id** is a GUID attribute to uniquely identify the profile. You can create a GUID using a GUID generator. The GUID just needs to be unique within this XML file. 
 
@@ -104,7 +142,7 @@ The profile **Id** is a GUID attribute to uniquely identify the profile. You can
 </Profiles>
 ```
 
-#### AllowedApps
+##### AllowedApps
 
 **AllowedApps** is a list of applications that are allowed to run. Apps can be Universal Windows Platform (UWP) apps or Classic Windows desktop apps. 
 
@@ -146,7 +184,7 @@ The following example allows Groove Music, Movies & TV, Photos, Weather, Calcula
 </AllAppsList>
 ```
 
-#### StartLayout
+##### StartLayout
 
 After you define the list of allowed applications, you can customize the Start layout for your kiosk experience. You can choose to pin all the allowed apps on the Start screen or just a subset, depending on whether you want the end user to directly access them on the Start screen. 
 
@@ -193,7 +231,7 @@ This example pins Groove Music, Movies & TV, Photos, Weather, Calculator, Paint,
 
 ![What the Start screen looks like when the XML sample is applied](images/sample-start.png)
 
-#### Taskbar
+##### Taskbar
 
 Define whether you want to have the taskbar present in the kiosk device. For tablet-based or touch-enabled all-in-one kiosks, when you don’t attach a keyboard and mouse, you can hide the taskbar as part of the multi-app experience if you want. 
 
@@ -212,7 +250,7 @@ The following example hides the taskbar:
 >[!NOTE]
 >This is different from the **Automatically hide the taskbar** option in tablet mode, which shows the taskbar when swiping up from or moving the mouse pointer down to the bottom of the screen. Setting **ShowTaskbar** as **false** will always keep the taskbar hidden. 
 
-### Configs
+#### Configs
 
 Under **Configs**, define which user account will be associated with the profile. When this user account signs in on the device, the associated assigned access profile will be enforced, including the allowed apps, Start layout, and taskbar configuration, as well as other local group policies or mobile device management (MDM) policies set as part of the multi-app experience. 
 
@@ -247,7 +285,7 @@ Before applying the multi-app configuration, make sure the specified user accoun
 
 
 <span id="add-xml" />
-## Add XML file to provisioning package
+### Add XML file to provisioning package
 
 Before you add the XML file to a provisioning package, you can [validate your configuration XML against the XSD](multi-app-kiosk-xml.md#xsd-for-assignedaccess-configuration-xml).
 
@@ -308,12 +346,12 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 15. Copy the provisioning package to the root directory of a USB drive.
 
 <span id="apply-ppkg" />
-## Apply provisioning package to device
+### Apply provisioning package to device
 
 Provisioning packages can be applied to a device during the first-run experience (out-of-box experience or "OOBE") and after ("runtime").
 
 
-### During initial setup, from a USB drive
+#### During initial setup, from a USB drive
 
 1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
 
@@ -337,7 +375,7 @@ Provisioning packages can be applied to a device during the first-run experience
     
 
     
-### After setup, from a USB drive, network folder, or SharePoint site
+#### After setup, from a USB drive, network folder, or SharePoint site
 
 1. Sign in with an admin account.
 2. Insert the USB drive to a desktop computer, navigate to **Settings** > **Accounts** > **Access work or school** > **Add or remove a provisioning package** > **Add a package**, and select the package to install. 
@@ -356,7 +394,7 @@ Provisioning packages can be applied to a device during the first-run experience
 
 
 <span id="alternate-methods" />
-## Use MDM to deploy the multi-app configuration 
+### Use MDM to deploy the multi-app configuration 
 
 
 Multi-app kiosk mode is enabled by the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp). Your MDM policy can contain the assigned access configuration XML. 

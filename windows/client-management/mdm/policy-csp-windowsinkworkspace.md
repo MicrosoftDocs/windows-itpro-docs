@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/14/2017
+ms.date: 03/05/2018
 ---
 
 # Policy CSP - WindowsInkWorkspace
@@ -15,7 +15,7 @@ ms.date: 12/14/2017
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## WindowsInkWorkspace policies  
 
 <dl>
@@ -27,11 +27,13 @@ ms.date: 12/14/2017
   </dd>
 </dl>
 
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="windowsinkworkspace-allowsuggestedappsinwindowsinkworkspace"></a>**WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -53,8 +55,8 @@ ms.date: 12/14/2017
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -62,11 +64,19 @@ ms.date: 12/14/2017
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Show recommended app suggestions in the ink workspace.
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1607. Show recommended app suggestions in the ink workspace.
 
-<!--EndDescription-->
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow suggested apps in Windows Ink Workspace*
+-   GP name: *AllowSuggestedAppsInWindowsInkWorkspace*
+-   GP path: *Windows Components/Windows Ink Workspace*
+-   GP ADMX file name: *WindowsInkWorkspace.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -74,12 +84,14 @@ The following list shows the supported values:
 -   1 (default) -allow app suggestions.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
+<!--/Policy-->
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="windowsinkworkspace-allowwindowsinkworkspace"></a>**WindowsInkWorkspace/AllowWindowsInkWorkspace**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -101,8 +113,8 @@ The following list shows the supported values:
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -110,18 +122,29 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether to allow the user to access the ink workspace.
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1607. Specifies whether to allow the user to access the ink workspace.
 
-<p style="margin-left: 20px">Value type is int. The following list shows the supported values:
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Windows Ink Workspace*
+-   GP name: *AllowWindowsInkWorkspace*
+-   GP element: *AllowWindowsInkWorkspaceDropdown*
+-   GP path: *Windows Components/Windows Ink Workspace*
+-   GP ADMX file name: *WindowsInkWorkspace.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Value type is int. The following list shows the supported values:
 
 -   0 - access to ink workspace is disabled. The feature is turned off.
 -   1 - ink workspace is enabled (feature is turned on), but the user cannot access it above the lock screen.
 -   2 (default) - ink workspace is enabled (feature is turned on), and the user is allowed to use it above the lock screen.
 
-<!--EndDescription-->
-<!--EndPolicy-->
+<!--/SupportedValues-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -130,5 +153,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

@@ -23,7 +23,7 @@ ms.date: 01/12/2017
 |  |  |
 | :---: |:--- |
 | [![Connect the device to Wi-Fi](images/edu-TIB-setp-1-v3.png)](#edu-task1) | [Log in](#edu-task1) to **Device A** with your Teacher credentials and connect to the school network. |
-| [![Try Learning Tools Immersive Reader](images/edu-TIB-setp-2-v3.png)](#edu-task2) | **Interested in drastically improving your students' reading speed and comprehension?<sup>[1](#footnote1)</sup>** </br>Try the [Learning Tools Immersive Reader](#edu-task2) to see how kids can learn to read faster, using text read aloud, and highlighting words for syntax. |
+| [![Try Learning Tools Immersive Reader](images/edu-TIB-setp-2-v3.png)](#edu-task2) | **Interested in significantly improving your students' reading speed and comprehension?<sup>[1](#footnote1)</sup>** </br>Try the [Learning Tools Immersive Reader](#edu-task2) to see how kids can learn to read faster, using text read aloud, and highlighting words for syntax. |
 | [![Launch Microsoft Teams](images/edu-TIB-setp-3-v3.png)](#edu-task3) | **Looking to foster collaboration, communication, and critical thinking in the classroom?** </br>Launch [Microsoft Teams](#edu-task3) and learn how to set up digital classroom discussions, respond to student questions, and organize class content. |
 | [![Open OneNote](images/edu-TIB-setp-4-v3.png)](#edu-task4) | **Trying to expand classroom creativity and interaction between students?** </br>Open [OneNote](#edu-task4) and create an example group project for your class. |
 | [![Play with Minecraft: Education Edition](images/edu-TIB-setp-5-v3.png)](#edu-task5) | **Want to teach kids to further collaborate and problem solve?** </br>Play with [Minecraft: Education Edition](#edu-task5) to see how it can be used as a collaborative and versatile platform across subjects to encourage 21st century skills. |
@@ -31,27 +31,28 @@ ms.date: 01/12/2017
 
 </br>
 
-<!-- hiding placeholder
-<center><iframe width="560" height="315" src="https://aka.ms/EDU-Get-Started" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+> [!VIDEO https://www.youtube.com/embed/3nqooY9Iqq4]
+
 </br>
--->
+
 
 ![Log in to Device A and connect to the school network](images/edu-TIB-setp-1-jump.png) 
 ## <a name="edu-task1"></a>1. Log in and connect to the school network
 To try out the educator tasks, start by logging in as a teacher.
 
-1. Log in to **Device A** using the **Teacher Username** and **Teacher Password** included in the **Credentials Sheet** located in your kit.
-2. Connect to your school's Wi-Fi network or connect with a local Ethernet connection.
+1. Turn on **Device A** and ensure you plug in the PC to an electrical outlet.
+2. Log in to **Device A** using the **Teacher Username** and **Teacher Password** included in the **Credentials Sheet** located in your kit.
+3. Connect to your school's Wi-Fi network or connect with a local Ethernet connection.
 
 </br>
 
 ![Improve student reading speed and comprehension](images/edu-TIB-setp-2-jump.png) 
-## <a name="edu-task2"></a>2. Drastically improve student reading speed and comprehension
+## <a name="edu-task2"></a>2. Significantly improve student reading speed and comprehension
 
-<!-- hiding placeholder
-<center><iframe width="560" height="315" src="https://aka.ms/EDU-Learning-Tools" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+> [!VIDEO https://www.youtube.com/embed/GCzSAslq_2Y]
+
 </br>
--->
+
 
 Learning Tools and the Immersive Reader can be used in the Microsoft Edge browser, Microsoft Word, and Microsoft OneNote to:
 * Increase fluency for English language learners
@@ -79,10 +80,10 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 ![Spark communication, critical thinking, and creativity with Microsoft Teams](images/edu-TIB-setp-3-jump.png) 
 ## <a name="edu-task3"></a>3. Spark communication, critical thinking, and creativity in the classroom
 
-<!-- hiding placeholder
-<center><iframe width="560" height="315" src="https://aka.ms/EDU-Teams" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+> [!VIDEO https://www.youtube.com/embed/riQr4Dqb8B8]
+
 </br>
--->
+
 
 Microsoft Teams is a digital hub that brings conversations, content, and apps together in one place. This guided tour walks you through the essential teaching features of the app. Then, through interactive prompts, experience how you can use this tool in your own classroom to spark digital classroom discussions, respond to student questions, organize content, and more!  
 
@@ -98,15 +99,16 @@ Take a guided tour of Microsoft Teams and test drive this digital hub.
 ![Expand classroom collaboration and interaction with OneNote](images/edu-TIB-setp-4-jump.png) 
 ## <a name="edu-task4"></a>4. Expand classroom collaboration and interaction between students
 
-<!-- hiding placeholder
-<center><iframe width="560" height="315" src="https://aka.ms/EDU-OneNote" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+> [!VIDEO https://www.youtube.com/embed/dzDSWMb_fIE]
+
 </br>
--->
+
 
 Microsoft OneNote organizes curriculum and lesson plans for teachers and students to work together and at their own pace. It provides a digital canvas to store text, images, handwritten drawings, attachments, links, voice, and video.
 
 **Try this!**
 See how a group project comes together with opportunities to interact with other students and collaborate with peers. This one works best with the digital pen, included with your Trial in a Box.
+When you're not using the pen, just use the magnet to stick it to the left side of the screen until you need it again. 
 
 1. On the **Start** menu, click the OneNote shortcut named **Imagine Giza** to open the **Reimagine the Great Pyramid of Giza project**.
 2. Take the digital pen out of the box and make notes or draw.
@@ -120,7 +122,7 @@ See how a group project comes together with opportunities to interact with other
 
     ![OneNote To Do Tag](images/onenote_checkmark.png)
 
-  - The Researcher tool from the Insert tab can help find answers. 
+  - To find information without leaving OneNote, use the Researcher tool found under the Insert tab. 
 
     ![OneNote Researcher](images/onenote_researcher.png)
 
@@ -129,10 +131,9 @@ See how a group project comes together with opportunities to interact with other
 ![Further collaborate and problem solve with Minecraft: Education Edition](images/edu-TIB-setp-5-jump.png) 
 ## <a name="edu-task5"></a>5. Get kids to further collaborate and problem solve
 
-<!-- hiding placeholder
-<center><iframe width="560" height="315" src="https://aka.ms/EDU-Minecraft-EE" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+> [!VIDEO https://www.youtube.com/embed/QI_bRNUugog]
+
 </br>
--->
 
 Minecraft: Education Edition provides an immersive environment to develop creativity, collaboration, and problem-solving in an immersive environment where the only limit is your imagination.   
 
@@ -153,8 +154,9 @@ Today, we'll explore a Minecraft world through the eyes of a student.
 9. Explore the world by using the keys on your keyboard.
   * **W** moves forward.
   * **A** moves left.
-  * **D** moves right.
-  * **S** moves backward
+  * **S** moves right.
+  * **D** moves backward.
+  
 
 10. Use your mouse as your "eyes". Just move it to look around.
 11. For a bird's eye view, double-tap the SPACE BAR. Now press the SPACE BAR to fly higher. And then hold the SHIFT key to safely land.

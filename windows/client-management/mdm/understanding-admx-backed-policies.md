@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/11/2017
+ms.date: 03/02/2018
 ---
 
 # Understanding ADMX-backed policies
@@ -46,6 +46,14 @@ In a domain controller/Group Policy ecosystem, Group Policies are automatically 
 An ADMX file can either be shipped with Windows (located at `%SystemRoot%\policydefinitions`) or it can be ingested to a device through the Policy CSP URI (`./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`). Inbox ADMX files are processed into MDM policies at OS-build time. ADMX files that are ingested are processed into MDM policies post-OS shipment through the Policy CSP. Because the Policy CSP does not rely upon any aspect of the Group Policy client stack, including the PC’s Group Policy Service (GPSvc), the policy handlers that are ingested to the device are able to react to policies that are set by the MDM.
 
 Windows maps the name and category path of a Group Policy to a MDM policy area and policy name by parsing the associated ADMX file, finding the specified Group Policy, and storing the definition (metadata) in the MDM Policy CSP client store. When the MDM policy is referenced by a SyncML command and the Policy CSP URI, `.\[device|user]\vendor\msft\policy\[config|result]\<area>\<policy>`, this metadata is referenced and determines which registry keys are set or removed. For a list of ADMX-backed policies supported by MDM, see [Policy CSP - ADMX-backed policies](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies).
+
+Here is a video of how to create a custom xml to enable an ADMX-backed policy and deploy the XML in Intune.
+
+<iframe width="560" height="315" src="https://www.microsoft.com/showcase/video.aspx?uuid=bdc9b54b-11b0-4bdb-a022-c339d16e7121" frameborder="0" allowfullscreen></iframe>
+
+Here is a video of how to import a custom ADMX file to a device using Intune.
+
+<iframe width="560" height="315" src="https://www.microsoft.com/showcase/video.aspx?uuid=a59888b1-429f-4a49-8570-c39a143d9a73" frameborder="0" allowfullscreen></iframe>
 
 ## <a href="" id="admx-files-and-the-group-policy-editor"></a>ADMX files and the Group Policy Editor
 
@@ -131,6 +139,7 @@ The following SyncML examples describe how to set a MDM policy that is defined b
         <Target>
           <LocURI>./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer2</LocURI>
         </Target>
+        <Data>
         <![CDATA[<enabled/><data id="Publishing_Server2_Name_Prompt" value="name prompt"/><data 
           id="Publishing_Server_URL_Prompt" value="URL prompt"/><data 
           id="Global_Publishing_Refresh_Options" value="1"/><data 
@@ -141,6 +150,7 @@ The following SyncML examples describe how to set a MDM policy that is defined b
           id="User_Refresh_OnLogon_Options" value="0"/><data 
           id="User_Refresh_Interval_Prompt" value="15"/><data 
           id="User_Refresh_Unit_Options" value="1"/>]]>
+        </Data>
       </Item>
     </Replace>
     <Final/>

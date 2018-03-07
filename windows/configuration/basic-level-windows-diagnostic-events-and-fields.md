@@ -1,7 +1,7 @@
 ---
-description: Use this article to learn more about what Windows diagnostic data is gathered at the basic level.
+description: Learn more about the Windows diagnostic data that is gathered at the basic level.
 title: Windows 10, version 1709 basic diagnostic events and fields (Windows 10)
-keywords: privacy, telemetry
+keywords: privacy, diagnostic data
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 author: eross-msft
 ms.author: lizross
-ms.date: 10/26/2017
+ms.date: 02/12/2018
 ---
 
 
@@ -32,7 +32,7 @@ You can learn more about Windows functional and diagnostic data through these ar
 
 - [Windows 10, version 1703 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md)
 - [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
-- [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md)
+- [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md)
 
 
 
@@ -101,12 +101,12 @@ The following fields are available:
 - **epoch**  Represents the epoch and seqNum fields, which help track how many events were fired and how many events were uploaded, and enables identification of data lost during upload and de-duplication of events on the ingress server.
 - **seqNum**  Represents the sequence field used to track absolute order of uploaded events. It is an incrementing identifier for each event added to the upload queue.  The Sequence helps track how many events were fired and how many events were uploaded and enables identification of data lost during upload and de-duplication of events on the ingress server.
 - **iKey**  Represents an ID for applications or other logical groupings of events.
-- **flags**  Represents a collection of bits that describe how the event should be processed by the Connected User Experience and Telemetry component pipeline. The lowest-order byte is the event persistence. The next byte is the event latency.
+- **flags**  Represents a collection of bits that describe how the event should be processed by the Connected User Experiences and Telemetry component pipeline. The lowest-order byte is the event persistence. The next byte is the event latency.
 - **os**  Represents the operating system name.
 - **osVer**  Represents the OS version, and its format is OS dependent.
 - **appId**  Represents a unique identifier of the client application currently loaded in the process producing the event; and is used to group events together and understand usage pattern, errors by application.
 - **appVer**  Represents the version number of the application. Used to understand errors by Version, Usage by Version across an app.
-- **cV**  Represents the Correlation Vector: A single field for tracking partial order of related telemetry events across component boundaries.
+- **cV**  Represents the Correlation Vector: A single field for tracking partial order of related diagnostic data events across component boundaries.
 
 
 ### Common Data Extensions.OS
@@ -148,7 +148,7 @@ The following fields are available:
 
 ### Common Data Extensions.Consent UI Event
 
-This User Account Control (UAC) telemetry point collects information on elevations that originate from low integrity levels. This occurs when a process running at low integrity level (IL) requires higher (administrator) privileges, and therefore requests for elevation via UAC (consent.exe). By better understanding the processes requesting these elevations, Microsoft can in turn improve the detection and handling of potentially malicious behavior in this path.
+This User Account Control (UAC) diagnostic data point collects information on elevations that originate from low integrity levels. This occurs when a process running at low integrity level (IL) requires higher (administrator) privileges, and therefore requests for elevation via UAC (consent.exe). By better understanding the processes requesting these elevations, Microsoft can in turn improve the detection and handling of potentially malicious behavior in this path.
 
 The following fields are available:
 
@@ -255,46 +255,46 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.RunContext
 
-"This event indicates what should be expected in the data payload. "
+This event indicates what should be expected in the data payload.
 
 The following fields are available:
 
 - **AppraiserBranch**  The source branch in which the currently running version of Appraiser was built.
 - **AppraiserProcess**  The name of the process that launched Appraiser.
 - **AppraiserVersion**  The version of the Appraiser file generating the events.
-- **Context**  Indicates what mode Appraiser is running in. Example: Setup or Telemetry.
+- **Context**  Indicates what mode Appraiser is running in. Example: Setup or Diagnostic Data.
 - **PCFP**  An ID for the system calculated by hashing hardware identifiers.
 - **Time**  The client time of the event.
 
 
 ### Microsoft.Windows.Appraiser.General.TelemetryRunHealth
 
-A summary event indicating the parameters and result of a telemetry run. This allows the rest of the data sent over the course of the run to be properly contextualized and understood, which is then used to keep Windows up-to-date.
+A summary event indicating the parameters and result of a diagnostic data run. This allows the rest of the data sent over the course of the run to be properly contextualized and understood, which is then used to keep Windows up-to-date.
 
 The following fields are available:
 
 - **AppraiserBranch**  The source branch in which the version of Appraiser that is running was built.
-- **AppraiserDataVersion**  The version of the data files being used by the Appraiser telemetry run.
+- **AppraiserDataVersion**  The version of the data files being used by the Appraiser diagnostic data run.
 - **AppraiserProcess**  The name of the process that launched Appraiser.
 - **AppraiserVersion**  The file version (major, minor and build) of the Appraiser DLL, concatenated without dots.
 - **AuxFinal**  Obsolete, always set to false
 - **AuxInitial**  Obsolete, indicates if Appraiser is writing data files to be read by the Get Windows 10 app.
 - **DeadlineDate**  A timestamp representing the deadline date, which is the time until which appraiser will wait to do a full scan.
-- **EnterpriseRun**  Indicates if the telemetry run is an enterprise run, which means appraiser was run from the command line with an extra enterprise parameter.
+- **EnterpriseRun**  Indicates if the diagnostic data run is an enterprise run, which means appraiser was run from the command line with an extra enterprise parameter.
 - **FullSync**  Indicates if Appraiser is performing a full sync, which means that full set of events representing the state of the machine are sent. Otherwise, only the changes from the previous run are sent.
 - **InventoryFullSync**  Indicates if inventory is performing a full sync, which means that the full set of events representing the inventory of machine are sent.
 - **PCFP**  An ID for the system calculated by hashing hardware identifiers.
 - **PerfBackoff**  Indicates if the run was invoked with logic to stop running when a user is present. Helps to understand why a run may have a longer elapsed time than normal.
 - **PerfBackoffInsurance**  Indicates if appraiser is running without performance backoff because it has run with perf backoff and failed to complete several times in a row.
 - **RunAppraiser**  Indicates if Appraiser was set to run at all. If this if false, it is understood that data events will not be received from this device.
-- **RunDate**  The date that the telemetry run was stated, expressed as a filetime.
-- **RunGeneralTel**  Indicates if the generaltel.dll component was run. Generaltel collects additional telemetry on an infrequent schedule and only from machines at telemetry levels higher than Basic.
+- **RunDate**  The date that the diagnostic data run was stated, expressed as a filetime.
+- **RunGeneralTel**  Indicates if the generaltel.dll component was run. Generaltel collects additional diagnostic data on an infrequent schedule and only from machines at diagnostic data levels higher than Basic.
 - **RunOnline**  Indicates if appraiser was able to connect to Windows Update and theefore is making decisions using up-to-date driver coverage information.
-- **RunResult**  The hresult of the Appraiser telemetry run.
-- **SendingUtc**  Indicates if the Appraiser client is sending events during the current telemetry run.
+- **RunResult**  The hresult of the Appraiser diagnostic data run.
+- **SendingUtc**  Indicates if the Appraiser client is sending events during the current diagnostic data run.
 - **StoreHandleIsNotNull**  Obsolete, always set to false
-- **TelementrySent**  Indicates if telemetry was successfully sent.
-- **ThrottlingUtc**  Indicates if the Appraiser client is throttling its output of CUET events to avoid being disabled. This increases runtime but also telemetry reliability.
+- **TelementrySent**  Indicates if diagnostic data was successfully sent.
+- **ThrottlingUtc**  Indicates if the Appraiser client is throttling its output of CUET events to avoid being disabled. This increases runtime but also diagnostic data reliability.
 - **Time**  The client time of the event.
 - **VerboseMode**  Indicates if appraiser ran in Verbose mode, which is a test-only mode with extra logging.
 - **WhyFullSyncWithoutTablePrefix**  Indicates the reason or reasons that a full sync was generated.
@@ -1461,7 +1461,7 @@ This event sends Windows Insider data from customers participating in improvemen
 
 The following fields are available:
 
-- **DeviceSampleRate**  The telemetry sample rate assigned to the device.
+- **DeviceSampleRate**  The diagnostic data sample rate assigned to the device.
 - **EnablePreviewBuilds**  Used to enable Windows Insider builds on a device.
 - **FlightIds**  A list of the different Windows Insider builds on this device.
 - **FlightingBranchName**  The name of the Windows Insider branch currently used by the device.
@@ -1472,7 +1472,7 @@ The following fields are available:
 
 ### Census.Hardware
 
-This event sends data about the device, including hardware type, OEM brand, model line, model, telemetry level setting, and TPM support, to help keep Windows up-to-date.
+This event sends data about the device, including hardware type, OEM brand, model line, model, diagnostic data level setting, and TPM support, to help keep Windows up-to-date.
 
 The following fields are available:
 
@@ -1504,9 +1504,9 @@ The following fields are available:
 - **PowerPlatformRole**  The OEM preferred power management profile. It's used to help to identify the basic form factor of the device.
 - **SoCName**  The firmware manufacturer of the device.
 - **StudyID**  Used to identify retail and non-retail device.
-- **TelemetryLevel**  The telemetry level the user has opted into, such as Basic or Enhanced.
-- **TelemetryLevelLimitEnhanced** The telemetry level for Windows Analytics-based solutions.
-- **TelemetrySettingAuthority**  Determines who set the telemetry level, such as GP, MDM, or the user.
+- **TelemetryLevel**  The diagnostic data level the user has opted into, such as Basic or Enhanced.
+- **TelemetryLevelLimitEnhanced** The diagnostic data level for Windows Analytics-based solutions.
+- **TelemetrySettingAuthority**  Determines who set the diagnostic data level, such as GP, MDM, or the user.
 - **TPMVersion**  The supported Trusted Platform Module (TPM) on the device. If no TPM is present, the value is 0.
 - **VoiceSupported**  Does the device have a cellular radio capable of making voice calls?
 
@@ -1604,6 +1604,39 @@ The following fields are available:
 - **SocketCount**  Number of physical CPU sockets of the machine.
 
 
+### Census.Security
+
+This event provides information on about security settings used to help keep Windows up-to-date and secure.
+
+- **AvailableSecurityProperties** Enumerates and reports state on the relevant security properties for Device Guard.
+- **CGRunning** Is Credential Guard running?
+- **DGState** A summary of the Device Guard state.
+- **HVCIRunning** Is HVCI running?
+- **IsSawGuest** Describes whether the device is running as a Secure Admin Workstation Guest.
+- **IsSawHost** Describes whether the device is running as a Secure Admin Workstation Host.
+- **RequiredSecurityProperties** Describes the required security properties to enable virtualization-based security.
+- **SecureBootCapable** Is this device capable of running Secure Boot?
+- **VBSState** Is virtualization-based security enabled, disabled, or running?
+
+
+### Census.Speech
+
+This event is used to gather basic speech settings on the device.
+
+The following fields are available:
+
+- **AboveLockEnabled**  Cortana setting that represents if Cortana can be invoked when the device is locked.
+- **GPAllowInputPersonalization**  Indicates if a Group Policy setting has enabled speech functionalities.
+- **HolographicSpeechInputDisabled**  Holographic setting that represents if the attached HMD devices have speech functionality disabled by the user.
+- **HolographicSpeechInputDisabledRemote**  Indicates if a remote policy has disabled speech functionalities for the HMD devices.
+- **KWSEnabled**  "Cortana setting that represents if a user has enabled the ""Hey Cortana"" keyword spotter (KWS)."
+- **MDMAllowInputPersonalization**  Indicates if an MDM policy has enabled speech functionalities.
+- **RemotelyManaged**  Indicates if the device is being controlled by a remote admininistrator (MDM or Group Policy) in the context of speech functionalities.
+- **SpeakerIdEnabled**  Cortana setting that represents if keyword detection has been trained to try to respond to a single user's voice.
+- **SpeechServicesEnabled**  Windows setting that represents whether a user is opted-in for speech services on the device.
+
+
+
 ### Census.Storage
 
 This event sends data about the total capacity of the system volume and primary disk, to help keep Windows up to date.
@@ -1613,34 +1646,6 @@ The following fields are available:
 - **PrimaryDiskTotalCapacity**  Retrieves the amount of disk space on the primary disk of the device in MB.
 - **PrimaryDiskType**  Retrieves an enumerator value of type STORAGE_BUS_TYPE that indicates the type of bus to which the device is connected. This should be used to interpret the raw device properties at the end of this structure (if any).
 - **SystemVolumeTotalCapacity**  Retrieves the size of the partition that the System volume is installed on in MB.
-
-
-### Census.VM
-
-This event sends data indicating whether virtualization is enabled on the device, and its various characteristics, to help keep Windows up to date.
-
-The following fields are available:
-
-- **CloudService** Indicates which cloud service, if any, that this virtual machine is running within.
-- **HyperVisor**  Retrieves whether the current OS is running on top of a Hypervisor.
-- **IOMMUPresent**  Represents if an input/output memory management unit (IOMMU) is present.
-- **isVDI** Is the device using Virtual Desktop Infrastructure?
-- **IsVirtualDevice**  Retrieves that when the Hypervisor is Microsoft's Hyper-V Hypervisor or other Hv#HASH#1 Hypervisor, this field will be set to FALSE for the Hyper-V host OS and TRUE for any guest OS's. This field should not be relied upon for non-Hv#HASH#1 Hypervisors.
-- **SLATSupported**  Represents whether Second Level Address Translation (SLAT) is supported by the hardware.
-- **VirtualizationFirmwareEnabled**  Represents whether virtualization is enabled in the firmware.
-
-
-### Census.Xbox
-
-This event sends data about the Xbox Console, such as Serial Number and DeviceId, to help keep Windows up to date.
-
-The following fields are available:
-
-- **XboxConsolePreferredLanguage**  Retrieves the preferred language selected by the user on Xbox console.
-- **XboxConsoleSerialNumber**  Retrieves the serial number of the Xbox console.
-- **XboxLiveDeviceId**  Retrieves the unique device id of the console.
-- **XboxLiveSandboxId**  Retrieves the developer sandbox id if the device is internal to MS.
-
 
 ### Census.Userdefault
 
@@ -1663,6 +1668,25 @@ The following fields are available:
 - **HomeLocation**  The current user location, which is populated using GetUserGeoId() function.
 - **KeyboardInputLanguages**  The Keyboard input languages installed on the device.
 - **SpeechInputLanguages**  The Speech Input languages installed on the device.
+
+### Census.VM
+
+This event sends data indicating whether virtualization is enabled on the device, and its various characteristics, to help keep Windows up to date.
+
+The following fields are available:
+
+- **CloudService** Indicates which cloud service, if any, that this virtual machine is running within.
+- **HyperVisor**  Retrieves whether the current OS is running on top of a Hypervisor.
+- **IOMMUPresent**  Represents if an input/output memory management unit (IOMMU) is present.
+- **isVDI** Is the device using Virtual Desktop Infrastructure?
+- **IsVirtualDevice**  Retrieves that when the Hypervisor is Microsoft's Hyper-V Hypervisor or other Hv#HASH#1 Hypervisor, this field will be set to FALSE for the Hyper-V host OS and TRUE for any guest OS's. This field should not be relied upon for non-Hv#HASH#1 Hypervisors.
+- **SLATSupported**  Represents whether Second Level Address Translation (SLAT) is supported by the hardware.
+- **VirtualizationFirmwareEnabled**  Represents whether virtualization is enabled in the firmware.
+
+
+
+
+
 
 
 ### Census.WU
@@ -1695,79 +1719,63 @@ The following fields are available:
 - **WUPauseState**  Retrieves WU setting to determine if updates are paused
 - **WUServer**  Retrieves the HTTP(S) URL of the WSUS server that is used by Automatic Updates and API callers (by default).
 
+### Census.Xbox
 
-### Census.Speech
-
-This event is used to gather basic speech settings on the device.
+This event sends data about the Xbox Console, such as Serial Number and DeviceId, to help keep Windows up to date.
 
 The following fields are available:
 
-- **AboveLockEnabled**  Cortana setting that represents if Cortana can be invoked when the device is locked.
-- **GPAllowInputPersonalization**  Indicates if a Group Policy setting has enabled speech functionalities.
-- **HolographicSpeechInputDisabled**  Holographic setting that represents if the attached HMD devices have speech functionality disabled by the user.
-- **HolographicSpeechInputDisabledRemote**  Indicates if a remote policy has disabled speech functionalities for the HMD devices.
-- **KWSEnabled**  "Cortana setting that represents if a user has enabled the ""Hey Cortana"" keyword spotter (KWS)."
-- **MDMAllowInputPersonalization**  Indicates if an MDM policy has enabled speech functionalities.
-- **RemotelyManaged**  Indicates if the device is being controlled by a remote admininistrator (MDM or Group Policy) in the context of speech functionalities.
-- **SpeakerIdEnabled**  Cortana setting that represents if keyword detection has been trained to try to respond to a single user's voice.
-- **SpeechServicesEnabled**  Windows setting that represents whether a user is opted-in for speech services on the device.
+- **XboxConsolePreferredLanguage**  Retrieves the preferred language selected by the user on Xbox console.
+- **XboxConsoleSerialNumber**  Retrieves the serial number of the Xbox console.
+- **XboxLiveDeviceId**  Retrieves the unique device id of the console.
+- **XboxLiveSandboxId**  Retrieves the developer sandbox id if the device is internal to MS.
 
-### Census.Security
 
-This event provides information on about security settings used to help keep Windows up-to-date and secure.
-
-- **AvailableSecurityProperties** Enumerates and reports state on the relevant security properties for Device Guard.
-- **CGRunning** Is Credential Guard running?
-- **DGState** A summary of the Device Guard state.
-- **HVCIRunning** Is HVCI running?
-- **RequiredSecurityProperties** Describes the required security properties to enable virtualization-based security.
-- **SecureBootCapable** Is this device capable of running Secure Boot?
-- **VBSState** Is virtualization-based security enabled, disabled, or running?
 
 
 ## Diagnostic data events
 
 ### TelClientSynthetic.AuthorizationInfo_Startup
 
-This event sends data indicating that a device has undergone a change of telemetry opt-in level detected at UTC startup, to help keep Windows up to date.
+This event sends data indicating that a device has undergone a change of diagnostic data opt-in level detected at UTC startup, to help keep Windows up to date.
 
 The following fields are available:
 
-- **CanAddMsaToMsTelemetry**  True if UTC is allowed to add MSA user identity onto telemetry from the OS provider groups.
-- **CanCollectAnyTelemetry**  True if UTC is allowed to collect non-OS telemetry. Non-OS telemetry is responsible for providing its own opt-in mechanism.
+- **CanAddMsaToMsTelemetry**  True if UTC is allowed to add MSA user identity onto diagnostic data from the OS provider groups.
+- **CanCollectAnyTelemetry**  True if UTC is allowed to collect non-OS diagnostic data. Non-OS diagnostic data is responsible for providing its own opt-in mechanism.
 - **CanCollectCoreTelemetry**  True if UTC is allowed to collect data which is tagged with both MICROSOFT_KEYWORD_CRITICAL_DATA and MICROSOFT_EVENTTAG_CORE_DATA.
 - **CanCollectHeartbeats**  True if UTC is allowed to collect heartbeats.
-- **CanCollectOsTelemetry**  True if UTC is allowed to collect telemetry from the OS provider groups (often called Microsoft Telemetry).
+- **CanCollectOsTelemetry**  True if UTC is allowed to collect diagnostic data from the OS provider groups.
 - **CanPerformDiagnosticEscalations**  True if UTC is allowed to perform all scenario escalations.
 - **CanPerformScripting**  True if UTC is allowed to perform scripting.
 - **CanPerformTraceEscalations**  True if UTC is allowed to perform scenario escalations with tracing actions.
 - **CanReportScenarios**  True if UTC is allowed to load and report scenario completion, failure, and cancellation events.
-- **PreviousPermissions**  Bitmask representing the previously configured permissions since the telemetry client was last started.
-- **TransitionFromEverythingOff**  True if this transition is moving from not allowing core telemetry to allowing core telemetry.
+- **PreviousPermissions**  Bitmask representing the previously configured permissions since the diagnostic data client was last started.
+- **TransitionFromEverythingOff**  True if this transition is moving from not allowing core diagnostic data to allowing core diagnostic data.
 
 
 ### TelClientSynthetic.AuthorizationInfo_RuntimeTransition
 
-This event sends data indicating that a device has undergone a change of telemetry opt-in level during the runtime of the device (not at UTC boot or offline), to help keep Windows up to date.
+This event sends data indicating that a device has undergone a change of diagnostic data opt-in level during the runtime of the device (not at UTC boot or offline), to help keep Windows up to date.
 
 The following fields are available:
 
-- **CanAddMsaToMsTelemetry**  True if UTC is allowed to add MSA user identity onto telemetry from the OS provider groups.
-- **CanCollectAnyTelemetry**  True if UTC is allowed to collect non-OS telemetry. Non-OS telemetry is responsible for providing its own opt-in mechanism.
+- **CanAddMsaToMsTelemetry**  True if UTC is allowed to add MSA user identity onto diagnostic data from the OS provider groups.
+- **CanCollectAnyTelemetry**  True if UTC is allowed to collect non-OS diagnostic data. Non-OS diagnostic data is responsible for providing its own opt-in mechanism.
 - **CanCollectCoreTelemetry**  True if UTC is allowed to collect data which is tagged with both MICROSOFT_KEYWORD_CRITICAL_DATA and MICROSOFT_EVENTTAG_CORE_DATA.
 - **CanCollectHeartbeats**  True if UTC is allowed to collect heartbeats.
-- **CanCollectOsTelemetry**  True if UTC is allowed to collect telemetry from the OS provider groups (often called Microsoft Telemetry).
+- **CanCollectOsTelemetry**  True if UTC is allowed to collect diagnostic data from the OS provider groups.
 - **CanPerformDiagnosticEscalations**  True if UTC is allowed to perform all scenario escalations.
 - **CanPerformScripting**  True if UTC is allowed to perform scripting.
 - **CanPerformTraceEscalations**  True if UTC is allowed to perform scenario escalations with tracing actions.
 - **CanReportScenarios**  True if UTC is allowed to load and report scenario completion, failure, and cancellation events.
-- **PreviousPermissions**  Bitmask representing the previously configured permissions since the telemetry opt-in level was last changed.
-- **TransitionFromEverythingOff**  True if this transition is moving from not allowing core telemetry to allowing core telemetry.
+- **PreviousPermissions**  Bitmask representing the previously configured permissions since the diagnostic data opt-in level was last changed.
+- **TransitionFromEverythingOff**  True if this transition is moving from not allowing core diagnostic data to allowing core diagnostic data.
 
 
 ### TelClientSynthetic.ConnectivityHeartBeat_0
 
-This event sends data about the connectivity status of the Connected User Experience and Telemetry component that uploads telemetry events. If an unrestricted free network (such as Wi-Fi) is available, this event updates the last successful upload time. Otherwise, it checks whether a Connectivity Heartbeat event was fired in the past 24 hours, and if not, it fires an event. A Connectivity Heartbeat event also fires when a device recovers from costed network to free network.
+This event sends data about the connectivity status of the Connected User Experience and Telemetry component that uploads diagnostic data events. If an unrestricted free network (such as Wi-Fi) is available, this event updates the last successful upload time. Otherwise, it checks whether a Connectivity Heartbeat event was fired in the past 24 hours, and if not, it fires an event. A Connectivity Heartbeat event also fires when a device recovers from costed network to free network.
 
 The following fields are available:
 
@@ -1783,7 +1791,7 @@ The following fields are available:
 
 ### TelClientSynthetic.HeartBeat_5
 
-This event sends data about the health and quality of the telemetry data from the given device, to help keep Windows up to date. It also enables data analysts to determine how 'trusted' the data is from a given device.
+This event sends data about the health and quality of the diagnostic data data from the given device, to help keep Windows up to date. It also enables data analysts to determine how 'trusted' the data is from a given device.
 
 The following fields are available:
 
@@ -1791,7 +1799,7 @@ The following fields are available:
 - **CensusExitCode**  The last exit code of the Census task.
 - **CensusStartTime**  The time of the last Census run.
 - **CensusTaskEnabled**  Indicates whether Census is enabled.
-- **ConsumerDroppedCount**  The number of events dropped by the consumer layer of the telemetry client.
+- **ConsumerDroppedCount**  The number of events dropped by the consumer layer of the diagnostic data client.
 - **CriticalDataDbDroppedCount**  The number of critical data sampled events that were dropped at the database layer.
 - **CriticalDataThrottleDroppedCount**  The number of critical data sampled events that were dropped because of throttling.
 - **CriticalOverflowEntersCounter**  The number of times a critical overflow mode was entered into the event database.
@@ -1800,7 +1808,7 @@ The following fields are available:
 - **DecodingDroppedCount**  The number of events dropped because of decoding failures.
 - **EnteringCriticalOverflowDroppedCounter**  The number of events that was dropped because a critical overflow mode was initiated.
 - **EtwDroppedBufferCount**  The number of buffers dropped in the CUET ETW session.
-- **EtwDroppedCount**  The number of events dropped by the ETW layer of the telemetry client.
+- **EtwDroppedCount**  The number of events dropped by the ETW layer of the diagnostic data client.
 - **EventSubStoreResetCounter**  The number of times the event database was reset.
 - **EventSubStoreResetSizeSum**  The total size of the event database across all resets reports in this instance.
 - **EventsUploaded**  The number of events that have been uploaded.
@@ -1812,12 +1820,12 @@ The following fields are available:
 - **LastEventSizeOffender**  The name of the last event that exceeded the maximum event size.
 - **LastInvalidHttpCode**  The last invalid HTTP code received from Vortex.
 - **MaxActiveAgentConnectionCount**  The maximum number of active agents during this heartbeat timeframe.
-- **MaxInUseScenarioCounter**  The soft maximum number of scenarios loaded by the Connected User Experience and Telemetry component.
+- **MaxInUseScenarioCounter**  The soft maximum number of scenarios loaded by the Connected User Experiences and Telemetry component.
 - **PreviousHeartBeatTime**  The time of last heartbeat event. This allows chaining of events.
 - **SettingsHttpAttempts**  The number of attempts to contact the OneSettings service.
 - **SettingsHttpFailures**  The number of failures from contacting the OneSettings service.
 - **ThrottledDroppedCount**  The number of events dropped due to throttling of noisy providers.
-- **UploaderDroppedCount**  The number of events dropped by the uploader layer of the telemetry client.
+- **UploaderDroppedCount**  The number of events dropped by the uploader layer of the diagnostic data client.
 - **VortexFailuresTimeout**  The number of timeout failures received from Vortex.
 - **VortexHttpAttempts**  The number of attempts to contact the Vortex service.
 - **VortexHttpFailures4xx**  The number of 400-499 error codes received from Vortex.
@@ -1888,7 +1896,7 @@ The following fields are available:
 The following fields are available:
 
 - **AppName**  The name of the app that has crashed.
-- **AppSessionGuid**  GUID made up of process ID and is used as a correlation vector for process instances in the telemetry backend.
+- **AppSessionGuid**  GUID made up of process ID and is used as a correlation vector for process instances in the diagnostic data backend.
 - **AppTimeStamp**  The date/time stamp of the app.
 - **AppVersion**  The version of the app that has crashed.
 - **ExceptionCode**  The exception code returned by the process that has crashed.
@@ -1938,7 +1946,7 @@ This event sends data about hangs for both native and managed applications, to h
 The following fields are available:
 
 - **AppName**  The name of the app that has hung.
-- **AppSessionGuid**  GUID made up of process id used as a correlation vector for process instances in the telemetry backend.
+- **AppSessionGuid**  GUID made up of process id used as a correlation vector for process instances in the diagnostic data backend.
 - **AppVersion**  The version of the app that has hung.
 - **PackageFullName**  Store application identity.
 - **PackageRelativeAppId**  Store application identity.
@@ -1990,8 +1998,9 @@ The following fields are available:
 
 This event provides data on the installed Office Add-ins.
 
-- **AddInCLSID** The CLSID key office the Office addin.
-- **AddInId** The ID of the Office addin.
+- **AddInCLSID** The CLSID key office for the Office addin.
+- **AddInId** The identifier of the Office addin.
+- **AddinType** The type of the Office addin.
 - **BinFileTimestamp** The timestamp of the Office addin.
 - **BinFileVersion** The version of the Office addin.
 - **Description** The description of the Office addin.
@@ -2004,8 +2013,58 @@ This event provides data on the installed Office Add-ins.
 - **OfficeArchitecture** The architecture of the addin.
 - **OfficeVersion** The Office version for this addin.
 - **OutlookCrashingAddin** A boolean value that indicates if crashes have been found for this addin.
+- **ProductCompany** The name of the company associated with the Office addin.
+- **ProductName** The product name associated with the Office addin.
+- **ProductVersion** The version associated with the Office addin.
+- **ProgramId** The unique program identifier of the Office addin.
 - **Provider** The provider name for this addin.
 
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeAddInRemove
+
+This event indicates that the particular data object represented by the objectInstanceId is no longer present.
+
+There are no fields in this event.
+
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeInsightsAdd
+
+This event provides insight data on the installed Office products.
+
+The following fields are available:
+
+- **OfficeApplication** The name of the Office application.
+- **OfficeArchitecture** The bitness of the Office application.
+- **OfficeVersion** The version of the Office application.
+- **Value** The insights collected about this entity.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeInsightsRemove
+
+This event indicates that the particular data object represented by the objectInstanceId is no longer present.
+
+There are no fields in this event.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeInsightsStartSync
+
+This diagnostic event indicates that a new sync is being generated for this object type.
+
+There are no fields in this event.
+
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeSettingsAdd
+
+This event describes various Office settings.
+
+The following fields are available:
+
+- **BrowserFlags** Browser flags for Office-related products.
+- **ExchangeProviderFlags** Provider policies for Office Exchange.
+- **SharedComputerLicensing** Office shared computer licensing policies.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeSettingsStartSync
+
+Diagnostic event to indicate a new sync is being generated for this object type. 
+
+There are no fields in this event.
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBAAdd
 
@@ -2035,6 +2094,18 @@ The following fields are available:
 - **Validation**  Count of files that require additional manual validation
 - **Validation_x64**  Count of files that require additional manual validation for 64-bit issues
 
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBARemove
+
+This event indicates that the particular data object represented by the objectInstanceId is no longer present.
+
+There are no fields in this event.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBARuleViolationsRemove
+
+This event indicates that the particular data object represented by the objectInstanceId is no longer present.
+
+There are no fields in this event.
 
 ### Microsoft.Windows.Inventory.Core.InventoryApplicationFrameworkStartSync
 
@@ -2407,6 +2478,66 @@ The following fields are available:
 - **Temperature**  Indicates if a Temperature sensor is found.
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeAddInStartSync
+
+This event indicates that a new sync is being generated for this object type.
+
+There are no fields in this event.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIdentifiersAdd
+
+This event provides data on the installed Office identifiers.
+
+- **OAudienceData** The Office Audience descriptor.
+- **OAudienceId** The Office Audience ID.
+- **OMID** The Office machine ID.
+- **OPlatform** The Office architecture.
+- **OVersion** The Office version
+- **OTenantId** The Office 365 Tenant GUID.
+- **OWowMID** The Office machine ID.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIdentifiersStartSync
+
+This event indicates that a new sync is being generated for this object type.
+
+There are no fields in this event.
+
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIESettingsAdd
+
+This event provides data on the installed Office-related Internet Explorer features.
+
+- **OIeFeatureAddon** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeMachineLockdown** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeMimeHandling** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeMimeSniffing** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeNoAxInstall** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeNoDownload** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeObjectCaching** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIePasswordDisable** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeSafeBind** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeSecurityBand** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeUncSaveCheck** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeValidateUrl** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeWebOcPopup** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeWinRestrict** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeZoneElevate** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIESettingsStartSync
+
+This event indicates that a new sync is being generated for this object type.
+
+There are no fields in this event.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeProductsAdd
+
+This event describes the Office products that are installed.
+
+- **OC2rApps** The Office Click-to-Run apps.
+- **OC2rSkus** The Office Click-to-Run products.
+- **OMsiApps** The Office MSI apps.
+- **OProductCodes** The Office MSI product code.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeProductsStartSync
 
 This event indicates that a new sync is being generated for this object type.
 
@@ -3185,7 +3316,7 @@ The following fields are available:
 
 ### Microsoft.Windows.UpdateNotificationPipeline.JavascriptJavascriptCriticalGenericMessage
 
-This event indicates that Javascript is reporting a schema and a set of values for critical telemetry
+This event indicates that Javascript is reporting a schema and a set of values for critical diagnostic data.
 
 The following fields are available:
 

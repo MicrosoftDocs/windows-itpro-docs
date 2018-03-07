@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/03/2018
+ms.date: 03/05/2018
 ---
 
 # Policy CSP - SystemServices
@@ -17,7 +17,7 @@ ms.date: 01/03/2018
 
 <hr/>
 
-<!--StartPolicies-->
+<!--Policies-->
 ## SystemServices policies  
 
 <dl>
@@ -41,11 +41,13 @@ ms.date: 01/03/2018
   </dd>
 </dl>
 
+
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="systemservices-configurehomegrouplistenerservicestartupmode"></a>**SystemServices/ConfigureHomeGroupListenerServiceStartupMode**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -67,8 +69,8 @@ ms.date: 01/03/2018
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -76,26 +78,25 @@ ms.date: 01/03/2018
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
-<!--EndDescription-->
-<!--SupportedValues-->
+<!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *HomeGroup Listener*
+-   GP path: *Windows Settings/Security Settings/System Services*
 
-<!--/SupportedValues-->
-<!--Example-->
+<!--/DbMapped-->
+<!--/Policy-->
 
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--EndPolicy-->
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="systemservices-configurehomegroupproviderservicestartupmode"></a>**SystemServices/ConfigureHomeGroupProviderServiceStartupMode**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -117,8 +118,8 @@ Added in Windows 10, next major update. This setting determines whether the serv
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -126,26 +127,25 @@ Added in Windows 10, next major update. This setting determines whether the serv
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
-<!--EndDescription-->
-<!--SupportedValues-->
+<!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *HomeGroup Provider*
+-   GP path: *Windows Settings/Security Settings/System Services*
 
-<!--/SupportedValues-->
-<!--Example-->
+<!--/DbMapped-->
+<!--/Policy-->
 
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--EndPolicy-->
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="systemservices-configurexboxaccessorymanagementservicestartupmode"></a>**SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -167,8 +167,8 @@ Added in Windows 10, next major update. This setting determines whether the serv
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -176,26 +176,25 @@ Added in Windows 10, next major update. This setting determines whether the serv
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
-<!--EndDescription-->
-<!--SupportedValues-->
+<!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *Xbox Accessory Management Service*
+-   GP path: *Windows Settings/Security Settings/System Services*
 
-<!--/SupportedValues-->
-<!--Example-->
+<!--/DbMapped-->
+<!--/Policy-->
 
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--EndPolicy-->
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="systemservices-configurexboxliveauthmanagerservicestartupmode"></a>**SystemServices/ConfigureXboxLiveAuthManagerServiceStartupMode**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -217,8 +216,8 @@ Added in Windows 10, next major update. This setting determines whether the serv
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -226,26 +225,25 @@ Added in Windows 10, next major update. This setting determines whether the serv
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
-<!--EndDescription-->
-<!--SupportedValues-->
+<!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *Xbox Live Auth Manager*
+-   GP path: *Windows Settings/Security Settings/System Services*
 
-<!--/SupportedValues-->
-<!--Example-->
+<!--/DbMapped-->
+<!--/Policy-->
 
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--EndPolicy-->
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="systemservices-configurexboxlivegamesaveservicestartupmode"></a>**SystemServices/ConfigureXboxLiveGameSaveServiceStartupMode**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -267,8 +265,8 @@ Added in Windows 10, next major update. This setting determines whether the serv
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -276,26 +274,25 @@ Added in Windows 10, next major update. This setting determines whether the serv
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
-<!--EndDescription-->
-<!--SupportedValues-->
+<!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *Xbox Live Game Save*
+-   GP path: *Windows Settings/Security Settings/System Services*
 
-<!--/SupportedValues-->
-<!--Example-->
+<!--/DbMapped-->
+<!--/Policy-->
 
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--EndPolicy-->
 <hr/>
-<!--StartPolicy-->
+
+<!--Policy-->
 <a href="" id="systemservices-configurexboxlivenetworkingservicestartupmode"></a>**SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode**  
 
-<!--StartSKU-->
+<!--SupportedSKUs-->
 <table>
 <tr>
 	<th>Home</th>
@@ -317,8 +314,8 @@ Added in Windows 10, next major update. This setting determines whether the serv
 </tr>
 </table>
 
-<!--EndSKU-->
-<!--StartScope-->
+<!--/SupportedSKUs-->
+<!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
@@ -326,21 +323,18 @@ Added in Windows 10, next major update. This setting determines whether the serv
 
 <hr/>
 
-<!--EndScope-->
-<!--StartDescription-->
-Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
-<!--EndDescription-->
-<!--SupportedValues-->
+<!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *Xbox Live Networking Service*
+-   GP path: *Windows Settings/Security Settings/System Services*
 
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--EndPolicy-->
+<!--/DbMapped-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -349,5 +343,5 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 
-<!--EndPolicies-->
+<!--/Policies-->
 

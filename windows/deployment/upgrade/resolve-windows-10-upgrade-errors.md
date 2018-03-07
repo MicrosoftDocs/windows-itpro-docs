@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.date: 01/11/2018
+ms.date: 02/22/2018
 ms.localizationpriority: high
 ---
 
@@ -16,17 +16,19 @@ ms.localizationpriority: high
 **Applies to**
 -   Windows 10
 
->**Important**: This topic contains technical instructions for IT administrators. If you are not an IT administrator, see [Get help with Windows 10 upgrade and installation errors](https://support.microsoft.com/en-us/help/10587/windows-10-get-help-with-upgrade-installation-errors) for more information.
+>**Important**: This topic contains technical instructions for IT administrators. If you are not an IT administrator, see the following topic: [Get help with Windows 10 upgrade and installation errors](https://support.microsoft.com/en-us/help/10587/windows-10-get-help-with-upgrade-installation-errors). You can also [Submit Windows 10 upgrade errors using Feedback Hub](submit-errors.md).
 
 ## In this topic
 
 This topic contains a brief introduction to Windows 10 installation processes, and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade. The following sections and procedures are provided in this guide:
 
+- [Troubleshooting upgrade errors](#troubleshooting-upgrade-errors): General advice and techniques for troubleshooting Windows 10 upgrade errors.<br>
 - [The Windows 10 upgrade process](#the-windows-10-upgrade-process): An explanation of phases used during the upgrade process.<br>
 - [Quick fixes](#quick-fixes): Steps you can take to eliminate many Windows upgrade errors.<br>
 - [Upgrade error codes](#upgrade-error-codes): The components of an error code are explained.
     - [Result codes](#result-codes): Information about result codes.
     - [Extend codes](#extend-codes): Information about extend codes.
+- [Windows Error Reporting](#windows-error-reporting): How to use Event Viewer to review details about a Windows 10 upgrade.
 - [Log files](#log-files): A list and description of log files useful for troubleshooting.
     - [Log entry structure](#log-entry-structure): The format of a log entry is described.
     - [Analyze log files](#analyze-log-files): General procedures for log file analysis, and an example.
@@ -36,19 +38,61 @@ This topic contains a brief introduction to Windows 10 installation processes, a
     - [Other result codes](#other-result-codes): Additional causes and mitigation procedures are provided for some result codes.
     - [Other error codes](#other-error-codes): Additional causes and mitigation procedures are provided for some error codes.
 
+## Troubleshooting upgrade errors
+
+If a Windows 10 upgrade is not successful, it can be very helpful to understand *when* an error occurred in the upgrade process. 
+
+Briefly, the upgrade process consists of four phases: **Downlevel**, **SafeOS**, **First boot**, and **Second boot**. The computer will reboot once between each phase. 
+
+These phases are explained in greater detail [below](#the-windows-10-upgrade-process). First, let's summarize the actions performed during each phase because this affects the type of errors that can be encountered.
+
+1. **Downlevel phase**: Because this phase runs on the source OS, upgrade errors are not typically seen. If you do encounter an error, ensure the source OS is stable. Also ensure the Windows setup source and the destination drive are accessible. 
+
+2. **SafeOS phase**: Errors most commonly occur during this phase due to hardware issues, firmware issues, or non-microsoft disk encryption software.
+
+    Since the computer is booted into Windows PE during the SafeOS phase, a useful troubleshooting technique is to boot into [Windows PE](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-intro) using installation media. You can use the [media creation tool](https://www.microsoft.com/software-download/windows10) to create bootable media, or you can use tools such as the [Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit), and then boot your device from this media to test for hardware and firmware compatibility issues.
+
+    **Do not proceed with the Windows 10 installation after booting from this media**. This method can only be used to perform a clean install which will not migrate any of your apps and settings, and you will be required re-enter your Windows 10 license information.
+
+    If the computer does not successfully boot into Windows PE using the media that you created, this is likely due to a hardware or firmware issue. Check with your hardware manufacturer and apply any recommended BIOS and firmware updates. If you are still unable to boot to installation media after applying updates, disconnect or replace legacy hardware.
+
+    If the computer successfully boots into Windows PE, but you are not able to browse the system drive on the computer, it is possible that non-Microsoft disk encryption software is blocking your ability to perform a Windows 10 upgrade. Update or temporarily remove the disk encryption.
+
+3. **First boot phase**: Boot failures in this phase are relatively rare, and almost exclusively caused by device drivers.  Disconnect all peripheral devices except for the mouse, keyboard, and display. Obtain and install updated device drivers, then retry the upgrade.
+
+4. **Second boot phase**: In this phase, the system is running under the target OS with new drivers. Boot failures are most commonly due to anti-virus software or filter drivers. Disconnect all peripheral devices except for the mouse, keyboard, and display. Obtain and install updated device drivers, temporarily uninstall anti-virus software, then retry the upgrade.
+ 
+If the general troubleshooting techniques described above or the [quick fixes](#quick-fixes) detailed below do not resolve your issue, you can attempt to analyze [log files](#log-files) and interpret [upgrade error codes](#upgrade-error-codes). You can also [Submit Windows 10 upgrade errors using Feedback Hub](submit-errors.md) so that Microsoft can diagnose your issue.
+
 ## The Windows 10 upgrade process
 
-The Windows Setup application is used to upgrade a computer to Windows 10, or to perform a clean installation. Windows Setup starts and restarts the computer, gathers information, copies files, and creates or adjusts configuration settings. When performing an operating system upgrade, Windows Setup uses the following phases:
+The **Windows Setup** application is used to upgrade a computer to Windows 10, or to perform a clean installation. Windows Setup starts and restarts the computer, gathers information, copies files, and creates or adjusts configuration settings. 
 
-1. **Downlevel phase**: The downlevel phase is run within the previous operating system. Installation components are gathered.
-2. **Safe OS phase**: A recovery partition is configured and updates are installed. An OS rollback is prepared if needed.
-        - Example error codes: 0x2000C, 0x20017
-3. **First boot phase**: Initial settings are applied.
-        - Example error codes: 0x30018, 0x3000D
-4. **Second boot phase**: Final settings are applied. This is also called the **OOBE boot phase**.
-        - Example error: 0x4000D, 0x40017
-5. **Uninstall phase**: This phase occurs if upgrade is unsuccessful.
-        - Example error: 0x50000
+When performing an operating system upgrade, Windows Setup uses phases described below. A reboot occurs between each of the phases. After the first reboot, the user interface will remain the same until the upgrade is completed. Percent progress is displayed and will advance as you move through each phase, reaching 100% at the end of the second boot phase.
+
+1. **Downlevel phase**: The downlevel phase is run within the previous operating system. Windows files are copied and installation components are gathered.
+
+    ![downlevel phase](../images/downlevel.png)  
+
+2. **Safe OS phase**: A recovery partition is configured, Windows files are expanded, and updates are installed. An OS rollback is prepared if needed. Example error codes: 0x2000C, 0x20017.
+
+    ![safeOS phase](../images/safeos.png) 
+
+3. **First boot phase**: Initial settings are applied. Example error codes: 0x30018, 0x3000D.
+
+    ![first boot phase](../images/firstboot.png) 
+
+4. **Second boot phase**: Final settings are applied. This is also called the **OOBE boot phase**. Example error codes: 0x4000D, 0x40017. 
+
+    At the end of the second boot phase, the **Welcome to Windows 10** screen is displayed, preferences are configured, and the Windows 10 sign-in prompt is displayed.
+
+    ![second boot phase](../images/secondboot.png) 
+
+    ![second boot phase](../images/secondboot2.png) 
+
+    ![second boot phase](../images/secondboot3.png) 
+
+5. **Uninstall phase**: This phase occurs if upgrade is unsuccessful (image not shown). Example error codes: 0x50000, 0x50015.
 
 **Figure 1**: Phases of a successful Windows 10 upgrade (uninstall is not shown):
 
@@ -57,6 +101,7 @@ The Windows Setup application is used to upgrade a computer to Windows 10, or to
 DU = Driver/device updates.<br>
 OOBE = Out of box experience.<br>
 WIM = Windows image (Microsoft)
+
 
 ## Quick fixes
 
@@ -92,12 +137,15 @@ The following steps can resolve many Windows upgrade problems.
 
 If the upgrade process is not successful, Windows Setup will return two codes:
 
-1. **A result code**: The result code corresponds to a specific Win32 error.
-2. **An extend code**: The extend code contains information about both the *phase* in which an error occurred, and the *operation* that was being performed when the error occurred.  
+1. **A result code**: The result code corresponds to a specific Win32 or NTSTATUS error.
+2. **An extend code**: The extend code contains information about both the *phase* in which an error occurred, and the *operation* that was being performed when the error occurred.
 
 >For example, a result code of **0xC1900101** with an extend code of **0x4000D** will be returned as: **0xC1900101 - 0x4000D**.
 
 Note: If only a result code is returned, this can be because a tool is being used that was not able to capture the extend code. For example, if you are using the [Windows 10 Upgrade Assistant](https://support.microsoft.com/en-us/kb/3159635) then only a result code might be returned.
+
+>[!TIP]
+>If you are unable to locate the result and extend error codes, you can attempt to find these codes using Event Viewer.  For more information, see [Windows Error Reporting](#windows-error-reporting).
 
 ### Result codes
 
@@ -105,21 +153,29 @@ Note: If only a result code is returned, this can be because a tool is being use
 
 Result codes can be matched to the type of error encountered. To match a result code to an error:
 
-1. Identify the error code type, either Win32 or NTSTATUS, using the first hexadecimal digit:
-        <br>8 = Win32 error code (ex: 0x**8**0070070)
-        <br>C = NTSTATUS value (ex: 0x**C**1900107)
-2. Write down the last 4 digits of the error code (ex: 0x8007**0070** = 0070). These digits correspond to the last 16 bits of the [HRESULT](https://msdn.microsoft.com/en-us/library/cc231198.aspx) or the [NTSTATUS](https://msdn.microsoft.com/en-us/library/cc231200.aspx) structure.
-3. Based on the type of error code determined in the first step, match the 4 digits derived from the second step to either a [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx), or an [NTSTATUS value](https://msdn.microsoft.com/en-us/library/cc704588.aspx). 
+1. Identify the error code type as either Win32 or NTSTATUS using the first hexadecimal digit:
+        <br>**8** = Win32 error code (ex: 0x**8**0070070)
+        <br>**C** = NTSTATUS value (ex: 0x**C**1900107)
+2. Write down the last 4 digits of the error code (ex: 0x8007**0070** = 0070). These digits are the actual error code type as defined in the [HRESULT](https://msdn.microsoft.com/en-us/library/cc231198.aspx) or the [NTSTATUS](https://msdn.microsoft.com/en-us/library/cc231200.aspx) structure. Other digits in the code identify things such as the device type that produced the error.
+3. Based on the type of error code determined in the first step (Win32 or NTSTATUS), match the 4 digits derived from the second step to either a Win32 error code or NTSTATUS value using the following links:
+    - [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx)
+    - [NTSTATUS value](https://msdn.microsoft.com/en-us/library/cc704588.aspx)
 
-For example:
-- 0x80070070 = Win32 = 0070 = 0x00000070 = ERROR_DISK_FULL
-- 0xC1900107 = NTSTATUS = 0107 = 0x00000107 = STATUS_SOME_NOT_MAPPED
+Examples:
+- 0x80070070 
+    - Based on the "8" this is a Win32 error code 
+    - The last four digits are 0070, so look up 0x00000070 in the [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx) table
+    - The error is: **ERROR_DISK_FULL**
+- 0xC1900107 
+    - Based on the "C" this is an NTSTATUS error code
+    - The last four digits are 0107, so look up 0x00000107 in the [NTSTATUS value](https://msdn.microsoft.com/en-us/library/cc704588.aspx) table 
+    - The error is: **STATUS_SOME_NOT_MAPPED**
 
 Some result codes are self-explanatory, whereas others are more generic and require further analysis. In the examples shown above, ERROR_DISK_FULL indicates that the hard drive is full and additional room is needed to complete Windows upgrade. The message STATUS_SOME_NOT_MAPPED is more ambiguous, and means that an action is pending. In this case, the action pending is often the cleanup operation from a previous installation attempt, which can be resolved with a system reboot. 
 
 ### Extend codes
 
->Important: Extend codes reflect the current Windows 10 upgrade process, and might change in future releases of Windows 10. The codes discussed in this section apply to Windows 10 version 1607, also known as the Anniversary Update.
+>**Important**: Extend codes reflect the current Windows 10 upgrade process, and might change in future releases of Windows 10. The codes discussed in this section apply to Windows 10 version 1607, also known as the Anniversary Update.
 
 Extend codes can be matched to the phase and operation when an error occurred. To match an extend code to the phase and operation:
 
@@ -193,9 +249,49 @@ The following tables provide the corresponding phase and operation for values of
 
 For example: An extend code of **0x4000D**, represents a problem during phase 4 (**0x4**) with data migration (**000D**).
 
+## Windows Error Reporting
+
+When Windows Setup fails, the result and extend code are recorded as an informational event in the Application log by Windows Error Reporting as event 1001. The event name is **WinSetupDiag02**.  You can use Event Viewer to review this event, or you can use Windows PowerShell.
+
+To use Windows PowerShell, type the following commands from an elevated Windows PowerShell prompt:
+
+```
+$events = Get-WinEvent -FilterHashtable @{LogName="Application";ID="1001";Data="WinSetupDiag02"}
+$event = [xml]$events[0].ToXml()
+$event.Event.EventData.Data
+```
+
+To use Event Viewer: 
+1. Open Event Viewer and navigate to **Windows Logs\Application**.
+2. Click **Find**, and then search for **winsetupdiag02**.
+3. Double-click the event that is highlighted.
+
+Note: For legacy operating systems, the Event Name was WinSetupDiag01. 
+
+Ten parameters are listed in the event:
+<br>
+<table border="0">
+<tr><td>P1: The Setup Scenario (1=Media,5=WindowsUpdate,7=Media Creation Tool)</td></tr>
+<tr><td>P2: Setup Mode (x=default,1=Downlevel,5=Rollback)</td></tr>
+<tr><td>P3: New OS Architecture (x=default,0=X86,9=AMD64)</td></tr>
+<tr><td>P4: Install Result (x=default,0=Success,1=Failure,2=Cancel,3=Blocked)</td></tr>
+<tr><td><b>P5: Result Error Code</b>  (Ex: 0xc1900101)</td></tr>
+<tr><td><b>P6: Extend Error Code</b>  (Ex: 0x20017)</td></tr>
+<tr><td>P7: Source OS build (Ex: 9600)</td></tr>
+<tr><td>P8: Source OS branch (not typically available)</td></tr>
+<tr><td>P9: New OS build (Ex: 16299}</td></tr>
+<tr><td>P10: New OS branch (Ex: rs3_release}</td></tr>
+</table>
+
+The event will also contain links to log files that can be used to perform a detailed diagnosis of the error.  An example of this event from a successful upgrade is shown below.
+
+![Windows Error Reporting](../images/event.png)
+
 ## Log files
 
 Several log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. By default, the folders that contain these log files are hidden on the upgrade target computer. To view the log files, configure Windows Explorer to view hidden items, or use a tool to automatically gather these logs. The most useful log is **setupact.log**. The log files are located in a different folder depending on the Windows Setup phase. Recall that you can determine the phase from the extend code. 
+
+Note: Also see the [Windows Error Reporting](#windows-error-reporting) section in this document for help locating error codes and log files. 
 
 The following table describes some log files and how to use them for troubleshooting purposes:<br>
 
@@ -561,7 +657,7 @@ For more information, see [How to perform a clean boot in Windows](https://suppo
 
 <br>Result codes starting with the digits 0x800 are also important to understand. These error codes indicate general operating system errors, and are not unique to the Windows upgrade process. Examples include timeouts, devices not functioning, and a process stopping unexpectedly.
 
-<br>See the following general troubleshooting procedures associated with a result code of 0x800xxxxx:
+<br>See the following general troubleshooting procedures associated with a result code of 0x800xxxxx:<br>
 
 <br><table border="1" cellspacing="0" cellpadding="0">
 
@@ -591,6 +687,39 @@ An unspecified error occurred with a driver during the SafeOS phase.
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 This error has more than one possible cause. Attempt [quick fixes](#quick-fixes), and if not successful, [analyze log files](#analyze-log-files) in order to determine the problem and solution.
+
+</table>
+</td>
+</tr>
+
+<tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Code</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+0x80073BC3 - 0x20009<br>
+0x8007002 - 0x20009<br>
+0x80073B92 - 0x20009
+
+</table>
+
+<br><table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+The requested system device cannot be found, there is a sharing violation, or there are multiple devices matching the identification criteria.
+
+</table>
+</td>
+
+<td align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+These errors occur during partition analysis and validation, and can be caused by the presence of multiple system partitions. For example, if you installed a new system drive but left the previous system drive connected, this can cause a conflict. To resolve the errors, disconnect or temporarily disable drives that contain the unused system partition. You can reconnect the drive after the upgrade has completed. Alternatively, you can delete the unused system partition.
 
 </table>
 </td>

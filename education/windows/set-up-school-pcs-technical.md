@@ -9,7 +9,7 @@ ms.pagetype: edu
 ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
-ms.date: 12/12/2017
+ms.date: 02/02/2018
 ---
 
 # Technical reference for the Set up School PCs app 
@@ -292,7 +292,7 @@ The Set up School PCs app produces a specialized provisioning package that makes
 </tr> 
 <tr> <td> <p> Interactive logon: Sign-in last interactive user automatically after a system-initiated restart</p> </td> <td> <p> Disabled</p> </td> 
 </tr> 
-<tr> <td> <p> Shutdown: Allow system to be shut down without having to log on </p> </td> <td> <p> Disabled</p> </td> 
+<tr> <td> <p> Shutdown: Allow system to be shut down without having to log on </p> </td> <td> <p> Enabled</p> </td> 
 </tr> 
 <tr> <td> <p> User Account Control: Behavior of the elevation prompt for standard users </p> </td> <td> <p> Auto deny</p> </td>
 </tr> 

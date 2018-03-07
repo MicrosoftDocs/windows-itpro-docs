@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/03/2017
+ms.date: 03/01/2018
 ---
 
 # AssignedAccess CSP
@@ -62,13 +62,64 @@ The supported operations are Add, Delete, Get and Replace. When there's no confi
 Added in Windows 10, version 1709. Specifies the settings that you can configure in the kiosk or device. This node accepts an AssignedAccessConfiguration xml as input to configure the device experience. For details about the configuration settings in the XML, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps).Here is the schema for the [AssignedAccessConfiguration](#assignedaccessconfiguration-xsd). 
 
 > [!Note]  
-> You cannot set both KioskModeApp and Configuration at the same time in the device in Windows 10, version 1709.
+> You cannot set both KioskModeApp and Configuration at the same time on the device in Windows 10, version 1709.  
+> You cannot set both ShellLauncher and Configuration at the same time on the device.
 
 Enterprises can use this to easily configure and manage the curated lockdown experience. 
 
 Supported operations are Add, Get, Delete, and Replace.
 
 Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies back (e.g. Start Layout).
+
+<a href="" id="assignedaccess-status"></a>**./Device/Vendor/MSFT/AssignedAccess/Status**  
+Added in Windows 10, version 1803. This read only polling node allows MDM server to query the current KioskModeAppRuntimeStatus as long as the StatusConfiguration node is set to “On” or “OnWithAlerts”. If the StatusConfiguration is “Off”, a node not found error will be reported to the MDM server. Click [link](#status-example) to see an example SyncML. [Here](#assignedaccessalert-xsd) is the schema for the Status payload.
+ 
+In Windows 10, version 1803, Assigned Access runtime status only supports monitoring single app kiosk mode. Here are the possible status available for single app kiosk mode. 
+ 
+|Status  |Description  |
+|---------|---------|---------|
+| KioskModeAppRunning | This means the kiosk app is running normally. |
+| KioskModeAppNotFound | This occurs when the kiosk app is not deployed to the machine. |
+| KioskModeAppActivationFailure | This happens when the assigned access controller detects the process terminated unexpectedly after exceeding the max retry. |
+
+Note that status codes available in the Status payload correspond to a specific KioskModeAppRuntimeStatus. 
+
+
+|Status code  | KioskModeAppRuntimeStatus |
+|---------|---------|
+| 1     | KioskModeAppRunning         |
+| 2     | KioskModeAppNotFound          |
+| 3     | KioskModeAppActivationFailure         |
+
+
+Additionally, the status payload includes a profileId, which can be used by the MDM server to correlate which kiosk app caused the error. 
+
+Supported operation is Get.
+
+<a href="" id="assignedaccess-shelllauncher"></a>**./Device/Vendor/MSFT/AssignedAccess/ShellLauncher**  
+Added in Windows 10,version 1803. This node accepts a ShellLauncherConfiguration xml as input. Click [link](#shelllauncherconfiguration-xsd) to see the schema.
+
+> [!Note]  
+> You cannot set both ShellLauncher and Configuration at the same time on the device.
+
+<a href="" id="assignedaccess-statusconfiguration"></a>**./Device/Vendor/MSFT/AssignedAccess/StatusConfiguration**  
+Added in Windows 10, version 1803. This node accepts a StatusConfiguration xml as input to configure the Kiosk App Health monitoring. There are three possible values for StatusEnabled node inside StatusConfiguration xml: On, OnWithAlerts, and Off. Click [link](#statusconfiguration-xsd) to see the StatusConfiguration schema.
+ 
+By default the StatusConfiguration node does not exist, and it implies this feature is off. Once enabled via CSP, Assigned Access will check kiosk app status and wait for MDM server to query the latest status from the Status node.  
+ 
+Optionally, the MDM server can opt-in to the MDM alert so a MDM alert will be generated and sent immediately to the MDM server when the assigned access runtime status is changed. This MDM alert will contain the status payload that is available via the Status node. 
+ 
+This MDM alert header is defined as follows:  
+
+-  MDMAlertMark: Critical 
+-  MDMAlertType: "com.microsoft.mdm.assignedaccess.status" 
+-  MDMAlertDataType: String 
+-  Source: "./Vendor/MSFT/AssignedAccess" 
+-  Target: N/A 
+ 
+> [!Note]  
+> MDM alert will only be sent for errors.  
+
 
 ## KioskModeApp examples
 
@@ -160,32 +211,29 @@ KioskModeApp Replace
     elementFormDefault="qualified"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2017/config"
     targetNamespace="http://schemas.microsoft.com/AssignedAccess/2017/config"
     >
 
     <xs:complexType name="profile_list_t">
         <xs:sequence minOccurs="1" >
-            <xs:element name="Profile" type="profile_t" minOccurs="1" maxOccurs="unbounded">
-                <xs:unique name="duplicateRolesForbidden">
-                    <xs:selector xpath="Profile"/>
-                    <xs:field xpath="@Id"/>
-                </xs:unique>
-            </xs:element>
+            <xs:element name="Profile" type="profile_t" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="kioskmodeapp_t">
+        <xs:attribute name="AppUserModelId" type="xs:string"/>
     </xs:complexType>
 
     <xs:complexType name="profile_t">
-        <xs:sequence minOccurs="1" maxOccurs="1">
-            <xs:element name="AllAppsList" type="allappslist_t" minOccurs="1" maxOccurs="1">
-                <xs:unique name="ForbidDupApps">
-                    <xs:selector xpath="App"/>
-                    <xs:field xpath="@AppUserModelId"/>
-                    <xs:field xpath="@DesktopAppPath"/>
-                </xs:unique>
-            </xs:element>
-            <xs:element name="StartLayout" type="xs:string" minOccurs="1" maxOccurs="1"/>
-            <xs:element name="Taskbar" type="taskbar_t" minOccurs="1" maxOccurs="1"/>
-        </xs:sequence>
+        <xs:choice>
+            <xs:sequence minOccurs="1" maxOccurs="1">
+                <xs:element name="AllAppsList" type="allappslist_t" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="StartLayout" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="Taskbar" type="taskbar_t" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+            <xs:element name="KioskModeApp" type="kioskmodeapp_t" minOccurs="1" maxOccurs="1"/>
+        </xs:choice>
         <xs:attribute name="Id" type="guid_t" use="required"/>
         <xs:attribute name="Name" type="xs:string" use="optional"/>
     </xs:complexType>
@@ -193,6 +241,10 @@ KioskModeApp Replace
     <xs:complexType name="allappslist_t">
         <xs:sequence minOccurs="1" >
             <xs:element name="AllowedApps" type="allowedapps_t" minOccurs="1" maxOccurs="1">
+                <xs:unique name="ForbidDupApps">
+                    <xs:selector xpath="default:App"/>
+                    <xs:field xpath="@AppUserModelId|@DesktopAppPath"/>
+                </xs:unique>
             </xs:element>
         </xs:sequence>
     </xs:complexType>
@@ -235,22 +287,64 @@ KioskModeApp Replace
 
     <xs:complexType name="config_t">
         <xs:sequence minOccurs="1" maxOccurs="1">
-            <xs:element name="Account" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:choice>
+                <xs:element name="Account" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="AutoLogonAccount" type="autologon_account_t" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="UserGroup" type="group_t" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="SpecialGroup" type="specialGroup_t" minOccurs="1" maxOccurs="1" />
+            </xs:choice>
             <xs:element name="DefaultProfile" type="profileId_t" minOccurs="1" maxOccurs="1"/>
         </xs:sequence>
     </xs:complexType>
+
+    <xs:complexType name="autologon_account_t">
+        <xs:attribute name="HiddenId" type="guid_t" fixed="{74331115-F68A-4DF9-8D2C-52BA2CE2ADB1}"/>
+    </xs:complexType>
+
+    <xs:complexType name="group_t">
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="Type" type="groupType_t" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="specialGroup_t">
+        <xs:attribute name="Name" type="specialGroupType_t" use="required"/>
+    </xs:complexType>
+
+    <xs:simpleType name="groupType_t">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="LocalGroup"/>
+            <xs:enumeration value="ActiveDirectoryGroup"/>
+            <xs:enumeration value="AzureActiveDirectoryGroup"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="specialGroupType_t">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Visitor"/>
+        </xs:restriction>
+    </xs:simpleType>
 
     <!--below is the definition of the config xml content-->
     <xs:element name="AssignedAccessConfiguration">
         <xs:complexType>
             <xs:all minOccurs="1">
                 <xs:element name="Profiles" type="profile_list_t">
+                    <xs:unique name="duplicateRolesForbidden">
+                        <xs:selector xpath="default:Profile"/>
+                        <xs:field xpath="@Id"/>
+                    </xs:unique>
                 </xs:element>
-                <xs:element name="Configs" type="config_list_t"/>
+                <xs:element name="Configs" type="config_list_t">
+                    <xs:unique name="duplicateAutoLogonAccountForbidden">
+                        <xs:selector xpath=".//default:AutoLogonAccount"/>
+                        <xs:field xpath="@HiddenId"/>
+                    </xs:unique>
+                </xs:element>
             </xs:all>
         </xs:complexType>
     </xs:element>
 </xs:schema>
+
 ```
 
 ## Example AssignedAccessConfiguration XML
@@ -559,4 +653,481 @@ Example of the Delete command.
        <Final />
    </SyncBody>
 </SyncML>
+```
+
+## StatusConfiguration XSD
+
+``` syntax
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration"
+    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration"
+    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration"
+    >
+
+    <xs:simpleType name="status_enabled_t">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Off"/>
+            <xs:enumeration value="On"/>
+            <xs:enumeration value="OnWithAlerts"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--below is the definition of the config xml content-->
+    <xs:element name="StatusConfiguration">
+        <xs:complexType>
+            <xs:sequence minOccurs="1" maxOccurs="1">
+                <xs:element name="StatusEnabled" type="status_enabled_t" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+```
+
+## StatusConfiguration example
+
+StatusConfiguration Add OnWithAlerts 
+
+``` syntax
+<SyncML xmlns='SYNCML:SYNCML1.2'> 
+  <SyncBody> 
+    <Add> 
+      <CmdID>2</CmdID> 
+      <Item> 
+        <Target> 
+          <LocURI>./Device/Vendor/MSFT/AssignedAccess/StatusConfiguration</LocURI> 
+        </Target> 
+        <Meta> 
+          <Format xmlns="syncml:metinf">chr</Format> 
+        </Meta> 
+        <Data> 
+          <![CDATA[ 
+          <?xml version="1.0" encoding="utf-8" ?> 
+          <StatusConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration"> 
+            <StatusEnabled>OnWithAlerts</StatusEnabled> 
+          </StatusConfiguration> 
+          ]]> 
+        </Data> 
+      </Item> 
+    </Add> 
+    <Final /> 
+  </SyncBody> 
+</SyncML> 
+```
+ 
+ 
+StatusConfiguration Delete 
+``` syntax
+<SyncML xmlns='SYNCML:SYNCML1.2'> 
+   <SyncBody> 
+       <Delete> 
+           <CmdID>2</CmdID> 
+           <Item> 
+               <Target>   
+                 <LocURI>./Device/Vendor/MSFT/AssignedAccess/StatusConfiguration</LocURI>          
+               </Target> 
+           </Item> 
+       </Delete> 
+       <Final /> 
+   </SyncBody> 
+</SyncML> 
+```
+
+StatusConfiguration Get 
+
+``` syntax
+<SyncML xmlns='SYNCML:SYNCML1.2'> 
+   <SyncBody> 
+       <Get> 
+           <CmdID>2</CmdID> 
+           <Item> 
+               <Target>   
+                 <LocURI>./Device/Vendor/MSFT/AssignedAccess/StatusConfiguration</LocURI>          
+               </Target> 
+           </Item> 
+       </Get> 
+       <Final /> 
+   </SyncBody> 
+</SyncML>
+```
+ 
+StatusConfiguration Replace On 
+ 
+```syntax
+<SyncML xmlns='SYNCML:SYNCML1.2'> 
+  <SyncBody> 
+    <Replace> 
+      <CmdID>2</CmdID> 
+      <Item> 
+        <Target> 
+          <LocURI>./Device/Vendor/MSFT/AssignedAccess/StatusConfiguration</LocURI> 
+        </Target> 
+        <Meta> 
+          <Format xmlns="syncml:metinf">chr</Format> 
+        </Meta> 
+        <Data> 
+          <![CDATA[ 
+          <?xml version="1.0" encoding="utf-8" ?> 
+          <StatusConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration"> 
+            <StatusEnabled>On</StatusEnabled> 
+          </StatusConfiguration> 
+          ]]> 
+        </Data> 
+      </Item> 
+    </Replace> 
+    <Final /> 
+  </SyncBody> 
+</SyncML> 
+```
+
+## Status example
+
+Status Get 
+``` syntax
+<SyncML xmlns='SYNCML:SYNCML1.2'> 
+   <SyncBody> 
+       <Get> 
+           <CmdID>2</CmdID> 
+           <Item> 
+               <Target>   
+                 <LocURI>./Device/Vendor/MSFT/AssignedAccess/Status</LocURI>          
+               </Target> 
+           </Item> 
+       </Get> 
+       <Final /> 
+   </SyncBody> 
+</SyncML> 
+```
+
+## ShellLauncherConfiguration XSD
+
+``` syntax
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
+    xmlns:default="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
+    targetNamespace="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
+    >
+
+    <xs:complexType name="profile_list_t">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:choice minOccurs="1" maxOccurs="1">
+                <xs:element name="DefaultProfile" type="default_profile_t"/>
+                <xs:element name="Profile" type="profile_t"/>
+            </xs:choice>
+            <xs:element name="Profile" type="profile_t" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="default_profile_t">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:element name="Shell" type="default_shell_t" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="default_shell_t">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:element name="DefaultAction" type="default_action_t" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="Shell" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="custom_shell_t">
+        <xs:all minOccurs="1" maxOccurs="1">
+            <xs:element name="ReturnCodeActions" type="return_code_action_list_t" minOccurs="0" maxOccurs="1">
+                <xs:unique name="ForbidDuplicatedReturnCodes">
+                    <xs:selector xpath="default:ReturnCodeAction"/>
+                    <xs:field xpath="@ReturnCode"/>
+                </xs:unique>
+            </xs:element>
+            <!--if "DefaultAction" is not supplied, pre-defined default action is "restart the shell"-->
+            <xs:element name="DefaultAction" type="default_action_t" minOccurs="0" maxOccurs="1"/>
+        </xs:all>
+        <xs:attribute name="Shell" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="default_action_t">
+        <xs:attribute name="Action" type="system_action_t" use="required"/>
+    </xs:complexType>
+
+    <xs:simpleType name="system_action_t">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="RestartShell" />
+            <xs:enumeration value="RestartDevice" />
+            <xs:enumeration value="ShutdownDevice" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="profile_t">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:element name="Shell" type="custom_shell_t" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="Id" type="guid_t" use="required"/>
+        <xs:attribute name="Name" type="xs:string" use="optional"/>
+    </xs:complexType>
+
+    <xs:simpleType name="guid_t">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\{[0-9a-fA-F]{8}\-([0-9a-fA-F]{4}\-){3}[0-9a-fA-F]{12}\}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="return_code_action_list_t">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:element name="ReturnCodeAction" type="return_code_action_t" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="return_code_action_t">
+        <xs:attribute name="ReturnCode" type="xs:integer" use="required"/>
+        <xs:attribute name="Action" type="system_action_t" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="config_list_t">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:element name="Config" type="config_t" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="config_t">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:choice minOccurs="1" maxOccurs="1">
+                <xs:element name="Account" type="account_t" minOccurs="1" maxOccurs="1">
+                    <xs:key name="mutexNameOrSID">
+                        <xs:selector xpath="."/>
+                        <xs:field xpath="@Name|@Sid"/>
+                    </xs:key>
+                </xs:element>
+                <xs:element name="AutoLogonAccount" type="autologon_account_t" minOccurs="1" maxOccurs="1"/>
+            </xs:choice>
+            <xs:element name="Profile" type="profile_id_t" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="account_t">
+        <xs:attribute name="Name" type="xs:string" use="optional"/>
+        <xs:attribute name="Sid" type="xs:string" use="optional"/>
+    </xs:complexType>
+
+    <xs:complexType name="autologon_account_t">
+        <xs:attribute name="HiddenId" type="guid_t" fixed="{50021E57-1CE4-49DF-99A9-8DB659E2C2DD}"/>
+    </xs:complexType>
+
+    <xs:complexType name="profile_id_t">
+        <xs:attribute name="Id" type="guid_t" use="required"/>
+    </xs:complexType>
+
+    <!--below is the definition of the config xml content-->
+    <xs:element name="ShellLauncherConfiguration">
+        <xs:complexType>
+            <xs:sequence minOccurs="1" maxOccurs="1">
+                <xs:element name="Profiles" type="profile_list_t" minOccurs="1" maxOccurs="1">
+                    <xs:unique name="ForbidDuplicatedProfiles">
+                        <xs:selector xpath="default:Profile"/>
+                        <xs:field xpath="@Id"/>
+                    </xs:unique>
+                </xs:element>
+                <xs:element name="Configs" type="config_list_t" minOccurs="0" maxOccurs="1">
+                    <xs:unique name="ForbidDuplicatedConfigs_Name">
+                        <xs:selector xpath="default:Config/default:Account"/>
+                        <xs:field xpath="@Name"/>
+                    </xs:unique>
+                    <xs:unique name="ForbidDuplicatedConfigs_Sid">
+                        <xs:selector xpath="default:Config/default:Account"/>
+                        <xs:field xpath="@Sid"/>
+                    </xs:unique>
+                    <xs:unique name="ForbidDuplicatedAutoLogonAccount">
+                        <xs:selector xpath="default:Config/default:AutoLogonAccount"/>
+                        <xs:field xpath="@HiddenId"/>
+                    </xs:unique>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+```
+
+## ShellLauncherConfiguration examples
+
+ShellLauncherConfiguration Add
+```
+<SyncML xmlns='SYNCML:SYNCML1.2'>
+  <SyncBody>
+    <Add>
+      <CmdID>2</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./Device/Vendor/MSFT/AssignedAccess/ShellLauncher</LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">chr</Format>
+        </Meta>
+        <Data>
+        <![CDATA[
+        <?xml version="1.0" encoding="utf-8"?>
+        <ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration">
+            <Profiles>
+                <!--default profile defines default shell and action for general purposes, should NOT be bound to any account-->
+                <DefaultProfile>
+                    <Shell Shell="%SystemRoot%\explorer.exe">
+                        <!--DefaultAction is optional; if not defined, the pre-defined default action is "restart shell"-->
+                        <DefaultAction Action="RestartShell"/>
+                    </Shell>
+                </DefaultProfile>
+                <Profile Id="{814B6409-8C51-4EE2-95F8-DB39B70F5F68}">
+                    <Shell Shell="%ProgramFiles%\Internet Explorer\iexplore.exe -k www.bing.com">
+                        <!--ReturnCodeActions is optional, when none is provided, will always execute default action-->
+                        <ReturnCodeActions>
+                            <ReturnCodeAction ReturnCode="0" Action="RestartShell"/>
+                            <ReturnCodeAction ReturnCode="-1" Action="RestartDevice"/>
+                            <ReturnCodeAction ReturnCode="255" Action="ShutdownDevice"/>
+                        </ReturnCodeActions>
+                        <!--restart device after shell exits, if its return code does not match any of the above-->
+                        <DefaultAction Action="RestartDevice"/>
+                    </Shell>
+                </Profile>
+                <Profile Id="{24A73092-4F3F-44CC-8375-53F13FE213F7}">
+                    <Shell Shell="%SystemRoot%\System32\cmd.exe"/>
+                    <!--DefaultAction is optional, if none is supplied, will use DefaultAction defined in DefaultProfile-->
+                </Profile>
+            </Profiles>
+            <Configs>
+                <Config>
+                    <!--AutoLogon account-->
+                    <AutoLogonAccount/>
+                    <Profile Id="{814B6409-8C51-4EE2-95F8-DB39B70F5F68}"/>
+                </Config>
+                <Config>
+                    <!--BUILTIN\Administrators SID-->
+                    <Account Sid="S-1-5-32-544"/>
+                    <Profile Id="{24A73092-4F3F-44CC-8375-53F13FE213F7}"/>
+                </Config>
+                <Config>
+                    <!--local account-->
+                    <Account Name="sluser1"/>
+                    <Profile Id="{814B6409-8C51-4EE2-95F8-DB39B70F5F68}"/>
+                </Config>
+            </Configs>
+        </ShellLauncherConfiguration>
+        ]]>
+        </Data>
+      </Item>
+    </Add>
+    <Final />
+  </SyncBody>
+</SyncML>
+```
+
+ShellLauncherConfiguration Add AutoLogon
+```
+<SyncML xmlns='SYNCML:SYNCML1.2'>
+  <SyncBody>
+    <Add>
+      <CmdID>2</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./Device/Vendor/MSFT/AssignedAccess/ShellLauncher</LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">chr</Format>
+        </Meta>
+        <Data>
+        <![CDATA[
+        <?xml version="1.0" encoding="utf-8"?>
+        <ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration">
+            <Profiles>
+                <DefaultProfile>
+                    <Shell Shell="%SystemRoot%\explorer.exe"/>
+                </DefaultProfile>
+                <Profile Id="{814B6409-8C51-4EE2-95F8-DB39B70F5F68}">
+                    <Shell Shell="%ProgramFiles%\Internet Explorer\iexplore.exe -k www.bing.com">
+                        <ReturnCodeActions>
+                            <ReturnCodeAction ReturnCode="0" Action="RestartShell"/>
+                            <ReturnCodeAction ReturnCode="-1" Action="RestartDevice"/>
+                            <ReturnCodeAction ReturnCode="255" Action="ShutdownDevice"/>
+                        </ReturnCodeActions>
+                        <DefaultAction Action="RestartDevice"/>
+                    </Shell>
+                </Profile>
+            </Profiles>
+            <Configs>
+                <Config>
+                    <AutoLogonAccount/>
+                    <Profile Id="{814B6409-8C51-4EE2-95F8-DB39B70F5F68}"/>
+                </Config>
+            </Configs>
+        </ShellLauncherConfiguration>
+        ]]>
+        </Data>
+      </Item>
+    </Add>
+    <Final />
+  </SyncBody>
+</SyncML>
+```
+
+ShellLauncherConfiguration Get
+```
+<SyncML xmlns='SYNCML:SYNCML1.2'>
+  <SyncBody>
+    <Get>
+      <CmdID>2</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./Device/Vendor/MSFT/AssignedAccess/ShellLauncher</LocURI>
+        </Target>
+      </Item>
+    </Get>
+    <Final />
+  </SyncBody>
+</SyncML>
+```
+
+## AssignedAccessAlert XSD
+
+```syntax
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2018/AssignedAccessAlert"
+    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2018/AssignedAccessAlert"
+    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2018/AssignedAccessAlert"
+    >
+
+    <xs:simpleType name="status_t">
+        <xs:restriction base="xs:int">
+            <xs:enumeration value="0"/>
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="2"/>
+            <xs:enumeration value="3"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="guid_t">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\{[0-9a-fA-F]{8}\-([0-9a-fA-F]{4}\-){3}[0-9a-fA-F]{12}\}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="event_t">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:element name="status" type="status_t" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="profileId" type="guid_t" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="Name" type="xs:string" fixed="KioskModeAppRuntimeStatus" use="required"/>
+    </xs:complexType>
+
+    <xs:element name="Events">
+        <xs:complexType>
+            <xs:sequence minOccurs="1" maxOccurs="1">
+                <xs:element name="Event" type="event_t" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
 ```

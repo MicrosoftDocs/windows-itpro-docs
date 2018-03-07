@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
-ms.date: 01/23/2018
+ms.date: 01/24/2018
 ms.localizationpriority: high
 ---
 
@@ -21,11 +21,7 @@ A brief description of new or updated features in this version of Windows 10 is 
 
 &nbsp;
 
-<iframe class="video-iframe" width="600" height="340" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false"> 
-</iframe>
-
-
- 
+> [!video https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false]
 
 
 ## Deployment

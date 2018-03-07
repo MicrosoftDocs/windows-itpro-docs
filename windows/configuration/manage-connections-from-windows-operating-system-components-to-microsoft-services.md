@@ -9,29 +9,38 @@ ms.sitesec: library
 ms.localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic-msft
-ms.date: 11/30/2017
+ms.date: 01/29/2018
 ---
 
 # Manage connections from Windows operating system components to Microsoft services
  
 **Applies to**
 
--   Windows 10
+-   Windows 10 Enterprise edition
 -   Windows Server 2016
 
-If you're looking for content on what each telemetry level means and how to configure it in your organization, see [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md).
+If you're looking for content on what each diagnostic data level means and how to configure it in your organization, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
 
 Learn about the network connections that Windows components make to Microsoft and also the privacy settings that affect data that is shared with either Microsoft or apps and how they can be managed by an IT Pro.
 
-If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider. You can configure telemetry at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
+If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider. You can configure diagnostic data at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
 
-You can configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all other connections to Microsoft network endpoints as described in this article to help prevent Windows from sending any data to Microsoft. There are many reasons why these communications are enabled by default, such as updating malware definitions and maintain current certificate revocation lists, which is why we strongly recommend against this. This data helps us deliver a secure, reliable, and more delightful personalized experience.
+You can configure diagnostic data at the Security level, turn off Windows Defender diagnostic data and MSRT reporting, and turn off all other connections to Microsoft network endpoints as described in this article to help prevent Windows from sending any data to Microsoft. There are many reasons why these communications are enabled by default, such as updating malware definitions and maintain current certificate revocation lists, which is why we strongly recommend against this. This data helps us deliver a secure, reliable, and more delightful personalized experience.
 
-To help make it easier to deploy settings to restrict connections from Windows 10 to Microsoft, you can apply the [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887). This baseline was created in the same way as the [Windows security baselines](/windows/device-security/windows-security-baselines) that are often used to efficiently configure Windows to a known secure state. Running the Windows Restricted Traffic Limited Functionality Baseline on devices in your organization will allow you to quickly configure all of the settings covered in this document. However, some of the settings reduce the functionality and security configuration of your device and are therefore not recommended. Make sure should you've chosen the right settings configuration for your environment before applying. You should not extract this package to the windows\\system32 folder because it will not apply correctly. Applying this baseline is equivalent to applying the Windows 10 steps covered in this article.
+To help make it easier to deploy settings to restrict connections from Windows 10 to Microsoft, you can apply the [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887). 
+This baseline was created in the same way as the [Windows security baselines](/windows/device-security/windows-security-baselines) that are often used to efficiently configure Windows to a known secure state. 
+Running the Windows Restricted Traffic Limited Functionality Baseline on devices in your organization will allow you to quickly configure all of the settings covered in this document. 
+However, some of the settings reduce the functionality and security configuration of your device and are therefore not recommended. 
+Make sure should you've chosen the right settings configuration for your environment before applying. 
+You should not extract this package to the windows\\system32 folder because it will not apply correctly. 
+
+Applying the Windows Restricted Traffic Limited Functionality Baseline is the same as applying each setting covered in this article. 
+It is recommended that you restart a device after making configuration changes to it. 
+Note that **Get Help** and **Give us Feedback** links no longer work after the Windows Restricted Traffic Limited Functionality Baseline is applied.
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
 
-## What's new in Windows 10, version 1709
+## What's new in Windows 10, version 1709 Enterprise edition
 
 Here's a list of changes that were made to this article for Windows 10, version 1709:
 
@@ -39,7 +48,7 @@ Here's a list of changes that were made to this article for Windows 10, version 
 - Added the Storage Health section.
 - Added discussion of apps for websites in the Microsoft Store section.
 
-## What's new in Windows 10, version 1703
+## What's new in Windows 10, version 1703 Enterprise edition
 
 Here's a list of changes that were made to this article for Windows 10, version 1703:
 
@@ -69,28 +78,28 @@ Here's a list of changes that were made to this article for Windows 10, version 
 ## <a href="" id="bkmk-othersettings"></a>Management options for each setting
 
 
-The following sections list the components that make network connections to Microsoft services by default. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all of these connections.
+The following sections list the components that make network connections to Microsoft services by default. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure diagnostic data at the Security level, turn off Windows Defender diagnostic data and MSRT reporting, and turn off all of these connections.
 
 If you're running Windows 10, they will be included in the next update for the Long Term Servicing Branch.
 
-### Settings for Windows 10 Enterprise, version 1703
+### Settings for Windows 10 Enterprise edition 
 
-See the following table for a summary of the management settings for Windows 10 Enterprise, version 1703.
+See the following table for a summary of the management settings for Windows 10 Enterprise, version 1709 and Windows 10 Enterprise, version 1703.
 
 | Setting | UI | Group Policy | MDM policy | Registry | Command line |
 | - | :-: | :-: | :-: | :-: | :-: |
 | [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | | ![Check mark](images/checkmark.png) | | | |
-| [2. Cortana and Search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
+| [2. Cortana and Search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | 
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [5. Find My Device](#find-my-device) | | ![Check mark](images/checkmark.png) | | | |
 | [6. Font streaming](#font-streaming) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
-| [7. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [7. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  |
 | [8. Internet Explorer](#bkmk-ie) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [9. Live Tiles](#live-tiles) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [10. Mail synchronization](#bkmk-mailsync) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [11. Microsoft Account](#bkmk-microsoft-account) | | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
-| [12. Microsoft Edge](#bkmk-edge) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [12. Microsoft Edge](#bkmk-edge) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  |
 | [13. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [14. Offline maps](#bkmk-offlinemaps) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [15. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
@@ -362,7 +371,7 @@ Windows Insider Preview builds only apply to Windows 10 and are not available fo
 
 
 > [!NOTE]  
-> If you upgrade a device that is configured to minimize connections from Windows to Microsoft services (that is, a device configured for zero exhaust) to a Windows Insider Preview build, the Feedback & Diagnostic setting will automatically be set to **Full**. Although the telemetry level may initially appear as **Basic**, a few hours after the UI is refreshed or the machine is rebooted, the setting will become **Full**.
+> If you upgrade a device that is configured to minimize connections from Windows to Microsoft services (that is, a device configured for zero exhaust) to a Windows Insider Preview build, the Feedback & Diagnostic setting will automatically be set to **Full**. Although the diagnostic data level may initially appear as **Basic**, a few hours after the UI is refreshed or the machine is rebooted, the setting will become **Full**.
 
 To turn off Insider Preview builds for a released version of Windows 10:
 
@@ -522,6 +531,7 @@ Find the Microsoft Edge Group Policy objects under **Computer Configuration** &g
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Allow configuration updates for the Books Library            | Choose whether configuration updates are done for the Books Library. <br /> Default: Not configured       |
 | Configure Autofill                                    | Choose whether employees can use autofill on websites. <br /> Default: Enabled                      |
 | Configure Do Not Track         | Choose whether employees can send Do Not Track headers.<br /> Default: Disabled                     |
 | Configure Password Manager                            | Choose whether employees can save passwords locally on their devices. <br /> Default: Enabled       |
@@ -548,7 +558,8 @@ Alternatively, you can configure the Microsoft Group Policies using the followin
 
 | Policy | Registry path |
 | - | - |
-| Configure Autofill  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main!Use FormSuggest <br/ > REG_SZ: **no** |
+| Allow configuration updates for the Books Library  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\BooksLibrary!AllowConfigurationUpdateForBooksLibrary<br/> REG_DWORD: **0** |
+| Configure Autofill  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main!Use FormSuggest<br/> REG_SZ: **no** |
 | Configure Do Not Track   | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main!DoNotTrack<br/> REG_DWORD: 1 |
 | Configure Password Manager | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main!FormSuggest Passwords<br /> REG_SZ: **no** |
 | Configure search suggestions in Address bar | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\SearchScopes!ShowSearchSuggestionsGlobal <br /> REG_DWORD: 0|
@@ -884,7 +895,7 @@ To turn off **Turn on SmartScreen Filter to check web content (URLs) that Micros
 To turn off **Send Microsoft info about how I write to help us improve typing and writing in the future**:
 
 > [!NOTE] 
-> If the telemetry level is set to either **Basic** or **Security**, this is turned off automatically.
+> If the diagnostic data level is set to either **Basic** or **Security**, this is turned off automatically.
 
  
 
@@ -1055,7 +1066,17 @@ To turn off **Choose apps that can use your microphone**:
 
 ### <a href="" id="bkmk-priv-notifications"></a>17.5 Notifications
 
-In the **Notifications** area, you can choose which apps have access to notifications.
+To turn off notifications network usage:
+
+-   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Notifications** > **Turn off Notifications network usage**
+
+    -   Set to **Enabled**.
+
+        -or-
+
+-   Create a REG\_DWORD registry setting in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\PushNotifications!NoCloudApplicationNotification**, with a value of 1 (one)
+
+In the **Notifications** area, you can also choose which apps have access to notifications.
 
 To turn off **Let apps access my notifications**:
 
@@ -1428,11 +1449,14 @@ To change the level of diagnostic and usage data sent when you **Send your devic
 
    -or-
 
--   Apply the Group Policy: **Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection And Preview Builds\\Allow Telemetry**
+-   Apply the Group Policy: **Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection And Preview Builds\\Allow Telemetry** and select the appropriate option for your deployment. 
 
    -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection\\AllowTelemetry**, with a value of 0 (zero).
+-   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection\\AllowTelemetry**, with a value of 0-3, as appropriate for your deployment (see below for the values for each level). 
+
+> [!NOTE] 
+> If the **Security** option is configured by using Group Policy or the Registry, the value will not be reflected in the UI. The **Security** option is only available in Windows 10 Enterprise edition.
 
    -or-
 
@@ -1472,7 +1496,11 @@ In the **Background Apps** area, you can choose which apps can run in the backgr
 
 To turn off **Let apps run in the background**:
 
--   Turn off the feature in the UI for each app.
+-   In **Background apps**, set **Let apps run in the background** to **Off**.
+
+     -or-
+
+-   In **Background apps**, turn off the feature for each app.
     
      -or-
 
@@ -1723,7 +1751,7 @@ For Windows 10 only, you can stop Enhanced Notifications:
 
 - Turn off the feature in the UI.
 
-You can also use the registry to turn off Malicious Software Reporting Tool telemetry by setting the REG\_DWORD value **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\MRT\\DontReportInfectionInformation** to 1.
+You can also use the registry to turn off Malicious Software Reporting Tool diagnostic data by setting the REG\_DWORD value **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\MRT\\DontReportInfectionInformation** to 1.
 
 ### <a href="" id="bkmk-wmp"></a>24. Windows Media Player
 
@@ -1800,7 +1828,10 @@ For more info, see [Windows Spotlight on the lock screen](windows-spotlight.md).
 
 ### <a href="" id="bkmk-windowsstore"></a>26. Microsoft Store
 
-You can turn off the ability to launch apps from the Microsoft Store that were preinstalled or downloaded. This will also turn off automatic app updates, and the Microsoft Store will be disabled. On Windows Server 2016, this will block Microsoft Store calls from Universal Windows Apps.
+You can turn off the ability to launch apps from the Microsoft Store that were preinstalled or downloaded. 
+This will also turn off automatic app updates, and the Microsoft Store will be disabled. 
+In addition, new email accounts cannot be created by clicking **Settings** > **Accounts** > **Email & app accounts** > **Add an account**. 
+On Windows Server 2016, this will block Microsoft Store calls from Universal Windows Apps.
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Store** &gt; **Disable all apps from Microsoft Store**.
 

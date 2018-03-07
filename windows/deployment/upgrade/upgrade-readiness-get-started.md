@@ -31,11 +31,11 @@ When you are ready to begin using Upgrade Readiness, perform the following steps
 
 ## Data collection and privacy 
 
-To enable system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what telemetry data Microsoft collects and how that data is used and protected by Microsoft, see the following topics:
+To enable system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what diagnostic data Microsoft collects and how that data is used and protected by Microsoft, see the following topics:
 
-- [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization)
+- [Configure Windows diagnostic data in your organization](/windows/configuration/configure-windows-diagnostic-data-in-your-organization)
 - [Manage connections from Windows operating system components to Microsoft services](/windows/configuration/manage-connections-from-windows-operating-system-components-to-microsoft-services)
-- [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)
+- [Windows 7, Windows 8, and Windows 8.1 appraiser diagnostic data events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)
 
 ## Add Upgrade Readiness to Operations Management Suite
 
@@ -56,7 +56,6 @@ If you are not using OMS:
     > If your organization does not have an Azure subscription, create a new one or select the default OMS Azure subscription from the list. Your workspace opens.
 
 5.  To add the Upgrade Readiness solution to your workspace, go to the **Solutions Gallery**. Select the **Upgrade Readiness** tile in the gallery and then select **Add** on the solution’s details page. The solution is now visible on your workspace. Note that you may need to scroll to find Upgrade Readiness.
-
 
 ### Copy your commercial ID key
 
@@ -84,13 +83,14 @@ To enable data sharing, whitelist the following endpoints. Note that you may nee
 |---------------------------------------------------------|-----------|
 | `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for Windows 10 computers. User computers send data to Microsoft through this endpoint.
 | `https://vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for operating systems older than Windows 10
-| `https://settings-win.data.microsoft.com` | Enables the compatibility update to send data to Microsoft. |
+| `https://settings-win.data.microsoft.com` | Enables the compatibility update to send data to Microsoft. 
+| `http://adl.windows.com` | Allows the compatibility update to receive the latest compatibility data from Microsoft. |
 
 Note: The compatibility update KB runs under the computer’s system account. 
 
 ### Connection settings
 
-The settings that are used to enable client computers to connect to Windows Telemetry depend on the type of connection scenario you use. These scenarios are discussed in [this blog post](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) and are summarized below.
+The settings that are used to enable client computers to connect to Windows diagnostic data depend on the type of connection scenario you use. These scenarios are discussed in [this blog post](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) and are summarized below.
 
 | **Connection scenario** | **ClientProxy setting** <BR>in **runconfig.bat**  | **Local computer configuration** |
 |---------------------------------------------------------|-----------|-----------|

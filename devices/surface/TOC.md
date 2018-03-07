@@ -1,5 +1,6 @@
 # [Surface](index.md)
 ## [Deploy Surface devices](deploy.md)
+### [Windows AutoPilot and Surface devices](windows-autopilot-and-surface-devices.md)
 ### [Surface device compatibility with Windows 10 Long-Term Servicing Branch](surface-device-compatibility-with-windows-10-ltsc.md)
 #### [Long-Term Servicing Branch for Surface devices](ltsb-for-surface.md)
 ### [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md)

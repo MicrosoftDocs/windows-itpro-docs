@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.date: 01/31/2018
 ---
 
 # Set up a kiosk on Windows 10 Pro, Enterprise, or Education
@@ -32,14 +32,21 @@ A single-use or *kiosk* device is easy to set up in Windows 10 for desktop edit
     
 - For a kiosk device to run a Classic Windows application, use [Shell Launcher](#shell-launcher) to set a custom user interface as the shell (Windows 10 Enterprise or Education only). 
 
-To return the device to the regular shell, see [Sign out of assigned access](#sign-out-of-assigned-access).
+>[!TIP]
+>To return the device to the regular shell, see [Sign out of assigned access](#sign-out-of-assigned-access).
 
 >[!NOTE]
 >A Universal Windows app is built on the Universal Windows Platform (UWP), which was first introduced in Windows 8 as the Windows Runtime. A Classic Windows application uses the Classic Windows Platform (CWP) (e.g., COM, Win32, WPF, WinForms, etc.) and is typically launched using an .EXE or .DLL file.
 
- 
+## Using a local device as a kiosk
 
+When your kiosk is a local device that is not managed by Active Directory or Azure Active Directory, there is a default setting that enables automatic sign-in after a restart. That means that when the device restarts, the last signed-in user will be signed in automatically. If the last signed-in user is the kiosk account, the kiosk app will be launched automatically after the device restarts.
 
+If you want the kiosk account signed in automatically and the kiosk app launched when the device restarts, there is nothing you need to do.
+
+If you do not want the kiosk account signed in automatically when the device restarts, you must change the default setting before you configure the device as a kiosk. Sign in with the account that you will assign as the kiosk account, go to **Settings** > **Accounts** > **Sign-in options**, and toggle the **Use my sign-in info to automatically finish setting up my device after an update or restart** setting to **Off**. After you change the setting, you can apply the kiosk configuration to the device.
+
+![Screenshot of automatic sign-in setting](images/auto-signin.png)
 
 <span id="wizard" />
 ## Set up a kiosk using Windows Configuration Designer
