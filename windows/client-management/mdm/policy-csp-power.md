@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/05/2018
 ---
 
 # Policy CSP - Power
@@ -101,14 +101,14 @@ If you disable this policy setting, standby states (S1-S3) are not allowed.
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Allow standby states (S1-S3) when sleeping (plugged in)*
 -   GP name: *AllowStandbyStatesAC_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -149,13 +149,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. Turn off the display (on battery). This policy setting allows you to specify the period of inactivity before Windows turns off the display.
+Added in Windows 10, version 1709. This policy setting allows you to specify the period of inactivity before Windows turns off the display.
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
 
 If you disable or do not configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
 > [!TIP]
@@ -165,14 +165,14 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Turn off the display (on battery)*
 -   GP name: *VideoPowerDownTimeOutDC_2*
 -   GP path: *System/Power Management/Video and Display Settings*
 -   GP ADMX file name: *power.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -213,13 +213,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. Turn off the display (plugged in). This policy setting allows you to specify the period of inactivity before Windows turns off the display.
+Added in Windows 10, version 1709. This policy setting allows you to specify the period of inactivity before Windows turns off the display.
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
 
 If you disable or do not configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
 > [!TIP]
@@ -229,14 +229,14 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Turn off the display (plugged in)*
 -   GP name: *VideoPowerDownTimeOutAC_2*
 -   GP path: *System/Power Management/Video and Display Settings*
 -   GP ADMX file name: *power.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -277,14 +277,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. Specify the system hibernate timeout (on battery). This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
+Added in Windows 10, version 1709. This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
 
 If you disable or do not configure this policy setting, users control this setting.
 
-
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
 > [!TIP]
@@ -294,14 +293,14 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify the system hibernate timeout (on battery)*
 -   GP name: *DCHibernateTimeOut_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -342,13 +341,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. Specify the system hibernate timeout (plugged in). This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
+Added in Windows 10, version 1709. This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
 
 If you disable or do not configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
 > [!TIP]
@@ -358,14 +357,14 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify the system hibernate timeout (plugged in)*
 -   GP name: *ACHibernateTimeOut_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -420,14 +419,14 @@ If you disable this policy setting, the user is not prompted for a password when
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Require a password when a computer wakes (on battery)*
 -   GP name: *DCPromptForPasswordOnResume_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -482,14 +481,14 @@ If you disable this policy setting, the user is not prompted for a password when
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Require a password when a computer wakes (plugged in)*
 -   GP name: *ACPromptForPasswordOnResume_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -530,13 +529,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. Specify the system sleep timeout (on battery). This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
+Added in Windows 10, version 1709. This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
 
 If you disable or do not configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
 > [!TIP]
@@ -546,14 +545,14 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify the system sleep timeout (on battery)*
 -   GP name: *DCStandbyTimeOut_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -594,13 +593,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. Specify the system sleep timeout (plugged in). This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
+Added in Windows 10, version 1709. This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
 
 If you disable or do not configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
 > [!TIP]
@@ -610,14 +609,14 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify the system sleep timeout (plugged in)*
 -   GP name: *ACStandbyTimeOut_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
 
