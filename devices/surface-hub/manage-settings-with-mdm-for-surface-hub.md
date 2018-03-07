@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub, mobility
 author: jdeckerms
 ms.author: jdecker
-ms.date: 02/16/2018
+ms.date: 03/07/2018
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +23,6 @@ Surface Hub has been validated with Microsoft’s first-party MDM providers:
 - Microsoft Intune standalone
 
 You can also manage Surface Hubs using any third-party MDM provider that can communicate with Windows 10 using the MDM protocol.
-
->[!NOTE]
->[Azure Active Directory conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access) is not currently available for Surface Hub devices.
 
 ## <a href="" id="enroll-into-mdm"></a>Enroll a Surface Hub into MDM
 You can enroll your Surface Hubs using bulk or manual enrollment.
