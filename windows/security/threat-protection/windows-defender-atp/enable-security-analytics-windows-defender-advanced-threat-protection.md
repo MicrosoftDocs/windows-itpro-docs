@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 03/05/2018
+ms.date: 04/16/2018
 ---
 
 # Enable Security Analytics security controls
