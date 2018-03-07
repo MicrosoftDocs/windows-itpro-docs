@@ -15,23 +15,6 @@ Due to increased simplicity and the ease with which devices can be targeted, ent
 
 Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy configuration support will be expanded to allow access of select Group Policy administrative templates (ADMX-backed policies) for Windows PCs via the Policy configuration service provider (CSP). This expanded access ensures that enterprises do not need to compromise security of their devices in the cloud.
 
-## In this section
-
--   [Background](#background)
--   [ADMX files and the Group Policy Editor](#admx-files-and-the-group-policy-editor)
--   [ADMX-backed policy examples](#admx-backed-policy-examples)
-    - [Enabling a policy](#enabling-a-policy)
-    - [Disabling a policy](#disabling-a-policy)
-    - [Setting a policy to not configured](#setting-a-policy-to-not-configured)
--   [Sample SyncML for various ADMX elements](#sample-syncml-for-various-admx-elements)
-    - [Text Element](#text-element)
-    - [MultiText Element](#multitext-element)
-    - [List Element (and its variations)](#list-element)
-    - [No Elements](#no-elements)
-    - [Enum](#enum)
-    - [Decimal Element](#decimal-element)
-    - [Boolean Element](#boolean-element)
-
 ## <a href="" id="background"></a>Background
 
 In addition to standard policies, the Policy CSP can now also handle ADMX-backed policies. In an ADMX-backed policy, an administrative template contains the metadata of a Window Group Policy and can be edited in the Local Group Policy Editor on a PC. Each administrative template specifies the registry keys (and their values) that are associated with a Group Policy and defines the policy settings that can be managed. Administrative templates organize Group Policies in a hierarchy in which each segment in the hierarchical path is defined as a category. Each setting in a Group Policy administrative template corresponds to a specific registry value. These Group Policy settings are defined in a standards-based, XML file format known as an ADMX file. For more information, see [Group Policy ADMX Syntax Reference Guide](https://technet.microsoft.com/en-us/library/cc753471(v=ws.10).aspx). 
@@ -47,13 +30,15 @@ An ADMX file can either be shipped with Windows (located at `%SystemRoot%\policy
 
 Windows maps the name and category path of a Group Policy to a MDM policy area and policy name by parsing the associated ADMX file, finding the specified Group Policy, and storing the definition (metadata) in the MDM Policy CSP client store. When the MDM policy is referenced by a SyncML command and the Policy CSP URI, `.\[device|user]\vendor\msft\policy\[config|result]\<area>\<policy>`, this metadata is referenced and determines which registry keys are set or removed. For a list of ADMX-backed policies supported by MDM, see [Policy CSP - ADMX-backed policies](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies).
 
+## Video walkthrough
+
 Here is a video of how to create a custom xml to enable an ADMX-backed policy and deploy the XML in Intune.
 
-<iframe width="560" height="315" src="https://www.microsoft.com/showcase/video.aspx?uuid=bdc9b54b-11b0-4bdb-a022-c339d16e7121" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.microsoft.com/showcase/video.aspx?uuid=bdc9b54b-11b0-4bdb-a022-c339d16e7121]
 
 Here is a video of how to import a custom ADMX file to a device using Intune.
 
-<iframe width="560" height="315" src="https://www.microsoft.com/showcase/video.aspx?uuid=a59888b1-429f-4a49-8570-c39a143d9a73" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.microsoft.com/showcase/video.aspx?uuid=a59888b1-429f-4a49-8570-c39a143d9a73]
 
 ## <a href="" id="admx-files-and-the-group-policy-editor"></a>ADMX files and the Group Policy Editor
 

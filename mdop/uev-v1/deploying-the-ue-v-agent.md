@@ -82,7 +82,8 @@ The Microsoft User Experience Virtualization (UE-V) agent must run on each compu
 <td align="left"><p>CEIPEnabled</p></td>
 <td align="left"><p>Specifies the setting for participation in the Customer Experience Improvement program. If set to true, then installer information is uploaded to the Microsoft Customer Experience Improvement Program site. If set to false, then no information is uploaded.</p></td>
 <td align="left"><p>True | False</p>
-<p><strong>Default</strong>: False</p></td>
+<p><strong>Default</strong>: False</p>
+<p><strong>On Windows 7</strong>: True</p></td>
 </tr>
 </tbody>
 </table>
