@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/05/2018
 ---
 
 # Policy CSP - DeviceLock
@@ -1020,6 +1020,12 @@ The minimum password age must be less than the Maximum password age, unless the 
 Configure the minimum password age to be more than 0 if you want Enforce password history to be effective. Without a minimum password age, users can cycle through passwords repeatedly until they get to an old favorite. The default setting does not follow this recommendation, so that an administrator can specify a password for a user and then require the user to change the administrator-defined password when the user logs on. If the password history is set to 0, the user does not have to choose a new password. For this reason, Enforce password history is set to 1 by default.
 
 <!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *Minimum password age*
+-   GP path: *Windows Settings/Security Settings/Account Policies/Password Policy*
+
+<!--/DbMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1074,14 +1080,14 @@ If you enable this setting, users will no longer be able to modify slide show se
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Prevent enabling lock screen slide show*
 -   GP name: *CPL_Personalization_NoLockScreenSlideshow*
 -   GP path: *Control Panel/Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>

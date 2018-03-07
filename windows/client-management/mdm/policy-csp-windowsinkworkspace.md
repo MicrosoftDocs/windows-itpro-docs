@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/05/2018
 ---
 
 # Policy CSP - WindowsInkWorkspace
@@ -69,6 +69,14 @@ ms.date: 01/30/2018
 Added in Windows 10, version 1607. Show recommended app suggestions in the ink workspace.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow suggested apps in Windows Ink Workspace*
+-   GP name: *AllowSuggestedAppsInWindowsInkWorkspace*
+-   GP path: *Windows Components/Windows Ink Workspace*
+-   GP ADMX file name: *WindowsInkWorkspace.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -119,6 +127,15 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. Specifies whether to allow the user to access the ink workspace.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Windows Ink Workspace*
+-   GP name: *AllowWindowsInkWorkspace*
+-   GP element: *AllowWindowsInkWorkspaceDropdown*
+-   GP path: *Windows Components/Windows Ink Workspace*
+-   GP ADMX file name: *WindowsInkWorkspace.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 Value type is int. The following list shows the supported values:
 

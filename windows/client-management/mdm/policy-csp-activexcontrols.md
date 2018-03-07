@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/05/2018
 ---
 
 # Policy CSP - ActiveXControls
@@ -63,11 +63,11 @@ ms.date: 01/30/2018
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines which ActiveX installation sites standard users in your organization can use to install ActiveX controls on their computers. When this setting is enabled, the administrator can create a list of approved Activex Install sites specified by host URL.
+This policy setting determines which ActiveX installation sites standard users in your organization can use to install ActiveX controls on their computers. When this setting is enabled, the administrator can create a list of approved Activex Install sites specified by host URL. 
 
-If you enable this setting, the administrator can create a list of approved ActiveX Install sites specified by host URL.
+If you enable this setting, the administrator can create a list of approved ActiveX Install sites specified by host URL. 
 
-If you disable or do not configure this policy setting, ActiveX controls prompt the user for administrative credentials before installation.
+If you disable or do not configure this policy setting, ActiveX controls prompt the user for administrative credentials before installation. 
 
 Note: Wild card characters cannot be used when specifying the host URLs.
 
@@ -79,14 +79,14 @@ Note: Wild card characters cannot be used when specifying the host URLs.
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Approved Installation Sites for ActiveX Controls*
 -   GP name: *ApprovedActiveXInstallSites*
 -   GP path: *Windows Components/ActiveX Installer Service*
 -   GP ADMX file name: *ActiveXInstallService.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
 

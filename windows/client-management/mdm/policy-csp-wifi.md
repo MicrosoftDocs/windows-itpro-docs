@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/05/2018
 ---
 
 # Policy CSP - Wifi
@@ -97,6 +97,14 @@ Allow or disallow the device to automatically connect to Wi-Fi hotspots.
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Windows to automatically connect to suggested open hotspots, to networks shared by contacts, and to hotspots offering paid services*
+-   GP name: *WiFiSense*
+-   GP path: *Network/WLAN Service/WLAN Settings*
+-   GP ADMX file name: *wlansvc.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -149,6 +157,14 @@ Allow or disallow internet sharing.
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Prohibit use of Internet Connection Sharing on your DNS domain network*
+-   GP name: *NC_ShowSharedAccessUI*
+-   GP path: *Network/Network Connections*
+-   GP ADMX file name: *NetworkConnections.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
