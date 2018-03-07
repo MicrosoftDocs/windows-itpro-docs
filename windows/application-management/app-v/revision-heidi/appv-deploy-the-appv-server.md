@@ -35,7 +35,7 @@ ms.date: 04/19/2017
 5. On the **Feature Selection** page, select all components listed in the following table.
 
     | Component | Description |
-    | - | - |
+    |---|---|
     | Management server | Provides overall management functionality for the App-V infrastructure. |
     | Management database | Facilitates database predeployments for App-V management. |
     | Publishing server | Provides hosting and streaming functionality for virtual applications. |
@@ -45,7 +45,7 @@ ms.date: 04/19/2017
 7. On the initial **Create New Management Database** page, configure the **Microsoft SQL Server instance** and **Management Server database** by selecting the appropriate option below.
 
     | Method | What you need to do |
-    | - | - |
+    |---|---|
     | You are using a custom Microsoft SQL Server instance. | Select **Use the custom instance**, then specify the instance name.<br/>Use the format **INSTANCENAME**. The assumed installation location is the local computer.<br/>Not supported: A server name using the format **ServerName**\\**INSTANCE**.|
     | You are using a custom database name. | Select **Custom configuration** and type the database name.<br/>The database name must be unique, or the installation will fail.|
 8. On the **Configure** page, accept the default value, **Use this local computer**.
@@ -55,7 +55,7 @@ ms.date: 04/19/2017
 9. On the initial **Create New Reporting Database** page, configure the **Microsoft SQL Server instance** and **Reporting Server database** by selecting the appropriate option below.
 
     | Method | What you need to do |
-    | - | - |
+    |---|---|
     | You are using a custom Microsoft SQL Server instance. | Select **Use the custom instance**, and type the name of the instance.<br/>Use the format **INSTANCENAME**. The assumed installation location is the local computer.<br/>Not supported: A server name using the format **ServerName**\\**INSTANCE**.|
     | You are using a custom database name. | Select **Custom configuration** and type the database name.<br/>The database name must be unique, or the installation will fail.|
 10. On the **Configure** page, accept the default value: **Use this local computer**.
@@ -65,21 +65,21 @@ ms.date: 04/19/2017
 11. On the **Configure** (Management Server Configuration) page, specify the following:
 
     |  Item to configure | Description and examples |
-    | - | - |
+    |---|---|
     | Specify AD group | Specify the AD group with sufficient permissions to manage the App-V environment. Example: MyDomain\MyUser<br><br/>After installation, you can add users or groups on the management console. However, global security groups and Active Directory Domain Services (AD DS) distribution groups are not supported. You must use <strong>Domain local</strong> or <strong>Universal</strong> groups to perform this action.|
     |Website name | Specify the custom name that will be used to run the publishing service.<br>If you do not have a custom name, you don't have to change it.|
     |Port binding | Specify a unique port number that will be used by App-V. Example: **12345**<br>Ensure that the port specified is not being used by another website. |
 12. On the **Configure Publishing Server Configuration** page, specify the following:
 
     | Item to configure | Description and examples |
-    | - | - |
+    |---|---|
     | Specify the management service URL | Example: http://localhost:12345 |
     | Website name | Specify the custom website name that will be used to run the publishing service. <br>If you do not have a custom name, do not make any changes. |
     | Port binding | Specify a unique port number that will be used by App-V. Example: 54321<br>Ensure that the port specified is not being used by another website. |
 13. On the **Reporting Server** page, specify the following:
 
     | Item to configure | Description and examples |
-    | - | - |
+    |---|---|
     | Website name | Specify the custom name that will be used to run the Reporting Service.  <br>If you do not have a custom name, do not make any changes. |
     | Port binding | Specify a unique port number that will be used by App-V. Example: 55555<br/>Ensure that the port specified is not being used by another website.|
 14. To start the installation, click **Install** on the **Ready** page, and then click **Close** on the **Finished** page.
@@ -88,12 +88,6 @@ ms.date: 04/19/2017
     ```http://<Management server machine name>:<Management service port number>/console.html```
 
     Example: ```http://localhost:12345/console.html```. If the installation succeeded, the App-V Management console will display with no errors.
-
-## Have a suggestion for App-V?
-
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
-
-For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

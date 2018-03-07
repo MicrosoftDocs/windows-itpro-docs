@@ -185,6 +185,10 @@ Ignoring scaling requirements, the minimum number of servers that a fault-tolera
 
 Although there are many fault-tolerance strategies and technologies you can use, not all are applicable to a given service. Additionally, if App-V roles are combined, the resulting incompatabilities could cause certain fault-tolerance options to stop working.
 
+## Have a suggestion for App-V?
+
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+
 ## Related topics
 
 [App-V supported configurations](appv-supported-configurations.md)
