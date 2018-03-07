@@ -1,6 +1,6 @@
 ---
 title: Set up HoloLens in kiosk mode (HoloLens)
-description: Kiosk mode limits the user's ability to launch new apps or change the running app. 
+description: Use a kiosk configuration to lock down the apps on HoloLens. 
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: hololens, devices
@@ -12,9 +12,35 @@ ms.date: 07/27/2017
 
 # Set up HoloLens in kiosk mode
 
+In Windows 10, version 1803, you can configure your HoloLens devices to run as multi-app or single-app kiosks.
+
+When HoloLens is configured as a multi-app kiosk, only the allowed apps are available to the user. The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access. 
+
+Single-app kiosk mode starts the specified app when the user signs in, and restricts the user's ability to launch new apps or change the running app. When single-app kiosk mode is enabled for HoloLens, the bloom gesture and Cortana are disabled, and placed apps aren't shown in the user's surroundings. 
+
+>[!WARNING]
+>The assigned access feature which enables kiosk mode is intended for corporate-owned fixed-purpose devices. When the multi-app assigned access configuration is applied on the device, certain policies are enforced system-wide, and will impact other users on the device. Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all [the enforced policies](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#policies-set-by-multi-app-kiosk-configuration). A factory reset is needed to clear all the policies enforced via assigned access.
+
+For HoloLens devices running Windows 10, version 1803, there are three methods that you can use to configure the device as a kiosk:
+- You can [use Microsoft Intune](#intune-kiosk), for HoloLens devices managed by Intune, to configure single-app and multi-app kiosks.
+- You can [use a provisioning package](#ppkg-kiosk) to configure single-app and multi-app kiosks.
+- You can [use the Windows Device Portal](#portal-kiosk) to configure single-app kiosks.
+
+For HoloLens devices running Windows 10, version 1607, you can [use the Windows Device Portal](#portal-kiosk) to configure single-app kiosks.
+
+<span id="intune-kiosk"/>
+## Set up kiosk mode using Microsoft Intune (Windows 10, version 1803)
 
 
-Kiosk mode limits the user's ability to launch new apps or change the running app. When kiosk mode is enabled for HoloLens, the bloom gesture and Cortana are disabled, and placed apps aren't shown in the user's surroundings.
+
+<span id="ppkg-kiosk"/>
+## Setup kiosk mode using a provisioning package (Windows 10, version 1803)
+
+
+
+
+<span id="portal-kiosk"/>
+## Set up kiosk mode using the Windows Device Portal (Windows 10, version 1607 and version 1803) 
 
 1. [Set up the HoloLens to use the Windows Device Portal](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal). The Device Portal is a web server on your HoloLens that you can connect to from a web browser on your PC. 
 
