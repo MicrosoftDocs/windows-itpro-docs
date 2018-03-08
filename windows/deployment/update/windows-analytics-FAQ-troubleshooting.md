@@ -13,34 +13,31 @@ ms.date: 03/07/2018
 
 # Frequently asked questions and troubleshooting Windows Analytics
 
+This topic compiles the most common issues encountered with configuring and using Windows Analytics, as well as general questions.
+
 ## Troubleshooting common problems
 
-### Devices Not Showing Up
+If you've followed the steps in the [Windows Analytics](windows-analytics-get-started.md) topic and are still encountering problems, you might find the solution here.
 
-In Log Analytics, go to the settings/connected sources/windows telemetry and verify that you are subscribed to the Windows Analytics solutions you intend to use.
+Devices not showing up(#Devices not showing up)
 
-Even though devices can take a 2-3 days after enrolled to show up due to latency in the system, you can now check out the status of your devices with a few hours of running the deployment script as described in https://blogs.technet.microsoft.com/upgradeanalytics/2017/05/12/wheres-my-data/. If you see an error message in the report saying "Sorry! We’re not recognizing your Commercial Id.", try unsubscribing and then re-subscribing to Upgrade Readiness from the OMS settings/connected sources/windows telemetry page.
+### Devices not showing up
 
-If devices are not showing up as expected, find a representative device and rerun the latest Upgrade Readiness deployment script (TODO - merge topic form here - but clarify the last step of "contact support" should only be done if all other tshooting steps in this topic don't work). Some additional notes to fold in:
-	• In the collected logs, the file name with a GUID has clear text that can be read to uncover common issues, so it's worth looking through this for "self-help" before opening a support ticket.
-	• Troubleshooting network proxy issues is one of the trickiest things to pin down since it's a common trap that can't be determined purely from the device. See https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/.
+In Log Analytics, go to **Settings > Connected sources > Windows telemetry** and verify that you are subscribed to the Windows Analytics solutions you intend to use.
 
+Even though devices can take 2-3 days after enrollment to show up due to latency in the system, you can now verify the status of your devices with a few hours of running the deployment script as described in [You can now check on the status of your computers within hours of running the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/05/12/wheres-my-data/) on the Windows Analytics blog.
+ 
+If devices are not showing up as expected, find a representative device and rerun the latest Upgrade Readiness deployment script (TODO - merge topic form here - but clarify the last step of "contact support" should only be done if all other tshooting steps in this topic don't work). [MERGE WHAT EXACTLY FROM WHERE?]
 
-
-### Upgrade Readiness reports outdated updates
-Currently, updates are not automatically updated by Microsoft Update, so new versions need to be downloaded from the Microsoft Update catalog and distributed via your management tool of choice. Note that the compatibility update retains the same KB number when it is updated, so even if the update is installed on your devices, *they might not be running the latest version*.
-
-
-### Upgrade Readiness reports incomplete inventory
-Download the latest deployment script and run it on an affected device to check for issues. If this becomes a recurring issue, schedule a full inventory scan monthly, as per the device enrollment guidelines for deployment at scale.
-
+- In the collected logs, the filename with a GUID has clear text that can be read to uncover common issues, so it's worth checking these logs prior to opening a support ticket.
+- If you think the issue might be related a network proxy, check the endpoint connectivity[INTERNAL LINK]. Also see [Understanding connectivity scenarios and the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog. [WHY IS THAT BLOG POST LISTING DIFFERENT ENDPOINTS THAN WE ARE DOCUMENTING?]
 
 ### Device Health data not appearing
 
 #### Is WER disabled?
 If Windows Error Reporting (WER) is disabled or redirected on your Windows devices, then reliability information cannot be shown in Device Health.
 
-Check these r settings in **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Windows Error Reporting**:
+Check these registry settings in **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Windows Error Reporting**:
 
 - Verify that the value "Disabled" (REG_DWORD), if set, is 0.
 - Verify that the value "DontSendAdditionalData" (REG_DWORD), if set, is 0.
@@ -109,6 +106,16 @@ Get-Content $outputFileFullPath
 
 As in the other example, if this is successful, `TcpTestSucceeded` should return `True` for each of the endpoints.
 
+### Upgrade Readiness reports outdated updates
+Currently, updates are not automatically updated by Microsoft Update, so new versions need to be downloaded from the Microsoft Update catalog and distributed via your management tool of choice. Note that the compatibility update retains the same KB number when it is updated, so even if the update is installed on your devices, *they might not be running the latest version*.
+
+
+### Upgrade Readiness reports incomplete inventory
+Download the latest deployment script and run it on an affected device to check for issues. If this becomes a recurring issue, schedule a full inventory scan monthly, as per the device enrollment guidelines for deployment at scale.
+
+
+
+
 
 ### Upgrade Readiness doesn't show app inventory data on some devices
 Upgrade Readiness only collects app inventory on devices that are not yet upgraded to the target operating system version specified in the Upgrade Readiness Overview blade. This is because Upgrade Readiness targets upgrade planning (for devices not yet upgraded).
@@ -124,7 +131,16 @@ Finally, Upgrade Readiness only collects IE site discovery data on devices that 
 ## Other common questions
 
 ### What are the requirements and costs for Windows Analytics solutions?
-[TBA]
+| Windows Analytics solution| Windows license requirements | Windows version requirements | Diagnostic data requirements |
+|----------------------|-----------------------------------|------------------------------|------------------------------|
+| Upgrade Readiness | [??? EDITION?]  |  Windows 7 with Service Pack 1, Windows 8, Windows 10 | Basic level in most cases; Enhanced level to support Windows 10 app usage data and IE site discovery |
+|  Update Compliance | [??? EDITION?] | Windows 10 | Basic level in most cases; Enhanced level to support Windows Defender AV data if using [1607 pre-Oct-EXACTLY WHAT RELEASE IS THIS?]. |
+| Device Health  | [??? EDITION?]  |  E3 or [EXACTLY WHICH E LICENSES?] | Windows 10 | Enhanced level |
+
+>[!NOTE]
+> Regarding licensing requirements for Device Health, you do not need per-seat licensing, but only enough licenses to cover your total device usage. For example, if you have 100 E3 licenses, you can monitor 100 devices with Device Health.
+
+Beyond the cost of Windows operating system licenses, there is no additional cost for using Windows Analytics. In Azure Log Analytics, Windows Analytics is "zero-rated;" this means it is excluded from data limits and costs regardless of the Azure Log Analytics pricing tier you have chosen.
 
 ### How does Windows Analytics support privacy?
 
