@@ -1,6 +1,6 @@
 ---
-title: Get started with Windows Analytics (Windows 10)
-description: Configure Windows Analytics in OMS to enable use of Update Compliance, Upgrade Readiness, and Device Health.
+title: Enrolling devices in Windows Analytics (Windows 10)
+description: Enroll devices to enable use of Update Compliance, Upgrade Readiness, and Device Health in Windows Analytics.
 keywords: windows analytics, oms, operations management suite, prerequisites, requirements, updates, upgrades, log analytics, health
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -8,36 +8,50 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 03/06/2018
+ms.date: 03/08/2018
 ---
 
-# Get started with Windows Analytics
+# Enrolling devices in Windows Analytics
 
-The three Windows Analytics solutions (Update Compliance, Upgrade Readiness, and Device Health) have common prerequisites and configuration steps.
+If you have not already done so, consult the topics for any of the three Windows Analytics solutions (Update Compliance, Upgrade Readiness, and Device Health) you intend to use and follow the steps there to add the solutions to Microsoft Operations Management Suite.
 
->[!NOTE]
->The steps in this topic are common to all of the Windwos Analytics solutions, but each of the individual solutions might require a few further steps to fully configure. Consult the topics for each solution you intend to use in addition to this topic.
+- [Get started with Device Health](device-health-get-started.md)
+- [Get started with Update Compliance](update-compliance-get-started.md)
+- [Get started with Upgrade Readiness](../upgrade/upgrade-readiness-get-started.md)
 
-## Prerequisites
-[DO WE HAVE WA PREREQUISITES TO LIST HERE?]
+If you've already done that, you're ready to enroll your devices in Windows Analytics by following these steps:
+
 
 ## Deploy your Commercial ID to your Windows 10 devices and enable data sharing
 
 In order for your devices to show up in Windows Analytics, they must be configured with your organization’s Commercial ID. This is so that Microsoft knows that a given device is a member of your organization and to feed that device’s data back to you. You can use either Group Policy or Mobile Device Management (MDM) to deploy your Commercial ID. 
 
-### Copy your commercial ID key
+### Copy your Commercial ID key
 
-Microsoft uses a unique commercial ID to map information from user computers to your OMS workspace. This should be generated for you automatically. Copy your commercial ID key in OMS and then deploy it to user computers.
+Microsoft uses a unique commercial ID to map information from user computers to your OMS workspace. This should be generated for you automatically. Copy your commercial ID key in OMS and then deploy it to user computers. 
 
 
 
-1.  On the **Settings** dashboard, navigate to the **Windows telemetry** panel.
+1.  On the **Settings** dashboard, navigate to the **Windows Telemetry** panel under **Connected Sources** .
 
-    ![Operations Management Suite dialog showing settings icon (a gear) in the title bar indicated by a red box.](../images/upgrade-analytics-settings.png)
+    ![Operations Management Suite Settings dialog showing Connected sources and Windows telemetry selected and the commercial ID location marked by a black box in the lower right.](images/WA-device-enrollment.png)
 
-2. On the **Connected Sources** tab, navigate to the Windows telemetry panel.
+2. Copy your Commercial ID (which should already be populated).
 
-    >**Important**<br> Regenerate a commercial ID key only if your original ID key can no longer be used. Regenerating a commercial ID key resets the data in your workspace for all solutions that use the ID. Additionally, you’ll need to deploy the new commercial ID key to user computers again.
+    >**Important**<br> Regenerate a Commercial ID key only if your original ID key can no longer be used. Regenerating a commercial ID key resets the data in your workspace for all solutions that use the ID. Additionally, you’ll need to deploy the new commercial ID key to user computers again.
+
+### Deploy your Commercial ID to your Windows 10 devices and set the diagnostic data level
+
+There are two primary methods for widespread deployment of your Commercial ID: Group Policy and Mobile Device Management (MDM). 
+
+- Using Group Policy<BR><BR>
+    Deploying your Commercial ID using Group Policy can be accomplished by configuring domain Group Policy Objects with the Group Policy Management Editor, or by configuring local Group Policy using the Local Group Policy Editor.
+    1. In the console tree, navigate to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds**
+    2. Double-click **Configure the Commercial ID**
+    3. In the **Options** box, under **Commercial Id**, type the Commercial ID GUID, and then click **OK**.<P>
+
+- Using Microsoft Mobile Device Management (MDM)<BR><BR>
+Microsoft’s Mobile Device Management can be used to deploy your Commercial ID to your organization’s devices. The Commercial ID is listed under **Provider/ProviderID/CommercialID**. You can find more information on deployment using MDM at the [DMClient Configuration Service Provider topic](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dmclient-csp).  
 
 
 
@@ -51,15 +65,12 @@ To enable data sharing, configure your proxy sever to whitelist the following en
 | `https://vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for operating systems older than Windows 10
 | `https://settings-win.data.microsoft.com` | Enables the compatibility update to send data to Microsoft. 
 | `http://adl.windows.com` | Allows the compatibility update to receive the latest compatibility data from Microsoft. |
-| `https://v10.events.data.microsoft.com` | New telemetry endpoint for Windows 10, version 1803|
+| `https://v10.events.data.microsoft.com` | New diagnostic data endpoint for Windows 10, version 1803|
 | `https://watson.telemetry.microsoft.com` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports. Not used by Upgrade Readiness. |
 | `https://oca.telemetry.microsoft.com`  | Online Crash Analysis; required for Device Health and Update Compliance AV reports. Not used by Upgrade Readiness. |
 
->[!IMPORTANT]  
-> If your deployment includes devices running Windows 10 versions prior to Windows 10, version 1703, you must **exclude** *authentication* for these endpoints. Windows Error Reporting did not support authenticating proxies until Windows 10, version 1703. See the **Configuring endpoint access with proxy servers** section for options.
 
->[!NOTE] 
->The compatibility update runs under the device's system account.
+
 
 #### Configuring endpoint access with proxy servers
 If your organization uses proxy server authentication for outbound traffic, use one or more of the following approaches to ensure that the diagnostic data is not blocked by proxy authentication:
@@ -68,65 +79,7 @@ If your organization uses proxy server authentication for outbound traffic, use 
 - **User proxy authentication:** Alternatively, you can configure devices on the user side. First, update the devices to Windows 10, version 1703 or later. Then, ensure that users of the devices have proxy permission to reach the diagnostic data endpoints. This requires that the devices have console users with proxy permissions, so you couldn't use this method with headless devices.
 - **Device proxy authentication:** Another option--the most complex--is as follows: First, configure a system level proxy server on the devices. Then, configure these devices to use machine-account-based outbound proxy authentication. Finally, configure proxy servers to allow the machine accounts access to the diagnostic data endpoints. 
 
-### Test data sharing
-Devices must be able to reach the endpoints specified in the "Enable data sharing" section of this topic, so it's worth taking some time now to verify that they are reachable.
 
-Prior to Windows 10, version 1703, WER uploads error reports in the machine context. Both user (typically authenticated) and machine (typically anonymous) contexts require access through proxy servers to the diagnostic endpoints. In Windows 10, version 1703, and later WER will attempt to use the context of the user that is logged on for proxy authentication such that only the user account requires proxy access.
-
-Therefore, it's important to ensure that both machine and user accounts have access to the endpoints using authentication (or to whitelist the endpoints so that outbound proxy authentication is not required).
-
-To test access as a given user, you can run this Windows PowerShell cmdlet *while logged on as that user*: 
-
-```powershell
-
-$endPoints = @(
-        'v10.vortex-win.data.microsoft.com'
-        'vortex-win.data.microsoft.com'
-        'settings-win.data.microsoft.com'
-        'adl.windows.com'
-        'watson.telemetry.microsoft.com'
-        'oca.telemetry.microsoft.com'
-        'v10.events.data.microsoft.com'
-    )
-
-$endPoints | %{ Test-NetConnection -ComputerName $_ -Port 443 -ErrorAction Continue } | Select-Object -Property ComputerName,TcpTestSucceeded
-
-```
-
-If this is successful, `TcpTestSucceeded` should return `True` for each of the endpoints.
-
-To test access in the machine context (requires administrative rights), run the above as SYSTEM using PSexec or Task Scheduler, as in this example:
-
-```powershell
-
-[scriptblock]$accessTest = {
-    $endPoints = @(
-        'v10.vortex-win.data.microsoft.com'
-        'vortex-win.data.microsoft.com'
-        'settings-win.data.microsoft.com'
-        'adl.windows.com'
-        'watson.telemetry.microsoft.com'
-        'oca.telemetry.microsoft.com'
-        'v10.events.data.microsoft.com'
-    )
-
-    $endPoints | %{ Test-NetConnection -ComputerName $_ -Port 443 -ErrorAction Continue } | Select-Object -Property ComputerName,TcpTestSucceeded
-}
-
-$scriptFullPath = Join-Path $env:ProgramData "TestAccessToMicrosoftEndpoints.ps1"
-$outputFileFullPath = Join-Path $env:ProgramData "TestAccessToMicrosoftEndpoints_Output.txt"
-$accessTest.ToString() > $scriptFullPath
-$null > $outputFileFullPath
-$taskAction = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument "-ExecutionPolicy Bypass -Command `"&{$scriptFullPath > $outputFileFullPath}`"" 
-$taskTrigger = New-ScheduledTaskTrigger -Once -At (Get-Date).Addseconds(10)
-$task = Register-ScheduledTask -User 'NT AUTHORITY\SYSTEM' -TaskName 'MicrosoftTelemetryAccessTest' -Trigger $taskTrigger -Action $taskAction -Force
-Start-Sleep -Seconds 120
-Unregister-ScheduledTask -TaskName $task.TaskName -Confirm:$false
-Get-Content $outputFileFullPath
-
-```
-
-As in the other example, if this is successful, `TcpTestSucceeded` should return `True` for each of the endpoints.
 
 
 ## Deploy the compatibility update and related updates
@@ -140,7 +93,10 @@ The compatibility update scans your devices and enables application usage tracki
 | Windows 7 SP1        | [KB2952664](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2952664) <br>Performs diagnostics on the Windows 7 SP1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2952664><br><BR>[KB 3150513](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=3150513)<br>Provides updated configuration and definitions for compatibility diagnostics performed on the system.<br>For more information about this update, see <https://support.microsoft.com/kb/3150513><br>**NOTE:** KB2952664 must be installed before you can download and install KB3150513. |
 
 >[!IMPORTANT] 
->Restart computers after you install the compatibility updates for the first time.
+>Restart devices after you install the compatibility updates for the first time.
+
+>[!NOTE] 
+>The compatibility update runs under the device's system account.
 
 If you are planning to enable IE Site Discovery in Upgrade Readiness, you will need to install a few additional updates.
 
@@ -152,7 +108,7 @@ If you are planning to enable IE Site Discovery in Upgrade Readiness, you will n
 
 You can use the Upgrade Readiness deployment script to automate and verify your deployment. We always recommend manually running this script on a few representative devices to verify things are properly configured and the device can connect to the diagnostic data endpoints. Make sure to run the pilot version of the script, which will provide extra diagnostics.
 
-See the [Upgrade Readiness deployment script](../upgrade/upgrade-readiness-deployment-script.md) topic for information about obtaining and running the script, and for a description of the error codes that can be displayed. See ["Understanding connectivity scenarios and the deployment script"](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog for a summary of setting the ClientProxy for the script to, which will enable the script properly check for telemetry endpoint connectivity.
+See the [Upgrade Readiness deployment script](../upgrade/upgrade-readiness-deployment-script.md) topic for information about obtaining and running the script, and for a description of the error codes that can be displayed. See ["Understanding connectivity scenarios and the deployment script"](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog for a summary of setting the ClientProxy for the script, which will enable the script properly check for diagnostic data endpoint connectivity.
 
 After data is sent from devices to Microsoft, it generally takes 48-56 hours for the data to populate in the Upgrade Readiness solution. The compatibility update takes several minutes to run. If the update does not get a chance to finish running or if the computers are inaccessible (turned off or sleeping for example), data will take longer to populate in Upgrade Readiness. For this reason, you can expect most of your devices to be populated in Windows Analytics in about 1-2 weeks after deploying the update and configuration to user computers. As described in the Windows Analytics blog post ["You can now check on the status of your computers within hours of running the deployment script"](https://blogs.technet.microsoft.com/upgradeanalytics/2017/05/12/wheres-my-data/), you can verify that devices have successfully connected to the service within a few hours. Most of those devices should start to show up in the Windows Analytics console within a few days.
 
