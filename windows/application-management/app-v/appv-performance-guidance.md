@@ -13,7 +13,10 @@ ms.date: 04/19/2017
 # Performance Guidance for Application Virtualization
 
 **Applies to**
--   Windows 10, version 1607
+-   Windows 7 SP1
+-   Windows 10 
+-   Server 2012 R2
+-   Server 2016
 
 Learn how to configure App-V for optimal performance, optimize virtual app packages, and provide a better user experience with RDS and VDI.
 
