@@ -1,6 +1,6 @@
 ---
 title: Manage updates to HoloLens (HoloLens)
-description: 
+description: Administrators can use mobile device management to manage updates to HoloLens devices.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: hololens, devices
@@ -12,7 +12,19 @@ ms.date: 04/01/2018
 
 # Manage updates to HoloLens
 
-Windows 10, version 1803, is the first feature update to Windows Holographic for Business since its release in Windows 10, version 1607. 
+Windows 10, version 1803, is the first feature update to Windows Holographic for Business since its release in Windows 10, version 1607. As with desktop devices, administrators can manage updates to the HoloLens operating system using [Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb).
+
+## Use MDM policies to manage updates
+
+mobile device management (MDM)
+
+## Use Windows Server Update Service to update HoloLens
+
+Windows Server Update Service (WSUS)
+
+## sandbox
+
+For HoloLens, customers would configure update deferral settings in a general config policy and create a custom profile to point them to the WSUS server.
 
 WSUS is not directly supported by Intune since Intune is pushing WUFB. You would need to go to the Custom OMA-DM URI route to set those unsupported policies as @Alvin Chardon descirbes below. 
 

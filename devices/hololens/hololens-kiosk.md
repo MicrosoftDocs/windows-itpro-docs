@@ -24,7 +24,7 @@ Single-app kiosk mode starts the specified app when the user signs in, and restr
 >The assigned access feature which enables kiosk mode is intended for corporate-owned fixed-purpose devices. When the multi-app assigned access configuration is applied on the device, certain policies are enforced system-wide, and will impact other users on the device. Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all [the enforced policies](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#policies-set-by-multi-app-kiosk-configuration). A factory reset is needed to clear all the policies enforced via assigned access.
 
 For HoloLens devices running Windows 10, version 1803, there are three methods that you can use to configure the device as a kiosk:
-- You can [use Microsoft Intune](#intune-kiosk), for HoloLens devices managed by Intune, to configure single-app and multi-app kiosks.
+
 - You can [use a provisioning package](#ppkg-kiosk) to configure single-app and multi-app kiosks.
 - You can [use the Windows Device Portal](#portal-kiosk) to configure single-app kiosks.
 
@@ -33,32 +33,10 @@ For HoloLens devices running Windows 10, version 1607, you can [use the Windows 
 <span id="start-kiosk"/>
 ## Start layout for HoloLens 
 
-If you use [Microsoft Intune](#intune-kiosk) or a [provisioning package](#ppkg-kiosk) to configure a multi-app kiosk, the procedure requires a Start layout. Start layout customization isn't supported in Holographic for Business, so you'll need to use a placeholder Start layout. 
+If you use a [provisioning package](#ppkg-kiosk) to configure a multi-app kiosk, the procedure requires a Start layout. Start layout customization isn't supported in Holographic for Business, so you'll need to use a placeholder Start layout. 
 
 >[!NOTE]
 >Because a single-app kiosk launches the kiosk app when a user signs in, there is no Start screen displayed.
-
-### Start layout file for Intune
-
-Save the following sample as an XML file. You will select this file when you configure the kiosk in Microsoft Intune.
-
-```xml
-<LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
-    Version="1">
-  <RequiredStartGroupsCollection>
-    <RequiredStartGroups>
-      <AppendGroup Name="">
-        <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="placeholderpackagename_kzf8qxf38zg5c!App" />
-      </AppendGroup>      
-    </RequiredStartGroups>
-  </RequiredStartGroupsCollection> 
- </LayoutModificationTemplate>
-```
-
-### Start layout for a provisioning package
 
 You will [create an XML file](#ppkg-kiosk) to define the kiosk configuration to be included in a provisioning package. Use the following sample in the `StartLayout` section of your XML file.
 
@@ -82,46 +60,7 @@ You will [create an XML file](#ppkg-kiosk) to define the kiosk configuration to 
             <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
 ``` 
 
-<span id="intune-kiosk"/>
-## Set up kiosk mode using Microsoft Intune (Windows 10, version 1803)
 
-
-
-**Multi-app kiosk**
-
-2. In the Microsoft Azure portal, search for **Intune** or go to **More services** > **Intune**.
-3. Select **Device configuration**.
-4. Select **Profiles**.
-5. Select **Create profile**.
-6. Enter a friendly name for the profile.
-7. Select **Windows 10 and later** for the platform.
-8. Select **Device restrictions** for the profile type.
-9. Select **Kiosk**.
-10. In **Kiosk Mode**, select **Multi app kiosk**.
-11. Select **Add** to define a configuration, which specifies the apps that will run and the layout for the Start menu.
-12. Enter a friendly name for the configuration.
-13. Select **UWP App** for a Universal Windows Platform app, and enter the Application User Model ID for an installed app.
-14. Select whether to enable the taskbar.
-15. Browse to and select [the Start layout XML file](#start-kiosk).
-16. Add one or more accounts. When the account signs in, only the apps defined in the configuration will be available.
-17. Select **OK**. You can add additional configurations or finish.
-18. Assign the profile to a device group to configure the devices in that group as kiosks.
-
-**Single-app kiosk**
-
-2. In the Microsoft Azure portal, search for **Intune** or go to **More services** > **Intune**.
-3. Select **Device configuration**.
-4. Select **Profiles**.
-5. Select **Create profile**.
-6. Enter a friendly name for the profile.
-7. Select **Windows 10 and later** for the platform.
-8. Select **Device restrictions** for the profile type.
-9. Select **Kiosk**.
-10. In **Kiosk Mode**, select **Single app kiosk**.
-11. Enter the user account that will be used for the kiosk.
-13. Enter the Application User Model ID for an installed app.
-14. Select **OK**, and then select **Create**.
-18. Assign the profile to a device group to configure the devices in that group as kiosks.
 
 <span id="ppkg-kiosk"/>
 ## Setup kiosk mode using a provisioning package (Windows 10, version 1803)
