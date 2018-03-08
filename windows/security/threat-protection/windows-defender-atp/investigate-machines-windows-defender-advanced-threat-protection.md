@@ -63,12 +63,14 @@ You'll also see details such as logon types for each user account, the user grou
  For more information, see [Investigate user entities](investigate-user-windows-defender-advanced-threat-protection.md).
 
 **Machine risk**</br>
-The Machine risk tile shows the overall risk assesment of a machine. A machine's risk level is determined using the number of active alerts and their severity levels. You can influence a machine's risk level by resolving associated alerts manually or automatically. It also gives a quick indicator of the active threats that machines could be exposed to. 
+The Machine risk tile shows the overall risk assesment of a machine. A machine's risk level is determined using the number of active alerts and their severity levels. You can influence a machine's risk level by resolving associated alerts manually or automatically (and also by suppressing an alert). It also gives a quick indicator of the active threats that machines could be exposed to. 
 
-If you have enabled the Azure ATP feature and there are alerts related to the machine, you can click on the link that will take you to the Azure ATP page where more information about the alerts are provided. The Azure ATP tile also provides details such as the last Azure Active Directory site information and total domain group memberships.
+**Azure Advanced Threat Protection**</br> (this feature is not Machine risk level feture, should have a different headline, the same as in User)
+If you have enabled the Azure ATP feature and there are alerts related to the machine, you can click on the link that will take you to the Azure ATP page where more information about the alerts are provided. (I deleted the extra information, we only have it in the user section and not in the machine page)
 
 >[!NOTE]
 >You’ll need to enable the integration between Windows Defender ATP and Azure Advanced Threat Protection to use this feature.
+(the enablment should be in both side)
 
 For more information on how to enable the Azure ATP integration, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md).
 
