@@ -97,59 +97,57 @@ After you download the Office Deployment Tool, you can use it to get the latest 
 
 The XML file included in the Office Deployment Tool specifies the product details, such as the languages and Office applications included.
 
-**Step 1: Customize the sample XML configuration file:** Use the sample XML configuration file that you downloaded with the Office Deployment Tool to customize the Office applications:
+1. **Customize the sample XML configuration file:** Use the sample XML configuration file that you downloaded with the Office Deployment Tool to customize the Office applications:
+  1. Open the sample XML file in Notepad or your favorite text editor.
+  2. With the sample **configuration.xml** file open and ready for editing, you can specify products, languages, and the path to which you save the Office 2016 applications. The following is a basic example of the **configuration.xml** file:
 
-1. Open the sample XML file in Notepad or your favorite text editor.
-2. With the sample **configuration.xml** file open and ready for editing, you can specify products, languages, and the path to which you save the Office 2016 applications. The following is a basic example of the **configuration.xml** file:
-
-    ```XML
-    <Configuration>
-       <Add SourcePath= ”\\Server\Office2016” OfficeClientEdition="32" >
-        <Product ID="O365ProPlusRetail ">
-          <Language ID="en-us" />
-        </Product>
-        <Product ID="VisioProRetail">
-          <Language ID="en-us" />
-        </Product>
-      </Add>
-    </Configuration>
-    ```
+      ```XML
+      <Configuration>
+         <Add SourcePath= ”\\Server\Office2016” OfficeClientEdition="32" >
+          <Product ID="O365ProPlusRetail ">
+            <Language ID="en-us" />
+          </Product>
+          <Product ID="VisioProRetail">
+            <Language ID="en-us" />
+          </Product>
+        </Add>
+      </Configuration>
+      ```
     
-    >[!NOTE]
-    >The configuration XML is a sample XML file. The file includes lines that are commented out. You can “uncomment” these lines to customize additional settings with the file. To uncomment these lines, remove the ```<! - -``` from the beginning of the line, and the ```-- >``` from the end of the line.
+      >[!NOTE]
+      >The configuration XML is a sample XML file. The file includes lines that are commented out. You can “uncomment” these lines to customize additional settings with the file. To uncomment these lines, remove the ```<! - -``` from the beginning of the line, and the ```-- >``` from the end of the line.
 
-    The previous example of an XML configuration file specifies that Office 2016 ProPlus 32-bit edition, including Visio ProPlus, will be downloaded in English to the \\\\server\\Office2016 location where Office applications will be saved. Note that the Product ID of the applications will not affect Office's final licensing. You can create Office 2016 App-V packages with various licensing from the same applications by specifying licensing in a later stage. The following table summarizes the XML file's customizable attributes and elements:
+      The previous example of an XML configuration file specifies that Office 2016 ProPlus 32-bit edition, including Visio ProPlus, will be downloaded in English to the \\\\server\\Office2016 location where Office applications will be saved. Note that the Product ID of the applications will not affect Office's final licensing. You can create Office 2016 App-V packages with various licensing from the same applications by specifying licensing in a later stage. The following table summarizes the XML file's customizable attributes and elements:
 
-| Input    | Description            | Example    |
-|--------------|----------------------------|----------------|
-| Add element  | Specifies which products and languages the package will include.     | N/A     |
-| **OfficeClientEdition** (attribute of **Add** element) | Specifies whether Office 2016 32-bit or 64-bit edition will be used. **OfficeClientEdition**  must be set to a valid value for the operation to succeed.     | `OfficeClientEdition="32"`<br>`OfficeClientEdition="64"`  |
-| Product element   | Specifies the application. Project 2016 and Visio 2016 must be specified here as added products to include them in the applications.<br>For more information about Product IDs, see [Product IDs that are supported by the Office Deployment Tool for Click-to-Run](https://support.microsoft.com/kb/2842297).   | `Product ID ="O365ProPlusRetail"`<br>`Product ID ="VisioProRetail"`<br>`Product ID ="ProjectProRetail"` |
-| Language element     | Specifies which language the applications support.    | `Language ID="en-us"`   |
-| Version (attribute of **Add** element) | Optional. Specifies which build the package will use.<br>Defaults to latest advertised build (as defined in v32.CAB at the Office source).   | `16.1.2.3`    |
-| SourcePath (attribute of **Add** element)   | Specifies the location the applications will be saved to.    | `Sourcepath = "\\Server\Office2016"`     |
-| Channel (part of **Add** element)       | Optional. Defines which channel will be used to update Office after installation.<br>The default is **Deferred** for Office 365 ProPlus and **Current** for Visio Pro for Office 365 and Project Online Desktop Client. <br>For more information about update channels, see [Overview of update channels for Office 365 ProPlus](https://technet.microsoft.com/library/mt455210.aspx). | `Channel="Current"`<br><br>`Channel="Deferred"`<br><br>`Channel="FirstReleaseDeferred"`<br><br>`Channel="FirstReleaseCurrent"`  |
+      | Input    | Description            | Example    |
+      |--------------|----------------------------|----------------|
+      | Add element  | Specifies which products and languages the package will include.     | N/A     |
+      | **OfficeClientEdition** (attribute of **Add** element) | Specifies whether Office 2016 32-bit or 64-bit edition will be used. **OfficeClientEdition**  must be set to a valid value for the operation to succeed.     | `OfficeClientEdition="32"`<br>`OfficeClientEdition="64"`  |
+      | Product element   | Specifies the application. Project 2016 and Visio 2016 must be specified here as added products to include them in the applications.<br>For more information about Product IDs, see [Product IDs that are supported by the Office Deployment Tool for Click-to-Run](https://support.microsoft.com/kb/2842297).   | `Product ID ="O365ProPlusRetail"`<br>`Product ID ="VisioProRetail"`<br>`Product ID ="ProjectProRetail"` |
+      | Language element     | Specifies which language the applications support.    | `Language ID="en-us"`   |
+      | Version (attribute of **Add** element) | Optional. Specifies which build the package will use.<br>Defaults to latest advertised build (as defined in v32.CAB at the Office source).   | `16.1.2.3`    |
+      | SourcePath (attribute of **Add** element)   | Specifies the location the applications will be saved to.    | `Sourcepath = "\\Server\Office2016"`     |
+      | Channel (part of **Add** element)       | Optional. Defines which channel will be used to update Office after installation.<br>The default is **Deferred** for Office 365 ProPlus and **Current** for Visio Pro for Office 365 and Project Online Desktop Client. <br>For more information about update channels, see [Overview of update channels for Office 365 ProPlus](https://technet.microsoft.com/library/mt455210.aspx). | `Channel="Current"`<br>`Channel="Deferred"`<br>`Channel="FirstReleaseDeferred"`<br>`Channel="FirstReleaseCurrent"`  |
 
 After editing the **configuration.xml** file to specify the desired product, languages, and the location where the Office 2016 applications will be saved to, you can save the configuration file under a name of your choice, such as "Customconfig.xml."
+2. **Download the applications into the specified location:** Use an elevated command prompt and a 64-bit operating system to download the Office 2016 applications that will later be converted into an App-V package. The following is an example command:
 
-**Step 2: Download the applications into the specified location:** Use an elevated command prompt and a 64-bit operating system to download the Office 2016 applications that will later be converted into an App-V package. The following is an example command:
+  `\\server\Office2016\setup.exe /download \\server\Office2016\Customconfig.xml`
 
-`\\server\Office2016\setup.exe /download \\server\Office2016\Customconfig.xml`
+  The following table describes the example command's elements:
 
-The following table describes the example command's elements:
-
-| Element | Description |
-|-------------------------------|--------------------------------------|
-| **\\\\server\\Office2016**    | This is the network share location that contains the Office Deployment Tool and the custom **Configuration.xml** file, which in this example is **Customconfig.xml**.    |
-| **Setup.exe**   | This is the Office Deployment Tool.     |
-| **/download**   | Downloads the Office 2016 applications that you specify in the **Customconfig.xml** file.  |
-| **\\\\server\\Office2016\\Customconfig.xml** | This passes the XML configuration file required to complete the download process. In this example, the file used is **Customconfig.xml**. After using the download command, Office applications should be found in the location specified in the configuration file, which in this example is \\\\Server\\Office2016. |
+  | Element | Description |
+  |-------------------------------|--------------------------------------|
+  | ```\\server\Office2016```    | This is the network share location that contains the Office Deployment Tool and the custom **Configuration.xml** file, which in this example is **Customconfig.xml**.    |
+  | ``Setup.exe``   | This is the Office Deployment Tool.     |
+  | ```/download```  | Downloads the Office 2016 applications that you specify in the **Customconfig.xml** file.  |
+  | ```\\server\Office2016\Customconfig.xml```| This passes the XML configuration file required to complete the download process. In this example, the file used is **Customconfig.xml**. After using the download command, Office applications should be found in the location specified in the configuration file, which in this example is ```\\Server\Office2016```. |
 
 ### Convert the Office applications into an App-V package
 
 After you download the Office 2016 applications through the Office Deployment Tool, use the Office Deployment Tool to convert them into an Office 2016 App-V package. Complete the steps that correspond to your licensing model.
 
-**Summary of what you’ll need to do:**
+#### What you’ll need to do
 
 * Create the Office 2016 App-V packages on 64-bit Windows computers. However, the package will run on 32-bit and 64-bit Windows 7, Windows 8 or 8.1, and Windows 10 computers.
 * Create an Office App-V package for either Subscription Licensing package by using the Office Deployment Tool, and then modify the **Customconfig.xml** configuration file.
@@ -166,13 +164,13 @@ After you download the Office 2016 applications through the Office Deployment To
 | Office 2016 with Visio 2016 and Project 2016     | O365ProPlusRetail<br>VisioProRetail<br>ProjectProRetail     |
 
 #### How to convert the Office applications into an App-V package
+
 1. In Notepad, reopen the CustomConfig.xml file, and make the following changes to the file:
 
-    - **SourcePath**: Change to the location where you saved the Office applications you downloaded during setup.
+    * **SourcePath**: Change to the location where you saved the Office applications you downloaded during setup.
+    * **ProductID**: Specify the type of licensing, as shown in the following example:
 
-    - **ProductID**: Specify the type of licensing, as shown in the following example:
-
-        - Subscription Licensing:
+        * Subscription Licensing:
         ```XML
         <Configuration>
            <Add SourcePath= "\\server\Office 2016" OfficeClientEdition="32" >
@@ -187,13 +185,11 @@ After you download the Office 2016 applications through the Office Deployment To
         ```
         This example made the following changes to create this Subscription Licensing package:
         
-        **SourcePath** was changed to point to the Office applications that were downloaded earlier.<br>
-        **Product ID** for Office was changed to `O365ProPlusRetail`.<br>
-        **Product ID** for Visio was changed to `VisioProRetail`.
-        
-    - **ExcludeApp** (optional): Lets you specify Office programs that you don’t want included in the App-V package created by the Office Deployment Tool. For example, you can exclude Access.
-
-    - **PACKAGEGUID** (optional): By default, all App-V packages created by the Office Deployment Tool share the same App-V Package ID. You can use **PACKAGEGUID** to specify a different package ID for each package, which allows you to publish multiple App-V packages created by the Office Deployment Tool, and then manage your published packages with the App-V Server.
+        * **SourcePath** was changed to point to the Office applications that were downloaded earlier.
+        * **Product ID** for Office was changed to `O365ProPlusRetail`.
+        * **Product ID** for Visio was changed to `VisioProRetail`.
+    * **ExcludeApp** (optional): Lets you specify Office programs that you don’t want included in the App-V package created by the Office Deployment Tool. For example, you can exclude Access.
+    * **PACKAGEGUID** (optional): By default, all App-V packages created by the Office Deployment Tool share the same App-V Package ID. You can use **PACKAGEGUID** to specify a different package ID for each package, which allows you to publish multiple App-V packages created by the Office Deployment Tool, and then manage your published packages with the App-V Server.
         
         An example of when to use this parameter is if you create different packages for different users. For example, you can create a package with just Office 2016 for some users, and create another package with Office 2016 and Visio 2016 for another set of users.
         
@@ -209,39 +205,18 @@ After you download the Office 2016 applications through the Office Deployment To
 
     The following table describes each element used in the example command:
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><code>\\server\Office2016</code></p></td>
-    <td align="left"><p>This is the network share location that contains the Office Deployment Tool and the custom Configuration.xml file, which in this example is Customconfig.xml.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><code>Setup.exe</code></p></td>
-    <td align="left"><p>This is the Office Deployment Tool.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><code>/packager</code></p></td>
-    <td align="left"><p>This command creates the Office 2016 App-V package with the license type specified in the Customconfig.xml file.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><code>\\server\Office2016\Customconfig.xml</code></p></td>
-    <td align="left"><p>This passes the configuration XML file that has been prepared for the packaging stage. In this example, the file is Customconfig.xml.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><code>\\server\share\Office2016AppV</code></p></td>
-    <td align="left"><p>This specifies the location of the newly created Office App-V package.</p></td>
-    </tr>
-    </tbody>
-    </table>
+    | Element | Description |
+    |-------------------------------|--------------------------------------|
+    |```\\server\Office2016```|This is the network share location that contains the Office Deployment Tool and the custom Configuration.xml file, which in this example is Customconfig.xml.|
+    |```Setup.exe```|This is the Office Deployment Tool.|
+    |```/packager```|This command creates the Office 2016 App-V package with the license type specified in the Customconfig.xml file.|
+    |```\\server\Office2016\Customconfig.xml```|This passes the configuration XML file that has been prepared for the packaging stage. In this example, the file is Customconfig.xml.|
+    |```\\server\share\Office2016AppV```|This specifies the location of the newly created Office App-V package.|
 
-    After you run the **/packager** command, the following folders appear up in the directory where you specified the package should be saved:<br>
+    After you run the **/packager** command, the following folders appear up in the directory where you specified the package should be saved:
     
-    - **App-V Packages**—contains an Office 2016 App-V package and two deployment configuration files.
-    - **WorkingDir**
+    * **App-V Packages**—contains an Office 2016 App-V package and two deployment configuration files.
+    * **WorkingDir**
 
     >[!NOTE]
     >To troubleshoot any issues, see the log files in the %temp% directory (default).
@@ -266,8 +241,8 @@ Deploy the App-V package for Office 2016 by using the same methods as the other 
 
 | Prerequisite or requirement           | Details            |
 |---------------------------------------|--------------------|
-| Enable Windows PowerShell scripting on the App-V clients | To publish Office 2016 packages, you must run a script. However, package scripts are disabled by default on App-V clients. To enable scripting, run the following Windows PowerShell command:<br>`Set-AppvClientConfiguration -EnablePackageScripts 1`    |
-| Publish the Office 2016 package globally     | Extension points in the Office App-V package require installation at the computer level.<br>When you publish at the computer level, no prerequisite actions or redistributables are needed. The Office 2016 package globally enables its applications to work like natively installed Office, eliminating the need for administrators to customize packages. |
+| Enable Windows PowerShell scripting on the App-V clients. | To publish Office 2016 packages, you must run a script. However, package scripts are disabled by default on App-V clients. To enable scripting, run the following Windows PowerShell command:<br>`Set-AppvClientConfiguration -EnablePackageScripts 1`    |
+| Publish the Office 2016 package globally.     | Extension points in the Office App-V package require installation at the computer level.<br>When you publish at the computer level, no prerequisite actions or redistributables are needed. The Office 2016 package globally enables its applications to work like natively installed Office, eliminating the need for administrators to customize packages. |
 
 ### How to publish an Office package
 
@@ -389,8 +364,8 @@ To upgrade an Office 2016 package, use the Office Deployment Tool. To upgrade a 
 
     >[!NOTE]
     >Office App-V packages have two Version IDs:
-       - An Office 2016 App-V Package Version ID that is unique across all packages created using the Office Deployment Tool.
-       - A second App-V Package Version ID, formatted as X.X.X.X, in the AppX manifest that will only change if there is a new version of Office itself. For example, if a new Office 2016 release with upgrades is available, and a package is created through the Office Deployment Tool to incorporate these upgrades, the X.X.X.X version ID will change to reflect the new version of Office. The App-V server will use the X.X.X.X version ID to differentiate this package and recognize that it contains new upgrades to the previously published package, and as a result, publish it as an upgrade to the existing Office 2016 package.
+       * An Office 2016 App-V Package Version ID that is unique across all packages created using the Office Deployment Tool.
+       * A second App-V Package Version ID, formatted as X.X.X.X, in the AppX manifest that will only change if there is a new version of Office itself. For example, if a new Office 2016 release with upgrades is available, and a package is created through the Office Deployment Tool to incorporate these upgrades, the X.X.X.X version ID will change to reflect the new version of Office. The App-V server will use the X.X.X.X version ID to differentiate this package and recognize that it contains new upgrades to the previously published package, and as a result, publish it as an upgrade to the existing Office 2016 package.
 2. Globally publish the newly created Office 2016 App-V Packages onto the computers you want to apply the new updates to. Since the new package has the same lineage as the older Office 2016 App-V Package, publishing will be fast, as publishing the new package with the updates only applies the new changes to the old package.
 3. Upgrades will be applied in the same manner of any globally published App-V packages. Because applications will probably be in use, upgrades might be delayed until the computer is rebooted.
 
