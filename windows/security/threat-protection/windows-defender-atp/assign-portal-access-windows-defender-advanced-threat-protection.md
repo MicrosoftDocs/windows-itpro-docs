@@ -86,10 +86,27 @@ For more information see, [Manage Azure AD group and role membership](https://te
     ![Image of Microsoft Azure portal](images/atp-azure-ui-user-access.png)
 
 ## Role-based access control
+Using role-based access control (RBAC), you can create roles and groups within your security operations team to grant appropriate access to the Windows Defender ATP portal. Based on the roles and groups you create, you have fine-grained control over what users with access to the portal can see and do. 
 
-With the robust security capabilities available in the Windows Defender ATP portal, it is crucial to provide the right access only to authorized roles and groups. Using role-based access control (RBAC), you can segregate roles and groups within your security operations team or organization to grant appropriate access to the Windows Defender ATP portal. Based on the roles and groups you create, you have fine-grained control over what users with access to the portal can do. 
+Large geo-distributed security operations teams typically adopt a tier model to assign and authorize access to security portals. Typical tiers include the following three levels:
 
-The implementation of role-based access control in Windows Defender ATP is based on Azure Active Directory user groups. 
+Tier | Description
+:---|:---
+Tier 1 | **Local security operations team / IT team** <br> This team usually triages and investigates alerts contained within their geolocation and escalates to Tier 2 in cases where an active remediation is required.
+Tier 2 | **Regional security operations team** <br> This team can see all the machines for their region and perform remediation actions.
+Tier 3 | **Global security operations team** <br> This team consists of security experts and are authorized to see and perform all actions from the portal.
+
+Windows Defender ATP RBAC is designed to support your tier or role model of choice and allows you to have granular control over what roles can see, machines they can access, and actions they can take. 
+
+The implementation of role-based access control in Windows Defender ATP is based on Azure Active Directory (Azure AD) user groups. 
+
+The Windows Defender ATP RBAC framework is centered around the following controls:
+- **What actions roles are authorized to do**
+  - Create custom roles to control access to the Windows Defender ATP capabilities by leveraging on Azure AD user groups.
+
+- **What information roles are authorized to view**
+  - Create machine groups by specific criteria such as names, tags, domains, and others, then grant role access to them using a specific Azure AD user group.
+
 
 To implement role-based access, you'll need to define admin roles, assign corresponding permissions, and set the Azure Active Directory (Azure AD) user groups assigned to the roles. 
 
