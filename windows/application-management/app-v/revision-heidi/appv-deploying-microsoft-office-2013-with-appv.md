@@ -16,11 +16,11 @@ Use the information in this article to use Application Virtualization (App-V) to
 
 ## What to know before you start
 
-Before you deploy Office 2013 by using App-V, review the following planning information.
+Before you deploy Office 2013 with App-V, review the following planning information.
 
 ### Supported Office versions and Office coexistence
 
-Use the following table to get information about supported versions of Office and about running coexisting versions of Office.
+Use the following table to get information about supported versions of Office and running coexisting versions of Office.
 
 |Information to review|Description|
 |---|---|
@@ -56,11 +56,11 @@ Use the following table to get information about supported versions of Office an
 
 ### Packaging, publishing, and deployment requirements
 
-Before you deploy Office by using App-V, review the following requirements.
+Before you deploy Office with App-V, review the following requirements.
 
 |Task|Requirement|
 |---|---|
-|Packaging|All Office applications you wish to deploy to users must be in a single package.<br>In App-V and later, you must use the Office Deployment Tool to create packages. The Sequencer doesn't support package creation in this version.<br>If you are deploying Microsoft Visio 2013 and Microsoft Project 2013 along with Office, you must include them in the same package with Office. For more information, see [Deploying Visio 2013 and Project 2013 with Office](#bkmk-deploy-visio-project).|
+|Packaging|All Office applications you wish to deploy to users must be in a single package.<br>In App-V and later, you must use the Office Deployment Tool to create packages. The Sequencer doesn't support package creation.<br>If you're deploying Microsoft Visio 2013 and Microsoft Project 2013 along with Office, you must include them in the same package with Office. For more information, see [Deploying Visio 2013 and Project 2013 with Office](#bkmk-deploy-visio-project).|
 |Publishing|You can only publish one Office package per client computer.<br>You must publish the Office package globally, not to the user.|
 |Deploying Office 365 ProPlus, Visio Pro for Office 365, or Project Pro for Office 365 to a shared computer using Remote Desktop Services.|You must enable [shared computer activation](http://technet.microsoft.com/library/dn782860.aspx).<br>You don’t use shared computer activation if you’re deploying a volume licensed product, such as Office Professional Plus 2013, Visio Professional 2013, or Project Professional 2013.|
 

@@ -23,35 +23,35 @@ This topic contains the following sections:
 
 ## What to know before you start
 
-Before you deploy Office 2016 by using App-V, review the following planning information.
+Before you deploy Office 2016 with App-V, review the following planning information.
 
 ### Supported Office versions and Office coexistence
 
-Use the following table to get information about supported versions of Office and about running coexisting versions of Office.
+Use the following table to get information about supported versions of Office and running coexisting versions of Office.
 
-| Information to review           | Why to review it        |
-|---------------------------------|------------------------|
-| [Supported versions of Microsoft Office](appv-planning-for-using-appv-with-office.md#bkmk-office-vers-supp-appv)     | - Supported versions of Office<br>- Supported deployment types, such as desktop, personal Virtual Desktop Infrastructure (VDI), and pooled VDI<br>- Office licensing options |
-| [Planning for using App-V with coexisting versions of Office](appv-planning-for-using-appv-with-office.md#bkmk-plan-coexisting) | Considerations for installing different versions of Office on the same computer   |
+|Information to review|Description|
+|---|---|
+|[Supported versions of Microsoft Office](appv-planning-for-using-appv-with-office.md#bkmk-office-vers-supp-appv)|Supported versions of Office and deployment types (for example, desktop, personal Virtual Desktop Infrastructure (VDI), and pooled VDI), and Office licensing options.|
+|[Planning for using App-V with coexisting versions of Office](appv-planning-for-using-appv-with-office.md#bkmk-plan-coexisting)|Considerations for installing different versions of Office on the same computer.|
 
 ### Packaging, publishing, and deployment requirements
 
-Before you deploy Office by using App-V, review the following requirements.
+Before you deploy Office with App-V, review the following requirements.
 
-| **Task**  | **Requirement**   |
+|Task|Requirement|
 |-----------|-------------------|
-| Packaging  | - All Office applications that you deploy to users must be in a single package.<br>- In App-V 5.0 and later, you must use the Office Deployment Tool to create packages. You can't use the Sequencer for this.<br>- If you are deploying Microsoft Visio 2016 and Microsoft Project 2016 at the same time as Office, you must put them all in the same package. For more information, see [Deploying Visio 2016 and Project 2016 with Office](#deploying-visio-2016-and-project-2016-with-office). |
-| Publishing   | - You can publish only one Office package per client computer.<br>- You must publish the Office package globally. You cannot publish to the user. |
-| Deploying any of the following products to a shared computer with Remote Desktop Services:<br>- Office 365 ProPlus<br>- Visio Pro for Office 365<br>- Project Pro for Office 365 | You must enable [shared computer activation](https://technet.microsoft.com/library/dn782860.aspx). |
+| Packaging.  | All Office applications that you deploy to users must be in a single package.<br>In App-V 5.0 and later, you must use the Office Deployment Tool to create packages. The Sequencer doesn't support package creation.<br>If you're deploying Microsoft Visio 2016 and Microsoft Project 2016 at the same time as Office, you must put them all in the same package. For more information, see [Deploying Visio 2016 and Project 2016 with Office](#deploying-visio-2016-and-project-2016-with-office). |
+| Publishing.   | You can only publish one Office package per client computer.<br>You must publish the Office package globally, not to the user. |
+| Deploying Office 365 ProPlus, Visio Pro for Office 365, or Project Pro for Office 365 to a shared computer with Remote Desktop Services. | You must enable [shared computer activation](https://technet.microsoft.com/library/dn782860.aspx). |
 
 ### Excluding Office applications from a package
 
 The following table describes the recommended methods for excluding specific Office applications from a package.
 
-| **Task**    | **Details**   |
+|Task|Details|
 |-------------|---------------|
-| Use the **ExcludeApp** setting when you create the package by using the Office Deployment Tool. | With this setting, you can exclude specific Office applications from the package that the Office Deployment Tool creates. For example, you can use this setting to create a package that contains only Microsoft Word.<br><br>For more information, see [ExcludeApp element](https://technet.microsoft.com/library/jj219426.aspx#BKMK_ExcludeAppElement). |
-| Modify the DeploymentConfig.xml file                                                            | Modify the DeploymentConfig.xml file after the package has been created. This file contains the default package settings for all users on a computer that is running the App-V Client.<br>For more information, see [Disabling Office 2016 applications](#disabling-office-2016-applications).                      |
+| Use the **ExcludeApp** setting when you create the package by using the Office Deployment Tool. | With this setting, you can exclude specific Office applications from the package that the Office Deployment Tool creates. For example, you can use this setting to create a package that contains only Microsoft Word.<br>For more information, see [ExcludeApp element](https://docs.microsoft.com/en-us/DeployOffice/configuration-options-for-the-office-2016-deployment-tool?ui=en-US&rs=en-US&ad=US#excludeapp-element). |
+| Modify the DeploymentConfig.xml file | Modify the DeploymentConfig.xml file after the package has been created. This file contains the default package settings for all users on a computer that is running the App-V Client.<br>For more information, see [Disabling Office 2016 applications](#disabling-office-2016-applications).                      |
 
 ## Creating an Office 2016 package for App-V with the Office Deployment Tool
 
@@ -64,10 +64,10 @@ Complete the following steps to create an Office 2016 package for App-V.
 
 The computer on which you are installing the Office Deployment Tool must have the following:
 
-| **Prerequisite**     | **Description**    |
+| Prerequisite     | Description    |
 |----------------------|--------------------|
 | Prerequisite software    | .Net Framework 4    |
-| Supported operating systems | * 64-bit version of Windows 10<br>- 64-bit version of Windows 8 or 8.1<br>- 64-bit version of Windows 7 |
+| Supported operating systems | 64-bit version of Windows 10<br>64-bit version of Windows 8 or 8.1<br>64-bit version of Windows 7 |
 
 >[!NOTE]
 >In this topic, the term “Office 2016 App-V package” refers to subscription licensing.
