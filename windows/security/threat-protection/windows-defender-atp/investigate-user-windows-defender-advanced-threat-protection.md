@@ -47,21 +47,18 @@ The user entity tile provides details about the user such as when the user was f
 **Azure Advanced Threat Protection**</br>
 If you have enabled the Azure ATP feature and there are alerts related to the user, you can click on the link that will take you to the Azure ATP page where more information about the alerts are provided. The Azure ATP tile also provides details such as the last AD site, total group memberships, and login failure associated with the user.
 
+>[!NOTE]
+>You'll need to enable the integration on both Azure ATP and Windows Defender ATP to use this feature. In Windows Defender ATP, you can enable this feature in advanced features. For more information on how to enable advanced features, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md).
+
 **Logged on machines**</br>
 You'll also see a list of the machines that the user logged on to, and can expand these to see details of the logon events on each machine.
 
->[!NOTE]
->You'll need to enable the integration between Windows Defender ATP and Azure ATP to use this feature.
-the same note that I added in the Machine page- it should be the same in both cases: (this should be done in both sides, and on WDATP it would be in the "advanced settings")
 
-For more information on how to enable advanced features, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md).
-
-
-**Alerts related to this user**</br>
+## Alerts related to this user
 This section provides a list of alerts that are associated with the user account. This list  is a filtered view of the [Alert queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows alerts where the user context is the selected user account, the date when the last activity was detected, a short description of the alert, the machine associated with the alert, the alert's severity, the alert's status in the queue, and who is assigned the alert.
 
-**Observed in organization**</br>
-Thissection allows you to specify a date range to see a list of machines where this user was observed logged on to, and the most frequent and least frequent logged on user account on each of these machines.
+## Observed in organization
+This section allows you to specify a date range to see a list of machines where this user was observed logged on to, and the most frequent and least frequent logged on user account on each of these machines.
 
 The machine health state is displayed in the machine icon and color as well as in a description text. Clicking on the icon displays additional details regarding machine health.
 
