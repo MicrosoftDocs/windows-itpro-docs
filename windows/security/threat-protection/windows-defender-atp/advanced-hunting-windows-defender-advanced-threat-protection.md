@@ -25,7 +25,7 @@ ms.date: 04/16/2018
 
 [!include[Prerelease information](prerelease.md)]
 
-Advanced hunting allows you to proactively hunt and investigate for possible threats across your organization using a powerful search and query tool. Take advantage of the following capabilities: 
+Advanced hunting allows you to proactively hunt for possible threats across your organization using a powerful search and query tool. Take advantage of the following capabilities: 
 
 - **Powerful query language with IntelliSense** - Built on top of a query language that gives you the flexibility you need to take hunting to the next level.
 - **Query all stored telemetry** - All telemetry data is accessible in tables for you to query. For example, you can query process creation, network communication, and many other event types.
@@ -82,20 +82,50 @@ The following tables are exposed as part of advanced hunting:
 - **MiscEvents** - Stores several types of events, including Windows Defender Exploit Guard, Windows Defender SmartScreen, Windows Defender Application Guard, and Firewall events.
 - **SuspiciousEvents** - Stores all events that deviate from typical event behavior
 
-## Saved queries
+## Shared queries
+Shared queries are prepopulated queries that give you a starting point on running queries on your organization's data. It includes a couple of examples that help demonstrate the query language capabilities.
 
-we provide built it saved queries, that will give you an initial starting point to hunt on you organizational data and provide you additional examples of the query langauge capabilties.
-we provide the following capabilities - 
-- save a query - simply click on the "Save as" button and name your query. you have 2 options of saving - 1. **Shared queries** section - visible to all users in the tenant. 2. **My queries** section - visible only to the user who saved the query
-- update a query - open the query, update the query content and click "Save".
-- delete a query - right click on the query you want to delete, and select the "delete" option.
+![Image of shared queries](images/atp-shared-queries.png)
+
+You can save, edit, update, or delete queries.
+
+### Save a query
+You can create or modify a query and save it as your own query or share it with users who are in the same tenant. 
+
+1. Create or modify a query. 
+
+2. Click the **Save query** drop-down button and select **Save as**.
+    
+3. Enter a name for the query. 
+
+   ![Image of saving a query](images/atp-save-query.png)
+
+4. Select the folder where you'd like to save the query.
+    - Shared queries - Allows other users in the tenant to access the query
+    - My query - Accessible only to the user who saved the query
+    
+5. Click **Save**. 
+
+### Update a query
+These steps guide you on modifying and overwriting an existing query.
+
+1. Edit an existing query. 
+
+2. Click the **Save**.
+
+### Delete a query
+1. Right-click on a query you want to delete.
+
+    ![Image of delete query](images/atp-delete-query.png)
+
+2. Select **Delete** and confirm that you want to delete the query.
 
 ## Results set capabilities in advanced hunting
 
 The results set has several capabilities to provide you with effective investigation, including:
 
 - Columns that return entity-related objects, such as Machine name, Machine ID, File name, SHA1, User, IP, and URL, are linked to their entity pages in the Windows Defender ATP portal.
-- If you right-click on a cell in the results set, you can add a filter to your written query. The current filtering options are **include**, **exclude** or **advanced filter**, which provides additional filtering options on the cell value. These cell values are part of the row set. 
+- You can right-click on a cell in the results set and add a filter to your written query. The current filtering options are **include**, **exclude** or **advanced filter**, which provides additional filtering options on the cell value. These cell values are part of the row set. 
 
 ![Image of Windows Defender ATP advanced hunting results set](images/atp-advanced-hunting-results-set.png)
 
