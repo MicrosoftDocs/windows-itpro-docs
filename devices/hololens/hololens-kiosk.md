@@ -18,7 +18,7 @@ When HoloLens is configured as a multi-app kiosk, only the allowed apps are avai
 
 Single-app kiosk mode starts the specified app when the user signs in, and restricts the user's ability to launch new apps or change the running app. When single-app kiosk mode is enabled for HoloLens, the bloom gesture and Cortana are disabled, and placed apps aren't shown in the user's surroundings. 
 
-Multi-app kiosks can run Universal Windows Platform (UWP) apps and Classic Wesktop applications (Win32). Single-app kiosks can run UWP apps.
+
 
 >[!WARNING]
 >The assigned access feature which enables kiosk mode is intended for corporate-owned fixed-purpose devices. When the multi-app assigned access configuration is applied on the device, certain policies are enforced system-wide, and will impact other users on the device. Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all [the enforced policies](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#policies-set-by-multi-app-kiosk-configuration). A factory reset is needed to clear all the policies enforced via assigned access.
@@ -100,11 +100,9 @@ You will [create an XML file](#ppkg-kiosk) to define the kiosk configuration to 
 10. In **Kiosk Mode**, select **Multi app kiosk**.
 11. Select **Add** to define a configuration, which specifies the apps that will run and the layout for the Start menu.
 12. Enter a friendly name for the configuration.
-13. Select an app type, either **Win32 App** for a classic desktop application or **UWP App** for a Universal Windows Platform app.
-  - For **Win32 App**, enter the fully qualified pathname of the executable, with respect to the device.
-  - For **UWP App**, enter the Application User Model ID for an installed app.
+13. Select **UWP App** for a Universal Windows Platform app, and enter the Application User Model ID for an installed app.
 14. Select whether to enable the taskbar.
-15. Browse to and select the Start layout XML file that you generated in step 1.
+15. Browse to and select [the Start layout XML file](#start-kiosk).
 16. Add one or more accounts. When the account signs in, only the apps defined in the configuration will be available.
 17. Select **OK**. You can add additional configurations or finish.
 18. Assign the profile to a device group to configure the devices in that group as kiosks.
@@ -132,6 +130,61 @@ Process:
 1. Create XML file(#create-xml-file)
 2. Add XML file to provisioning package(#add-xml)
 3. Apply provisioning package to device(#apply-ppkg)
+
+<span id="create-xml-file"/>
+### Create a kiosk configuration XML file
+
+Follow [the instructions for creating a kiosk configuration XML file for desktop](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-using-a-provisioning-package), with the following exceptions:
+
+- Do not include Classic Windows applications (Win32) since they aren't supported on HoloLens.
+- Use the [placeholder Start XML](#start-kiosk) for HoloLens.
+- Use [group accounts](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#config-for-group-account) rather than individual accounts.
+
+<span id="add-xml"/>
+### Add the kiosk configuration XML file to a provisioning package
+
+1. Open [Windows Configuration Designer](https://www.microsoft.com/store/apps/9nblggh4tx22).
+2. Choose **Advanced provisioning**.
+3. Name your project, and click **Next**.
+4. Choose **Windows 10 Holographic** and click **Next**.
+5. Select **Finish**. The workspace for your package opens.
+6. Expand **Runtime settings** &gt; **AssignedAccess** &gt; **MultiAppAssignedAccessSettings**.
+7. In the center pane, click **Browse** to locate and select the kiosk configuration XML file that you created.
+
+  ![Screenshot of the MultiAppAssignedAccessSettings field in Windows Configuration Designer](images/multiappassignedaccesssettings.png)
+
+8. (**Optional**: If you want to apply the provisioning package after device initial setup and there is an admin user already available on the kiosk device, skip this step.) Create an admin user account in **Runtime settings** &gt; **Accounts** &gt; **Users**. Provide a **UserName** and **Password**, and select **UserGroup** as **Administrators**. With this account, you can view the provisioning status and logs if needed.   
+8. (**Optional**: If you already have a non-admin account on the kiosk device, skip this step.) Create a local standard user account in **Runtime settings** &gt; **Accounts** &gt; **Users**. Make sure the **UserName** is the same as the account that you specify in the configuration XML. Select **UserGroup** as **Standard Users**.
+8.  On the **File** menu, select **Save.**
+9.  On the **Export** menu, select **Provisioning package**.
+10. Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
+
+11. On the **Provisioning package security** page, do not select **Enable package encryption** or provisioning will fail on HoloLens. You can choose to enable package signing.
+
+      -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Browse** and choosing the certificate you want to use to sign the package.
+
+12. Click **Next** to specify the output location where you want the provisioning package to go when it's built. By default, Windows Configuration Designer uses the project folder as the output location. Optionally, you can click **Browse** to change the default output location.
+
+13. Click **Next**.
+
+14. Click **Build** to start building the package. The provisioning package doesn't take long to build. The project information is displayed in the build page and the progress bar indicates the build status.
+
+    
+
+<span id="apply-ppkg"/>
+### Apply the provisioning package to HoloLens
+
+1. Connect HoloLens via USB to a PC and start the device, but do not continue past the **Fit** page of OOBE (the first page with the blue box).
+
+3. HoloLens will show up as a device in File Explorer on the PC.
+
+4. In File Explorer, drag and drop the provisioning package (.ppkg) onto the device storage.
+
+5. Briefly press and release the **Volume Down** and **Power** buttons simultaneously again while on the **fit** page.
+
+6. The device will ask you if you trust the package and would like to apply it. Confirm that you trust the package.
+
+7. You will see whether the package was applied successfully or not. If it failed, you can fix your package and try again. If it succeeded, proceed with OOBE.
 
 
 <span id="portal-kiosk"/>

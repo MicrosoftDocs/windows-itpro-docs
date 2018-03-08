@@ -19,7 +19,10 @@ This topic lists new and updated topics in the [Microsoft HoloLens documentation
 
 The topics in this library have been updated for Windows 10 Holographic for Business, version 1803. The following new topics have been added:
 
-- >
+- [What's new in Microsoft HoloLens](hololens-whats-new.md)
+- [Manage updates to HoloLens](hololens-updates.md)
+
+
 ## February 2018
 
 New or changed topic | Description
