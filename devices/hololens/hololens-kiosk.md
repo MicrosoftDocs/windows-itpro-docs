@@ -33,7 +33,7 @@ For HoloLens devices running Windows 10, version 1607, you can [use the Windows 
 <span id="start-kiosk"/>
 ## Start layout for HoloLens 
 
-If you use [Microsoft Intune](#intune-kiosk) or a [provisioning package](#ppkg-kiosk) to configure a multi-app kiosk, the procedure requires a Start layout. Start layout customization isn't supported in Holographic for Business, so you'll need to use a "fake" Start layout. 
+If you use [Microsoft Intune](#intune-kiosk) or a [provisioning package](#ppkg-kiosk) to configure a multi-app kiosk, the procedure requires a Start layout. Start layout customization isn't supported in Holographic for Business, so you'll need to use a placeholder Start layout. 
 
 >[!NOTE]
 >Because a single-app kiosk launches the kiosk app when a user signs in, there is no Start screen displayed.
