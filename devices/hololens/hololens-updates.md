@@ -34,3 +34,7 @@ https://docs.microsoft.com/en-us/intune/windows-update-for-business-configure#wi
 For the settings Intune doesn’t offer UI, including WSUS, we recommended setting them through Custom OMA-DM Uris:
 https://docs.microsoft.com/en-us/intune/custom-settings-windows-holographic 
 
+link dump:
+https://docs.microsoft.com/en-us/intune/windows-update-for-business-configure
+https://docs.microsoft.com/en-us/windows/deployment/update/waas-manage-updates-wufb
+https://docs.microsoft.com/en-us/intune/custom-settings-windows-holographic

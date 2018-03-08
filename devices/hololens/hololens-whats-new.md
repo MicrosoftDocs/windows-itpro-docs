@@ -39,3 +39,9 @@ Windows 10, version 1803, is the first feature update to Windows Holographic for
 - local account indefinite password expiry
 -  MDM sync status
 - account mgt: "visitor" group acct
+
+link dump
+https://developer.microsoft.com/en-us/windows/mixed-reality/reset_or_recover_your_hololens
+https://support.microsoft.com/en-us/help/12379/windows-10-mobile-device-recovery-tool-faq
+https://docs.microsoft.com/en-us/intune/windows-holographic-for-business
+https://support.microsoft.com/en-us/help/13452/hololens-restart-reset-or-recover-hololens
