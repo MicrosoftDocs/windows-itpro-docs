@@ -127,9 +127,9 @@ You will [create an XML file](#ppkg-kiosk) to define the kiosk configuration to 
 ## Setup kiosk mode using a provisioning package (Windows 10, version 1803)
 
 Process:
-1. [Create XML file](#create-xml-file)
-2. [Add XML file to provisioning package](#add-xml)
-3. [Apply provisioning package to device](#apply-ppkg)
+1. [Create an XML file that defines the kiosk configuration.](#create-xml-file)
+2. [Add the XML file to a provisioning package.](#add-xml)
+3. [Apply the provisioning package to HoloLens.](#apply-ppkg)
 
 <span id="create-xml-file"/>
 ### Create a kiosk configuration XML file
