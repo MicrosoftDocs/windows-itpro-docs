@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/05/2018
 ---
 
 # Policy CSP - AttachmentManager
@@ -85,14 +85,14 @@ If you do not configure this policy setting, Windows marks file attachments with
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Do not preserve zone information in file attachments*
 -   GP name: *AM_MarkZoneOnSavedAtttachments*
 -   GP path: *Windows Components/Attachment Manager*
 -   GP ADMX file name: *AttachmentManager.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -149,14 +149,14 @@ If you do not configure this policy setting, Windows hides the check box and Unb
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Hide mechanisms to remove zone information*
 -   GP name: *AM_RemoveZoneInfo*
 -   GP path: *Windows Components/Attachment Manager*
 -   GP ADMX file name: *AttachmentManager.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -197,7 +197,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage the behavior for notifying registered antivirus programs. If multiple programs are registered, they will all be notified. If the registered antivirus program already performs on-access checks or scans files as they arrive on the computer's email server, additional calls would be redundant.
+This policy setting allows you to manage the behavior for notifying registered antivirus programs. If multiple programs are registered, they will all be notified. If the registered antivirus program already performs on-access checks or scans files as they arrive on the computer's email server, additional calls would be redundant. 
 
 If you enable this policy setting, Windows tells the registered antivirus program to scan the file when a user opens a file attachment. If the antivirus program fails, the attachment is blocked from being opened.
 
@@ -213,14 +213,14 @@ If you do not configure this policy setting, Windows does not call the registere
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Notify antivirus programs when opening attachments*
 -   GP name: *AM_CallIOfficeAntiVirus*
 -   GP path: *Windows Components/Attachment Manager*
 -   GP ADMX file name: *AttachmentManager.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
 

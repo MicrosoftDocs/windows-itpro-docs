@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/05/2018
 ---
 
 # Policy CSP - RemoteDesktopServices
@@ -84,9 +84,9 @@ If you enable this policy setting, users who are members of the Remote Desktop U
 
 If you disable this policy setting, users cannot connect remotely to the target computer by using Remote Desktop Services. The target computer will maintain any current connections, but will not accept any new incoming connections.
 
-If you do not configure this policy setting, Remote Desktop Services uses the Remote Desktop setting on the target computer to determine whether the remote connection is allowed. This setting is found on the Remote tab in the System properties sheet. By default, remote connections are not allowed.
+If you do not configure this policy setting, Remote Desktop Services uses the Remote Desktop setting on the target computer to determine whether the remote connection is allowed. This setting is found on the Remote tab in the System properties sheet. By default, remote connections are not allowed. 
 
-Note: You can limit which clients are able to connect remotely by using Remote Desktop Services by configuring the policy setting at Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Security\Require user authentication for remote connections by using Network Level Authentication.
+Note: You can limit which clients are able to connect remotely by using Remote Desktop Services by configuring the policy setting at Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Security\Require user authentication for remote connections by using Network Level Authentication. 
 
 You can limit the number of users who can connect simultaneously by configuring the policy setting at Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Connections\Limit number of connections, or by configuring the policy setting Maximum Connections by using the Remote Desktop Session Host WMI Provider.
 
@@ -98,14 +98,14 @@ You can limit the number of users who can connect simultaneously by configuring 
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Allow users to connect remotely by using Remote Desktop Services*
 -   GP name: *TS_DISABLE_CONNECTIONS*
 -   GP path: *Windows Components/Remote Desktop Services/Remote Desktop Session Host/Connections*
 -   GP ADMX file name: *terminalserver.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -170,14 +170,14 @@ FIPS compliance can be configured through the System cryptography. Use FIPS comp
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Set client connection encryption level*
 -   GP name: *TS_ENCRYPTION_POLICY*
 -   GP path: *Windows Components/Remote Desktop Services/Remote Desktop Session Host/Security*
 -   GP ADMX file name: *terminalserver.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -236,14 +236,14 @@ If you do not configure this policy setting, client drive redirection and Clipbo
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Do not allow drive redirection*
 -   GP name: *TS_CLIENT_DRIVE_M*
 -   GP path: *Windows Components/Remote Desktop Services/Remote Desktop Session Host/Device and Resource Redirection*
 -   GP ADMX file name: *terminalserver.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -298,14 +298,14 @@ If you disable this setting or leave it not configured, the user will be able to
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Do not allow passwords to be saved*
 -   GP name: *TS_CLIENT_DISABLE_PASSWORD_SAVING_2*
 -   GP path: *Windows Components/Remote Desktop Services/Remote Desktop Connection Client*
 -   GP ADMX file name: *terminalserver.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -366,14 +366,14 @@ If you do not configure this policy setting, automatic logon is not specified at
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Always prompt for password upon connection*
 -   GP name: *TS_PASSWORD*
 -   GP path: *Windows Components/Remote Desktop Services/Remote Desktop Session Host/Security*
 -   GP ADMX file name: *terminalserver.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -434,14 +434,14 @@ Note: The RPC interface is used for administering and configuring Remote Desktop
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Require secure RPC communication*
 -   GP name: *TS_RPC_ENCRYPTION*
 -   GP path: *Windows Components/Remote Desktop Services/Remote Desktop Session Host/Security*
 -   GP ADMX file name: *terminalserver.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
 
