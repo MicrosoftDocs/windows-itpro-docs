@@ -48,8 +48,8 @@ Save the following sample as an XML file. You will select this file when you con
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>
                           <defaultlayout:StartLayout GroupCellWidth="6">
-                            <start:Group Name="Life at a glance">
-                              <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.SkypeApp_kzf8qxf38zg5c!App" />
+                            <start:Group Name="">
+                              <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="placeholderpackagename_kzf8qxf38zg5c!App" />
                             </start:Group>
                           </defaultlayout:StartLayout>
                         </StartLayoutCollection>
@@ -75,8 +75,8 @@ You will create an XML file to define the kiosk configuration to be included in 
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>
                           <defaultlayout:StartLayout GroupCellWidth="6">
-                            <start:Group Name="Life at a glance">
-                              <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.SkypeApp_kzf8qxf38zg5c!App" />
+                            <start:Group Name="">
+                              <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="placeholderpackagename_kzf8qxf38zg5c!App" />
                             </start:Group>
                           </defaultlayout:StartLayout>
                         </StartLayoutCollection>
