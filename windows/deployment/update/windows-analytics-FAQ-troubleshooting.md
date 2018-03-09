@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 03/07/2018
+ms.date: 03/09/2018
 ---
 
 # Frequently asked questions and troubleshooting Windows Analytics
@@ -19,7 +19,18 @@ This topic compiles the most common issues encountered with configuring and usin
 
 If you've followed the steps in the [Windows Analytics](windows-analytics-get-started.md) topic and are still encountering problems, you might find the solution here.
 
-Devices not showing up(#Devices not showing up)
+Devices not showing up(#Devices-not-showing-up)
+
+Device Health data not appearing(#Device-Health-data-not-appearing)
+
+Upgrade Readiness reports outdated updates(#Upgrade-Readiness-reports-outdated-updates)
+
+Upgrade Readiness reports incomplete inventory(#Upgrade-Readiness-reports-incomplete-inventory)
+
+Upgrade Readiness doesn't show app inventory data on some devices(#Upgrade-Readiness-doesn't-show-app-inventory-data-on-some-devices)
+
+Upgrade Readiness doesn't show IE site discovery data from some devices(#Upgrade-Readiness-doesn't-show-IE-site-discovery-data-from-some-devices)
+
 
 ### Devices not showing up
 
@@ -30,7 +41,7 @@ Even though devices can take 2-3 days after enrollment to show up due to latency
 If devices are not showing up as expected, find a representative device and rerun the latest Upgrade Readiness deployment script (TODO - merge topic form here - but clarify the last step of "contact support" should only be done if all other tshooting steps in this topic don't work). [MERGE WHAT EXACTLY FROM WHERE?]
 
 - In the collected logs, the filename with a GUID has clear text that can be read to uncover common issues, so it's worth checking these logs prior to opening a support ticket.
-- If you think the issue might be related a network proxy, check the endpoint connectivity[INTERNAL LINK]. Also see [Understanding connectivity scenarios and the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog. [WHY IS THAT BLOG POST LISTING DIFFERENT ENDPOINTS THAN WE ARE DOCUMENTING?]
+- If you think the issue might be related a network proxy, check the endpoint connectivity(#Endpoint-connectivity). Also see [Understanding connectivity scenarios and the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog. [WHY IS THAT BLOG POST LISTING DIFFERENT ENDPOINTS THAN WE ARE DOCUMENTING?]
 
 ### Device Health data not appearing
 
