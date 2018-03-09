@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 11/06/2017
+ms.date: 04/16/2018
 ---
 
 # Configure endpoints using System Center Configuration Manager
@@ -48,9 +48,12 @@ You can use existing System Center Configuration Manager functionality to create
 
 1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a. Click **Endpoint management** > **Clients** on the **Navigation pane**.
+    a. In the navigation pane, select **Settings** > **Onboarding**.
+    b. Make you select Windows 10 as the operating system.
 
-    b. Select **System Center Configuration Manager 2012/2012 R2/1511/1602**, click **Download package**, and save the .zip file.
+    b. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
+    
+    c. Click **Download package**, and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
 
@@ -122,11 +125,13 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a. Click **Endpoint management** > **Clients** on the **Navigation pane**.
+    a. In the navigation pane, select **Settings** > **Offboarding**.
 
-    b. Click the **Endpoint offboarding** section.
+    b. Make you select Windows 10 as the operating system.
 
-    c. Select **System Center Configuration Manager System Center Configuration Manager 2012/2012 R2/1511/1602**, click **Download package**, and save the .zip file.
+    b. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
+    
+    c. Click **Download package**, and save the .zip file.
 
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 

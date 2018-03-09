@@ -40,9 +40,13 @@ You can onboard VDI machines using a single entry or multiple entries for each m
 
 1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a.  Click **Endpoint management** > **Clients** on the **Navigation pane**.
+    a.  In the navigation pane, select **Settings** > **Onboarding**.
 
-    b.  Select **VDI onboarding scripts for non-persistent endpoints** then click **Download package** and save the .zip file.
+    b. Make you select Windows 10 as the operating system.
+
+    c.  In the **Deployment method** field, select **VDI onboarding scripts for non-persistent endpoints**.
+
+    d. Click **Download package** and save the .zip file.
 
 2. Copy the extracted files from the .zip into `golden/master` image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. You should have a folder called `WindowsDefenderATPOnboardingPackage` containing the file `WindowsDefenderATPOnboardingScript.cmd`.
 

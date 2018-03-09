@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 localizationpriority: high
-ms.date: 12/12/2017
+ms.date: 04/16/2018
 ---
 
 # Configure non-Windows endpoints
@@ -29,19 +29,21 @@ Windows Defender ATP provides a centralized security operations experience for W
 You'll need to know the exact Linux distros and macOS X versions that are compatible with Windows Defender ATP for the integration to work. 
 
 ## Onboard non-Windows endpoints
-You'll need to take the following steps to oboard non-Windows endpoints:
+You'll need to take the following steps to onboard non-Windows endpoints:
 1. Turn on third-party integration
 2. Run a detection test
 
 ### Turn on third-party integration
 
-1. In Windows Defender Security Center portal, select **Endpoint management** > **Clients** > **Non-Windows**. Make sure the third-party solution is listed.
+1. In the navigation pane, select **Settings** > **Onboarding**. Make sure the third-party solution is listed.
 
-2. 	Toggle the third-party provider switch button to turn on the third-party solution integration.
+2. 	Make you select Mac and Linux as the operating system.
 
-3. 	Click **Generate access token** button and then **Copy**.
+3. Turn on the third-party solution integration.
 
-4. 	You’ll need to copy and paste the token to the third-party solution you’re using. The implementation may vary depending on the solution. 
+4. 	Click **Generate access token** button and then **Copy**.
+
+5. 	You’ll need to copy and paste the token to the third-party solution you’re using. The implementation may vary depending on the solution. 
 
 
 >[!WARNING] 
@@ -58,9 +60,9 @@ To effectively offboard the endpoints from the service, you'll need to disable t
 
 1. Follow the third-party documentation to opt-out on the third-party service side.
 
-2. In Windows Defender Security Center portal, select **Endpoint management**> **Non-Windows**.
+2. In the navigation pane, select **Settings** > **Onboarding**.
 
-3. Toggle the third-party provider switch button to turn stop diagnostic data from endpoints. 
+3. Turn off the third-party solution integration. 
 
 >[!WARNING]
 >If you decide to turn on the third-party integration again after disabling the integration, you'll need to regenerate the token and reapply it on endpoints. 

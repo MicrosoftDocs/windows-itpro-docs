@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 11/06/2017
+ms.date: 04/16/2018
 ---
 
 # Configure endpoints using Group Policy
@@ -25,7 +25,7 @@ ms.date: 11/06/2017
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
-
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
@@ -34,11 +34,15 @@ ms.date: 11/06/2017
 > To use Group Policy (GP) updates to deploy the package, you must be on Windows Server 2008 R2 or later.
 
 ## Onboard endpoints
-1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
+1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
+ 
+    a.  In the navigation pane, select **Settings** > **Onboarding**.
 
-    a.  Click **Endpoint management** > **Clients** on the **Navigation pane**.
-
-    b.  Select **Group Policy**, click **Download package** and save the .zip file.
+    b.  Make you select Windows 10 as the operating system.
+    
+    c. In the **Deployment method** field, select **Group policy**.
+    
+    c. Click **Download package** and save the .zip file.
 
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the endpoints. You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.cmd*.
 
@@ -118,11 +122,13 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a. Click **Endpoint management** > **Clients** on the **Navigation pane**.
+    a. In the navigation pane, select **Settings** > **Offboarding**.
 
-    b. Click the **Endpoint offboarding** section.
+    b. Make you select Windows 10 as the operating system.
+    
+    c. In the **Deployment method** field, select **Group policy**.
 
-    c. Select **Group Policy**, click **Download package** and save the .zip file.
+    d. Click **Download package** and save the .zip file.
 
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the endpoints. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 

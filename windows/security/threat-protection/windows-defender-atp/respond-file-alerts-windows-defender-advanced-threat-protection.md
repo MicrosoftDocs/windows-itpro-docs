@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 03/06/2018
+ms.date: 04/16/2018
 ---
 
 # Take response actions on a file
@@ -116,13 +116,12 @@ You can prevent further propagation of an attack in your organization by banning
 
 
 ### Enable the block file feature
-1.	In the navigation pane, select **Preference Setup** > **Advanced features** > **Block file**.
+1.	In the navigation pane, select **Settings** > **Advanced features** > **Block file**.
 
 2.	Toggle the setting between **On** and **Off** and select **Save preferences**.
-
-  ![Image of settings](images/atp-preferences-setup.png)
-
-
+    
+    ![Image of advanced settings for block file feature](images/atp-preferences-setup.png)
+  
 3. Type a comment and select **Yes, block file** to take action on the file.
 
     The Action center shows the submission information:

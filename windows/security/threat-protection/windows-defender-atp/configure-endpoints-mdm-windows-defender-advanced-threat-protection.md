@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 11/06/2017
+ms.date: 04/16/2018
 ---
 
 # Configure endpoints using Mobile Device Management tools
@@ -44,11 +44,13 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
 
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a.  Select **Endpoint management** > **Clients** on the **Navigation pane**.
+    a. In the navigation pane, select **Settings** > **Onboarding**.
 
-    b.  Select **Mobile Device Management/Microsoft Intune** > **Download package** and save the .zip file.
+    b. Make you select Windows 10 as the operating system.
 
-      ![Endpoint onboarding](images/atp-mdm-onboarding-package.png)
+    b. In the **Deployment method** field, select **Mobile Device Management / Microsoft Intune**.
+    
+    c. Click **Download package**, and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named  *WindowsDefenderATP.onboarding*.
 
@@ -128,11 +130,13 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a. Click **Endpoint management** > **Clients** on the **Navigation pane**.
+   a. In the navigation pane, select **Settings** > **Offboarding**.
 
-    b. Click the **Endpoint offboarding** section.
+    b. Make you select Windows 10 as the operating system.
 
-    c. Select **Mobile Device Management /Microsoft Intune**, click **Download package** and save the .zip file.
+    b. In the **Deployment method** field, select **Mobile Device Management / Microsoft Intune**.
+    
+    c. Click **Download package**, and save the .zip file.
 
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding*.
 
