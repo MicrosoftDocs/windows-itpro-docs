@@ -18,6 +18,8 @@ Microsoft Application Virtualization (App-V) supports the use of folder redirect
 
 (FIX LINKS)
 
+|||
+
 <table>
 <colgroup>
 <col width="50%" />

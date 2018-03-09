@@ -17,6 +17,14 @@ This checklist can be used to help you plan for preparing your organization for 
 >[!NOTE]
 >This checklist outlines the recommended steps and a high-level list of items to consider when planning an App-V deployment. It's a good idea to copy this checklist and customize it for your use.
 
+|Status|Task|References|Notes|
+|---|---|---|---|
+|![Checklist box](../images/checklistbox.gif)|Review the getting started information about App-V to gain a basic understanding of the product before beginning deployment planning.|[Getting started with App-V](appv-getting-started.md)||
+|![Checklist box](../images/checklistbox.gif)|Plan for App-V deployment prerequisites and prepare your computing environment.|[App-V prerequisites](appv-prerequisites.md)||
+|![Checklist box](../images/checklistbox.gif)|If you plan to use the App-V management server, plan for the required roles.|[Planning for the App-V server deployment](appv-planning-for-appv-server-deployment.md)||
+|![Checklist box](../images/checklistbox.gif)|If applicable, review the options and steps for migrating from a previous version of App-V.|[Migrating to App-V from a previous version](appv-migrating-to-appv-from-a-previous-version.md)||
+|![Checklist box](../images/checklistbox.gif)|Decide whether to configure App-V clients in Shared Content Store mode.|[Deploying the App-V Sequencer and configuring the client](appv-deploying-the-appv-sequencer-and-client.md)||
+
 <table>
 <colgroup>
 <col width="25%" />
@@ -74,9 +82,7 @@ This checklist can be used to help you plan for preparing your organization for 
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
-
-For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
 
 ## Related topics
 

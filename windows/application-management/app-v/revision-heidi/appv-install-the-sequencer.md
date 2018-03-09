@@ -35,14 +35,14 @@ You can also use the command line to install the App-V sequencer. The following 
 
 | Command       | Description  |
 |-------------------|------------------|
-| /INSTALLDIR       | Specifies the installation directory.  |
-| /Log   | Specifies where the installation log will be saved. The default location is **%Temp%**. For example, **C:\\Logs\\log.log**.    |
-| /q     | Specifies a quiet or silent installation.      |
-| /Uninstall        | Specifies the removal of the sequencer.  |
-| /ACCEPTEULA       | Accepts the license agreement. This is required for an unattended installation. For example, **/ACCEPTEULA** or **/ACCEPTEULA=1**.         |
-| /LAYOUT           | Specifies the associated layout action. It also extracts the Windows Installer (.msi) and script files to a folder without installing App-V. No value is expected. |
-| /LAYOUTDIR        | Specifies the layout directory. Requires a string value. For example, **/LAYOUTDIR=”C:\\Application Virtualization Client”**.    |
-| /? Or /h or /help | Displays associated help.   |
+| **/INSTALLDIR**       | Specifies the installation directory.  |
+| **/Log**   | Specifies where the installation log will be saved. The default location is **%Temp%**. For example, **C:\\Logs\\log.log**.    |
+| **/q**     | Specifies a quiet or silent installation.      |
+| **/Uninstall**        | Specifies the removal of the sequencer.  |
+| **/ACCEPTEULA**       | Accepts the license agreement. This is required for an unattended installation. For example, **/ACCEPTEULA** or **/ACCEPTEULA=1**.         |
+| **/LAYOUT**           | Specifies the associated layout action. It also extracts the Windows Installer (.msi) and script files to a folder without installing App-V. No value is expected. |
+| **/LAYOUTDIR**        | Specifies the layout directory. Requires a string value. For example, **/LAYOUTDIR=”C:\\Application Virtualization Client”**.    |
+| **/?** or **/h** or **/help** | Displays associated help.   |
 
 ## To troubleshoot the App-V sequencer installation
 
