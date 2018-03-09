@@ -32,7 +32,7 @@ Windows 10, version 1803, is the first feature update to Windows Holographic for
 
 
 - mail sync without MDM enrollment
-
+- wdrt
 
 - developer mode
 - multi-app kiosk (use groups)
