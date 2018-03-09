@@ -21,6 +21,7 @@ The topics in this library have been updated for Windows 10 Holographic for Busi
 
 - [What's new in Microsoft HoloLens](hololens-whats-new.md)
 - [Manage updates to HoloLens](hololens-updates.md)
+- [Share HoloLens with multiple people](hololens-multiple-users.md)
 
 
 ## February 2018

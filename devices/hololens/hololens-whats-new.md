@@ -26,7 +26,7 @@ Windows 10, version 1803, is the first feature update to Windows Holographic for
 
 - Can change network before sign-in 
 
-- multi-user (AAD)
+- multi-user (AAD) [Share HoloLens with multiple people](hololens-multiple-users.md)
 - multi transfer protocol (MTP) support
 - file explorer
 - OOBE diagnostic

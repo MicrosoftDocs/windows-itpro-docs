@@ -6,6 +6,7 @@
 ## [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
 ## [Manage updates to HoloLens](hololens-updates.md)
 ## [Set up HoloLens in kiosk mode](hololens-kiosk.md)
+## [Share HoloLens with multiple people](hololens-multiple-users.md)
 ## [Configure HoloLens using a provisioning package](hololens-provisioning.md)
 ## [Install apps on HoloLens](hololens-install-apps.md)
 ## [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md)

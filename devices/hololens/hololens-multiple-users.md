@@ -1,0 +1,30 @@
+---
+title: Share HoloLens with multiple people (HoloLens)
+description: You can configure HoloLens to be shared by multiple Azure Active Directory accounts.
+ms.prod: w10
+ms.mktglfcycl: manage
+ms.pagetype: hololens, devices
+ms.sitesec: library
+author: jdeckerms
+ms.localizationpriority: medium
+ms.date: 04/01/2018
+---
+
+# Share HoloLens with multiple people
+
+You can configure HoloLens to be shared by multiple Azure Active Directory (Azure AD) accounts, each with their own user settings and user data on the device.
+
+**Prerequisite**: The HoloLens device must be running Windows Holographic for Business.
+
+During setup, you must select **My work or school owns it** and sign in with an Azure AD account. After setup, ensure that **Other People** appears in **Settings** > **Accounts**.
+
+Other people can use the HoloLens device by signing in with their Azure AD account credentials. To switch users, press the power button once to go to standby and then press the power button again to return to the lock screen, or select the user tile on the upper right of th epins panel to sign out the current user.  
+
+>[!NOTE] 
+>Each subsequent user will need to perform [Calibration](https://developer.microsoft.com/windows/mixed-reality/calibration) in order to set their correct interpupillary distance (PD) for the device while signed in.
+
+To see users on the device or to remove a user from the device, go to **Settings** > **Accounts** > **Other users**.
+ 
+
+ 
+
