@@ -12,9 +12,9 @@ ms.date: 04/01/2018
 
 # Share HoloLens with multiple people
 
-You can configure HoloLens to be shared by multiple Azure Active Directory (Azure AD) accounts, each with their own user settings and user data on the device.
+A HoloLens device can be shared by multiple Azure Active Directory (Azure AD) accounts, each with their own user settings and user data on the device.
 
-**Prerequisite**: The HoloLens device must be running Windows Holographic for Business.
+**Prerequisite**: The HoloLens device must be running Windows 10, version 1803, and be [upgraded to Windows Holographic for Business](hololens-upgrade-enterprise.md).
 
 During setup, you must select **My work or school owns it** and sign in with an Azure AD account. After setup, ensure that **Other People** appears in **Settings** > **Accounts**.
 
