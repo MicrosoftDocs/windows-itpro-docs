@@ -22,6 +22,8 @@ Single-app kiosk mode starts the specified app when the user signs in, and restr
 
 >[!WARNING]
 >The assigned access feature which enables kiosk mode is intended for corporate-owned fixed-purpose devices. When the multi-app assigned access configuration is applied on the device, certain policies are enforced system-wide, and will impact other users on the device. Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all [the enforced policies](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#policies-set-by-multi-app-kiosk-configuration). A factory reset is needed to clear all the policies enforced via assigned access.
+>
+>Be aware that voice commands are enabled, even if the Cortana app is not selected as a kiosk app. 
 
 For HoloLens devices running Windows 10, version 1803, there are three methods that you can use to configure the device as a kiosk:
 - You can [use Microsoft Intune](#intune-kiosk), for HoloLens devices managed by Intune, to configure single-app and multi-app kiosks.
@@ -211,6 +213,13 @@ Follow [the instructions for creating a kiosk configuration XML file for desktop
 
 5. Select **Enable Kiosk Mode**, choose an app to run when the device starts, and click **Save**.
 
+
+## Kiosk app recommendations
+
+- You cannot select Microsoft Edge, Microsoft Store, or the Shell app as a kiosk app.
+- We recommend that you do **not** select the Settings app and the File Explorer app as a kiosk app.
+- You can select Cortana as a kiosk app. 
+- To enable photo or video capture, the HoloCamera app must be enabled as a kiosk app.
 
 ## More information
 

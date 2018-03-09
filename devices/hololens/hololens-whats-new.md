@@ -24,6 +24,8 @@ Windows 10, version 1803, is the first feature update to Windows Holographic for
 
 - Previously, after you signed in to the device with an Azure Active Directory (AD) account, you then had to **Add work access** in **Settings** to get access to corporate resources. Now, you sign in with an Azure AD account and enrollment happens automatically. 
 
+- Can change network before sign-in 
+
 - multi-user (AAD)
 - multi transfer protocol (MTP) support
 - file explorer
