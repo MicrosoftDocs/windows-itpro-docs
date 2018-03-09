@@ -17,19 +17,19 @@ This topic compiles the most common issues encountered with configuring and usin
 
 ## Troubleshooting common problems
 
-If you've followed the steps in the [Windows Analytics](windows-analytics-get-started.md) topic and are still encountering problems, you might find the solution here.
+If you've followed the steps in the [Enrolling devices in Windows Analytics](windows-analytics-get-started.md) topic and are still encountering problems, you might find the solution here.
 
-Devices not showing up(#Devices-not-showing-up)
+[Devices not showing up](#Devices-not-showing-up)
 
-Device Health data not appearing(#Device-Health-data-not-appearing)
+[Device Health data not appearing](#Device-Health-data-not-appearing)
 
-Upgrade Readiness reports outdated updates(#Upgrade-Readiness-reports-outdated-updates)
+[Upgrade Readiness reports outdated updates](#Upgrade-Readiness-reports-outdated-updates)
 
-Upgrade Readiness reports incomplete inventory(#Upgrade-Readiness-reports-incomplete-inventory)
+[Upgrade Readiness reports incomplete inventory](#Upgrade-Readiness-reports-incomplete-inventory)
 
-Upgrade Readiness doesn't show app inventory data on some devices(#Upgrade-Readiness-doesn't-show-app-inventory-data-on-some-devices)
+[Upgrade Readiness doesn't show app inventory data on some devices](#Upgrade-Readiness-doesn't-show-app-inventory-data-on-some-devices)
 
-Upgrade Readiness doesn't show IE site discovery data from some devices(#Upgrade-Readiness-doesn't-show-IE-site-discovery-data-from-some-devices)
+[Upgrade Readiness doesn't show IE site discovery data from some devices](#Upgrade-Readiness-doesn't-show-IE-site-discovery-data-from-some-devices)
 
 
 ### Devices not showing up
