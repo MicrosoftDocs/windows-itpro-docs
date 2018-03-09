@@ -27,9 +27,9 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 
 [Upgrade Readiness reports incomplete inventory](#upgrade-readiness-reports-incomplete-inventory)
 
-[Upgrade Readiness doesn't show app inventory data on some devices](#upgrade-readiness-doesn't-show-app-inventory-data-on-some-devices)
+[Upgrade Readiness doesn't show app inventory data on some devices](#upgrade-readiness-doesnt-show-app-inventory-data-on-some-devices)
 
-[Upgrade Readiness doesn't show IE site discovery data from some devices](#upgrade-readiness-doesn't-show-ie-site-discovery-data-from-some-devices)
+[Upgrade Readiness doesn't show IE site discovery data from some devices](#upgrade-readiness-doesnt-show-ie-site-discovery-data-from-some-devices)
 
 
 ### Devices not showing up
