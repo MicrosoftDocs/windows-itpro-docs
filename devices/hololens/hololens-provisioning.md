@@ -139,7 +139,7 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
 
 1. Connect the device via USB to a PC and start the device, but do not continue past the **Fit** page of OOBE (the first page with the blue box).
 
-2. Briefly press and release the **Volume Down** and **Power** buttons simultaneously.
+2. Briefly press and release the **Volume Down** and **Power** buttons simultaneously. (This step isn't needed in Windows 10, version 1803.)
 
 3. HoloLens will show up as a device in File Explorer on the PC.
 
