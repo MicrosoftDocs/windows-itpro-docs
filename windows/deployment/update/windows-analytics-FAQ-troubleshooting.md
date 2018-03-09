@@ -19,17 +19,17 @@ This topic compiles the most common issues encountered with configuring and usin
 
 If you've followed the steps in the [Enrolling devices in Windows Analytics](windows-analytics-get-started.md) topic and are still encountering problems, you might find the solution here.
 
-[Devices not showing up](#Devices-not-showing-up)
+[Devices not showing up](#devices-not-showing-up)
 
-[Device Health data not appearing](#Device-Health-data-not-appearing)
+[Device Health data not appearing](#device-health-data-not-appearing)
 
-[Upgrade Readiness reports outdated updates](#Upgrade-Readiness-reports-outdated-updates)
+[Upgrade Readiness reports outdated updates](#upgrade-readiness-reports-outdated-updates)
 
-[Upgrade Readiness reports incomplete inventory](#Upgrade-Readiness-reports-incomplete-inventory)
+[Upgrade Readiness reports incomplete inventory](#upgrade-readiness-reports-incomplete-inventory)
 
-[Upgrade Readiness doesn't show app inventory data on some devices](#Upgrade-Readiness-doesn't-show-app-inventory-data-on-some-devices)
+[Upgrade Readiness doesn't show app inventory data on some devices](#upgrade-readiness-doesn't-show-app-inventory-data-on-some-devices)
 
-[Upgrade Readiness doesn't show IE site discovery data from some devices](#Upgrade-Readiness-doesn't-show-IE-site-discovery-data-from-some-devices)
+[Upgrade Readiness doesn't show IE site discovery data from some devices](#upgrade-readiness-doesn't-show-ie-site-discovery-data-from-some-devices)
 
 
 ### Devices not showing up
@@ -58,7 +58,7 @@ If you need further information on Windows Error Reporting (WER) settings, see W
 
 #### Endpoint connectivity
 
-Devices must be able to reach the endpoints specified in (windows-analytics-get-started.md).
+Devices must be able to reach the endpoints specified in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md).
 
 If you are using proxy server authentication, it is worth taking extra care to check the configuration. Prior to Windows 10, version 1703, WER uploads error reports in the machine context. Both user (typically authenticated) and machine (typically anonymous) contexts require access through proxy servers to the diagnostic endpoints. In Windows 10, version 1703, and later WER will attempt to use the context of the user that is logged on for proxy authentication such that only the user account requires proxy access.
  
