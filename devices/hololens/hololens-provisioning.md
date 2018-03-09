@@ -7,7 +7,7 @@ ms.pagetype: hololens, devices
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 11/29/2017
+ms.date: 04/01/2018
 ---
 
 # Configure HoloLens using a provisioning package test
