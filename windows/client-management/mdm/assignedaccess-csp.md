@@ -101,6 +101,8 @@ Added in Windows 10,version 1803. This node accepts a ShellLauncherConfiguration
 
 > [!Note]  
 > You cannot set both ShellLauncher and Configuration at the same time on the device.
+>
+> Configuring Shell Launcher using the ShellLauncher node automatically enables the Shell Launcher feature if it is available within the SKU.
 
 <a href="" id="assignedaccess-statusconfiguration"></a>**./Device/Vendor/MSFT/AssignedAccess/StatusConfiguration**  
 Added in Windows 10, version 1803. This node accepts a StatusConfiguration xml as input to configure the Kiosk App Health monitoring. There are three possible values for StatusEnabled node inside StatusConfiguration xml: On, OnWithAlerts, and Off. Click [link](#statusconfiguration-xsd) to see the StatusConfiguration schema.
