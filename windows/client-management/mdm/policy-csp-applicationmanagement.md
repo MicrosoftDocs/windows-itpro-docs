@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/05/2018
+ms.date: 03/09/2018
 ---
 
 # Policy CSP - ApplicationManagement
@@ -569,6 +569,7 @@ The following list shows the supported values:
 
 > [!div class = "checklist"]
 > * User
+> * Device
 
 <hr/>
 
@@ -582,9 +583,7 @@ Most restricted value is 1.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Only display the private store within the Microsoft Store*
--   GP name: *RequirePrivateStoreOnly_1*
--   GP path: *Windows Components/Store*
+-   GP name: *RequirePrivateStoreOnly*
 -   GP ADMX file name: *WindowsStore.admx*
 
 <!--/ADMXMapped-->

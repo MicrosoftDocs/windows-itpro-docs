@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/05/2018
+ms.date: 03/09/2018
 ---
 
 # Policy CSP - Power
@@ -19,6 +19,9 @@ ms.date: 03/05/2018
 ## Power policies  
 
 <dl>
+  <dd>
+    <a href="#power-allowstandbystateswhensleepingonbattery">Power/AllowStandbyStatesWhenSleepingOnBattery</a>
+  </dd>
   <dd>
     <a href="#power-allowstandbywhensleepingpluggedin">Power/AllowStandbyWhenSleepingPluggedIn</a>
   </dd>
@@ -48,6 +51,45 @@ ms.date: 03/05/2018
   </dd>
 </dl>
 
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="power-allowstandbystateswhensleepingonbattery"></a>**Power/AllowStandbyStatesWhenSleepingOnBattery**  
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting manages whether or not Windows is allowed to use standby states when putting the computer in a sleep state.
+
+If you enable or do not configure this policy setting, Windows uses standby states to put the computer in a sleep state.
+
+If you disable this policy setting, standby states (S1-S3) are not allowed.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow standby states (S1-S3) when sleeping (on battery)*
+-   GP name: *AllowStandbyStatesDC_2*
+-   GP path: *System/Power Management/Sleep Settings*
+-   GP ADMX file name: *power.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
 
 <hr/>
 
