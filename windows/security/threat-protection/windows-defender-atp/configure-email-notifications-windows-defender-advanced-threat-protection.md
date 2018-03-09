@@ -1,5 +1,5 @@
 ---
-title: Configure email notifications in Windows Defender ATP
+title: Configure alert notifications in Windows Defender ATP
 description: Send email notifications to specified recipients to receive new alerts based on severity with Windows Defender ATP on Windows 10 Enterprise, Pro, and Education editions.
 keywords: email notifications, configure alert notifications, windows defender atp notifications, windows defender atp alerts, windows 10 enterprise, windows 10 education
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 04/16/2018
 ---
 
-# Configure email notifications in Windows Defender ATP
+# Configure alert notifications in Windows Defender ATP
 
 **Applies to:**
 
@@ -41,7 +41,7 @@ The email notification includes basic information about the alert and a link to 
 ## Set up email notifications for alerts
 The email notifications feature is turned off by default. Turn it on to start receiving email notifications.
 
-1. On the navigation pane, select **Settings** > **Email Notifications**.
+1. In the navigation pane, select **Settings** > **General** > **Alert notifications**.
 2. Toggle the setting between **On** and **Off**.
 3.	Select the alert severity level that you’d like your recipients to receive:
   - **High** – Select this level to send notifications for high-severity alerts.

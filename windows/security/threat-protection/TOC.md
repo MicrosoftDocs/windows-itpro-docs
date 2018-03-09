@@ -179,15 +179,21 @@
 ##### [Inactive machines](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#inactive-machines)
 ##### [Misconfigured machines](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#misconfigured-machines)
 #### [Check service health](windows-defender-atp\service-status-windows-defender-advanced-threat-protection.md)
-### [Configure Windows Defender ATP preferences settings](windows-defender-atp\preferences-setup-windows-defender-advanced-threat-protection.md)
-#### [Update general settings](windows-defender-atp\general-settings-windows-defender-advanced-threat-protection.md)
-#### [Enable advanced features](windows-defender-atp\advanced-features-windows-defender-advanced-threat-protection.md)
-#### [Enable preview experience](windows-defender-atp\preview-settings-windows-defender-advanced-threat-protection.md)
-#### [Configure email notifications](windows-defender-atp\configure-email-notifications-windows-defender-advanced-threat-protection.md)
-#### [Enable SIEM integration](windows-defender-atp\enable-siem-integration-windows-defender-advanced-threat-protection.md)
-#### [Enable Threat intel API](windows-defender-atp\enable-custom-ti-windows-defender-advanced-threat-protection.md)
+### [Configure Windows Defender ATP Settings](windows-defender-atp\preferences-setup-windows-defender-advanced-threat-protection.md)
+####General
+#### [Data retention](windows-defender-atp\general-settings-windows-defender-advanced-threat-protection.md)
+#### [Configure alert notifications](windows-defender-atp\configure-email-notifications-windows-defender-advanced-threat-protection.md)
+#### [Configure automation notifications](windows-defender-atp\configure-automation-notifications-windows-defender-advanced-threat-protection.md)
 #### [Enable and create Power BI reports using Windows Defender ATP data](windows-defender-atp\powerbi-reports-windows-defender-advanced-threat-protection.md)
-#### [Enable Security Analytics security controls](windows-defender-atp\enable-security-analytics-windows-defender-advanced-threat-protection.md)
+#### [Enable Secure score security controls](windows-defender-atp\enable-security-analytics-windows-defender-advanced-threat-protection.md)
+#### [Configure advanced features](windows-defender-atp\advanced-features-windows-defender-advanced-threat-protection.md)
+####Permissions
+####APIs
+#### [Enable Threat intel](windows-defender-atp\enable-custom-ti-windows-defender-advanced-threat-protection.md)
+#### [Enable SIEM integration](windows-defender-atp\enable-siem-integration-windows-defender-advanced-threat-protection.md)
+####Rules
+
+
 #### [Configure Windows Defender ATP time zone settings](windows-defender-atp\settings-windows-defender-advanced-threat-protection.md)
 
 ### [Access the Windows Defender ATP Community Center](windows-defender-atp\community-windows-defender-advanced-threat-protection.md)

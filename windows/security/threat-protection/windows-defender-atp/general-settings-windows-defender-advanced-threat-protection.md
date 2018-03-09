@@ -1,7 +1,7 @@
 ---
-title: Update general Windows Defender Advanced Threat Protection settings
-description: Update your general Windows Defender Advanced Threat Protection settings such as data retention or industry after onboarding.
-keywords: general settings, settings, update settings
+title: Update data retention settings for Windows Defender Advanced Threat Protection
+description: Update data retention settings by selecting between 30 days to 180 days.
+keywords: data storage settings, retention, update settings
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ author: mjcaparas
 ms.localizationpriority: high
 ms.date: 04/16/2018
 ---
-# Update general Windows Defender ATP settings
+# Update data storage and retention settings for Windows Defender ATP 
 
 **Applies to:**
 
@@ -26,11 +26,11 @@ ms.date: 04/16/2018
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-gensettings-abovefoldlink)
 
-During the onboarding process, a wizard takes you through the general settings of Windows Defender ATP. After onboarding, you might want to update some settings which you'll be able to do through the **Settings** menu.
+During the onboarding process, a wizard takes you through the general settings of Windows Defender ATP. After onboarding, you might want to update the data retention settings.
 
-1. In the navigation pane, select **Settings** > **General**.
+1. In the navigation pane, select **Settings** > **General** > **Data rention**.
 
-2. Modify settings such as data retention policy or the industry that best describes your organization.
+2. Select the data retention duration from the drop-down list.
 
     > [!NOTE]
     > Other settings are not editable.
