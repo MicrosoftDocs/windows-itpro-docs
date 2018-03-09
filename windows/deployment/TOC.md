@@ -254,7 +254,7 @@
 ### [Device Health](update/device-health-monitor.md)
 #### [Get started with Device Health](update/device-health-get-started.md)
 #### [Using Device Health](update/device-health-using.md)
-### [Troubleshooting Windows Analytics and FAQ](windows-analytics-FAQ-troubleshooting.md)
+### [Troubleshooting Windows Analytics and FAQ](update/windows-analytics-FAQ-troubleshooting.md)
 
 ## [Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management](upgrade/upgrade-windows-phone-8-1-to-10.md)
 
