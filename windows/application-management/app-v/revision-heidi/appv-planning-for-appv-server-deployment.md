@@ -44,6 +44,13 @@ The App-V Management Server contains the repository of packages and their assign
 
 The following table lists server-related protocols used by the App-V servers, and also describes the reporting mechanism for each server type.
 
+|||||
+|---|---|---|---|
+|||||
+|||||
+|||||
+|||||
+
 <table>
 <colgroup>
 <col width="20%" />
