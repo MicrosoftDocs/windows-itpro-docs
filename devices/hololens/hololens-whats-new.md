@@ -20,22 +20,20 @@ Windows 10, version 1803, is the first feature update to Windows Holographic for
 
     ![Provisioning HoloLens devices](images/provision-hololens-devices.png)
 
-- Media Transfer Protocol (MTP) is enabled so you can plug the HoloLens device in to a PC by USB and transfer files between HoloLens and the PC.
+- Media Transfer Protocol (MTP) is enabled so you can plug the HoloLens device in to a PC by USB and transfer files between HoloLens and the PC. You can also use the File Explorer app to move and delete files from within HoloLens.
 
 - Previously, after you signed in to the device with an Azure Active Directory (AD) account, you then had to **Add work access** in **Settings** to get access to corporate resources. Now, you sign in with an Azure AD account and enrollment happens automatically. 
 
-- Can change network before sign-in 
+- Before you sign in, you can choose the network icon below the password field to choose a different Wi-Fi network to connect to. You can also connect to a guest network, such as at a hotel, conference center, or business. 
 
-- multi-user (AAD) [Share HoloLens with multiple people](hololens-multiple-users.md)
-- multi transfer protocol (MTP) support
-- file explorer
+- You can now easily [share HoloLens with multiple people](hololens-multiple-users.md) using Azure AD accounts.
+
 - OOBE diagnostic
-- Wi-Fi on sign-in
-- guest network
-- improved add work (AAD) account
+
+
 - mail sync without MDM enrollment
-- edition name
-- configure setup options, bulk AAD token/provisioning wizard
+
+
 - developer mode
 - multi-app kiosk (use groups)
 - local account indefinite password expiry
