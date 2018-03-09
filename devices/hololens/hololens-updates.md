@@ -32,7 +32,7 @@ The Update policies supported for HoloLens are:
 If you use Microsoft Intune to manage HoloLens, you can configure the following Update policies as settings for [update rings](https://docs.microsoft.com/intune/windows-update-for-business-configure):
 
 - [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate) is set in **Software Updates** > **Windows 10 Update Rings** > **Automatic update behavior**.
-- - [Update/AllowMUUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowmuupdateservice) is set in **Software Updates** > **Windows 10 Update Rings** > **Microsoft product updates**.
+- [Update/AllowMUUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowmuupdateservice) is set in **Software Updates** > **Windows 10 Update Rings** > **Microsoft product updates**.
 - [Update/RequireDeferUpgrade](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requiredeferupgrade) is set in **Software Updates** > **Windows 10 Update Rings** > **Servicing channel**.
 
 Typically, devices access Windows Update directly for updates. You can use the following update policies to configure devices to get updates from Windows Server Update Service (WSUS) instead:
