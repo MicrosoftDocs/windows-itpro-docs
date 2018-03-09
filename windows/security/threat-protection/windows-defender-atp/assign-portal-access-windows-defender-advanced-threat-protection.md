@@ -101,10 +101,11 @@ Windows Defender ATP RBAC is designed to support your tier or role model of choi
 The implementation of role-based access control in Windows Defender ATP is based on Azure Active Directory (Azure AD) user groups. 
 
 The Windows Defender ATP RBAC framework is centered around the following controls:
-- **What actions roles are authorized to do**
-  - Create custom roles to control access to the Windows Defender ATP capabilities by leveraging on Azure AD user groups.
+- **Control who can take specific action**
+  - Create custom roles and control what Windows Defender ATP capabilities they can access with granularity.
+ 
 
-- **What information roles are authorized to view**
+- **Control who can see specific information**
   - Create machine groups by specific criteria such as names, tags, domains, and others, then grant role access to them using a specific Azure AD user group.
 
 

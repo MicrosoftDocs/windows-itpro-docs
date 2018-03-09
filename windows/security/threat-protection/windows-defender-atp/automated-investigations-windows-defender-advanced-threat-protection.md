@@ -142,27 +142,40 @@ Available filters include action type, action, status, machine name, and descrip
 
 You can also click on an action to bring up the details pane where you'll see information such as the summary of the action and input data. 
 
-### Pending actions
-This tab is displayed if there are any pending actions for which a decision is needed.
-
 ### Pending actions history
 This tab is displayed if there are pending actions for which a decision was made.
 
 
-## Pending actions on investigations
-The pending actions view aggregates all the file quarantine, persistence method removal, process termination, and release file handle that require action for an investigation to proceed or be completed.
+## Pending actions 
+This view aggregates all investigations that require an action for an investigation to proceed or be completed.
 
 Use the Customize columns drop-down menu to select columns that you'd like to show or hide. 
 
 From this view, you can also download the entire list in CSV format using the **Export** feature, specify the number of items to show per page, and navigate between pages.
 
-![Image of Pending actions](images/atp-pending-actions-auto-ir.png)
+Pending actions are grouped together in the following tabs:
+-  Quarantine file
+-  Remove persistence
+-  Stop process
+-  Expand pivot
+-  Quarantine service
 
-Selecting a file opens a panel where you can approve or reject the remediation. Other details such as file details, investigation details, and alert details are displayed.
+>[!NOTE]
+>The tab will only appear if there are pending actions for that category.
+
+### Approve or reject an action
+You'll need to manually approve or reject pending actions on each of these categories for the automated actions to proceed.
+
+Selecting an investigation from any of the categories opens a panel where you can approve or reject the remediation. Other details such as file or service details, investigation details, and alert details are displayed.
 
 ![Image of pending action selected](images/atp-pending-actions-file.png)
 
-Selecting other investigation numbers from the other pending actions categories also gives you access to this panel.
-
 From the panel, you can click on the Open investigation page link to see the investigation details.
+
+You also have the option of selecting multiple investigations to approve or reject actions on multiple investigations. 
+
+![Image of multiple investigations selected](images/atp-pending-actions-multiple.png)
+
+
+
 
