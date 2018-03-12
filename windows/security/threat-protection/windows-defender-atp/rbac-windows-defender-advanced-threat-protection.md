@@ -55,7 +55,7 @@ To implement role-based access, you'll need to define admin roles, assign corres
 
 ### Before you begin
 
-When you first log in to the Windows Defender ATP portal, you’re granted either full access or read only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. Read only access is granted to users with a Security Reader role in Azure AD. 
+When you first log in to the Windows Defender ATP portal, you're granted either full access or read only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. Read only access is granted to users with a Security Reader role in Azure AD. 
 
 > [!WARNING]
 > Before enabling the feature, it's important that you have a Global Administrator role in Azure AD and that have your Azure AD groups ready to reduce the risk of being locked out of the portal. 
@@ -81,12 +81,12 @@ After opting in to use RBAC, you cannot revert to the initial roles as when you 
 	 - **Description**
 
 	 - **Active permissions**
-		  - **View data** – Users can view information in the portal.
-		  - **Investigate alerts** – Users can manage alerts, initiate automated investigations, collect investigation packages, manage machine tags, and export machine timeline.
-		  - **Approve or take action** – Users can take response actions and approve or dismiss pending remediation actions.
-		  - **Manage system settings** – Users can configure settings, SIEM and threat intel API settings, advanced settings, preview features, and automated file uploads.
-		  - **Manage security settings** – Users can configure alert suppression settings, manage allowed or blocked lists for automation, manage folder exclusions for automation, onboard and offboard machines, and manage email notifications.
-		  - **Monitor dashboards** – Users can view all dashboards.
+		  - **View data** - Users can view information in the portal.
+		  - **Investigate alerts** - Users can manage alerts, initiate automated investigations, collect investigation packages, manage machine tags, and export machine timeline.
+		  - **Approve or take action** - Users can take response actions and approve or dismiss pending remediation actions.
+		  - **Manage system settings** - Users can configure settings, SIEM and threat intel API settings, advanced settings, preview features, and automated file uploads.
+		  - **Manage security settings** - Users can configure alert suppression settings, manage allowed or blocked lists for automation, manage folder exclusions for automation, onboard and offboard machines, and manage email notifications.
+		  - **Monitor dashboards** - Users can view all dashboards.
 
 4.	Click **Next** to assign the user to a group.
 
