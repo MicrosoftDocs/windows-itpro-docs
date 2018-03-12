@@ -35,7 +35,7 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_upgrade.svg
       title: Windows as a service
-    - href: upgrade/windows-analytics-overview
+    - href: update/windows-analytics-overview
       html: <p>Windows Analytics provides deep insights into your Windows 10 environment.</p>
       image:
         src: https://docs.microsoft.com/media/common/i_investigate.svg
