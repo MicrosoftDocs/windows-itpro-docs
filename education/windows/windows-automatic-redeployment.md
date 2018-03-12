@@ -9,7 +9,7 @@ ms.pagetype: edu
 ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
-ms.date: 12/11/2017
+ms.date: 03/08/2018
 ---
 
 # Reset devices with Windows Automatic Redeployment 
@@ -25,6 +25,9 @@ To enable Windows Automatic Redeployment in Windows 10, version 1709 (Fall Creat
 2. [Trigger a reset for each device](#trigger-windows-automatic-redeployment)
 
 ## Enable Windows Automatic Redeployment
+
+To use Windows Automatic Redeployment, [Windows Recovery Environment (WinRE) must be enabled on the device](#winre).
+
 **DisableAutomaticReDeploymentCredentials** is a policy that enables or disables the visibility of the credentials for Windows Automatic Redeployment. It is a policy node in the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialproviders), **CredentialProviders/DisableAutomaticReDeploymentCredentials**. By default, this policy is set to 1 (Disable). This ensures that Windows Automatic Redeployment isn't triggered by accident.
 
 You can set the policy using one of these methods:
@@ -83,6 +86,25 @@ Windows Automatic Redeployment is a two-step process: trigger it and then authen
      ![Notification that provisioning is complete](images/windows-automatic-redeployment-provisioningcomplete.png)
 
     Once provisioning is complete, the device is again ready for use.
+
+<span id="winre"/>
+## Troubleshoot Windows Automatic Redeployment
+
+Windows Automatic Redeployment will fail when the [Windows Recovery Environment (WinRE)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference) is not enabled on the device. You will see `Error code: ERROR_NOT_SUPPORTED (0x80070032)`.
+
+To check if WinRE is enabled, use the [REAgentC.exe tool](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reagentc-command-line-options) to run the following command:
+
+```
+reagent /info
+```
+
+If WinRE is not enabled, use the [REAgentC.exe tool](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reagentc-command-line-options) to run the following command:
+
+```
+reagent /enable
+```
+
+If Windows Automatic Reployment fails after enabling WinRE, or if you are unable to enable WinRE, please contact [Microsoft Support](https://support.microsoft.com) for assistance.
 
 ## Related topics
 
