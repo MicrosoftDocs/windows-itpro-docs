@@ -139,7 +139,7 @@ The IPv4 network prefix represented in Internet standard dotted-decimal notation
 ```
 <ipv4Prefix>192.168.100.0/24</ipv4Prefix>
 ```
-The assigned IP’s in the range of 192.168.100.1 to 192.168.100.254 match this signal configuration.
+The assigned IPv4 addresses in the range of 192.168.100.1 to 192.168.100.254 match this signal configuration.
 
 ##### IPv4Gateway
 The IPv4 network gateway represented in Internet standard dotted-decimal notation. A network port or prefix must not be present in the network string.  A **signal** element may only contain one **ipv4Gateway** element.<br>
@@ -281,8 +281,8 @@ Mulitfactor unlock writes events to event log under **Application and Services L
 
 ### Events 
 
-|Event ID | Details|
-|*********|********|
+|Event ID|Details|
+|********|*******|
 |3520|Unlock attempt initiated.|
 |5520|Unlock policy not configured.|
 |6520|Warning event.|
