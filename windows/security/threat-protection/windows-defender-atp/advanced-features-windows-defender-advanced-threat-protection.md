@@ -1,5 +1,5 @@
 ---
-title: Turn on advanced features in Windows Defender ATP
+title: Configure advanced features in Windows Defender ATP
 description: Turn on advanced features such as block file in Windows Defender Advanced Threat Protection.
 keywords: advanced features, settings, block file
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 04/16/2018
 ---
 
-# Turn on advanced features in Windows Defender ATP
+# Configure advanced features in Windows Defender ATP
 
 **Applies to:**
 
@@ -30,6 +30,9 @@ ms.date: 04/16/2018
 Depending on the Microsoft security products that you use, some advanced features might be available for you to integrate Windows Defender ATP with.
 
 Turn on the following advanced features to get better protected from potentially malicious files and gain better insight during security investigations:
+
+## Automated investigation
+When you enable this feature, you'll be able to take advantage of the automated investigation and remediation features of the service. 
 
 ## Block file
 This feature is only available if your organization uses Windows Defender Antivirus as the active antimalware solution and that the cloud-based protection feature is enabled.
@@ -74,6 +77,9 @@ When you enable this feature, you'll be able to incorporate data from Office 365
 >You'll need to have the appropriate license to enable this feature. 
 
 To receive contextual machine integration in Office 365 Threat Intelligence, you'll need to enable the Windows Defender ATP settings in the Security & Compliance dashboard. For more information, see [Office 365 Threat Intelligence overview](https://support.office.com/en-us/article/Office-365-Threat-Intelligence-overview-32405DA5-BEE1-4A4B-82E5-8399DF94C512).
+
+## Microsoft Intune connection
+
 
 ## Enable advanced features
 1. In the navigation pane, select **Preferences setup** > **Advanced features**.

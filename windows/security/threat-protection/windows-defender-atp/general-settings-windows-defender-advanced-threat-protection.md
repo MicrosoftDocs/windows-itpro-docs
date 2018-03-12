@@ -1,7 +1,7 @@
 ---
 title: Update data retention settings for Windows Defender Advanced Threat Protection
 description: Update data retention settings by selecting between 30 days to 180 days.
-keywords: data storage settings, retention, update settings
+keywords: data, storage, settings, retention, update
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ author: mjcaparas
 ms.localizationpriority: high
 ms.date: 04/16/2018
 ---
-# Update data storage and retention settings for Windows Defender ATP 
+# Update data retention settings for Windows Defender ATP 
 
 **Applies to:**
 

@@ -27,7 +27,7 @@ ms.date: 04/16/2018
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationnotifcations-abovefoldlink)
 
-You can configure Windows Defender ATP to send automation notifications to specified recipients based on certain conditions that you define. This feature enables you to identify a group of individuals who will immediately be informed and can act on automation notifications.
+You can configure Windows Defender ATP to send automation notifications to specified recipients based on certain conditions that you define. This helps you to identify a group of individuals who will immediately be informed and can act on automation notifications.
 
 > [!NOTE]
 > Only users with full access can configure automation notifications.

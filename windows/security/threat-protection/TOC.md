@@ -181,7 +181,7 @@
 #### [Check service health](windows-defender-atp\service-status-windows-defender-advanced-threat-protection.md)
 ### [Configure Windows Defender ATP Settings](windows-defender-atp\preferences-setup-windows-defender-advanced-threat-protection.md)
 ####General
-##### [Data retention](windows-defender-atp\general-settings-windows-defender-advanced-threat-protection.md)
+##### [Update data retention settings](windows-defender-atp\general-settings-windows-defender-advanced-threat-protection.md)
 ##### [Configure alert notifications](windows-defender-atp\configure-email-notifications-windows-defender-advanced-threat-protection.md)
 ##### [Configure automation notifications](windows-defender-atp\configure-automation-notifications-windows-defender-advanced-threat-protection.md)
 ##### [Enable and create Power BI reports using Windows Defender ATP data](windows-defender-atp\powerbi-reports-windows-defender-advanced-threat-protection.md)
