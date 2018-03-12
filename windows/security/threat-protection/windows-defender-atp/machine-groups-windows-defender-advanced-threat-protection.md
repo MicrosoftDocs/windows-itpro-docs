@@ -1,5 +1,5 @@
 ---
-title: Manage machine groups in Windows Defender ATP
+title: Create machine groups in Windows Defender ATP
 description: Create machine groups and set automated remediation levels on them by confiring the rules that apply on the group
 keywords: machine groups, groups, remediation, level, rules, aad group, role, assign, rank
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 04/16/2018
 ---
 
-# Manage machine groups in Windows Defender ATP
+# Create machine groups in Windows Defender ATP
 **Applies to:**
 
 - Windows 10 Enterprise
