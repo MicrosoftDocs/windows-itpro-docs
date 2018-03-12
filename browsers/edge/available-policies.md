@@ -24,7 +24,7 @@ By using Group Policy and Intune, you can set up a policy setting once, and then
 > For more info about the tools you can use to change your Group Policy objects, see the Internet Explorer 11 topics, [Group Policy and the Group Policy Management Console (GPMC)](https://go.microsoft.com/fwlink/p/?LinkId=617921), [Group Policy and the Local Group Policy Editor](https://go.microsoft.com/fwlink/p/?LinkId=617922), [Group Policy and the Advanced Group Policy Management (AGPM)](https://go.microsoft.com/fwlink/p/?LinkId=617923), and [Group Policy and Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=617924).
 
 ## Group Policy settings
-Microsoft Edge works with the following Group Policy settings to help you manager your company's web browser configurations. The Group Policy settings are found in the Group Policy Editor in the following location: 
+Microsoft Edge works with the following Group Policy settings to help you manage your company's web browser configurations. The Group Policy settings are found in the Group Policy Editor in the following location: 
 
 `Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge\`
 
