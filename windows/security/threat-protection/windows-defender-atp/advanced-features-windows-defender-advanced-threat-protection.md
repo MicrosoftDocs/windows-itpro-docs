@@ -79,7 +79,9 @@ When you enable this feature, you'll be able to incorporate data from Office 365
 To receive contextual machine integration in Office 365 Threat Intelligence, you'll need to enable the Windows Defender ATP settings in the Security & Compliance dashboard. For more information, see [Office 365 Threat Intelligence overview](https://support.office.com/en-us/article/Office-365-Threat-Intelligence-overview-32405DA5-BEE1-4A4B-82E5-8399DF94C512).
 
 ## Microsoft Intune connection
+This feature is only available if you have an active Microsoft Intune (Intune) license. 
 
+When you enable this feature, you'll be able to share device information and enhance policy enforcement. Intune provides additional information about managed devices for security analytics.
 
 ## Enable advanced features
 1. In the navigation pane, select **Preferences setup** > **Advanced features**.

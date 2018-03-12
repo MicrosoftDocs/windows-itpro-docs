@@ -86,7 +86,7 @@ Apply this filter to see specific machine groups that you might have created.
 Select between filtering the list between Automated investigations that have comments and those that don't.
 
 ## Analyze Automated investigations 
-You can view the details of an Automated investigation to see details of the investigation such as the investigation graph, alerts associated with the investigation, the machine that was investigated, and other information.
+You can view the details of an Automated investigation to see details such as the investigation graph, alerts associated with the investigation, the machine that was investigated, and other information.
 
 In this view, you'll see the name of the investigation, when it started and the duration of time that has passed in the status state.
 
