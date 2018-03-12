@@ -124,6 +124,9 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
 
 6. On the **Select security details for the provisioning package**, click **Next**.
 
+    >[WARNING!]
+    >If you encrypt the provisioning package, provisioning the HoloLens device will fail.  
+
 7. Click **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows Configuration Designer uses the project folder as the output location.
 
     Optionally, you can click **Browse** to change the default output location.
