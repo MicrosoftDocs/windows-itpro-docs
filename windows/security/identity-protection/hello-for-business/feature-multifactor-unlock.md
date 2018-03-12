@@ -68,7 +68,7 @@ The default credential providers for the **Second unlock factor credential provi
 
 Configure a comma separated list of credential provider GUIDs you want to use as first and second unlock factors. While a credential provider can appear in both lists, remember that a credential supported by that provider can only satisfy one of the unlock factors. Listed credential providers do not need to be in any specific order. 
 
-For example, if you include the PIN and fingerprint credential providers in both first and second factor lists, a user can use their fingerprint or PIN as the first unlock factor.  However, whichever factor they used to satisfy the first unlock factor cannot be used to satisfy the second unlock factor.  
+For example, if you include the PIN and fingerprint credential providers in both first and second factor lists, a user can use their fingerprint or PIN as the first unlock factor.  However, whichever factor they used to satisfy the first unlock factor cannot be used to satisfy the second unlock factor.  Each factor can therefore be used exactly once. The Trusted Signal provider can *only* be specified as part of the Second unlock factor credential provider list.  
 
 
 ## Configure Signal Rules for the Trusted Signal Credential Provider
@@ -128,10 +128,10 @@ The **rssiMin** attribute value signal indicates the strength needed for the dev
 RSSI measurements are relative and lower as the bluetooth signals between the two paired devices reduces. Therefore a measurement of 0 is stronger than -10, which is stronger than -60, which is an indicator the devices are moving further apart from each other.
 
 >[!IMPORTANT]
->Microsoft recommends using the default values for this policy settings.  Measurements are relative, based on the varying conditions of each environment.  Therefore, the same values may produce different results. Test policy settings in each environment prior to broadly deploying the setting.
+>Microsoft recommends using the default values for this policy settings.  Measurements are relative, based on the varying conditions of each environment.  Therefore, the same values may produce different results. Test policy settings in each environment prior to broadly deploying the setting.  Use the rssiMIN and rssiMaxDelta values from the XML file created by the Group Policy Management Editor or remove both attributes to use the default values.
 
 #### IP Configuration
-You define IP configuration signals using one or more ipConfiguration elements.  Each element has a string value.  IpConfiguraiton elements do not have attributes or nested elements.
+You define IP configuration signals using one or more ipConfiguration elements.  Each element has a string value.  IpConfiguration elements do not have attributes or nested elements.
 
 ##### IPv4Prefix
 The IPv4 network prefix represented in Internet standard dotted-decimal notation. A network prefix that uses the Classless Inter-Domain Routing (CIDR) notation is required as part of the network string. A network port must not be present in the network string.  A **signal** element may only contain one **ipv4Prefix** element.<br>
@@ -139,6 +139,8 @@ The IPv4 network prefix represented in Internet standard dotted-decimal notation
 ```
 <ipv4Prefix>192.168.100.0/24</ipv4Prefix>
 ```
+The assigned IP’s in the range of 192.168.100.1 to 192.168.100.254 match this signal configuration.
+
 ##### IPv4Gateway
 The IPv4 network gateway represented in Internet standard dotted-decimal notation. A network port or prefix must not be present in the network string.  A **signal** element may only contain one **ipv4Gateway** element.<br>
 **Example**
@@ -211,7 +213,7 @@ This example configures an IPConfig signal type using Ipv4Prefix, Ipv4DnsServer,
 
 
 #### Example 2
-This example configures an IpConfig signal type using a dnsSuffix element and a bluetooth signal for phones.  This configuration is wrapped for reading.  Once properly formatted, the entire XML contents must be a single line.
+This example configures an IpConfig signal type using a dnsSuffix element and a bluetooth signal for phones.  This configuration is wrapped for reading.  Once properly formatted, the entire XML contents must be a single line.  This example implies that either the ipconfig **or** the Bluetooth rule must evaluate to true, for the resulting signal evaluation to be true.
 >[!NOTE] 
 >Separate each rule element using a comma.
 
@@ -226,7 +228,7 @@ This example configures an IpConfig signal type using a dnsSuffix element and a 
 </rule>
 ```
 #### Example 3
-This example configures the same as example 2 using compounding And elements.
+This example configures the same as example 2 using compounding And elements.  This example implies that the ipconfig **and** the Bluetooth rule must evaluate to true, for the resulting signal evaluation to be true.
 ```
 <rule schemaVersion="1.0">
 <and>
@@ -242,7 +244,7 @@ This example configures the same as example 2 using compounding And elements.
 ## Deploying Multifactor Unlock
 
 >[!IMPORTANT]
->Once the you deploy multifactor unlock policies, users are not be able to unlock their devices if they do not have the required factors. The fall back options are to use passwords or smart cards (both of which could be disabled as needed).
+>You need to remove all third party credential providers to ensure users cannot unlock their devices if they do not have the required factors. The fall back options are to use passwords or smart cards (both of which could be disabled as needed).
 
 ### How to configure Multifactor Unlock policy settings
 
@@ -274,4 +276,15 @@ The Group Policy object contains the policy settings needed to trigger Windows H
 10. If using trusted signals, configure the trusted signals used by the unlock factor using the information in the [Configure Signal Rules for the Trusted Signal Credential Provider](#configure-signal-rules-for-the-trusted-signal-credential-provider) section.
 11. Click **Ok** to close the **Group Policy Management Editor**. Use the **Group Policy Management Console** to deploy the newly created Group Policy object to your organization's computers.
 
- 
+ ## Troubleshooting
+Mulitfactor unlock writes events to event log under **Application and Services Logs\Microsoft\Windows\HelloForBusiness** with the category name **Device Unlock**.
+
+### Events 
+
+|Event ID | Details|
+|*********|********|
+|3520|Unlock attempt initiated.|
+|5520|Unlock policy not configured.|
+|6520|Warning event.|
+|7520|Error event.|
+|8520|Success event.| 
