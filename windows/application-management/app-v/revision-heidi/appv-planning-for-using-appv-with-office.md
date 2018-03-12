@@ -36,7 +36,13 @@ Microsoft’s recommended best practice is to avoid Office coexistence completel
 
 ### Before you implement Office coexistence
 
-Before implementing Office coexistence, review the information in the following table that corresponds to the newest version of Office that you will use in coexistence. The documentation linked here will guide you in implementing coexistence for Windows Installer-based (MSI) and Click-to-Run installations of Office. 
+Before implementing Office coexistence, review the information in the following table that corresponds to the newest version of Office that you will use in coexistence. The documentation linked here will guide you in implementing coexistence for Windows Installer-based (MSI) and Click-to-Run installations of Office.
+
+|Office version|Relevant how-to guides|
+|---|---|
+|Office 2016|[How to use Outlook 2016 or 2013 and an earlier version of Outlook installed on the same computer](https://support.microsoft.com/kb/2782408)|
+|Office 2013|[How to use Office 2013 suites and programs (MSI deployment) on a computer running another version of Office](http://support.microsoft.com/kb/2784668)|
+|Office 2010|How to use Office 2010 suites and programs on a computer running another version of Office](http://support.microsoft.com/kb/2121447)|
 
 <table>
 <colgroup>
@@ -79,6 +85,13 @@ The following tables summarize supported coexistence scenarios. They are organiz
 Windows Installer-based and Click-to-Run Office installation methods integrate with certain points of the underlying Windows OS, but coexistence can cause these integrations to conflict. App-V can sequence certain version of Office to exclude integrations that could be potential problem spots, isolating them from the OS and preventing compatibility or user experience issues.
 
 The following table describes the integration level of each version of Office, and which mode App-V can use to sequence them.
+
+|Office version|The modes App-V can sequence this version of Office with|
+|---|---|
+|Office 2007|Always non-integrated. App-V does not offer any operating system integrations with a virtualized version of Office 2007.|
+|Office 2010|Integrated and non-integrated mode.|
+|Office 2013|Always integrated. Windows operating system integrations cannot be disabled.|
+|Office 2016|Always integrated. Windows operating system integrations cannot be disabled.|
 
 <table>
 <colgroup>
@@ -152,6 +165,44 @@ To bypass the auto-registration operation for native Word 2010, follow these ste
 When you deploy Office 2013 or Office 2016 with App-V, Office is fully integrated with the operating system that provides end-users with the same features and functionality that Office has when deployed without App-V.
 
 The Office 2013 or Office 2016 App-V package supports the following integration points with the Windows operating system:
+
+|Integration point|Description|
+|---|---|
+|Skype for Business (formerly Lync) Meeting Join plug-in for Firefox and Chrome|User can join Skype meetings from Firefox and Chrome|
+|Sent to OneNote Print Driver|User can print to OneNote|
+|OneNote Linked Notes|OneNote Linked Notes|
+|Send to OneNote Internet Explorer add-in|User can send to OneNote from IE|
+|Firewall exception for Skype for Business (formerly Lync) and Outlook|Firewall exception for Skype for Business (formerly Lync) and Outlook|
+|MAPI client|Native apps and add-ins can interact with virtual Outlook through MAPI|
+|SharePoint Plug-in for Firefox|User can use SharePoint features in Firefox|
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
 
 <table>
 <colgroup>

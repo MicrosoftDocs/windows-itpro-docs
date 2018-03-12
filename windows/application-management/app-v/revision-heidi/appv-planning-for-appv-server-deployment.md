@@ -44,12 +44,10 @@ The App-V Management Server contains the repository of packages and their assign
 
 The following table lists server-related protocols used by the App-V servers, and also describes the reporting mechanism for each server type.
 
-|||||
+|Server type|Protocols|External features needed|Reporting|
 |---|---|---|---|
-|||||
-|||||
-|||||
-|||||
+|IIS server|HTTP<br>HTTPS|This server-protocol combination requires a mechanism to synchronize content between the Management Server and the Streaming Server. When using HTTP or HTTPS, use an IIS server and a firewall to protect the server from exposure to the Internet.|Internal|
+|File|SMB|This server-protocol combination requires support to synchronize the content between the Management Server and the Streaming Server. Use a client computer that's capable of file sharing or streaming.|Internal|
 
 <table>
 <colgroup>
