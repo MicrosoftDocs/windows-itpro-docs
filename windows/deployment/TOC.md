@@ -1,4 +1,4 @@
-# [Deploy and update Windows 10](index.md)
+# [Deploy and update Windows 10](https://docs.microsoft.com/en-us/windows/deployment)
 
 ## [What's new in Windows 10 deployment](deploy-whats-new.md)
 ## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
