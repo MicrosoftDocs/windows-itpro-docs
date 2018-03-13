@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.localizationpriority: high
 author: eross-msft
 ms.author: lizross
-ms.date: 04/05/2017
+ms.date: 03/13/2018
 ---
 
 
@@ -832,13 +832,17 @@ This event represents the basic metadata about a file on the system.  The file m
 The following fields are available:
 
 - **AppraiserVersion**  The version of the Appraiser file generating the events.
+- **AvDisplayName** The version of the Appraiser file generating the events.
+- **AvProductState** If the app is an anti-virus app, this is its display name.
+- **BinaryType**  A binary type.  Example: UNINITIALIZED, ZERO_BYTE, DATA_ONLY, DOS_MODULE, NE16_MODULE, PE32_UNKNOWN, PE32_I386, PE32_ARM, PE64_UNKNOWN, PE64_AMD64, PE64_ARM64, PE64_IA64, PE32_CLR_32, PE32_CLR_IL, PE32_CLR_IL_PREFER32, PE64_CLR_64
 - **BinFileVersion**  An attempt to clean up FileVersion at the client that tries to place the version into 4 octets.
 - **BinProductVersion**  An attempt to clean up ProductVersion at the client that tries to place the version into 4 octets.
-- **BinaryType**  A binary type.  Example: UNINITIALIZED, ZERO_BYTE, DATA_ONLY, DOS_MODULE, NE16_MODULE, PE32_UNKNOWN, PE32_I386, PE32_ARM, PE64_UNKNOWN, PE64_AMD64, PE64_ARM64, PE64_IA64, PE32_CLR_32, PE32_CLR_IL, PE32_CLR_IL_PREFER32, PE64_CLR_64
 - **BoeProgramId**  If there is no entry in Add/Remove Programs, this is the ProgramID that is generated from the file metadata.
 - **CompanyName**  The company name of the vendor who developed this file.
 - **FileId**  A hash that uniquely identifies a file.
 - **FileVersion**  The File version field from the file metadata under Properties -> Details.
+- **HasUpgradeExe** Represents state of antivirus program with respect to whether it's turned on and the signatures are up-to-date.
+- **IsAv** A binary type. Example: UNINITIALIZED, ZERO_BYTE, DATA_ONLY, DOS_MODULE, NE16_MODULE, PE32_UNKNOWN, PE32_I386, PE32_ARM, PE64_UNKNOWN, PE64_AMD64, PE64_ARM64, PE64_IA64, PE32_CLR_32, PE32_CLR_IL, PE32_CLR_IL_PREFER32, PE64_CLR_64
 - **LinkDate**  The date and time that this file was linked on.
 - **LowerCaseLongPath**  The full file path to the file that was inventoried on the device.
 - **Name**  The name of the file that was inventoried.
@@ -846,6 +850,24 @@ The following fields are available:
 - **ProductVersion**  The Product version field from the file metadata under Properties -> Details.
 - **ProgramId**  A hash of the Name, Version, Publisher, and Language of an application used to identify it.
 - **Size**  The size of the file (in hexadecimal bytes).
+
+### Microsoft.Windows.Inventory.Core.InventoryApplicationDriverAdd
+
+This event represents the drivers that an application installs.
+
+The following fields are available:
+
+- **InventoryVersion** The version of the inventory component 
+- **Programids** The unique program identifier the driver is associated with.
+
+
+## Microsoft.Windows.Inventory.Core.InventoryApplicationDriverStartSync
+
+This event indicates that a new set of InventoryApplicationDriverStartAdd events will be sent. 
+
+The following fields are available:
+
+- **InventoryVersion** The version of the inventory component.
 
 
 ### Microsoft.Windows.Appraiser.General.InventoryApplicationFileRemove
@@ -1628,15 +1650,19 @@ This event sends data about the processor (architecture, speed, number of cores,
 
 The following fields are available:
 
-- **ProcessorCores**  Retrieves the number of cores in the processor.
-- **ProcessorPhysicalCores**  Number of physical cores in the processor.
+- **KvaShadow** Microcode info of the processor.
+- **MMSettingOverride** Microcode setting of the processor.
+- **MMSettingOverrideMask** Microcode setting override of the processor.
 - **ProcessorArchitecture**  Retrieves the processor architecture of the installed operating system. The complete list of values can be found in DimProcessorArchitecture.
 - **ProcessorClockSpeed**  Retrieves the clock speed of the processor in MHz.
+- **ProcessorCores**  Retrieves the number of cores in the processor.
+- **ProcessorIdentifier**  The processor identifier of a manufacturer.
 - **ProcessorManufacturer**  Retrieves the name of the processor's manufacturer.
 - **ProcessorModel**  Retrieves the name of the processor model.
-- **SocketCount**  Number of physical CPU sockets of the machine.
-- **ProcessorIdentifier**  The processor identifier of a manufacturer.
+- **ProcessorPhysicalCores**  Number of physical cores in the processor.
 - **ProcessorUpdateRevision** The microcode version.
+- **SocketCount**  Number of physical CPU sockets of the machine.
+- **SpeculationControl** Clock speed of the processor in MHz.
 
 
 ### Census.Speech
