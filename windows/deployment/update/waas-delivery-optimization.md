@@ -7,7 +7,7 @@ ms.sitesec: library
 author: JaimeO
 ms.localizationpriority: high
 ms.author: jaimeo
-ms.date: 11/21/2017
+ms.date: 03/24/2018
 ---
 
 # Configure Delivery Optimization for Windows 10 updates
@@ -58,6 +58,16 @@ Several Delivery Optimization features are configurable:
 | [Minimum Background QoS](#minimum-background-qos) | DOMinBackgroundQoS | 1607 |
 | [Enable Peer Caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching | 1703 |
 | [Allow uploads while the device is on battery while under set Battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) | DOMinBatteryPercentageAllowedToUpload | 1703 |
+| MaxForegroundDownloadBandwidth | DOPercentageMaxForegroundBandwidth | 1803 |
+| MaxBackgroundDownloadBandwidth | DOPercentageMaxBackgroundBandwidth | 1803 |
+| SetHoursToLimitBackgroundDownloadBandwidth | DOSetHoursToLimitBackgroundDownloadBandwidth | 1803 |
+| SetHoursToLimitForegroundDownloadBandwidth |DOSetHoursToLimitForegroundDownloadBandwidth | 1803 |
+| Select a method to restrict Peer Selection |DORestrictPeerSelectionBy | 1803 | Select the source of Group IDs | DOGroupIdSource | 1803 |
+| Delay background download from http (in secs) | DODelayBackgroundDownloadFromHttp | 1803 |
+| Delay foreground download from http (in secs) | DODelayForegroundDownloadFromHttp | 1803 |
+
+ 
+
 
 When configuring Delivery Optimization on Windows 10 devices, the first and most important thing to configure is the [Download mode](#download-mode), which dictates how Delivery Optimization downloads Windows updates.
 
@@ -80,6 +90,15 @@ Additional options available that control the impact Delivery Optimization has o
 - [Max Upload Bandwidth](#max-upload-bandwidth) controls the Delivery Optimization upload bandwidth usage.
 - [Monthly Upload Data Cap](#monthly-upload-data-cap) controls the amount of data a client can upload to peers each month.
 - [Minimum Background QoS](#minimum-background-qos) lets administrators guarantee a minimum download speed for Windows updates. This is achieved by adjusting the amount of data downloaded directly from Windows Update or WSUS servers, rather than other peers in the network.
+- [Maximum Foreground Download Bandwidth](#) specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth.
+- [Maximum Background Download Bandwidth](#) specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth.
+- [Set Business Hours to Limit Background Download Bandwidth](#) specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
+- [Set Business Hours to Limit Foreground Download Bandwidth](#) specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
+- [Select a method to restrict Peer Selection](#) restricts peer selection by the options you select.
+- [Select the source of Group IDs](#) restricts peer selection to a specific source.
+- [Delay background download from http (in secs)](#) allows you to delay the use of an HTTP source in a background download that is allowed to use P2P.
+- [Delay foreground download from http (in secs)](#) allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use P2P.
+
 
 Administrators can further customize scenarios where Delivery Optimization will be used with the following settings:
 - [Minimum RAM (inclusive) allowed to use Peer Caching](#minimum-ram-allowed-to-use-peer-caching) sets the minimum RAM required for peer caching to be enabled.
