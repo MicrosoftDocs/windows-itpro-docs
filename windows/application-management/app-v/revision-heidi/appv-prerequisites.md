@@ -441,6 +441,17 @@ The Management database is only required if you use the App-V Management server.
 
 ### Reporting server prerequisite software
 
+|Prerequisites and required settings|Details|
+|---|---|
+|Supported version of SQL Server|For supported versions, see [App-V supported configurations](appv-supported-configurations.md).|
+|[Microsoft .NET Framework 4.5.1 (Web Installer)](https://www.microsoft.com//download/details.aspx?id=40773)||
+|[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/download/details.aspx?id=40784)||
+|64-bit ASP.NET registration||
+|Windows Server Web Server role|This role must be added to a server operating system that is supported for the Management server.|
+|||
+|||
+|||
+
 <table>
 <colgroup>
 <col width="50%" />
