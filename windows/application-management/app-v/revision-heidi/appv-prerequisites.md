@@ -448,9 +448,11 @@ The Management database is only required if you use the App-V Management server.
 |[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/download/details.aspx?id=40784)||
 |64-bit ASP.NET registration||
 |Windows Server Web Server role|This role must be added to a server operating system that is supported for the Management server.|
-|||
-|||
-|||
+|Web Server (IIS) Management Tools|Select **IIS Management Scripts and Tools**.|
+|Web Server Role Services|To reduce the risk of unwanted or malicious data being sent to the Reporting server, you should restrict access to the Reporting Web Service per your corporate security policy.<br>Common HTTP features:<br>Static content<br>Default document<br><br>Application development:<br>ASP.NET<br>.NET Extensibility<br>ISAPI Extensions<br>ISAPI Filters<br><br>Security:<br>Windows Authentication<br>Request Filtering<br><br>Management Tools:<br>IIS Management Console|
+|Default installation location|%PROGRAMFILES%\Microsoft Application Virtualization Server|
+|Reporting service website name|Name for the Reporting website.|
+|Reporting service port binding|Unique port number for the Reporting service. This port cannot be used by another process on the computer.|
 
 <table>
 <colgroup>
@@ -532,6 +534,17 @@ The Management database is only required if you use the App-V Management server.
 
 You only require the Reporting database if you're using the App-V Reporting server.
 
+|Prerequisites and required settings|Details|
+|---|---|
+|[Microsoft .NET Framework 4.5.1 (Web Installer)](https://www.microsoft.com//download/details.aspx?id=40773)||
+|[Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)||
+|Default installation location|%PROGRAMFILES%\Microsoft Application Virtualization Server|
+|Custom SQL Server instance name (if applicable)|Format to use: **INSTANCENAME**<br>his format assumes that the installation is on the local computer.<br>If you specify the name with the format **SVR\INSTANCE**, the installation will fail.|
+|Custom database name (if applicable)|Unique database name.<br>Default: AppVReporting|
+|Reporting server location|The Reporting server will be deployed on this machine account.<br>Format to use: Domain\MachineAccount|
+|Reporting server installation administrator|Account used to install the Reporting server.<br>Format to use: Domain\AdministratorLoginName|
+|Microsoft SQL Server Service and Microsoft SQL Server Service Agent|Configure these services to be associated with user accounts that have access to query AD DS.|
+
 <table>
 <colgroup>
 <col width="50%" />
@@ -591,6 +604,12 @@ What to know before installing the prerequisites:
 * Best practice: The computer that runs the sequencer should have the same hardware and software configurations as the computers running the virtual applications.
 
 * The sequencing process is resource-intensive, so make sure that the computer running the sequencer has plenty of memory, a fast processor, and a fast hard drive. The system requirements of locally installed applications must not exceed those of the sequencer. For more information, see [App-V supported configurations](appv-supported-configurations.md).
+
+|Prerequisite|Details|
+|---|---|
+|[Microsoft .NET Framework 4.5.1 (Web Installer)](http://www.microsoft.com//download/details.aspx?id=40773)||
+|[Windows PowerShell 3.0](http://www.microsoft.com/download/details.aspx?id=34595)|Installing Windows PowerShell 3.0 requires a restart.|
+|[KB2533623](http://support.microsoft.com/kb/2533623)|Applies to Windows 7 only: download and install the KB.|
 
 <table>
 <colgroup>
