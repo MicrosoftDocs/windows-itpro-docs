@@ -62,9 +62,11 @@ Use the Windows Configuration Designer tool to create a provisioning package.
 
   ![ICD start options](images/icd-create-options-1703.png)   
 
-3. Name your project and click **Finish**. The pages for desktop provisioning will walk you through the following steps.
+3. Name your project and click **Finish**. 
 
   ![ICD desktop provisioning](images/wizard-steps.png)
+
+4. Read the instructions on the **Getting started** page and select **Next**. The pages for desktop provisioning will walk you through the following steps.
   
 > [!IMPORTANT]
 > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
