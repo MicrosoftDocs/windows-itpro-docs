@@ -175,34 +175,15 @@ The Office 2013 or Office 2016 App-V package supports the following integration 
 |Firewall exception for Skype for Business (formerly Lync) and Outlook|Firewall exception for Skype for Business (formerly Lync) and Outlook|
 |MAPI client|Native apps and add-ins can interact with virtual Outlook through MAPI|
 |SharePoint Plug-in for Firefox|User can use SharePoint features in Firefox|
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
+|Mail Control Panel Applet|User gets the mail control panel applet in Outlook|
+|Primary Interop Assemblies|Support managed add-ins|
+|Office Document Cache Handler|Allows Document Cache for Office applications|
+|Outlook Protocol Search Handler|User can search in Outlook|
+|Active X Controls|For more information on ActiveX controls, refer to [ActiveX Control API Reference](https://msdn.microsoft.com/library/vs/alm/ms440037(v=office.14).aspx).|
+|OneDrive Pro Icon Overlays|Windows Explorer shell icon overlays when users look at folders OneDrive Pro folders|
+|Shell extensions||
+|Shortcuts||
+|Windows Search||
 
 <table>
 <colgroup>
@@ -285,9 +266,7 @@ The Office 2013 or Office 2016 App-V package supports the following integration 
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
-
-For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
 
 ## Related topics
 
