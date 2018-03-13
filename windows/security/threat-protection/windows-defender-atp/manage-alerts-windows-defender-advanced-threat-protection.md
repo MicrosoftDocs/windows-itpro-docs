@@ -56,7 +56,7 @@ Whenever a change or comment is made to an alert, it is recorded in the **Commen
 
 Added comments instantly appear on the pane.
 
-## Manage suppression rules
+## Suppress alerts
 There might be scenarios where you need to suppress alerts from appearing in the Windows Defender ATP portal. Windows Defender ATP lets you create suppression rules for specific alerts that are known to be innocuous such as known tools or processes in your organization. 
 
 Suppression rules can be created from an existing alert. They can be disabled and reenabled if needed.
@@ -114,9 +114,10 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
 
 2. The list of suppression rules shows all the rules that users in your organization have created.
 
-You can select rules to tun a rule on or off.
+For more information on managing suppression rules, see [Manage suppression rules](manage-suppression-rules-windows-defender-advanced-threat-protection.md)
 
 ## Related topics
+- [Manage suppression rules](manage-suppression-rules-windows-defender-advanced-threat-protection.md)
 - [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
 - [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
 - [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
