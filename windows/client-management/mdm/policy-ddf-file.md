@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 02/26/2018
+ms.date: 03/12/2018
 ---
 
 # Policy DDF file
@@ -95,6 +95,30 @@ The XML below is the DDF for Windows 10, version 1803.
             <DDFName></DDFName>
           </DFType>
         </DFProperties>
+        <Node>
+          <NodeName>MSIAlwaysInstallWithElevatedPrivileges</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
         <Node>
           <NodeName>RequirePrivateStoreOnly</NodeName>
           <DFProperties>
@@ -7849,6 +7873,30 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>EnableEndSessionButton</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Enable/disable kiosk browser's end session button.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EnableHomeButton</NodeName>
           <DFProperties>
             <AccessType>
@@ -7944,6 +7992,30 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
         </DFProperties>
         <Node>
           <NodeName>DisallowNotificationMirroring</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisallowTileNotification</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -8285,6 +8357,34 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFType>
         </DFProperties>
         <Node>
+          <NodeName>MSIAlwaysInstallWithElevatedPrivileges</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MSI.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MSI~AT~WindowsComponents~MSI</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AlwaysInstallElevated</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>RequirePrivateStoreOnly</NodeName>
           <DFProperties>
             <AccessType>
@@ -8307,7 +8407,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ADMXMapped>WindowsStore.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>WindowsStore~AT~WindowsComponents~WindowsStore</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>RequirePrivateStoreOnly_1</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>RequirePrivateStoreOnly</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -15167,7 +15267,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryProtectionFromZoneElevation</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IESF_PolicyAllProcesses_9</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>IESF_PolicyExplorerProcesses_9</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -15221,7 +15321,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryRestrictActiveXInstall</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IESF_PolicyAllProcesses_11</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>IESF_PolicyExplorerProcesses_11</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -16382,7 +16482,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryRestrictFileDownload</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IESF_PolicyAllProcesses_12</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>IESF_PolicyExplorerProcesses_12</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -16409,7 +16509,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryScriptedWindowSecurityRestrictions</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IESF_PolicyAllProcesses_8</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>IESF_PolicyExplorerProcesses_8</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -16911,6 +17011,31 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>EnableEndSessionButton</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Enable/disable kiosk browser's end session button.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EnableHomeButton</NodeName>
           <DFProperties>
             <AccessType>
@@ -17029,6 +17154,33 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXMapped>WPN.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>WPN~AT~StartMenu~NotificationsCategory</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>NoNotificationMirroring</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisallowTileNotification</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>WPN.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>WPN~AT~StartMenu~NotificationsCategory</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>NoTileNotification</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -18002,6 +18154,78 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
         </Node>
         <Node>
           <NodeName>DisableStoreOriginatedApps</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>MSIAllowUserControlOverInstall</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>MSIAlwaysInstallWithElevatedPrivileges</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>RequirePrivateStoreOnly</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -30442,6 +30666,30 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>EnableEndSessionButton</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Enable/disable kiosk browser's end session button.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EnableHomeButton</NodeName>
           <DFProperties>
             <AccessType>
@@ -30499,6 +30747,52 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <Replace />
             </AccessType>
             <Description>Amount of time in minutes the session is idle until the kiosk browser restarts in a fresh state.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>LanmanWorkstation</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>EnableInsecureGuestLogons</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -30995,38 +31289,6 @@ Note: Domain controllers are also domain members and establish secure channels w
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>DomainMember_DigitallySignSecureChannelDataWhenPossible</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Domain member: Digitally sign secure channel data (when possible)
-
-This security setting determines whether a domain member attempts to negotiate signing for all secure channel traffic that it initiates.
-
-When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass through authentication, LSA SID/name Lookup etc.
-
-This setting determines whether or not the domain member attempts to negotiate signing for all secure channel traffic that it initiates. If enabled, the domain member will request signing of all secure channel traffic. If the Domain Controller supports signing of all secure channel traffic, then all secure channel traffic will be signed which ensures that it cannot be tampered with in transit.
-
-Default: Enabled.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>DomainMember_DisableMachineAccountPasswordChanges</NodeName>
           <DFProperties>
             <AccessType>
@@ -31045,81 +31307,6 @@ Notes
 
 This security setting should not be enabled. Computer account passwords are used to establish secure channel communications between members and domain controllers and, within the domain, between the domain controllers themselves. Once it is established, the secure channel is used to transmit sensitive information that is necessary for making authentication and authorization decisions.
 This setting should not be used in an attempt to support dual-boot scenarios that use the same computer account. If you want to dual-boot two installations that are joined to the same domain, give the two installations different computer names.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>DomainMember_MaximumMachineAccountPasswordAge</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Domain member: Maximum machine account password age
-
-This security setting determines how often a domain member will attempt to change its computer account password.
-
-Default: 30 days.
-
-Important
-
-This setting applies to Windows 2000 computers, but it is not available through the Security Configuration Manager tools on these computers.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>DomainMember_RequireStrongSessionKey</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Domain member: Require strong (Windows 2000 or later) session key
-
-This security setting determines whether 128-bit key strength is required for encrypted secure channel data.
-
-When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller within the domain. This secure channel is used to perform operations such as NTLM pass-through authentication, LSA SID/name Lookup, and so on.
-
-Depending on what version of Windows is running on the domain controller that the domain member is communicating with and the settings of the parameters:
-
-Domain member: Digitally encrypt or sign secure channel data (always)
-Domain member: Digitally encrypt secure channel data (when possible)
-Some or all of the information that is transmitted over the secure channel will be encrypted. This policy setting determines whether or not 128-bit key strength is required for the secure channel information that is encrypted.
-
-If this setting is enabled, then the secure channel will not be established unless 128-bit encryption can be performed. If this setting is disabled, then the key strength is negotiated with the domain controller.
-
-Default: Enabled.
-
-Important
-
-In order to take advantage of this policy on member workstations and servers, all domain controllers that constitute the member's domain must be running Windows 2000 or later.
-In order to take advantage of this policy on domain controllers, all domain controllers in the same domain as well as all trusted domains must run Windows 2000 or later.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -31373,52 +31560,6 @@ Default: This policy is not defined, which means that the system treats it as No
 On Windows Vista and above: For this setting to work, the Smart Card Removal Policy service must be started.</Description>
             <DFFormat>
               <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>MicrosoftNetworkClient_DigitallySignCommunicationsAlways</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Microsoft network client: Digitally sign communications (always)
-
-This security setting determines whether packet signing is required by the SMB client component.
-
-The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB server is permitted.
-
-If this setting is enabled, the Microsoft network client will not communicate with a Microsoft network server unless that server agrees to perform SMB packet signing. If this policy is disabled, SMB packet signing is negotiated between the client and server.
-
-Default: Disabled.
-
-Important
-
-For this policy to take effect on computers running Windows 2000, client-side packet signing must also be enabled. To enable client-side SMB packet signing, set Microsoft network client: Digitally sign communications (if server agrees).
-
-Notes
-
-All Windows operating systems support both a client-side SMB component and a server-side SMB component. On Windows 2000 and later operating systems, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
-Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing.
-Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
-Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing.
-Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled.
-SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors.
-For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.</Description>
-            <DFFormat>
-              <int/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -31880,7 +32021,7 @@ Windows Vista, Windows Server 2008, Windows 7, and Windows Server 2008 R2: Send 
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</NodeName>
+          <NodeName>NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -31888,12 +32029,12 @@ Windows Vista, Windows Server 2008, Windows 7, and Windows Server 2008 R2: Send 
               <Get />
               <Replace />
             </AccessType>
-            <Description>Network security: Minimum session security for NTLM SSP based (including secure RPC) clients
+            <Description>Network security: Minimum session security for NTLM SSP based (including secure RPC) servers
 
-This security setting allows a client to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are:
+This security setting allows a server to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are:
 
-Require NTLMv2 session security: The connection will fail if NTLMv2 protocol is not negotiated.
-Require 128-bit encryption: The connection will fail if strong encryption (128-bit) is not negotiated.
+Require NTLMv2 session security: The connection will fail if message integrity is not negotiated.
+Require 128-bit encryption. The connection will fail if strong encryption (128-bit) is not negotiated.
 
 Default:
 
@@ -31915,7 +32056,7 @@ Windows 7 and Windows Server 2008 R2: Require 128-bit encryption</Description>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</NodeName>
+          <NodeName>NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -31923,18 +32064,123 @@ Windows 7 and Windows Server 2008 R2: Require 128-bit encryption</Description>
               <Get />
               <Replace />
             </AccessType>
-            <Description>Network security: Minimum session security for NTLM SSP based (including secure RPC) servers
+            <Description>Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication
 
-This security setting allows a server to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are:
+This policy setting allows you to create an exception list of remote servers to which clients are allowed to use NTLM authentication if the  "Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers" policy setting is configured.
 
-Require NTLMv2 session security: The connection will fail if message integrity is not negotiated.
-Require 128-bit encryption. The connection will fail if strong encryption (128-bit) is not negotiated.
+If you configure this policy setting, you can define a list of remote servers to which clients are allowed to use NTLM authentication.
 
-Default:
+If you do not configure this policy setting, no exceptions will be applied.
 
-Windows XP, Windows Vista, Windows 2000 Server, Windows Server 2003, and Windows Server 2008: No requirements.
+The naming format for servers on this exception list is the fully qualified domain name (FQDN) or NetBIOS server name used by the application, listed one per line. To ensure exceptions the name used by all applications needs to be in the list, and to ensure an exception is accurate, the server name should be listed in both naming formats . A single asterisk (*) can be used anywhere in the string as a wildcard character.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Network security: Restrict NTLM: Audit Incoming NTLM Traffic
 
-Windows 7 and Windows Server 2008 R2: Require 128-bit encryption</Description>
+This policy setting allows you to audit incoming NTLM traffic.
+
+If you select "Disable", or do not configure this policy setting, the server will not log events for incoming NTLM traffic.
+
+If you select "Enable auditing for domain accounts", the server will log events for NTLM pass-through authentication requests that would be blocked when the "Network Security: Restrict NTLM: Incoming NTLM traffic" policy setting is set to the "Deny all domain accounts" option.
+
+If you select "Enable auditing for all accounts", the server will log events for all NTLM authentication requests that would be blocked when the "Network Security: Restrict NTLM: Incoming NTLM traffic" policy setting is set to the "Deny all accounts" option.
+
+This policy is supported on at least Windows 7 or Windows Server 2008 R2.
+
+Note: Audit events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Network security: Restrict NTLM: Incoming NTLM traffic
+
+This policy setting allows you to deny or allow incoming NTLM traffic.
+
+If you select "Allow all" or do not configure this policy setting, the server will allow all NTLM authentication requests.
+
+If you select "Deny all domain accounts," the server will deny NTLM authentication requests for domain logon and display an NTLM blocked error, but allow local account logon.
+
+If you select "Deny all accounts," the server will deny NTLM authentication requests from incoming traffic and display an NTLM blocked error.
+
+This policy is supported on at least Windows 7 or Windows Server 2008 R2.
+
+Note: Block events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers
+
+This policy setting allows you to deny or audit outgoing NTLM traffic from this Windows 7 or this Windows Server 2008 R2 computer to any Windows remote server.
+
+If you select "Allow all" or do not configure this policy setting, the client computer can authenticate identities to a remote server by using NTLM authentication.
+
+If you select "Audit all," the client computer logs an event for each NTLM authentication request to a remote server. This allows you to identify those servers receiving NTLM authentication requests from the client computer.
+
+If you select "Deny all," the client computer cannot authenticate identities to a remote server by using NTLM authentication. You can use the "Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication" policy setting to define a list of remote servers to which clients are allowed to use NTLM authentication.
+
+This policy is supported on at least Windows 7 or Windows Server 2008 R2.
+
+Note: Audit and block events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -32699,6 +32945,30 @@ The options are:
         </Node>
         <Node>
           <NodeName>EnableStructuredExceptionHandlingOverwriteProtection</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -43213,6 +43483,89 @@ Because of these factors, users do not usually need this user right. Warning: If
             <MSFT:ADMXCategory>WindowsStore~AT~WindowsComponents~WindowsStore</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisableStoreApps</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>MSIAllowUserControlOverInstall</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MSI.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MSI~AT~WindowsComponents~MSI</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>EnableUserControl</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>MSIAlwaysInstallWithElevatedPrivileges</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MSI.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MSI~AT~WindowsComponents~MSI</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AlwaysInstallElevated</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>RequirePrivateStoreOnly</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>WindowsStore.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>WindowsStore~AT~WindowsComponents~WindowsStore</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>RequirePrivateStoreOnly</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55097,7 +55450,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryProtectionFromZoneElevation</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IESF_PolicyAllProcesses_9</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>IESF_PolicyExplorerProcesses_9</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -55151,7 +55504,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryRestrictActiveXInstall</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IESF_PolicyAllProcesses_11</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>IESF_PolicyExplorerProcesses_11</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -56312,7 +56665,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryRestrictFileDownload</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IESF_PolicyAllProcesses_12</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>IESF_PolicyExplorerProcesses_12</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -56339,7 +56692,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryScriptedWindowSecurityRestrictions</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IESF_PolicyAllProcesses_8</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>IESF_PolicyExplorerProcesses_8</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -57023,6 +57376,31 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>EnableEndSessionButton</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Enable/disable kiosk browser's end session button.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EnableHomeButton</NodeName>
           <DFProperties>
             <AccessType>
@@ -57095,6 +57473,53 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:SupportedValues low="1" high="1440"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>LanmanWorkstation</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>EnableInsecureGuestLogons</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>LanmanWorkstation.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>LanmanWorkstation~AT~Network~Cat_LanmanWorkstation</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Pol_EnableInsecureGuestLogons</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -57615,41 +58040,6 @@ Note: Domain controllers are also domain members and establish secure channels w
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>DomainMember_DigitallySignSecureChannelDataWhenPossible</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue>1</DefaultValue>
-            <Description>Domain member: Digitally sign secure channel data (when possible)
-
-This security setting determines whether a domain member attempts to negotiate signing for all secure channel traffic that it initiates.
-
-When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass through authentication, LSA SID/name Lookup etc.
-
-This setting determines whether or not the domain member attempts to negotiate signing for all secure channel traffic that it initiates. If enabled, the domain member will request signing of all secure channel traffic. If the Domain Controller supports signing of all secure channel traffic, then all secure channel traffic will be signed which ensures that it cannot be tampered with in transit.
-
-Default: Enabled.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
-            <MSFT:GPRegistryMappedName>Domain member: Digitally sign secure channel data (when possible)</MSFT:GPRegistryMappedName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>DomainMember_DisableMachineAccountPasswordChanges</NodeName>
           <DFProperties>
             <AccessType>
@@ -57682,87 +58072,6 @@ This setting should not be used in an attempt to support dual-boot scenarios tha
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
             <MSFT:GPRegistryMappedName>Domain member: Disable machine account password changes</MSFT:GPRegistryMappedName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>DomainMember_MaximumMachineAccountPasswordAge</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue>30</DefaultValue>
-            <Description>Domain member: Maximum machine account password age
-
-This security setting determines how often a domain member will attempt to change its computer account password.
-
-Default: 30 days.
-
-Important
-
-This setting applies to Windows 2000 computers, but it is not available through the Security Configuration Manager tools on these computers.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:SupportedValues low="0" high="999"></MSFT:SupportedValues>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
-            <MSFT:GPRegistryMappedName>Domain member: Maximum machine account password age</MSFT:GPRegistryMappedName>
-            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>DomainMember_RequireStrongSessionKey</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue>1</DefaultValue>
-            <Description>Domain member: Require strong (Windows 2000 or later) session key
-
-This security setting determines whether 128-bit key strength is required for encrypted secure channel data.
-
-When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller within the domain. This secure channel is used to perform operations such as NTLM pass-through authentication, LSA SID/name Lookup, and so on.
-
-Depending on what version of Windows is running on the domain controller that the domain member is communicating with and the settings of the parameters:
-
-Domain member: Digitally encrypt or sign secure channel data (always)
-Domain member: Digitally encrypt secure channel data (when possible)
-Some or all of the information that is transmitted over the secure channel will be encrypted. This policy setting determines whether or not 128-bit key strength is required for the secure channel information that is encrypted.
-
-If this setting is enabled, then the secure channel will not be established unless 128-bit encryption can be performed. If this setting is disabled, then the key strength is negotiated with the domain controller.
-
-Default: Enabled.
-
-Important
-
-In order to take advantage of this policy on member workstations and servers, all domain controllers that constitute the member's domain must be running Windows 2000 or later.
-In order to take advantage of this policy on domain controllers, all domain controllers in the same domain as well as all trusted domains must run Windows 2000 or later.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
-            <MSFT:GPRegistryMappedName>Domain member: Require strong (Windows 2000 or later) session key</MSFT:GPRegistryMappedName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -58036,55 +58345,6 @@ On Windows Vista and above: For this setting to work, the Smart Card Removal Pol
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
             <MSFT:GPRegistryMappedName>Interactive logon: Smart card removal behavior</MSFT:GPRegistryMappedName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>MicrosoftNetworkClient_DigitallySignCommunicationsAlways</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description>Microsoft network client: Digitally sign communications (always)
-
-This security setting determines whether packet signing is required by the SMB client component.
-
-The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB server is permitted.
-
-If this setting is enabled, the Microsoft network client will not communicate with a Microsoft network server unless that server agrees to perform SMB packet signing. If this policy is disabled, SMB packet signing is negotiated between the client and server.
-
-Default: Disabled.
-
-Important
-
-For this policy to take effect on computers running Windows 2000, client-side packet signing must also be enabled. To enable client-side SMB packet signing, set Microsoft network client: Digitally sign communications (if server agrees).
-
-Notes
-
-All Windows operating systems support both a client-side SMB component and a server-side SMB component. On Windows 2000 and later operating systems, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
-Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing.
-Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
-Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing.
-Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled.
-SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors.
-For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
-            <MSFT:GPRegistryMappedName>Microsoft network client: Digitally sign communications (always)</MSFT:GPRegistryMappedName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -58572,44 +58832,6 @@ Windows Vista, Windows Server 2008, Windows 7, and Windows Server 2008 R2: Send 
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description>Network security: Minimum session security for NTLM SSP based (including secure RPC) clients
-
-This security setting allows a client to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are:
-
-Require NTLMv2 session security: The connection will fail if NTLMv2 protocol is not negotiated.
-Require 128-bit encryption: The connection will fail if strong encryption (128-bit) is not negotiated.
-
-Default:
-
-Windows XP, Windows Vista, Windows 2000 Server, Windows Server 2003, and Windows Server 2008: No requirements.
-
-Windows 7 and Windows Server 2008 R2: Require 128-bit encryption</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:SupportedValues AllowedValues="0,524288,536870912,537395200"></MSFT:SupportedValues>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
-            <MSFT:GPRegistryMappedName>Network security: Minimum session security for NTLM SSP based (including secure RPC) clients</MSFT:GPRegistryMappedName>
-            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</NodeName>
           <DFProperties>
             <AccessType>
@@ -58644,6 +58866,157 @@ Windows 7 and Windows Server 2008 R2: Require 128-bit encryption</Description>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
             <MSFT:GPRegistryMappedName>Network security: Minimum session security for NTLM SSP based (including secure RPC) servers</MSFT:GPRegistryMappedName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication
+
+This policy setting allows you to create an exception list of remote servers to which clients are allowed to use NTLM authentication if the  "Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers" policy setting is configured.
+
+If you configure this policy setting, you can define a list of remote servers to which clients are allowed to use NTLM authentication.
+
+If you do not configure this policy setting, no exceptions will be applied.
+
+The naming format for servers on this exception list is the fully qualified domain name (FQDN) or NetBIOS server name used by the application, listed one per line. To ensure exceptions the name used by all applications needs to be in the list, and to ensure an exception is accurate, the server name should be listed in both naming formats . A single asterisk (*) can be used anywhere in the string as a wildcard character.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
+            <MSFT:GPRegistryMappedName>Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication</MSFT:GPRegistryMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Network security: Restrict NTLM: Audit Incoming NTLM Traffic
+
+This policy setting allows you to audit incoming NTLM traffic.
+
+If you select "Disable", or do not configure this policy setting, the server will not log events for incoming NTLM traffic.
+
+If you select "Enable auditing for domain accounts", the server will log events for NTLM pass-through authentication requests that would be blocked when the "Network Security: Restrict NTLM: Incoming NTLM traffic" policy setting is set to the "Deny all domain accounts" option.
+
+If you select "Enable auditing for all accounts", the server will log events for all NTLM authentication requests that would be blocked when the "Network Security: Restrict NTLM: Incoming NTLM traffic" policy setting is set to the "Deny all accounts" option.
+
+This policy is supported on at least Windows 7 or Windows Server 2008 R2.
+
+Note: Audit events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
+            <MSFT:GPRegistryMappedName>Network security: Restrict NTLM: Audit Incoming NTLM Traffic</MSFT:GPRegistryMappedName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Network security: Restrict NTLM: Incoming NTLM traffic
+
+This policy setting allows you to deny or allow incoming NTLM traffic.
+
+If you select "Allow all" or do not configure this policy setting, the server will allow all NTLM authentication requests.
+
+If you select "Deny all domain accounts," the server will deny NTLM authentication requests for domain logon and display an NTLM blocked error, but allow local account logon.
+
+If you select "Deny all accounts," the server will deny NTLM authentication requests from incoming traffic and display an NTLM blocked error.
+
+This policy is supported on at least Windows 7 or Windows Server 2008 R2.
+
+Note: Block events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
+            <MSFT:GPRegistryMappedName>Network security: Restrict NTLM: Incoming NTLM traffic</MSFT:GPRegistryMappedName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers
+
+This policy setting allows you to deny or audit outgoing NTLM traffic from this Windows 7 or this Windows Server 2008 R2 computer to any Windows remote server.
+
+If you select "Allow all" or do not configure this policy setting, the client computer can authenticate identities to a remote server by using NTLM authentication.
+
+If you select "Audit all," the client computer logs an event for each NTLM authentication request to a remote server. This allows you to identify those servers receiving NTLM authentication requests from the client computer.
+
+If you select "Deny all," the client computer cannot authenticate identities to a remote server by using NTLM authentication. You can use the "Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication" policy setting to define a list of remote servers to which clients are allowed to use NTLM authentication.
+
+This policy is supported on at least Windows 7 or Windows Server 2008 R2.
+
+Note: Audit and block events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
+            <MSFT:GPRegistryMappedName>Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers</MSFT:GPRegistryMappedName>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -59469,6 +59842,33 @@ The options are:
             <MSFT:ADMXBacked>SecGuide.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>SecGuide~AT~Cat_SecGuide</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Pol_SecGuide_0102_SEHOP</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>SecGuide.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>SecGuide~AT~Cat_SecGuide</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Pol_SecGuide_0101_WDPUA</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>

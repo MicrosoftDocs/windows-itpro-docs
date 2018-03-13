@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/23/2017
+ms.date: 03/12/2018
 ---
 
 # View and organize the Windows Defender ATP Machines list
@@ -80,7 +80,7 @@ Filter the list to view specific machines that are well configured or require at
 - **Well configured** - Machines have the Windows Defender security controls well configured. 
 - **Requires attention** - Machines where improvements can be made to increase the overall security posture of your organization.
 
-For more information, see [View the Security Analytics dashboard](security-analytics-dashboard-windows-defender-advanced-threat-protection.md).
+For more information, see [View the Secure score dashboard](security-analytics-dashboard-windows-defender-advanced-threat-protection.md).
 
 **Malware category alerts**</br>
 Filter the list to view specific machines grouped together by the following malware categories:

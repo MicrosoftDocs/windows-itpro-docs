@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: DulceMV
 ms.localizationpriority: high
-ms.date: 10/19/2017
+ms.date: 03/12/2018
 ---
 
 # Windows Defender Advanced Threat Protection portal overview
@@ -51,11 +51,11 @@ You can navigate through the portal using the menu options available in all sect
 Area | Description
 :---|:---
 (1) Navigation pane | Use the navigation pane to move between the **Dashboards**, **Alerts queue**, **Machines list**, **Service health**, **Preferences setup**, and **Endpoint management**.
-**Dashboards**	| Enables you to view the Security operations or the Security analytics dashboard.
-**Alerts queue** | Enables you to view separate queues of new, in progress, resolved alerts, alerts assigned to you, and suppression rules.
+**Dashboards**	| Allows you to access the Security operations or the Secure score dashboard.
+**Alerts queue** | Allows you to view separate queues: new, in progress, resolved alerts, alerts assigned to you, and suppression rules.
 **Machines list** | Displays the list of machines that are onboarded to Windows Defender ATP, some information about them, and the corresponding number of alerts.
 **Service health** | Provides information on the current status of the Window Defender ATP service. You'll be able to verify that the service health is healthy or if there are current issues.
-**Preferences setup** |	Shows the settings you selected during onboarding and lets you update your industry preferences and retention policy period. You can also set other configuration settings such as email notifications, activate the preview experience, enable or turn off advanced features, SIEM integration, threat intel API, build Power BI reports, and set baselines for the Security analytics dashboard.
+**Preferences setup** |	Shows the settings you selected during onboarding and lets you update your industry preferences and retention policy period. You can also set other configuration settings such as email notifications, activate the preview experience, enable or turn off advanced features, SIEM integration, threat intel API, build Power BI reports, and set baselines for the Secure score dashboard.
 **Endpoint management** |	Provides access to endpoints such as clients and servers. Allows you to download the onboarding configuration package for endpoints. It also provides access to endpoint offboarding.
 **Community center** | Access the Community center to learn, collaborate, and share experiences about the product. 
 (2) Main portal| Main area where you will see the different views such as the Dashboards, Alerts queue, and Machines list.
