@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 author: eross-msft
 ms.author: lizross
-ms.date: 02/12/2018
+ms.date: 03/13/2018
 ---
 
 
@@ -30,9 +30,9 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 You can learn more about Windows functional and diagnostic data through these articles:
 
 
-- [Windows 10, version 1703 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md)
-- [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
-- [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md)
+- [Windows 10, version 1703 basic diagnostic events and fields](https://docs.microsoft.com/windows/configuration/basic-level-windows-diagnostic-events-and-fields-1703)
+- [Manage connections from Windows operating system components to Microsoft services](https://docs.microsoft.com/windows/configuration/manage-connections-from-windows-operating-system-components-to-microsoft-services)
+- [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization)
 
 
 
@@ -317,6 +317,8 @@ This event represents the basic metadata about a file on the system.  The file m
 The following fields are available:
 
 - **AppraiserVersion**  The version of the Appraiser file generating the events.
+- **AvDisplayName** The version of the Appraiser file generating the events.
+- **AvProductState** If the app is an anti-virus app, this is its display name.
 - **BinaryType**  A binary type.  Example: UNINITIALIZED, ZERO_BYTE, DATA_ONLY, DOS_MODULE, NE16_MODULE, PE32_UNKNOWN, PE32_I386, PE32_ARM, PE64_UNKNOWN, PE64_AMD64, PE64_ARM64, PE64_IA64, PE32_CLR_32, PE32_CLR_IL, PE32_CLR_IL_PREFER32, PE64_CLR_64
 - **BinFileVersion**  An attempt to clean up FileVersion at the client that tries to place the version into 4 octets.
 - **BinProductVersion**  An attempt to clean up ProductVersion at the client that tries to place the version into 4 octets.
@@ -324,6 +326,8 @@ The following fields are available:
 - **CompanyName**  The company name of the vendor who developed this file.
 - **FileId**  A hash that uniquely identifies a file.
 - **FileVersion**  The File version field from the file metadata under Properties -> Details.
+- **HasUpgradeExe** Represents state of antivirus program with respect to whether it's turned on and the signatures are up-to-date.
+- **IsAv** A binary type. Example: UNINITIALIZED, ZERO_BYTE, DATA_ONLY, DOS_MODULE, NE16_MODULE, PE32_UNKNOWN, PE32_I386, PE32_ARM, PE64_UNKNOWN, PE64_AMD64, PE64_ARM64, PE64_IA64, PE32_CLR_32, PE32_CLR_IL, PE32_CLR_IL_PREFER32, PE64_CLR_64
 - **LinkDate**  The date and time that this file was linked on.
 - **LowerCaseLongPath**  The full file path to the file that was inventoried on the device.
 - **Name**  The name of the file that was inventoried.
@@ -332,6 +336,23 @@ The following fields are available:
 - **ProgramId**  A hash of the Name, Version, Publisher, and Language of an application used to identify it.
 - **Size**  The size of the file (in hexadecimal bytes).
 
+### Microsoft.Windows.Inventory.Core.InventoryApplicationDriverAdd
+
+This event represents the drivers that an application installs.
+
+The following fields are available:
+
+- **InventoryVersion** The version of the inventory component 
+- **Programids** The unique program identifier the driver is associated with.
+
+
+## Microsoft.Windows.Inventory.Core.InventoryApplicationDriverStartSync
+
+This event indicates that a new set of InventoryApplicationDriverStartAdd events will be sent. 
+
+The following fields are available:
+
+- **InventoryVersion** The version of the inventory component.
 
 ### Microsoft.Windows.Appraiser.General.DecisionApplicationFileAdd
 
@@ -1593,6 +1614,9 @@ This event sends data about the processor (architecture, speed, number of cores,
 
 The following fields are available:
 
+- **KvaShadow** Microcode info of the processor.
+- **MMSettingOverride** Microcode setting of the processor.
+- **MMSettingOverrideMask** Microcode setting override of the processor.
 - **ProcessorArchitecture**  Retrieves the processor architecture of the installed operating system. The complete list of values can be found in DimProcessorArchitecture.
 - **ProcessorClockSpeed**  Retrieves the clock speed of the processor in MHz.
 - **ProcessorCores**  Retrieves the number of cores in the processor.
@@ -1602,6 +1626,7 @@ The following fields are available:
 - **ProcessorPhysicalCores**  Number of physical cores in the processor.
 - **ProcessorUpdateRevision** The microcode version.
 - **SocketCount**  Number of physical CPU sockets of the machine.
+- **SpeculationControl** Clock speed of the processor in MHz.
 
 
 ### Census.Security
@@ -2354,7 +2379,7 @@ The following fields are available:
 - **enumerator**  The bus that enumerated the device
 - **HWID**  A JSON array that provides the value and order of the HWID tree for the device.
 - **Inf**  The INF file name.
-- **installState**  The device installation state.  One of these values: https://msdn.microsoft.com/en-us/library/windows/hardware/ff543130.aspx
+- **installState**  The device installation state.  One of these values: https://msdn.microsoft.com/library/windows/hardware/ff543130.aspx
 - **InventoryVersion**  The version of the inventory file generating the events.
 - **lowerClassFilters**  Lower filter class drivers IDs installed for the device.
 - **lowerFilters**  Lower filter drivers IDs installed for the device
@@ -2506,21 +2531,21 @@ There are no fields in this event.
 
 This event provides data on the installed Office-related Internet Explorer features.
 
-- **OIeFeatureAddon** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeMachineLockdown** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeMimeHandling** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeMimeSniffing** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeNoAxInstall** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeNoDownload** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeObjectCaching** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIePasswordDisable** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeSafeBind** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeSecurityBand** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeUncSaveCheck** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeValidateUrl** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeWebOcPopup** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeWinRestrict** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeZoneElevate** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeFeatureAddon** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeMachineLockdown** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeMimeHandling** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeMimeSniffing** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeNoAxInstall** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeNoDownload** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeObjectCaching** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIePasswordDisable** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeSafeBind** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeSecurityBand** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeUncSaveCheck** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeValidateUrl** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeWebOcPopup** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeWinRestrict** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeZoneElevate** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIESettingsStartSync
 
