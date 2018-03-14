@@ -67,8 +67,6 @@ In light of these restrictions, you can use the following methods to manage per-
 
 You can manage the CDPUserSvc and OneSyncSvc per-user services with a [security template](/windows/device-security/security-policy-settings/administer-security-policy-settings#bkmk-sectmpl). See [Administer security policy settings](/windows/device-security/security-policy-settings/administer-security-policy-settings) for more information.
 
-device-security/security-policy-settings/administer-security-policy-settings
-
 For example: 
 
 ```
@@ -113,8 +111,8 @@ If a per-user service can't be disabled using a the security template, you can d
 
 ### Managing Template Services with reg.exe
 
-If you cannot use GPP to manage the per-user services you can edit the registry with reg.exe. 
-To disable the Template Services change the Startup Type for each service to 4 (disabled). 
+If you cannot use Group Policy Preferences to manage the per-user services, you can edit the registry with reg.exe. 
+To disable the Template Services, change the Startup Type for each service to 4 (disabled). 
 For example:
 
 ```code
@@ -174,3 +172,9 @@ For example, you might see the following per-user services listed in the Service
 - Sync Host_443f50
 - User Data Access_443f50
 - User Data Storage_443f50
+
+## View per-user services from the command line
+
+You can query the service configuration from the command line. The **Type** value indicates whether the service is a user-service template or user-service instance.
+
+![Use sc.exe to view service type](media/cmd-type.png)
