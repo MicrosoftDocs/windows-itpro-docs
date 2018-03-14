@@ -83,6 +83,10 @@ This feature is only available if you have an active Microsoft Intune (Intune) l
 
 When you enable this feature, you'll be able to share device information and enhance policy enforcement. Intune provides additional information about managed devices for security analytics.
 
+>[!NOTE]
+>You'll need to enable the integration on both Intune and Windows Defender ATP to use this feature. For more information on how to enable and configure the integration in Intune, see.
+
+
 ## Enable advanced features
 1. In the navigation pane, select **Preferences setup** > **Advanced features**.
 2. Select the advanced feature you want to configure and toggle the setting between **On** and **Off**.
