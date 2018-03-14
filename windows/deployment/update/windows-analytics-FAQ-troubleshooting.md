@@ -175,9 +175,9 @@ See these topics for additional background information about related privacy iss
 
 - [Windows 7, Windows 8, and Windows 8.1 Appraiser Telemetry Events, and Fields](https://go.microsoft.com/fwlink/?LinkID=822965) (link downloads a PDF file)
 - [Windows 10, version 1703 basic level Windows diagnostic events and fields](../../configuration/basic-level-windows-diagnostic-events-1703.md)
-- [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](../../configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields)
-- [Configure Windows diagnostic data in your organization](../../configuration/configure-windows-diagnostic-data-in-your-organization)
-- [Diagnostic Data Viewer Overview](https://docs.microsoft.com/windows/configuration/diagnostic-data-viewer-overview)
+- [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](../../configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields.md)
+- [Configure Windows diagnostic data in your organization](../../configuration/configure-windows-diagnostic-data-in-your-organization.md)
+- [Diagnostic Data Viewer Overview](https://docs.microsoft.com/windows/configuration/diagnostic-data-viewer-overview.md)
 - [Licensing Terms and Documentation](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Learn about security and privacy at Microsoft datacenters](http://www.microsoft.com/datacenters)
 - [Confidence in the trusted cloud](https://azure.microsoft.com/en-us/support/trust-center/) 
