@@ -1,4 +1,4 @@
-# [Deploy and update Windows 10](index.md)
+# [Deploy and update Windows 10](https://docs.microsoft.com/en-us/windows/deployment)
 
 ## [What's new in Windows 10 deployment](deploy-whats-new.md)
 ## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
@@ -229,7 +229,7 @@
 #### [Olympia Corp enrollment](update/olympia/olympia-enrollment-guidelines.md)
 ### [Change history for Update Windows 10](update/change-history-for-update-windows-10.md)
 
-## Windows Analytics
+## [Windows Analytics](update/windows-analytics-overview.md)
 ### [Manage Windows upgrades with Upgrade Readiness](upgrade/manage-windows-upgrades-with-upgrade-readiness.md)
 #### [Upgrade Readiness architecture](upgrade/upgrade-readiness-architecture.md)
 #### [Upgrade Readiness requirements](upgrade/upgrade-readiness-requirements.md)
