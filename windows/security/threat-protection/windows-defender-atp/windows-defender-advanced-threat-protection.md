@@ -77,7 +77,7 @@ detect sophisticated cyber-attacks, providing:
 
 - Rich timeline for forensic investigation and mitigation
 
-    Easily investigate the scope of breach or suspected behaviors on any machine through a rich machine timeline. File, URLs, and network connection inventory across the network. Gain additional insight using deep collection and analysis (“detonation”) for any file or URLs.
+    Easily investigate the scope of breach or suspected behaviours on any machine through a rich machine timeline. File, URLs, and network connection inventory across the network. Gain additional insight using deep collection and analysis (“detonation”) for any file or URLs.
 
 - Built in unique threat intelligence knowledge base
 
@@ -89,7 +89,7 @@ Topic | Description
 :---|:---
 Get started  |  Learn about the minimum requirements, validate licensing and complete setup, know about preview features, understand data storage and privacy, and how to assign user access to the portal.
 [Onboard endpoints and set up access](onboard-configure-windows-defender-advanced-threat-protection.md) | Learn about configuring client, server, and non-Windows endpoints. Learn how to run a detection test, configure proxy and Internet connectivity settings, and how to troubleshoot potential onboarding issues.
-[Understand the Windows Defender ATP portal](use-windows-defender-advanced-threat-protection.md) | Understand the Security operations and Security analytics dashboard, and how to navigate the portal.
+[Understand the Windows Defender ATP portal](use-windows-defender-advanced-threat-protection.md) | Understand the Security operations and Secure score dashboard, and how to navigate the portal.
 Investigate and remediate threats | Investigate alerts, machines, and take response actions to remediate threats.
 API and SIEM support | Use the supported APIs to pull and create custom alerts, or automate workflows. Use the supported SIEM tools to pull alerts from the Windows Defender ATP portal.
 Reporting | Create and build Power BI reports using Windows Defender ATP data.
