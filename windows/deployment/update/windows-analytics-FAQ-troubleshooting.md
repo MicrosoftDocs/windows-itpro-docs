@@ -174,9 +174,9 @@ Windows Analytics is fully committed to privacy, centering on these tenets:
 See these topics for additional background information about related privacy issues:
 
 - [Windows 7, Windows 8, and Windows 8.1 Appraiser Telemetry Events, and Fields](https://go.microsoft.com/fwlink/?LinkID=822965) (link downloads a PDF file)
-- [Windows 10, version 1703 basic level Windows diagnostic events and fields](../../configuration/basic-level-windows-diagnostic-events-and-fields-1703.md)
-- [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](../../configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields.md)
-- [Configure Windows diagnostic data in your organization](../../configuration/configure-windows-diagnostic-data-in-your-organization.md)
+- [Windows 10, version 1703 basic level Windows diagnostic events and fields](https://docs.microsoft.com/windows/configuration/basic-level-windows-diagnostic-events-and-fields-1703)
+- [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](https://docs.microsoft.com/windows/configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields)
+- [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windowsconfiguration/configure-windows-diagnostic-data-in-your-organization)
 - [Diagnostic Data Viewer Overview](https://docs.microsoft.com/windows/configuration/diagnostic-data-viewer-overview)
 - [Licensing Terms and Documentation](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Learn about security and privacy at Microsoft datacenters](http://www.microsoft.com/datacenters)
@@ -185,7 +185,7 @@ See these topics for additional background information about related privacy iss
 ### Can Windows Analytics be used without a direct client connection to the Microsoft Data Management Service?
 No
 
-### Can I chose the data center location?
+### Can I choose the data center location?
 Yes for Azure Log Analytics, but no for the Microsoft Data Management Service (which is hosted in the US).
 
 ### Why do SCCM and Upgrade Readiness show different counts of devices that are ready to upgrade?
