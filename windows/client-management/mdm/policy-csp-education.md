@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - Education
@@ -117,6 +117,14 @@ The policy value is expected to be the name (network host name) of an installed 
 Added in Windows 10, version 1709. Allows IT Admins to prevent user installation of additional printers from the printers settings.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Prevent addition of printers*
+-   GP name: *NoAddPrinter*
+-   GP path: *Control Panel/Printers*
+-   GP ADMX file name: *Printing.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -177,6 +185,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

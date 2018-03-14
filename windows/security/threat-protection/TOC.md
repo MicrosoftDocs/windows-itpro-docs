@@ -17,6 +17,7 @@
 
 ## [Windows Defender Advanced Threat Protection](windows-defender-atp/windows-defender-advanced-threat-protection.md)
 ###Get started
+<<<<<<< HEAD
 #### [Minimum requirements](windows-defender-atp/minimum-requirements-windows-defender-advanced-threat-protection.md)
 #### [Validate licensing and complete setup](windows-defender-atp/licensing-windows-defender-advanced-threat-protection.md)
 #### [Troubleshoot subscription and portal access issues](windows-defender-atp/troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
@@ -40,6 +41,32 @@
 #### [Portal overview](windows-defender-atp/portal-overview-windows-defender-advanced-threat-protection.md)
 #### [View the Security operations dashboard](windows-defender-atp/dashboard-windows-defender-advanced-threat-protection.md)
 #### [View the Security analytics dashboard](windows-defender-atp/security-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+=======
+#### [Minimum requirements](windows-defender-atp\minimum-requirements-windows-defender-advanced-threat-protection.md)
+#### [Validate licensing and complete setup](windows-defender-atp\licensing-windows-defender-advanced-threat-protection.md)
+#### [Troubleshoot subscription and portal access issues](windows-defender-atp\troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
+#### [Preview features](windows-defender-atp\preview-windows-defender-advanced-threat-protection.md)
+#### [Data storage and privacy](windows-defender-atp\data-storage-privacy-windows-defender-advanced-threat-protection.md)
+#### [Assign user access to the portal](windows-defender-atp\assign-portal-access-windows-defender-advanced-threat-protection.md)
+### [Onboard endpoints and set up access](windows-defender-atp\onboard-configure-windows-defender-advanced-threat-protection.md)
+#### [Configure client endpoints](windows-defender-atp\configure-endpoints-windows-defender-advanced-threat-protection.md)
+##### [Configure endpoints using Group Policy](windows-defender-atp\configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
+##### [Configure endpoints using System Center Configuration Manager](windows-defender-atp\configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
+##### [Configure endpoints using Mobile Device Management tools](windows-defender-atp\configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
+###### [Configure endpoints using Microsoft Intune](windows-defender-atp\configure-endpoints-mdm-windows-defender-advanced-threat-protection.md#configure-endpoints-using-microsoft-intune)
+##### [Configure endpoints using a local script](windows-defender-atp\configure-endpoints-script-windows-defender-advanced-threat-protection.md)
+##### [Configure non-persistent virtual desktop infrastructure (VDI) machines](windows-defender-atp\configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
+#### [Configure server endpoints](windows-defender-atp\configure-server-endpoints-windows-defender-advanced-threat-protection.md)
+#### [Configure non-Windows endpoints](windows-defender-atp\configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)
+#### [Run a detection test on a newly onboarded endpoint](windows-defender-atp\run-detection-test-windows-defender-advanced-threat-protection.md)
+#### [Configure proxy and Internet connectivity settings](windows-defender-atp\configure-proxy-internet-windows-defender-advanced-threat-protection.md)
+#### [Troubleshoot onboarding issues](windows-defender-atp\troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
+### [Understand the Windows Defender ATP portal](windows-defender-atp\use-windows-defender-advanced-threat-protection.md)
+#### [Portal overview](windows-defender-atp\portal-overview-windows-defender-advanced-threat-protection.md)
+#### [View the Security operations dashboard](windows-defender-atp\dashboard-windows-defender-advanced-threat-protection.md)
+#### [View the Secure score dashboard](windows-defender-atp\security-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+#### [View the Threat analytics dashboard](windows-defender-atp\threat-analytics-windows-defender-advanced-threat-protection.md)
+>>>>>>> 49fa7cb75f8464a1cc3cab0259181f7e031ff74b
 
 ###Investigate and remediate threats
 ####Alerts queue

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - Printers
@@ -96,14 +96,14 @@ If you disable this policy setting:
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Point and Print Restrictions*
 -   GP name: *PointAndPrint_Restrictions_Win7*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -171,14 +171,14 @@ If you disable this policy setting:
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Point and Print Restrictions*
 -   GP name: *PointAndPrint_Restrictions*
 -   GP path: *Control Panel/Printers*
 -   GP ADMX file name: *Printing.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -235,14 +235,14 @@ Note: This settings takes priority over the setting "Automatically publish new p
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Allow printers to be published*
 -   GP name: *PublishPrinters*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing2.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
 
@@ -251,6 +251,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

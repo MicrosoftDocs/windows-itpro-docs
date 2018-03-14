@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 02/05/2018
+ms.date: 03/03/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -1389,6 +1389,45 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### March 2018
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top">[eUICCs CSP](euiccs-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<ul>
+<li>IsEnabled</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[DeviceStatus CSP](devicestatus-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<ul>
+<li>OS/Mode</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Understanding ADMX-backed policies](understanding-admx-backed-policies.md)</td>
+<td style="vertical-align:top"><p>Added the following videos:</p>
+<ul>
+<li>[How to create a custom xml to enable an ADMX-backed policy and deploy the XML in Intune](https://www.microsoft.com/showcase/video.aspx?uuid=bdc9b54b-11b0-4bdb-a022-c339d16e7121)</li>
+<li>[How to import a custom ADMX file to a device using Intune](https://www.microsoft.com/showcase/video.aspx?uuid=a59888b1-429f-4a49-8570-c39a143d9a73)</li>
+</ul>
+</td></tr>
+</tbody>
+</table>
+
 ### February 2018
 
 <table class="mx-tdBreakAll">
@@ -1403,9 +1442,49 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1803:</p>
+<ul>
+<li>Display/DisablePerProcessDpiForApps</li>
+<li>Display/EnablePerProcessDpi</li>
+<li>Display/EnablePerProcessDpiForApps</li>
+<li>Experience/AllowWindowsSpotlightOnSettings</li>
+<li>TextInput/AllowHardwareKeyboardTextSuggestions</li>
+<li>TextInput/ForceTouchKeyboardDockedState</li>
+<li>TextInput/TouchKeyboardDictationButtonAvailability</li>
+<li>TextInput/TouchKeyboardEmojiButtonAvailability</li>
+<li>TextInput/TouchKeyboardFullModeAvailability</li>
+<li>TextInput/TouchKeyboardHandwritingModeAvailability</li>
+<li>TextInput/TouchKeyboardNarrowModeAvailability</li>
+<li>TextInput/TouchKeyboardSplitModeAvailability</li>
+<li>TextInput/TouchKeyboardWideModeAvailability</li>
+<ul>
+</td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[VPNv2 ProfileXML XSD](vpnv2-profile-xsd.md)</td>
 <td style="vertical-align:top"><p>Updated the XSD and Plug-in profile example for VPNv2 CSP.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[AssignedAccess CSP](assignedaccess-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following nodes in Windows 10, version 1803:</p>
+<ul>
+<li>Status</li>
+<li>ShellLauncher</li>
+<li>StatusConfiguration</li>
+</ul>
+<p>Updated the AssigneAccessConfiguration schema.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[MultiSIM CSP](multisim-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<ul>
+<li>MaintainProcessorArchitectureOnUpdate</li>
+</ul>
 </td></tr>
 </tbody>
 </table>
@@ -1426,7 +1505,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tbody>
 <tr>
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
-<td style="vertical-align:top"><p>Added the following new policies for Windows 10, next major update:</p>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1803:</p>
 <ul>
 <li>AccountPoliciesAccountLockoutPolicy/AccountLockoutDuration</li>
 <li>AccountPoliciesAccountLockoutPolicy/AccountLockoutThreshold</li>
@@ -1539,11 +1618,15 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
-<td style="vertical-align:top"><p>Updated the description for AllowWarningForOtherDiskEncryption to describe changes added in Windows 10, next major update.</p>
+<td style="vertical-align:top"><p>Updated the description for AllowWarningForOtherDiskEncryption to describe changes added in Windows 10, version 1803.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added new node MaintainProcessorArchitectureOnUpdate in Windows 10, next major update.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[DMClient CSP](dmclient-csp.md)</td>
-<td style="vertical-align:top"><p>Added ./User/Vendor/MSFT/DMClient/Provider/[ProviderID]/FirstSyncStatus node. Also added the following nodes in Windows 10, next major update:</p>
+<td style="vertical-align:top"><p>Added ./User/Vendor/MSFT/DMClient/Provider/[ProviderID]/FirstSyncStatus node. Also added the following nodes in Windows 10, version 1803:</p>
 <ul>
 <li>AADSendDeviceToken</li>
 <li>BlockInStatusPage</li>
@@ -1555,7 +1638,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[RemoteWipe CSP](remotewipe-csp.md)</td>
-<td style="vertical-align:top"><p>Added the following nodes in Windows 10, next major update:</p>
+<td style="vertical-align:top"><p>Added the following nodes in Windows 10, version 1803:</p>
 <ul>
 <li>AutomaticRedeployment</li>
 <li>doAutomaticRedeployment</li>
@@ -1565,11 +1648,21 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[Defender CSP](defender-csp.md)</td>
-<td style="vertical-align:top"><p>Added new node (OfflineScan) in Windows 10, next major update.</p>
+<td style="vertical-align:top"><p>Added new node (OfflineScan) in Windows 10, version 1803.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[UEFI CSP](uefi-csp.md)</td>
-<td style="vertical-align:top"><p>Added a new CSP in Windows 10, next major update.</p>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Update CSP](update-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following nodes in Windows 10, version 1803:</p>
+<ul>
+<li>Rollback</li>
+<li>Rollback/FeatureUpdate</li>
+<li>Rollback/QualityUpdateStatus</li>
+<li>Rollback/FeatureUpdateStatus</li>
+</ul>
 </td></tr>
 </tbody>
 </table>

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - Maps
@@ -124,6 +124,14 @@ Added in Windows 10, version 1607. Disables the automatic download and update o
 After the policy is applied, you can verify the settings in the user interface in **System** &gt; **Offline Maps**.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off Automatic Download and Update of Map Data*
+-   GP name: *TurnOffAutoUpdate*
+-   GP path: *Windows Components/Maps*
+-   GP ADMX file name: *WinMaps.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -140,6 +148,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

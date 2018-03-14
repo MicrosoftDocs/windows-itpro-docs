@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - ApplicationManagement
@@ -98,6 +98,14 @@ Specifies whether non Microsoft Store apps are allowed.
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow all trusted apps to install*
+-   GP name: *AppxDeploymentAllowAllTrustedApps*
+-   GP path: *Windows Components/App Package Deployment*
+-   GP ADMX file name: *AppxPackageManager.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -152,6 +160,14 @@ Specifies whether automatic update of apps from Microsoft Store are allowed.
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off Automatic Download and Install of updates*
+-   GP name: *DisableAutoInstall*
+-   GP path: *Windows Components/Store*
+-   GP ADMX file name: *WindowsStore.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -204,6 +220,14 @@ Specifies whether developer unlock is allowed.
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allows development of Windows Store apps and installing them from an integrated development environment (IDE)*
+-   GP name: *AllowDevelopmentWithoutDevLicense*
+-   GP path: *Windows Components/App Package Deployment*
+-   GP ADMX file name: *AppxPackageManager.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -260,6 +284,14 @@ Specifies whether DVR and broadcasting is allowed.
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Enables or disables Windows Game Recording and Broadcasting*
+-   GP name: *AllowGameDVR*
+-   GP path: *Windows Components/Windows Game Recording and Broadcasting*
+-   GP ADMX file name: *GameDVR.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -312,6 +344,14 @@ Specifies whether multiple users of the same app can share data.
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow a Windows app to share application data between users*
+-   GP name: *AllowSharedLocalAppData*
+-   GP path: *Windows Components/App Package Deployment*
+-   GP ADMX file name: *AppxPackageManager.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -479,6 +519,14 @@ Value evaluation rule - The information for PolicyManager is opaque. There is no
 Added in Windows 10, version 1607. Boolean value that disables the launch of all apps from Microsoft Store that came pre-installed or were downloaded.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Disable all apps from Microsoft Store *
+-   GP name: *DisableStoreApps*
+-   GP path: *Windows Components/Store*
+-   GP ADMX file name: *WindowsStore.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -521,6 +569,7 @@ The following list shows the supported values:
 
 > [!div class = "checklist"]
 > * User
+> * Device
 
 <hr/>
 
@@ -532,6 +581,12 @@ Allows disabling of the retail catalog and only enables the Private store.
 Most restricted value is 1.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP name: *RequirePrivateStoreOnly*
+-   GP ADMX file name: *WindowsStore.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -584,6 +639,14 @@ Specifies whether application data is restricted to the system drive.
 Most restricted value is 1.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Prevent users' app data from being stored on non-system volumes*
+-   GP name: *RestrictAppDataToSystemVolume*
+-   GP path: *Windows Components/App Package Deployment*
+-   GP ADMX file name: *AppxPackageManager.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -636,6 +699,14 @@ Specifies whether the installation of applications is restricted to the system d
 Most restricted value is 1.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Disable installing Windows apps on non-system volumes*
+-   GP name: *DisableDeploymentToNonSystemVolumes*
+-   GP path: *Windows Components/App Package Deployment*
+-   GP ADMX file name: *AppxPackageManager.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -651,6 +722,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

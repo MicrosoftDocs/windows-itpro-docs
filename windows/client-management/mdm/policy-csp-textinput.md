@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - TextInput
@@ -21,6 +21,9 @@ ms.date: 01/30/2018
 ## TextInput policies  
 
 <dl>
+  <dd>
+    <a href="#textinput-allowhardwarekeyboardtextsuggestions">TextInput/AllowHardwareKeyboardTextSuggestions</a>
+  </dd>
   <dd>
     <a href="#textinput-allowimelogging">TextInput/AllowIMELogging</a>
   </dd>
@@ -63,8 +66,82 @@ ms.date: 01/30/2018
   <dd>
     <a href="#textinput-excludejapaneseimeexceptshiftjis">TextInput/ExcludeJapaneseIMEExceptShiftJIS</a>
   </dd>
+  <dd>
+    <a href="#textinput-forcetouchkeyboarddockedstate">TextInput/ForceTouchKeyboardDockedState</a>
+  </dd>
+  <dd>
+    <a href="#textinput-touchkeyboarddictationbuttonavailability">TextInput/TouchKeyboardDictationButtonAvailability</a>
+  </dd>
+  <dd>
+    <a href="#textinput-touchkeyboardemojibuttonavailability">TextInput/TouchKeyboardEmojiButtonAvailability</a>
+  </dd>
+  <dd>
+    <a href="#textinput-touchkeyboardfullmodeavailability">TextInput/TouchKeyboardFullModeAvailability</a>
+  </dd>
+  <dd>
+    <a href="#textinput-touchkeyboardhandwritingmodeavailability">TextInput/TouchKeyboardHandwritingModeAvailability</a>
+  </dd>
+  <dd>
+    <a href="#textinput-touchkeyboardnarrowmodeavailability">TextInput/TouchKeyboardNarrowModeAvailability</a>
+  </dd>
+  <dd>
+    <a href="#textinput-touchkeyboardsplitmodeavailability">TextInput/TouchKeyboardSplitModeAvailability</a>
+  </dd>
+  <dd>
+    <a href="#textinput-touchkeyboardwidemodeavailability">TextInput/TouchKeyboardWideModeAvailability</a>
+  </dd>
 </dl>
 
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="textinput-allowhardwarekeyboardtextsuggestions"></a>**TextInput/AllowHardwareKeyboardTextSuggestions**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803.  Specifies text prediction for hardware keyboard is always disabled. When this policy is set to 0, text prediction for hardware keyboard is always disabled.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 – Text prediction for the hardware keyboard is disabled and the switch is unusable (user cannot activate the feature).
+-   1 (default) – Text prediction for the hardware keyboard is enabled. User can change the setting.
+
+<!--/SupportedValues-->
+<!--/Policy-->
 
 <hr/>
 
@@ -580,6 +657,14 @@ Allows the uninstall of language features, such as spell checkers, on a device.
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Uninstallation of Language Features*
+-   GP name: *AllowLanguageFeaturesUninstall*
+-   GP path: *Windows Components/Text Input*
+-   GP ADMX file name: *TextInput.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -627,7 +712,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. This policy allows the IT admin to enable the touch keyboard to automatically show up when the device is in the desktop mode. 
+Added in Windows 10, version 1803. This policy allows the IT admin to enable the touch keyboard to automatically show up when the device is in the desktop mode. 
 
 The touch keyboard is enabled in both the tablet and desktop mode. In the tablet mode, when you touch a textbox, the touch keyboard automatically shows up. 
 But in the desktop mode, by default, the touch keyboard does not automatically show up when you touch a textbox. The user must click the system tray to enable the touch keyboard. 
@@ -806,6 +891,414 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="textinput-forcetouchkeyboarddockedstate"></a>**TextInput/ForceTouchKeyboardDockedState**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803. Specifies the touch keyboard is always docked. When this policy is set to enabled, the touch keyboard is always docked.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - (default) - The OS determines when it's most appropriate to be available. 
+-   1 - Touch keyboard is always docked.
+-   2 - Touch keyboard docking can be changed.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="textinput-touchkeyboarddictationbuttonavailability"></a>**TextInput/TouchKeyboardDictationButtonAvailability**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803. Specifies whether the dictation input button is enabled or disabled for the touch keyboard. When this policy is set to disabled, the dictation input button on touch keyboard is disabled.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) - The OS determines when it's most appropriate to be available.
+-   1 - Dictation button on the keyboard is always available.
+-   2 - Dictation button on the keyboard is always disabled.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="textinput-touchkeyboardemojibuttonavailability"></a>**TextInput/TouchKeyboardEmojiButtonAvailability**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803. Specifies whether the emoji button is enabled or disabled for the touch keyboard. When this policy is set to disabled, the emoji button on touch keyboard is disabled.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) - The OS determines when it's most appropriate to be available.
+-   1 - Emoji button on keyboard is always available.
+-   2 - Emoji button on keyboard is always disabled.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="textinput-touchkeyboardfullmodeavailability"></a>**TextInput/TouchKeyboardFullModeAvailability**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803. Specifies whether the full keyboard mode is enabled or disabled for the touch keyboard. When this policy is set to disabled, the full keyboard mode for touch keyboard is disabled.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) - The OS determines when it's most appropriate to be available.
+-   1 - Full keyboard is always available.
+-   2 - Full keyboard is always disabled.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="textinput-touchkeyboardhandwritingmodeavailability"></a>**TextInput/TouchKeyboardHandwritingModeAvailability**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803. Specifies whether the handwriting input panel is enabled or disabled. When this policy is set to disabled, the handwriting input panel is disabled.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) - The OS determines when it's most appropriate to be available.
+-   1 - Handwriting input panel is always available.
+-   2 - Handwriting input panel is always disabled.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="textinput-touchkeyboardnarrowmodeavailability"></a>**TextInput/TouchKeyboardNarrowModeAvailability**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803. Specifies whether the narrow keyboard mode is enabled or disabled for the touch keyboard. When this policy is set to disabled, the narrow keyboard mode for touch keyboard is disabled.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) - The OS determines when it's most appropriate to be available.
+-   1 - Narrow keyboard is always available.
+-   2 - Narrow keyboard is always disabled.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="textinput-touchkeyboardsplitmodeavailability"></a>**TextInput/TouchKeyboardSplitModeAvailability**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803. Specifies whether the split keyboard mode is enabled or disabled for the touch keyboard. When this policy is set to disabled, the split keyboard mode for touch keyboard is disabled.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) - The OS determines when it's most appropriate to be available.
+-   1 - Split keyboard is always available.
+-   2 - Split keyboard is always disabled.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="textinput-touchkeyboardwidemodeavailability"></a>**TextInput/TouchKeyboardWideModeAvailability**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803. Specifies whether the wide keyboard mode is enabled or disabled for the touch keyboard. When this policy is set to disabled, the wide keyboard mode for touch keyboard is disabled.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) - The OS determines when it's most appropriate to be available.
+-   1 - Wide keyboard is always available.
+-   2 - Wide keyboard is always disabled.
+
+<!--/SupportedValues-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -813,6 +1306,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

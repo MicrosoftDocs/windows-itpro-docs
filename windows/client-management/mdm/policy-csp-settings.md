@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - Settings
@@ -370,6 +370,15 @@ Enables or disables the retrieval of online tips and help for the Settings app.
 If disabled, Settings will not contact Microsoft content services to retrieve tips and help content.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Online Tips*
+-   GP name: *AllowOnlineTips*
+-   GP element: *CheckBox_AllowOnlineTips*
+-   GP path: *Control Panel*
+-   GP ADMX file name: *ControlPanel.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -729,6 +738,14 @@ The following list shows the supported values:
 Added in Windows 10, version 1703.  Allows IT Admins to configure the default setting for showing additional calendars (besides the default calendar for the locale) in the taskbar clock and calendar flyout.  In this version of Windows 10, supported additional calendars are: Simplified or Traditional Chinese lunar calendar. Turning on one of these calendars will display Chinese lunar dates below the default calendar for the locale.  Select "Don't show additional calendars" to prevent showing other calendars besides the default calendar for the locale.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Show additional calendar*
+-   GP name: *ConfigureTaskbarCalendar*
+-   GP path: *Start Menu and Taskbar*
+-   GP ADMX file name: *Taskbar.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -805,6 +822,15 @@ Example 2, specifies that the wifi page should not be shown:
 hide:wifi
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Settings Page Visibility*
+-   GP name: *SettingsPageVisibility*
+-   GP element: *SettingsPageVisibilityBox*
+-   GP path: *Control Panel*
+-   GP ADMX file name: *ControlPanel.admx*
+
+<!--/ADMXMapped-->
 <!--Validation-->
 To validate on Desktop, do the following:
 
@@ -821,6 +847,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

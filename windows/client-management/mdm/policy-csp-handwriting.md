@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - Handwriting
@@ -72,6 +72,14 @@ In floating mode, the content is hidden behind a flying-in panel and results in 
 The docked mode is especially useful in Kiosk mode where you do not expect the end-user to drag the flying-in panel out of the way.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Handwriting Panel Default Mode Docked*
+-   GP name: *PanelDefaultModeDocked*
+-   GP path: *Windows Components/Handwriting*
+-   GP ADMX file name: *Handwriting.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -87,6 +95,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

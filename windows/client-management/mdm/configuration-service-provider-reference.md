@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 02/02/2018
+ms.date: 03/12/2018
 ---
 
 # Configuration service provider reference
@@ -1128,6 +1128,34 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
+[eUICCs CSP](euiccs-csp.md)  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
 [FileSystem CSP](filesystem-csp.md)  
 
 <!--StartSKU-->
@@ -1289,6 +1317,34 @@ Footnotes:
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
+[MultiSIM CSP](multisim-csp.md)  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
 </table>
 
@@ -2080,7 +2136,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Uefi CSP](uefi-csp.md)  
+[UEFI CSP](uefi-csp.md)  
 
 <!--StartSKU-->
 <table>
@@ -2095,7 +2151,7 @@ Footnotes:
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
@@ -2453,7 +2509,7 @@ Footnotes:
  Footnotes: 
 - 1 - Added in Windows 10, version 1607
 - 2 - Added in Windows 10, version 1703  
-- 3 - Added in the next major update to Windows 10  
+- 3 - Added in Windows 10, version 1803  
 
 ## CSP DDF files download
 
@@ -2540,6 +2596,7 @@ Footnotes:
 -   [Reporting CSP](reporting-csp.md)
 -   [RootCATrustedCertificates CSP](rootcacertificates-csp.md)
 -   [SurfaceHub CSP](surfacehub-csp.md)
+-   [UEFI CSP](uefi-csp.md)  
 -   [WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)
 
 
