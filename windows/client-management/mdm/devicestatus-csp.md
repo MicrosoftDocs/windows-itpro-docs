@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 03/12/2018
 ---
 
 # DeviceStatus CSP
@@ -129,6 +129,15 @@ Supported operation is Get.
 
 <a href="" id="devicestatus-os-edition"></a>**DeviceStatus/OS/Edition**  
 Added in Windows, version 1607. String that specifies the OS edition.
+
+Supported operation is Get.
+
+<a href="" id="devicestatus-os-mode"></a>**DeviceStatus/OS/Mode**  
+Added in Windows, version 1803. Read only node that specifies the device mode.
+
+Valid values:  
+-  0 - the device is in standard configuration
+-  1 - the device is in S mode configuration
 
 Supported operation is Get.
 

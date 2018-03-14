@@ -499,6 +499,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-browser.md#browser-preventsmartscreenpromptoverrideforfiles" id="browser-preventsmartscreenpromptoverrideforfiles">Browser/PreventSmartScreenPromptOverrideForFiles</a>
   </dd>
   <dd>
+    <a href="./policy-csp-browser.md#browser-preventtabpreloading" id="browser-preventtabpreloading">Browser/PreventTabPreloading</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-browser.md#browser-preventusinglocalhostipaddressforwebrtc" id="browser-preventusinglocalhostipaddressforwebrtc">Browser/PreventUsingLocalHostIPAddressForWebRTC</a>
   </dd>
   <dd>
@@ -4543,7 +4546,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
 -   [Settings/AllowDateTime](#settings-allowdatetime)  
 -   [Settings/AllowVPN](#settings-allowvpn)  
--   [System/AllowFontProviders](#system-allowfontproviders)  
 -   [System/AllowLocation](#system-allowlocation)  
 -   [System/AllowTelemetry](#system-allowtelemetry)  
 -   [Update/AllowAutoUpdate](#update-allowautoupdate)  

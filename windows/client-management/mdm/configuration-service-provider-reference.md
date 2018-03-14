@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/02/2018
+ms.date: 03/12/2018
 ---
 
 # Configuration service provider reference
@@ -2136,7 +2136,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Uefi CSP](uefi-csp.md)  
+[UEFI CSP](uefi-csp.md)  
 
 <!--StartSKU-->
 <table>
@@ -2151,7 +2151,7 @@ Footnotes:
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
@@ -2596,6 +2596,7 @@ Footnotes:
 -   [Reporting CSP](reporting-csp.md)
 -   [RootCATrustedCertificates CSP](rootcacertificates-csp.md)
 -   [SurfaceHub CSP](surfacehub-csp.md)
+-   [UEFI CSP](uefi-csp.md)  
 -   [WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)
 
 

@@ -39,7 +39,7 @@
 ### [Understand the Windows Defender ATP portal](windows-defender-atp\use-windows-defender-advanced-threat-protection.md)
 #### [Portal overview](windows-defender-atp\portal-overview-windows-defender-advanced-threat-protection.md)
 #### [View the Security operations dashboard](windows-defender-atp\dashboard-windows-defender-advanced-threat-protection.md)
-#### [View the Security analytics dashboard](windows-defender-atp\security-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+#### [View the Secure score dashboard](windows-defender-atp\security-analytics-dashboard-windows-defender-advanced-threat-protection.md)
 #### [View the Threat analytics dashboard](windows-defender-atp\threat-analytics-windows-defender-advanced-threat-protection.md)
 
 ###Investigate and remediate threats
