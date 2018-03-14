@@ -50,7 +50,7 @@ If devices are not showing up as expected, find a representative device and foll
 If you want to check a large number of devices, you should run the latest script at scale from your management tool of choice (for example, System Center Configuration Manager) and check the results centrally (you might not need verbose logging in this case, unless you plan to collect the log files).
 
 
-If you think the issue might be related a network proxy, check the endpoint connectivity(#Endpoint-connectivity). Also see [Understanding connectivity scenarios and the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog.
+If you think the issue might be related a network proxy, check the endpoint connectivity(#endpoint-connectivity). Also see [Understanding connectivity scenarios and the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog.
 
 ### Device Health data not appearing
 
@@ -71,7 +71,7 @@ Devices must be able to reach the endpoints specified in [Enrolling devices in W
 
 If you are using proxy server authentication, it is worth taking extra care to check the configuration. Prior to Windows 10, version 1703, WER uploads error reports in the machine context. Both user (typically authenticated) and machine (typically anonymous) contexts require access through proxy servers to the diagnostic endpoints. In Windows 10, version 1703, and later WER will attempt to use the context of the user that is logged on for proxy authentication such that only the user account requires proxy access.
  
-Therefore, it's important to ensure that both machine and user accounts have access to the endpoints using authentication (or to whitelist the endpoints so that outbound proxy authentication is not required). For suggested methods, see (windows-analytics-get-started.md#Configuring endpoint access with proxy servers)
+Therefore, it's important to ensure that both machine and user accounts have access to the endpoints using authentication (or to whitelist the endpoints so that outbound proxy authentication is not required). For suggested methods, see [Enrolling devices in Windows Analytics](windows-analytics-get-started.md#configuring-endpoint-access-with-proxy-servers).
  
 To test access as a given user, you can run this Windows PowerShell cmdlet *while logged on as that user*: 
 
@@ -174,9 +174,9 @@ Windows Analytics is fully committed to privacy, centering on these tenets:
 See these topics for additional background information about related privacy issues:
 
 - [Windows 7, Windows 8, and Windows 8.1 Appraiser Telemetry Events, and Fields](https://go.microsoft.com/fwlink/?LinkID=822965) (link downloads a PDF file)
-- [Windows 10, version 1703 basic level Windows diagnostic events and fields](../../configuration/basic-level-windows-diagnostic-events-1703)
-- [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](../../configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields)
-- [Configure Windows diagnostic data in your organization](../../configuration/configure-windows-diagnostic-data-in-your-organization)
+- [Windows 10, version 1703 basic level Windows diagnostic events and fields](../../configuration/basic-level-windows-diagnostic-events-and-fields-1703.md)
+- [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](../../configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields.md)
+- [Configure Windows diagnostic data in your organization](../../configuration/configure-windows-diagnostic-data-in-your-organization.md)
 - [Diagnostic Data Viewer Overview](https://docs.microsoft.com/windows/configuration/diagnostic-data-viewer-overview)
 - [Licensing Terms and Documentation](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Learn about security and privacy at Microsoft datacenters](http://www.microsoft.com/datacenters)
