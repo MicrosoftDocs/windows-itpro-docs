@@ -30,9 +30,9 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 You can learn more about Windows functional and diagnostic data through these articles:
 
 
-- [Windows 10, version 1703 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md)
-- [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
-- [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md)
+- [Windows 10, version 1703 basic diagnostic events and fields](https://docs.microsoft.com/windows/configuration/basic-level-windows-diagnostic-events-and-fields-1703)
+- [Manage connections from Windows operating system components to Microsoft services](https://docs.microsoft.com/windows/configuration/manage-connections-from-windows-operating-system-components-to-microsoft-services)
+- [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization)
 
 
 
@@ -2379,7 +2379,7 @@ The following fields are available:
 - **enumerator**  The bus that enumerated the device
 - **HWID**  A JSON array that provides the value and order of the HWID tree for the device.
 - **Inf**  The INF file name.
-- **installState**  The device installation state.  One of these values: https://msdn.microsoft.com/en-us/library/windows/hardware/ff543130.aspx
+- **installState**  The device installation state.  One of these values: https://msdn.microsoft.com/library/windows/hardware/ff543130.aspx
 - **InventoryVersion**  The version of the inventory file generating the events.
 - **lowerClassFilters**  Lower filter class drivers IDs installed for the device.
 - **lowerFilters**  Lower filter drivers IDs installed for the device
@@ -2531,21 +2531,21 @@ There are no fields in this event.
 
 This event provides data on the installed Office-related Internet Explorer features.
 
-- **OIeFeatureAddon** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeMachineLockdown** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeMimeHandling** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeMimeSniffing** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeNoAxInstall** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeNoDownload** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeObjectCaching** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIePasswordDisable** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeSafeBind** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeSecurityBand** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeUncSaveCheck** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeValidateUrl** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeWebOcPopup** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeWinRestrict** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
-- **OIeZoneElevate** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeFeatureAddon** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeMachineLockdown** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeMimeHandling** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeMimeSniffing** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeNoAxInstall** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeNoDownload** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeObjectCaching** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIePasswordDisable** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeSafeBind** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeSecurityBand** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeUncSaveCheck** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeValidateUrl** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeWebOcPopup** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeWinRestrict** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
+- **OIeZoneElevate** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/library/ee330720.aspx).
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIESettingsStartSync
 

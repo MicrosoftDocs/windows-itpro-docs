@@ -4546,7 +4546,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
 -   [Settings/AllowDateTime](#settings-allowdatetime)  
 -   [Settings/AllowVPN](#settings-allowvpn)  
--   [System/AllowFontProviders](#system-allowfontproviders)  
 -   [System/AllowLocation](#system-allowlocation)  
 -   [System/AllowTelemetry](#system-allowtelemetry)  
 -   [Update/AllowAutoUpdate](#update-allowautoupdate)  
