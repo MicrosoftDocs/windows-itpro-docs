@@ -21,7 +21,7 @@ ms.date: 03/13/2018
 - Windows 10, version 1709
 
 
-The Basic level gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Windows Store. When the level is set to Basic, it also includes the Security level information.
+The Basic level gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Microsoft Store. When the level is set to Basic, it also includes the Security level information.
 
 The Basic level helps to identify problems that can occur on a particular device hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a particular driver version. This helps Microsoft fix operating system or app problems.
 
@@ -317,8 +317,8 @@ This event represents the basic metadata about a file on the system.  The file m
 The following fields are available:
 
 - **AppraiserVersion**  The version of the Appraiser file generating the events.
-- **AvDisplayName** The version of the Appraiser file generating the events.
-- **AvProductState** If the app is an anti-virus app, this is its display name.
+- **AvDisplayName** If the app is an anti-virus app, this is its display name.
+- **AvProductState** Represents state of antivirus program with respect to whether it's turned on and the signatures are up-to-date.
 - **BinaryType**  A binary type.  Example: UNINITIALIZED, ZERO_BYTE, DATA_ONLY, DOS_MODULE, NE16_MODULE, PE32_UNKNOWN, PE32_I386, PE32_ARM, PE64_UNKNOWN, PE64_AMD64, PE64_ARM64, PE64_IA64, PE32_CLR_32, PE32_CLR_IL, PE32_CLR_IL_PREFER32, PE64_CLR_64
 - **BinFileVersion**  An attempt to clean up FileVersion at the client that tries to place the version into 4 octets.
 - **BinProductVersion**  An attempt to clean up ProductVersion at the client that tries to place the version into 4 octets.
@@ -326,8 +326,8 @@ The following fields are available:
 - **CompanyName**  The company name of the vendor who developed this file.
 - **FileId**  A hash that uniquely identifies a file.
 - **FileVersion**  The File version field from the file metadata under Properties -> Details.
-- **HasUpgradeExe** Represents state of antivirus program with respect to whether it's turned on and the signatures are up-to-date.
-- **IsAv** A binary type. Example: UNINITIALIZED, ZERO_BYTE, DATA_ONLY, DOS_MODULE, NE16_MODULE, PE32_UNKNOWN, PE32_I386, PE32_ARM, PE64_UNKNOWN, PE64_AMD64, PE64_ARM64, PE64_IA64, PE32_CLR_32, PE32_CLR_IL, PE32_CLR_IL_PREFER32, PE64_CLR_64
+- **HasUpgradeExe** Does the anti-virus app have an upgrade.exe file?
+- **IsAv** Is the file an anti-virus reporting EXE?
 - **LinkDate**  The date and time that this file was linked on.
 - **LowerCaseLongPath**  The full file path to the file that was inventoried on the device.
 - **Name**  The name of the file that was inventoried.
@@ -1617,7 +1617,7 @@ The following fields are available:
 - **KvaShadow** Microcode info of the processor.
 - **MMSettingOverride** Microcode setting of the processor.
 - **MMSettingOverrideMask** Microcode setting override of the processor.
-- **ProcessorArchitecture**  Retrieves the processor architecture of the installed operating system. The complete list of values can be found in DimProcessorArchitecture.
+- **ProcessorArchitecture**  Retrieves the processor architecture of the installed operating system. 
 - **ProcessorClockSpeed**  Retrieves the clock speed of the processor in MHz.
 - **ProcessorCores**  Retrieves the number of cores in the processor.
 - **ProcessorIdentifier**  The processor identifier of a manufacturer.
@@ -1626,7 +1626,7 @@ The following fields are available:
 - **ProcessorPhysicalCores**  Number of physical cores in the processor.
 - **ProcessorUpdateRevision** The microcode version.
 - **SocketCount**  Number of physical CPU sockets of the machine.
-- **SpeculationControl** Clock speed of the processor in MHz.
+- **SpeculationControl** If the system has enabled protections needed to validate the speculation control vulnerability.
 
 
 ### Census.Security
@@ -1723,7 +1723,7 @@ The following fields are available:
 - **AppraiserGatedStatus**  Indicates whether a device has been gated for upgrading.
 - **AppStoreAutoUpdate**  Retrieves the Appstore settings for auto upgrade. (Enable/Disabled).
 - **AppStoreAutoUpdateMDM**  Retrieves the App Auto Update value for MDM: 0 - Disallowed. 1 - Allowed. 2 - Not configured. Default: [2] Not configured
-- **AppStoreAutoUpdatePolicy**  Retrieves the Windows Store App Auto Update group policy setting
+- **AppStoreAutoUpdatePolicy**  Retrieves the Microsoft Store App Auto Update group policy setting
 - **DelayUpgrade**  Retrieves the Windows upgrade flag for delaying upgrades.
 - **OSAssessmentFeatureOutOfDate** How many days has it been since a the last feature update was released but the device did not install it?
 - **OSAssessmentForFeatureUpdate** Is the device is on the latest feature update?
@@ -2195,7 +2195,7 @@ The following fields are available:
 - **Publisher**  The Publisher of the application. Location pulled from depends on the 'Source' field.
 - **RootDirPath**  The path to the root directory where the program was installed.
 - **Source**  How the program was installed (ARP, MSI, Appx, etc...)
-- **StoreAppType**  A sub-classification for the type of Windows Store app, such as UWP or Win8StoreApp.
+- **StoreAppType**  A sub-classification for the type of Microsoft Store app, such as UWP or Win8StoreApp.
 - **Type**  "One of (""Application"", ""Hotfix"", ""BOE"", ""Service"", ""Unknown""). Application indicates Win32 or Appx app, Hotfix indicates app updates (KBs), BOE indicates it's an app with no ARP or MSI entry, Service indicates that it is a service. Application and BOE are the ones most likely seen."
 - **Version**  The version number of the program.
 
@@ -2836,7 +2836,7 @@ The following fields are available:
 
 ### SoftwareUpdateClientTelemetry.UpdateDetected
 
-This event sends data about an AppX app that has been updated from the Windows Store, including what app needs an update and what version/architecture is required, in order to understand and address problems with apps getting required updates.
+This event sends data about an AppX app that has been updated from the Microsoft Store, including what app needs an update and what version/architecture is required, in order to understand and address problems with apps getting required updates.
 
 The following fields are available:
 
@@ -2846,7 +2846,7 @@ The following fields are available:
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one
 - **WUDeviceID**  The unique device ID controlled by the software distribution client
 - **IntentPFNs**  Intended application-set metadata for atomic update scenarios.
-- **ServiceGuid**  An ID which represents which service the software distribution client is connecting to (Windows Update, Windows Store, etc.)
+- **ServiceGuid**  An ID which represents which service the software distribution client is connecting to (Windows Update, Microsoft Store, etc.)
 
 
 ### SoftwareUpdateClientTelemetry.SLSDiscovery
@@ -2859,7 +2859,7 @@ The following fields are available:
 - **HResult**  Indicates the result code of the event (success, cancellation, failure code HResult)
 - **IsBackground**  Indicates whether the SLS discovery event took place in the foreground or background
 - **NextExpirationTime**  Indicates when the SLS cab expires
-- **ServiceID**  An ID which represents which service the software distribution client is connecting to (Windows Update, Windows Store, etc.)
+- **ServiceID**  An ID which represents which service the software distribution client is connecting to (Windows Update, Microsoft Store, etc.)
 - **SusClientId**  The unique device ID controlled by the software distribution client
 - **UrlPath**  Path to the SLS cab that was downloaded
 - **WUAVersion**  The version number of the software distribution client
@@ -2885,7 +2885,7 @@ The following fields are available:
 - **EventType**  "Possible values are ""Child"", ""Bundle"", or ""Driver""."
 - **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.)
 - **RevisionNumber**  Unique revision number of Update
-- **ServerId**  Identifier for the service to which the software distribution client is connecting, such as Windows Update and Windows Store.
+- **ServerId**  Identifier for the service to which the software distribution client is connecting, such as Windows Update and Microsoft Store.
 - **SystemBIOSMajorRelease**  Major version of the BIOS.
 - **SystemBIOSMinorRelease**  Minor version of the BIOS.
 - **UpdateId**  Unique Update ID
@@ -2930,7 +2930,7 @@ The following fields are available:
 - **MetadataSignature**  A base64-encoded string of the signature associated with the update metadata (specified by revision ID).
 - **RevisionId**  The revision ID for a specific piece of content.
 - **RevisionNumber**  The revision number for a specific piece of content.
-- **ServiceGuid**  Identifies the service to which the software distribution client is connected, Example: Windows Update or Windows Store
+- **ServiceGuid**  Identifies the service to which the software distribution client is connected, Example: Windows Update or Microsoft Store
 - **SHA256OfLeafCertPublicKey**  A base64 encoding of the hash of the Base64CertData in the FragmentSigning data of the leaf certificate.
 - **SHA256OfTimestampToken**  A base64-encoded string of hash of the timestamp token blob.
 - **SignatureAlgorithm**  The hash algorithm for the metadata signature.
@@ -3011,7 +3011,7 @@ The following fields are available:
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one
 - **RepeatFailFlag**  Indicates whether this specific piece of content had previously failed to download.
 - **RevisionNumber**  Identifies the revision number of this specific piece of content.
-- **ServiceGuid**  An ID which represents which service the software distribution client is installing content for (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  An ID which represents which service the software distribution client is installing content for (Windows Update, Microsoft Store, etc.).
 - **Setup360Phase**  If the download is for an operating system upgrade, this datapoint indicates which phase of the upgrade is underway.
 - **ShippingMobileOperator**  The mobile operator that a device shipped on.
 - **StatusCode**  Indicates the result of a Download event (success, cancellation, failure code HResult).
@@ -3079,7 +3079,7 @@ The following fields are available:
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one
 - **ScanDurationInSeconds**  The number of seconds a scan took
 - **ScanEnqueueTime**  The number of seconds it took to initialize a scan
-- **ServiceGuid**  An ID which represents which service the software distribution client is checking for content (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  An ID which represents which service the software distribution client is checking for content (Windows Update, Microsoft Store, etc.).
 - **ServiceUrl**  The environment URL a device is configured to scan with
 - **ShippingMobileOperator**  The mobile operator that a device shipped on.
 - **StatusCode**  Indicates the result of a CheckForUpdates event (success, cancellation, failure code HResult).
@@ -3177,7 +3177,7 @@ The following fields are available:
 - **RepeatFailFlag**  Indicates whether this specific piece of content had previously failed to install.
 - **RepeatSuccessInstallFlag**  Indicates whether this specific piece of content had previously installed successful, for example if another user had already installed it.
 - **RevisionNumber**  The revision number of this specific piece of content.
-- **ServiceGuid**  An ID which represents which service the software distribution client is installing content for (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  An ID which represents which service the software distribution client is installing content for (Windows Update, Microsoft Store, etc.).
 - **Setup360Phase**  If the install is for an operating system upgrade, indicates which phase of the upgrade is underway.
 - **ShippingMobileOperator**  The mobile operator that a device shipped on.
 - **StatusCode**  Indicates the result of an installation event (success, cancellation, failure code HResult).
@@ -3212,7 +3212,7 @@ The following fields are available:
 - **PowerState**  Indicates the power state of the device at the time of heartbeart (DC, AC, Battery Saver, or Connected Standby)
 - **RelatedCV**  "The previous correlation vector that was used by the client, before swapping with a new one "
 - **ResumeCount**  Number of times this active download has resumed from a suspended state
-- **ServiceID**  "Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc) "
+- **ServiceID**  "Identifier for the service to which the software distribution client is connecting (Windows Update, Microsoft Store, etc) "
 - **SuspendCount**  Number of times this active download has entered a suspended state
 - **SuspendReason**  Last reason for why this active download entered a suspended state
 - **CallerApplicationName**  Name provided by the caller who initiated API calls into the software distribution client
@@ -3220,7 +3220,7 @@ The following fields are available:
 - **EventType**  "Possible values are ""Child"", ""Bundle"", or ""Driver"""
 - **FlightId**  The unique identifier for each flight
 - **RevisionNumber**  Identifies the revision number of this specific piece of content
-- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc)
+- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Microsoft Store, etc)
 - **UpdateId**  "Identifier associated with the specific piece of content "
 - **WUDeviceID**  "Unique device id controlled by the software distribution client "
 
@@ -3735,7 +3735,7 @@ The following fields are available:
 - **ReportId**  WER Report Id associated with this bug check (used for finding the corresponding report archive in Watson).
 
 
-## Windows Store events
+## Microsoft Store events
 
 ### Microsoft.Windows.StoreAgent.Telemetry.AbortedInstallation
 
