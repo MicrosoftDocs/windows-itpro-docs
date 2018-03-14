@@ -171,6 +171,10 @@ This setting specifies the minimum content file size in MB enabled to use Peer C
 
 This setting specifies the maximum download bandwidth that can be used across all concurrent Delivery Optimization downloads in kilobytes per second (KB/s). A default value of 0 means that Delivery Optimization will dynamically adjust and optimize the maximum bandwidth used.
 
+### Maximum Foreground Download Bandwidth
+
+### Maximum Background Download Bandwidth
+
 ### Percentage of Maximum Download Bandwidth
 
 This setting specifies the maximum download bandwidth that Delivery Optimization can use across all concurrent download activities as a percentage of available download bandwidth. The default value 0 means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
@@ -178,6 +182,24 @@ This setting specifies the maximum download bandwidth that Delivery Optimization
 ### Max Upload Bandwidth
 
 This setting allows you to limit the amount of upload bandwidth individual clients can use for Delivery Optimization. Consider this setting when clients are providing content to requesting peers on the network. This option is set in kilobytes per second (KB/s). The default setting is 0, or “unlimited” which means Delivery Optimization dynamically optimizes for minimal usage of upload bandwidth; however it does not cap the upload bandwidth rate at a set rate.
+
+### Set Business Hours to Limit Background Download Bandwidth
+ specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
+
+### Set Business Hours to Limit Foreground Download Bandwidth
+specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
+
+### Select a method to restrict peer selection
+restricts peer selection by the options you select.
+
+### Select the source of Group IDs
+restricts peer selection to a specific source.
+
+### Delay background download from http (in secs)
+allows you to delay the use of an HTTP source in a background download that is allowed to use P2P.
+
+### Delay foreground download from http (in secs)
+allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use P2P.
 
 ### Minimum Background QoS
 
