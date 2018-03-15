@@ -6,9 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: DaniHalfin
-ms.author: daniha
-ms.date: 10/13/2017
+author: Jaimeo
+ms.author: jaimeo
+ms.date: 03/15/2018
 ---
 
 # Get started with Update Compliance
@@ -16,29 +16,10 @@ ms.date: 10/13/2017
 This topic explains the steps necessary to configure your environment for Windows Analytics: Update Compliance. 
 
 Steps are provided in sections that follow the recommended setup process:
-1. Ensure that [prerequisites](#update-compliance-prerequisites) are met.
-2. [Add Update Compliance](#add-update-compliance-to-microsoft-operations-management-suite) to Microsoft Operations Management Suite.
-3. [Deploy your Commercial ID](#deploy-your-commercial-id-to-your-windows-10-devices) to your organization’s devices.
+1. [Add Update Compliance](#add-update-compliance-to-microsoft-operations-management-suite) to Microsoft Operations Management Suite.
+2. [Enroll devices in Windows Analytics](#deploy-your-commercial-id-to-your-windows-10-devices) to your organization’s devices.
+3. [Use Update Compliance to monitor Windows Updates](#use-update-compliance-to-monitor-windows-updates) once your devices are enrolled.
 
-## Update Compliance prerequisites
-
-Update Compliance has the following requirements: 
-1. Update Compliance is currently only compatible with Windows 10 devices. The solution is intended to be used with desktop devices (Windows 10 workstations and laptops). 
-2. The solution requires that Windows 10 diagnostic data is enabled on all devices that are intended to be displayed in the solution. These devices must have at least the [basic level of diagnostic data](/configuration/configure-windows-diagnostic-data-in-your-organization#basic-level) enabled. To learn more about Windows diagnostic data, see [Configure Windows diagnostic data in your organization](/windows/configuration/configure-windows-diagnostic-data-in-your-organization). 
-3. The diagnostic data of your organization’s Windows devices must be successfully transmitted to Microsoft. Microsoft has specified [endpoints for each of the diagnostic data services](/configuration/configure-windows-diagnostic-data-in-your-organization#endpoints), which must be whitelisted by your organization so the data can be transmitted. The following table is taken from the article on diagnostic data endpoints and summarizes the use of each endpoint:
-
-    Service | Endpoint
-    --- | ---
-    Connected User Experiences and Telemetry component | v10.vortex-win.data.microsoft.com<BR>settings-win.data.microsoft.com
-    Windows Error Reporting | watson.telemetry.microsoft.com
-    Online Crash Analysis | oca.telemetry.microsoft.com
-
-
- 4. To use Windows Defender Antivirus Assessment, devices must be protected by Windows Defender AV (and not a 3rd party AV program), and must have enabled [cloud-delivered protection](/windows/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus). See the [Troublehsoot Windows Defender Antivirus reporting](/windows/threat-protection/windows-defender-antivirus/troubleshoot-reporting.md) topic for help on ensuring the configuration is correct.
- 
-     For endpoints running Windows 10, version 1607 or earlier, [Windows diagnostic data must also be set to **Enhanced**](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level), to be compatible with Windows Defender Antivirus. 
-    
-    See the [Windows Defender Antivirus in Windows 10](/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) content library for more information on enabling, configuring, and validating Windows Defender AV.
 
 
 ## Add Update Compliance to Microsoft Operations Management Suite
@@ -81,20 +62,11 @@ After you are subscribed to OMS Update Compliance and your devices have a Commer
 >[!NOTE]
 >You can unsubscribe from the Update Compliance solution if you no longer want to monitor your organization’s devices. User device data will continue to be shared with Microsoft while the opt-in keys are set on user devices and the proxy allows traffic.
 
-## Deploy your Commercial ID to your Windows 10 devices
+## Enroll devices in Windows Analytics
 
-In order for your devices to show up in Windows Analytics: Update Compliance, they must be configured with your organization’s Commercial ID. This is so that Microsoft knows that a given device is a member of your organization and to feed that device’s data back to you. There are two primary methods for widespread deployment of your Commercial ID: Group Policy and Mobile Device Management (MDM). 
-
-- Using Group Policy<BR><BR>
-    Deploying your Commercial ID using Group Policy can be accomplished by configuring domain Group Policy Objects with the Group Policy Management Editor, or by configuring local Group Policy using the Local Group Policy Editor.
-    1. In the console tree, navigate to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds**
-    2. Double-click **Configure the Commercial ID**
-    3. In the **Options** box, under **Commercial Id**, type the Commercial ID GUID, and then click **OK**.<P>
-
-- Using Microsoft Mobile Device Management (MDM)<BR><BR>
-    Microsoft’s Mobile Device Management can be used to deploy your Commercial ID to your organization’s devices. The Commercial ID is listed under **Provider/ProviderID/CommercialID**. More information on deployment using MDM can be found [here](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dmclient-csp).  
+Once you've added Update Compliance to Microsoft Operations Management Suite, you can now start enrolling the devices in your organization. For full instructions, see [Enrolling devices in Windows Analytics](windows-analytics-get-started.md).
 
 
-## Related topics
+## Use Update Compliance to monitor Windows Updates
 
-[Use Update Compliance to monitor Windows Updates](update-compliance-using.md)
+Once your devices are enrolled, you can starte to [Use Update Compliance to monitor Windows Updates](update-compliance-using.md).

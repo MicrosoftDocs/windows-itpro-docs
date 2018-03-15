@@ -61,11 +61,11 @@ To enable data sharing, configure your proxy sever to whitelist the following en
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
-| `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for Windows 10 computers. User computers send data to Microsoft through this endpoint.
-| `https://vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for operating systems older than Windows 10
+| `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for Windows 10 computers. User computers send data to Microsoft through this endpoint. (This endpoint is used by Windows 10, version 1709 or earlier.)
+| `https://vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for operating systems older than Windows 10 |
+| `https://v10.events.data.microsoft.com` | New diagnostic data endpoint for Windows 10, version 1803|
 | `https://settings-win.data.microsoft.com` | Enables the compatibility update to send data to Microsoft. 
 | `http://adl.windows.com` | Allows the compatibility update to receive the latest compatibility data from Microsoft. |
-| `https://v10.events.data.microsoft.com` | New diagnostic data endpoint for Windows 10, version 1803|
 | `https://watson.telemetry.microsoft.com` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports. Not used by Upgrade Readiness. |
 | `https://oca.telemetry.microsoft.com`  | Online Crash Analysis; required for Device Health and Update Compliance AV reports. Not used by Upgrade Readiness. |
 
@@ -95,8 +95,7 @@ The compatibility update scans your devices and enables application usage tracki
 >[!IMPORTANT] 
 >Restart devices after you install the compatibility updates for the first time.
 
->[!NOTE] 
->The compatibility update runs under the device's system account.
+
 
 If you are planning to enable IE Site Discovery in Upgrade Readiness, you will need to install a few additional updates.
 
@@ -110,7 +109,7 @@ You can use the Upgrade Readiness deployment script to automate and verify your 
 
 See the [Upgrade Readiness deployment script](../upgrade/upgrade-readiness-deployment-script.md) topic for information about obtaining and running the script, and for a description of the error codes that can be displayed. See ["Understanding connectivity scenarios and the deployment script"](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog for a summary of setting the ClientProxy for the script, which will enable the script properly check for diagnostic data endpoint connectivity.
 
-After data is sent from devices to Microsoft, it generally takes 48-56 hours for the data to populate in the Upgrade Readiness solution. The compatibility update takes several minutes to run. If the update does not get a chance to finish running or if the computers are inaccessible (turned off or sleeping for example), data will take longer to populate in Upgrade Readiness. For this reason, you can expect most of your devices to be populated in Windows Analytics in about 1-2 weeks after deploying the update and configuration to user computers. As described in the Windows Analytics blog post ["You can now check on the status of your computers within hours of running the deployment script"](https://blogs.technet.microsoft.com/upgradeanalytics/2017/05/12/wheres-my-data/), you can verify that devices have successfully connected to the service within a few hours. Most of those devices should start to show up in the Windows Analytics console within a few days.
+After data is sent from devices to Microsoft, it generally takes 48-56 hours for the data to populate in Windows Analytics. The compatibility update takes several minutes to run. If the update does not get a chance to finish running or if the computers are inaccessible (turned off or sleeping for example), data will take longer to populate in Windows Analytics. For this reason, you can expect most of your devices to be populated in Windows Analytics in about 1-2 weeks after deploying the update and configuration to user computers. As described in the Windows Analytics blog post ["You can now check on the status of your computers within hours of running the deployment script"](https://blogs.technet.microsoft.com/upgradeanalytics/2017/05/12/wheres-my-data/), you can verify that devices have successfully connected to the service within a few hours. Most of those devices should start to show up in the Windows Analytics console within a few days.
 
 ## Deploy additional optional settings
 
@@ -118,7 +117,7 @@ Certain of the Windows Analytics features have additional settings you can use.
 
 - **Update Compliance** is only compatible with Windows 10 desktop devices (workstations and laptops). To use the Windows Defender Antivirus Assessment, devices must be protected by Windows Defender AV (and not a partner antivirus application), and must have enabled cloud-delivered protection, as described in [Utilize Microsoft cloud-delivered protection in Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus). See the [Troubleshoot Windows Defender Antivirus reporting in Update Compliance](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-reporting) topic for help with ensuring that the configuration is correct.
 
-- For endpoints running Windows 10, version 1607 or earlier, Windows diagnostic data must also be set to Enhanced (see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level)) in order to be compatible with Windows Defender Antivirus. See the [Windows Defender Antivirus in Windows 10 and Windows Server 2016](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) for more information about enabling, configuring, and validating Windows Defender AV.
+- For devices running Windows 10, version 1607 or earlier, Windows diagnostic data must also be set to Enhanced (see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level)) in order to be compatible with Windows Defender Antivirus. See the [Windows Defender Antivirus in Windows 10 and Windows Server 2016](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) for more information about enabling, configuring, and validating Windows Defender AV.
 
 - **Device Health** is only compatible with Windows 10 desktop devices (workstations and laptops) and Windows Server 2016. The solution requires that at least the Enhanced level of diagnostic data is enabled on all devices that are intended to be displayed in the solution. In Windows 10, version 1709, a new policy was added to "limit enhanced telemetry to the minimum required by Windows Analytics". To learn more about Windows diagnostic data, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization).
  
@@ -147,7 +146,7 @@ There are a number of policies that can be centrally managed to control Windows 
 | Policy   | Value  |
 |-----------------------|------------------|
 | CommercialId | In order for your devices to show up in Windows Analytics, they must be configured with your organization’s Commercial ID. |
-| AllowTelemetry (in Windows 10) |	1 (Basic), 2 (Enhanced) or 3 (Full) diagnostic data. Windows Analytics will work with basic diagnostic data, but more features are available when you use the Enhanced level. For more information, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization). |
+| AllowTelemetry (in Windows 10) |	1 (Basic), 2 (Enhanced) or 3 (Full) diagnostic data. Windows Analytics will work with basic diagnostic data, but more features are available when you use the Enhanced level (for example, Device Health requires Enhanced diagnostic data and Upgrade Readiness only collects app usage and site discovery data on Windows 10 devices with Enhanced diagnostic data). For more information, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization). |
 | LimitEnhancedDiagnosticDataWindowsAnalytics (in Windows 10) |	Only applies when AllowTelemetry=2. Limits the Enhanced diagnostic data events sent to Microsoft to just those needed by Windows Analytics. For more information, see [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](https://docs.microsoft.com/windows/configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields).|
 | CommercialDataOptIn (in Windows 7 and Windows 8) |	1 is required for Upgrade Readiness, which is the only solution that runs on Windows 7 or Windows 8 |
 
