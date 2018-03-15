@@ -38,9 +38,16 @@ A best practice for user account management is to create domain global groups an
 >[!NOTE]
 >App-V client computer accounts that need to connect to the publishing server must be part of the publishing server’s **Users** local group. By default, all computers in the domain are part of the **Authorized Users** group, which is part of the **Users** local group.
 
-### <a href="" id="-------------app-v-5-1-server-security"></a> App-V server security
+### App-V server security
 
 No groups are created automatically during App-V setup. You should create the following Active Directory Domain Services global groups to manage App-V server operations.
+
+|Group name|Details|Important notes|
+|---|---|
+|App-V Management Admin group|Used to manage the App-V management server. This group is created during the App-V Management Server installation.|The management console can't create a new group after installation is complete.|
+|Database read/write for Management Service account|Provides read/write access to the management database. This account should be created during App-V management database installation.||
+|App-V Management Service install admin account|Provides public access to schema-version table in management database. This account should be created during App-V management database installation.|This is only required if the management database is being installed separately from the service.|
+|App-V Reporting Service install admin account|Public access to schema-version table in reporting database. This account should be created during the App-V reporting database installation.|This is only required if reporting database is being installed separately from the service.|
 
 <table>
 <colgroup>

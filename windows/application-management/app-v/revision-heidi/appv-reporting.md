@@ -143,6 +143,16 @@ This example command specifies the maximum size of the data block as 10,240 MB.
 
 The following table displays the types of information you can collect by using App-V reporting.
 
+|Client information|Package information|Application usage|
+|---|---|---|
+|Host name|Package name|Start and end times|
+|App-V client version|Package version|Run status|
+|Processor architecture|Package source|Shutdown state|
+|Operating system version|Percent cached|Application name|
+|Service Pack level||Application version|
+|Operating system type||Username|
+|||Connection group|
+
 <table>
 <colgroup>
 <col width="33%" />
@@ -221,6 +231,13 @@ The **-DeleteOnSuccess** parameter indicates that if the transfer is successful,
 
 You can also use the **Send-AppVClientReport** cmdlet to manually collect data. This solution is helpful with or without an existing reporting server. The following list displays information about collecting data with or without a reporting server.
 
+|With a reporting server|Without a reporting server|
+|---|---|
+|f you have an existing App-V reporting server, create a customized scheduled task or script. Specify that the client sends the data to the specified location at the desired frequency.|If you do not have an existing App-V reporting Server, use the **–URL** parameter to send the data to a specified share. For example: ```Send-AppVClientReport –URL \\Myshare\MyData\ -DeleteOnSuccess``` <br>The previous example will send the reporting data to the ```\\MyShare\MyData\``` location indicated by the **-URL** parameter. After the data has been sent, the cache is cleared.|
+
+>[!NOTE]
+>If a location other than the Reporting Server is specified, the data is sent in **.xml** format with no additional processing.
+
 <table>
 <colgroup>
 <col width="50%" />
@@ -269,9 +286,7 @@ You should also ensure that the reporting server web service’s **Maximum Concu
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
-
-For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
 
 ## Related topics
 

@@ -51,6 +51,13 @@ You can install the App-V Management server on a server running Windows Server 2
 
 The following table lists the SQL Server versions that the App-V Management database installation supports.
 
+|SQL Server version|Service pack|System architecture|
+|---|---|---|
+|Microsoft SQL Server 2014||32-bit or 64-bit|
+|Microsoft SQL Server 2012|SP2|32-bit or 64-bit|
+|Microsoft SQL Server 2008 R2|SP3|32-bit or 64-bit|
+
+
 <table>
 <colgroup>
 <col width="33%" />
@@ -115,6 +122,12 @@ App-V adds no additional requirements beyond those of Windows Server.
 
 The following table lists the SQL Server versions that are supported for the App-V Reporting database installation.
 
+|SQL Server version|Service pack|System architecture|
+|---|---|---|
+|Microsoft SQL Server 2014||32-bit or 64-bit|
+|Microsoft SQL Server 2012|SP2|32-bit or 64-bit|
+|Microsoft SQL Server 2008 R2|SP3|32-bit or 64-bit|
+
 <table>
 <colgroup>
 <col width="33%" />
@@ -156,6 +169,16 @@ Similarly, the App-V Remote Desktop Services (RDS) client is included with Windo
 ## Sequencer system requirements
 
 The following table lists the operating systems that the App-V Sequencer installation supports.
+
+|Operating system|Service pack|System architecture|
+|---|---|---|
+|Microsoft Windows Server 2012 R2||64-bit|
+|Microsoft Windows Server 2012||64-bit|
+|Microsoft Windows Server 2008 R2|SP1|64-bit|
+|Microsoft Windows 10||32-bit and 64-bit|
+|Microsoft Windows 8.1||32-bit and 64-bit|
+|Microsoft Windows 8||32-bit and 64-bit|
+|Microsoft Windows 7|SP1|32-bit and 64-bit|
 
 <table>
 <colgroup>
