@@ -193,6 +193,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-applicationdefaults.md#applicationdefaults-defaultassociationsconfiguration" id="applicationdefaults-defaultassociationsconfiguration">ApplicationDefaults/DefaultAssociationsConfiguration</a>
   </dd>
+  <dd>
+    <a href="./policy-csp-applicationdefaults.md#applicationdefaults-enableappurihandlers" id="applicationdefaults-enableappurihandlers">ApplicationDefaults/EnableAppUriHandlers</a>
+  </dd>
 </dl>
 
 ### ApplicationManagement policies
@@ -497,6 +500,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-preventsmartscreenpromptoverrideforfiles" id="browser-preventsmartscreenpromptoverrideforfiles">Browser/PreventSmartScreenPromptOverrideForFiles</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-browser.md#browser-preventtabpreloading" id="browser-preventtabpreloading">Browser/PreventTabPreloading</a>
   </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-preventusinglocalhostipaddressforwebrtc" id="browser-preventusinglocalhostipaddressforwebrtc">Browser/PreventUsingLocalHostIPAddressForWebRTC</a>
@@ -3269,6 +3275,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 ## ADMX-backed policies
 
 -   [ActiveXControls/ApprovedInstallationSites](./policy-csp-activexcontrols.md#activexcontrols-approvedinstallationsites)
+-   [AppRuntime/AllowMicrosoftAccountsToBeOptional](./policy-csp-appruntime.md#appruntime-allowmicrosoftaccountstobeoptional)
 -   [AppVirtualization/AllowAppVClient](./policy-csp-appvirtualization.md#appvirtualization-allowappvclient)
 -   [AppVirtualization/AllowDynamicVirtualization](./policy-csp-appvirtualization.md#appvirtualization-allowdynamicvirtualization)
 -   [AppVirtualization/AllowPackageCleanup](./policy-csp-appvirtualization.md#appvirtualization-allowpackagecleanup)
@@ -3311,13 +3318,17 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Connectivity/ProhibitInstallationAndConfigurationOfNetworkBridge](./policy-csp-connectivity.md#connectivity-prohibitinstallationandconfigurationofnetworkbridge)
 -   [CredentialProviders/AllowPINLogon](./policy-csp-credentialproviders.md#credentialproviders-allowpinlogon)
 -   [CredentialProviders/BlockPicturePassword](./policy-csp-credentialproviders.md#credentialproviders-blockpicturepassword)
+-   [CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials](./policy-csp-credentialsdelegation.md#credentialsdelegation-remotehostallowsdelegationofnonexportablecredentials)
 -   [CredentialsUI/DisablePasswordReveal](./policy-csp-credentialsui.md#credentialsui-disablepasswordreveal)
 -   [CredentialsUI/EnumerateAdministrators](./policy-csp-credentialsui.md#credentialsui-enumerateadministrators)
 -   [DataUsage/SetCost3G](./policy-csp-datausage.md#datausage-setcost3g)
 -   [DataUsage/SetCost4G](./policy-csp-datausage.md#datausage-setcost4g)
+-   [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
+-   [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
 -   [Desktop/PreventUserRedirectionOfProfileFolders](./policy-csp-desktop.md#desktop-preventuserredirectionofprofilefolders)
 -   [DeviceInstallation/PreventInstallationOfMatchingDeviceIDs](./policy-csp-deviceinstallation.md#deviceinstallation-preventinstallationofmatchingdeviceids)
 -   [DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses](./policy-csp-deviceinstallation.md#deviceinstallation-preventinstallationofmatchingdevicesetupclasses)
+-   [DeviceLock/PreventEnablingLockScreenCamera](./policy-csp-devicelock.md#devicelock-preventenablinglockscreencamera)
 -   [DeviceLock/PreventLockScreenSlideShow](./policy-csp-devicelock.md#devicelock-preventlockscreenslideshow)
 -   [ErrorReporting/CustomizeConsentSettings](./policy-csp-errorreporting.md#errorreporting-customizeconsentsettings)
 -   [ErrorReporting/DisableWindowsErrorReporting](./policy-csp-errorreporting.md#errorreporting-disablewindowserrorreporting)
@@ -3328,6 +3339,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [EventLogService/SpecifyMaximumFileSizeApplicationLog](./policy-csp-eventlogservice.md#eventlogservice-specifymaximumfilesizeapplicationlog)
 -   [EventLogService/SpecifyMaximumFileSizeSecurityLog](./policy-csp-eventlogservice.md#eventlogservice-specifymaximumfilesizesecuritylog)
 -   [EventLogService/SpecifyMaximumFileSizeSystemLog](./policy-csp-eventlogservice.md#eventlogservice-specifymaximumfilesizesystemlog)
+-   [FileExplorer/TurnOffDataExecutionPreventionForExplorer](./policy-csp-fileexplorer.md#fileexplorer-turnoffdataexecutionpreventionforexplorer)
+-   [FileExplorer/TurnOffHeapTerminationOnCorruption](./policy-csp-fileexplorer.md#fileexplorer-turnoffheapterminationoncorruption)
 -   [InternetExplorer/AddSearchProvider](./policy-csp-internetexplorer.md#internetexplorer-addsearchprovider)
 -   [InternetExplorer/AllowActiveXFiltering](./policy-csp-internetexplorer.md#internetexplorer-allowactivexfiltering)
 -   [InternetExplorer/AllowAddOnList](./policy-csp-internetexplorer.md#internetexplorer-allowaddonlist)
@@ -3401,6 +3414,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/InternetZoneAllowSmartScreenIE](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowsmartscreenie)
 -   [InternetExplorer/InternetZoneAllowUpdatesToStatusBarViaScript](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowupdatestostatusbarviascript)
 -   [InternetExplorer/InternetZoneAllowUserDataPersistence](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowuserdatapersistence)
+-   [InternetExplorer/InternetZoneAllowVBScriptToRunInInternetExplorer](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowvbscripttorunininternetexplorer)
 -   [InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-internetzonedonotrunantimalwareagainstactivexcontrols)
 -   [InternetExplorer/InternetZoneDownloadSignedActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-internetzonedownloadsignedactivexcontrols)
 -   [InternetExplorer/InternetZoneDownloadUnsignedActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-internetzonedownloadunsignedactivexcontrols)
@@ -3456,6 +3470,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/LockedDownInternetZoneInitializeAndScriptActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-lockeddowninternetzoneinitializeandscriptactivexcontrols)
 -   [InternetExplorer/LockedDownInternetZoneJavaPermissions](./policy-csp-internetexplorer.md#internetexplorer-lockeddowninternetzonejavapermissions)
 -   [InternetExplorer/LockedDownInternetZoneNavigateWindowsAndFrames](./policy-csp-internetexplorer.md#internetexplorer-lockeddowninternetzonenavigatewindowsandframes)
+-   [InternetExplorer/LockedDownIntranetJavaPermissions](./policy-csp-internetexplorer.md#internetexplorer-lockeddownintranetjavapermissions)
 -   [InternetExplorer/LockedDownIntranetZoneAllowAccessToDataSources](./policy-csp-internetexplorer.md#internetexplorer-lockeddownintranetzoneallowaccesstodatasources)
 -   [InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-lockeddownintranetzoneallowautomaticpromptingforactivexcontrols)
 -   [InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads](./policy-csp-internetexplorer.md#internetexplorer-lockeddownintranetzoneallowautomaticpromptingforfiledownloads)
@@ -3533,6 +3548,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/RestrictedSitesZoneAllowSmartScreenIE](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowsmartscreenie)
 -   [InternetExplorer/RestrictedSitesZoneAllowUpdatesToStatusBarViaScript](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowupdatestostatusbarviascript)
 -   [InternetExplorer/RestrictedSitesZoneAllowUserDataPersistence](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowuserdatapersistence)
+-   [InternetExplorer/RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowvbscripttorunininternetexplorer)
 -   [InternetExplorer/RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonedonotrunantimalwareagainstactivexcontrols)
 -   [InternetExplorer/RestrictedSitesZoneDownloadSignedActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonedownloadsignedactivexcontrols)
 -   [InternetExplorer/RestrictedSitesZoneDownloadUnsignedActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonedownloadunsignedactivexcontrols)
@@ -3575,6 +3591,17 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Kerberos/RequireKerberosArmoring](./policy-csp-kerberos.md#kerberos-requirekerberosarmoring)
 -   [Kerberos/RequireStrictKDCValidation](./policy-csp-kerberos.md#kerberos-requirestrictkdcvalidation)
 -   [Kerberos/SetMaximumContextTokenSize](./policy-csp-kerberos.md#kerberos-setmaximumcontexttokensize)
+-   [MSSLegacy/AllowICMPRedirectsToOverrideOSPFGeneratedRoutes](./policy-csp-msslegacy.md#msslegacy-allowicmpredirectstooverrideospfgeneratedroutes)
+-   [MSSLegacy/AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers](./policy-csp-msslegacy.md#msslegacy-allowthecomputertoignorenetbiosnamereleaserequestsexceptfromwinsservers)
+-   [MSSLegacy/IPSourceRoutingProtectionLevel](./policy-csp-msslegacy.md#msslegacy-ipsourceroutingprotectionlevel)
+-   [MSSLegacy/IPv6SourceRoutingProtectionLevel](./policy-csp-msslegacy.md#msslegacy-ipv6sourceroutingprotectionlevel)
+-   [MSSecurityGuide/ApplyUACRestrictionsToLocalAccountsOnNetworkLogon](./policy-csp-mssecurityguide.md#mssecurityguide-applyuacrestrictionstolocalaccountsonnetworklogon)
+-   [MSSecurityGuide/ConfigureSMBV1ClientDriver](./policy-csp-mssecurityguide.md#mssecurityguide-configuresmbv1clientdriver)
+-   [MSSecurityGuide/ConfigureSMBV1Server](./policy-csp-mssecurityguide.md#mssecurityguide-configuresmbv1server)
+-   [MSSecurityGuide/EnableStructuredExceptionHandlingOverwriteProtection](./policy-csp-mssecurityguide.md#mssecurityguide-enablestructuredexceptionhandlingoverwriteprotection)
+-   [MSSecurityGuide/TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications](./policy-csp-mssecurityguide.md#mssecurityguide-turnonwindowsdefenderprotectionagainstpotentiallyunwantedapplications)
+-   [MSSecurityGuide/WDigestAuthentication](./policy-csp-mssecurityguide.md#mssecurityguide-wdigestauthentication)
+-   [Power/AllowStandbyStatesWhenSleepingOnBattery](./policy-csp-power.md#power-allowstandbystateswhensleepingonbattery)
 -   [Power/AllowStandbyWhenSleepingPluggedIn](./policy-csp-power.md#power-allowstandbywhensleepingpluggedin)
 -   [Power/DisplayOffTimeoutOnBattery](./policy-csp-power.md#power-displayofftimeoutonbattery)
 -   [Power/DisplayOffTimeoutPluggedIn](./policy-csp-power.md#power-displayofftimeoutpluggedin)
@@ -3624,13 +3651,19 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Storage/EnhancedStorageDevices](./policy-csp-storage.md#storage-enhancedstoragedevices)
 -   [System/BootStartDriverInitialization](./policy-csp-system.md#system-bootstartdriverinitialization)
 -   [System/DisableSystemRestore](./policy-csp-system.md#system-disablesystemrestore)
+-   [WindowsConnectionManager/ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork](./policy-csp-windowsconnectionmanager.md#windowsconnectionmanager-prohitconnectiontonondomainnetworkswhenconnectedtodomainauthenticatednetwork)
 -   [WindowsLogon/DisableLockScreenAppNotifications](./policy-csp-windowslogon.md#windowslogon-disablelockscreenappnotifications)
 -   [WindowsLogon/DontDisplayNetworkSelectionUI](./policy-csp-windowslogon.md#windowslogon-dontdisplaynetworkselectionui)
+-   [WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers](./policy-csp-windowslogon.md#windowslogon-enumeratelocalusersondomainjoinedcomputers)
+-   [WindowsLogon/SignInLastInteractiveUserAutomaticallyAfterASystemInitiatedRestart](./policy-csp-windowslogon.md#windowslogon-signinlastinteractiveuserautomaticallyafterasysteminitiatedrestart)
+-   [WindowsPowerShell/TurnOnPowerShellScriptBlockLogging](./policy-csp-windowspowershell.md#windowspowershell-turnonpowershellscriptblocklogging)
+
 
 ## Policies supported by GP
 
 -   [AboveLock/AllowCortanaAboveLock](./policy-csp-abovelock.md#abovelock-allowcortanaabovelock)
 -   [ActiveXControls/ApprovedInstallationSites](./policy-csp-activexcontrols.md#activexcontrols-approvedinstallationsites)
+-   [AppRuntime/AllowMicrosoftAccountsToBeOptional](./policy-csp-appruntime.md#appruntime-allowmicrosoftaccountstobeoptional)
 -   [AppVirtualization/AllowAppVClient](./policy-csp-appvirtualization.md#appvirtualization-allowappvclient)
 -   [AppVirtualization/AllowDynamicVirtualization](./policy-csp-appvirtualization.md#appvirtualization-allowdynamicvirtualization)
 -   [AppVirtualization/AllowPackageCleanup](./policy-csp-appvirtualization.md#appvirtualization-allowpackagecleanup)
@@ -3726,6 +3759,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Connectivity/ProhibitInstallationAndConfigurationOfNetworkBridge](./policy-csp-connectivity.md#connectivity-prohibitinstallationandconfigurationofnetworkbridge)
 -   [CredentialProviders/AllowPINLogon](./policy-csp-credentialproviders.md#credentialproviders-allowpinlogon)
 -   [CredentialProviders/BlockPicturePassword](./policy-csp-credentialproviders.md#credentialproviders-blockpicturepassword)
+-   [CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials](./policy-csp-credentialsdelegation.md#credentialsdelegation-remotehostallowsdelegationofnonexportablecredentials)
 -   [CredentialsUI/DisablePasswordReveal](./policy-csp-credentialsui.md#credentialsui-disablepasswordreveal)
 -   [CredentialsUI/EnumerateAdministrators](./policy-csp-credentialsui.md#credentialsui-enumerateadministrators)
 -   [Cryptography/AllowFipsAlgorithmPolicy](./policy-csp-cryptography.md#cryptography-allowfipsalgorithmpolicy)
@@ -3781,6 +3815,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeliveryOptimization/DOMinRAMAllowedToPeer](./policy-csp-deliveryoptimization.md#deliveryoptimization-dominramallowedtopeer)
 -   [DeliveryOptimization/DOModifyCacheDrive](./policy-csp-deliveryoptimization.md#deliveryoptimization-domodifycachedrive)
 -   [DeliveryOptimization/DOMonthlyUploadDataCap](./policy-csp-deliveryoptimization.md#deliveryoptimization-domonthlyuploaddatacap)
+-   [DeliveryOptimization/DOPercentageMaxBackgroundBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxbackgroundbandwidth)
+-   [DeliveryOptimization/DOPercentageMaxForegroundBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxforegroundbandwidth)
 -   [DeliveryOptimization/DORestrictPeerSelectionBy](./policy-csp-deliveryoptimization.md#deliveryoptimization-dorestrictpeerselectionby)
 -   [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
 -   [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
@@ -3791,6 +3827,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeviceInstallation/PreventInstallationOfMatchingDeviceIDs](./policy-csp-deviceinstallation.md#deviceinstallation-preventinstallationofmatchingdeviceids)
 -   [DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses](./policy-csp-deviceinstallation.md#deviceinstallation-preventinstallationofmatchingdevicesetupclasses)
 -   [DeviceLock/MinimumPasswordAge](./policy-csp-devicelock.md#devicelock-minimumpasswordage)
+-   [DeviceLock/PreventEnablingLockScreenCamera](./policy-csp-devicelock.md#devicelock-preventenablinglockscreencamera)
 -   [DeviceLock/PreventLockScreenSlideShow](./policy-csp-devicelock.md#devicelock-preventlockscreenslideshow)
 -   [Display/DisablePerProcessDpiForApps](./policy-csp-display.md#display-disableperprocessdpiforapps)
 -   [Display/EnablePerProcessDpi](./policy-csp-display.md#display-enableperprocessdpi)
@@ -3820,6 +3857,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Experience/ConfigureWindowsSpotlightOnLockScreen](./policy-csp-experience.md#experience-configurewindowsspotlightonlockscreen)
 -   [Experience/DoNotShowFeedbackNotifications](./policy-csp-experience.md#experience-donotshowfeedbacknotifications)
 -   [ExploitGuard/ExploitProtectionSettings](./policy-csp-exploitguard.md#exploitguard-exploitprotectionsettings)
+-   [FileExplorer/TurnOffDataExecutionPreventionForExplorer](./policy-csp-fileexplorer.md#fileexplorer-turnoffdataexecutionpreventionforexplorer)
+-   [FileExplorer/TurnOffHeapTerminationOnCorruption](./policy-csp-fileexplorer.md#fileexplorer-turnoffheapterminationoncorruption)
 -   [Handwriting/PanelDefaultModeDocked](./policy-csp-handwriting.md#handwriting-paneldefaultmodedocked)
 -   [InternetExplorer/AddSearchProvider](./policy-csp-internetexplorer.md#internetexplorer-addsearchprovider)
 -   [InternetExplorer/AllowActiveXFiltering](./policy-csp-internetexplorer.md#internetexplorer-allowactivexfiltering)
@@ -3894,6 +3933,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/InternetZoneAllowSmartScreenIE](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowsmartscreenie)
 -   [InternetExplorer/InternetZoneAllowUpdatesToStatusBarViaScript](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowupdatestostatusbarviascript)
 -   [InternetExplorer/InternetZoneAllowUserDataPersistence](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowuserdatapersistence)
+-   [InternetExplorer/InternetZoneAllowVBScriptToRunInInternetExplorer](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowvbscripttorunininternetexplorer)
 -   [InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-internetzonedonotrunantimalwareagainstactivexcontrols)
 -   [InternetExplorer/InternetZoneDownloadSignedActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-internetzonedownloadsignedactivexcontrols)
 -   [InternetExplorer/InternetZoneDownloadUnsignedActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-internetzonedownloadunsignedactivexcontrols)
@@ -3949,6 +3989,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/LockedDownInternetZoneInitializeAndScriptActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-lockeddowninternetzoneinitializeandscriptactivexcontrols)
 -   [InternetExplorer/LockedDownInternetZoneJavaPermissions](./policy-csp-internetexplorer.md#internetexplorer-lockeddowninternetzonejavapermissions)
 -   [InternetExplorer/LockedDownInternetZoneNavigateWindowsAndFrames](./policy-csp-internetexplorer.md#internetexplorer-lockeddowninternetzonenavigatewindowsandframes)
+-   [InternetExplorer/LockedDownIntranetJavaPermissions](./policy-csp-internetexplorer.md#internetexplorer-lockeddownintranetjavapermissions)
 -   [InternetExplorer/LockedDownIntranetZoneAllowAccessToDataSources](./policy-csp-internetexplorer.md#internetexplorer-lockeddownintranetzoneallowaccesstodatasources)
 -   [InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-lockeddownintranetzoneallowautomaticpromptingforactivexcontrols)
 -   [InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads](./policy-csp-internetexplorer.md#internetexplorer-lockeddownintranetzoneallowautomaticpromptingforfiledownloads)
@@ -4026,6 +4067,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/RestrictedSitesZoneAllowSmartScreenIE](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowsmartscreenie)
 -   [InternetExplorer/RestrictedSitesZoneAllowUpdatesToStatusBarViaScript](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowupdatestostatusbarviascript)
 -   [InternetExplorer/RestrictedSitesZoneAllowUserDataPersistence](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowuserdatapersistence)
+-   [InternetExplorer/RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowvbscripttorunininternetexplorer)
 -   [InternetExplorer/RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonedonotrunantimalwareagainstactivexcontrols)
 -   [InternetExplorer/RestrictedSitesZoneDownloadSignedActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonedownloadsignedactivexcontrols)
 -   [InternetExplorer/RestrictedSitesZoneDownloadUnsignedActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonedownloadunsignedactivexcontrols)
@@ -4082,10 +4124,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [LocalPoliciesSecurityOptions/Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-devices-restrictcdromaccesstolocallyloggedonuseronly)
 -   [LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-domainmember-digitallyencryptorsignsecurechanneldataalways)
 -   [LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-domainmember-digitallyencryptsecurechanneldatawhenpossible)
--   [LocalPoliciesSecurityOptions/DomainMember_DigitallySignSecureChannelDataWhenPossible](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-domainmember-digitallysignsecurechanneldatawhenpossible)
 -   [LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-domainmember-disablemachineaccountpasswordchanges)
--   [LocalPoliciesSecurityOptions/DomainMember_MaximumMachineAccountPasswordAge](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-domainmember-maximummachineaccountpasswordage)
--   [LocalPoliciesSecurityOptions/DomainMember_RequireStrongSessionKey](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-domainmember-requirestrongsessionkey)
 -   [LocalPoliciesSecurityOptions/InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-interactivelogon-displayuserinformationwhenthesessionislocked)
 -   [LocalPoliciesSecurityOptions/InteractiveLogon_DoNotDisplayLastSignedIn](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-interactivelogon-donotdisplaylastsignedin)
 -   [LocalPoliciesSecurityOptions/InteractiveLogon_DoNotDisplayUsernameAtSignIn](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-interactivelogon-donotdisplayusernameatsignin)
@@ -4094,7 +4133,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [LocalPoliciesSecurityOptions/InteractiveLogon_MessageTextForUsersAttemptingToLogOn](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-interactivelogon-messagetextforusersattemptingtologon)
 -   [LocalPoliciesSecurityOptions/InteractiveLogon_MessageTitleForUsersAttemptingToLogOn](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-interactivelogon-messagetitleforusersattemptingtologon)
 -   [LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior)
--   [LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsAlways](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-microsoftnetworkclient-digitallysigncommunicationsalways)
 -   [LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-microsoftnetworkclient-digitallysigncommunicationsifserveragrees)
 -   [LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-microsoftnetworkclient-sendunencryptedpasswordtothirdpartysmbservers)
 -   [LocalPoliciesSecurityOptions/MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-microsoftnetworkserver-amountofidletimerequiredbeforesuspendingsession)
@@ -4107,7 +4145,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-allowpku2uauthenticationrequests)
 -   [LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-donotstorelanmanagerhashvalueonnextpasswordchange)
 -   [LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-lanmanagerauthenticationlevel)
--   [LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedclients)
 -   [LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedservers)
 -   [LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-shutdown-allowsystemtobeshutdownwithouthavingtologon)
 -   [LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-shutdown-clearvirtualmemorypagefile)
@@ -4123,6 +4160,16 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [LocalPoliciesSecurityOptions/UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-virtualizefileandregistrywritefailurestoperuserlocations)
 -   [Location/EnableLocation](./policy-csp-location.md#location-enablelocation)
 -   [LockDown/AllowEdgeSwipe](./policy-csp-lockdown.md#lockdown-allowedgeswipe)
+-   [MSSLegacy/AllowICMPRedirectsToOverrideOSPFGeneratedRoutes](./policy-csp-msslegacy.md#msslegacy-allowicmpredirectstooverrideospfgeneratedroutes)
+-   [MSSLegacy/AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers](./policy-csp-msslegacy.md#msslegacy-allowthecomputertoignorenetbiosnamereleaserequestsexceptfromwinsservers)
+-   [MSSLegacy/IPSourceRoutingProtectionLevel](./policy-csp-msslegacy.md#msslegacy-ipsourceroutingprotectionlevel)
+-   [MSSLegacy/IPv6SourceRoutingProtectionLevel](./policy-csp-msslegacy.md#msslegacy-ipv6sourceroutingprotectionlevel)
+-   [MSSecurityGuide/ApplyUACRestrictionsToLocalAccountsOnNetworkLogon](./policy-csp-mssecurityguide.md#mssecurityguide-applyuacrestrictionstolocalaccountsonnetworklogon)
+-   [MSSecurityGuide/ConfigureSMBV1ClientDriver](./policy-csp-mssecurityguide.md#mssecurityguide-configuresmbv1clientdriver)
+-   [MSSecurityGuide/ConfigureSMBV1Server](./policy-csp-mssecurityguide.md#mssecurityguide-configuresmbv1server)
+-   [MSSecurityGuide/EnableStructuredExceptionHandlingOverwriteProtection](./policy-csp-mssecurityguide.md#mssecurityguide-enablestructuredexceptionhandlingoverwriteprotection)
+-   [MSSecurityGuide/TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications](./policy-csp-mssecurityguide.md#mssecurityguide-turnonwindowsdefenderprotectionagainstpotentiallyunwantedapplications)
+-   [MSSecurityGuide/WDigestAuthentication](./policy-csp-mssecurityguide.md#mssecurityguide-wdigestauthentication)
 -   [Maps/EnableOfflineMapsAutoUpdate](./policy-csp-maps.md#maps-enableofflinemapsautoupdate)
 -   [Messaging/AllowMessageSync](./policy-csp-messaging.md#messaging-allowmessagesync)
 -   [NetworkIsolation/EnterpriseCloudResources](./policy-csp-networkisolation.md#networkisolation-enterprisecloudresources)
@@ -4133,6 +4180,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [NetworkIsolation/EnterpriseProxyServersAreAuthoritative](./policy-csp-networkisolation.md#networkisolation-enterpriseproxyserversareauthoritative)
 -   [NetworkIsolation/NeutralResources](./policy-csp-networkisolation.md#networkisolation-neutralresources)
 -   [Notifications/DisallowNotificationMirroring](./policy-csp-notifications.md#notifications-disallownotificationmirroring)
+-   [Power/AllowStandbyStatesWhenSleepingOnBattery](./policy-csp-power.md#power-allowstandbystateswhensleepingonbattery)
 -   [Power/AllowStandbyWhenSleepingPluggedIn](./policy-csp-power.md#power-allowstandbywhensleepingpluggedin)
 -   [Power/DisplayOffTimeoutOnBattery](./policy-csp-power.md#power-displayofftimeoutonbattery)
 -   [Power/DisplayOffTimeoutPluggedIn](./policy-csp-power.md#power-displayofftimeoutpluggedin)
@@ -4369,6 +4417,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [UserRights/TakeOwnership](./policy-csp-userrights.md#userrights-takeownership)
 -   [Wifi/AllowAutoConnectToWiFiSenseHotspots](./policy-csp-wifi.md#wifi-allowautoconnecttowifisensehotspots)
 -   [Wifi/AllowInternetSharing](./policy-csp-wifi.md#wifi-allowinternetsharing)
+-   [WindowsConnectionManager/ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork](./policy-csp-windowsconnectionmanager.md#windowsconnectionmanager-prohitconnectiontonondomainnetworkswhenconnectedtodomainauthenticatednetwork)
 -   [WindowsDefenderSecurityCenter/CompanyName](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-companyname)
 -   [WindowsDefenderSecurityCenter/DisableAccountProtectionUI](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-disableaccountprotectionui)
 -   [WindowsDefenderSecurityCenter/DisableAppBrowserUI](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-disableappbrowserui)
@@ -4392,7 +4441,10 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [WindowsInkWorkspace/AllowWindowsInkWorkspace](./policy-csp-windowsinkworkspace.md#windowsinkworkspace-allowwindowsinkworkspace)
 -   [WindowsLogon/DisableLockScreenAppNotifications](./policy-csp-windowslogon.md#windowslogon-disablelockscreenappnotifications)
 -   [WindowsLogon/DontDisplayNetworkSelectionUI](./policy-csp-windowslogon.md#windowslogon-dontdisplaynetworkselectionui)
+-   [WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers](./policy-csp-windowslogon.md#windowslogon-enumeratelocalusersondomainjoinedcomputers)
 -   [WindowsLogon/HideFastUserSwitching](./policy-csp-windowslogon.md#windowslogon-hidefastuserswitching)
+-   [WindowsLogon/SignInLastInteractiveUserAutomaticallyAfterASystemInitiatedRestart](./policy-csp-windowslogon.md#windowslogon-signinlastinteractiveuserautomaticallyafterasysteminitiatedrestart)
+-   [WindowsPowerShell/TurnOnPowerShellScriptBlockLogging](./policy-csp-windowspowershell.md#windowspowershell-turnonpowershellscriptblocklogging)
 -   [WirelessDisplay/AllowProjectionToPC](./policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectiontopc)
 -   [WirelessDisplay/RequirePinForPairing](./policy-csp-wirelessdisplay.md#wirelessdisplay-requirepinforpairing)
 
@@ -4497,7 +4549,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
 -   [Settings/AllowDateTime](#settings-allowdatetime)  
 -   [Settings/AllowVPN](#settings-allowvpn)  
--   [System/AllowFontProviders](#system-allowfontproviders)  
 -   [System/AllowLocation](#system-allowlocation)  
 -   [System/AllowTelemetry](#system-allowtelemetry)  
 -   [Update/AllowAutoUpdate](#update-allowautoupdate)  
