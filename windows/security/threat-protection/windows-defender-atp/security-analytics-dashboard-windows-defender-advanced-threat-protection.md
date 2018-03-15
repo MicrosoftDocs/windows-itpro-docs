@@ -53,7 +53,7 @@ The denominator is reflective of the organizational score potential and calculat
 
 In the example image, the total points from the **Improvement opportunities** tile add up to 321 points for the six pillars from the **Security coverage** tile.
 
-You can set the baselines for calculating the score of Windows Defender security controls on the Secure score dashboard through the **Preferences settings**. For more information, see [Enable Secure score security controls](enable-security-analytics-windows-defender-advanced-threat-protection.md).
+You can set the baselines for calculating the score of Windows Defender security controls on the Secure score dashboard through the **Settings**. For more information, see [Enable Secure score security controls](enable-security-analytics-windows-defender-advanced-threat-protection.md).
 
 ## Windows Defender security controls
 The security controls tile shows a bar graph where each bar represents a Windows Defender security control. Each bar reflects the number of machines that are well configured and those that require **any kind of attention** for each security control. Hovering on top of the individual bars will show exact numbers for each category. Machines that are green are well configured, while machines that are orange require some level of attention. 
