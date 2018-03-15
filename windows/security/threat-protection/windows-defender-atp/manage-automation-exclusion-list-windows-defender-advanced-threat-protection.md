@@ -41,9 +41,7 @@ When you configure the exclusion list to identify specific attributes as malicio
 
     - **Files** -  Hash value
     - **Certificate** - PEM certificate file
-    - **IP address** - IP address
-    - **DNS** - **DNS**
-    - **Email address** - Email address
+    
 
 4. Click **Update rule**.
 
