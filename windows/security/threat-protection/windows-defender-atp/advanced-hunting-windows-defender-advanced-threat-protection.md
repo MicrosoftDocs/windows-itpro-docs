@@ -49,18 +49,18 @@ First, we define a time filter to review only records from the previous day. We 
 Finally, we limit the results to 100 and click **Run query**.
 
 ### Operators
-The query language is very powerful and has the following usable operators: 
+The query language is very powerful and has a lot of available operators, some of them are - 
 
-- **Limit** - Return up to the specified number of rows.
-- **Where** - Filter a table to the subset of rows that satisfy a predicate.
-- **Count** - Return the number of records in the input record set.
-- **Top** - Return the first N records sorted by the specified columns.
-- **Project** - Select the columns to include, rename or drop, and insert new computed columns.
-- **Summarize** - Produce a table that aggregates the content of the input table.
-- **Extend** - Create calculated columns and append them to the result set.
-- **Join** - Merge the rows of two tables to form a new table by matching values of the specified column(s) from each table.
-- **Makeset** -  Return a dynamic (JSON) array of the set of distinct values that Expr takes in the group
-- **Find** - Find rows that match a predicate across a set of tables.
+- **limit** - Return up to the specified number of rows.
+- **where** - Filter a table to the subset of rows that satisfy a predicate.
+- **count** - Return the number of records in the input record set.
+- **top** - Return the first N records sorted by the specified columns.
+- **project** - Select the columns to include, rename or drop, and insert new computed columns.
+- **summarize** - Produce a table that aggregates the content of the input table.
+- **extend** - Create calculated columns and append them to the result set.
+- **join** - Merge the rows of two tables to form a new table by matching values of the specified column(s) from each table.
+- **makeset** -  Return a dynamic (JSON) array of the set of distinct values that Expr takes in the group
+- **find** - Find rows that match a predicate across a set of tables.
 
 To see a live example of these operators, run them as part of the **Get started** section.
 
