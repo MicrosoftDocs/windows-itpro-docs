@@ -302,6 +302,9 @@ When you use `<AutoLogonAccount>` and the configuration is applied to a device, 
 </Configs> 
 ```
 
+>[!IMPORTANT]
+>When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature does not work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows}(https://support.microsoft.com/help/324737/how-to-turn-on-automatic-logon-in-windows).
+
 ##### Config for individual accounts
 
 Individual accounts are specified using `<Account>`. 

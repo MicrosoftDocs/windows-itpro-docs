@@ -182,6 +182,9 @@ Clear-AssignedAccess
 
 When your kiosk device restarts, whether from an update or power outage, you can log on the assigned access account manually or you can configure the device to log on to the assigned access account automatically. Make sure that Group Policy settings applied to the device do not prevent automatic logon.
 
+>[!IMPORTANT]
+>When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature does not work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows}(https://support.microsoft.com/help/324737/how-to-turn-on-automatic-logon-in-windows).
+
 Edit the registry to have an account automatically logged on.
 
 1.  Open Registry Editor (regedit.exe).
