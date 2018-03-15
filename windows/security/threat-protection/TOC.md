@@ -198,6 +198,8 @@
 ####Rules
 ##### [Manage suppression rules](windows-defender-atp\manage-suppression-rules-windows-defender-advanced-threat-protection.md)
 ##### [Manage automation exclusion lists](windows-defender-atp\manage-automation-exclusion-list-windows-defender-advanced-threat-protection.md)
+##### [Manage automation file uploads](windows-defender-atp\manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
+
 
 #### [Configure Windows Defender ATP time zone settings](windows-defender-atp\settings-windows-defender-advanced-threat-protection.md)
 
