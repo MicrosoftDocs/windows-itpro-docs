@@ -67,7 +67,7 @@ These steps are illustrated in following diagram:
  [![](images/analytics-architecture.png)](images/analytics-architecture.png)
 
 >[!NOTE]
->This process assumes that Windows diagnostic data is enabled and you [have assigned your Commercial ID to devices](update-compliance-get-started.md#deploy-your-commercial-id-to-your-windows-10-devices).
+>This process assumes that Windows diagnostic data is enabled and data sharing is enabled as described in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md).
 
 
 

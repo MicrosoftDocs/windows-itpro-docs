@@ -16,7 +16,7 @@ This article introduces concepts and steps needed to get up and running with Upg
 
 To perform an in-place upgrade, user computers must be running the latest version of either Windows 7 SP1 or Windows 8.1. After you enable Windows diagnostic data, Upgrade Readiness performs a full inventory of computers so that you can see which version of Windows is installed on each computer.
 
-The compatibility update KB that sends diagnostic data from user computers to Microsoft data centers works with Windows 7 SP1 and Windows 8.1 only. Upgrade Readiness cannot evaluate Windows XP or Windows Vista for upgrade eligibility.
+The compatibility update that sends diagnostic data from user computers to Microsoft data centers works with Windows 7 SP1 and Windows 8.1 only. Upgrade Readiness cannot evaluate Windows XP or Windows Vista for upgrade eligibility.
 
 <!--With Windows 10, edition 1607, the compatibility update KB is installed automatically.-->
 
@@ -29,7 +29,7 @@ See [Windows 10 Specifications](http://www.microsoft.com/en-US/windows/windows-1
 ### Windows 10
 
 Keeping Windows 10 up to date involves deploying a feature update, and Upgrade Readiness tools help you prepare and plan for these Windows updates.
-The latest cumulative updates must be installed on Windows 10 computers to make sure that the required compatibility KBs are installed.  You can find the latest cumulative update on the [Microsoft Update Catalog](https://catalog.update.microsoft.com). 
+The latest cumulative updates must be installed on Windows 10 computers to make sure that the required compatibility updates are installed.  You can find the latest cumulative update on the [Microsoft Update Catalog](https://catalog.update.microsoft.com). 
 
 Windows 10 LTSB is not supported by Upgrade Readiness. The Long-Term Servicing Channel of Windows 10 is not intended for general deployment, and does not receive feature updates, therefore it is not compatible with Upgrade Readiness.  See [Windows as a service overview](../update/waas-overview.md#long-term-servicing-channel) to understand more about LTSB.
 

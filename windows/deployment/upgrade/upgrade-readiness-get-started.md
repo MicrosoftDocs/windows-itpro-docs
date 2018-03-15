@@ -70,8 +70,8 @@ The settings that are used to enable client computers to connect to Windows diag
 
 To ensure that user computers are receiving the most up to date data from Microsoft, we recommend that you establish the following data sharing and analysis processes.
 
-- Enable automatic updates for the compatibility update and related KBs. These KBs are updated frequently to include the latest application and driver issue information as we discover it during testing.
-- Schedule the Upgrade Readiness deployment script to automatically run so that you don’t have to manually initiate an inventory scan each time the compatibility update KBs are updated. 
+- Enable automatic updates for the compatibility update and related updates. These updates are updated frequently to include the latest application and driver issue information as we discover it during testing.
+- Schedule the Upgrade Readiness deployment script to automatically run so that you don’t have to manually initiate an inventory scan each time the compatibility updates are updated. 
 - Schedule monthly user computer scans to view monthly active computer and usage information.
 
 >When you run the deployment script, it initiates a full scan. The daily scheduled task to capture the deltas is created when the update package is installed. For Windows 10 devices, it's already part of the OS. A full scan averages about 2 MB, but the delta scans are very small. The scheduled task is named **Windows Compatibility Appraiser** and can be found in the Task Scheduler Library under Microsoft > Windows > Application Experience. Deltas are invoked via the nightly scheduled task. It attempts to run around 3:00AM every day. If the system is powered off at that time, the task will run when the system is turned on. 
