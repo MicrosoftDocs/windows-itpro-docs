@@ -230,7 +230,6 @@
 ### [Change history for Update Windows 10](update/change-history-for-update-windows-10.md)
 
 ## [Windows Analytics](update/windows-analytics-overview.md)
-### [Enrolling devices in Windows Analytics](update/windows-analytics-get-started.md)
 ### [Manage Windows upgrades with Upgrade Readiness](upgrade/manage-windows-upgrades-with-upgrade-readiness.md)
 #### [Upgrade Readiness architecture](upgrade/upgrade-readiness-architecture.md)
 #### [Upgrade Readiness requirements](upgrade/upgrade-readiness-requirements.md)
@@ -254,6 +253,7 @@
 ### [Device Health](update/device-health-monitor.md)
 #### [Get started with Device Health](update/device-health-get-started.md)
 #### [Using Device Health](update/device-health-using.md)
+### [Enrolling devices in Windows Analytics](update/windows-analytics-get-started.md)
 ### [Troubleshooting Windows Analytics and FAQ](update/windows-analytics-FAQ-troubleshooting.md)
 
 ## [Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management](upgrade/upgrade-windows-phone-8-1-to-10.md)
