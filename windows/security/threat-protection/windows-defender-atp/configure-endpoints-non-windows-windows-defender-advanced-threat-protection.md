@@ -54,7 +54,7 @@ Create an EICAR test file by saving the string displayed on the portal in an emp
 The file should trigger a detection and a corresponding alert on Windows Defender ATP.
 
 ## Offboard non-Windows machines
-To effectively offboard the endpoints from the service, you'll need to disable the data push on the third-party portal first then switch the toggle to off in Windows Defender Security Center. The toggle in the portal only blocks the data inbound flow.
+To effectively offboard the machine from the service, you'll need to disable the data push on the third-party portal first then switch the toggle to off in Windows Defender Security Center. The toggle in the portal only blocks the data inbound flow.
 
 
 1. Follow the third-party documentation to opt-out on the third-party service side.
@@ -64,10 +64,10 @@ To effectively offboard the endpoints from the service, you'll need to disable t
 3. Turn off the third-party solution integration. 
 
 >[!WARNING]
->If you decide to turn on the third-party integration again after disabling the integration, you'll need to regenerate the token and reapply it on endpoints. 
+>If you decide to turn on the third-party integration again after disabling the integration, you'll need to regenerate the token and reapply it on machines. 
 
 ## Related topics
 - [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
-- [Configure server endpoints](configure-server-endpoints-windows-defender-advanced-threat-protection.md)
+- [Configure servers](configure-server-endpoints-windows-defender-advanced-threat-protection.md)
 - [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
 - [Troubleshooting Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)

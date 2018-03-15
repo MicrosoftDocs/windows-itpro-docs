@@ -52,4 +52,4 @@ Read the walkthrough document provided with each attack scenario. Each document 
 
 ## Related topics
 - [Onboard and set up Windows Defender ATP](onboard-configure-windows-defender-advanced-threat-protection.md)
-- [Configure client endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
+- [Onboard machines](configure-endpoints-windows-defender-advanced-threat-protection.md)

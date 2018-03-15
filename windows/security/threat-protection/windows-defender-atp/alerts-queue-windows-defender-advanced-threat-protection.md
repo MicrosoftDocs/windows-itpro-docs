@@ -27,7 +27,7 @@ ms.date: 04/16/2018
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
 
-The **Alerts queue** shows a list of alerts that were flagged from endpoints in your network. Alerts are displayed in queues according to their current status. In each queue, you'll see details such as the severity of alerts and the number of machines the alerts were raised on.
+The **Alerts queue** shows a list of alerts that were flagged from machines in your network. Alerts are displayed in queues according to their current status. In each queue, you'll see details such as the severity of alerts and the number of machines the alerts were raised on.
 
 Alerts are organized in queues by their workflow status or assignment:
 
@@ -69,7 +69,6 @@ Medium </br>(Orange) | Threats rarely observed in the organization, such as anom
 Low </br>(Yellow) | Threats associated with prevalent malware and hack-tools that do not necessarily indicate an advanced threat targeting the organization.
 Informational </br>(Grey) | Informational alerts are those that might not be considered harmful to the network but might be good to keep track of.
 
-Reviewing the various alerts and their severity can help you decide on the appropriate action to protect your organization's endpoints.
 
 #### Understanding alert severity
 It is important to understand that the Windows Defender Antivirus (Windows Defender AV) and Windows Defender ATP alert severities are different because they represent different scopes.
@@ -92,7 +91,7 @@ So, for example:
 - Others
 
 >[!NOTE]
->The Windows Defender Antivirus filter will only appear if your endpoints are using Windows Defender Antivirus as the default real-time protection antimalware product.
+>The Windows Defender Antivirus filter will only appear if machines are using Windows Defender Antivirus as the default real-time protection antimalware product.
 
 
 ### View

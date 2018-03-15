@@ -1,6 +1,6 @@
 ---
 title: Onboard Windows 10 machines using System Center Configuration Manager
-description: Use System Center Configuration Manager to deploy the configuration package on endpoints so that they are onboarded to the service.
+description: Use System Center Configuration Manager to deploy the configuration package on machines so that they are onboarded to the service.
 keywords: onboard machines using sccm, machine management, configure Windows ATP machines, configure Windows Defender Advanced Threat Protection machines, sccm
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -30,14 +30,14 @@ ms.date: 04/16/2018
 
 <span id="sccm1606"/>
 ## Onboard Windows 10 machines using System Center Configuration Manager (current branch) version 1606
-System Center Configuration Manager (SCCM) (current branch) version 1606, has UI integrated support for configuring and managing Windows Defender ATP on endpoints. For more information, see [Support for Windows Defender Advanced Threat Protection service](https://go.microsoft.com/fwlink/p/?linkid=823682).
+System Center Configuration Manager (SCCM) (current branch) version 1606, has UI integrated support for configuring and managing Windows Defender ATP on machines. For more information, see [Support for Windows Defender Advanced Threat Protection service](https://go.microsoft.com/fwlink/p/?linkid=823682).
 
 >[!NOTE]
 > If you’re using SCCM client version 1606 with server version 1610 or above, you must upgrade the client version to match the server version.
 
 <span id="sccm1602"/>
 ## Onboard Windows 10 machines using System Center Configuration Manager earlier versions
-You can use existing System Center Configuration Manager functionality to create a policy to configure your endpoints. This is supported in the following System Center Configuration Manager versions:
+You can use existing System Center Configuration Manager functionality to create a policy to configure your machines. This is supported in the following System Center Configuration Manager versions:
 
 - System Center 2012 Configuration Manager
 - System Center 2012 R2 Configuration Manager
@@ -66,12 +66,12 @@ You can use existing System Center Configuration Manager functionality to create
 > Windows Defender ATP doesn't support onboarding during the [Out-Of-Box Experience (OOBE)](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) phase. Make sure users complete OOBE after running Windows installation or upgrading.
 
 >[!TIP]
-> After onboarding the endpoint, you can choose to run a detection test to verify that an endpoint is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md).
+> After onboarding the machine, you can choose to run a detection test to verify that an machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md).
 
 ### Configure sample collection settings
-For each endpoint, you can set a configuration value to state whether samples can be collected from the endpoint when a request is made through the Windows Defender ATP portal to submit a file for deep analysis.
+For each machine, you can set a configuration value to state whether samples can be collected from the machine when a request is made through the Windows Defender ATP portal to submit a file for deep analysis.
 
-You can set a compliance rule for configuration item in System Center Configuration Manager to change the sample share setting on an endpoint.
+You can set a compliance rule for configuration item in System Center Configuration Manager to change the sample share setting on a machine.
 This rule should be a *remediating* compliance rule configuration item that sets the value of a registry key on targeted machines to make sure they’re complaint.
 
 The configuration is set through the following registry key entry:
@@ -84,8 +84,8 @@ Value: 0 or 1
 Where:<br>
 Key type is a D-WORD. <br>
 Possible values are:
-- 0 - doesn't allow sample sharing  from this endpoint
-- 1 - allows sharing of all file types from this endpoint
+- 0 - doesn't allow sample sharing  from this machine
+- 1 - allows sharing of all file types from this machine
 
 The default value in case the registry key doesn’t exist is 1.
 
@@ -99,7 +99,7 @@ In cases where high-value assets or machines are at high risk, you can configure
 > [!NOTE]
 > Using the Expedite mode might have an impact on the machine's battery usage and actual bandwidth used for sensor data. You should consider this when these measures are critical.
 
-For each endpoint, you can configure a registry key value that determines how frequent a machine reports sensor data to the portal.
+For each machine, you can configure a registry key value that determines how frequent a machine reports sensor data to the portal.
 
 The configuration is set through the following registry key entry:
 
@@ -111,18 +111,18 @@ Value: Normal or Expedite
 Where:<br>
 Key type is a string. <br>
 Possible values are:
-- Normal - sets reporting frequency from the endpoint to Normal mode for the optimal speed and performance balance
-- Expedite - sets reporting frequency from the endpoint to Expedite mode
+- Normal - sets reporting frequency from the machine to Normal mode for the optimal speed and performance balance
+- Expedite - sets reporting frequency from the machine to Expedite mode
 
 The default value in case the registry key doesn’t exist is Normal.
 
 
 ## Offboard machines using System Center Configuration Manager
 
-For security reasons, the package used to Offboard machines will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+For security reasons, the package used to Offboard machines will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an machine will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
 > [!NOTE]
-> Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.
+> Onboarding and offboarding policies must not be deployed on the same machine at the same time, otherwise this will cause unpredictable collisions.
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
@@ -147,9 +147,9 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 ### Monitor endpoint configuration
 Monitoring with SCCM consists of two parts:
 
-1. Confirming the configuration package has been correctly deployed and is running (or has successfully run) on the endpoints in your network.
+1. Confirming the configuration package has been correctly deployed and is running (or has successfully run) on the machines in your network.
 
-2. Checking that the endpoints are compliant with the Windows Defender ATP service (this ensures the endpoint can complete the onboarding process and can continue to report data to the service).
+2. Checking that the machines are compliant with the Windows Defender ATP service (this ensures the machine can complete the onboarding process and can continue to report data to the service).
 
 **To confirm the configuration package has been correctly deployed:**
 
@@ -161,11 +161,11 @@ Monitoring with SCCM consists of two parts:
 
 4. Review the status indicators under **Completion Statistics** and **Content Status**.
 
-If there are failed deployments (endpoints with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the endpoints. For more information see, [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md).
+If there are failed deployments (machines with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the machines. For more information see, [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md).
 
 ![SCCM showing successful deployment with no errors](images/sccm-deployment.png)
 
-**Check that the endpoints are compliant with the Windows Defender ATP service:**<br>
+**Check that the machines are compliant with the Windows Defender ATP service:**<br>
 You can set a compliance rule for configuration item in System Center Configuration Manager to monitor your deployment.
 
 This rule should be a *non-remediating* compliance rule configuration item that monitors the value of a registry key on targeted machines.
@@ -183,5 +183,5 @@ For more information about System Center Configuration Manager Compliance see [C
 - [Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
 - [Onboard Windows 10 machines using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
-- [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md)
+- [Run a detection test on a newly onboarded Windows Defender ATP machine](run-detection-test-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)

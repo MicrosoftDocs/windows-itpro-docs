@@ -29,7 +29,7 @@ Advanced hunting allows you to proactively hunt for possible threats across your
 
 - **Powerful query language with IntelliSense** - Built on top of a query language that gives you the flexibility you need to take hunting to the next level.
 - **Query all stored telemetry** - All telemetry data is accessible in tables for you to query. For example, you can query process creation, network communication, and many other event types.
-- **Links to portal** - Certain query results, such as endpoint names and file names are actually direct links to the portal, consolidating the advanced hunting query experience and the existing portal investigation experience.
+- **Links to portal** - Certain query results, such as machine names and file names are actually direct links to the portal, consolidating the advanced hunting query experience and the existing portal investigation experience.
 - **Query examples** - A welcome page provides examples designed to get you started and get you familiar with the tables and the query language.
 
 To get you started in querying your data, you can use the basic or advanced query examples that have some preloaded queries for you to understand the basic query syntax.

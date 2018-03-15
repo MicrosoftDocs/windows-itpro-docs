@@ -1,7 +1,7 @@
 ---
 title: Onboard Windows 10 machines using Mobile Device Management tools
 description: Use Mobile Device Management tools to deploy the configuration package on machines so that they are onboarded to the service.
-keywords: onboard machines using mdm, endpoint management, onboard Windows ATP machines, onboard Windows Defender Advanced Threat Protection machines, mdm
+keywords: onboard machines using mdm, machine management, onboard Windows ATP machines, onboard Windows Defender Advanced Threat Protection machines, mdm
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -93,7 +93,7 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
 
   ![Microsoft Intune manage deployment](images/atp-intune-manage-deployment.png)
 
-When the policy is deployed and is propagated, endpoints will be shown in the **Machines list**.
+When the policy is deployed and is propagated, machines will be shown in the **Machines list**.
 
 You can use the following onboarding policies to deploy configuration settings on endpoints. These policies can be sub-categorized to:
 - Onboarding
@@ -117,15 +117,15 @@ Configuration for onboarded machines: diagnostic data reporting frequency | ./De
 
 
 >[!TIP]
-> After onboarding the endpoint, you can choose to run a detection test to verify that an endpoint is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md).
+> After onboarding the machine, you can choose to run a detection test to verify that a machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP machine](run-detection-test-windows-defender-advanced-threat-protection.md).
 
 
 
 ## Offboard and monitor machines using Mobile Device Management tools
-For security reasons, the package used to Offboard machines will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+For security reasons, the package used to Offboard machines will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a machine will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
 > [!NOTE]
-> Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.
+> Onboarding and offboarding policies must not be deployed on the same machine at the same time, otherwise this will cause unpredictable collisions.
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
@@ -141,7 +141,7 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 
 3. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings. For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
 
-Offboarding - Use the offboarding policies to remove configuration settings on endpoints. These policies can be sub-categorized to:
+Offboarding - Use the offboarding policies to remove configuration settings on machines. These policies can be sub-categorized to:
 - Offboarding
 - Health Status for offboarded machines
 - Configuration for offboarded machines
@@ -163,5 +163,5 @@ Health Status for offboarded machines: Onboarding State | ./Device/Vendor/MSFT/W
 - [Onboard Windows 10 machines using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
 - [Onboard Windows 10 machines using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
-- [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md)
+- [Run a detection test on a newly onboarded Windows Defender ATP machine](run-detection-test-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
