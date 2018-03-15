@@ -1,7 +1,7 @@
 ---
-title: Configure Windows Defender ATP server endpoints
-description: Configure server endpoints so that they can send sensor data to the Windows Defender ATP sensor.
-keywords: configure server endpoints, server, server onboarding, endpoint management, configure Windows ATP server endpoints, configure Windows Defender Advanced Threat Protection server endpoints
+title: Onboard servers to the Windows Defender ATP service
+description: Onboard servers so that they can send sensor data to the Windows Defender ATP sensor.
+keywords: onboard server, server, server onboarding, machine management, configure Windows ATP servers, onboard Windows Defender Advanced Threat Protection servers
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ localizationpriority: high
 ms.date: 04/16/2018
 ---
 
-# Configure Windows Defender ATP server endpoints
+# Onboard servers
 
 **Applies to:**
 
@@ -105,7 +105,7 @@ You’ll be able to onboard in the same method available for Windows 10 client e
 
     If the result is ‘The specified service does not exist as an installed service’, then you'll need to install Windows Defender AV. For more information, see [Windows Defender Antivirus in Windows 10](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
 
-### Offboard server endpoints 
+## Offboard servers 
 To offboard the server, you can uninstall the MMA agent from the server or detach it from reporting to your Windows Defender ATP workspace. After offboarding the agent, the server will no longer send sensor data to Windows Defender ATP.
 For more information, see [To disable an agent](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-windows-agents#to-disable-an-agent).
 
@@ -114,7 +114,7 @@ For more information, see [To disable an agent](https://docs.microsoft.com/en-us
 
 ## Related topics
 - [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
-- [Configure non-Windows endpoints](configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)
+- [Configure non-Windows machines](configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)
 - [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
 - [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md)
 - [Troubleshooting Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)

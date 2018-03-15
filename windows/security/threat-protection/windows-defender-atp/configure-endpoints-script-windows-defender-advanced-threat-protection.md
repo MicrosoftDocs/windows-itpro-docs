@@ -32,7 +32,7 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
 > [!NOTE]
 > The script has been optimized to be used on a limited number of machines (1-10 machines). To deploy to scale, use other deployment options. For more information on using other deployment options, see [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md).
 
-## Onboard endpoints
+## Onboard machines 
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
     a.  In the navigation pane, select **Settings** > **Onboarding**.
@@ -85,8 +85,8 @@ Possible values are:
 The default value in case the registry key doesn’t exist is 1.
 
 
-## Offboard endpoints
-For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+## Offboard machines using a local script
+For security reasons, the package used to Offboard machines will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.

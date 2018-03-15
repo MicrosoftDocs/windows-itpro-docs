@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 04/16/2018
 ---
 
-# Onboards Windows 10 machines using System Center Configuration Manager
+# Onboard Windows 10 machines using System Center Configuration Manager
 
 **Applies to:**
 
@@ -44,7 +44,8 @@ You can use existing System Center Configuration Manager functionality to create
 - System Center Configuration Manager (current branch), version 1511
 - System Center Configuration Manager (current branch), version 1602
 
-### Onboard Windows 10 machines
+### Onboard machines using System Center Configuration Manager
+
 
 1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
@@ -116,9 +117,9 @@ Possible values are:
 The default value in case the registry key doesn’t exist is Normal.
 
 
-### Offboard endpoints
+## Offboard machines using System Center Configuration Manager
 
-For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+For security reasons, the package used to Offboard machines will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.

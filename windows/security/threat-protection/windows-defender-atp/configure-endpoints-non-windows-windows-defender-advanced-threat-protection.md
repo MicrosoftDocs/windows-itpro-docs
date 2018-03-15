@@ -1,5 +1,5 @@
 ---
-title: Onboard non-Windows machines in Windows Defender ATP
+title: Onboard non-Windows machines to the Windows Defender ATP service
 description: Configure non-Winodws machines so that they can send sensor data to the Windows Defender ATP service.
 keywords: onboard non-Windows machines, macos, linux, machine management, configure Windows ATP machines, configure Windows Defender Advanced Threat Protection machines
 search.product: eADQiWindows 10XVcnh
@@ -28,8 +28,7 @@ Windows Defender ATP provides a centralized security operations experience for W
 
 You'll need to know the exact Linux distros and macOS X versions that are compatible with Windows Defender ATP for the integration to work. 
 
-## Onboard non-Windows endpoints
-You'll need to take the following steps to onboard non-Windows endpoints:
+You'll need to take the following steps to onboard non-Windows machines:
 1. Turn on third-party integration
 2. Run a detection test
 
@@ -54,7 +53,7 @@ Create an EICAR test file by saving the string displayed on the portal in an emp
 
 The file should trigger a detection and a corresponding alert on Windows Defender ATP.
 
-### Offboard non-Windows endpoints
+## Offboard non-Windows machines
 To effectively offboard the endpoints from the service, you'll need to disable the data push on the third-party portal first then switch the toggle to off in Windows Defender Security Center. The toggle in the portal only blocks the data inbound flow.
 
 
