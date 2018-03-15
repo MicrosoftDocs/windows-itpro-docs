@@ -204,8 +204,8 @@
 ##### [Manage automation folder exclusions](windows-defender-atp\manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
 
 ####Machine management
-### [Onboarding machines](windows-defender-atp\onboard-configure-windows-defender-advanced-threat-protection.md)
-### [Offboarding machines](windows-defender-atp\offboard-machines-windows-defender-advanced-threat-protection.md)
+##### [Onboarding machines](windows-defender-atp\onboard-configure-windows-defender-advanced-threat-protection.md)
+##### [Offboarding machines](windows-defender-atp\offboard-machines-windows-defender-advanced-threat-protection.md)
 
 ### [Configure Windows Defender ATP time zone settings](windows-defender-atp\settings-windows-defender-advanced-threat-protection.md)
 
