@@ -30,7 +30,7 @@ When you are ready to begin using Upgrade Readiness, perform the following steps
 
 ## Data collection and privacy 
 
-To enable system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what diagnostic data Microsoft collects and how that data is used and protected by Microsoft, see the following topics, refer to [Frequently asked questions and troubleshooting Windows Analytics](windows-analytics-FAQ-troubleshooting.md), which discusses the issues and provides links to still more detailed information.
+To enable system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what diagnostic data Microsoft collects and how that data is used and protected by Microsoft, see the following topics, refer to [Frequently asked questions and troubleshooting Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-FAQ-troubleshooting.md), which discusses the issues and provides links to still more detailed information.
 
 ## Add Upgrade Readiness to Operations Management Suite
 
@@ -54,7 +54,7 @@ If you are not using OMS:
 
 ## Enroll devices in Windows Analytics
 
-Once you've added Update Compliance to Microsoft Operations Management Suite, you can now start enrolling the devices in your organization. For full instructions, see [Enrolling devices in Windows Analytics](windows-analytics-get-started.md).
+Once you've added Update Compliance to Microsoft Operations Management Suite, you can now start enrolling the devices in your organization. For full instructions, see [Enrolling devices in Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started.md).
 
 ### Connection settings
 
@@ -78,4 +78,4 @@ To ensure that user computers are receiving the most up to date data from Micros
 
 ## Use Upgrade Readiness to manage Windows Upgrades
 
-Now that your devices are enrolled, you can move on to [Use Upgrade Readiness to manage Windows Upgrades](#use-upgrade-readiness-to-manage-windows-upgrades)..
+Now that your devices are enrolled, you can move on to [Use Upgrade Readiness to manage Windows Upgrades](https://docs.microsoft.com/windows/deployment/upgrade/use-upgrade-readiness-to-manage-windows-upgrades).
