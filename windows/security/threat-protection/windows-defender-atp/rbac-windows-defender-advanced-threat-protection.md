@@ -39,7 +39,7 @@ Tier 1 | **Local security operations team / IT team** <br> This team usually tri
 Tier 2 | **Regional security operations team** <br> This team can see all the machines for their region and perform remediation actions.
 Tier 3 | **Global security operations team** <br> This team consists of security experts and are authorized to see and perform all actions from the portal.
 
-Windows Defender ATP RBAC is designed to support your tier or role model of choice and allows you to have granular control over what roles can see, machines they can access, and actions they can take. 
+Windows Defender ATP RBAC is designed to support your tier or role model of choice and gives you granular control over what roles can see, machines they can access, and actions they can take. 
 
 The implementation of role-based access control in Windows Defender ATP is based on Azure Active Directory (Azure AD) user groups. 
 

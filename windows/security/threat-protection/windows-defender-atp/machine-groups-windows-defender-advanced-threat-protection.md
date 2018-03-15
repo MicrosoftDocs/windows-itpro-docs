@@ -26,7 +26,23 @@ ms.date: 04/16/2018
 
 [!include[Prerelease information](prerelease.md)]
 
-Create machine groups and set automated remediation levels on them, configure the rules to apply on the group, and assign the group to an Azure AD group and role. After configuring the groups and assignments, rank the group so that the corresponding rule is applied. 
+
+In a typical enterprise scenario, security operation teams are assigned a set of machines groups. These machines are grouped together based on a set of attributes such as domain, name, or tag.
+
+In Windows Defender ATP, you can create machine groups based on conditions and apply the following rules on them:
+- Remediation level for automated investigations
+- Azure Active Directory (Azure AD) user group access
+
+
+When you create a machine group, you'll need to set the automated remediation level for that group. You'll also need to configure the conditions for when a machine is considered to be part of that group. You can set the conditions based on name, domain, tag, or OS.
+
+
+After setting the automated remediation level and conditions, you'll need to assign a Azure AD user group who will have access to that group of machines. The assignment you set here determines what the group can see in the portal. For example, if you assign a user group to only see machines with a specific tag then their view of the Machines list will be limited based on the tags you set in the rule.
+
+
+Finally, you'll need to rank the machine groups so that the appropriate rul is applied on them. 
+
+
 
 ### Add machine group
 
@@ -54,7 +70,7 @@ Create machine groups and set automated remediation levels on them, configure th
 
 4.	Review the result of the preview of matched machines. If you are satisfied with the rules, click the **Access** tab.
 
-5.	Assign the user groups that can access the machine group you created. The assignment you set here determines what the group can see in the portal. For example, if you assign a user group to only see machines with a specific tag then their view of the Machines list will be limited based on the tags you set in the rule.
+5.	Assign the user groups that can access the machine group you created. 
 
 6.	Click **Close**.
 
@@ -62,7 +78,7 @@ Create machine groups and set automated remediation levels on them, configure th
 
 ## Rank rules on machine groups
 
-After creating groups, setting the remediation levels on them, and assigning user groups that can access the machine group, you’ll need to rank the rules that are applied on the groups.
+After creating groups based on conditions, setting the remediation levels on them, and assigning user groups that can access the machine group, you’ll need to rank the rules that are applied on the groups.
 
 You can promote or demote the rank of a group so that the rules applied is of higher or lower level. The evaluation order is applied from higher rank to lower rank. The higher rank should apply to the most machines.
 
