@@ -1,7 +1,7 @@
 ---
 title: Onboard Windows 10 machines on Windows Defender ATP
 description: Onboard Windows 10 machines so that they can send sensor data to the Windows Defender ATP sensor
-keywords: onboard windows 10, group policy, system center configuration manager, mobile device management, local script, gp, sccm, mdm, intune
+keywords: Onboard Windows 10 machines, group policy, system center configuration manager, mobile device management, local script, gp, sccm, mdm, intune
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 04/16/2018
 ---
 
-# Configure Windows Defender ATP client endpoints
+# Onboard Windows 10 machines
 
 **Applies to:**
 

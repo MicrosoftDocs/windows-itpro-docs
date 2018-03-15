@@ -1,7 +1,7 @@
 ---
-title: Onboard endpoints and set up the Windows Defender ATP user access
-description: Set up user access in Azure Active Directory and use Group Policy, SCCM, or do manual registry changes to onboard endpoints to the service.
-keywords: onboarding, windows defender advanced threat protection onboarding, windows atp onboarding, sccm, group policy, mdm, local script
+title: Onboard machines to the Windows Defender ATP service
+description: Onboard Windows 10 machines, servers, non-Windows machines and learn how to run a detection test.
+keywords: onboarding, windows defender advanced threat protection onboarding, windows atp onboarding, sccm, group policy, mdm, local script, detection test
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 04/16/2018
 ---
 
-# Onboard and set up Windows Defender Advanced Threat Protection
+# Onboard machines to the Windows Defender ATP service
 
 **Applies to:**
 
@@ -21,6 +21,10 @@ ms.date: 04/16/2018
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
+- macOS
+- Linux
+- Windows Server 2012 R2
+- Windows Server 2016
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
