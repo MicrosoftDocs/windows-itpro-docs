@@ -1,7 +1,7 @@
 ---
-title: Configure non-Windows endpoints in Windows Defender ATP
-description: Configure non-Winodws endpoints so that they can send sensor data to the Windows Defender ATP service.
-keywords: configure endpoints non-Windows endpoints, macos, linux, endpoint management, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints
+title: Onboard non-Windows machines to the Windows Defender ATP service
+description: Configure non-Winodws machines so that they can send sensor data to the Windows Defender ATP service.
+keywords: onboard non-Windows machines, macos, linux, machine management, configure Windows ATP machines, configure Windows Defender Advanced Threat Protection machines
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ localizationpriority: high
 ms.date: 04/16/2018
 ---
 
-# Configure non-Windows endpoints
+# Onboard non-Windows machines
 
 **Applies to:**
 
@@ -28,8 +28,7 @@ Windows Defender ATP provides a centralized security operations experience for W
 
 You'll need to know the exact Linux distros and macOS X versions that are compatible with Windows Defender ATP for the integration to work. 
 
-## Onboard non-Windows endpoints
-You'll need to take the following steps to onboard non-Windows endpoints:
+You'll need to take the following steps to onboard non-Windows machines:
 1. Turn on third-party integration
 2. Run a detection test
 
@@ -37,7 +36,7 @@ You'll need to take the following steps to onboard non-Windows endpoints:
 
 1. In the navigation pane, select **Settings** > **Onboarding**. Make sure the third-party solution is listed.
 
-2. 	Make you select Mac and Linux as the operating system.
+2. 	Select Mac and Linux as the operating system.
 
 3. Turn on the third-party solution integration.
 
@@ -54,7 +53,7 @@ Create an EICAR test file by saving the string displayed on the portal in an emp
 
 The file should trigger a detection and a corresponding alert on Windows Defender ATP.
 
-### Offboard non-Windows endpoints
+## Offboard non-Windows machines
 To effectively offboard the endpoints from the service, you'll need to disable the data push on the third-party portal first then switch the toggle to off in Windows Defender Security Center. The toggle in the portal only blocks the data inbound flow.
 
 
@@ -68,7 +67,7 @@ To effectively offboard the endpoints from the service, you'll need to disable t
 >If you decide to turn on the third-party integration again after disabling the integration, you'll need to regenerate the token and reapply it on endpoints. 
 
 ## Related topics
-- [Configure Windows Defender ATP client endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
 - [Configure server endpoints](configure-server-endpoints-windows-defender-advanced-threat-protection.md)
 - [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
 - [Troubleshooting Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)

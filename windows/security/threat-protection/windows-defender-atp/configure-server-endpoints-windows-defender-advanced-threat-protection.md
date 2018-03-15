@@ -1,7 +1,7 @@
 ---
-title: Configure Windows Defender ATP server endpoints
-description: Configure server endpoints so that they can send sensor data to the Windows Defender ATP sensor.
-keywords: configure server endpoints, server, server onboarding, endpoint management, configure Windows ATP server endpoints, configure Windows Defender Advanced Threat Protection server endpoints
+title: Onboard servers to the Windows Defender ATP service
+description: Onboard servers so that they can send sensor data to the Windows Defender ATP sensor.
+keywords: onboard server, server, server onboarding, machine management, configure Windows ATP servers, onboard Windows Defender Advanced Threat Protection servers
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ localizationpriority: high
 ms.date: 04/16/2018
 ---
 
-# Configure Windows Defender ATP server endpoints
+# Onboard servers
 
 **Applies to:**
 
@@ -46,7 +46,7 @@ To onboard your servers to Windows Defender ATP, you’ll need to:
 
 1. In the navigation pane, select **Settings** > **Onboarding**.
 
-2. Make you select Windows server 2012, 2012R2 and 2016 as the operating system.
+2. Select Windows server 2012, 2012R2 and 2016 as the operating system.
  
 3. Click **Turn on server monitoring** and confirm that you'd like to proceed with the environment set up. When the set up completes, the **Workspace ID** and **Workspace key** fields are populated with unique values. You'll need to use these values to configure the MMA agent.
 
@@ -105,7 +105,7 @@ You’ll be able to onboard in the same method available for Windows 10 client e
 
     If the result is ‘The specified service does not exist as an installed service’, then you'll need to install Windows Defender AV. For more information, see [Windows Defender Antivirus in Windows 10](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
 
-### Offboard server endpoints 
+## Offboard servers 
 To offboard the server, you can uninstall the MMA agent from the server or detach it from reporting to your Windows Defender ATP workspace. After offboarding the agent, the server will no longer send sensor data to Windows Defender ATP.
 For more information, see [To disable an agent](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-windows-agents#to-disable-an-agent).
 
@@ -113,8 +113,8 @@ For more information, see [To disable an agent](https://docs.microsoft.com/en-us
 >Offboarding causes the server to stop sending sensor data to the portal but data from the server, including reference to any alerts it has had will be retained for up to 6 months.
 
 ## Related topics
-- [Configure Windows Defender ATP client endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
-- [Configure non-Windows endpoints](configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
+- [Configure non-Windows machines](configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)
 - [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
 - [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md)
 - [Troubleshooting Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)

@@ -1,7 +1,7 @@
 ---
-title: Onboard endpoints and set up the Windows Defender ATP user access
-description: Set up user access in Azure Active Directory and use Group Policy, SCCM, or do manual registry changes to onboard endpoints to the service.
-keywords: onboarding, windows defender advanced threat protection onboarding, windows atp onboarding, sccm, group policy, mdm, local script
+title: Onboard machines to the Windows Defender ATP service
+description: Onboard Windows 10 machines, servers, non-Windows machines and learn how to run a detection test.
+keywords: onboarding, windows defender advanced threat protection onboarding, windows atp onboarding, sccm, group policy, mdm, local script, detection test
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 04/16/2018
 ---
 
-# Onboard and set up Windows Defender Advanced Threat Protection
+# Onboard machines to the Windows Defender ATP service
 
 **Applies to:**
 
@@ -21,6 +21,10 @@ ms.date: 04/16/2018
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
+- macOS
+- Linux
+- Windows Server 2012 R2
+- Windows Server 2016
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
@@ -47,7 +51,7 @@ You must configure the signature updates on the Windows Defender ATP endpoints w
 
 When Windows Defender Antivirus is not the active antimalware in your organization and you use the Windows Defender ATP service, Windows Defender Antivirus goes on passive mode. If your organization has disabled Windows Defender Antivirus through group policy or other methods, machines that are onboarded to Windows Defender ATP must be excluded from this group policy.
 
-If you are onboarding servers and Windows Defender Antivirus is not the active antimalware on your servers, you shouldn't uninstall Windows Defender Antivirus. You'll need to configure it to run on passive mode. For more information, see [Configure server endpoints](configure-server-endpoints-windows-defender-advanced-threat-protection.md).
+If you are onboarding servers and Windows Defender Antivirus is not the active antimalware on your servers, you shouldn't uninstall Windows Defender Antivirus. You'll need to configure it to run on passive mode. For more information, see [Onboard server endpoints](configure-server-endpoints-windows-defender-advanced-threat-protection.md).
 
 
 For more information, see [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
@@ -56,10 +60,10 @@ For more information, see [Windows Defender Antivirus compatibility](../windows-
 ## In this section
 Topic | Description
 :---|:---
-[Configure client endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md) | You'll need to configure endpoints for it to report to the Windows Defender ATP service. Learn about the tools and methods you can use to configure endpoints in your enterprise.
-[Configure server endpoints](configure-server-endpoints-windows-defender-advanced-threat-protection.md) |  Onboard Windows Server 2012 R2 and Windows Server 2016 to Windows Defender ATP 
-[Configure non-Windows endpoints](configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md) | Windows Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in the Windows Defender ATP portal and better protect your organization's network. This experience leverages on a third-party security products' sensor data. 
-[Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md) | Run a script on a newly onboarded endpoint to verify that it is properly reporting to the Windows Defender ATP service.
+[Onboard machines](configure-endpoints-windows-defender-advanced-threat-protection.md) | You'll need to configure endpoints for it to report to the Windows Defender ATP service. Learn about the tools and methods you can use to configure endpoints in your enterprise.
+[Onboard servers](configure-server-endpoints-windows-defender-advanced-threat-protection.md) |  Onboard Windows Server 2012 R2 and Windows Server 2016 to Windows Defender ATP 
+[Onboard non-Windows machines](configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md) | Windows Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in the Windows Defender ATP portal and better protect your organization's network. This experience leverages on a third-party security products' sensor data. 
+[Run a detection test on a newly onboarded Windows Defender ATP machine](run-detection-test-windows-defender-advanced-threat-protection.md) | Run a script on a newly onboarded endpoint to verify that it is properly reporting to the Windows Defender ATP service.
 [Configure proxy and Internet settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)| Enable communication with the Windows Defender ATP cloud service by configuring the proxy and Internet connectivity settings.
 [Troubleshoot onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) | Learn about resolving issues that might arise during onboarding.
 

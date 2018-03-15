@@ -72,7 +72,7 @@ The Windows Defender ATP sensor can utilize up to 5MB daily of bandwidth  to com
 
 For more information on additional proxy configuration settings see, [Configure Windows Defender ATP endpoint proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) .
 
-Before you configure endpoints, the diagnostic data service must be enabled. The service is enabled by default in Windows 10.
+Before you onboard machines, the diagnostic data service must be enabled. The service is enabled by default in Windows 10.
 
 <span id="telemetry-and-diagnostics-settings" />
 ### Diagnostic data settings

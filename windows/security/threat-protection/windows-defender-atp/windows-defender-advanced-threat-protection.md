@@ -88,7 +88,7 @@ detect sophisticated cyber-attacks, providing:
 Topic | Description
 :---|:---
 Get started  |  Learn about the minimum requirements, validate licensing and complete setup, know about preview features, understand data storage and privacy, and how to assign user access to the portal.
-[Onboard endpoints and set up access](onboard-configure-windows-defender-advanced-threat-protection.md) | Learn about configuring client, server, and non-Windows endpoints. Learn how to run a detection test, configure proxy and Internet connectivity settings, and how to troubleshoot potential onboarding issues.
+[Onboard endpoints](onboard-configure-windows-defender-advanced-threat-protection.md) | Learn about configuring client, server, and non-Windows machines. Learn how to run a detection test, configure proxy and Internet connectivity settings, and how to troubleshoot potential onboarding issues.
 [Understand the Windows Defender ATP portal](use-windows-defender-advanced-threat-protection.md) | Understand the Security operations and Secure score dashboard, and how to navigate the portal.
 Investigate and remediate threats | Investigate alerts, machines, and take response actions to remediate threats.
 API and SIEM support | Use the supported APIs to pull and create custom alerts, or automate workflows. Use the supported SIEM tools to pull alerts from the Windows Defender ATP portal.
