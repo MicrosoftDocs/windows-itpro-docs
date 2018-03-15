@@ -1,7 +1,7 @@
 ---
-title: Configure endpoints using System Center Configuration Manager
+title: Onboard Windows 10 machines using System Center Configuration Manager
 description: Use System Center Configuration Manager to deploy the configuration package on endpoints so that they are onboarded to the service.
-keywords: configure endpoints using sccm, endpoint management, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints, sccm
+keywords: onboard machines using sccm, machine management, configure Windows ATP machines, configure Windows Defender Advanced Threat Protection machines, sccm
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 04/16/2018
 ---
 
-# Configure endpoints using System Center Configuration Manager
+# Onboards Windows 10 machines using System Center Configuration Manager
 
 **Applies to:**
 
@@ -29,14 +29,14 @@ ms.date: 04/16/2018
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 <span id="sccm1606"/>
-## Configure endpoints using System Center Configuration Manager (current branch) version 1606
+## Onboard Windows 10 machines using System Center Configuration Manager (current branch) version 1606
 System Center Configuration Manager (SCCM) (current branch) version 1606, has UI integrated support for configuring and managing Windows Defender ATP on endpoints. For more information, see [Support for Windows Defender Advanced Threat Protection service](https://go.microsoft.com/fwlink/p/?linkid=823682).
 
 >[!NOTE]
 > If you’re using SCCM client version 1606 with server version 1610 or above, you must upgrade the client version to match the server version.
 
 <span id="sccm1602"/>
-## Configure endpoints using System Center Configuration Manager earlier versions
+## Onboard Windows 10 machines using System Center Configuration Manager earlier versions
 You can use existing System Center Configuration Manager functionality to create a policy to configure your endpoints. This is supported in the following System Center Configuration Manager versions:
 
 - System Center 2012 Configuration Manager
@@ -44,12 +44,12 @@ You can use existing System Center Configuration Manager functionality to create
 - System Center Configuration Manager (current branch), version 1511
 - System Center Configuration Manager (current branch), version 1602
 
-### Onboard endpoints
+### Onboard Windows 10 machines
 
 1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
     a. In the navigation pane, select **Settings** > **Onboarding**.
-    b. Make you select Windows 10 as the operating system.
+    b. Select Windows 10 as the operating system.
 
     b. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
     
@@ -127,11 +127,11 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
     a. In the navigation pane, select **Settings** > **Offboarding**.
 
-    b. Make you select Windows 10 as the operating system.
+    b. Select Windows 10 as the operating system.
 
-    b. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
+    c. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
     
-    c. Click **Download package**, and save the .zip file.
+    d. Click **Download package**, and save the .zip file.
 
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
@@ -178,9 +178,9 @@ Value: “1”
 For more information about System Center Configuration Manager Compliance see [Compliance Settings in Configuration Manager](https://technet.microsoft.com/library/gg681958.aspx).
 
 ## Related topics
-- [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
-- [Configure endpoints using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
-- [Configure endpoints using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
-- [Configure non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
+- [Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
 - [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)

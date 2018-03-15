@@ -42,7 +42,7 @@ You can onboard VDI machines using a single entry or multiple entries for each m
 
     a.  In the navigation pane, select **Settings** > **Onboarding**.
 
-    b. Make you select Windows 10 as the operating system.
+    b. Select Windows 10 as the operating system.
 
     c.  In the **Deployment method** field, select **VDI onboarding scripts for non-persistent endpoints**.
 
@@ -82,10 +82,10 @@ You can onboard VDI machines using a single entry or multiple entries for each m
 8. Use the search function by entering the machine name and select **Machine** as search type.
 
 ## Related topics
-- [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
-- [Configure endpoints using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
-- [Configure endpoints using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
-- [Configure endpoints using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
 
 

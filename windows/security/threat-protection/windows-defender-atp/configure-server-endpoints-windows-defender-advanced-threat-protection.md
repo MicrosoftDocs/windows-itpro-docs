@@ -46,7 +46,7 @@ To onboard your servers to Windows Defender ATP, you’ll need to:
 
 1. In the navigation pane, select **Settings** > **Onboarding**.
 
-2. Make you select Windows server 2012, 2012R2 and 2016 as the operating system.
+2. Select Windows server 2012, 2012R2 and 2016 as the operating system.
  
 3. Click **Turn on server monitoring** and confirm that you'd like to proceed with the environment set up. When the set up completes, the **Workspace ID** and **Workspace key** fields are populated with unique values. You'll need to use these values to configure the MMA agent.
 

@@ -1,7 +1,7 @@
 ---
-title: Configure Windows Defender ATP endpoints using a local script
-description: Use a local script to deploy the configuration package on endpoints so that they are onboarded to the service.
-keywords: configure endpoints using a local script, endpoint management, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints
+title: Onboard Windows 10 machines using a local script
+description: Use a local script to deploy the configuration package on machines so that they are onboarded to the service.
+keywords: configure machines using a local script, machine management, configure Windows ATP machines, configure Windows Defender Advanced Threat Protection machines
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 04/16/2018
 ---
 
-# Configure endpoints using a local script
+# Onboard Windows 10 machines using a local script
 
 **Applies to:**
 
@@ -37,7 +37,7 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
 
     a.  In the navigation pane, select **Settings** > **Onboarding**.
 
-    b. Make you select Windows 10 as the operating system.
+    b. Select Windows 10 as the operating system.
 
     c.  In the **Deployment method** field, select **Local Script**.
 
@@ -95,7 +95,7 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
     a.  In the navigation pane, select **Settings** > **Offboarding**.
 
-    b. Make you select Windows 10 as the operating system.
+    b. Select Windows 10 as the operating system.
 
     c.  In the **Deployment method** field, select **Local Script**.
 
@@ -133,9 +133,9 @@ Monitoring can also be done directly on the portal, or by using the different de
 
 
 ## Related topics
-- [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
-- [Configure endpoints using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
-- [Configure endpoints using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
-- [Configure non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
+- [Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
 - [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)

@@ -1,7 +1,7 @@
 ---
-title: Configure non-Windows endpoints in Windows Defender ATP
-description: Configure non-Winodws endpoints so that they can send sensor data to the Windows Defender ATP service.
-keywords: configure endpoints non-Windows endpoints, macos, linux, endpoint management, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints
+title: Onboard non-Windows machines in Windows Defender ATP
+description: Configure non-Winodws machines so that they can send sensor data to the Windows Defender ATP service.
+keywords: onboard non-Windows machines, macos, linux, machine management, configure Windows ATP machines, configure Windows Defender Advanced Threat Protection machines
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ localizationpriority: high
 ms.date: 04/16/2018
 ---
 
-# Configure non-Windows endpoints
+# Onboard non-Windows machines
 
 **Applies to:**
 
@@ -37,7 +37,7 @@ You'll need to take the following steps to onboard non-Windows endpoints:
 
 1. In the navigation pane, select **Settings** > **Onboarding**. Make sure the third-party solution is listed.
 
-2. 	Make you select Mac and Linux as the operating system.
+2. 	Select Mac and Linux as the operating system.
 
 3. Turn on the third-party solution integration.
 
