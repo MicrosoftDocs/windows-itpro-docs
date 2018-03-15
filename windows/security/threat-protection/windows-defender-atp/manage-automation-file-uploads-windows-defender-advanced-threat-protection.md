@@ -27,6 +27,14 @@ ms.date: 04/16/2018
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationefileuploads-abovefoldlink)
 
+You can submit suspicious files identified by automated investigation to the cloud for additional inspection by enabling content analysis.
+
+1. In the navigation pane, select **Settings** > **Rules** > **Automation file uploads**. 
+
+2. Toggle the content analysis setting to **On**.
+
+3. Configure the file extension and email attachment extensions that will be submitted for analysis.
+
 
 
 
