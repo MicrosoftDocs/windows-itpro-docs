@@ -31,10 +31,11 @@ You can submit suspicious files identified by automated investigation to the clo
 
 1. In the navigation pane, select **Settings** > **Rules** > **Automation file uploads**. 
 
-2. Toggle the content analysis setting to **On**.
+2. Toggle the content analysis setting between **On** and **Off**.
 
-3. Configure the file extension and email attachment extensions that will be submitted for analysis.
-
+3. Configure the following extension names and separate extension names with a comma:
+   - **File extension names** -  Suspicious files except email attachments will be submitted for additional inspection
+   - **Attachment extension names** - Suspicious email attachments with these extension names will be submitted for additional inspection
 
 
 
