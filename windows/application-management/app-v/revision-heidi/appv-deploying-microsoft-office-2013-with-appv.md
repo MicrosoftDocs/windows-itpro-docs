@@ -62,7 +62,7 @@ Before you deploy Office with App-V, review the following requirements.
 |---|---|
 |Packaging|All Office applications you wish to deploy to users must be in a single package.<br>In App-V and later, you must use the Office Deployment Tool to create packages. The Sequencer doesn't support package creation.<br>If you're deploying Microsoft Visio 2013 and Microsoft Project 2013 along with Office, you must include them in the same package with Office. For more information, see [Deploying Visio 2013 and Project 2013 with Office](#bkmk-deploy-visio-project).|
 |Publishing|You can only publish one Office package per client computer.<br>You must publish the Office package globally, not to the user.|
-|Deploying Office 365 ProPlus, Visio Pro for Office 365, or Project Pro for Office 365 to a shared computer using Remote Desktop Services.|You must enable [shared computer activation](http://technet.microsoft.com/library/dn782860.aspx).<br>You don’t use shared computer activation if you’re deploying a volume licensed product, such as Office Professional Plus 2013, Visio Professional 2013, or Project Professional 2013.|
+|Deploying Office 365 ProPlus, Visio Pro for Office 365, or Project Pro for Office 365 to a shared computer using Remote Desktop Services.|You must enable [shared computer activation](https://docs.microsoft.com/en-us/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).<br>You don’t use shared computer activation if you’re deploying a volume licensed product, such as Office Professional Plus 2013, Visio Professional 2013, or Project Professional 2013.|
 
 <table>
 <colgroup>
@@ -98,7 +98,7 @@ Before you deploy Office with App-V, review the following requirements.
 <li><p>Visio Pro for Office 365</p></li>
 <li><p>Project Pro for Office 365</p></li>
 </ul></td>
-<td align="left"><p>You must enable [shared computer activation](http://technet.microsoft.com/library/dn782860.aspx).</p>
+<td align="left"><p>You must enable [shared computer activation](https://docs.microsoft.com/en-us/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).</p>
 <p>You don’t use shared computer activation if you’re deploying a volume licensed product, such as:</p>
 <ul>
 <li><p>Office Professional Plus 2013</p></li>
@@ -592,7 +592,7 @@ Use the steps in this section to enable Office plug-ins with your Office package
 You may want to disable specific applications in your Office App-V package. For instance, you can disable Access, but leave all other Office application main available. When you disable an application, the end user will no longer see the shortcut for that application. You do not have to re-sequence the application. When you change the Deployment Configuration File after the Office 2013 App-V package has been published, you will save the changes, add the Office 2013 App-V package, then republish it with the new Deployment Configuration File to apply the new settings to Office 2013 App-V Package applications.
 
 >[!NOTE]
->To exclude specific Office applications (for example, Access and InfoPath) when you create the App-V package with the Office Deployment Tool, use the **ExcludeApp** setting. For more information, see [Reference for Click-to-Run configuration.xml file](http://technet.microsoft.com/library/jj219426.aspx).
+>To exclude specific Office applications (for example, Access and InfoPath) when you create the App-V package with the Office Deployment Tool, use the **ExcludeApp** setting. For more information, see [Reference for Click-to-Run configuration.xml file](https://docs.microsoft.com/en-us/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#excludeapp-element).
 
 #### To disable an Office 2013 application
 
@@ -750,7 +750,7 @@ This section describes the requirements and options for deploying Visio 2013 and
 ### Additional resources for Connection Groups
 
 * [Managing Connection Groups](appv-managing-connection-groups.md)
-* [Connection groups on the App-V team blog](https://blogs.technet.microsoft.com/gladiatormsft/tag/connection-groups/)
+* [Connection groups on the App-V team blog](https://blogs.msdn.microsoft.com/gladiator/tag/connection-groups/)
 
 ### Additional resources for Dynamic Configuration
 

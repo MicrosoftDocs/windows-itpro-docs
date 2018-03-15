@@ -42,7 +42,7 @@ Before you deploy Office with App-V, review the following requirements.
 |-----------|-------------------|
 | Packaging.  | All Office applications that you deploy to users must be in a single package.<br>In App-V 5.0 and later, you must use the Office Deployment Tool to create packages. The Sequencer doesn't support package creation.<br>If you're deploying Microsoft Visio 2016 and Microsoft Project 2016 at the same time as Office, you must put them all in the same package. For more information, see [Deploying Visio 2016 and Project 2016 with Office](#deploying-visio-2016-and-project-2016-with-office). |
 | Publishing.   | You can only publish one Office package per client computer.<br>You must publish the Office package globally, not to the user. |
-| Deploying Office 365 ProPlus, Visio Pro for Office 365, or Project Pro for Office 365 to a shared computer with Remote Desktop Services. | You must enable [shared computer activation](https://technet.microsoft.com/library/dn782860.aspx). |
+| Deploying Office 365 ProPlus, Visio Pro for Office 365, or Project Pro for Office 365 to a shared computer with Remote Desktop Services. | You must enable [shared computer activation](https://docs.microsoft.com/en-us/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus). |
 
 ### Excluding Office applications from a package
 
@@ -127,7 +127,7 @@ The XML file included in the Office Deployment Tool specifies the product detail
       | Language element     | Specifies which language the applications support.    | `Language ID="en-us"`   |
       | Version (attribute of **Add** element) | Optional. Specifies which build the package will use.<br>Defaults to latest advertised build (as defined in v32.CAB at the Office source).   | `16.1.2.3`    |
       | SourcePath (attribute of **Add** element)   | Specifies the location the applications will be saved to.    | `Sourcepath = "\\Server\Office2016"`     |
-      | Channel (part of **Add** element)       | Optional. Defines which channel will be used to update Office after installation.<br>The default is **Deferred** for Office 365 ProPlus and **Current** for Visio Pro for Office 365 and Project Online Desktop Client. <br>For more information about update channels, see [Overview of update channels for Office 365 ProPlus](https://technet.microsoft.com/library/mt455210.aspx). | `Channel="Current"`<br>`Channel="Deferred"`<br>`Channel="FirstReleaseDeferred"`<br>`Channel="FirstReleaseCurrent"`  |
+      | Channel (part of **Add** element)       | Optional. Defines which channel will be used to update Office after installation.<br>The default is **Deferred** for Office 365 ProPlus and **Current** for Visio Pro for Office 365 and Project Online Desktop Client. <br>For more information about update channels, see [Overview of update channels for Office 365 ProPlus](https://docs.microsoft.com/en-us/DeployOffice/overview-of-update-channels-for-office-365-proplus). | `Channel="Current"`<br>`Channel="Deferred"`<br>`Channel="FirstReleaseDeferred"`<br>`Channel="FirstReleaseCurrent"`  |
 
 After editing the **configuration.xml** file to specify the desired product, languages, and the location where the Office 2016 applications will be saved to, you can save the configuration file under a name of your choice, such as "Customconfig.xml."
 2. **Download the applications into the specified location:** Use an elevated command prompt and a 64-bit operating system to download the Office 2016 applications that will later be converted into an App-V package. The following is an example command:
@@ -387,4 +387,4 @@ The following table describes the requirements and options for deploying Visio 2
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).

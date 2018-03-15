@@ -50,8 +50,6 @@ The following list displays some of the benefits of using App-V SCS:
 
 Add or vote on suggestions on the [Application virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
 
-For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
-
 ## Other App-V deployment resources
 
 * [Planning to deploy App-V](appv-planning-to-deploy-appv.md)

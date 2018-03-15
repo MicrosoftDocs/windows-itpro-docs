@@ -38,8 +38,6 @@ Use the following procedure to install the reporting server on a standalone comp
 
 Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
 
-For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
-
 ## Related topics
 
 * [About App-V reporting](appv-reporting.md)

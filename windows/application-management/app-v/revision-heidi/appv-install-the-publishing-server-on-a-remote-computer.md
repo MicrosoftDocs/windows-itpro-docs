@@ -56,8 +56,6 @@ Use the following procedure to install the publishing server on a separate compu
 
 Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
 
-For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
-
 ## Related topics
 
 * [Deploying App-V](appv-deploying-appv.md)
