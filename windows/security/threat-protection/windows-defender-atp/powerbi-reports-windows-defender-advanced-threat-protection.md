@@ -156,7 +156,7 @@ After completing the steps in the Before you begin section, you can proceed with
 
 2.	If this is the first time you’re using Power BI with Windows Defender ATP, you’ll need to sign in and give consent to Windows Defender ATP Power BI app. By providing consent, you’re allowing Windows Defender ATP Power BI to sign in and read your profile, and access your data.
 
-    ![Consent image](images/atp-powerbi-consent.png)
+    ![Consent image](images/atp-powerbi-accept.png)
 
 3.	Click **Accept**. Power BI Desktop will start downloading your Windows Defender ATP data from Microsoft Graph. When all data has been downloaded, you can proceed to customize your reports.
 
@@ -175,7 +175,7 @@ You can use Power BI Desktop to analyse data from Windows Defender ATP and mash 
 
 4.	If this is the first time you’re using Power BI with Windows Defender ATP, you’ll need to sign in and give consent to Windows Defender ATP Power BI app. By providing consent, you’re allowing Windows Defender ATP Power BI to sign in and read your profile, and access your data.
 
-    ![Consent image](images/atp-powerbi-consent.png)
+    ![Consent image](images/atp-powerbi-accept.png)
 
 5.	Click **Accept**. Power BI Desktop will start downloading your Windows Defender ATP data from Microsoft Graph. When all data has been downloaded, you can proceed to customize your reports.
 
