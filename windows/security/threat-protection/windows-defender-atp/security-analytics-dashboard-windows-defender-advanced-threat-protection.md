@@ -86,6 +86,9 @@ You can track the progression of your organizational security posture over time 
 
 You can click on specific date points to see the total score for that security control is on a particular date.
 
+## Improve your secure score by applying improvement recommendations
+Each security control lists recommendations that you can take to increase the security posture of your organization.
+
 ### Endpoint detection and response (EDR) optimization
 For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for your Endpoint detection and response tool.
 
