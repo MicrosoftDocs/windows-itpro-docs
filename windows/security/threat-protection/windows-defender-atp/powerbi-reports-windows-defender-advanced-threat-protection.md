@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 localizationpriority: high
-ms.date: 02/22/2018
+ms.date: 03/16/2018
 ---
 # Create and build Power BI reports using Windows Defender ATP data
 
@@ -60,14 +60,14 @@ Windows Defender ATP makes it easy to create a Power BI dashboard by providing a
 
 4. Click **Sign in**. If this is the first time you’re using Power BI with Windows Defender ATP, you’ll need to sign in and give consent to Windows Defender ATP Power BI app. By providing consent, you’re allowing Windows Defender ATP Power BI to sign in and read your profile, and access your data.
 
-      ![Consent image](images/atp-powerbi-consent.png)
+      ![Consent image](images/atp-powerbi-accept.png)
 
 5.	Click **Accept**. Power BI service will start downloading your Windows Defender ATP data from Microsoft Graph. After a successful login, you'll see a notification that data is being imported:
 
     ![Image of importing data](images/atp-powerbi-importing.png)
     
     >[!NOTE]
-    >Loading your data in the Power BI service can take a few minutes.
+    >Depending on the number of onboarded machines, loading your data in the Power BI service can take several minutes. A larger number might take longer to load. 
 
     When importing data is completed and the dataset is ready, you’ll the following notification:
 
@@ -102,16 +102,16 @@ For more information, see [Create a Power BI dashboard from a report](https://po
 
     ![Image of Power BI authentication method](images/atp-powerbi-extension.png)
 
-7. Click **Sign in**. If this is the first time you’re using Power BI with Windows Defender ATP, you’ll need to sign in and give consent to Windows Defender ATP Power BI app. By providing consent, you’re allowing Windows Defender ATP Power BI to sign in and read your profile, and access your data.
+7. Click **Sign in**. If this is the first time you’re using Power BI with Windows Defender ATP, you’ll need to sign in and give consent to Windows Defender ATP Power BI app. By providing consent, you’re allowing Windows Defender ATP Power BI to sign in and read your profile, access your data, and report refresh.
 
-      ![Consent image](images/atp-powerbi-consent.png)
+      ![Consent image](images/atp-powerbi-accept.png)
 
 8.	Click **Accept**. Power BI service will start downloading your Windows Defender ATP data from Microsoft Graph. After a successful login, you'll see a notification that data is being imported:
 
     ![Image of importing data](images/atp-powerbi-importing.png)
     
     >[!NOTE]
-    >Loading your data in the Power BI service can take a few minutes.
+    >Depending on the number of onboarded machines, loading your data in the Power BI service can take several minutes. A larger number might take longer to load. 
 
     When importing data is completed and the dataset is ready, you’ll the following notification:
 
