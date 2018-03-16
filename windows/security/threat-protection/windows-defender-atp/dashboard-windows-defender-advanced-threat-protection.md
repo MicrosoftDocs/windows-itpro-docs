@@ -37,6 +37,8 @@ The **Security operations dashboard** displays a snapshot of:
 - Sensor health
 - Service health
 
+![Image of Security operations dashboard](images/atp-sec-ops-1.png)
+
 You can explore and investigate alerts and machines to quickly determine if, where, and when suspicious activities occurred in your network to help you understand the context they appeared in.
 
 From the **Security operations dashboard** you will see aggregated events to facilitate the identification of significant events or behaviors on a machine. You can also drill down into granular events and low-level indicators.
