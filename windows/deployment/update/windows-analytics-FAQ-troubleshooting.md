@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 03/14/2018
+ms.date: 03/16/2018
 ---
 
 # Frequently asked questions and troubleshooting Windows Analytics
@@ -21,7 +21,7 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 
 [Devices not showing up](#devices-not-showing-up)
 
-[Device Health data not appearing](#device-health-data-not-appearing)
+[Device Health crash data not appearing](#device-health-crash-data-not-appearing)
 
 [Upgrade Readiness reports outdated updates](#upgrade-readiness-reports-outdated-updates)
 
@@ -38,21 +38,21 @@ In Log Analytics, go to **Settings > Connected sources > Windows telemetry** and
 
 Even though devices can take 2-3 days after enrollment to show up due to latency in the system, you can now verify the status of your devices with a few hours of running the deployment script as described in [You can now check on the status of your computers within hours of running the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/05/12/wheres-my-data/) on the Windows Analytics blog.
  
-If devices are not showing up as expected, find a representative device and follow these steps to rerun the latest Upgrade Readiness deployment script on it to troubleshoot issues:
+If devices are not showing up as expected, find a representative device and follow these steps to run the latest pilot version of the Upgrade Readiness deployment script on it to troubleshoot issues:
 
 1. Download and extract the [Upgrade Readiness Deployment Script](https://www.microsoft.com/download/details.aspx?id=53327). Ensure that the **Pilot/Diagnostics** folder is included.
 2. Edit the script as described in [Upgrade Readiness deployment script](../upgrade/upgrade-readiness-deployment-script.md).
 3. Check that `isVerboseLogging` is set to `$true`.
 4. Run the script again. Log files will be saved to the directory specified in the script.
-5. Check the output of the script in the command window and/or log **UA_dateTime_machineName.txt** to ensure that all steps were completed successfully. The filename with a GUID has clear text that can be read to uncover common issues.
+5. Check the output of the script in the command window and/or log **UA_dateTime_machineName.txt** to ensure that all steps were completed successfully.
 6. If you are still seeing errors you can't diagnose, then consider open a support case with Microsoft Support through your regular channel and provide this information.
 
-If you want to check a large number of devices, you should run the latest script at scale from your management tool of choice (for example, System Center Configuration Manager) and check the results centrally (you might not need verbose logging in this case, unless you plan to collect the log files).
+If you want to check a large number of devices, you should run the latest script at scale from your management tool of choice (for example, System Center Configuration Manager) and check the results centrally.
 
 
-If you think the issue might be related a network proxy, check the endpoint connectivity(#endpoint-connectivity). Also see [Understanding connectivity scenarios and the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog.
+If you think the issue might be related to a network proxy, check "Enable data sharing" section of the [Enrolling devices in Windows Analytics](windows-analytics-get-started.md) topic. Also see [Understanding connectivity scenarios and the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog.
 
-### Device Health data not appearing
+### Device Health crash data not appearing
 
 #### Is WER disabled?
 If Windows Error Reporting (WER) is disabled or redirected on your Windows devices, then reliability information cannot be shown in Device Health.
@@ -78,10 +78,6 @@ To test access as a given user, you can run this Windows PowerShell cmdlet *whil
 ```powershell
 
 $endPoints = @(
-        'v10.vortex-win.data.microsoft.com'
-        'vortex-win.data.microsoft.com'
-        'settings-win.data.microsoft.com'
-        'adl.windows.com'
         'watson.telemetry.microsoft.com'
         'oca.telemetry.microsoft.com'
         'v10.events.data.microsoft.com'
@@ -99,10 +95,6 @@ To test access in the machine context (requires administrative rights), run the 
 
 [scriptblock]$accessTest = {
     $endPoints = @(
-        'v10.vortex-win.data.microsoft.com'
-        'vortex-win.data.microsoft.com'
-        'settings-win.data.microsoft.com'
-        'adl.windows.com'
         'watson.telemetry.microsoft.com'
         'oca.telemetry.microsoft.com'
         'v10.events.data.microsoft.com'
@@ -126,16 +118,26 @@ Get-Content $outputFileFullPath
 
 As in the other example, if this is successful, `TcpTestSucceeded` should return `True` for each of the endpoints.
 
-### Upgrade Readiness reports outdated updates
-Currently, updates are not automatically updated by Microsoft Update, so new versions need to be downloaded from the Microsoft Update catalog and distributed via your management tool of choice. Note that the compatibility update retains the same KB number when it is updated, so even if the update is installed on your devices, *they might not be running the latest version*.
+### Upgrade Readiness shows many "Computers with outdated KB"
+If you see a large number of devices reported as shown in this screenshot of the Upgrade Readiness tile:
+
+[![Upgrade Readiness tile showing Computers with outdated KB datum in red box](images/outdated_outdated.png)](images/outdated_outdated.png)
+
+On Windows 7 SP1 and Windows 8.1 devices, you must deploy the compatibility update as described in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md).
+
+Note that the compatibility update retains the same KB number when a new version is released, so even if the update is installed on your devices, *they might not be running the latest version*. The compatibility update is now a critical update, so you can check that the latest version is installed from your management tool.
 
 
-### Upgrade Readiness reports incomplete inventory
-Download the latest deployment script and run it on an affected device to check for issues. See the [Upgrade Readiness deployment script](../upgrade/upgrade-readiness-deployment-script.md) topic for information about obtaining and running the script, and for a description of the error codes that can be displayed. See ["Understanding connectivity scenarios and the deployment script"](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog for a summary of setting the ClientProxy for the script, which will enable the script properly check for diagnostic data endpoint connectivity.
+### Upgrade Readiness shows many "Computers with incomplete data"
+If you see a large number of devices reported as shown in this screenshot of the Upgrade Readiness tile:
+
+[![Upgrade Readiness tile showing Computers with incomplete data datum in red box](images/outdated_incomplete.png)](images/outdated_incomplete.png)
+
+Download the latest deployment script and run it on an affected device to check for issues. See the [Upgrade Readiness deployment script](../upgrade/upgrade-readiness-deployment-script.md) topic for information about obtaining and running the script, and for a description of the error codes that can be displayed. Remember to wait up to 48-72 hours to see the results.
+See ["Understanding connectivity scenarios and the deployment script"](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog for a summary of setting the ClientProxy for the script, which will enable the script properly check for diagnostic data endpoint connectivity.
+
 
 If this becomes a recurring issue, schedule a full inventory scan monthly, as per the device enrollment guidelines for deployment at scale.
-
-
 
 
 
@@ -156,7 +158,7 @@ Finally, Upgrade Readiness only collects IE site discovery data on devices that 
 ### What are the requirements and costs for Windows Analytics solutions?
 | Windows Analytics solution| Windows license requirements | Windows version requirements | Diagnostic data requirements |
 |----------------------|-----------------------------------|------------------------------|------------------------------|
-| Upgrade Readiness | No additional requirements  |  Windows 7 with Service Pack 1, Windows 8, Windows 10 | Basic level in most cases; Enhanced level to support Windows 10 app usage data and IE site discovery |
+| Upgrade Readiness | No additional requirements  |  Windows 7 with Service Pack 1, Windows 8.1, Windows 10 | Basic level in most cases; Enhanced level to support Windows 10 app usage data and IE site discovery |
 |  Update Compliance | No additional requirements | Windows 10 | Basic level |
 | Device Health  | No additional requirements  | - Windows 10 Enterprise or Windows 10 Education per-device with active Software Assurance<br>- Windows 10 Enterprise E3 or E5 per-device or per-user subscription (including Microsoft 365 F1, E3, or E5)<br>- Windows 10 Education A3 or A5 (including Microsoft 365 Education A3 or A5)<br>- Windows VDA E3 or E5 per-device or per-user subscription<br>- Windows Server 2016 or later  | Windows 10 | Enhanced level |
 
@@ -176,23 +178,23 @@ Windows Analytics is fully committed to privacy, centering on these tenets:
 
 See these topics for additional background information about related privacy issues:
 
+- [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windowsconfiguration/configure-windows-diagnostic-data-in-your-organization)
 - [Windows 7, Windows 8, and Windows 8.1 Appraiser Telemetry Events, and Fields](https://go.microsoft.com/fwlink/?LinkID=822965) (link downloads a PDF file)
 - [Windows 10, version 1703 basic level Windows diagnostic events and fields](https://docs.microsoft.com/windows/configuration/basic-level-windows-diagnostic-events-and-fields-1703)
 - [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](https://docs.microsoft.com/windows/configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields)
-- [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windowsconfiguration/configure-windows-diagnostic-data-in-your-organization)
 - [Diagnostic Data Viewer Overview](https://docs.microsoft.com/windows/configuration/diagnostic-data-viewer-overview)
 - [Licensing Terms and Documentation](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Learn about security and privacy at Microsoft datacenters](http://www.microsoft.com/datacenters)
 - [Confidence in the trusted cloud](https://azure.microsoft.com/en-us/support/trust-center/) 
 
 ### Can Windows Analytics be used without a direct client connection to the Microsoft Data Management Service?
-No
+No, the entire service is powered by Windows diagnostic data, which requires that devices have this direct connectivity.
 
 ### Can I choose the data center location?
 Yes for Azure Log Analytics, but no for the Microsoft Data Management Service (which is hosted in the US).
 
 ### Why do SCCM and Upgrade Readiness show different counts of devices that are ready to upgrade?
-system Center Configuration Manager (SCCM) considers a device ready to upgrade if no installed app is marked “not ready”, while Upgrade Readiness considers a device ready to upgrade only if *all* installed apps are marked  “ready” (or are in the ignore/low installation count category).
+System Center Configuration Manager (SCCM) considers a device ready to upgrade if *no installed app* has an upgrade decision of “not ready” (that is, they are all "ready" or "in progress"), while Upgrade Readiness considers a device ready to upgrade only if *all* installed apps are marked “ready”.
  
 Currently, you can choose the criteria you wish to use:
 - To use the SCCM criteria, create the collection of devices ready to upgrade within the SCCM console (using the analytics connector).

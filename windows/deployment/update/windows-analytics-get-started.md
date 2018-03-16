@@ -22,11 +22,8 @@ If you have not already done so, consult the topics for any of the three Windows
 If you've already done that, you're ready to enroll your devices in Windows Analytics by following these steps:
 
 
-## Deploy your Commercial ID to your Windows 10 devices and enable data sharing
 
-In order for your devices to show up in Windows Analytics, they must be configured with your organization’s Commercial ID. This is so that Microsoft knows that a given device is a member of your organization and to feed that device’s data back to you. You can use either Group Policy or Mobile Device Management (MDM) to deploy your Commercial ID. 
-
-### Copy your Commercial ID key
+## Copy your Commercial ID key
 
 Microsoft uses a unique commercial ID to map information from user computers to your OMS workspace. This should be generated for you automatically. Copy your commercial ID key in OMS and then deploy it to user computers. 
 
@@ -36,34 +33,20 @@ Microsoft uses a unique commercial ID to map information from user computers to 
 
     ![Operations Management Suite Settings dialog showing Connected sources and Windows telemetry selected and the commercial ID location marked by a black box in the lower right.](images/WA-device-enrollment.png)
 
-2. Copy your Commercial ID (which should already be populated).
+2. Copy your Commercial ID (which should already be populated). Save this Commercial ID because you will need it later for use in the deployment scripts and policies.
 
     >**Important**<br> Regenerate a Commercial ID key only if your original ID key can no longer be used. Regenerating a commercial ID key resets the data in your workspace for all solutions that use the ID. Additionally, you’ll need to deploy the new commercial ID key to user computers again.
 
-### Deploy your Commercial ID to your Windows 10 devices and set the diagnostic data level
 
-There are two primary methods for widespread deployment of your Commercial ID: Group Policy and Mobile Device Management (MDM). 
-
-- Using Group Policy<BR><BR>
-    Deploying your Commercial ID using Group Policy can be accomplished by configuring domain Group Policy Objects with the Group Policy Management Editor, or by configuring local Group Policy using the Local Group Policy Editor.
-    1. In the console tree, navigate to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds**
-    2. Double-click **Configure the Commercial ID**
-    3. In the **Options** box, under **Commercial Id**, type the Commercial ID GUID, and then click **OK**.<P>
-
-- Using Microsoft Mobile Device Management (MDM)<BR><BR>
-Microsoft’s Mobile Device Management can be used to deploy your Commercial ID to your organization’s devices. The Commercial ID is listed under **Provider/ProviderID/CommercialID**. You can find more information on deployment using MDM at the [DMClient Configuration Service Provider topic](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dmclient-csp).  
-
-
-
-### Enable data sharing
+## Enable data sharing
 
 To enable data sharing, configure your proxy sever to whitelist the following endpoints. You might need to get approval from your security group to do this.
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
-| `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for Windows 10 computers. User computers send data to Microsoft through this endpoint. (This endpoint is used by Windows 10, version 1709 or earlier.)
+| `https://v10.events.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for Windows 10, version 1803|
+| `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for Windows 10, version 1709 or earlier |
 | `https://vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for operating systems older than Windows 10 |
-| `https://v10.events.data.microsoft.com` | New diagnostic data endpoint for Windows 10, version 1803|
 | `https://settings-win.data.microsoft.com` | Enables the compatibility update to send data to Microsoft. 
 | `http://adl.windows.com` | Allows the compatibility update to receive the latest compatibility data from Microsoft. |
 | `https://watson.telemetry.microsoft.com` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports. Not used by Upgrade Readiness. |
@@ -72,14 +55,12 @@ To enable data sharing, configure your proxy sever to whitelist the following en
 
 
 
-#### Configuring endpoint access with proxy servers
+### Configuring endpoint access with proxy servers
 If your organization uses proxy server authentication for outbound traffic, use one or more of the following approaches to ensure that the diagnostic data is not blocked by proxy authentication:
 
 - **Best option:** Configure your proxy servers to **not** require proxy authentication for any traffic to the diagnostic data endpoints. This is the most comprehensive solution and it works for all versions of Windows 10.
 - **User proxy authentication:** Alternatively, you can configure devices on the user side. First, update the devices to Windows 10, version 1703 or later. Then, ensure that users of the devices have proxy permission to reach the diagnostic data endpoints. This requires that the devices have console users with proxy permissions, so you couldn't use this method with headless devices.
 - **Device proxy authentication:** Another option--the most complex--is as follows: First, configure a system level proxy server on the devices. Then, configure these devices to use machine-account-based outbound proxy authentication. Finally, configure proxy servers to allow the machine accounts access to the diagnostic data endpoints. 
-
-
 
 
 ## Deploy the compatibility update and related updates
@@ -132,7 +113,7 @@ When you have completed a pilot deployment, you are ready to automate data colle
 To ensure that user computers are receiving the most up-to-date data from Microsoft, we recommend that you establish the following data sharing and analysis processes: 
 
 - Enable automatic updates for the compatibility update and related updates. These updates include the latest application and driver issue information as we discover it during testing.
-- Schedule the Upgrade Readiness deployment script to automatically run monthly so that you don’t have to manually initiate an inventory scan each time the compatibility updates are refreshed. Make sure to run the production version of the script, which is lighter weight and non-interactive. The script also has a number of built-in error checks, so you can monitor the results. If you can't run the deployment script at scale, another option is to configure things centrally via Group Policy or Mobile Device Management (MDM). Although we recommend using the deployment script, both options are discussed in the sections below.
+- Schedule the Upgrade Readiness deployment script to automatically run monthly. Scheduling the script ensures that full inventory is sent monthly even if devices were not connected or had low battery power at the time the system normally sends inventory. Make sure to run the production version of the script, which is lighter weight and non-interactive. The script also has a number of built-in error checks, so you can monitor the results. If you can't run the deployment script at scale, another option is to configure things centrally via Group Policy or Mobile Device Management (MDM). Although we recommend using the deployment script, both options are discussed in the sections below.
 
 When you run the deployment script, it initiates a full scan. The daily scheduled task to capture the changes is created when the update package is installed. For Windows 10 devices, this task is already included in the operating system. A full scan averages about 2 MB, but the scans for changes are very small. The scheduled task is named "Windows Compatibility Appraiser" and can be found in the Task Scheduler Library under Microsoft > Windows > Application Experience. Changes are invoked via the nightly scheduled task. It attempts to run around 3:00AM every day. If the system is powered off at that time, the task will run when the system is turned on. 
 
@@ -141,19 +122,24 @@ When you run the deployment script, it initiates a full scan. The daily schedule
 Use a software distribution system such as System Center Configuration Manager to distribute the Upgrade Readiness deployment script at scale. For more information, see [New version of the Upgrade Analytics Deployment Script available](https://blogs.technet.microsoft.com/upgradeanalytics/2016/09/20/new-version-of-the-upgrade-analytics-deployment-script-available/) on the Upgrade Readiness blog. For information on how to deploy PowerShell scripts by using Windows Intune, see [Manage PowerShell scripts in Intune for Windows 10 devices](https://docs.microsoft.com/intune/intune-management-extension).
 
 ### Distributing policies at scale
-There are a number of policies that can be centrally managed to control Windows Analytics device configuration. These policies are under Microsoft\Windows\DataCollection:
+There are a number of policies that can be centrally managed to control Windows Analytics device configuration. All of these policies have *preference* registry key equivalents that can be set by using the deployment script. Policy settings override preference settings if both are set.
+
+>[!NOTE]
+>You can only set the diagnostic data level to Enhanced by using policy. For example, this is necessary for using Device Health.
+
+These policies are under Microsoft\Windows\DataCollection:
 
 | Policy   | Value  |
 |-----------------------|------------------|
 | CommercialId | In order for your devices to show up in Windows Analytics, they must be configured with your organization’s Commercial ID. |
 | AllowTelemetry (in Windows 10) |	1 (Basic), 2 (Enhanced) or 3 (Full) diagnostic data. Windows Analytics will work with basic diagnostic data, but more features are available when you use the Enhanced level (for example, Device Health requires Enhanced diagnostic data and Upgrade Readiness only collects app usage and site discovery data on Windows 10 devices with Enhanced diagnostic data). For more information, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization). |
 | LimitEnhancedDiagnosticDataWindowsAnalytics (in Windows 10) |	Only applies when AllowTelemetry=2. Limits the Enhanced diagnostic data events sent to Microsoft to just those needed by Windows Analytics. For more information, see [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](https://docs.microsoft.com/windows/configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields).|
-| CommercialDataOptIn (in Windows 7 and Windows 8) |	1 is required for Upgrade Readiness, which is the only solution that runs on Windows 7 or Windows 8 |
+| CommercialDataOptIn (in Windows 7 and Windows 8) |	1 is required for Upgrade Readiness, which is the only solution that runs on Windows 7 or Windows 8. |
 
 
 You can set these values by using Group Policy (in Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds) or by using Mobile Device Management (in Provider/ProviderID/CommercialID). For more information about deployment using MDM, see the [DMClient CSP](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp) topic in MDM documentation.
 
-There are corresponding registry values that available in **HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection**; these by the deployment script. If a given setting is configured by both registry settings and policy, the policy values will override. The **IEDataOptIn** setting is an exception--you can only set this in the registry: 
+The corresponding preference registry values are available in **HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection** and can be configured by the deployment script. If a given setting is configured by both preference registry settings and policy, the policy values will override. However, the **IEDataOptIn** setting is different--you can only set this with the preference registry keys: 
 
 - IEOptInLevel = 0 Internet Explorer data collection is disabled
 - IEOptInLevel = 1 Data collection is enabled for sites in the Local intranet + Trusted sites + Machine local zones
@@ -164,8 +150,4 @@ For more information about Internet Explorer Security Zones, see [About URL Secu
 
 ### Distribution at scale without using the deployment script
 
-We recommend using the deployment script to configure devices. However if this is not an option, you can still manage settings by policy as described in the previous section. However, if you don't run the deployment script, you might have to wait a long time (possibly weeks) before devices send the initial full inventory scan. To accelerate this, you can force devices to send the initial data by using the following commands. For more information about how to check for error conditions, refer to the code in the deployment script in this topic. Note: these commands need to be run from a system context (an elevated user context won't work):
-
-- `CompatTelRunner.exe -m:appraiser.dll -f:DoScheduledTelemetryRun ent`
-- (On Windows 10 devices) `windir\system32\devicecensus.exe`
-- (On devices running systems older then Windows 10) `CompatTelRunner.exe -m:generaltel.dll -f:DoCensusRun`
+We recommend using the deployment script to configure devices. However if this is not an option, you can still manage settings by policy as described in the previous section. However, if you don't run the deployment script, you might have to wait a long time (possibly weeks) before devices send the initial full inventory scan.

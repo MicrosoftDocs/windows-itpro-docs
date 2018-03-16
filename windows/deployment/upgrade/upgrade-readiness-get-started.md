@@ -56,25 +56,7 @@ If you are not using OMS:
 
 Once you've added Update Compliance to Microsoft Operations Management Suite, you can now start enrolling the devices in your organization. For full instructions, see [Enrolling devices in Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started.md).
 
-### Connection settings
 
-The settings that are used to enable client computers to connect to Windows diagnostic data depend on the type of connection scenario you use. These scenarios are discussed in [this blog post](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) and are summarized below.
-
-| **Connection scenario** | **ClientProxy setting** <BR>in **runconfig.bat**  | **Local computer configuration** |
-|---------------------------------------------------------|-----------|-----------|
-| Direct connection to the Internet (no proxy) | **ClientProxy=Direct** | No additional configuration necessary |
-| WinHTTP proxy  | **ClientProxy=System**  | Specify `netsh winhttp set proxy <server>:<port>` on client computers |
-| Other proxy  |  **ClientProxy=User** | Configure the Windows Registry value: <p style="font-size: 12px"> **HKLM\SOFTWARE\Policies\Microsoft\Windows\DataCollection\DisableEnterpriseAuthProxy** </p> to 0 on client computers |
-
-### Automate data collection
-
-To ensure that user computers are receiving the most up to date data from Microsoft, we recommend that you establish the following data sharing and analysis processes.
-
-- Enable automatic updates for the compatibility update and related updates. These updates are updated frequently to include the latest application and driver issue information as we discover it during testing.
-- Schedule the Upgrade Readiness deployment script to automatically run so that you don’t have to manually initiate an inventory scan each time the compatibility updates are updated. 
-- Schedule monthly user computer scans to view monthly active computer and usage information.
-
->When you run the deployment script, it initiates a full scan. The daily scheduled task to capture the deltas is created when the update package is installed. For Windows 10 devices, it's already part of the OS. A full scan averages about 2 MB, but the delta scans are very small. The scheduled task is named **Windows Compatibility Appraiser** and can be found in the Task Scheduler Library under Microsoft > Windows > Application Experience. Deltas are invoked via the nightly scheduled task. It attempts to run around 3:00AM every day. If the system is powered off at that time, the task will run when the system is turned on. 
 
 ## Use Upgrade Readiness to manage Windows Upgrades
 
