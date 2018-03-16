@@ -67,7 +67,7 @@ Windows Defender ATP makes it easy to create a Power BI dashboard by providing a
     ![Image of importing data](images/atp-powerbi-importing.png)
     
     >[!NOTE]
-    >Depending on the number of onboarded machines, loading your data in the Power BI service can take several minutes. A larger number might take longer to load. 
+    >Depending on the number of onboarded machines, loading your data in the Power BI service can take several minutes. A larger number of machines might take longer to load. 
 
     When importing data is completed and the dataset is ready, you’ll the following notification:
 
@@ -111,7 +111,7 @@ For more information, see [Create a Power BI dashboard from a report](https://po
     ![Image of importing data](images/atp-powerbi-importing.png)
     
     >[!NOTE]
-    >Depending on the number of onboarded machines, loading your data in the Power BI service can take several minutes. A larger number might take longer to load. 
+    >Depending on the number of onboarded machines, loading your data in the Power BI service can take several minutes. A larger number of machines might take longer to load. 
 
     When importing data is completed and the dataset is ready, you’ll the following notification:
 
