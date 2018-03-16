@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.sitesec: library
-ms.date: 01/10/2018
+ms.date: 03/16/2018
 author: greg-lindsay
 ---
 
@@ -36,7 +36,7 @@ The following table summarizes various Windows 10 deployment scenarios. The scen
       Customize the out-of-box-experience (OOBE) for your organization, and deploy a new system with apps and settings already configured.
     </td>
     <td align="center" style="width:16%; border:1;"> 
-<a href="https://docs.microsoft.com/en-us/windows/deployment/windows-10-autopilot">Overview of Windows AutoPilot</a>
+<a href="https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/windows-10-autopilot">Overview of Windows AutoPilot</a>
     </td>
   </tr>
   <tr>
