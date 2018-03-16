@@ -58,7 +58,7 @@ Windows Defender ATP makes it easy to create a Power BI dashboard by providing a
 
     ![Image of Power BI authentication method](images/atp-powerbi-extension.png)
 
-4. Click **Sign in**. If this is the first time you’re using Power BI with Windows Defender ATP, you’ll need to sign in and give consent to Windows Defender ATP Power BI app. By providing consent, you’re allowing Windows Defender ATP Power BI to sign in and read your profile, and access your data.
+4. Click **Sign in**. If this is the first time you’re using Power BI with Windows Defender ATP, you’ll need to sign in and give consent to Windows Defender ATP Power BI app. By providing consent, you’re allowing Windows Defender ATP Power BI to sign in and read your profile, access your data, and be used for report refresh.
 
       ![Consent image](images/atp-powerbi-accept.png)
 
@@ -102,7 +102,7 @@ For more information, see [Create a Power BI dashboard from a report](https://po
 
     ![Image of Power BI authentication method](images/atp-powerbi-extension.png)
 
-7. Click **Sign in**. If this is the first time you’re using Power BI with Windows Defender ATP, you’ll need to sign in and give consent to Windows Defender ATP Power BI app. By providing consent, you’re allowing Windows Defender ATP Power BI to sign in and read your profile, access your data, and report refresh.
+7. Click **Sign in**. If this is the first time you’re using Power BI with Windows Defender ATP, you’ll need to sign in and give consent to Windows Defender ATP Power BI app. By providing consent, you’re allowing Windows Defender ATP Power BI to sign in and read your profile, access your data, and be used for report refresh.
 
       ![Consent image](images/atp-powerbi-accept.png)
 
@@ -154,7 +154,7 @@ After completing the steps in the Before you begin section, you can proceed with
 
 1.	Open WDATPPowerBI.pbit from the zip with Power BI Desktop.
 
-2.	If this is the first time you’re using Power BI with Windows Defender ATP, you’ll need to sign in and give consent to Windows Defender ATP Power BI app. By providing consent, you’re allowing Windows Defender ATP Power BI to sign in and read your profile, and access your data.
+2.	If this is the first time you’re using Power BI with Windows Defender ATP, you’ll need to sign in and give consent to Windows Defender ATP Power BI app. By providing consent, you’re allowing Windows Defender ATP Power BI to sign in and read your profile, access your data, and be used for report refresh.
 
     ![Consent image](images/atp-powerbi-accept.png)
 
@@ -173,7 +173,7 @@ You can use Power BI Desktop to analyse data from Windows Defender ATP and mash 
 
     ![Power BI preview connector](images/atp-powerbi-preview.png) 
 
-4.	If this is the first time you’re using Power BI with Windows Defender ATP, you’ll need to sign in and give consent to Windows Defender ATP Power BI app. By providing consent, you’re allowing Windows Defender ATP Power BI to sign in and read your profile, and access your data.
+4.	If this is the first time you’re using Power BI with Windows Defender ATP, you’ll need to sign in and give consent to Windows Defender ATP Power BI app. By providing consent, you’re allowing Windows Defender ATP Power BI to sign in and read your profile, access your data, and be used for report refresh.
 
     ![Consent image](images/atp-powerbi-accept.png)
 
