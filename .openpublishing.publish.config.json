@@ -136,6 +136,22 @@
       "version": 0
     },
     {
+      "docset_name": "privacy",
+      "build_source_folder": "windows/privacy",
+      "build_output_subfolder": "privacy",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
       "docset_name": "security",
       "build_source_folder": "windows/security",
       "build_output_subfolder": "security",
@@ -465,7 +481,8 @@
   "branches_to_filter": [
     ""
   ],
-  "git_repository_url_open_to_public_contributors": "https://cpubwin.visualstudio.com/_git/it-client",
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/windows-itpro-docs",
+  "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "resolve_user_profile_using_github": true,
