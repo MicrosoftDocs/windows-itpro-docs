@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/03/2018
+ms.date: 03/15/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -1655,6 +1655,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>ApplicationDefaults/EnableAppUriHandlers</li>
 <li>Connectivity/AllowPhonePCLinking</li>
+<li>RestrictedGroups/ConfigureGroupMembership</li>
 </ul>
 </td></tr>
 </tbody>
