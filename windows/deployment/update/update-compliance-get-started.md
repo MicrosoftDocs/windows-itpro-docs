@@ -17,7 +17,7 @@ This topic explains the steps necessary to configure your environment for Window
 
 Steps are provided in sections that follow the recommended setup process:
 1. [Add Update Compliance](#add-update-compliance-to-microsoft-operations-management-suite) to Microsoft Operations Management Suite.
-2. [Enroll devices in Windows Analytics](#deploy-your-commercial-id-to-your-windows-10-devices) to your organization’s devices.
+2. [Enroll devices in Windows Analytics](#enroll-devices-in-windows-analytics) to your organization’s devices.
 3. [Use Update Compliance to monitor Windows Updates](#use-update-compliance-to-monitor-windows-updates) once your devices are enrolled.
 
 
