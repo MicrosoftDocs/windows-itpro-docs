@@ -33,7 +33,7 @@ The following color-coded status changes are reflected on the upgrade overview b
     - If the current value is an older OS version than the recommended value, but not deprecated, the version is displayed in amber.
     - If the current value is a deprecated OS version, the version is displayed in red.
 
-Click a row to drill down and see details about individual computers. If updates are missing, see [Deploy the compatibility update and related updates](windows-analytics-get-started.md#deploy-the-compatibility-update-and-related-updates) for information on required updates.
+Click a row to drill down and see details about individual computers. If updates are missing, see [Deploy the compatibility update and related updates](../update/windows-analytics-get-started.md) for information on required updates.
 
 In the following example, there is no delay in data processing, more than 10% of computers (6k\8k) have incomplete data, more than 30% of computers (6k/8k) require an update, there are no pending user changes, and the currently selected target OS version is the same as the recommended version:
 
