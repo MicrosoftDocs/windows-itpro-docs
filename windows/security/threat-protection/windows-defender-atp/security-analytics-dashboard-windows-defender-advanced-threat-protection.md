@@ -1,7 +1,7 @@
 ---
 title: View the Secure score dashboard in Windows Defender ATP
 description: Use the Secure score dashboard to assess and improve the security state of your organization by analyzing various security control tiles. 
-keywords: secure score, dashboard, security recommendations, security control state, security score, score improvement, organizational security score, security coverage, security control, improvement opportunities, edr, antivirus, av, os security updates
+keywords: secure score, dashboard, security recommendations, security control state, security score, score improvement, organizational security score, security controls, security control, improvement opportunities, edr, antivirus, av, os security updates
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -46,12 +46,12 @@ The organization security score is reflective of the average score of all the Wi
 
 ![Organizational security score](images/atp-org-sec-score.png)
 
-Each Windows Defender security control from the **Security coverage** tile contributes 100 points to the organizational security score. 
+Each Windows Defender security control from the **Windows Defender security controls** tile contributes 100 points to the organizational security score. 
 
-The denominator is reflective of the organizational score potential and calculated by multiplying the number of supported security controls (Security coverage pillars) by the maximum points that each pillar contributes (maximum of 100 points for each pillar). 
+The denominator is reflective of the organizational score potential and calculated by multiplying the number of supported security controls (Windows Defender security controls pillars) by the maximum points that each pillar contributes (maximum of 100 points for each pillar). 
 
 
-In the example image, the total points from the **Improvement opportunities** tile add up to 321 points for the six pillars from the **Security coverage** tile.
+In the example image, the total points from the **Improvement opportunities** tile add up to 321 points for the six pillars from the **Windows Defender security controls** tile.
 
 You can set the baselines for calculating the score of Windows Defender security controls on the Secure score dashboard through the **Settings**. For more information, see [Enable Secure score security controls](enable-security-analytics-windows-defender-advanced-threat-protection.md).
 
@@ -59,7 +59,7 @@ You can set the baselines for calculating the score of Windows Defender security
 The security controls tile shows a bar graph where each bar represents a Windows Defender security control. Each bar reflects the number of machines that are well configured and those that require **any kind of attention** for each security control. Hovering on top of the individual bars will show exact numbers for each category. Machines that are green are well configured, while machines that are orange require some level of attention. 
 
 
-![Security coverage](images/atp-security-controls.png)
+![Windows Defender security controls](images/atp-security-controls.png)
 
 ## Improvement opportunities 
 Improve your organizational security score by taking the recommended improvement actions listed on this tile. The goal is to reduce the gap between the perfect score and the current score for each control.
