@@ -97,6 +97,7 @@ Get started  |  Learn about the minimum requirements, validate licensing and com
 [Onboard endpoints](onboard-configure-windows-defender-advanced-threat-protection.md) | Learn about configuring client, server, and non-Windows machines. Learn how to run a detection test, configure proxy and Internet connectivity settings, and how to troubleshoot potential onboarding issues.
 [Understand the Windows Defender ATP portal](use-windows-defender-advanced-threat-protection.md) | Understand the Security operations and Secure score dashboard, and how to navigate the portal.
 Investigate and remediate threats | Investigate alerts, machines, and take response actions to remediate threats.
+Prevent threats | Use conditional access to help better protect your users and enterprise information by making sure only secure devices have access to applications.
 API and SIEM support | Use the supported APIs to pull and create custom alerts, or automate workflows. Use the supported SIEM tools to pull alerts from the Windows Defender ATP portal.
 Reporting | Create and build Power BI reports using Windows Defender ATP data.
 Check service health and sensor state | Verify that the service is running and check the sensor state on endpoints.
