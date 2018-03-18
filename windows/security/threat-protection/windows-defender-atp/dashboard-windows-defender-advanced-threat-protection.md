@@ -30,10 +30,13 @@ ms.date: 04/16/2018
 The **Security operations dashboard** displays a snapshot of:
 
 - The latest active alerts on your network
-- Daily machines reporting
 - Machines at risk
-- Users at risk
 - Machines with active malware alerts
+- Daily machines reporting
+- Active automated investigations
+- Automated investigations statistics
+- Users at risk
+- Suspicious activities
 - Sensor health
 - Service health
 
@@ -101,7 +104,7 @@ The **Daily machines reporting** tile shows a bar graph that represents the numb
 
 
 ## Active automated investigations
-You can view the overall number of automated investigations from the last 30 days in your network from the **Active automated investigations** tile. Investigations are grouped into **Pending asset**, **Running**, and **Pending approval**.
+You can view the overall number of automated investigations from the last 30 days in your network from the **Active automated investigations** tile. Investigations are grouped into **Waiting for machine**, **Running**, and **Pending approval**.
 
 ![Inmage of active automated investigations](images/atp-active-investigations-tile.png)
 
@@ -111,10 +114,10 @@ This tile shows statistics related to automated investigations in the last 30 da
 
 ![Image of automated investigations statistics](images/atp-automated-investigations-statistics.png)
 
-You can click on **Investigations completed**, **Successfully remediated**, and **Alerts investigated** to navigate to the **Invesgations** page, filtered by the appropriate category. This lets you see a detailed breakdown of investigations in context.
+You can click on **Automated investigations**, **Remidated investigations**, and **Alerts investigated** to navigate to the **Invesgations** page, filtered by the appropriate category. This lets you see a detailed breakdown of investigations in context.
 
 ## Users at risk
-The tile shows you a list of user accounts with the most active alerts. 
+The tile shows you a list of user accounts with the most active alerts and the number of alerts seen on high, medium, or low alerts. 
 
 ![User accounts at risk tile shows a list of user accounts with the highest number of alerts and a breakdown of the severity of the alerts](images/atp-users-at-risk.png)
 
