@@ -38,11 +38,11 @@ ms.date: 04/16/2018
  
     a.  In the navigation pane, select **Settings** > **Onboarding**.
 
-    b.  Make you select Windows 10 as the operating system.
+    b. Select Windows 10 as the operating system.
     
     c. In the **Deployment method** field, select **Group policy**.
     
-    c. Click **Download package** and save the .zip file.
+    d. Click **Download package** and save the .zip file.
 
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the endpoints. You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.cmd*.
 
