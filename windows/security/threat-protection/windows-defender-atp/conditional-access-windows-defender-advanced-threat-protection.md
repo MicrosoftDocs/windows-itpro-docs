@@ -36,14 +36,18 @@ The compliance policy is used with conditional access to allow only devices that
 ## Understand conditional access
 When a device is found to be at high risk, the signal is communicated to Intune. In Intune, a device compliance policy is used in conjunction with Azure AD conditional access to block access to applications. In parallel,  an automated investigation and remediation process is launched.
 
-![Image of conditional access](images/atp-conditional-access.png)
+A device returns to a compliant state when there is low or no risk seen on it. A user can still use the device while the automated investigation and remediation is taking place, but access to enterprise data is blocked until the threat is fully remediated. When this happens, the same flow is followed but this time around the user will be able to access the application.
 
-A device returns to a compliant state when there is low or no risk seen on it. A user can still use the device while the automated investigation and remediation is taking place, but access to enterprise data is blocked until the threat is fully remediated. 
+The following image shows the conditional access flow in action:
 
-When this happens, the same flow is followed but this time around the user will be able to access the application.
+1. A user accesses a compromised site and Windows Defender ATP flags the device as high risk.
+2. The high risk assessment is passed along to Intune. In parallel, an automated investigation is initiated to remediate the identified threat.
+3. Based on the policy created in Intune, the device is marked as not compliant and access to applications are blocked.
+4. When the automated investigation and remediation is completed and the threat is removed. Windows Defender ATP sees the device as low risk and Intune assesses the device to be in a compliant state. Users can now access applications.
 
+![Image of conditional access](images/atp-conditional-access-numbered.png)
 
-## Configure conditional access
+ ## Configure conditional access
 > [!NOTE] 
 > You'll need a valid Intune license to enable conditional access.
 

@@ -58,10 +58,12 @@ Windows Defender ATP uses the following combination of technology built into Win
 
 ![Windows Defender ATP service components](images/atp-image.png)
 
+![Old image](images/components.png)
+
 Endpoint investigation capabilities in this service let you drill down
 into security alerts and understand the scope and nature of a potential
 breach. You can submit files for deep analysis and receive the results
-without leaving the [Windows Defender ATP portal](https://securitycenter.windows.com).
+without leaving the [Windows Defender ATP portal](https://securitycenter.windows.com). The automated investigation and remediation capability reduces the volume of alerts by leveraging various inspection algorithms to resolve breaches.
 
 Windows Defender ATP works with existing Windows security technologies
 on endpoints, such as Windows Defender Antivirus, AppLocker, and Windows Defender Device Guard. It
@@ -82,6 +84,10 @@ detect sophisticated cyber-attacks, providing:
 - Built in unique threat intelligence knowledge base
 
     Unparalleled threat optics provides actor details and intent context for every threat intel-based detection – combining first and third-party intelligence sources.
+
+- Automated investigation and remediation
+
+    Significantly reduces alert volume by leveraging inspection algorithms used by analysts to examine alerts and take remediation action. 
 
 ## In this section
 
