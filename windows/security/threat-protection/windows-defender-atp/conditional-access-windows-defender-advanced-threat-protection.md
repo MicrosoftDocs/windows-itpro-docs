@@ -43,7 +43,8 @@ The following image shows the conditional access flow in action:
 1. A user accesses a compromised site and Windows Defender ATP flags the device as high risk.
 2. The high risk assessment is passed along to Intune. In parallel, an automated investigation is initiated to remediate the identified threat.
 3. Based on the policy created in Intune, the device is marked as not compliant and access to applications are blocked.
-4. The automated investigation and remediation is completed and the threat is removed. Windows Defender ATP sees the device as low risk and Intune assesses the device to be in a compliant state. Users can now access applications.
+4. The automated investigation and remediation is completed and the threat is removed. Windows Defender ATP sees the device as low risk and Intune assesses the device to be in a compliant state. 
+5. Users can now access applications.
 
 ![Image of conditional access](images/atp-conditional-access-numbered.png)
 

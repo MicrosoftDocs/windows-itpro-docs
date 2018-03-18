@@ -131,11 +131,11 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 
    a. In the navigation pane, select **Settings** > **Offboarding**.
 
-    b. Select Windows 10 as the operating system.
+   b. Select Windows 10 as the operating system.
 
-    b. In the **Deployment method** field, select **Mobile Device Management / Microsoft Intune**.
+   c. In the **Deployment method** field, select **Mobile Device Management / Microsoft Intune**.
     
-    c. Click **Download package**, and save the .zip file.
+   d. Click **Download package**, and save the .zip file.
 
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding*.
 

@@ -51,5 +51,4 @@ Read the walkthrough document provided with each attack scenario. Each document 
 >Simulation files or scripts mimic attack activity but are actually benign and will not harm or compromise the test machine.
 
 ## Related topics
-- [Onboard and set up Windows Defender ATP](onboard-configure-windows-defender-advanced-threat-protection.md)
-- [Configure client endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
