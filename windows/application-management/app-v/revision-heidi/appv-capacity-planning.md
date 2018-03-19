@@ -115,9 +115,9 @@ App-V clients send reporting data to the reporting server. The reporting server 
 
 The random delay specifies the maximum delay (in minutes) for data to be sent to the reporting server. When the scheduled task is started, the client generates a random delay between **0** and **ReportingRandomDelay** and will wait the specified duration before sending data.
 
-Random delay = 4 * number of clients/average requests per second.
+*Random delay = 4 × number of clients/average requests per second*.
 
-Example: Random delay for 500 clients with 120 requests per second is 4 * 500/120 = about 17 minutes.
+Example: Random delay for 500 clients with 120 requests per second is *4 × 500/120 = about 17 minutes*.
 
 ## App-V publishing server capacity planning recommendations
 

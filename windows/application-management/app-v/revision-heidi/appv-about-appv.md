@@ -17,8 +17,6 @@ Microsoft Application Virtualization (App-V) for Windows 10 delivers Win32 appli
 
 ## What's new in App-V Windows 10, version 1703
 
-The following are new features in App-V for Windows 10, version 1703.
-
 ### Auto-sequence and update your App-V packages singly or as a batch
 
 Previous versions of the App-V Sequencer required manual sequencing and updating of app packages. This was time-consuming and required extensive interaction, causing many companies to deploy brand-new packages rather than update an existing one. Windows 10, version 1703 introduces the App-V Auto-Sequencer, which automatically sequences your app packages, improving your overall experience by streamlining prerequisite environment provisioning, automating app installation, and expediting package updating setup.
@@ -41,9 +39,7 @@ Previous versions of App-V have required you to manually remove your unpublished
 
 ## What's new in App-V in Windows 10, version 1607
 
-The following are new features in App-V for Windows 10, version 1607.
-
-## App-V is now a feature in Windows 10
+### App-V is now a feature in Windows 10
 
 With Windows 10, version 1607 and later releases, App-V is now included with [Windows 10 for Enterprise and Windows 10 for Education](https://www.microsoft.com/en-us/WindowsForBusiness/windows-product-home) and is no longer part of the Microsoft Desktop Optimization Pack.
 

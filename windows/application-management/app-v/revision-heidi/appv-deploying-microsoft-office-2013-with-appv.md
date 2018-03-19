@@ -251,8 +251,8 @@ The XML file included in the Office Deployment Tool specifies the product detail
     |---|---|
     |```\\server\Office2013```|This is the network share location that contains the Office Deployment Tool and the custom Configuration.xml file, **Customconfig.xml**.|
     |```setup.exe```|This is the Office Deployment Tool.|
-    |```/download```|This downloads the Office 2013 applications that you specify in the <strong>Customconfig.xml</strong> file. These bits can be later converted in an Office 2013 App-V package with Volume Licensing.|
-    |```\\server\Office2013\Customconfig.xml```|This passes the XML configuration file required to complete the download process. In this example, the file used is **customconfig.xml**. After using the download command, Office applications should be found in the location specified in the configuration xml file, in this example ```\\Server\Office2013```.|
+    |```/download```|This downloads the Office 2013 applications that you specify in the **Customconfig.xml** file. These bits can be later converted in an Office 2013 App-V package with Volume Licensing.|
+    |```\\server\Office2013\Customconfig.xml```|This passes the XML configuration file required to complete the download process. In this example, the file used is **Customconfig.xml**. After using the download command, Office applications should be found in the location specified in the configuration xml file, in this example ```\\Server\Office2013```.|
 
     <table>
     <colgroup>
@@ -285,7 +285,7 @@ The XML file included in the Office Deployment Tool specifies the product detail
 |---|---|
 |Add element:<br>Specifies the products and languages to include in the package.|N/A|
 |OfficeClientEdition (attribute of Add element):<br>Specifies the edition of Office 2013 product to use: 32-bit or 64-bit. The operation fails if **OfficeClientEdition** is not set to a valid value.|```OfficeClientEdition="32"```<br>```OfficeClientEdition="64"```|
-|Product element:<br>Specifies the application. Project 2013 and Visio 2013 must be specified here as an added product to be included in the applications.|```Product ID="O365ProPlusRetail"```<br>```Product ID="VisioProRetail"```<br>```Product ID="ProjectProRetail"```<br>```Product ID="ProPlusVolume"```<br>```Product ID= "ProjectProVolume"```|
+|Product element:<br>Specifies the application. Project 2013 and Visio 2013 must be specified here as an added product to be included in the applications.|```Product ID="O365ProPlusRetail"```<br>```Product ID="VisioProRetail"```<br>```Product ID="ProjectProRetail"```<br>```Product ID="ProPlusVolume"```<br>```Product ID="ProjectProVolume"```|
 |Language element:<br>Specifies the language supported in the applications.|```Language ID="en-us"```|
 |Version (attribute of Add element):<br>Optional. Specifies a build to use for the package. Defaults to latest advertised build (as defined in v32.CAB at the Office source).|```15.1.2.3```|
 |SourcePath (attribute of Add element):<br>Specifies the location in which the applications will be saved to.|```Sourcepath="\Server\Office2013”```|
