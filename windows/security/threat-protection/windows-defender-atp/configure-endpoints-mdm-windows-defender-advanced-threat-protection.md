@@ -44,7 +44,7 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
 
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a. In the navigation pane, select **Settings** > **Onboarding**.
+    a. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
 
     b. Select Windows 10 as the operating system.
 

@@ -18,7 +18,7 @@ ms.date: 04/16/2018
 
 - Windows Server 2012 R2
 - Windows Server 2016
-- Windows Server version 1803
+- Windows Server, version 1803
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
@@ -30,6 +30,7 @@ Windows Defender ATP extends support to also include the Windows Server operatin
 Windows Defender ATP supports the onboarding of the following servers:
 - Windows Server 2012 R2
 - Windows Server 2016
+- Windows Server, version 1803
 
 ## Onboard Windows Server 2012 R2 and Windows Server 2016
 
@@ -44,7 +45,7 @@ To onboard your servers to Windows Defender ATP, you’ll need to:
 
 ### Turn on Server monitoring from the Windows Defender Security Center portal
 
-1. In the navigation pane, select **Settings** > **Onboarding**.
+1. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
 
 2. Select Windows server 2012, 2012R2 and 2016 as the operating system.
  
@@ -80,7 +81,7 @@ Once completed, you should see onboarded servers in the portal within an hour.
 |    winatp-gw-neu.microsoft.com    |    443    |
 |    winatp-gw-weu.microsoft.com    |    443    |
 
-## Onboard Windows Server, version 1803 [NEED TO CHECK FINAL PRODUCT NAME FOR THIS SERVER]
+## Onboard Windows Server, version 1803 
 You’ll be able to onboard in the same method available for Windows 10 client endpoints. For more information, see  [Configure client endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md). Support for Windows Server, version 1803 provides deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well. 
 
 1.	Install the latest Windows Server Insider build on an endpoint. For more information, see [Windows Server Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewserver).
