@@ -46,7 +46,7 @@ The following image shows the conditional access flow in action:
 4. The automated investigation and remediation is completed and the threat is removed. Windows Defender ATP sees the device as low risk and Intune assesses the device to be in a compliant state. 
 5. Users can now access applications.
 
-![Image of conditional access](images/atp-conditional-access-numbered.png)( the image is not good, we nned to change it :/)
+
 
  ## Configure conditional access
 > [!NOTE] 
@@ -55,11 +55,12 @@ The following image shows the conditional access flow in action:
 You'll need to take the following steps to enable conditional access:
 
 1. Turn on the Microsoft Intune connection. For more information, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md). 
-2. enable the integration on the Intune side
-I think we should add another step regarding Intune enrillmet- we can see a problem with customer that are working with Intune mobile and doesnt know how to enroll their Win 10 device to Intune, just in case someone will miss this step :)
-2. Create a device compliance policy in Intune. For more information, see [Create a compliance policy in the Azure portal](https://docs.microsoft.com/en-us/intune/compliance-policy-create-windows#create-a-compliance-policy-in-the-azure-portal).
+2. Turn on the Windows Defender ATP integration in Intune. For more information, see LINK TO THE CONTENT INTUNE WRITER IS MAKING.
+    - Ensure that machines are enrolled. For more information see, [Set up enrollment for Windows devices](https://docs.microsoft.com/en-us/intune/windows-enroll).
+
+3. Create a device compliance policy in Intune. For more information, see [Create a compliance policy in the Azure portal](https://docs.microsoft.com/en-us/intune/compliance-policy-create-windows#create-a-compliance-policy-in-the-azure-portal).
 3. Define a conditional access policy in AAD. For more information, see [Get started with conditional access in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-azure-portal-get-started).
 
-(**In general the documention is awsome and I really appriciate your work!!!)
+
 
 
