@@ -40,13 +40,13 @@ To get you started in querying your data, you can use the basic or advanced quer
 
 A typical query starts with a table name followed by a series of operators separated by **|**.
 
-In the following example, we start with the table name **FileCreationEvents** and add piped elements as needed.
+In the following example, we start with the table name **ProcessCreationEvents** and add piped elements as needed.
 
 ![Image of Windows Defender ATP advanced hunting query](images/atp-advanced-hunting-query.png)
 
-First, we define a time filter to review only records from the previous day. We then add a filter on the _FolderPath_ field to contain only the path _\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup_.
-
-Finally, we limit the results to 100 and click **Run query**.
+First, we define a time filter to review only records from the previous 7 days. We then add a filter on the _FileName_  to contain only instances of powershell.exe
+Afterwards, we add a filter on the _ProcessCommandLine_
+Finally, we  project only the columns we're interested in exploring and limit the results to 100 and click **Run query**.
 
 ### Operators
 The query language is very powerful and has a lot of available operators, some of them are - 
