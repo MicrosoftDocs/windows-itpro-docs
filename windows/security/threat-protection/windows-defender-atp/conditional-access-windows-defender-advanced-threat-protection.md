@@ -36,14 +36,14 @@ The compliance policy is used with conditional access to allow only devices that
 ## Understand conditional access
 When a device is found to be at high risk, the signal is communicated to Intune. In Intune, a device compliance policy is used in conjunction with Azure AD conditional access to block access to applications. In parallel,  an automated investigation and remediation process is launched.
 
-A device returns to a compliant state when there is lower risk seen on it. A user can still use the device while the automated investigation and remediation is taking place, but access to enterprise data is blocked until the threat is fully remediated. When this happens, the same flow is followed but this time around the user will be able to access the application.
+A device returns to a compliant state when there is lower risk seen on it. A user can still use the device while the automated investigation and remediation is taking place, but access to enterprise data is blocked until the threat is fully remediated. When the risk is removed either through manual or automated remediation, the device returns to a compliant state and access to applications is granted.
 
 The following image shows the conditional access flow in action:
 
-1. A user accesses a compromised site and Windows Defender ATP flags the device as high risk.
-2. The high risk assessment is passed along to Intune. In parallel, an automated investigation is initiated to remediate the identified threat.
-3. Based on the policy created in Intune, the device is marked as not compliant and access to applications are blocked.
-4. The automated investigation and remediation is completed and the threat is removed. Windows Defender ATP sees the device as low risk and Intune assesses the device to be in a compliant state. 
+1. A user opens a malicious file and Windows Defender ATP flags the device as high risk.
+2. The high risk assessment is passed along to Intune. In parallel, an automated investigation is initiated to remediate the identified threat. A manual remediation can also be done to remediate the identified threat.
+3. Based on the policy created in Intune, the device is marked as not compliant. The assessment is then communicated to Azure AD. In Azure AD, the corresponding policy is applied to block access to applications.
+4. The manual or automated investigation and remediation is completed and the threat is removed. Windows Defender ATP sees the device as low risk and Intune assesses the device to be in a compliant state. Azure AD applies the policy which allows access to applications.
 5. Users can now access applications.
 
 

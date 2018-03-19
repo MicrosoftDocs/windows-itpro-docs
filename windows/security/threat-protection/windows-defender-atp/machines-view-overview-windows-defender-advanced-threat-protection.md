@@ -55,7 +55,7 @@ You can use the following filters to limit the list of machines displayed during
 **Risk level**</br>
 Machine risk levels are quick indicators of the active threats that machines could be exposed to. A machine's risk level is determined using the number of active alerts and their severity levels. You can influence a machine's risk level by resolving associated alerts manually or automatically. 
 
-Depending on your connection settings, the risk level can influence enforcement of conditional access and other security policies on Microsoft Intune and other connected solutions.(maybe we should add a link to CA, WDYT?)
+Depending on your connection settings, the risk level can influence enforcement of conditional access and other security policies on Microsoft Intune and other connected solutions. For more information on conditional access, see [Enable conditional access](conditional-access-windows-defender-advanced-threat-protection.md).
 
 
 **OS Platform**</br>
