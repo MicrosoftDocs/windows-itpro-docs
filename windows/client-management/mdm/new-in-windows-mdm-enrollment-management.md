@@ -1170,6 +1170,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>KioskBrowser/EnableHomeButton</li>
 <li>KioskBrowser/EnableNavigationButtons</li>
 <li>KioskBrowser/RestartOnIdleTime</li>
+<li>LanmanWorkstation/EnableInsecureGuestLogons</li>
 <li>LocalPoliciesSecurityOptions/Devices_AllowUndockWithoutHavingToLogon</li> 
 <li>LocalPoliciesSecurityOptions/Devices_AllowedToFormatAndEjectRemovableMedia</li> 
 <li>LocalPoliciesSecurityOptions/Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters</li> 

@@ -33,9 +33,9 @@ The following color-coded status changes are reflected on the upgrade overview b
     - If the current value is an older OS version than the recommended value, but not deprecated, the version is displayed in amber.
     - If the current value is a deprecated OS version, the version is displayed in red.
 
-Click on a row to drill down and see details about individual computers. If KBs are missing, see [Deploy the compatibility update and related KBs](upgrade-readiness-get-started.md#deploy-the-compatibility-update-and-related-kbs) for information on required KBs.
+Click a row to drill down and see details about individual computers. If updates are missing, see [Enrolling devices in Windows Analytics](../update/windows-analytics-get-started.md) for information on required updates.
 
-In the following example, there is no delay in data processing, more than 10% of computers (6k\8k) have incomplete data, more than 30% of computers (6k/8k) require a KB update, there are no pending user changes, and the currently selected target OS version is the same as the recommended version:
+In the following example, there is no delay in data processing, more than 10% of computers (6k\8k) have incomplete data, more than 30% of computers (6k/8k) require an update, there are no pending user changes, and the currently selected target OS version is the same as the recommended version:
 
 ![Upgrade overview](../images/ur-overview.png)
 
@@ -45,7 +45,7 @@ In the following example, there is no delay in data processing, more than 10% of
 
 If data processing is delayed, the "Last updated" banner will indicate the date on which data was last updated. You can continue using your workspace as normal. However, any changes or additional information that is added might not be displayed until data is refreshed. When your workspace is in this state, there is no action required; data is typically refreshed and the display will return to normal again within 24 hours. 
 
-If there are computers with incomplete data, verify that you have installed the latest compatibilty update KBs. Install the updated KBs if necessary and then run the most recent [Update Readiness deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) from the Microsoft download center. The updated data payload should appear in Upgrade Readiness within 48 hours of a successful run on the deployment script.
+If there are computers with incomplete data, verify that you have installed the latest compatibilty updates. Install the updates if necessary and then run the most recent [Update Readiness deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) from the Microsoft download center. The updated data payload should appear in Upgrade Readiness within 48 hours of a successful run on the deployment script.
 
 Select **Total computers** for a list of computers and details about them, including:
 
