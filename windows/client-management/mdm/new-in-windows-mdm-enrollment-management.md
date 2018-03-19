@@ -1658,6 +1658,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Connectivity/AllowPhonePCLinking</li>
 <li>RestrictedGroups/ConfigureGroupMembership</li>
 </ul>
+<p>The following policy was updated in Windows 10, version 1803:</p>
+<ul>
+<li>TextInput/AllowIMENetworkAccess - when this policy is set to 1, suggestions from the Microsoft AI chatbot Rinna are enabled in the Japanese IME.</li>
+</ul>
 </td></tr>
 </tbody>
 </table>
