@@ -35,7 +35,6 @@ Alerts are organized in queues by their workflow status or assignment:
 - **In progress**
 - **Resolved**
 - **Assigned to me**
-- **Suppression rules** 
 
 To see a list of alerts, click any of the queues under the **Alerts queue** option in the navigation pane.
 

@@ -193,6 +193,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-applicationdefaults.md#applicationdefaults-defaultassociationsconfiguration" id="applicationdefaults-defaultassociationsconfiguration">ApplicationDefaults/DefaultAssociationsConfiguration</a>
   </dd>
+  <dd>
+    <a href="./policy-csp-applicationdefaults.md#applicationdefaults-enableappurihandlers" id="applicationdefaults-enableappurihandlers">ApplicationDefaults/EnableAppUriHandlers</a>
+  </dd>
 </dl>
 
 ### ApplicationManagement policies
@@ -497,6 +500,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-preventsmartscreenpromptoverrideforfiles" id="browser-preventsmartscreenpromptoverrideforfiles">Browser/PreventSmartScreenPromptOverrideForFiles</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-browser.md#browser-preventtabpreloading" id="browser-preventtabpreloading">Browser/PreventTabPreloading</a>
   </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-preventusinglocalhostipaddressforwebrtc" id="browser-preventusinglocalhostipaddressforwebrtc">Browser/PreventUsingLocalHostIPAddressForWebRTC</a>
@@ -4543,7 +4549,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
 -   [Settings/AllowDateTime](#settings-allowdatetime)  
 -   [Settings/AllowVPN](#settings-allowvpn)  
--   [System/AllowFontProviders](#system-allowfontproviders)  
 -   [System/AllowLocation](#system-allowlocation)  
 -   [System/AllowTelemetry](#system-allowtelemetry)  
 -   [Update/AllowAutoUpdate](#update-allowautoupdate)  

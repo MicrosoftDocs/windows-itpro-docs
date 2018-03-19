@@ -40,27 +40,27 @@ To get you started in querying your data, you can use the basic or advanced quer
 
 A typical query starts with a table name followed by a series of operators separated by **|**.
 
-In the following example, we start with the table name **FileCreationEvents** and add piped elements as needed.
+In the following example, we start with the table name **ProcessCreationEvents** and add piped elements as needed.
 
 ![Image of Windows Defender ATP advanced hunting query](images/atp-advanced-hunting-query.png)
 
-First, we define a time filter to review only records from the previous day. We then add a filter on the _FolderPath_ field to contain only the path _\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup_.
-
-Finally, we limit the results to 100 and click **Run query**.
+First, we define a time filter to review only records from the previous 7 days. We then add a filter on the _FileName_  to contain only instances of powershell.exe
+Afterwards, we add a filter on the _ProcessCommandLine_
+Finally, we  project only the columns we're interested in exploring and limit the results to 100 and click **Run query**.
 
 ### Operators
-The query language is very powerful and has the following usable operators: 
+The query language is very powerful and has a lot of available operators, some of them are - 
 
-- **Limit** - Return up to the specified number of rows.
-- **Where** - Filter a table to the subset of rows that satisfy a predicate.
-- **Count** - Return the number of records in the input record set.
-- **Top** - Return the first N records sorted by the specified columns.
-- **Project** - Select the columns to include, rename or drop, and insert new computed columns.
-- **Summarize** - Produce a table that aggregates the content of the input table.
-- **Extend** - Create calculated columns and append them to the result set.
-- **Join** - Merge the rows of two tables to form a new table by matching values of the specified column(s) from each table.
-- **Makeset** -  Return a dynamic (JSON) array of the set of distinct values that Expr takes in the group
-- **Find** - Find rows that match a predicate across a set of tables.
+- **limit** - Return up to the specified number of rows.
+- **where** - Filter a table to the subset of rows that satisfy a predicate.
+- **count** - Return the number of records in the input record set.
+- **top** - Return the first N records sorted by the specified columns.
+- **project** - Select the columns to include, rename or drop, and insert new computed columns.
+- **summarize** - Produce a table that aggregates the content of the input table.
+- **extend** - Create calculated columns and append them to the result set.
+- **join** - Merge the rows of two tables to form a new table by matching values of the specified column(s) from each table.
+- **makeset** -  Return a dynamic (JSON) array of the set of distinct values that Expr takes in the group
+- **find** - Find rows that match a predicate across a set of tables.
 
 To see a live example of these operators, run them as part of the **Get started** section.
 
@@ -140,4 +140,5 @@ You can refine your query based on the filter by clicking the "+" or "-" buttons
 
 The filter selections will resolve as an additional query term and the results will be updated accordingly.
 
-
+## Public Advanced Hunting query GitHub repository  
+Check out the [Advanced Hunting repository](https://github.com/Microsoft/Advanced-Hunting-Queries) - contribute and take examples of queries shared by our customers. 

@@ -39,7 +39,7 @@ These code examples demonstrate the following tasks:
 ## Step 1: Obtain an Azure AD access token
 The following example demonstrates how to obtain an Azure AD access token that you can use to call methods in the custom threat intelligence API. After you obtain a token, you have 60 minutes to use this token in calls to the custom threat intelligence API before the token expires. After the token expires, you can generate a new token.
 
-Replace the *auth_url*, *client_id*, and *client_secret* values with the ones you got from **Preferences settings** page in the portal:
+Replace the *auth_url*, *client_id*, and *client_secret* values with the ones you got from **Settings** page in the portal:
 
 ```
 import json

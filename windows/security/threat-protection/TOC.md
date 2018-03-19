@@ -91,6 +91,9 @@
 #### [Automated investigations](windows-defender-atp\automated-investigations-windows-defender-advanced-threat-protection.md)
 #### [Advanced hunting](windows-defender-atp\advanced-hunting-windows-defender-advanced-threat-protection.md)
 
+###Prevent threats
+#### [Enable conditional access](windows-defender-atp\conditional-access-windows-defender-advanced-threat-protection.md)
+
 ###API and SIEM support
 #### [Pull alerts to your SIEM tools](windows-defender-atp\configure-siem-windows-defender-advanced-threat-protection.md)
 ##### [Enable SIEM integration](windows-defender-atp\enable-siem-integration-windows-defender-advanced-threat-protection.md)
@@ -191,7 +194,7 @@
 
 ####Permissions
 ##### [Manage portal access using RBAC](windows-defender-atp\rbac-windows-defender-advanced-threat-protection.md)
-##### [Create machine groups](windows-defender-atp\machine-groups-windows-defender-advanced-threat-protection.md)
+##### [Create and manage machine groups](windows-defender-atp\machine-groups-windows-defender-advanced-threat-protection.md)
 
 ####APIs
 ##### [Enable Threat intel](windows-defender-atp\enable-custom-ti-windows-defender-advanced-threat-protection.md)
@@ -204,8 +207,8 @@
 ##### [Manage automation folder exclusions](windows-defender-atp\manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
 
 ####Machine management
-### [Onboarding machines](windows-defender-atp\onboard-configure-windows-defender-advanced-threat-protection.md)
-### [Offboarding machines](windows-defender-atp\offboard-machines-windows-defender-advanced-threat-protection.md)
+##### [Onboarding machines](windows-defender-atp\onboard-configure-windows-defender-advanced-threat-protection.md)
+##### [Offboarding machines](windows-defender-atp\offboard-machines-windows-defender-advanced-threat-protection.md)
 
 ### [Configure Windows Defender ATP time zone settings](windows-defender-atp\settings-windows-defender-advanced-threat-protection.md)
 

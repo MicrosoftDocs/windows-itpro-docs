@@ -50,11 +50,12 @@ You can use existing System Center Configuration Manager functionality to create
 1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
     a. In the navigation pane, select **Settings** > **Onboarding**.
+    
     b. Select Windows 10 as the operating system.
 
-    b. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
+    c. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
     
-    c. Click **Download package**, and save the .zip file.
+    d. Click **Download package**, and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
 

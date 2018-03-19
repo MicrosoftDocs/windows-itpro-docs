@@ -23,8 +23,6 @@ ms.date: 04/16/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
-
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
 
 The **Machines list** shows a list of the machines in your network, the domain of each machine, when it last reported and the local IP Address it reported on, its **Health state**, the number of active alerts on each machine categorized by alert severity level, and the number of active malware detections. This view allows viewing machines ranked by risk or sensor health state, and keeping track of all machines that are reporting sensor data in your network.
@@ -55,7 +53,9 @@ You can use the following filters to limit the list of machines displayed during
 - 6 months
 
 **Risk level**</br>
-Machine risk levels are quick indicators of the active threats that machines could be exposed to. A machine's risk level is determined using the number of active alerts and their severity levels. You can influence a machine's risk level by resolving associated alerts manually or automatically.
+Machine risk levels are quick indicators of the active threats that machines could be exposed to. A machine's risk level is determined using the number of active alerts and their severity levels. You can influence a machine's risk level by resolving associated alerts manually or automatically. 
+
+Depending on your connection settings, the risk level can influence enforcement of conditional access and other security policies on Microsoft Intune and other connected solutions.
 
 
 **OS Platform**</br>

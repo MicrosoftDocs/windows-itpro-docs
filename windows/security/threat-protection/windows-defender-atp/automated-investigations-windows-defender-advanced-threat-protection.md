@@ -53,18 +53,27 @@ You can use the following operations to customize the list of Automated investig
 The alert the initiated the Automated investigation.
 
 **Status**</br>
-An Automated investigation can be in one of the following statuses:
+An Automated investigation can be in one of the following status:
 
-- No threats found - No malicious entities found during the Automated investigation.
-- Partially remediated - A problem prevented the remediation of some malicious entities.
-- Failed - A problem has interrupted the Automated investigation, and preventing it from completing.
-- Pending action - Remediation requires review and approval.
-- Waiting for machine - Investigation paused. The investigation will resume as soon as the machine is available.
-- Running - Investigation ongoing. Malicious entities found will be remediated.
-- Partially investigated - The entities related to the alert were investigated but a problem stopped the Automated investigation process on collateral entities.
-- Remediated - Malicious entities found were successfully remediated.
-- Terminated by system - Investigation was stopped.
-- Terminated by user - A user stopped the investigation before it could complete.
+Status | Description
+:---|:---
+| No threats found                                          | No malicious entities found during the investigation.
+| Failed                                                    | A problem has interrupted the investigation, preventing it from completing.                                                         |
+| Partially remediated                                      | A problem prevented the remediation of some malicious entities.                                                                     |
+| Action required                                           | Remediation actions require review and approval.                                                                                    |
+| Waiting for machine                                       | Investigation paused. The investigation will resume as soon as the machine is available.                                            |
+| Queued                                                    | Investigation has been queued and will resume as soon as other remediation activities are completed.                                |
+| Running                                                   | Investigation ongoing. Malicious entities found will be remediated.                                                                 |
+| Remediated                                                | Malicious entities found were successfully remediated.                                                                              |
+| Terminated by system                                      | Investigation was stopped due to <reason>.                                                                                          |
+| Terminated by user                                        | A user stopped the investigation before it could complete.                                                                          |
+| Not applicable                                            | Automated investigations do not apply to this alert type.                                                                           |
+| Partially investigated                                    | Entities directly related to the alert have been investigated. However, a problem stopped the investigation of collateral entities. |
+| Automated investigation not applicable to alert type      | Automated investigation does not apply to this alert type.                                                                          |
+| Automated investigation does not support OS               | Machine is running an OS that is not supported by automated investigation.                                                          |
+| Automated investigation unavailable for preexisting alert | Automated investigation does not apply to alerts that were generated before it was deployed.                                        |
+| Automated investigation unavailable for suppressed alert  | Automated investigation does not apply to suppressed alerts.                                                                        |
+
 
 **Detection source**</br>
 Source of the alert that initiated the Automated investigation. 
