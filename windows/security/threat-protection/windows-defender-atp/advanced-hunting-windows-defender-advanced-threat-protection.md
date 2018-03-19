@@ -44,7 +44,10 @@ In the following example, we start with the table name **ProcessCreationEvents**
 
 ![Image of Windows Defender ATP advanced hunting query](images/atp-advanced-hunting-query.png)
 
-First, we define a time filter to review only records from the previous 7 days. We then add a filter on the _FileName_  to contain only instances of powershell.exe
+First, we define a time filter to review only records from the previous seven days. 
+
+We then add a filter on the _FileName_  to contain only instances of _powershell.exe_.
+
 Afterwards, we add a filter on the _ProcessCommandLine_
 Finally, we  project only the columns we're interested in exploring and limit the results to 100 and click **Run query**.
 
@@ -141,4 +144,6 @@ You can refine your query based on the filter by clicking the "+" or "-" buttons
 The filter selections will resolve as an additional query term and the results will be updated accordingly.
 
 ## Public Advanced Hunting query GitHub repository  
-Check out the [Advanced Hunting repository](https://github.com/Microsoft/Advanced-Hunting-Queries) - contribute and take examples of queries shared by our customers. 
+Check out the [Advanced Hunting repository](https://github.com/Microsoft/Advanced-Hunting-Queries). Contribute and use example queries shared by our customers. 
+
+
