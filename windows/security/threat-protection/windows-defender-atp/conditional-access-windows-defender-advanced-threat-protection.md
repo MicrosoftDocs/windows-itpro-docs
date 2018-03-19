@@ -25,7 +25,7 @@ ms.date: 03/05/2018
 
 Conditional access is a capability that helps you better protect your users and enterprise information by making sure that only secure devices have access to applications.
 
-With conditional access, you can control access to enterprise information based on the risk level of a device. This helps ensure that devices are always trusted.
+With conditional access, you can control access to enterprise information based on the risk level of a device. This helps keep trusted users on trusted devices using trusted applications.
 
 You can define security conditions under which devices and applications can run and access information from your network by enforcing policies to stop applications from running until a device returns to a compliant state. 
 
@@ -36,7 +36,7 @@ The compliance policy is used with conditional access to allow only devices that
 ## Understand conditional access
 When a device is found to be at high risk, the signal is communicated to Intune. In Intune, a device compliance policy is used in conjunction with Azure AD conditional access to block access to applications. In parallel,  an automated investigation and remediation process is launched.
 
-A device returns to a compliant state when there is low or no risk seen on it. A user can still use the device while the automated investigation and remediation is taking place, but access to enterprise data is blocked until the threat is fully remediated. When this happens, the same flow is followed but this time around the user will be able to access the application.
+A device returns to a compliant state when there is lower risk seen on it. A user can still use the device while the automated investigation and remediation is taking place, but access to enterprise data is blocked until the threat is fully remediated. When this happens, the same flow is followed but this time around the user will be able to access the application.
 
 The following image shows the conditional access flow in action:
 
