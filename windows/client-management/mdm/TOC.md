@@ -217,6 +217,7 @@
 #### [InternetExplorer](policy-csp-internetexplorer.md)
 #### [Kerberos](policy-csp-kerberos.md)
 #### [KioskBrowser](policy-csp-kioskbrowser.md)
+#### [LanmanWorkstation](policy-csp-lanmanworkstation.md)
 #### [Licensing](policy-csp-licensing.md)
 #### [LocalPoliciesSecurityOptions](policy-csp-localpoliciessecurityoptions.md)
 #### [Location](policy-csp-location.md)

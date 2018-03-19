@@ -1170,6 +1170,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>KioskBrowser/EnableHomeButton</li>
 <li>KioskBrowser/EnableNavigationButtons</li>
 <li>KioskBrowser/RestartOnIdleTime</li>
+<li>LanmanWorkstation/EnableInsecureGuestLogons</li>
 <li>LocalPoliciesSecurityOptions/Devices_AllowUndockWithoutHavingToLogon</li> 
 <li>LocalPoliciesSecurityOptions/Devices_AllowedToFormatAndEjectRemovableMedia</li> 
 <li>LocalPoliciesSecurityOptions/Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters</li> 
@@ -1657,6 +1658,14 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Connectivity/AllowPhonePCLinking</li>
 <li>RestrictedGroups/ConfigureGroupMembership</li>
 </ul>
+<p>The following policy was updated in Windows 10, version 1803:</p>
+<ul>
+<li>TextInput/AllowIMENetworkAccess - when this policy is set to 1, suggestions from the Microsoft AI chatbot Rinna are enabled in the Japanese IME.</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Policy CSP - Bluetooth](policy-csp-bluetooth.md)</td>
+<td style="vertical-align:top"><p>Added new section [ServicesAllowedList usage guide](policy-csp-bluetooth.md#servicesallowedlist-usage-guide).</p>
 </td></tr>
 </tbody>
 </table>
