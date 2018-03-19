@@ -1663,6 +1663,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>TextInput/AllowIMENetworkAccess - when this policy is set to 1, suggestions from the Microsoft AI chatbot Rinna are enabled in the Japanese IME.</li>
 </ul>
 </td></tr>
+<tr>
+<td style="vertical-align:top">[Policy CSP - Bluetooth](policy-csp-bluetooth.md)</td>
+<td style="vertical-align:top"><p>Added new section [ServicesAllowedList usage guide](policy-csp-bluetooth.md#servicesallowedlist-usage-guide).</p>
+</td></tr>
 </tbody>
 </table>
 
