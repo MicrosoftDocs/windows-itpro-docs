@@ -20,36 +20,7 @@ The site discovery feature in Upgrade Readiness provides an inventory of web sit
 > [!NOTE] 
 > Site discovery data is disabled by default; you can find documentation on what is collected in the [Windows 7, Windows 8, and Windows 8.1 appraiser diagnostic data events and fields](https://go.microsoft.com/fwlink/?LinkID=822965). After you turn on this feature, data is collected on all sites visited by Internet Explorer, except during InPrivate sessions. The data collection process is silent, without notification to the employee. You are responsible for ensuring that your use of this feature complies with all applicable local laws and regulatory requirements, including any requirements to provide notice to employees.
 
-### Install prerequisite security update for Internet Explorer
-
-Ensure the following prerequisites are met before using site discovery:
-
-1. Install the prerequisite KBs to add Site Discovery support and the latest fixes from the [Microsoft Update Catalog](http://www.catalog.update.microsoft.com/home.aspx). Install the following:
-   - For Windows 7 and Windows 8.1 - March, 2017 (or later) Security Monthly Rollup
-   - For Windows 10 - Cumulative Update for Windows 10 Version 1607 (KB4015217) (or later)
-2. Enable Internet Explorer data collection, which is disabled by default. The best way to enable it is to modify the [Upgrade Readiness deployment script](upgrade-readiness-deployment-script.md) to allow Internet Explorer data collection before you run it. In addition, to enable Site Discovery on Windows 10 you must set computers to the **Enhanced** diagnostic data level for the Feedback and Diagnostics setting (Privacy > Feedback & Diagnostics settings), and enable **Page Prediction within Internet Explorer 11**.
-
-    If you do not plan to use the Upgrade Readiness deployment script to enable Site discovery, you must create the following registry entry. 
-
-    HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection 
-
-    Entry name: IEDataOptIn
-
-    Data type: DWORD
-
-    Values:
-
-    > *IEOptInLevel = 0 Internet Explorer data collection is disabled*
-    >
-    > *IEOptInLevel = 1 Data collection is enabled for sites in the Local intranet + Trusted sites + Machine local zones*
-    >
-    > *IEOptInLevel = 2 Data collection is enabled for sites in the Internet + Restricted sites zones*
-    >
-    > *IEOptInLevel = 3 Data collection is enabled for all sites*
-
-    For more information about Internet Explorer Security Zones, see [About URL Security Zones](https://msdn.microsoft.com/library/ms537183.aspx). 
-
-    ![Create the IEDataOptIn registry key](../images/upgrade-analytics-create-iedataoptin.png)
+[In order to use site discovery, a separate opt-in is required; see Enrolling]
 
 ### Review most active sites
 
