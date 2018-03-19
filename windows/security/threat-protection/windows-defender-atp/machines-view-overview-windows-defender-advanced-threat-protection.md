@@ -53,7 +53,7 @@ You can use the following filters to limit the list of machines displayed during
 - 6 months
 
 **Risk level**</br>
-Machine risk levels are quick indicators of the active threats that machines could be exposed to. A machine's risk level is determined using the number of active alerts and their severity levels. You can influence a machine's risk level by resolving associated alerts manually or automatically. 
+Machine risk levels are quick (don't like the word "quick" we  should take it off) indicators of the active threats that machines could be exposed to. A machine's risk level is determined using the number of active alerts and their severity levels. You can influence a machine's risk level by resolving associated alerts manually or automatically. (we should add suppress, the same as is Machine apge)
 
 Depending on your connection settings, the risk level can influence enforcement of conditional access and other security policies on Microsoft Intune and other connected solutions. For more information on conditional access, see [Enable conditional access](conditional-access-windows-defender-advanced-threat-protection.md).
 
