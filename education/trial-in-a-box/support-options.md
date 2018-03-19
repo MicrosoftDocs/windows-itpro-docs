@@ -11,13 +11,23 @@ ms.pagetype: edu
 ROBOTS: noindex,nofollow
 author: CelesteDG
 ms.author: celested
-ms.date: 12/11/2017
+ms.date: 03/18/2018
 ---
 
 # Microsoft Education Trial in a Box Support
 Need help or have a question about using Microsoft Education? Start here.
 
-## 1. Confirm your admin contact information is current
+## 1. Update your apps
+
+Microsoft Education works hard to bring you the most current Trial in a Box program experience. As a result, you may need to update your apps to get our latest innovations. 
+
+For more information about checking for updates, and how to optionally turn on automatic app updates, see the following articles:
+
+- [Check updates for apps and games from Microsoft Store](https://support.microsoft.com/en-us/help/4026259/microsoft-store-check-updates-for-apps-and-games)
+
+- [Turn on automatic app updates](https://support.microsoft.com/en-us/help/15081/windows-turn-on-automatic-app-updates)
+
+## 2. Confirm your admin contact information is current
 
 1. Go to the <a href="https://portal.office.com/adminportal/home" target="_blank">Office 365 admin center</a> and sign in with your Office 365 admin credentials.
 2. In the admin center dashboard, select your profile on the upper righthand corner and select **My account** from the options.
@@ -30,7 +40,7 @@ Need help or have a question about using Microsoft Education? Start here.
 
 4. Click **Save**.
 
-## 2. Request a call back
+## 3. Request a call back
 
 1. Click the **Need help?** button in the lower right-hand corner of the Office 365 console.
 

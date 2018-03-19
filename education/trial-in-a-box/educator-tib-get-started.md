@@ -11,7 +11,7 @@ ms.pagetype: edu
 ROBOTS: noindex,nofollow
 author: CelesteDG
 ms.author: celested
-ms.date: 01/12/2017
+ms.date: 03/18/2018
 ---
 
 # Educator Trial in a Box Guide
@@ -186,6 +186,15 @@ Bring out the best in students by providing a platform for collaborating, explor
 | <iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/hMmRud4B54o" frameborder="0" allowfullscreen></iframe></br>Watch teachers elevate the education of students using OneNote. | <iframe width="420" height="236" src="https://www.youtube.com/embed/hl9ZQiektJE" frameborder="0" allowfullscreen></iframe></br>Here what other teachers say about using Minecraft: Education Edition in their classrooms. |
 |  |  |
 
+## Update your apps
+
+Microsoft Education works hard to bring you the most current Trial in a Box program experience. As a result, you may need to update your apps to get our latest innovations. 
+
+For more information about checking for updates, and how to optionally turn on automatic app updates, see the following articles:
+
+- [Check updates for apps and games from Microsoft Store](https://support.microsoft.com/en-us/help/4026259/microsoft-store-check-updates-for-apps-and-games)
+
+- [Turn on automatic app updates](https://support.microsoft.com/en-us/help/15081/windows-turn-on-automatic-app-updates)
 
 ## Get more info
 * Learn more at <a href="https://www.microsoft.com/education" target="_blank">microsoft.com/education</a>
