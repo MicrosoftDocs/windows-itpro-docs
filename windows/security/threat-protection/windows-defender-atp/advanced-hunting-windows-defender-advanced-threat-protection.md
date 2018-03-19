@@ -140,4 +140,5 @@ You can refine your query based on the filter by clicking the "+" or "-" buttons
 
 The filter selections will resolve as an additional query term and the results will be updated accordingly.
 
-
+## Public Advanced Hunting query GitHub repository  
+Check out the [Advanced Hunting repository](https://github.com/Microsoft/Advanced-Hunting-Queries) - contribute and take examples of queries shared by our customers. 
