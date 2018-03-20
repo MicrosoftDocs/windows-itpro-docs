@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - Connectivity
@@ -216,6 +216,14 @@ Allows or disallows cellular data roaming on the device. Device reboot is not re
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Prohibit connection to roaming Mobile Broadband networks*
+-   GP name: *WCM_DisableRoaming*
+-   GP path: *Network/Windows Connection Manager*
+-   GP ADMX file name: *WCM.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -545,6 +553,17 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
+This policy setting specifies whether to allow printing over HTTP from this client.
+
+Printing over HTTP allows a client to print to printers on the intranet as well as the Internet.
+
+Note: This policy setting affects the client side of Internet printing only. It does not prevent this computer from acting as an Internet Printing server and making its shared printers available via HTTP.
+
+If you enable this policy setting, it prevents this client from printing to Internet printers over HTTP.
+
+If you disable or do not configure this policy setting, users can choose to print to Internet printers over HTTP.
+
+Also, see the "Web-based printing" policy setting in Computer Configuration/Administrative Templates/Printers.
 
 <!--/Description-->
 > [!TIP]
@@ -554,14 +573,14 @@ The following list shows the supported values:
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Turn off printing over HTTP*
 -   GP name: *DisableHTTPPrinting_2*
 -   GP path: *Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -602,6 +621,15 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
+This policy setting specifies whether to allow this client to download print driver packages over HTTP.
+
+To set up HTTP printing, non-inbox drivers need to be downloaded over HTTP.
+
+Note: This policy setting does not prevent the client from printing to printers on the Intranet or the Internet over HTTP.  It only prohibits downloading drivers that are not already installed locally.
+
+If you enable this policy setting, print drivers cannot be downloaded over HTTP.
+
+If you disable or do not configure this policy setting, users can download print drivers over HTTP.
 
 <!--/Description-->
 > [!TIP]
@@ -611,14 +639,14 @@ ADMX Info:
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Turn off downloading of print drivers over HTTP*
 -   GP name: *DisableWebPnPDownload_2*
 -   GP path: *Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -659,6 +687,15 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
+This policy setting specifies whether Windows should download a list of providers for the web publishing and online ordering wizards.
+
+These wizards allow users to select from a list of companies that provide services such as online storage and photographic printing. By default, Windows displays providers downloaded from a Windows website in addition to providers specified in the registry.
+
+If you enable this policy setting, Windows does not download providers, and only the service providers that are cached in the local registry are displayed.
+
+If you disable or do not configure this policy setting, a list of providers are downloaded when the user uses the web publishing or online ordering wizards.
+
+See the documentation for the web publishing and online ordering wizards for more information, including details on specifying service providers in the registry.
 
 <!--/Description-->
 > [!TIP]
@@ -668,14 +705,14 @@ ADMX Info:
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Turn off Internet download for Web publishing and online ordering wizards*
 -   GP name: *ShellPreventWPWDownload_2*
 -   GP path: *Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -721,6 +758,14 @@ Added in Windows 10, version 1703. Network Connection Status Indicator (NCSI) de
 Value type is integer.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off Windows Network Connectivity Status Indicator active tests*
+-   GP name: *NoActiveProbe*
+-   GP path: *Internet Communication settings*
+-   GP ADMX file name: *ICM.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -773,14 +818,14 @@ If you enable this policy, Windows only allows access to the specified UNC paths
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Hardened UNC Paths*
 -   GP name: *Pol_HardenedPaths*
 -   GP path: *Network/Network Provider*
 -   GP ADMX file name: *networkprovider.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -821,6 +866,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
+Determines whether a user can install and configure the Network Bridge.
+
+Important: This settings is location aware. It only applies when a computer is connected to the same DNS domain network it was connected to when the setting was refreshed on that computer. If a computer is connected to a DNS domain network other than the one it was connected to when the setting was refreshed, this setting does not apply.
+
+The Network Bridge allows users to create a layer 2 MAC bridge, enabling them to connect two or more network segements together. This connection appears in the Network Connections folder.
+
+If you disable this setting or do not configure it, the user will be able to create and modify the configuration of a Network Bridge. Enabling this setting does not remove an existing Network Bridge from the user's computer.
 
 <!--/Description-->
 > [!TIP]
@@ -830,14 +882,14 @@ ADMX Info:
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Prohibit installation and configuration of Network Bridge on your DNS domain network*
 -   GP name: *NC_AllowNetBridge_NLA*
 -   GP path: *Network/Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
 
@@ -846,6 +898,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

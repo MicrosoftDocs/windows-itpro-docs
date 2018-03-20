@@ -136,6 +136,22 @@
       "version": 0
     },
     {
+      "docset_name": "privacy",
+      "build_source_folder": "windows/privacy",
+      "build_output_subfolder": "privacy",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
       "docset_name": "security",
       "build_source_folder": "windows/security",
       "build_output_subfolder": "security",

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/11/2017
+ms.date: 03/02/2018
 ---
 
 # Understanding ADMX-backed policies
@@ -14,23 +14,6 @@ ms.date: 08/11/2017
 Due to increased simplicity and the ease with which devices can be targeted, enterprise businesses are finding it increasingly advantageous to move their PC management to a cloud-based device management solution. Unfortunately, current Windows PC device-management solutions lack the critical policy and app settings configuration capabilities that are supported in a traditional PC management solution. 
 
 Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy configuration support will be expanded to allow access of select Group Policy administrative templates (ADMX-backed policies) for Windows PCs via the Policy configuration service provider (CSP). This expanded access ensures that enterprises do not need to compromise security of their devices in the cloud.
-
-## In this section
-
--   [Background](#background)
--   [ADMX files and the Group Policy Editor](#admx-files-and-the-group-policy-editor)
--   [ADMX-backed policy examples](#admx-backed-policy-examples)
-    - [Enabling a policy](#enabling-a-policy)
-    - [Disabling a policy](#disabling-a-policy)
-    - [Setting a policy to not configured](#setting-a-policy-to-not-configured)
--   [Sample SyncML for various ADMX elements](#sample-syncml-for-various-admx-elements)
-    - [Text Element](#text-element)
-    - [MultiText Element](#multitext-element)
-    - [List Element (and its variations)](#list-element)
-    - [No Elements](#no-elements)
-    - [Enum](#enum)
-    - [Decimal Element](#decimal-element)
-    - [Boolean Element](#boolean-element)
 
 ## <a href="" id="background"></a>Background
 
@@ -46,6 +29,16 @@ In a domain controller/Group Policy ecosystem, Group Policies are automatically 
 An ADMX file can either be shipped with Windows (located at `%SystemRoot%\policydefinitions`) or it can be ingested to a device through the Policy CSP URI (`./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`). Inbox ADMX files are processed into MDM policies at OS-build time. ADMX files that are ingested are processed into MDM policies post-OS shipment through the Policy CSP. Because the Policy CSP does not rely upon any aspect of the Group Policy client stack, including the PC’s Group Policy Service (GPSvc), the policy handlers that are ingested to the device are able to react to policies that are set by the MDM.
 
 Windows maps the name and category path of a Group Policy to a MDM policy area and policy name by parsing the associated ADMX file, finding the specified Group Policy, and storing the definition (metadata) in the MDM Policy CSP client store. When the MDM policy is referenced by a SyncML command and the Policy CSP URI, `.\[device|user]\vendor\msft\policy\[config|result]\<area>\<policy>`, this metadata is referenced and determines which registry keys are set or removed. For a list of ADMX-backed policies supported by MDM, see [Policy CSP - ADMX-backed policies](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies).
+
+## Video walkthrough
+
+Here is a video of how to create a custom xml to enable an ADMX-backed policy and deploy the XML in Intune.
+
+> [!VIDEO https://www.microsoft.com/showcase/video.aspx?uuid=bdc9b54b-11b0-4bdb-a022-c339d16e7121]
+
+Here is a video of how to import a custom ADMX file to a device using Intune.
+
+> [!VIDEO https://www.microsoft.com/showcase/video.aspx?uuid=a59888b1-429f-4a49-8570-c39a143d9a73]
 
 ## <a href="" id="admx-files-and-the-group-policy-editor"></a>ADMX files and the Group Policy Editor
 

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/31/2018
+ms.date: 03/13/2018
 ---
 
 # Policy CSP - Browser
@@ -118,6 +118,9 @@ ms.date: 01/31/2018
     <a href="#browser-preventsmartscreenpromptoverrideforfiles">Browser/PreventSmartScreenPromptOverrideForFiles</a>
   </dd>
   <dd>
+    <a href="#browser-preventtabpreloading">Browser/PreventTabPreloading</a>
+  </dd>
+  <dd>
     <a href="#browser-preventusinglocalhostipaddressforwebrtc">Browser/PreventUsingLocalHostIPAddressForWebRTC</a>
   </dd>
   <dd>
@@ -188,6 +191,14 @@ Added in Windows 10, version 1703. Specifies whether to allow the address bar dr
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Address bar drop-down list suggestions*
+-   GP name: *AllowAddressBarDropdown*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -241,6 +252,14 @@ Specifies whether autofill on websites is allowed.
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Autofill*
+-   GP name: *AllowAutofill*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -366,14 +385,7 @@ The following list shows the supported values:
 -   0 - Disable. Microsoft Edge cannot retrieve a configuration
 -   1 - Enable (default). Microsoft Edge can retrieve a configuration for Books Library
 
-
 <!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -421,6 +433,15 @@ Specifies whether cookies are allowed.
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure cookies*
+-   GP name: *Cookies*
+-   GP element: *CookiesListBox*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -487,6 +508,14 @@ Specifies whether employees can use F12 Developer Tools on Microsoft Edge. Turni
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Developer Tools*
+-   GP name: *AllowDeveloperTools*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -540,6 +569,14 @@ Specifies whether Do Not Track headers are allowed.
 Most restricted value is 1.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Do Not Track*
+-   GP name: *AllowDoNotTrack*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -600,6 +637,14 @@ To verify AllowDoNotTrack is set to 0 (not allowed):
 Added in Windows 10, version 1607. Specifies whether Microsoft Edge extensions are allowed.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Extensions*
+-   GP name: *AllowExtensions*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -651,6 +696,14 @@ The following list shows the supported values:
 Added in Windows 10. Specifies whether Adobe Flash can run in Microsoft Edge.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Adobe Flash*
+-   GP name: *AllowFlash*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -702,6 +755,14 @@ The following list shows the supported values:
 Added in Windows 10, version 1703. Specifies whether users must take an action, such as clicking the content or a Click-to-Run button, before seeing content in Adobe Flash.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure the Adobe Flash Click-to-Run setting*
+-   GP name: *AllowFlashClickToRun*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -755,6 +816,14 @@ Specifies whether InPrivate browsing is allowed on corporate networks.
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow InPrivate browsing*
+-   GP name: *AllowInPrivate*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -811,6 +880,14 @@ If you enable or don’t configure this setting, Microsoft Edge periodically dow
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Microsoft Compatibility List*
+-   GP name: *AllowCVList*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -864,6 +941,14 @@ Specifies whether saving and managing passwords locally on the device is allowed
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Password Manager*
+-   GP name: *AllowPasswordManager*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -926,6 +1011,14 @@ Specifies whether pop-up blocker is allowed or enabled.
 Most restricted value is 1.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Pop-up Blocker*
+-   GP name: *AllowPopups*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -990,6 +1083,14 @@ If this setting is turned on or not configured, users can add new search engines
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow search engine customization*
+-   GP name: *AllowSearchEngineCustomization*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1043,6 +1144,14 @@ Specifies whether search suggestions are allowed in the address bar.
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure search suggestions in Address bar*
+-   GP name: *AllowSearchSuggestionsinAddressBar*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1096,6 +1205,14 @@ Specifies whether Windows Defender SmartScreen is allowed.
 Most restricted value is 1.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Windows Defender SmartScreen*
+-   GP name: *AllowSmartScreen*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1156,6 +1273,14 @@ To verify AllowSmartScreen is set to 0 (not allowed):
 Added in Windows 10, next majot update. Always show the Books Library in Microsoft Edge
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Always show the Books Library in Microsoft Edge*
+-   GP name: *AlwaysEnableBooksLibrary*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1209,6 +1334,14 @@ Added in Windows 10, version 1703. Specifies whether to clear browsing data on e
 Most restricted value is 1.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow clearing browsing data on exit*
+-   GP name: *AllowClearingBrowsingDataOnExit*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1279,6 +1412,15 @@ If this setting is not configured, the search engines used are the ones that are
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure additional search engines*
+-   GP name: *ConfigureAdditionalSearchEngines*
+-   GP element: *ConfigureAdditionalSearchEngines_Prompt*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1338,6 +1480,14 @@ Added in Windows 10, version 1703. Boolean value that specifies whether the lock
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Disable lockdown of Start pages*
+-   GP name: *DisableLockdownOfStartPages*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1391,6 +1541,14 @@ This policy setting lets you decide how much data to send to Microsoft about the
 If you enable this setting, Microsoft Edge sends additional diagnostic data, on top of the basic diagnostic data, from the Books tab. If you disable or don't configure this setting, Microsoft Edge only sends basic diagnostic data, depending on your device configuration.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow extended telemetry for the Books tab*
+-   GP name: *EnableExtendedBooksTelemetry*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1446,6 +1604,15 @@ The following list shows the supported values:
 Allows the user to specify an URL of an enterprise site list.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure the Enterprise Mode Site List*
+-   GP name: *EnterpriseModeSiteList*
+-   GP element: *EnterSiteListPrompt*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1604,6 +1771,15 @@ Starting in Windows 10, version 1703, if you don’t want to send traffic to Mi
 > Turning this setting off, or not configuring it, sets your default Start pages to the webpages specified in App settings.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Start pages*
+-   GP name: *HomePages*
+-   GP element: *HomePagesPrompt*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1657,6 +1833,14 @@ If you disable or don't configure this setting (default), employees can add, imp
 Data type is integer.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Prevent changes to Favorites on Microsoft Edge*
+-   GP name: *LockdownFavorites*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1708,6 +1892,14 @@ The following list shows the supported values:
 Specifies whether users can access the about:flags page, which is used to change developer settings and to enable experimental features.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Prevent access to the about:flags page in Microsoft Edge*
+-   GP name: *PreventAccessToAboutFlagsInMicrosoftEdge*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1761,6 +1953,14 @@ Added in Windows 10, version 1703. Specifies whether to enable or disable the Fi
 Most restricted value is 1.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Prevent the First Run webpage from opening on Microsoft Edge*
+-   GP name: *PreventFirstRunPage*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1814,6 +2014,14 @@ Added in Windows 10, version 1703. Specifies whether Microsoft can collect infor
 Most restricted value is 1.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Prevent Microsoft Edge from gathering Live Tile information when pinning a site to Start*
+-   GP name: *PreventLiveTileDataCollection*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1867,6 +2075,14 @@ Specifies whether users can override the Windows Defender SmartScreen Filter war
 Turning this setting on stops users from ignoring the Windows Defender SmartScreen Filter warnings and blocks them from going to the site. Turning this setting off, or not configuring it, lets users ignore the Windows Defender SmartScreen Filter warnings about potentially malicious websites and to continue to the site.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Prevent bypassing Windows Defender SmartScreen prompts for sites*
+-   GP name: *PreventSmartScreenPromptOverride*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1918,11 +2134,71 @@ The following list shows the supported values:
 Specifies whether users can override the Windows Defender SmartScreen Filter warnings about downloading unverified files. Turning this setting on stops users from ignoring the Windows Defender SmartScreen Filter warnings and blocks them from downloading unverified files. Turning this setting off, or not configuring it, lets users ignore the Windows Defender SmartScreen Filter warnings about unverified files and lets them continue the download process.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Prevent bypassing Windows Defender SmartScreen prompts for files*
+-   GP name: *PreventSmartScreenPromptOverrideForFiles*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Off.
 -   1 – On.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="browser-preventtabpreloading"></a>**Browser/PreventTabPreloading**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803. This is only a placeholder. Do not use in production code. 
+
+<!--/Description-->
+
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – Allow pre-launch and preload.
+-   1 – Prevent pre-launch and preload.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1973,6 +2249,14 @@ The following list shows the supported values:
 Specifies whether a user's localhost IP address is displayed while making phone calls using the WebRTC protocol. Turning this setting on hides an user’s localhost IP address while making phone calls using WebRTC. Turning this setting off, or not configuring it, shows an user’s localhost IP address while making phone calls using WebRTC.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Prevent using Localhost IP address for WebRTC*
+-   GP name: *HideLocalHostIPAddress*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -2037,6 +2321,15 @@ If you disable or don't configure this setting, employees will see the favorites
 Data type is string.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Provision Favorites*
+-   GP name: *ConfiguredFavorites*
+-   GP element: *ConfiguredFavoritesPrompt*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2087,6 +2380,14 @@ Specifies whether to send intranet traffic over to Internet Explorer.
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Send all intranet sites to Internet Explorer 11*
+-   GP name: *SendIntranetTraffictoInternetExplorer*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -2148,6 +2449,15 @@ If this setting is not configured, the default search engine is set to the one s
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Set default search engine*
+-   GP name: *SetDefaultSearchEngine*
+-   GP element: *SetDefaultSearchEngine_Prompt*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -2205,6 +2515,14 @@ Added in Windows 10, version 1607. Specifies whether users should see a full in
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Show message when opening sites in Internet Explorer*
+-   GP name: *ShowMessageWhenOpeningSitesInInternetExplorer*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -2261,6 +2579,14 @@ Added in Windows 10, version 1703. Specifies whether favorites are kept in sync 
 > Enabling this setting stops Microsoft Edge favorites from syncing between connected Windows 10 devices.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Keep favorites in sync between Internet Explorer and Microsoft Edge*
+-   GP name: *SyncFavoritesBetweenIEAndMicrosoftEdge*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -2322,6 +2648,14 @@ To verify that favorites are in synchronized between Internet Explorer and Micro
 This setting specifies whether organizations should use a folder shared across users to store books from the Books Library.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow a shared Books folder*
+-   GP name: *UseSharedFolderForBooks*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -2331,68 +2665,13 @@ The following list shows the supported values:
 <!--/SupportedValues-->
 <!--/Policy-->
 <hr/>
-<!--StartPolicy-->
-<a href="" id="browser-usesharedfolderforbooks"></a>**Browser/UseSharedFolderForBooks**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartScope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-> * Device
-
-<hr/>
-
-<!--EndScope-->
-<!--StartDescription-->
-This setting specifies whether organizations should use a folder shared across users to store books from the Books Library.
-
-<!--EndDescription-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 - No shared folder.
--   1 - Use a shared folder.
-
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--EndPolicy-->
-<hr/>
 
 Footnote:
 
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

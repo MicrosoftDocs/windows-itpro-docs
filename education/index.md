@@ -4,6 +4,7 @@ hide_bc: true
 title: Microsoft 365 Education documentation and resources | Microsoft Docs
 description: Learn about product documentation and resources available for school IT administrators, teachers, students, and education app developers.
 author: CelesteDG
+ms.topic: hub-page
 ms.author: celested
 ms.date: 10/30/2017
 ---
@@ -271,7 +272,7 @@ ms.date: 10/30/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="https://onedrive.live.com/view.aspx?resid=91F4E618548FC604!2261&ithint=file%2cdocx&app=Word&authkey=!AOgLvpbaerOOfwM" target="_blank">
+                                <a href="https://docs.microsoft.com/en-us/microsoftteams/teams-quick-start-edu" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -282,7 +283,7 @@ ms.date: 10/30/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Microsoft Teams</h3>
-                                                    <p>Make the most of Microsoft Teams and find out how to deploy, launch pilot teams, and launch Teams to the rest of your institution.</p>
+                                                    <p>Make the most of Microsoft Teams and find out how to deploy, launch pilot teams, and launch Teams to the rest of your organization.</p>
                                                 </div>
                                             </div>
                                         </div>

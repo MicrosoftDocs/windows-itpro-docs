@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - SmartScreen
@@ -72,6 +72,14 @@ ms.date: 01/30/2018
 Added in Windows 10, version 1703. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure App Install Control*
+-   GP name: *ConfigureAppInstallControl*
+-   GP path: *Windows Components/Windows Defender SmartScreen/Explorer*
+-   GP ADMX file name: *SmartScreen.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -122,6 +130,14 @@ The following list shows the supported values:
 Added in Windows 10, version 1703. Allows IT Admins to configure SmartScreen for Windows.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Windows Defender SmartScreen*
+-   GP name: *ShellConfigureSmartScreen*
+-   GP path: *Windows Components/Windows Defender SmartScreen/Explorer*
+-   GP ADMX file name: *SmartScreen.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -172,6 +188,15 @@ The following list shows the supported values:
 Added in Windows 10, version 1703. Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Windows Defender SmartScreen*
+-   GP name: *ShellConfigureSmartScreen*
+-   GP element: *ShellConfigureSmartScreen_Dropdown*
+-   GP path: *Windows Components/Windows Defender SmartScreen/Explorer*
+-   GP ADMX file name: *SmartScreen.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -187,6 +212,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

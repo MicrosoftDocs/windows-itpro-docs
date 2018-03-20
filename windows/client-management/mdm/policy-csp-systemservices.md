@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - SystemServices
@@ -80,9 +80,15 @@ ms.date: 01/30/2018
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *HomeGroup Listener*
+-   GP path: *Windows Settings/Security Settings/System Services*
+
+<!--/DbMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -123,9 +129,15 @@ Added in Windows 10, next major update. This setting determines whether the serv
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *HomeGroup Provider*
+-   GP path: *Windows Settings/Security Settings/System Services*
+
+<!--/DbMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -166,9 +178,15 @@ Added in Windows 10, next major update. This setting determines whether the serv
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *Xbox Accessory Management Service*
+-   GP path: *Windows Settings/Security Settings/System Services*
+
+<!--/DbMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -209,9 +227,15 @@ Added in Windows 10, next major update. This setting determines whether the serv
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *Xbox Live Auth Manager*
+-   GP path: *Windows Settings/Security Settings/System Services*
+
+<!--/DbMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -252,9 +276,15 @@ Added in Windows 10, next major update. This setting determines whether the serv
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *Xbox Live Game Save*
+-   GP path: *Windows Settings/Security Settings/System Services*
+
+<!--/DbMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -295,9 +325,15 @@ Added in Windows 10, next major update. This setting determines whether the serv
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *Xbox Live Networking Service*
+-   GP path: *Windows Settings/Security Settings/System Services*
+
+<!--/DbMapped-->
 <!--/Policy-->
 <hr/>
 
@@ -306,6 +342,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 
