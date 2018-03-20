@@ -2129,6 +2129,11 @@ Value - A number indicating the zone with which this site should be associated f
 
 If you disable or do not configure this policy, users may choose their own site-to-zone assignments.
 
+> [!Note]  
+> This policy is a list that contains the site and index value.
+
+The list is a set of pairs of strings. Each string is seperated by F000. Each pair of string are stored as a registry name and value.  The registry name is the site and the value is an index. The index has to be sequential. See an example below.
+
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -2145,6 +2150,31 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMXBacked-->
+<!--Example-->
+```syntax
+  <SyncBody>
+      <Replace>
+          <CmdID>2</CmdID>
+           <Item>
+               <Meta>
+                  <Format>chr</Format>
+                  <Type>text/plain</Type>
+              </Meta>
+              <Target>
+                  <LocURI>./Device/Vendor/MSFT/Policy/Config/InternetExplorer/AllowSiteToZoneAssignmentList</LocURI>
+              </Target>
+               <Data>&lt;Enabled/&gt;&lt;Data id=&quot;IZ_ZonemapPrompt&quot; value=&quot;http://adfs.contoso.org&#xF000;1&#xF000;http://microsoft.com&#xF000;2&quot;/&gt;</Data>
+          </Item>
+      </Replace>
+      <Final/>
+  </SyncBody>
+```
+
+Value and index pairs in the SyncML example:  
+- http://adfs.contoso.org 1
+- http://microsoft.com 2
+
+<!--/Example-->
 <!--/Policy-->
 
 <hr/>
