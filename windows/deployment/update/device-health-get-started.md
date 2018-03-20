@@ -5,7 +5,7 @@ keywords: Device Health, oms, operations management suite, prerequisites, requir
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.date: 03/15/2018
+ms.date: 03/20/2018
 ms.pagetype: deploy
 author: jaimeo
 ---
@@ -72,7 +72,7 @@ Once you've added Update Compliance to Microsoft Operations Management Suite, yo
 
 ## Use Device Health to monitor frequency and causes of device crashes
 
-Once your devices are enrolled, you can move on to [Use Device Health](device-health-using.md).
+Once your devices are enrolled, you can move on to [Using Device Health](device-health-using.md).
 
 
 ## Related topics
