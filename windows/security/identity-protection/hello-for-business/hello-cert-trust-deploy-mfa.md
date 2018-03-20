@@ -6,10 +6,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: DaniHalfin
-ms.localizationpriority: high
-ms.author: daniha
-ms.date: 07/27/2017
+author: mikestephens-MS
+ms.author: mstephen
+localizationpriority: high
+ms.date: 03/5/2018
 ---
 # Configure or Deploy Multifactor Authentication Services
 
@@ -523,7 +523,7 @@ Before you continue with the deployment, validate your deployment progress by re
 * Confirm you saved the changes to the web.config file.
 * Confirm you restarted the AD FS Service after completing the configuration.
 
-## Test AD FS with the Multifactor Authentication connector
+## Test Multifactor Authentication
 
 Now, you should test your Azure Multi-Factor Authentication server configuration before proceeding any further in the deployment.  The AD FS and Azure Multi-Factor Authentication server configurations are complete.
 
