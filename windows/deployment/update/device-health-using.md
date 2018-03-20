@@ -100,11 +100,11 @@ The default view includes the **Devices with events** count, which shows the num
 
 ![Main App Reliability view](images/app-reliability-main.png)
 
-When you click a particular app, the detailed **App reliability** view opens:
+When you click a particular app, the detailed **App reliability** view opens. The first element in the view is the App Information summary:
 
 ![App reliability view with columns for app name, publisher, devices with usage, devices with events, percentage of devices with events logged for that app, and percentage of devices with events as a "commercial average"](images/app-reliability-app-detail.png)
 
-The App Reliability view starts with the App Information summary, and contains the following:
+This table contains:
 
 - App name
 - Publisher
@@ -133,9 +133,10 @@ The next element in the view is the App and OS versions table:
 
 This table breaks out the metrics by combinations of App and OS version. This enables you to identify patterns in that might indicate devices needing an update or configuration change.
 
-For example, if the table shows that a later version of an App is more reliable than an earlier version in your environment, then prioritizing deployment of the later version is likely the best path forward. However, if you are already running the latest version of the app, but reliability events are increasing, you might need to do some troubleshooting, or seek support from Microsoft or the app vendor.
+For example, if the table shows that a later version of an app is more reliable than an earlier version in your environment, then prioritizing deployment of the later version is likely the best path forward. If you are already running the latest version of the app, but reliability events are increasing, then you might need to do some troubleshooting, or seek support from Microsoft or the app vendor.
 
-By default the table is limited to themost used version combinations in your environment. To see all version combinations click anywhere in the table.
+By default the table is limited to the most-used version combinations in your environment. To see all version combinations click anywhere in the table.
+
 
 #### Reliability event history table
 
@@ -143,31 +144,27 @@ The next element in the view is the reliability event history table:
 
 ![event history view](images/app-reliability-event-history.png)
 
-This table shows the most detailed information available. Although Device Health is not a debugging tool, the details available in this table can help with troubleshooting by providing the specific devices, versions, and dates of the reliability events.
+This table shows the most detailed information. Although Device Health is not a debugging tool, the details available in this table can help with troubleshooting by providing the specific devices, versions, and dates of the reliability events.
 
-This view also includes the **Diagnostic Signature** column. This value can be helpful when you are working with product support or troubleshooting on your own. The value is the same one (also known as Failure ID or Failure Name) that is used to summarize crash statistics for Microsoft and partner developers.
+This view also includes the **Diagnostic Signature** column. This value can be helpful when you are working with product support or troubleshooting on your own. The value (also known as Failure ID or Failure Name) is the same identifier used to summarize crash statistics for Microsoft and partner developers.
 
 The Diagnostic Signature value contains the type of reliability event, error code, DLL name, and function name involved. You can use this information to narrow the scope of troubleshooting. For example, a value like *APPLICATION_HANG_ThreadHang_Contoso-Add-In.dll!GetRegistryValue()* implies that the app stopped responding when Contoso-Add-In was trying to read a registry value. In this case you might prioritize updating or disabling the add-in, or using Process Monitor to identify the registry value it was trying to read, which could lead to a resolution through antivirus exclusions, fixing missing keys, or similar remedies.
+
 
 By default the table is limited to a few recent rows. To see all rows click anywhere in the table.
 
 
-The Diagnostic Signature value contains the type of reliability event, error code, DLL name, and function name involved. You can use this information to drastically narrow the scope of troubleshooting. For example, a value like *APPLICATION_HANG_ThreadHang_Contoso-Add-In.dll!GetRegistryValue()* implies that the app stopped responding when Contoso-Add-In was trying to read a registry value. In this case you might prioritize updating or disabling the add-in, or using Process Monitor to identify the registry value it was trying to read, which could lead to a resolution through antivirus exclusions, fixing missing keys, or similar remedies.
-
 ### FAQs and limitations
 
 #### Why does a particular app not appear in the views?
-When we allow reliability events from all processes to populate the list, it fills with noisy processes which don't feel like meaningful end-user Apps (for example, taskhost.exe or odd-test-thing.exe). In order to draw focus to the apps which matter most to users, App Reliability uses a series of filters to limit what appears in the list. The filter criteria include the following:
+When we allow reliability events from all processes, the list of apps fills with noisy processes which don't feel like meaningful end-user apps (for example, taskhost.exe or odd-test-thing.exe). In order to draw focus to the apps which matter most to users, App Reliability uses a series of filters to limit what appears in the list. The filter criteria include the following:
 
-- Filter out processes which have no detected user interaction (for example, background tasks).
+- Filter out background processes which have no detected user interaction.
 - Filter out operating system processes which, despite having user interaction, do not feel like apps (for example, Logonui.exe, Winlogon.exe).
+ - Known limitation: Some processes which may feel like apps are not currently detected as such (and are therefore filtered out as OS processes). These include explorer.exe, iexplore.exe, microsoftedge.exe, and several others.
 - Remove apps which are not widely used in your environment.
+ - Known limitation: This may result in an app that you consider important being filtered out when that app is not among the 30 most widely used in your environment.
 
-The filters' ability to identify meaningful apps currently has limitations. For example:
-
-- Needs further tuning: Iexplore.exe, Microsoftedge.exe, and several other processes are currently tagged as operating system processes (and are therefore filtered out) even though they feel like apps.
-- By design: Explorer.exe (the process behind the operating system shell, Taskbar, File Explorer, and more) is an operating system process with some app-like characteristics. Currently the filter leaves this tagged as an operating system process and it is filtered out.
-- By design: Apps which are not among the top 30 most-used apps (by device count) in your environment are filtered out--this can result in an app that you consider important being filtered.
 
 We welcome your suggestions and feedback on this filtering process at the [Device Health Tech Community](https://aka.ms/community/DeviceHealth). [WHY NOT FEEDBACK HUB?]
 
@@ -195,17 +192,18 @@ For example:
 
 ## Login Health
 
-Login Health provides reports on a variety of data related to login attempts on devices in your environment, including metrics on the login methods being used (such as Windows Hello, face recognition, fingerprint recognition, PIN, or password), the rates and patterns of login success and failure, and the specific reasons logins have failed.
+Login Health provides reports on Windows login attempts in your environment, including metrics on the login methods being used (such as Windows Hello, face recognition, fingerprint recognition, PIN, or password), the rates and patterns of login success and failure, and the specific reasons logins have failed.
 
-To open the default view, [CLICK SOMETHING]:
+The Login Health blades appear in the Device Health dashboard:
+
 
 ![Main Login health view](images/login-health.png)
 
 ### Login Errors
-The **Login errors** blade displays data on the frequency and type of errors, with statistics on specific errors. They are generally categorized into user-generated or non-user-generated errors. Click any individual error to see all instances of the error's occurence for the specified time period.
+The **Login errors** blade displays data on the frequency and type of errors, with statistics on specific errors. They are generally categorized into user-generated (caused by bad input) or non-user-generated (might need IT intervention) errors. Click any individual error to see all instances of the error's occurence for the specified time period.
 
 ### Login Metrics by Type
-The **Login metrics by type** blade shows the success rate for logins, as well as the same number for deployments with a mix of operating system versions and device models that is similar to yours (the **Commercial average success rate**).
+The **Login metrics by type** blade shows the success rate for your devices, as well as the success rate for other environments with a mix of operating system versions and device models tsimilar to yours (the **Commercial average success rate**).
 
 In the table (by type) you can gauge how broadly each login type is attempted, the number of devices that prefer the type (most used), and the success rate. If migration from passwords to an alternative such as Hello: PIN is going well, you would see high usage and high success rates for the new type.
 
@@ -221,7 +219,7 @@ Click a specific login error in this view to see a list of all instances for tha
 
 Included in this view are device attributes and error attributes such as the following:
 
-- LogonStatus/LogonSubStatus: These are the top or lower level statuses the credential framework returns. [UNCLEAR WHAT THIS MEANS] 
+- LogonStatus/LogonSubStatus: Status code for the login attempt
 - SignInFailureReason: Known failure reasons evaluated from status or sub-status.
 - SuggestedSignInRemediation: Suggested remediation that was presented to the user at the time of error.
 
