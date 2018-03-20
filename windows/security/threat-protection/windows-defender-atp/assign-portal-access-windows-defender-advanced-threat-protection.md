@@ -88,3 +88,6 @@ For more information see, [Manage Azure AD group and role membership](https://te
 
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-portalaccess-belowfoldlink)
+
+## Related topic
+- [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md)
