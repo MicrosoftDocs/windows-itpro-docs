@@ -187,8 +187,44 @@ For example:
 *DHAppReliability|where AppFileDisplayName == "Microsoft Outlook"*
 
 
-
 ## Login Health
+
+Login Health provides reports on a variety of data related to login attempts on devices in your environment, including metrics on the login methods being used (such as Windows Hello, face recognition, fingerprint recognition, PIN, or password), the rates and patterns of login success and failure, and the specific reasons logins have failed.
+
+To open the default view, [CLICK SOMETHING]:
+
+![Main Login health view](images/login-health.png)
+
+### Login Errors
+The **Login errors** blade displays data on the frequency and type of errors, with statistics on specific errors. They are generally categorized into user-generated or non-user-generated errors. Click any individual error to see all instances of the error's occurence for the specified time period.
+
+### Login Metrics by Type
+The **Login metrics by type** blade shows the success rate for logins, as well as the same number for deployments with a mix of operating system versions and device models that is similar to yours (the **Commercial average success rate**).
+
+In the table (by type) you can gauge how broadly each login type is attempted, the number of devices that prefer the type (most used), and the success rate. If migration from passwords to an alternative such as Hello: PIN is going well, you would see high usage and high success rates for the new type.
+
+Click any of the login types to see detailed login health data for that type:
+
+![Login type detail](images/login-health-detail.png)
+
+This view shows trends over time of usage, preferred credentials, and success rate along with the most frequent errors and frequently failing devices for that login type.
+
+Click a specific login error in this view to see a list of all instances for that error and login type within the specified time range:
+
+![Login error detail](images/login-health-detail-failure.png)
+
+Included in this view are device attributes and error attributes such as the following:
+
+- LogonStatus/LogonSubStatus: These are the top or lower level statuses the credential framework returns. [UNCLEAR WHAT THIS MEANS] 
+- SignInFailureReason: Known failure reasons evaluated from status or sub-status.
+- SuggestedSignInRemediation: Suggested remediation that was presented to the user at the time of error.
+
+The filters in the left pane allow you to filter errors to a particular operating system, device model, or other parameters. Alternatively, clicking the most frequently failing models from the Login Health perspective will take you to a list of error instances filtered to the login type and specified device model within the specified time range.
+
+>[!NOTE]
+> Windows Hello: Face authentication errors are not currently included in the login health reports.
+
+
 
 
 ## Windows Information Protection
