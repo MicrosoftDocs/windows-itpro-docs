@@ -46,7 +46,6 @@ Windows Defender ATP makes it easy to create a Power BI dashboard by providing a
 
     ![Image of loading](images/atp-loading.png)
 
-
     >[!NOTE]
     >Loading your data in the Power BI service can take a few minutes.
 
