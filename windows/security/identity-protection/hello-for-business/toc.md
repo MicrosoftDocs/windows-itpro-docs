@@ -44,3 +44,4 @@
 #### [Configure Windows Hello for Business Policy settings](hello-cert-trust-policy-settings.md)
 
 ## [Windows Hello for Business Features](hello-features.md)
+### [Multifactor Unlock](feature-multifactor-unlock.md)
