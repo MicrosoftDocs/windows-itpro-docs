@@ -20,7 +20,7 @@ Before you deploy Office 2013 with App-V, review the following planning informat
 
 ### Supported Office versions and Office coexistence
 
-Use the following table to get information about supported versions of Office and running coexisting versions of Office.
+The following table will direct you to more information about which versions of Office App-V supports and how to run App-V with coexisting versions of Office.
 
 |Information to review|Description|
 |---|---|
@@ -156,7 +156,7 @@ Complete the following steps to create an Office 2013 package for App-V or later
 
 ### Review prerequisites for using the Office Deployment Tool
 
-The computer on which you are installing the Office Deployment Tool must have:
+Before you start, make sure that the computer on which you are installing the Office Deployment Tool has the following:
 
 |Prerequisite|Description|
 |---|---|
@@ -200,7 +200,7 @@ Create Office 2013 App-V packages on 64-bit Windows computers. Once created, the
 
 ### Download the Office Deployment Tool
 
-Office 2013 App-V Packages are created using the Office Deployment Tool, which generates an Office 2013 App-V Package. The package cannot be created or modified through the App-V sequencer. To begin package creation:
+Office 2013 App-V Packages are created using the Office Deployment Tool, which generates an Office 2013 App-V Package. The App-V sequencer can't create or modify packages. To create a package:
 
 1. Download the [Office 2013 Deployment Tool for Click-to-Run](http://www.microsoft.com/download/details.aspx?id=36778).
 2. Run the .exe file and extract its features into the desired location. To make this process easier, you can create a shared network folder where the features will be saved.
