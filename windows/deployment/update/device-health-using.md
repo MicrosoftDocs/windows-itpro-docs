@@ -141,13 +141,50 @@ For example, if the table shows that a later version is more reliable than an ea
 
 ![event history view](images/app-reliability-event-history.png)
 
-This table shows the most granular information available in the view. While Device Health is not a debugging tool, the details available in Reliability Event History are meant to boost troubleshooting efforts by providing the specific devices, versions, and dates of the crashes or hangs.
-This table also contains the Diagnostic Signature column. When engaging support this value can be helpful in tying your situation to any known issues. The value is the same one (also known as Failure ID or Failure Name) used to summarize crash statistics for Microsoft and 3rd party developers.
-The Diagnostic Signature value can also be helpful for troubleshooting on your own. It contains the type of reliability event, error code, DLL name, and function name. This information can drastically narrow the scope of troubleshooting.  For example a value like APPLICATION_HANG_ThreadHang_Contoso-Add-In.dll!GetRegistryValue() implies that the app stopped responding when Contoso-Add-In was trying to read a registry value and got stuck. In this case you might prioritize updating/disabling the add-in, or using procmon to identify what registry value it was trying to read. This may lead to a resolution through antivirus exclusions, fixing missing keys, etc.
+This view shows the most detailed information available. Although Device Health is not a debugging tool, the details available in the reliability event history view can help with troubleshooting by providing the specific devices, versions, and dates of the reliability events.
+
+This view also includes the **Diagnostic Signature** column. This value can be helpful when you are working with product support. The value is the same one (also known as Failure ID or Failure Name) that is used to summarize crash statistics for Microsoft and partner developers.
+
+The Diagnostic Signature value contains the type of reliability event, error code, DLL name, and function name involved. You can use this information to drastically narrow the scope of troubleshooting. For example, a value like *APPLICATION_HANG_ThreadHang_Contoso-Add-In.dll!GetRegistryValue()* implies that the app stopped responding when Contoso-Add-In was trying to read a registry value. In this case you might prioritize updating or disabling the add-in, or using Process Monitor to identify the registry value it was trying to read, which could lead to a resolution through antivirus exclusions, fixing missing keys, or similar remedies.
+
+### FAQs and limitations
+
+#### Why does a particular app not appear in the views?
+To eliminate noise from apps that would appear frequently but not offer any useful data (for example, taskhost.exe) and to draw focus to the apps which matter most to users, App Reliability uses series of filters to limit what appears in the list. The filter criteria include the following:
+
+- Filter out processes which have no detected user interaction (for example, background tasks).
+- Filter out operating system processes which, despite having user interaction, do not feel like apps (for example, Logonui.exe, Winlogon.exe).
+- Remove apps which are not widely used in your environment (for example, apps that appear to be for testing or have use on only one device).
+
+The filters' ability to identify these processes currently has certain limitations. For example:
+
+- Iexplore.exe, Microsoftedge.exe, and several others apps are tagged as operating system processes (and are therefore filtered out) even though they feel to users like apps.
+- Explorer.exe (the process behind the operating system shell, Taskbar, File Explorer, and more) is an operating system process with some app-like characteristics. Currently the filter (by design) leaves this tagged as an operating system process and it is filtered out.
+- Apps which are not among the top 30 most-used apps (by device count) in your environment are filtered out--this can result in an app that you consider important being filtered.
+
+We welcome your suggestions and feedback on this filtering process at the [Device Health Tech Community](https://aka.ms/community/DeviceHealth). [WHY NOT FEEDBACK HUB?]
+
+#### Why are there multiple names and entries for the same app?
+For example, you might see *Skype for Business*, *‘skype for business’*, and *Lync* listed separately, but you only use *Skype for Business*. Or you might see *MyApp Pro* and *MyApp Professional* listed separately, even though they are the same thing.
+
+Apps have many elements of metadata which describe them. These include an Add/Remove programs title (“Contoso Suite 12”), executable file names (“ContosoCRM.exe”), executable display name (“Contoso CRM”), and others. App publishers (and in some cases app re-packagers) set these values. For the most part we leave the data as-is which can lead to some duplication. In certain cases we apply transformations to reduce this duplication.
+
+We welcome your suggestions and feedback on this deduplication process at the [Device Health Tech Community](https://aka.ms/community/DeviceHealth). [WHY NOT FEEDBACK HUB?]
+
+#### Clicking an app in the App Reliability Events blade sometimes results a List view of records instead of the App Reliability view
+To work around this, click the **App Reliability** tab above the results to see the expected view.
+ 
+![Click app reliability tab](images/app-reliability-tab.png)
 
 
+#### Clicking "See all…" from the App Reliability Events blade followed by clicking an app from the expanded list results in raw records instead of the App Reliability view
+To work around this, replace all of the text in the Log Search query box with the following:
 
+*DHAppReliability|where AppFileDisplayName == "<Name of app as it appeared in the list>"*
 
+For example:
+
+*DHAppReliability|where AppFileDisplayName == "Microsoft Outlook"*
 
 
 
