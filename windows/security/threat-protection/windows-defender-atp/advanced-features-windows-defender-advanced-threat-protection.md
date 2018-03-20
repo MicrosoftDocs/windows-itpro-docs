@@ -94,9 +94,8 @@ When you enable this feature, you'll be able to share Windows Defender ATP devic
 3. Click **Save preferences**.
 
 ## Related topics
-- [Update general settings in Windows Defender ATP](general-settings-windows-defender-advanced-threat-protection.md)
-- [Turn on the preview experience in Windows Defender ATP](preview-settings-windows-defender-advanced-threat-protection.md)
-- [Configure email notifications in Windows Defender ATP](configure-email-notifications-windows-defender-advanced-threat-protection.md)
-- [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-- [Enable the custom threat intelligence API in Windows Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
-- [Create and build Power BI reports](powerbi-reports-windows-defender-advanced-threat-protection.md)
+- [Update data retention settings](general-settings-windows-defender-advanced-threat-protection.md)
+- [Configure alert notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)
+- [Configure automation notifications](configure-automation-notifications-windows-defender-advanced-threat-protection.md)
+- [Enable and create Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
+- [Enable Secure score security controls](enable-security-analytics-windows-defender-advanced-threat-protection.md)
