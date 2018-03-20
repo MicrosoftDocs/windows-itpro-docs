@@ -279,7 +279,7 @@ The Group Policy object contains the policy settings needed to trigger Windows H
  ## Troubleshooting
 Mulitfactor unlock writes events to event log under **Application and Services Logs\Microsoft\Windows\HelloForBusiness** with the category name **Device Unlock**.
 
-### Events 
+**Events **
 |Event ID|Details|
 |:********:|:*******|
 |3520|Unlock attempt initiated|
