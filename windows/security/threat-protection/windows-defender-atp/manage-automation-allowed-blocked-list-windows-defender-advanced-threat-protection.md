@@ -69,5 +69,5 @@ You can define the conditions for when entities are identified as malicious or s
 
 
 ## Related topics
-- Automation file uploads
-- Automation folder exclusions
+- [Manage automation file uploads](manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
+- [Manage automation folder exclusions](manage-automation-folder-exclusions-windows-defender-advanced-threat-protection.md)

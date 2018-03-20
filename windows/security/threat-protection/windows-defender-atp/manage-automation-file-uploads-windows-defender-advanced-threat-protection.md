@@ -46,5 +46,5 @@ For example, if you add *exe* and *bat* as file or attachment extension names, t
 
 
 ## Related topics
-- Automation allowed/blocked lists
-- Automation folder exclusions
+- [Manage automation allowed/blocked lists](manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
+- [Manage automation folder exclusions](manage-automation-folder-exclusions-windows-defender-advanced-threat-protection.md)
