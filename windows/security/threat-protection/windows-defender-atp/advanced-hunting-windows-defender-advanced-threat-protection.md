@@ -143,6 +143,14 @@ You can refine your query based on the filter by clicking the "+" or "-" buttons
 
 The filter selections will resolve as an additional query term and the results will be updated accordingly.
 
+## Query best practices
+- Use time filters first. Kusto is highly optimized to utilize time filters.
+- Put filters that are expected to remove most of the data in the beginning of the query, following the time filter.
+- Prefer 'has' keyword over 'contains' when looking for full tokens.
+- Prefer looking in specific column rather than using full text search accross all columns.
+- When joining between two tables - choose the table with less rows to be the first one (left-most). 
+- When joining between two tables - project only needed columns from both sides of the join.
+
 ## Public Advanced Hunting query GitHub repository  
 Check out the [Advanced Hunting repository](https://github.com/Microsoft/Advanced-Hunting-Queries). Contribute and use example queries shared by our customers. 
 
