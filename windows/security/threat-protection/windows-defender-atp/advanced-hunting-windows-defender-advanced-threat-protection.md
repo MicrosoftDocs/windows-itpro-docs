@@ -130,7 +130,7 @@ The results set has several capabilities to provide you with effective investiga
 - Columns that return entity-related objects, such as Machine name, Machine ID, File name, SHA1, User, IP, and URL, are linked to their entity pages in the Windows Defender ATP portal.
 - You can right-click on a cell in the results set and add a filter to your written query. The current filtering options are **include**, **exclude** or **advanced filter**, which provides additional filtering options on the cell value. These cell values are part of the row set. 
 
-![Image of Windows Defender ATP advanced hunting results set](images/atp-advanced-hunting-results-set.png)
+![Image of Windows Defender ATP advanced hunting results set](images/atp-advanced-hunting-results-filter.png)
 
 ## Filters on results in advanced hunting
 In advanced hunting, you can use the advanced filter on the output results set of the query. 
