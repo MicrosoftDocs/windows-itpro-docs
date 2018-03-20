@@ -63,7 +63,7 @@ The following image shows the ClientCertificateInstall configuration service pro
 
 
 <a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-containername"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/ContainerName**  
-<p style="margin-left: 20px">ptional. Specifies the Windows Hello for Business (formerly known as Microsoft Passport for Work) container name (if Windows Hello for Business storage provider (KSP) is chosen for the KeyLocation). If this node is not specified when Windows Hello for Business KSP is chosen, enrollment will fail.
+<p style="margin-left: 20px">Optional. Specifies the Windows Hello for Business (formerly known as Microsoft Passport for Work) container name (if Windows Hello for Business storage provider (KSP) is chosen for the KeyLocation). If this node is not specified when Windows Hello for Business KSP is chosen, enrollment will fail.
 
 <p style="margin-left: 20px">Date type is string.
 
