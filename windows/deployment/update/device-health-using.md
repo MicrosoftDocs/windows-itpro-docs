@@ -4,7 +4,7 @@ description: Explains how to begin usihg Device Health.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.date: 10/10/2017
+ms.date: 03/21/20178
 ms.pagetype: deploy
 author: jaimeo
 ---
