@@ -160,13 +160,11 @@ By default the table is limited to a few recent rows. To see all rows click anyw
 When we allow reliability events from all processes, the list of apps fills with noisy processes which don't feel like meaningful end-user apps (for example, taskhost.exe or odd-test-thing.exe). In order to draw focus to the apps which matter most to users, App Reliability uses a series of filters to limit what appears in the list. The filter criteria include the following:
 
 - Filter out background processes which have no detected user interaction.
-- Filter out operating system processes which, despite having user interaction, do not feel like apps (for example, Logonui.exe, Winlogon.exe).
- - Known limitation: Some processes which may feel like apps are not currently detected as such (and are therefore filtered out as OS processes). These include explorer.exe, iexplore.exe, microsoftedge.exe, and several others.
-- Remove apps which are not widely used in your environment.
- - Known limitation: This may result in an app that you consider important being filtered out when that app is not among the 30 most widely used in your environment.
+- Filter out operating system processes which, despite having user interaction, do not feel like apps (for example, Logonui.exe, Winlogon.exe). **Known limitation:** Some processes which may feel like apps are not currently detected as such (and are therefore filtered out as OS processes). These include Explorer.exe, Iexplore.exe, Microsoftedge.exe, and several others.
+- Remove apps which are not widely used in your environment. **Known limitation:** This might result in an app that you consider important being filtered out when that app is not among the 30 most widely used in your environment.
 
 
-We welcome your suggestions and feedback on this filtering process at the [Device Health Tech Community](https://aka.ms/community/DeviceHealth). [WHY NOT FEEDBACK HUB?]
+We welcome your suggestions and feedback on this filtering process at the [Device Health Tech Community](https://aka.ms/community/DeviceHealth).
 
 #### Why are there multiple names and entries for the same app?
 For example, you might see *Skype for Business*, *‘skype for business’*, and *Lync* listed separately, but you only use *Skype for Business*. Or you might see *MyApp Pro* and *MyApp Professional* listed separately, even though they feel like the same thing.
@@ -220,8 +218,8 @@ Click a specific login error in this view to see a list of all instances for tha
 Included in this view are device attributes and error attributes such as the following:
 
 - LogonStatus/LogonSubStatus: Status code for the login attempt
-- SignInFailureReason: Known failure reasons evaluated from status or sub-status.
-- SuggestedSignInRemediation: Suggested remediation that was presented to the user at the time of error.
+- SignInFailureReason: Known failure reasons evaluated from status or sub-status
+- SuggestedSignInRemediation: Suggested remediation that was presented to the user at the time of error
 
 The filters in the left pane allow you to filter errors to a particular operating system, device model, or other parameters. Alternatively, clicking the most frequently failing models from the Login Health perspective will take you to a list of error instances filtered to the login type and specified device model within the specified time range.
 
