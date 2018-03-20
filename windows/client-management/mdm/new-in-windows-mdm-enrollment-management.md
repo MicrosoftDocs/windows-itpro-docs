@@ -1658,10 +1658,15 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Connectivity/AllowPhonePCLinking</li>
 <li>RestrictedGroups/ConfigureGroupMembership</li>
 </ul>
-<p>The following policy was updated in Windows 10, version 1803:</p>
+<p>The following existing policies were updated:</p>
 <ul>
-<li>TextInput/AllowIMENetworkAccess - when this policy is set to 1, suggestions from the Microsoft AI chatbot Rinna are enabled in the Japanese IME.</li>
+<li>InternetExplorer/AllowSiteToZoneAssignmentList - updated the description and added an example SyncML</li>
+<li>TextInput/AllowIMENetworkAccess - introduced new suggestion services in Japanese IME in addition to cloud suggestion.</li>
 </ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Policy CSP - Bluetooth](policy-csp-bluetooth.md)</td>
+<td style="vertical-align:top"><p>Added new section [ServicesAllowedList usage guide](policy-csp-bluetooth.md#servicesallowedlist-usage-guide).</p>
 </td></tr>
 </tbody>
 </table>
