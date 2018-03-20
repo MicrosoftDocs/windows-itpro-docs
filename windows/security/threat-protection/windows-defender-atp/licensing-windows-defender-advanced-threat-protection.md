@@ -133,5 +133,5 @@ When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.
 	![Image of onboard endpoints](images\atp-onboard-endpoints-WDATP-portal.png)
 
 ## Related topics
-- [Onboard and set up Windows Defender Advanced Threat Protection](onboard-configure-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot onboarding process and error messages](troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
+- [Onboard machines to the Windows Defender Advanced Threat Protection service](onboard-configure-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot onboarding process and portal access issues](troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)

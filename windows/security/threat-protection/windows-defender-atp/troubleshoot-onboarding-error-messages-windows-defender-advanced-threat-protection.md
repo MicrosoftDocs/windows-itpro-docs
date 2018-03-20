@@ -73,4 +73,4 @@ You'll need to whitelist the `security.windows.com` and all sub-domains under it
 
 
 ## Related topics
-- [Validating licensing provisioning and completing setup for Windows Defender ATP](licensing-windows-defender-advanced-threat-protection.md)
+- [Validate licensing provisioning and complete setup for Windows Defender ATP](licensing-windows-defender-advanced-threat-protection.md)
