@@ -42,8 +42,8 @@ The following image shows the conditional access flow in action:
 
 1. A user opens a malicious file and Windows Defender ATP flags the device as high risk.
 2. The high risk assessment is passed along to Intune. In parallel, an automated investigation is initiated to remediate the identified threat. A manual remediation can also be done to remediate the identified threat.
-3. Based on the policy created in Intune, the device is marked as not compliant. The assessment is then communicated to Azure AD. In Azure AD, the corresponding policy is applied to block access to applications.
-4. The manual or automated investigation and remediation is completed and the threat is removed. Windows Defender ATP sees the device as low risk and Intune assesses the device to be in a compliant state. Azure AD applies the policy which allows access to applications.
+3. Based on the policy created in Intune, the device is marked as not compliant. The assessment is then communicated to Azure AD by the Intune conditional access policy. In Azure AD, the corresponding policy is applied to block access to applications.
+4. The manual or automated investigation and remediation is completed and the threat is removed. Windows Defender ATP sees that there is no risk on the device and Intune assesses the device to be in a compliant state. Azure AD applies the policy which allows access to applications.
 5. Users can now access applications.
 
 
