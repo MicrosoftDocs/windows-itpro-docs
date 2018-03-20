@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 03/16/2018
+ms.date: 03/20/2018
 ---
 
 # Frequently asked questions and troubleshooting Windows Analytics
@@ -25,7 +25,7 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 
 [Upgrade Readiness reports outdated updates](#upgrade-readiness-reports-outdated-updates)
 
-[Upgrade Readiness reports incomplete inventory](#upgrade-readiness-reports-incomplete-inventory)
+[Upgrade Readiness shows many "Computers with outdated KB"](#upgrade-readiness-shows-many-computers-with-outdated-kb)
 
 [Upgrade Readiness doesn't show app inventory data on some devices](#upgrade-readiness-doesnt-show-app-inventory-data-on-some-devices)
 
@@ -176,9 +176,23 @@ Windows Analytics is fully committed to privacy, centering on these tenets:
 - **Security:** Your data is protected with strong security and encryption
 - **Trust:** Windows Analytics supports the Microsoft Online Service Terms
 
+The following illustration shows how diagnostic data flows from individual devices through the Diagnostic Data Service, Azure Log Analytics storage, and to your Log Analytics workspace:
+
+[![Diagram illustrating flow of diagnostic data from devices](images/WA-data-flow-v1.png)](images/WA-data-flow-v1.png)
+
+The data flow sequence is as follows:
+
+1.	Diagnostic data is sent from devices to the Microsoft Diagnostic Data Management service, which is hosted in the US.
+2.	An IT administrator creates an Azure Log Analytics workspace. The administrator chooses the location, copies the Commercial ID (which identifies that workspace), and then pushes Commercial ID to devices they want to monitor. This is the mechanism that specifies which devices appear in which workspaces.
+3.	Each day Microsoft produces a "snapshot" of IT-focused insights for each workspace in the Diagnostic Data Management service.
+4.	These snapshots are copied to transient storage which is used only by Windows Analytics (also hosted in US data centers) where they are segregated by Commercial ID.
+5.	The snapshots are then copied to the appropriate Azure Log Analytics workspace.
+6.	If the IT administrator is using the Upgrade Readiness solution, user input from the IT administrator (specifically, the target operating system release and the importance and upgrade readiness per app) is stored in the Windows Analytics Azure Storage. (Upgrade Readiness is the only Windows Analytics solution that takes such user input.)
+
+
 See these topics for additional background information about related privacy issues:
 
-- [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windowsconfiguration/configure-windows-diagnostic-data-in-your-organization)
+- [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization)
 - [Windows 7, Windows 8, and Windows 8.1 Appraiser Telemetry Events, and Fields](https://go.microsoft.com/fwlink/?LinkID=822965) (link downloads a PDF file)
 - [Windows 10, version 1703 basic level Windows diagnostic events and fields](https://docs.microsoft.com/windows/configuration/basic-level-windows-diagnostic-events-and-fields-1703)
 - [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](https://docs.microsoft.com/windows/configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields)

@@ -1658,6 +1658,15 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Connectivity/AllowPhonePCLinking</li>
 <li>RestrictedGroups/ConfigureGroupMembership</li>
 </ul>
+<p>The following existing policies were updated:</p>
+<ul>
+<li>InternetExplorer/AllowSiteToZoneAssignmentList - updated the description and added an example SyncML</li>
+<li>TextInput/AllowIMENetworkAccess - introduced new suggestion services in Japanese IME in addition to cloud suggestion.</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Policy CSP - Bluetooth](policy-csp-bluetooth.md)</td>
+<td style="vertical-align:top"><p>Added new section [ServicesAllowedList usage guide](policy-csp-bluetooth.md#servicesallowedlist-usage-guide).</p>
 </td></tr>
 </tbody>
 </table>
