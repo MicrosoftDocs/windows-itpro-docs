@@ -38,20 +38,20 @@ You might need to control a limited number of apps because they access sensitive
 
 | Possible answers | Design considerations|
 | - | - |
-| Control all apps | WDAC policies control applications by creating an allowed list of applications by file type. Exceptions are also possible. WDAC policies can only be applied to applications installed on computers running Windows 10 . |
+| Control all apps | WDAC policies control applications by creating an allowed list of applications. Exceptions are also possible. WDAC policies can only be applied to applications installed on computers running Windows 10 . |
 | Control specific apps | When you create WDAC rules, a list of allowed apps are created. All apps on that list will be allowed to run (except those on the exception list). Apps that are not on the list will be prevented from running. WDAC policies can only be applied to apps installed on computers running Windows 10 or Windows Server 2016. |
-|Control only Classic Windows applications, only Universal Windows apps, or both| WDAC policies control apps by creating an allowed list of apps by file type. Because Universal Windows apps are categorized under the Publisher condition, Classic Windows applications and Universal Windows apps can be controlled together. WDAC policies for Universal Windows apps can be applied only to apps that are installed on PCs that support the Microsoft Store, but Classic Windows applications can be controlled with WDAC on Windows. The rules you currently have configured for Classic Windows applications can remain, and you can create new ones for Universal Windows apps.|
-| Control apps by business group and user | WDAC policies can be applied through a Group Policy Object (GPO) to computer objects within an organizational unit (OU). Individual WDAC rules can be applied to individual users or to groups of users.|
+|Control only Classic Windows applications, only Universal Windows apps, or both| WDAC policies control apps by creating an allowed list of apps based on code signing certificate and\or file hash information. Because Universal Windows apps are all signed by the Windows Store, Classic Windows applications and Universal Windows apps can be controlled together. WDAC policies for Universal Windows apps can be applied only to apps that are installed on PCs that support the Microsoft Store, but Classic Windows applications can be controlled with WDAC on Windows. The rules you currently have configured for Classic Windows applications can remain, and you can create new ones for Universal Windows apps.|
+| Control apps by business group | WDAC policies can be applied through a Group Policy Object (GPO) to computer objects within an organizational unit (OU). |
 | Control apps by computer, not user | WDAC is a computer-based policy implementation. If your domain or site organizational structure is not based on a logical user structure, such as an OU, you might want to set up that structure before you begin your WDAC planning. Otherwise, you will have to identify users, their computers, and their app access requirements.|
 |Understand app usage, but there is no need to control any apps yet | WDAC policies can be set to audit app usage to help you track which apps are used in your organization. You can then use teh CodeIntegrity log in Event Viewer to create WDAC policies.|
 
 ### How do you currently control app usage in your organization?
 
-Most organizations have evolved app control policies and methods over time. With heightened security concerns and an emphasis on tighter IT control over desktop use, your organization might decide to consolidate app control practices or design a comprehensive application control scheme. WDAC includes improvements over SRP in the architecture and management of application control policies.
+Most organizations have evolved app control policies and methods over time. With heightened security concerns and an emphasis on tighter IT control over desktop use, your organization might decide to consolidate app control practices or design a comprehensive application control scheme. WDAC includes improvements over AppLocker and SRP in the architecture and management of application control policies.
 
 | Possible answers | Design considerations |
 | - | - |
-| Security polices (locally set or through Group Policy) | Using WDAC requires increased effort in planning to create correct policies, but this results in a simpler distribution method.| 
+| Security polices (locally set or through Mobile Device Management (MDM) or Group Policy) | Using WDAC requires increased effort in planning to create correct policies, but this results in a simpler distribution method.| 
 | Non-Microsoft app control software | Using WDAC requires a complete app control policy evaluation and implementation.| 
 | Managed usage by group or OU | Using WDAC requires a complete app control policy evaluation and implementation.| 
 | Authorization Manager or other role-based access technologies | Using WDAC requires a complete app control policy evaluation and implementation.| 
