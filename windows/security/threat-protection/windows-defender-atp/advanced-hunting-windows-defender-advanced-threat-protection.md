@@ -130,7 +130,7 @@ The results set has several capabilities to provide you with effective investiga
 - Columns that return entity-related objects, such as Machine name, Machine ID, File name, SHA1, User, IP, and URL, are linked to their entity pages in the Windows Defender ATP portal.
 - You can right-click on a cell in the results set and add a filter to your written query. The current filtering options are **include**, **exclude** or **advanced filter**, which provides additional filtering options on the cell value. These cell values are part of the row set. 
 
-![Image of Windows Defender ATP advanced hunting results set](images/atp-advanced-hunting-results-set.png)
+![Image of Windows Defender ATP advanced hunting results set](images/atp-advanced-hunting-results-filter.png)
 
 ## Filters on results in advanced hunting
 In advanced hunting, you can use the advanced filter on the output results set of the query. 
@@ -142,6 +142,14 @@ You can refine your query based on the filter by clicking the "+" or "-" buttons
 ![Image of advanced hunting filter](images/atp-filter-advanced-hunting.png)
 
 The filter selections will resolve as an additional query term and the results will be updated accordingly.
+
+## Query best practices
+- Use time filters first. Kusto is highly optimized to utilize time filters.
+- Put filters that are expected to remove most of the data in the beginning of the query, following the time filter.
+- Prefer 'has' keyword over 'contains' when looking for full tokens.
+- Prefer looking in specific column rather than using full text search accross all columns.
+- When joining between two tables - choose the table with less rows to be the first one (left-most). 
+- When joining between two tables - project only needed columns from both sides of the join.
 
 ## Public Advanced Hunting query GitHub repository  
 Check out the [Advanced Hunting repository](https://github.com/Microsoft/Advanced-Hunting-Queries). Contribute and use example queries shared by our customers. 
