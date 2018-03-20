@@ -96,7 +96,7 @@ The App Reliability report shows you useful data on app usage and behavior so th
 
 ### App reliability events
 
-The default view includes the **Devices with events** count, which shows the number of devices in your organization that have logged a reliability event for a given app over the last 14 days. A "reliability event" occurs when an app either exits unexpectedly or stops responding.
+The default view includes the **Devices with events** count, which shows the number of devices in your organization that have logged a reliability event for a given app over the last 14 days. A "reliability event" occurs when an app either exits unexpectedly or stops responding. The table also includes a **Devices with Usage** count. This enables you to see how widely used the app was over the same period to put the Devices with Events count into perspective.
 
 ![Main App Reliability view](images/app-reliability-main.png)
 
@@ -104,7 +104,7 @@ When you click a particular app, the detailed **App reliability** view opens:
 
 ![App reliability view with columns for app name, publisher, devices with usage, devices with events, percentage of devices with events logged for that app, and percentage of devices with events as a "commercial average"](images/app-reliability-app-detail.png)
 
-The view shows the following information for a given app:
+The App Reliability view starts with the App Information summary, and contains the following:
 
 - App name
 - Publisher
@@ -113,63 +113,68 @@ The view shows the following information for a given app:
 - % with events: the ratio of "devices with events" to "devices with usage"
 - % with events (commercial average): the ratio of "devices with events" to "devices with usage" in data collected from deployments with a mix of operating system versions and device models that is similar to yours. This can help you decide if a given app is having problems specifically in your environment or more generally in many environments.
 
-#### Trend view
-[Click SOMETHING] to open the Trend view:
+#### Trend section
+Following the App Information summary is the trend section:
 
 ![Trend view](images/app-reliability-trend-view.png)
 
-This view shows the 14-day trend in the reported reliability events, so you can more easily detect if the issue is growing, shrinking, or steady. The graph on the left the trend in number of devices that logged any reliability event for the app. The graph on the right shows the trend in the the ratio of "devices with events" to "devices with usage."
+With these trend graphs you can more easily detect if an issue is growing, shrinking, or steady. The trend graph on the left shows the number of devices that logged any reliability event for the app. The trend graph on the right shows the ratio of "devices with events" to "devices with usage."
 
 Each graph displays two lines:
 
 - Trailing window: in this line, each day’s value reflects reliability events that occurred in the 14 days leading up to that day. This is useful for gauging the long-term trend with reduced volatility due to weekends and small populations.
 - Single day: Each day’s value reflects reliability events that occurred in a single day. This is useful if an issue is quickly emerging (or being resolved).
 
-#### App and OS versions view
-[Click SOMETHING] to open the App and OS versions view:
+#### App and OS versions table
+The next element in the view is the App and OS versions table:
 
 
 ![App/OS version view](images/app-reliability-app-OS-version.png)
 
-This view is essentially the same as the detailed **App reliability** view, but with columns showing the versions of the app and Windows, to make it easier for you to identify patterns in either that might indicate the need to update or change configurations.
+This table breaks out the metrics by combinations of App and OS version. This enables you to identify patterns in that might indicate devices needing an update or configuration change.
 
-For example, if the table shows that a later version is more reliable than an earlier version in your environment, then prioritizing deployment of the later version is likely the best path forward. However, if you are already running the latest version of the app, but reliability events are increasing, you might need to do some troubleshooting, or seek support from Microsoft or the app vendor.
+For example, if the table shows that a later version of an App is more reliable than an earlier version in your environment, then prioritizing deployment of the later version is likely the best path forward. However, if you are already running the latest version of the app, but reliability events are increasing, you might need to do some troubleshooting, or seek support from Microsoft or the app vendor.
 
-#### Reliability event history view
+By default the table is limited to themost used version combinations in your environment. To see all version combinations click anywhere in the table.
 
-[Click SOMETHING] to open the reliability event history view:
+#### Reliability event history table
+
+The next element in the view is the reliability event history table:
 
 ![event history view](images/app-reliability-event-history.png)
 
-This view shows the most detailed information available. Although Device Health is not a debugging tool, the details available in the reliability event history view can help with troubleshooting by providing the specific devices, versions, and dates of the reliability events.
+This table shows the most detailed information available. Although Device Health is not a debugging tool, the details available in this table can help with troubleshooting by providing the specific devices, versions, and dates of the reliability events.
 
-This view also includes the **Diagnostic Signature** column. This value can be helpful when you are working with product support. The value is the same one (also known as Failure ID or Failure Name) that is used to summarize crash statistics for Microsoft and partner developers.
+This view also includes the **Diagnostic Signature** column. This value can be helpful when you are working with product support or troubleshooting on your own. The value is the same one (also known as Failure ID or Failure Name) that is used to summarize crash statistics for Microsoft and partner developers.
+
+The Diagnostic Signature value contains the type of reliability event, error code, DLL name, and function name involved. You can use this information to narrow the scope of troubleshooting. For example, a value like *APPLICATION_HANG_ThreadHang_Contoso-Add-In.dll!GetRegistryValue()* implies that the app stopped responding when Contoso-Add-In was trying to read a registry value. In this case you might prioritize updating or disabling the add-in, or using Process Monitor to identify the registry value it was trying to read, which could lead to a resolution through antivirus exclusions, fixing missing keys, or similar remedies.
+
+By default the table is limited to a few recent rows. To see all rows click anywhere in the table.
+
 
 The Diagnostic Signature value contains the type of reliability event, error code, DLL name, and function name involved. You can use this information to drastically narrow the scope of troubleshooting. For example, a value like *APPLICATION_HANG_ThreadHang_Contoso-Add-In.dll!GetRegistryValue()* implies that the app stopped responding when Contoso-Add-In was trying to read a registry value. In this case you might prioritize updating or disabling the add-in, or using Process Monitor to identify the registry value it was trying to read, which could lead to a resolution through antivirus exclusions, fixing missing keys, or similar remedies.
 
 ### FAQs and limitations
 
 #### Why does a particular app not appear in the views?
-To eliminate noise from apps that would appear frequently but not offer any useful data (for example, taskhost.exe) and to draw focus to the apps which matter most to users, App Reliability uses series of filters to limit what appears in the list. The filter criteria include the following:
+When we allow reliability events from all processes to populate the list, it fills with noisy processes which don't feel like meaningful end-user Apps (for example, taskhost.exe or odd-test-thing.exe). In order to draw focus to the apps which matter most to users, App Reliability uses a series of filters to limit what appears in the list. The filter criteria include the following:
 
 - Filter out processes which have no detected user interaction (for example, background tasks).
 - Filter out operating system processes which, despite having user interaction, do not feel like apps (for example, Logonui.exe, Winlogon.exe).
-- Remove apps which are not widely used in your environment (for example, apps that appear to be for testing or have use on only one device).
+- Remove apps which are not widely used in your environment.
 
-The filters' ability to identify these processes currently has certain limitations. For example:
+The filters' ability to identify meaningful apps currently has limitations. For example:
 
-- Iexplore.exe, Microsoftedge.exe, and several others apps are tagged as operating system processes (and are therefore filtered out) even though they feel to users like apps.
-- Explorer.exe (the process behind the operating system shell, Taskbar, File Explorer, and more) is an operating system process with some app-like characteristics. Currently the filter (by design) leaves this tagged as an operating system process and it is filtered out.
-- Apps which are not among the top 30 most-used apps (by device count) in your environment are filtered out--this can result in an app that you consider important being filtered.
+- Needs further tuning: Iexplore.exe, Microsoftedge.exe, and several other processes are currently tagged as operating system processes (and are therefore filtered out) even though they feel like apps.
+- By design: Explorer.exe (the process behind the operating system shell, Taskbar, File Explorer, and more) is an operating system process with some app-like characteristics. Currently the filter leaves this tagged as an operating system process and it is filtered out.
+- By design: Apps which are not among the top 30 most-used apps (by device count) in your environment are filtered out--this can result in an app that you consider important being filtered.
 
 We welcome your suggestions and feedback on this filtering process at the [Device Health Tech Community](https://aka.ms/community/DeviceHealth). [WHY NOT FEEDBACK HUB?]
 
 #### Why are there multiple names and entries for the same app?
-For example, you might see *Skype for Business*, *‘skype for business’*, and *Lync* listed separately, but you only use *Skype for Business*. Or you might see *MyApp Pro* and *MyApp Professional* listed separately, even though they are the same thing.
+For example, you might see *Skype for Business*, *‘skype for business’*, and *Lync* listed separately, but you only use *Skype for Business*. Or you might see *MyApp Pro* and *MyApp Professional* listed separately, even though they feel like the same thing.
 
-Apps have many elements of metadata which describe them. These include an Add/Remove programs title (“Contoso Suite 12”), executable file names (“ContosoCRM.exe”), executable display name (“Contoso CRM”), and others. App publishers (and in some cases app re-packagers) set these values. For the most part we leave the data as-is which can lead to some duplication. In certain cases we apply transformations to reduce this duplication.
 
-We welcome your suggestions and feedback on this deduplication process at the [Device Health Tech Community](https://aka.ms/community/DeviceHealth). [WHY NOT FEEDBACK HUB?]
 
 #### Clicking an app in the App Reliability Events blade sometimes results a List view of records instead of the App Reliability view
 To work around this, click the **App Reliability** tab above the results to see the expected view.
@@ -180,11 +185,12 @@ To work around this, click the **App Reliability** tab above the results to see 
 #### Clicking "See all…" from the App Reliability Events blade followed by clicking an app from the expanded list results in raw records instead of the App Reliability view
 To work around this, replace all of the text in the Log Search query box with the following:
 
-*DHAppReliability|where AppFileDisplayName == "<Name of app as it appeared in the list>"*
+*DHAppReliability | where AppFileDisplayName == "<Name of app as it appeared in the list>"*
 
 For example:
 
-*DHAppReliability|where AppFileDisplayName == "Microsoft Outlook"*
+*DHAppReliability | where AppFileDisplayName == "Microsoft Outlook"*
+
 
 
 ## Login Health
