@@ -1147,6 +1147,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>AccountPoliciesAccountLockoutPolicy/AccountLockoutThreshold</li>
 <li>AccountPoliciesAccountLockoutPolicy/ResetAccountLockoutCounterAfter</li>
 <li>ApplicationDefaults/EnableAppUriHandlers</li>
+<li>ApplicationManagement/MSIAllowUserControlOverInstall</li>
+<li>ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges</li>
 <li>Browser/AllowConfigurationUpdateForBooksLibrary</li>
 <li>Browser/AlwaysEnableBooksLibrary</li>
 <li>Browser/EnableExtendedBooksTelemetry</li>
@@ -1659,6 +1661,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1803:</p>
 <ul>
 <li>ApplicationDefaults/EnableAppUriHandlers</li>
+<li>ApplicationManagement/MSIAllowUserControlOverInstall</li>
+<li>ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges</li>
 <li>Connectivity/AllowPhonePCLinking</li>
 <li>RestrictedGroups/ConfigureGroupMembership</li>
 </ul>

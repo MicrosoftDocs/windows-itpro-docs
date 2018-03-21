@@ -226,6 +226,12 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-applicationmanagement.md#applicationmanagement-disablestoreoriginatedapps" id="applicationmanagement-disablestoreoriginatedapps">ApplicationManagement/DisableStoreOriginatedApps</a>
   </dd>
   <dd>
+    <a href="./policy-csp-applicationmanagement.md#applicationmanagement-msiallowusercontroloverinstall" id="applicationmanagement-msiallowusercontroloverinstall">ApplicationManagement/MSIAllowUserControlOverInstall</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-applicationmanagement.md#applicationmanagement-msialwaysinstallwithelevatedprivileges" id="applicationmanagement-msialwaysinstallwithelevatedprivileges">ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-applicationmanagement.md#applicationmanagement-requireprivatestoreonly" id="applicationmanagement-requireprivatestoreonly">ApplicationManagement/RequirePrivateStoreOnly</a>
   </dd>
   <dd>
