@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 10/23/2017
+ms.date: 02/23/2018
 ---
 # Configure Device Registration for Hybrid Windows Hello for Business
 
@@ -495,8 +495,7 @@ For your reference, below is a comprehensive list of the AD DS devices, containe
 
 ![Device Registration](images/hybridct/device8.png) 
  
-- object of type serviceConnectionpoint at CN=&lt;guid&gt;, CN=Device Registration
-- Configuration,CN=Services,CN=Configuration,DC=&lt;domain&gt;  
+- object of type serviceConnectionpoint at CN=&lt;guid&gt;, CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=&lt;domain&gt;  
   - read/write access to the specified AD connector account name on the new object 
 - object of type msDS-DeviceRegistrationServiceContainer at CN=Device Registration Services,CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=&lt;domain&gt;
 - object of type msDS-DeviceRegistrationService in the above container
