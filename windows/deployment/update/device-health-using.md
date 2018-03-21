@@ -201,7 +201,7 @@ The Login Health blades appear in the Device Health dashboard:
 The **Login errors** blade displays data on the frequency and type of errors, with statistics on specific errors. They are generally categorized into user-generated (caused by bad input) or non-user-generated (might need IT intervention) errors. Click any individual error to see all instances of the error's occurence for the specified time period.
 
 ### Login Metrics by Type
-The **Login metrics by type** blade shows the success rate for your devices, as well as the success rate for other environments with a mix of operating system versions and device models tsimilar to yours (the **Commercial average success rate**).
+The **Login metrics by type** blade shows the success rate for your devices, as well as the success rate for other environments with a mix of operating system versions and device models similar to yours (the **Commercial average success rate**).
 
 In the table (by type) you can gauge how broadly each login type is attempted, the number of devices that prefer the type (most used), and the success rate. If migration from passwords to an alternative such as Hello: PIN is going well, you would see high usage and high success rates for the new type.
 
