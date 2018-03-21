@@ -429,11 +429,11 @@ After you download the Office 2013 applications through the Office Deployment To
         ```
         In this example, the following changes were made to create a package with Volume licensing:
         
-        * **SourcePath** is the path, which was changed to point to the Office applications that were downloaded earlier.
+        * **SourcePath** is the source's path, which was changed to point to the Office applications that were downloaded earlier.
         * **Product ID** for Office was changed to `ProPlusVolume`.
         * **Product ID** for Visio was changed to `VisioProVolume`.
     * **ExcludeApp** (optional) lets you specify Office programs that you don’t want included in the App-V package that the Office Deployment Tool creates. For example, you can exclude Access and InfoPath.
-    * **PACKAGEGUID** (optional): By default, all App-V packages created by the Office Deployment Tool share the same App-V Package ID. You can use PACKAGEGUID to specify a different package ID for each package, which allows you to publish multiple App-V packages, created by the Office Deployment Tool, and manage them by using the App-V Server.
+    * **PACKAGEGUID** (optional)—By default, all App-V packages created by the Office Deployment Tool share the same App-V Package ID. You can use PACKAGEGUID to specify a different package ID for each package, which allows you to publish multiple App-V packages, created by the Office Deployment Tool, and manage them by using the App-V Server.
         
         An example of when to use this parameter is if you create different packages for different users. For example, you can create a package with just Office 2013 for some users, and create another package with Office 2013 and Visio 2013 for another set of users.
         
@@ -514,7 +514,7 @@ Deploy the App-V package for Office 2013 by using the same methods you use for a
 
 |Prerequisite or requirement|Details|
 |---|---|
-|Enable Windows PowerShell scripting on the App-V clients.|To publish Office 2013 packages, you must run a script.Package scripts are disabled by default on App-V clients. To enable scripting, run the following Windows PowerShell command:<br>```Set-AppvClientConfiguration –EnablePackageScripts 1```|
+|Enable Windows PowerShell scripting on the App-V clients.|To publish Office 2013 packages, you must run a script. Package scripts are disabled by default on App-V clients. To enable scripting, run the following Windows PowerShell command:<br>```Set-AppvClientConfiguration –EnablePackageScripts 1```|
 |Publish the Office 2013 package globally.|Extension points in the Office App-V package require installation at the computer level.<br>When you publish at the computer level, no prerequisite actions or redistributables are needed, and the Office 2013 package globally enables its applications to work like natively installed Office, eliminating the need for administrators to customize packages.|
 
 <table>
