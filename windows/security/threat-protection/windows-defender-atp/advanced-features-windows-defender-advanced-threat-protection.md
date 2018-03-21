@@ -32,7 +32,7 @@ Depending on the Microsoft security products that you use, some advanced feature
 Turn on the following advanced features to get better protected from potentially malicious files and gain better insight during security investigations:
 
 ## Automated investigation
-When you enable this feature, you'll be able to take advantage of the automated investigation and remediation features of the service. 
+When you enable this feature, you'll be able to take advantage of the automated investigation and remediation features of the service. For more information, see [Automated investigations](automated-investigations-windows-defender-advanced-threat-protection.md).
 
 ## Block file
 This feature is only available if your organization uses Windows Defender Antivirus as the active antimalware solution and that the cloud-based protection feature is enabled.
