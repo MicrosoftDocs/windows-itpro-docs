@@ -432,7 +432,7 @@ After you download the Office 2013 applications through the Office Deployment To
         * **SourcePath** is the path, which was changed to point to the Office applications that were downloaded earlier.
         * **Product ID** for Office was changed to `ProPlusVolume`.
         * **Product ID** for Visio was changed to `VisioProVolume`.
-    * **ExcludeApp** (optional): Lets you specify Office programs that you don’t want included in the App-V package that the Office Deployment Tool creates. For example, you can exclude Access and InfoPath.
+    * **ExcludeApp** (optional) lets you specify Office programs that you don’t want included in the App-V package that the Office Deployment Tool creates. For example, you can exclude Access and InfoPath.
     * **PACKAGEGUID** (optional): By default, all App-V packages created by the Office Deployment Tool share the same App-V Package ID. You can use PACKAGEGUID to specify a different package ID for each package, which allows you to publish multiple App-V packages, created by the Office Deployment Tool, and manage them by using the App-V Server.
         
         An example of when to use this parameter is if you create different packages for different users. For example, you can create a package with just Office 2013 for some users, and create another package with Office 2013 and Visio 2013 for another set of users.
