@@ -90,6 +90,7 @@
 
 #### [Automated investigations](windows-defender-atp\automated-investigations-windows-defender-advanced-threat-protection.md)
 #### [Advanced hunting](windows-defender-atp\advanced-hunting-windows-defender-advanced-threat-protection.md)
+##### [Advanced hunting table reference](windows-defender-atp\advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
 
 ### [Enable conditional access](windows-defender-atp\conditional-access-windows-defender-advanced-threat-protection.md)
 
