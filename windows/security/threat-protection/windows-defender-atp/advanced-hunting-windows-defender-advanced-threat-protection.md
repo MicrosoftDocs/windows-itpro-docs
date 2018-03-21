@@ -156,7 +156,7 @@ Check out the [Advanced Hunting repository](https://github.com/Microsoft/Advance
 
 ## Advanced hunting table reference
 
-| Column name | Column type | Description
+| Column name | Data type | Description
 :---|:--- |:---                                                            
 | AccountDomain                       | string      | Domain of the account.                                                                                                                                                                                                                                         |
 | AccountName                         | string      | User name of the account.                                                                                                                                                                                                                                      |
