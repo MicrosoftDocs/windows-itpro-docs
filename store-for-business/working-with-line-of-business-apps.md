@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 3/19/2018
 ---
 
 # Working with line-of-business apps
@@ -38,8 +38,10 @@ You'll need to set up:
 -   LOB publishers need to have an active developer account. To learn more about account options, see [Ready to sign up](https://go.microsoft.com/fwlink/p/?LinkId=623432).
 -   LOB publishers need to have an app in Microsoft Store, or have an app ready to submit to the Store.
 
-## <a href="" id="add-lob-publisher"></a>Add an LOB publisher (Admin)
+The process and timing look like this:
+![Process showing LOB workflow in Microsoft Store for Business. Includes workflow for MSFB admin, LOB publisher, and Developer](images/lob-workflow.png)
 
+## <a href="" id="add-lob-publisher"></a>Add an LOB publisher (Admin)
 Admins need to invite developer or ISVs to become an LOB publisher.
 
 **To invite a developer to become an LOB publisher**
@@ -47,6 +49,7 @@ Admins need to invite developer or ISVs to become an LOB publisher.
 1.  Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com).
 2.  Click **Manage**, click **Permissions**, and then choose **Line-of-business publishers**.
 3.  On the Line-of business publishers page, click **Invite** to send an email invitation to a developer.
+ 
  >[!Note]
  > This needs to be the email address listed in contact info for the developer account.
   

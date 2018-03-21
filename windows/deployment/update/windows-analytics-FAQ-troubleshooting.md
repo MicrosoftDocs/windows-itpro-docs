@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 03/16/2018
+ms.date: 03/20/2018
 ---
 
 # Frequently asked questions and troubleshooting Windows Analytics
@@ -25,7 +25,7 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 
 [Upgrade Readiness reports outdated updates](#upgrade-readiness-reports-outdated-updates)
 
-[Upgrade Readiness reports incomplete inventory](#upgrade-readiness-reports-incomplete-inventory)
+[Upgrade Readiness shows many "Computers with outdated KB"](#upgrade-readiness-shows-many-computers-with-outdated-kb)
 
 [Upgrade Readiness doesn't show app inventory data on some devices](#upgrade-readiness-doesnt-show-app-inventory-data-on-some-devices)
 

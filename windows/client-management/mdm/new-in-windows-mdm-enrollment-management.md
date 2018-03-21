@@ -1175,14 +1175,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>LocalPoliciesSecurityOptions/Devices_AllowedToFormatAndEjectRemovableMedia</li> 
 <li>LocalPoliciesSecurityOptions/Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters</li> 
 <li>LocalPoliciesSecurityOptions/Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_DigitallySignSecureChannelDataWhenPossible</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_MaximumMachineAccountPasswordAge</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_RequireStrongSessionKey</li> 
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior</li> 
-<li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsAlways</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession</li> 
@@ -1193,10 +1186,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>LocalPoliciesSecurityOptions/NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</li> 
-<li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM</li> 
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange</li> 
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</li> 
-<li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</li> 
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</li> 
 <li>LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</li> 
 <li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li> 
@@ -1345,6 +1336,12 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>OS/Mode</li>
 </ul>
 </td></tr>
+<tr>
+<td style="vertical-align:top">[RootCATrustedCertificates CSP](rootcacertificates-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<ul>
+<li>UntrustedCertificates</li>
+</ul>
 </td></tr>
 </tbody>
 </table>
@@ -1651,6 +1648,13 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul>
 </td></tr>
 <tr>
+<td style="vertical-align:top">[RootCATrustedCertificates CSP](rootcacertificates-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<ul>
+<li>UntrustedCertificates</li>
+</ul>
+</td></tr>
+<tr>
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1803:</p>
 <ul>
@@ -1658,10 +1662,15 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Connectivity/AllowPhonePCLinking</li>
 <li>RestrictedGroups/ConfigureGroupMembership</li>
 </ul>
-<p>The following policy was updated in Windows 10, version 1803:</p>
+<p>The following existing policies were updated:</p>
 <ul>
-<li>TextInput/AllowIMENetworkAccess - when this policy is set to 1, suggestions from the Microsoft AI chatbot Rinna are enabled in the Japanese IME.</li>
+<li>InternetExplorer/AllowSiteToZoneAssignmentList - updated the description and added an example SyncML</li>
+<li>TextInput/AllowIMENetworkAccess - introduced new suggestion services in Japanese IME in addition to cloud suggestion.</li>
 </ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Policy CSP - Bluetooth](policy-csp-bluetooth.md)</td>
+<td style="vertical-align:top"><p>Added new section [ServicesAllowedList usage guide](policy-csp-bluetooth.md#servicesallowedlist-usage-guide).</p>
 </td></tr>
 </tbody>
 </table>
@@ -1770,14 +1779,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>LocalPoliciesSecurityOptions/Devices_AllowedToFormatAndEjectRemovableMedia</li> 
 <li>LocalPoliciesSecurityOptions/Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters</li> 
 <li>LocalPoliciesSecurityOptions/Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_DigitallySignSecureChannelDataWhenPossible</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_MaximumMachineAccountPasswordAge</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_RequireStrongSessionKey</li> 
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior</li> 
-<li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsAlways</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession</li> 
@@ -1788,10 +1790,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>LocalPoliciesSecurityOptions/NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</li> 
-<li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM</li> 
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange</li> 
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</li> 
-<li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</li> 
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</li> 
 <li>LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</li> 
 <li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li> 
