@@ -68,7 +68,7 @@ The hardware requirements for Windows Defender ATP on endpoints is the same as t
 #### Internet connectivity
 Internet connectivity on endpoints is required either directly or through proxy.
 
-The Windows Defender ATP sensor can utilize up to 5MB daily of bandwidth  to communicate with the Windows Defender ATP cloud service and report cyber data.
+The Windows Defender ATP sensor can utilize a daily average bandwidth of 5MB to communicate with the Windows Defender ATP cloud service and report cyber data.
 
 For more information on additional proxy configuration settings see, [Configure Windows Defender ATP endpoint proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) .
 
