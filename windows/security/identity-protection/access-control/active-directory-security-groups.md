@@ -313,217 +313,217 @@ The following tables provide descriptions of the default groups that are located
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>    
-<tr class="odd">
+<tr class="even">
 <td><p>[Enterprise Key Admins](#bkmk-enterprise-key-admins)</p></td>
 <td><p>Yes</p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>    
-<tr class="even">
+<tr class="odd">
 <td><p>[Enterprise Read-only Domain Controllers](#bkmk-entrodc)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Event Log Readers](#bkmk-eventlogreaders)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Group Policy Creator Owners](#bkmk-gpcreatorsowners)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Guests](#bkmk-guests)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Hyper-V Administrators](#bkmk-hypervadministrators)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p></p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[IIS_IUSRS](#bkmk-iis-iusrs)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Incoming Forest Trust Builders](#bkmk-inforesttrustbldrs)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Key Admins](#key-admins)</p></td>
 <td><p>Yes</p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Network Configuration Operators](#bkmk-networkcfgoperators)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Performance Log Users](#bkmk-perflogusers)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Performance Monitor Users](#bkmk-perfmonitorusers)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Pre–Windows 2000 Compatible Access](#bkmk-pre-ws2kcompataccess)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Print Operators](#bkmk-printoperators)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Protected Users](#bkmk-protectedusers)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[RAS and IAS Servers](#bkmk-rasandias)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[RDS Endpoint Servers](#bkmk-rdsendpointservers)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p></p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[RDS Management Servers](#bkmk-rdsmanagementservers)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p></p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[RDS Remote Access Servers](#bkmk-rdsremoteaccessservers)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p></p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Read-only Domain Controllers](#bkmk-rodc)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Remote Desktop Users](#bkmk-remotedesktopusers)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Remote Management Users](#bkmk-remotemanagementusers)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p></p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Replicator](#bkmk-replicator)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Schema Admins](#bkmk-schemaadmins)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Server Operators](#bkmk-serveroperators)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Storage Replica Administrators](#storage-replica-administrators)</p></td>
 <td><p>Yes</p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[System Managed Accounts Group](#system-managed-accounts-group)</p></td>
 <td><p>Yes</p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Terminal Server License Servers](#bkmk-terminalserverlic)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Users](#bkmk-users)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Windows Authorization Access Group](#bkmk-winauthaccess)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[WinRMRemoteWMIUsers_](#bkmk-winrmremotewmiusers-)</p></td>
 <td><p></p></td>
 <td><p>Yes</p></td>
@@ -1763,8 +1763,25 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+### Enterprise Key Admins
 
+Members of this group can perform administrative actions on key objects within the forest.
+
+The Enterprise Key Admins group was introduced in Windows Server 2016.
+
+| Attribute | Value |
+|-----------|-------|
+| Well-Known SID/RID | S-1-5-21-&lt;domain&gt;-527 |
+| Type | Global |
+| Default container | CN=Users, DC=&lt;domain&gt;, DC= |
+| Default members | None |
+| Default member of | None |
+| Protected by ADMINSDHOLDER? | No |
+| Safe to move out of default container? | Yes |
+| Safe to delegate management of this group to non-Service admins? | No |
+| Default User Rights | None |
+
+ 
 ### <a href="" id="bkmk-entrodc"></a>Enterprise Read-Only Domain Controllers
 
 Members of this group are Read-Only Domain Controllers in the enterprise. Except for account passwords, a Read-only domain controller holds all the Active Directory objects and attributes that a writable domain controller holds. However, changes cannot be made to the database that is stored on the Read-only domain controller. Changes must be made on a writable domain controller and then replicated to the Read-only domain controller.
@@ -2233,7 +2250,7 @@ The Key Admins group applies to versions of the Windows Server operating system 
 
 | Attribute | Value |
 |-----------|-------|
-| Well-Known SID/RID | S-1-5-21-4195037842-338827918-94892514-526 |
+| Well-Known SID/RID | S-1-5-21-&lt;domain&gt;-526 |
 | Type | Global |
 | Default container | CN=Users, DC=&lt;domain&gt;, DC= |
 | Default members | None |
