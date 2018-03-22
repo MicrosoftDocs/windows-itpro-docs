@@ -19,7 +19,7 @@ This topic provides an overview of Windows 10 Pro in S mode, how to switch from 
 
 ## Overview
 
-Windows 10 Pro in S mode is the Windows experience you are familiar with but streamlined for tighter security and superior performance. Windows 10 Pro in S mode uses apps from the Microsoft Store exclusively. This ensures security that is Microsoft-verified. Utilizing Microsoft Edge, Windows 10 Pro in S mode mode keeps you running fast and secure day in and day out. 
+Windows 10 Pro in S mode is the Windows experience you are familiar with but streamlined for tighter security and superior performance. Windows 10 Pro in S mode uses apps from the Microsoft Store exclusively. This ensures security that is Microsoft-verified. Utilizing Microsoft Edge, Windows 10 Pro in S mode  keeps you running fast and secure day in and day out. 
 
 The benefits of Windows 10 Pro in S mode:
 
