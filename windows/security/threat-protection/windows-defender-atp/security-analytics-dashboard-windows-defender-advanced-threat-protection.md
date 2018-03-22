@@ -93,7 +93,7 @@ Each security control lists recommendations that you can take to increase the se
 For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for your Endpoint detection and response tool.
 
 >[!IMPORTANT]
-> This feature is available for machines on Windows 10, version  1607 or later.  EVALD PLEASE DOUBLE CHECK!!!
+>This feature is available for machines on Windows 10, version  1607 or later.
 
 #### Minimum baseline configuration setting for EDR:
 - Windows Defender ATP sensor is on
@@ -112,7 +112,7 @@ For more  information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows
 For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender AV is fulfilled.
 
 >[!IMPORTANT]
-> This feature is available for machines on Windows 10, version  1607 or later.  EVALD PLEASE DOUBLE CHECK!!!
+>This feature is available for machines on Windows 10, version  1607 or later. 
 
 #### Minimum baseline configuration setting for Windows Defender AV:
 Endpoints are considered "well configured" for Windows Defender AV if the following requirements are met:
@@ -143,7 +143,7 @@ For more information, see [Configure Windows Defender Antivirus](../windows-defe
 This tile shows you the exact number of machines that require the latest security updates. It also shows machines that are running on the latest Windows Insider preview build and serves as a reminder to ensure that users should run the latest builds.
  
 >[!IMPORTANT]
-> This feature is available for machines on Windows 10, version  1607 or later.  EVALD PLEASE DOUBLE CHECK!!!
+>This feature is available for machines on Windows 10, version  1607 or later.
 
 You can take the following actions to increase the overall security score of your organization:
 - Install the latest security updates
@@ -158,7 +158,7 @@ For an endpoint to be considered "well configured", it must comply to a minimum 
 
 
 >[!IMPORTANT]
-> This feature is available for machines on Windows 10, version  1703 or later.
+>This security control is only applicable for endpoints with Windows 10, version 1709 or later.
 
 #### Minimum baseline configuration setting for Windows Defender EG:
 Endpoints are considered "well configured" for Windows Defender EG if the following requirements are met:
@@ -194,9 +194,6 @@ Block Win32 imports from Macro code in Office | 92E97FA1-2EDF-4476-BDD6-9DD0B4DD
 Block process creations originating from Psexec and WMI commands | D1E49AAC-8F56-4280-B9BA-993A6D77406C
 Block untrusted and unsigned processes that run from USB (File ASR/Protection) | B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4
 Block executable files from running unless they meet a prevalence/age | 01443614-CD74-433A-B99E-2ECDC07BFC25
-Block credential stealing from the Windows local security authority subsystem (lsass.exe) | 9E6C4E1F-7D60-472F-BA1A-A39EF669E4B2 CHECK WITH EVALD!!!!
-Use advanced protection against ransomware | C1DB55AB-C21A-4637-BB3F-A12568109D35 CHECK WITH EVALD!!!!
-
 
 
 >[!NOTE]
@@ -318,15 +315,13 @@ You can take the following actions to increase the overall security score of you
 ### BitLocker optimization
 For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for BitLocker is fulfilled. 
 
->[!NOTE]
->This security control is currently only applicable for endpoints with Windows 10, Insider Preview build.
+>[!IMPORTANT]
+>This security control is only applicable for endpoints with Windows 10, version 1803 or later.
 
 #### Minimum baseline configuration setting for BitLocker
 - Ensure all supported internal drives are encrypted
 - Ensure that all suspended protection on drives resume protection 
 
->[!IMPORTANT]
->This security control is only applicable for endpoints with Windows 10, version 1803 or later.
 
 ##### Recommended actions:
 You can take the following actions to increase the overall security score of your organization:
@@ -340,7 +335,7 @@ You can take the following actions to increase the overall security score of you
 For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender Credential Guard is fulfilled.
 
 >[!IMPORTANT]
-> This feature is available for machines on Windows 10, version  1703 or later.  
+>This security control is only applicable for endpoints with Windows 10, version 1709 or later. 
 
 #### Minimum baseline configuration setting for Windows Defender Credential Guard:
 Endpoints are considered "well configured" for Windows Defender Credential Guard if the following requirements are met:
