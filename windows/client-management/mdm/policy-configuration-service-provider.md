@@ -4462,6 +4462,42 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [WirelessDisplay/AllowProjectionToPC](./policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectiontopc)
 -   [WirelessDisplay/RequirePinForPairing](./policy-csp-wirelessdisplay.md#wirelessdisplay-requirepinforpairing)
 
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic for Business  
+
+-   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)  
+-   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)  
+-   [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)  
+-   [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)  
+-   [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)  
+-   [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)  
+-   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)  
+-   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)  
+-   [Browser/AllowCookies](#browser-allowcookies)  
+-   [Browser/AllowDoNotTrack](#browser-allowdonottrack)  
+-   [Browser/AllowPasswordManager](#browser-allowpasswordmanager)  
+-   [Browser/AllowPopups](#browser-allowpopups)  
+-   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)  
+-   [Browser/AllowSmartScreen](#browser-allowsmartscreen)  
+-   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
+-   [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)  
+-   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
+-   [Experience/AllowCortana](#experience-allowcortana)  
+-   [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)  
+-   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)  
+-   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
+-   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
+-   [Settings/AllowDateTime](#settings-allowdatetime)  
+-   [Settings/AllowVPN](#settings-allowvpn)  
+-   [System/AllowLocation](#system-allowlocation)  
+-   [System/AllowTelemetry](#system-allowtelemetry)  
+-   [Update/AllowAutoUpdate](#update-allowautoupdate)  
+-   [Update/AllowUpdateService](#update-allowupdateservice)  
+-   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
+-   [Update/RequireUpdateApproval](#update-requireupdateapproval)  
+-   [Update/UpdateServiceUrl](#update-updateserviceurl)  
+<!--EndHoloLens-->
+
 <!--StartEAS-->
 ## <a href="" id="eas"></a>Policies that can be set using Exchange Active Sync (EAS)  
 
