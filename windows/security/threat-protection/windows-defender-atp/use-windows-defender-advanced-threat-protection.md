@@ -33,6 +33,8 @@ Use the **Security operations** dashboard to gain insight on the various alerts 
 
 Use the **Secure score** dashboard to expand your visibility on the overall security posture of your organization. You'll see machines that require attention and recommendations that can help you reduce the attack surface in your organization.
 
+Use the **Threat analytics** dashboard to continually assess and control risk exposure to Spectre and Meltdown. 
+
 
 ### In this section
 
