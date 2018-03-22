@@ -1671,10 +1671,18 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>InternetExplorer/AllowSiteToZoneAssignmentList - updated the description and added an example SyncML</li>
 <li>TextInput/AllowIMENetworkAccess - introduced new suggestion services in Japanese IME in addition to cloud suggestion.</li>
 </ul>
+<p>Added a new section:</p>
+<ul>
+<li>[Policies supported by GP](policy-configuration-service-provider.md#policies-supported-by-gp) - list of policies in Policy CSP that has corresponding Group Policy. The policy description contains the GP information, such as GP policy name and variable name.</li>
+</ul>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Policy CSP - Bluetooth](policy-csp-bluetooth.md)</td>
 <td style="vertical-align:top"><p>Added new section [ServicesAllowedList usage guide](policy-csp-bluetooth.md#servicesallowedlist-usage-guide).</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[MultiSIM CSP](multisim-csp.md)</td>
+<td style="vertical-align:top"><p>Added SyncML examples and updated the settings descriptions.</p>
 </td></tr>
 </tbody>
 </table>
