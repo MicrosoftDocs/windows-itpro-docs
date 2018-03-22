@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - DeviceLock
@@ -65,6 +65,9 @@ ms.date: 01/30/2018
   </dd>
   <dd>
     <a href="#devicelock-minimumpasswordage">DeviceLock/MinimumPasswordAge</a>
+  </dd>
+  <dd>
+    <a href="#devicelock-preventenablinglockscreencamera">DeviceLock/PreventEnablingLockScreenCamera</a>
   </dd>
   <dd>
     <a href="#devicelock-preventlockscreenslideshow">DeviceLock/PreventLockScreenSlideShow</a>
@@ -1020,6 +1023,51 @@ The minimum password age must be less than the Maximum password age, unless the 
 Configure the minimum password age to be more than 0 if you want Enforce password history to be effective. Without a minimum password age, users can cycle through passwords repeatedly until they get to an old favorite. The default setting does not follow this recommendation, so that an administrator can specify a password for a user and then require the user to change the administrator-defined password when the user logs on. If the password history is set to 0, the user does not have to choose a new password. For this reason, Enforce password history is set to 1 by default.
 
 <!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *Minimum password age*
+-   GP path: *Windows Settings/Security Settings/Account Policies/Password Policy*
+
+<!--/DbMapped-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="devicelock-preventenablinglockscreencamera"></a>**DeviceLock/PreventEnablingLockScreenCamera**  
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Disables the lock screen camera toggle switch in PC Settings and prevents a camera from being invoked on the lock screen.
+
+By default, users can enable invocation of an available camera on the lock screen.
+
+If you enable this setting, users will no longer be able to enable or disable lock screen camera access in PC Settings, and the camera cannot be invoked on the lock screen.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Prevent enabling lock screen camera*
+-   GP name: *CPL_Personalization_NoLockScreenCamera*
+-   GP path: *Control Panel/Personalization*
+-   GP ADMX file name: *ControlPanelDisplay.admx*
+
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -1074,14 +1122,14 @@ If you enable this setting, users will no longer be able to modify slide show se
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Prevent enabling lock screen slide show*
 -   GP name: *CPL_Personalization_NoLockScreenSlideshow*
 -   GP path: *Control Panel/Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -1144,6 +1192,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

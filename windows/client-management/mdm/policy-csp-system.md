@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - System
@@ -116,6 +116,14 @@ This policy setting determines whether users can access the Insider build contro
 If you enable or do not configure this policy setting, users can download and install Windows preview software on their devices. If you disable this policy setting, the item "Get Insider builds" will be unavailable.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Toggle user control over Insider builds*
+-   GP name: *AllowBuildPreview*
+-   GP path: *Data Collection and Preview Builds*
+-   GP ADMX file name: *AllowBuildPreview.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -283,6 +291,14 @@ This setting is used by lower-level components for text display and fond handlin
 > Reboot is required after setting the policy; alternatively you can stop and restart the FontCache service.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Enable Font Providers*
+-   GP name: *EnableFontProviders*
+-   GP path: *Network/Fonts*
+-   GP ADMX file name: *GroupPolicy.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -348,6 +364,14 @@ When switching the policy back from 0 (Force Location Off) or 2 (Force Location 
 For example, an app's original Location setting is Off. The administrator then sets the **AllowLocation** policy to 2 (Force Location On.) The Location service starts working for that app, overriding the original setting. Later, if the administrator switches the **AllowLocation** policy back to 1 (User Control), the app will revert to using its original setting of Off.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off location*
+-   GP name: *DisableLocation_2*
+-   GP path: *Windows Components/Location and Sensors*
+-   GP ADMX file name: *Sensors.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -527,6 +551,15 @@ Windows 10 Values:
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Telemetry*
+-   GP name: *AllowTelemetry*
+-   GP element: *AllowTelemetry*
+-   GP path: *Data Collection and Preview Builds*
+-   GP ADMX file name: *DataCollection.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -620,7 +653,17 @@ orted values:
 
 <!--/Scope-->
 <!--Description-->
-N/A
+This policy setting allows you to specify which boot-start drivers are initialized based on a classification determined by an Early Launch Antimalware boot-start driver. The Early Launch Antimalware boot-start driver can return the following classifications for each boot-start driver:
+-  Good: The driver has been signed and has not been tampered with.
+-  Bad: The driver has been identified as malware. It is recommended that you do not allow known bad drivers to be initialized.
+-  Bad, but required for boot: The driver has been identified as malware, but the computer cannot successfully boot without loading this driver.
+-  Unknown: This driver has not been attested to by your malware detection application and has not been classified by the Early Launch Antimalware boot-start driver.
+
+If you enable this policy setting you will be able to choose which boot-start drivers to initialize the next time the computer is started.
+
+If you disable or do not configure this policy setting, the boot start drivers determined to be Good, Unknown or Bad but Boot Critical are initialized and the initialization of drivers determined to be Bad is skipped.
+
+If your malware detection application does not include an Early Launch Antimalware boot-start driver or if your Early Launch Antimalware boot-start driver has been disabled, this setting has no effect and all boot-start drivers are initialized.
 
 <!--/Description-->
 > [!TIP]
@@ -630,12 +673,14 @@ N/A
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
+-   GP English name: *Boot-Start Driver Initialization Policy*
 -   GP name: *POL_DriverLoadPolicy_Name*
+-   GP path: *System/Early Launch Antimalware*
 -   GP ADMX file name: *earlylauncham.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -679,6 +724,15 @@ ADMX Info:
 This policy setting blocks the Connected User Experience and Telemetry service from automatically using an authenticated proxy to send data back to Microsoft on Windows 10. If you disable or do not configure this policy setting, the Connected User Experience and Telemetry service will automatically use an authenticated proxy to send data back to Microsoft. Enabling this policy will block the Connected User Experience and Telemetry service from automatically using an authenticated proxy.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Authenticated Proxy usage for the Connected User Experience and Telemetry service*
+-   GP name: *DisableEnterpriseAuthProxy*
+-   GP element: *DisableEnterpriseAuthProxy*
+-   GP path: *Data Collection and Preview Builds*
+-   GP ADMX file name: *DataCollection.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -730,6 +784,14 @@ Added in Windows 10, version 1703. Allows IT Admins to prevent apps and features
 If you disable or do not configure this policy setting, apps and features can work with OneDrive file storage.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Prevent the usage of OneDrive for file storage*
+-   GP name: *PreventOnedriveFileSync*
+-   GP path: *Windows Components/OneDrive*
+-   GP ADMX file name: *SkyDrive.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -805,14 +867,14 @@ Also, see the "Turn off System Restore configuration" policy setting. If the "Tu
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Turn off System Restore*
 -   GP name: *SR_DisableSR*
 -   GP path: *System/System Restore*
 -   GP ADMX file name: *systemrestore.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -919,6 +981,15 @@ Enabling enhanced diagnostic data in the System/AllowTelemetry policy in combina
 If you disable or do not configure this policy setting, then the level of diagnostic data sent to Microsoft is determined by the System/AllowTelemetry policy.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Limit Enhanced diagnostic data to the minimum required by Windows Analytics*
+-   GP name: *LimitEnhancedDiagnosticDataWindowsAnalytics*
+-   GP element: *LimitEnhancedDiagnosticDataWindowsAnalytics*
+-   GP path: *Data Collection and Preview Builds*
+-   GP ADMX file name: *DataCollection.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -964,6 +1035,15 @@ Allows you to specify the fully qualified domain name (FQDN) or IP address of a 
 If you disable or do not configure this policy setting, Connected User Experiences and Telemetry will go to Microsoft using the default proxy configuration.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Connected User Experiences and Telemetry*
+-   GP name: *TelemetryProxy*
+-   GP element: *TelemetryProxyName*
+-   GP path: *Data Collection and Preview Builds*
+-   GP ADMX file name: *DataCollection.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 <hr/>
 
@@ -972,6 +1052,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

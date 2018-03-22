@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - WindowsLogon
@@ -26,7 +26,13 @@ ms.date: 01/30/2018
     <a href="#windowslogon-dontdisplaynetworkselectionui">WindowsLogon/DontDisplayNetworkSelectionUI</a>
   </dd>
   <dd>
+    <a href="#windowslogon-enumeratelocalusersondomainjoinedcomputers">WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers</a>
+  </dd>
+  <dd>
     <a href="#windowslogon-hidefastuserswitching">WindowsLogon/HideFastUserSwitching</a>
+  </dd>
+  <dd>
+    <a href="#windowslogon-signinlastinteractiveuserautomaticallyafterasysteminitiatedrestart">WindowsLogon/SignInLastInteractiveUserAutomaticallyAfterASystemInitiatedRestart</a>
   </dd>
 </dl>
 
@@ -83,14 +89,14 @@ If you disable or do not configure this policy setting, users can choose which a
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Turn off app notifications on the lock screen*
 -   GP name: *DisableLockScreenAppNotifications*
 -   GP path: *System/Logon*
 -   GP ADMX file name: *logon.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -145,14 +151,53 @@ If you disable or don't configure this policy setting, any user can disconnect t
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Do not display network selection UI*
 -   GP name: *DontDisplayNetworkSelectionUI*
 -   GP path: *System/Logon*
 -   GP ADMX file name: *logon.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="windowslogon-enumeratelocalusersondomainjoinedcomputers"></a>**WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers**  
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting allows local users to be enumerated on domain-joined computers.  
+
+If you enable this policy setting, Logon UI will enumerate all local users on domain-joined computers.
+
+If you disable or do not configure this policy setting, the Logon UI will not enumerate local users on domain-joined computers.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Enumerate local users on domain-joined computers*
+-   GP name: *EnumerateLocalUsers*
+-   GP path: *System/Logon*
+-   GP ADMX file name: *logon.admx*
+
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -196,6 +241,14 @@ ADMX Info:
 Added in Windows 10, version 1703. This policy setting allows you to hide the Switch account button on the sign-in screen, Start, and the Task Manager. If you enable this policy setting, the Switch account button is hidden from the user who is attempting to sign-in or is signed in to the computer that has this policy applied. If you disable or do not configure this policy setting, the Switch account button is accessible to the user in the three locations.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Hide entry points for Fast User Switching*
+-   GP name: *HideFastUserSwitching*
+-   GP path: *System/Logon*
+-   GP ADMX file name: *Logon.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -211,6 +264,45 @@ To validate on Desktop, do the following:
 
 <!--/Validation-->
 <!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="windowslogon-signinlastinteractiveuserautomaticallyafterasysteminitiatedrestart"></a>**WindowsLogon/SignInLastInteractiveUserAutomaticallyAfterASystemInitiatedRestart**  
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting controls whether a device will automatically sign-in the last interactive user after Windows Update restarts the system.
+
+If you enable or do not configure this policy setting, the device securely saves the user's credentials (including the user name, domain and encrypted password) to configure automatic sign-in after a Windows Update restart. After the Windows Update restart, the user is automatically signed-in and the session is automatically locked with all the lock screen apps configured for that user.
+
+If you disable this policy setting, the device does not store the user's credentials for automatic sign-in after a Windows Update restart. The users' lock screen apps are not restarted after the system restarts.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Sign-in last interactive user automatically after a system-initiated restart*
+-   GP name: *AutomaticRestartSignOn*
+-   GP path: *Windows Components/Windows Logon Options*
+-   GP ADMX file name: *WinLogon.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
 <hr/>
 
 Footnote:
@@ -218,6 +310,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

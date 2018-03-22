@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - Cellular
@@ -90,6 +90,13 @@ If you disable or do not configure this policy setting, employees in your organi
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.”
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP name: *LetAppsAccessCellularData*
+-   GP element: *LetAppsAccessCellularData_Enum*
+-   GP ADMX file name: *wwansvc.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -141,6 +148,13 @@ The following list shows the supported values:
 Added in Windows 10, version 1709. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps. Value type is string.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP name: *LetAppsAccessCellularData*
+-   GP element: *LetAppsAccessCellularData_ForceAllowTheseApps_List*
+-   GP ADMX file name: *wwansvc.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -184,6 +198,13 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 Added in Windows 10, version 1709. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps. Value type is string.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP name: *LetAppsAccessCellularData*
+-   GP element: *LetAppsAccessCellularData_ForceDenyTheseApps_List*
+-   GP ADMX file name: *wwansvc.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -227,6 +248,13 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 Added in Windows 10, version 1709. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the cellular data access setting for the listed apps. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps. Value type is string.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP name: *LetAppsAccessCellularData*
+-   GP element: *LetAppsAccessCellularData_UserInControlOfTheseApps_List*
+-   GP ADMX file name: *wwansvc.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -270,13 +298,7 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 This policy setting configures the visibility of the link to the per-application cellular access control page in the cellular setting UX.
 
 If this policy setting is enabled, a drop-down list box presenting possible values will be active.  Select "Hide" or "Show" to hide or show the link to the per-application cellular access control page.
-
-If this policy setting is disabled or is not configured, the link to the per-application cellular access control page is showed by default.”
-
-Supported values:
-
-- 0 - Hide
-- 1 - Show
+If this policy setting is disabled or is not configured, the link to the per-application cellular access control page is showed by default.
 
 <!--/Description-->
 > [!TIP]
@@ -286,14 +308,14 @@ Supported values:
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Set Per-App Cellular Access UI Visibility*
 -   GP name: *ShowAppCellularAccessUI*
 -   GP path: *Network/WWAN Service/WWAN UI Settings*
 -   GP ADMX file name: *wwansvc.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
 
@@ -302,6 +324,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

@@ -6,14 +6,14 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 02/05/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - Display
 
-
-> [!WARNING]  
+> [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 
 <hr/>
 
@@ -80,15 +80,15 @@ ms.date: 02/05/2018
 This policy allows you to disable Per-Process System DPI for a semicolon-separated list of applications. Applications can be specified either by using full paths or with filenames and extensions. This policy will override the system-wide default value.
 
 <!--/Description-->
-<!--SupportedValues-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Per-Process System DPI settings*
+-   GP name: *DisplayPerProcessSystemDpiSettings*
+-   GP element: *DisplayDisablePerProcessSystemDpiSettings*
+-   GP path: *System/Display*
+-   GP ADMX file name: *Display.admx*
 
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -145,20 +145,22 @@ In some cases, you may see some unexpected behavior in some desktop applications
 Enabling this setting lets you specify the system-wide default for desktop applications as well as per-application overrides. If you disable or do not configure this setting, Per Process System DPI will not apply to any processes on the system.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Per-Process System DPI settings*
+-   GP name: *DisplayPerProcessSystemDpiSettings*
+-   GP element: *DisplayGlobalPerProcessSystemDpiSettings*
+-   GP path: *System/Display*
+-   GP ADMX file name: *Display.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 - Disable.
 -   1 - Enable.
 
-
 <!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -202,15 +204,15 @@ The following list shows the supported values:
 This policy allows you to enable Per-Process System DPI for a semicolon-separated list of applications. Applications can be specified either by using full paths or with filenames and extensions. This policy will override the system-wide default value.
 
 <!--/Description-->
-<!--SupportedValues-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Per-Process System DPI settings*
+-   GP name: *DisplayPerProcessSystemDpiSettings*
+-   GP element: *DisplayEnablePerProcessSystemDpiSettings*
+-   GP path: *System/Display*
+-   GP ADMX file name: *Display.admx*
 
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -262,6 +264,15 @@ If you disable or do not configure this policy setting, GDI DPI Scaling might st
 If GDI DPI Scaling is configured to both turn off and turn on an application, the application will be turned off.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off GdiDPIScaling for applications*
+-   GP name: *DisplayTurnOffGdiDPIScaling*
+-   GP element: *DisplayTurnOffGdiDPIScalingPrompt*
+-   GP path: *System/Display*
+-   GP ADMX file name: *Display.admx*
+
+<!--/ADMXMapped-->
 <!--Validation-->
 To validate on Desktop, do the following:
 
@@ -320,6 +331,15 @@ If you disable or do not configure this policy setting, GDI DPI Scaling will not
 If GDI DPI Scaling is configured to both turn off and turn on an application, the application will be turned off.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn on GdiDPIScaling for applications*
+-   GP name: *DisplayTurnOnGdiDPIScaling*
+-   GP element: *DisplayTurnOnGdiDPIScalingPrompt*
+-   GP path: *System/Display*
+-   GP ADMX file name: *Display.admx*
+
+<!--/ADMXMapped-->
 <!--Validation-->
 To validate on Desktop, do the following:
 
@@ -335,6 +355,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 
