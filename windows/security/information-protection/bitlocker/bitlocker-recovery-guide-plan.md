@@ -100,7 +100,7 @@ Before you create a thorough BitLocker recovery process, we recommend that you t
 2.  At the command prompt, type the following command and then press ENTER:
     `manage-bde. -ComputerName <RemoteComputerName> -forcerecovery <BitLockerVolume>`
 
-> **Note:**  Recovery triggered by `-forcerecovery` persists for multiple restarts until a TPM protector is added or protection is suspended by the user. When using Modern Standby devices (such as Surface devices), the `-forcerecovery` option is not recommended because the OS will not boot after the recovery key is entered. Instead, the BitLocker recovery screen reappears until BitLocker protection is suspended or the OS drive is decrypted.
+> **Note:**  Recovery triggered by `-forcerecovery` persists for multiple restarts until a TPM protector is added or protection is suspended by the user. When using Modern Standby devices (such as Surface devices), the `-forcerecovery` option is not recommended because BitLocker will have to be unlocked and disabled manually from the WinRE environment before the OS can boot up again. For more information, see [BitLocker Troubleshooting: Continuous reboot loop with BitLocker recovery on a slate device](https://social.technet.microsoft.com/wiki/contents/articles/18671.bitlocker-troubleshooting-continuous-reboot-loop-with-bitlocker-recovery-on-a-slate-device.aspx).
  
 ## <a href="" id="bkmk-planningrecovery"></a>Planning your recovery process
 
