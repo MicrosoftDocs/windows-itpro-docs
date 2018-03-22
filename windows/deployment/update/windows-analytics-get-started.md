@@ -44,9 +44,9 @@ To enable data sharing, configure your proxy sever to whitelist the following en
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
-| `https://v10.events.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for Windows 10, version 1803|
-| `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for Windows 10, version 1709 or earlier |
-| `https://vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for operating systems older than Windows 10 |
+| `https://v10.events.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for Windows 10, version 1803|
+| `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for Windows 10, version 1709 or earlier |
+| `https://vortex-win.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for operating systems older than Windows 10 |
 | `https://settings-win.data.microsoft.com` | Enables the compatibility update to send data to Microsoft. 
 | `http://adl.windows.com` | Allows the compatibility update to receive the latest compatibility data from Microsoft. |
 | `https://watson.telemetry.microsoft.com` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports. Not used by Upgrade Readiness. |
@@ -58,7 +58,7 @@ To enable data sharing, configure your proxy sever to whitelist the following en
 ### Configuring endpoint access with proxy servers
 If your organization uses proxy server authentication for outbound traffic, use one or more of the following approaches to ensure that the diagnostic data is not blocked by proxy authentication:
 
-- **Best option:** Configure your proxy servers to **not** require proxy authentication for any traffic to the diagnostic data endpoints. This is the most comprehensive solution and it works for all versions of Windows 10.
+- **Best option:** Configure your proxy servers to **not** require proxy authentication for any traffic to the diagnostic data endpoints. In particular, SSL inspection should be disabled because Windows checks for a Microsoft SSL certificate on the site and this will be stripped and replaced if the proxy performs inspection. This is the most comprehensive solution and it works for all versions of Windows 10.
 - **User proxy authentication:** Alternatively, you can configure devices on the user side. First, update the devices to Windows 10, version 1703 or later. Then, ensure that users of the devices have proxy permission to reach the diagnostic data endpoints. This requires that the devices have console users with proxy permissions, so you couldn't use this method with headless devices.
 - **Device proxy authentication:** Another option--the most complex--is as follows: First, configure a system level proxy server on the devices. Then, configure these devices to use machine-account-based outbound proxy authentication. Finally, configure proxy servers to allow the machine accounts access to the diagnostic data endpoints. 
 
@@ -70,11 +70,13 @@ The compatibility update scans your devices and enables application usage tracki
 | **Operating System** | **Updates** |
 |----------------------|-----------------------------------------------------------------------------|
 | Windows 10        | The latest cumulative updates must be installed on Windows 10 devices to make sure that the required compatibility updates are installed. You can find the latest cumulative update on the [Microsoft Update Catalog](https://catalog.update.microsoft.com) <P>Note: Windows 10 LTSB is not supported by Upgrade Readiness. See [Upgrade readiness requirements](../upgrade/upgrade-readiness-requirements.md) for more information. |
-| Windows 8.1          | [KB 2976978](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2976978)<br>Performs diagnostics on the Windows 8.1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2976978><br><BR>[KB 3150513](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=3150513)<br>Provides updated configuration and definitions for compatibility diagnostics performed on the system.<br>For more information about this KB, see <https://support.microsoft.com/kb/3150513><br>**NOTE:** KB2976978 is a critical update, so it should already be installed by your management tool. You should, however, verify that it was deployed.   |
-| Windows 7 SP1        | [KB2952664](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2952664) <br>Performs diagnostics on the Windows 7 SP1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2952664><br><BR>[KB 3150513](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=3150513)<br>Provides updated configuration and definitions for compatibility diagnostics performed on the system.<br>For more information about this update, see <https://support.microsoft.com/kb/3150513><br>**NOTE:** If KB 3510513 is reported as out of date, you should manually find a recent version at [KB 3150513](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=3150513) and ensure that it is installed and deployed. |
+| Windows 8.1          | [KB 2976978](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2976978)<br>Performs diagnostics on the Windows 8.1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2976978>|
+| Windows 7 SP1        | [KB2952664](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2952664) <br>Performs diagnostics on the Windows 7 SP1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2952664>|
 
 >[!IMPORTANT] 
 >Restart devices after you install the compatibility updates for the first time.
+
+>[!NOTE] We recommend you configure your update management tool to automatically install the latest version of these updates. There is a related optional update, [KB 3150513](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=3150513), which can provide updated configuration and definitions for older compatibiltiy updates. For more information about this optional update, see <https://support.microsoft.com/kb/3150513>.
 
 
 
