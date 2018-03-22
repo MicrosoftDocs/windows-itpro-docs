@@ -38,10 +38,10 @@ The following table provides information about App-V client configuration settin
 | Set-AppvPublishingServer<br><br>**-GlobalRefreshInterval**<br>Integer (0–744)  | Specifies the publishing refresh interval using the GlobalRefreshIntervalUnit. To disable package refresh, specify 0.  | 0 |
 | Set-AppvPublishingServer<br><br>**-GlobalRefreshIntervalUnit** <br>0 for hour, 1 for day  | Specifies the interval unit (Hour 0–23, Day 0–31).  | 1 |
 | Set-AppvPublishingServer<br><br>**-UserRefreshEnabled**<br>True (enabled); False (Disabled state)  | Enables user publishing refresh (Boolean)  | False |
-| Set-AppvPublishingServer<br><br>**-UserRefreshOnLogon**<br>True (enabled); False (Disabled state)  | Triggers a user publishing refresh on sign in. ( Boolean)Word count (with spaces): 60  | False |
-| Set-AppvPublishingServer<br><br>**-UserRefreshInterval**<br>Word count (with spaces): 85Integer (0–744 Hours)  | Specifies the publishing refresh interval using the UserRefreshIntervalUnit. To disable package refresh, select 0.  | 0 |
+| Set-AppvPublishingServer<br><br>**-UserRefreshOnLogon**<br>True (enabled); False (Disabled state)  | Triggers a user publishing refresh on sign in. (Boolean) Word count (with spaces): 60  | False |
+| Set-AppvPublishingServer<br><br>**-UserRefreshInterval**<br>Word count (with spaces): 85<br>Integer (0–744 Hours)  | Specifies the publishing refresh interval using the UserRefreshIntervalUnit. To disable package refresh, select 0.  | 0 |
 | Set-AppvPublishingServer<br><br>**-UserRefreshIntervalUnit**<br>0 for hour, 1 for day  | Specifies the interval unit (Hour 0–23, Day 0–31).  | 1 |
-| Set-AppvClientConfiguration,<br>Set-AppvPublishingServer<br><br>**-MigrationMode**<br>True (enabled state); False (disabled state)  | Migration mode allows the App-V client to modify shortcuts and FTA’s for packages created by a previous version of App-V.  | |
+| Set-AppvClientConfiguration,<br>Set-AppvPublishingServer<br><br>**-MigrationMode**<br>True (enabled state); False (Disabled state)  | Migration mode allows the App-V client to modify shortcuts and FTA’s for packages created by a previous version of App-V.  | |
 | Set-AppvClientConfiguration,<br>Set-AppvPublishingServer<br><br>**-EnablePackageScripts**<br>True (enabled); False (Disabled state)  | Enables scripts defined in the package manifest of configuration files that should run.  | |
 | Set-AppvClientConfiguration<br><br>**-RoamingFileExclusions**<br>String  | Specifies the file paths relative to %userprofile% that do not roam with a user's profile. For example, ```/ROAMINGFILEEXCLUSIONS='desktop;my pictures'```  | |
 | Set-AppvClientConfiguration,<br>Set-AppvPublishingServer<br><br>**-RoamingRegistryExclusions**<br>String  | Specifies the registry paths that do not roam with a user profile. For example, ```/ROAMINGREGISTRYEXCLUSIONS=software\\classes;software\\clients```  | Policy value not written (same as Not Configured) |
@@ -95,8 +95,8 @@ The following table provides information about App-V client configuration settin
 | **ReportingEnabled**<br>True (Enabled); False (Disabled state)  | Reporting\\EnableReporting  | False |
 | **ReportingServerURL**<br>String  | Reporting\\ReportingServer  | Policy value not written (same as Not Configured) |
 | **ReportingDataCacheLimit**<br>Integer \[0–1024\]  | Reporting\\DataCacheLimit  | Policy value not written (same as Not Configured) |
-| **ReportingDataBlockSize**<br>Integer \[1024 - Unlimited\]  | Reporting\\DataBlockSize  | Policy value not written (same as Not Configured) |
-| **ReportingStartTime**<br>Integer (0 – 23)  | Reporting\\ StartTime  | Policy value not written (same as Not Configured) |
+| **ReportingDataBlockSize**<br>Integer \[1024–Unlimited\]  | Reporting\\DataBlockSize  | Policy value not written (same as Not Configured) |
+| **ReportingStartTime**<br>Integer (0–23)  | Reporting\\ StartTime  | Policy value not written (same as Not Configured) |
 | **ReportingInterval**<br>Integer  | Reporting\\RetryInterval  | Policy value not written (same as Not Configured) |
 | **ReportingRandomDelay**<br>Integer \[0 - ReportingRandomDelay\]  | Reporting\\RandomDelay  | Policy value not written (same as Not Configured) |
 | **EnableDynamicVirtualization<br>**1 (Enabled), 0 (Disabled)  | HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\AppV\\Client\\Virtualization  | |

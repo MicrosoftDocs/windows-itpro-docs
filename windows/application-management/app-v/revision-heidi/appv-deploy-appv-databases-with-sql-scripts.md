@@ -35,7 +35,7 @@ Use the following instructions to use SQL scripts, rather than the Windows Insta
 4. Browse to the temporary location that you created, open the extracted **DatabaseScripts** folder, and review the appropriate **readme.txt** file for instructions:
 
     | Database | Location of readme.txt file to use|
-    | - | - |
+    |---|---|
     | Management database | ManagementDatabase subfolder |
     | Reporting database | ReportingDatabase subfolder |
 
@@ -44,7 +44,7 @@ Use the following instructions to use SQL scripts, rather than the Windows Insta
 
 >[!IMPORTANT]
 > The InsertVersionInfo.sql script is not required for versions of the App-V management database later than App-V 5.0 SP3.
-> The Permissions.sql script should be updated according to **Step 2** in [KB article 3031340](https://support.microsoft.com/kb/3031340). **Step 1** is not required for versions of App-V later than App-V 5.0 SP3.
+> The Permissions.sql script should be updated according to Step 2 in [KB article 3031340](https://support.microsoft.com/kb/3031340). Step 1 is not required for versions of App-V later than App-V 5.0 SP3.
 
 ### Updated management database README file content
 
@@ -146,7 +146,7 @@ Steps to install "AppVReporting" schema in SQL SERVER.
     defaults are likely sufficient, it is suggested that the following
     settings be reviewed:
 
-    DATABASE - ensure name is satisfactory - default is "AppVReporting".   
+    DATABASE - ensure name is satisfactory - default is "AppVReporting".
 
  2. Review the Permissions.sql file and provide all the necessary account information
     for setting up read and write access on the database. Note: Default settings
@@ -181,5 +181,5 @@ Add or vote on suggestions on the [Application Virtualization feedback site](htt
 
 ## Related topics
 
-- [Deploying the App-V Server](appv-deploying-the-appv-server.md)
-- [How to Deploy the App-V Server](appv-deploy-the-appv-server.md)
+* [Deploying the App-V Server](appv-deploying-the-appv-server.md)
+* [How to deploy the App-V Server](appv-deploy-the-appv-server.md)

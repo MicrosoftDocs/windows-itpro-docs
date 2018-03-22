@@ -28,25 +28,25 @@ The following examples will show you how to install the Management server and da
 
 To use the default instance of Microsoft SQL Server, use the following parameters:
 
-* /MANAGEMENT_SERVER
-* /MANAGEMENT_ADMINACCOUNT
-* /MANAGEMENT_WEBSITE_NAME
-* /MANAGEMENT_WEBSITE_PORT
-* /DB_PREDEPLOY_MANAGEMENT
-* /MANAGEMENT_DB_SQLINSTANCE_USE_DEFAULT
-* /MANAGEMENT_DB_NAME
+* */MANAGEMENT_SERVER*
+* */MANAGEMENT_ADMINACCOUNT*
+* */MANAGEMENT_WEBSITE_NAME*
+* */MANAGEMENT_WEBSITE_PORT*
+* */DB_PREDEPLOY_MANAGEMENT*
+* */MANAGEMENT_DB_SQLINSTANCE_USE_DEFAULT*
+* */MANAGEMENT_DB_NAME*
 
 ### Parameters for a custom instance of Microsoft SQL Server for a new installation on a local machine
 
 To use a custom instance of Microsoft SQL Server, use the following parameters:
 
-* /MANAGEMENT_SERVER
-* /MANAGEMENT_ADMINACCOUNT
-* /MANAGEMENT_WEBSITE_NAME
-* /MANAGEMENT_WEBSITE_PORT
-* /DB_PREDEPLOY_MANAGEMENT
-* /MANAGEMENT_DB_CUSTOM_SQLINSTANCE
-* /MANAGEMENT_DB_NAME
+* */MANAGEMENT_SERVER*
+* */MANAGEMENT_ADMINACCOUNT*
+* */MANAGEMENT_WEBSITE_NAME*
+* */MANAGEMENT_WEBSITE_PORT*
+* */DB_PREDEPLOY_MANAGEMENT*
+* */MANAGEMENT_DB_CUSTOM_SQLINSTANCE*
+* */MANAGEMENT_DB_NAME*
 
 ### Example parameters for using a custom instance of Microsoft SQL Server for a new installation on a local machine
 
@@ -69,8 +69,8 @@ The following examples will show you how to install the Management server on a l
 
 To use the default instance of Microsoft SQL Server, use the following parameters:
 
-* /MANAGEMENT_SERVER
-* /MANAGEMENT_ADMINACCOUNT
+* */MANAGEMENT_SERVER*
+* */MANAGEMENT_ADMINACCOUNT*
 * /MANAGEMENT_WEBSITE_NAME
 * /MANAGEMENT_WEBSITE_PORT
 * /EXISTING_MANAGEMENT_DB_SQL_SERVER_USE_LOCAL

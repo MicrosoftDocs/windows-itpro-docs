@@ -8,7 +8,6 @@ ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ---
-
 # What's new in App-V for Windows 10, version 1703 and earlier
 
 >Applies to Windows 10, version 1703 and earlier.
@@ -23,11 +22,9 @@ Previous versions of the App-V Sequencer required manual sequencing and updating
 
 Using the automatic sequencer to package your apps gives you the following benefits:
 
-* Automatic virtual machine (VM) sequencing environment provisioning. To learn more, see [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-provision-a-vm.md).
-
-* Package batch-sequencing. This means that multiple apps can be sequenced at the same time, in a single group. To learn more, see [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md).
-
-* Package batch-updating. This means that multiple apps can be updated at the same time, in a single group. To learn more, see [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md).
+* **Automatic virtual machine (VM) sequencing environment provisioning**. To learn more, see [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-provision-a-vm.md).
+* **Package batch-sequencing**. This means that multiple apps can be sequenced at the same time, in a single group. To learn more, see [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md).
+* **Package batch-updating**. This means that multiple apps can be updated at the same time, in a single group. To learn more, see [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md).
 
 ### Updates to the App-V project template
 
@@ -48,7 +45,6 @@ To learn more about earlier versions of App-V, see [MDOP Information Experience]
 The changes in App-V for Windows 10, version 1607 impact existing implementations of App-V in the following ways:
 
 * The App-V client is installed on user devices automatically with Windows 10, version 1607, and no longer has to be deployed separately. Performing an in-place upgrade to Windows 10, version 1607, on user devices automatically installs the App-V client.
-
 * In previous releases of App-V, the application sequencer was included in the Microsoft Desktop Optimization Pack. Although you’ll need to use the new application sequencer to create new virtualized applications, existing virtualized applications will continue to work. The App-V application sequencer is available from the [Windows 10 Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).
 
  >[!NOTE]

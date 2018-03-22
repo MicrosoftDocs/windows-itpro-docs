@@ -35,7 +35,6 @@ You can also manage your App-V environment using an electronic software distribu
     * When there are disconnected remote users who can't connect to the App-V infrastructure.
     * When you're running a software management system, such as System Center 2012 Configuration Manager.
     * When network bandwidth limitations inhibit electronic software distribution.
-
 * **Full infrastructure model**—The full infrastructure model provides for software distribution, management, and reporting capabilities; it also includes the streaming of applications across the network. The App-V full infrastructure model consists of one or more App-V management servers that can be used to publish applications to all clients. Publishing places the virtual application icons and shortcuts on the target computer. It can also stream applications to local users. For more information about how to install the management server, see [Planning for App-V Server deployment](appv-planning-for-appv-server-deployment.md). The full infrastructure model is recommended for the following scenarios:
 
     * When you want to use the Management Server to publish the application to target computers.
@@ -52,8 +51,8 @@ The following section describes end-to-end App-V sizing and planning. For more s
 >[!NOTE]
 >Round trip response time on the client is the time taken by the computer running the App-V client to receive a successful notification from the publishing server. Round trip response time on the publishing server is the time taken by the computer running the publishing server to receive a successful package metadata update from the management server.
 
-* 20,000 clients can target a single publishing server to obtain the package refreshes in an acceptable round trip time. (<3 seconds.)
-* A single management server can support up to 50 publishing servers for package metadata refreshes in an acceptable round trip time. (<5 seconds.)
+* 20,000 clients can target a single publishing server to obtain the package refreshes in an acceptable round trip time (<3 seconds).
+* A single management server can support up to 50 publishing servers for package metadata refreshes in an acceptable round trip time (<5 seconds).
 
 ## App-V Management Server capacity planning recommendations
 
