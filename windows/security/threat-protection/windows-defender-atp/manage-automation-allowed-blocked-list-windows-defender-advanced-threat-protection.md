@@ -27,11 +27,11 @@ ms.date: 04/16/2018
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
-Create an exclusion rule to control which entities are automatically allowed or blocked during automated investigations. 
+Create a rule to control which entities are automatically incriminated or exonerated during automated investigations.  
 
 Entities added to the allowed list are considered safe and will not be analyzed during automated investigations.
 
-Entities added to the blocked list are considered malicious and will automatically be blocked during automated investigations.. 
+Entities added to the blocked list are considered malicious and will be remediated during automated investigations.
 
 You can define the conditions for when entities are identified as malicious or safe based on certain attributes such as hash values or certificates. 
 
