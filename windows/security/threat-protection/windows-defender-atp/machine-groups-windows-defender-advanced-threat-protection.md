@@ -26,25 +26,19 @@ ms.date: 04/16/2018
 
 [!include[Prerelease information](prerelease.md)]
 
+In a typical enterprise scenario, security operation teams are typically assigned a set of machines. These machines are grouped together based on a set of attributes such as their domains, computer names, or designated tags.
 
-In a typical enterprise scenario, security operation teams are assigned a set of machines groups. These machines are grouped together based on a set of attributes such as domain, name, or tag.
+In Windows Defender ATP, you can create machine groups and use them to:
+- Limit access to related alerts and data to specific Azure AD user groups with [assigned RBAC roles](rbac-windows-defender-advanced-threat-protection.md) 
+- Configure different auto-remediation settings for different sets of machines
 
-In Windows Defender ATP, you can create machine groups based on conditions and apply the following rules on them:
-- Remediation level for automated investigations
-- Azure Active Directory (Azure AD) user group access
+As part of the process of creating a machine group, you'll:
+- Set the automated remediation level for that group
+- Define a matching rule based on the machine name, domain, tags, and OS platform to determine which machines belong to the group. If a machine is also matched to other groups, it is added only to the highest ranked machine group.
+- Determine access to machine group
+- Rank the machine group relative to other groups after it is created 
 
-
-When you create a machine group, you'll need to set the automated remediation level for that group. You'll also need to configure the conditions for when a machine is considered to be part of that group. You can set the conditions based on name, domain, tag, or OS.
-
-
-After setting the automated remediation level and conditions, you'll need to assign a Azure AD user group who will have access to that group of machines. The assignment you set here determines what the group can see in the portal. For example, if you assign a user group to only see machines with a specific tag then their view of the Machines list will be limited based on the tags you set in the rule.
-
-
-Finally, you'll need to rank the machine groups so that the appropriate rul is applied on them. 
-
-
-
-### Add machine group
+## Add a machine group
 
 1.	In the navigation pane, select **Settings > Permissions > Machine groups**.
 
@@ -63,7 +57,7 @@ Finally, you'll need to rank the machine groups so that the appropriate rul is a
 
 	 - **Description**
 
-	 - **Matching rule** – you can apply the rule based on machine name, domain, tag, or OS version. 
+	 - **Matching rule** â€“ you can apply the rule based on machine name, domain, tag, or OS version. 
 
 		>[!TIP]
 		>If you want to group machines by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Manage machine group and tags](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection#manage-machine-group-and-tags).
@@ -72,19 +66,21 @@ Finally, you'll need to rank the machine groups so that the appropriate rul is a
 
 5.	Assign the user groups that can access the machine group you created. 
 
+>[!NOTE]
+>You can only grant access to Azure AD user groups with assigned RBAC roles. 
+
 6.	Click **Close**.
 
 7.	Apply the configuration settings.
 
-## Rank rules on machine groups
+## Understand matching and manage groups
 
-After creating groups based on conditions, setting the remediation levels on them, and assigning user groups that can access the machine group, you’ll need to rank the rules that are applied on the groups.
+You can promote the rank of a machine group so that it is given higher priority during matching. When a machine is matched to more than one group, it is added only to the highest ranked group.
 
-You can promote or demote the rank of a group so that the rules applied is of higher or lower level. The evaluation order is applied from higher rank to lower rank. The higher rank should apply to the most machines.
+Machines that are not matched to any groups are added to **Ungrouped machines**. By default, remediations performed on machines in this group require approval, but you can also define the remediation level for this group.
 
 You can also edit and delete groups.
 
-By default, there will always be a group for ungrouped machines. This group is designed to aggregate all the machines that didn’t meet any of the conditions set in the other machine groups. The default remediation for this group is Require approval, but you can also define the remediation level for the group.
 
 
 ## Related topic

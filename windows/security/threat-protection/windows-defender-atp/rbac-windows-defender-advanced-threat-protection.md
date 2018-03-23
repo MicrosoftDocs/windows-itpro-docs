@@ -31,7 +31,7 @@ ms.date: 04/16/2018
 
 Using role-based access control (RBAC), you can create roles and groups within your security operations team to grant appropriate access to the  portal. Based on the roles and groups you create, you have fine-grained control over what users with access to the portal can see and do. 
 
-Large geo-distributed security operations teams typically adopt a tier model to assign and authorize access to security portals. Typical tiers include the following three levels:
+Large geo-distributed security operations teams typically adopt a tier-based model to assign and authorize access to security portals. Typical tiers include the following three levels:
 
 Tier | Description
 :---|:---
@@ -39,19 +39,16 @@ Tier 1 | **Local security operations team / IT team** <br> This team usually tri
 Tier 2 | **Regional security operations team** <br> This team can see all the machines for their region and perform remediation actions.
 Tier 3 | **Global security operations team** <br> This team consists of security experts and are authorized to see and perform all actions from the portal.
 
-Windows Defender ATP RBAC is designed to support your tier or role model of choice and gives you granular control over what roles can see, machines they can access, and actions they can take. 
+Windows Defender ATP RBAC is designed to support your tier- or role-based model of choice and gives you granular control over what roles can see, machines they can access, and actions they can take. The RBAC framework is centered around the following controls:
 
-The implementation of role-based access control in Windows Defender ATP is based on Azure Active Directory (Azure AD) user groups. 
-
-The Windows Defender ATP RBAC framework is centered around the following controls:
 - **Control who can take specific action**
   - Create custom roles and control what Windows Defender ATP capabilities they can access with granularity.
  
-
 - **Control who can see specific information**
-  - Create machine groups by specific criteria such as names, tags, domains, and others, then grant role access to them using a specific Azure AD user group.
+  - [Create machine groups](machine-groups-windows-defender-advanced-threat-protection.md) by specific criteria such as names, tags, domains, and others, then grant role access to them using a specific Azure AD user group.
 
-To implement role-based access, you'll need to define admin roles, assign corresponding permissions, and set the Azure Active Directory (Azure AD) user groups assigned to the roles. 
+To implement role-based access, you'll need to define admin roles, assign corresponding permissions, and assign Azure Active Directory (Azure AD) user groups assigned to the roles.
+
 
 ### Before you begin
 
@@ -62,11 +59,9 @@ When you first log in to the Windows Defender ATP portal, you're granted either 
 >
 > Only those with Azure AD Global Administrator rights will be able to create and assign roles in the Windows Defender ATP portal, therefore, having the right groups ready in Azure AD is important.
 >
-> Turning on role-based access control will cause users with read-only permissions to lose access until they are assigned to a role. Users with admin permissions are automatically assigned the global administrator role with full permissions.
-
-To use RBAC in Windows Defender ATP, you'll need to enable it. 
-
-After opting in to use RBAC, you cannot revert to the initial roles as when you first logged into the portal. 
+> Turning on role-based access control will cause users with read-only permissions to lose access until they are assigned to a role. Users with admin permissions are automatically assigned the default Windows Defender ATP global administrator role with full permissions.
+>
+> After opting in to use RBAC, you cannot revert to the initial roles as when you first logged into the portal. 
 
 ## Create user roles and assign the role to a group
 
@@ -74,7 +69,7 @@ After opting in to use RBAC, you cannot revert to the initial roles as when you 
 
 2.	Click **Add new role**. 
 
-3.	Enter the user group name, description, and active permissions you’d like to assign to the group.
+3.	Enter the user group name, description, and active permissions youâ€™d like to assign to the group.
 
 	 - **User group name**
 
