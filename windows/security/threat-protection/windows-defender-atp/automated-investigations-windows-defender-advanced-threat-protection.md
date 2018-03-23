@@ -212,6 +212,9 @@ You also have the option of selecting multiple investigations to approve or reje
 
 ![Image of multiple investigations selected](images/atp-pending-actions-multiple.png)
 
+## Related topic
+- [Investigate Windows Defender ATP alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
+
 
 
 

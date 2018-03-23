@@ -108,4 +108,4 @@ When you first log in to the Windows Defender ATP portal, you're granted either 
 2.	Click the drop-down button and select **Delete role**.
 
 ## Related topic
-- [Manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md)
+- [Create and manage machine groups in Windows Defender ATP](machine-groups-windows-defender-advanced-threat-protection.md)

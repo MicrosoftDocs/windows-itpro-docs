@@ -23,6 +23,10 @@ ms.date: 03/05/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+[!include[Prerelease information](prerelease.md)]
+
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
+
 Conditional access is a capability that helps you better protect your users and enterprise information by making sure that only secure devices have access to applications.
 
 With conditional access, you can control access to enterprise information based on the risk level of a device. This helps keep trusted users on trusted devices using trusted applications.
@@ -61,6 +65,10 @@ You'll need to take the following steps to enable conditional access:
 3. Create a device compliance policy in Intune. For more information, see [Create a compliance policy in the Azure portal](https://docs.microsoft.com/en-us/intune/compliance-policy-create-windows#create-a-compliance-policy-in-the-azure-portal).
 3. Define a conditional access policy in AAD. For more information, see [Get started with conditional access in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-azure-portal-get-started).
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)
+
+## Related topic
+- [Configure advanced features in Windows Defender ATP](advanced-features-windows-defender-advanced-threat-protection.md)
 
 
 

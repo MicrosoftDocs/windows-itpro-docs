@@ -40,3 +40,5 @@ IP | Run API calls such as get IP related alerts, IP related machines, IP statis
 Machines | Run API calls such as find machine information by IP, get machines, get machines by ID, information about logged on users, and alerts related to a given machine ID.
 User | Run API calls such as get alert related user information, user information, user related alerts, and user related machines.
 
+## Related topic
+- [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)

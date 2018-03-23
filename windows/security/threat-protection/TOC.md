@@ -90,9 +90,9 @@
 
 #### [Automated investigations](windows-defender-atp\automated-investigations-windows-defender-advanced-threat-protection.md)
 #### [Advanced hunting](windows-defender-atp\advanced-hunting-windows-defender-advanced-threat-protection.md)
-##### [Advanced hunting table reference](windows-defender-atp\advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
+##### [Advanced hunting reference](windows-defender-atp\advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
 
-### [Enable conditional access](windows-defender-atp\conditional-access-windows-defender-advanced-threat-protection.md)
+### [Enable conditional access to better protect users, devices, and data](windows-defender-atp\conditional-access-windows-defender-advanced-threat-protection.md)
 
 ###API and SIEM support
 #### [Pull alerts to your SIEM tools](windows-defender-atp\configure-siem-windows-defender-advanced-threat-protection.md)

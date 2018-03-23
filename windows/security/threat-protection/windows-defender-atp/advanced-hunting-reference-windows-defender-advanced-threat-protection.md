@@ -25,6 +25,8 @@ ms.date: 04/16/2018
 
 [!include[Prerelease information](prerelease.md)]
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+
 ## Advanced hunting query best practices
 The following best practices serve as a guideline for you to maximize the advanced hunting capability. 
 - Use time filters first. Azure Kusto is highly optimized to utilize time filters. For more information, see [Azure Kusto](https://docs.microsoft.com/connectors/kusto/).
@@ -104,7 +106,9 @@ Use the following table to understand what the columns represent, its data type,
 | RemoteUrl                           | string      | URL or fully qualified domain name (FQDN) that was being connected to.                                                                                                                                                                                         |
 | ReportIndex                         | long        | Event identifier that is unique among the same event type.                                                                                                                                                                                                     |
 | SHA1                                | string      | SHA-1 of the file that the recorded action was applied to.                                                                                                                                                                                                     |
-| SHA256                              | string      | SHA-256 of the file that the recorded action was applied to.                                                                                                     
+| SHA256                              | string      | SHA-256 of the file that the recorded action was applied to.                                                                                      
+
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-belowfoldlink)        
 
 
 
