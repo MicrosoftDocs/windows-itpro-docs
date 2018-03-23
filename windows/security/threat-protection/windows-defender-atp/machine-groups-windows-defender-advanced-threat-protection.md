@@ -46,7 +46,7 @@ Finally, you'll need to rank the machine groups so that the appropriate rul is a
 
 ### Add machine group
 
-1.	In the navigation pane, select **Settings > Role based access control > Machine groups**.
+1.	In the navigation pane, select **Settings > Permissions > Machine groups**.
 
 2.	Click **Add machine group**. 
 

@@ -87,7 +87,7 @@ You’ll be able to onboard in the same method available for Windows 10 client m
 
 1.	Install the latest Windows Server Insider build on a machine. For more information, see [Windows Server Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewserver).
 
-2. Configure Windows Defender ATP onboarding settings on the server. For more information, see [[Onboard Window 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md). 
+2. Configure Windows Defender ATP onboarding settings on the server. For more information, see [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md). 
 
 3.	If you’re running a third party antimalware solution, you'll need to apply the following Windows Defender AV passive mode settings and verify it was configured correctly:
 
