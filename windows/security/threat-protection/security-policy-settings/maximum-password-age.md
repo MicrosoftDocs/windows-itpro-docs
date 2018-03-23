@@ -59,15 +59,15 @@ None. Changes to this policy become effective without a computer restart when th
 
 ## Security considerations
 
-This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
+This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of implementation.
 
 ### Vulnerability
 
-The longer a password exists, the higher the likelihood that it will be compromised by a brute force attack, by an attacker gaining general knowledge about the user, or by the user sharing the password. Configuring the **Maximum password age** policy setting to 0 so that users are never required to change their passwords is a major security risk because that allows a compromised password to be used by the malicious user for as long as the valid user is authorized access.
+Modern security guidance does not consider long lifetime passwords a vulnerability. See [Microsoft Password Guidance](https://www.microsoft.com/en-us/research/publication/password-guidance/) for further information.
 
-### Countermeasure
+### Considerations
 
-Configure the **Maximum password age** policy setting to a value that is suitable for your organization's business requirements.
+Many organisations have compliance or insurance mandates requiring a short lifespan on passwords. Where such a requirement exists, the **Maximum password age** policy setting can be used to meet your organization's business requirements.
 
 ### Potential impact
 
