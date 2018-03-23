@@ -352,9 +352,10 @@ You can take the following actions to increase the overall security score of you
 
 
 ## Related topics
-- [Enable Secure score security controls](enable-security-analytics-windows-defender-advanced-threat-protection.md)
-- [View the Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- [Understand the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)
 - [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
+- [View the Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics-windows-defender-advanced-threat-protection.md)
 
 
 

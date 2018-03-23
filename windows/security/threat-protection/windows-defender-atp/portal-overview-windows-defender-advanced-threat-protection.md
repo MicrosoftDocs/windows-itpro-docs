@@ -59,7 +59,7 @@ Area | Description
 **Advanced hunting** | Advanced hunting allows you to proactively hunt and investigate across your organization using a powerful search and query tool.
 **Settings** |	Shows the settings you selected during onboarding and lets you update your industry preferences and retention policy period. You can also set other configuration settings such as email notifications, activate the preview experience, enable or turn off advanced features, SIEM integration, threat intel API, build Power BI reports, and set baselines for the Secure score dashboard.
 **(2) Main portal** | Main area where you will see the different views such as the Dashboards, Alerts queue, and Machines list.
-**(3) Search, Community center, Time settings,  Help and support, Feedback** | **Search** - Provides access to the search bar where you can search for file, IP, machine, URL, and user. Displays the Search box: the drop-down list allows you to select the entity type and then enter the search query text.</br></br></br>**Community center** -Access the Community center to learn, collaborate, and share experiences about the product. </br></br>  **Time settings** - Gives you access to the configuration settings where you can set time zones and view license information. </br></br>  **Help and support** - Gives you access to the Windows Defender ATP guide, Microsoft support, and Premier support.</br></br> **Feedback** - Access the feedback button to provide comments about the portal. 
+**(3) Search, Community center, Time settings,  Help and support, Feedback** | **Search** - Provides access to the search bar where you can search for file, IP, machine, URL, and user. Displays the Search box: the drop-down list allows you to select the entity type and then enter the search query text. </br></br> **Community center** -Access the Community center to learn, collaborate, and share experiences about the product. </br></br>  **Time settings** - Gives you access to the configuration settings where you can set time zones and view license information. </br></br>  **Help and support** - Gives you access to the Windows Defender ATP guide, Microsoft support, and Premier support.</br></br> **Feedback** - Access the feedback button to provide comments about the portal. 
 
 ## Windows Defender ATP icons
 The following table provides information on the icons used all throughout the portal:
@@ -98,5 +98,8 @@ Icon | Description
 ![Process injection icon](images\atp-process-injection.png)| Process injection
 ![Powershell command run icon](images\atp-powershell-command-run-icon.png)| Powershell command run
 
-## Related topic
-[Use the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)
+## Related topics
+- [Understand the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)
+- [View the Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- [View the Secure score dashboard and improve your secure score](security-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+- [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics-windows-defender-advanced-threat-protection.md)
