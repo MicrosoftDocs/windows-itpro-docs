@@ -82,7 +82,7 @@ The following table describes settings that you can configure using the wizards 
 
 - [Instructions for the desktop wizard](provision-pcs-for-initial-deployment.md)
 - [Instructions for the mobile wizard](../mobile-devices/provisioning-configure-mobile.md)
-- [Instructions for the kiosk wizard](../set-up-a-kiosk-for-windows-10-for-desktop-editions.md#wizard)
+- [Instructions for the kiosk wizard](../setup-kiosk-digital-signage.md#wizard)
 
 
 
