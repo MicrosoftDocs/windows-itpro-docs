@@ -95,7 +95,7 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
 
 When the policy is deployed and is propagated, machines will be shown in the **Machines list**.
 
-You can use the following onboarding policies to deploy configuration settings on endpoints. These policies can be sub-categorized to:
+You can use the following onboarding policies to deploy configuration settings on machines. These policies can be sub-categorized to:
 - Onboarding
 - Health Status for onboarded machines
 - Configuration for onboarded machines

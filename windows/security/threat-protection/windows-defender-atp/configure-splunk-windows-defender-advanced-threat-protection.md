@@ -105,7 +105,7 @@ You'll need to configure Splunk so that it can pull Windows Defender ATP alerts.
   </tr>
   <tr>
   <td>Polling Interval</td>
-  <td>Number of seconds that Splunk will ping the Windows Defender ATP endpoint. Accepted values are in seconds.</td>
+  <td>Number of seconds that Splunk will ping the Windows Defender ATP machine. Accepted values are in seconds.</td>
   </tr>
   <tr>
   <td>Set sourcetype</td>

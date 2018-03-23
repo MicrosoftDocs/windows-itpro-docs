@@ -1,7 +1,7 @@
 ---
 title: Investigate machines in the Windows Defender ATP Machines list
 description: Investigate affected machines by reviewing alerts, network connection information, adding machine tags and groups, and checking the service health.
-keywords: machines, endpoints, tags, groups, endpoint, alerts queue, alerts, machine name, domain, last seen, internal IP, active alerts, threat category, filter, sort, review alerts, network, connection, type, password stealer, ransomware, exploit, threat, low severity, service heatlh
+keywords: machines, tags, groups, endpoint, alerts queue, alerts, machine name, domain, last seen, internal IP, active alerts, threat category, filter, sort, review alerts, network, connection, type, password stealer, ransomware, exploit, threat, low severity, service heatlh
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy

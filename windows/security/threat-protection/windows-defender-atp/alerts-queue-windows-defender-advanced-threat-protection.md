@@ -63,7 +63,7 @@ You can sort and filter the alerts using the available filters or clicking on a 
 
 Alert severity | Description
 :---|:---
-High </br>(Red) | Threats often associated with advanced persistent threats (APT). These alerts indicate a high risk due to the severity of damage they can inflict on endpoints.
+High </br>(Red) | Threats often associated with advanced persistent threats (APT). These alerts indicate a high risk due to the severity of damage they can inflict on machines.
 Medium </br>(Orange) | Threats rarely observed in the organization, such as anomalous registry change, execution of suspicious files, and observed behaviors typical of attack stages.
 Low </br>(Yellow) | Threats associated with prevalent malware and hack-tools that do not necessarily indicate an advanced threat targeting the organization.
 Informational </br>(Grey) | Informational alerts are those that might not be considered harmful to the network but might be good to keep track of.

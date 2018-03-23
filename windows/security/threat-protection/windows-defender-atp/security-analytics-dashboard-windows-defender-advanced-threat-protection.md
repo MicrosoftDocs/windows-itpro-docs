@@ -90,7 +90,7 @@ You can click on specific date points to see the total score for that security c
 Each security control lists recommendations that you can take to increase the security posture of your organization.
 
 ### Endpoint detection and response (EDR) optimization
-For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for your Endpoint detection and response tool.
+For an machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for your Endpoint detection and response tool.
 
 >[!IMPORTANT]
 >This feature is available for machines on Windows 10, version  1607 or later.
@@ -109,13 +109,13 @@ You can take the following actions to increase the overall security score of you
 For more  information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md). 
 
 ### Windows Defender Antivirus (Windows Defender AV) optimization
-For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender AV is fulfilled.
+For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender AV is fulfilled.
 
 >[!IMPORTANT]
 >This feature is available for machines on Windows 10, version  1607 or later. 
 
 #### Minimum baseline configuration setting for Windows Defender AV:
-Endpoints are considered "well configured" for Windows Defender AV if the following requirements are met:
+Machines are considered "well configured" for Windows Defender AV if the following requirements are met:
 
 - Windows Defender AV is reporting correctly
 - Windows Defender AV is turned on
@@ -127,7 +127,7 @@ Endpoints are considered "well configured" for Windows Defender AV if the follow
 You can take the following actions to increase the overall security score of your organization:
 
 >[!NOTE]
-> For the Windows Defender Antivirus properties to show,  you'll need to ensure that the Windows Defender Antivirus Cloud-based protection is properly configured on the endpoint. 
+> For the Windows Defender Antivirus properties to show,  you'll need to ensure that the Windows Defender Antivirus Cloud-based protection is properly configured on the machine. 
 
 - Fix antivirus reporting
   - This recommendation is displayed when the Windows Defender Antivirus is not properly configured to report its health state. For more information on fixing the reporting, see [Configure and validate network connections](../windows-defender-antivirus/configure-network-connections-windows-defender-antivirus.md).
@@ -154,14 +154,14 @@ For more information, see [Windows Update Troubleshooter](https://support.micros
 
 
 ### Windows Defender Exploit Guard (Windows Defender EG) optimization
-For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender EG is fulfilled. When endpoints are configured according to the baseline you'll be able to see Windows Defender EG events on the Windows Defender ATP Machine timeline. 
+For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on machines so that the minimum baseline configuration setting for Windows Defender EG is fulfilled. When endpoints are configured according to the baseline you'll be able to see Windows Defender EG events on the Windows Defender ATP Machine timeline. 
 
 
 >[!IMPORTANT]
->This security control is only applicable for endpoints with Windows 10, version 1709 or later.
+>This security control is only applicable for machines with Windows 10, version 1709 or later.
 
 #### Minimum baseline configuration setting for Windows Defender EG:
-Endpoints are considered "well configured" for Windows Defender EG if the following requirements are met:
+Machines are considered "well configured" for Windows Defender EG if the following requirements are met:
 
 - System level protection settings are configured correctly
 - Attack Surface Reduction rules are configured correctly
@@ -216,13 +216,13 @@ You can take the following actions to increase the overall security score of you
 For more information, see [Windows Defender Exploit Guard](../windows-defender-exploit-guard/windows-defender-exploit-guard.md).
 
 ### Windows Defender Application Guard (Windows Defender AG) optimization
-For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender AG is fulfilled. When endpoints are configured according to the baseline you'll be able to see Windows Defender AG events on the Windows Defender ATP Machine timeline. 
+For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender AG is fulfilled. When endpoints are configured according to the baseline you'll be able to see Windows Defender AG events on the Windows Defender ATP Machine timeline. 
 
 >[!IMPORTANT]
->This security control is only applicable for endpoints with Windows 10, version 1709 or later.
+>This security control is only applicable for machines with Windows 10, version 1709 or later.
 
 #### Minimum baseline configuration setting for Windows Defender AG:
-Endpoints are considered "well configured" for Windows Defender AG if the following requirements are met:
+Machines are considered "well configured" for Windows Defender AG if the following requirements are met:
 
 - Hardware and software prerequisites are met
 - Windows Defender AG is turned on compatible machines
@@ -243,10 +243,10 @@ For more information, see [Windows Defender Application Guard overview](../windo
 
 
 ### Windows Defender SmartScreen optimization
-For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender SmartScreen is fulfilled.
+For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender SmartScreen is fulfilled.
 
 >[!IMPORTANT]
->This security control is only applicable for endpoints with Windows 10, version 1709 or later.
+>This security control is only applicable for machines with Windows 10, version 1709 or later.
 
 #### Minimum baseline configuration setting for Windows Defender SmartScreen:
 The following settings must be configured with the following settings:
@@ -265,10 +265,10 @@ For more information, see [Windows Defender SmartScreen](../windows-defender-sma
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-sadashboard-belowfoldlink) 
 
 ### Windows Defender Firewall optimization
-For an endpoint to be considered "well configured", Windows Defender Firewall must be turned on and enabled for all profiles and inbound connections are blocked by default. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender Firewall is fulfilled. 
+For a machine to be considered "well configured", Windows Defender Firewall must be turned on and enabled for all profiles and inbound connections are blocked by default. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender Firewall is fulfilled. 
 
 >[!IMPORTANT]
->This security control is only applicable for endpoints with Windows 10, version 1709 or later.
+>This security control is only applicable for machines with Windows 10, version 1709 or later.
 
 #### Minimum baseline configuration setting for Windows Defender Firewall 
 
@@ -296,10 +296,10 @@ You can take the following actions to increase the overall security score of you
 For more information, see [Windows Defender Firewall with Advanced Security](https://docs.microsoft.com/en-us/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security).
 
 ### Windows Hello optimization
-For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Hello is fulfilled. 
+For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Hello is fulfilled. 
 
 >[!IMPORTANT]
->This security control is only applicable for endpoints with Windows 10, version 1803 or later.
+>This security control is only applicable for machines with Windows 10, version 1803 or later.
 
 #### Minimum baseline configuration setting for Windows Hello
 - Windows Hello is configured for all users
@@ -311,10 +311,10 @@ You can take the following actions to increase the overall security score of you
 - Encourage all users to use Windows Hello
 
 ### BitLocker optimization
-For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for BitLocker is fulfilled. 
+For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for BitLocker is fulfilled. 
 
 >[!IMPORTANT]
->This security control is only applicable for endpoints with Windows 10, version 1803 or later.
+>This security control is only applicable for machines with Windows 10, version 1803 or later.
 
 #### Minimum baseline configuration setting for BitLocker
 - Ensure all supported internal drives are encrypted
@@ -330,13 +330,13 @@ You can take the following actions to increase the overall security score of you
 
 
 ### Windows Defender Credential Guard optimization
-For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender Credential Guard is fulfilled.
+For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender Credential Guard is fulfilled.
 
 >[!IMPORTANT]
->This security control is only applicable for endpoints with Windows 10, version 1709 or later. 
+>This security control is only applicable for machines with Windows 10, version 1709 or later. 
 
 #### Minimum baseline configuration setting for Windows Defender Credential Guard:
-Endpoints are considered "well configured" for Windows Defender Credential Guard if the following requirements are met:
+Machines are considered "well configured" for Windows Defender Credential Guard if the following requirements are met:
 
 - Hardware and software prerequisites are met
 - Windows Defender Credential Guard is turned on on compatible machines

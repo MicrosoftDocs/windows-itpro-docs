@@ -61,7 +61,7 @@ ms.date: 04/16/2018
 9. Click **OK** and close any open GPMC windows.
 
 >[!TIP]
-> After onboarding the machine, you can choose to run a detection test to verify that the machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md).
+> After onboarding the machine, you can choose to run a detection test to verify that the machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP machine](run-detection-test-windows-defender-advanced-threat-protection.md).
 
 ## Additional Windows Defender ATP configuration settings
 For each machine, you can state whether samples can be collected from the machine when a request is made through the Windows Defender ATP portal to submit a file for deep analysis.
@@ -115,7 +115,7 @@ Possible values are:
 The default value in case the registry key doesn’t exist is Normal.
 
 ## Offboard machines using Group Policy
-For security reasons, the package used to Offboard machines will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+For security reasons, the package used to Offboard machines will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a machine will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same machine at the same time, otherwise this will cause unpredictable collisions.
@@ -159,7 +159,7 @@ With Group Policy there isn’t an option to monitor deployment of policies on t
 3.	Verify that machines are appearing.
 
 > [!NOTE]
-> It can take several days for machines to start showing on the **Machines list**. This includes the time it takes for the policies to be distributed to the endpoint, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
+> It can take several days for machines to start showing on the **Machines list**. This includes the time it takes for the policies to be distributed to the machine, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
 
 
 ## Related topics

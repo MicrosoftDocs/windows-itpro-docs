@@ -71,11 +71,11 @@ Click the name of the machine to see details about that machine. For more inform
 You can also click **Machines list** at the top of the tile to go directly to the **Machines list**, sorted by the number of active alerts. For more information see, [Investigate machines in the Windows Defender Advanced Threat Protection Machines list](investigate-machines-windows-defender-advanced-threat-protection.md).
 
 ## Machines with active malware detections
-The **Machines with active malware detections** tile will only appear if your endpoints are using Windows Defender Antivirus.
+The **Machines with active malware detections** tile will only appear if your machines are using Windows Defender Antivirus.
 
 Active malware is defined as threats that were actively executing at the time of detection.
 
-Hover over each bar to see the number of active malware detections (as **Malware detections**) and the number of endpoints with at least one active detection (as **Machines**) over the past 30 days.
+Hover over each bar to see the number of active malware detections (as **Malware detections**) and the number of machines with at least one active detection (as **Machines**) over the past 30 days.
 
 ![The Machines with active malware detections tile shows the number of threats and machines for each threat category](images/atp-machines-active-threats-tile.png)
 
@@ -93,7 +93,7 @@ Threats are considered "active" if there is a very high probability that the mal
 Clicking on any of these categories will navigate to the [Machines list](investigate-machines-windows-defender-advanced-threat-protection.md), filtered by the appropriate category. This lets you see a detailed breakdown of which machines have active malware detections, and how many threats were detected per machine.
 
 > [!NOTE]
-> The **Machines with active malware detections** tile will only appear if your endpoints are using [Windows Defender Antivirus](https://technet.microsoft.com/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
+> The **Machines with active malware detections** tile will only appear if your machines are using [Windows Defender Antivirus](https://technet.microsoft.com/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
 
 
 ## Daily machines reporting
@@ -130,7 +130,7 @@ This tile shows the blocked events based on detections from various security com
 
 
 ## Sensor health
-The **Sensor health** tile provides information on the individual endpoint’s ability to provide sensor data to the Windows Defender ATP service. It reports how many machines require attention and helps you identify problematic machines.
+The **Sensor health** tile provides information on the individual machine’s ability to provide sensor data to the Windows Defender ATP service. It reports how many machines require attention and helps you identify problematic machines.
 
 ![Sensor health tile](images/atp-tile-sensor-health.png)
 

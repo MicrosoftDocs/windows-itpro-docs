@@ -73,7 +73,7 @@ The action takes effect on machines with Windows 10, version 1703 or later, wher
 4. Select any of the status indicators to view more information about the action. For example, select **Failed** to see where the action failed.
 
 **Notification on machine user**:</br>
-When the file is being removed from an endpoint, the following notification is shown:
+When the file is being removed from a machine, the following notification is shown:
 
 ![Image of notification on machine user](images/atp-notification-file.png)
 
@@ -89,7 +89,7 @@ For prevalent files in the organization, a warning is shown before an action is 
 ## Remove file from quarantine
 You can roll back and remove a file from quarantine if you’ve determined that it’s clean after an investigation. Run the following command on each machine where the file was quarantined.
 
-1.	Open an elevated command–line prompt on the endpoint:
+1.	Open an elevated command–line prompt on the machine:
 
     a.	Go to **Start** and type cmd.
 
@@ -134,7 +134,7 @@ You can prevent further propagation of an attack in your organization by banning
 When the file is blocked, there will be a new event in the machine timeline.</br>
 
 **Notification on machine user**:</br>
-When a file is being blocked on the endpoint, the following notification is displayed to inform the user that the file was blocked:
+When a file is being blocked on the machine, the following notification is displayed to inform the user that the file was blocked:
 
 ![Image of notification on machine user](images/atp-notification-file.png)
 
@@ -234,7 +234,7 @@ If you encounter a problem when trying to submit a file, try each of the followi
 3. You can wait a short while and try to submit the file again, in case the queue is full or there was a temporary connection or communication error.
 4. Verify the policy setting enables sample collection and try to submit the file again.
 
-  a. Change the following registry entry and values to change the policy on specific endpoints:
+  a. Change the following registry entry and values to change the policy on specific machines:
  ```
 HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
   Value = 0 – block sample collection

@@ -43,7 +43,7 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 ## Preview features
 The following features are included in the preview release:
 
-- [Configure server endpoints](configure-server-endpoints-windows-defender-advanced-threat-protection.md)<br>
+- [Onboard servers](configure-server-endpoints-windows-defender-advanced-threat-protection.md)<br>
 Windows Defender ATP supports the onboarding of the following servers:
     - Windows Server 2012 R2
     - Windows Server 2016
@@ -54,7 +54,7 @@ Windows Defender ATP supports the use of Power BI data connectors to enable you 
 - [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)<br>
     Windows Defender ATP exposes much of the available data and actions using a set of programmatic APIs that are part of the Microsoft Intelligence Security Graph. Those APIs will enable you, to automate workflows and innovate based on Windows Defender ATP capabilities.
 
-- [Configure non-Windows machines](configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)<br>
+- [Onboard non-Windows machines](configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)<br>
 Windows Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in the Windows Defender ATP portal and better protect your organization's network. This experience leverages on a third-party security products' sensor data. 
 
 
