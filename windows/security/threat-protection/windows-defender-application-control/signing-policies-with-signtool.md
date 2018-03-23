@@ -48,7 +48,7 @@ If you do not have a code signing certificate, see the [Optional: Create a code 
    > [!Note] 
    > This example uses the WDAC policy that you created in [Create a Windows Defender Application Control policy from a reference computer](create-initial-default-policy.md). If you are signing another policy, be sure to update the **$CIPolicyPath** and **$CIPolicyBin** variables with the correct information.
 
-2.  Import the .pfx code signing certificate. Import the code signing certificate that you will use to sign the WDAC policy into the signing user’s personal store on the computer that will be doing the signing. In this example, you use the certificate that was created in [Optional: Create a code signing certificate for Windows Defender Application Control](optional-create-a-code-signing-certificate-for-windows-defender-application-control.md).
+2.  Import the .pfx code signing certificate. Import the code signing certificate that you will use to sign the WDAC policy into the signing user’s personal store on the computer that will be doing the signing. In this example, you use the certificate that was created in [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md).
 
 3.  Export the .cer code signing certificate. After the code signing certificate has been imported, export the .cer version to your desktop. This version will be added to the policy so that it can be updated later.
 
@@ -61,8 +61,8 @@ If you do not have a code signing certificate, see the [Optional: Create a code 
     ` Add-SignerRule -FilePath $InitialCIPolicy -CertificatePath <Path to exported .cer certificate> -Kernel -User –Update`
 
    > [!Note] 
-   > *&lt;Path to exported .cer certificate&gt;* should be  the full path to the certificate that you exported in   step 3.
-    Also, adding update signers is crucial to being able to modify or disable this policy in the future. For more information about how to disable signed WDAC policies, see the [Disable signed Windows Defender Application Control policies within Windows](#disable-signed-windows-defender-application-control-policies-within-windows) section.
+   > <Path to exported .cer certificate> should be the full path to the certificate that you exported in   step 3.
+    Also, adding update signers is crucial to being able to modify or disable this policy in the future. 
 
 6.  Use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption) to remove the unsigned policy rule option:
 
