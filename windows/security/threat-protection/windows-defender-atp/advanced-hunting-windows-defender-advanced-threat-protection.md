@@ -36,7 +36,18 @@ To get you started in querying your data, you can use the basic or advanced quer
 
 ![Image of Advanced hunting window](images/atp-advanced-hunting.png)
 
-## Query data in advanced hunting
+## Before you begin
+To maximize the advanced hunting capability, it's a good idea to understand the following query best practices.
+
+### Query best practices
+- Use time filters first. Azure Kusto is highly optimized to utilize time filters. For more information, see [Azure Kusto](https://docs.microsoft.com/connectors/kusto/).
+- Put filters that are expected to remove most of the data in the beginning of the query, following the time filter.
+- Prefer 'has' keyword over 'contains' when looking for full tokens.
+- Prefer looking in specific column rather than using full text search across all columns.
+- When joining between two tables - choose the table with less rows to be the first one (left-most). 
+- When joining between two tables - project only needed columns from both sides of the join.
+
+## Use advanced hunting to query data
 
 A typical query starts with a table name followed by a series of operators separated by **|**.
 
@@ -51,7 +62,7 @@ We then add a filter on the _FileName_  to contain only instances of _powershell
 Afterwards, we add a filter on the _ProcessCommandLine_
 Finally, we  project only the columns we're interested in exploring and limit the results to 100 and click **Run query**.
 
-### Operators
+### Use operators
 The query language is very powerful and has a lot of available operators, some of them are - 
 
 - **limit** - Return up to the specified number of rows.
@@ -67,11 +78,11 @@ The query language is very powerful and has a lot of available operators, some o
 
 To see a live example of these operators, run them as part of the **Get started** section.
 
-## Query language documentation
+## Access query language documentation
 
 For more information on the query language and supported operators, see [Query Language](https://docs.loganalytics.io/docs/Language-Reference/).
 
-## Tables in advanced hunting
+## Use exposed tables in advanced hunting
 
 The following tables are exposed as part of advanced hunting:
 
@@ -85,7 +96,7 @@ The following tables are exposed as part of advanced hunting:
 - **MiscEvents** - Stores several types of events, including Windows Defender Exploit Guard, Windows Defender SmartScreen, Windows Defender Application Guard, and Firewall events.
 - **SuspiciousEvents** - Stores all events that deviate from typical event behavior
 
-## Shared queries
+## Use shared queries
 Shared queries are prepopulated queries that give you a starting point on running queries on your organization's data. It includes a couple of examples that help demonstrate the query language capabilities.
 
 ![Image of shared queries](images/atp-shared-queries.png)
@@ -132,7 +143,7 @@ The results set has several capabilities to provide you with effective investiga
 
 ![Image of Windows Defender ATP advanced hunting results set](images/atp-advanced-hunting-results-filter.png)
 
-## Filters on results in advanced hunting
+## Filter results in advanced hunting
 In advanced hunting, you can use the advanced filter on the output results set of the query. 
 The filters provide an overview of the result set where 
 each column has it's own section and shows the distinct values that appear in the column and their prevalence.
@@ -143,13 +154,7 @@ You can refine your query based on the filter by clicking the "+" or "-" buttons
 
 The filter selections will resolve as an additional query term and the results will be updated accordingly.
 
-## Query best practices
-- Use time filters first. Kusto is highly optimized to utilize time filters.
-- Put filters that are expected to remove most of the data in the beginning of the query, following the time filter.
-- Prefer 'has' keyword over 'contains' when looking for full tokens.
-- Prefer looking in specific column rather than using full text search across all columns.
-- When joining between two tables - choose the table with less rows to be the first one (left-most). 
-- When joining between two tables - project only needed columns from both sides of the join.
+
 
 ## Public Advanced Hunting query GitHub repository  
 Check out the [Advanced Hunting repository](https://github.com/Microsoft/Advanced-Hunting-Queries). Contribute and use example queries shared by our customers. 

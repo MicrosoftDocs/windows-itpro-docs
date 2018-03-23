@@ -1,5 +1,5 @@
 ---
-title: Advanced hunting table reference in Windows Defender ATP
+title: Advanced hunting reference in Windows Defender ATP
 description: Learn about advanced hunting table reference such as column name, data type, and description
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 04/16/2018
 ---
 
-# Advanced hunting table reference in Windows Defender ATP
+# Advanced hunting reference in Windows Defender ATP
 
 **Applies to:**
 
@@ -25,11 +25,20 @@ ms.date: 04/16/2018
 
 [!include[Prerelease information](prerelease.md)]
 
+## Advanced hunting query best practices
+The following best practices serve as a guideline for you to maximize the advanced hunting capability. 
+- Use time filters first. Azure Kusto is highly optimized to utilize time filters. For more information, see [Azure Kusto](https://docs.microsoft.com/connectors/kusto/).
+- Put filters that are expected to remove most of the data in the beginning of the query, following the time filter.
+- Prefer 'has' keyword over 'contains' when looking for full tokens.
+- Prefer looking in specific column rather than using full text search across all columns.
+- When joining between two tables - choose the table with less rows to be the first one (left-most). 
+- When joining between two tables - project only needed columns from both sides of the join.
+
+
+## Advanced hunting table reference
 When you run a query using Advanced hunting, a table with columns is returned as a result. 
 
 Use the following table to understand what the columns represent, its data type, and their description. 
-
-## Advanced hunting table reference
 
 | Column name | Data type | Description
 :---|:--- |:---                                                            
