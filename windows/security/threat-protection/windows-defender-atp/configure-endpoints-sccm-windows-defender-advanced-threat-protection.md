@@ -24,7 +24,7 @@ ms.date: 04/16/2018
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 - System Center 2012 Configuration Manager or later versions
 
-
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
