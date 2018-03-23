@@ -182,8 +182,12 @@ You can also click on an action to bring up the details pane where you'll see in
 This tab is only displayed when an investigation is complete and shows all pending actions taken during the investigation.
 
 
-## Pending actions 
-This view aggregates all investigations that require an action for an investigation to proceed or be completed.
+## Pending actions
+If there are pending actions on an automated investigation, you'll see a pop up similar to the following image. When you click on the pending actions link, you'll be taken to the pending actions page.
+
+
+ 
+The pending actions view aggregates all investigations that require an action for an investigation to proceed or be completed.
 
 Use the Customize columns drop-down menu to select columns that you'd like to show or hide. 
 

@@ -97,6 +97,9 @@ Icon | Description
 ![Memory allocation icon](images\atp-memory-allocation-icon.png)| Memory allocation
 ![Process injection icon](images\atp-process-injection.png)| Process injection
 ![Powershell command run icon](images\atp-powershell-command-run-icon.png)| Powershell command run
+![Community center icon](images\atp-community-center.png) | Community center icon
+![Notifications icon](images\atp-notifications.png) | Notifications icon
+
 
 ## Related topics
 - [Understand the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)
