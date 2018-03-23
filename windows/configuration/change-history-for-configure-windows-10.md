@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: jdeckerms
-ms.date: 03/13/2018
+ms.date: 03/23/2018
 ---
 
 # Change history for Configure Windows 10
@@ -20,6 +20,8 @@ This topic lists new and updated topics in the [Configure Windows 10](index.md) 
 New or changed topic | Description
 --- | ---
 [Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md) and [Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md) | Added events and fields that were added in the March update.
+Set up a kiosk on Windows 10 Pro, Enterprise, or Education | Renamed it [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](setup-kiosk-digital-signage.md) and reorganized the information to make the choices clearer.
+
 
 ## February 2018
 
