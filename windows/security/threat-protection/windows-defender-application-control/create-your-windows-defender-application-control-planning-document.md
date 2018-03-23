@@ -370,7 +370,6 @@ You can use the following form to construct your own WDAC planning document.
  
 ### Additional resources
 
--   [Deploy Windows Defender Application Control Policies](deploy-windows-defender-application-control-policies.md)
 -   [Windows Defender Application Control](windows-defender-application-control.md)
  
  
