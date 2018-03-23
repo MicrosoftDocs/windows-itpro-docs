@@ -19,7 +19,7 @@ This topic provides a roadmap for planning and getting started on the Windows De
 
 ## Planning
 
-1. **Review requirements, especially hardware requirements for VBS**. Review the [virtualization-based security (VBS) features](../threat-protection/windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md) and corresponding [hardware, firmware, and software requirements](../threat-protection/windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md). 
+1. **Review requirements, especially hardware requirements for VBS**. Review the [virtualization-based security (VBS) features](./threat-protection/windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md) and corresponding [hardware, firmware, and software requirements](./threat-protection/windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md). 
 
 2. **Group devices by degree of control needed**. [Group devices](types-of-devices.md). Do most devices fit neatly into a few categories, or are they scattered across all categories? Are users allowed to install any application or must they choose from a list? Are users allowed to use their own peripheral devices?<br>Deployment is simpler if everything is locked down in the same way, but meeting individual departments’ needs, and working with a wide variety of devices, may require a more complicated and flexible deployment.
 
@@ -73,6 +73,6 @@ This topic provides a roadmap for planning and getting started on the Windows De
     > [!WARNING]
     >  Virtualization-based protection of code integrity may be incompatible with some devices and applications. We strongly recommend testing this configuration in your lab before enabling virtualization-based protection of code integrity on production systems. Failure to do so may result in unexpected failures up to and including data loss or a blue screen error (also called a stop error).
 
-    For information about enabling VBS features, see [Enable virtualization-based protection of code integrity](../threat-protection/windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity.md).
+    For information about enabling VBS features, see [Enable virtualization-based protection of code integrity](./threat-protection/windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity.md).
 
 <br />
