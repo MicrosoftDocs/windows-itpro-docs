@@ -40,13 +40,15 @@ Alerts are typically generated from a machine and all automated investigations s
 When an alert that contains a supported entity is seen, the automated investigation then proceeds and analyzes each entity within the alert. It determines whether an entity can be incriminated or exonerated. The outcome from the analysis of each entity is categorized in the **Entities** tab and you'll be able to see the determination for each entity type, such as whether it was determined to be malicious, suspicious, or clean.
  [BENNY I'M NOT SURE IF WE WANT TO GO INTO THE DETAILS OF SENDING THE FILE INTO DETONATION ETC.]  
 
-Depending on how you set up the machine groups and the level of automation to apply on the group, the automated investigation can remediate the alert. For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md). The default machine group is configured for semi-automatic remediation. This means that any malicious entity that needs to be remediated requires an approval and the investigation is added to the **Pending actions** section.
+Depending on how you set up the machine groups and the level of automation to apply on the group, the automated investigation can remediate the alert. For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md). 
+
+The default machine group is configured for semi-automatic remediation. This means that any malicious entity that needs to be remediated requires an approval and the investigation is added to the **Pending actions** section. You also have the option to configure the automation for full remediation. 
 
 When a pending action is approved, the entity is then remediated and is reflected in the **Entities** tab of the investigation.
 
 While an investigation is running, any other alert generated from the machine will be added to an ongoing automated investigation until that investigation is completed. In addition, if the same threat is seen on other machines, those machines are added to the investigation.You'll be able to see up to nine machines in the **Machines** tab. If the threat is seen on more than nine machines, you have the option to expand the view from the **Pending actions** view.
 
-An investigation is only considered complete if there are no pending actions on it. That's also the only time that the **Pending actions history** tab is displayed.
+When the automated investigation completes its analysis, and all pending actions are resolved, an investigation is considered complete. It's important to understand that an investigation is only considered complete if there are no pending actions on it. That's also the only time that the **Pending actions history** tab is displayed.
 
 
 ## Manage Automated investigations

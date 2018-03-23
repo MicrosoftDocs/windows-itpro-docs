@@ -122,3 +122,5 @@ You can sort the **Machines list** by the following columns:
 
 ## Related topics
 - [Investigate machines in the Windows Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
+
+
