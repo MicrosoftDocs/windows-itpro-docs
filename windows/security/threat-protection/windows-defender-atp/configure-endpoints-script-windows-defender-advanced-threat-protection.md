@@ -30,7 +30,7 @@ ms.date: 04/16/2018
 You can also manually onboard individual machines to Windows Defender ATP. You might want to do this first when testing the service before you commit to onboarding all machines in your network.
 
 > [!NOTE]
-> The script has been optimized to be used on a limited number of machines (1-10 machines). To deploy to scale, use other deployment options. For more information on using other deployment options, see [Onboard machines](configure-endpoints-windows-defender-advanced-threat-protection.md).
+> The script has been optimized to be used on a limited number of machines (1-10 machines). To deploy to scale, use other deployment options. For more information on using other deployment options, see [Onboard Window 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md).
 
 ## Onboard machines 
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):

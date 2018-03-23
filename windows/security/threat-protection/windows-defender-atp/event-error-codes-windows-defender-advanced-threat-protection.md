@@ -1,5 +1,5 @@
 ---
-title: Review events and errors on Event Viewer
+title: Review events and errors using Event Viewer
 description: Get descriptions and further troubleshooting steps (if required) for all events reported by the Windows Defender ATP service.
 keywords: troubleshoot, event viewer, log summary, failure code, failed, Windows Defender Advanced Threat Protection service, cannot start, broken, can't start
 search.product: eADQiWindows 10XVcnh
@@ -14,7 +14,7 @@ ms.date: 04/16/2018
 ---
 
 
-# Review events and errors on Event Viewer
+# Review events and errors using Event Viewer
 
 **Applies to:**
 

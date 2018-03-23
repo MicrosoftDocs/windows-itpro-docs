@@ -42,7 +42,7 @@ Make sure that `*.securitycenter.windows.com` is included the proxy whitelist.
 
 ### Windows Defender ATP service shows event or error logs in the Event Viewer
 
-See the topic [Review events and errors on machines with Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md) for a list of event IDs that are reported by the Windows Defender ATP service. The topic also contains troubleshooting steps for event errors.
+See the topic [Review events and errors using Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md) for a list of event IDs that are reported by the Windows Defender ATP service. The topic also contains troubleshooting steps for event errors.
 
 ### Windows Defender ATP service fails to start after a reboot and shows error 577
 
@@ -73,4 +73,4 @@ Support of use of comma as a separator in numbers are not supported. Regions whe
 
 ## Related topics
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
-- [Review events and errors on machines with Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
+- [Review events and errors using Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md)

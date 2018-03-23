@@ -42,7 +42,10 @@ Windows Defender ATP makes it easy to create a Power BI dashboard by providing a
 
 1. In the navigation pane, select **Settings** > **General** > **Power BI reports**.
 
-2.	Click **Create dashboard**. You'll see a notification that things are being loaded. 
+2.	Click **Create dashboard**. 
+    ![Image of create dashboard](images/atp-create-dashboard.png)
+    
+    You'll see a notification that things are being loaded. 
 
     ![Image of loading](images/atp-loading.png)
 
@@ -159,16 +162,6 @@ After completing the steps in the Before you begin section, you can proceed with
 
 
 
-## Using the Power BI reports
-There are a couple of tabs on the report that's generated:
-
-- Machine and alerts 
-- Investigation results and action center
-- Secure score
-
-In general, if you know of a specific threat name, CVE, or KB, you can identify machines with upatched vulnerabilities that might be leveraged by threats. This report also helps you determine whether machine-level mitigations are configured correctly on the machines and prioritize those that might need attention.
-
-
 ## Mashup Windows Defender ATP data with other data sources
 You can use Power BI Desktop to analyse data from Windows Defender ATP and mash that data up with other data sources to gain better security perspective in your organization.
 
@@ -196,6 +189,14 @@ You can use Power BI Desktop to analyse data from Windows Defender ATP and mash 
 
 8.	Add visuals and select fields from the available data sources. 
 
+## Using the Power BI reports
+There are a couple of tabs on the report that's generated:
+
+- Machine and alerts 
+- Investigation results and action center
+- Secure score
+
+In general, if you know of a specific threat name, CVE, or KB, you can identify machines with upatched vulnerabilities that might be leveraged by threats. This report also helps you determine whether machine-level mitigations are configured correctly on the machines and prioritize those that might need attention.
 
 
 

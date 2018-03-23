@@ -54,7 +54,7 @@ This status indicates that there's limited communication between the machine and
 
 The following suggested actions can help fix issues related to a misconfigured machine with impaired communications:
 
-- [Ensure the machine has Internet connection](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-endpoint-has-an-internet-connection)</br>
+- [Ensure the machine has Internet connection](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#troubleshoot-onboarding-issues-on-the-machine)</br>
   The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Windows Defender ATP service.
 
 - [Verify client connectivity to Windows Defender ATP service URLs](configure-proxy-internet-windows-defender-advanced-threat-protection.md#verify-client-connectivity-to-windows-defender-atp-service-urls)</br>
@@ -66,7 +66,7 @@ If you took corrective actions and the machine status is still misconfigured, [o
 A misconfigured machine with status ‘No sensor data’ has communication with the service but can only report partial sensor data.
 Follow theses actions to correct known issues related to a misconfigured machine with status ‘No sensor data’:
 
-- [Ensure the machine has Internet connection](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-endpoint-has-an-internet-connection)</br>
+- [Ensure the machine has Internet connection](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#troubleshoot-onboarding-issues-on-the-machine)</br>
   The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Windows Defender ATP service.
 
 - [Verify client connectivity to Windows Defender ATP service URLs](configure-proxy-internet-windows-defender-advanced-threat-protection.md#verify-client-connectivity-to-windows-defender-atp-service-urls)</br>
