@@ -160,7 +160,7 @@ The filter selections will resolve as an additional query term and the results w
 
 
 ## Public Advanced Hunting query GitHub repository  
-Check out the [Advanced Hunting repository](https://github.com/Microsoft/Advanced-Hunting-Queries). Contribute and use example queries shared by our customers. 
+Check out the [Advanced Hunting repository](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries). Contribute and use example queries shared by our customers. 
 
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
