@@ -97,7 +97,6 @@ The following tables are exposed as part of advanced hunting:
 - **LogonEvents** - Stores all login events 
 - **ImageLoadEvents** - Stores all load dll events  
 - **MiscEvents** - Stores several types of events, including Windows Defender Exploit Guard, Windows Defender SmartScreen, Windows Defender Application Guard, and Firewall events.
-- **SuspiciousEvents** - Stores all events that deviate from typical event behavior
 
 ## Use shared queries
 Shared queries are prepopulated queries that give you a starting point on running queries on your organization's data. It includes a couple of examples that help demonstrate the query language capabilities.
