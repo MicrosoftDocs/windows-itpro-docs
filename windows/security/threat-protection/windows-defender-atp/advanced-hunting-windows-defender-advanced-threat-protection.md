@@ -56,7 +56,7 @@ A typical query starts with a table name followed by a series of operators separ
 
 In the following example, we start with the table name **ProcessCreationEvents** and add piped elements as needed.
 
-![Image of Windows Defender ATP advanced hunting query](images/atp-advanced-hunting-query.png)
+![Image of Windows Defender ATP advanced hunting query](images/advanced-hunting-query-example.png)
 
 First, we define a time filter to review only records from the previous seven days. 
 
