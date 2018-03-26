@@ -43,7 +43,7 @@ The table shows the minimum requirements for each deployment.
 
 | Key trust</br>Group Policy managed | Certificate trust</br>Mixed managed | Key trust</br>Modern managed | Certificate trust</br>Modern managed | 
 | --- | --- | --- | --- |
-| Windows 10, version 1511 or later| Windows 10, version 1703 or later (domain joined)</br>Windows 10, version 1511 or later (cloud joined) | Windows 10, version 1511 or later | Windows 10, version 1511 or later |
+| Windows 10, version 1511 or later| **Hybrid Azure AD Joined:**<br>  *Minimum:* Windows 10, version 1703<br>  *Best experience:* Windows 10, version 1709 or later (supports synchronous certificate enrollment).</br>**Azure AD Joined:**<br>  Windows 10, version 1511 or later| Windows 10, version 1511 or later | Windows 10, version 1511 or later |
 | Windows Server 2016 Schema | Windows Server 2016 Schema | Windows Server 2016 Schema | Windows Server 2016 Schema |
 | Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level| Windows Server 2008 R2 Domain/Forest functional level |Windows Server 2008 R2 Domain/Forest functional level |
 | Windows Server 2016 Domain Controllers | Windows Server 2008 R2 or later Domain Controllers | Windows Server 2016 Domain Controllers | Windows Server 2008 R2 or later Domain Controllers | 
