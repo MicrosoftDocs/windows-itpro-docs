@@ -6,11 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/05/2018
+ms.date: 03/14/2018
 ---
 
 # Policy CSP - Connectivity
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -33,6 +35,9 @@ ms.date: 03/05/2018
   </dd>
   <dd>
     <a href="#connectivity-allownfc">Connectivity/AllowNFC</a>
+  </dd>
+  <dd>
+    <a href="#connectivity-allowphonepclinking">Connectivity/AllowPhonePCLinking</a>
   </dd>
   <dd>
     <a href="#connectivity-allowusbconnection">Connectivity/AllowUSBConnection</a>
@@ -351,6 +356,76 @@ The following list shows the supported values:
 -   1 (default) – Allow NFC capabilities.
 
 <!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="connectivity-allowphonepclinking"></a>**Connectivity/AllowPhonePCLinking**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803. This policy allows IT admins to turn off the ability to Link a Phone with a PC to continue tasks, such as reading, email, and other tasks that require linking between Phone and PC.
+
+If you enable this policy setting, the Windows device will be able to enroll in Phone-PC linking functionality and participate in 'Continue on PC experiences'. If you disable this policy setting, the Windows device is not allowed to be linked to phones, will remove itself from the device list of any linked Phones, and cannot participate in 'Continue on PC experiences'.
+If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP name: *enableMMX*
+-   GP ADMX file name: *grouppolicy.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+This setting supports a range of values between 0 and 1.  
+
+- 0 - Do not link
+- 1 (default) - Allow phone-PC linking
+
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+Validation:  
+
+If the Connectivity/AllowPhonePCLinking policy is configured to value 0, the add a phone button in the Phones section in settings will be greyed out and clicking it will not launch the window for a user to enter their phone number.
+
+Device that has previously opt-in to MMX will also stop showing on the device list.
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -898,6 +973,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

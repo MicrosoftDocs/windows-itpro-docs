@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/05/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - DeliveryOptimization
@@ -1217,6 +1217,13 @@ Added in Windows 10, version 1803. Specifies the maximum background download ban
 Note that downloads from LAN peers will not be throttled even when this policy is set.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP name: *PercentageMaxBackgroundBandwidth*
+-   GP element: *PercentageMaxBackgroundBandwidth*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1273,6 +1280,13 @@ Added in Windows 10, version 1803. Specifies the maximum foreground download ban
 Note that downloads from LAN peers will not be throttled even when this policy is set.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP name: *PercentageMaxForegroundBandwidth*
+-   GP element: *PercentageMaxForegroundBandwidth*
+-   GP ADMX file name: *DeliveryOptimization.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1377,14 +1391,6 @@ The following list shows the supported values:
 Added in Windows 10, version 1803. Specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
 
 <!--/Description-->
-<!--SupportedValues-->
-This policy allows an IT Admin to define the following:
-
--  Business hours range (for example 06:00 to 18:00)
--  % of throttle for background traffic during business hours
--  % of throttle for background traffic outside of business hours
-
-<!--/SupportedValues-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -1400,6 +1406,14 @@ ADMX Info:
 -   GP ADMX file name: *DeliveryOptimization.admx*
 
 <!--/ADMXBacked-->
+<!--SupportedValues-->
+This policy allows an IT Admin to define the following:
+
+-  Business hours range (for example 06:00 to 18:00)
+-  % of throttle for background traffic during business hours
+-  % of throttle for background traffic outside of business hours
+
+<!--/SupportedValues-->
 <!--/Policy-->
 
 <hr/>
@@ -1443,14 +1457,6 @@ ADMX Info:
 Added in Windows 10, version 1803. Specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
 
 <!--/Description-->
-<!--SupportedValues-->
-This policy allows an IT Admin to define the following:
-
--  Business hours range (for example 06:00 to 18:00)
--  % of throttle for foreground traffic during business hours
--  % of throttle for foreground traffic outside of business hours
-
-<!--/SupportedValues-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
@@ -1466,6 +1472,14 @@ ADMX Info:
 -   GP ADMX file name: *DeliveryOptimization.admx*
 
 <!--/ADMXBacked-->
+<!--SupportedValues-->
+This policy allows an IT Admin to define the following:
+
+-  Business hours range (for example 06:00 to 18:00)
+-  % of throttle for foreground traffic during business hours
+-  % of throttle for foreground traffic outside of business hours
+
+<!--/SupportedValues-->
 <!--/Policy-->
 <hr/>
 
@@ -1474,6 +1488,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

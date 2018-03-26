@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/05/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - InternetExplorer
@@ -239,6 +239,9 @@ ms.date: 03/05/2018
     <a href="#internetexplorer-internetzoneallowuserdatapersistence">InternetExplorer/InternetZoneAllowUserDataPersistence</a>
   </dd>
   <dd>
+    <a href="#internetexplorer-internetzoneallowvbscripttorunininternetexplorer">InternetExplorer/InternetZoneAllowVBScriptToRunInInternetExplorer</a>
+  </dd>
+  <dd>
     <a href="#internetexplorer-internetzonedonotrunantimalwareagainstactivexcontrols">InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControls</a>
   </dd>
   <dd>
@@ -405,6 +408,9 @@ ms.date: 03/05/2018
   </dd>
   <dd>
     <a href="#internetexplorer-lockeddowninternetzonenavigatewindowsandframes">InternetExplorer/LockedDownInternetZoneNavigateWindowsAndFrames</a>
+  </dd>
+  <dd>
+    <a href="#internetexplorer-lockeddownintranetjavapermissions">InternetExplorer/LockedDownIntranetJavaPermissions</a>
   </dd>
   <dd>
     <a href="#internetexplorer-lockeddownintranetzoneallowaccesstodatasources">InternetExplorer/LockedDownIntranetZoneAllowAccessToDataSources</a>
@@ -636,6 +642,9 @@ ms.date: 03/05/2018
   </dd>
   <dd>
     <a href="#internetexplorer-restrictedsiteszoneallowuserdatapersistence">InternetExplorer/RestrictedSitesZoneAllowUserDataPersistence</a>
+  </dd>
+  <dd>
+    <a href="#internetexplorer-restrictedsiteszoneallowvbscripttorunininternetexplorer">InternetExplorer/RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer</a>
   </dd>
   <dd>
     <a href="#internetexplorer-restrictedsiteszonedonotrunantimalwareagainstactivexcontrols">InternetExplorer/RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls</a>
@@ -2120,6 +2129,11 @@ Value - A number indicating the zone with which this site should be associated f
 
 If you disable or do not configure this policy, users may choose their own site-to-zone assignments.
 
+> [!Note]  
+> This policy is a list that contains the site and index value.
+
+The list is a set of pairs of strings. Each string is seperated by F000. Each pair of string are stored as a registry name and value.  The registry name is the site and the value is an index. The index has to be sequential. See an example below.
+
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -2136,6 +2150,31 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMXBacked-->
+<!--Example-->
+```syntax
+  <SyncBody>
+      <Replace>
+          <CmdID>2</CmdID>
+           <Item>
+               <Meta>
+                  <Format>chr</Format>
+                  <Type>text/plain</Type>
+              </Meta>
+              <Target>
+                  <LocURI>./Device/Vendor/MSFT/Policy/Config/InternetExplorer/AllowSiteToZoneAssignmentList</LocURI>
+              </Target>
+               <Data>&lt;Enabled/&gt;&lt;Data id=&quot;IZ_ZonemapPrompt&quot; value=&quot;http://adfs.contoso.org&#xF000;1&#xF000;http://microsoft.com&#xF000;2&quot;/&gt;</Data>
+          </Item>
+      </Replace>
+      <Final/>
+  </SyncBody>
+```
+
+Value and index pairs in the SyncML example:  
+- http://adfs.contoso.org 1
+- http://microsoft.com 2
+
+<!--/Example-->
 <!--/Policy-->
 
 <hr/>
@@ -5522,6 +5561,50 @@ If you do not configure this policy setting, users can preserve information in t
 ADMX Info:  
 -   GP English name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_1*
+-   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
+-   GP ADMX file name: *inetres.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="internetexplorer-internetzoneallowvbscripttorunininternetexplorer"></a>**InternetExplorer/InternetZoneAllowVBScriptToRunInInternetExplorer**  
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting allows you to manage whether VBScript can be run on pages from the specified zone in Internet Explorer.
+
+If you selected Enable in the drop-down box, VBScript can run without user intervention.
+
+If you selected Prompt in the drop-down box, users are asked to choose whether to allow VBScript to run.
+
+If you selected Disable in the drop-down box, VBScript is prevented from running.
+
+If you do not configure or disable this policy setting, VBScript is prevented from running.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow VBScript to run in Internet Explorer*
+-   GP name: *IZ_PolicyAllowVBScript_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
 -   GP ADMX file name: *inetres.admx*
 
@@ -9181,6 +9264,54 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
+<a href="" id="internetexplorer-lockeddownintranetjavapermissions"></a>**InternetExplorer/LockedDownIntranetJavaPermissions**  
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting allows you to manage permissions for Java applets.
+
+If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually.
+
+Low Safety enables applets to perform all operations.
+
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+
+High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
+
+If you disable this policy setting, Java applets cannot run.
+
+If you do not configure this policy setting, Java applets are disabled.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Java permissions*
+-   GP name: *IZ_PolicyJavaPermissions_4*
+-   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
+-   GP ADMX file name: *inetres.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="internetexplorer-lockeddownintranetzoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownIntranetZoneAllowAccessToDataSources**  
 
 <!--SupportedSKUs-->
@@ -12619,11 +12750,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Internet Explorer places restrictions on each Web page it opens. The restrictions are dependent upon the location of the Web page (Internet, Intranet, Local Machine zone, and so on). For example, Web pages on the local computer have the fewest security restrictions and reside in the Local Machine zone, making the Local Machine security zone a prime target for malicious users.
+Internet Explorer places restrictions on each Web page it opens. The restrictions are dependent upon the location of the Web page (Internet, Intranet, Local Machine zone, etc.). Web pages on the local computer have the fewest security restrictions and reside in the Local Machine zone, making the Local Machine security zone a prime target for malicious users. Zone Elevation also disables JavaScript navigation if there is no security context.
 
-If you enable this policy setting, any zone can be protected from zone elevation for all processes.
+If you enable this policy setting, any zone can be protected from zone elevation by Internet Explorer processes.
 
-If you disable or do not configure this policy setting, processes other than Internet Explorer or those listed in the Process List receive no such protection.
+If you disable this policy setting, no zone receives such protection for Internet Explorer processes.
+
+If you do not configure this policy setting, any zone can be protected from zone elevation by Internet Explorer processes.
 
 <!--/Description-->
 > [!TIP]
@@ -12635,8 +12768,8 @@ If you disable or do not configure this policy setting, processes other than Int
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *All Processes*
--   GP name: *IESF_PolicyAllProcesses_9*
+-   GP English name: *Internet Explorer Processes*
+-   GP name: *IESF_PolicyExplorerProcesses_9*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Protection From Zone Elevation*
 -   GP ADMX file name: *inetres.admx*
 
@@ -12747,11 +12880,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting enables applications hosting the Web Browser Control to block automatic prompting of ActiveX control installation.
+This policy setting enables blocking of ActiveX control installation prompts for Internet Explorer processes.
 
-If you enable this policy setting, the Web Browser Control will block automatic prompting of ActiveX control installation for all processes.
+If you enable this policy setting, prompting for ActiveX control installations will be blocked for Internet Explorer processes.
 
-If you disable or do not configure this policy setting, the Web Browser Control will not block automatic prompting of ActiveX control installation for all processes.
+If you disable this policy setting, prompting for ActiveX control installations will not be blocked for Internet Explorer processes.
+
+If you do not configure this policy setting, the user's preference will be used to determine whether to block ActiveX control installations for Internet Explorer processes.
 
 <!--/Description-->
 > [!TIP]
@@ -12763,8 +12898,8 @@ If you disable or do not configure this policy setting, the Web Browser Control 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *All Processes*
--   GP name: *IESF_PolicyAllProcesses_11*
+-   GP English name: *Internet Explorer Processes*
+-   GP name: *IESF_PolicyExplorerProcesses_11*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Restrict ActiveX Install*
 -   GP ADMX file name: *inetres.admx*
 
@@ -12810,11 +12945,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting enables applications hosting the Web Browser Control to block automatic prompting of file downloads that are not user initiated.
+This policy setting enables blocking of file download prompts that are not user initiated.
 
-If you enable this policy setting, the Web Browser Control will block automatic prompting of file downloads that are not user initiated for all processes.
+If you enable this policy setting, file download prompts that are not user initiated will be blocked for Internet Explorer processes.
 
-If you disable this policy setting, the Web Browser Control will not block automatic prompting of file downloads that are not user initiated for all processes.
+If you disable this policy setting, prompting will occur for file downloads that are not user initiated for Internet Explorer processes.
+
+If you do not configure this policy setting, the user's preference determines whether to prompt for file downloads that are not user initiated for Internet Explorer processes.
 
 <!--/Description-->
 > [!TIP]
@@ -12826,8 +12963,8 @@ If you disable this policy setting, the Web Browser Control will not block autom
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *All Processes*
--   GP name: *IESF_PolicyAllProcesses_12*
+-   GP English name: *Internet Explorer Processes*
+-   GP name: *IESF_PolicyExplorerProcesses_12*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Restrict File Download*
 -   GP ADMX file name: *inetres.admx*
 
@@ -14189,6 +14326,50 @@ If you do not configure this policy setting, users cannot preserve information i
 ADMX Info:  
 -   GP English name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_7*
+-   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
+-   GP ADMX file name: *inetres.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="internetexplorer-restrictedsiteszoneallowvbscripttorunininternetexplorer"></a>**InternetExplorer/RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer**  
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting allows you to manage whether VBScript can be run on pages from the specified zone in Internet Explorer.
+
+If you selected Enable in the drop-down box, VBScript can run without user intervention.
+
+If you selected Prompt in the drop-down box, users are asked to choose whether to allow VBScript to run.
+
+If you selected Disable in the drop-down box, VBScript is prevented from running.
+
+If you do not configure or disable this policy setting, VBScript is prevented from running.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow VBScript to run in Internet Explorer*
+-   GP name: *IZ_PolicyAllowVBScript_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
 -   GP ADMX file name: *inetres.admx*
 
@@ -15560,9 +15741,11 @@ ADMX Info:
 <!--Description-->
 Internet Explorer allows scripts to programmatically open, resize, and reposition windows of various types. The Window Restrictions security feature restricts popup windows and prohibits scripts from displaying windows in which the title and status bars are not visible to the user or obfuscate other Windows' title and status bars.
 
-If you enable this policy setting, scripted windows are restricted for all processes.
+If you enable this policy setting, popup windows and other restrictions apply for File Explorer and Internet Explorer processes.
 
-If you disable or do not configure this policy setting, scripted windows are not restricted.
+If you disable this policy setting, scripts can continue to create popup windows and windows that obfuscate other windows.
+
+If you do not configure this policy setting, popup windows and other restrictions apply for File Explorer and Internet Explorer processes.
 
 <!--/Description-->
 > [!TIP]
@@ -15574,8 +15757,8 @@ If you disable or do not configure this policy setting, scripted windows are not
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *All Processes*
--   GP name: *IESF_PolicyAllProcesses_8*
+-   GP English name: *Internet Explorer Processes*
+-   GP name: *IESF_PolicyExplorerProcesses_8*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Scripted Window Security Restrictions*
 -   GP ADMX file name: *inetres.admx*
 
@@ -16633,6 +16816,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

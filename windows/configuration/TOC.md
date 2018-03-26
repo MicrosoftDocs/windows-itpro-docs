@@ -12,7 +12,7 @@
 ## [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md)
 ## [Configure kiosk and shared devices running Windows 10 desktop editions](kiosk-shared-pc.md)
 ### [Set up a shared or guest PC with Windows 10](set-up-shared-or-guest-pc.md)
-### [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md)
+### [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](setup-kiosk-digital-signage.md)
 ### [Guidelines for choosing an app for assigned access (kiosk mode)](guidelines-for-assigned-access-app.md)
 ### [Create a Windows 10 kiosk that runs multiple apps](lock-down-windows-10-to-specific-apps.md)
 #### [Troubleshoot multi-app kiosk](multi-app-kiosk-troubleshoot.md)

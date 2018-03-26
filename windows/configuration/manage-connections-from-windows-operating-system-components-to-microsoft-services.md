@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic-msft
-ms.date: 01/29/2018
+ms.date: 03/22/2018
 ---
 
 # Manage connections from Windows operating system components to Microsoft services
@@ -1516,6 +1516,8 @@ To turn off **Let apps run in the background**:
     -   **1**. Force allow
     -   **2**. Force deny
 
+> [!NOTE]
+> Some apps, including Cortana and Search, might not function as expected if you set **Let apps run in the background** to **Force Deny**.
 
 ### <a href="" id="bkmk-priv-motion"></a>17.18 Motion
 

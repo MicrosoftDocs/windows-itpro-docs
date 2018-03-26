@@ -8,12 +8,18 @@ ms.sitesec: library
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
-ms.date: 11/27/2017
+ms.date: 03/08/2018
 ---
 
 # Change history for Windows 10 for Education
 
 This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
+
+## March 2018
+
+New or changed topic | Description
+--- | ---
+[Reset devices with Windows Automatic Redeployment](windows-automatic-redeployment.md) | Added section for troubleshooting Windows Automatic Redeployment.
 
 ## November 2017
 
