@@ -36,14 +36,16 @@ For a list of GEOID codes and default number of digits for each country/region, 
 
 ## CauseCodeRegistrationTable
 
-HELP NEEDED
+See [Cause codes](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/cause-codes).
 
 
 ## CDMAHeuristics
 
-**CDMAPriorityCallPrefix** HELP NEEDED
+CDMA Heuristics (on by default) makes CDMA calling more user-friendly by exposing an interface that supports multiple calls with call waiting, swapping, and three-way calling. 
 
-CDMA Heuristics (on by default) makes CDMA calling more user-friendly by exposing an interface that supports multiple calls with call waiting, swapping, and three-way calling. Set **DisableCdmaHeuristics** to **True** to disable the built-in heuristics.
+For **CDMAPriorityCallPrefix**, enter a custom call prefix that would allow the user to override an ongoing call with a remote party mostly used in emergency services and law enforcement.  
+
+Set **DisableCdmaHeuristics** to **True** to disable the built-in heuristics.
 
 
 ## PartnerAppSupport
@@ -69,16 +71,16 @@ Setting | Description
 AllowMixedAudioVideoConferencing | Set as **True** to enable audio and video calls in the same conference.
 AllowVideoConferencing | Set as **True** to enable the ability to conference video calls.
 AutoDismissUssedWaitingDialog | Set as **True** to enable automatic dismissal of "Waiting" dialog on USSD session termination.
-CallerIdBlockingPrefixList | ***HELP NEEDED HERE - what is list delimiter?***
+CallerIdBlockingPrefixList | Enter a list of prefixes which will not see the caller ID. Use a semicolon (;) as a delimiter.
 DefaultCallerIdSetting | Configure the default setting for caller ID. Select between `No one`, `Only contacts`, `Every one`, and `Network default`. If set to `Network default`, set `ShowCallerIdNetworkDefaultSetting` to **True**.
 DefaultEnableVideoCalling | Set as **True** to enable LTE video calling as the default setting.
 DefaultEnableVideoCapability | Set as **True** to enable LTE video capability sharing as the default setting.
 EnableSupplementaryServiceEraseToDeactivateOverride | Enables conversion of supplementary service erase commands to deactivate commands.
-IgnoreCallerIdBlockingPrefix | Ignore caller ID blocking prefixes.
+IgnoreCallerIdBlockingPrefix | DO NOT USE
 IgnoreMWINotifications | Set as **True** to configure the voicemail system so the phone ignores message waiting indicator (MWI) notifications.
-IgnoreProhibitedDialingPrefix | Ignore prohibited dialing prefix.
+IgnoreProhibitedDialingPrefix | Ignore prohibited dialing prefix. An OEM/MO can specify a certain set of strings by region that when dialed will block a user's caller ID from being displayed on the device receiving the call. The list is separated by semicolon. This setting does not apply beyond Windows 10, version 1709.
 IgnoreUssdExclusions | Set as **True** to ignore Unstructured Supplementary Service Data (USSD) exclusions.
-ProhibitedDialingPrefixList | ***HELP NEEDED HERE - what is list delimiter?***
+ProhibitedDialingPrefixList | A semicolon delimited list of previxes that are prohibited from being dialed.
 ResetCallForwarding | When set to **True**, user is provided with an option to retry call forwarding settings query.
 ShowCallerIdNetworkDefaultSetting | Indicates whether the network default setting can be allowed for outgoing caller ID.
 ShowVideoCallingSwitch | Use to specify whether to show the video capability sharing switch on the mobile device's Settings screen.
@@ -93,13 +95,7 @@ To customize call progress branding when a call is made using a specific audio c
 
 ### IMSSubscriptionUpdate
 
-Setting | Description
---- | ---
-AlertData | text entry ***NEED HELP HERE***
-AlertDataType | numeric 0-7 ***NEED HELP HERE***
-AlertSource | text entry ***NEED HELP HERE***
-AlertType |  text entry ***NEED HELP HERE***
-ServiceID | text entry ***NEED HELP HERE***
+These are Verizon/Sprint-only settings to allow the operator to send an OMA-DM update to the device with the given alert characteristics, which are defined between the mobile operator and OEM, which in turn will inform the device to turn on or off IMS.
 
 ### RoamingNumberOverrides
 
