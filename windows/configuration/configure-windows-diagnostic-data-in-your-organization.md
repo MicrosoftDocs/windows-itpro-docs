@@ -1,6 +1,6 @@
 ---
 description: Use this article to make informed decisions about how you can configure diagnostic data in your organization.
-title: Configure Windows diagnostic data in your organization (Windows 10)
+title: Overview and configuration of diagnosit data in Windows 10
 keywords: privacy
 ms.prod: w10
 ms.mktglfcycl: manage
