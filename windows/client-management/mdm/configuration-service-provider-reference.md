@@ -2535,7 +2535,6 @@ The following list shows the configuration service providers supported in Window
 | [DeveloperSetup CSP](developersetup-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)2   (Provisioning only)|
 | [DeviceStatus CSP](devicestatus-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)  |
 | [DevInfo CSP](devinfo-csp.md)  | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [DiagnosticLog CSP](diagnosticlog-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)    |
 | [DMAcc CSP](dmacc-csp.md)      | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [DMClient CSP](dmclient-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
@@ -2632,6 +2631,8 @@ The CSPs supported in Windows 10 S is the same as in Windows 10 Pro except that 
 - [CellularSettings CSP](cellularsettings-csp.md)
 - [CertificateStore CSP](certificatestore-csp.md)
 - [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)
+- [CMPolicy CSP](cmpolicy-csp.md)
+- [CM_ProxyEntries CSP](cm-proxyentries-csp.md)
 - [CM_CellularEntries CSP](cm-cellularentries-csp.md)
 - [Defender CSP](defender-csp.md)
 - [DevDetail CSP](devdetail-csp.md)
@@ -2641,6 +2642,8 @@ The CSPs supported in Windows 10 S is the same as in Windows 10 Pro except that 
 - [DiagnosticLog CSP](diagnosticlog-csp.md)
 - [DMAcc CSP](dmacc-csp.md)
 - [DMClient CSP](dmclient-csp.md)
+- [eUICCs CSP](euiccs-csp.md)
+- [Firewall CSP](firewall-csp.md)
 - [EMAIL2 CSP](email2-csp.md)
 - [EnterpriseAPN CSP](enterpriseapn-csp.md)
 - [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)
@@ -2670,4 +2673,5 @@ The CSPs supported in Windows 10 S is the same as in Windows 10 Pro except that 
 - [WiFi CSP](wifi-csp.md)
 - [Win32AppInventory CSP](win32appinventory-csp.md)
 - [WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)
+- [WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)
 - [WindowsLicensing CSP](windowslicensing-csp.md)

@@ -241,7 +241,6 @@
 ##### [Step 2: Resolve issues](upgrade/upgrade-readiness-resolve-issues.md)
 ##### [Step 3: Deploy Windows](upgrade/upgrade-readiness-deploy-windows.md)
 ##### [Additional insights](upgrade/upgrade-readiness-additional-insights.md)
-#### [Troubleshoot Upgrade Readiness](upgrade/troubleshoot-upgrade-readiness.md)
 ### [Monitor Windows Updates with Update Compliance](update/update-compliance-monitor.md)
 #### [Get started with Update Compliance](update/update-compliance-get-started.md)
 #### [Use Update Compliance](update/update-compliance-using.md)
@@ -253,6 +252,8 @@
 ### [Device Health](update/device-health-monitor.md)
 #### [Get started with Device Health](update/device-health-get-started.md)
 #### [Using Device Health](update/device-health-using.md)
+### [Enrolling devices in Windows Analytics](update/windows-analytics-get-started.md)
+### [Troubleshooting Windows Analytics and FAQ](update/windows-analytics-FAQ-troubleshooting.md)
 
 ## [Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management](upgrade/upgrade-windows-phone-8-1-to-10.md)
 

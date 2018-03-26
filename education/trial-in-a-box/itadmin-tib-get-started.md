@@ -11,7 +11,7 @@ ms.pagetype: edu
 ROBOTS: noindex,nofollow
 author: CelesteDG
 ms.author: celested
-ms.date: 12/11/2017
+ms.date: 03/18/2018
 ---
 
 # IT Admin Trial in a Box Guide
@@ -258,6 +258,16 @@ Follow these instructions to confirm if you configured your tenant correctly and
     2. From the **Microsoft Store**, click **...** (See more) and select **Downloads and updates**.
     3. In the **Downloads and updates** page, click **Get updates**.
 * [Try the BYOD scenario](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#connect-other-devices-to-your-cloud-infrastructure) 
+
+## Update your apps
+
+Microsoft Education works hard to bring you the most current Trial in a Box program experience. As a result, you may need to update your apps to get our latest innovations. 
+
+For more information about checking for updates, and how to optionally turn on automatic app updates, see the following articles:
+
+- [Check updates for apps and games from Microsoft Store](https://support.microsoft.com/en-us/help/4026259/microsoft-store-check-updates-for-apps-and-games)
+
+- [Turn on automatic app updates](https://support.microsoft.com/en-us/help/15081/windows-turn-on-automatic-app-updates)
 
 
 ## Get more info
