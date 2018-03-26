@@ -54,7 +54,7 @@ See [Dialer codes to launch diagnostic applications](https://docs.microsoft.com/
 
 ## PerSimSettings
 
-Use to configure settings for each subscriber identification module (SIM) card. Enter the Integrated Circuit Card Identifier (ICCID) for the SIM card, select **Add**, and then configure the folowing settings.
+Use to configure settings for each subscriber identification module (SIM) card. Enter the Integrated Circuit Card Identifier (ICCID) for the SIM card, select **Add**, and then configure the folowing settings. 
 
 ### Critical
 
