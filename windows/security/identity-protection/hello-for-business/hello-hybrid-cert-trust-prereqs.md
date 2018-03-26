@@ -85,7 +85,7 @@ The AD FS farm used with Windows Hello for Business must be Windows Server 2016 
 ### Section Review ###
 > [!div class="checklist"]
 > * Windows Server 2016 Active Directory Federation Services
-> * Minimum update of [KB4034658 (14393.1593)](https://support.microsoft.com/en-us/help/4034658)
+> * Minimum update of [KB4088889 (14393.2155)](https://support.microsoft.com/en-us/help/4088889)
 
 <br>
 
