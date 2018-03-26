@@ -31,8 +31,8 @@ ms.date: 04/16/2018
 The following best practices serve as a guideline for you to maximize the advanced hunting capability. 
 - Use time filters first. Azure Kusto is highly optimized to utilize time filters. For more information, see [Azure Kusto](https://docs.microsoft.com/connectors/kusto/).
 - Put filters that are expected to remove most of the data in the beginning of the query, following the time filter.
-- Prefer 'has' keyword over 'contains' when looking for full tokens.
-- Prefer looking in specific column rather than using full text search across all columns.
+- Use 'has' keyword over 'contains' when looking for full tokens.
+- Use looking in specific column rather than using full text search across all columns.
 - When joining between two tables - choose the table with less rows to be the first one (left-most). 
 - When joining between two tables - project only needed columns from both sides of the join.
 
