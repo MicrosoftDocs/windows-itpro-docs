@@ -39,17 +39,6 @@ To get you started in querying your data, you can use the basic or advanced quer
 
 ![Image of Advanced hunting window](images/atp-advanced-hunting.png)
 
-## Before you begin
-To maximize the advanced hunting capability, it's a good idea to understand the following query best practices.
-
-### Query best practices
-- Use time filters first. Azure Kusto is highly optimized to utilize time filters. For more information, see [Azure Kusto](https://docs.microsoft.com/connectors/kusto/).
-- Put filters that are expected to remove most of the data in the beginning of the query, following the time filter.
-- Prefer 'has' keyword over 'contains' when looking for full tokens.
-- Prefer looking in specific column rather than using full text search across all columns.
-- When joining between two tables - choose the table with less rows to be the first one (left-most). 
-- When joining between two tables - project only needed columns from both sides of the join.
-
 ## Use advanced hunting to query data
 
 A typical query starts with a table name followed by a series of operators separated by **|**.
