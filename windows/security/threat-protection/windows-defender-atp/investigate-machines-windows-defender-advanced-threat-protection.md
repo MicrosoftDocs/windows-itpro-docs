@@ -70,7 +70,7 @@ If you have enabled the Azure ATP feature and there are alerts related to the ma
 >You'll need to enable the integration on both Azure ATP and Windows Defender ATP to use this feature. In Windows Defender ATP, you can enable this feature in advanced features. For more information on how to enable advanced features, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md).
 
 **Machine reporting**</br>
-Provides the last internal IP and exteral IP of the machine. It also shows when the machine was first and last seen reporting to the service. 
+Provides the last internal IP and external IP of the machine. It also shows when the machine was first and last seen reporting to the service. 
 
 ## Manage machine group and tags
 Machine group and tags support proper mapping of the network, enabling you to attach different tags to machines to capture context and to enable dynamic groups creation as part of an incident. 
