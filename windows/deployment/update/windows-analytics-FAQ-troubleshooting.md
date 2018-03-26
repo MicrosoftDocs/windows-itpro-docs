@@ -155,8 +155,8 @@ Double-check that IE site discovery opt-in has been configured in the deployment
 Also, on Windows 10 devices remember that IE site discovery requires data diagnostics set to the Enhanced level.
 Finally, Upgrade Readiness only collects IE site discovery data on devices that are not yet upgraded to the target operating system version specified in the Upgrade Readiness Overview blade. This is because Upgrade Readiness targets upgrade planning (for devices not yet upgraded).
 
-### Device Names don't show up on Windows 10 1803 devices
-Starting with Windows 10 1803, the device name is no longer collected by default and requires a separate opt-in. For more information, see [Enrolling devices in Windows Analytics](windows-analytics-get-started.md).
+### Device Names don't show up on Windows 10 devices
+Starting with the build currently available in the Windows Insider Program, the device name is no longer collected by default and requires a separate opt-in. For more information, see [Enrolling devices in Windows Analytics](windows-analytics-get-started.md).
 
 ### Disable Upgrade Readiness
 
