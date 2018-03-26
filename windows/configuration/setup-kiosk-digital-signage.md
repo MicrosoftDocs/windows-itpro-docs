@@ -201,14 +201,11 @@ Clear-AssignedAccess
 >
 >Account type: Local standard user 
 
-<<<<<<< HEAD:windows/configuration/set-up-a-kiosk-for-windows-10-for-desktop-editions.md
 >[!IMPORTANT]
 >When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature does not work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows}(https://support.microsoft.com/help/324737/how-to-turn-on-automatic-logon-in-windows).
 
 Edit the registry to have an account automatically logged on.
-=======
 When you use the **Provision kiosk devices** wizard in Windows Configuration Designer, you can configure the kiosk to run either a Universal Windows app or a Classic Windows application.
->>>>>>> refs/remotes/origin/rs4:windows/configuration/setup-kiosk-digital-signage.md
 
 >[!IMPORTANT]
 >When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
