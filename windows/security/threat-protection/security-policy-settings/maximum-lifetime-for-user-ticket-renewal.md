@@ -84,7 +84,7 @@ Configure the **Maximum lifetime for user ticket renewal** setting to 7 days.
 
 ### Potential impact
 
-None. This is the default configuration.
+Seven (7) days is the default configuration. Changing the default configuration is a tradeoff between user convenience and security. A shorter time period requires users to authenticate with a DC more often. But remote users who authenticate with a DC infrequently can be locked out of services until they reauthenticate. 
 
 ## Related topics
 
