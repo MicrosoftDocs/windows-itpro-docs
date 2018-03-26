@@ -54,7 +54,7 @@ To enable data sharing, configure your proxy sever to whitelist the following en
 
 
 >[!NOTE]
->If you have SSL Inspection enabled enabled on your proxy server, you may need to add the above URLs to your SSL inspection exclusion list to allow data to reach Microsoft's endpoints.
+>If you have SSL Inspection enabled on your proxy server, you might need to add the above URLs to your SSL inspection exclusion list to allow data to reach Microsoft endpoints.
 
 ### Configuring endpoint access with proxy servers
 If your organization uses proxy server authentication for outbound traffic, use one or more of the following approaches to ensure that the diagnostic data is not blocked by proxy authentication:
