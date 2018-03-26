@@ -72,6 +72,10 @@ ms.author: jdecker
             </StartLayout>
             <Taskbar ShowTaskbar="true"/>
         </Profile>
+        <Profile Id="{9A2A790F-19F6-5764-974A-22B19E722C23}">
+            <KioskModeApp AppUserModelId="Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer" />
+        </Profile>    
+        </Profile>
         <Profile Id="{C96117CE-6231-4588-9C8D-9CE92D8DC363}">
             <KioskModeApp AppUserModelId="Microsoft.WindowsAlarms_8wekyb3d8bbwe!App" />
         </Profile>
@@ -80,6 +84,10 @@ ms.author: jdecker
         </Profile>
     </Profiles>
     <Configs>
+        <Config>
+            <AutoLogonAccount>kioskuser</AutoLogonAccount>
+            <DefaultProfile Id="{9A2A790F-19F6-5764-974A-22B19E722C23}"/>
+        </Config>
         <Config>
             <Account>multiappuser1</Account>
             <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
