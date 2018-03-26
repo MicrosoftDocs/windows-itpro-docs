@@ -27,9 +27,7 @@ ms.author: jdecker
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    >
+<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
     <Profiles>
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
             <AllAppsList>
@@ -72,36 +70,74 @@ ms.author: jdecker
             </StartLayout>
             <Taskbar ShowTaskbar="true"/>
         </Profile>
-        <Profile Id="{9A2A790F-19F6-5764-974A-22B19E722C23}">
-            <KioskModeApp AppUserModelId="Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer" />
-        </Profile>    
-        </Profile>
-        <Profile Id="{C96117CE-6231-4588-9C8D-9CE92D8DC363}">
-            <KioskModeApp AppUserModelId="Microsoft.WindowsAlarms_8wekyb3d8bbwe!App" />
-        </Profile>
-        <Profile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}">
-            <KioskModeApp AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"/>
+        <Profile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}">
+            <AllAppsList>
+                <AllowedApps>
+                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!BCHost" />
+                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!ContentProcess" />
+                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!F12" />
+                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
+                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!PdfReader" />
+                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" />
+                </AllowedApps>
+            </AllAppsList>
+            <StartLayout>
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                      <LayoutOptions StartTileGroupCellWidth="6" />
+                      <DefaultLayoutOverride>
+                        <StartLayoutCollection>
+                          <defaultlayout:StartLayout GroupCellWidth="6">
+                            <start:Group Name="Life at a glance">
+                              <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+                              <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
+                              <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%AppData%\Microsoft\Windows\Start Menu\Programs\Accessories\notepad.lnk" />
+                            </start:Group>
+                          </defaultlayout:StartLayout>
+                        </StartLayoutCollection>
+                      </DefaultLayoutOverride>
+                    </LayoutModificationTemplate>
+                ]]>
+            </StartLayout>
+            <Taskbar ShowTaskbar="false"/>
         </Profile>
     </Profiles>
     <Configs>
         <Config>
-            <AutoLogonAccount>kioskuser</AutoLogonAccount>
-            <DefaultProfile Id="{9A2A790F-19F6-5764-974A-22B19E722C23}"/>
-        </Config>
-        <Config>
-            <Account>multiappuser1</Account>
+            <Account>domain\account</Account>
             <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
         </Config>
         <Config>
-            <Account>singleappuser1</Account>
-            <DefaultProfile Id="{C96117CE-6231-4588-9C8D-9CE92D8DC363}"/>
+            <Account>AzureAD\john@contoso.onmicrosoft.com</Account>
+            <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
         </Config>
         <Config>
-            <Account>singleappuser</Account>
-            <DefaultProfile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}"/>
+            <Account>localaccount</Account>
+            <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
+        </Config>
+        <Config>
+            <AutoLogonAccount />
+            <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
+        </Config>
+        <Config>
+            <UserGroup Type="LocalGroup" Name="mygroup" />
+            <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
+        </Config>
+        <Config>
+            <UserGroup Type="ActiveDirectoryGroup" Name="redmond\somegroup" />
+            <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
+        </Config>
+        <Config>
+            <UserGroup Type="AzureActiveDirectoryGroup" Name="a8d36e43-4180-4ac5-a627-fb8149bba1ac" />
+            <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
+        </Config>
+        <Config>
+            <SpecialGroup Name="Visitor"/>
+            <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
         </Config>
     </Configs>
 </AssignedAccessConfiguration>
+
 ```
 
 ## XSD for AssignedAccess configuration XML
