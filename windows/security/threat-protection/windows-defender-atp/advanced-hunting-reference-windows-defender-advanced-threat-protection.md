@@ -27,15 +27,6 @@ ms.date: 04/16/2018
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-## Advanced hunting query best practices
-The following best practices serve as a guideline of query performance best practices and for you to get faster results and be able to run complex queries. 
-- Use time filters first. Azure Kusto is highly optimized to utilize time filters. For more information, see [Azure Kusto](https://docs.microsoft.com/connectors/kusto/).
-- Put filters that are expected to remove most of the data in the beginning of the query, following the time filter.
-- Use 'has' keyword over 'contains' when looking for full tokens.
-- Use looking in specific column rather than using full text search across all columns.
-- When joining between two tables - choose the table with less rows to be the first one (left-most). 
-- When joining between two tables - project only needed columns from both sides of the join.
-
 
 ## Advanced hunting table reference
 When you run a query using Advanced hunting, a table with columns is returned as a result. 
