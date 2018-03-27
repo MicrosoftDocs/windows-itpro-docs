@@ -264,7 +264,7 @@ The following example hides the taskbar:
 
 ##### KioskModeApp 
 
-**KioskModeApp** is used for a [kiosk profile](#profile) only. Enter the AUMID for a single app.
+**KioskModeApp** is used for a [kiosk profile](#profile) only. Enter the AUMID for a single app. You can only specify one kiosk profile in the XML.
 
 ```xml
 <KioskModeApp AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"/>

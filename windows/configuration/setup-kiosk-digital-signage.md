@@ -230,6 +230,9 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
 >[!NOTE]
 >If you want to use [the advanced editor in Windows Configuration Designer](provisioning-packages/provisioning-create-package.md#configure-settings), specify the user account and app (by AUMID) in **Runtime settings** &gt; **AssignedAccess** &gt; **AssignedAccessSettings**
 
+>[!TIP]
+>You can also use [an XML file to configure both multi-app and single-app kiosks.](lock-down-windows-10-to-specific-apps.md)
+
 
 
 
