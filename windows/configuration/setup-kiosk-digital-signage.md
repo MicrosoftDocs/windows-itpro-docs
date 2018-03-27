@@ -201,6 +201,10 @@ Clear-AssignedAccess
 >
 >Account type: Local standard user 
 
+>[!IMPORTANT]
+>When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature does not work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows}(https://support.microsoft.com/help/324737/how-to-turn-on-automatic-logon-in-windows).
+
+Edit the registry to have an account automatically logged on.
 When you use the **Provision kiosk devices** wizard in Windows Configuration Designer, you can configure the kiosk to run either a Universal Windows app or a Classic Windows application.
 
 >[!IMPORTANT]
@@ -225,6 +229,9 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
 
 >[!NOTE]
 >If you want to use [the advanced editor in Windows Configuration Designer](provisioning-packages/provisioning-create-package.md#configure-settings), specify the user account and app (by AUMID) in **Runtime settings** &gt; **AssignedAccess** &gt; **AssignedAccessSettings**
+
+>[!TIP]
+>You can also use [an XML file to configure both multi-app and single-app kiosks.](lock-down-windows-10-to-specific-apps.md)
 
 
 
@@ -281,6 +288,8 @@ The following steps explain how to configure a kiosk in Microsoft Intune. For ot
 Using Shell Launcher, you can configure a kiosk device that runs a Classic Windows application as the user interface. The application that you specify replaces the default shell (explorer.exe) that usually runs when a user logs on.
 
 >[!NOTE]
+>In Windows 10, version 1803, you can configure Shell Launcher using the **ShellLauncher** node of the [Assigned Access CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/assignedaccess-csp).
+>
 >You can also configure a kiosk device that runs a Classic Windows application by using the [Provision kiosk devices wizard](#wizard).
 
 >[!WARNING]
