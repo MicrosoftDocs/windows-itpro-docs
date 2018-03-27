@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/15/2018
+ms.date: 03/23/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -1329,11 +1329,16 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr>
+<<<<<<< HEAD
+<td style="vertical-align:top">[AccountManagement CSP](accountmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+=======
 <td style="vertical-align:top">[RootCATrustedCertificates CSP](rootcacertificates-csp.md)</td>
 <td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
 <ul>
 <li>UntrustedCertificates</li>
 </ul>
+>>>>>>> 2aa0839b99c52229c7cf43d58f467019b1284a6a
 </td></tr>
 </tbody>
 </table>
@@ -1638,6 +1643,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>[How to create a custom xml to enable an ADMX-backed policy and deploy the XML in Intune](https://www.microsoft.com/showcase/video.aspx?uuid=bdc9b54b-11b0-4bdb-a022-c339d16e7121)</li>
 <li>[How to import a custom ADMX file to a device using Intune](https://www.microsoft.com/showcase/video.aspx?uuid=a59888b1-429f-4a49-8570-c39a143d9a73)</li>
 </ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[AccountManagement CSP](accountmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[RootCATrustedCertificates CSP](rootcacertificates-csp.md)</td>
