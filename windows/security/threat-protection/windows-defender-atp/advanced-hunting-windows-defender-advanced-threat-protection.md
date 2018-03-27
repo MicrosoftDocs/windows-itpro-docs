@@ -1,5 +1,5 @@
 ---
-title: Advanced hunting in Windows Defender ATP
+title: Query data using Advanced hunting in Windows Defender ATP
 description: Learn about advanced hunting in Windows Defender ATP and how to query ATP data.
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 04/16/2018
 ---
 
-# Advanced hunting in Windows Defender ATP
+# Query data using Advanced hunting in Windows Defender ATP
 
 **Applies to:**
 
