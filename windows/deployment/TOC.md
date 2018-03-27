@@ -248,6 +248,7 @@
 ##### [Security Update Status report](update/update-compliance-security-update-status.md)
 ##### [Feature Update Status report](update/update-compliance-feature-update-status.md)
 ##### [Windows Defender AV Status report](update/update-compliance-wd-av-status.md)
+##### [Delivery Optimization in Update Compliance](update/update-compliance-delivery-optimization.md)
 ##### [Update Compliance Perspectives](update/update-compliance-perspectives.md)
 ### [Device Health](update/device-health-monitor.md)
 #### [Get started with Device Health](update/device-health-get-started.md)

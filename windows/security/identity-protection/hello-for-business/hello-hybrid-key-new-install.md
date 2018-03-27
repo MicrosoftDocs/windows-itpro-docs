@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 10/20/2017
+ms.date: 03/26/2018
 ---
 # Windows Hello for Business Key Trust New Installation
 
@@ -70,7 +70,7 @@ Sign-in using _Enterprise Admin_ equivalent credentials on Windows Server 2012 o
     
 ## Configure a Production Public Key Infrastructure
 
-If you do have an existing public key infrastructure, please review [Certification Authority Guidance](https://technet.microsoft.com/library/hh831574.aspx) from Microsoft TechNet to properly design your infrastructure.   Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy](https://technet.microsoft.com/library/hh831348.aspx) for instructions on how to configure your public key infrastructure using the information from your design session.
+If you do not have an existing public key infrastructure, please review [Certification Authority Guidance](https://technet.microsoft.com/library/hh831574.aspx) from Microsoft TechNet to properly design your infrastructure.   Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy](https://technet.microsoft.com/library/hh831348.aspx) for instructions on how to configure your public key infrastructure using the information from your design session.
 
 > [!IMPORTANT]
 > For Azure AD joined device to authenticate to and use on-premises resources, ensure you:
