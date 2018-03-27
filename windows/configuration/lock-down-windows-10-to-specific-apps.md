@@ -370,7 +370,7 @@ Group accounts are specified using `<UserGroup>`. Nested groups are not supporte
 <span id="add-xml" />
 ### Add XML file to provisioning package
 
-Before you add the XML file to a provisioning package, you can [validate your configuration XML against the XSD](multi-app-kiosk-xml.md#xsd-for-assignedaccess-configuration-xml).
+Before you add the XML file to a provisioning package, you can [validate your configuration XML against the XSD](kiosk-xml.md#xsd-for-assignedaccess-configuration-xml).
 
 Use the Windows Configuration Designer tool to create a provisioning package. [Learn how to install Windows Configuration Designer.](provisioning-packages/provisioning-install-icd.md)
 
