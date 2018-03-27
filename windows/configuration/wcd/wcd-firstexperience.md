@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 09/06/2017
+ms.date: 04/23/2018
 ---
 
 # FirstExperience (Windows Configuration Designer reference)
@@ -22,8 +22,8 @@ Use these settings to configure the out-of-box experience (OOBE) to set up HoloL
 
 Setting | Description
 --- | ---
-PreferredRegion | Enter the [geographical location identifier](https://msdn.microsoft.com/en-us/library/windows/desktop/dd374073.aspx) for the region.
-PreferredTimezone | Enter the timezone. [Field calls for text?? Shouldn't it be index?](https://msdn.microsoft.com/en-us/library/ms912391.aspx)
+PreferredRegion | Enter the [geographical location identifier](https://msdn.microsoft.com/library/windows/desktop/dd374073.aspx) for the region.
+PreferredTimezone | Enter the timezone. [Microsoft Time Zone Index Values](https://msdn.microsoft.com/library/ms912391.aspx)
 SkipCalibration | Initial setup of HoloLens includes a calibration step. Set to **True** to skip calibration.
 SkipTraining | Initial setup of HoloLens includes training on how to perform the gestures to operate HoloLens. Set to **True** to skip training. 
 SkipWifi | Set to **True** to skip connecting to a Wi-fi network.

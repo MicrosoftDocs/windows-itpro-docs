@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
-ms.date: 03/23/2018
+ms.date: 04/23/2018
 ---
 
 # Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education
@@ -142,8 +142,7 @@ If you do not want the kiosk account signed in automatically when the device res
 
 To remove assigned access, choose **Turn off assigned access and sign out of the selected account**.
 
->[!NOTE]  
->Single-app kiosk configuration using assigned access does not work on a device that is connected to more than one monitor.
+
 
 
 <span id="powershell"/>

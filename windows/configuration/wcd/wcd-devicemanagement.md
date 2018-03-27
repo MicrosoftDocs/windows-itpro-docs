@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 09/21/2017
+ms.date: 04/23/2018
 ---
 
 # DeviceManagement (Windows Configuration Designer reference)
