@@ -6171,6 +6171,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/configuration/multi-app-kiosk-xml.md",
+"redirect_url": "windows/configuration/kiosk-xml.md",
+"redirect_document_id": true     
+},
+{
 "source_path": "windows/configure/provisioning-uninstall-package.md",
 "redirect_url": "/windows/configuration/provisioning-packages/provisioning-uninstall-package",
 "redirect_document_id": true

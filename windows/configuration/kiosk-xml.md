@@ -1,6 +1,6 @@
 ---
-title: Multi-app kiosk XML reference (Windows 10)
-description: XML and XSD for multi-app kiosk device configuration.
+title: Assigned Access kiosk XML reference (Windows 10)
+description: XML and XSD for kiosk device configuration.
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
 keywords: ["lockdown", "app restrictions", "applocker"]
 ms.prod: w10
@@ -13,7 +13,7 @@ ms.date: 08/14/2017
 ms.author: jdecker
 ---
 
-# Multi-app kiosk XML reference
+#  Assigned Access (kiosk) XML reference
 
 
 **Applies to**
