@@ -9,13 +9,12 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 10/20/2017
+ms.date: 03/26/2018
 ---
 # Planning a Windows Hello for Business Deployment
 
 **Applies to**
 -   Windows 10
--   Windows 10 Mobile
 
 > This guide only applies to Windows 10, version 1511 or higher.
 
@@ -176,7 +175,7 @@ A successful Windows Hello for Business requires all devices to register with th
 
 If box **1a** on your planning worksheet reads **cloud only** or **hybrid**, write **Azure** in box **1c** on your planning worksheet.
 
-If box **1a** on your planning worksheet reads **on-premises**, write **AF FS** in box **1c** on your planning worksheet.
+If box **1a** on your planning worksheet reads **on-premises**, write **AD FS** in box **1c** on your planning worksheet.
 
 ### Key Registration
 
@@ -184,7 +183,7 @@ All users provisioning Windows Hello for Business have their public key register
 
 If box **1a** on your planning worksheet reads **cloud only** or **hybrid**, write **Azure** in box **1d** on your planning worksheet.
 
-If box **1a** on your planning worksheet reads **on-premises**, write **AF FS** in box **1d** on your planning worksheet.
+If box **1a** on your planning worksheet reads **on-premises**, write **AD FS** in box **1d** on your planning worksheet.
 
 ### Directory Synchronization
 

@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/12/2018
+ms.date: 03/23/2018
 ---
 
 # Configuration service provider reference
@@ -29,6 +29,7 @@ Footnotes:
 - 1 - Added in Windows 10, version 1607
 - 2 - Added in Windows 10, version 1703
 - 3 - Added in Windows 10, version 1709
+- 4 - Added in Windows 10, version 1803
 
 <!--StartCSPs-->
 <hr/>
@@ -36,7 +37,7 @@ Footnotes:
 ## CSP support  
 
 <!--StartCSP-->
-[APPLICATION CSP](application-csp.md)  
+[AccountManagement CSP](accountmanagement-csp.md)  
 
 <!--StartSKU-->
 <table>
@@ -50,13 +51,13 @@ Footnotes:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -113,6 +114,34 @@ Footnotes:
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
+[APPLICATION CSP](application-csp.md)  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -2509,7 +2538,8 @@ Footnotes:
  Footnotes: 
 - 1 - Added in Windows 10, version 1607
 - 2 - Added in Windows 10, version 1703  
-- 3 - Added in Windows 10, version 1803  
+- 3 - Added in Windows 10, version 1709
+- 4 - Added in Windows 10, version 1803
 
 ## CSP DDF files download
 
@@ -2527,6 +2557,7 @@ The following list shows the configuration service providers supported in Window
 
 | Configuration service provider        | Windows Holographic edition      | Windows Holographic for Business edition |
 |--------|--------|------------|
+| [AccountManagement CSP](accountmanagement-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)3       |
 | [Application CSP](application-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [AppLocker CSP](applocker-csp.md)      | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [CertificateStore CSP](certificatestore-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)|
@@ -2549,30 +2580,11 @@ The following list shows the configuration service providers supported in Window
 
 Footnotes: 
 - 2 - Added in Windows 10, version 1703
-
-## <a href="" id="newcsps"></a>New CSPs added in Windows 10, version 1703
-
--   [BitLocker CSP](bitlocker-csp.md)
--   [CleanPC CSP](cleanpc-csp.md)
--   [DeveloperSetup CSP](developersetup-csp.md)
--   [DynamicManagement CSP](dynamicmanagement-csp.md)
--   [EnterpriseAppVManagement CSP](enterpriseappvmanagement-csp.md)
--   [Messaging CSP](messaging-csp.md)
--   [NetworkProxy CSP](networkproxy-csp.md)
--   [NetworkQoSPolicy CSP](networkqospolicy-csp.md)
--   [Office CSP](office-csp.md)
--   [Personalization CSP](personalization-csp.md)
-
-## <a href="" id="newcsps"></a>New CSPs added in Windows 10, version 1511
-
--   [AllJoynManagement CSP](alljoynmanagement-csp.md)
--   [Maps CSP](maps-csp.md)
--   [Reporting CSP](reporting-csp.md)
--   [SurfaceHub CSP](surfacehub-csp.md)
--   [WindowsSecurityAuditing CSP](windowssecurityauditing-csp.md)
+- 3 - Added in Windows 10, version 1803
 
 ## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
 
+-   [AccountManagement CSP](accountmanagement-csp.md)
 -   [APPLICATION CSP](application-csp.md)
 -   [CertificateStore CSP](certificatestore-csp.md)
 -   [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)

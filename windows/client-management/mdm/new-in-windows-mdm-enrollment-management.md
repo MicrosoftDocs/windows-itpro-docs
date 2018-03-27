@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/15/2018
+ms.date: 03/23/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -1276,16 +1276,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top">[RemoteWipe CSP](remotewipe-csp.md)</td>
-<td style="vertical-align:top"><p>Added the following nodes in Windows 10, version 1803:</p>
-<ul>
-<li>AutomaticRedeployment</li>
-<li>doAutomaticRedeployment</li>
-<li>LastError</li>
-<li>Status</li>
-</ul>
-</td></tr>
-<tr class="odd">
 <td style="vertical-align:top">[Defender CSP](defender-csp.md)</td>
 <td style="vertical-align:top"><p>Added new node (OfflineScan) in Windows 10, version 1803.</p>
 </td></tr>
@@ -1339,11 +1329,16 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr>
+<<<<<<< HEAD
+<td style="vertical-align:top">[AccountManagement CSP](accountmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+=======
 <td style="vertical-align:top">[RootCATrustedCertificates CSP](rootcacertificates-csp.md)</td>
 <td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
 <ul>
 <li>UntrustedCertificates</li>
 </ul>
+>>>>>>> 2aa0839b99c52229c7cf43d58f467019b1284a6a
 </td></tr>
 </tbody>
 </table>
@@ -1650,6 +1645,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul>
 </td></tr>
 <tr>
+<td style="vertical-align:top">[AccountManagement CSP](accountmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+</td></tr>
+<tr>
 <td style="vertical-align:top">[RootCATrustedCertificates CSP](rootcacertificates-csp.md)</td>
 <td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
 <ul>
@@ -1683,6 +1682,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tr>
 <td style="vertical-align:top">[MultiSIM CSP](multisim-csp.md)</td>
 <td style="vertical-align:top"><p>Added SyncML examples and updated the settings descriptions.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[RemoteWipe CSP](remotewipe-csp.md)</td>
+<td style="vertical-align:top"><p>Reverted back to Windows 10, version 1709. Removed previous draft documentation for version 1803.</p>
 </td></tr>
 </tbody>
 </table>
@@ -1884,16 +1887,6 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>CustomErrorText</li>
 <li>SkipDeviceStatusPage</li>
 <li>SkipUserStatusPage</li>
-</ul>
-</td></tr>
-<tr class="odd">
-<td style="vertical-align:top">[RemoteWipe CSP](remotewipe-csp.md)</td>
-<td style="vertical-align:top"><p>Added the following nodes in Windows 10, version 1803:</p>
-<ul>
-<li>AutomaticRedeployment</li>
-<li>doAutomaticRedeployment</li>
-<li>LastError</li>
-<li>Status</li>
 </ul>
 </td></tr>
 <tr class="odd">
