@@ -44,7 +44,7 @@ To enable data sharing, configure your proxy sever to whitelist the following en
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
-| `https://v10.events.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for Windows 10, version 1803|
+| `https://v10.events.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for use with the build of Windows 10 available in the Windows Insider Program|
 | `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for Windows 10, version 1709 or earlier |
 | `https://vortex-win.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for operating systems older than Windows 10 |
 | `https://settings-win.data.microsoft.com` | Enables the compatibility update to send data to Microsoft. 
@@ -69,14 +69,14 @@ The compatibility update scans your devices and enables application usage tracki
 
 | **Operating System** | **Updates** |
 |----------------------|-----------------------------------------------------------------------------|
-| Windows 10        | The latest cumulative updates must be installed on Windows 10 devices to make sure that the required compatibility updates are installed. You can find the latest cumulative update on the [Microsoft Update Catalog](https://catalog.update.microsoft.com) <P>Note: Windows 10 LTSB is not supported by Upgrade Readiness. See [Upgrade readiness requirements](../upgrade/upgrade-readiness-requirements.md) for more information. |
+| Windows 10        | Windows 10 includes the compatibility update, so you will automatically have the latest compatibility update so long as you continue to keep your Windows 10 devices up-to-date with cummulative updates. <P>Note: Windows 10 LTSB is not supported by Upgrade Readiness. See [Upgrade readiness requirements](../upgrade/upgrade-readiness-requirements.md) for more information. |
 | Windows 8.1          | [KB 2976978](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2976978)<br>Performs diagnostics on the Windows 8.1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2976978>|
 | Windows 7 SP1        | [KB2952664](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2952664) <br>Performs diagnostics on the Windows 7 SP1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2952664>|
 
 >[!IMPORTANT] 
 >Restart devices after you install the compatibility updates for the first time.
 
->[!NOTE]
+>[!NOTE] 
 >We recommend you configure your update management tool to automatically install the latest version of these updates. There is a related optional update, [KB 3150513](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=3150513), which can provide updated configuration and definitions for older compatibiltiy updates. For more information about this optional update, see <https://support.microsoft.com/kb/3150513>.
 
 
@@ -137,6 +137,7 @@ These policies are under Microsoft\Windows\DataCollection:
 | CommercialId | In order for your devices to show up in Windows Analytics, they must be configured with your organization’s Commercial ID. |
 | AllowTelemetry (in Windows 10) |	1 (Basic), 2 (Enhanced) or 3 (Full) diagnostic data. Windows Analytics will work with basic diagnostic data, but more features are available when you use the Enhanced level (for example, Device Health requires Enhanced diagnostic data and Upgrade Readiness only collects app usage and site discovery data on Windows 10 devices with Enhanced diagnostic data). For more information, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization). |
 | LimitEnhancedDiagnosticDataWindowsAnalytics (in Windows 10) |	Only applies when AllowTelemetry=2. Limits the Enhanced diagnostic data events sent to Microsoft to just those needed by Windows Analytics. For more information, see [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](https://docs.microsoft.com/windows/configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields).|
+| AllowDeviceNameInTelemetry (in Windows 10) |	In the build currently available in the Windows Insider Program for Windows 10, a separate opt-in is required to enable devices to continue to send the device name. |
 | CommercialDataOptIn (in Windows 7 and Windows 8) |	1 is required for Upgrade Readiness, which is the only solution that runs on Windows 7 or Windows 8. |
 
 
