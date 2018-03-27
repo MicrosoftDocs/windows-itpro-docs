@@ -40,6 +40,11 @@ Note that **Get Help** and **Give us Feedback** links no longer work after the W
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
 
+## What's new in Windows 10, version 1803 Enterprise edition
+
+Here's a list of changes that were made to this article for Windows 10, version 1803:
+
+
 ## What's new in Windows 10, version 1709 Enterprise edition
 
 Here's a list of changes that were made to this article for Windows 10, version 1709:
@@ -77,14 +82,13 @@ Here's a list of changes that were made to this article for Windows 10, version 
 
 ## <a href="" id="bkmk-othersettings"></a>Management options for each setting
 
-
 The following sections list the components that make network connections to Microsoft services by default. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure diagnostic data at the Security level, turn off Windows Defender diagnostic data and MSRT reporting, and turn off all of these connections.
 
 If you're running Windows 10, they will be included in the next update for the Long Term Servicing Branch.
 
 ### Settings for Windows 10 Enterprise edition 
 
-See the following table for a summary of the management settings for Windows 10 Enterprise, version 1709 and Windows 10 Enterprise, version 1703.
+The following table lists management options for ecagh setting, beginning with Windows 10 Enterprise version 1703.
 
 | Setting | UI | Group Policy | MDM policy | Registry | Command line |
 | - | :-: | :-: | :-: | :-: | :-: |
