@@ -51,7 +51,7 @@ The **Threats** tab shows the entities that were found to be malicious during th
 
 During an automated investigation, details about each analyzed entity is categorized in the **Entities** tab. You'll be able to see the determination for each entity type, such as whether it was determined to be malicious, suspicious, or clean.
 
-The **Log** tab reflects the chronological detailed view of all the investigation actions taken on the alert.
+The **Log** tab reflects th e chronological detailed view of all the investigation actions taken on the alert.
 
 If there are pending actions on the investigation, the **Pending actions** tab will be displayed where you can approve or reject actions.
 
