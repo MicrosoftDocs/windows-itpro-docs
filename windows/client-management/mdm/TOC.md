@@ -68,6 +68,8 @@
 ### [ICSPValidate](icspvalidate.md)
 ### [Samples for writing a custom configuration service provider](samples-for-writing-a-custom-configuration-service-provider.md)
 ## [Configuration service provider reference](configuration-service-provider-reference.md)
+### [AccountManagement CSP](accountmanagement-csp.md)
+#### [AccountManagement DDF file](accountmanagement-ddf.md)
 ### [ActiveSync CSP](activesync-csp.md)
 #### [ActiveSync DDF file](activesync-ddf-file.md)
 ### [AllJoynManagement CSP](alljoynmanagement-csp.md)
