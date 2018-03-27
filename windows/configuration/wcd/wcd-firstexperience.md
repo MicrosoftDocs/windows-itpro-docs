@@ -12,5 +12,19 @@ ms.date: 09/06/2017
 
 # FirstExperience (Windows Configuration Designer reference)
 
-Do not configure **FirstExperience** in provisioning packages at this time. These settings will be available to configure the out-of-box experience (OOBE) to set up HoloLens in a future release. 
+Use these settings to configure the out-of-box experience (OOBE) to set up HoloLens. 
+
+## Applies to
+
+| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: | :---: |
+| All settings |   |  |  | X |  |
+
+Setting | Description
+--- | ---
+PreferredRegion | Enter the [geographical location identifier](https://msdn.microsoft.com/en-us/library/windows/desktop/dd374073.aspx) for the region.
+PreferredTimezone | Enter the timezone. [Field calls for text?? Shouldn't it be index?](https://msdn.microsoft.com/en-us/library/ms912391.aspx)
+SkipCalibration | Initial setup of HoloLens includes a calibration step. Set to **True** to skip calibration.
+SkipTraining | Initial setup of HoloLens includes training on how to perform the gestures to operate HoloLens. Set to **True** to skip training. 
+SkipWifi | Set to **True** to skip connecting to a Wi-fi network.
 

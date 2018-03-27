@@ -19,7 +19,7 @@ Use Workplace settings to configure bulk user enrollment to a mobile device mana
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [Enrollments](#enrollments) | X | X | X | X | X  |
+| [Enrollments](#enrollments) | X | X | X |  | X  |
 
 ## Enrollments
 

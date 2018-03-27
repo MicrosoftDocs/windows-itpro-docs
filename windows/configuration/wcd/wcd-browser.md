@@ -19,7 +19,7 @@ Use to configure browser settings that should only be set by OEMs who are part o
 | Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
 | [Favorites](#favorites) |  |  X  |  |  |  |
-| [PartnerSearchCode](#partnersearchcode)  | X | X | X | X |  |
+| [PartnerSearchCode](#partnersearchcode)  | X | X | X |  |  |
 | [SearchProviders](#searchproviders) |   |  X  |  |  |  |
 
 ## Favorites

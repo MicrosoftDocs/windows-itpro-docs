@@ -20,5 +20,5 @@ Do not use at this time. Instead, use [ConnectivityProfiles > WLAN](wcd-connecti
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All settings |  |  |  | X |   |
+| All settings |  |  |  |  |   |
 

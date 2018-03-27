@@ -18,9 +18,9 @@ Use to upgrade the edition of Windows 10 on the device. [Learn about Windows 10 
 
 | Setting  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [ChangeProductKey](#changeproductkey) | X  | X |  | X |  |
+| [ChangeProductKey](#changeproductkey) | X  | X |  |  |  |
 | [UpgradeEditionWithLicense](#upgradeeditionwithlicense) | X  | X |  | X |  |
-| [UpgradeEditionWithProductKey](#upgradeeditionwithproductkey) | X  | X |  | X |  |
+| [UpgradeEditionWithProductKey](#upgradeeditionwithproductkey) | X  | X |  |  |  |
 
 
 ## ChangeProductKey
