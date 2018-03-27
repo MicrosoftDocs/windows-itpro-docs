@@ -89,7 +89,7 @@
 ####### [Troubleshoot deep analysis](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md#troubleshoot-deep-analysis)
 
 #### [Automated investigations](windows-defender-atp\automated-investigations-windows-defender-advanced-threat-protection.md)
-#### [Advanced hunting](windows-defender-atp\advanced-hunting-windows-defender-advanced-threat-protection.md)
+#### [Query data using Advanced hunting](windows-defender-atp\advanced-hunting-windows-defender-advanced-threat-protection.md)
 ##### [Advanced hunting reference](windows-defender-atp\advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
 ##### [Query language best practices](windows-defender-atp\advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
 
