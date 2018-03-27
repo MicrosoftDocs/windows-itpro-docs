@@ -35,11 +35,27 @@ To address this challenge, Windows Defender ATP uses Automated investigations to
 The Automated investigations list shows all the investigations that have been initiated automatically and shows other details such as its status, detection source, and the date for when the investigation was initiated. 
 
 ## Understand the Automated investigation flow
-Alerts are typically generated from a machine and all automated investigations start from an alert. Any alert that contains an entity (that Windows Defender ATP supports an investigation for) can undergo automated investigation. 
+### How the automated investigation starts
+Alerts are the starting point for automated investigations. Typically, they are generated from machines and any alert that contains an entity (that Windows Defender ATP supports an investigation for) can undergo automated investigation. 
 
-When an alert that contains a supported entity is seen, the automated investigation then proceeds and analyzes each entity within the alert. It determines whether an entity can be incriminated or exonerated. The outcome from the analysis of each entity is categorized in the **Entities** tab and you'll be able to see the determination for each entity type, such as whether it was determined to be malicious, suspicious, or clean.
- [BENNY I'M NOT SURE IF WE WANT TO GO INTO THE DETAILS OF SENDING THE FILE INTO DETONATION ETC.]  
+When an alert that contains a supported entity is seen, the automated investigation then proceeds and analyzes each entity within the alert. It determines whether an entity can be incriminated or exonerated. The outcome and details from the analysis is seen in the Automated investigation view.
 
+### Details of an investigation
+As the investigation proceeds, you'll be able to view the details of the investigation. Selecting a triggering alert brings you to the investigation details view where you can pivot from the **Investigation graph**, **Alerts**, **Machines**, **Threats**, **Entities**, and **Log** tabs.
+
+In the **Alerts** tab, you'll see the alert that started the investigation. 
+
+The **Machines** tab shows where the alert was seen.
+
+The **Threats** tab shows the entities that were found to be malicious during the investigation.
+
+During an automated investigation, details about each analyzed entity is categorized in the **Entities** tab. You'll be able to see the determination for each entity type, such as whether it was determined to be malicious, suspicious, or clean.
+
+The **Log** tab reflects the chronological detailed view of all the investigation actions taken on the alert.
+
+If there are pending actions on the investigation, the **Pending actions** tab will be displayed where you can approve or reject actions.
+
+### How alerts are remediated
 Depending on how you set up the machine groups and the level of automation to apply on the group, the automated investigation can remediate the alert. For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md). 
 
 The default machine group is configured for semi-automatic remediation. This means that any malicious entity that needs to be remediated requires an approval and the investigation is added to the **Pending actions** section. You also have the option to configure the automation for full remediation. 
@@ -48,7 +64,8 @@ When a pending action is approved, the entity is then remediated and is reflecte
 
 While an investigation is running, any other alert generated from the machine will be added to an ongoing automated investigation until that investigation is completed. In addition, if the same threat is seen on other machines, those machines are added to the investigation.You'll be able to see up to nine machines in the **Machines** tab. If the threat is seen on more than nine machines, you have the option to expand the view from the **Pending actions** view.
 
-When the automated investigation completes its analysis, and all pending actions are resolved, an investigation is considered complete. It's important to understand that an investigation is only considered complete if there are no pending actions on it. That's also the only time that the **Pending actions history** tab is displayed.
+### How an automated investigation is completed
+When the automated investigation completes its analysis, and all pending actions are resolved, an investigation is considered complete. It's important to understand that an investigation is only considered complete if there are no pending actions on it. 
 
 
 ## Manage Automated investigations
