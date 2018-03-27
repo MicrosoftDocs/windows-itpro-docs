@@ -31,7 +31,7 @@ ms.date: 04/16/2018
 Advanced hunting allows you to proactively hunt for possible threats across your organization using a powerful search and query tool. Take advantage of the following capabilities: 
 
 - **Powerful query language with IntelliSense** - Built on top of a query language that gives you the flexibility you need to take hunting to the next level.
-- **Query all stored telemetry** - All telemetry data is accessible in tables for you to query. For example, you can query process creation, network communication, and many other event types.
+- **Query the stored telemetry** - The telemetry data is accessible in tables for you to query. For example, you can query process creation, network communication, and many other event types.
 - **Links to portal** - Certain query results, such as machine names and file names are actually direct links to the portal, consolidating the advanced hunting query experience and the existing portal investigation experience.
 - **Query examples** - A welcome page provides examples designed to get you started and get you familiar with the tables and the query language.
 
@@ -78,14 +78,14 @@ For more information on the query language and supported operators, see [Query L
 
 The following tables are exposed as part of advanced hunting:
 
-- **AlertEvents** - Stores all alerts related information 
-- **ProcessCreationEvents** - Stores all process creation events 
-- **NetworkCommunicationEvents** - Stores all network communication events o
-- **FileCreationEvents** - Stores all file creation, modification, and rename events
-- **RegistryEvents** - Stores all registry key creation, modification, rename and deletion events 
-- **LogonEvents** - Stores all login events 
-- **ImageLoadEvents** - Stores all load dll events  
-- **MiscEvents** - Stores several types of events, including Windows Defender Exploit Guard, Windows Defender SmartScreen, Windows Defender Application Guard, and Firewall events.
+- **AlertEvents** - Stores alerts related information 
+- **ProcessCreationEvents** - Stores process creation events 
+- **NetworkCommunicationEvents** - Stores network communication events o
+- **FileCreationEvents** - Stores file creation, modification, and rename events
+- **RegistryEvents** - Stores registry key creation, modification, rename and deletion events 
+- **LogonEvents** - Stores login events 
+- **ImageLoadEvents** - Stores load dll events  
+- **MiscEvents** - Stores several types of events, including Windows Defender blocks (Windows Defender Antivirus, Exploit Guard, Windows Defender SmartScreen, Windows Defender Application Guard, and Firewall), process injection events, access to LSASS processes, and others.
 
 ## Use shared queries
 Shared queries are prepopulated queries that give you a starting point on running queries on your organization's data. It includes a couple of examples that help demonstrate the query language capabilities.
