@@ -39,7 +39,7 @@ Some of the apps show up in multiple tables - that's because their status change
 System apps are integral to the operating system. Here are the typical system apps in Windows 10 versions 1703, 1709, and 1803.
 
 | Name             | Full name                                 |1703  | 1709 | 1803 |Uninstall through UI?                                  |
-|------------------|-------------------------------------------|------|------|------|-------------------------------------------------------|
+|------------------|-------------------------------------------|:------:|:------:|:------:|-------------------------------------------------------|
 | Cortana UI       | CortanaListenUIApp                        | x    |      |      |No                                                     |
 |                  | Desktop Learning                          | x    |      |      |No                                                     |
 |                  | DesktopView                               | x    |      |      |No                                                     |
