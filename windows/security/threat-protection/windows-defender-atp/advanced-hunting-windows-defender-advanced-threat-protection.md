@@ -125,17 +125,17 @@ These steps guide you on modifying and overwriting an existing query.
 
 2. Select **Delete** and confirm that you want to delete the query.
 
-## Results set capabilities in advanced hunting
+## Result set capabilities in advanced hunting
 
-The results set has several capabilities to provide you with effective investigation, including:
+The result set has several capabilities to provide you with effective investigation, including:
 
 - Columns that return entity-related objects, such as Machine name, Machine ID, File name, SHA1, User, IP, and URL, are linked to their entity pages in the Windows Defender ATP portal.
-- You can right-click on a cell in the results set and add a filter to your written query. The current filtering options are **include**, **exclude** or **advanced filter**, which provides additional filtering options on the cell value. These cell values are part of the row set. 
+- You can right-click on a cell in the result set and add a filter to your written query. The current filtering options are **include**, **exclude** or **advanced filter**, which provides additional filtering options on the cell value. These cell values are part of the row set. 
 
-![Image of Windows Defender ATP advanced hunting results set](images/atp-advanced-hunting-results-filter.png)
+![Image of Windows Defender ATP advanced hunting result set](images/atp-advanced-hunting-results-filter.png)
 
 ## Filter results in advanced hunting
-In advanced hunting, you can use the advanced filter on the output results set of the query. 
+In advanced hunting, you can use the advanced filter on the output result set of the query. 
 The filters provide an overview of the result set where 
 each column has it's own section and shows the distinct values that appear in the column and their prevalence.
 

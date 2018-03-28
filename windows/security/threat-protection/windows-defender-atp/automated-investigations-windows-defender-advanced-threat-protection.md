@@ -40,7 +40,7 @@ Alerts are the starting point for automated investigations. Typically, they are 
 
 When an alert that contains a supported entity is seen, the automated investigation then proceeds and analyzes each entity within the alert. It determines whether an entity can be incriminated or exonerated. The outcome and details from the analysis is seen in the Automated investigation view.
 
-### Details of an investigation
+### Details of an automated investigation
 As the investigation proceeds, you'll be able to view the details of the investigation. Selecting a triggering alert brings you to the investigation details view where you can pivot from the **Investigation graph**, **Alerts**, **Machines**, **Threats**, **Entities**, and **Log** tabs.
 
 In the **Alerts** tab, you'll see the alert that started the investigation. 

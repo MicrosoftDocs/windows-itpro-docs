@@ -27,7 +27,7 @@ ms.date: 04/16/2018
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-bestpractices-abovefoldlink)
 
-## Advanced hunting query best practices
+## Performance best practices
 The following best practices serve as a guideline of query performance best practices and for you to get faster results and be able to run complex queries. 
 - Use time filters first. Azure Kusto is highly optimized to utilize time filters. For more information, see [Azure Kusto](https://docs.microsoft.com/connectors/kusto/).
 - Put filters that are expected to remove most of the data in the beginning of the query, following the time filter.
@@ -36,7 +36,27 @@ The following best practices serve as a guideline of query performance best prac
 - When joining between two tables - choose the table with less rows to be the first one (left-most). 
 - When joining between two tables - project only needed columns from both sides of the join.
 
-              
+## Query tips and pitfalls
+
+### Unique Process IDs
+Process IDs are recycled in Windows and reused for new processes, so cannot serve as unique IDs for a specific process.
+To address this issue, the time the process was created for the Windows Defender ATP data. Together with the process ID, this can serve as a unique ID on a specific machine.
+
+So, when you join data based on a specific process or summarize data for each process, you'll need to use a machine identifier (either MachineId or ComputerName), a process ID (ProcessId or InitiatingProcessId) and the process creation time (ProcessCreationTime or InitiatingProcessCreationTime)
+
+The following example query is created to find processes that access more than 10 IP addresses over port 445 (SMB) - possibly scanning for file shares.
+
+Example query:
+```
+NetworkCommunicationEvents
+| where RemotePort == 445 and EventTime > ago(12h) and InitiatingProcessId !in (0, 4)
+| summarize RemoteIPCount=dcount(RemoteIP) by ComputerName, InitiatingProcessId, InitiatingProcessCreationTime, InitiatingProcessFileName
+| where RemoteIPCount > 10
+```
+
+The query summarizes by both InitiatingProcessId and InitiatingProcessCreationTime - to make sure the query looks at a single process, and not mixing multiple processes with the same process ID.
+
+         
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-bestpractices-belowfoldlink)        
 
