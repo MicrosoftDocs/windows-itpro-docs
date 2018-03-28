@@ -1,5 +1,5 @@
 ---
-title: DO in Update Compliance (Windows 10)
+title: Delivery Optimization in Update Compliance (Windows 10)
 description: new Delivery Optimization data displayed in Update Compliance
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -7,14 +7,15 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 03/23/2018
+ms.date: 03/27/2018
 ---
 
-# DO in Update Compliance
+# Delivery Optimization in Update Compliance
+The Update Compliance solution of Windows Analytics provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer distribution over the past 28 days.
 
 ## Delivery Optimization Status
  
-The Delivery Optimization Status section provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer distribution over the past 28 days. There are three blades in the Delivery Optimization Status:
+The Delivery Optimization Status section includes three blades:
 
 - The **Device Configuration** blade shows a breakdown of download configuration for each device
 - The **Content Distribution (%)** blade shows the percentage of bandwidth savings for each category

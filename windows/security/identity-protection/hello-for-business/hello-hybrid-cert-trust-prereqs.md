@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 11/08/2017
+ms.date: 03/26/2018
 ---
 # Hybrid Windows Hello for Business Prerequisites
 
@@ -80,12 +80,12 @@ Organizations using older directory synchronization technology, such as DirSync 
 ## Federation ##
 Federating your on-premises Active Directory with Azure Active Directory ensures all identities have access to all resources regardless if they reside in cloud or on-premises.  Windows Hello for Business hybrid certificate trust needs Windows Server 2016 Active Directory Federation Services.  All nodes in the AD FS farm must run the same version of AD FS. Additionally, you need to configure your AD FS farm to support Azure registered devices.
 
-The AD FS farm used with Windows Hello for Business must be Windows Server 2016 with minimum update of [KB4034658 (14393.1593)](https://support.microsoft.com/en-us/help/4034658), which is automatically downloaded and installed through Windows Update.  If your AD FS farm is not running the AD FS role with updates from Windows Server 2016, then read [Upgrading to AD FS in Windows Server 2016](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016)
+The AD FS farm used with Windows Hello for Business must be Windows Server 2016 with minimum update of [KB4088889 (14393.2155)](https://support.microsoft.com/en-us/help/4088889).  If your AD FS farm is not running the AD FS role with updates from Windows Server 2016, then read [Upgrading to AD FS in Windows Server 2016](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016)
 
 ### Section Review ###
 > [!div class="checklist"]
 > * Windows Server 2016 Active Directory Federation Services
-> * Minimum update of [KB4034658 (14393.1593)](https://support.microsoft.com/en-us/help/4034658)
+> * Minimum update of [KB4088889 (14393.2155)](https://support.microsoft.com/en-us/help/4088889)
 
 <br>
 
