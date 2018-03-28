@@ -40,11 +40,6 @@ Note that **Get Help** and **Give us Feedback** links no longer work after the W
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
 
-## What's new in Windows 10, version 1803 Enterprise edition
-
-Here's a list of changes that were made to this article for Windows 10, version 1803:
-
-
 ## What's new in Windows 10, version 1709 Enterprise edition
 
 Here's a list of changes that were made to this article for Windows 10, version 1709:
@@ -88,7 +83,7 @@ If you're running Windows 10, they will be included in the next update for the L
 
 ### Settings for Windows 10 Enterprise edition 
 
-The following table lists management options for ecagh setting, beginning with Windows 10 Enterprise version 1703.
+The following table lists management options for each setting, beginning with Windows 10 Enterprise version 1703.
 
 | Setting | UI | Group Policy | MDM policy | Registry | Command line |
 | - | :-: | :-: | :-: | :-: | :-: |
