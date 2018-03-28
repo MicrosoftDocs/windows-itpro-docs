@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/15/2018
+ms.date: 03/23/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -1147,6 +1147,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>AccountPoliciesAccountLockoutPolicy/AccountLockoutThreshold</li>
 <li>AccountPoliciesAccountLockoutPolicy/ResetAccountLockoutCounterAfter</li>
 <li>ApplicationDefaults/EnableAppUriHandlers</li>
+<li>ApplicationManagement/MSIAllowUserControlOverInstall</li>
+<li>ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges</li>
 <li>Browser/AllowConfigurationUpdateForBooksLibrary</li>
 <li>Browser/AlwaysEnableBooksLibrary</li>
 <li>Browser/EnableExtendedBooksTelemetry</li>
@@ -1175,14 +1177,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>LocalPoliciesSecurityOptions/Devices_AllowedToFormatAndEjectRemovableMedia</li> 
 <li>LocalPoliciesSecurityOptions/Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters</li> 
 <li>LocalPoliciesSecurityOptions/Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_DigitallySignSecureChannelDataWhenPossible</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_MaximumMachineAccountPasswordAge</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_RequireStrongSessionKey</li> 
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior</li> 
-<li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsAlways</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession</li> 
@@ -1193,10 +1188,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>LocalPoliciesSecurityOptions/NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</li> 
-<li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM</li> 
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange</li> 
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</li> 
-<li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</li> 
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</li> 
 <li>LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</li> 
 <li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li> 
@@ -1283,16 +1276,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top">[RemoteWipe CSP](remotewipe-csp.md)</td>
-<td style="vertical-align:top"><p>Added the following nodes in Windows 10, version 1803:</p>
-<ul>
-<li>AutomaticRedeployment</li>
-<li>doAutomaticRedeployment</li>
-<li>LastError</li>
-<li>Status</li>
-</ul>
-</td></tr>
-<tr class="odd">
 <td style="vertical-align:top">[Defender CSP](defender-csp.md)</td>
 <td style="vertical-align:top"><p>Added new node (OfflineScan) in Windows 10, version 1803.</p>
 </td></tr>
@@ -1345,6 +1328,17 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>OS/Mode</li>
 </ul>
 </td></tr>
+<tr>
+<<<<<<< HEAD
+<td style="vertical-align:top">[AccountManagement CSP](accountmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+=======
+<td style="vertical-align:top">[RootCATrustedCertificates CSP](rootcacertificates-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<ul>
+<li>UntrustedCertificates</li>
+</ul>
+>>>>>>> 2aa0839b99c52229c7cf43d58f467019b1284a6a
 </td></tr>
 </tbody>
 </table>
@@ -1651,10 +1645,23 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul>
 </td></tr>
 <tr>
+<td style="vertical-align:top">[AccountManagement CSP](accountmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[RootCATrustedCertificates CSP](rootcacertificates-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<ul>
+<li>UntrustedCertificates</li>
+</ul>
+</td></tr>
+<tr>
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1803:</p>
 <ul>
 <li>ApplicationDefaults/EnableAppUriHandlers</li>
+<li>ApplicationManagement/MSIAllowUserControlOverInstall</li>
+<li>ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges</li>
 <li>Connectivity/AllowPhonePCLinking</li>
 <li>RestrictedGroups/ConfigureGroupMembership</li>
 </ul>
@@ -1663,10 +1670,22 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>InternetExplorer/AllowSiteToZoneAssignmentList - updated the description and added an example SyncML</li>
 <li>TextInput/AllowIMENetworkAccess - introduced new suggestion services in Japanese IME in addition to cloud suggestion.</li>
 </ul>
+<p>Added a new section:</p>
+<ul>
+<li>[Policies supported by GP](policy-configuration-service-provider.md#policies-supported-by-gp) - list of policies in Policy CSP that has corresponding Group Policy. The policy description contains the GP information, such as GP policy name and variable name.</li>
+</ul>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Policy CSP - Bluetooth](policy-csp-bluetooth.md)</td>
 <td style="vertical-align:top"><p>Added new section [ServicesAllowedList usage guide](policy-csp-bluetooth.md#servicesallowedlist-usage-guide).</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[MultiSIM CSP](multisim-csp.md)</td>
+<td style="vertical-align:top"><p>Added SyncML examples and updated the settings descriptions.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[RemoteWipe CSP](remotewipe-csp.md)</td>
+<td style="vertical-align:top"><p>Reverted back to Windows 10, version 1709. Removed previous draft documentation for version 1803.</p>
 </td></tr>
 </tbody>
 </table>
@@ -1775,14 +1794,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>LocalPoliciesSecurityOptions/Devices_AllowedToFormatAndEjectRemovableMedia</li> 
 <li>LocalPoliciesSecurityOptions/Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters</li> 
 <li>LocalPoliciesSecurityOptions/Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_DigitallySignSecureChannelDataWhenPossible</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_MaximumMachineAccountPasswordAge</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_RequireStrongSessionKey</li> 
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior</li> 
-<li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsAlways</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession</li> 
@@ -1793,10 +1805,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>LocalPoliciesSecurityOptions/NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</li> 
-<li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM</li> 
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange</li> 
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</li> 
-<li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</li> 
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</li> 
 <li>LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</li> 
 <li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li> 
@@ -1877,16 +1887,6 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>CustomErrorText</li>
 <li>SkipDeviceStatusPage</li>
 <li>SkipUserStatusPage</li>
-</ul>
-</td></tr>
-<tr class="odd">
-<td style="vertical-align:top">[RemoteWipe CSP](remotewipe-csp.md)</td>
-<td style="vertical-align:top"><p>Added the following nodes in Windows 10, version 1803:</p>
-<ul>
-<li>AutomaticRedeployment</li>
-<li>doAutomaticRedeployment</li>
-<li>LastError</li>
-<li>Status</li>
 </ul>
 </td></tr>
 <tr class="odd">

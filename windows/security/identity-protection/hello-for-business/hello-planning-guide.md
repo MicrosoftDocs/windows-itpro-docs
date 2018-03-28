@@ -9,13 +9,12 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 10/20/2017
+ms.date: 03/26/2018
 ---
 # Planning a Windows Hello for Business Deployment
 
 **Applies to**
 -   Windows 10
--   Windows 10 Mobile
 
 > This guide only applies to Windows 10, version 1511 or higher.
 
@@ -70,7 +69,7 @@ It’s fundamentally important to understand which deployment model to use for a
 
 #### Trust types
 
-A deployments trust type defines how each Windows Hello for Business client authenticates to the on-premises Active Directory.  There are two trusts types, key trust and certificate trust. 
+A deployment's trust type defines how each Windows Hello for Business client authenticates to the on-premises Active Directory.  There are two trust types: key trust and certificate trust. 
   
 The key trust type does not require issuing authentication certificates to end users.  Users authenticate using a hardware-bound key created during an in-box provisioning experience, which requires an adequate distribution of Windows Server 2016 domain controllers relative to your existing authentication and the number of users included in your Windows Hello for Business deployment.  Read the [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
 
@@ -86,9 +85,9 @@ The in-box Windows Hello for Business provisioning experience creates a hardware
 
 #### Multifactor authentication
 
-The goal of Windows Hello for Business is to move organizations away from passwords by providing them a strong credential that providers easy two-factor authentication.  The inbox provisioning experience accepts the user’s weak credentials (username and password) as the first factor authentication; however, the user must provide a second factor of authentication before Windows provisions a strong credential.  
+The goal of Windows Hello for Business is to move organizations away from passwords by providing them a strong credential that provides easy two-factor authentication.  The inbox provisioning experience accepts the user’s weak credentials (username and password) as the first factor authentication; however, the user must provide a second factor of authentication before Windows provisions a strong credential.  
 
-Cloud only and hybrid deployments provide many choices for multifactor authentication.  On-premises deployments must use a multifactor authentication that provides an AD FS multifactor adapter to be used in conjunction with the on-premises Windows Server 2016 AD FS server role. Organizations can use from the on-premises Azure Multifactor Authentication server, or choose from several third parties (Read [Microsoft and third-party additional authentication methods](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods) for more information).
+Cloud only and hybrid deployments provide many choices for multifactor authentication.  On-premises deployments must use a multifactor authentication that provides an AD FS multifactor adapter to be used in conjunction with the on-premises Windows Server 2016 AD FS server role. Organizations can use the on-premises Azure Multifactor Authentication server, or choose from several third parties (Read [Microsoft and third-party additional authentication methods](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods) for more information).
 >[!NOTE]
 > Azure Multi-Factor Authentication is available through:
 >* Microsoft Enterprise Agreement
@@ -102,11 +101,11 @@ Cloud only and hybrid deployments provide many choices for multifactor authentic
 
 #### Directory synchronization
 
-Hybrid and on-premises deployments use directory synchronization, however, each for a different purpose.  Hybrid deployments use Azure Active Directory Connect to synchronization Active Directory identities or credentials between itself and Azure Active Directory. This helps enable single sign-on to Azure Active Directory and its federated components.
+Hybrid and on-premises deployments use directory synchronization, however, each for a different purpose.  Hybrid deployments use Azure Active Directory Connect to synchronize Active Directory identities or credentials between itself and Azure Active Directory. This helps enable single sign-on to Azure Active Directory and its federated components.
 
 ### Management
 
-Windows Hello for Business provides organizations with a rich set of granular policy setting with which they can use to manage their devices and users.  There are three ways in which you can manage Windows Hello for Business: Group Policy, Modern Management, and Mixed.
+Windows Hello for Business provides organizations with a rich set of granular policy settings with which they can use to manage their devices and users.  There are three ways in which you can manage Windows Hello for Business: Group Policy, Modern Management, and Mixed.
 
 #### Group Policy
 
@@ -129,11 +128,11 @@ Hybrid and on-premises deployments include Active Directory as part of their inf
 
 ### Public Key Infrastructure
 
-The Windows Hello for Business deployment depends on an enterprise public key infrastructure a trust anchor for authentication. Domain controllers for hybrid and on-prem deployments need a certificate in order for Windows 10 devices to trust the domain controller as legitimate. Deployments using the certificate trust type need an enterprise public key infrastructure and a certificate registration authority to issue authentication certificates to users.  Hybrid deployments may need to issue VPN certificates to users to enable connectivity on-premises resources.
+The Windows Hello for Business deployment depends on an enterprise public key infrastructure as a trust anchor for authentication. Domain controllers for hybrid and on-prem deployments need a certificate in order for Windows 10 devices to trust the domain controller as legitimate. Deployments using the certificate trust type need an enterprise public key infrastructure and a certificate registration authority to issue authentication certificates to users.  Hybrid deployments may need to issue VPN certificates to users to enable connectivity on-premises resources.
 
 ### Cloud
 
-Some deployment combinations require an Azure account and some require Azure Active Directory for user identities.  These cloud requirements may only need an Azure account while other features need an Azure Active Directory Premium subscription. The planning process identifies and differentiate the components that are needed from the those that are optional.
+Some deployment combinations require an Azure account and some require Azure Active Directory for user identities.  These cloud requirements may only need an Azure account while other features need an Azure Active Directory Premium subscription. The planning process identifies and differentiates the components that are needed from the those that are optional.
 
 ## Planning a Deployment
 
@@ -147,13 +146,13 @@ Choose the deployment model based on the resources your users access.  Use the f
 
 If your organization does not have on-premises resources, write **Cloud Only** in box **1a** on your planning worksheet.
 
-If your organization is federated with Azure or uses any online service, such as Office365 or OneDrive, or your users access cloud and on-premises resources, write **Hyrbid** in box **1a** on your planning worksheet.
+If your organization is federated with Azure or uses any online service, such as Office365 or OneDrive, or your users access cloud and on-premises resources, write **Hybrid** in box **1a** on your planning worksheet.
 
 If your organization does not have cloud resources, write **On-Premises** in box **1a** on your planning worksheet.
 >[!NOTE]
->If you’re unsure if your organization is federated, run the following Active Directory Windows PowerShell command from and elevated Windows PowerShell prompt and evaluate the results.  
->```Get-AdObject “CN=62a0ff2e-97b9-4513-943f-0d221bd30080,CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=corp,DC=[forest_root_CN_name],DC=com -Properties keywords```
->* If the command returns an error stating it could not find the object, then you have yet to configured AAD Connect or on-premises Device Registration Services using AD FS.  Ensure the name is accurate and validate the object does not exist with another Active Directory Management tool such as **ADSIEdit.msc**.  If the object truly does not exists, then you environment does not bind you to a specific deployment or require changes to accommodate the desired deployment type.
+>If you’re unsure if your organization is federated, run the following Active Directory Windows PowerShell command from an elevated Windows PowerShell prompt and evaluate the results.  
+>```Get-AdObject “CN=62a0ff2e-97b9-4513-943f-0d221bd30080,CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=corp,DC=[forest_root_CN_name],DC=com" -Properties keywords```
+>* If the command returns an error stating it could not find the object, then you have yet to configured AAD Connect or on-premises Device Registration Services using AD FS.  Ensure the name is accurate and validate the object does not exist with another Active Directory Management tool such as **ADSIEdit.msc**.  If the object truly does not exist, then you environment does not bind you to a specific deployment or require changes to accommodate the desired deployment type.
 >* If the command returns a value, compare that value with the values below.  The value indicates the deployment model you should implement
 >    * If the value begins with **azureADName:**  – write **Hybrid** in box **1a**on your planning worksheet.
  >   * If the value begins with **enterpriseDrsName:** – write **On-Premises** in box **1a** on your planning worksheet.
@@ -176,7 +175,7 @@ A successful Windows Hello for Business requires all devices to register with th
 
 If box **1a** on your planning worksheet reads **cloud only** or **hybrid**, write **Azure** in box **1c** on your planning worksheet.
 
-If box **1a** on your planning worksheet reads **on-premises**, write **AF FS** in box **1c** on your planning worksheet.
+If box **1a** on your planning worksheet reads **on-premises**, write **AD FS** in box **1c** on your planning worksheet.
 
 ### Key Registration
 
@@ -184,7 +183,7 @@ All users provisioning Windows Hello for Business have their public key register
 
 If box **1a** on your planning worksheet reads **cloud only** or **hybrid**, write **Azure** in box **1d** on your planning worksheet.
 
-If box **1a** on your planning worksheet reads **on-premises**, write **AF FS** in box **1d** on your planning worksheet.
+If box **1a** on your planning worksheet reads **on-premises**, write **AD FS** in box **1d** on your planning worksheet.
 
 ### Directory Synchronization
 
@@ -235,7 +234,7 @@ If box **1a** on your planning worksheet reads **on-prem**, write **GP** in box 
 
 Managing hybrid deployments includes two categories of devices to consider for your Windows Hello for Business deployment—domain joined and non-domain joined.  All devices are registered, however, not all devices are domain joined.  You have the option of using Group Policy for domain joined devices and modern management for non-domain joined devices. Or, you can use modern management for both domain and non-domain joined devices.  
 
-If you use Group Policy to manage your domain joined devices, write **GP** in box **2a** on your planning worksheet, Write **modern management** in box **2b** if you decide to manage non-domain joined devices; otherwise, write **N/A**.  
+If you use Group Policy to manage your domain joined devices, write **GP** in box **2a** on your planning worksheet. Write **modern management** in box **2b** if you decide to manage non-domain joined devices; otherwise, write **N/A**.  
 
 If you use modern management for both domain and non-domain joined devices, write **modern management** in box **2a** and **2b** on your planning worksheet.
 
@@ -261,7 +260,7 @@ Write **1703 or later** in box **3a** on your planning worksheet if any of the f
 
 ### Active Directory
 
-The Active Directory portion of the planning guide should be complete.  Most of conditions are baseline prerequisites except for your domain controllers.  The domain controllers used in your deployment are decided by the chosen trust type. 
+The Active Directory portion of the planning guide should be complete.  Most of the conditions are baseline prerequisites except for your domain controllers.  The domain controllers used in your deployment are decided by the chosen trust type. 
 
 Review the trust type portion of this section if box **4d** on your planning worksheet remains empty.
 
@@ -306,7 +305,7 @@ Nearly all deployments of Windows Hello for Business require an Azure account.
 
 If box **1a** on your planning worksheet reads **cloud only** or **hybrid**, write **Yes** in boxes **6a** and **6b** on your planning worksheet.
 
-If box **1a** on your planning worksheet reads **on-premises**, and box **1f** reads **AD FS with third party**, write **No** in box **6a** on your planning worksheet. Otherwise, write **Yes** in box **1f** as you need an Azure account for per-consumption MFA billing. Write **No** in box **6b** on your planning worksheet—on-premises deployments do not use the cloud directory.
+If box **1a** on your planning worksheet reads **on-premises**, and box **1f** reads **AD FS with third party**, write **No** in box **6a** on your planning worksheet. Otherwise, write **Yes** in box **6a** as you need an Azure account for per-consumption MFA billing. Write **No** in box **6b** on your planning worksheet—on-premises deployments do not use the cloud directory.
 
 Windows Hello for Business does not require an Azure AD premium subscription.  However, some dependencies do.
 

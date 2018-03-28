@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
-ms.date: 2/15/2018
+ms.date: 3/29/2018
 ms.localizationpriority: high
 ---
 
@@ -53,7 +53,7 @@ You can add a collection to your private store from the private store, or from t
     ![Image showing Add a Collection.](images/msfb-add-collection.png)
 
 4. Type a name for your collection, and then click **Next**.
-5. Add at least one product to your collection, and then click **Done**. 
+5. Add at least one product to your collection, and then click **Done**. You can search for apps and refine results based on the source of the app, or the supported devices.  
 
 > [!NOTE] 
 > New collections require at least one app, or they will not be created. 
@@ -64,7 +64,7 @@ You can add a collection to your private store from the private store, or from t
 3. Under **Apps & software**, choose an app you want to include in a new collection. 
 4. Under **Private Store Collections**, click **Add a collection**. 
 
-![Image showing app details page with Add a Collection.](images/msfb-ps-collection-idp.png)
+    ![Image showing app details page with Add a Collection.](images/msfb-ps-collection-idp.png)
 
 5. Type a name for your collection, and then click **Next**.
 6. Add at least one product to your collection, and then click **Done**.
@@ -78,7 +78,7 @@ If you've already added a Collection to your private store, you can easily add a
 1. Sign in to [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com). 
 2. Click your private store.</br>
 
-![Image showing private store name on MSfB store UI.](images/msfb-click-private-store.png)
+    ![Image showing private store name on MSfB store UI.](images/msfb-click-private-store.png)
 
 3. Click the ellipses next to the collection name, and click **Edit collection**. 
 4. Add or remove products from the collection, and then click **Done**. 
@@ -89,9 +89,8 @@ You can also add an app to a collection from the app details page.
 3. Under **Apps & software**, choose an app you want to include in a new collection. 
 4. Under **Private Store Collections**, turn on the collection you want to add the app to.
 
-![Image showing app details page with Add a Collection.](images/msfb-ps-collection-idp.png) 
+    ![Image showing app details page with Add a Collection.](images/msfb-ps-collection-idp.png) 
 
-<!---
 ## Private store performance
 We've recently made performance improvements for changes in the private store. This table includes common actions, and the current estimate for amount of time required for the change. 
 
@@ -103,5 +102,4 @@ We've recently made performance improvements for changes in the private store. T
 | Create a new collection | 15 minutes|
 | Edit or remove a collection | 15 minutes |
 | Create private store tab | 4-6 hours |
-| Rename private store tab | 4-6 hours |
---> 
+| Rename private store tab | 4-6 hours | 

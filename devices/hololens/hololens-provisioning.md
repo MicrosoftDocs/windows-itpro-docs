@@ -36,7 +36,6 @@ When you run ADKsetup.exe for Windows 10, version 1607, select **Configuration D
 >Settings in a provisioning package will only be applied if the provisioning package includes an edition upgrade license to Windows Holographic for Business or if [the device has already been upgraded to Windows Holographic for Business](hololens-upgrade-enterprise.md).
 
 1. On the Windows Configuration Designer start page, select **Advanced provisioning**.
-
 2. In the **Enter project details** window, specify a name for your project and the location for your project. Optionally, enter a brief description to describe your project.
 
 3. Click **Next**.
@@ -68,7 +67,7 @@ When you run ADKsetup.exe for Windows 10, version 1607, select **Configuration D
 
 6. On the **Select security details for the provisioning package**, click **Next**.
 
-    >[WARNING!]
+    >[!WARNING]
     >If you encrypt the provisioning package, provisioning the HoloLens device will fail.  
 
 7. Click **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows Configuration Designer uses the project folder as the output location.
