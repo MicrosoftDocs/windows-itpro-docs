@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ---
 
 # What's new in Microsoft Store for Business and Education
@@ -15,17 +15,14 @@ Microsoft Store for Business and Education regularly releases new and improved f
 
 ## Latest updates for Store for Business and Education
 
-**January &amp; February, 2018**
+**March 2018**
 
 |  |  |
 |--------------------------------------|---------------------------------|
-| ![Microsoft Store for Business Products &amp; services page.](images/product-and-service-icon.png) |**One place for apps, software, and subscriptions**<br /><br /> The new **Products &amp; services** page in Microsoft Store for Business and Education gives customers a single place to manage all products and services. This includes Apps, Software, and Subscriptions that your organization acquired or manages through Microsoft Store for Business. This change centralizes these products, but the platform changes also improve overall performance. <br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
-| ![Private store collections](images/private-store-icon.png) |**Create collections of apps in your private store**<br /><br /> Use **collections** to customize your private store. Collections allow you to create groups of apps that are commonly used in your organization or school -- you might create a collection for a Finance department, or a 6th-grade class.<br /><br />[Get more info](https://docs.microsoft.com/microsoft-store/manage-private-store-settings#private-store-collections)<br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
-|  ![Upgrade Office 365 trial subscription.](images/office-logo.png) |**Upgrade Office 365 trial subscription**<br /><br> Customers with Office 365 trials can now transition their trial to a paid subscription in Microsoft Store for Business. This works for trials you acquired from Microsoft Store for Business, or Office Admin Portal. <br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
-|  ![Image showing Settings icon.](images/mpsa-link.png) |**Supporting Microsoft Product and Services Agreement customers**<br /><br>If you are purchasing under the Microsoft Products and Services Agreement (MPSA), you can use Microsoft Store for Business. Here you will find access to Products & Services purchased, Downloads & Keys, Software Assurance benefits, Order history, and Agreement details. Also, we added the ability to associate your purchasing account to your tenant. <br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
-|  ![Image showing Settings icon.](images/invite-people.png) |**Microsoft Product and Services Agreement customers can invite people to take roles**<br /><br> MPSA admins can invite people to take Microsoft Store for Business roles even if the person is not in their tenant. You provide an email address when you assign the role, and we'll add the account to your tenant and assign the role. <br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
-
-
+| ![Private store performance icon](images/perf-improvement-icon.png) |**Performance improvements in private store**<br /><br /> We've made it significantly faster for you to update the private store. Many changes to the private store are available immediately after you make them. <br /><br />[Get more info](https://docs.microsoft.com/microsoft-store/manage-private-store-settings#private-store-performance)<br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
+| ![Private store library icon](images/private-store-icon.png) |**Private store collection updates**<br /><br /> We’ve made it easier to find apps when creating private store collections – now you can search and filter results. <br /><br />[Get more info](https://docs.microsoft.com/microsoft-store/manage-private-store-settings#private-store-collections)<br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
+|  ![Skype icon.](images/skype-icon-wn.png) |**Manage Skype communication credits in Microsoft Store for Business and Education**<br /><br> Office 365 customers that own Skype Communication Credits can now see and manage them in Microsoft Store for Business. You can view your account, add funds to your account, and manage auto-recharge settings. <br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
+|  ![Upgrade Office 365 trial subscription.](images/office-logo.png) |**Upgrade Office 365 trial subscription**<br /><br> Customers with Office 365 can upgrade their subscription and automatically re-assign their user licenses over to a new target subscription. For example, you could upgrade your Office 365 Business to Office 365 Business Premium. <br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
 
 <!---
 We’ve been working on bug fixes and performance improvements to provide you a better experience. Stay tuned for new features!
@@ -38,6 +35,13 @@ We’ve been working on bug fixes and performance improvements to provide you a 
 -->
 
 ## Previous releases and updates
+
+[January &amp; February, 2018](release-history-microsoft-store-business-education.md#january-and-february-2018)
+- One place for apps, software, and subscriptions
+- Create collections of apps in your private store
+- Upgrade Office 365 trial subscription
+- Supporting Microsoft Product and Services Agreement customers
+- Microsoft Product and Services Agreement customers can invite people to take roles
 
 [December 2017](release-history-microsoft-store-business-education.md#december-2017)
 - Bug fixes and permformance improvements
