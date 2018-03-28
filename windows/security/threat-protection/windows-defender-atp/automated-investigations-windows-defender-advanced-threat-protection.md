@@ -200,8 +200,11 @@ This tab is only displayed when an investigation is complete and shows all pendi
 
 
 ## Pending actions
-If there are pending actions on an automated investigation, you'll see a pop up similar to the following image. When you click on the pending actions link, you'll be taken to the pending actions page.
+If there are pending actions on an automated investigation, you'll see a pop up similar to the following image. 
 
+![Image of pending actions](images\atp-pending-actions-notification.png)
+
+When you click on the pending actions link, you'll be taken to the pending actions page.
 
  
 The pending actions view aggregates all investigations that require an action for an investigation to proceed or be completed.
@@ -222,6 +225,9 @@ Pending actions are grouped together in the following tabs:
 
 ### Approve or reject an action
 You'll need to manually approve or reject pending actions on each of these categories for the automated actions to proceed.
+
+
+![Image of list of pending actions](images/atp-approve-reject-action.png)
 
 Selecting an investigation from any of the categories opens a panel where you can approve or reject the remediation. Other details such as file or service details, investigation details, and alert details are displayed.
 
