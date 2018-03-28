@@ -1,5 +1,5 @@
 ---
-title: Assigned Access kiosk XML reference (Windows 10)
+title: Assigned Access configuration kiosk XML reference (Windows 10)
 description: XML and XSD for kiosk device configuration.
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
 keywords: ["lockdown", "app restrictions", "applocker"]
@@ -13,7 +13,7 @@ ms.date: 04/23/2018
 ms.author: jdecker
 ---
 
-#  Assigned Access (kiosk) XML reference
+#  Assigned Access configuration (kiosk) XML reference
 
 
 **Applies to**
@@ -131,14 +131,31 @@ ms.author: jdecker
             <UserGroup Type="AzureActiveDirectoryGroup" Name="a8d36e43-4180-4ac5-a627-fb8149bba1ac" />
             <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
         </Config>
-        <Config>
-            <SpecialGroup Name="Visitor"/>
-            <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
-        </Config>
     </Configs>
 </AssignedAccessConfiguration>
 
 ```
+## Kiosk only sample XML
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    >
+    <Profiles>
+        <Profile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}">
+            <KioskModeApp AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"/>
+        </Profile>
+    </Profiles>
+    <Configs>
+        <Config>
+            <Account>singleappuser</Account>
+            <DefaultProfile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}"/>
+        </Config>
+    </Configs>
+</AssignedAccessConfiguration>
+```
+
 
 ## XSD for AssignedAccess configuration XML
 
