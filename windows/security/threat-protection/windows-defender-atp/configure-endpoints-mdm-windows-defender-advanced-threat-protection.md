@@ -113,6 +113,10 @@ Configuration for onboarded machines: diagnostic data reporting frequency | ./De
 > - Configuration of diagnostic data reporting frequency is only available for machines on Windows 10, version 1703.
 > - Using the Expedite mode might have an impact on the machine's battery usage and actual bandwidth used for sensor data. You should consider this when these measures are critical.
 
+
+>[!TIP]
+> After onboarding the endpoint, you can choose to run a detection test to verify that an endpoint is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md).
+
 ### Using the Azure Intune Portal to deploy Windows Defender Advanced Threat Protection policies on Windows 10 1607 and higher
 
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
@@ -173,14 +177,6 @@ Configuration for onboarded machines: diagnostic data reporting frequency | ./De
 14. Click **Save** to finish deploying the Configuration Profile.
 
   ![Image of deployment](images/atp-intune-save-deployment.png)
-
-
-
-
-
->[!TIP]
-> After onboarding the endpoint, you can choose to run a detection test to verify that an endpoint is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md).
-
 
 
 ### Offboard and monitor endpoints
