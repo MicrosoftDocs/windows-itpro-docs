@@ -48,9 +48,9 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
 
     b. Select Windows 10 as the operating system.
 
-    b. In the **Deployment method** field, select **Mobile Device Management / Microsoft Intune**.
+    c. In the **Deployment method** field, select **Mobile Device Management / Microsoft Intune**.
     
-    c. Click **Download package**, and save the .zip file.
+    d. Click **Download package**, and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named  *WindowsDefenderATP.onboarding*.
 
@@ -119,6 +119,68 @@ Configuration for onboarded machines: diagnostic data reporting frequency | ./De
 >[!TIP]
 > After onboarding the machine, you can choose to run a detection test to verify that a machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP machine](run-detection-test-windows-defender-advanced-threat-protection.md).
 
+### Using the Azure Intune Portal to deploy Windows Defender Advanced Threat Protection policies on Windows 10 1607 and higher
+
+1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
+
+    a. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
+
+    b. Select Windows 10 as the operating system.
+
+    c. In the **Deployment method** field, select **Mobile Device Management / Microsoft Intune**.
+    
+    d. Click **Download package**, and save the .zip file.
+
+2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATP.onboarding*.
+
+3. Login to the [Microsoft Azure portal](https://portal.azure.com).
+
+4. From the Intune blade, choose **Device configuration**.
+
+  ![Image of device configuration menu in Microsoft Azure](images/atp-azure-intune-device-config.png)
+
+5. Under **Manage**, choose **Profiles** and click **Create Profile**.
+
+  ![Image of policy creation in Azure](images/atp-azure-intune-create-profile.png)
+
+6. Type a name, description and choose **Windows 10 and later** as the Platform and **Custom** as the Profile type.
+
+  ![Image of naming a policy](images/atp-intune-custom.png)
+
+7. Click **Settings** > **Configure**.
+
+  ![Image of settings](images/atp-intune-configure.png)
+
+8. Under Custom OMA-URI Settings, click **Add**.
+
+  ![Image of configuration settings](images/atp-custom-oma-uri.png)
+
+9. Enter the following values, then click **OK**.
+
+  ![Image of profile creation](images/atp-oma-uri-values.png)
+
+  - **Name**: Type a name for the setting.
+  - **Description**: Type a description for the setting.
+  - **OMA-URI**: _./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Onboarding_
+  - **Value**: Copy and paste the contents of the WindowsDefenderATP.onboarding file you downloaded.
+
+10. Save the settings by clicking **OK**.
+  
+11. Click **Create**.
+
+  ![Image of the policy being created](images/atp-intune-create-policy.png)
+
+12. To deploy the Profile, click **Assignments**. 
+
+  ![Image of groups](images/atp-intune-assignments.png)
+
+13. Search for and select the Group you want to apply the Configuration Profile to, then click **Select**.
+
+  ![Image of groups](images/atp-intune-group.png)
+
+14. Click **Save** to finish deploying the Configuration Profile.
+
+  ![Image of deployment](images/atp-intune-save-deployment.png)
 
 
 ## Offboard and monitor machines using Mobile Device Management tools
