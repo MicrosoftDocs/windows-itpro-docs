@@ -40,7 +40,7 @@ The following best practices serve as a guideline of query performance best prac
 
 ### Unique Process IDs
 Process IDs are recycled in Windows and reused for new processes, so cannot serve as a unique identifier for a specific process.
-To address this issue, the time the process was created is part of the Windows Defender ATP data. Together with the process ID, this can serve as a unique ID on a specific machine.
+To address this issue, the time the process was created. You can use the time process together with the process ID which can then serve as a unique ID on a specific machine.
 
 So, when you join data based on a specific process or summarize data for each process, you'll need to use a machine identifier (either MachineId or ComputerName), a process ID (ProcessId or InitiatingProcessId) and the process creation time (ProcessCreationTime or InitiatingProcessCreationTime)
 
