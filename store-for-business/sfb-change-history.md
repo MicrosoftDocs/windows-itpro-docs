@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
-ms.date: 10/31/2017
+ms.date: 3/29/2018
 ms.localizationpriority: high
 ---
 
@@ -18,12 +18,32 @@ ms.localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
+## March 2018
+| New or changed topic | Description |
+| --- | --- |
+| [Manage software purchased with Microsoft Products and Services agreement in Microsoft Store for Business](manage-mpsa-software-microsoft-store-for-business.md) | New |
+| [Manage private store settings](manage-private-store-settings.md) | Update for adding private store performance improvements. |
+| [What's New in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md) | Update |
+
+## February 2018
+
+| New or changed topic | Description |
+| --- | --- |
+| [Manage private store settings](manage-private-store-settings.md) | Update for adding private store collections. |
+| [What's New in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md) | Update |
+
+## November 2017
+
+| New or changed topic | Description |
+| --- | --- |
+| [What's New in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md) | Update |
+
 ## October 2017
 
 | New or changed topic | Description |
 | --- | --- |
 | [Manage Windows device deployment with Windows AutoPilot Deployment](add-profile-to-devices.md) | Update. Add profile settings with supported build info.  |
-| [What's New in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md) | Update. |
+| [What's New in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md) | Update |
 
 ## September 2017
 

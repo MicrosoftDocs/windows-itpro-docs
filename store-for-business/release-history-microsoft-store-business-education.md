@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
-ms.date: 2/8/2018
+ms.date: 3/29/2018
 ---
 
 # Microsoft Store for Business and Education release history
@@ -14,6 +14,13 @@ ms.date: 2/8/2018
 Microsoft Store for Business and Education regularly releases new and improved feaures. Here's a summary of new or updated features in previous releases. 
 
 Looking for info on the latest release? Check out [What's new in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md) 
+
+## January and February 2018
+- **One place for apps, software, and subscriptions** - The new **Products &amp; services** page in Microsoft Store for Business and Education gives customers a single place to manage all products and services.
+- **Create collections of apps in your private store** - Use **collections** to customize your private store. Collections allow you to create groups of apps that are commonly used in your organization or school -- you might create a collection for a Finance department, or a 6th-grade class. [Get more info](https://docs.microsoft.com/en-us/microsoft-store/manage-private-store-settings#private-store-collections)
+- **Upgrade Office 365 trial subscription** - Customers with Office 365 trials can now transition their trial to a paid subscription in Microsoft Store for Business. This works for trials you acquired from Microsoft Store for Business, or Office Admin Portal.
+- **Supporting Microsoft Product and Services Agreement customers** - If you are purchasing under the Microsoft Products and Services Agreement (MPSA), you can use Microsoft Store for Business. Here you will find access to Products & Services purchased, Downloads & Keys, Software Assurance benefits, Order history, and Agreement details.
+- **Microsoft Product and Services Agreement customers can invite people to take roles** - MPSA admins can invite people to take Microsoft Store for Business roles even if the person is not in their tenant. You provide an email address when you assign the role, and we'll add the account to your tenant and assign the role. 
 
 ## December 2017
 
