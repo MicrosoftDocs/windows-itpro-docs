@@ -50,7 +50,7 @@ PUAs are blocked when a user attempts to download or install the detected file, 
 - The file is being scanned from the browser
 - The file is in a folder with "**downloads**" in the path
 - The file is in a folder with "**temp**" in the path
-- The file is on the user's Dekstop
+- The file is on the user's Desktop
 - The file does not meet one of these conditions and is not under *%programfiles%*, *%appdata%*, or *%windows%*
 
 The file is placed in the quarantine section so it won't run. 

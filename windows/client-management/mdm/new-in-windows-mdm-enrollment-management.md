@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/03/2018
+ms.date: 03/23/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -30,6 +30,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 -   [What's new in Windows 10, version 1607](#whatsnew1607)
 -   [What's new in Windows 10, version 1703](#whatsnew10)
 -   [What's new in Windows 10, version 1709](#whatsnew1709)
+-   [What's new in Windows 10, version 1803](#whatsnew1803)
 -   [Change history in MDM documentation](#change-history-in-mdm-documentation)
 -   [Breaking changes and known issues](#breaking-changes-and-known-issues)
     -   [Get command inside an atomic command is not supported](#getcommand)
@@ -1124,6 +1125,224 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tbody>
 </table>
 
+## <a href="" id="whatsnew1803"></a>What's new in Windows 10, version 1803
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1803:</p>
+<ul>
+<li>AccountPoliciesAccountLockoutPolicy/AccountLockoutDuration</li>
+<li>AccountPoliciesAccountLockoutPolicy/AccountLockoutThreshold</li>
+<li>AccountPoliciesAccountLockoutPolicy/ResetAccountLockoutCounterAfter</li>
+<li>ApplicationDefaults/EnableAppUriHandlers</li>
+<li>ApplicationManagement/MSIAllowUserControlOverInstall</li>
+<li>ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges</li>
+<li>Browser/AllowConfigurationUpdateForBooksLibrary</li>
+<li>Browser/AlwaysEnableBooksLibrary</li>
+<li>Browser/EnableExtendedBooksTelemetry</li>
+<li>Browser/UseSharedFolderForBooks</li>
+<li>Connectivity/AllowPhonePCLinking</li>
+<li>DeliveryOptimization/DODelayBackgroundDownloadFromHttp</li>
+<li>DeliveryOptimization/DODelayForegroundDownloadFromHttp</li>
+<li>DeliveryOptimization/DOGroupIdSource</li>
+<li>DeliveryOptimization/DOPercentageMaxBackDownloadBandwidth</li>
+<li>DeliveryOptimization/DOPercentageMaxForeDownloadBandwidth</li>
+<li>DeliveryOptimization/DORestrictPeerSelectionBy</li>
+<li>DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth</li>
+<li>DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth</li>
+<li>Display/DisablePerProcessDpiForApps</li>
+<li>Display/EnablePerProcessDpi</li>
+<li>Display/EnablePerProcessDpiForApps</li>
+<li>Experience/AllowWindowsSpotlightOnSettings</li>
+<li>KioskBrowser/BlockedUrlExceptions</li>
+<li>KioskBrowser/BlockedUrls</li>
+<li>KioskBrowser/DefaultURL</li>
+<li>KioskBrowser/EnableHomeButton</li>
+<li>KioskBrowser/EnableNavigationButtons</li>
+<li>KioskBrowser/RestartOnIdleTime</li>
+<li>LanmanWorkstation/EnableInsecureGuestLogons</li>
+<li>LocalPoliciesSecurityOptions/Devices_AllowUndockWithoutHavingToLogon</li> 
+<li>LocalPoliciesSecurityOptions/Devices_AllowedToFormatAndEjectRemovableMedia</li> 
+<li>LocalPoliciesSecurityOptions/Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters</li> 
+<li>LocalPoliciesSecurityOptions/Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly</li> 
+<li>LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior</li> 
+<li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees</li> 
+<li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers</li> 
+<li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession</li> 
+<li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsAlways</li> 
+<li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees</li> 
+<li>LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts</li> 
+<li>LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares</li> 
+<li>LocalPoliciesSecurityOptions/NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers</li> 
+<li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares</li> 
+<li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</li> 
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange</li> 
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</li> 
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</li> 
+<li>LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</li> 
+<li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li> 
+<li>LocalPoliciesSecurityOptions/UserAccountControl_DetectApplicationInstallationsAndPromptForElevation</li> 
+<li>LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode</li> 
+<li>RestrictedGroups/ConfigureGroupMembership</li>
+<li>Search/AllowCortanaInAAD</li>
+<li>Search/DoNotUseWebResults</li>
+<li>Security/ConfigureWindowsPasswords</li>
+<li>System/FeedbackHubAlwaysSaveDiagnosticsLocally</li>
+<li>SystemServices/ConfigureHomeGroupListenerServiceStartupMode</li>
+<li>SystemServices/ConfigureHomeGroupProviderServiceStartupMode</li>
+<li>SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode</li>
+<li>SystemServices/ConfigureXboxLiveAuthManagerServiceStartupMode</li>
+<li>SystemServices/ConfigureXboxLiveGameSaveServiceStartupMode</li>
+<li>SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode</li>
+<li>TaskScheduler/EnableXboxGameSaveTask</li>
+<li>TextInput/AllowHardwareKeyboardTextSuggestions</li>
+<li>TextInput/EnableTouchKeyboardAutoInvokeInDesktopMode</li>
+<li>TextInput/ForceTouchKeyboardDockedState</li>
+<li>TextInput/TouchKeyboardDictationButtonAvailability</li>
+<li>TextInput/TouchKeyboardEmojiButtonAvailability</li>
+<li>TextInput/TouchKeyboardFullModeAvailability</li>
+<li>TextInput/TouchKeyboardHandwritingModeAvailability</li>
+<li>TextInput/TouchKeyboardNarrowModeAvailability</li>
+<li>TextInput/TouchKeyboardSplitModeAvailability</li>
+<li>TextInput/TouchKeyboardWideModeAvailability</li>
+<li>Update/ConfigureFeatureUpdateUninstallPeriod</li>
+<li>UserRights/AccessCredentialManagerAsTrustedCaller</li>
+<li>UserRights/AccessFromNetwork</li>
+<li>UserRights/ActAsPartOfTheOperatingSystem</li> 
+<li>UserRights/AllowLocalLogOn</li> 
+<li>UserRights/BackupFilesAndDirectories</li> 
+<li>UserRights/ChangeSystemTime</li> 
+<li>UserRights/CreateGlobalObjects</li> 
+<li>UserRights/CreatePageFile</li> 
+<li>UserRights/CreatePermanentSharedObjects</li> 
+<li>UserRights/CreateSymbolicLinks</li> 
+<li>UserRights/CreateToken</li> 
+<li>UserRights/DebugPrograms</li> 
+<li>UserRights/DenyAccessFromNetwork</li> 
+<li>UserRights/DenyLocalLogOn</li> 
+<li>UserRights/DenyRemoteDesktopServicesLogOn</li> 
+<li>UserRights/EnableDelegation</li> 
+<li>UserRights/GenerateSecurityAudits</li> 
+<li>UserRights/ImpersonateClient</li> 
+<li>UserRights/IncreaseSchedulingPriority</li> 
+<li>UserRights/LoadUnloadDeviceDrivers</li> 
+<li>UserRights/LockMemory</li> 
+<li>UserRights/ManageAuditingAndSecurityLog</li> 
+<li>UserRights/ManageVolume</li> 
+<li>UserRights/ModifyFirmwareEnvironment</li> 
+<li>UserRights/ModifyObjectLabel</li> 
+<li>UserRights/ProfileSingleProcess</li> 
+<li>UserRights/RemoteShutdown</li> 
+<li>UserRights/RestoreFilesAndDirectories</li> 
+<li>UserRights/TakeOwnership</li>
+<li>WindowsDefenderSecurityCenter/DisableAccountProtectionUI</li>
+<li>WindowsDefenderSecurityCenter/DisableDeviceSecurityUI</li>
+<li>WindowsDefenderSecurityCenter/HideRansomwareDataRecovery</li>
+<li>WindowsDefenderSecurityCenter/HideSecureBoot</li>
+<li>WindowsDefenderSecurityCenter/HideTPMTroubleshooting</li> 
+</ul>
+<p>Security/RequireDeviceEncrption - updated to show it is supported in desktop.</p>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top"><p>Updated the description for AllowWarningForOtherDiskEncryption to describe changes added in Windows 10, version 1803.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added new node MaintainProcessorArchitectureOnUpdate in Windows 10, version 1803.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[DMClient CSP](dmclient-csp.md)</td>
+<td style="vertical-align:top"><p>Added ./User/Vendor/MSFT/DMClient/Provider/[ProviderID]/FirstSyncStatus node. Also added the following nodes in Windows 10, version 1803:</p>
+<ul>
+<li>AADSendDeviceToken</li>
+<li>BlockInStatusPage</li>
+<li>AllowCollectLogsButton</li>
+<li>CustomErrorText</li>
+<li>SkipDeviceStatusPage</li>
+<li>SkipUserStatusPage</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Defender CSP](defender-csp.md)</td>
+<td style="vertical-align:top"><p>Added new node (OfflineScan) in Windows 10, version 1803.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[UEFI CSP](uefi-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Update CSP](update-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following nodes in Windows 10, version 1803:</p>
+<ul>
+<li>Rollback</li>
+<li>Rollback/FeatureUpdate</li>
+<li>Rollback/QualityUpdateStatus</li>
+<li>Rollback/FeatureUpdateStatus</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[AssignedAccess CSP](assignedaccess-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following nodes in Windows 10, version 1803:</p>
+<ul>
+<li>Status</li>
+<li>ShellLauncher</li>
+<li>StatusConfiguration</li>
+</ul>
+<p>Updated the AssigneAccessConfiguration schema.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[MultiSIM CSP](multisim-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<ul>
+<li>MaintainProcessorArchitectureOnUpdate</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[eUICCs CSP](euiccs-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<ul>
+<li>IsEnabled</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[DeviceStatus CSP](devicestatus-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<ul>
+<li>OS/Mode</li>
+</ul>
+</td></tr>
+<tr>
+<<<<<<< HEAD
+<td style="vertical-align:top">[AccountManagement CSP](accountmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+=======
+<td style="vertical-align:top">[RootCATrustedCertificates CSP](rootcacertificates-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<ul>
+<li>UntrustedCertificates</li>
+</ul>
+>>>>>>> 2aa0839b99c52229c7cf43d58f467019b1284a6a
+</td></tr>
+</tbody>
+</table>
+
 ## Breaking changes and known issues
 
 ### <a href="" id="getcommand"></a>Get command inside an atomic command is not supported
@@ -1411,12 +1630,62 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul>
 </td></tr>
 <tr>
+<td style="vertical-align:top">[DeviceStatus CSP](devicestatus-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<ul>
+<li>OS/Mode</li>
+</ul>
+</td></tr>
+<tr>
 <td style="vertical-align:top">[Understanding ADMX-backed policies](understanding-admx-backed-policies.md)</td>
 <td style="vertical-align:top"><p>Added the following videos:</p>
 <ul>
 <li>[How to create a custom xml to enable an ADMX-backed policy and deploy the XML in Intune](https://www.microsoft.com/showcase/video.aspx?uuid=bdc9b54b-11b0-4bdb-a022-c339d16e7121)</li>
 <li>[How to import a custom ADMX file to a device using Intune](https://www.microsoft.com/showcase/video.aspx?uuid=a59888b1-429f-4a49-8570-c39a143d9a73)</li>
 </ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[AccountManagement CSP](accountmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[RootCATrustedCertificates CSP](rootcacertificates-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<ul>
+<li>UntrustedCertificates</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1803:</p>
+<ul>
+<li>ApplicationDefaults/EnableAppUriHandlers</li>
+<li>ApplicationManagement/MSIAllowUserControlOverInstall</li>
+<li>ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges</li>
+<li>Connectivity/AllowPhonePCLinking</li>
+<li>RestrictedGroups/ConfigureGroupMembership</li>
+</ul>
+<p>The following existing policies were updated:</p>
+<ul>
+<li>InternetExplorer/AllowSiteToZoneAssignmentList - updated the description and added an example SyncML</li>
+<li>TextInput/AllowIMENetworkAccess - introduced new suggestion services in Japanese IME in addition to cloud suggestion.</li>
+</ul>
+<p>Added a new section:</p>
+<ul>
+<li>[Policies supported by GP](policy-configuration-service-provider.md#policies-supported-by-gp) - list of policies in Policy CSP that has corresponding Group Policy. The policy description contains the GP information, such as GP policy name and variable name.</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Policy CSP - Bluetooth](policy-csp-bluetooth.md)</td>
+<td style="vertical-align:top"><p>Added new section [ServicesAllowedList usage guide](policy-csp-bluetooth.md#servicesallowedlist-usage-guide).</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[MultiSIM CSP](multisim-csp.md)</td>
+<td style="vertical-align:top"><p>Added SyncML examples and updated the settings descriptions.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[RemoteWipe CSP](remotewipe-csp.md)</td>
+<td style="vertical-align:top"><p>Reverted back to Windows 10, version 1709. Removed previous draft documentation for version 1803.</p>
 </td></tr>
 </tbody>
 </table>
@@ -1525,14 +1794,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>LocalPoliciesSecurityOptions/Devices_AllowedToFormatAndEjectRemovableMedia</li> 
 <li>LocalPoliciesSecurityOptions/Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters</li> 
 <li>LocalPoliciesSecurityOptions/Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_DigitallySignSecureChannelDataWhenPossible</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_MaximumMachineAccountPasswordAge</li> 
-<li>LocalPoliciesSecurityOptions/DomainMember_RequireStrongSessionKey</li> 
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior</li> 
-<li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsAlways</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession</li> 
@@ -1543,10 +1805,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>LocalPoliciesSecurityOptions/NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</li> 
-<li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM</li> 
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange</li> 
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</li> 
-<li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</li> 
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</li> 
 <li>LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</li> 
 <li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li> 
@@ -1627,16 +1887,6 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>CustomErrorText</li>
 <li>SkipDeviceStatusPage</li>
 <li>SkipUserStatusPage</li>
-</ul>
-</td></tr>
-<tr class="odd">
-<td style="vertical-align:top">[RemoteWipe CSP](remotewipe-csp.md)</td>
-<td style="vertical-align:top"><p>Added the following nodes in Windows 10, version 1803:</p>
-<ul>
-<li>AutomaticRedeployment</li>
-<li>doAutomaticRedeployment</li>
-<li>LastError</li>
-<li>Status</li>
 </ul>
 </td></tr>
 <tr class="odd">

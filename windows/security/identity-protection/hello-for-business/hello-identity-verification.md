@@ -10,7 +10,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 12/04/2017
+ms.date: 03/26/2018
 ---
 # Windows Hello for Business
 
@@ -43,12 +43,12 @@ The table shows the minimum requirements for each deployment.
 
 | Key trust</br>Group Policy managed | Certificate trust</br>Mixed managed | Key trust</br>Modern managed | Certificate trust</br>Modern managed | 
 | --- | --- | --- | --- |
-| Windows 10, version 1511 or later| Windows 10, version 1703 or later (domain joined)</br>Windows 10, version 1511 or later (cloud joined) | Windows 10, version 1511 or later | Windows 10, version 1511 or later |
+| Windows 10, version 1511 or later| **Hybrid Azure AD Joined:**<br>  *Minimum:* Windows 10, version 1703<br>  *Best experience:* Windows 10, version 1709 or later (supports synchronous certificate enrollment).</br>**Azure AD Joined:**<br>  Windows 10, version 1511 or later| Windows 10, version 1511 or later | Windows 10, version 1511 or later |
 | Windows Server 2016 Schema | Windows Server 2016 Schema | Windows Server 2016 Schema | Windows Server 2016 Schema |
 | Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level| Windows Server 2008 R2 Domain/Forest functional level |Windows Server 2008 R2 Domain/Forest functional level |
 | Windows Server 2016 Domain Controllers | Windows Server 2008 R2 or later Domain Controllers | Windows Server 2016 Domain Controllers | Windows Server 2008 R2 or later Domain Controllers | 
 | Windows Server 2012 or later Certificate Authority | Windows Server 2012 or later Certificate Authority | Windows Server 2012 or later Certificate Authority | Windows Server 2012 or later Certificate Authority |
-| N/A | Windows Server 2016 AD FS with KB4022723 update (domain joined), and</br>Windows Server 2012 or later Network Device Enrollment Service (cloud joined) | N/A | Windows Server 2012 or later Network Device Enrollment Service |
+| N/A | Windows Server 2016 AD FS with [KB4088889 update](https://support.microsoft.com/en-us/help/4088889) (hybrid Azure AD joined clients),<br> and</br>Windows Server 2012 or later Network Device Enrollment Service (Azure AD joined) | N/A | Windows Server 2012 or later Network Device Enrollment Service |
 | Azure MFA tenant, or</br>AD FS w/Azure MFA adapter, or</br>AD FS w/Azure MFA Server adapter, or</br>AD FS w/3rd Party MFA Adapter| Azure MFA tenant, or</br>AD FS w/Azure MFA adapter, or</br>AD FS w/Azure MFA Server adapter, or</br>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or</br>AD FS w/Azure MFA adapter, or</br>AD FS w/Azure MFA Server adapter, or</br>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or</br>AD FS w/Azure MFA adapter, or</br>AD FS w/Azure MFA Server adapter, or</br>AD FS w/3rd Party MFA Adapter |
 | Azure Account | Azure Account | Azure Account | Azure Account |
 | Azure Active Directory | Azure Active Directory | Azure Active Directory | Azure Active Directory |
@@ -65,11 +65,14 @@ The table shows the minimum requirements for each deployment.
 | Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level |
 | Windows Server 2016 Domain Controllers | Windows Server 2008 R2 or later Domain Controllers |
 | Windows Server 2012 or later Certificate Authority | Windows Server 2012 or later Certificate Authority |
-| Windows Server 2016 AD FS with [KB4022723 update](https://support.microsoft.com/en-us/help/4022723) | Windows Server 2016 AD FS with [KB4022723 update](https://support.microsoft.com/en-us/help/4022723) |
+| Windows Server 2016 AD FS with [KB4088889 update](https://support.microsoft.com/en-us/help/4088889) | Windows Server 2016 AD FS with [KB4088889 update](https://support.microsoft.com/en-us/help/4088889) |
 | AD FS with Azure MFA Server, or</br>AD FS with 3rd Party MFA Adapter | AD FS with Azure MFA Server, or</br>AD FS with 3rd Party MFA Adapter |
 | Azure Account, optional for Azure MFA billing | Azure Account, optional for Azure MFA billing |
 
 ## Frequently Asked Questions
+
+### Can I deploy Windows Hello for Business using System Center Configuration Manager?
+Windows Hello for Business deployments using System Center Configuration Manager need to move to the hybrid deploymnet model that uses Active Directory Federation Services. Deployments using System Center Configuration Manager wil no long be supported after November 2018.
 
 ### What is the password-less strategy?
 

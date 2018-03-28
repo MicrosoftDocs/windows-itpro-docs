@@ -15,7 +15,7 @@ ms.date: 10/17/2017
 
 **Applies to**
 
--   Windows 10
+-   Windows 10 Enterprise
 -   Windows 10 Mobile
 -   Windows Server
 
