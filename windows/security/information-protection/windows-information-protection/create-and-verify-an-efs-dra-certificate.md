@@ -72,7 +72,7 @@ The recovery process included in this topic only works for desktop devices. WIP 
     
     Where *encryptedfile.extension* is the name of your encrypted file. For example, corporatedata.docx.
 
-**To quickly recover WIP-protected desktop data after unenrollment**
+**To quickly recover WIP-protected after unenrollment**
 
 It's possible that you might revoke data from an unenrolled device only to later want to restore it all. This can happen in the case of a missing device being returned or if an unenrolled employee enrolls again. If the employee enrolls again using the original user profile, and the revoked key store is still on the device, all of the revoked data can be restored at once, by following these steps.
 
@@ -81,51 +81,29 @@ It's possible that you might revoke data from an unenrolled device only to later
 
 1. Have your employee sign in to the unenrolled device, open a command prompt, and type:
     
-    <code>Robocopy “%localappdata%\Microsoft\EDP\Recovery” “<i>new_location</i>” /EFSRAW</code>
+   `Robocopy` `"%localappdata%\Microsoft\EDP\Recovery"` `"`*`new_location`*`"` `/EFSRAW`
 
-    Where ”*new_location*" is in a different directory. This can be on the employee’s device or on a Windows 8 or Windows Server 2012 or newer server file share that can be accessed while you're logged in as a data recovery agent.
+   -or-
+
+   If the employee performed a clean installation and there is no user profile, you need to recover the keys from the System Volume folder in each drive. Type: 
+    
+   `Robocopy` `"`*`drive_letter`*`:\System Volume Information\EDP\Recovery\"` `"`*`new_location`*`"` `*` `/EFSRAW`
+
+   Where "*new_location*" is in a different directory. This can be on the employee’s device or on a shared folder on a computer that runs Windows 8 or Windows Server 2012 or newer and can be accessed while you're logged in as a data recovery agent.
+
+   To start Robocopy in S mode, click Windows key + R. 
 
 2. Sign in to a different device with administrator credentials that have access to your organization's DRA certificate, and perform the file decryption and recovery by typing:
 
-    <code>cipher.exe /D "<i>new_location</i>"</code>
+   `cipher.exe /D` `"`*`new_location`*`"`
 
 3. Have your employee sign in to the unenrolled device, and type:
 
-    <code>Robocopy "<i>new_location</i>" “%localappdata%\Microsoft\EDP\Recovery\Input”</code>
+   `Robocopy` `"`*`new_location`*`"` `"%localappdata%\Microsoft\EDP\Recovery\Input"`
 
 4. Ask the employee to lock and unlock the device.
 
-    The Windows Credential service automatically recovers the employee’s previously revoked keys from the <code>Recovery\Input</code> location.
-
-**To quickly recover WIP-protected desktop data in a cloud-based environment**
-
-If you use a cloud environment in your organization, you may still want to restore an employee's data after revocation. While much of the process is the same as when you're not in a cloud environment, there are a couple of differences.
-
->[!IMPORTANT]
->To maintain control over your enterprise data, and to be able to revoke again in the future, you must only perform this process after the employee has re-enrolled the device. 
-
-1. Have your employee sign in to the device that has revoked data for you to restore, open the **Run** command (Windows logo key + R), and type one of the following commands:
-
-    - If the keys are still stored within the employee's profile, type: <code>Robocopy “%localappdata%\Microsoft\EDP\Recovery” “<i>new_location</i>” * /EFSRAW</code>
-
-    -or-
-
-    - If the employee performed a clean installation over the operating system and you need to recover the keys from the System Volume folder, type: <code>Robocopy “<i>drive_letter:</i>\System Volume Information\EDP\Recovery\” "<i>new_location</i>” * /EFSRAW></code>
-
-    >[!Important]
-    >The “*new_location*” must be in a different directory, either on the employee’s device or on a Windows 8 or Windows Server 2012 or newer server file share, which can be accessed while you're logged in as a data recovery agent.
-
-2. Sign in to a different device with administrator credentials that have access to your organization's DRA certificate private key, and perform the file decryption and recovery by typing:
-
-    <code>cipher.exe /D “<i>new_location</i>”</code>
-
-3. Have your employee sign in to the device again, open the **Run** command, and type:
-
-    <code>Robocopy “<i>new_location</i>” “%localappdata%\Microsoft\EDP\Recovery\Input”</code>
-
-4. Ask the employee to lock and unlock the device.
-
-    The Windows Credential service automatically recovers the employee’s previously revoked keys from the <code>Recovery\Input</code> location. All your company’s previously revoked files should be accessible to the employee again.
+   The Windows Credential service automatically recovers the employee’s previously revoked keys from the `Recovery\Input` location.
 
 ## Auto-recovery of encryption keys
 Starting with Windows 10, version 1709, WIP includes a data recovery feature that lets your employees auto-recover access to work files if the encryption key is lost and the files are no longer accessible. This typically happens if an employee reimages the operating system partition, removing the WIP key info, or if a device is reported as lost and you mistakenly target the wrong device for unenrollment.
