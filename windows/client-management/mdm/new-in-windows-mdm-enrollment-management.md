@@ -1663,6 +1663,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>ApplicationManagement/MSIAllowUserControlOverInstall</li>
 <li>ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges</li>
 <li>Connectivity/AllowPhonePCLinking</li>
+<li>Notifications/DisallowCloudNotification</li>
+<li>Notifications/DisallowTileNotification</li>
 <li>RestrictedGroups/ConfigureGroupMembership</li>
 </ul>
 <p>The following existing policies were updated:</p>
