@@ -1329,16 +1329,20 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr>
-<<<<<<< HEAD
+</ul>
+</td></tr>
+<tr>
 <td style="vertical-align:top">[AccountManagement CSP](accountmanagement-csp.md)</td>
 <td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
-=======
+</ul>
+</td></tr>
+<tr>
 <td style="vertical-align:top">[RootCATrustedCertificates CSP](rootcacertificates-csp.md)</td>
 <td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
 <ul>
 <li>UntrustedCertificates</li>
 </ul>
->>>>>>> 2aa0839b99c52229c7cf43d58f467019b1284a6a
+
 </td></tr>
 </tbody>
 </table>
