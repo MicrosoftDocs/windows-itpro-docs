@@ -797,9 +797,9 @@ To create a WDAC policy, copy each of the following commands into an elevated Wi
 
     ` $CIPolicyBin=$CIPolicyPath+"DeviceGuardPolicy.bin"`
 
-2.  Use [New-CIPolicy](https://technet.microsoft.com/library/mt634473.aspx) to create a new WDAC policy by scanning the system for installed applications:
+2.  Use [New-CIPolicy](https://docs.microsoft.com/en-us/powershell/module/configci/new-cipolicy?view=win10-ps) to create a new WDAC policy by scanning the system for installed applications:
 
-    ` New-CIPolicy -Level PcaCertificate -FilePath $InitialCIPolicy –UserPEs 3> CIPolicyLog.txt `
+    ` New-CIPolicy -Level FilePublisher -FilePath $InitialCIPolicy –UserPEs -FallBack Hash 3> CIPolicyLog.txt `
 
     > [!Note] 
     
@@ -811,7 +811,7 @@ To create a WDAC policy, copy each of the following commands into an elevated Wi
     
     > - The preceding example includes `3> CIPolicylog.txt`, which redirects warning messages to a text file, **CIPolicylog.txt**.
 
-3.  Use [ConvertFrom-CIPolicy](https://technet.microsoft.com/library/mt733073.aspx) to convert the WDAC policy to a binary format:
+3.  Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/en-us/powershell/module/configci/convertfrom-cipolicy?view=win10-ps) to convert the WDAC policy to a binary format:
 
     ` ConvertFrom-CIPolicy $InitialCIPolicy $CIPolicyBin`
 
@@ -841,7 +841,7 @@ When WDAC policies are run in audit mode, it allows administrators to discover a
     
     > - An alternative method to test a policy is to rename the test file to SIPolicy.p7b and drop it into C:\\Windows\\System32\\CodeIntegrity, rather than deploy it by using the Local Group Policy Editor.
     
-3.  Navigate to **Computer Configuration\\Administrative Templates\\System\\Windows Defender Device Guard**, and then select **Deploy Windows Defender Application Control**. Enable this setting by using the appropriate file path, for example, C:\\Windows\\System32\\CodeIntegrity\\DeviceGuardPolicy.bin, as shown in Figure 1.
+3.  Navigate to **Computer Configuration\\Administrative Templates\\System\\Device Guard**, and then select **Deploy Windows Defender Application Control**. Enable this setting by using the appropriate file path, for example, C:\\Windows\\System32\\CodeIntegrity\\DeviceGuardPolicy.bin, as shown in Figure 1.
 
     > [!Note]
     
@@ -887,9 +887,9 @@ Use the following procedure after you have been running a computer with a WDAC p
 
     ` $CIAuditPolicy=$CIPolicyPath+"DeviceGuardAuditPolicy.xml"`
 
-3.  Use [New-CIPolicy](https://technet.microsoft.com/library/mt634473.aspx) to generate a new WDAC policy from logged audit events. This example uses a file rule level of **Hash** and includes `3> CIPolicylog.txt`, which redirects warning messages to a text file, **CIPolicylog.txt**.
+3.  Use [New-CIPolicy](https://docs.microsoft.com/en-us/powershell/module/configci/new-cipolicy?view=win10-ps) to generate a new WDAC policy from logged audit events. This example uses a file rule level of **Hash** and includes `3> CIPolicylog.txt`, which redirects warning messages to a text file, **CIPolicylog.txt**.
 
-    ` New-CIPolicy -Audit -Level Hash -FilePath $CIAuditPolicy –UserPEs 3> CIPolicylog.txt`
+    ` New-CIPolicy -Audit -Level Hash -FilePath $CIAuditPolicy –UserPEs 3 -FallBack Hash > CIPolicylog.txt`
 
   > [!Note] 
   > When you create policies from audit events, you should carefully consider the file rule level that you select to trust. The preceding example uses the **Hash** rule level, which is the most specific. Any change to the file (such as replacing the file with a newer version of the same file) will change the Hash value, and require an update to the policy.
@@ -959,7 +959,7 @@ To merge two WDAC policies, complete the following steps in an elevated Windows 
 
     ` Merge-CIPolicy -PolicyPaths $InitialCIPolicy,$AuditCIPolicy -OutputFilePath $MergedCIPolicy`
 
-3.  Use [ConvertFrom-CIPolicy](https://technet.microsoft.com/library/mt733073.aspx) to convert the merged WDAC policy to binary format:
+3.  Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/en-us/powershell/module/configci/convertfrom-cipolicy?view=win10-ps) to convert the merged WDAC policy to binary format:
 
     ` ConvertFrom-CIPolicy $MergedCIPolicy $CIPolicyBin `
 
@@ -1004,7 +1004,7 @@ Every WDAC policy is created with audit mode enabled. After you have successfull
   > [!Note] 
   > To enforce a WDAC policy, you delete option 3, the **Audit Mode Enabled** option. There is no “enforced” option that can be placed in a WDAC policy.
 
-5.  Use [ConvertFrom-CIPolicy](https://technet.microsoft.com/library/mt733073.aspx) to convert the new WDAC policy to binary format:
+5.  Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/en-us/powershell/module/configci/convertfrom-cipolicy?view=win10-ps) to convert the new WDAC policy to binary format:
 
     ` ConvertFrom-CIPolicy $EnforcedCIPolicy $CIPolicyBin`
 
@@ -1064,7 +1064,7 @@ If you do not have a code signing certificate, see the [Optional: Create a code 
 
     ` Set-RuleOption -FilePath $InitialCIPolicy -Option 6 -Delete`
 
-7.  Use [ConvertFrom-CIPolicy](https://technet.microsoft.com/library/mt733073.aspx) to convert the policy to binary format:
+7.  Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/en-us/powershell/module/configci/convertfrom-cipolicy?view=win10-ps) to convert the policy to binary format:
 
     ` ConvertFrom-CIPolicy $InitialCIPolicy $CIPolicyBin`
 
