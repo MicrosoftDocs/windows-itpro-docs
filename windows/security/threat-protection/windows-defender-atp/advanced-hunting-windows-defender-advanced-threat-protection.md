@@ -79,6 +79,7 @@ For more information on the query language and supported operators, see [Query L
 The following tables are exposed as part of advanced hunting:
 
 - **AlertEvents** - Stores alerts related information 
+- **MachineInfo** - Stores machines proprties
 - **ProcessCreationEvents** - Stores process creation events 
 - **NetworkCommunicationEvents** - Stores network communication events o
 - **FileCreationEvents** - Stores file creation, modification, and rename events
@@ -103,7 +104,7 @@ You can create or modify a query and save it as your own query or share it with 
     
 3. Enter a name for the query. 
 
-   ![Image of saving a query](images/atp-save-query.png)
+   ![Image of saving a query](images/advanced-hunting-save-query.png)
 
 4. Select the folder where you'd like to save the query.
     - Shared queries - Allows other users in the tenant to access the query
