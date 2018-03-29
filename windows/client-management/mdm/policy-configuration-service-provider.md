@@ -2085,7 +2085,13 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
+    <a href="./policy-csp-notifications.md#notifications-disallowcloudnotification" id="notifications-disallowcloudnotification">Notifications/DisallowCloudNotification</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-notifications.md#notifications-disallownotificationmirroring" id="notifications-disallownotificationmirroring">Notifications/DisallowNotificationMirroring</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-notifications.md#notifications-disallowtilenotification" id="notifications-disallowtilenotification">Notifications/DisallowTileNotification</a>
   </dd>
 </dl>
 

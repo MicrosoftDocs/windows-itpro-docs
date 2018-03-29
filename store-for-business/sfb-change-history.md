@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
-ms.date: 10/31/2017
+ms.date: 3/29/2018
 ms.localizationpriority: high
 ---
 
@@ -22,6 +22,8 @@ ms.localizationpriority: high
 | New or changed topic | Description |
 | --- | --- |
 | [Manage software purchased with Microsoft Products and Services agreement in Microsoft Store for Business](manage-mpsa-software-microsoft-store-for-business.md) | New |
+| [Manage private store settings](manage-private-store-settings.md) | Update for adding private store performance improvements. |
+| [What's New in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md) | Update |
 
 ## February 2018
 
