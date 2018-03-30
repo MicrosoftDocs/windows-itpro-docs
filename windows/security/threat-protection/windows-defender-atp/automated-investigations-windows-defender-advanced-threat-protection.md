@@ -36,9 +36,9 @@ The Automated investigations list shows all the investigations that have been in
 
 ## Understand the Automated investigation flow
 ### How the Automated investigation starts
-Entities are the starting point for Automated investigations. When an alert contains a supported entity for Automated investigation (file as an example) an Automated investigation starts. 
+Entities are the starting point for Automated investigations. When an alert contains a supported entity for Automated investigation (for example, a file) an Automated investigation starts. 
 
-The alerts start by analyzing the supported Entities from the alert and also executes a generic machine playbook to see if there is anything else suspicous on that machine. The outcome and details from the investigation is seen in the Automated investigation view.
+The alerts start by analyzing the supported entities from the alert and also runs a generic machine playbook to see if there is anything else suspicious on that machine. The outcome and details from the investigation is seen in the Automated investigation view.
 
 ### Details of an Automated investigation
 As the investigation proceeds, you'll be able to view the details of the investigation. Selecting a triggering alert brings you to the investigation details view where you can pivot from the **Investigation graph**, **Alerts**, **Machines**, **Threats**, **Entities**, and **Log** tabs.
@@ -59,7 +59,7 @@ If there are pending actions on the investigation, the **Pending actions** tab w
 
 While an investigation is running, any other alert generated from the machine will be added to an ongoing Automated investigation until that investigation is completed. In addition, if the same threat is seen on other machines, those machines are added to the investigation.
 
-If the an increminiated entity is seen in another machine, the Automated investigation will expand the investigation to include that machine and a generic machine playbook will start on that machine, if 10 or more machines are found during this expansion process from the same entity then that expansion action will require an approval and will be seen in the **Pending actions** view.
+If an incriminated entity is seen in another machine, the Automated investigation will expand the investigation to include that machine and a generic machine playbook will start on that machine. If 10 or more machines are found during this expansion process from the same entity, then that expansion action will require an approval and will be seen in the **Pending actions** view.
 
 ### How threats are remediated
 Depending on how you set up the machine groups and their level of automation, the Automated investigation will either automaticlly remediate threats or require user approval (this is the default). For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md). 
