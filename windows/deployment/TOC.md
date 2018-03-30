@@ -8,6 +8,13 @@
 ### [Configure VDA for Subscription Activation](vda-subscription-activation.md)
 ### [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md)
 ## [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md)
+### [Quick fixes](upgrade\quick-fixes.md)
+### [SetupDiag](upgrade/setupdiag.md)
+### [Troubleshooting upgrade errors](upgrade/troubleshoot-upgrade-errors.md)
+### [Windows error reporting](upgrade/windows-error-reporting.md)
+### [Upgrade error codes](upgrade/upgrade-error-codes.md)
+### [Log files](upgrade/log-files.md)
+### [Resolution procedures](upgrade/resolution-procedures.md)
 ### [Submit Windows 10 upgrade errors](upgrade/submit-errors.md)
 ### [SetupDiag](upgrade/setupdiag.md)
 
