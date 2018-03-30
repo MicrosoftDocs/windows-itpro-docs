@@ -20,25 +20,6 @@ With thousands of new malicious files created every day, using traditional metho
 
 Windows Defender Device Guard also uses virtualization-based security to isolate the Code Integrity service and run it alongside the Windows kernel in a hypervisor-protected container. Even if an attacker manages to get control of the Windows kernel itself, the ability to run malicious executable code is much less likely. 
 
-This guide explores the individual features in Windows Defender Device Guard as well as how to plan for, configure, and deploy them. It includes:
-
-- [Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control](introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
-
-- [Requirements and deployment planning guidelines for Windows Defender Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md)
-
-- [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md)
-
-- [Deploy Windows Defender Application Control](deploy-windows-defender-application-control.md)
-
-    - [Optional: Create a code signing certificate for Windows Defender Application Control](optional-create-a-code-signing-certificate-for-windows-defender-application-control.md)
-
-    - [Deploy Windows Defender Application Control: policy rules and file rules](deploy-windows-defender-application-control-policy-rules-and-file-rules.md)
-
-    - [Deploy Windows Defender Application Control: steps](steps-to-deploy-windows-defender-application-control.md)
-
-    - [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-windows-defender-application-control.md)
-
-- [Enable virtualization-based protection of code integrity](deploy-device-guard-enable-virtualization-based-security.md)
 
 ## Related topics
 
