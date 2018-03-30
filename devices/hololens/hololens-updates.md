@@ -7,7 +7,7 @@ ms.pagetype: hololens, devices
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 04/01/2018
+ms.date: 04/23/2018
 ---
 
 # Manage updates to HoloLens
