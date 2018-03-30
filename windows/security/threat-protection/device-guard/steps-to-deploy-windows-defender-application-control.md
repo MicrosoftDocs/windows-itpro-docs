@@ -797,7 +797,7 @@ To create a WDAC policy, copy each of the following commands into an elevated Wi
 
     ` $CIPolicyBin=$CIPolicyPath+"DeviceGuardPolicy.bin"`
 
-2.  Use [New-CIPolicy](https://technet.microsoft.com/library/mt634473.aspx) to create a new WDAC policy by scanning the system for installed applications:
+2.  Use [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy?view=win10-ps) to create a new WDAC policy by scanning the system for installed applications:
 
     ` New-CIPolicy -Level PcaCertificate -FilePath $InitialCIPolicy –UserPEs 3> CIPolicyLog.txt `
 
@@ -887,7 +887,7 @@ Use the following procedure after you have been running a computer with a WDAC p
 
     ` $CIAuditPolicy=$CIPolicyPath+"DeviceGuardAuditPolicy.xml"`
 
-3.  Use [New-CIPolicy](https://technet.microsoft.com/library/mt634473.aspx) to generate a new WDAC policy from logged audit events. This example uses a file rule level of **Hash** and includes `3> CIPolicylog.txt`, which redirects warning messages to a text file, **CIPolicylog.txt**.
+3.  Use [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy?view=win10-ps) to generate a new WDAC policy from logged audit events. This example uses a file rule level of **Hash** and includes `3> CIPolicylog.txt`, which redirects warning messages to a text file, **CIPolicylog.txt**.
 
     ` New-CIPolicy -Audit -Level Hash -FilePath $CIAuditPolicy –UserPEs 3> CIPolicylog.txt`
 
