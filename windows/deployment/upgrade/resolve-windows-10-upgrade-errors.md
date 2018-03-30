@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.date: 02/22/2018
+ms.date: 03/30/2018
 ms.localizationpriority: high
 ---
 
@@ -22,6 +22,7 @@ ms.localizationpriority: high
 
 This topic contains a brief introduction to Windows 10 installation processes, and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade. The following sections and procedures are provided in this guide:
 
+- [SetupDiag](#setupdiag): SetupDiag is a new tool to help you isolate the root cause of an upgrade failure.
 - [Troubleshooting upgrade errors](#troubleshooting-upgrade-errors): General advice and techniques for troubleshooting Windows 10 upgrade errors.<br>
 - [The Windows 10 upgrade process](#the-windows-10-upgrade-process): An explanation of phases used during the upgrade process.<br>
 - [Quick fixes](#quick-fixes): Steps you can take to eliminate many Windows upgrade errors.<br>
@@ -37,6 +38,10 @@ This topic contains a brief introduction to Windows 10 installation processes, a
     - [0x800xxxxx](#0x800xxxxx): Information about result codes that start with 0x800.
     - [Other result codes](#other-result-codes): Additional causes and mitigation procedures are provided for some result codes.
     - [Other error codes](#other-error-codes): Additional causes and mitigation procedures are provided for some error codes.
+
+## SetupDiag
+
+You can use the SetupDiag.exe tool to automatically analyze log files and determine the root cause of an upgrade failure.  If SetupDiag is successful in diagnosing the problem, an error code is displayed. Given this error code, use the procedures here (in this topic) to determine how to repair the upgrade failure. For more information see [SetupDiag](setupdiag.md).
 
 ## Troubleshooting upgrade errors
 

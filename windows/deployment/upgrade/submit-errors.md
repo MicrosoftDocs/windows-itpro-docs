@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.date: 02/01/2018
+ms.date: 03/16/2018
 ms.localizationpriority: high
 ---
 
@@ -47,7 +47,7 @@ The Feedback Hub will open.
     - Are there any external devices connected? 
 - If you used the link above, the category and subcategory will be automatically selected. If it is not selected, choose **Install and Update** and **Windows Installation**. 
 
-You can attach a screenshot or file if desired. This is optional.
+You can attach a screenshot or file if desired. This is optional, but can be extremely helpful when diagnosing your upgrade issue. The location of these files is described here: [Windows Setup log files and event logs](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-log-files-and-event-logs).
 
 Click **Submit** to send your feedback.
 
