@@ -74,14 +74,16 @@ The recovery process included in this topic only works for desktop devices. WIP 
 
 ## Recover WIP-protected after unenrollment
 
-It's possible that you might revoke data from an unenrolled device only to later want to restore it all. This can happen in the case of a missing device being returned or if an unenrolled employee enrolls again. If the employee enrolls again using the original user profile, and the revoked key store is still on the device, all of the revoked data can be restored at once,.
+It's possible that you might revoke data from an unenrolled device only to later want to restore it all. This can happen in the case of a missing device being returned or if an unenrolled employee enrolls again. If the employee enrolls again using the original user profile, and the revoked key store is still on the device, all of the revoked data can be restored at once.
 
 >[!IMPORTANT]
 >To maintain control over your enterprise data, and to be able to revoke again in the future, you must only perform this process after the employee has re-enrolled the device. 
 
 1. Have the employee sign in to the unenrolled device, open a command prompt, and type:
     
-   `Robocopy` `"%localappdata%\Microsoft\EDP\Recovery"` `"`*`new_location`*`"` `/EFSRAW`
+   ```
+   Robocopy "%localappdata%\Microsoft\EDP\Recovery" "<i>new_location</i>" /EFSRAW
+   ```
 
    To start Robocopy in S mode, press the Windows key + R. 
    
