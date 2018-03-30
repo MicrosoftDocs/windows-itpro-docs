@@ -31,7 +31,7 @@ This topic provides links to useful Surface Hub documents, such as product datas
 | [Rolling Stand Mounting and Assembly Guide (PDF)](http://download.microsoft.com/download/7/0/2/702485E3-B55E-4DE8-B5DD-3B56F90DCF5D/SH-Guide_WACG_Rolling_Stands_EN-FR-ES-NL-DE-IT-AR-DA-FI-NO-SV.pdf) | Detailed instructions on how to safely and securely assemble the rolling stand, and how to mount your Surface Hub onto it. [Watch the video (opens in a pop-up media player)](http://compass.xbox.com/assets/1f/94/1f949613-3e4a-41e3-ad60-fe8aa7134115.mov?n=04.07.16_installation_video_04_rolling_stand_mount.mov) |
 | [Mounts and Stands Datasheet (PDF)](http://download.microsoft.com/download/5/0/1/501F98D9-1BCC-4448-A1DB-47056CEE33B6/20160711_Surface_Hub_Mounts_and_Stands_Datasheet.pdf) | Specifications and prices for all Surface Hub add-on stands and mounts that turn your workspace into a Surface Hub workspace. |
 | [Surface Hub Stand and Wall Mount Specifications (PDF)](http://download.microsoft.com/download/7/A/7/7A75BD0F-5A46-4BCE-B313-A80E47AEB581/20160720_Combined_Stand_Wall_Mount_Drawings.pdf) | Illustrated specifications for the 55” and 84” Surface Hub rolling stands, wall mounts, and floor-supported wall mounts. |
-| [Surface Hub Onsite Installation and Onsite Repair/Exchange Services FAQ (PDF)](http://download.microsoft.com/download/B/D/1/BD16D7C5-2662-4B7D-9C98-272CEB11A6F3/20160816%20SurfaceHub_Onsite%20Services%20FAQs%20FINAL.PDF) | Get answers to the most common questions about Surface Hub onsite service offerings and delivery. |
+
 
 
 
