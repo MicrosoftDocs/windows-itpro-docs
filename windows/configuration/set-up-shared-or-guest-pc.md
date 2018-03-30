@@ -111,20 +111,14 @@ Get-CimInstance -Namespace $namespaceName -ClassName $MDM_SharedPCClass
 
 ### Create a provisioning package for shared use
 
-1. [install Windows Configuration Designer](provisioning-packages/provisioning-install-icd.md)
+1. [Install Windows Configuration Designer](provisioning-packages/provisioning-install-icd.md)
 
 1.  Open Windows Configuration Designer. 
-
 2. On the **Start page**, select **Advanced provisioning**.
-
 3. Enter a name and (optionally) a description for the project, and click **Next**.
-
 4. Select **All Windows desktop editions**, and click **Next**.
-
 5. Click **Finish**. Your project opens in Windows Configuration Designer.
-
 6. Go to **Runtime settings** > **SharedPC**. [Select the desired settings for shared PC mode.](#customization)
-
 7. On the **File** menu, select **Save.**
 8.  On the **Export** menu, select **Provisioning package**.
 9.  Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
