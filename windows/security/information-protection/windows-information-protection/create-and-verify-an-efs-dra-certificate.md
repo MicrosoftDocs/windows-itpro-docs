@@ -80,10 +80,8 @@ It's possible that you might revoke data from an unenrolled device only to later
 >To maintain control over your enterprise data, and to be able to revoke again in the future, you must only perform this process after the employee has re-enrolled the device. 
 
 1. Have the employee sign in to the unenrolled device, open a command prompt, and type:
-    
-   ```
-   Robocopy "%localappdata%\Microsoft\EDP\Recovery" "<i>new_location</i>" /EFSRAW
-   ```
+   
+   <code>Robocopy "%localappdata%\Microsoft\EDP\Recovery" "<i>new_location</i>" /EFSRAW</code>
 
    To start Robocopy in S mode, press the Windows key + R. 
    
@@ -91,18 +89,18 @@ It's possible that you might revoke data from an unenrolled device only to later
 
    If the employee performed a clean installation and there is no user profile, you need to recover the keys from the System Volume folder in each drive. Type: 
     
-   `Robocopy` `"`*`drive_letter`*`:\System Volume Information\EDP\Recovery\"` `"`*`new_location`*`"` `*` `/EFSRAW`
+   <code>Robocopy "<i>drive_letter</i>:\System Volume Information\EDP\Recovery\" "<i>new_location</i>" * /EFSRAW</code>
 
    Where "*new_location*" is in a different directory. This can be on the employee’s device or on a shared folder on a computer that runs Windows 8 or Windows Server 2012 or newer and can be accessed while you're logged in as a data recovery agent.
 
 
 2. Sign in to a different device with administrator credentials that have access to your organization's DRA certificate, and perform the file decryption and recovery by typing:
 
-   `cipher.exe /D` `"`*`new_location`*`"`
+   <code>cipher.exe /D "<i>new_location</i>"</code>
 
 3. Have your employee sign in to the unenrolled device, and type:
 
-   `Robocopy` `"`*`new_location`*`"` `"%localappdata%\Microsoft\EDP\Recovery\Input"`
+   <code>Robocopy "<i>new_location</i>" "%localappdata%\Microsoft\EDP\Recovery\Input"</code>
 
 4. Ask the employee to lock and unlock the device.
 
