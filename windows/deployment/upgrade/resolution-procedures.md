@@ -17,7 +17,7 @@ ms.localizationpriority: high
 -   Windows 10
 
 >[!NOTE]
->This is a 400 level topic (advanced).<br>
+>This is a 200 level topic (moderate).<br>
 >See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
 
 
