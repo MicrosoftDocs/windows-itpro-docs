@@ -194,9 +194,9 @@ There are a couple of tabs on the report that's generated:
 
 - Machine and alerts 
 - Investigation results and action center
-- Secure score
+- Secure Score
 
-In general, if you know of a specific threat name, CVE, or KB, you can identify machines with upatched vulnerabilities that might be leveraged by threats. This report also helps you determine whether machine-level mitigations are configured correctly on the machines and prioritize those that might need attention.
+In general, if you know of a specific threat name, CVE, or KB, you can identify machines with unpatched vulnerabilities that might be leveraged by threats. This report also helps you determine whether machine-level mitigations are configured correctly on the machines and prioritize those that might need attention.
 
 
 

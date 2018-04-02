@@ -65,5 +65,5 @@ You can configure Windows Defender ATP to send automation notifications to speci
 - [Update data retention settings](general-settings-windows-defender-advanced-threat-protection.md)
 - [Configure alert notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)
 - [Enable and create Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
-- [Enable Secure score security controls](enable-security-analytics-windows-defender-advanced-threat-protection.md)
+- [Enable Secure Score security controls](enable-security-analytics-windows-defender-advanced-threat-protection.md)
 - [Configure advanced features](advanced-features-windows-defender-advanced-threat-protection.md)

@@ -135,11 +135,14 @@ To offboard the server, you can use either of the following methods:
 
 #### Run a PowerShell command to remove the configuration
 
-1. Get your workspace ID by going to **Endpoint management** > **Servers**:
-    
-    ![Image of server onboarding](images/atp-server-onboarding-workspaceid.png)
+1. Get your Workspace ID:
+   a. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
 
-2. Open an elevated PowerShell and run the following command. Use the workspace ID you obtained and replacing `WorkspaceID`:
+   b. Select Windows server 2012, 2012R2 and 2016 as the operating system and get your Workspace ID:
+    
+        ![Image of server onboarding](images/atp-server-offboarding-workspaceid.png)
+
+2. Open an elevated PowerShell and run the following command. Use the Workspace ID you obtained and replacing `WorkspaceID`:
 
     ```
     # Load agent scripting object

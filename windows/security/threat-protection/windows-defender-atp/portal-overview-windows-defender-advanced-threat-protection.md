@@ -51,7 +51,7 @@ You can navigate through the portal using the menu options available in all sect
 Area | Description
 :---|:---
 (1) Navigation pane | Use the navigation pane to move between the **Dashboards**, **Alerts queue**, **Automated investigations**, **Machines list**, **Service health**, **Advanced hunting**, and **Settings**.
-**Dashboards**	| Access the Security operations, the Secure score, or Threat analytics dashboard.
+**Dashboards**	| Access the Security operations, the Secure Score, or Threat analytics dashboard.
 **Alerts** | View separate queues of new, in progress, resolved alerts, alerts assigned to you.
 **Automated investigations** | Displays a list of automated investigations that's been conducted in the network, the status of each investigation and other details such as when the investigation started and the duration of the investigation.
 **Machines list** | Displays the list of machines that are onboarded to Windows Defender ATP, some information about them, and the corresponding number of alerts.
