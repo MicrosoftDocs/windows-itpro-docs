@@ -20,14 +20,12 @@ Some of the HoloLens configurations that you can apply in a provisioning package
 - Set up a Wi-Fi connection
 - Apply certificates to the device
 
-To install Windows Configuration Designer and create provisioning packages, you must install [Windows Configuration Designer](https://www.microsoft.com/store/apps/9nblggh4tx22) from the Microsoft Store or [install the Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). If you install Windows Configurations Designer from the Windows ADK, select **Configuration Designer** from the **Select the features you want to install** dialog box.
+To create provisioning packages, you must install [Windows Configuration Designer](https://www.microsoft.com/store/apps/9nblggh4tx22) from Microsoft Store or [install the Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). If you install Windows Configurations Designer from the Windows ADK, select **Configuration Designer** from the **Select the features you want to install** dialog box.
 
 
 
 <span id="wizard" />
 ## Create a provisioning package for HoloLens using the HoloLens wizard
-
-[This information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 The HoloLens wizard helps you configure the following settings in a provisioning package:
 
@@ -63,8 +61,6 @@ Use the Windows Configuration Designer tool to create a provisioning package.
   ![ICD start options](images/icd-create-options-1703.png)   
 
 3. Name your project and click **Finish**. 
-
-  ![ICD desktop provisioning](images/wizard-steps.png)
 
 4. Read the instructions on the **Getting started** page and select **Next**. The pages for desktop provisioning will walk you through the following steps.
   
