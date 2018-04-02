@@ -223,6 +223,8 @@ Follow [the instructions for creating a kiosk configuration XML file for desktop
 
 ## More information
 
+Watch how to configure a kiosk in Microsoft Intune.
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/ce9992ab-9fea-465d-b773-ee960b990c4a?autoplay=false]
 
+Watch how to configure a kiosk in a provisioning package.
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
