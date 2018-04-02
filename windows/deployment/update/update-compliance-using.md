@@ -5,8 +5,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: DaniHalfin
-ms.author: daniha
+author: jaimeo
+ms.author: jaimeo
 ms.date: 10/13/2017
 ---
 
@@ -32,7 +32,7 @@ In Update Compliance, data is separated into vertically-sliced sections. Each se
 After Update Compliance has successfully been added from the solution gallery, you’ll see this tile:
 ![Empty Update Compliance Tile](images/uc-emptyworkspacetile.png)
 
-When the solution is added, data is not immediately available. Data will begin to be collected after data is sent up that is associated with the Commercial ID associated with the device. If you haven’t read about assigning your Commercial ID to your devices, refer to [this topic](update-compliance-get-started.md#deploy-your-commercial-id-to-your-windows-10-devices). After Microsoft has collected and processed any device data associated with your Commercial ID, the tile will be replaced with the following summary:
+When the solution is added, data is not immediately available. Data will begin to be collected after data is sent up that is associated with the Commercial ID associated with the device. This process assumes that Windows diagnostic data is enabled and data sharing is enabled as described in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md). After Microsoft has collected and processed any device data associated with your Commercial ID, the tile will be replaced with the following summary:
 
 ![Filled Update Compliance Tile](images/uc-filledworkspacetile.png)
 

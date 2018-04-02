@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic-msft
-ms.date: 01/29/2018
+ms.date: 03/22/2018
 ---
 
 # Manage connections from Windows operating system components to Microsoft services
@@ -77,14 +77,13 @@ Here's a list of changes that were made to this article for Windows 10, version 
 
 ## <a href="" id="bkmk-othersettings"></a>Management options for each setting
 
-
 The following sections list the components that make network connections to Microsoft services by default. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure diagnostic data at the Security level, turn off Windows Defender diagnostic data and MSRT reporting, and turn off all of these connections.
 
 If you're running Windows 10, they will be included in the next update for the Long Term Servicing Branch.
 
 ### Settings for Windows 10 Enterprise edition 
 
-See the following table for a summary of the management settings for Windows 10 Enterprise, version 1709 and Windows 10 Enterprise, version 1703.
+The following table lists management options for each setting, beginning with Windows 10 Enterprise version 1703.
 
 | Setting | UI | Group Policy | MDM policy | Registry | Command line |
 | - | :-: | :-: | :-: | :-: | :-: |
@@ -1516,6 +1515,8 @@ To turn off **Let apps run in the background**:
     -   **1**. Force allow
     -   **2**. Force deny
 
+> [!NOTE]
+> Some apps, including Cortana and Search, might not function as expected if you set **Let apps run in the background** to **Force Deny**.
 
 ### <a href="" id="bkmk-priv-motion"></a>17.18 Motion
 

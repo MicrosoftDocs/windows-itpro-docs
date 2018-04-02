@@ -8,12 +8,13 @@ author: greg-lindsay
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.date: 02/02/2018
+ms.date: 03/28/2018
 ---
 
 # Windows 10 and Windows 10 Mobile
 
 Find the latest how to and support content that IT pros need to evaluate, plan, deploy, secure and manage devices running Windows 10 or Windows 10 Mobile.
+
 
 &nbsp;
 
@@ -55,6 +56,9 @@ Find the latest how to and support content that IT pros need to evaluate, plan, 
       <br/>Security </a>
   </tr>
 </table>
+
+>[!TIP]
+> Looking for information about older versions of Windows? Check out our other [Windows libraries](/previous-versions/windows/) on docs.microsoft.com. You can also search this site to find specific information, like this [Windows 8.1 content](https://docs.microsoft.com/search/index?search=Windows+8.1&dataSource=previousVersions).
 
 ## Get to know Windows as a Service (WaaS)
 

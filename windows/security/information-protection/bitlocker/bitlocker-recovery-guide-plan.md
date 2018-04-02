@@ -24,15 +24,6 @@ This article assumes that you understand how to set up AD DS to back up BitLock
 
 This article does not detail how to configure AD DS to store the BitLocker recovery information.
 
-This article contains the following topics:
-
--   [What Is BitLocker Recovery?](#bkmk-whatisrecovery)
--   [Testing Recovery](#bkmk-testingrecovery)
--   [Planning Your Recovery Process](#bkmk-planningrecovery)
--   [Using Additional Recovery Information](#bkmk-usingaddrecovery)
--   [Resetting Recovery Passwords](#bkmk-appendixb)
--   [Retrieving the BitLocker Key Package](#bkmk-appendixc)
-
 ## <a href="" id="bkmk-whatisrecovery"></a>What is BitLocker recovery?
 
 BitLocker recovery is the process by which you can restore access to a BitLocker-protected drive in the event that you cannot unlock the drive normally. In a recovery scenario you have the following options to restore access to the drive:
@@ -109,7 +100,7 @@ Before you create a thorough BitLocker recovery process, we recommend that you t
 2.  At the command prompt, type the following command and then press ENTER:
     `manage-bde. -ComputerName <RemoteComputerName> -forcerecovery <BitLockerVolume>`
 
-> **Note:**  Recovery triggered by `-forcerecovery` persists for multiple restarts until a TPM protector is added or protection is suspended by the user.
+> **Note:**  Recovery triggered by `-forcerecovery` persists for multiple restarts until a TPM protector is added or protection is suspended by the user. When using Modern Standby devices (such as Surface devices), the `-forcerecovery` option is not recommended because BitLocker will have to be unlocked and disabled manually from the WinRE environment before the OS can boot up again. For more information, see [BitLocker Troubleshooting: Continuous reboot loop with BitLocker recovery on a slate device](https://social.technet.microsoft.com/wiki/contents/articles/18671.bitlocker-troubleshooting-continuous-reboot-loop-with-bitlocker-recovery-on-a-slate-device.aspx).
  
 ## <a href="" id="bkmk-planningrecovery"></a>Planning your recovery process
 
