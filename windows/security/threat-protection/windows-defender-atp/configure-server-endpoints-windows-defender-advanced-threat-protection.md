@@ -108,12 +108,47 @@ You’ll be able to onboard in the same method available for Windows 10 client m
     If the result is ‘The specified service does not exist as an installed service’, then you'll need to install Windows Defender AV. For more information, see [Windows Defender Antivirus in Windows 10](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
 
 ## Offboard servers 
-To offboard the server, you can uninstall the MMA agent from the server or detach it from reporting to your Windows Defender ATP workspace. After offboarding the agent, the server will no longer send sensor data to Windows Defender ATP.
-For more information, see [To disable an agent](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-windows-agents#to-disable-an-agent).
+You have two options to offboard servers from the service:
+- Uninstall the MMA agent
+- Remove the Windows Defender ATP workspace configuration
 
 >[!NOTE]
 >Offboarding causes the server to stop sending sensor data to the portal but data from the server, including reference to any alerts it has had will be retained for up to 6 months.
 
+### Uninstall servers by uinstalling the MMA agent
+To offboard the server, you can uninstall the MMA agent from the server or detach it from reporting to your Windows Defender ATP workspace. After offboarding the agent, the server will no longer send sensor data to Windows Defender ATP.
+For more information, see [To disable an agent](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-windows-agents#to-disable-an-agent).
+
+### Remove the Windows Defender ATP workspace configuration
+To offboard the server, you can use either of the following methods:
+
+- Remove the Windows Defender ATP workspace configuration from the MMA agent 
+- Run a PowerShell command to remove the configuration
+
+#### Remove the Windows Defender ATP workspace configuration from the MMA agent 
+
+1. In the **Microsoft Monitoring Agent Properties**, select the **Azure Log Analytics (OMS)** tab.
+
+2. Select the Windows Defender ATP workspace, and click **Remove**.
+
+    ![Image of Microsoft Monitoring Agen Properties](images/atp-mma.png)
+
+#### Run a PowerShell command to remove the configuration
+
+1. Get your workspace ID by going to **Endpoint management** > **Servers**:
+    
+    ![Image of server onboarding](images/atp-server-onboarding-workspaceid.png)
+
+2. Open an elevated PowerShell and run the following command. Use the workspace ID you obtained and replacing `WorkspaceID`:
+
+    ```
+    # Load agent scripting object
+    $AgentCfg = New-Object -ComObject AgentConfigManager.MgmtSvcCfg
+    # Remove OMS Workspace
+    $AgentCfg.RemoveCloudWorkspace($WorkspaceID)
+    # Reload the configuration and apply changes
+    $AgentCfg.ReloadConfiguration()
+    ```
 ## Related topics
 - [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
 - [Onboard non-Windows machines](configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)
