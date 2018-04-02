@@ -1329,9 +1329,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr>
-</ul>
-</td></tr>
-<tr>
 <td style="vertical-align:top">[AccountManagement CSP](accountmanagement-csp.md)</td>
 <td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
 </ul>
@@ -1342,7 +1339,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <ul>
 <li>UntrustedCertificates</li>
 </ul>
-
 </td></tr>
 </tbody>
 </table>
@@ -1673,6 +1669,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul>
 <p>The following existing policies were updated:</p>
 <ul>
+<li>Browser/AllowCookies - updated the supported values. There are 3 values - 0, 1, 2.</li>
 <li>InternetExplorer/AllowSiteToZoneAssignmentList - updated the description and added an example SyncML</li>
 <li>TextInput/AllowIMENetworkAccess - introduced new suggestion services in Japanese IME in addition to cloud suggestion.</li>
 </ul>
