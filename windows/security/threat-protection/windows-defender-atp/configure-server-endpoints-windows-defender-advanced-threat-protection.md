@@ -110,7 +110,7 @@ To offboard the server, you can use either of the following methods:
 
 #### Run a PowerShell command to remove the configuration
 
-1. Obtain your workspace ID by going to **Endpoint management** > **Servers**:
+1. Get your workspace ID by going to **Endpoint management** > **Servers**:
     
     ![Image of server onboarding](images/atp-server-onboarding-workspaceid.png)
 
