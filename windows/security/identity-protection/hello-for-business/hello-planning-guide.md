@@ -284,7 +284,7 @@ If box **2a** reads **GP** and box **2b** reads **modern management**, write **A
 | Web Server | NDES |
 | CEP Encryption | NDES |
 
-If box **2a** reads **GP** and box **2b** reads **N/A**, write **AD FA RA** in box **5b** and write the following certificate template names and issuances in box **5c** on your planning worksheet.
+If box **2a** reads **GP** and box **2b** reads **N/A**, write **AD FS RA** in box **5b** and write the following certificate template names and issuances in box **5c** on your planning worksheet.
 
 | Certificate Template Name | Issued To |
 | --- | --- |
