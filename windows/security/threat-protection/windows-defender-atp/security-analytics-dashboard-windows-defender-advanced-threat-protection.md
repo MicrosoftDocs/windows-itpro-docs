@@ -41,10 +41,10 @@ The **Secure score dashboard** displays a snapshot of:
 
 ![Secure score dashboard](images/atp-dashboard-security-analytics-full.png)
 
-## Organizational security score
+## Microsoft secure score
 The organization security score is reflective of the average score of all the Windows Defender security controls that are configured according to the recommended baseline. You can improve this score by taking the steps in configuring each of the security controls in the optimal settings.
 
-![Organizational security score](images/atp-org-sec-score.png)
+![Image of Microsoft secure score tile](images/atp-ms-secure-score.png)
 
 Each Windows Defender security control from the **Windows Defender security controls** tile contributes 100 points to the organizational security score. 
 
