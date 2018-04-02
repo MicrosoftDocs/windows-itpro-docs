@@ -55,6 +55,11 @@ If you want to check a large number of devices, you should run the latest script
 
 If you think the issue might be related to a network proxy, check "Enable data sharing" section of the [Enrolling devices in Windows Analytics](windows-analytics-get-started.md) topic. Also see [Understanding connectivity scenarios and the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog.
 
+If you have deployed images that have not been generalized, then many of them might have the same ID and so analytics will see them as one device. If you suspect this is the issue, then you can reset the IDs on the non-generalized devices by performing these steps:
+1. Net stop diagtrack
+2. Reg delete hklm\software\microsoft\sqmclient /v MachineId /f
+3. Net start diagtrack
+
 
 ### Device Health crash data not appearing
 
