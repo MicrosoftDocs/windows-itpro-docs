@@ -106,10 +106,15 @@ To offboard the server, you can use either of the following methods:
 
 2. Select the Windows Defender ATP workspace, and click **Remove**.
 
+    ![Image of Microsoft Monitoring Agen Properties](images/atp-mma.png)
+
 #### Run a PowerShell command to remove the configuration
 
-1. Obtain your workspace ID. For more information, see [Obtain workspace ID and key](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows#obtain-workspace-id-and-key). 
-2. Open an elevated command-line prompt (as an Admin) and run the following command. Use the workspace ID you obtained and replacing `WorkspaceID`:
+1. Obtain your workspace ID by going to **Endpoint management** > **Servers**:
+    
+    ![Image of server onboarding](images/atp-server-onboarding-workspaceid.png)
+
+2. Open an elevated PowerShell and run the following command. Use the workspace ID you obtained and replacing `WorkspaceID`:
 
     ```
     # Load agent scripting object
