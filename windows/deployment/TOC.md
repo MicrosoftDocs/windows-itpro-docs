@@ -16,7 +16,6 @@
 ### [Log files](upgrade/log-files.md)
 ### [Resolution procedures](upgrade/resolution-procedures.md)
 ### [Submit Windows 10 upgrade errors](upgrade/submit-errors.md)
-### [SetupDiag](upgrade/setupdiag.md)
 
 ## [Deploy Windows 10](deploy.md)
 
