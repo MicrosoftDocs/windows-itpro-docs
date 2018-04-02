@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 3/30/2018
 ---
 
 # Roles and permissions in Microsoft Store for Business and Education
@@ -48,7 +48,7 @@ This table lists the roles and their permissions.
 |                                |  Admin | Purchaser | Device Guard signer |
 | ------------------------------ | ------ | --------  | ------------------- |
 | Assign roles                   | X      |           |                     |
-| Manage Microsoft Store for business and education settings |  X |           |                     |
+| Manage Microsoft Store for Business and Education settings |  X |           |                     |
 | Acquire apps                   | X      | X         |                     |
 | Distribute apps                | X      | X         |                     |
 | Sign policies and catalogs     | X      |           |                     |
@@ -69,7 +69,9 @@ These permissions allow people to:
 
 -   **Acquire apps** - Acquire apps from Microsoft Store and add them to your inventory.
 
--   **Distribute apps** - Distribute apps that are in your inventory. You can distribute from inventory, private store, or use a management tool.
+-   **Distribute apps** - Distribute apps that are in your inventory. 
+    - Admins can assign apps to people, add apps to the private store, or use a management tool.
+    - Purchasers can assign apps to people. 
 
 **To assign roles to people**
 
