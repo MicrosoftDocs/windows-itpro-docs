@@ -22,7 +22,7 @@
 #### [Sign-in and Provision](hello-hybrid-key-whfb-provision.md)
 
 ### [Hybrid Azure AD Joined Certificate Trust Deployment](hello-hybrid-cert-trust.md)
-#### [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
+#### [Prerequisites](hello-hybrid-cert-trust-prereqs.md)
 #### [New Installation Baseline](hello-hybrid-cert-new-install.md)
 #### [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
 #### [Configure Windows Hello for Business policy settings](hello-hybrid-cert-whfb-settings.md)
