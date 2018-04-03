@@ -10,7 +10,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 12/04/2017
+ms.date: 3/5/2018
 ---
 # Windows Hello for Business Features
 
@@ -20,7 +20,6 @@ Consider these additional features you can use after your organization deploys W
 * [Dynamic lock](#dynamic-lock)
 * [PIN reset](#pin-reset)
 * [Privileged credentials](#privileged-credentials)
-* [Mulitfactor Unlock](#multifactor-unlock)
 
 
 ## Conditional access 
@@ -151,79 +150,6 @@ On-premises deployments provide users with the ability to reset forgotton PINs e
 
 The privileged credentials scenario enables administrators to perform elevated, admistrative funcions by enrolling both their non-privileged and privileged credentials on their device.
 
-By design, Windows 10 does not enumerate all Windows Hello for Business users from within a user's session.  Using the computer Group Policy setting, Allow enumeration of emulated smartd card for all users, you can configure a device to all this enumeration on selected devices.  
+By design, Windows 10 does not enumerate all Windows Hello for Business users from within a user's session.  Using the computer Group Policy setting, Allow enumeration of emulated smart card for all users, you can configure a device to all this enumeration on selected devices.  
 
 With this setting, administrative users can sign-in to Windows 10, version 1709 using their non-privileged Windows Hello for Business credentials for normal workflow such as email, but can launch Microsoft Managment Consoles (MMCs), Remote Desktop Services clients, and other applications by selecting **Run as different user** or **Run as administrator**, selecting the privileged user account, and providing their PIN.  Administrators can also take advantage of this feature with command line applications by using **runas.exe** combined with the **/smartcard** argument.  This enables administrators to perform their day-to-day operations without needing to sign-in and out, or use fast user switching when alternativing between privileged and non-privileged workloads.
-
-## Multifactor Unlock
-
-**Requirements:**
-* Windows Hello for Business deployment (Hybrid or On-premises)
-* Hybird Azure AD joined (Hybrid deployments)
-* Domain Joined (on-premises deployments) 
-* Windows 10, version 1709
-* Bluetooth, Bluetooth capable smartphone - optional
-
-Windows, today, natively only supports the use of a single credential (password, PIN, fingerprint, face, etc.) for unlocking a device. Therefore, if any of those credentials are compromised (shoulder surfed), an attacker could gain access to the system.
-
-Windows 10 offers Multifactor device unlock by extending Windows Hello with trusted signals, administrators can configure Windows 10 to request a combination of factors and trusted signals to unlock their devices. 
-
-Which organizations can take advanage of Multifactor unlock? Those who:
-* Have expressed that PINs alone do not meet their security needs.
-* Want to prevent Information Workers from sharing credentials.
-* Want their orgs to comply with regulatory two-factor authentication policy.
-* Want to retain the familiar Windows logon UX and not settle for a custom solution.
-
->[!IMPORTANT]
->Once the you deploy multifactor unlock policies, users are not be able to unlock their devices if they do not have the required factors. The fall back options are to use passwords or smart cards (both of which could be disabled as needed).
- 
-You enable multifactor unlock using Group Policy.  The **Configure device unlock factors** policy setting is located under **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business**.
-
-The policy setting has three components:
-* First unlock factor credential provider
-* Second unlock factor credential provider 
-* Signal rules for device unlock 
-
-### The Basics: How it works
-
-First unlock factor credential provider and Second unlock credential provider are repsonsible for the bulk of the configuration.  Each of these components contains a globally unqiue identifier (GUID) that represents a different Windows credential provider.  With the policy setting enabled, users unlock the device using at least one credenital provider from each category before Windows allows the user to proceed to their desktop.
-
-The credenital providers included in the default policy settings are:
-
-|Credential Provider| GUID|
-|:------------------|:----:|
-|PIN | \{D6886603-9D2F-4EB2-B667-1971041FA96B}|  
-|Fingerprint | \{BEC09223-B018-416D-A0AC-523971B639F5}|
-|Facial Recognition | \{8AF662BF-65A0-4D0A-A540-A338A999D36F}|
-|Trusted Signal | \{27FBDB57-B613-4AF2-9D7E-4FA7A66C21AD}|
-
-The default credential providers for the **First unlock factor credential provider** include:
-* PIN
-* Fingerprint
-* Facial Recongition
-
-The default credential providers for the **Second unlock factor credential provider** include:
-* Trusted Signal
-* PIN
-
-The **Signal rules for device unlock** setting contains the rules the Trusted Signal credential provider uses to satisfy unlocking the device. 
-
-The default signal rules for the policy setting include the proximity of any paired bluetooth smartphone.
-
-To successfully reach their desktop, the user must satisfy one credential provider from each category.  The order in which the user satisfies each credential provider does not matter.  Therefore, using the default policy setting a user can provide:
-* PIN and Fingerprint
-* PIN and Facial Recognition
-* Fingerprint and PIN
-* Facial Recognition and Trusted Signal (bluetooth paired smartphone)
-
->[!IMPORTANT]
-> * PIN **must** be in at least one of the groups
-> * Trusted signals **must** be combined with another credential provider
-> * You cannot use the same unlock factor to satisfy both categories. Therefore, if you include any credential provider in both categories, it means it can be used to satisfy either category, but not both.  
-
-
-
-
-
-
-

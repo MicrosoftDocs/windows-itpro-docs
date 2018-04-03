@@ -1,7 +1,7 @@
 ---
 title: Investigate Windows Defender Advanced Threat Protection alerts
 description: Use the investigation options to get details on alerts are affecting your network, what they mean, and how to resolve them.
-keywords: investigate, investigation, machines, machine, endpoints, endpoint, alerts queue, dashboard, IP address, file, submit, submissions, deep analysis, timeline, search, domain, URL, IP
+keywords: investigate, investigation, machines, machine, alerts queue, dashboard, IP address, file, submit, submissions, deep analysis, timeline, search, domain, URL, IP
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -27,7 +27,7 @@ Investigate alerts that are affecting your network, understand what they mean, a
 
 Click an alert to see the alert details view and the various tiles that provide information about the alert. 
 
-You can also manage an alert and see alert metadata along with other information that can help you make better decisions on how to approach them. You'll also see a status of the automated investigation on the upper right corner. Clicking on the link will take you to the Automated investigations view. For more information, see Automated investigations. 
+You can also manage an alert and see alert metadata along with other information that can help you make better decisions on how to approach them. You'll also see a status of the automated investigation on the upper right corner. Clicking on the link will take you to the Automated investigations view. For more information, see [Automated investigations](automated-investigations-windows-defender-advanced-threat-protection.md). 
 
 ![Image of the alert page](images/atp-alert-view.png)
 

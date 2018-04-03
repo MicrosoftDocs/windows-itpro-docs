@@ -23,6 +23,10 @@ ms.date: 28/02/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+[!include[Prerelease information](prerelease.md)]
+
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-attacksimulations-abovefoldlink)
+
 You might want to experience Windows Defender ATP before you onboard more than a few machines to the service. To do this, you can run controlled attack simulations on a few test machines. After running the simulated attacks, you can review how Windows Defender ATP surfaces malicious activity and explore how it enables an efficient response.
 
 ## Before you begin
@@ -50,6 +54,10 @@ Read the walkthrough document provided with each attack scenario. Each document 
 >[!NOTE]
 >Simulation files or scripts mimic attack activity but are actually benign and will not harm or compromise the test machine.
 
+
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-attacksimulations-belowfoldlink)
+
+
 ## Related topics
-- [Onboard and set up Windows Defender ATP](onboard-configure-windows-defender-advanced-threat-protection.md)
-- [Onboard machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
+- [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)

@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 09/07/2017
+ms.date: 03/16/2018
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +18,11 @@ ms.localizationpriority: medium
 
 Troubleshoot common problems, including setup issues, Exchange ActiveSync errors.
 
+The [Surface Hub Hardware Diagnostic tool](https://www.microsoft.com/store/p/surface-hub-hardware-diagnostic/9nblggh51f2g?rtc=1&activetab=pivot%3aoverviewtab) contains interactive tests which allow you to confirm essential functionality of your Hub is working as expected. In addition to testing hardware, the diagnostic can test the resource account to verify that it is configured properly for your environment. If problems are encountered, results can be saved and shared with the Surface Hub Support Team. For usage information, see [Using the Surface Hub Hardware Diagnostic Tool to test a device account](https://support.microsoft.com/help/4077574/using-the-surface-hub-hardware-diagnostic-tool-to-test-a-device-accoun).
+
 Common issues are listed in the following table, along with causes and possible fixes. The [Setup troubleshooting](#setup-troubleshooting) section contains a listing of on-device problems, along with several types of issues that may be encountered during the first-run experience. The [Exchange ActiveSync errors](#exchange-activesync-errors) section lists common errors the device may encounter when trying to synchronize with an Microsoft Exchange ActiveSync server.
+
+
 
 
 ## Setup troubleshooting

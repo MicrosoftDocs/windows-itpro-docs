@@ -27,7 +27,13 @@ ms.date: 04/16/2018
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationefileuploads-abovefoldlink)
 
-You can submit suspicious files identified by automated investigation to the cloud for additional inspection by enabling content analysis.
+Enable the content analysis capability so that certain files and email attachments can automatically be uploaded to the cloud for additional inspection during automated investigations.
+
+Identify the files and email attachments by specifying the file extension names and email attachment extension names. 
+
+For example, if you add *exe* and *bat* as file or attachment extension names, then all files or attachments with those extensions will automatically be sent to the cloud for additional inspection during an automated investigation. 
+
+## Add file extension names and attachment extension names.
 
 1. In the navigation pane, select **Settings** > **Rules** > **Automation file uploads**. 
 
@@ -40,5 +46,5 @@ You can submit suspicious files identified by automated investigation to the clo
 
 
 ## Related topics
-- Automation allowed/blocked lists
-- Automation folder exclusions
+- [Manage automation allowed/blocked lists](manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
+- [Manage automation folder exclusions](manage-automation-folder-exclusions-windows-defender-advanced-threat-protection.md)

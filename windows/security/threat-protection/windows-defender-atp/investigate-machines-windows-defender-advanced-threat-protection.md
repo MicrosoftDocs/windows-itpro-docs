@@ -1,7 +1,7 @@
 ---
 title: Investigate machines in the Windows Defender ATP Machines list
 description: Investigate affected machines by reviewing alerts, network connection information, adding machine tags and groups, and checking the service health.
-keywords: machines, endpoints, tags, groups, endpoint, alerts queue, alerts, machine name, domain, last seen, internal IP, active alerts, threat category, filter, sort, review alerts, network, connection, type, password stealer, ransomware, exploit, threat, low severity, service heatlh
+keywords: machines, tags, groups, endpoint, alerts queue, alerts, machine name, domain, last seen, internal IP, active alerts, threat category, filter, sort, review alerts, network, connection, type, password stealer, ransomware, exploit, threat, low severity, service heatlh
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -18,8 +18,6 @@ ms.date: 04/16/2018
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink) 
 
@@ -63,7 +61,8 @@ You'll also see details such as logon types for each user account, the user grou
  For more information, see [Investigate user entities](investigate-user-windows-defender-advanced-threat-protection.md).
 
 **Machine risk**</br>
-The Machine risk tile shows the overall risk assessment of a machine. A machine's risk level is determined using the number of active alerts and their severity levels. You can influence a machine's risk level by resolving associated alerts manually or automatically (and also by suppressing an alert). It also gives a quick indicator of the active threats that machines could be exposed to. 
+The Machine risk tile shows the overall risk assessment of a machine. A machine's risk level is determined using the number of active alerts and their severity levels. You can influence a machine's risk level by resolving associated alerts manually or automatically and also by suppressing an alert. It's also indicators of the active threats that machines could be exposed to.
+Depending on your connection settings, the risk level can influence enforcement of conditional access and other security policies on Microsoft Intune and other connected solutions. For more information on conditional access, see [Enable conditional access](conditional-access-windows-defender-advanced-threat-protection.md).
 
 **Azure Advanced Threat Protection**</br> 
 If you have enabled the Azure ATP feature and there are alerts related to the machine, you can click on the link that will take you to the Azure ATP page where more information about the alerts are provided. 
@@ -72,7 +71,7 @@ If you have enabled the Azure ATP feature and there are alerts related to the ma
 >You'll need to enable the integration on both Azure ATP and Windows Defender ATP to use this feature. In Windows Defender ATP, you can enable this feature in advanced features. For more information on how to enable advanced features, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md).
 
 **Machine reporting**</br>
-Provides the last internal IP and exteral IP of the machine. It also shows when the machine was first and last seen reporting to the service. 
+Provides the last internal IP and external IP of the machine. It also shows when the machine was first and last seen reporting to the service. 
 
 ## Manage machine group and tags
 Machine group and tags support proper mapping of the network, enabling you to attach different tags to machines to capture context and to enable dynamic groups creation as part of an incident. 

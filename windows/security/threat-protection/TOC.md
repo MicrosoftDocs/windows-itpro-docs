@@ -88,11 +88,12 @@
 ####### [View deep analysis reports](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md#view-deep-analysis-reports)
 ####### [Troubleshoot deep analysis](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md#troubleshoot-deep-analysis)
 
-#### [Automated investigations](windows-defender-atp\automated-investigations-windows-defender-advanced-threat-protection.md)
-#### [Advanced hunting](windows-defender-atp\advanced-hunting-windows-defender-advanced-threat-protection.md)
+#### [Use Automated investigation to investigate and remediate threats](windows-defender-atp\automated-investigations-windows-defender-advanced-threat-protection.md)
+#### [Query data using Advanced hunting](windows-defender-atp\advanced-hunting-windows-defender-advanced-threat-protection.md)
+##### [Advanced hunting reference](windows-defender-atp\advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
+##### [Query language best practices](windows-defender-atp\advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
 
-###Prevent threats
-#### [Enable conditional access](windows-defender-atp\conditional-access-windows-defender-advanced-threat-protection.md)
+### [Enable conditional access to better protect users, devices, and data](windows-defender-atp\conditional-access-windows-defender-advanced-threat-protection.md)
 
 ###API and SIEM support
 #### [Pull alerts to your SIEM tools](windows-defender-atp\configure-siem-windows-defender-advanced-threat-protection.md)
@@ -202,9 +203,9 @@
 
 ####Rules
 ##### [Manage suppression rules](windows-defender-atp\manage-suppression-rules-windows-defender-advanced-threat-protection.md)
-##### [Manage automation exclusion lists](windows-defender-atp\manage-automation-exclusion-list-windows-defender-advanced-threat-protection.md)
+##### [Manage automation allowed/blocked](windows-defender-atp\manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
 ##### [Manage automation file uploads](windows-defender-atp\manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
-##### [Manage automation folder exclusions](windows-defender-atp\manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
+##### [Manage automation folder exclusions](windows-defender-atp\manage-automation-folder-exclusions-windows-defender-advanced-threat-protection.md)
 
 ####Machine management
 ##### [Onboarding machines](windows-defender-atp\onboard-configure-windows-defender-advanced-threat-protection.md)

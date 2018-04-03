@@ -30,13 +30,53 @@ ms.date: 04/16/2018
 The Windows Defender ATP service has a wide breadth of visibility on multiple machines. With this kind of optics, the service generates a multitude of alerts. The volume of alerts generated can be challenging for a typical security operations team to individually address.
 
 
-To address this challenge, Windows Defender ATP uses Automated investigations to dramatically reduce the volume of alerts that need to be investigated individually. The Automated investigation feature leverages various inspection algorithms, and processes used by analysts to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. 
+To address this challenge, Windows Defender ATP uses Automated investigations to dramatically reduce the volume of alerts that need to be investigated individually. The Automated investigation feature leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. 
 
-The automated investigations list aggregates all the investigations that have been initiated automatically and shows other details such as its status, detection source, and the date for when the investigation was initiated. 
+The Automated investigations list shows all the investigations that have been initiated automatically and shows other details such as its status, detection source, and the date for when the investigation was initiated. 
+
+## Understand the Automated investigation flow
+### How the Automated investigation starts
+Entities are the starting point for Automated investigations. When an alert contains a supported entity for Automated investigation (for example, a file) an Automated investigation starts. 
+
+The alerts start by analyzing the supported entities from the alert and also runs a generic machine playbook to see if there is anything else suspicious on that machine. The outcome and details from the investigation is seen in the Automated investigation view.
+
+### Details of an Automated investigation
+As the investigation proceeds, you'll be able to view the details of the investigation. Selecting a triggering alert brings you to the investigation details view where you can pivot from the **Investigation graph**, **Alerts**, **Machines**, **Threats**, **Entities**, and **Log** tabs.
+
+In the **Alerts** tab, you'll see the alert that started the investigation. 
+
+The **Machines** tab shows where the alert was seen.
+
+The **Threats** tab shows the entities that were found to be malicious during the investigation.
+
+During an Automated investigation, details about each analyzed entity is categorized in the **Entities** tab. You'll be able to see the determination for each entity type, such as whether it was determined to be malicious, suspicious, or clean.
+
+The **Log** tab reflects the chronological detailed view of all the investigation actions taken on the alert.
+
+If there are pending actions on the investigation, the **Pending actions** tab will be displayed where you can approve or reject actions.
+
+### How an Automated investigation expands its scope
+
+While an investigation is running, any other alert generated from the machine will be added to an ongoing Automated investigation until that investigation is completed. In addition, if the same threat is seen on other machines, those machines are added to the investigation.
+
+If an incriminated entity is seen in another machine, the Automated investigation will expand the investigation to include that machine and a generic machine playbook will start on that machine. If 10 or more machines are found during this expansion process from the same entity, then that expansion action will require an approval and will be seen in the **Pending actions** view.
+
+### How threats are remediated
+Depending on how you set up the machine groups and their level of automation, the Automated investigation will either automaticlly remediate threats or require user approval (this is the default). For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md). 
+
+The default machine group is configured for semi-automatic remediation. This means that any malicious entity that needs to be remediated requires an approval and the investigation is added to the **Pending actions** section, this can be changed to fully automatic so that no user approval is needed. 
+
+When a pending action is approved, the entity is then remediated and this new state is reflected in the **Entities** tab of the investigation.
+
+### How an Automated investigation is completed
+When the Automated investigation completes its analysis, and all pending actions are resolved, an investigation is considered complete. It's important to understand that an investigation is only considered complete if there are no pending actions on it. 
 
 
 ## Manage Automated investigations
-By default, the automated investigations list displays investigations initiated in the last week. You can also choose to select other time ranges from the drop-down menu or specify a custom range. 
+By default, the Automated investigations list displays investigations initiated in the last week. You can also choose to select other time ranges from the drop-down menu or specify a custom range. 
+
+>[!NOTE]
+>If your organization has implemented role-based access to manage portal access, only authorized users or user groups who have permission to view the machine or machine group will be able to view the entire investigation. 
 
 Use the **Customize columns** drop-down menu to select columns that you'd like to show or hide. 
 
@@ -70,7 +110,7 @@ Status | Description
 | Not applicable                                            | Automated investigations do not apply to this alert type.                                                                           |
 | Partially investigated                                    | Entities directly related to the alert have been investigated. However, a problem stopped the investigation of collateral entities. |
 | Automated investigation not applicable to alert type      | Automated investigation does not apply to this alert type.                                                                          |
-| Automated investigation does not support OS               | Machine is running an OS that is not supported by automated investigation.                                                          |
+| Automated investigation does not support OS               | Machine is running an OS that is not supported by Automated investigation.                                                          |
 | Automated investigation unavailable for preexisting alert | Automated investigation does not apply to alerts that were generated before it was deployed.                                        |
 | Automated investigation unavailable for suppressed alert  | Automated investigation does not apply to suppressed alerts.                                                                        |
 
@@ -88,7 +128,7 @@ Filter using manually added tags that capture the context of an Automated invest
 **Machines**</br>
 You can filter the Automated investigations list to zone in a specific machine to see other investigations related to the machine.
 
-**machine groups**</br>
+**Machine groups**</br>
 Apply this filter to see specific machine groups that you might have created.
 
 **Comments**</br>
@@ -97,7 +137,7 @@ Select between filtering the list between Automated investigations that have com
 ## Analyze Automated investigations 
 You can view the details of an Automated investigation to see details such as the investigation graph, alerts associated with the investigation, the machine that was investigated, and other information.
 
-In this view, you'll see the name of the investigation, when it started and the duration of time that has passed in the status state.
+In this view, you'll see the name of the investigation, when it started and ended. The pending time is the elapsed time since the investigation started and waited for a user to approve a pending action or for a machine to come back online. 
 
 The comments and tags allow you to add and review tags and comments that were added about the investigation.
 
@@ -115,7 +155,11 @@ You'll also have access to the following sections that help you see details of t
 - Entities
 - Log
 - Pending actions
+  >[!NOTE]
+  >The Pending actions tab is only displayed if there are actual pending actions.
 - Pending actions history
+  >[!NOTE]
+  >The Pending actions history tab is only displayed when an investigation is complete.
 
 In any of the sections, you can customize columns to further expand to limit the details you see in a section.
 
@@ -125,22 +169,26 @@ The investigation graph provides a graphical representation of an Automated inve
 ### Alerts
 Shows details such as a short description of the alert that initiated the Automated investigation, severity, category, the machine associated with the alert, user, time in queue, status, investigation state, and who the investigation is assigned to. 
 
-Selecting an alert using the checkbox brings up the alerts details pane where you have the option of opening the alert page, manage the alert by changing its status, see alert details, automated investigation details, related machine, logged-on users, and comments and history. 
+Additional alerts seen on a machine can be added to an Automated investigation as long as the investigation is ongoing. 
+
+Selecting an alert using the check box brings up the alerts details pane where you have the option of opening the alert page, manage the alert by changing its status, see alert details, Automated investigation details, related machine, logged-on users, and comments and history. 
 
 Clicking on an alert title brings you the alert page.
 
 ### Machines
 Shows details the machine name, IP address, group, users, operating system, remediation level, investigation count, and when it was last investigated.
 
+Machines that show the same threat can be added to an ongoing investigation and will be displayed in this tab. If the same threat is seen on more than nine machines, you have the option to expand the view from the **Pending actions** view.
+
 Selecting a machine using the checkbox brings up the machine details pane where you can see more information such as machine details and logged-on users.
 
 Clicking on an machine name brings you the machine page.
 
 ### Threats
-Shows details related to threats associated with this investigation.
+Shows details related to threats associated with this investigation. 
 
 ### Entities
-Shows details about entities such as files, process, services, drives, and IP addresses. The table details such as the number of entities that were analyzed. You'll gain insight into details as how many are infected, remediated, suspicious, verified, or determined to be clean.
+Shows details about entities such as files, process, services, drives, and IP addresses. The table details such as the number of entities that were analyzed. You'll gain insight into details such as how many are remediated, suspicious, or determined to be clean.
 
 ### Log
 Gives a chronological detailed view of all the investigation actions taken on the alert. You'll see the action type, action, status, machine name, description of the action, comments entered by analysts who may have worked on the investigation, execution start time, duration, pending duration.
@@ -152,11 +200,18 @@ Available filters include action type, action, status, machine name, and descrip
 You can also click on an action to bring up the details pane where you'll see information such as the summary of the action and input data. 
 
 ### Pending actions history
-This tab is displayed if there are pending actions for which a decision was made.
+This tab is only displayed when an investigation is complete and shows all pending actions taken during the investigation.
 
 
-## Pending actions 
-This view aggregates all investigations that require an action for an investigation to proceed or be completed.
+## Pending actions
+If there are pending actions on an Automated investigation, you'll see a pop up similar to the following image. 
+
+![Image of pending actions](images\atp-pending-actions-notification.png)
+
+When you click on the pending actions link, you'll be taken to the pending actions page.
+
+ 
+The pending actions view aggregates all investigations that require an action for an investigation to proceed or be completed.
 
 Use the Customize columns drop-down menu to select columns that you'd like to show or hide. 
 
@@ -175,6 +230,9 @@ Pending actions are grouped together in the following tabs:
 ### Approve or reject an action
 You'll need to manually approve or reject pending actions on each of these categories for the automated actions to proceed.
 
+
+![Image of list of pending actions](images/atp-approve-reject-action.png)
+
 Selecting an investigation from any of the categories opens a panel where you can approve or reject the remediation. Other details such as file or service details, investigation details, and alert details are displayed.
 
 ![Image of pending action selected](images/atp-pending-actions-file.png)
@@ -184,6 +242,9 @@ From the panel, you can click on the Open investigation page link to see the inv
 You also have the option of selecting multiple investigations to approve or reject actions on multiple investigations. 
 
 ![Image of multiple investigations selected](images/atp-pending-actions-multiple.png)
+
+## Related topic
+- [Investigate Windows Defender ATP alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
 
 
 

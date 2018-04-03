@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 3/19/2018
 ---
 
 # Distribute apps using your private store
@@ -47,6 +47,9 @@ Microsoft Store adds the app to **Apps & software**. Click **Manage**, **Apps & 
 
 The value under **Private store** for the app will change to pending. It will take approximately thirty-six hours before the app is available in the private store.
 
+>[!Note]
+ > If you are working with a new Line-of-Business (LOB) app, you have to wait for the app to be avilable in **Products & services** before adding it to your private store. For more information, see [Working with line of business apps](working-with-line-of-business-apps.md). 
+
 Employees can claim apps that admins added to the private store by doing the following.
 
 **To claim an app from the private store**
@@ -57,6 +60,7 @@ Employees can claim apps that admins added to the private store by doing the fol
 
 ## Related topics
 - [Manage access to private store](manage-access-to-private-store.md)
+- [Manage private store settings](manage-private-store-settings.md)
 - [Configure access to Microsoft Store](/windows/configuration/stop-employees-from-using-microsoft-store)
 
  

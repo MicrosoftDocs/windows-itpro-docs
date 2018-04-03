@@ -1,7 +1,7 @@
 ---
-title: View the Secure score dashboard in Windows Defender ATP
-description: Use the Secure score dashboard to assess and improve the security state of your organization by analyzing various security control tiles. 
-keywords: secure score, dashboard, security recommendations, security control state, security score, score improvement, organizational security score, security controls, security control, improvement opportunities, edr, antivirus, av, os security updates
+title: View the Secure Score dashboard in Windows Defender ATP
+description: Use the Secure Score dashboard to assess and improve the security state of your organization by analyzing various security control tiles. 
+keywords: secure score, dashboard, security recommendations, security control state, security score, score improvement, microsoft secure score, security controls, security control, improvement opportunities, edr, antivirus, av, os security updates
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ localizationpriority: high
 ms.date: 04/16/2018
 ---
 
-# View the Windows Defender Advanced Threat Protection Secure score dashboard
+# View the Windows Defender Advanced Threat Protection Secure Score dashboard
 
 **Applies to:**
 
@@ -27,33 +27,32 @@ ms.date: 04/16/2018
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-sadashboard-abovefoldlink) 
 
 
-The Secure score dashboard expands your visibility into the overall security posture of your organization. From this dashboard, you'll be able to quickly assess the security posture of your organization, see machines that require attention, as well as recommendations for actions to further reduce the attack surface in your organization - all in one place. From there you can take action based on the recommended configuration baselines.
+The Secure Score dashboard expands your visibility into the overall security posture of your organization. From this dashboard, you'll be able to quickly assess the security posture of your organization, see machines that require attention, as well as recommendations for actions to further reduce the attack surface in your organization - all in one place. From there you can take action based on the recommended configuration baselines.
 
 >[!IMPORTANT]
 > This feature is available for machines on Windows 10, version  1703 or later. 
 
 
-The **Secure score dashboard** displays a snapshot of:
-- Organizational security score
+The **Secure Score dashboard** displays a snapshot of:
+- Microsoft Secure Score
 - Windows Defender security controls
 - Improvement opportunities
 - Security score over time
 
-![Secure score dashboard](images/atp-dashboard-security-analytics-full.png)
+![Secure Score dashboard](images/atp-dashboard-security-analytics-full.png)
 
-## Organizational security score
-The organization security score is reflective of the average score of all the Windows Defender security controls that are configured according to the recommended baseline. You can improve this score by taking the steps in configuring each of the security controls in the optimal settings.
+## Microsoft secure score
+The Microsoft secure score tile is reflective of the average score of all the Windows Defender security controls that are configured according to the recommended baseline and the Office 365 controls. You can improve this score by taking the steps in configuring each of the security controls in the optimal settings.
 
-![Organizational security score](images/atp-org-sec-score.png)
+![Image of Microsoft secure score tile](images/atp-ms-secure-score.png)
 
-Each Windows Defender security control from the **Windows Defender security controls** tile contributes 100 points to the organizational security score. 
+Each Windows Defender security control contributes 100 points to the score. The total number is reflective of the score potential and calculated by multiplying the number of supported security controls (Windows Defender security controls pillars) by the maximum points that each pillar contributes (maximum of 100 points for each pillar). 
 
-The denominator is reflective of the organizational score potential and calculated by multiplying the number of supported security controls (Windows Defender security controls pillars) by the maximum points that each pillar contributes (maximum of 100 points for each pillar). 
+The Office 365 Secure Score looks at your settings and activities and compares them to a baseline established by Microsoft. For more information, see [Introducing the Office 365 Secure Score](https://support.office.com/en-us/article/introducing-the-office-365-secure-score-c9e7160f-2c34-4bd0-a548-5ddcc862eaef#howtoaccess).
 
+In the example image, the total points for the Windows security controls and Office 365 add up to 437 points. 
 
-In the example image, the total points from the **Improvement opportunities** tile add up to 321 points for the six pillars from the **Windows Defender security controls** tile.
-
-You can set the baselines for calculating the score of Windows Defender security controls on the Secure score dashboard through the **Settings**. For more information, see [Enable Secure score security controls](enable-security-analytics-windows-defender-advanced-threat-protection.md).
+You can set the baselines for calculating the score of Windows Defender security controls on the Secure Score dashboard through the **Settings**. For more information, see [Enable Secure Score security controls](enable-security-analytics-windows-defender-advanced-threat-protection.md).
 
 ## Windows Defender security controls
 The security controls tile shows a bar graph where each bar represents a Windows Defender security control. Each bar reflects the number of machines that are well configured and those that require **any kind of attention** for each security control. Hovering on top of the individual bars will show exact numbers for each category. Machines that are green are well configured, while machines that are orange require some level of attention. 
@@ -62,7 +61,7 @@ The security controls tile shows a bar graph where each bar represents a Windows
 ![Windows Defender security controls](images/atp-security-controls.png)
 
 ## Improvement opportunities 
-Improve your organizational security score by taking the recommended improvement actions listed on this tile. The goal is to reduce the gap between the perfect score and the current score for each control.
+Improve your score by taking the recommended improvement actions listed on this tile. The goal is to reduce the gap between the perfect score and the current score for each control.
 
 Click on each control to see the recommended optimizations.
 
@@ -90,10 +89,10 @@ You can click on specific date points to see the total score for that security c
 Each security control lists recommendations that you can take to increase the security posture of your organization.
 
 ### Endpoint detection and response (EDR) optimization
-For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for your Endpoint detection and response tool.
+For an machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for your Endpoint detection and response tool.
 
 >[!IMPORTANT]
-> This feature is available for machines on Windows 10, version  1607 or later.  EVALD PLEASE DOUBLE CHECK!!!
+>This feature is available for machines on Windows 10, version  1607 or later.
 
 #### Minimum baseline configuration setting for EDR:
 - Windows Defender ATP sensor is on
@@ -109,13 +108,13 @@ You can take the following actions to increase the overall security score of you
 For more  information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md). 
 
 ### Windows Defender Antivirus (Windows Defender AV) optimization
-For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender AV is fulfilled.
+For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender AV is fulfilled.
 
 >[!IMPORTANT]
-> This feature is available for machines on Windows 10, version  1607 or later.  EVALD PLEASE DOUBLE CHECK!!!
+>This feature is available for machines on Windows 10, version  1607 or later. 
 
 #### Minimum baseline configuration setting for Windows Defender AV:
-Endpoints are considered "well configured" for Windows Defender AV if the following requirements are met:
+Machines are considered "well configured" for Windows Defender AV if the following requirements are met:
 
 - Windows Defender AV is reporting correctly
 - Windows Defender AV is turned on
@@ -127,7 +126,7 @@ Endpoints are considered "well configured" for Windows Defender AV if the follow
 You can take the following actions to increase the overall security score of your organization:
 
 >[!NOTE]
-> For the Windows Defender Antivirus properties to show,  you'll need to ensure that the Windows Defender Antivirus Cloud-based protection is properly configured on the endpoint. 
+> For the Windows Defender Antivirus properties to show,  you'll need to ensure that the Windows Defender Antivirus Cloud-based protection is properly configured on the machine. 
 
 - Fix antivirus reporting
   - This recommendation is displayed when the Windows Defender Antivirus is not properly configured to report its health state. For more information on fixing the reporting, see [Configure and validate network connections](../windows-defender-antivirus/configure-network-connections-windows-defender-antivirus.md).
@@ -143,7 +142,7 @@ For more information, see [Configure Windows Defender Antivirus](../windows-defe
 This tile shows you the exact number of machines that require the latest security updates. It also shows machines that are running on the latest Windows Insider preview build and serves as a reminder to ensure that users should run the latest builds.
  
 >[!IMPORTANT]
-> This feature is available for machines on Windows 10, version  1607 or later.  EVALD PLEASE DOUBLE CHECK!!!
+>This feature is available for machines on Windows 10, version  1607 or later.
 
 You can take the following actions to increase the overall security score of your organization:
 - Install the latest security updates
@@ -154,14 +153,14 @@ For more information, see [Windows Update Troubleshooter](https://support.micros
 
 
 ### Windows Defender Exploit Guard (Windows Defender EG) optimization
-For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender EG is fulfilled. When endpoints are configured according to the baseline you'll be able to see Windows Defender EG events on the Windows Defender ATP Machine timeline. 
+For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on machines so that the minimum baseline configuration setting for Windows Defender EG is fulfilled. When endpoints are configured according to the baseline you'll be able to see Windows Defender EG events on the Windows Defender ATP Machine timeline. 
 
 
 >[!IMPORTANT]
-> This feature is available for machines on Windows 10, version  1703 or later.
+>This security control is only applicable for machines with Windows 10, version 1709 or later.
 
 #### Minimum baseline configuration setting for Windows Defender EG:
-Endpoints are considered "well configured" for Windows Defender EG if the following requirements are met:
+Machines are considered "well configured" for Windows Defender EG if the following requirements are met:
 
 - System level protection settings are configured correctly
 - Attack Surface Reduction rules are configured correctly
@@ -191,11 +190,6 @@ Block Office applications from creating executable content  | 3B576869-A4EC-4529
 Impede JavaScript and VBScript to launch executables | D3E037E1-3EB8-44C8-A917-57927947596D
 Block execution of potentially obfuscated scripts  | 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC
 Block Win32 imports from Macro code in Office | 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B
-Block process creations originating from Psexec and WMI commands | D1E49AAC-8F56-4280-B9BA-993A6D77406C
-Block untrusted and unsigned processes that run from USB (File ASR/Protection) | B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4
-Block executable files from running unless they meet a prevalence/age | 01443614-CD74-433A-B99E-2ECDC07BFC25
-Block credential stealing from the Windows local security authority subsystem (lsass.exe) | 9E6C4E1F-7D60-472F-BA1A-A39EF669E4B2 CHECK WITH EVALD!!!!
-Use advanced protection against ransomware | C1DB55AB-C21A-4637-BB3F-A12568109D35 CHECK WITH EVALD!!!!
 
 
 
@@ -221,13 +215,13 @@ You can take the following actions to increase the overall security score of you
 For more information, see [Windows Defender Exploit Guard](../windows-defender-exploit-guard/windows-defender-exploit-guard.md).
 
 ### Windows Defender Application Guard (Windows Defender AG) optimization
-For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender AG is fulfilled. When endpoints are configured according to the baseline you'll be able to see Windows Defender AG events on the Windows Defender ATP Machine timeline. 
+For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender AG is fulfilled. When endpoints are configured according to the baseline you'll be able to see Windows Defender AG events on the Windows Defender ATP Machine timeline. 
 
 >[!IMPORTANT]
->This security control is only applicable for endpoints with Windows 10, version 1709 or later.
+>This security control is only applicable for machines with Windows 10, version 1709 or later.
 
 #### Minimum baseline configuration setting for Windows Defender AG:
-Endpoints are considered "well configured" for Windows Defender AG if the following requirements are met:
+Machines are considered "well configured" for Windows Defender AG if the following requirements are met:
 
 - Hardware and software prerequisites are met
 - Windows Defender AG is turned on compatible machines
@@ -248,10 +242,10 @@ For more information, see [Windows Defender Application Guard overview](../windo
 
 
 ### Windows Defender SmartScreen optimization
-For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender SmartScreen is fulfilled.
+For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender SmartScreen is fulfilled.
 
 >[!IMPORTANT]
->This security control is only applicable for endpoints with Windows 10, version 1709 or later.
+>This security control is only applicable for machines with Windows 10, version 1709 or later.
 
 #### Minimum baseline configuration setting for Windows Defender SmartScreen:
 The following settings must be configured with the following settings:
@@ -270,10 +264,10 @@ For more information, see [Windows Defender SmartScreen](../windows-defender-sma
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-sadashboard-belowfoldlink) 
 
 ### Windows Defender Firewall optimization
-For an endpoint to be considered "well configured", Windows Defender Firewall must be turned on and enabled for all profiles and inbound connections are blocked by default. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender Firewall is fulfilled. 
+For a machine to be considered "well configured", Windows Defender Firewall must be turned on and enabled for all profiles and inbound connections are blocked by default. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender Firewall is fulfilled. 
 
 >[!IMPORTANT]
->This security control is only applicable for endpoints with Windows 10, version 1709 or later.
+>This security control is only applicable for machines with Windows 10, version 1709 or later.
 
 #### Minimum baseline configuration setting for Windows Defender Firewall 
 
@@ -301,10 +295,10 @@ You can take the following actions to increase the overall security score of you
 For more information, see [Windows Defender Firewall with Advanced Security](https://docs.microsoft.com/en-us/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security).
 
 ### Windows Hello optimization
-For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Hello is fulfilled. 
+For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Hello is fulfilled. 
 
 >[!IMPORTANT]
->This security control is only applicable for endpoints with Windows 10, version 1803 or later.
+>This security control is only applicable for machines with Windows 10, version 1803 or later.
 
 #### Minimum baseline configuration setting for Windows Hello
 - Windows Hello is configured for all users
@@ -316,17 +310,15 @@ You can take the following actions to increase the overall security score of you
 - Encourage all users to use Windows Hello
 
 ### BitLocker optimization
-For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for BitLocker is fulfilled. 
+For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for BitLocker is fulfilled. 
 
->[!NOTE]
->This security control is currently only applicable for endpoints with Windows 10, Insider Preview build.
+>[!IMPORTANT]
+>This security control is only applicable for machines with Windows 10, version 1803 or later.
 
 #### Minimum baseline configuration setting for BitLocker
 - Ensure all supported internal drives are encrypted
 - Ensure that all suspended protection on drives resume protection 
 
->[!IMPORTANT]
->This security control is only applicable for endpoints with Windows 10, version 1803 or later.
 
 ##### Recommended actions:
 You can take the following actions to increase the overall security score of your organization:
@@ -337,13 +329,13 @@ You can take the following actions to increase the overall security score of you
 
 
 ### Windows Defender Credential Guard optimization
-For an endpoint to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender Credential Guard is fulfilled.
+For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender Credential Guard is fulfilled.
 
 >[!IMPORTANT]
-> This feature is available for machines on Windows 10, version  1703 or later.  
+>This security control is only applicable for machines with Windows 10, version 1709 or later. 
 
 #### Minimum baseline configuration setting for Windows Defender Credential Guard:
-Endpoints are considered "well configured" for Windows Defender Credential Guard if the following requirements are met:
+Machines are considered "well configured" for Windows Defender Credential Guard if the following requirements are met:
 
 - Hardware and software prerequisites are met
 - Windows Defender Credential Guard is turned on on compatible machines
@@ -359,9 +351,10 @@ You can take the following actions to increase the overall security score of you
 
 
 ## Related topics
-- [Enable Secure score security controls](enable-security-analytics-windows-defender-advanced-threat-protection.md)
-- [View the Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- [Understand the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)
 - [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
+- [View the Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics-windows-defender-advanced-threat-protection.md)
 
 
 

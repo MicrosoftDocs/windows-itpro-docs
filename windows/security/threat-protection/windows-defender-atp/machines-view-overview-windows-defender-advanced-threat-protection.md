@@ -30,7 +30,7 @@ The **Machines list** shows a list of the machines in your network, the domain o
 Use the Machines list in these main scenarios:
 
 - **During onboarding**<br>
-  During the onboarding process, the **Machines list** is gradually populated with endpoints as they begin to report sensor data. Use this view to track your onboarded endpoints as they come online. Sort and filter by time of last report, **Active malware category**, or **Sensor health state**, or download the complete endpoint list as a CSV file for offline analysis.
+  During the onboarding process, the **Machines list** is gradually populated with machines as they begin to report sensor data. Use this view to track your onboarded endpoints as they come online. Sort and filter by time of last report, **Active malware category**, or **Sensor health state**, or download the complete endpoint list as a CSV file for offline analysis.
 - **Day-to-day work** <br>
   The **Machines list** enables easy identification of machines most at risk in a glance. High-risk machines have the greatest number and highest-severity alerts; **Sensor health state** provides another dimension to rank machines. Sorting machines by **Active alerts**, and then by **Sensor health state** helps identify the most vulnerable machines and take action on them.
 
@@ -53,9 +53,9 @@ You can use the following filters to limit the list of machines displayed during
 - 6 months
 
 **Risk level**</br>
-Machine risk levels are quick indicators of the active threats that machines could be exposed to. A machine's risk level is determined using the number of active alerts and their severity levels. You can influence a machine's risk level by resolving associated alerts manually or automatically. 
+Machine risk levels are indicators of the active threats that machines could be exposed to. A machine's risk level is determined using the number of active alerts and their severity levels. You can influence a machine's risk level by resolving associated alerts manually or automatically and also by suppressing an alert.
 
-Depending on your connection settings, the risk level can influence enforcement of conditional access and other security policies on Microsoft Intune and other connected solutions.
+Depending on your connection settings, the risk level can influence enforcement of conditional access and other security policies on Microsoft Intune and other connected solutions. For more information on conditional access, see [Enable conditional access](conditional-access-windows-defender-advanced-threat-protection.md).
 
 
 **OS Platform**</br>
@@ -84,7 +84,7 @@ Filter the list to view specific machines that are well configured or require at
 - **Well configured** - Machines have the Windows Defender security controls well configured. 
 - **Requires attention** - Machines where improvements can be made to increase the overall security posture of your organization.
 
-For more information, see [View the Secure score dashboard](security-analytics-dashboard-windows-defender-advanced-threat-protection.md).
+For more information, see [View the Secure Score dashboard](security-analytics-dashboard-windows-defender-advanced-threat-protection.md).
 
 **Malware category alerts**</br>
 Filter the list to view specific machines grouped together by the following malware categories:
@@ -117,8 +117,10 @@ You can sort the **Machines list** by the following columns:
 - **Active malware alerts** - Number of active malware detections reported by the machine
 
 > [!NOTE]
-> The **Active malware detections** filter column will only appear if your endpoints are using [Windows Defender Antivirus](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md) as the active real-time protection antimalware product.
+> The **Active malware detections** filter column will only appear if your machines are using [Windows Defender Antivirus](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md) as the active real-time protection antimalware product.
 
 
 ## Related topics
 - [Investigate machines in the Windows Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
+
+

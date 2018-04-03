@@ -68,6 +68,6 @@ To effectively offboard the machine from the service, you'll need to disable the
 
 ## Related topics
 - [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
-- [Configure servers](configure-server-endpoints-windows-defender-advanced-threat-protection.md)
+- [Onboard servers](configure-server-endpoints-windows-defender-advanced-threat-protection.md)
 - [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
 - [Troubleshooting Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)

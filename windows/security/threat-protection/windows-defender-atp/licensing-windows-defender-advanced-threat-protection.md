@@ -118,20 +118,20 @@ When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.
 
 10. You are almost done. Before you can start using Windows Defender ATP you'll need to:
 
-	- [Onboard endpoints and setup access](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/configure-endpoints-windows-defender-advanced-threat-protection)
+	- [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
 
 	- Run detection test (optional)
 
-	![Image of Onboard endpoints and run detection test](images\atp-onboard-endpoints-run-detection-test.png)
+	![Image of Onboard machines and run detection test](images\atp-onboard-endpoints-run-detection-test.png)
 
 	> [!IMPORTANT]
-	> If you click **Start using Windows Defender ATP** before onboarding endpoints you will receive the following notification:
+	> If you click **Start using Windows Defender ATP** before onboarding machines you will receive the following notification:
 	>![Image of setup imcomplete](images\atp-setup-incomplete.png)
 
-11. After onboarding endpoints you can click **Start using Windows Defender ATP**. You will now launch Windows Defender ATP for the first time.
+11. After onboarding machines you can click **Start using Windows Defender ATP**. You will now launch Windows Defender ATP for the first time.
 
-	![Image of onboard endpoints](images\atp-onboard-endpoints-WDATP-portal.png)
+	![Image of onboard machines](images\atp-onboard-endpoints-WDATP-portal.png)
 
 ## Related topics
-- [Onboard and set up Windows Defender Advanced Threat Protection](onboard-configure-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot onboarding process and error messages](troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
+- [Onboard machines to the Windows Defender Advanced Threat Protection service](onboard-configure-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot onboarding process and portal access issues](troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)

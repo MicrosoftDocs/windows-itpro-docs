@@ -29,7 +29,7 @@ This policy setting is dependent on the **Account lockout threshold** policy set
 
 If [Account lockout threshold](account-lockout-threshold.md) is configured, after the specified number of failed attempts, the account will be locked out. If th **Account lockout duration** is set to 0, the account will remain locked until an administrator unlocks it manually.
 
-It is advisable to set **Account lockout duration** to approximately 30 minutes. To specify that the account will never be locked out, set the value to 0. To configure the value for this policy setting so that it never automatically unlocks the account might seem like a good idea; however, doing so can increase the number of requests that your organization’s Help Desk receives to unlock accounts that were locked by mistake.
+It is advisable to set **Account lockout duration** to approximately 15 minutes. To specify that the account will never be locked out, set the Account lockout threshold value to 0. 
 
 ### Location
 

@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 10/10/2017
+ms.date: 03/26/2018
 ---
 # Prepare and Deploy Windows Server 2016 Active Directory Federation Services
 
@@ -36,7 +36,7 @@ Prepare the Active Directory Federation Services deployment by installing and up
 
 Sign-in the federation server with _local admin_ equivalent credentials.
 1.	Ensure Windows Server 2016 is current by running **Windows Update** from **Settings**. Continue this process until no further updates are needed. If you’re not using Windows Update for updates, please review the [Windows Server 2016 update history page](https://support.microsoft.com/help/4000825/windows-10-windows-server-2016-update-history) to make sure you have the latest updates available installed.
-2.	Ensure the latest server updates to the federation server includes [KB4034658 (14393.1593)](https://support.microsoft.com/en-us/help/4034658).
+2.	Ensure the latest server updates to the federation server includes [KB4088889 (14393.2155)](https://support.microsoft.com/en-us/help/4088889).
 
 >[!IMPORTANT]
 >The above referenced updates are mandatory for Windows Hello for Business all on-premises deployment and hybrid certificate trust deployments for domain joined computers.

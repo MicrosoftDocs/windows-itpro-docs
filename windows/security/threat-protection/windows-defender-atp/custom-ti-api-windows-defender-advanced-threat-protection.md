@@ -184,6 +184,21 @@ Content-Type: application/json;
 ```
 If successful, you should get a 201 CREATED response containing the representation of the newly created indicators of compromise in the payload.
 
+The API currently supports the following IOC types:
+
+- Sha1
+- Sha256
+- Md5
+- FileName
+- IpAddress
+- DomainName 
+
+And the following operators:
+
+- Equals
+- StartWith
+- EndWith
+- Contains
 
 ## Bulk upload of alert definitions and IOCs
 Bulk upload of multiple entities can be done by sending an HTTP POST request to `/{resource}/Actions.BulkUpload`. </br>

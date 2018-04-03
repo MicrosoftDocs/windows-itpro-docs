@@ -74,9 +74,8 @@ This section lists various issues that you may encounter when using email notifi
 3.	Check your email application rules that might be catching and moving your Windows Defender ATP email notifications.
 
 ## Related topics
-- [Update general settings in Windows Defender ATP](general-settings-windows-defender-advanced-threat-protection.md)
-- [Turn on advanced features in Windows Defender ATP](advanced-features-windows-defender-advanced-threat-protection.md)
-- [Turn on the preview experience in Windows Defender ATP](preview-settings-windows-defender-advanced-threat-protection.md)
-- [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-- [Enable the custom threat intelligence API in Windows Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
-- [Create and build Power BI reports](powerbi-reports-windows-defender-advanced-threat-protection.md)
+- [Update data retention settings](general-settings-windows-defender-advanced-threat-protection.md)
+- [Configure automation notifications](configure-automation-notifications-windows-defender-advanced-threat-protection.md)
+- [Enable and create Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
+- [Enable Secure Score security controls](enable-security-analytics-windows-defender-advanced-threat-protection.md)
+- [Configure advanced features](advanced-features-windows-defender-advanced-threat-protection.md)

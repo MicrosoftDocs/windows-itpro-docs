@@ -32,7 +32,7 @@ Depending on the Microsoft security products that you use, some advanced feature
 Turn on the following advanced features to get better protected from potentially malicious files and gain better insight during security investigations:
 
 ## Automated investigation
-When you enable this feature, you'll be able to take advantage of the automated investigation and remediation features of the service. 
+When you enable this feature, you'll be able to take advantage of the automated investigation and remediation features of the service. For more information, see [Automated investigations](automated-investigations-windows-defender-advanced-threat-protection.md).
 
 ## Block file
 This feature is only available if your organization uses Windows Defender Antivirus as the active antimalware solution and that the cloud-based protection feature is enabled.
@@ -81,10 +81,10 @@ To receive contextual machine integration in Office 365 Threat Intelligence, you
 ## Microsoft Intune connection
 This feature is only available if you have an active Microsoft Intune (Intune) license. 
 
-When you enable this feature, you'll be able to share Windows Defender ATP device information to Intune and enhance policy enforcement. Intune provides additional information about managed devices for secure score. It can use risk score to enforce conditional access and other sercurity policies. 
+When you enable this feature, you'll be able to share Windows Defender ATP device information to Intune and enhance policy enforcement. The machine risk score can be used in the integration to enforce conditional access and other security policies. 
 
 >[!NOTE]
->You'll need to enable the integration on both Intune and Windows Defender ATP to use this feature. For more information on how to enable and configure the integration in Intune, see.
+>You'll need to enable the integration on both Intune and Windows Defender ATP to use this feature. For more information on how to enable and configure the integration in Intune, see
 
 
 
@@ -94,9 +94,8 @@ When you enable this feature, you'll be able to share Windows Defender ATP devic
 3. Click **Save preferences**.
 
 ## Related topics
-- [Update general settings in Windows Defender ATP](general-settings-windows-defender-advanced-threat-protection.md)
-- [Turn on the preview experience in Windows Defender ATP](preview-settings-windows-defender-advanced-threat-protection.md)
-- [Configure email notifications in Windows Defender ATP](configure-email-notifications-windows-defender-advanced-threat-protection.md)
-- [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-- [Enable the custom threat intelligence API in Windows Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
-- [Create and build Power BI reports](powerbi-reports-windows-defender-advanced-threat-protection.md)
+- [Update data retention settings](general-settings-windows-defender-advanced-threat-protection.md)
+- [Configure alert notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)
+- [Configure automation notifications](configure-automation-notifications-windows-defender-advanced-threat-protection.md)
+- [Enable and create Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
+- [Enable Secure Score security controls](enable-security-analytics-windows-defender-advanced-threat-protection.md)

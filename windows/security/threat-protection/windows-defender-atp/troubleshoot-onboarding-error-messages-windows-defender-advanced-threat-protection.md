@@ -50,10 +50,10 @@ For both cases you should contact Microsoft support at [General Windows Defender
 
 If while accessing the Windows Defender ATP portal you get a **Your subscription has expired** message, your online service subscription has expired. Windows Defender ATP subscription, like any other online service subscription, has an expiration date. 
 
-You can choose to renew or extend the license at any point in time. When accessing the portal after the expiration date a **Your subscription has expired** message will be presented with an option to download the endpoint offboarding package, should you choose to not renew the license.
+You can choose to renew or extend the license at any point in time. When accessing the portal after the expiration date a **Your subscription has expired** message will be presented with an option to download the machine offboarding package, should you choose to not renew the license.
 
 > [!NOTE]
-> For security reasons, the package used to Offboard machines will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+> For security reasons, the package used to Offboard machines will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a machine will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
 ![Image of subscription expired](images\atp-subscription-expired.png)
 
@@ -73,4 +73,4 @@ You'll need to whitelist the `security.windows.com` and all sub-domains under it
 
 
 ## Related topics
-- [Validating licensing provisioning and completing setup for Windows Defender ATP](licensing-windows-defender-advanced-threat-protection.md)
+- [Validate licensing provisioning and complete setup for Windows Defender ATP](licensing-windows-defender-advanced-threat-protection.md)
