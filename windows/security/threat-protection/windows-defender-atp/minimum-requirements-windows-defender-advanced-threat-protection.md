@@ -25,7 +25,7 @@ ms.date: 04/16/2018
 
 [!include[Prerelease information](prerelease.md)]
 
-There are some minimum requirements for onboarding your network and machines.
+There are some minimum requirements for onboarding machines to the service.
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
 
