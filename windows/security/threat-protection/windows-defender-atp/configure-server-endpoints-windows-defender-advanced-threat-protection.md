@@ -12,7 +12,7 @@ localizationpriority: high
 ms.date: 04/16/2018
 ---
 
-# Onboard servers
+# Onboard servers to the Windows Defender ATP service
 
 **Applies to:**
 
