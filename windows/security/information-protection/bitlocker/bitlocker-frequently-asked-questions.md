@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
-ms.date: 10/16/2017
+ms.date: 04/03/2018
 ---
 
 # BitLocker frequently asked questions (FAQ)
@@ -20,7 +20,7 @@ This topic for the IT professional answers frequently asked questions concerning
 
 BitLocker is a data protection feature that encrypts the hard drives on your computer to provide enhanced protection against data theft or exposure on computers and removable drives that are lost or stolen, and more secure data deletion when BitLocker-protected computers are decommissioned as it is much more difficult to recover deleted data from an encrypted drive than from a non-encrypted drive.
 
--   [Overview and requirements](#bkmk-overview)
+-   [Overview and requirements](bitlocker-overview-and-requirements-faq.md)
 -   [Upgrading](#bkmk-upgrading)
 -   [Deployment and administration](#bkmk-deploy)
 -   [Key management](#bkmk-keymanagement)
@@ -30,59 +30,7 @@ BitLocker is a data protection feature that encrypts the hard drives on your com
 -   [BitLocker Network Unlock](#bkmk-bnusect)
 -   [Other questions](#bkmk-other)
 
-## <a href="" id="bkmk-overview"></a>Overview and requirements
 
-### <a href="" id="bkmk-whatisbitlocker"></a>How does BitLocker work?
-
-**How BitLocker works with operating system drives**
-
-You can use BitLocker to mitigate unauthorized data access on lost or stolen computers by encrypting all user files and system files on the operating system drive, including the swap files and hibernation files, and checking the integrity of early boot components and boot configuration data.
-
-**How BitLocker works with fixed and removable data drives**
-
-You can use BitLocker to encrypt the entire contents of a data drive. You can use Group Policy to require that BitLocker be enabled on a drive before the computer can write data to the drive. BitLocker can be configured with a variety of unlock methods for data drives, and a data drive supports multiple unlock methods.
-
-### <a href="" id="bkmk-multifactorsupport"></a>Does BitLocker support multifactor authentication?
-
-Yes, BitLocker supports multifactor authentication for operating system drives. If you enable BitLocker on a computer that has a TPM version 1.2 or later, you can use additional forms of authentication with the TPM protection.
-
-### <a href="" id="bkmk-hsrequirements"></a>What are the BitLocker hardware and software requirements?
-
-For requirements, see [System requirements](https://technet.microsoft.com/itpro/windows/keep-secure/bitlocker-overview#system-requirements).
-
-> **Note:**  Dynamic disks are not supported by BitLocker. Dynamic data volumes will not be displayed in the Control Panel. Although the operating system volume will always be displayed in the Control Panel, regardless of whether it is a Dynamic disk, if it is a dynamic disk it is cannot be protected by BitLocker.
- 
-### <a href="" id="bkmk-partitions"></a>Why are two partitions required? Why does the system drive have to be so large?
-
-Two partitions are required to run BitLocker because pre-startup authentication and system integrity verification must occur on a separate partition from the encrypted operating system drive. This configuration helps protect the operating system and the information in the encrypted drive.
-
-### <a href="" id="bkmk-tpmchipsupport"></a>Which Trusted Platform Modules (TPMs) does BitLocker support?
-
-BitLocker supports TPM version 1.2 or higher.
-
-### <a href="" id="bkmk-havetpm"></a>How can I tell if a TPM is on my computer?
-
-Open the TPM MMC console (tpm.msc) and look under the **Status** heading.
-
-### <a href="" id="bkmk-notpm"></a>Can I use BitLocker on an operating system drive without a TPM?
-
-Yes, you can enable BitLocker on an operating system drive without a TPM version 1.2 or higher, if the BIOS or UEFI firmware has the ability to read from a USB flash drive in the boot environment. This is because BitLocker will not unlock the protected drive until BitLocker's own volume master key is first released by either the computer's TPM or by a USB flash drive containing the BitLocker startup key for that computer. However, computers without TPMs will not be able to use the system integrity verification that BitLocker can also provide.
-To help determine whether a computer can read from a USB device during the boot process, use the BitLocker system check as part of the BitLocker setup process. This system check performs tests to confirm that the computer can properly read from the USB devices at the appropriate time and that the computer meets other BitLocker requirements.
-
-### <a href="" id="bkmk-biossupport"></a>How do I obtain BIOS support for the TPM on my computer?
-
-Contact the computer manufacturer to request a Trusted Computing Group (TCG)-compliant BIOS or UEFI boot firmware that meets the following requirements:
-
--   It is compliant with the TCG standards for a client computer.
--   It has a secure update mechanism to help prevent a malicious BIOS or boot firmware from being installed on the computer.
-
-### <a href="" id="bkmk-privs"></a>What credentials are required to use BitLocker?
-
-To turn on, turn off, or change configurations of BitLocker on operating system and fixed data drives, membership in the local **Administrators** group is required. Standard users can turn on, turn off, or change configurations of BitLocker on removable data drives.
-
-### <a href="" id="bkmk-bootorder"></a>What is the recommended boot order for computers that are going to be BitLocker-protected?
-
-You should configure the startup options of your computer to have the hard disk drive first in the boot order, before any other drives such ach as CD/DVD drives or USB drives. If the hard disk is not first and you typically boot from hard disk, then a boot order change may be detected or assumed when removable media is found during boot. The boot order typically affects the system measurement that is verified by BitLocker and a change in boot order will cause you to be prompted for your BitLocker recovery key. For the same reason, if you have a laptop with a docking station, ensure that the hard disk drive is first in the boot order both when docked and undocked. 
 
 ## <a href="" id="bkmk-upgrading"></a>Upgrading
 
