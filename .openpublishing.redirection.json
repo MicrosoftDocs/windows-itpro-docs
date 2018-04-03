@@ -13099,18 +13099,11 @@
 "source_path": "windows/deployment/windows-10-auto-pilot.md",
 "redirect_url": "/windows/deployment/windows-autopilot/windows-10-autopilot",
 "redirect_document_id": true
-}
+},
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/security-analytics-dashboard-windows-defender-advanced-threat-protection.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-atp/secure-score-windows-defender-advanced-threat-protection",
 "redirect_document_id": true
 }
-
-
-
-
-
-
-
 ]
 }
