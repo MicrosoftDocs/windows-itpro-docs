@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.sitesec: library
-ms.date: 03/16/2018
+ms.date: 04/03/2018
 author: greg-lindsay
 ---
 
@@ -23,7 +23,7 @@ The following table summarizes various Windows 10 deployment scenarios. The scen
 - Dynamic deployment methods enable you to configure applications and settings for specific use cases. 
 - Traditional deployment methods use tools such as Microsoft Deployment Toolkit (MDT) and System Center Configuration Manager.<br>&nbsp;
 
-<table border="1">
+<table border="0">
   <tr><td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'><b>Category</b></td>
      <td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'><b>Scenario</b></td>
      <td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'><b>Description</b></td>
