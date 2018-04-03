@@ -27,7 +27,7 @@ ms.date: 04/16/2018
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
 
-Automation folder exclusions allow you to specify folders that the automated investigation will skip. 
+Automation folder exclusions allow you to specify folders that the Automated investigation will skip. 
 
 You can control the following attributes about the folder that you'd like to be skipped:
 - Folders 
@@ -35,13 +35,13 @@ You can control the following attributes about the folder that you'd like to be 
 - File names
 
 
-**Folders**
+**Folders**<br>
 You can specify a folder and its subfolders to be skipped. You can use wild cards so that all files under the directory is skipped by the automated investigation. 
 
-**Extensions**
+**Extensions**<br>
 You can specify the extensions to exclude in a specific directory. The extensions are a way to prevent an attacker from using an excluded folder to hide an exploit. The extensions explicitly define which files to ignore. 
 
-**File names**
+**File names**<br>
 You can specify the file names that you want to be excluded in a specific directory. The names are a way to prevent an attacker from using an excluded folder to hide an exploit. The names explicitly define which files to ignore. 
 
 
