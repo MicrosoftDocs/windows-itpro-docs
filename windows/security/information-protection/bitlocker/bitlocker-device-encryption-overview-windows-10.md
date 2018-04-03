@@ -31,14 +31,9 @@ Table 2 lists specific data-protection concerns and how they are addressed in Wi
 | When BitLocker is enabled, the provisioning process can take several hours. | BitLocker pre-provisioning, encrypting hard drives, and Used Space Only encryption allow administrators to enable BitLocker quickly on new computers. |
 | There is no support for using BitLocker with self-encrypting drives (SEDs). | BitLocker supports offloading encryption to encrypted hard drives. |
 | Administrators have to use separate tools to manage encrypted hard drives. | BitLocker supports encrypted hard drives with onboard encryption hardware built in, which allows administrators to use the familiar BitLocker administrative tools to manage them. |
-| Encrypting a new flash drive can take more than 20 minutes. | Used Space Only encryption in BitLocker To Go allows users to encrypt drives in seconds. |
+| Encrypting a new flash drive can take more than 20 minutes. | Used Space Only encryption in BitLocker To Go allows users to encrypt removable data drives in seconds. |
 | BitLocker could require users to enter a recovery key when system configuration changes occur. | BitLocker requires the user to enter a recovery key only when disk corruption occurs or when he or she loses the PIN or password. |
-| Users need to enter a PIN to start the PC, and then their password to sign in to Windows. | Modern Windows devices are increasingly protected with BitLocker Device Encryption out of the box and support SSO to help protect the BitLocker encryption keys from cold boot attacks. |
-
-The sections that follow describe these improvements in more detail. Also see:
-
--   Additional description of improvements in BitLocker: see the [BitLocker](https://technet.microsoft.com/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511#bitlocker) section in "What's new in Windows 10, versions 1507 and 1511."
--   Introduction and requirements for BitLocker: see [BitLocker](bitlocker-overview.md).   
+| Users need to enter a PIN to start the PC, and then their password to sign in to Windows. | Modern Windows devices are increasingly protected with BitLocker Device Encryption out of the box and support SSO to help protect the BitLocker encryption keys from cold boot attacks. | 
 
 ## Prepare for drive and file encryption
 
@@ -81,7 +76,7 @@ Administrators can manage domain-joined devices that have BitLocker Device Encry
 
 ## Used Disk Space Only encryption
 
-BitLocker in earlier Windows versions could take a long time to encrypt a drive, because it encrypted every byte on the volume (including parts that did not have data). That is still the most secure way to encrypt a drive, especially if a drive has previously contained confidential data that has since been moved or deleted, in which case traces of the confidential data could remain on portions of the drive marked as unused.
+BitLocker in earlier Windows versions could take a long time to encrypt a drive, because it encrypted every byte on the volume (including parts that did not have data). That is still the most secure way to encrypt a drive, especially if a drive has previously contained confidential data that has since been moved or deleted. In that case, traces of the confidential data could remain on portions of the drive marked as unused.
 But why encrypt a new drive when you can simply encrypt the data as it is being written? To reduce encryption time, BitLocker in Windows 10 lets users choose to encrypt just their data. Depending on the amount of data on the drive, this option can reduce encryption time by more than 99 percent.
 Exercise caution when encrypting only used space on an existing volume on which confidential data may have already been stored in an unencrypted state, however, because those sectors can be recovered through disk-recovery tools until they are overwritten by new encrypted data. In contrast, encrypting only used space on a brand-new volume can significantly decrease deployment time without the security risk because all new data will be encrypted as it is written to the disk.
 
