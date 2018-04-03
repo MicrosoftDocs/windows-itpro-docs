@@ -189,7 +189,7 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-   a. In the navigation pane, select **Settings** > **Offboarding**.
+   a. In the navigation pane, select **Settings** > **Machine management** > **Offboarding**.
 
    b. Select Windows 10 as the operating system.
 

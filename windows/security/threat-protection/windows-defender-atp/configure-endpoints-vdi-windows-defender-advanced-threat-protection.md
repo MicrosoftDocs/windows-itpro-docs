@@ -71,9 +71,13 @@ You can onboard VDI machines using a single entry or multiple entries for each m
 6. Test your solution:
 
       a. Create a pool with one machine.
+      
       b. Logon to machine.
+      
       c. Logoff from machine.
+
       d. Logon to machine with another user.
+      
       e. **For single entry for each machine**: Check only one entry in the Windows Defender ATP portal.<br>
     **For multiple entries for each machine**: Check multiple entries in the Windows Defender ATP portal.
 

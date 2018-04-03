@@ -39,7 +39,7 @@ Set the baselines for calculating the score of Windows Defender security control
 3. Click **Save preferences**.
 
 ## Related topics
-- [View the Secure Score dashboard](security-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+- [View the Secure Score dashboard](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
 - [Update data retention settings for Windows Defender ATP](general-settings-windows-defender-advanced-threat-protection.md)
 - [Configure alert notifications in Windows Defender ATP](configure-email-notifications-windows-defender-advanced-threat-protection.md)
 - [Configure automation notifications in Windows Defender ATP](configure-automation-notifications-windows-defender-advanced-threat-protection.md)
