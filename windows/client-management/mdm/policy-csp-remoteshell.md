@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - RemoteShell
@@ -81,6 +81,11 @@ ms.date: 01/30/2018
 
 <!--/Scope-->
 <!--Description-->
+This policy setting configures access to remote shells.
+
+If you enable or do not configure this policy setting, new remote shell connections are accepted by the server.
+
+If you set this policy to ‘disabled’, new remote shell connections are rejected by the server.
 
 <!--/Description-->
 > [!TIP]
@@ -90,14 +95,14 @@ ms.date: 01/30/2018
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Allow Remote Shell Access*
 -   GP name: *AllowRemoteShellAccess*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -138,6 +143,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
+This policy setting configures the maximum number of users able to concurrently perform remote shell operations on the system.
+
+The value can be any  number from 1 to 100.
+
+If you enable this policy setting, the new shell connections are rejected if they exceed the specified limit.
+
+If you disable or do not configure this policy setting, the default number is five users.
 
 <!--/Description-->
 > [!TIP]
@@ -147,14 +159,14 @@ ADMX Info:
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *MaxConcurrentUsers*
 -   GP name: *MaxConcurrentUsers*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -195,6 +207,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
+This policy setting configures the maximum time in milliseconds remote shell will stay open without any user activity until it is automatically deleted.
+
+Any value from 0 to 0x7FFFFFFF can be set. A minimum of 60000 milliseconds (1 minute) is used for smaller values.
+
+If you enable this policy setting, the server will wait for the specified amount of time since the last received message from the client before terminating the open shell.
+
+If you do not configure or disable this policy setting, the default value of 900000 or 15 min will be used.
 
 <!--/Description-->
 > [!TIP]
@@ -204,14 +223,14 @@ ADMX Info:
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify idle Timeout*
 -   GP name: *IdleTimeout*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -252,6 +271,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
+This policy setting configures the maximum total amount of memory in megabytes that can be allocated by any active remote shell and all its child processes.
+
+Any value from 0 to 0x7FFFFFFF can be set, where 0 equals unlimited memory, which means the ability of remote operations to allocate memory is only limited by the available virtual memory.
+
+If you enable this policy setting, the remote operation is terminated when a new allocation exceeds the specified quota.
+
+If you disable or do not configure this policy setting, the value 150 is used by default.
 
 <!--/Description-->
 > [!TIP]
@@ -261,14 +287,14 @@ ADMX Info:
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify maximum amount of memory in MB per Shell*
 -   GP name: *MaxMemoryPerShellMB*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -309,6 +335,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
+This policy setting configures the maximum number of processes a remote shell is allowed to launch.
+
+If you enable this policy setting, you can specify any number from 0 to 0x7FFFFFFF to set the maximum number of process per shell. Zero (0) means unlimited number of processes.
+
+If you disable or do not configure this policy setting,  the limit is five processes per shell.
 
 <!--/Description-->
 > [!TIP]
@@ -318,14 +349,14 @@ ADMX Info:
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify maximum number of processes per Shell*
 -   GP name: *MaxProcessesPerShell*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -366,6 +397,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
+This policy setting configures the maximum number of concurrent shells any user can remotely open on the same system.
+
+Any number from 0 to 0x7FFFFFFF cand be set, where 0 means unlimited number of shells.
+
+If you enable this policy setting, the user cannot open new remote shells if the count exceeds the specified limit.
+
+If you disable or do not configure this policy setting, by default the limit is set to two remote shells per user.
 
 <!--/Description-->
 > [!TIP]
@@ -375,14 +413,14 @@ ADMX Info:
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify maximum number of remote shells per user*
 -   GP name: *MaxShellsPerUser*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -423,6 +461,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
+This policy setting is deprecated and has no effect when set to any state: Enabled, Disabled, or Not Configured.
 
 <!--/Description-->
 > [!TIP]
@@ -432,14 +471,14 @@ ADMX Info:
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify Shell Timeout*
 -   GP name: *ShellTimeOut*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
 
@@ -448,6 +487,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

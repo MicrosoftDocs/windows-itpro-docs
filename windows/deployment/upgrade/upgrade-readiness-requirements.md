@@ -2,8 +2,8 @@
 title: Upgrade Readiness requirements (Windows 10)
 description: Provides requirements for Upgrade Readiness.
 ms.prod: w10
-author: greg-lindsay
-ms.date: 11/08/2017
+author: jaimeo
+ms.date: 03/15/2018
 ---
 
 # Upgrade Readiness requirements
@@ -16,7 +16,7 @@ This article introduces concepts and steps needed to get up and running with Upg
 
 To perform an in-place upgrade, user computers must be running the latest version of either Windows 7 SP1 or Windows 8.1. After you enable Windows diagnostic data, Upgrade Readiness performs a full inventory of computers so that you can see which version of Windows is installed on each computer.
 
-The compatibility update KB that sends diagnostic data from user computers to Microsoft data centers works with Windows 7 SP1 and Windows 8.1 only. Upgrade Readiness cannot evaluate Windows XP or Windows Vista for upgrade eligibility.
+The compatibility update that sends diagnostic data from user computers to Microsoft data centers works with Windows 7 SP1 and Windows 8.1 only. Upgrade Readiness cannot evaluate Windows XP or Windows Vista for upgrade eligibility.
 
 <!--With Windows 10, edition 1607, the compatibility update KB is installed automatically.-->
 
@@ -29,7 +29,7 @@ See [Windows 10 Specifications](http://www.microsoft.com/en-US/windows/windows-1
 ### Windows 10
 
 Keeping Windows 10 up to date involves deploying a feature update, and Upgrade Readiness tools help you prepare and plan for these Windows updates.
-The latest cumulative updates must be installed on Windows 10 computers to make sure that the required compatibility KBs are installed.  You can find the latest cumulative update on the [Microsoft Update Catalog](https://catalog.update.microsoft.com). 
+The latest cumulative updates must be installed on Windows 10 computers to make sure that the required compatibility updates are installed.  You can find the latest cumulative update on the [Microsoft Update Catalog](https://catalog.update.microsoft.com). 
 
 Windows 10 LTSB is not supported by Upgrade Readiness. The Long-Term Servicing Channel of Windows 10 is not intended for general deployment, and does not receive feature updates, therefore it is not compatible with Upgrade Readiness.  See [Windows as a service overview](../update/waas-overview.md#long-term-servicing-channel) to understand more about LTSB.
 
@@ -47,34 +47,7 @@ Important: You can use either a Microsoft Account or a Work or School account to
 
 Upgrade Readiness can be integrated with your installation of Configuration Manager. For more information, see [Integrate Upgrade Readiness with System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/upgrade/upgrade-analytics).
 
-## Diagnostic data and data sharing 
 
-After you’ve signed in to Operations Management Suite and added the Upgrade Readiness solution to your workspace, you’ll need to complete the following tasks to allow user computer data to be shared with and assessed by Upgrade Readiness.
-
-See [Windows 7, Windows 8, and Windows 8.1 appraiser diagnostic data events and fields](https://go.microsoft.com/fwlink/?LinkID=822965) for more information about what user computer data Upgrade Readiness collects and assesses. See [Configure Windows diagnostic data in your organization](/windows/configuration/configure-windows-diagnostic-data-in-your-organization) for more information about how Microsoft uses Windows diagnostic data.
-
-**Whitelist diagnostic data endpoints.** To enable diagnostic data to be sent to Microsoft, you’ll need to whitelist the following Microsoft endpoints on your proxy server or firewall. You may need to get approval from your security group to do this.
-
-`https://v10.vortex-win.data.microsoft.com/collect/v1`<BR>
-`https://vortex-win.data.microsoft.com/health/keepalive`<BR>
-`https://settings.data.microsoft.com/qos`<BR>
-`https://settings-win.data.microsoft.com/qos`<BR>
-`https://go.microsoft.com/fwlink/?LinkID=544713`<BR>
-`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc`<BR>
-
->**Note** The compatibility update KB runs under the computer’s system account and does not support user authentication in this release.
-
-**Generate your commercial ID key.** Microsoft uses a unique commercial ID GUID to map data from your computers to your OMS workspace. You’ll need to generate your commercial ID key in OMS. We recommend that you save your commercial ID key as you’ll need it later.
-
-**Subscribe your OMS workspace to Upgrade Readiness.** For Upgrade Readiness to receive and display upgrade readiness data from Microsoft, you’ll need to subscribe your OMS workspace to Upgrade Readiness.
-
-**Enable diagnostic data and connect data sources.** To allow Upgrade Readiness to collect system, application, and driver data and assess your organization’s upgrade readiness, communication must be established between Upgrade Readiness and user computers. You’ll need to connect Upgrade Readiness to your data sources and enable diagnostic data to establish communication.
-
-**Deploy compatibility update and related KBs.** The compatibility update KB scans your systems and enables application usage tracking. If you don’t already have this KB installed, you can download the applicable version from the Microsoft Update Catalog or deploy it using Windows Server Update Services (WSUS) or your software distribution solution, such as System Center Configuration Manager.
-
->**Important**<br> The compatibility update and related KBs are updated frequently to include new compatibility issues as they become known to Microsoft. We recommend that you use a deployment system that allows for automatic updates of these KBs. The compatibility update KB collects inventory information from computers only when it is updated. 
-
-**Configure and deploy Upgrade Readiness deployment script.** Configure and deploy the Upgrade Readiness deployment script to user computers to finish setting up.
 
 ## Important information about this release
 
@@ -82,7 +55,7 @@ Before you get started configuring Upgrade Anatlyics, review the following tips 
 
 **Upgrade Readiness does not support on-premises Windows deployments.** Upgrade Readiness is built as a cloud service, which allows Upgrade Readiness to provide you with insights based on the data from user computers and other Microsoft compatibility services. Cloud services are easy to get up and running and are cost-effective because there is no requirement to physically implement and maintain services on-premises.
 
-**In-region data storage requirements.** Windows diagnostic data from user computers is encrypted, sent to, and processed at Microsoft-managed secure data centers located in the US. Our analysis of the upgrade readiness-related data is then provided to you through the Upgrade Readiness solution in the Microsoft Operations Management Suite (OMS) portal. At the time this topic is being published, only OMS workspaces created in the East US and West Europe are supported. We’re adding support for additional regions and we’ll update this information when new international regions are supported.
+**In-region data storage requirements.** Windows diagnostic data from user computers is encrypted, sent to, and processed at Microsoft-managed secure data centers located in the US. Our analysis of the upgrade readiness-related data is then provided to you through the Upgrade Readiness solution in the Microsoft Operations Management Suite (OMS) portal. Upgrade Readiness is supported in all OMS regions; however, selecting an international OMS region does not prevent diagnostic data from being sent to and processed in Microsoft's secure data centers in the US.
 
 ### Tips
 

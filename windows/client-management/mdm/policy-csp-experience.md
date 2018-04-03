@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - Experience
@@ -71,6 +71,9 @@ ms.date: 01/30/2018
   </dd>
   <dd>
     <a href="#experience-allowwindowsspotlightonactioncenter">Experience/AllowWindowsSpotlightOnActionCenter</a>
+  </dd>
+  <dd>
+    <a href="#experience-allowwindowsspotlightonsettings">Experience/AllowWindowsSpotlightOnSettings</a>
   </dd>
   <dd>
     <a href="#experience-allowwindowsspotlightwindowswelcomeexperience">Experience/AllowWindowsSpotlightWindowsWelcomeExperience</a>
@@ -185,6 +188,14 @@ Specifies whether Cortana is allowed on the device. If you enable or don’t con
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Cortana*
+-   GP name: *AllowCortana*
+-   GP path: *Windows Components/Search*
+-   GP ADMX file name: *Search.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -293,6 +304,14 @@ When Find My Device is on, the device and its location are registered in the clo
 When Find My Device is off, the device and its location are not registered and the Find My Device feature will not work. In Windows 10, version 1709 the user will not be able to view the location of the last use of their active digitizer on their device.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn On/Off Find My Device*
+-   GP name: *FindMy_AllowFindMyDeviceConfig*
+-   GP path: *Windows Components/Find My Device*
+-   GP ADMX file name: *FindMy.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -340,7 +359,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Azure Active Directory joined and MDM enrolled (e.g. auto-enrolled), which is majority of the case for Intune, then disabling the MDM unenrollment has no effect.
+Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Azure Active Directory joined and MDM enrolled (e.g. auto-enrolled), then disabling the MDM unenrollment has no effect.
 
 > [!NOTE]
 > The MDM server can always remotely delete the account.
@@ -561,7 +580,7 @@ The following list shows the supported values:
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -590,6 +609,14 @@ Diagnostic data can include browser, app and feature usage, depending on the "Di
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Do not use diagnostic data for tailored experiences*
+-   GP name: *DisableTailoredExperiencesWithDiagnosticData*
+-   GP path: *Windows Components/Cloud Content*
+-   GP ADMX file name: *CloudContent.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -672,9 +699,9 @@ The following list shows the supported values:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -698,6 +725,14 @@ The following list shows the supported values:
 Specifies whether to allow app and content suggestions from third-party software publishers in Windows spotlight features like lock screen spotlight, suggested apps in the Start menu, and Windows tips. Users may still see suggestions for Microsoft features, apps, and services.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Do not suggest third-party content in Windows spotlight*
+-   GP name: *DisableThirdPartySuggestions*
+-   GP path: *Windows Components/Cloud Content*
+-   GP ADMX file name: *CloudContent.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -781,10 +816,10 @@ The following list shows the supported values:
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -795,7 +830,7 @@ The following list shows the supported values:
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * User
+> * Device
 
 <hr/>
 
@@ -810,6 +845,14 @@ This policy allows IT admins to turn on experiences that are typically for consu
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off Microsoft consumer experiences*
+-   GP name: *DisableWindowsConsumerFeatures*
+-   GP path: *Windows Components/Cloud Content*
+-   GP ADMX file name: *CloudContent.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -838,9 +881,9 @@ The following list shows the supported values:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -866,6 +909,14 @@ Specifies whether to turn off all Windows spotlight features at once. If you ena
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off all Windows spotlight features*
+-   GP name: *DisableWindowsSpotlightFeatures*
+-   GP path: *Windows Components/Cloud Content*
+-   GP ADMX file name: *CloudContent.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -896,7 +947,7 @@ The following list shows the supported values:
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -921,11 +972,81 @@ Added in Windows 10, version 1703. This policy allows administrators to prevent 
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off Windows Spotlight on Action Center*
+-   GP name: *DisableWindowsSpotlightOnActionCenter*
+-   GP path: *Windows Components/Cloud Content*
+-   GP ADMX file name: *CloudContent.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="experience-allowwindowsspotlightonsettings"></a>**Experience/AllowWindowsSpotlightOnSettings**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803. This policy allows IT admins to turn off Suggestions in Settings app. These suggestions from Microsoft may show after each OS clean install, upgrade or an on-going basis to help users discover apps/features on Windows or across devices, to make thier experience productive.  
+
+-  User setting is under Settings -> Privacy -> General -> Show me suggested content in Settings app.
+-  User Setting is changeable on a per user basis.
+-  If the Group policy is set to off, no suggestions will be shown to the user in Settings app.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off Windows Spotlight on Settings*
+-   GP name: *DisableWindowsSpotlightOnSettings*
+-   GP path: *Windows Components/Cloud Content*
+-   GP ADMX file name: *CloudContent.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - Not allowed.
+-   1 - Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -951,7 +1072,7 @@ The following list shows the supported values:
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -977,6 +1098,14 @@ The Windows welcome experience feature introduces onboard users to Windows; for 
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off the Windows Welcome Experience*
+-   GP name: *DisableWindowsSpotlightWindowsWelcomeExperience*
+-   GP path: *Windows Components/Cloud Content*
+-   GP ADMX file name: *CloudContent.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1004,10 +1133,10 @@ The following list shows the supported values:
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -1027,6 +1156,14 @@ The following list shows the supported values:
 Enables or disables Windows Tips / soft landing.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Do not show Windows tips*
+-   GP name: *DisableSoftLanding*
+-   GP path: *Windows Components/Cloud Content*
+-   GP ADMX file name: *CloudContent.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1055,9 +1192,9 @@ The following list shows the supported values:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -1081,6 +1218,14 @@ The following list shows the supported values:
 Allows IT admins to specify whether spotlight should be used on the user's lock screen. If your organization does not have an Enterprise spotlight content service, then this policy will behave the same as a setting of 1.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Windows spotlight on lock screen*
+-   GP name: *ConfigureWindowsSpotlight*
+-   GP path: *Windows Components/Cloud Content*
+-   GP ADMX file name: *CloudContent.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1136,6 +1281,14 @@ If you enable this policy setting, users will no longer see feedback notificatio
 If you disable or do not configure this policy setting, users can control how often they receive feedback questions.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Do not show feedback notifications*
+-   GP name: *DoNotShowFeedbackNotifications*
+-   GP path: *Data Collection and Preview Builds*
+-   GP ADMX file name: *FeedbackNotifications.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1151,6 +1304,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

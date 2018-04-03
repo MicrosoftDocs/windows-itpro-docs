@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - Update
@@ -216,6 +216,15 @@ Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
 The default is 17 (5 PM).
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off auto-restart for updates during active hours*
+-   GP name: *ActiveHours*
+-   GP element: *ActiveHoursEndTime*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -263,6 +272,15 @@ Supported values are 8-18.
 The default value is 18 (hours).
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify active hours range for auto-restarts*
+-   GP name: *ActiveHoursMaxRange*
+-   GP element: *ActiveHoursMaxRange*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -313,6 +331,15 @@ Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
 The default value is 8 (8 AM).
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off auto-restart for updates during active hours*
+-   GP name: *ActiveHours*
+-   GP element: *ActiveHoursStartTime*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -365,6 +392,15 @@ Supported operations are Get and Replace.
 If the policy is not configured, end-users get the default behavior (Auto install and restart).
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Automatic Updates*
+-   GP name: *AutoUpdateCfg*
+-   GP element: *AutoUpdateMode*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -423,6 +459,14 @@ A significant number of devices primarily use cellular data and do not have Wi-F
 This policy is accessible through the Update setting in the user interface or Group Policy.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow updates to be downloaded automatically over metered connections*
+-   GP name: *AllowAutoWindowsUpdateDownloadOverMeteredNetwork*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -473,6 +517,15 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. Allows the IT admin to manage whether to scan for app updates from Microsoft Update.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Automatic Updates*
+-   GP name: *AutoUpdateCfg*
+-   GP element: *AllowMUUpdateServiceId*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -584,6 +637,14 @@ Enabling this policy will disable that functionality, and may cause connection t
 > This policy applies only when the desktop or device is configured to connect to an intranet update service using the "Specify intranet Microsoft update service location" policy.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify intranet Microsoft update service location*
+-   GP name: *CorpWuURL*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -638,6 +699,15 @@ Supported values are 2-30 days.
 The default value is 7 days.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify deadline before auto-restart for update installation*
+-   GP name: *AutoRestartDeadline*
+-   GP element: *AutoRestartDeadline*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -683,6 +753,15 @@ Added in Windows 10, version 1703. Allows the IT Admin to specify the period fo
 The default value is 15 (minutes).
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure auto-restart reminder notifications for updates*
+-   GP name: *AutoRestartNotificationConfig*
+-   GP element: *AutoRestartNotificationSchd*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values are 15, 30, 60, 120, and 240 (minutes).
 
@@ -730,6 +809,15 @@ Supported values are 15, 30, 60, 120, and 240 (minutes).
 Added in Windows 10, version 1703. Allows the IT Admin to specify the method by which the auto-restart required notification is dismissed.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure auto-restart required notification for updates*
+-   GP name: *AutoRestartRequiredNotificationDismissal*
+-   GP element: *AutoRestartRequiredNotificationDismissal*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -780,6 +868,15 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. Allows the IT admin to set which branch a device receives their updates from.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Select when Preview Builds and Feature Updates are received*
+-   GP name: *DeferFeatureUpdates*
+-   GP element: *BranchReadinessLevelId*
+-   GP path: *Windows Components/Windows Update/Windows Update for Business*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -821,7 +918,7 @@ The following list shows the supported values:
 
 <!--/SupportedSKUs-->
 <!--Description-->
-Added in Windows 10, next major update. Enable IT admin to configure feature update uninstall period. Values range 2 - 60 days. Default is 10 days.
+Added in Windows 10, version 1803. Enable IT admin to configure feature update uninstall period. Values range 2 - 60 days. Default is 10 days.
 
 <!--/Description-->
 <!--/Policy-->
@@ -874,6 +971,15 @@ Supported values are 0-365 days.
 > The default maximum number of days to defer an update has been increased from 180 (Windows 10, version 1607) to 365 in Windows 10, version 1703.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Select when Preview Builds and Feature Updates are received*
+-   GP name: *DeferFeatureUpdates*
+-   GP element: *DeferFeatureUpdatesPeriodId*
+-   GP path: *Windows Components/Windows Update/Windows Update for Business*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -919,6 +1025,15 @@ Added in Windows 10, version 1607. Defers Quality Updates for the specified num
 Supported values are 0-30.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Select when Quality Updates are received*
+-   GP name: *DeferQualityUpdates*
+-   GP element: *DeferQualityUpdatesPeriodId*
+-   GP path: *Windows Components/Windows Update/Windows Update for Business*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1055,6 +1170,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>-->
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP name: *DeferUpgrade*
+-   GP element: *DeferUpdatePeriodId*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1110,6 +1232,13 @@ If the "Specify intranet Microsoft update service location" policy is enabled, t
 If the "Allow Telemetry" policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP name: *DeferUpgrade*
+-   GP element: *DeferUpgradePeriodId*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1153,6 +1282,15 @@ If the "Allow Telemetry" policy is enabled and the Options value is set to 0, th
 Added in Windows 10, version 1703. Specifies the scan frequency from every 1 - 22 hours. Default is 22 hours.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Automatic Updates detection frequency*
+-   GP name: *DetectionFrequency_Title*
+-   GP element: *DetectionFrequency_Hour2*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1202,6 +1340,14 @@ This is the same as the Group Policy in Windows Components > Window Update "Do n
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Do not allow update deferral policies to cause scans against Windows Update*
+-   GP name: *DisableDualScan*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1256,6 +1402,15 @@ Supported values are 2-30 days.
 The default value is 0 days (not specified).
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify Engaged restart transition and notification schedule for updates*
+-   GP name: *EngagedRestartTransitionSchedule*
+-   GP element: *EngagedRestartDeadline*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1303,6 +1458,15 @@ Supported values are 1-3 days.
 The default value is 3 days.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify Engaged restart transition and notification schedule for updates*
+-   GP name: *EngagedRestartTransitionSchedule*
+-   GP element: *EngagedRestartSnoozeSchedule*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1350,6 +1514,15 @@ Supported values are 2-30 days.
 The default value is 7 days.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify Engaged restart transition and notification schedule for updates*
+-   GP name: *EngagedRestartTransitionSchedule*
+-   GP element: *EngagedRestartTransitionSchedule*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1396,6 +1569,14 @@ The default value is 7 days.
 Added in Windows 10, version 1607. Allows IT Admins to exclude Windows Update (WU) drivers during updates.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Do not include drivers with Windows Updates*
+-   GP name: *ExcludeWUDriversInQualityUpdate*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1449,6 +1630,15 @@ Added in the April service release of Windows 10, version 1607. Allows Windows U
 > This setting should only be used in combination with an alternate download URL and configured to use ISV file cache.  This setting is used when the intranet update service does not provide download URLs in the update metadata for files which are available on the alternate download server.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify intranet Microsoft update service location*
+-   GP name: *CorpWuURL*
+-   GP element: *CorpWUFillEmptyContentUrls*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1629,6 +1819,15 @@ To validate this policy:
 Added in Windows 10, version 1709. Used to manage Windows 10 Insider Preview builds. Value type is integer.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Manage preview builds*
+-   GP name: *ManagePreviewBuilds*
+-   GP element: *ManagePreviewBuildsId*
+-   GP path: *Windows Components/Windows Update/Windows Update for Business*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1689,6 +1888,13 @@ If the "Specify intranet Microsoft update service location" policy is enabled, t
 If the "Allow Telemetry" policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP name: *DeferUpgrade*
+-   GP element: *PauseDeferralsId*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1742,6 +1948,15 @@ Since this policy is not blocked, you will not get a failure message when you us
 Added in Windows 10, version 1607. Allows IT Admins to pause Feature Updates for up to 60 days.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Select when Preview Builds and Feature Updates are received*
+-   GP name: *DeferFeatureUpdates*
+-   GP element: *PauseFeatureUpdatesId*
+-   GP path: *Windows Components/Windows Update/Windows Update for Business*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1794,6 +2009,15 @@ Added in Windows 10, version 1703. Specifies the date and time when the IT admi
 Value type is string. Supported operations are Add, Get, Delete, and Replace.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Select when Preview Builds and Feature Updates are received*
+-   GP name: *DeferFeatureUpdates*
+-   GP element: *PauseFeatureUpdatesStartId*
+-   GP path: *Windows Components/Windows Update/Windows Update for Business*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1837,6 +2061,15 @@ Value type is string. Supported operations are Add, Get, Delete, and Replace.
 Added in Windows 10, version 1607. Allows IT Admins to pause Quality Updates.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Select when Quality Updates are received*
+-   GP name: *DeferQualityUpdates*
+-   GP element: *PauseQualityUpdatesId*
+-   GP path: *Windows Components/Windows Update/Windows Update for Business*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1889,6 +2122,15 @@ Added in Windows 10, version 1703. Specifies the date and time when the IT admi
 Value type is string. Supported operations are Add, Get, Delete, and Replace.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Select when Quality Updates are received*
+-   GP name: *DeferQualityUpdates*
+-   GP element: *PauseQualityUpdatesStartId*
+-   GP path: *Windows Components/Windows Update/Windows Update for Business*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1947,6 +2189,13 @@ This policy is deprecated. Use [Update/RequireUpdateApproval](#update-requireupd
 Allows the IT admin to set a device to Semi-Annual Channel train.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP name: *DeferUpgrade*
+-   GP element: *DeferUpgradePeriodId*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -2055,6 +2304,15 @@ Added in Windows 10, version 1703. Allows the IT Admin to specify the period fo
 The default value is 15 (minutes).
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure auto-restart warning notifications schedule for updates*
+-   GP name: *RestartWarnRemind*
+-   GP element: *RestartWarn*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values are 15, 30, or 60 (minutes).
 
@@ -2108,6 +2366,15 @@ Added in Windows 10, version 1703. Allows the IT Admin to specify the period fo
 The default value is 4 (hours).
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure auto-restart warning notifications schedule for updates*
+-   GP name: *RestartWarnRemind*
+-   GP element: *RestartWarnRemind*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values are 2, 4, 8, 12, or 24 (hours).
 
@@ -2159,6 +2426,15 @@ The data type is a integer.
 Supported operations are Add, Delete, Get, and Replace.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Automatic Updates*
+-   GP name: *AutoUpdateCfg*
+-   GP element: *AutoUpdateSchDay*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -2219,6 +2495,15 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 </ul>
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Automatic Updates*
+-   GP name: *AutoUpdateCfg*
+-   GP element: *AutoUpdateSchEveryWeek*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2266,6 +2551,15 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 </ul>
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Automatic Updates*
+-   GP name: *AutoUpdateCfg*
+-   GP element: *AutoUpdateSchFirstWeek*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2313,6 +2607,15 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 </ul>
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Automatic Updates*
+-   GP name: *AutoUpdateCfg*
+-   GP element: *ScheduledInstallFourthWeek*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2360,6 +2663,15 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 </ul>
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Automatic Updates*
+-   GP name: *AutoUpdateCfg*
+-   GP element: *ScheduledInstallSecondWeek*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2407,6 +2719,15 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 </ul>
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Automatic Updates*
+-   GP name: *AutoUpdateCfg*
+-   GP element: *ScheduledInstallThirdWeek*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2462,6 +2783,15 @@ Supported values are 0-23, where 0 = 12 AM and 23 = 11 PM.
 The default value is 3.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Automatic Updates*
+-   GP name: *AutoUpdateCfg*
+-   GP element: *AutoUpdateSchTime*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2505,6 +2835,15 @@ The default value is 3.
 Added in Windows 10, version 1703. Allows the IT Admin to disable auto-restart notifications for update installations.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off auto-restart notifications for update installations*
+-   GP name: *AutoRestartNotificationDisable*
+-   GP element: *AutoRestartNotificationSchd*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -2555,6 +2894,14 @@ The following list shows the supported values:
 Added in Windows 10, version 1703. For devices in a cart, this policy skips all restart checks to ensure that the reboot will happen at ScheduledInstallTime.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Update Power Policy for Cart Restarts*
+-   GP name: *SetEDURestart*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -2610,6 +2957,15 @@ Allows the device to check for updates from a WSUS server instead of Microsoft U
 Supported operations are Get and Replace.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify intranet Microsoft update service location*
+-   GP name: *CorpWuURL*
+-   GP element: *CorpWUURL_Name*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -2691,6 +3047,15 @@ Value type is string and the default value is an empty string, "". If the settin
 > This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify intranet Microsoft update service location*
+-   GP name: *CorpWuURL*
+-   GP element: *CorpWUContentHost_Name*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 <hr/>
 
@@ -2699,6 +3064,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

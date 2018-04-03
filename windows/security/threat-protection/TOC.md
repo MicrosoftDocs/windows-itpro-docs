@@ -39,7 +39,8 @@
 ### [Understand the Windows Defender ATP portal](windows-defender-atp\use-windows-defender-advanced-threat-protection.md)
 #### [Portal overview](windows-defender-atp\portal-overview-windows-defender-advanced-threat-protection.md)
 #### [View the Security operations dashboard](windows-defender-atp\dashboard-windows-defender-advanced-threat-protection.md)
-#### [View the Security analytics dashboard](windows-defender-atp\security-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+#### [View the Secure score dashboard](windows-defender-atp\security-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+#### [View the Threat analytics dashboard](windows-defender-atp\threat-analytics-windows-defender-advanced-threat-protection.md)
 
 ###Investigate and remediate threats
 ####Alerts queue
@@ -245,7 +246,7 @@
 
 
 
-### [Reference topics for management and configuration tools](windows-defender-antivirus\configuration-management-reference-windows-defender-antivirus.md)
+### [Manage Windows Defender AV in your business](windows-defender-antivirus\configuration-management-reference-windows-defender-antivirus.md)
 #### [Use Group Policy settings to configure and manage Windows Defender AV](windows-defender-antivirus\use-group-policy-windows-defender-antivirus.md)
 #### [Use System Center Configuration Manager and Microsoft Intune to configure and manage Windows Defender AV](windows-defender-antivirus\use-intune-config-manager-windows-defender-antivirus.md)
 #### [Use PowerShell cmdlets to configure and manage Windows Defender AV](windows-defender-antivirus\use-powershell-cmdlets-windows-defender-antivirus.md)

@@ -4,6 +4,7 @@ hide_bc: true
 title: Microsoft 365 Education documentation and resources | Microsoft Docs
 description: Learn about product documentation and resources available for school IT administrators, teachers, students, and education app developers.
 author: CelesteDG
+ms.topic: hub-page
 ms.author: celested
 ms.date: 10/30/2017
 ---
@@ -17,7 +18,7 @@ ms.date: 10/30/2017
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="/media/common/i_advanced.svg" src="/media/common/i_advanced.svg" alt="Learn more about Microsoft Education products." />
+                                        <img data-hoverimage="/media/common/i_advanced.svg" src="/media/common/i_advanced.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -35,7 +36,7 @@ ms.date: 10/30/2017
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="/media/common/i_get-started.svg" src="/media/common/i_get-started.svg" alt="For IT Pros: Get started with Microsoft Education" />
+                                        <img data-hoverimage="/media/common/i_get-started.svg" src="/media/common/i_get-started.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -53,7 +54,7 @@ ms.date: 10/30/2017
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="/media/common/i_download-install.svg" src="/media/common/i_download-install.svg" alt="Test Windows 10 S for education" />
+                                        <img data-hoverimage="/media/common/i_download-install.svg" src="/media/common/i_download-install.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -87,7 +88,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/M365-education.svg" alt="Learn about Microsoft 365 Education" />
+                                                        <img src="images/M365-education.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -106,7 +107,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-get-started.svg" alt="For IT Pros: Get started with Microsoft Education" />
+                                                        <img src="/media/hubs/education/education-pro-get-started.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -125,7 +126,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-office365.svg" alt="Office 365 for Education" />
+                                                        <img src="/media/hubs/education/education-pro-office365.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -144,7 +145,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-intune.svg" alt="Microsoft Intune for Education" />
+                                                        <img src="/media/hubs/education/education-pro-intune.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -163,7 +164,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-windows10.svg" alt="Windows 10 for Education" />
+                                                        <img src="/media/hubs/education/education-pro-windows10.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -182,7 +183,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-school-data.svg" alt="School Data Sync" />
+                                                        <img src="/media/hubs/education/education-pro-school-data.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -201,7 +202,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-azure-directory.svg" alt="Azure Active Directory" />
+                                                        <img src="/media/hubs/education/education-pro-azure-directory.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -220,7 +221,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-store.svg" alt="Microsoft Store for Education" />
+                                                        <img src="/media/hubs/education/education-pro-store.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -239,7 +240,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-minecraft.svg" alt="Minecraft: Educaton Edition" />
+                                                        <img src="/media/hubs/education/education-pro-minecraft.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -258,7 +259,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/education-pro-usb.svg" alt="Set up School PCs" />
+                                                        <img src="images/education-pro-usb.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -271,18 +272,18 @@ ms.date: 10/30/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="https://onedrive.live.com/view.aspx?resid=91F4E618548FC604!2261&ithint=file%2cdocx&app=Word&authkey=!AOgLvpbaerOOfwM" target="_blank">
+                                <a href="https://docs.microsoft.com/en-us/microsoftteams/teams-quick-start-edu" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/education-ms-teams.svg" alt="Meet Microsoft Teams" />
+                                                        <img src="images/education-ms-teams.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Microsoft Teams</h3>
-                                                    <p>Make the most of Microsoft Teams and find out how to deploy, launch pilot teams, and launch Teams to the rest of your institution.</p>
+                                                    <p>Make the most of Microsoft Teams and find out how to deploy, launch pilot teams, and launch Teams to the rest of your organization.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -311,7 +312,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-teachers-office-help.svg" alt="Office help and training" />
+                                                        <img src="/media/hubs/education/education-teachers-office-help.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -330,7 +331,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-teachers-windows-help.svg" alt="Windows help" />
+                                                        <img src="/media/hubs/education/education-teachers-windows-help.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -349,7 +350,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-store.svg" alt="Microsoft Store for Education" />
+                                                        <img src="/media/hubs/education/education-pro-store.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -368,7 +369,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-minecraft.svg" alt="Minecraft: Education Edition" />
+                                                        <img src="/media/hubs/education/education-pro-minecraft.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -387,7 +388,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-teachers-educator-community.svg" alt="Microsoft Educator Community" />
+                                                        <img src="/media/hubs/education/education-teachers-educator-community.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -406,7 +407,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/education-ms-teams.svg" alt="Meet Microsoft Teams" />
+                                                        <img src="images/education-ms-teams.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -425,7 +426,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/education-pro-usb.svg" alt="Set up School PCs" />
+                                                        <img src="images/education-pro-usb.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -459,7 +460,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-students-help.svg" alt="Get started for students" />
+                                                        <img src="/media/hubs/education/education-students-help.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -478,7 +479,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-students-office-help.svg" alt="Office help and training" />
+                                                        <img src="/media/hubs/education/education-students-office-help.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -497,7 +498,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-students-windows-help.svg" alt="Windows help" />
+                                                        <img src="/media/hubs/education/education-students-windows-help.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -516,7 +517,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-students-imagine.svg" alt="Microsoft Imagine" />
+                                                        <img src="/media/hubs/education/education-students-imagine.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -550,7 +551,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-developers-uwp-apps.svg" alt="UWP apps for education" />
+                                                        <img src="/media/hubs/education/education-developers-uwp-apps.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -569,7 +570,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-developers-api-test.svg" alt="Take a Test API" />
+                                                        <img src="/media/hubs/education/education-developers-api-test.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -588,7 +589,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-developers-office-education.svg" alt="Office Education Dev Center" />
+                                                        <img src="/media/hubs/education/education-developers-office-education.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -622,7 +623,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/education-partner-mepn-1.svg" alt="Microsoft Education Partner Network" />
+                                                        <img src="images/education-partner-mepn-1.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -641,7 +642,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/education-partner-aep-2.svg" alt="Authorized Education Partner home page" />
+                                                        <img src="images/education-partner-aep-2.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -660,7 +661,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/education-partner-directory-3.svg" alt="Authorized Education Partner directory" />
+                                                        <img src="images/education-partner-directory-3.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -679,7 +680,7 @@ ms.date: 10/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/education-partner-yammer.svg" alt="Education Partner community Yammer group" />
+                                                        <img src="images/education-partner-yammer.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">

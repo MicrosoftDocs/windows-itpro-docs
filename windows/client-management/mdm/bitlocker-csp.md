@@ -798,7 +798,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 <p style="margin-left: 20px">Allows the Admin to disable the warning prompt for other disk encryption on the user machines.</p>
 
 > [!Important]  
-> Starting in Windows 10, next major update, the value 0 can only be set for Azure Active Directory joined devices.  Windows will attempt to silently enable [BitLocker](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overview) for value 0.
+> Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory joined devices.  Windows will attempt to silently enable [BitLocker](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-overview) for value 0.
 
 > [!Warning]
 > When you enable BitLocker on a device with third party encryption, it may render the device unusable and will require reinstallation of Windows.
@@ -826,7 +826,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">The following list shows the supported values:</p>
 
--   0 – Disables the warning prompt. Starting in Windows 10, next major update, the value 0 can only be set for Azure Active Directory joined devices.  Windows will attempt to silently enable BitLocker for value 0.
+-   0 – Disables the warning prompt. Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory joined devices.  Windows will attempt to silently enable BitLocker for value 0.
 -   1 (default) – Warning prompt allowed.
 
 ``` syntax

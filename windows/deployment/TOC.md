@@ -1,4 +1,4 @@
-# [Deploy and update Windows 10](index.md)
+# [Deploy and update Windows 10](https://docs.microsoft.com/en-us/windows/deployment)
 
 ## [What's new in Windows 10 deployment](deploy-whats-new.md)
 ## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
@@ -8,6 +8,13 @@
 ### [Configure VDA for Subscription Activation](vda-subscription-activation.md)
 ### [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md)
 ## [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md)
+### [Quick fixes](upgrade\quick-fixes.md)
+### [SetupDiag](upgrade/setupdiag.md)
+### [Troubleshooting upgrade errors](upgrade/troubleshoot-upgrade-errors.md)
+### [Windows error reporting](upgrade/windows-error-reporting.md)
+### [Upgrade error codes](upgrade/upgrade-error-codes.md)
+### [Log files](upgrade/log-files.md)
+### [Resolution procedures](upgrade/resolution-procedures.md)
 ### [Submit Windows 10 upgrade errors](upgrade/submit-errors.md)
 
 ## [Deploy Windows 10](deploy.md)
@@ -224,11 +231,12 @@
 ### [Manage device restarts after updates](update/waas-restart.md)
 ### [Manage additional Windows Update settings](update/waas-wu-settings.md)
 ### [Windows Insider Program for Business](update/waas-windows-insider-for-business.md)
+#### [Introduction to the Windows Insider Program for Business](update/WIP4Biz-intro.md)
 #### [Windows Insider Program for Business Frequently Asked Questions](update/waas-windows-insider-for-business-faq.md)
 #### [Olympia Corp enrollment](update/olympia/olympia-enrollment-guidelines.md)
 ### [Change history for Update Windows 10](update/change-history-for-update-windows-10.md)
 
-## Windows Analytics
+## [Windows Analytics](update/windows-analytics-overview.md)
 ### [Manage Windows upgrades with Upgrade Readiness](upgrade/manage-windows-upgrades-with-upgrade-readiness.md)
 #### [Upgrade Readiness architecture](upgrade/upgrade-readiness-architecture.md)
 #### [Upgrade Readiness requirements](upgrade/upgrade-readiness-requirements.md)
@@ -240,7 +248,6 @@
 ##### [Step 2: Resolve issues](upgrade/upgrade-readiness-resolve-issues.md)
 ##### [Step 3: Deploy Windows](upgrade/upgrade-readiness-deploy-windows.md)
 ##### [Additional insights](upgrade/upgrade-readiness-additional-insights.md)
-#### [Troubleshoot Upgrade Readiness](upgrade/troubleshoot-upgrade-readiness.md)
 ### [Monitor Windows Updates with Update Compliance](update/update-compliance-monitor.md)
 #### [Get started with Update Compliance](update/update-compliance-get-started.md)
 #### [Use Update Compliance](update/update-compliance-using.md)
@@ -248,10 +255,13 @@
 ##### [Security Update Status report](update/update-compliance-security-update-status.md)
 ##### [Feature Update Status report](update/update-compliance-feature-update-status.md)
 ##### [Windows Defender AV Status report](update/update-compliance-wd-av-status.md)
+##### [Delivery Optimization in Update Compliance](update/update-compliance-delivery-optimization.md)
 ##### [Update Compliance Perspectives](update/update-compliance-perspectives.md)
 ### [Device Health](update/device-health-monitor.md)
 #### [Get started with Device Health](update/device-health-get-started.md)
 #### [Using Device Health](update/device-health-using.md)
+### [Enrolling devices in Windows Analytics](update/windows-analytics-get-started.md)
+### [Troubleshooting Windows Analytics and FAQ](update/windows-analytics-FAQ-troubleshooting.md)
 
 ## [Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management](upgrade/upgrade-windows-phone-8-1-to-10.md)
 

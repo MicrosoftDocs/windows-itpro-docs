@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - Privacy
@@ -352,6 +352,14 @@ Updated in Windows 10, version 1709. Allows the usage of cloud based speech serv
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow input personalization*
+-   GP name: *AllowInputPersonalization*
+-   GP path: *Control Panel/Regional and Language Options*
+-   GP ADMX file name: *Globalization.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -404,6 +412,14 @@ Added in Windows 10, version 1607. Enables or disables the Advertising ID.
 Most restricted value is 0.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off the advertising ID*
+-   GP name: *DisableAdvertisingId*
+-   GP path: *System/User Profiles*
+-   GP ADMX file name: *UserProfiles.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -455,6 +471,14 @@ The following list shows the supported values:
 Added in Windows 10, version 1709. Allows IT Admins to allow Apps/OS to publish to the activity feed.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Enables Activity Feed*
+-   GP name: *EnableActivityFeed*
+-   GP path: *System/OS Policies*
+-   GP ADMX file name: *OSPolicy.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -508,6 +532,15 @@ Added in Windows 10, version 1607. Specifies whether Windows apps can access ac
 Most restricted value is 2.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access account information*
+-   GP name: *LetAppsAccessAccountInfo*
+-   GP element: *LetAppsAccessAccountInfo_Enum*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -559,6 +592,15 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed access to account information. This setting overrides the default LetAppsAccessAccountInfo policy setting for the specified Windows apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access account information*
+-   GP name: *LetAppsAccessAccountInfo*
+-   GP element: *LetAppsAccessAccountInfo_ForceAllowTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -602,6 +644,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are denied access to account information. This setting overrides the default LetAppsAccessAccountInfo policy setting for the specified Windows apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access account information*
+-   GP name: *LetAppsAccessAccountInfo*
+-   GP element: *LetAppsAccessAccountInfo_ForceDenyTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -645,6 +696,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the account information privacy setting for the listed Windows apps. This setting overrides the default LetAppsAccessAccountInfo policy setting for the specified Windows apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access account information*
+-   GP name: *LetAppsAccessAccountInfo*
+-   GP element: *LetAppsAccessAccountInfo_UserInControlOfTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -691,6 +751,15 @@ Added in Windows 10, version 1607. Specifies whether Windows apps can access th
 Most restricted value is 2.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access the calendar*
+-   GP name: *LetAppsAccessCalendar*
+-   GP element: *LetAppsAccessCalendar_Enum*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -742,6 +811,15 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed access to the calendar. This setting overrides the default LetAppsAccessCalendar policy setting for the specified Windows apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access the calendar*
+-   GP name: *LetAppsAccessCalendar*
+-   GP element: *LetAppsAccessCalendar_ForceAllowTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -785,6 +863,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are denied access to the calendar. This setting overrides the default LetAppsAccessCalendar policy setting for the specified Windows apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access the calendar*
+-   GP name: *LetAppsAccessCalendar*
+-   GP element: *LetAppsAccessCalendar_ForceDenyTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -828,6 +915,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the calendar privacy setting for the listed Windows apps. This setting overrides the default LetAppsAccessCalendar policy setting for the specified Windows apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access the calendar*
+-   GP name: *LetAppsAccessCalendar*
+-   GP element: *LetAppsAccessCalendar_UserInControlOfTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -874,6 +970,15 @@ Added in Windows 10, version 1607. Specifies whether Windows apps can access ca
 Most restricted value is 2.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access call history*
+-   GP name: *LetAppsAccessCallHistory*
+-   GP element: *LetAppsAccessCallHistory_Enum*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -925,6 +1030,15 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed access to call history. This setting overrides the default LetAppsAccessCallHistory policy setting for the specified Windows apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access call history*
+-   GP name: *LetAppsAccessCallHistory*
+-   GP element: *LetAppsAccessCallHistory_ForceAllowTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -968,6 +1082,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are denied access to call history. This setting overrides the default LetAppsAccessCallHistory policy setting for the specified Windows apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access call history*
+-   GP name: *LetAppsAccessCallHistory*
+-   GP element: *LetAppsAccessCallHistory_ForceDenyTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1011,6 +1134,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the call history privacy setting for the listed Windows apps. This setting overrides the default LetAppsAccessCallHistory policy setting for the specified Windows apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access call history*
+-   GP name: *LetAppsAccessCallHistory*
+-   GP element: *LetAppsAccessCallHistory_UserInControlOfTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1057,6 +1189,15 @@ Added in Windows 10, version 1607. Specifies whether Windows apps can access th
 Most restricted value is 2.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access the camera*
+-   GP name: *LetAppsAccessCamera*
+-   GP element: *LetAppsAccessCamera_Enum*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1108,6 +1249,15 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access the camera*
+-   GP name: *LetAppsAccessCamera*
+-   GP element: *LetAppsAccessCamera_ForceAllowTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1151,6 +1301,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access the camera*
+-   GP name: *LetAppsAccessCamera*
+-   GP element: *LetAppsAccessCamera_ForceDenyTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1194,6 +1353,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the camera privacy setting for the listed apps. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access the camera*
+-   GP name: *LetAppsAccessCamera*
+-   GP element: *LetAppsAccessCamera_UserInControlOfTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1240,6 +1408,15 @@ Added in Windows 10, version 1607. Specifies whether Windows apps can access co
 Most restricted value is 2.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access contacts*
+-   GP name: *LetAppsAccessContacts*
+-   GP element: *LetAppsAccessContacts_Enum*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1291,6 +1468,15 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access contacts*
+-   GP name: *LetAppsAccessContacts*
+-   GP element: *LetAppsAccessContacts_ForceAllowTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1334,6 +1520,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access contacts*
+-   GP name: *LetAppsAccessContacts*
+-   GP element: *LetAppsAccessContacts_ForceDenyTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1377,6 +1572,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the contacts privacy setting for the listed apps. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access contacts*
+-   GP name: *LetAppsAccessContacts*
+-   GP element: *LetAppsAccessContacts_UserInControlOfTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1423,6 +1627,15 @@ Added in Windows 10, version 1607. Specifies whether Windows apps can access em
 Most restricted value is 2.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access email*
+-   GP name: *LetAppsAccessEmail*
+-   GP element: *LetAppsAccessEmail_Enum*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1474,6 +1687,15 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access email*
+-   GP name: *LetAppsAccessEmail*
+-   GP element: *LetAppsAccessEmail_ForceAllowTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1517,6 +1739,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access email*
+-   GP name: *LetAppsAccessEmail*
+-   GP element: *LetAppsAccessEmail_ForceDenyTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1560,6 +1791,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the email privacy setting for the listed apps. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access email*
+-   GP name: *LetAppsAccessEmail*
+-   GP element: *LetAppsAccessEmail_UserInControlOfTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1606,6 +1846,15 @@ Added in Windows 10, version 1607. Specifies whether Windows apps can access lo
 Most restricted value is 2.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access location*
+-   GP name: *LetAppsAccessLocation*
+-   GP element: *LetAppsAccessLocation_Enum*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1657,6 +1906,15 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access location*
+-   GP name: *LetAppsAccessLocation*
+-   GP element: *LetAppsAccessLocation_ForceAllowTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1700,6 +1958,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access location*
+-   GP name: *LetAppsAccessLocation*
+-   GP element: *LetAppsAccessLocation_ForceDenyTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1743,6 +2010,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the location privacy setting for the listed apps. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access location*
+-   GP name: *LetAppsAccessLocation*
+-   GP element: *LetAppsAccessLocation_UserInControlOfTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1789,6 +2065,15 @@ Added in Windows 10, version 1607. Specifies whether Windows apps can read or s
 Most restricted value is 2.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access messaging*
+-   GP name: *LetAppsAccessMessaging*
+-   GP element: *LetAppsAccessMessaging_Enum*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1840,6 +2125,15 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access messaging*
+-   GP name: *LetAppsAccessMessaging*
+-   GP element: *LetAppsAccessMessaging_ForceAllowTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1883,6 +2177,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are not allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access messaging*
+-   GP name: *LetAppsAccessMessaging*
+-   GP element: *LetAppsAccessMessaging_ForceDenyTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1926,6 +2229,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the messaging privacy setting for the listed apps. This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access messaging*
+-   GP name: *LetAppsAccessMessaging*
+-   GP element: *LetAppsAccessMessaging_UserInControlOfTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1972,6 +2284,15 @@ Added in Windows 10, version 1607. Specifies whether Windows apps can access th
 Most restricted value is 2.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access the microphone*
+-   GP name: *LetAppsAccessMicrophone*
+-   GP element: *LetAppsAccessMicrophone_Enum*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -2023,6 +2344,15 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access the microphone*
+-   GP name: *LetAppsAccessMicrophone*
+-   GP element: *LetAppsAccessMicrophone_ForceAllowTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2066,6 +2396,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access the microphone*
+-   GP name: *LetAppsAccessMicrophone*
+-   GP element: *LetAppsAccessMicrophone_ForceDenyTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2109,6 +2448,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the microphone privacy setting for the listed apps. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access the microphone*
+-   GP name: *LetAppsAccessMicrophone*
+-   GP element: *LetAppsAccessMicrophone_UserInControlOfTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2155,6 +2503,15 @@ Added in Windows 10, version 1607. Specifies whether Windows apps can access mo
 Most restricted value is 2.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access motion*
+-   GP name: *LetAppsAccessMotion*
+-   GP element: *LetAppsAccessMotion_Enum*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -2206,6 +2563,15 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access motion*
+-   GP name: *LetAppsAccessMotion*
+-   GP element: *LetAppsAccessMotion_ForceAllowTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2249,6 +2615,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access motion*
+-   GP name: *LetAppsAccessMotion*
+-   GP element: *LetAppsAccessMotion_ForceDenyTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2292,6 +2667,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the motion privacy setting for the listed apps. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access motion*
+-   GP name: *LetAppsAccessMotion*
+-   GP element: *LetAppsAccessMotion_UserInControlOfTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2338,6 +2722,15 @@ Added in Windows 10, version 1607. Specifies whether Windows apps can access no
 Most restricted value is 2.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access notifications*
+-   GP name: *LetAppsAccessNotifications*
+-   GP element: *LetAppsAccessNotifications_Enum*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -2389,6 +2782,15 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access notifications*
+-   GP name: *LetAppsAccessNotifications*
+-   GP element: *LetAppsAccessNotifications_ForceAllowTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2432,6 +2834,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access notifications*
+-   GP name: *LetAppsAccessNotifications*
+-   GP element: *LetAppsAccessNotifications_ForceDenyTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2475,6 +2886,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the notifications privacy setting for the listed apps. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access notifications*
+-   GP name: *LetAppsAccessNotifications*
+-   GP element: *LetAppsAccessNotifications_UserInControlOfTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2521,6 +2941,15 @@ Added in Windows 10, version 1607. Specifies whether Windows apps can make phon
 Most restricted value is 2.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps make phone calls*
+-   GP name: *LetAppsAccessPhone*
+-   GP element: *LetAppsAccessPhone_Enum*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -2572,6 +3001,15 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps make phone calls*
+-   GP name: *LetAppsAccessPhone*
+-   GP element: *LetAppsAccessPhone_ForceAllowTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2615,6 +3053,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are not allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps make phone calls*
+-   GP name: *LetAppsAccessPhone*
+-   GP element: *LetAppsAccessPhone_ForceDenyTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2658,6 +3105,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the phone call privacy setting for the listed apps. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps make phone calls*
+-   GP name: *LetAppsAccessPhone*
+-   GP element: *LetAppsAccessPhone_UserInControlOfTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2704,6 +3160,15 @@ Added in Windows 10, version 1607. Specifies whether Windows apps have access t
 Most restricted value is 2.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps control radios*
+-   GP name: *LetAppsAccessRadios*
+-   GP element: *LetAppsAccessRadios_Enum*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -2755,6 +3220,15 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps control radios*
+-   GP name: *LetAppsAccessRadios*
+-   GP element: *LetAppsAccessRadios_ForceAllowTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2798,6 +3272,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps control radios*
+-   GP name: *LetAppsAccessRadios*
+-   GP element: *LetAppsAccessRadios_ForceDenyTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2841,6 +3324,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the radios privacy setting for the listed apps. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps control radios*
+-   GP name: *LetAppsAccessRadios*
+-   GP element: *LetAppsAccessRadios_UserInControlOfTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2884,6 +3376,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1703. Specifies whether Windows apps can access tasks.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access Tasks*
+-   GP name: *LetAppsAccessTasks*
+-   GP element: *LetAppsAccessTasks_Enum*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2927,6 +3428,15 @@ Added in Windows 10, version 1703. Specifies whether Windows apps can access tas
 Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access Tasks*
+-   GP name: *LetAppsAccessTasks*
+-   GP element: *LetAppsAccessTasks_ForceAllowTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2970,6 +3480,15 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family N
 Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access Tasks*
+-   GP name: *LetAppsAccessTasks*
+-   GP element: *LetAppsAccessTasks_ForceDenyTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3013,6 +3532,15 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family N
 Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the tasks privacy setting for the listed apps. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access Tasks*
+-   GP name: *LetAppsAccessTasks*
+-   GP element: *LetAppsAccessTasks_UserInControlOfTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3059,6 +3587,15 @@ Added in Windows 10, version 1607. Specifies whether Windows apps can access tr
 Most restricted value is 2.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access trusted devices*
+-   GP name: *LetAppsAccessTrustedDevices*
+-   GP element: *LetAppsAccessTrustedDevices_Enum*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -3110,6 +3647,15 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access trusted devices*
+-   GP name: *LetAppsAccessTrustedDevices*
+-   GP element: *LetAppsAccessTrustedDevices_ForceAllowTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3153,6 +3699,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access trusted devices*
+-   GP name: *LetAppsAccessTrustedDevices*
+-   GP element: *LetAppsAccessTrustedDevices_ForceDenyTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3196,6 +3751,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'trusted devices' privacy setting for the listed apps. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access trusted devices*
+-   GP name: *LetAppsAccessTrustedDevices*
+-   GP element: *LetAppsAccessTrustedDevices_UserInControlOfTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3242,6 +3806,15 @@ Added in Windows 10, version 1703. Force allow, force deny or give user control
 Most restricted value is 2.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access diagnostic information about other apps*
+-   GP name: *LetAppsGetDiagnosticInfo*
+-   GP element: *LetAppsGetDiagnosticInfo_Enum*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -3293,6 +3866,15 @@ The following list shows the supported values:
 Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to diagnostic information about other running apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access diagnostic information about other apps*
+-   GP name: *LetAppsGetDiagnosticInfo*
+-   GP element: *LetAppsGetDiagnosticInfo_ForceAllowTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3336,6 +3918,15 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to diagnostic information about other running apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access diagnostic information about other apps*
+-   GP name: *LetAppsGetDiagnosticInfo*
+-   GP element: *LetAppsGetDiagnosticInfo_ForceDenyTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3379,6 +3970,15 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'get diagnostic info' privacy setting for the listed apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps access diagnostic information about other apps*
+-   GP name: *LetAppsGetDiagnosticInfo*
+-   GP element: *LetAppsGetDiagnosticInfo_UserInControlOfTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3427,6 +4027,15 @@ Most restricted value is 2.
 > Be careful when determining which apps should have their background activity disabled. Communication apps normally update tiles and notifications through background processes. Turning off background activity for these types of apps could cause text message, email, and voicemail notifications to not function. This could also cause background email syncing to not function properly.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps run in the background*
+-   GP name: *LetAppsRunInBackground*
+-   GP element: *LetAppsRunInBackground_Enum*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -3478,6 +4087,15 @@ The following list shows the supported values:
 Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are able to run in the background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps run in the background*
+-   GP name: *LetAppsRunInBackground*
+-   GP element: *LetAppsRunInBackground_ForceAllowTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3521,6 +4139,15 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied the ability to run in the background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps run in the background*
+-   GP name: *LetAppsRunInBackground*
+-   GP element: *LetAppsRunInBackground_ForceDenyTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3564,6 +4191,15 @@ Added in Windows 10, version 1703. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the background apps privacy setting for the listed apps. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps run in the background*
+-   GP name: *LetAppsRunInBackground*
+-   GP element: *LetAppsRunInBackground_UserInControlOfTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3610,6 +4246,15 @@ Added in Windows 10, version 1607. Specifies whether Windows apps can sync with
 Most restricted value is 2.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps communicate with unpaired devices*
+-   GP name: *LetAppsSyncWithDevices*
+-   GP element: *LetAppsSyncWithDevices_Enum*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -3661,6 +4306,15 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to sync with devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps communicate with unpaired devices*
+-   GP name: *LetAppsSyncWithDevices*
+-   GP element: *LetAppsSyncWithDevices_ForceAllowTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3704,6 +4358,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to sync with devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps communicate with unpaired devices*
+-   GP name: *LetAppsSyncWithDevices*
+-   GP element: *LetAppsSyncWithDevices_ForceDenyTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3747,6 +4410,15 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'sync with devices' privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Let Windows apps communicate with unpaired devices*
+-   GP name: *LetAppsSyncWithDevices*
+-   GP element: *LetAppsSyncWithDevices_UserInControlOfTheseApps_List*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *AppPrivacy.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3790,6 +4462,14 @@ Added in Windows 10, version 1607. List of semi-colon delimited Package Family 
 Added in Windows 10, version 1709. Allows It Admins to enable publishing of user activities to the activity feed.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow publishing of User Activities*
+-   GP name: *PublishUserActivities*
+-   GP path: *System/OS Policies*
+-   GP ADMX file name: *OSPolicy.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -3805,6 +4485,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 
@@ -3812,14 +4493,6 @@ Footnote:
 ## <a href="" id="hololenspolicies"></a>Privacy policies supported by Windows Holographic for Business  
 
 -   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)  
--   [Privacy/LetAppsGetDiagnosticInfo](#privacy-letappsgetdiagnosticinfo)  
--   [Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps](#privacy-letappsgetdiagnosticinfo-forceallowtheseapps)  
--   [Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps](#privacy-letappsgetdiagnosticinfo-forcedenytheseapps)  
--   [Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps](#privacy-letappsgetdiagnosticinfo-userincontroloftheseapps)  
--   [Privacy/LetAppsRunInBackground](#privacy-letappsruninbackground)  
--   [Privacy/LetAppsRunInBackground_ForceAllowTheseApps](#privacy-letappsruninbackground-forceallowtheseapps)  
--   [Privacy/LetAppsRunInBackground_ForceDenyTheseApps](#privacy-letappsruninbackground-forcedenytheseapps)  
--   [Privacy/LetAppsRunInBackground_UserInControlOfTheseApps](#privacy-letappsruninbackground-userincontroloftheseapps)  
 <!--EndHoloLens-->
 
 <!--StartIoTCore-->

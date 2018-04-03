@@ -146,13 +146,13 @@ After the catalog file is signed, add the signing certificate to a WDAC policy, 
 
 1.  If you have not already verified the catalog file digital signature, right-click the catalog file, and then click **Properties**. On the **Digital Signatures** tab, verify that your signing certificate exists with the algorithm you expect.
 
-2.  If you already have an XML policy file that you want to add the signing certificate to, skip to the next step. Otherwise, use [New-CIPolicy](https://technet.microsoft.com/library/mt634473.aspx) to create a WDAC policy that you will later merge into another policy (not deploy as-is). This example creates a policy called **CatalogSignatureOnly.xml** in the location **C:\\PolicyFolder**:
+2.  If you already have an XML policy file that you want to add the signing certificate to, skip to the next step. Otherwise, use [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy?view=win10-ps) to create a WDAC policy that you will later merge into another policy (not deploy as-is). This example creates a policy called **CatalogSignatureOnly.xml** in the location **C:\\PolicyFolder**:
 
     ` New-CIPolicy -Level PcaCertificate -FilePath C:\PolicyFolder\CatalogSignatureOnly.xml –UserPEs`
 
     > **Note**&nbsp;&nbsp;Include the **-UserPEs** parameter to ensure that the policy includes user mode code integrity.
 
-3.  Use [Add-SignerRule](https://technet.microsoft.com/library/mt634479.aspx) to add the signing certificate to the WDAC policy, filling in the correct path and filenames for `<policypath>` and `<certpath>`:
+3.  Use [Add-SignerRule](https://docs.microsoft.com/powershell/module/configci/add-signerrule?view=win10-ps) to add the signing certificate to the WDAC policy, filling in the correct path and filenames for `<policypath>` and `<certpath>`:
 
     ` Add-SignerRule -FilePath <policypath> -CertificatePath <certpath> -User `
 

@@ -147,6 +147,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
     <Deny  ID="ID_DENY_WSLHOST"           FriendlyName="wslhost.exe"                 FileName="wslhost.exe" MinimumFileVersion = "65535.65535.65535.65535" />   
     <Deny  ID="ID_DENY_INFINSTALL"        FriendlyName="infdefaultinstall.exe"       FileName="infdefaultinstall.exe" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_LXRUN"             FriendlyName="lxrun.exe"                   FileName="lxrun.exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_PWRSHLCUSTOMHOST"  FriendlyName="powershellcustomhost.exe"    FileName="powershellcustomhost.exe" MinimumFileVersion = "65535.65535.65535.65535" />
 
     <Deny ID="ID_DENY_D_1" FriendlyName="Powershell 1" Hash="02BE82F63EE962BCD4B8303E60F806F6613759C6" />
     <Deny ID="ID_DENY_D_2" FriendlyName="Powershell 2" Hash="13765D9A16CC46B2113766822627F026A68431DF" />
@@ -437,7 +438,18 @@ Microsoft recommends that you block the following Microsoft-signed applications 
     <!--rs3 x86fre-->
     <Deny ID="ID_DENY_D_273" FriendlyName="PubPrn 273" Hash="47CBE201ED224BF3F5C322F7A49EF64469AF2E1A" />
     <Deny ID="ID_DENY_D_274" FriendlyName="PubPrn 274" Hash="24855B9CC420719D5AB93F4F1589CE09E4063E4FC98681BD91A1D18A3C8ACB43" />
-
+    <!--rs3 sxs amd64-->
+    <Deny ID="ID_DENY_D_275" FriendlyName="PubPrn 275" Hash="663D8E25BAE20510A882F6692BE2620FBABFB94E" />
+    <Deny ID="ID_DENY_D_276" FriendlyName="PubPrn 276" Hash="649A9E5A4867A28C7D0934793F33B545F9441EA23872715C84826D80CC8EC576" />
+    <!--rs3 sxs arm64-->
+    <Deny ID="ID_DENY_D_277" FriendlyName="PubPrn 277" Hash="226ABB2FBAEFC5A7E2A819D9D708F826C00FD215" />
+    <Deny ID="ID_DENY_D_278" FriendlyName="PubPrn 278" Hash="AC6B35C904D388FD12C07C2F6A1A07F337D31895713BF01DCCE7A7F187D7F4D9" />
+    <!--rs3 sxs woa-->
+    <Deny ID="ID_DENY_D_279" FriendlyName="PubPrn 279" Hash="071D7849941E43144839988971255FE34690A747" />
+    <Deny ID="ID_DENY_D_280" FriendlyName="PubPrn 280" Hash="5AF75895BDC11A6B68C816A8677D7CF9692BF25A95C4378A43FBDE740B18EEB1" />
+    <!--rs3 sxs x86-->
+    <Deny ID="ID_DENY_D_281" FriendlyName="PubPrn 281" Hash="9FBFF074C201BFEBE37710CB453EFF9A14AE3BFF" />
+    <Deny ID="ID_DENY_D_282" FriendlyName="PubPrn 282" Hash="A0C71A925850D2D481C7E520F5D5A83305EC169EEA4C5B8DC20C8D8AFCD8A512" />
   </FileRules>
   <!--Signers-->
   <Signers />
@@ -480,6 +492,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
           <FileRuleRef RuleID="ID_DENY_WSLHOST"/>
           <FileRuleRef RuleID="ID_DENY_INFINSTALL"/>
           <FileRuleRef RuleID="ID_DENY_LXRUN"/>
+          <FileRuleRef RuleID="ID_DENY_PWRSHLCUSTOMHOST"/>
           <FileRuleRef RuleID="ID_DENY_D_1" />
           <FileRuleRef RuleID="ID_DENY_D_2" />
           <FileRuleRef RuleID="ID_DENY_D_3" />
@@ -754,6 +767,14 @@ Microsoft recommends that you block the following Microsoft-signed applications 
           <FileRuleRef RuleID="ID_DENY_D_272"/>
           <FileRuleRef RuleID="ID_DENY_D_273"/>
           <FileRuleRef RuleID="ID_DENY_D_274"/>
+          <FileRuleRef RuleID="ID_DENY_D_275"/>
+          <FileRuleRef RuleID="ID_DENY_D_276"/>
+          <FileRuleRef RuleID="ID_DENY_D_277"/>
+          <FileRuleRef RuleID="ID_DENY_D_278"/>
+          <FileRuleRef RuleID="ID_DENY_D_279"/>
+          <FileRuleRef RuleID="ID_DENY_D_280"/>
+          <FileRuleRef RuleID="ID_DENY_D_281"/>
+          <FileRuleRef RuleID="ID_DENY_D_282"/>
         </FileRulesRef>
       </ProductSigners>
     </SigningScenario>
@@ -776,7 +797,7 @@ To create a WDAC policy, copy each of the following commands into an elevated Wi
 
     ` $CIPolicyBin=$CIPolicyPath+"DeviceGuardPolicy.bin"`
 
-2.  Use [New-CIPolicy](https://technet.microsoft.com/library/mt634473.aspx) to create a new WDAC policy by scanning the system for installed applications:
+2.  Use [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy?view=win10-ps) to create a new WDAC policy by scanning the system for installed applications:
 
     ` New-CIPolicy -Level PcaCertificate -FilePath $InitialCIPolicy –UserPEs 3> CIPolicyLog.txt `
 
@@ -790,7 +811,7 @@ To create a WDAC policy, copy each of the following commands into an elevated Wi
     
     > - The preceding example includes `3> CIPolicylog.txt`, which redirects warning messages to a text file, **CIPolicylog.txt**.
 
-3.  Use [ConvertFrom-CIPolicy](https://technet.microsoft.com/library/mt733073.aspx) to convert the WDAC policy to a binary format:
+3.  Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy?view=win10-ps) to convert the WDAC policy to a binary format:
 
     ` ConvertFrom-CIPolicy $InitialCIPolicy $CIPolicyBin`
 
@@ -866,7 +887,7 @@ Use the following procedure after you have been running a computer with a WDAC p
 
     ` $CIAuditPolicy=$CIPolicyPath+"DeviceGuardAuditPolicy.xml"`
 
-3.  Use [New-CIPolicy](https://technet.microsoft.com/library/mt634473.aspx) to generate a new WDAC policy from logged audit events. This example uses a file rule level of **Hash** and includes `3> CIPolicylog.txt`, which redirects warning messages to a text file, **CIPolicylog.txt**.
+3.  Use [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy?view=win10-ps) to generate a new WDAC policy from logged audit events. This example uses a file rule level of **Hash** and includes `3> CIPolicylog.txt`, which redirects warning messages to a text file, **CIPolicylog.txt**.
 
     ` New-CIPolicy -Audit -Level Hash -FilePath $CIAuditPolicy –UserPEs 3> CIPolicylog.txt`
 
@@ -934,11 +955,11 @@ To merge two WDAC policies, complete the following steps in an elevated Windows 
   > [!Note] 
   > The variables in this section specifically expect to find an initial policy on your desktop called **InitialScan.xml** and an audit WDAC policy called **DeviceGuardAuditPolicy.xml**. If you want to merge other WDAC policies, update the variables accordingly.
 
-2.  Use [Merge-CIPolicy](https://technet.microsoft.com/library/mt634485.aspx) to merge two policies and create a new WDAC policy:
+2.  Use [Merge-CIPolicy](https://docs.microsoft.com/powershell/module/configci/merge-cipolicy?view=win10-ps) to merge two policies and create a new WDAC policy:
 
     ` Merge-CIPolicy -PolicyPaths $InitialCIPolicy,$AuditCIPolicy -OutputFilePath $MergedCIPolicy`
 
-3.  Use [ConvertFrom-CIPolicy](https://technet.microsoft.com/library/mt733073.aspx) to convert the merged WDAC policy to binary format:
+3.  Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy?view=win10-ps) to convert the merged WDAC policy to binary format:
 
     ` ConvertFrom-CIPolicy $MergedCIPolicy $CIPolicyBin `
 
@@ -966,7 +987,7 @@ Every WDAC policy is created with audit mode enabled. After you have successfull
 
 2. Ensure that rule options 9 (“Advanced Boot Options Menu”) and 10 (“Boot Audit on Failure”) are set the way that you intend for this policy. We strongly recommend that you enable these rule options before you run any enforced policy for the first time. Enabling these options provides administrators with a pre-boot command prompt, and allows Windows to start even if the WDAC policy blocks a kernel-mode driver from running. When ready for enterprise deployment, you can remove these options.
 
-    To ensure that these options are enabled in a policy, use [Set-RuleOption](https://technet.microsoft.com/library/mt634483.aspx) as shown in the following commands. You can run these commands even if you're not sure whether options 9 and 10 are already enabled—if so, the commands have no effect.
+    To ensure that these options are enabled in a policy, use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption?view=win10-ps) as shown in the following commands. You can run these commands even if you're not sure whether options 9 and 10 are already enabled—if so, the commands have no effect.
     
     ` Set-RuleOption -FilePath $InitialCIPolicy -Option 9`
     
@@ -976,14 +997,14 @@ Every WDAC policy is created with audit mode enabled. After you have successfull
 
     ` copy $InitialCIPolicy $EnforcedCIPolicy`
 
-4.  Use [Set-RuleOption](https://technet.microsoft.com/library/mt634483.aspx) to delete the audit mode rule option:
+4.  Use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption?view=win10-ps) to delete the audit mode rule option:
 
     ` Set-RuleOption -FilePath $EnforcedCIPolicy -Option 3 -Delete`
 
   > [!Note] 
   > To enforce a WDAC policy, you delete option 3, the **Audit Mode Enabled** option. There is no “enforced” option that can be placed in a WDAC policy.
 
-5.  Use [ConvertFrom-CIPolicy](https://technet.microsoft.com/library/mt733073.aspx) to convert the new WDAC policy to binary format:
+5.  Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy?view=win10-ps) to convert the new WDAC policy to binary format:
 
     ` ConvertFrom-CIPolicy $EnforcedCIPolicy $CIPolicyBin`
 
@@ -1031,7 +1052,7 @@ If you do not have a code signing certificate, see the [Optional: Create a code 
 
     ` cd $env:USERPROFILE\Desktop `
 
-5.  Use [Add-SignerRule](https://technet.microsoft.com/library/mt634479.aspx) to add an update signer certificate to the WDAC policy:
+5.  Use [Add-SignerRule](https://docs.microsoft.com/powershell/module/configci/add-signerrule?view=win10-ps) to add an update signer certificate to the WDAC policy:
 
     ` Add-SignerRule -FilePath $InitialCIPolicy -CertificatePath <Path to exported .cer certificate> -Kernel -User –Update`
 
@@ -1039,11 +1060,11 @@ If you do not have a code signing certificate, see the [Optional: Create a code 
    > *&lt;Path to exported .cer certificate&gt;* should be  the full path to the certificate that you exported in   step 3.
     Also, adding update signers is crucial to being able to modify or disable this policy in the future. For more information about how to disable signed WDAC policies, see the [Disable signed Windows Defender Application Control policies within Windows](#disable-signed-windows-defender-application-control-policies-within-windows) section.
 
-6.  Use [Set-RuleOption](https://technet.microsoft.com/library/mt634483.aspx) to remove the unsigned policy rule option:
+6.  Use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption?view=win10-ps) to remove the unsigned policy rule option:
 
     ` Set-RuleOption -FilePath $InitialCIPolicy -Option 6 -Delete`
 
-7.  Use [ConvertFrom-CIPolicy](https://technet.microsoft.com/library/mt733073.aspx) to convert the policy to binary format:
+7.  Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy?view=win10-ps) to convert the policy to binary format:
 
     ` ConvertFrom-CIPolicy $InitialCIPolicy $CIPolicyBin`
 

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - Start
@@ -1025,6 +1025,14 @@ Added in Windows 10, version 1709. Enabling this policy removes the people icon
 Value type is integer.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Remove the People Bar from the taskbar*
+-   GP name: *HidePeopleBar*
+-   GP path: *Start Menu and Taskbar*
+-   GP ADMX file name: *StartMenu.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1198,6 +1206,14 @@ To validate on Desktop, do the following:
 Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding recently added apps.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Remove "Recently added" list from Start Menu*
+-   GP name: *HideRecentlyAddedApps*
+-   GP path: *Start Menu and Taskbar*
+-   GP ADMX file name: *StartMenu.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -1731,6 +1747,14 @@ Allows you to override the default Start layout and prevents the user from chang
 For further details on how to customize the Start layout, please see [Customize and export Start layout](https://docs.microsoft.com/en-us/windows/configuration/customize-and-export-start-layout) and [Configure Windows 10 taskbar](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-10-taskbar).
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Start Layout*
+-   GP name: *LockedStartLayout*
+-   GP path: *Start Menu and Taskbar*
+-   GP ADMX file name: *StartMenu.admx*
+
+<!--/ADMXMapped-->
 <!--/Policy-->
 <hr/>
 
@@ -1739,6 +1763,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

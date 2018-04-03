@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - Licensing
@@ -69,6 +69,14 @@ ms.date: 01/30/2018
 Added in Windows 10, version 1607. Enables or Disable Windows license reactivation on managed devices.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Control Device Reactivation for Retail devices*
+-   GP name: *AllowWindowsEntitlementReactivation*
+-   GP path: *Windows Components/Software Protection Platform*
+-   GP ADMX file name: *AVSValidationGP.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -119,6 +127,14 @@ The following list shows the supported values:
 Added in Windows 10, version 1607. Enabling this setting prevents this computer from sending data to Microsoft regarding its activation state.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off KMS Client Online AVS Validation*
+-   GP name: *NoAcquireGT*
+-   GP path: *Windows Components/Software Protection Platform*
+-   GP ADMX file name: *AVSValidationGP.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -134,6 +150,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

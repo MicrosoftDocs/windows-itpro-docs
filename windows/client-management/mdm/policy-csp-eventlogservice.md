@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 04/02/2018
 ---
 
 # Policy CSP - EventLogService
@@ -78,7 +78,7 @@ If you enable this policy setting and a log file reaches its maximum size, new e
 
 If you disable or do not configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
 
-Note: Old events may or may not be retained according to the "Backup log automatically when full" policy setting.
+Note: Old events may or may not be retained according to the "Backup log automatically when full" policy setting.
 
 <!--/Description-->
 > [!TIP]
@@ -88,14 +88,14 @@ Note: Old events may or may not be retained according to the "Backup log automat
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Control Event Log behavior when the log file reaches its maximum size*
 -   GP name: *Channel_Log_Retention_1*
 -   GP path: *Windows Components/Event Log Service/Application*
 -   GP ADMX file name: *eventlog.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -150,14 +150,14 @@ If you disable or do not configure this policy setting, the maximum size of the 
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify the maximum log file size (KB)*
 -   GP name: *Channel_LogMaxSize_1*
 -   GP path: *Windows Components/Event Log Service/Application*
 -   GP ADMX file name: *eventlog.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -200,7 +200,7 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies the maximum size of the log file in kilobytes.
 
-If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes) in kilobyte increments.
+If you enable this policy setting, you can configure the maximum log file size to be between 20 megabytes (20480 kilobytes) and 2 terabytes (2147483647 kilobytes) in kilobyte increments.
 
 If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.
 
@@ -212,14 +212,14 @@ If you disable or do not configure this policy setting, the maximum size of the 
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify the maximum log file size (KB)*
 -   GP name: *Channel_LogMaxSize_2*
 -   GP path: *Windows Components/Event Log Service/Security*
 -   GP ADMX file name: *eventlog.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -274,14 +274,14 @@ If you disable or do not configure this policy setting, the maximum size of the 
 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMX-->
+<!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify the maximum log file size (KB)*
 -   GP name: *Channel_LogMaxSize_4*
 -   GP path: *Windows Components/Event Log Service/System*
 -   GP ADMX file name: *eventlog.admx*
 
-<!--/ADMX-->
+<!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
 
@@ -290,6 +290,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 
