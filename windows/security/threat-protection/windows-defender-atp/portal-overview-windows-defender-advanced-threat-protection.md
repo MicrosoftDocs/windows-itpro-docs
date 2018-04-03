@@ -97,8 +97,16 @@ Icon | Description
 ![Memory allocation icon](images\atp-memory-allocation-icon.png)| Memory allocation
 ![Process injection icon](images\atp-process-injection.png)| Process injection
 ![Powershell command run icon](images\atp-powershell-command-run-icon.png)| Powershell command run
-![Community center icon](images\atp-community-center.png) | Community center icon
-![Notifications icon](images\atp-notifications.png) | Notifications icon
+![Community center icon](images\atp-community-center.png) | Community center 
+![Notifications icon](images\atp-notifications.png) | Notifications 
+![Remediated icon](images\remediated.png) | Automated investigation - remediated 
+![Partially investigated icon](images\partially_remediated.png) | Automated investigation - investigated 
+![Partially remediated icon](images\partially_investigated.png) | Automated investigation - partially remediated
+![Pending icon](images\pending.png) | Automated investigation - pending
+![Running icon](images\running.png) | Automated investigation - running
+![Termindated by system](images\terminated_by_system.png) | Automated investigation - terminated by system
+![No threats found](images\no_threats_found.png) | Automated investigation - no threats found
+
 
 
 ## Related topics
