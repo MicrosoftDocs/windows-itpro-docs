@@ -66,8 +66,8 @@ As part of the process of creating a machine group, you'll:
 
 5.	Assign the user groups that can access the machine group you created. 
 
->[!NOTE]
->You can only grant access to Azure AD user groups with assigned RBAC roles. 
+    >[!NOTE]
+    >You can only grant access to Azure AD user groups with assigned RBAC roles. 
 
 6.	Click **Close**.
 
