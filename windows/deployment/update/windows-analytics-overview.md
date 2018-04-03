@@ -14,6 +14,8 @@ author: jaimeo
 
 Windows Analytics is a set of solutions for Microsoft Operations Management Suite (OMS) that provide you with extensive data about the state of devices in your deployment. There are currently three solutions which you can use singly or in any combination:
 
+This is test change.
+
 ## Device Health
 
 [Device Health](device-health-get-started.md) provides the following:
