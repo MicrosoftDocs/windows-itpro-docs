@@ -1,5 +1,5 @@
 ---
-title: Automated investigations in Windows Defender Advanced Threat Protection
+title: Use Automated investigations to investigate and remediate threats
 description: View the list of automated investigations, its status, detection source and other details.
 keywords: automated, investigation, detection, source, threat types, id, tags, machines, duration, filter export
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 04/16/2018
 ---
 
-# Automated investigations in Windows Defender ATP
+# Use Automated investigations to investigate and remediate threats
 
 **Applies to:**
 
@@ -155,9 +155,12 @@ You'll also have access to the following sections that help you see details of t
 - Entities
 - Log
 - Pending actions
+
   >[!NOTE]
   >The Pending actions tab is only displayed if there are actual pending actions.
+
 - Pending actions history
+
   >[!NOTE]
   >The Pending actions history tab is only displayed when an investigation is complete.
 
@@ -178,7 +181,7 @@ Clicking on an alert title brings you the alert page.
 ### Machines
 Shows details the machine name, IP address, group, users, operating system, remediation level, investigation count, and when it was last investigated.
 
-Machines that show the same threat can be added to an ongoing investigation and will be displayed in this tab. If the same threat is seen on more than nine machines, you have the option to expand the view from the **Pending actions** view.
+Machines that show the same threat can be added to an ongoing investigation and will be displayed in this tab. If 10 or more machines are found during this expansion process from the same entity, then that expansion action will require an approval and will be seen in the **Pending actions** view.
 
 Selecting a machine using the checkbox brings up the machine details pane where you can see more information such as machine details and logged-on users.
 
