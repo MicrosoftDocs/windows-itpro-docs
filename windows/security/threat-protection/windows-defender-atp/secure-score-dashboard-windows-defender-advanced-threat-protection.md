@@ -52,7 +52,7 @@ The Office 365 Secure Score looks at your settings and activities and compares t
 
 In the example image, the total points for the Windows security controls and Office 365 add up to 437 points. 
 
-You can set the baselines for calculating the score of Windows Defender security controls on the Secure Score dashboard through the **Settings**. For more information, see [Enable Secure Score security controls](enable-security-analytics-windows-defender-advanced-threat-protection.md).
+You can set the baselines for calculating the score of Windows Defender security controls on the Secure Score dashboard through the **Settings**. For more information, see [Enable Secure Score security controls](enable-secure-score-windows-defender-advanced-threat-protection.md).
 
 ## Windows Defender security controls
 The security controls tile shows a bar graph where each bar represents a Windows Defender security control. Each bar reflects the number of machines that are well configured and those that require **any kind of attention** for each security control. Hovering on top of the individual bars will show exact numbers for each category. Machines that are green are well configured, while machines that are orange require some level of attention. 
