@@ -38,9 +38,20 @@ The implementation of conditional access in Windows Defender ATP is based on Mic
 The compliance policy is used with conditional access to allow only devices that fulfill one or more device compliance policy rules to access applications. 
 
 ## Understand the conditional access flow
-When a device is found to be at high risk, the signal is communicated to Intune. In Intune, a device compliance policy is used in conjunction with Azure AD conditional access to block access to applications. In parallel,  an automated investigation and remediation process is launched.
+When a device is found to be at high risk, the signal is communicated to Intune. 
 
-A device returns to a compliant state when there is lower risk seen on it. A user can still use the device while the automated investigation and remediation is taking place, but access to enterprise data is blocked until the threat is fully remediated. When the risk is removed either through manual or automated remediation, the device returns to a compliant state and access to applications is granted.
+In Intune, a device compliance policy is used in conjunction with Azure AD conditional access to block access to applications. In parallel,  an automated investigation and remediation process is launched.
+
+ A user can still use the device while the automated investigation and remediation is taking place, but access to enterprise data is blocked until the threat is fully remediated. 
+
+
+To resolve the high risk found on a device, you'll need to return the device to a compliant state. A device returns to a compliant state when there is no risk seen on it. 
+
+There are two ways for a risk to be removed: through manual remediation or automated remediation. 
+
+Manual remediation requires a secops admin to investigate an alert and address the risk seen on the device. The automated remediation is configured through configuration settings provided in the following section, [Configure conditional access](#configure-conditional-access).
+
+When the risk is removed either through manual or automated remediation, the device returns to a compliant state and access to applications is granted.
 
 The following example sequence of events explains conditional access in action:
 
