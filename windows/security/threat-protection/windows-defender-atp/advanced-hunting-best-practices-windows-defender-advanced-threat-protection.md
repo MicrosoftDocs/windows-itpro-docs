@@ -39,7 +39,7 @@ The following best practices serve as a guideline of query performance best prac
 ## Query tips and pitfalls
 
 ### Unique Process IDs
-Process IDs are recycled in Windows and reused for new processes and therefore can’t serve as a unique identifier for a specific process.
+Process IDs are recycled in Windows and reused for new processes and therefore can't serve as a unique identifier for a specific process.
 To address this issue, Windows Defender ATP created the time process. To get a unique identifier for a process on a specific machine, use the process ID together with the process creation time.
 
 
