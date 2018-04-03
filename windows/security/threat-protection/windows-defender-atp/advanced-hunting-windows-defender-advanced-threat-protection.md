@@ -1,6 +1,6 @@
 ---
 title: Query data using Advanced hunting in Windows Defender ATP
-description: Learn about advanced hunting in Windows Defender ATP and how to query ATP data.
+description: Learn about Advanced hunting in Windows Defender ATP and how to query ATP data.
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -32,10 +32,10 @@ Advanced hunting allows you to proactively hunt for possible threats across your
 
 - **Powerful query language with IntelliSense** - Built on top of a query language that gives you the flexibility you need to take hunting to the next level.
 - **Query the stored telemetry** - The telemetry data is accessible in tables for you to query. For example, you can query process creation, network communication, and many other event types.
-- **Links to portal** - Certain query results, such as machine names and file names are actually direct links to the portal, consolidating the advanced hunting query experience and the existing portal investigation experience.
+- **Links to portal** - Certain query results, such as machine names and file names are actually direct links to the portal, consolidating the Advanced hunting query experience and the existing portal investigation experience.
 - **Query examples** - A welcome page provides examples designed to get you started and get you familiar with the tables and the query language.
 
-To get you started in querying your data, you can use the basic or advanced query examples that have some preloaded queries for you to understand the basic query syntax.
+To get you started in querying your data, you can use the basic or Advanced query examples that have some preloaded queries for you to understand the basic query syntax.
 
 ![Image of Advanced hunting window](images/atp-advanced-hunting.png)
 
@@ -45,7 +45,7 @@ A typical query starts with a table name followed by a series of operators separ
 
 In the following example, we start with the table name **ProcessCreationEvents** and add piped elements as needed.
 
-![Image of Windows Defender ATP advanced hunting query](images/advanced-hunting-query-example.png)
+![Image of Windows Defender ATP Advanced hunting query](images/advanced-hunting-query-example.png)
 
 First, we define a time filter to review only records from the previous seven days. 
 
@@ -74,9 +74,9 @@ To see a live example of these operators, run them as part of the **Get started*
 
 For more information on the query language and supported operators, see [Query Language](https://docs.loganalytics.io/docs/Language-Reference/).
 
-## Use exposed tables in advanced hunting
+## Use exposed tables in Advanced hunting
 
-The following tables are exposed as part of advanced hunting:
+The following tables are exposed as part of Advanced hunting:
 
 - **AlertEvents** - Stores alerts related information 
 - **MachineInfo** - Stores machines proprties
@@ -126,23 +126,23 @@ These steps guide you on modifying and overwriting an existing query.
 
 2. Select **Delete** and confirm that you want to delete the query.
 
-## Result set capabilities in advanced hunting
+## Result set capabilities in Advanced hunting
 
 The result set has several capabilities to provide you with effective investigation, including:
 
 - Columns that return entity-related objects, such as Machine name, Machine ID, File name, SHA1, User, IP, and URL, are linked to their entity pages in the Windows Defender ATP portal.
 - You can right-click on a cell in the result set and add a filter to your written query. The current filtering options are **include**, **exclude** or **advanced filter**, which provides additional filtering options on the cell value. These cell values are part of the row set. 
 
-![Image of Windows Defender ATP advanced hunting result set](images/atp-advanced-hunting-results-filter.png)
+![Image of Windows Defender ATP Advanced hunting result set](images/atp-advanced-hunting-results-filter.png)
 
-## Filter results in advanced hunting
-In advanced hunting, you can use the advanced filter on the output result set of the query. 
+## Filter results in Advanced hunting
+In Advanced hunting, you can use the advanced filter on the output result set of the query. 
 The filters provide an overview of the result set where 
 each column has it's own section and shows the distinct values that appear in the column and their prevalence.
 
 You can refine your query based on the filter by clicking the "+" or "-" buttons on the values that you want to include or exclude and click **Run query**.
 
-![Image of advanced hunting filter](images/atp-filter-advanced-hunting.png)
+![Image of Advanced hunting filter](images/atp-filter-advanced-hunting.png)
 
 The filter selections will resolve as an additional query term and the results will be updated accordingly.
 

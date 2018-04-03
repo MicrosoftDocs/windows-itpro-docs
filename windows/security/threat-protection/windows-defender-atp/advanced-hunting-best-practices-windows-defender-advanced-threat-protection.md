@@ -1,6 +1,6 @@
 ---
 title: Advanced hunting best practices in Windows Defender ATP
-description: Learn about advanced hunting best practices such as what filters and keywords to use to effectively query data.
+description: Learn about Advanced hunting best practices such as what filters and keywords to use to effectively query data.
 keywords: advanced hunting, best practices, keyword, filters, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
