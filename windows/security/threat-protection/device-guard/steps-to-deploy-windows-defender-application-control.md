@@ -797,7 +797,7 @@ To create a WDAC policy, copy each of the following commands into an elevated Wi
 
     ` $CIPolicyBin=$CIPolicyPath+"DeviceGuardPolicy.bin"`
 
-2.  Use [New-CIPolicy](https://docs.microsoft.com/en-us/powershell/module/configci/new-cipolicy?view=win10-ps) to create a new WDAC policy by scanning the system for installed applications:
+2.  Use [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy?view=win10-ps) to create a new WDAC policy by scanning the system for installed applications:
 
     ` New-CIPolicy -Level FilePublisher -FilePath $InitialCIPolicy –UserPEs -FallBack Hash 3> CIPolicyLog.txt `
 
@@ -811,7 +811,7 @@ To create a WDAC policy, copy each of the following commands into an elevated Wi
     
     > - The preceding example includes `3> CIPolicylog.txt`, which redirects warning messages to a text file, **CIPolicylog.txt**.
 
-3.  Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/en-us/powershell/module/configci/convertfrom-cipolicy?view=win10-ps) to convert the WDAC policy to a binary format:
+3.  Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy?view=win10-ps) to convert the WDAC policy to a binary format:
 
     ` ConvertFrom-CIPolicy $InitialCIPolicy $CIPolicyBin`
 
@@ -887,7 +887,7 @@ Use the following procedure after you have been running a computer with a WDAC p
 
     ` $CIAuditPolicy=$CIPolicyPath+"DeviceGuardAuditPolicy.xml"`
 
-3.  Use [New-CIPolicy](https://docs.microsoft.com/en-us/powershell/module/configci/new-cipolicy?view=win10-ps) to generate a new WDAC policy from logged audit events. This example uses a file rule level of **Hash** and includes `3> CIPolicylog.txt`, which redirects warning messages to a text file, **CIPolicylog.txt**.
+3.  Use [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy?view=win10-ps) to generate a new WDAC policy from logged audit events. This example uses a file rule level of **Hash** and includes `3> CIPolicylog.txt`, which redirects warning messages to a text file, **CIPolicylog.txt**.
 
     ` New-CIPolicy -Audit -Level Hash -FilePath $CIAuditPolicy –UserPEs 3 -FallBack Hash > CIPolicylog.txt`
 
@@ -955,11 +955,11 @@ To merge two WDAC policies, complete the following steps in an elevated Windows 
   > [!Note] 
   > The variables in this section specifically expect to find an initial policy on your desktop called **InitialScan.xml** and an audit WDAC policy called **DeviceGuardAuditPolicy.xml**. If you want to merge other WDAC policies, update the variables accordingly.
 
-2.  Use [Merge-CIPolicy](https://technet.microsoft.com/library/mt634485.aspx) to merge two policies and create a new WDAC policy:
+2.  Use [Merge-CIPolicy](https://docs.microsoft.com/powershell/module/configci/merge-cipolicy?view=win10-ps) to merge two policies and create a new WDAC policy:
 
     ` Merge-CIPolicy -PolicyPaths $InitialCIPolicy,$AuditCIPolicy -OutputFilePath $MergedCIPolicy`
 
-3.  Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/en-us/powershell/module/configci/convertfrom-cipolicy?view=win10-ps) to convert the merged WDAC policy to binary format:
+3.  Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy?view=win10-ps) to convert the merged WDAC policy to binary format:
 
     ` ConvertFrom-CIPolicy $MergedCIPolicy $CIPolicyBin `
 
@@ -997,14 +997,14 @@ Every WDAC policy is created with audit mode enabled. After you have successfull
 
     ` copy $InitialCIPolicy $EnforcedCIPolicy`
 
-4.  Use [Set-RuleOption](https://technet.microsoft.com/library/mt634483.aspx) to delete the audit mode rule option:
+4.  Use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption?view=win10-ps) to delete the audit mode rule option:
 
     ` Set-RuleOption -FilePath $EnforcedCIPolicy -Option 3 -Delete`
 
   > [!Note] 
   > To enforce a WDAC policy, you delete option 3, the **Audit Mode Enabled** option. There is no “enforced” option that can be placed in a WDAC policy.
 
-5.  Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/en-us/powershell/module/configci/convertfrom-cipolicy?view=win10-ps) to convert the new WDAC policy to binary format:
+5.  Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy?view=win10-ps) to convert the new WDAC policy to binary format:
 
     ` ConvertFrom-CIPolicy $EnforcedCIPolicy $CIPolicyBin`
 
@@ -1052,7 +1052,7 @@ If you do not have a code signing certificate, see the [Optional: Create a code 
 
     ` cd $env:USERPROFILE\Desktop `
 
-5.  Use [Add-SignerRule](https://technet.microsoft.com/library/mt634479.aspx) to add an update signer certificate to the WDAC policy:
+5.  Use [Add-SignerRule](https://docs.microsoft.com/powershell/module/configci/add-signerrule?view=win10-ps) to add an update signer certificate to the WDAC policy:
 
     ` Add-SignerRule -FilePath $InitialCIPolicy -CertificatePath <Path to exported .cer certificate> -Kernel -User –Update`
 
@@ -1060,11 +1060,11 @@ If you do not have a code signing certificate, see the [Optional: Create a code 
    > *&lt;Path to exported .cer certificate&gt;* should be  the full path to the certificate that you exported in   step 3.
     Also, adding update signers is crucial to being able to modify or disable this policy in the future. For more information about how to disable signed WDAC policies, see the [Disable signed Windows Defender Application Control policies within Windows](#disable-signed-windows-defender-application-control-policies-within-windows) section.
 
-6.  Use [Set-RuleOption](https://technet.microsoft.com/library/mt634483.aspx) to remove the unsigned policy rule option:
+6.  Use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption?view=win10-ps) to remove the unsigned policy rule option:
 
     ` Set-RuleOption -FilePath $InitialCIPolicy -Option 6 -Delete`
 
-7.  Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/en-us/powershell/module/configci/convertfrom-cipolicy?view=win10-ps) to convert the policy to binary format:
+7.  Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy?view=win10-ps) to convert the policy to binary format:
 
     ` ConvertFrom-CIPolicy $InitialCIPolicy $CIPolicyBin`
 
