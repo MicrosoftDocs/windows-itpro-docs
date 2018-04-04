@@ -17,10 +17,9 @@ Windows 10 devices can receive updates from a variety of sources, including Wind
 
 1.  Start Windows PowerShell as an administrator
 2.  Run  `\$MUSM = New-Object -ComObject   “Microsoft.Update.ServiceManager”`.
-3.  Run `\$MUSM.Services`. The resulting output should be similar to the following:
-
-```
-Name                  : Microsoft Update
+3.  Run `\$MUSM.Services`. The resulting output should be similar to the following: 
+   ```
+   Name                  : Microsoft Update
 ContentValidationCert : {}
 ExpirationDate        :
 IsManaged             : False
