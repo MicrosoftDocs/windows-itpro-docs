@@ -25,7 +25,7 @@ BitLocker is a data protection feature that encrypts the hard drives on your com
 -   [Deployment and administration](bitlocker-deployment-and-administration-faq.md)
 -   [Key management](bitlocker-key-management-faq.md)
 -   [BitLocker To Go](bitlocker-to-go-faq.md)
--   [Active Directory Domain Services (AD DS)](bitlocker-and-adds-faq.md
+-   [Active Directory Domain Services (AD DS)](bitlocker-and-adds-faq.md)
 -   [Security](bitlocker-security-faq.md)
 -   [BitLocker Network Unlock](bitlocker-network-unlock-faq.md)
 -   [Using BitLocker with other programs](bitlocker-using-with-other-programs-faq.md)
