@@ -1,4 +1,3 @@
-
 ---
 title: Determining the Windows Update Service source
 description: Determine the source that Windows Update service is currently using.
@@ -18,6 +17,7 @@ Windows 10 devices can receive updates from a variety of sources, including Wind
 1.  Start Windows PowerShell as an administrator
 2.  Run  `\$MUSM = New-Object -ComObject   “Microsoft.Update.ServiceManager”`.
 3.  Run `\$MUSM.Services`. The resulting output should be similar to the following: 
+
    ```
    Name                  : Microsoft Update
 ContentValidationCert : {}
