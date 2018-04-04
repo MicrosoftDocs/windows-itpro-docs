@@ -110,7 +110,7 @@ For example:
 ### Enable the managed installer option in WDAC policy
 
 In order to enable trust for the binaries laid down by managed installers, the Allow: Managed Installer option must be specified in your WDAC policy.
-This can be done by using the [Set-RuleOption cmdlet](https://technet.microsoft.com/itpro/powershell/windows/configci/set-ruleoption). 
+This can be done by using the [Set-RuleOption cmdlet](https://docs.microsoft.com/powershell/module/configci/set-ruleoption?view=win10-ps). 
 An example of the managed installer option being set in policy is shown below.
 
 ```code

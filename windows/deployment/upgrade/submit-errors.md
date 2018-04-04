@@ -16,6 +16,10 @@ ms.localizationpriority: high
 **Applies to**
 -   Windows 10
 
+>[!NOTE]
+>This is a 100 level topic (basic).<br>
+>See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
+
 ## In this topic
 
 This topic describes how to submit problems with a Windows 10 upgrade to Microsoft using the Windows 10 Feedback Hub.
