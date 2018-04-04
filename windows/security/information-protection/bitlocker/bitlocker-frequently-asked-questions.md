@@ -32,39 +32,6 @@ BitLocker is a data protection feature that encrypts the hard drives on your com
 
 
 
-## <a href="" id="bkmk-security"></a>Security
-
-### <a href="" id="bkmk-form"></a>What form of encryption does BitLocker use? Is it configurable?
-
-BitLocker uses Advanced Encryption Standard (AES) as its encryption algorithm with configurable key lengths of 128 or 256 bits. The default encryption setting is AES-128, but the options are configurable by using Group Policy.
-
-### <a href="" id="bkmk-config"></a>What is the best practice for using BitLocker on an operating system drive?
-
-The recommended practice for BitLocker configuration on an operating system drive is to implement BitLocker on a computer with a TPM version 1.2 or higher and a Trusted Computing Group (TCG)-compliant BIOS or UEFI firmware implementation, plus a PIN. By requiring a PIN that was set by the user in addition to the TPM validation, a malicious user that has physical access to the computer cannot simply start the computer.
-
-### <a href="" id="bkmk-sleep"></a>What are the implications of using the sleep or hibernate power management options?
-
-BitLocker on operating system drives in its basic configuration (with a TPM but without advanced authentication) provides additional security for the hibernate mode. However, BitLocker provides greater security when it is configured to use an advanced authentication mode (TPM+PIN, TPM+USB, or TPM+PIN+USB) with the hibernate mode. This method is more secure because returning from hibernation requires BitLocker authentication. As a best practice, we recommend that sleep mode be disabled and that you use TPM+PIN for the authentication method.
-
-### <a href="" id="bkmk-root"></a>What are the advantages of a TPM?
-
-Most operating systems use a shared memory space and rely on the operating system to manage physical memory. A TPM is a hardware component that uses its own internal firmware and logic circuits for processing instructions, thus shielding it from external software vulnerabilities. Attacking the TPM requires physical access to the computer. Additionally, the tools and skills necessary to attack hardware are often more expensive, and usually are not as available as the ones used to attack software. And because each TPM is unique to the computer that contains it, attacking multiple TPM computers would be difficult and time-consuming.
-
->**Note:**  Configuring BitLocker with an additional factor of authentication provides even more protection against TPM hardware attacks.
- 
-## <a href="" id="bkmk-bnusect"></a>BitLocker Network Unlock
-
-BitLocker Network Unlock enables easier management for BitLocker-enabled desktops and servers that use the TPM+PIN protection method in a domain environment. When a computer that is connected to a wired corporate network is rebooted, Network Unlock allows the PIN entry prompt to be bypassed. It automatically unlocks BitLocker-protected operating system volumes by using a trusted key that is provided by the Windows Deployment Services server as its secondary authentication method.
-
-To use Network Unlock you must also have a PIN configured for your computer. When your computer is not connected to the network you will need to provide the PIN to unlock it.
-
-BitLocker Network Unlock has software and hardware requirements for both client computers, Windows Deployment services, and domain controllers that must be met before you can use it.
-
-Network Unlock uses two protectors, the TPM protector and the one provided by the network or by your PIN, whereas automatic unlock uses a single protector, the one stored in the TPM. If the computer is joined to a network without the key protector it will prompt you to enter your PIN. If the PIN is 
-not available you will need to use the recovery key to unlock the computer if it can ot be connected to the network.
-
-For more info, see [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md).
-
 ## <a href="" id="bkmk-other"></a>Other questions
 
 ### <a href="" id="bkmk-kernel"></a>Can I run a kernel debugger with BitLocker?
