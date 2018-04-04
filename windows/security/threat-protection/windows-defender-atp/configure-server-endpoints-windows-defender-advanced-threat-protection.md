@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 localizationpriority: high
-ms.date: 11/30/2017
+ms.date: 04/04/2018
 ---
 
 # Configure Windows Defender ATP server endpoints
@@ -80,12 +80,51 @@ Once completed, you should see onboarded servers in the portal within an hour.
 |    winatp-gw-weu.microsoft.com    |    443    |
 
 
-### Offboard server endpoints 
+## Offboard server endpoints
+You have two options to offboard servers from the service:
+- Uninstall the MMA agent
+- Remove the Windows Defender ATP workspace configuration
+
+
+### Uninstall servers by uinstalling the MMA agent
 To offboard the server, you can uninstall the MMA agent from the server or detach it from reporting to your Windows Defender ATP workspace. After offboarding the agent, the server will no longer send sensor data to Windows Defender ATP.
 For more information, see [To disable an agent](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-windows-agents#to-disable-an-agent).
 
 >[!NOTE]
 >Offboarding causes the server to stop sending sensor data to the portal but data from the server, including reference to any alerts it has had will be retained for up to 6 months.
+
+
+### Remove the Windows Defender ATP workspace configuration
+To offboard the server, you can use either of the following methods:
+
+- Remove the Windows Defender ATP workspace configuration from the MMA agent 
+- Run a PowerShell command to remove the configuration
+
+#### Remove the Windows Defender ATP workspace configuration from the MMA agent 
+
+1. In the **Microsoft Monitoring Agent Properties**, select the **Azure Log Analytics (OMS)** tab.
+
+2. Select the Windows Defender ATP workspace, and click **Remove**.
+
+    ![Image of Microsoft Monitoring Agen Properties](images/atp-mma.png)
+
+#### Run a PowerShell command to remove the configuration
+
+1. Get your workspace ID by going to **Endpoint management** > **Servers**:
+    
+    ![Image of server onboarding](images/atp-server-onboarding-workspaceid.png)
+
+2. Open an elevated PowerShell and run the following command. Use the workspace ID you obtained and replacing `WorkspaceID`:
+
+    ```
+    # Load agent scripting object
+    $AgentCfg = New-Object -ComObject AgentConfigManager.MgmtSvcCfg
+    # Remove OMS Workspace
+    $AgentCfg.RemoveCloudWorkspace($WorkspaceID)
+    # Reload the configuration and apply changes
+    $AgentCfg.ReloadConfiguration()
+    ```
+    
 
 ## Related topics
 - [Configure Windows Defender ATP client endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
