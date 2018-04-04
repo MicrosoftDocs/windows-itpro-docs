@@ -18,8 +18,8 @@ Windows 10 devices can receive updates from a variety of sources, including Wind
 2.  Run  `\$MUSM = New-Object -ComObject   “Microsoft.Update.ServiceManager”`.
 3.  Run `\$MUSM.Services`. The resulting output should be similar to the following: 
 
-   ```
-   Name                  : Microsoft Update
+```
+Name                  : Microsoft Update
 ContentValidationCert : {}
 ExpirationDate        :
 IsManaged             : False
