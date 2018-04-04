@@ -112,7 +112,7 @@ The following image shows the EnterpriseModernAppManagement configuration servic
 </Replace>
 ```
 <a href="" id="appmanagement-removepackage"></a>**AppManagement/RemovePackage**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Used to remove packages.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Used to remove packages. Not supported for ./User/Vendor/MSFT.
 
 <p style="margin-left: 20px">Parameters:
 <ul>
@@ -121,34 +121,18 @@ The following image shows the EnterpriseModernAppManagement configuration servic
          <li>Name: Specifies the PackageFullName of the particular package to remove.</li>
          <li>RemoveForAllUsers: 
             <ul>
-               <li>0 (default) – Package will be un-provisioned so that new users do not receive the package. The package will remain installed for current users.</li>
-               <li>1 – Package will be removed for all users.</li>
+               <li>0 (default) – Package will be un-provisioned so that new users do not receive the package. The package will remain installed for current users. This is not currently supported.</li>
+               <li>1 – Package will be removed for all users only if it is a provisioned package.</li>
             </ul>
          </li>
       </ul>
    </li>
-   <li>User (optional): Specifies the SID of the particular user for whom to remove the package; only the package for the specified user can be removed. Not required for ./User/Vendor/MSFT.</li>
+   <li>User (optional): Specifies the SID of the particular user for whom to remove the package; only the package for the specified user can be removed.</li>
 </ul>
     
     
 <p style="margin-left: 20px">Supported operation is Execute.
 
-<p style="margin-left: 20px">The following example removes a package for the specified user:
-
-```XML
-<Exec>
-   <CmdID>10</CmdID>
-   <Item>
-      <Target>
-              <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/RemovePackage</LocURI>
-      </Target>
-      <Meta><Format xmlns="syncml:metinf">xml</Format></Meta>
-      <Data>
-          <Package Name= "{PackageFullName}"/>
-      </Data>
-   </Item>
-</Exec>
-```
 <p style="margin-left: 20px">The following example removes a package for all users:
 
 ````XML
@@ -307,7 +291,12 @@ The following image shows the EnterpriseModernAppManagement configuration servic
 <p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-users"></a>**.../*PackageFamilyName*/*PackageFullName*/Users**  
-<p style="margin-left: 20px">Required. Registered users of the app. If the query is at the device level, it returns all the registered users of the device. If you query the user context, it will only return the current user. Value type is string.
+<p style="margin-left: 20px">Required. Registered users of the app and the package install state. If the query is at the device level, it returns all the registered users of the device. If you query the user context, it will only return the current user. Value type is string.
+
+-   Not Installed = 0
+-   Staged = 1
+-   Installed = 2
+-   Paused = 6
 
 <p style="margin-left: 20px">Supported operation is Get.
 
