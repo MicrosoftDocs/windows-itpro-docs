@@ -59,7 +59,7 @@ The action takes effect on machines with Windows 10, version 1703 or later, wher
 2.	Open the **Actions menu** and select **Stop and Quarantine File**.
     ![Image of stop and quarantine file action](images/atp-stop-quarantine-file.png)
 
-3. Type a comment and select **Yes, stop and quarantine** to take action on the file.
+3. Specify a reason, then click **Yes, stop and quarantine**.
     ![Image of stop and quarantine file](images/atp-stop-quarantine.png)
 
   The Action center shows the submission information:
@@ -116,13 +116,27 @@ You can prevent further propagation of an attack in your organization by banning
 
 
 ### Enable the block file feature
+Before you can block files, you'll need to enable the feature.
+
 1.	In the navigation pane, select **Settings** > **Advanced features** > **Block file**.
 
 2.	Toggle the setting between **On** and **Off** and select **Save preferences**.
     
     ![Image of advanced settings for block file feature](images/atp-preferences-setup.png)
   
-3. Type a comment and select **Yes, block file** to take action on the file.
+### Block a file
+1.	Select the file you want to block. You can select a file from any of the following views or use the Search box:
+
+  - **Alerts** - click the corresponding links from the Description or Details in the Artifact timeline
+  - **Search box** - select File from the drop–down menu and enter the file name
+
+2.	Open the **Actions menu** and select **Block**. 
+    
+    ![Image of block action](images/atp-action-block-file.png)
+
+9. Specify a reason and select **Yes, block file** to take action on the file.
+    
+    ![Image of block file action](images/atp-block-file.png)
 
     The Action center shows the submission information:
     ![Image of block file](images/atp-blockfile.png)
