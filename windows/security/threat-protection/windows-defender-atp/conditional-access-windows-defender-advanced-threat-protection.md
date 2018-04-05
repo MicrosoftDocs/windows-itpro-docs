@@ -1,5 +1,5 @@
 ---
-title: Enable conditional access in Windows Defedener ATP
+title: Enable conditional access to better protect users, devices, and data
 description: Enable conditional access to prevent applications from running if a device is considered at risk and an application is determined to be non-compliant.
 keywords: conditional access, block applications, security level, intune,
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 03/05/2018
 ---
 
-# Enable conditional access in Windows Defender ATP 
+# Enable conditional access to better protect users, devices, and data 
 
 **Applies to:**
 
@@ -37,12 +37,23 @@ The implementation of conditional access in Windows Defender ATP is based on Mic
 
 The compliance policy is used with conditional access to allow only devices that fulfill one or more device compliance policy rules to access applications. 
 
-## Understand conditional access
-When a device is found to be at high risk, the signal is communicated to Intune. In Intune, a device compliance policy is used in conjunction with Azure AD conditional access to block access to applications. In parallel,  an automated investigation and remediation process is launched.
+## Understand the conditional access flow
+When a device is found to be at high risk, the signal is communicated to Intune. 
 
-A device returns to a compliant state when there is lower risk seen on it. A user can still use the device while the automated investigation and remediation is taking place, but access to enterprise data is blocked until the threat is fully remediated. When the risk is removed either through manual or automated remediation, the device returns to a compliant state and access to applications is granted.
+In Intune, a device compliance policy is used in conjunction with Azure AD conditional access to block access to applications. In parallel,  an automated investigation and remediation process is launched.
 
-The following image shows the conditional access flow in action:
+ A user can still use the device while the automated investigation and remediation is taking place, but access to enterprise data is blocked until the threat is fully remediated. 
+
+
+To resolve the high risk found on a device, you'll need to return the device to a compliant state. A device returns to a compliant state when there is no risk seen on it. 
+
+There are two ways to address a risk: through manual remediation or automated remediation. 
+
+Manual remediation requires a secops admin to investigate an alert and address the risk seen on the device. The automated remediation is configured through configuration settings provided in the following section, [Configure conditional access](#configure-conditional-access).
+
+When the risk is removed either through manual or automated remediation, the device returns to a compliant state and access to applications is granted.
+
+The following example sequence of events explains conditional access in action:
 
 1. A user opens a malicious file and Windows Defender ATP flags the device as high risk.
 2. The high risk assessment is passed along to Intune. In parallel, an automated investigation is initiated to remediate the identified threat. A manual remediation can also be done to remediate the identified threat.
@@ -59,11 +70,14 @@ The following image shows the conditional access flow in action:
 You'll need to take the following steps to enable conditional access:
 
 1. Turn on the Microsoft Intune connection. For more information, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md). 
-2. Turn on the Windows Defender ATP integration in Intune. For more information, see LINK TO THE CONTENT INTUNE WRITER IS MAKING.
+
+2. Turn on the Windows Defender ATP integration in Intune. For more information, see __________
+ 
     - Ensure that machines are enrolled. For more information see, [Set up enrollment for Windows devices](https://docs.microsoft.com/en-us/intune/windows-enroll).
 
 3. Create a device compliance policy in Intune. For more information, see [Create a compliance policy in the Azure portal](https://docs.microsoft.com/en-us/intune/compliance-policy-create-windows#create-a-compliance-policy-in-the-azure-portal).
-3. Define a conditional access policy in AAD. For more information, see [Get started with conditional access in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-azure-portal-get-started).
+
+4. Define a conditional access policy in AAD. For more information, see [Get started with conditional access in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-azure-portal-get-started).
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)
 

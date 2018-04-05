@@ -29,7 +29,7 @@ ms.date: 04/16/2018
 
 Enable security information and event management (SIEM) integration so you can pull alerts from the Windows Defender ATP portal using your SIEM solution or by connecting directly to the alerts REST API.
 
-1. In the navigation pane, select **Settings** > **API** > **SIEM**.
+1. In the navigation pane, select **Settings** > **APIs** > **SIEM**.
 
   ![Image of SIEM integration from Settings menu](images/atp-siem-integration.png)
 

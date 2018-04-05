@@ -12,7 +12,7 @@ localizationpriority: high
 ms.date: 04/16/2018
 ---
 
-# Onboard servers
+# Onboard servers to the Windows Defender ATP service
 
 **Applies to:**
 
@@ -138,7 +138,7 @@ To offboard the server, you can use either of the following methods:
 1. Get your Workspace ID:
    a. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
 
-   b. Select Windows server 2012, 2012R2 and 2016 as the operating system and get your Workspace ID:
+   b. Select **Windows server 2012, 2012R2 and 2016** as the operating system and get your Workspace ID:
     
         ![Image of server onboarding](images/atp-server-offboarding-workspaceid.png)
 

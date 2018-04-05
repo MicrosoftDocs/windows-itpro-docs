@@ -94,8 +94,8 @@ When you enable this feature, you'll be able to share Windows Defender ATP devic
 3. Click **Save preferences**.
 
 ## Related topics
-- [Update data retention settings](general-settings-windows-defender-advanced-threat-protection.md)
+- [Update data retention settings](data-retention-settings-windows-defender-advanced-threat-protection.md)
 - [Configure alert notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)
 - [Configure automation notifications](configure-automation-notifications-windows-defender-advanced-threat-protection.md)
 - [Enable and create Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
-- [Enable Secure Score security controls](enable-security-analytics-windows-defender-advanced-threat-protection.md)
+- [Enable Secure Score security controls](enable-secure-score-windows-defender-advanced-threat-protection.md)

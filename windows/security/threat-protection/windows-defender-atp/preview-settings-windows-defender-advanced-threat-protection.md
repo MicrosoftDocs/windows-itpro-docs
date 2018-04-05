@@ -36,7 +36,7 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.
 
 ## Related topics
-- [Update general settings in Windows Defender ATP](general-settings-windows-defender-advanced-threat-protection.md)
+- [Update general settings in Windows Defender ATP](data-retention-settings-windows-defender-advanced-threat-protection.md)
 - [Turn on advanced features in Windows Defender ATP](advanced-features-windows-defender-advanced-threat-protection.md)
 - [Configure email notifications in Windows Defender ATP](configure-email-notifications-windows-defender-advanced-threat-protection.md)
 - [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)

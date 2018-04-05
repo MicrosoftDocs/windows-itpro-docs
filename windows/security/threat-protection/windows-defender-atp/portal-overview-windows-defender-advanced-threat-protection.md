@@ -97,12 +97,20 @@ Icon | Description
 ![Memory allocation icon](images\atp-memory-allocation-icon.png)| Memory allocation
 ![Process injection icon](images\atp-process-injection.png)| Process injection
 ![Powershell command run icon](images\atp-powershell-command-run-icon.png)| Powershell command run
-![Community center icon](images\atp-community-center.png) | Community center icon
-![Notifications icon](images\atp-notifications.png) | Notifications icon
+![Community center icon](images\atp-community-center.png) | Community center 
+![Notifications icon](images\atp-notifications.png) | Notifications
+![No threats found](images\no-threats-found.png) | Automated investigation - no threats found
+![Failed icon](images\failed.png) | Automated investigation - failed
+![Partially remediated icon](images\partially-investigated.png) | Automated investigation - partially investigated
+![Termindated by system](images\terminated-by-system.png) | Automated investigation - terminated by system
+![Pending icon](images\pending.png) | Automated investigation - pending
+![Running icon](images\running.png) | Automated investigation - running
+![Remediated icon](images\remediated.png) | Automated investigation - remediated 
+![Partially investigated icon](images\partially_remediated.png) | Automated investigation - partially remediated
 
 
 ## Related topics
 - [Understand the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)
-- [View the Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
-- [View the Secure Score dashboard and improve your secure score](security-analytics-dashboard-windows-defender-advanced-threat-protection.md)
-- [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics-windows-defender-advanced-threat-protection.md)
+- [View the Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
+- [View the Secure Score dashboard and improve your secure score](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
+- [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)

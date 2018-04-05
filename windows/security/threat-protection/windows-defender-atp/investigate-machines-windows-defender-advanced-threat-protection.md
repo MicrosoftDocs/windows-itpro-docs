@@ -28,7 +28,7 @@ You can click on affected machines whenever you see them in the portal to open a
 
 - The [Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
 - The [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
-- The [Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- The [Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
 - Any individual alert
 - Any individual file details view
 - Any IP address or domain details view
