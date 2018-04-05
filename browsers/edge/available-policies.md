@@ -156,7 +156,7 @@ This policy setting specifies whether to use the Microsoft compatibility list in
 
 This policy setting allows search engine customization for domain-joined or MDM-enrolled devices only. For example, you can change the default search engine or add a new search engine. By default, this setting is enabled allowing employees to add new search engines and change the default under Settings. If disabled, employees cannot add search enginess or change the default.
 
-For more information, see [Microsoft browser extension policy](aka.ms/browserpolicy).
+For more information, see [Microsoft browser extension policy](https://docs.microsoft.com/en-us/legal/windows/agreements/microsoft-browser-extension-policy).
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -239,16 +239,27 @@ This policy setting specifies whether Do Not Track requests to websites is allow
 ## Configure Favorites
 >*Supported versions: Windows 10, version 1709*
 
-This policy settings lets you configure a default list of Favorites that appear for your employee. By default, this setting is disabled or not configured allowing employees to customize the Favorites list, such as adding folders to organize their favorites.  If enabled, employees are not allowed to add, import, or change anything in the Favorites list. As part of this, the Save a Favorite, Import settings, and context menu items (such as Create a new folder) are turned off. 
+This policy setting allows you to configure a default list of Favorites that appear for your employee, which they cannot modify, sort, move, export or delete. By default, this setting is disabled or not configured allowing employees to customize the Favorites list, such as adding folders to organize their favorites.  If enabled, employees are not allowed to add, import, or change anything in the Favorites list. As part of this, the Save a Favorite, Import settings, and context menu items (such as Create a new folder) are turned off.
+
+Specify the URL which points to the file that has all the data for provisioning favorites (in html format). 
+
+URL can be specified as:
+- HTTP location: "SiteList"="http://localhost:8080/URLs.html"
+- Local network: "SiteList"="\network\shares\URLs.html"
+- Local file: "SiteList"="file:///c:\Users\\Documents\URLs.html"
+
+You can export a set of favorites from Edge and use that html file for provisioning user machines. 
+
+>[!Important]
+>Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge. 
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
 |---|---|
-|MDM name |[LockdownFavorites](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-lockdownfavorites) |
+|MDM name |[ProvisionFavorites](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-provisionfavorites) |
 |Supported devices |Desktop<br>Mobile  |
-|URI full path |./Vendor/MSFT/Policy/Config/Browser/LockdownFavorites  |
-|Data type | Integer |
-|Allowed values |<ul><li>**0** - Disabled. Do not lockdown Favorites.</li><li>**1** - Enabled. Lockdown Favorites.</li></ul> |
+|URI full path |./Vendor/MSFT/Policy/Config/Browser/ProvisionFavorites  |
+|Data type | String |
 
 ## Configure Password Manager
 >*Supported versions: Windows 10*
@@ -499,26 +510,6 @@ This policy setting specifies whether localhost IP address are visible or hiddle
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/PreventUsingLocalHostIPAddressForWebRTC  |
 |Data type | Integer |
 |Allowed values |<ul><li>**0 (default)** - Shows an employee's LocalHost IP address while using the WebRTC protocol.</li><li>**1** - Does not show an employee's LocalHost IP address while using the WebRTC protocol.</li></ul> |
-
-## Provision Favorites
->*Supported versions: Windows 10, version 1709*
-<!-- 
->*Supported devices: Both*
--->
-
-This policy setting allows you to configure a default set of favorites for employees, which they cannot modify, sort, move, export or delete. Specify the URL which points to the file that has all the data for provisioning favorites (in html format). You can export a set of favorites from Edge and use that html file for provisioning user machines. 
-
-URL can be specified as:
-    HTTP location: "SiteList"="http://localhost:8080/URLs.html"
-    Local network: "SiteList"="\network\shares\URLs.html"
-    Local file: "SiteList"="file:///c:\Users\\Documents\URLs.html"
-
->[!Important]
->Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
-
-If disabled or not configured, employees will see the favorites they set in the Hub and Favorites Bar.
-
-**MDM name:** [ProvisionFavorites](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-provisionfavorites)
 
 
 ## Send all intranet sites to Internet Explorer 11
