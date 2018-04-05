@@ -1,7 +1,8 @@
 ---
 description: Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings.
 ms.assetid: 2e849894-255d-4f68-ae88-c2e4e31fa165
-author: eross-msft
+author: shortpatti
+ms.author: pashort
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -9,8 +10,6 @@ title: Group Policy and Mobile Device Management settings for Microsoft Edge (Mi
 ms.localizationpriority: high
 ms.date: 09/13/2017 #Previsou release date
 ---
-
-<!-- pashort 2/9/2018: as per Brian Altman, the documentation descrepancies must be addressed for RS5. Find out what those discrepancies are. Scenario 15403628 -->
 
 # Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge
 
