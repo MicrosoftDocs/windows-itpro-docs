@@ -4,7 +4,7 @@ description: Explains how to begin usihg Device Health.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.date: 03/21/20178
+ms.date: 03/30/2018
 ms.pagetype: deploy
 author: jaimeo
 ---
@@ -169,6 +169,8 @@ We welcome your suggestions and feedback on this filtering process at the [Devic
 #### Why are there multiple names and entries for the same app?
 For example, you might see *Skype for Business*, *‘skype for business’*, and *Lync* listed separately, but you only use *Skype for Business*. Or you might see *MyApp Pro* and *MyApp Professional* listed separately, even though they feel like the same thing.
 
+Apps have many elements of metadata which describe them. These include an Add/Remove programs title (“Contoso Suite 12”), executable file names (“ContosoCRM.exe”), executable display name (“Contoso CRM”), and others. App publishers (and in some cases app re-packagers) set these values. For the most part we leave the data as set by the publisher which can lead to some report splitting. In certain cases we apply transformations to reduce splitting, for example we (by design) convert many values to lower case so that incoming data such as "Contoso CRM" and "CONTOSO CRM" become the same app name for reporting. 
+ 
 
 
 #### Clicking an app in the App Reliability Events blade sometimes results a List view of records instead of the App Reliability view
