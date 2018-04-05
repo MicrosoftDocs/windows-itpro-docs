@@ -124,7 +124,7 @@ The tile shows you a list of user accounts with the most active alerts and the n
 Click the user account to see details about the user account. For more information see [Investigate a user account](investigate-user-windows-defender-advanced-threat-protection.md).
 
 ## Suspicious activities
-This tile shows the blocked events based on detections from various security components.
+This tile shows audit events based on detections from various security components.
 
 ![Suspicous activities tile](images/atp-suspicious-activities-tile.png)
 
