@@ -78,7 +78,7 @@ This policy setting specifies whether to clear browsing data on exiting Microsof
 |Allowed values |<ul><li>**0 (default)** - Browsing data is not cleared on exit. The type of browsing data to clear can be configured by the employee in the Clear browsing data options under Settings.</li><li>**1** - Browsing data is cleared on exit.</li></ul> |
 
 ## Allow configuration updates for the Books Library
->*Supporteded versions: Windows 10, version 1703 or later*
+>*Supporteded versions: Windows 10*
 
 This policy setting specifies whether Microsoft Edge can automatically update the configuration data for the Books Library. By default, this setting is enabled, which means Microsoft Edge retrieves a configuration for Books Library. If disabled, Microsoft Edge does not retrieve a configuration.
 
@@ -94,8 +94,6 @@ This policy setting specifies whether Microsoft Edge can automatically update th
 
 ## Allow Cortana
 >*Supported versions: Windows 10, version 1607 or later*
-
-This policy setting specifies whether Cortana is allowed on the device. By default, this setting is enabled (allowed), which allows employees to use Cortana on their devices. If disabled (not allowed), employees cannot use Cortana, but can use search to find items on the device. 
 
 This policy setting specifies whether Cortana is allowed on the device. By default, this setting is enabled (allowed), which allows employees to use Cortana on their devices. If disabled (not allowed), employees cannot use Cortana, but can use search to find items on the device. 
 
