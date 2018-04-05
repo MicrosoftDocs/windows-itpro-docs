@@ -152,7 +152,7 @@ After the catalog file is signed, add the signing certificate to a WDAC policy, 
 
     > **Note**&nbsp;&nbsp;Include the **-UserPEs** parameter to ensure that the policy includes user mode code integrity.
 
-3.  Use [Add-SignerRule](https://technet.microsoft.com/library/mt634479.aspx) to add the signing certificate to the WDAC policy, filling in the correct path and filenames for `<policypath>` and `<certpath>`:
+3.  Use [Add-SignerRule](https://docs.microsoft.com/powershell/module/configci/add-signerrule?view=win10-ps) to add the signing certificate to the WDAC policy, filling in the correct path and filenames for `<policypath>` and `<certpath>`:
 
     ` Add-SignerRule -FilePath <policypath> -CertificatePath <certpath> -User `
 
