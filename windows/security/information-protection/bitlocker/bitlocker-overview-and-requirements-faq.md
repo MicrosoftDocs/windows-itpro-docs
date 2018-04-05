@@ -11,7 +11,7 @@ author: brianlic-msft
 ms.date: 04/03/2018
 ---
 
-# BitLocker overview and requirements FAQ
+# BitLocker Overview and Requirements FAQ
 
 **Applies to**
 -   Windows 10
@@ -47,7 +47,7 @@ BitLocker supports TPM version 1.2 or higher.
 
 ## How can I tell if a TPM is on my computer?
 
-Open the TPM MMC console (tpm.msc) and look under the **Status** heading.
+Beginning with Windows 10, version 1803, you can check TPM status in **Windows Defender Security Center** > **Device Security** > **Security processor details**. In previous versions of Windows, open the TPM MMC console (tpm.msc) and look under the **Status** heading.
 
 ## Can I use BitLocker on an operating system drive without a TPM?
 
