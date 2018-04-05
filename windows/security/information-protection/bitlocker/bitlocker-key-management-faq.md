@@ -30,7 +30,7 @@ A domain administrator can additionally configure Group Policy to automatically 
 
 ## Is it possible to add an additional method of authentication without decrypting the drive if I only have the TPM authentication method enabled?
 
-You can use the Manage-bde.exe command-line tool to replace your TPM-only authentication mode with a multifactor authentication mode. For example, if BitLocker is enabled with TPM authentication only and you want to add PIN authentication, use the following commands from an elevated command prompt, replacing *&lt;4-20 digit numeric PIN&gt;* with the numeric PIN you want to use:
+You can use the Manage-bde.exe command-line tool to replace your TPM-only authentication mode with a multifactor authentication mode. For example, if BitLocker is enabled with TPM authentication only and you want to add PIN authentication, use the following commands from an elevated command prompt, replacing *4-20 digit numeric PIN* with the numeric PIN you want to use:
 
 <code>manage-bde –protectors –delete %systemdrive% -type tpm</code>
 
