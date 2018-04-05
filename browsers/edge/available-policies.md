@@ -15,9 +15,9 @@ ms.date: 09/13/2017 #Previsou release date
 
 > Applies to: Windows 10, Windows 10 Mobile
 
-Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings. Group Policy objects (GPO's) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences.
+Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings. Group Policy objects (GPOs) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences.
 
-By using Group Policy and Intune, you can set up a policy setting once, and then copy that setting onto many computers. For example, you can set up multiple security settings in a GPO that's linked to a domain, and then apply all of those settings to every computer in the domain.
+By using Group Policy and Intune, you can set up a policy setting once, and then copy that setting onto many computers. For example, you can set up multiple security settings in a GPO that is linked to a domain, and then apply all of those settings to every computer in the domain.
 
 > [!NOTE]
 > For more info about the tools you can use to change your Group Policy objects, see the Internet Explorer 11 topics, [Group Policy and the Group Policy Management Console (GPMC)](https://go.microsoft.com/fwlink/p/?LinkId=617921), [Group Policy and the Local Group Policy Editor](https://go.microsoft.com/fwlink/p/?LinkId=617922), [Group Policy and the Advanced Group Policy Management (AGPM)](https://go.microsoft.com/fwlink/p/?LinkId=617923), and [Group Policy and Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=617924).
@@ -25,7 +25,7 @@ By using Group Policy and Intune, you can set up a policy setting once, and then
 
 Microsoft Edge works with the following Group Policy settings to help you manage your company's web browser configurations. The Group Policy settings are found in the Group Policy Editor in the following location: 
 
-`Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge\`
+Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge\
 
 <!-- original text 
 Microsoft Edge works with these Group Policy settings (`Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge\`) to help you manage your company's web browser configurations:
@@ -35,7 +35,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
 >*Supporteded versions: Windows 10, version 1703 or later*
 
 
-This policy settings specifies whether to allow the address bar drop-down functionality in Microsoft Edge. By default, this setting is enabled.  We recommend that you disable this setting if you want to minimize network connections from Microsoft Edge to Microsoft services. If disabled, employees do not see the address bar drop-down functionality and also disables the user-defined settting "Show search and site suggestions as I type."  Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the _Configure search suggestions in Address bar_ or _AllowSearchSuggestionsinAddressBar_ setting.
+This policy settings specifies whether to allow the address bar drop-down functionality in Microsoft Edge. By default, this setting is enabled.  We recommend that you disable this setting if you want to minimize network connections from Microsoft Edge to Microsoft services. If disabled, you do not see the address bar drop-down functionality and also disables the user-defined settting "Show search and site suggestions as I type."  Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the [Configure search suggestions in Address bar](https://review.docs.microsoft.com/en-us/microsoft-edge/deploy/available-policies?branch=pashort_edge-backlog_vsts15846461#configure-search-suggestions-in-address-bar) or [AllowSearchSuggestionsinAddressBar](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsearchsuggestionsinaddressbar) setting.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -51,7 +51,7 @@ This policy settings specifies whether to allow the address bar drop-down functi
 >*Supporteded version: Windows 10*
 
 
-This policy setting specifies whether Adobe Flash can run in Microsoft Edge.  By default, this setting is enabled or not configured, which allows employees to use Adobe Flash. If disabled, employees cannot use Adobe Flash.
+This policy setting specifies whether Adobe Flash can run in Microsoft Edge.  By default, this setting is enabled or not configured, which allows you to use Adobe Flash. 
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -60,13 +60,13 @@ This policy setting specifies whether Adobe Flash can run in Microsoft Edge.  By
 |Supported devices |Desktop  |
 |URI full path | ./Vendor/MSFT/Policy/Config/Browser/AllowAutofill |
 |Data type | Integer |
-|Allowed values |<ul><li>**0** - Employees cannot use Microsoft Edge.</li><li>**1 (default)** - Employees can use Microsoft Edge. </li></ul> |
+|Allowed values |<ul><li>**0** - Adobe Flash cannot be used Microsoft Edge.</li><li>**1 (default)** - Adobe Flash can be used Microsoft Edge. </li></ul> |
 
 ## Allow clearing browsing data on exit
 >*Supporteded versions: Windows 10, version 1703*
 
 
-This policy setting specifies whether to clear browsing data on exiting Microsoft Edge. By default, this setting is disabled or not configured, which means employees can turn on and configure Clear browsing data option under Settings. If enabled, browsing history on exit is turned on.
+This policy setting specifies whether to clear browsing data on exiting Microsoft Edge. By default, this setting is disabled or not configured, which means you can turn on and configure Clear browsing data option under Settings. If enabled, browsing history on exit is turned on.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -80,7 +80,7 @@ This policy setting specifies whether to clear browsing data on exiting Microsof
 ## Allow configuration updates for the Books Library
 >*Supporteded versions: Windows 10*
 
-This policy setting specifies whether Microsoft Edge can automatically update the configuration data for the Books Library. By default, this setting is enabled, which means Microsoft Edge retrieves a configuration for Books Library. If disabled, Microsoft Edge does not retrieve a configuration.
+This policy setting specifies whether Microsoft Edge can automatically update the configuration data for the Books Library. By default, this setting is enabled, which means Microsoft Edge retrieves configuration data for the Books Library. If disabled, Microsoft Edge does not retrieve configuration data.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -95,7 +95,7 @@ This policy setting specifies whether Microsoft Edge can automatically update th
 ## Allow Cortana
 >*Supported versions: Windows 10, version 1607 or later*
 
-This policy setting specifies whether Cortana is allowed on the device. By default, this setting is enabled (allowed), which allows employees to use Cortana on their devices. If disabled (not allowed), employees cannot use Cortana, but can use search to find items on the device. 
+This policy setting specifies whether Cortana is allowed on the device. By default, this setting is enabled (allowed), which allows you to use Cortana on your devices. If disabled (not allowed), Cortana is not available for use, but you can use search to find items on your device. 
 
 **Microsoft Intune to manage your MDM settings**
 |   |   |
@@ -110,7 +110,7 @@ This policy setting specifies whether Cortana is allowed on the device. By defau
 ## Allow Developer Tools
 >*Supporteded versions: Windows 10, version 1511 or later*
 
-This policy setting specifies whether employees cna use the F12 Developer Tools on Microsoft Edge. By default, this setting is enabled making the F12 Developer Tools availabe to use. If disabled, the F12 Developer Tools are not available. 
+This policy setting specifies whether you can use the F12 Developer Tools on Microsoft Edge. By default, this setting is enabled making the F12 Developer Tools availabe to use. If disabled, the F12 Developer Tools are not available. 
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -122,24 +122,23 @@ This policy setting specifies whether employees cna use the F12 Developer Tools 
 |Allowed values |<ul><li>**0** - Employees cannot use the F12 Developer Tools./li><li>**1 (default)** - Employees can use the F12 Developer Tools.</li></ul> |
 
 ## Allow extended telemetry for the Books tab
->*Supporteded versions: Windows 10, version 1703 or later*
+>*Supporteded versions: Windows 10*
 
-
-This policy settings specifies whether to allow the address bar drop-down functionality in Microsoft Edge. By default, this setting is enabled.  We recommend that you disable this setting if you want to minimize network connections from Microsoft Edge to Microsoft services. If disabled, employees do not see the address bar drop-down functionality and also disables the user-defined settting "Show search and site suggestions as I type."  Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the _Configure search suggestions in Address bar_ or _AllowSearchSuggestionsinAddressBar_ setting.
+This policy setting allows you to specify how much data to send to Microsoft about the books you are reading from the Books tab in Microsoft Edge. By default, this setting is disabled or not configured, which means Microsoft Edge only sends basic diagnostic data, depending on your device configuration. If enabled, Microsoft Edge sends additional diagnostic data in addition to the basic diagnostic data, from the Books tab.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
 |---|---|
-|MDM name |[AllowAddressBarDropdown](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowaddressbardropdown) |
-|Supported devices |Desktop  |
-|URI full path | ./Vendor/MSFT/Policy/Config/Browser/AllowAddressBarDropdown |
+|MDM name |[EnableExtendedBooksTelemetry](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-enableextendedbookstelemetry) |
+|Supported devices |Desktop<br>Mobile  |
+|URI full path | ./Vendor/MSFT/Policy/Config/Browser/EnableExtendedBooksTelemetry |
 |Data type | Integer |
-|Allowed values |<ul><li>**0** - Not Allowed. Address bar drop-down is disabled, which also disables the user-defined setting, "Show search and site suggestions as I type."</li><li>**1 (default)** - Allowed. Address bar drop-down is enabled.</li></ul> |
+|Allowed values |<ul><li>**0  (default)** - Disable. No additional diagnostic data.</li><li>**1** - Enable. Additional diagnostic data for schools.</li></ul> |
 
 ## Allow Extensions
 >*Supporteded versions: Windows 10, version 1607 or later*
 
-This policy setting specifies whether employees can use Edge Extensions.  By default, this setting is enabled allowing employees to use extensions. If disabled, employees cannot use extensions.
+This policy setting specifies whether you can use Edge Extensions.  By default, this setting is enabled allowing you to use extensions. If disabled, you cannot use extensions.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -153,7 +152,7 @@ This policy setting specifies whether employees can use Edge Extensions.  By def
 ## Allow InPrivate browsing
 >*Supporteded versions: Windows 10, version 1511 or later*
 
-This policy setting specifies whether InPrivate browsing is allowed on corporate networks. By default, this setting is enabled allowing employees to use InPrivate website browsing. If  disabled, employees cannot use InPrivate website browsing. 
+This policy setting specifies whether InPrivate browsing is allowed on corporate networks. By default, this setting is enabled allowing you to use InPrivate website browsing. If  disabled, you cannot use InPrivate website browsing. 
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -181,7 +180,7 @@ This policy setting specifies whether to use the Microsoft compatibility list in
 ## Allow search engine customization
 >*Supported versions: Windows 10, version 1703 or later*
 
-This policy setting allows search engine customization for domain-joined or MDM-enrolled devices only. For example, you can change the default search engine or add a new search engine. By default, this setting is enabled allowing employees to add new search engines and change the default under Settings. If disabled, employees cannot add search enginess or change the default.
+This policy setting allows search engine customization for domain-joined or MDM-enrolled devices only. For example, you can change the default search engine or add a new search engine. By default, this setting is enabled allowing you to add new search engines and change the default under Settings. If disabled, you cannot add search enginess or change the default.
 
 For more information, see [Microsoft browser extension policy](https://docs.microsoft.com/en-us/legal/windows/agreements/microsoft-browser-extension-policy).
 
@@ -197,12 +196,10 @@ For more information, see [Microsoft browser extension policy](https://docs.micr
 ## Allow web content on New Tab page
 >*Supported versions: Windows 10*
 
-This policy setting lets you configure what appears when a New Tab page is opened in Microsoft Edge. By default, this setting is disabled or not configured, which means employees cannot customize their New Tab page. If enabled, employees can customize their New Tab page. 
+This policy setting lets you configure what appears when a New Tab page is opened in Microsoft Edge. By default, this setting is disabled or not configured, which means you cannot customize their New Tab page. If enabled, you can customize their New Tab page. 
 
-<!-- 
-**MDM name:** 
--->
-## Always enable book library
+
+## Always Enable book library
 >*Supporteded versions: Windows 10*
 
 This policy settings specifies whether to always show the Books Library in Microsoft Edge. By default, this setting is disabled, which means the library is only visible in countries or regions where available. if enabled, the Books Library is always shown regardless of countries or region of activation.
@@ -237,7 +234,7 @@ This setting does not set the default search engine. For that, you must use the 
 ## Configure Autofill
 >*Supported versions: Windows 10*
 
-This policy setting specifies whether AutoFill on websites is allowed. By default, this setting is not configured allowing employees to choose whether or not to use AutoFill. If enabled, AutoFill is used. If disabled, AutoFill is not used. 
+This policy setting specifies whether AutoFill on websites is allowed. By default, this setting is not configured allowing you to choose whether or not to use AutoFill. If enabled, AutoFill is used. If disabled, AutoFill is not used. 
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -265,7 +262,7 @@ This policy setting specifies whether cookies are allowed. By default, this sett
 ## Configure Do Not Track
 >*Supported versions: Windows 10*
 
-This policy setting specifies whether Do Not Track requests to websites is allowed. By default, this setting is not configured allowing employees to choose whether or not to send tracking information. If enabled, Do Not Track requests are always sent to websites asking for tracking information. If disabled, Do Not Track requests are never sent. 
+This policy setting specifies whether Do Not Track requests to websites is allowed. By default, this setting is not configured allowing you to choose whether or not to send tracking information. If enabled, Do Not Track requests are always sent to websites asking for tracking information. If disabled, Do Not Track requests are never sent. 
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -274,12 +271,12 @@ This policy setting specifies whether Do Not Track requests to websites is allow
 |Supported devices |Desktop<br>Mobile  |
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/AllowDoNotTrack  |
 |Data type | Integer |
-|Allowed values |<ul><li>**0 (default)** - Stops employees from sending Do Not Track headers to websites requesting tracking info.</li><li>**1** - Employees can send Do Not Track headers to websites requesting tracking info. </li></ul> |
+|Allowed values |<ul><li>**0 (default)** - Stops you from sending Do Not Track headers to websites requesting tracking info.</li><li>**1** - Employees can send Do Not Track headers to websites requesting tracking info. </li></ul> |
 
 ## Configure Favorites
 >*Supported versions: Windows 10, version 1709*
 
-This policy setting allows you to configure a default list of Favorites that appear for your employee, which they cannot modify, sort, move, export or delete. By default, this setting is disabled or not configured allowing employees to customize the Favorites list, such as adding folders to organize their favorites.  If enabled, employees are not allowed to add, import, or change anything in the Favorites list. As part of this, the Save a Favorite, Import settings, and context menu items (such as Create a new folder) are turned off.
+This policy setting allows you to configure a default list of Favorites that appear for your employee, which they cannot modify, sort, move, export or delete. By default, this setting is disabled or not configured allowing you to customize the Favorites list, such as adding folders to organize their favorites.  If enabled, you are not allowed to add, import, or change anything in the Favorites list. As part of this, the Save a Favorite, Import settings, and context menu items (such as Create a new folder) are turned off.
 
 Specify the URL which points to the file that has all the data for provisioning favorites (in html format). 
 
@@ -291,7 +288,7 @@ URL can be specified as:
 You can export a set of favorites from Edge and use that html file for provisioning user machines. 
 
 >[!Important]
->Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge. 
+>Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops you from syncing their favorites between Internet Explorer and Microsoft Edge. 
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -304,7 +301,7 @@ You can export a set of favorites from Edge and use that html file for provision
 ## Configure Password Manager
 >*Supported versions: Windows 10*
 
-This policy setting specifies whether saving and managing passwords locally on the device is allowed. By default, this setting is enabled allowing employees to save their passwords locally. If not configured, employees can choose whether or not to save and manage passwords locally. If disabled, saving and managing passwords locally is turned off. 
+This policy setting specifies whether saving and managing passwords locally on the device is allowed. By default, this setting is enabled allowing you to save their passwords locally. If not configured, you can choose whether or not to save and manage passwords locally. If disabled, saving and managing passwords locally is turned off. 
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -318,7 +315,7 @@ This policy setting specifies whether saving and managing passwords locally on t
 ## Configure Pop-up Blocker
 >*Supported versions: Windows 10*
 
-This policy setting specifies whether pop-up blocker is allowed or enabled. By default, pop-up blocker is turned on. If not configured, employees can choose whether to turn on or turn off pop-up blocker. If disabled, pop-up blocker is turned off.
+This policy setting specifies whether pop-up blocker is allowed or enabled. By default, pop-up blocker is turned on. If not configured, you can choose whether to turn on or turn off pop-up blocker. If disabled, pop-up blocker is turned off.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -332,7 +329,7 @@ This policy setting specifies whether pop-up blocker is allowed or enabled. By d
 ## Configure search suggestions in Address bar
 >*Supported versions: Windows 10*
 
-This policy setting specifies whether search suggestions are allowed in the address bar. By default, this setting is not configured allowing employees to choose whether search suggestions appear in the address bar.  If enabled, search suggestions appear.  If disabled, search suggestions do not appear.
+This policy setting specifies whether search suggestions are allowed in the address bar. By default, this setting is not configured allowing you to choose whether search suggestions appear in the address bar.  If enabled, search suggestions appear.  If disabled, search suggestions do not appear.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -355,12 +352,12 @@ This policy setting specifies your Start pages for domain-joined or MDM-enrolled
 |Supported devices |Desktop  |
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/HomePages  |
 |Data type |String |
-|Allowed values |Configure the Start page (previously known as Home page) URLs for your employees. |
+|Allowed values |Configure the Start page (previously known as Home page) URLs for your you. |
 
 ## Configure the Adobe Flash Click-to-Run setting
 >*Supported versions: Windows 10, version 1703 or later*
 
-This policy setting specifies whether employees must take action, such as clicking the content or a Click-to-Run button, before seeing content in Adobe Flash. By default, this setting is enabled. when the setting is enabled, employees must click the content, Click-to-Run button, or have the site appear on an auto-allow list before before the Adobe Flash content loads. If disabled, Adobe Flash loads and runs automatically.
+This policy setting specifies whether you must take action, such as clicking the content or a Click-to-Run button, before seeing content in Adobe Flash. By default, this setting is enabled. when the setting is enabled, you must click the content, Click-to-Run button, or have the site appear on an auto-allow list before before the Adobe Flash content loads. If disabled, Adobe Flash loads and runs automatically.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -374,7 +371,7 @@ This policy setting specifies whether employees must take action, such as clicki
 ## Configure the Enterprise Mode Site List
 >*Supported versions: Windows 10*
 
-This policy setting lets you configure whether to use Enterprise Mode and the Enterprise Mode Site List to address common compatibility problems with legacy apps. By default, this setting is disabled or not configured, which means the Enterprise Mode Site List is not used. In this case, employees might experience compatibility problems while using legacy apps. If enabled, you must add the location to your site list in the **{URI}** box. when enabled, Microsoft Edge looks for the Enterprise Mode Site List XML file, which includes the sites and domains that need to be viewed using Internet Explorer 11 and Enterprise Mode.
+This policy setting lets you configure whether to use Enterprise Mode and the Enterprise Mode Site List to address common compatibility problems with legacy apps. By default, this setting is disabled or not configured, which means the Enterprise Mode Site List is not used. In this case, you might experience compatibility problems while using legacy apps. If enabled, you must add the location to your site list in the **{URI}** box. when enabled, Microsoft Edge looks for the Enterprise Mode Site List XML file, which includes the sites and domains that need to be viewed using Internet Explorer 11 and Enterprise Mode.
 
 >[!Note] 
 >If there is a .xml file in the cache container, IE waits 65 seconds and then checks the local cache for a newer version of the file from the server, based on standard caching rules. If the server has a different version number than the version in the cache container, the server file is used and stored in the cache container.<br><br>
@@ -392,7 +389,7 @@ This policy setting lets you configure whether to use Enterprise Mode and the En
 ## Configure Windows Defender SmartScreen
 >*Supported versions: Windows 10*
 
-This policy setting specifies whether Windows Defender SmartScreen is allowed. By default, this setting is enabled or turned on and employees cannot turn it off. If disabled, Windows Defender SmartScreen is turned off and employees cannot turn it on. If not configured, employees can choose whether to use Windows Defender SmartScreen.
+This policy setting specifies whether Windows Defender SmartScreen is allowed. By default, this setting is enabled or turned on and you cannot turn it off. If disabled, Windows Defender SmartScreen is turned off and you cannot turn it on. If not configured, you can choose whether to use Windows Defender SmartScreen.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -401,7 +398,7 @@ This policy setting specifies whether Windows Defender SmartScreen is allowed. B
 |Supported devices |Desktop<br>Mobile  |
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen  |
 |Data type | Integer |
-|Allowed values |<ul><li>**0 (default)** - Turns off Windows Defender SmartScreen.</li><li>**1** - Turns on Windows Defender SmartScreen, providing warning messages to your employees about potential phishing scams and malicious software.</li></ul> |
+|Allowed values |<ul><li>**0 (default)** - Turns off Windows Defender SmartScreen.</li><li>**1** - Turns on Windows Defender SmartScreen, providing warning messages to your you about potential phishing scams and malicious software.</li></ul> |
 
 ## Disable lockdown of Start pages
 >*Supported versions: Windows 10, version 1703 or later*
@@ -421,7 +418,7 @@ This policy setting specifies whether the lockdown on the Start pages is disable
 ## Do not sync
 >*Supported versions: Windows 10*
 
-This policy setting specifies whether employees can use the Sync your Settings option to sync their settings to and from their device. By default, this setting is disabled or not configured, which means the Sync your Settings options are turned on, letting employees pick what can sync on their device. If enabled, the Sync your Settings options are turned off and none of the Sync your Setting groups are synced on the device. You can use the Allow users to turn syncing on option to turn the feature off by default, but to let the employee change this setting. For information about what settings are sync'ed, see [About sync setting on Windows 10 devices](http://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices).
+This policy setting specifies whether you can use the Sync your Settings option to sync their settings to and from their device. By default, this setting is disabled or not configured, which means the Sync your Settings options are turned on, letting you pick what can sync on their device. If enabled, the Sync your Settings options are turned off and none of the Sync your Setting groups are synced on the device. You can use the Allow users to turn syncing on option to turn the feature off by default, but to let the employee change this setting. For information about what settings are sync'ed, see [About sync setting on Windows 10 devices](http://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices).
 
 **Microsoft Intune to manage your MDM settings**
 |   |   |
@@ -433,31 +430,15 @@ This policy setting specifies whether employees can use the Sync your Settings o
 |Data type | Integer |
 |Allowed values |<ul><li>**0** - Employees cannot sync settings between PCs.</li><li>**1 (default)** - Employees can sync between PCs.</li></ul> |
 
-
 ## Do not sync browser settings
 >*Supported versions: Windows 10*
 
 This policy setting specifies whether a browser group can use the Sync your Settings options to sync their information to and from their device. Settings include information like History and Favorites. By default, this setting is disabled or not configured, which means the Sync your Settings options are turned on, letting browser groups pick what can sync on their device. If enabled, the Sync your Settings options are turned off so that browser groups are unable to sync their settings and info. You can use the Allow users to turn browser syncing on option to turn the feature off by default, but to let the employee change this setting.
 
-## Enable extended books telemetry
->*Supporteded versions: Windows 10*
-
-This policy setting specifies how much data to send to Microsoft about the books you are reading from the Books tab in Microsoft Edge. By default, this setting is disabled or not configured, which means Microsoft Edge sends basic diagnostic data, depending on your device configuration. If enabled, Microsoft Edge sends additional diagnostic data in addition to the basic diagnostic data.
-
-**Microsoft Intune to manage your MDM settings** 
-|   |   |
-|---|---|
-|MDM name |[EnableExtendedBooksTelemetry](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-enableextendedbookstelemetry) |
-|Supported devices |Desktop<br>Mobile  |
-|URI full path | ./Vendor/MSFT/Policy/Config/Browser/AlwaysEnableBooksLibrary |
-|Data type | Integer |
-|Allowed values |<ul><li>**0 (default)** - Disable. No additional diagnostic data.</li><li>**1** - Enable. Additional diagnostic data for schools.</li></ul> |
-
-
 ## Keep favorites in sync between Internet Explorer and Microsoft Edge
 >*Supported versions: Windows 10, version 1703 or later*
 
-This policy setting specifies whether favorites are kept in sync between Internet Explorer and Microsoft Edge. Changes to favorites in one browser are reflected in the other, including additions, deletions, modifications, and ordering. By default, this setting is disabled or not configured. When disabled or not configured, employees cannot sync their favorites. If enabled, employees can sync their favorites and stops Microsoft Edge favorites from syncing between connected Windows 10 devices. This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile. 
+This policy setting specifies whether favorites are kept in sync between Internet Explorer and Microsoft Edge. Changes to favorites in one browser are reflected in the other, including additions, deletions, modifications, and ordering. By default, this setting is disabled or not configured. When disabled or not configured, you cannot sync their favorites. If enabled, you can sync their favorites and stops Microsoft Edge favorites from syncing between connected Windows 10 devices. This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile. 
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -471,7 +452,7 @@ This policy setting specifies whether favorites are kept in sync between Interne
 ## Prevent access to the about:flags page
 >*Supported versions: Windows 10, version 1607 or later*
 
-This policy setting specifies whether employees can access the about:flags page, which is used to change developer settings and to enable experimental features. By default, this setting is disabled or not configured, which means employees can access the about:flags page. If enabled, employees cannot access the about:flags page.
+This policy setting specifies whether you can access the about:flags page, which is used to change developer settings and to enable experimental features. By default, this setting is disabled or not configured, which means you can access the about:flags page. If enabled, you cannot access the about:flags page.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -485,7 +466,7 @@ This policy setting specifies whether employees can access the about:flags page,
 ## Prevent bypassing Windows Defender SmartScreen prompts for files
 >*Supported versions: Windows 10, version 1511 or later*
 
-This policy setting specifies whether employees can override the Windows Defender SmartScreen warnings about downloading unverified files. By default, this setting is disabled or not configured (turned off), which means employees can ignore the warnings and can continue the download process. If enabled (turned on), employees cannot ignore the warnings and blocks them from downloading unverified files.  
+This policy setting specifies whether you can override the Windows Defender SmartScreen warnings about downloading unverified files. By default, this setting is disabled or not configured (turned off), which means you can ignore the warnings and can continue the download process. If enabled (turned on), you cannot ignore the warnings and blocks them from downloading unverified files.  
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -494,12 +475,12 @@ This policy setting specifies whether employees can override the Windows Defende
 |Supported devices |Desktop<br>Mobile  |
 |URI full path | ./Vendor/MSFT/Policy/Config/Browser/PreventSmartScreenPromptOverrideForFiles  |
 |Data type | Integer |
-|Allowed values |<ul><li>**0 (default)** - Lets employees ignore the Windows Defender SmartScreen warnings about unverified files and lets them continue the download process.</li><li>**1** - Stops employees from ignoring the Windows Defender SmartScreen warnings about unverified files.</li></ul> |
+|Allowed values |<ul><li>**0 (default)** - Lets you ignore the Windows Defender SmartScreen warnings about unverified files and lets them continue the download process.</li><li>**1** - Stops you from ignoring the Windows Defender SmartScreen warnings about unverified files.</li></ul> |
 
 ## Prevent bypassing Windows Defender SmartScreen prompts for sites
 >*Supported versions: Windows 10, version 1511 or later*
 
-This policy setting specifies whether employees can override the Windows Defender SmartScreen warnings about potentially malicious websites. By default, this setting is disabled or not configured (turned off), which means employees can ignore the warnings and allows them to continue to the site. If enabled (turned on), employees cannot ignore the warnings and blocks them from continuing to the site.
+This policy setting specifies whether you can override the Windows Defender SmartScreen warnings about potentially malicious websites. By default, this setting is disabled or not configured (turned off), which means you can ignore the warnings and allows them to continue to the site. If enabled (turned on), you cannot ignore the warnings and blocks them from continuing to the site.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -513,10 +494,10 @@ This policy setting specifies whether employees can override the Windows Defende
 ## Prevent changes to Favorites on Microsoft Edge
 >*Supported versions: Windows 10, version 1709*
 
-This policy setting specifies whether employees can add, import, sort, or edit the Favorites list in Microsoft Edge. By default, this setting is disabled or not configured (turned on), which means the Favorites list is not locked down and employees can make changes to the Favorites list. If enabled, employees cannot make changes to the Favorites list. Also, the Save a Favorite, Import settings, and the context menu items, such as Create a new folder, are turned off. 
+This policy setting specifies whether you can add, import, sort, or edit the Favorites list in Microsoft Edge. By default, this setting is disabled or not configured (turned on), which means the Favorites list is not locked down and you can make changes to the Favorites list. If enabled, you cannot make changes to the Favorites list. Also, the Save a Favorite, Import settings, and the context menu items, such as Create a new folder, are turned off. 
 
 >[!Important]
->Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
+>Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops you from syncing their favorites between Internet Explorer and Microsoft Edge.
 <!-- 
 **MDM name:** 
 -->
@@ -538,7 +519,7 @@ This policy setting specifies whether Microsoft can collect information to creat
 ## Prevent the First Run webpage from opening on Microsoft Edge
 >*Supported versions: Windows 10, version 1703 or later*
 
-This policy setting specifies whether to enable or disable the First Run webpage. On the first explicit user-launch of Microsoft Edge, the First Run webpage hosted on microsoft.com opens automatically. This policy allows enterprises, such as those enrolled in a zero-emissions configuration, to prevent this page from opening. By default, this setting is disabled or not configured (turned off), which means employees see the First Run page. If enabled (turned on), the employees do not see the First Run page.
+This policy setting specifies whether to enable or disable the First Run webpage. On the first explicit user-launch of Microsoft Edge, the First Run webpage hosted on microsoft.com opens automatically. This policy allows enterprises, such as those enrolled in a zero-emissions configuration, to prevent this page from opening. By default, this setting is disabled or not configured (turned off), which means you see the First Run page. If enabled (turned on), the you do not see the First Run page.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -584,9 +565,9 @@ This policy setting specifies whether to send intranet traffic to Internet Explo
 >*Supported versions: Windows 10, version 1703 or later*
 
 
-This policy setting allows you to configure the default search engine for domain-joined or MDM-enrolled devices. By default, this setting is not configured, which means the default search engine is specified in App settings. In this case, employees can change the default search engine at any time unless you disable the "Allow search engine customization" setting, which restricts any changes. If enabled, you can configure a default search engine for employees. When enabled, employees cannot change the default search engine. If disabled, the policy-set search engine will be removed, and, if it is the current default, the default will be set back to the factory Microsoft Edge search engine for the market. 
+This policy setting allows you to configure the default search engine for domain-joined or MDM-enrolled devices. By default, this setting is not configured, which means the default search engine is specified in App settings. In this case, you can change the default search engine at any time unless you disable the "Allow search engine customization" setting, which restricts any changes. If enabled, you can configure a default search engine for you. When enabled, you cannot change the default search engine. If disabled, the policy-set search engine will be removed, and, if it is the current default, the default will be set back to the factory Microsoft Edge search engine for the market. 
 
-To set the default search engine, you must specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see Search provider discovery. If you'd like your employees to use the default Microsoft Edge settings for each market, you can set the string to EDGEDEFAULT. If you'd like your employees to use Microsoft Bing as the default search engine, you can set the string to EDGEBING.
+To set the default search engine, you must specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see Search provider discovery. If you'd like your you to use the default Microsoft Edge settings for each market, you can set the string to EDGEDEFAULT. If you'd like your you to use Microsoft Bing as the default search engine, you can set the string to EDGEBING.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -595,13 +576,13 @@ To set the default search engine, you must specify a link to the OpenSearch XML 
 |Supported devices |Desktop<br>Mobile  |
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/SetDefaultSearchEngine  |
 |Data type | Integer |
-|Allowed values |<ul><li>**0 (default)** - The default search engine is set to the one specified in App settings.</li><li>**1** - Allows you to configure the default search engine for your employees.</li></ul> |
+|Allowed values |<ul><li>**0 (default)** - The default search engine is set to the one specified in App settings.</li><li>**1** - Allows you to configure the default search engine for your you.</li></ul> |
 
 ## Show message when opening sites in Internet Explorer
 >*Supported versions: Windows 10, version 1607 and later*
 
 
-This policy setting specifies whether employees see an additional page in Microsoft Edge when opening sites that are configured to open in Internet Explorer using the Enterprise Site List. By default, this policy is disabled, which means no additional pages display. If enabled, employees see an additional page.
+This policy setting specifies whether you see an additional page in Microsoft Edge when opening sites that are configured to open in Internet Explorer using the Enterprise Site List. By default, this policy is disabled, which means no additional pages display. If enabled, you see an additional page.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -738,7 +719,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
     - **Allowed values:**
 
-        - **0 (default).** Stops employees from sending Do Not Track headers to websites requesting tracking info.
+        - **0 (default).** Stops you from sending Do Not Track headers to websites requesting tracking info.
         
         - **1.** Employees can send Do Not Track headers to websites requesting tracking info.    
 
@@ -911,7 +892,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
         - **0 (default).** Turns off Windows Defender SmartScreen.
         
-        - **1.** Turns on Windows Defender SmartScreen, providing warning messages to your employees about potential phishing scams and malicious software.
+        - **1.** Turns on Windows Defender SmartScreen, providing warning messages to your you about potential phishing scams and malicious software.
 
 ## ClearBrowsingDataOnExit
 - **Supported versions:** Windows 10, version 1703
@@ -999,7 +980,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
     - **Allowed values:**
 
-        - Configure the **Favorite** URLs for your employees.
+        - Configure the **Favorite** URLs for your you.
         
             **Example:**
             
@@ -1021,7 +1002,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
     - **Allowed values:**
 
-        - Configure the first run URL for your employees.
+        - Configure the first run URL for your you.
         
             **Example:**
             
@@ -1040,7 +1021,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
     - **Allowed values:**
 
-        - Configure the Start page (previously known as Home page) URLs for your employees.
+        - Configure the Start page (previously known as Home page) URLs for your you.
         
             **Example:**
             
@@ -1127,9 +1108,9 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
     - **Allowed values:**
 
-        - **0 (default).** Lets employees ignore the Windows Defender SmartScreen warnings about unverified files and lets them continue the download process.
+        - **0 (default).** Lets you ignore the Windows Defender SmartScreen warnings about unverified files and lets them continue the download process.
         
-        - **1.** Stops employees from ignoring the Windows Defender SmartScreen warnings about unverified files.
+        - **1.** Stops you from ignoring the Windows Defender SmartScreen warnings about unverified files.
 
 ## PreventUsingLocalHostIPAddressForWebRTC
 - **Supported versions:** Windows 10, version 1511 or later
@@ -1180,7 +1161,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
         - **0 (default).** The default search engine is set to the one specified in App settings.
         
-        - **1.** Allows you to configure the default search engine for your employees.
+        - **1.** Allows you to configure the default search engine for your you.
 
 ## ShowMessageWhenOpeningInteretExplorerSites
 - **Supported versions:** Windows 10, version 1607 and later
@@ -1226,7 +1207,7 @@ These are additional Windows 10-specific Group Policy settings that work with M
 ## Allow Cortana
 - **Location:** Computer Configuration\Administrative Templates\Windows Components\Search\Allow Cortana
 
-- **Description:** This policy setting specifies whether Cortana is allowed on the device. By default, this setting is enabled (allowed), which allows employees to use Cortana on their devices. If disabled (not allowed), employees cannot use Cortana, but can use search to find items on the device. 
+- **Description:** This policy setting specifies whether Cortana is allowed on the device. By default, this setting is enabled (allowed), which allows you to use Cortana on their devices. If disabled (not allowed), you cannot use Cortana, but can use search to find items on the device. 
 - 
 **Microsoft Intune to manage your MDM settings**
 |   |   |
@@ -1241,7 +1222,7 @@ These are additional Windows 10-specific Group Policy settings that work with M
 ## Do not sync
 - **Location:** Computer Configuration\Administrative Templates\Windows Components\sync your settings\Do not sync
 
-- **Description:** This policy setting specifies whether employees can use the Sync your Settings option to sync their settings to and from their device. By default, this setting is disabled or not configured, which means the Sync your Settings options are turned on, letting employees pick what can sync on their device. If enabled, the Sync your Settings options are turned off and none of the Sync your Setting groups are synced on the device. You can use the Allow users to turn syncing on option to turn the feature off by default, but to let the employee change this setting. For information about what settings are sync'ed, see [About sync setting on Windows 10 devices](http://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices).
+- **Description:** This policy setting specifies whether you can use the Sync your Settings option to sync their settings to and from their device. By default, this setting is disabled or not configured, which means the Sync your Settings options are turned on, letting you pick what can sync on their device. If enabled, the Sync your Settings options are turned off and none of the Sync your Setting groups are synced on the device. You can use the Allow users to turn syncing on option to turn the feature off by default, but to let the employee change this setting. For information about what settings are sync'ed, see [About sync setting on Windows 10 devices](http://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices).
 - 
 - 
 
