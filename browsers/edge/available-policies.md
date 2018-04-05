@@ -77,6 +77,20 @@ This policy setting specifies whether to clear browsing data on exiting Microsof
 |Data type | Integer |
 |Allowed values |<ul><li>**0 (default)** - Browsing data is not cleared on exit. The type of browsing data to clear can be configured by the employee in the Clear browsing data options under Settings.</li><li>**1** - Browsing data is cleared on exit.</li></ul> |
 
+## Allow configuration updates for the Books Library
+>*Supporteded versions: Windows 10, version 1703 or later*
+
+This policy setting specifies whether Microsoft Edge can automatically update the configuration data for the Books Library. By default, this setting is enabled, which means Microsoft Edge retrieves a configuration for Books Library. If disabled, Microsoft Edge does not retrieve a configuration.
+
+**Microsoft Intune to manage your MDM settings** 
+|   |   |
+|---|---|
+|MDM name |[AllowConfigurationUpdateForBooksLibrary ](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowconfigurationupdateforbookslibrary) |
+|Supported devices |Desktop  |
+|URI full path | ./Vendor/MSFT/Policy/Config/Browser/AllowConfigurationUpdateForBooksLibrary  |
+|Data type | Integer |
+|Allowed values |<ul><li>**0** - Disable. Microsoft Edge cannot retrieve a configuration.</li><li>**1 (default)** - Enable (default). Microsoft Edge can retrieve a configuration for Books Library.</li></ul> |
+
 
 ## Allow Cortana
 >*Supported versions: Windows 10, version 1607 or later*
@@ -108,6 +122,21 @@ This policy setting specifies whether employees cna use the F12 Developer Tools 
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/AllowDeveloperTools  |
 |Data type | Integer |
 |Allowed values |<ul><li>**0** - Employees cannot use the F12 Developer Tools./li><li>**1 (default)** - Employees can use the F12 Developer Tools.</li></ul> |
+
+## Allow extended telemetry for the Books tab
+>*Supporteded versions: Windows 10, version 1703 or later*
+
+
+This policy settings specifies whether to allow the address bar drop-down functionality in Microsoft Edge. By default, this setting is enabled.  We recommend that you disable this setting if you want to minimize network connections from Microsoft Edge to Microsoft services. If disabled, employees do not see the address bar drop-down functionality and also disables the user-defined settting "Show search and site suggestions as I type."  Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the _Configure search suggestions in Address bar_ or _AllowSearchSuggestionsinAddressBar_ setting.
+
+**Microsoft Intune to manage your MDM settings** 
+|   |   |
+|---|---|
+|MDM name |[AllowAddressBarDropdown](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowaddressbardropdown) |
+|Supported devices |Desktop  |
+|URI full path | ./Vendor/MSFT/Policy/Config/Browser/AllowAddressBarDropdown |
+|Data type | Integer |
+|Allowed values |<ul><li>**0** - Not Allowed. Address bar drop-down is disabled, which also disables the user-defined setting, "Show search and site suggestions as I type."</li><li>**1 (default)** - Allowed. Address bar drop-down is enabled.</li></ul> |
 
 ## Allow Extensions
 >*Supporteded versions: Windows 10, version 1607 or later*
@@ -175,6 +204,19 @@ This policy setting lets you configure what appears when a New Tab page is opene
 <!-- 
 **MDM name:** 
 -->
+## Always enable book library
+>*Supporteded versions: Windows 10*
+
+This policy settings specifies whether to always show the Books Library in Microsoft Edge. By default, this setting is disabled, which means the library is only visible in countries or regions where available. if enabled, the Books Library is always shown regardless of countries or region of activation.
+
+**Microsoft Intune to manage your MDM settings** 
+|   |   |
+|---|---|
+|MDM name |[AlwaysEnableBooksLibrary](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-alwaysenablebookslibrary) |
+|Supported devices |Desktop<br>Mobile  |
+|URI full path | ./Vendor/MSFT/Policy/Config/Browser/AlwaysEnableBooksLibrary |
+|Data type | Integer |
+|Allowed values |<ul><li>**0 (default)** - Disable. Use default visibility of the Books Library. The Library will be only visible in countries or regions where it’s available.</li><li>**1** - Enable. Always show the Books Library, regardless of countries or region of activation.</li></ul> |
 
 ## Configure additional search engines
 >*Supported versions: Windows 10, version 1703 or later*
@@ -399,6 +441,19 @@ This policy setting specifies whether employees can use the Sync your Settings o
 
 This policy setting specifies whether a browser group can use the Sync your Settings options to sync their information to and from their device. Settings include information like History and Favorites. By default, this setting is disabled or not configured, which means the Sync your Settings options are turned on, letting browser groups pick what can sync on their device. If enabled, the Sync your Settings options are turned off so that browser groups are unable to sync their settings and info. You can use the Allow users to turn browser syncing on option to turn the feature off by default, but to let the employee change this setting.
 
+## Enable extended books telemetry
+>*Supporteded versions: Windows 10*
+
+This policy setting specifies how much data to send to Microsoft about the books you are reading from the Books tab in Microsoft Edge. By default, this setting is disabled or not configured, which means Microsoft Edge sends basic diagnostic data, depending on your device configuration. If enabled, Microsoft Edge sends additional diagnostic data in addition to the basic diagnostic data.
+
+**Microsoft Intune to manage your MDM settings** 
+|   |   |
+|---|---|
+|MDM name |[EnableExtendedBooksTelemetry](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-enableextendedbookstelemetry) |
+|Supported devices |Desktop<br>Mobile  |
+|URI full path | ./Vendor/MSFT/Policy/Config/Browser/AlwaysEnableBooksLibrary |
+|Data type | Integer |
+|Allowed values |<ul><li>**0 (default)** - Disable. No additional diagnostic data.</li><li>**1** - Enable. Additional diagnostic data for schools.</li></ul> |
 
 
 ## Keep favorites in sync between Internet Explorer and Microsoft Edge
@@ -558,6 +613,20 @@ This policy setting specifies whether employees see an additional page in Micros
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/ShowMessageWhenOpeningSitesInInteretExplorer  |
 |Data type | Integer |
 |Allowed values |<ul><li>**0 (default)** - Doesn’t show an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.</li><li>**1** - Shows an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.</li></ul> |
+
+## User shared folder for books
+>*Supported versions: Windows 10*
+
+This policy setting specifies whether organizations should use a folder shared across users to store books from the Books Library. 
+
+**Microsoft Intune to manage your MDM settings** 
+|   |   |
+|---|---|
+|MDM name |[UseSharedFolderForBooks](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-usesharedfolderforbooks) |
+|Supported devices |Desktop  |
+|URI full path |./Vendor/MSFT/Policy/Config/Browser/UseSharedFolderForBooks   |
+|Data type | Integer |
+|Allowed values |<ul><li>**0** - No shared folder.</li><li>**1** - Use as shared folder.</li></ul> |
 
 <!-- 
 ## Using Microsoft Intune to manage your Mobile Device Management (MDM) settings for Microsoft Edge
