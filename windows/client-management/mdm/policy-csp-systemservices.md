@@ -80,7 +80,7 @@ ms.date: 03/12/2018
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
@@ -129,7 +129,7 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
@@ -178,7 +178,7 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
@@ -227,7 +227,7 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
@@ -276,7 +276,7 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
@@ -325,7 +325,7 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
+Added in Windows 10, version 1803. This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->

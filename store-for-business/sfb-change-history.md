@@ -24,6 +24,7 @@ ms.localizationpriority: high
 | [Manage software purchased with Microsoft Products and Services agreement in Microsoft Store for Business](manage-mpsa-software-microsoft-store-for-business.md) | New |
 | [Manage private store settings](manage-private-store-settings.md) | Update for adding private store performance improvements. |
 | [What's New in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md) | Update |
+ [Roles and permissions in Microsoft Store for Business](roles-and-permissions-microsoft-store-for-business.md) | Update |
 
 ## February 2018
 

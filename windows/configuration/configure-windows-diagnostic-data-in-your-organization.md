@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: brianlic-msft
-ms.date: 10/17/2017
+ms.date: 04/04/2018
 ---
 
 # Configure Windows diagnostic data in your organization
@@ -56,7 +56,7 @@ Windows diagnostic data is vital technical data from Windows devices about the d
 -	Improve Windows – through the aggregate analysis of the use of Windows
 -	Personalize Windows engagement surfaces
 
-Here are some specific examples of Windows diagnostic data data:
+Here are some specific examples of Windows diagnostic data:
 
 -	Type of hardware being used
 -	Applications installed and usage details
@@ -143,11 +143,17 @@ All diagnostic data data is encrypted using SSL and uses certificate pinning dur
 
 The Microsoft Data Management Service routes data back to our secure cloud storage. Only Microsoft personnel with a valid business justification are permitted access.
 
-The following table defines the endpoints for diagnostic data services:
+The following table defines the endpoints for Connected User Experiences and Telemetry component:
+
+Windows release | Endpoint
+--- | ---
+Windows 10, versions 1703 and 1709 | Diagnostics data: v10.vortex-win.data.microsoft.com/collect/v1</br></br>Functional: v20.vortex-win.data.microsoft.com/collect/v1</br>Windows Advanced Threat Protection is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com/collect/v1</br>settings-win.data.microsoft.com
+Windows 10, version 1607 | v10.vortex-win.data.microsoft.com</br></br>settings-win.data.microsoft.com
+
+The following table defines the endpoints for other diagnostic data services:
 
 | Service | Endpoint |
 | - | - |
-| Connected User Experiences and Telemetry component | v10.vortex-win.data.microsoft.com<br />settings-win.data.microsoft.com |
 | [Windows Error Reporting](http://msdn.microsoft.com/library/windows/desktop/bb513641.aspx) | watson.telemetry.microsoft.com |
 | [Online Crash Analysis](http://msdn.microsoft.com/library/windows/desktop/ee416349.aspx) | oca.telemetry.microsoft.com |
 | OneDrive app for Windows 10 | vortex.data.microsoft.com/collect/v1 |
@@ -167,7 +173,7 @@ The diagnostic data data is categorized into four levels:
 
 -   **Security**. Information that’s required to help keep Windows, Windows Server, and System Center secure, including data about the Connected User Experiences and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.
 
--   **Basic**. Basic device info, including: quality-related data, app compatibility, app usage data, and data from the **Security** level.
+-   **Basic**. Basic device info, including: quality-related data, app compatibility, and data from the **Security** level.
 
 -   **Enhanced**. Additional insights, including: how Windows, Windows Server, System Center, and apps are used, how they perform, advanced reliability data, and data from both the **Basic** and the **Security** levels.
 
@@ -188,7 +194,7 @@ Windows Server Update Services (WSUS) and System Center Configuration Manager fu
 
 The data gathered at this level includes:
 
--   **Connected User Experiences and Telemetry component settings**. If general diagnostic data data has been gathered and is queued, it is sent to Microsoft. Along with this diagnostic data, the Connected User Experiences and Telemetry component may download a configuration settings file from Microsoft’s servers. This file is used to configure the Connected User Experiences and Telemetry component itself. The data gathered by the client for this request includes OS information, device id (used to identify what specific device is requesting settings) and device class (for example, whether the device is server or desktop).
+-   **Connected User Experiences and Telemetry component settings**. If general diagnostic data has been gathered and is queued, it is sent to Microsoft. Along with this diagnostic data, the Connected User Experiences and Telemetry component may download a configuration settings file from Microsoft’s servers. This file is used to configure the Connected User Experiences and Telemetry component itself. The data gathered by the client for this request includes OS information, device id (used to identify what specific device is requesting settings) and device class (for example, whether the device is server or desktop).
 
 -   **Malicious Software Removal Tool (MSRT)** The MSRT infection report contains information, including device info and IP address.
 
@@ -239,8 +245,6 @@ The data gathered at this level includes:
 -   **Compatibility data**. Helps provide an understanding about which apps are installed on a device or virtual machine and identifies potential compatibility problems.
 
     -   **General app data and app data for Internet Explorer add-ons**. Includes a list of apps that are installed on a native or virtualized instance of the OS and whether these apps function correctly after an upgrade. This app data includes the app name, publisher, version, and basic details about which files have been blocked from usage.
-
-    -   **App usage data**. Includes how an app is used, including how long an app is used, when the app has focus, and when the app is started
 
     -   **Internet Explorer add-ons**. Includes a list of Internet Explorer add-ons that are installed on a device and whether these apps will work after an upgrade.
 
@@ -322,9 +326,9 @@ However, before more data is gathered, Microsoft’s privacy governance team, in
 
 Sharing diagnostic data data with Microsoft provides many benefits to enterprises, so we do not recommend turning it off. For most enterprise customers, simply adjusting the diagnostic data level and managing specific components is the best option.
 
-Customers can set the diagnostic data level in both the user interface and with existing management tools. Users can change the diagnostic data level in the **Diagnostic data** setting. In the **Settings** app, it is in **Privacy\Feedback & diagnostics**. They can choose between Basic, Enhanced, and Full. The Security level is not available.
+Customers can set the diagnostic data level in both the user interface and with existing management tools. Users can change the diagnostic data level in the **Diagnostic data** setting. In the **Settings** app, it is in **Privacy\Feedback & diagnostics**. They can choose between Basic and Full. The Enhanced level will only be displayed as an option when Group Policy or Mobile Device Management (MDM) are invoked with this level. The Security level is not available.
 
-IT pros can use various methods, including Group Policy and Mobile Device Management (MDM), to choose a diagnostic data level.  If you’re using Windows 10 Enterprise, Windows 10 Education, or Windows Server 2016, the Security diagnostic data level is available when managing the policy. Setting the diagnostic data level through policy overrides users’ choices. The remainder of this section describes how to do that.
+IT pros can use various methods, including Group Policy and Mobile Device Management (MDM), to choose a diagnostic data level.  If you’re using Windows 10 Enterprise, Windows 10 Education, or Windows Server 2016, the Security diagnostic data level is available when managing the policy. Setting the diagnostic data level through policy sets the upper boundary for the users’ choices. To disable user choice after setting the level with the policy, you will need to use the "Configure telemetry opt-in setting user interface" group policy. The remainder of this section describes how to use group policy to configure levels and settings interface.
 
 
 ### Manage your diagnostic data settings
@@ -340,7 +344,7 @@ The lowest diagnostic data setting level supported through management policies i
 
 ### Configure the operating system diagnostic data level
 
-You can configure your operating system diagnostic data settings using the management tools you’re already using, such as Group Policy, MDM, or Windows Provisioning. You can also manually change your settings using Registry Editor. Setting your diagnostic data levels through a management policy overrides any device level settings.
+You can configure your operating system diagnostic data settings using the management tools you’re already using, such as Group Policy, MDM, or Windows Provisioning. You can also manually change your settings using Registry Editor. Setting your diagnostic data levels through a management policy sets the upper level for diagnostic data on the device.
 
 Use the appropriate value in the table below when you configure the management policy.
 
@@ -351,6 +355,8 @@ Use the appropriate value in the table below when you configure the management p
 | Enhanced | Security data, basic system and quality data, and enhanced insights and advanced reliability data. | **2** |
 | Full | Security data, basic system and quality data, enhanced insights and advanced reliability data, and full diagnostics data. | **3** |
 
+   > [!NOTE] 
+   > When the User Configuration policy is set for Diagnostic Data, this will override the Computer Configuration setting.
 
 ### Use Group Policy to set the diagnostic data level
 

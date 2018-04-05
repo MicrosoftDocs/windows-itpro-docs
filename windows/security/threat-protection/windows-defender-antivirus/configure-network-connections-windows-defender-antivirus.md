@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 11/20/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 04/04/2018
 ---
 
 # Configure and validate network connections for Windows Defender Antivirus
@@ -77,7 +77,7 @@ Microsoft Update Service (MU)
 Signature and product updates
 </td>
 <td>
-*.updates.microsoft.com
+*.update.microsoft.com
 </td>
 </tr>
 <tr style="vertical-align:top">
