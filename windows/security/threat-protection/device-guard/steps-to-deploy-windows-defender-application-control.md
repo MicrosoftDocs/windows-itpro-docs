@@ -799,7 +799,7 @@ To create a WDAC policy, copy each of the following commands into an elevated Wi
 
 2.  Use [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy?view=win10-ps) to create a new WDAC policy by scanning the system for installed applications:
 
-    ` New-CIPolicy -Level PcaCertificate -FilePath $InitialCIPolicy –UserPEs 3> CIPolicyLog.txt `
+    ` New-CIPolicy -Level FilePublisher -FilePath $InitialCIPolicy –UserPEs -FallBack Hash 3> CIPolicyLog.txt `
 
     > [!Note] 
     
@@ -841,7 +841,7 @@ When WDAC policies are run in audit mode, it allows administrators to discover a
     
     > - An alternative method to test a policy is to rename the test file to SIPolicy.p7b and drop it into C:\\Windows\\System32\\CodeIntegrity, rather than deploy it by using the Local Group Policy Editor.
     
-3.  Navigate to **Computer Configuration\\Administrative Templates\\System\\Windows Defender Device Guard**, and then select **Deploy Windows Defender Application Control**. Enable this setting by using the appropriate file path, for example, C:\\Windows\\System32\\CodeIntegrity\\DeviceGuardPolicy.bin, as shown in Figure 1.
+3.  Navigate to **Computer Configuration\\Administrative Templates\\System\\Device Guard**, and then select **Deploy Windows Defender Application Control**. Enable this setting by using the appropriate file path, for example, C:\\Windows\\System32\\CodeIntegrity\\DeviceGuardPolicy.bin, as shown in Figure 1.
 
     > [!Note]
     
@@ -889,7 +889,7 @@ Use the following procedure after you have been running a computer with a WDAC p
 
 3.  Use [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy?view=win10-ps) to generate a new WDAC policy from logged audit events. This example uses a file rule level of **Hash** and includes `3> CIPolicylog.txt`, which redirects warning messages to a text file, **CIPolicylog.txt**.
 
-    ` New-CIPolicy -Audit -Level Hash -FilePath $CIAuditPolicy –UserPEs 3> CIPolicylog.txt`
+    ` New-CIPolicy -Audit -Level Hash -FilePath $CIAuditPolicy –UserPEs 3 -FallBack Hash > CIPolicylog.txt`
 
   > [!Note] 
   > When you create policies from audit events, you should carefully consider the file rule level that you select to trust. The preceding example uses the **Hash** rule level, which is the most specific. Any change to the file (such as replacing the file with a newer version of the same file) will change the Hash value, and require an update to the policy.
