@@ -274,6 +274,7 @@ This policy setting specifies whether Do Not Track requests to websites is allow
 |Data type | Integer |
 |Allowed values |<ul><li>**0 (default)** - Stops you from sending Do Not Track headers to websites requesting tracking info.</li><li>**1** - Employees can send Do Not Track headers to websites requesting tracking info. </li></ul> |
 
+<!-- RS4
 ## Configure Favorites
 >*Supported versions: Windows 10, version 1709*
 
@@ -299,7 +300,6 @@ You can export a set of favorites from Edge and use that html file for provision
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/ProvisionFavorites  |
 |Data type | String |
 
-<!-- 
 ## Set New Tab page URL
 >*Supported versions: Windows 10*
 
