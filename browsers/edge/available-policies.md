@@ -8,7 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 title: Group Policy and Mobile Device Management settings for Microsoft Edge (Microsoft Edge for IT Pros)
 ms.localizationpriority: high
-ms.date: 09/13/2017 #Previsou release date
+ms.date: 4/5/2018 #Previsou release date 09/13/2017
 ---
 
 # Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge
@@ -34,8 +34,9 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
 ## Allow Address bar drop-down list suggestions
 >*Supporteded versions: Windows 10, version 1703 or later*
 
+The Address bar drop-down list, when enabled, allows the Address bar drop-down functionality in Microsoft Edge. By default, this policy is enabled. If disabled, you do not see the address bar drop-down functionality and disables the user-defined policy "Show search and site suggestions as I type."  Therefore, because search suggestions are shown in the drop-down, this policy takes precedence over the [Configure search suggestions in Address bar](https://review.docs.microsoft.com/en-us/microsoft-edge/deploy/available-policies?branch=pashort_edge-backlog_vsts15846461#configure-search-suggestions-in-address-bar) or [AllowSearchSuggestionsinAddressBar](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsearchsuggestionsinaddressbar) policy.
 
-This policy settings specifies whether to allow the address bar drop-down functionality in Microsoft Edge. By default, this setting is enabled.  We recommend that you disable this setting if you want to minimize network connections from Microsoft Edge to Microsoft services. If disabled, you do not see the address bar drop-down functionality and also disables the user-defined settting "Show search and site suggestions as I type."  Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the [Configure search suggestions in Address bar](https://review.docs.microsoft.com/en-us/microsoft-edge/deploy/available-policies?branch=pashort_edge-backlog_vsts15846461#configure-search-suggestions-in-address-bar) or [AllowSearchSuggestionsinAddressBar](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsearchsuggestionsinaddressbar) setting.
+If you want to minimize network connections from Microsoft Edge to Microsoft services, we recommend that you disable this policy. 
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -44,31 +45,30 @@ This policy settings specifies whether to allow the address bar drop-down functi
 |Supported devices |Desktop  |
 |URI full path | ./Vendor/MSFT/Policy/Config/Browser/AllowAddressBarDropdown |
 |Data type | Integer |
-|Allowed values |<ul><li>**0** - Not Allowed. Address bar drop-down is disabled, which also disables the user-defined setting, "Show search and site suggestions as I type."</li><li>**1 (default)** - Allowed. Address bar drop-down is enabled.</li></ul> |
+|Allowed values |<ul><li>**0** - Not Allowed. Address bar drop-down is disabled, which also disables the user-defined policy, "Show search and site suggestions as I type."</li><li>**1 (default)** - Allowed. Address bar drop-down is enabled.</li></ul> |
 
  
 ## Allow Adobe Flash
 >*Supporteded version: Windows 10*
 
-
-This policy setting specifies whether Adobe Flash can run in Microsoft Edge.  By default, this setting is enabled or not configured, which allows you to use Adobe Flash. 
+Adobe Flash is integrated with Microsoft Edge and is updated via Windows Update. By default, this policy is enabled or not configured allowing you to use Adobe Flash Player in Microsoft Edge. 
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
 |---|---|
 |MDM name |[AllowFlash](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowflash) |
 |Supported devices |Desktop  |
-|URI full path | ./Vendor/MSFT/Policy/Config/Browser/AllowAutofill |
+|URI full path | ./Vendor/MSFT/Policy/Config/Browser/AllowAdobeFlash |
 |Data type | Integer |
-|Allowed values |<ul><li>**0** - Adobe Flash cannot be used Microsoft Edge.</li><li>**1 (default)** - Adobe Flash can be used Microsoft Edge. </li></ul> |
+|Allowed values |<ul><li>**0** - Adobe Flash cannot be used Microsoft Edge.</li><li>**1 (default)** - Adobe Flash can be used in Microsoft Edge. </li></ul> |
 
 ## Allow clearing browsing data on exit
 >*Supporteded versions: Windows 10, version 1703*
 
+Your browsing data is the information that Microsoft Edge remembers and stores as you browse websites. Browsing data includes information you entered into forms, passwords, and the websites you visited. By default, this policy is disabled or not configured, the browsing data is not cleared when exiting. When this policy is disabled or not configured, you can turn on and configure the Clear browsing data option under Settings. 
 
-This policy setting specifies whether to clear browsing data on exiting Microsoft Edge. By default, this setting is disabled or not configured, which means you can turn on and configure Clear browsing data option under Settings. If enabled, browsing history on exit is turned on.
 
-**Microsoft Intune to manage your MDM settings** 
+**Microsoft Intune to manage your MDM settings**
 |   |   |
 |---|---|
 |MDM name |[ClearBrowsingDataOnExit](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-clearbrowsingdataonexit) |
@@ -80,7 +80,7 @@ This policy setting specifies whether to clear browsing data on exiting Microsof
 ## Allow configuration updates for the Books Library
 >*Supporteded versions: Windows 10*
 
-This policy setting specifies whether Microsoft Edge can automatically update the configuration data for the Books Library. By default, this setting is enabled, which means Microsoft Edge retrieves configuration data for the Books Library. If disabled, Microsoft Edge does not retrieve configuration data.
+Microsoft Edge automatically retrieves the configuration data for the Books Library, when this policy is enabled or not configured. If disabled, Microsoft Edge does not retrieve the Books configuration data.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -95,7 +95,7 @@ This policy setting specifies whether Microsoft Edge can automatically update th
 ## Allow Cortana
 >*Supported versions: Windows 10, version 1607 or later*
 
-This policy setting specifies whether Cortana is allowed on the device. By default, this setting is enabled (allowed), which allows you to use Cortana on your devices. If disabled (not allowed), Cortana is not available for use, but you can use search to find items on your device. 
+Cortana is integrated with Microsoft Edge, and when enabled, Cortana allows you use the voice assistant on your device. If disabled, Cortana is not available for use, but you can search to find items on your device. 
 
 **Microsoft Intune to manage your MDM settings**
 |   |   |
@@ -103,14 +103,14 @@ This policy setting specifies whether Cortana is allowed on the device. By defau
 |MDM name |[AllowCortana](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-allowcortana) |
 |Supported devices |Mobile  |
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/AllowCortana  |
-|Location |Computer Configuration\Administrative Templates\Windows Components\Search\Allow Cortana |
+|Location |Computer Configuration\Administrative Templates\Windows Components\Search\AllowCortana |
 |Data type | Integer |
 |Allowed values |<ul><li>**0** - Not allowed.</li><li>**1 (default)** - Allowed.</li></ul> |
 
 ## Allow Developer Tools
 >*Supporteded versions: Windows 10, version 1511 or later*
 
-This policy setting specifies whether you can use the F12 Developer Tools on Microsoft Edge. By default, this setting is enabled making the F12 Developer Tools availabe to use. If disabled, the F12 Developer Tools are not available. 
+F12 developer tools is a suite of tools to help you build and debug your webpage. By default, this policy is enabled making the F12 Developer Tools availabe to use.  
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -119,12 +119,12 @@ This policy setting specifies whether you can use the F12 Developer Tools on Mic
 |Supported devices |Desktop  |
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/AllowDeveloperTools  |
 |Data type | Integer |
-|Allowed values |<ul><li>**0** - Employees cannot use the F12 Developer Tools./li><li>**1 (default)** - Employees can use the F12 Developer Tools.</li></ul> |
+|Allowed values |<ul><li>**0** - The F12 Developer Tools are disabled.</li><li>**1 (default)** - The F12 Developer Tools are enabled.</li></ul> |
 
 ## Allow extended telemetry for the Books tab
 >*Supporteded versions: Windows 10*
 
-This policy setting allows you to specify how much data to send to Microsoft about the books you are reading from the Books tab in Microsoft Edge. By default, this setting is disabled or not configured, which means Microsoft Edge only sends basic diagnostic data, depending on your device configuration. If enabled, Microsoft Edge sends additional diagnostic data in addition to the basic diagnostic data, from the Books tab.
+If you enable this policy, both basic and additional diagnostic data is sent to Microsoft about the books you are reading from Books in Microsoft Edge. By default, this policy is disabled or not configured and only basic diagnostic data, depending on your device configuration, is sent to Microsoft. 
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -133,12 +133,12 @@ This policy setting allows you to specify how much data to send to Microsoft abo
 |Supported devices |Desktop<br>Mobile  |
 |URI full path | ./Vendor/MSFT/Policy/Config/Browser/EnableExtendedBooksTelemetry |
 |Data type | Integer |
-|Allowed values |<ul><li>**0  (default)** - Disable. No additional diagnostic data.</li><li>**1** - Enable. Additional diagnostic data for schools.</li></ul> |
+|Allowed values |<ul><li>**0  (default)** - Disable. Only basic diagnostic data is sent.</li><li>**1** - Enable. Both Basic and additional diagnostic data is sent.</li></ul> |
 
 ## Allow Extensions
 >*Supporteded versions: Windows 10, version 1607 or later*
 
-This policy setting specifies whether you can use Edge Extensions.  By default, this setting is enabled allowing you to use extensions. If disabled, you cannot use extensions.
+If you enable this policy, you can personalize and add new features to Microsoft Edge with extensions. By default, this policy is enabled. If you want to prevent others from installing unwanted extensions, disable this policy.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -147,12 +147,12 @@ This policy setting specifies whether you can use Edge Extensions.  By default, 
 |Supported devices |Desktop  |
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/AllowExtensions  |
 |Data type | Integer |
-|Allowed values |<ul><li>**0** - Employees cannot use Edge Extensions.</li><li>**1 (default)** - Employees can use Edge Extensions. </li></ul> |
+|Allowed values |<ul><li>**0** - Microsoft Edge extensions are disabled.</li><li>**1 (default)** - Microsoft Edge Extensions are enabled. </li></ul> |
 
 ## Allow InPrivate browsing
 >*Supporteded versions: Windows 10, version 1511 or later*
 
-This policy setting specifies whether InPrivate browsing is allowed on corporate networks. By default, this setting is enabled allowing you to use InPrivate website browsing. If  disabled, you cannot use InPrivate website browsing. 
+InPrivate browsing, when enabled, prevents your browsing data is not saved on your device. Microsoft Edge deletes temporary data from your device after all your InPrivate tabs are closed. 
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -161,12 +161,13 @@ This policy setting specifies whether InPrivate browsing is allowed on corporate
 |Supported devices |Desktop<br>Mobile  |
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/AllowInPrivate  |
 |Data type | Integer |
-|Allowed values |<ul><li>**0** - Employees cannot use InPrivate browsing.</li><li>**1 (default)** - Employees can use InPrivate browsing.</li></ul> |
+|Allowed values |<ul><li>**0** - InPrivate browsing is disabled.</li><li>**1 (default)** - InPrivate browsing is enabled.</li></ul> |
 
 ## Allow Microsoft Compatibility List
 >*Supporteded versions: Windows 10, version 1703 or later*
 
-This policy setting specifies whether to use the Microsoft compatibility list in Microsoft Edge. The list helps websites with known compatibility issues to display properly. By default, the Microsoft compatibility list is enabled and used during browser navigation.  The list can be viewed by visiting "about:compat".  By default, this setting is enabled allowing periodic downloads and installation of updates. Visiting any site on the Microsoft Compatibility List prompts the employee to use Internet Explorer 11, where the site renders as though it is in whatever version of IE is necessary for it to appear properly. If disabled, the compatibility list is not used.
+Microsoft Edge uses the compatibility list that helps websites with known compatibility issues display properly. When enabled, Microsoft Edge checks the list to determine if the website has compatibility issues during browser navigation. By default, this policy is enabled allowing periodic downloads and installation of updates. Visiting any site on the Microsoft compatibility list prompts the employee to use Internet Explorer 11, where the site renders as though it is in whatever version of IE is necessary for it to appear properly. If disabled, the compatibility list is not used.
+
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -175,7 +176,7 @@ This policy setting specifies whether to use the Microsoft compatibility list in
 |Supported devices |Desktop<br>Mobile  |
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/AllowMicrosoftCompatibilityList  |
 |Data type | Integer |
-|Allowed values |<ul><li>**0** - Additional search engines are not allowed and the default cannot be changed in the Address bar.</li><li>**1 (default)** - Additional search engines are allowed and the default can be changed in the Address bar.</li></ul> |
+|Allowed values |<ul><li>**0** - Disabled. The Microsoft compatibility list is ignored.</li><li>**1 (default)** - Enabled. The Microsoft compatibility list is periodically update and used during browser navigation.</li></ul> |
 
 ## Allow search engine customization
 >*Supported versions: Windows 10, version 1703 or later*
@@ -297,6 +298,15 @@ You can export a set of favorites from Edge and use that html file for provision
 |Supported devices |Desktop<br>Mobile  |
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/ProvisionFavorites  |
 |Data type | String |
+
+<!-- 
+## Set New Tab page URL
+>*Supported versions: Windows 10*
+
+The New tab page is the paged opened when new tabs are created (including the one opened in new windows). If you enable this policy, you can set the default New Tab page URL and prevent users from changing it. If the policy is not configured or disabled, the default Microsoft Edge new tab page is used.
+
+If the policy is enabled and "Allow web content on New Tab page" is disabled, Microsoft Edge ignores the URL specified here, and open about:blank. The more strict "Allow web web content on New Tab page" = Disabled takes precedence.
+-->
 
 ## Configure Password Manager
 >*Supported versions: Windows 10*
@@ -498,9 +508,15 @@ This policy setting specifies whether you can add, import, sort, or edit the Fav
 
 >[!Important]
 >Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops you from syncing their favorites between Internet Explorer and Microsoft Edge.
-<!-- 
-**MDM name:** 
--->
+
+**Microsoft Intune to manage your MDM settings** 
+|   |   |
+|---|---|
+|MDM name |[LockdownFavorites](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-lockdownfavorites) |
+|Supported devices |Desktop<br>Mobile  |
+|URI full path |./Vendor/MSFT/Policy/Config/Browser/LockdownFavorites  |
+|Data type | Integer |
+|Allowed values |<ul><li>**0 (default)** - Disabled. Do not lockdown Favorites.</li><li>**1** - Enabled. Lockdown Favorites.</li></ul> |
 
 ## Prevent Microsoft Edge from gathering Live Tile information when pinning a site to Start
 >*Supported versions: Windows 10, version 1703 or later*
