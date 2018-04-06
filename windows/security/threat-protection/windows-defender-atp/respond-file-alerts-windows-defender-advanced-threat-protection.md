@@ -62,13 +62,13 @@ The action takes effect on machines with Windows 10, version 1703 or later, wher
 3. Specify a reason, then click **Yes, stop and quarantine**.
     ![Image of stop and quarantine file](images/atp-stop-quarantine.png)
 
-  The Action center shows the submission information:
+    The Action center shows the submission information:
     ![Image of stop and quarantine file action center](images/atp-stopnquarantine-file.png)
 
-   - **Submission time** - Shows when the action was submitted.
-   - **Success** - Shows the number of machines where the file has been stopped and quarantined.
-   - **Failed** - Shows the number of machines where the action failed and details about the failure.
-   - **Pending** - Shows the number of machines where the file is yet to be stopped and quarantined from. This can take time for cases when the machine is offline or not connected to the network.
+    - **Submission time** - Shows when the action was submitted.
+    - **Success** - Shows the number of machines where the file has been stopped and quarantined.
+    - **Failed** - Shows the number of machines where the action failed and details about the failure.
+    - **Pending** - Shows the number of machines where the file is yet to be stopped and quarantined from. This can take time for cases when the machine is offline or not connected to the network.
 
 4. Select any of the status indicators to view more information about the action. For example, select **Failed** to see where the action failed.
 
@@ -134,7 +134,7 @@ Before you can block files, you'll need to enable the feature.
     
     ![Image of block action](images/atp-action-block-file.png)
 
-9. Specify a reason and select **Yes, block file** to take action on the file.
+3. Specify a reason and select **Yes, block file** to take action on the file.
     
     ![Image of block file action](images/atp-block-file.png)
 
@@ -163,7 +163,6 @@ For prevalent files in the organization, a warning is shown before an action is 
 1.	Select the file you want to remove from the blocked list. You can select a file from any of the following views or use the Search box:
 
   - **Alerts** - Click the file links from the Description or Details in the Artifact timeline <br>
-  - **Machines list** - Click the file links in the Description or Details columns in the Observed on machine section <br>
   - **Search box** - Select File from the drop–down menu and enter the file name
 
 2.	Open the **Actions** menu and select **Remove file from blocked list**.
