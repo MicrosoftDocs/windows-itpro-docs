@@ -141,15 +141,17 @@ In this view, you'll see the name of the investigation, when it started and ende
 
 ![Image of investigation details window](images/atp-analyze-auto-ir.png)
 
-The upper right corner shows that the automated investigation started on 10:26:59 AM and ended on 10:56:26 AM. Therefore, the entire investigation was running for 29 minutes and 27 seconds. 
-
-The pending time of 16 minutes and 51 seconds reflects two possible pending states: pending for asset (for example, the device might have disconnected from the network) or pending for approval. 
+The progress ring shows two status indicators:
+- Orange ring - shows the pending portion of the investigation
+- Green ring - shows the running time portion of the investigation
 
 ![Image of start, end, and pending time for an automated investigation](images/atp-auto-investigation-pending.png) 
 
+In the example image, the automated investigation started on 10:26:59 AM and ended on 10:56:26 AM. Therefore, the entire investigation was running for 29 minutes and 27 seconds. 
+
+The pending time of 16 minutes and 51 seconds reflects two possible pending states: pending for asset (for example, the device might have disconnected from the network) or pending for approval. 
+
 From this view, you can also view and add comments and tags about the investigation.
-
-
 
 ### Investigation page
 The investigation page gives you a quick summary on the status, alert severity, category, and detection source.
