@@ -72,7 +72,7 @@ The table shows the minimum requirements for each deployment.
 ## Frequently Asked Questions
 
 ### Can I deploy Windows Hello for Business using System Center Configuration Manager?
-Windows Hello for Business deployments using System Center Configuration Manager need to move to the hybrid deploymnet model that uses Active Directory Federation Services. Deployments using System Center Configuration Manager wil no long be supported after November 2018.
+Windows Hello for Business deployments using System Center Configuration Manager need to move to the hybrid deployment model that uses Active Directory Federation Services. Deployments using System Center Configuration Manager will no long be supported after November 2018.
 
 ### What is the password-less strategy?
 

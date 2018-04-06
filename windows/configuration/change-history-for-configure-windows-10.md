@@ -22,6 +22,12 @@ The topics in this library have been updated for Windows 10, version 1803. The f
 - Windows Configuration Designer setting: [AccountManagement](wcd/wcd-accountmanagement.md)
 - Windows Configuration Designer setting: [RcsPresence](wcd/wcd-rcspresence.md)
 
+## April 2018
+
+New or changed topic | Description
+--- | ---
+[Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md) | Updated endpoints.
+
 ## March 2018
 
 New or changed topic | Description
