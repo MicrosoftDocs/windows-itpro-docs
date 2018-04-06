@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 03/20/2018
+ms.date: 04/03/2018
 ---
 
 # Frequently asked questions and troubleshooting Windows Analytics
@@ -33,6 +33,8 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 
 [Disable Upgrade Readiness](#disable-upgrade-readiness)
 
+[Exporting large data sets](#exporting-large-data-sets)
+
 
 ### Devices not showing up
 
@@ -54,6 +56,11 @@ If devices are not showing up as expected, find a representative device and foll
 If you want to check a large number of devices, you should run the latest script at scale from your management tool of choice (for example, System Center Configuration Manager) and check the results centrally.
 
 If you think the issue might be related to a network proxy, check "Enable data sharing" section of the [Enrolling devices in Windows Analytics](windows-analytics-get-started.md) topic. Also see [Understanding connectivity scenarios and the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog.
+
+If you have deployed images that have not been generalized, then many of them might have the same ID and so analytics will see them as one device. If you suspect this is the issue, then you can reset the IDs on the non-generalized devices by performing these steps:
+1. Net stop diagtrack
+2. Reg delete hklm\software\microsoft\sqmclient /v MachineId /f
+3. Net start diagtrack
 
 
 ### Device Health crash data not appearing
@@ -174,6 +181,24 @@ If you want to stop using Upgrade Readiness and stop sending diagnostic data dat
 3.	If you enabled **Internet Explorer Site Discovery**, you can disable Internet Explorer data collection by setting the *IEDataOptIn* registry key to value "0".  The IEDataOptIn key can be found under: *HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection*.
 4.	**Optional step:** You can also remove the “CommercialId” key from: "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection". 
 
+### Exporting large data sets
+
+Azure Log Analytics is optimized for advanced analytics of large data sets and can efficiently generate summaries and analytics for them. The query language is not optimized (or intended) for returning large raw data sets and has built-in limits to protect against overuse. There are times when it might be necessary to get more data than this, but that should be done sparingly since this is not the intended way to use Azure Log Analytics. The following code snippet shows how to retrieve data from UAApp one “page” at a time:
+
+```
+let snapshot = toscalar(UAApp | summarize max(TimeGenerated));
+let pageSize = 100000;
+let pageNumber = 0;
+ 
+UAApp
+| where TimeGenerated == snapshot and IsRollup==true and RollupLevel=="Granular" and Importance == "Low install count"
+| order by AppName, AppVendor, AppVersion desc
+| serialize
+| where row_number(0) >= (pageSize * pageNumber)
+| take pageSize
+```
+
+ 
 
 ## Other common questions
 
