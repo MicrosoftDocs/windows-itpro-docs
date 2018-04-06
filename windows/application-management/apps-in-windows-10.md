@@ -73,12 +73,12 @@ System apps are integral to the operating system. Here are the typical system ap
 |                  | Microsoft.Windows. SecureAssessmentBrowser | x    |  x  | x    |No                                                     |
 | Start            | Microsoft.Windows. ShellExperienceHost     | x    |  x  | x    |No                                                     |
 | Windows Feedback | Microsoft.WindowsFeedback                  | *    |  *  |      |No                                                     |
-|                  | Microsoft.XboxGameCallableUI               | x    |  x  |      |No                                                     |
+|                  | Microsoft.XboxGameCallableUI               | x    |  x  |  x   |No                                                     |
 | Contact Support* | Windows.ContactSupport                     | x    |  *  |      |Through the Optional Features app                      |
 | Settings         | Windows.ImmersiveControlPanel              | x    |  x  |      |No                                                     |
 | Connect          | Windows.MiracastView                       | x    |     |      |No                                                     |
 | Print 3D         | Windows.Print3D                            |      |  x  |      |Yes                                                    |
-| Print UI         | Windows.PrintDialog                        | x    |  x  |      |No                                                     |
+| Print UI         | Windows.PrintDialog                        | x    |  x  |  x   |No                                                     |
 | Purchase UI      | Windows.PrintDialog                        |      |     | x    |No                                                     |
 |                  | Microsoft.AsyncTextService                 |      |     | x    |No                                                     |
 |                  | Microsoft.MicrosoftEdgeDevToolsClient      |      |     | x    |No                                                     |
@@ -94,7 +94,7 @@ System apps are integral to the operating system. Here are the typical system ap
 Here are the typical installed Windows apps in Windows 10 versions 1703, 1709, and 1803.
 
 | Name               | Full name                                | 1703 | 1709 | 1803 |Uninstall through UI? |
-|--------------------|------------------------------------------|------|------|------|----------------------|
+|--------------------|------------------------------------------|:------:|:------:|:------:|----------------------|
 | Remote Desktop     | Microsoft.RemoteDesktop                  | x    | x    |      | Yes                  |
 | PowerBI            | Microsoft.Microsoft PowerBIforWindows    | x    |      |      | Yes                  |
 | Code Writer        | ActiproSoftwareLLC.562882FEEB491         | x    | x    | x    | Yes                  |
@@ -102,7 +102,7 @@ Here are the typical installed Windows apps in Windows 10 versions 1703, 1709, a
 | Pandora            | PandoraMediaInc.29680B314EFC2            | x    | x    | x    | Yes                  |
 | Photoshop Express  | AdobeSystemIncorporated. AdobePhotoshop  | x    | x    | x    | Yes                  |
 | Duolingo           | D5EA27B7.Duolingo- LearnLanguagesforFree | x    | x    | x    | Yes                  |
-| Network Speed Test | Microsoft.NetworkSpeedTest               | x    | x    |      | Yes                  |
+| Network Speed Test | Microsoft.NetworkSpeedTest               | x    | x    | x    | Yes                  |
 | Paid Wi-FI         |                                          | x    |      |      | Yes                  |
 | Flipboard          |                                          |      |      |      | Yes                  |
 |                    | Microsoft.Advertising.Xaml               | x    | x    | x    | Yes                  |
@@ -158,10 +158,10 @@ Here are the typical installed Windows apps in Windows 10 versions 1703, 1709, a
 Here are the typical provisioned Windows apps in Windows 10 versions 1703, 1709, and 1803.
 
 | Name                            | Full name                              | 1703 | 1709 | 1803 | Uninstall through UI?     |
-|---------------------------------|----------------------------------------|------|------|------|---------------------------|
+|---------------------------------|----------------------------------------|:------:|:------:|:------:|---------------------------|
 | 3D Builder                      | Microsoft.3DBuilder                    | x    |      |      | Yes                       |
 | Alarms & Clock                  | Microsoft.WindowsAlarms                | x    |  x   | x    | No                        |
-| App Installer                   | Microsoft.DesktopAppInstaller          | x    |  x   | x    | No                        |
+| App Installer                   | Microsoft.DesktopAppInstaller          | x    |  x   | x    | Via Settings App          |
 | Calculator                      | Microsoft.WindowsCalculator            | x    |  x   | x    | No                        |
 | Camera                          | Microsoft.WindowsCamera                | x    |  x   | x    | No                        |
 | Feedback Hub                    | Microsoft.WindowsFeedbackHub           | x    |  x   | x    | Yes                       |
