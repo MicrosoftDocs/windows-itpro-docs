@@ -24,38 +24,16 @@ ms.date: 04/23/2018
 <span id="enable" />
 ## Enable Windows Mixed Reality in WSUS
 
-To enable users to download the Windows Mixed Reality software for devices running Windows 10, version 1703, enterprises using WSUS can approve Windows Mixed Reality package by unblocking **KB4016509: FeatureOnDemandOasis - Windows 10 version 1703 for x64-based Systems**. 
+1. [Check your version of Windows 10.](https://support.microsoft.com/help/13443/windows-which-operating-system)
+  >[!NOTE]
+  >You must be on at least Windows 10, version 1709, to run Windows Mixed Reality.
+2. Windows Mixed Reality Feature on Demand (FOD) is downloaded from Windows Update. If access to Windows Update is blocked, you must manually install the Windows Mixed Reality FOD.
+  a. [Download the FOD .cab file for Windows 10, version 1803](http://download.microsoft.com/download/C/5/E/C5E2B78C-9BE2-437A-9675-00545BCB2DE4/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab) or [Download the FOD .cab file for Windows 10, version 1709](http://download.microsoft.com/download/6/F/8/6F816172-AC7D-4F45-B967-D573FB450CB7/Microsoft-Windows-Holographic-Desktop-FOD-Package.cab)
+  b. Install the FOD.
+  c. In **Settings** > **Update & Security** > **Windows Update**, select **Check for updates**.
 
 
-Enterprises devices running Windows 10, version 1709, will not be able to install Windows Mixed Reality Feature on Demand (FOD) directly from WSUS. 
 
-Windows Mixed Reality will also require a Data Assets update package, if available. In Windows 10, version 1803, you must import the Data Assets update package from the [Microsoft Update Catalog](http://www.catalog.update.microsoft.com/). In Windows 10, version 1709, you can import the Data Assets update package from the catalog or from WSUS. 
-
-
-For Windows 10, version 1709 and version 1803, use one of the following options to install Windows Mixed Reality software:
-
-- Manually install the Mixed Reality software 
-  
-  - [Download the Microsoft Windows Holographic Desktop Feature on Demand package.](http://download.microsoft.com/download/6/F/8/6F816172-AC7D-4F45-B967-D573FB450CB7/Microsoft-Windows-Holographic-Desktop-FOD-Package.cab)
-
-  - Obtain the latest Data Assets update package (which is a stand-alone package and not the feature on demand). *Add instructions on locating asset package when we know what an MR KB title will look like* 
- 
-  - Use `Add-Capability` to add the Windows Mixed Reality feature on demand package to the image, then use `Add-Package` to apply the latest cumulative update, and then use `Add-Package` to add the Data Assets update package. 
-  
-    For reference: here are the dism commands available to add feature on demand packages and update packages to the image. 
- 
-    ```
-    Add-Package  
-    Dism /Image:C:\test\offline /Add-Package /PackagePath:C:\packages\package1.cab 
-    ``` 
-    ```
-    Add-Capability  
-    Dism /Online /Add-Capability /Name: OpenSSH.Client~~~~0.0.1.0  
-    ```
- 
-  - Go to **Settings** > **Update & Security** > **Windows Update** and **Check for updates**.
-      
-- IT admin can create [Side by side feature store (shared folder)](https://technet.microsoft.com/library/jj127275.aspx)
 
 
 <span id="block" /> 
