@@ -25,11 +25,16 @@ ms.date: 04/23/2018
 ## Enable Windows Mixed Reality in WSUS
 
 1. [Check your version of Windows 10.](https://support.microsoft.com/help/13443/windows-which-operating-system)
+
   >[!NOTE]
   >You must be on at least Windows 10, version 1709, to run Windows Mixed Reality.
+
 2. Windows Mixed Reality Feature on Demand (FOD) is downloaded from Windows Update. If access to Windows Update is blocked, you must manually install the Windows Mixed Reality FOD.
+
   a. [Download the FOD .cab file for Windows 10, version 1803](http://download.microsoft.com/download/C/5/E/C5E2B78C-9BE2-437A-9675-00545BCB2DE4/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab) or [Download the FOD .cab file for Windows 10, version 1709](http://download.microsoft.com/download/6/F/8/6F816172-AC7D-4F45-B967-D573FB450CB7/Microsoft-Windows-Holographic-Desktop-FOD-Package.cab)
+
   b. Install the FOD.
+  
   c. In **Settings** > **Update & Security** > **Windows Update**, select **Check for updates**.
 
 
