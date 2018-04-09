@@ -83,13 +83,15 @@ Machine related properties are being extended to account for:
 
 
 
-### Group machines
-Machine group affiliation can represent geographic location, specific activity, importance level and others. Grouping machines with similar attributes can be handy when you need to apply contextual action on a specific list of machines. After creating groups, you can apply the Group filter on the Machines list to get a narrowed list of machines.
+### Use tags to group machines with similar attributes 
+Add tags on machines that have similar attributes, then use the tags to create Machine groups for role based access (RBAC) or filter machines by selecting the Tag filter on the Machines list.
+
+Machine group affiliation can represent geographic location, specific activity, importance level and others. Grouping machines with similar tags can be handy when you need to apply contextual action on a specific list of machines. After creating groups, you can apply the Group filter on the Machines list to get a narrowed list of machines.
 
 Machine group is defined in the following registry key entry of the machine:
 
 -	Registry key: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`
--	Registry key value (string): Group
+-	Registry key value (string): Tag
 
 
 ### Set standard tags on machines
