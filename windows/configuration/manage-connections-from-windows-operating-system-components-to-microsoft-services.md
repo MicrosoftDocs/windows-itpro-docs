@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic-msft
-ms.date: 03/22/2018
+ms.date: 04/09/2018
 ---
 
 # Manage connections from Windows operating system components to Microsoft services
@@ -40,22 +40,28 @@ Note that **Get Help** and **Give us Feedback** links no longer work after the W
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
 
+## What's new in Windows 10, version 1803 Enterprise edition
+
+Here's a list of changes that were made to this article for Windows 10, version 1803:
+
+- Added MDM policy to turn off privacy notifications
+
 ## What's new in Windows 10, version 1709 Enterprise edition
 
 Here's a list of changes that were made to this article for Windows 10, version 1709:
 
-- Added the Phone calls section.
-- Added the Storage Health section.
-- Added discussion of apps for websites in the Microsoft Store section.
+- Added the Phone calls section
+- Added the Storage Health section
+- Added discussion of apps for websites in the Microsoft Store section
 
 ## What's new in Windows 10, version 1703 Enterprise edition
 
 Here's a list of changes that were made to this article for Windows 10, version 1703:
 
-- Added an MDM policy for Font streaming.
-- Added an MDM policy for Network Connection Status Indicator.
-- Added an MDM policy for the Micosoft Account Sign-In Assistant.
-- Added instructions for removing the Sticky Notes app.
+- Added an MDM policy for Font streaming
+- Added an MDM policy for Network Connection Status Indicator
+- Added an MDM policy for the Micosoft Account Sign-In Assistant
+- Added instructions for removing the Sticky Notes app
 - Added registry paths for some Group Policies
 - Added the Find My Device section
 - Added the Tasks section
