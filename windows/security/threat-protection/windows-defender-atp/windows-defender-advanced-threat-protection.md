@@ -35,7 +35,7 @@ Get a quick, but in-depth overview of Windows Defender ATP for Windows 10 and th
 
 Windows Defender ATP uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
 
--   **machine behavioral sensors**: Embedded in Windows 10, these sensors
+-   **Endpoint behavioral sensors**: Embedded in Windows 10, these sensors
     collect and process behavioral signals from the operating system
     (for example, process, registry, file, and network communications)
     and sends this sensor data to your private, isolated, cloud instance of Windows Defender ATP.
