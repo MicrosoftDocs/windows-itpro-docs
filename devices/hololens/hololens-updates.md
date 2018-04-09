@@ -23,7 +23,6 @@ Mobile device management (MDM) providers use the [Policy Configuration Service P
 The Update policies supported for HoloLens are:
 
 - [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate) 
-- [Update/AllowMUUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowmuupdateservice)
 - [Update/AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)  
 - [Update/RequireDeferUpgrade](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requiredeferupgrade) 
 - [Update/RequireUpdateApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)

@@ -28,7 +28,7 @@ The [AssignedAccess Configuration Service Provider (CSP)](https://docs.microsoft
 For HoloLens devices running Windows 10, version 1803, there are three methods that you can use to configure the device as a kiosk:
 - You can [use Microsoft Intune](#intune-kiosk), for HoloLens devices managed by Intune, to configure single-app and multi-app kiosks.
 - You can [use a provisioning package](#ppkg-kiosk) to configure single-app and multi-app kiosks.
-- You can [use the Windows Device Portal](#portal-kiosk) to configure single-app kiosks.
+- You can [use the Windows Device Portal](#portal-kiosk) to configure single-app kiosks. This method is recommended only for demonstrations, as it requires that developer mode be enabled on the device.
 
 For HoloLens devices running Windows 10, version 1607, you can [use the Windows Device Portal](#portal-kiosk) to configure single-app kiosks.
 
