@@ -44,7 +44,7 @@ Windows Defender ATP RBAC is designed to support your tier- or role-based model 
 - **Control who can take specific action**
   - Create custom roles and control what Windows Defender ATP capabilities they can access with granularity.
  
-- **Control who can see specific information**
+- **Control who can see information on specific machine group or groups**
   - [Create machine groups](machine-groups-windows-defender-advanced-threat-protection.md) by specific criteria such as names, tags, domains, and others, then grant role access to them using a specific Azure AD user group.
 
 To implement role-based access, you'll need to define admin roles, assign corresponding permissions, and assign Azure Active Directory (Azure AD) user groups assigned to the roles.
@@ -80,9 +80,7 @@ When you first log in to the Windows Defender ATP portal, you're granted either 
 		  - **Investigate alerts** - Users can manage alerts, initiate automated investigations, collect investigation packages, manage machine tags, and export machine timeline.
 		  - **Approve or take action** - Users can take response actions and approve or dismiss pending remediation actions.
 		  - **Manage system settings** - Users can configure settings, SIEM and threat intel API settings, advanced settings, preview features, and automated file uploads.
-		  - **Manage security settings** - Users can configure alert suppression settings, manage allowed or blocked lists for automation, manage folder exclusions for automation, onboard and offboard machines, and manage email notifications.
-		  - **Monitor dashboards** - Users can view all dashboards.
-
+		  
 4.	Click **Next** to assign the user to a group.
 
 5.	Use the filter to select the Azure AD group that you'd like the user to be a part of.
