@@ -221,10 +221,12 @@ If there are pending actions on an Automated investigation, you'll see a pop up 
 
 ![Image of pending actions](images\atp-pending-actions-notification.png)
 
-When you click on the pending actions link, you'll be taken to the pending actions page.
+When you click on the pending actions link, you'll be taken to the pending actions page. You can also navigate to the page from the navigation page by going to **Automated investigation** > **Pending actions**.
 
  
 The pending actions view aggregates all investigations that require an action for an investigation to proceed or be completed.
+
+![Image of pending actions page](images/atp-pending-actions-list.png)
 
 Use the Customize columns drop-down menu to select columns that you'd like to show or hide. 
 
