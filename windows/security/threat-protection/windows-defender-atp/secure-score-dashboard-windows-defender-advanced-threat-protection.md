@@ -42,7 +42,7 @@ The **Secure Score dashboard** displays a snapshot of:
 ![Secure Score dashboard](images/atp-dashboard-security-analytics-full.png)
 
 ## Microsoft secure score
-The Microsoft secure score tile is reflective of your organizations security posture for Windows and Office 365. It displays combined Microsoft Secure score along with Office 365 and allows you to drill down into each portal for further analysis. You can improve this score by taking the steps in configuring each of the security controls in the optimal settings.
+The Microsoft secure score tile is reflective of the sum of all the Windows Defender security controls that are configured according to the recommended baseline and Office 365 controls. It allows you to drill down into each portal for further analysis. You can also improve this score by taking the steps in configuring each of the security controls in the optimal settings.
 
 ![Image of Microsoft secure score tile](images/atp-ms-secure-score.png)
 
@@ -294,6 +294,7 @@ You can take the following actions to increase the overall security score of you
 
 For more information, see [Windows Defender Firewall with Advanced Security](https://docs.microsoft.com/en-us/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security).
 
+<!--
 ### Windows Hello optimization
 For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Hello is fulfilled. 
 
@@ -308,6 +309,7 @@ For a machine to be considered "well configured", it must comply to a minimum ba
 You can take the following actions to increase the overall security score of your organization:
 - Configure Windows Hello for all users
 - Encourage all users to use Windows Hello
+-->
 
 ### BitLocker optimization
 For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for BitLocker is fulfilled. 
