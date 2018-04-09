@@ -42,7 +42,7 @@ The **Secure Score dashboard** displays a snapshot of:
 ![Secure Score dashboard](images/atp-dashboard-security-analytics-full.png)
 
 ## Microsoft secure score
-The Microsoft secure score tile is reflective of the average score of all the Windows Defender security controls that are configured according to the recommended baseline and the Office 365 controls. You can improve this score by taking the steps in configuring each of the security controls in the optimal settings.
+The Microsoft secure score tile is reflective of your organizations security posture for Windows and Office 365. It displays combined Microsoft Secure score along with Office 365 and allows you to drill down into each portal for further analysis. You can improve this score by taking the steps in configuring each of the security controls in the optimal settings.
 
 ![Image of Microsoft secure score tile](images/atp-ms-secure-score.png)
 
