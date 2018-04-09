@@ -1071,10 +1071,18 @@ To turn off notifications network usage:
 
     -   Set to **Enabled**.
 
-        -or-
+    -or-
 
 -   Create a REG\_DWORD registry setting in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\PushNotifications!NoCloudApplicationNotification**, with a value of 1 (one)
 
+    -or-
+
+
+-   Apply the Notifications/DisallowCloudNotification MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-notifications#notifications-disallowcloudnotification), where:
+
+    -   **0**. WNS notifications allowed
+    -   **1**. No WNS notifications allowed
+    
 In the **Notifications** area, you can also choose which apps have access to notifications.
 
 To turn off **Let apps access my notifications**:
