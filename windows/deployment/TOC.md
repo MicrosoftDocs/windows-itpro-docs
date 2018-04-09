@@ -8,8 +8,14 @@
 ### [Configure VDA for Subscription Activation](vda-subscription-activation.md)
 ### [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md)
 ## [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md)
-### [Submit Windows 10 upgrade errors](upgrade/submit-errors.md)
+### [Quick fixes](upgrade\quick-fixes.md)
 ### [SetupDiag](upgrade/setupdiag.md)
+### [Troubleshooting upgrade errors](upgrade/troubleshoot-upgrade-errors.md)
+### [Windows error reporting](upgrade/windows-error-reporting.md)
+### [Upgrade error codes](upgrade/upgrade-error-codes.md)
+### [Log files](upgrade/log-files.md)
+### [Resolution procedures](upgrade/resolution-procedures.md)
+### [Submit Windows 10 upgrade errors](upgrade/submit-errors.md)
 
 ## [Deploy Windows 10](deploy.md)
 
@@ -224,6 +230,7 @@
 ### [Deploy Windows 10 updates using System Center Configuration Manager](update/waas-manage-updates-configuration-manager.md)
 ### [Manage device restarts after updates](update/waas-restart.md)
 ### [Manage additional Windows Update settings](update/waas-wu-settings.md)
+### [Determine the source of Windows updates](update/windows-update-sources.md)
 ### [Windows Insider Program for Business](update/waas-windows-insider-for-business.md)
 #### [Introduction to the Windows Insider Program for Business](update/WIP4Biz-intro.md)
 #### [Windows Insider Program for Business Frequently Asked Questions](update/waas-windows-insider-for-business-faq.md)

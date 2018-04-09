@@ -16,6 +16,10 @@ ms.localizationpriority: high
 **Applies to**
 -   Windows 10
 
+>[!NOTE]
+>This is a 300 level topic (moderate advanced).<br>
+>See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
+
 [SetupDiag.exe](https://go.microsoft.com/fwlink/?linkid=870142) is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
 
 SetupDiag works by examining Windows Setup log files. It attempts to parse these log files to determine the root cause of a failure to update or upgrade the computer to Windows 10. SetupDiag can be run on the computer that failed to update, or you can export logs from the computer to another location and run SetupDiag in offline mode.
