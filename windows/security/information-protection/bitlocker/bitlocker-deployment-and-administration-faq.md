@@ -69,6 +69,10 @@ For example:
 In BitLocker, recovery consists of decrypting a copy of the volume master key using either a recovery key stored on a USB flash drive or a cryptographic key derived from a recovery password. 
 The TPM is not involved in any recovery scenarios, so recovery is still possible if the TPM fails boot component validation, malfunctions, or is removed.
 
+## What can prevent BitLocker from binding to PCR[7]?
+
+This happens if if a non-Windows OS booted prior to Windows or Secure Boot is not available to the device, either because it has been disabled or the hardware does not suppoprt it.
+
 ## Can I swap hard disks on the same computer if BitLocker is enabled on the operating system drive?
 
 Yes, you can swap multiple hard disks on the same computer if BitLocker is enabled, but only if the hard disks were BitLocker-protected on the same computer. The BitLocker keys are unique to the TPM and operating system drive, so if you want to prepare a backup operating system or data drive for use in case of disk failure, you need to make sure that they were matched with the correct TPM. You can also configure different hard drives for different operating systems and then enable BitLocker on each one with different authentication methods (such as one with TPM-only and one with TPM+PIN) without any conflicts.
