@@ -1688,6 +1688,74 @@ The following fields are available:
 - **XboxLiveSandboxId**  Retrieves the developer sandbox id if the device is internal to MS.
 
 
+## Deployment events
+
+### DeploymentTelemetry.Deployment_End
+
+Event to indicate that a Deployment 360 API has completed. 
+
+The following fields are available:
+
+- **ClientId**  Client ID of user utilizing the D360 API
+- **ErrorCode**  Error code of action
+- **FlightId**  Flight being used
+- **Mode**  Phase in upgrade 
+- **RelatedCV**  CV of any other related events
+- **Result**  End result of action
+
+
+### DeploymentTelemetry.Deployment_Initialize
+
+Event to indicate that the Deployment 360 APIs have been initialized for use.
+
+The following fields are available:
+
+- **ClientId**  Client ID of user utilizing the D360 API
+- **ErrorCode**  Error code of action
+- **FlightId**  Flight being used
+- **RelatedCV**  CV of any other related events
+- **Result**  Phase Setup is in
+
+
+### DeploymentTelemetry.Deployment_SetupBoxLaunch
+
+Event to indicate that the Deployment 360 APIs have launched Setup Box.
+
+The following fields are available:
+
+- **ClientId**  Client ID of user utilizing the D360 API
+- **FlightId**  Flight being used
+- **Quiet**  Whether Setup will run in quiet mode or in full
+- **RelatedCV**  CV of any other related events
+- **SetupMode**  Phase Setup is in 
+
+
+### DeploymentTelemetry.Deployment_SetupBoxResult
+
+Event to indicate that the Deployment 360 APIs have received a return from Setup Box.
+
+The following fields are available:
+
+- **ClientId**  Client ID of user utilizing the D360 API
+- **ErrorCode**  Error code of action
+- **FlightId**  Flight being used
+- **Quiet**  Whether Setup will run in quiet mode or in full
+- **RelatedCV**  Correlation vector of any other related events
+- **SetupMode**  Phase that Setup is in
+
+
+### DeploymentTelemetry.Deployment_Start
+
+Event to indicate that a Deployment 360 API has been called.
+
+The following fields are available:
+
+- **ClientId**  Client ID of user utilizing the D360 API
+- **FlightId**  Flight being used
+- **Mode**  Phase in upgrade 
+- **RelatedCV**  CV of any other related events
+
+
 ## Diagnostic data events
 
 ### TelClientSynthetic.AuthorizationInfo_RuntimeTransition
