@@ -1,16 +1,16 @@
 ---
-title: Update Windows 10 in the enterprise (Windows 10)
+title: Update Windows 10 in enterprise deployments (Windows 10)
 description: Windows as a service provides an all-new way to think about building, deploying, and servicing Windows 10.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: DaniHalfin
+author: Jaimeo
 ms.localizationpriority: high
-ms.author: daniha
-ms.date: 11/17/2017
+ms.author: jaimeo
+ms.date: 04/06/2018
 ---
 
-# Update Windows 10 in the enterprise
+# Update Windows 10 in enterprise deployments
 
 
 **Applies to**
