@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: brianlic-msft
-ms.date: 10/17/2017
+ms.date: 04/04/2018
 ---
 
 # Configure Windows diagnostic data in your organization
@@ -143,11 +143,17 @@ All diagnostic data data is encrypted using SSL and uses certificate pinning dur
 
 The Microsoft Data Management Service routes data back to our secure cloud storage. Only Microsoft personnel with a valid business justification are permitted access.
 
-The following table defines the endpoints for diagnostic data services:
+The following table defines the endpoints for Connected User Experiences and Telemetry component:
+
+Windows release | Endpoint
+--- | ---
+Windows 10, versions 1703 and 1709 | Diagnostics data: v10.vortex-win.data.microsoft.com/collect/v1</br></br>Functional: v20.vortex-win.data.microsoft.com/collect/v1</br>Windows Advanced Threat Protection is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com/collect/v1</br>settings-win.data.microsoft.com
+Windows 10, version 1607 | v10.vortex-win.data.microsoft.com</br></br>settings-win.data.microsoft.com
+
+The following table defines the endpoints for other diagnostic data services:
 
 | Service | Endpoint |
 | - | - |
-| Connected User Experiences and Telemetry component | v10.vortex-win.data.microsoft.com<br />settings-win.data.microsoft.com |
 | [Windows Error Reporting](http://msdn.microsoft.com/library/windows/desktop/bb513641.aspx) | watson.telemetry.microsoft.com |
 | [Online Crash Analysis](http://msdn.microsoft.com/library/windows/desktop/ee416349.aspx) | oca.telemetry.microsoft.com |
 | OneDrive app for Windows 10 | vortex.data.microsoft.com/collect/v1 |

@@ -16,9 +16,7 @@ ms.date: 04/03/2018
 **Applies to**
 -   Windows 10
 
-This topic for the IT professional answers frequently asked questions concerning the requirements to use, upgrade, deploy and administer, and key management policies for BitLocker.
-
-BitLocker is a data protection feature that encrypts the hard drives on your computer to provide enhanced protection against data theft or exposure on computers and removable drives that are lost or stolen, and more secure data deletion when BitLocker-protected computers are decommissioned as it is much more difficult to recover deleted data from an encrypted drive than from a non-encrypted drive.
+This topic links to frequently asked questions about BitLocker. BitLocker is a data protection feature that encrypts drives on your computer to help prevent data theft or exposure. BitLocker-protected computers can also delete data more securely when they are decommissioned because it is much more difficult to recover deleted data from an encrypted drive than from a non-encrypted drive.
 
 -   [Overview and requirements](bitlocker-overview-and-requirements-faq.md)
 -   [Upgrading](bitlocker-upgrading-faq.md)
@@ -29,8 +27,6 @@ BitLocker is a data protection feature that encrypts the hard drives on your com
 -   [Security](bitlocker-security-faq.md)
 -   [BitLocker Network Unlock](bitlocker-network-unlock-faq.md)
 -   [Using BitLocker with other programs and general questions](bitlocker-using-with-other-programs-faq.md)
-
-
 
 
 ## More information
