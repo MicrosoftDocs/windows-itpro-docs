@@ -91,7 +91,7 @@ Machine group affiliation can represent geographic location, specific activity, 
 Machine group is defined in the following registry key entry of the machine:
 
 -	Registry key: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`
--	Registry key value (string): Tag
+-	Registry key value (string): Group
 
 
 ### Set standard tags on machines
