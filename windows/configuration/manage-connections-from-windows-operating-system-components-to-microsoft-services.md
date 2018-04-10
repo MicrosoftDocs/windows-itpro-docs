@@ -44,8 +44,9 @@ We are always striving to improve our documentation and welcome your feedback. Y
 
 Here's a list of changes that were made to this article for Windows 10, version 1803:
 
-- Added MDM policy to turn off privacy notifications
-- Added Group Policy and Registry options to turn off Address Bar drop-down list suggestions
+- Added a policy to turn off privacy notifications
+- Added a policy to turn off  configuration updates for the Books Library
+- Added a policy to turn off Address Bar drop-down list suggestions
 
 ## What's new in Windows 10, version 1709 Enterprise edition
 
@@ -435,7 +436,7 @@ Alternatively, you could use the registry to set the Group Policies.
 | Policy                                               | Registry path                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Turn on Suggested Sites| HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Suggested Sites<br/>REG_DWORD: Enabled <br />Value: 0|
-| Allow Microsoft services to provide enhanced suggestions as the user types in the Address Bar | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\AllowServicePoweredQSA <br />Value: 0|
+| Allow Microsoft services to provide enhanced suggestions as the user types in the Address Bar | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer<br/>REG_DWORD: AllowServicePoweredQSA <br />Value: 0|
 | Turn off the auto-complete feature for web addresses | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\AutoComplete<br/>REG_SZ: AutoSuggest<br />Value: **No** |
 | Turn off browser geolocation | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Geolocation<br/>REG_DWORD: PolicyDisableGeolocation <br />Value: 1 |
 | Prevent managing SmartScreen filter | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\PhishingFilter<br/>REG_DWORD: EnabledV9 <br />Value: 0 |
@@ -537,7 +538,7 @@ Find the Microsoft Edge Group Policy objects under **Computer Configuration** &g
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Allow configuration updates for the Books Library            | Choose whether configuration updates are done for the Books Library. <br /> Default: Not configured       |
+| Allow configuration updates for the Books Library            | Choose whether configuration updates are done for the Books Library. <br /> Default: Disabled       |
 | Configure Autofill                                    | Choose whether employees can use autofill on websites. <br /> Default: Enabled                      |
 | Configure Do Not Track         | Choose whether employees can send Do Not Track headers.<br /> Default: Disabled                     |
 | Configure Password Manager                            | Choose whether employees can save passwords locally on their devices. <br /> Default: Enabled       |
@@ -1209,6 +1210,10 @@ To turn off **Choose apps that can access contacts**:
     -   **1**. Force allow
     -   **2**. Force deny
 
+    -or-
+
+- Create a REG\_DWORD registry setting named **LetAppsAccessContacts** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+
 ### <a href="" id="bkmk-priv-calendar"></a>17.9 Calendar
 
 In the **Calendar** area, you can choose which apps have access to an employee's calendar.
@@ -1607,10 +1612,6 @@ Enterprise customers can manage their Windows activation status with volume lice
 For Windows 10:
 
 - Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client Online AVS Validation**
-
-    -or-
-
-- Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessContacts**, with a value of 2 (two).
 
    -or-
 
