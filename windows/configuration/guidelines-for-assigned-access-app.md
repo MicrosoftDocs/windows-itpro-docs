@@ -42,11 +42,13 @@ Avoid selecting Windows apps that are designed to launch other apps as part of t
 
 ## Guidelines for web browsers
 
-In Windows 10, 
+In Windows 10, version 1803, you can install the **Kiosk Browser** app from Microsoft to use as your kiosk app. **Kiosk Browser** can be configured as a digital sign by setting the default URL to your online content and blocking navigation. Use **Kiosk Browser** as an interactive display by setting the default URL to your website and blocking other URLs.
+
+**Kiosk Browser** must be downloaded for offline licensing using Microsoft Store For Business. You can deploy **Kiosk Browser** to devices running Windows 10, version 1803 (Pro, Business, Enterprise, and Education).
 
 1. [Get **Kiosk Browser** in Microsoft Store for Business with offline license type.](https://docs.microsoft.com/microsoft-store/acquire-apps-microsoft-store-for-business#acquire-apps)
 2. [Deploy **Kiosk Browser** to kiosk devices.](https://docs.microsoft.com/microsoft-store/distribute-offline-apps)
-3. Configure policies
+3. Configure policies using settings from the Policy Configuration Service Provider (CSP) for [KioskBrowser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-kioskbrowser). These settings can be configured using your MDM service provider, or [in a provisioning package](/provisioning-packages/provisioning-create-package.md).
 
 >[!NOTE]
 >Microsoft Edge and any third-party web browsers that can be set as a default browser have special permissions beyond that of most Windows apps. Microsoft Edge is not currently supported for assigned access.
