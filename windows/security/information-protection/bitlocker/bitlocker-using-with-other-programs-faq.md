@@ -16,6 +16,10 @@ ms.date: 04/03/2018
 **Applies to**
 -   Windows 10
 
+## Can I use EFS with BitLocker?
+
+Yes, you can use Encrypting File System (EFS) to encrypt files on a BitLocker-protected drive. BitLocker helps protect the entire operating system drive against offline attacks, whereas EFS can provide additional user-based file level encryption for security separation between multiple users of the same computer. You can also use EFS in Windows to encrypt files on other drives that are not encrypted by BitLocker. The root secrets of EFS are stored by default on the operating system drive; therefore, if BitLocker is enabled for the operating system drive, data that is encrypted by EFS on other drives is also indirectly protected by BitLocker.
+
 ## Can I run a kernel debugger with BitLocker?
 
 Yes. However, the debugger should be turned on before enabling BitLocker. Turning on the debugger ensures that the correct measurements are calculated when sealing to the TPM, allowing the computer to start properly. If you need to turn debugging on or off when using BitLocker, be sure to suspend BitLocker first to avoid putting your computer into recovery mode.

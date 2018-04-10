@@ -47,6 +47,10 @@ No, BitLocker does not encrypt and decrypt the entire drive when reading and wri
 You can can Group Policy settings to require that data drives be BitLocker-protected before a BitLocker-protected computer can write data to them. For more info, see [BitLocker Group Policy settings](bitlocker-group-policy-settings.md).
 When these policy settings are enabled, the BitLocker-protected operating system will mount any data drives that are not protected by BitLocker as read-only.
 
+## What is Used Disk Space Only encryption?
+
+BitLocker in Windows 10 lets users choose to encrypt just their data. Although it's not the most secure way to encrypt a drive, this option can reduce encryption time by more than 99 percent, depending on how much data that needs to beencrypted. For more information, see [Used Disk Space Only encryption](bitlocker-device-encryption-overview-windows-10.md#used-disk-space-only-encryption).
+
 ## What system changes would cause the integrity check on my operating system drive to fail?
 
 The following types of system changes can cause an integrity check failure and prevent the TPM from releasing the BitLocker key to decrypt the protected operating system drive:
@@ -69,9 +73,9 @@ For example:
 In BitLocker, recovery consists of decrypting a copy of the volume master key using either a recovery key stored on a USB flash drive or a cryptographic key derived from a recovery password. 
 The TPM is not involved in any recovery scenarios, so recovery is still possible if the TPM fails boot component validation, malfunctions, or is removed.
 
-## What can prevent BitLocker from binding to PCR[7]?
+## What can prevent BitLocker from binding to PCR 7?
 
-This happens if if a non-Windows OS booted prior to Windows or Secure Boot is not available to the device, either because it has been disabled or the hardware does not suppoprt it.
+This happens if a non-Windows OS booted prior to Windows, or if Secure Boot is not available to the device, either because it has been disabled or the hardware does not support it.
 
 ## Can I swap hard disks on the same computer if BitLocker is enabled on the operating system drive?
 
