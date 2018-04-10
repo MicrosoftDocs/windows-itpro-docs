@@ -285,7 +285,7 @@ PreventTabPreloading | Prevent Microsoft Edge from starting and loading the Star
 
 ## KioskBrowser
 
-These settings apply to the **Kiosk Browser** app available in Microsoft Store. For more information, see [Guidelines for web browsers](https://docs.microsoft.com/configuration/guidelines-for-assigned-access-app#guidelines-for-web-browsers).
+These settings apply to the **Kiosk Browser** app available in Microsoft Store. For more information, see [Guidelines for web browsers](https://docs.microsoft.com/windows/configuration/guidelines-for-assigned-access-app#guidelines-for-web-browsers).
 
 | Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: | :---: |
