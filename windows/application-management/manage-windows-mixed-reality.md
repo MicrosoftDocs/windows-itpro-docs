@@ -31,14 +31,23 @@ ms.date: 04/23/2018
 
 2. Windows Mixed Reality Feature on Demand (FOD) is downloaded from Windows Update. If access to Windows Update is blocked, you must manually install the Windows Mixed Reality FOD.
 
-  a. Download [the FOD .cab file for Windows 10, version 1803](http://download.microsoft.com/download/C/5/E/C5E2B78C-9BE2-437A-9675-00545BCB2DE4/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab) or [the FOD .cab file for Windows 10, version 1709](http://download.microsoft.com/download/6/F/8/6F816172-AC7D-4F45-B967-D573FB450CB7/Microsoft-Windows-Holographic-Desktop-FOD-Package.cab).
+  a. Download [the FOD .cab file for Windows 10, version 1803](http://download.microsoft.com/download/C/5/E/C5E2B78C-9BE2-437A-9675-00545BCB2DE4/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab) or [the FOD .cab file for Windows 10, version 1709]
+  (http://download.microsoft.com/download/6/F/8/6F816172-AC7D-4F45-B967-D573FB450CB7/Microsoft-Windows-Holographic-Desktop-FOD-Package.cab).
 
-  b. Install the FOD.
+  >[!NOTE]
+  >You must download the FOD package that matches your operating system version.
+
+  b. Use `Add-Capability` to add the Windows Mixed Reality FOD package to the image.
+
+    ```
+    Add-Package
+    Dism /Image:C:\test\offline /Add-Package /PackagePath:*path to the cab file*
+    ```
 
   c. In **Settings** > **Update & Security** > **Windows Update**, select **Check for updates**.
 
 
-
+IT admins can also create [Side by side feature store (shared folder)](https://technet.microsoft.com/library/jj127275.aspx) to allow access to the FOD.
 
 
 <span id="block" /> 

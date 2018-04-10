@@ -42,25 +42,21 @@ Avoid selecting Windows apps that are designed to launch other apps as part of t
 
 ## Guidelines for web browsers
 
-Microsoft Edge and any third-party web browsers that can be set as a default browser have special permissions beyond that of most Windows apps. Microsoft Edge is not supported for assigned access.
+In Windows 10, 
 
-If you use a web browser as your assigned access app, consider the following tips: 
+1. [Get **Kiosk Browser** in Microsoft Store for Business with offline license type.](https://docs.microsoft.com/microsoft-store/acquire-apps-microsoft-store-for-business#acquire-apps)
+2. [Deploy **Kiosk Browser** to kiosk devices.](https://docs.microsoft.com/microsoft-store/distribute-offline-apps)
+3. Configure policies
 
-- You can download browsers that are optimized to be used as a kiosk from the Microsoft Store.
-- You can create your own web browser Windows app by using the WebView class. Learn more about developing your own web browser app:
-   - [Creating your own browser with HTML and JavaScript](https://blogs.windows.com/msedgedev/2015/08/27/creating-your-own-browser-with-html-and-javascript/) 
-   - [WebView class](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.webview.aspx)
-   - [A web browser built with JavaScript as a Windows app](https://github.com/MicrosoftEdge/JSBrowser/tree/v1.0)
+>[!NOTE]
+>Microsoft Edge and any third-party web browsers that can be set as a default browser have special permissions beyond that of most Windows apps. Microsoft Edge is not currently supported for assigned access.
+
+
+You can create your own web browser Windows app by using the WebView class. Learn more about developing your own web browser app:
+- [Creating your own browser with HTML and JavaScript](https://blogs.windows.com/msedgedev/2015/08/27/creating-your-own-browser-with-html-and-javascript/) 
+- [WebView class](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.webview.aspx)
+- [A web browser built with JavaScript as a Windows app](https://github.com/MicrosoftEdge/JSBrowser/tree/v1.0)
  
-**To block access to the file system from Internet Explorer's web address bar**
-1.	On the Start screen, type the following:
-    `gpedit.msc`
-2.	Press **Enter** or click the gpedit icon to launch the group policy editor.
-3.	In the group policy editor, navigate to **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar**.
-4.	Select **Remove Run menu from Start Menu**, select **Disabled**, and click **Apply**. Disabling this policy prevents users from entering the following into the Internet Explorer Address Bar:
-   - A UNC path (\\\\*server*\\\\*share*)
-   - A local drive (C:\\)
-   - A local folder (\temp)
 
 
 ## Secure your information
