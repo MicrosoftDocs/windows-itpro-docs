@@ -29,7 +29,7 @@ Some desktop devices in an enterprise serve a special purpose, such as a PC in t
 **Which type of app will your kiosk run?** Your kiosk can run a Universal Windows Platform (UWP) app or a Classic Windows desktop application. When the kiosk account signs in, the kiosk app will launch automatically. If the kiosk app is closed, it will automatically restart.
 
 >[!TIP]
->For **digital signage**, simply select a digital sign player as your kiosk app. You can also use the **Kiosk Browser** app ([new in Windows 10, version 1803)](/provisioning-packages/guidelines-for-assigned-access-app.md#guidelines-for-web-browsers) and configure it to show your online content.
+>For **digital signage**, simply select a digital sign player as your kiosk app. You can also use the **Kiosk Browser** app ([new in Windows 10, version 1803)](guidelines-for-assigned-access-app.md#guidelines-for-web-browsers) and configure it to show your online content.
 
 **Which type of user account will be the kiosk account?** The kiosk account can be a local standard user account, a local administrator account, a domain account, or an Azure Active Directory (Azure AD) account, depending on the method that you use to configure the kiosk. 
 
