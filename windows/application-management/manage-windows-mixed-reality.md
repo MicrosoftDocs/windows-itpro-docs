@@ -18,7 +18,9 @@ ms.date: 04/23/2018
 -   Windows 10
 
 
-[Windows Mixed Reality](https://blogs.windows.com/windowsexperience/2017/10/03/the-era-of-windows-mixed-reality-begins-october-17/) was introduced in Windows 10, version 1709 (also known as the Fall Creators Update). Organizations that use Windows Server Update Services (WSUS) must take action to [enable Windows Mixed Reality](#enable). Any organization that wants to prohibit use of Windows Mixed Reality can [block the installation of the Mixed Reality Portal](#block).
+[Windows Mixed Reality](https://blogs.windows.com/windowsexperience/2017/10/03/the-era-of-windows-mixed-reality-begins-october-17/) was introduced in Windows 10, version 1709 (also known as the Fall Creators Update), as a [Windows 10 Feature on Demand (FOD)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities). Features on Demand are Windows feature packages that can be added at any time. Common features include language resources like handwriting recognition or the .NET Framework (.NetFx3). When a Windows 10 PC needs a new feature, it can request the feature package from Windows Update.
+
+Organizations that use Windows Server Update Services (WSUS) must take action to [enable Windows Mixed Reality](#enable). Any organization that wants to prohibit use of Windows Mixed Reality can [block the installation of the Mixed Reality Portal](#block).
 
 
 <span id="enable" />
@@ -35,9 +37,9 @@ ms.date: 04/23/2018
   (http://download.microsoft.com/download/6/F/8/6F816172-AC7D-4F45-B967-D573FB450CB7/Microsoft-Windows-Holographic-Desktop-FOD-Package.cab).
 
   >[!NOTE]
-  >You must download the FOD package that matches your operating system version.
+  >You must download the FOD .cab file that matches your operating system version.
 
-  b. Use `Add-Capability` to add the Windows Mixed Reality FOD package to the image.
+  b. Use `Add-Package` to add Windows Mixed Reality FOD to the image.
 
     ```
     Add-Package
@@ -47,7 +49,7 @@ ms.date: 04/23/2018
   c. In **Settings** > **Update & Security** > **Windows Update**, select **Check for updates**.
 
 
-IT admins can also create [Side by side feature store (shared folder)](https://technet.microsoft.com/library/jj127275.aspx) to allow access to the FOD.
+IT admins can also create [Side by side feature store (shared folder)](https://technet.microsoft.com/library/jj127275.aspx) to allow access to the Windows Mixed Reality FOD.
 
 
 <span id="block" /> 
