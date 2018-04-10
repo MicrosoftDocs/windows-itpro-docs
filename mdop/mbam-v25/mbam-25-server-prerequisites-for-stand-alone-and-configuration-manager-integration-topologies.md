@@ -286,6 +286,10 @@ The following table lists the installation prerequisites for the MBAM Administra
 </ul></td>
 </tr>
 <tr class="even">
+<td align="left"><p>ASP.NET MVC 4.0</p></td>
+<td align="left"><p>[ASP.NET MVC 4 download](https://go.microsoft.com/fwlink/?LinkId=392271)</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p>Service Principal Name (SPN)</p></td>
 <td align="left"><p>The web applications require an SPN for the virtual host name under the domain account that you use for the web application pools.</p>
 <p>If your administrative rights permit you to create SPNs in Active Directory Domain Services, MBAM creates the SPN for you. See [Setspn](http://technet.microsoft.com/library/cc731241.aspx) for information about the rights required to create SPNs.</p>
