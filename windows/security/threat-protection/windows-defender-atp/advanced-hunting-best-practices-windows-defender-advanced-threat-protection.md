@@ -75,7 +75,7 @@ ProcessCreationEvents
 | where ProcessCommandLine == "net stop MpsSvc"
 | limit 10
 
-// Better query - filters on filename, does case-insnsitive matches
+// Better query - filters on filename, does case-insensitive matches
 ProcessCreationEvents
 | where FileName in~ ("net.exe", "net1.exe") and ProcessCommandLine contains "stop" and ProcessCommandLine contains "MpsSvc" 
 
