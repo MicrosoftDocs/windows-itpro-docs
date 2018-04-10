@@ -151,7 +151,7 @@ From the list of events that are displayed in the timeline, you can examine the 
 
 You can also use the [Alerts spotlight](investigate-alerts-windows-defender-advanced-threat-protection.md#artifact-timeline) feature to see the correlation between alerts and events on a specific machine.
 
-Expand an event to view associated processes related to the event. Click on the circle next to any process or IP address in the process tree to investigate additional details of the identified processes. This action brings up the **Details pane** which includes execution context of processes, network communications and a summary of metadata on the file or IP address.
+Expand an event to view associated processes related to the event. Click on the circle next to any process or IP address in the process tree to investigate additional details of the identified processes. This action brings up the **Details pane** which includes execution context of processes, network communications and a summary of meta data on the file or IP address.
 
 The details pane enriches the ‘in-context’ information across investigation and exploration activities, reducing the need to switch between contexts. It lets you focus on the task of tracing associations between attributes without leaving the current context.
 
@@ -206,13 +206,9 @@ Machine group affiliation can represent geographic location, specific activity, 
 
 You can create machine groups in the context of role-based access (RBAC) to control who can take specific action or who can see information on a specific machine group or groups by assigning the machine group to a user group. For more information, see [Manage portal access using role-based access control](rbac-windows-defender-advanced-threat-protection.md).
 
-You can also use machine groups to assign specific remediation levels to apply during automated investigations. 
+You can also use machine groups to assign specific remediation levels to apply during automated investigations. For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md).
 
 In an investigation, you can filter the Machines list to just specific machine groups by using the Groups filter. 
-
-For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md).
-
-
 
 
 ## Related topics
