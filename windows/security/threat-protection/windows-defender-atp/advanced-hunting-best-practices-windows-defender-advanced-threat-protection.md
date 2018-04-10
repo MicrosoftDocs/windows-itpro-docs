@@ -57,7 +57,7 @@ NetworkCommunicationEvents
 
 The query summarizes by both InitiatingProcessId and InitiatingProcessCreationTime - to make sure the query looks at a single process, and not mixing multiple processes with the same process ID.
 
-### Commandlines may vary - when applicable, filter on file names and do fuzzy matching on the commandline
+### Commandlines may vary - when applicable, filter on file names and do fuzzy matching
 There are many possible ways to specify a commandline that will do exactly the same thing, but will look different.
 In example, the attacker could specify the process image file name without a path, with full path, without the file extension, using environment variables, add quotes, etc.
 Also, the attacker could change the order of some parameters, add many quotes or spaces, and much more.
@@ -83,7 +83,7 @@ ProcessCreationEvents
 ProcessCreationEvents
 | where FileName in~ ("net.exe", "net1.exe")
 | extend CanonicalCommandLine=replace("\"", "", ProcessCommandLine)
-| where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "WinDefend" 
+| where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
 ```
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-bestpractices-belowfoldlink)        
