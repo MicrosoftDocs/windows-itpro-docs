@@ -7,7 +7,7 @@ ms.sitesec: library
 author: JaimeO
 ms.localizationpriority: high
 ms.author: jaimeo
-ms.date: 03/24/2018
+ms.date: 04/10/2018
 ---
 
 # Configure Delivery Optimization for Windows 10 updates
@@ -58,13 +58,13 @@ Several Delivery Optimization features are configurable:
 | [Minimum Background QoS](#minimum-background-qos) | DOMinBackgroundQoS | 1607 |
 | [Enable Peer Caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching | 1703 |
 | [Allow uploads while the device is on battery while under set Battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) | DOMinBatteryPercentageAllowedToUpload | 1703 |
-| MaxForegroundDownloadBandwidth | DOPercentageMaxForegroundBandwidth | 1803 |
-| MaxBackgroundDownloadBandwidth | DOPercentageMaxBackgroundBandwidth | 1803 |
-| SetHoursToLimitBackgroundDownloadBandwidth | DOSetHoursToLimitBackgroundDownloadBandwidth | 1803 |
-| SetHoursToLimitForegroundDownloadBandwidth |DOSetHoursToLimitForegroundDownloadBandwidth | 1803 |
-| Select a method to restrict Peer Selection |DORestrictPeerSelectionBy | 1803 | Select the source of Group IDs | DOGroupIdSource | 1803 |
-| Delay background download from http (in secs) | DODelayBackgroundDownloadFromHttp | 1803 |
-| Delay foreground download from http (in secs) | DODelayForegroundDownloadFromHttp | 1803 |
+| [MaxForegroundDownloadBandwidth](#maximum-foreground-download-bandwidth) | DOPercentageMaxForegroundBandwidth | 1803 |
+| [MaxBackgroundDownloadBandwidth](#maximum-background-download-bandwidth) | DOPercentageMaxBackgroundBandwidth | 1803 |
+| [SetHoursToLimitBackgroundDownloadBandwidth](#set-business-hours-to-limit-background-download-bandwidth) | DOSetHoursToLimitBackgroundDownloadBandwidth | 1803 |
+| [SetHoursToLimitForegroundDownloadBandwidth](#set-business-hours-to-limit-foreground-download-bandwidth)  |DOSetHoursToLimitForegroundDownloadBandwidth | 1803 |
+| [Select a method to restrict Peer Selection](select-a-method-to-restrict-peer-selection) |DORestrictPeerSelectionBy | 1803 | Select the source of Group IDs | DOGroupIdSource | 1803 |
+| [Delay background download from http (in secs)](delay-background-download-from-http-in-secs) | DODelayBackgroundDownloadFromHttp | 1803 |
+| [Delay foreground download from http (in secs)](delay-foreground-download-from-http-in-secs) | DODelayForegroundDownloadFromHttp | 1803 |
 
  
 
@@ -173,7 +173,11 @@ This setting specifies the maximum download bandwidth that can be used across al
 
 ### Maximum Foreground Download Bandwidth
 
+[NEED DESCRIPTION]
+
 ### Maximum Background Download Bandwidth
+
+[NEED DESCRIPTION]
 
 ### Percentage of Maximum Download Bandwidth
 
@@ -184,22 +188,22 @@ This setting specifies the maximum download bandwidth that Delivery Optimization
 This setting allows you to limit the amount of upload bandwidth individual clients can use for Delivery Optimization. Consider this setting when clients are providing content to requesting peers on the network. This option is set in kilobytes per second (KB/s). The default setting is 0, or “unlimited” which means Delivery Optimization dynamically optimizes for minimal usage of upload bandwidth; however it does not cap the upload bandwidth rate at a set rate.
 
 ### Set Business Hours to Limit Background Download Bandwidth
- specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
+Specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
 
 ### Set Business Hours to Limit Foreground Download Bandwidth
-specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
+Specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
 
 ### Select a method to restrict peer selection
-restricts peer selection by the options you select.
+Restricts peer selection by the options you select.
 
 ### Select the source of Group IDs
-restricts peer selection to a specific source.
+Restricts peer selection to a specific source.
 
 ### Delay background download from http (in secs)
-allows you to delay the use of an HTTP source in a background download that is allowed to use P2P.
+Allows you to delay the use of an HTTP source in a background download that is allowed to use P2P.
 
 ### Delay foreground download from http (in secs)
-allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use P2P.
+Allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use P2P.
 
 ### Minimum Background QoS
 
@@ -226,15 +230,44 @@ The device can download from peers while on battery regardless of this policy.
 > By default, devices **will not upload while on battery**. To enable uploads while on battery, you need to enable this policy and set the battery value under which uploads pause.
 
 <span id="set-preferred-cache-devices"/>
+
 ## Set “preferred” cache devices for Delivery Optimization
 
 In some cases, IT pros may have an interest in identifying specific devices that will be “preferred” as sources to other devices—for example, devices that have hard-wired connections, large drives that you can use as caches, or a high-end hardware profile. These preferred devices will act as a “master” for the update content related to that devices’s configuration (Delivery Optimization only caches content relative to the client downloading the content).
 
 To specify which devices are preferred, you can set the **Max Cache Age** configuration with a value of **Unlimited** (0). As a result, these devices will be used more often as sources for other devices downloading the same files.
 
-On devices that are not preferred, you can choose to set the following policy to prioritize data coming from local peers instead of the Internet:
+On devices that are not preferred, you can choose to set the following policy to prioritize data coming from local peers instead of the Internet. Set **DOMinBackgroundQoS** with a low value, for example, `64` (which is the equivalent of 64 KB/s).
 
--  Set **DOMinBackgroundQoS** with a low value, for example `64` which is the equivalent of 64 KB/s.
+## Troubleshooting steps if you don't see any bytes from peers
+
+If you don’t see any bytes coming from peers the cause might be one of the following issues:
+
+- Clients aren’t able to reach the Delivery Optimization cloud services.
+- The cloud service doesn’t see other peers on the network. 
+- Clients aren’t able to connect to peers that are offered back from the cloud service.
+ 
+### Clients aren't able to reach the Delivery Optimization cloud services.
+
+To fix this issue, try the following steps:
+
+1. Start a download of an app that is larger than 50 MB from the Store (for example Candy Crush Saga).
+2. Run `Get-DeliveryOptimizationStatus` from an elevated window and share the output (by setting the `DownloadMode` field to **1**).
+
+### The cloud service doesn't see other peers on the network.
+
+If you suspect this is the problem, try these steps:
+
+1. Download the same app on another device on the same network.
+2. Run `Get-DeliveryOptimizationPerfSnap` from an elevated window (the `NumberOfPeers` field should be non-zero).
+
+
+### Clients aren't able to connect to peers offered by the cloud service
+
+If you suspect this is the problem, un a Telnet test between two devices on the network to ensure they can connect using port 7680. To do this, follow these steps:
+
+1. Install Telnet by running **dism /online /Enable-Feature /FeatureName:TelnetClient** from an elevated command prompt.
+2. Run the test. For example, if you are on device with IP 192.168.8.12 and you are trying to test the connection to 192.168.9.17 run **telnet 192.168.9.17 7680** (the syntax is *telnet [destination IP] [port]*. You will either see a connection error or a blinking cursor like this /_. The blinking cursor means success.
 
 
 ## Windows PowerShell cmdlets for analyzing usage
@@ -268,8 +301,7 @@ Using the `-Verbose` option returns additional information:
 | IntConnectionCount | Number of active connections to internet peers | 
 | DownloadMode | Indicates the download mode (see the "Download Mode" section for details) |
  
-
-- `Get-DeliveryOptimizationPerfSnap` returns a list of key performance data:
+`Get-DeliveryOptimizationPerfSnap` returns a list of key performance data:
 
 - Number of files downloaded 
 - Number of files uploaded 
@@ -284,6 +316,15 @@ Using the `-Verbose` option returns additional information:
 - Bytes from peers (per type) 
 - Bytes from CDN  (the number of bytes received over HTTP)
 - Average number of peer connections per download 
+
+
+Starting in Windows 10, version 1803:
+
+`Get-DeliveryOptimizationLog [-Path <etl file path, supports wildcards>] [-Flush]`
+
+If `Path` is not specified, this cmdlet reads all logs from the dosvc log directory, which requires administrator permissions. If `Flush` is specified, the cmdlet stops dosvc before reading logs.
+ 
+Log entries are written to the PowerShell pipeline as objects. To dump logs to a text file, run `Get-DeliveryOptimizationLog | Set-Content <output file>` or something similar.
 
 ## Frequently asked questions
 
