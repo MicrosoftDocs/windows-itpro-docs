@@ -8,7 +8,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
 ms.author: jdecker
-ms.date: 10/20/2017
+ms.date: 04/23/2018
 ---
 
 # Guidelines for choosing an app for assigned access (kiosk mode)
@@ -63,16 +63,15 @@ You can create your own web browser Windows app by using the WebView class. Lear
 
 ## Secure your information
 
-Avoid selecting Windows apps that may expose the information you don’t want to show in your kiosk, since kiosk usually means anonymous access and locates in a public setting like a shopping mall. For example, an app that has a file picker allows the user to gain access to files and folders on the user's system, avoid selecting this type of apps if they provide unnecessary data access.
+Avoid selecting Windows apps that may expose the information you don’t want to show in your kiosk, since kiosk usually means anonymous access and kiosks are often located in public settings like a shopping mall. For example, an app that has a file picker allows the user to gain access to files and folders on the user's system. Avoid selecting this type of apps if they provide unnecessary data access.
 
 ## App configuration
 
-Some apps may require additional configurations before they can be used appropriately in assigned access . For example, Microsoft OneNote requires you to set up a Microsoft account for the assigned access user account before OneNote will open in assigned access. 
-Check the guidelines published by your selected app and do the setup accordingly. 
+Some apps may require additional configurations before they can be used appropriately in assigned access. For example, Microsoft OneNote requires you to set up a Microsoft account for the assigned access user account before OneNote will open in assigned access. Check the guidelines published by your selected app and do the setup accordingly. 
 
 ## Develop your kiosk app
 
-Assigned access in Windows 10 leverages the new lock framework. When an assigned access user signs in, the selected kiosk app is launched above lock  . The kiosk app is actually running as an above lock screen app. 
+Assigned access in Windows 10 leverages the new lock framework. When an assigned access user signs in, the selected kiosk app is launched above the lockscreen. 
 
 Follow the [best practices guidance for developing a kiosk app for assigned access](https://msdn.microsoft.com/library/windows/hardware/mt633799%28v=vs.85%29.aspx). 
 
@@ -80,7 +79,7 @@ Follow the [best practices guidance for developing a kiosk app for assigned acce
 
 The above guidelines may help you select or develop an appropriate Windows app for your assigned access experience. Once you have selected your app, we recommend that you thoroughly test the assigned access experience to ensure that your device provides a good customer experience.
 
- ## Learn more
+## Learn more
 
 [Customizing Your Device Experience with Assigned Access](https://channel9.msdn.com/Events/Build/2016/P508)
 

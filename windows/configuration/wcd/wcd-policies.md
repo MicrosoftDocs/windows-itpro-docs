@@ -285,6 +285,8 @@ PreventTabPreloading | Prevent Microsoft Edge from starting and loading the Star
 
 ## KioskBrowser
 
+These settings apply to the **Kiosk Browser** app available in Microsoft Store. For more information, see [Guidelines for web browsers](../provisioning-packages/guidelines-for-assigned-access-app.md#guidelines-for-web-browsers).
+
 | Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: | :---: |
 [BlockedUrlExceptions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-kioskbrowser#kioskbrowser-blockedurlexceptions) | List of exceptions to the blocked website URLs (with wildcard support). This is used to configure URLs kiosk browsers are allowed to navigate to, which are a subset of the blocked URLs. | X |  |  |  |  |
