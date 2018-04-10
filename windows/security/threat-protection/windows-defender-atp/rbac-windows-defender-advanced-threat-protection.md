@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 04/16/2018
 ---
 
-# Manage portal access using role-based based access control
+# Manage portal access using role-based access control
 **Applies to:**
 
 - Windows 10 Enterprise
