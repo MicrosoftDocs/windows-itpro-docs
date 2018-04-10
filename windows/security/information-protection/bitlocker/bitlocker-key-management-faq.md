@@ -16,6 +16,12 @@ ms.date: 04/03/2018
 **Applies to**
 -   Windows 10
 
+## How can I authenticate or unlock my removable data drive?
+
+You can unlock removable data drives by using a password, a smart card, or you can configure a SID protector to unlock a drive by using your domain credentials. After you've started encryption, the drive can also be automatically unlocked on a specific computer for a specific user account. System administrators can configure which options are available for users, as well as password complexity and minimum length requirements. To unlock by using a SID protector, use Manage-bde:
+
+<code>Manage-bde -protectors -add e: -sid <i>domain\username</i></code>
+
 ## What is the difference between a recovery password, recovery key, PIN, enhanced PIN, and startup key?
 
 For tables that list and describe elements such as a recovery password, recovery key, and PIN, see [BitLocker key protectors](prepare-your-organization-for-bitlocker-planning-and-policies.md#bitlocker-key-protectors) and [BitLocker authentication methods](prepare-your-organization-for-bitlocker-planning-and-policies.md#bitlocker-authentication-methods). 

@@ -17,6 +17,14 @@ ms.date: 04/03/2018
 -   Windows 10
 
 
+## What type of information is stored in AD DS?
+
+Stored information | Description
+-------------------|------------
+Hash of the TPM owner password | Beginning with Windows 10, the password hash is not stored in AD DS by default. The password hash can be stored only if the TPM is owned and the ownership was taken by using components of Windows 8.1 or earlier, such as the BitLocker Setup Wizard or the TPM snap-in.
+BitLocker recovery password | The recovery password allows you to unlock and access the drive in the event of a recovery incident. Domain administrators can view the BitLocker recovery password by using the BitLocker Recovery Password Viewer. For more information about this tool, see [BitLocker: Use BitLocker Recovery Password Viewer](bitlocker-use-bitlocker-recovery-password-viewer.md).
+BitLocker key package | The key package helps to repair damage to the hard disk that would otherwise prevent standard recovery. Using the key package for recovery requires the BitLocker Repair Tool, Repair-bde. 
+
 ## What if BitLocker is enabled on a computer before the computer has joined the domain?
 
 If BitLocker is enabled on a drive before Group Policy has been applied to enforce backup, the recovery information will not be automatically backed up to AD DS when the computer joins the domain or when Group Policy is subsequently applied. However, you can use the **Choose how BitLocker-protected operating system drives can be recovered**, **Choose how BitLocker-protected fixed drives can be recovered** and **Choose how BitLocker-protected removable drives can be recovered** Group Policy settings to require that the computer be connected to a domain before BitLocker can be enabled to help ensure that recovery information for BitLocker-protected drives in your organization is backed up to AD DS.
