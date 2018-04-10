@@ -834,7 +834,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. Desktop users should use Search/DoNotUseWebResults. 
 
 
 Specifies what level of safe search (filtering adult content) is required.
