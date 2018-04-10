@@ -16,10 +16,6 @@ ms.date: 4/10/2018
 # Windows 10, version 1803 basic level Windows diagnostic events and fields
 
 
-> [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
-
  **Applies to**
 
 - Windows 10, version 1803
