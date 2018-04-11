@@ -1617,6 +1617,10 @@ For Windows 10:
 
 -   Apply the Licensing/DisallowKMSClientOnlineAVSValidation MDM policy from the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where 0 is disabled (default) and 1 is enabled.
 
+   -or-
+
+- Create a REG\_DWORD registry setting named **NoGenTicket** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows NT\\CurrentVersion\\Software Protection Platform** with a value of 1 (one).
+
 For Windows Server 2016 with Desktop Experience or Windows Server 2016 Server Core:
 
 - Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client Online AVS Validation**
