@@ -63,9 +63,9 @@ Command lines may vary - when applicable, filter on file names and do fuzzy matc
 
 There are numerous ways to construct a command line to accomplish a task. 
 
-For example, a malicious attacker could specify the process image file name without a path, with full path, without the file extension, using environment variables, add quotes, and others. In addition, the attacker can also change the order of some parameters, add many quotes or spaces, and much more.
+For example, a malicious attacker could specify the process image file name without a path, with full path, without the file extension, using environment variables, add quotes, and others. In addition, the attacker can also change the order of some parameters, add multiple quotes or spaces, and much more.
 
-To create a more durable queries using command lines, it is recommended to:
+To create more durable queries using command lines, it is recommended to:
 - Identify the known processes (such as net.exe, psexec.exe, and others) by matching on the filename fields, instead of filtering on the command line field.
 - When querying for command line arguments, don't look for an exact match on multiple unrelated arguments in a certain order. Instead, use regular expressions or use multiple separate contains operators.
 - Use case insensitive matches. E.g. use '=~', 'in~', 'contains' instead of '==', 'in' or 'contains_cs'
