@@ -152,6 +152,7 @@ To offboard the server, you can use either of the following methods:
     # Reload the configuration and apply changes
     $AgentCfg.ReloadConfiguration()
     ```
+
 ## Related topics
 - [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
 - [Onboard non-Windows machines](configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)
