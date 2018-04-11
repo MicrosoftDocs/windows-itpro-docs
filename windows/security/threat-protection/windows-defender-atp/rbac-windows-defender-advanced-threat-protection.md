@@ -51,18 +51,22 @@ To implement role-based access, you'll need to define admin roles, assign corres
 
 
 ### Before you begin
+Before using RBAC, it's important that you understand the roles that can grant permissions and the consequences of turning on RBAC.
+
 
 > [!WARNING]
-> Before enabling the feature, it's important that you have a Global Administrator role in Azure AD and that have your Azure AD groups ready to reduce the risk of being locked out of the portal. 
+> Before enabling the feature, it's important that you have a Global Administrator role or Security Administrator role in Azure AD and that have your Azure AD groups ready to reduce the risk of being locked out of the portal. 
 
 When you first log in to the Windows Defender ATP portal, you're granted either full access or read only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. Read only access is granted to users with a Security Reader role in Azure AD. 
 
+Someone with a Windows Defender ATP Global administrator role has unrestricted access to all machines, regardless of their machine group association and the Azure AD user groups assignments
+
 > [!WARNING]
-> Only those with Azure AD Global Administrator rights will be able to create and assign roles in the Windows Defender ATP portal, therefore, having the right groups ready in Azure AD is important.
+> Initially, only those with Azure AD Global Administrator or Security Administrator rights will be able to create and assign roles in the Windows Defender ATP portal, therefore, having the right groups ready in Azure AD is important.
 >
-> **Turning on role-based access control will cause users with read-only permissions to lose access until they are assigned to a role.** 
+> **Turning on role-based access control will cause users with read-only permissions (for example, users assigned to Azure AD Security reader role) to lose access until they are assigned to a role.** 
 >
->Users with admin permissions are automatically assigned the default Windows Defender ATP global administrator role with full permissions.
+>Users with admin permissions are automatically assigned the default built-in Windows Defender ATP global administrator role with full permissions. After opting in to use RBAC, you can assign additional users that are not Azure AD Global or Security Administrators to the Windows Defender ATP global administrator role. 
 >
 > After opting in to use RBAC, you cannot revert to the initial roles as when you first logged into the portal. 
 

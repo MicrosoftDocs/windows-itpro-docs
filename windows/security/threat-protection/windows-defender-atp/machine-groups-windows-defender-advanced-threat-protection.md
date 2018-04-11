@@ -77,7 +77,7 @@ As part of the process of creating a machine group, you'll:
 
 You can promote the rank of a machine group so that it is given higher priority during matching. When a machine is matched to more than one group, it is added only to the highest ranked group.
 
-Machines that are not matched to any groups are added to **Ungrouped machines**. By default, remediations performed on machines in this group require approval, but you can also define the remediation level for this group.
+Machines that are not matched to any groups are added to **Ungrouped machines (default)** group. By default, remediations performed on machines in this group require approval, but you can also define the remediation level for this group. By default, ungrouped machines are accessible by all users with portal access. You can change the default behavior by assigning the ungrouped machines to specific Azure AD user groups.
 
 You can also edit and delete groups.
 
