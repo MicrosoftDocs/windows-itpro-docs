@@ -154,7 +154,7 @@ For more information about Internet Explorer Security Zones, see [About URL Secu
 
 ### Distribution at scale without using the deployment script
 
-We recommend using the deployment script to configure devices. However if this is not an option, you can still manage settings by policy as described in the previous section. However, if you don't run the deployment script, you won't benefit from it's error checking and you might have to wait a long time (possibly weeks) before devices send the initial full inventory scan.
+We recommend using the deployment script to configure devices. However if this is not an option, you can still manage settings by policy as described in the previous section. However, if you don't run the deployment script, you won't benefit from its error checking, and you might have to wait a long time (possibly weeks) before devices send the initial full inventory scan.
 
 Note that it is possible to intiate a full inventory scan on a device by calling these commands:
 - CompatTelRunner.exe -m:generaltel.dll -f:DoCensusRun
