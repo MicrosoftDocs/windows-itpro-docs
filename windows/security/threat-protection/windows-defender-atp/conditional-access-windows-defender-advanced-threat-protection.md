@@ -65,13 +65,13 @@ The following example sequence of events explains conditional access in action:
 
  ## Configure conditional access
 > [!NOTE] 
-> You'll need a valid Intune license to enable conditional access.(we need to add Intune link for trail or something like that, we need to ask them)
+> You'll need a valid Intune license to enable conditional access.
 
 You'll need to take the following steps to enable conditional access:
 
 1. Turn on the Microsoft Intune connection. For more information, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md). 
 
-2. Turn on the Windows Defender ATP integration in Intune. For more information, see __________
+2. Turn on the Windows Defender ATP integration in Intune. 
  
     - Ensure that machines are enrolled. For more information see, [Set up enrollment for Windows devices](https://docs.microsoft.com/en-us/intune/windows-enroll).
 

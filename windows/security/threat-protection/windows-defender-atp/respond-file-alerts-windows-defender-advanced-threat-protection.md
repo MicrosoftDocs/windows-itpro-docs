@@ -57,9 +57,11 @@ The action takes effect on machines with Windows 10, version 1703 or later, wher
   - **Search box** - select File from the drop–down menu and enter the file name
 
 2.	Open the **Actions menu** and select **Stop and Quarantine File**.
+
     ![Image of stop and quarantine file action](images/atp-stop-quarantine-file.png)
 
 3. Specify a reason, then click **Yes, stop and quarantine**.
+
     ![Image of stop and quarantine file](images/atp-stop-quarantine.png)
 
     The Action center shows the submission information:
