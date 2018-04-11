@@ -132,7 +132,7 @@ When you're not using the pen, just use the magnet to stick it to the left side 
 ![Inspire your students to tell their stories through video!](images/edu-tib-setp-5-jump2)
 ## <a name="edu-task5></a>5. Engage with students by creating videos
 
-PHOTOS APP VIDEO COMING SOON
+PHOTOS APP VIDEO COMING SOON!
 
 </br>
 
