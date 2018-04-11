@@ -129,11 +129,10 @@ When you're not using the pen, just use the magnet to stick it to the left side 
 
 </br>
 
-![Inspire your students to tell their stories through video!](images/edu-tib-setp-5-jump2)
+![Inspire your students to tell their stories through video!](images/edu-tib-setp-5-jump2.png)
 ## <a name="edu-task5"></a>5. Engage with students by creating videos
 
 PHOTOS APP VIDEO COMING SOON!
-
 </br>
 
 The Photos app now has a built-in video editor, making it easy for you and your students to create movies using photos, video clips, music, 3D models, and special effects.  Improve comprehension, unleash creativity, and capture your student’s imagination through video.
