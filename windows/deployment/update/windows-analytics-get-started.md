@@ -127,7 +127,6 @@ Use a software distribution system such as System Center Configuration Manager t
 
 ### Distributing policies at scale
 There are a number of policies that can be centrally managed to control Windows Analytics device configuration. All of these policies have *preference* registry key equivalents that can be set by using the deployment script. Policy settings override preference settings if both are set.
-
 >[!NOTE]
 >You can only set the diagnostic data level to Enhanced by using policy. For example, this is necessary for using Device Health.
 
@@ -155,4 +154,10 @@ For more information about Internet Explorer Security Zones, see [About URL Secu
 
 ### Distribution at scale without using the deployment script
 
-We recommend using the deployment script to configure devices. However if this is not an option, you can still manage settings by policy as described in the previous section. However, if you don't run the deployment script, you might have to wait a long time (possibly weeks) before devices send the initial full inventory scan.
+We recommend using the deployment script to configure devices. However if this is not an option, you can still manage settings by policy as described in the previous section. However, if you don't run the deployment script, you won't benefit from its error checking, and you might have to wait a long time (possibly weeks) before devices send the initial full inventory scan.
+
+Note that it is possible to intiate a full inventory scan on a device by calling these commands:
+- CompatTelRunner.exe -m:generaltel.dll -f:DoCensusRun
+- CompatTelRunner.exe -m:appraiser.dll -f:DoScheduledTelemetryRun ent
+
+For details on how to run these and how to check results, see the deployment script.
