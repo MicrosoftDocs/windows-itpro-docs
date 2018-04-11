@@ -261,7 +261,7 @@ You can take the following actions to increase the overall security score of you
 
 For more information, see [Windows Defender SmartScreen](../windows-defender-smartscreen/windows-defender-smartscreen-overview.md).
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-sadashboard-belowfoldlink) 
+
 
 ### Windows Defender Firewall optimization
 For a machine to be considered "well configured", Windows Defender Firewall must be turned on and enabled for all profiles and inbound connections are blocked by default. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for Windows Defender Firewall is fulfilled. 
@@ -336,6 +336,8 @@ You can take the following actions to increase the overall security score of you
   - The Windows Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
 
 For more information, see [Manage Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard-manage).
+
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-sadashboard-belowfoldlink) 
 
 ## Related topics
 - [Understand the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)
