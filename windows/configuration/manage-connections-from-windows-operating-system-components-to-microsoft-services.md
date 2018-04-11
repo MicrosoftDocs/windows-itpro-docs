@@ -44,8 +44,8 @@ We are always striving to improve our documentation and welcome your feedback. Y
 
 Here's a list of changes that were made to this article for Windows 10, version 1803:
 
-- Added a policy to turn off privacy notifications
-- Added a policy to turn off  configuration updates for the Books Library
+- Added a policy to turn off notifications network usage
+- Added a policy to turn off configuration updates for the Books Library
 - Added a policy to turn off Address Bar drop-down list suggestions
 
 ## What's new in Windows 10, version 1709 Enterprise edition
