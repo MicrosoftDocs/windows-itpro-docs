@@ -26,7 +26,7 @@ ms.date: 03/18/2018
 | [![Try Learning Tools Immersive Reader](images/edu-TIB-setp-2-v3.png)](#edu-task2) | **Interested in significantly improving your students' reading speed and comprehension?<sup>[1](#footnote1)</sup>** </br>Try the [Learning Tools Immersive Reader](#edu-task2) to see how kids can learn to read faster, using text read aloud, and highlighting words for syntax. |
 | [![Launch Microsoft Teams](images/edu-TIB-setp-3-v3.png)](#edu-task3) | **Looking to foster collaboration, communication, and critical thinking in the classroom?** </br>Launch [Microsoft Teams](#edu-task3) and learn how to set up digital classroom discussions, respond to student questions, and organize class content. |
 | [![Open OneNote](images/edu-TIB-setp-4-v3.png)](#edu-task4) | **Trying to expand classroom creativity and interaction between students?** </br>Open [OneNote](#edu-task4) and create an example group project for your class. |
-| [![Try Photos app](images/edu-tib-setp-5-v4.png)(#edu-task5) | **Curious about telling stories through video?** </br>Try the [Photos app](#edu-task5) to make your own example video. |
+| [![Try Photos app](images/edu-tib-setp-5-v4.png)](#edu-task5) | **Curious about telling stories through video?** </br>Try the [Photos app](#edu-task5) to make your own example video. |
 | [![Play with Minecraft: Education Edition](images/edu-TIB-setp-5-v3.png)](#edu-task6) | **Want to teach kids to further collaborate and problem solve?** </br>Play with [Minecraft: Education Edition](#edu-task5) to see how it can be used as a collaborative and versatile platform across subjects to encourage 21st century skills. |
 |  |  |
 
@@ -130,7 +130,7 @@ When you're not using the pen, just use the magnet to stick it to the left side 
 </br>
 
 ![Inspire your students to tell their stories through video!](images/edu-tib-setp-5-jump2)
-## <a name="edu-task5></a>5. Engage with students by creating videos
+## <a name="edu-task5"></a>5. Engage with students by creating videos
 
 PHOTOS APP VIDEO COMING SOON!
 
@@ -151,7 +151,7 @@ Use video to create a project summary.
 7. Select **Add photos and videos** and then **From my collection**. Scroll to select the 6 additional videos and select **Add**.
 8. Drag the videos to the Storyboard, one by one. Your project should look roughly like this:
 
-![Photos app layout showing videos added in previous steps](images/photo_app_1.png)
+  ![Photos app layout showing videos added in previous steps](images/photo_app_1.png)
 
 9. Select the first card in the Storyboard (the video of the project materials) and select **Text**, type a title in, a text style, a layout, and select **Done**. 
 10.	Select the third card in the Storyboard (the video of the children assembling the maze) and select **Trim**.  Drag the trim handle on the left to shorten the duration of the clip and select **Done**. 
@@ -162,7 +162,7 @@ Use video to create a project summary.
   4. Play back your effect.
   5. Select **Done** when you have it where you want it.
 
-![Lighting bolt effect being added to a video clip](images/photo_app_2.png)
+  ![Lighting bolt effect being added to a video clip](images/photo_app_2.png)
 
 12. Select **Music** and select a track from the **Recommended** music collection.
   1. The music will update automatically to match the length of your video project, even as you make changes.
