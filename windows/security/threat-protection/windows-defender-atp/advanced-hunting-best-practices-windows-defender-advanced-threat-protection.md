@@ -57,18 +57,22 @@ NetworkCommunicationEvents
 
 The query summarizes by both InitiatingProcessId and InitiatingProcessCreationTime - to make sure the query looks at a single process, and not mixing multiple processes with the same process ID.
 
-### Commandlines may vary - when applicable, filter on file names and do fuzzy matching
-There are many possible ways to specify a commandline that will do exactly the same thing, but will look different.
-In example, the attacker could specify the process image file name without a path, with full path, without the file extension, using environment variables, add quotes, etc.
-Also, the attacker could change the order of some parameters, add many quotes or spaces, and much more.
+### Using command lines queries
 
-To create more durable queries on commandlines, it is recommended to:
-- Identify known processes (such as net.exe, psexec.exe, etc.) by matching on the filename fields, instead of filtering on the commandline field.
-- When querying for commandline arguments, don't look for an exact match on multiple unrelated arguments in a certain order. Instead, use regular expressions or use multiple seperate contains operators.
-- Do case insensitive matches. E.g. use '=~', 'in~', 'contains' instead of '==', 'in' or 'contains_cs'
-- To mitigate DOS commandline obfuscation techniques, consider removing quotes, replacing commas with spaces, and replacing multiple consecutive spaces with a single space. This is just the start of handling DOS obfuscation techniques, but it does mitigate the most common ones.
+Command lines may vary - when applicable, filter on file names and do fuzzy matching. 
 
-In example, here is a non-durable query for using net.exe to stop the Windows Defender Firewall service:
+There are numerous ways to construct a command line to accomplish a task. 
+
+For example, a malicious attacker could specify the process image file name without a path, with full path, without the file extension, using environment variables, add quotes, and others. In addition, the attacker can also change the order of some parameters, add many quotes or spaces, and much more.
+
+To create a more durable queries using command lines, it is recommended to:
+- Identify the known processes (such as net.exe, psexec.exe, and others) by matching on the filename fields, instead of filtering on the command line field.
+- When querying for command line arguments, don't look for an exact match on multiple unrelated arguments in a certain order. Instead, use regular expressions or use multiple separate contains operators.
+- Use case insensitive matches. E.g. use '=~', 'in~', 'contains' instead of '==', 'in' or 'contains_cs'
+- To mitigate DOS command line obfuscation techniques, consider removing quotes, replacing commas with spaces, and replacing multiple consecutive spaces with a single space. This is just the start of handling DOS obfuscation techniques, but it does mitigate the most common ones.
+
+The following example query shows various ways to construct a query that looks for the file *net.exe* to stop the Windows Defender Firewall service:
+
 ```
 // Non-durable query - do not use
 ProcessCreationEvents
