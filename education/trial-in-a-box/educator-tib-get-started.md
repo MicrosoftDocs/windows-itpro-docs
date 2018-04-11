@@ -27,7 +27,7 @@ ms.date: 03/18/2018
 | [![Launch Microsoft Teams](images/edu-TIB-setp-3-v3.png)](#edu-task3) | **Looking to foster collaboration, communication, and critical thinking in the classroom?** </br>Launch [Microsoft Teams](#edu-task3) and learn how to set up digital classroom discussions, respond to student questions, and organize class content. |
 | [![Open OneNote](images/edu-TIB-setp-4-v3.png)](#edu-task4) | **Trying to expand classroom creativity and interaction between students?** </br>Open [OneNote](#edu-task4) and create an example group project for your class. |
 | [![Try Photos app](images/edu-tib-setp-5-v4.png)](#edu-task5) | **Curious about telling stories through video?** </br>Try the [Photos app](#edu-task5) to make your own example video. |
-| [![Play with Minecraft: Education Edition](images/edu-TIB-setp-6-v4.png)](#edu-task6) | **Want to teach kids to further collaborate and problem solve?** </br>Play with [Minecraft: Education Edition](#edu-task5) to see how it can be used as a collaborative and versatile platform across subjects to encourage 21st century skills. |
+| [![Play with Minecraft: Education Edition](images/edu-tib-setp-6-v4.png)](#edu-task6) | **Want to teach kids to further collaborate and problem solve?** </br>Play with [Minecraft: Education Edition](#edu-task5) to see how it can be used as a collaborative and versatile platform across subjects to encourage 21st century skills. |
 |  |  |
 
 </br>
