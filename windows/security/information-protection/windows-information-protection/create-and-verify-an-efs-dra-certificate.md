@@ -85,7 +85,7 @@ It's possible that you might revoke data from an unenrolled device only to later
 
    Where "*new_location*" is in a different directory. This can be on the employee’s device or on a shared folder on a computer that runs Windows 8 or Windows Server 2012 or newer and can be accessed while you're logged in as a data recovery agent.
 
-   To start Robocopy in S mode, open **Task Manager**. Click **File** > **Run new task** and type the command. 
+   To start Robocopy in S mode, open Task Manager. Click **File** > **Run new task**, type the command, and click **Create this task with administrative privileges**.
    
    ![Robocopy in S mode](images\robocopy-s-mode.png)
 
