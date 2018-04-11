@@ -156,7 +156,7 @@ Expand an event to view associated processes related to the event. Click on the 
 The details pane enriches the ‘in-context’ information across investigation and exploration activities, reducing the need to switch between contexts. It lets you focus on the task of tracing associations between attributes without leaving the current context.
 
 ## Add machine tags
-While investigating a machine, you can add tags on machines. Machine tags support proper mapping of the network, enabling you to attach different tags to machines to capture context and to enable dynamic list creation as part of an incident. 
+You can add tags on machines during an investigation. Machine tags support proper mapping of the network, enabling you to attach different tags to capture context and to enable dynamic list creation as part of an incident. 
 
 You can add tags on machines using the following ways:
 - By setting a registry key value
