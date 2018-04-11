@@ -61,18 +61,18 @@ The following table provides a full list of supported integration points for Off
 |Extension Point|Description|Office 2010|
 |---|---|---|
 |Lync meeting Join Plug-in for Firefox and Chrome|User can join Lync meetings from Firefox and Chrome||
-|Sent to OneNote Print Driver|User can print to OneNote||
+|Sent to OneNote Print Driver|User can print to OneNote|Yes|
 |OneNote Linked Notes|OneNote Linked Notes||
 |Send to OneNote Internet Explorer Add-In|User can send to OneNote from IE||
 |Firewall Exception for Lync and Outlook|Firewall Exception for Lync and Outlook||
 |MAPI Client|Native apps and add-ins can interact with virtual Outlook through MAPI||
 |SharePoint Plugin for Firefox|User can use SharePoint features in Firefox||
-|Mail Control Panel Applet|User gets the mail control panel applet in Outlook||
-|Primary Interop Assemblies|||
-|Office Document Cache Handler|||
-|Outlook Protocol Search handler|||
-|Active X Controls:<br>- Groove.SiteClient<br>- PortalConnect.PersonalSite<br>- SharePoint.openDocuments<br>-  SharePoint.ExportDatabase<br>- SharePoint.SpreadSheetLauncher<br>- SharePoint.StssyncHander<br>- SharePoint.DragUploadCtl<br>- SharePoint.DragDownloadCtl<br>- Sharpoint.OpenXMLDocuments<br> - Sharepoint.ClipboardCtl<br>- WinProj.Activator<br>- Name.NameCtrl<br>- STSUPld.CopyCtl<br>- CommunicatorMeetingJoinAx.JoinManager<br>- LISTNET.Listnet<br>- OneDrive Pro Browser Helper|For more information about ActiveX controls, see the [ActiveX Control API Reference](<https://msdn.microsoft.com/library/office/ms440037(v=office.14).aspx>).||
-|OneDrive Pro Icon Overlays|||
+|Mail Control Panel Applet|User gets the mail control panel applet in Outlook|Yes|
+|Primary Interop Assemblies|Support managed add-ins||
+|Office Document Cache Handler|Allows Document Cache for Office applications||
+|Outlook Protocol Search handler|User can search in Outlook|Yes|
+|Active X Controls:<br>- Groove.SiteClient<br>- PortalConnect.PersonalSite<br>- SharePoint.openDocuments<br>-  SharePoint.ExportDatabase<br>- SharePoint.SpreadSheetLauncher<br>- SharePoint.StssyncHander<br>- SharePoint.DragUploadCtl<br>- SharePoint.DragDownloadCtl<br>- Sharpoint.OpenXMLDocuments<br> - Sharepoint.ClipboardCtl<br>- WinProj.Activator<br>- Name.NameCtrl<br>- STSUPld.CopyCtl<br>- CommunicatorMeetingJoinAx.JoinManager<br>- LISTNET.Listnet<br>- OneDrive Pro Browser Helper|Active X Control. <br><br>For more information about ActiveX controls, see the [ActiveX Control API Reference](<https://msdn.microsoft.com/library/office/ms440037(v=office.14).aspx>).||
+|OneDrive Pro Icon Overlays|Windows explorer shell icon overlays when users look at folders OneDrive Pro folders||
 
 
 <table>
@@ -237,33 +237,27 @@ The following table provides a full list of supported integration points for Off
 </tbody>
 </table>
 
- 
-
 ## Additional resources
 
+### Office 2013 App-V Packages Additional Resources
 
-**Office 2013 App-V Packages Additional Resources**
+* [Supported scenarios for deploying Microsoft Office as a sequenced App-V Package](https://support.microsoft.com/en-us/kb/2772509)
 
-[Supported scenarios for deploying Microsoft Office as a sequenced App-V Package](https://support.microsoft.com/en-us/kb/2772509)
+### Office 2010 App-V Packages
 
-**Office 2010 App-V Packages**
+* [Microsoft Office 2010 Sequencing Kit for Microsoft Application Virtualization 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=38399)
+* [Known issues when you create or use an App-V 5.0 Office 2010 package](https://support.microsoft.com/en-us/kb/2828619)
+* [How To Sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](https://support.microsoft.com/en-us/kb/2830069)
 
-[Microsoft Office 2010 Sequencing Kit for Microsoft Application Virtualization 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=38399)
+### Connection Groups
 
-[Known issues when you create or use an App-V 5.0 Office 2010 package](https://support.microsoft.com/en-us/kb/2828619)
+* [Managing Connection Groups](appv-managing-connection-groups.md)
+* [Connection groups on the App-V team blog](https://blogs.msdn.microsoft.com/gladiator/tag/connection-groups/)
 
-[How To Sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](https://support.microsoft.com/en-us/kb/2830069)
+### Dynamic Configuration
 
-**Connection Groups**
-
-[Managing Connection Groups](appv-managing-connection-groups.md)
-
-[Connection groups on the App-V team blog](https://blogs.technet.microsoft.com/gladiatormsft/tag/connection-groups/)
-
-**Dynamic Configuration**
-
-[About App-V Dynamic Configuration](appv-dynamic-configuration.md)
+* [About App-V Dynamic Configuration](appv-dynamic-configuration.md)
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
