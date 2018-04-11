@@ -13,7 +13,8 @@ ms.date: 10/23/2017
 # Windows Defender Application Guard overview
 
 **Applies to:**
-- Windows 10 Enterprise edition, version 1709
+- Windows 10 Enterprise edition, version 1709 or higher
+- Windows 10 Professional edition, version 1803
 
 The threat landscape is continually evolving. While hackers are busy developing new techniques to breach enterprise networks by compromising workstations, phishing schemes remain one of the top ways to lure employees into social engineering attacks.
  
@@ -27,13 +28,15 @@ If an employee goes to an untrusted site through either Microsoft Edge or Intern
 ![Hardware isolation diagram](images/appguard-hardware-isolation.png)
 
 ### What types of devices should use Application Guard?
-Application Guard has been created to target 3 types of enterprise systems:
+Application Guard has been created to target several types of systems:
 
 - **Enterprise desktops.** These desktops are domain-joined and managed by your organization. Configuration management is primarily done through System Center Configuration Manager or Microsoft Intune. Employees typically have Standard User privileges and use a high-bandwidth, wired, corporate network.
 
 - **Enterprise mobile laptops.** These laptops are domain-joined and managed by your organization. Configuration management is primarily done through System Center Configuration Manager or Microsoft Intune. Employees typically have Standard User privileges and use a high-bandwidth, wireless, corporate network.
 
 - **Bring your own device (BYOD) mobile laptops.** These personally-owned laptops are not domain-joined, but are managed by your organization through tools like Microsoft Intune. The employee is typically an admin on the device and uses a high-bandwidth wireless corporate network while at work and a comparable personal network while at home.
+
+- **Personal devices.** These personally-owned desktops or mobile laptops are not domain-joined or managed by an organization. The user is an admin on the device and uses a high-bandwidth wireless personal network while at home or a comparable public network while outside.
 
 ## In this section
 |Topic |Description |
