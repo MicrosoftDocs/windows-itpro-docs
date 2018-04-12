@@ -123,7 +123,7 @@ Take the following steps to enable conditional access:
 
 6. Select **Enable policy**, and then **Create** to save your changes.
 
-For more information, see [Enable Windows Defender ATP with conditional access in Inune](https://docs.microsoft.com/intune/advanced-threat-protection).
+For more information, see [Enable Windows Defender ATP with conditional access in Intune](https://docs.microsoft.com/intune/advanced-threat-protection).
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)
 
