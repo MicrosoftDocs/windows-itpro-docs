@@ -93,7 +93,7 @@
 ##### [Advanced hunting reference](windows-defender-atp\advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
 ##### [Advanced hunting query language best practices](windows-defender-atp\advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
 
-#### [Enable conditional access to better protect users, devices, and data](windows-defender-atp\conditional-access-windows-defender-advanced-threat-protection.md)
+### [Enable conditional access to better protect users, devices, and data](windows-defender-atp\conditional-access-windows-defender-advanced-threat-protection.md)
 
 ###API and SIEM support
 #### [Pull alerts to your SIEM tools](windows-defender-atp\configure-siem-windows-defender-advanced-threat-protection.md)

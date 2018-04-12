@@ -65,10 +65,10 @@ There are numerous ways to construct a command line to accomplish a task.
 
 For example, a malicious attacker could specify the process image file name without a path, with full path, without the file extension, using environment variables, add quotes, and others. In addition, the attacker can also change the order of some parameters, add multiple quotes or spaces, and much more.
 
-To create more durable queries using command lines, it is recommended to:
+To create more durable queries using command lines, we recommended the following guidelines:
 - Identify the known processes (such as net.exe, psexec.exe, and others) by matching on the filename fields, instead of filtering on the command line field.
 - When querying for command line arguments, don't look for an exact match on multiple unrelated arguments in a certain order. Instead, use regular expressions or use multiple separate contains operators.
-- Use case insensitive matches. E.g. use '=~', 'in~', 'contains' instead of '==', 'in' or 'contains_cs'
+- Use case insensitive matches. For example, use '=~', 'in~', 'contains' instead of '==', 'in' or 'contains_cs'
 - To mitigate DOS command line obfuscation techniques, consider removing quotes, replacing commas with spaces, and replacing multiple consecutive spaces with a single space. This is just the start of handling DOS obfuscation techniques, but it does mitigate the most common ones.
 
 The following example query shows various ways to construct a query that looks for the file *net.exe* to stop the Windows Defender Firewall service:
