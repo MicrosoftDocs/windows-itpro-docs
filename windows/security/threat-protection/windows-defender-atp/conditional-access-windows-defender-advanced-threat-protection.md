@@ -68,16 +68,45 @@ The following example sequence of events explains conditional access in action:
 > You'll need a valid Intune license to enable conditional access.
 
 You'll need to take the following steps to enable conditional access:
+- Step 1: Turn on the Microsoft Intune connection from the Windows Defender ATP portal
+- Step 2: Turn on the Windows Defender ATP integration in Intune
+- Step 3: Create the compliance policy in Intune
+- Step 4: Assign the policy 
+- Step 5: Create an Azure AD conditional access policy
 
-1. Turn on the Microsoft Intune connection. For more information, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md). 
 
-2. Turn on the Windows Defender ATP integration in Intune. 
- 
-    - Ensure that machines are enrolled. For more information see, [Set up enrollment for Windows devices](https://docs.microsoft.com/en-us/intune/windows-enroll).
+### Step 1: Turn on the Microsoft Intune connection
+1. In the navigation pane, select **Preferences setup** > **Advanced features**.
+2. Toggle the Micorosft Intune setting to **On**.
+3. Click **Save preferences**.
 
-3. Create a device compliance policy in Intune. 
+### Step 2: Turn on the Windows Defender ATP integration in Intune
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+3. 
 
-4. Define a conditional access policy in AAD. For more information, see [Get started with conditional access in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-azure-portal-get-started).
+
+### Step 3: Create the compliance policy in Intune
+1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+2. Select **Device compliance** > **Policies** > **Create policy**.
+3. Enter a **Name** and **Description**.
+4. In **Platform**, select **Windows 10 and later**.
+5. In the **Device Health** settings, set **Require the device to be at or under the Device Threat Level** to your preferred level:
+
+  - **Secured**: This level is the most secure. The device cannot have any existing threats and still access company resources. If any threats are found, the device is evaluated as noncompliant.
+  - **Low**: The device is compliant if only low-level threats exist. Devices with medium or high threat levels are not compliant.
+  - **Medium**: The device is compliant if the threats found on the device are low or medium. If high-level threats are detected, the device is determined as noncompliant.
+  - **High**: This level is the least secure, and allows all threat levels. So devices that with high, medium or low threat levels are considered compliant.
+
+6. Select **OK**, and **Create** to save your changes (and create the policy).
+
+### Step 4: D
+1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+2. Select **Device compliance** > **Policies**> select your Windows Defender ATP compliance policy.
+3. Select **Assignments**.
+4. Include or exclude your Azure AD groups to assign them the policy.
+5. To deploy the policy to the groups, select **Save**. The user devices targeted by the policy are evaluated for compliance.
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)
 
