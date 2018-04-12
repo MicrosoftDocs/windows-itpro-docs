@@ -90,7 +90,6 @@ This section lists various issues that you may encounter when using email notifi
 
 ## Related topics
 - [Update data retention settings](data-retention-settings-windows-defender-advanced-threat-protection.md)
-- [Configure automation notifications](configure-automation-notifications-windows-defender-advanced-threat-protection.md)
 - [Enable and create Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
 - [Enable Secure Score security controls](enable-secure-score-windows-defender-advanced-threat-protection.md)
 - [Configure advanced features](advanced-features-windows-defender-advanced-threat-protection.md)
