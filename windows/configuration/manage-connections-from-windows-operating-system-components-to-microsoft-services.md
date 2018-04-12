@@ -395,7 +395,7 @@ To turn off Insider Preview builds for Windows 10:
 
     -or -
 
--  Create a new REG\_DWORD registry setting **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\PreviewBuilds!AllowBuildPreview** to 0 (zero)
+-  Create a new REG\_DWORD registry setting named **AllowBuildPreview** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\PreviewBuilds** with a vlue of 0 (zero)
 
     -or-
 
@@ -1649,7 +1649,7 @@ You can control if your settings are synchronized:
 
     -or-
 
--   Create a REG\_DWORD registry setting named **DisableSettingSync** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\SettingSync** with a value of 2 (two) and **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\SettingSync!DisableSettingSyncUserOverride** with a value of 1 (one).
+-   Create a REG\_DWORD registry setting named **DisableSettingSync** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\SettingSync** with a value of 2 (two) and another named **DisableSettingSyncUserOverride** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\SettingSync** with a value of 1 (one).
 
     -or-
 
@@ -1762,7 +1762,7 @@ You can stop downloading definition updates:
 
     -or-
 
--   Create a new REG\_SZ registry setting named **FallbackOrder** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\Updates!** with a value of **FileShares**.
+-   Create a new REG\_SZ registry setting named **FallbackOrder** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\Updates** with a value of **FileShares**.
 
 For Windows 10 only, you can stop Enhanced Notifications:
 
@@ -1826,7 +1826,7 @@ If you're not running Windows 10, version 1607 or later, you can use the other o
         -   Set the **Turn off fun facts, tips, tricks, and more on lock screen** check box.
 
         > [!NOTE] 
-        > This will only take effect if the policy is applied before the first logon. If you cannot apply the **Force a specific default lock screen image** policy before the first logon to the device, you can apply this policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Do not display the lock screen**. Alternatively, you can create a new REG\_SZ registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization!LockScreenImage**, with a value of **C:\\windows\\web\\screen\\lockscreen.jpg** and create a new REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization!LockScreenOverlaysDisabled**, with a value of 1 (one).
+        > This will only take effect if the policy is applied before the first logon. If you cannot apply the **Force a specific default lock screen image** policy before the first logon to the device, you can apply this policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Do not display the lock screen**. Alternatively, you can create a new REG\_SZ registry setting nameed **LockScreenImage** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** with a value of **C:\\windows\\web\\screen\\lockscreen.jpg** and create a new REG\_DWORD registry setting named **LockScreenOverlaysDisabled** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** with a value of 1 (one).
             
 
     -   **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Do not show Windows tips**.
