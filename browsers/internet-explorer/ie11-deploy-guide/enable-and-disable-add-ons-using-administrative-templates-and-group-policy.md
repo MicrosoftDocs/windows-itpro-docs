@@ -3,19 +3,20 @@ ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Enable and disable add-ons using administrative templates and group policy
-author: eross-msft
+ms.author: pashort
+author: shortpatti
 ms.prod: ie11
 ms.assetid: c6fe1cd3-0bfc-4d23-8016-c9601f674c0b
 title: Enable and disable add-ons using administrative templates and group policy (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
-ms.date: 07/27/2017
+ms.date: 4/12/2018
 ---
 
 
 # Enable and disable add-ons using administrative templates and group policy
 Add-ons let your employees personalize Internet Explorer. You can manage IE add-ons using Group Policy and Group Policy templates.
 
-There are 4 types of add-ons:
+There are four types of add-ons:
 
 -   **Search Providers.** Type a term and see suggestions provided by your search provider.
 
