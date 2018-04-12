@@ -64,10 +64,14 @@ The following example sequence of events explains conditional access in action:
 
 
  ## Configure conditional access
+This section guides you through all the steps you need to take to properly implement conditional access. 
+
+There are steps you'll need to take in the Windows Defender ATP portal, the Intune portal, and Azure AD portal.
+
 > [!NOTE] 
 > You'll need a Microsoft Intune environment, with Intune managed and Azure AD joined Windows 10 devices.
 
-You'll need to take the following steps to enable conditional access:
+Take the following steps to enable conditional access:
 - Step 1: Turn on the Microsoft Intune connection from the Windows Defender ATP portal
 - Step 2: Turn on the Windows Defender ATP integration in Intune
 - Step 3: Create the compliance policy in Intune
