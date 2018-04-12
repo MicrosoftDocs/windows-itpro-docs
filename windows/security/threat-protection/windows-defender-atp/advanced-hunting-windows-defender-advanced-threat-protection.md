@@ -57,14 +57,14 @@ Finally, we  project only the columns we're interested in exploring and limit th
 ### Use operators
 The query language is very powerful and has a lot of available operators, some of them are - 
 
-- **limit** - Return up to the specified number of rows.
 - **where** - Filter a table to the subset of rows that satisfy a predicate.
+- **summarize** - Produce a table that aggregates the content of the input table.
+- **join** - Merge the rows of two tables to form a new table by matching values of the specified column(s) from each table.
 - **count** - Return the number of records in the input record set.
 - **top** - Return the first N records sorted by the specified columns.
+- **limit** - Return up to the specified number of rows.
 - **project** - Select the columns to include, rename or drop, and insert new computed columns.
-- **summarize** - Produce a table that aggregates the content of the input table.
 - **extend** - Create calculated columns and append them to the result set.
-- **join** - Merge the rows of two tables to form a new table by matching values of the specified column(s) from each table.
 - **makeset** -  Return a dynamic (JSON) array of the set of distinct values that Expr takes in the group
 - **find** - Find rows that match a predicate across a set of tables.
 
@@ -79,7 +79,7 @@ For more information on the query language and supported operators, see [Query L
 The following tables are exposed as part of Advanced hunting:
 
 - **AlertEvents** - Stores alerts related information 
-- **MachineInfo** - Stores machines proprties
+- **MachineInfo** - Stores machines properties
 - **ProcessCreationEvents** - Stores process creation events 
 - **NetworkCommunicationEvents** - Stores network communication events o
 - **FileCreationEvents** - Stores file creation, modification, and rename events
