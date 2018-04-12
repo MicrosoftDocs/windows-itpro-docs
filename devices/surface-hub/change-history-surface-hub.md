@@ -16,6 +16,12 @@ ms.localizationpriority: medium
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
 
+## April 2018
+
+New or changed topic | Description
+--- | ---
+[Hybrid deployment](hybrid-deployment-surface-hub-device-accounts.md) | Updated instructions for Skype for Business Hybrid.
+
 ## March 2018
 
 New or changed topic | Description
