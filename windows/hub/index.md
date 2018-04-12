@@ -60,18 +60,18 @@ Find the latest how to and support content that IT pros need to evaluate, plan, 
 >[!TIP]
 > Looking for information about older versions of Windows? Check out our other [Windows libraries](/previous-versions/windows/) on docs.microsoft.com. You can also search this site to find specific information, like this [Windows 8.1 content](https://docs.microsoft.com/search/index?search=Windows+8.1&dataSource=previousVersions).
 
-## Get to know Windows as a Service (WaaS)
+## Get to know Windows as a service
 
-![Get to know Windows as a Service (WaaS)](images/w10-WaaS-poster.png)
+![Get to know Windows as a service](images/w10-WaaS-poster.png)
 
 The Windows 10 operating system introduces a new way to build, deploy, and service Windows: Windows as a service. Microsoft has reimagined each part of the process, to simplify the lives of IT pros and maintain a consistent Windows 10 experience for its customers.
 
 These improvements focus on maximizing customer involvement in Windows development, simplifying the deployment and servicing of Windows client computers, and leveling out the resources needed to deploy and maintain Windows over time.
   
-- [Read more about Windows as a Service](/windows/deployment/update/waas-overview)
+- [Read more about Windows as a service](/windows/deployment/update/waas-overview)
 
 ## Related topics
-[Windows 10 TechCenter](https://go.microsoft.com/fwlink/?LinkId=620009)
+[Windows 10 IT Pro Center](https://go.microsoft.com/fwlink/?LinkId=620009)
 
  
 
