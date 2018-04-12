@@ -44,7 +44,7 @@ You can only prevent users from modifying Exploit protection settings by using G
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration**.
 
-4.  Click **Policies** then **Administrative templates**.
+4.  Click **Administrative templates**.
 
 5.  Expand the tree to **Windows components > Windows Defender Security Center > App and browser protection**.
 
