@@ -80,6 +80,7 @@ You'll need to take the following steps to enable conditional access:
 2. Toggle the Microsoft Intune setting to **On**.
 3. Click **Save preferences**.
 
+
 ### Step 2: Turn on the Windows Defender ATP integration in Intune
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **Device compliance** > **Windows Defender ATP**. Set **Connect Windows 10.0.15063+ devices to Windows Defender Advanced Threat Protection** to **On**.
