@@ -40,7 +40,7 @@ The compliance policy is used with conditional access to allow only devices that
 ## Understand the conditional access flow
 Conditional access is put in place so that when a threat is seen on a device, access to sensitive content is blocked until the threat is remediated. 
 
-When a device is found to be at high risk, the signal is communicated to Intune. 
+The flow begins with a device being identified to be at high risk. When a device is found to be at high risk, the signal is communicated to Intune. 
 
 In Intune, a device compliance policy is used in conjunction with Azure AD conditional access to block access to applications. In parallel,  an automated investigation and remediation process is launched.
 
@@ -81,15 +81,16 @@ Take the following steps to enable conditional access:
 
 
 ### Step 1: Turn on the Microsoft Intune connection
-1. In the navigation pane, select **Preferences setup** > **Advanced features**.
+1. In the navigation pane, select **Settings** > **General** > **Advanced features** > **Microsoft Intune connection**.
 2. Toggle the Microsoft Intune setting to **On**.
 3. Click **Save preferences**.
 
 
 ### Step 2: Turn on the Windows Defender ATP integration in Intune
 1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **Device compliance** > **Windows Defender ATP**. Set **Connect Windows 10.0.15063+ devices to Windows Defender Advanced Threat Protection** to **On**.
-3. Click **Save**.
+2. Select **Device compliance** > **Windows Defender ATP**.
+3. Set **Connect Windows 10.0.15063+ devices to Windows Defender Advanced Threat Protection** to **On**.
+4. Click **Save**.
 
 
 ### Step 3: Create the compliance policy in Intune
