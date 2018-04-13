@@ -43,6 +43,10 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 ## Preview features
 The following features are included in the preview release:
 
+- [Enable conditional access to better protect users, devices, and data](conditional-access-windows-defender-advanced-threat-protection.md)<br>
+With conditional access, you can control access to enterprise information based on the risk level of a device. This helps keep trusted users on trusted devices using trusted applications.
+
+
 - [Onboard servers](configure-server-endpoints-windows-defender-advanced-threat-protection.md)<br>
 Windows Defender ATP supports the onboarding of the following servers:
     - Windows Server 2012 R2
