@@ -34,7 +34,8 @@ The benefits of Windows 10 Pro in S mode:
 
 - Do you have apps that you want to run that aren’t in the Microsoft Store? If so, you might want to switch to Windows 10 Pro. If that’s the case, you can switch for free.
 
->[!NOTE] The only way to revert to Windows 10 in S mode is to perform a BMR factory reset. This will allow you to reimage a device.
+>[!NOTE] 
+>The only way to revert to Windows 10 in S mode is to perform a BMR factory reset. This will allow you to reimage a device.
 
 ## Requirements for switching
 
@@ -64,7 +65,8 @@ The S mode switch option is recognized in the Windows AutoPilot profile and conf
 
 Select the S mode switch option in Intune/MDM.The device will switch from S mode. A reboot is not required.
 
->[!NOTE] To rollback to Windows 10 Pro in S mode, a BMR factory reset must be performed.
+>[!NOTE] 
+>To rollback to Windows 10 Pro in S mode, a BMR factory reset must be performed.
 
 ### Switching in future versions
 
