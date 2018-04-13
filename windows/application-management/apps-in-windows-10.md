@@ -85,6 +85,10 @@ System apps are integral to the operating system. Here are the typical system ap
 |                  | Microsoft.Win32WebViewHost                 |      |     | x    |No                                                     |
 |                  | Microsoft.Windows.CapturePicker            |      |     | x    |No                                                     |
 |                  | Windows.CBSPreview                         |      |     | x    |No                                                     |
+|File Picker       | 1527c705-839a-4832-9118-54d4Bd6a0c89       |      |     | x    |No                                                     |
+|File Explorer     | c5e2524a-ea46-4f67-841f-6a9465d9d515       |      |     | x    |No                                                     |
+|App Resolver      | E2A4F912-2574-4A75-9BB0-0D023378592B       |      |     | x    |No                                                     |
+|Add Suggested folder Dialog box| F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE||     | x    |No                                                     |
 
 > [!NOTE]
 > - The Contact Support app changed to Get Help in version 1709. Get Help is a provisioned app (instead of system app like Contact Support).
@@ -107,7 +111,7 @@ Here are the typical installed Windows apps in Windows 10 versions 1703, 1709, a
 | Flipboard          |                                          |      |      |      | Yes                  |
 |                    | Microsoft.Advertising.Xaml               | x    | x    | x    | Yes                  |
 |                    | Microsoft.NET.Native.Framework.1.2       | x    | x    | x    | Yes                  |
-|                    | Microsoft.NET.Native.Framework.1.3       | x    | x    |      | Yes                  |
+|                    | Microsoft.NET.Native.Framework.1.3       | x    | x    | x    | Yes                  |
 |                    | Microsoft.NET.Native.Framework.1.6       |      | x    | x    | Yes                  |
 |                    | Microsoft.NET.Native.Framework.1.7       |      |      | x    | Yes                  |
 |                    | Microsoft.NET.Native.Framework.2.0       |      | x    | x    | Yes                  |
@@ -121,37 +125,8 @@ Here are the typical installed Windows apps in Windows 10 versions 1703, 1709, a
 |                    | Microsoft.VCLibs.120.00                  | x    | x    | x    | Yes                  |
 |                    | Microsoft.VCLibs.140.00                  | x    | x    | x    | Yes                  |
 |                    | Microsoft.VCLibs.120.00.Universal        |      | x    |      | Yes                  |
+|                    | Microsoft.VCLibs.140.00.UWPDesktop       |      |      | x    | Yes                  |
 |                    | Microsoft.WinJS.2.0                      | x    |      |      | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
-|                    |                                          | x    | x    | x    | Yes                  |
 
 ## Provisioned Windows apps
 
@@ -196,7 +171,5 @@ Here are the typical provisioned Windows apps in Windows 10 versions 1703, 1709,
 |                                 | Microsoft.Xbox.TCUI                    |      |  x   | x    | No                        |
 |                                 | Microsoft.XboxGameOverlay              | x    |  x   | x    | No                        |
 |                                 | Microsoft.XboxGamingOverlay            |      |      | x    | No                        |
-|                                 | Microsoft.XboxIdentityProvider         | x    |  *   | x    | No                        |
+|                                 | Microsoft.XboxIdentityProvider         | x    |  x   | x    | No                        |
 |                                 | Microsoft.XboxSpeech ToTextOverlay     | x    |  x   | x    | No                        |
-
-\* moved from "provisioned" to "installed" in this version.
