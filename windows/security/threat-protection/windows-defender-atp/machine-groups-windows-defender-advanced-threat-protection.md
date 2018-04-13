@@ -80,7 +80,7 @@ As part of the process of creating a machine group, you'll:
 ## Understand matching and manage groups
 You can promote the rank of a machine group so that it is given higher priority during matching. When a machine is matched to more than one group, it is added only to the highest ranked group. You can also edit and delete groups.
 
-By default, machine groups are accessible by all users with portal access. You can change the default behavior by assigning Azure AD user groups to the machine group.
+By default, machine groups are accessible to all users with portal access. You can change the default behavior by assigning Azure AD user groups to the machine group.
 
 Machines that are not matched to any groups are added to Ungrouped machines (default) group. You cannot change the rank of this group or delete it. However, you can change the remediation level of this group, and define the Azure AD user groups that can access this group.
 

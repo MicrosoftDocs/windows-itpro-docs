@@ -102,7 +102,7 @@ Someone with a Windows Defender ATP Global administrator role has unrestricted a
 
 2.	Click **Edit**.
 
-3.	Modify the details or the memberships that the role is a part of. 
+3.	Modify the details or the groups that the role is a part of. 
 
 4.	Click **Save and close**.
 
