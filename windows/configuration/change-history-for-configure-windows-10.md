@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: jdeckerms
-ms.date: 04/04/2018
+ms.date: 04/13/2018
 ---
 
 # Change history for Configure Windows 10
@@ -20,6 +20,7 @@ This topic lists new and updated topics in the [Configure Windows 10](index.md) 
 New or changed topic | Description
 --- | ---
 [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md) | Updated endpoints.
+[Configure cellular settings for tablets and PCs](provisioning-apn.md) | Added instructions for confirming that the settings were applied.
 
 ## March 2018
 
