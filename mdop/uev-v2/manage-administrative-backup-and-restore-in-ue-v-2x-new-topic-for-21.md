@@ -94,7 +94,7 @@ Restoring a user’s device restores the currently registered Template’s setti
 
 -   **Manual Restore**
 
-    If you want to assist users by restoring a device during a refresh, you can choose to use the Restore-UevBackup cmdlet. This command ensures that the user’s current settings become the current state on the Settings Storage Location.
+    If you want to assist users by restoring a device during a refresh, you can choose to use the Restore-UevBackup cmdlet. This command causes the user’s settings to be downloaded from the Settings Storage Location.
 
 ## Restore Application and Windows Settings to Original State
 
