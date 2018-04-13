@@ -92,7 +92,6 @@ System apps are integral to the operating system. Here are the typical system ap
 
 > [!NOTE]
 > - The Contact Support app changed to Get Help in version 1709. Get Help is a provisioned app (instead of system app like Contact Support).
-> - As of Windows 10 version 1607, you can use the Optional Features app to uninstall the Contact Support app.
 
 ## Installed Windows apps
 Here are the typical installed Windows apps in Windows 10 versions 1703, 1709, and 1803.
