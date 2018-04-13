@@ -58,7 +58,7 @@ You can use the Local Group Policy Editor to change how add-ons work in your org
 5.  Close the Local Group Policy Editor when you’re done.
 
 ## Using the CLSID and Administrative Templates to manage group policy objects
-Because every add-on has a Class ID (CLSID), you can use it to enable and disable specific add-ons, using Group Policy and Administrative Templates.
+Every add-on has a Class ID (CLSID) that you use to enable and disable specific add-ons, using Group Policy and Administrative Templates.
 
  **To manage add-ons**
 
@@ -66,22 +66,32 @@ Because every add-on has a Class ID (CLSID), you can use it to enable and disabl
 
     1.  Open IE, click **Tools**, and then click **Manage Add-ons**.
 
-    2.  Pick the add-on you want to change, and then right-click **More Information**.
+    2.  Double-click the add-on you want to change. 
 
-    3.  Click **Copy** and then close **Manage Add-ons** and IE.
-
+    3.  In the More Information dialog, click **Copy** and then click **Close**. 
+    
+    4. Open Notepad and paste the information for the add-on. 
+    
+    5. On the Manage Add-ons windows, click **Close**.
+    
+    6. On the Internet Options dialog, click **Close** and then close IE.
+    
 2.  From the copied information, select and copy just the **Class ID** value.
 
-3.  Open the Group Policy Management Editor and go to `Computer Configuration\Policies\Administrative Templates\Windows Components\Internet Explorer\Security Features\Add-on Management`.
+    >[!NOTE]
+    >You want to copy the curly brackets as well as the CLSID: **{47833539-D0C5-4125-9FA8-0819E2EAAC93}**.
+
+3.  Open the Group Policy Management Editor and go to: Computer Configuration\Policies\Administrative Templates\Windows Components\Internet Explorer\Security Features\Add-on Management.
 <br>**-OR-**<br>
-Open the Local Group Policy Editor and go to `Computer Configuration\Administrative Templates\Windows Components\Internet Explorer\Security Features\Add-on Management`.
+Open the Local Group Policy Editor and go to: User Configuration\Administrative Templates\Windows Components\Internet Explorer\Security Features\Add-on Management.
 
-4.  Open the **Add-on List** Group Policy Object, pick **Enabled**, and then click **Show**.<br>
-**Show Contents** box appears.
+4.  Open the **Add-on List** Group Policy Object, pick **Enabled**, and then click **Show**.<br>The Show Contents box appears.
 
-5.  In **Value Name**, put your copied Class ID.
+5.  On Show Contents, click **Add**. 
 
-6.  In **Value**, put:
+6.  In **Value Name**, paste the Class ID for your add-on, for example, **{47833539-D0C5-4125-9FA8-0819E2EAAC93}**.
+
+6.  In **Value**, enter one of the following:
 
     -   **0**. The add-on is disabled and your employees can’t change it.
 
