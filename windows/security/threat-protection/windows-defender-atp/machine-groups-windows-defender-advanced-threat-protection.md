@@ -26,7 +26,7 @@ ms.date: 04/16/2018
 
 [!include[Prerelease information](prerelease.md)]
 
-In a typical enterprise scenario, security operation teams are typically assigned a set of machines. These machines are grouped together based on a set of attributes such as their domains, computer names, or designated tags.
+In an enterprise scenario, security operation teams are typically assigned a set of machines. These machines are grouped together based on a set of attributes such as their domains, computer names, or designated tags.
 
 In Windows Defender ATP, you can create machine groups and use them to:
 - Limit access to related alerts and data to specific Azure AD user groups with [assigned RBAC roles](rbac-windows-defender-advanced-threat-protection.md) 
@@ -67,19 +67,22 @@ As part of the process of creating a machine group, you'll:
 5.	Assign the user groups that can access the machine group you created. 
 
     >[!NOTE]
-    >You can only grant access to Azure AD user groups with assigned RBAC roles. 
+    >You can only grant access to Azure AD user groups that have been assigned to RBAC roles. 
 
 6.	Click **Close**.
 
 7.	Apply the configuration settings.
 
 ## Understand matching and manage groups
+You can promote the rank of a machine group so that it is given higher priority during matching. When a machine is matched to more than one group, it is added only to the highest ranked group. You can also edit and delete groups.
 
-You can promote the rank of a machine group so that it is given higher priority during matching. When a machine is matched to more than one group, it is added only to the highest ranked group.
+By default, machine groups are accessible by all users with portal access. You can change the default behavior by assigning Azure AD user groups to the machine group.
 
-Machines that are not matched to any groups are added to **Ungrouped machines (default)** group. By default, remediations performed on machines in this group require approval, but you can also define the remediation level for this group. By default, ungrouped machines are accessible by all users with portal access. You can change the default behavior by assigning the ungrouped machines to specific Azure AD user groups.
+Machines that are not matched to any groups are added to Ungrouped machines (default) group. You cannot change the rank of this group or delete it. However, you can change the remediation level of this group, and define the Azure AD user groups that can access this group.
 
-You can also edit and delete groups.
+>[!NOTE]
+>Applying changes to machine group configuration may take up to several minutes.
+
 
 
 
