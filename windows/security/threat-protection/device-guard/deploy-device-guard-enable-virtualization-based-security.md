@@ -22,30 +22,9 @@ Virtualization-based protection of code integrity (herein referred to as Hypervi
 
 Use the following procedure to enable virtualization-based protection of code integrity:
 
-1.  **Decide whether to use the procedures in this topic, or to use the Windows Defender Device Guard readiness tool**. To enable HVCI, you can use [the Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337) or follow the procedures in this topic.
+1.  Decide whether to use the procedures in this topic, or to use [the Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337). 
 
-2.  **Verify that hardware and firmware requirements are met**. Verify that your client computers have the hardware and firmware to run HVCI. For a list of requirements, see [Hardware, firmware, and software requirements for Windows Defender Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-windows-defender-device-guard).
-
-3.  **Enable the necessary Windows features**. You can use the [hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337) or see [Windows feature requirements for virtualization-based security](#windows-feature-requirements-for-virtualization-based-protection-of-code-integrity).
-
-4.  **Enable additional features as desired**. You can use the [hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337) or see [Enable virtualization-based protection of code integrity](#enable-virtualization-based-protection-of-code-integrity). 
-
-## Windows feature requirements for virtualization-based protection of code integrity
-
-Make sure these operating system features are enabled before you can enable HVCI:
-
-- Beginning with Windows 10, version 1607 or Windows Server 2016:<br> 
-Hyper-V Hypervisor, which is enabled automatically. No further action is needed.
-
-- With an earlier version of Windows 10:<br> 
-Hyper-V Hypervisor and Isolated User Mode (shown in Figure 1).
- 
-![Turn Windows features on or off](images/dg-fig1-enableos.png)
-
-**Figure 1. Enable operating system features for HVCI, Windows 10, version 1511**
-
-> [!NOTE]
-> You can configure these features by using Group Policy or Dism.exe, or manually by using Windows PowerShell or the Windows Features dialog box.
+2.  Verify that [hardware and firmware requirements](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-windows-defender-device-guard) are met. 
 
 ## Enable virtualization-based protection of code integrity
 
@@ -57,15 +36,11 @@ If you don't want to use the [hardware readiness tool](https://www.microsoft.com
 
     ![Group Policy Management, create a GPO](images/dg-fig2-createou.png)
 
-    Figure 2. Create a new OU-linked GPO
-
 2.  Give the new GPO a name, then right-click the new GPO, and click **Edit**.
 
 4.  Within the selected GPO, navigate to Computer Configuration\\Policies\\Administrative Templates\\System\\Device Guard. Right-click **Turn On Virtualization Based Security**, and then click **Edit**.
 
     ![Edit the group policy for Virtualization Based Security](images/dg-fig3-enablevbs.png)
-
-    Figure 3. Enable virtualization-based security (VBS)
 
 5.  Select the **Enabled** button. For **Select Platform Security Level**:
 
@@ -78,9 +53,7 @@ If you don't want to use the [hardware readiness tool](https://www.microsoft.com
 
     - With earlier versions of Windows 10:<br>Select the **Enable Virtualization Based Protection of Code Integrity** check box.
 
-    ![Group Policy, Turn On Virtualization Based Security](images/dg-fig7-enablevbsofkmci.png)
-
-    Figure 5. Configure HVCI, Lock setting (in Windows 10, version 1607)
+      ![Group Policy, Turn On Virtualization Based Security](images/dg-fig7-enablevbsofkmci.png)
 
 7.  Close the Group Policy Management Editor, and then restart the Windows 10 test computer. The settings will take effect upon restart.
 
@@ -281,11 +254,9 @@ This field indicates whether VBS is enabled and running.
 
 This field lists the computer name. All valid values for computer name.
 
-Another method to determine the available and enabled Windows Defender Device Guard features is to run msinfo32.exe from an elevated PowerShell session. When you run this program, the Windows Defender Device Guard properties are displayed at the bottom of the **System Summary** section, as shown in Figure 6.
+Another method to determine the available and enabled Windows Defender Device Guard features is to run msinfo32.exe from an elevated PowerShell session. When you run this program, the Windows Defender Device Guard properties are displayed at the bottom of the **System Summary** section.
 
 ![Windows Defender Device Guard properties in the System Summary](images/dg-fig11-dgproperties.png)
-
-Figure 6. Windows Defender Device Guard properties in the System Summary
 
 ## Related topics
 
