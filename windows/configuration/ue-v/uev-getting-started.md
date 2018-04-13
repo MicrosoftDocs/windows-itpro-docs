@@ -16,8 +16,8 @@ ms.date: 03/08/2018
 
 Follow the steps in this topic to deploy User Experience Virtualization (UE-V) for the first time in a test environment. Evaluate UE-V to determine whether it’s the right solution to manage user settings across multiple devices within your enterprise.
 
->**Note**
-The information in this section is explained in greater detail throughout the rest of the documentation. If you’ve already determined that UE-V is the right solution and you don’t need to further evaluate it, see [Prepare a UE-V deployment](uev-prepare-for-deployment.md).
+>[!NOTE]
+>The information in this section is explained in greater detail throughout the rest of the documentation. If you’ve already determined that UE-V is the right solution and you don’t need to further evaluate it, see [Prepare a UE-V deployment](uev-prepare-for-deployment.md).
 
 The standard installation of UE-V synchronizes the default Microsoft Windows and Office settings and many Windows applications settings. For best results, ensure that your test environment includes two or more user computers that share network access.
 
@@ -94,13 +94,13 @@ A storage path must be configured on the client-side to tell where the personali
 
 4.  Select **Enabled**, fill in the **Settings storage path**, and click **OK**.
 
-    - Ensure that the storage path ends with **%username%** to ensure that eah user gets a unique folder.
+    - Ensure that the storage path ends with **%username%** to ensure that each user gets a unique folder.
 
 **To set the storage path for UE-V with PowerShell**
 
 1.  In a PowerShell window, type **Set-uevConfiguration -SettingsStoragePath [StoragePath]** where **[StoragePath]** is the path to the location created in step 2 followed by **\%username%**.
 
-    - Ensure that the storage path ends with **%username%** to ensure that eah user gets a unique folder.
+    - Ensure that the storage path ends with **%username%** to ensure that each user gets a unique folder.
 
 With Windows 10, version 1607 and later, the UE-V service is installed on user devices when the operating system is installed. Enable the service to start using UE-V. You can enable the service with the Group Policy editor or with Windows PowerShell.
 
