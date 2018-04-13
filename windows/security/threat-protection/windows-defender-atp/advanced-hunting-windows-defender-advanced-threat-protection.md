@@ -156,6 +156,7 @@ Check out the [Advanced Hunting repository](https://github.com/Microsoft/Windows
 
 ## Related topic
 - [Advanced hunting reference](advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
+- [Advanced hunting query language best practices](/advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
 
 
 

@@ -101,5 +101,7 @@ Use the following table to understand what the columns represent, its data type,
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-belowfoldlink)        
 
-
+## Related topic
+- [Query data using Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md)
+- [Advanced hunting query language best practices](/advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
 
