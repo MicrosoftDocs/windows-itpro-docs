@@ -38,6 +38,10 @@ As part of the process of creating a machine group, you'll:
 - Determine access to machine group
 - Rank the machine group relative to other groups after it is created 
 
+>[!NOTE]
+>All machine groups are accessible to all users if you don’t assign any Azure AD groups to them.
+
+
 ## Add a machine group
 
 1.	In the navigation pane, select **Settings > Permissions > Machine groups**.
