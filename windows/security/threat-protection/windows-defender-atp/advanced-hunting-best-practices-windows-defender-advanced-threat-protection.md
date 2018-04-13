@@ -57,7 +57,7 @@ NetworkCommunicationEvents
 
 The query summarizes by both InitiatingProcessId and InitiatingProcessCreationTime - to make sure the query looks at a single process, and not mixing multiple processes with the same process ID.
 
-### Using command lines queries
+### Using command line queries
 
 Command lines may vary - when applicable, filter on file names and do fuzzy matching. 
 
