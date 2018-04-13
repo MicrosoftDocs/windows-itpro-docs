@@ -12,7 +12,7 @@ localizationpriority: high
 ms.date: 04/16/2018
 ---
 
-# View the Windows Defender Advanced Threat Protection Secure Score dashboard
+# View the Windows Defender Advanced Threat Protection Secure score dashboard
 
 **Applies to:**
 
@@ -27,19 +27,19 @@ ms.date: 04/16/2018
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-sadashboard-abovefoldlink) 
 
 
-The Secure Score dashboard expands your visibility into the overall security posture of your organization. From this dashboard, you'll be able to quickly assess the security posture of your organization, see machines that require attention, as well as recommendations for actions to further reduce the attack surface in your organization - all in one place. From there you can take action based on the recommended configuration baselines.
+The Secure score dashboard expands your visibility into the overall security posture of your organization. From this dashboard, you'll be able to quickly assess the security posture of your organization, see machines that require attention, as well as recommendations for actions to further reduce the attack surface in your organization - all in one place. From there you can take action based on the recommended configuration baselines.
 
 >[!IMPORTANT]
 > This feature is available for machines on Windows 10, version  1703 or later. 
 
 
-The **Secure Score dashboard** displays a snapshot of:
-- Microsoft Secure Score
+The **Secure score dashboard** displays a snapshot of:
+- Microsoft Secure score
 - Windows Defender security controls
 - Improvement opportunities
 - Security score over time
 
-![Secure Score dashboard](images/ss1.png)
+![Secure score dashboard](images/ss1.png)
 
 ## Microsoft secure score
 The Microsoft secure score tile is reflective of the sum of all the Windows Defender security controls that are configured according to the recommended baseline and Office 365 controls. It allows you to drill down into each portal for further analysis. You can also improve this score by taking the steps in configuring each of the security controls in the optimal settings.
@@ -52,7 +52,7 @@ The Office 365 Secure Score looks at your settings and activities and compares t
 
 In the example image, the total points for the Windows security controls and Office 365 add up to 437 points. 
 
-You can set the baselines for calculating the score of Windows Defender security controls on the Secure Score dashboard through the **Settings**. For more information, see [Enable Secure Score security controls](enable-secure-score-windows-defender-advanced-threat-protection.md).
+You can set the baselines for calculating the score of Windows Defender security controls on the Secure score dashboard through the **Settings**. For more information, see [Enable Secure score security controls](enable-secure-score-windows-defender-advanced-threat-protection.md).
 
 ## Windows Defender security controls
 The security controls tile shows a bar graph where each bar represents a Windows Defender security control. Each bar reflects the number of machines that are well configured and those that require **any kind of attention** for each security control. Hovering on top of the individual bars will show exact numbers for each category. Machines that are green are well configured, while machines that are orange require some level of attention. 
