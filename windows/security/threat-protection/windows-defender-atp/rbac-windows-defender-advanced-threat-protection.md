@@ -55,7 +55,7 @@ Before using RBAC, it's important that you understand the roles that can grant p
 
 
 > [!WARNING]
-> Before enabling the feature, it's important that you have a Global Administrator role or Security Administrator role in Azure AD and that have your Azure AD groups ready to reduce the risk of being locked out of the portal. 
+> Before enabling the feature, it's important that you have a Global Administrator role or Security Administrator role in Azure AD and that you have your Azure AD groups ready to reduce the risk of being locked out of the portal. 
 
 When you first log in to the Windows Defender ATP portal, you're granted either full access or read only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. Read only access is granted to users with a Security Reader role in Azure AD. 
 
@@ -70,15 +70,15 @@ Someone with a Windows Defender ATP Global administrator role has unrestricted a
 >
 > After opting in to use RBAC, you cannot revert to the initial roles as when you first logged into the portal. 
 
-## Create user roles and assign the role to a group
+## Create roles and assign the role to a group
 
 1.	In the navigation pane, select **Settings > Role based access control > Roles**.
 
-2.	Click **Add new role**. 
+2.	Click **Add role**. 
 
-3.	Enter the user group name, description, and active permissions you’d like to assign to the group.
+3.	Enter the role name, description, and active permissions you’d like to assign to the role.
 
-	 - **User group name**
+	 - **Role name**
 
 	 - **Description**
 
@@ -88,27 +88,27 @@ Someone with a Windows Defender ATP Global administrator role has unrestricted a
 		  - **Approve or take action** - Users can take response actions and approve or dismiss pending remediation actions.
 		  - **Manage system settings** - Users can configure settings, SIEM and threat intel API settings, advanced settings, preview features, and automated file uploads.
 		  
-4.	Click **Next** to assign the user to a group.
+4.	Click **Next** to assign the role to an Azure AD group.
 
-5.	Use the filter to select the Azure AD group that you'd like the user to be a part of.
+5.	Use the filter to select the Azure AD group that you’d like to add to this role.
 
 6.	Click **Save and close**.
 
 7.	Apply the configuration settings.
 
-## Edit user roles
+## Edit roles
 
-1.	Select the user role you'd like to edit.
+1.	Select the role you'd like to edit.
 
 2.	Click **Edit**.
 
-3.	Modify the details or the memberships that the user role is a part of. 
+3.	Modify the details or the memberships that the role is a part of. 
 
 4.	Click **Save and close**.
 
-## Delete user roles
+## Delete roles
 
-1.	Select the user role row you'd like to delete.
+1.	Select the role row you'd like to delete.
 
 2.	Click the drop-down button and select **Delete role**.
 
