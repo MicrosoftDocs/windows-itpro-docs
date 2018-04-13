@@ -42,7 +42,8 @@ Windows Defender ATP makes it easy to create a Power BI dashboard by providing a
 
 1. In the navigation pane, select **Settings** > **General** > **Power BI reports**.
 
-2.	Click **Create dashboard**. 
+2.	Click **Create dashboard**.
+
     ![Image of create dashboard](images/atp-create-dashboard.png)
     
     You'll see a notification that things are being loaded. 
