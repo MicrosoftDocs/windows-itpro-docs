@@ -38,12 +38,13 @@ The implementation of conditional access in Windows Defender ATP is based on Mic
 The compliance policy is used with conditional access to allow only devices that fulfill one or more device compliance policy rules to access applications. 
 
 ## Understand the conditional access flow
+Conditional access is put in place so that when a threat is seen on a device, access to sensitive content is blocked until the threat is remediated. 
+
 When a device is found to be at high risk, the signal is communicated to Intune. 
 
 In Intune, a device compliance policy is used in conjunction with Azure AD conditional access to block access to applications. In parallel,  an automated investigation and remediation process is launched.
 
  A user can still use the device while the automated investigation and remediation is taking place, but access to enterprise data is blocked until the threat is fully remediated. 
-
 
 To resolve the high risk found on a device, you'll need to return the device to a compliant state. A device returns to a compliant state when there is no risk seen on it. 
 
