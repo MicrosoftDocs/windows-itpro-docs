@@ -20,6 +20,7 @@ This topic lists new and updated topics in the [Configure Windows 10](index.md) 
 New or changed topic | Description
 --- | ---
 [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md) | Updated endpoints.
+[Configure cellular settings for tablets and PCs](provisioning-apn.md) | Added instructions for confirming that the settings were applied.
 
 ## March 2018
 

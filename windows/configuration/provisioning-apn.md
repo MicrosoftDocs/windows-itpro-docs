@@ -76,5 +76,39 @@ For users who work in different locations, you can configure one APN to connect 
 9. [Apply the package to devices.](provisioning-packages/provisioning-apply-package.md)
 
 
+## Confirm the settings
+
+After you apply the provisioning package, you can confirm that the settings have been applied.
+
+1. On the configured device, open a command prompt as an administrator.
+
+2. Run the following command:
+
+    ```
+    netsh mbn show profiles
+    ```
+
+3. The command will list the mobile broadband profiles. Using the "Name" for the listed mobile broadband profile, run:
+
+    ```
+    netsh mbn show profiles name="name"
+    ```
+
+    This command will list details for that profile, including Access Point Name.
+
+
+Alternatively, you can also use the command:
+
+```
+netsh mbn show interface
+```
+
+From the results of that command, get the name of the cellular/mobile broadband interface and run:
+
+```
+netsh mbn show connection interface="name"
+```
+
+The result of that command will show details for the cellular interface, including Access Point Name.
 
 
