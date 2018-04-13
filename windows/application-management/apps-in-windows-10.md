@@ -79,7 +79,7 @@ System apps are integral to the operating system. Here are the typical system ap
 | Connect          | Windows.MiracastView                       | x    |     |      |No                                                     |
 | Print 3D         | Windows.Print3D                            |      |  x  |      |Yes                                                    |
 | Print UI         | Windows.PrintDialog                        | x    |  x  |  x   |No                                                     |
-| Purchase UI      | Windows.PurchaseDialog                        |      |     | x    |No                                                     |
+| Purchase UI      | Windows.PurchaseDialog                     |      |     | x    |No                                                     |
 |                  | Microsoft.AsyncTextService                 |      |     | x    |No                                                     |
 |                  | Microsoft.MicrosoftEdgeDevToolsClient      |      |     | x    |No                                                     |
 |                  | Microsoft.Win32WebViewHost                 |      |     | x    |No                                                     |
