@@ -22,14 +22,16 @@ ms.date: 04/16/2018
 - Windows 10, version 1703 and later
 
 
-The **Virus & threat protection** section contains information and settings for antivirus protection from Windows Defender Antivirus and third-party AV products. IT administrators and IT pros can get more information and documentation about configuration from the following:
+The **Virus & threat protection** section contains information and settings for antivirus protection from Windows Defender Antivirus and third-party AV products. In Windows 10, version 1803 and later, this section also contains information and settings for ransomware protection and recovery, including Controlled folder access settings and sign in to Microsoft OneDrive. IT administrators and IT pros can get more information and documentation about configuration from the following:
 
 - [Windows Defender Antivirus in the Windows Defender Security Center app](../windows-defender-antivirus/windows-defender-security-center-antivirus.md)
 - [Windows Defender Antivirus documentation library](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
+- [Protect important folders with Controlled folder access](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
+- [Defend yourself from cybercrime with new Office 365 capabilities](https://blogs.office.com/en-us/2018/04/05/defend-yourself-from-cybercrime-with-new-office-365-capabilities/)
+- [Office 365 advanced protection](https://support.office.com/en-us/article/office-365-advanced-protection-82e72640-39be-4dc7-8efd-740fb289123a)
+- [Ransomware detection and recovering your files](https://support.office.com/en-us/article/ransomware-detection-and-recovering-your-files-0d90ec50-6bfd-40f4-acc7-b8c12c73637f?ui=en-US&rs=en-US&ad=US)
 
-In Windows 10, version 1709, the section also provides configuration options for Controlled folder access. IT administrators can get more information at the [Controlled folder access](../windows-defender-exploit-guard/controlled-folders-exploit-guard.md) topic in the Windows Defender Exploit Guard library.
-
-You can also choose to hide the section from users of the machine. This can be useful if you don't want employees in your organization to see or have access to user-configured options for the features shown in the section.
+You can choose to hide the **Virus & threat protection** section or the **Ransomware protection** area from users of the machine. This can be useful if you don't want employees in your organization to see or have access to user-configured options for the features shown in the section.
 
 
 ## Hide the Virus & threat protection section
@@ -59,3 +61,26 @@ This can only be done in Group Policy.
 >If you hide all sections then the app will show a restricted interface, as in the following screenshot:
 >  
 >![Windows Defender Security Center app with all sections hidden by Group Policy](images/wdsc-all-hide.png)
+
+## Hide the Ransomware protection area
+
+You can choose to hide the **Ransomware protection** area by using Group Policy. The area will not appear on the **Virus & threat protection** section of the Windows Defender Security Center app.
+
+This can only be done in Group Policy.
+
+>[!IMPORTANT]
+>### Requirements
+>
+>You must have Windows 10, version 1709 (the Fall Creators Update). The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
+
+1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+
+3.  In the **Group Policy Management Editor** go to **Computer configuration**.
+
+4.  Click **Administrative templates**.
+
+5.  Expand the tree to **Windows components > Windows Defender Security Center > Virus and threat protection**.
+
+6.  Open the **Hide the Ransomware data recovery area** setting and set it to **Enabled**. Click **OK**.
+
+7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/en-us/library/ee663280(v=vs.85).aspx). 
