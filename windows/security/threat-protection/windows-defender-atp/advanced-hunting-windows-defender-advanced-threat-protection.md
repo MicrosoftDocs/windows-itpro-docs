@@ -81,12 +81,14 @@ The following tables are exposed as part of Advanced hunting:
 - **AlertEvents** - Stores alerts related information 
 - **MachineInfo** - Stores machines properties
 - **ProcessCreationEvents** - Stores process creation events 
-- **NetworkCommunicationEvents** - Stores network communication events o
+- **NetworkCommunicationEvents** - Stores network communication events
 - **FileCreationEvents** - Stores file creation, modification, and rename events
 - **RegistryEvents** - Stores registry key creation, modification, rename and deletion events 
 - **LogonEvents** - Stores login events 
 - **ImageLoadEvents** - Stores load dll events  
 - **MiscEvents** - Stores several types of events, including Windows Defender blocks (Windows Defender Antivirus, Exploit Guard, Windows Defender SmartScreen, Windows Defender Application Guard, and Firewall), process injection events, access to LSASS processes, and others.
+
+These tables include data from the last 30 days.
 
 ## Use shared queries
 Shared queries are prepopulated queries that give you a starting point on running queries on your organization's data. It includes a couple of examples that help demonstrate the query language capabilities.
