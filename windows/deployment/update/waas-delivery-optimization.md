@@ -7,7 +7,7 @@ ms.sitesec: library
 author: JaimeO
 ms.localizationpriority: high
 ms.author: jaimeo
-ms.date: 04/10/2018
+ms.date: 04/13/2018
 ---
 
 # Configure Delivery Optimization for Windows 10 updates
@@ -26,6 +26,15 @@ Delivery Optimization is a cloud-managed solution. Access to the Delivery Optimi
 
 >[!NOTE]
 >WSUS can also use [BranchCache](waas-branchcache.md) for content sharing and caching. If Delivery Optimization is enabled on devices that use BranchCache, Delivery Optimization will be used instead. 
+
+Delivery Optimization is supported in the following minimum versions of Windows 10:
+| Windows 
+Platform	Minimum Build
+Desktop	1511
+Server Core	1709
+IoT	1804
+HoloLens	1804
+
 
 By default in Windows 10 Enterprise and Education editions, Delivery Optimization allows peer-to-peer sharing on the organization's own network only, but you can configure it differently in Group Policy and mobile device management (MDM) solutions such as Microsoft Intune.
 
@@ -62,7 +71,8 @@ Several Delivery Optimization features are configurable:
 | [MaxBackgroundDownloadBandwidth](#maximum-background-download-bandwidth) | DOPercentageMaxBackgroundBandwidth | 1803 |
 | [SetHoursToLimitBackgroundDownloadBandwidth](#set-business-hours-to-limit-background-download-bandwidth) | DOSetHoursToLimitBackgroundDownloadBandwidth | 1803 |
 | [SetHoursToLimitForegroundDownloadBandwidth](#set-business-hours-to-limit-foreground-download-bandwidth)  |DOSetHoursToLimitForegroundDownloadBandwidth | 1803 |
-| [Select a method to restrict Peer Selection](select-a-method-to-restrict-peer-selection) |DORestrictPeerSelectionBy | 1803 | Select the source of Group IDs | DOGroupIdSource | 1803 |
+| [Select a method to restrict Peer Selection](#select-a-method-to-restrict-peer-selection) |DORestrictPeerSelectionBy | 1803 |
+| [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIdSource | 1803 |
 | [Delay background download from http (in secs)](delay-background-download-from-http-in-secs) | DODelayBackgroundDownloadFromHttp | 1803 |
 | [Delay foreground download from http (in secs)](delay-foreground-download-from-http-in-secs) | DODelayForegroundDownloadFromHttp | 1803 |
 
@@ -173,11 +183,11 @@ This setting specifies the maximum download bandwidth that can be used across al
 
 ### Maximum Foreground Download Bandwidth
 
-[NEED DESCRIPTION]
+Specifies the maximum foreground download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. The default value of 0 means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads. However, downloads from LAN peers are not throttled even when this policy is set.
 
 ### Maximum Background Download Bandwidth
 
-[NEED DESCRIPTION]
+Specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. The default value of 0 means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads. However, downloads from LAN peers are not throttled even when this policy is set.
 
 ### Percentage of Maximum Download Bandwidth
 
@@ -194,10 +204,19 @@ Specifies the maximum background download bandwidth that Delivery Optimization u
 Specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
 
 ### Select a method to restrict peer selection
-Restricts peer selection by the options you select.
+Set this policy to restrict peer selection via selected option.  
+Currently the only available option is **1 = Subnet mask** This option (Subnet mask) applies to both Download Modes LAN (1) and Group (2).  
 
 ### Select the source of Group IDs
-Restricts peer selection to a specific source.
+Set this policy to restrict peer selection to a specific source. The options are:
+- 0 = not set
+- 1 = AD Site
+- 2 = Authenticated domain SID
+- 3 = DHCP Option ID (with this option, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID)
+- 4 = DNS Suffix 
+
+When set, the Group ID is assigned automatically from the selected source. If you set this policy, the GroupID policy will be ignored. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-4, the policy is ignored.  
+
 
 ### Delay background download from http (in secs)
 Allows you to delay the use of an HTTP source in a background download that is allowed to use P2P.
