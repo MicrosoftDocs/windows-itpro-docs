@@ -33,22 +33,22 @@ To take advantage of the power and speed of these next-gen technologies, Windows
 >The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional signature updates.
 
 With cloud-delivered protection, next-gen technologies provide rapid identification of new threats, sometimes even before a single machine is infected. Watch the following video about Microsoft AI and Windows Defender Antivirus in action: 
-
+ 
 <iframe 
 src="https://www.microsoft.com/en-us/videoplayer/embed/RE1Yu4B" width="768" height="432" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
 To understand how next-gen technologies shorten protection delivery time through the cloud, watch the following video: 
-
+ 
 <iframe 
 src="https://videoplayercdn.osi.office.net/embed/c2f20f59-ca56-4a7b-ba23-44c60bc62c59" width="768" height="432" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
 Read the following blogposts for detailed protection stories involving cloud-protection and Microsoft AI: 
 
-- Why Windows Defender Antivirus is the most deployed in the enterprise 
-- Behavior monitoring combined with machine learning spoils a massive Dofoil coin mining campaign 
-- How artificial intelligence stopped an Emotet outbreak 
-- Detonating a bad rabbit: Windows Defender Antivirus and layered machine learning defenses 
-- Windows Defender Antivirus cloud protection service: Advanced real-time defense against never-before-seen malware 
+- [Why Windows Defender Antivirus is the most deployed in the enterprise](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/22/why-windows-defender-antivirus-is-the-most-deployed-in-the-enterprise/) 
+- [Behavior monitoring combined with machine learning spoils a massive Dofoil coin mining campaign](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign/)
+- [How artificial intelligence stopped an Emotet outbreak](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak/)
+- [Detonating a bad rabbit: Windows Defender Antivirus and layered machine learning defenses](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses/)
+- [Windows Defender Antivirus cloud protection service: Advanced real-time defense against never-before-seen malware](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/18/windows-defender-antivirus-cloud-protection-service-advanced-real-time-defense-against-never-before-seen-malware/) 
  
 ## Get cloud-delivered protection 
 
