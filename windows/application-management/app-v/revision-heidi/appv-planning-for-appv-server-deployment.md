@@ -10,7 +10,7 @@ ms.date: 04/19/2017
 ---
 # Planning for the App-V server deployment
 
->Applies to Windows Server 2016.
+>Applies to: Windows Server 2016
 
 The Microsoft Application Virtualization (App-V) server infrastructure consists of a set of specialized features that can be installed on one or more server computers, based on the requirements of the enterprise.
 

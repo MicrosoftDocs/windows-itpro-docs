@@ -72,103 +72,12 @@ The following deployment scenarios are not supported:
 |64-bit ASP.NET registration||
 |Windows Server Web Server Role|This role must be added to a server operating system that is supported for the Management server.|
 |Web Server (IIS) Management Tools|Select **IIS Management Scripts and Tools**.|
-|Web Server Role Services|Common HTTP features:<br>Static content<br>Default document<br><br>Application development:<br>ASP.NET<br>.NET Extensibility<br>ISAPI Extensions<br>ISAPI Filters<br><br>Security:<br>Windows Authentication<br>Request Filtering<br><br>Management Tools:<br>IIS Management Console|
+|Web Server Role Services|Common HTTP features:<br>- Static content<br>- Default document<br><br>Application development:<br>- ASP<span></span>.NET<br>- .NET Extensibility<br>- ISAPI Extensions<br>- ISAPI Filters<br><br>Security:<br>- Windows Authentication<br>- Request Filtering<br><br>Management Tools:<br>- IIS Management Console|
 |Default installation location|%PROGRAMFILES%\Microsoft Application Virtualization Server|
 |Location of the Management database|SQL Server database name, SQL Server database instance name, and database name.|
-|Management console and Management database permissions|A user or group that can access the Management console and database after the deployment is complete. Only these users or groups will have access to the Management console and database unless additional administrators are added by using the Management console.|
+|Management console and Management database permissions|A user or group that can access the Management console and database after the deployment is complete. Only these users or groups can access the Management console and database unless the Management console is used to add additional administrators.|
 |Management service website name|Name for the Management console website.|
 |Management service port binding|Unique port number for the Management service. This port cannot be used by another process on the computer.|
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Prerequisites and required settings</th>
-<th align="left">Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Supported version of SQL Server</p></td>
-<td align="left"><p>For supported versions, see [App-V supported configurations](appv-supported-configurations.md).</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](http://www.microsoft.com//download/details.aspx?id=40773)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Windows PowerShell 3.0](http://www.microsoft.com/download/details.aspx?id=34595)</p></td>
-<td align="left"><p>Installing Windows PowerShell 3.0 requires a restart.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Download and install [KB2533623](http://support.microsoft.com/kb/2533623)</p></td>
-<td align="left"><p>Applies to Windows 7 only.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/download/details.aspx?id=40784)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>64-bit ASP.NET registration</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server Web Server Role</p></td>
-<td align="left"><p>This role must be added to a server operating system that is supported for the Management server.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Web Server (IIS) Management Tools</p></td>
-<td align="left"><p>Click <strong>IIS Management Scripts and Tools</strong>.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Web Server Role Services</p></td>
-<td align="left"><p><strong>Common HTTP features:</strong></p>
-<ul>
-<li><p>Static content</p></li>
-<li><p>Default document</p></li>
-</ul>
-<p><strong>Application development:</strong></p>
-<ul>
-<li><p>ASP.NET</p></li>
-<li><p>.NET extensibility</p></li>
-<li><p>ISAPI extensions</p></li>
-<li><p>ISAPI filters</p></li>
-</ul>
-<p><strong>Security:</strong></p>
-<ul>
-<li><p>Windows authentication</p></li>
-<li><p>Request filtering</p></li>
-</ul>
-<p><strong>Management tools:</strong></p>
-<ul>
-<li><p>IIS Management Console</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default installation location</p></td>
-<td align="left"><p>%PROGRAMFILES%\Microsoft Application Virtualization Server</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Location of the Management database</p></td>
-<td align="left"><p>SQL Server database name, SQL Server database instance name, and database name.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Management console and Management database permissions</p></td>
-<td align="left"><p>A user or group that can access the Management console and database after the deployment is complete. Only these users or groups will have access to the Management console and database unless additional administrators are added by using the Management console.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Management service website name</p></td>
-<td align="left"><p>Name for the Management console website.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Management service port binding</p></td>
-<td align="left"><p>Unique port number for the Management service. This port cannot be used by another process on the computer.</p></td>
-</tr>
-</tbody>
-</table>
 
 >[!IMPORTANT]
 >JavaScript must be enabled on the browser that opens the Web Management Console.
@@ -184,62 +93,9 @@ The Management database is only required if you use the App-V Management server.
 |Default installation location|%PROGRAMFILES%\Microsoft Application Virtualization Server|
 |Custom SQL Server instance name (if applicable)|Format to use: **INSTANCENAME**<br>This format assumes that the installation is on the local computer.<br>If you specify the name with the format **SVR\INSTANCE**, the installation will fail.|
 |Custom database name (if applicable)|Unique database name.<br>Default: AppVManagement|
-|Management server location|Machine account on which the Management server is deployed.<br>Format to use: Domain\MachineAccount|
-|Management server installation administrator|Account used to install the Management server.<br>Format to use: Domain\AdministratorLoginName|
+|Management server location|Machine account on which the Management server is deployed.<br>Format to use: **Domain\MachineAccount**|
+|Management server installation administrator|Account used to install the Management server.<br>Format to use: **Domain\AdministratorLoginName**|
 |Microsoft SQL Server Service Agent|Configure the Management database computer so that the Microsoft SQL Server Agent service is restarted automatically. For instructions, see [Configure SQL Server Agent to restart services automatically](http://technet.microsoft.com/magazine/gg313742.aspx).|
-
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Prerequisites and required settings</th>
-<th align="left">Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](http://www.microsoft.com//download/details.aspx?id=40773)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/download/details.aspx?id=40784)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Default installation location</p></td>
-<td align="left"><p>%PROGRAMFILES%\Microsoft Application Virtualization Server</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Custom SQL Server instance name (if applicable)</p></td>
-<td align="left"><p>Format to use: <strong>INSTANCENAME</strong></p>
-<p>This format assumes that the installation is on the local computer.</p>
-<p>If you specify the name with the format <strong>SVR\INSTANCE</strong>, the installation will fail.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Custom database name (if applicable)</p></td>
-<td align="left"><p>Unique database name.</p>
-<p>Default: AppVManagement</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Management server location</p></td>
-<td align="left"><p>Machine account on which the Management server is deployed.</p>
-<p>Format to use: Domain\MachineAccount</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Management server installation administrator</p></td>
-<td align="left"><p>Account used to install the Management server.</p>
-<p>Format to use: Domain\AdministratorLoginName</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft SQL Server Service Agent</p></td>
-<td align="left"><p>Configure the Management database computer so that the Microsoft SQL Server Agent service is restarted automatically. For instructions, see [Configure SQL Server Agent to restart services automatically](http://technet.microsoft.com/magazine/gg313742.aspx).</p></td>
-</tr>
-</tbody>
-</table>
 
 ### Publishing server prerequisite software
 
@@ -250,110 +106,11 @@ The Management database is only required if you use the App-V Management server.
 |64-bit ASP.NET registration||
 |Web Server role|This role must be added to a server operating system that is supported for the Management server.|
 |Web Server (IIS) Management Tools|Select **IIS Management Scripts and Tools**.|
-|Web Server Role Services|Common HTTP features:<br>Static content<br>Default document<br><br>Application development:<br>ASP.NET<br>.NET Extensibility<br>ISAPI Extensions<br>ISAPI Filters<br><br>Security:<br>Windows Authentication<br>Request Filtering<br><br>Management Tools:<br>IIS Management Console|
+|Web Server Role Services|Common HTTP features:<br>- Static content<br>- Default document<br><br>Application development:<br>- ASP<span></span>.NET<br>- .NET Extensibility<br>- ISAPI Extensions<br>- ISAPI Filters<br><br>Security:<br>- Windows Authentication<br>- Request Filtering<br><br>Management Tools:<br>- IIS Management Console|
 |Default installation location|%PROGRAMFILES%\Microsoft Application Virtualization Server|
-|Management service URL|URL of the App-V Management service. This is the port with which the Publishing server communicates.<br>Management server and Publishing server are installed on the same server, use the format http://localhost:12345.<br>If the Management server and Publishing server are installed on different servers, use the format http://MyAppvServer.MyDomain.com.|
+|Management service URL|URL of the App-V Management service. This is the port with which the Publishing server communicates.<br>Management server and Publishing server are installed on the same server, use the format **http://<span></span>localhost:12345**.<br>If the Management server and Publishing server are installed on different servers, use the format **http:<span></span>//MyAppvServer<span></span>.MyDomain<span></span>.com**.|
 |Publishing service website name|Name for the Publishing website.|
 |Publishing service port binding|Unique port number for the Publishing service. This port cannot be used by another process on the computer.|
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Prerequisites and required settings</th>
-<th align="left">Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](http://www.microsoft.com//download/details.aspx?id=40773)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/download/details.aspx?id=40784)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>64-bit ASP.NET registration</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Web Server role</p></td>
-<td align="left"><p>This role must be added to a server operating system that is supported for the Management server.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Web Server (IIS) Management Tools</p></td>
-<td align="left"><p>Click <strong>IIS Management Scripts and Tools</strong>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Web Server Role Services</p></td>
-<td align="left"><p><strong>Common HTTP reatures:</strong></p>
-<ul>
-<li><p>Static content</p></li>
-<li><p>Default document</p></li>
-</ul>
-<p><strong>Application development:</strong></p>
-<ul>
-<li><p>ASP.NET</p></li>
-<li><p>.NET extensibility</p></li>
-<li><p>ISAPI extensions</p></li>
-<li><p>ISAPI filters</p></li>
-</ul>
-<p><strong>Security:</strong></p>
-<ul>
-<li><p>Windows authentication</p></li>
-<li><p>Request filtering</p></li>
-</ul>
-<p><strong>Management Tools:</strong></p>
-<ul>
-<li><p>IIS Management Console</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Default installation location</p></td>
-<td align="left"><p>%PROGRAMFILES%\Microsoft Application Virtualization Server</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Management service URL</p></td>
-<td align="left"><p>URL of the App-V Management service. This is the port with which the Publishing server communicates.</p>
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Installation architecture</th>
-<th align="left">URL format</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Management server and Publishing server are installed on the same server</p></td>
-<td align="left"><p>http://localhost:12345</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Management server and Publishing server are installed on different servers</p></td>
-<td align="left"><p>http://MyAppvServer.MyDomain.com</p></td>
-</tr>
-</tbody>
-</table>
-<p> </p>
-<p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Publishing service website name</p></td>
-<td align="left"><p>Name for the Publishing website</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Publishing service port binding</p></td>
-<td align="left"><p>Unique port number for the Publishing service. This port cannot be used by another process on the computer.</p></td>
-</tr>
-</tbody>
-</table>
 
 ### Reporting server prerequisite software
 
@@ -365,86 +122,10 @@ The Management database is only required if you use the App-V Management server.
 |64-bit ASP.NET registration||
 |Windows Server Web Server role|This role must be added to a server operating system that is supported for the Management server.|
 |Web Server (IIS) Management Tools|Select **IIS Management Scripts and Tools**.|
-|Web Server Role Services|To reduce the risk of unwanted or malicious data being sent to the Reporting server, you should restrict access to the Reporting Web Service per your corporate security policy.<br>Common HTTP features:<br>Static content<br>Default document<br><br>Application development:<br>ASP.NET<br>.NET Extensibility<br>ISAPI Extensions<br>ISAPI Filters<br><br>Security:<br>Windows Authentication<br>Request Filtering<br><br>Management Tools:<br>IIS Management Console|
+|Web Server Role Services|To reduce the risk of unwanted or malicious data being sent to the Reporting server, you should restrict access to the Reporting Web Service per your corporate security policy.<br><br>Common HTTP features:<br>- Static content<br>- Default document<br><br>Application development:<br>- ASP<span></span>.NET<br>- .NET Extensibility<br>- ISAPI Extensions<br>- ISAPI Filters<br><br>Security:<br>- Windows Authentication<br>- Request Filtering<br><br>- Management Tools:<br>- IIS Management Console|
 |Default installation location|%PROGRAMFILES%\Microsoft Application Virtualization Server|
 |Reporting service website name|Name for the Reporting website.|
 |Reporting service port binding|Unique port number for the Reporting service. This port cannot be used by another process on the computer.|
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Prerequisites and required settings</th>
-<th align="left">Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Supported version of SQL Server</p></td>
-<td align="left"><p>For supported versions, see [App-V supported configurations](appv-supported-configurations.md).</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](http://www.microsoft.com//download/details.aspx?id=40773)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/download/details.aspx?id=40784)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>64-bit ASP.NET registration</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server Web Server role</p></td>
-<td align="left"><p>This role must be added to a server operating system that is supported for the Management server.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Web Server (IIS) Management Tools</p></td>
-<td align="left"><p>Click <strong>IIS Management Scripts and Tools</strong>.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Web Server role services</p></td>
-<td align="left"><p>To reduce the risk of unwanted or malicious data being sent to the Reporting server, you should restrict access to the Reporting Web Service per your corporate security policy.</p>
-<p><strong>Common HTTP features:</strong></p>
-<ul>
-<li><p>Static content</p></li>
-<li><p>Default document</p></li>
-</ul>
-<p><strong>Application development:</strong></p>
-<ul>
-<li><p>ASP.NET</p></li>
-<li><p>.NET extensibility</p></li>
-<li><p>ISAPI extensions</p></li>
-<li><p>ISAPI filters</p></li>
-</ul>
-<p><strong>Security:</strong></p>
-<ul>
-<li><p>Windows authentication</p></li>
-<li><p>Request filtering</p></li>
-</ul>
-<p><strong>Management tools:</strong></p>
-<ul>
-<li><p>IIS Management Console</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default installation location</p></td>
-<td align="left"><p>%PROGRAMFILES%\Microsoft Application Virtualization Server</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Reporting service website name</p></td>
-<td align="left"><p>Name for the Reporting website.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Reporting service port binding</p></td>
-<td align="left"><p>Unique port number for the Reporting service. This port cannot be used by another process on the computer.</p></td>
-</tr>
-</tbody>
-</table>
 
 ### Reporting database prerequisite software
 
@@ -457,61 +138,9 @@ You only require the Reporting database if you're using the App-V Reporting serv
 |Default installation location|%PROGRAMFILES%\Microsoft Application Virtualization Server|
 |Custom SQL Server instance name (if applicable)|Format to use: **INSTANCENAME**<br>his format assumes that the installation is on the local computer.<br>If you specify the name with the format **SVR\INSTANCE**, the installation will fail.|
 |Custom database name (if applicable)|Unique database name.<br>Default: AppVReporting|
-|Reporting server location|The Reporting server will be deployed on this machine account.<br>Format to use: Domain\MachineAccount|
-|Reporting server installation administrator|Account used to install the Reporting server.<br>Format to use: Domain\AdministratorLoginName|
+|Reporting server location|The Reporting server will be deployed on this machine account.<br>Format to use: **Domain\MachineAccount**|
+|Reporting server installation administrator|Account used to install the Reporting server.<br>Format to use: **Domain\AdministratorLoginName**|
 |Microsoft SQL Server Service and Microsoft SQL Server Service Agent|Configure these services to be associated with user accounts that have access to query AD DS.|
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Prerequisites and required settings</th>
-<th align="left">Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](http://www.microsoft.com//download/details.aspx?id=40773)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/download/details.aspx?id=40784)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Default installation location</p></td>
-<td align="left"><p>%PROGRAMFILES%\Microsoft Application Virtualization Server</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Custom SQL Server instance name (if applicable)</p></td>
-<td align="left"><p>Format to use: <strong>INSTANCENAME</strong></p>
-<p>This format assumes that the installation is on the local computer.</p>
-<p>If you specify the name with the format <strong>SVR\INSTANCE</strong>, the installation will fail.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Custom database name (if applicable)</p></td>
-<td align="left"><p>Unique database name.</p>
-<p>Default: AppVReporting</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Reporting server location</p></td>
-<td align="left"><p>The Reporting server will be deployed on this machine account.</p>
-<p>Format to use: Domain\MachineAccount</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Reporting server installation administrator</p></td>
-<td align="left"><p>Account used to install the Reporting server.</p>
-<p>Format to use: Domain\AdministratorLoginName</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft SQL Server Service and Microsoft SQL Server Service Agent</p></td>
-<td align="left"><p>Configure these services to be associated with user accounts that have access to query AD DS.</p></td>
-</tr>
-</tbody>
-</table>
 
 ## Sequencer prerequisite software
 
@@ -526,34 +155,6 @@ What to know before installing the prerequisites:
 |[Microsoft .NET Framework 4.5.1 (Web Installer)](http://www.microsoft.com//download/details.aspx?id=40773)||
 |[Windows PowerShell 3.0](http://www.microsoft.com/download/details.aspx?id=34595)|Installing Windows PowerShell 3.0 requires a restart.|
 |[KB2533623](http://support.microsoft.com/kb/2533623)|Applies to Windows 7 only: download and install the KB.|
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Prerequisite</th>
-<th align="left">Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](http://www.microsoft.com//download/details.aspx?id=40773)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Windows PowerShell 3.0](http://www.microsoft.com/download/details.aspx?id=34595)</p>
-<p></p></td>
-<td align="left"><p>Installing Windows PowerShell 3.0 requires a restart.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[KB2533623](http://support.microsoft.com/kb/2533623)</p></td>
-<td align="left"><p>Applies to Windows 7 only: download and install the KB.</p></td>
-</tr>
-</tbody>
-</table>
 
 ## Related topics
 

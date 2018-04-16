@@ -10,7 +10,7 @@ ms.date: 04/16/2018
 ---
 # Planning for App-V
 
->Applies to Windows 10, version 1607.
+>Applies to: Windows 10, version 1607
 
 Use the following information to plan to deploy App-V without disrupting your existing network or user experience.
 

@@ -10,7 +10,7 @@ ms.date: 04/16/2018
 ---
 # Planning to Deploy App-V with an electronic software distribution system
 
->Applies to Windows 10, version 1607.
+>Applies to: Windows 10, version 1607
 
 If you are using an electronic software distribution (ESD) system to deploy App-V packages, review the following planning considerations. For information about deploying App-V with System Center Configuration Manager, see [Introduction to application management in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682125.aspx#BKMK_Appv).
 

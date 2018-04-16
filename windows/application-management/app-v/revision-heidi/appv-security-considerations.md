@@ -6,11 +6,11 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 04/16/2018
 ---
 # App-V security considerations
 
->Applies to Windows 10, version 1607.
+>Applies to: Windows 10, version 1607
 
 This topic contains a brief overview of the accounts and groups, log files, and other security-related considerations for Microsoft Application Virtualization (App-V).
 
@@ -43,63 +43,11 @@ A best practice for user account management is to create domain global groups an
 No groups are created automatically during App-V setup. You should create the following Active Directory Domain Services global groups to manage App-V server operations.
 
 |Group name|Details|Important notes|
-|---|---|
+|---|---|---|
 |App-V Management Admin group|Used to manage the App-V management server. This group is created during the App-V Management Server installation.|The management console can't create a new group after installation is complete.|
 |Database read/write for Management Service account|Provides read/write access to the management database. This account should be created during App-V management database installation.||
 |App-V Management Service install admin account|Provides public access to schema-version table in management database. This account should be created during App-V management database installation.|This is only required if the management database is being installed separately from the service.|
 |App-V Reporting Service install admin account|Public access to schema-version table in reporting database. This account should be created during the App-V reporting database installation.|This is only required if reporting database is being installed separately from the service.|
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Group name</th>
-<th align="left">Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>App-V Management Admin group</p></td>
-<td align="left"><p>Used to manage the App-V management server. This group is created during the App-V Management Server installation.</p>
-<div class="alert">
-<strong>Important</strong>
-<p>The management console can't create a new group after installation is complete.</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Database read/write for Management Service account</p></td>
-<td align="left"><p>Provides read/write access to the management database. This account should be created during App-V management database installation.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>App-V Management Service install admin account</p>
-<div class="alert">
-<strong>Note</strong>
-<p>This is only required if the management database is being installed separately from the service.</p>
-</div>
-<div>
- 
-</div></td>
-<td align="left"><p>Provides public access to schema-version table in management database. This account should be created during App-V management database installation.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>App-V Reporting Service install admin account</p>
-<div class="alert">
-<strong>Note</strong>
-<p>This is only required if reporting database is being installed separately from the service.</p>
-</div>
-<div>
- 
-</div></td>
-<td align="left"><p>Public access to schema-version table in reporting database. This account should be created during the App-V reporting database installation.</p></td>
-</tr>
-</tbody>
-</table>
 
 Consider the following additional information:
 

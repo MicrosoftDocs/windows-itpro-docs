@@ -10,7 +10,7 @@ ms.date: 04/16/2018
 ---
 # App-V Capacity Planning
 
->Applies to Windows Server 2016.
+>Applies to: Windows Server 2016
 
 The following recommendations can be used as a baseline to help determine capacity planning information that is appropriate to your organization’s App-V infrastructure.
 

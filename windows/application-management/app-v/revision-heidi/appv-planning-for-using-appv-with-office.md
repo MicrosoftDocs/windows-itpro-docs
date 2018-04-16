@@ -10,7 +10,7 @@ ms.date: 04/16/2018
 ---
 # Planning for deploying App-V with Office
 
->Applies to Windows 10, version 1607.
+>Applies to: Windows 10, version 1607
 
 Use the following information to plan how to deploy Office within Microsoft Application Virtualization (App-V).
 
@@ -43,33 +43,6 @@ Before implementing Office coexistence, review the information in the following 
 |Office 2016|[How to use Outlook 2016 or 2013 and an earlier version of Outlook installed on the same computer](https://support.microsoft.com/kb/2782408)|
 |Office 2013|[How to use Office 2013 suites and programs (MSI deployment) on a computer running another version of Office](http://support.microsoft.com/kb/2784668)|
 |Office 2010|How to use Office 2010 suites and programs on a computer running another version of Office](http://support.microsoft.com/kb/2121447)|
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Office version</th>
-<th align="left">Relevant guide links</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Office 2016</p></td>
-<td align="left"><p>[How to use Outlook 2016 or 2013 and an earlier version of Outlook installed on the same computer](https://support.microsoft.com/kb/2782408)</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Office 2013</p></td>
-<td align="left"><p>[How to use Office 2013 suites and programs (MSI deployment) on a computer running another version of Office](http://support.microsoft.com/kb/2784668)</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Office 2010</p></td>
-<td align="left"><p>[How to use Office 2010 suites and programs on a computer running another version of Office](http://support.microsoft.com/kb/2121447)</p></td>
-</tr>
-</tbody>
-</table>
 
 Once you've reviewed the relevant guide, this topic will supplement what you've learned with information about Office coexistence that's more specific to App-V deployments.
 

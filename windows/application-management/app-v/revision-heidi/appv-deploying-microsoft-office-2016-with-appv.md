@@ -10,7 +10,7 @@ ms.date: 04/16/2018
 ---
 # Deploying Microsoft Office 2016 by Using App-V
 
->Applies to Windows 10, version 1607.
+>Applies to: Windows 10, version 1607
 
 Use the information in this article to use Application Virtualization (App-V) to deliver Microsoft Office 2016 as a virtualized application to computers in your organization. For information about using App-V to deliver Office 2013, see [Deploying Microsoft Office 2013 by using App-V](appv-deploying-microsoft-office-2013-with-appv.md). For information about using App-V to deliver Office 2010, see [Deploying Microsoft Office 2010 by using App-V](appv-deploying-microsoft-office-2010-with-appv.md).
 
@@ -157,10 +157,10 @@ After you download the Office 2016 applications through the Office Deployment To
 >[!NOTE]
 >You can use the Office Deployment Tool to create App-V packages for Office 365 ProPlus. Creating packages for the volume-licensed versions of Office Professional Plus or Office Standard is not supported.
 
-| Product ID                                       | Subscription licensing                                      |
-|--------------------------------------------------|-------------------------------------------------------------|
-| Office 2016                                      | O365ProPlusRetail                                           |
-| Office 2016 with Visio 2016                      | O365ProPlusRetail<br>VisioProRetail                         |
+| Product ID  | Subscription licensing  |
+|---|---|
+| Office 2016| O365ProPlusRetail |
+| Office 2016 with Visio 2016  | O365ProPlusRetail<br>VisioProRetail  |
 | Office 2016 with Visio 2016 and Project 2016     | O365ProPlusRetail<br>VisioProRetail<br>ProjectProRetail     |
 
 #### How to convert the Office applications into an App-V package
@@ -268,7 +268,7 @@ To manage your Office App-V packages, use the same operations as you would for a
 
 The following steps will tell you how to enable Office plug-ins with your Office package. To use Office plug-ins, you must use the App-V Sequencer to create a separate package that only contains the plug-ins (you can't use the Office Deployment Tool to create the plug-ins package). After that, create a connection group that contains the Office package and the plug-ins package.
 
-To enable plug-ins for Office App-V packages:
+#### Enable plug-ins for Office App-V packages
 
 1. Add a Connection Group through App-V Server, System Center Configuration Manager, or a Windows PowerShell cmdlet.
 2. Sequence your plug-ins using the App-V Sequencer. Ensure that Office 2016 is installed on the computer that will be used to sequence the plug-in. We recommend that you use Office 365 ProPlus (non-virtual) on the sequencing computer when sequencing Office 2016 plug-ins.
@@ -294,7 +294,7 @@ You can also disable specific applications in your Office App-V package. For exa
 >[!NOTE]
 >To exclude specific Office applications when you create the App-V package with the Office Deployment Tool, use the **ExcludeApp** setting.
 
-#### To disable an Office 2016 application
+#### Disable an Office 2016 application
 
 1. Open a Deployment Configuration File with a text editor such as **Notepad** and search for “Applications."
 2. Search for the Office application you want to disable, for example, Access 2016.
@@ -324,7 +324,7 @@ You can also disable specific applications in your Office App-V package. For exa
 
 You may want to disable shortcuts for certain Office applications instead of unpublishing or removing the package. The following example shows how to disable shortcuts for Microsoft Access.
 
-#### To disable shortcuts for Office 2016 applications
+#### Disable shortcuts for Office 2016 applications
 
 1. Open a Deployment Configuration File in Notepad and search for “Shortcuts”.
 2. To disable certain shortcuts, delete or comment out the specific shortcuts you don’t want. You must keep the subsystem present and enabled. The following example shows how to delete the Microsoft Access shortcuts while keeping the subsystems `<shortcut> </shortcut>` intact.

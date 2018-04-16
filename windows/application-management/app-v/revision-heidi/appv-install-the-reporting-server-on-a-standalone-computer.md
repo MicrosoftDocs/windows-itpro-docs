@@ -10,7 +10,7 @@ ms.date: 04/16/2018
 ---
 # How to install the reporting server on a standalone computer and connect it to the database
 
->Applies to Windows Server 2016.
+>Applies to: Windows Server 2016
 
 Use the following procedure to install the reporting server on a standalone computer and connect it to the database.
 

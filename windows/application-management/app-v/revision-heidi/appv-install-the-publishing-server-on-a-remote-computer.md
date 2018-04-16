@@ -10,7 +10,7 @@ ms.date: 04/16/2018
 ---
 # How to Install the Publishing Server on a Remote Computer
 
->Applies to Windows Server 2016.
+>Applies to: Windows Server 2016
 
 Use the following procedure to install the publishing server on a separate computer. Before you perform the following procedure, ensure the database and management server are available.
 

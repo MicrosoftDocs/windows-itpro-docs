@@ -10,7 +10,7 @@ ms.date: 04/16/2018
 ---
 # How to Deploy the App-V Server (new installation)
 
->Applies to Windows Server 2016.
+>Applies to: Windows Server 2016
 
 ## Before you start
 

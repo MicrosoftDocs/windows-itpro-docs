@@ -8,10 +8,9 @@ ms.sitesec: library
 ms.prod: w10
 ms.date: 04/16/2018
 ---
-
 # Getting started with App-V for Windows 10
 
->Applies to Windows 10, version 1607.
+>Applies to: Windows 10, version 1607
 
 Microsoft Application Virtualization (App-V) for Windows 10 delivers Win32 applications to users as virtual applications. Virtual applications are installed on centrally managed servers and delivered to users as a service in real time and on an as-needed basis. Users launch virtual applications from familiar access points and interact with them as if they were installed locally.
 
@@ -51,13 +50,8 @@ If you're new to App-V, it's a good idea to read the documentation thoroughly. B
 ## Other resources for this product
 
 * [Application Virtualization (App-V) overview](appv-for-windows.md)
-
 * [Planning for App-V](appv-planning-for-appv.md)
-
 * [Deploying App-V](appv-deploying-appv.md)
-
 * [Operations for App-V](appv-operations.md)
-
 * [Troubleshooting App-V](appv-troubleshooting.md)
-
 * [Technical reference for App-V](appv-technical-reference.md)

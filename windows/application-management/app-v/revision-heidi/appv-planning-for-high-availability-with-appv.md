@@ -10,7 +10,7 @@ ms.date: 04/16/2018
 ---
 # Planning for high availability with App-V Server
 
->Applies to Windows 10, version 1607.
+>Applies to: Windows 10, version 1607
 
 Microsoft Application Virtualization (App-V) system configurations can take advantage of options that maintain a high available service level.
 

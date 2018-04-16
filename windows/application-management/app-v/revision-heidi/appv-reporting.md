@@ -6,11 +6,11 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 04/16/2018
 ---
 # About App-V reporting
 
->Applies to Windows 10, version 1607.
+>Applies to: Windows 10, version 1607
 
 Application Virtualization (App-V) includes a built-in reporting feature that collects information about computers running the App-V client and virtual application package usage. You can generate reports from a centralized database with this information.
 
@@ -237,34 +237,6 @@ You can also use the **Send-AppVClientReport** cmdlet to manually collect data. 
 
 >[!NOTE]
 >If a location other than the Reporting Server is specified, the data is sent in **.xml** format with no additional processing.
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">With a reporting server</th>
-<th align="left">Without a reporting server</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>If you have an existing App-V reporting server, create a customized scheduled task or script. Specify that the client sends the data to the specified location at the desired frequency.</p></td>
-<td align="left"><p>If you do not have an existing App-V reporting Server, use the <strong>–URL</strong> parameter to send the data to a specified share. For example:</p>
-<p><code>Send-AppVClientReport –URL \\Myshare\MyData\ -DeleteOnSuccess</code></p>
-<p>The previous example will send the reporting data to <strong>\\MyShare\MyData\</strong> location indicated by the <strong>-URL</strong> parameter. After the data has been sent, the cache is cleared.</p>
-<div class="alert">
-<strong>Note</strong>
-<p>If a location other than the Reporting Server is specified, the data is sent using <strong>.xml</strong> format with no additional processing.</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
-</tbody>
-</table>
 
 ### Creating reports
 

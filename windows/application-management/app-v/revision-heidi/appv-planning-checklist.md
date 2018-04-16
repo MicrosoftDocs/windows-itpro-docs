@@ -10,7 +10,7 @@ ms.date: 04/16/2018
 ---
 # App-V Planning Checklist
 
->Applies to Windows 10, version 1607.
+>Applies to: Windows 10, version 1607
 
 This checklist can be used to help you plan for preparing your organization for an App-V deployment.
 
@@ -22,63 +22,9 @@ This checklist can be used to help you plan for preparing your organization for 
 |![Checklist box](../images/checklistbox.gif)|Review the getting started information about App-V to gain a basic understanding of the product before beginning deployment planning.|[Getting started with App-V](appv-getting-started.md)||
 |![Checklist box](../images/checklistbox.gif)|Plan for App-V deployment prerequisites and prepare your computing environment.|[App-V prerequisites](appv-prerequisites.md)||
 |![Checklist box](../images/checklistbox.gif)|If you plan to use the App-V management server, plan for the required roles.|[Planning for the App-V server deployment](appv-planning-for-appv-server-deployment.md)||
+|![Checklist box](../images/checklistbox.gif)|Plan for the App-V sequencer and client to create and run virtualized applications.|[Planning for the App-V Sequencer and client deployment](appv-planning-for-sequencer-and-client-deployment.md)||
 |![Checklist box](../images/checklistbox.gif)|If applicable, review the options and steps for migrating from a previous version of App-V.|[Migrating to App-V from a previous version](appv-migrating-to-appv-from-a-previous-version.md)||
 |![Checklist box](../images/checklistbox.gif)|Decide whether to configure App-V clients in Shared Content Store mode.|[Deploying the App-V Sequencer and configuring the client](appv-deploying-the-appv-sequencer-and-client.md)||
-
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left"></th>
-<th align="left">Task</th>
-<th align="left">References</th>
-<th align="left">Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>Review the getting started information about App-V to gain a basic understanding of the product before beginning deployment planning.</p></td>
-<td align="left"><p>[Getting started with App-V](appv-getting-started.md)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>Plan for App-V deployment prerequisites and prepare your computing environment.</p></td>
-<td align="left"><p>[App-V prerequisites](appv-prerequisites.md)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>If you plan to use the App-V management server, plan for the required roles.</p></td>
-<td align="left"><p>[Planning for the App-V server deployment](appv-planning-for-appv-server-deployment.md)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>Plan for the App-V sequencer and client to create and run virtualized applications.</p></td>
-<td align="left"><p>[Planning for the App-V Sequencer and client deployment](appv-planning-for-sequencer-and-client-deployment.md)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>If applicable, review the options and steps for migrating from a previous version of App-V.</p></td>
-<td align="left"><p>[Migrating to App-V from a previous version](appv-migrating-to-appv-from-a-previous-version.md)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>Decide whether to configure App-V clients in Shared Content Store mode.</p></td>
-<td align="left"><p>[Deploying the App-V Sequencer and configuring the client](appv-deploying-the-appv-sequencer-and-client.md)</p></td>
-<td align="left"><p></p></td>
-</tr>
-</tbody>
-</table>
 
 ## Have a suggestion for App-V?
 

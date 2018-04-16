@@ -10,7 +10,7 @@ ms.date: 04/16/2018
 ---
 # High-level architecture for App-V
 
->Applies to Windows 10, version 1607.
+>Applies to: Windows 10, version 1607
 
 Use the following information to simplify your Microsoft Application Virtualization (App-V) deployment.
 

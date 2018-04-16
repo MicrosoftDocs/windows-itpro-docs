@@ -88,53 +88,6 @@ The following table lists the supported shell extensions:
 |Column handler|Allows creating and displaying custom columns in **Windows Explorer Details view**. It can be used to extend sorting and grouping.|
 |Preview handler|Enables a preview of a file to be displayed in the Windows Explorer Preview pane.|
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Handler</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Context menu handler</p></td>
-<td align="left"><p>Adds menu items to the context menu. It is called before the context menu is displayed.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Drag-and-drop handler</p></td>
-<td align="left"><p>Controls the action where right-click, drag and drop and modifies the context menu that appears.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Drop target handler</p></td>
-<td align="left"><p>Controls the action after a data object is dragged and dropped over a drop target such as a file.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Data object handler</p></td>
-<td align="left"><p>Controls the action after a file is copied to the clipboard or dragged and dropped over a drop target. It can provide additional clipboard formats to the drop target.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Property sheet handler</p></td>
-<td align="left"><p>Replaces or adds pages to the property sheet dialog box of an object.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Infotip handler</p></td>
-<td align="left"><p>Allows retrieving flags and infotip information for an item and displaying it inside a pop-up tooltip upon mouse hover.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Column handler</p></td>
-<td align="left"><p>Allows creating and displaying custom columns in <strong>Windows Explorer Details view</strong>. It can be used to extend sorting and grouping.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Preview handler</p></td>
-<td align="left"><p>Enables a preview of a file to be displayed in the Windows Explorer Preview pane.</p></td>
-</tr>
-</tbody>
-</table>
-
 ## Copy on Write (CoW) file extension support
 
 Copy on write (CoW) file extensions allow App-V to dynamically write to specific locations contained in the virtual package while it is being used.

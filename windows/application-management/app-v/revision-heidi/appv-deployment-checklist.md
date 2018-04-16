@@ -10,7 +10,7 @@ ms.date: 04/16/2018
 ---
 # App-V Deployment Checklist
 
->Applies to Windows 10, version 1607.
+>Applies to: Windows 10, version 1607
 
 This checklist outlines the recommended steps and items to consider when deploying App-V features. Use it to organize your priorites while you deploy App-V. You can copy this checklist into a spreadsheet program and customize it for your use.
 

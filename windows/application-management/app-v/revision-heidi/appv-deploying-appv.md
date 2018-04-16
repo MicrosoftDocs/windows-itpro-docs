@@ -10,7 +10,7 @@ ms.date: 04/16/2018
 ---
 # Deploying App-V for Windows 10
 
->Applies to Windows 10, version 1607.
+>Applies to: Windows 10, version 1607
 
 App-V supports several different deployment options. Review this topic for information about the tasks that you must complete at different stages in your deployment.
 
@@ -35,15 +35,10 @@ The following sections describe how to use App-V to deliver Microsoft Office as 
 ## Other App-V deployment resources
 
 * [Application Virtualization (App-V) overview](appv-for-windows.md)
-
 * [Getting started with App-V](appv-getting-started.md)
-
 * [Planning for App-V](appv-planning-for-appv.md)
-
 * [Operations for App-V](appv-operations.md)
-
 * [Troubleshooting App-V](appv-troubleshooting.md)
-
 * [Technical reference for App-V](appv-technical-reference.md)
 
 ## Have a suggestion for App-V?

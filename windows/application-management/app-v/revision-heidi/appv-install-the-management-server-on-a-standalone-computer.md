@@ -10,7 +10,7 @@ ms.date: 04/16/2018
 ---
 # How to install the Management Server on a Standalone Computer and Connect it to the Database
 
->Applies to Windows Server 2016
+>Applies to: Windows Server 2016
 
 To install the management server on a standalone computer and connect it to the database, follow these steps.
 

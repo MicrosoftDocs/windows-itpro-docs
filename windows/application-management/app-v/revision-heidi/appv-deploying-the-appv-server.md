@@ -10,7 +10,7 @@ ms.date: 04/16/2018
 ---
 # Deploying the App-V server
 
->Applies to Windows Server 2016
+>Applies to: Windows Server 2016
 
 You can install the Application Virtualization (App-V) server components using different deployment configurations, which are described in this topic. Before you install the server features, review the server section of [App-V security considerations](appv-security-considerations.md).
 

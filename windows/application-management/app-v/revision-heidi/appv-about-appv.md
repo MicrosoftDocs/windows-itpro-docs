@@ -10,7 +10,7 @@ ms.date: 04/16/2018
 ---
 # What's new in App-V for Windows 10, version 1703 and earlier
 
->Applies to Windows 10, version 1703 and earlier.
+>Applies to: Windows 10, version 1703 and earlier
 
 Microsoft Application Virtualization (App-V) for Windows 10 delivers Win32 applications to users as virtual applications. Virtual applications are installed on centrally managed servers and delivered to users as a service in real time and on an as-needed basis. Users launch virtual applications from familiar access points and interact with them as if they were installed locally.
 

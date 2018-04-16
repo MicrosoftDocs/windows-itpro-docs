@@ -6,11 +6,11 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 04/16/2018
 ---
 # App-V Supported Configurations
 
->Applies to Windows 10, version 1607; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012; and Windows Server 2008 R2.
+>Applies to: Windows 10, version 1607; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012; Windows Server 2008 R2
 
 This topic specifies the requirements to install and run App-V in your Windows 10 environment. For information about prerequisite software such as the .NET Framework, see [App-V prerequisites](appv-prerequisites.md).
 
@@ -58,38 +58,6 @@ The following table lists the SQL Server versions that the App-V Management data
 |Microsoft SQL Server 2008 R2|SP3|32-bit or 64-bit|
 
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">SQL Server version</th>
-<th align="left">Service pack</th>
-<th align="left">System architecture</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Microsoft SQL Server 2014</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>32-bit or 64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft SQL Server 2012</p></td>
-<td align="left"><p>SP2</p></td>
-<td align="left"><p>32-bit or 64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft SQL Server 2008 R2</p></td>
-<td align="left"><p>SP3</p></td>
-<td align="left"><p>32-bit or 64-bit</p></td>
-</tr>
-</tbody>
-</table>
-
 ### Publishing server operating system requirements
 
 The App-V Publishing server can be installed on a server that runs Windows Server 2008 R2 with SP1 or later.
@@ -128,38 +96,6 @@ The following table lists the SQL Server versions that are supported for the App
 |Microsoft SQL Server 2012|SP2|32-bit or 64-bit|
 |Microsoft SQL Server 2008 R2|SP3|32-bit or 64-bit|
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">SQL Server version</th>
-<th align="left">Service pack</th>
-<th align="left">System architecture</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Microsoft SQL Server 2014</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>32-bit or 64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft SQL Server 2012</p></td>
-<td align="left"><p>SP2</p></td>
-<td align="left"><p>32-bit or 64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft SQL Server 2008 R2</p></td>
-<td align="left"><p>SP3</p></td>
-<td align="left"><p>32-bit or 64-bit</p></td>
-</tr>
-</tbody>
-</table>
-
 ## App-V client and Remote Desktop Services client requirements
 
 With Windows 10, version 1607 and later releases, the App-V client is included with Windows 10 Enterprise and Windows 10 Education. The App-V client is no longer part of the Microsoft Desktop Optimization Pack. Before you can use the App-V client, it must be enabled, as described in [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md).
@@ -179,58 +115,6 @@ The following table lists the operating systems that the App-V Sequencer install
 |Microsoft Windows 8.1||32-bit and 64-bit|
 |Microsoft Windows 8||32-bit and 64-bit|
 |Microsoft Windows 7|SP1|32-bit and 64-bit|
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Operating system</th>
-<th align="left">Service pack</th>
-<th align="left">System architecture</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
-<td align="left"></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Windows Server 2012</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2008 R2</p></td>
-<td align="left"><p>SP1</p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Windows 10</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>32-bit and 64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows 8.1</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>32-bit and 64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Windows 8</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>32-bit and 64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows 7</p></td>
-<td align="left"><p>SP1</p></td>
-<td align="left"><p>32-bit and 64-bit</p></td>
-</tr>
-</tbody>
-</table>
 
 ### Sequencer hardware requirements
 

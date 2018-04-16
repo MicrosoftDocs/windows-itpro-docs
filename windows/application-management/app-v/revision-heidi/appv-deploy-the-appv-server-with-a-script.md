@@ -10,7 +10,7 @@ ms.date: 04/16/2018
 ---
 # How to deploy the App-V server using a script
 
->Applies to Windows Server 2016.
+>Applies to: Windows Server 2016
 
 In order to complete the **appv_server_setup.exe** server setup successfully using the command line, you must specify and combine multiple parameters.
 
