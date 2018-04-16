@@ -81,11 +81,11 @@ ProcessCreationEvents
 
 // Better query - filters on filename, does case-insensitive matches
 ProcessCreationEvents
-| where FileName in~ ("net.exe", "net1.exe") and ProcessCommandLine contains "stop" and ProcessCommandLine contains "MpsSvc" 
+| where EventTime > ago(7d) and FileName in~ ("net.exe", "net1.exe") and ProcessCommandLine contains "stop" and ProcessCommandLine contains "MpsSvc" 
 
 // Best query also ignores quotes
 ProcessCreationEvents
-| where FileName in~ ("net.exe", "net1.exe")
+| where EventTime > ago(7d) and FileName in~ ("net.exe", "net1.exe")
 | extend CanonicalCommandLine=replace("\"", "", ProcessCommandLine)
 | where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
 ```
