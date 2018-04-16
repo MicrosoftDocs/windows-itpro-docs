@@ -190,8 +190,6 @@ Add or vote on suggestions on the [Application Virtualization feedback site](htt
 
 ## Related topics
 
-[App-V supported configurations](appv-supported-configurations.md)
-
-[Planning for high availability with App-V](appv-planning-for-high-availability-with-appv.md)
-
-[Planning to deploy App-V](appv-planning-to-deploy-appv.md)
+* [App-V supported configurations](appv-supported-configurations.md)
+* [Planning for high availability with App-V](appv-planning-for-high-availability-with-appv.md)
+* [Planning to deploy App-V](appv-planning-to-deploy-appv.md)

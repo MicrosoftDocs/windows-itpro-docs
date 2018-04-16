@@ -66,5 +66,4 @@ Add or vote on suggestions on the [Application Virtualization feedback site](htt
 ## Related topics
 
 * [Release Notes for App-V for Windows 10, version 1607](appv-release-notes-for-appv-for-windows.md)
-
 * [Release Notes for App-V for Windows 10, version 1703](appv-release-notes-for-appv-for-windows-1703.md)

@@ -92,15 +92,10 @@ Sequencing multipe apps at the same time requires that you create a **ConfigFIle
 2. Add the following required XML info for each app:
 
     - ```<AppName>```. The name of the app you're adding to the package.
-    
     - ```<InstallerFolder>```. The file path to the folder with the app installer.
-
     - ```<Installer>```. The file name for the app executable. This will typically be an .exe or .msi file.
-
     - ```<TimeoutInMinutes>```. The maximum amount of time, in minutes, that the cmdlet should wait for sequencing to complete. You can enter a different value for each app, based on the size and complexity of the app itself.
-
     - ```<Cmdlet>```. Determines whether the sequencer uses the cmdlet or the App-V Sequencer interface. **True** tells the sequencer to usea cmdlet-based sequencing, while **False** tells the sequencer to use the App-V Sequencer interface. You can use both the cmdlet and the interface together in the same ConfigFile, for different apps.
-    
     - ```<Enabled>```. Indicates whether the app should be sequenced. **True** includes the app, while **False** ignores it. You can include as many apps as you want in the batch file, but optionally enable only a few of them.
 
         **Example:**
@@ -128,7 +123,7 @@ Sequencing multipe apps at the same time requires that you create a **ConfigFIle
         </xml>
         ```
 
-#### Start the App-V Sequencer interface and app installation process
+#### How to start the App-V Sequencer interface and app installation process
 
 Open PowerShell as an admin on the Host computer and run the following commands to start the batch sequencing:
 

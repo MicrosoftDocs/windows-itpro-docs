@@ -17,9 +17,9 @@ Use the information in this article to use Application Virtualization (App-V) to
 This topic contains the following sections:
 
 * [What to know before you start](#what-to-know-before-you-start)
-* [Creating an Office 2016 package for App-V with the Office Deployment Tool](#creating-an-office-2016-package-for-app-v-with-the-office-deployment-tool) 
-* [Publishing the Office package for App-V](#publishing-the-office-package-for-app-v) 
-* [Customizing and managing Office App-V packages](#customizing-and-managing-office-app-v-packages) 
+* [Creating an Office 2016 package for App-V with the Office Deployment Tool](#creating-an-office-2016-package-for-app-v-with-the-office-deployment-tool)
+* [Publishing the Office package for App-V](#publishing-the-office-package-for-app-v)
+* [Customizing and managing Office App-V packages](#customizing-and-managing-office-app-v-packages)
 
 ## What to know before you start
 
@@ -364,8 +364,8 @@ To upgrade an Office 2016 package, use the Office Deployment Tool. To upgrade a 
 
     >[!NOTE]
     >Office App-V packages have two Version IDs:
-       * An Office 2016 App-V Package Version ID that is unique across all packages created using the Office Deployment Tool.
-       * A second App-V Package Version ID, formatted as X.X.X.X, in the AppX manifest that will only change if there is a new version of Office itself. For example, if a new Office 2016 release with upgrades is available, and a package is created through the Office Deployment Tool to incorporate these upgrades, the X.X.X.X version ID will change to reflect the new version of Office. The App-V server will use the X.X.X.X version ID to differentiate this package and recognize that it contains new upgrades to the previously published package, and as a result, publish it as an upgrade to the existing Office 2016 package.
+      >* An Office 2016 App-V Package Version ID that is unique across all packages created using the Office Deployment Tool.
+      >* A second App-V Package Version ID, formatted as X.X.X.X, in the AppX manifest that will only change if there is a new version of Office itself. For example, if a new Office 2016 release with upgrades is available, and a package is created through the Office Deployment Tool to incorporate these upgrades, the X.X.X.X version ID will change to reflect the new version of Office. The App-V server will use the X.X.X.X version ID to differentiate this package and recognize that it contains new upgrades to the previously published package, and as a result, publish it as an upgrade to the existing Office 2016 package.
 2. Globally publish the newly created Office 2016 App-V Packages onto the computers you want to apply the new updates to. Since the new package has the same lineage as the older Office 2016 App-V Package, publishing will be fast, as publishing the new package with the updates only applies the new changes to the old package.
 3. Upgrades will be applied in the same manner of any globally published App-V packages. Because applications will probably be in use, upgrades might be delayed until the computer is rebooted.
 

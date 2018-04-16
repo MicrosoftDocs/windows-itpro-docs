@@ -89,9 +89,7 @@ Use the following steps to modify the connection string to include ```failover p
 Click any of the following links for more information:
 
 * [Prepare a mirror database for mirroring (SQL Server)](https://docs.microsoft.com/en-us/sql/database-engine/database-mirroring/prepare-a-mirror-database-for-mirroring-sql-server).
-
 * [Establish a database mirroring session using Windows Authentication (SQL Server Management Studio)](https://docs.microsoft.com/en-us/sql/database-engine/database-mirroring/establish-database-mirroring-session-windows-authentication).
-
 * [Deprecated database engine features in SQL Server 2012](<https://msdn.microsoft.com/library/ms143729(v=sql.110).aspx>).
 
 ## Support for Microsoft SQL Server Always On configuration
