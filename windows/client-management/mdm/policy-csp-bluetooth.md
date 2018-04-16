@@ -6,11 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/12/2018
+ms.date: 04/06/2018
 ---
 
 # Policy CSP - Bluetooth
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -27,6 +29,9 @@ ms.date: 03/12/2018
   </dd>
   <dd>
     <a href="#bluetooth-allowprepairing">Bluetooth/AllowPrepairing</a>
+  </dd>
+  <dd>
+    <a href="#bluetooth-allowpromptedproximalconnections">Bluetooth/AllowPromptedProximalConnections</a>
   </dd>
   <dd>
     <a href="#bluetooth-localdevicename">Bluetooth/LocalDeviceName</a>
@@ -193,6 +198,62 @@ The following list shows the supported values:
 -   1 (default)– Allowed.
 
 <!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="bluetooth-allowpromptedproximalconnections"></a>**Bluetooth/AllowPromptedProximalConnections**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803. This policy allows the IT admin to block users on these managed devices from using Quick Pair and other proximity based scenarios.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:  
+
+-   0 - Disallow. Block users on these managed devices from using Quick Pair and other proximity based scenarios
+-   1 - Allow. Allow users on these managed devices to use Quick Pair and other proximity based scenarios
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>

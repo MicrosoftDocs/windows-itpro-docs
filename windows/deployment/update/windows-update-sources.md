@@ -1,5 +1,5 @@
 ---
-title: Determining the source of Windows updates
+title: Determine the source of Windows updates
 description: Determine the source that Windows Update service is currently using.
 ms.prod: w10
 ms.mktglfcycl: 
@@ -10,7 +10,7 @@ ms.author: jaimeo
 ms.date: 04/05/2018
 ---
 
-# Determining the source of Windows updates
+# Determine the source of Windows updates
 
 Windows 10 devices can receive updates from a variety of sources, including Windows Update online, a Windows Server Update Services server, and others. To determine the source of Windows Updates currently being used on a device, follow these steps: 
 

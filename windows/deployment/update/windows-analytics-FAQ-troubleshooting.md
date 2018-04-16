@@ -13,7 +13,7 @@ ms.date: 04/05/2018
 
 # Frequently asked questions and troubleshooting Windows Analytics
 
-This topic compiles the most common issues encountered with configuring and using Windows Analytics, as well as general questions.
+This topic compiles the most common issues encountered with configuring and using Windows Analytics, as well as general questions. This FAQ, along with the [Windows Analytics Technical Community](https://techcommunity.microsoft.com/t5/Windows-Analytics/ct-p/WindowsAnalytics), are recommended resources to consult before contacting Microsoft support.
 
 ## Troubleshooting common problems
 

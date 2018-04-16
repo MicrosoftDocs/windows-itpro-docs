@@ -230,7 +230,7 @@
 ### [Deploy Windows 10 updates using System Center Configuration Manager](update/waas-manage-updates-configuration-manager.md)
 ### [Manage device restarts after updates](update/waas-restart.md)
 ### [Manage additional Windows Update settings](update/waas-wu-settings.md)
-### [Determining the source of Windows updates](update/windows-update-sources.md)
+### [Determine the source of Windows updates](update/windows-update-sources.md)
 ### [Windows Insider Program for Business](update/waas-windows-insider-for-business.md)
 #### [Introduction to the Windows Insider Program for Business](update/WIP4Biz-intro.md)
 #### [Windows Insider Program for Business Frequently Asked Questions](update/waas-windows-insider-for-business-faq.md)
