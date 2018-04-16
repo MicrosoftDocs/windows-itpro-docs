@@ -18,7 +18,7 @@ ms.author: jdecker
 
 **Applies to**
 
--   Windows 10
+-   Windows 10 Pro, Enterprise, and Education
 
 A [kiosk device](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) has been expanded to make it easy for administrators to create kiosks that run more than one app. 
 
