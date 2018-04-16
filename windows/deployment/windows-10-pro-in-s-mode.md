@@ -57,6 +57,7 @@ If you’re running Windows 10, version 1709 or version 1803, you can switch to 
 You'll be prompted to save your files before the switch starts. Follow the prompts to switch to Windows 10 Pro. Your device will restart during this process. 
 
 **Block individual users from switching**
+
 If you need to prevent any of your users from switching from Windows 10 in S mode to Windows 10 Pro, you need to restrict their permissions through the Intune/MDM admin portal. Otherwise all your users can switch out of S mode at any time.
 
 You can use AutoPilot to switch devices running Windows 10, version 1803. The only requirement is that the devices be enrolled in Intune.
@@ -70,6 +71,7 @@ You will now see the devices you switched listed under Switched Devices.
 
 > [!IMPORTANT]
 > While it’s free to switch to Windows 10 Pro, it’s not reversible. The only way to rollback this kind of switch is through a BMR factory reset.
+
 ## Related topics
 
 [Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)<BR>
