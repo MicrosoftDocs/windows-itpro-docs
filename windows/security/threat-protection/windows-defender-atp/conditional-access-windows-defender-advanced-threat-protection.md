@@ -53,7 +53,7 @@ In Intune, a device compliance policy is used in conjunction with Azure AD condi
 To resolve the risk found on a device, you'll need to return the device to a compliant state. A device returns to a compliant state when there is no risk seen on it. 
 
 There are three ways to address a risk:
-1. Use Manual or auto remediation.
+1. Use Manual or automated remediation.
 2. Resolve active alerts on the machine. This will remove the risk from the machine.
 3. You can remove the machine from the active policies and consequently, conditional access will not be applied on the machine. 
 
