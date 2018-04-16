@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/12/2018
+ms.date: 04/16/2018
 ---
 
 # Policy CSP - Update
@@ -917,6 +917,15 @@ The following list shows the supported values:
 </table>
 
 <!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
 <!--Description-->
 Added in Windows 10, version 1803. Enable IT admin to configure feature update uninstall period. Values range 2 - 60 days. Default is 10 days.
 
@@ -2138,6 +2147,15 @@ ADMX Info:
 <!--Policy-->
 <a href="" id="update-phoneupdaterestrictions"></a>**Update/PhoneUpdateRestrictions**  
 
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
 <!--Description-->
 This policy is deprecated. Use [Update/RequireUpdateApproval](#update-requireupdateapproval) instead.
 
