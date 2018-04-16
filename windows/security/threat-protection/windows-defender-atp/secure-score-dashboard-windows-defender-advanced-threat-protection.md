@@ -324,6 +324,7 @@ For a machine to be considered "well configured", it must comply to a minimum ba
 You can take the following actions to increase the overall security score of your organization:
 - Encrypt all supported drives
 - Resume protection on all drives
+- Ensure drive compatibility
 - Fix sensor data collection
   - The Windows Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. Therefore, it's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
 
