@@ -67,18 +67,18 @@ POST /72f988bf-86f1-41af-91ab-2d7cd011db47/oauth2/token HTTP/1.1
 Host: login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 
-resource=https%3A%2F%2FWDATPAlertExport.Seville.onmicrosoft.com&client_id=35e0f735-5fe4-4693-9e68-3de80f1d3745&client_secret=IKXc6PxB2eoFNJ%2FIT%2Bl2JZZD9d9032VXz6Ul3D2WyUQ%3D&grant_type=client_credentials
+resource=https%3A%2F%2Fgraph.windows.net&client_id=35e0f735-5fe4-4693-9e68-3de80f1d3745&client_secret=IKXc6PxB2eoFNJ%2FIT%2Bl2JZZD9d9032VXz6Ul3D2WyUQ%3D&grant_type=client_credentials
 ```
 The response will include an access token and expiry information.
 
 ```json
 {
-  "token type": "Bearer",
-  "expires in": "3599"
+  "token_type": "Bearer",
+  "expires_in": "3599",
   "ext_expires_in": "0",
   "expires_on": "1488720683",
   "not_before": "1488720683",
-  "resource": "https://WDATPAlertExport.Seville.onmicrosoft.com",
+  "resource": "https://graph.windows.net",
   "access_token":"eyJ0eXaioJJOIneiowiouqSuzNiZ345FYOVkaJL0625TueyaJasjhIjEnbMlWqP..."
 }
 ```
@@ -117,7 +117,7 @@ Authorization: Bearer <your access token>
 The following example demonstrates a request to get the last 20 alerts since 2016-09-12 00:00:00.
 
 ```syntax
-GET  https://wdatp-alertexporter-eu.windows.com/api/alerts?limit=20&sinceTimeUtc="2016-09-12 00:00:00"
+GET  https://wdatp-alertexporter-eu.windows.com/api/alerts?limit=20&sinceTimeUtc=2016-09-12T00:00:00.000
 Authorization: Bearer <your access token>
 ```
 
