@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 04/16/2018
 ---
 # How to install the reporting server on a standalone computer and connect it to the database
 
@@ -17,7 +17,7 @@ Use the following procedure to install the reporting server on a standalone comp
 >[!IMPORTANT]
 >Before performing the following procedure you should read and understand [About App-V reporting](appv-reporting.md).
 
-**To install the reporting server on a standalone computer and connect it to the database**
+## Install the reporting server on a standalone computer and connect it to the database
 
 1. Copy the App-V server installation files to the computer you plan to install it on. To start the App-V server installation, run **appv\_server\_setup.exe** as an administrator, then select **Install**.
 2. On the **Getting started** page, review and accept the license terms, then select **Next**.

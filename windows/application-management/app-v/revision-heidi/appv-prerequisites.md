@@ -6,11 +6,11 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 04/16/2018
 ---
 # App-V for Windows 10 prerequisites
 
->Applies to Windows 10, version 1607.
+>Applies to: Windows 10, version 1607
 
 Before installing App-V for Windows 10, ensure that you have installed all of the following required prerequisite software.
 
@@ -24,57 +24,8 @@ The following table indicates the software that is already installed for differe
 |---|---|
 |Windows 10|All prerequisite software is already installed.|
 |Windows 8.1|All prerequisite software is already installed.<br>If you're running Windows 8, upgrade to Windows 8.1 before using App-V.|
-|Windows Server 2016|The following prerequisite software is already installed:<br>Microsoft .NET Framework 4.5<br>Windows PowerShell 3.0<br><br>Installing Windows PowerShell requires a restart.|
+|Windows Server 2016|The following prerequisite software is already installed:<br>- Microsoft .NET Framework 4.5<br>- Windows PowerShell 3.0<br><br>Installing Windows PowerShell requires a restart.|
 |Windows 7|No prerequisite software is installed. You must install the software before you can install App-V.|
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Operating system</th>
-<th align="left">Prerequisite description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Windows 10</p></td>
-<td align="left"><p>All prerequisite software is already installed.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows 8.1</p></td>
-<td align="left"><p>All prerequisite software is already installed.</p>
-<div class="alert">
-<strong>Note</strong>
-<p>If you are running Windows 8, upgrade to Windows 8.1 before using App-V.</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2016</p></td>
-<td align="left"><p>The following prerequisite software is already installed:</p>
-<ul>
-<li><p>Microsoft .NET Framework 4.5</p></li>
-<li><p>Windows PowerShell 3.0</p>
-<div class="alert">
-<strong>Note</strong>  
-<p>Installing Windows PowerShell 3.0 requires a restart.</p>
-</div>
-<div>
- 
-</div></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows 7</p></td>
-<td align="left"><p>No prerequisite software is installed. You must install the software before you can install App-V.</p></td>
-</tr>
-</tbody>
-</table>
 
 ## App-V Server prerequisite software
 
@@ -101,48 +52,13 @@ The following deployment scenarios are not supported:
 * Installing side-by-side instances of multiple App-V Server versions on the same server.
 * Installing the App-V server components on a computer that runs server core or domain controller.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Account for installing the App-V Server</p></td>
-<td align="left"><p>The account that you use to install the App-V Server components must have:</p>
-<ul>
-<li><p>Administrative rights on the computer on which you are installing the components.</p></li>
-<li><p>The ability to query Active Directory Domain Services.</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Port and firewall</p></td>
-<td align="left"><ul>
-<li><p>Specify a port where each component will be hosted.</p></li>
-<li><p>Add the associated firewall rules to allow incoming requests to the specified ports.</p></li>
-</ul>
-<p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Web Distributed Authoring and Versioning (WebDAV)</p></td>
-<td align="left"><p>WebDAV is automatically disabled for the Management Service.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Supported deployment scenarios</p></td>
-<td align="left"><ul>
-<li><p>A stand-alone deployment, where all components are deployed on the same server.</p></li>
-<li><p>A distributed deployment.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Unsupported deployment scenarios</p></td>
-<td align="left"><ul>
-<li><p>Installing side-by-side instances of multiple App-V Server versions on the same server.</p></li>
-<li><p>Installing the App-V server components on a computer that runs server core or domain controller.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+|Item|Description|
+|---|---|
+|Account for installing the App-V Server|The account that you use to install the App-V Server components must have:<br>- Administrative rights on the computer on which you are installing the components.<br>- The ability to query Active Directory Domain Services.|
+|Port and firewall|- Specify a port where each component will be hosted.<br>- Add the associated firewall rules to allow incoming requests to the specified ports.|
+|Web Distributed Authoring and Versioning (WebDAV)|WebDAV is automatically disabled for the Management Service.|
+|Supported deployment scenarios|- A stand-alone deployment, where all components are deployed on the same server.<br>- A distributed deployment.|
+|Unsupported deployment scenarios|- Installing side-by-side instances of multiple App-V Server versions on the same server.<br>- Installing the App-V server components on a computer that runs server core or domain controller.|
 
 ### Management server prerequisite software
 

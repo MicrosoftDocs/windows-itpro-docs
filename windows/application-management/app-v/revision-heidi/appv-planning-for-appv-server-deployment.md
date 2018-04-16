@@ -49,48 +49,11 @@ The following table lists server-related protocols used by the App-V servers, an
 |IIS server|HTTP<br>HTTPS|This server-protocol combination requires a mechanism to synchronize content between the Management Server and the Streaming Server. When using HTTP or HTTPS, use an IIS server and a firewall to protect the server from exposure to the Internet.|Internal|
 |File|SMB|This server-protocol combination requires support to synchronize the content between the Management Server and the Streaming Server. Use a client computer that's capable of file sharing or streaming.|Internal|
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type</th>
-<th align="left">Protocols</th>
-<th align="left">External features needed</th>
-<th align="left">Reporting</th>
-<th align="left"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>IIS server</p></td>
-<td align="left"><p>HTTP</p>
-<p>HTTPS</p></td>
-<td align="left"><p>This server-protocol combination requires a mechanism to synchronize content between the Management Server and the Streaming Server. When using HTTP or HTTPS, use an IIS server and a firewall to protect the server from exposure to the Internet.</p></td>
-<td align="left"><p>Internal</p></td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"><p>File</p></td>
-<td align="left"><p>SMB</p></td>
-<td align="left"><p>This server-protocol combination requires support to synchronize the content between the Management Server and the Streaming Server. Use a client computer that's capable of file sharing or streaming.</p></td>
-<td align="left"><p>Internal</p></td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
-
 ## Have a suggestion for App-V?
 
 Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
 
 ## Related topics
 
-[Planning to deploy App-V](appv-planning-to-deploy-appv.md)
-
-[Deploying the App-V server](appv-deploying-the-appv-server.md)
+* [Planning to deploy App-V](appv-planning-to-deploy-appv.md)
+* [Deploying the App-V server](appv-deploying-the-appv-server.md)

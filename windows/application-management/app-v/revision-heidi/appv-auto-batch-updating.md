@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 06/26/2017
+ms.date: 04/16/2018
 ---
 # Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)
 

@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 04/16/2018
 ---
 # App-V Capacity Planning
 

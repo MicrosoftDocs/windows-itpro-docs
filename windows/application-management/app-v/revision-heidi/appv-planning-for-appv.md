@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 04/16/2018
 ---
 # Planning for App-V
 
@@ -25,13 +25,8 @@ Use the following information to plan to deploy App-V without disrupting your ex
 ## Other App-V planning resources
 
 * [Application Virtualization (App-V) overview](appv-for-windows.md)
-
 * [Getting started with App-V](appv-getting-started.md)
-
 * [Deploying App-V](appv-deploying-appv.md)
-
 * [Operations for App-V](appv-operations.md)
-
 * [Troubleshooting App-V](appv-troubleshooting.md)
-
 * [Technical reference for App-V](appv-technical-reference.md)

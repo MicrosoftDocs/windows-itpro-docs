@@ -156,7 +156,7 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
 15. The **Create Package** page is displayed. To modify the package without saving it, select **Continue to modify package without saving using the package editor** check box. This option opens the package in the sequencer console so that you can modify the package before it is saved. Select **Next**.
 
-    To save the package immediately, select **Save the package now**. Optionally, add a **Description** that will be associated with the package. Descriptions are useful for identifying the version and other information about the package.
+    To save the package immediately, select **Save the package now**. Optionally, add a **Description** for the package. Descriptions are useful for identifying the version and other important information about the package.
 
     >[!IMPORTANT]
     >The system does not support non-printable characters in Comments and Descriptions.
@@ -176,7 +176,7 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
 4. On the **Type of Application** page, select **Middleware**, and then select **Next**.
 
-5. On the **Select Installer** page, select **Browse** and specify the installation file for the application. If the application does not have an associated installer file and you plan to run all installation steps manually, select the **Select this option to perform a custom installation** check box, and then select **Next**.
+5. On the **Select Installer** page, select **Browse** and specify the installation file for the application. If the application does not have an associated installer file and you plan to run all installation steps manually, select the **Select this option to perform a custom installation** check box, then select **Next**.
 
 6. On the **Package Name** page, type a name that will be associated with the package. Use a name that helps identify the purpose and version of the application that will be added to the package. The package name is displayed in the App-V Management Console.
 
@@ -188,15 +188,15 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
 10. On the **Installation Report** page, you can review information about the virtual application package that you have just sequenced. In **Additional Information**, double-click an event to obtain more detailed information. To proceed, select **Next**.
 
-11. On the **Target OS** page, specify the operating systems that can run this package. To enable all supported operating systems in your environment to run this package, select the **Allow this package to run on any operating system** check box. To configure this package to run only on specific operating systems, select the **Allow this package to run only on the following operating systems** check box and select the operating systems that can run this package. Select **Next**.
+11. On the **Target OS** page, specify the operating systems that can run this package. To enable all supported operating systems in your environment to run this package, select the **Allow this package to run on any operating system** check box. To configure this package to run only on specific operating systems, select the **Allow this package to run only on the following operating systems** check box and select the operating systems that can run this package. Once you're done, select **Next**.
 
 12. On the **Create Package** page is displayed. To modify the package without saving it, select **Continue to modify package without saving using the package editor**. This option opens the package in the sequencer console so that you can modify the package before it is saved. Select **Next**.
 
     To save the package immediately, select **Save the package now**. Optionally, add a **Description** to be associated with the package. Descriptions are useful for identifying the program version and other information about the package.
 
     >[!IMPORTANT]
-    >The system does not support non-printable characters in Comments and Descriptions.
-    
+    >The system does not support non-printable characters in comments and descriptions.
+
     The default **Save Location** is also displayed on this page. To change the default location, select **Browse** and specify the new location. Select **Create**.
 
 13. The **Completion** page is displayed. Review the information in the **Virtual Application Package Report** pane as needed, then select **Close**. This information is also available in the **Report.xml** file that is located in the directory specified in step 11 of this procedure.
@@ -204,7 +204,7 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
     The package is now available in the sequencer. To edit the package properties, select **Edit \[Package Name\]**.
 
     >[!IMPORTANT]
-    >After you have successfully created a virtual application package, you cannot run the virtual application package on the computer that is running the sequencer.
+    >After you have successfully created a virtual application package, you can't run the virtual application package on the computer that is running the sequencer.
 
 ## Have a suggestion for App-V?
 

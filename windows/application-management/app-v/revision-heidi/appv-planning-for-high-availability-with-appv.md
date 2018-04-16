@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 04/16/2018
 ---
 # Planning for high availability with App-V Server
 
@@ -104,4 +104,4 @@ Add or vote on suggestions on the [Application Virtualization feedback site](htt
 
 ## Related topics
 
-[Planning to deploy App-V](appv-planning-to-deploy-appv.md)
+* [Planning to deploy App-V](appv-planning-to-deploy-appv.md)

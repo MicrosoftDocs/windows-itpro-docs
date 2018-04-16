@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 04/16/2018
 ---
 # Planning for deploying App-V with Office
 
@@ -93,37 +93,6 @@ The following table describes the integration level of each version of Office, a
 |Office 2013|Always integrated. Windows operating system integrations cannot be disabled.|
 |Office 2016|Always integrated. Windows operating system integrations cannot be disabled.|
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left"></th>
-<th align="left">The modes App-V can sequence this version of Office with</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Office 2007</p></td>
-<td align="left"><p>Always non-integrated. App-V does not offer any operating system integrations with a virtualized version of Office 2007.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Office 2010</p></td>
-<td align="left"><p>Integrated and non-integrated mode.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Office 2013</p></td>
-<td align="left"><p>Always integrated. Windows operating system integrations cannot be disabled.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Office 2016</p></td>
-<td align="left"><p>Always integrated. Windows operating system integrations cannot be disabled.</p></td>
-</tr>
-</tbody>
-</table>
-
 Microsoft recommends deploying Office coexistence with only one integrated Office instance. For example, if you’re using App-V to deploy Office 2010 and Office 2013, you should sequence Office 2010 in non-integrated mode. For more information about sequencing Office in non-integration (isolated) mode, see [How to sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](http://support.microsoft.com/kb/2830069).
 
 ### Known limitations of Office coexistence scenarios
@@ -179,90 +148,11 @@ The Office 2013 or Office 2016 App-V package supports the following integration 
 |Primary Interop Assemblies|Support managed add-ins|
 |Office Document Cache Handler|Allows Document Cache for Office applications|
 |Outlook Protocol Search Handler|User can search in Outlook|
-|Active X Controls|For more information on ActiveX controls, refer to [ActiveX Control API Reference](https://msdn.microsoft.com/library/vs/alm/ms440037(v=office.14).aspx).|
+|Active X Controls|For more information on ActiveX controls, refer to [ActiveX Control API Reference](<https://msdn.microsoft.com/library/vs/alm/ms440037(v=office.14).aspx>).|
 |OneDrive Pro Icon Overlays|Windows Explorer shell icon overlays when users look at folders OneDrive Pro folders|
 |Shell extensions||
 |Shortcuts||
 |Windows Search||
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Integration point</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Skype for Business (formerly Lync) Meeting Join plug-in for Firefox and Chrome</p></td>
-<td align="left"><p>User can join Skype meetings from Firefox and Chrome</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Sent to OneNote Print Driver</p></td>
-<td align="left"><p>User can print to OneNote</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>OneNote Linked Notes</p></td>
-<td align="left"><p>OneNote Linked Notes</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Send to OneNote Internet Explorer add-in</p></td>
-<td align="left"><p>User can send to OneNote from IE</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Firewall exception for Skype for Business (formerly Lync) and Outlook</p></td>
-<td align="left"><p>Firewall exception for Skype for Business (formerly Lync) and Outlook</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>MAPI client</p></td>
-<td align="left"><p>Native apps and add-ins can interact with virtual Outlook through MAPI</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>SharePoint Plug-in for Firefox</p></td>
-<td align="left"><p>User can use SharePoint features in Firefox</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Mail Control Panel Applet</p></td>
-<td align="left"><p>User gets the mail control panel applet in Outlook</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Primary Interop Assemblies</p></td>
-<td align="left"><p>Support managed add-ins</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Office Document Cache Handler</p></td>
-<td align="left"><p>Allows Document Cache for Office applications</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Outlook Protocol Search handler</p></td>
-<td align="left"><p>User can search in outlook</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Active X Controls</p></td>
-<td align="left"><p>For more information on ActiveX controls, refer to [ActiveX Control API Reference](https://msdn.microsoft.com/library/vs/alm/ms440037(v=office.14).aspx).</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>OneDrive Pro Icon Overlays</p></td>
-<td align="left"><p>Windows Explorer shell icon overlays when users look at folders OneDrive Pro folders</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Shell extensions</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Shortcuts</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Search</p></td>
-<td align="left"><p></p></td>
-</tr>
-</tbody>
-</table>
 
 ## Have a suggestion for App-V?
 

@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 04/16/2018
 ---
 # Planning to Use Folder Redirection with App-V
 
@@ -53,41 +53,8 @@ The following table describes how folder redirection works when %AppData% is red
 
 |Virtual environment state|Action that occurs|
 |---|---|
-|When the virtual environment starts.|The virtual file system (VFS) AppData folder is mapped to the local AppData folder (%LocalAppData%) instead of to the user’s roaming AppData folder (%AppData%).<br>LocalAppData contains a local cache of the user’s roaming AppData folder for the package in use. The local cache is located under ```%LocalAppData%\Microsoft\AppV\Client\VFS\PackageGUID\AppData```<br>The latest data from the user’s roaming AppData folder is copied to and replaces the data currently in the local cache.<br>While the virtual environment is running, data continues to be saved to the local cache. Data is served only out of %LocalAppData% and is not moved or synchronized with %AppData% until the end user shuts down the computer.<br>Entries to the AppData folder are made using the user context, not the system context.|
+|When the virtual environment starts.|The virtual file system (VFS) AppData folder is mapped to the local AppData folder (%LocalAppData%) instead of to the user’s roaming AppData folder (%AppData%).<br>- LocalAppData contains a local cache of the user’s roaming AppData folder for the package in use. The local cache is located under ```%LocalAppData%\Microsoft\AppV\Client\VFS\PackageGUID\AppData```<br>- The latest data from the user’s roaming AppData folder is copied to and replaces the data currently in the local cache.<br>- While the virtual environment is running, data continues to be saved to the local cache. Data is served only out of %LocalAppData% and is not moved or synchronized with %AppData% until the end user shuts down the computer.<br>- Entries to the AppData folder are made using the user context, not the system context.|
 |When the virtual environment shuts down.|The local cached data in AppData (roaming) is zipped up and copied to the “real” roaming AppData folder in %AppData%. A time stamp that indicates the last known upload is simultaneously saved as a registry key under ```HKCU\Software\Microsoft\AppV\Client\Packages\<PACKAGE_GUID>\AppDataTime```. App-V keeps the three most recent copies of the compressed data under %AppData% for redundancy.|
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Virtual environment state</th>
-<th align="left">Action that occurs</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>When the virtual environment starts</p></td>
-<td align="left"><p>The virtual file system (VFS) AppData folder is mapped to the local AppData folder (%LocalAppData%) instead of to the user’s roaming AppData folder (%AppData%).</p>
-<ul>
-<li><p>LocalAppData contains a local cache of the user’s roaming AppData folder for the package in use. The local cache is located under:</p>
-<p><code>%LocalAppData%\Microsoft\AppV\Client\VFS\PackageGUID\AppData</code></p></li>
-<li><p>The latest data from the user’s roaming AppData folder is copied to and replaces the data currently in the local cache.</p></li>
-<li><p>While the virtual environment is running, data continues to be saved to the local cache. Data is served only out of %LocalAppData% and is not moved or synchronized with %AppData% until the end user shuts down the computer.</p></li>
-<li><p>Entries to the AppData folder are made using the user context, not the system context.</p></li>
-</ul>
-</td>
-</tr>
-<tr class="even">
-<td align="left"><p>When the virtual environment shuts down</p></td>
-<td align="left"><p>The local cached data in AppData (roaming) is zipped up and copied to the “real” roaming AppData folder in %AppData%. A time stamp that indicates the last known upload is simultaneously saved as a registry key under:</p>
-<p><code>HKCU\Software\Microsoft\AppV\Client\Packages\&lt;PACKAGE_GUID&gt;\AppDataTime</code></p>
-<p>App-V keeps the three most recent copies of the compressed data under %AppData% for redundancy.</p></td>
-</tr>
-</tbody>
-</table>
 
 ## Have a suggestion for App-V?
 

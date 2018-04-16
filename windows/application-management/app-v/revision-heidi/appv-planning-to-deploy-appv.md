@@ -6,11 +6,11 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 04/16/2018
 ---
 # Planning to Deploy App-V for Windows 10
 
->Applies to Windows 10, version 1607.
+>Applies to: Windows 10, version 1607
 
 There are several different deployment configurations and requirements to consider before you deploy App-V for Windows 10. Review this topic for information about what you'll need to make a deployment plan that best meets your needs.
 
@@ -53,5 +53,4 @@ There are several different deployment configurations and requirements to consid
 ## Other Resources for App-V Planning
 
 * [Planning for App-V](appv-planning-for-appv.md)
-
 * [Performance Guidance for Application Virtualization](appv-performance-guidance.md)
