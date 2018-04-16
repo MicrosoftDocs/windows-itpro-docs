@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: store, mobile
 author: TrudyHa
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.date: 4/16/2018
 ---
 
 # Configure access to Microsoft Store
@@ -76,6 +76,10 @@ You can also use Group Policy to manage access to Microsoft Store.
 3.  In the Setting pane, click **Turn off Store application**, and then click **Edit policy setting**.
 
 4.  On the **Turn off Store application** setting page, click **Enabled**, and then click **OK**.
+
+> [!Important]
+> Enabling **Turn off Store application** policy turns off app updates from Microsoft Store.
+
 
 ## <a href="" id="block-store-mdm"></a>Block Microsoft Store using management tool
 
