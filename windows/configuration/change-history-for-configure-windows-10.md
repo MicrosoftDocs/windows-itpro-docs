@@ -27,6 +27,7 @@ The topics in this library have been updated for Windows 10, version 1803. The f
 New or changed topic | Description
 --- | ---
 [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md) | Updated endpoints.
+[Configure cellular settings for tablets and PCs](provisioning-apn.md) | Added instructions for confirming that the settings were applied.
 
 ## March 2018
 

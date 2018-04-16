@@ -63,15 +63,17 @@ You can create your own web browser Windows app by using the WebView class. Lear
 
 ## Secure your information
 
-Avoid selecting Windows apps that may expose the information you don’t want to show in your kiosk, since kiosk usually means anonymous access and kiosks are often located in public settings like a shopping mall. For example, an app that has a file picker allows the user to gain access to files and folders on the user's system. Avoid selecting this type of apps if they provide unnecessary data access.
+Avoid selecting Windows apps that may expose the information you don’t want to show in your kiosk, since kiosk usually means anonymous access and locates in a public setting like a shopping mall. For example, an app that has a file picker allows the user to gain access to files and folders on the user's system, avoid selecting these types of apps if they provide unnecessary data access.
 
 ## App configuration
 
-Some apps may require additional configurations before they can be used appropriately in assigned access. For example, Microsoft OneNote requires you to set up a Microsoft account for the assigned access user account before OneNote will open in assigned access. Check the guidelines published by your selected app and do the setup accordingly. 
+Some apps may require additional configurations before they can be used appropriately in assigned access. For example, Microsoft OneNote requires you to set up a Microsoft account for the assigned access user account before OneNote will open in assigned access. 
+
+Check the guidelines published by your selected app and set up accordingly. 
 
 ## Develop your kiosk app
 
-Assigned access in Windows 10 leverages the new lock framework. When an assigned access user signs in, the selected kiosk app is launched above the lockscreen. 
+Assigned access in Windows 10 leverages the new lock framework. When an assigned access user signs in, the selected kiosk app is launched above the lock screen. The kiosk app is running as an above lock screen app. 
 
 Follow the [best practices guidance for developing a kiosk app for assigned access](https://msdn.microsoft.com/library/windows/hardware/mt633799%28v=vs.85%29.aspx). 
 
