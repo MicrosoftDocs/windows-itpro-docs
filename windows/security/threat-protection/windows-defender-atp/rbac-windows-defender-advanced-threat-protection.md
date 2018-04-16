@@ -10,10 +10,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/16/2018
+ms.date: 04/17/2018
 ---
 
-# Manage portal access using role-based based access control
+# Manage portal access using role-based access control
 **Applies to:**
 
 - Windows 10 Enterprise
@@ -44,34 +44,41 @@ Windows Defender ATP RBAC is designed to support your tier- or role-based model 
 - **Control who can take specific action**
   - Create custom roles and control what Windows Defender ATP capabilities they can access with granularity.
  
-- **Control who can see specific information**
+- **Control who can see information on specific machine group or groups**
   - [Create machine groups](machine-groups-windows-defender-advanced-threat-protection.md) by specific criteria such as names, tags, domains, and others, then grant role access to them using a specific Azure AD user group.
 
 To implement role-based access, you'll need to define admin roles, assign corresponding permissions, and assign Azure Active Directory (Azure AD) user groups assigned to the roles.
 
 
 ### Before you begin
+Before using RBAC, it's important that you understand the roles that can grant permissions and the consequences of turning on RBAC.
+
+
+> [!WARNING]
+> Before enabling the feature, it's important that you have a Global Administrator role or Security Administrator role in Azure AD and that you have your Azure AD groups ready to reduce the risk of being locked out of the portal. 
 
 When you first log in to the Windows Defender ATP portal, you're granted either full access or read only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. Read only access is granted to users with a Security Reader role in Azure AD. 
 
+Someone with a Windows Defender ATP Global administrator role has unrestricted access to all machines, regardless of their machine group association and the Azure AD user groups assignments
+
 > [!WARNING]
-> Before enabling the feature, it's important that you have a Global Administrator role in Azure AD and that have your Azure AD groups ready to reduce the risk of being locked out of the portal. 
+> Initially, only those with Azure AD Global Administrator or Security Administrator rights will be able to create and assign roles in the Windows Defender ATP portal, therefore, having the right groups ready in Azure AD is important.
 >
-> Only those with Azure AD Global Administrator rights will be able to create and assign roles in the Windows Defender ATP portal, therefore, having the right groups ready in Azure AD is important.
+> **Turning on role-based access control will cause users with read-only permissions (for example, users assigned to Azure AD Security reader role) to lose access until they are assigned to a role.** 
 >
-> Turning on role-based access control will cause users with read-only permissions to lose access until they are assigned to a role. Users with admin permissions are automatically assigned the default Windows Defender ATP global administrator role with full permissions.
+>Users with admin permissions are automatically assigned the default built-in Windows Defender ATP global administrator role with full permissions. After opting in to use RBAC, you can assign additional users that are not Azure AD Global or Security Administrators to the Windows Defender ATP global administrator role. 
 >
 > After opting in to use RBAC, you cannot revert to the initial roles as when you first logged into the portal. 
 
-## Create user roles and assign the role to a group
+## Create roles and assign the role to a group
 
 1.	In the navigation pane, select **Settings > Role based access control > Roles**.
 
-2.	Click **Add new role**. 
+2.	Click **Add role**. 
 
-3.	Enter the user group name, description, and active permissions you’d like to assign to the group.
+3.	Enter the role name, description, and active permissions you’d like to assign to the role.
 
-	 - **User group name**
+	 - **Role name**
 
 	 - **Description**
 
@@ -80,30 +87,28 @@ When you first log in to the Windows Defender ATP portal, you're granted either 
 		  - **Investigate alerts** - Users can manage alerts, initiate automated investigations, collect investigation packages, manage machine tags, and export machine timeline.
 		  - **Approve or take action** - Users can take response actions and approve or dismiss pending remediation actions.
 		  - **Manage system settings** - Users can configure settings, SIEM and threat intel API settings, advanced settings, preview features, and automated file uploads.
-		  - **Manage security settings** - Users can configure alert suppression settings, manage allowed or blocked lists for automation, manage folder exclusions for automation, onboard and offboard machines, and manage email notifications.
-		  - **Monitor dashboards** - Users can view all dashboards.
+		  
+4.	Click **Next** to assign the role to an Azure AD group.
 
-4.	Click **Next** to assign the user to a group.
-
-5.	Use the filter to select the Azure AD group that you'd like the user to be a part of.
+5.	Use the filter to select the Azure AD group that you’d like to add to this role.
 
 6.	Click **Save and close**.
 
 7.	Apply the configuration settings.
 
-## Edit user roles
+## Edit roles
 
-1.	Select the user role you'd like to edit.
+1.	Select the role you'd like to edit.
 
 2.	Click **Edit**.
 
-3.	Modify the details or the memberships that the user role is a part of. 
+3.	Modify the details or the groups that the role is a part of. 
 
 4.	Click **Save and close**.
 
-## Delete user roles
+## Delete roles
 
-1.	Select the user role row you'd like to delete.
+1.	Select the role row you'd like to delete.
 
 2.	Click the drop-down button and select **Delete role**.
 

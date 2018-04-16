@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/16/2018
+ms.date: 04/17/2018
 ---
 
 # Configure advanced features in Windows Defender ATP
@@ -84,7 +84,7 @@ This feature is only available if you have an active Microsoft Intune (Intune) l
 When you enable this feature, you'll be able to share Windows Defender ATP device information to Intune and enhance policy enforcement. The machine risk score can be used in the integration to enforce conditional access and other security policies. 
 
 >[!NOTE]
->You'll need to enable the integration on both Intune and Windows Defender ATP to use this feature. For more information on how to enable and configure the integration in Intune, see
+>You'll need to enable the integration on both Intune and Windows Defender ATP to use this feature. For more information on how to enable and configure the integration in Intune, see [Enable conditional access to better protect users, devices, and data](conditional-access-windows-defender-advanced-threat-protection.md).
 
 
 
@@ -96,6 +96,5 @@ When you enable this feature, you'll be able to share Windows Defender ATP devic
 ## Related topics
 - [Update data retention settings](data-retention-settings-windows-defender-advanced-threat-protection.md)
 - [Configure alert notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)
-- [Configure automation notifications](configure-automation-notifications-windows-defender-advanced-threat-protection.md)
 - [Enable and create Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
 - [Enable Secure Score security controls](enable-secure-score-windows-defender-advanced-threat-protection.md)

@@ -42,7 +42,7 @@ If you plan to use an internal CA to sign catalog files or WDAC policies, see th
 
 WDAC policies include *policy rules*, which control options such as audit mode or whether UMCI is enabled in a WDAC policy. You can modify these options in a new or existing WDAC policy. (For information about *file rules*, which specify the level at which applications will be identified and trusted, see the next section, [Windows Defender Application Control file rule levels](#windows-defender-application-control-file-rule-levels).)
 
-To modify the policy rule options of an existing WDAC policy, use the [Set-RuleOption](https://technet.microsoft.com/library/mt634483.aspx) Windows PowerShell cmdlet. Note the following examples of how to use this cmdlet to add and remove a rule option on an existing WDAC policy:
+To modify the policy rule options of an existing WDAC policy, use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption?view=win10-ps). Note the following examples of how to use this cmdlet to add and remove a rule option on an existing WDAC policy:
 
 -   To ensure that UMCI is enabled for a WDAC policy that was created with the `-UserPEs` (user mode) option, add rule option 0 to an existing policy by running the following command:
 

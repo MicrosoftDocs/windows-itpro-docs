@@ -1,5 +1,5 @@
 ---
-title: Create machine groups in Windows Defender ATP
+title: Create and manage machine groups in Windows Defender ATP
 description: Create machine groups and set automated remediation levels on them by confiring the rules that apply on the group
 keywords: machine groups, groups, remediation, level, rules, aad group, role, assign, rank
 search.product: eADQiWindows 10XVcnh
@@ -10,10 +10,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/16/2018
+ms.date: 04/17/2018
 ---
 
-# Create machine groups in Windows Defender ATP
+# Create and manage machine groups in Windows Defender ATP
 **Applies to:**
 
 - Windows 10 Enterprise
@@ -26,7 +26,7 @@ ms.date: 04/16/2018
 
 [!include[Prerelease information](prerelease.md)]
 
-In a typical enterprise scenario, security operation teams are typically assigned a set of machines. These machines are grouped together based on a set of attributes such as their domains, computer names, or designated tags.
+In an enterprise scenario, security operation teams are typically assigned a set of machines. These machines are grouped together based on a set of attributes such as their domains, computer names, or designated tags.
 
 In Windows Defender ATP, you can create machine groups and use them to:
 - Limit access to related alerts and data to specific Azure AD user groups with [assigned RBAC roles](rbac-windows-defender-advanced-threat-protection.md) 
@@ -37,6 +37,10 @@ As part of the process of creating a machine group, you'll:
 - Define a matching rule based on the machine name, domain, tags, and OS platform to determine which machines belong to the group. If a machine is also matched to other groups, it is added only to the highest ranked machine group.
 - Determine access to machine group
 - Rank the machine group relative to other groups after it is created 
+
+>[!NOTE]
+>All machine groups are accessible to all users if you don’t assign any Azure AD groups to them.
+
 
 ## Add a machine group
 
@@ -67,19 +71,22 @@ As part of the process of creating a machine group, you'll:
 5.	Assign the user groups that can access the machine group you created. 
 
     >[!NOTE]
-    >You can only grant access to Azure AD user groups with assigned RBAC roles. 
+    >You can only grant access to Azure AD user groups that have been assigned to RBAC roles. 
 
 6.	Click **Close**.
 
 7.	Apply the configuration settings.
 
 ## Understand matching and manage groups
+You can promote the rank of a machine group so that it is given higher priority during matching. When a machine is matched to more than one group, it is added only to the highest ranked group. You can also edit and delete groups.
 
-You can promote the rank of a machine group so that it is given higher priority during matching. When a machine is matched to more than one group, it is added only to the highest ranked group.
+By default, machine groups are accessible to all users with portal access. You can change the default behavior by assigning Azure AD user groups to the machine group.
 
-Machines that are not matched to any groups are added to **Ungrouped machines**. By default, remediations performed on machines in this group require approval, but you can also define the remediation level for this group.
+Machines that are not matched to any groups are added to Ungrouped machines (default) group. You cannot change the rank of this group or delete it. However, you can change the remediation level of this group, and define the Azure AD user groups that can access this group.
 
-You can also edit and delete groups.
+>[!NOTE]
+>Applying changes to machine group configuration may take up to several minutes.
+
 
 
 

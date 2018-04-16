@@ -47,7 +47,7 @@ Read the walkthrough document provided with each attack scenario. Each document 
 
 2. Download and read the corresponding walkthrough document provided with your selected scenario.
 
-3. Use the onboarded test machine to access then the Windows Defender ATP portal and go to **Help** > **Simulations & tutorials**. From there, download the simulation file or copy the simulation script.
+3. Download the simulation file or copy the simulation script by navigating to **Help** > **Simulations & tutorials**. You can choose to download the file or script on the test machine but it's not mandatory.
 
 4. Run the simulation file or script on the test machine as instructed in the walkthrough document.
 

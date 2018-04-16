@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/16/2018
+ms.date: 04/17/2018
 ---
 
 # Advanced hunting reference in Windows Defender ATP
@@ -101,5 +101,7 @@ Use the following table to understand what the columns represent, its data type,
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-belowfoldlink)        
 
-
+## Related topic
+- [Query data using Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md)
+- [Advanced hunting query language best practices](/advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
 

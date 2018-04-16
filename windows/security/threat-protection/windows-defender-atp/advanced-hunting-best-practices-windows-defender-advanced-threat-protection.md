@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/16/2018
+ms.date: 04/17/2018
 ---
 
 # Advanced hunting query best practices Windows Defender ATP
@@ -57,7 +57,38 @@ NetworkCommunicationEvents
 
 The query summarizes by both InitiatingProcessId and InitiatingProcessCreationTime - to make sure the query looks at a single process, and not mixing multiple processes with the same process ID.
 
-         
+### Using command line queries
+
+Command lines may vary - when applicable, filter on file names and do fuzzy matching. 
+
+There are numerous ways to construct a command line to accomplish a task. 
+
+For example, a malicious attacker could specify the process image file name without a path, with full path, without the file extension, using environment variables, add quotes, and others. In addition, the attacker can also change the order of some parameters, add multiple quotes or spaces, and much more.
+
+To create more durable queries using command lines, we recommended the following guidelines:
+- Identify the known processes (such as net.exe, psexec.exe, and others) by matching on the filename fields, instead of filtering on the command line field.
+- When querying for command line arguments, don't look for an exact match on multiple unrelated arguments in a certain order. Instead, use regular expressions or use multiple separate contains operators.
+- Use case insensitive matches. For example, use '=~', 'in~', 'contains' instead of '==', 'in' or 'contains_cs'
+- To mitigate DOS command line obfuscation techniques, consider removing quotes, replacing commas with spaces, and replacing multiple consecutive spaces with a single space. This is just the start of handling DOS obfuscation techniques, but it does mitigate the most common ones.
+
+The following example query shows various ways to construct a query that looks for the file *net.exe* to stop the Windows Defender Firewall service:
+
+```
+// Non-durable query - do not use
+ProcessCreationEvents
+| where ProcessCommandLine == "net stop MpsSvc"
+| limit 10
+
+// Better query - filters on filename, does case-insensitive matches
+ProcessCreationEvents
+| where FileName in~ ("net.exe", "net1.exe") and ProcessCommandLine contains "stop" and ProcessCommandLine contains "MpsSvc" 
+
+// Best query also ignores quotes
+ProcessCreationEvents
+| where FileName in~ ("net.exe", "net1.exe")
+| extend CanonicalCommandLine=replace("\"", "", ProcessCommandLine)
+| where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
+```
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-bestpractices-belowfoldlink)        
 

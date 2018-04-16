@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/16/2018
+ms.date: 04/17/2018
 ---
 
 # Windows Defender Advanced Threat Protection
@@ -35,7 +35,7 @@ Get a quick, but in-depth overview of Windows Defender ATP for Windows 10 and th
 
 Windows Defender ATP uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
 
--   **machine behavioral sensors**: Embedded in Windows 10, these sensors
+-   **Endpoint behavioral sensors**: Embedded in Windows 10, these sensors
     collect and process behavioral signals from the operating system
     (for example, process, registry, file, and network communications)
     and sends this sensor data to your private, isolated, cloud instance of Windows Defender ATP.
@@ -94,6 +94,7 @@ Get started  |  Learn about the minimum requirements, validate licensing and com
 [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md) | Learn about onboarding client, server, and non-Windows machines. Learn how to run a detection test, configure proxy and Internet connectivity settings, and how to troubleshoot potential onboarding issues.
 [Understand the Windows Defender ATP portal](use-windows-defender-advanced-threat-protection.md) | Understand the Security operations, Secure Score, and Threat analytics dashboards as well as how to navigate the portal.
 Investigate and remediate threats | Investigate alerts, machines, and take response actions to remediate threats.
+[Enable conditional access to better protect users, devices, and data](conditional-access-windows-defender-advanced-threat-protection.md) | Conditional access is a capability that helps you better protect your users and enterprise information by making sure that only secure devices have access to applications. <br> With conditional access, you can control access to enterprise information based on the risk level of a device. This helps keep trusted users on trusted devices using trusted applications.
 API and SIEM support | Use the supported APIs to pull and create custom alerts, or automate workflows. Use the supported SIEM tools to pull alerts from the Windows Defender ATP portal.
 Reporting | Create and build Power BI reports using Windows Defender ATP data.
 Check service health and sensor state | Verify that the service is running and check the sensor state on machines.

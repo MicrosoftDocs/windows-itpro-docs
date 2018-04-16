@@ -73,6 +73,7 @@ The package contains the following folders:
     ![Image of notification to collect package](images/atp-notification-collect-package.png)
 
     The Action center shows the submission information:
+
     ![Image of investigation package in action center](images/atp-action-center-package-collection.png)
 
     - **Submission time** - Shows when the action was submitted.

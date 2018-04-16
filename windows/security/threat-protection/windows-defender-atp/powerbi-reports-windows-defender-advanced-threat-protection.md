@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 localizationpriority: high
-ms.date: 04/16/2018
+ms.date: 04/17/2018
 ---
 # Create and build Power BI reports using Windows Defender ATP data
 
@@ -42,7 +42,8 @@ Windows Defender ATP makes it easy to create a Power BI dashboard by providing a
 
 1. In the navigation pane, select **Settings** > **General** > **Power BI reports**.
 
-2.	Click **Create dashboard**. 
+2.	Click **Create dashboard**.
+
     ![Image of create dashboard](images/atp-create-dashboard.png)
     
     You'll see a notification that things are being loaded. 

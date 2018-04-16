@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/16/2018
+ms.date: 04/17/2018
 ---
 
 # Use Automated investigations to investigate and remediate threats
@@ -30,7 +30,7 @@ ms.date: 04/16/2018
 The Windows Defender ATP service has a wide breadth of visibility on multiple machines. With this kind of optics, the service generates a multitude of alerts. The volume of alerts generated can be challenging for a typical security operations team to individually address.
 
 
-To address this challenge, Windows Defender ATP uses Automated investigations to dramatically reduce the volume of alerts that need to be investigated individually. The Automated investigation feature leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. 
+To address this challenge, Windows Defender ATP uses Automated investigations to significantly reduce the volume of alerts that need to be investigated individually. The Automated investigation feature leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. 
 
 The Automated investigations list shows all the investigations that have been initiated automatically and shows other details such as its status, detection source, and the date for when the investigation was initiated. 
 
@@ -135,13 +135,23 @@ Apply this filter to see specific machine groups that you might have created.
 Select between filtering the list between Automated investigations that have comments and those that don't.
 
 ## Analyze Automated investigations 
-You can view the details of an Automated investigation to see details such as the investigation graph, alerts associated with the investigation, the machine that was investigated, and other information.
+You can view the details of an Automated investigation to see information such as the investigation graph, alerts associated with the investigation, the machine that was investigated, and other information.
 
-In this view, you'll see the name of the investigation, when it started and ended. The pending time is the elapsed time since the investigation started and waited for a user to approve a pending action or for a machine to come back online. 
-
-The comments and tags allow you to add and review tags and comments that were added about the investigation.
+In this view, you'll see the name of the investigation, when it started and ended. 
 
 ![Image of investigation details window](images/atp-analyze-auto-ir.png)
+
+The progress ring shows two status indicators:
+- Orange ring - shows the pending portion of the investigation
+- Green ring - shows the running time portion of the investigation
+
+![Image of start, end, and pending time for an automated investigation](images/atp-auto-investigation-pending.png) 
+
+In the example image, the automated investigation started on 10:26:59 AM and ended on 10:56:26 AM. Therefore, the entire investigation was running for 29 minutes and 27 seconds. 
+
+The pending time of 16 minutes and 51 seconds reflects two possible pending states: pending for asset (for example, the device might have disconnected from the network) or pending for approval. 
+
+From this view, you can also view and add comments and tags about the investigation.
 
 ### Investigation page
 The investigation page gives you a quick summary on the status, alert severity, category, and detection source.
@@ -211,10 +221,12 @@ If there are pending actions on an Automated investigation, you'll see a pop up 
 
 ![Image of pending actions](images\atp-pending-actions-notification.png)
 
-When you click on the pending actions link, you'll be taken to the pending actions page.
+When you click on the pending actions link, you'll be taken to the pending actions page. You can also navigate to the page from the navigation page by going to **Automated investigation** > **Pending actions**.
 
  
 The pending actions view aggregates all investigations that require an action for an investigation to proceed or be completed.
+
+![Image of pending actions page](images/atp-pending-actions-list.png)
 
 Use the Customize columns drop-down menu to select columns that you'd like to show or hide. 
 

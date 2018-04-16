@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 localizationpriority: high
-ms.date: 04/16/2018
+ms.date: 04/17/2018
 ---
 
 # Onboard servers to the Windows Defender ATP service
@@ -152,6 +152,7 @@ To offboard the server, you can use either of the following methods:
     # Reload the configuration and apply changes
     $AgentCfg.ReloadConfiguration()
     ```
+
 ## Related topics
 - [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
 - [Onboard non-Windows machines](configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)

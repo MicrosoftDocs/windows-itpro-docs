@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/16/2018
+ms.date: 04/17/2018
 ---
 
 # View and organize the Windows Defender ATP Machines list
@@ -97,7 +97,7 @@ Filter the list to view specific machines grouped together by the following malw
   -	**PUA** – Unwanted software is a category of applications that install and perform undesirable activity without adequate user consent. These applications are not necessarily malicious, but their behaviors often negatively impact the computing experience, even appearing to invade user privacy. Many of these applications display advertising, modify browser settings, and install bundled software.
 
 **Groups and tags** </br>
-You can filter the list based on the grouping and tagging that you've added to individual machines. For more information, see [Manage machine group and tags](investigate-machines-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags).
+You can filter the list based on the grouping and tagging that you've added to individual machines. 
 
 ## Export machine list to CSV
 You can  download a full list of all the machines in your organization, in CSV format. Click the **Export to CSV** button to download the entire list as a CSV file.

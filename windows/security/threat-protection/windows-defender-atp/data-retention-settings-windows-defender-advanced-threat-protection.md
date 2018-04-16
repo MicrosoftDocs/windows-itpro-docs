@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/16/2018
+ms.date: 04/17/2018
 ---
 # Update data retention settings for Windows Defender ATP 
 
@@ -41,7 +41,6 @@ During the onboarding process, a wizard takes you through the general settings o
 ## Related topics
 - [Update data retention settings](data-retention-settings-windows-defender-advanced-threat-protection.md)
 - [Configure alert notifications in Windows Defender ATP](configure-email-notifications-windows-defender-advanced-threat-protection.md)
-- [Configure automation notifications](configure-automation-notifications-windows-defender-advanced-threat-protection.md)
 - [Enable and create Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
 - [Enable Secure Score security controls](enable-secure-score-windows-defender-advanced-threat-protection.md)
 - [Configure advanced features](advanced-features-windows-defender-advanced-threat-protection.md)

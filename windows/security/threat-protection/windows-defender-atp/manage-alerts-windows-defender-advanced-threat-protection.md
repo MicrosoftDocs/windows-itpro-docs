@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/16/2018
+ms.date: 04/17/2018
 ---
 
 # Manage Windows Defender Advanced Threat Protection alerts
@@ -87,20 +87,20 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
 
     ![Image of alert status](images/atp-create-suppression-rule.png)
 
-3. Choose the context for suppressing the alert.
+3. Enter an alert title then select an indicator of compromise from the drop-down list.
   
     ![Image of alert status](images/atp-new-suppression-rule.png)
 
   > [!NOTE]
   > You cannot create a custom or blank suppression rule. You must start from an existing alert.
 
-4. Specify the conditions for when the rule is applied:
-    - Alert title
-    - Indicator of compromise (IOC)
-    - Suppression conditions
+4. Specify the suppression conditions by entering values for any of the following:
+    - Sha1
+    - File name
+    - Folder path
 
     > [!NOTE]
-    > The SHA1 of the alert cannot be modified, however you can clear the SHA1 to remove it from the suppression conditions.
+    > The SHA1 of the alert cannot be modified, however you can clear the SHA1 to remove it from the suppression conditions by removing the deselecting the checkbox.
     
 5. Specify the action and scope on the alert. <br>
    You can automatically resolve an alert or hide it from the portal. Alerts that are automatically resolved will appear in the resolved section of the alerts queue. Alerts that are marked as hidden will be suppressed from the entire system, both on the machine's associated alerts and from the dashboard. You can also specify to suppress the alert on the machine only or the whole organization.

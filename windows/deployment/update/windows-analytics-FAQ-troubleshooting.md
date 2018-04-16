@@ -8,12 +8,12 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 03/20/2018
+ms.date: 04/03/2018
 ---
 
 # Frequently asked questions and troubleshooting Windows Analytics
 
-This topic compiles the most common issues encountered with configuring and using Windows Analytics, as well as general questions.
+This topic compiles the most common issues encountered with configuring and using Windows Analytics, as well as general questions. This FAQ, along with the [Windows Analytics Technical Community](https://techcommunity.microsoft.com/t5/Windows-Analytics/ct-p/WindowsAnalytics), are recommended resources to consult before contacting Microsoft support.
 
 ## Troubleshooting common problems
 
@@ -32,6 +32,8 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 [Upgrade Readiness doesn't show IE site discovery data from some devices](#upgrade-readiness-doesnt-show-ie-site-discovery-data-from-some-devices)
 
 [Disable Upgrade Readiness](#disable-upgrade-readiness)
+
+[Exporting large data sets](#exporting-large-data-sets)
 
 
 ### Devices not showing up
@@ -179,6 +181,24 @@ If you want to stop using Upgrade Readiness and stop sending diagnostic data dat
 3.	If you enabled **Internet Explorer Site Discovery**, you can disable Internet Explorer data collection by setting the *IEDataOptIn* registry key to value "0".  The IEDataOptIn key can be found under: *HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection*.
 4.	**Optional step:** You can also remove the “CommercialId” key from: "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection". 
 
+### Exporting large data sets
+
+Azure Log Analytics is optimized for advanced analytics of large data sets and can efficiently generate summaries and analytics for them. The query language is not optimized (or intended) for returning large raw data sets and has built-in limits to protect against overuse. There are times when it might be necessary to get more data than this, but that should be done sparingly since this is not the intended way to use Azure Log Analytics. The following code snippet shows how to retrieve data from UAApp one “page” at a time:
+
+```
+let snapshot = toscalar(UAApp | summarize max(TimeGenerated));
+let pageSize = 100000;
+let pageNumber = 0;
+ 
+UAApp
+| where TimeGenerated == snapshot and IsRollup==true and RollupLevel=="Granular" and Importance == "Low install count"
+| order by AppName, AppVendor, AppVersion desc
+| serialize
+| where row_number(0) >= (pageSize * pageNumber)
+| take pageSize
+```
+
+ 
 
 ## Other common questions
 

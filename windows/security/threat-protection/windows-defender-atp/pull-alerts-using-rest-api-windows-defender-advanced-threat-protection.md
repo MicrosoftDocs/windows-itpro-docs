@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/16/2018
+ms.date: 04/17/2018
 ---
 
 # Pull Windows Defender ATP alerts using REST API
@@ -67,18 +67,18 @@ POST /72f988bf-86f1-41af-91ab-2d7cd011db47/oauth2/token HTTP/1.1
 Host: login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 
-resource=https%3A%2F%2FWDATPAlertExport.Seville.onmicrosoft.com&client_id=35e0f735-5fe4-4693-9e68-3de80f1d3745&client_secret=IKXc6PxB2eoFNJ%2FIT%2Bl2JZZD9d9032VXz6Ul3D2WyUQ%3D&grant_type=client_credentials
+resource=https%3A%2F%2Fgraph.windows.net&client_id=35e0f735-5fe4-4693-9e68-3de80f1d3745&client_secret=IKXc6PxB2eoFNJ%2FIT%2Bl2JZZD9d9032VXz6Ul3D2WyUQ%3D&grant_type=client_credentials
 ```
 The response will include an access token and expiry information.
 
 ```json
 {
-  "token type": "Bearer",
-  "expires in": "3599"
+  "token_type": "Bearer",
+  "expires_in": "3599"
   "ext_expires_in": "0",
   "expires_on": "1488720683",
   "not_before": "1488720683",
-  "resource": "https://WDATPAlertExport.Seville.onmicrosoft.com",
+  "resource": "https://graph.windows.net",
   "access_token":"eyJ0eXaioJJOIneiowiouqSuzNiZ345FYOVkaJL0625TueyaJasjhIjEnbMlWqP..."
 }
 ```
@@ -103,7 +103,9 @@ Use optional query parameters to specify and control the amount of data returned
 
 Name | Value| Description
 :---|:---|:---
-DateTime?sinceTimeUtc | string | Defines the time alerts are retrieved from based from `LastProccesedTimeUtc` time to current time. <br><br> **NOTE**: When not specified, all alerts generated in the last two hours are retrieved.
+DateTime?sinceTimeUtc | string | Defines the lower time bound alerts are retrieved from, based on field: <br> `LastProccesedTimeUtc` <br> The time range will be: from sinceTimeUtc time to current time. <br><br> **NOTE**: When not specified, all alerts generated in the last two hours are retrieved.
+DateTime?untilTimeUtc | string | Defines the upper time bound alerts are retrieved. <br> The time range will be: from `sinceTimeUtc` time to `untilTimeUtc` time. <br><br> **NOTE**: When not specified, the default value will be the current time.
+string ago | string | Pulls alerts in the following time range: from `(current_time - ago)` time to `current_time` time. <br><br> Value should be set according to **ISO 8601** duration format <br> E.g. `ago=PT10M` will pull alerts received in the last 10 minutes.
 int?limit | int | Defines the number of alerts to be retrieved. Most recent alerts will be retrieved based on the number defined.<br><br> **NOTE**: When not specified, all alerts available in the time range will be retrieved.
 
 ### Request example
@@ -117,7 +119,7 @@ Authorization: Bearer <your access token>
 The following example demonstrates a request to get the last 20 alerts since 2016-09-12 00:00:00.
 
 ```syntax
-GET  https://wdatp-alertexporter-eu.windows.com/api/alerts?limit=20&sinceTimeUtc="2016-09-12 00:00:00"
+GET  https://wdatp-alertexporter-eu.windows.com/api/alerts?limit=20&sinceTimeUtc=2016-09-12T00:00:00.000
 Authorization: Bearer <your access token>
 ```
 
