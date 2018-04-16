@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/12/2018
+ms.date: 04/16/2018
 ---
 
 # Policy CSP - Cellular
@@ -92,8 +92,10 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
+-   GP English name: *Let Windows apps access cellular data*
 -   GP name: *LetAppsAccessCellularData*
 -   GP element: *LetAppsAccessCellularData_Enum*
+-   GP path: *Network/WWAN Service/Cellular Data Access*
 -   GP ADMX file name: *wwansvc.admx*
 
 <!--/ADMXMapped-->
@@ -150,8 +152,10 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
+-   GP English name: *Let Windows apps access cellular data*
 -   GP name: *LetAppsAccessCellularData*
 -   GP element: *LetAppsAccessCellularData_ForceAllowTheseApps_List*
+-   GP path: *Network/WWAN Service/Cellular Data Access*
 -   GP ADMX file name: *wwansvc.admx*
 
 <!--/ADMXMapped-->
@@ -200,8 +204,10 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
+-   GP English name: *Let Windows apps access cellular data*
 -   GP name: *LetAppsAccessCellularData*
 -   GP element: *LetAppsAccessCellularData_ForceDenyTheseApps_List*
+-   GP path: *Network/WWAN Service/Cellular Data Access*
 -   GP ADMX file name: *wwansvc.admx*
 
 <!--/ADMXMapped-->
@@ -250,8 +256,10 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
+-   GP English name: *Let Windows apps access cellular data*
 -   GP name: *LetAppsAccessCellularData*
 -   GP element: *LetAppsAccessCellularData_UserInControlOfTheseApps_List*
+-   GP path: *Network/WWAN Service/Cellular Data Access*
 -   GP ADMX file name: *wwansvc.admx*
 
 <!--/ADMXMapped-->
