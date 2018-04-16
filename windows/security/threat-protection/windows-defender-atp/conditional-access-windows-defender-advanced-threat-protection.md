@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 03/05/2018
+ms.date: 04/17/2018
 ---
 
 # Enable conditional access to better protect users, devices, and data 
@@ -40,15 +40,22 @@ The compliance policy is used with conditional access to allow only devices that
 ## Understand the conditional access flow
 Conditional access is put in place so that when a threat is seen on a device, access to sensitive content is blocked until the threat is remediated. 
 
-The flow begins with a device being identified to be at high risk. When a device is found to be at high risk, the signal is communicated to Intune. 
+The flow begins with machines being seen to have a low, medium, or high risk. These risk determinations are then sent to Intune. 
 
-In Intune, a device compliance policy is used in conjunction with Azure AD conditional access to block access to applications. In parallel,  an automated investigation and remediation process is launched.
+Depending on how you configure policies in Intune, conditional access can be set up so that when certain conditions are met, the policy is applied.
+
+For example, you can configure Intune to apply conditional access on devices that have a high risk.
+
+In Intune, a device compliance policy is used in conjunction with Azure AD conditional access to block access to applications. In parallel, an automated investigation and remediation process is launched.
 
  A user can still use the device while the automated investigation and remediation is taking place, but access to enterprise data is blocked until the threat is fully remediated. 
 
-To resolve the high risk found on a device, you'll need to return the device to a compliant state. A device returns to a compliant state when there is no risk seen on it. 
+To resolve the risk found on a device, you'll need to return the device to a compliant state. A device returns to a compliant state when there is no risk seen on it. 
 
-There are two ways to address a risk: through manual remediation or automated remediation. 
+There are three ways to address a risk:
+1. Use Manual or auto remediation.
+2. Resolve active alerts on the machine. This will remove the risk from the machine.
+3. You can remove the machine from the active policies and consequently, conditional access will not be applied on the machine. 
 
 Manual remediation requires a secops admin to investigate an alert and address the risk seen on the device. The automated remediation is configured through configuration settings provided in the following section, [Configure conditional access](#configure-conditional-access).
 
@@ -65,7 +72,21 @@ The following example sequence of events explains conditional access in action:
 
 
  ## Configure conditional access
-This section guides you through all the steps you need to take to properly implement conditional access. 
+This section guides you through all the steps you need to take to properly implement conditional access.
+
+### Before you begin
+>[!WARNING] 
+>It's important to note that Azure AD registered devices is not supported in this scenario.</br>
+>Only Intune enrolled devices are supported.
+
+You need to make sure that all your devices are enrolled in Intune. You can use any of the following options to enroll devices in Intune:
+
+
+- IT Admin: For more information on how to enabling auto-enrollment, see [Windows Enrollment](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)
+- End-user: For more information on how to enroll your Windows 10 device in Intune, see [Enroll your Windows 10 device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-w10-device-access-work-or-school)
+- End-user alternative: For more information on joining an Azure AD domain, see[Set up Azure Active Directory joined devices](https://docs.microsoft.com/en-us/azure/active-directory/device-management-azuread-joined-devices-setup).
+
+
 
 There are steps you'll need to take in the Windows Defender ATP portal, the Intune portal, and Azure AD portal.
 
