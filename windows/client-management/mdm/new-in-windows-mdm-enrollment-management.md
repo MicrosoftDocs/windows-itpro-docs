@@ -1348,6 +1348,13 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>UntrustedCertificates</li>
 </ul>
 </td></tr>
+<tr>
+<td style="vertical-align:top">[NetworkProxy CSP](\networkproxy--csp.md)</td>
+<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<ul>
+<li>ProxySettingsPerUser</li>
+</ul>
+</td></tr>
 </tbody>
 </table>
 
@@ -1636,6 +1643,13 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>Settings/AllowVirtualGPU</li>
 <li>Settings/SaveFilesToHost</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[NetworkProxy CSP](\networkproxy--csp.md)</td>
+<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<ul>
+<li>ProxySettingsPerUser</li>
 </ul>
 </td></tr>
 <tr>
