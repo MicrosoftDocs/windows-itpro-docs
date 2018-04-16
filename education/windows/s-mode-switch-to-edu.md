@@ -13,12 +13,6 @@ author: Mikeblodge
 
 # Switch from Windows 10 Pro in S mode to Windows 10 EDU in S mode
 
-## In this topic
-
-This topic provides an overview of Windows 10 Pro in S mode, how to switch from Windows 10 Pro in S mode to Windows 10 EDU in S mode, and the requirements to switch. 
-
-## Overview
-
 S mode is an enhanced security mode of Windows 10 – streamlined for security and superior performance. With Windows 10 in S mode, everyone can download and install Microsoft-verified apps from the Microsoft Store for Education – this keep devices running fast and secure day in and day out. 
 
 ## The benefits of Windows 10 Pro in S mode for Education
@@ -44,40 +38,31 @@ S mode is an enhanced security mode of Windows 10 – streamlined for security a
 |Credential Guard | | | | X |
 |Device Guard | | | | X |
 
-## Why switch
+###  Windows 10 in S mode is safe, secure, and fast.  
+However, in some limited scenarios, you might need to switch to Windows 10 Pro. You can switch devices running Windows 10, version 1709 or later. Use the following information to switch to Windows 10 Pro through the Microsoft Store or by using AutoPilot.
 
-Do you have apps that you want to run that aren’t in the Microsoft Store (Win32 applications)? If so, you might want to switch to Windows 10 Pro. No problem, you can switch for free. 
-
-> [!NOTE]
-> The only way to revert to Windows 10 in S mode is to perform a BMR factory reset. This will allow you to reimage a device. 
+> [!IMPORTANT]
+> While it’s free to switch to Windows 10 Pro, it’s not reversible. The only way to rollback this kind of switch is through a BMR factory reset. 
 
 ## Requirements for switching
 
-### 1709 devices
-- Devices must be running Windows 10, version 
-### 1804 devices
-- Devices must be running Windows 10 Pro in S mode, version 1803. 
+**1709 Devices** - Devices must be running Windows 10, version 1709
+
+**1803 Devices**- Devices must be running Windows 10 Pro in S mode, version 1803. 
 
 ## How to switch
 
-### Switching for 1804 devices
-The switch motion for 1804 devices will behave differently than 1709 devices. MAK keys will only upgrade editions. For example: If a MAK key is applied to a device running Windows 10 Pro in S mode and an Enterprise MAK key is applied, the device will switch to Windows 10 Enterprise in S mode. 
+### Switching for 1803 devices
+The switch motion for 1803 devices will behave differently than 1709 devices. MAK keys will only upgrade editions. For example: If a MAK key is applied to a device running Windows 10 Pro in S mode and an Enterprise MAK key is applied, the device will switch to Windows 10 Enterprise in S mode. 
 
-### How to switch 1804 devices out of S mode
+### How to switch 1803 devices out of S mode
 The S mode switch option is recognized in the Windows AutoPilot profile and configuration will now continue.
 
-1.	Enroll S mode device in Intune.
-2.	Enter the Intune admin portal.
-3.	Select which devices to switch out of S mode.
-4.	Select the S mode switch option in Intune/MDM.
-
-Select the S mode switch option in Intune/MDM.The device will switch from S mode. A reboot is not required.
+1.	Select which devices to switch out of S mode.
+2.	Select the S mode switch option in Intune/MDM.
 
 > [!NOTE]
 > To rollback to Windows 10 Pro in S mode, a BMR factory reset must be performed.
-
-### Switching in future versions
-In future versions, new options will become available to switch.
 
 #### Blocking individual users from switching via the Store
 Currently, individual users can switch out of S mode at any time. To prevent this, user permissions to the Store will need to be restricted through the Intune/MDM portal.
@@ -89,7 +74,7 @@ Currently, individual users can switch out of S mode at any time. To prevent thi
 2. **Key acquisition options** - For schools with **active Microsoft Volume Licensing** agreements, global admins can obtain free MAK keys for Windows 10 Pro Education. For schools without an active Microsoft Volume Licensing agreement, the global admin can contact CSS, fill out a form and provide a proof of purchase to receive MAK keys for Windows 10 Pro Education.
 
 > [!NOTE]
-> There is currently no "bulk-switch" option for 1804 devices. 
+> There is currently no "bulk-switch" option for 1803 devices. 
 
 ## Related Topics
 [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)<BR> 

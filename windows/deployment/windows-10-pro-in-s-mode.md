@@ -13,68 +13,63 @@ author: Mikeblodge
 
 # Windows 10 Pro in S mode
 
-## In this topic
+S mode is an enhanced security mode of Windows 10. Windows 10 Pro and Enterprise in S mode powers affordable, cloud-ready devices that are simple, secure, and efficient. Users can get started quickly, thanks to self-service deployment and a familiar Windows experience. Low-price S mode devices offer tailored solutions for kiosks, digital signs, and task work. If your device is running Windows 10, version 1709, or Windows 10, version 1803, you can switch from Windows 10 in S mode to Windows 10 Pro.
 
-This topic provides an overview of Windows 10 Pro in S mode, how to switch from Windows 10 Pro in S mode to Windows 10 Pro, and the requirements to switch.
+## The benefits of Windows 10 Pro in S mode:
 
-## Overview
+- **Microsoft-verified security** - It reduces risk of malware and exploitations because only Microsoft-verified apps can be installed including Windows Defender Antivirus.
+- **Performance that lasts** - Provides all-day battery life to keep workers on task and not tripping over cords. Also, verified apps won’t degrade device performance over time.
+- **Streamlined for speed** - Offers faster log-in times with Windows Hello. Plus, workers get all the exclusive Windows innovations including Cortana and Windows Ink. 
 
-Windows 10 Pro in S mode powers affordable, cloud-ready devices that are simple, secure, and efficient. Users can get started quickly, thanks to self-service deployment and a familiar Windows experience. Equip your users with speedy and low-cost devices that work with a wide range of peripherals, both wired and wireless. They can sign in once with their face or fingerprint, and work efficiently and seamlessly with the full version of Microsoft Office.
+|  |Home  |S mode  |Pro/Pro Education  |Enterprise/Education |
+|---------|:---:|:---:|:---:|:---:|
+|Start Menu/Hello/Cortana/<BR>Windows Ink/Microsoft Edge | X | X | X | X |
+|Store apps (including Windows <BR>desktop bridge apps) | X | X | X | X |
+|Windows Update | X | X | X | X |
+|Device Encryption | X | X | X | X |
+|BitLocker | | X | X | X |
+|Windows Update for Business |  | X | X | X |
+|Microsoft Store for Education | | X | X | X |
+|Mobile Device Management<BR> and Azure AD join | | X | X | X |
+|Group Policy management and <BR>Active Directory Domain Services | | | X | X |
+|Desktop (Windows 32) Apps | X | | X | X |
+|Change App Defaults<BR>Search/Browser/Photos/etc. | X | | X | X |
+|Credential Guard | | | | X |
+|Device Guard | | | | X |
 
-Windows 10 Pro in S mode helps secure users and data against modern threats by providing all the built-in protections of Windows. Affordable S mode devices offer tailored solutions for kiosks, digital signs, and task work.
+## Desktop Bridge
+Using Desktop Bridge will enable you to convert your Line of Business apps to a packaged app with UWP manifest. After testing and validating you can distribute the app through the Windows Store or existing channels. 
 
-The benefits of Windows 10 Pro in S mode:
-
-- **Simple** - Keep IT management easy. Allow employees to use self-service deployment via Windows AutoPilot. Thanks to the cloud, Windows 10 Pro in S mode gives you the flexibility to use the cloud storage solution of your choice and connect to your business by signing in once to get access to company resources through Azure Active Directory (Azure AD) and Cloud-based device management. 
-- **Secure** – Protect your business with built-in Windows 10 device, user, and data safeguards. Windows 10 Pro in S mode is security at its simplest and it includes Windows Defender Antivirus and all the security features of Windows 10. Sign in with your face or fingerprint using Windows Hello. 
-- **Familiar** – Give users a familiar Windows experience across devices, with features they already know such as Start menu, Taskbar, Desktop, Action Center, and File Explorer. Users are not limited to online apps, so they can get the full functionality of Microsoft Office and other apps in the Microsoft Store. You can easily convert most of your legacy Line of Business apps using Desktop Bridge to be Microsoft Store-compatible, so they are available for your users to download. And you can easily and switch to Windows 10 Pro at any time for free.  
-- **Efficient** – Enable workers to start quickly and never slow down. Windows 10 Pro in S mode is designed for fast performance that lasts for the supported lifetime of the device. Equip your users with speedy and low-cost devices that work with a wide range of peripherals, both wired and wireless. Windows 10 Pro in S mode supports tailored solutions for kiosks, digital signs, and task work. With Assigned Access, Windows 10 Pro devices in S mode run different applications depending on the user and keep individual identities separate and secured. Plus, users get all the exclusive Windows innovations including Cortana and Windows Ink.
-
-## Why switch?
-
-- Do you have apps that you want to run that aren’t in the Microsoft Store? If so, you might want to switch to Windows 10 Pro. If that’s the case, you can switch for free.
+[Explore Desktop Bridge](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root)
 
 >[!NOTE] 
 >The only way to revert to Windows 10 in S mode is to perform a BMR factory reset. This will allow you to reimage a device.
 
-## Requirements for switching
-
-You must meet these system requirements before switching to Windows 10 Pro.
-
-### 1709 devices
-- Devices must be running Windows 10, version 1703
-
-### 1804 devices
-- Devices must be running Windows 10 Pro in S mode, version 1804
+### Windows 10 in S mode is safe, secure, and fast.
+We recommend staying in S mode. However, in some limited scenarios, you might need to switch to Windows 10 Pro. You can switch devices running Windows 10, version 1709 or later. Use the following information to switch to Windows 10 Pro through the Microsoft Store or by using AutoPilot.
 
 ## How to switch
+If you’re running Windows 10, version 1709 or version 1803, you can switch to Windows 10 Pro through the Microsoft Store.
 
-### Switch one device at a time using the Microsoft Store (Version 1709, 1804, and future devices).
-- The user searched or sees the Windows 10 Pro switch option - The user must have an MSA account and be logged in to the Microsoft Store. When the user searches for Switch to Windows 10 Pro, they will see the offer to switch to Windows 10 Pro. The user can click the **Learn more**, **Buy** or **Get** button to switch from Windows 10 Pro in S mode to Windows 10 Pro.
+1. Sign into the Microsoft Store using your Microsoft account. 
+2. Search for "Switch to Windows 10 Pro."
+3. In the offer, click Buy or Get. 
+You'll be prompted to save your files before the switch starts. Follow the prompts to switch to Windows 10 Pro. Your device will restart during this process. 
 
-Once the user makes their selection, they'll see a prompt to save their files and the switch will start. The PC will restart during this process.
+**Block individual users from switching**
+If you need to prevent any of your users from switching from Windows 10 in S mode to Windows 10 Pro, you need to restrict their permissions through the Intune/MDM admin portal. Otherwise all your users can switch out of S mode at any time.
 
-### Switching for 1804 devices
-The S mode switch option is recognized in the Windows AutoPilot profile and configuration will now continue.
+You can use AutoPilot to switch devices running Windows 10, version 1803. The only requirement is that the devices be enrolled in Intune.
 
-**Switching existing devices out of S mode**
-1.	Enroll S mode device in Intune.
-2.	Enter the Intune admin portal.
-3.	Select which devices to switch out of S mode.
-4.	Select the S mode switch option in Intune/MDM.
+1.	In the Intune admin portal, select the quantity of devices you want to switch.
+2.	Click the Assign Device link.
+3.	In the Assign Switch field, select the device name you would like to switch
+4.	Click the continue button. 
 
-Select the S mode switch option in Intune/MDM.The device will switch from S mode. A reboot is not required.
+You will now see the devices you switched listed under Switched Devices.
 
->[!NOTE] 
->To rollback to Windows 10 Pro in S mode, a BMR factory reset must be performed.
-
-### Switching in future versions
-
-In future versions, new options will become available to switch.
-
-**Blocking individual users from switching via the Store**
-Currently, individual users can switch out of S mode at any time. To prevent this, user permissions to the Store will need to be restricted through the Intune/MDM portal.
-
+> [!IMPORTANT]
+> While it’s free to switch to Windows 10 Pro, it’s not reversible. The only way to rollback this kind of switch is through a BMR factory reset.
 ## Related topics
 
 [Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)<BR>
