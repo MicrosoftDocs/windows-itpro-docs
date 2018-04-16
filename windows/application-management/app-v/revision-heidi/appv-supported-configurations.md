@@ -23,13 +23,9 @@ This section lists the operating system and hardware requirements for all App-V 
 The App-V server does not support the following scenarios:
 
 * Deployment to a computer that runs the Server Core installation option.
-
 * Deployment to a computer that runs a previous version of the App-V server components. You can only install App-V side-by-side with the App-V 4.5 Lightweight Streaming Server (LWS) server. This scenario doesn't support side-by-side deployment of App-V and the Application Virtualization Management Service (HWS) 4.x.
-
 * Deployment to a computer running Microsoft SQL Server Express edition.
-
 * Deployment to a domain controller.
-
 * Short paths. If you plan to use a short path, you must create a new volume.
 
 ### Management server operating system requirements
@@ -42,9 +38,7 @@ You can install the App-V Management server on a server running Windows Server 2
 ### Management server hardware requirements
 
 * A 64-bit (x64) processor that runs at 1.4 GHz or faster.
-
 * 1 GB RAM (64-bit).
-
 * 200 MB of available hard disk space, not including the content directory.
 
 ### Management server database requirements
@@ -67,9 +61,7 @@ The App-V Publishing server can be installed on a server that runs Windows Serve
 App-V adds no additional requirements beyond those of Windows Server.
 
 * A 64-bit (x64) processor that runs at 1.4 GHz or faster.
-
 * 2 GB RAM (64-bit).
-
 * 200 MB of available hard disk space, not including the content directory.
 
 ### Reporting server operating system requirements
@@ -81,9 +73,7 @@ You can install the App-V Reporting server on a server running Windows Server 20
 App-V adds no additional requirements beyond those of Windows Server.
 
 * A 64-bit (x64) processor that runs at 1.4 GHz or faster.
-
 * 2 GB RAM (64-bit).
-
 * 200 MB of available hard disk space, not including the content directory.
 
 ### Reporting server database requirements
