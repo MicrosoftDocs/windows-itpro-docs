@@ -40,13 +40,14 @@ The compliance policy is used with conditional access to allow only devices that
 ## Understand the conditional access flow
 Conditional access is put in place so that when a threat is seen on a device, access to sensitive content is blocked until the threat is remediated. 
 
-The flow begins with a device being identified to be at high risk. When a device is found to be at high risk, the signal is communicated to Intune. 
+The flow begins with a device being identified to be at a high risk. When a device is found to be at high risk, the signal is communicated to Intune. (*we are sending not only high threats, but H/M/L, I don't want this to sound confusing..)
 
 In Intune, a device compliance policy is used in conjunction with Azure AD conditional access to block access to applications. In parallel,  an automated investigation and remediation process is launched.
 
  A user can still use the device while the automated investigation and remediation is taking place, but access to enterprise data is blocked until the threat is fully remediated. 
 
-To resolve the high risk found on a device, you'll need to return the device to a compliant state. A device returns to a compliant state when there is no risk seen on it. 
+To resolve the high risk found on a device, you'll need to return the device to a compliant state. A device returns to a compliant state when there is no risk seen on it. (*wee need to expalin how to resolve this, I would say "In order to resolve the blocking, you can resolve the risky alerts on the machine, inorder to reduce the machine risk level. you can also go to Intune to remove the specific machine from the active policy)
+maybe we should write, "ways to resolve: 1. remidiation- manually/ automaticaly. 2. resolve active alerts on the machine. 3. remove the machine from the active policy in Intune and in CA AAD policy."
 
 There are two ways to address a risk: through manual remediation or automated remediation. 
 
@@ -72,6 +73,7 @@ There are steps you'll need to take in the Windows Defender ATP portal, the Intu
 > [!NOTE] 
 > You'll need a Microsoft Intune environment, with Intune managed and Azure AD joined Windows 10 devices.
 
+(* we ahve a really big problem with Intune configuration, the fisrt step in "Configuring the machines to be Intune managed- xxx link to Intune")- we need to explain in someway that it's super important for the process that they will configure this is the right way.
 Take the following steps to enable conditional access:
 - Step 1: Turn on the Microsoft Intune connection from the Windows Defender ATP portal
 - Step 2: Turn on the Windows Defender ATP integration in Intune
@@ -93,7 +95,7 @@ Take the following steps to enable conditional access:
 4. Click **Save**.
 
 
-### Step 3: Create the compliance policy in Intune
+### Step 3: Create the compliance policy in Intune (did you take it from Mandi?)
 1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 2. Select **Device compliance** > **Policies** > **Create policy**.
 3. Enter a **Name** and **Description**.
