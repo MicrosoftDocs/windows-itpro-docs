@@ -1,7 +1,7 @@
 ---
-title: Utilize cloud-delivered protection in Windows Defender Antivirus
-description: Cloud-delivered protection provides an advanced level of fast, robust antivirus detection.
-keywords: windows defender antivirus, antimalware, security, defender, cloud, cloud-delivered protection
+title: Use next-gen technologies in Windows Defender Antivirus through cloud-delivered protection
+description: Next-gen technologies in cloud-delivered protection provide an advanced level of fast, robust antivirus detection.
+keywords: windows defender antivirus, next-gen technologies, next-gen av, machine learning, antimalware, security, defender, cloud, cloud-delivered protection
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -14,7 +14,7 @@ ms.author: v-anbic
 ms.date: 04/17/2018
 ---
 
-# Utilize Microsoft cloud-delivered protection in Windows Defender Antivirus
+# Use next-gen technologies in Windows Defender Antivirus through cloud-delivered protection
 
 **Applies to:**
 
