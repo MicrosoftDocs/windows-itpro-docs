@@ -60,6 +60,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 - rcsi.exe
 - system.management.automation.dll
 - windbg.exe
+- wmic.exe
 
 <sup>[1]</sup>A vulnerability in bginfo.exe has been fixed in the latest version 4.22. If you use BGInfo, for security, make sure to download and run the latest version here [BGInfo 4.22](https://docs.microsoft.com/en-us/sysinternals/downloads/bginfo). Note that BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
 
