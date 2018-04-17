@@ -73,7 +73,7 @@ ms.date: 04/17/2018
 
     | Item to configure | Description and examples |
     |---|---|
-    | Specify the management service URL | Example: https://localhost:12345 |
+    | Specify the management service URL | Example: http:<span></span>//localhost:12345 |
     | Website name | Specify the custom website name that will be used to run the publishing service. <br>If you do not have a custom name, do not make any changes. |
     | Port binding | Specify a unique port number that will be used by App-V. Example: 54321<br>Ensure that the port specified is not being used by another website. |
 13. On the **Reporting Server** page, specify the following:

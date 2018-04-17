@@ -1,6 +1,6 @@
 ---
-title: How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services (Windows 10)
-description: How to install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services
+title: How to Install the Management and Reporting Databases on separate computers from the Management and Reporting Services (Windows 10)
+description: How to install the Management and Reporting Databases on separate computers from the Management and Reporting Services.
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.prod: w10
 ms.date: 04/17/2018
 ---
-# How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services
+# How to Install the Management and Reporting Databases on separate computers from the Management and Reporting Services
 
 >Applies to: Windows Server 2016
 
@@ -27,10 +27,10 @@ Use the following procedure to install the database server and management server
 6. On the initial **Create new management server database** page, accept the default selections if appropriate, then select **Next**.
   * If you are using a custom SQL Server instance, select **Use a custom instance** and enter the name of the instance.
   * If you are using a custom database name, select **Custom configuration** and enter the database name.
-7. On the next **Create new management server database** page, select **Use a remote computer**, then enter the remote machine account using the following format: ```Domain\\MachineAccount```.
+7. On the next **Create new management server database** page, select **Use a remote computer**, then enter the remote machine account using the following format: ```Domain\MachineAccount```.
 
     >[!NOTE]
-    >If you plan to deploy the management server on the same computer you must select **Use this local computer**. Specify the user name for the management server **Install Administrator** using the following format: ```Domain\\AdministratorLoginName```. After that, select **Next**.
+    >If you plan to deploy the management server on the same computer you must select **Use this local computer**. Specify the user name for the management server **Install Administrator** using the following format: ```Domain\AdministratorLoginName```. After that, select **Next**.
 8. To start the installation, select **Install**.
 
 ## Installing the reporting database and the reporting server on separate computers
@@ -43,7 +43,7 @@ Use the following procedure to install the database server and management server
 6. On the initial **Create new management server database** page, accept the default selections if appropriate, then select **Next**.
  * If you're using a custom SQL Server instance, select **Use a custom instance** and enter the instance name.
  * If you're using a custom database name, select **Custom configuration** and enter the database name.
-7. On the next **Create new management server database** page, select **Use a remote computer**, and enter the remote machine account using the following format: ```Domain\\MachineAccount```.
+7. On the next **Create new management server database** page, select **Use a remote computer**, and enter the remote machine account using the following format: ```Domain\MachineAccount```.
 
     >[!NOTE]
     >If you plan to deploy the reporting server on the same computer you must select **Use this local computer**. Specify the user name for the reporting server **Install Administrator** using the following format: Domain\\AdministratorLoginName. After that, select **Next**.
@@ -53,9 +53,11 @@ Use the following procedure to install the database server and management server
 
 1. Copy the App-V server installation files to the computer on which you want to install it on.
 2. To extract the App-V database scripts, open a command prompt and specify the location where the installation files are saved and run the following command:
+
   ```SQL
     appv\_server\_setup.exe /LAYOUT /LAYOUTDIR=”InstallationExtractionLocation”
   ```
+  
 3. After the extraction has been completed, to access the App-V database scripts and instructions readme file:
 
  * The App-V Management Database scripts and instructions readme are located in the following folder: **InstallationExtractionLocation** \\ **Database Scripts** \\ **Management Database**.

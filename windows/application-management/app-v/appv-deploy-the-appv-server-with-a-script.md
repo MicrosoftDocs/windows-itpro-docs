@@ -440,16 +440,16 @@ Using a custom instance of Microsoft SQL Server example:<br>
 | */QUIET* | Specifies silent install. |
 | */UNINSTALL* | Specifies an uninstall. |
 | */LAYOUT* | Specifies layout action. This extracts the MSIs and script files to a folder without installing the actual product. No value is expected. |
-| */LAYOUTDIR* | Specifies the layout directory with a string. For example, ```/LAYOUTDIR="C:\Application Virtualization Server"``` |
-| */INSTALLDIR* | Specifies the installation directory with a string. For example, ```/INSTALLDIR="C:\Program Files\Application Virtualization\Server"``` |
-| */MUOPTIN* | Enables Microsoft Update. No value is expected |
+| */LAYOUTDIR* | Specifies the layout directory with a string. For example, ```/LAYOUTDIR="C:\Application Virtualization Server"```. |
+| */INSTALLDIR* | Specifies the installation directory with a string. For example, ```/INSTALLDIR="C:\Program Files\Application Virtualization\Server"```. |
+| */MUOPTIN* | Enables Microsoft Update. No value is expected. |
 | */ACCEPTEULA* | Accepts the license agreement. This is required for an unattended installation. For example, ```/ACCEPTEULA``` or ```/ACCEPTEULA=1```. |
 
 ### Parameter definitions for Management Server installation parameters
 
 | Parameter | Description |
 |-----------|-------------|
-| */MANAGEMENT_SERVER* | Specifies that the management server will be installed. No value is expected |
+| */MANAGEMENT_SERVER* | Specifies that the management server will be installed. No value is expected. |
 | */MANAGEMENT_ADMINACCOUNT* | Specifies the account that will be allowed administrator access to the management server. This account can be an individual user account or a group. For example, ```/MANAGEMENT_ADMINACCOUNT="mydomain\admin"```. If **/MANAGEMENT_SERVER** isn't specified, this parameter will be ignored.|
 | */MANAGEMENT_WEBSITE_NAME* | Specifies name of the website that will be created for the management service. For example, ```/MANAGEMENT_WEBSITE_NAME="Microsoft App-V Management Service"``` |
 | */MANAGEMENT_WEBSITE_PORT* | Specifies the port number that will be used by the management service will use. For example, ```/MANAGEMENT_WEBSITE_PORT=82```. |
@@ -458,7 +458,7 @@ Using a custom instance of Microsoft SQL Server example:<br>
 
 | Parameter | Description |
 |-----------|-------------|
-| */DB\_PREDEPLOY\_MANAGEMENT* | Specifies that the management database will be installed. You must have sufficient database permissions to complete this installation. No value is expected |
+| */DB\_PREDEPLOY\_MANAGEMENT* | Specifies that the management database will be installed. You must have sufficient database permissions to complete this installation. No value is expected. |
 | */MANAGEMENT_DB_SQLINSTANCE_USE_DEFAULT* | Indicates that the default SQL instance should be used. No value is expected. |
 | */MANAGEMENT_DB_CUSTOM_SQLINSTANCE* | Specifies the name of the custom SQL instance that should be used to create a new database. For example, ```/MANAGEMENT_DB_CUSTOM_SQLINSTANCE="MYSQLSERVER"```. If **/DB_PREDEPLOY_MANAGEMENT** isn't specified, this parameter will be ignored. |
 | */MANAGEMENT_DB_NAME* | Specifies the name of the new management database that should be created. For example, ```/MANAGEMENT_DB_NAME="AppVMgmtDB"```. If **/DB_PREDEPLOY_MANAGEMENT** isn't specified, this will be ignored. |
@@ -497,7 +497,7 @@ Using a custom instance of Microsoft SQL Server example:<br>
 
 | Parameter | Description |
 |-----------|-------------|
-| */DB\_PREDEPLOY\_REPORTING* | Specifies that the Reporting Database will be installed. DBA permissions are required for this installation. No value is expected |
+| */DB\_PREDEPLOY\_REPORTING* | Specifies that the Reporting Database will be installed. DBA permissions are required for this installation. No value is expected. |
 | */REPORTING_DB_SQLINSTANCE_USE_DEFAULT* | Specifies the name of the custom SQL instance that should be used. Takes a string. For example, ```/REPORTING_DB_CUSTOM_SQLINSTANCE="MYSQLSERVER"```. |
 | */REPORTING_DB_NAME* | Specifies the name of the new Reporting database that should be created. Takes a string. For example, ```/REPORTING_DB_NAME="AppVMgmtDB"```. |
 | */REPORTING_SERVER_MACHINE_USE_LOCAL* | Indicates that the Reporting server that will be accessing the database is installed on the local server. This is a switch parameter, so no value is expected. |

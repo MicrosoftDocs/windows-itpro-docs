@@ -33,8 +33,8 @@ You can use Group Policy to configure the client settings for the App-V client a
 
 To manage the ADMX template, perform the following steps on the computer that you will use to manage Group Policy. This is typically the Domain Controller.
 
-1. Save the **.admx** file to the following directory: ```Windows \\ PolicyDefinitions```
-2. Save the **.adml** file to the following directory: ```Windows \\ PolicyDefinitions \\ <Language Directory>```
+1. Save the **.admx** file to the following directory: ```Windows\PolicyDefinitions```
+2. Save the **.adml** file to the following directory: ```Windows\PolicyDefinitions\<Language Directory>```
 
 After you have completed the preceding steps, you can use Group Policy to configure the client settings by using the Group Policy Management Console under **Computer Configuration** > **Administrative Templates** > **System** > **App-V**.
 
@@ -83,7 +83,7 @@ To deploy the sequencer, see [How to install the Sequencer](appv-install-the-seq
 
 You can use the App-V Sequencer log information to troubleshoot Sequencer installation and operational events while using App-V. The Sequencer-related log information can be reviewed with the **Event Viewer**. The following file path is the specific path for Sequencer-related events:
 
-**Event Viewer \\ Applications and Services Logs \\ Microsoft \\ App V**.
+**Event Viewer\Applications and Services Logs\Microsoft\App V**.
 
 >[!NOTE]
 >Sequencer-related events are prepended with **AppV\_Sequencer**. Client-related events are prepended with **AppV\_Client**.

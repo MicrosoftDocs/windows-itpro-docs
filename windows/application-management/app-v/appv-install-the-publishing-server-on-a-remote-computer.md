@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.prod: w10
 ms.date: 04/17/2018
 ---
-# How to Install the Publishing Server on a Remote Computer
+# How to install the publishing server on a remote computer
 
 >Applies to: Windows Server 2016
 
@@ -23,7 +23,7 @@ Use the following procedure to install the publishing server on a separate compu
 5. On the **Installation location** page, accept the default location, then select **Next**.
 6. On the **Configure publishing server configuration** page, specify the following items:
 
- * The URL for the management service that the publishing server will connect to. For example, **https://ManagementServerName:12345**.
+ * The URL for the management service that the publishing server will connect to. For example, **http:<span></span>//ManagementServerName:12345**.
  * Specify the website name that you want to use for the publishing service. If you don't have a custom name, then use the default name.
  * For the **Port binding**, specify a unique port number that will be used by App-V. For example, **54321**.
 7. On the **Ready to install** page, select **Install**.

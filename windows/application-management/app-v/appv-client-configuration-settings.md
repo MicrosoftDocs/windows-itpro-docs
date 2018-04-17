@@ -83,7 +83,7 @@ The following table provides information about App-V client configuration settin
 | **GlobalRefreshIntervalUnit** <br>0 for hour, 1 for day  | Publishing\\Servers{serverId}\\GlobalPeriodicRefreshIntervalUnit  | 1 |
 | **UserRefreshEnabled**<br>True (Enabled); False (Disabled state)  | Publishing\\Servers{serverId}\\UserEnabled  | False |
 | **UserRefreshOnLogon**<br>True (Enabled); False (Disabled state)  | Publishing\\Servers{serverId}\\UserLogonRefresh  | False |
-| **UserRefreshInterval**<br>Word count (with spaces): 85Integer (0–744 Hours)  | Publishing\\Servers{serverId}\\UserPeriodicRefreshInterval  | 0 |
+| **UserRefreshInterval**<br>Word count (with spaces): 85; Integer (0–744 Hours)  | Publishing\\Servers{serverId}\\UserPeriodicRefreshInterval  | 0 |
 | **UserRefreshIntervalUnit**<br>0 for hour, 1 for day  | Publishing\\Servers{serverId}\\UserPeriodicRefreshIntervalUnit  | 1 |
 | **MigrationMode**<br>True(Enabled state); False (Disabled state)  | Coexistence\\MigrationMode  | |
 | **EnablePackageScripts**<br>True (Enabled); False (Disabled state)  | \\Scripting\\EnablePackageScripts  | |

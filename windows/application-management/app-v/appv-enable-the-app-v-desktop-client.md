@@ -26,9 +26,9 @@ Here's how to enable the App-V client with Group Policy:
 Here's how to enable the App-V client with Windows PowerShell:
 
 1. Open Windows PowerShell.
-2. Type `Enable-Appv`, then select the Enter key.
+2. Enter **Enable-Appv**, then select the Enter key.
 3. Restart the device.
-4. To verify that the App-V client is working, type `Get-AppvStatus`, then select the Enter key.
+4. To verify that the App-V client is working, enter **Get-AppvStatus**, then select the Enter key.
 
 Check out these articles for more information about how to configure the App-V client:
 
