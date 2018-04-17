@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 04/06/2018
+ms.date: 04/11/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -1170,6 +1170,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>KioskBrowser/BlockedUrlExceptions</li>
 <li>KioskBrowser/BlockedUrls</li>
 <li>KioskBrowser/DefaultURL</li>
+<li>KioskBrowser/EnableEndSessionButton</li>
 <li>KioskBrowser/EnableHomeButton</li>
 <li>KioskBrowser/EnableNavigationButtons</li>
 <li>KioskBrowser/RestartOnIdleTime</li>
@@ -1657,6 +1658,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1803:</p>
 <ul>
 <li>Bluetooth/AllowPromptedProximalConnections</li>
+<li>KioskBrowser/EnableEndSessionButton</li>
 <li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways</li>
 <li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible</li>
 <li>LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges</li>

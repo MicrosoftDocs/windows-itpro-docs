@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.date: 04/17/2018
 ---
 
 # Check the Windows Defender Advanced Threat Protection service health
@@ -23,7 +23,7 @@ ms.date: 10/16/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-servicestatus-abovefoldlink)
 
@@ -57,4 +57,4 @@ When an issue is resolved, it gets recorded in the **Status history** tab.
 The **Status history** tab reflects all the historical issues that were seen and resolved. You'll see details of the resolved issues along with the other information that were included while it was being resolved.
 
 ### Related topic
-- [View the Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- [View the Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
