@@ -97,7 +97,7 @@ You can disable this setting to ensure that only globally defined lists (such as
 
 6. Double-click the **Configure local administrator merge behavior for lists** setting and set the option to **Enabled**. Click **OK**. 
 
-[!NOTE]
+> [!NOTE]
 > If you disable local list merging, it will override Controlled folder access settings in Windows Defender Exploit Guard. It also overrides any protected folders or allowed apps set by the local administrator. For more information about Controlled folder access settings, see [Enable Controlled folder access](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard).
 
 
