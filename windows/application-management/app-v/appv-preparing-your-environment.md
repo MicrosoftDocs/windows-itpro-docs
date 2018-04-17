@@ -6,32 +6,22 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 04/17/2018
 ---
+# Preparing your environment for App-V
 
-# Preparing Your Environment for App-V
+>Applies to: Windows 10, version 1607
 
-**Applies to**
--   Windows 10, version 1607
-
-There are a number of different deployment configurations and prerequisites that you must consider before you create your deployment plan for Microsoft Application Virtualization (App-V). This section includes information that can help you gather the information that you must have to formulate a deployment plan that best meets your business requirements.
+There are several different deployment configurations and prerequisites that you must consider before creating your deployment plan for Microsoft App-V. The following articles will help you gather the information you need to set up a deployment plan that best suits your business’ needs.
 
 ## App-V prerequisites
 
--   [App-V Prerequisites](appv-prerequisites.md)
-
-    Lists the prerequisite software that you must install before installing App-V.
+[App-V prerequisites](appv-prerequisites.md) lists the prerequisite software that you must install before installing App-V.
 
 ## App-V security considerations
 
--   [App-V Security Considerations](appv-security-considerations.md)
+[App-V security considerations](appv-security-considerations.md) describes accounts, groups, log files, and other considerations for securing your App-V environment.
 
-    Describes accounts, groups, log files, and other considerations for securing your App-V environment.
+## Other App-V planning resources
 
-## Have a suggestion for App-V?
-
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
-
-## Other resources for App-V planning
-
--   [Planning for App-V](appv-planning-for-appv.md)
+* [Planning for App-V](appv-planning-for-appv.md)
