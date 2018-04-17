@@ -52,7 +52,7 @@ Read the following blogposts for detailed protection stories involving cloud-pro
  
 ## Get cloud-delivered protection 
 
-Cloud-delivered protection is enabled by default, however you may need to re-enable it if it has been disabled as part of previous organizational policies.
+Cloud-delivered protection is enabled by default. However, you may need to re-enable it if it has been disabled as part of previous organizational policies.
 
 >[!TIP]
 >You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
