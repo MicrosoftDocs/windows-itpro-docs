@@ -65,7 +65,7 @@ ms.date: 03/12/2018
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. This setting determines whether the specific task is enabled (1) or disabled (0). Default: Enabled.
+Added in Windows 10, version 1803. This setting determines whether the specific task is enabled (1) or disabled (0). Default: Disabled.
 
 <!--/Description-->
 <!--/Policy-->

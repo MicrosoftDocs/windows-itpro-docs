@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/12/2018
+ms.date: 04/16/2018
 ---
 
 # Policy CSP - ApplicationDefaults
@@ -189,20 +189,14 @@ If you do not configure this policy setting, the default behavior depends on the
 ADMX Info:  
 -   GP English name: *Configure web-to-app linking with app URI handlers*
 -   GP name: *EnableAppUriHandlers*
+-   GP path: *System/Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 This setting supports a range of values between 0 and 1.
 
-
 <!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 <hr/>
 
