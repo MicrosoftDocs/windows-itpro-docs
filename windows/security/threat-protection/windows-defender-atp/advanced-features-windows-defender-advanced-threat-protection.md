@@ -81,11 +81,10 @@ To receive contextual machine integration in Office 365 Threat Intelligence, you
 ## Microsoft Intune connection
 This feature is only available if you have an active Microsoft Intune (Intune) license. 
 
-When you enable this feature, you'll be able to share Windows Defender ATP device information to Intune and enhance policy enforcement. The machine risk score can be used in the integration to enforce conditional access and other security policies. 
+When you enable this feature, you'll be able to share Windows Defender ATP device information to Intune and enhance policy enforcement. 
 
 >[!NOTE]
->You'll need to enable the integration on both Intune and Windows Defender ATP to use this feature. For more information on how to enable and configure the integration in Intune, see [Enable conditional access to better protect users, devices, and data](conditional-access-windows-defender-advanced-threat-protection.md).
-
+>You'll need to enable the integration on both Intune and Windows Defender ATP to use this feature. 
 
 
 ## Enable advanced features
