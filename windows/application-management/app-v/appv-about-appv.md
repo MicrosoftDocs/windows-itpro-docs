@@ -28,11 +28,11 @@ Using the automatic sequencer to package your apps gives you the following benef
 
 ### Updates to the App-V project template
 
-Starting with Windows 10, version 1703, you can now save an App-V project template (.appvt) file as part of a sequenced App-V package. This file will automatically load every time you open the package for edits or updates. Your template can include general option settings, file exclusion list settings, and target operating system settings. To learn more, see [Create and apply an App-V project template to a sequenced App-V package](appv-create-and-use-a-project-template.md).
+Starting with Windows 10, version 1703, you can now save an App-V project template (.appvt) file as part of a sequenced App-V package. This file will automatically load every time you open the package for edits or updates. Your template can include general option settings, file exclusion list settings, and target operating system settings. To learn more, see [Create and apply an App-V project template to a sequenced App-V package](../app-v/appv-create-and-use-a-project-template.md).
 
 ### Automatically clean up unpublished App-V packages from the App-V client
 
-Previous versions of App-V have required you to manually remove your unpublished packages from your client devices, to free up additional storage space. Windows 10, version 1703 introduces the ability to use PowerShell or Group Policy settings to automatically clean up your unpublished packages after a device restart. To learn more, see [Automatically clean up unpublished packages on the App-V client](appv-auto-clean-unpublished-packages.md).
+Previous versions of App-V have required you to manually remove your unpublished packages from your client devices, to free up additional storage space. Windows 10, version 1703 introduces the ability to use PowerShell or Group Policy settings to automatically clean up your unpublished packages after a device restart. To learn more, see [Automatically clean up unpublished packages on the App-V client](../app-v/appv-auto-clean-unpublished-packages.md).
 
 ## What's new in App-V in Windows 10, version 1607
 
@@ -50,7 +50,7 @@ The changes in App-V for Windows 10, version 1607 impact existing implementation
  >[!NOTE]
  >If you're already using App-V 5.x, you don't need to redeploy the App-V server components, as they haven't changed since App-V 5.0's release.
 
-For more information about how to configure an existing App-V installation after upgrading user devices to Windows 10, see [Upgrading to App-V for Windows 10 from an existing installation](appv-upgrading-to-app-v-for-windows-10-from-an-existing-installation.md) and [Migrating to App-V for Windows 10 from a previous version](appv-migrating-to-appv-from-a-previous-version.md).
+For more information about how to configure an existing App-V installation after upgrading user devices to Windows 10, see [Upgrading to App-V for Windows 10 from an existing installation](../app-v/appv-upgrading-to-app-v-for-windows-10-from-an-existing-installation.md) and [Migrating to App-V for Windows 10 from a previous version](../app-v/appv-migrating-to-appv-from-a-previous-version.md).
 
 >[!IMPORTANT]
 >You can only upgrade your existing App-V installation to Windows 10, version 1607 if it's version 5.0 SP2 or higher. If you're using an older version of App-V, you’ll need to upgrade from that version to App-V 5.0 SP2 before you can upgrade to Windows 10, version 1607.
@@ -65,5 +65,5 @@ Add or vote on suggestions on the [Application Virtualization feedback site](htt
 
 ## Related topics
 
-* [Release Notes for App-V for Windows 10, version 1607](appv-release-notes-for-appv-for-windows.md)
-* [Release Notes for App-V for Windows 10, version 1703](appv-release-notes-for-appv-for-windows-1703.md)
+* [Release Notes for App-V for Windows 10, version 1607](../app-v/appv-release-notes-for-appv-for-windows.md)
+* [Release Notes for App-V for Windows 10, version 1703](../app-v/appv-release-notes-for-appv-for-windows-1703.md)
