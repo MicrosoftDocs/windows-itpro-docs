@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/16/2018
+ms.date: 04/17/2018
 ---
 # How to Install the Publishing Server on a Remote Computer
 
@@ -29,9 +29,9 @@ Use the following procedure to install the publishing server on a separate compu
 7. On the **Ready to install** page, select **Install**.
 8. After the installation is complete, the publishing server must be registered with the management server. In the App-V management console, use the following steps to register the server:
 
- 1. Open the App-V management server console.
- 2. In the left pane, select **Servers**, then select **Register New Server**.
- 3. Enter the server name and a description (if required), then select **Add**.
+    1. Open the App-V management server console.
+    2. In the left pane, select **Servers**, then select **Register New Server**.
+    3. Enter the server name and a description (if required), then select **Add**.
 9. To verify that the publishing server is running correctly, you should import a package to the management server, entitle that package to an AD group, then publish it. Using an internet browser, open the following URL: **http://publishingserver:pubport**. If the server is running correctly, information like the following example should appear.
 
     ```SQL

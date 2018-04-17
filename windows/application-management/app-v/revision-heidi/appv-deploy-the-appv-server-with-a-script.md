@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/16/2018
+ms.date: 04/17/2018
 ---
 # How to deploy the App-V server using a script
 
@@ -520,4 +520,4 @@ Add or vote on suggestions on the [Application Virtualization feedback site](htt
 
 ## Related topics
 
-[Deploying the App-V Server](appv-deploying-the-appv-server.md)
+* [Deploying the App-V Server](appv-deploying-the-appv-server.md)

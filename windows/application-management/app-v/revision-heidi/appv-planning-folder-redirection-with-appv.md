@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/16/2018
+ms.date: 04/17/2018
 ---
 # Planning to Use Folder Redirection with App-V
 
