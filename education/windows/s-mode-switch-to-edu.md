@@ -44,16 +44,12 @@ However, in some limited scenarios, you might need to switch to Windows 10 Pro. 
 > [!IMPORTANT]
 > While it’s free to switch to Windows 10 Pro, it’s not reversible. The only way to rollback this kind of switch is through a BMR factory reset. 
 
-## Requirements for switching
-
-**1709 Devices** - Devices must be running Windows 10, version 1709
-
-**1803 Devices**- Devices must be running Windows 10 Pro in S mode, version 1803. 
-
 ## How to switch
 
 ### Switching for 1803 devices
 The switch motion for 1803 devices will behave differently than 1709 devices. MAK keys will only upgrade editions. For example: If a MAK key is applied to a device running Windows 10 Pro in S mode and an Enterprise MAK key is applied, the device will switch to Windows 10 Enterprise in S mode. 
+
+**1803 Devices**- Devices must be running Windows 10 Pro in S mode, version 1803.
 
 ### How to switch 1803 devices out of S mode
 The S mode switch option is recognized in the Windows AutoPilot profile and configuration will now continue.
@@ -69,6 +65,8 @@ Currently, individual users can switch out of S mode at any time. To prevent thi
 
 ### Switching for 1709 devices
 1709 devices running Windows 10 Pro in S mode are actually running an edition and not a "mode." MAK keys will only be able to upgrade editions. (i.e. An Enterprise MAK key applied on a device running in S mode will upgrade to Enterprise edition in S mode)
+
+**1709 Devices** - Devices must be running Windows 10, version 1709
 
 1. **Bulk switch through Microsoft Store for Education** - In this scenario, the global admin for the Azure AD education tenant can use Microsoft Store to switch all Windows 10 Pro in S mode devices on the tenant to Windows 10 Pro Education in S mode. 
 2. **Key acquisition options** - For schools with **active Microsoft Volume Licensing** agreements, global admins can obtain free MAK keys for Windows 10 Pro Education. For schools without an active Microsoft Volume Licensing agreement, the global admin can contact CSS, fill out a form and provide a proof of purchase to receive MAK keys for Windows 10 Pro Education.
