@@ -75,7 +75,7 @@ Create Office 2013 App-V packages on 64-bit Windows computers. Once created, the
 
 Office 2013 App-V Packages are created using the Office Deployment Tool, which generates an Office 2013 App-V Package. The App-V sequencer can't create or modify packages. To create a package:
 
-1. Download the [Office 2013 Deployment Tool for Click-to-Run](http://www.microsoft.com/download/details.aspx?id=36778).
+1. Download the [Office 2013 Deployment Tool for Click-to-Run](https://www.microsoft.com/download/details.aspx?id=36778).
 2. Run the .exe file and extract its features into the desired location. To make this process easier, you can create a shared network folder where the features will be saved.
 
     Example: \\\\Server\\Office2013
@@ -414,7 +414,7 @@ This section describes the requirements and options for deploying Visio 2013 and
 
 ### Additional resources for Office 2013 App-V Packages
 
-* [Office 2013 Deployment Tool for Click-to-Run](http://www.microsoft.com/download/details.aspx?id=36778)
+* [Office 2013 Deployment Tool for Click-to-Run](https://www.microsoft.com/download/details.aspx?id=36778)
 * [Supported scenarios for deploying Microsoft Office as a sequenced App-V Package](https://support.microsoft.com/en-us/kb/2772509)
 
 ### Additional resources for Office 2010 App-V Packages
@@ -434,4 +434,4 @@ This section describes the requirements and options for deploying Visio 2013 and
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).

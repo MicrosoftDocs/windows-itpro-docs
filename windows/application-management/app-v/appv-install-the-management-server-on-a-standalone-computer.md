@@ -28,11 +28,11 @@ To install the management server on a standalone computer and connect it to the 
   * The **Website Name** you want to use for the management service. Accept the default if you do not have a custom name.
   * For the **Port Binding**, specify a unique port number, such as **12345**.
 8. Select **Install**.
-9. To confirm that the setup has completed successfully, open a web browser and enter the following URL: http://managementserver:portnumber/Console. If the installation was successful, you should see the **Management Console** appear without any error messages or warnings displayed.
+9. To confirm that the setup has completed successfully, open a web browser and enter the following URL: https://managementserver:portnumber/Console. If the installation was successful, you should see the **Management Console** appear without any error messages or warnings displayed.
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
 
 ## Related topics
 

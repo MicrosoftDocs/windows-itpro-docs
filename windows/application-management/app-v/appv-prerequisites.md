@@ -95,7 +95,7 @@ The Management database is only required if you use the App-V Management server.
 |Custom database name (if applicable)|Unique database name.<br>Default: AppVManagement|
 |Management server location|Machine account on which the Management server is deployed.<br>Format to use: **Domain\MachineAccount**|
 |Management server installation administrator|Account used to install the Management server.<br>Format to use: **Domain\AdministratorLoginName**|
-|Microsoft SQL Server Service Agent|Configure the Management database computer so that the Microsoft SQL Server Agent service is restarted automatically. For instructions, see [Configure SQL Server Agent to restart services automatically](http://technet.microsoft.com/magazine/gg313742.aspx).|
+|Microsoft SQL Server Service Agent|Configure the Management database computer so that the Microsoft SQL Server Agent service is restarted automatically. For instructions, see [Configure SQL Server Agent to restart services automatically](https://technet.microsoft.com/magazine/gg313742.aspx).|
 
 ### Publishing server prerequisite software
 
@@ -108,7 +108,7 @@ The Management database is only required if you use the App-V Management server.
 |Web Server (IIS) Management Tools|Select **IIS Management Scripts and Tools**.|
 |Web Server Role Services|Common HTTP features:<br>- Static content<br>- Default document<br><br>Application development:<br>- ASP<span></span>.NET<br>- .NET Extensibility<br>- ISAPI Extensions<br>- ISAPI Filters<br><br>Security:<br>- Windows Authentication<br>- Request Filtering<br><br>Management Tools:<br>- IIS Management Console|
 |Default installation location|%PROGRAMFILES%\Microsoft Application Virtualization Server|
-|Management service URL|URL of the App-V Management service. This is the port with which the Publishing server communicates.<br>Management server and Publishing server are installed on the same server, use the format **http://<span></span>localhost:12345**.<br>If the Management server and Publishing server are installed on different servers, use the format **http:<span></span>//MyAppvServer<span></span>.MyDomain<span></span>.com**.|
+|Management service URL|URL of the App-V Management service. This is the port with which the Publishing server communicates.<br>Management server and Publishing server are installed on the same server, use the format **https://<span></span>localhost:12345**.<br>If the Management server and Publishing server are installed on different servers, use the format **https:<span></span>//MyAppvServer<span></span>.MyDomain<span></span>.com**.|
 |Publishing service website name|Name for the Publishing website.|
 |Publishing service port binding|Unique port number for the Publishing service. This port cannot be used by another process on the computer.|
 
@@ -118,7 +118,7 @@ The Management database is only required if you use the App-V Management server.
 |---|---|
 |Supported version of SQL Server|For supported versions, see [App-V supported configurations](appv-supported-configurations.md).|
 |[Microsoft .NET Framework 4.5.1 (Web Installer)](https://www.microsoft.com//download/details.aspx?id=40773)||
-|[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/download/details.aspx?id=40784)||
+|[Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)||
 |64-bit ASP.NET registration||
 |Windows Server Web Server role|This role must be added to a server operating system that is supported for the Management server.|
 |Web Server (IIS) Management Tools|Select **IIS Management Scripts and Tools**.|
@@ -152,9 +152,9 @@ What to know before installing the prerequisites:
 
 |Prerequisite|Details|
 |---|---|
-|[Microsoft .NET Framework 4.5.1 (Web Installer)](http://www.microsoft.com//download/details.aspx?id=40773)||
-|[Windows PowerShell 3.0](http://www.microsoft.com/download/details.aspx?id=34595)|Installing Windows PowerShell 3.0 requires a restart.|
-|[KB2533623](http://support.microsoft.com/kb/2533623)|Applies to Windows 7 only: download and install the KB.|
+|[Microsoft .NET Framework 4.5.1 (Web Installer)](https://www.microsoft.com//download/details.aspx?id=40773)||
+|[Windows PowerShell 3.0](https://www.microsoft.com/download/details.aspx?id=34595)|Installing Windows PowerShell 3.0 requires a restart.|
+|[KB2533623](https://support.microsoft.com/kb/2533623)|Applies to Windows 7 only: download and install the KB.|
 
 ## Related topics
 

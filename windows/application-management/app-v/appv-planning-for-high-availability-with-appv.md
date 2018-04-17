@@ -28,7 +28,7 @@ You can use Internet Information Services' (IIS) network load balancing (NLB) to
 
 Review the following articles to learn more about configuring IIS and NLB for computers running Windows Server operating systems:
 
-* [Achieving High Availability and Scalability - ARR and NLB](http://www.iis.net/learn/extensions/configuring-application-request-routing-arr/achieving-high-availability-and-scalability-arr-and-nlb) describes how to configure IIS 7.0.
+* [Achieving High Availability and Scalability - ARR and NLB](https://www.iis.net/learn/extensions/configuring-application-request-routing-arr/achieving-high-availability-and-scalability-arr-and-nlb) describes how to configure IIS 7.0.
 
 * [Network load balancing overview](<https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831698(v=ws.11)>) will tell you more about how to configure Microsoft Windows Server.
 
@@ -98,7 +98,7 @@ The App-V management server database supports deployments to computers running M
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
 
 ## Related topics
 

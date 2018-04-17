@@ -61,7 +61,7 @@ App-V supports System Center 2016 and System Center 2012 R2 Configuration Manage
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
 
 ## Related topics
 

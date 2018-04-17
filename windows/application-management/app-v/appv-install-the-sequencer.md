@@ -27,7 +27,7 @@ The App-V Sequencer is included in the Windows 10 Assessment and Deployment Kit 
     ![Selecting APP-V features in ADK](images/app-v-in-adk.png)
 3. To open the Sequencer, go to the **Start** menu and select **Microsoft Application Virtualization (App-V) Sequencer**.
 
-See [Creating and managing virtual applications](appv-creating-and-managing-virtualized-applications.md) and the [Application Virtualization Sequencing Guide](http://download.microsoft.com/download/F/7/8/F784A197-73BE-48FF-83DA-4102C05A6D44/App-V%205.0%20Sequencing%20Guide.docx) for information about creating virtual applications with the Sequencer.
+See [Creating and managing virtual applications](appv-creating-and-managing-virtualized-applications.md) and the [Application Virtualization Sequencing Guide](https://download.microsoft.com/download/F/7/8/F784A197-73BE-48FF-83DA-4102C05A6D44/App-V%205.0%20Sequencing%20Guide.docx) for information about creating virtual applications with the Sequencer.
 
 ## Command-line options for installing the sequencer
 
@@ -50,7 +50,7 @@ For more information regarding the sequencer installation, you can view the erro
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
+Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
 
 ## Related topics
 

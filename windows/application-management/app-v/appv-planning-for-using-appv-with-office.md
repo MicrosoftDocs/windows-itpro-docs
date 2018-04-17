@@ -41,7 +41,7 @@ Before implementing Office coexistence, review the information in the following 
 |Office version|Relevant how-to guides|
 |---|---|
 |Office 2016|[How to use Outlook 2016 or 2013 and an earlier version of Outlook installed on the same computer](https://support.microsoft.com/kb/2782408)|
-|Office 2013|[How to use Office 2013 suites and programs (MSI deployment) on a computer running another version of Office](http://support.microsoft.com/kb/2784668)|
+|Office 2013|[How to use Office 2013 suites and programs (MSI deployment) on a computer running another version of Office](https://support.microsoft.com/kb/2784668)|
 |Office 2010|How to use Office 2010 suites and programs on a computer running another version of Office](https://support.microsoft.com/kb/2121447)|
 
 Once you've reviewed the relevant guide, this topic will supplement what you've learned with information about Office coexistence that's more specific to App-V deployments.
@@ -66,7 +66,7 @@ The following table describes the integration level of each version of Office, a
 |Office 2013|Always integrated. Windows operating system integrations cannot be disabled.|
 |Office 2016|Always integrated. Windows operating system integrations cannot be disabled.|
 
-Microsoft recommends deploying Office coexistence with only one integrated Office instance. For example, if you’re using App-V to deploy Office 2010 and Office 2013, you should sequence Office 2010 in non-integrated mode. For more information about sequencing Office in non-integration (isolated) mode, see [How to sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](http://support.microsoft.com/kb/2830069).
+Microsoft recommends deploying Office coexistence with only one integrated Office instance. For example, if you’re using App-V to deploy Office 2010 and Office 2013, you should sequence Office 2010 in non-integrated mode. For more information about sequencing Office in non-integration (isolated) mode, see [How to sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](https://support.microsoft.com/kb/2830069).
 
 ### Known limitations of Office coexistence scenarios
 
