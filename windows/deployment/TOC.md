@@ -238,6 +238,7 @@
 ### [Change history for Update Windows 10](update/change-history-for-update-windows-10.md)
 
 ## [Windows Analytics](update/windows-analytics-overview.md)
+### [Windows Analytics and privacy](update/windows-analytics-privacy.md)
 ### [Manage Windows upgrades with Upgrade Readiness](upgrade/manage-windows-upgrades-with-upgrade-readiness.md)
 #### [Upgrade Readiness architecture](upgrade/upgrade-readiness-architecture.md)
 #### [Upgrade Readiness requirements](upgrade/upgrade-readiness-requirements.md)
