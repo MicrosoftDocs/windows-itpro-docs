@@ -53,7 +53,7 @@ If you’re running Windows 10, version 1709 or version 1803, you can switch to 
 
 1. Sign into the Microsoft Store using your Microsoft account. 
 2. Search for "Switch to Windows 10 Pro."
-3. In the offer, click Buy or Get. 
+3. In the offer, click **Buy** or **Get**. 
 You'll be prompted to save your files before the switch starts. Follow the prompts to switch to Windows 10 Pro. Your device will restart during this process. 
 
 **Block individual users from switching**
