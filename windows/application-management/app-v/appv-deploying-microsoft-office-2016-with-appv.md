@@ -14,13 +14,6 @@ ms.date: 04/17/2018
 
 Use the information in this article to use Application Virtualization (App-V) to deliver Microsoft Office 2016 as a virtualized application to computers in your organization. For information about using App-V to deliver Office 2013, see [Deploying Microsoft Office 2013 by using App-V](appv-deploying-microsoft-office-2013-with-appv.md). For information about using App-V to deliver Office 2010, see [Deploying Microsoft Office 2010 by using App-V](appv-deploying-microsoft-office-2010-with-appv.md).
 
-This topic contains the following sections:
-
-* [What to know before you start](#what-to-know-before-you-start)
-* [Creating an Office 2016 package for App-V with the Office Deployment Tool](#creating-an-office-2016-package-for-app-v-with-the-office-deployment-tool)
-* [Publishing the Office package for App-V](#publishing-the-office-package-for-app-v)
-* [Customizing and managing Office App-V packages](#customizing-and-managing-office-app-v-packages)
-
 ## What to know before you start
 
 Before you deploy Office 2016 with App-V, review the following planning information.
@@ -31,8 +24,8 @@ Use the following table to get information about supported versions of Office an
 
 |Information to review|Description|
 |---|---|
-|[Supported versions of Microsoft Office](appv-planning-for-using-appv-with-office.md#bkmk-office-vers-supp-appv)|Supported versions of Office and deployment types (for example, desktop, personal Virtual Desktop Infrastructure (VDI), and pooled VDI), and Office licensing options.|
-|[Planning for using App-V with coexisting versions of Office](appv-planning-for-using-appv-with-office.md#bkmk-plan-coexisting)|Considerations for installing different versions of Office on the same computer.|
+|[Supported versions of Microsoft Office](appv-planning-for-using-appv-with-office.md#supported-versions-of-microsoft-office)|Supported versions of Office and deployment types (for example, desktop, personal Virtual Desktop Infrastructure (VDI), and pooled VDI), and Office licensing options.|
+|[Planning for using App-V with coexisting versions of Office](appv-planning-for-using-appv-with-office.md#before-you-implement-office-coexistence)|Considerations for installing different versions of Office on the same computer.|
 
 ### Packaging, publishing, and deployment requirements
 

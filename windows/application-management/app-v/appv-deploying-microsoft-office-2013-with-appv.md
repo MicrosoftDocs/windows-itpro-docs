@@ -24,8 +24,8 @@ The following table will direct you to more information about which versions of 
 
 |Information to review|Description|
 |---|---|
-|[Supported versions of Microsoft Office](appv-planning-for-using-appv-with-office.md#bkmk-office-vers-supp-appv)|- Supported versions of Office<br>- Supported deployment types like desktop, personal Virtual Desktop Infrastructure (VDI), and pooled VDI<br>- Office licensing options.|
-|[Planning for using App-V with coexisting versions of Office](appv-planning-for-using-appv-with-office.md#bkmk-plan-coexisting)|Considerations for installing different versions of Office on the same computer.|
+|[Supported versions of Microsoft Office](appv-planning-for-using-appv-with-office.md#supported-versions-of-microsoft-office)|- Supported versions of Office<br>- Supported deployment types like desktop, personal Virtual Desktop Infrastructure (VDI), and pooled VDI<br>- Office licensing options.|
+|[Planning for using App-V with coexisting versions of Office](appv-planning-for-using-appv-with-office.md#before-you-implement-office-coexistence)|Considerations for installing different versions of Office on the same computer.|
 
 ### Packaging, publishing, and deployment requirements
 
