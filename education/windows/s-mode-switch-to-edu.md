@@ -15,7 +15,7 @@ author: Mikeblodge
 
 S mode is an enhanced security mode of Windows 10 – streamlined for security and superior performance. With Windows 10 in S mode, everyone can download and install Microsoft-verified apps from the Microsoft Store for Education – this keep devices running fast and secure day in and day out. 
 
-## The benefits of Windows 10 Pro in S mode for Education
+## Benefits of Windows 10 Pro in S mode for Education
 
 - **Microsoft-verified security** - It reduces risk of malware and exploitations that harm students and educators, because only Microsoft-verified apps can be installed.
 - **Performance that lasts** - Provides all-day battery life to keep students on task and not tripping over cords. Also, verified apps won’t degrade device performance over time.

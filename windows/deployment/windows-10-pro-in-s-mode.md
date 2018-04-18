@@ -15,7 +15,7 @@ author: Mikeblodge
 
 S mode is an enhanced security mode of Windows 10. Windows 10 Pro and Enterprise in S mode powers affordable, cloud-ready devices that are simple, secure, and efficient. Users can get started quickly, thanks to self-service deployment and a familiar Windows experience. Low-price S mode devices offer tailored solutions for kiosks, digital signs, and task work. If your device is running Windows 10, version 1709, or Windows 10, version 1803, you can switch from Windows 10 in S mode to Windows 10 Pro.
 
-## The benefits of Windows 10 Pro in S mode:
+## Benefits of Windows 10 Pro in S mode:
 
 - **Microsoft-verified security** - It reduces risk of malware and exploitations because only Microsoft-verified apps can be installed including Windows Defender Antivirus.
 - **Performance that lasts** - Provides all-day battery life to keep workers on task and not tripping over cords. Also, verified apps won’t degrade device performance over time.
@@ -37,8 +37,8 @@ S mode is an enhanced security mode of Windows 10. Windows 10 Pro and Enterprise
 |Credential Guard | | | | X |
 |Device Guard | | | | X |
 
-## Desktop Bridge
-Using Desktop Bridge will enable you to convert your Line of Business apps to a packaged app with UWP manifest. After testing and validating you can distribute the app through the Windows Store or existing channels. 
+## Keep Line of Business apps functioning with Desktop Bridge
+Worried about your LOB apps not working in S mode? Using Desktop Bridge will enable you to convert your Line of Business apps to a packaged app with UWP manifest. After testing and validating you can distribute the app through the Windows Store or existing channels. 
 
 [Explore Desktop Bridge](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root)
 
