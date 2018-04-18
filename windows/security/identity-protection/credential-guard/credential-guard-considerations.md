@@ -24,7 +24,7 @@ Passwords are still weak. We recommend that in addition to deploying Windows Def
 Windows Defender Credential Guard uses hardware security, so some features such as Windows To Go, are not supported. 
 
 ## Wi-fi and VPN Considerations
-When you enable Windows Defender Credential Guard, you can no longer use NTLM classic deployment model authentication. If you are using WiFi and VPN endpoints that are based on MS-CHAPv2, they are subject to similar attacks as for NTLMv1. For WiFi and VPN connections, Microsoft recommends that organizations move from MSCHAPv2-based connections such as PEAP-MSCHAPv2 and EAP-MSCHAPv2, to certificate-based authentication such as PEAP-TLS or EAP-TLS. 
+When you enable Windows Defender Credential Guard, you can no longer use NTLM classic authentication for Single Sign-On. You will be forced to enter your credentials to use these protocols and cannot save the credentials for future use. If you are using WiFi and VPN endpoints that are based on MS-CHAPv2, they are subject to similar attacks as for NTLMv1. For WiFi and VPN connections, Microsoft recommends that organizations move from MSCHAPv2-based connections such as PEAP-MSCHAPv2 and EAP-MSCHAPv2, to certificate-based authentication such as PEAP-TLS or EAP-TLS. 
 
 ## Kerberos Considerations
 

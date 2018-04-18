@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 11/21/2017
+ms.date: 04/17/2018
 ---
 
 # Enable SIEM integration in Windows Defender ATP
@@ -29,9 +29,9 @@ ms.date: 11/21/2017
 
 Enable security information and event management (SIEM) integration so you can pull alerts from the Windows Defender ATP portal using your SIEM solution or by connecting directly to the alerts REST API.
 
-1. In the navigation pane, select **Preferences setup** > **SIEM integration**.
+1. In the navigation pane, select **Settings** > **APIs** > **SIEM**.
 
-  ![Image of SIEM integration from Preferences setup menu](images/atp-siem-integration.png)
+  ![Image of SIEM integration from Settings menu](images/atp-siem-integration.png)
 
 2. Select **Enable SIEM integration**. This activates the **SIEM connector access details** section with pre-populated values and an application is created under you Azure Active Directory (AAD) tenant.
 

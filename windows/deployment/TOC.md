@@ -230,6 +230,7 @@
 ### [Deploy Windows 10 updates using System Center Configuration Manager](update/waas-manage-updates-configuration-manager.md)
 ### [Manage device restarts after updates](update/waas-restart.md)
 ### [Manage additional Windows Update settings](update/waas-wu-settings.md)
+### [Determine the source of Windows updates](update/windows-update-sources.md)
 ### [Windows Insider Program for Business](update/waas-windows-insider-for-business.md)
 #### [Introduction to the Windows Insider Program for Business](update/WIP4Biz-intro.md)
 #### [Windows Insider Program for Business Frequently Asked Questions](update/waas-windows-insider-for-business-faq.md)
@@ -237,6 +238,7 @@
 ### [Change history for Update Windows 10](update/change-history-for-update-windows-10.md)
 
 ## [Windows Analytics](update/windows-analytics-overview.md)
+### [Windows Analytics and privacy](update/windows-analytics-privacy.md)
 ### [Manage Windows upgrades with Upgrade Readiness](upgrade/manage-windows-upgrades-with-upgrade-readiness.md)
 #### [Upgrade Readiness architecture](upgrade/upgrade-readiness-architecture.md)
 #### [Upgrade Readiness requirements](upgrade/upgrade-readiness-requirements.md)

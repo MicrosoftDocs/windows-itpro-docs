@@ -8,12 +8,12 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 03/20/2018
+ms.date: 04/05/2018
 ---
 
 # Frequently asked questions and troubleshooting Windows Analytics
 
-This topic compiles the most common issues encountered with configuring and using Windows Analytics, as well as general questions.
+This topic compiles the most common issues encountered with configuring and using Windows Analytics, as well as general questions. This FAQ, along with the [Windows Analytics Technical Community](https://techcommunity.microsoft.com/t5/Windows-Analytics/ct-p/WindowsAnalytics), are recommended resources to consult before contacting Microsoft support.
 
 ## Troubleshooting common problems
 
@@ -32,6 +32,8 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 [Upgrade Readiness doesn't show IE site discovery data from some devices](#upgrade-readiness-doesnt-show-ie-site-discovery-data-from-some-devices)
 
 [Disable Upgrade Readiness](#disable-upgrade-readiness)
+
+[Exporting large data sets](#exporting-large-data-sets)
 
 
 ### Devices not showing up
@@ -179,6 +181,24 @@ If you want to stop using Upgrade Readiness and stop sending diagnostic data dat
 3.	If you enabled **Internet Explorer Site Discovery**, you can disable Internet Explorer data collection by setting the *IEDataOptIn* registry key to value "0".  The IEDataOptIn key can be found under: *HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection*.
 4.	**Optional step:** You can also remove the “CommercialId” key from: "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection". 
 
+### Exporting large data sets
+
+Azure Log Analytics is optimized for advanced analytics of large data sets and can efficiently generate summaries and analytics for them. The query language is not optimized (or intended) for returning large raw data sets and has built-in limits to protect against overuse. There are times when it might be necessary to get more data than this, but that should be done sparingly since this is not the intended way to use Azure Log Analytics. The following code snippet shows how to retrieve data from UAApp one “page” at a time:
+
+```
+let snapshot = toscalar(UAApp | summarize max(TimeGenerated));
+let pageSize = 100000;
+let pageNumber = 0;
+ 
+UAApp
+| where TimeGenerated == snapshot and IsRollup==true and RollupLevel=="Granular" and Importance == "Low install count"
+| order by AppName, AppVendor, AppVersion desc
+| serialize
+| where row_number(0) >= (pageSize * pageNumber)
+| take pageSize
+```
+
+ 
 
 ## Other common questions
 
@@ -198,46 +218,6 @@ Beyond the cost of Windows operating system licenses, there is no additional cos
 
 Note that different Azure Log Analytics plans have different data retention periods, and the Windows Analytics solutions inherit the workspace's data retention policy. So, for example, if your workspace is on the free plan then Windows Analytics will retain the last week's worth of "daily snapshots" that are collected in the workspace.
 
-
-### How does Windows Analytics support privacy?
-
-Windows Analytics is fully committed to privacy, centering on these tenets:
-
-- **Transparency:** We fully document the Windows Analytics diagnostic events (see the links for additional information) so you can review them with your company’s security and compliance teams. The Diagnostic Data Viewer lets you see diagnostic data sent from a given device (see [Diagnostic Data Viewer Overview](https://docs.microsoft.com/windows/configuration/diagnostic-data-viewer-overview) for details).
-- **Control:** You ultimately control the level of diagnostic data you wish to share. In Windows 10 1709 we added a new policy to Limit enhanced diagnostic data to the minimum required by Windows Analytics
-- **Security:** Your data is protected with strong security and encryption
-- **Trust:** Windows Analytics supports the Microsoft Online Service Terms
-
-The following illustration shows how diagnostic data flows from individual devices through the Diagnostic Data Service, Azure Log Analytics storage, and to your Log Analytics workspace:
-
-[![Diagram illustrating flow of diagnostic data from devices](images/WA-data-flow-v1.png)](images/WA-data-flow-v1.png)
-
-The data flow sequence is as follows:
-
-1.	Diagnostic data is sent from devices to the Microsoft Diagnostic Data Management service, which is hosted in the US.
-2.	An IT administrator creates an Azure Log Analytics workspace. The administrator chooses the location, copies the Commercial ID (which identifies that workspace), and then pushes Commercial ID to devices they want to monitor. This is the mechanism that specifies which devices appear in which workspaces.
-3.	Each day Microsoft produces a "snapshot" of IT-focused insights for each workspace in the Diagnostic Data Management service.
-4.	These snapshots are copied to transient storage which is used only by Windows Analytics (also hosted in US data centers) where they are segregated by Commercial ID.
-5.	The snapshots are then copied to the appropriate Azure Log Analytics workspace.
-6.	If the IT administrator is using the Upgrade Readiness solution, user input from the IT administrator (specifically, the target operating system release and the importance and upgrade readiness per app) is stored in the Windows Analytics Azure Storage. (Upgrade Readiness is the only Windows Analytics solution that takes such user input.)
-
-
-See these topics for additional background information about related privacy issues:
-
-- [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization)
-- [Windows 7, Windows 8, and Windows 8.1 Appraiser Telemetry Events, and Fields](https://go.microsoft.com/fwlink/?LinkID=822965) (link downloads a PDF file)
-- [Windows 10, version 1703 basic level Windows diagnostic events and fields](https://docs.microsoft.com/windows/configuration/basic-level-windows-diagnostic-events-and-fields-1703)
-- [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](https://docs.microsoft.com/windows/configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields)
-- [Diagnostic Data Viewer Overview](https://docs.microsoft.com/windows/configuration/diagnostic-data-viewer-overview)
-- [Licensing Terms and Documentation](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Learn about security and privacy at Microsoft datacenters](http://www.microsoft.com/datacenters)
-- [Confidence in the trusted cloud](https://azure.microsoft.com/en-us/support/trust-center/) 
-
-### Can Windows Analytics be used without a direct client connection to the Microsoft Data Management Service?
-No, the entire service is powered by Windows diagnostic data, which requires that devices have this direct connectivity.
-
-### Can I choose the data center location?
-Yes for Azure Log Analytics, but no for the Microsoft Data Management Service (which is hosted in the US).
 
 ### Why do SCCM and Upgrade Readiness show different counts of devices that are ready to upgrade?
 System Center Configuration Manager (SCCM) considers a device ready to upgrade if *no installed app* has an upgrade decision of “not ready” (that is, they are all "ready" or "in progress"), while Upgrade Readiness considers a device ready to upgrade only if *all* installed apps are marked “ready”.

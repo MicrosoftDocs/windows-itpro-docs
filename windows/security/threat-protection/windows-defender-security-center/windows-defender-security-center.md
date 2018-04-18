@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 10/17/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 04/11/2018
 ---
 
 
@@ -39,11 +39,17 @@ In Windows 10, version 1709, we increased the scope of the app to also show info
 >[!NOTE]
 >The Windows Defender Security Center app is a client interface on Windows 10, version 1703 and later. It is not the Windows Defender Security Center web portal console that is used to review and manage [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
 
-This library describes the Windows defender Security Center app, and provides information on configuring certain features, inlcuding:
+This library describes the Windows Defender Security Center app, and provides information on configuring certain features, including:
 
 <a id="customize-notifications-from-the-windows-defender-security-center"></a>
 - [Showing and customizing contact information on the app and in notifications](wdsc-customize-contact-information.md)
 - [Hiding notifications](wdsc-hide-notifications.md)
+
+You can't uninstall the Windows Defender Security Center app, but you can do one of the following:
+
+- Disable the interface on Windows Server 2016. See [Windows Defender Antivirus on Windows Server 2016](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-on-windows-server-2016). 
+- Hide all of the sections on client computers (see below).
+- Disable Windows Defender Antivirus, if needed. See [Enable and configure Windows Defender AV always-on protection and monitoring](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).
 
 You can find more information about each section, including options for configuring the sections - such as hiding each of the sections - at the following topics:
 

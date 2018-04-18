@@ -1,7 +1,7 @@
 ---
 title: Investigate machines in the Windows Defender ATP Machines list
 description: Investigate affected machines by reviewing alerts, network connection information, adding machine tags and groups, and checking the service health.
-keywords: machines, endpoints, tags, groups, endpoint, alerts queue, alerts, machine name, domain, last seen, internal IP, active alerts, threat category, filter, sort, review alerts, network, connection, type, password stealer, ransomware, exploit, threat, low severity, service heatlh
+keywords: machines, tags, groups, endpoint, alerts queue, alerts, machine name, domain, last seen, internal IP, active alerts, threat category, filter, sort, review alerts, network, connection, type, password stealer, ransomware, exploit, threat, low severity, service heatlh
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.date: 04/17/2018
 ---
 
 # Investigate machines in the Windows Defender ATP Machines list
@@ -18,8 +18,6 @@ ms.date: 10/16/2017
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink) 
 
@@ -30,86 +28,54 @@ You can click on affected machines whenever you see them in the portal to open a
 
 - The [Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
 - The [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
-- The [Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- The [Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
 - Any individual alert
 - Any individual file details view
 - Any IP address or domain details view
 
 When you investigate a specific machine, you'll see:
-- Machine details, Logged on users, and Machine Reporting
+- Machine details, Logged on users, Machine risk, and Machine Reporting
 - Alerts related to this machine
 - Machine timeline
 
-![Image of machine view](images/atp-machine-details-view.png)
+![Image of machine view](images/atp-azure-atp-machine.png)
 
-The machine details, total logged on users, and machine reporting sections display various attributes about the machine.
+The machine details, logged on users, machine risk, and machine reporting sections display various attributes about the machine.
 
+**Machine details**</br>
 The machine details tile provides information such as the domain and OS of the machine. If there's an investigation package available on the machine, you'll see a link that allows you to download the package.
 
 For more information on how to take action on a machine, see [Take response action on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md).
 
-Clicking on the number of total logged on users in the Logged on users tile opens the Users Details pane that displays the following information for logged on users in the past 30 days:
+
+**Logged on users**</br>
+Clicking on the logged on users in the Logged on users tile opens the Users Details pane that displays the following information for logged on users in the past 30 days:
 
 -	Interactive and remote interactive logins
 -	Network, batch, and system logins
 
-![Image of user details pane](images/atp-user-details.png)
+![Image of user details pane](images/atp-azure-atp-machine-user.png)
 
 You'll also see details such as logon types for each user account, the user group, and when the account logon occurred.
 
  For more information, see [Investigate user entities](investigate-user-windows-defender-advanced-threat-protection.md).
 
-## Manage machine group and tags
-Machine group and tags support proper mapping of the network, enabling you to attach different tags to machines to capture context and to enable dynamic groups creation as part of an incident. 
+**Machine risk**</br>
+The Machine risk tile shows the overall risk assessment of a machine. A machine's risk level is determined using the number of active alerts and their severity levels. You can influence a machine's risk level by resolving associated alerts manually or automatically and also by suppressing an alert. It's also indicators of the active threats that machines could be exposed to.
 
-Machine related properties are being extended to account for:
+**Azure Advanced Threat Protection**</br> 
+If you have enabled the Azure ATP feature and there are alerts related to the machine, you can click on the link that will take you to the Azure ATP page where more information about the alerts are provided. 
 
-- Group affiliation
-- Dynamic context capturing  
+>[!NOTE]
+>You'll need to enable the integration on both Azure ATP and Windows Defender ATP to use this feature. In Windows Defender ATP, you can enable this feature in advanced features. For more information on how to enable advanced features, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md).
 
-
-
-### Group machines
-Machine group affiliation can represent geographic location, specific activity, importance level and others. Grouping machines with similar attributes can be handy when you need to apply contextual action on a specific list of machines. After creating groups, you can apply the Group filter on the Machines list to get a narrowed list of machines.
-
-Machine group is defined in the following registry key entry of the machine:
-
--	Registry key: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`
--	Registry key value (string): Group
-
-
-### Set standard tags on machines
-Dynamic context capturing is achieved using tags. By tagging machines, you can keep track of individual machines in your organization. After adding tags on machines, you can apply the Tags filter on the Machines list to get a narrowed list of machines with the tag.
-
-1.	Select the machine that you want to manage tags on. You can select or search for a machine from any of the following views:
-
-    -	**Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
-    -	**Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
-    -	**Machines list** - Select the machine name from the list of machines.
-    -	**Search box** - Select Machine from the drop-down menu and enter the machine name.
-
-    You can also get to the alert page through the file and IP views.
-
-2.	Open the **Actions** menu and select **Manage tags**.
-
-    ![Image of taking action to manage tags on a machine](images/atp-manage-tags.png)
-
-3. Enter tags on the machine. To add more tags, click the + icon.
-4. Click **Save and close**. 
-
-    ![Image of adding tags on a machine](images/atp-save-tag.png)
-
-    Tags are added to the machine view and will also be reflected on the **Machines list** view. You can then use the **Tags** or **Groups** filter to see the relevant list of machines.
-
-### Manage machine tags
-You can manage tags from the Actions button or by selecting a machine from the Machines list and opening the machine details panel. 
-
-![Image of adding tags on a machine](images/atp-tag-management.png)
-
-
+**Machine reporting**</br>
+Provides the last internal IP and external IP of the machine. It also shows when the machine was first and last seen reporting to the service. 
 
 ## Alerts related to this machine
 The **Alerts related to this machine** section provides a list of alerts that are associated with the machine. You can also manage alerts from this section by clicking the circle icons to the left of the alert (or using Ctrl or Shift + click to select multiple alerts).
+
+![Image of alerts related to machine](images/atp-alerts-related-to-machine.png)
 
 This list is a filtered version of the [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows the date when the alert's last activity was detected, a short description of the alert, the user account associated with the alert, the alert's severity, the alert's status in the queue, and who is addressing the alert.
 
@@ -184,20 +150,71 @@ From the list of events that are displayed in the timeline, you can examine the 
 
 You can also use the [Alerts spotlight](investigate-alerts-windows-defender-advanced-threat-protection.md#artifact-timeline) feature to see the correlation between alerts and events on a specific machine.
 
-Expand an event to view associated processes related to the event. Click on the circle next to any process or IP address in the process tree to investigate additional details of the identified processes. This action brings up the **Details pane** which includes execution context of processes, network communications and a summary of metadata on the file or IP address.
+Expand an event to view associated processes related to the event. Click on the circle next to any process or IP address in the process tree to investigate additional details of the identified processes. This action brings up the **Details pane** which includes execution context of processes, network communications and a summary of meta data on the file or IP address.
 
 The details pane enriches the ‘in-context’ information across investigation and exploration activities, reducing the need to switch between contexts. It lets you focus on the task of tracing associations between attributes without leaving the current context.
 
+## Add machine tags
+You can add tags on machines during an investigation. Machine tags support proper mapping of the network, enabling you to attach different tags to capture context and to enable dynamic list creation as part of an incident. 
+
+You can add tags on machines using the following ways:
+- By setting a registry key value
+- By using the portal
+
+### Add machine tags by setting a registry key value
+Add tags on machines which can be used as a filter in Machines list view. You can limit the machines in the list by selecting the Tag filter on the Machines list.
+
+Machines with similar tags can be handy when you need to apply contextual action on a specific list of machines. 
+
+Use the following registry key entry to add a tag on a machine:
+
+-	Registry key: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`
+-	Registry key value (string): Group
+
+
+### Add machine tags using the portal
+Dynamic context capturing is achieved using tags. By tagging machines, you can keep track of individual machines in your organization. After adding tags on machines, you can apply the Tags filter on the Machines list to get a narrowed list of machines with the tag.
+
+1.	Select the machine that you want to manage tags on. You can select or search for a machine from any of the following views:
+
+    -	**Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
+    -	**Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
+    -	**Machines list** - Select the machine name from the list of machines.
+    -	**Search box** - Select Machine from the drop-down menu and enter the machine name.
+
+    You can also get to the alert page through the file and IP views.
+
+2.	Open the **Actions** menu and select **Manage tags**.
+
+    ![Image of taking action to manage tags on a machine](images/atp-manage-tags.png)
+
+3. Enter tags on the machine. To add more tags, click the + icon.
+4. Click **Save and close**. 
+
+    ![Image of adding tags on a machine](images/atp-save-tag.png)
+
+    Tags are added to the machine view and will also be reflected on the **Machines list** view. You can then use the **Tags** filter to see the relevant list of machines.
+
+### Manage machine tags
+You can manage tags from the Actions button or by selecting a machine from the Machines list and opening the machine details panel. 
+
+![Image of adding tags on a machine](images/atp-tag-management.png)
+
+## Use machine groups in an investigation
+Machine group affiliation can represent geographic location, specific activity, importance level and others.
+
+You can create machine groups in the context of role-based access (RBAC) to control who can take specific action or who can see information on a specific machine group or groups by assigning the machine group to a user group. For more information, see [Manage portal access using role-based access control](rbac-windows-defender-advanced-threat-protection.md).
+
+You can also use machine groups to assign specific remediation levels to apply during automated investigations. For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md).
+
+In an investigation, you can filter the Machines list to just specific machine groups by using the Groups filter. 
 
 
 ## Related topics
-- [View the Windows Defender Advanced Threat Protection Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
 - [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
+- [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
 - [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
 - [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
 - [Investigate an IP address associated with a Windows Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
 - [Investigate a domain associated with a Windows Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
-- [View and organize the Windows Defender ATP Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)
 - [Investigate a user account in Windows Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)
-- [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
-- [Take response actions in Windows Defender ATP](response-actions-windows-defender-advanced-threat-protection.md)

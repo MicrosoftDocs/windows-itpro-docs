@@ -1,20 +1,20 @@
 ---
 title: VPN and conditional access (Windows 10)
-description: tbd
+description: The VPN client is now able to integrate with the cloud-based Conditional Access Platform to provide a device compliance option for remote clients. Conditional Access is a policy-based evaluation engine that lets you create access rules for any Azure Active Directory (Azure AD) connected application. 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
-author: jdeckerms
+author: shortpatti
+ms.author: pashort
+ms.reviewer: 
 ms.localizationpriority: high
-ms.date: 07/27/2017
+ms.date: 04/17/2018
 ---
 
 # VPN and conditional access
 
-**Applies to**
--   Windows 10
--   Windows 10 Mobile
+>Applies to: Windows 10 and Windows 10 Mobile
 
 The VPN client is now able to integrate with the cloud-based Conditional Access Platform to provide a device compliance option for remote clients. Conditional Access is a policy-based evaluation engine that lets you create access rules for any Azure Active Directory (Azure AD) connected application.  
 
@@ -51,6 +51,7 @@ The following client-side components are also required:
 - Trusted Platform Module (TPM)
 
 ## VPN device compliance 
+According to the VPNv2 CSP, these settings options are **Optional**.  If you want your users to access on-premises resources, such as files on a network share, based on the credential of a certificate that was issued by an on-premises CA, and not the Cloud CA certificate, you add these settings to the VPNv2 profile.  Alternatively, if you add the cloud root certs to the NTAuth store in on-prem AD, your user's cloud cert will chain and KDC will issue TGT and TGS tickets to them.
 
 Server-side infrastructure requirements to support VPN device compliance include:
 
@@ -65,9 +66,9 @@ After the server side is set up, VPN admins can add the policy settings for cond
 Two client-side configuration service providers are leveraged for VPN device compliance.
 
 - VPNv2 CSP DeviceCompliance settings
-   - **Enabled**: enables the Device Compliance flow from the client. If marked as **true**, the VPN client will attempt to communicate with Azure AD to get a certificate to use for authentication. The VPN should be set up to use certificate authentication and the VPN server must trust the server returned by Azure AD.
-   - **Sso**: nodes under SSO can be used to choose a certificate different from the VPN authentication certificate for  Kerberos authentication in the case of device compliance.
-   - **Sso/Enabled**: if this field is set to **true**, the VPN client will look for a separate certificate for Kerberos authentication.
+   - **Enabled**: enables the Device Compliance flow from the client. If marked as **true**, the VPN client attempts to communicate with Azure AD to get a certificate to use for authentication. The VPN should be set up to use certificate authentication and the VPN server must trust the server returned by Azure AD.
+   - **Sso**: nodes under SSO can be used to choose a certificate different from the VPN authentication certificate for Kerberos authentication in the case of device compliance.
+   - **Sso/Enabled**: if this field is set to **true**, the VPN client looks for a separate certificate for Kerberos authentication.
    - **Sso/IssuerHash**: hashes for the VPN client to look for the correct certificate for Kerberos authentication.
    - **Sso/Eku**: comma-separated list of Enhanced Key Usage (EKU) extensions for the VPN client to look for the correct certificate for Kerberos authentication.
 - HealthAttestation CSP (not a requirement) - functions performed by the HealthAttestation CSP include:
@@ -77,21 +78,17 @@ Two client-side configuration service providers are leveraged for VPN device com
    - Upon request, forwards the Health Attestation Certificate (received from HAS) and related runtime information to the MDM server for verification
    
 ## Client connection flow
-
-
 The  VPN client side connection flow works as follows:
 
 ![Device compliance workflow when VPN client attempts to connect](images/vpn-device-compliance.png)
  
-When a Device Compliance-enabled VPN connection profile is triggered (either manually or automatically):
+When a VPNv2 Profile is configured with \<DeviceCompliance> \<Enabled>true<\/Enabled> the VPN client uses this connection flow:
 
 1.	 The VPN client calls into Windows 10’s AAD Token Broker, identifying itself as a VPN client.
 2.	 The Azure AD Token Broker authenticates to Azure AD and provides it with information about the device trying to connect. The Azure AD Server checks if the device is in compliance with the policies.
 3.	 If compliant, Azure AD requests a short-lived certificate
 4.	 Azure AD pushes down a short-lived certificate to the Certificate Store via the Token Broker. The Token Broker then returns control back over to the VPN client for further connection  processing.
 5. The VPN client uses the Azure AD-issued certificate to authenticate with the VPN server.
-
-
 
 ## Configure conditional access
 

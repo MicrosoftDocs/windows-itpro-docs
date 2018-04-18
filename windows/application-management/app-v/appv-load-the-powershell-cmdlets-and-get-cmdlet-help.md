@@ -160,7 +160,7 @@ Starting in App-V 5.0 SP3, cmdlet help is available in two formats:
 
 <br>
 
-- **On TechNet as web pages**: See the App-V node under [Microsoft Desktop Optimization Pack Automation with Windows PowerShell](http://technet.microsoft.com/library/dn520245.aspx).
+- **On TechNet as web pages**: See the App-V node under [Microsoft Desktop Optimization Pack Automation with Windows PowerShell](https://technet.microsoft.com/library/dn520245.aspx).
 
 ## <a href="" id="bkmk-display-help-cmdlet"></a>Displaying the help for a Windows PowerShell cmdlet
 
@@ -174,4 +174,4 @@ To display help for a specific Windows PowerShell cmdlet:
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
