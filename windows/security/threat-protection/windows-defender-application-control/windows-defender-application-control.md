@@ -37,7 +37,7 @@ WDAC policies also block unsigned scripts and MSIs, and Windows PowerShell runs 
 ## WDAC System Requirements
 
 WDAC policies can only be created on computers running Windows 10 Enterprise or Windows Server 2016. 
-They can be applied to computers running any edition of Windows 10 and managed via Mobile Device Management (MDM), such as Microsoft Intune. 
+They can be applied to computers running any edition of Windows 10 or Windows Server 2016 and managed via Mobile Device Management (MDM), such as Microsoft Intune. 
 Group Policy can also be used to distribute Group Policy Objects that contain WDAC policies on computers running Windows 10 Enterprise or Windows Server 2016. 
 
 ## New and changed functionality
