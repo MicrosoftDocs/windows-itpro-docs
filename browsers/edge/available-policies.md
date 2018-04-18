@@ -27,6 +27,21 @@ Microsoft Edge works with the following Group Policy settings to help you manage
 
 Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge\
 
+## Allow a shared books folder
+>*Supported versions: Windows 10, version 1803*
+
+This policy setting specifies whether organizations should use a folder shared across users to store books from the Books Library. 
+
+**Microsoft Intune to manage your MDM settings** 
+|   |   |
+|---|---|
+|MDM name |[UseSharedFolderForBooks](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-usesharedfolderforbooks) |
+|Supported devices |Desktop  |
+|URI full path |./Vendor/MSFT/Policy/Config/Browser/UseSharedFolderForBooks   |
+|Data type | Integer |
+|Allowed values |<ul><li>**0** - No shared folder.</li><li>**1** - Use as shared folder.</li></ul> |
+
+
 ## Allow Address bar drop-down list suggestions
 >*Supporteded versions: Windows 10, version 1703 or later*
 
@@ -74,7 +89,7 @@ Your browsing data is the information that Microsoft Edge remembers and stores a
 |Allowed values |<ul><li>**0 (default)** - Browsing data is not cleared on exit. The type of browsing data to clear can be configured by the employee in the Clear browsing data options under Settings.</li><li>**1** - Browsing data is cleared on exit.</li></ul> |
 
 ## Allow configuration updates for the Books Library
->*Supporteded versions: Windows 10*
+>*Supporteded versions: Windows 10, version 1803*
 
 Microsoft Edge automatically retrieves the configuration data for the Books Library, when this policy is enabled or not configured. If disabled, Microsoft Edge does not retrieve the Books configuration data.
 
@@ -118,7 +133,7 @@ F12 developer tools is a suite of tools to help you build and debug your webpage
 |Allowed values |<ul><li>**0** - The F12 Developer Tools are disabled.</li><li>**1 (default)** - The F12 Developer Tools are enabled.</li></ul> |
 
 ## Allow extended telemetry for the Books tab
->*Supporteded versions: Windows 10*
+>*Supporteded versions: Windows 10, version 1803*
 
 If you enable this policy, both basic and additional diagnostic data is sent to Microsoft about the books you are reading from Books in Microsoft Edge. By default, this policy is disabled or not configured and only basic diagnostic data, depending on your device configuration, is sent to Microsoft. 
 
@@ -598,19 +613,7 @@ This policy setting specifies whether you see an additional page in Microsoft Ed
 |Data type | Integer |
 |Allowed values |<ul><li>**0 (default)** - Doesn’t show an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.</li><li>**1** - Shows an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.</li></ul> |
 
-## User shared folder for books
->*Supported versions: Windows 10*
 
-This policy setting specifies whether organizations should use a folder shared across users to store books from the Books Library. 
-
-**Microsoft Intune to manage your MDM settings** 
-|   |   |
-|---|---|
-|MDM name |[UseSharedFolderForBooks](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-usesharedfolderforbooks) |
-|Supported devices |Desktop  |
-|URI full path |./Vendor/MSFT/Policy/Config/Browser/UseSharedFolderForBooks   |
-|Data type | Integer |
-|Allowed values |<ul><li>**0** - No shared folder.</li><li>**1** - Use as shared folder.</li></ul> |
 
 
 ## Related topics
