@@ -22,7 +22,7 @@ The Group Policy settings for TPM services are located at:
 
 **Computer Configuration\\Administrative Templates\\System\\Trusted Platform Module Services\\**
 
-The following Group Policy settings were introduced in Window 10:
+The following Group Policy settings were introduced in Window 10.
 
 ## Configure the list of blocked TPM commands
 
@@ -65,9 +65,6 @@ If you disable or do not configure this policy setting, Windows will block the T
 ## Configure the level of TPM owner authorization information available to the operating system
 
 This policy setting configures how much of the TPM owner authorization information is stored in the registry of the local computer. Depending on the amount of TPM owner authorization information that is stored locally, the Windows operating system and TPM-based applications can perform certain actions in the TPM that require TPM owner authorization without requiring the user to enter the TPM owner password.
-
-> [!IMPORTANT]
-> This policy setting is not available in the Windows 10, version 1607 and Windows Server 2016 and later versions of the ADMX files.
 
 There are three TPM owner authentication settings that are managed by the Windows operating system. You can choose a value of **Full**, **Delegate**, or **None**.
 
