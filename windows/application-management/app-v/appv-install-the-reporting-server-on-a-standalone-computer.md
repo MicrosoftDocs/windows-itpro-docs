@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/17/2018
+ms.date: 04/18/2018
 ---
 # How to install the reporting server on a standalone computer and connect it to the database
 
