@@ -271,7 +271,7 @@ For more information, see:
 
 - [Get Started with UE-V](/windows/configuration/ue-v/uev-getting-started)
 
-In essence all that is required is to enable the UE-V service and download the following Microsoft authored App-V settings template from the [Microsoft User Experience Virtualization (UE-V) template gallery](http://gallery.technet.microsoft.com/Authored-UE-V-Settings-bb442a33). Register the template. For more information about UE-V templates, see [User Experience Virtualization (UE-V) for Windows 10 overview](/windows/configuration/ue-v/uev-for-windows).
+In essence all that is required is to enable the UE-V service and download the following Microsoft authored App-V settings template from the [Microsoft User Experience Virtualization (UE-V) template gallery](https://gallery.technet.microsoft.com/Authored-UE-V-Settings-bb442a33). Register the template. For more information about UE-V templates, see [User Experience Virtualization (UE-V) for Windows 10 overview](/windows/configuration/ue-v/uev-for-windows).
 
 **Note**  
 Without performing an additional configuration step, User Environment Virtualization (UE-V) will not be able to synchronize the Start menu shortcuts (.lnk files) on the target computer. The .lnk file type is excluded by default.
@@ -444,41 +444,41 @@ In a non-persistent environment, it is unlikely these pended operations will be 
 
 The following section contains lists with information about Microsoft documentation and downloads that may be useful when optimizing your environment for performance.
 
-<!-- Following bold text used to say **.NET NGEN Blog and Script (Highly Recommended)**  but the script doesn't seem to exist any more. The link to the script was [Script](http://aka.ms/DrainNGenQueue)  -->
+<!-- Following bold text used to say **.NET NGEN Blog and Script (Highly Recommended)**  but the script doesn't seem to exist any more. The link to the script was [Script](https://aka.ms/DrainNGenQueue)  -->
 
 **.NET NGEN Blog (Highly Recommended)**
 
--   [How to speed up NGEN optimization](http://blogs.msdn.com/b/dotnet/archive/2013/08/06/wondering-why-mscorsvw-exe-has-high-cpu-usage-you-can-speed-it-up.aspx)
+-   [How to speed up NGEN optimization](https://blogs.msdn.com/b/dotnet/archive/2013/08/06/wondering-why-mscorsvw-exe-has-high-cpu-usage-you-can-speed-it-up.aspx)
 
 **Windows Server and Server Roles**
 
 Server Performance Tuning Guidelines for
 
--   [Microsoft Windows Server 2012 R2](http://msdn.microsoft.com/library/windows/hardware/dn529133.aspx)
+-   [Microsoft Windows Server 2012 R2](https://msdn.microsoft.com/library/windows/hardware/dn529133.aspx)
 
--   [Microsoft Windows Server 2012](http://download.microsoft.com/download/0/0/B/00BE76AF-D340-4759-8ECD-C80BC53B6231/performance-tuning-guidelines-windows-server-2012.docx)
+-   [Microsoft Windows Server 2012](https://download.microsoft.com/download/0/0/B/00BE76AF-D340-4759-8ECD-C80BC53B6231/performance-tuning-guidelines-windows-server-2012.docx)
 
--   [Microsoft Windows Server 2008 R2](http://download.microsoft.com/download/6/B/2/6B2EBD3A-302E-4553-AC00-9885BBF31E21/Perf-tun-srv-R2.docx)
+-   [Microsoft Windows Server 2008 R2](https://download.microsoft.com/download/6/B/2/6B2EBD3A-302E-4553-AC00-9885BBF31E21/Perf-tun-srv-R2.docx)
 
 **Server Roles**
 
--   [Remote Desktop Virtualization Host](http://msdn.microsoft.com/library/windows/hardware/dn567643.aspx)
+-   [Remote Desktop Virtualization Host](https://msdn.microsoft.com/library/windows/hardware/dn567643.aspx)
 
--   [Remote Desktop Session Host](http://msdn.microsoft.com/library/windows/hardware/dn567648.aspx)
+-   [Remote Desktop Session Host](https://msdn.microsoft.com/library/windows/hardware/dn567648.aspx)
 
--   [IIS Relevance: App-V Management, Publishing, Reporting Web Services](http://msdn.microsoft.com/library/windows/hardware/dn567678.aspx)
+-   [IIS Relevance: App-V Management, Publishing, Reporting Web Services](https://msdn.microsoft.com/library/windows/hardware/dn567678.aspx)
 
--   [File Server (SMB) Relevance: If used for App-V Content Storage and Delivery in SCS Mode](http://technet.microsoft.com/library/jj134210.aspx)
+-   [File Server (SMB) Relevance: If used for App-V Content Storage and Delivery in SCS Mode](https://technet.microsoft.com/library/jj134210.aspx)
 
 **Windows Client (Guest OS) Performance Tuning Guidance**
 
--   [Microsoft Windows 7](http://download.microsoft.com/download/E/5/7/E5783D68-160B-4366-8387-114FC3E45EB4/Performance Tuning Guidelines for Windows 7 Desktop Virtualization v1.9.docx)
+-   [Microsoft Windows 7](https://download.microsoft.com/download/E/5/7/E5783D68-160B-4366-8387-114FC3E45EB4/Performance Tuning Guidelines for Windows 7 Desktop Virtualization v1.9.docx)
 
--   [Optimization Script: (Provided by Microsoft Support)](http://blogs.technet.com/b/jeff_stokes/archive/2012/10/15/the-microsoft-premier-field-engineer-pfe-view-on-virtual-desktop-vdi-density.aspx)
+-   [Optimization Script: (Provided by Microsoft Support)](https://blogs.technet.com/b/jeff_stokes/archive/2012/10/15/the-microsoft-premier-field-engineer-pfe-view-on-virtual-desktop-vdi-density.aspx)
 
--   [Microsoft Windows 8](http://download.microsoft.com/download/6/0/1/601D7797-A063-4FA7-A2E5-74519B57C2B4/Windows_8_VDI_Image_Client_Tuning_Guide.pdf)
+-   [Microsoft Windows 8](https://download.microsoft.com/download/6/0/1/601D7797-A063-4FA7-A2E5-74519B57C2B4/Windows_8_VDI_Image_Client_Tuning_Guide.pdf)
 
--   [Optimization Script: (Provided by Microsoft Support)](http://blogs.technet.com/b/jeff_stokes/archive/2013/04/09/hot-off-the-presses-get-it-now-the-windows-8-vdi-optimization-script-courtesy-of-pfe.aspx)
+-   [Optimization Script: (Provided by Microsoft Support)](https://blogs.technet.com/b/jeff_stokes/archive/2013/04/09/hot-off-the-presses-get-it-now-the-windows-8-vdi-optimization-script-courtesy-of-pfe.aspx)
 
 ## Sequencing Steps to Optimize Packages for Publishing Performance
 
@@ -735,7 +735,7 @@ The following terms are used when describing concepts and actions related to App
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
