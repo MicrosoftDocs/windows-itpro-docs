@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.date: 04/17/2018
+ms.date: 04/18/2018
 ms.localizationpriority: high
 ---
 
@@ -177,11 +177,11 @@ Outdated applications can cause problems with a Windows upgrade. Removing old or
 
 If you plan to reinstall the application later, be sure that you have the installation media and all required activation information before removing it.
 
-To remove programs, use the same steps as are provided [above](#uninstall-non-microsoft-antivirus-software) for uninstalling non-Microsoft antivirus software, but instead of removing the antivirus application repeat the steps for all of your non-essential, unused, or out-of-date software.
+To remove programs, use the same steps as are provided [above](#uninstall-non-microsoft-antivirus-software) for uninstalling non-Microsoft antivirus software, but instead of removing the antivirus application repeat the steps for all your non-essential, unused, or out-of-date software.
 
 ### Update firmware and drivers
 
-Updating firmware (such as the BIOS) and installing hardware drivers is a somewhat advanced task.  Do not attempt to update BIOS if you aren't familiar with BIOS settings or are not sure how to restore the previous BIOS version if there are problems. Most BIOS updates are provided as a "flash" update. You manufacturer might provide a tool to perform the update, or you might be required to enter the BIOS and update it manually. Be sure to save your working BIOS settings, since some updates can reset your configuration and make the computer fail to boot if (for example) a RAID configuration is changed.
+Updating firmware (such as the BIOS) and installing hardware drivers is a somewhat advanced task.  Do not attempt to update BIOS if you aren't familiar with BIOS settings or are not sure how to restore the previous BIOS version if there are problems. Most BIOS updates are provided as a "flash" update. Your manufacturer might provide a tool to perform the update, or you might be required to enter the BIOS and update it manually. Be sure to save your working BIOS settings, since some updates can reset your configuration and make the computer fail to boot if (for example) a RAID configuration is changed.
 
 Most BIOS and other hardware updates can be obtained from a website maintained by your computer manufacturer. For example, Microsoft Surface device drivers can be obtained at: [Download the latest firmware and drivers for Surface devices](https://docs.microsoft.com/en-us/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices).
 
@@ -211,19 +211,19 @@ To free up additional space on the system drive, begin by running Disk Cleanup. 
 
 ![Disk cleanup](../images/cleanup.png)
 
-For instructions to run Disk Cleanup and other suggestions to free up hard drive space, see [Tips to free up drive space on your PC](https://support.microsoft.com/en-us/help/17421/windows-free-up-drive-space#delete-files-using-disk-cleanup=windows-8).
+For instructions to run Disk Cleanup and other suggestions to free up hard drive space, see [Tips to free up drive space on your PC](https://support.microsoft.com/en-us/help/17421/windows-free-up-drive-space).
 
 When you run Disk Cleanup and enable the option to Clean up system files, you can remove previous Windows installations which can free a large amount of space. You should only do this if you do not plan to restore the old OS version. 
 
 ### Open an elevated command prompt
 
-To launch an elevated command prompt, press the Windows key on your keyboard, type **cmd**, press Ctrl+Shift+Enter, and then Alt+C to confirm the elevation prompt. Screenshots and other steps to open an administrator (aka elevevated) command prompt are [here](https://answers.microsoft.com/en-us/windows/forum/windows_7-security/command-prompt-admin-windows-7/6a188166-5e23-461f-b468-f325688ec8c7). 
+To launch an elevated command prompt, press the Windows key on your keyboard, type **cmd**, press Ctrl+Shift+Enter, and then Alt+C to confirm the elevation prompt. Screenshots and other steps to open an administrator (aka elevated) command prompt are [here](https://answers.microsoft.com/en-us/windows/forum/windows_7-security/command-prompt-admin-windows-7/6a188166-5e23-461f-b468-f325688ec8c7). 
 
 Note: When you open an elevated command prompt, you will usually start in the **C:\WINDOWS\system32** directory. To run a program that you recently downloaded, you must change to the directory where the program is located. Alternatively, you can move or copy the program to a location on the computer that is automatically searched. These directories are listed in the [PATH variable](https://answers.microsoft.com/en-us/windows/forum/windows_10-other_settings-winpc/adding-path-variable/97300613-20cb-4d85-8d0e-cc9d3549ba23).
 
 If this is too complicated for you, then use File Explorer to create a new folder under C: with a short name such as "new" then copy or move the programs you want to run (like SetupDiag) to this folder using File Explorer. When you open an elevated command prompt, change to this directory by typing "cd c:\new" and now you can run the programs in that folder.
 
-If you downloaded the SetupDiag.exe program to your computer, then copied it to the folder C:\new, and you opened an elevated command prompt then typed cd c:\new to change to this directory, you can just type setupdiag and press ENTER to run the program. This program will analyze the files on your computer to see why a Windows Upgrade failed and if the reason was a common one, it will report this reason. It will not fix the problem for you, but knowing why the upgrade failed enables you to take steps to fix the problem.
+If you downloaded the SetupDiag.exe program to your computer, then copied it to the folder C:\new, and you opened an elevated command prompt then typed cd c:\new to change to this directory, you can just type setupdiag and press ENTER to run the program. This program will analyze the files on your computer to see why a Windows Upgrade failed and if the reason was a common one, it will report this reason. It will not fix the problem for you but knowing why the upgrade failed enables you to take steps to fix the problem.
 
 ## Related topics
 
