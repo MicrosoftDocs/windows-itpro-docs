@@ -50,3 +50,9 @@ No, the entire service is powered by Windows diagnostic data, which requires tha
 
 ### Can I choose the data center location?
 Yes for Azure Log Analytics, but no for the Microsoft Data Management Service (which is hosted in the US).
+
+### How does Windows Analytics support the GDPR?
+Windows Analytics support for the GDPR is built on top of the underlying Windows and Azure Log Analytics support. Corporate owned devices enrolled into Windows Analytics have some of their diagnostic data copied from the Windows diagnostic data management service to IT’s Azure Log Analytics workspace. As a result, deleting all copies of the diagnostic data requires using more than one method. In particular, if a user uses the Delete diagnostic data setting on a device that their IT department has enrolled in Windows Analytics, then the user should also ask their IT department to delete the copy of the data that they have in Azure Log Analytics using the [purge API](https://docs.microsoft.com/rest/api/loganalytics/workspaces%202015-03-20/purge). The other direction is also true.
+
+For more information about how Windows, Windows Analytics and Azure Log Analytics support Data Subject Requests under the GDPR, see [GDPR: Data Subject Requests](https://servicetrust.microsoft.com/ViewPage/GDPRDSR).
+
