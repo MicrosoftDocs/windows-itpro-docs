@@ -178,6 +178,7 @@ Use video to create a project summary.
 Check out this use case video of the Photos team partnering with the Bureau Of Fearless Ideas in Seattle to bring the Photos app to local middle school students: <a href="https://www.youtube.com/watch?v=0dFFAu6XwPg" target="_blank">https://www.youtube.com/watch?v=0dFFAu6XwPg</a>
 </br>
 </br>
+</br>
 
 ![Further collaborate and problem solve with Minecraft: Education Edition](images/edu-TIB-setp-5-jump.png) 
 ## <a name="edu-task6"></a>6. Get kids to further collaborate and problem solve
