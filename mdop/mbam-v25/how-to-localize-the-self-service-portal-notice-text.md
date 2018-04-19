@@ -61,7 +61,7 @@ If an end user’s browser is set to a language that does not have a correspondi
 
     The name of the Language folder can also be the language neutral name **es** instead of **es-es**. If the end user’s browser is set to **es-es** and that folder does not exist, the parent locale (as defined in .NET) is recursively retrieved and checked, resolving to &lt;MBAM Self-Service Install Directory&gt;\\SelfServiceWebsite\\es\\Notice.txt before finally becoming the default Notice.txt file. This recursive fallback mimics the .NET resource loading rules.
 
-    **Got a suggestion for MBAM**? Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). **Got a MBAM issue**? Use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
+
 
 ## Related topics
 
@@ -70,7 +70,9 @@ If an end user’s browser is set to a language that does not have a correspondi
 
  
 
- 
+## Got a suggestion for MBAM?
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam). 
 
 
 

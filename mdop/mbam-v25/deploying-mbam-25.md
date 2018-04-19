@@ -82,9 +82,8 @@ Use this information to identify the procedures you can follow to deploy and con
 [Deploying MBAM 2.5 in a stand-alone configuration](https://support.microsoft.com/kb/3046555)
 
 ## Got a suggestion for MBAM?
-
-
-Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
  
 
