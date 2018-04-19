@@ -89,9 +89,8 @@ Microsoft Support Services are subject to the prices, terms, and conditions in p
 For more information about how accessible technology for computers helps to improve the lives of people with disabilities, see the [Microsoft Accessibility website](https://go.microsoft.com/fwlink/?linkid=8431).
 
 ## Got a suggestion for MBAM?
-
-
-Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 ## Related topics
 

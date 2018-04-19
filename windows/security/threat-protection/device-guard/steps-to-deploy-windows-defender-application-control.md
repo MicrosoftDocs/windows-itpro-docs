@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 author: brianlic-msft
-ms.date: 04/17/2018
+ms.date: 04/18/2018
 ---
 
 # Steps to Deploy Windows Defender Application Control
@@ -15,7 +15,8 @@ ms.date: 04/17/2018
 -   Windows 10
 -   Windows Server 2016
 
-For an overview of the process described in the following procedures, see [Deploy Windows Defender Application Control: policy rules and file rules](deploy-windows-defender-application-control-policy-rules-and-file-rules.md). To understand how the deployment of Windows Defender Application Control (WDAC) fits with other steps in the Windows Defender Device Guard deployment process, see [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
+For an overview of the process described in the following procedures, see [Deploy Windows Defender Application Control: policy rules and file rules](deploy-windows-defender-application-control-policy-rules-and-file-rules.md). 
+
 
 ## Create a Windows Defender Application Control policy from a reference computer
 
