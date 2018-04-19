@@ -32,6 +32,9 @@ These phases are explained in greater detail [below](#the-windows-10-upgrade-pro
 
     Since the computer is booted into Windows PE during the SafeOS phase, a useful troubleshooting technique is to boot into [Windows PE](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-intro) using installation media. You can use the [media creation tool](https://www.microsoft.com/software-download/windows10) to create bootable media, or you can use tools such as the [Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit), and then boot your device from this media to test for hardware and firmware compatibility issues.
 
+    >[!TIP]
+    >If you attempt to use the media creation tool with a USB drive and this fails with error 0x80004005 - 0xa001a, this is because the USB drive is using GPT partition style. The tool requires that you use MBR partition style. You can use the DISKPART command to convert the USB drive from GPT to MBR. For more information, see [Change a GUID Partition Table Disk into a Master Boot Record Disk](https://go.microsoft.com/fwlink/?LinkId=207050).
+
     **Do not proceed with the Windows 10 installation after booting from this media**. This method can only be used to perform a clean install which will not migrate any of your apps and settings, and you will be required re-enter your Windows 10 license information.
 
     If the computer does not successfully boot into Windows PE using the media that you created, this is likely due to a hardware or firmware issue. Check with your hardware manufacturer and apply any recommended BIOS and firmware updates. If you are still unable to boot to installation media after applying updates, disconnect or replace legacy hardware.

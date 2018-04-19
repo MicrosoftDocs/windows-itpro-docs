@@ -63,9 +63,9 @@ To set the time zone:
 To apply different date formats for Windows Defender ATP, use regional settings for Internet Explorer (IE) and Microsoft Edge (Edge). If you're using another browser such as Google Chrome, follow the required steps to change the time and date settings for that browser. 
 
 
-**Internet Explorer (IE) and Microsoft Edge (Edge)**
+**Internet Explorer (IE) and Microsoft Edge**
 
-IE and Edge use the **Region** settings configured in the **Clocks, Language, and Region** option in the Control panel. 
+IE and Microsoft Edge use the **Region** settings configured in the **Clocks, Language, and Region** option in the Control panel. 
 
 
 #### Known issues with regional formats

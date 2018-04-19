@@ -16,13 +16,13 @@ ms.localizationpriority: high
 **Applies to**
 -   Windows 10
 
-Windows AutoPilot Deployment Program simplifies device set up for IT Admins. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
+Windows AutoPilot simplifies device set up for IT Admins. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
 Watch this video to learn more about Windows AutoPilot in Micrsoft Store for Business. </br>
 
 > [!video https://www.microsoft.com/en-us/videoplayer/embed/3b30f2c2-a3e2-4778-aa92-f65dbc3ecf54?autoplay=false]
 
-## What is Windows AutoPilot Deployment Program?
+## What is Windows AutoPilot?
 In Microsoft Store for Business, you can manage devices for your organization and apply an *AutoPilot deployment profile* to your devices. When people in your organization run the out-of-box experience on the device, the profile configures Windows based on the AutoPilot deployment profile you applied to the device. 
 
 You can create and apply AutoPilot deployment profiles to these devices. The overall process looks like this. 
@@ -65,7 +65,7 @@ To manage devices through Microsoft Store for Business and Education, you'll nee
 ### Device information file format
 Columns in the device information file need to use this naming and be in this order:
 - Column A: Device Serial Number
-- Column B: Windows Product ID 
+- Column B: Windows Product ID (optional, typically blank)
 - Column C: Hardware Hash
 
 Here's a sample device information file:

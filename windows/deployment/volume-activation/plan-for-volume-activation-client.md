@@ -31,8 +31,8 @@ ms.date: 09/27/2017
 
 During the activation process, information about the specific installation is examined. In the case of online activations, this information is sent to a server at Microsoft. This information may include the software version, the product key, the IP address of the computer, and information about the device. The activation methods that Microsoft uses are designed to help protect user privacy, and they cannot be used to track back to the computer or user. The gathered data confirms that the software is a legally licensed copy, and this data is used for statistical analysis. Microsoft does not use this information to identify or contact the user or the organization.
 
-**Note**  
-The IP address is used only to verify the location of the request, because some editions of Windows (such as “Starter” editions) can only be activated within certain geographical target markets.
+>[!NOTE] 
+>The IP address is used only to verify the location of the request, because some editions of Windows (such as “Starter” editions) can only be activated within certain geographical target markets.
 
 ## Distribution channels and activation
 
@@ -185,7 +185,7 @@ When you know which keys you need, you must obtain them. Generally speaking, vol
 
 ### KMS host keys
 
-A KMS host needs a key that activates, or authenticates, the KMS host with Microsoft. This key is usually referred to as the *KMS host key*, but it is formally known as a *Microsoft Customer Support Volume License Key* (CSVLK). Most documentation and Internet references earlier than Windows 8.1 use the term KMS key, but CSVLK is becoming more common in current documentation and management tools.
+A KMS host needs a key that activates, or authenticates, the KMS host with Microsoft. This key is usually referred to as the *KMS host key*, but it is formally known as a *Microsoft Customer Specific Volume License Key* (CSVLK). Most documentation and Internet references earlier than Windows 8.1 use the term KMS key, but CSVLK is becoming more common in current documentation and management tools.
 
 A KMS host running Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2 can activate both Windows Server and Windows client operating systems. A KMS host key is also needed to create the activation objects in AD DS, as described later in this guide. You will need a KMS host key for any KMS that you want to set up and if you are going to use Active Directory-based activation.
 
