@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot Windows Defender ATP onboarding issues
-description: Troubleshoot issues that might arise during the onboarding of endpoints or to the Windows Defender ATP service.
+description: Troubleshoot issues that might arise during the onboarding of machines or to the Windows Defender ATP service.
 keywords: troubleshoot onboarding, onboarding issues, event viewer, data collection and preview builds, sensor data and diagnostics
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 11/21/2017
+ms.date: 04/17/2018
 ---
 
 # Troubleshoot Windows Defender Advanced Threat Protection onboarding issues
@@ -25,37 +25,37 @@ ms.date: 11/21/2017
 - Windows Server 2012 R2
 - Windows Server 2016
 
-
+[!include[Prerelease information](prerelease.md)]
 
 You might need to troubleshoot the Windows Defender ATP onboarding process if you encounter issues.
-This page provides detailed steps to troubleshoot onboarding issues that might occur when deploying with one of the deployment tools and common errors that might occur on the endpoints.
+This page provides detailed steps to troubleshoot onboarding issues that might occur when deploying with one of the deployment tools and common errors that might occur on the machines.
 
-If you have completed the endpoint onboarding process and don't see endpoints in the [Machines list](investigate-machines-windows-defender-advanced-threat-protection.md) after an hour, it might indicate an endpoint onboarding or connectivity problem.
+If you have completed the onboarding process and don't see machines in the [Machines list](investigate-machines-windows-defender-advanced-threat-protection.md) after an hour, it might indicate an onboarding or connectivity problem.
 
 ## Troubleshoot onboarding when deploying with Group Policy
-Deployment with Group Policy is done by running the onboarding script on the endpoints.  The Group Policy console does not indicate if the deployment has succeeded or not.
+Deployment with Group Policy is done by running the onboarding script on the machines.  The Group Policy console does not indicate if the deployment has succeeded or not.
 
-If you have completed the endpoint onboarding process and don't see endpoints in the [Machines list](investigate-machines-windows-defender-advanced-threat-protection.md) after an hour, you can check the output of the script on the endpoints. For more information, see [Troubleshoot onboarding when deploying with a script on the endpoint](#troubleshoot-onboarding-when-deploying-with-a-script-on-the-endpoint).
+If you have completed the onboarding process and don't see machines in the [Machines list](investigate-machines-windows-defender-advanced-threat-protection.md) after an hour, you can check the output of the script on the machines. For more information, see [Troubleshoot onboarding when deploying with a script](#troubleshoot-onboarding-when-deploying-with-a-script).
 
-If the script completes successfully, see [Troubleshoot onboarding issues on the endpoint](#troubleshoot-onboarding-issues-on-the-endpoint) for additional errors that might occur.
+If the script completes successfully, see [Troubleshoot onboarding issues](#troubleshoot-onboarding-issues) for additional errors that might occur.
 
 ## Troubleshoot onboarding issues when deploying with System Center Configuration Manager
-When onboarding endpoints using the following versions of System Center Configuration Manager:
+When onboarding machines using the following versions of System Center Configuration Manager:
 - System Center 2012 Configuration Manager
 - System Center 2012 R2 Configuration Manager
 - System Center Configuration Manager (current branch) version 1511
 - System Center Configuration Manager (current branch) version 1602
 
 
-Deployment with the above-mentioned versions of System Center Configuration Manager is done by running the onboarding script on the endpoints. You can track the deployment in the Configuration Manager Console.
+Deployment with the above-mentioned versions of System Center Configuration Manager is done by running the onboarding script on the machines. You can track the deployment in the Configuration Manager Console.
 
-If the deployment fails, you can check the output of the script on the endpoints.
+If the deployment fails, you can check the output of the script on the machines.
 
-If the onboarding completed successfully but the endpoints are not showing up in the **Machines list** after an hour, see [Troubleshoot onboarding issues on the endpoint](#troubleshoot-onboarding-issues-on-the-endpoint) for additional errors that might occur.
+If the onboarding completed successfully but the machines are not showing up in the **Machines list** after an hour, see [Troubleshoot onboarding issues](#troubleshoot-onboarding-issues) for additional errors that might occur.
 
-## Troubleshoot onboarding when deploying with a script on the endpoint
+## Troubleshoot onboarding when deploying with a script
 
-**Check the result of the script on the endpoint**:
+**Check the result of the script on the machine**:
 1. Click **Start**, type **Event Viewer**, and press **Enter**.
 
 2. Go to **Windows Logs** > **Application**.
@@ -70,17 +70,17 @@ Event ID | Error Type | Resolution steps
 :---|:---|:---
 5 | Offboarding data was found but couldn't be deleted | Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```.
 10 | Onboarding data couldn't be written to registry |  Check the permissions on the registry, specifically<br> ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat```.<br>Verify that the script was ran as an administrator.
-15 |  Failed to start SENSE service |Check the service health (```sc query sense``` command). Make sure it's not in an intermediate state (*'Pending_Stopped'*, *'Pending_Running'*) and try to run the script again (with administrator rights). <br> <br> If the endpoint is running Windows 10, version 1607 and running the command `sc query sense` returns `START_PENDING`, reboot the machine. If rebooting the machine doesn't address the issue, upgrade to KB4015217 and try onboarding again.
+15 |  Failed to start SENSE service |Check the service health (```sc query sense``` command). Make sure it's not in an intermediate state (*'Pending_Stopped'*, *'Pending_Running'*) and try to run the script again (with administrator rights). <br> <br> If the machine is running Windows 10, version 1607 and running the command `sc query sense` returns `START_PENDING`, reboot the machine. If rebooting the machine doesn't address the issue, upgrade to KB4015217 and try onboarding again.
 15 | Failed to start SENSE service | If the message of the error is: System error 577 has occurred. You need to enable the Windows Defender Antivirus ELAM driver, see [Ensure that Windows Defender Antivirus is not disabled by a policy](#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy) for instructions.
-30 |  The script failed to wait for the service to start running | The service could have taken more time to start or has encountered errors while trying to start. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md).
-35 |  The script failed to find needed onboarding status registry value | When the SENSE service starts for the first time, it writes onboarding status to the registry location<br>```HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status```.<br>The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md).
-40 | SENSE service onboarding status is not set to **1** | The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md).
+30 |  The script failed to wait for the service to start running | The service could have taken more time to start or has encountered errors while trying to start. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md).
+35 |  The script failed to find needed onboarding status registry value | When the SENSE service starts for the first time, it writes onboarding status to the registry location<br>```HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status```.<br>The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md).
+40 | SENSE service onboarding status is not set to **1** | The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md).
 65 | Insufficient privileges| Run the script again with administrator privileges.
 
 ## Troubleshoot onboarding issues using Microsoft Intune
 You can use Microsoft Intune to check error codes and attempt to troubleshoot the cause of the issue.
 
-If you have configured policies in Intune and they are not propagated on endpoints, you might need to configure automatic MDM enrollment. For more information, see the [Configure automatic MDM enrollment](https://go.microsoft.com/fwlink/?linkid=829597) section.
+If you have configured policies in Intune and they are not propagated on machines, you might need to configure automatic MDM enrollment. For more information, see the [Configure automatic MDM enrollment](https://go.microsoft.com/fwlink/?linkid=829597) section.
 
 Use the following tables to understand the possible causes of issues while onboarding:
 
@@ -88,14 +88,14 @@ Use the following tables to understand the possible causes of issues while onboa
 - Known issues with non-compliance table
 - Mobile Device Management (MDM) event logs table
 
-If none of the event logs and troubleshooting steps work, download the Local script from the **Endpoint management** section of the portal, and run it in an elevated command prompt.  
+If none of the event logs and troubleshooting steps work, download the Local script from the **Machine management** section of the portal, and run it in an elevated command prompt.  
 
 **Microsoft Intune error codes and OMA-URIs**:
 
 
 Error Code Hex | Error Code Dec | Error Description | OMA-URI | Possible cause and troubleshooting steps
 :---|:---|:---|:---|:---
-0x87D1FDE8 | -2016281112 | Remediation failed | Onboarding <br> Offboarding | **Possible cause:** Onboarding or offboarding failed on a wrong blob: wrong signature or missing PreviousOrgIds fields. <br><br> **Troubleshooting steps:** <br> Check the event IDs in the [View agent onboarding errors in the endpoint event log](#view-agent-onboarding-errors-in-the-endpoint-event-log) section. <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
+0x87D1FDE8 | -2016281112 | Remediation failed | Onboarding <br> Offboarding | **Possible cause:** Onboarding or offboarding failed on a wrong blob: wrong signature or missing PreviousOrgIds fields. <br><br> **Troubleshooting steps:** <br> Check the event IDs in the [View agent onboarding errors in the machine event log](#view-agent-onboarding-errors-in-the-endpoint-event-log) section. <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
  | | | | Onboarding <br> Offboarding <br> SampleSharing | **Possible cause:** Windows Defender ATP Policy registry key does not exist or the OMA DM client doesn't have permissions to write to it. <br><br> **Troubleshooting steps:** Ensure that the following registry key exists: ```HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection``` <br> <br> If it doesn't exist, open an elevated command and add the key.
  | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **Possible cause:** An attempt to remediate by read-only property. Onboarding has failed. <br><br> **Troubleshooting steps:** Check the troubleshooting steps in [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](#troubleshoot-windows-defender-advanced-threat-protection-onboarding-issues). <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
  || | | All | **Possible cause:** Attempt to deploy Windows Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently is supported platforms:  Enterprise, Education, and Professional. <br> Server is not supported.
@@ -125,16 +125,16 @@ ID | Severity | Event description | Troubleshooting steps
 :---|:---|:---|:---
 1819 | Error | Windows Defender Advanced Threat Protection CSP: Failed to Set Node's Value. NodeId: (%1), TokenName: (%2), Result: (%3). | Download the [Cumulative Update for Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).
 
-## Troubleshoot onboarding issues on the endpoint
-If the deployment tools used does not indicate an error in the onboarding process, but endpoints are still not appearing in the machines list in an hour, go through the following verification topics to check if an error occurred with the Windows Defender ATP agent:
-- [View agent onboarding errors in the endpoint event log](#view-agent-onboarding-errors-in-the-endpoint-event-log)
+## Troubleshoot onboarding issues on the machine
+If the deployment tools used does not indicate an error in the onboarding process, but machines are still not appearing in the machines list in an hour, go through the following verification topics to check if an error occurred with the Windows Defender ATP agent:
+- [View agent onboarding errors in the machine event log](#view-agent-onboarding-errors-in-the-endpoint-event-log)
 - [Ensure the diagnostic data service is enabled](#ensure-the-diagnostics-service-is-enabled)
 - [Ensure the service is set to start](#ensure-the-service-is-set-to-start)
-- [Ensure the endpoint has an Internet connection](#ensure-the-endpoint-has-an-internet-connection)
+- [Ensure the machine has an Internet connection](#ensure-the-endpoint-has-an-internet-connection)
 - [Ensure that Windows Defender Antivirus is not disabled by a policy](#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)
 
 
-### View agent onboarding errors in the endpoint event log
+### View agent onboarding errors in the machine event log
 
 1. Click **Start**, type **Event Viewer**, and press **Enter**.
 
@@ -155,16 +155,16 @@ If the deployment tools used does not indicate an error in the onboarding proces
 
 Event ID | Message | Resolution steps
 :---|:---|:---
-5 | Windows Defender Advanced Threat Protection service failed to connect to the server at _variable_ | [Ensure the endpoint has Internet access](#ensure-the-endpoint-has-an-internet-connection).
-6 | Windows Defender Advanced Threat Protection service is not onboarded and no onboarding parameters were found. Failure code: _variable_ | [Run the onboarding script again](configure-endpoints-windows-defender-advanced-threat-protection.md).
-7 |  Windows Defender Advanced Threat Protection service failed to read the onboarding parameters. Failure code: _variable_ | [Ensure the endpoint has Internet access](#ensure-the-endpoint-has-an-internet-connection), then run the entire onboarding process again.
-9 | Windows Defender Advanced Threat Protection service failed to change its start type. Failure code: variable | If the event happened during onboarding, reboot and re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-windows-defender-advanced-threat-protection.md). <br><br>If the event happened during offboarding, contact support.
-10 | Windows Defender Advanced Threat Protection service failed to persist the onboarding information. Failure code: variable | If the event happened during onboarding, re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-windows-defender-advanced-threat-protection.md). <br><br>If the problem persists, contact support.
-15 | Windows Defender Advanced Threat Protection cannot start command channel with URL: _variable_ | [Ensure the endpoint has Internet access](#ensure-the-endpoint-has-an-internet-connection).
-17 | Windows Defender Advanced Threat Protection service failed to change the Connected User Experiences and Telemetry service location. Failure code: variable | [Run the onboarding script again](configure-endpoints-windows-defender-advanced-threat-protection.md). If the problem persists, contact support.
+5 | Windows Defender Advanced Threat Protection service failed to connect to the server at _variable_ | [Ensure the machine has Internet access](#ensure-the-endpoint-has-an-internet-connection).
+6 | Windows Defender Advanced Threat Protection service is not onboarded and no onboarding parameters were found. Failure code: _variable_ | [Run the onboarding script again](configure-endpoints-script-windows-defender-advanced-threat-protection.md).
+7 |  Windows Defender Advanced Threat Protection service failed to read the onboarding parameters. Failure code: _variable_ | [Ensure the machine has Internet access](#ensure-the-endpoint-has-an-internet-connection), then run the entire onboarding process again.
+9 | Windows Defender Advanced Threat Protection service failed to change its start type. Failure code: variable | If the event happened during onboarding, reboot and re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-script-windows-defender-advanced-threat-protection.md). <br><br>If the event happened during offboarding, contact support.
+10 | Windows Defender Advanced Threat Protection service failed to persist the onboarding information. Failure code: variable | If the event happened during onboarding, re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-script-windows-defender-advanced-threat-protection.md). <br><br>If the problem persists, contact support.
+15 | Windows Defender Advanced Threat Protection cannot start command channel with URL: _variable_ | [Ensure the machine has Internet access](#ensure-the-endpoint-has-an-internet-connection).
+17 | Windows Defender Advanced Threat Protection service failed to change the Connected User Experiences and Telemetry service location. Failure code: variable | [Run the onboarding script again](configure-endpoints-script-windows-defender-advanced-threat-protection.md). If the problem persists, contact support.
 25 | Windows Defender Advanced Threat Protection service failed to reset health status in the registry. Failure code: _variable_ | Contact support.
 27 | Failed to enable Windows Defender Advanced Threat Protection mode in Windows Defender. Onboarding process failed. Failure code: variable | Contact support.
-29 | Failed to read the offboarding parameters. Error type: %1, Error code: %2, Description: %3 | Ensure the endpoint has Internet access, then run the entire offboarding process again.
+29 | Failed to read the offboarding parameters. Error type: %1, Error code: %2, Description: %3 | Ensure the machine has Internet access, then run the entire offboarding process again.
 30 | Failed to disable $(build.sense.productDisplayName) mode in Windows Defender Advanced Threat Protection. Failure code: %1 | Contact support.
 32 | $(build.sense.productDisplayName) service failed to request to stop itself after offboarding process. Failure code: %1 | Verify that the service start type is manual and reboot the machine.
 55 | Failed to create the Secure ETW autologger. Failure code: %1	| Reboot the machine.
@@ -174,11 +174,11 @@ Event ID | Message | Resolution steps
 69 |	The service is stopped. Service name: %1	| Start the mentioned service. Contact support if persists.
 
 <br>
-There are additional components on the endpoint that the Windows Defender ATP agent depends on to function properly. If there are no onboarding related errors in the Windows Defender ATP agent event log, proceed with the following steps to ensure that the additional components are configured correctly.
+There are additional components on the machine that the Windows Defender ATP agent depends on to function properly. If there are no onboarding related errors in the Windows Defender ATP agent event log, proceed with the following steps to ensure that the additional components are configured correctly.
 
 <span id="ensure-the-diagnostics-service-is-enabled" />
 ### Ensure the diagnostic data service is enabled
-If the endpoints aren't reporting correctly, you might need to check that the Windows 10 diagnostic data service is set to automatically start and is running on the endpoint. The service might have been disabled by other programs or user configuration changes.
+If the machines aren't reporting correctly, you might need to check that the Windows 10 diagnostic data service is set to automatically start and is running on the machine. The service might have been disabled by other programs or user configuration changes.
 
 First, you should check that the service is set to start automatically when Windows starts, then you should check that the service is currently running (and start it if it isn't).
 
@@ -186,7 +186,7 @@ First, you should check that the service is set to start automatically when Wind
 
 **Use the command line to check the Windows 10 diagnostic data service startup type**:
 
-1.  Open an elevated command-line prompt on the endpoint:
+1.  Open an elevated command-line prompt on the machine:
 
   a.  Click **Start**, type **cmd**, and press **Enter**.
 
@@ -207,7 +207,7 @@ First, you should check that the service is set to start automatically when Wind
 
 **Use the command line to set the Windows 10 diagnostic data service to automatically start:**
 
-1.  Open an elevated command-line prompt on the endpoint:
+1.  Open an elevated command-line prompt on the machine:
 
   a.  Click **Start**, type **cmd**, and press **Enter**.
 
@@ -233,7 +233,7 @@ First, you should check that the service is set to start automatically when Wind
   sc start diagtrack
   ```
 
-### Ensure the endpoint has an Internet connection
+### Ensure the machine has an Internet connection
 
 The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Windows Defender ATP service.
 
@@ -248,7 +248,7 @@ If the verification fails and your environment is using a proxy to connect to th
 
 **Symptom**: Onboarding successfully completes, but you see error 577 when trying to start the service.
 
-**Solution**: If your endpoints are running a third-party antimalware client, the Windows Defender ATP agent needs the Windows Defender Early Launch Antimalware (ELAM) driver to be enabled. You must ensure that it's not disabled in system policy.
+**Solution**: If your machines are running a third-party antimalware client, the Windows Defender ATP agent needs the Windows Defender Early Launch Antimalware (ELAM) driver to be enabled. You must ensure that it's not disabled in system policy.
 
 - Depending on the tool that you use to implement policies, you'll need to verify that the following Windows Defender policies are cleared:
 
@@ -259,7 +259,7 @@ If the verification fails and your environment is using a proxy to connect to th
 
   - ```<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiSpyware"/></Key>```
   - ```<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiSpyware"/></Key>```
--  After clearing the policy, run the onboarding steps again on the endpoint.
+-  After clearing the policy, run the onboarding steps again.
 
 - You can also check the following registry key values to verify that the policy is disabled:
 
@@ -273,7 +273,7 @@ If the verification fails and your environment is using a proxy to connect to th
 If you encounter issues while onboarding a server, go through the following verification steps to address possible issues.
 
 - [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints-windows-defender-advanced-threat-protection.md#server-mma)
-- [Ensure that the server endpoint proxy and Internet connectivity settings are configured properly](configure-server-endpoints-windows-defender-advanced-threat-protection.md#server-proxy)
+- [Ensure that the server proxy and Internet connectivity settings are configured properly](configure-server-endpoints-windows-defender-advanced-threat-protection.md#server-proxy)
 
 You might also need to check the following:
 - Check that there is a Windows Defender Advanced Threat Protection Service running in the **Processes** tab in **Task Manager**. For example:
@@ -308,5 +308,5 @@ For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us
 
 ## Related topics
 - [Troubleshoot Windows Defender ATP](troubleshoot-windows-defender-advanced-threat-protection.md)
-- [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
-- [Configure endpoint proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
+- [Configure machine proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
