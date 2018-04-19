@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 09/06/2017
+ms.date: 04/23/2018
 ---
 
 # Workplace (reference)
@@ -19,7 +19,7 @@ Use Workplace settings to configure bulk user enrollment to a mobile device mana
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [Enrollments](#enrollments) | X | X | X | X | X  |
+| [Enrollments](#enrollments) | X | X | X |  | X  |
 
 ## Enrollments
 

@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 09/14/2017
+ms.date: 04/23/2018
 ---
 
 # AssignedAccess (Windows Configuration Designer reference)
@@ -19,7 +19,7 @@ Use this setting to configure single use (kiosk) devices.
 | Setting | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
 | [AssignedAccessSettings](#assignedaccesssettings)  | X |  |  | X |  |
-| [MultiAppAssignedAccessSettings](#multiappassignedaccesssettings) | X |  |  |  |  |
+| [MultiAppAssignedAccessSettings](#multiappassignedaccesssettings) | X |  |  | X |  |
 
 
 ## AssignedAccessSettings
@@ -39,7 +39,7 @@ Enter the account and the application you want to use for Assigned access, using
 
 Use this setting to configure a kiosk device that runs more than one app.
 
-1. [Create an assigned access configuration XML file for multiple apps.](../lock-down-windows-10-to-specific-apps.md)
+1. Create an assigned access configuration XML file for multiple apps [(desktop](../lock-down-windows-10-to-specific-apps.md) or [HoloLens)](https://docs.microsoft.com/hololens/hololens-provisioning).
 2. In Windows Configuration Designer, select **MultiAppAssignedAccessSettings**.
 3. Browse to and select the assigned access configuration XML file.
 

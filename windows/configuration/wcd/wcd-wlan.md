@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 09/06/2017
+ms.date: 04/23/2018
 ---
 
 # WLAN (reference)
@@ -20,5 +20,5 @@ Do not use at this time. Instead, use [ConnectivityProfiles > WLAN](wcd-connecti
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All settings |  |  |  | X |   |
+| All settings |  |  |  |  |   |
 

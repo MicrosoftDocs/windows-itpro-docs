@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
-ms.date: 03/30/2018
+ms.date: 04/23/2018
 ---
 
 # Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education
@@ -29,7 +29,7 @@ Some desktop devices in an enterprise serve a special purpose, such as a PC in t
 **Which type of app will your kiosk run?** Your kiosk can run a Universal Windows Platform (UWP) app or a Classic Windows desktop application. When the kiosk account signs in, the kiosk app will launch automatically. If the kiosk app is closed, it will automatically restart.
 
 >[!TIP]
->For **digital signage**, simply select a digital sign player as your kiosk app. 
+>For **digital signage**, simply select a digital sign player as your kiosk app. You can also use the **Kiosk Browser** app ([new in Windows 10, version 1803)](guidelines-for-assigned-access-app.md#guidelines-for-web-browsers) and configure it to show your online content.
 
 **Which type of user account will be the kiosk account?** The kiosk account can be a local standard user account, a local administrator account, a domain account, or an Azure Active Directory (Azure AD) account, depending on the method that you use to configure the kiosk. 
 
@@ -142,8 +142,7 @@ If you do not want the kiosk account signed in automatically when the device res
 
 To remove assigned access, choose **Turn off assigned access and sign out of the selected account**.
 
->[!NOTE]  
->Single-app kiosk configuration using assigned access does not work on a device that is connected to more than one monitor.
+
 
 
 <span id="powershell"/>
@@ -201,6 +200,10 @@ Clear-AssignedAccess
 >
 >Account type: Local standard user 
 
+>[!IMPORTANT]
+>When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature does not work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows}(https://support.microsoft.com/help/324737/how-to-turn-on-automatic-logon-in-windows).
+
+Edit the registry to have an account automatically logged on.
 When you use the **Provision kiosk devices** wizard in Windows Configuration Designer, you can configure the kiosk to run either a Universal Windows app or a Classic Windows application.
 
 >[!IMPORTANT]
@@ -225,6 +228,9 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
 
 >[!NOTE]
 >If you want to use [the advanced editor in Windows Configuration Designer](provisioning-packages/provisioning-create-package.md#configure-settings), specify the user account and app (by AUMID) in **Runtime settings** &gt; **AssignedAccess** &gt; **AssignedAccessSettings**
+
+>[!TIP]
+>You can also use [an XML file to configure both multi-app and single-app kiosks.](lock-down-windows-10-to-specific-apps.md)
 
 
 
@@ -281,6 +287,8 @@ The following steps explain how to configure a kiosk in Microsoft Intune. For ot
 Using Shell Launcher, you can configure a kiosk device that runs a Classic Windows application as the user interface. The application that you specify replaces the default shell (explorer.exe) that usually runs when a user logs on.
 
 >[!NOTE]
+>In Windows 10, version 1803, you can configure Shell Launcher using the **ShellLauncher** node of the [Assigned Access CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/assignedaccess-csp).
+>
 >You can also configure a kiosk device that runs a Classic Windows application by using the [Provision kiosk devices wizard](#wizard).
 
 >[!WARNING]

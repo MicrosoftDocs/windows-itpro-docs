@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 09/06/2017
+ms.date: 04/23/2018
 ---
 
 # CountryAndRegion (Windows Configuration Designer reference)
@@ -18,6 +18,6 @@ Use to configure a setting that partners must customize to ship Windows devices 
 
 | Setting groups  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| CountryCodeForExtendedCapabilityPrompts | X  | X | X | X |  |
+| CountryCodeForExtendedCapabilityPrompts | X  | X | X |  |  |
 
 You can set the **CountryCodeForExtendedCapabilityPrompts** setting for **China** to enable additional capability prompts when apps use privacy-sensitive features (such as Contacts or Microphone). 

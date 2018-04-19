@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 09/06/2017
+ms.date: 04/23/2018
 ---
 
 # Accounts (Windows Configuration Designer reference)
@@ -18,7 +18,7 @@ Use these settings to join a device to an Active Directory domain or an Azure Ac
 
 | Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [Azure](#azure) | X | X | X |  |  |
+| [Azure](#azure) | X | X | X | X |  |
 | [ComputerAccount](#computeraccount) | X |   | X |   |  X |
 | [Users](#users) | X |  | X | X |  |
 
