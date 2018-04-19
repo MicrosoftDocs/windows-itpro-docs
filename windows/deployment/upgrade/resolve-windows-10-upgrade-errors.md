@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.date: 04/03/2018
+ms.date: 04/18/2018
 ms.localizationpriority: high
 ---
 
@@ -16,11 +16,12 @@ ms.localizationpriority: high
 **Applies to**
 -   Windows 10
 
->**Important**: This topic contains technical instructions for IT administrators. If you are not an IT administrator, see the following topic: [Get help with Windows 10 upgrade and installation errors](https://support.microsoft.com/en-us/help/10587/windows-10-get-help-with-upgrade-installation-errors). You can also [Submit Windows 10 upgrade errors using Feedback Hub](submit-errors.md).
+>[!IMPORTANT]
+>This article contains technical instructions for IT administrators. If you are not an IT administrator, try some of the [quick fixes](quick-fixes.md) described in this article then contact [Microsoft Support](https://support.microsoft.com/contactus/) starting with the Virtual Agent. To talk to a person about your issue, click **Get started** to interact with the Virtual Agent, then enter "Talk to a person" two times. The Virtual Agent can also help you to resolve many Windows upgrade issues. Also see: [Get help with Windows 10 upgrade and installation errors](https://support.microsoft.com/en-us/help/10587/windows-10-get-help-with-upgrade-installation-errors) and [Submit Windows 10 upgrade errors using Feedback Hub](submit-errors.md).
 
-This topic contains a brief introduction to Windows 10 installation processes, and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade. 
+This article contains a brief introduction to Windows 10 installation processes, and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade. 
 
-The topic was originally one page, but has been divided into sub-topics of different technical levels. Basic level provides common procedures that can resolve several types of upgrade errors. Advanced level requires some experience with detailed troubleshooting methods.
+The article was originally one page, but has been divided into sub-topics of different technical levels. Basic level provides common procedures that can resolve several types of upgrade errors. Advanced level requires some experience with detailed troubleshooting methods.
 
 The following four levels are assigned:
 
@@ -31,7 +32,7 @@ Level 400: Advanced <br>
 
 ## In this guide
 
-See the following topics:
+See the following topics in this article:
 
 - [Quick fixes](quick-fixes.md): \Level 100\ Steps you can take to eliminate many Windows upgrade errors.<br>
 - [SetupDiag](setupdiag.md): \Level 300\ SetupDiag is a new tool to help you isolate the root cause of an upgrade failure.
@@ -57,3 +58,4 @@ See the following topics:
 <br>[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/Windows-10-specifications)
 <br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
 <br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)
+<br>

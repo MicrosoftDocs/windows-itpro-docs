@@ -110,7 +110,7 @@ All Windows devices can be connected to an Azure AD domain. These devices can be
 
 3.  Type in your Azure AD username. This is the email address you use to log into Microsoft Office 365 and similar services.
 
-    If the tenant is a cloud-only tenant, this page will change to show the organization's custom branding, and you will be able to enter your password directly on this page. If the tenant is part of a federated domain, you will be redirected to the organization's on-premises federation server, such as Active Directory Federation Services (AD FS) for authentication.
+    If the tenant is a cloud-only, password hash sync, or pass-through authentication tenant, this page will change to show the organization's custom branding, and you will be able to enter your password directly on this page. If the tenant is part of a federated domain, you will be redirected to the organization's on-premises federation server, such as Active Directory Federation Services (AD FS) for authentication.
 
     Based on IT policy, you may also be prompted to provide a second factor of authentication at this point. If your Azure AD tenant has auto-enrollment configured, your device will also be enrolled into MDM during this flow. For more information, see [these steps](azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md). If your tenant is not configured for auto-enrollment, you will have to go through the enrollment flow a second time to connect your device to MDM. After you complete the flow, your device will be connected to your organization’s Azure AD domain.
 
@@ -142,7 +142,7 @@ All Windows devices can be connected to an Azure AD domain. These devices can be
 
     ![azure ad sign in](images/unifiedenrollment-rs1-19.png)
 
-7.  If the tenant is a cloud only tenant, this page will change to show the organization's custom branding, and you will be able to enter your password directly on this page. If the tenant is part of a federated domain, you will be redirected to the organization's on-premises federation server, such as AD FS, for authentication.
+7.  If the tenant is a cloud only, password hash sync, or pass-through authentication tenant, this page will change to show the organization's custom branding, and you will be able to enter your password directly on this page. If the tenant is part of a federated domain, you will be redirected to the organization's on-premises federation server, such as AD FS, for authentication.
 
     Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
 
@@ -194,7 +194,7 @@ All Windows 10-based devices can be connected to a work or school account. You 
 
     ![join work or school account to azure ad](images/unifiedenrollment-rs1-25-b.png)
 
-5.  If the tenant is a cloud only tenant, this page will change to show the organization's custom branding, and you will be able to enter your password directly into the page. If the tenant is part of a federated domain, you will be redirected to the organization's on-premises federation server, such as AD FS, for authentication.
+5.  If the tenant is a cloud only, password hash sync, or pass-through authentication tenant, this page will change to show the organization's custom branding, and you will be able to enter your password directly into the page. If the tenant is part of a federated domain, you will be redirected to the organization's on-premises federation server, such as AD FS, for authentication.
 
     Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
 
