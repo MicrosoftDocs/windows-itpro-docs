@@ -70,6 +70,6 @@ After you complete these steps, the WDAC binary file (DeviceGuardPolicy.bin) and
 > [!Note] 
 > We recommend that you keep the original .xml file of the policy for use when you need to merge the WDAC policy with another policy or update its rule options. Alternatively, you would have to create a new policy from a new scan for servicing. For more information about how to merge WDAC policies, see [Merge Windows Defender Application Control policies](merge-windows-defender-application-control-policies.md).
 
-We recommend that every WDAC policy be run in audit mode before being enforced. Doing so allows administrators to discover any issues with the policy without receiving error message dialog boxes. For information about how to audit a WDAC policy, see the next section, [Audit Windows Defender Application Control policies](audit-windows-defender-application-control-policies.md).
+We recommend that every WDAC policy be run in audit mode before being enforced. Doing so allows administrators to discover any issues with the policy without receiving error messages. For information about how to audit a WDAC policy, see [Audit Windows Defender Application Control policies](audit-windows-defender-application-control-policies.md).
 
 
