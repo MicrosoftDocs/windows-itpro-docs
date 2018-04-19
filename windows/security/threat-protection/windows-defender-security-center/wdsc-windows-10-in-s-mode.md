@@ -38,5 +38,7 @@ For more information about Windows 10 in S mode, including how to switch out of 
 
 ##Managing Windows Defender Security Center settings with Intune
 
-In the enterprise, you can only manage security settings for devices running Windows 10 in S mode with Microsoft Intune or other mobile device management apps. Windows 10 in S mode prevents making changes via PowerShell scripts. For information about using Intune to manage Windows Defender Security Center settings on your organization's devices, see Set up Intune and Endpoint protection settings for Windows 10 (and later) in Intune.
+In the enterprise, you can only manage security settings for devices running Windows 10 in S mode with Microsoft Intune or other mobile device management apps. Windows 10 in S mode prevents making changes via PowerShell scripts.
+
+For information about using Intune to manage Windows Defender Security Center settings on your organization's devices, see [Set up Intune](https://docs.microsoft.com/en-us/intune/setup-steps) and [Endpoint protection settings for Windows 10 (and later) in Intune](https://docs.microsoft.com/en-us/intune/endpoint-protection-windows-10).
 
