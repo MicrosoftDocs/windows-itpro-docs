@@ -266,8 +266,8 @@
 #### [Customize Exploit protection](windows-defender-exploit-guard/customize-exploit-protection.md)
 ##### [Import, export, and deploy Exploit protection configurations](windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
 #### [Memory integrity](windows-defender-exploit-guard/memory-integrity.md)
-##### [Requirements and deployment planning guidelines for virtualization-based protection of code integrity](device-guard/requirements-and-deployment-planning-guidelines-for-device-guard.md)
-##### [Enable virtualization-based protection of code integrity](device-guard/deploy-device-guard-enable-virtualization-based-security.md)
+##### [Requirements and deployment planning guidelines for virtualization-based protection of code integrity](windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
+##### [Enable virtualization-based protection of code integrity](windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity.md)
 ### [Attack surface reduction](windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md)
 #### [Evaluate Attack surface reduction](windows-defender-exploit-guard/evaluate-attack-surface-reduction.md)
 #### [Enable Attack surface reduction](windows-defender-exploit-guard/enable-attack-surface-reduction.md)
@@ -383,18 +383,7 @@
 
 ## [Control the health of Windows 10-based devices](protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md)
 
-## [Device Guard deployment guide](device-guard/device-guard-deployment-guide.md)
-### [Introduction to Device Guard: virtualization-based security and WDAC](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
-### [Requirements and deployment planning guidelines for Device Guard](device-guard/requirements-and-deployment-planning-guidelines-for-device-guard.md)
-### [Planning and getting started on the Device Guard deployment process](device-guard/planning-and-getting-started-on-the-device-guard-deployment-process.md)
-### [Deploy WDAC](device-guard/deploy-windows-defender-application-control.md)
-#### [Optional: Create a code signing certificate for WDAC](device-guard/optional-create-a-code-signing-certificate-for-windows-defender-application-control.md)
-#### [Deploy WDAC: policy rules and file rules](device-guard/deploy-windows-defender-application-control-policy-rules-and-file-rules.md)
-#### [Steps to deploy WDAC](device-guard/steps-to-deploy-windows-defender-application-control.md)
-#### [Deploy catalog files to support WDAC](device-guard/deploy-catalog-files-to-support-windows-defender-application-control.md)
-#### [Deploy Managed Installer for Device Guard](device-guard/deploy-managed-installer-for-device-guard.md)
-### [Deploy Device Guard: enable virtualization-based security](device-guard/deploy-device-guard-enable-virtualization-based-security.md)
-
+## [Windows Defender Device Guard: virtualization-based security and WDAC](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 
 ## [Windows Defender SmartScreen](windows-defender-smartscreen/windows-defender-smartscreen-overview.md)
 ### [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md)
