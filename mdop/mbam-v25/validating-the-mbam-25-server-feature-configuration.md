@@ -168,10 +168,7 @@ Use these steps to validate your MBAM Server deployment when you are using MBAM 
 
     -   BitLocker Operating System Drive Protection
 
-## Got a suggestion for MBAM?
 
-
-Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 ## Related topics
 
@@ -179,7 +176,9 @@ Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-micros
 [Configuring the MBAM 2.5 Server Features](configuring-the-mbam-25-server-features.md)
 
  
-
+## Got a suggestion for MBAM?
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
  
 
 
