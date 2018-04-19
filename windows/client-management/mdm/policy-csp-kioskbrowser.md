@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 04/06/2018
+ms.date: 04/11/2018
 ---
 
 # Policy CSP - KioskBrowser
@@ -31,6 +31,9 @@ These policies currently only apply to Kiosk Browser app. Kiosk Browser is a Mic
   </dd>
   <dd>
     <a href="#kioskbrowser-defaulturl">KioskBrowser/DefaultURL</a>
+  </dd>
+  <dd>
+    <a href="#kioskbrowser-enableendsessionbutton">KioskBrowser/EnableEndSessionButton</a>
   </dd>
   <dd>
     <a href="#kioskbrowser-enablehomebutton">KioskBrowser/EnableHomeButton</a>
@@ -76,7 +79,6 @@ These policies currently only apply to Kiosk Browser app. Kiosk Browser is a Mic
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * User
 > * Device
 
 <hr/>
@@ -123,7 +125,6 @@ Added in Windows 10, version 1803. List of exceptions to the blocked website URL
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * User
 > * Device
 
 <hr/>
@@ -170,7 +171,6 @@ Added in Windows 10, version 1803. List of blocked website URLs (with wildcard s
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * User
 > * Device
 
 <hr/>
@@ -183,6 +183,58 @@ Added in Windows 10, version 1803. Configures the default URL kiosk browsers to 
 > This policy only applies to the Kiosk Browser app in Microsoft Store.
 
 <!--/Description-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="kioskbrowser-enableendsessionbutton"></a>**KioskBrowser/EnableEndSessionButton**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Enables kiosk browser's end session button. When the policy is enabled, the kiosk browser enables a button to reset the browser by navigating back to the default URL and clearing the browsing data (cache, cookies, etc). When the user clicks on the button, the app will prompt the user for confirmation to end the session.
+
+<!--/Description-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -217,7 +269,6 @@ Added in Windows 10, version 1803. Configures the default URL kiosk browsers to 
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * User
 > * Device
 
 <hr/>
@@ -264,7 +315,6 @@ Added in Windows 10, version 1803. Enable/disable kiosk browser's home button.
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * User
 > * Device
 
 <hr/>
@@ -311,7 +361,6 @@ Added in Windows 10, version 1803. Enable/disable kiosk browser's navigation but
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * User
 > * Device
 
 <hr/>

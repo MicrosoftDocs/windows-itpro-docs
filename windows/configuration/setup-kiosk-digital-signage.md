@@ -16,7 +16,7 @@ ms.date: 04/23/2018
 
 **Applies to**
 
--   Windows 10
+-   Windows 10 Pro, Enterprise, and Education
 
 
 

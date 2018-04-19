@@ -17,6 +17,9 @@ ms.localizationpriority: medium
 
 You can connect other devices to your Microsoft Surface Hub to display content. This topic describes the Guest Mode, Replacement PC Mode, and Video Out functionality available through wired connections, and also lists accessories that you can connect to Surface Hub using [Bluetooth](#bluetooth-accessories).
 
+>[!NOTE]
+>Surface Hub will use the video input that you select until a new connection is made, the existing connection is disrupted, or the Connect App is closed.
+
 ## Which method should I choose?
 
 When connecting external devices and displays to a Surface Hub, there are several available options. The method you use will depend upon your scenario and needs. 

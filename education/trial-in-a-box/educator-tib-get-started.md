@@ -26,13 +26,15 @@ ms.date: 03/18/2018
 | [![Try Learning Tools Immersive Reader](images/edu-TIB-setp-2-v3.png)](#edu-task2) | **Interested in significantly improving your students' reading speed and comprehension?<sup>[1](#footnote1)</sup>** </br>Try the [Learning Tools Immersive Reader](#edu-task2) to see how kids can learn to read faster, using text read aloud, and highlighting words for syntax. |
 | [![Launch Microsoft Teams](images/edu-TIB-setp-3-v3.png)](#edu-task3) | **Looking to foster collaboration, communication, and critical thinking in the classroom?** </br>Launch [Microsoft Teams](#edu-task3) and learn how to set up digital classroom discussions, respond to student questions, and organize class content. |
 | [![Open OneNote](images/edu-TIB-setp-4-v3.png)](#edu-task4) | **Trying to expand classroom creativity and interaction between students?** </br>Open [OneNote](#edu-task4) and create an example group project for your class. |
-| [![Play with Minecraft: Education Edition](images/edu-TIB-setp-5-v3.png)](#edu-task5) | **Want to teach kids to further collaborate and problem solve?** </br>Play with [Minecraft: Education Edition](#edu-task5) to see how it can be used as a collaborative and versatile platform across subjects to encourage 21st century skills. |
+| [![Try Photos app](images/edu-tib-setp-5-v4.png)](#edu-task5) | **Curious about telling stories through video?** </br>Try the [Photos app](#edu-task5) to make your own example video. |
+| [![Play with Minecraft: Education Edition](images/edu-tib-setp-6-v4.png)](#edu-task6) | **Want to teach kids to further collaborate and problem solve?** </br>Play with [Minecraft: Education Edition](#edu-task6) to see how it can be used as a collaborative and versatile platform across subjects to encourage 21st century skills. |
 |  |  |
 
 </br>
 
 > [!VIDEO https://www.youtube.com/embed/3nqooY9Iqq4]
 
+</br>
 </br>
 
 
@@ -44,6 +46,7 @@ To try out the educator tasks, start by logging in as a teacher.
 2. Log in to **Device A** using the **Teacher Username** and **Teacher Password** included in the **Credentials Sheet** located in your kit.
 3. Connect to your school's Wi-Fi network or connect with a local Ethernet connection.
 
+</br>
 </br>
 
 ![Improve student reading speed and comprehension](images/edu-TIB-setp-2-jump.png) 
@@ -76,6 +79,7 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
   | ![Word Online Text to Speech](images/wordonline_tts.png) | ![Word Online Text Preferences](images/wordonline_text_preferences.png) | ![Word Online Grammar Options](images/wordonline_grammar_options.png) | ![Word Online Line Focus](images/wordonline_line_focus.png) |
 
 </br>
+</br>
 
 ![Spark communication, critical thinking, and creativity with Microsoft Teams](images/edu-TIB-setp-3-jump.png) 
 ## <a name="edu-task3"></a>3. Spark communication, critical thinking, and creativity in the classroom
@@ -94,6 +98,7 @@ Take a guided tour of Microsoft Teams and test drive this digital hub.
 1. Take a guided tour of Microsoft Teams and test drive some teaching tasks. Open the Microsoft Edge browser and navigate to <a href="https://msteamsdemo.azurewebsites.net/" target="_blank">https://msteamsdemo.azurewebsites.net</a>.
 2. Use your school credentials provided in the **Credentials Sheet**.
 
+</br>
 </br>
 
 ![Expand classroom collaboration and interaction with OneNote](images/edu-TIB-setp-4-jump.png) 
@@ -127,9 +132,56 @@ When you're not using the pen, just use the magnet to stick it to the left side 
     ![OneNote Researcher](images/onenote_researcher.png)
 
 </br>
+</br>
+
+![Inspire your students to tell their stories through video!](images/edu-tib-setp-5-jump2.png)
+## <a name="edu-task5"></a>5. Engage with students by creating videos
+
+PHOTOS APP VIDEO COMING SOON!
+</br>
+
+The Photos app now has a built-in video editor, making it easy for you and your students to create movies using photos, video clips, music, 3D models, and special effects.  Improve comprehension, unleash creativity, and capture your student’s imagination through video.
+
+**Try this!**
+Use video to create a project summary.
+
+1. Check you have the latest version of Microsoft Photos. Open the **Start** menu and search for **Store**. Select the **See more** button (**…**) and select **Downloads and updates**. Select **Get updates**.   
+2. Open Microsoft Edge and visit <a href="http://aka.ms/PhotosTIB" target="_blank">http://aka.ms/PhotosTIB</a> to download a zip file of the project media.   
+3. Once the download has completed, open the zip file and select **Extract** > **Extract all**.  Select **Browse** and choose the **Pictures** folder as the destination, and then select **Extract**.  
+4. In the **Start** menu, search for **Photos** or select the Photos tile to launch the app.  
+5. Select the first video to preview it full screen. Select **Edit & Create**, then select **Create a video with text**.
+  1. If you don't see the **Edit & Create** menu, select the video and the menu will appear at the top of the screen. 
+6. Name your project “Laser Maze Project.” Hit Enter to continue.   
+7. Select **Add photos and videos** and then **From my collection**. Scroll to select the 6 additional videos and select **Add**.
+8. Drag the videos to the Storyboard, one by one. Your project should look roughly like this:
+
+  ![Photos app layout showing videos added in previous steps](images/photo_app_1.png)
+
+9. Select the first card in the Storyboard (the video of the project materials) and select **Text**, type a title in, a text style, a layout, and select **Done**. 
+10.	Select the third card in the Storyboard (the video of the children assembling the maze) and select **Trim**.  Drag the trim handle on the left to shorten the duration of the clip and select **Done**. 
+11.	Select the last card on the Storyboard and select **3D effects**.
+  1. Position the playback indicator to be roughly 1 second into the video clip, or when the boy moves down to examine the laser.  
+  2. Find the **lightning bolt** effect and click or drag to add it to the scene.  Rotate, scale, and position the effect so it looks like the lightning is coming out of the laser beam and hitting the black back of the mirror.
+  3. Position the blue anchor over the end of the laser pointer in the video and toggle on **Attach to a point** for the lightning bolt effect to anchor the effect in the scene.
+  4. Play back your effect.
+  5. Select **Done** when you have it where you want it.
+
+  ![Lighting bolt effect being added to a video clip](images/photo_app_2.png)
+
+12. Select **Music** and select a track from the **Recommended** music collection.
+  1. The music will update automatically to match the length of your video project, even as you make changes.
+  2. If you don’t see more than a few music options, confirm that you’re connected to Wi-Fi and then close and re-open Microsoft Photos (returning to your project via the **Albums** tab). Additional music files should download in the background.
+13. You can adjust the volume for the background music using the **Music volume** button.  
+14. Preview your video to see how it all came together.
+15. Select **Export or share** and select either the **Small** or **Medium** file size. You can share your video to social media, email, or another apps.  
+
+Check out this use case video of the Photos team partnering with the Bureau Of Fearless Ideas in Seattle to bring the Photos app to local middle school students: <a href="https://www.youtube.com/watch?v=0dFFAu6XwPg" target="_blank">https://www.youtube.com/watch?v=0dFFAu6XwPg</a>
+</br>
+</br>
+</br>
 
 ![Further collaborate and problem solve with Minecraft: Education Edition](images/edu-TIB-setp-5-jump.png) 
-## <a name="edu-task5"></a>5. Get kids to further collaborate and problem solve
+## <a name="edu-task6"></a>6. Get kids to further collaborate and problem solve
 
 > [!VIDEO https://www.youtube.com/embed/QI_bRNUugog]
 
