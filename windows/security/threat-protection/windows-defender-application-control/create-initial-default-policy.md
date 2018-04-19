@@ -26,8 +26,6 @@ The policy file is converted to binary format when it gets created so that Windo
 > [!Note] 
 > Make sure the reference computer is virus and malware-free, and install any software you want to be scanned before creating the WDAC policy. 
 
-## Scripting and applications
-
 Each installed software application should be validated as trustworthy before you create a policy. 
 We recommend that you review the reference computer for software that can load arbitrary DLLs and run code or scripts that could render the PC more vulnerable. 
 Examples include software aimed at development or scripting such as msbuild.exe (part of Visual Studio and the .NET Framework) which can be removed if you do not want to run scripts. 
