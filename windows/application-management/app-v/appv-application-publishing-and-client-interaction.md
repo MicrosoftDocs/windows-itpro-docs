@@ -86,11 +86,11 @@ The appv file contains the following folder and files, which are used when creat
 
 | Name | Type | Description |
 |---|---|---|
-| Root | File folder | Directory that contains the file system for the virtualized application that is captured during sequencing. |
-| [Content_Types].xml | XML File | List of the core content types in the appv file (e.g. DLL, EXE, BIN). |
+| Root | File folder | Directory that contains the file system for the virtualized application captured during sequencing. |
+| [Content_Types].xml | XML File | List of the core content types in the appv file (for example, DLL, EXE, BIN). |
 | AppxBlockMap.xml | XML File | Layout of the appv file, which uses File, Block, and BlockMap elements that enable location and validation of files in the App-V package.|
 | AppxManifest.xml | XML File | Metadata for the package that contains the required information for adding, publishing, and launching the package. Includes extension points (file type associations and shortcuts) and the names and GUIDs associated with the package.|
-| FilesystemMetadata.xml | XML File | List of the files captured during sequencing, including attributes (e.g., directories, files, opaque directories, empty directories,and long and short names). |
+| FilesystemMetadata.xml | XML File | List of the files captured during sequencing, including attributes (such as directories, files, opaque directories, empty directories, and long and short names). |
 | PackageHistory.xml | XML File | Information about the sequencing computer (operating system version, Internet Explorer version, .Net Framework version) and process (upgrade, package version).|
 | Registry.dat | DAT File | Registry keys and values captured during the sequencing process for the package.|
 | StreamMap.xml | XML File | List of files for the primary and publishing feature block. The publishing feature block contains the ICO files and required portions of files (EXE and DLL) for publishing the package. When present, the primary feature block includes files that have been optimized for streaming during the sequencing process.|
@@ -101,43 +101,43 @@ The App-V client performs tasks to ensure that virtual applications run properly
 
 | Name | Location | Description |
 |---|---|---|
-| Package Store | %ProgramData%\App-V| Default location for read only package files| 
-| Machine Catalog | %ProgramData%\Microsoft\AppV\Client\Catalog| Contains per-machine configuration documents| 
-| User Catalog | %AppData%\Microsoft\AppV\Client\Catalog| Contains per-user configuration documents| 
-| Shortcut Backups | %AppData%\Microsoft\AppV\Client\Integration\ShortCutBackups| Stores previous integration points that enable restore on package unpublish| 
-| Copy on Write (COW) Roaming | %AppData%\Microsoft\AppV\Client\VFS| Writeable roaming location for package modification| 
-| Copy on Write (COW) Local | %LocalAppData%\Microsoft\AppV\Client\VFS| Writeable non-roaming location for package modification| 
-| Machine Registry | HKLM\Software\Microsoft\AppV| Contains package state information, including VReg for machine or globally published packages (Machine hive)| 
-| User Registry | HKCU\Software\Microsoft\AppV| Contains user package state information including VReg| 
-| User Registry Classes | HKCU\Software\Classes\AppV| Contains additional user package state information| 
+| Package Store | %ProgramData%\App-V| Default location for read only package files|
+| Machine Catalog | %ProgramData%\Microsoft\AppV\Client\Catalog| Contains per-machine configuration documents|
+| User Catalog | %AppData%\Microsoft\AppV\Client\Catalog| Contains per-user configuration documents|
+| Shortcut Backups | %AppData%\Microsoft\AppV\Client\Integration\ShortCutBackups| Stores previous integration points that enable restore on package unpublish|
+| Copy on Write (COW) Roaming | %AppData%\Microsoft\AppV\Client\VFS| Writeable roaming location for package modification|
+| Copy on Write (COW) Local | %LocalAppData%\Microsoft\AppV\Client\VFS| Writeable non-roaming location for package modification|
+| Machine Registry | HKLM\Software\Microsoft\AppV| Contains package state information, including VReg for machine or globally published packages (Machine hive)|
+| User Registry | HKCU\Software\Microsoft\AppV| Contains user package state information including VReg|
+| User Registry Classes | HKCU\Software\Classes\AppV| Contains additional user package state information|
 
 Additional details for the table are provided in the section below and throughout the document.
 
 ### Package store
 
-The App-V Client manages the applications assets mounted in the package store. This default storage location is `%ProgramData%\App-V`, but you can configure it during or after setup by using the `Set-AppVClientConfiguration` Windows PowerShell cmdlet, which modifies the local registry (`PackageInstallationRoot` value under the `HKLM\Software\Microsoft\AppV\Client\Streaming` key). The package store must be located at a local path on the client operating system. The individual packages are stored in the package store in subdirectories named for the Package GUID and Version GUID.
+The App-V Client manages the applications assets mounted in the package store. This default storage location is `%ProgramData%\App-V`, but you can configure it during or after setup by using the **Set-AppVClientConfiguration** Windows PowerShell cmdlet, which modifies the local registry (`PackageInstallationRoot` value under the `HKLM\Software\Microsoft\AppV\Client\Streaming` key). The package store must be located at a local path on the client operating system. The individual packages are stored in the package store in subdirectories named after the Package GUID and Version GUID.
 
 Example of a path to a specific application:
 
-``` syntax
-C:\ProgramData\App-V\PackGUID\VersionGUID 
+```syntax
+C:\ProgramData\App-V\PackGUID\VersionGUID
 ```
 
 To change the default location of the package store during setup, see [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md).
 
 ### Shared Content Store
 
-If the App-V Client is configured in Shared Content Store mode, no data is written to disk when a stream fault occurs, which means that the packages require minimal local disk space (publishing data). The use of less disk space is highly desirable in VDI environments, where local storage can be limited, and streaming the applications from a high performance network location (such as a SAN) is preferable. For more information, see [Shared Content Store in Microsoft App-V 5.0 - Behind the Scenes](https://blogs.technet.microsoft.com/appv/2013/07/22/shared-content-store-in-microsoft-app-v-5-0-behind-the-scenes/).
+If the App-V Client is configured in Shared Content Store mode, no data is written to disk when a stream fault occurs, which means that the packages require minimal local disk space (publishing data). The use of less disk space is highly desirable in VDI environments, where local storage can be limited, and streaming the applications from a high-performance network location (such as a SAN) is preferable. For more information, see [Shared Content Store in Microsoft App-V 5.0 - Behind the Scenes](https://blogs.technet.microsoft.com/appv/2013/07/22/shared-content-store-in-microsoft-app-v-5-0-behind-the-scenes/).
 
-> [!NOTE]
-> The machine and package store must be located on a local drive, even when you’re using Shared Content Store configurations for the App-V Client.
+>[!NOTE]
+>The machine and package store must be located on a local drive, even when you’re using Shared Content Store configurations for the App-V Client.
 
 ### Package catalogs
 
 The App-V Client manages the following two file-based locations:
 
 - **Catalogs (user and machine).**
-- **Registry locations**—depends on how the package is targeted for publishing. There is a Catalog (data store) for the computer, and a catalog for each individual user. The Machine Catalog stores global information applicable to all users or any user, and the User Catalog stores information applicable to a specific user. The Catalog is a collection of Dynamic Configurations and manifest files; there is discrete data for both file and registry per package version. 
+- **Registry locations**—depends on how the package is targeted for publishing. There is a Catalog (data store) for the computer, and a catalog for each individual user. The Machine catalog stores global information applicable to all users or any specific user, and the User catalog stores information applicable to a specific user. The catalog is a collection of Dynamic Configurations and manifest files; there is discrete data for both file and registry per package version.
 
 ### Machine catalog
 
@@ -194,7 +194,7 @@ The App-V Client manages the following two file-based locations:
 
 |||
 |---|---|
-|Description|Created during the publishing process. Contains information used for publishing the package, and also used at launch to ensure that a package is provisioned to a specific user. Created in a roaming location and includes user-specific publishing information.<br></br>When a package is published for a user, the policy file is stored in the User Catalog. At the same time, a copy of the manifest is also stored in the User Catalog. When a package entitlement is removed for a user, the relevant package files are removed from the User Catalog. Looking at the user catalog, an administrator can view the presence of a Dynamic Configuration file, which indicates that the package is entitled for that user.<br></br>For roaming users, the User Catalog needs to be in a roaming or shared location to preserve the legacy App-V behavior of targeting users by default. Entitlement and policy are tied to a user, not a computer, so they should roam with the user once they are provisioned.|
+|Description|Created during the publishing process. Contains information used for publishing the package, and for making sure that a package is provisioned to a specific user at launch. Created in a roaming location and includes user-specific publishing information.<br></br>When a package is published for a user, the policy file is stored in the User Catalog. At the same time, a copy of the manifest is also stored in the User Catalog. When a package entitlement is removed for a user, the relevant package files are removed from the User Catalog. Looking at the user catalog, an administrator can view the presence of a Dynamic Configuration file, which indicates that the package is entitled for that user.<br></br>For roaming users, the User Catalog needs to be in a roaming or shared location to preserve the legacy App-V behavior of targeting users by default. Entitlement and policy are tied to a user, not a computer, so they should roam with the user once they are provisioned.|
 |Default storage location|```appdata\roaming\Microsoft\AppV\Client\Catalog\Packages\PkgGUID\VerGUID```|
 |Files in the user catalog|- UserManifest.xml<br>- DynamicConfiguration.xml or UserDeploymentConfiguration.xml|
 |Additional user catalog location, used when the package is part of a connection group|The following location is in addition to the specific package location mentioned above:<br></br>```appdata\roaming\Microsoft\AppV\Client\Catalog\PackageGroups\PkgGroupGUID\PkgGroupVerGUID```|
@@ -237,7 +237,7 @@ The App-V Client manages the following two file-based locations:
 
 ### Shortcut backups
 
-During the publishing process, the App-V Client backs up any shortcuts and integration points to ```%AppData%\Microsoft\AppV\Client\Integration\ShortCutBackups```. This backup enables the restoration of these integration points to the previous versions when the package is unpublished.
+During the publishing process, the App-V Client backs up any shortcuts and integration points to ```%AppData%\Microsoft\AppV\Client\Integration\ShortCutBackups```. This backup lets integration points restore to the previous versions when the package is unpublished.
 
 ### Copy on Write files
 
@@ -249,7 +249,7 @@ The COW Roaming location described above stores changes to files and directories
 
 ### COW local
 
-The COW Local location is similar to the roaming location, but the directories and files are not roamed to other computers, even if roaming support has been configured. The COW Local location described above stores changes applicable to typical windows and not the %AppData% location. The directories listed will vary but there will be two locations for any typical Windows locations (e.g. Common AppData and Common AppDataS). The **S** signifies the restricted location when the virtual service requests the change as a different elevated user from the logged on users. The non-**S** location stores user based changes.
+The COW Local location is similar to the roaming location, but the directories and files are not roamed to other computers, even if roaming support has been configured. The COW Local location described above stores changes applicable to typical windows and not the %AppData% location. The directories listed will vary but there will be two locations for any typical Windows locations (for example, Common AppData and Common AppDataS). The **S** signifies the restricted location when the virtual service requests the change as a different elevated user from the logged on users. The non-**S** location stores user based changes.
 
 ## Package registry
 
@@ -269,13 +269,13 @@ The staged registry persists the same way as in the single package case. Staged 
 
 ### Virtual registry
 
-The purpose of the virtual registry (VREG) is to provide a single merged view of the package registry and the native registry to applications. It also provides copy-on-write (COW) functionality – that is any changes made to the registry from the context of a virtual process are made to a separate COW location. This means that the VREG must combine up to three separate registry locations into a single view based on the populated locations in the registry COW -&gt; package -&gt; native. When a request is made for a registry data it will locate in order until it finds the data it was requesting. Meaning if there is a value stored in a COW location it will not proceed to other locations, however, if there is no data in the COW location it will proceed to the Package and then Native location until it finds the appropriate data.
+The purpose of the virtual registry (VREG) is to provide a single merged view of the package registry and the native registry to applications. It also provides copy-on-write (COW) functionality—that is, any changes made to the registry from the context of a virtual process are made to a separate COW location. This means that the VREG must combine up to three separate registry locations into a single view based on the populated locations in the registry COW -&gt; package -&gt; native. When a request is made for a registry data it will locate in order until it finds the data it was requesting. Meaning if there is a value stored in a COW location it will not proceed to other locations, however, if there is no data in the COW location it will proceed to the Package and then Native location until it finds the appropriate data.
 
 ### Registry locations
 
 There are two package registry locations and two connection group locations where the App-V Client stores registry information, depending on whether the Package is published individually or as part of a connection group. There are three COW locations for packages and three for connection groups, which are created and managed by the VREG. Settings for packages and connection groups are not shared:
 
-**Single Package VReg:**
+#### Single Package VReg
 
 |Location|Description|
 |---|---|
@@ -317,7 +317,7 @@ There are two package registry locations and two connection group locations wher
 </tbody>
 </table>
 
-**Connection Group VReg:**
+#### Connection Group VReg
 
 |Location|Description|
 |---|---|
@@ -385,7 +385,7 @@ The following locations are configured as pass-through locations by default:
 
 - HKEY\_CURRENT\_USER\\SOFTWARE\\Policies
 
-The purpose of Pass-through keys is to ensure that a virtual application does not write registry data in the VReg that is required for non-virtual applications for successful operation or integration. The Policies key ensures that Group Policy based settings set by the administrator are utilized and not per package settings. The AppModel key is required for integration with Windows Modern UI based applications. It is recommend that administers do not modify any of the default pass-through keys, but in some instances, based on application behavior may require adding additional pass-through keys.
+The purpose of Pass-through keys is to ensure that a virtual application does not write registry data in the VReg that is required for non-virtual applications for successful operation or integration. The Policies key ensures that Group Policy-based settings set by the administrator are utilized and not per package settings. The AppModel key is required for integration with Windows Modern UI-based applications. Administers ideally should not modify any of the default pass-through keys, but in some instances, based on application behavior the admin may need to add additional pass-through keys.
 
 ## App-V package store behavior
 
