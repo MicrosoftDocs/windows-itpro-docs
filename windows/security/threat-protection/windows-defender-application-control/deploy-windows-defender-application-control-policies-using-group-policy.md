@@ -27,16 +27,14 @@ WDAC policies can easily be deployed and managed with Group Policy. A Windows De
 
 To deploy and manage a WDAC policy with Group Policy:
 
-1.  On a domain controller on a client computer on which RSAT is installed, open the GPMC by running **GPMC.MSC** or searching for “Group Policy Management” in Windows Search.
+1.  On a client computer on which RSAT is installed, open the GPMC by running **GPMC.MSC** 
 
-2.  Create a new GPO: right-click an OU and then click **Create a GPO in this domain, and Link it here**, as shown in Figure 3.
+2.  Create a new GPO: right-click an OU and then click **Create a GPO in this domain, and Link it here**.
 
     > [!NOTE]
     > You can use any OU name. Also, security group filtering is an option when you consider different ways of combining WDAC policies (or keeping them separate), as discussed in [Plan for Windows Defender Application Control policy management](plan-windows-defender-application-control-management.md).
 
     ![Group Policy Management, create a GPO](images/dg-fig24-creategpo.png)
-
-    Figure 3. Create a GPO
 
 3.  Name the new GPO. You can choose any name. 
 
@@ -46,18 +44,14 @@ To deploy and manage a WDAC policy with Group Policy:
 
     ![Edit the Group Policy for Windows Defender Application Control](images/wdac-edit-gp.png)
 
-    Figure 4. Edit the Group Policy for Windows Defender Application Control
-
 6.  In the **Deploy Windows Defender Application Control** dialog box, select the **Enabled** option, and then specify the code integrity policy deployment path.
 
-    In this policy setting, you specify either the local path in which the policy will exist on the client computer or a Universal Naming Convention (UNC) path that the client computers will look to retrieve the latest version of the policy. For example, with DeviceGuardPolicy.bin on the test computer, the example file path would be C:\\Windows\\System32\\CodeIntegrity\\DeviceGuardPolicy.bin, as shown in Figure 5.
+    In this policy setting, you specify either the local path in which the policy will exist on the client computer or a Universal Naming Convention (UNC) path that the client computers will look to retrieve the latest version of the policy. For example, with DeviceGuardPolicy.bin on the test computer, the example file path would be C:\\Windows\\System32\\CodeIntegrity\\DeviceGuardPolicy.bin.
 
     > [!NOTE] 
     > This policy file does not need to be copied to every computer. You can instead copy the WDAC policies to a file share to which all computer accounts have access. Any policy selected here is converted to SIPolicy.p7b when it is deployed to the individual client computers.
 
     ![Group Policy called Deploy Windows Defender Application Control](images/dg-fig26-enablecode.png)
-
-    Figure 5. Enable the Windows Defender Application Control policy
 
     > [!NOTE] 
     > You may have noticed that the GPO setting references a .p7b file and this example uses a .bin file for the policy. Regardless of the type of policy you deploy (.bin, .p7b, or .p7), they are all converted to SIPolicy.p7b when dropped on the client computer running Windows 10. Make your WDAC policies friendly and allow the system to convert the policy names for you to ensure that the policies are easily distinguishable when viewed in a share or any other central repository.
