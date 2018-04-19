@@ -7,7 +7,7 @@ ms.pagetype: hololens, devices
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 02/02/2018
+ms.date: 04/23/2018
 ---
 
 # Unlock Windows Holographic for Business features
@@ -17,7 +17,7 @@ Microsoft HoloLens is available in the *Development Edition*, which runs Windows
 When you purchase the Commercial Suite, you receive a license that upgrades Windows Holographic to Windows Holographic for Business. This license can be applied to the device either through the organization's [mobile device management (MDM) provider](#edition-upgrade-using-mdm) or a [provisioning package](#edition-upgrade-using-a-provisioning-package).
 
 >[!TIP]
->You can tell that the HoloLens has been upgraded to the business edition in **Settings** > **Network & Internet**. The **VPN** option is only available in Windows Holographic for Business.
+>In Windows 10, version 1803, you can tell that the HoloLens has been upgraded to the business edition in **Settings** > **System**. 
 
 
 
@@ -37,7 +37,7 @@ Provisioning packages are files created by the Windows Configuration Designer to
 
 ### Create a provisioning package that upgrades the Windows Holographic edition
 
-1.	[Create a provisioning package for HoloLens.](hololens-provisioning.md#create-a-provisioning-package-for-hololens)
+1.	[Create a provisioning package for HoloLens.](hololens-provisioning.md)
 
 2.  Go to **Runtime settings** > **EditionUpgrade**, and select **EditionUpgradeWithLicense**.
 
