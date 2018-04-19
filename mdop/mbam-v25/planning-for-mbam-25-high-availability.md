@@ -123,10 +123,7 @@ MBAM provides a Volume Shadow Copy Service (VSS) writer, called the Microsoft Bi
 
 The VSS writer is registered on every server where you enable an MBAM web application. The MBAM VSS writer depends on the SQL Server VSS Writer, which is registered as part of the Microsoft SQL Server installation. Any backup technology that uses VSS writers to perform backup can discover the MBAM VSS writer.
 
-## Got a suggestion for MBAM?
 
-
-Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 ## Related topics
 
@@ -136,7 +133,9 @@ Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-micros
  
 
  
-
+## Got a suggestion for MBAM?
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 
 
