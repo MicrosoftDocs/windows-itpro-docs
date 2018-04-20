@@ -14,20 +14,21 @@ ms.date: 04/20/2018
 
 If you upgrade a Windows 10, version 1703 computer to Windows 10, version 1709 or Windows 10, version 1803 (or a Windows 10, version 1709 to Windows 10, version 1803 upgrade), provisioned apps that you've removed before the upgrade may return.  This can happen if the apps were removed while the computer was offline. If the provisioned apps were removed while online, the apps should not return after the upgrade.
 
-When you remove a provisioned package from a Windows installation, there are two points where this can occur:
+There are two points during removing a provisioned package from a Windows installation where this problem can occur:
 
-* Offline is when the packages are removed while the wim file is mounted.
-* Online state is where the provisioned package is removed while inside of Windows.
+* If the packages are removed while the wim file is mounted when the device is offline.
+* If the provisioned package is removed while inside of Windows when the device is online.
 
 When this happens, we write a registry key for a deprovisioned app when each app is deprovisioned, so that when we upgrade setup can use that key as an indicator as to whether to install or not to install the app during the upgrade.
 
 The registry keys where this is written is under the following location.  The keys listed serve as the list of apps to not be installed during the upgrade.
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned]
+```[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned]```
 
-There is a new registry key written for each app that is deprovisioned.  There is no data fields under that registry key.  The registry key is the package name of app to be removed.
+There is a new registry key written for each app that is deprovisioned.  There are no data fields under that registry key.  The registry key is the package name of app to be removed.
 Example Registry key for Calculator:
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.WindowsCalculator_8wekyb3d8bbwe]
+
+```[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.WindowsCalculator_8wekyb3d8bbwe]```
 
 This functionality was built into Windows 10, version 1703 to capture the removal of the deprovisioned app and write the registry key.  The setup code in Windows 10, version 1709 knows to look for the registry key and not reinstall the app.
 However, the offline scenario was not working in Windows 10, version 1703 and Windows 10, version 1703 so the registry keys were not written when the apps were removed while Offline, this was addressed in Windows 10, version 1803 so the registry key will be written when the app is deprovisioned while offline, so that RS5 setup can properly identify de-provisioned apps and not reinstall them.
@@ -39,8 +40,10 @@ The following is how to generate the registry keys of the deprovisoned apps so t
 The registry keys can be added that show the app that were deprovisioned so that when you upgrade to the next version the deprovisioned apps should not return.
 
 The location in the registry where the keys are written is below
-<softwarehive>\microsoft\windows\currentversion\appx\appxalluserstore\deprovisioned\<packagefamilyname>
-<softwarehive> is HKLM\Software on an online running system. In the offline case, it's wherever you mounted the Software hive.
+
+```<softwarehive>\microsoft\windows\currentversion\appx\appxalluserstore\deprovisioned\<packagefamilyname>```
+
+Where ```<softwarehive>``` is HKLM\Software on an online running system. In the offline case, it's wherever you mounted the Software hive.
 A new registry key is created for each de-provisioned app, there are no data values under the registry keys.  The existence of the key is all that needed.
 
 Below are the lists of Provisioned apps with Windows 10, version 1703 and Windows 10, version 1709 including the Names of the apps as well as package names which can be used to generate the registry keys if they are not present in your installations that you wish to upgrade and do not want the deprovisioned apps to return
@@ -84,9 +87,11 @@ This is the list of apps that are provisioned with Windows 10 1709, listed by ap
 |Microsoft.ZuneMusic|Microsoft.ZuneMusic_2019.17063.24021.0_neutral_~_8wekyb3d8bbwe|
 |Microsoft.ZuneVideo|Microsoft.ZuneVideo_2019.17063.24021.0_neutral_~_8wekyb3d8bbwe|
 
-Below is this the list of registry keys created after removing all the provisioned apps in Windows 10 1709.  This registry list shows all the values for each of the provisioned apps that were deprovisioned. 
-The indented lines can be copied into notepad and saved as .reg file so they can be imported into a Windows 10 registry that has deprovisioned some or all of the apps and is missing these values, so the apps will not return after an upgrade.   
+Below is this the list of registry keys created after removing all the provisioned apps in Windows 10 1709.  This registry list shows all the values for each of the provisioned apps that were deprovisioned.
+The indented lines can be copied into notepad and saved as .reg file so they can be imported into a Windows 10 registry that has deprovisioned some or all of the apps and is missing these values, so the apps will not return after an upgrade.
 This is the complete list, you would need to remove the lines for the apps you wish to retain during the upgrade.
+
+```syntax
 1709 Registry Keys
 Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned]
@@ -122,11 +127,9 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.XboxSpeechToTextOverlay_8wekyb3d8bbwe]
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.ZuneMusic_8wekyb3d8bbwe]
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.ZuneVideo_8wekyb3d8bbwe]
+```
 
-
-
-
-List from Windows 10 1709 (Windows 10, version 1709) .  
+List from Windows 10 1709 (Windows 10, version 1709).
 This is the list of apps that are provisioned with Windows 10 1709, listed by app name (DisplayName) and by the package name (PackageName) which is used when generating the registry key. Packages can contain one of more apps.
 
 |DisplayName|PackageName|
@@ -168,10 +171,11 @@ This is the list of apps that are provisioned with Windows 10 1709, listed by ap
 |Microsoft.ZuneVideo|Microsoft.ZuneVideo_2019.17122.16211.1000_neutral_~_8wekyb3d8bbwe|
 
 Below is this the list of registry keys created after removing all the provisioned apps in Windows 10 1703.
-The indented lines can be copied into notepad and saved as .reg file so they can be imported into a Windows 10 installation that has removed the apps and is missing these values, so the apps will not return after an upgrade.   This is the complete list, you would need to remove the lines for the apps you wish to retain.
+The indented lines can be copied into notepad and saved as .reg file so they can be imported into a Windows 10 installation that has removed the apps and is missing these values, so the apps will not return after an upgrade. This is the complete list, you would need to remove the lines for the apps you wish to retain.
 
 Windows 10 1703 Registry keys for removed provisioned apps
 
+```syntax
 Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned]
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.3DBuilder_8wekyb3d8bbwe]
@@ -208,7 +212,7 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.XboxSpeechToTextOverlay_8wekyb3d8bbwe]
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.ZuneMusic_8wekyb3d8bbwe]
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.ZuneVideo_8wekyb3d8bbwe]
-
+```
 
 Notes:
 If you remove the provisioned apps while online, the account that you logged on with will contain the apps, they were installed for that user.  Therefore, if you do an upgrade, that user will retain the apps.  Users that were created after the apps were removed, or after the upgrade will not get the Apps installed, the removed status is honored.
