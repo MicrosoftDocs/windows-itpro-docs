@@ -150,7 +150,7 @@ Here are the typical provisioned Windows apps in Windows 10 versions 1703, 1709,
 | Microsoft 3D Viewer             | Microsoft.Microsoft3DViewer            | x    |  x   | x    | No                        |
 | Movies & TV                     | Microsoft.ZuneVideo                    | x    |  x   | x    | No                        |
 | OneNote                         | Microsoft.Office.OneNote               | x    |  x   | x    | Yes                       |
-| Paid Wi-FI         | Microsoft.OneConnect_8wekyb3d8bbwe       | x    |x      | x     | Yes                  |
+| Paid Wi-FI                      | Microsoft.OneConnect                   | x    | x    | x    | Yes                       |
 | Paint 3D                        | Microsoft.MSPaint                      | x    |  x   | x    | No                        |
 | People                          | Microsoft.People                       | x    |  x   | x    | No                        |
 | Photos                          | Microsoft.Windows.Photos               | x    |  x   | x    | No                        |
