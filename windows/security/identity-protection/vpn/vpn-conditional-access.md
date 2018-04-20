@@ -51,7 +51,7 @@ The following client-side components are also required:
 - Trusted Platform Module (TPM)
 
 ## VPN device compliance 
-According to the VPNv2 CSP, these settings options are **Optional**.  If you want your users to access on-premises resources, such as files on a network share, based on the credential of a certificate that was issued by an on-premises CA, and not the Cloud CA certificate, you add these settings to the VPNv2 profile.  Alternatively, if you add the cloud root certs to the NTAuth store in on-prem AD, your user's cloud cert will chain and KDC will issue TGT and TGS tickets to them.
+According to the VPNv2 CSP, these settings options are **Optional**.  If you want your users to access on-premises resources, such as files on a network share, based on the credential of a certificate that was issued by an on-premises CA, and not the Cloud CA certificate, you add these settings to the VPNv2 profile.  Alternatively, if you add the cloud root certificates to the NTAuth store in on-prem AD, your user's cloud certificate will chain and KDC will issue TGT and TGS tickets to them.
 
 Server-side infrastructure requirements to support VPN device compliance include:
 
@@ -61,6 +61,8 @@ Server-side infrastructure requirements to support VPN device compliance include
    -	Domain servers trust Azure AD CA
    -	A domain-trusted certificate is deployed to the client device and is configured to be used for single sign-on (SSO)
    
+
+
 After the server side is set up, VPN admins can add the policy settings for conditional access to the VPN profile using the VPNv2 DeviceCompliance node.
 
 Two client-side configuration service providers are leveraged for VPN device compliance.
@@ -77,8 +79,12 @@ Two client-side configuration service providers are leveraged for VPN device com
    - Provisions the Health Attestation Certificate received from the HAS
    - Upon request, forwards the Health Attestation Certificate (received from HAS) and related runtime information to the MDM server for verification
    
+>[!NOTE]
+>Enabling SSO is not necessarily required unless you want VPN users to be issued Kerberos tickets to access on-premises resources using a certificate issued by the on-premises CA; not the cloud certificate issued by AAD.
+
+
 ## Client connection flow
-The  VPN client side connection flow works as follows:
+The VPN client side connection flow works as follows:
 
 ![Device compliance workflow when VPN client attempts to connect](images/vpn-device-compliance.png)
  
@@ -93,13 +99,6 @@ When a VPNv2 Profile is configured with \<DeviceCompliance> \<Enabled>true<\/Ena
 ## Configure conditional access
 
 See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) for XML configuration. 
-
-The following image shows conditional access options in a VPN Profile configuration policy using Microsoft Intune.
-
-![conditional access in profile](images/vpn-conditional-access-intune.png)
-
->[!NOTE]
->In Intune, the certificate selected in **Select a client certificate for client authentication** does not set any VPNv2 CSP nodes. It is simply a way to tie the VPN profile’s successful provisioning to the existence of a certificate. If you are enabling conditional access and using the Azure AD short-lived certificate for both VPN server authentication and domain resource authentication, do not select a certificate since the short-lived certificate is not a certificate that would be on the user’s device yet.
 
 ## Learn more about Conditional Access and Azure AD Health
 
