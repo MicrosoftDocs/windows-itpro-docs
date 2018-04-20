@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 Microsoft Whiteboard’s latest update (17.8302.5275X or greater) includes the capability for two Surface Hubs to collaborate in real time on the same board. 
 
-By ensuring that your organization meets the prerequisites, users can then ink, collaborate, and ideate together. Mobile device management (MDM) allows you to control default settings and provides access to these capabilities. For more information about mobile device management for Surface Hub, see [Manage settings with an MDM provider (Surface Hub)](manage-settings-with-mdm-for-surface-hub.md).
+By ensuring that your organization meets the prerequisites, users can then ink, collaborate, and ideate together. 
 
 ![example of a whiteboard with collaborative inking](images/wb-collab-example.png)
 

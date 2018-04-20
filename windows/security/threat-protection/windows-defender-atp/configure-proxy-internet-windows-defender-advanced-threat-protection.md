@@ -1,5 +1,5 @@
 ---
-title: Configure endpoint proxy and Internet connection settings
+title: Configure machine proxy and Internet connection settings
 description: Configure the Windows Defender ATP proxy and internet settings to enable communication with the cloud service.
 keywords: configure, proxy, internet, internet connectivity, settings, proxy settings, netsh, winhttp, proxy server
 search.product: eADQiWindows 10XVcnh
@@ -14,7 +14,7 @@ ms.date: 10/16/2017
 ---
 
 
-# Configure endpoint proxy and Internet connectivity settings
+# Configure machine proxy and Internet connectivity settings
 
 **Applies to:**
 
@@ -39,7 +39,7 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
     - Web Proxy Auto-discovery Protocol (WPAD)
 
 > [!NOTE]
-> If you're using Transparent proxy or WPAD in your network topology, you don't need special endpoint configuration settings. For more information on Windows Defender ATP URL exclusions in the proxy, see [Enable access to Windows Defender ATP service URLs in the proxy server](#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server).
+> If you're using Transparent proxy or WPAD in your network topology, you don't need special configuration settings. For more information on Windows Defender ATP URL exclusions in the proxy, see [Enable access to Windows Defender ATP service URLs in the proxy server](#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server).
 
 
  - Manual static proxy configuration:
@@ -99,7 +99,7 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
 
 1. Download the [connectivity verification tool](https://go.microsoft.com/fwlink/p/?linkid=823683) to the PC where Windows Defender ATP sensor is running on.
 
-2.  Extract the contents of WDATPConnectivityAnalyzer on the endpoint.
+2.  Extract the contents of WDATPConnectivityAnalyzer on the machine.
 
 3. Open an elevated command-line:
 
@@ -135,5 +135,5 @@ If at least one of the connectivity options returns a (200) status, then the Win
 However, if the connectivity check results indicate a failure, an HTTP error is displayed (see HTTP Status Codes). You can then use the URLs in the table shown in [Enable access to Windows Defender ATP service URLs in the proxy server](#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server). The URLs you'll use will depend on the region selected during the onboarding procedure.
 
 ## Related topics
-- [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)

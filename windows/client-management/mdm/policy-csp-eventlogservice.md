@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 04/02/2018
+ms.date: 04/16/2018
 ---
 
 # Policy CSP - EventLogService
@@ -200,7 +200,7 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies the maximum size of the log file in kilobytes.
 
-If you enable this policy setting, you can configure the maximum log file size to be between 20 megabytes (20480 kilobytes) and 2 terabytes (2147483647 kilobytes) in kilobyte increments.
+If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes) in kilobyte increments.
 
 If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.
 

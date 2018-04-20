@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/12/2018
+ms.date: 04/16/2018
 ---
 
 # Policy CSP - DeliveryOptimization
@@ -1219,8 +1219,10 @@ Note that downloads from LAN peers will not be throttled even when this policy i
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
+-   GP English name: *Maximum Background Download Bandwidth (percentage)*
 -   GP name: *PercentageMaxBackgroundBandwidth*
 -   GP element: *PercentageMaxBackgroundBandwidth*
+-   GP path: *Windows Components/Delivery Optimization*
 -   GP ADMX file name: *DeliveryOptimization.admx*
 
 <!--/ADMXMapped-->
@@ -1231,6 +1233,15 @@ ADMX Info:
 <!--Policy-->
 <a href="" id="deliveryoptimization-dopercentagemaxdownloadbandwidth"></a>**DeliveryOptimization/DOPercentageMaxDownloadBandwidth**  
 
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
 <!--Description-->
 This policy is deprecated. Use [DOPercentageMaxForegroundBandwidth](#deliveryoptimization-dopercentagemaxforegroundbandwidth) and [DOPercentageMaxBackgroundBandwidth](#deliveryoptimization-dopercentagemaxbackgroundbandwidth) policies instead.
 
@@ -1282,8 +1293,10 @@ Note that downloads from LAN peers will not be throttled even when this policy i
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
+-   GP English name: *Maximum Foreground Download Bandwidth (percentage)*
 -   GP name: *PercentageMaxForegroundBandwidth*
 -   GP element: *PercentageMaxForegroundBandwidth*
+-   GP path: *Windows Components/Delivery Optimization*
 -   GP ADMX file name: *DeliveryOptimization.admx*
 
 <!--/ADMXMapped-->
@@ -1388,7 +1401,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. Specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
+Added in Windows&nbsp;10, version 1803. Specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
 
 <!--/Description-->
 > [!TIP]
@@ -1454,7 +1467,7 @@ This policy allows an IT Admin to define the following:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. Specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
+Added in Windows&nbsp;10, version 1803. Specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
 
 <!--/Description-->
 > [!TIP]

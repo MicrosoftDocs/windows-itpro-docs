@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 09/06/2017
+ms.date: 04/23/2018
 ---
 
 # WindowsTeamSettings (reference)
@@ -47,6 +47,11 @@ A device account is a Microsoft Exchange account that is connected with Skype fo
 | UserName  | User name  | Username of the device account when you are using Active Directory.  |
 | UserPrincipalName  | User principal name (UPN)  | To use a device account from Azure Active Directory or a hybrid deployment, you should specify the UPN of the device account.  |
 | ValidateAndCommit  | Any text | Validates the data provided and then commits the changes. This process occurs automatically after the other DeviceAccount settings are applied. The text you enter for the ValidateAndCommit setting doesn't matter. |
+
+## Dot3
+
+Use these settings to configure 802.1x wired authentication. For details, see [Enable 802.1x wired authentication](https://docs.microsoft.com/surface-hub/enable-8021x-wired-authentication).
+
 
 
 ## FriendlyName

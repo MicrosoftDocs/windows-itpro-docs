@@ -54,8 +54,8 @@ Hello for Business (using a PIN to sign in) is supported for HoloLens. It must b
 Yes, the behavior for the type of account impacts the sign-in behavior. If you apply policies for sign-in, the policy is always respected. If no policy for sign-in is applied, these are the default behaviors for each account type.
 
 - Microsoft account: signs in automatically
-- Local account: always asks for password, not configurable by Settings
-- Azure AD: asks for password by default; configurable by Settings to no longer ask for password. 
+- Local account: always asks for password, not configurable in **Settings**
+- Azure AD: asks for password by default; configurable by **Settings** to no longer ask for password. 
 
 >[!NOTE]
 >Inactivity timers are currently not supported, which means that the **AllowIdleReturnWithoutPassword** policy is respected only when the device goes into StandBy. 

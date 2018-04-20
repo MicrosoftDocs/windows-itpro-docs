@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 09/06/2017
+ms.date: 04/23/2018
 ---
 
 # DMClient (Windows Configuration Designer reference)
@@ -18,7 +18,7 @@ Use to specify enterprise-specific mobile device management configuration settin
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| UpdateManagementServiceAddress | X  | X | X | X | X |
+| UpdateManagementServiceAddress | X  | X | X |  | X |
 
 For the **UpdateManagementServiceAddress** setting, enter a list of servers. The first server in the semi-colon delimited list is the server that will be used to instantiate MDM sessions. 
 

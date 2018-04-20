@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerms
 ms.localizationpriority: high
-ms.date: 02/08/2018
+ms.date: 04/23/2018
 ms.author: jdecker
 ---
 
@@ -18,9 +18,14 @@ ms.author: jdecker
 
 **Applies to**
 
--   Windows 10
+-   Windows 10 Pro, Enterprise, and Education
 
-A [kiosk device](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) has been expanded to make it easy for administrators to create kiosks that run more than one app. 
+A [kiosk device](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) has been expanded to make it easy for administrators to create kiosks that run more than one app. In Windows 10, version 1803, you can also:
+
+- Configure [a single-app kiosk profile](#profile) in your XML file.
+- Assign [group accounts to a config profile](#config-for-group-accounts).
+- Configure [an account to sign in automatically](#config-for-autologon-account).
+
 
 The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access. 
 
@@ -121,7 +126,12 @@ You can start your file by pasting the following XML (or any other examples in t
 
 #### Profile
 
-A profile section in the XML has the following entries: 
+There are two types of profiles that you can specify in the XML:
+
+- **Lockdown profile**: Users assigned a lockdown profile will see the desktop in tablet mode with the specific apps on the Start screen.
+- **Kiosk profile**: New in Windows 10, version 1803, this profile replaces the KioskModeApp node of the [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp). Users assigned a kiosk profile will not see the desktop, but only the kiosk app running in full-screen mode.
+
+A lockdown profile section in the XML has the following entries: 
 
 - [**Id**](#id) 
 
@@ -130,6 +140,13 @@ A profile section in the XML has the following entries:
 - [**StartLayout**](#startlayout)
 
 - [**Taskbar**](#taskbar)
+
+A kiosk profile in the XML has the following entries:
+
+- [**Id**](#id) 
+
+- [**KioskModeApp**](#kioskmodeapp)
+
 
 
 ##### Id
@@ -250,15 +267,53 @@ The following example hides the taskbar:
 >[!NOTE]
 >This is different from the **Automatically hide the taskbar** option in tablet mode, which shows the taskbar when swiping up from or moving the mouse pointer down to the bottom of the screen. Setting **ShowTaskbar** as **false** will always keep the taskbar hidden. 
 
+##### KioskModeApp 
+
+**KioskModeApp** is used for a [kiosk profile](#profile) only. Enter the AUMID for a single app. You can only specify one kiosk profile in the XML.
+
+```xml
+<KioskModeApp AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"/>
+```
+
+>[!IMPORTANT]
+>The kiosk profile is designed for public-facing kiosk devices. We recommend that you use a local, non-administrator account. If the device is connected to your company network, using a domain or Azure Active Direcotry account could potentially compromise confidential information.  
+
+
 #### Configs
 
 Under **Configs**, define which user account will be associated with the profile. When this user account signs in on the device, the associated assigned access profile will be enforced, including the allowed apps, Start layout, and taskbar configuration, as well as other local group policies or mobile device management (MDM) policies set as part of the multi-app experience. 
 
-The full multi-app assigned access experience can only work for non-admin users. It’s not supported to associate an admin user with the assigned access profile; doing this in the XML file will result in unexpected/unsupported experiences when this admin user signs in.  
+The full multi-app assigned access experience can only work for non-admin users. It’s not supported to associate an admin user with the assigned access profile; doing this in the XML file will result in unexpected/unsupported experiences when this admin user signs in. 
 
+You can assign:
 
+- [A local standard user account that signs in automatically](#config-for-autologon-account) (Applies to Windows 10, version 1803 only)
+- [An individual account, which can be local, domain, or Azure Active Directory (Azure AD)](#config-for-individual-accounts)
+- [A group account, which can be local, Active Directory (domain), or Azure AD](#config-for-group-accounts) (Applies to Windows 10, version 1803 only) 
 
-The account can be local, domain, or Azure Active Directory (Azure AD). Groups are not supported.
+>[!NOTE]
+>Configs that specify group accounts cannot use a kiosk profile, only a lockdown profile. If a group is configured to a kiosk profile, the CSP will reject the request.  
+
+##### Config for AutoLogon Account
+
+When you use `<AutoLogonAccount>` and the configuration is applied to a device, the specified account (managed by Assigned Access) is created on the device as a local standard user account. The specified account is signed in automatically after restart.
+
+```xml
+<Configs>
+  <Config>
+    <AutoLogonAccount/>
+    <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+  </Config>
+</Configs> 
+```
+
+>[!IMPORTANT]
+>When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature does not work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows}(https://support.microsoft.com/help/324737/how-to-turn-on-automatic-logon-in-windows).
+
+##### Config for individual accounts
+
+Individual accounts are specified using `<Account>`. 
+
 - Local account can be entered as `machinename\account` or `.\account` or just `account`.
 - Domain account should be entered as `domain\account`.
 - Azure AD account must be specified in this format: `AzureAD\{email address}`. **AzureAD** must be provided AS IS (consider it’s a fixed domain name), then follow with the Azure AD email address, e.g. **AzureAD\someone@contoso.onmicrosoft.com**.
@@ -284,10 +339,43 @@ Before applying the multi-app configuration, make sure the specified user accoun
 
 
 
+##### Config for group accounts
+
+Group accounts are specified using `<UserGroup>`. Nested groups are not supported. For example, if user A is member of Group 1, Group 1 is member of Group 2, and Group 2 is used in `<Config/>`, user A will not have the kiosk experience. 
+
+- Local group: Specify the group type as **LocalGroup** and put the group name in Name attribute. 
+
+  ```xml
+  <Config> 
+    <UserGroup Type="LocalGroup" Name="mygroup" /> 
+    <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/> 
+</Config> 
+  ```
+- Domain group: Both security and distribution groups are supported. Specify the group type as **ActiveDirectoryGroup**. Use the domain name as the prefix in the name attribute.
+
+  ```xml
+  <Config> 
+    <UserGroup Type="ActiveDirectoryGroup" Name="mydomain\mygroup" /> 
+    <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/> 
+</Config> 
+  ```
+
+- Azure AD group: Use the group object ID from the Azure portal to uniquely identify the group in the Name attribute. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as **AzureActiveDirectoryGroup**.
+
+  ```xml
+  <Config> 
+    <UserGroup Type="AzureActiveDirectoryGroup" Name="a8d36e43-4180-4ac5-a627-fb8149bba1ac" /> 
+    <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/> 
+</Config> 
+  ```
+
+  >[!NOTE]
+  >If an Azure AD group is configured with a lockdown profile on a device, a user in the Azure AD group must change their password (after the account has been created with default password on the portal) before they can sign in to this device. If the user uses the default password to sign in to the device, the user will be immediately signed out. 
+
 <span id="add-xml" />
 ### Add XML file to provisioning package
 
-Before you add the XML file to a provisioning package, you can [validate your configuration XML against the XSD](multi-app-kiosk-xml.md#xsd-for-assignedaccess-configuration-xml).
+Before you add the XML file to a provisioning package, you can [validate your configuration XML against the XSD](kiosk-xml.md#xsd-for-assignedaccess-configuration-xml).
 
 Use the Windows Configuration Designer tool to create a provisioning package. [Learn how to install Windows Configuration Designer.](provisioning-packages/provisioning-install-icd.md)
 
@@ -602,7 +690,7 @@ Lock the Taskbar	 |	Enabled
 Prevent users from adding or removing toolbars |		Enabled
 Prevent users from resizing the taskbar	 |	Enabled
 Remove frequent programs list from the Start Menu |		Enabled
-Remove Pinned programs from the taskbar	 |	Enabled
+Remove ‘Map Network Drive’ and ‘Disconnect Network Drive’ | Enabled
 Remove the Security and Maintenance icon	 |	Enabled
 Turn off all balloon notifications |		Enabled
 Turn off feature advertisement balloon notifications	 |	Enabled
@@ -626,9 +714,19 @@ Some of the MDM policies based on the [Policy configuration service provider (CS
 Setting	| 	Value	| System-wide
  --- | --- | ---
 [Experience/AllowCortana](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowcortana)		| 0 - Not allowed	| 	Yes
+[Start/AllowPinnedFolderDocuments](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderdocuments) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Start/AllowPinnedFolderDownloads](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderdownloads) |	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Start/AllowPinnedFolderFileExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderfileexplorer) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Start/AllowPinnedFolderHomeGroup](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderhomegroup) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Start/AllowPinnedFolderMusic](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldermusic) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Start/AllowPinnedFolderNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldernetwork) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Start/AllowPinnedFolderPersonalFolder](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderpersonalfolder) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Start/AllowPinnedFolderPictures](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderpictures) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
 [Start/AllowPinnedFolderSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldersettings)	| 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
-Start/HidePeopleBar		| 1 - True (hide)	| 	No
-[Start/HideChangeAccountSettings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-start#start-hidechangeaccountsettings)		| 1 - True (hide) | Yes
+[Start/AllowPinnedFolderVideos](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldervideos) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+Start/DisableContextMenus | 1 - Context menus are hidden for Start apps | No
+[Start/HidePeopleBar](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-hidepeoplebar)		| 1 - True (hide)	| 	No
+[Start/HideChangeAccountSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-hidechangeaccountsettings)		| 1 - True (hide) | Yes
 [WindowsInkWorkspace/AllowWindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace#windowsinkworkspace-allowwindowsinkworkspace)	| 	0 - Access to ink workspace is disabled and the feature is turned off	| 	Yes
 [Start/StartLayout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-startlayout)	| Configuration dependent	| 	No
 [WindowsLogon/DontDisplayNetworkSelectionUI](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-dontdisplaynetworkselectionui)	| 	&lt;Enabled/&gt;	| 	Yes

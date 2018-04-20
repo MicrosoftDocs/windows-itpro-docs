@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 09/14/2017
+ms.date: 04/23/2018
 ---
 
 # HotSpot (Windows Configuration Designer reference)
@@ -47,6 +47,17 @@ If Enabled is initially set to **True**, the feature is turned off and the inter
 
 When Enabled is set to **False**, the internet sharing screen is added to Settings, although sharing is turned off by default until the user turns it on. 
 
+## EntitlementDll
+
+Enter the path to the entitlement DLL used to make entitlement checks that verify that the device is entitled to use the Internet sharing service on a mobile operator's network.
+
+## EntitlementInterval
+
+Enter the time interval, in seconds, between entitlement checks.
+
+## EntitlementRequired
+
+Specify whether the device requires an entitlement check to determine if Internet sharing should be enabled.
 
 ## MaxBluetoothUsers
 

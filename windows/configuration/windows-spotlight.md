@@ -8,7 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
-ms.date: 01/26/2018
+ms.date: 04/23/2018
 ---
 
 # Configure Windows Spotlight on the lock screen
@@ -64,6 +64,8 @@ Windows Spotlight is enabled by default. Windows 10 provides Group Policy and mo
 | **Administrative Templates \ Windows Components \ Cloud Content \ Turn off the Windows Spotlight on Action Center** | **Experience/Allow Windows Spotlight On Action Center** |  Turn off Suggestions from Microsoft that show after each clean install, upgrade, or on an on-going basis to introduce users to what is new or changed | Windows 10 Enterprise and Education, version 1703 |
 | **User Configuration \ Administrative Templates \ Windows Components \ Cloud Content \ Do not use diagnostic data for tailored experiences** | **Experience/Allow Tailored Experiences With Diagnostic Data** | Prevent Windows from using diagnostic data to provide tailored experiences to the user | Windows 10 Pro, Enterprise, and Education, version 1703 |
 | **User Configuration \ Administrative Templates \ Windows Components \ Cloud Content \ Turn off the Windows Welcome Experience** | **Experience/Allow Windows Spotlight Windows Welcome Experience** | Turn off the Windows Spotlight Windows Welcome experience which helps introduce users to Windows, such as launching Microsoft Edge with a web page highlighting new features | Windows 10 Enterprise and Education, version 1703 |
+**User Configuration \ Administrative Templates \ Windows Components \ Cloud Content \ Turn off the Windows Spotlight on Settings** | **Experience/Allow Windows Spotlight on Settings** | Turn off the Windows Spotlight in the Settings app. | Windows 10 Enterprise and Education, version 1803 |
+
 
 
  In addition to the specific policy settings for Windows Spotlight, administrators can replace Windows Spotlight with a selected image using the Group Policy setting **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Force a specific default lock screen image**.

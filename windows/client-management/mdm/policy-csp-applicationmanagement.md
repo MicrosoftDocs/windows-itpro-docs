@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/12/2018
+ms.date: 04/16/2018
 ---
 
 # Policy CSP - ApplicationManagement
@@ -597,20 +597,14 @@ This policy setting is designed for less restrictive environments. It can be use
 ADMX Info:  
 -   GP English name: *Allow user control over installs*
 -   GP name: *EnableUserControl*
+-   GP path: *Windows Components/Windows Installer*
 -   GP ADMX file name: *MSI.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 This setting supports a range of values between 0 and 1.
 
-
 <!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -661,25 +655,20 @@ If you disable or do not configure this policy setting, the system applies the c
 Note: This policy setting appears both in the Computer Configuration and User Configuration folders. To make this policy setting effective, you must enable it in both folders.
 
 Caution: Skilled users can take advantage of the permissions this policy setting grants to change their privileges and gain permanent access to restricted files and folders. Note that the User Configuration version of this policy setting is not guaranteed to be secure.
+
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Always install with elevated privileges*
 -   GP name: *AlwaysInstallElevated*
+-   GP path: *Windows Components/Windows Installer*
 -   GP ADMX file name: *MSI.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 This setting supports a range of values between 0 and 1.
 
-
 <!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -729,7 +718,9 @@ Most restricted value is 1.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
+-   GP English name: *Only display the private store within the Microsoft Store*
 -   GP name: *RequirePrivateStoreOnly*
+-   GP path: *Windows Components/Store*
 -   GP ADMX file name: *WindowsStore.admx*
 
 <!--/ADMXMapped-->
