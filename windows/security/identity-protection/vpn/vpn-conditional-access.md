@@ -7,9 +7,10 @@ ms.sitesec: library
 ms.pagetype: security, networking
 author: shortpatti
 ms.author: pashort
+manager: elizapo
 ms.reviewer: 
 ms.localizationpriority: high
-ms.date: 04/17/2018
+ms.date: 04/20/2018
 ---
 
 # VPN and conditional access
@@ -44,7 +45,6 @@ Conditional Access Platform components used for Device Compliance include the fo
     - Encryption compliance
     - Device health attestation state (validated against attestation service after query)
 
-
 The following client-side components are also required:
 - [HealthAttestation Configuration Service Provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn934876.aspx)
 - [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) DeviceCompliance node settings
@@ -61,8 +61,6 @@ Server-side infrastructure requirements to support VPN device compliance include
    -	Domain servers trust Azure AD CA
    -	A domain-trusted certificate is deployed to the client device and is configured to be used for single sign-on (SSO)
    
-
-
 After the server side is set up, VPN admins can add the policy settings for conditional access to the VPN profile using the VPNv2 DeviceCompliance node.
 
 Two client-side configuration service providers are leveraged for VPN device compliance.
@@ -111,9 +109,7 @@ See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://msdn.m
 - [Tip of the Day: The Conditional Access Framework and Device Compliance for VPN (Part 4)](https://blogs.technet.microsoft.com/tip_of_the_day/2016/03/16/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn-part-4/)
 
 
-
 ## Related topics
-
 - [VPN technical guide](vpn-guide.md)
 - [VPN connection types](vpn-connection-type.md)
 - [VPN routing decisions](vpn-routing.md)
