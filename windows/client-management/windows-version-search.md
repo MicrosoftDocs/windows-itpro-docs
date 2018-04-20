@@ -12,7 +12,7 @@ ms.date: 04/20/2018
 
 # What version of Windows am I running?
 
-To determine if your device is enrolled in the [Long-Term Servicing Channel](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels) (LTSC) or the [Semi-Annual Channel](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels) (SAC) you will need to know what version of Windows 10 you are running. There are a few separate ways to figure out which version of Windows you are running. Each method will reveal a varied set of details, so it’s useful to learn about all of them. 
+To determine if your device is enrolled in the [Long-Term Servicing Channel](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels) (LTSC, formerly LTSB) or the [Semi-Annual Channel](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels) (SAC) you will need to know what version of Windows 10 you are running. There are a few separate ways to figure out which version of Windows you are running. Each method will reveal a varied set of details, so it’s useful to learn about all of them. 
 
 ## System Properties
 1.	Click the **start** button
@@ -33,8 +33,8 @@ Alternatively, in the search bar you can type **“msinfo”** to display the in
 
 ![screenshot of the System Information display text](images/msinfosnip.jpg)
 
-## Related topics
+## What does it all mean?
 
-[Assign devices to servicing channels for Windows 10 updates](https://docs.microsoft.com/en-us/windows/deployment/update/waas-servicing-channels-windows-10-updates)<BR>
-[Overview of WIndows as a service](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview)<BR>
-[Windows 10 release information](https://www.microsoft.com/en-us/itpro/windows-10/release-information)
+The Long-term Servicing Channel is available only in the Windows 10 Enterprise LTSB edition. This build of Windows doesn’t contain many in-box applications, such as Microsoft Edge, Microsoft Store, Cortana (limited search capabilities remain available), Microsoft Mail, Calendar, OneNote, Weather, News, Sports, Money, Photos, Camera, Music, and Clock. Therefore, it’s important to remember that Microsoft has positioned the LTSC model primarily for specialized devices.
+
+In the Semi-Annual servicing channel, feature updates are available as soon as Microsoft releases them. This servicing modal is ideal for pilot deployments and testing of Windows 10 feature updates and for users such as developers who need to work with the latest features immediately. Once the latest release went through pilot deployment and testing, you choose the timing at which it goes into broad deployment.
