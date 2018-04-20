@@ -223,7 +223,7 @@ Added in Windows 10, version 1803. Configures the default URL kiosk browsers to 
 
 <!--/Scope-->
 <!--Description-->
-Enables kiosk browser's end session button. When the policy is enabled, the kiosk browser enables a button to reset the browser by navigating back to the default URL and clearing the browsing data (cache, cookies, etc). When the user clicks on the button, the app will prompt the user for confirmation to end the session.
+Shows the Kiosk Browser's end session button. When the policy is enabled, the Kiosk Browser app shows a button to reset the browser. When the user clicks on the button, the app will prompt the user for confirmation to end the session. When the user confirms, the Kiosk broswser will clear all browsing data (cache, cookies, etc.) and navigate back to the default URL.
 
 <!--/Description-->
 <!--SupportedValues-->
