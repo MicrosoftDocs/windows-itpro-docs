@@ -11,7 +11,7 @@ ms.date: 03/21/2018
 author: Mikeblodge
 ---
 
-# Windows 10 Pro in S mode
+# Windows 10 Pro/Enterprise in S mode
 
 S mode is an enhanced security mode of Windows 10. Windows 10 Pro and Enterprise in S mode powers affordable, cloud-ready devices that are simple, secure, and efficient. Users can get started quickly, thanks to self-service deployment and a familiar Windows experience. Low-price S mode devices offer tailored solutions for kiosks, digital signs, and task work. If your device is running Windows 10, version 1709, or Windows 10, version 1803, you can switch from Windows 10 in S mode to Windows 10 Pro.
 

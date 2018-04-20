@@ -11,7 +11,7 @@ ms.date: 03/21/2018
 author: Mikeblodge
 ---
 
-# Switch from Windows 10 Pro in S mode to Windows 10 EDU in S mode
+# Switch from Windows 10 Pro in S mode to Windows 10 Education in S mode
 
 S mode is an enhanced security mode of Windows 10 – streamlined for security and superior performance. With Windows 10 in S mode, everyone can download and install Microsoft-verified apps from the Microsoft Store for Education – this keep devices running fast and secure day in and day out. 
 
@@ -64,7 +64,7 @@ Currently, individual users can switch out of S mode at any time. To prevent thi
 2. **Key acquisition options** - For schools with **active Microsoft Volume Licensing** agreements, global admins can obtain free MAK keys for Windows 10 Pro Education. For schools without an active Microsoft Volume Licensing agreement, the global admin can contact CSS, fill out a form and provide a proof of purchase to receive MAK keys for Windows 10 Pro Education.
 
 > [!NOTE]
-> There is currently no "bulk-switch" option for 1803 devices. 
+> There is currently no "bulk-switch" option for devices running Windows 10, version 1803. 
 
 ## Related Topics
 [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)<BR> 
