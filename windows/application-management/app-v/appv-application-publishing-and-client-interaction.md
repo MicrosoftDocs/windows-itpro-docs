@@ -80,7 +80,7 @@ For information about sequencing, see [How to Sequence a New Application with Ap
 
 The appv file is a container that stores XML and non-XML files together in a single entity. This file is built from the AppX format, which is based on the Open Packaging Conventions (OPC) standard.
 
-To view the appv file contents, make a copy of the package, and then rename the copied file to a ZIP extension.
+To view the appv file contents, make a copy of the package, and then rename the copied file to a .zip extension.
 
 The appv file contains the following folder and files, which are used when creating and publishing a virtual application:
 
@@ -385,7 +385,7 @@ The following locations are configured as pass-through locations by default:
 
 - HKEY\_CURRENT\_USER\\SOFTWARE\\Policies
 
-The purpose of Pass-through keys is to ensure that a virtual application does not write registry data in the VReg that is required for non-virtual applications for successful operation or integration. The Policies key ensures that Group Policy-based settings set by the administrator are utilized and not per package settings. The AppModel key is required for integration with Windows Modern UI-based applications. Administers ideally should not modify any of the default pass-through keys, but in some instances, based on application behavior the admin may need to add additional pass-through keys.
+The purpose of pass-through keys is to ensure that a virtual application does not write registry data in the VReg that is required for non-virtual applications for successful operation or integration. The Policies key ensures that Group Policy-based settings set by the administrator are utilized and not per package settings. The AppModel key is required for integration with Windows Modern UI-based applications. Administers ideally should not modify any of the default pass-through keys, but in some instances, based on application behavior the admin may need to add additional pass-through keys.
 
 ## App-V package store behavior
 
@@ -563,7 +563,7 @@ The following table shows local and roaming locations, when folder redirection h
 | appv_ROOT | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\\&lt;GUID&gt;\appv\_ROOT |
 | AppData | \\Fileserver\users\Local\roaming\Microsoft\AppV\Client\VFS\\&lt;GUID&gt;\AppData |
 
-The current App-V Client VFS driver cannot write to network locations, so the App-V Client detects the presence of folder redirection and copies the data on the local drive during publishing and when the virtual environment starts. After the user closes the App-V application and the App-V Client closes the virtual environment, the local storage of the VFS AppData is copied back to the network, enabling roaming to additional machines, where the process will be repeated. The detailed steps of the processes are:
+The current App-V Client VFS driver can't write to network locations, so the App-V Client detects the presence of folder redirection and copies the data on the local drive during publishing and when the virtual environment starts. After the user closes the App-V application and the App-V Client closes the virtual environment, the local storage of the VFS AppData is copied back to the network, enabling roaming to additional machines, where the process will be repeated. The detailed steps of the processes are:
 
 1. During publishing or virtual environment startup, the App-V Client detects the location of the AppData directory.
 2. If the roaming AppData path is local or ino AppData\\Roaming location is mapped, nothing happens.
@@ -572,19 +572,19 @@ The current App-V Client VFS driver cannot write to network locations, so the Ap
 This process solves the problem of a non-local %AppData% that is not supported by the App-V Client VFS driver. However, the data stored in this new location is not roamed with folder redirection. All changes during the running of the application happen to the local AppData location and must be copied to the redirected location. The detailed steps of this process are:
 
 1. App-V application is shut down, which shuts down the virtual environment.
-2. The local cache of the roaming AppData location is compressed and stored in a ZIP file.
-3. A timestamp at the end of the ZIP packaging process is used to name the file.
+2. The local cache of the roaming AppData location is compressed and stored in a .zip file.
+3. A timestamp at the end of the .zip packaging process is used to name the file.
 4. The timestamp is recorded in the registry: HKEY\_CURRENT\_USER\\Software\\Microsoft\\AppV\\Client\\Packages\\&lt;GUID&gt;\\AppDataTime as the last known AppData timestamp.
-5. The folder redirection process is called to evaluate and initiate the ZIP file uploaded to the roaming AppData directory.
+5. The folder redirection process is called to evaluate and initiate the .zip file uploaded to the roaming AppData directory.
 
 The timestamp is used to determine a “last writer wins” scenario if there is a conflict and is used to optimize the download of the data when the App-V application is published or the virtual environment is started. Folder redirection will make the data available from any other clients covered by the supporting policy and will initiate the process of storing the AppData\\Roaming data to the local AppData location on the client. The detailed processes are:
 
 1. The user starts the virtual environment by starting an application.
-2. The application’s virtual environment checks for the most recent time stamped ZIP file, if present.
+2. The application’s virtual environment checks for the most recent time stamped .zip file, if present.
 3. The registry is checked for the last known uploaded timestamp, if present.
-4. The most recent ZIP file is downloaded unless the local last known upload timestamp is greater than or equal to the timestamp from the ZIP file.
-5. If the local last known upload timestamp is earlier than that of the most recent ZIP file in the roaming AppData location, the ZIP file is extracted to the local temp directory in the user’s profile.
-6. After the ZIP file is successfully extracted, the local cache of the roaming AppData directory is renamed and the new data is moved into place.
+4. The most recent .zip file is downloaded unless the local last known upload timestamp is greater than or equal to the timestamp from the .zip file.
+5. If the local last known upload timestamp is earlier than that of the most recent .zip file in the roaming AppData location, the .zip file is extracted to the local temp directory in the user’s profile.
+6. After the .zip file is successfully extracted, the local cache of the roaming AppData directory is renamed and the new data is moved into place.
 7. The renamed directory is deleted and the application opens with the most recently saved roaming AppData data.
 
 This completes the successful roaming of application settings that are present in AppData\\Roaming locations. The only other condition that must be addressed is a package repair operation. The details of the process are:
