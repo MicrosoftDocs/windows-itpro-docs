@@ -33,7 +33,7 @@ To understand if AppLocker is the correct application control solution for your 
 | [Select the types of rules to create](select-types-of-rules-to-create.md) | This topic lists resources you can use when selecting your application control policy rules by using AppLocker. |
 | [Determine the Group Policy structure and rule enforcement](determine-group-policy-structure-and-rule-enforcement.md) | This overview topic describes the process to follow when you are planning to deploy AppLocker rules. |
 | [Plan for AppLocker policy management](plan-for-applocker-policy-management.md) | This topic for describes the decisions you need to make to establish the processes for managing and maintaining AppLocker policies. |
-| [Create your AppLocker planning document](create-your-applocker-planning-document.md) | This planning topic for the IT professional summarizes the information you need to research and include in your AppLocker planning document. | 
+
  
 After careful design and detailed planning, the next step is to deploy AppLocker policies. [AppLocker Deployment Guide](applocker-policies-deployment-guide.md) covers the creation and testing of policies, deploying the enforcement setting, and managing and maintaining the policies.
  

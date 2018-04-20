@@ -31,7 +31,7 @@ You can develop an application control policy plan to guide you in making succes
 5.  [Select the types of rules to create](select-types-of-rules-to-create.md)
 6.  [Determine the Group Policy structure and rule enforcement](determine-group-policy-structure-and-rule-enforcement.md)
 7.  [Plan for AppLocker policy management](plan-for-applocker-policy-management.md)
-8.  [Create your AppLocker planning document](create-your-applocker-planning-document.md)
+
 
 ## Step 2: Create your rules and rule collections
 

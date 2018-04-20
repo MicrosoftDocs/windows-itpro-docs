@@ -37,7 +37,6 @@ The following are prerequisites or recommendations to deploying policies:
     -   [Select types of rules to create](select-types-of-rules-to-create.md)
     -   [Determine Group Policy Structure and rule enforcement](determine-group-policy-structure-and-rule-enforcement.md)
     -   [Plan for AppLocker policy management](plan-for-applocker-policy-management.md)
-    -   [Create your AppLocker planning document](create-your-applocker-planning-document.md)
 
 ## Contents of this guide
 

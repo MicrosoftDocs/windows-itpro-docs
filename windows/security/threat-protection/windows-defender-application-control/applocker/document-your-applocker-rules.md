@@ -118,4 +118,3 @@ For each rule, determine whether to use the allow or deny option. Then, three ta
 
 -   [Determine Group Policy structure and rule enforcement](determine-group-policy-structure-and-rule-enforcement.md)
 -   [Plan for AppLocker policy management](plan-for-applocker-policy-management.md)
--   [Create your AppLocker planning document](create-your-applocker-planning-document.md)

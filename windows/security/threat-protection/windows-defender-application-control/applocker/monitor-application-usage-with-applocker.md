@@ -22,7 +22,7 @@ Once you set rules and deploy the AppLocker policies, it is good practice to det
 
 ### <a href="" id="bkmk-applkr-disc-effect-pol"></a>Discover the effect of an AppLocker policy
 
-You can evaluate how the AppLocker policy is currently implemented for documentation or audit purposes, or before you modify the policy. Updating your AppLocker Policy Deployment Planning document will help you track your findings. For information about creating this document, see [Create your AppLocker planning document](create-your-applocker-planning-document.md). You can perform one or more of the following steps to understand what application controls are currently enforced through AppLocker rules.
+You can evaluate how the AppLocker policy is currently implemented for documentation or audit purposes, or before you modify the policy. Updating your AppLocker Policy Deployment Planning document will help you track your findings. You can perform one or more of the following steps to understand what application controls are currently enforced through AppLocker rules.
 
 -   **Analyze the AppLocker logs in Event Viewer**
 

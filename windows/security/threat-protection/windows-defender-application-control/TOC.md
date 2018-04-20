@@ -84,8 +84,6 @@
 ##### [Understand AppLocker rules and enforcement setting inheritance in Group Policy](applocker\understand-applocker-rules-and-enforcement-setting-inheritance-in-group-policy.md)
 ##### [Document the Group Policy structure and AppLocker rule enforcement](applocker\document-group-policy-structure-and-applocker-rule-enforcement.md)
 #### [Plan for AppLocker policy management](applocker\plan-for-applocker-policy-management.md)
-##### [Document your application control management processes](applocker\document-your-application-control-management-processes.md)
-#### [Create your AppLocker planning document](applocker\create-your-applocker-planning-document.md)
 ### [AppLocker deployment guide](applocker\applocker-policies-deployment-guide.md)
 #### [Understand the AppLocker policy deployment process](applocker\understand-the-applocker-policy-deployment-process.md)
 #### [Requirements for Deploying AppLocker Policies](applocker\requirements-for-deploying-applocker-policies.md)

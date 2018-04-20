@@ -124,6 +124,6 @@ The following table includes the sample data that was collected when you determi
 
 After you have determined the Group Policy structure and rule enforcement strategy for each business group's apps, the following tasks remain:
 -   [Plan for AppLocker policy management](plan-for-applocker-policy-management.md)
--   [Create your AppLocker planning document](create-your-applocker-planning-document.md)
+
  
  
