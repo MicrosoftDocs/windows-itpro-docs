@@ -7,7 +7,7 @@ ms.sitesec: library
 author: JaimeO
 ms.localizationpriority: high
 ms.author: jaimeo
-ms.date: 04/13/2018
+ms.date: 04/20/2018
 ---
 
 # Configure Delivery Optimization for Windows 10 updates
@@ -27,13 +27,14 @@ Delivery Optimization is a cloud-managed solution. Access to the Delivery Optimi
 >[!NOTE]
 >WSUS can also use [BranchCache](waas-branchcache.md) for content sharing and caching. If Delivery Optimization is enabled on devices that use BranchCache, Delivery Optimization will be used instead. 
 
-Delivery Optimization is supported in the following minimum versions of Windows 10:
-| Windows 
-Platform	Minimum Build
-Desktop	1511
-Server Core	1709
-IoT	1804
-HoloLens	1804
+The following table lists the minimum Windows 10 version that supports Delivery Optimization:
+
+| Device type | Minimum Windows version |
+|------------------|---------------|
+| Computers running Windows 10 | 1511 |
+| Computers running Server Core installations of Windows Server | 1709 |
+| IoT devices | 1804 |
+| HoloLens devices | 1804 |
 
 
 By default in Windows 10 Enterprise and Education editions, Delivery Optimization allows peer-to-peer sharing on the organization's own network only, but you can configure it differently in Group Policy and mobile device management (MDM) solutions such as Microsoft Intune.
@@ -73,8 +74,8 @@ Several Delivery Optimization features are configurable:
 | [SetHoursToLimitForegroundDownloadBandwidth](#set-business-hours-to-limit-foreground-download-bandwidth)  |DOSetHoursToLimitForegroundDownloadBandwidth | 1803 |
 | [Select a method to restrict Peer Selection](#select-a-method-to-restrict-peer-selection) |DORestrictPeerSelectionBy | 1803 |
 | [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIdSource | 1803 |
-| [Delay background download from http (in secs)](delay-background-download-from-http-in-secs) | DODelayBackgroundDownloadFromHttp | 1803 |
-| [Delay foreground download from http (in secs)](delay-foreground-download-from-http-in-secs) | DODelayForegroundDownloadFromHttp | 1803 |
+| [Delay background download from http (in secs)](#delay-background-download-from-http-in-secs) | DODelayBackgroundDownloadFromHttp | 1803 |
+| [Delay foreground download from http (in secs)](#delay-foreground-download-from-http-in-secs) | DODelayForegroundDownloadFromHttp | 1803 |
 
  
 
@@ -100,14 +101,14 @@ Additional options available that control the impact Delivery Optimization has o
 - [Max Upload Bandwidth](#max-upload-bandwidth) controls the Delivery Optimization upload bandwidth usage.
 - [Monthly Upload Data Cap](#monthly-upload-data-cap) controls the amount of data a client can upload to peers each month.
 - [Minimum Background QoS](#minimum-background-qos) lets administrators guarantee a minimum download speed for Windows updates. This is achieved by adjusting the amount of data downloaded directly from Windows Update or WSUS servers, rather than other peers in the network.
-- [Maximum Foreground Download Bandwidth](#) specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth.
-- [Maximum Background Download Bandwidth](#) specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth.
-- [Set Business Hours to Limit Background Download Bandwidth](#) specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
-- [Set Business Hours to Limit Foreground Download Bandwidth](#) specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
-- [Select a method to restrict Peer Selection](#) restricts peer selection by the options you select.
-- [Select the source of Group IDs](#) restricts peer selection to a specific source.
-- [Delay background download from http (in secs)](#) allows you to delay the use of an HTTP source in a background download that is allowed to use P2P.
-- [Delay foreground download from http (in secs)](#) allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use P2P.
+- [Maximum Foreground Download Bandwidth](#maximum-foreground-download-bandwidth) specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth.
+- [Maximum Background Download Bandwidth](#maximum-background-download-bandwidth) specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth.
+- [Set Business Hours to Limit Background Download Bandwidth](#set-business-hours-to-limit-background-download-bandwidth) specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
+- [Set Business Hours to Limit Foreground Download Bandwidth](#set-business-hours-to-limit-foreground-download-bandwidth) specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
+- [Select a method to restrict Peer Selection](#select-a-method-to-restrict-peer-selection) restricts peer selection by the options you select.
+- [Select the source of Group IDs](#select-the-source-of-group-ids) restricts peer selection to a specific source.
+- [Delay background download from http (in secs)](#delay-background-download-from-http-in-secs) allows you to delay the use of an HTTP source in a background download that is allowed to use P2P.
+- [Delay foreground download from http (in secs)](#delay-foreground-download-from-http-in-secs) allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use P2P.
 
 
 Administrators can further customize scenarios where Delivery Optimization will be used with the following settings:
@@ -121,11 +122,11 @@ At Microsoft, to help ensure that ongoing deployments weren’t affecting our ne
 
 For more details, check out the [Adopting Windows as a Service at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft) technical case study.
 
-Provided below is a detailed description of every configurable feature setting. Use these details when configuring any of the above settings.
+The following is a detailed description of every configurable feature setting. Use these details when configuring any of the settings.
 
 ### Download mode
 
-Download mode dictates which download sources clients are allowed to use when downloading Windows updates in addition to Windows Update servers. The following table shows the available download mode options and what they do.
+Download mode dictates which download sources clients are allowed to use when downloading Windows updates in addition to Windows Update servers. The following table shows the available download mode options and what they do. Additional technical details for these policies are available in [Policy CSP - Delivery Optimization](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization).
 
 | Download mode option | Functionality when set |
 | --- | --- |
@@ -345,6 +346,10 @@ If `Path` is not specified, this cmdlet reads all logs from the dosvc log direct
  
 Log entries are written to the PowerShell pipeline as objects. To dump logs to a text file, run `Get-DeliveryOptimizationLog | Set-Content <output file>` or something similar.
 
+`Get-DeliveryOptimizationPerfSnapThisMonth`
+
+Returns data similar to that from `Get-DeliveryOptimizationPerfSnap` but limited to the current calendar month.
+
 ## Frequently asked questions
 
 **Does Delivery Optimization work with WSUS?**: Yes. Devices will obtain the update payloads from the WSUS server, but must also have an internet connection as they communicate with the Delivery Optimization cloud service for coordination.
@@ -366,6 +371,7 @@ For the payloads (optional):
 
 - *.download.windowsupdate.com 
 - *.windowsupdate.com
+
 
 
 
