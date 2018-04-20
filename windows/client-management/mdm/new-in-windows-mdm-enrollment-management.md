@@ -1340,7 +1340,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <tr>
 <td style="vertical-align:top">[AccountManagement CSP](accountmanagement-csp.md)</td>
 <td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
-</ul>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[RootCATrustedCertificates CSP](rootcacertificates-csp.md)</td>
@@ -1355,6 +1354,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <ul>
 <li>ProxySettingsPerUser</li>
 </ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Accounts CSP](accounts-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
 </td></tr>
 </tbody>
 </table>
@@ -1652,6 +1655,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>ProxySettingsPerUser</li>
 </ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Accounts CSP](accounts-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
