@@ -106,7 +106,7 @@ Here are the typical installed Windows apps in Windows 10 versions 1703, 1709, a
 | Photoshop Express  | AdobeSystemIncorporated. AdobePhotoshop  | x    | x    | x    | Yes                  |
 | Duolingo           | D5EA27B7.Duolingo- LearnLanguagesforFree | x    | x    | x    | Yes                  |
 | Network Speed Test | Microsoft.NetworkSpeedTest               | x    | x    | x    | Yes                  |
-| Paid Wi-FI         |                                          | x    |      |      | Yes                  |
+| News                            | Microsoft.BingNews                     | x    |  x   | x    | Yes                       |
 | Flipboard          |                                          |      |      |      | Yes                  |
 |                    | Microsoft.Advertising.Xaml               | x    | x    | x    | Yes                  |
 |                    | Microsoft.NET.Native.Framework.1.2       | x    | x    | x    | Yes                  |
@@ -149,8 +149,8 @@ Here are the typical provisioned Windows apps in Windows 10 versions 1703, 1709,
 | Messaging                       | Microsoft.Messaging                    | x    |  x   | x    | No                        |
 | Microsoft 3D Viewer             | Microsoft.Microsoft3DViewer            | x    |  x   | x    | No                        |
 | Movies & TV                     | Microsoft.ZuneVideo                    | x    |  x   | x    | No                        |
-| News                            | Microsoft.BingNews                     | x    |  x   | x    | Yes                       |
 | OneNote                         | Microsoft.Office.OneNote               | x    |  x   | x    | Yes                       |
+| Paid Wi-FI         | Microsoft.OneConnect_8wekyb3d8bbwe       | x    |x      | x     | Yes                  |
 | Paint 3D                        | Microsoft.MSPaint                      | x    |  x   | x    | No                        |
 | People                          | Microsoft.People                       | x    |  x   | x    | No                        |
 | Photos                          | Microsoft.Windows.Photos               | x    |  x   | x    | No                        |
