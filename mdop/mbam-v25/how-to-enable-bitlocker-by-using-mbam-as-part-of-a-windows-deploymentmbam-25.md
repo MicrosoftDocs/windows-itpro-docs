@@ -328,3 +328,6 @@ Here are a list of common error messages:
 
 [Planning for MBAM 2.5 Client Deployment](planning-for-mbam-25-client-deployment.md)
 
+## Got a suggestion for MBAM?
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
