@@ -139,6 +139,9 @@ Info collected at the Enhanced and Full levels of diagnostic data is typically g
 
 All diagnostic data data is encrypted using SSL and uses certificate pinning during transfer from the device to the Microsoft Data Management Service. With Windows 10, data is uploaded on a schedule that is sensitive to event priority, battery use, and network cost. Real-time events, such as Windows Defender Advanced Threat Protection, are always sent immediately. Normal events are not uploaded on metered networks, unless you are on a metered server connection. On a free network, normal events can be uploaded every 4 hours if on battery, or every 15 minutes if on A/C power. Diagnostic and crash data are only uploaded on A/C power and free networks.
 
+The data transmitted at the Basic and Enhanced data diagnostic levels is quite small; typically less than 1 MB per device per day,  but occasionally up to 2 MB per device per day).
+
+
 ### Endpoints
 
 The Microsoft Data Management Service routes data back to our secure cloud storage. Only Microsoft personnel with a valid business justification are permitted access.
