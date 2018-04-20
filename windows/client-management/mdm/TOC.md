@@ -70,6 +70,8 @@
 ## [Configuration service provider reference](configuration-service-provider-reference.md)
 ### [AccountManagement CSP](accountmanagement-csp.md)
 #### [AccountManagement DDF file](accountmanagement-ddf.md)
+### [Accounts CSP](accounts-csp.md)
+#### [Accounts DDF file](accounts-ddf-file.md)
 ### [ActiveSync CSP](activesync-csp.md)
 #### [ActiveSync DDF file](activesync-ddf-file.md)
 ### [AllJoynManagement CSP](alljoynmanagement-csp.md)
