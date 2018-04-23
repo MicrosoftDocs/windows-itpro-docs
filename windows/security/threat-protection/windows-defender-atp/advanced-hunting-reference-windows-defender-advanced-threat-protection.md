@@ -97,7 +97,7 @@ Use the following table to understand what the columns represent, its data type,
 | RemoteUrl                           | string      | URL or fully qualified domain name (FQDN) that was being connected to.                                                                                                                                                                                         |
 | ReportIndex                         | long        | Event identifier that is unique among the same event type.                                                                                                                                                                                                     |
 | SHA1                                | string      | SHA-1 of the file that the recorded action was applied to.                                                                                                                                                                                                     |
-| SHA256                              | string      | SHA-256 of the file that the recorded action was applied to. This field is usually not populated - please use the SHA-1 field when available.                                                                                     
+| SHA256                              | string      | SHA-256 of the file that the recorded action was applied to. This field is usually not populated—use the SHA1 column when available.                                                                                     
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-belowfoldlink)        
 
