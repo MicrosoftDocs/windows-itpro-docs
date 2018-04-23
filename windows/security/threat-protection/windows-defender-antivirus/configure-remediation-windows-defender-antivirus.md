@@ -65,6 +65,13 @@ Quarantine | Configure removal of items from Quarantine folder | Specify how man
 Threats | Specify threat alert levels at which default action should not be taken when detected | Every threat that is detected by Windows Defender AV is assigned a threat level (low, medium, high, or severe). You can use this setting to define how all threats for each of the threat levels should be remediated (quarantined, removed, or ignored) | Not applicable
 Threats | Specify threats upon which default action should not be taken when detected | Specify how specific threats (using their threat ID) should be remediated. You can specify whether the specific threat should be quarantined, removed, or ignored | Not applicable
 
+>[!IMPORTANT]
+>Windows Defender Antivirus detects and remediates files based on many factors.  Sometimes, completing a remediation requires a reboot.  Even if the detection is later determined to be a false positive, the reboot must be completed to ensure all additonal remediation steps have been completed.
+></p>
+>If you are certain Windows Defender AV quarantined a file based on a false positive, you can restore the file from quarantine after the device reboots. See [Restore quarantined files in Windows Defender AV](restore-quarantined-files-windows-defender-antivirus.md).
+></p>
+>To avoid this problem in the future, you can exclude files from the scans. See [Configure and validate exclusions for Windows Defender AV scans](configure-exclusions-windows-defender-antivirus.md).
+
 
 Also see the [Configure remediation-required scheduled full scans for Windows Defender AV](scheduled-catch-up-scans-windows-defender-antivirus.md#remed) topic for more remediation-related settings.
 

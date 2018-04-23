@@ -242,6 +242,7 @@
 #### [Configure and run scans](windows-defender-antivirus\run-scan-windows-defender-antivirus.md)
 #### [Review scan results](windows-defender-antivirus\review-scan-results-windows-defender-antivirus.md)
 #### [Run and review the results of a Windows Defender Offline scan](windows-defender-antivirus\windows-defender-offline.md)
+#### [Restore quarantined files in Windows Defender AV](windows-defender-antivirus\restore-quarantined-files-windows-defender-antivirus.md)
 
 
 ### [Review event logs and error codes to troubleshoot issues](windows-defender-antivirus\troubleshoot-windows-defender-antivirus.md)
