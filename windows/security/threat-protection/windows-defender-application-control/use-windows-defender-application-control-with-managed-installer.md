@@ -34,9 +34,6 @@ If there are no deny rules present for the file, it will be authorized based on 
 Admins needs to ensure that there is a WDAC policy in place to allow the system to boot and run any other authorized applications that may not be deployed through a managed installer. 
 Examples of WDAC policies available in C:\Windows\schemas\CodeIntegrity\ExamplePolicies help authorize Windows OS components, WHQL signed drivers and all Store apps. 
 
-> [!NOTE] 
-> Only one SiPolicy.p7b file can be active on a system. The last management authority to write the policy wins. If there was already a policy deployed by using Group Policy and then SCCM targeted the same device, the SCCM policy would overwrite the SiPolicy.p7b file.
-
 ## Configuring a managed installer with AppLocker and Windows Defender Application Control
 
 Setting up managed installer tracking and application execution enforcement requires applying both an AppLocker and WDAC policy with specific rules and options enabled. 

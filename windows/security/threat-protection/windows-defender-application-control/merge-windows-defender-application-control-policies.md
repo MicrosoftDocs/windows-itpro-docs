@@ -18,10 +18,10 @@ ms.date: 02/27/2018
 -   Windows 10
 -   Windows Server 2016
 
-When you develop WDAC policies, you will occasionally need to merge two policies. A common example is when a WDAC policy is initially created and audited. Another example is when you create a single master policy by using multiple policies previously created from reference computers. Because each computer running Windows 10 can have only one WDAC policy, it is important to properly maintain these policies. In this example, audit events have been saved into a secondary WDAC policy that you then merge with the initial WDAC policy.
+Because each computer running Windows 10 can have only one WDAC policy, you will occasionally need to merge two or more policies. For example, after a WDAC policy is created and audited, you might want to merge audit events from another WDAC policy.
 
-> [!Note] 
-> The following example uses several of the WDAC policy .xml files that you created in earlier sections in this topic. You can follow this process, however, with any two WDAC policies you would like to combine.
+> [!NOTE] 
+> Because only one SiPolicy.p7b file can be active on a system, the last management authority to write the policy wins. If there was already a policy deployed by using Group Policy and then amanaged installer using System Center Configuration Manager (SCCM) targeted the same device, the SCCM policy would overwrite the SiPolicy.p7b file.
 
 To merge two WDAC policies, complete the following steps in an elevated Windows PowerShell session:
 
