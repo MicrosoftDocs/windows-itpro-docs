@@ -107,3 +107,4 @@
 ## [Understand apps in Windows 10](apps-in-windows-10.md)
 ## [Deploy app upgrades on Windows 10 Mobile](deploy-app-upgrades-windows-10-mobile.md)
 ## [Change history for Application management](change-history-for-application-management.md)
+## [How to keep apps removed from Windows 10 from returning during an upgrade](remove-provisioned-apps-during-update.md)
