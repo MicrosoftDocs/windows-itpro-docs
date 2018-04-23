@@ -66,7 +66,7 @@ Threats | Specify threat alert levels at which default action should not be take
 Threats | Specify threats upon which default action should not be taken when detected | Specify how specific threats (using their threat ID) should be remediated. You can specify whether the specific threat should be quarantined, removed, or ignored | Not applicable
 
 >[!IMPORTANT]
->Windows Defender Antivirus detects and remediates files based on many factors.  Sometimes, completing a remediation requires a reboot.  Even if the detection is later determined to be a false positive, the reboot must be completed to ensure all additonal remediation steps have been completed.
+>Windows Defender Antivirus detects and remediates files based on many factors.  Sometimes, completing a remediation requires a reboot.  Even if the detection is later determined to be a false positive, the reboot must be completed to ensure all additional remediation steps have been completed.
 ></p>
 >If you are certain Windows Defender AV quarantined a file based on a false positive, you can restore the file from quarantine after the device reboots. See [Restore quarantined files in Windows Defender AV](restore-quarantined-files-windows-defender-antivirus.md).
 ></p>

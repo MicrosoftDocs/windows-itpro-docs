@@ -39,9 +39,9 @@ If Windows Defender Antivirus is configured to detect and remediate threats on y
 
 ## Related topics
 
-[Configure remediation for scans](configure-remediation-windows-defender-antivirus.md)
-[Review scan results](review-scan-results-windows-defender-antivirus.md)
-[Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-windows-defender-antivirus.md)
-[Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-windows-defender-antivirus.md)
-[Configure exclusions in Windows Defender AV on Windows Server](configure-server-exclusions-windows-defender-antivirus.md)
+- [Configure remediation for scans](configure-remediation-windows-defender-antivirus.md)
+- [Review scan results](review-scan-results-windows-defender-antivirus.md)
+- [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-windows-defender-antivirus.md)
+- [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-windows-defender-antivirus.md)
+- [Configure exclusions in Windows Defender AV on Windows Server](configure-server-exclusions-windows-defender-antivirus.md)
 
