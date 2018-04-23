@@ -16,3 +16,5 @@ ms.date: 02/28/2018
 
 -   Windows 10
 -   Windows Server 2016
+
+For more information about using System Center Configuration Manager (SCCM) to deploy Windows Defender Application Control policies, see [Managing Windows 10 Device Guard with Configuration Manager](https://cloudblogs.microsoft.com/enterprisemobility/2015/10/30/managing-windows-10-device-guard-with-configuration-manager/).
