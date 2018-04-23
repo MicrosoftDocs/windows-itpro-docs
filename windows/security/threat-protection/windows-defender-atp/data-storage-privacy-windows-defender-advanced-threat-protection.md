@@ -51,7 +51,7 @@ In all scenarios, data is encrypted using 256-bit [AES encyption](https://en.wik
 
 ## Do I have the flexibility to select where to store my data?
 
-When onboarding the service for the first time, you can choose to store your data in Microsoft Azure datacenters in Europe or in the United States. Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Microsoft will not under any circumstance, transfer the data from the specified geolocation into another geolocation.
+When onboarding the service for the first time, you can choose to store your data in Microsoft Azure datacenters in Europe or in the United States. Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Customer data in de-identified form may also be stored in the central storage and processing systems in the United States.
 
 ## Is my data isolated from other customer data?
 Yes, your data is isolated through access authentication and logical segregation based on customer identifier. Each customer can only access data collected from its own organization and generic data that Microsoft provides.
