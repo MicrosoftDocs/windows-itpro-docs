@@ -287,10 +287,7 @@
 ### [Windows Defender Application Control design guide](windows-defender-application-control/windows-defender-application-control-design-guide.md)
 
 ### [Windows Defender Application Control deployment guide](windows-defender-application-control/windows-defender-application-control-deployment-guide.md)
-####Deploy WDAC policies
-##### [Use Group Policy](windows-defender-application-control/deploy-windows-defender-application-control-policies-using-group-policy.md)
-##### [Use SCCM](windows-defender-application-control/deploy-windows-defender-application-control-policies-using-sccm.md)
-##### [Use Intune](windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune.md)
+### [Deploy WDAC policies](windows-defender-application-control/deploy-windows-defender-application-control-policies-using-group-policy.md)
 
 ### [Windows Defender Application Control and AppLocker](windows-defender-application-control/windows-defender-application-control-and-applocker.md)
 ### [AppLocker](windows-defender-application-control/applocker/applocker-overview.md)
