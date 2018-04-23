@@ -14,6 +14,9 @@ ms.date: 04/20/2018
 
 If you upgrade a Windows 10, version 1703 computer to Windows 10, version 1709 or Windows 10, version 1803 (or a Windows 10, version 1709 to Windows 10, version 1803 upgrade), provisioned apps that you've removed before the upgrade may return.  This can happen if the apps were removed while the computer was offline. If the provisioned (added) apps were removed while online, the apps should not return after the upgrade.
 
+>[!NOTE]
+>This setting only applies to first-party apps that shipped with Windows 10, this does not apply to third-party apps or apps that were acquired from the Microsoft Store, nor does it apply to LOB apps.
+
 There are two points during removing a provisioned package from a Windows installation where this problem can occur:
 
 * If the packages are removed while the wim file is mounted when the device is offline.
@@ -33,6 +36,9 @@ Starting with Windows 10, version 1703, the setup code knows to look for registr
 
 There will be scenarios where the apps were deprovisoned while offline prior to any changes being installed to Windows that would have corrected the behavior when removing the apps.
 
+>[!NOTE]
+>If you remove the provisioned apps while online, the account you used to sign in will contain the apps installed for that user. Therefore, if you do an upgrade, the signed-in user will retain the apps. User accounts created after the apps were removed or after an upgrade will not have the apps reinstalled.
+
 ## How to generate registry keys for deprovisioned apps
 
 The following registry is where the registry keys for deprovisioned apps will be written to:
@@ -45,12 +51,17 @@ The key won't have any data values, as all the system needs to understand that t
 
 The following tables list the display and package names for provisioned apps for Windows 10, version 1703 and Windows 10, version 1709 that can be used to generate the registry keys if they are not already present in your installation.
 
+>[!NOTE]
+>The list of apps may vary with each feature release of Windows 10, apps may also change in Status for instance go from Provisioned Status to System app or Vice Versus. This only applies to apps provisioned for the host OS and the OS you are upgrading to.
+
 ### Windows 10, version 1703 provisioned apps
 
 The following table is a list of provisioned apps for Windows 10, version 1703, listed by app name (DisplayName) and by the package name (PackageName) used for generating the registry key.
 
+**Note to self: If the setting doesn't apply to upgrates to 1703, then why are we listing the provisioned apps here?**
+
 >[!NOTE]
->The list of apps may vary with each feature release of Windows 10, apps may also change in Status for instance go from Provisioned Status to System app or Vice Versus. This only applies to apps provisioned for the host OS and the OS you are upgrading to.
+>This does not apply to upgrades to Windows 10, version 1703; the setup code to honor the removal for all users was enabled in Windows 10, version 1709
 
 |DisplayName|PackageName|
 |---|---|
@@ -215,11 +226,5 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.ZuneVideo_8wekyb3d8bbwe]
 ```
 
->[!NOTE]
->If you remove the provisioned apps while online, the account that you logged on with will contain the apps, they were installed for that user. Therefore, if you do an upgrade, that user will retain the apps.  Users that were created after the apps were removed, or after the upgrade will not get the Apps installed, the removed status is honored.
->
->This setting only applies to first-party apps that shipped with Windows 10, this does not apply to third-party apps or apps that were acquired from the Microsoft Store, nor does it apply to LOB apps.
->
->This does not apply to upgrades to Windows 10, version 1703; the setup code to honor the removal for all users was enabled in Windows 10, version 1709
 
-**How do you create a registry key from the information listed in the previous sections?**
+**Note to self: How do you create a registry key from the information listed in the previous sections?**
