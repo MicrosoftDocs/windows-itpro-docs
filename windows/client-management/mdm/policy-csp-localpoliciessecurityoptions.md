@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/12/2018
+ms.date: 04/06/2018
 ---
 
 # Policy CSP - LocalPoliciesSecurityOptions
@@ -58,16 +58,7 @@ ms.date: 03/12/2018
     <a href="#localpoliciessecurityoptions-domainmember-digitallyencryptsecurechanneldatawhenpossible">LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible</a>
   </dd>
   <dd>
-    <a href="#localpoliciessecurityoptions-domainmember-digitallysignsecurechanneldatawhenpossible">LocalPoliciesSecurityOptions/DomainMember_DigitallySignSecureChannelDataWhenPossible</a>
-  </dd>
-  <dd>
     <a href="#localpoliciessecurityoptions-domainmember-disablemachineaccountpasswordchanges">LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges</a>
-  </dd>
-  <dd>
-    <a href="#localpoliciessecurityoptions-domainmember-maximummachineaccountpasswordage">LocalPoliciesSecurityOptions/DomainMember_MaximumMachineAccountPasswordAge</a>
-  </dd>
-  <dd>
-    <a href="#localpoliciessecurityoptions-domainmember-requirestrongsessionkey">LocalPoliciesSecurityOptions/DomainMember_RequireStrongSessionKey</a>
   </dd>
   <dd>
     <a href="#localpoliciessecurityoptions-interactivelogon-displayuserinformationwhenthesessionislocked">LocalPoliciesSecurityOptions/InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked</a>
@@ -92,9 +83,6 @@ ms.date: 03/12/2018
   </dd>
   <dd>
     <a href="#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior">LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior</a>
-  </dd>
-  <dd>
-    <a href="#localpoliciessecurityoptions-microsoftnetworkclient-digitallysigncommunicationsalways">LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsAlways</a>
   </dd>
   <dd>
     <a href="#localpoliciessecurityoptions-microsoftnetworkclient-digitallysigncommunicationsifserveragrees">LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees</a>
@@ -127,9 +115,6 @@ ms.date: 03/12/2018
     <a href="#localpoliciessecurityoptions-networkaccess-restrictclientsallowedtomakeremotecallstosam">LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</a>
   </dd>
   <dd>
-    <a href="#localpoliciessecurityoptions-networksecurity-allowlocalsystemtousecomputeridentityforntlm">LocalPoliciesSecurityOptions/NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM</a>
-  </dd>
-  <dd>
     <a href="#localpoliciessecurityoptions-networksecurity-allowpku2uauthenticationrequests">LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests</a>
   </dd>
   <dd>
@@ -139,10 +124,19 @@ ms.date: 03/12/2018
     <a href="#localpoliciessecurityoptions-networksecurity-lanmanagerauthenticationlevel">LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</a>
   </dd>
   <dd>
-    <a href="#localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedclients">LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</a>
+    <a href="#localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedservers">LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</a>
   </dd>
   <dd>
-    <a href="#localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedservers">LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</a>
+    <a href="#localpoliciessecurityoptions-networksecurity-restrictntlm-addremoteserverexceptionsforntlmauthentication">LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication</a>
+  </dd>
+  <dd>
+    <a href="#localpoliciessecurityoptions-networksecurity-restrictntlm-auditincomingntlmtraffic">LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic</a>
+  </dd>
+  <dd>
+    <a href="#localpoliciessecurityoptions-networksecurity-restrictntlm-incomingntlmtraffic">LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic</a>
+  </dd>
+  <dd>
+    <a href="#localpoliciessecurityoptions-networksecurity-restrictntlm-outgoingntlmtraffictoremoteservers">LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers</a>
   </dd>
   <dd>
     <a href="#localpoliciessecurityoptions-recoveryconsole-allowautomaticadministrativelogon">LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon</a>
@@ -846,6 +840,15 @@ GP Info:
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
 <!--/RegistryMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -909,63 +912,15 @@ GP Info:
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
 <!--/RegistryMapped-->
-<!--/Policy-->
+<!--SupportedValues-->
 
-<hr/>
+<!--/SupportedValues-->
+<!--Example-->
 
-<!--Policy-->
-<a href="" id="localpoliciessecurityoptions-domainmember-digitallysignsecurechanneldatawhenpossible"></a>**LocalPoliciesSecurityOptions/DomainMember_DigitallySignSecureChannelDataWhenPossible**  
+<!--/Example-->
+<!--Validation-->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Domain member: Digitally sign secure channel data (when possible)
-
-This security setting determines whether a domain member attempts to negotiate signing for all secure channel traffic that it initiates.
-
-When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass through authentication, LSA SID/name Lookup etc.
-
-This setting determines whether or not the domain member attempts to negotiate signing for all secure channel traffic that it initiates. If enabled, the domain member will request signing of all secure channel traffic. If the Domain Controller supports signing of all secure channel traffic, then all secure channel traffic will be signed which ensures that it cannot be tampered with in transit.
-
-Default: Enabled.
-
-<!--/Description-->
-<!--RegistryMapped-->
-GP Info:  
--   GP English name: *Domain member: Digitally sign secure channel data (when possible)*
--   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
-
-<!--/RegistryMapped-->
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -1024,131 +979,15 @@ GP Info:
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
 <!--/RegistryMapped-->
-<!--/Policy-->
+<!--SupportedValues-->
 
-<hr/>
+<!--/SupportedValues-->
+<!--Example-->
 
-<!--Policy-->
-<a href="" id="localpoliciessecurityoptions-domainmember-maximummachineaccountpasswordage"></a>**LocalPoliciesSecurityOptions/DomainMember_MaximumMachineAccountPasswordAge**  
+<!--/Example-->
+<!--Validation-->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Domain member: Maximum machine account password age
-
-This security setting determines how often a domain member will attempt to change its computer account password.
-
-Default: 30 days.
-
-Important
-
-This setting applies to Windows 2000 computers, but it is not available through the Security Configuration Manager tools on these computers.
-
-<!--/Description-->
-<!--RegistryMapped-->
-GP Info:  
--   GP English name: *Domain member: Maximum machine account password age*
--   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
-
-<!--/RegistryMapped-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="localpoliciessecurityoptions-domainmember-requirestrongsessionkey"></a>**LocalPoliciesSecurityOptions/DomainMember_RequireStrongSessionKey**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Domain member: Require strong (Windows 2000 or later) session key
-
-This security setting determines whether 128-bit key strength is required for encrypted secure channel data.
-
-When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller within the domain. This secure channel is used to perform operations such as NTLM pass-through authentication, LSA SID/name Lookup, and so on.
-
-Depending on what version of Windows is running on the domain controller that the domain member is communicating with and the settings of the parameters:
-
-Domain member: Digitally encrypt or sign secure channel data (always)
-Domain member: Digitally encrypt secure channel data (when possible)
-Some or all of the information that is transmitted over the secure channel will be encrypted. This policy setting determines whether or not 128-bit key strength is required for the secure channel information that is encrypted.
-
-If this setting is enabled, then the secure channel will not be established unless 128-bit encryption can be performed. If this setting is disabled, then the key strength is negotiated with the domain controller.
-
-Default: Enabled.
-
-Important
-
-In order to take advantage of this policy on member workstations and servers, all domain controllers that constitute the member's domain must be running Windows 2000 or later.
-In order to take advantage of this policy on domain controllers, all domain controllers in the same domain as well as all trusted domains must run Windows 2000 or later.
-
-<!--/Description-->
-<!--RegistryMapped-->
-GP Info:  
--   GP English name: *Domain member: Require strong (Windows 2000 or later) session key*
--   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
-
-<!--/RegistryMapped-->
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -1643,77 +1482,6 @@ On Windows Vista and above: For this setting to work, the Smart Card Removal Pol
 <!--RegistryMapped-->
 GP Info:  
 -   GP English name: *Interactive logon: Smart card removal behavior*
--   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
-
-<!--/RegistryMapped-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="localpoliciessecurityoptions-microsoftnetworkclient-digitallysigncommunicationsalways"></a>**LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsAlways**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Microsoft network client: Digitally sign communications (always)
-
-This security setting determines whether packet signing is required by the SMB client component.
-
-The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB server is permitted.
-
-If this setting is enabled, the Microsoft network client will not communicate with a Microsoft network server unless that server agrees to perform SMB packet signing. If this policy is disabled, SMB packet signing is negotiated between the client and server.
-
-Default: Disabled.
-
-Important
-
-For this policy to take effect on computers running Windows 2000, client-side packet signing must also be enabled. To enable client-side SMB packet signing, set Microsoft network client: Digitally sign communications (if server agrees).
-
-Notes
-
-All Windows operating systems support both a client-side SMB component and a server-side SMB component. On Windows 2000 and later operating systems, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
-Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing.
-Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
-Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing.
-Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled.
-SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors.
-For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.
-
-<!--/Description-->
-<!--RegistryMapped-->
-GP Info:  
--   GP English name: *Microsoft network client: Digitally sign communications (always)*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
 <!--/RegistryMapped-->
@@ -2335,63 +2103,6 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-networksecurity-allowlocalsystemtousecomputeridentityforntlm"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Network security: Allow Local System to use computer identity for NTLM
-
-This policy setting allows Local System services that use Negotiate to use the computer identity when reverting to NTLM authentication.
-
-If you enable this policy setting, services running as Local System that use Negotiate will use the computer identity. This might cause some authentication requests between Windows operating systems to fail and log an error.
-
-If you disable this policy setting, services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously.
-
-By default, this policy is enabled on Windows 7 and above.
-
-By default, this policy is disabled on Windows Vista.
-
-This policy is supported on at least Windows Vista or Windows Server 2008.
-
-Note: Windows Vista or Windows Server 2008 do not expose this setting in Group Policy.
-
-<!--/Description-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
 <a href="" id="localpoliciessecurityoptions-networksecurity-allowpku2uauthenticationrequests"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests**  
 
 <!--SupportedSKUs-->
@@ -2587,66 +2298,6 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedclients"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Network security: Minimum session security for NTLM SSP based (including secure RPC) clients
-
-This security setting allows a client to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are:
-
-Require NTLMv2 session security: The connection will fail if NTLMv2 protocol is not negotiated.
-Require 128-bit encryption: The connection will fail if strong encryption (128-bit) is not negotiated.
-
-Default:
-
-Windows XP, Windows Vista, Windows 2000 Server, Windows Server 2003, and Windows Server 2008: No requirements.
-
-Windows 7 and Windows Server 2008 R2: Require 128-bit encryption
-
-<!--/Description-->
-<!--RegistryMapped-->
-GP Info:  
--   GP English name: *Network security: Minimum session security for NTLM SSP based (including secure RPC) clients*
--   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
-
-<!--/RegistryMapped-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
 <a href="" id="localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedservers"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers**  
 
 <!--SupportedSKUs-->
@@ -2702,6 +2353,282 @@ GP Info:
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
 <!--/RegistryMapped-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="localpoliciessecurityoptions-networksecurity-restrictntlm-addremoteserverexceptionsforntlmauthentication"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication
+
+This policy setting allows you to create an exception list of remote servers to which clients are allowed to use NTLM authentication if the  "Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers" policy setting is configured.
+
+If you configure this policy setting, you can define a list of remote servers to which clients are allowed to use NTLM authentication.
+
+If you do not configure this policy setting, no exceptions will be applied.
+
+The naming format for servers on this exception list is the fully qualified domain name (FQDN) or NetBIOS server name used by the application, listed one per line. To ensure exceptions the name used by all applications needs to be in the list, and to ensure an exception is accurate, the server name should be listed in both naming formats . A single asterisk (*) can be used anywhere in the string as a wildcard character.
+
+<!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="localpoliciessecurityoptions-networksecurity-restrictntlm-auditincomingntlmtraffic"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Network security: Restrict NTLM: Audit Incoming NTLM Traffic
+
+This policy setting allows you to audit incoming NTLM traffic.
+
+If you select "Disable", or do not configure this policy setting, the server will not log events for incoming NTLM traffic.
+
+If you select "Enable auditing for domain accounts", the server will log events for NTLM pass-through authentication requests that would be blocked when the "Network Security: Restrict NTLM: Incoming NTLM traffic" policy setting is set to the "Deny all domain accounts" option.
+
+If you select "Enable auditing for all accounts", the server will log events for all NTLM authentication requests that would be blocked when the "Network Security: Restrict NTLM: Incoming NTLM traffic" policy setting is set to the "Deny all accounts" option.
+
+This policy is supported on at least Windows 7 or Windows Server 2008 R2.
+
+Note: Audit events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.
+
+<!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network security: Restrict NTLM: Audit Incoming NTLM Traffic*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="localpoliciessecurityoptions-networksecurity-restrictntlm-incomingntlmtraffic"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Network security: Restrict NTLM: Incoming NTLM traffic
+
+This policy setting allows you to deny or allow incoming NTLM traffic.
+
+If you select "Allow all" or do not configure this policy setting, the server will allow all NTLM authentication requests.
+
+If you select "Deny all domain accounts," the server will deny NTLM authentication requests for domain logon and display an NTLM blocked error, but allow local account logon.
+
+If you select "Deny all accounts," the server will deny NTLM authentication requests from incoming traffic and display an NTLM blocked error.
+
+This policy is supported on at least Windows 7 or Windows Server 2008 R2.
+
+Note: Block events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.
+
+<!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network security: Restrict NTLM: Incoming NTLM traffic*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="localpoliciessecurityoptions-networksecurity-restrictntlm-outgoingntlmtraffictoremoteservers"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers
+
+This policy setting allows you to deny or audit outgoing NTLM traffic from this Windows 7 or this Windows Server 2008 R2 computer to any Windows remote server.
+
+If you select "Allow all" or do not configure this policy setting, the client computer can authenticate identities to a remote server by using NTLM authentication.
+
+If you select "Audit all," the client computer logs an event for each NTLM authentication request to a remote server. This allows you to identify those servers receiving NTLM authentication requests from the client computer.
+
+If you select "Deny all," the client computer cannot authenticate identities to a remote server by using NTLM authentication. You can use the "Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication" policy setting to define a list of remote servers to which clients are allowed to use NTLM authentication.
+
+This policy is supported on at least Windows 7 or Windows Server 2008 R2.
+
+Note: Audit and block events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.
+
+<!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>

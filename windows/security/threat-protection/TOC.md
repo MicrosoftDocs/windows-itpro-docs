@@ -17,6 +17,7 @@
 
 ## [Windows Defender Advanced Threat Protection](windows-defender-atp/windows-defender-advanced-threat-protection.md)
 ###Get started
+<<<<<<< HEAD
 #### [Minimum requirements](windows-defender-atp/minimum-requirements-windows-defender-advanced-threat-protection.md)
 #### [Validate licensing and complete setup](windows-defender-atp/licensing-windows-defender-advanced-threat-protection.md)
 #### [Troubleshoot subscription and portal access issues](windows-defender-atp/troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
@@ -40,6 +41,33 @@
 #### [Portal overview](windows-defender-atp/portal-overview-windows-defender-advanced-threat-protection.md)
 #### [View the Security operations dashboard](windows-defender-atp/dashboard-windows-defender-advanced-threat-protection.md)
 #### [View the Security analytics dashboard](windows-defender-atp/security-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+=======
+#### [Minimum requirements](windows-defender-atp\minimum-requirements-windows-defender-advanced-threat-protection.md)
+#### [Validate licensing and complete setup](windows-defender-atp\licensing-windows-defender-advanced-threat-protection.md)
+#### [Troubleshoot subscription and portal access issues](windows-defender-atp\troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
+#### [Preview features](windows-defender-atp\preview-windows-defender-advanced-threat-protection.md)
+#### [Data storage and privacy](windows-defender-atp\data-storage-privacy-windows-defender-advanced-threat-protection.md)
+#### [Assign user access to the portal](windows-defender-atp\assign-portal-access-windows-defender-advanced-threat-protection.md)
+### [Onboard machines](windows-defender-atp\onboard-configure-windows-defender-advanced-threat-protection.md)
+#### [Onboard Windows 10 machines](windows-defender-atp\configure-endpoints-windows-defender-advanced-threat-protection.md)
+##### [Onboard machines using Group Policy](windows-defender-atp\configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
+##### [Onboard machines using System Center Configuration Manager](windows-defender-atp\configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
+##### [Onboard machines using Mobile Device Management tools](windows-defender-atp\configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
+###### [Onboard machines using Microsoft Intune](windows-defender-atp\configure-endpoints-mdm-windows-defender-advanced-threat-protection.md#onboard-windows-10-machines-using-microsoft-intune)
+##### [Onboard machines using a local script](windows-defender-atp\configure-endpoints-script-windows-defender-advanced-threat-protection.md)
+##### [Onboard non-persistent virtual desktop infrastructure (VDI) machines](windows-defender-atp\configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
+#### [Onboard servers](windows-defender-atp\configure-server-endpoints-windows-defender-advanced-threat-protection.md)
+#### [Onboard non-Windows machines](windows-defender-atp\configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)
+#### [Run a detection test on a newly onboarded machine](windows-defender-atp\run-detection-test-windows-defender-advanced-threat-protection.md)
+#### [Run simulated attacks on machines](windows-defender-atp\attack-simulations-windows-defender-advanced-threat-protection.md)
+#### [Configure proxy and Internet connectivity settings](windows-defender-atp\configure-proxy-internet-windows-defender-advanced-threat-protection.md)
+#### [Troubleshoot onboarding issues](windows-defender-atp\troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
+### [Understand the Windows Defender ATP portal](windows-defender-atp\use-windows-defender-advanced-threat-protection.md)
+#### [Portal overview](windows-defender-atp\portal-overview-windows-defender-advanced-threat-protection.md)
+#### [View the Security operations dashboard](windows-defender-atp\security-operations-dashboard-windows-defender-advanced-threat-protection.md)
+#### [View the Secure Score dashboard and improve your secure score](windows-defender-atp\secure-score-dashboard-windows-defender-advanced-threat-protection.md)
+#### [View the Threat analytics dashboard and take recommended mitigation actions](windows-defender-atp\threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+>>>>>>> e29efea6d2a8cab479d5d47c6a477a512c12ce8b
 
 ###Investigate and remediate threats
 ####Alerts queue
@@ -51,6 +79,9 @@
 ##### [Investigate an IP address](windows-defender-atp/investigate-ip-windows-defender-advanced-threat-protection.md)
 ##### [Investigate a domain](windows-defender-atp/investigate-domain-windows-defender-advanced-threat-protection.md)
 ##### [Investigate a user account](windows-defender-atp/investigate-user-windows-defender-advanced-threat-protection.md)
+
+
+
 
 ####Machines list
 ##### [View and organize the Machines list](windows-defender-atp/machines-view-overview-windows-defender-advanced-threat-protection.md)
@@ -82,6 +113,11 @@
 ####### [Submit files for analysis](windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection.md#submit-files-for-analysis)
 ####### [View deep analysis reports](windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection.md#view-deep-analysis-reports)
 ####### [Troubleshoot deep analysis](windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection.md#troubleshoot-deep-analysis)
+
+#### [Use Automated investigation to investigate and remediate threats](windows-defender-atp\automated-investigations-windows-defender-advanced-threat-protection.md)
+#### [Query data using Advanced hunting](windows-defender-atp\advanced-hunting-windows-defender-advanced-threat-protection.md)
+##### [Advanced hunting reference](windows-defender-atp\advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
+##### [Advanced hunting query language best practices](windows-defender-atp\advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
 
 ###API and SIEM support
 #### [Pull alerts to your SIEM tools](windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection.md)
@@ -166,6 +202,7 @@
 #### [Create and build Power BI reports using Windows Defender ATP data](windows-defender-atp/powerbi-reports-windows-defender-advanced-threat-protection.md)
 
 ###Check service health and sensor state
+<<<<<<< HEAD
 #### [Check sensor state](windows-defender-atp/check-sensor-status-windows-defender-advanced-threat-protection.md)
 ##### [Fix unhealthy sensors](windows-defender-atp/fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
 ##### [Inactive machines](windows-defender-atp/fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#inactive-machines)
@@ -375,6 +412,231 @@
 ##### [Tools to Use with AppLocker](windows-defender-application-control/applocker/tools-to-use-with-applocker.md)
 ###### [Using Event Viewer with AppLocker](windows-defender-application-control/applocker/using-event-viewer-with-applocker.md)
 ##### [AppLocker Settings](windows-defender-application-control/applocker/applocker-settings.md)
+=======
+#### [Check sensor state](windows-defender-atp\check-sensor-status-windows-defender-advanced-threat-protection.md)
+##### [Fix unhealthy sensors](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
+##### [Inactive machines](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#inactive-machines)
+##### [Misconfigured machines](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#misconfigured-machines)
+#### [Check service health](windows-defender-atp\service-status-windows-defender-advanced-threat-protection.md)
+### [Configure Windows Defender ATP Settings](windows-defender-atp\preferences-setup-windows-defender-advanced-threat-protection.md)
+
+####General
+##### [Update data retention settings](windows-defender-atp\data-retention-settings-windows-defender-advanced-threat-protection.md)
+##### [Configure alert notifications](windows-defender-atp\configure-email-notifications-windows-defender-advanced-threat-protection.md)
+##### [Enable and create Power BI reports using Windows Defender ATP data](windows-defender-atp\powerbi-reports-windows-defender-advanced-threat-protection.md)
+##### [Enable Secure score security controls](windows-defender-atp\enable-secure-score-windows-defender-advanced-threat-protection.md)
+##### [Configure advanced features](windows-defender-atp\advanced-features-windows-defender-advanced-threat-protection.md)
+
+####Permissions
+##### [Manage portal access using RBAC](windows-defender-atp\rbac-windows-defender-advanced-threat-protection.md)
+##### [Create and manage machine groups](windows-defender-atp\machine-groups-windows-defender-advanced-threat-protection.md)
+
+####APIs
+##### [Enable Threat intel](windows-defender-atp\enable-custom-ti-windows-defender-advanced-threat-protection.md)
+##### [Enable SIEM integration](windows-defender-atp\enable-siem-integration-windows-defender-advanced-threat-protection.md)
+
+####Rules
+##### [Manage suppression rules](windows-defender-atp\manage-suppression-rules-windows-defender-advanced-threat-protection.md)
+##### [Manage automation allowed/blocked](windows-defender-atp\manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
+##### [Manage automation file uploads](windows-defender-atp\manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
+##### [Manage automation folder exclusions](windows-defender-atp\manage-automation-folder-exclusions-windows-defender-advanced-threat-protection.md)
+
+####Machine management
+##### [Onboarding machines](windows-defender-atp\onboard-configure-windows-defender-advanced-threat-protection.md)
+##### [Offboarding machines](windows-defender-atp\offboard-machines-windows-defender-advanced-threat-protection.md)
+
+### [Configure Windows Defender ATP time zone settings](windows-defender-atp\time-settings-windows-defender-advanced-threat-protection.md)
+
+### [Access the Windows Defender ATP Community Center](windows-defender-atp\community-windows-defender-advanced-threat-protection.md)
+### [Troubleshoot Windows Defender ATP](windows-defender-atp\troubleshoot-windows-defender-advanced-threat-protection.md)
+#### [Review events and errors on machines with Event Viewer](windows-defender-atp\event-error-codes-windows-defender-advanced-threat-protection.md)
+### [Windows Defender Antivirus compatibility with Windows Defender ATP](windows-defender-atp\defender-compatibility-windows-defender-advanced-threat-protection.md)
+
+##	[Windows Defender Antivirus in Windows 10](windows-defender-antivirus\windows-defender-antivirus-in-windows-10.md)
+### [Windows Defender AV in the Windows Defender Security Center app](windows-defender-antivirus\windows-defender-security-center-antivirus.md)
+
+### [Windows Defender AV on Windows Server 2016](windows-defender-antivirus\windows-defender-antivirus-on-windows-server-2016.md)
+
+### [Windows Defender Antivirus compatibility](windows-defender-antivirus\windows-defender-antivirus-compatibility.md)
+#### [Use limited periodic scanning in Windows Defender AV](windows-defender-antivirus\limited-periodic-scanning-windows-defender-antivirus.md)
+
+
+### [Evaluate Windows Defender Antivirus protection](windows-defender-antivirus\evaluate-windows-defender-antivirus.md)
+
+
+### [Deploy, manage updates, and report on Windows Defender Antivirus](windows-defender-antivirus\deploy-manage-report-windows-defender-antivirus.md)
+#### [Deploy and enable Windows Defender Antivirus](windows-defender-antivirus\deploy-windows-defender-antivirus.md)
+##### [Deployment guide for VDI environments](windows-defender-antivirus\deployment-vdi-windows-defender-antivirus.md)
+#### [Report on Windows Defender Antivirus protection](windows-defender-antivirus\report-monitor-windows-defender-antivirus.md)
+##### [Troubleshoot Windows Defender Antivirus reporting in Update Compliance](windows-defender-antivirus\troubleshoot-reporting.md)
+#### [Manage updates and apply baselines](windows-defender-antivirus\manage-updates-baselines-windows-defender-antivirus.md)
+##### [Manage protection and definition updates](windows-defender-antivirus\manage-protection-updates-windows-defender-antivirus.md)
+##### [Manage when protection updates should be downloaded and applied](windows-defender-antivirus\manage-protection-update-schedule-windows-defender-antivirus.md)
+##### [Manage updates for endpoints that are out of date](windows-defender-antivirus\manage-outdated-endpoints-windows-defender-antivirus.md)
+##### [Manage event-based forced updates](windows-defender-antivirus\manage-event-based-updates-windows-defender-antivirus.md)
+##### [Manage updates for mobile devices and VMs](windows-defender-antivirus\manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
+
+
+### [Configure Windows Defender Antivirus features](windows-defender-antivirus\configure-windows-defender-antivirus-features.md)
+#### [Utilize Microsoft cloud-delivered protection](windows-defender-antivirus\utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
+##### [Enable cloud-delivered protection](windows-defender-antivirus\enable-cloud-protection-windows-defender-antivirus.md)
+##### [Specify the cloud-delivered protection level](windows-defender-antivirus\specify-cloud-protection-level-windows-defender-antivirus.md)
+##### [Configure and validate network connections](windows-defender-antivirus\configure-network-connections-windows-defender-antivirus.md)
+##### [Enable the Block at First Sight feature](windows-defender-antivirus\configure-block-at-first-sight-windows-defender-antivirus.md)
+##### [Configure the cloud block timeout period](windows-defender-antivirus\configure-cloud-block-timeout-period-windows-defender-antivirus.md)
+#### [Configure behavioral, heuristic, and real-time protection](windows-defender-antivirus\configure-protection-features-windows-defender-antivirus.md)
+##### [Detect and block Potentially Unwanted Applications](windows-defender-antivirus\detect-block-potentially-unwanted-apps-windows-defender-antivirus.md)
+##### [Enable and configure always-on protection and monitoring](windows-defender-antivirus\configure-real-time-protection-windows-defender-antivirus.md)
+#### [Configure end-user interaction with Windows Defender AV](windows-defender-antivirus\configure-end-user-interaction-windows-defender-antivirus.md)
+##### [Configure the notifications that appear on endpoints](windows-defender-antivirus\configure-notifications-windows-defender-antivirus.md)
+##### [Prevent users from seeing or interacting with the user interface](windows-defender-antivirus\prevent-end-user-interaction-windows-defender-antivirus.md)
+##### [Prevent or allow users to locally modify policy settings](windows-defender-antivirus\configure-local-policy-overrides-windows-defender-antivirus.md)
+
+
+### [Customize, initiate, and review the results of scans and remediation](windows-defender-antivirus\customize-run-review-remediate-scans-windows-defender-antivirus.md)
+#### [Configure and validate exclusions in Windows Defender AV scans](windows-defender-antivirus\configure-exclusions-windows-defender-antivirus.md)
+##### [Configure and validate exclusions based on file name, extension, and folder location](windows-defender-antivirus\configure-extension-file-exclusions-windows-defender-antivirus.md)
+##### [Configure and validate exclusions for files opened by processes](windows-defender-antivirus\configure-process-opened-file-exclusions-windows-defender-antivirus.md)
+##### [Configure exclusions in Windows Defender AV on Windows Server 2016](windows-defender-antivirus\configure-server-exclusions-windows-defender-antivirus.md)
+#### [Configure scanning options in Windows Defender AV](windows-defender-antivirus\configure-advanced-scan-types-windows-defender-antivirus.md)
+#### [Configure remediation for scans](windows-defender-antivirus\configure-remediation-windows-defender-antivirus.md)
+#### [Configure scheduled scans](windows-defender-antivirus\scheduled-catch-up-scans-windows-defender-antivirus.md)
+#### [Configure and run scans](windows-defender-antivirus\run-scan-windows-defender-antivirus.md)
+#### [Review scan results](windows-defender-antivirus\review-scan-results-windows-defender-antivirus.md)
+#### [Run and review the results of a Windows Defender Offline scan](windows-defender-antivirus\windows-defender-offline.md)
+
+
+### [Review event logs and error codes to troubleshoot issues](windows-defender-antivirus\troubleshoot-windows-defender-antivirus.md)
+
+
+
+### [Manage Windows Defender AV in your business](windows-defender-antivirus\configuration-management-reference-windows-defender-antivirus.md)
+#### [Use Group Policy settings to configure and manage Windows Defender AV](windows-defender-antivirus\use-group-policy-windows-defender-antivirus.md)
+#### [Use System Center Configuration Manager and Microsoft Intune to configure and manage Windows Defender AV](windows-defender-antivirus\use-intune-config-manager-windows-defender-antivirus.md)
+#### [Use PowerShell cmdlets to configure and manage Windows Defender AV](windows-defender-antivirus\use-powershell-cmdlets-windows-defender-antivirus.md)
+#### [Use Windows Management Instrumentation (WMI) to configure and manage Windows Defender AV](windows-defender-antivirus\use-wmi-windows-defender-antivirus.md)
+#### [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender AV](windows-defender-antivirus\command-line-arguments-windows-defender-antivirus.md)
+
+
+
+## [Windows Defender Exploit Guard](windows-defender-exploit-guard\windows-defender-exploit-guard.md)
+### [Evaluate Windows Defender Exploit Guard](windows-defender-exploit-guard\evaluate-windows-defender-exploit-guard.md)
+#### [Use auditing mode to evaluate Windows Defender Exploit Guard](windows-defender-exploit-guard\audit-windows-defender-exploit-guard.md)
+#### [View Exploit Guard events](windows-defender-exploit-guard\event-views-exploit-guard.md)
+
+### [Exploit protection](windows-defender-exploit-guard\exploit-protection-exploit-guard.md)
+#### [Comparison with Enhanced Mitigation Experience Toolkit](windows-defender-exploit-guard\emet-exploit-protection-exploit-guard.md)
+#### [Evaluate Exploit protection](windows-defender-exploit-guard\evaluate-exploit-protection.md)
+#### [Enable Exploit protection](windows-defender-exploit-guard\enable-exploit-protection.md)
+#### [Customize Exploit protection](windows-defender-exploit-guard\customize-exploit-protection.md)
+##### [Import, export, and deploy Exploit protection configurations](windows-defender-exploit-guard\import-export-exploit-protection-emet-xml.md)
+### [Attack surface reduction](windows-defender-exploit-guard\attack-surface-reduction-exploit-guard.md)
+#### [Evaluate Attack surface reduction](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
+#### [Enable Attack surface reduction](windows-defender-exploit-guard\enable-attack-surface-reduction.md)
+#### [Customize Attack surface reduction](windows-defender-exploit-guard\customize-attack-surface-reduction.md)
+#### [Troubleshoot Attack surface reduction rules](windows-defender-exploit-guard\troubleshoot-asr.md)
+### [Network Protection](windows-defender-exploit-guard\network-protection-exploit-guard.md)
+#### [Evaluate Network Protection](windows-defender-exploit-guard\evaluate-network-protection.md)
+#### [Enable Network Protection](windows-defender-exploit-guard\enable-network-protection.md)
+#### [Troubleshoot Network protection](windows-defender-exploit-guard\troubleshoot-np.md)
+### [Controlled folder access](windows-defender-exploit-guard\controlled-folders-exploit-guard.md)
+#### [Evaluate Controlled folder access](windows-defender-exploit-guard\evaluate-controlled-folder-access.md)
+#### [Enable Controlled folder access](windows-defender-exploit-guard\enable-controlled-folders-exploit-guard.md)
+#### [Customize Controlled folder access](windows-defender-exploit-guard\customize-controlled-folders-exploit-guard.md)
+
+
+## [Windows Defender Application Control](windows-defender-application-control.md)
+
+## [Enable HVCI](enable-virtualization-based-protection-of-code-integrity.md)
+
+## [AppLocker](applocker\applocker-overview.md)
+### [Administer AppLocker](applocker\administer-applocker.md)
+#### [Maintain AppLocker policies](applocker\maintain-applocker-policies.md)
+#### [Edit an AppLocker policy](applocker\edit-an-applocker-policy.md)
+#### [Test and update an AppLocker policy](applocker\test-and-update-an-applocker-policy.md)
+#### [Deploy AppLocker policies by using the enforce rules setting](applocker\deploy-applocker-policies-by-using-the-enforce-rules-setting.md)
+#### [Use the AppLocker Windows PowerShell cmdlets](applocker\use-the-applocker-windows-powershell-cmdlets.md)
+#### [Use AppLocker and Software Restriction Policies in the same domain](applocker\use-applocker-and-software-restriction-policies-in-the-same-domain.md)
+#### [Optimize AppLocker performance](applocker\optimize-applocker-performance.md)
+#### [Monitor app usage with AppLocker](applocker\monitor-application-usage-with-applocker.md)
+#### [Manage packaged apps with AppLocker](applocker\manage-packaged-apps-with-applocker.md)
+#### [Working with AppLocker rules](applocker\working-with-applocker-rules.md)
+##### [Create a rule that uses a file hash condition](applocker\create-a-rule-that-uses-a-file-hash-condition.md)
+##### [Create a rule that uses a path condition](applocker\create-a-rule-that-uses-a-path-condition.md)
+##### [Create a rule that uses a publisher condition](applocker\create-a-rule-that-uses-a-publisher-condition.md)
+##### [Create AppLocker default rules](applocker\create-applocker-default-rules.md)
+##### [Add exceptions for an AppLocker rule](applocker\configure-exceptions-for-an-applocker-rule.md)
+##### [Create a rule for packaged apps](applocker\create-a-rule-for-packaged-apps.md)
+##### [Delete an AppLocker rule](applocker\delete-an-applocker-rule.md)
+##### [Edit AppLocker rules](applocker\edit-applocker-rules.md)
+##### [Enable the DLL rule collection](applocker\enable-the-dll-rule-collection.md)
+##### [Enforce AppLocker rules](applocker\enforce-applocker-rules.md)
+##### [Run the Automatically Generate Rules wizard](applocker\run-the-automatically-generate-rules-wizard.md)
+#### [Working with AppLocker policies](applocker\working-with-applocker-policies.md)
+##### [Configure the Application Identity service](applocker\configure-the-application-identity-service.md)
+##### [Configure an AppLocker policy for audit only](applocker\configure-an-applocker-policy-for-audit-only.md)
+##### [Configure an AppLocker policy for enforce rules](applocker\configure-an-applocker-policy-for-enforce-rules.md)
+##### [Display a custom URL message when users try to run a blocked app](applocker\display-a-custom-url-message-when-users-try-to-run-a-blocked-application.md)
+##### [Export an AppLocker policy from a GPO](applocker\export-an-applocker-policy-from-a-gpo.md)
+##### [Export an AppLocker policy to an XML file](applocker\export-an-applocker-policy-to-an-xml-file.md)
+##### [Import an AppLocker policy from another computer](applocker\import-an-applocker-policy-from-another-computer.md)
+##### [Import an AppLocker policy into a GPO](applocker\import-an-applocker-policy-into-a-gpo.md)
+##### [Add rules for packaged apps to existing AppLocker rule-set](applocker\add-rules-for-packaged-apps-to-existing-applocker-rule-set.md)
+##### [Merge AppLocker policies by using Set-ApplockerPolicy](applocker\merge-applocker-policies-by-using-set-applockerpolicy.md)
+##### [Merge AppLocker policies manually](applocker\merge-applocker-policies-manually.md)
+##### [Refresh an AppLocker policy](applocker\refresh-an-applocker-policy.md)
+##### [Test an AppLocker policy by using Test-AppLockerPolicy](applocker\test-an-applocker-policy-by-using-test-applockerpolicy.md)
+### [AppLocker design guide](applocker\applocker-policies-design-guide.md)
+#### [Understand AppLocker policy design decisions](applocker\understand-applocker-policy-design-decisions.md)
+#### [Determine your application control objectives](applocker\determine-your-application-control-objectives.md)
+#### [Create a list of apps deployed to each business group](applocker\create-list-of-applications-deployed-to-each-business-group.md)
+##### [Document your app list](applocker\document-your-application-list.md)
+#### [Select the types of rules to create](applocker\select-types-of-rules-to-create.md)
+##### [Document your AppLocker rules](applocker\document-your-applocker-rules.md)
+#### [Determine the Group Policy structure and rule enforcement](applocker\determine-group-policy-structure-and-rule-enforcement.md)
+##### [Understand AppLocker enforcement settings](applocker\understand-applocker-enforcement-settings.md)
+##### [Understand AppLocker rules and enforcement setting inheritance in Group Policy](applocker\understand-applocker-rules-and-enforcement-setting-inheritance-in-group-policy.md)
+##### [Document the Group Policy structure and AppLocker rule enforcement](applocker\document-group-policy-structure-and-applocker-rule-enforcement.md)
+#### [Plan for AppLocker policy management](applocker\plan-for-applocker-policy-management.md)
+##### [Document your application control management processes](applocker\document-your-application-control-management-processes.md)
+#### [Create your AppLocker planning document](applocker\create-your-applocker-planning-document.md)
+### [AppLocker deployment guide](applocker\applocker-policies-deployment-guide.md)
+#### [Understand the AppLocker policy deployment process](applocker\understand-the-applocker-policy-deployment-process.md)
+#### [Requirements for Deploying AppLocker Policies](applocker\requirements-for-deploying-applocker-policies.md)
+#### [Use Software Restriction Policies and AppLocker policies](applocker\using-software-restriction-policies-and-applocker-policies.md)
+#### [Create Your AppLocker policies](applocker\create-your-applocker-policies.md)
+##### [Create Your AppLocker rules](applocker\create-your-applocker-rules.md)
+#### [Deploy the AppLocker policy into production](applocker\deploy-the-applocker-policy-into-production.md)
+##### [Use a reference device to create and maintain AppLocker policies](applocker\use-a-reference-computer-to-create-and-maintain-applocker-policies.md)
+###### [Determine which apps are digitally signed on a reference device](applocker\determine-which-applications-are-digitally-signed-on-a-reference-computer.md)
+###### [Configure the AppLocker reference device](applocker\configure-the-appLocker-reference-device.md)
+### [AppLocker technical reference](applocker\applocker-technical-reference.md)
+#### [What Is AppLocker?](applocker\what-is-applocker.md)
+#### [Requirements to use AppLocker](applocker\requirements-to-use-applocker.md)
+#### [AppLocker policy use scenarios](applocker\applocker-policy-use-scenarios.md)
+#### [How AppLocker works](applocker\how-applocker-works-techref.md)
+##### [Understanding AppLocker rule behavior](applocker\understanding-applocker-rule-behavior.md)
+##### [Understanding AppLocker rule exceptions](applocker\understanding-applocker-rule-exceptions.md)
+##### [Understanding AppLocker rule collections](applocker\understanding-applocker-rule-collections.md)
+##### [Understanding AppLocker allow and deny actions on rules](applocker\understanding-applocker-allow-and-deny-actions-on-rules.md)
+##### [Understanding AppLocker rule condition types](applocker\understanding-applocker-rule-condition-types.md)
+###### [Understanding the publisher rule condition in AppLocker](applocker\understanding-the-publisher-rule-condition-in-applocker.md)
+###### [Understanding the path rule condition in AppLocker](applocker\understanding-the-path-rule-condition-in-applocker.md)
+###### [Understanding the file hash rule condition in AppLocker](applocker\understanding-the-file-hash-rule-condition-in-applocker.md)
+##### [Understanding AppLocker default rules](applocker\understanding-applocker-default-rules.md)
+###### [Executable rules in AppLocker](applocker\executable-rules-in-applocker.md)
+###### [Windows Installer rules in AppLocker](applocker\windows-installer-rules-in-applocker.md)
+###### [Script rules in AppLocker](applocker\script-rules-in-applocker.md)
+###### [DLL rules in AppLocker](applocker\dll-rules-in-applocker.md)
+###### [Packaged apps and packaged app installer rules in AppLocker](applocker\packaged-apps-and-packaged-app-installer-rules-in-applocker.md)
+#### [AppLocker architecture and components](applocker\applocker-architecture-and-components.md)
+#### [AppLocker processes and interactions](applocker\applocker-processes-and-interactions.md)
+#### [AppLocker functions](applocker\applocker-functions.md)
+#### [Security considerations for AppLocker](applocker\security-considerations-for-applocker.md)
+#### [Tools to Use with AppLocker](applocker\tools-to-use-with-applocker.md)
+##### [Using Event Viewer with AppLocker](applocker\using-event-viewer-with-applocker.md)
+#### [AppLocker Settings](applocker\applocker-settings.md)
+>>>>>>> e29efea6d2a8cab479d5d47c6a477a512c12ce8b
 
 ## [Control the health of Windows 10-based devices](protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md)
 

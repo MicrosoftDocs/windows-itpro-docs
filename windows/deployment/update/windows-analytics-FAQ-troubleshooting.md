@@ -8,12 +8,12 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 03/16/2018
+ms.date: 04/05/2018
 ---
 
 # Frequently asked questions and troubleshooting Windows Analytics
 
-This topic compiles the most common issues encountered with configuring and using Windows Analytics, as well as general questions.
+This topic compiles the most common issues encountered with configuring and using Windows Analytics, as well as general questions. This FAQ, along with the [Windows Analytics Technical Community](https://techcommunity.microsoft.com/t5/Windows-Analytics/ct-p/WindowsAnalytics), are recommended resources to consult before contacting Microsoft support.
 
 ## Troubleshooting common problems
 
@@ -25,11 +25,15 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 
 [Upgrade Readiness reports outdated updates](#upgrade-readiness-reports-outdated-updates)
 
-[Upgrade Readiness reports incomplete inventory](#upgrade-readiness-reports-incomplete-inventory)
+[Upgrade Readiness shows many "Computers with outdated KB"](#upgrade-readiness-shows-many-computers-with-outdated-kb)
 
 [Upgrade Readiness doesn't show app inventory data on some devices](#upgrade-readiness-doesnt-show-app-inventory-data-on-some-devices)
 
 [Upgrade Readiness doesn't show IE site discovery data from some devices](#upgrade-readiness-doesnt-show-ie-site-discovery-data-from-some-devices)
+
+[Disable Upgrade Readiness](#disable-upgrade-readiness)
+
+[Exporting large data sets](#exporting-large-data-sets)
 
 
 ### Devices not showing up
@@ -37,6 +41,8 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 In Log Analytics, go to **Settings > Connected sources > Windows telemetry** and verify that you are subscribed to the Windows Analytics solutions you intend to use.
 
 Even though devices can take 2-3 days after enrollment to show up due to latency in the system, you can now verify the status of your devices with a few hours of running the deployment script as described in [You can now check on the status of your computers within hours of running the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/05/12/wheres-my-data/) on the Windows Analytics blog.
+>[!NOTE]
+> If you generate the status report and get an error message saying "Sorry! We’re not recognizing your Commercial Id," please go to **Settings > Connected sources > Windows telemetry** and unsubscribe, wait a minute and then re-subscribe to Upgrade Readiness. This is a known issue and we are working on a fix.
  
 If devices are not showing up as expected, find a representative device and follow these steps to run the latest pilot version of the Upgrade Readiness deployment script on it to troubleshoot issues:
 
@@ -49,8 +55,13 @@ If devices are not showing up as expected, find a representative device and foll
 
 If you want to check a large number of devices, you should run the latest script at scale from your management tool of choice (for example, System Center Configuration Manager) and check the results centrally.
 
-
 If you think the issue might be related to a network proxy, check "Enable data sharing" section of the [Enrolling devices in Windows Analytics](windows-analytics-get-started.md) topic. Also see [Understanding connectivity scenarios and the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog.
+
+If you have deployed images that have not been generalized, then many of them might have the same ID and so analytics will see them as one device. If you suspect this is the issue, then you can reset the IDs on the non-generalized devices by performing these steps:
+1. Net stop diagtrack
+2. Reg delete hklm\software\microsoft\sqmclient /v MachineId /f
+3. Net start diagtrack
+
 
 ### Device Health crash data not appearing
 
@@ -151,47 +162,62 @@ Double-check that IE site discovery opt-in has been configured in the deployment
 Also, on Windows 10 devices remember that IE site discovery requires data diagnostics set to the Enhanced level.
 Finally, Upgrade Readiness only collects IE site discovery data on devices that are not yet upgraded to the target operating system version specified in the Upgrade Readiness Overview blade. This is because Upgrade Readiness targets upgrade planning (for devices not yet upgraded).
 
-[comment]: # (Device names are not showing up properly? Starting with Windows 10 1803, the device name is no longer collected by default and requires a separate opt-in by setting HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection\AllowDeviceNameInTelemetry:DWORD == 1. This is done by default if you run the latest version of the deployment script, or can be set via policy. If the policy is not set, then the device name will show up as "Unknown (aka.ms/analyticsDeviceName)")
+### Device Names don't show up on Windows 10 devices
+Starting with the build currently available in the Windows Insider Program, the device name is no longer collected by default and requires a separate opt-in. For more information, see [Enrolling devices in Windows Analytics](windows-analytics-get-started.md).
+
+### Disable Upgrade Readiness
+
+If you want to stop using Upgrade Readiness and stop sending diagnostic data data to Microsoft, follow these steps:
+
+1.  Unsubscribe from the Upgrade Readiness solution in the OMS portal. In the OMS portal, go to **Settings** > **Connected Sources** > **Windows Telemetry** and choose the **Unsubscribe** option.
+
+  ![Upgrade Readiness unsubscribe](images/upgrade-analytics-unsubscribe.png)
+
+2.  Disable the Commercial Data Opt-in Key on computers running Windows 7 SP1 or 8.1. On computers running Windows 10, set the diagnostic data level to **Security**:
+
+  **Windows 7 and Windows 8.1**: Delete CommercialDataOptIn registry property from *HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection*
+  **Windows 10**: Follow the instructions in the [Configure Windows diagnostic data in your organization](/configuration/configure-windows-diagnostic-data-in-your-organization.md) topic.
+
+3.	If you enabled **Internet Explorer Site Discovery**, you can disable Internet Explorer data collection by setting the *IEDataOptIn* registry key to value "0".  The IEDataOptIn key can be found under: *HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection*.
+4.	**Optional step:** You can also remove the “CommercialId” key from: "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection". 
+
+### Exporting large data sets
+
+Azure Log Analytics is optimized for advanced analytics of large data sets and can efficiently generate summaries and analytics for them. The query language is not optimized (or intended) for returning large raw data sets and has built-in limits to protect against overuse. There are times when it might be necessary to get more data than this, but that should be done sparingly since this is not the intended way to use Azure Log Analytics. The following code snippet shows how to retrieve data from UAApp one “page” at a time:
+
+```
+let snapshot = toscalar(UAApp | summarize max(TimeGenerated));
+let pageSize = 100000;
+let pageNumber = 0;
+ 
+UAApp
+| where TimeGenerated == snapshot and IsRollup==true and RollupLevel=="Granular" and Importance == "Low install count"
+| order by AppName, AppVendor, AppVersion desc
+| serialize
+| where row_number(0) >= (pageSize * pageNumber)
+| take pageSize
+```
+
+ 
 
 ## Other common questions
 
 ### What are the requirements and costs for Windows Analytics solutions?
-| Windows Analytics solution| Windows license requirements | Windows version requirements | Diagnostic data requirements |
+| Windows Analytics solution| Windows license requirements | Windows version requirements | Minimum diagnostic data requirements |
 |----------------------|-----------------------------------|------------------------------|------------------------------|
 | Upgrade Readiness | No additional requirements  |  Windows 7 with Service Pack 1, Windows 8.1, Windows 10 | Basic level in most cases; Enhanced level to support Windows 10 app usage data and IE site discovery |
 |  Update Compliance | No additional requirements | Windows 10 | Basic level |
-| Device Health  | No additional requirements  | - Windows 10 Enterprise or Windows 10 Education per-device with active Software Assurance<br>- Windows 10 Enterprise E3 or E5 per-device or per-user subscription (including Microsoft 365 F1, E3, or E5)<br>- Windows 10 Education A3 or A5 (including Microsoft 365 Education A3 or A5)<br>- Windows VDA E3 or E5 per-device or per-user subscription<br>- Windows Server 2016 or later  | Windows 10 | Enhanced level |
+| Device Health  |  **Any** of the following licenses: <br>- Windows 10 Enterprise or Windows 10 Education per-device with active Software Assurance<br>- Windows 10 Enterprise E3 or E5 per-device or per-user subscription (including Microsoft 365 F1, E3, or E5)<br>- Windows 10 Education A3 or A5 (including Microsoft 365 Education A3 or A5)<br>- Windows VDA E3 or E5 per-device or per-user subscription<br>- Windows Server 2016 or later    | Windows 10 | - For Windows 10 version 1709 or later: Enhanced (Limited)<br>- For earlier versions: Enhanced
 
 >[!NOTE]
 > Regarding licensing requirements for Device Health, you do not need per-seat licensing, but only enough licenses to cover your total device usage. For example, if you have 100 E3 licenses, you can monitor 100 devices with Device Health.
 
-Beyond the cost of Windows operating system licenses, there is no additional cost for using Windows Analytics. In Azure Log Analytics, Windows Analytics is "zero-rated;" this means it is excluded from data limits and costs regardless of the Azure Log Analytics pricing tier you have chosen.
+Beyond the cost of Windows operating system licenses, there is no additional cost for using Windows Analytics. Within Azure Log Analytics, Windows Analytics is "zero-rated;" this means it is excluded from data limits and costs regardless of the Azure Log Analytics pricing tier you have chosen. To be more specific, Azure Log Analytics is available in different pricing tiers as described in [Pricing - Log Analytics](https://azure.microsoft.com/pricing/details/log-analytics/).
+- If you are using the free tier, which has a cap on the amount of data collected per day, the Windows Analytics data will not count towards this cap. You will be able to collect all the Windows Analytics data from your devices and still have the full cap available for collecting additional data from other sources.
+- If you are using a paid tier that charges per GB of data collected, the Windows Analytics data will not be charged. You will be able to collect all the Windows Analytics data from your devices and not incur any costs.
 
-### How does Windows Analytics support privacy?
+Note that different Azure Log Analytics plans have different data retention periods, and the Windows Analytics solutions inherit the workspace's data retention policy. So, for example, if your workspace is on the free plan then Windows Analytics will retain the last week's worth of "daily snapshots" that are collected in the workspace.
 
-Windows Analytics is fully committed to privacy, centering on these tenets:
-
-- **Transparency:** We fully document the Windows Analytics diagnostic events (see the links for additional information) so you can review them with your company’s security and compliance teams. The Diagnostic Data Viewer lets you see diagnostic data sent from a given device (see [Diagnostic Data Viewer Overview](https://docs.microsoft.com/windows/configuration/diagnostic-data-viewer-overview) for details).
-- **Control:** You ultimately control the level of diagnostic data you wish to share. In Windows 10 1709 we added a new policy to Limit enhanced diagnostic data to the minimum required by Windows Analytics
-- **Security:** Your data is protected with strong security and encryption
-- **Trust:** Windows Analytics supports the Microsoft Online Service Terms
-
-See these topics for additional background information about related privacy issues:
-
-- [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windowsconfiguration/configure-windows-diagnostic-data-in-your-organization)
-- [Windows 7, Windows 8, and Windows 8.1 Appraiser Telemetry Events, and Fields](https://go.microsoft.com/fwlink/?LinkID=822965) (link downloads a PDF file)
-- [Windows 10, version 1703 basic level Windows diagnostic events and fields](https://docs.microsoft.com/windows/configuration/basic-level-windows-diagnostic-events-and-fields-1703)
-- [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](https://docs.microsoft.com/windows/configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields)
-- [Diagnostic Data Viewer Overview](https://docs.microsoft.com/windows/configuration/diagnostic-data-viewer-overview)
-- [Licensing Terms and Documentation](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Learn about security and privacy at Microsoft datacenters](http://www.microsoft.com/datacenters)
-- [Confidence in the trusted cloud](https://azure.microsoft.com/en-us/support/trust-center/) 
-
-### Can Windows Analytics be used without a direct client connection to the Microsoft Data Management Service?
-No, the entire service is powered by Windows diagnostic data, which requires that devices have this direct connectivity.
-
-### Can I choose the data center location?
-Yes for Azure Log Analytics, but no for the Microsoft Data Management Service (which is hosted in the US).
 
 ### Why do SCCM and Upgrade Readiness show different counts of devices that are ready to upgrade?
 System Center Configuration Manager (SCCM) considers a device ready to upgrade if *no installed app* has an upgrade decision of “not ready” (that is, they are all "ready" or "in progress"), while Upgrade Readiness considers a device ready to upgrade only if *all* installed apps are marked “ready”.

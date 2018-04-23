@@ -44,21 +44,22 @@ To enable data sharing, configure your proxy sever to whitelist the following en
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
-| `https://v10.events.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for Windows 10, version 1803|
-| `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for Windows 10, version 1709 or earlier |
-| `https://vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for operating systems older than Windows 10 |
+| `https://v10.events.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for use with the build of Windows 10 available in the Windows Insider Program|
+| `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for Windows 10, version 1709 or earlier |
+| `https://vortex-win.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for operating systems older than Windows 10 |
 | `https://settings-win.data.microsoft.com` | Enables the compatibility update to send data to Microsoft. 
 | `http://adl.windows.com` | Allows the compatibility update to receive the latest compatibility data from Microsoft. |
 | `https://watson.telemetry.microsoft.com` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports. Not used by Upgrade Readiness. |
 | `https://oca.telemetry.microsoft.com`  | Online Crash Analysis; required for Device Health and Update Compliance AV reports. Not used by Upgrade Readiness. |
 
 
-
+>[!NOTE]
+>If you have SSL Inspection enabled on your proxy server, you might need to add the above URLs to your SSL inspection exclusion list to allow data to reach Microsoft endpoints.
 
 ### Configuring endpoint access with proxy servers
 If your organization uses proxy server authentication for outbound traffic, use one or more of the following approaches to ensure that the diagnostic data is not blocked by proxy authentication:
 
-- **Best option:** Configure your proxy servers to **not** require proxy authentication for any traffic to the diagnostic data endpoints. This is the most comprehensive solution and it works for all versions of Windows 10.
+- **Best option:** Configure your proxy servers to **not** require proxy authentication for any traffic to the diagnostic data endpoints. In particular, disable SSL inspection. Windows checks for a Microsoft SSL certificate on the site, and this will be stripped and replaced if the proxy performs inspection. This is the most comprehensive solution and it works for all versions of Windows 10.
 - **User proxy authentication:** Alternatively, you can configure devices on the user side. First, update the devices to Windows 10, version 1703 or later. Then, ensure that users of the devices have proxy permission to reach the diagnostic data endpoints. This requires that the devices have console users with proxy permissions, so you couldn't use this method with headless devices.
 - **Device proxy authentication:** Another option--the most complex--is as follows: First, configure a system level proxy server on the devices. Then, configure these devices to use machine-account-based outbound proxy authentication. Finally, configure proxy servers to allow the machine accounts access to the diagnostic data endpoints. 
 
@@ -69,12 +70,15 @@ The compatibility update scans your devices and enables application usage tracki
 
 | **Operating System** | **Updates** |
 |----------------------|-----------------------------------------------------------------------------|
-| Windows 10        | The latest cumulative updates must be installed on Windows 10 devices to make sure that the required compatibility updates are installed. You can find the latest cumulative update on the [Microsoft Update Catalog](https://catalog.update.microsoft.com) <P>Note: Windows 10 LTSB is not supported by Upgrade Readiness. See [Upgrade readiness requirements](../upgrade/upgrade-readiness-requirements.md) for more information. |
-| Windows 8.1          | [KB 2976978](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2976978)<br>Performs diagnostics on the Windows 8.1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2976978><br><BR>[KB 3150513](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=3150513)<br>Provides updated configuration and definitions for compatibility diagnostics performed on the system.<br>For more information about this KB, see <https://support.microsoft.com/kb/3150513><br>**NOTE:** KB2976978 is a critical update, so it should already be installed by your management tool. You should, however, verify that it was deployed.   |
-| Windows 7 SP1        | [KB2952664](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2952664) <br>Performs diagnostics on the Windows 7 SP1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2952664><br><BR>[KB 3150513](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=3150513)<br>Provides updated configuration and definitions for compatibility diagnostics performed on the system.<br>For more information about this update, see <https://support.microsoft.com/kb/3150513><br>**NOTE:** If KB 3510513 is reported as out of date, you should manually find a recent version at [KB 3150513](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=3150513) and ensure that it is installed and deployed. |
+| Windows 10        | Windows 10 includes the compatibility update, so you will automatically have the latest compatibility update so long as you continue to keep your Windows 10 devices up-to-date with cummulative updates. <P>Note: Windows 10 LTSB is not supported by Upgrade Readiness. See [Upgrade readiness requirements](../upgrade/upgrade-readiness-requirements.md) for more information. |
+| Windows 8.1          | [KB 2976978](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2976978)<br>Performs diagnostics on the Windows 8.1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2976978>|
+| Windows 7 SP1        | [KB2952664](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2952664) <br>Performs diagnostics on the Windows 7 SP1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues might be encountered when the latest Windows operating system is installed. <br>For more information about this update, see <https://support.microsoft.com/kb/2952664>|
 
 >[!IMPORTANT] 
 >Restart devices after you install the compatibility updates for the first time.
+
+>[!NOTE] 
+>We recommend you configure your update management tool to automatically install the latest version of these updates. There is a related optional update, [KB 3150513](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=3150513), which can provide updated configuration and definitions for older compatibiltiy updates. For more information about this optional update, see <https://support.microsoft.com/kb/3150513>.
 
 
 
@@ -123,7 +127,6 @@ Use a software distribution system such as System Center Configuration Manager t
 
 ### Distributing policies at scale
 There are a number of policies that can be centrally managed to control Windows Analytics device configuration. All of these policies have *preference* registry key equivalents that can be set by using the deployment script. Policy settings override preference settings if both are set.
-
 >[!NOTE]
 >You can only set the diagnostic data level to Enhanced by using policy. For example, this is necessary for using Device Health.
 
@@ -134,6 +137,7 @@ These policies are under Microsoft\Windows\DataCollection:
 | CommercialId | In order for your devices to show up in Windows Analytics, they must be configured with your organization’s Commercial ID. |
 | AllowTelemetry (in Windows 10) |	1 (Basic), 2 (Enhanced) or 3 (Full) diagnostic data. Windows Analytics will work with basic diagnostic data, but more features are available when you use the Enhanced level (for example, Device Health requires Enhanced diagnostic data and Upgrade Readiness only collects app usage and site discovery data on Windows 10 devices with Enhanced diagnostic data). For more information, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization). |
 | LimitEnhancedDiagnosticDataWindowsAnalytics (in Windows 10) |	Only applies when AllowTelemetry=2. Limits the Enhanced diagnostic data events sent to Microsoft to just those needed by Windows Analytics. For more information, see [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](https://docs.microsoft.com/windows/configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields).|
+| AllowDeviceNameInTelemetry (in Windows 10) |	In the build currently available in the Windows Insider Program for Windows 10, a separate opt-in is required to enable devices to continue to send the device name. |
 | CommercialDataOptIn (in Windows 7 and Windows 8) |	1 is required for Upgrade Readiness, which is the only solution that runs on Windows 7 or Windows 8. |
 
 
@@ -150,4 +154,10 @@ For more information about Internet Explorer Security Zones, see [About URL Secu
 
 ### Distribution at scale without using the deployment script
 
-We recommend using the deployment script to configure devices. However if this is not an option, you can still manage settings by policy as described in the previous section. However, if you don't run the deployment script, you might have to wait a long time (possibly weeks) before devices send the initial full inventory scan.
+We recommend using the deployment script to configure devices. However if this is not an option, you can still manage settings by policy as described in the previous section. However, if you don't run the deployment script, you won't benefit from its error checking, and you might have to wait a long time (possibly weeks) before devices send the initial full inventory scan.
+
+Note that it is possible to intiate a full inventory scan on a device by calling these commands:
+- CompatTelRunner.exe -m:generaltel.dll -f:DoCensusRun
+- CompatTelRunner.exe -m:appraiser.dll -f:DoScheduledTelemetryRun ent
+
+For details on how to run these and how to check results, see the deployment script.

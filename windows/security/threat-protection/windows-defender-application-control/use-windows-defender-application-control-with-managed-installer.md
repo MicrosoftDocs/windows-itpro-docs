@@ -48,7 +48,9 @@ There are three primary steps to keep in mind:
 The identity of the managed installer executable(s) is specified in an AppLocker policy in a Managed Installer rule collection. 
 Currently the AppLocker policy creation UI and cmdlets do not allow for directly specifying rules for the Managed Installer rule collection, however a text editor can be used to make the simple changes needed to an EXE or DLL rule collection policy to specify Type="ManagedInstaller". 
 
-An example of a valid Managed Installer rule collection is shown below. 
+An example of a valid Managed Installer rule collection is shown below.
+For more information about creating an AppLocker policy that includes a managed installer and configuring client devices, see [Simplify application whitelisting with Configuration Manager and Windows 10](https://cloudblogs.microsoft.com/enterprisemobility/2016/06/20/configmgr-as-a-managed-installer-with-win10/).
+
 
 ```code
 <RuleCollection Type="ManagedInstaller" EnforcementMode="AuditOnly">

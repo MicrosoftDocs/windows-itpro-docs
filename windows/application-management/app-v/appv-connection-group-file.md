@@ -83,7 +83,7 @@ The following table describes the parameters in the XML file that define the con
 <td align="left"><p>Schema name</p></td>
 <td align="left"><p>Name of the schema.</p>
 <p>If you want to use the “optional packages” and “use any version” features that are described in this table, you must specify the following schema in the XML file:</p>
-<p><code>xmlns=&quot;http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&quot;</code></p></td>
+<p><code>xmlns=&quot;https://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup&quot;</code></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AppConnectionGroupId</p></td>
@@ -261,7 +261,7 @@ The following application connection configurations are supported.
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

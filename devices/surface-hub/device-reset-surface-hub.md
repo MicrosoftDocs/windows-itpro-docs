@@ -60,6 +60,9 @@ If you see a blank screen for long periods of time during the **Reset device** p
  
 In the Windows Recovery Environment (Windows RE), you can recover your device by downloading a factory build from the cloud and installing it on the Surface Hub. This allows devices in an unusable state to recover without requiring assistance from Microsoft Support.
 
+>[!NOTE]
+>The **Recover from the cloud** process requires an open internet connection (no proxy, or other authentications). An ethernet connection is recommended.
+
 ### Recover a Surface Hub in a bad state
 
 If the device account gets into an unstable state or the Admin account is running into issues, you can use cloud recovery in **Settings**. You should only use cloud recovery when [reset](#reset-a-surface-hub-from-settings) doesn't fix the problem.  
@@ -77,8 +80,6 @@ On rare occasions, a Surface Hub may encounter an error while cleaning up user a
 1.  From the welcome screen, toggle the Surface Hub's power switch 3 times. Wait a few seconds between each toggle. See the [Surface Hub Site Readiness Guide](https://www.microsoft.com/surface/support/surface-hub/surface-hub-site-readiness-guide) for help with locating the power switch. 
 2. The device should automatically boot into Windows RE. 
 3. After the Surface Hub enters Windows RE, select **Recover from the cloud**. (Optionally, you can choose **Reset**, however **Recover from the cloud** is the recommended approach.)
-    >[!NOTE]
-    >When using **Recover from the cloud**, an ethernet connection is recommended.
     
     ![Recover from the cloud](images/recover-from-cloud.png)
     

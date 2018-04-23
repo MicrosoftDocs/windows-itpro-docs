@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
-ms.date: 03/18/2018
+ms.date: 03/20/2018
 ---
 
 # Get started with Upgrade Readiness
@@ -30,14 +30,14 @@ When you are ready to begin using Upgrade Readiness, perform the following steps
 
 ## Data collection and privacy 
 
-To enable system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what diagnostic data Microsoft collects and how that data is used and protected by Microsoft, see the following topics, refer to [Frequently asked questions and troubleshooting Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-FAQ-troubleshooting.md), which discusses the issues and provides links to still more detailed information.
+To enable system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what diagnostic data Microsoft collects and how that data is used and protected by Microsoft, see the following topics, refer to [Frequently asked questions and troubleshooting Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-FAQ-troubleshooting), which discusses the issues and provides links to still more detailed information.
 
 ## Add Upgrade Readiness to Operations Management Suite
 
 Upgrade Readiness is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud based services for managing your on-premises and cloud environments. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
 
 >[!IMPORTANT]
->Upgrade Readiness is a free solution for Azure subsribers. When configured correctly, all data associated with the Upgrade Readiness solution are exempt from billing in both OMS and Azure. Upgrade Readiness data **do not** count toward OMS daily upload limits.
+>Upgrade Readiness is a free solution for Azure subscribers. When configured correctly, all data associated with the Upgrade Readiness solution are exempt from billing in both OMS and Azure. Upgrade Readiness data **do not** count toward OMS daily upload limits. The Upgrade Readiness service will ingest a full snapshot of your data into your OMS workspace on a daily basis. Each snapshot includes all of your devices that have been active within the past 30 days regardless of your OMS retention period.
 
 If you are already using OMS, you’ll find Upgrade Readiness in the Solutions Gallery. Select the **Upgrade Readiness** tile in the gallery and then click **Add** on the solution's details page. Upgrade Readiness is now visible in your workspace. While you have this dialog open, you should also consider adding the [Device Health](../update/device-health-monitor.md) and [Update Compliance](../update/update-compliance-monitor.md) solutions as well, if you haven't already. To do so, just select the check boxes for those solutions.
 
@@ -54,7 +54,7 @@ If you are not using OMS:
 
 ## Enroll devices in Windows Analytics
 
-Once you've added Update Compliance to Microsoft Operations Management Suite, you can now start enrolling the devices in your organization. For full instructions, see [Enrolling devices in Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started.md).
+Once you've added Update Compliance to Microsoft Operations Management Suite, you can now start enrolling the devices in your organization. For full instructions, see [Enrolling devices in Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started).
 
 
 

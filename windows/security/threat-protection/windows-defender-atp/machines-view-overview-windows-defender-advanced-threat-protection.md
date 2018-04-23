@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 03/12/2018
+ms.date: 04/17/2018
 ---
 
 # View and organize the Windows Defender ATP Machines list
@@ -23,8 +23,6 @@ ms.date: 03/12/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
-
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
 
 The **Machines list** shows a list of the machines in your network, the domain of each machine, when it last reported and the local IP Address it reported on, its **Health state**, the number of active alerts on each machine categorized by alert severity level, and the number of active malware detections. This view allows viewing machines ranked by risk or sensor health state, and keeping track of all machines that are reporting sensor data in your network.
@@ -32,7 +30,7 @@ The **Machines list** shows a list of the machines in your network, the domain o
 Use the Machines list in these main scenarios:
 
 - **During onboarding**<br>
-  During the onboarding process, the **Machines list** is gradually populated with endpoints as they begin to report sensor data. Use this view to track your onboarded endpoints as they come online. Sort and filter by time of last report, **Active malware category**, or **Sensor health state**, or download the complete endpoint list as a CSV file for offline analysis.
+  During the onboarding process, the **Machines list** is gradually populated with machines as they begin to report sensor data. Use this view to track your onboarded endpoints as they come online. Sort and filter by time of last report, **Active malware category**, or **Sensor health state**, or download the complete endpoint list as a CSV file for offline analysis.
 - **Day-to-day work** <br>
   The **Machines list** enables easy identification of machines most at risk in a glance. High-risk machines have the greatest number and highest-severity alerts; **Sensor health state** provides another dimension to rank machines. Sorting machines by **Active alerts**, and then by **Sensor health state** helps identify the most vulnerable machines and take action on them.
 
@@ -43,7 +41,7 @@ Filter the **Machines list** by **Time**, **OS Platform**, **Health**, **Securit
 
 You can also download the entire list in CSV format using the **Export to CSV** feature.
 
-![Image of machines list with list of machines](images/atp-machines-list-view.png)
+![Image of machines list with list of machines](images/atp-machines-list-view2.png)
 
 You can use the following filters to limit the list of machines displayed during an investigation:
 
@@ -53,6 +51,9 @@ You can use the following filters to limit the list of machines displayed during
 - 7 days
 - 30 days
 - 6 months
+
+**Risk level**</br>
+Machine risk levels are indicators of the active threats that machines could be exposed to. A machine's risk level is determined using the number of active alerts and their severity levels. You can influence a machine's risk level by resolving associated alerts manually or automatically and also by suppressing an alert.
 
 **OS Platform**</br>
 - Windows 10
@@ -80,7 +81,7 @@ Filter the list to view specific machines that are well configured or require at
 - **Well configured** - Machines have the Windows Defender security controls well configured. 
 - **Requires attention** - Machines where improvements can be made to increase the overall security posture of your organization.
 
-For more information, see [View the Secure score dashboard](security-analytics-dashboard-windows-defender-advanced-threat-protection.md).
+For more information, see [View the Secure Score dashboard](secure-score-dashboard-windows-defender-advanced-threat-protection.md).
 
 **Malware category alerts**</br>
 Filter the list to view specific machines grouped together by the following malware categories:
@@ -92,13 +93,14 @@ Filter the list to view specific machines grouped together by the following malw
   -	**General malware** – Malware are malicious programs that perform unwanted actions, including actions that can disrupt, cause direct damage, and facilitate intrusion and data theft. Some malware can replicate and spread from one machine to another. Others are able to receive commands from remote attackers and perform activities associated with cyberattacks.
   -	**PUA** – Unwanted software is a category of applications that install and perform undesirable activity without adequate user consent. These applications are not necessarily malicious, but their behaviors often negatively impact the computing experience, even appearing to invade user privacy. Many of these applications display advertising, modify browser settings, and install bundled software.
 
-## Groups and tags
-You can filter the list based on the grouping and tagging that you've added to individual machines. For more information, see [Manage machine group and tags](investigate-machines-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags).
+**Groups and tags** </br>
+You can filter the list based on the grouping and tagging that you've added to individual machines. 
 
 ## Export machine list to CSV
 You can  download a full list of all the machines in your organization, in CSV format. Click the **Export to CSV** button to download the entire list as a CSV file.
 
-**Note**: Exporting the list depends on the number of machines in your organization. It might take a significant amount of time to download, depending on how large your organization is.
+>[NOTE]
+> Exporting the list depends on the number of machines in your organization. It might take a significant amount of time to download, depending on how large your organization is.
 Exporting the list in CSV format displays the data in an unfiltered manner. The CSV file will include all machines in the organization, regardless of any filtering applied in the view itself.
 
 ## Sort the Machines list
@@ -112,17 +114,10 @@ You can sort the **Machines list** by the following columns:
 - **Active malware alerts** - Number of active malware detections reported by the machine
 
 > [!NOTE]
-> The **Active malware detections** filter column will only appear if your endpoints are using [Windows Defender Antivirus](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md) as the active real-time protection antimalware product.
+> The **Active malware detections** filter column will only appear if your machines are using [Windows Defender Antivirus](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md) as the active real-time protection antimalware product.
 
 
 ## Related topics
-- [View the Windows Defender Advanced Threat Protection Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
-- [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
-- [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
-- [Investigate an IP address associated with a Windows Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
-- [Investigate a domain associated with a Windows Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
 - [Investigate machines in the Windows Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
-- [Investigate a user account in Windows Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)
-- [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
-- [Take response actions in Windows Defender ATP](response-actions-windows-defender-advanced-threat-protection.md)
+
+
