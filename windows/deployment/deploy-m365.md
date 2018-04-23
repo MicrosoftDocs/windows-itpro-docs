@@ -17,9 +17,9 @@ author: greg-lindsay
 
 -   Windows 10
 
-[Microsoft 365](https://www.microsoft.com/microsoft-365) is a new offering from Microsoft that combines [Windows 10](https://www.microsoft.com/windows/features) with [Office 365](https://products.office.com/business/explore-office-365-for-business), and [Enterprise Mobility and Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) (EMS).
+This topic provides a general overview of [Microsoft 365](https://www.microsoft.com/microsoft-365), a new offering from Microsoft that combines [Windows 10](https://www.microsoft.com/windows/features) with [Office 365](https://products.office.com/business/explore-office-365-for-business), and [Enterprise Mobility and Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) (EMS). The topic also describes how to use a free 90-day trial account to review some of the benefits of Microsoft 365.
 
-Microsoft 365 comes with lots of great benefits, including a fantasic deployment advisor that can walk you through the entire process of deploying Windows 10 using the following options:
+For Windows 10 deployment, Microsoft 365 includes a fantasic deployment advisor that can walk you through the entire process of deploying Windows 10. The wizards supports multiple Windows 10 deployment methods, including:
 
 - Windows AutoPilot
 - In-place upgrade
@@ -27,11 +27,11 @@ Microsoft 365 comes with lots of great benefits, including a fantasic deployment
 - Deploying Windows 10 upgrade with System Center Configuration Manager
 - Deploying a computer refresh with System Center Configuration Manager
 
-You can also check out the Microsoft 365 deployment advisor for free! Just follow the steps below. 
+You can check out the Microsoft 365 deployment advisor and other resources for free! Just follow the steps below. 
 
 1. Obtain a free EMS 90-day trial by visiting the following link. Provide your email address and answer a few simple questions.
 
-[Free Trail - Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-trial)
+    [Free Trail - Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-trial)
 
 2. Check out the [Microsoft 365 deployment advisor](https://portal.office.com/onboarding/Microsoft365DeploymentAdvisor#/).
 3. Also check out the [Windows Analytics deployment advisor](https://portal.office.com/onboarding/WindowsAnalyticsDeploymentAdvisor#/). This advisor will walk you through deploying [Upgrade Readiness](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness), [Update Compliance](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor), and [Device Health](https://docs.microsoft.com/windows/deployment/update/device-health-monitor). 
@@ -40,8 +40,8 @@ That's all there is to it!
 
 Examples of these two deployment advisors are shown below.
 
-[Microsoft 365 deployment advisor example](#microsoft-365-deployment-advisor-example)
-[Windows Analytics deployment advisor example](#windows-analytics-deployment-advisor-example)
+- [Microsoft 365 deployment advisor example](#microsoft-365-deployment-advisor-example)
+- [Windows Analytics deployment advisor example](#windows-analytics-deployment-advisor-example)
 
 ## Microsoft 365 deployment advisor example
 ![Microsoft 365 deployment advisor](images/m365da.png)
