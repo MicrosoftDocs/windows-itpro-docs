@@ -30,7 +30,7 @@ Each installed software application should be validated as trustworthy before yo
 We recommend that you review the reference computer for software that can load arbitrary DLLs and run code or scripts that could render the PC more vulnerable. 
 Examples include software aimed at development or scripting such as msbuild.exe (part of Visual Studio and the .NET Framework) which can be removed if you do not want to run scripts. 
 You can remove or disable such software on the reference computer. 
-You can also fine-tune your control by [using Windows Defender Application Control in combination with AppLocker](windows-defender-application-control-and-applocker.md). 
+
 
 
 To create a WDAC policy, copy each of the following commands into an elevated Windows PowerShell session, in order:

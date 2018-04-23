@@ -29,13 +29,13 @@ A managed installer uses a new rule collection in AppLocker to specify one or mo
 Specifying an executable as a managed installer will cause Windows to tag files that are written from the executable’s process (or processes it launches) as having originated from a trusted installation authority.  
 
 Once the IT administrator adds the Allow: Managed Installer option to a WDAC policy, the WDAC component will subsequently check for the presence of the origin information when evaluating other application execution control rules specified in the policy. 
-If there are no deny rules present for the file, it will be authorized based on the managed installer origin information.
+If there are no deny rules present for the file, it will be authorized based on the managed installer origin information.+
+
+Admins needs to ensure that there is a WDAC policy in place to allow the system to boot and run any other authorized applications that may not be deployed through a managed installer. 
+Examples of WDAC policies available in C:\Windows\schemas\CodeIntegrity\ExamplePolicies help authorize Windows OS components, WHQL signed drivers and all Store apps. 
 
 > [!NOTE] 
-> Admins needs to ensure that there is a WDAC policy in place to allow the system to boot and run any other authorized applications that may not be deployed through a managed installer. 
->
-> Examples of WDAC policies available in C:\Windows\schemas\CodeIntegrity\ExamplePolicies help authorize Windows OS components, WHQL signed drivers and all Store apps. 
-> Admins can reference and customize them as needed for their Windows Defender Application Control deployment or create a custom WDAC policy as described in [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md).
+> Only one SiPolicy.p7b file can be active on a system. The last management authority to write the policy wins. If there was already a policy deployed by using Group Policy and then SCCM targeted the same device, the SCCM policy would overwrite the SiPolicy.p7b file.
 
 ## Configuring a managed installer with AppLocker and Windows Defender Application Control
 
