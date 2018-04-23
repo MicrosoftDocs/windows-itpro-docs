@@ -26,7 +26,7 @@ You can simply type **“winver”** in the search bar to see version details fo
 
 ![screenshot of the About Windows display text](images/winversnip.jpg)
 
-You can also type **“msinfo”** to display the following information:
+You can also type **“msinfo”** to show the following information:
 
 ![screenshot of the System Information display text](images/msinfosnip.jpg)
 
