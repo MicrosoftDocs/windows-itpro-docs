@@ -19,10 +19,7 @@
 ### [Audit WDAC policies](audit-windows-defender-application-control-policies.md)
 ### [Merge WDAC policies](merge-windows-defender-application-control-policies.md)
 ### [Enforce WDAC policies](enforce-windows-defender-application-control-policies.md)
-###Deploy WDAC policies
-#### [Use Group Policy](deploy-windows-defender-application-control-policies-using-group-policy.md)
-#### [Use SCCM](deploy-windows-defender-application-control-policies-using-sccm.md)
-#### [Use Intune](deploy-windows-defender-application-control-policies-using-intune.md)
+### [Deploy WDAC policies](deploy-windows-defender-application-control-policies-using-group-policy.md)
 ### [Use code signing to simplify application control for classic Windows applications](use-code-signing-to-simplify-application-control-for-classic-windows-applications.md)
 #### [Optional: Use the Device Guard Signing Portal in the Microsoft Store for Business](use-device-guard-signing-portal-in-microsoft-store-for-business.md)
 #### [Optional: Create a code signing cert for WDAC](create-code-signing-cert-for-windows-defender-application-control.md)
