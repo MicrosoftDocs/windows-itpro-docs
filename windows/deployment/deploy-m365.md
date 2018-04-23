@@ -17,15 +17,19 @@ author: greg-lindsay
 
 -   Windows 10
 
-This topic provides a general overview of [Microsoft 365](https://www.microsoft.com/microsoft-365), a new offering from Microsoft that combines [Windows 10](https://www.microsoft.com/windows/features) with [Office 365](https://products.office.com/business/explore-office-365-for-business), and [Enterprise Mobility and Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) (EMS). The topic also describes how to use a free 90-day trial account to review some of the benefits of Microsoft 365.
+This topic provides a brief overview of Microsoft 365 and describes how to use a free 90-day trial account to review some of the benefits of Microsoft 365.
 
-For Windows 10 deployment, Microsoft 365 includes a fantasic deployment advisor that can walk you through the entire process of deploying Windows 10. The wizards supports multiple Windows 10 deployment methods, including:
+[Microsoft 365](https://www.microsoft.com/microsoft-365) is a new offering from Microsoft that combines [Windows 10](https://www.microsoft.com/windows/features) with [Office 365](https://products.office.com/business/explore-office-365-for-business), and [Enterprise Mobility and Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) (EMS).
+
+For Windows 10 deployment, Microsoft 365 includes a fantasic deployment advisor that can walk you through the entire process of deploying Windows 10. The wizard supports multiple Windows 10 deployment methods, including:
 
 - Windows AutoPilot
 - In-place upgrade
 - Deploying Windows 10 upgrade with Intune
 - Deploying Windows 10 upgrade with System Center Configuration Manager
 - Deploying a computer refresh with System Center Configuration Manager
+
+## Free trial account
 
 You can check out the Microsoft 365 deployment advisor and other resources for free! Just follow the steps below. 
 
