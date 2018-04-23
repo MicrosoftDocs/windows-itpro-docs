@@ -308,7 +308,7 @@
 #### [Customize Controlled folder access](windows-defender-exploit-guard\customize-controlled-folders-exploit-guard.md)
 
 
-## [Windows Defender Application Control](windows-defender-application-control.md)
+## [Windows Defender Application Control](windows-defender-application-control/windows-defender-application-control.md)
 
 ## [Control the health of Windows 10-based devices](protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md)
 
