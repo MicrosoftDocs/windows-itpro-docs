@@ -2012,7 +2012,7 @@
 },
 {
 "source_path": "windows/device-security/device-guard/steps-to-deploy-windows-defender-application-control.md",
-"redirect_url": "/windows/security/threat-protection/device-guard/steps-to-deploy-windows-defender-application-control",
+"redirect_url": "/windows/security/threat-protection/windows-defender-application-control/create-initial-default-policy",
 "redirect_document_id": true
 },
 {
@@ -4687,7 +4687,7 @@
 },
 {
 "source_path": "windows/device-security/device-guard/deploy-code-integrity-policies-steps.md",
-"redirect_url": "/windows/device-security/device-guard/steps-to-deploy-windows-defender-application-control",
+"redirect_url": "/windows/security/threat-protection/windows-defender-application-control/create-initial-default-policy",
 "redirect_document_id": true
 },
 {
