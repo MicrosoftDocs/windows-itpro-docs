@@ -41,7 +41,7 @@ Use the following procedure to configure the App-V for reporting.
     </tr>
     <tr class="even">
     <td align="left"><p>ReportingServerURL</p></td>
-    <td align="left"><p>Specifies the location on the reporting server where client information is saved. For example, http://&lt;reportingservername&gt;:&lt;reportingportnumber&gt;.</p>
+    <td align="left"><p>Specifies the location on the reporting server where client information is saved. For example, https://&lt;reportingservername&gt;:&lt;reportingportnumber&gt;.</p>
     <div class="alert">
     <strong>Note</strong>  
     <p>This is the port number that was assigned during the Reporting Server setup</p>
@@ -82,7 +82,7 @@ Use the following procedure to configure the App-V for reporting.
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

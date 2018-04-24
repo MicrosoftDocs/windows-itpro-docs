@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/23/2018
+ms.date: 04/11/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -1149,6 +1149,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>ApplicationDefaults/EnableAppUriHandlers</li>
 <li>ApplicationManagement/MSIAllowUserControlOverInstall</li>
 <li>ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges</li>
+<li>Bluetooth/AllowPromptedProximalConnections</li>
 <li>Browser/AllowConfigurationUpdateForBooksLibrary</li>
 <li>Browser/AlwaysEnableBooksLibrary</li>
 <li>Browser/EnableExtendedBooksTelemetry</li>
@@ -1169,6 +1170,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>KioskBrowser/BlockedUrlExceptions</li>
 <li>KioskBrowser/BlockedUrls</li>
 <li>KioskBrowser/DefaultURL</li>
+<li>KioskBrowser/EnableEndSessionButton</li>
 <li>KioskBrowser/EnableHomeButton</li>
 <li>KioskBrowser/EnableNavigationButtons</li>
 <li>KioskBrowser/RestartOnIdleTime</li>
@@ -1176,7 +1178,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>LocalPoliciesSecurityOptions/Devices_AllowUndockWithoutHavingToLogon</li> 
 <li>LocalPoliciesSecurityOptions/Devices_AllowedToFormatAndEjectRemovableMedia</li> 
 <li>LocalPoliciesSecurityOptions/Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters</li> 
-<li>LocalPoliciesSecurityOptions/Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly</li> 
+<li>LocalPoliciesSecurityOptions/Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly</li>
+<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways</li>
+<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible</li>
+<li>LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges</li> 
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers</li> 
@@ -1190,7 +1195,11 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</li> 
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange</li> 
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</li> 
-<li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</li> 
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers</li> 
 <li>LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</li> 
 <li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li> 
 <li>LocalPoliciesSecurityOptions/UserAccountControl_DetectApplicationInstallationsAndPromptForElevation</li> 
@@ -1331,7 +1340,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <tr>
 <td style="vertical-align:top">[AccountManagement CSP](accountmanagement-csp.md)</td>
 <td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
-</ul>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[RootCATrustedCertificates CSP](rootcacertificates-csp.md)</td>
@@ -1339,6 +1347,17 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <ul>
 <li>UntrustedCertificates</li>
 </ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[NetworkProxy CSP](\networkproxy--csp.md)</td>
+<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<ul>
+<li>ProxySettingsPerUser</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Accounts CSP](accounts-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
 </td></tr>
 </tbody>
 </table>
@@ -1628,6 +1647,32 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>Settings/AllowVirtualGPU</li>
 <li>Settings/SaveFilesToHost</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[NetworkProxy CSP](\networkproxy--csp.md)</td>
+<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<ul>
+<li>ProxySettingsPerUser</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Accounts CSP](accounts-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1803:</p>
+<ul>
+<li>Bluetooth/AllowPromptedProximalConnections</li>
+<li>KioskBrowser/EnableEndSessionButton</li>
+<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways</li>
+<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible</li>
+<li>LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers</li>
 </ul>
 </td></tr>
 </tbody>

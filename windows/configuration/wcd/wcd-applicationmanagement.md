@@ -15,7 +15,7 @@ ms.date: 09/12/2017
 Use these settings to manage app installation and management.
 
 >[!NOTE]
->ApplicationManagement settings are not available in Windows 10, version 1709.
+>ApplicationManagement settings are not available in Windows 10, version 1709, and later.
 
 ## Applies to
 

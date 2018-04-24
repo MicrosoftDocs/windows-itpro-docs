@@ -561,10 +561,7 @@ The MBAM server can be deployed in Azure Infrastructure as a Service (IaaS) on a
 
 The MBAM client is not supported on virtual machines and is also not supported on Azure IaaS.
 
-## Got a suggestion for MBAM?
 
-
-Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 ## Related topics
 
@@ -576,7 +573,9 @@ Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-micros
  
 
  
-
+## Got a suggestion for MBAM?
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 
 

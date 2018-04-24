@@ -22,7 +22,7 @@ The Group Policy settings for TPM services are located at:
 
 **Computer Configuration\\Administrative Templates\\System\\Trusted Platform Module Services\\**
 
-The following Group Policy settings were introduced in Window 10:
+The following Group Policy settings were introduced in Window 10.
 
 ## Configure the list of blocked TPM commands
 
@@ -36,17 +36,11 @@ If you disable or do not configure this policy setting, only those TPM commands 
 
 -   The local list of blocked TPM commands is configured outside of Group Policy by running the TPM Management Console or scripting using the **Win32\_Tpm** interface.
 
-For information how to enforce or ignore the default and local lists of blocked TPM commands, see
-
--   [Ignore the default list of blocked TPM commands](#ignore-the-default-list-of-blocked-tpm-commands)
-
--   [Ignore the local list of blocked TPM commands](#ignore-the-local-list-of-blocked-tpm-commands)
-
 ## Ignore the default list of blocked TPM commands
 
 This policy setting allows you to enforce or ignore the computer's default list of blocked Trusted Platform Module (TPM) commands.
 
-The default list of blocked TPM commands is preconfigured by Windows. You can view the default list by typing **tpm.msc** at the command prompt to open the TPM Management Console, navigating to the **Command Management** section, and exposing the **On Default Block List** column. Also see the related policy setting, [Configure the list of blocked TPM commands](#configure-the-list-of-blocked-tpm-commands).
+The default list of blocked TPM commands is preconfigured by Windows. You can view the default list by typing **tpm.msc** at the command prompt to open the TPM Management Console, navigating to the **Command Management** section, and exposing the **On Default Block List** column. 
 
 If you enable this policy setting, the Windows operating system will ignore the computer's default list of blocked TPM commands, and it will block only those TPM commands that are specified by Group Policy or the local list.
 
@@ -56,7 +50,8 @@ If you disable or do not configure this policy setting, Windows will block the T
 
 This policy setting allows you to enforce or ignore the computer's local list of blocked Trusted Platform Module (TPM) commands.
 
-The local list of blocked TPM commands is configured outside of Group Policy by typing **tpm.msc** at the command prompt to open the TPM Management Console, or scripting using the **Win32\_Tpm** interface. (The default list of blocked TPM commands is preconfigured by Windows.) Also see the related policy setting, [Configure the list of blocked TPM commands](#configure-the-list-of-blocked-tpm-commands).
+The local list of blocked TPM commands is configured outside of Group Policy by typing **tpm.msc** at the command prompt to open the TPM Management Console, or scripting using the **Win32\_Tpm** interface. (The default list of blocked TPM commands is preconfigured by Windows.) 
+
 
 If you enable this policy setting, the Windows operating system will ignore the computer's local list of blocked TPM commands, and it will block only those TPM commands that are specified by Group Policy or the default list.
 
@@ -64,10 +59,9 @@ If you disable or do not configure this policy setting, Windows will block the T
 
 ## Configure the level of TPM owner authorization information available to the operating system
 
-This policy setting configures how much of the TPM owner authorization information is stored in the registry of the local computer. Depending on the amount of TPM owner authorization information that is stored locally, the Windows operating system and TPM-based applications can perform certain actions in the TPM that require TPM owner authorization without requiring the user to enter the TPM owner password.
+Beginning with Windows 10 version 1607 and Windows Server 2016, this policy setting is no longer used by Windows, but it continues to appear in GPEdit.msc for compatibility with previous versions. 
 
-> [!IMPORTANT]
-> This policy setting is not available in the Windows 10, version 1607 and Windows Server 2016 and later versions of the ADMX files.
+This policy setting configures how much of the TPM owner authorization information is stored in the registry of the local computer. Depending on the amount of TPM owner authorization information that is stored locally, the Windows operating system and TPM-based applications can perform certain actions in the TPM that require TPM owner authorization without requiring the user to enter the TPM owner password.
 
 There are three TPM owner authentication settings that are managed by the Windows operating system. You can choose a value of **Full**, **Delegate**, or **None**.
 
@@ -143,13 +137,6 @@ An administrator with the TPM owner password can fully reset the TPM's hardware 
 
 If you do not configure this policy setting, a default value of 9 is used. A value of zero means that the operating system will not allow standard users to send commands to the TPM, which might cause an authorization failure.
 
-> [!IMPORTANT]
-> The **Turn on TPM backup to Active Directory Domain Services** is not available in the Windows 10, version 1607 and Windows Server 2016 and later versions of the ADMX files.
-
-If you enable this policy setting, TPM owner information will be automatically and silently backed up to AD DS when you use Windows to set or change a TPM owner password. When this policy setting is enabled, a TPM owner password cannot be set or changed unless the computer is connected to the domain and the AD DS backup succeeds.
-
-If you disable or do not configure this policy setting, TPM owner information will not be backed up to AD DS.
-
 ## Configure the system to use legacy Dictionary Attack Prevention Parameters setting for TPM 2.0
 
 Introduced in Windows 10, version 1703, this policy setting configures the TPM to use the Dictionary Attack Prevention Parameters (lockout threshold and recovery time) to the values that were used for Windows 10 Version 1607 and below. 
@@ -167,6 +154,6 @@ Introduced in Windows 10, version 1703, this policy setting configures the TPM t
 
 ## Related topics
 
-- [Trusted Platform Module](trusted-platform-module-top-node.md) (list of topics)
-- [TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx)
-- [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](https://technet.microsoft.com/itpro/windows/keep-secure/prepare-your-organization-for-bitlocker-planning-and-policies#bkmk-tpmconfigurations)
+- [Trusted Platform Module](trusted-platform-module-top-node.md) 
+- [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/trustedplatformmodule/?view=win10-ps)
+- [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies#bkmk-tpmconfigurations)

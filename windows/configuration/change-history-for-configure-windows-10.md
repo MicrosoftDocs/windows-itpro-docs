@@ -8,18 +8,26 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: jdeckerms
-ms.date: 04/04/2018
+ms.date: 04/23/2018
 ---
 
 # Change history for Configure Windows 10
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
+## RELEASE: Windows 10, version 1803
+
+The topics in this library have been updated for Windows 10, version 1803. The following new topics have been added:
+
+- Windows Configuration Designer setting: [AccountManagement](wcd/wcd-accountmanagement.md)
+- Windows Configuration Designer setting: [RcsPresence](wcd/wcd-rcspresence.md)
+
 ## April 2018
 
 New or changed topic | Description
 --- | ---
 [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md) | Updated endpoints.
+[Configure cellular settings for tablets and PCs](provisioning-apn.md) | Added instructions for confirming that the settings were applied.
 
 ## March 2018
 

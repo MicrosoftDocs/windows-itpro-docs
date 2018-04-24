@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/12/2018
+ms.date: 04/16/2018
 ---
 
 # Policy CSP - MSSecurityGuide
@@ -47,6 +47,29 @@ ms.date: 03/12/2018
 <!--Policy-->
 <a href="" id="mssecurityguide-applyuacrestrictionstolocalaccountsonnetworklogon"></a>**MSSecurityGuide/ApplyUACRestrictionsToLocalAccountsOnNetworkLogon**  
 
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -79,6 +102,29 @@ ADMX Info:
 <!--Policy-->
 <a href="" id="mssecurityguide-configuresmbv1clientdriver"></a>**MSSecurityGuide/ConfigureSMBV1ClientDriver**  
 
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -111,6 +157,29 @@ ADMX Info:
 <!--Policy-->
 <a href="" id="mssecurityguide-configuresmbv1server"></a>**MSSecurityGuide/ConfigureSMBV1Server**  
 
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -143,6 +212,29 @@ ADMX Info:
 <!--Policy-->
 <a href="" id="mssecurityguide-enablestructuredexceptionhandlingoverwriteprotection"></a>**MSSecurityGuide/EnableStructuredExceptionHandlingOverwriteProtection**  
 
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -175,6 +267,29 @@ ADMX Info:
 <!--Policy-->
 <a href="" id="mssecurityguide-turnonwindowsdefenderprotectionagainstpotentiallyunwantedapplications"></a>**MSSecurityGuide/TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications**  
 
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -207,6 +322,29 @@ ADMX Info:
 <!--Policy-->
 <a href="" id="mssecurityguide-wdigestauthentication"></a>**MSSecurityGuide/WDigestAuthentication**  
 
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 

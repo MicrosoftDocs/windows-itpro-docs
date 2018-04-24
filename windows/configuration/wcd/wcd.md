@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 10/09/2017
+ms.date: 04/23/2018
 ---
 
 # Windows Configuration Designer provisioning settings (reference)
@@ -18,6 +18,7 @@ This section describes the settings that you can configure in [provisioning pack
 
 | Setting group | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
+[AccountManagement](wcd-accountmanagement.md) |  |  |  | X |  |
 | [Accounts](wcd-accounts.md) | X | X | X | X | X |
 | [ADMXIngestion](wcd-admxingestion.md) | X | | | | |
 | [ApplicationManagement](wcd-applicationmanagement.md) |  |  |  |  | X |
@@ -60,6 +61,7 @@ This section describes the settings that you can configure in [provisioning pack
 | [Personalization](wcd-personalization.md) | X |  |  |  |  |
 | [Policies](wcd-policies.md) | X | X | X | X | X |
 | [ProvisioningCommands](wcd-provisioningcommands.md) | X |  |  |  |  |
+[RcsPresence](wcd-rcspresence.md) |  | X |  |  |  |
 | [SharedPC](wcd-sharedpc.md) | X |  |  |  |  |
 | [Shell](wcd-shell.md) |  | X |  |  |  |
 | [SMISettings](wcd-smisettings.md) | X |  |  |  |  |

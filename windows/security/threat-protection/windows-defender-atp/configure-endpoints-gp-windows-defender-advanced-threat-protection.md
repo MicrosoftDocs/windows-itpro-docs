@@ -1,7 +1,7 @@
 ---
-title: Configure Windows Defender ATP endpoints using Group Policy
-description: Use Group Policy to deploy the configuration package on endpoints so that they are onboarded to the service.
-keywords: configure endpoints using group policy, endpoint management, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints, group policy
+title: Onboard Windows 10 machines using Group Policy to Windows Defender ATP
+description: Use Group Policy to deploy the configuration package on Windows 10 machines so that they are onboarded to the service.
+keywords: configure machines using group policy, machine management, configure Windows ATP machines, onboard Windows Defender Advanced Threat Protection machines, group policy
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,10 +10,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 11/06/2017
+ms.date: 04/17/2018
 ---
 
-# Configure endpoints using Group Policy
+# Onboard Windows 10 machines using Group Policy 
 
 **Applies to:**
 
@@ -25,7 +25,7 @@ ms.date: 11/06/2017
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
-
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
@@ -33,14 +33,18 @@ ms.date: 11/06/2017
 > [!NOTE]
 > To use Group Policy (GP) updates to deploy the package, you must be on Windows Server 2008 R2 or later.
 
-## Onboard endpoints
-1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
+## Onboard machines using Group Policy
+1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
+ 
+    a.  In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
 
-    a.  Click **Endpoint management** > **Clients** on the **Navigation pane**.
+    b. Select Windows 10 as the operating system.
+    
+    c. In the **Deployment method** field, select **Group policy**.
+    
+    d. Click **Download package** and save the .zip file.
 
-    b.  Select **Group Policy**, click **Download package** and save the .zip file.
-
-2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the endpoints. You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.cmd*.
+2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the machine. You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.cmd*.
 
 3. Open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
@@ -57,10 +61,10 @@ ms.date: 11/06/2017
 9. Click **OK** and close any open GPMC windows.
 
 >[!TIP]
-> After onboarding the endpoint, you can choose to run a detection test to verify that an endpoint is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md).
+> After onboarding the machine, you can choose to run a detection test to verify that the machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP machine](run-detection-test-windows-defender-advanced-threat-protection.md).
 
 ## Additional Windows Defender ATP configuration settings
-For each endpoint, you can state whether samples can be collected from the endpoint when a request is made through the Windows Defender ATP portal to submit a file for deep analysis.
+For each machine, you can state whether samples can be collected from the machine when a request is made through the Windows Defender ATP portal to submit a file for deep analysis.
 
 You can use Group Policy (GP) to configure settings, such as settings for the sample sharing used in the deep analysis feature.
 
@@ -80,7 +84,7 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 
 5.  Click **Windows components** and then **Windows Defender ATP**.
 
-6.  Choose to enable or disable sample sharing from your endpoints.
+6.  Choose to enable or disable sample sharing from your machines.
 
 >[!NOTE]
 > If you don't set a value, the default value is to enable sample collection.
@@ -93,7 +97,7 @@ In cases where high-value assets or machines are at high risk, you can configure
 > [!NOTE]
 > Using the Expedite mode might have an impact on the machine's battery usage and actual bandwidth used for sensor data. You should consider this when these measures are critical.
 
-For each endpoint, you can configure a registry key value that determines how frequent a machine reports sensor data to the portal.
+For each machine, you can configure a registry key value that determines how frequent a machine reports sensor data to the portal.
 
 The configuration is set through the following registry key entry:
 
@@ -105,26 +109,28 @@ Value: Normal or Expedite
 Where:<br>
 Key type is a string. <br>
 Possible values are:
-- Normal - sets reporting frequency from the endpoint to Normal mode for the optimal speed and performance balance
-- Expedite - sets reporting frequency from the endpoint to Expedite mode
+- Normal - sets reporting frequency from the machine to Normal mode for the optimal speed and performance balance
+- Expedite - sets reporting frequency from the machine to Expedite mode
 
 The default value in case the registry key doesn’t exist is Normal.
 
-### Offboard endpoints
-For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+## Offboard machines using Group Policy
+For security reasons, the package used to Offboard machines will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a machine will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
 > [!NOTE]
-> Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.
+> Onboarding and offboarding policies must not be deployed on the same machine at the same time, otherwise this will cause unpredictable collisions.
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a. Click **Endpoint management** > **Clients** on the **Navigation pane**.
+    a. In the navigation pane, select **Settings** > **Machine management** > **Offboarding**.
 
-    b. Click the **Endpoint offboarding** section.
+    b. Select Windows 10 as the operating system.
+    
+    c. In the **Deployment method** field, select **Group policy**.
 
-    c. Select **Group Policy**, click **Download package** and save the .zip file.
+    d. Click **Download package** and save the .zip file.
 
-2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the endpoints. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the machine. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 3.	Open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
@@ -144,22 +150,22 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 > Offboarding causes the machine to stop sending sensor data to the portal but data from the machine, including reference to any alerts it has had will be retained for up to 6 months.
 
 
-## Monitor endpoint configuration
-With Group Policy there isn’t an option to monitor deployment of policies on the endpoints. Monitoring can be done directly on the portal, or by using the different deployment tools.
+## Monitor machine configuration
+With Group Policy there isn’t an option to monitor deployment of policies on the machines. Monitoring can be done directly on the portal, or by using the different deployment tools.
 
-## Monitor endpoints using the portal
+## Monitor machines using the portal
 1.	Go to the [Windows Defender ATP portal](https://securitycenter.windows.com/).
 2.	Click **Machines list**.
-3.	Verify that endpoints are appearing.
+3.	Verify that machines are appearing.
 
 > [!NOTE]
-> It can take several days for endpoints to start showing on the **Machines list**. This includes the time it takes for the policies to be distributed to the endpoint, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
+> It can take several days for machines to start showing on the **Machines list**. This includes the time it takes for the policies to be distributed to the machine, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
 
 
 ## Related topics
-- [Configure endpoints using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
-- [Configure endpoints using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
-- [Configure endpoints using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
-- [Configure non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
-- [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
+- [Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
+- [Run a detection test on a newly onboarded Windows Defender ATP machines](run-detection-test-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
