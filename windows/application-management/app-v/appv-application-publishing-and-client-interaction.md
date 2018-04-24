@@ -620,7 +620,7 @@ Adding an App-V package to the client is the first step of the publishing refres
 
 #### How to add an App-V package
 
-1. Manual initiation via Windows PowerShell or Task Sequence initiation of the Publishing Refresh process.
+1. Initiate installation manually through Windows PowerShell or Task Sequence initiation of the Publishing Refresh process.
 
     1. The App-V Client makes an HTTP connection and requests a list of applications based on the target. The Publishing refresh process supports targeting machines or users.
 
