@@ -81,6 +81,7 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 </br>
 </br>
 
+
 ![Spark communication, critical thinking, and creativity with Microsoft Teams](images/edu-TIB-setp-3-jump.png) 
 ## <a name="edu-task3"></a>3. Spark communication, critical thinking, and creativity in the classroom
 
