@@ -46,8 +46,8 @@ However, in some limited scenarios, you might need to switch to Windows 10 Educa
 
 ## How to switch
 
-### Switching for devices running Windows 10, version 1803
-The way that you switch a Windows 10, version 1803 device from S mode to EDU is different from Windows 10, version 1709. Instead of applying a MAK key (which only switches editions), you need to switch the device using Windows AutoPilot.
+### Devices running Windows 10, version 1803
+The way that you switch a Windows 10, version 1803 device from S mode to EDU is different from Windows 10, version 1709. Instead of applying a MAK key (which only switches editions), you need to switch the device using Intune/MDM either at OOBE (Windows AutoPilot) or while managing your devices Post OOBE.”
 
 1.	Select which devices to switch out of S mode.
 2.	Select the S mode switch option in Intune/MDM.
@@ -55,12 +55,16 @@ The way that you switch a Windows 10, version 1803 device from S mode to EDU is 
 > [!NOTE]
 > To rollback to Windows 10 Pro in S mode, a BMR factory reset must be performed.
 
-#### Blocking individual users from switching via the Store
-Currently, individual users can switch out of S mode at any time. To prevent this, user permissions to the Store will need to be restricted through the Intune/MDM portal.
+### Switch using the Microsoft Store for Education
+There are two switch options available using the Microsoft Store for Education:
 
-### Switching for devices running Windows 10, version 1709
+Tenant-wide Windows 10 Pro in S mode > Pro EDU in S mode <BR>
+Tenant-wide Windows 10 Pro > Pro EDU
 
-1. **Bulk switch through Microsoft Store for Education** - In this scenario, the global admin for the Azure AD education tenant can use Microsoft Store to switch all Windows 10 Pro in S mode devices on the tenant to Windows 10 Pro Education in S mode. 
+### Devices running Windows 10, version 1709
+
+1. **Bulk switch through Microsoft Store for Education** - In this scenario, the global admin for the Azure AD education tenant can use Microsoft Store to switch all Windows 10 Pro in S mode devices on the tenant to Windows 10 Pro Education. (Devices running Windows 10, version 1803 will switch to Windows 10 Pro EDU in S mode.)
+
 2. **Key acquisition options** - For schools with **active Microsoft Volume Licensing** agreements, global admins can obtain free MAK keys for Windows 10 Pro Education. For schools without an active Microsoft Volume Licensing agreement, the global admin can contact CSS, fill out a form and provide a proof of purchase to receive MAK keys for Windows 10 Pro Education.
 
 > [!NOTE]
