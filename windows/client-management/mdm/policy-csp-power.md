@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/12/2018
+ms.date: 04/16/2018
 ---
 
 # Policy CSP - Power
@@ -57,6 +57,29 @@ ms.date: 03/12/2018
 <!--Policy-->
 <a href="" id="power-allowstandbystateswhensleepingonbattery"></a>**Power/AllowStandbyStatesWhenSleepingOnBattery**  
 
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -191,7 +214,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. This policy setting allows you to specify the period of inactivity before Windows turns off the display.
+Added in Windows&nbsp;10, version 1709. This policy setting allows you to specify the period of inactivity before Windows turns off the display.
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
 
@@ -255,7 +278,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. This policy setting allows you to specify the period of inactivity before Windows turns off the display.
+Added in Windows&nbsp;10, version 1709. This policy setting allows you to specify the period of inactivity before Windows turns off the display.
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
 
@@ -319,7 +342,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
+Added in Windows&nbsp;10, version 1709. This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
 
@@ -383,7 +406,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
+Added in Windows&nbsp;10, version 1709. This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
 
@@ -571,7 +594,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
+Added in Windows&nbsp;10, version 1709. This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
 
@@ -635,7 +658,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
+Added in Windows&nbsp;10, version 1709. This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
 
