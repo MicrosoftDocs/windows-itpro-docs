@@ -573,17 +573,17 @@ This process solves the problem of a non-local %AppData% that is not supported b
 
 1. App-V application is shut down, which shuts down the virtual environment.
 2. The local cache of the roaming AppData location is compressed and stored in a .zip file.
-3. A timestamp at the end of the .zip packaging process is used to name the file.
-4. The timestamp is recorded in the registry: HKEY\_CURRENT\_USER\\Software\\Microsoft\\AppV\\Client\\Packages\\&lt;GUID&gt;\\AppDataTime as the last known AppData timestamp.
+3. A time stamp at the end of the .zip packaging process is used to name the file.
+4. The time stamp is recorded in the HKEY\_CURRENT\_USER\\Software\\Microsoft\\AppV\\Client\\Packages\\&lt;GUID&gt;\\AppDataTime registry as the last known AppData time stamp.
 5. The folder redirection process is called to evaluate and initiate the .zip file uploaded to the roaming AppData directory.
 
-The timestamp is used to determine a “last writer wins” scenario if there is a conflict and is used to optimize the download of the data when the App-V application is published or the virtual environment is started. Folder redirection will make the data available from any other clients covered by the supporting policy and will initiate the process of storing the AppData\\Roaming data to the local AppData location on the client. The detailed processes are:
+The time stamp is used to determine a “last writer wins” scenario if there is a conflict and is used to optimize the download of the data when the App-V application is published or the virtual environment is started. Folder redirection will make the data available from any other clients covered by the supporting policy and will initiate the process of storing the AppData\\Roaming data to the local AppData location on the client. The detailed processes are:
 
 1. The user starts the virtual environment by starting an application.
 2. The application’s virtual environment checks for the most recent time stamped .zip file, if present.
-3. The registry is checked for the last known uploaded timestamp, if present.
-4. The most recent .zip file is downloaded unless the local last known upload timestamp is greater than or equal to the timestamp from the .zip file.
-5. If the local last known upload timestamp is earlier than that of the most recent .zip file in the roaming AppData location, the .zip file is extracted to the local temp directory in the user’s profile.
+3. The registry is checked for the last known uploaded time stamp, if present.
+4. The most recent .zip file is downloaded unless the local last known upload time stamp is greater than or equal to the time stamp from the .zip file.
+5. If the local last known upload time stamp is earlier than that of the most recent .zip file in the roaming AppData location, the .zip file is extracted to the local temp directory in the user’s profile.
 6. After the .zip file is successfully extracted, the local cache of the roaming AppData directory is renamed and the new data is moved into place.
 7. The renamed directory is deleted and the application opens with the most recently saved roaming AppData data.
 
@@ -591,37 +591,34 @@ This completes the successful roaming of application settings that are present i
 
 1. During repair, detect if the path to the user’s roaming AppData directory is not local.
 2. Map the non-local roaming AppData path targets are recreated the expected roaming and local AppData locations.
-3. Delete the timestamp stored in the registry, if present.
+3. Delete the time stamp stored in the registry, if present.
 
-This process will re-create both the local and network locations for AppData and remove the registry record of the timestamp.
+This process will re-create both the local and network locations for AppData and remove the registry record of the time stamp.
 
 ## App-V client application lifecycle management
 
-In an App-V Full Infrastructure, after applications are sequenced they are managed and published to users or computers through the App-V Management and Publishing servers. This section details the operations that occur during the common App-V application lifecycle operations (Add, publishing, launch, upgrade, and removal) and the file and registry locations that are changed and modified from the App-V Client perspective. The App-V Client operations are performed as a series of Windows PowerShell commands initiated on the computer running the App-V Client.
+In an App-V Full Infrastructure, after applications are sequenced they are managed and published to users or computers through the App-V Management and Publishing servers. This section details the operations that occur during the common App-V application lifecycle operations (Add, publishing, launch, upgrade, and removal) and the file and registry locations that are changed and modified from the App-V Client perspective. The App-V Client operations are input as PowerShell commands on the computer running the App-V Client.
 
 This document focuses on App-V Full Infrastructure solutions. For specific information on App-V Integration with Configuration Manager 2012, see [Integrating Virtual Application Management with App-V 5 and Configuration Manager 2012 SP1](https://www.microsoft.com/en-us/download/details.aspx?id=38177).
 
-The App-V application lifecycle tasks are triggered at user login (default), machine startup, or as background timed operations. The settings for the App-V Client operations, including Publishing Servers, refresh intervals, package script enablement, and others, are configured (after the client is enabled) with Windows PowerShell commands. See [App-V Client Configuration Settings: Windows PowerShell](appv-client-configuration-settings.md#app-v-client-configuration-settings-windows-powershell).
+The App-V application lifecycle tasks are triggered at user sign in (default), machine startup, or as background timed operations. The settings for the App-V Client operations, including Publishing Servers, refresh intervals, package script enablement, and others, are configured (after the client is enabled) with Windows PowerShell commands. See [App-V Client Configuration Settings: Windows PowerShell](appv-client-configuration-settings.md#app-v-client-configuration-settings-windows-powershell).
 
 ### Publishing refresh
 
-The publishing refresh process is comprised of several smaller operations that are performed on the App-V Client. Since App-V is an application virtualization technology and not a task scheduling technology, the Windows Task Scheduler is utilized to enable the process at user logon, machine startup, and at scheduled intervals. The configuration of the client during setup listed above is the preferred method when distributing the client to a large group of computers with the correct settings. These client settings can be configured with the following Windows PowerShell cmdlets:
+The publishing refresh process comprises several smaller operations that are performed on the App-V Client. Since App-V is an application virtualization technology and not a task scheduling technology, the Windows Task Scheduler is utilized to enable the process when the user signs in, the machine turns on, and at scheduled intervals. The client configuration during setup listed in the previous section is the preferred method when distributing the client to a large group of computers with the correct settings. These client settings can be configured with the following Windows PowerShell cmdlets:
 
 - **Add-AppVPublishingServer:** Configures the client with an App-V Publishing Server that provides App-V packages.
 - **Set-AppVPublishingServer:** Modifies the current settings for the App-V Publishing Server.
 - **Set-AppVClientConfiguration:** Modifies the currents settings for the App-V Client.
 - **Sync-AppVPublishingServer:** Initiates an App-V Publishing Refresh process manually. This is also utilized in the scheduled tasks created during configuration of the publishing server.
 
-The focus of the following sections is to detail the operations that occur during different phases of an App-V Publishing Refresh. The topics include:
+The following sections will elaborate what goes on during the publishing refresh process.
 
-- Adding an App-V Package
-- Publishing an App-V Package
-
-### Adding an App-V package
+#### Adding an App-V package
 
 Adding an App-V package to the client is the first step of the publishing refresh process. The end result is the same as the `Add-AppVClientPackage` cmdlet in Windows PowerShell, except during the publishing refresh add process, the configured publishing server is contacted and passes a high-level list of applications back to the client to pull more detailed information and not a single package add operation. The process continues by configuring the client for package or connection group additions or updates, then accesses the appv file. Next, the contents of the appv file are expanded and placed on the local operating system in the appropriate locations. The following is a detailed workflow of the process, assuming the package is configured for Fault Streaming.
 
-**How to add an App-V package**
+#### How to add an App-V package
 
 1. Manual initiation via Windows PowerShell or Task Sequence initiation of the Publishing Refresh process.
 
@@ -677,13 +674,11 @@ Adding an App-V package to the client is the first step of the publishing refres
     >[!NOTE]
     >This condition occurs as a product of removal without unpublishing with background addition of the package.
 
-
-
 This completes an App-V package add of the publishing refresh process. The next step is publishing the package to the specific target (machine or user).
 
 ![package add file and registry data](images/packageaddfileandregistrydata.png)
 
-### Publishing an App-V package
+#### Publishing an App-V package
 
 During the Publishing Refresh operation, the specific publishing operation (Publish-AppVClientPackage) adds entries to the user catalog, maps entitlement to the user, identifies the local store, and finishes by completing any integration steps. The following are the detailed steps.
 
