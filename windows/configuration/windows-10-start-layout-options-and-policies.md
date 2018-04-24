@@ -37,6 +37,9 @@ Organizations might want to deploy a customized Start and taskbar configuration 
 
 Some areas of Start can be managed using Group Policy. The layout of Start tiles can be managed using either Group Policy or Mobile Device Management (MDM) policy.
 
+>[!NOTE]
+>The MDM policy settings in the table can also be configured [in a provisioning package](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md) using **Policies** > **Start**. [See the reference for **Start** settings in Windows Configuration Designer.](https://docs.microsoft.com/windows/configuration/wcd/wcd-policies#start)
+
 The following table lists the different parts of Start and any applicable policy settings or Settings options. Group Policy settings are in the **User Configuration**\\**Administrative Templates**\\**Start Menu and Taskbar** path except where a different path is listed in the table.
 
 | Start | Policy | Local setting |
@@ -54,6 +57,8 @@ The following table lists the different parts of Start and any applicable policy
 | All Settings | Group Policy: **Prevent changes to Taskbar and Start Menu Settings** | none |
 | Taskbar | MDM: **Start/NoPinningToTaskbar** | none |
 
+>[!NOTE]
+>In local **Settings** > **Personalization** > **Start**, there is an option to **Show more tiles**. The default tile layout for Start tiles is 3 columns of medium sized tiles. **Show more tiles** enables 4 columns. To configure the 4-column layout when you [customize and export a Start layout](customize-and-export-start-layout.md), turn on the **Show more tiles** setting and then arrange your tiles.
 
 [Learn how to customize and export Start layout](customize-and-export-start-layout.md)
 
