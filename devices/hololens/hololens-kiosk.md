@@ -42,7 +42,7 @@ If you use [MDM, Microsoft Intune](#intune-kiosk), or a [provisioning package](#
 
 ### Start layout file for Intune
 
-Save the following sample as an XML file. You will select this file when you configure the kiosk in Microsoft Intune or other MDM service.
+Save the following sample as an XML file. You will select this file when you configure the kiosk in Microsoft Intune (or in another MDM service that provides a kiosk profile).
 
 >[!NOTE]
 >If you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service, use the [Start layout instructions for a provisioning package](#start-layout-for-a-provisioning-package). 
