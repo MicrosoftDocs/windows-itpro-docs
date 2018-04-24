@@ -54,7 +54,7 @@ To gain access into which licenses are provisioned to your company, and to check
 
 When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.com) for the first time there will be a setup wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Windows Defender ATP created.
 
-1. Each time you access the portal you will need to validate that you are authorized to access the product. Only if you are not authorized will This **Set up your permissions** step will only be available if you are not currently authorized to access the product.
+1. Each time you access the portal you will need to validate that you are authorized to access the product. This **Set up your permissions** step will only be available if you are not currently authorized to access the product.
 
 	![Image of Set up your permissions for WDATP](images\atp-setup-permissions-wdatp-portal.png)
 

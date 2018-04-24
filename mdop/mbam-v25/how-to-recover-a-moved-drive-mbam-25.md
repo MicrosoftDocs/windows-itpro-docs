@@ -34,7 +34,7 @@ To recover a moved drive, you must use the **Drive Recovery** area of the Admini
 
 5.  When the removal is completed, start the computer normally. The MBAM agent will now enforce the policy to encrypt the drive with the new computer’s TPM plus the PIN.
 
-    **Got a suggestion for MBAM**? Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). **Got a MBAM issue**? Use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
+
 
 ## Related topics
 
@@ -43,7 +43,9 @@ To recover a moved drive, you must use the **Drive Recovery** area of the Admini
 
  
 
- 
+## Got a suggestion for MBAM?
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam). 
 
 
 

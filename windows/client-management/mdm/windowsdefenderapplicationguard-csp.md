@@ -94,7 +94,16 @@ Added in Windows 10, version 1803. This policy setting allows you to determine w
 - 1 - Turns on the functionality to allow users to download files from Edge in the container to the host file system.  
 
 <a href="" id="status"></a>**Status**  
-<p style="margin-left: 20px">Returns status on Application Guard installation and pre-requisites. Value type is integer. Supported operation is Get.</p>
+<p style="margin-left: 20px">Returns bitmask that indicates status of Application Guard installation and pre-requisites on the device. Value type is integer. Supported operation is Get.
+
+Bit 0 - Set to 1 when	WDAG is enabled into enterprise manage mode
+Bit 1	- Set to 1 when	the client machine is Hyper-V capable
+Bit 2	- Set to 1 when	the client machine has a valid OS license and SKU 
+Bit 3	- Set to 1 when	WDAG installed on the client machine
+Bit 4	- Set to 1 when	required Network Isolation Policies are configured
+Bit 5	- Set to 1 when the client machine meets minimum hardware requirements
+
+</p>
 
 <a href="" id="installwindowsdefenderapplicationguard"></a>**InstallWindowsDefenderApplicationGuard**  
 <p style="margin-left: 20px">Initiates remote installation of Application Guard feature. Supported operations are Get and Execute.</p>

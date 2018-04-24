@@ -117,7 +117,7 @@ To run the example Windows PowerShell scripts in this topic, you must update the
 
      
 
-    **Got a suggestion for MBAM**? Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). **Got a MBAM issue**? Use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
+
 
 ## Related topics
 
@@ -129,7 +129,9 @@ To run the example Windows PowerShell scripts in this topic, you must update the
 [Moving MBAM 2.5 Features to Another Server](moving-mbam-25-features-to-another-server.md)
 
  
-
+## Got a suggestion for MBAM?
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
  
 
 
