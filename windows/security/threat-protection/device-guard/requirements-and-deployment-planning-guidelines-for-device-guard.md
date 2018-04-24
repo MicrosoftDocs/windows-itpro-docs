@@ -149,6 +149,14 @@ We recommend that you keep the original XML file for use when you need to merge 
 
 When the WDAC policy is deployed, it restricts the software that can run on a device. The XML document can be signed, helping to add additional protection against administrative users changing or removing the policy. 
 
+## msi-Http-installations are blocked by Device Guard
+When you install msi-files over a Device Guard protected machine directly from the internet, it would fail. 
+If you try to install a msi-file using this command-line:
+- msiexec –i https://download.microsoft.com/download/2/E/3/2E3A1E42-8F50-4396-9E7E-76209EA4F429/Windows10_Version_1511_ADMX.msi
+
+You need to download the MSI file and run it locally:
+- Msiexec –i c:\temp\Windows10_Version_1511_ADMX.msi 
+
 ## Related topics
 
 - [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md)
