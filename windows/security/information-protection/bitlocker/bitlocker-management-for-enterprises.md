@@ -108,7 +108,7 @@ For Azure AD-joined computers, including virtual machines, the recovery password
 ``` 
 PS C:\>Add-BitLockerKeyProtector -MountPoint "C:" -RecoveryPasswordProtector
 
-PS C:\>$BLV = Get-BitLockerVolume -MountPoint "C:”
+PS C:\>$BLV = Get-BitLockerVolume -MountPoint "C:"
 
 PS C:\>BackupToAAD-BitLockerKeyProtector -MountPoint "C:" -KeyProtectorId $BLV.KeyProtector[0].KeyProtectorId
 ``` 
@@ -118,7 +118,7 @@ For domain-joined computers, including servers, the recovery password should be 
 ``` 
 PS C:\>Add-BitLockerKeyProtector -MountPoint "C:" -RecoveryPasswordProtector
 
-PS C:\>$BLV = Get-BitLockerVolume -MountPoint "C:”
+PS C:\>$BLV = Get-BitLockerVolume -MountPoint "C:"
 
 PS C:\>Backup-BitLockerKeyProtector -MountPoint "C:" -KeyProtectorId $BLV.KeyProtector[0].KeyProtectorId
  ```

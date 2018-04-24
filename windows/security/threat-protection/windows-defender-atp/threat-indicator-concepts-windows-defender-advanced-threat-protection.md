@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.date: 04/24/2018
 ---
 
 # Understand threat intelligence concepts
@@ -23,7 +23,7 @@ ms.date: 10/16/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-threatindicator-abovefoldlink) 
 
@@ -52,8 +52,8 @@ Here is an example of an IOC:
 IOCs have a many-to-one relationship with alert definitions such that an alert definition can have many IOCs that correspond to it.
 
 ## Related topics
-- [Create custom alerts using the threat intelligence API](custom-ti-api-windows-defender-advanced-threat-protection.md)
 - [Enable the custom threat intelligence API in Windows Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+- [Create custom alerts using the threat intelligence API](custom-ti-api-windows-defender-advanced-threat-protection.md)
 - [PowerShell code examples for the custom threat intelligence API](powershell-example-code-windows-defender-advanced-threat-protection.md)
 - [Python code examples for the custom threat intelligence API](python-example-code-windows-defender-advanced-threat-protection.md)
 - [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/12/2018
+ms.date: 04/16/2018
 ---
 
 # Policy CSP - TextInput
@@ -680,29 +680,6 @@ The following list shows the supported values:
 <!--Policy-->
 <a href="" id="textinput-allowlinguisticdatacollection"></a>**TextInput/AllowLinguisticDataCollection**  
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -717,21 +694,16 @@ The following list shows the supported values:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
+-   GP English name: *Improve inking and typing recognition*
 -   GP name: *AllowLinguisticDataCollection*
+-   GP path: *Windows Components/Text Input*
 -   GP ADMX file name: *TextInput.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 This setting supports a range of values between 0 and 1.
 
-
 <!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>

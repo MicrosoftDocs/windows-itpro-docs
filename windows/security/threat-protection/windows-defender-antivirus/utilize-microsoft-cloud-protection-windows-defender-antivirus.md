@@ -1,7 +1,7 @@
 ---
-title: Utilize cloud-delivered protection in Windows Defender Antivirus
-description: Cloud-delivered protection provides an advanced level of fast, robust antivirus detection.
-keywords: windows defender antivirus, antimalware, security, defender, cloud, cloud-delivered protection
+title: Use next-gen technologies in Windows Defender Antivirus through cloud-delivered protection
+description: Next-gen technologies in cloud-delivered protection provide an advanced level of fast, robust antivirus detection.
+keywords: windows defender antivirus, next-gen technologies, next-gen av, machine learning, antimalware, security, defender, cloud, cloud-delivered protection
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -9,12 +9,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 11/20/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 04/17/2018
 ---
 
-# Utilize Microsoft cloud-delivered protection in Windows Defender Antivirus
+# Use next-gen technologies in Windows Defender Antivirus through cloud-delivered protection
 
 **Applies to:**
 
@@ -24,21 +24,35 @@ ms.date: 11/20/2017
 
 - Enterprise security administrators
 
-Cloud-delivered protection for Windows Defender Antivirus, also referred to as Microsoft Advanced Protection Service (MAPS), provides you with strong, fast protection in addition to our standard real-time protection.
+Microsoft next-gen technologies in Windows Defender Antivirus provide near-instant, automated protection against new and emerging threats. To dynamically identify new threats, these technologies work with large sets of interconnected data in the Microsoft Intelligent Security Graph and powerful artificial intelligence (AI) systems driven by advanced machine learning models.  
 
+To take advantage of the power and speed of these next-gen technologies, Windows Defender Antivirus works seamlessly with Microsoft cloud services. These cloud protection services, also referred to as Microsoft Advanced Protection Service (MAPS), enhances standard real-time protection, providing arguably the best antivirus defense. 
 
 
 >[!NOTE] 
 >The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional signature updates.
 
-Enabling cloud-delivered protection helps detect and block new malware - even if the malware has never been seen before - without needing to wait for a traditionally delivered definition update to block it. Definition updates can take hours to prepare and deliver, while our cloud service can deliver updated protection in seconds. 
+With cloud-delivered protection, next-gen technologies provide rapid identification of new threats, sometimes even before a single machine is infected. Watch the following video about Microsoft AI and Windows Defender Antivirus in action: 
+ 
+<iframe 
+src="https://www.microsoft.com/en-us/videoplayer/embed/RE1Yu4B" width="768" height="432" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
-The following video describes how it works:
-
+To understand how next-gen technologies shorten protection delivery time through the cloud, watch the following video: 
+ 
 <iframe 
 src="https://videoplayercdn.osi.office.net/embed/c2f20f59-ca56-4a7b-ba23-44c60bc62c59" width="768" height="432" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
-Cloud-delivered protection is enabled by default, however you may need to re-enable it if it has been disabled as part of previous organizational policies.
+Read the following blogposts for detailed protection stories involving cloud-protection and Microsoft AI: 
+
+- [Why Windows Defender Antivirus is the most deployed in the enterprise](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/22/why-windows-defender-antivirus-is-the-most-deployed-in-the-enterprise/) 
+- [Behavior monitoring combined with machine learning spoils a massive Dofoil coin mining campaign](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign/)
+- [How artificial intelligence stopped an Emotet outbreak](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak/)
+- [Detonating a bad rabbit: Windows Defender Antivirus and layered machine learning defenses](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses/)
+- [Windows Defender Antivirus cloud protection service: Advanced real-time defense against never-before-seen malware](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/18/windows-defender-antivirus-cloud-protection-service-advanced-real-time-defense-against-never-before-seen-malware/) 
+ 
+## Get cloud-delivered protection 
+
+Cloud-delivered protection is enabled by default. However, you may need to re-enable it if it has been disabled as part of previous organizational policies.
 
 >[!TIP]
 >You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.

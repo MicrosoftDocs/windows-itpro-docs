@@ -22,6 +22,7 @@ ms.date: 10/16/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-validatelicense-abovefoldlink)
 
@@ -53,7 +54,7 @@ To gain access into which licenses are provisioned to your company, and to check
 
 When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.com) for the first time there will be a setup wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Windows Defender ATP created.
 
-1. Each time you access the portal you will need to validate that you are authorized to access the product. Only if you are not authorized will This **Set up your permissions** step will only be available if you are not currently authorized to access the product.
+1. Each time you access the portal you will need to validate that you are authorized to access the product. This **Set up your permissions** step will only be available if you are not currently authorized to access the product.
 
 	![Image of Set up your permissions for WDATP](images\atp-setup-permissions-wdatp-portal.png)
 
@@ -117,20 +118,20 @@ When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.
 
 10. You are almost done. Before you can start using Windows Defender ATP you'll need to:
 
-	- [Onboard endpoints and setup access](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/configure-endpoints-windows-defender-advanced-threat-protection)
+	- [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
 
 	- Run detection test (optional)
 
-	![Image of Onboard endpoints and run detection test](images\atp-onboard-endpoints-run-detection-test.png)
+	![Image of Onboard machines and run detection test](images\atp-onboard-endpoints-run-detection-test.png)
 
 	> [!IMPORTANT]
-	> If you click **Start using Windows Defender ATP** before onboarding endpoints you will receive the following notification:
+	> If you click **Start using Windows Defender ATP** before onboarding machines you will receive the following notification:
 	>![Image of setup imcomplete](images\atp-setup-incomplete.png)
 
-11. After onboarding endpoints you can click **Start using Windows Defender ATP**. You will now launch Windows Defender ATP for the first time.
+11. After onboarding machines you can click **Start using Windows Defender ATP**. You will now launch Windows Defender ATP for the first time.
 
-	![Image of onboard endpoints](images\atp-onboard-endpoints-WDATP-portal.png)
+	![Image of onboard machines](images\atp-onboard-endpoints-WDATP-portal.png)
 
 ## Related topics
-- [Onboard and set up Windows Defender Advanced Threat Protection](onboard-configure-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot onboarding process and error messages](troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
+- [Onboard machines to the Windows Defender Advanced Threat Protection service](onboard-configure-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot onboarding process and portal access issues](troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)

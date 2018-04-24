@@ -112,7 +112,7 @@ To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 
 
 Set the value for this CSP to **True**.
 
-Read the [Steps to reset the passcode](https://docs.microsoft.com/en-us/intune/device-windows-pin-reset#steps-to-reset-the-passcode) section to removely reset a PIN on an Intune managed device.
+Read the [Steps to reset the passcode](https://docs.microsoft.com/en-us/intune/device-windows-pin-reset#steps-to-reset-the-passcode) section to remotely reset a PIN on an Intune managed device.
 
 ### On-premises Deployments
 
@@ -122,7 +122,7 @@ Read the [Steps to reset the passcode](https://docs.microsoft.com/en-us/intune/d
 * Reset from settings - Windows 10, version 1703
 * Reset above Lock - Windows 10, version 1709
 
-On-premises deployments provide users with the ability to reset forgotton PINs either through the settings page or from above the user's lock screen.  Users must know or be provider their password for authentication, must perform a second factor of authentication, and then reprovision Windows Hello for Business.
+On-premises deployments provide users with the ability to reset forgotton PINs either through the settings page or from above the user's lock screen.  Users must know or be provided their password for authentication, must perform a second factor of authentication, and then reprovision Windows Hello for Business.
 
 >[!IMPORTANT]
 >Users must have corporate network connectivity to domain controllers and the AD FS server to reset their PINs.
@@ -145,10 +145,10 @@ On-premises deployments provide users with the ability to reset forgotton PINs e
 
 **Requirements**
 * Hybrid and On-premises Windows Hello for Business deployments
-* Domain Joined or Hybird Azure joined devices
+* Domain Joined or Hybrid Azure joined devices
 * Windows 10, version 1709
 
-The privileged credentials scenario enables administrators to perform elevated, admistrative funcions by enrolling both their non-privileged and privileged credentials on their device.
+The privileged credentials scenario enables administrators to perform elevated, administrative functions by enrolling both their non-privileged and privileged credentials on their device.
 
 By design, Windows 10 does not enumerate all Windows Hello for Business users from within a user's session.  Using the computer Group Policy setting, Allow enumeration of emulated smart card for all users, you can configure a device to all this enumeration on selected devices.  
 

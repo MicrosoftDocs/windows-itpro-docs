@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 03/06/2018
+ms.date: 04/24/2018
 ---
 
 # Take response actions on a file
@@ -57,23 +57,25 @@ The action takes effect on machines with Windows 10, version 1703 or later, wher
   - **Search box** - select File from the drop–down menu and enter the file name
 
 2.	Open the **Actions menu** and select **Stop and Quarantine File**.
+
     ![Image of stop and quarantine file action](images/atp-stop-quarantine-file.png)
 
-3. Type a comment and select **Yes, stop and quarantine** to take action on the file.
+3. Specify a reason, then click **Yes, stop and quarantine**.
+
     ![Image of stop and quarantine file](images/atp-stop-quarantine.png)
 
-  The Action center shows the submission information:
+    The Action center shows the submission information:
     ![Image of stop and quarantine file action center](images/atp-stopnquarantine-file.png)
 
-   - **Submission time** - Shows when the action was submitted.
-   - **Success** - Shows the number of machines where the file has been stopped and quarantined.
-   - **Failed** - Shows the number of machines where the action failed and details about the failure.
-   - **Pending** - Shows the number of machines where the file is yet to be stopped and quarantined from. This can take time for cases when the machine is offline or not connected to the network.
+    - **Submission time** - Shows when the action was submitted.
+    - **Success** - Shows the number of machines where the file has been stopped and quarantined.
+    - **Failed** - Shows the number of machines where the action failed and details about the failure.
+    - **Pending** - Shows the number of machines where the file is yet to be stopped and quarantined from. This can take time for cases when the machine is offline or not connected to the network.
 
 4. Select any of the status indicators to view more information about the action. For example, select **Failed** to see where the action failed.
 
 **Notification on machine user**:</br>
-When the file is being removed from an endpoint, the following notification is shown:
+When the file is being removed from a machine, the following notification is shown:
 
 ![Image of notification on machine user](images/atp-notification-file.png)
 
@@ -89,7 +91,7 @@ For prevalent files in the organization, a warning is shown before an action is 
 ## Remove file from quarantine
 You can roll back and remove a file from quarantine if you’ve determined that it’s clean after an investigation. Run the following command on each machine where the file was quarantined.
 
-1.	Open an elevated command–line prompt on the endpoint:
+1.	Open an elevated command–line prompt on the machine:
 
     a.	Go to **Start** and type cmd.
 
@@ -116,14 +118,27 @@ You can prevent further propagation of an attack in your organization by banning
 
 
 ### Enable the block file feature
-1.	In the navigation pane, select **Preference Setup** > **Advanced features** > **Block file**.
+Before you can block files, you'll need to enable the feature.
+
+1.	In the navigation pane, select **Settings** > **Advanced features** > **Block file**.
 
 2.	Toggle the setting between **On** and **Off** and select **Save preferences**.
+    
+    ![Image of advanced settings for block file feature](images/atp-preferences-setup.png)
+  
+### Block a file
+1.	Select the file you want to block. You can select a file from any of the following views or use the Search box:
 
-  ![Image of preferences setup](images/atp-preferences-setup.png)
+  - **Alerts** - click the corresponding links from the Description or Details in the Artifact timeline
+  - **Search box** - select File from the drop–down menu and enter the file name
 
+2.	Open the **Actions menu** and select **Block**. 
+    
+    ![Image of block action](images/atp-action-block-file.png)
 
-3. Type a comment and select **Yes, block file** to take action on the file.
+3. Specify a reason and select **Yes, block file** to take action on the file.
+    
+    ![Image of block file action](images/atp-block-file.png)
 
     The Action center shows the submission information:
     ![Image of block file](images/atp-blockfile.png)
@@ -135,7 +150,7 @@ You can prevent further propagation of an attack in your organization by banning
 When the file is blocked, there will be a new event in the machine timeline.</br>
 
 **Notification on machine user**:</br>
-When a file is being blocked on the endpoint, the following notification is displayed to inform the user that the file was blocked:
+When a file is being blocked on the machine, the following notification is displayed to inform the user that the file was blocked:
 
 ![Image of notification on machine user](images/atp-notification-file.png)
 
@@ -150,7 +165,6 @@ For prevalent files in the organization, a warning is shown before an action is 
 1.	Select the file you want to remove from the blocked list. You can select a file from any of the following views or use the Search box:
 
   - **Alerts** - Click the file links from the Description or Details in the Artifact timeline <br>
-  - **Machines list** - Click the file links in the Description or Details columns in the Observed on machine section <br>
   - **Search box** - Select File from the drop–down menu and enter the file name
 
 2.	Open the **Actions** menu and select **Remove file from blocked list**.
@@ -235,7 +249,7 @@ If you encounter a problem when trying to submit a file, try each of the followi
 3. You can wait a short while and try to submit the file again, in case the queue is full or there was a temporary connection or communication error.
 4. Verify the policy setting enables sample collection and try to submit the file again.
 
-  a. Change the following registry entry and values to change the policy on specific endpoints:
+  a. Change the following registry entry and values to change the policy on specific machines:
  ```
 HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
   Value = 0 – block sample collection
@@ -247,5 +261,5 @@ HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
 > [!NOTE]
 > If the value *AllowSampleCollection* is not available, the client will allow sample collection by default.
 
-## Related topics
+## Related topic
 - [Take response actions on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md)
