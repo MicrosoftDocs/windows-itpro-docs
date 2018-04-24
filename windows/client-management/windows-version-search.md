@@ -5,7 +5,7 @@ keywords: Long-Term Servicing Channel, LTSC, LTSB, Semi-Annual Channel, SAC, Win
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: MikeBlodge
+author: MikeBlodge, kaushika-msft
 ms.author: MikeBlodge
 ms.date: 04/20/2018
 ---
@@ -19,16 +19,24 @@ Click **Start** > **Settings** > **Settings** > click **About** from the bottom 
 
 You'll now see **Edition**, **Version**, and **OS Build** information. Something like this:
 
-![screenshot of the system properties window for a device running Windows 10](images/systemprops.jpg)
+![screenshot of the system properties window for a device running Windows 10](images/systemcollage.png)
 
 ## Keyword Search
 You can simply type **“winver”** in the search bar to see version details for your device. 
 
-![screenshot of the About Windows display text](images/winversnip.jpg)
+![screenshot of the About Windows display text](images/winver.png)
 
-You can also type **“msinfo”** to show the following information:
+You can also type **“msinfo”** or **"msinfo32"** to show the following information:
 
-![screenshot of the System Information display text](images/msinfosnip.jpg)
+![screenshot of the System Information display text](images/msinfo32.png)
+
+Search using **"systeminfo"** will show:
+
+![screenshot of system information display text](images/systeminfo.png)
+
+Software licensing manager
+
+![screenshot of software licensing manager](images/slmgr_dlv.png)
 
 ## What does it all mean?
 
