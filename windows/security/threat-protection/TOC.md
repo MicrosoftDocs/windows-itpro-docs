@@ -189,6 +189,7 @@
 ##### [Enable and create Power BI reports using Windows Defender ATP data](windows-defender-atp\powerbi-reports-windows-defender-advanced-threat-protection.md)
 ##### [Enable Secure score security controls](windows-defender-atp\enable-secure-score-windows-defender-advanced-threat-protection.md)
 ##### [Configure advanced features](windows-defender-atp\advanced-features-windows-defender-advanced-threat-protection.md)
+##### [Protect data with conditional access](windows-defender-atp\conditional-access-windows-defender-advanced-threat-protection.md)
 
 ####Permissions
 ##### [Manage portal access using RBAC](windows-defender-atp\rbac-windows-defender-advanced-threat-protection.md)
