@@ -26,11 +26,11 @@ When this happens, write a registry key for the removed app when removing each o
 
 Registry keys for removed apps are listed as "deprovisioned" and written to the following location. The keys listed here are for apps that should not be installed during the upgrade.
 
-```[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned]```
+`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned]`
 
 Each deprovisioned app gets a registry key with no data fields under it, just the package name of the app to be removed. For example, the following registry key is for the Calculator app:
 
-```[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.WindowsCalculator_8wekyb3d8bbwe]```
+`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.WindowsCalculator_8wekyb3d8bbwe]`
 
 Starting with Windows 10, version 1703, the setup code knows to look for registry keys in this folder and will not reinstall the apps listed here. However, in offline mode, the registry keys were not written when the apps were removed. This issue was addressed in Windows 10, version 1803, which ensures registry keys will be written for apps deprovisioned while offline so that setup can properly identify deprovisioned apps and not reinstall them during updates. Windows 10, version 1709 was also patched to correct this issue.
 
@@ -43,9 +43,9 @@ There will be scenarios where the apps were deprovisoned while offline prior to 
 
 The following registry is where the registry keys for deprovisioned apps will be written to:
 
-```<softwarehive>\microsoft\windows\currentversion\appx\appxalluserstore\deprovisioned\<packagefamilyname>```
+`<softwarehive>\microsoft\windows\currentversion\appx\appxalluserstore\deprovisioned\<packagefamilyname>`
 
-Where ```<softwarehive>``` is HKLM\\Software on an online running system. For an offline scenario, this location is wherever you mounted the Software hive.
+Where `<softwarehive>` is HKLM\\Software on an online running system. For an offline scenario, this location is wherever you mounted the Software hive.
 
 The key won't have any data values, as all the system needs to understand that the deprovisioned app should remain uninstalled is the existence of the key within the proper registry folder.
 
@@ -225,6 +225,5 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.ZuneMusic_8wekyb3d8bbwe]
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.ZuneVideo_8wekyb3d8bbwe]
 ```
-
 
 **Note to self: How do you create a registry key from the information listed in the previous sections?**
