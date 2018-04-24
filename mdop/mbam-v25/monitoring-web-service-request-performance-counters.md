@@ -81,10 +81,7 @@ The recommended tool for viewing MBAM performance counters is Windows Performanc
 
 For detailed instructions on how to view performance counters, see [How to View MBAM Performance Counters](https://go.microsoft.com/fwlink/?LinkId=393457).
 
-## Got a suggestion for MBAM?
 
-
-Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 ## Related topics
 
@@ -96,6 +93,8 @@ Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-micros
  
 
 
-
+## Got a suggestion for MBAM?
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 

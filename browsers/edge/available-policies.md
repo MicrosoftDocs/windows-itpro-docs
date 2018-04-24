@@ -3,12 +3,13 @@ description: Microsoft Edge works with Group Policy and Microsoft Intune to help
 ms.assetid: 2e849894-255d-4f68-ae88-c2e4e31fa165
 author: shortpatti
 ms.author: pashort
+manager: elizapo
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
 title: Group Policy and Mobile Device Management settings for Microsoft Edge (Microsoft Edge for IT Pros)
 ms.localizationpriority: high
-ms.date: 4/5/2018 #Previsou release date 09/13/2017
+ms.date: 4/20/2018 #Previous release date 09/13/2017
 ---
 
 # Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge
@@ -73,20 +74,6 @@ Your browsing data is the information that Microsoft Edge remembers and stores a
 |Data type | Integer |
 |Allowed values |<ul><li>**0 (default)** - Browsing data is not cleared on exit. The type of browsing data to clear can be configured by the employee in the Clear browsing data options under Settings.</li><li>**1** - Browsing data is cleared on exit.</li></ul> |
 
-## Allow configuration updates for the Books Library
->*Supporteded versions: Windows 10*
-
-Microsoft Edge automatically retrieves the configuration data for the Books Library, when this policy is enabled or not configured. If disabled, Microsoft Edge does not retrieve the Books configuration data.
-
-**Microsoft Intune to manage your MDM settings** 
-|   |   |
-|---|---|
-|MDM name |[AllowConfigurationUpdateForBooksLibrary ](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowconfigurationupdateforbookslibrary) |
-|Supported devices |Desktop  |
-|URI full path | ./Vendor/MSFT/Policy/Config/Browser/AllowConfigurationUpdateForBooksLibrary  |
-|Data type | Integer |
-|Allowed values |<ul><li>**0** - Disable. Microsoft Edge cannot retrieve a configuration.</li><li>**1 (default)** - Enable (default). Microsoft Edge can retrieve a configuration for Books Library.</li></ul> |
-
 
 ## Allow Cortana
 >*Supported versions: Windows 10, version 1607 or later*
@@ -117,19 +104,6 @@ F12 developer tools is a suite of tools to help you build and debug your webpage
 |Data type | Integer |
 |Allowed values |<ul><li>**0** - The F12 Developer Tools are disabled.</li><li>**1 (default)** - The F12 Developer Tools are enabled.</li></ul> |
 
-## Allow extended telemetry for the Books tab
->*Supporteded versions: Windows 10*
-
-If you enable this policy, both basic and additional diagnostic data is sent to Microsoft about the books you are reading from Books in Microsoft Edge. By default, this policy is disabled or not configured and only basic diagnostic data, depending on your device configuration, is sent to Microsoft. 
-
-**Microsoft Intune to manage your MDM settings** 
-|   |   |
-|---|---|
-|MDM name |[EnableExtendedBooksTelemetry](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-enableextendedbookstelemetry) |
-|Supported devices |Desktop<br>Mobile  |
-|URI full path | ./Vendor/MSFT/Policy/Config/Browser/EnableExtendedBooksTelemetry |
-|Data type | Integer |
-|Allowed values |<ul><li>**0  (default)** - Disable. Only basic diagnostic data is sent.</li><li>**1** - Enable. Both Basic and additional diagnostic data is sent.</li></ul> |
 
 ## Allow Extensions
 >*Supporteded versions: Windows 10, version 1607 or later*
@@ -197,7 +171,7 @@ This policy setting lets you configure what appears when a New Tab page is opene
 
 
 ## Always Enable book library
->*Supporteded versions: Windows 10*
+>*Supporteded versions: Windows 10, version 1709 or later*
 
 This policy settings specifies whether to always show the Books Library in Microsoft Edge. By default, this setting is disabled, which means the library is only visible in countries or regions where available. if enabled, the Books Library is always shown regardless of countries or region of activation.
 
@@ -598,19 +572,7 @@ This policy setting specifies whether you see an additional page in Microsoft Ed
 |Data type | Integer |
 |Allowed values |<ul><li>**0 (default)** - Doesn’t show an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.</li><li>**1** - Shows an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.</li></ul> |
 
-## User shared folder for books
->*Supported versions: Windows 10*
 
-This policy setting specifies whether organizations should use a folder shared across users to store books from the Books Library. 
-
-**Microsoft Intune to manage your MDM settings** 
-|   |   |
-|---|---|
-|MDM name |[UseSharedFolderForBooks](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-usesharedfolderforbooks) |
-|Supported devices |Desktop  |
-|URI full path |./Vendor/MSFT/Policy/Config/Browser/UseSharedFolderForBooks   |
-|Data type | Integer |
-|Allowed values |<ul><li>**0** - No shared folder.</li><li>**1** - Use as shared folder.</li></ul> |
 
 
 ## Related topics
