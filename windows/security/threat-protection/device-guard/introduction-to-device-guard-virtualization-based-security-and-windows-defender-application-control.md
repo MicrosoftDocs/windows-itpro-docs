@@ -38,13 +38,11 @@ But configurable CI carries no specific hardware or software requirements other 
 Since the initial release of Windows 10, the world has witnessed numerous hacking and malware attacks where application control alone could have prevented the attack altogether. So we are promoting configurable CI within our security stack and giving it a name of its own: [Windows Defender Application Control](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control). 
 We hope this branding change will help us better communicate options for adopting application control within an organization.
 
-Does this mean Windows Defender Device Guard is going away? Not at all. Device Guard will continue to exist as a way to describe the fully locked down state achieved through the use of Windows Defender Application Control (WDAC), [HVCI](https://docs.microsoft.com/windows/security/threat-protection/enable-virtualization-based-protection-of-code-integrity), and hardware and firmware security features. It also allows us to work with our OEM partners to identify specifications for devices that are “Device Guard capable” so that our joint customers can easily purchase devices that meet all of the hardware and firmware requirements of the original Device Guard scenario.
+Does this mean Windows Defender Device Guard is going away? Not at all. Device Guard will continue to exist as a way to describe the fully locked down state achieved through the use of Windows Defender Application Control (WDAC), HVCI, and hardware and firmware security features. It also allows us to work with our OEM partners to identify specifications for devices that are “Device Guard capable” so that our joint customers can easily purchase devices that meet all of the hardware and firmware requirements of the original Device Guard scenario.
 
 ## Related topics
 
-- [Windows Defender Application Control](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control)
-
-- [HVCI](https://docs.microsoft.com/windows/security/threat-protection/enable-virtualization-based-protection-of-code-integrity)
+[Windows Defender Application Control](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control)
 
 [Dropping the Hammer Down on Malware Threats with Windows 10’s Windows Defender Device Guard](https://channel9.msdn.com/Events/Ignite/2015/BRK2336)
 
