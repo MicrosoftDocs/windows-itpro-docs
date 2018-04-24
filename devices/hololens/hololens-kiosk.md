@@ -140,7 +140,7 @@ Follow [the instructions for creating a kiosk configuration XML file for desktop
 
 - Do not include Classic Windows applications (Win32) since they aren't supported on HoloLens.
 - Use the [placeholder Start XML](#start-kiosk) for HoloLens.
-- Use [group accounts](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#config-for-group-account) rather than individual accounts.
+
 
 <span id="add-xml"/>
 ### Add the kiosk configuration XML file to a provisioning package
