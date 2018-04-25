@@ -5,14 +5,14 @@ keywords: Long-Term Servicing Channel, LTSC, LTSB, Semi-Annual Channel, SAC, Win
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: MikeBlodge, kaushika-msft
+author: MikeBlodge, kaushik
 ms.author: MikeBlodge
 ms.date: 04/20/2018
 ---
 
 # What version of Windows am I running?
 
-To determine if your device is enrolled in the [Long-Term Servicing Channel](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels) (LTSC, formerly LTSB) or the [Semi-Annual Channel](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels) (SAC) you'll need to know what version of Windows 10 you're running. There are a few ways to figure out which version of Windows you're running. Each method provides a different set of details, so it’s useful to learn about all of them. 
+To determine if your device is enrolled in the [Long-Term Servicing Channel](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels) (LTSC, formerly LTSB) or the [Semi-Annual Channel](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels) (SAC) you'll need to know what version of Windows 10 you're running. There are a few ways to figure this out. Each method provides a different set of details, so it’s useful to learn about all of them. 
 
 ## System Properties
 Click **Start** > **Settings** > **Settings** > click **About** from the bottom of the left-hand menu
@@ -21,20 +21,23 @@ You'll now see **Edition**, **Version**, and **OS Build** information. Something
 
 ![screenshot of the system properties window for a device running Windows 10](images/systemcollage.png)
 
-## Keyword Search
-You can simply type **“winver”** in the search bar to see version details for your device. 
+## Using Keyword Search
+You can simply type the following in the search bar and press **ENTER** to see version details for your device. 
+
+**“winver”**
 
 ![screenshot of the About Windows display text](images/winver.png)
 
-You can also type **“msinfo”** or **"msinfo32"** to show the following information:
+**“msinfo”** or **"msinfo32"** to open **System Information**:
 
 ![screenshot of the System Information display text](images/msinfo32.png)
 
-Search using **"systeminfo"** will show:
+## Using Command Prompt or PowerShell
+At the Command Promp or PowerShell interface, type **"systeminfo | findstr /B /C:"OS Name" /B /C:"OS Version"** and then press **ENTER**
 
 ![screenshot of system information display text](images/systeminfo.png)
 
-Software licensing manager
+At the Command Prompt or PowerShell, type **"slmgr /dlv"**, and then press ENTER. The /dlv command displays the detailed licensing information. Notice the output displays "EnterpriseS" as seen in the image below:
 
 ![screenshot of software licensing manager](images/slmgr_dlv.png)
 
