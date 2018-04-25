@@ -7,10 +7,13 @@ ms.pagetype: hololens, devices
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 04/23/2018
+ms.date: 04/30/2018
 ---
 
 # Set up HoloLens in kiosk mode
+
+>[!WARNING]
+>Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 In Windows 10, version 1803, you can configure your HoloLens devices to run as multi-app or single-app kiosks.
 
@@ -26,7 +29,7 @@ The [AssignedAccess Configuration Service Provider (CSP)](https://docs.microsoft
 >Be aware that voice commands are enabled for kiosk mode configured in Microsoft Intune or provisioning packages, even if the Cortana app is not selected as a kiosk app. 
 
 For HoloLens devices running Windows 10, version 1803, there are three methods that you can use to configure the device as a kiosk:
-- You can [use Microsoft Intune](#intune-kiosk), for HoloLens devices managed by Intune, to configure single-app and multi-app kiosks.
+- You can use [Microsoft Intune or other mobile device management (MDM) service](#intune-kiosk) to configure single-app and multi-app kiosks.
 - You can [use a provisioning package](#ppkg-kiosk) to configure single-app and multi-app kiosks.
 - You can [use the Windows Device Portal](#portal-kiosk) to configure single-app kiosks. This method is recommended only for demonstrations, as it requires that developer mode be enabled on the device.
 
@@ -35,14 +38,17 @@ For HoloLens devices running Windows 10, version 1607, you can [use the Windows 
 <span id="start-kiosk"/>
 ## Start layout for HoloLens 
 
-If you use [Microsoft Intune](#intune-kiosk) or a [provisioning package](#ppkg-kiosk) to configure a multi-app kiosk, the procedure requires a Start layout. Start layout customization isn't supported in Holographic for Business, so you'll need to use a placeholder Start layout. 
+If you use [MDM, Microsoft Intune](#intune-kiosk), or a [provisioning package](#ppkg-kiosk) to configure a multi-app kiosk, the procedure requires a Start layout. Start layout customization isn't supported in Holographic for Business, so you'll need to use a placeholder Start layout. 
 
 >[!NOTE]
 >Because a single-app kiosk launches the kiosk app when a user signs in, there is no Start screen displayed.
 
 ### Start layout file for Intune
 
-Save the following sample as an XML file. You will select this file when you configure the kiosk in Microsoft Intune.
+Save the following sample as an XML file. You will select this file when you configure the kiosk in Microsoft Intune (or in another MDM service that provides a kiosk profile).
+
+>[!NOTE]
+>If you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service, use the [Start layout instructions for a provisioning package](#start-layout-for-a-provisioning-package). 
 
 ```xml
 <LayoutModificationTemplate
@@ -85,45 +91,13 @@ You will [create an XML file](#ppkg-kiosk) to define the kiosk configuration to 
 ``` 
 
 <span id="intune-kiosk"/>
-## Set up kiosk mode using Microsoft Intune (Windows 10, version 1803)
+## Set up kiosk mode using Microsoft Intune or MDM (Windows 10, version 1803)
 
- 
+For HoloLens devices that are managed by Microsoft Intune, you [create a device restriction profile](https://docs.microsoft.com/intune/device-profile-create) and configure the [Kiosk (Preview) settings](https://docs.microsoft.com/intune/device-restrictions-windows-holographic#kiosk-preview).
 
-**Multi-app kiosk**
+For other MDM services, check your provider's documentation for instructions. If you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service, [create an XML file that defines the kiosk configuration](#create-xml-file), and make sure to include the [Start layout](#start-layout-for-a-provisioning-package) in the XML file.  
 
-2. In the Microsoft Azure portal, search for **Intune** or go to **More services** > **Intune**.
-3. Select **Device configuration**.
-4. Select **Profiles**.
-5. Select **Create profile**.
-6. Enter a friendly name for the profile.
-7. Select **Windows 10 and later** for the platform.
-8. Select **Device restrictions** for the profile type.
-9. Select **Kiosk**.
-10. In **Kiosk Mode**, select **Multi app kiosk**.
-11. Select **Add** to define a configuration, which specifies the apps that will run and the layout for the Start menu.
-12. Enter a friendly name for the configuration.
-13. Select **UWP App** for a Universal Windows Platform app, and enter the Application User Model ID for an installed app.
-14. Select whether to enable the taskbar.
-15. Browse to and select [the Start layout XML file](#start-kiosk).
-16. Add one or more accounts. When the account signs in, only the apps defined in the configuration will be available.
-17. Select **OK**. You can add additional configurations or finish.
-18. Assign the profile to a device group to configure the devices in that group as kiosks.
 
-**Single-app kiosk**
-
-2. In the Microsoft Azure portal, search for **Intune** or go to **More services** > **Intune**.
-3. Select **Device configuration**.
-4. Select **Profiles**.
-5. Select **Create profile**.
-6. Enter a friendly name for the profile.
-7. Select **Windows 10 and later** for the platform.
-8. Select **Device restrictions** for the profile type.
-9. Select **Kiosk**.
-10. In **Kiosk Mode**, select **Single app kiosk**.
-11. Enter the user account that will be used for the kiosk.
-13. Enter the Application User Model ID for an installed app.
-14. Select **OK**, and then select **Create**.
-18. Assign the profile to a device group to configure the devices in that group as kiosks.
 
 <span id="ppkg-kiosk"/>
 ## Setup kiosk mode using a provisioning package (Windows 10, version 1803)
@@ -140,7 +114,7 @@ Follow [the instructions for creating a kiosk configuration XML file for desktop
 
 - Do not include Classic Windows applications (Win32) since they aren't supported on HoloLens.
 - Use the [placeholder Start XML](#start-kiosk) for HoloLens.
-- Use [group accounts](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#config-for-group-account) rather than individual accounts.
+
 
 <span id="add-xml"/>
 ### Add the kiosk configuration XML file to a provisioning package
