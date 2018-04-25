@@ -311,6 +311,9 @@
 #### [Evaluate Controlled folder access](windows-defender-exploit-guard\evaluate-controlled-folder-access.md)
 #### [Enable Controlled folder access](windows-defender-exploit-guard\enable-controlled-folders-exploit-guard.md)
 #### [Customize Controlled folder access](windows-defender-exploit-guard\customize-controlled-folders-exploit-guard.md)
+### [Memory integrity](memory-integrity.md)
+#### [Requirements for virtualization-based protection of code integrity](requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
+#### [Enable virtualization-based protection of code integrity](enable-virtualization-based-protection-of-code-integrity.md)
 
 
 ## [Windows Defender Application Control](windows-defender-application-control/windows-defender-application-control.md)
