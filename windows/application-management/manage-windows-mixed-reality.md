@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: jdeckerms
 ms.author: jdecker
-ms.date: 04/23/2018
+ms.date: 04/30/2018
 ---
 
 # Enable or block Windows Mixed Reality apps in the enterprise

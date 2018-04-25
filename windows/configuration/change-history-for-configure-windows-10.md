@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: jdeckerms
-ms.date: 04/23/2018
+ms.date: 04/30/2018
 ---
 
 # Change history for Configure Windows 10

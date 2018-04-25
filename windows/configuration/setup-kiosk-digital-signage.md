@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
-ms.date: 04/23/2018
+ms.date: 04/30/2018
 ---
 
 # Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education
@@ -201,13 +201,12 @@ Clear-AssignedAccess
 >Account type: Local standard user 
 
 >[!IMPORTANT]
->When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature does not work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows}(https://support.microsoft.com/help/324737/how-to-turn-on-automatic-logon-in-windows).
+>When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature does not work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows](https://support.microsoft.com/help/324737/how-to-turn-on-automatic-logon-in-windows).
 
-Edit the registry to have an account automatically logged on.
+
 When you use the **Provision kiosk devices** wizard in Windows Configuration Designer, you can configure the kiosk to run either a Universal Windows app or a Classic Windows application.
 
->[!IMPORTANT]
->When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
+
 
 
 [Install Windows Configuration Designer](provisioning-packages/provisioning-install-icd.md), then open Windows Configuration Designer and select **Provision kiosk devices**. After you name your project, and click **Next**, configure the settings as shown in the following table.
@@ -232,7 +231,8 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
 >[!TIP]
 >You can also use [an XML file to configure both multi-app and single-app kiosks.](lock-down-windows-10-to-specific-apps.md)
 
-
+>[!IMPORTANT]
+>When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
 
 

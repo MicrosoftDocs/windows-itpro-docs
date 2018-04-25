@@ -8,7 +8,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
 ms.author: jdecker
-ms.date: 04/23/2018
+ms.date: 04/30/2018
 ---
 
 # Guidelines for choosing an app for assigned access (kiosk mode)
