@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 localizationpriority: high
-ms.date: 04/17/2018
+ms.date: 04/24/2018
 ---
 
 # View the Windows Defender Advanced Threat Protection Secure score dashboard
@@ -296,9 +296,6 @@ For more information, see [Windows Defender Firewall with Advanced Security](htt
 
 ### BitLocker optimization
 For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for BitLocker is fulfilled. 
-
->[!IMPORTANT]
->This security control is only applicable for machines with Windows 10, version 1803 or later.
 
 #### Minimum baseline configuration setting for BitLocker
 - Ensure all supported internal drives are encrypted
