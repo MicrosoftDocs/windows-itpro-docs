@@ -1,6 +1,46 @@
 {
 "redirections": [
 {
+"source_path": "windows/security/threat-protection/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/device-guard/deploy-windows-defender-application-control.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/device-guard/optional-create-a-code-signing-certificate-for-windows-defender-application-control.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-application-control/create-code-signing-cert-for-windows-defender-application-control",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/device-guard/deploy-windows-defender-application-control-policy-rules-and-file-rules.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/device-guard/steps-to-deploy-windows-defender-application-control.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-application-control/create-initial-default-policy",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/device-guard/deploy-catalog-files-to-support-windows-defender-application-control.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-application-control/deploy-catalog-files-to-support-windows-defender-application-control",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/device-guard/deploy-managed-installer-for-device-guard.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-with-managed-installer",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/device-guard/device-guard-deployment-enable-virtualization-based-security.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-application-control/enable-virtualization-based-security",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings",
 "redirect_document_id": true
@@ -1967,12 +2007,12 @@
 },
 {
 "source_path": "windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard.md",
-"redirect_url": "/windows/security/threat-protection/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard",
+"redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/device-guard/steps-to-deploy-windows-defender-application-control.md",
-"redirect_url": "/windows/security/threat-protection/device-guard/steps-to-deploy-windows-defender-application-control",
+"redirect_url": "/windows/security/threat-protection/windows-defender-application-control/create-initial-default-policy",
 "redirect_document_id": true
 },
 {
@@ -4647,7 +4687,7 @@
 },
 {
 "source_path": "windows/device-security/device-guard/deploy-code-integrity-policies-steps.md",
-"redirect_url": "/windows/device-security/device-guard/steps-to-deploy-windows-defender-application-control",
+"redirect_url": "/windows/security/threat-protection/windows-defender-application-control/create-initial-default-policy",
 "redirect_document_id": true
 },
 {
@@ -4686,7 +4726,7 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/configuration/basic-level-windows-diagnostic-events-and-fields-1709.md",
+"source_path": "windows/configuration/basic-level-windows-diagnostic-events-and-fields-1803.md",
 "redirect_url": "/windows/configuration/basic-level-windows-diagnostic-events-and-fields",
 "redirect_document_id": true
 },
@@ -11002,7 +11042,7 @@
 },
 {
 "source_path": "windows/keep-secure/requirements-and-deployment-planning-guidelines-for-device-guard.md",
-"redirect_url": "/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard",
+"redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity",
 "redirect_document_id": true
 },
 {

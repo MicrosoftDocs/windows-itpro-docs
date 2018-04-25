@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/17/2018
+ms.date: 04/24/2018
 ---
 
 # Create custom alerts using the threat intelligence (TI) application program interface (API)
