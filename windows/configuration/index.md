@@ -19,15 +19,6 @@ Enterprises often need to apply custom configurations to devices for their users
 
 | Topic | Description |
 | --- | --- |
-| [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md) | Use this article to make informed decisions about how you can configure Windows diagnostic data in your organization. |
-|[Diagnostic Data Viewer overview](diagnostic-data-viewer-overview.md) |Learn about the categories of diagnostic data your device is sending to Microsoft, along with how it's being used.|
-| [Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md) | Learn about diagnostic data that is collected at the basic level in Windows 10, version 1709. |
-| [Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md)| Learn about diagnostic data that is collected at the basic level in Windows 10, version 1703.|
-| [Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](enhanced-diagnostic-data-windows-analytics-events-and-fields.md)|Learn about diagnostic data that is collected by Windows Analytics.|
-| [Windows 10, version 1709 diagnostic data for the Full telemetry level](windows-diagnostic-data.md) | Learn about diagnostic data that is collected at the full level in Windows 10, version 1709. |
-| [Windows 10, version 1703 diagnostic data for the Full telemetry level](windows-diagnostic-data-1703.md) | Learn about diagnostic data that is collected at the full level in Windows 10, version 1703. |
-|[Beginning your General Data Protection Regulation (GDPR) journey for Windows 10](gdpr-win10-whitepaper.md)|Learn about Windows 10 and the upcoming GDPR-compliance requirements.|
-| [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Learn about the network connections that Windows components make to Microsoft and also the privacy settings that affect data that is shared with either Microsoft or apps and how they can be managed by an IT Pro. |
 | [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md) | Wi-Fi Sense automatically connects you to Wi-Fi, so you can get online quickly in more places. It can connect you to open Wi-Fi hotspots it knows about through crowdsourcing, or to Wi-Fi networks your contacts have shared with you by using Wi-Fi Sense. The initial settings for Wi-Fi Sense are determined by the options you chose when you first set up your PC with Windows 10.  |
 | [Configure kiosk and shared devices running Windows 10 desktop editions](kiosk-shared-pc.md) | These topics help you configure Windows 10 devices to be shared by multiple users or to run as a kiosk device that runs a single app. |
 | [Configure Windows 10 Mobile devices](mobile-devices/configure-mobile.md) | These topics help you configure the features and apps and Start screen for a device running Windows 10 Mobile, as well as how to configure a kiosk device that runs a single app.  |
