@@ -29,8 +29,6 @@
 #### [Signing WDAC policies with SignTool.exe](signing-policies-with-signtool.md)
 ### [Disable WDAC policies](disable-windows-defender-application-control-policies.md)
 
-## [Windows Defender Application Control and AppLocker](windows-defender-application-control-and-applocker.md)
-
 ## [AppLocker](applocker\applocker-overview.md) 
 ### [Administer AppLocker](applocker\administer-applocker.md)
 #### [Maintain AppLocker policies](applocker\maintain-applocker-policies.md)
