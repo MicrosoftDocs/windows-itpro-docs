@@ -189,6 +189,7 @@
 ##### [Enable and create Power BI reports using Windows Defender ATP data](windows-defender-atp\powerbi-reports-windows-defender-advanced-threat-protection.md)
 ##### [Enable Secure score security controls](windows-defender-atp\enable-secure-score-windows-defender-advanced-threat-protection.md)
 ##### [Configure advanced features](windows-defender-atp\advanced-features-windows-defender-advanced-threat-protection.md)
+##### [Protect data with conditional access](windows-defender-atp\conditional-access-windows-defender-advanced-threat-protection.md)
 
 ####Permissions
 ##### [Manage portal access using RBAC](windows-defender-atp\rbac-windows-defender-advanced-threat-protection.md)
@@ -294,6 +295,9 @@
 #### [Enable Exploit protection](windows-defender-exploit-guard\enable-exploit-protection.md)
 #### [Customize Exploit protection](windows-defender-exploit-guard\customize-exploit-protection.md)
 ##### [Import, export, and deploy Exploit protection configurations](windows-defender-exploit-guard\import-export-exploit-protection-emet-xml.md)
+#### [Memory integrity](windows-defender-exploit-guard/memory-integrity.md)
+##### [Requirements and deployment planning guidelines for virtualization-based protection of code integrity](windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
+##### [Enable virtualization-based protection of code integrity](windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity.md)
 ### [Attack surface reduction](windows-defender-exploit-guard\attack-surface-reduction-exploit-guard.md)
 #### [Evaluate Attack surface reduction](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
 #### [Enable Attack surface reduction](windows-defender-exploit-guard\enable-attack-surface-reduction.md)
