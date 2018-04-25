@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
-ms.date: 04/23/2018
+ms.date: 04/30/2018
 ---
 
 # Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education
