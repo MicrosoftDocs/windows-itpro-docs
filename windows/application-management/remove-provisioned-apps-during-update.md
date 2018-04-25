@@ -12,17 +12,19 @@ ms.date: 04/20/2018
 
 >Applies to: Windows 10, version 1703; Windows 10 version 1709; Windows 10, version 1803
 
-If you upgrade a Windows 10, version 1703 computer to Windows 10, version 1709 or Windows 10, version 1803 (or a Windows 10, version 1709 to Windows 10, version 1803 upgrade), provisioned apps that you've removed before the upgrade may return.  This can happen if the apps were removed while the computer was offline. If the provisioned (added) apps were removed while online, the apps should not return after the upgrade.
+If you upgrade a Windows 10, version 1703 computer to Windows 10, version 1709 or Windows 10, version 1803 (or a Windows 10, version 1709 to Windows 10, version 1803 upgrade), provisioned apps that you've removed before the upgrade may return. This can happen if the apps were removed while the computer was offline. If the provisioned (added) apps were removed while online, the apps should not return after the upgrade.
 
 >[!NOTE]
->This setting only applies to first-party apps that shipped with Windows 10, this does not apply to third-party apps or apps that were acquired from the Microsoft Store, nor does it apply to LOB apps.
+>This setting only applies to first-party apps that shipped with Windows 10. This does not apply to third-party apps or apps that were acquired from the Microsoft Store, nor does it apply to LOB apps.
 
 There are two points during removing a provisioned package from a Windows installation where this problem can occur:
 
 * If the packages are removed while the wim file is mounted when the device is offline.
 * If the provisioned package is removed while inside of Windows when the device is online.
 
-When this happens, write a registry key for the removed app when removing each one. This way, you can use the registry key to indicate to your deployment whether to install or not install the app while you're upgrading it.
+When this happens, write a registry key for each app you remove. This way, you can use the registry key to indicate to your deployment whether to install or not install the app while you're upgrading it.
+
+## Where to store deprovisioned app registration keys
 
 Registry keys for removed apps are listed as "deprovisioned" and written to the following location. The keys listed here are for apps that should not be installed during the upgrade.
 
@@ -32,12 +34,12 @@ Each deprovisioned app gets a registry key with no data fields under it, just th
 
 `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.WindowsCalculator_8wekyb3d8bbwe]`
 
-Starting with Windows 10, version 1703, the setup code knows to look for registry keys in this folder and will not reinstall the apps listed here. However, in offline mode, the registry keys were not written when the apps were removed. This issue was addressed in Windows 10, version 1803, which ensures registry keys will be written for apps deprovisioned while offline so that setup can properly identify deprovisioned apps and not reinstall them during updates. Windows 10, version 1709 was also patched to correct this issue.
+Starting with Windows 10, version 1703, the setup code knows to look for registry keys in this folder and will not reinstall any apps listed in this registry. However, in offline mode, the registry keys were not written when the apps were removed. This issue was addressed in Windows 10, version 1803, which ensures registry keys will be written for apps deprovisioned while offline so that setup can properly identify deprovisioned apps and not reinstall them during updates. Windows 10, version 1709 was also patched to correct this issue.
 
 There will be scenarios where the apps were deprovisoned while offline prior to any changes being installed to Windows that would have corrected the behavior when removing the apps.
 
 >[!NOTE]
->If you remove the provisioned apps while online, the account you used to sign in will contain the apps installed for that user. Therefore, if you do an upgrade, the signed-in user will retain the apps. User accounts created after the apps were removed or after an upgrade will not have the apps reinstalled.
+>If you remove the provisioned apps while online, the account you used to sign in will contain the apps installed for that user. As a result, when you upgrade, the user you signed in as will retain the apps. User accounts created after the apps were removed or after an upgrade will not have the apps reinstalled.
 
 ## How to generate registry keys for deprovisioned apps
 
@@ -45,16 +47,16 @@ The following registry is where the registry keys for deprovisioned apps will be
 
 `<softwarehive>\microsoft\windows\currentversion\appx\appxalluserstore\deprovisioned\<packagefamilyname>`
 
-Where `<softwarehive>` is HKLM\\Software on an online running system. For an offline scenario, this location is wherever you mounted the Software hive.
+Where `<softwarehive>` is **HKLM\\Software** on an online running system. For an offline scenario, this location is wherever you mounted the Software hive.
 
 The key won't have any data values, as all the system needs to understand that the deprovisioned app should remain uninstalled is the existence of the key within the proper registry folder.
 
 The following tables list the display and package names for provisioned apps for Windows 10, version 1703 and Windows 10, version 1709 that can be used to generate the registry keys if they are not already present in your installation.
 
 >[!NOTE]
->The list of apps may vary with each feature release of Windows 10, apps may also change in Status for instance go from Provisioned Status to System app or Vice Versus. This only applies to apps provisioned for the host OS and the OS you are upgrading to.
+>The list of apps may vary with each feature release of Windows 10. Apps may also change in Status; for instance, an app listed as Provisioned in an older release might change to a System app in a newer version, or vice versa. This only applies to apps provisioned for the host OS and the OS you are upgrading to.
 
-1. First, you'll need to identify the apps you removed from the Windows 10, version 1703 install image. The following table is a list of provisioned apps for version 1703 that includes their displayed names and package names:
+1. First, you'll need to identify the apps you removed from the Windows 10, version 1703 install image. The following table lists the provisioned apps for version 1703, including their displayed names and package names:
       |Displayed app name|Package name|
       |---|---|
       |Microsoft.3DBuilder|Microsoft.3DBuilder_15.2.10821.1000_neutral_~_8wekyb3d8bbwe|
