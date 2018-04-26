@@ -616,7 +616,9 @@ The following sections will elaborate what goes on during the publishing refresh
 
 #### Adding an App-V package
 
-Adding an App-V package to the client is the first step of the publishing refresh process. The end result is the same as the `Add-AppVClientPackage` cmdlet in Windows PowerShell, except during the publishing refresh add process, the configured publishing server is contacted and passes a high-level list of applications back to the client to pull more detailed information and not a single package add operation. The process continues by configuring the client for package or connection group additions or updates, then accesses the appv file. Next, the contents of the appv file are expanded and placed on the local operating system in the appropriate locations. The following is a detailed workflow of the process, assuming the package is configured for Fault Streaming.
+Adding an App-V package to the client is the first step of the publishing refresh process. The end result is the same as the **Add-AppVClientPackage** cmdlet in Windows PowerShell, except the publishing refresh add process contacts the configured publishing server and passes a high-level list of applications back to the client to pull more detailed information, rather than just doing a single package add operation.
+
+The process then configures the client for package or connection group additions or updates, then accesses the appv file. Next, the contents of the appv file are expanded and placed on the local operating system in the appropriate locations. The following is a detailed workflow of the process, assuming the package is configured for Fault Streaming.
 
 #### How to add an App-V package
 
@@ -624,41 +626,39 @@ Adding an App-V package to the client is the first step of the publishing refres
 
     1. The App-V Client makes an HTTP connection and requests a list of applications based on the target. The Publishing refresh process supports targeting machines or users.
 
-    2. The App-V Publishing Server uses the identity of the initiating target, user or machine, and queries the database for a list of entitled applications. The list of applications is provided as an XML response, which the client uses to send additional requests to the server for more information on a per package basis.
+    2. The App-V Publishing Server uses the identity of the initiating target, user or machine, and queries the database for a list of entitled applications. The list of applications is provided as an XML response, which the client uses to send additional requests to the server for more information on a per-package basis.
 
-2. The Publishing Agent on the App-V Client performs all actions below serialized.
+2. The Publishing Agent on the App-V Client will evaluate any connection groups that are unpublished or disabled, since package version updates that are part of the connection group cannot be processed.
 
-    Evaluate any connection groups that are unpublished or disabled, since package version updates that are part of the connection group cannot be processed.
-
-3. Configure the packages by identifying an Add or Update operations.
+3. Configure the packages by identifying the **Add** or **Update** operations.
 
     1. The App-V Client utilizes the AppX API from Windows and accesses the appv file from the publishing server.
 
-    2. The package file is opened and the AppXManifest.xml and StreamMap.xml are downloaded to the Package Store.
+    2. The package file is opened and the **AppXManifest.xml** and **StreamMap.xml** files are downloaded to the Package Store.
 
-    3. Completely stream publishing block data defined in the StreamMap.xml. Stores the publishing block data in the Package Store\\PkgGUID\\VerGUID\\Root.
+    3. Completely stream publishing block data defined in the **StreamMap.xml**. Publishing block data is stored in Package Store\\PkgGUID\\VerGUID\\Root.
 
         - Icons: Targets of extension points.
-        - Portable Executable Headers (PE Headers): Targets of extension points that contain the base information about the image need on disk, directly accessed or via file types.
+        - Portable Executable Headers (PE Headers): Targets of extension points that contain the base information about the image need on disk, accessed directly or through file types.
         - Scripts: Download scripts directory for use throughout the publishing process.
 
-    4. Populate the Package store:
+    4. Populate the Package store by doing the following:
 
         1. Create sparse files on disk that represent the extracted package for any directories listed.
 
-        2. Stage top level files and directories under root.
+        2. Stage top-level files and directories under root.
 
-        3. All other files are created when the directory is listed as sparse on disk and streamed on demand.
+        All other files are created when the directory is listed as sparse on disk and streamed on demand.
 
-    5. Create the machine catalog entries. Create the Manifest.xml and DeploymentConfiguration.xml from the package files (if no DeploymentConfiguration.xml file in the package a placeholder is created).
+    5. Create the machine catalog entries. Create the **Manifest.xml** and **DeploymentConfiguration.xml** from the package files (if no **DeploymentConfiguration.xml** file in the package a placeholder is created).
 
     6. Create location of the package store in the registry HKLM\\Software\\Microsoft\\AppV\\Client\\Packages\\PkgGUID\\Versions\\VerGUID\\Catalog
 
-    7. Create the Registry.dat file from the package store to %ProgramData%\\Microsoft\\AppV\\Client\\VReg\\{VersionGUID}.dat
+    7. Create the **Registry.dat** file from the package store to **%ProgramData%\\Microsoft\\AppV\\Client\\VReg\\{VersionGUID}.dat**
 
-    8. Register the package with the App-V Kernal Mode Driver HKLM\\Microsoft\\Software\\AppV\\MAV
+    8. Register the package with the App-V Kernal Mode Driver at HKLM\\Microsoft\\Software\\AppV\\MAV
 
-    9. Invoke scripting from the AppxManifest.xml or DeploymentConfig.xml file for Package Add timing.
+    9. Invoke scripting from the **AppxManifest.xml** or **DeploymentConfig.xml** file for Package Add timing.
 
 4. Configure Connection Groups by adding and enabling or disabling.
 
@@ -674,21 +674,21 @@ Adding an App-V package to the client is the first step of the publishing refres
     >[!NOTE]
     >This condition occurs as a product of removal without unpublishing with background addition of the package.
 
-This completes an App-V package add of the publishing refresh process. The next step is publishing the package to the specific target (machine or user).
+This completes an App-V package add for the publishing refresh process. The next step is publishing the package to a specific target (machine or user).
 
-![package add file and registry data](images/packageaddfileandregistrydata.png)
+![Package add file and registry data](images/packageaddfileandregistrydata.png)
 
 #### Publishing an App-V package
 
-During the Publishing Refresh operation, the specific publishing operation (Publish-AppVClientPackage) adds entries to the user catalog, maps entitlement to the user, identifies the local store, and finishes by completing any integration steps. The following are the detailed steps.
+During the Publishing Refresh operation, the specific publishing operation, **Publish-AppVClientPackage**, adds entries to the user catalog, maps entitlement to the user, identifies the local store, and finishes by completing any integration steps.
 
 #### How to publish an App-V package
 
 1. Package entries are added to the user catalog
 
-    1. User targeted packages: the UserDeploymentConfiguration.xml and UserManifest.xml are placed on the machine in the User Catalog
+    1. User targeted packages: the **UserDeploymentConfiguration.xml** and **UserManifest.xml** are placed on the machine in the User Catalog.
 
-    2. Machine targeted (global) packages: the UserDeploymentConfiguration.xml is placed in the Machine Catalog
+    2. Machine targeted (global) packages: the **UserDeploymentConfiguration.xml** is placed in the Machine Catalog.
 
 2. Register the package with the kernel mode driver for the user at HKLM\\Software\\Microsoft\\AppV\\MAV
 
@@ -705,7 +705,7 @@ During the Publishing Refresh operation, the specific publishing operation (Publ
 
     3. Run scripts targeted for publishing timing.
 
-Publishing an App-V Package that is part of a Connection Group is very similar to the above process. For connection groups, the path that stores the specific catalog information includes PackageGroups as a child of the Catalog Directory. Review the machine and users catalog information above for details.
+Publishing an App-V Package that is part of a Connection Group is very similar to the above process. For connection groups, the path that stores the specific catalog information includes PackageGroups as a child of the Catalog Directory. Review the machine and users catalog information in the preceding sections for details.
 
 ![package add file and registry data - global](images/packageaddfileandregistrydata-global.png)
 
@@ -719,8 +719,8 @@ After the Publishing Refresh process, the user launches and subsequently re-laun
 
 2. The App-V Client verifies existence in the User Catalog for the following files
 
-    - UserDeploymentConfiguration.xml
-    - UserManifest.xml
+    - **UserDeploymentConfiguration.xml**
+    - **UserManifest.xml**
 
 3. If the files are present, the application is entitled for that specific user and the application will start the process for launch. There is no network traffic at this point.
 
@@ -736,7 +736,7 @@ After the Publishing Refresh process, the user launches and subsequently re-laun
 
 ### Upgrading an App-V package
 
-The App-V package upgrade process differs from the older versions of App-V. App-V supports multiple versions of the same package on a machine entitled to different users. Package versions can be added at any time as the package store and catalogs are updated with the new resources. The only process specific to the addition of new version resources is storage optimization. During an upgrade, only the new files are added to the new version store location and hard links are created for unchanged files. This reduces the overall storage by only presenting the file on one disk location and then projecting it into all folders with a file location entry on the disk. The specific details of upgrading an App-V Package are as follows:
+The App-V package upgrade process in the current version of App-V differs from the older versions. App-V supports multiple versions of the same package on a machine entitled to different users. Package versions can be added at any time, as the package store and catalogs are updated with the new resources. The only process specific to the addition of new version resources is storage optimization. During an upgrade, only new files are added to the new version store location, and hard links are created for unchanged files. This reduces overall storage by only presenting the file on one disk location and then projecting it into all folders with a file location entry on the disk.
 
 #### How to upgrade an App-V package
 
@@ -744,9 +744,9 @@ The App-V package upgrade process differs from the older versions of App-V. App-
 
 2. Package entries are added to the appropriate catalog for the new version
 
-    1. User targeted packages: the UserDeploymentConfiguration.xml and UserManifest.xml are placed on the machine in the user catalog at appdata\\roaming\\Microsoft\\AppV\\Client\\Catalog\\Packages\\PkgGUID\\VerGUID
+    1. User targeted packages: the **UserDeploymentConfiguration.xml** and **UserManifest.xml** are placed on the machine in the user catalog at appdata\\roaming\\Microsoft\\AppV\\Client\\Catalog\\Packages\\PkgGUID\\VerGUID
 
-    2. Machine targeted (global) packages: the UserDeploymentConfiguration.xml is placed in the machine catalog at %programdata%\\Microsoft\\AppV\\Client\\Catalog\\Packages\\PkgGUID\\VerGUID
+    2. Machine targeted (global) packages: the **UserDeploymentConfiguration.xml** is placed in the machine catalog at %programdata%\\Microsoft\\AppV\\Client\\Catalog\\Packages\\PkgGUID\\VerGUID
 
 3. Register the package with the kernel mode driver for the user at HKLM\\Software\\Microsoft\\AppV\\MAV
 
@@ -762,11 +762,11 @@ The App-V package upgrade process differs from the older versions of App-V. App-
 
 5. Run scripts targeted for publishing timing.
 
-6. Install Side by Side assemblies as required.
+6. Install Side-by-Side assemblies as required.
 
 ### Upgrading an in-use App-V package
 
-If you try to upgrade a package that is in use by an end user, the upgrade task is placed in a pending state. The upgrade will run later, according to the following rules:
+If you try to upgrade a package that is currently in use, the upgrade task is placed in a pending state. The upgrade will run later, according to the following rules:
 
 | Task type | Applicable rule |
 |---|---|
@@ -784,19 +784,19 @@ The following operations must be completed before users can use the newer versio
 
 | Task | Details |
 |---|---|
-| Add the package to the computer | This task is computer specific and you can perform it at any time by completing the steps in the Package Add section above. |
-| Publish the package |  See the Package Publishing section above for steps. This process requires that you update extension points on the system. End users cannot be using the application when you complete this task. |
+| Add the package to the computer | This task is computer-specific and you can perform it at any time by completing the steps in [How to add an App-V package](#how-to-add-an-app-v-package). |
+| Publish the package |  See the Package Publishing section above for steps. This process requires that you update extension points on the system. You can't complete this task while the application is in use. |
 
 Use the following example scenarios as a guide for updating packages.
 
 | Scenario | Requirements |
-| - | - |
+|---|---|
 | App-V package is not in use when you try to upgrade | None of the following components of the package can be in use: virtual application, COM server, or shell extensions.<br/><br/>The administrator publishes a newer version of the package and the upgrade works the next time a component or application inside the package is launched. The new version of the package is streamed and ran. |
-| App-V package is in use when the administrator publishes a newer version of the package | The upgrade operation is set to pending by the App-V Client, which means that it is queued and carried out later when the package is not in use.<br/><br/>If the package application is in use, the user shuts down the virtual application, after which the upgrade can occur.<br/><br/>If the package has shell extensions, which are permanently loaded by Windows Explorer, the user cannot be logged in. Users must log off and the log back in to initiate the App-V package upgrade.|
+| App-V package is in use when the administrator publishes a newer version of the package | The App-V Client sets the operation to "pending," which means that it is queued and will be carried out later when the package is not in use.<br/><br/>If the package application is in use, the user shuts down the virtual application, after which the upgrade can occur.<br/><br/>If the package has shell extensions, which are permanently loaded by Windows Explorer, the user won't be able to sign in. Users must sign off and then sign back in to initiate the App-V package upgrade.|
 
 ### Global vs. user publishing
 
-App-V Packages can be published in one of two ways; User which entitles an App-V package to a specific user or group of users and Global which entitles the App-V package to the entire machine for all users of the machine. Once a package upgrade has been pended and the App-V package is not in use, consider the two types of publishing:
+App-V Packages can be published in one of two ways; as User, which entitles an App-V package to a specific user or group of users, or as Global, which entitles the App-V package to the entire machine for all users of the machine. Once a package upgrade has been pended and the App-V package is not in use, consider the two types of publishing:
 
 - **Globally published**: the application is published to a machine; all users on that machine can use it. The upgrade will happen when the App-V Client Service starts, which effectively means a machine restart.
 - **User published**: the application is published to a user. If there are multiple users on the machine, the application can be published to a subset of the users. The upgrade will happen when the user logs in or when it is published again (periodically, ConfigMgr Policy refresh and evaluation, or an App-V periodic publishing/refresh, or explicitly via Windows PowerShell commands).
