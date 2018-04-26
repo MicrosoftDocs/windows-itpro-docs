@@ -7,7 +7,7 @@ ms.sitesec: library
 author: JaimeO
 ms.localizationpriority: high
 ms.author: jaimeo
-ms.date: 04/20/2018
+ms.date: 04/26/2018
 ---
 
 # Configure Delivery Optimization for Windows 10 updates
@@ -66,8 +66,8 @@ Several Delivery Optimization features are configurable:
 | [Max Upload Bandwidth](#max-upload-bandwidth) | DOMaxUploadBandwidth | 1607 |
 | [Monthly Upload Data Cap](#monthly-upload-data-cap) | DOMonthlyUploadDataCap | 1607 |
 | [Minimum Background QoS](#minimum-background-qos) | DOMinBackgroundQoS | 1607 |
-| [Enable Peer Caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching | 1703 |
-| [Allow uploads while the device is on battery while under set Battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) | DOMinBatteryPercentageAllowedToUpload | 1703 |
+| [Enable Peer Caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching | 1709 |
+| [Allow uploads while the device is on battery while under set Battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) | DOMinBatteryPercentageAllowedToUpload | 1709 |
 | [MaxForegroundDownloadBandwidth](#maximum-foreground-download-bandwidth) | DOPercentageMaxForegroundBandwidth | 1803 |
 | [MaxBackgroundDownloadBandwidth](#maximum-background-download-bandwidth) | DOPercentageMaxBackgroundBandwidth | 1803 |
 | [SetHoursToLimitBackgroundDownloadBandwidth](#set-business-hours-to-limit-background-download-bandwidth) | DOSetHoursToLimitBackgroundDownloadBandwidth | 1803 |
@@ -184,11 +184,11 @@ This setting specifies the maximum download bandwidth that can be used across al
 
 ### Maximum Foreground Download Bandwidth
 
-Specifies the maximum foreground download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. The default value of 0 means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads. However, downloads from LAN peers are not throttled even when this policy is set.
+Starting in Windows 10, version 1803, specifies the maximum foreground download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. The default value of 0 means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads. However, downloads from LAN peers are not throttled even when this policy is set.
 
 ### Maximum Background Download Bandwidth
 
-Specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. The default value of 0 means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads. However, downloads from LAN peers are not throttled even when this policy is set.
+Starting in Windows 10, version 1803, specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. The default value of 0 means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads. However, downloads from LAN peers are not throttled even when this policy is set.
 
 ### Percentage of Maximum Download Bandwidth
 
@@ -199,17 +199,17 @@ This setting specifies the maximum download bandwidth that Delivery Optimization
 This setting allows you to limit the amount of upload bandwidth individual clients can use for Delivery Optimization. Consider this setting when clients are providing content to requesting peers on the network. This option is set in kilobytes per second (KB/s). The default setting is 0, or “unlimited” which means Delivery Optimization dynamically optimizes for minimal usage of upload bandwidth; however it does not cap the upload bandwidth rate at a set rate.
 
 ### Set Business Hours to Limit Background Download Bandwidth
-Specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
+Starting in Windows 10, version 1803, specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
 
 ### Set Business Hours to Limit Foreground Download Bandwidth
-Specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
+Starting in Windows 10, version 1803, specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
 
 ### Select a method to restrict peer selection
-Set this policy to restrict peer selection via selected option.  
+Starting in Windows 10, version 1803, set this policy to restrict peer selection via selected option.  
 Currently the only available option is **1 = Subnet mask** This option (Subnet mask) applies to both Download Modes LAN (1) and Group (2).  
 
 ### Select the source of Group IDs
-Set this policy to restrict peer selection to a specific source. The options are:
+Starting in Windows 10, version 1803, set this policy to restrict peer selection to a specific source. The options are:
 - 0 = not set
 - 1 = AD Site
 - 2 = Authenticated domain SID
@@ -220,10 +220,10 @@ When set, the Group ID is assigned automatically from the selected source. If yo
 
 
 ### Delay background download from http (in secs)
-Allows you to delay the use of an HTTP source in a background download that is allowed to use P2P.
+Starting in Windows 10, version 1803, allows you to delay the use of an HTTP source in a background download that is allowed to use P2P.
 
 ### Delay foreground download from http (in secs)
-Allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use P2P.
+Starting in Windows 10, version 1803, allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use P2P.
 
 ### Minimum Background QoS
 
