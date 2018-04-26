@@ -231,10 +231,10 @@ The Microsoft Store for Education is where you can shop for more apps for your s
 Update settings for all devices in your tenant by adding the **Documents** and **Downloads** folders to all devices managed in Intune for Education.
 
 1. Go to the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>.
-2. Select **Group > All Devices > Settings** and expand **Windows interface customizations**.
+2. Select **Group > All Devices > Settings** and expand **Windows interface settings**.
 3. In **Choose folders that appear in the Start menu**, select **Documents** and **Downloads**.
 
-    ![Choose folders that appear in the Start menu](images/i4e_groups_alldevices_newfolders.png)
+    ![Choose folders that appear in the Start menu](images/screenshot-bug.png)
 
 4. **Save** your changes.
 
