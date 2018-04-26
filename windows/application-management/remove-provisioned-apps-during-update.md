@@ -143,4 +143,4 @@ Let's say you're upgrading from Windows 10, version 1703 to Windows 10, version 
 4. Update your Windows 10 deployment from version 1703 to version 1709.
 
 >[!IMPORTANT]
->This example only applies to an upgrade from Windows 10, version 1703 to version 1709. If you're upgrading from Windows 10, version 1706, the general procedure will be the same, but the package names and keys generated may be different.
+>This example only applies to an upgrade from Windows 10, version 1703 to version 1709. If you're upgrading from Windows 10, version 1706, the general procedure will be the same, but the package names and generated keys may be different.
