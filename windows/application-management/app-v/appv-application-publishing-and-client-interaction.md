@@ -796,10 +796,10 @@ Use the following example scenarios as a guide for updating packages.
 
 ### Global vs. user publishing
 
-App-V Packages can be published in one of two ways; as User, which entitles an App-V package to a specific user or group of users, or as Global, which entitles the App-V package to the entire machine for all users of the machine. Once a package upgrade has been pended and the App-V package is not in use, consider the two types of publishing:
+App-V Packages can be published in one of two ways; as user, which entitles an App-V package to a specific user or group of users, or as global, which entitles the App-V package to the entire machine for all users of the machine. Once a package upgrade has been pended and the App-V package is not in use, consider the two types of publishing:
 
 - **Globally published**: the application is published to a machine; all users on that machine can use it. The upgrade will happen when the App-V Client Service starts, which effectively means a machine restart.
-- **User published**: the application is published to a user. If there are multiple users on the machine, the application can be published to a subset of the users. The upgrade will happen when the user logs in or when it is published again (periodically, ConfigMgr Policy refresh and evaluation, or an App-V periodic publishing/refresh, or explicitly via Windows PowerShell commands).
+- **User-published**: the application is published to a user. If there are multiple users on the machine, the application can be published to a subset of the users. The upgrade will happen when the user logs in or when it is published again (periodically, ConfigMgr Policy refresh and evaluation, or an App-V periodic publishing/refresh, or explicitly via Windows PowerShell commands).
 
 ### Removing an App-V package
 
