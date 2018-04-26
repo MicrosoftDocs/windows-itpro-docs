@@ -41,9 +41,8 @@ Microsoft BitLocker Administration and Monitoring (MBAM) 2.5 enables you to move
 -   [Configuring the MBAM 2.5 Server Features](configuring-the-mbam-25-server-features.md)
 
 ## Got a suggestion for MBAM?
-
-
-Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
  
 

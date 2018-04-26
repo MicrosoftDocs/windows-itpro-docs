@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/23/2018
+ms.date: 04/24/2018
 ---
 
 # Configuration service provider reference
@@ -56,6 +56,34 @@ Footnotes:
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
+[Accounts CSP](accounts-csp.md)  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -2557,9 +2585,9 @@ The following list shows the configuration service providers supported in Window
 
 | Configuration service provider        | Windows Holographic edition      | Windows Holographic for Business edition |
 |--------|--------|------------|
-| [AccountManagement CSP](accountmanagement-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)3       |
-| [Application CSP](application-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [AccountManagement CSP](accountmanagement-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       |
 | [AppLocker CSP](applocker-csp.md)      | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [AssignedAccess CSP](assignedaccess-csp.md)      | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       |
 | [CertificateStore CSP](certificatestore-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)|
 | [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [DevDetail CSP](devdetail-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
@@ -2578,9 +2606,11 @@ The following list shows the configuration service providers supported in Window
 | [WiFi CSP](wifi-csp.md)     | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [WindowsLicensing CSP](windowslicensing-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 
-Footnotes: 
-- 2 - Added in Windows 10, version 1703
-- 3 - Added in Windows 10, version 1803
+ Footnotes: 
+- 1 - Added in Windows 10, version 1607
+- 2 - Added in Windows 10, version 1703  
+- 3 - Added in Windows 10, version 1709
+- 4 - Added in Windows 10, version 1803
 
 ## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
 

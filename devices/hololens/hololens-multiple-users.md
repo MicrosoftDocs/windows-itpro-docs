@@ -7,10 +7,13 @@ ms.pagetype: hololens, devices
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 04/23/2018
+ms.date: 04/30/2018
 ---
 
 # Share HoloLens with multiple people
+
+>[!WARNING]
+>Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 A HoloLens device can be shared by multiple Azure Active Directory (Azure AD) accounts, each with their own user settings and user data on the device.
 

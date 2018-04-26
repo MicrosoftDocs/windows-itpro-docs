@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 04/11/2018
+ms.date: 04/25/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -1185,7 +1185,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers</li> 
-<li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsAlways</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts</li> 
@@ -1310,7 +1309,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>ShellLauncher</li>
 <li>StatusConfiguration</li>
 </ul>
-<p>Updated the AssigneAccessConfiguration schema.</p>
+<p>Updated the AssigneAccessConfiguration schema. Starting in Windows 10, version 1803 AssignedAccess CSP is supported in Windows Holographic for Business edition. Added example for Windows Holographic for Business edition.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[MultiSIM CSP](multisim-csp.md)</td>
@@ -1340,7 +1339,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <tr>
 <td style="vertical-align:top">[AccountManagement CSP](accountmanagement-csp.md)</td>
 <td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
-</ul>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[RootCATrustedCertificates CSP](rootcacertificates-csp.md)</td>
@@ -1355,6 +1353,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <ul>
 <li>ProxySettingsPerUser</li>
 </ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Accounts CSP](accounts-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
 </td></tr>
 </tbody>
 </table>
@@ -1654,6 +1656,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul>
 </td></tr>
 <tr>
+<td style="vertical-align:top">[Accounts CSP](accounts-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+</td></tr>
+<tr>
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1803:</p>
 <ul>
@@ -1801,7 +1807,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>ShellLauncher</li>
 <li>StatusConfiguration</li>
 </ul>
-<p>Updated the AssigneAccessConfiguration schema.</p>
+<p>Updated the AssigneAccessConfiguration schema. Starting in Windows 10, version 1803 AssignedAccess CSP is supported in Windows Holographic for Business edition. Added example for Windows Holographic for Business edition.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[MultiSIM CSP](multisim-csp.md)</td>
@@ -1863,7 +1869,6 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers</li> 
-<li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsAlways</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts</li> 

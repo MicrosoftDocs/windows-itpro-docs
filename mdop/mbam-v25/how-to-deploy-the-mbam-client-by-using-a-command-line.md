@@ -73,7 +73,6 @@ You can use this command-line option with either of the following installation m
 
  
 
-**Got a suggestion for MBAM**? Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). **Got a MBAM issue**? Use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 ## Related topics
 
@@ -83,7 +82,9 @@ You can use this command-line option with either of the following installation m
  
 
  
-
+## Got a suggestion for MBAM?
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 
 

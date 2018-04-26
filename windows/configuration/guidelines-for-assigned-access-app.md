@@ -8,7 +8,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
 ms.author: jdecker
-ms.date: 04/23/2018
+ms.date: 04/30/2018
 ---
 
 # Guidelines for choosing an app for assigned access (kiosk mode)
@@ -81,9 +81,6 @@ Follow the [best practices guidance for developing a kiosk app for assigned acce
 
 The above guidelines may help you select or develop an appropriate Windows app for your assigned access experience. Once you have selected your app, we recommend that you thoroughly test the assigned access experience to ensure that your device provides a good customer experience.
 
-## Learn more
-
-[Customizing Your Device Experience with Assigned Access](https://channel9.msdn.com/Events/Build/2016/P508)
 
 
 

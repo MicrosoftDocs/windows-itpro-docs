@@ -393,7 +393,6 @@ To evaluate MBAM by using the Configuration Manager Integration topology, follow
 
     2.  Within the **MBAM** node, select the folder that represents the language in which you want to view reports, and then select the report from the results pane.
 
-**Got a suggestion for MBAM**? Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). **Got a MBAM issue**? Use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 ## Related topics
 
@@ -401,8 +400,9 @@ To evaluate MBAM by using the Configuration Manager Integration topology, follow
 [Getting Started with MBAM 2.5](getting-started-with-mbam-25.md)
 
  
-
- 
+## Got a suggestion for MBAM?
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 
 

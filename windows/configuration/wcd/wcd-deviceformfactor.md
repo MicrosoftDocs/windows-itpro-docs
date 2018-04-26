@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 04/23/2018
+ms.date: 04/30/2018
 ---
 
 # DeviceFormFactor (Windows Configuration Designer reference)

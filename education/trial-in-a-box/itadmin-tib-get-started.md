@@ -150,7 +150,7 @@ A provisioning package is a method for applying settings to Windows 10 without n
 
     ![The first screen to set up a new PC in Windows 10 Fall Creators Update](images/win10_oobe_firstscreen.png)
 
-    If the PC is past the account setup screen, reset the PC to start over. To reset the PC, go to **Settings > Update & security > Recovery > Reset this PC**.
+    If you go past the region selection screen, select **Ctrl + Shift + F3** which will prompt the "System Preparation Tool." Select **Okay** in the tool to return to the region selection screen. If this doesn't work, reset the PC by going to **Settings > Update & Security > Recovery > Reset this PC.**
 
 2. Insert the USB drive into **Device B**. Windows will recognize the drive and automatically install the provisioning package. 
 3. When prompted, remove the USB drive. You can then use the USB drive to start provisioning another student PC.
@@ -231,10 +231,10 @@ The Microsoft Store for Education is where you can shop for more apps for your s
 Update settings for all devices in your tenant by adding the **Documents** and **Downloads** folders to all devices managed in Intune for Education.
 
 1. Go to the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>.
-2. Select **Group > All Devices > Settings** and expand **Windows interface customizations**.
+2. Select **Group > All Devices > Settings** and expand **Windows interface settings**.
 3. In **Choose folders that appear in the Start menu**, select **Documents** and **Downloads**.
 
-    ![Choose folders that appear in the Start menu](images/i4e_groups_alldevices_newfolders.png)
+    ![Choose folders that appear in the Start menu](images/Bug.png)
 
 4. **Save** your changes.
 
