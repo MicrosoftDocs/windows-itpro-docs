@@ -51,8 +51,6 @@ The key won't have any data values, as all the system needs to understand that t
 
 ## How to generate registry keys for deprovisioned apps
 
-
-
 1. First, you'll need to identify the apps you removed from the Windows 10, version 1703 install image. The following table lists the provisioned apps for version 1703, including their displayed names and package names:
       |Displayed app name|Package name|
       |---|---|
