@@ -5,8 +5,8 @@ keywords: Long-Term Servicing Channel, LTSC, LTSB, Semi-Annual Channel, SAC, Win
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: MikeBlodge, kaushik
-ms.author: MikeBlodge
+author: MikeBlodge
+ms.author: MikeBlodge, Kaushik Ainapure
 ms.date: 04/20/2018
 ---
 
@@ -33,9 +33,9 @@ You can simply type the following in the search bar and press **ENTER** to see v
 ![screenshot of the System Information display text](images/msinfo32.png)
 
 ## Using Command Prompt or PowerShell
-At the Command Promp or PowerShell interface, type **"systeminfo | findstr /B /C:"OS Name" /B /C:"OS Version"** and then press **ENTER**
+At the Command Prompt or PowerShell interface, type **"systeminfo | findstr /B /C:"OS Name" /B /C:"OS Version"** and then press **ENTER**
 
-![screenshot of system information display text](images/systeminfo.png)
+![screenshot of system information display text](images/refcmd.png)
 
 At the Command Prompt or PowerShell, type **"slmgr /dlv"**, and then press ENTER. The /dlv command displays the detailed licensing information. Notice the output displays "EnterpriseS" as seen in the image below:
 
