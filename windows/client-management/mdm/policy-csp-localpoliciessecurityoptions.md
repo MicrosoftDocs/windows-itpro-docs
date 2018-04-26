@@ -91,9 +91,6 @@ ms.date: 04/06/2018
     <a href="#localpoliciessecurityoptions-microsoftnetworkclient-sendunencryptedpasswordtothirdpartysmbservers">LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers</a>
   </dd>
   <dd>
-    <a href="#localpoliciessecurityoptions-microsoftnetworkserver-amountofidletimerequiredbeforesuspendingsession">LocalPoliciesSecurityOptions/MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession</a>
-  </dd>
-  <dd>
     <a href="#localpoliciessecurityoptions-microsoftnetworkserver-digitallysigncommunicationsalways">LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsAlways</a>
   </dd>
   <dd>
@@ -1605,63 +1602,6 @@ Default: Disabled.
 <!--RegistryMapped-->
 GP Info:  
 -   GP English name: *Microsoft network client: Send unencrypted password to third-party SMB servers*
--   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
-
-<!--/RegistryMapped-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="localpoliciessecurityoptions-microsoftnetworkserver-amountofidletimerequiredbeforesuspendingsession"></a>**LocalPoliciesSecurityOptions/MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Microsoft network server: Amount of idle time required before suspending a session
-
-This security setting determines the amount of continuous idle time that must pass in a Server Message Block (SMB) session before the session is suspended due to inactivity.
-
-Administrators can use this policy to control when a computer suspends an inactive SMB session. If client activity resumes, the session is automatically reestablished.
-
-For this policy setting, a value of 0 means to disconnect an idle session as quickly as is reasonably possible. The maximum value is 99999, which is 208 days; in effect, this value disables the policy.
-
-Default:This policy is not defined, which means that the system treats it as 15 minutes for servers and undefined for workstations.
-
-<!--/Description-->
-<!--RegistryMapped-->
-GP Info:  
--   GP English name: *Microsoft network server: Amount of idle time required before suspending session*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
 <!--/RegistryMapped-->
