@@ -799,7 +799,7 @@ Use the following example scenarios as a guide for updating packages.
 App-V Packages can be published in one of two ways; as user, which entitles an App-V package to a specific user or group of users, or as global, which entitles the App-V package to the entire machine for all users of the machine. Once a package upgrade has been pended and the App-V package is not in use, consider the two types of publishing:
 
 - **Globally published**: the application is published to a machine; all users on that machine can use it. The upgrade will happen when the App-V Client Service starts, which effectively means a machine restart.
-- **User-published**: the application is published to a user. If there are multiple users on the machine, the application can be published to a subset of the users. The upgrade will happen when the user logs in or when it is published again (periodically, ConfigMgr Policy refresh and evaluation, or an App-V periodic publishing/refresh, or explicitly via Windows PowerShell commands).
+- **User-published**: the application is published to a user. If there are multiple users on the machine, the application can be published to a subset of the users. The upgrade will happen when the user signs in or when it is published again (periodically, ConfigMgr Policy refresh and evaluation, or an App-V periodic publishing/refresh, or explicitly through Windows PowerShell commands).
 
 ### Removing an App-V package
 
@@ -807,19 +807,19 @@ Removing App-V applications in a Full Infrastructure is an unpublish operation, 
 
 ### Repairing an App-V package
 
-The repair operation is very simple but may affect many locations on the machine. The previously mentioned Copy on Write (COW) locations are removed, and extension points are de-integrated and then re-integrated. Please review the COW data placement locations by reviewing where they are registered in the registry. This operation is done automatically and there is no administrative control other than initiating a Repair operation from the App-V Client Console or via Windows PowerShell (Repair-AppVClientPackage).
+The repair operation is easy to do, but may affect many locations on the machine. The previously mentioned Copy on Write (COW) locations are removed, and extension points are deintegrated and then reintegrated. Before repairing, please review where the COW data placement locations are registered in the registry. To perform a Repair operation, all you need to do is initiate it from the App-V Client Console or through the **Repair-AppVClientPackage** PowerShell cmdlet. After that, the operation is completed automatically.
 
 ## Integration of App-V packages
 
 The App-V Client and package architecture provides specific integration with the local operating system during the addition and publishing of packages. Three files define the integration or extension points for an App-V Package:
 
-- AppXManifest.xml: Stored inside of the package with fallback copies stored in the package store and the user profile. Contains the options created during the sequencing process.
-- DeploymentConfig.xml: Provides configuration information of computer and user based integration extension points.
-- UserConfig.xml: A subset of the Deploymentconfig.xml that only provides user- based configurations and only targets user-based extension points.
+- **AppXManifest.xml**: Stored inside of the package with fallback copies stored in the package store and the user profile. Contains the options created during the sequencing process.
+- **DeploymentConfig.xml**: Provides configuration information of computer- and user-based integration extension points.
+- **UserConfig.xml**: A subset of the **Deploymentconfig.xml** that only provides user-based configurations and only targets user-based extension points.
 
 ### Rules of integration
 
-When App-V applications are published to a computer with the App-V Client, some specific actions take place as described in the list below:
+When App-V applications are published to a computer with the App-V Client, some specific actions take place as described in the following list:
 
 - Global Publishing: Shortcuts are stored in the All Users profile location and other extension points are stored in the registry in the HKLM hive.
 - User Publishing: Shortcuts are stored in the current user account profile and other extension points are stored in the registry in the HKCU hive.
