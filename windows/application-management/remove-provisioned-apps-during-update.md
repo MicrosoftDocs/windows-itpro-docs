@@ -51,6 +51,8 @@ The key won't have any data values, as all the system needs to understand that t
 
 ## How to generate registry keys for deprovisioned apps
 
+Let's say you're upgrading from Windows 10, version 1703 to Windows 10, version 1709. Here's what you'll need to do:
+
 1. First, you'll need to identify the apps you removed from the Windows 10, version 1703 install image. The following table lists the provisioned apps for version 1703, including their displayed names and package names:
       |Displayed app name|Package name|
       |---|---|
@@ -139,3 +141,6 @@ The key won't have any data values, as all the system needs to understand that t
       2. Save the text editor file as a .reg file. For more information, see [How to add, modify, or delete registry subkeys and values by using a .reg file](https://support.microsoft.com/en-us/help/310516/how-to-add-modify-or-delete-registry-subkeys-and-values-by-using-a-reg).
 3. Import the .reg file into the Deprovisioned foler mentioned previously.
 4. Update your Windows 10 deployment from version 1703 to version 1709.
+
+>[!IMPORTANT]
+>This example only applies to an upgrade from Windows 10, version 1703 to version 1709. If you're upgrading from Windows 10, version 1706, the general procedure will be the same, but the package names and keys generated may be different.
