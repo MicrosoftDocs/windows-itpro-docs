@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/09/2017
+ms.date: 04/24/2018
 ---
 
 # AppLocker CSP
@@ -430,6 +430,11 @@ The following list shows the apps that may be included in the inbox.
 <td>59553c14-5701-49a2-9909-264d034deb3d</td>
 <td></td>
 </tr>
+<tr class="odd">
+<td>Broker plug-in (same as Work or school account)</td>
+<td></td>
+<td>Microsoft.AAD.BrokerPlugin</td>
+</tr>
 <tr class="even">
 <td>Calculator</td>
 <td>b58171c6-c70c-4266-a2e8-8f9c994f4456</td>
@@ -464,6 +469,21 @@ The following list shows the apps that may be included in the inbox.
 <td>Cortana</td>
 <td>fd68dcf4-166f-4c55-a4ca-348020f71b94</td>
 <td>Microsoft.Windows.Cortana</td>
+</tr>
+<tr class="odd">
+<td>Cortana Listen UI</td>
+<td></td>
+<td>CortanaListenUI</td>
+</tr>
+<tr class="odd">
+<td>Credentials Dialog Host</td>
+<td></td>
+<td>Microsoft.CredDialogHost</td>
+</tr>
+<tr class="odd">
+<td>Device Portal PIN UX</td>
+<td></td>
+<td>holopairingapp</td>
 </tr>
 <tr class="odd">
 <td>Email and accounts</td>
@@ -536,6 +556,11 @@ The following list shows the apps that may be included in the inbox.
 <td></td>
 </tr>
 <tr class="odd">
+<td>Holographic Shell</td>
+<td></td>
+<td>HoloShell</td>
+</tr>
+<tr class="odd">
 <td>Lumia motion data</td>
 <td>8fc25fd2-4e2e-4873-be44-20e57f6ec52b</td>
 <td></td>
@@ -565,6 +590,11 @@ The following list shows the apps that may be included in the inbox.
 <td>ProductID = 00000000-0000-0000-0000-000000000000
 <p>PublisherName=&quot;CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US&quot;</p></td>
 <td></td>
+</tr>
+<tr class="odd">
+<td>Migration UI</td>
+<td></td>
+<td>MigrationUIApp</td>
 </tr>
 <tr class="odd">
 <td>MiracastView</td>
@@ -691,6 +721,11 @@ The following list shows the apps that may be included in the inbox.
 <td>2a4e62d8-8809-4787-89f8-69d0f01654fb</td>
 </tr>
 <tr class="odd">
+<td>Settings</td>
+<td></td>
+<td>SystemSettings</td>
+</tr>
+<tr class="odd">
 <td>Setup wizard</td>
 <td>07d87655-e4f0-474b-895a-773790ad4a32</td>
 <td></td>
@@ -699,6 +734,11 @@ The following list shows the apps that may be included in the inbox.
 <td>Sharing</td>
 <td>b0894dfd-4671-4bb9-bc17-a8b39947ffb6</td>
 <td></td>
+</tr>
+<tr class="odd">
+<td>Sign-in for Windows 10 Holographic</td>
+<td></td>
+<td>WebAuthBridgeInternetSso, WebAuthBridgeInternet, WebAuthBridgeIntranetSso, WebAuthBrokerInternetSso, WebAuthBrokerInternetSso, WebAuthBrokerInternetSso, WebAuthBrokerInternet, WebAuthBrokerIntranetSso, SignIn</td>
 </tr>
 <tr class="odd">
 <td>Skype</td>
@@ -1358,6 +1398,261 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
     <Final/>
   </SyncBody>
 </SyncML>
+```
+
+## Example for Windows 10 Holographic for Business
+The following example for Windows 10 Holographic for Business denies all apps and allows the minimum set of [inbox apps](#inboxappsandcomponents) to enable to enable a working device, as well as Settings.
+
+``` syntax
+<RuleCollection Type="Appx" EnforcementMode="Enabled">
+    <FilePublisherRule Id="96B82A15-F841-499a-B674-963DC647762F"
+                     Name="Whitelist BackgroundTaskHost"
+                     Description=""
+                     UserOrGroupSid="S-1-1-0"
+                     Action="Allow">
+    <Conditions>
+      <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+          ProductName="*"
+          BinaryName="BackgroundTaskHost*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="8D345CB2-AC5B-4b6b-8F0B-DCE3F6FB9259"
+                     Name="Whitelist CertInstaller"
+                     Description=""
+                     UserOrGroupSid="S-1-1-0"
+                     Action="Allow">
+    <Conditions>
+      <FilePublisherCondition PublisherName="*"
+          ProductName="4c4ad968-7100-49de-8cd1-402e198d869e"
+          BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="9F07FB38-B952-4f3c-A17A-CE7EC8132987"
+                     Name="Whitelist MigrationUI"
+                     Description=""
+                     UserOrGroupSid="S-1-1-0"
+                     Action="Allow">
+    <Conditions>
+      <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+          ProductName="MigrationUIApp"
+          BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="1C32E96F-2F44-4317-9D98-2F624147D7AE"
+                     Name="Whitelist CredDiagHost"
+                     Description=""
+                     UserOrGroupSid="S-1-1-0"
+                     Action="Allow">
+    <Conditions>
+      <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+          ProductName="Microsoft.CredDialogHost"
+          BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="53DCC751-E92A-4d0a-84DF-E6EAC2A7C7CE"
+                     Name="Whitelist Settings"
+                     Description=""
+                     UserOrGroupSid="S-1-1-0"
+                     Action="Allow">
+    <Conditions>
+      <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+          ProductName="SystemSettings"
+          BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="70D9E233-81F4-4707-B79D-58F9C3A6BFB1"
+                     Name="Whitelist HoloShell"
+                     Description=""
+                     UserOrGroupSid="S-1-1-0"
+                     Action="Allow">
+    <Conditions>
+      <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+          ProductName="HoloShell"
+          BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="6557A9BC-BA1F-4b7d-90FD-8C620CA81906"
+                     Name="Whitelist MSA"
+                     Description=""
+                     UserOrGroupSid="S-1-1-0"
+                     Action="Allow">
+    <Conditions>
+      <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+          ProductName="Microsoft.Windows.CloudExperienceHost"
+          BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="81CD98A6-82EC-443f-87F8-039B00DFBE78"
+                     Name="Whitelist BrokerPlugin"
+                     Description=""
+                     UserOrGroupSid="S-1-1-0"
+                     Action="Allow">
+    <Conditions>
+      <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+          ProductName="Microsoft.AAD.BrokerPlugin"
+          BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="1330E03E-7D43-4e01-9853-40ED8CF62D10"
+                     Name="Whitelist SignIn1"
+                     Description=""
+                     UserOrGroupSid="S-1-1-0"
+                     Action="Allow">
+    <Conditions>
+      <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+          ProductName="WebAuthBridgeInternetSso"
+          BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="107EC30A-2CEF-4ec1-B556-F7DAA7DF7998"
+                     Name="Whitelist SignIn2"
+                     Description=""
+                     UserOrGroupSid="S-1-1-0"
+                     Action="Allow">
+    <Conditions>
+      <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+          ProductName="WebAuthBridgeInternet"
+          BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="F806AC17-3E31-4a83-92EB-6A34696478D1"
+                     Name="Whitelist SignIn3"
+                     Description=""
+                     UserOrGroupSid="S-1-1-0"
+                     Action="Allow">
+    <Conditions>
+      <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+          ProductName="WebAuthBridgeIntranetSso"
+          BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="E8CAF694-2256-4516-BDCC-CDABF218573C"
+                     Name="Whitelist SignIn4"
+                     Description=""
+                     UserOrGroupSid="S-1-1-0"
+                     Action="Allow">
+    <Conditions>
+      <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+          ProductName="WebAuthBrokerInternetSso"
+          BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="5918428D-B9A8-4810-8FB4-25AE5A25D5A7"
+                     Name="Whitelist SignIn5"
+                     Description=""
+                     UserOrGroupSid="S-1-1-0"
+                     Action="Allow">
+    <Conditions>
+      <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+          ProductName="WebAuthBrokerInternet"
+          BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="C90D99E3-C3EE-47c5-B181-7E8C54FA66B3"
+                     Name="Whitelist SignIn6"
+                     Description=""
+                     UserOrGroupSid="S-1-1-0"
+                     Action="Allow">
+    <Conditions>
+      <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+          ProductName="WebAuthBrokerIntranetSso"
+          BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="9CD87A91-FB48-480d-B788-3770A950CD03"
+                     Name="Whitelist SignIn7"
+                     Description=""
+                     UserOrGroupSid="S-1-1-0"
+                     Action="Allow">
+    <Conditions>
+      <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+          ProductName="SignIn"
+          BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="DCF74448-C287-4195-9072-8F3649AB9305"
+                     Name="Whitelist Cortana"
+                     Description=""
+                     UserOrGroupSid="S-1-1-0"
+                     Action="Allow">
+    <Conditions>
+      <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+          ProductName="Microsoft.Windows.Cortana"
+          BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="BE4FD0C4-527B-45a3-A5B8-F4EA00584779"
+                      Name="Whitelist Cortana ListenUI"
+                      Description=""
+                      UserOrGroupSid="S-1-1-0"
+                      Action="Allow">
+    <Conditions>
+      <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+          ProductName="CortanaListenUI"
+          BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="336509A7-FFBA-48cb-81BD-8DF9060B3CF8"
+                     Name="Whitelist Email and accounts"
+                     Description=""
+                     UserOrGroupSid="S-1-1-0"
+                     Action="Allow">
+    <Conditions>
+      <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+          ProductName="Microsoft.AccountsControl"
+          BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="55912F15-0B94-445b-80E1-83BC8F0E8999"
+                     Name="Whitelist Device Portal PIN UX"
+                     Description=""
+                     UserOrGroupSid="S-1-1-0"
+                     Action="Allow">
+    <Conditions>
+      <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+          ProductName="holopairingapp"
+          BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+</RuleCollection>
 ```
 
 ## Recommended deny list for Windows Information Protection
