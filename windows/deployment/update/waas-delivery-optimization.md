@@ -7,7 +7,7 @@ ms.sitesec: library
 author: JaimeO
 ms.localizationpriority: high
 ms.author: jaimeo
-ms.date: 04/26/2018
+ms.date: 04/30/2018
 ---
 
 # Configure Delivery Optimization for Windows 10 updates
@@ -33,8 +33,8 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 |------------------|---------------|
 | Computers running Windows 10 | 1511 |
 | Computers running Server Core installations of Windows Server | 1709 |
-| IoT devices | 1804 |
-| HoloLens devices | 1804 |
+| IoT devices | 1803 |
+| HoloLens devices | 1803 |
 
 
 By default in Windows 10 Enterprise and Education editions, Delivery Optimization allows peer-to-peer sharing on the organization's own network only, but you can configure it differently in Group Policy and mobile device management (MDM) solutions such as Microsoft Intune.
