@@ -87,6 +87,9 @@ Here's a list of changes that were made to this article for Windows 10, version 
 
 The following sections list the components that make network connections to Microsoft services by default. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure diagnostic data at the Security level, turn off Windows Defender diagnostic data and MSRT reporting, and turn off all of these connections.
 
+>[!NOTE]
+>For some settings, MDM policies only partly cover capabilities available through Group Policy. See each setting’s section for more details.
+
 ### Settings for Windows 10 Enterprise edition 
 
 The following table lists management options for each setting, beginning with Windows 10 Enterprise version 1703.
