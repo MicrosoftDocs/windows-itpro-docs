@@ -234,7 +234,7 @@ Update settings for all devices in your tenant by adding the **Documents** and *
 2. Select **Group > All Devices > Settings** and expand **Windows interface settings**.
 3. In **Choose folders that appear in the Start menu**, select **Documents** and **Downloads**.
 
-    ![Choose folders that appear in the Start menu](images/Bug.png)
+    ![Choose folders that appear in the Start menu](images/screenshot-bug.png)
 
 4. **Save** your changes.
 

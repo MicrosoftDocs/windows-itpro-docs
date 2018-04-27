@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 04/25/2018
+ms.date: 04/26/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -1358,6 +1358,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[Accounts CSP](accounts-csp.md)</td>
 <td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
 </td></tr>
+<tr>
+<td style="vertical-align:top">[CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)</td>
+<td style="vertical-align:top"><p>Added the DDF download of Windows 10, version 1803 configuration service providers.</p>
+</td></tr>
 </tbody>
 </table>
 
@@ -1658,6 +1662,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tr>
 <td style="vertical-align:top">[Accounts CSP](accounts-csp.md)</td>
 <td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)</td>
+<td style="vertical-align:top"><p>Added the DDF download of Windows 10, version 1803 configuration service providers.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
