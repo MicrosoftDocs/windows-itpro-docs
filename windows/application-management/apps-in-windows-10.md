@@ -8,7 +8,7 @@ ms.pagetype: mobile
 ms.author: elizapo
 author: lizap
 ms.localizationpriority: low
-ms.date: 04/13/2018
+ms.date: 04/30/2018
 ---
 # Understand the different apps included in Windows 10
 
