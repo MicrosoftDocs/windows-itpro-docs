@@ -18,7 +18,7 @@ Get deployment guidance for your Surface devices including information about MDT
 
 | Topic | Description |
 | --- | --- |
-| [Windows AutoPilot and Surface devices](windows-autopilot-and-surface-devices.md) | Find out how to remotely deploy and configure devices with Windows AutoPilot. |
+| [Windows Autopilot and Surface devices](windows-autopilot-and-surface-devices.md) | Find out how to remotely deploy and configure devices with Windows Autopilot. |
 | [Surface device compatibility with Windows 10 Long-Term Servicing Channel](surface-device-compatibility-with-windows-10-ltsc.md) | Find out about compatibility and limitations of Surface devices running Windows 10 Enterprise LTSC edition. |
 | [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md) | Walk through the recommended process of how to deploy Windows 10 to your Surface devices with the Microsoft Deployment Toolkit.|
 | [Upgrade Surface devices to Windows 10 with MDT](upgrade-surface-devices-to-windows-10-with-mdt.md)| Find out how to perform a Windows 10 upgrade deployment to your Surface devices. |
