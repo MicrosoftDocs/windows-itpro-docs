@@ -3,8 +3,9 @@
 ## [Windows 10 deployment considerations](windows-10-deployment-considerations.md)
 ## [Windows 10 compatibility](windows-10-compatibility.md)
 ## [Windows 10 infrastructure requirements](windows-10-infrastructure-requirements.md)
-## [Creators update (version 1703) - deprecated features](windows-10-creators-update-deprecation.md)
+## [Windows 10, version 1803 - Features removed or planned for replacement](windows-10-1803-removed-features.md)
 ## [Fall Creators update (version 1709) - deprecated features](windows-10-fall-creators-deprecation.md)
+## [Creators update (version 1703) - deprecated features](windows-10-creators-update-deprecation.md)
 
 ## [Windows To Go: feature overview](windows-to-go-overview.md)
 ### [Best practice recommendations for Windows To Go](best-practice-recommendations-for-windows-to-go.md)
