@@ -43,8 +43,11 @@ ms.date: 03/18/2018
 To try out the educator tasks, start by logging in as a teacher.
 
 1. Turn on **Device A** and ensure you plug in the PC to an electrical outlet.
-2. Log in to **Device A** using the **Teacher Username** and **Teacher Password** included in the **Credentials Sheet** located in your kit.
-3. Connect to your school's Wi-Fi network or connect with a local Ethernet connection.
+2. Connect to your school's Wi-Fi network or connect with a local Ethernet connection.
+   >**Note**: If your Wi-Fi network requires a web browser login page to connect to the Internet you should connect using the Ethernet port. If your Wi-Fi network has additional restrictions that will prevent the device from connecting to the internet without registration you should consider using Device A from a different network.
+   
+3. Log in to **Device A** using the **Teacher Username** and **Teacher Password** included in the **Credentials Sheet** located in your kit.
+
 
 </br>
 </br>
@@ -80,6 +83,7 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 
 </br>
 </br>
+
 
 
 ![Spark communication, critical thinking, and creativity with Microsoft Teams](images/edu-TIB-setp-3-jump.png) 
