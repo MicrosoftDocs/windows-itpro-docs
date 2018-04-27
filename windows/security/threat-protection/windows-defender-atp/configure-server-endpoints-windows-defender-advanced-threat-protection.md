@@ -18,7 +18,7 @@ ms.date: 04/24/2018
 
 - Windows Server 2012 R2
 - Windows Server 2016
-- Windows Server 2016, version 1803
+- Windows Server, version 1803
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
@@ -30,7 +30,7 @@ Windows Defender ATP extends support to also include the Windows Server operatin
 Windows Defender ATP supports the onboarding of the following servers:
 - Windows Server 2012 R2
 - Windows Server 2016
-- Windows Server 2016, version 1803
+- Windows Server, version 1803
 
 ## Onboard Windows Server 2012 R2 and Windows Server 2016
 
