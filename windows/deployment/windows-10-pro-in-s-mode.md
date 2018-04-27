@@ -40,7 +40,7 @@ S mode is an enhanced security mode of Windows 10. Windows 10 Pro and Enterprise
 ## Keep Line of Business apps functioning with Desktop Bridge
 Worried about your LOB apps not working in S mode? Using Desktop Bridge will enable you to convert your Line of Business apps to a packaged app with UWP manifest. After testing and validating you can distribute the app through the Windows Store or existing channels. 
 
-[Explore Desktop Bridge](1709)
+[Explore Desktop Bridge](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root)
 
 >[!NOTE] 
 >The only way to revert to Windows 10 in S mode is to perform a BMR factory reset. This will allow you to reimage a device.
