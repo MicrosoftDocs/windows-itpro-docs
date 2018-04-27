@@ -1,5 +1,5 @@
 ---
-title: Switch from Windows 10 Pro in S mode to Windows 10 Pro in S mode for Education
+title: Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode
 description: Overview of Windows 10 Pro Education in S mode, switching options, and system requirements
 keywords: Windows 10 Pro Education S, S mode, system requirements, Overview, Windows 10 Pro in S mode, Education, EDU
 ms.mktglfcycl: deploy
@@ -11,7 +11,7 @@ ms.date: 03/21/2018
 author: Mikeblodge
 ---
 
-# Switch from Windows 10 Pro in S mode to Windows 10 Education in S mode
+# Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode
 
 S mode is an enhanced security mode of Windows 10 – streamlined for security and superior performance. With Windows 10 in S mode, everyone can download and install Microsoft-verified apps from the Microsoft Store for Education – this keep devices running fast and secure day in and day out. 
 
