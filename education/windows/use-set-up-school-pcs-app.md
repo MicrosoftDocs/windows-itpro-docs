@@ -15,7 +15,7 @@ ms.date: 12/11/2017
 # Use the Set up School PCs app 
 **Applies to:**
 
--   WindowsÂ 10   
+-   Windows 10   
 
 IT administrators and technical teachers can use the **Set up School PCs** app to quickly set up PCs for students. A student PC set up using the app is tailored to provide students with the tools they need for learning while removing apps and features that they don't need.
 

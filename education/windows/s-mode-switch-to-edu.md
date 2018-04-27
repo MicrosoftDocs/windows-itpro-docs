@@ -39,7 +39,7 @@ S mode is an enhanced security mode of Windows 10 – streamlined for security a
 |Device Guard | | | | X |
 
 ###  Windows 10 in S mode is safe, secure, and fast.  
-However, in some limited scenarios, you might need to switch to Windows 10 Education. You can switch devices running Windows 10, version 1709 or later. Use the following information to switch to Windows 10 Pro through the Microsoft Store or by using AutoPilot.
+However, in some limited scenarios, you might need to switch to Windows 10 Education. You can switch devices running Windows 10, version 1709 or later. Use the following information to switch to Windows 10 Pro through the Microsoft Store or by using Autopilot.
 
 > [!IMPORTANT]
 > While it’s free to switch to Windows 10 Pro, it’s not reversible. The only way to rollback this kind of switch is through a BMR factory reset. 
@@ -47,7 +47,7 @@ However, in some limited scenarios, you might need to switch to Windows 10 Educa
 ## How to switch
 
 ### Devices running Windows 10, version 1803
-The way that you switch a Windows 10, version 1803 device from S mode to EDU is different from Windows 10, version 1709. Instead of applying a MAK key (which only switches editions), you need to switch the device using Intune/MDM either at OOBE (Windows AutoPilot) or while managing your devices Post OOBE.”
+The way that you switch a Windows 10, version 1803 device from S mode to EDU is different from Windows 10, version 1709. Instead of applying a MAK key (which only switches editions), you need to switch the device using Intune/MDM either at OOBE (Windows Autopilot) or while managing your devices Post OOBE.”
 
 1.	Select which devices to switch out of S mode.
 2.	Select the S mode switch option in Intune/MDM.
