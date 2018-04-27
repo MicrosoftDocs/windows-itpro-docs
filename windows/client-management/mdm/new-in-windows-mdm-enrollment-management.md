@@ -2284,7 +2284,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Update/DisableDualScan</li>
 <li>Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork</li>
 </ul>
-<p>Changed the name of new policy to CredentialProviders/DisableAutomaticReDeploymentCredentials from CredentialProviders/EnableWindowsAutoPilotResetCredentials.</p>
+<p>Changed the name of new policy to CredentialProviders/DisableAutomaticReDeploymentCredentials from CredentialProviders/EnableWindowsAutopilotResetCredentials.</p>
 <p>Changed the names of the following policies:</p>
 <ul>
 <li>Defender/GuardedFoldersAllowedApplications to Defender/ControlledFolderAccessAllowedApplications</li>

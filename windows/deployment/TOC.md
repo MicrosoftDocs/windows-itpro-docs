@@ -19,7 +19,7 @@
 
 ## [Deploy Windows 10](deploy.md)
 
-### [Overview of Windows AutoPilot](windows-autopilot/windows-10-autopilot.md)
+### [Overview of Windows Autopilot](windows-autopilot/windows-10-autopilot.md)
 
 ### [Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)
 #### [Windows 10 downgrade paths](upgrade/windows-10-downgrade-paths.md)

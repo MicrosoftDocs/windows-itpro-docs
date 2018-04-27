@@ -1,6 +1,6 @@
 ---
-title: Demo the Windows AutoPilot Deployment Program on a Virtual Machine
-description: Step-by-step instructions on how to set-up a Virtual Machine with a Windows AutoPilot deployment
+title: Demo the Windows Autopilot Deployment Program on a Virtual Machine
+description: Step-by-step instructions on how to set-up a Virtual Machine with a Windows Autopilot deployment
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,13 +12,13 @@ ms.author: daniha
 ms.date: 12/21/2017
 ---
 
-# Demo the Windows AutoPilot Deployment Program on a Virtual Machine
+# Demo the Windows Autopilot Deployment Program on a Virtual Machine
 
 **Applies to**
 
 -   Windows 10
 
-In this topic you'll learn how to set-up a Windows AutoPilot deployment for a Virtual Machine using Hyper-V.
+In this topic you'll learn how to set-up a Windows Autopilot deployment for a Virtual Machine using Hyper-V.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ These are the thing you'll need on your device to get started:
 * Internet access (see [Network connectivity requirements](windows-10-autopilot.md#network-connectivity-requirements))
 * Hypervisor needs to be unoccupied, or used by Hyper-V, as we will be using Hyper-V to create the Virtual Machine
 
-See additional prerequisites in the [Windows AutoPilot overview topic](windows-10-autopilot.md#prerequisites).
+See additional prerequisites in the [Windows Autopilot overview topic](windows-10-autopilot.md#prerequisites).
 
 ## Create your Virtual Machine
 
@@ -49,10 +49,10 @@ Now that Hyper-V is enabled, proceed to create your Virtual Machine.
 
 Open a PowerShell prompt **as an administrator** and run the following:
 ```powershell
-New-VMSwitch -Name AutoPilotExternal -NetAdapterName <Name of Network Adapter with internet access> -AllowManagementOS $true
-New-VM -Name WindowsAutoPilot -MemoryStartupBytes 2GB -BootDevice VHD -NewVHDPath .\VMs\WindowsAutoPilot.vhdx -Path .\VMData -NewVHDSizeBytes 80GB -Generation 2 -Switch AutoPilotExternal
-Add-VMDvdDrive -Path <Path to Windows 10 ISO> -VMName WindowsAutoPilot
-Start-VM -VMName WindowsAutoPilot
+New-VMSwitch -Name AutopilotExternal -NetAdapterName <Name of Network Adapter with internet access> -AllowManagementOS $true
+New-VM -Name WindowsAutopilot -MemoryStartupBytes 2GB -BootDevice VHD -NewVHDPath .\VMs\WindowsAutopilot.vhdx -Path .\VMData -NewVHDSizeBytes 80GB -Generation 2 -Switch AutopilotExternal
+Add-VMDvdDrive -Path <Path to Windows 10 ISO> -VMName WindowsAutopilot
+Start-VM -VMName WindowsAutopilot
 ```
 
 >[!IMPORTANT]
@@ -61,14 +61,14 @@ Start-VM -VMName WindowsAutoPilot
 
 ### Install Windows 10
 
-Now that the Virtual Machine was created and started, open **Hyper-V Manager** and connect to the **WindowsAutoPilot** Virtual Machine.
+Now that the Virtual Machine was created and started, open **Hyper-V Manager** and connect to the **WindowsAutopilot** Virtual Machine.
 Make sure the Virtual Machine booted from the installation media you've provided and complete the Windows installation process.
 
 Once the installation is complete, create a checkpoint. You will create multiple checkpoints throughout this process, which you can later use to go through the process again.
 
 To create the checkpoint, open a PowerShell prompt **as an administrator** and run the following:
 ```powershell
-Checkpoint-VM -Name WindowsAutoPilot -SnapshotName "Finished Windows install"
+Checkpoint-VM -Name WindowsAutopilot -SnapshotName "Finished Windows install"
 ```
 
 ## Capture your Virtual Machine's hardware ID
@@ -78,8 +78,8 @@ On the newly created Virtual Machine, open a PowerShell prompt **as an administr
 md c:\HWID
 Set-Location c:\HWID
 Set-ExecutionPolicy Unrestricted
-Install-Script -Name Get-WindowsAutoPilotInfo
-Get-WindowsAutoPilotInfo.ps1 -OutputFile AutoPilotHWID.csv
+Install-Script -Name Get-WindowsAutopilotInfo
+Get-WindowsAutopilotInfo.ps1 -OutputFile AutopilotHWID.csv
 ```
 
 >[!NOTE]
@@ -87,34 +87,34 @@ Get-WindowsAutoPilotInfo.ps1 -OutputFile AutoPilotHWID.csv
 
 ### Mount the Virtual Hard Drive (VHD)
 
-To gain access to the AutoPilotHWID.csv that contains the hardware ID, stop the Virtual Machine to unlock the Virtual Hard Drive. 
+To gain access to the AutopilotHWID.csv that contains the hardware ID, stop the Virtual Machine to unlock the Virtual Hard Drive. 
 
 To do that, on your device (**not** on the Virtual Machine), open a PowerShell prompt **as an administrator** and run the following:
 ```powershell
-Stop-VM -VMName WindowsAutoPilot
+Stop-VM -VMName WindowsAutopilot
 ```
 
 Once the Virtual Machine has stopped, create a checkpoint:
 ```powershell
-Checkpoint-VM -Name WindowsAutoPilot -SnapshotName "HWID captured"
+Checkpoint-VM -Name WindowsAutopilot -SnapshotName "HWID captured"
 ```
 
 With the checkpoint created, continue to mount the VHD:
 ```powershell
-Mount-VHD -path (Get-VMHardDiskDrive -VMName WindowsAutoPilot).Path
+Mount-VHD -path (Get-VMHardDiskDrive -VMName WindowsAutopilot).Path
 ```
 
-Once mounted, navigate to the new drive and copy **AutoPilotHWID.csv** to a location on your device.
+Once mounted, navigate to the new drive and copy **AutopilotHWID.csv** to a location on your device.
 
 Before you proceed, unmount the VHD to unlock it and start the Virtual Machine:
 ```powershell
-Dismount-VHD -path (Get-VMHardDiskDrive -VMName WindowsAutoPilot).Path
-Start-VM -VMName WindowsAutoPilot
+Dismount-VHD -path (Get-VMHardDiskDrive -VMName WindowsAutopilot).Path
+Start-VM -VMName WindowsAutopilot
 ```
 
 ## Reset Virtual Machine back to Out-Of-Box-Experience (OOBE)
 
-With the hardware ID captured, prepare your Virtual Machine for Windows AutoPilot deployment by resetting it back to OOBE.
+With the hardware ID captured, prepare your Virtual Machine for Windows Autopilot deployment by resetting it back to OOBE.
 
 On the Virtual Machine, go to **Settings > Update & Security > Recovery** and click on **Get started** under **Reset this PC**.
 Select **Remove everything** and **Just remove my files**. Finally, click on **Reset**.
@@ -158,11 +158,11 @@ For the purposes of this demo, select **All** under the **MDM user scope** and c
 
 ## Register your Virtual Machine to your organization
 
-Navigate to [Microsoft Store for Business device management](https://businessstore.microsoft.com/en-us/manage/devices). Click on **Add devices** and select the **AutoPilotHWID.csv** you've saved earlier. A message will appear indicating your request is being processed. Wait a few moments before refreshing to see your Virtual Machine added.
+Navigate to [Microsoft Store for Business device management](https://businessstore.microsoft.com/en-us/manage/devices). Click on **Add devices** and select the **AutopilotHWID.csv** you've saved earlier. A message will appear indicating your request is being processed. Wait a few moments before refreshing to see your Virtual Machine added.
 
 ![Add devices through Microsoft Store for Business](images/autopilot-devices-add.jpg)
 
-## Create and assign a Windows AutoPilot deployment profile
+## Create and assign a Windows Autopilot deployment profile
 
 Navigate to [Windows enrollment in Microsoft Intune](https://portal.azure.com/#blade/Microsoft_Intune_Enrollment/OverviewBlade/windowsEnrollment).
 
@@ -170,13 +170,13 @@ Make sure to sync the device you've just registered, by clicking on **Devices** 
 
 ![Microsoft Intune sync Windows devices](images/autopilot-intune-sync.jpg)
 
-### Create a Windows AutoPilot deployment profile
+### Create a Windows Autopilot deployment profile
 
 Click on **Deployment profiles** under **Windows Autopilot Deployment Program (Preview)** and select **Create profile**.
 
 ![Microsoft Intune create deployment profile](images/autopilot-intune-profile-add.jpg)
 
-In the **Create profile** blade, set the name to **AutoPilot Intune Demo**, click on **Out-of-box experience (OOBE)** and configure the following:
+In the **Create profile** blade, set the name to **Autopilot Intune Demo**, click on **Out-of-box experience (OOBE)** and configure the following:
 | Setting name | Value |
 |---|---|
 |Privacy Settings|Hide|
@@ -187,15 +187,15 @@ Click on **Save** and **Create**.
 
 ![Create a new deployment profile in Microsoft Intune](images/autopilot-intune-profile-configure.jpg)
 
-### Assign a Windows AutoPilot deployment profile
+### Assign a Windows Autopilot deployment profile
 
-With the deployment profile created, go back to **Devices** under **Windows Autopilot Deployment Program (Preview)** and select your Virtual Machine. Click on **Assign profile** and in the **Assign Profile** blade select **AutoPilot Intune Demo** under the **AutoPilot profile**. Click on **Assign**.
+With the deployment profile created, go back to **Devices** under **Windows Autopilot Deployment Program (Preview)** and select your Virtual Machine. Click on **Assign profile** and in the **Assign Profile** blade select **Autopilot Intune Demo** under the **Autopilot profile**. Click on **Assign**.
 
-![Assign AutoPilot Profile in Microsoft Intune](images/autopilot-intune-profile-assign.jpg)
+![Assign Autopilot Profile in Microsoft Intune](images/autopilot-intune-profile-assign.jpg)
 
 Wait a few minutes for all changes to apply.
 
-## See Windows AutoPilot in action
+## See Windows Autopilot in action
 
 By now, your Virtual Machine should be back to OOBE. Make sure to wait at least 30 minutes from the time you've [configured company branding](#configure-company-branding)
 , otherwise those changes might not show up.
@@ -204,6 +204,6 @@ Once you select a language and a keyboard layout, your company branded sign-in s
 
 ![OOBE sign-in page](images/autopilot-oobe.jpg)
 
-Windows AutoPilot will now take over to automatically join your Virtual Machine into Azure Active Directory and enroll it to Microsoft Intune. Use the checkpoints you've created to go through this process again with different settings.
+Windows Autopilot will now take over to automatically join your Virtual Machine into Azure Active Directory and enroll it to Microsoft Intune. Use the checkpoints you've created to go through this process again with different settings.
 
 Missing something in this topic? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=windows-10-autopilot-demo-vm.md). 
