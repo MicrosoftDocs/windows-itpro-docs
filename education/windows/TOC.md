@@ -20,6 +20,7 @@
 ## [Test Windows 10 S on existing Windows 10 education devices](test-windows10s-for-edu.md)
 ## [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)
 ## [Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)
-## [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md)
+## [Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode](s-mode-switch-to-edu.md)
+## [Switch to Windows 10 Pro Education from Windows 10 Pro](switch-to-pro-education.md)
 ## [Chromebook migration guide](chromebook-migration-guide.md)
 ## [Change history for Windows 10 for Education](change-history-edu.md)
