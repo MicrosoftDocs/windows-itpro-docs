@@ -18,6 +18,7 @@ ms.date: 04/24/2018
 
 - Windows Server 2012 R2
 - Windows Server 2016
+- Windows Server 2016, version 1803
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
@@ -29,6 +30,7 @@ Windows Defender ATP extends support to also include the Windows Server operatin
 Windows Defender ATP supports the onboarding of the following servers:
 - Windows Server 2012 R2
 - Windows Server 2016
+- Windows Server 2016, version 1803
 
 ## Onboard Windows Server 2012 R2 and Windows Server 2016
 
@@ -79,6 +81,35 @@ Once completed, you should see onboarded servers in the portal within an hour.
 |    winatp-gw-eus.microsoft.com    |    443    |
 |    winatp-gw-neu.microsoft.com    |    443    |
 |    winatp-gw-weu.microsoft.com    |    443    |
+
+## Onboard Windows Server 2012 R2 and Windows Server 2016
+
+You’ll be able to onboard in the same method available for Windows 10 client machines. For more information, see  [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md). Support for Windows Server, version 1803 provides deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well. 
+
+1.	Install the latest Windows Server Insider build on a machine. For more information, see [Windows Server Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewserver).
+
+2. Configure Windows Defender ATP onboarding settings on the server. For more information, see [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md). 
+
+3.	If you’re running a third party antimalware solution, you'll need to apply the following Windows Defender AV passive mode settings and verify it was configured correctly:
+
+    a. Set the following registry entry:
+       - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
+       - Name: ForceDefenderPassiveMode
+       - Value: 1
+
+    b. Run the following PowerShell command to verify that the passive mode was configured:
+
+       ```Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}```
+
+    c. Confirm  that a recent event containing the passive mode event is found:
+       
+       ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
+
+4. Run the following command to check if Windows Defender AV is installed:
+
+   ```sc query Windefend```
+
+    If the result is ‘The specified service does not exist as an installed service’, then you'll need to install Windows Defender AV. For more information, see [Windows Defender Antivirus in Windows 10](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
 
 ## Offboard servers 
 You have two options to offboard servers from the service:
