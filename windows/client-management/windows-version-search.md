@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: MikeBlodge
 ms.author: MikeBlodge, Kaushik Ainapure
-ms.date: 04/20/2018
+ms.date: 04/30/2018
 ---
 
 # What version of Windows am I running?
