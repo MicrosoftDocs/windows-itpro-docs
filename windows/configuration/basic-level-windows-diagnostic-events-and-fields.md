@@ -320,7 +320,6 @@ This event sends blocking data about any compatibility blocking entries hit on t
 The following fields are available:
 
 - **AppraiserVersion**  The version of the appraiser file generating the events.
-- **SdbEntries**  Deprecated in RS3. An array of fields indicating the SDB entries that apply to this file.
 
 
 ### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoBlockRemove
@@ -348,7 +347,6 @@ This event sends compatibility database information about non-blocking compatibi
 The following fields are available:
 
 - **AppraiserVersion**  The version of the appraiser file generating the events.
-- **SdbEntries**  Deprecated in RS3. An array of fields indicating the SDB entries that apply to this file.
 
 
 ### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoPassiveRemove
@@ -376,7 +374,6 @@ This event sends compatibility database information about entries requiring rein
 The following fields are available:
 
 - **AppraiserVersion**  The version of the appraiser file generating the events.
-- **SdbEntries**  Deprecated in RS3. An array of fields indicating the SDB entries that apply to this file.
 
 
 ### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoPostUpgradeRemove
@@ -396,21 +393,6 @@ The following fields are available:
 
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 
-
-### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileAdd
-
-Deprecated in RS3. This event sends compatibility information about a file to help keep Windows up-to-date.
-
-The following fields are available:
-
-- **AppraiserVersion**  The version of the appraiser file that is generating the events.
-- **AvDisplayName**  If it is an anti-virus app, this is its display name.
-- **CompatModelIndex**  The compatibility prediction for this file.
-- **HasCitData**  Is the file present in CIT data?
-- **HasUpgradeExe**  Does the anti-virus app have an upgrade.exe file?
-- **IsAv**  Is the file an anti-virus reporting EXE?
-- **ResolveAttempted**  This will always be an empty string when sending telemetry.
-- **SdbEntries**  An array of fields that indicates the SDB entries that apply to this file.
 
 
 ### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileRemove
@@ -471,7 +453,6 @@ This event sends compatibility database data about driver packages to help keep 
 The following fields are available:
 
 - **AppraiserVersion**  The version of the appraiser file generating the events.
-- **SdbEntries**  Deprecated in RS3. An array of fields indicating the SDB entries that apply to this driver package.
 
 
 ### Microsoft.Windows.Appraiser.General.DatasourceDriverPackageRemove
@@ -2429,10 +2410,6 @@ The following fields are available:
 - **CV**  Correlation vector
 
 
-## DxgKernelTelemetry events
-
-## Fault Reporting events
-
 ## Feature update events
 
 ### Microsoft.Windows.Upgrade.Uninstall.UninstallFailed
@@ -2455,9 +2432,6 @@ Indicates that the uninstall was properly configured and that a system reboot wa
 
 This event sends basic metadata about the starting point of uninstalling a feature update which helps us ensure customers can safely revert to a well-known state if the update caused any problems. 
 
-
-
-## Hang Reporting events
 
 ## Inventory events
 
@@ -3446,8 +3420,6 @@ The following fields are available:
 
 - **PFamN**  The name of the product that is requested for update.
 
-
-## OneDrive events
 
 ## Privacy consent logging events
 
