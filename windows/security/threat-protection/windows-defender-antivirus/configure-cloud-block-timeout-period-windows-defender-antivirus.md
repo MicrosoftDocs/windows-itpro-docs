@@ -53,9 +53,7 @@ You can use Group Policy to specify an extended timeout for cloud checks.
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
-2.  In the **Group Policy Management Editor** go to **Computer configuration**.
-
-3.  Click **Administrative templates**.
+2.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
 4.  Expand the tree to **Windows components > Windows Defender Antivirus > MpEngine**
     

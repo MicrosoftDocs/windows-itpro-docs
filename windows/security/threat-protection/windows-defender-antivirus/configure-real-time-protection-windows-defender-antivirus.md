@@ -50,9 +50,7 @@ To configure these settings:
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
-
-4.  Click **Policies** then **Administrative templates**.
+3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
 5.  Expand the tree to **Windows components > Windows Defender Antivirus** and then the **Location** specified in the table below.
 
@@ -87,9 +85,7 @@ The main real-time protection capability is enabled by default, but you can disa
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
-
-4.  Click **Administrative templates**.
+3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
 5.  Expand the tree to **Windows components > Windows Defender Antivirus > Real-time protection**.
 

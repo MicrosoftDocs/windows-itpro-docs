@@ -1,7 +1,7 @@
 ---
 title: Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode
 description: Overview of Windows 10 Pro Education in S mode, switching options, and system requirements
-keywords: Windows 10 Pro Education S, S mode, system requirements, Overview, Windows 10 Pro in S mode, Education, EDU
+keywords: Windows 10 Pro Education in S mode, S mode, system requirements, Overview, Windows 10 Pro in S mode, Education, EDU
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.prod: w10
@@ -11,7 +11,7 @@ ms.date: 04/30/2018
 author: Mikeblodge
 ---
 
-# Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode
+# Windows 10 Pro in S mode for Education
 
 S mode is an enhanced security mode of Windows 10 – streamlined for security and superior performance. With Windows 10 in S mode, everyone can download and install Microsoft-verified apps from the Microsoft Store for Education – this keep devices running fast and secure day in and day out. 
 
@@ -39,7 +39,7 @@ S mode is an enhanced security mode of Windows 10 – streamlined for security a
 |Device Guard | | | | X |
 
 ###  Windows 10 in S mode is safe, secure, and fast.  
-However, in some limited scenarios, you might need to switch to Windows 10 Education. You can switch devices running Windows 10, version 1709 or later. Use the following information to switch to Windows 10 Pro through the Microsoft Store or by using Autopilot.
+However, in some limited scenarios, you might need to switch to Windows 10 Education. You can switch devices running Windows 10, version 1709 or later. Use the following information to switch to Windows 10 Pro through the Microsoft Store.
 
 > [!IMPORTANT]
 > While it’s free to switch to Windows 10 Pro, it’s not reversible. The only way to rollback this kind of switch is through a BMR factory reset. 
@@ -47,19 +47,15 @@ However, in some limited scenarios, you might need to switch to Windows 10 Educa
 ## How to switch
 
 ### Devices running Windows 10, version 1803
-The way that you switch a Windows 10, version 1803 device from S mode to EDU is different from Windows 10, version 1709. Instead of applying a MAK key (which only switches editions), you need to switch the device using Intune/MDM either at OOBE (Windows Autopilot) or while managing your devices Post OOBE.”
 
-1.	Select which devices to switch out of S mode.
-2.	Select the S mode switch option in Intune/MDM.
-
-> [!NOTE]
-> To rollback to Windows 10 Pro in S mode, a BMR factory reset must be performed.
-
-### Switch using the Microsoft Store for Education
+**Switch using the Microsoft Store for Education**<BR>
 There are two switch options available using the Microsoft Store for Education:
 
 Tenant-wide Windows 10 Pro in S mode > Pro EDU in S mode <BR>
 Tenant-wide Windows 10 Pro > Pro EDU
+
+> [!NOTE]
+> To rollback to Windows 10 Pro in S mode, a BMR factory reset must be performed.
 
 ### Devices running Windows 10, version 1709
 
