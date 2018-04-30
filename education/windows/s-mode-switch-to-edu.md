@@ -1,7 +1,7 @@
 ---
 title: Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode
 description: Overview of Windows 10 Pro Education in S mode, switching options, and system requirements
-keywords: Windows 10 Pro Education S, S mode, system requirements, Overview, Windows 10 Pro in S mode, Education, EDU
+keywords: Windows 10 Pro Education in S mode, S mode, system requirements, Overview, Windows 10 Pro in S mode, Education, EDU
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.prod: w10
