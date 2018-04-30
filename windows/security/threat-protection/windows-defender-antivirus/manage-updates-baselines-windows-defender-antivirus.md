@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 12/12/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 04/30/2018
 ---
 
 # Manage Windows Defender Antivirus updates and apply baselines
