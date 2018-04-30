@@ -167,7 +167,13 @@ For more information, see [Microsoft browser extension policy](https://docs.micr
 ## Allow web content on New Tab page
 >*Supported versions: Windows 10*
 
-This policy setting lets you configure what appears when a New Tab page is opened in Microsoft Edge. By default, this setting is disabled or not configured, which means you cannot customize their New Tab page. If enabled, you can customize their New Tab page. 
+This policy setting lets you configure what appears when Microsoft Edge opens a new tab. By default, Microsoft Edge opens the New Tab page. 
+
+If you enable this setting, Microsoft Edge opens a new tab with the New Tab page.  
+
+If you disable this setting, Microsoft Edge opens a new tab with a blank page. If you use this setting, employees can't change it.  
+
+If you don't configure this setting, employees can choose how new tabs appears
 
 
 ## Always Enable book library
