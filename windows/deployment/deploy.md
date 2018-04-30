@@ -17,7 +17,7 @@ Windows 10 upgrade options are discussed and information is provided about plann
 
 |Topic |Description |
 |------|------------|
-|[Overview of Windows AutoPilot](windows-autopilot/windows-10-autopilot.md) |This topic provides an overview of Windows AutoPilot deployment, a new zero-touch method for deploying Windows 10 in the enterprise. |
+|[Overview of Windows Autopilot](windows-autopilot/windows-10-autopilot.md) |This topic provides an overview of Windows Autopilot deployment, a new zero-touch method for deploying Windows 10 in the enterprise. |
 |[Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md) |This topic provides information about support for upgrading directly to Windows 10 from a previous operating system. |
 |[Windows 10 edition upgrade](upgrade/windows-10-edition-upgrades.md) |This topic provides information about support for upgrading from one edition of Windows 10 to another. |
 |[Windows 10 volume license media](windows-10-media.md) |This topic provides information about updates to volume licensing media in the current version of Windows 10. |

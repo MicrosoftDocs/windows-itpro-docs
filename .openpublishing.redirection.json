@@ -5161,7 +5161,7 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/configuration/basic-level-windows-diagnostic-events-and-fields-1709.md",
+"source_path": "windows/configuration/basic-level-windows-diagnostic-events-and-fields-1803.md",
 "redirect_url": "/windows/configuration/basic-level-windows-diagnostic-events-and-fields",
 "redirect_document_id": true
 },
@@ -6644,6 +6644,11 @@
 "source_path": "windows/configure/provisioning-script-to-install-app.md",
 "redirect_url": "/windows/configuration/provisioning-packages/provisioning-script-to-install-app",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/multi-app-kiosk-xml.md",
+"redirect_url": "windows/configuration/kiosk-xml.md",
+"redirect_document_id": true     
 },
 {
 "source_path": "windows/configure/provisioning-uninstall-package.md",

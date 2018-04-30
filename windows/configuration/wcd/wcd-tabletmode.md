@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 09/06/2017
+ms.date: 04/30/2018
 ---
 
 # TabletMode (Windows Configuration Designer reference)
@@ -18,7 +18,7 @@ Use TabletMode to configure settings related to tablet mode.
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All settings | X | X | X | X |  X |
+| All settings | X | X | X |  |  X |
 
 ## ConvertibleSlateModePromptPreference
 
