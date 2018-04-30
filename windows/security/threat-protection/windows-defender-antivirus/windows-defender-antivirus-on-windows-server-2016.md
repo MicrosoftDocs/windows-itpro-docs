@@ -9,11 +9,10 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 10/12/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 04/30/2018
 ---
-
 
 # Windows Defender Antivirus on Windows Server 2016
 
@@ -26,7 +25,6 @@ ms.date: 10/12/2017
 
 - Enterprise security administrators
 - Network administrators
-
 
 **Manageability available with**
 

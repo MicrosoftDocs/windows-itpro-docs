@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 11/20/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 4/30/2018
 ---
 
 # Windows Defender Antivirus in Windows 10 and Windows Server 2016
