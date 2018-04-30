@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/04/2018
+ms.date: 04/30/2018
 ---
 
 # Configure and validate network connections for Windows Defender Antivirus
@@ -19,7 +19,7 @@ ms.date: 04/04/2018
 
 **Applies to:**
 
-- Windows 10 (some instructions are only applicable for Windows 10, version 1703)
+- Windows 10 (some instructions are only applicable for Windows 10, version 1703 or later)
 
 **Audience**
 
