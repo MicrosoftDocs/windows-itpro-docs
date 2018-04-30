@@ -36,10 +36,12 @@ The Windows Defender Security Center app brings together common Windows security
 
 In Windows 10, version 1709 and later, the app also shows information from third-party antivirus and firewall apps.
 
+In Windows 10, version 1803, the app has two new areas, **Account protection** and **Device security**.
+
 >[!NOTE]
 >The Windows Defender Security Center app is a client interface on Windows 10, version 1703 and later. It is not the Windows Defender Security Center web portal console that is used to review and manage [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
 
-This library describes the Windows defender Security Center app, and provides information on configuring certain features, inlcuding:
+This library describes the Windows defender Security Center app, and provides information on configuring certain features, including:
 
 <a id="customize-notifications-from-the-windows-defender-security-center"></a>
 - [Showing and customizing contact information on the app and in notifications](wdsc-customize-contact-information.md)
@@ -74,6 +76,7 @@ You can find more information about each section, including options for configur
 
     ![Screen shot of the Start menu showing the results of a search for the Windows Defender Security Center app, the first option with a large shield symbol is selected](images/security-center-start-menu.png)
 
+	
 
 > [!NOTE]
 > Settings configured with management tools, such as Group Policy, Microsoft Intune, or System Center Configuration Manager, will generally take precedence over the settings in the Windows Defender Security Center. See the topics for each of the sections for links to configuring the associated features or products.
