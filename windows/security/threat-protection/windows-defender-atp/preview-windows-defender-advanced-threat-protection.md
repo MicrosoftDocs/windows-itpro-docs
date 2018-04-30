@@ -47,6 +47,7 @@ The following features are included in the preview release:
 Windows Defender ATP supports the onboarding of the following servers:
     - Windows Server 2012 R2
     - Windows Server 2016
+    - Windows Server, version 1803
 
 - [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)<br>
 Windows Defender ATP supports the use of Power BI data connectors to enable you to connect and access Windows Defender ATP data using Microsoft Graph.

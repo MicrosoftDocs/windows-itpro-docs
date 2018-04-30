@@ -9,7 +9,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 title: Group Policy and Mobile Device Management settings for Microsoft Edge (Microsoft Edge for IT Pros)
 ms.localizationpriority: high
-ms.date: 4/20/2018 #Previous release date 09/13/2017
+ms.date: 4/30/2018 #Previsou release date 09/13/2017
 ---
 
 # Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge
