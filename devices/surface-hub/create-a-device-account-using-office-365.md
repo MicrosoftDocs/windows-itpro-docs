@@ -177,8 +177,8 @@ Now that you're connected to the online services, you can finish setting up the 
 4.  Various Exchange properties can be set on the device account to improve the meeting experience. You can see which properties need to be set in the [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md) section.
 
     ``` syntax
-    Set-CalendarProcessing -Identity $acctUpn -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts   $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
-    Set-CalendarProcessing -Identity $acctUpn -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
+    Set-CalendarProcessing -Identity $strEmail -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts   $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
+    Set-CalendarProcessing -Identity $strEmail -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
     ```
 
     ![Image showing PowerShell cmdlet.](images/setupdeviceaccto365-26.png)
@@ -211,7 +211,7 @@ In order to enable Skype for Business, your environment will need to meet the fo
 2.  To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
 
     ```PowerShell
-    Enable-CsMeetingRoom -Identity $rm -RegistrarPool  
+    Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool  
     "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
     ```
 
@@ -325,8 +325,8 @@ Now that you're connected to the online services, you can finish setting up the 
 4.  Various Exchange properties can be set on the device account to improve the meeting experience. You can see which properties need to be set in the [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md) section.
 
     ``` syntax
-    Set-CalendarProcessing -Identity $acctUpn -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts   $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
-    Set-CalendarProcessing -Identity $acctUpn -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
+    Set-CalendarProcessing -Identity $strEmail -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts   $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
+    Set-CalendarProcessing -Identity $strEmail -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
     ```
 
 5.  Now we have to set some properties in AD. To do that, you need the alias of the account (this is the part of the UPN that becomes before the “@”).
@@ -369,7 +369,7 @@ In order to enable Skype for Business, your environment will need to meet the fo
 2.  To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
 
     ```PowerShell
-    Enable-CsMeetingRoom -Identity $rm -RegistrarPool  
+    Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool  
     "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
     ```
 
