@@ -23,6 +23,7 @@ With Windows 10 version 1703 (also known as the Creator’s Update), both Window
 Organizations that have an Enterprise agreement can also benefit from the new service, using traditional Active Directory-joined devices. In this scenario, the Active Directory user that signs in on their device must be synchronized with Azure AD using [Azure AD Connect Sync](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-whatis).
 
 See the following topics in this article:
+- [Inherited Activation](#inherited-activation): Description of a new feature available in Windows 10, version 1803 and later.
 - [The evolution of Windows 10 deployment](#the-evolution-of-deployment): A short history of Windows deployment.
 - [Requirements](#requirements): Prerequisites to use the Windows 10 Enterprise subscription model.
 - [Benefits](#benefits): Advantages of Windows 10 Enterprise + subscription-based licensing.
@@ -30,6 +31,14 @@ See the following topics in this article:
 - [Virtual Desktop Access (VDA)](#virtual-desktop-access-vda): Enable Windows 10 Subscription Activation for VMs in the cloud.
 
 For information on how to deploy Windows 10 Enterprise licenses, see [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md).
+
+## Inherited Activation
+
+Inherited Activation is a new feature available in Windows 10, version 1803 that allows Windows 10 virtual machines to inherit activation state from their Windows 10 host. 
+
+When a user with Windows 10 E3 or E5 license assigned creates a new Windows 10 virtual machine (VM) using a Windows 10 local host, the VM inherits the activation state from a host machine independent of whether user signs on with a local account or using an Azure Active Directory (AAD) account on a VM. 
+
+To support Inherited Activation, both the host computer and the VM must be running Windows 10, version 1803 or later.
 
 ## The evolution of deployment
 

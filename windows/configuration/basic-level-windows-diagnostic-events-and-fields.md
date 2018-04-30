@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
-ms.date: 4/10/2018
+ms.date: 4/30/2018
 ---
 
 
@@ -320,7 +320,6 @@ This event sends blocking data about any compatibility blocking entries hit on t
 The following fields are available:
 
 - **AppraiserVersion**  The version of the appraiser file generating the events.
-- **SdbEntries**  Deprecated in RS3. An array of fields indicating the SDB entries that apply to this file.
 
 
 ### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoBlockRemove
@@ -348,7 +347,6 @@ This event sends compatibility database information about non-blocking compatibi
 The following fields are available:
 
 - **AppraiserVersion**  The version of the appraiser file generating the events.
-- **SdbEntries**  Deprecated in RS3. An array of fields indicating the SDB entries that apply to this file.
 
 
 ### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoPassiveRemove
@@ -376,7 +374,6 @@ This event sends compatibility database information about entries requiring rein
 The following fields are available:
 
 - **AppraiserVersion**  The version of the appraiser file generating the events.
-- **SdbEntries**  Deprecated in RS3. An array of fields indicating the SDB entries that apply to this file.
 
 
 ### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoPostUpgradeRemove
@@ -396,21 +393,6 @@ The following fields are available:
 
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 
-
-### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileAdd
-
-Deprecated in RS3. This event sends compatibility information about a file to help keep Windows up-to-date.
-
-The following fields are available:
-
-- **AppraiserVersion**  The version of the appraiser file that is generating the events.
-- **AvDisplayName**  If it is an anti-virus app, this is its display name.
-- **CompatModelIndex**  The compatibility prediction for this file.
-- **HasCitData**  Is the file present in CIT data?
-- **HasUpgradeExe**  Does the anti-virus app have an upgrade.exe file?
-- **IsAv**  Is the file an anti-virus reporting EXE?
-- **ResolveAttempted**  This will always be an empty string when sending telemetry.
-- **SdbEntries**  An array of fields that indicates the SDB entries that apply to this file.
 
 
 ### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileRemove
@@ -471,7 +453,6 @@ This event sends compatibility database data about driver packages to help keep 
 The following fields are available:
 
 - **AppraiserVersion**  The version of the appraiser file generating the events.
-- **SdbEntries**  Deprecated in RS3. An array of fields indicating the SDB entries that apply to this driver package.
 
 
 ### Microsoft.Windows.Appraiser.General.DatasourceDriverPackageRemove
@@ -1799,7 +1780,7 @@ Fired by UTC as a heartbeat signal.
 The following fields are available:
 
 - **AgentConnectionErrorsCount**  Number of non-timeout errors associated with the host/agent channel.
-- **CensusExitCode**  Last exit code of�Census task.
+- **CensusExitCode**  Last exit code of Census task.
 - **CensusStartTime**  Time of last Census run.
 - **CensusTaskEnabled**  True if Census is enabled, false otherwise.
 - **CompressedBytesUploaded**  Number of compressed bytes uploaded.
@@ -1826,14 +1807,14 @@ The following fields are available:
 - **LastAgentConnectionError**  Last non-timeout error encountered in the host/agent channel.
 - **LastEventSizeOffender**  Event name of last event which exceeded max event size.
 - **LastInvalidHttpCode**  Last invalid HTTP code received from Vortex.
-- **MaxActiveAgentConnectionCount**  Maximum number of active agents during this�heartbeat timeframe.
+- **MaxActiveAgentConnectionCount**  Maximum number of active agents during this heartbeat timeframe.
 - **MaxInUseScenarioCounter**  Soft maximum number of scenarios loaded by UTC.
 - **PreviousHeartBeatTime**  Time of last heartbeat event (allows chaining of events).
 - **SettingsHttpAttempts**  Number of attempts to contact OneSettings service.
-- **SettingsHttpFailures**  Number of failures from contacting�OneSettings service.
+- **SettingsHttpFailures**  Number of failures from contacting OneSettings service.
 - **ThrottledDroppedCount**  Number of events dropped due to throttling of noisy providers.
 - **UploaderDroppedCount**  Number of events dropped at the uploader layer of telemetry client.
-- **VortexFailuresTimeout**  Number of time out failures�received from Vortex.
+- **VortexFailuresTimeout**  Number of time out failures received from Vortex.
 - **VortexHttpAttempts**  Number of attempts to contact Vortex.
 - **VortexHttpFailures4xx**  Number of 400-499 error codes received from Vortex.
 - **VortexHttpFailures5xx**  Number of 500-599 error codes received from Vortex.
@@ -2429,10 +2410,6 @@ The following fields are available:
 - **CV**  Correlation vector
 
 
-## DxgKernelTelemetry events
-
-## Fault Reporting events
-
 ## Feature update events
 
 ### Microsoft.Windows.Upgrade.Uninstall.UninstallFailed
@@ -2455,9 +2432,6 @@ Indicates that the uninstall was properly configured and that a system reboot wa
 
 This event sends basic metadata about the starting point of uninstalling a feature update which helps us ensure customers can safely revert to a well-known state if the update caused any problems. 
 
-
-
-## Hang Reporting events
 
 ## Inventory events
 
@@ -2854,7 +2828,7 @@ The following fields are available:
 - **OIeNoAxInstall**  Flag indicating which Microsoft Office products have this setting enabled. When a webpage attempts to load or install an ActiveX control that isn't already installed, the FEATURE_RESTRICT_ACTIVEXINSTALL feature blocks the request. When a webpage tries to load or install an ActiveX control that isn't already installed, the FEATURE_RESTRICT_ACTIVEXINSTALL feature blocks the request
 - **OIeNoDownload**  Flag indicating which Microsoft Office products have this setting enabled. The FEATURE_RESTRICT_FILEDOWNLOAD feature blocks file download requests that navigate to a resource, that display a file download dialog box, or that are not initiated explicitly by a user action (for example, a mouse click or key press). Only applies to Windows Internet Explorer 6 for Windows XP Service Pack 2 (SP2)
 - **OIeObjectCaching**  Flag indicating which Microsoft Office products have this setting enabled. When enabled, the FEATURE_OBJECT_CACHING feature prevents webpages from accessing or instantiating ActiveX controls cached from different domains or security contexts
-- **OIePasswordDisable**  Flag indicating which Microsoft Office products have this setting enabled. After Windows Internet Explorer 6 for Windows XP Service Pack 2 (SP2), Internet Explorer no longer allows usernames and passwords to be specified in URLs that use the HTTP or HTTP protocols. URLs using other protocols, such as FTP, still allow usernames and passwords
+- **OIePasswordDisable**  Flag indicating which Microsoft Office products have this setting enabled. After Windows Internet Explorer 6 for Windows XP Service Pack 2 (SP2), Internet Explorer no longer allows usernames and passwords to be specified in URLs that use the HTTP or HTTPS protocols. URLs using other protocols, such as FTP, still allow usernames and passwords
 - **OIeSafeBind**  Flag indicating which Microsoft Office products have this setting enabled.  The FEATURE_SAFE_BINDTOOBJECT feature performs additional safety checks when calling MonikerBindToObject to create and initialize Microsoft ActiveX controls. Specifically, prevent the control from being created if COMPAT_EVIL_DONT_LOAD is in the registry for the control
 - **OIeSecurityBand**  Flag indicating which Microsoft Office products have this setting enabled. The FEATURE_SECURITYBAND feature controls the display of the Internet Explorer Information bar. When enabled, the Information bar appears when file download or code installation is restricted
 - **OIeUncSaveCheck**  Flag indicating which Microsoft Office products have this setting enabled. The FEATURE_UNC_SAVEDFILECHECK feature enables the Mark of the Web (MOTW) for local files loaded from network locations that have been shared by using the Universal Naming Convention (UNC)
@@ -3447,8 +3421,6 @@ The following fields are available:
 - **PFamN**  The name of the product that is requested for update.
 
 
-## OneDrive events
-
 ## Privacy consent logging events
 
 ### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted
@@ -3984,7 +3956,7 @@ This event collects information when express could not be used and we fall back 
 
 The following fields are available:
 
-- **FlightId**  The error code returned for the current install phase. 
+- **FlightId**  Unique ID for each flight. 
 - **ObjectId**  Unique value for each Update Agent mode. 
 - **PackageCount**  Number of packages that feel back to canonical. 
 - **PackageList**  PackageIds which fell back to canonical. 
@@ -4006,7 +3978,7 @@ The following fields are available:
 - **ObjectId**  Unique value for each Update Agent mode. 
 - **RelatedCV**  Correlation vector value generated from the latest USO scan.
 - **Result**  Outcome of the install phase of the update. 
-- **ScenarioId**  Unique value for each update attempt.  
+- **ScenarioId**  Indicates the update scenario.  
 - **SessionData**  String containing instructions to update agent for processing FODs and DUICs (Null for other scenarios).  
 - **SessionId**  Unique value for each update attempt.  
 - **UpdateId**  Unique ID for each update. 
@@ -4072,7 +4044,7 @@ The following fields are available:
 - **PostRebootResult**  Indicates the Hresult
 - **RelatedCV**  Correlation vector value generated from the latest USO scan
 - **ScenarioId**  The scenario ID. Example: MobileUpdate, DesktopLanguagePack, DesktopFeatureOnDemand, or DesktopDriverUpdate
-- **SessionId**  Unique value for each Update Agent mode attempt
+- **SessionId**  Unique value for each update attempt.
 - **UpdateId**  Unique ID for each update
 
 
@@ -4574,33 +4546,33 @@ The following fields are available:
 
 - **background**  If the download is happening in the background
 - **bytesRequested**  Number of bytes requested for download.
-- **cdnUrl**  Number of bytes requested for download
-- **costFlags**  Url of the source CDN
-- **deviceProfile**  Network cost flags
-- **diceRoll**  Identifies the usage or form factor (Desktop, Xbox, VM, etc)
-- **doClientVersion**  Random number used for determining if a client will use peering
-- **doErrorCode**  Version of the Delivery Optimization client
-- **downloadMode**  Delivery Optimization error code returned
-- **downloadModeSrc**  DownloadMode used (CdnOnly = 0, Lan = 1, Group = 2, Internet = 3, Simple = 99, Bypass = 100)
-- **errorCode**  Source of the DownloadMode setting (KvsProvider: 0, GeoProvider: 1, GeoVerProvider: 2, CpProvider: 3, DiscoveryProvider: 4, RegistryProvider: 5, GroupPolicyProvider: 6, MdmProvider: 7, SettingsProvider: 8, InvalidProviderType: 9)
-- **experimentId**  Error code returned
-- **fileID**  Used to correlate client/services calls that are part of the same test during A/B testing
-- **filePath**  ID of the File being downloaded
-- **fileSize**  Path to where the downloaded file will be written
-- **fileSizeCaller**  Total filesize of the file that was downloaded
-- **groupID**  Value for total file size provided by our caller
-- **isVpn**  ID for the group
-- **jobID**  If the machine is connected to a Virtual Private Network
-- **peerID**  Minimum filesize policy set for the device to allow Peering with Delivery Optimization
+- **cdnUrl**  Url of the source CDN
+- **costFlags**  Network cost flags
+- **deviceProfile**  Identifies the usage or form factor (Desktop, Xbox, VM, etc)
+- **diceRoll**  Random number used for determining if a client will use peering
+- **doClientVersion**  Version of the Delivery Optimization client
+- **doErrorCode**  Delivery Optimization error code returned
+- **downloadMode**  DownloadMode used (CdnOnly = 0, Lan = 1, Group = 2, Internet = 3, Simple = 99, Bypass = 100)
+- **downloadModeSrc**  Source of the DownloadMode setting (KvsProvider: 0, GeoProvider: 1, GeoVerProvider: 2, CpProvider: 3, DiscoveryProvider: 4, RegistryProvider: 5, GroupPolicyProvider: 6, MdmProvider: 7, SettingsProvider: 8, InvalidProviderType: 9)
+- **errorCode**  Error code returned
+- **experimentId**  Used to correlate client/services calls that are part of the same test during A/B testing
+- **fileID**  ID of the File being downloaded
+- **filePath**  Path to where the downloaded file will be written
+- **fileSize**  Total filesize of the file that was downloaded
+- **fileSizeCaller**  Value for total file size provided by our caller
+- **groupID**  ID for the group
+- **isVpn** If the machine is connected to a Virtual Private Network 
+- **jobID**  Identifier for the Windows Update Job
+- **peerID**  ID for this Delivery Optimization client
 - **predefinedCallerName**  Name of the API caller
-- **sessionID**  Name of the API Caller
-- **setConfigs**  ID of the Update being downloaded
+- **sessionID**  ID for the file download session
+- **setConfigs**  ID of the update being downloaded
 - **updateID**  ID for the file download session
-- **usedMemoryStream**  ID of the Update being downloaded
+- **usedMemoryStream**  If the download is using memory streaming in App downloads
 - **callerName**  Name of the API Caller
-- **minDiskSizeGB**  Identifier for the Windows Update Job
-- **minDiskSizePolicyEnforced**  The minimum disk size policy set for the device to allow Peering with Delivery Optimization
-- **minFileSizePolicy**  If there is an enforced mininum disk size requirement for peering
+- **minDiskSizeGB**  The minimum disk size policy set for the device to allow Peering with Delivery Optimization
+- **minDiskSizePolicyEnforced**  If there is an enforced mininum disk size requirement for peering
+- **minFileSizePolicy**  The minimum file size policy set for the device to allow Peering with Delivery Optimization
 - **scenarioID**  ID for the Scenario
 - **isEncrypted**  Whether the download is encrypted
 
