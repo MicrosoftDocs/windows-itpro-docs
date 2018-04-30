@@ -12,15 +12,22 @@ ms.date: 10/31/2017
 # Change history for threat protection
 This topic lists new and updated topics in the [Threat protection](index.md) documentation.
 
+## February 2018
+
+New or changed topic | Description
+---------------------|------------
+[Security Compliance Toolkit](security-compliance-toolkit-10.md) | Added Office 2016 Security Baseline.
+[Audit security group management](auditing/audit-security-group-management.md)| Added recommendation to audit Failure events.
+
 ## January 2018
 |New or changed topic |Description |
 |---------------------|------------|
-|[Windows Defender Application Control](windows-defender-application-control.md)|New topic. WDAC replaces cofigurable code integrity policies. |
+|[Windows Defender Application Control](windows-defender-application-control/windows-defender-application-control.md)|New topic. WDAC replaces cofigurable code integrity policies. |
 
 ## November 2017
 |New or changed topic |Description |
 |---------------------|------------|
-| [How to enable virtualization-based protection of code integrity](enable-virtualization-based-protection-of-code-integrity.md)| New. Explains how to enable HVCI.  |
+| [How to enable virtualization-based protection of code integrity](windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity.md)| New. Explains how to enable HVCI.  |
 
 
 ## October 2017

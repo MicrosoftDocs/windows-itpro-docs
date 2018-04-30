@@ -11,8 +11,9 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 04/11/2018
 ---
+
 
 # Windows Defender Antivirus on Windows Server 2016
 
@@ -25,6 +26,7 @@ ms.date: 04/30/2018
 
 - Enterprise security administrators
 - Network administrators
+
 
 **Manageability available with**
 
@@ -56,6 +58,9 @@ This topic includes the following instructions for setting up and running Window
 <a name="BKMK_UsingDef"></a>
 ## Enable or disable the interface on Windows Server 2016
 By default, Windows Defender AV is installed and functional on Windows Server 2016. The user interface is installed by default on some SKUs, but is not required.
+
+>[!NOTE]
+>You can't uninstall the Windows Defender Security Center app, but you can disable the interface with these instructions.
 
 If the interface is not installed, you can add it in the **Add Roles and Features Wizard** at the **Features** step, under **Windows Defender Features** by selecting the **GUI for Windows Defender** option.
 

@@ -314,7 +314,7 @@ Node that can be used to perform signature updates for Windows Defender.
 Supported operations are Get and Execute.
 
 <a href="" id="offlinescan"></a>**OfflineScan**  
-Added in Windows 10, next major update. OfflineScan action starts a Windows Defender offline scan on the computer where you run the command. This command causes the computer reboot and start in Windows Defender offline mode to begin the scan.
+Added in Windows 10, version 1803. OfflineScan action starts a Windows Defender offline scan on the computer where you run the command. This command causes the computer reboot and start in Windows Defender offline mode to begin the scan.
 
 Supported operations are Get and Execute.
 

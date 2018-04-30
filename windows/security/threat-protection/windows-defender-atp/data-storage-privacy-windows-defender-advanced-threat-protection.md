@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 11/14/2017
+ms.date: 03/06/2018
 ---
 
 # Windows Defender ATP data storage and privacy
@@ -27,7 +27,7 @@ This section covers some of the most frequently asked questions regarding privac
 
 ## What data does Windows Defender ATP collect?
 
-Microsoft will collect and store information from your configured endpoints in a database specific to the service for administration, tracking, and reporting purposes.
+Microsoft will collect and store information from your configured machines in a database specific to the service for administration, tracking, and reporting purposes.
 
 Information collected includes file data (such as file names, sizes, and hashes), process data (running processes, hashes), registry data, network connection data (host IPs and ports), and machine details (such as machine identifiers, names, and the operating system version).
 
@@ -40,9 +40,18 @@ Microsoft uses this data to:
 
 Microsoft does not use your data for advertising or for any other purpose other than providing you the service.
 
+## Data protection and encryption
+The Windows Defender ATP service utilizes state of the art data protection technologies which are based on Microsoft Azure infrastructure. 
+
+
+There are various aspects relevant to data protection that our service takes care of. Encryption is one of the most critical and it includes data encryption at rest, encryption in flight, and key management with Key Vault. For more information on other technologies used by the Windows Defender ATP service, see [Azure encryption overview](https://docs.microsoft.com/en-us/azure/security/security-azure-encryption-overview). 
+
+In all scenarios, data is encrypted using 256-bit [AES encyption](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) at the minimum.
+
+
 ## Do I have the flexibility to select where to store my data?
 
-When onboarding the service for the first time, you can choose to store your data in Microsoft Azure datacenters in Europe or in the United States. Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Microsoft will not under any circumstance, transfer the data from the specified geolocation into another geolocation.
+When onboarding the service for the first time, you can choose to store your data in Microsoft Azure datacenters in Europe or in the United States. Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Customer data in de-identified form may also be stored in the central storage and processing systems in the United States.
 
 ## Is my data isolated from other customer data?
 Yes, your data is isolated through access authentication and logical segregation based on customer identifier. Each customer can only access data collected from its own organization and generic data that Microsoft provides.

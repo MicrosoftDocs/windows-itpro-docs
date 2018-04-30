@@ -1,27 +1,26 @@
 ---
 description: If you're having problems with Microsoft Edge, this topic tells how to use the Enterprise Mode site list to automatically open sites using IE11.
 ms.assetid: 89c75f7e-35ca-4ca8-96fa-b3b498b53bE4
-author: eross-msft
+author: shortpatti
+ms.author: pashort
 ms.prod: edge
 ms.mktglfcycl: support
 ms.sitesec: library
 ms.pagetype: appcompat
 title: Use Enterprise Mode to improve compatibility (Microsoft Edge for IT Pros)
 ms.localizationpriority: high
-ms.date: 07/27/2017
+ms.date: 04/15/2018
 ---
 
 # Use Enterprise Mode to improve compatibility
 
-**Applies to:**
-
-- Windows 10
+> Applies to: Windows 10
 
 If you have specific web sites and apps that you know have compatibility problems with Microsoft Edge, you can use the Enterprise Mode site list so that the web sites will automatically open using Internet Explorer 11. Additionally, if you know that your intranet sites aren't going to work properly with Microsoft Edge, you can set all intranet sites to automatically open using IE11.
 
 Using Enterprise Mode means that you can continue to use Microsoft Edge as your default browser, while also ensuring that your apps continue working on IE11.
 
-> **Note**<br>
+>[!NOTE]
 >If you want to use Group Policy to set Internet Explorer as your default browser, you can find the info here, [Set the default browser using Group Policy]( https://go.microsoft.com/fwlink/p/?LinkId=620714).
 
 ## Fix specific websites
@@ -96,8 +95,6 @@ You can add the **Send all intranet traffic over to Internet Explorer** Group Po
 * [Enterprise Mode Site List Manager for Windows 10 download](https://go.microsoft.com/fwlink/?LinkId=746562)
 * [Enterprise Mode for Internet Explorer 11 (IE11)](https://go.microsoft.com/fwlink/p/?linkid=618377)
 * [Set the default browser using Group Policy]( https://go.microsoft.com/fwlink/p/?LinkId=620714)
- 
-
  
 
 

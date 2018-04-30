@@ -1,5 +1,5 @@
 ---
-title: Hybrid Key trust Windows Hello for Business Prerequistes (Windows Hello for Business)
+title: Hybrid Key trust Windows Hello for Business Prerequisites (Windows Hello for Business)
 description: Prerequisites for Hybrid Windows Hello for Business Deployments
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust
 ms.prod: w10
@@ -99,7 +99,7 @@ Hybrid Windows Hello for Business deployments can use Azure’s Multifactor Auth
 > [!div class="checklist"]
 > * Azure MFA Service
 > * Windows Server 2016 AD FS and Azure (optional, if federated)
-> * Windows Server 2016 AD FS and third party MFA Adapter (optiona, if federated)
+> * Windows Server 2016 AD FS and third party MFA Adapter (optional, if federated)
 
 <br>
 

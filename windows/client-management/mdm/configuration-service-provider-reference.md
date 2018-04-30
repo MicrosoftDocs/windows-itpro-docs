@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 02/02/2018
+ms.date: 04/24/2018
 ---
 
 # Configuration service provider reference
@@ -29,6 +29,7 @@ Footnotes:
 - 1 - Added in Windows 10, version 1607
 - 2 - Added in Windows 10, version 1703
 - 3 - Added in Windows 10, version 1709
+- 4 - Added in Windows 10, version 1803
 
 <!--StartCSPs-->
 <hr/>
@@ -36,7 +37,7 @@ Footnotes:
 ## CSP support  
 
 <!--StartCSP-->
-[APPLICATION CSP](application-csp.md)  
+[AccountManagement CSP](accountmanagement-csp.md)  
 
 <!--StartSKU-->
 <table>
@@ -50,13 +51,41 @@ Footnotes:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
+[Accounts CSP](accounts-csp.md)  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -113,6 +142,34 @@ Footnotes:
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
+[APPLICATION CSP](application-csp.md)  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -1128,6 +1185,34 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
+[eUICCs CSP](euiccs-csp.md)  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
 [FileSystem CSP](filesystem-csp.md)  
 
 <!--StartSKU-->
@@ -1289,6 +1374,34 @@ Footnotes:
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
+[MultiSIM CSP](multisim-csp.md)  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
 </table>
 
@@ -2080,7 +2193,7 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Uefi CSP](uefi-csp.md)  
+[UEFI CSP](uefi-csp.md)  
 
 <!--StartSKU-->
 <table>
@@ -2095,7 +2208,7 @@ Footnotes:
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
@@ -2453,12 +2566,14 @@ Footnotes:
  Footnotes: 
 - 1 - Added in Windows 10, version 1607
 - 2 - Added in Windows 10, version 1703  
-- 3 - Added in the next major update to Windows 10  
+- 3 - Added in Windows 10, version 1709
+- 4 - Added in Windows 10, version 1803
 
 ## CSP DDF files download
 
 You can download the DDF files for various CSPs from the links below:
 
+- [Download all the DDF files for Windows 10, version 1803](http://download.microsoft.com/download/6/2/7/6276FE19-E3FD-4254-9C16-3C31CAA2DE50/Windows10_1803_DDF_download.zip)
 - [Download all the DDF files for Windows 10, version 1709](http://download.microsoft.com/download/9/7/C/97C6CF99-F75C-475E-AF18-845F8CECCFA4/Windows10_1709_DDF_download.zip)
 - [Download all the DDF files for Windows 10, version 1703](http://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)
 - [Download all the DDF files for Windows 10, version 1607](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
@@ -2471,15 +2586,15 @@ The following list shows the configuration service providers supported in Window
 
 | Configuration service provider        | Windows Holographic edition      | Windows Holographic for Business edition |
 |--------|--------|------------|
-| [Application CSP](application-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [AccountManagement CSP](accountmanagement-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       |
 | [AppLocker CSP](applocker-csp.md)      | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [AssignedAccess CSP](assignedaccess-csp.md)      | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       |
 | [CertificateStore CSP](certificatestore-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)|
 | [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [DevDetail CSP](devdetail-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [DeveloperSetup CSP](developersetup-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)2   (Provisioning only)|
 | [DeviceStatus CSP](devicestatus-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)  |
 | [DevInfo CSP](devinfo-csp.md)  | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [DiagnosticLog CSP](diagnosticlog-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)    |
 | [DMAcc CSP](dmacc-csp.md)      | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [DMClient CSP](dmclient-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
@@ -2492,32 +2607,15 @@ The following list shows the configuration service providers supported in Window
 | [WiFi CSP](wifi-csp.md)     | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [WindowsLicensing CSP](windowslicensing-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 
-Footnotes: 
-- 2 - Added in Windows 10, version 1703
-
-## <a href="" id="newcsps"></a>New CSPs added in Windows 10, version 1703
-
--   [BitLocker CSP](bitlocker-csp.md)
--   [CleanPC CSP](cleanpc-csp.md)
--   [DeveloperSetup CSP](developersetup-csp.md)
--   [DynamicManagement CSP](dynamicmanagement-csp.md)
--   [EnterpriseAppVManagement CSP](enterpriseappvmanagement-csp.md)
--   [Messaging CSP](messaging-csp.md)
--   [NetworkProxy CSP](networkproxy-csp.md)
--   [NetworkQoSPolicy CSP](networkqospolicy-csp.md)
--   [Office CSP](office-csp.md)
--   [Personalization CSP](personalization-csp.md)
-
-## <a href="" id="newcsps"></a>New CSPs added in Windows 10, version 1511
-
--   [AllJoynManagement CSP](alljoynmanagement-csp.md)
--   [Maps CSP](maps-csp.md)
--   [Reporting CSP](reporting-csp.md)
--   [SurfaceHub CSP](surfacehub-csp.md)
--   [WindowsSecurityAuditing CSP](windowssecurityauditing-csp.md)
+ Footnotes: 
+- 1 - Added in Windows 10, version 1607
+- 2 - Added in Windows 10, version 1703  
+- 3 - Added in Windows 10, version 1709
+- 4 - Added in Windows 10, version 1803
 
 ## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
 
+-   [AccountManagement CSP](accountmanagement-csp.md)
 -   [APPLICATION CSP](application-csp.md)
 -   [CertificateStore CSP](certificatestore-csp.md)
 -   [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)
@@ -2540,6 +2638,7 @@ Footnotes:
 -   [Reporting CSP](reporting-csp.md)
 -   [RootCATrustedCertificates CSP](rootcacertificates-csp.md)
 -   [SurfaceHub CSP](surfacehub-csp.md)
+-   [UEFI CSP](uefi-csp.md)  
 -   [WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)
 
 
@@ -2575,6 +2674,8 @@ The CSPs supported in Windows 10 S is the same as in Windows 10 Pro except that 
 - [CellularSettings CSP](cellularsettings-csp.md)
 - [CertificateStore CSP](certificatestore-csp.md)
 - [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)
+- [CMPolicy CSP](cmpolicy-csp.md)
+- [CM_ProxyEntries CSP](cm-proxyentries-csp.md)
 - [CM_CellularEntries CSP](cm-cellularentries-csp.md)
 - [Defender CSP](defender-csp.md)
 - [DevDetail CSP](devdetail-csp.md)
@@ -2584,6 +2685,8 @@ The CSPs supported in Windows 10 S is the same as in Windows 10 Pro except that 
 - [DiagnosticLog CSP](diagnosticlog-csp.md)
 - [DMAcc CSP](dmacc-csp.md)
 - [DMClient CSP](dmclient-csp.md)
+- [eUICCs CSP](euiccs-csp.md)
+- [Firewall CSP](firewall-csp.md)
 - [EMAIL2 CSP](email2-csp.md)
 - [EnterpriseAPN CSP](enterpriseapn-csp.md)
 - [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)
@@ -2613,4 +2716,5 @@ The CSPs supported in Windows 10 S is the same as in Windows 10 Pro except that 
 - [WiFi CSP](wifi-csp.md)
 - [Win32AppInventory CSP](win32appinventory-csp.md)
 - [WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)
+- [WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)
 - [WindowsLicensing CSP](windowslicensing-csp.md)

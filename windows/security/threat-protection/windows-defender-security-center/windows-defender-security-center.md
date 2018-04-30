@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 04/11/2018
 ---
 
 
@@ -27,36 +27,38 @@ ms.date: 04/30/2018
 
 
 
-The Windows Defender Security Center app brings together common Windows security features into one app, which is installed out-of-the-box as part of Windows 10, version 1703 and later. 
+In Windows 10, version 1703 we introduced the new Windows Defender Security Center app, which brings together common Windows security features into one app. Many settings that were previously part of the individual features and main Windows Settings have been combined and moved to the new app, which is installed out-of-the-box as part of Windows 10, version 1703. 
 
 
-![Screen shot of the Windows Defender Security Center app showing that the device is protected and icons for each of the features](images/security-center-home.png)
+![Screen shot of the Windows Defender Security Center app showing that the device is protected and five icons for each of the features](images/security-center-home.png)
 
 
 
-In Windows 10, version 1709 and later, the app also shows information from third-party antivirus and firewall apps.
-
-In Windows 10, version 1803, the app has two new areas, **Account protection** and **Device security**.
+In Windows 10, version 1709, we increased the scope of the app to also show information from third-party antivirus and firewall apps.
 
 >[!NOTE]
 >The Windows Defender Security Center app is a client interface on Windows 10, version 1703 and later. It is not the Windows Defender Security Center web portal console that is used to review and manage [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
 
-This library describes the Windows defender Security Center app, and provides information on configuring certain features, including:
+This library describes the Windows Defender Security Center app, and provides information on configuring certain features, including:
 
 <a id="customize-notifications-from-the-windows-defender-security-center"></a>
 - [Showing and customizing contact information on the app and in notifications](wdsc-customize-contact-information.md)
 - [Hiding notifications](wdsc-hide-notifications.md)
 
+You can't uninstall the Windows Defender Security Center app, but you can do one of the following:
+
+- Disable the interface on Windows Server 2016. See [Windows Defender Antivirus on Windows Server 2016](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-on-windows-server-2016). 
+- Hide all of the sections on client computers (see below).
+- Disable Windows Defender Antivirus, if needed. See [Enable and configure Windows Defender AV always-on protection and monitoring](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).
+
 You can find more information about each section, including options for configuring the sections - such as hiding each of the sections - at the following topics:
 
 
-- [Virus & threat protection](wdsc-virus-threat-protection.md), which has information and access to antivirus ransomware protection settings and notifications, including the Controlled folder access feature of Windows Defender Exploit Guard and sign-in to Microsoft OneDrive.
-- [Account protection](wdsc-account-protection.md), which has information and access to sign-in and account protection settings.
-- [Firewall & network protection](wdsc-firewall-network-protection.md), which has information and access to firewall settings, including Windows Defender Firewall.
-- [App & browser control](wdsc-app-browser-control.md), covering Windows Defender SmartScreen settings and Exploit protection mitigations.
-- [Device security](wdsc-device-security.md), which provides access to built-in device security settings.
-- [Device performance & health](wdsc-device-performance-health.md), which has information about drivers, storage space, and general Windows Update issues.
-- [Family options](wdsc-family-options.md), which includes access to parental controls along with tips and information for keeping kids safe online.
+- [Virus & threat protection](wdsc-virus-threat-protection.md), which has information and access to antivirus settings and the Controlled folder access feature of Windows Defender Exploit Guard
+- [Device performance & health](wdsc-device-performance-health.md), which has information about drivers, storage space, and general Windows Update issues
+- [Firewall & network protection](wdsc-firewall-network-protection.md), which has information and access to firewall settings, including Windows Defender Firewall
+- [App & browser control](wdsc-app-browser-control.md), covering Windows Defender SmartScreen settings and Exploit protection mitigations
+- [Family options](wdsc-family-options.md), which includes access to parental controls along with tips and information for keeping kids safe online
 
 
 >[!NOTE]
@@ -69,14 +71,13 @@ You can find more information about each section, including options for configur
 
 
 ## Open the Windows Defender Security Center app
-- Click the icon in the notification area on the taskbar.
+- Right-click the icon in the notification area on the taskbar and click **Open**.
 
     ![Screen shot of the icon for the Windows Defender Security Center app on the Windows task bar](images/security-center-taskbar.png)
 - Search the Start menu for **Windows Defender Security Center**.
 
     ![Screen shot of the Start menu showing the results of a search for the Windows Defender Security Center app, the first option with a large shield symbol is selected](images/security-center-start-menu.png)
 
-	
 
 > [!NOTE]
 > Settings configured with management tools, such as Group Policy, Microsoft Intune, or System Center Configuration Manager, will generally take precedence over the settings in the Windows Defender Security Center. See the topics for each of the sections for links to configuring the associated features or products.

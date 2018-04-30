@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 04/06/2018
 ---
 
 # Policy CSP - LocalPoliciesSecurityOptions
@@ -58,16 +58,7 @@ ms.date: 01/30/2018
     <a href="#localpoliciessecurityoptions-domainmember-digitallyencryptsecurechanneldatawhenpossible">LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible</a>
   </dd>
   <dd>
-    <a href="#localpoliciessecurityoptions-domainmember-digitallysignsecurechanneldatawhenpossible">LocalPoliciesSecurityOptions/DomainMember_DigitallySignSecureChannelDataWhenPossible</a>
-  </dd>
-  <dd>
     <a href="#localpoliciessecurityoptions-domainmember-disablemachineaccountpasswordchanges">LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges</a>
-  </dd>
-  <dd>
-    <a href="#localpoliciessecurityoptions-domainmember-maximummachineaccountpasswordage">LocalPoliciesSecurityOptions/DomainMember_MaximumMachineAccountPasswordAge</a>
-  </dd>
-  <dd>
-    <a href="#localpoliciessecurityoptions-domainmember-requirestrongsessionkey">LocalPoliciesSecurityOptions/DomainMember_RequireStrongSessionKey</a>
   </dd>
   <dd>
     <a href="#localpoliciessecurityoptions-interactivelogon-displayuserinformationwhenthesessionislocked">LocalPoliciesSecurityOptions/InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked</a>
@@ -94,16 +85,10 @@ ms.date: 01/30/2018
     <a href="#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior">LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior</a>
   </dd>
   <dd>
-    <a href="#localpoliciessecurityoptions-microsoftnetworkclient-digitallysigncommunicationsalways">LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsAlways</a>
-  </dd>
-  <dd>
     <a href="#localpoliciessecurityoptions-microsoftnetworkclient-digitallysigncommunicationsifserveragrees">LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees</a>
   </dd>
   <dd>
     <a href="#localpoliciessecurityoptions-microsoftnetworkclient-sendunencryptedpasswordtothirdpartysmbservers">LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers</a>
-  </dd>
-  <dd>
-    <a href="#localpoliciessecurityoptions-microsoftnetworkserver-amountofidletimerequiredbeforesuspendingsession">LocalPoliciesSecurityOptions/MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession</a>
   </dd>
   <dd>
     <a href="#localpoliciessecurityoptions-microsoftnetworkserver-digitallysigncommunicationsalways">LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsAlways</a>
@@ -127,9 +112,6 @@ ms.date: 01/30/2018
     <a href="#localpoliciessecurityoptions-networkaccess-restrictclientsallowedtomakeremotecallstosam">LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</a>
   </dd>
   <dd>
-    <a href="#localpoliciessecurityoptions-networksecurity-allowlocalsystemtousecomputeridentityforntlm">LocalPoliciesSecurityOptions/NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM</a>
-  </dd>
-  <dd>
     <a href="#localpoliciessecurityoptions-networksecurity-allowpku2uauthenticationrequests">LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests</a>
   </dd>
   <dd>
@@ -139,10 +121,19 @@ ms.date: 01/30/2018
     <a href="#localpoliciessecurityoptions-networksecurity-lanmanagerauthenticationlevel">LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</a>
   </dd>
   <dd>
-    <a href="#localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedclients">LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</a>
+    <a href="#localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedservers">LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</a>
   </dd>
   <dd>
-    <a href="#localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedservers">LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</a>
+    <a href="#localpoliciessecurityoptions-networksecurity-restrictntlm-addremoteserverexceptionsforntlmauthentication">LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication</a>
+  </dd>
+  <dd>
+    <a href="#localpoliciessecurityoptions-networksecurity-restrictntlm-auditincomingntlmtraffic">LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic</a>
+  </dd>
+  <dd>
+    <a href="#localpoliciessecurityoptions-networksecurity-restrictntlm-incomingntlmtraffic">LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic</a>
+  </dd>
+  <dd>
+    <a href="#localpoliciessecurityoptions-networksecurity-restrictntlm-outgoingntlmtraffictoremoteservers">LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers</a>
   </dd>
   <dd>
     <a href="#localpoliciessecurityoptions-recoveryconsole-allowautomaticadministrativelogon">LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon</a>
@@ -238,6 +229,12 @@ If you disable or do not configure this policy (recommended), users will be able
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Accounts: Block Microsoft accounts*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -297,6 +294,12 @@ Default: Disabled.
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *Accounts: Administrator account status*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/DbMapped-->
 <!--SupportedValues-->
 Valid values:  
 - 0 - local Administrator account is disabled
@@ -352,6 +355,12 @@ Note: If the Guest account is disabled and the security option Network Access: S
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *Accounts: Guest account status*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/DbMapped-->
 <!--SupportedValues-->
 Valid values:  
 - 0 - local Guest account is disabled
@@ -415,6 +424,12 @@ It is possible for applications that use remote interactive logons to bypass thi
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Accounts: Limit local account use of blank passwords to console logon only*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
 - 0 -  disabled - local accounts that are not password protected can be used to log on from locations other than the physical computer console
@@ -470,6 +485,12 @@ Default: Administrator.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *Accounts: Rename administrator account*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/DbMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -519,6 +540,12 @@ Default: Guest.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--DbMapped-->
+GP Info:  
+-   GP English name: *Accounts: Rename guest account*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/DbMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -569,6 +596,12 @@ Caution:
 Disabling this policy may tempt users to try and physically remove the laptop from its docking station using methods other than the external hardware eject button. Since this may cause damage to the hardware, this setting, in general, should only be disabled on laptop configurations that are physically securable.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Devices: Allow undock without having to log on*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -619,6 +652,12 @@ This security setting determines who is allowed to format and eject removable NT
 Default: This policy is not defined and only Administrators have this ability.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Devices: Allowed to format and eject removable media*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -671,6 +710,12 @@ Note
 This setting does not affect the ability to add a local printer. This setting does not affect Administrators.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Devices: Prevent users from installing printer drivers*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -720,6 +765,12 @@ If this policy is enabled, it allows only the interactively logged-on user to ac
 Default: This policy is not defined and CD-ROM access is not restricted to the locally logged-on user.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Devices: Restrict CD-ROM access to locally logged-on user only*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -780,6 +831,21 @@ If this policy is enabled, the policy Domain member: Digitally sign secure chann
 Logon information transmitted over the secure channel is always encrypted regardless of whether encryption of ALL other secure channel traffic is negotiated or not.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Domain member: Digitally encrypt or sign secure channel data (always)*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -837,57 +903,21 @@ There is no known reason for disabling this setting. Besides unnecessarily reduc
 Note: Domain controllers are also domain members and establish secure channels with other domain controllers in the same domain as well as domain controllers in trusted domains.
 
 <!--/Description-->
-<!--/Policy-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Domain member: Digitally encrypt secure channel data (when possible)*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
-<hr/>
+<!--/RegistryMapped-->
+<!--SupportedValues-->
 
-<!--Policy-->
-<a href="" id="localpoliciessecurityoptions-domainmember-digitallysignsecurechanneldatawhenpossible"></a>**LocalPoliciesSecurityOptions/DomainMember_DigitallySignSecureChannelDataWhenPossible**  
+<!--/SupportedValues-->
+<!--Example-->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!--/Example-->
+<!--Validation-->
 
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Domain member: Digitally sign secure channel data (when possible)
-
-This security setting determines whether a domain member attempts to negotiate signing for all secure channel traffic that it initiates.
-
-When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass through authentication, LSA SID/name Lookup etc.
-
-This setting determines whether or not the domain member attempts to negotiate signing for all secure channel traffic that it initiates. If enabled, the domain member will request signing of all secure channel traffic. If the Domain Controller supports signing of all secure channel traffic, then all secure channel traffic will be signed which ensures that it cannot be tampered with in transit.
-
-Default: Enabled.
-
-<!--/Description-->
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -940,119 +970,21 @@ This security setting should not be enabled. Computer account passwords are used
 This setting should not be used in an attempt to support dual-boot scenarios that use the same computer account. If you want to dual-boot two installations that are joined to the same domain, give the two installations different computer names.
 
 <!--/Description-->
-<!--/Policy-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Domain member: Disable machine account password changes*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
-<hr/>
+<!--/RegistryMapped-->
+<!--SupportedValues-->
 
-<!--Policy-->
-<a href="" id="localpoliciessecurityoptions-domainmember-maximummachineaccountpasswordage"></a>**LocalPoliciesSecurityOptions/DomainMember_MaximumMachineAccountPasswordAge**  
+<!--/SupportedValues-->
+<!--Example-->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!--/Example-->
+<!--Validation-->
 
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Domain member: Maximum machine account password age
-
-This security setting determines how often a domain member will attempt to change its computer account password.
-
-Default: 30 days.
-
-Important
-
-This setting applies to Windows 2000 computers, but it is not available through the Security Configuration Manager tools on these computers.
-
-<!--/Description-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="localpoliciessecurityoptions-domainmember-requirestrongsessionkey"></a>**LocalPoliciesSecurityOptions/DomainMember_RequireStrongSessionKey**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Domain member: Require strong (Windows 2000 or later) session key
-
-This security setting determines whether 128-bit key strength is required for encrypted secure channel data.
-
-When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller within the domain. This secure channel is used to perform operations such as NTLM pass-through authentication, LSA SID/name Lookup, and so on.
-
-Depending on what version of Windows is running on the domain controller that the domain member is communicating with and the settings of the parameters:
-
-Domain member: Digitally encrypt or sign secure channel data (always)
-Domain member: Digitally encrypt secure channel data (when possible)
-Some or all of the information that is transmitted over the secure channel will be encrypted. This policy setting determines whether or not 128-bit key strength is required for the secure channel information that is encrypted.
-
-If this setting is enabled, then the secure channel will not be established unless 128-bit encryption can be performed. If this setting is disabled, then the key strength is negotiated with the domain controller.
-
-Default: Enabled.
-
-Important
-
-In order to take advantage of this policy on member workstations and servers, all domain controllers that constitute the member's domain must be running Windows 2000 or later.
-In order to take advantage of this policy on domain controllers, all domain controllers in the same domain as well as all trusted domains must run Windows 2000 or later.
-
-<!--/Description-->
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -1099,6 +1031,12 @@ Interactive Logon:Display user information when the session is locked
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Interactive logon: Display user information when the session is locked*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:
 - 1 - User display name, domain and user names
@@ -1158,6 +1096,12 @@ Default: Disabled.
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Interactive logon: Don't display last signed-in*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
 - 0 - disabled (username will be shown)
@@ -1217,6 +1161,12 @@ Default: Disabled.
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Interactive logon: Don't display username at sign-in*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
 - 0 - disabled (username will be shown)
@@ -1277,6 +1227,12 @@ Default on stand-alone computers: Enabled.
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Interactive logon: Do not require CTRL+ALT+DEL*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
 - 0 - disabled
@@ -1332,6 +1288,12 @@ Default: not enforced.
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Interactive logon: Machine inactivity limit*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
 - 0 - disabled 
@@ -1389,6 +1351,12 @@ Default: No message.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Interactive logon: Message text for users attempting to log on*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1438,6 +1406,12 @@ Default: No message.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Interactive logon: Message title for users attempting to log on*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1502,71 +1476,12 @@ Default: This policy is not defined, which means that the system treats it as No
 On Windows Vista and above: For this setting to work, the Smart Card Removal Policy service must be started.
 
 <!--/Description-->
-<!--/Policy-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Interactive logon: Smart card removal behavior*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="localpoliciessecurityoptions-microsoftnetworkclient-digitallysigncommunicationsalways"></a>**LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsAlways**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Microsoft network client: Digitally sign communications (always)
-
-This security setting determines whether packet signing is required by the SMB client component.
-
-The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB server is permitted.
-
-If this setting is enabled, the Microsoft network client will not communicate with a Microsoft network server unless that server agrees to perform SMB packet signing. If this policy is disabled, SMB packet signing is negotiated between the client and server.
-
-Default: Disabled.
-
-Important
-
-For this policy to take effect on computers running Windows 2000, client-side packet signing must also be enabled. To enable client-side SMB packet signing, set Microsoft network client: Digitally sign communications (if server agrees).
-
-Notes
-
-All Windows operating systems support both a client-side SMB component and a server-side SMB component. On Windows 2000 and later operating systems, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
-Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing.
-Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
-Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing.
-Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled.
-SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors.
-For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.
-
-<!--/Description-->
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1629,6 +1544,12 @@ SMB packet signing can significantly degrade SMB performance, depending on diale
 For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Microsoft network client: Digitally sign communications (if server agrees)*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1678,57 +1599,12 @@ Sending unencrypted passwords is a security risk.
 Default: Disabled.
 
 <!--/Description-->
-<!--/Policy-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Microsoft network client: Send unencrypted password to third-party SMB servers*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="localpoliciessecurityoptions-microsoftnetworkserver-amountofidletimerequiredbeforesuspendingsession"></a>**LocalPoliciesSecurityOptions/MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Microsoft network server: Amount of idle time required before suspending a session
-
-This security setting determines the amount of continuous idle time that must pass in a Server Message Block (SMB) session before the session is suspended due to inactivity.
-
-Administrators can use this policy to control when a computer suspends an inactive SMB session. If client activity resumes, the session is automatically reestablished.
-
-For this policy setting, a value of 0 means to disconnect an idle session as quickly as is reasonably possible. The maximum value is 99999, which is 208 days; in effect, this value disables the policy.
-
-Default:This policy is not defined, which means that the system treats it as 15 minutes for servers and undefined for workstations.
-
-<!--/Description-->
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1803,6 +1679,12 @@ HKLM\System\CurrentControlSet\Services\lanmanserver\parameters\enableW9xsecurity
 For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Microsoft network server: Digitally sign communications (always)*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1869,6 +1751,12 @@ SMB packet signing can significantly degrade SMB performance, depending on diale
 For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Microsoft network server: Digitally sign communications (if client agrees)*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1928,6 +1816,12 @@ Important
 This policy has no impact on domain controllers.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network access: Do not allow anonymous enumeration of SAM accounts*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -1977,6 +1871,12 @@ Windows allows anonymous users to perform certain activities, such as enumeratin
 Default: Disabled.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network access: Do not allow anonymous enumeration of SAM accounts and shares*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2077,6 +1977,12 @@ Network access: Shares that can be accessed anonymously
 Default: Enabled.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network access: Restrict anonymous access to Named Pipes and Shares*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2126,63 +2032,12 @@ If not selected, the default security descriptor will be used.
 This policy is supported on at least Windows Server 2016.
 
 <!--/Description-->
-<!--/Policy-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network access: Restrict clients allowed to make remote calls to SAM*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="localpoliciessecurityoptions-networksecurity-allowlocalsystemtousecomputeridentityforntlm"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Network security: Allow Local System to use computer identity for NTLM
-
-This policy setting allows Local System services that use Negotiate to use the computer identity when reverting to NTLM authentication.
-
-If you enable this policy setting, services running as Local System that use Negotiate will use the computer identity. This might cause some authentication requests between Windows operating systems to fail and log an error.
-
-If you disable this policy setting, services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously.
-
-By default, this policy is enabled on Windows 7 and above.
-
-By default, this policy is disabled on Windows Vista.
-
-This policy is supported on at least Windows Vista or Windows Server 2008.
-
-Note: Windows Vista or Windows Server 2008 do not expose this setting in Group Policy.
-
-<!--/Description-->
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2231,6 +2086,12 @@ This policy will be turned off by default on domain joined machines. This would 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network security: Allow PKU2U authentication requests to this computer to use online identities.*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
 - 0 - disabled
@@ -2291,6 +2152,12 @@ Windows 2000 Service Pack 2 (SP2) and above offer compatibility with authenticat
 This setting can affect the ability of computers running Windows 2000 Server, Windows 2000 Professional, Windows XP, and the Windows Server 2003 family to communicate with computers running Windows 95 and Windows 98.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network security: Do not store LAN Manager hash value on next password change*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2360,60 +2227,12 @@ Windows Server 2003: Send NTLM response only
 Windows Vista, Windows Server 2008, Windows 7, and Windows Server 2008 R2: Send NTLMv2 response only
 
 <!--/Description-->
-<!--/Policy-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network security: LAN Manager authentication level*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedclients"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Network security: Minimum session security for NTLM SSP based (including secure RPC) clients
-
-This security setting allows a client to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are:
-
-Require NTLMv2 session security: The connection will fail if NTLMv2 protocol is not negotiated.
-Require 128-bit encryption: The connection will fail if strong encryption (128-bit) is not negotiated.
-
-Default:
-
-Windows XP, Windows Vista, Windows 2000 Server, Windows Server 2003, and Windows Server 2008: No requirements.
-
-Windows 7 and Windows Server 2008 R2: Require 128-bit encryption
-
-<!--/Description-->
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2468,6 +2287,288 @@ Windows XP, Windows Vista, Windows 2000 Server, Windows Server 2003, and Windows
 Windows 7 and Windows Server 2008 R2: Require 128-bit encryption
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network security: Minimum session security for NTLM SSP based (including secure RPC) servers*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="localpoliciessecurityoptions-networksecurity-restrictntlm-addremoteserverexceptionsforntlmauthentication"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication
+
+This policy setting allows you to create an exception list of remote servers to which clients are allowed to use NTLM authentication if the  "Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers" policy setting is configured.
+
+If you configure this policy setting, you can define a list of remote servers to which clients are allowed to use NTLM authentication.
+
+If you do not configure this policy setting, no exceptions will be applied.
+
+The naming format for servers on this exception list is the fully qualified domain name (FQDN) or NetBIOS server name used by the application, listed one per line. To ensure exceptions the name used by all applications needs to be in the list, and to ensure an exception is accurate, the server name should be listed in both naming formats . A single asterisk (*) can be used anywhere in the string as a wildcard character.
+
+<!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="localpoliciessecurityoptions-networksecurity-restrictntlm-auditincomingntlmtraffic"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Network security: Restrict NTLM: Audit Incoming NTLM Traffic
+
+This policy setting allows you to audit incoming NTLM traffic.
+
+If you select "Disable", or do not configure this policy setting, the server will not log events for incoming NTLM traffic.
+
+If you select "Enable auditing for domain accounts", the server will log events for NTLM pass-through authentication requests that would be blocked when the "Network Security: Restrict NTLM: Incoming NTLM traffic" policy setting is set to the "Deny all domain accounts" option.
+
+If you select "Enable auditing for all accounts", the server will log events for all NTLM authentication requests that would be blocked when the "Network Security: Restrict NTLM: Incoming NTLM traffic" policy setting is set to the "Deny all accounts" option.
+
+This policy is supported on at least Windows 7 or Windows Server 2008 R2.
+
+Note: Audit events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.
+
+<!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network security: Restrict NTLM: Audit Incoming NTLM Traffic*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="localpoliciessecurityoptions-networksecurity-restrictntlm-incomingntlmtraffic"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Network security: Restrict NTLM: Incoming NTLM traffic
+
+This policy setting allows you to deny or allow incoming NTLM traffic.
+
+If you select "Allow all" or do not configure this policy setting, the server will allow all NTLM authentication requests.
+
+If you select "Deny all domain accounts," the server will deny NTLM authentication requests for domain logon and display an NTLM blocked error, but allow local account logon.
+
+If you select "Deny all accounts," the server will deny NTLM authentication requests from incoming traffic and display an NTLM blocked error.
+
+This policy is supported on at least Windows 7 or Windows Server 2008 R2.
+
+Note: Block events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.
+
+<!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network security: Restrict NTLM: Incoming NTLM traffic*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="localpoliciessecurityoptions-networksecurity-restrictntlm-outgoingntlmtraffictoremoteservers"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers
+
+This policy setting allows you to deny or audit outgoing NTLM traffic from this Windows 7 or this Windows Server 2008 R2 computer to any Windows remote server.
+
+If you select "Allow all" or do not configure this policy setting, the client computer can authenticate identities to a remote server by using NTLM authentication.
+
+If you select "Audit all," the client computer logs an event for each NTLM authentication request to a remote server. This allows you to identify those servers receiving NTLM authentication requests from the client computer.
+
+If you select "Deny all," the client computer cannot authenticate identities to a remote server by using NTLM authentication. You can use the "Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication" policy setting to define a list of remote servers to which clients are allowed to use NTLM authentication.
+
+This policy is supported on at least Windows 7 or Windows Server 2008 R2.
+
+Note: Audit and block events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.
+
+<!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -2568,6 +2669,12 @@ Default on servers: Disabled.
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Shutdown: Allow system to be shut down without having to log on*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
 - 0 - disabled
@@ -2625,6 +2732,12 @@ When this policy is enabled, it causes the system pagefile to be cleared upon cl
 Default: Disabled.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *Shutdown: Clear virtual memory pagefile*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2727,6 +2840,12 @@ The secure desktop can be disabled only by the user of the interactive desktop o
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
 - 0 - disabled
@@ -2794,6 +2913,12 @@ The options are:
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2840,6 +2965,12 @@ This policy setting controls the behavior of the elevation prompt for standard u
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *User Account Control: Behavior of the elevation prompt for standard users*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -2899,6 +3030,12 @@ Enabled: (Default) When an application installation package is detected that req
 Disabled: Application installation packages are not detected and prompted for elevation. Enterprises that are running standard user desktops and use delegated installation technologies such as Group Policy Software Installation or Systems Management Server (SMS) should disable this policy setting. In this case, installer detection is unnecessary.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *User Account Control: Detect application installations and prompt for elevation*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -2950,6 +3087,12 @@ The options are:
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *User Account Control: Only elevate executables that are signed and validated*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3007,6 +3150,12 @@ The options are:
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *User Account Control: Only elevate UIAccess applications that are installed in secure locations*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3059,6 +3208,12 @@ The options are:
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *User Account Control: Run all administrators in Admin Approval Mode*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3110,6 +3265,12 @@ The options are:
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *User Account Control: Switch to the secure desktop when prompting for elevation*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3161,6 +3322,12 @@ The options are:
 • Disabled: (Default) The built-in Administrator account runs all applications with full administrative privilege.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *User Account Control: Admin Approval Mode for the Built-in Administrator account*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--/Policy-->
 
 <hr/>
@@ -3208,6 +3375,12 @@ This policy setting controls whether application write failures are redirected t
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *User Account Control: Virtualize file and registry write failures to per-user locations*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -3223,6 +3396,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

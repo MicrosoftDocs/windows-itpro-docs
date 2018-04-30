@@ -1,7 +1,7 @@
 ---
-title: Configure non-persistent virtual desktop infrastructure (VDI) machines
+title: Onboard non-persistent virtual desktop infrastructure (VDI) machines
 description: Deploy the configuration package on virtual desktop infrastructure (VDI) machine so that they are onboarded to Windows Defender ATP the service.
-keywords: configure virtual desktop infrastructure (VDI) machine, vdi, endpoint management, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints
+keywords: configure virtual desktop infrastructure (VDI) machine, vdi, machine management, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,15 +10,15 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.date: 04/24/2018
 ---
 
-# Configure non-persistent virtual desktop infrastructure (VDI) machines
+# Onboard non-persistent virtual desktop infrastructure (VDI) machines
 
 **Applies to:**
 - Virtual desktop infrastructure (VDI) machines
 
-
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
 
@@ -40,9 +40,13 @@ You can onboard VDI machines using a single entry or multiple entries for each m
 
 1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a.  Click **Endpoint management** > **Clients** on the **Navigation pane**.
+    a.  In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
 
-    b.  Select **VDI onboarding scripts for non-persistent endpoints** then click **Download package** and save the .zip file.
+    b. Select Windows 10 as the operating system.
+
+    c.  In the **Deployment method** field, select **VDI onboarding scripts for non-persistent endpoints**.
+
+    d. Click **Download package** and save the .zip file.
 
 2. Copy the extracted files from the .zip into `golden/master` image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. You should have a folder called `WindowsDefenderATPOnboardingPackage` containing the file `WindowsDefenderATPOnboardingScript.cmd`.
 
@@ -67,9 +71,13 @@ You can onboard VDI machines using a single entry or multiple entries for each m
 6. Test your solution:
 
       a. Create a pool with one machine.
+      
       b. Logon to machine.
+      
       c. Logoff from machine.
+
       d. Logon to machine with another user.
+      
       e. **For single entry for each machine**: Check only one entry in the Windows Defender ATP portal.<br>
     **For multiple entries for each machine**: Check multiple entries in the Windows Defender ATP portal.
 
@@ -78,10 +86,10 @@ You can onboard VDI machines using a single entry or multiple entries for each m
 8. Use the search function by entering the machine name and select **Machine** as search type.
 
 ## Related topics
-- [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
-- [Configure endpoints using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
-- [Configure endpoints using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
-- [Configure endpoints using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
+- [Onboard Windows 10 machines using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
 
 

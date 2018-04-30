@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/26/2017
+ms.date: 04/16/2018
 ---
 
 # WiFi CSP
@@ -30,6 +30,9 @@ The following image shows the WiFi configuration service provider in tree format
 ![wi-fi csp diagram](images/provisioning-csp-wifi.png)
 
 The following list shows the characteristics and parameters.
+
+<a href="" id="wifi"></a>**Device or User profile**  
+For user profile, use ./User/Vendor/MSFT/Wifi path and for device profile, use ./Device/Vendor/MSFT/Wifi path.
 
 <a href="" id="profile"></a>**Profile**  
 Identifies the Wi-Fi network configuration. Each Wi-Fi network configuration is represented by a profile object. This network profile includes all the information required for the device to connect to that network – for example, the SSID, authentication and encryption methods and passphrase in case of WEP or WPA2 networks.

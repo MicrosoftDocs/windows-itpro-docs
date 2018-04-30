@@ -1,6 +1,6 @@
 ---
-title: Windows Defender AV reference for management tools
-description: Learn how Group Policy, Configuration Manager, PowerShell, WMI, Intune, and the comman line can be used to manage Windows Defender AV
+title: Manage Windows Defender AV in your business
+description: Learn how to use Group Policy, Configuration Manager, PowerShell, WMI, Intune, and the comman line to manage Windows Defender AV
 keywords: group policy, gpo, config manager, sccm, scep, powershell, wmi, intune, defender, antivirus, antimalware, security, protection
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -11,10 +11,10 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 08/26/2017
+ms.date: 03/01/2018
 ---
 
-# Reference topics for management and configuration tools
+# Manage Windows Defender AV in your business
 
 **Applies to:**
 
@@ -24,7 +24,7 @@ ms.date: 08/26/2017
 
 - Enterprise security administrators
 
-Windows Defender Antivirus can be managed and configured with the following tools:
+You can manage and configure Windows Defender Antivirus with the following tools:
 
 - Group Policy
 - System Center Configuration Manager and Microsoft Intune

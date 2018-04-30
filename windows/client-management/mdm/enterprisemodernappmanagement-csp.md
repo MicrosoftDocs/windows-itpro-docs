@@ -7,10 +7,14 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 09/22/2017
+ms.date: 03/01/2018
 ---
 
 # EnterpriseModernAppManagement CSP
+
+
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The EnterpriseModernAppManagement configuration service provider (CSP) is used for the provisioning and reporting of modern enterprise apps. For details about how to use this CSP to for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](enterprise-app-management.md).
 
@@ -108,7 +112,7 @@ The following image shows the EnterpriseModernAppManagement configuration servic
 </Replace>
 ```
 <a href="" id="appmanagement-removepackage"></a>**AppManagement/RemovePackage**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Used to remove packages.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Used to remove packages. Not supported for ./User/Vendor/MSFT.
 
 <p style="margin-left: 20px">Parameters:
 <ul>
@@ -117,34 +121,18 @@ The following image shows the EnterpriseModernAppManagement configuration servic
          <li>Name: Specifies the PackageFullName of the particular package to remove.</li>
          <li>RemoveForAllUsers: 
             <ul>
-               <li>0 (default) – Package will be un-provisioned so that new users do not receive the package. The package will remain installed for current users.</li>
-               <li>1 – Package will be removed for all users.</li>
+               <li>0 (default) – Package will be un-provisioned so that new users do not receive the package. The package will remain installed for current users. This is not currently supported.</li>
+               <li>1 – Package will be removed for all users only if it is a provisioned package.</li>
             </ul>
          </li>
       </ul>
    </li>
-   <li>User (optional): Specifies the SID of the particular user for whom to remove the package; only the package for the specified user can be removed. Not required for ./User/Vendor/MSFT.</li>
+   <li>User (optional): Specifies the SID of the particular user for whom to remove the package; only the package for the specified user can be removed.</li>
 </ul>
     
     
 <p style="margin-left: 20px">Supported operation is Execute.
 
-<p style="margin-left: 20px">The following example removes a package for the specified user:
-
-```XML
-<Exec>
-   <CmdID>10</CmdID>
-   <Item>
-      <Target>
-              <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/RemovePackage</LocURI>
-      </Target>
-      <Meta><Format xmlns="syncml:metinf">xml</Format></Meta>
-      <Data>
-          <Package Name= "{PackageFullName}"/>
-      </Data>
-   </Item>
-</Exec>
-```
 <p style="margin-left: 20px">The following example removes a package for all users:
 
 ````XML
@@ -303,7 +291,12 @@ The following image shows the EnterpriseModernAppManagement configuration servic
 <p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-users"></a>**.../*PackageFamilyName*/*PackageFullName*/Users**  
-<p style="margin-left: 20px">Required. Registered users of the app. If the query is at the device level, it returns all the registered users of the device. If you query the user context, it will only return the current user. Value type is string.
+<p style="margin-left: 20px">Required. Registered users of the app and the package install state. If the query is at the device level, it returns all the registered users of the device. If you query the user context, it will only return the current user. Value type is string.
+
+-   Not Installed = 0
+-   Staged = 1
+-   Installed = 2
+-   Paused = 6
 
 <p style="margin-left: 20px">Supported operation is Get.
 
@@ -358,6 +351,20 @@ The following image shows the EnterpriseModernAppManagement configuration servic
    </Item>
 </Get>
 ```
+
+<a href="" id="----packagefamilyname-maintainprocessorarchitectureonupdate"></a>**.../*PackageFamilyName*/MaintainProcessorArchitectureOnUpdate**  
+Added in Windows 10, version 1803. Specify whether on a AMD64 device, across an app update, the architecture of the installed app must not change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
+
+Supported operations are Add, Get, Delete, and Replace. Value type is integer.
+
+Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (Most restrictive wins).
+
+|Applicability Setting |CSP state  |Result  |
+|---------|---------|---------|
+|True |Not configured     |X86 flavor is picked         |
+|True |Enabled    |X86 flavor is picked         |
+|True |Disabled         |X86 flavor is picked         |
+|False (not set) |Not configured         |X64 flavor is picked          |
 
 <a href="" id="appinstallation"></a>**AppInstallation**  
 <p style="margin-left: 20px">Required node. Used to perform app installation.

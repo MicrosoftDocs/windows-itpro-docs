@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.date: 04/24/2018
 ---
 
 # Assign user access to the Windows Defender ATP portal
@@ -24,26 +24,39 @@ ms.date: 10/16/2017
 - Office 365
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Windows Defender ATP users and access permissions are managed in Azure Active Directory (AAD). Use the following methods to assign security roles.
+Windows Defender ATP supports two ways to manage permissions:
 
-## Assign user access using Azure PowerShell
+- **Basic permissions management**: Set permissions to either full access or read-only.
+- **Role-based access control (RBAC)**: Set granular permissions by defining roles, assigning Azure AD user groups to the roles, and granting the user groups access to machine groups. For more information on RBAC, see [Manage portal access using role-based access control](rbac-windows-defender-advanced-threat-protection.md).
+
+> [!NOTE]
+>If you have already assigned basic permissions, you may switch to RBAC anytime. Consider the following before making the switch:
+
+>- Users with full access (Security Administrators) are automatically assigned the default **Global administrator** role, which also has full access. Only global administrators can manage permissions using RBAC. 
+>- Users that have read-only access (Security Readers) will lose access to the portal until they are assigned a role. Note that only Azure AD user groups can be assigned a role under RBAC.
+>- After switching to RBAC, you will not be able to switch back to using basic permissions management.
+
+## Use basic permissions management
+Refer to the instructions below to use basic permissions management. You can use either Azure PowerShell or the Azure Portal.  
+
+For granular control over permissions, [switch to role-based access control](rbac-windows-defender-advanced-threat-protection.md).
+
+### Assign user access using Azure PowerShell
 You can assign users with one of the following levels of permissions:
 - Full access (Read and Write)
-- Read only access
+- Read-only access
 
-### Before you begin
+#### Before you begin
 - Install Azure PowerShell. For more information see, [How to install and configure Azure PowerShell](https://azure.microsoft.com/documentation/articles/powershell-install-configure/).<br>
 
     > [!NOTE]
     > You need to run the PowerShell cmdlets in an elevated command-line.
 
 - Connect to your Azure Active Directory. For more information see, [Connect-MsolService](https://msdn.microsoft.com/library/dn194123.aspx).
-
-
 
 **Full access** <br>
 Users with full access can log in, view all system information and resolve alerts, submit files for deep analysis, and download the onboarding package.
@@ -67,7 +80,7 @@ Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress “reader
 
 For more information see, [Manage Azure AD group and role membership](https://technet.microsoft.com/library/321d532e-407d-4e29-a00a-8afbe23008dd#BKMK_ManageGroups).
 
-## Assign user access using the Azure portal
+### Assign user access using the Azure portal
 
 1.	Go to the [Azure portal](https://portal.azure.com).
 
@@ -86,4 +99,8 @@ For more information see, [Manage Azure AD group and role membership](https://te
     ![Image of Microsoft Azure portal](images/atp-azure-ui-user-access.png)
 
 
+
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-portalaccess-belowfoldlink)
+
+## Related topic
+- [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md)

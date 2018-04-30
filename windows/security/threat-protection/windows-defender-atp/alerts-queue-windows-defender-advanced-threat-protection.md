@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 11/09/2017
+ms.date: 04/24/2018
 ---
 
 # View and organize the Windows Defender Advanced Threat Protection Alerts queue
@@ -23,11 +23,11 @@ ms.date: 11/09/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
 
-The **Alerts queue** shows a list of alerts that were flagged from endpoints in your network. Alerts are displayed in queues according to their current status. In each queue, you'll see details such as the severity of alerts and the number of machines the alerts were raised on.
+The **Alerts queue** shows a list of alerts that were flagged from machines in your network. Alerts are displayed in queues according to their current status. In each queue, you'll see details such as the severity of alerts and the number of machines the alerts were raised on.
 
 Alerts are organized in queues by their workflow status or assignment:
 
@@ -35,14 +35,13 @@ Alerts are organized in queues by their workflow status or assignment:
 - **In progress**
 - **Resolved**
 - **Assigned to me**
-- **Suppression rules** 
 
 To see a list of alerts, click any of the queues under the **Alerts queue** option in the navigation pane.
 
 > [!NOTE]
 > By default, alerts in the queues are sorted from newest to oldest.
 
-![Image of alerts queue](images/atp-alertsq2.png)
+![Image of alerts queue](images/atp-new-alerts-list.png)
 
 ##  Sort, filter, and group the alerts list
 You can sort and filter the alerts using the available filters or clicking on a column's header that will sort the view in ascending or descending order.
@@ -64,12 +63,11 @@ You can sort and filter the alerts using the available filters or clicking on a 
 
 Alert severity | Description
 :---|:---
-High </br>(Red) | Threats often associated with advanced persistent threats (APT). These alerts indicate a high risk due to the severity of damage they can inflict on endpoints.
+High </br>(Red) | Threats often associated with advanced persistent threats (APT). These alerts indicate a high risk due to the severity of damage they can inflict on machines.
 Medium </br>(Orange) | Threats rarely observed in the organization, such as anomalous registry change, execution of suspicious files, and observed behaviors typical of attack stages.
 Low </br>(Yellow) | Threats associated with prevalent malware and hack-tools that do not necessarily indicate an advanced threat targeting the organization.
 Informational </br>(Grey) | Informational alerts are those that might not be considered harmful to the network but might be good to keep track of.
 
-Reviewing the various alerts and their severity can help you decide on the appropriate action to protect your organization's endpoints.
 
 #### Understanding alert severity
 It is important to understand that the Windows Defender Antivirus (Windows Defender AV) and Windows Defender ATP alert severities are different because they represent different scopes.
@@ -92,13 +90,30 @@ So, for example:
 - Others
 
 >[!NOTE]
->The Windows Defender Antivirus filter will only appear if your endpoints are using Windows Defender Antivirus as the default real-time protection antimalware product.
+>The Windows Defender Antivirus filter will only appear if machines are using Windows Defender Antivirus as the default real-time protection antimalware product.
+
 
 ### View
 - **Flat view** - Lists alerts individually with alerts having the latest activity displayed at the top.
 - **Grouped view** - Groups alerts by alert ID, file hash, malware family, or other attribute to enable more efficient alert triage and management. Alert grouping reduces the number of rows in the queue by aggregating similar alerts together.
 
 The grouped view allows for efficient alert triage and management.
+
+## Alert queue columns
+You can click on the first column to open up the **Alert management pane**. You can also select view the machine and user panes by selecting the icons beside the links.
+
+Alerts are listed with the following columns:
+
+- **Title** - Displays a brief description of the alert and its category.
+- **Machine and user** - Displays the machine name and user associated with the alert. You view the machine or user details pane or pivot the actual details page.
+- **Severity** - Displays the severity of the alert. Possible values are informational, low, medium, or high.
+- **Last activity** - Date and time for when the last action was taken on the alert.
+- **Time in queue** - Length of time the alert has been in the alerts queue.
+- **Detection source** - Displays the detection source of the alert.
+- **Status** - Current status of the alert. Possible values include new, in progress, or resolved. 
+- **Investigation state** - Reflects the number of related investigations and it's current state.
+- **Assigned to** - Displays who is addressing the alert.
+- **Manage icon** - You can click on the icon to bring up the alert management pane where you can manage and see details about the alert.
 
 ### Use the Alert management pane
 Selecting an alert brings up the **Alert management** pane where you can manage and see details about the alert.
@@ -134,14 +149,11 @@ Select multiple alerts (Ctrl or Shift select) and manage or edit alerts together
 ![Alerts queue bulk edit](images/alerts-q-bulk.png)
 
 ## Related topics
-- [View the Windows Defender Advanced Threat Protection Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
-- [View the Windows Defender Advanced Threat Protection Security analytics dashboard](security-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+- [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
 - [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
 - [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
+- [Investigate machines in the Windows Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
 - [Investigate an IP address associated with a Windows Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
 - [Investigate a domain associated with a Windows Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
-- [View and organize the Windows Defender ATP Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)
-- [Investigate machines in the Windows Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
 - [Investigate a user account in Windows Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)
-- [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
-- [Take response actions in Windows Defender ATP](response-actions-windows-defender-advanced-threat-protection.md)
+

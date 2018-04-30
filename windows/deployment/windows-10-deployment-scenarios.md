@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.sitesec: library
-ms.date: 01/10/2018
+ms.date: 04/03/2018
 author: greg-lindsay
 ---
 
@@ -23,7 +23,7 @@ The following table summarizes various Windows 10 deployment scenarios. The scen
 - Dynamic deployment methods enable you to configure applications and settings for specific use cases. 
 - Traditional deployment methods use tools such as Microsoft Deployment Toolkit (MDT) and System Center Configuration Manager.<br>&nbsp;
 
-<table border="1">
+<table border="0">
   <tr><td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'><b>Category</b></td>
      <td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'><b>Scenario</b></td>
      <td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'><b>Description</b></td>
@@ -31,12 +31,12 @@ The following table summarizes various Windows 10 deployment scenarios. The scen
   <tr><td align='center' valign='middle' style='width:16%; border:1;' rowspan="2">Modern</td>
     <td align="center">
 
-[Windows AutoPilot](#windows-autopilot)</td>
+[Windows Autopilot](#windows-autopilot)</td>
     <td align="center" style="width:16%; border:1;"> 
       Customize the out-of-box-experience (OOBE) for your organization, and deploy a new system with apps and settings already configured.
     </td>
     <td align="center" style="width:16%; border:1;"> 
-<a href="https://docs.microsoft.com/en-us/windows/deployment/windows-10-autopilot">Overview of Windows AutoPilot</a>
+<a href="https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/windows-10-autopilot">Overview of Windows Autopilot</a>
     </td>
   </tr>
   <tr>
@@ -136,18 +136,18 @@ The following table summarizes various Windows 10 deployment scenarios. The scen
 
 
 >[!IMPORTANT]
->The Windows AutoPilot and Subscription Activation scenarios require that the beginning OS be Windows 10 version 1703, or later.<br>
->Except for clean install scenarios such as traditional bare metal and Windows AutoPilot, all the methods described can optionally migrate apps and settings to the new OS. 
+>The Windows Autopilot and Subscription Activation scenarios require that the beginning OS be Windows 10 version 1703, or later.<br>
+>Except for clean install scenarios such as traditional bare metal and Windows Autopilot, all the methods described can optionally migrate apps and settings to the new OS. 
 
 ## Modern deployment methods
 
 Modern deployment methods embrace both traditional on-prem and cloud services to deliver a simple, streamlined, cost effective deployment experience.
 
-### Windows AutoPilot
+### Windows Autopilot
 
-Windows AutoPilot is a new suite of capabilities designed to simplify and modernize the deployment and management of new Windows 10 PCs. Windows AutoPilot enables IT professionals to customize the Out of Box Experience (OOBE) for Windows 10 PCs and provide end users with a fully configured new Windows 10 device after just a few clicks. There are no images to deploy, no drivers to inject, and no infrastructure to manage. Users can go through the deployment process independently, without the need consult their IT administrator.
+Windows Autopilot is a new suite of capabilities designed to simplify and modernize the deployment and management of new Windows 10 PCs. Windows Autopilot enables IT professionals to customize the Out of Box Experience (OOBE) for Windows 10 PCs and provide end users with a fully configured new Windows 10 device after just a few clicks. There are no images to deploy, no drivers to inject, and no infrastructure to manage. Users can go through the deployment process independently, without the need consult their IT administrator.
 
-For more information about Windows AutoPilot, see [Overview of Windows AutoPilot](https://docs.microsoft.com/en-us/windows/deployment/windows-10-auto-pilot) and [Modernizing Windows deployment with Windows AutoPilot](https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-autopilot/).
+For more information about Windows Autopilot, see [Overview of Windows Autopilot](https://docs.microsoft.com/en-us/windows/deployment/windows-10-auto-pilot) and [Modernizing Windows deployment with Windows Autopilot](https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-autopilot/).
 
 ### In-place upgrade
 

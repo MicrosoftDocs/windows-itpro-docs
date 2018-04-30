@@ -73,6 +73,7 @@ The package contains the following folders:
     ![Image of notification to collect package](images/atp-notification-collect-package.png)
 
     The Action center shows the submission information:
+
     ![Image of investigation package in action center](images/atp-action-center-package-collection.png)
 
     - **Submission time** - Shows when the action was submitted.
@@ -247,5 +248,5 @@ All other related details are also shown, for example, submission time, submitti
 
 ![Image of action center with information](images/atp-action-center-with-info.png)
 
-## Related topics
+## Related topic
 - [Take response actions on a file](respond-file-alerts-windows-defender-advanced-threat-protection.md)

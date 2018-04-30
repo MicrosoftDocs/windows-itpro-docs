@@ -45,26 +45,26 @@ Recent additions to the downloads for Surface devices provide you with options t
 ## Surface Book 2
 
 
-Download the following updates for Surface Book 2 from the Microsoft Download Center.
+Download the following updates for [Surface Book 2 from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=56261).
 * SurfaceBook2_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
 
 ## Surface Laptop
 
 
-Download the following updates for Surface Laptop from the Microsoft Download Center.
+Download the following updates for [Surface Laptop from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55489).
 * SurfaceLaptop_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
 
 ## Surface Pro
 
 
-Download the following updates for Surface Pro (Model 1796) from the Microsoft Download Center.
+Download the following updates for [Surface Pro (Model 1796) from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55484).
 
 * SurfacePro_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
 
 ## Surface Pro with LTE Advanced
 
 
-Download the following updates for Surface Pro with LTE Advanced from the Microsoft Download Center.
+Download the following updates for [Surface Pro with LTE Advanced from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=56278).
 * SurfacePro_LTE_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
 
 ## Surface Studio

@@ -11,7 +11,7 @@ ms.pagetype: edu
 ROBOTS: noindex,nofollow
 author: CelesteDG
 ms.author: celested
-ms.date: 12/11/2017
+ms.date: 03/18/2018
 ---
 
 # IT Admin Trial in a Box Guide
@@ -45,8 +45,10 @@ If you run into any problems while following the steps in this guide, or you hav
 To try out the IT admin tasks, start by logging in as an IT admin.
 
 1. Turn on **Device A** and ensure you plug in the PC to an electrical outlet.
-2. Log in to **Device A** using the **Administrator Username** and **Administrator Password** included in the **Credentials Sheet** located in your kit.
-3. Connect to your school's Wi-Fi network or connect with a local Ethernet connection.
+2. Connect to your school's Wi-Fi network or connect with a local Ethernet connection.
+   >**Note**: If your Wi-Fi network requires a web browser login page to connect to the Internet you should connect using the Ethernet port. If your Wi-Fi network has additional restrictions that will prevent the device from connecting to the internet without registration you should consider using Device A from a different network.
+
+3. Log in to **Device A** using the **Administrator Username** and **Administrator Password** included in the **Credentials Sheet** located in your kit.
 4. Note the serial numbers on the Trial in a Box devices and register both devices with the hardware manufacturer to activate the manufacturer's warranty.
 
 </br>
@@ -98,7 +100,7 @@ If you've previously used Set up School PCs to provision student devices, you ca
     - Set up School PCs will change some account management logic so that it sets the expiration time for an account to 180 days (without requiring sign-in). 
     - This setting also increases the maximum storage to 100% of the available disk space. This prevents the student's account from being erased if the student stores a lot of files or data or if the student doesn't use the PC over a prolonged period.
   - **Let guests sign-in to these PCs** allows guests to use student PCs without a school account. If you select this option, a **Guest** account button will be added in the PC's sign-in screen to allow anyone to use the PC.
-  - **Enable Windows 10 Automatic Redeployment** enables IT admins to quickly remove personal files, apps, and settings, and reset Windows 10 devices from the lock screen any time and apply original settings and management enrollment the student PC is returned to a fully configured or known approved state. For more info, see [Windows Automatic Redeployment](https://docs.microsoft.com/en-us/education/windows/windows-automatic-redeployment).
+  - **Enable Windows 10 Autopilot Reset** enables IT admins to quickly remove personal files, apps, and settings, and reset Windows 10 devices from the lock screen any time and apply original settings and management enrollment the student PC is returned to a fully configured or known approved state. For more info, see [Autopilot Reset](https://docs.microsoft.com/en-us/education/windows/autopilot-reset).
   - **Lock screen background** shows the default backgroudn used for student PCs provisioned by Set up School PCs. Select **Browse** to change the default.
 
 7. **Set up the Take a Test app** configures the device for taking quizzes and high-stakes assessments by some providers like Smarter Balanced. Windows will lock down the student PC so that students can't access anything else while taking the test.
@@ -150,7 +152,7 @@ A provisioning package is a method for applying settings to Windows 10 without n
 
     ![The first screen to set up a new PC in Windows 10 Fall Creators Update](images/win10_oobe_firstscreen.png)
 
-    If the PC is past the account setup screen, reset the PC to start over. To reset the PC, go to **Settings > Update & security > Recovery > Reset this PC**.
+    If you go past the region selection screen, select **Ctrl + Shift + F3** which will prompt the "System Preparation Tool." Select **Okay** in the tool to return to the region selection screen. If this doesn't work, reset the PC by going to **Settings > Update & Security > Recovery > Reset this PC.**
 
 2. Insert the USB drive into **Device B**. Windows will recognize the drive and automatically install the provisioning package. 
 3. When prompted, remove the USB drive. You can then use the USB drive to start provisioning another student PC.
@@ -231,10 +233,10 @@ The Microsoft Store for Education is where you can shop for more apps for your s
 Update settings for all devices in your tenant by adding the **Documents** and **Downloads** folders to all devices managed in Intune for Education.
 
 1. Go to the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>.
-2. Select **Group > All Devices > Settings** and expand **Windows interface customizations**.
+2. Select **Group > All Devices > Settings** and expand **Windows interface settings**.
 3. In **Choose folders that appear in the Start menu**, select **Documents** and **Downloads**.
 
-    ![Choose folders that appear in the Start menu](images/i4e_groups_alldevices_newfolders.png)
+    ![Choose folders that appear in the Start menu](images/screenshot-bug.png)
 
 4. **Save** your changes.
 
@@ -258,6 +260,16 @@ Follow these instructions to confirm if you configured your tenant correctly and
     2. From the **Microsoft Store**, click **...** (See more) and select **Downloads and updates**.
     3. In the **Downloads and updates** page, click **Get updates**.
 * [Try the BYOD scenario](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#connect-other-devices-to-your-cloud-infrastructure) 
+
+## Update your apps
+
+Microsoft Education works hard to bring you the most current Trial in a Box program experience. As a result, you may need to update your apps to get our latest innovations. 
+
+For more information about checking for updates, and how to optionally turn on automatic app updates, see the following articles:
+
+- [Check updates for apps and games from Microsoft Store](https://support.microsoft.com/en-us/help/4026259/microsoft-store-check-updates-for-apps-and-games)
+
+- [Turn on automatic app updates](https://support.microsoft.com/en-us/help/15081/windows-turn-on-automatic-app-updates)
 
 
 ## Get more info

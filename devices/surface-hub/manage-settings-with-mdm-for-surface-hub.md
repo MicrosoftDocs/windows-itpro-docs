@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub, mobility
 author: jdeckerms
 ms.author: jdecker
-ms.date: 01/17/2018
+ms.date: 03/07/2018
 ms.localizationpriority: medium
 ---
 
@@ -24,21 +24,8 @@ Surface Hub has been validated with Microsoft’s first-party MDM providers:
 
 You can also manage Surface Hubs using any third-party MDM provider that can communicate with Windows 10 using the MDM protocol.
 
->[!NOTE]
->[Azure Active Directory conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access) is not currently available for Surface Hub devices.
-
 ## <a href="" id="enroll-into-mdm"></a>Enroll a Surface Hub into MDM
-You can enroll your Surface Hubs using bulk or manual enrollment.
-
-> [!NOTE]
-> You can join your Surface Hub to Azure Active Directory (Azure AD) to manage admin groups on the device. However, Surface Hub does not currently support automatic enrollment to Microsoft Intune through Azure AD join. If your organization automatically enrolls Azure AD-joined devices into Intune, you must disable this policy for Surface Hub before joining the device to Azure AD.
->
-> **To enable automatic enrollment for Microsoft Intune**
-> 1. In the [Azure classic portal](https://manage.windowsazure.com/), navigate to the **Active Directory** node and select your directory. 
-> 2. Click the **Applications** tab, then click **Microsoft Intune**.
-> 3. Under **Manage devices for these users**, click **Groups**. 
-> 4. Click **Select Groups**, then select the groups of users you want to automatically enroll into Intune. **Do not include accounts that are used to enroll Surface Hubs into Intune.**
-> 5. Click the checkmark button, then click **Save**.
+You can enroll your Surface Hubs using bulk, manual, or automatic enrollment.
 
 ### Bulk enrollment
 **To configure bulk enrollment**
@@ -53,6 +40,20 @@ You can enroll your Surface Hubs using bulk or manual enrollment.
 3. Select **This device**, and navigate to **Device management**.
 4. Under **Device management**, select **+ Device management**.
 5. Follow the instructions in the dialog to connect to your MDM provider.
+
+### Automatic enrollment via Azure Active Directory join
+
+Surface Hub now supports the ability to automatically enroll in Intune by joining the device to Azure Active Directory. 
+
+**To enable automatic enrollment for Microsoft Intune**
+1. In the [Azure classic portal](https://manage.windowsazure.com/), navigate to the **Active Directory** node and select your directory. 
+2. Click the **Applications** tab, then click **Microsoft Intune**.
+3. Under **Manage devices for these users**, click **Groups**. 
+4. Click **Select Groups**, then select the groups of users you want to automatically enroll into Intune. 
+5. Click the checkmark button, then click **Save**.
+
+For more information, see [Enable Windows 10 automatic enrollment](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment).
+
 
 ## Manage Surface Hub settings with MDM
 
@@ -147,7 +148,7 @@ The following tables include info on Windows 10 settings that have been validate
 
 | Setting | Details | CSP reference | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML\*? |
 | --- | --- | --- |---- | --- | --- |
-| Reboot the device immediately | Use in conjunction with OMS to minimize support costs – see [Monitor your Microsoft Surface Hub](monitor-surface-hub.md). | ./Vendor/MSFT/Reboot/RebootNow <br> See [Reboot CSP](https://msdn.microsoft.com/library/windows/hardware/mt720802.aspx) | No | No | Yes |
+| Reboot the device immediately | Use in conjunction with OMS to minimize support costs – see [Monitor your Microsoft Surface Hub](monitor-surface-hub.md). | ./Vendor/MSFT/Reboot/RebootNow <br> See [Reboot CSP](https://msdn.microsoft.com/library/windows/hardware/mt720802.aspx) | Yes | No | Yes |
 | Reboot the device at a scheduled date and time | See above. | ./Vendor/MSFT/Reboot/Schedule/Single <br> See [Reboot CSP](https://msdn.microsoft.com/library/windows/hardware/mt720802.aspx) |  Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 | Reboot the device daily at a scheduled date and time | See above. | ./Vendor/MSFT/Reboot/Schedule/DailyRecurrent <br> See [Reboot CSP](https://msdn.microsoft.com/library/windows/hardware/mt720802.aspx) |  Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 \*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
@@ -212,38 +213,9 @@ The data type is also stated in the CSP documentation. The most common data type
 <span id="example-intune">
 ## Example: Manage Surface Hub settings with Microsoft Intune
 
-You can use Microsoft Intune to manage Surface Hub settings. 
+You can use Microsoft Intune to manage Surface Hub settings. For custom settings, follow the instructions in [How to configure custom device settings in Microsoft Intune](https://docs.microsoft.com/intune/custom-settings-configure). For **Platform**, select **Windows 10 and later**, and in **Profile type**, select **Device restrictions (Windows 10 Team)**.
 
-**To create a configuration policy from a template**
 
-You'll use the **Windows 10 Team general configuration policy** as the template.
-
-1. On the [Intune management portal](https://manage.microsoft.com), sign in with your Intune administrator account.
-2. On the left-hand navigation menu, click **Policy**.
-3. In the Overview page, click **Add Policy**.
-4. On **Select a template for the new policy**, expand **Windows**, select **General Configuration (Windows 10 Team and later)**, and then click **Create Policy**.
-
-    ![template for Windows 10 Team](images/intune-template.png)
-5. Configure your policy, then click **Save Policy**
-   
-    ![save policy](images/intune-save-policy.png)
-6. When prompted, click **Yes** to deploy your new policy to a user or device group. For more information, see [Use groups to manage users and devices in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
-
-**To create a custom configuration policy**
-
-You’ll need to create a custom policy using the **Custom Configuration (Windows 10 Desktop and Mobile and later)** template to manage settings that are not available in the **Windows 10 Team general configuration policy** template. 
-
-1. On the [Intune management portal](https://manage.microsoft.com), sign in with your Intune administrator account.
-2. On the left-hand navigation menu, click **Policy**.
-3. On the Overview page, click **Add Policy**.
-4. On **Select a template for the new policy**, expand **Windows**, select **Custom Configuration (Windows 10 Desktop and Mobile and later)**, and then click **Create Policy**.
-5. Type a name and optional description for the policy.
-6. Under OMA-URI Settings, click **Add**.
-7. Complete the form to create a new setting, and then click **OK**.
-
-    ![example of OMA URI form](images/oma-uri.png)
-8. Repeat Steps 6 and 7 for each setting you want to configure with this policy.
-9. After you're done, click **Save Policy** and deploy it to a user or device group. 
 
 <span id="example-sccm">
 ## Example: Manage Surface Hub settings with System Center Configuration Manager

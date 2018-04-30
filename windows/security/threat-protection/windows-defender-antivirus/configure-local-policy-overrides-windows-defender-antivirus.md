@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 04/17/2018
 ---
 
 # Prevent or allow users to locally modify Windows Defender AV policy settings
@@ -91,12 +91,14 @@ You can disable this setting to ensure that only globally defined lists (such as
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration**.
 
-4.  Click **Policies** then **Administrative templates**.
+4.  Click **Administrative templates**.
 
 5.  Expand the tree to **Windows components > Windows Defender Antivirus**.
 
 6. Double-click the **Configure local administrator merge behavior for lists** setting and set the option to **Enabled**. Click **OK**. 
 
+> [!NOTE]
+> If you disable local list merging, it will override Controlled folder access settings in Windows Defender Exploit Guard. It also overrides any protected folders or allowed apps set by the local administrator. For more information about Controlled folder access settings, see [Enable Controlled folder access](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard).
 
 
 ## Related topics

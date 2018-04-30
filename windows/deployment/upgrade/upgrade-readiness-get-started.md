@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
-ms.date: 09/20/2017
+ms.date: 03/20/2018
 ---
 
 # Get started with Upgrade Readiness
@@ -25,24 +25,19 @@ When you are ready to begin using Upgrade Readiness, perform the following steps
 
 1. Review [data collection and privacy](#data-collection-and-privacy) information.
 2. [Add Upgrade Readiness to OMS](#add-upgrade-readiness-to-operations-management-suite).
-3. [Enable data sharing](#enable-data-sharing).
-4. [Deploy required updates](#deploy-the-compatibility-update-and-related-kbs) to computers, and validate using a pilot deployment.
-5. [Deploy Upgrade Readiness at scale](#deploy-upgrade-readiness-at-scale).
+3. [Enroll devices in Windows Analytics](#enroll-devices-in-windows-analytics).
+4. [Use Upgrade Readiness to manage Windows Upgrades](#use-upgrade-readiness-to-manage-windows-upgrades) once your devices are enrolled.
 
 ## Data collection and privacy 
 
-To enable system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what diagnostic data Microsoft collects and how that data is used and protected by Microsoft, see the following topics:
-
-- [Configure Windows diagnostic data in your organization](/windows/configuration/configure-windows-diagnostic-data-in-your-organization)
-- [Manage connections from Windows operating system components to Microsoft services](/windows/configuration/manage-connections-from-windows-operating-system-components-to-microsoft-services)
-- [Windows 7, Windows 8, and Windows 8.1 appraiser diagnostic data events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)
+To enable system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what diagnostic data Microsoft collects and how that data is used and protected by Microsoft, see the following topics, refer to [Frequently asked questions and troubleshooting Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-FAQ-troubleshooting), which discusses the issues and provides links to still more detailed information.
 
 ## Add Upgrade Readiness to Operations Management Suite
 
 Upgrade Readiness is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud based services for managing your on-premises and cloud environments. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
 
 >[!IMPORTANT]
->Upgrade Readiness is a free solution for Azure subsribers. When configured correctly, all data associated with the Upgrade Readiness solution are exempt from billing in both OMS and Azure. Upgrade Readiness data **do not** count toward OMS daily upload limits.
+>Upgrade Readiness is a free solution for Azure subscribers. When configured correctly, all data associated with the Upgrade Readiness solution are exempt from billing in both OMS and Azure. Upgrade Readiness data **do not** count toward OMS daily upload limits. The Upgrade Readiness service will ingest a full snapshot of your data into your OMS workspace on a daily basis. Each snapshot includes all of your devices that have been active within the past 30 days regardless of your OMS retention period.
 
 If you are already using OMS, you’ll find Upgrade Readiness in the Solutions Gallery. Select the **Upgrade Readiness** tile in the gallery and then click **Add** on the solution's details page. Upgrade Readiness is now visible in your workspace. While you have this dialog open, you should also consider adding the [Device Health](../update/device-health-monitor.md) and [Update Compliance](../update/update-compliance-monitor.md) solutions as well, if you haven't already. To do so, just select the check boxes for those solutions.
 
@@ -57,88 +52,12 @@ If you are not using OMS:
 
 5.  To add the Upgrade Readiness solution to your workspace, go to the **Solutions Gallery**. Select the **Upgrade Readiness** tile in the gallery and then select **Add** on the solution’s details page. The solution is now visible on your workspace. Note that you may need to scroll to find Upgrade Readiness.
 
+## Enroll devices in Windows Analytics
 
-### Copy your commercial ID key
-
-Microsoft uses a unique commercial ID to map information from user computers to your OMS workspace. This should be generated for you automatically. Copy your commercial ID key in OMS and then deploy it to user computers.
-
+Once you've added Update Compliance to Microsoft Operations Management Suite, you can now start enrolling the devices in your organization. For full instructions, see [Enrolling devices in Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started).
 
 
 
+## Use Upgrade Readiness to manage Windows Upgrades
 
-1.  On the **Settings** dashboard, navigate to the **Windows telemetry** panel.
-
-    ![Operations Management Suite dialog showing settings icon (a gear) in the title bar indicated by a red box.](../images/upgrade-analytics-settings.png)
-
-2. On the **Connected Sources** tab, navigate to the Windows telemetry panel.
-
-    >**Important**<br> Regenerate a commercial ID key only if your original ID key can no longer be used. Regenerating a commercial ID key resets the data in your workspace for all solutions that use the ID. Additionally, you’ll need to deploy the new commercial ID key to user computers again.
-
-
-
-## Enable data sharing
-
-To enable data sharing, whitelist the following endpoints. Note that you may need to get approval from your security group to do this.
-
-| **Endpoint**  | **Function**  |
-|---------------------------------------------------------|-----------|
-| `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for Windows 10 computers. User computers send data to Microsoft through this endpoint.
-| `https://vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for operating systems older than Windows 10
-| `https://settings-win.data.microsoft.com` | Enables the compatibility update to send data to Microsoft. 
-| `https://adl.windows.com` | Allows the compatibility update to receive the latest compatibility data from Microsoft. |
-
-Note: The compatibility update KB runs under the computer’s system account. 
-
-### Connection settings
-
-The settings that are used to enable client computers to connect to Windows diagnostic data depend on the type of connection scenario you use. These scenarios are discussed in [this blog post](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) and are summarized below.
-
-| **Connection scenario** | **ClientProxy setting** <BR>in **runconfig.bat**  | **Local computer configuration** |
-|---------------------------------------------------------|-----------|-----------|
-| Direct connection to the Internet (no proxy) | **ClientProxy=Direct** | No additional configuration necessary |
-| WinHTTP proxy  | **ClientProxy=System**  | Specify `netsh winhttp set proxy <server>:<port>` on client computers |
-| Other proxy  |  **ClientProxy=User** | Configure the Windows Registry value: <p style="font-size: 12px"> **HKLM\SOFTWARE\Policies\Microsoft\Windows\DataCollection\DisableEnterpriseAuthProxy** </p> to 0 on client computers |
-
-## Deploy the compatibility update and related KBs
-
-The compatibility update KB scans your computers and enables application usage tracking. If you don’t already have these KBs installed, you can download the applicable version from the Microsoft Update Catalog or deploy it using Windows Server Update Services (WSUS) or your software distribution solution, such as System Center Configuration Manager.
-
-| **Operating System** | **KBs** |
-|----------------------|-----------------------------------------------------------------------------|
-| Windows 10        | The latest cumulative updates must be installed on Windows 10 computers to make sure that the required compatibility updates are installed. You can find the latest cumulative update on the [Microsoft Update Catalog](https://catalog.update.microsoft.com) <P>Note: Windows 10 LTSB is not supported by Upgrade Readiness. See [Upgrade readiness requirements](upgrade-readiness-requirements.md) for more information. |
-| Windows 8.1          | [KB 2976978](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2976978)<br>Performs diagnostics on the Windows 8.1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues may be encountered when the latest Windows operating system is installed. <br>For more information about this KB, see <https://support.microsoft.com/kb/2976978><br><BR>[KB 3150513](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=3150513)<br>Provides updated configuration and definitions for compatibility diagnostics performed on the system.<br>For more information about this KB, see <https://support.microsoft.com/kb/3150513><br>NOTE: KB2976978 must be installed before you can download and install KB3150513.   |
-| Windows 7 SP1        | [KB2952664](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2952664) <br>Performs diagnostics on the Windows 7 SP1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues may be encountered when the latest Windows operating system is installed. <br>For more information about this KB, see <https://support.microsoft.com/kb/2952664><br><BR>[KB 3150513](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=3150513)<br>Provides updated configuration and definitions for compatibility diagnostics performed on the system.<br>For more information about this KB, see <https://support.microsoft.com/kb/3150513><br>NOTE: KB2952664 must be installed before you can download and install KB3150513. |
-
-IMPORTANT: Restart user computers after you install the compatibility update KBs for the first time.
-
-If you are planning to enable IE Site Discovery, you will need to install a few additional KBs.
-
-| **Site discovery** | **KB** |
-|----------------------|-----------------------------------------------------------------------------|
-| [Review site discovery](upgrade-readiness-additional-insights.md#site-discovery)         | [KB3080149](http://www.catalog.update.microsoft.com/Search.aspx?q=3080149)<br>Updates the Diagnostic and Telemetry tracking service to existing devices. This update is only necessary on Windows 7 and Windows 8.1 devices. <br>For more information about this KB, see <https://support.microsoft.com/kb/3150513><br><br>Install the latest [Windows Monthly Rollup](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=security%20monthly%20quality%20rollup). This functionality has been included in Internet Explorer 11 starting with the July 2016 Cumulative Update.  |
-
-### Deploy the Upgrade Readiness deployment script
-
-You can use the Upgrade Readiness deployment script to automate and verify your deployment. 
-
-See [Upgrade Readiness deployment script](upgrade-readiness-deployment-script.md) for information on obtaining and running the script, and for a description of the error codes that can be displayed.
-
->After data is sent from computers to Microsoft, it generally takes 48 hours for the data to populate in Upgrade Readiness. The compatibility update KB takes several minutes to run. If the KB does not get a chance to finish running or if the computers are inaccessible (turned off or sleeping for example), data will take longer to populate in Upgrade Readiness. For this reason, you can expect most your computers to be populated in OMS in about 1-2 weeks after deploying the KB and configuration to user computers.
-
-## Deploy Upgrade Readiness at scale
-
-When you have completed a pilot deployment, you are ready to automate data collection and distribute the deployment script to the remaining computers in your organization.
-
-### Automate data collection
-
-To ensure that user computers are receiving the most up to date data from Microsoft, we recommend that you establish the following data sharing and analysis processes.
-
-- Enable automatic updates for the compatibility update and related KBs. These KBs are updated frequently to include the latest application and driver issue information as we discover it during testing.
-- Schedule the Upgrade Readiness deployment script to automatically run so that you don’t have to manually initiate an inventory scan each time the compatibility update KBs are updated. 
-- Schedule monthly user computer scans to view monthly active computer and usage information.
-
->When you run the deployment script, it initiates a full scan. The daily scheduled task to capture the deltas is created when the update package is installed. For Windows 10 devices, it's already part of the OS. A full scan averages about 2 MB, but the delta scans are very small. The scheduled task is named **Windows Compatibility Appraiser** and can be found in the Task Scheduler Library under Microsoft > Windows > Application Experience. Deltas are invoked via the nightly scheduled task. It attempts to run around 3:00AM every day. If the system is powered off at that time, the task will run when the system is turned on. 
-
-### Distribute the deployment script at scale
-
-Use a software distribution system such as System Center Configuration Manager to distribute the Upgrade Readiness deployment script at scale. For more information, see the [Upgrade Readiness blog](https://blogs.technet.microsoft.com/upgradeanalytics/2016/09/20/new-version-of-the-upgrade-analytics-deployment-script-available/).
+Now that your devices are enrolled, you can move on to [Use Upgrade Readiness to manage Windows Upgrades](https://docs.microsoft.com/windows/deployment/upgrade/use-upgrade-readiness-to-manage-windows-upgrades).

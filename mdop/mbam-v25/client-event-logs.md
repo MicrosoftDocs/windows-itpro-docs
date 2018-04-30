@@ -253,21 +253,18 @@ The following table contains event IDs that can occur on the MBAM Client.
 
  
 
-## Got a suggestion for MBAM?
-
-
-Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 ## Related topics
-
-
 [Technical Reference for MBAM 2.5](technical-reference-for-mbam-25.md)
 
 [Server Event Logs](server-event-logs.md)
 
  
 
- 
+
+## Got a suggestion for MBAM?
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam). 
 
 
 

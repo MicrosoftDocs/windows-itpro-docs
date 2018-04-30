@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic-msft
-ms.date: 01/29/2018
+ms.date: 04/09/2018
 ---
 
 # Manage connections from Windows operating system components to Microsoft services
@@ -25,7 +25,7 @@ Learn about the network connections that Windows components make to Microsoft an
 
 If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider. You can configure diagnostic data at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
 
-You can configure diagnostic data at the Security level, turn off Windows Defender diagnostic data and MSRT reporting, and turn off all other connections to Microsoft network endpoints as described in this article to help prevent Windows from sending any data to Microsoft. There are many reasons why these communications are enabled by default, such as updating malware definitions and maintain current certificate revocation lists, which is why we strongly recommend against this. This data helps us deliver a secure, reliable, and more delightful personalized experience.
+You can configure diagnostic data at the Security/Basic level, turn off Windows Defender diagnostic data and MSRT reporting, and turn off all other connections to Microsoft network endpoints as described in this article to help prevent Windows from sending any data to Microsoft. There are many reasons why these communications are enabled by default, such as updating malware definitions and maintain current certificate revocation lists, which is why we strongly recommend against this. This data helps us deliver a secure, reliable, and more delightful personalized experience.
 
 To help make it easier to deploy settings to restrict connections from Windows 10 to Microsoft, you can apply the [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887). 
 This baseline was created in the same way as the [Windows security baselines](/windows/device-security/windows-security-baselines) that are often used to efficiently configure Windows to a known secure state. 
@@ -36,25 +36,34 @@ You should not extract this package to the windows\\system32 folder because it w
 
 Applying the Windows Restricted Traffic Limited Functionality Baseline is the same as applying each setting covered in this article. 
 It is recommended that you restart a device after making configuration changes to it. 
+Note that **Get Help** and **Give us Feedback** links no longer work after the Windows Restricted Traffic Limited Functionality Baseline is applied.
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
+
+## What's new in Windows 10, version 1803 Enterprise edition
+
+Here's a list of changes that were made to this article for Windows 10, version 1803:
+
+- Added a policy to turn off notifications network usage
+- Added a policy for Microsoft Edge to turn off configuration updates for the Books Library
+- Added a policy for Microsoft Edge to turn off Address Bar drop-down list suggestions
 
 ## What's new in Windows 10, version 1709 Enterprise edition
 
 Here's a list of changes that were made to this article for Windows 10, version 1709:
 
-- Added the Phone calls section.
-- Added the Storage Health section.
-- Added discussion of apps for websites in the Microsoft Store section.
+- Added the Phone calls section
+- Added the Storage Health section
+- Added discussion of apps for websites in the Microsoft Store section
 
 ## What's new in Windows 10, version 1703 Enterprise edition
 
 Here's a list of changes that were made to this article for Windows 10, version 1703:
 
-- Added an MDM policy for Font streaming.
-- Added an MDM policy for Network Connection Status Indicator.
-- Added an MDM policy for the Micosoft Account Sign-In Assistant.
-- Added instructions for removing the Sticky Notes app.
+- Added an MDM policy for Font streaming
+- Added an MDM policy for Network Connection Status Indicator
+- Added an MDM policy for the Micosoft Account Sign-In Assistant
+- Added instructions for removing the Sticky Notes app
 - Added registry paths for some Group Policies
 - Added the Find My Device section
 - Added the Tasks section
@@ -76,29 +85,29 @@ Here's a list of changes that were made to this article for Windows 10, version 
 
 ## <a href="" id="bkmk-othersettings"></a>Management options for each setting
 
-
 The following sections list the components that make network connections to Microsoft services by default. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure diagnostic data at the Security level, turn off Windows Defender diagnostic data and MSRT reporting, and turn off all of these connections.
 
-If you're running Windows 10, they will be included in the next update for the Long Term Servicing Branch.
+>[!NOTE]
+>For some settings, MDM policies only partly cover capabilities available through Group Policy. See each setting’s section for more details.
 
 ### Settings for Windows 10 Enterprise edition 
 
-See the following table for a summary of the management settings for Windows 10 Enterprise, version 1709 and Windows 10 Enterprise, version 1703.
+The following table lists management options for each setting, beginning with Windows 10 Enterprise version 1703.
 
 | Setting | UI | Group Policy | MDM policy | Registry | Command line |
 | - | :-: | :-: | :-: | :-: | :-: |
 | [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | | ![Check mark](images/checkmark.png) | | | |
-| [2. Cortana and Search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
+| [2. Cortana and Search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | 
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [5. Find My Device](#find-my-device) | | ![Check mark](images/checkmark.png) | | | |
 | [6. Font streaming](#font-streaming) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
-| [7. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [7. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  |
 | [8. Internet Explorer](#bkmk-ie) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [9. Live Tiles](#live-tiles) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [10. Mail synchronization](#bkmk-mailsync) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [11. Microsoft Account](#bkmk-microsoft-account) | | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
-| [12. Microsoft Edge](#bkmk-edge) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [12. Microsoft Edge](#bkmk-edge) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  |
 | [13. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [14. Offline maps](#bkmk-offlinemaps) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [15. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
@@ -216,7 +225,7 @@ For Windows 10, Windows Server 2016 with Desktop Experience, and Windows Server 
 
     -or-
 
-- Create the registry path **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot** and then add a REG\_DWORD registry setting, called **DisableRootAutoUpdate**, with a value of 1.
+- Create the registry path **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot** and then add a REG\_DWORD registry setting, named **DisableRootAutoUpdate**, with a value of 1.
 
     -and-
 
@@ -228,7 +237,7 @@ For Windows 10, Windows Server 2016 with Desktop Experience, and Windows Server 
 
 On Windows Server 2016 Nano Server:
 
-- Create the registry path **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot** and then add a REG\_DWORD registry setting, called **DisableRootAutoUpdate**, with a value of 1.
+- Create the registry path **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot** and then add a REG\_DWORD registry setting, named **DisableRootAutoUpdate**, with a value of 1.
 
 >[!NOTE]  
 >CRL and OCSP network traffic is currently whitelisted and will still show up in network traces.  CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of them, but there are many others, such as DigiCert, Thawte, Google, Symantec, and VeriSign.
@@ -253,11 +262,11 @@ You can also apply the Group Policies using the following registry keys:
 
 | Policy                                               | Registry Path                                                                           |
 |------------------------------------------------------|---------------------------------------------------------------------------------------|
-| Allow Cortana                                        | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search!AllowCortana <br/> REG_DWORD: 0|
-| Allow search and Cortana to use location             | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search!AllowSearchToUseLocation <br/> REG_DWORD: 0 |
-| Do not allow web search                              | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search!DisableWebSearch <br/> REG_DWORD: 1 |
-| Don't search the web or display web results in Search| HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search!ConnectedSearchUseWeb <br/> REG_DWORD: 0 |
-| Set what information is shared in Search             | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search!ConnectedSearchPrivacy <br/> REG_DWORD: 3 |
+| Allow Cortana                                        | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search<br/>REG_DWORD: AllowCortana <br/>Value: 0|
+| Allow search and Cortana to use location             | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search<br/>REG_DWORD: AllowSearchToUseLocation <br/>Value: 0 |
+| Do not allow web search                              | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search<br/>REG_DWORD: DisableWebSearch <br/>Value: 1 |
+| Don't search the web or display web results in Search| HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search<br/>REG_DWORD: ConnectedSearchUseWeb <br/>Value: 0 |
+| Set what information is shared in Search             | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search<br/>REG_DWORD: ConnectedSearchPrivacy <br/>Value: 3 |
 
 In Windows 10, version 1507 and Windows 10, version 1511, when you enable the **Don't search the web or display web results in Search** Group Policy, you can control the behavior of whether Cortana searches the web to display web results. However, this policy only covers whether or not web search is performed. There could still be a small amount of network traffic to Bing.com to evaluate if certain Cortana components are up-to-date or not. In order to turn off that network activity completely, you can create a Windows Firewall rule to prevent outbound traffic.
 
@@ -319,14 +328,14 @@ After that, configure the following:
 
     -or -
 
--  Create a new REG\_DWORD registry setting **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\W32time\\TimeProviders\\NtpClient!Enabled** and set it to 0 (zero).
+-  Create a new REG\_DWORD registry setting named **Enabled** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\W32time\\TimeProviders\\NtpClient** and set it to 0 (zero).
 
 
 ### <a href="" id="bkmk-devinst"></a>4. Device metadata retrieval
 
 To prevent Windows from retrieving device metadata from the Internet, apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Device Installation** &gt; **Prevent device metadata retrieval from the Internet**.
 
-You can also create a new REG\_DWORD registry setting **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Device Metadata!PreventDeviceMetadataFromNetwork** to 1 (one).
+You can also create a new REG\_DWORD registry setting named **PreventDeviceMetadataFromNetwork** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Device Metadata** and set it to 1 (one).
 
 ### <a href="" id="find-my-device"></a>5. Find My Device
 
@@ -356,7 +365,7 @@ If you're running Windows 10, version 1607, Windows Server 2016, or later:
 
     -   **true**. Font streaming is enabled.
 
-If you're running Windows 10, version 1507 or Windows 10, version 1511, create a REG\_DWORD registry setting called **DisableFontProviders** in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\FontCache\\Parameters**, with a value of 1.
+If you're running Windows 10, version 1507 or Windows 10, version 1511, create a REG\_DWORD registry setting named **DisableFontProviders** in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\FontCache\\Parameters** with a value of 1.
 
 > [!NOTE]  
 > After you apply this policy, you must restart the device for it to take effect.
@@ -389,7 +398,7 @@ To turn off Insider Preview builds for Windows 10:
 
     -or -
 
--  Create a new REG\_DWORD registry setting **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\PreviewBuilds!AllowBuildPreview** to 0 (zero)
+-  Create a new REG\_DWORD registry setting named **AllowBuildPreview** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\PreviewBuilds** with a vlue of 0 (zero)
 
     -or-
 
@@ -418,8 +427,8 @@ Use Group Policy to manage settings for Internet Explorer.  You can find the Int
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Turn on Suggested Sites| Choose whether an employee can configure Suggested Sites. <br /> Default: Enabled <br /> You can also turn this off in the UI by clearing the **Internet Options** &gt; **Advanced** &gt; **Enable Suggested Sites** check box.|
-| Allow Microsoft services to provide enhanced suggestions as the user types in the Address Bar | Choose whether an employee can configure enhanced suggestions, which are presented to the employee as they type in the address bar. <br /> Default: Enabled|
-| Turn off the auto-complete feature for web addresses | Choose whether auto-complete suggests possible matches when employees are typing web address in the address bar. <br /> Default: Disabled </br> You can also turn this off in the UI by clearing the <strong>Internet Options</strong> &gt; **Advanced** &gt; **Use inline AutoComplete in the Internet Explorer Address Bar and Open Dialog** check box.|
+| Allow Microsoft services to provide enhanced suggestions as the user types in the Address Bar | Choose whether an employee can configure enhanced suggestions, which are presented to the employee as they type in the Address Bar. <br /> Default: Enabled|
+| Turn off the auto-complete feature for web addresses | Choose whether auto-complete suggests possible matches when employees are typing web address in the Address Bar. <br /> Default: Disabled </br> You can also turn this off in the UI by clearing the <strong>Internet Options</strong> &gt; **Advanced** &gt; **Use inline AutoComplete in the Internet Explorer Address Bar and Open Dialog** check box.|
 | Turn off browser geolocation | Choose whether websites can request location data from Internet Explorer. <br /> Default: Disabled|
 | Prevent managing SmartScreen filter | Choose whether employees can manage the SmartScreen Filter in Internet Explorer. <br /> Default: Disabled |
 
@@ -427,11 +436,11 @@ Alternatively, you could use the registry to set the Group Policies.
 
 | Policy                                               | Registry path                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Turn on Suggested Sites| HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Suggested Sites!Enabled <br /> REG_DWORD: 0|
-| Allow Microsoft services to provide enhanced suggestions as the user types in the Address Bar | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\AllowServicePoweredQSA <br /> REG_DWORD: 0|
-| Turn off the auto-complete feature for web addresses | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Explorer\\AutoComplete!AutoSuggest<br /> REG_SZ: **No** |
-| Turn off browser geolocation | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Geolocation!PolicyDisableGeolocation <br /> REG_DWORD: 1 |
-| Prevent managing SmartScreen filter | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\ Internet Explorer\\PhishingFilter!EnabledV9 <br /> REG_DWORD: 0 |
+| Turn on Suggested Sites| HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Suggested Sites<br/>REG_DWORD: Enabled <br />Value: 0|
+| Allow Microsoft services to provide enhanced suggestions as the user types in the Address Bar | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer<br/>REG_DWORD: AllowServicePoweredQSA <br />Value: 0|
+| Turn off the auto-complete feature for web addresses | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\AutoComplete<br/>REG_SZ: AutoSuggest<br />Value: **No** |
+| Turn off browser geolocation | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Geolocation<br/>REG_DWORD: PolicyDisableGeolocation <br />Value: 1 |
+| Prevent managing SmartScreen filter | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\PhishingFilter<br/>REG_DWORD: EnabledV9 <br />Value: 0 |
 
 There are three more Group Policy objects that are used by Internet Explorer:
 
@@ -445,9 +454,9 @@ You can also use registry entries to set these Group Policies.
 
 | Policy                                               | Registry path                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Choose whether employees can configure Compatibility View. | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\BrowserEmulation!MSCompatibilityMode <br /> REG_DWORD: 0|
-| Turn off the flip ahead with page prediction feature | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\FlipAhead!Enabled <br /> REG_DWORD: 0|
-| Turn off background synchronization for feeds and Web Slices | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Feeds!BackgroundSyncStatus <br/> REG_DWORD:0 |
+| Choose whether employees can configure Compatibility View. | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\BrowserEmulation<br/>REG_DWORD: MSCompatibilityMode <br />Value: 0|
+| Turn off the flip ahead with page prediction feature | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\FlipAhead<br/>REG_DWORD: Enabled <br />Value: 0|
+| Turn off background synchronization for feeds and Web Slices | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Feeds<br/>REG_DWORD: BackgroundSyncStatus <br/>Value: 0|
 
 To turn off the home page, enable the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Disable changing home page settings**, and set it to **about:blank**.
 
@@ -477,7 +486,7 @@ To turn off Live Tiles:
 
     -or-
     
--   Create a REG\_DWORD registry setting called **HKEY\_CURRENT\_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\PushNotifications!NoCloudApplicationNotification**, with a value of 1 (one).
+-   Create a REG\_DWORD registry setting named **NoCloudApplicationNotification** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\PushNotifications** with a value of 1 (one).
 
 In Windows 10 Mobile, you must also unpin all tiles that are pinned to Start.
 
@@ -501,7 +510,7 @@ To turn off the Windows Mail app:
 
     -or-
     
--   Create a REG\_DWORD registry setting called **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Mail!ManualLaunchAllowed**, with a value of 0 (zero).
+-   Create a REG\_DWORD registry setting named **ManualLaunchAllowed** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Mail** with a value of 0 (zero).
 
 ### <a href="" id="bkmk-microsoft-account"></a>11. Microsoft Account
 
@@ -511,7 +520,7 @@ To prevent communication to the Microsoft Account cloud authentication service. 
 
     -or-
 
-- Create a REG\_DWORD registry setting called **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System!NoConnectedUser**, with a value of 3.
+- Create a REG\_DWORD registry setting named **NoConnectedUser** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System** with a value of 3.
 To disable the Microsoft Account Sign-In Assistant:
 
 - Apply the Accounts/AllowMicrosoftAccountSignInAssistant MDM policy from the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where 0 is turned off and 1 is turned on.
@@ -530,11 +539,11 @@ Find the Microsoft Edge Group Policy objects under **Computer Configuration** &g
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Allow configuration updates for the Books Library            | Choose whether configuration updates are done for the Books Library. <br /> Default: Not configured       |
+| Allow configuration updates for the Books Library            | Choose whether configuration updates are done for the Books Library. <br /> Default: Disabled       |
 | Configure Autofill                                    | Choose whether employees can use autofill on websites. <br /> Default: Enabled                      |
 | Configure Do Not Track         | Choose whether employees can send Do Not Track headers.<br /> Default: Disabled                     |
 | Configure Password Manager                            | Choose whether employees can save passwords locally on their devices. <br /> Default: Enabled       |
-| Configure search suggestions in Address bar              | Choose whether the address bar shows search suggestions. <br /> Default: Enabled                    |
+| Configure search suggestions in Address Bar              | Choose whether the Address Bar shows search suggestions. <br /> Default: Enabled                    |
 | Configure Windows Defender SmartScreen Filter (Windows 10, version 1703)  <br/> Configure SmartScreen Filter (Windows Server 2016)                      | Choose whether Windows Defender SmartScreen is turned on or off.  <br /> Default: Enabled                            |
 | Allow web content on New Tab page                     | Choose whether a new tab page appears.  <br /> Default: Enabled                                     |
 | Configure Start pages                       | Choose the Start page for domain-joined devices. <br /> Set this to **\<about:blank\>**        |
@@ -545,10 +554,11 @@ The Windows 10, version 1511 Microsoft Edge Group Policy names are:
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Allow address bar drop-down list suggestions         | Choose whether employees can use Address Bar drop-down list suggestions. <br /> Default: Disabled   |
 | Turn off autofill                                    | Choose whether employees can use autofill on websites. <br /> Default: Enabled                      |
 | Allow employees to send Do Not Track headers         | Choose whether employees can send Do Not Track headers.<br /> Default: Disabled                     |
 | Turn off password manager                            | Choose whether employees can save passwords locally on their devices. <br /> Default: Enabled       |
-| Turn off address bar search suggestions              | Choose whether the address bar shows search suggestions. <br /> Default: Enabled                    |
+| Turn off Address Bar search suggestions              | Choose whether the Address Bar shows search suggestions. <br /> Default: Enabled                    |
 | Turn off the SmartScreen Filter                      | Choose whether SmartScreen is turned on or off.  <br /> Default: Enabled                            |
 | Open a new tab with an empty tab                     | Choose whether a new tab page appears.  <br /> Default: Enabled                                     |
 | Configure corporate Home pages                       | Choose the corporate Home page for domain-joined devices. <br /> Set this to **about:blank**        |
@@ -557,14 +567,15 @@ Alternatively, you can configure the Microsoft Group Policies using the followin
 
 | Policy | Registry path |
 | - | - |
-| Allow configuration updates for the Books Library  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\BooksLibrary!AllowConfigurationUpdateForBooksLibrary<br/> REG_DWORD: **0** |
-| Configure Autofill  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main!Use FormSuggest<br/> REG_SZ: **no** |
-| Configure Do Not Track   | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main!DoNotTrack<br/> REG_DWORD: 1 |
-| Configure Password Manager | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main!FormSuggest Passwords<br /> REG_SZ: **no** |
-| Configure search suggestions in Address bar | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\SearchScopes!ShowSearchSuggestionsGlobal <br /> REG_DWORD: 0|
-| Configure Windows Defender SmartScreen Filter (Windows 10, version 1703) | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\PhishingFilter!EnabledV9 <br/> REG_DWORD: 0 |
-| Allow web content on New Tab page  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\SearchScopes!AllowWebContentOnNewTabPage <br/> REG_DWORD: 0 |
-| Configure corporate Home pages | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\ServiceUI!ProvisionedHomePages <br/> REG_DWORD: 0|
+| Allow Address Bar drop-down list suggestions  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\ServiceUI<br/>REG_DWORD name: ShowOneBox<br/>Value: 0|
+| Allow configuration updates for the Books Library  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\BooksLibrary<br/>REG_DWORD name: AllowConfigurationUpdateForBooksLibrary<br/>Value: 0|
+| Configure Autofill  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main<br/>REG_SZ name: Use FormSuggest<br/>Value : **no** |
+| Configure Do Not Track   | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main<br/>REG_DWORD name: DoNotTrack<br/> REG_DWORD: 1 |
+| Configure Password Manager | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main<br/>REG_SZ name: FormSuggest Passwords<br /> REG_SZ: **no** |
+| Configure search suggestions in Address Bar | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\SearchScopes<br/>REG_DWORD name: ShowSearchSuggestionsGlobal <br />Value: 0|
+| Configure Windows Defender SmartScreen Filter (Windows 10, version 1703) | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\PhishingFilter<br/>REG_DWORD name: EnabledV9 <br/>Value: 0 |
+| Allow web content on New Tab page  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\SearchScopes<br/>REG_DWORD name: AllowWebContentOnNewTabPage <br/>Value: 0 |
+| Configure corporate Home pages | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\ServiceUI<br/>REG_DWORD name: ProvisionedHomePages <br/>Value: 0|
 
 
 ### <a href="" id="bkmk-edge-mdm"></a>12.2 Microsoft Edge MDM policies
@@ -577,7 +588,7 @@ The following Microsoft Edge MDM policies are available in the [Policy CSP](http
 | Browser/AllowDoNotTrack                              | Choose whether employees can send Do Not Track headers.<br /> Default: Not allowed                  |
 | Browser/AllowMicrosoftCompatbilityList               | Specify the Microsoft compatibility list in Microsoft Edge. <br /> Default: Enabled                 |
 | Browser/AllowPasswordManager                         | Choose whether employees can save passwords locally on their devices. <br /> Default: Allowed       |
-| Browser/AllowSearchSuggestionsinAddressBar           | Choose whether the address bar shows search suggestions.. <br /> Default: Allowed                   |
+| Browser/AllowSearchSuggestionsinAddressBar           | Choose whether the Address Bar shows search suggestions.. <br /> Default: Allowed                   |
 | Browser/AllowSmartScreen                             | Choose whether SmartScreen is turned on or off.  <br /> Default: Allowed                            |
 | Browser/FirstRunURL                                  | Choose the home page for Microsoft Edge on Windows Mobile 10. <br /> Default: blank                 |
 
@@ -601,7 +612,7 @@ You can turn off NCSI by doing one of the following:
 
 -or-
 
--   Create a REG\_DWORD registry setting called **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\NetworkConnectivityStatusIndicator!NoActiveProbe**, with a value of 1 (one).
+-   Create a REG\_DWORD registry setting named **NoActiveProbe** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\NetworkConnectivityStatusIndicator** with a value of 1 (one).
 
 ### <a href="" id="bkmk-offlinemaps"></a>14. Offline maps
 
@@ -611,7 +622,7 @@ You can turn off the ability to download and update offline maps.
 
     -or-
     
--   Create a REG\_DWORD registry setting called **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Maps!AutoDownloadAndUpdateMapData**, with a value of 0 (zero).
+-   Create a REG\_DWORD registry setting named **AutoDownloadAndUpdateMapData** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Maps** with a value of 0 (zero).
 
     -and-
 
@@ -619,7 +630,7 @@ You can turn off the ability to download and update offline maps.
 
     -or-
 
--   Create a REG\_DWORD registry setting called **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Maps!AllowUntriggeredNetworkTrafficOnSettingsPage**, with a value of 0 (zero).
+-   Create a REG\_DWORD registry setting named **AllowUntriggeredNetworkTrafficOnSettingsPage** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Maps** with a value of 0 (zero).
 
 ### <a href="" id="bkmk-onedrive"></a>15. OneDrive
 
@@ -629,11 +640,11 @@ To turn off OneDrive in your organization:
 
     -or-
 
--   Create a REG\_DWORD registry setting called **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\OneDrive!DisableFileSyncNGSC**, with a value of 1 (one).
+-   Create a REG\_DWORD registry setting named **DisableFileSyncNGSC** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\OneDrive** with a value of 1 (one).
 
     -and-
 
--   Create a REG\_DWORD registry setting called **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\OneDrive\\PreventNetworkTrafficPreUserSignIn**, with a value of 1 (one).    
+-   Create a REG\_DWORD registry setting named **PreventNetworkTrafficPreUserSignIn** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\OneDrive** with a value of 1 (one).    
 
 ### <a href="" id="bkmk-preinstalledapps"></a>16. Preinstalled apps
 
@@ -816,11 +827,11 @@ To turn off **Let apps use advertising ID to make ads more interesting to you ba
 
     -or-
 
--   Create a REG\_DWORD registry setting called **Enabled** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo**, with a value of 0 (zero).
+-   Create a REG\_DWORD registry setting named **Enabled** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo** with a value of 0 (zero).
 
     -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\AdvertisingInfo!DisabledByGroupPolicy**, with a value of 1 (one).
+-   Create a REG\_DWORD registry setting named **DisabledByGroupPolicy** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\AdvertisingInfo** with a value of 1 (one).
 
 To turn off **Let websites provide locally relevant content by accessing my language list**:
 
@@ -828,7 +839,7 @@ To turn off **Let websites provide locally relevant content by accessing my lang
 
     -or-
 
--   Create a new REG\_DWORD registry setting called **HttpAcceptLanguageOptOut** in **HKEY\_CURRENT\_USER\\Control Panel\\International\\User Profile**, with a value of 1.
+-   Create a new REG\_DWORD registry setting named **HttpAcceptLanguageOptOut** in **HKEY\_CURRENT\_USER\\Control Panel\\International\\User Profile** with a value of 1.
 
 To turn off **Let Windows track app launches to improve Start and search results**:
 
@@ -836,7 +847,7 @@ To turn off **Let Windows track app launches to improve Start and search results
 
     -or-
 
-- Create a REG_DWORD registry setting called **Start_TrackProgs** with value of 0 (zero) in **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced**
+- Create a REG_DWORD registry setting named **Start_TrackProgs** in **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced** with value of 0 (zero).
 
 #### Windows Server 2016 and Windows 10, version 1607 and earlier options
 
@@ -853,11 +864,11 @@ To turn off **Let apps use my advertising ID for experiences across apps (turnin
 
     -or-
 
--   Create a REG\_DWORD registry setting called **Enabled** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo**, with a value of 0 (zero).
+-   Create a REG\_DWORD registry setting named **Enabled** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo** with a value of 0 (zero).
 
     -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\AdvertisingInfo!DisabledByGroupPolicy**, with a value of 1 (one).
+-   Create a REG\_DWORD registry setting named **DisabledByGroupPolicy** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\AdvertisingInfo** with a value of 1 (one).
 
 To turn off **Turn on SmartScreen Filter to check web content (URLs) that Microsoft Store apps use**:
 
@@ -885,11 +896,11 @@ To turn off **Turn on SmartScreen Filter to check web content (URLs) that Micros
 
     -or-
 
--   Create a REG\_DWORD registry setting called **EnableWebContentEvaluation** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AppHost**, with a value of 0 (zero).
+-   Create a REG\_DWORD registry setting named **EnableWebContentEvaluation** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AppHost** with a value of 0 (zero).
 
     -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Sofware\\Policies\\Microsoft\\Windows\\System!EnableSmartScreen**, with a value of 0 (zero).
+-   Create a REG\_DWORD registry setting named **EnableSmartScreen** in **HKEY\_LOCAL\_MACHINE\\Sofware\\Policies\\Microsoft\\Windows\\System** with a value of 0 (zero).
 
 To turn off **Send Microsoft info about how I write to help us improve typing and writing in the future**:
 
@@ -914,7 +925,7 @@ To turn off **Let websites provide locally relevant content by accessing my lang
 
     -or-
 
--   Create a new REG\_DWORD registry setting called **HttpAcceptLanguageOptOut** in **HKEY\_CURRENT\_USER\\Control Panel\\International\\User Profile**, with a value of 1.
+-   Create a new REG\_DWORD registry setting named **HttpAcceptLanguageOptOut** in **HKEY\_CURRENT\_USER\\Control Panel\\International\\User Profile** with a value of 1.
 
 To turn off **Let apps on my other devices open apps and continue experiences on this devices**:
 
@@ -926,12 +937,11 @@ To turn off **Let apps on my other devices open apps and continue experiences on
 
     -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System!EnableCdp**, with a value of 0 (zero).
+-   Create a REG\_DWORD registry setting named **EnableCdp** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a value of 0 (zero).
 
 To turn off **Let apps on my other devices use Bluetooth to open apps and continue experiences on this device**:
 
 - Turn off the feature in the UI.
-
 
 ### <a href="" id="bkmk-priv-location"></a>17.2 Location
 
@@ -947,7 +957,7 @@ To turn off **Location for this device**:
 
    -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessLocation**, with a value of 2 (two).
+-   Create a REG\_DWORD registry setting named **LetAppsAccessLocation** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
     -or-
 
@@ -980,7 +990,7 @@ To turn off **Location**:
 
    -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\LocationAndSensors!DisableLocation**, with a value of 1 (one).
+-   Create a REG\_DWORD registry setting named **DisableLocation** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\LocationAndSensors** with a value of 1 (one).
 
     -or-
 
@@ -1008,7 +1018,7 @@ To turn off **Let apps use my camera**:
 
    -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessCamera**, with a value of 2 (two).
+-   Create a REG\_DWORD registry setting named **LetAppsAccessCamera** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
     -or-
 
@@ -1057,7 +1067,7 @@ To turn off **Let apps use my microphone**:
     
     -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessMicrophone**, with a value of 2 (two)
+-   Create a REG\_DWORD registry setting named **LetAppsAccessMicrophone** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two)
 
 To turn off **Choose apps that can use your microphone**:
 
@@ -1065,7 +1075,25 @@ To turn off **Choose apps that can use your microphone**:
 
 ### <a href="" id="bkmk-priv-notifications"></a>17.5 Notifications
 
-In the **Notifications** area, you can choose which apps have access to notifications.
+To turn off notifications network usage:
+
+-   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Notifications** > **Turn off Notifications network usage**
+
+    -   Set to **Enabled**.
+
+    -or-
+
+-   Create a REG\_DWORD registry setting named **NoCloudApplicationNotification** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\PushNotifications** with a value of 1 (one)
+
+    -or-
+
+
+-   Apply the Notifications/DisallowCloudNotification MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-notifications#notifications-disallowcloudnotification), where:
+
+    -   **0**. WNS notifications allowed
+    -   **1**. No WNS notifications allowed
+    
+In the **Notifications** area, you can also choose which apps have access to notifications.
 
 To turn off **Let apps access my notifications**:
 
@@ -1087,7 +1115,7 @@ To turn off **Let apps access my notifications**:
 
        -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessNotifications**, with a value of 2 (two)
+-   Create a REG\_DWORD registry setting named **LetAppsAccessNotifications** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two)
 
 ### <a href="" id="bkmk-priv-speech"></a>17.6 Speech, inking, & typing
 
@@ -1106,15 +1134,15 @@ To turn off the functionality:
 
        -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\InputPersonalization!RestrictImplicitInkCollection**, with a value of 1 (one).
+-   Create a REG\_DWORD registry setting named **RestrictImplicitInkCollection** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\InputPersonalization** with a value of 1 (one).
 
    -or-
 
--   Create a REG\_DWORD registry setting called **AcceptedPrivacyPolicy** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Personalization\\Settings**, with a value of 0 (zero).
+-   Create a REG\_DWORD registry setting named **AcceptedPrivacyPolicy** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Personalization\\Settings** with a value of 0 (zero).
 
    -and-
 
--  Create a REG\_DWORD registry setting called **HarvestContacts** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\InputPersonalization\\TrainedDataStore**, with a value of 0 (zero).
+-  Create a REG\_DWORD registry setting named **HarvestContacts** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\InputPersonalization\\TrainedDataStore** with a value of 0 (zero).
 
 If you're running at least Windows 10, version 1703, you can turn off updates to the speech recognition and speech synthesis models:
 
@@ -1129,7 +1157,7 @@ Apply the Speech/AllowSpeechModelUpdate MDM policy from the [Policy CSP](https:/
 
    -or-
 
-- Create a REG\_DWORD registry setting called **ModelDownloadAllowed** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Speech_OneCore\\Preferences**, with a value of 0 (zero).
+- Create a REG\_DWORD registry setting named **ModelDownloadAllowed** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Speech_OneCore\\Preferences** with a value of 0 (zero).
 
 ### <a href="" id="bkmk-priv-accounts"></a>17.7 Account info
 
@@ -1155,7 +1183,7 @@ To turn off **Let apps access my name, picture, and other account info**:
     
     -or-
 
-- Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessAccountInfo**, with a value of 2 (two).
+- Create a REG\_DWORD registry setting named **LetAppsAccessAccountInfo** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 To turn off **Choose the apps that can access your account info**:
 
@@ -1183,6 +1211,10 @@ To turn off **Choose apps that can access contacts**:
     -   **1**. Force allow
     -   **2**. Force deny
 
+    -or-
+
+- Create a REG\_DWORD registry setting named **LetAppsAccessContacts** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+
 ### <a href="" id="bkmk-priv-calendar"></a>17.9 Calendar
 
 In the **Calendar** area, you can choose which apps have access to an employee's calendar.
@@ -1207,7 +1239,7 @@ To turn off **Let apps access my calendar**:
     
     -or-
 
-- Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessCalendar**, with a value of 2 (two).
+- Create a REG\_DWORD registry setting named **LetAppsAccessCalendar** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 To turn off **Choose apps that can access calendar**:
 
@@ -1237,7 +1269,7 @@ To turn off **Let apps access my call history**:
 
         -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessCallHistory**, with a value of 2 (two).
+-   Create a REG\_DWORD registry setting named **LetAppsAccessCallHistory** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 ### <a href="" id="bkmk-priv-email"></a>17.11 Email
 
@@ -1263,7 +1295,7 @@ To turn off **Let apps access and send email**:
 
      -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessEmail**, with a value of 2 (two).
+-   Create a REG\_DWORD registry setting named **LetAppsAccessEmail** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 ### <a href="" id="bkmk-priv-messaging"></a>17.12 Messaging
 
@@ -1289,7 +1321,7 @@ To turn off **Let apps read or send messages (text or MMS)**:
 
      -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessMessaging**, with a value of 2 (two).
+-   Create a REG\_DWORD registry setting named **LetAppsAccessMessaging** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 To turn off **Choose apps that can read or send messages**:
 
@@ -1319,7 +1351,7 @@ To turn off **Let apps make phone calls**:
 
      -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessPhone**, with a value of 2 (two).
+-   Create a REG\_DWORD registry setting named **LetAppsAccessPhone** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 
 To turn off **Choose apps that can make phone calls**:
@@ -1350,7 +1382,7 @@ To turn off **Let apps control radios**:
 
      -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessRadios**, with a value of 2 (two).
+-   Create a REG\_DWORD registry setting named **LetAppsAccessRadios** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 
 To turn off **Choose apps that can control radios**:
@@ -1379,7 +1411,7 @@ To turn off **Let apps automatically share and sync info with wireless devices t
 
      -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy!LetAppsSyncWithDevices**, with a value of 2 (two).
+-   Create a REG\_DWORD registry setting named **LetAppsSyncWithDevices** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 To turn off **Let your apps use your trusted devices (hardware you've already connected, or comes with your PC, tablet, or phone)**:
 
@@ -1410,7 +1442,7 @@ To change how frequently **Windows should ask for my feedback**:
 
    -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\DataCollection!DoNotShowFeedbackNotifications**, with a value of 1 (one).
+-   Create a REG\_DWORD registry setting named **DoNotShowFeedbackNotifications** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\DataCollection** with a value of 1 (one).
 
    -or-
 
@@ -1431,7 +1463,6 @@ To change how frequently **Windows should ask for my feedback**:
     | Once a week   | 6048000000000               | 1                           |
 
      
-
 To change the level of diagnostic and usage data sent when you **Send your device data to Microsoft**:
 
 -   Click either the **Basic** or **Full** options.
@@ -1442,7 +1473,7 @@ To change the level of diagnostic and usage data sent when you **Send your devic
 
    -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection\\AllowTelemetry**, with a value of 0-3, as appropriate for your deployment (see below for the values for each level). 
+-   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection\\AllowTelemetry** with a value of 0-3, as appropriate for your deployment (see below for the values for each level). 
 
 > [!NOTE] 
 > If the **Security** option is configured by using Group Policy or the Registry, the value will not be reflected in the UI. The **Security** option is only available in Windows 10 Enterprise edition.
@@ -1505,6 +1536,8 @@ To turn off **Let apps run in the background**:
     -   **1**. Force allow
     -   **2**. Force deny
 
+> [!NOTE]
+> Some apps, including Cortana and Search, might not function as expected if you set **Let apps run in the background** to **Force Deny**.
 
 ### <a href="" id="bkmk-priv-motion"></a>17.18 Motion
 
@@ -1528,7 +1561,7 @@ To turn off **Let Windows and your apps use your motion data and collect motion 
     
     -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessMotion**, with a value of 2 (two).
+-   Create a REG\_DWORD registry setting named **LetAppsAccessMotion** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 ### <a href="" id="bkmk-priv-tasks"></a>17.19 Tasks
 
@@ -1581,13 +1614,13 @@ For Windows 10:
 
 - Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client Online AVS Validation**
 
-    -or-
-
-- Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessContacts**, with a value of 2 (two).
-
    -or-
 
 -   Apply the Licensing/DisallowKMSClientOnlineAVSValidation MDM policy from the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where 0 is disabled (default) and 1 is enabled.
+
+   -or-
+
+- Create a REG\_DWORD registry setting named **NoGenTicket** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows NT\\CurrentVersion\\Software Protection Platform** with a value of 1 (one).
 
 For Windows Server 2016 with Desktop Experience or Windows Server 2016 Server Core:
 
@@ -1595,7 +1628,7 @@ For Windows Server 2016 with Desktop Experience or Windows Server 2016 Server Co
 
    -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows NT\\CurrentVersion\\Software Protection Platform!NoGenTicket**, with a value of 1 (one).
+- Create a REG\_DWORD registry setting named **NoGenTicket** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows NT\\CurrentVersion\\Software Protection Platform** with a value of 1 (one).
 
 The Windows activation status will be valid for a rolling period of 180 days with weekly activation status checks to the KMS.
 
@@ -1619,7 +1652,7 @@ You can control if your settings are synchronized:
 
     -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\SettingSync!DisableSettingSync**, with a value of 2 (two) and **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\SettingSync!DisableSettingSyncUserOverride**, with a value of 1 (one).
+-   Create a REG\_DWORD registry setting named **DisableSettingSync** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\SettingSync** with a value of 2 (two) and another named **DisableSettingSyncUserOverride** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\SettingSync** with a value of 1 (one).
 
     -or-
 
@@ -1635,7 +1668,7 @@ You can control if your settings are synchronized:
 
 To turn off Messaging cloud sync:
 
--   Create a REG\_DWORD registry setting called **CloudServiceSyncEnabled** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Messaging**, with a value of 0 (zero).
+-   Create a REG\_DWORD registry setting named **CloudServiceSyncEnabled** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Messaging** with a value of 0 (zero).
 
 ### <a href="" id="bkmk-teredo"></a>21. Teredo
 
@@ -1648,7 +1681,7 @@ You can disable Teredo by using Group Policy or by using the netsh.exe command. 
 
     -or-
 
--   Create a new REG\_SZ registry setting called in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\TCPIP\\v6Transition!Teredo_State**, with a value of **Disabled**.
+-   Create a new REG\_SZ registry setting named **Teredo_State** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\TCPIP\\v6Transition** with a value of **Disabled**.
 
     -or-
 
@@ -1668,7 +1701,7 @@ To turn off **Connect to suggested open hotspots** and **Connect to networks sha
 
     -or-
 
--   Create a new REG\_DWORD registry setting called **AutoConnectAllowedOEM** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\WcmSvc\\wifinetworkmanager\\config**, with a value of 0 (zero).
+-   Create a new REG\_DWORD registry setting named **AutoConnectAllowedOEM** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\WcmSvc\\wifinetworkmanager\\config** with a value of 0 (zero).
 
     -or-
 
@@ -1688,7 +1721,7 @@ You can disconnect from the Microsoft Antimalware Protection Service.
 
     -or-
 
--   Delete the registry setting **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\Updates!DefinitionUpdateFileSharesSources**.
+-   Delete the registry setting **named** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\Updates**.
 
     -or-
 
@@ -1701,8 +1734,6 @@ You can disconnect from the Microsoft Antimalware Protection Service.
     -and-
     
     From an elevated Windows PowerShell prompt, run **set-mppreference -Mapsreporting 0** 
-
-
 
 You can stop sending file samples back to Microsoft.
 
@@ -1734,7 +1765,7 @@ You can stop downloading definition updates:
 
     -or-
 
--   Create a new REG\_SZ registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\Updates!FallbackOrder**, with a value of **FileShares**.
+-   Create a new REG\_SZ registry setting named **FallbackOrder** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\Updates** with a value of **FileShares**.
 
 For Windows 10 only, you can stop Enhanced Notifications:
 
@@ -1773,7 +1804,7 @@ If you're running Windows 10, version 1607 or later, you only need to enable the
     
     -or-
 
--   Create a new REG\_DWORD registry setting in **HKEY\_CURRENT\_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent!DisableWindowsSpotlightFeatures**, with a value of 1 (one).
+-   Create a new REG\_DWORD registry setting named **DisableWindowsSpotlightFeatures** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a value of 1 (one).
 
 If you're not running Windows 10, version 1607 or later, you can use the other options in this section.
 
@@ -1782,7 +1813,7 @@ If you're not running Windows 10, version 1607 or later, you can use the other o
     -   **Personalization** > **Lock screen** > **Background** > **Windows spotlight**, select a different background, and turn off **Get fun facts, tips, tricks and more on your lock screen**.
 
         > [!NOTE]  
-        > In Windows 10, version 1507 and Windows 10, version 1511, this setting was called **Show me tips, tricks, and more on the lock screen**.
+        > In Windows 10, version 1507 and Windows 10, version 1511, this setting was named **Show me tips, tricks, and more on the lock screen**.
 
     -   **Personalization** &gt; **Start** &gt; **Occasionally show suggestions in Start**.
 
@@ -1798,20 +1829,20 @@ If you're not running Windows 10, version 1607 or later, you can use the other o
         -   Set the **Turn off fun facts, tips, tricks, and more on lock screen** check box.
 
         > [!NOTE] 
-        > This will only take effect if the policy is applied before the first logon. If you cannot apply the **Force a specific default lock screen image** policy before the first logon to the device, you can apply this policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Do not display the lock screen**. Alternatively, you can create a new REG\_SZ registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization!LockScreenImage**, with a value of **C:\\windows\\web\\screen\\lockscreen.jpg** and create a new REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization!LockScreenOverlaysDisabled**, with a value of 1 (one).
+        > This will only take effect if the policy is applied before the first logon. If you cannot apply the **Force a specific default lock screen image** policy before the first logon to the device, you can apply this policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Do not display the lock screen**. Alternatively, you can create a new REG\_SZ registry setting nameed **LockScreenImage** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** with a value of **C:\\windows\\web\\screen\\lockscreen.jpg** and create a new REG\_DWORD registry setting named **LockScreenOverlaysDisabled** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** with a value of 1 (one).
             
 
     -   **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Do not show Windows tips**.
 
     -or-
 
-    -   Create a new REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent!DisableSoftLanding**, with a value of 1 (one).
+    -   Create a new REG\_DWORD registry setting named **DisableSoftLanding** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a value of 1 (one).
 
     -   **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Turn off Microsoft consumer experiences**.
 
         -or-
 
-    -   Create a new REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent!DisableWindowsConsumerFeatures**, with a value of 1 (one).
+    -   Create a new REG\_DWORD registry setting named **DisableWindowsConsumerFeatures** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a value of 1 (one).
 
 For more info, see [Windows Spotlight on the lock screen](windows-spotlight.md).
 
@@ -1826,13 +1857,13 @@ On Windows Server 2016, this will block Microsoft Store calls from Universal Win
 
     -or-
 
-    -   Create a new REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsStore!DisableStoreApps**, with a value of 1 (one).
+    -   Create a new REG\_DWORD registry setting named **DisableStoreApps** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsStore** with a value of 1 (one).
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Store** &gt; **Turn off Automatic Download and Install of updates**.
 
     -or-
 
-    -   Create a new REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsStore!AutoDownload**, with a value of 2 (two).
+    -   Create a new REG\_DWORD registry setting named **AutoDownload** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsStore** with a value of 2 (two).
 
 ### <a href="" id="bkmk-apps-for-websites"></a>26.1 Apps for websites
 
@@ -1868,7 +1899,7 @@ You can find the Delivery Optimization Group Policy objects under **Computer Con
 | Max Cache Size            | Lets you specify the maximum cache size as a percentage of disk size. <br /> The default value is 20, which represents 20% of the disk.|
 | Max Upload Bandwidth      | Lets you specify the maximum upload bandwidth (in KB/second) that a device uses across all concurrent upload activity. <br /> The default value is 0, which means unlimited possible bandwidth.|
 
-You can also set the **Download Mode** policy by creating a new REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization!DODownloadMode**, with a value of 100 (one hundred).
+You can also set the **Download Mode** policy by creating a new REG\_DWORD registry setting named **DODownloadMode** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization** with a value of 100 (one hundred).
 
 ### <a href="" id="bkmk-wudo-mdm"></a>27.3 Delivery Optimization MDM policies
 
@@ -1903,15 +1934,15 @@ For more info about Delivery Optimization in general, see [Windows Update Delive
 
 You can turn off Windows Update by setting the following registry entries:
 
--   Add a REG\_DWORD value called **DoNotConnectToWindowsUpdateInternetLocations** to **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate** and set the value to 1.
+-   Add a REG\_DWORD value named **DoNotConnectToWindowsUpdateInternetLocations** to **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate** and set the value to 1.
 
     -and-
 
--   Add a REG\_DWORD value called **DisableWindowsUpdateAccess** to **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate** and set the value to 1.
+-   Add a REG\_DWORD value named **DisableWindowsUpdateAccess** to **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate** and set the value to 1.
 
     -and-
 
--   Add a REG\_DWORD value called **UseWUServer** to **HKEY\_LOCAL\_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate\AU** and set the value to 1.
+-   Add a REG\_DWORD value named **UseWUServer** to **HKEY\_LOCAL\_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate\AU** and set the value to 1.
 
     -or-
 
@@ -1928,7 +1959,7 @@ You can turn off Windows Update by setting the following registry entries:
 
 You can turn off automatic updates by doing one of the following. This is not recommended.
 
--   Add a REG\_DWORD value called **AutoDownload** to **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\WindowsStore\\WindowsUpdate** and set the value to 5.
+-   Add a REG\_DWORD value named **AutoDownload** to **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\WindowsStore\\WindowsUpdate** and set the value to 5.
 
     -or-
 

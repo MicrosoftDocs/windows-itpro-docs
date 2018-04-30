@@ -11,7 +11,7 @@ ms.pagetype: edu
 ROBOTS: noindex,nofollow
 author: CelesteDG
 ms.author: celested
-ms.date: 01/12/2017
+ms.date: 03/18/2018
 ---
 
 # Educator Trial in a Box Guide
@@ -34,6 +34,7 @@ ms.date: 01/12/2017
 > [!VIDEO https://www.youtube.com/embed/3nqooY9Iqq4]
 
 </br>
+</br>
 
 
 ![Log in to Device A and connect to the school network](images/edu-TIB-setp-1-jump.png) 
@@ -41,9 +42,13 @@ ms.date: 01/12/2017
 To try out the educator tasks, start by logging in as a teacher.
 
 1. Turn on **Device A** and ensure you plug in the PC to an electrical outlet.
-2. Log in to **Device A** using the **Teacher Username** and **Teacher Password** included in the **Credentials Sheet** located in your kit.
-3. Connect to your school's Wi-Fi network or connect with a local Ethernet connection.
+2. Connect to your school's Wi-Fi network or connect with a local Ethernet connection.
+   >**Note**: If your Wi-Fi network requires a web browser login page to connect to the Internet you should connect using the Ethernet port. If your Wi-Fi network has additional restrictions that will prevent the device from connecting to the internet without registration you should consider using Device A from a different network.
+   
+3. Log in to **Device A** using the **Teacher Username** and **Teacher Password** included in the **Credentials Sheet** located in your kit.
 
+
+</br>
 </br>
 
 ![Improve student reading speed and comprehension](images/edu-TIB-setp-2-jump.png) 
@@ -76,6 +81,9 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
   | ![Word Online Text to Speech](images/wordonline_tts.png) | ![Word Online Text Preferences](images/wordonline_text_preferences.png) | ![Word Online Grammar Options](images/wordonline_grammar_options.png) | ![Word Online Line Focus](images/wordonline_line_focus.png) |
 
 </br>
+</br>
+
+
 
 ![Spark communication, critical thinking, and creativity with Microsoft Teams](images/edu-TIB-setp-3-jump.png) 
 ## <a name="edu-task3"></a>3. Spark communication, critical thinking, and creativity in the classroom
@@ -95,6 +103,7 @@ Take a guided tour of Microsoft Teams and test drive this digital hub.
 2. Use your school credentials provided in the **Credentials Sheet**.
 
 </br>
+</br>
 
 ![Expand classroom collaboration and interaction with OneNote](images/edu-TIB-setp-4-jump.png) 
 ## <a name="edu-task4"></a>4. Expand classroom collaboration and interaction between students
@@ -108,6 +117,7 @@ Microsoft OneNote organizes curriculum and lesson plans for teachers and student
 
 **Try this!**
 See how a group project comes together with opportunities to interact with other students and collaborate with peers. This one works best with the digital pen, included with your Trial in a Box.
+When you're not using the pen, just use the magnet to stick it to the left side of the screen until you need it again. 
 
 1. On the **Start** menu, click the OneNote shortcut named **Imagine Giza** to open the **Reimagine the Great Pyramid of Giza project**.
 2. Take the digital pen out of the box and make notes or draw.
@@ -121,11 +131,58 @@ See how a group project comes together with opportunities to interact with other
 
     ![OneNote To Do Tag](images/onenote_checkmark.png)
 
-  - The Researcher tool from the Insert tab can help find answers. 
+  - To find information without leaving OneNote, use the Researcher tool found under the Insert tab. 
 
     ![OneNote Researcher](images/onenote_researcher.png)
 
 </br>
+</br>
+
+<!-- ![Inspire your students to tell their stories through video!](images/edu-tib-setp-5-jump2.png)
+## <a name="edu-task5"></a>5. Engage with students by creating videos
+
+PHOTOS APP VIDEO COMING SOON!
+</br>
+
+The Photos app now has a built-in video editor, making it easy for you and your students to create movies using photos, video clips, music, 3D models, and special effects.  Improve comprehension, unleash creativity, and capture your student’s imagination through video.
+
+**Try this!**
+Use video to create a project summary.
+
+1. Check you have the latest version of Microsoft Photos. Open the **Start** menu and search for **Store**. Select the **See more** button (**…**) and select **Downloads and updates**. Select **Get updates**.   
+2. Open Microsoft Edge and visit <a href="http://aka.ms/PhotosTIB" target="_blank">http://aka.ms/PhotosTIB</a> to download a zip file of the project media.   
+3. Once the download has completed, open the zip file and select **Extract** > **Extract all**.  Select **Browse** and choose the **Pictures** folder as the destination, and then select **Extract**.  
+4. In the **Start** menu, search for **Photos** or select the Photos tile to launch the app.  
+5. Select the first video to preview it full screen. Select **Edit & Create**, then select **Create a video with text**.
+  1. If you don't see the **Edit & Create** menu, select the video and the menu will appear at the top of the screen. 
+6. Name your project “Laser Maze Project.” Hit Enter to continue.   
+7. Select **Add photos and videos** and then **From my collection**. Scroll to select the 6 additional videos and select **Add**.
+8. Drag the videos to the Storyboard, one by one. Your project should look roughly like this:
+
+  ![Photos app layout showing videos added in previous steps](images/photo_app_1.png)
+
+9. Select the first card in the Storyboard (the video of the project materials) and select **Text**, type a title in, a text style, a layout, and select **Done**. 
+10.	Select the third card in the Storyboard (the video of the children assembling the maze) and select **Trim**.  Drag the trim handle on the left to shorten the duration of the clip and select **Done**. 
+11.	Select the last card on the Storyboard and select **3D effects**.
+  1. Position the playback indicator to be roughly 1 second into the video clip, or when the boy moves down to examine the laser.  
+  2. Find the **lightning bolt** effect and click or drag to add it to the scene.  Rotate, scale, and position the effect so it looks like the lightning is coming out of the laser beam and hitting the black back of the mirror.
+  3. Position the blue anchor over the end of the laser pointer in the video and toggle on **Attach to a point** for the lightning bolt effect to anchor the effect in the scene.
+  4. Play back your effect.
+  5. Select **Done** when you have it where you want it.
+
+  ![Lighting bolt effect being added to a video clip](images/photo_app_2.png)
+
+12. Select **Music** and select a track from the **Recommended** music collection.
+  1. The music will update automatically to match the length of your video project, even as you make changes.
+  2. If you don’t see more than a few music options, confirm that you’re connected to Wi-Fi and then close and re-open Microsoft Photos (returning to your project via the **Albums** tab). Additional music files should download in the background.
+13. You can adjust the volume for the background music using the **Music volume** button.  
+14. Preview your video to see how it all came together.
+15. Select **Export or share** and select either the **Small** or **Medium** file size. You can share your video to social media, email, or another apps.  
+
+Check out this use case video of the Photos team partnering with the Bureau Of Fearless Ideas in Seattle to bring the Photos app to local middle school students: <a href="https://www.youtube.com/watch?v=0dFFAu6XwPg" target="_blank">https://www.youtube.com/watch?v=0dFFAu6XwPg</a>
+</br>
+</br>
+</br> -->
 
 ![Further collaborate and problem solve with Minecraft: Education Edition](images/edu-TIB-setp-5-jump.png) 
 ## <a name="edu-task5"></a>5. Get kids to further collaborate and problem solve
@@ -153,8 +210,9 @@ Today, we'll explore a Minecraft world through the eyes of a student.
 9. Explore the world by using the keys on your keyboard.
   * **W** moves forward.
   * **A** moves left.
-  * **D** moves right.
-  * **S** moves backward
+  * **S** moves right.
+  * **D** moves backward.
+  
 
 10. Use your mouse as your "eyes". Just move it to look around.
 11. For a bird's eye view, double-tap the SPACE BAR. Now press the SPACE BAR to fly higher. And then hold the SHIFT key to safely land.
@@ -184,6 +242,15 @@ Bring out the best in students by providing a platform for collaborating, explor
 | <iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/hMmRud4B54o" frameborder="0" allowfullscreen></iframe></br>Watch teachers elevate the education of students using OneNote. | <iframe width="420" height="236" src="https://www.youtube.com/embed/hl9ZQiektJE" frameborder="0" allowfullscreen></iframe></br>Here what other teachers say about using Minecraft: Education Edition in their classrooms. |
 |  |  |
 
+## Update your apps
+
+Microsoft Education works hard to bring you the most current Trial in a Box program experience. As a result, you may need to update your apps to get our latest innovations. 
+
+For more information about checking for updates, and how to optionally turn on automatic app updates, see the following articles:
+
+- [Check updates for apps and games from Microsoft Store](https://support.microsoft.com/en-us/help/4026259/microsoft-store-check-updates-for-apps-and-games)
+
+- [Turn on automatic app updates](https://support.microsoft.com/en-us/help/15081/windows-turn-on-automatic-app-updates)
 
 ## Get more info
 * Learn more at <a href="https://www.microsoft.com/education" target="_blank">microsoft.com/education</a>

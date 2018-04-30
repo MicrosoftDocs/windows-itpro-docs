@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/30/2018
+ms.date: 03/12/2018
 ---
 
 # Policy CSP - Cryptography
@@ -69,6 +69,12 @@ ms.date: 01/30/2018
 Allows or disallows the Federal Information Processing Standard (FIPS) policy.
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP English name: *System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -127,6 +133,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 

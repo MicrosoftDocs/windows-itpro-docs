@@ -8,18 +8,40 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: jdeckerms
-ms.date: 02/12/2018
+ms.date: 04/30/2018
 ---
 
 # Change history for Configure Windows 10
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
+## RELEASE: Windows 10, version 1803
+
+The topics in this library have been updated for Windows 10, version 1803. The following new topics have been added:
+
+- Windows Configuration Designer setting: [AccountManagement](wcd/wcd-accountmanagement.md)
+- Windows Configuration Designer setting: [RcsPresence](wcd/wcd-rcspresence.md)
+
+## April 2018
+
+New or changed topic | Description
+--- | ---
+[Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md) | Updated endpoints.
+[Configure cellular settings for tablets and PCs](provisioning-apn.md) | Added instructions for confirming that the settings were applied.
+
+## March 2018
+
+New or changed topic | Description
+--- | ---
+[Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md) and [Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md) | Added events and fields that were added in the March update.
+Set up a kiosk on Windows 10 Pro, Enterprise, or Education | Renamed it [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](setup-kiosk-digital-signage.md) and reorganized the information to make the choices clearer.
+
+
 ## February 2018
 
 New or changed topic | Description
 --- | ---
-[Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md) | Added events and fields that were added in the February update.
+[Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md) and [Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md) | Added events and fields that were added in the February update.
 [Create a Windows 10 kiosk that runs multiple apps](lock-down-windows-10-to-specific-apps.md) | Added steps for configuring a kiosk in Microsoft Intune.
 [Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md) | Updated the instructions for applying a customized Start layout using Microsoft Intune.
 

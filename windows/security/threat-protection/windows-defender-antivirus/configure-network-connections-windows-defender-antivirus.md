@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 04/04/2018
 ---
 
 # Configure and validate network connections for Windows Defender Antivirus
@@ -19,7 +19,7 @@ ms.date: 04/30/2018
 
 **Applies to:**
 
-- Windows 10 (some instructions are only applicable for Windows 10, version 1703 and later)
+- Windows 10 (some instructions are only applicable for Windows 10, version 1703)
 
 **Audience**
 
@@ -77,7 +77,7 @@ Microsoft Update Service (MU)
 Signature and product updates
 </td>
 <td>
-*.updates.microsoft.com
+*.update.microsoft.com
 </td>
 </tr>
 <tr style="vertical-align:top">
@@ -156,7 +156,7 @@ Use the following argument with the Windows Defender AV command line utility (*m
 MpCmdRun -ValidateMapsConnection 
 ```
 > [!NOTE]
-> You need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt. This command will only work on Windows 10, version 1703 and later.
+> You need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt. This command will only work on Windows 10, version 1703.
 
 See [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender Antivirus](command-line-arguments-windows-defender-antivirus.md) for more information on how to use the *mpcmdrun.exe* utility.
 

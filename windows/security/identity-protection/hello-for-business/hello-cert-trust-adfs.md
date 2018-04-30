@@ -6,10 +6,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: DaniHalfin
-ms.localizationpriority: high
-ms.author: daniha
-ms.date: 09/08/2017
+author: mikestephens-MS
+ms.author: mstephen
+localizationpriority: high
+ms.date: 03/26/2018
 ---
 # Prepare and Deploy Windows Server 2016 Active Directory Federation Services
 
@@ -36,7 +36,7 @@ Prepare the Active Directory Federation Services deployment by installing and up
 
 Sign-in the federation server with _local admin_ equivalent credentials.
 1.	Ensure Windows Server 2016 is current by running **Windows Update** from **Settings**. Continue this process until no further updates are needed. If you’re not using Windows Update for updates, please advise the [Windows Server 2016 update history page](https://support.microsoft.com/help/4000825/windows-10-windows-server-2016-update-history) to make sure you have the latest updates available installed.
-2.	Ensure the latest server updates to the federation server includes [KB4034658 (14393.1593)](https://support.microsoft.com/en-us/help/4034658).
+2.	Ensure the latest server updates to the federation server includes [KB4088889 (14393.2155)](https://support.microsoft.com/en-us/help/4088889).
 
 >[!IMPORTANT]
 >The above referenced updates are mandatory for Windows Hello for Business all on-premises deployment and hybrid certificate trust deployments for domain joined computers.
@@ -346,13 +346,6 @@ Sign-in the AD FS server with Domain Admin equivalent credentials.
     ```PowerShell
     Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplate WHFBEnrollmentAgent -WindowsHelloCertificateTemplate WHFBAuthentication
     ```
-
-
-The `Set-AdfsCertificateAuthority` cmdlet may show the following warning:
->WARNING: PS0343: Issuing Windows Hello certificates requires enabling a permitted strong authentication provider, but no usable providers are currently configured.  These authentication providers are not supported for Windows Hello certificates: CertificateAuthentication,MicrosoftPassportAuthentication. Windows Hello certificates will not be issued until a permitted strong authentication provider is configured.
-
-This warning indicates that you have not configured multi-factor authentication in AD FS and until it is configured, the AD FS server will not issue Windows Hello certificates.  Windows 10, version 1703 clients check this configuration during prerequisite checks.  If detected, the prerequisite check will not succeed and the user will not provision Windows Hello for Business on sign-in.
-
 >[!NOTE]
 > If you gave your Windows Hello for Business Enrollment Agent and Windows Hello for Business Authentication certificate templates different names, then replace **WHFBEnrollmentAgent** and WHFBAuthentication in the above command with the name of your certificate templates.  It’s important that you use the template name rather than the template display name.  You can view the template name on the **General** tab of the certificate template using the **Certificate Template** management console (certtmpl.msc).  Or, you can view the template name using the **Get-CATemplate** ADCS Administration Windows PowerShell cmdlet on a Windows Server 2012 or later certificate authority.
 

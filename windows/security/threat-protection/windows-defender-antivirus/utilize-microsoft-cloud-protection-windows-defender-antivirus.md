@@ -1,7 +1,7 @@
 ---
-title: Use cloud-delivered protection in Windows Defender Antivirus
-description: Cloud-delivered protection provides an advanced level of fast, robust antivirus detection.
-keywords: windows defender antivirus, antimalware, security, defender, cloud, cloud-delivered protection
+title: Use next-gen technologies in Windows Defender Antivirus through cloud-delivered protection
+description: Next-gen technologies in cloud-delivered protection provide an advanced level of fast, robust antivirus detection.
+keywords: windows defender antivirus, next-gen technologies, next-gen av, machine learning, antimalware, security, defender, cloud, cloud-delivered protection
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -11,14 +11,14 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 04/17/2018
 ---
 
-# Use Microsoft cloud-delivered protection in Windows Defender Antivirus
+# Use next-gen technologies in Windows Defender Antivirus through cloud-delivered protection
 
 **Applies to:**
 
-- Windows 10, version 1703 and later
+- Windows 10, version 1703
 
 **Audience**
 
@@ -49,8 +49,6 @@ Read the following blogposts for detailed protection stories involving cloud-pro
 - [How artificial intelligence stopped an Emotet outbreak](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak/)
 - [Detonating a bad rabbit: Windows Defender Antivirus and layered machine learning defenses](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses/)
 - [Windows Defender Antivirus cloud protection service: Advanced real-time defense against never-before-seen malware](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/18/windows-defender-antivirus-cloud-protection-service-advanced-real-time-defense-against-never-before-seen-malware/) 
-
-Organizations running Windows 10 E5 can also take advantage of emergency dynamic intelligence updates, which provide near real-time protection from emerging threats. When cloud-delivered protection is enabled, we can deliver a fix for a malware issue via the cloud within minutes instead of waiting for the next update.
  
 ## Get cloud-delivered protection 
 

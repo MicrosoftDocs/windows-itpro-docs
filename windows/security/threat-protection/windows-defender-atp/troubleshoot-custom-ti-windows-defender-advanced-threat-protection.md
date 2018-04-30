@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.date: 02/26/2018
 ---
 
 # Troubleshoot custom threat intelligence issues
@@ -23,7 +23,7 @@ ms.date: 10/16/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
+[!include[Prerelease information](prerelease.md)]
 
 You might need to troubleshoot issues while using the custom threat intelligence feature.
 
@@ -33,15 +33,15 @@ This page provides detailed steps to troubleshoot issues you might encounter whi
 ## Learn how to get a new client secret
 If your client secret expires or if you've misplaced the copy provided when you were enabling the custom threat intelligence application,  you'll need to get a new secret.
 
-1. Login to the [Azure management portal](https://ms.portal.azure.com).
+1. Login to the [Azure management portal](https://portal.azure.com).
 
 2. Select **Active Directory**.
 
 3. Select your tenant.
 
-4. Click **Application**, then select your custom threat intelligence application. The application name is **WindowsDefenderATPThreatIntelAPI** (formerly known as **WindowsDefenderATPCustomerTiConnector**).
+4. Click **App registrations** > **All apps**. Then select the application name **WindowsDefenderATPThreatIntelAPI** (formerly known as **WindowsDefenderATPCustomerTiConnector**).
 
-5. Select **Keys** section, then provide a key description and specify the key validity duration.
+5. Under **Settings**, select **Keys**, then provide a key description and specify the key validity duration.
 
 6. Click **Save**. The key value is displayed.
 
@@ -53,8 +53,8 @@ If your client secret expires or if you've misplaced the copy provided when you 
 
 ## Related topics
 - [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
-- [Create custom alerts using the threat intelligence API](custom-ti-api-windows-defender-advanced-threat-protection.md)
 - [Enable the custom threat intelligence API in Windows Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+- [Create custom alerts using the threat intelligence API](custom-ti-api-windows-defender-advanced-threat-protection.md)
 - [PowerShell code examples for the custom threat intelligence API](powershell-example-code-windows-defender-advanced-threat-protection.md)
 - [Python code examples for the custom threat intelligence API](python-example-code-windows-defender-advanced-threat-protection.md)
 - [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)

@@ -32,7 +32,7 @@ This topic contains the following information about how to secure Microsoft BitL
 
 ## <a href="" id="bkmk-tpm"></a>Configure MBAM to escrow the TPM and store OwnerAuth passwords
 
-**Note** For Windows 10, version 1607 or later, only Windows can take ownership of the TPM. In addiiton, Windows will not retain the TPM owner password when provisioning the TPM. See [TPM owner password](http://technet.microsoft.com/en-us/itpro/windows/keep-secure/change-the-tpm-owner-password) for further details.  
+**Note** For Windows 10, version 1607 or later, only Windows can take ownership of the TPM. In addition, Windows will not retain the TPM owner password when provisioning the TPM. See [TPM owner password](http://technet.microsoft.com/en-us/itpro/windows/keep-secure/change-the-tpm-owner-password) for further details.  
 
 Depending on its configuration, the Trusted Platform Module (TPM) will lock itself in certain situations ─ such as when too many incorrect passwords are entered ─ and can remain locked for a period of time. During TPM lockout, BitLocker cannot access the encryption keys to perform unlock or decryption operations, requiring the user to enter their BitLocker recovery key to access the operating system drive. To reset TPM lockout, you must provide the TPM OwnerAuth password.
 
@@ -295,10 +295,7 @@ For an example of how to enable TDE for MBAM database instances, see [Understand
 
 **Use strong passwords or pass phrases**. Always use strong passwords with 15 or more characters for all MBAM administrator accounts. Never use blank passwords. For more information about password concepts, see [Password Policy](http://technet.microsoft.com/library/hh994572.aspx).
 
-## Got a suggestion for MBAM?
 
-
-Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 ## Related topics
 
@@ -306,7 +303,9 @@ Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-micros
 [Planning to Deploy MBAM 2.5](planning-to-deploy-mbam-25.md)
 
  
-
+## Got a suggestion for MBAM?
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
  
 
 

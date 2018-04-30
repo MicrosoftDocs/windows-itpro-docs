@@ -24,7 +24,7 @@ To let people in your organization sign in to Surface Hub with their phones and 
 
 - Make sure you have at minimum an Office 365 E3 subscription. 
 
-- [Configure Multi-Factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication). Make sure **Notification through mobile app** is selected. 
+- [Configure Multi-Factor Authentication](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-mfasettings). Make sure **Notification through mobile app** is selected. 
 
     ![multi-factor authentication options](images/mfa-options.png)
 
@@ -34,7 +34,7 @@ To let people in your organization sign in to Surface Hub with their phones and 
 
 - Surface Hub is set up with either a local or domain-joined account.
 
-Currently, you cannot use Microsoft Authenticator to sign in to Surface Hubs that are joined to an Active Directory domain or to Azure AD. 
+Currently, you cannot use Microsoft Authenticator to sign in to Surface Hubs that are joined to Azure AD. 
 
 ## Individual prerequisites
 

@@ -212,7 +212,7 @@ The instructions are based on the recommended architecture in [High-Level Archit
 
 5.  Click **Add** to add the MBAM databases on the server, and then click **Close**.
 
-    **Got a suggestion for MBAM**? Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). **Got a MBAM issue**? Use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
+
 
 ## Related topics
 
@@ -229,7 +229,9 @@ The instructions are based on the recommended architecture in [High-Level Archit
 
  
 
- 
+## Got a suggestion for MBAM?
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam). 
 
 
 
