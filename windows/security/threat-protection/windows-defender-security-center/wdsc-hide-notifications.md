@@ -78,7 +78,7 @@ This can only be done in Group Policy.
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Policies** then **Administrative templates**.
+3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
 5.  Expand the tree to **Windows components > Windows Defender Security Center > Notifications**.
 
