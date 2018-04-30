@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/16/2018
+ms.date: 04/30/2018
 ---
 
 
@@ -27,14 +27,14 @@ ms.date: 04/16/2018
 
 
 
-In Windows 10, version 1703 we introduced the new Windows Defender Security Center app, which brings together common Windows security features into one app. Many settings that were previously part of the individual features and main Windows Settings have been combined and moved to the new app, which is installed out-of-the-box as part of Windows 10, version 1703. 
+The Windows Defender Security Center app brings together common Windows security features into one app, which is installed out-of-the-box as part of Windows 10, version 1703 and later. 
 
 
-![Screen shot of the Windows Defender Security Center app showing that the device is protected and five icons for each of the features](images/security-center-home.png)
+![Screen shot of the Windows Defender Security Center app showing that the device is protected and icons for each of the features](images/security-center-home.png)
 
 
 
-In Windows 10, version 1709, we increased the scope of the app to also show information from third-party antivirus and firewall apps.
+In Windows 10, version 1709 and later, the app also shows information from third-party antivirus and firewall apps.
 
 >[!NOTE]
 >The Windows Defender Security Center app is a client interface on Windows 10, version 1703 and later. It is not the Windows Defender Security Center web portal console that is used to review and manage [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
@@ -48,13 +48,13 @@ This library describes the Windows defender Security Center app, and provides in
 You can find more information about each section, including options for configuring the sections - such as hiding each of the sections - at the following topics:
 
 
-- [Virus & threat protection](wdsc-virus-threat-protection.md), which has information and access to antivirus settings and ransomware protection settings, including the Controlled folder access feature of Windows Defender Exploit Guard and sign-in to Microsoft OneDrive.
+- [Virus & threat protection](wdsc-virus-threat-protection.md), which has information and access to antivirus ransomware protection settings and notifications, including the Controlled folder access feature of Windows Defender Exploit Guard and sign-in to Microsoft OneDrive.
 - [Account protection](wdsc-account-protection.md), which has information and access to sign-in and account protection settings.
-- [Firewall & network protection](wdsc-firewall-network-protection.md), which has information and access to firewall settings, including Windows Defender Firewall
-- [App & browser control](wdsc-app-browser-control.md), covering Windows Defender SmartScreen settings and Exploit protection mitigations
+- [Firewall & network protection](wdsc-firewall-network-protection.md), which has information and access to firewall settings, including Windows Defender Firewall.
+- [App & browser control](wdsc-app-browser-control.md), covering Windows Defender SmartScreen settings and Exploit protection mitigations.
 - [Device security](wdsc-device-security.md), which provides access to built-in device security settings.
-- [Device performance & health](wdsc-device-performance-health.md), which has information about drivers, storage space, and general Windows Update issues
-- [Family options](wdsc-family-options.md), which includes access to parental controls along with tips and information for keeping kids safe online
+- [Device performance & health](wdsc-device-performance-health.md), which has information about drivers, storage space, and general Windows Update issues.
+- [Family options](wdsc-family-options.md), which includes access to parental controls along with tips and information for keeping kids safe online.
 
 
 >[!NOTE]

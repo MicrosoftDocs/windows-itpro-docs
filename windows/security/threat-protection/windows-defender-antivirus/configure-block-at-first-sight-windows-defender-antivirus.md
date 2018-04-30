@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/16/2018
+ms.date: 04/30/2018
 ---
 
 
@@ -22,7 +22,7 @@ ms.date: 04/16/2018
 
 **Applies to**
 
-- Windows 10, version 1703
+- Windows 10, version 1703 and later
 
 **Audience**
 
@@ -75,7 +75,7 @@ Block at First Sight requires a number of Group Policy settings to be configured
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration**.
 
-4.  Click **Policies** then **Administrative templates**.
+4.  Click **Administrative templates**.
 
 5.  Expand the tree to **Windows components > Windows Defender Antivirus > MAPS** and configure the following Group Policies:
     

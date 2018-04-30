@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/26/2018
+ms.date: 04/30/2018
 ---
 
 # Manage Windows Defender Security Center in Windows 10 in S mode
@@ -34,7 +34,7 @@ The Windows Defender Security Center interface is a little different in Windows 
 
 ![Screen shot of the Windows Defender Security Center app Virus & threat protection area in Windows 10 in S mode](images/security-center-virus-and-threat-protection-windows-10-in-s-mode.png)
 
-For more information about Windows 10 in S mode, including how to switch out of S mode, see Windows 10 Pro in S mode (add link).
+For more information about Windows 10 in S mode, including how to switch out of S mode, see Windows 10 Pro in S mode.
 
 ##Managing Windows Defender Security Center settings with Intune
 

@@ -9,8 +9,8 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
+author: andreabichsel
+ms.author: v-anbic
 ms.date: 08/26/2017
 ---
 
