@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: MikeBlodge
-ms.author: MikeBlodge, Kaushik Ainapure
+ms.author: MikeBlodge
 ms.date: 04/30/2018
 ---
 
