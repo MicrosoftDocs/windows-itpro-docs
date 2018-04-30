@@ -51,7 +51,16 @@ For more information, see [Windows 10 Pro/Enterprise in S mode](https://docs.mic
 
 ### Windows 10 kiosk and Kiosk Browser
 
-With this release you can easily deploy and manage kiosk devices with Microsoft Intune in single and multiple app scenarios. This includes the new Kiosk Browser available from the Microsoft Store. Kiosk Browser is great for delivering a reliable and custom-tailored browsing experience for scenarios such as retail and signage. 
+With this release you can easily deploy and manage kiosk devices with Microsoft Intune in single and multiple app scenarios. This includes the new Kiosk Browser available from the Microsoft Store. Kiosk Browser is great for delivering a reliable and custom-tailored browsing experience for scenarios such as retail and signage. A summary of new features is below.
+
+- Using Intune, you can deploy the Kiosk Browser from the Microsoft Store, configure start URL, allowed URLs, and enable/disable navigation buttons.
+- Using Intune, you can deploy and configure shared devices and kiosks using assigned access to create a curated experience with the correct apps and configuration policies
+- Support for multiple screens for digital signage use cases.
+- The ability to ensure all MDM configurations are enforced on the device prior to entering assigned access using the Enrollment Status page.
+- The ability to configure and run Shell Launcher in addition to existing UWP Store apps.
+- A simplified process for creating and configuring an auto-logon kiosk account so that a public kiosk automatically enters a desired state after a reboot, a critical security requirement for public-facing use cases.
+- For multi-user Firstline Worker kiosk devices, instead of specifying every user, it’s now possible to assign different assigned access configurations to Azure AD groups or Active Directory groups.
+- To help with troubleshooting, you can now view error reports generated if an assigned access-configured app has issues.
 
 For more information, see: 
 - [Making IT simpler with a modern workplace](https://www.microsoft.com/en-us/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)
@@ -210,7 +219,7 @@ Update Compliance has added Delivery Optimization to assess the bandwidth consum
 
 Device Health’s new App Reliability reports enable you to see where app updates or configuration changes may be needed to reduce crashes. The Login Health reports reveal adoption, success rates, and errors for Windows Hello and for passwords— for a smooth migration to the password-less future. For more information, see [Using Device Health](https://docs.microsoft.com/en-us/windows/deployment/update/device-health-using)
 
-## Edge
+## Microsoft Edge
 
 iOS and Android versions of Edge are now available. Support in [Windows Defender Application Guard](#windows-defender-application-guard) is also improved.
 
