@@ -13,7 +13,7 @@ ms.date: 05/07/2018
 
 Microsoft has just announced two new modern workplace apps coming to HoloLens: Remote Assist and Layout.
 
-Soon, these apps will be available to download and distribute across your organization as part of a public preview. In the meantime, here's what you need to know to prepare for the public preview of each app, to make sure your roll-out is smooth and seamless.
+On May 22, 2018, these apps will be available to download and distribute across your organization as part of a public preview. In the meantime, here's what you need to know to prepare for the public preview of each app, to make sure your roll-out is smooth and seamless.
 
 ## Remote Assist
 
@@ -21,9 +21,9 @@ Remote Assist uses Microsoft Teams to facilitate two-way, real time, audio and v
 
 Here are the requirements you'll need to meet in order to distribute Remote Assist throughout your organization:
 
-* **HoloLens, with RS4 build**: The HoloLens RS4 build will become publicly available at the same time as the modern workplace apps. There are two ways to ensure your HoloLen device has the required build:
-  * On May 22, update the HoloLens device
-  * Download Insider Preview builds. 
+* **HoloLens, with RS4 build**: The HoloLens RS4 build will become publicly available at the same time as the modern workplace apps. There are two ways to ensure your HoloLens device has the required build:
+  * On May 22, update the HoloLens operating system.
+  * Get started testing out the RS4 build in advance of May 22. See [HoloLens RS4 Preview](https://docs.microsoft.com/en-us/windows/mixed-reality/hololens-rs4-preview) for more information about the preview, and how it will impact your HoloLens device.
 * **Azure Active Directory (Azure AD)**: required for app distribution. See [Get started with Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/get-started-azure-ad) to learn more about Azure AD and licensing users.
 * **Microsoft Teams**: Microsoft Teams is the backbone that facilitates communication in Remote Assist. All devices that will make calls to the HoloLens will need to have Microsoft Teams installed.
 * **Microsoft Office 365**: Because Microsoft Teams is part of Office 365, all users who will make calls from their PC/phone to the HoloLens will need an Office 365 license. See [Office 365 licensing for Microsoft Teams](https://docs.microsoft.com/en-us/MicrosoftTeams/office-365-licensing) to learn more.
@@ -39,6 +39,8 @@ Layout enables you to scan a space using the HoloLens, or import a space from an
 
 Here are the requirements you'll need to meet in order to distribute Layout throughout your organization:
 
-* HoloLens, or Windows Mixed Reality headset:
+* **HoloLens with RS4 build, or Windows Mixed Reality headset**:
+  * If you're using a HoloLens, it must be running RS4. RS4 will be available as an operating system update on May 22nd, or you can get started testing out the RS4 build in advance of May 22nd. See [HoloLens RS4 Preview](https://docs.microsoft.com/en-us/windows/mixed-reality/hololens-rs4-preview) for more information about the preview, and how it will impact your HoloLens device.
+  * If you're using a Windows Mixed Reality headset, your PCs will need to be able to support it. See [Windows Mixed Reality PC hardware guidelines](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for specific hardware requirements. We recommend following the **Windows Mixed Reality Ultra** hardware guidelines.
 * Azure Active Directory (Azure AD): required for app distribution. See [Get started with Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/get-started-azure-ad) to learn more about Azure AD and licensing users.
 * Network requirements: Internet access is required to download the app, and utilize all of its features. There are no bandwidth requirements.
