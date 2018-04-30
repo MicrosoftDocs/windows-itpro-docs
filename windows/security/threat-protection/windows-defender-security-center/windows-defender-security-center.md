@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 10/17/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 04/16/2018
 ---
 
 
@@ -48,10 +48,12 @@ This library describes the Windows defender Security Center app, and provides in
 You can find more information about each section, including options for configuring the sections - such as hiding each of the sections - at the following topics:
 
 
-- [Virus & threat protection](wdsc-virus-threat-protection.md), which has information and access to antivirus settings and the Controlled folder access feature of Windows Defender Exploit Guard
-- [Device performance & health](wdsc-device-performance-health.md), which has information about drivers, storage space, and general Windows Update issues
+- [Virus & threat protection](wdsc-virus-threat-protection.md), which has information and access to antivirus settings and ransomware protection settings, including the Controlled folder access feature of Windows Defender Exploit Guard and sign-in to Microsoft OneDrive.
+- [Account protection](wdsc-account-protection.md), which has information and access to sign-in and account protection settings.
 - [Firewall & network protection](wdsc-firewall-network-protection.md), which has information and access to firewall settings, including Windows Defender Firewall
 - [App & browser control](wdsc-app-browser-control.md), covering Windows Defender SmartScreen settings and Exploit protection mitigations
+- [Device security](wdsc-device-security.md), which provides access to built-in device security settings.
+- [Device performance & health](wdsc-device-performance-health.md), which has information about drivers, storage space, and general Windows Update issues
 - [Family options](wdsc-family-options.md), which includes access to parental controls along with tips and information for keeping kids safe online
 
 
@@ -65,7 +67,7 @@ You can find more information about each section, including options for configur
 
 
 ## Open the Windows Defender Security Center app
-- Right-click the icon in the notification area on the taskbar and click **Open**.
+- Click the icon in the notification area on the taskbar.
 
     ![Screen shot of the icon for the Windows Defender Security Center app on the Windows task bar](images/security-center-taskbar.png)
 - Search the Start menu for **Windows Defender Security Center**.
