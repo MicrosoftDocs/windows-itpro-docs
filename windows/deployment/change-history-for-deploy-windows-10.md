@@ -12,6 +12,12 @@ ms.date: 11/08/2017
 # Change history for Deploy Windows 10
 This topic lists new and updated topics in the [Deploy Windows 10](https://docs.microsoft.com/en-us/windows/deployment) documentation for [Windows 10 and Windows 10 Mobile](/windows/windows-10).
 
+## April 2018
+
+New or changed topic | Description
+--- | ---
+[Install VAMT](volume-activation/install-vamt.md) | Updated the instructions and link for SQL Server Express.
+
 ## November 2017
 
 New or changed topic | Description
@@ -32,7 +38,7 @@ New or changed topic | Description
 ## June 2017
 | New or changed topic | Description |
 |----------------------|-------------|
-| [Overview of Windows AutoPilot](windows-autopilot/windows-10-autopilot.md) | New |
+| [Overview of Windows Autopilot](windows-autopilot/windows-10-autopilot.md) | New |
 
 ## April 2017
 | New or changed topic | Description |

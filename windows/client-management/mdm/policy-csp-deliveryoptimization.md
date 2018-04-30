@@ -509,7 +509,7 @@ If you set this policy, the GroupID policy will be ignored.
 
 The options set in this policy only apply to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored.  
 
-For option 4 - DHCP Option ID, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID.
+For option 3 - DHCP Option ID, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID.
 
 <!--/Description-->
 <!--ADMXMapped-->

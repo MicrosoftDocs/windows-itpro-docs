@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: jdeckerms
-ms.date: 01/15/2018
+ms.date: 01/16/2018
 ---
 
 # Configure Windows 10

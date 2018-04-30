@@ -55,7 +55,7 @@ Provisioning packages are files created by the Windows Configuration Designer to
 
 ### Create a provisioning package that upgrades the Windows Holographic edition
 
-1.	[Create a provisioning package for HoloLens.](hololens-provisioning.md#create-a-provisioning-package-for-hololens)
+1.	[Create a provisioning package for HoloLens.](hololens-provisioning.md)
 
 2.  Go to **Runtime settings** > **Policies** > **Security**, and select **RequireDeviceEncryption**.
 

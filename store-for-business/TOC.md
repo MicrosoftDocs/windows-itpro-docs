@@ -21,7 +21,7 @@
 ### [Manage access to private store](manage-access-to-private-store.md)
 ### [Manage private store settings](manage-private-store-settings.md)
 ### [Configure MDM provider](configure-mdm-provider-microsoft-store-for-business.md)
-### [Manage Windows device deployment with Windows AutoPilot Deployment](add-profile-to-devices.md)
+### [Manage Windows device deployment with Windows Autopilot Deployment](add-profile-to-devices.md)
 ### [Microsoft Store for Business and Education PowerShell module - preview](microsoft-store-for-business-education-powershell-module.md)
 ### [Manage software purchased with Microsoft Products and Services agreement in Microsoft Store for Business](manage-mpsa-software-microsoft-store-for-business.md)
 ## [Device Guard signing portal](device-guard-signing-portal.md)

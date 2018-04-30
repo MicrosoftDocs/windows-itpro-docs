@@ -21,15 +21,6 @@ ms.date: 10/13/2017
 <p><b>[Windows 10 editions for education customers](windows-editions-for-education-customers.md)</b><br />Windows 10, version 1607 introduces two editions designed for the unique needs of K-12 institutions: Windows 10 Pro Education and Windows 10 Education. These editions provide education-specific default settings for the evolving landscape in K-12 education IT environments.</p>
 <p><b>[Compare each Windows edition](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)</b><br />Find out more about the features and functionality we support in each edition of Windows.</p>
 <p><b>[Get Windows 10 Education or Windows 10 Pro Education](https://www.microsoft.com/en-us/education/buy-license/overview-of-how-to-buy/default.aspx?tabshow=schools)</b><br />When you've made your decision, find out how to buy Windows for your school.</p>
-<p><b>How-to videos</b><br />
-<ul>
-  <li><a href="https://technet.microsoft.com/en-us/windows/mt723345" target="_blank">Automate common Windows 10 deployment and configuration tasks</a></li>
-  <li><a href="https://technet.microsoft.com/en-us/windows/mt723346" target="_blank">Deploy a custom Windows 10 Start menu</a></li>
-  <li><a href="https://technet.microsoft.com/en-us/windows/mt723347" target="_blank">Manage Windows 10 updates and upgrades</a></li>
-  <li><a href="https://technet.microsoft.com/en-us/windows/mt723344" target="_blank">Reprovision devices at the end of the school year</a></li>  <li><a href="https://technet.microsoft.com/en-us/windows/mt723343" target="_blank">Use MDT to deploy Windows 10</a></li>
-  <li><a href="https://technet.microsoft.com/en-us/windows/mt723348" target="_blank">Use Microsoft Store for Business</a></li>
-</ul>
-</p>
 
 ## ![Plan for Windows 10 in your school](images/clipboard.png) Plan
 

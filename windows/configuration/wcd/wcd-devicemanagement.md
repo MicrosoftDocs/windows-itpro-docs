@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 09/21/2017
+ms.date: 04/30/2018
 ---
 
 # DeviceManagement (Windows Configuration Designer reference)
@@ -18,10 +18,10 @@ Use to configure device management settings.
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [Accounts](#accounts) | X  | X | X | X |  |
-| [PGList](#pglist) | X  | X | X | X |  |
-| [Policies](#policies) | X  | X | X | X |  |
-| [TrustedProvisioningSource](#trustedprovisioningsource) | X  | X | X | X |  |
+| [Accounts](#accounts) | X  | X | X |  |  |
+| [PGList](#pglist) | X  | X | X |  |  |
+| [Policies](#policies) | X  | X | X |  |  |
+| [TrustedProvisioningSource](#trustedprovisioningsource) | X  | X | X |  |  |
 
 ## Accounts
 
@@ -76,12 +76,12 @@ The following table describes the settings you can configure for **Policies**.
 | Setting | Description |
 | --- | --- |
 | MMS > MMSMessageRoles | Select between **SECROLE_KNOWN_PPG**, **SECROLE_ANY_PUSH_SOURCE**, and **SECROLE_KNOWN_PPG_OR_SECROLE_ANY_PUSH_SOURCE**. If a message contains at least one of the roles in the selected role mask, then the message is processed.  |
-| OMACP > NetwpinRoles | Select a policy role to specify whether OMA network PIN-signed messages will be accepted. OMA Client Provisioning Network PIN policy determines whether the OMA network PIN signed message will be accepted. The message's role mask and the policy's role mask are combined using the AND operator. If the result is non-zero, then the message is accepted.</br></br>Available roles are: **SECROLE_OPERATOR_TIPS**, **SECROLE_KNOWN_PPG**, **SECROLE_OPERATOR_TPS_OR_SECROLE_KNOWN_PPG**, **SECROLE_ANY_PUSH_SOURCE**, **SECROLE_OPERATOR_TPS_OR_SECROLE_ANY_PUSH_SOURCE**, **SECROLE_KNOWN_PPG_OR_SECROLE_ANY_PUSH_SOURCE**, and **SECROLE_OPERATOR_TPS_OR_SECROLE_KNOWN_PPG_OR_SECROLE_ANY_PUSH_SOURCE**.</BR></br>**Note**  IMSI-based NETWPIN and USERNETWPIN may not work for dual SIM phones. The OMA-CP authentication provider only uses the IMSI from executor 0 (the current, active data SIM) when hashing these messages. OMA-CP payloads targeting executor 1 are rejected by the phone. For more information about executors, see Dual SIM. |
-| OMACP > UsernetwpinRoles | Select a policy role to specify whether the OMA user network PIN-signed message will be accepted. The message's role mask and the policy's role mask are combined using the AND operator. If the result is non-zero, then the message is accepted.</br></br>Available roles are: **SECROLE_OPERATOR_TIPS**, **SECROLE_KNOWN_PPG**, **SECROLE_OPERATOR_TPS_OR_SECROLE_KNOWN_PPG**, **SECROLE_ANY_PUSH_SOURCE**, **SECROLE_OPERATOR_TPS_OR_SECROLE_ANY_PUSH_SOURCE**, **SECROLE_KNOWN_PPG_OR_SECROLE_ANY_PUSH_SOURCE**, and **SECROLE_OPERATOR_TPS_OR_SECROLE_KNOWN_PPG_OR_SECROLE_ANY_PUSH_SOURCE**.</BR></br>**Note** IMSI-based NETWPIN and USERNETWPIN may not work for dual SIM phones. The OMA-CP authentication provider only uses the IMSI from executor 0 (the current, active data SIM) when hashing these messages. OMA-CP payloads targeting executor 1 are rejected by the phone. For more information about executors, see Dual SIM. |
-| OMACP > UserpinRoles | Select a policy role to specify whether the OMA user PIN or user MAC signed message will be accepted. OMA Client Provisioning User PIN policy determines whether the OMA user PIN or user MAC signed message will be accepted. The message's role mask and the policy's role mask are combined using the AND operator. If the result is non-zero, then the message is accepted.</br></br>Available roles are: **SECROLE_OPERATOR_TIPS**, **SECROLE_KNOWN_PPG**, **SECROLE_OPERATOR_TPS_OR_SECROLE_KNOWN_PPG**, **SECROLE_ANY_PUSH_SOURCE**, **SECROLE_OPERATOR_TPS_OR_SECROLE_ANY_PUSH_SOURCE**, **SECROLE_KNOWN_PPG_OR_SECROLE_ANY_PUSH_SOURCE**, and **SECROLE_OPERATOR_TPS_OR_SECROLE_KNOWN_PPG_OR_SECROLE_ANY_PUSH_SOURCE**. |
+| OMACP > NetwpinRoles | (Window 10, version 1709 and earlier only) Select a policy role to specify whether OMA network PIN-signed messages will be accepted. OMA Client Provisioning Network PIN policy determines whether the OMA network PIN signed message will be accepted. The message's role mask and the policy's role mask are combined using the AND operator. If the result is non-zero, then the message is accepted.</br></br>Available roles are: **SECROLE_OPERATOR_TIPS**, **SECROLE_KNOWN_PPG**, **SECROLE_OPERATOR_TPS_OR_SECROLE_KNOWN_PPG**, **SECROLE_ANY_PUSH_SOURCE**, **SECROLE_OPERATOR_TPS_OR_SECROLE_ANY_PUSH_SOURCE**, **SECROLE_KNOWN_PPG_OR_SECROLE_ANY_PUSH_SOURCE**, and **SECROLE_OPERATOR_TPS_OR_SECROLE_KNOWN_PPG_OR_SECROLE_ANY_PUSH_SOURCE**.</BR></br>**Note**  IMSI-based NETWPIN and USERNETWPIN may not work for dual SIM phones. The OMA-CP authentication provider only uses the IMSI from executor 0 (the current, active data SIM) when hashing these messages. OMA-CP payloads targeting executor 1 are rejected by the phone. For more information about executors, see Dual SIM. |
+| OMACP > UsernetwpinRoles | (Window 10, version 1709 and earlier only) Select a policy role to specify whether the OMA user network PIN-signed message will be accepted. The message's role mask and the policy's role mask are combined using the AND operator. If the result is non-zero, then the message is accepted.</br></br>Available roles are: **SECROLE_OPERATOR_TIPS**, **SECROLE_KNOWN_PPG**, **SECROLE_OPERATOR_TPS_OR_SECROLE_KNOWN_PPG**, **SECROLE_ANY_PUSH_SOURCE**, **SECROLE_OPERATOR_TPS_OR_SECROLE_ANY_PUSH_SOURCE**, **SECROLE_KNOWN_PPG_OR_SECROLE_ANY_PUSH_SOURCE**, and **SECROLE_OPERATOR_TPS_OR_SECROLE_KNOWN_PPG_OR_SECROLE_ANY_PUSH_SOURCE**.</BR></br>**Note** IMSI-based NETWPIN and USERNETWPIN may not work for dual SIM phones. The OMA-CP authentication provider only uses the IMSI from executor 0 (the current, active data SIM) when hashing these messages. OMA-CP payloads targeting executor 1 are rejected by the phone. For more information about executors, see Dual SIM. |
+| OMACP > UserpinRoles | (Window 10, version 1709 and earlier only) Select a policy role to specify whether the OMA user PIN or user MAC signed message will be accepted. OMA Client Provisioning User PIN policy determines whether the OMA user PIN or user MAC signed message will be accepted. The message's role mask and the policy's role mask are combined using the AND operator. If the result is non-zero, then the message is accepted.</br></br>Available roles are: **SECROLE_OPERATOR_TIPS**, **SECROLE_KNOWN_PPG**, **SECROLE_OPERATOR_TPS_OR_SECROLE_KNOWN_PPG**, **SECROLE_ANY_PUSH_SOURCE**, **SECROLE_OPERATOR_TPS_OR_SECROLE_ANY_PUSH_SOURCE**, **SECROLE_KNOWN_PPG_OR_SECROLE_ANY_PUSH_SOURCE**, and **SECROLE_OPERATOR_TPS_OR_SECROLE_KNOWN_PPG_OR_SECROLE_ANY_PUSH_SOURCE**. |
 | SISL > ServiceIndicationRoles | Specify the security roles that can accept SI messages. Service Indication (SI) Message policy indicates whether SI messages are accepted by specifying the security roles that can accept SI messages. An SI message is sent to the phone to notify users of new services, service updates, and provisioning services.</br></br>Available roles are: **SECROLE_KNOWN_PPG**, **SECROLE_ANY_PUSH_SOURCE**, and **SECROLE_KNOWN_PPG_OR_SECROLE_ANY_PUSH_SOURCE**. |
 | SISL > ServiceLoadingRoles | Specify the security roles that can accept SL messages. Service Loading (SL) Message policy indicates whether SL messages are accepted by specifying the security roles that can accept SL messages. An SL message downloads new services or provisioning XML to the phone.</br></br>Available roles are: **SECROLE_KNOWN_PPG**, **SECROLE_ANY_PUSH_SOURCE**, and **SECROLE_KNOWN_PPG_OR_SECROLE_ANY_PUSH_SOURCE**. |
-
+| WSP > WSPPushAllowed | Indicates whether Wireless Session Protocol (WSP) notifications from the WAP stack are routed.
 ## TrustedProvisioningSource
 
 In **PROVURL**, enter the URL for a Trusted Provisioning Server (TPS).

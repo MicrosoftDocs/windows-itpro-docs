@@ -21,7 +21,7 @@ Use UniversalAppUninstall settings to uninstall or remove Windows apps.
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
 | [RemoveProvisionedApp](#removeprovisionedapp) | X |  |  |  |   |
-| [Uninstall](#uninstall) | X | X | X | X | X  |
+| [Uninstall](#uninstall) | X | X | X |  | X  |
 
 ## RemoveProvisionedApp
 
