@@ -38,6 +38,8 @@ The following video describes how it works:
 <iframe 
 src="https://videoplayercdn.osi.office.net/embed/c2f20f59-ca56-4a7b-ba23-44c60bc62c59" width="768" height="432" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
+Organizations running Windows 10 E5 can also take advantage of emergency dynamic intelligence updates, which provide near real-time protection from emerging threats. When cloud-delivered protection is enabled, we can deliver a fix for a malware issue via the cloud within minutes instead of waiting for the next update.
+
 Cloud-delivered protection is enabled by default, however you may need to re-enable it if it has been disabled as part of previous organizational policies.
 
 >[!TIP]
