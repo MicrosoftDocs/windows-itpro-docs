@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 07/27/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 04/30/2018
 ---
 
 # Configure exclusions for files opened by processes
@@ -73,7 +73,7 @@ You can [configure how locally and globally defined exclusions lists are merged]
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration**.
 
-4.  Click **Policies** then **Administrative templates**.
+4.  Click **Administrative templates**.
 
 5.  Expand the tree to **Windows components > Windows Defender Antivirus > Exclusions**. 
 
