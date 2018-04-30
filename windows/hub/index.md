@@ -20,7 +20,6 @@ Find the latest how to and support content that IT pros need to evaluate, plan, 
 
 > [!video https://www.youtube.com/embed/LFiP73slWew?autoplay=false]
 
-## Check out [what's new in Windows 10, version 1803](../whats-new/whats-new-windows-10-version-1803).
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
