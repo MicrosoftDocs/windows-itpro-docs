@@ -9,20 +9,16 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 10/02/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 04/30/2018
 ---
-
-
-
-
 
 # Windows Defender Antivirus in the Windows Defender Security Center app
 
 **Applies to**
 
-- Windows 10, version 1703
+- Windows 10, version 1703 and later
 
 **Audience**
 
@@ -33,12 +29,12 @@ ms.date: 10/02/2017
 - Windows Defender Security Center app  
 
 
-In Windows 10, version 1703 (also known as the Creators Update), the Windows Defender app is now part of the Windows Defender Security Center.
+In Windows 10, version 1703 and later, the Windows Defender app is part of the Windows Defender Security Center.
 
 Settings that were previously part of the Windows Defender client and main Windows Settings have been combined and moved to the new app, which is installed by default as part of Windows 10, version 1703.
 
 > [!IMPORTANT] 
-> Disabling the Windows Security Center service will not disable Windows Defender AV or [Windows Defender Firewall](https://docs.microsoft.com/en-us/windows/access-protection/windows-firewall/windows-firewall-with-advanced-security). These will be disabled automatically when a third-party antivirus or firewall product is installed and kept up to date.
+> Disabling the Windows Security Center service will not disable Windows Defender AV or [Windows Defender Firewall](https://docs.microsoft.com/en-us/windows/access-protection/windows-firewall/windows-firewall-with-advanced-security). These are disabled automatically when a third-party antivirus or firewall product is installed and kept up to date.
 
 > [!WARNING] 
 > If you do disable the Windows Security Center service, or configure its associated Group Policy settings to prevent it from starting or running, the Windows Defender Security Center may display stale or inaccurate information about any antivirus or firewall products you have installed on the device. 
@@ -49,7 +45,7 @@ Settings that were previously part of the Windows Defender client and main Windo
 See the [Windows Defender Security Center topic](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) for more information on other Windows security features that can be monitored in the app.
 
 >[!NOTE]
->The Windows Defender Security Center app is a client interface on Windows 10, version 1703. It is not the Windows Defender Security Center web portal that is used to review and manage [Windows Defender Advanced Threat Protection](../windows-defender-atp/windows-defender-advanced-threat-protection.md).
+>The Windows Defender Security Center app is a client interface on Windows 10, version 1703 and later. It is not the Windows Defender Security Center web portal that is used to review and manage [Windows Defender Advanced Threat Protection](../windows-defender-atp/windows-defender-advanced-threat-protection.md).
 
 **Review virus and threat protection settings in the Windows Defender Security Center app:**
 
@@ -69,13 +65,13 @@ The following diagrams compare the location of settings and functions between th
 
 ![Windows Defender Antivirus in Windows 10, version 1703 and later](images/defender/wdav-wdsc.png)
 
-Item | Windows 10, before version 1703 | Windows 10, version 1703 | Description
+Item | Windows 10, before version 1703 | Windows 10, version 1703 and later | Description
 ---|---|---|---
 1 | **Update** tab | **Protection updates** | Update the protection ("definition updates")
 2 | **History** tab | **Scan history** | Review threats that were quarantined, removed, or allowed
 3 | **Settings** (links to **Windows Settings**) | **Virus & threat protection settings** | Enable various features, including Real-time protection, Cloud-delivered protection, Advanced notifications, and Automatic ample submission
 4 | **Scan options** | **Advanced scan** | Run a full scan, custom scan, or a Windows Defender Offline scan
-5 | Run a scan (based on the option chosen under **Scan options** | **Quick scan** | In Windows 10, version 1703 you can run custom and full scans under the **Advanced scan** option
+5 | Run a scan (based on the option chosen under **Scan options** | **Quick scan** | In Windows 10, version 1703 and later, you can run custom and full scans under the **Advanced scan** option
 
 
 ## Common tasks
