@@ -46,7 +46,7 @@ Worried about your LOB apps not working in S mode? Using Desktop Bridge will ena
 >The only way to revert to Windows 10 in S mode is to perform a BMR factory reset. This will allow you to reimage a device.
 
 ### Windows 10 in S mode is safe, secure, and fast.
-We recommend staying in S mode. However, in some limited scenarios, you might need to switch to Windows 10 Pro. You can switch devices running Windows 10, version 1709 or later. Use the following information to switch to Windows 10 Pro through the Microsoft Store or by using Autopilot.
+We recommend staying in S mode. However, in some limited scenarios, you might need to switch to Windows 10 Pro. You can switch devices running Windows 10, version 1709 or later. Use the following information to switch to Windows 10 Pro through the Microsoft Store.
 
 ## How to switch
 If you’re running Windows 10, version 1709 or version 1803, you can switch to Windows 10 Pro through the Microsoft Store. Devices running version 1803 will only be able to switch through the Store one device at a time.
