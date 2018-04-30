@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 08/26/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 04/30/2018
 ---
 
 # Run and review the results of a Windows Defender Offline scan
@@ -19,7 +19,7 @@ ms.date: 08/26/2017
 
 **Applies to:**
 
-- Windows 10, version 1607
+- Windows 10, version 1607 and later
 
 **Audience**
 

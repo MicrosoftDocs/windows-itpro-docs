@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 08/26/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 04/30/2018
 ---
 
 # Specify the cloud-delivered protection level
@@ -20,7 +20,7 @@ ms.date: 08/26/2017
 
 **Applies to:**
 
-- Windows 10, version 1703
+- Windows 10, version 1703 and later
 
 **Audience**
 
@@ -44,7 +44,7 @@ You can specify the level of cloud-protection offered by Windows Defender Antivi
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration**. 
 
-4.  Click **Policies** then **Administrative templates**.
+4.  Click **Administrative templates**.
 
 5.  Expand the tree to **Windows components > Windows Defender Antivirus > MpEngine**.
 
