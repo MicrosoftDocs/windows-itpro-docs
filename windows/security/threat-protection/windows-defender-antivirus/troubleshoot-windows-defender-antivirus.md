@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 11/20/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 04/16/2018
 ---
 
 # Review event logs and error codes to troubleshoot issues with Windows Defender AV
@@ -1377,6 +1377,60 @@ User action:
 No action is necessary. The Windows Defender Antivirus client is in a healthy state. This event is reported on an hourly basis.
 </td>
 </tr>
+
+<tr>
+<th colspan="2">Event ID: 1151</th>
+</tr>
+<tr><td>
+Symbolic name:
+</td>
+<td >
+<b>MALWAREPROTECTION_SERVICE_HEALTH_REPORT</b>
+</td>
+</tr>
+<tr>
+<td>
+Message:
+</td>
+<td >
+<b>Endpoint Protection client health report (time in UTC)
+</b>
+</td>
+</tr>
+<tr>
+<td>
+Description:
+</td>
+<td >
+Windows Defender client health report.
+<dl>
+<dt>Platform Version: &lt;Current platform version&gt;</dt>
+<dt>Engine Version: &lt;Antimalware Engine version&gt;</dt>
+<dt>Network Realtime Inspection engine version: &lt;Network Realtime Inspection engine version&gt;</dt>
+<dt>Antivirus signature version: &lt;Antivirus signature version&gt;</dt>
+<dt>Antispyware signature version: &lt;Antispyware signature version&gt;</dt>
+<dt>Network Realtime Inspection signature version: &lt;Network Realtime Inspection signature version&gt;</dt>
+<dt>RTP state: &lt;Realtime protection state&gt; (Enabled or Disabled)</dt>
+<dt>OA state: &lt;On Access state&gt; (Enabled or Disabled)</dt>
+<dt>IOAV state: &lt;IE Downloads and Outlook Express Attachments state&gt; (Enabled or Disabled)</dt>
+<dt>BM state: &lt;Behavior Monitoring state&gt; (Enabled or Disabled)</dt>
+<dt>Antivirus signature age: &lt;Antivirus signature age&gt; (in days)</dt>
+<dt>Antispyware signature age: &lt;Antispyware signature age&gt; (in days)</dt>
+<dt>Last quick scan age: &lt;Last quick scan age&gt; (in days)</dt>
+<dt>Last full scan age: &lt;Last full scan age&gt; (in days)</dt>
+<dt>Antivirus signature creation time: ?&lt;Antivirus signature creation time&gt;</dt>
+<dt>Antispyware signature creation time: ?&lt;Antispyware signature creation time&gt;</dt>
+<dt>Last quick scan start time: ?&lt;Last quick scan start time&gt;</dt>
+<dt>Last quick scan end time: ?&lt;Last quick scan end time&gt;</dt>
+<dt>Last quick scan source: &lt;Last quick scan source&gt; (1 = scheduled, 2 = on demand)</dt>
+<dt>Last full scan start time: ?&lt;Last full scan start time&gt;</dt>
+<dt>Last full scan end time: ?&lt;Last full scan end time&gt;</dt>
+<dt>Last full scan source: &lt;Last full scan source&gt; (1 = scheduled, 2 = on demand)</dt>
+<dt>Product status: For internal troubleshooting
+</dl>
+</td>
+</tr>
+
 <tr>
 <th colspan="2">Event ID: 2000</th>
 </tr>
