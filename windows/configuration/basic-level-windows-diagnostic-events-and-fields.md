@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
-ms.date: 4/10/2018
+ms.date: 4/30/2018
 ---
 
 
@@ -1780,7 +1780,7 @@ Fired by UTC as a heartbeat signal.
 The following fields are available:
 
 - **AgentConnectionErrorsCount**  Number of non-timeout errors associated with the host/agent channel.
-- **CensusExitCode**  Last exit code of�Census task.
+- **CensusExitCode**  Last exit code of Census task.
 - **CensusStartTime**  Time of last Census run.
 - **CensusTaskEnabled**  True if Census is enabled, false otherwise.
 - **CompressedBytesUploaded**  Number of compressed bytes uploaded.
@@ -1807,14 +1807,14 @@ The following fields are available:
 - **LastAgentConnectionError**  Last non-timeout error encountered in the host/agent channel.
 - **LastEventSizeOffender**  Event name of last event which exceeded max event size.
 - **LastInvalidHttpCode**  Last invalid HTTP code received from Vortex.
-- **MaxActiveAgentConnectionCount**  Maximum number of active agents during this�heartbeat timeframe.
+- **MaxActiveAgentConnectionCount**  Maximum number of active agents during this heartbeat timeframe.
 - **MaxInUseScenarioCounter**  Soft maximum number of scenarios loaded by UTC.
 - **PreviousHeartBeatTime**  Time of last heartbeat event (allows chaining of events).
 - **SettingsHttpAttempts**  Number of attempts to contact OneSettings service.
-- **SettingsHttpFailures**  Number of failures from contacting�OneSettings service.
+- **SettingsHttpFailures**  Number of failures from contacting OneSettings service.
 - **ThrottledDroppedCount**  Number of events dropped due to throttling of noisy providers.
 - **UploaderDroppedCount**  Number of events dropped at the uploader layer of telemetry client.
-- **VortexFailuresTimeout**  Number of time out failures�received from Vortex.
+- **VortexFailuresTimeout**  Number of time out failures received from Vortex.
 - **VortexHttpAttempts**  Number of attempts to contact Vortex.
 - **VortexHttpFailures4xx**  Number of 400-499 error codes received from Vortex.
 - **VortexHttpFailures5xx**  Number of 500-599 error codes received from Vortex.
@@ -3956,7 +3956,7 @@ This event collects information when express could not be used and we fall back 
 
 The following fields are available:
 
-- **FlightId**  The error code returned for the current install phase. 
+- **FlightId**  Unique ID for each flight. 
 - **ObjectId**  Unique value for each Update Agent mode. 
 - **PackageCount**  Number of packages that feel back to canonical. 
 - **PackageList**  PackageIds which fell back to canonical. 
@@ -3978,7 +3978,7 @@ The following fields are available:
 - **ObjectId**  Unique value for each Update Agent mode. 
 - **RelatedCV**  Correlation vector value generated from the latest USO scan.
 - **Result**  Outcome of the install phase of the update. 
-- **ScenarioId**  Unique value for each update attempt.  
+- **ScenarioId**  Indicates the update scenario.  
 - **SessionData**  String containing instructions to update agent for processing FODs and DUICs (Null for other scenarios).  
 - **SessionId**  Unique value for each update attempt.  
 - **UpdateId**  Unique ID for each update. 
@@ -4044,7 +4044,7 @@ The following fields are available:
 - **PostRebootResult**  Indicates the Hresult
 - **RelatedCV**  Correlation vector value generated from the latest USO scan
 - **ScenarioId**  The scenario ID. Example: MobileUpdate, DesktopLanguagePack, DesktopFeatureOnDemand, or DesktopDriverUpdate
-- **SessionId**  Unique value for each Update Agent mode attempt
+- **SessionId**  Unique value for each update attempt.
 - **UpdateId**  Unique ID for each update
 
 
@@ -4546,33 +4546,33 @@ The following fields are available:
 
 - **background**  If the download is happening in the background
 - **bytesRequested**  Number of bytes requested for download.
-- **cdnUrl**  Number of bytes requested for download
-- **costFlags**  Url of the source CDN
-- **deviceProfile**  Network cost flags
-- **diceRoll**  Identifies the usage or form factor (Desktop, Xbox, VM, etc)
-- **doClientVersion**  Random number used for determining if a client will use peering
-- **doErrorCode**  Version of the Delivery Optimization client
-- **downloadMode**  Delivery Optimization error code returned
-- **downloadModeSrc**  DownloadMode used (CdnOnly = 0, Lan = 1, Group = 2, Internet = 3, Simple = 99, Bypass = 100)
-- **errorCode**  Source of the DownloadMode setting (KvsProvider: 0, GeoProvider: 1, GeoVerProvider: 2, CpProvider: 3, DiscoveryProvider: 4, RegistryProvider: 5, GroupPolicyProvider: 6, MdmProvider: 7, SettingsProvider: 8, InvalidProviderType: 9)
-- **experimentId**  Error code returned
-- **fileID**  Used to correlate client/services calls that are part of the same test during A/B testing
-- **filePath**  ID of the File being downloaded
-- **fileSize**  Path to where the downloaded file will be written
-- **fileSizeCaller**  Total filesize of the file that was downloaded
-- **groupID**  Value for total file size provided by our caller
-- **isVpn**  ID for the group
-- **jobID**  If the machine is connected to a Virtual Private Network
-- **peerID**  Minimum filesize policy set for the device to allow Peering with Delivery Optimization
+- **cdnUrl**  Url of the source CDN
+- **costFlags**  Network cost flags
+- **deviceProfile**  Identifies the usage or form factor (Desktop, Xbox, VM, etc)
+- **diceRoll**  Random number used for determining if a client will use peering
+- **doClientVersion**  Version of the Delivery Optimization client
+- **doErrorCode**  Delivery Optimization error code returned
+- **downloadMode**  DownloadMode used (CdnOnly = 0, Lan = 1, Group = 2, Internet = 3, Simple = 99, Bypass = 100)
+- **downloadModeSrc**  Source of the DownloadMode setting (KvsProvider: 0, GeoProvider: 1, GeoVerProvider: 2, CpProvider: 3, DiscoveryProvider: 4, RegistryProvider: 5, GroupPolicyProvider: 6, MdmProvider: 7, SettingsProvider: 8, InvalidProviderType: 9)
+- **errorCode**  Error code returned
+- **experimentId**  Used to correlate client/services calls that are part of the same test during A/B testing
+- **fileID**  ID of the File being downloaded
+- **filePath**  Path to where the downloaded file will be written
+- **fileSize**  Total filesize of the file that was downloaded
+- **fileSizeCaller**  Value for total file size provided by our caller
+- **groupID**  ID for the group
+- **isVpn** If the machine is connected to a Virtual Private Network 
+- **jobID**  Identifier for the Windows Update Job
+- **peerID**  ID for this Delivery Optimization client
 - **predefinedCallerName**  Name of the API caller
-- **sessionID**  Name of the API Caller
-- **setConfigs**  ID of the Update being downloaded
+- **sessionID**  ID for the file download session
+- **setConfigs**  ID of the update being downloaded
 - **updateID**  ID for the file download session
-- **usedMemoryStream**  ID of the Update being downloaded
+- **usedMemoryStream**  If the download is using memory streaming in App downloads
 - **callerName**  Name of the API Caller
-- **minDiskSizeGB**  Identifier for the Windows Update Job
-- **minDiskSizePolicyEnforced**  The minimum disk size policy set for the device to allow Peering with Delivery Optimization
-- **minFileSizePolicy**  If there is an enforced mininum disk size requirement for peering
+- **minDiskSizeGB**  The minimum disk size policy set for the device to allow Peering with Delivery Optimization
+- **minDiskSizePolicyEnforced**  If there is an enforced mininum disk size requirement for peering
+- **minFileSizePolicy**  The minimum file size policy set for the device to allow Peering with Delivery Optimization
 - **scenarioID**  ID for the Scenario
 - **isEncrypted**  Whether the download is encrypted
 
