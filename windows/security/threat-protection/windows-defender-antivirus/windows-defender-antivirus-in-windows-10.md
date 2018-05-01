@@ -51,7 +51,9 @@ Some of the highlights of Windows Defender AV include:
 
 ## What's new in Windows 10, version 1803
 
-In Windows 10, version 1803, Windows Defender AV can now block non-portable executable files (such as JS, VBS, or macros) as well as executable files.
+- The [Block at First Sight feature](configure-block-at-first-sight-windows-defender-antivirus.md) can now block non-portable executable files (such as JS, VBS, or macros) as well as executable files.
+- The [Virus & threat protection area in the Windows Defender Security Center](windows-defender-security-center-antivirus.md) now includes a section for Ransomware protection. It includes Controlled folder access settings and ransomware recovery settings.
+
 
 ## What's new in Windows 10, version 1703
 
@@ -63,9 +65,6 @@ New features for Windows Defender AV in Windows 10, version 1703 include:
 We've expanded this documentation library to cover end-to-end deployment, management, and configuration for Windows Defender AV, and we've added some new guides that can help with evaluating and deploying Windows Defender AV in certain scenarios:
 - [Evaluation guide for Windows Defender AV](evaluate-windows-defender-antivirus.md)
 - [Deployment guide for Windows Defender AV in a virtual desktop infrastructure environment](deployment-vdi-windows-defender-antivirus.md)
-
-See the [In this library](#in-this-library) list at the end of this topic for links to each of the updated sections in this library.
-
 
 
 <a id="sysreq"></a>
