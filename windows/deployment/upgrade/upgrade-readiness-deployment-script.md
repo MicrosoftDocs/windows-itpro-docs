@@ -203,11 +203,7 @@ The deployment script displays the following exit codes to let you know if it wa
         <td>25 - The function **SetIEDataOptIn** failed with unexpected exception.</td>
         <td>Check the logs for the exception message and HResult.</td>
     </tr>
-    <tr>
-        <td>26 - The operating system is Server or LTSB SKU.</td>
-        <td> The script does not support Server or LTSB SKUs.</td>
-    </tr>
-    <tr>
+        <tr>
         <td>27 - The script is not running under **System** account.</td>
         <td>The Upgrade Readiness configuration script must be run as **System**. </td>
     </tr>
