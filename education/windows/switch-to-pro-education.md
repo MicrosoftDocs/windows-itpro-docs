@@ -115,12 +115,6 @@ Once you enable the setting to change to Windows 10 Pro Education, the change wi
 2. Click **Manage** from the top menu and then select the **Benefits tile**.
 3. In the **Benefits** tile, look for the **change to Windows 10 Pro Education for free** link and then click it.
 
-    You will see the following page informing you that your school is eligible to change free to Windows 10 Pro Education to Windows 10 Pro.
-
-    **Figure 3** - change Windows 10 Pro to Windows 10 Pro Education
-
-    ![Eligible for free Windows 10 Pro to Windows 10 Pro Education change](images/msfe_manage_benefits_changetoproedu.png)
-
 4. In the **change all your devices to Windows 10 Pro Education for free** page, check box next to **I understand enabling this setting will change all domain-joined devices running Windows 10 Pro in my organization**.
 
     **Figure 4** - Check the box to confirm
@@ -134,21 +128,13 @@ Once you enable the setting to change to Windows 10 Pro Education, the change wi
 6. Close the confirmation window and check the email to proceed to the next step.
 7. In the email, click the link to **change to Windows 10 Pro Education**. Once you click the link, this will take you back to the Microsoft Store for Education portal.
 
-    **Figure 5** - Click the link in the email to change to Windows 10 Pro Education
-
-    ![Click the email link to change to Windows 10 Pro Education](images/msfe_clickemaillink_changetoproedu.png)
-
 8. Click **change now** in the **changing your device to Windows 10 Pro Education for free** page in the Microsoft Store. 
 
     You will see a window that confirms you've successfully changeed all the devices in your organization to Windows 10 Pro Education, and each Azure AD joined device running Windows 10 Pro will automatically change the next time someone in your organization signs in to the device.
 
 9. Click **Close** in the **Success** window.
 
-Enabling the automatic change also triggers an email message notifying all global administrators in your organization about the change. It also contains a link that enables any global administrators to cancel the change if they choose. For more info about rolling back or canceling the change, see [Roll back Windows 10 Pro Education to Windows 10 Pro](#roll-back-windows-10-pro-education-to-windows-10-pro).\
-
-**Figure 6** - Email notifying all global admins about the change
-
-![Email notifying all global admins about the change](images/msfe_changetoproedu_globaladminsemail_cancelchange.png)
+Enabling the automatic change also triggers an email message notifying all global administrators in your organization about the change. It also contains a link that enables any global administrators to cancel the change if they choose. For more info about rolling back or canceling the change, see [Roll back Windows 10 Pro Education to Windows 10 Pro](#roll-back-windows-10-pro-education-to-windows-10-pro).
 
 
 ## Explore the change experience
