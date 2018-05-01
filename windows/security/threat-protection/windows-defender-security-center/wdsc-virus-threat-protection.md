@@ -22,7 +22,7 @@ ms.date: 04/30/2018
 - Windows 10, version 1703 and later
 
 
-The **Virus & threat protection** section contains information and settings for antivirus protection from Windows Defender Antivirus and third-party AV products. In Windows 10, version 1803 and later, this section also contains information and settings for ransomware protection and recovery, including Controlled folder access settings and sign in to Microsoft OneDrive. IT administrators and IT pros can get more information and documentation about configuration from the following:
+The **Virus & threat protection** section contains information and settings for antivirus protection from Windows Defender Antivirus and third-party AV products. In Windows 10, version 1803, this section also contains information and settings for ransomware protection and recovery. This includes Controlled folder access settings to prevent unknown apps from changing files in protected folders, plus Microsoft OneDrive configuration to help you recover from a ransomware attack. This area also notifies users and provides recovery instructions in the event of a ransomware attack. IT administrators and IT pros can get more information and documentation about configuration from the following:
 
 - [Windows Defender Antivirus in the Windows Defender Security Center app](../windows-defender-antivirus/windows-defender-security-center-antivirus.md)
 - [Windows Defender Antivirus documentation library](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)

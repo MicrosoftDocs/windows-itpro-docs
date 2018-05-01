@@ -76,7 +76,7 @@ Item | Windows 10, before version 1703 | Windows 10, version 1703 and later | De
 
 ## Common tasks
 
-This section describes how to perform some of the most common tasks when reviewing or interacting with the threat protection provided by Windows Defender Antivirus in the new Windows Defender Security Center app.
+This section describes how to perform some of the most common tasks when reviewing or interacting with the threat protection provided by Windows Defender Antivirus in the Windows Defender Security Center app.
 
 > [!NOTE]
 > If these settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings. The [Configure end-user interaction with Windows Defender Antivirus](configure-end-user-interaction-windows-defender-antivirus.md) topic describes how local policy override settings can be configured.
@@ -142,8 +142,17 @@ This section describes how to perform some of the most common tasks when reviewi
  
 4. Click **See full history** under each of the categories (**Current threats**, **Quarantined threats**, **Allowed threats**).
  
- 
+<a id="ransomware"></a>
+**Set ransomware protection and recovery options**
+1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
+2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
+
+3. Click **Ransomware protection**.
+
+4. To change Controlled folder access settings, see [Protect important folders with Controlled folder access](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard).
+
+5. To set up ransomware recovery options, click **Set up** under **Ransomware data recovery** and follow the instructions for linking or setting up your OneDrive account so you can easily recover from a ransomware attack.
 
 
 ## Related topics
