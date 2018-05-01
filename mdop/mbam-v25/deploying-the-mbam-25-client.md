@@ -49,10 +49,7 @@ This section explains how to install the MBAM Client by using a command line.
 
 [Deploying MBAM 2.5](deploying-mbam-25.md)
 
-## Got a suggestion for MBAM?
 
-
-Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 ## Related topics
 
@@ -62,7 +59,9 @@ Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-micros
 [Planning for MBAM 2.5](planning-for-mbam-25.md)
 
  
-
+## Got a suggestion for MBAM?
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
  
 
 

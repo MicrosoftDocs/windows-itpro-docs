@@ -37,10 +37,6 @@ To enable the client computers to report BitLocker compliance details in the MBA
 
 [Create or Edit the Sms\_def.mof File](create-or-edit-the-sms-defmof-file-mbam-25.md)
 
-## Got a suggestion for MBAM?
-
-
-Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 ## Related topics
 
@@ -54,7 +50,9 @@ Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-micros
  
 
  
-
+## Got a suggestion for MBAM?
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 
 

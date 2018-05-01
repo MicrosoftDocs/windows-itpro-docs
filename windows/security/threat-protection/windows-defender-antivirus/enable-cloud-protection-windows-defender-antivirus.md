@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 11/20/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 04/30/2018
 ---
 
 # Enable cloud-delivered protection in Windows Defender AV
@@ -57,7 +57,7 @@ There are specific network-connectivity requirements to ensure your endpoints ca
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration**.
 
-4.  Click **Policies** then **Administrative templates**.
+4.  Click **Administrative templates**.
 
 5.  Expand the tree to **Windows components > Windows Defender Antivirus > MAPS**
     

@@ -16,9 +16,7 @@ ms.date: 01/17/2018
 
 **Applies to**
 
--   Windows 10, Windows Insider Preview
-
-[This information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+-   Windows 10, version 1803
 
 ## Introduction
 The Diagnostic Data Viewer is a Windows app that lets you review the diagnostic data your device is sending to Microsoft, grouping the info into simple categories based on how it's used by Microsoft.

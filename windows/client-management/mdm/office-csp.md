@@ -6,13 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/26/2018
+ms.date: 04/25/2018
 ---
 
 # Office CSP
 
 
-The Office configuration service provider (CSP) enables a Microsoft Office client to be installed on a device via the Office Deployment Tool (ODT). For more information, see [Configuration options for the Office Deployment Tool](https://technet.microsoft.com/en-us/library/jj219426.aspx). 
+The Office configuration service provider (CSP) enables a Microsoft Office client to be installed on a device via the Office Deployment Tool (ODT). For more information, see [Configuration options for the Office Deployment Tool](https://technet.microsoft.com/en-us/library/jj219426.aspx) and [How to assign Office 365 apps to Windows 10 devices with Microsoft Intune](https://docs.microsoft.com/en-us/intune/apps-add-office365). 
 This CSP was added in Windows 10, version 1703.
 
 For additional information, see [Office DDF](office-ddf.md).

@@ -154,7 +154,7 @@ sections:
       
       title: Windows Hello for Business
       
-    - href: \windows\security\threat-protection\windows-defender-application-control
+    - href: \windows\security\threat-protection\windows-defender-application-control\windows-defender-application-control
 
       html: <p>Lock down applications that run on a device</p>
 
@@ -251,7 +251,7 @@ sections:
     - html: <a href="/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security">Windows Defender Firewall</a>
     - html: <a href="/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard">Windows Defender Exploit Guard</a>
     - html: <a href="/windows/security/identity-protection/credential-guard/credential-guard">Windows Defender Credential Guard</a>
-    - html: <a href="/windows/security/threat-protection/device-guard/device-guard-deployment-guide">Windows Defender Device Guard</a>  
+    - html: <a href="/windows/security/threat-protection/windows-defender-device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control">Windows Defender Device Guard</a>  
     - html: <a href="/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview">Windows Defender Application Guard</a>
     - html: <a href="/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview">Windows Defender SmartScreen</a>  
     - html: <a href="/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center">Windows Defender Security Center</a>

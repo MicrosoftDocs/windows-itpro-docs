@@ -55,9 +55,8 @@ This topic describes the types of administrative tasks that you can perform with
 [Technical Reference for MBAM 2.5](technical-reference-for-mbam-25.md)
 
 ## Got a suggestion for MBAM?
-
-
-Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
  
 

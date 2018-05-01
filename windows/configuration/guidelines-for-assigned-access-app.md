@@ -8,7 +8,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
 ms.author: jdecker
-ms.date: 10/20/2017
+ms.date: 04/30/2018
 ---
 
 # Guidelines for choosing an app for assigned access (kiosk mode)
@@ -42,25 +42,23 @@ Avoid selecting Windows apps that are designed to launch other apps as part of t
 
 ## Guidelines for web browsers
 
-Microsoft Edge and any third-party web browsers that can be set as a default browser have special permissions beyond that of most Windows apps. Microsoft Edge is not supported for assigned access.
+In Windows 10, version 1803, you can install the **Kiosk Browser** app from Microsoft to use as your kiosk app. For digital signage scenarios, you can configure **Kiosk Browser** to navigate to a URL and show only that content -- no navigation buttons, no address bar, etc. For kiosk scenarios, you can configure additional settings, such as allowed and blocked URLs, navigation buttons, and end session buttons. For example, you could configure your kiosk to show the online catalog for your store, where customers can navigate between departments and items, but aren’t allowed to go to a competitor's website. 
 
-If you use a web browser as your assigned access app, consider the following tips: 
+**Kiosk Browser** must be downloaded for offline licensing using Microsoft Store For Business. You can deploy **Kiosk Browser** to devices running Windows 10, version 1803 (Pro, Business, Enterprise, and Education).
 
-- You can download browsers that are optimized to be used as a kiosk from the Microsoft Store.
-- You can create your own web browser Windows app by using the WebView class. Learn more about developing your own web browser app:
-   - [Creating your own browser with HTML and JavaScript](https://blogs.windows.com/msedgedev/2015/08/27/creating-your-own-browser-with-html-and-javascript/) 
-   - [WebView class](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.webview.aspx)
-   - [A web browser built with JavaScript as a Windows app](https://github.com/MicrosoftEdge/JSBrowser/tree/v1.0)
+1. [Get **Kiosk Browser** in Microsoft Store for Business with offline license type.](https://docs.microsoft.com/microsoft-store/acquire-apps-microsoft-store-for-business#acquire-apps)
+2. [Deploy **Kiosk Browser** to kiosk devices.](https://docs.microsoft.com/microsoft-store/distribute-offline-apps)
+3. Configure policies using settings from the Policy Configuration Service Provider (CSP) for [KioskBrowser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-kioskbrowser). These settings can be configured using your MDM service provider, or [in a provisioning package](provisioning-packages/provisioning-create-package.md).
+
+>[!NOTE]
+>Microsoft Edge and any third-party web browsers that can be set as a default browser have special permissions beyond that of most Windows apps. Microsoft Edge is not currently supported for assigned access.
+
+
+You can create your own web browser Windows app by using the WebView class. Learn more about developing your own web browser app:
+- [Creating your own browser with HTML and JavaScript](https://blogs.windows.com/msedgedev/2015/08/27/creating-your-own-browser-with-html-and-javascript/) 
+- [WebView class](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.webview.aspx)
+- [A web browser built with JavaScript as a Windows app](https://github.com/MicrosoftEdge/JSBrowser/tree/v1.0)
  
-**To block access to the file system from Internet Explorer's web address bar**
-1.	On the Start screen, type the following:
-    `gpedit.msc`
-2.	Press **Enter** or click the gpedit icon to launch the group policy editor.
-3.	In the group policy editor, navigate to **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar**.
-4.	Select **Remove Run menu from Start Menu**, select **Disabled**, and click **Apply**. Disabling this policy prevents users from entering the following into the Internet Explorer Address Bar:
-   - A UNC path (\\\\*server*\\\\*share*)
-   - A local drive (C:\\)
-   - A local folder (\temp)
 
 
 ## Secure your information
@@ -83,9 +81,6 @@ Follow the [best practices guidance for developing a kiosk app for assigned acce
 
 The above guidelines may help you select or develop an appropriate Windows app for your assigned access experience. Once you have selected your app, we recommend that you thoroughly test the assigned access experience to ensure that your device provides a good customer experience.
 
-## Learn more
-
-[Customizing Your Device Experience with Assigned Access](https://channel9.msdn.com/Events/Build/2016/P508)
 
 
 

@@ -1,5 +1,5 @@
 # [Deploy and update Windows 10](https://docs.microsoft.com/en-us/windows/deployment)
-
+## [Deploy Windows 10 with Microsoft 365](deploy-m365.md)
 ## [What's new in Windows 10 deployment](deploy-whats-new.md)
 ## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
 
@@ -19,8 +19,8 @@
 
 ## [Deploy Windows 10](deploy.md)
 
-### [Overview of Windows AutoPilot](windows-autopilot/windows-10-autopilot.md)
-
+### [Overview of Windows Autopilot](windows-autopilot/windows-10-autopilot.md)
+### [Windows 10 in S mode](windows-10-pro-in-s-mode.md)
 ### [Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)
 #### [Windows 10 downgrade paths](upgrade/windows-10-downgrade-paths.md)
 ### [Windows 10 edition upgrade](upgrade/windows-10-edition-upgrades.md)

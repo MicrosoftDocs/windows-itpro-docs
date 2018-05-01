@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 09/06/2017
+ms.date: 04/30/2018
 ---
 
 # Browser (Windows Configuration Designer reference)
@@ -19,7 +19,7 @@ Use to configure browser settings that should only be set by OEMs who are part o
 | Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
 | [Favorites](#favorites) |  |  X  |  |  |  |
-| [PartnerSearchCode](#partnersearchcode)  | X | X | X | X |  |
+| [PartnerSearchCode](#partnersearchcode)  | X | X | X |  |  |
 | [SearchProviders](#searchproviders) |   |  X  |  |  |  |
 
 ## Favorites

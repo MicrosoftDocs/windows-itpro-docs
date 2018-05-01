@@ -83,10 +83,7 @@ Before you install the MBAM Client software on end users' computers, ensure that
 If BitLocker was used without MBAM, MBAM can be installed and utilize the existing TPM information.
  
 
-## Got a suggestion for MBAM?
 
-
-Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 ## Related topics
 
@@ -96,7 +93,9 @@ Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-micros
 [Planning to Deploy MBAM 2.5](planning-to-deploy-mbam-25.md)
 
  
-
+## Got a suggestion for MBAM?
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
  
 
 

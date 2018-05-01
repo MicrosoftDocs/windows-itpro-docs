@@ -59,7 +59,7 @@ The following table lists the supported elements and attributes for the LayoutMo
 | TopMFUApps</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to add up to 3 default apps to the frequently used apps section in the system area.</br></br>**Note**: Only applies to versions of Windows 10 earlier than version 1709. In Windows 10, version 1709, you can no longer pin apps to the Most Frequently Used apps list in Start. |
 | Tile</br></br>Parent:</br>TopMFUApps | AppUserModelID | Use with the TopMFUApps tags to specify an app with a known AppUserModelID. </br></br>**Note**: Only applies to versions of Windows 10 earlier than version 1709. In Windows 10, version 1709, you can no longer pin apps to the Most Frequently Used apps list in Start. |
 | DesktopApplicationTile</br></br>Parent:</br>TopMFUApps | LinkFilePath | Use with the TopMFUApps tags to specify an app without a known AppUserModelID.</br></br>**Note**: Only applies to versions of Windows 10 earlier than version 1709. In Windows 10, version 1709, you can no longer pin apps to the Most Frequently Used apps list in Start. |
-| AppendOfficeSuite</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to add the in-box installed Office suite to Start</br></br>Do not use this tag with AppendDownloadOfficeTile |
+| AppendOfficeSuite</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to add the in-box installed Office suite to Start. For more information, see [Customize the Office suite of tiles](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-start-layout#customize-the-office-suite-of-tiles).</br></br>Do not use this tag with AppendDownloadOfficeTile |
 | AppendDownloadOfficeTile</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to add a specific **Download Office** tile to a specific location in Start</br></br>Do not use this tag with AppendOfficeSuite |
 
 ### LayoutOptions
@@ -304,9 +304,23 @@ The following example shows how to add the **AppendOfficeSuite** tag to your Lay
 </LayoutModificationTemplate>
 ```
 
+#### AppendOfficeSuiteChoice
+
+This tag is added in Windows 10, version 1803. You have two options in this tag:
+
+- `<AppendOfficeSuiteChoice Choice="DesktopBridgeSubscription"/>`
+- `<AppendOfficeSuiteChoice Choice="DesktopBridge"/>`
+
+Use `Choice=DesktopBridgeSubscription` on devices running Windows 10, version 1803, that have Office 365 preinstalled. This will set the heading of the Office suite of tiles to **Office 365**, to highlight the Office 365 apps that you've made available on the device.
+
+Use `Choice=DesktopBridge` on devices running versions of Windows 10 earlier than version 1803, and on devices shipping with [perpetual licenses for Office](https://blogs.technet.microsoft.com/ausoemteam/2017/11/30/choosing-the-right-office-version-for-your-customers/). This will set the heading of the Office suite of tiles to **Create**.
+
+For more information, see [Customize the Office suite of tiles](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-start-layout#customize-the-office-suite-of-tiles).
+
+
 #### AppendDownloadOfficeTile
 
-You can use the **AppendDownloadOfficeTile** tag to append the Office trial installer to Start. This tag adds the Download Office tile to Start and the download tile will appear at the bottom right-hand side of the second group.
+You can use the **AppendDownloadOfficeTile** tag to append the Office trial installer to Start. This tag adds the **Download Office** tile to Start and the download tile will appear at the bottom right-hand side of the second group.
 
 >[!NOTE]
 >The OEM must have installed the Office trial installer for this tag to work.
