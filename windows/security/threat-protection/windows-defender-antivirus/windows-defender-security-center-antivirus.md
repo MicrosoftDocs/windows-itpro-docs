@@ -87,9 +87,9 @@ This section describes how to perform some of the most common tasks when reviewi
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
-3. Click **Quick scan**.
+3. Click **Scan now**.
 
-4. Click **Advanced scan** to specify different types of scans, such as a full scan.
+4. Click **Run a new advanced scan** to specify different types of scans, such as a full scan.
 
 <a id="definition-version"></a>
 **Review the definition update version and download the latest updates in the Windows Defender Security Center app**
@@ -97,7 +97,7 @@ This section describes how to perform some of the most common tasks when reviewi
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
-3. Click **Protection updates**. The currently installed version is displayed along with some information about when it was downloaded. You can check this against the latest version available for manual download, or review the change log for that version.
+3. Click **Virus & threat protection updates**. The currently installed version is displayed along with some information about when it was downloaded. You can check this against the latest version available for manual download, or review the change log for that version.
 
 ![Definition version number information](images/defender/wdav-wdsc-defs.png)
 
@@ -138,7 +138,7 @@ This section describes how to perform some of the most common tasks when reviewi
  
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
  
-3. Click **Scan history**.
+3. Click **Threat history**.
  
 4. Click **See full history** under each of the categories (**Current threats**, **Quarantined threats**, **Allowed threats**).
  
