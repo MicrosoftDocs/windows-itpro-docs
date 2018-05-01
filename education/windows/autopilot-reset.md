@@ -75,6 +75,9 @@ Autopilot Reset is a two-step process: trigger it and then authenticate. Once yo
 
 2. Sign in with the admin account credentials. If you created a provisioning package, plug in the USB drive and trigger Autopilot Reset.
 
+>[!IMPORTANT] 
+>To reestablish Wi-Fi connectivity after reset, make sure the **Connect automatically** box is checked for the device's wireless network connection. 
+
     Once Autopilot Reset is triggered, the reset process starts. 
     
     After reset, the device:
