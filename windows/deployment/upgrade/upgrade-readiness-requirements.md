@@ -31,7 +31,7 @@ See [Windows 10 Specifications](http://www.microsoft.com/en-US/windows/windows-1
 Keeping Windows 10 up to date involves deploying a feature update, and Upgrade Readiness tools help you prepare and plan for these Windows updates.
 The latest cumulative updates must be installed on Windows 10 computers to make sure that the required compatibility updates are installed.  You can find the latest cumulative update on the [Microsoft Update Catalog](https://catalog.update.microsoft.com). 
 
-While Upgrade Readiness can be used to assist with updating devices from Windows 10 Long-Term Servicing Channel (LTSC) to Windows 10 Semi-Annual Channel, Upgrade Readiness does not support updates to Windows 10 LTSC. The Long-Term Servicing Channel of Windows 10 is not intended for general deployment, and does not receive feature updates, therefore it is not a supported target with Upgrade Readiness.  See [Windows as a service overview](../update/waas-overview.md#long-term-servicing-channel) to understand more about LTSC.
+While Upgrade Readiness can be used to assist with updating devices from Windows 10 Long-Term Servicing Channel (LTSC) to Windows 10 Semi-Annual Channel, Upgrade Readiness does not support updates to Windows 10 LTSC. The Long-Term Servicing Channel of Windows 10 is not intended for general deployment, and does not receive feature updates, therefore it is not a supported target with Upgrade Readiness. See [Windows as a service overview](../update/waas-overview.md#long-term-servicing-channel) to understand more about LTSC.
 
 ## Operations Management Suite
 
