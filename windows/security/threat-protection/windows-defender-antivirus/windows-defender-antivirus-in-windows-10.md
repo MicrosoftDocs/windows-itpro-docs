@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/17/2018
+ms.date: 04/30/2018
 ---
 
 # Windows Defender Antivirus in Windows 10 and Windows Server 2016
@@ -48,6 +48,10 @@ Some of the highlights of Windows Defender AV include:
 >- Cloud-delivered protection
 >- Fast learning (including Block at first sight)
 >- Potentially unwanted application blocking
+
+## What's new in Windows 10, version 1803
+
+In Windows 10, version 1803, Windows Defender AV can now block non-portable executable files (such as JS, VBS, or macros) as well as executable files.
 
 ## What's new in Windows 10, version 1703
 
