@@ -54,6 +54,8 @@ Read the following blog posts for detailed protection stories involving cloud-pr
 
 Cloud-delivered protection is enabled by default. However, you may need to re-enable it if it has been disabled as part of previous organizational policies.
 
+Organizations running Windows 10 E5, version 1803 can also take advantage of emergency dynamic intelligence updates, which provide near real-time protection from emerging threats. When you turn cloud-delivered protection on, we can deliver a fix for a malware issue via the cloud within minutes instead of waiting for the next update.
+
 >[!TIP]
 >You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
 
