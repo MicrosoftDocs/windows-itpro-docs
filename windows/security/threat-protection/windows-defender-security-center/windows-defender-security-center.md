@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/11/2018
+ms.date: 04/30/2018
 ---
 
 
@@ -75,12 +75,15 @@ You can find more information about each section, including options for configur
 
 
 ## Open the Windows Defender Security Center app
-- Right-click the icon in the notification area on the taskbar and click **Open**.
+- Click the icon in the notification area on the taskbar.
 
     ![Screen shot of the icon for the Windows Defender Security Center app on the Windows task bar](images/security-center-taskbar.png)
 - Search the Start menu for **Windows Defender Security Center**.
 
     ![Screen shot of the Start menu showing the results of a search for the Windows Defender Security Center app, the first option with a large shield symbol is selected](images/security-center-start-menu.png)
+- Open an area from Windows **Settings**.
+
+    ![Screen shot of Windows Settings showing the different areas available in the Windows Defender Security Center](images/settings-windows-defender-security-center-areas.png)
 
 
 > [!NOTE]
