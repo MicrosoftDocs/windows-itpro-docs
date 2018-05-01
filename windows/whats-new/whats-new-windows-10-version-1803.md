@@ -21,7 +21,7 @@ The following 3-minute video summarizes some of the new features that are availa
 
 &nbsp;
 
-> [!video https://www.youtube.com/embed/LFiP73slWew?autoplay=false]
+> [!video https://www.microsoft.com/en-us/videoplayer/embed/RE21ada?autoplay=false]
 
 
 ## Deployment
@@ -221,7 +221,9 @@ Device Health’s new App Reliability reports enable you to see where app update
 
 ## Microsoft Edge
 
-iOS and Android versions of Edge are now available. Support in [Windows Defender Application Guard](#windows-defender-application-guard) is also improved.
+iOS and Android versions of Edge are now available. For more information, see [Microsoft Edge Tips](https://microsoftedgetips.microsoft.com/en-us?source=firstrunwip).
+
+Support in [Windows Defender Application Guard](#windows-defender-application-guard) is also improved.
 
 
 ## See Also

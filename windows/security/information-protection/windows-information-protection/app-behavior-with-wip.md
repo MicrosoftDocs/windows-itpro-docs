@@ -27,6 +27,9 @@ To avoid the automatic encryption of data, developers can enlighten apps by addi
 
 We strongly suggest that the only unenlightened apps you add to your allowed apps list are Line-of-Business (LOB) apps.
 
+>[!IMPORTANT]
+>After revoking WIP, unenlightened apps will have to be uninstalled and re-installed since their settings files will remain encrypted.
+
 >[!Note]
 >For more info about creating enlightened apps, see the [Windows Information Protection (WIP)](https://msdn.microsoft.com/en-us/windows/uwp/enterprise/wip-hub) topic in the Windows Dev Center.
 

@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/17/2018
+ms.date: 04/30/2018
 ---
 
 # Windows Defender Antivirus in Windows 10 and Windows Server 2016
@@ -49,6 +49,12 @@ Some of the highlights of Windows Defender AV include:
 >- Fast learning (including Block at first sight)
 >- Potentially unwanted application blocking
 
+## What's new in Windows 10, version 1803
+
+- The [Block at First Sight feature](configure-block-at-first-sight-windows-defender-antivirus.md) can now block non-portable executable files (such as JS, VBS, or macros) as well as executable files.
+- The [Virus & threat protection area in the Windows Defender Security Center](windows-defender-security-center-antivirus.md) now includes a section for Ransomware protection. It includes Controlled folder access settings and ransomware recovery settings.
+
+
 ## What's new in Windows 10, version 1703
 
 New features for Windows Defender AV in Windows 10, version 1703 include:
@@ -59,9 +65,6 @@ New features for Windows Defender AV in Windows 10, version 1703 include:
 We've expanded this documentation library to cover end-to-end deployment, management, and configuration for Windows Defender AV, and we've added some new guides that can help with evaluating and deploying Windows Defender AV in certain scenarios:
 - [Evaluation guide for Windows Defender AV](evaluate-windows-defender-antivirus.md)
 - [Deployment guide for Windows Defender AV in a virtual desktop infrastructure environment](deployment-vdi-windows-defender-antivirus.md)
-
-See the [In this library](#in-this-library) list at the end of this topic for links to each of the updated sections in this library.
-
 
 
 <a id="sysreq"></a>
