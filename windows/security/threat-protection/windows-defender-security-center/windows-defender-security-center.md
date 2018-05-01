@@ -83,7 +83,7 @@ You can find more information about each section, including options for configur
     ![Screen shot of the Start menu showing the results of a search for the Windows Defender Security Center app, the first option with a large shield symbol is selected](images/security-center-start-menu.png)
 - Open an area from Windows **Settings**.
 
-    ![Screen shot of Windows Settings showing the different areas available in the Windows Defender Security Center](images/settings-windows-defender-security-center.png)
+    ![Screen shot of Windows Settings showing the different areas available in the Windows Defender Security Center](images/settings-windows-defender-security-center-areas.png)
 
 
 > [!NOTE]
