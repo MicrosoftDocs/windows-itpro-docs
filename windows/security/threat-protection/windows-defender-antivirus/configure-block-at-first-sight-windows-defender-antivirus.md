@@ -54,7 +54,7 @@ You can also [customize the message displayed on users' desktops](https://docs.m
 
 When a Windows Defender Antivirus client encounters a suspicious but undetected file, it queries our cloud protection backend. The cloud backend will apply heuristics, machine learning, and automated analysis of the file to determine the files as malicious or clean. 
 
-In Windows 10, version 1803, the Block at first sight feature can now block non-portable executable files (such as JS, VBS, or macros) as well as executable files.
+In Windows 10, version 1803, the Block at First Sight feature can now block non-portable executable files (such as JS, VBS, or macros) as well as executable files.
 
 The Block at First Sight feature only uses the cloud protection backend for executable files and non-portable executable files that are downloaded from the Internet, or originating from the Internet zone. A hash value of the .exe file is checked via the cloud backend to determine if this is a previously undetected file.
 
