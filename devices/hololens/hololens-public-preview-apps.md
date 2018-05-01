@@ -46,7 +46,8 @@ Here are the requirements you'll need to meet in order to distribute Layout thro
   * If you're using a Windows Mixed Reality immersive headset, your PCs will need to be able to support it. See [Windows Mixed Reality PC hardware guidelines](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for specific hardware requirements. We recommend following the **Windows Mixed Reality Ultra** hardware guidelines.
 * **Azure Active Directory (Azure AD)**: Required for app distribution through the Microsoft Store for Business. See [Get started with Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/get-started-azure-ad) to learn more about Azure AD and licensing users.
 * **Network requirements**: Internet access is required to download the app, and utilize all of its features. There are no bandwidth requirements.
-* **Download the Import Tool for Microsoft Layout**: This tool is a free companion app for Microsoft Layout that supports importing existing 3D models from a PC into Layout. It also enables users to share and edit the holograms in real time. The Import Tool for Microsoft Layout will be available to download on May 22nd, to align with the public preview of the modern workplace apps.
+
+<!--- * **Import Tool for Microsoft Layout**: This tool is a free companion app for Microsoft Layout that supports importing existing 3D models from a PC into Layout. It also enables users to share and edit the holograms in real time. The Import Tool for Microsoft Layout will be available to download on May 22nd, to align with the public preview of the modern workplace apps. --->
 
 ## Questions and support
 
