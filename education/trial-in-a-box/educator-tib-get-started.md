@@ -26,8 +26,7 @@ ms.date: 03/18/2018
 | [![Try Learning Tools Immersive Reader](images/edu-TIB-setp-2-v3.png)](#edu-task2) | **Interested in significantly improving your students' reading speed and comprehension?<sup>[1](#footnote1)</sup>** </br>Try the [Learning Tools Immersive Reader](#edu-task2) to see how kids can learn to read faster, using text read aloud, and highlighting words for syntax. |
 | [![Launch Microsoft Teams](images/edu-TIB-setp-3-v3.png)](#edu-task3) | **Looking to foster collaboration, communication, and critical thinking in the classroom?** </br>Launch [Microsoft Teams](#edu-task3) and learn how to set up digital classroom discussions, respond to student questions, and organize class content. |
 | [![Open OneNote](images/edu-TIB-setp-4-v3.png)](#edu-task4) | **Trying to expand classroom creativity and interaction between students?** </br>Open [OneNote](#edu-task4) and create an example group project for your class. |
-| [![Try Photos app](images/edu-tib-setp-5-v4.png)](#edu-task5) | **Curious about telling stories through video?** </br>Try the [Photos app](#edu-task5) to make your own example video. |
-| [![Play with Minecraft: Education Edition](images/edu-tib-setp-6-v4.png)](#edu-task6) | **Want to teach kids to further collaborate and problem solve?** </br>Play with [Minecraft: Education Edition](#edu-task6) to see how it can be used as a collaborative and versatile platform across subjects to encourage 21st century skills. |
+| [![Play with Minecraft: Education Edition](images/edu-TIB-setp-5-v3.png)](#edu-task5) | **Want to teach kids to further collaborate and problem solve?** </br>Play with [Minecraft: Education Edition](#edu-task5) to see how it can be used as a collaborative and versatile platform across subjects to encourage 21st century skills. |
 |  |  |
 
 </br>
@@ -43,8 +42,11 @@ ms.date: 03/18/2018
 To try out the educator tasks, start by logging in as a teacher.
 
 1. Turn on **Device A** and ensure you plug in the PC to an electrical outlet.
-2. Log in to **Device A** using the **Teacher Username** and **Teacher Password** included in the **Credentials Sheet** located in your kit.
-3. Connect to your school's Wi-Fi network or connect with a local Ethernet connection.
+2. Connect to your school's Wi-Fi network or connect with a local Ethernet connection.
+   >**Note**: If your Wi-Fi network requires a web browser login page to connect to the Internet you should connect using the Ethernet port. If your Wi-Fi network has additional restrictions that will prevent the device from connecting to the internet without registration you should consider using Device A from a different network.
+   
+3. Log in to **Device A** using the **Teacher Username** and **Teacher Password** included in the **Credentials Sheet** located in your kit.
+
 
 </br>
 </br>
@@ -80,6 +82,7 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 
 </br>
 </br>
+
 
 
 ![Spark communication, critical thinking, and creativity with Microsoft Teams](images/edu-TIB-setp-3-jump.png) 
@@ -135,7 +138,7 @@ When you're not using the pen, just use the magnet to stick it to the left side 
 </br>
 </br>
 
-![Inspire your students to tell their stories through video!](images/edu-tib-setp-5-jump2.png)
+<!-- ![Inspire your students to tell their stories through video!](images/edu-tib-setp-5-jump2.png)
 ## <a name="edu-task5"></a>5. Engage with students by creating videos
 
 PHOTOS APP VIDEO COMING SOON!
@@ -179,10 +182,10 @@ Use video to create a project summary.
 Check out this use case video of the Photos team partnering with the Bureau Of Fearless Ideas in Seattle to bring the Photos app to local middle school students: <a href="https://www.youtube.com/watch?v=0dFFAu6XwPg" target="_blank">https://www.youtube.com/watch?v=0dFFAu6XwPg</a>
 </br>
 </br>
-</br>
+</br> -->
 
 ![Further collaborate and problem solve with Minecraft: Education Edition](images/edu-TIB-setp-5-jump.png) 
-## <a name="edu-task6"></a>6. Get kids to further collaborate and problem solve
+## <a name="edu-task5"></a>5. Get kids to further collaborate and problem solve
 
 > [!VIDEO https://www.youtube.com/embed/QI_bRNUugog]
 

@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 04/24/2018
+ms.date: 04/30/2018
 ---
 
 # AppLocker CSP
@@ -159,17 +159,16 @@ Each of the previous nodes contains one or more of the following leaf nodes:
 <p>Here is a sample certutil invocation:</p>
 
 ```
-certutil -encode WinSiPolicy.p7b WinSiPolicy.txt
+certutil -encode WinSiPolicy.p7b WinSiPolicy.cer
 ```
 
-<p>Use only the data enclosed in the BEGIN CERTIFIFCATE and END CERTIFICATE section. Ensure that you have removed all line breaks before passing the data to the CSP node.</p>
 <p>An alternative to using certutil would be to use the following PowerShell invocation:</p>
 
 ``` 
 [Convert]::ToBase64String($(Get-Content -Encoding Byte -ReadCount 0 -Path <bin file>))
 ```
 
-<p>If you are using Hybrid MDM management with System Center Configuration Manager please ensure that you are using Base64 as the Data type when using Custom OMA-URI functionality to apply the Code Integrity policy.</p>
+<p>If you are using hybrid MDM management with System Center Configuration Manager or using Intune, ensure that you are using Base64 as the Data type when using Custom OMA-URI functionality to apply the Code Integrity policy.</p>
 <p>Data type is string. Supported operations are Get, Add, Delete, and Replace.</p></td>
 </tr>
 <tr class="even">

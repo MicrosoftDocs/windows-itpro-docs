@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 07/27/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 04/30/2018
 ---
 
 # Configure exclusions in Windows Defender AV on Windows Server
@@ -61,9 +61,7 @@ You can disable the auto-exclusions lists with Group Policy, PowerShell cmdlets,
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
-
-4.  Click **Policies** then **Administrative templates**.
+3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
 5.  Expand the tree to **Windows components > Windows Defender Antivirus > Exclusions**.
 

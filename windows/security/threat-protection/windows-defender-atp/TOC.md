@@ -164,7 +164,7 @@
 ### [Inactive machines](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#inactive-machines)
 ### [Misconfigured machines](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#misconfigured-machines)
 ### [Check service health](service-status-windows-defender-advanced-threat-protection.md)
-### [Configure Windows Defender ATP Settings](preferences-setup-windows-defender-advanced-threat-protection.md)
+## [Configure Windows Defender ATP Settings](preferences-setup-windows-defender-advanced-threat-protection.md)
 
 ###General
 #### [Update data retention settings](data-retention-settings-windows-defender-advanced-threat-protection.md)

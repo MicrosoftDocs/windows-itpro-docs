@@ -10,17 +10,23 @@ ms.author: lizross
 ms.date: 10/19/2017
 ---
 
-# Prepare and install Windows Defender Application Guard
-
-**Applies to:**
-- Windows 10 Enterprise edition, version 1709
-
 ## Prepare to install Windows Defender Application Guard 
 Before you can install and use Windows Defender Application Guard, you must determine which way you intend to use it in your enterprise. You can use Application Guard in either **Standalone** or **Enterprise-managed** mode.
 
-- **Standalone mode.** Employees can use hardware-isolated browsing sessions without any administrator or management policy configuration. In this mode, you must install Application Guard and then the employee must manually start Microsoft Edge in Application Guard while browsing untrusted sites. For an example of how this works, see the [Application Guard in standalone mode](test-scenarios-wd-app-guard.md) testing scenario.
+**Standalone mode**
 
-- **Enterprise-managed mode.** You and your security department can define your corporate boundaries by explicitly adding trusted domains and by customizing the Application Guard experience to meet and enforce your needs on employee devices. Enterprise-managed mode also automatically redirects any browser requests to load non-enterprise domain(s) in the container.
+Applies to:
+- Windows 10 Enterprise edition, version 1709 or higher
+- Windows 10 Professional edition, version 1803
+
+Employees can use hardware-isolated browsing sessions without any administrator or management policy configuration. In this mode,   you must install Application Guard and then the employee must manually start Microsoft Edge in Application Guard while browsing untrusted sites. For an example of how this works, see the [Application Guard in standalone mode](test-scenarios-wd-app-guard.md) testing scenario.
+
+**Enterprise-managed mode** 
+
+Applies to:
+- Windows 10 Enterprise edition, version 1709 or higher
+
+You and your security department can define your corporate boundaries by explicitly adding trusted domains and by customizing the Application Guard experience to meet and enforce your needs on employee devices. Enterprise-managed mode also automatically redirects any browser requests tooad non-enterprise domain(s) in the container.
 
 The following diagram shows the flow between the host PC and the isolated container.
 ![Flowchart for movement between Microsoft Edge and Application Guard](images/application-guard-container-v-host.png)
