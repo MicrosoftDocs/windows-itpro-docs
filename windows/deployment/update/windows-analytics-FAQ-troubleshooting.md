@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 04/05/2018
+ms.date: 05/02/2018
 ---
 
 # Frequently asked questions and troubleshooting Windows Analytics
@@ -23,7 +23,6 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 
 [Device Health crash data not appearing](#device-health-crash-data-not-appearing)
 
-[Upgrade Readiness reports outdated updates](#upgrade-readiness-reports-outdated-updates)
 
 [Upgrade Readiness shows many "Computers with outdated KB"](#upgrade-readiness-shows-many-computers-with-outdated-kb)
 
