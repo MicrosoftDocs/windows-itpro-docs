@@ -66,7 +66,7 @@ Block at First Sight requires a number of Group Policy settings to be configured
 
 ### Confirm Block at First Sight is enabled with Intune
 
-1. In Intune, navigate to **Device configuration - Profiles | <Profile name> | Device restrictions | Windows Defender Antivirus**.
+1. In Intune, navigate to **Device configuration - Profiles | *Profile name* | Device restrictions | Windows Defender Antivirus**.
 
 	> [!NOTE]
 	> The profile you select must be a Device Restriction profile type, not an Endpoint Protection profile type.
