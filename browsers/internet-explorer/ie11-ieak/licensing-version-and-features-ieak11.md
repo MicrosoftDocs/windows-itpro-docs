@@ -2,12 +2,14 @@
 ms.localizationpriority: low
 ms.mktglfcycl: plan
 description: Learn about which version of the IEAK 11 you should run, based on your license agreement.
-author: eross-msft
-ms.prod: ie11
+author: pashort
+ms.author: shortpatti
+ms.manager: elizapo
+ms.prod: ie11, ieak11
 ms.assetid: 69d25451-08af-4db0-9daa-44ab272acc15
 title: Determine the licensing version and features to use in IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
-ms.date: 07/27/2017
+ms.date: 05/02/2018
 ---
 
 
@@ -45,7 +47,7 @@ You must pick a version of IEAK 11 to run during installation, either **Externa
 |Automatic configuration                   |Not available                             |
 |Proxy settings                            |Proxy settings                            |
 |Security and privacy settings             |Not available                             |
-|Not available                             |Add a root certificate                    |
+|Add a root certificate                    |Not available                             |
 |Programs                                  |Programs                                  |
 |Additional settings                       |Not available                             |
 |Wizard complete                           |Wizard complete                           |
