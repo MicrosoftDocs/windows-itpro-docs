@@ -13,9 +13,6 @@ ms.date: 11/01/2017
 # DMClient CSP
 
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 The DMClient configuration service provider is used to specify additional enterprise-specific mobile device management configuration settings for identifying the device in the enterprise domain, security mitigation for certificate renewal, and server-triggered enterprise unenrollment.
 
 The following diagram shows the DMClient configuration service provider in tree format.
