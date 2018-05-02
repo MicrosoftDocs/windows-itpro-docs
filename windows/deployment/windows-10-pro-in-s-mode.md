@@ -63,4 +63,4 @@ You'll be prompted to save your files before the switch starts. Follow the promp
 
 [Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)<BR>
 [Windows 10 Pro Education](https://docs.microsoft.com/education/windows/test-windows10s-for-edu)<BR>
-[Introdiction to Microsoft Intune in the Azure portal](https://docs.microsoft.com/en-us/intune/what-is-intune)
+[Introduction to Microsoft Intune in the Azure portal](https://docs.microsoft.com/en-us/intune/what-is-intune)
