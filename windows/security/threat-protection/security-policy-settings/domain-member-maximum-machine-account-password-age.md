@@ -19,9 +19,9 @@ Describes the best practices, location, values, and security considerations for 
 
 ## Reference
 
-The **Domain member: Maximum machine account password age** policy setting determines the maximum allowable age for a machine account password.
+The **Domain member: Maximum machine account password age** policy setting determines when a domain member submits a password change.
 
-In Active Directory–based domains, each device has an account and password, just like every user. By default, the domain members automatically change their domain password every 30 days. Increasing this interval significantly, or setting it to **0** so that the device no longer change their passwords, gives a malicious user more time to undertake a brute-force password-guessing attack against one of the machine accounts.
+In Active Directory–based domains, each device has an account and password, just like every user. By default, the domain members submit a password change every 30 days. Increasing this interval significantly, or setting it to **0** so that a device no longer submits a password change, gives a malicious user more time to undertake a brute-force password-guessing attack against one of the machine accounts.
 
 ### Possible values
 
@@ -31,7 +31,7 @@ In Active Directory–based domains, each device has an account and password, ju
 ### Best practices
 
 1.  It is often advisable to set **Domain member: Maximum machine account password age** to about 30 days.
-2.  Some organizations pre-build devices and then store them for later use or ship them to remote locations. If the machine's account has expired, it will no longer be able to authenticate with the domain. Devices that cannot authenticate with the domain must be removed from the domain and rejoined to it. For this reason, some organizations might want to create a special organizational unit (OU) for computers that are prebuilt, and configure the value for this policy setting to a larger number of days.
+2. If the machine's password has expired, it will no longer be able to authenticate with the domain. In that case, you might need to remove the device and then re-join it to the domain. For this reason, some organizations create a special organizational unit (OU) for computers that are prebuilt and then stored for later use or shipped to remote locations, and change the value to more than 30 days.
 
 ### Location
 
@@ -64,8 +64,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-In Active Directory–based domains, each device has an account and password, just as every user does. By default, the domain members automatically change their domain password every 30 days. If you increase this interval significantly, or set it to 0 so that the computers no longer change their 
-passwords, an attacker has more time to undertake a brute-force attack to guess the password of one or more computer accounts.
+By default, the domain members submit a password change every 30 days. If you increase this interval significantly, or set it to 0 so that the computers no longer submit a password change, an attacker has more time to undertake a brute-force attack to guess the password of one or more computer accounts.
 
 ### Countermeasure
 
