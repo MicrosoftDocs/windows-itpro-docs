@@ -284,7 +284,7 @@ If you suspect this is the problem, try these steps:
 
 ### Clients aren't able to connect to peers offered by the cloud service
 
-If you suspect this is the problem, un a Telnet test between two devices on the network to ensure they can connect using port 7680. To do this, follow these steps:
+If you suspect this is the problem, run a Telnet test between two devices on the network to ensure they can connect using port 7680. To do this, follow these steps:
 
 1. Install Telnet by running **dism /online /Enable-Feature /FeatureName:TelnetClient** from an elevated command prompt.
 2. Run the test. For example, if you are on device with IP 192.168.8.12 and you are trying to test the connection to 192.168.9.17 run **telnet 192.168.9.17 7680** (the syntax is *telnet [destination IP] [port]*. You will either see a connection error or a blinking cursor like this /_. The blinking cursor means success.

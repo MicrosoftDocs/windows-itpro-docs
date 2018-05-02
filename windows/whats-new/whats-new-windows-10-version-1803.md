@@ -85,7 +85,7 @@ The following new DISM commands have been added to manage feature updates:
     DISM /Online /Set-OSUninstallWindow 
         – Sets the number of days after upgrade during which uninstall can be performed.
 
-For more information, see [DISM operating system uninstall command-line options](https://review.docs.microsoft.com/windows-hardware/manufacture/desktop/dism-uninstallos-command-line-options).
+For more information, see [DISM operating system uninstall command-line options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-uninstallos-command-line-options).
 
 ### Windows Setup
 

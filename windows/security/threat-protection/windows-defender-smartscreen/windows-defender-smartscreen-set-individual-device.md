@@ -28,8 +28,6 @@ Starting with Windows 10, version 1703 your employees can use Windows Defender S
 **To use Windows Defender Security Center to set up Windows Defender SmartScreen on a device**
 1. Open the Windows Defender Security Center app, and then click **App & browser control**.
 
-    ![Windows Defender Security Center](images/windows-defender-security-center.png)
-
 2. In the **App & browser control** screen, choose from the following options:
 
     - In the **Check apps and files** area:
