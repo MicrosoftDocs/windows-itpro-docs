@@ -1215,7 +1215,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>SystemServices/ConfigureXboxLiveGameSaveServiceStartupMode</li>
 <li>SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode</li>
 <li>TaskScheduler/EnableXboxGameSaveTask</li>
-<li>TextInput/AllowHardwareKeyboardTextSuggestions</li>
 <li>TextInput/EnableTouchKeyboardAutoInvokeInDesktopMode</li>
 <li>TextInput/ForceTouchKeyboardDockedState</li>
 <li>TextInput/TouchKeyboardDictationButtonAvailability</li>
@@ -1800,7 +1799,6 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Display/EnablePerProcessDpi</li>
 <li>Display/EnablePerProcessDpiForApps</li>
 <li>Experience/AllowWindowsSpotlightOnSettings</li>
-<li>TextInput/AllowHardwareKeyboardTextSuggestions</li>
 <li>TextInput/ForceTouchKeyboardDockedState</li>
 <li>TextInput/TouchKeyboardDictationButtonAvailability</li>
 <li>TextInput/TouchKeyboardEmojiButtonAvailability</li>

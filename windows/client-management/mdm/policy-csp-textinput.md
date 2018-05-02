@@ -114,10 +114,10 @@ ms.date: 04/16/2018
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
 	<td></td>
 </tr>
@@ -134,14 +134,10 @@ ms.date: 04/16/2018
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803.  Specifies text prediction for hardware keyboard is always disabled. When this policy is set to 0, text prediction for hardware keyboard is always disabled.
+Added in Windows 10, version 1803.  Placeholder only. Do not use in production environment.
 
 <!--/Description-->
 <!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Text prediction for the hardware keyboard is disabled and the switch is unusable (user cannot activate the feature).
--   1 (default) – Text prediction for the hardware keyboard is enabled. User can change the setting.
 
 <!--/SupportedValues-->
 <!--/Policy-->
