@@ -1215,7 +1215,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>SystemServices/ConfigureXboxLiveGameSaveServiceStartupMode</li>
 <li>SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode</li>
 <li>TaskScheduler/EnableXboxGameSaveTask</li>
-<li>TextInput/AllowHardwareKeyboardTextSuggestions</li>
 <li>TextInput/EnableTouchKeyboardAutoInvokeInDesktopMode</li>
 <li>TextInput/ForceTouchKeyboardDockedState</li>
 <li>TextInput/TouchKeyboardDictationButtonAvailability</li>
@@ -1357,6 +1356,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <tr>
 <td style="vertical-align:top">[Accounts CSP](accounts-csp.md)</td>
 <td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[MDM Migration Analysis Too (MMAT)](http://aka.ms/mmat)</td>
+<td style="vertical-align:top"><p>Updated version available. MMAT is a tool you can use to determine which Group Policies are set on a target user/computer and cross-reference them against the list of supported MDM policies.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)</td>
@@ -1664,6 +1667,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
 </td></tr>
 <tr>
+<td style="vertical-align:top">[MDM Migration Analysis Too (MMAT)](http://aka.ms/mmat)</td>
+<td style="vertical-align:top"><p>Updated version available. MMAT is a tool you can use to determine which Group Policies are set on a target user/computer and cross-reference them against the list of supported MDM policies.</p>
+</td></tr>
+<tr>
 <td style="vertical-align:top">[CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)</td>
 <td style="vertical-align:top"><p>Added the DDF download of Windows 10, version 1803 configuration service providers.</p>
 </td></tr>
@@ -1792,7 +1799,6 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Display/EnablePerProcessDpi</li>
 <li>Display/EnablePerProcessDpiForApps</li>
 <li>Experience/AllowWindowsSpotlightOnSettings</li>
-<li>TextInput/AllowHardwareKeyboardTextSuggestions</li>
 <li>TextInput/ForceTouchKeyboardDockedState</li>
 <li>TextInput/TouchKeyboardDictationButtonAvailability</li>
 <li>TextInput/TouchKeyboardEmojiButtonAvailability</li>
@@ -2276,7 +2282,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Update/DisableDualScan</li>
 <li>Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork</li>
 </ul>
-<p>Changed the name of new policy to CredentialProviders/DisableAutomaticReDeploymentCredentials from CredentialProviders/EnableWindowsAutoPilotResetCredentials.</p>
+<p>Changed the name of new policy to CredentialProviders/DisableAutomaticReDeploymentCredentials from CredentialProviders/EnableWindowsAutopilotResetCredentials.</p>
 <p>Changed the names of the following policies:</p>
 <ul>
 <li>Defender/GuardedFoldersAllowedApplications to Defender/ControlledFolderAccessAllowedApplications</li>

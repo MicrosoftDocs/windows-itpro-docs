@@ -730,7 +730,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     Ignore any warnings that are displayed. The computer will automatically reboot upon completion.
 
-9. When the reboot has completed, reconnect to DC1, sign in using the CONTOSO\Administrator account, open an elevated Windows PowerShell prompt, and use the following commands to add a reverse lookup zone for the PoC network, add the DHCP Server role, authorize DHCP in Active Directory, and supress the post-DHCP-install alert:
+9. When the reboot has completed, reconnect to DC1, sign in using the CONTOSO\Administrator account, open an elevated Windows PowerShell prompt, and use the following commands to add a reverse lookup zone for the PoC network, add the DHCP Server role, authorize DHCP in Active Directory, and suppress the post-DHCP-install alert:
 
     <pre style="overflow-y: visible">
     Add-DnsServerPrimaryZone -NetworkID "192.168.0.0/24" -ReplicationScope Forest
