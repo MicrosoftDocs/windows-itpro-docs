@@ -29,6 +29,9 @@ Below, you'll find the technical requirements you'll need to meet in order to di
 | Windows 10 PC (optional)   | Any Windows 10 build              | You can use a Windows 10 PC to collaborate with the HoloLens. |
 | Mobile device (optional)   | Android or iOS                    | You can use a mobile device to collaborate with the HoloLens, and see a video stream of the HoloLens call. Inking, annotations, and image insertion is not available on mobile devices.                        |
 
+> [!Note]
+> Build 10.0.14393.0 is the minimum required HoloLens build that supports Remote Assist. We recommend updating the HoloLens to newer versions when they are available.
+
 ### Licensing & product requirements
 
 | Product required                  | Details           | Learn more        |
@@ -57,15 +60,20 @@ Below, you'll find the device options, and technical requirements, you'll need t
 
 You can use Layout with a HoloLens, or with a Windows Mixed Reality immersive headset with motion controllers.
 
-If you're using a HoloLens:
+HoloLens requirements:
 
-* The HoloLens must be running the RS4 build
-* This build will be available as a HoloLens update on May 22, to align with the app release. See [Manage updates to HoloLens](https://docs.microsoft.com/en-us/HoloLens/hololens-updates) for instructions on using Windows Update for Business, MDM, and Windows Server Update Service (WSUS) to deploy updates to HoloLens.
+| OS requirements                   | Details                                                    |
+|:----------------------------------|:-----------------------------------------------------------|
+| HoloLens, with RS4 build          | This build will be available as a HoloLens update on May 22, to align with the app release. See [Manage updates to HoloLens](https://docs.microsoft.com/en-us/HoloLens/hololens-updates) for instructions on using Windows Update for Business, MDM, and Windows Server Update Service (WSUS) to deploy updates to HoloLens.  |
 
-If you're using a Windows Mixed Reality headset with controllers:
+> [!Note]
+> You can get started testing out the RS4 build in advance of May 22. See [HoloLens RS4 Preview](https://docs.microsoft.com/en-us/windows/mixed-reality/hololens-rs4-preview) for instructions on flashing the RS4 build to your device. Be advised that doing so will erase all content on the device, and will put the device on track to receive future pre-released versions of the OS which may exhibit bugs and issues. We recommend using preview builds for testing only.
 
-* You'll need a Windows 10 PC with build 16299.0 or higher
-* The Windows 10 PC hardware must be able to support the headset. See [Windows Mixed Reality PC hardware guidelines](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for specific hardware requirements. We recommend following the **Windows Mixed Reality Ultra** hardware guidelines.
+Windows Mixed Reality headset requirements:
+
+| OS requirements                               | Details                                                    |
+|:----------------------------------------------|:-----------------------------------------------------------|
+| Windows 10 PC with build 16299.0 or higher    | The Windows 10 PC hardware must be able to support the headset. See [Windows Mixed Reality PC hardware guidelines](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for specific hardware requirements. We recommend following the **Windows Mixed Reality Ultra** hardware guidelines.  |
 
 ### Technical requirements
 
