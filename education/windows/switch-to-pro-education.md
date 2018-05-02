@@ -308,6 +308,6 @@ For more information about integrating on-premises AD DS domains with Azure AD, 
 
 ## Related topics
 
-[Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md) 
-[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md) 
+[Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)<BR> 
+[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)<BR> 
 [Compare Windows 10 editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)
