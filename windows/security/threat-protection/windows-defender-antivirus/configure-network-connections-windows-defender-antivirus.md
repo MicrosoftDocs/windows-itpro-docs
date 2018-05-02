@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 11/20/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 04/30/2018
 ---
 
 # Configure and validate network connections for Windows Defender Antivirus
@@ -19,7 +19,7 @@ ms.date: 11/20/2017
 
 **Applies to:**
 
-- Windows 10 (some instructions are only applicable for Windows 10, version 1703)
+- Windows 10 (some instructions are only applicable for Windows 10, version 1703 or later)
 
 **Audience**
 
@@ -77,7 +77,7 @@ Microsoft Update Service (MU)
 Signature and product updates
 </td>
 <td>
-*.updates.microsoft.com
+*.update.microsoft.com
 </td>
 </tr>
 <tr style="vertical-align:top">

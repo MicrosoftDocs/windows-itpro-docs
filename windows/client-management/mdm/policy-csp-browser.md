@@ -6,13 +6,10 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/13/2018
+ms.date: 04/16/2018
 ---
 
 # Policy CSP - Browser
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -445,8 +442,9 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Block all cookies
+-   1 – Block only third party cookies
+-   2 - Allow cookies
 
 <!--/SupportedValues-->
 <!--Validation-->
@@ -2190,10 +2188,17 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. This is only a placeholder. Do not use in production code. 
+Added in Windows 10, version 1803. This is only a placeholder. Do not use in production code.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Prevent Microsoft Edge from starting and loading the Start and New Tab page at Windows startup and each time Microsoft Edge is closed*
+-   GP name: *PreventTabPreloading*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
 
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 

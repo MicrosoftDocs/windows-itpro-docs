@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 03/22/2018
 ---
 
 # WindowsDefenderApplicationGuard CSP
@@ -81,8 +81,29 @@ The following diagram shows the WindowsDefenderApplicationGuard configuration se
 - 0 - Application Guard discards user-downloaded files and other items (such as, cookies, Favorites, and so on) during machine restart or user log-off.
 - 1 - Application Guard saves user-downloaded files and other items (such as, cookies, Favorites, and so on) for use in future Application Guard sessions.
 
+<a href="" id="allowvirtualgpu"></a>**Settings/AllowVirtualGPU**  
+Added in Windows 10, version 1803. This policy setting allows you to determine whether Application Guard can use the virtual GPU to process graphics. Supported operations are Add, Get, Replace, and Delete. Value type is integer.  
+
+- 0 (default) - Cannot access the vGPU and uses the CPU to support rendering graphics. When the policy is not configured, it is the same as disabled (0).
+- 1 - Turns on the functionality to access the vGPU offloading graphics rendering from the CPU. This can create a faster experience when working with graphics intense websites or watching video within the container. 
+
+<a href="" id="savefilestohost"></a>**Settings/SaveFilesToHost**  
+Added in Windows 10, version 1803. This policy setting allows you to determine whether users can elect to download files from Edge in the container and persist files them from container to the host operating system. Supported operations are Add, Get, Replace, and Delete. Value type is integer. 
+
+- 0 (default) - The user cannot download files from Edge in the container to the host file system. When the policy is not configured, it is the same as disabled (0).
+- 1 - Turns on the functionality to allow users to download files from Edge in the container to the host file system.  
+
 <a href="" id="status"></a>**Status**  
-<p style="margin-left: 20px">Returns status on Application Guard installation and pre-requisites. Value type is integer. Supported operation is Get.</p>
+<p style="margin-left: 20px">Returns bitmask that indicates status of Application Guard installation and pre-requisites on the device. Value type is integer. Supported operation is Get.
+
+Bit 0 - Set to 1 when	WDAG is enabled into enterprise manage mode
+Bit 1	- Set to 1 when	the client machine is Hyper-V capable
+Bit 2	- Set to 1 when	the client machine has a valid OS license and SKU 
+Bit 3	- Set to 1 when	WDAG installed on the client machine
+Bit 4	- Set to 1 when	required Network Isolation Policies are configured
+Bit 5	- Set to 1 when the client machine meets minimum hardware requirements
+
+</p>
 
 <a href="" id="installwindowsdefenderapplicationguard"></a>**InstallWindowsDefenderApplicationGuard**  
 <p style="margin-left: 20px">Initiates remote installation of Application Guard feature. Supported operations are Get and Execute.</p>

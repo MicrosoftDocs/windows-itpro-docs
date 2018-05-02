@@ -11,9 +11,6 @@ ms.date: 03/12/2018
 
 # Policy CSP - Search
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 
 <hr/>
 
@@ -834,7 +831,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. Desktop users should use Search/DoNotUseWebResults. 
 
 
 Specifies what level of safe search (filtering adult content) is required.

@@ -6,13 +6,10 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/12/2018
+ms.date: 04/16/2018
 ---
 
 # Policy CSP - DeliveryOptimization
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -509,7 +506,7 @@ If you set this policy, the GroupID policy will be ignored.
 
 The options set in this policy only apply to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored.  
 
-For option 4 - DHCP Option ID, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID.
+For option 3 - DHCP Option ID, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1219,8 +1216,10 @@ Note that downloads from LAN peers will not be throttled even when this policy i
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
+-   GP English name: *Maximum Background Download Bandwidth (percentage)*
 -   GP name: *PercentageMaxBackgroundBandwidth*
 -   GP element: *PercentageMaxBackgroundBandwidth*
+-   GP path: *Windows Components/Delivery Optimization*
 -   GP ADMX file name: *DeliveryOptimization.admx*
 
 <!--/ADMXMapped-->
@@ -1231,6 +1230,15 @@ ADMX Info:
 <!--Policy-->
 <a href="" id="deliveryoptimization-dopercentagemaxdownloadbandwidth"></a>**DeliveryOptimization/DOPercentageMaxDownloadBandwidth**  
 
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
 <!--Description-->
 This policy is deprecated. Use [DOPercentageMaxForegroundBandwidth](#deliveryoptimization-dopercentagemaxforegroundbandwidth) and [DOPercentageMaxBackgroundBandwidth](#deliveryoptimization-dopercentagemaxbackgroundbandwidth) policies instead.
 
@@ -1282,8 +1290,10 @@ Note that downloads from LAN peers will not be throttled even when this policy i
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
+-   GP English name: *Maximum Foreground Download Bandwidth (percentage)*
 -   GP name: *PercentageMaxForegroundBandwidth*
 -   GP element: *PercentageMaxForegroundBandwidth*
+-   GP path: *Windows Components/Delivery Optimization*
 -   GP ADMX file name: *DeliveryOptimization.admx*
 
 <!--/ADMXMapped-->
@@ -1388,7 +1398,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. Specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
+Added in Windows&nbsp;10, version 1803. Specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
 
 <!--/Description-->
 > [!TIP]
@@ -1454,7 +1464,7 @@ This policy allows an IT Admin to define the following:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. Specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
+Added in Windows&nbsp;10, version 1803. Specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
 
 <!--/Description-->
 > [!TIP]

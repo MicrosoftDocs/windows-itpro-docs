@@ -66,7 +66,7 @@ To run the Upgrade Readiness deployment script:
     >
     > *IEOptInLevel = 3 Data collection is enabled for all sites*
 
-4. The latest version (03.02.17) of the deployment script is configured to collect and send diagnostic and debugging data to Microsoft. If you wish to disable sending diagnostic and debugging data to Microsoft, set **AppInsightsOptIn = false**. By default, **AppInsightsOptIn** is set to **true**.
+4. A recent version (03.02.17) of the deployment script is configured to collect and send diagnostic and debugging data to Microsoft. If you wish to disable sending diagnostic and debugging data to Microsoft, set **AppInsightsOptIn = false**. By default, **AppInsightsOptIn** is set to **true**.
 
     The data that is sent is the same data that is collected in the text log file that captures the events and error codes while running the script. This file is named in the following format: **UA_yyyy_mm_dd_hh_mm_ss_machineID.txt**. Log files are created in the drive that is specified in the RunConfig.bat file. By default this is set to: **%SystemDrive%\UADiagnostics**.
 
@@ -75,7 +75,9 @@ To run the Upgrade Readiness deployment script:
     \*vortex\*.data.microsoft.com<BR>
     \*settings\*.data.microsoft.com
 
-5.  After you finish editing the parameters in RunConfig.bat, you are ready to run the script. If you are using the Pilot version, run RunConfig.bat from an elevated command prompt. If you are using the Deployment version, use ConfigMgr or other software deployment service to run RunConfig.bat as system.
+5. The latest version (03.28.2018) of the deployment script configures insider builds to continue to send the device name to the diagnostic data management service and the analytics portal. If you do not want to have insider builds send the device name sent to analytics and be available in the analytics portal, set **DeviceNAmeOptIn = false**. By default it is true, which preserves the behavior on previous versions of Windows. This setting only applies to insider builds. Note that the device name is also sent to AppInsights, so to ensure the device name is not sent to either place you would need to also set **AppInsightsOptIn = false**.
+
+6.  After you finish editing the parameters in RunConfig.bat, you are ready to run the script. If you are using the Pilot version, run RunConfig.bat from an elevated command prompt. If you are using the Deployment version, use ConfigMgr or other software deployment service to run RunConfig.bat as system.
 
 ## Exit codes
 
@@ -201,11 +203,7 @@ The deployment script displays the following exit codes to let you know if it wa
         <td>25 - The function **SetIEDataOptIn** failed with unexpected exception.</td>
         <td>Check the logs for the exception message and HResult.</td>
     </tr>
-    <tr>
-        <td>26 - The operating system is Server or LTSB SKU.</td>
-        <td> The script does not support Server or LTSB SKUs.</td>
-    </tr>
-    <tr>
+        <tr>
         <td>27 - The script is not running under **System** account.</td>
         <td>The Upgrade Readiness configuration script must be run as **System**. </td>
     </tr>

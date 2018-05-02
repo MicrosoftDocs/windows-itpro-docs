@@ -8,7 +8,7 @@ ms.localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mobile
 author: greg-lindsay
-ms.date: 02/9/2018
+ms.date: 04/30/2018
 ---
 
 # Windows 10 edition upgrade
@@ -46,11 +46,11 @@ X = unsupported <BR>
 | **Home > Pro for Workstations** | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) |
 | **Home > Pro Education** | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![not supported](../images/x_blk.png) | ![supported, reboot required](../images/check_grn.png) | ![not supported](../images/x_blk.png) |
 | **Home > Education** | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![not supported](../images/x_blk.png) | ![supported, reboot required](../images/check_grn.png) | ![not supported](../images/x_blk.png) |
-| **S > Pro** | ![supported, no reboot](../images/check_blu.png) <br>(1709) | ![supported, no reboot](../images/check_blu.png) <br>(1709) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![supported, no reboot](../images/check_blu.png) <br>(1709) | ![supported, no reboot](../images/check_blu.png) <br>(1709) |
+<!-- | **S > Pro** | ![supported, no reboot](../images/check_blu.png) <br>(1709) | ![supported, no reboot](../images/check_blu.png) <br>(1709) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![supported, no reboot](../images/check_blu.png) <br>(1709) | ![supported, no reboot](../images/check_blu.png) <br>(1709) |
 | **S > Pro for Workstations** | ![supported, no reboot](../images/check_blu.png) <br>(1709) | ![supported, no reboot](../images/check_blu.png) <br>(1709) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![supported, no reboot](../images/check_blu.png) <br>(1709) | ![supported, no reboot](../images/check_blu.png) <br>(1709) |
 | **S > Pro Education** | ![supported, no reboot](../images/check_blu.png) <br>(1709) | ![supported, no reboot](../images/check_blu.png) <br>(1709) | ![not supported](../images/x_blk.png) | ![supported, no reboot](../images/check_blu.png) <br>(1709 - MSfB) | ![supported, no reboot](../images/check_blu.png) <br>(1709) | ![not supported](../images/x_blk.png) |
 | **S > Education** | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![not supported](../images/x_blk.png) | ![supported, reboot required](../images/check_grn.png) <br>(MSfB) | ![supported, reboot required](../images/check_grn.png) | ![not supported](../images/x_blk.png) |
-| **S > Enterprise** | ![supported, no reboot](../images/check_blu.png) <br>(1709) | ![supported, no reboot](../images/check_blu.png) <br>(1709) | ![not supported](../images/x_blk.png) | ![supported, no reboot](../images/check_blu.png) <br>(1703 - PC)<br>(1709 - MSfB) | ![supported, no reboot](../images/check_blu.png) <br>(1709) | ![not supported](../images/x_blk.png) |
+| **S > Enterprise** | ![supported, no reboot](../images/check_blu.png) <br>(1709) | ![supported, no reboot](../images/check_blu.png) <br>(1709) | ![not supported](../images/x_blk.png) | ![supported, no reboot](../images/check_blu.png) <br>(1703 - PC)<br>(1709 - MSfB) | ![supported, no reboot](../images/check_blu.png) <br>(1709) | ![not supported](../images/x_blk.png) | -->
 | **Pro > Pro for Workstations** | ![supported, no reboot](../images/check_blu.png) | ![supported, no reboot](../images/check_blu.png) | ![supported, no reboot](../images/check_blu.png) | ![supported, no reboot](../images/check_blu.png) <br>(MSfB) | ![supported, no reboot](../images/check_blu.png) | ![supported, no reboot](../images/check_blu.png) |
 | **Pro > Pro Education** | ![supported, no reboot](../images/check_blu.png) | ![supported, no reboot](../images/check_blu.png) | ![supported, no reboot](../images/check_blu.png) | ![supported, no reboot](../images/check_blu.png) <br>(MSfB) | ![supported, no reboot](../images/check_blu.png) | ![not supported](../images/x_blk.png) |
 | **Pro > Education** | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) <br>(MSfB) | ![supported, reboot required](../images/check_grn.png) | ![not supported](../images/x_blk.png) |
@@ -65,9 +65,10 @@ X = unsupported <BR>
 | **Mobile > Mobile Enterprise** | ![supported, no reboot](../images/check_blu.png) |![supported, no reboot](../images/check_blu.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) |
 
 > [!NOTE]
-> Each desktop edition in the table also has an N and KN SKU. These editions have had media-related functionality removed. Devices with N or KN SKUs installed can be upgraded to corresponding N or KN SKUs using the same methods.
+> - For information about upgrade paths in Windows 10 in S mode (for Pro or Education), check out [Windows 10 Pro/Enterprise in S mode](../windows-10-pro-in-s-mode.md)
+> - Each desktop edition in the table also has an N and KN SKU. These editions have had media-related functionality removed. Devices with N or KN SKUs installed can be upgraded to corresponding N or KN SKUs using the same methods.
 > <br>
-> <br>Due to [naming changes](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#naming-changes) the term LTSB might still be displayed in some products. This name will change to LTSC with subsequent feature updates. 
+> - Due to [naming changes](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#naming-changes) the term LTSB might still be displayed in some products. This name will change to LTSC with subsequent feature updates. 
 
 ## Upgrade using mobile device management (MDM)
 - To upgrade desktop editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithProductKey** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](https://go.microsoft.com/fwlink/p/?LinkID=690907).

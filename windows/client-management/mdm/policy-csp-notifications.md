@@ -6,11 +6,10 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/12/2018
+ms.date: 04/16/2018
 ---
 
 # Policy CSP - Notifications
-
 
 
 <hr/>
@@ -20,10 +19,87 @@ ms.date: 03/12/2018
 
 <dl>
   <dd>
+    <a href="#notifications-disallowcloudnotification">Notifications/DisallowCloudNotification</a>
+  </dd>
+  <dd>
     <a href="#notifications-disallownotificationmirroring">Notifications/DisallowNotificationMirroring</a>
+  </dd>
+  <dd>
+    <a href="#notifications-disallowtilenotification">Notifications/DisallowTileNotification</a>
   </dd>
 </dl>
 
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="notifications-disallowcloudnotification"></a>**Notifications/DisallowCloudNotification**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803. This policy setting blocks applications from using the network to send tile, badge, toast, and raw notifications. Specifically, this policy setting turns off the connection between Windows and the Windows Push Notification Service (WNS). This policy setting also stops applications from being able to use [periodic (polling) notifications](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/periodic-notification-overview).
+
+If you enable this policy setting, applications and system features will not be able receive notifications from the network from WNS or via notification polling APIs.
+
+If you enable this policy setting, notifications can still be raised by applications running on the machine via local API calls from within the application.
+
+If you disable or do not configure this policy setting, the client computer will connect to WNS at user login and applications will be allowed to use periodic (polling) notifications.
+
+No reboots or service restarts are required for this policy setting to take effect.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off notifications network usage*
+-   GP name: *NoCloudNotification*
+-   GP path: *Start Menu and Taskbar/Notifications*
+-   GP ADMX file name: *WPN.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+This setting supports a range of values between 0 and 1.
+
+<!--/SupportedValues-->
+<!--Validation-->
+Validation:  
+1. Enable policy
+2. Reboot machine
+3. Ensure that you can't receive a notification from Facebook app while FB app isn't running
+
+<!--/Validation-->
+
+<!--/Policy-->
 
 <hr/>
 
@@ -85,6 +161,74 @@ The following list shows the supported values:
 -   1 - disable notification mirroring.
 
 <!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="notifications-disallowtilenotification"></a>**Notifications/DisallowTileNotification**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, version 1803. This policy setting turns off tile notifications.
+
+If you enable this policy setting, applications and system features will not be able to update their tiles and tile badges in the Start screen.
+
+If you disable or do not configure this policy setting, tile and badge notifications are enabled and can be turned off by the administrator or user.
+
+No reboots or service restarts are required for this policy setting to take effect.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off tile notifications*
+-   GP name: *NoTileNotification*
+-   GP path: *Start Menu and Taskbar/Notifications*
+-   GP ADMX file name: *WPN.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+This setting supports a range of values between 0 and 1.
+
+<!--/SupportedValues-->
+<!--Validation-->
+Validation:  
+1. Enable policy
+2. Reboot machine
+3. Ensure that all tiles are default (no live tile content showing, like no weather forecast on the Weather tile)
+
+<!--/Validation-->
 <!--/Policy-->
 <hr/>
 

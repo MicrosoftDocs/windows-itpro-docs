@@ -512,10 +512,6 @@ This section describes Removable Drive Group Policy definitions for Microsoft Bi
 
  
 
-## Got a suggestion for MBAM?
-
-
-Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopmbam).
 
 ## Related topics
 
@@ -525,7 +521,9 @@ Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-micros
 [MBAM 2.5 Deployment Prerequisites](mbam-25-deployment-prerequisites.md)
 
  
-
+## Got a suggestion for MBAM?
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
  
 
 

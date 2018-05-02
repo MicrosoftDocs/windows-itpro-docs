@@ -1,5 +1,5 @@
 # [Deploy and update Windows 10](https://docs.microsoft.com/en-us/windows/deployment)
-
+## [Deploy Windows 10 with Microsoft 365](deploy-m365.md)
 ## [What's new in Windows 10 deployment](deploy-whats-new.md)
 ## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
 
@@ -8,12 +8,19 @@
 ### [Configure VDA for Subscription Activation](vda-subscription-activation.md)
 ### [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md)
 ## [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md)
+### [Quick fixes](upgrade\quick-fixes.md)
+### [SetupDiag](upgrade/setupdiag.md)
+### [Troubleshooting upgrade errors](upgrade/troubleshoot-upgrade-errors.md)
+### [Windows error reporting](upgrade/windows-error-reporting.md)
+### [Upgrade error codes](upgrade/upgrade-error-codes.md)
+### [Log files](upgrade/log-files.md)
+### [Resolution procedures](upgrade/resolution-procedures.md)
 ### [Submit Windows 10 upgrade errors](upgrade/submit-errors.md)
 
 ## [Deploy Windows 10](deploy.md)
 
-### [Overview of Windows AutoPilot](windows-autopilot/windows-10-autopilot.md)
-
+### [Overview of Windows Autopilot](windows-autopilot/windows-10-autopilot.md)
+### [Windows 10 in S mode](windows-10-pro-in-s-mode.md)
 ### [Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)
 #### [Windows 10 downgrade paths](upgrade/windows-10-downgrade-paths.md)
 ### [Windows 10 edition upgrade](upgrade/windows-10-edition-upgrades.md)
@@ -223,6 +230,7 @@
 ### [Deploy Windows 10 updates using System Center Configuration Manager](update/waas-manage-updates-configuration-manager.md)
 ### [Manage device restarts after updates](update/waas-restart.md)
 ### [Manage additional Windows Update settings](update/waas-wu-settings.md)
+### [Determine the source of Windows updates](update/windows-update-sources.md)
 ### [Windows Insider Program for Business](update/waas-windows-insider-for-business.md)
 #### [Introduction to the Windows Insider Program for Business](update/WIP4Biz-intro.md)
 #### [Windows Insider Program for Business Frequently Asked Questions](update/waas-windows-insider-for-business-faq.md)
@@ -230,6 +238,7 @@
 ### [Change history for Update Windows 10](update/change-history-for-update-windows-10.md)
 
 ## [Windows Analytics](update/windows-analytics-overview.md)
+### [Windows Analytics and privacy](update/windows-analytics-privacy.md)
 ### [Manage Windows upgrades with Upgrade Readiness](upgrade/manage-windows-upgrades-with-upgrade-readiness.md)
 #### [Upgrade Readiness architecture](upgrade/upgrade-readiness-architecture.md)
 #### [Upgrade Readiness requirements](upgrade/upgrade-readiness-requirements.md)

@@ -10,14 +10,10 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/23/2018
+ms.date: 04/26/2018
 ---
 
 # What's new in MDM enrollment and management
-
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 This topic provides information about what's new and breaking changes in Windows 10 mobile device management (MDM) enrollment and management experience across all Windows 10 devices.
@@ -1149,6 +1145,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>ApplicationDefaults/EnableAppUriHandlers</li>
 <li>ApplicationManagement/MSIAllowUserControlOverInstall</li>
 <li>ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges</li>
+<li>Bluetooth/AllowPromptedProximalConnections</li>
 <li>Browser/AllowConfigurationUpdateForBooksLibrary</li>
 <li>Browser/AlwaysEnableBooksLibrary</li>
 <li>Browser/EnableExtendedBooksTelemetry</li>
@@ -1169,6 +1166,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>KioskBrowser/BlockedUrlExceptions</li>
 <li>KioskBrowser/BlockedUrls</li>
 <li>KioskBrowser/DefaultURL</li>
+<li>KioskBrowser/EnableEndSessionButton</li>
 <li>KioskBrowser/EnableHomeButton</li>
 <li>KioskBrowser/EnableNavigationButtons</li>
 <li>KioskBrowser/RestartOnIdleTime</li>
@@ -1176,11 +1174,13 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>LocalPoliciesSecurityOptions/Devices_AllowUndockWithoutHavingToLogon</li> 
 <li>LocalPoliciesSecurityOptions/Devices_AllowedToFormatAndEjectRemovableMedia</li> 
 <li>LocalPoliciesSecurityOptions/Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters</li> 
-<li>LocalPoliciesSecurityOptions/Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly</li> 
+<li>LocalPoliciesSecurityOptions/Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly</li>
+<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways</li>
+<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible</li>
+<li>LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges</li> 
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers</li> 
-<li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsAlways</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts</li> 
@@ -1190,11 +1190,16 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</li> 
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange</li> 
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</li> 
-<li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</li> 
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers</li> 
 <li>LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</li> 
 <li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li> 
 <li>LocalPoliciesSecurityOptions/UserAccountControl_DetectApplicationInstallationsAndPromptForElevation</li> 
-<li>LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode</li> 
+<li>LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode</li>
+<li>Notifications/DisallowCloudNotification</li> 
 <li>RestrictedGroups/ConfigureGroupMembership</li>
 <li>Search/AllowCortanaInAAD</li>
 <li>Search/DoNotUseWebResults</li>
@@ -1207,7 +1212,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>SystemServices/ConfigureXboxLiveGameSaveServiceStartupMode</li>
 <li>SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode</li>
 <li>TaskScheduler/EnableXboxGameSaveTask</li>
-<li>TextInput/AllowHardwareKeyboardTextSuggestions</li>
 <li>TextInput/EnableTouchKeyboardAutoInvokeInDesktopMode</li>
 <li>TextInput/ForceTouchKeyboardDockedState</li>
 <li>TextInput/TouchKeyboardDictationButtonAvailability</li>
@@ -1301,7 +1305,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>ShellLauncher</li>
 <li>StatusConfiguration</li>
 </ul>
-<p>Updated the AssigneAccessConfiguration schema.</p>
+<p>Updated the AssigneAccessConfiguration schema. Starting in Windows 10, version 1803 AssignedAccess CSP is supported in Windows Holographic for Business edition. Added example for Windows Holographic for Business edition.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[MultiSIM CSP](multisim-csp.md)</td>
@@ -1329,16 +1333,34 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr>
-<<<<<<< HEAD
 <td style="vertical-align:top">[AccountManagement CSP](accountmanagement-csp.md)</td>
 <td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
-=======
+</td></tr>
+<tr>
 <td style="vertical-align:top">[RootCATrustedCertificates CSP](rootcacertificates-csp.md)</td>
 <td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
 <ul>
 <li>UntrustedCertificates</li>
 </ul>
->>>>>>> 2aa0839b99c52229c7cf43d58f467019b1284a6a
+</td></tr>
+<tr>
+<td style="vertical-align:top">[NetworkProxy CSP](\networkproxy--csp.md)</td>
+<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<ul>
+<li>ProxySettingsPerUser</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Accounts CSP](accounts-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[MDM Migration Analysis Too (MMAT)](http://aka.ms/mmat)</td>
+<td style="vertical-align:top"><p>Updated version available. MMAT is a tool you can use to determine which Group Policies are set on a target user/computer and cross-reference them against the list of supported MDM policies.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)</td>
+<td style="vertical-align:top"><p>Added the DDF download of Windows 10, version 1803 configuration service providers.</p>
 </td></tr>
 </tbody>
 </table>
@@ -1608,6 +1630,65 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### April 2018
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top">[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<ul>
+<li>Settings/AllowVirtualGPU</li>
+<li>Settings/SaveFilesToHost</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[NetworkProxy CSP](\networkproxy--csp.md)</td>
+<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<ul>
+<li>ProxySettingsPerUser</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Accounts CSP](accounts-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[MDM Migration Analysis Too (MMAT)](http://aka.ms/mmat)</td>
+<td style="vertical-align:top"><p>Updated version available. MMAT is a tool you can use to determine which Group Policies are set on a target user/computer and cross-reference them against the list of supported MDM policies.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)</td>
+<td style="vertical-align:top"><p>Added the DDF download of Windows 10, version 1803 configuration service providers.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1803:</p>
+<ul>
+<li>Bluetooth/AllowPromptedProximalConnections</li>
+<li>KioskBrowser/EnableEndSessionButton</li>
+<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways</li>
+<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible</li>
+<li>LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers</li>
+</ul>
+</td></tr>
+</tbody>
+</table>
+
 ### March 2018
 
 <table class="mx-tdBreakAll">
@@ -1663,10 +1744,13 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>ApplicationManagement/MSIAllowUserControlOverInstall</li>
 <li>ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges</li>
 <li>Connectivity/AllowPhonePCLinking</li>
+<li>Notifications/DisallowCloudNotification</li>
+<li>Notifications/DisallowTileNotification</li>
 <li>RestrictedGroups/ConfigureGroupMembership</li>
 </ul>
 <p>The following existing policies were updated:</p>
 <ul>
+<li>Browser/AllowCookies - updated the supported values. There are 3 values - 0, 1, 2.</li>
 <li>InternetExplorer/AllowSiteToZoneAssignmentList - updated the description and added an example SyncML</li>
 <li>TextInput/AllowIMENetworkAccess - introduced new suggestion services in Japanese IME in addition to cloud suggestion.</li>
 </ul>
@@ -1712,7 +1796,6 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Display/EnablePerProcessDpi</li>
 <li>Display/EnablePerProcessDpiForApps</li>
 <li>Experience/AllowWindowsSpotlightOnSettings</li>
-<li>TextInput/AllowHardwareKeyboardTextSuggestions</li>
 <li>TextInput/ForceTouchKeyboardDockedState</li>
 <li>TextInput/TouchKeyboardDictationButtonAvailability</li>
 <li>TextInput/TouchKeyboardEmojiButtonAvailability</li>
@@ -1735,7 +1818,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>ShellLauncher</li>
 <li>StatusConfiguration</li>
 </ul>
-<p>Updated the AssigneAccessConfiguration schema.</p>
+<p>Updated the AssigneAccessConfiguration schema. Starting in Windows 10, version 1803 AssignedAccess CSP is supported in Windows Holographic for Business edition. Added example for Windows Holographic for Business edition.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[MultiSIM CSP](multisim-csp.md)</td>
@@ -1797,7 +1880,6 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers</li> 
-<li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsAlways</li> 
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts</li> 
@@ -2197,7 +2279,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Update/DisableDualScan</li>
 <li>Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork</li>
 </ul>
-<p>Changed the name of new policy to CredentialProviders/DisableAutomaticReDeploymentCredentials from CredentialProviders/EnableWindowsAutoPilotResetCredentials.</p>
+<p>Changed the name of new policy to CredentialProviders/DisableAutomaticReDeploymentCredentials from CredentialProviders/EnableWindowsAutopilotResetCredentials.</p>
 <p>Changed the names of the following policies:</p>
 <ul>
 <li>Defender/GuardedFoldersAllowedApplications to Defender/ControlledFolderAccessAllowedApplications</li>

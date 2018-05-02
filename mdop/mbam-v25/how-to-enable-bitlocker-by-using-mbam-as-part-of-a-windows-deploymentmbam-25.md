@@ -14,7 +14,7 @@ ms.date: 04/23/2017
 # How to Enable BitLocker by Using MBAM as Part of a Windows Deployment
 
 
-This topic explains how to enable BitLocker on an end user's computer by using MBAM as part of your Windows imaging and deployment process.
+This topic explains how to enable BitLocker on an end user's computer by using MBAM as part of your Windows imaging and deployment process. If you see a black screen at restart (after Install phase concludes) indicating that the drive cannot be unlocked, see [Windows versions prior Windows 10 build 1511 fail to start after "Setup Windows and Configuration Manager" step when Pre-Provision BitLocker is used with Windows PE 10.0.586.0 (1511)](https://blogs.technet.microsoft.com/system_center_configuration_manager_operating_system_deployment_support_blog/2016/03/30/windows-versions-prior-windows-10-build-1511-fail-to-start-after-setup-windows-and-configuration-manager-step-when-pre-provision-bitlocker-is-used-with-windows-pe-10-0-586-0-1511/).
 
 **Prerequisites:**
 
@@ -59,7 +59,7 @@ This topic explains how to enable BitLocker on an end user's computer by using M
 
     -   Robust error handling
 
-   You can download the `Invoke-MbamClientDeployment.ps1` script from [Microsoft.com Download Center](https://www.microsoft.com/download/details.aspx?id=48698). This is the main script that your deployment system will call to configure BitLocker drive encryption and record recovery keys with the MBAM Server.
+   You can download the `Invoke-MbamClientDeployment.ps1` script from [Microsoft.com Download Center](https://www.microsoft.com/download/details.aspx?id=54439). This is the main script that your deployment system will call to configure BitLocker drive encryption and record recovery keys with the MBAM Server.
 
    **WMI deployment methods for MBAM:** The following WMI methods have been added in MBAM 2.5 SP1 to support enabling BitLocker by using the `Invoke-MbamClientDeployment.ps1` PowerShell script.
 
@@ -328,3 +328,6 @@ Here are a list of common error messages:
 
 [Planning for MBAM 2.5 Client Deployment](planning-for-mbam-25-client-deployment.md)
 
+## Got a suggestion for MBAM?
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).

@@ -8,23 +8,25 @@ author: greg-lindsay
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.date: 02/02/2018
+ms.date: 04/30/2018
 ---
 
 # Windows 10 and Windows 10 Mobile
 
 Find the latest how to and support content that IT pros need to evaluate, plan, deploy, secure and manage devices running Windows 10 or Windows 10 Mobile.
 
+
 &nbsp;
 
-> [!video https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false]
+> [!video https://www.microsoft.com/en-us/videoplayer/embed/RE21ada?autoplay=false]
 
 
+## Check out [what's new in Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803).
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;">
-      <a href="/windows/whats-new/whats-new-windows-10-version-1709"> 
+      <a href="/windows/whats-new/whats-new-windows-10-version-1803"> 
         <img src="images/whatsnew.png" alt="Read what's new in Windows 10" title="Whats new" />
       <br/>What's New? </a><br>
     </td>
@@ -55,6 +57,9 @@ Find the latest how to and support content that IT pros need to evaluate, plan, 
       <br/>Security </a>
   </tr>
 </table>
+
+>[!TIP]
+> Looking for information about older versions of Windows? Check out our other [Windows libraries](/previous-versions/windows/) on docs.microsoft.com. You can also search this site to find specific information, like this [Windows 8.1 content](https://docs.microsoft.com/search/index?search=Windows+8.1&dataSource=previousVersions).
 
 ## Get to know Windows as a Service (WaaS)
 

@@ -62,7 +62,7 @@ WIP provides:
 
 - Additional data protection for existing line-of-business apps without a need to update the apps.
 
-- Ability to wipe corporate data from devices while leaving personal data alone.
+- Ability to wipe corporate data from Intune MDM enrolled devices while leaving personal data alone.
 
 - Use of audit reports for tracking issues and remedial actions.
 

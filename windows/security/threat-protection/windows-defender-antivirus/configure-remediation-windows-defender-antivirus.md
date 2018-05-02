@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 08/26/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 04/30/2018
 ---
 
 
@@ -47,9 +47,7 @@ To configure these settings:
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
-
-4.  Click **Policies** then **Administrative templates**.
+3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
 5.  Expand the tree to **Windows components > Windows Defender Antivirus** and then the **Location** specified in the table below.
 
@@ -64,6 +62,13 @@ Root | Turn off routine remediation | You can specify whether Windows Defender A
 Quarantine | Configure removal of items from Quarantine folder | Specify how many days items should be kept in quarantine before being removed | Never removed
 Threats | Specify threat alert levels at which default action should not be taken when detected | Every threat that is detected by Windows Defender AV is assigned a threat level (low, medium, high, or severe). You can use this setting to define how all threats for each of the threat levels should be remediated (quarantined, removed, or ignored) | Not applicable
 Threats | Specify threats upon which default action should not be taken when detected | Specify how specific threats (using their threat ID) should be remediated. You can specify whether the specific threat should be quarantined, removed, or ignored | Not applicable
+
+>[!IMPORTANT]
+>Windows Defender Antivirus detects and remediates files based on many factors.  Sometimes, completing a remediation requires a reboot.  Even if the detection is later determined to be a false positive, the reboot must be completed to ensure all additional remediation steps have been completed.
+></p>
+>If you are certain Windows Defender AV quarantined a file based on a false positive, you can restore the file from quarantine after the device reboots. See [Restore quarantined files in Windows Defender AV](restore-quarantined-files-windows-defender-antivirus.md).
+></p>
+>To avoid this problem in the future, you can exclude files from the scans. See [Configure and validate exclusions for Windows Defender AV scans](configure-exclusions-windows-defender-antivirus.md).
 
 
 Also see the [Configure remediation-required scheduled full scans for Windows Defender AV](scheduled-catch-up-scans-windows-defender-antivirus.md#remed) topic for more remediation-related settings.

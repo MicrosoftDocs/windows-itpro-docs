@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.date: 04/24/2018
 ---
 
 # Supported Windows Defender ATP query APIs 
@@ -23,6 +23,7 @@ ms.date: 10/16/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-supportedapis-abovefoldlink) 
 
@@ -39,3 +40,5 @@ IP | Run API calls such as get IP related alerts, IP related machines, IP statis
 Machines | Run API calls such as find machine information by IP, get machines, get machines by ID, information about logged on users, and alerts related to a given machine ID.
 User | Run API calls such as get alert related user information, user information, user related alerts, and user related machines.
 
+## Related topic
+- [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)

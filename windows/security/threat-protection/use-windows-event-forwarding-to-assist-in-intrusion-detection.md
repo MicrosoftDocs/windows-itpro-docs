@@ -175,7 +175,7 @@ To gain the most value out of the baseline subscription we recommend to have the
 -   Enable disabled event channels and set the minimum size for modern event files.
 -   Currently, there is no GPO template for enabling or setting the maximum size for the modern event files. This must be done by using a GPO. For more info, see [Appendix C – Event Channel Settings (enable and Channel Access) methods](#bkmk-appendixc).
 
-The annotated event query can be found in the following. For more info, see [Appendix F – Annotated Baseline Subscription Event Query](#bkmk-appendixf).
+The annotated event query can be found in the following. For more info, see [Appendix F – Annotated Suspect Subscription Event Query](#bkmk-appendixf).
 
 -   Anti-malware events from Microsoft Antimalware or Windows Defender. This can be configured for any given anti-malware product easily if it writes to the Windows event log.
 -   Security event log Process Create events.
