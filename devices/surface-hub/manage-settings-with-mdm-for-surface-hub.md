@@ -45,13 +45,6 @@ You can enroll your Surface Hubs using bulk, manual, or automatic enrollment.
 
 Surface Hub now supports the ability to automatically enroll in Intune by joining the device to Azure Active Directory. 
 
-**To enable automatic enrollment for Microsoft Intune**
-1. In the [Azure classic portal](https://manage.windowsazure.com/), navigate to the **Active Directory** node and select your directory. 
-2. Click the **Applications** tab, then click **Microsoft Intune**.
-3. Under **Manage devices for these users**, click **Groups**. 
-4. Click **Select Groups**, then select the groups of users you want to automatically enroll into Intune. 
-5. Click the checkmark button, then click **Save**.
-
 For more information, see [Enable Windows 10 automatic enrollment](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment).
 
 
