@@ -12,8 +12,6 @@ ms.date: 03/07/2018
 
 # RootCATrustedCertificates DDF file
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic shows the OMA DM device description framework (DDF) for the **RootCACertificates** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 

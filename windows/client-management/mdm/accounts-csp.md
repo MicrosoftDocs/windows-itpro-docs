@@ -11,8 +11,6 @@ ms.date: 04/17/2018
 
 # Accounts CSP 
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The Accounts configuration service provider (CSP) is used by the enterprise (1) to rename a device, (2) to create a new local Windows account and joint it to a local user group. This CSP was added in Windows 10, version 1803.
 
