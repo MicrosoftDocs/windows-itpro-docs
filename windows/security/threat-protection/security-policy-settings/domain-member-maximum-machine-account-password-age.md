@@ -31,7 +31,7 @@ In Active Directory–based domains, each device has an account and password, ju
 ### Best practices
 
 1.  It is often advisable to set **Domain member: Maximum machine account password age** to about 30 days.
-2. If the machine's password has expired, it will no longer be able to authenticate with the domain. In that case, you might need to remove the device and then re-join it to the domain. For this reason, some organizations create a special organizational unit (OU) for computers that are prebuilt and then stored for later use or shipped to remote locations, and change the value to more than 30 days.
+2. If the machine's password has expired, it will no longer be able to authenticate with the domain. The easiest way to get authentication working again might require removing the device from the domain and then re-joining it. For this reason, some organizations create a special organizational unit (OU) for computers that are prebuilt and then stored for later use or shipped to remote locations, and change the value to more than 30 days.
 
 ### Location
 
