@@ -36,8 +36,10 @@ The Automated investigations list shows all the investigations that have been in
 
 ## Understand the Automated investigation flow
 ### How the Automated investigation starts
-Entities are the starting point for Automated investigations. When an alert contains a supported entity for Automated investigation (for example, a file) that resides on a machine that has a *supported operating system for Automated investigation then an Automated investigation can start.
-*Currently only Windows 10 version 1803 (spring creators update) and above are supported operating systems for Autoamted Investigation
+Entities are the starting point for Automated investigations. When an alert contains a supported entity for Automated investigation (for example, a file) that resides on a machine that has a supported operating system for Automated investigation then an Automated investigation can start.
+
+>[!NOTE]
+>Currently, Automated investigation only supports Windows 10, version 1803 or later.
 
 The alerts start by analyzing the supported entities from the alert and also runs a generic machine playbook to see if there is anything else suspicious on that machine. The outcome and details from the investigation is seen in the Automated investigation view.
 
