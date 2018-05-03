@@ -83,8 +83,6 @@ Once completed, you should see onboarded servers in the portal within an hour.
 |    winatp-gw-weu.microsoft.com    |    443    |
 
 ## Onboard Windows Server, version 1803
-
-
 You’ll be able to onboard in the same method available for Windows 10 client machines. For more information, see  [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md). Support for Windows Server, version 1803 provides deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well. 
 
 1.	Install the latest Windows Server Insider build on a machine. For more information, see [Windows Server Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewserver).
