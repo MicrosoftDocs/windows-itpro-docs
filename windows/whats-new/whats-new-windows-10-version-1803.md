@@ -95,7 +95,7 @@ Prerequisites:
 - Windows 10, version 1803 or later.
 - Windows 10 Enterprise or Pro
 
-For more information, see [Run custom actions during feature update](https://review.docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-enable-custom-actions).
+For more information, see [Run custom actions during feature update](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-enable-custom-actions).
 
 It is also now possible to run a script if the user rolls back their version of Windows using the PostRollback option.
 
