@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
-ms.date: 04/03/2018
+ms.date: 05/03/2018
 ---
 
 # BitLocker Network Unlock FAQ
