@@ -45,3 +45,6 @@
 
 ## [Windows Hello for Business Features](hello-features.md)
 ### [Multifactor Unlock](feature-multifactor-unlock.md)
+
+## [Windows Hello for Business Frequently Asked Questions (FAQ)](hello-faq.md)
+### [Windows Hello for Business Videos](hello-videos.md)
