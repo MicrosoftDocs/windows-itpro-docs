@@ -18,7 +18,7 @@ This topic explains how BitLocker Device Encryption  can help protect data on de
 For an architectural overview about how BitLocker Device Encryption  works with Secure Boot, see [Secure boot and BitLocker Device Encryption overview](https://docs.microsoft.com/windows-hardware/drivers/bringup/secure-boot-and-device-encryption-overview). 
 For a general overview and list of topics about BitLocker, see [BitLocker](bitlocker-overview.md).
 
-When users travel, their organization’s confidential data goes with them. Wherever confidential data is stored, it must be protected against unauthorized access. Windows has a long history of providing at-rest data-protection solutions that guard against nefarious attackers, beginning with the Encrypting File System in the Windows 2000 operating system. More recently, BitLocker has provided encryption for full drives and portable drives; in Windows 10, BitLocker will even protect individual files, with data loss prevention capabilities. Windows consistently improves data protection by improving existing options and by providing new strategies.
+When users travel, their organization’s confidential data goes with them. Wherever confidential data is stored, it must be protected against unauthorized access. Windows has a long history of providing at-rest data-protection solutions that guard against nefarious attackers, beginning with the Encrypting File System in the Windows 2000 operating system. More recently, BitLocker has provided encryption for full drives and portable drives. Windows consistently improves data protection by improving existing options and by providing new strategies.
 
 Table 2 lists specific data-protection concerns and how they are addressed in Windows 10 and Windows 7.
 

@@ -6,13 +6,10 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/16/2018
+ms.date: 04/16/2018
 ---
 
 # Policy CSP - LanmanWorkstation
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -78,20 +75,14 @@ Insecure guest logons are used by file servers to allow unauthenticated access t
 ADMX Info:  
 -   GP English name: *Enable insecure guest logons*
 -   GP name: *Pol_EnableInsecureGuestLogons*
+-   GP path: *Network/Lanman Workstation*
 -   GP ADMX file name: *LanmanWorkstation.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 This setting supports a range of values between 0 and 1.
 
-
 <!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 <hr/>
 

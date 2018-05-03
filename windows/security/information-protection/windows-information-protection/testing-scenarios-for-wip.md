@@ -23,6 +23,9 @@ We've come up with a list of suggested testing scenarios that you can use to tes
 ## Testing scenarios
 You can try any of the processes included in these scenarios, but you should focus on the ones that you might encounter in your organization.
 
+>[!IMPORTANT]
+>If any of these scenarios does not work, first take note of whether WIP has been revoked. If it has, unenlightened apps will have to be uninstalled and re-installed since their settings files will remain encrypted.
+
 <table>
     <tr>
         <th>Scenario</th>
@@ -152,7 +155,7 @@ You can try any of the processes included in these scenarios, but you should foc
         <td>Unenroll client devices from WIP.</td>
         <td>
             <ul>
-                <li>Unenroll a device from WIP by going to <strong>Settings</strong>, click <strong>Accounts</strong>, click <strong>Work</strong>, click the name of the device you want to unenroll, and then click <strong>Remove</strong>.<br>The device should be removed and all of the enterprise content for that managed account should be gone.<br><br><strong>Important</strong><br>On desktop devices, the data isn't removed and can be recovered, so you must make sure they content is marked as <strong>Revoked</strong> and that access is denied for the employee. On mobile devices, the data is removed.</li>
+                <li>Unenroll a device from WIP by going to <strong>Settings</strong>, click <strong>Accounts</strong>, click <strong>Work</strong>, click the name of the device you want to unenroll, and then click <strong>Remove</strong>.<br>The device should be removed and all of the enterprise content for that managed account should be gone.<br><br><strong>Important</strong><br>On desktop devices, the data isn't removed and can be recovered, so you must make sure the content is marked as <strong>Revoked</strong> and that access is denied for the employee. On mobile devices, the data is removed.</li>
             </ul>
         </td>
     </tr>

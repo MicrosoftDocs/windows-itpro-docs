@@ -7,7 +7,7 @@ ms.sitesec: library
 author: JaimeO
 ms.localizationpriority: high
 ms.author: jaimeo
-ms.date: 11/21/2017
+ms.date: 04/30/2018
 ---
 
 # Configure Delivery Optimization for Windows 10 updates
@@ -26,6 +26,16 @@ Delivery Optimization is a cloud-managed solution. Access to the Delivery Optimi
 
 >[!NOTE]
 >WSUS can also use [BranchCache](waas-branchcache.md) for content sharing and caching. If Delivery Optimization is enabled on devices that use BranchCache, Delivery Optimization will be used instead. 
+
+The following table lists the minimum Windows 10 version that supports Delivery Optimization:
+
+| Device type | Minimum Windows version |
+|------------------|---------------|
+| Computers running Windows 10 | 1511 |
+| Computers running Server Core installations of Windows Server | 1709 |
+| IoT devices | 1803 |
+| HoloLens devices | 1803 |
+
 
 By default in Windows 10 Enterprise and Education editions, Delivery Optimization allows peer-to-peer sharing on the organization's own network only, but you can configure it differently in Group Policy and mobile device management (MDM) solutions such as Microsoft Intune.
 
@@ -56,8 +66,19 @@ Several Delivery Optimization features are configurable:
 | [Max Upload Bandwidth](#max-upload-bandwidth) | DOMaxUploadBandwidth | 1607 |
 | [Monthly Upload Data Cap](#monthly-upload-data-cap) | DOMonthlyUploadDataCap | 1607 |
 | [Minimum Background QoS](#minimum-background-qos) | DOMinBackgroundQoS | 1607 |
-| [Enable Peer Caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching | 1703 |
-| [Allow uploads while the device is on battery while under set Battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) | DOMinBatteryPercentageAllowedToUpload | 1703 |
+| [Enable Peer Caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching | 1709 |
+| [Allow uploads while the device is on battery while under set Battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) | DOMinBatteryPercentageAllowedToUpload | 1709 |
+| [MaxForegroundDownloadBandwidth](#maximum-foreground-download-bandwidth) | DOPercentageMaxForegroundBandwidth | 1803 |
+| [MaxBackgroundDownloadBandwidth](#maximum-background-download-bandwidth) | DOPercentageMaxBackgroundBandwidth | 1803 |
+| [SetHoursToLimitBackgroundDownloadBandwidth](#set-business-hours-to-limit-background-download-bandwidth) | DOSetHoursToLimitBackgroundDownloadBandwidth | 1803 |
+| [SetHoursToLimitForegroundDownloadBandwidth](#set-business-hours-to-limit-foreground-download-bandwidth)  |DOSetHoursToLimitForegroundDownloadBandwidth | 1803 |
+| [Select a method to restrict Peer Selection](#select-a-method-to-restrict-peer-selection) |DORestrictPeerSelectionBy | 1803 |
+| [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIdSource | 1803 |
+| [Delay background download from http (in secs)](#delay-background-download-from-http-in-secs) | DODelayBackgroundDownloadFromHttp | 1803 |
+| [Delay foreground download from http (in secs)](#delay-foreground-download-from-http-in-secs) | DODelayForegroundDownloadFromHttp | 1803 |
+
+ 
+
 
 When configuring Delivery Optimization on Windows 10 devices, the first and most important thing to configure is the [Download mode](#download-mode), which dictates how Delivery Optimization downloads Windows updates.
 
@@ -80,6 +101,15 @@ Additional options available that control the impact Delivery Optimization has o
 - [Max Upload Bandwidth](#max-upload-bandwidth) controls the Delivery Optimization upload bandwidth usage.
 - [Monthly Upload Data Cap](#monthly-upload-data-cap) controls the amount of data a client can upload to peers each month.
 - [Minimum Background QoS](#minimum-background-qos) lets administrators guarantee a minimum download speed for Windows updates. This is achieved by adjusting the amount of data downloaded directly from Windows Update or WSUS servers, rather than other peers in the network.
+- [Maximum Foreground Download Bandwidth](#maximum-foreground-download-bandwidth) specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth.
+- [Maximum Background Download Bandwidth](#maximum-background-download-bandwidth) specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth.
+- [Set Business Hours to Limit Background Download Bandwidth](#set-business-hours-to-limit-background-download-bandwidth) specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
+- [Set Business Hours to Limit Foreground Download Bandwidth](#set-business-hours-to-limit-foreground-download-bandwidth) specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
+- [Select a method to restrict Peer Selection](#select-a-method-to-restrict-peer-selection) restricts peer selection by the options you select.
+- [Select the source of Group IDs](#select-the-source-of-group-ids) restricts peer selection to a specific source.
+- [Delay background download from http (in secs)](#delay-background-download-from-http-in-secs) allows you to delay the use of an HTTP source in a background download that is allowed to use P2P.
+- [Delay foreground download from http (in secs)](#delay-foreground-download-from-http-in-secs) allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use P2P.
+
 
 Administrators can further customize scenarios where Delivery Optimization will be used with the following settings:
 - [Minimum RAM (inclusive) allowed to use Peer Caching](#minimum-ram-allowed-to-use-peer-caching) sets the minimum RAM required for peer caching to be enabled.
@@ -92,11 +122,11 @@ At Microsoft, to help ensure that ongoing deployments weren’t affecting our ne
 
 For more details, check out the [Adopting Windows as a Service at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft) technical case study.
 
-Provided below is a detailed description of every configurable feature setting. Use these details when configuring any of the above settings.
+The following is a detailed description of every configurable feature setting. Use these details when configuring any of the settings.
 
 ### Download mode
 
-Download mode dictates which download sources clients are allowed to use when downloading Windows updates in addition to Windows Update servers. The following table shows the available download mode options and what they do.
+Download mode dictates which download sources clients are allowed to use when downloading Windows updates in addition to Windows Update servers. The following table shows the available download mode options and what they do. Additional technical details for these policies are available in [Policy CSP - Delivery Optimization](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization).
 
 | Download mode option | Functionality when set |
 | --- | --- |
@@ -152,6 +182,14 @@ This setting specifies the minimum content file size in MB enabled to use Peer C
 
 This setting specifies the maximum download bandwidth that can be used across all concurrent Delivery Optimization downloads in kilobytes per second (KB/s). A default value of 0 means that Delivery Optimization will dynamically adjust and optimize the maximum bandwidth used.
 
+### Maximum Foreground Download Bandwidth
+
+Starting in Windows 10, version 1803, specifies the maximum foreground download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. The default value of 0 means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads. However, downloads from LAN peers are not throttled even when this policy is set.
+
+### Maximum Background Download Bandwidth
+
+Starting in Windows 10, version 1803, specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. The default value of 0 means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads. However, downloads from LAN peers are not throttled even when this policy is set.
+
 ### Percentage of Maximum Download Bandwidth
 
 This setting specifies the maximum download bandwidth that Delivery Optimization can use across all concurrent download activities as a percentage of available download bandwidth. The default value 0 means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
@@ -159,6 +197,33 @@ This setting specifies the maximum download bandwidth that Delivery Optimization
 ### Max Upload Bandwidth
 
 This setting allows you to limit the amount of upload bandwidth individual clients can use for Delivery Optimization. Consider this setting when clients are providing content to requesting peers on the network. This option is set in kilobytes per second (KB/s). The default setting is 0, or “unlimited” which means Delivery Optimization dynamically optimizes for minimal usage of upload bandwidth; however it does not cap the upload bandwidth rate at a set rate.
+
+### Set Business Hours to Limit Background Download Bandwidth
+Starting in Windows 10, version 1803, specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
+
+### Set Business Hours to Limit Foreground Download Bandwidth
+Starting in Windows 10, version 1803, specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
+
+### Select a method to restrict peer selection
+Starting in Windows 10, version 1803, set this policy to restrict peer selection via selected option.  
+Currently the only available option is **1 = Subnet mask** This option (Subnet mask) applies to both Download Modes LAN (1) and Group (2).  
+
+### Select the source of Group IDs
+Starting in Windows 10, version 1803, set this policy to restrict peer selection to a specific source. The options are:
+- 0 = not set
+- 1 = AD Site
+- 2 = Authenticated domain SID
+- 3 = DHCP Option ID (with this option, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID)
+- 4 = DNS Suffix 
+
+When set, the Group ID is assigned automatically from the selected source. If you set this policy, the GroupID policy will be ignored. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-4, the policy is ignored.  
+
+
+### Delay background download from http (in secs)
+Starting in Windows 10, version 1803, allows you to delay the use of an HTTP source in a background download that is allowed to use P2P.
+
+### Delay foreground download from http (in secs)
+Starting in Windows 10, version 1803, allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use P2P.
 
 ### Minimum Background QoS
 
@@ -185,15 +250,44 @@ The device can download from peers while on battery regardless of this policy.
 > By default, devices **will not upload while on battery**. To enable uploads while on battery, you need to enable this policy and set the battery value under which uploads pause.
 
 <span id="set-preferred-cache-devices"/>
+
 ## Set “preferred” cache devices for Delivery Optimization
 
 In some cases, IT pros may have an interest in identifying specific devices that will be “preferred” as sources to other devices—for example, devices that have hard-wired connections, large drives that you can use as caches, or a high-end hardware profile. These preferred devices will act as a “master” for the update content related to that devices’s configuration (Delivery Optimization only caches content relative to the client downloading the content).
 
 To specify which devices are preferred, you can set the **Max Cache Age** configuration with a value of **Unlimited** (0). As a result, these devices will be used more often as sources for other devices downloading the same files.
 
-On devices that are not preferred, you can choose to set the following policy to prioritize data coming from local peers instead of the Internet:
+On devices that are not preferred, you can choose to set the following policy to prioritize data coming from local peers instead of the Internet. Set **DOMinBackgroundQoS** with a low value, for example, `64` (which is the equivalent of 64 KB/s).
 
--  Set **DOMinBackgroundQoS** with a low value, for example `64` which is the equivalent of 64 KB/s.
+## Troubleshooting steps if you don't see any bytes from peers
+
+If you don’t see any bytes coming from peers the cause might be one of the following issues:
+
+- Clients aren’t able to reach the Delivery Optimization cloud services.
+- The cloud service doesn’t see other peers on the network. 
+- Clients aren’t able to connect to peers that are offered back from the cloud service.
+ 
+### Clients aren't able to reach the Delivery Optimization cloud services.
+
+To fix this issue, try the following steps:
+
+1. Start a download of an app that is larger than 50 MB from the Store (for example Candy Crush Saga).
+2. Run `Get-DeliveryOptimizationStatus` from an elevated window and share the output (by setting the `DownloadMode` field to **1**).
+
+### The cloud service doesn't see other peers on the network.
+
+If you suspect this is the problem, try these steps:
+
+1. Download the same app on another device on the same network.
+2. Run `Get-DeliveryOptimizationPerfSnap` from an elevated window (the `NumberOfPeers` field should be non-zero).
+
+
+### Clients aren't able to connect to peers offered by the cloud service
+
+If you suspect this is the problem, run a Telnet test between two devices on the network to ensure they can connect using port 7680. To do this, follow these steps:
+
+1. Install Telnet by running **dism /online /Enable-Feature /FeatureName:TelnetClient** from an elevated command prompt.
+2. Run the test. For example, if you are on device with IP 192.168.8.12 and you are trying to test the connection to 192.168.9.17 run **telnet 192.168.9.17 7680** (the syntax is *telnet [destination IP] [port]*. You will either see a connection error or a blinking cursor like this /_. The blinking cursor means success.
 
 
 ## Windows PowerShell cmdlets for analyzing usage
@@ -227,8 +321,7 @@ Using the `-Verbose` option returns additional information:
 | IntConnectionCount | Number of active connections to internet peers | 
 | DownloadMode | Indicates the download mode (see the "Download Mode" section for details) |
  
-
-- `Get-DeliveryOptimizationPerfSnap` returns a list of key performance data:
+`Get-DeliveryOptimizationPerfSnap` returns a list of key performance data:
 
 - Number of files downloaded 
 - Number of files uploaded 
@@ -243,6 +336,19 @@ Using the `-Verbose` option returns additional information:
 - Bytes from peers (per type) 
 - Bytes from CDN  (the number of bytes received over HTTP)
 - Average number of peer connections per download 
+
+
+Starting in Windows 10, version 1803:
+
+`Get-DeliveryOptimizationLog [-Path <etl file path, supports wildcards>] [-Flush]`
+
+If `Path` is not specified, this cmdlet reads all logs from the dosvc log directory, which requires administrator permissions. If `Flush` is specified, the cmdlet stops dosvc before reading logs.
+ 
+Log entries are written to the PowerShell pipeline as objects. To dump logs to a text file, run `Get-DeliveryOptimizationLog | Set-Content <output file>` or something similar.
+
+`Get-DeliveryOptimizationPerfSnapThisMonth`
+
+Returns data similar to that from `Get-DeliveryOptimizationPerfSnap` but limited to the current calendar month.
 
 ## Frequently asked questions
 
@@ -265,6 +371,7 @@ For the payloads (optional):
 
 - *.download.windowsupdate.com 
 - *.windowsupdate.com
+
 
 
 

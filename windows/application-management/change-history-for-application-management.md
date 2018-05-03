@@ -15,6 +15,10 @@ ms.date: 10/24/2017
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
+## RELEASE: Windows 10, version 1803
+
+The topics in this library have been updated for Windows 10, version 1803.
+
 ## October 2017
 
 New or changed topic | Description

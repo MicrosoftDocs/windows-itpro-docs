@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.date: 03/30/2018
+ms.date: 05/02/2018
 ms.localizationpriority: high
 ---
 
@@ -103,82 +103,158 @@ SetupDiag.exe /Output:C:\SetupDiag\Dumpdebug.log /Mode:Offline /LogsPath:D:\Dump
 
 ## Known issues
 
-1. Some rules can take a long time to process if the log files involved as large.
-2. SetupDiag only outputs data in a text format. If another format is desired, please provide this [feedback](#feedback).
+1. Some rules can take a long time to process if the log files involved are large.
+2. SetupDiag only outputs data in a text format.
 3. If the failing computer is opted into the Insider program and getting regular pre-release updates, or an update is already pending on the computer when SetupDiag is run, it can encounter problems trying to open these log files. This will likely cause a failure to determine a root cause.  In this case, try gathering the log files and running SetupDiag in offline mode.
 
 
 ## Sample output
 
-The following is an example where SetupDiag is run in offline mode. In this example, it is found that disk space is not sufficient to complete Windows Setup:
+The following is an example where SetupDiag is run in offline mode. In this example, there is an application warning, but since setup is executed in /quiet mode so it becomes a block. Instructions to resolve the problem are provided by SetupDiag in the output.
+
+The output also provides an error code 0xC1900208 - 0x4000C which corresponds to a compatibility issue as documented in the [Upgrade error codes](upgrade-error-codes.md#result-codes) and [Resolution procedures](resolution-procedures.md#modern-setup-errors) topics in this article.
 
 ```
-C:\setupdiag>SetupDiag /Output:C:\setupdiag\results.log /Mode:Offline /LogsPath:C:\setupdiag\logfiles
+C:\SetupDiag>SetupDiag.exe /Output:C:\SetupDiag\Results.log /Mode:Offline /LogsPath:C:\Temp\BobMacNeill
 
-
-SetupDiag v1.00
-Copyright (c) Microsoft Corporation. All rights reserved.
-
+SetupDiag v1.01
+Copyright (c) Microsoft Corporation. All rights reserved
 
 Searching for setup logs, this can take a minute or more depending on the number and size of the logs...please wait.
-        Found 1 setupact.logs.
-        Processing setupact.log 1 of 1
+        Found 4 setupact.logs.
+        Processing setupact.log at: c:\temp\bobmacneill\$WINDOWS.~BT\Sources\Panther\setupact.log
+        Processing setupact.log at: c:\temp\bobmacneill\Panther\setupact.log
+        Processing setupact.log at: c:\temp\bobmacneill\Panther\NewOs\Panther\setupact.log
+        Processing setupact.log at: c:\temp\bobmacneill\Panther\UnattendGC\setupact.log
+Found c:\temp\bobmacneill\$WINDOWS.~BT\Sources\Panther\setupact.log with update date 03/29/2018 23:13:58 and CV: H2X+YsWL/UOkj/8X to be the correct setup log.
 Gathering information from setup logs.
 
 SetupDiag: processing rule: CompatScanOnly.
-...No match.
-
+..No match.
 
 SetupDiag: processing rule: BitLockerHardblock.
-...No match.
-
+..No match.
 
 SetupDiag: processing rule: VHDHardblock.
-...No match.
-
+..No match.
 
 SetupDiag: processing rule: PortableWorkspaceHardblock.
-...No match.
-
+..No match.
 
 SetupDiag: processing rule: AuditModeHardblock.
-...No match.
-
+..No match.
 
 SetupDiag: processing rule: SafeModeHardblock.
-...No match.
-
+..No match.
 
 SetupDiag: processing rule: InsufficientSystemPartitionDiskSpaceHardblock.
-...No match.
+..No match.
 
+SetupDiag: processing rule: CompatBlockedApplicationAutoUninstall.
+....No match.
 
-SetupDiag: processing rule: HardblockApplication.
-...No match.
+SetupDiag: processing rule: CompatBlockedApplicationDismissable.
+....
 
+Matching Profile found: CompatBlockedApplicationDismissable - EA52620B-E6A0-4BBC-882E-0686605736D9
+Warning: Found Application Block for: "Microsoft Endpoint Protection".
+This is a dismissible message when not running setup.exe in "/quiet" mode.
+Consider specifying "/compat /ignore warning" to ignore these dismissible warnings.
+You must manually uninstall "Microsoft Endpoint Protection" before continuing with the installation/update, or change the command line parameters to ignore warnings.
+For more information about Setup command line switches, see here:
+https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-command-line-options
+
+SetupDiag: processing rule: CompatBlockedApplicationManualUninstall.
+....No match.
 
 SetupDiag: processing rule: HardblockDeviceOrDriver.
-...No match.
-
+....No match.
 
 SetupDiag: processing rule: HardblockMismatchedLanguage.
 ..No match.
 
-
 SetupDiag: processing rule: HardblockFlightSigning.
 ..No match.
 
-
 SetupDiag: processing rule: DiskSpaceBlockInDownLevel.
-...
+..No match.
 
-Matching Profile found: DiskSpaceBlockInDownLevel - 6080AFAC-892E-4903-94EA-7A17E69E549E
-Warning: Found Disk Space Hard Block.
-Warning: You must free up at least 6603 MB of space on the System Drive, and try again.
+SetupDiag: processing rule: DiskSpaceFailure.
+..No match.
 
-SetupDiag found 1 matching issue.
+SetupDiag: processing rule: DebugSetupMemoryDump.
+.No match.
+
+SetupDiag: processing rule: DebugSetupCrash.
+.No match.
+
+SetupDiag: processing rule: DebugMemoryDump.
+.No match.
+
+SetupDiag: processing rule: DeviceInstallHang.
+..No match.
+
+SetupDiag: processing rule: BootFailureDetected.
+.No match.
+
+SetupDiag: processing rule: FindDebugInfoFromRollbackLog.
+.No match.
+
+SetupDiag: processing rule: AdvancedInstallerFailed.
+..No match.
+
+SetupDiag: processing rule: FindMigApplyUnitFailure.
+..No match.
+
+SetupDiag: processing rule: FindMigGatherUnitFailure.
+..No match.
+
+SetupDiag: processing rule: OptionalComponentInstallFailure.
+..No match.
+
+SetupDiag: processing rule: CriticalSafeOSDUFailure.
+..No match.
+
+SetupDiag: processing rule: UserProfileCreationFailureDuringOnlineApply.
+..No match.
+
+SetupDiag: processing rule: WimMountFailure.
+..No match.
+
+SetupDiag: processing rule: FindSuccessfulUpgrade.
+..No match.
+
+SetupDiag: processing rule: FindSetupHostReportedFailure.
+..No match.
+
+SetupDiag: processing rule: FindDownlevelFailure.
+..No match.
+
+SetupDiag: processing rule: FindAbruptDownlevelFailure.
+....Error: SetupDiag reports abrupt down-level failure. Last Operation: Finalize, Error: 0xC1900208 - 0x4000C
+Failure Data: Last Operation: Finalize, Error: 0xC1900208 - 0x4000C
+Refer to https://docs.microsoft.com/en-us/windows/deployment/upgrade/upgrade-error-codes for error information.
+
+SetupDiag: processing rule: FindSetupPlatformFailedOperationInfo.
+..No match.
+
+SetupDiag: processing rule: FindRollbackFailure.
+..No match.
+
+SetupDiag found 2 matching issues.
+
+Warning: Found Application Block for: "Microsoft Endpoint Protection".
+This is a dismissible message when not running setup.exe in "/quiet" mode.
+Consider specifying "/compat /ignore warning" to ignore these dismissible warnings.
+You must manually uninstall "Microsoft Endpoint Protection" before continuing with the installation/update, or change the command line parameters to ignore warnings.
+For more information about Setup command line switches, see here:
+https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-command-line-options
+Error: SetupDiag reports abrupt down-level failure. Last Operation: Finalize, Error: 0xC1900208 - 0x4000C
+Failure Data: Last Operation: Finalize, Error: 0xC1900208 - 0x4000C
+Refer to https://docs.microsoft.com/en-us/windows/deployment/upgrade/upgrade-error-codes for error information.
+
 SetupDiag results were logged to: c:\setupdiag\results.log
-Logs ZipFile created at: c:\setupdiag\Logs.zip
+Logs ZipFile created at: c:\setupdiag\Logs_14.zip
 
 ```
 
@@ -188,63 +264,86 @@ When searching log files, SetupDiag uses a set of rules to match known issues. T
 
 Each rule name and its associated unique rule identifier are listed with a description of the known upgrade-blocking issue. In the rule descriptions, the term "down-level" refers to the first phase of the upgrade process, which runs under the starting OS.
 
-1. CompatScanOnly - FFDAFD37-DB75-498A-A893-472D49A1311D
+1.	CompatScanOnly - FFDAFD37-DB75-498A-A893-472D49A1311D
     - This rule indicates that setup.exe was called with a specific command line parameter that indicated setup was to do a compat scan only, not an upgrade.
-2. BitLockerHardblock - C30152E2-938E-44B8-915B-D1181BA635AE
+2.	BitLockerHardblock - C30152E2-938E-44B8-915B-D1181BA635AE
     - This is a block when the target OS does not support BitLocker, yet the host OS has BitLocker enabled.
-3. VHDHardblock - D9ED1B82-4ED8-4DFD-8EC0-BE69048978CC
+3.	VHDHardblock - D9ED1B82-4ED8-4DFD-8EC0-BE69048978CC
     - This block happens when the host OS is booted to a VHD image.  Upgrade is not supported when the host OS is booted from a VHD image.
-4. PortableWorkspaceHardblock - 5B0D3AB4-212A-4CE4-BDB9-37CA404BB280
+4.	PortableWorkspaceHardblock - 5B0D3AB4-212A-4CE4-BDB9-37CA404BB280
     - This indicates that the host OS is booted from a Windows To-Go device (USB key).  Upgrade is not supported in the Windows To-Go environment.
-5. AuditModeHardblock - A03BD71B-487B-4ACA-83A0-735B0F3F1A90
+5.	AuditModeHardblock - A03BD71B-487B-4ACA-83A0-735B0F3F1A90
     - This block indicates that the host OS is currently booted into Audit Mode, a special mode for modifying the Windows state.  Upgrade is not supported from this state.
-6. SafeModeHardblock - 404D9523-B7A8-4203-90AF-5FBB05B6579B
+6.	SafeModeHardblock - 404D9523-B7A8-4203-90AF-5FBB05B6579B
     - This block indicates that the host OS is booted to Safe Mode, where upgrade is not supported.
-7. InsufficientSystemPartitionDiskSpaceHardblock - 3789FBF8-E177-437D-B1E3-D38B4C4269D1
+7.	InsufficientSystemPartitionDiskSpaceHardblock - 3789FBF8-E177-437D-B1E3-D38B4C4269D1
     - This block is encountered when setup determines the system partition (where the boot loader files are stored) does not have enough space to be serviced with the newer boot files required during the upgrade process.
-8. HardblockApplication - D6FBF046-5927-4FCD-B998-FE21CA7F6AC9
-    - This rule indicates the host OS had one or more hard blocked applications that need to be uninstalled prior to continuing.  This typically is only a problem when /Quiet is specified on the command line.
-9. HardblockDeviceOrDriver - ED3AEFA1-F3E2-4F33-8A21-184ADF215B1B
+8.	CompatBlockedApplicationAutoUninstall – BEBA5BC6-6150-413E-8ACE-5E1EC8D34DD5
+    - This rule indicates there is an application that needs to be uninstalled before setup can continue.
+9.	CompatBlockedApplicationDismissable - EA52620B-E6A0-4BBC-882E-0686605736D9
+    - When running setup in /quiet mode, there are dismissible application messages that turn into blocks unless the command line also specifies “/compat /ignore warning”.  This rule indicates setup was executed in /quiet mode but there is an application dismissible block message that have prevented setup from continuing.
+10.	CompatBlockedApplicationManualUninstall - 9E912E5F-25A5-4FC0-BEC1-CA0EA5432FF4
+    - This rule indicates that an application without an Add/Remove Programs entry, is present on the system and blocking setup from continuing.  This typically requires manual removal of the files associated with this application to continue.
+11.	HardblockDeviceOrDriver - ED3AEFA1-F3E2-4F33-8A21-184ADF215B1B
     - This indicates a device driver that is loaded on the host OS is not compatible with the newer OS version and needs to be removed prior to the upgrade.
-10. HardblockMismatchedLanguage - 60BA8449-CF23-4D92-A108-D6FCEFB95B45
+12.	HardblockMismatchedLanguage - 60BA8449-CF23-4D92-A108-D6FCEFB95B45
     - This rule indicates the host OS and the target OS language editions do not match.
-11. HardblockFlightSigning - 598F2802-3E7F-4697-BD18-7A6371C8B2F8
+13.	HardblockFlightSigning - 598F2802-3E7F-4697-BD18-7A6371C8B2F8
     - This rule indicates the target OS is a pre-release, Windows Insider build, and the target machine has Secure Boot enabled.  This will block the pre-release signed build from booting if installed on the machine.
-12. DiskSpaceBlockInDownLevel - 6080AFAC-892E-4903-94EA-7A17E69E549E
+14.	DiskSpaceBlockInDownLevel - 6080AFAC-892E-4903-94EA-7A17E69E549E
     - This failure indicates the system ran out of disk space during the down-level operations of upgrade.
-13. DiskSpaceFailure - 981DCBA5-B8D0-4BA7-A8AB-4030F7A10191
+15.	DiskSpaceFailure - 981DCBA5-B8D0-4BA7-A8AB-4030F7A10191
     - This failure indicates the system drive ran out of available disk space at some point after the first reboot into the upgrade.
-14. DeviceInstallHang - 37BB1C3A-4D79-40E8-A556-FDA126D40BC6
+16.	DeviceInstallHang - 37BB1C3A-4D79-40E8-A556-FDA126D40BC6
     - This failure rule indicates the system hung or bug checked during the device installation phase of upgrade. 
-15. DebugSetupMemoryDump - C7C63D8A-C5F6-4255-8031-74597773C3C6
+17.	DebugSetupMemoryDump - C7C63D8A-C5F6-4255-8031-74597773C3C6
     - This offline only rule indicates a bug check occurred during setup.  If the debugger tools are available on the system, SetupDiag will debug the memory dump and provide details.
-16. DebugSetupCrash - CEEBA202-6F04-4BC3-84B8-7B99AED924B1
+18.	DebugSetupCrash - CEEBA202-6F04-4BC3-84B8-7B99AED924B1
     - This offline only rule indicates that setup itself encountered a failure that resulted in a process memory dump.  If the debugger tools are installed on the system, SetupDiag will debug the memory dump and give further details.
-17. DebugMemoryDump - 505ED489-329A-43F5-B467-FCAAF6A1264C
+19.	DebugMemoryDump - 505ED489-329A-43F5-B467-FCAAF6A1264C
     - This offline only rule is for any memory.dmp file that resulted during the setup/upgrade operation.  If the debugger tools are installed on the system, SetupDiag will debug the memory dump and give further details.
-18. FindDebugInfoFromRollbackLog - 9600EB68-1120-4A87-9FE9-3A4A70ACFC37
+20.	BootFailureDetected - 4FB446C2-D4EC-40B4-97E2-67EB19D1CFB7
+    - This rule indicates a boot failure occurred during a specific phase of the update.  The rule will indicate the failure code and phase for diagnostic purposes.
+21.	FindDebugInfoFromRollbackLog - 9600EB68-1120-4A87-9FE9-3A4A70ACFC37
     - This rule will determine and give details when a bug check occurs during the setup/upgrade process that resulted in a memory dump, but without the requirement of the debugger package being on the executing machine.
-19. AdvancedInstallerFailed - 77D36C96-32BE-42A2-BB9C-AAFFE64FCADC
+22.	AdvancedInstallerFailed - 77D36C96-32BE-42A2-BB9C-AAFFE64FCADC
     - Finds fatal advanced installer operations that cause setup failures.
-20. FindSuccessfulUpgrade - 8A0824C8-A56D-4C55-95A0-22751AB62F3E
+23.	FindMigApplyUnitFailure - A4232E11-4043-4A37-9BF4-5901C46FD781
+    - Detects a migration unit failure that caused the update to fail.  This rule will output the name of the migration plug-in as well as the error code it produced for diagnostic purposes.
+24.	FindMigGatherUnitFailure - D04C064B-CD77-4E64-96D6-D26F30B4EE29
+    - Detects a migration gather unit failure that caused the update to fail.  This rule will output the name of the gather unit/plug-in as well as the error code it produced for diagnostic purposes.
+25.	OptionalComponentInstallFailure - D012E2A2-99D8-4A8C-BBB2-088B92083D78
+    - This rule detects an optional component installation failure that caused the update to fail.  It will output the optional component name and error code its installation resulted in for diagnostic purposes.
+26.	CriticalSafeOSDUFailure - 73566DF2-CA26-4073-B34C-C9BC70DBF043
+    - This rule indicates a failure occurred while updating the SafeOS image with a critical dynamic update.  It will indicate the phase and error code that occurred while attempting to update the SafeOS image for diagnostic purposes.
+27.	UserProfileCreationFailureDuringOnlineApply - 678117CE-F6A9-40C5-BC9F-A22575C78B14
+    - Indicates there was a critical failure while creating or modifying a User Profile during the online apply phase of the update.  It will indicate the operation and error code associated with the failure for diagnostic purposes.
+28.	WimMountFailure - BE6DF2F1-19A6-48C6-AEF8-D3B0CE3D4549
+    - This rule indicates the update failed to mount a wim file.  It will show the name of the wim file as well as the error message and error code associated with the failure for diagnostic purposes.
+29.	FindSuccessfulUpgrade - 8A0824C8-A56D-4C55-95A0-22751AB62F3E
     - Determines if the given setup was a success or not based off the logs.
-21. FindSetupHostReportedFailure - 6253C04F-2E4E-4F7A-B88E-95A69702F7EC
+30.	FindSetupHostReportedFailure - 6253C04F-2E4E-4F7A-B88E-95A69702F7EC
     - Gives information about failures surfaced early in the upgrade process by setuphost.exe
-22. FindDownlevelFailure - 716334B7-F46A-4BAA-94F2-3E31BC9EFA55
+31.	FindDownlevelFailure - 716334B7-F46A-4BAA-94F2-3E31BC9EFA55
     - Gives failure information surfaced by SetupPlatform, later in the down-level phase.
-23. FindAbruptDownlevelFailure - 55882B1A-DA3E-408A-9076-23B22A0472BD
+32.	FindAbruptDownlevelFailure - 55882B1A-DA3E-408A-9076-23B22A0472BD
     - Gives last operation failure information when the system fails in the down-level, but the log just ends abruptly.
-24. FindSetupPlatformDownlevelFailure - 307A0133-F06B-4B75-AEA8-116C3B53C2D1
-    - Gives last operation and phase failure information when Setup indicates a down-level failure.
-25. FindSetupPlatformDownlevelFailedOperation - 087610ED-329A-4DE9-A54C-38A3A07B5B8B
-    - Gives last phase and error information when Setup indicates a down-level failure.
-26. FindRollbackFailure - 3A43C9B5-05B3-4F7C-A955-88F991BB5A48
+33.	FindSetupPlatformFailedOperationInfo - 307A0133-F06B-4B75-AEA8-116C3B53C2D1
+    - Gives last phase and error information when SetupPlatform indicates a critical failure.  This rule will indicate the operation and error associated with the failure for diagnostic purposes.
+34.	FindRollbackFailure - 3A43C9B5-05B3-4F7C-A955-88F991BB5A48
     - Gives last operation, failure phase and error information when a rollback occurs.
 
 
 ## Release notes
 
-03/30/2018 - SetupDiag v1.00 released with 26 rules, as a standalone tool available from the Download Center.
+05/02/2018 - SetupDiag v1.1 is released with 34 rules, as a standalone tool available from the Download Center.
+   - A performance enhancment has been added to result in faster rule processing.
+   - Rules output now includes links to support articles, if applicable.
+   - SetupDiag now provides the path and name of files that it is processing.
+   - You can now run SetupDiag by simply clicking on it and then examining the output log file.
+   - An output log file is now always created, whether or not a rule was matched.
+
+03/30/2018 - SetupDiag v1.0 is released with 26 rules, as a standalone tool available from the Download Center.
 
 ## Related topics
 

@@ -1,7 +1,7 @@
 ---
-title: Turn on advanced features in Windows Defender ATP
+title: Configure advanced features in Windows Defender ATP
 description: Turn on advanced features such as block file in Windows Defender Advanced Threat Protection.
-keywords: advanced features, preferences setup, block file
+keywords: advanced features, settings, block file
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,10 +10,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.date: 04/24/2018
 ---
 
-# Turn on advanced features in Windows Defender ATP
+# Configure advanced features in Windows Defender ATP
 
 **Applies to:**
 
@@ -23,13 +23,16 @@ ms.date: 10/16/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
 
 Depending on the Microsoft security products that you use, some advanced features might be available for you to integrate Windows Defender ATP with.
 
 Turn on the following advanced features to get better protected from potentially malicious files and gain better insight during security investigations:
+
+## Automated investigation
+When you enable this feature, you'll be able to take advantage of the automated investigation and remediation features of the service. For more information, see [Automated investigations](automated-investigations-windows-defender-advanced-threat-protection.md).
 
 ## Block file
 This feature is only available if your organization uses Windows Defender Antivirus as the active antimalware solution and that the cloud-based protection feature is enabled.
@@ -47,12 +50,42 @@ For more information, see [Investigate a user account](investigate-user-windows-
 ## Skype for Business integration
 Enabling the Skype for Business integration gives you the ability to communicate with users using Skype for Business, email, or phone. This can be handy when you need to communicate with the user and mitigate risks.
 
+## Azure Advanced Threat Protection integration
+The integration with Azure Advanced Threat Protection allows you to pivot directly into another Microsoft Identity security product. Azure Advanced Threat Protection augments an investigation with additional insights about a suspected compromised account and related resources. By enabling this feature, you'll enrich the machine-based investigation capability by pivoting across the network from an identify point of view.
+
+
+>[!NOTE]
+>You'll need to have the appropriate license to enable this feature. 
+
+### Enable the Windows Defender ATP integration from the Azure ATP portal
+To receive contextual machine integration in Azure ATP, you'll also need to enable the feature in the Azure ATP portal.
+
+1. Login to the [Azure portal](https://portal.atp.azure.com/) with a Global Administrator or Security Administrator role.
+
+2. Click **Create a workspace** or use your primary workspace.
+
+3. Toggle the Integration setting to **On** and click **Save**.
+
+When you complete the integration steps on both portals, you'll be able to see relevant alerts in the machine details or user details page.
+
 ## Office 365 Threat Intelligence connection
 This feature is only available if you have an active Office 365 E5 or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
 
 When you enable this feature, you'll be able to incorporate data from Office 365 Advanced Threat Protection into the Windows Defender ATP portal to conduct a holistic security investigation across Office 365 mailboxes and Windows machines.
 
+>[!NOTE]
+>You'll need to have the appropriate license to enable this feature. 
+
 To receive contextual machine integration in Office 365 Threat Intelligence, you'll need to enable the Windows Defender ATP settings in the Security & Compliance dashboard. For more information, see [Office 365 Threat Intelligence overview](https://support.office.com/en-us/article/Office-365-Threat-Intelligence-overview-32405DA5-BEE1-4A4B-82E5-8399DF94C512).
+
+## Microsoft Intune connection
+This feature is only available if you have an active Microsoft Intune (Intune) license. 
+
+When you enable this feature, you'll be able to share Windows Defender ATP device information to Intune and enhance policy enforcement. 
+
+>[!NOTE]
+>You'll need to enable the integration on both Intune and Windows Defender ATP to use this feature. 
+
 
 ## Enable advanced features
 1. In the navigation pane, select **Preferences setup** > **Advanced features**.
@@ -60,9 +93,7 @@ To receive contextual machine integration in Office 365 Threat Intelligence, you
 3. Click **Save preferences**.
 
 ## Related topics
-- [Update general settings in Windows Defender ATP](general-settings-windows-defender-advanced-threat-protection.md)
-- [Turn on the preview experience in Windows Defender ATP](preview-settings-windows-defender-advanced-threat-protection.md)
-- [Configure email notifications in Windows Defender ATP](configure-email-notifications-windows-defender-advanced-threat-protection.md)
-- [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-- [Enable the custom threat intelligence API in Windows Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
-- [Create and build Power BI reports](powerbi-reports-windows-defender-advanced-threat-protection.md)
+- [Update data retention settings](data-retention-settings-windows-defender-advanced-threat-protection.md)
+- [Configure alert notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)
+- [Enable and create Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
+- [Enable Secure Score security controls](enable-secure-score-windows-defender-advanced-threat-protection.md)

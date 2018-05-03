@@ -1,14 +1,15 @@
 ---
 description: If you're having problems with Microsoft Edge, this topic tells how to use the Enterprise Mode site list to automatically open sites using IE11.
 ms.assetid: 89c75f7e-35ca-4ca8-96fa-b3b498b53bE4
-author: eross-msft
+author: shortpatti
+ms.author: pashort
 ms.prod: edge
 ms.mktglfcycl: support
 ms.sitesec: library
 ms.pagetype: appcompat
 title: Use Enterprise Mode to improve compatibility (Microsoft Edge for IT Pros)
 ms.localizationpriority: high
-ms.date: 07/27/2017
+ms.date: 04/15/2018
 ---
 
 # Use Enterprise Mode to improve compatibility
@@ -19,8 +20,6 @@ If you have specific web sites and apps that you know have compatibility problem
 
 Using Enterprise Mode means that you can continue to use Microsoft Edge as your default browser, while also ensuring that your apps continue working on IE11.
 
-<!-- Will RS5 have the need for the following note? -->
-[@Reviewer: will RS5 have the need for the following note?]
 >[!NOTE]
 >If you want to use Group Policy to set Internet Explorer as your default browser, you can find the info here, [Set the default browser using Group Policy]( https://go.microsoft.com/fwlink/p/?LinkId=620714).
 

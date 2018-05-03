@@ -30,8 +30,8 @@ You can change the name of your private store in Microsoft Store.
 **To change the name of your private store**
 
 1.  Sign in to the [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com).
-2.  Click **Manage**, click **Permissions**.
-3.  On the **Private store** tab, click **Change**.
+2.  Click **Settings**, click **Distribute**.
+3.  In the **Private store** section, click **Change**.
 4.  Type a new display name for your private store, and click **Save**.
 
     ![Image showing Private store dialog used to change private store display name.](images/wsfb-renameprivatestore.png)

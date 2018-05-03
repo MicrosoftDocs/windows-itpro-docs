@@ -295,10 +295,7 @@ For an example of how to enable TDE for MBAM database instances, see [Understand
 
 **Use strong passwords or pass phrases**. Always use strong passwords with 15 or more characters for all MBAM administrator accounts. Never use blank passwords. For more information about password concepts, see [Password Policy](http://technet.microsoft.com/library/hh994572.aspx).
 
-## Got a suggestion for MBAM?
 
-
-Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 ## Related topics
 
@@ -306,7 +303,9 @@ Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-micros
 [Planning to Deploy MBAM 2.5](planning-to-deploy-mbam-25.md)
 
  
-
+## Got a suggestion for MBAM?
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
  
 
 
