@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/24/2018
+ms.date: 05/04/2018
 ---
 
 # Create and manage machine groups in Windows Defender ATP
@@ -73,19 +73,22 @@ As part of the process of creating a machine group, you'll:
     >[!NOTE]
     >You can only grant access to Azure AD user groups that have been assigned to RBAC roles. 
 
-6.	Click **Close**.
+6.	Click **Close**. The configuration changes are applied.
 
-7.	Apply the configuration settings.
 
 ## Understand matching and manage groups
-You can promote the rank of a machine group so that it is given higher priority during matching. When a machine is matched to more than one group, it is added only to the highest ranked group. You can also edit and delete groups.
+You can promote or demote the rank of a machine group so that it is given higher or lower priority during matching. When a machine is matched to more than one group, it is added only to the highest ranked group. You can also edit and delete groups.
+
+>[!WARNING]
+>Deleting a machine group may affect email notification rules. If a machine group that's part of an email notification rule is the only machine group in that rule, that email notification rule will be deleted along with the machine group.
 
 By default, machine groups are accessible to all users with portal access. You can change the default behavior by assigning Azure AD user groups to the machine group.
 
-Machines that are not matched to any groups are added to Ungrouped machines (default) group. You cannot change the rank of this group or delete it. However, you can change the remediation level of this group, and define the Azure AD user groups that can access this group.
+Machines that are not matched to any groups are added to grouped machines (default) group. You cannot change the rank of this group or delete it. However, you can change the remediation level of this group, and define the Azure AD user groups that can access this group.
 
 >[!NOTE]
->Applying changes to machine group configuration may take up to several minutes.
+> - Applying changes to machine group configuration may take up to several minutes.
+
 
 
 
