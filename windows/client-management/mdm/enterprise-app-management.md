@@ -229,7 +229,7 @@ You can install apps to a specific user or to all users of a device. Apps are in
 
 ### Deploy apps to user from the Store
 
-To deploy an app to a user directly from the Microsoft Store, the management server performs an Add and Exec commands on the AppInstallation node of the EnterpriseModernAppManagement CSP. This is only supported in the user context and not supported in the device context.
+To deploy an app to a user directly from the Microsoft Store, the management server performs an Add and Exec commands on the AppInstallation node of the EnterpriseModernAppManagement CSP. This is supported in the user context on all versions of Windows 10 but device context is only supported on Windows 10 release 17134 or greater.
 
 If you purchased an app from the Store for Business and the app is specified for an online license, the app and license must be acquired directly from the Microsoft Store.
 
