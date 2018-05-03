@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.date: 05/03/2018
 ---
 
 
@@ -85,10 +85,19 @@ For example: netsh winhttp set proxy 10.0.0.6:8080
 ## Enable access to Windows Defender ATP service URLs in the proxy server
 If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service in port 80 and 443:
 
-Service location | .Microsoft.com DNS record
+>![NOTE]
+> URLs that include v20 in them are only needed if you have Windows 10, version 1803 or later machines. For example, ```us-v20.events.data.microsoft.com``` is only needed if the machine is on Windows 10, version 1803 or later. 
+
+Service location | Microsoft.com DNS record
 :---|:---
- US |```*.blob.core.windows.net``` <br>```crl.microsoft.com```<br> ```ctldl.windowsupdate.com```<br> ```us.vortex-win.data.microsoft.com```<br> ```winatp-gw-cus.microsoft.com``` <br> ```winatp-gw-eus.microsoft.com```
-Europe |```*.blob.core.windows.net```<br>```crl.microsoft.com```<br>```ctldl.windowsupdate.com```<br>  ```eu.vortex-win.data.microsoft.com```<br>```winatp-gw-neu.microsoft.com```<br> ```winatp-gw-weu.microsoft.com```<br>
+Common URLs for all locations | ```*.blob.core.windows.net``` <br>```crl.microsoft.com```<br> ```ctldl.windowsupdate.com``` ```events.data.microsoft.com```
+US | ```us.vortex-win.data.microsoft.com```<br> ```us-v20.events.data.microsoft.com```<br>```winatp-gw-cus.microsoft.com``` <br>```winatp-gw-eus.microsoft.com```
+Europe | ```eu.vortex-win.data.microsoft.com```<br>```eu-v20.events.data.microsoft.com```<br>```winatp-gw-neu.microsoft.com```<br>```winatp-gw-weu.microsoft.com```
+UK | ```uk.vortex-win.data.microsoft.com``` <br>```uk-v20.events.data.microsoft.com```<br>```winatp-gw-uks.microsoft.com```<br>```winatp-gw-ukw.microsoft.com```
+AU | ```au.vortex-win.data.microsoft.com```<br>```au-v20.events.data.microsoft.com```<br>```winatp-gw-aue.microsoft.com```<br>```winatp-gw-aus.microsoft.com```
+
+
+
 
  If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted in the above listed URLs.
 
