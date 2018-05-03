@@ -36,7 +36,7 @@ Below, you'll find the technical requirements you'll need to meet in order to di
 
 | Product required                  | Details           | Learn more        |
 |:----------------------------------|:------------------|:------------------|
-| Azure Active Directory (Azure AD) | Required to log users into the Remote Assist app through Microsoft Teams. Also required for app distribution through the Microsoft Store for Business. If you choose not to distribute the app through the Microsoft Store for Business, users can also install it from the Microsoft Store. | [Get started with Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/get-started-azure-ad) |
+| Azure Active Directory (Azure AD) | Required to log users into the Remote Assist app through Microsoft Teams. Also required for app distribution through the Microsoft Store for Business. If you choose not to distribute the app through the Microsoft Store for Business, users can also install Remote Assist on a HoloLens from the Microsoft store using their Microsoft Account credentials (MSA). | [Get started with Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/get-started-azure-ad) |
 | Microsoft Teams                   | Microsoft Teams is the backbone that facilitates communication in Remote Assist. All devices that will make calls to the HoloLens will need to have Microsoft Teams installed. | [Overview of Microsoft Teams](https://docs.microsoft.com/en-us/MicrosoftTeams/teams-overview) |
 | Microsoft Office 365              | Because Microsoft Teams is part of Office 365, all users who will make calls from their PC/phone to the HoloLens will need an Office 365 license. | [Office 365 licensing for Microsoft Teams](https://docs.microsoft.com/en-us/MicrosoftTeams/office-365-licensing) |
 
@@ -68,7 +68,7 @@ HoloLens requirements:
 
 Alternately, you can get started testing out the RS4 build in advance of May 22. See [HoloLens RS4 Preview](https://docs.microsoft.com/en-us/windows/mixed-reality/hololens-rs4-preview) for instructions on flashing the RS4 build to your device. Be advised that doing so will erase all content on the device, and will put the device on track to receive future pre-released versions of the OS which may exhibit bugs and issues. We recommend using preview builds for testing only.
 
-Windows Mixed Reality immersive headsetmessaging requirements:
+Windows Mixed Reality immersive headset requirements:
 
 | OS requirements                               | Details                                                    |
 |:----------------------------------------------|:-----------------------------------------------------------|
@@ -78,7 +78,7 @@ Windows Mixed Reality immersive headsetmessaging requirements:
 
 Have the following technical requirements in place to start using Layout as soon as it's available:
 
-* **Azure Active Directory (Azure AD)**: Required for app distribution through the Microsoft Store for Business. See [Get started with Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/get-started-azure-ad) to learn more about Azure AD and licensing users. If you choose not to distribute the app through the Microsoft Store for Business, users can also install it from the Microsoft Store.
+* **Azure Active Directory (Azure AD)**: Required for app distribution through the Microsoft Store for Business. See [Get started with Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/get-started-azure-ad) to learn more about Azure AD and licensing users. If you choose not to distribute the app through the Microsoft Store for Business, users can also install Remote Assist on a HoloLens from the Microsoft Store using their Microsoft Account credentials (MSA).
 * **Network requirements**: Internet access is required to download the app, and utilize all of its features. There are no bandwidth requirements.
 * **Sharing and collaboration requirements**: Additional apps are needed to share and edit your layouts with stakeholders in real time. For the HoloLens, use of the [Remote Assist](#remote-assist) app is required. For the Windows Mixed Reality immersive headset, a screen sharing app (such as Skype or Skype for Business), and a Windows 10 PC that meets the [Windows Mixed Reality Ultra](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) specifications, are required.
 
