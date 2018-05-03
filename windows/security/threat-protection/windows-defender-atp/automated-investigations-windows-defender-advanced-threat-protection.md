@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/24/2018
+ms.date: 05/03/2018
 ---
 
 # Use Automated investigations to investigate and remediate threats
@@ -65,7 +65,7 @@ While an investigation is running, any other alert generated from the machine wi
 If an incriminated entity is seen in another machine, the Automated investigation will expand the investigation to include that machine and a generic machine playbook will start on that machine. If 10 or more machines are found during this expansion process from the same entity, then that expansion action will require an approval and will be seen in the **Pending actions** view.
 
 ### How threats are remediated
-Depending on how you set up the machine groups and their level of automation, the Automated investigation will either automaticlly remediate threats or require user approval (this is the default). For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md). 
+Depending on how you set up the machine groups and their level of automation, the Automated investigation will either automatically remediate threats or require user approval (this is the default). For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md). 
 
 The default machine group is configured for semi-automatic remediation. This means that any malicious entity that needs to be remediated requires an approval and the investigation is added to the **Pending actions** section, this can be changed to fully automatic so that no user approval is needed. 
 
