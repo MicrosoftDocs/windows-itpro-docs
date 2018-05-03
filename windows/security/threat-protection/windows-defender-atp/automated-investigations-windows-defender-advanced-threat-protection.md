@@ -74,6 +74,15 @@ When a pending action is approved, the entity is then remediated and this new st
 ### How an Automated investigation is completed
 When the Automated investigation completes its analysis, and all pending actions are resolved, an investigation is considered complete. It's important to understand that an investigation is only considered complete if there are no pending actions on it. 
 
+## Understand the remediation levels for automated investigations
+You can create machine groups and set remediation levels for automated investigations. The following table explains the various levels of remediations and the conditions associated with them.
+
+Remediation level | Description 
+:---|:---
+Full | Remediates threats automatically
+Require approval for all folders | An approval is needed when a remediation is required on folders
+Require approval for non-temp folders | An approval is required on files or executables that are not in temporary directories. This includes both user and system temporary directories.
+Require approval for core folders | An approval is required on files or executables that are in the operating system directories such as Windows directory and Program files directory.
 
 ## Manage Automated investigations
 By default, the Automated investigations list displays investigations initiated in the last week. You can also choose to select other time ranges from the drop-down menu or specify a custom range. 
