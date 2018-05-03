@@ -12,24 +12,24 @@ localizationpriority: high
 ms.date: 05/05/2018
 ---
 # Technical Deep Dive
-Windows Hello for Business authentication works through collection of components and infrastructure working together.  You can group the infrastructure and components in three categorities:
+Windows Hello for Business authentication works through collection of components and infrastructure working together.  You can group the infrastructure and components in three categories:
 - [Registration](#Registration)
 - [Provisioning](#Provisioning)
 - [Authentication](#Authentication)
 
 ## Registration
 
-Registration is a fundemenatl prerequisite for Windows Hello for Business.  Without registration, Windows Hello for Business provisioning cannot start.  Registation is where the device **registers** its identity with the identity provider.  For cloud and hybrid deployments, the identity provider is Azure Active Directory and the device registers with the Azure Device Registration Service (ADRS).  For on-premises deployments, the identity provider is Active Directory Federation Services (AD FS), and the device registers with the enterprise device registration service hosted on the federation servers (AD FS). 
+Registration is a fundamental prerequisite for Windows Hello for Business.  Without registration, Windows Hello for Business provisioning cannot start.  Registration is where the device **registers** its identity with the identity provider.  For cloud and hybrid deployments, the identity provider is Azure Active Directory and the device registers with the Azure Device Registration Service (ADRS).  For on-premises deployments, the identity provider is Active Directory Federation Services (AD FS), and the device registers with the enterprise device registration service hosted on the federation servers (AD FS). 
 
 [How Device Registration Works](hello-how-it-works-device-registration.md)
 
 
 ## Provisioning
 
-Provisioning is when the user uses one form of authetnication to request a new Windows Hello for Business credential.  Typically the user signs in to Windows using username and password.  The provisioning flow requires a second factor of authentication before it will create a strong, two-factor Windows Hello for Business credential.<br>
-After successfully completing the second factor of authentication, the user is asked to enroll biometrics (if avaiable on the device) and create PIN as a backup gesture.  Windows then registers the public version of the Windows Hello for Business credential with the identity provider.<br>
-For cloud and hybrid deployments, the identity provider is Azure Active Directory and the user registers their key with the Azure Device Registration Service (ADRS).  For on-premises deployments, the identity provider is Active Directory Federation Services (AD FS), and the user registeres their key with the enterprise device regisration service hosted on the federation servers.<br>
-Provision can occur automatically through the out-of-box-experience (OOBE) on Azure Active Directory joined devices, or on hybrid Azure Active Directory joined devices where the user or device is influenced by Windows Hello for Business policy settings.  Users can start provisioning through **Add PIN** from Windows Settings.  Watch the [Windows Hello for Business enrollment experience](hello-videos.md#windowshelloforbusinessuserenrollmentexperience) from our [Videos](hello-videos.md) page.
+Provisioning is when the user uses one form of authentication to request a new Windows Hello for Business credential.  Typically the user signs in to Windows using user name and password.  The provisioning flow requires a second factor of authentication before it will create a strong, two-factor Windows Hello for Business credential.<br>
+After successfully completing the second factor of authentication, the user is asked to enroll biometrics (if available on the device) and create PIN as a backup gesture.  Windows then registers the public version of the Windows Hello for Business credential with the identity provider.<br>
+For cloud and hybrid deployments, the identity provider is Azure Active Directory and the user registers their key with the Azure Device Registration Service (ADRS).  For on-premises deployments, the identity provider is Active Directory Federation Services (AD FS), and the user registers their key with the enterprise device registration service hosted on the federation servers.<br>
+Provision can occur automatically through the out-of-box-experience (OOBE) on Azure Active Directory joined devices, or on hybrid Azure Active Directory joined devices where the user or device is influenced by Windows Hello for Business policy settings.  Users can start provisioning through **Add PIN** from Windows Settings.  Watch the [Windows Hello for Business enrollment experience](hello-videos.md#Windows-Hello-for-Business-user-enrollment-experience) from our [Videos](hello-videos.md) page.
 
 [How Windows Hello for Business provisioning works](hello-how-it-works-provisioning.md)
 

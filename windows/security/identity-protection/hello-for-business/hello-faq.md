@@ -14,10 +14,10 @@ ms.date: 05/05/2018
 # Windows Hello for Business Frequently Ask Questions
 
 ## What about virtual smart cards?
-Windows Hello for Business is the modern, two-factor credential for Windows 10.  Microsoft will be deprecating virtual smart cards in the future but not date at this time.  Customers using Windows 10 and virutal smart cards should move to Windows Hello for Business.  Microsoft will publish the date early to ensure customers have adequate lead time to move to Windows Hello for Business.  Microsoft recommends new Windows 10 deployments to use Windows Hello for Business. Virtual smart card remain supported for Windows 7 and Windows 8.
+Windows Hello for Business is the modern, two-factor credential for Windows 10.  Microsoft will be deprecating virtual smart cards in the future but not date at this time.  Customers using Windows 10 and virtual smart cards should move to Windows Hello for Business.  Microsoft will publish the date early to ensure customers have adequate lead time to move to Windows Hello for Business.  Microsoft recommends new Windows 10 deployments to use Windows Hello for Business. Virtual smart card remain supported for Windows 7 and Windows 8.
 
 ## What about convenience PIN?
-Microsoft is committed to its vision of a <u>world without passwords.</u> We recognize the *convenience* proivded by convenience PIN, but it stills uses a password for authentication.  Microsoft recommends customers using Windows 10 and conveience PINs should move to Windows Hello for Business.  New Windows 10 deployments should deploy Windows Hello for Business and not convenience PINs.  Microsoft will be deprecating convenience PINs in the future and will publish the date early to ensure customers have adequate lead time to deploy Windows Hello for Business. 
+Microsoft is committed to its vision of a <u>world without passwords.</u> We recognize the *convenience* provided by convenience PIN, but it stills uses a password for authentication.  Microsoft recommends customers using Windows 10 and convenience PINs should move to Windows Hello for Business.  New Windows 10 deployments should deploy Windows Hello for Business and not convenience PINs.  Microsoft will be deprecating convenience PINs in the future and will publish the date early to ensure customers have adequate lead time to deploy Windows Hello for Business. 
 
 
 ## Can I deploy Windows Hello for Business using System Center Configuration Manager?
@@ -27,20 +27,20 @@ Windows Hello for Business deployments using System Center Configuration Manager
 
 Watch Principal Program Manager Karanbir Singh's Ignite 2017 presentation **Microsoft's guide for going password-less**
 
-[Microsoft's password-less strategy](hello-videos.md#Microsoftspasswordlessstrategy)
+[Microsoft's password-less strategy](hello-videos.md#Microsofts-passwordless-strategy)
 
 ## What is the user experience for Windows Hello for Business?
 The user experience for Windows Hello for Business occurs after user sign-in, after you deploy Windows Hello for Business policy settings to your environment.
 
-[Windows Hello for Business user enrollment experience](hello-videos.md#WindowsHelloforBusinessuserenrollmentexperience)
+[Windows Hello for Business user enrollment experience](hello-videos.md#Windows-Hello-for-Business-user-enrollment-experience)
 
 ## What happens when my user forgets their PIN?
 
 If the user can sign-in with a password, they can reset their PIN by clicking the "I forgot my PIN" link in settings.  Beginning with the Fall Creators Update, users can reset their PIN above the lock screen by clicking the "I forgot my PIN" link on the PIN credential provider.
 
-[Windows Hello for Business forgotten PIN user experience](hello-videos.md#WindowsHelloforBusinessforgottenPINuserexperience)
+[Windows Hello for Business forgotten PIN user experience](hello-videos.md#Windows-Hello-for-Business-forgotten-PIN-user-experience)
 
-For on-premises deployments, devices must be well connected to their on-premises network (domain controllers and/or certificate authority) to reset their PINs.  Hybrid customers can onboard their Azure tenant to use the Windows Hello for Business PIN reset service to reset their PINs without access to their corporate network.
+For on-premises deployments, devices must be well connected to their on-premises network (domain controllers and/or certificate authority) to reset their PINs.  Hybrid customers can on-board their Azure tenant to use the Windows Hello for Business PIN reset service to reset their PINs without access to their corporate network.
 
 ## Do I need Windows Server 2016 domain controllers?
 There are many deployment options from which to choose. Some of those options require an adequate number of Windows Server 2016 domain controllers in the site where you have deployed Windows Hello for Business. There are other deployment options that use existing Windows Server 2008 R2 or later domain controllers. Choose the deployment option that best suits your environment
@@ -49,10 +49,10 @@ There are many deployment options from which to choose. Some of those options re
 Windows Hello for Business is two-factor authentication based the observed authentication factors of: something you have, something you know, and something part of you.  Windows Hello for Business incorporates two of these factors: something you have (the user's private key protected by the device's security module) and something you know (your PIN). With the proper hardware, you can enhance the user experience by introducing biometrics. Using biometrics, you can replace the "something you know" authentication factor with the "something that is part of you" factor, with the assurances that users can fall back to the "something you know factor".
 
 ## Can I use PIN and biometrics to unlock my device?
-Starting in Windows 10, version 1709, you can use multifactor unlock to require the user to provide an additional factor to unlock the device.  Authentication remains two-factor, but another factor is required before Windows allows the user to reach the desktop.  Read more about [multifactor unlock](hello-features.md#multifactor-unlock) in [Windows Hello for Business Features](hello-features.md)
+Starting in Windows 10, version 1709, you can use multi-factor unlock to require the user to provide an additional factor to unlock the device.  Authentication remains two-factor, but another factor is required before Windows allows the user to reach the desktop.  Read more about [multifactor unlock](feature-multifactor-unlock.md).
 
 ## What is the difference between Windows Hello and Windows Hello for Business
-Windows Hello represents the biometric framework provided in Windows 10.  Windows Hello enables users to use biometrics to sign into their devices by securely storing their username and password and releasing it for authentication when the user successfully identifies themselves using biometrics.  Windows Hello for Business uses asymmetric keys protected by the device's security module that requires a user gesture (PIN or biometrics) to authenticate.
+Windows Hello represents the biometric framework provided in Windows 10.  Windows Hello enables users to use biometrics to sign into their devices by securely storing their user name and password and releasing it for authentication when the user successfully identifies themselves using biometrics.  Windows Hello for Business uses asymmetric keys protected by the device's security module that requires a user gesture (PIN or biometrics) to authenticate.
 
 ## I have extended Active Directory to Azure Active Directory.  Can I use the on-prem deployment model?
 No. If your organization is federated or using online services, such as Office 365 or OneDrive, then you must use a hybrid deployment model.  On-premises deployments are exclusive to organization who need more time before moving to the cloud and exclusively use Active Directory.
@@ -77,7 +77,7 @@ Beginning with Windows 10, Fall Creators Update, Windows Hello for Business used
 The smart card emulation feature of Windows Hello for Business verifies the PIN and then discards the PIN in exchange for a ticket.  The process does not receive the PIN, but rather the ticket that grants them private key operations.  Windows 10 does not provide any Group Policy settings to adjust this caching.
 
 ## Can I disable the PIN while using Windows Hello for Business?
-No. The movement away from passwords is accomplished by gradually reducing the use of the password.  In the occurence where you cannot authenticate with biometrics, you need a fall back mechansim that is not a password.  The PIN is the fall back mechansim.  Disabling or hiding the PIN credential provider disabled the use of biometrics.
+No. The movement away from passwords is accomplished by gradually reducing the use of the password.  In the occurrence where you cannot authenticate with biometrics, you need a fall back mechanism that is not a password.  The PIN is the fall back mechanism.  Disabling or hiding the PIN credential provider disabled the use of biometrics.
 
 ## Does Windows Hello for Business work with third party federation servers?
 Windows Hello for Business can work with any third-party federation servers that support the protocols used during provisioning experience.  Interested third-parties can inquiry at [whfbfeedback@microsoft.com](mailto:whfbfeedback@microsoft.com?subject=collaboration)
@@ -87,8 +87,8 @@ Windows Hello for Business can work with any third-party federation servers that
 | [[MS-KPP]: Key Provisioning Protocol](https://msdn.microsoft.com/en-us/library/mt739755.aspx) | Specifies the Key Provisioning Protocol, which defines a mechanism for a client to register a set of cryptographic keys on a user and device pair. |
 | [[MS-OAPX]: OAuth 2.0 Protocol Extensions](https://msdn.microsoft.com/en-us/library/dn392779.aspx)| Specifies the OAuth 2.0 Protocol Extensions, which are used to extend the OAuth 2.0 Authorization Framework. These extensions enable authorization features such as resource specification, request identifiers, and login hints. |  
 | [[MS-OAPXBC]: OAuth 2.0 Protocol Extensions for Broker Clients](https://msdn.microsoft.com/en-us/library/mt590278.aspx) | Specifies the OAuth 2.0 Protocol Extensions for Broker Clients, extensions to RFC6749 (The OAuth 2.0 Authorization Framework) that allow a broker client to obtain access tokens on behalf of calling clients. |
-| [[MS-OIDCE]: OpenID Connect 1.0 Protocol Extensions](https://msdn.microsoft.com/en-us/library/mt766592.aspx) | Specifies the OpenID Connect 1.0 Protocol Extensions. These extensions define additional claims to carry information about the end user, including the user principal name, a locally unique identifier, a time for password expiration, and a URL for password change. These extensions also define additional provider metadata that enable the discovery of the issuer of access tokens and give additional information about provider capabilities. |
+| [[MS-OIDCE]: OpenID Connect 1.0 Protocol Extensions](https://msdn.microsoft.com/en-us/library/mt766592.aspx) | Specifies the OpenID Connect 1.0 Protocol Extensions. These extensions define additional claims to carry information about the end user, including the user principal name, a locally unique identifier, a time for password expiration, and a URL for password change. These extensions also define additional provider meta-data that enable the discovery of the issuer of access tokens and give additional information about provider capabilities. |
 
 ## Does Windows Hello for Business work with Mac and Linux clients?
-Windows Hello for Business is a feature of Windows 10. At this time, Microsoft is not developing clients for other platforms.  However, Microsoft is open to third parties who are interested in moving these platforms away from passwords.  Interested third parties can inqury at [whfbfeedback@microsoft.com](mailto:whfbfeedback@microsoft.com?subject=collaboration)
+Windows Hello for Business is a feature of Windows 10. At this time, Microsoft is not developing clients for other platforms.  However, Microsoft is open to third parties who are interested in moving these platforms away from passwords.  Interested third parties can get more information by emailing [whfbfeedback@microsoft.com](mailto:whfbfeedback@microsoft.com?subject=collaboration)
 

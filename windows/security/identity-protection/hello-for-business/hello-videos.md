@@ -14,7 +14,7 @@ ms.date: 05/05/2018
 #Windows Hello for Business Videos
 
 ## Overview of Windows Hello for Business and Features
-Watch Pieter Wigleven explain Windows Hello for Business, Multifactor Unlock, and Dyanmic Lock
+Watch Pieter Wigleven explain Windows Hello for Business, Multi-factor Unlock, and Dynamic Lock
 > [!VIDEO https://www.youtube.com/embed/G-GJuDWbBE8]
 
 ## Microsoft's passwordless strategy
@@ -37,4 +37,4 @@ If the user can sign-in with a password, they can reset their PIN by clicking th
 
 > [!VIDEO https://www.youtube.com/embed/KcVTq8lTlkI]
 
-For on-premises deployments, devices must be well connected to their on-premises network (domain controllers and/or certificate authority) to reset their PINs.  Hybrid customers can onboard their Azure tenant to use the Windows Hello for Business PIN reset service to reset their PINs without access to their corporate network.
+For on-premises deployments, devices must be well connected to their on-premises network (domain controllers and/or certificate authority) to reset their PINs.  Hybrid customers can on-board their Azure tenant to use the Windows Hello for Business PIN reset service to reset their PINs without access to their corporate network.
