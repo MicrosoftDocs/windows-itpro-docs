@@ -33,7 +33,7 @@ In Windows Defender ATP, you can create machine groups and use them to:
 - Configure different auto-remediation settings for different sets of machines
 
 As part of the process of creating a machine group, you'll:
-- Set the automated remediation level for that group
+- Set the automated remediation level for that group. For more information on remediation levels, see [Use Automated investigation to investigate and remediate threats](automated-investigations-windows-defender-advanced-threat-protection.md).
 - Define a matching rule based on the machine name, domain, tags, and OS platform to determine which machines belong to the group. If a machine is also matched to other groups, it is added only to the highest ranked machine group.
 - Determine access to machine group
 - Rank the machine group relative to other groups after it is created 
@@ -51,16 +51,8 @@ As part of the process of creating a machine group, you'll:
 3.	Set the machine group details, configure an association rule, preview the results, then assign the group to an Azure user group:
 
 	 - **Name**
-
 	 - **Remediation level for automated investigations**
-	  - **No remediation**
-	  - **Require approval (all folders)**
-	  - **Require approval (non-temp folders)**
-	  - **Require approval (core folders)**
-	  - **Fully automated**
-
-	 - **Description**
-
+     - **Description**
 	 - **Matching rule** – you can apply the rule based on machine name, domain, tag, or OS version. 
 
 		>[!TIP]
