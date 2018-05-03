@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 localizationpriority: high
-ms.date: 04/24/2018
+ms.date: 05/03/2018
 ---
 
 # Onboard servers to the Windows Defender ATP service
@@ -82,7 +82,7 @@ Once completed, you should see onboarded servers in the portal within an hour.
 |    winatp-gw-neu.microsoft.com    |    443    |
 |    winatp-gw-weu.microsoft.com    |    443    |
 
-## Onboard Windows Server 2012 R2 and Windows Server 2016
+## Onboard Windows Server, version 1803
 
 You’ll be able to onboard in the same method available for Windows 10 client machines. For more information, see  [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md). Support for Windows Server, version 1803 provides deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well. 
 
