@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
-author: mtniehaus
+author: greg-lindsay
 ms.date: 10/16/2017
 ---
 

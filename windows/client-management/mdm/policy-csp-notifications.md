@@ -6,13 +6,10 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/15/2018
+ms.date: 04/16/2018
 ---
 
 # Policy CSP - Notifications
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -80,29 +77,28 @@ If you enable this policy setting, notifications can still be raised by applicat
 If you disable or do not configure this policy setting, the client computer will connect to WNS at user login and applications will be allowed to use periodic (polling) notifications.
 
 No reboots or service restarts are required for this policy setting to take effect.
+
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Turn off notifications network usage*
 -   GP name: *NoCloudNotification*
+-   GP path: *Start Menu and Taskbar/Notifications*
 -   GP ADMX file name: *WPN.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 This setting supports a range of values between 0 and 1.
 
-
 <!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
 <!--Validation-->
-
-<!--/Validation-->
 Validation:  
 1. Enable policy
 2. Reboot machine
 3. Ensure that you can't receive a notification from Facebook app while FB app isn't running
+
+<!--/Validation-->
+
 <!--/Policy-->
 
 <hr/>
@@ -191,6 +187,7 @@ The following list shows the supported values:
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td></td>
 	<td></td>
+</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -211,22 +208,20 @@ If you enable this policy setting, applications and system features will not be 
 If you disable or do not configure this policy setting, tile and badge notifications are enabled and can be turned off by the administrator or user.
 
 No reboots or service restarts are required for this policy setting to take effect.
+
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Turn off tile notifications*
 -   GP name: *NoTileNotification*
+-   GP path: *Start Menu and Taskbar/Notifications*
 -   GP ADMX file name: *WPN.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 This setting supports a range of values between 0 and 1.
 
-
 <!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
 <!--Validation-->
 Validation:  
 1. Enable policy

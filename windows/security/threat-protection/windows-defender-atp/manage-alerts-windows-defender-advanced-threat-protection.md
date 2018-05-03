@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.date: 04/24/2018
 ---
 
 # Manage Windows Defender Advanced Threat Protection alerts
@@ -23,7 +23,7 @@ ms.date: 10/16/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
 
@@ -87,20 +87,20 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
 
     ![Image of alert status](images/atp-create-suppression-rule.png)
 
-3. Choose the context for suppressing the alert.
+3. Enter an alert title then select an indicator of compromise from the drop-down list.
   
     ![Image of alert status](images/atp-new-suppression-rule.png)
 
   > [!NOTE]
   > You cannot create a custom or blank suppression rule. You must start from an existing alert.
 
-4. Specify the conditions for when the rule is applied:
-    - Alert title
-    - Indicator of compromise (IOC)
-    - Suppression conditions
+4. Specify the suppression conditions by entering values for any of the following:
+    - Sha1
+    - File name
+    - Folder path
 
     > [!NOTE]
-    > The SHA1 of the alert cannot be modified, however you can clear the SHA1 to remove it from the suppression conditions.
+    > The SHA1 of the alert cannot be modified, however you can clear the SHA1 to remove it from the suppression conditions by removing the deselecting the checkbox.
     
 5. Specify the action and scope on the alert. <br>
    You can automatically resolve an alert or hide it from the portal. Alerts that are automatically resolved will appear in the resolved section of the alerts queue. Alerts that are marked as hidden will be suppressed from the entire system, both on the machine's associated alerts and from the dashboard. You can also specify to suppress the alert on the machine only or the whole organization.
@@ -110,20 +110,18 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
 
 ### View the list of suppression rules
 
-1. Click **Alerts queue** > **Suppression rules**.
+1. In the navigation pane, select **Settings** > **Rules**  > **Alert suppression**.
 
 2. The list of suppression rules shows all the rules that users in your organization have created.
 
-You can select rules to open up the **Alert management** pane. From there, you can activate previously disabled rules.
+For more information on managing suppression rules, see [Manage suppression rules](manage-suppression-rules-windows-defender-advanced-threat-protection.md)
 
 ## Related topics
-- [View the Windows Defender Advanced Threat Protection Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- [Manage suppression rules](manage-suppression-rules-windows-defender-advanced-threat-protection.md)
 - [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
 - [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
 - [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
+- [Investigate machines in the Windows Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
 - [Investigate an IP address associated with a Windows Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
 - [Investigate a domain associated with a Windows Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
-- [View and organize the Windows Defender ATP Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)
-- [Investigate machines in the Windows Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
 - [Investigate a user account in Windows Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)
-- [Take response actions in Windows Defender ATP](response-actions-windows-defender-advanced-threat-protection.md)

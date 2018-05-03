@@ -89,11 +89,11 @@ When you have the Start layout that you want your users to see, use the [Export-
 
 **To export the Start layout to an .xml file**
 
-1.  From Start, open **Windows PowerShell**.
+1.  Right Click Start, select **Windows PowerShell (Admin)**.
 
-2.  At the Windows PowerShell command prompt, enter the following command:
+2.  At the Administrator: Windows PowerShell command prompt, enter the following command:
 
-    `export-startlayout –path <path><file name>.xml `
+    `Export-StartLayout –path <path><file name>.xml `
 
     In the previous command, `-path` is a required parameter that specifies the path and file name for the export file. You can specify a local path or a UNC path (for example, \\\\FileServer01\\StartLayouts\\StartLayoutMarketing.xml).
 

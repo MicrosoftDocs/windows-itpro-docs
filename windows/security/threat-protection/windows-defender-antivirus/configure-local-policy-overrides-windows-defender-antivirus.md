@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 08/26/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 04/30/2018
 ---
 
 # Prevent or allow users to locally modify Windows Defender AV policy settings
@@ -45,9 +45,7 @@ To configure these settings:
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
-3. In the **Group Policy Management Editor** go to **Computer configuration**.
-
-4. Click **Policies** then **Administrative templates**.
+3. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
 5. Expand the tree to **Windows components > Windows Defender Antivirus** and then the **Location** specified in the table below.
 
@@ -89,14 +87,14 @@ You can disable this setting to ensure that only globally defined lists (such as
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
-
-4.  Click **Policies** then **Administrative templates**.
+3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
 5.  Expand the tree to **Windows components > Windows Defender Antivirus**.
 
 6. Double-click the **Configure local administrator merge behavior for lists** setting and set the option to **Enabled**. Click **OK**. 
 
+> [!NOTE]
+> If you disable local list merging, it will override Controlled folder access settings in Windows Defender Exploit Guard. It also overrides any protected folders or allowed apps set by the local administrator. For more information about Controlled folder access settings, see [Enable Controlled folder access](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard).
 
 
 ## Related topics

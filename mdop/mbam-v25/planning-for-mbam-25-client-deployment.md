@@ -59,10 +59,6 @@ The TPM protector option requires the administrator to accept the BIOS prompt to
 
 MBAM supports BitLocker on Encrypted Hard Drives that meet TCG specification requirements for Opal as well as IEEE 1667 standards. When BitLocker is enabled on these devices, it will generate keys and perform management functions on the encrypted drive. See [Encrypted Hard Drive](https://technet.microsoft.com/library/hh831627.aspx) for more information.
 
-## Got a suggestion for MBAM?
-
-
-Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 ## Related topics
 
@@ -74,7 +70,9 @@ Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-micros
  
 
  
-
+## Got a suggestion for MBAM?
+- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 
 

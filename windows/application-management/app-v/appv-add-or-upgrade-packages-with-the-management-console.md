@@ -27,7 +27,7 @@ You can the following procedure to add or upgrade a package to the App-V Managem
 
 2.  To specify the package you want to add, click **Add or Upgrade Packages**.
 
-3.  Type the full path to the package that you want to add. Use the UNC or HTTP path format, for example **\\\\servername\\sharename\\foldername\\packagename.appv** or **http://server.1234/file.appv**, and then click **Add**.
+3.  Type the full path to the package that you want to add. Use the UNC or HTTP path format, for example **\\\\servername\\sharename\\foldername\\packagename.appv** or **https://server.1234/file.appv**, and then click **Add**.
 
     **Important**  
     You must select a package with the **.appv** file name extension.
@@ -42,7 +42,7 @@ You can the following procedure to add or upgrade a package to the App-V Managem
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

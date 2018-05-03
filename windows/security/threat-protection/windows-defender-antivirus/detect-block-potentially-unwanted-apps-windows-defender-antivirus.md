@@ -9,8 +9,8 @@ ms.mktglfcycl: detect
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
+author: andreabichsel
+ms.author: v-anbic
 ms.date: 11/20/2017
 ---
 

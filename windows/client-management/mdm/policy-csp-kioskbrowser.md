@@ -6,13 +6,11 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 04/06/2018
+ms.date: 04/11/2018
 ---
 
 # Policy CSP - KioskBrowser
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 These policies currently only apply to Kiosk Browser app. Kiosk Browser is a Microsoft Store app, added in Windows 10 version 1803, that provides IT a way to customize the end user’s browsing experience to fulfill kiosk, signage, and shared device scenarios. Application developers can also create their own kiosk browser and read these policies using [NamedPolicy.GetPolicyFromPath(String, String) Method](https://docs.microsoft.com/en-us/uwp/api/windows.management.policies.namedpolicy.getpolicyfrompath#Windows_Management_Policies_NamedPolicy_GetPolicyFromPath_System_String_System_String_). 
 
@@ -31,6 +29,9 @@ These policies currently only apply to Kiosk Browser app. Kiosk Browser is a Mic
   </dd>
   <dd>
     <a href="#kioskbrowser-defaulturl">KioskBrowser/DefaultURL</a>
+  </dd>
+  <dd>
+    <a href="#kioskbrowser-enableendsessionbutton">KioskBrowser/EnableEndSessionButton</a>
   </dd>
   <dd>
     <a href="#kioskbrowser-enablehomebutton">KioskBrowser/EnableHomeButton</a>
@@ -76,7 +77,6 @@ These policies currently only apply to Kiosk Browser app. Kiosk Browser is a Mic
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * User
 > * Device
 
 <hr/>
@@ -123,7 +123,6 @@ Added in Windows 10, version 1803. List of exceptions to the blocked website URL
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * User
 > * Device
 
 <hr/>
@@ -170,7 +169,6 @@ Added in Windows 10, version 1803. List of blocked website URLs (with wildcard s
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * User
 > * Device
 
 <hr/>
@@ -183,6 +181,58 @@ Added in Windows 10, version 1803. Configures the default URL kiosk browsers to 
 > This policy only applies to the Kiosk Browser app in Microsoft Store.
 
 <!--/Description-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="kioskbrowser-enableendsessionbutton"></a>**KioskBrowser/EnableEndSessionButton**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Shows the Kiosk Browser's end session button. When the policy is enabled, the Kiosk Browser app shows a button to reset the browser. When the user clicks on the button, the app will prompt the user for confirmation to end the session. When the user confirms, the Kiosk broswser will clear all browsing data (cache, cookies, etc.) and navigate back to the default URL.
+
+<!--/Description-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -217,7 +267,6 @@ Added in Windows 10, version 1803. Configures the default URL kiosk browsers to 
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * User
 > * Device
 
 <hr/>
@@ -264,7 +313,6 @@ Added in Windows 10, version 1803. Enable/disable kiosk browser's home button.
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * User
 > * Device
 
 <hr/>
@@ -311,7 +359,6 @@ Added in Windows 10, version 1803. Enable/disable kiosk browser's navigation but
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * User
 > * Device
 
 <hr/>
