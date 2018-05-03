@@ -34,7 +34,10 @@ You can configure Windows Defender ATP to send email notifications to specified 
 
 You can set the alert severity levels that trigger notifications. You can also add or remove recipients of the email notification. New recipients get notified about alerts encountered after they are added. For more information about alerts, see [View and organize the Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md).
 
+If you're using role-based access control (RBAC), recipients will only receive notifications based on the machine group that they are a part of. 
+
 The email notification includes basic information about the alert and a link to the portal where you can do further investigation.
+
 
 ## Create rules for alert notifications
 You can create rules that determine the machines and alert severities to send email notifications for and the notification recipients.
