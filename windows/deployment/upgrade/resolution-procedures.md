@@ -675,6 +675,84 @@ Alternatively, re-create installation media the [Media Creation Tool](https://ww
 
 </table>
 
+## Modern setup errors
+
+Also see the following sequential list of modern setup (mosetup) error codes with a brief description of the cause.
+
+| Result code | Message  | Description |
+| --- | --- | --- |
+| 0XC1900100 | MOSETUP_E_VERSION_MISMATCH | An unexpected version of Setup Platform binaries was encountered. Please verify the package contents. | 
+| 0XC1900101 | MOSETUP_E_SETUP_PLATFORM | The Setup Platform has encountered an unspecified error. | 
+| 0XC1900102 | MOSETUP_E_SHUTDOWN_BLOCK | Unable to create or destroy the shutdown block message. | 
+| 0XC1900103 | MOSETUP_E_COMPAT_TIMEOUT | The compatibility issues were not resolved within the required time limit. | 
+| 0XC1900104 | MOSETUP_E_PROCESS_TIMEOUT | The installation process did not complete within the required time limit. | 
+| 0XC1900105 | MOSETUP_E_TEST_MODE | The installation process is being used in a test environment. | 
+| 0XC1900106 | MOSETUP_E_TERMINATE_PROCESS | The installation process was terminated. | 
+| 0XC1900107 | MOSETUP_E_CLEANUP_PENDING | A cleanup operation from a previous installation attempt is still pending. A system reboot is required. | 
+| 0XC1900108 | MOSETUP_E_REPORTING | An error has occured and the result value must be consolidated for telemetry purposes. | 
+| 0XC1900109 | MOSETUP_E_COMPAT_TERMINATE | The installation process was terminated during the actionable compatibility phase. | 
+| 0XC190010a | MOSETUP_E_UNKNOWN_CMD_LINE | The installation process was launched with an unknown command line argument. | 
+| 0XC190010b | MOSETUP_E_INSTALL_IMAGE_NOT_FOUND | The installation image was not found. | 
+| 0XC190010c | MOSETUP_E_AUTOMATION_INVALID | The provided automation information was invalid. | 
+| 0XC190010d | MOSETUP_E_INVALID_CMD_LINE | The installation process was launched with an invalid command line argument. | 
+| 0XC190010e | MOSETUP_E_EULA_ACCEPT_REQUIRED | The installation process requires that the user accept the license agreement. | 
+| 0XC1900110 | MOSETUP_E_EULA_CANCEL | The user has chosen to cancel for license agreement. | 
+| 0XC1900111 | MOSETUP_E_ADVERTISE_CANCEL | The user has chosen to cancel for advertisement. | 
+| 0XC1900112 | MOSETUP_E_TARGET_DRIVE_NOT_FOUND | Could not find a target drive letter.  | 
+| 0XC1900113 | MOSETUP_E_EULA_DECLINED | The user has declined the license terms. | 
+| 0XC190011e | MOSETUP_E_FLIGHTING_BVT | The installation process has been halted for testing purposes. | 
+| 0XC190011f | MOSETUP_E_PROCESS_CRASHED | The installation process crashed. | 
+| 0XC1900120 | MOSETUP_E_EULA_TIMEOUT | The user has not accepted Eula within the required time limit. | 
+| 0XC1900121 | MOSETUP_E_ADVERTISE_TIMEOUT | The user has not accepted Advertisement within the required time limit. | 
+| 0XC1900122 | MOSETUP_E_DOWNLOADDISKSPACE_TIMEOUT | The download diskspace issues were not resolved within the required time limit. | 
+| 0XC1900123 | MOSETUP_E_INSTALLDISKSPACE_TIMEOUT | The install diskspace issues were not resolved within the required time limit. | 
+| 0XC1900124 | MOSETUP_E_COMPAT_SYSREQ_TIMEOUT | The minimum requirements compatibility issues were not resolved within the required time limit. | 
+| 0XC1900125 | MOSETUP_E_COMPAT_DOWNLOADREQ_TIMEOUT | The compatibility issues for download were not resolved within the required time limit. | 
+| 0XC1900126 | MOSETUP_E_GATHER_OS_STATE_SIGNATURE | The GatherOsState executable has invalid signature. | 
+| 0XC1900127 | MOSETUP_E_UNINSTALL_ALLOWED_ABORT | The user has chosen to abort Setup to keep Uninstall option active. | 
+| 0XC1900128 | MOSETUP_E_MISSING_TASK | The install cannot continue because a required task is missing. | 
+| 0XC1900129 | MOSETUP_E_UPDATEMEDIA_REQUESTED | A more up-to-date version of setup will be launched to continue installation
+| 0XC190012f | MOSETUP_E_FINALIZE_ALREADY_REQUESTED | The install cannot continue because a finalize operation was already requested. | 
+| 0XC1900130 | MOSETUP_E_INSTALL_HASH_MISSING | The install cannot continue because the instance hash was not found. | 
+| 0XC1900131 | MOSETUP_E_INSTALL_HASH_MISMATCH | The install cannot continue because the instance hash does not match. | 
+| 0XC19001df | MOSETUP_E_DISK_FULL | The install cannot continue because the system is out of disk space. | 
+| 0XC19001e0 | MOSETUP_E_GATHER_OS_STATE_FAILED | The GatherOsState executable has failed to execute. | 
+| 0XC19001e1 | MOSETUP_E_PROCESS_SUSPENDED | The installation process was suspended. | 
+| 0XC19001e2 | MOSETUP_E_PREINSTALL_SCRIPT_FAILED | A preinstall script failed to execute or returned an error. | 
+| 0XC19001e3 | MOSETUP_E_PRECOMMIT_SCRIPT_FAILED | A precommit script failed to execute or returned an error. | 
+| 0XC19001e4 | MOSETUP_E_FAILURE_SCRIPT_FAILED | A failure script failed to execute or returned an error. | 
+| 0XC19001e5 | MOSETUP_E_SCRIPT_TIMEOUT | A script exceeded the timeout limit. | 
+| 0XC1900200 | MOSETUP_E_COMPAT_SYSREQ_BLOCK | The system does not pass the minimum requirements to install the update. | 
+| 0XC1900201 | MOSETUP_E_COMPAT_SYSREQ_CANCEL | The user has chosen to cancel because the system does not pass the minimum requirements to install the update. | 
+| 0XC1900202 | MOSETUP_E_COMPAT_DOWNLOADREQ_BLOCK | The system does not pass the minimum requirements to download the update. | 
+| 0XC1900203 | MOSETUP_E_COMPAT_DOWNLOADREQ_CANCEL | The user has chosen to cancel because the system does not pass the minimum requirements to download the update. | 
+| 0XC1900204 | MOSETUP_E_COMPAT_MIGCHOICE_BLOCK | The system does not pass the requirements for desired migration choice. | 
+| 0XC1900205 | MOSETUP_E_COMPAT_MIGCHOICE_CANCEL | The user has chosen to cancel because the system does not pass the requirements for desired migration choice. | 
+| 0XC1900206 | MOSETUP_E_COMPAT_DEVICEREQ_BLOCK | The system does not pass the device scan to install the update. | 
+| 0XC1900207 | MOSETUP_E_COMPAT_DEVICEREQ_CANCEL | The user has chosen to cancel because the system does not pass the device scan to install the update. | 
+| 0XC1900208 | MOSETUP_E_COMPAT_INSTALLREQ_BLOCK | The system does not pass the compat scan to install the update. | 
+| 0XC1900209 | MOSETUP_E_COMPAT_INSTALLREQ_CANCEL | The user has chosen to cancel because the system does not pass the compat scan to install the update. | 
+| 0XC190020a | MOSETUP_E_COMPAT_RECOVERYREQ_BLOCK | The system does not pass the minimum requirements to recover Windows. | 
+| 0XC190020b | MOSETUP_E_COMPAT_RECOVERYREQ_CANCEL | The user has chosen to cancel because the system does not pass the minimum requirements to recover Windows. | 
+| 0XC190020c | MOSETUP_E_DOWNLOADDISKSPACE_BLOCK | The system does not pass the diskspace requirements to download the payload. | 
+| 0XC190020d | MOSETUP_E_DOWNLOADDISKSPACE_CANCEL | The user has chosen to cancel as the device does not have enough disk space to download. | 
+| 0XC190020e | MOSETUP_E_INSTALLDISKSPACE_BLOCK | The system does not pass the diskspace requirements to install the payload. | 
+| 0XC190020f | MOSETUP_E_INSTALLDISKSPACE_CANCEL | The user has chosen to cancel as the device does not have enough disk space to install. | 
+| 0XC1900210 | MOSETUP_E_COMPAT_SCANONLY | The user has use the setup.exe command line to do scanonly, not to install the OS. | 
+| 0XC1900211 | MOSETUP_E_DOWNLOAD_UNPACK_DISKSPACE_BLOCK | The system does not pass the disk space requirements to download and unpack media. | 
+| 0XC1900212 | MOSETUP_E_DOWNLOAD_UNPACK_DISKSPACE_MULTIARCH_BLOCK | The system does not pass the disk space requirements to download and unpack multi-architecture media. | 
+| 0XC1900213 | MOSETUP_E_NO_OFFER_FOUND | There was no offer found that matches the required criteria. | 
+| 0XC1900214 | MOSETUP_E_UNSUPPORTED_VERSION | This version of the tool is not supported. | 
+| 0XC1900215 | MOSETUP_E_NO_MATCHING_INSTALL_IMAGE | Could not find an install image for this system. | 
+| 0XC1900216 | MOSETUP_E_ROLLBACK_PENDING | Found pending OS rollback operation. | 
+| 0XC1900220 | MOSETUP_E_COMPAT_REPORT_NOT_DISPLAYED | The compatibility report cannot be displayed due to a missing system component. | 
+| 0XC1900400 | MOSETUP_E_UA_VERSION_MISMATCH | An unexpected version of Update Agent client was encountered. | 
+| 0XC1900401 | MOSETUP_E_UA_NO_PACKAGES_TO_DOWNLOAD | No packages to be downloaded. | 
+| 0XC1900402 | MOSETUP_E_UA_UPDATE_CANNOT_BE_MERGED | No packages to be downloaded. | 
+| 0XC1900403 | MOSETUP_E_UA_CORRUPT_PAYLOAD_FILES | Payload files were corrupt. | 
+| 0XC1900404 | MOSETUP_E_UA_BOX_NOT_FOUND | The installation executable was not found. | 
+| 0XC1900405 | MOSETUP_E_UA_BOX_CRASHED | The installation process terminated unexpectedly. | 
+
 ## Related topics
 
 [Windows 10 FAQ for IT professionals](https://technet.microsoft.com/en-us/windows/dn798755.aspx)
