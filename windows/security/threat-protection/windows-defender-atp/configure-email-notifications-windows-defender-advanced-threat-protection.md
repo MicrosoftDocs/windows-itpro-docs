@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/24/2018
+ms.date: 05/01/2018
 ---
 
 # Configure alert notifications in Windows Defender ATP
@@ -38,44 +38,30 @@ You can also add or remove recipients of the email notification. New recipients 
 
 The email notification includes basic information about the alert and a link to the portal where you can do further investigation.
 
-## Create rules for alert notifications
-You can create rules that determine the machines and alert severities to send email notifications for and the notification recipients.
+## Set up email notifications for alerts
+The email notifications feature is turned off by default. Turn it on to start receiving email notifications.
 
+1. On the navigation pane, select **Settings** > **Alert notifications**.
+2. Toggle the setting between **On** and **Off**.
+3.	Select the alert severity level that you’d like your recipients to receive:
+      - **High** – Select this level to send notifications for high-severity alerts.
+      - **Medium** – Select this level to send notifications for medium-severity alerts.
+      - **Low** - Select this level to send notifications for low-severity alerts.
+      - **Informational** - Select this level to send notification for alerts that might not be considered harmful but good to keep track of.
+4.	In **Email recipients to notify on new alerts**, type the email address then select the + sign.
+5.	Click **Save preferences** when you’ve completed adding all the recipients.
 
-1. In the navigation pane, select **Settings** > **General** > **Alert notifications**.
-
-2. Click **Add notification rule**.
-
-3.	Specify the General information:
-    - **Rule name**
-    - **Machines** - Choose whether to notify recipients for all alerts on all machines or on selected machine group. If you choose to only send on a selected machine group, make sure that the machine group has been created. For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md).
-    - **Alert severity** - Choose the alert severity level
-
-4. Click **Next**.
-	
-5. Enter the recipient's email address then click **Add recipient**. You can add multiple email addresses.
-
-6. Check that email recipients are able to receive the email notifications by selecting **Send test email**.
-
-7. Click **Save notification rule**.
+Check that email recipients are able to receive the email notifications by selecting **Send test email**. All recipients in the list will receive the test email.
 
 Here's an example email notification:
 
 ![Image of example email notification](images/atp-example-email-notification.png)
 
-## Edit a notification rule
-1. Select the notification rule you'd like to edit.
+## Remove email recipients
 
-2. Update the General and Recipient tab information.
+1. Select the trash bin icon beside the email address you’d like to remove.
+2. Click **Save preferences**.
 
-3. CLick **Save notification rule**.
-
-
-## Delete notification rule
-
-1. Select the notification rule you'd like to delete.
-
-2. Click **Delete**.
 
 ## Troubleshoot email notifications for alerts
 This section lists various issues that you may encounter when using email notifications for alerts.

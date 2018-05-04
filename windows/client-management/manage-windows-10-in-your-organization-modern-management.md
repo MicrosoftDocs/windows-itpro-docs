@@ -127,10 +127,10 @@ There are a variety of steps you can take to begin the process of modernizing de
 -   [Co-management for Windows 10 devices](https://docs.microsoft.com/en-us/sccm/core/clients/manage/co-management-overview)
 -   [Prepare Windows 10 devices for co-management](https://docs.microsoft.com/en-us/sccm/core/clients/manage/co-management-prepare)
 -   [Switch Configuration Manager workloads to Intune](https://docs.microsoft.com/en-us/sccm/core/clients/manage/co-management-switch-workloads)
--   [Co-management dashboard in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/clients/manage/co-management-dashboard)  
+-   [Co-management dashboard in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/clients/manage/co-management-dashboard)
 
- ## Related topics
+## Related topics
 
 -   [What is Intune?](https://docs.microsoft.com/en-us/intune/introduction-intune)
 -   [Windows 10 Policy CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider)
--   [Configuration service Providers](https://docs.microsoft.com/en-us/windows/client-management/mdm/configuration-service-provider-reference)
+-   [Windows 10 Configuration service Providers](https://docs.microsoft.com/en-us/windows/client-management/mdm/configuration-service-provider-reference)

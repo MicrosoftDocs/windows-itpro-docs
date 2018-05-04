@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: jsuther1974
-ms.date: 02/27/2018
+ms.date: 05/03/2018
 ---
 
 # Use signed policies to protect Windows Defender Application Control against tampering

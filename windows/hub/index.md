@@ -18,14 +18,15 @@ Find the latest how to and support content that IT pros need to evaluate, plan, 
 
 &nbsp;
 
-> [!video https://www.youtube.com/embed/LFiP73slWew?autoplay=false]
+> [!video https://www.microsoft.com/en-us/videoplayer/embed/RE21ada?autoplay=false]
 
-## Check out [what's new in Windows 10, version 1803](../whats-new/whats-new-windows-10-version-1803).
+
+## Check out [what's new in Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803).
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;">
-      <a href="/windows/whats-new/whats-new-windows-10-version-1709"> 
+      <a href="/windows/whats-new/whats-new-windows-10-version-1803"> 
         <img src="images/whatsnew.png" alt="Read what's new in Windows 10" title="Whats new" />
       <br/>What's New? </a><br>
     </td>

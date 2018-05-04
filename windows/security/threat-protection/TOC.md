@@ -4,12 +4,14 @@
 ## [The Windows Defender Security Center app](windows-defender-security-center/windows-defender-security-center.md)
 ### [Customize the Windows Defender Security Center app for your organization](windows-defender-security-center/wdsc-customize-contact-information.md)
 ### [Hide Windows Defender Security Center app notifications](windows-defender-security-center/wdsc-hide-notifications.md)
+### [Manage Windows Defender Security Center in Windows 10 in S mode](windows-defender-security-center\wdsc-windows-10-in-s-mode.md)
 ### [Virus and threat protection](windows-defender-security-center/wdsc-virus-threat-protection.md)
-### [Device performance and health](windows-defender-security-center/wdsc-device-performance-health.md)
-### [Firewall and network protection](windows-defender-security-center/wdsc-firewall-network-protection.md)
-### [App and browser control](windows-defender-security-center/wdsc-app-browser-control.md)
-### [Family options](windows-defender-security-center/wdsc-family-options.md)
-
+### [Account protection](windows-defender-security-center\wdsc-account-protection.md)
+### [Firewall and network protection](windows-defender-security-center\wdsc-firewall-network-protection.md)
+### [App and browser control](windows-defender-security-center\wdsc-app-browser-control.md)
+### [Device security](windows-defender-security-center\wdsc-device-security.md)
+### [Device performance and health](windows-defender-security-center\wdsc-device-performance-health.md)
+### [Family options](windows-defender-security-center\wdsc-family-options.md)
 
 
 
@@ -92,6 +94,9 @@
 #### [Query data using Advanced hunting](windows-defender-atp\advanced-hunting-windows-defender-advanced-threat-protection.md)
 ##### [Advanced hunting reference](windows-defender-atp\advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
 ##### [Advanced hunting query language best practices](windows-defender-atp\advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
+
+
+### [Protect users, data, and devices with conditional access](windows-defender-atp\conditional-access-windows-defender-advanced-threat-protection.md)
 
 ###API and SIEM support
 #### [Pull alerts to your SIEM tools](windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection.md)
@@ -189,7 +194,7 @@
 ##### [Enable and create Power BI reports using Windows Defender ATP data](windows-defender-atp\powerbi-reports-windows-defender-advanced-threat-protection.md)
 ##### [Enable Secure score security controls](windows-defender-atp\enable-secure-score-windows-defender-advanced-threat-protection.md)
 ##### [Configure advanced features](windows-defender-atp\advanced-features-windows-defender-advanced-threat-protection.md)
-##### [Protect data with conditional access](windows-defender-atp\conditional-access-windows-defender-advanced-threat-protection.md)
+
 
 ####Permissions
 ##### [Manage portal access using RBAC](windows-defender-atp\rbac-windows-defender-advanced-threat-protection.md)

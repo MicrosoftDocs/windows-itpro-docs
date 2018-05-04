@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: eross-msft
+author: coreyp-at-msft
 ms.localizationpriority: medium
 ms.date: 09/11/2017
 ---
@@ -120,7 +120,7 @@ WIP currently addresses these enterprise scenarios:
 
 - Your employees won't have their work otherwise interrupted while switching between personal and enterprise apps while the enterprise policies are in place. Switching environments or signing in multiple times isn’t required.
 
-### WIP-protection modes
+### <a href="" id="bkmk-modes"></a>WIP-protection modes
 Enterprise data is automatically encrypted after it’s loaded on a device from an enterprise source or if an employee marks the data as corporate. Then, when the enterprise data is written to disk, WIP uses the Windows-provided Encrypting File System (EFS) to protect it and associate it with your enterprise identity.
 
 Your WIP policy includes a list of trusted apps that are allowed to access and process corporate data. This list of apps is implemented through the [AppLocker](/windows/device-security/applocker/applocker-overview) functionality, controlling what apps are allowed to run and letting the Windows operating system know that the apps can edit corporate data. Apps included on this list don’t have to be modified to open corporate data because their presence on the list allows Windows to determine whether to grant them access. However, new for Windows 10, app developers can use a new set of application programming interfaces (APIs) to create *enlightened* apps that can use and edit both enterprise and personal data. A huge benefit to working with enlightened apps is that dual-use apps, like Microsoft Word, can be used with less concern about encrypting personal data by mistake because the APIs allow the app to determine whether data is owned by the enterprise or if it’s personally owned.

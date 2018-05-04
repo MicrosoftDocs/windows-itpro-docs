@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.author: sagaudre
 author: brianlic-msft
-ms.date: 10/31/2017
+ms.date: 05/01/2018
 ---
 
 # Windows Security Baselines

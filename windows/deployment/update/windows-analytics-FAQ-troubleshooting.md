@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 04/05/2018
+ms.date: 05/02/2018
 ---
 
 # Frequently asked questions and troubleshooting Windows Analytics
@@ -23,7 +23,6 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 
 [Device Health crash data not appearing](#device-health-crash-data-not-appearing)
 
-[Upgrade Readiness reports outdated updates](#upgrade-readiness-reports-outdated-updates)
 
 [Upgrade Readiness shows many "Computers with outdated KB"](#upgrade-readiness-shows-many-computers-with-outdated-kb)
 
@@ -42,7 +41,7 @@ In Log Analytics, go to **Settings > Connected sources > Windows telemetry** and
 
 Even though devices can take 2-3 days after enrollment to show up due to latency in the system, you can now verify the status of your devices with a few hours of running the deployment script as described in [You can now check on the status of your computers within hours of running the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/05/12/wheres-my-data/) on the Windows Analytics blog.
 >[!NOTE]
-> If you generate the status report and get an error message saying "Sorry! We’re not recognizing your Commercial Id," please go to **Settings > Connected sources > Windows telemetry** and unsubscribe, wait a minute and then re-subscribe to Upgrade Readiness. This is a known issue and we are working on a fix.
+> If you generate the status report and get an error message saying "Sorry! We’re not recognizing your Commercial Id," go to **Settings > Connected sources > Windows telemetry** and unsubscribe, wait a minute and then re-subscribe to Upgrade Readiness.
  
 If devices are not showing up as expected, find a representative device and follow these steps to run the latest pilot version of the Upgrade Readiness deployment script on it to troubleshoot issues:
 
@@ -163,7 +162,7 @@ Also, on Windows 10 devices remember that IE site discovery requires data diagno
 Finally, Upgrade Readiness only collects IE site discovery data on devices that are not yet upgraded to the target operating system version specified in the Upgrade Readiness Overview blade. This is because Upgrade Readiness targets upgrade planning (for devices not yet upgraded).
 
 ### Device Names don't show up on Windows 10 devices
-Starting with the build currently available in the Windows Insider Program, the device name is no longer collected by default and requires a separate opt-in. For more information, see [Enrolling devices in Windows Analytics](windows-analytics-get-started.md).
+Starting with Windows 10, version 1803, the device name is no longer collected by default and requires a separate opt-in. For more information, see [Enrolling devices in Windows Analytics](windows-analytics-get-started.md).
 
 ### Disable Upgrade Readiness
 
