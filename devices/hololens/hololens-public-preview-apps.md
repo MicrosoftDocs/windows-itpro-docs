@@ -17,7 +17,7 @@ On May 22, 2018, these apps will be available to download and distribute across 
 
 ## Microsoft Remote Assist
 
-Microsoft Remote Assist supports collaboration in mixed reality to solve problems faster. Firstline workers can collaborate remotely with heads-up, hands-free video calling, image sharing, and mixed reality annotations. They can share what they see with an expert, while staying hands-on to solve problems and complete tasks together, faster.
+Microsoft Remote Assist supports collaboration in mixed reality to solve problems faster. Firstline workers can collaborate remotely with heads-up, hands-free video calling, image sharing, and mixed reality annotations. They can share what they see with an expert on Microsoft Teams, while staying hands-on to solve problems and complete tasks together, faster.
 
 Below, you'll find the technical requirements you'll need to meet in order to distribute Remote Assist throughout your organization when it's available on May 22, 2018.
 
@@ -36,13 +36,13 @@ Below, you'll find the technical requirements you'll need to meet in order to di
 
 | Product required                  | Details           | Learn more        |
 |:----------------------------------|:------------------|:------------------|
-| Azure Active Directory (Azure AD) | Required to log users into the Remote Assist app through Microsoft Teams. Also required for app distribution through the Microsoft Store for Business. If you choose not to distribute the app through the Microsoft Store for Business, users can also install Remote Assist on a HoloLens or PC from the Microsoft store using their Microsoft Account credentials (MSA). | [Get started with Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/get-started-azure-ad) |
+| Azure Active Directory (Azure AD) | Required to log users into the Remote Assist app through Microsoft Teams. Also required for app distribution through the [Microsoft Store for Business](https://docs.microsoft.com/en-us/microsoft-store/sign-up-microsoft-store-for-business). If you choose not to distribute the app through the Microsoft Store for Business, users can also install Remote Assist on a HoloLens or PC from the [Microsoft store](https://www.microsoft.com/en-us/store/apps/windows?icid=CNavAppsWindowsApps) using their Microsoft Account credentials (MSA). | [Get started with Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/get-started-azure-ad) |
 | Microsoft Teams                   | Microsoft Teams is the backbone that facilitates communication in Remote Assist. All devices that will make calls to the HoloLens will need to have Microsoft Teams installed. | [Overview of Microsoft Teams](https://docs.microsoft.com/en-us/MicrosoftTeams/teams-overview) |
 | Microsoft Office 365              | Because Microsoft Teams is part of Office 365, all users who will make calls from their PC/phone to the HoloLens will need an Office 365 license. | [Office 365 licensing for Microsoft Teams](https://docs.microsoft.com/en-us/MicrosoftTeams/office-365-licensing) |
 
 ### Network requirements
 
-1.5Mb/s is the bandwidth required to enable the full feature set. If your organization's bandwidth does not meet these requirements, you may notice HoloLens feature degradation, limiting the user experience. Please test your company’s network bandwidth by performing the following steps:
+1.5 MB/s is the suggested bandwidth for optimal performance of Microsoft Remote Assist. Though interactive audio/video calls may be supported in environments with reduced bandwidth, you may experience HoloLens feature degradation, limiting the user experience.  To test your company’s network bandwidth, we suggest following the steps outlined below:
 
    1. Have a mobile Teams user (iOS or Android) video call a desktop Teams user.
    2. Once the video call has been successfully connected between user 1 and 2, add another separate video call between a 3rd and 4th user, and another for a 5th and 6th user.
@@ -52,7 +52,7 @@ See [Preparing your organization's network for Microsoft Teams](https://docs.mic
 
 ## Microsoft Layout
 
-Microsoft Layout enables users to design spaces in context with mixed reality. Bring designs from concept to completion with confidence and speed. Import 3D models to easily create and edit room layouts in real-world scale. Experience designs as high-quality holograms in physical space or in virtual reality and share and edit with stakeholders in real time.
+Bring designs from concept to completion with confidence and speed using Microsoft Layout. Import 3D models to easily create room layouts in real-world scale. Experience designs as high-quality holograms in physical or virtual space and edit in real time. With Microsoft Layout, see ideas in context, saving valuable time and money.
 
 Below, you'll find the device options, and technical requirements, you'll need to consider in order to distribute Layout throughout your organization when it's available on May 22, 2018.
 
@@ -73,6 +73,7 @@ Alternately, you can get started testing out the RS4 build in advance of May 22.
 | OS requirements                               | Details                                                    |
 |:----------------------------------------------|:-----------------------------------------------------------|
 | Windows 10 PC with build 16299.0 or higher    | The Windows 10 PC hardware must be able to support the headset. See [Windows Mixed Reality PC hardware guidelines](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for specific hardware requirements. We recommend following the **Windows Mixed Reality Ultra** hardware guidelines.  |
+| Motion controllers                            | Motion controllers are hardware accessories that allow users to take action in mixed reality. See [Motion controllers](https://docs.microsoft.com/en-us/windows/mixed-reality/motion-controllers) to learn more.  |
 
 ### Technical requirements
 
@@ -80,16 +81,16 @@ Have the following technical requirements in place to start using Layout as soon
 
 | Requirement                       | Details           | Learn more        |
 |:----------------------------------|:------------------|:------------------|
-| Azure Active Directory (Azure AD) | Required for app distribution through the Microsoft Store for Business. If you choose not to distribute the app through the Microsoft Store for Business, users can also install Layout on a HoloLens or PC from the Microsoft Store using their Microsoft Account credentials (MSA). | [Get started with Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/get-started-azure-ad) |
+| Azure Active Directory (Azure AD) | Required for app distribution through the [Microsoft Store for Business](https://docs.microsoft.com/en-us/microsoft-store/sign-up-microsoft-store-for-business). If you choose not to distribute the app through the Microsoft Store for Business, users can also install Layout on a HoloLens or PC from the [Microsoft Store](https://www.microsoft.com/en-us/store/apps/windows?icid=CNavAppsWindowsApps) using their Microsoft Account credentials (MSA). | [Get started with Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/get-started-azure-ad) |
 | Network connectivity              | Internet access is required to download the app, and utilize all of its features. There are no bandwidth requirements.    | |
-| Apps for sharing                  | Additional apps are needed to share and edit your layouts with stakeholders in real time. For the HoloLens, use of the Remote Assist app is required. For the Windows Mixed Reality immersive headset, a screen sharing app (such as Skype or Skype for Business), and a Windows 10 PC that meets the Windows Mixed Reality Ultra specifications, are required. | [Remote Assist](#remote-assist) <br/>[Windows Mixed Reality PC hardware guidelines](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) |
-| Import Tool for Microsoft Layout  | The Import Tool for Microsoft Layout is a free companion app for Layout that makes file optimization and management easy. It is required to import existing 3D models from your PC into Microsoft Layout for viewing and editing, to open models in Windows Mixed Reality to view and edit virtually, and to copy models from your PC onto Microsoft HoloLens to view and edit in your physical environment. If you're using Layout with a HoloLens, USB 2.0 Port and USB cables are also required to transfer models from PC to HoloLens. |   |
+| Apps for sharing                  | Video calling or screen sharing requires a separate app, such as Microsoft Remote Assist on HoloLens, or Skype or Skype for Business on Windows Mixed Reality headsets.<br/>A Windows 10 PC that meets the Windows Mixed Reality Ultra specifications is also required for video calling or screen sharing when using Layout with a Windows Mixed Reality headset. | [Remote Assist](#remote-assist) <br/>[Windows Mixed Reality PC hardware guidelines](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) |
+| Import Tool for Microsoft Layout  | Import Tool for Microsoft Layout is a free companion app for Microsoft Layout that makes file optimization and management easy. To import 3D models, users must download and launch the Import Tool for Microsoft Layout on their PC, available for free from Microsoft Store starting May 22nd.  |   |
 
 ### Visio Add-in for Microsoft Layout
 
-The free Visio Add-in for Microsoft Layout is required to import room layouts from Visio to view and edit on HoloLens or in Windows Mixed Reality. The Import Tool for Microsoft Layout is also required.
+The free Visio Add-in for Microsoft Layout enables you to import room layouts from Visio to view and edit on HoloLens or in Windows Mixed Reality. The Import Tool for Microsoft Layout is also required.
 
-Be sure to grab the Import Tool for Layout, as well as the Visio Add-in, on May 22 if you'd like to work with Visio room layouts.
+Be sure to grab the Import Tool for Layout, as well as the Visio Add-in, on May 22 if you'd like to import, view, and edit room layouts.
 
 ## Questions and support
 
