@@ -2,14 +2,14 @@
 ms.localizationpriority: low
 ms.mktglfcycl: plan
 description: Learn about which version of the IEAK 11 you should run, based on your license agreement.
-author: shortpatti
-ms.author: pashort
+author: pashort
+ms.author: shortpatti
 ms.manager: elizapo
-ms.prod: ie11
+ms.prod: ie11, ieak11
 ms.assetid: 69d25451-08af-4db0-9daa-44ab272acc15
 title: Determine the licensing version and features to use in IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
-ms.date: 04/24/2018
+ms.date: 05/02/2018
 ---
 
 
@@ -24,6 +24,36 @@ During installation, you must pick a version of IEAK 11, either **External** or
 
 -   **Internal Distribution via a Corporate Intranet.** This version is for network admins that plan to directly deploy IE11 into a corporate environment.
 
+## Available features by version
+
+|Internal                                  |External                                  |
+|------------------------------------------|------------------------------------------|
+|Welcome screen                            |Welcome screen                            |
+|File locations                            |File locations                            |
+|Platform selection                        |Platform selection                        |
+|Language selection                        |Language selection                        |
+|Package type selection                    |Package type selection                    |
+|Feature selection                         |Feature selection                         |
+|Automatic Version Synchronization (AVS)   |Automatic Version Synchronization (AVS)   |
+|Custom components                         |Custom components                         |
+|Internal install                          |Not available                             |
+|User experience                           |Not available                             |
+|Browser user interface                    |Browser user interface                    |
+|Search providers                          |Search providers                          |
+|Important URLs – Home page and support    |Important URLs – Home page and support    |
+|Accelerators                              |Accelerators                              |
+|Favorites, Favorites bar, and feeds       |Favorites, Favorites bar, and feeds       |
+|Browsing options                          |Not available                             |
+|First Run wizard and Welcome page options |First Run wizard and Welcome page options |
+|Connection manager                        |Connection manager                        |
+|Connection settings                       |Connection settings                       |
+|Automatic configuration                   |Not available                             |
+|Proxy settings                            |Proxy settings                            |
+|Security and privacy settings             |Not available                             |
+|Add a root certificate                    |Not available                             |
+|Programs                                  |Programs                                  |
+|Additional settings                       |Not available                             |
+|Wizard complete                           |Wizard complete                           |
 
 ## Customization guidelines
 

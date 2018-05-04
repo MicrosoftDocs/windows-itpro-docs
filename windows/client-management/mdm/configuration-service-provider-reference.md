@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 04/20/2018
+ms.date: 04/24/2018
 ---
 
 # Configuration service provider reference
@@ -2573,6 +2573,7 @@ Footnotes:
 
 You can download the DDF files for various CSPs from the links below:
 
+- [Download all the DDF files for Windows 10, version 1803](http://download.microsoft.com/download/6/2/7/6276FE19-E3FD-4254-9C16-3C31CAA2DE50/Windows10_1803_DDF_download.zip)
 - [Download all the DDF files for Windows 10, version 1709](http://download.microsoft.com/download/9/7/C/97C6CF99-F75C-475E-AF18-845F8CECCFA4/Windows10_1709_DDF_download.zip)
 - [Download all the DDF files for Windows 10, version 1703](http://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)
 - [Download all the DDF files for Windows 10, version 1607](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
@@ -2585,9 +2586,9 @@ The following list shows the configuration service providers supported in Window
 
 | Configuration service provider        | Windows Holographic edition      | Windows Holographic for Business edition |
 |--------|--------|------------|
-| [AccountManagement CSP](accountmanagement-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)3       |
-| [Application CSP](application-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [AccountManagement CSP](accountmanagement-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       |
 | [AppLocker CSP](applocker-csp.md)      | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [AssignedAccess CSP](assignedaccess-csp.md)      | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       |
 | [CertificateStore CSP](certificatestore-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)|
 | [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [DevDetail CSP](devdetail-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
@@ -2606,9 +2607,11 @@ The following list shows the configuration service providers supported in Window
 | [WiFi CSP](wifi-csp.md)     | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [WindowsLicensing CSP](windowslicensing-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 
-Footnotes: 
-- 2 - Added in Windows 10, version 1703
-- 3 - Added in Windows 10, version 1803
+ Footnotes: 
+- 1 - Added in Windows 10, version 1607
+- 2 - Added in Windows 10, version 1703  
+- 3 - Added in Windows 10, version 1709
+- 4 - Added in Windows 10, version 1803
 
 ## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
 

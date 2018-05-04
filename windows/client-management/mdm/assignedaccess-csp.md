@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 03/20/2018
+ms.date: 04/25/2018
 ---
 
 # AssignedAccess CSP
@@ -20,7 +20,7 @@ For a step-by-step guide for setting up devices to run in kiosk mode, see [Set u
  In Windows 10, version 1709, the AssignedAccess configuration service provider (CSP) has been expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package. For a step-by-step guide, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps).
 
 > [!Note]
-> The AssignedAccess CSP is supported in Windows 10 Enterprise and Windows 10 Education. Starting from Windows 10, version 1709 it is also supported in Windows 10 Pro and Windows 10 S.
+> The AssignedAccess CSP is supported in Windows 10 Enterprise and Windows 10 Education. Starting from Windows 10, version 1709 it is also supported in Windows 10 Pro and Windows 10 S. Starting in Windows 10, version 1803, it is also supported in Windows Holographic for Business edition.
 
 The following diagram shows the AssignedAccess configuration service provider in tree format
 
@@ -35,8 +35,11 @@ A JSON string that contains the user account name and Application User Model ID 
 For a step-by-step guide for setting up devices to run in kiosk mode, see [Set up a kiosk on Windows 10 Pro, Enterprise, or Education.](http://go.microsoft.com/fwlink/p/?LinkID=722211)
 
 > [!Note]  
-> You cannot set both KioskModeApp and Configuration at the same time in the device in Windows 10, version 1709.  
+> In Windows 10, version 1803 the Configuration node introduces single app kiosk profile to replace KioskModeApp CSP node. KioskModeApp node will be deprecated soon, so you should use the single app kiosk profile in config xml for Configuration node to configure public-facing single app Kiosk.  
 >
+> Starting in Windows 10, version 1803 the KioskModeApp node becomes No-Op if Configuration node is configured on the device. That Add/Replace/Delete command on KioskModeApp node always returns SUCCESS to the MDM server if Configuration node is set, but the data of KioskModeApp will not take any effect on the device. Get command on KioskModeApp will return the configured JSON string even it’s not effective.
+  
+> [!Note]
 > You cannot set both KioskModeApp and ShellLauncher at the same time on the device.
 
 Starting in Windows 10, version 1607, you can use a provisioned app to configure the kiosk mode. For more information about how to remotely provision an app, see [Enterprise app management](enterprise-app-management.md).
@@ -66,7 +69,9 @@ The supported operations are Add, Delete, Get and Replace. When there's no confi
 Added in Windows 10, version 1709. Specifies the settings that you can configure in the kiosk or device. This node accepts an AssignedAccessConfiguration xml as input to configure the device experience. For details about the configuration settings in the XML, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps). Here is the schema for the [AssignedAccessConfiguration](#assignedaccessconfiguration-xsd). 
 
 > [!Note]  
-> You cannot set both KioskModeApp and Configuration at the same time on the device in Windows 10, version 1709.  
+> In Windows 10, version 1803 the Configuration node introduces single app kiosk profile to replace KioskModeApp CSP node. KioskModeApp node will be deprecated soon, so you should use the single app kiosk profile in config xml for Configuration node to configure public-facing single app Kiosk.  
+>
+> Starting in Windows 10, version 1803 the KioskModeApp node becomes No-Op if Configuration node is configured on the device. That Add/Replace/Delete command on KioskModeApp node always returns SUCCESS to the MDM server if Configuration node is set, but the data of KioskModeApp will not take any effect on the device. Get command on KioskModeApp will return the configured JSON string even it’s not effective.
 
 Enterprises can use this to easily configure and manage the curated lockdown experience. 
 
@@ -1137,4 +1142,64 @@ ShellLauncherConfiguration Get
         </xs:complexType>
     </xs:element>
 </xs:schema>
+```
+
+## Windows Holographic for Business edition example 
+
+This example configures the following apps: Skype, Learning, Feedback Hub, and Calibration, for first line workers. Use this XML in a provisioning package using Windows Configuration Designer. For instructions, see [Configure HoloLens using a provisioning package](https://docs.microsoft.com/en-us/hololens/hololens-provisioning).
+
+``` syntax
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+  This is a sample Assigned Access XML file. The Profile specifies which apps are allowed
+  and their app IDs. An Assigned Access Config specifies the accounts or groups to which 
+  a Profile is applicable. 
+  
+  !!! NOTE: Change the Account below to a user in the tenant being tested !!!
+-->
+<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
+    <Profiles>
+        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
+            <AllAppsList>
+                <AllowedApps>
+                    <!-- Learning app -->
+                    <App AppUserModelId="GGVLearning_cw5n1h2txyewy!GGVLearning" />
+                    <!-- Calibration app -->
+                    <App AppUserModelId="ViewCalibrationApp_cw5n1h2txyewy!ViewCalibrationApp" />
+                    <!-- Feedback Hub -->
+                    <App AppUserModelId="Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App" />
+                    <!-- HoloSkype -->
+                    <App AppUserModelId="Microsoft.SkypeApp_kzf8qxf38zg5c!App" />
+                </AllowedApps>
+            </AllAppsList>
+            <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
+            <StartLayout>
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                      <LayoutOptions StartTileGroupCellWidth="6" />
+                      <DefaultLayoutOverride>
+                        <StartLayoutCollection>
+                          <defaultlayout:StartLayout GroupCellWidth="6">
+                            <start:Group Name="Life at a glance">
+                              <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.SkypeApp_kzf8qxf38zg5c!App" />
+                            </start:Group>
+                          </defaultlayout:StartLayout>
+                        </StartLayoutCollection>
+                      </DefaultLayoutOverride>
+                    </LayoutModificationTemplate>
+                ]]>
+            </StartLayout>
+            <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
+            <Taskbar ShowTaskbar="true"/>
+        </Profile>
+    </Profiles>
+    <Configs>
+        <!-- IMPORTANT: Replace the account name here with an email address of the user you want to 
+        be enabled for assigned access. The value in the Account node must begin with 
+        AzureAD\ for AAD accounts. -->
+        <Config>
+            <Account>AzureAD\multiusertest@analogfre.onmicrosoft.com</Account>
+            <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+        </Config>
+    </Configs>
+</AssignedAccessConfiguration>
 ```

@@ -4,12 +4,14 @@
 ## [The Windows Defender Security Center app](windows-defender-security-center/windows-defender-security-center.md)
 ### [Customize the Windows Defender Security Center app for your organization](windows-defender-security-center/wdsc-customize-contact-information.md)
 ### [Hide Windows Defender Security Center app notifications](windows-defender-security-center/wdsc-hide-notifications.md)
+### [Manage Windows Defender Security Center in Windows 10 in S mode](windows-defender-security-center\wdsc-windows-10-in-s-mode.md)
 ### [Virus and threat protection](windows-defender-security-center/wdsc-virus-threat-protection.md)
-### [Device performance and health](windows-defender-security-center/wdsc-device-performance-health.md)
-### [Firewall and network protection](windows-defender-security-center/wdsc-firewall-network-protection.md)
-### [App and browser control](windows-defender-security-center/wdsc-app-browser-control.md)
-### [Family options](windows-defender-security-center/wdsc-family-options.md)
-
+### [Account protection](windows-defender-security-center\wdsc-account-protection.md)
+### [Firewall and network protection](windows-defender-security-center\wdsc-firewall-network-protection.md)
+### [App and browser control](windows-defender-security-center\wdsc-app-browser-control.md)
+### [Device security](windows-defender-security-center\wdsc-device-security.md)
+### [Device performance and health](windows-defender-security-center\wdsc-device-performance-health.md)
+### [Family options](windows-defender-security-center\wdsc-family-options.md)
 
 
 
@@ -92,6 +94,9 @@
 #### [Query data using Advanced hunting](windows-defender-atp\advanced-hunting-windows-defender-advanced-threat-protection.md)
 ##### [Advanced hunting reference](windows-defender-atp\advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
 ##### [Advanced hunting query language best practices](windows-defender-atp\advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
+
+
+### [Protect users, data, and devices with conditional access](windows-defender-atp\conditional-access-windows-defender-advanced-threat-protection.md)
 
 ###API and SIEM support
 #### [Pull alerts to your SIEM tools](windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection.md)
@@ -189,6 +194,7 @@
 ##### [Enable and create Power BI reports using Windows Defender ATP data](windows-defender-atp\powerbi-reports-windows-defender-advanced-threat-protection.md)
 ##### [Enable Secure score security controls](windows-defender-atp\enable-secure-score-windows-defender-advanced-threat-protection.md)
 ##### [Configure advanced features](windows-defender-atp\advanced-features-windows-defender-advanced-threat-protection.md)
+
 
 ####Permissions
 ##### [Manage portal access using RBAC](windows-defender-atp\rbac-windows-defender-advanced-threat-protection.md)
@@ -293,7 +299,7 @@
 #### [Evaluate Exploit protection](windows-defender-exploit-guard\evaluate-exploit-protection.md)
 #### [Enable Exploit protection](windows-defender-exploit-guard\enable-exploit-protection.md)
 #### [Customize Exploit protection](windows-defender-exploit-guard\customize-exploit-protection.md)
-##### [Import, export, and deploy Exploit protection configurations](windows-defender-exploit-guard\import-export-exploit-protection-emet-xml.md)
+##### [Import, export, and deploy Exploit protection configurations](windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
 ### [Attack surface reduction](windows-defender-exploit-guard\attack-surface-reduction-exploit-guard.md)
 #### [Evaluate Attack surface reduction](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
 #### [Enable Attack surface reduction](windows-defender-exploit-guard\enable-attack-surface-reduction.md)
@@ -307,6 +313,9 @@
 #### [Evaluate Controlled folder access](windows-defender-exploit-guard\evaluate-controlled-folder-access.md)
 #### [Enable Controlled folder access](windows-defender-exploit-guard\enable-controlled-folders-exploit-guard.md)
 #### [Customize Controlled folder access](windows-defender-exploit-guard\customize-controlled-folders-exploit-guard.md)
+### [Memory integrity](windows-defender-exploit-guard\memory-integrity.md)
+#### [Requirements for virtualization-based protection of code integrity](windows-defender-exploit-guard\requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
+#### [Enable virtualization-based protection of code integrity](windows-defender-exploit-guard\enable-virtualization-based-protection-of-code-integrity.md)
 
 
 ## [Windows Defender Application Control](windows-defender-application-control/windows-defender-application-control.md)

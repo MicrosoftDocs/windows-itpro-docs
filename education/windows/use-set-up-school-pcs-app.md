@@ -30,7 +30,7 @@ Set up School PCs makes it easy to set up Windows 10 PCs with Microsoft's recomm
 - Sets Microsoft-recommended school PC settings, including shared PC mode which provides faster sign-in and automatic account cleanup
 - Enables optional guest account for younger students, lost passwords, or visitors
 - Enables optional secure testing account
-- Enables optional Windows Automatic Redeployment feature to return devices to a fully configured or known IT-approved state
+- Enables optional Autopilot Reset feature to return devices to a fully configured or known IT-approved state
 - Locks down the student PC to prevent mischievous activity:
     * Prevents students from removing the PC from the school's device management system
     * Prevents students from removing the Set up School PCs settings
@@ -197,7 +197,7 @@ The **Set up School PCs** app guides you through the configuration choices for t
 
     If you select this option, this adds a **Guest** account button in the PC's sign-in screen to allow anyone to use the PC.
  
-  - Select **Enable Windows Automatic Redeployment** to reset student PCs from the lock screen any time and apply original settings and device management enrollment (Azure AD and MDM) so they’re ready to use. Make sure you are running Windows 10, version 1709 on the student PCs if you want to use Windows Automatic Redeployment through the Set up School PCs app.
+  - Select **Enable Autopilot Reset** to reset student PCs from the lock screen any time and apply original settings and device management enrollment (Azure AD and MDM) so theyâ€™re ready to use. Make sure you are running Windows 10, version 1709 on the student PCs if you want to use Autopilot Reset through the Set up School PCs app.
   - To change the default lock screen background or to use your school's custom lock screen background, click **Browse** to select a new lock screen background.
 
     **Figure 4** - Configure student PC settings

@@ -2,7 +2,8 @@
 ms.localizationpriority: low
 ms.mktglfcycl: support
 description: Info about some of the known issues using the Internet Exporer Customization Wizard and a custom Internet Explorer install package.
-author: eross-msft
+author: shortpatti
+ms.author: pashort
 ms.prod: ie11
 ms.assetid: 9e22cc61-6c63-4cab-bfdf-6fe49db945e4
 title: Troubleshoot custom package and IEAK 11 problems (Internet Explorer Administration Kit 11 for IT Pros)

@@ -31,7 +31,7 @@ See [Windows 10 Specifications](http://www.microsoft.com/en-US/windows/windows-1
 Keeping Windows 10 up to date involves deploying a feature update, and Upgrade Readiness tools help you prepare and plan for these Windows updates.
 The latest cumulative updates must be installed on Windows 10 computers to make sure that the required compatibility updates are installed.  You can find the latest cumulative update on the [Microsoft Update Catalog](https://catalog.update.microsoft.com). 
 
-While Upgrade Readiness can be used to assist with updating devices from Windows 10 Long-Term Servicing Channel (LTSC) to Windows 10 Semi-Annual Channel, Upgrade Readiness does not support updates to Windows 10 LTSC. The Long-Term Servicing Channel of Windows 10 is not intended for general deployment, and does not receive feature updates, therefore it is not a supported target with Upgrade Readiness.  See [Windows as a service overview](../update/waas-overview.md#long-term-servicing-channel) to understand more about LTSC.
+While Upgrade Readiness can be used to assist with updating devices from Windows 10 Long-Term Servicing Channel (LTSC) to Windows 10 Semi-Annual Channel, Upgrade Readiness does not support updates to Windows 10 LTSC. The Long-Term Servicing Channel of Windows 10 is not intended for general deployment, and does not receive feature updates, therefore it is not a supported target with Upgrade Readiness. See [Windows as a service overview](../update/waas-overview.md#long-term-servicing-channel) to understand more about LTSC.
 
 ## Operations Management Suite
 
@@ -39,7 +39,7 @@ Upgrade Readiness is offered as a solution in the Microsoft Operations Managemen
 
 If you’re already using OMS, you’ll find Upgrade Readiness in the Solutions Gallery. Click the Upgrade Readiness tile in the gallery and then click Add on the solution’s details page. Upgrade Readiness is now visible in your workspace.
 
-If you are not using OMS, go to the [Upgrade Readiness page](https://www.microsoft.com/en-us/WindowsForBusiness/upgrade-analytics) on Microsoft.com and select **Sign up** to kick off the OMS onboarding process. During the onboarding process, you’ll create an OMS workspace and add the Upgrade Readiness solution to it.
+If you are not using OMS, go to the [Upgrade Readiness page](https://www.microsoft.com/en-us/windowsforbusiness/simplified-updates) on Microsoft.com and select **Sign up** to kick off the OMS onboarding process. During the onboarding process, you’ll create an OMS workspace and add the Upgrade Readiness solution to it.
 
 Important: You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory, use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS. You also need an Azure subscription to link to your OMS workspace.  The account you used to create the workspace must have administrator permissions on the Azure subscription in order to link the workspace to the Azure account.  Once the link has been established, you can revoke the administrator permissions.
 
