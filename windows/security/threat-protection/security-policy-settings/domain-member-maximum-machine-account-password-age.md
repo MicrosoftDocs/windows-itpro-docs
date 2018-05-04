@@ -33,7 +33,7 @@ For more information, see [Machine Account Password Process](https://blogs.techn
 ### Best practices
 
 It is often advisable to set **Domain member: Maximum machine account password age** to about 30 days.
-Setting the value lower can increase replication and imapct domain controllers. For example, in Windows NT domains, machine passwords were changed every 7 days. The additional replication churn would impact domain controllers in large organizations with many computers or slow links between sites. 
+Setting the value to fewer days can increase replication and impact domain controllers. For example, in Windows NT domains, machine passwords were changed every 7 days. The additional replication churn would impact domain controllers in large organizations with many computers or slow links between sites. 
 
 ### Location
 
