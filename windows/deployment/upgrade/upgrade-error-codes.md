@@ -37,7 +37,19 @@ Note: If only a result code is returned, this can be because a tool is being use
 
 >A result code of **0xC1900101** is generic and indicates that a rollback occurred. In most cases, the cause is a driver compatibility issue. <br>To troubleshoot a failed upgrade that has returned a result code of 0xC1900101, analyze the extend code to determine the Windows Setup phase, and see the [Resolution procedures](resolution-procedures.md) section later in this article.
 
-Result codes can be matched to the type of error encountered. To match a result code to an error:
+The following set of result codes are associated with [Windows Setup](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options) compatibility warnings:
+
+| Result code | Message  | Description |
+| --- | --- | --- |
+| 0xC1900210 | MOSETUP_E_COMPAT_SCANONLY | Setup did not find any compat issue |
+| 0xC1900208 | MOSETUP_E_COMPAT_INSTALLREQ_BLOCK | Setup found an actionable compat issue, such as an incompatible app |
+| 0xC1900204 | MOSETUP_E_COMPAT_MIGCHOICE_BLOCK | The migration choice selected is not available (ex: Enterprise to Home) |
+| 0xC1900200 | MOSETUP_E_COMPAT_SYSREQ_BLOCK | The computer is not eligible for Windows 10 |
+| 0xC190020E | MOSETUP_E_INSTALLDISKSPACE_BLOCK | The computer does not have enough free space to install |
+
+A list of modern setup (mosetup) errors with descriptions in the range is available in the [Resolution procudures](resolution-procedures.md#modern-setup-errors) topic in this article.
+
+Other result codes can be matched to the specific type of error encountered. To match a result code to an error:
 
 1. Identify the error code type as either Win32 or NTSTATUS using the first hexadecimal digit:
         <br>**8** = Win32 error code (ex: 0x**8**0070070)

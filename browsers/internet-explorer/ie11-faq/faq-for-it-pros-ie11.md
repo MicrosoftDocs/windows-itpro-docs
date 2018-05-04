@@ -145,8 +145,62 @@ Group Policy settings can be set to open either IE or Internet Explorer for the 
 |Always in IE11 |Links always open in IE. |
 |Always in Internet Explorer for the desktop |Links always open in Internet Explorer for the desktop. |
 
+
+
+**Q. Can IEAK 11 build custom Internet Explorer 11 packages in languages other than the language of the in-use IEAK 11 version?**
+Yes. You can use IEAK 11 to build custom Internet Explorer 11 packages in any of the supported 24 languages. You'll select the language for the custom package on the Language Selection page of the customization wizard.
+
+IEAK 11 is available in 24 languages but can build customized Internet Explorer 11 packages in all languages of the supported operating systems. Select a language below and download IEAK 11 from the download center:
+|  |  |  |
+|---------|---------|---------|
+|[English](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/en-us/ieak.msi)     |[French](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/fr-fr/ieak.msi)         |[Norwegian (Bokmål)](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/nb-no/ieak.msi)         |
+|[Arabic](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/ar-sa/ieak.msi)     |[Chinese (Simplified)](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/zh-cn/ieak.msi)         |[Chinese(Traditional)](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/zh-tw/ieak.msi)         |
+|[Czech](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/cs-cz/ieak.msi)     |[Danish](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/da-dk/ieak.msi)         |[Dutch](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/nl-nl/ieak.msi)          |
+|[Finnish](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/fi-fi/ieak.msi)    |[German](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/de-de/ieak.msi)         |[Greek](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/el-gr/ieak.msi)         |
+|[Hebrew](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/he-il/ieak.msi)     |[Hungarian](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/hu-hu/ieak.msi)         |[Italian](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/it-it/ieak.msi)         |
+|[Japanese](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/ja-jp/ieak.msi)     |[Korean](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/ko-kr/ieak.msi)         |[Polish](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/pl-pl/ieak.msi)         |
+|[Portuguese (Brazil)](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/pt-br/ieak.msi)     |[Portuguese (Portugal)](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/pt-pt/ieak.msi)         |[Russian](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/ru-ru/ieak.msi)         |
+|[Spanish](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/es-es/ieak.msi)     |[Swedish](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/sv-se/ieak.msi)         |[Turkish](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/tr-tr/ieak.msi)         |
+
+
+
+**Q. What are the different modes available for the Internet Explorer Customization Wizard?**
+The IEAK Customization Wizard displays pages based on your licensing mode selection, either **Internal** or **External**. For more information on IEAK Customization Wizard modes, see [Determine the licensing version and features to use in IEAK 11](../ie11-ieak/licensing-version-and-features-ieak11.md).
+
+The following table displays which pages are available in IEAK 11, based on the licensing mode:
+
+| **Wizard Pages**                          | **External** | **Internal** |
+|-------------------------------------------|--------------|--------------|
+| Welcome to the IEAK                       | Yes          | Yes          |
+| File Locations                            | Yes          | Yes          |
+| Platform Selection                        | Yes          | Yes          |
+| Language Selection                        | Yes          | Yes          |
+| Package Type Selection                    | Yes          | Yes          |
+| Feature Selection                         | Yes          | Yes          |
+| Automatic Version Synchronization         | Yes          | Yes          |
+| Custom Components                         | Yes          | Yes          |
+| Corporate Install                         | No           | Yes          |
+| User Experience                           | No           | Yes          |
+| Browser User Interface                    | Yes          | Yes          |
+| Search Providers                          | Yes          | Yes          |
+| Important URLs - Home page and Support    | Yes          | Yes          |
+| Accelerators                              | Yes          | Yes          |
+| Favorites, Favorites Bar, and Feeds       | Yes          | Yes          |
+| Browsing Options                          | No           | Yes          |
+| First Run Wizard and Welcome Page Options | Yes          | Yes          |
+| Compatibility View                        | Yes          | Yes          |
+| Connection Manager                        | Yes          | Yes          |
+| Connection Settings                       | Yes          | Yes          |
+| Automatic Configuration                   | No           | Yes          |
+| Proxy Settings                            | Yes          | Yes          |
+| Security and Privacy Settings             | No           | Yes          |
+| Add a Root Certificate                    | Yes          | No           |
+| Programs                                  | Yes          | Yes          |
+| Additional Settings                       | No           | Yes          |
+| Wizard Complete                           | Yes          | Yes          |
+
+
 ## Related topics
 - [Microsoft Edge - Deployment Guide for IT Pros](https://go.microsoft.com/fwlink/p/?LinkId=760643)
 - [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](../ie11-deploy-guide/index.md)
 - [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](../ie11-ieak/index.md)
-

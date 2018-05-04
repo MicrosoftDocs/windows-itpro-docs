@@ -39,7 +39,7 @@ Upgrade Readiness is offered as a solution in the Microsoft Operations Managemen
 
 If you’re already using OMS, you’ll find Upgrade Readiness in the Solutions Gallery. Click the Upgrade Readiness tile in the gallery and then click Add on the solution’s details page. Upgrade Readiness is now visible in your workspace.
 
-If you are not using OMS, go to the [Upgrade Readiness page](https://www.microsoft.com/en-us/WindowsForBusiness/upgrade-analytics) on Microsoft.com and select **Sign up** to kick off the OMS onboarding process. During the onboarding process, you’ll create an OMS workspace and add the Upgrade Readiness solution to it.
+If you are not using OMS, go to the [Upgrade Readiness page](https://www.microsoft.com/en-us/windowsforbusiness/simplified-updates) on Microsoft.com and select **Sign up** to kick off the OMS onboarding process. During the onboarding process, you’ll create an OMS workspace and add the Upgrade Readiness solution to it.
 
 Important: You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory, use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS. You also need an Azure subscription to link to your OMS workspace.  The account you used to create the workspace must have administrator permissions on the Azure subscription in order to link the workspace to the Azure account.  Once the link has been established, you can revoke the administrator permissions.
 
