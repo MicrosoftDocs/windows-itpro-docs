@@ -51,4 +51,5 @@
 #### [Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)](windows-information-protection\app-behavior-with-wip.md)
 #### [Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)](windows-information-protection\recommended-network-definitions-for-wip.md)
 #### [Using Outlook Web Access with Windows Information Protection (WIP)](windows-information-protection\using-owa-with-wip.md)
+### [Fine-tune Windows Information Protection (WIP) with WIP Learning](windows-information-protection\wip-learning.md)
 
