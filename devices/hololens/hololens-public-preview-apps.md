@@ -27,16 +27,16 @@ Below, you'll find the technical requirements you'll need to meet in order to di
 |:---------------------------|:----------------------------------|:-----------------------------------------------------------|
 | HoloLens                   | RS1, build 10.0.14393.0           | See [Manage updates to HoloLens](https://docs.microsoft.com/en-us/HoloLens/hololens-updates) for instructions on using Windows Update for Business, MDM, and Windows Server Update Service (WSUS) to deploy updates to HoloLens.   |
 | Windows 10 PC (optional)   | Any Windows 10 build              | You can use a Windows 10 PC to collaborate with the HoloLens. |
-| Mobile device (optional)   | Android or iOS                    | You can use a mobile device to collaborate with the HoloLens. Inking, annotations, and image insertion are not available on mobile.                        |
+| Mobile device (optional)   | Android or iOS                    | You can use a mobile device to collaborate with the HoloLens. Inking, annotations, and image insertion are not currently available on mobile.                        |
 
 > [!Note]
-> Build 10.0.14393.0 is the minimum HoloLens build that supports Remote Assist. We recommend updating the HoloLens to newer versions when they are available.
+> RS1 OS build 10.0.14393.0 is the minimum HoloLens build that supports Remote Assist. We recommend updating the HoloLens to newer versions when they are available.
 
 ### Licensing & product requirements
 
 | Product required                  | Details           | Learn more        |
 |:----------------------------------|:------------------|:------------------|
-| Azure Active Directory (Azure AD) | Required to log users into the Remote Assist app through Microsoft Teams. Also required for app distribution through the Microsoft Store for Business. If you choose not to distribute the app through the Microsoft Store for Business, users can also install Remote Assist on a HoloLens from the Microsoft store using their Microsoft Account credentials (MSA). | [Get started with Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/get-started-azure-ad) |
+| Azure Active Directory (Azure AD) | Required to log users into the Remote Assist app through Microsoft Teams. Also required for app distribution through the Microsoft Store for Business. If you choose not to distribute the app through the Microsoft Store for Business, users can also install Remote Assist on a HoloLens or PC from the Microsoft store using their Microsoft Account credentials (MSA). | [Get started with Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/get-started-azure-ad) |
 | Microsoft Teams                   | Microsoft Teams is the backbone that facilitates communication in Remote Assist. All devices that will make calls to the HoloLens will need to have Microsoft Teams installed. | [Overview of Microsoft Teams](https://docs.microsoft.com/en-us/MicrosoftTeams/teams-overview) |
 | Microsoft Office 365              | Because Microsoft Teams is part of Office 365, all users who will make calls from their PC/phone to the HoloLens will need an Office 365 license. | [Office 365 licensing for Microsoft Teams](https://docs.microsoft.com/en-us/MicrosoftTeams/office-365-licensing) |
 
@@ -60,7 +60,7 @@ Below, you'll find the device options, and technical requirements, you'll need t
 
 You can use Microsoft Layout with a HoloLens, or with a Windows Mixed Reality immersive headset with motion controllers.
 
-HoloLens requirements:
+#### HoloLens requirements
 
 | OS requirements                   | Details                                                    |
 |:----------------------------------|:-----------------------------------------------------------|
@@ -68,7 +68,7 @@ HoloLens requirements:
 
 Alternately, you can get started testing out the RS4 build in advance of May 22. See [HoloLens RS4 Preview](https://docs.microsoft.com/en-us/windows/mixed-reality/hololens-rs4-preview) for instructions on flashing the RS4 build to your device. Be advised that doing so will erase all content on the device, and will put the device on track to receive future pre-released versions of the OS which may exhibit bugs and issues. We recommend using preview builds for testing only.
 
-Windows Mixed Reality immersive headset requirements:
+#### Windows Mixed Reality immersive headset requirements
 
 | OS requirements                               | Details                                                    |
 |:----------------------------------------------|:-----------------------------------------------------------|
@@ -78,17 +78,18 @@ Windows Mixed Reality immersive headset requirements:
 
 Have the following technical requirements in place to start using Layout as soon as it's available:
 
-* **Azure Active Directory (Azure AD)**: Required for app distribution through the Microsoft Store for Business. See [Get started with Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/get-started-azure-ad) to learn more about Azure AD and licensing users. If you choose not to distribute the app through the Microsoft Store for Business, users can also install Remote Assist on a HoloLens from the Microsoft Store using their Microsoft Account credentials (MSA).
-* **Network requirements**: Internet access is required to download the app, and utilize all of its features. There are no bandwidth requirements.
-* **Sharing and collaboration requirements**: Additional apps are needed to share and edit your layouts with stakeholders in real time. For the HoloLens, use of the [Remote Assist](#remote-assist) app is required. For the Windows Mixed Reality immersive headset, a screen sharing app (such as Skype or Skype for Business), and a Windows 10 PC that meets the [Windows Mixed Reality Ultra](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) specifications, are required.
+| Requirement                       | Details           | Learn more        |
+|:----------------------------------|:------------------|:------------------|
+| Azure Active Directory (Azure AD) | Required for app distribution through the Microsoft Store for Business. If you choose not to distribute the app through the Microsoft Store for Business, users can also install Layout on a HoloLens or PC from the Microsoft Store using their Microsoft Account credentials (MSA). | [Get started with Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/get-started-azure-ad) |
+| Network connectivity              | Internet access is required to download the app, and utilize all of its features. There are no bandwidth requirements.    | |
+| Apps for sharing                  | Additional apps are needed to share and edit your layouts with stakeholders in real time. For the HoloLens, use of the Remote Assist app is required. For the Windows Mixed Reality immersive headset, a screen sharing app (such as Skype or Skype for Business), and a Windows 10 PC that meets the Windows Mixed Reality Ultra specifications, are required. | [Remote Assist](#remote-assist) <br/>[Windows Mixed Reality PC hardware guidelines](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) |
+| Import Tool for Microsoft Layout  | The Import Tool for Microsoft Layout is a free companion app for Layout that makes file optimization and management easy. It is required to import existing 3D models from your PC into Microsoft Layout for viewing and editing, to open models in Windows Mixed Reality to view and edit virtually, and to copy models from your PC onto Microsoft HoloLens to view and edit in your physical environment. If you're using Layout with a HoloLens, USB 2.0 Port and USB cables are also required to transfer models from PC to HoloLens. |   |
 
-### Import Tool, and Visio Add-in, for Microsoft Layout
+### Visio Add-in for Microsoft Layout
 
-The Import Tool for Microsoft Layout is a free companion app for Layout that makes file optimization and management easy. It is required to import existing 3D models from your PC into Microsoft Layout for viewing and editing, to open models in Windows Mixed Reality to view and edit virtually, and to copy models from your PC onto Microsoft HoloLens to view and edit in your physical environment.
+The free Visio Add-in for Microsoft Layout is required to import room layouts from Visio to view and edit on HoloLens or in Windows Mixed Reality. The Import Tool for Microsoft Layout is also required.
 
-The free Visio Add-in for Microsoft Layout is required to import room layouts from Visio to view and edit on HoloLens or in Windows Mixed Reality.
-
-Be sure to grab the Import Tool for Layout, as well as the Visio Add-in, on May 22 if you're interested in these features. If you're using Layout with a HoloLens, USB 2.0 Port and USB cables are also required to transfer models from PC to HoloLens.
+Be sure to grab the Import Tool for Layout, as well as the Visio Add-in, on May 22 if you'd like to work with Visio room layouts.
 
 ## Questions and support
 
