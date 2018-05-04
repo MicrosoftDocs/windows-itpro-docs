@@ -16,10 +16,6 @@ ms.date: 04/26/2018
 # What's new in MDM enrollment and management
 
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
-
 This topic provides information about what's new and breaking changes in Windows 10 mobile device management (MDM) enrollment and management experience across all Windows 10 devices.
 
 For details about Microsoft mobile device management protocols for Windows 10 see [\[MS-MDM\]: Mobile Device Management Protocol](http://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( http://go.microsoft.com/fwlink/p/?LinkId=619347).
@@ -1202,7 +1198,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</li> 
 <li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li> 
 <li>LocalPoliciesSecurityOptions/UserAccountControl_DetectApplicationInstallationsAndPromptForElevation</li> 
-<li>LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode</li> 
+<li>LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode</li>
+<li>Notifications/DisallowCloudNotification</li> 
 <li>RestrictedGroups/ConfigureGroupMembership</li>
 <li>Search/AllowCortanaInAAD</li>
 <li>Search/DoNotUseWebResults</li>
@@ -1265,10 +1262,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <tr class="odd">
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
 <td style="vertical-align:top"><p>Updated the description for AllowWarningForOtherDiskEncryption to describe changes added in Windows 10, version 1803.</p>
-</td></tr>
-<tr class="odd">
-<td style="vertical-align:top">[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)</td>
-<td style="vertical-align:top"><p>Added new node MaintainProcessorArchitectureOnUpdate in Windows 10, version 1803.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[DMClient CSP](dmclient-csp.md)</td>
