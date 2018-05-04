@@ -21,7 +21,9 @@ Describes the best practices, location, values, and security considerations for 
 
 The **Domain member: Maximum machine account password age** policy setting determines when a domain member submits a password change.
 
-In Active Directory–based domains, each device has an account and password, just like every user. By default, the domain members submit a password change every 30 days. Increasing this interval significantly, or setting it to **0** so that a device no longer submits a password change, gives a malicious user more time to undertake a brute-force password-guessing attack against one of the machine accounts.
+In Active Directory–based domains, each device has an account and password. By default, the domain members submit a password change every 30 days. Increasing this interval significantly, or setting it to **0** so that a device no longer submits a password change, gives a malicious user more time to undertake a brute-force password-guessing attack against one of the machine accounts.
+
+For more information, see [Machine Account Password Process](https://blogs.technet.microsoft.com/askds/2009/02/15/machine-account-password-process-2/).
 
 ### Possible values
 
@@ -30,8 +32,8 @@ In Active Directory–based domains, each device has an account and password, ju
 
 ### Best practices
 
-1.  It is often advisable to set **Domain member: Maximum machine account password age** to about 30 days.
-2. If the machine's password has expired, it will no longer be able to authenticate with the domain. The easiest way to get authentication working again might require removing the device from the domain and then re-joining it. For this reason, some organizations create a special organizational unit (OU) for computers that are prebuilt and then stored for later use or shipped to remote locations, and change the value to more than 30 days.
+It is often advisable to set **Domain member: Maximum machine account password age** to about 30 days.
+Setting the value lower can increase replication and imapct domain controllers. For example, in Windows NT domains, machine passwords were changed every 7 days. The additional replication churn would impact domain controllers in large organizations with many computers or slow links between sites. 
 
 ### Location
 
