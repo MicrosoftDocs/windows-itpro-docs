@@ -64,7 +64,7 @@ You can use Microsoft Layout with a HoloLens, or with a Windows Mixed Reality im
 
 | OS requirements                   | Details                                                    |
 |:----------------------------------|:-----------------------------------------------------------|
-| HoloLens, with RS4 build          | This build will be available as a HoloLens update on May 22, to align with the app release. See [Manage updates to HoloLens](https://docs.microsoft.com/en-us/HoloLens/hololens-updates) for instructions on using Windows Update for Business, MDM, and Windows Server Update Service (WSUS) to deploy updates to HoloLens.  |
+| HoloLens, with RS4 build          | This build will be available as a HoloLens update on May 22, to align with the app release. Instructions for upgrading to the RS4 build are forthcoming. |
 
 Alternately, you can get started testing out the RS4 build in advance of May 22. See [HoloLens RS4 Preview](https://docs.microsoft.com/en-us/windows/mixed-reality/hololens-rs4-preview) for instructions on flashing the RS4 build to your device. Be advised that doing so will erase all content on the device, and will put the device on track to receive future pre-released versions of the OS which may exhibit bugs and issues. We recommend using preview builds for testing only.
 
