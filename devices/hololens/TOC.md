@@ -9,6 +9,6 @@
 ## [Share HoloLens with multiple people](hololens-multiple-users.md)
 ## [Configure HoloLens using a provisioning package](hololens-provisioning.md)
 ## [Install apps on HoloLens](hololens-install-apps.md)
-## [Get ready to preview new modern workplace apps](hololens-public-preview-apps.md)
+## [Get ready to preview new mixed reality apps](hololens-public-preview-apps.md)
 ## [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md)
 ## [Change history for Microsoft HoloLens documentation](change-history-hololens.md)
