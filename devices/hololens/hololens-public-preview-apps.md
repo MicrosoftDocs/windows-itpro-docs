@@ -90,7 +90,7 @@ Have the following technical requirements in place to start using Microsoft Layo
 
 The free Visio Add-in for Microsoft Layout enables you to import space dimensions from Visio to view and edit on HoloLens or in Windows Mixed Reality. The Import Tool for Microsoft Layout is also required.
 
-Be sure to grab the Import Tool and Visio Add-in for Microsoft Layout on May 22 if you'd like to import, view, and edit space dimensions from Visio.
+Be sure to grab the Import Tool and Visio Add-in for Microsoft Layout from the [Microsoft Store](https://www.microsoft.com/en-us/store/apps) or [Microsoft Store for Business](https://businessstore.microsoft.com/en-us/store) on May 22 if you'd like to import, view, and edit space dimensions from Visio.
 
 ## Questions and support
 
