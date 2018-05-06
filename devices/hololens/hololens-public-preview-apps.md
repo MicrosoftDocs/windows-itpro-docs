@@ -1,6 +1,6 @@
 ---
-title: Get early access to preview new modern workplace apps
-description: Prepare to meet technical requirements to use HoloLens modern workplace apps during public preview
+title: Get early access to preview new mixed reality apps for HoloLens
+description: Here's what you need to know to prepare for the public preview of new mixed reality apps for HoloLens
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: hololens, devices
@@ -9,17 +9,17 @@ author: alhopper
 ms.localizationpriority: medium
 ms.date: 05/07/2018
 ---
-# Get ready to preview new modern workplace apps
+# Get ready to preview new mixed reality apps for HoloLens
 
-Microsoft has just announced two new modern workplace apps coming to HoloLens: Microsoft Remote Assist and Microsoft Layout.
+Microsoft has just announced two new mixed reality apps coming to HoloLens: Microsoft Remote Assist and Microsoft Layout.
 
-On May 22, 2018, these apps will be available to download and distribute across your organization as part of a public preview. In the meantime, here's what you need to know to prepare for the public preview of each app, to make sure your roll-out is smooth and seamless.
+On May 22, 2018, these apps will be available to download for free for a limited time from the [Microsoft Store](https://www.microsoft.com/en-us/store/apps) and [Microsoft Store for Business](https://businessstore.microsoft.com/en-us/store). At that time you'll be able to distribute the apps across your organization as part of a public preview. In the meantime, here's what you need to know to prepare for the public preview of each app, to make sure your roll-out is smooth and seamless.
 
 ## Microsoft Remote Assist
 
-Microsoft Remote Assist supports collaboration in mixed reality to solve problems faster. Firstline workers can collaborate remotely with heads-up, hands-free video calling, image sharing, and mixed reality annotations. They can share what they see with an expert on Microsoft Teams, while staying hands-on to solve problems and complete tasks together, faster.
+Microsoft Remote Assist enables collaboration in mixed reality to solve problems faster. Firstline workers can collaborate remotely with heads-up, hands-free video calling, image sharing, and mixed reality annotations. They can share what they see with an expert on Microsoft Teams, while staying hands-on to solve problems and complete tasks together, faster.
 
-Below, you'll find the technical requirements you'll need to meet in order to distribute Microsoft Remote Assist throughout your organization when it's available on May 22, 2018.
+Below, you'll find the technical requirements you'll need to meet in order to distribute Microsoft Remote Assist throughout your organization when it's available from the [Microsoft Store](https://www.microsoft.com/en-us/store/apps) and [Microsoft Store for Business](https://businessstore.microsoft.com/en-us/store) on May 22, 2018.
 
 ### Device requirements
 
@@ -42,7 +42,7 @@ Below, you'll find the technical requirements you'll need to meet in order to di
 
 ### Network requirements
 
-1.5 MB/s is the suggested bandwidth for optimal performance of Microsoft Remote Assist. Though interactive audio/video calls may be supported in environments with reduced bandwidth, you may experience HoloLens feature degradation, limiting the user experience.  To test your company’s network bandwidth, we suggest following the steps outlined below:
+1.5 MB/s is the recommended bandwidth for optimal performance of Microsoft Remote Assist. Though audio/video calls may be possible in environments with reduced bandwidth, you may experience HoloLens feature degradation, limiting the user experience. To test your company’s network bandwidth, we suggest following the steps outlined below:
 
    1. Have a mobile Teams user (iOS or Android) video call a desktop Teams user.
    2. Once the video call has been successfully connected between user 1 and 2, add another separate video call between a 3rd and 4th user, and another for a 5th and 6th user.
@@ -54,7 +54,7 @@ See [Preparing your organization's network for Microsoft Teams](https://docs.mic
 
 Bring designs from concept to completion with confidence and speed using Microsoft Layout. Import 3D models to easily create room layouts in real-world scale. Experience designs as high-quality holograms in physical or virtual space and edit in real time. With Microsoft Layout, see ideas in context, saving valuable time and money.
 
-Below, you'll find the device options, and technical requirements, you'll need to consider in order to distribute Layout throughout your organization when it's available on May 22, 2018.
+Below, you'll find the device options, and technical requirements, you'll need to consider in order to distribute Layout throughout your organization when it's available from the [Microsoft Store](https://www.microsoft.com/en-us/store/apps) and [Microsoft Store for Business](https://businessstore.microsoft.com/en-us/store) on May 22, 2018.
 
 ### Device options
 
@@ -84,13 +84,13 @@ Have the following technical requirements in place to start using Microsoft Layo
 | Azure Active Directory (Azure AD) | Required for app distribution through the [Microsoft Store for Business](https://docs.microsoft.com/en-us/microsoft-store/sign-up-microsoft-store-for-business). If you choose not to distribute the app through the Microsoft Store for Business, users can also install Layout on a HoloLens or PC from the [Microsoft Store](https://www.microsoft.com/en-us/store/apps) using their Microsoft Account credentials (MSA). | [Get started with Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/get-started-azure-ad) |
 | Network connectivity              | Internet access is required to download the app, and utilize all of its features. There are no bandwidth requirements.    | |
 | Apps for sharing                  | Video calling or screen sharing requires a separate app, such as Microsoft Remote Assist on HoloLens, or Skype or Skype for Business on Windows Mixed Reality headsets.<br/>A Windows 10 PC that meets the Windows Mixed Reality Ultra specifications is also required for video calling or screen sharing when using Layout with a Windows Mixed Reality headset. | [Remote Assist](#remote-assist) <br/><br/>[Windows Mixed Reality PC hardware guidelines](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) |
-| Import Tool for Microsoft Layout  | Import Tool for Microsoft Layout is a free companion app for Microsoft Layout that makes file optimization and management easy. To import 3D models, users must download and launch the Import Tool for Microsoft Layout on their PC, available for free from the Microsoft Store starting May 22nd. The Import Tool is also required to transfer Visio room layouts to the HoloLens or Windows Mixed Reality headset. |   |
+| Import Tool for Microsoft Layout  | The Import Tool for Microsoft Layout is a companion app for Layout that makes model optimization and management easy. The Import Tool is required to transfer existing 3D models from your PC to Microsoft Layout, for viewing and editing on HoloLens or a Windows Mixed Reality headset. To import 3D models, users must download and launch the Import Tool for Microsoft Layout on their PC, available for free from the [Microsoft Store](https://www.microsoft.com/en-us/store/apps) and [Microsoft Store for Business](https://businessstore.microsoft.com/en-us/store) starting May 22nd. The Import Tool is also required to transfer Visio space dimensions to the HoloLens or Windows Mixed Reality headset. |   |
 
 ### Visio Add-in for Microsoft Layout
 
-The free Visio Add-in for Microsoft Layout enables you to import room layouts from Visio to view and edit on HoloLens or in Windows Mixed Reality. The Import Tool for Microsoft Layout is also required.
+The free Visio Add-in for Microsoft Layout enables you to import space dimensions from Visio to view and edit on HoloLens or in Windows Mixed Reality. The Import Tool for Microsoft Layout is also required.
 
-Be sure to grab the Import Tool and Visio Add-in for Microsoft Layout on May 22 if you'd like to import, view, and edit room layouts.
+Be sure to grab the Import Tool and Visio Add-in for Microsoft Layout on May 22 if you'd like to import, view, and edit space dimensions from Visio.
 
 ## Questions and support
 
