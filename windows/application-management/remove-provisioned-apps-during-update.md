@@ -17,10 +17,10 @@ When you update a computer running WIndows 10, version 1703 or 1709, you might s
 >[!NOTE]
 >This only applies to first-party apps that shipped with Windows 10. This doesn't apply to third-party apps, Microsoft Store apps, or LOB apps.
 
-To remove a provisioned app, you need to remove the provisioning package. If either of the following circumstances is true, the apps might reappear:
+To remove a provisioned app, you need to remove the provisioning package. The apps might reappear if you removed the packages in one of the following ways:
 
-* If the packages are removed while the wim file is mounted when the device is offline.
-* If the provisioned package is removed while inside of Windows when the device is online.
+* If you removed the packages while the wim file was mounted when Windows was offline.
+* If you removed the packages by running a PowerShell cmdlet on the device while Windows was online.
 
 When this happens, write a registry key for each app you remove. This way, you can use the registry key to indicate to your deployment whether or not to install the app while you're upgrading it.
 
