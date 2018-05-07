@@ -76,17 +76,18 @@ Someone with a Windows Defender ATP Global administrator role has unrestricted a
 
 2.	Click **Add role**. 
 
-3.	Enter the role name, description, and active permissions you’d like to assign to the role.
+3.	Enter the role name, description, and permissions you’d like to assign to the role.
 
 	 - **Role name**
 
 	 - **Description**
 
-	 - **Active permissions**
+	 - **Permissions**
 		  - **View data** - Users can view information in the portal.
 		  - **Investigate alerts** - Users can manage alerts, initiate automated investigations, collect investigation packages, manage machine tags, and export machine timeline.
 		  - **Approve or take action** - Users can take response actions and approve or dismiss pending remediation actions.
 		  - **Manage system settings** - Users can configure settings, SIEM and threat intel API settings, advanced settings, preview features, and automated file uploads.
+		  - **Manage security settings** - Users can configure alert suppression settings, manage allowed/blocked lists for automation, manage folder exclusions for automation, onboard and offboard machines, and manage email notifications.
 		  
 4.	Click **Next** to assign the role to an Azure AD group.
 
@@ -102,13 +103,13 @@ Someone with a Windows Defender ATP Global administrator role has unrestricted a
 
 2.	Click **Edit**.
 
-3.	Modify the details or the groups that the role is a part of. 
+3.	Modify the details or the groups that are assigned to the role. 
 
 4.	Click **Save and close**.
 
 ## Delete roles
 
-1.	Select the role row you'd like to delete.
+1.	Select the role you'd like to delete.
 
 2.	Click the drop-down button and select **Delete role**.
 
