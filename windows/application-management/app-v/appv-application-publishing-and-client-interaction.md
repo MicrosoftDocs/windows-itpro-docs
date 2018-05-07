@@ -834,18 +834,18 @@ When App-V applications are published to a computer with the App-V Client, some 
 The App-V publishing files (manifest and dynamic configuration) provide several extension points that enable the application to integrate with the local operating system. These extension points perform typical application installation tasks, such as placing shortcuts, creating file type associations, and registering components. As these are virtualized applications that are not installed in the same manner a traditional application, there are some differences. The following is a list of extension points covered in this section:
 
 - Shortcuts
-- File Type Associations
-- Shell Extensions
+- File type associations
+- Shell extensions
 - COM
-- Software Clients
+- Software clients
 - Application capabilities
-- URL Protocol Handler
+- URL Protocol handler
 - AppPath
-- Virtual Application
+- Virtual application
 
 ### Shortcuts
 
-The short cut is one of the basic elements of integration with the OS and is the interface for direct user launch of an App-V application. During the publishing and unpublishing of App-V applications.
+The shortcut is one of the basic elements of integration with the OS and is the interface for direct user launch of an App-V application. During the publishing and unpublishing of App-V applications.
 
 From the package manifest and dynamic configuration XML files, the path to a specific application executable can be found in a section similar to the following:
 
@@ -908,10 +908,9 @@ The App-V Client manages the local operating system File Type Associations durin
 
 >[!NOTE]
 >In this example:
->
-  >- `<Name>.xdp</Name>` is the extension
-  >- `<Name>AcroExch.XDPDoc</Name>` is the ProgId value (which points to the adjoining ProgId)
-  >- `<CommandLine>"[{AppVPackageRoot}]\Reader\AcroRd32.exe" "%1"</CommandLine>` is the command line, which points to the application executable
+>- `<Name>.xdp</Name>` is the extension
+>- `<Name>AcroExch.XDPDoc</Name>` is the ProgId value (which points to the adjoining ProgId)
+>- `<CommandLine>"[{AppVPackageRoot}]\Reader\AcroRd32.exe" "%1"</CommandLine>` is the command line, which points to the application executable
 
 ### Shell extensions
 
@@ -921,10 +920,9 @@ Shell extensions are embedded in the package automatically during the sequencing
 
 - Packages that contain embedded shell extensions must be published globally.
 - The “bitness” of the application, Sequencer, and App-V client must match, or the shell extensions won’t work. For example:
-
-    - The version of the application is 64-bit.
-    - The Sequencer is running on a 64-bit computer.
-    - The package is being delivered to a 64-bit App-V client computer.
+  - The version of the application is 64-bit.
+  - The Sequencer is running on a 64-bit computer.
+  - The package is being delivered to a 64-bit App-V client computer.
 
 The following table displays the supported shell extensions.
 
@@ -943,15 +941,15 @@ The following table displays the supported shell extensions.
 
 The App-V Client supports publishing applications with support for COM integration and virtualization. COM integration allows the App-V Client to register COM objects on the local operating system and virtualization of the objects. For the purposes of this document, the integration of COM objects requires additional detail.
 
-App-V supports registering COM objects from the package to the local operating system with two process types: Out-of-process and in-process. Registering COM objects is accomplished with one or a combination of multiple modes of operation for a specific App-V package that includes off, Isolated, and Integrated. The integrated mode is configured for either the out-of-process or in-process type. Configuration of COM modes and types is accomplished with dynamic configuration files (deploymentconfig.xml or userconfig.xml).
+App-V supports registering COM objects from the package to the local operating system with two process types: Out-of-process and In-process. Registering COM objects is accomplished with one or a combination of multiple modes of operation for a specific App-V package that includes Off, Isolated, and Integrated. Integrated mode is configured for either the Out-of-process or In-process type. Configuration of COM modes and types is accomplished with dynamic configuration files (**deploymentconfig.xml** or **userconfig.xml**).
 
 For details on App-V integration, see [Microsoft Application Virtualization 5.0 Integration](https://blogs.technet.microsoft.com/appv/2013/01/03/microsoft-application-virtualization-5-0-integration).
 
 ### Software clients and application capabilities
 
-App-V supports specific software clients and application capabilities extension points that enable virtualized applications to be registered with the software client of the operating system. This enables users to select default programs for operations like email, instant messaging, and media player. This operation is performed in the control panel with the Set Program Access and Computer Defaults, and configured during sequencing in the manifest or dynamic configuration files. Application capabilities are only supported when the App-V applications are published globally.
+App-V supports specific software clients and application capabilities extension points that enable virtualized applications to be registered with the software client of the operating system. This enables users to select default programs for operations like email, instant messaging, and using the media player. This operation is performed in the control panel with **Set Program Access** and **Computer Defaults**, and configured during sequencing in the manifest or dynamic configuration files. Application capabilities are only supported when the App-V applications are published globally.
 
-Example of software client registration of an App-V based mail client.
+The following is an example of software client registration of an App-V-based mail client.
 
 ```XML
     <SoftwareClients Enabled="true">
@@ -994,15 +992,14 @@ Example of software client registration of an App-V based mail client.
 ```
 
 >[!NOTE]
-In this example:
->
-  >- `<ClientConfiguration EmailEnabled="true" />` is the overall Software Clients setting to integrate Email clients
-  >- `<EMail MakeDefault="true">` is the flag to set a particular Email client as the default Email client
-  >- `<MAPILibrary>[{ProgramFilesX86}]\Mozilla Thunderbird\mozMapi32_InUse.dll</MAPILibrary>` is the MAPI dll registration
+>In this example:
+>- `<ClientConfiguration EmailEnabled="true" />` is the overall Software Clients setting to integrate Email clients.
+>- `<EMail MakeDefault="true">` is the flag to set a particular Email client as the default Email client.
+>- `<MAPILibrary>[{ProgramFilesX86}]\Mozilla Thunderbird\mozMapi32_InUse.dll</MAPILibrary>` is the MAPI dll registration.
 
 ### URL Protocol handler
 
-Applications do not always specifically called virtualized applications utilizing file type invocation. For, example, in an application that supports embedding a mailto: link inside a document or web page, the user clicks on a mailto: link and expects to get their registered mail client. App-V supports URL Protocol handlers that can be registered on a per-package basis with the local operating system. During sequencing, the URL protocol handlers are automatically added to the package.
+Virtual applications don't always specifically utilize file type invocation. For, example, in an application that supports embedding a mailto: link inside a document or web page, the user selects the link expecting to access their registered mail client. App-V supports URL Protocol handlers that can be registered on a per-package basis with the local operating system. During sequencing, the URL Protocol handlers are automatically added to the package.
 
 For situations where there is more than one application that could register the specific URL Protocol handler, the dynamic configuration files can be utilized to modify the behavior and suppress or disable this feature for an application that should not be the primary application launched.
 
@@ -1014,15 +1011,15 @@ The AppPath extension point is configured either in the manifest or in the dynam
 
 ### Virtual application
 
-This subsystem provides a list of applications captured during sequencing which is usually consumed by other App-V components. Integration of extension points belonging to a particular application can be disabled using dynamic configuration files. For example, if a package contains two applications, it is possible to disable all extension points belonging to one application, in order to allow only integration of extension points of other application.
+This subsystem provides a list of applications captured during sequencing which is usually consumed by other App-V components. Integration of extension points belonging to a particular application can be disabled using dynamic configuration files. For example, if a package contains two applications, you can disable all extension points belonging to one application to only allow integration of extension points for the other application.
 
 ### Extension point rules
 
-The extension points described above are integrated into the operating system based on how the packages has been published. Global publishing places extension points in public machine locations, where user publishing places extension points in user locations. For example a shortcut that is created on the desktop and published globally will result in the file data for the shortcut (%Public%\\Desktop) and the registry data (HKLM\\Software\\Classes). The same shortcut would have file data (%UserProfile%\\Desktop) and registry data (HKCU\\Software\\Classes).
+The previously described extension points are integrated into the operating system based on how the packages has been published. Global publishing places extension points in public machine locations, where user publishing places extension points in user locations. For example a shortcut that is created on the desktop and published globally will result in the file data for the shortcut (%Public%\\Desktop) and the registry data (HKLM\\Software\\Classes). The same shortcut would have file data (%UserProfile%\\Desktop) and registry data (HKCU\\Software\\Classes).
 
 Extension points are not all published the same way, where some extension points will require global publishing and others require sequencing on the specific operating system and architecture where they are delivered. Below is a table that describes these two key rules.
 
-|Virtual Extension|Requires target OS Sequencing|Requires Global Publishing|
+|Virtual Extension|Requires target OS sequencing|Requires global publishing|
 |---|:---:|:---:|
 |Shortcut|||
 |File Type Association|||
