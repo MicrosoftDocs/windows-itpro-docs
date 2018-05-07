@@ -1264,10 +1264,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Updated the description for AllowWarningForOtherDiskEncryption to describe changes added in Windows 10, version 1803.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top">[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)</td>
-<td style="vertical-align:top"><p>Added new node MaintainProcessorArchitectureOnUpdate in Windows 10, version 1803.</p>
-</td></tr>
-<tr class="odd">
 <td style="vertical-align:top">[DMClient CSP](dmclient-csp.md)</td>
 <td style="vertical-align:top"><p>Added ./User/Vendor/MSFT/DMClient/Provider/[ProviderID]/FirstSyncStatus node. Also added the following nodes in Windows 10, version 1803:</p>
 <ul>
