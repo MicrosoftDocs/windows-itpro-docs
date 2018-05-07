@@ -6,14 +6,20 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
-author: CelesteDG
-ms.author: celested
-ms.date: 03/08/2018
+author: MikeBlodge
+ms.author: MikeBlodge
+ms.date: 05/07/2018
 ---
 
 # Change history for Windows 10 for Education
 
 This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
+
+## April 2018
+New or changed topic | Description
+--- | ---
+[Windows 10 Pro in S mode for Education](s-mode-switch-to-edu.md) | Created a new topic on S mode for Education. |
+[Change to Windows 10 Education from Windows 10 Pro](change-to-pro-education.md) | Updated sections referencing S mode.
 
 ## March 2018
 
@@ -71,7 +77,7 @@ New or changed topic | Description
 
 | New or changed topic | Description |
 | --- | ---- |
-| [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md) | New. If you have an education tenant and use devices Windows 10 Pro or Windows 10 S in your schools, find out how you can opt-in to a free switch to Windows 10 Pro Education. |
+| [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md) | New. If you have an education tenant and use devices Windows 10 Pro or Windows 10 S in your schools, find out how you can opt-in to a free switch to Windows 10 Pro Education. |
 | [Use the Set up School PCs app ](use-set-up-school-pcs-app.md) | Updated. Now includes network tips and updated step-by-step instructions that show the latest updates to the app such as Wi-Fi setup. |
 
 ## RELEASE: Windows 10, version 1703 (Creators Update)
@@ -97,7 +103,7 @@ New or changed topic | Description
 
 | New or changed topic | Description |
 | --- | --- |
-| [Upgrade Windows 10 Pro to Pro Education from Microsoft Store for Business] | New. Learn how to opt-in to a free upgrade to Windows 10 Pro Education. As of May 2017, this topic has been replaced with [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md). |
+| [Upgrade Windows 10 Pro to Pro Education from Microsoft Store for Business] | New. Learn how to opt-in to a free upgrade to Windows 10 Pro Education. As of May 2017, this topic has been replaced with [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md). |
 
 ## November 2016
 
