@@ -24,7 +24,7 @@ To remove a provisioned app, you need to remove the provisioning package. The ap
 
 When this happens, write a registry key for each app you remove. This way, you can use the registry key to indicate to your deployment whether or not to install the app while you're upgrading it.
 
-When you remove a provisioned app, we create a registry key that tells Windows not to reinstall or update that app the next time Windows is updated. If the computer isn't online when you deprovision the app, then we don't creat that registry key. (This behavior is fixed in Windows 10, version 1803. If you're running WIndows 10, version 1709, apply the latest security update to fix it.)
+When you remove a provisioned app, we create a registry key that tells Windows not to reinstall or update that app the next time Windows is updated. If the computer isn't online when you deprovision the app, then we don't create that registry key. (This behavior is fixed in Windows 10, version 1803. If you're running WIndows 10, version 1709, apply the latest security update to fix it.)
 
 To prevent these apps from reappearing at the next update, manually create a registry key for each app, then update the computer.
 
@@ -32,10 +32,10 @@ To prevent these apps from reappearing at the next update, manually create a reg
 
 Use the following steps to create a registry key:
 
-1. Identify any provisioned apps you removed. Record the package name for each app.
-2. Create a .reg file to generate a key for each app. Use [this list of Windows 10, version 1709 registry keys](apps-in-windows-10.md) as your starting point.
-    1. Paste the list of registry keys into a file.
-    2. Remove the registry keys belonging to the apps you want to keep. For example, if you want to keep the Bing Weather app, delete this registry key: HKLM\\Microsoft.BingWeather.
+1. Identify any provisioned apps you want removed. Record the package name for each app.
+2. Create a .reg file to generate a registry key for each app. Use [this list of Windows 10, version 1709 registry keys](apps-in-windows-10.md) as your starting point.
+    1. Paste the list of registry keys into Notepad.
+    2. Remove the registry keys belonging to the apps you want to keep. For example, if you want to keep the Bing Weather app, delete this registry key: `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.BingWeather_8wekyb3d8bbwe]`.
     3. Save the file  with a .txt extension, then right-click the file and change the extension to .reg.
 3. Double-click the .reg file to create the registry keys. You can see the new keys in HKLM\\path-to-reg-keys.
 
