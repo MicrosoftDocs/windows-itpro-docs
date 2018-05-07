@@ -5181,6 +5181,16 @@
 "redirect_document_id": true
 },
 {
+"source_path": "education/windows/switch-to-pro-education.md",
+"redirect_url": "/education/windows/s-mode-switch-to-edu",
+"redirect_document_id": true
+},
+{
+    "source_path": "education/windows/swithc-to-pro-de.md",
+    "redirect_url": "/education/windows/switch-to-pro-education",
+    "redirect_document_id": true
+    },
+{
 "source_path": "windows/client-management/mdm/policy-admx-backed.md",
 "redirect_url": "/windows/client-management/mdm/policy-configuration-service-provider",
 "redirect_document_id": true
@@ -13609,9 +13619,5 @@
 "source_path": "windows/security/threat-protection/windows-defender-atp/settings-windows-defender-advanced-threat-protection.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-atp/time-settings-windows-defender-advanced-threat-protection",
 "redirect_document_id": true
-},
-
-
-
-]
+}]
 }
