@@ -124,7 +124,7 @@ After installing Windows 10 in S mode, use the free [Set up School PCs app](use-
 ## Switch to previously installed Windows 10 editions
 
 If Windows 10 in S mode is not right for you, you can switch to the Windows 10 edition previously installed on your device(s).
-* Education customers can switch devices to Windows 10 Pro Education using the Microsoft Store for Education. For more information, see [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 in S mode](switch-to-pro-education.md).
+* Education customers can switch devices to Windows 10 Pro Education using the Microsoft Store for Education. For more information, see [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 in S mode](change-to-pro-education.md).
 * If you try Windows 10 in S mode and decide to switch back to the previously installed edition within 10 days, you can go back to the previously installed edition using the Windows Recovery option in Settings. For more info, see [Go back to your previous edition of Windows 10](#go-back-to-your-previous-edition-of-windows-10).
 
 ## Device recovery
