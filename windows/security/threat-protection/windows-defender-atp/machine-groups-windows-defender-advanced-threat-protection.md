@@ -39,7 +39,7 @@ As part of the process of creating a machine group, you'll:
 - Rank the machine group relative to other groups after it is created 
 
 >[!NOTE]
->All machine groups are accessible to all users if you don’t assign any Azure AD groups to them.
+>A machine group is accessible to all users if you don’t assign any Azure AD groups to it.
 
 
 ## Add a machine group
@@ -58,7 +58,7 @@ As part of the process of creating a machine group, you'll:
 		>[!TIP]
 		>If you want to group machines by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Manage machine group and tags](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection#manage-machine-group-and-tags).
 
-4.	Review the result of the preview of matched machines. If you are satisfied with the rules, click the **Access** tab.
+4.	Preview several machines that will be matched by this rule. If you are satisfied with the rule, click the **Access** tab.
 
 5.	Assign the user groups that can access the machine group you created. 
 
@@ -72,11 +72,11 @@ As part of the process of creating a machine group, you'll:
 You can promote or demote the rank of a machine group so that it is given higher or lower priority during matching. When a machine is matched to more than one group, it is added only to the highest ranked group. You can also edit and delete groups.
 
 >[!WARNING]
->Deleting a machine group may affect email notification rules. If a machine group that's part of an email notification rule is the only machine group in that rule, that email notification rule will be deleted along with the machine group.
+>Deleting a machine group may affect email notification rules. If a machine group is configured under an email notification rule it will be removed from that rule. If the machine group is the only group configured for an email notification, that email notification rule will be deleted along with the machine group.
 
 By default, machine groups are accessible to all users with portal access. You can change the default behavior by assigning Azure AD user groups to the machine group.
 
-Machines that are not matched to any groups are added to grouped machines (default) group. You cannot change the rank of this group or delete it. However, you can change the remediation level of this group, and define the Azure AD user groups that can access this group.
+Machines that are not matched to any groups are added to Ungrouped machines (default) group. You cannot change the rank of this group or delete it. However, you can change the remediation level of this group, and define the Azure AD user groups that can access this group.
 
 >[!NOTE]
 > - Applying changes to machine group configuration may take up to several minutes.
