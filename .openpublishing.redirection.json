@@ -5178,7 +5178,7 @@
 {
 "source_path": "education/windows/windows-10-pro-to-pro-edu-upgrade.md",
 "redirect_url": "/education/windows/switch-to-pro-education",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "education/windows/switch-to-pro-education.md",
@@ -5188,7 +5188,7 @@
 {
     "source_path": "education/windows/swithc-to-pro-de.md",
     "redirect_url": "/education/windows/switch-to-pro-education",
-    "redirect_document_id": true
+    "redirect_document_id": false
     },
 {
 "source_path": "windows/client-management/mdm/policy-admx-backed.md",
