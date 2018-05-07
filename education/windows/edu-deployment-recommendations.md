@@ -19,7 +19,7 @@ ms.prod: W10
 
 Your privacy is important to us, so we want to provide you with ways to customize the OS privacy settings, as well as some of the apps, so that you can choose what information is shared with Microsoft. To learn more about Microsoft’s commitment to privacy, see [Windows 10 and privacy](https://go.microsoft.com/fwlink/?LinkId=809305). The following sections provide some best practices and specific privacy settings we’d like you to be aware of. Also see [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md) for more information about ways to customize the OS diagnostic data, consumer experiences, Cortana, and search.
 
-We want all students to have the chance to use the apps they need for success in the classroom and all school personnel to have apps they need for their job. Students and school personnel who use assistive technology apps not available in the Microsoft Store for Education, and use devices running Windows 10 S, will be able to configure the device at no additional charge to Windows 10 Pro Education. To learn more about the steps to configure this, see [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md).
+We want all students to have the chance to use the apps they need for success in the classroom and all school personnel to have apps they need for their job. Students and school personnel who use assistive technology apps not available in the Microsoft Store for Education, and use devices running Windows 10 S, will be able to configure the device at no additional charge to Windows 10 Pro Education. To learn more about the steps to configure this, see [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md).
 
 ## Deployment best practices
 
@@ -27,7 +27,7 @@ Keep these best practices in mind when deploying any edition of Windows 10 in sc
 * A Microsoft account is only intended for consumer services. Enterprises and educational institutions should use enterprise versions where possible, such as Skype for Business, OneDrive for Business, and so on. For schools, consider using mobile device management (MDM) or Group Policy to block students from adding a Microsoft account as a secondary account.
 * If schools allow the use of personal accounts by their students to access personal services, schools should be aware that these accounts belong to individuals, not the school.
 * IT administrators, school officials, and teachers should also consider ratings when picking apps from the Microsoft Store.
-* If you have students or school personnel who rely on assistive technology apps that are not available in the Microsoft Store for Education, and who are using a Windows 10 S device, configure their device to Windows 10 Pro Education to allow the download and use of non-Microsoft Store assistive technology apps. See [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md) for more info.
+* If you have students or school personnel who rely on assistive technology apps that are not available in the Microsoft Store for Education, and who are using a Windows 10 S device, configure their device to Windows 10 Pro Education to allow the download and use of non-Microsoft Store assistive technology apps. See [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md) for more info.
 
 ## Windows 10 Contacts privacy settings
 

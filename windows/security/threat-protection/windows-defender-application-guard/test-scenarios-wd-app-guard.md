@@ -175,7 +175,7 @@ You have the option to change each of these settings to work with your enterpris
 
 5.	Check to see the file has been downloaded into This PC > Downloads > Untrusted files.
 
-**To change the download options**
+**To change hardware acceleration options**
 1.	Go to the **Administrative Templates\System\Windows Components\Windows Defender Application Guard\Allow hardware-accelerated rendering for Windows Defender Application Guard** setting.
 
 2.	Click **Enabled**.
