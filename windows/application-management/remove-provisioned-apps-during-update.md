@@ -19,7 +19,7 @@ When you update a computer running WIndows 10, version 1703 or 1709, you might s
 
 To remove a provisioned app, you need to remove the provisioning package. The apps might reappear if you removed the packages in one of the following ways:
 
-* If you removed the packages while the wim file was mounted when Windows was offline.
+* If you removed the packages while the wim file was mounted when the device was offline.
 * If you removed the packages by running a PowerShell cmdlet on the device while Windows was online.
 
 When this happens, write a registry key for each app you remove. This way, you can use the registry key to indicate to your deployment whether or not to install the app while you're upgrading it.
