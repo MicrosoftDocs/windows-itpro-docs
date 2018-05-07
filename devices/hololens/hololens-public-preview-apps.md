@@ -58,7 +58,7 @@ Below, you'll find the device options, and technical requirements, you'll need t
 
 ### Device options
 
-You can use Microsoft Layout with a HoloLens, or with a Windows Mixed Reality immersive headset with motion controllers.
+You can use Microsoft Layout with a HoloLens, or with a Windows Mixed Reality headset with motion controllers.
 
 #### HoloLens requirements
 
@@ -68,7 +68,7 @@ You can use Microsoft Layout with a HoloLens, or with a Windows Mixed Reality im
 
 Alternately, you can get started testing out the RS4 build in advance of May 22. See [HoloLens RS4 Preview](https://docs.microsoft.com/en-us/windows/mixed-reality/hololens-rs4-preview) for instructions on flashing the RS4 build to your device. Be advised that doing so will erase all content on the device, and will put the device on track to receive future pre-released versions of the OS which may exhibit bugs and issues. We recommend using preview builds for testing only.
 
-#### Windows Mixed Reality immersive headset requirements
+#### Windows Mixed Reality headset requirements
 
 | OS requirements                               | Details                                                    |
 |:----------------------------------------------|:-----------------------------------------------------------|
