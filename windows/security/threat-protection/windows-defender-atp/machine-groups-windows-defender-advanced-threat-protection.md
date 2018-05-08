@@ -34,9 +34,9 @@ In Windows Defender ATP, you can create machine groups and use them to:
 
 As part of the process of creating a machine group, you'll:
 - Set the automated remediation level for that group. For more information on remediation levels, see [Use Automated investigation to investigate and remediate threats](automated-investigations-windows-defender-advanced-threat-protection.md).
-- Define a matching rule based on the machine name, domain, tags, and OS platform to determine which machines belong to the group. If a machine is also matched to other groups, it is added only to the highest ranked machine group.
-- Determine access to machine group
-- Rank the machine group relative to other groups after it is created 
+- Specify the matching rule that determines which machine group belongs to the group based on the machine name, domain, tags, and OS platform. If a machine is also matched to other groups, it is added only to the highest ranked machine group.
+- Select the Azure AD user group that should have access to the machine group.
+- Rank the machine group relative to other groups after it is created .
 
 >[!NOTE]
 >All machine groups are accessible to all users if you don’t assign any Azure AD groups to them.
@@ -48,17 +48,12 @@ As part of the process of creating a machine group, you'll:
 
 2.	Click **Add machine group**. 
 
-3.	Set the machine group details, configure an association rule, preview the results, then assign the group to an Azure user group:
+3.	Enter machine group details, specify the matching rule, preview the results, then assign the group to an Azure AD user group.
 
-	 - **Name**
-	 - **Remediation level for automated investigations**
-     - **Description**
-	 - **Matching rule** – you can apply the rule based on machine name, domain, tag, or OS version. 
+	>[!TIP]
+	>If you want to group machines by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Manage machine group and tags](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection#manage-machine-group-and-tags).
 
-		>[!TIP]
-		>If you want to group machines by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Manage machine group and tags](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection#manage-machine-group-and-tags).
-
-4.	Review the result of the preview of matched machines. If you are satisfied with the rules, click the **Access** tab.
+4.	Review the result of the preview of matched machines. If you are satisfied with the rules, click the **User access** tab.
 
 5.	Assign the user groups that can access the machine group you created. 
 
@@ -68,7 +63,7 @@ As part of the process of creating a machine group, you'll:
 6.	Click **Close**. The configuration changes are applied.
 
 
-## Understand matching and manage groups
+## Manage machine groups
 You can promote or demote the rank of a machine group so that it is given higher or lower priority during matching. When a machine is matched to more than one group, it is added only to the highest ranked group. You can also edit and delete groups.
 
 >[!WARNING]
