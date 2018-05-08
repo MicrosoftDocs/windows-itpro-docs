@@ -7,7 +7,7 @@ ms.pagetype: hololens, devices
 ms.sitesec: library
 author: alhopper
 ms.localizationpriority: medium
-ms.date: 05/07/2018
+ms.date: 05/08/2018
 ---
 # Get ready to preview new mixed reality apps for HoloLens
 
@@ -25,7 +25,7 @@ Below, you'll find the technical requirements you'll need to meet in order to di
 
 | Device                     | OS requirements                   | Details                                                    |
 |:---------------------------|:----------------------------------|:-----------------------------------------------------------|
-| HoloLens                   | RS1, build 10.0.14393.0           | See [Manage updates to HoloLens](https://docs.microsoft.com/en-us/HoloLens/hololens-updates) for instructions on using Windows Update for Business, MDM, and Windows Server Update Service (WSUS) to deploy updates to HoloLens.   |
+| HoloLens                   | RS1, build 10.0.14393.0 or above  | See [Manage updates to HoloLens](https://docs.microsoft.com/en-us/HoloLens/hololens-updates) for instructions on using Windows Update for Business, MDM, and Windows Server Update Service (WSUS) to deploy updates to HoloLens.   |
 | Windows 10 PC (optional)   | Any Windows 10 build              | You can use a Windows 10 PC to collaborate with the HoloLens. |
 | Mobile device (optional)   | Android or iOS                    | You can use a mobile device to collaborate with the HoloLens. Inking, annotations, and image insertion are not currently available on mobile.                        |
 
@@ -58,17 +58,17 @@ Below, you'll find the device options, and technical requirements, you'll need t
 
 ### Device options
 
-You can use Microsoft Layout with a HoloLens, or with a Windows Mixed Reality immersive headset with motion controllers.
+You can use Microsoft Layout with a HoloLens, or with a Windows Mixed Reality headset with motion controllers.
 
 #### HoloLens requirements
 
 | OS requirements                   | Details                                                    |
 |:----------------------------------|:-----------------------------------------------------------|
-| HoloLens, with RS4 build          | This build will be available as a HoloLens update on May 22, to align with the app release. Instructions for upgrading to the RS4 OS build are forthcoming. |
+| RS4, build 10.0.17134.77 or above | This build will be available as a HoloLens update on May 22, to align with the app release. Instructions for upgrading to the RS4 OS build are forthcoming. |
 
-Alternately, you can get started testing out the RS4 build in advance of May 22. See [HoloLens RS4 Preview](https://docs.microsoft.com/en-us/windows/mixed-reality/hololens-rs4-preview) for instructions on flashing the RS4 build to your device. Be advised that doing so will erase all content on the device, and will put the device on track to receive future pre-released versions of the OS which may exhibit bugs and issues. We recommend using preview builds for testing only.
+Alternately, you can get started testing out the HoloLens RS4 build in advance of May 22. See [HoloLens RS4 Preview](https://docs.microsoft.com/en-us/windows/mixed-reality/hololens-rs4-preview) for instructions on flashing the RS4 build to your device. Be advised that doing so will erase all content on the device, and will put the device on track to receive future pre-released versions of the OS which may exhibit bugs and issues. We recommend using preview builds for testing only.
 
-#### Windows Mixed Reality immersive headset requirements
+#### Windows Mixed Reality headset requirements
 
 | OS requirements                               | Details                                                    |
 |:----------------------------------------------|:-----------------------------------------------------------|
@@ -83,7 +83,7 @@ Have the following technical requirements in place to start using Microsoft Layo
 |:----------------------------------|:------------------|:------------------|
 | Azure Active Directory (Azure AD) | Required for app distribution through the [Microsoft Store for Business](https://docs.microsoft.com/en-us/microsoft-store/sign-up-microsoft-store-for-business). If you choose not to distribute the app through the Microsoft Store for Business, users can also install Layout on a HoloLens or PC from the [Microsoft Store](https://www.microsoft.com/en-us/store/apps) using their Microsoft Account credentials (MSA). | [Get started with Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/get-started-azure-ad) |
 | Network connectivity              | Internet access is required to download the app, and utilize all of its features. There are no bandwidth requirements.    | |
-| Apps for sharing                  | Video calling or screen sharing requires a separate app, such as Microsoft Remote Assist on HoloLens, or Skype or Skype for Business on Windows Mixed Reality headsets.<br/><br/>A Windows 10 PC that meets the Windows Mixed Reality Ultra specifications is also required for video calling or screen sharing when using Layout with a Windows Mixed Reality headset. | [Remote Assist](#remote-assist) <br/><br/>[Windows Mixed Reality PC hardware guidelines](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) |
+| Apps for sharing                  | Video calling or screen sharing requires a separate app, such as Microsoft Remote Assist on HoloLens, or Skype or Skype for Business on Windows Mixed Reality headsets.<br/><br/>A Windows 10 PC that meets the Windows Mixed Reality Ultra specifications is also required for video calling or screen sharing when using Layout with a Windows Mixed Reality headset. | [Remote Assist](#microsoft-remote-assist) <br/><br/>[Windows Mixed Reality PC hardware guidelines](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) |
 | Import Tool for Microsoft Layout  | The Import Tool for Microsoft Layout is a companion app for Layout that makes model optimization and management easy. The Import Tool is required to transfer existing 3D models from your PC to Microsoft Layout, for viewing and editing on HoloLens or a Windows Mixed Reality headset. To import 3D models, users must download and launch the Import Tool for Microsoft Layout on their PC, available for free from the [Microsoft Store](https://www.microsoft.com/en-us/store/apps) and [Microsoft Store for Business](https://businessstore.microsoft.com/en-us/store) starting May 22nd. The Import Tool is also required to transfer Visio space dimensions to the HoloLens or Windows Mixed Reality headset. |   |
 
 ### Visio Add-in for Microsoft Layout
