@@ -29,7 +29,7 @@ Microsoft Edge works with the following Group Policy settings to help you manage
 Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge\
 
 ## Allow Address bar drop-down list suggestions
->*Supporteded versions: Windows 10, version 1703 or later*
+>*Supported versions: Windows 10, version 1703 or later*
 
 The Address bar drop-down list, when enabled, allows the Address bar drop-down functionality in Microsoft Edge. By default, this policy is enabled. If disabled, you do not see the address bar drop-down functionality and disables the user-defined policy "Show search and site suggestions as I type."  Therefore, because search suggestions are shown in the drop-down, this policy takes precedence over the [Configure search suggestions in Address bar](https://review.docs.microsoft.com/en-us/microsoft-edge/deploy/available-policies?branch=pashort_edge-backlog_vsts15846461#configure-search-suggestions-in-address-bar) or [AllowSearchSuggestionsinAddressBar](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsearchsuggestionsinaddressbar) policy.
 
@@ -46,7 +46,7 @@ If you want to minimize network connections from Microsoft Edge to Microsoft ser
 
  
 ## Allow Adobe Flash
->*Supporteded version: Windows 10*
+>*Supported version: Windows 10*
 
 Adobe Flash is integrated with Microsoft Edge and is updated via Windows Update. By default, this policy is enabled or not configured allowing you to use Adobe Flash Player in Microsoft Edge. 
 
@@ -60,7 +60,7 @@ Adobe Flash is integrated with Microsoft Edge and is updated via Windows Update.
 |Allowed values |<ul><li>**0** - Adobe Flash cannot be used Microsoft Edge.</li><li>**1 (default)** - Adobe Flash can be used in Microsoft Edge. </li></ul> |
 
 ## Allow clearing browsing data on exit
->*Supporteded versions: Windows 10, version 1703*
+>*Supported versions: Windows 10, version 1703*
 
 Your browsing data is the information that Microsoft Edge remembers and stores as you browse websites. Browsing data includes information you entered into forms, passwords, and the websites you visited. By default, this policy is disabled or not configured, the browsing data is not cleared when exiting. When this policy is disabled or not configured, you can turn on and configure the Clear browsing data option under Settings. 
 
@@ -91,7 +91,7 @@ Cortana is integrated with Microsoft Edge, and when enabled, Cortana allows you 
 |Allowed values |<ul><li>**0** - Not allowed.</li><li>**1 (default)** - Allowed.</li></ul> |
 
 ## Allow Developer Tools
->*Supporteded versions: Windows 10, version 1511 or later*
+>*Supported versions: Windows 10, version 1511 or later*
 
 F12 developer tools is a suite of tools to help you build and debug your webpage. By default, this policy is enabled making the F12 Developer Tools availabe to use.  
 
@@ -106,7 +106,7 @@ F12 developer tools is a suite of tools to help you build and debug your webpage
 
 
 ## Allow Extensions
->*Supporteded versions: Windows 10, version 1607 or later*
+>*Supported versions: Windows 10, version 1607 or later*
 
 If you enable this policy, you can personalize and add new features to Microsoft Edge with extensions. By default, this policy is enabled. If you want to prevent others from installing unwanted extensions, disable this policy.
 
@@ -120,7 +120,7 @@ If you enable this policy, you can personalize and add new features to Microsoft
 |Allowed values |<ul><li>**0** - Microsoft Edge extensions are disabled.</li><li>**1 (default)** - Microsoft Edge Extensions are enabled. </li></ul> |
 
 ## Allow InPrivate browsing
->*Supporteded versions: Windows 10, version 1511 or later*
+>*Supported versions: Windows 10, version 1511 or later*
 
 InPrivate browsing, when enabled, prevents your browsing data is not saved on your device. Microsoft Edge deletes temporary data from your device after all your InPrivate tabs are closed. 
 
@@ -134,7 +134,7 @@ InPrivate browsing, when enabled, prevents your browsing data is not saved on yo
 |Allowed values |<ul><li>**0** - InPrivate browsing is disabled.</li><li>**1 (default)** - InPrivate browsing is enabled.</li></ul> |
 
 ## Allow Microsoft Compatibility List
->*Supporteded versions: Windows 10, version 1703 or later*
+>*Supported versions: Windows 10, version 1703 or later*
 
 Microsoft Edge uses the compatibility list that helps websites with known compatibility issues display properly. When enabled, Microsoft Edge checks the list to determine if the website has compatibility issues during browser navigation. By default, this policy is enabled allowing periodic downloads and installation of updates. Visiting any site on the Microsoft compatibility list prompts the employee to use Internet Explorer 11, where the site renders as though it is in whatever version of IE is necessary for it to appear properly. If disabled, the compatibility list is not used.
 
@@ -171,7 +171,7 @@ This policy setting lets you configure what appears when a New Tab page is opene
 
 
 ## Always Enable book library
->*Supporteded versions: Windows 10, version 1709 or later*
+>*Supported versions: Windows 10, version 1709 or later*
 
 This policy settings specifies whether to always show the Books Library in Microsoft Edge. By default, this setting is disabled, which means the library is only visible in countries or regions where available. if enabled, the Books Library is always shown regardless of countries or region of activation.
 
