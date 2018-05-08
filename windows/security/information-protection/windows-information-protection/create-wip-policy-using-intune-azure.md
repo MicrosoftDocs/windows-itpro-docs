@@ -186,7 +186,7 @@ If you’re unsure about what to include for the publisher, you can run this Pow
     ```
     Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the publisher name to enter into the **Publisher** box and `WORDPAD.EXE` is the text to enter into the **File** box.
 
-### Import a list of apps to your Allowed apps list
+### Import a list of apps 
 For this example, we’re going to add an AppLocker XML file to the **Allowed apps** list. You’ll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
 
 **To create a list of Allowed apps using the AppLocker tool**
@@ -264,7 +264,9 @@ For this example, we’re going to add an AppLocker XML file to the **Allowed ap
 
 **To import your list of Allowed apps using Microsoft Intune**
 
-1.	From the **Allowed apps** area, click **Import apps**.
+1.	In **Protected apps**, click **Import apps**.
+
+    ![Import protected apps](images/import-protected-apps.png)
     
     The blade changes to let you add your import file.
     
@@ -279,23 +281,23 @@ If you're running into compatibility issues where your app is incompatible with 
 
 **To exempt a Store app, a Desktop app, or an AppLocker policy file from the Allowed apps list**
 
-1.	From the **App policy** blade, click the name of your policy, and then click **Exempt apps** from the menu that appears.
+1.	In **Mobile apps - App protection policies**, click **Exempt apps**.
     
-    The **Exempt apps** blade appears, showing you any apps that are already included in the list for this policy.
+    ![Exempt apps](image/exempt-apps.png)
 
-2.	From the **Exempt apps** blade, click **Add apps**.
+2.	In **Exempt apps**, click **Add apps**.
 
     Be aware that when you exempt apps, they’re allowed to bypass the WIP restrictions and access your corporate data. To allow apps, see the [Add app rules to your policy](#add-apps-to_your-allowed-apps-list) section of this topic.
     
 3.	Fill out the rest of the app info, based on the type of app you’re adding:
 
-    - **Recommended app.** Follow the instructions in the [Add a Recommended app to your Allowed apps list](#add-a-recommended-app-to_your-allowed-apps-list) section of this topic.
+    - [Add Recommended apps](#add-recommended-apps)
 
-    - **Store app.** Follow the instructions in the [Add a Store app to your Allowed apps list](#add-a-store-app-to_your-allowed-apps-list) section of this topic.
+    - [Add Store apps](#add-store-apps)
 
-    - **Desktop app.** Follow the instructions in the [Add a Desktop app to your Allowed apps list](#add-a-desktop-app-to_your-allowed-apps-list) section of this topic.
+    - [Add Desktop apps](#add-desktop-apps)
 
-    - **AppLocker policy file.** Follow the instructions to create your app list in the [Import a list of apps to your Allowed apps list](#import-a-list-of-apps-to_your-allowed-apps-list) section of this topic, using a list of exempted apps.
+    - [Import apps](#import-a-list-of-apps)
 
 4. Click **OK**.
 
