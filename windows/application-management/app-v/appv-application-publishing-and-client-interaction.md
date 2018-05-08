@@ -20,7 +20,7 @@ The Sequencer creates App-V packages and produces a virtualized application. The
 
 |File|Description|
 |---|---|
-|.appv|- The primary package file, which contains the captured assets and state information from the sequencing process.<br>- Architecture of the package file, publishing information, and registry in a tokenized form that can be reapplied to a machine and to a specific user upon delivery.|
+|.appv|- The primary package file, which contains captured assets and state information from the sequencing process.<br>- Architecture of the package file, publishing information, and registry in a tokenized form that can be reapplied to a machine and to a specific user upon delivery.|
 |.MSI|Executable deployment wrapper that you can use to deploy .appv files manually or by using a third-party deployment platform.|
 |_DeploymentConfig.XML|File used to customize the default publishing parameters for all applications in a package that is deployed globally to all users on a computer that is running the App-V Client.|
 |_UserConfig.XML|File used to customize the publishing parameters for all applications in a package that is a deployed to a specific user on a computer that is running the App-V Client.|
