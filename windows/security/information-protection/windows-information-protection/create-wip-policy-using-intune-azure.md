@@ -23,10 +23,10 @@ Microsoft Intune helps you create and deploy your Windows Information Protection
 >This topic covers creating a Windows Information Protection (WIP) policy for organizations already managing devices by using Mobile Device Management (MDM) solutions. If your organization uses a mobile application management (MAM) solution to deploy your WIP policy to Intune apps without managing devices, you must follow the instructions in the [Create a Windows Information Protection (WIP) policy with MAM using the Azure portal for Microsoft Intune](create-wip-policy-using-mam-intune-azure.md) topic.
 
 ## Add a WIP policy
-After you’ve set up Intune for your organization, you must create a WIP-specific policy.
+Follow these steps to add a WIP policy using Intune.
 
 **To add a WIP policy**
-1.  Open the Microsoft Intune and click **Mobile apps**.
+1.  Open Microsoft Intune and click **Mobile apps**.
 
     ![Open Mobile apps](images/open-mobile-apps.png)
 
@@ -51,26 +51,35 @@ After you’ve set up Intune for your organization, you must create a WIP-specif
 4.  Click **Protected apps** and then click **Add apps**.
 
     ![Add protected apps](images/add-protected-apps.png)
+
+    You can add these types of apps:
+
+    - [Recommended apps](#add-recommended-apps)
+    - [Store apps](#add-store-apps)
+    - [Desktop apps](#add-desktop-apps)
     
-5.  Under **Recommended apps**, select each app you want to access your enterprise data, and then click **OK**.
+### Add recommended apps 
+
+To add **Recommended apps**, select each app you want to access your enterprise data, and then click **OK**.
     
-    The **Allowed apps** blade updates to show you your selected apps.
+The **Allowed apps** blade updates to show you your selected apps.
 
-    ![Microsoft Intune management console: Allowed apps blade with recommended apps](images/wip-azure-allowed-apps-with-apps.png)    
+![Microsoft Intune management console: Allowed apps blade with recommended apps](images/wip-azure-allowed-apps-with-apps.png)    
 
-6.  Alternatively, you can add a Store or desktop app by using the app name and publisher. For example, to add the Power BI Mobile App from the Store, select **Store apps** and type the following and click **OK**: 
+### Add Store apps 
 
-    - **Name**: Microsoft Power BI
-    - **Publisher**: `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`
-    - **Product Name** is `Microsoft.MicrosoftPowerBIForWindows`
+To add **Store apps**, type the app product name and publisher and click **OK**. For example, to add the Power BI Mobile App from the Store, type the following: 
 
-    ![Add Store app](images\add-a-protected-store-app.png)
+- **Name**: Microsoft Power BI
+- **Publisher**: `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`
+- **Product Name**: `Microsoft.MicrosoftPowerBIForWindows`
 
-    To add multiple Store apps, click the elipsis **…**. 
+![Add Store app](images\add-a-protected-store-app.png)
 
-If you don't know the publisher or product name, you can find them for both desktop devices and Windows 10 Mobile phones by following these steps.
+To add multiple Store apps, click the elipsis **…**. 
 
-**To find the publisher and product name values for Store apps without installing them**
+If you don't know the Store app publisher or product name, you can find them for both desktop devices and Windows 10 Mobile phones by following these steps.
+
 1.	Go to the [Microsoft Store for Business](https://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, *Power BI Mobile App*.
 
 2.	Copy the ID value from the app URL. For example, the Power BI Mobile App ID URL is https://www.microsoft.com/en-us/store/p/microsoft-power-bi/9nblgggzlxn1, and you'd copy the ID value, `9nblgggzlxn1`.
@@ -86,24 +95,24 @@ If you don't know the publisher or product name, you can find them for both desk
         }
     ```
 
-4. Copy the `publisherCertificateName` value into the **Publisher** box and copy the `packageIdentityName` value into the **Name** box of Intune.
+4.  Copy the `publisherCertificateName` value into the **Publisher** box and copy the `packageIdentityName` value into the **Name** box of Intune.
 
     >[!Important]
     >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<br><br>For example:<br>
     <code>{<br>"windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",<br>}</code>
 
-**To find the publisher and product name values for apps installed on Windows 10 mobile phones**
-1.	If you need to add mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
 
-    >**Note**<br>Your PC and phone must be on the same wireless network.
+If you need to add Windows 10 mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
 
-2.	On the Windows Phone, go to **Settings**, choose **Update & security**, and then choose **For developers**.
+>**Note**<br>Your PC and phone must be on the same wireless network.
 
-3.	In the **For developers** screen, turn on **Developer mode**, turn on **Device Discovery**, and then turn on **Device Portal**.
+1.	On the Windows Phone, go to **Settings**, choose **Update & security**, and then choose **For developers**.
 
-4.	Copy the URL in the **Device Portal** area into your device's browser, and then accept the SSL certificate.
+2.	In the **For developers** screen, turn on **Developer mode**, turn on **Device Discovery**, and then turn on **Device Portal**.
 
-5.	In the **Device discovery** area, press **Pair**, and then enter the PIN into the website from the previous step.
+3.	Copy the URL in the **Device Portal** area into your device's browser, and then accept the SSL certificate.
+
+4.	In the **Device discovery** area, press **Pair**, and then enter the PIN into the website from the previous step.
 
 6.	On the **Apps** tab of the website, you can see details for the running apps, including the publisher and product names.
 
@@ -115,76 +124,65 @@ If you don't know the publisher or product name, you can find them for both desk
     >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<br><br>For example:<br>
     <code>{<br>"windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",<br>}</code>
 
-### Add a Desktop app to your Allowed apps list
-For this example, we’re going to add WordPad, a desktop app, to the **Allowed apps** list.
+### Add Desktop apps
 
-**To add a Desktop app**
-1.	From the **App policy** blade, click the name of your policy, and then click **Allowed apps** from the menu that appears.
+To add **Desktop apps**, complete the following fields, based on what results you want returned.
 
-    The **Allowed apps** blade appears, showing you any apps that are already included in the list for this policy.
-
-2.	From the **Allowed apps** blade, click **Add apps**.
-
-3.	On the **Add apps** blade, click **Desktop apps** from the dropdown list.
-
-    The blade changes to show boxes for you to add the following, based on what results you want returned:
-
-    <table>
-        <tr>
-            <th>Field</th>
-            <th>Manages</th>
-        </tr>
-        <tr>
-            <td>All fields marked as “*”</td>
-            <td>All files signed by any publisher. (Not recommended)</td>
-        </tr>
-        <tr>
-            <td>Publisher only</td>
-            <td>If you only fill out this field, you’ll get all files signed by the named publisher.<br><br>This might be useful if your company is the publisher and signer of internal line-of-business apps.</td>
-        </tr>
-        <tr>
-            <td>Publisher and Name only</td>
+<table>
+    <tr>
+        <th>Field</th>
+        <th>Manages</th>
+    </tr>
+    <tr>
+        <td>All fields marked as “*”</td>
+        <td>All files signed by any publisher. (Not recommended)</td>
+    </tr>
+    <tr>
+        <td>Publisher only</td>
+        <td>If you only fill out this field, you’ll get all files signed by the named publisher.<br><br>This might be useful if your company is the publisher and signer of internal line-of-business apps.</td>
+    </tr>
+    <tr>
+        <td>Publisher and Name only</td>
             <td>If you only fill out these fields, you’ll get all files for the specified product, signed by the named publisher.</td>
-        </tr>
-        <tr>
-            <td>Publisher, Name, and File only</td>
-            <td>If you only fill out these fields, you’ll get any version of the named file or package for the specified product, signed by the named publisher.</td>
-        </tr>
-        <tr>
-            <td>Publisher, Name, File, and Min version only</td>
-            <td>If you only fill out these fields, you’ll get the specified version or newer releases of the named file or package for the specified product, signed by the named publisher.<br><br>This option is recommended for enlightened apps that weren't previously enlightened.</td>
-        </tr>
-        <tr>
-            <td>Publisher, Name, File, and Max version only</td>
-            <td>If you only fill out these fields, you’ll get the specified version or older releases of the named file or package for the specified product, signed by the named publisher.</td>
-        </tr>
-        <tr>
-            <td>All fields completed</td>
-            <td>If you fill out all fields, you’ll get the specified version of the named file or package for the specified product, signed by the named publisher.</td>
-        </tr>
-    </table>
+    </tr>
+    <tr>
+        <td>Publisher, Name, and File only</td>
+        <td>If you only fill out these fields, you’ll get any version of the named file or package for the specified product, signed by the named publisher.</td>
+    </tr>
+    <tr>
+        <td>Publisher, Name, File, and Min version only</td>
+        <td>If you only fill out these fields, you’ll get the specified version or newer releases of the named file or package for the specified product, signed by the named publisher.<br><br>This option is recommended for enlightened apps that weren't previously enlightened.</td>
+    </tr>
+    <tr>
+        <td>Publisher, Name, File, and Max version only</td>
+        <td>If you only fill out these fields, you’ll get the specified version or older releases of the named file or package for the specified product, signed by the named publisher.</td>
+    </tr>
+    <tr>
+        <td>All fields completed</td>
+        <td>If you fill out all fields, you’ll get the specified version of the named file or package for the specified product, signed by the named publisher.</td>
+    </tr>
+</table>
 
-4.	After you’ve entered the info into the fields, click **OK** to add the app to your **Allowed apps** list.
+After you’ve entered the info into the fields, click **OK** to add the app to your **Allowed apps** list.
 
-    >[!Note]
-    >To add multiple Desktop apps at the same time, you can click the menu **(…)** at the end of the app row, and then continue to add more apps. When you’re done, click **OK**.
+>[!Note]
+>To add multiple Desktop apps at the same time, you can click the menu **(…)** at the end of the app row, and then continue to add more apps. When you’re done, click **OK**.
 
-    ![Microsoft Intune management console: Adding Desktop app info](images/wip-azure-add-desktop-apps.png)
-
-    **To find the Publisher values for Desktop apps**
-    If you’re unsure about what to include for the publisher, you can run this PowerShell command:
+![Microsoft Intune management console: Adding Desktop app info](images/wip-azure-add-desktop-apps.png)
+ 
+If you’re unsure about what to include for the publisher, you can run this PowerShell command:
 
     ```ps1
-        Get-AppLockerFileInformation -Path "<path_of_the_exe>"
+    Get-AppLockerFileInformation -Path "<path_of_the_exe>"
     ```
     Where `"<path_of_the_exe>"` goes to the location of the app on the device. For example, `Get-AppLockerFileInformation -Path "C:\Program Files\Windows NT\Accessories\wordpad.exe"`.
 
     In this example, you'd get the following info:
 
-    ``` json
-        Path                   Publisher
-        ----                   ---------
-        %PROGRAMFILES%\WINDOWS NT\ACCESSORIES\WORDPAD.EXE O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US
+    ```json
+    Path                   Publisher
+    ----                   ---------
+    %PROGRAMFILES%\WINDOWS NT\ACCESSORIES\WORDPAD.EXE O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US
     ```
     Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the publisher name to enter into the **Publisher** box and `WORDPAD.EXE` is the text to enter into the **File** box.
 
