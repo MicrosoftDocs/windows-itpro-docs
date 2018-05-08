@@ -4,6 +4,7 @@ description: Provides guidance on downloading and testing Windows 10 in S mode f
 keywords: Windows 10 in S mode, try, download, school, education, Windows 10 in S mode installer, existing Windows 10 education devices
 ms.mktglfcycl: deploy
 ms.prod: w10
+ms.technology: Windows
 ms.pagetype: edu
 ms.sitesec: library
 ms.localizationpriority: high
