@@ -27,7 +27,7 @@ In the **Website learning report**, you can view a summary of the devices that h
 
 ## Access the WIP Learning reports
 
-1. Open the [Azure portal](http://https://portal.azure.com/). Choose **All services**. Type **Intune** in the text box filter.
+1. Open the [Azure portal](http://portal.azure.com/). Choose **All services**. Type **Intune** in the text box filter.
 
 2. Choose **Intune** > **Mobile Apps**.
 
