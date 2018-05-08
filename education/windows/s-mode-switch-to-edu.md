@@ -5,6 +5,7 @@ keywords: Windows 10 Pro Education in S mode, S mode, system requirements, Overv
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.prod: w10
+ms.technology: Windows
 ms.sitesec: library
 ms.pagetype: edu
 ms.date: 04/30/2018

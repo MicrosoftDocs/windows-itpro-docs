@@ -337,12 +337,13 @@ Each rule name and its associated unique rule identifier are listed with a descr
 ## Release notes
 
 05/02/2018 - SetupDiag v1.1 is released with 34 rules, as a standalone tool available from the Download Center.
-    - A performance enhancment has been added to result in faster rule processing.
-    - Rules output now includes links to support articles, if applicable.
-    - SetupDiag now provides the path and name of files that it is processing.
-    - You can now run SetupDiag by simply clicking on it and then examining the output log file.
-    - An output log file is now always created, whether or not a rule was matched.
-<br>03/30/2018 - SetupDiag v1.0 is released with 26 rules, as a standalone tool available from the Download Center.
+   - A performance enhancment has been added to result in faster rule processing.
+   - Rules output now includes links to support articles, if applicable.
+   - SetupDiag now provides the path and name of files that it is processing.
+   - You can now run SetupDiag by simply clicking on it and then examining the output log file.
+   - An output log file is now always created, whether or not a rule was matched.
+
+03/30/2018 - SetupDiag v1.0 is released with 26 rules, as a standalone tool available from the Download Center.
 
 ## Related topics
 
