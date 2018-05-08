@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 05/04/2018
+ms.date: 05/08/2018
 ---
 
 # Create and manage machine groups in Windows Defender ATP
@@ -44,11 +44,24 @@ As part of the process of creating a machine group, you'll:
 
 ## Add a machine group
 
-1.	In the navigation pane, select **Settings > Permissions > Machine groups**.
+1.	In the navigation pane, select **Settings** > **Machine groups**.
 
 2.	Click **Add machine group**. 
 
-3.	Enter machine group details, specify the matching rule, preview the results, then assign the group to an Azure AD user group. 
+3.	Enter the group name and automation settings and specify the matching rule that determines which machines belong to the group.
+
+    - **Machine group name**
+    - **Automation level**
+	  - **Semi - require approval for any remediation**
+      - **Semi - require approval for non-temp folders remediation**
+      - **Semi - require approval for core folders remediation**
+      - **Full - remediate threats automatically**
+        
+        >[!NOTE]
+        > For more information on automation levels, see Use Automated investigation to investigate and remediate threats.        
+
+	 - **Description**
+	 - **Members**      
 
     >[!TIP]
     >If you want to group machines by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Manage machine group and tags](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection#manage-machine-group-and-tags).

@@ -45,7 +45,7 @@ The email notification includes basic information about the alert and a link to 
 You can create rules that determine the machines and alert severities to send email notifications for and the notification recipients.
 
 
-1. In the navigation pane, select **Settings** > **General** > **Alert notifications**.
+1. In the navigation pane, select **Settings** > **Alert notifications**.
 
 2. Click **Add notification rule**.
 
