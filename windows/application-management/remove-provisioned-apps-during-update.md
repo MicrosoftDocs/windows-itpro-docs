@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.author: helohr
 author: HeidiLohr
-ms.date: 05/07/2018
+ms.date: 05/08/2018
 ---
 # How to keep apps removed from Windows 10 from returning during an update
 
