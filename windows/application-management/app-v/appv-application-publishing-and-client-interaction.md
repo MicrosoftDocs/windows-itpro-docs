@@ -12,7 +12,7 @@ ms.date: 04/19/2017
 
 >Applies to: Windows 10, version 1607
 
-This article provides technical information about common App-V client operations and their integration with the local operating system.
+This article provides technical information about common App-V Client operations and their integration with the local operating system.
 
 ## App-V package files created by the Sequencer
 
@@ -22,8 +22,8 @@ The Sequencer creates App-V packages and produces a virtualized application. The
 |---|---|
 |.appv|- The primary package file, which contains the captured assets and state information from the sequencing process.<br>- Architecture of the package file, publishing information, and registry in a tokenized form that can be reapplied to a machine and to a specific user upon delivery.|
 |.MSI|Executable deployment wrapper that you can use to deploy .appv files manually or by using a third-party deployment platform.|
-|_DeploymentConfig.XML|File used to customize the default publishing parameters for all applications in a package that is deployed globally to all users on a computer that is running the App-V client.|
-|_UserConfig.XML|File used to customize the publishing parameters for all applications in a package that is a deployed to a specific user on a computer that is running the App-V client.|
+|_DeploymentConfig.XML|File used to customize the default publishing parameters for all applications in a package that is deployed globally to all users on a computer that is running the App-V Client.|
+|_UserConfig.XML|File used to customize the publishing parameters for all applications in a package that is a deployed to a specific user on a computer that is running the App-V Client.|
 |Report.xml|Summary of messages resulting from the sequencing process, including omitted drivers, files, and registry locations.|
 |.CAB|Optional: Package accelerator file used to automatically rebuild a previously sequenced virtual application package.|
 |.appvt|Optional: Sequencer template file used to retain commonly reused Sequencer settings.|
@@ -53,11 +53,11 @@ The Sequencer creates App-V packages and produces a virtualized application. The
 </tr>
 <tr class="odd">
 <td align="left"><p>_DeploymentConfig.XML</p></td>
-<td align="left"><p>File used to customize the default publishing parameters for all applications in a package that is deployed globally to all users on a computer that is running the App-V client.</p></td>
+<td align="left"><p>File used to customize the default publishing parameters for all applications in a package that is deployed globally to all users on a computer that is running the App-V Client.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>_UserConfig.XML</p></td>
-<td align="left"><p>File used to customize the publishing parameters for all applications in a package that is a deployed to a specific user on a computer that is running the App-V client.</p></td>
+<td align="left"><p>File used to customize the publishing parameters for all applications in a package that is a deployed to a specific user on a computer that is running the App-V Client.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Report.xml</p></td>
@@ -95,9 +95,9 @@ The appv file contains the following folder and files, which are used when creat
 | Registry.dat | DAT File | Registry keys and values captured during the sequencing process for the package.|
 | StreamMap.xml | XML File | List of files for the primary and publishing feature block. The publishing feature block contains the ICO files and required portions of files (EXE and DLL) for publishing the package. When present, the primary feature block includes files that have been optimized for streaming during the sequencing process.|
 
-## App-V client data storage locations
+## App-V Client data storage locations
 
-The App-V client performs tasks to ensure that virtual applications run properly and work like locally installed applications. The process of opening and running virtual applications requires mapping from the virtual file system and registry to ensure the application has the required components of a traditional application expected by users. This section describes the assets that are required to run virtual applications and lists the location where App-V stores the assets.
+The App-V Client performs tasks to ensure that virtual applications run properly and work like locally installed applications. The process of opening and running virtual applications requires mapping from the virtual file system and registry to ensure the application has the required components of a traditional application expected by users. This section describes the assets that are required to run virtual applications and lists the location where App-V stores the assets.
 
 | Name | Location | Description |
 |---|---|---|
@@ -469,11 +469,11 @@ After the initial stream of any publishing data and the primary feature block, r
 
 ### Package upgrades
 
-App-V Packages require updating throughout the lifecycle of the application. App-V Package upgrades are similar to the package publish operation, as each version will be created in its own PackageRoot location: ```%ProgramData%\App-V\{PkgGUID}\{newVerGUID}```. The upgrade operation is optimized by creating hard links to identical- and streamed-files from other versions of the same package.
+App-V Packages require updating throughout the lifecycle of the application. App-V Package upgrades are similar to the package publish operation, as each version will be created in its own PackageRoot location: ```%ProgramData%\App-V\{PkgGUID}\{newVerGUID}```. The upgrade operation is optimized by creating hard links to identical and streamed files from other versions of the same package.
 
 ### Package removal
 
-The behavior of the App-V Client when packages are removed depends on the method used for removal. Using an App-V full infrastructure to unpublish the application, the user catalog files (machine catalog for globally published applications) are removed, but retains the package store location and COW locations. When the Windows PowerShell cmdlet ```Remove-AppVClientPackge``` is used to remove an App-V Package, the package store location is cleaned. Remember that unpublishing an App-V Package from the Management Server does not perform a Remove operation. Neither operation will remove the Package Store package files.
+The App-V Client's behavior when packages are removed depends on the package removal method. Using an App-V full infrastructure to unpublish the application, the user catalog files (machine catalog for globally published applications) are removed, but retains the package store location and COW locations. When the Windows PowerShell cmdlet ```Remove-AppVClientPackge``` is used to remove an App-V Package, the package store location is cleaned. Remember that unpublishing an App-V Package from the Management Server does not perform a Remove operation. Neither operation will remove the Package Store package files.
 
 ## Roaming registry and data
 
@@ -595,7 +595,7 @@ This completes the successful roaming of application settings that are present i
 
 This process will re-create both the local and network locations for AppData and remove the registry record of the time stamp.
 
-## App-V client application lifecycle management
+## App-V Client application lifecycle management
 
 In an App-V Full Infrastructure, after applications are sequenced they are managed and published to users or computers through the App-V Management and Publishing servers. This section details the operations that occur during the common App-V application lifecycle operations (Add, publishing, launch, upgrade, and removal) and the file and registry locations that are changed and modified from the App-V Client perspective. The App-V Client operations are input as PowerShell commands on the computer running the App-V Client.
 
@@ -773,7 +773,7 @@ If you try to upgrade a package that is currently in use, the upgrade task is pl
 | User-based tasks, such as publishing a package to a user | The pending task will be performed after the user logs off and then logs back on. |
 | Globally based tasks, such as enabling a connection group globally | The pending task will be performed when the computer is shut down and then restarted. |
 
-When a task is placed in a pending state, the App-V client also generates a registry key for the pending task, as follows:
+When a task is placed in a pending state, the App-V Client also generates a registry key for the pending task, as follows:
 
 | User-based or globally based task | Where the registry key is generated |
 |---|---|
@@ -919,10 +919,10 @@ Shell extensions are embedded in the package automatically during the sequencing
 #### Requirements for using shell extensions
 
 - Packages that contain embedded shell extensions must be published globally.
-- The “bitness” of the application, Sequencer, and App-V client must match, or the shell extensions won’t work. For example:
+- The “bitness” of the application, Sequencer, and App-V Client must match, or the shell extensions won’t work. For example:
   - The version of the application is 64-bit.
   - The Sequencer is running on a 64-bit computer.
-  - The package is being delivered to a 64-bit App-V client computer.
+  - The package is being delivered to a 64-bit App-V Client computer.
 
 The following table displays the supported shell extensions.
 
@@ -1233,12 +1233,12 @@ During publishing of an App-V package with side-by-side assemblies, the App-V Cl
 
 ## Client logging
 
-The App-V client logs information to the Windows Event log in standard ETW format. The specific App-V events can be found in the event viewer under **Applications and Services Logs\\Microsoft\\AppV\\Client**.
+The App-V Client logs information to the Windows Event log in standard ETW format. The specific App-V events can be found in the event viewer under **Applications and Services Logs\\Microsoft\\AppV\\Client**.
 
 There are three specific categories of events recorded:
 
 - **Admin**: Logs events for configurations applied to the App-V Client, and also contains the primary warnings and errors.
-- **Operational**: Logs the general App-V execution and usage of individual components, creating an audit log of the App-V client's completed App-V operations.
+- **Operational**: Logs the general App-V execution and usage of individual components, creating an audit log of the App-V Client's completed App-V operations.
 - **Virtual Application**: Logs virtual application launches and use of virtualization subsystems.
 
 ## Have a suggestion for App-V?
