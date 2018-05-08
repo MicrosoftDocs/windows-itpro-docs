@@ -85,11 +85,6 @@ The default machine group is configured for semi-automatic remediation. This mea
 When a pending action is approved, the entity is then remediated and this new state is reflected in the **Entities** tab of the investigation.
 
 
-## Understand the remediation levels for automated investigations
-You can create machine groups and set remediation levels for automated investigations. The following table explains the various levels of remediations and the conditions associated with them.
-
-
-
 ## Manage Automated investigations
 By default, the Automated investigations list displays investigations initiated in the last week. You can also choose to select other time ranges from the drop-down menu or specify a custom range. 
 

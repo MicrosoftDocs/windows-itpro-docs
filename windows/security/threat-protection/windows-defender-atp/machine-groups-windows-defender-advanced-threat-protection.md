@@ -58,7 +58,7 @@ As part of the process of creating a machine group, you'll:
       - **Full - remediate threats automatically**
         
         >[!NOTE]
-        > For more information on automation levels, see Use Automated investigation to investigate and remediate threats.        
+        > For more information on automation levels, see [Understand the Automated investigation flow](automated-investigations-windows-defender-advanced-threat-protection.md#understand-the-automated-investigation-flow).        
 
 	 - **Description**
 	 - **Members**      
