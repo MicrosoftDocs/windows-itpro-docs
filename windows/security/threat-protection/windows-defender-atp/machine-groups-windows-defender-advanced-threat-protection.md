@@ -50,8 +50,8 @@ As part of the process of creating a machine group, you'll:
 
 3.	Enter machine group details, specify the matching rule, preview the results, then assign the group to an Azure AD user group. 
 
-		>[!TIP]
-		>If you want to group machines by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Manage machine group and tags](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection#manage-machine-group-and-tags).
+    >[!TIP]
+    >If you want to group machines by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Manage machine group and tags](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection#manage-machine-group-and-tags).
 
 4.	Preview several machines that will be matched by this rule. If you are satisfied with the rule, click the **Access** tab.
 
@@ -63,7 +63,7 @@ As part of the process of creating a machine group, you'll:
 6.	Click **Close**. The configuration changes are applied.
 
 
-## Understand matching and manage groups
+## Manage machine groups
 You can promote or demote the rank of a machine group so that it is given higher or lower priority during matching. When a machine is matched to more than one group, it is added only to the highest ranked group. You can also edit and delete groups.
 
 >[!WARNING]
@@ -75,9 +75,6 @@ Machines that are not matched to any groups are added to Ungrouped machines (def
 
 >[!NOTE]
 > - Applying changes to machine group configuration may take up to several minutes.
-
-
-
 
 
 ## Related topic
