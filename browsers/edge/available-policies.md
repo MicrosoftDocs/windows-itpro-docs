@@ -9,24 +9,44 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 title: Group Policy and Mobile Device Management settings for Microsoft Edge (Microsoft Edge for IT Pros)
 ms.localizationpriority: high
-ms.date: 4/30/2018 #Previsou release date 09/13/2017
+ms.date: 4/30/2018 
 ---
 
 # Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge
 
-> Applies to: Windows 10, Windows 10 Mobile
+> Applies to: Windows 10, Windows 10 Mobile
 
 Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings. Group Policy objects (GPOs) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences.
 
 By using Group Policy and Intune, you can set up a policy setting once, and then copy that setting onto many computers. For example, you can set up multiple security settings in a GPO that is linked to a domain, and then apply all of those settings to every computer in the domain.
 
 > [!NOTE]
-> For more info about the tools you can use to change your Group Policy objects, see the Internet Explorer 11 topics, [Group Policy and the Group Policy Management Console (GPMC)](https://go.microsoft.com/fwlink/p/?LinkId=617921), [Group Policy and the Local Group Policy Editor](https://go.microsoft.com/fwlink/p/?LinkId=617922), [Group Policy and the Advanced Group Policy Management (AGPM)](https://go.microsoft.com/fwlink/p/?LinkId=617923), and [Group Policy and Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=617924).
+> For more info about the tools you can use to change your Group Policy objects, see the Internet Explorer 11 topics, [Group Policy and the Group Policy Management Console (GPMC)](https://go.microsoft.com/fwlink/p/?LinkId=617921), [Group Policy and the Local Group Policy Editor](https://go.microsoft.com/fwlink/p/?LinkId=617922), [Group Policy and the Advanced Group Policy Management (AGPM)](https://go.microsoft.com/fwlink/p/?LinkId=617923), and [Group Policy and Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=617924).
 
 
 Microsoft Edge works with the following Group Policy settings to help you manage your company's web browser configurations. The Group Policy settings are found in the Group Policy Editor in the following location: 
 
 Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge\
+
+## Allow a shared books folder
+>*Supported versions: Windows 10, version 1803*<br>
+>*Default setting: None*
+
+You can configure Microsoft Edge to use a shared folder to store books from the Books Library.
+ 
+If enabled, a shared books folder is allowed.
+ 
+If disabled, a shared books folder not allowed. 
+
+**MDM settings in Microsoft Intune** 
+|   |   |
+|---|---|
+|MDM name |Browser/[UseSharedFolderForBooks](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-usesharedfolderforbooks) |
+|Supported devices |Desktop  |
+|URI full path |./Vendor/MSFT/Policy/Config/Browser/UseSharedFolderForBooks  |
+|Data type |Integer  |
+|Allowed values |<ul><li>**0** - No folder shared.</li><li>**1** - Use a shared folder.</li></ul> |
+
 
 ## Allow Address bar drop-down list suggestions
 >*Supported versions: Windows 10, version 1703 or later*
@@ -62,7 +82,7 @@ Adobe Flash is integrated with Microsoft Edge and is updated via Windows Update.
 ## Allow clearing browsing data on exit
 >*Supported versions: Windows 10, version 1703*
 
-Your browsing data is the information that Microsoft Edge remembers and stores as you browse websites. Browsing data includes information you entered into forms, passwords, and the websites you visited. By default, this policy is disabled or not configured, the browsing data is not cleared when exiting. When this policy is disabled or not configured, you can turn on and configure the Clear browsing data option under Settings. 
+Your browsing data is the information that Microsoft Edge remembers and stores as you browse websites. Browsing data includes information you entered forms, passwords, and the websites you visited. By default, this policy is disabled or not configured, the browsing data is not cleared when exiting. When this policy is disabled or not configured, you can turn on and configure the Clear browsing data option under Settings. 
 
 
 **Microsoft Intune to manage your MDM settings**
@@ -75,10 +95,27 @@ Your browsing data is the information that Microsoft Edge remembers and stores a
 |Allowed values |<ul><li>**0 (default)** - Browsing data is not cleared on exit. The type of browsing data to clear can be configured by the employee in the Clear browsing data options under Settings.</li><li>**1** - Browsing data is cleared on exit.</li></ul> |
 
 
+## Allow configuration updates for the Books Library
+>*Supported versions: Windows 10, version 1803*<br>
+>*Default setting: Enabled or not configured*
+
+Microsoft Edge automatically retrieves the configuration data for the Books Library, when this policy is enabled or
+not configured. If disabled, Microsoft Edge does not retrieve the Books configuration data.
+
+**MDM settings in Microsoft Intune** 
+|   |   |
+|---|---|
+|MDM name |Browser/[AllowConfigurationUpdateForBooksLibrary](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowconfigurationupdateforbookslibrary) |
+|Supported devices |Desktop  |
+|URI full path |./Vendor/MSFT/Policy/Config/Browser/AllowConfigurationUpdateForBooksLibrary  |
+|Data type |Integer  |
+|Allowed values |<ul><li>**0** - Disable. Microsoft Edge cannot retrieve a configuration.</li><li>**1 (default)** - Enable (default). Microsoft Edge can retrieve a configuration for Books Library.</li></ul> |
+
+
 ## Allow Cortana
 >*Supported versions: Windows 10, version 1607 or later*
 
-Cortana is integrated with Microsoft Edge, and when enabled, Cortana allows you use the voice assistant on your device. If disabled, Cortana is not available for use, but you can search to find items on your device. 
+Cortana is integrated with Microsoft Edge, and when enabled, Cortana allows you to use the voice assistant on your device. If disabled, Cortana is not available for use, but you can search to find items on your device. 
 
 **Microsoft Intune to manage your MDM settings**
 |   |   |
@@ -93,7 +130,7 @@ Cortana is integrated with Microsoft Edge, and when enabled, Cortana allows you 
 ## Allow Developer Tools
 >*Supported versions: Windows 10, version 1511 or later*
 
-F12 developer tools is a suite of tools to help you build and debug your webpage. By default, this policy is enabled making the F12 Developer Tools availabe to use.  
+F12 developer tools is a suite of tools to help you build and debug your webpage. By default, this policy is enabled making the F12 Developer Tools available to use.  
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -103,6 +140,23 @@ F12 developer tools is a suite of tools to help you build and debug your webpage
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/AllowDeveloperTools  |
 |Data type | Integer |
 |Allowed values |<ul><li>**0** - The F12 Developer Tools are disabled.</li><li>**1 (default)** - The F12 Developer Tools are enabled.</li></ul> |
+
+## Allow extended telemetry for the Books tab
+>*Supported versions: Windows 10, version 1803*<br>
+>*Default setting: Disabled or not configured*
+
+If you enable this policy, both basic and additional diagnostic data is sent to Microsoft about the books you are
+reading from Books in Microsoft Edge. By default, this policy is disabled or not configured and only basic
+diagnostic data, depending on your device configuration, is sent to Microsoft.
+
+**MDM settings in Microsoft Intune** 
+|   |   |
+|---|---|
+|MDM name |Browser/[EnableExtendedBooksTelemetry](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-enableextendedbookstelemetry) |
+|Supported devices |Desktop  |
+|URI full path |./Vendor/MSFT/Policy/Config/Browser/EnableExtendedBooksTelemetry  |
+|Data type |Integer  |
+|Allowed values |<ul><li>**0 (default)** - Disable. No additional diagnostic data.</li><li>**1** - Enable. Additional diagnostic data for schools.</li></ul> |
 
 
 ## Allow Extensions
@@ -151,7 +205,7 @@ Microsoft Edge uses the compatibility list that helps websites with known compat
 ## Allow search engine customization
 >*Supported versions: Windows 10, version 1703 or later*
 
-This policy setting allows search engine customization for domain-joined or MDM-enrolled devices only. For example, you can change the default search engine or add a new search engine. By default, this setting is enabled allowing you to add new search engines and change the default under Settings. If disabled, you cannot add search enginess or change the default.
+This policy setting allows search engine customization for domain-joined or MDM-enrolled devices only. For example, you can change the default search engine or add a new search engine. By default, this setting is enabled allowing you to add new search engines and change the default under Settings. If disabled, you cannot add search engines or change the default.
 
 For more information, see [Microsoft browser extension policy](https://docs.microsoft.com/en-us/legal/windows/agreements/microsoft-browser-extension-policy).
 
@@ -162,12 +216,18 @@ For more information, see [Microsoft browser extension policy](https://docs.micr
 |Supported devices |Desktop<br>Mobile  |
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/AllowSearchEngineCustomization  |
 |Data type | Integer |
-|Allowed values |<ul><li>**0** - Additional search engines are not allowed and the default cannot be changed in the Address bar.</li><li>**1 (default)** - Additional search engines are allowed and the default can be changed in the Address bar.</li></ul> |
+|Allowed values |<ul><li>**0** - Additional search engines are not allowed, and the default cannot be changed in the Address bar.</li><li>**1 (default)** - Additional search engines are allowed, and the default can be changed in the Address bar.</li></ul> |
 
 ## Allow web content on New Tab page
 >*Supported versions: Windows 10*
 
-This policy setting lets you configure what appears when a New Tab page is opened in Microsoft Edge. By default, this setting is disabled or not configured, which means you cannot customize their New Tab page. If enabled, you can customize their New Tab page. 
+This policy setting lets you configure what appears when Microsoft Edge opens a new tab. By default, Microsoft Edge opens the New Tab page. 
+
+If you enable this setting, Microsoft Edge opens a new tab with the New Tab page.  
+
+If you disable this setting, Microsoft Edge opens a new tab with a blank page. If you use this setting, employees can't change it.  
+
+If you don't configure this setting, employees can choose how new tabs appears.
 
 
 ## Always Enable book library
@@ -189,7 +249,7 @@ This policy settings specifies whether to always show the Books Library in Micro
 
 This policy setting, when enabled, lets you add up to five additional search engines. Employees cannot remove these search engines, but they can set any one as the default. By default, this setting is not configured and does not allow additional search engines to be added. If disabled, the search engines added are deleted.
 
-For each additional search engine you add, specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/browser/search-provider-discovery/).
+For each additional search engine, you add, specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/browser/search-provider-discovery/).
 
 This setting does not set the default search engine. For that, you must use the "Set default search engine" setting.
 
@@ -233,7 +293,7 @@ This policy setting specifies whether cookies are allowed. By default, this sett
 ## Configure Do Not Track
 >*Supported versions: Windows 10*
 
-This policy setting specifies whether Do Not Track requests to websites is allowed. By default, this setting is not configured allowing you to choose whether or not to send tracking information. If enabled, Do Not Track requests are always sent to websites asking for tracking information. If disabled, Do Not Track requests are never sent. 
+This policy setting specifies whether Do Not Track requests to websites is allowed. By default, this setting is not configured allowing you to choose if to send tracking information. If enabled, Do Not Track requests are always sent to websites asking for tracking information. If disabled, Do Not Track requests are never sent. 
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -246,35 +306,18 @@ This policy setting specifies whether Do Not Track requests to websites is allow
 
 
 ## Configure Favorites
->*Supported versions: Windows 10, version 1709*
+>*Supported versions: Microsoft Edge on Windows 10, version 1511 or later*
+This policy setting lets you configure the default list of Favorites that appear for your employees. Employees can change their favorites by adding or removing items at any time.
 
-This policy setting allows you to configure a default list of Favorites that appear for your employee, which they cannot modify, sort, move, export or delete. By default, this setting is disabled or not configured allowing you to customize the Favorites list, such as adding folders to organize their favorites.  If enabled, you are not allowed to add, import, or change anything in the Favorites list. As part of this, the Save a Favorite, Import settings, and context menu items (such as Create a new folder) are turned off.
+If you enable this setting, you can configure what default Favorites appear for your employees. If this setting is enabled, you must also provide a list of Favorites in the Options section. This list is imported after your policy is deployed.
 
-Specify the URL which points to the file that has all the data for provisioning favorites (in html format). 
-
-URL can be specified as:
-- HTTP location: "SiteList"="http://localhost:8080/URLs.html"
-- Local network: "SiteList"="\network\shares\URLs.html"
-- Local file: "SiteList"="file:///c:\Users\\Documents\URLs.html"
-
-You can export a set of favorites from Edge and use that html file for provisioning user machines. 
-
->[!Important]
->Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops you from syncing their favorites between Internet Explorer and Microsoft Edge. 
-
-**Microsoft Intune to manage your MDM settings** 
-|   |   |
-|---|---|
-|MDM name |[ProvisionFavorites](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-provisionfavorites) |
-|Supported devices |Desktop<br>Mobile  |
-|URI full path |./Vendor/MSFT/Policy/Config/Browser/ProvisionFavorites  |
-|Data type | String |
+If you disable or don't configure this setting, employees will see the Favorites that they set in the Favorites hub.
 
 
 ## Configure Password Manager
 >*Supported versions: Windows 10*
 
-This policy setting specifies whether saving and managing passwords locally on the device is allowed. By default, this setting is enabled allowing you to save their passwords locally. If not configured, you can choose whether or not to save and manage passwords locally. If disabled, saving and managing passwords locally is turned off. 
+This policy setting specifies whether saving and managing passwords locally on the device is allowed. By default, this setting is enabled allowing you to save their passwords locally. If not configured, you can choose if to save and manage passwords locally. If disabled, saving and managing passwords locally is turned off. 
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -330,7 +373,7 @@ This policy setting specifies your Start pages for domain-joined or MDM-enrolled
 ## Configure the Adobe Flash Click-to-Run setting
 >*Supported versions: Windows 10, version 1703 or later*
 
-This policy setting specifies whether you must take action, such as clicking the content or a Click-to-Run button, before seeing content in Adobe Flash. By default, this setting is enabled. when the setting is enabled, you must click the content, Click-to-Run button, or have the site appear on an auto-allow list before before the Adobe Flash content loads. If disabled, Adobe Flash loads and runs automatically.
+This policy setting specifies whether you must take action, such as clicking the content or a Click-to-Run button, before seeing content in Adobe Flash. By default, this setting is enabled. When the setting is enabled, you must click the content, Click-to-Run button, or have the site appear on an auto-allow list before the Adobe Flash content loads. If disabled, Adobe Flash loads and runs automatically.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -362,7 +405,7 @@ This policy setting lets you configure whether to use Enterprise Mode and the En
 ## Configure Windows Defender SmartScreen
 >*Supported versions: Windows 10*
 
-This policy setting specifies whether Windows Defender SmartScreen is allowed. By default, this setting is enabled or turned on and you cannot turn it off. If disabled, Windows Defender SmartScreen is turned off and you cannot turn it on. If not configured, you can choose whether to use Windows Defender SmartScreen.
+This policy setting specifies whether Windows Defender SmartScreen is allowed. By default, this setting is enabled or turned on, and you cannot turn it off. If disabled, Windows Defender SmartScreen is turned off, and you cannot turn it on. If not configured, you can choose whether to use Windows Defender SmartScreen.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -391,7 +434,7 @@ This policy setting specifies whether the lockdown on the Start pages is disable
 ## Do not sync
 >*Supported versions: Windows 10*
 
-This policy setting specifies whether you can use the Sync your Settings option to sync their settings to and from their device. By default, this setting is disabled or not configured, which means the Sync your Settings options are turned on, letting you pick what can sync on their device. If enabled, the Sync your Settings options are turned off and none of the Sync your Setting groups are synced on the device. You can use the Allow users to turn syncing on option to turn the feature off by default, but to let the employee change this setting. For information about what settings are sync'ed, see [About sync setting on Windows 10 devices](http://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices).
+This policy setting specifies whether you can use the Sync your Settings option to sync their settings to and from their device. By default, this setting is disabled or not configured, which means the Sync your Settings options are turned on, letting you pick what can sync on their device. If enabled, the Sync your Settings options are turned off and none of the Sync your Setting groups are synced on the device. You can use the Allow users to turn syncing on the option to turn the feature off by default, but to let the employee change this setting. For information about what settings are synced, see [About sync setting on Windows 10 devices](http://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices).
 
 **Microsoft Intune to manage your MDM settings**
 |   |   |
@@ -495,6 +538,7 @@ This policy setting specifies whether Microsoft can collect information to creat
 |Data type | Integer |
 |Allowed values |<ul><li>**0 (default)** - Microsoft servers will be contacted if a site is pinned to Start from Microsoft Edge.</li><li>**1** - Microsoft servers will not be contacted if a site is pinned to Start from Microsoft Edge.</li></ul> |
 
+
 ## Prevent the First Run webpage from opening on Microsoft Edge
 >*Supported versions: Windows 10, version 1703 or later*
 
@@ -513,7 +557,7 @@ This policy setting specifies whether to enable or disable the First Run webpage
 >*Supported versions: Windows 10, version 1511 or later*
 
 
-This policy setting specifies whether localhost IP address are visible or hiddle while making phone calls to the WebRTC protocol. By default, this setting is disabled or not configured (turned off), which means the localhost IP address are visible. If enabled (turned on), localhost IP addresses are hidden. 
+This policy setting specifies whether localhost IP address is visible or hidden while making phone calls to the WebRTC protocol. By default, this setting is disabled or not configured (turned off), which means the localhost IP address is visible. If enabled (turned on), localhost IP addresses are hidden. 
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -523,6 +567,33 @@ This policy setting specifies whether localhost IP address are visible or hiddle
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/PreventUsingLocalHostIPAddressForWebRTC  |
 |Data type | Integer |
 |Allowed values |<ul><li>**0 (default)** - Shows an employee's LocalHost IP address while using the WebRTC protocol.</li><li>**1** - Does not show an employee's LocalHost IP address while using the WebRTC protocol.</li></ul> |
+
+## Provision Favorites
+>*Supported versions: Windows 10, version 1709*
+
+You can configure a default list of favorites that appear for your users in Microsoft Edge. 
+
+If disabled or not configured, a default list of favorites is not defined in Microsoft Edge. In this case, users can customize the Favorites list, such as adding folders for organizing, adding, or removing favorites.
+
+If enabled, a default list of favorites is defined for users in Microsoft Edge. Users are not allowed to add, import, or change the Favorites list. In this case, the Save a Favorite, Import settings, and context menu options (such as Create a new folder) are turned off. 
+
+To define a default list of favorites, you can export favorites from Microsoft Edge and use the HTML file for provisioning user machines. In HTML format, specify the URL which points to the file that has all the data for provisioning favorites.
+
+URL can be specified as:
+- HTTP location: "SiteList"="http://localhost:8080/URLs.html"
+- Local network: "SiteList"="\network\shares\URLs.html"
+- Local file: "SiteList"="file:///c:\Users\\Documents\URLs.html"
+
+>[!Important]
+>You can only enable either this policy or the Keep favorites in sync between Internet Explorer and Microsoft Edge policy, but not both. Enabling both stops you from syncing favorites between Internet Explorer and Microsoft Edge. 
+
+**Microsoft Intune to manage your MDM settings** 
+|   |   |
+|---|---|
+|MDM name |[ProvisionFavorites](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-provisionfavorites) |
+|Supported devices |Desktop<br>Mobile  |
+|URI full path |./Vendor/MSFT/Policy/Config/Browser/ProvisionFavorites  |
+|Data type | String |
 
 
 ## Send all intranet sites to Internet Explorer 11
@@ -561,7 +632,7 @@ To set the default search engine, you must specify a link to the OpenSearch XML 
 >*Supported versions: Windows 10, version 1607 and later*
 
 
-This policy setting specifies whether you see an additional page in Microsoft Edge when opening sites that are configured to open in Internet Explorer using the Enterprise Site List. By default, this policy is disabled, which means no additional pages display. If enabled, you see an additional page.
+This policy setting specifies whether you see an additional page in Microsoft Edge when opening sites that are configured to open in Internet Explorer using the Enterprise Site List. By default, this policy is disabled, which means no additional page’s display. If enabled, you see an additional page.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -571,9 +642,6 @@ This policy setting specifies whether you see an additional page in Microsoft Ed
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/ShowMessageWhenOpeningSitesInInteretExplorer  |
 |Data type | Integer |
 |Allowed values |<ul><li>**0 (default)** - Doesn’t show an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.</li><li>**1** - Shows an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.</li></ul> |
-
-
-
 
 ## Related topics
 * [Mobile Device Management (MDM) settings]( https://go.microsoft.com/fwlink/p/?LinkId=722885)
