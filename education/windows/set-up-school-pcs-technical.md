@@ -3,6 +3,7 @@ title: Set up School PCs app technical reference
 description: Describes the changes that the Set up School PCs app makes to a PC.
 keywords: shared cart, shared PC, school, set up school pcs
 ms.prod: w10
+ms.technology: Windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
