@@ -172,19 +172,20 @@ After you’ve entered the info into the fields, click **OK** to add the app to 
  
 If you’re unsure about what to include for the publisher, you can run this PowerShell command:
 
-    ```ps1
-    Get-AppLockerFileInformation -Path "<path_of_the_exe>"
-    ```
-    Where `"<path_of_the_exe>"` goes to the location of the app on the device. For example, `Get-AppLockerFileInformation -Path "C:\Program Files\Windows NT\Accessories\wordpad.exe"`.
+```ps1
+Get-AppLockerFileInformation -Path "<path_of_the_exe>"
+```
+Where `"<path_of_the_exe>"` goes to the location of the app on the device. For example, `Get-AppLockerFileInformation -Path "C:\Program Files\Windows NT\Accessories\wordpad.exe"`.
 
-    In this example, you'd get the following info:
+In this example, you'd get the following info:
 
-    ```json
-    Path                   Publisher
-    ----                   ---------
-    %PROGRAMFILES%\WINDOWS NT\ACCESSORIES\WORDPAD.EXE O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US
-    ```
-    Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the publisher name to enter into the **Publisher** box and `WORDPAD.EXE` is the text to enter into the **File** box.
+```
+Path                   Publisher
+----                   ---------
+%PROGRAMFILES%\WINDOWS NT\ACCESSORIES\WORDPAD.EXE O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US
+```
+
+Where `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the **Publisher** name and `WORDPAD.EXE` is the **File** name.
 
 ### Import a list of apps 
 For this example, we’re going to add an AppLocker XML file to the **Allowed apps** list. You’ll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
