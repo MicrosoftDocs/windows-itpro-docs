@@ -26,90 +26,54 @@ Microsoft Intune helps you create and deploy your Windows Information Protection
 After you’ve set up Intune for your organization, you must create a WIP-specific policy.
 
 **To add a WIP policy**
-1.  Open the Microsoft Intune mobile application management console, click **All settings**, and then click **App policy**.
+1.  Open the Microsoft Intune and click **Mobile apps**.
 
-    ![Microsoft Intune management console: App policy link](images/wip-azure-portal-start.png)
+    ![Open Mobile apps](iamges/open-mobile-apps.png)
 
-2.  In the **App policy** screen, click **Add a policy**, and then fill out the fields:
+2. In **Mobile apps**, click **App protection policies**.
+
+    ![App protection policies](images/app-protection-policies.png)
+
+3.  In the **App policy** screen, click **Add a policy**, and then fill out the fields:
     - **Name.** Type a name (required) for your new policy.
 
     - **Description.** Type an optional description.
 
-    - **Platform.** Choose **Windows 10** as the supported platform for your policy.
+    - **Platform.** Choose **Windows 10**.
 
-    - **Enrollment state.** Choose **With enrollment** as the enrollment state for your policy.
+    - **Enrollment state.** Choose **With enrollment**.
 
-        ![Microsoft Intune management console: Create your new policy in the Add a policy blade](images/wip-azure-portal-add-policy.png)
+        ![Add a mobile app policy](images/add-a-mobile-app-policy.png)
 
         >[!Important]
-        >Choosing **With enrollment** only applies for organizations using MDM. If you're using MAM, you must use these instructions, [Create and deploy Windows Information Protection (WIP) app protection policy with Intune](https://docs.microsoft.com/en-us/intune/deploy-use/create-windows-information-protection-policy-with-intune), instead.
+        >Choosing **With enrollment** only applies for organizations using MDM. If you're using MAM, you must use these instructions instead: [Create and deploy Windows Information Protection (WIP) app protection policy with Intune](https://docs.microsoft.com/en-us/intune/deploy-use/create-windows-information-protection-policy-with-intune).
 
-3.  Click **Create**.
+4.  Click **Protected apps** and then click **Add apps**.
+
+    ![Add protected apps](images/add-protected-apps.png)
     
-    The policy is created and appears in the table on the **App Policy** screen.
-
-    >[!NOTE]
-    >Optionally, you can also add your apps and set your settings from the **Add a policy** blade, but for the purposes of this documentation, we recommend instead that you create the policy first, and then use the subsequent menus that become available.
-
-## Add apps to your Allowed apps list
-During the policy-creation process in Intune, you can choose the apps you want to give access to your enterprise data through WIP. Apps included in this list can protect data on behalf of the enterprise and are restricted from copying or moving enterprise data to unprotected apps.
-
-The steps to add your apps are based on the type of template being applied. You can add a recommended app, a store app (also known as a Universal Windows Platform (UWP) app), or a signed Windows desktop app.
-
->[!Important]
->Enlightened apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, WIP-unaware apps might not respect the corporate network boundary, and WIP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.<br><br>Care must be taken to get a support statement from the software provider that their app is safe with WIP before adding it to your **Allowed apps** list. If you don’t get this statement, it’s possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
-
-### Add a Recommended app to your Allowed apps list
-For this example, we’re going to add Microsoft Edge, a recommended app, to the **Allowed apps** list.
-
-**To add a recommended app**
-1.  From the **App policy** blade, click the name of your policy, and then click **Allowed apps** from the menu that appears.
-    
-    The **Allowed apps** blade appears, showing you any apps that are already included in the list for this policy.
-
-    ![Microsoft Intune management console: Viewing the recommended apps that you can add to your policy](images/wip-azure-allowed-apps-pane.png)
-
-2.  From the **Allowed apps** blade, click **Add apps**.
-    
-    The **Add apps** blade appears, showing you all **Recommended apps**.
-
-    ![Microsoft Intune management console: Adding recommended apps to your policy](images/wip-azure-add-recommended-apps.png)
-
-3.  Select each app you want to access your enterprise data, and then click **OK**.
+5.  Under **Recommended apps**, select each app you want to access your enterprise data, and then click **OK**.
     
     The **Allowed apps** blade updates to show you your selected apps.
 
     ![Microsoft Intune management console: Allowed apps blade with recommended apps](images/wip-azure-allowed-apps-with-apps.png)    
 
-### Add a Store app to your Allowed apps list
-For this example, we’re going to add Microsoft Power BI, a store app, to the **Allowed apps** list.
+6.  Alternatively, you can add a Store or desktop app by using the app name and publisher. For example, to add the Power BI Mobile App from the Store, select **Store apps** and type the following and click **OK**: 
 
-**To add a Store app**
-1.	From the **App policy** blade, click the name of your policy, and then click **Allowed apps** from the menu that appears.
-    
-    The **Allowed apps** blade appears, showing you any apps that are already included in the list for this policy.
+    - **Name**: Microsoft Power BI
+    - **Publisher**: `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`
+    - **Product Name** is `Microsoft.MicrosoftPowerBIForWindows`
 
-2.	From the **Allowed apps** blade, click **Add apps**.
+    ![Add Store app](iamges\add-a-protected-store-app.png)
 
-3.	On the **Add apps** blade, click **Store apps** from the dropdown list.
-    
-    The blade changes to show boxes for you to add a publisher and app name.
-
-4.	Type the name of the app and the name of its publisher, and then click **OK**. For this UWP app example, the **Publisher** is `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US` and the Product **name** is `Microsoft.MicrosoftPowerBIForWindows`.
-
-5.	After you’ve entered the info into the fields, click **OK** to add the app to your **Allowed apps** list.
-
-    >[!NOTE]
-    >To add multiple Store apps at the same time, you can click the menu **(…)** at the end of the app row, and then continue to add more apps. When you’re done, click **OK**.
-
-    ![Microsoft Intune management console: Adding Store app info](images/wip-azure-add-store-apps.png)
+    To add multiple Store apps, click the elipsis **…**. 
 
 If you don't know the publisher or product name, you can find them for both desktop devices and Windows 10 Mobile phones by following these steps.
 
 **To find the publisher and product name values for Store apps without installing them**
-1.	Go to the [Microsoft Store for Business](https://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, *Microsoft Power BI*.
+1.	Go to the [Microsoft Store for Business](https://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, *Power BI Mobile App*.
 
-2.	Copy the ID value from the app URL. For example, Microsoft Power BI ID URL is https://www.microsoft.com/en-us/store/p/microsoft-power-bi/9nblgggzlxn1, and you'd copy the ID value, `9nblgggzlxn1`.
+2.	Copy the ID value from the app URL. For example, the Power BI Mobile App ID URL is https://www.microsoft.com/en-us/store/p/microsoft-power-bi/9nblgggzlxn1, and you'd copy the ID value, `9nblgggzlxn1`.
 
 3.	In a browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values. For example, run https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9nblgggzlxn1/applockerdata, where `9nblgggzlxn1` is replaced with your ID value.
     
