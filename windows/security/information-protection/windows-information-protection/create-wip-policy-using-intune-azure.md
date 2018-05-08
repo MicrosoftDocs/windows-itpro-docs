@@ -28,7 +28,7 @@ After you’ve set up Intune for your organization, you must create a WIP-specif
 **To add a WIP policy**
 1.  Open the Microsoft Intune and click **Mobile apps**.
 
-    ![Open Mobile apps](iamges/open-mobile-apps.png)
+    ![Open Mobile apps](images/open-mobile-apps.png)
 
 2. In **Mobile apps**, click **App protection policies**.
 
@@ -64,7 +64,7 @@ After you’ve set up Intune for your organization, you must create a WIP-specif
     - **Publisher**: `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`
     - **Product Name** is `Microsoft.MicrosoftPowerBIForWindows`
 
-    ![Add Store app](iamges\add-a-protected-store-app.png)
+    ![Add Store app](images\add-a-protected-store-app.png)
 
     To add multiple Store apps, click the elipsis **…**. 
 
