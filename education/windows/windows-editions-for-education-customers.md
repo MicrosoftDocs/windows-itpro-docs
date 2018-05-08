@@ -61,7 +61,7 @@ Customers who deploy Windows 10 Enterprise are able to configure the product to 
 For any other questions, contact [Microsoft Customer Service and Support](https://support.microsoft.com/en-us).
 
 ## Related topics
-* [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md)
+* [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md)
 * [Windows deployment for education](http://aka.ms/edudeploy)
 * [Windows 10 upgrade paths](https://go.microsoft.com/fwlink/?LinkId=822787)
 * [Volume Activation for Windows 10](https://go.microsoft.com/fwlink/?LinkId=822788)
