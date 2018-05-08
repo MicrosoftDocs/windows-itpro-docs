@@ -283,11 +283,11 @@ If you're running into compatibility issues where your app is incompatible with 
 
 1.	In **Mobile apps - App protection policies**, click **Exempt apps**.
     
-    ![Exempt apps](image/exempt-apps.png)
+    ![Exempt apps](images/exempt-apps.png)
 
 2.	In **Exempt apps**, click **Add apps**.
 
-    Be aware that when you exempt apps, they’re allowed to bypass the WIP restrictions and access your corporate data. To allow apps, see the [Add app rules to your policy](#add-apps-to_your-allowed-apps-list) section of this topic.
+    Be aware that when you exempt apps, they’re allowed to bypass the WIP restrictions and access your corporate data. 
     
 3.	Fill out the rest of the app info, based on the type of app you’re adding:
 
