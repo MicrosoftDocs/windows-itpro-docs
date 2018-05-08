@@ -1215,30 +1215,30 @@ The following example shows the combination of the Manifest, Deployment Configur
 
 ## Side-by-side assemblies
 
-App-V supports automatic packaging of side-by-side (SxS) assemblies during sequencing and deployment on the client during virtual application publishing. App-V supports capturing SxS assemblies during sequencing for assemblies not present on the sequencing machine. For assemblies consisting of Visual C++ (Version 8 and newer) or MSXML run-time, the Sequencer will automatically detect and capture these dependencies even if they weren't installed during monitoring. The side-by-side assemblies feature removes the limitations of previous versions of App-V, where the App-V Sequencer did not capture assemblies already present on the sequencing workstation, and privatizing the assemblies which limited to one bit version per package. This behavior resulted in App-V applications deployed to clients missing the required SxS assemblies, causing application launch failures. This forced the packaging process to document and then ensure that all assemblies required for packages were locally installed on the user’s client operating system to ensure support for the virtual applications. Based on the number of assemblies and the lack of application documentation for the required dependencies, this task was both a management and implementation challenge.
+App-V supports automatic packaging of side-by-side assemblies during sequencing and deployment on the client during virtual application publishing. App-V also supports capturing side-by-side assemblies during sequencing for assemblies not present on the sequencing machine. For assemblies consisting of Visual C++ (Version 8 and newer) or MSXML run-time, the Sequencer will automatically detect and capture these dependencies even if they weren't installed during monitoring. The side-by-side assemblies feature removes the limitations of previous versions of App-V, where the App-V Sequencer did not capture assemblies already present on the sequencing workstation, and privatizing the assemblies which limited to one bit version per package. This behavior resulted in App-V applications deployed to clients missing the required side-by-side assemblies, causing application launch failures. This forced the packaging process to document and then ensure that all assemblies required for packages were locally installed on the user’s client operating system to ensure support for the virtual applications. Based on the number of assemblies and the lack of application documentation for the required dependencies, this task was both a management and implementation challenge.
 
-Side-by-side assembly support in App-V has the following features.
+Side-by-side assembly support in App-V has the following features:
 
-- Automatic captures of SxS assembly during Sequencing, regardless of whether the assembly was already installed on the sequencing workstation.
-- The App-V Client automatically installs required SxS assemblies to the client computer at publishing time when they are not present.
+- Automatic captures of side-by-side assembly during Sequencing, regardless of whether the assembly was already installed on the sequencing workstation.
+- The App-V Client automatically installs required side-by-side assemblies to the client computer at publishing time if they aren't already installed.
 - The Sequencer reports the VC run-time dependency in Sequencer reporting mechanism.
 - The Sequencer allows opting to not package the assemblies that are already installed on the Sequencer, supporting scenarios where the assemblies have previously been installed on the target computers.
 
-### Automatic publishing of SxS assemblies
+### Automatic publishing of side-by-side assemblies
 
-During publishing of an App-V package with SxS assemblies the App-V Client will check for the presence of the assembly on the machine. If the assembly does not exist, the client will deploy the assembly to the machine. Packages that are part of connection groups will rely on the Side by Side assembly installations that are part of the base packages, as the connection group does not contain any information about assembly installation.
+During publishing of an App-V package with side-by-side assemblies, the App-V Client will check for the presence of the assembly on the machine. If the assembly does not exist, the client will deploy the assembly to the machine. Packages that are part of connection groups will rely on the side-by-side assembly installations in the base packages, as the connection groups don't contain any information about assembly installation.
 
 >[!NOTE]
 >Unpublishing or removing a package with an assembly does not remove the assemblies for that package.
 
 ## Client logging
 
-The App-V client logs information to the Windows Event log in standard ETW format. The specific App-V events can be found in the event viewer, under Applications and Services Logs\\Microsoft\\AppV\\Client.
+The App-V client logs information to the Windows Event log in standard ETW format. The specific App-V events can be found in the event viewer under **Applications and Services Logs\\Microsoft\\AppV\\Client**.
 
-There are three specific categories of events recorded described below.
+There are three specific categories of events recorded:
 
-- **Admin**: Logs events for configurations being applied to the App-V Client, and contains the primary warnings and errors.
-- **Operational**: Logs the general App-V execution and usage of individual components creating an audit log of the App-V operations that have been completed on the App-V Client.
+- **Admin**: Logs events for configurations applied to the App-V Client, and also contains the primary warnings and errors.
+- **Operational**: Logs the general App-V execution and usage of individual components, creating an audit log of the App-V client's completed App-V operations.
 - **Virtual Application**: Logs virtual application launches and use of virtualization subsystems.
 
 ## Have a suggestion for App-V?
