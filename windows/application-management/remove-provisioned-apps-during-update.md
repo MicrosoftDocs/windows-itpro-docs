@@ -22,7 +22,7 @@ To remove a provisioned app, you need to remove the provisioning package. The ap
 * If you removed the packages while the wim file was mounted when the device was offline.
 * If you removed the packages by running a PowerShell cmdlet on the device while Windows was online. Although the apps won't appear for new users, you'll still see the apps for the user account you signed in as.
 
-When you remove a provisioned app, we create a registry key that tells Windows not to reinstall or update that app the next time Windows is updated. If the computer isn't online when you deprovision the app, then we don't create that registry key. (This behavior is fixed in Windows 10, version 1803. If you're running WIndows 10, version 1709, apply the latest security update to fix it.)
+When you remove a provisioned app, we create a registry key that tells Windows not to reinstall or update that app the next time Windows is updated. If the computer isn't online when you deprovision the app, then we don't create that registry key. (This behavior is fixed in Windows 10, version 1803. If you're running Windows 10, version 1709, apply the latest security update to fix it.)
 
 >[!NOTE]
 >If you remove a provisioned app while Windows is online, it's only removed for *new users*—the user that you signed in as will still have that provisioned app. That's because the registry key created when you deprovision the app only applies to new users created *after* the key is created. This doesn't happen if you remove the provisioned app while Windows is offline.
