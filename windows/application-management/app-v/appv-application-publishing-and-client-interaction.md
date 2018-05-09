@@ -497,45 +497,8 @@ App-V registry roaming falls into two scenarios, as shown in the following table
 
 |Scenario|Description|
 |---|---|
-|Applications that are run as standard users|When a standard user launches an App-V application, both HKLM and HKCU for App-V applications are stored in the HKCU hive on the machine. This presents as two distinct paths:<br>- HKLM: HKCU\SOFTWARE\Classes\AppV\Client\Packages\\{PkgGUID}\REGISTRY\MACHINE\SOFTWARE<br>- HKCU: HKCU\SOFTWARE\Microsoft\AppV\Client\Packages\\{PkgGUID}\REGISTRY\USER\\{UserSID}\SOFTWARE<br>The locations are enabled for roaming based on the operating system settings.|
-|Applications that are run with elevation|When an application is launched with elevation:<br>- HKLM data is stored in the HKLM hive on the local computer<br>- HKCU data is stored in the User Registry location<br>In this scenario, these settings are not roamed with normal operating system roaming configurations, and the resulting registry keys and values are stored in the following location:<br>- HKLM\SOFTWARE\Microsoft\AppV\Client\Packages\\{PkgGUID}\\{UserSID}\REGISTRY\MACHINE\SOFTWARE<br>- HKCU\SOFTWARE\Microsoft\AppV\Client\Packages\\{PkgGUID}\\Registry\User\\{UserSID}\SOFTWARE|
-
-<table>
-<colgroup>
-<col width="25%" />
-<col width="75%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Scenario</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Applications that are run as standard users</p></td>
-<td align="left"><p>When a standard user launches an App-V application, both HKLM and HKCU for App-V applications are stored in the HKCU hive on the machine. This presents as two distinct paths:</p>
-<ul>
-<li><p>HKLM: HKCU\SOFTWARE\Classes\AppV\Client\Packages\\{PkgGUID}\REGISTRY\MACHINE\SOFTWARE</p></li>
-<li><p>HKCU: HKCU\SOFTWARE\Microsoft\AppV\Client\Packages\\{PkgGUID}\REGISTRY\USER\\{UserSID}\SOFTWARE</p></li>
-</ul>
-<p>The locations are enabled for roaming based on the operating system settings.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Applications that are run with elevation</p></td>
-<td align="left"><p>When an application is launched with elevation:</p>
-<ul>
-<li><p>HKLM data is stored in the HKLM hive on the local computer</p></li>
-<li><p>HKCU data is stored in the User Registry location</p></li>
-</ul>
-<p>In this scenario, these settings are not roamed with normal operating system roaming configurations, and the resulting registry keys and values are stored in the following location:</p>
-<ul>
-<li><p>HKLM\SOFTWARE\Microsoft\AppV\Client\Packages\\{PkgGUID}\\{UserSID}\REGISTRY\MACHINE\SOFTWARE</p></li>
-<li><p>HKCU\SOFTWARE\Microsoft\AppV\Client\Packages\\{PkgGUID}\\Registry\User\\{UserSID}\SOFTWARE</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+|Applications that are run as standard users|When a standard user launches an App-V application, both HKLM and HKCU for App-V applications are stored in the HKCU hive on the machine. This presents as two distinct paths:<br><br>- HKLM's location is  HKCU\SOFTWARE\Classes\AppV\Client\Packages\\{PkgGUID}\REGISTRY\MACHINE\SOFTWARE<br>- HKCU's location is HKCU\SOFTWARE\Microsoft\AppV\Client\Packages\\{PkgGUID}\REGISTRY\USER\\{UserSID}\SOFTWARE<br><br>The locations are enabled for roaming based on the operating system settings.|
+|Applications that are run with elevation|When an application is launched with elevation:<br><br>- HKLM data is stored in the HKLM hive on the local computer<br>- HKCU data is stored in the User Registry location<br><br>In this scenario, these settings are not roamed with normal operating system roaming configurations, and the resulting registry keys and values are stored in the following locations:<br><br>- HKLM's location is HKLM\SOFTWARE\Microsoft\AppV\Client\Packages\\{PkgGUID}\\{UserSID}\REGISTRY\MACHINE\SOFTWARE<br>- HKCU's location is  HKCU\SOFTWARE\Microsoft\AppV\Client\Packages\\{PkgGUID}\\Registry\User\\{UserSID}\SOFTWARE|
 
 ### App-V and folder redirection
 
@@ -607,10 +570,10 @@ The App-V application lifecycle tasks are triggered at user sign in (default), m
 
 The publishing refresh process comprises several smaller operations that are performed on the App-V Client. Since App-V is an application virtualization technology and not a task scheduling technology, the Windows Task Scheduler is utilized to enable the process when the user signs in, the machine turns on, and at scheduled intervals. The client configuration during setup listed in the previous section is the preferred method when distributing the client to a large group of computers with the correct settings. These client settings can be configured with the following Windows PowerShell cmdlets:
 
-- **Add-AppVPublishingServer:** Configures the client with an App-V Publishing Server that provides App-V packages.
-- **Set-AppVPublishingServer:** Modifies the current settings for the App-V Publishing Server.
-- **Set-AppVClientConfiguration:** Modifies the currents settings for the App-V Client.
-- **Sync-AppVPublishingServer:** Initiates an App-V Publishing Refresh process manually. This is also utilized in the scheduled tasks created during configuration of the publishing server.
+- **Add-AppVPublishingServer** configures the client with an App-V Publishing Server that provides App-V packages.
+- **Set-AppVPublishingServer** modifies the current settings for the App-V Publishing Server.
+- **Set-AppVClientConfiguration** modifies the currents settings for the App-V Client.
+- **Sync-AppVPublishingServer** initiates an App-V Publishing Refresh process manually. This is also utilized in the scheduled tasks created during configuration of the publishing server.
 
 The following sections will elaborate what goes on during the publishing refresh process.
 
@@ -1037,103 +1000,6 @@ Extension points are not all published the same way, where some extension points
 |Shell Extensions|X||
 |Browser Helper Object|X|X|
 |Active X Object|X|X|
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Virtual Extension</th>
-<th align="left">Requires target OS Sequencing</th>
-<th align="left">Requires Global Publishing</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Shortcut</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>File Type Association</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>URL Protocols</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>AppPaths</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>COM Mode</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Software Client</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Application Capabilities</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Context Menu Handler</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Drag-and-drop Handler</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Data Object Handler</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Property Sheet Handler</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Infotip Handler</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Column Handler</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Shell Extensions</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Browser Helper Object</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Active X Object</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-</tr>
-</tbody>
-</table>
 
 ## Dynamic configuration processing
 
