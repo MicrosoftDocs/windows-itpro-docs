@@ -11,6 +11,7 @@ searchScope:
 author: trudyha
 ms.author: trudyha
 ms.date: 3/30/2018
+ms.technology: Windows
 ---
 
 # Working with Microsoft Store for Education

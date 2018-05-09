@@ -11,6 +11,7 @@ searchScope:
   - Store
 ms.author: trudyha
 ms.date: 07/27/2017
+ms.technology: Windows
 ---
 
 # Get Minecraft: Education Edition with Windows 10 device promotion

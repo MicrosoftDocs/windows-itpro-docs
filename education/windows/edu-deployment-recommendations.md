@@ -9,6 +9,7 @@ author: CelesteDG
 ms.author: celested
 ms.date: 10/13/2017
 ms.prod: W10
+ms.technology: Windows
 ---
 
 # Deployment recommendations for school IT administrators

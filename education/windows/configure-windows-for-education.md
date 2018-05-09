@@ -5,6 +5,7 @@ keywords: Windows 10 deployment, recommendations, privacy settings, school, educ
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.prod: w10
+ms.technology: Windows
 ms.pagetype: edu
 ms.localizationpriority: high
 author: CelesteDG
