@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
 ms.localizationpriority: medium
-ms.date: 10/16/2017
+ms.date: 05/09/2018
 ---
 
 # Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune
@@ -281,7 +281,7 @@ For this example, we’re going to add an AppLocker XML file to the **Allowed ap
 
     The file imports and the apps are added to your **Allowed app** list.
 
-### Add exempt apps to your policy
+### Exempt apps from a WIP policy
 If you're running into compatibility issues where your app is incompatible with WIP, but still needs to be used with enterprise data, you can exempt the app from the WIP restrictions. This means that your apps won't include auto-encryption or tagging and won't honor your network restrictions. It also means that your exempted apps might leak.
 
 **To exempt a Store app, a Desktop app, or an AppLocker policy file from the Allowed apps list**
