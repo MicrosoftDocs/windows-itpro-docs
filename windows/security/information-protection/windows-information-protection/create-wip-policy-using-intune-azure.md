@@ -163,10 +163,10 @@ To add **Desktop apps**, complete the following fields, based on what results yo
     </tr>
 </table>
 
-After you’ve entered the info into the fields, click **OK** to add the app to your **Allowed apps** list.
+After you’ve entered the info into the fields, click **OK**.
 
 >[!Note]
->To add multiple Desktop apps at the same time, you can click the menu **(…)** at the end of the app row, and then continue to add more apps. When you’re done, click **OK**.
+>To add multiple Desktop apps, click the elipsis **…**. When you’re done, click **OK**.
 
 ![Microsoft Intune management console: Adding Desktop app info](images/wip-azure-add-desktop-apps.png)
  
@@ -175,7 +175,11 @@ If you’re unsure about what to include for the publisher, you can run this Pow
 ```ps1
 Get-AppLockerFileInformation -Path "<path_of_the_exe>"
 ```
-Where `"<path_of_the_exe>"` goes to the location of the app on the device. For example, `Get-AppLockerFileInformation -Path "C:\Program Files\Windows NT\Accessories\wordpad.exe"`.
+Where `"<path_of_the_exe>"` goes to the location of the app on the device. For example:
+
+```ps1
+Get-AppLockerFileInformation -Path "C:\Program Files\Windows NT\Accessories\wordpad.exe"
+```
 
 In this example, you'd get the following info:
 
