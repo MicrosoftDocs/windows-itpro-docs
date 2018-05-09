@@ -10,9 +10,9 @@ ms.date: 05/09/2018
 ---
 # How to keep apps removed from Windows 10 from returning during an update
 
->Applies to: Windows 10, version 1703; Windows 10 version 1709; Windows 10, version 1803
+>Applies to: Windows 10 (Semi-Annual Channel)
 
-When you update a computer running Windows 10, version 1703 or 1709, you might see provisioned apps that you previously removed return post-update. This can happen if the computer was offline when you removed the apps.
+When you update a computer running Windows 10, version 1703 or 1709, you might see provisioned apps that you previously removed return post-update. This can happen if the computer was offline when you removed the apps. This issue was fixed in Windows 10, version 1803.
 
 >[!NOTE]
 >This only applies to first-party apps that shipped with Windows 10. This doesn't apply to third-party apps, Microsoft Store apps, or LOB apps.
