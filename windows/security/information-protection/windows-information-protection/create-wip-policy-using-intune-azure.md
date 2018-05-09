@@ -17,7 +17,7 @@ ms.date: 05/09/2018
 -   Windows 10, version 1607 and later
 -   Windows 10 Mobile, version 1607 and later (except Microsoft Azure Rights Management, which is only available on the desktop)
 
-Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network.
+Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your protected apps, your WIP-protection level, and how to find enterprise data on the network.
 
 >[!Important]
 >This topic covers creating a Windows Information Protection (WIP) policy for organizations already managing devices by using Mobile Device Management (MDM) solutions. If your organization uses a mobile application management (MAM) solution to deploy your WIP policy to Intune apps without managing devices, you must follow the instructions in the [Create a Windows Information Protection (WIP) policy with MAM using the Azure portal for Microsoft Intune](create-wip-policy-using-mam-intune-azure.md) topic.
@@ -62,9 +62,9 @@ Follow these steps to add a WIP policy using Intune.
 
 To add **Recommended apps**, select each app you want to access your enterprise data, and then click **OK**.
     
-The **Allowed apps** blade updates to show you your selected apps.
+The **Protected apps** blade updates to show you your selected apps.
 
-![Microsoft Intune management console: Allowed apps blade with recommended apps](images/wip-azure-allowed-apps-with-apps.png)    
+![Microsoft Intune management console: Recommended apps](images/wip-azure-allowed-apps-with-apps.png)    
 
 ### Add Store apps 
 
@@ -192,9 +192,9 @@ Path                   Publisher
 Where `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the **Publisher** name and `WORDPAD.EXE` is the **File** name.
 
 ### Import a list of apps 
-For this example, we’re going to add an AppLocker XML file to the **Allowed apps** list. You’ll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
+For this example, we’re going to add an AppLocker XML file to the **Protected apps** list. You’ll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
 
-**To create a list of Allowed apps using the AppLocker tool**
+**To create a list of protected apps using the AppLocker tool**
 1.	Open the Local Security Policy snap-in (SecPol.msc).
     
 2.	In the left blade, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**.
@@ -205,11 +205,11 @@ For this example, we’re going to add an AppLocker XML file to the **Allowed ap
 
     The **Create Packaged app Rules** wizard appears.
 
-4. On the **Before You Begin** page, click **Next**.
+4.  On the **Before You Begin** page, click **Next**.
 
     ![Create Packaged app Rules wizard, showing the Before You Begin page](images/wip-applocker-secpol-wizard-1.png)
 
-5. On the **Permissions** page, make sure the **Action** is set to **Allow** and the **User or group** is set to **Everyone**, and then click **Next**.
+5.  On the **Permissions** page, make sure the **Action** is set to **Allow** and the **User or group** is set to **Everyone**, and then click **Next**.
 
     ![Create Packaged app Rules wizard, showing the Before You Begin page](images/wip-applocker-secpol-wizard-2.png)
 
@@ -217,19 +217,19 @@ For this example, we’re going to add an AppLocker XML file to the **Allowed ap
 
     ![Create Packaged app Rules wizard, showing the Publisher](images/wip-applocker-secpol-wizard-3.png)
 
-7. In the **Select applications** box, pick the app that you want to use as the reference for your rule, and then click **OK**. For this example, we’re using Microsoft Dynamics 365.
+7.  In the **Select applications** box, pick the app that you want to use as the reference for your rule, and then click **OK**. For this example, we’re using Microsoft Dynamics 365.
 
     ![Create Packaged app Rules wizard, showing the Select applications page](images/wip-applocker-secpol-wizard-4.png)
 
-8. On the updated **Publisher** page, click **Create**.
+8.  On the updated **Publisher** page, click **Create**.
 
     ![Create Packaged app Rules wizard, showing the Microsoft Dynamics 365 on the Publisher page](images/wip-applocker-secpol-wizard-5.png)
 
-9. Click **No** in the dialog box that appears, asking if you want to create the default rules. You must not create default rules for your WIP policy.
+9.  Click **No** in the dialog box that appears, asking if you want to create the default rules. You must not create default rules for your WIP policy.
 
     ![Create Packaged app Rules wizard, showing the Microsoft Dynamics 365 on the Publisher page](images/wip-applocker-default-rule-warning.png)
 
-9. Review the Local Security Policy snap-in to make sure your rule is correct.
+9.  Review the Local Security Policy snap-in to make sure your rule is correct.
 
     ![Local security snap-in, showing the new rule](images/wip-applocker-secpol-create.png)
 
@@ -267,24 +267,24 @@ For this example, we’re going to add an AppLocker XML file to the **Allowed ap
 
 12.	After you’ve created your XML file, you need to import it by using Microsoft Intune.
 
-**To import your list of Allowed apps using Microsoft Intune**
+**To import a list of protected apps using Microsoft Intune**
 
 1.	In **Protected apps**, click **Import apps**.
 
     ![Import protected apps](images/import-protected-apps.png)
     
-    The blade changes to let you add your import file.
+    Then import your file.
     
     ![Microsoft Intune, Importing your AppLocker policy file using Intune](images/wip-azure-import-apps.png)
 
 2.	Browse to your exported AppLocker policy file, and then click **Open**.
 
-    The file imports and the apps are added to your **Allowed app** list.
+    The file imports and the apps are added to your **Protected apps** list.
 
 ### Exempt apps from a WIP policy
 If you're running into compatibility issues where your app is incompatible with WIP, but still needs to be used with enterprise data, you can exempt the app from the WIP restrictions. This means that your apps won't include auto-encryption or tagging and won't honor your network restrictions. It also means that your exempted apps might leak.
 
-**To exempt a Store app, a Desktop app, or an AppLocker policy file from the Allowed apps list**
+**To exempt a Store app, a Desktop app, or an AppLocker policy file from the Protected apps list**
 
 1.	In **Mobile apps - App protection policies**, click **Exempt apps**.
     
@@ -304,12 +304,12 @@ If you're running into compatibility issues where your app is incompatible with 
 
     - [Import apps](#import-a-list-of-apps)
 
-4. Click **OK**.
+4.  Click **OK**.
 
 ## Manage the WIP protection mode for your enterprise data
 After you've added the apps you want to protect with WIP, you'll need to apply a management and protection mode.
 
-We recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your allowed apps list. After you're done, you can change to your final enforcement policy, **Hide Overrides**.
+We recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your protected apps list. After you're done, you can change to your final enforcement policy, **Hide Overrides**.
 
 >[!NOTE]
 >For info about how to collect your audit log files, see [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md).
@@ -342,7 +342,7 @@ Starting with Windows 10, version 1703, Intune automatically determines your cor
 
     The **Required settings** blade appears.
 
-2. If the auto-defined identity isn’t correct, you can change the info in the **Corporate identity** field. If you need to add additional domains, for example your email domains, you can do it in the **Advanced settings** area.
+2.  If the auto-defined identity isn’t correct, you can change the info in the **Corporate identity** field. If you need to add additional domains, for example your email domains, you can do it in the **Advanced settings** area.
 
     ![Microsoft Intune, Set your corporate identity for your organization](images/wip-azure-required-settings-corp-identity.png)
 
@@ -354,7 +354,7 @@ There are no default locations included with WIP, you must add each of your netw
 >[!Important]
 >Every WIP policy should include policy that defines your enterprise network locations.<br>Classless Inter-Domain Routing (CIDR) notation isn’t supported for WIP configurations.
 
-**To define where your allowed apps can find and send enterprise data on you network**
+**To define where your protected apps can find and send enterprise data on you network**
 
 1.	From the **App policy** blade, click the name of your policy, and then click **Advanced settings** from the menu that appears.
     
@@ -434,7 +434,7 @@ After you create and deploy your WIP policy to your employees, Windows begins to
 
     The **Advanced settings** blade appears.
 
-2. In the **Upload a Data Recovery Agent (DRA) certificate to allow recovery of encrypted data** box, click **Browse** to add a data recovery certificate for your policy.
+2.  In the **Upload a Data Recovery Agent (DRA) certificate to allow recovery of encrypted data** box, click **Browse** to add a data recovery certificate for your policy.
 
     ![Microsoft Intune, Upload your Data Recovery Agent (DRA) certificate](images/wip-azure-advanced-settings-efsdra.png)
 
@@ -461,9 +461,9 @@ After you've decided where your protected apps can access enterprise data on you
         
     - **Show the Windows Information Protection icon overlay.** Determines whether the Windows Information Protection icon overlay appears on corporate files in the Save As and File Explorer views. The options are:
     
-        - **On.** Allows the Windows Information Protection icon overlay to appear on corporate files in the Save As and File Explorer views. Additionally, for unenlightened but allowed apps, the icon overlay also appears on the app tile and with Managed text on the app name in the **Start** menu.
+        - **On.** Allows the Windows Information Protection icon overlay to appear on corporate files in the Save As and File Explorer views. Additionally, for unenlightened but protected apps, the icon overlay also appears on the app tile and with Managed text on the app name in the **Start** menu.
         
-        - **Off, or not configured (recommended).** Stops the Windows Information Protection icon overlay from appearing on corporate files or unenlightened, but allowed apps. Not configured is the default option.
+        - **Off, or not configured (recommended).** Stops the Windows Information Protection icon overlay from appearing on corporate files or unenlightened, but protected apps. Not configured is the default option.
         
     - **Use Azure RMS for WIP.** Determines whether to use Azure Rights Management encryption with Windows Information Protection.
     
