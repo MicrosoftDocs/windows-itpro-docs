@@ -338,9 +338,7 @@ Starting with Windows 10, version 1703, Intune automatically determines your cor
 
 **To change your corporate identity**
 
-1.	From the **App policy** blade, click the name of your policy, and then click **Required settings** from the menu that appears.
-
-    The **Required settings** blade appears.
+1.	From the **App policy** blade, click the name of your policy, and then click **Required settings**.
 
 2.  If the auto-defined identity isn’t correct, you can change the info in the **Corporate identity** field. If you need to add additional domains, for example your email domains, you can do it in the **Advanced settings** area.
 
@@ -356,13 +354,9 @@ There are no default locations included with WIP, you must add each of your netw
 
 **To define where your protected apps can find and send enterprise data on you network**
 
-1.	From the **App policy** blade, click the name of your policy, and then click **Advanced settings** from the menu that appears.
-    
-    The **Advanced settings** blade appears.
+1.	From the **App policy** blade, click the name of your policy, and then click **Advanced settings**.
 
 2.	Click **Add network boundary** from the Network perimeter area.
-
-    The **Add network boundary** blade appears.
 
     ![Microsoft Intune, Set where your apps can access enterprise data on your network](images/wip-azure-advanced-settings-network.png)
 
@@ -382,7 +376,12 @@ There are no default locations included with WIP, you must add each of your netw
             <td>Specify the cloud resources to be treated as corporate and protected by WIP.<br><br>For each cloud resource, you may also optionally specify a proxy server from your Internal proxy servers list to route traffic for this cloud resource. Be aware that all traffic routed through your Internal proxy servers is considered enterprise.<br><br>If you have multiple resources, you must separate them using the "|" delimiter. If you don’t use proxy servers, you must also include the "," delimiter just before the "|". For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;</code>.<br><br><strong>Important</strong><br>In some cases, such as when an app connects directly to a cloud resource through an IP address, Windows can’t tell whether it’s attempting to connect to an enterprise cloud resource or to a personal site. In this case, Windows blocks the connection by default. To stop Windows from automatically blocking these connections, you can add the <code>/&#42;AppCompat&#42;/</code> string to the setting. For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;|/&#42;AppCompat&#42;/</code>.<br><br>When using this string, we recommend that you also turn on [Azure Active Directory Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access), using the <strong>Domain joined or marked as compliant</strong> option, which blocks apps from accessing any enterprise cloud resources that are protected by conditional access.</td>
         </tr>
         <tr>
-            <td>Network domain names</td>
+            <td>Protected domains</td>
+            <td>exchange.contoso.com,contoso.com,region.contoso.com</td>
+            <td>Specify the domains used for identities in your environment. All traffic to the fully-qualified domains appearing in this list will be protected.<br><br>If you have multiple domains, you must separate them using the "," delimiter.</td>
+        </tr>
+        <tr>
+            <td>Network domains</td>
             <td>corp.contoso.com,region.contoso.com</td>
             <td>Starting with Windows 10, version 1703, this field is optional.<br><br>Specify the DNS suffixes used in your environment. All traffic to the fully-qualified domains appearing in this list will be protected.<br><br>If you have multiple resources, you must separate them using the "," delimiter.</td>
         </tr>
