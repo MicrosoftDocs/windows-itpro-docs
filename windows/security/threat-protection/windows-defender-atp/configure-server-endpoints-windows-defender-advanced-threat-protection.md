@@ -115,7 +115,9 @@ You’ll be able to onboard in the same method available for Windows 10 client m
     If the result is ‘The specified service does not exist as an installed service’, then you'll need to install Windows Defender AV. For more information, see [Windows Defender Antivirus in Windows 10](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
 
 ## Offboard servers 
-You have two options to offboard servers from the service:
+You can offboard Windows Server, 1803 in the same method available for Windows 10 client machines.
+
+For other server versions, you have two options to offboard servers from the service:
 - Uninstall the MMA agent
 - Remove the Windows Defender ATP workspace configuration
 
