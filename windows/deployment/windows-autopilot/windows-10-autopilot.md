@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: DaniHalfin
 ms.author: daniha
-ms.date: 12/13/2017
+ms.date: 05/17/2018
 ---
 
 # Overview of Windows Autopilot
@@ -20,6 +20,8 @@ ms.date: 12/13/2017
 
 Windows Autopilot is a collection of technologies used to set up and pre-configure new devices, getting them ready for productive use. In addition, you can use Windows Autopilot to reset, repurpose and recover devices.</br>
 This solution enables an IT department to achieve the above with little to no infrastructure to manage, with a process that's easy and simple.
+
+For a quick overview of the
 
 ## Benefits of Windows Autopilot
 

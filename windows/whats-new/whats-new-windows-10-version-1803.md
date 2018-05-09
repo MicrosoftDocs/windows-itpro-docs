@@ -21,7 +21,7 @@ The following 3-minute video summarizes some of the new features that are availa
 
 &nbsp;
 
-> [!video https://www.youtube.com/embed/LFiP73slWew?autoplay=false]
+> [!video https://www.microsoft.com/en-us/videoplayer/embed/RE21ada?autoplay=false]
 
 
 ## Deployment
@@ -85,7 +85,7 @@ The following new DISM commands have been added to manage feature updates:
     DISM /Online /Set-OSUninstallWindow 
         – Sets the number of days after upgrade during which uninstall can be performed.
 
-For more information, see [DISM operating system uninstall command-line options](https://review.docs.microsoft.com/windows-hardware/manufacture/desktop/dism-uninstallos-command-line-options).
+For more information, see [DISM operating system uninstall command-line options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-uninstallos-command-line-options).
 
 ### Windows Setup
 
@@ -95,7 +95,7 @@ Prerequisites:
 - Windows 10, version 1803 or later.
 - Windows 10 Enterprise or Pro
 
-For more information, see [Run custom actions during feature update](https://review.docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-enable-custom-actions).
+For more information, see [Run custom actions during feature update](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-enable-custom-actions).
 
 It is also now possible to run a script if the user rolls back their version of Windows using the PostRollback option.
 
@@ -221,7 +221,9 @@ Device Health’s new App Reliability reports enable you to see where app update
 
 ## Microsoft Edge
 
-iOS and Android versions of Edge are now available. Support in [Windows Defender Application Guard](#windows-defender-application-guard) is also improved.
+iOS and Android versions of Edge are now available. For more information, see [Microsoft Edge Tips](https://microsoftedgetips.microsoft.com/en-us?source=firstrunwip).
+
+Support in [Windows Defender Application Guard](#windows-defender-application-guard) is also improved.
 
 
 ## See Also

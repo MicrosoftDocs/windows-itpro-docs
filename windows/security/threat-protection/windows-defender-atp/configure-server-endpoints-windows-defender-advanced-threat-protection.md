@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 localizationpriority: high
-ms.date: 04/24/2018
+ms.date: 05/08/2018
 ---
 
 # Onboard servers to the Windows Defender ATP service
@@ -71,8 +71,8 @@ Once completed, you should see onboarded servers in the portal within an hour.
 - Each Windows server must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the [OMS Gateway](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-oms-gateway).
 - If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service:
 
-|    Agent Resource    |    Ports    |
-|------------------------------------|-------------|
+Agent Resource    |    Ports 
+:---|:---
 |    *.oms.opinsights.azure.com    |    443    |
 |    *.blob.core.windows.net    |    443    |
 |    *.azure-automation.net    |    443    |
@@ -81,9 +81,12 @@ Once completed, you should see onboarded servers in the portal within an hour.
 |    winatp-gw-eus.microsoft.com    |    443    |
 |    winatp-gw-neu.microsoft.com    |    443    |
 |    winatp-gw-weu.microsoft.com    |    443    |
+|winatp-gw-uks.microsoft.com | 443 |
+|winatp-gw-ukw.microsoft.com | 443 | 
+| winatp-gw-aus.microsoft.com | 443| 
+| winatp-gw-aue.microsoft.com |443 | 
 
-## Onboard Windows Server 2012 R2 and Windows Server 2016
-
+## Onboard Windows Server, version 1803
 You’ll be able to onboard in the same method available for Windows 10 client machines. For more information, see  [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md). Support for Windows Server, version 1803 provides deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well. 
 
 1.	Install the latest Windows Server Insider build on a machine. For more information, see [Windows Server Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewserver).

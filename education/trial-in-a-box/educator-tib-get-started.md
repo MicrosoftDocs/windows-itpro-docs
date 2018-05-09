@@ -3,6 +3,7 @@ title: Educator Trial in a Box Guide
 description: Need help or have a question about using Microsoft Education? Start here. 
 keywords: support, troubleshooting, education, Microsoft Education, full cloud IT solution, school, deploy, setup, manage, Windows 10, Intune for Education, Office 365 for Education, Microsoft Store for Education, Set up School PCs
 ms.prod: w10
+ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.topic: article

@@ -3,6 +3,7 @@ title: For teachers get Minecraft Education Edition
 description: Learn how teachers can get and distribute Minecraft.
 keywords: school, Minecraft, Education Edition, educators, teachers, acquire, distribute
 ms.prod: W10
+ms.technology: Windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: high

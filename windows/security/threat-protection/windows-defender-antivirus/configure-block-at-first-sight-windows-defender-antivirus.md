@@ -11,12 +11,8 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 05/02/2018
 ---
-
-
-
-
 
 # Enable the Block at First Sight feature
 
@@ -30,6 +26,7 @@ ms.date: 04/30/2018
 
 **Manageability available with**
 
+- Intune
 - Group Policy
 - Windows Defender Security Center app
 
@@ -54,9 +51,9 @@ You can also [customize the message displayed on users' desktops](https://docs.m
 
 When a Windows Defender Antivirus client encounters a suspicious but undetected file, it queries our cloud protection backend. The cloud backend will apply heuristics, machine learning, and automated analysis of the file to determine the files as malicious or clean. 
 
-The Block at First Sight feature only uses the cloud protection backend for executable files and non-portable executable files (such as JS, VBS, or macros) that are downloaded from the Internet, or originating from the Internet zone. A hash value of the .exe file is checked via the cloud backend to determine if this is a previously undetected file.
+In Windows 10, version 1803, the Block at First Sight feature can now block non-portable executable files (such as JS, VBS, or macros) as well as executable files.
 
- 
+The Block at First Sight feature only uses the cloud protection backend for executable files and non-portable executable files that are downloaded from the Internet, or originating from the Internet zone. A hash value of the .exe file is checked via the cloud backend to determine if this is a previously undetected file.
 
 If the cloud backend is unable to make a determination, the file will be locked by Windows Defender AV while a copy is uploaded to the cloud. The cloud will perform additional analysis to reach a determination before it allows the file to run or blocks it in all future encounters, depending on whether the file is determined to be malicious or safe. 
 
@@ -67,6 +64,23 @@ In many cases this process can reduce the response time for new malware from hou
 
 Block at First Sight requires a number of Group Policy settings to be configured correctly or it will not work. Usually, these settings are already enabled in most default Windows Defender AV deployments in enterprise networks.
 
+### Confirm Block at First Sight is enabled with Intune
+
+1. In Intune, navigate to **Device configuration - Profiles > *Profile name* > Device restrictions > Windows Defender Antivirus**.
+
+	> [!NOTE]
+	> The profile you select must be a Device Restriction profile type, not an Endpoint Protection profile type.
+
+2. Verify these settings are configured as follows:
+
+	- **Cloud-delivered protection**: **Enable**
+	- **File Blocking Level**: **High**
+	- **Time extension for file scanning by the cloud**: **50**
+	- **Prompt users before sample submission**: **Send all data without prompting**
+
+For more information about configuring Windows Defender AV device restrictions in Intune, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure).
+
+For a list of Windows Defender AV device restrictions in Intune, see [Device restriction for Windows 10 (and newer) settings in Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-windows-10#windows-defender-antivirus).
 
 
 ### Confirm Block at First Sight is enabled with Group Policy
@@ -111,7 +125,7 @@ The feature is automatically enabled as long as **Cloud-based protection** and *
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Virus & threat protection settings** label:
 
-![Screenshot of the Virus & threat protection settings label in the Windows Defender Security Center app](images/defender/wdav-protection-settings-wdsc.png)
+ ![Screenshot of the Virus & threat protection settings label in the Windows Defender Security Center app](images/defender/wdav-protection-settings-wdsc.png)
     
 3.	Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
 

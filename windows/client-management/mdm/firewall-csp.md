@@ -150,7 +150,7 @@ The following diagram shows the Firewall configuration service provider in tree 
 <p style="margin-left: 20px">Value type is bool. Supported operations are Add, Get and Replace.</p>
 
 <a href="" id="defaultoutboundaction"></a>**/DefaultOutboundAction**
-<p style="margin-left: 20px">This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.</p>
+<p style="margin-left: 20px">This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used. DefaultOutboundAction will block all outbound traffic unless it is explicitly specified not to block.</p>
 <ul>
 <li>0x00000000 - allow</li>
 <li>0x00000001 - block</li>
@@ -158,6 +158,30 @@ The following diagram shows the Firewall configuration service provider in tree 
 <p style="margin-left: 20px">Default value is 0 (allow).</p>
 <p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get and Replace.</p>
 
+Sample syncxml to provision the firewall settings to evaluate
+
+``` syntax
+<?xml version="1.0" encoding="utf-8"?>
+<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncBody>
+    <!-- Block Outbound by default -->
+    <Add>
+      <CmdID>2010</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./Vendor/MSFT/Firewall/MdmStore/DomainProfile/DefaultOutboundAction</LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">int</Format>
+        </Meta>
+        <Data>1</Data>
+      </Item>
+    </Add>
+<Final/>
+</SyncBody>
+</SyncML>
+
+```
 <a href="" id="defaultinboundaction"></a>**/DefaultInboundAction**
 <p style="margin-left: 20px">This value is the action that the firewall does by default (and evaluates at the very end) on inbound connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore.win if it is configured; otherwise, the local store value is used.</p>
 <ul>

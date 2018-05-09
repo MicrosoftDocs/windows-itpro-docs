@@ -52,8 +52,8 @@ We recommend staying in S mode. However, in some limited scenarios, you might ne
 If you’re running Windows 10, version 1709 or version 1803, you can switch to Windows 10 Pro through the Microsoft Store. Devices running version 1803 will only be able to switch through the Store one device at a time.
 
 1. Sign into the Microsoft Store using your Microsoft account. 
-2. Search for "Switch to Windows 10 Pro."
-3. In the offer, click **Buy** or **Get**. 
+2. Search for "S mode"
+3. In the offer, click **Buy**, **Get**, OR **Learn more.**
 You'll be prompted to save your files before the switch starts. Follow the prompts to switch to Windows 10 Pro.
 
 > [!IMPORTANT]
@@ -61,6 +61,7 @@ You'll be prompted to save your files before the switch starts. Follow the promp
 
 ## Related topics
 
+[FAQs](https://support.microsoft.com/en-us/help/4020089/windows-10-in-s-mode-faq)<br>
 [Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)<BR>
 [Windows 10 Pro Education](https://docs.microsoft.com/education/windows/test-windows10s-for-edu)<BR>
-[Introdiction to Microsoft Intune in the Azure portal](https://docs.microsoft.com/en-us/intune/what-is-intune)
+[Introduction to Microsoft Intune in the Azure portal](https://docs.microsoft.com/en-us/intune/what-is-intune)

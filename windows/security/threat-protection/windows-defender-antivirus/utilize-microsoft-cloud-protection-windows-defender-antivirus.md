@@ -11,14 +11,14 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/17/2018
+ms.date: 04/30/2018
 ---
 
 # Use next-gen technologies in Windows Defender Antivirus through cloud-delivered protection
 
 **Applies to:**
 
-- Windows 10, version 1703
+- Windows 10, version 1703 and later
 
 **Audience**
 
@@ -42,7 +42,7 @@ To understand how next-gen technologies shorten protection delivery time through
 <iframe 
 src="https://videoplayercdn.osi.office.net/embed/c2f20f59-ca56-4a7b-ba23-44c60bc62c59" width="768" height="432" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
-Read the following blogposts for detailed protection stories involving cloud-protection and Microsoft AI: 
+Read the following blog posts for detailed protection stories involving cloud-protection and Microsoft AI: 
 
 - [Why Windows Defender Antivirus is the most deployed in the enterprise](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/22/why-windows-defender-antivirus-is-the-most-deployed-in-the-enterprise/) 
 - [Behavior monitoring combined with machine learning spoils a massive Dofoil coin mining campaign](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign/)
@@ -53,6 +53,8 @@ Read the following blogposts for detailed protection stories involving cloud-pro
 ## Get cloud-delivered protection 
 
 Cloud-delivered protection is enabled by default. However, you may need to re-enable it if it has been disabled as part of previous organizational policies.
+
+Organizations running Windows 10 E5, version 1803 can also take advantage of emergency dynamic intelligence updates, which provide near real-time protection from emerging threats. When you turn cloud-delivered protection on, we can deliver a fix for a malware issue via the cloud within minutes instead of waiting for the next update.
 
 >[!TIP]
 >You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
@@ -65,8 +67,7 @@ Feature | Windows 8.1 (Group Policy) | Windows 10, version 1607 (Group Policy) |
 ---|---|---|---|---|---|---
 Cloud-protection service label | Microsoft Advanced Protection Service | Microsoft Advanced Protection Service | Cloud-based Protection | NA | Cloud protection service | Microsoft Advanced Protection Service
 Reporting level (MAPS membership level) | Basic, Advanced | Advanced | Advanced | Dependent on Windows version | Dependent on Windows version | Dependent on Windows version
-Block at first sight availability | No | Yes | Yes | Not configurable | Configurable | No
-Cloud block timeout period | No | No | Configurable | Not configurable | Configurable | No
+Cloud block timeout period | No | No | Configurable | Not configurable | Configurable | Configurable
  
 You can also [configure Windows Defender AV to automatically receive new protection updates based on reports from our cloud service](manage-event-based-updates-windows-defender-antivirus.md#cloud-report-updates).
 

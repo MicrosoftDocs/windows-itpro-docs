@@ -11,8 +11,6 @@ ms.date: 04/11/2018
 
 # Policy CSP - KioskBrowser
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 These policies currently only apply to Kiosk Browser app. Kiosk Browser is a Microsoft Store app, added in Windows 10 version 1803, that provides IT a way to customize the end user’s browsing experience to fulfill kiosk, signage, and shared device scenarios. Application developers can also create their own kiosk browser and read these policies using [NamedPolicy.GetPolicyFromPath(String, String) Method](https://docs.microsoft.com/en-us/uwp/api/windows.management.policies.namedpolicy.getpolicyfrompath#Windows_Management_Policies_NamedPolicy_GetPolicyFromPath_System_String_System_String_). 
 

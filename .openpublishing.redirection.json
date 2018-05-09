@@ -6,6 +6,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/security/threat-protection/device-guard/device-guard-deployment-guide.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/security/threat-protection/windows-defender-application-control.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control",
 "redirect_document_id": true
@@ -438,11 +443,6 @@
 {
 "source_path": "windows/security/threat-protection/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/device-guard/deploy-windows-defender-application-control.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide",
 "redirect_document_id": true
 },
 {
@@ -5178,8 +5178,18 @@
 {
 "source_path": "education/windows/windows-10-pro-to-pro-edu-upgrade.md",
 "redirect_url": "/education/windows/switch-to-pro-education",
+"redirect_document_id": false
+},
+{
+"source_path": "education/windows/switch-to-pro-education.md",
+"redirect_url": "/education/windows/s-mode-switch-to-edu",
 "redirect_document_id": true
 },
+{
+    "source_path": "education/windows/swithc-to-pro-de.md",
+    "redirect_url": "/education/windows/switch-to-pro-education",
+    "redirect_document_id": false
+    },
 {
 "source_path": "windows/client-management/mdm/policy-admx-backed.md",
 "redirect_url": "/windows/client-management/mdm/policy-configuration-service-provider",
@@ -13609,9 +13619,5 @@
 "source_path": "windows/security/threat-protection/windows-defender-atp/settings-windows-defender-advanced-threat-protection.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-atp/time-settings-windows-defender-advanced-threat-protection",
 "redirect_document_id": true
-},
-
-
-
-]
+}]
 }
