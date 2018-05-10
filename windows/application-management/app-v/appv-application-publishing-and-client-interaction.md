@@ -28,53 +28,7 @@ The Sequencer creates App-V packages and produces a virtualized application. The
 |.CAB|Optional: Package accelerator file used to automatically rebuild a previously sequenced virtual application package.|
 |.appvt|Optional: Sequencer template file used to retain commonly reused Sequencer settings.|
 
-<table>
-<colgroup>
-<col width="30%" />
-<col width="70%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">File</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>.appv</p></td>
-<td align="left"><ul>
-<li><p>The primary package file, which contains the captured assets and state information from the sequencing process.</p></li>
-<li><p>Architecture of the package file, publishing information, and registry in a tokenized form that can be reapplied to a machine and to a specific user upon delivery.</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p>.MSI</p></td>
-<td align="left"><p>Executable deployment wrapper that you can use to deploy .appv files manually or by using a third-party deployment platform.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>_DeploymentConfig.XML</p></td>
-<td align="left"><p>File used to customize the default publishing parameters for all applications in a package that is deployed globally to all users on a computer that is running the App-V Client.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>_UserConfig.XML</p></td>
-<td align="left"><p>File used to customize the publishing parameters for all applications in a package that is a deployed to a specific user on a computer that is running the App-V Client.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Report.xml</p></td>
-<td align="left"><p>Summary of messages resulting from the sequencing process, including omitted drivers, files, and registry locations.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>.CAB</p></td>
-<td align="left"><p><em>Optional:</em> Package accelerator file used to automatically rebuild a previously sequenced virtual application package.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>.appvt</p></td>
-<td align="left"><p><em>Optional:</em> Sequencer template file used to retain commonly reused Sequencer settings.</p></td>
-</tr>
-</tbody>
-</table>
-
-For information about sequencing, see [How to Sequence a New Application with App-V](appv-sequence-a-new-application.md).
+To learn more about sequencing, see [How to Sequence a New Application with App-V](appv-sequence-a-new-application.md).
 
 ## What’s in the appv file?
 
@@ -149,47 +103,6 @@ The App-V Client manages the following two file-based locations:
 |Additional machine catalog location, used when the package is part of a connection group|The following location is in addition to the specific package location mentioned previously as the default storage location:<br></br>```%programdata%\Microsoft\AppV\Client\Catalog\PackageGroups\ConGroupGUID\ConGroupVerGUID```|
 |Additional files in the machine catalog when the package is part of a connection group|- PackageGroupDescriptor.xml<br>- UserPackageGroupDescriptor.xml (globally published Connection Group)|
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Description</p></td>
-<td align="left"><p>Stores package documents that are available to users on the machine, when packages are added and published. However, if a package is “global” at publishing time, the integrations are available to all users.</p>
-<p>If a package is non-global, the integrations are published only for specific users, but there are still global resources that are modified and visible to anyone on the client computer (e.g., the package directory is in a shared disk location).</p>
-<p>If a package is available to a user on the computer (global or non-global), the manifest is stored in the Machine Catalog. When a package is published globally, there is a Dynamic Configuration file, stored in the Machine Catalog; therefore, the determination of whether a package is global is defined according to whether there is a policy file (UserDeploymentConfiguration file) in the Machine Catalog.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default storage location</p></td>
-<td align="left"><p><code>%programdata%\Microsoft\AppV\Client\Catalog\</code></p>
-<p>This location is not the same as the Package Store location. The Package Store is the golden or pristine copy of the package files.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Files in the machine catalog</p></td>
-<td align="left"><ul>
-<li><p>Manifest.xml</p></li>
-<li><p>DeploymentConfiguration.xml</p></li>
-<li><p>UserManifest.xml (Globally Published Package)</p></li>
-<li><p>UserDeploymentConfiguration.xml (Globally Published Package)</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Additional machine catalog location, used when the package is part of a connection group</p></td>
-<td align="left"><p>The following location is in addition to the specific package location mentioned above:</p>
-<p><code>%programdata%\Microsoft\AppV\Client\Catalog\PackageGroups\ConGroupGUID\ConGroupVerGUID</code></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Additional files in the machine catalog when the package is part of a connection group</p></td>
-<td align="left"><ul>
-<li><p>PackageGroupDescriptor.xml</p></li>
-<li><p>UserPackageGroupDescriptor.xml (globally published Connection Group)</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
 ### User catalog
 
 |||
@@ -199,41 +112,6 @@ The App-V Client manages the following two file-based locations:
 |Files in the user catalog|- UserManifest.xml<br>- DynamicConfiguration.xml or UserDeploymentConfiguration.xml|
 |Additional user catalog location, used when the package is part of a connection group|The following location is in addition to the specific package location mentioned above:<br></br>```appdata\roaming\Microsoft\AppV\Client\Catalog\PackageGroups\PkgGroupGUID\PkgGroupVerGUID```|
 |Additional file in the machine catalog when the package is part of a connection group|```UserPackageGroupDescriptor.xml```|
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Description</p></td>
-<td align="left"><p>Created during the publishing process. Contains information used for publishing the package, and also used at launch to ensure that a package is provisioned to a specific user. Created in a roaming location and includes user-specific publishing information.</p>
-<p>When a package is published for a user, the policy file is stored in the User Catalog. At the same time, a copy of the manifest is also stored in the User Catalog. When a package entitlement is removed for a user, the relevant package files are removed from the User Catalog. Looking at the user catalog, an administrator can view the presence of a Dynamic Configuration file, which indicates that the package is entitled for that user.</p>
-<p>For roaming users, the User Catalog needs to be in a roaming or shared location to preserve the legacy App-V behavior of targeting users by default. Entitlement and policy are tied to a user, not a computer, so they should roam with the user once they are provisioned.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default storage location</p></td>
-<td align="left"><p><code>appdata\roaming\Microsoft\AppV\Client\Catalog\Packages\PkgGUID\VerGUID</code></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Files in the user catalog</p></td>
-<td align="left"><ul>
-<li><p>UserManifest.xml</p></li>
-<li><p>DynamicConfiguration.xml or UserDeploymentConfiguration.xml</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Additional user catalog location, used when the package is part of a connection group</p></td>
-<td align="left"><p>The following location is in addition to the specific package location mentioned above:</p>
-<p><code>appdata\roaming\Microsoft\AppV\Client\Catalog\PackageGroups\PkgGroupGUID\PkgGroupVerGUID</code></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Additional file in the machine catalog when the package is part of a connection group</p></td>
-<td align="left"><p><code>UserPackageGroupDescriptor.xml</code></p></td>
-</tr>
-</tbody>
-</table>
 
 ### Shortcut backups
 
@@ -1103,9 +981,9 @@ The App-V Client logs information to the Windows Event log in standard ETW forma
 
 There are three specific categories of events recorded:
 
-- **Admin**: Logs events for configurations applied to the App-V Client, and also contains the primary warnings and errors.
-- **Operational**: Logs the general App-V execution and usage of individual components, creating an audit log of the App-V Client's completed App-V operations.
-- **Virtual Application**: Logs virtual application launches and use of virtualization subsystems.
+- **Admin** logs events for configurations applied to the App-V Client and also contains the primary warnings and errors.
+- **Operational** logs the general App-V execution and usage of individual components, creating an audit log of the App-V Client's completed App-V operations.
+- **Virtual Application** logs virtual application launches and use of virtualization subsystems.
 
 ## Have a suggestion for App-V?
 
