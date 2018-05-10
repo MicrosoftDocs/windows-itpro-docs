@@ -100,6 +100,7 @@
 ###[Browser cache changes and roaming profiles](ie11-deploy-guide/browser-cache-changes-and-roaming-profiles.md)
 
 ##[Out-of-date ActiveX control blocking](ie11-deploy-guide/out-of-date-activex-control-blocking.md)
+###[Blocked out-of-date ActiveX controls](ie11-deploy-guide/blocked-out-of-date-activex-controls.md) 
 
 ##[Deprecated document modes and Internet Explorer 11](ie11-deploy-guide/deprecated-document-modes.md)
 
