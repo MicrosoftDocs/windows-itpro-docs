@@ -65,8 +65,7 @@ While an investigation is running, any other alert generated from the machine wi
 If an incriminated entity is seen in another machine, the Automated investigation will expand the investigation to include that machine and a generic machine playbook will start on that machine. If 10 or more machines are found during this expansion process from the same entity, then that expansion action will require an approval and will be seen in the **Pending actions** view.
 
 ### How threats are remediated
-Depending on how you set up the machine groups and their level of automation, the Automated investigation will either automatically remediate threats or require user approval (this is the default). 
-
+Depending on how you set up the machine groups and their level of automation, the Automated investigation will either require user approval (default) or automatically remediate threats.
 
 You can configure the following levels of automation:
 
