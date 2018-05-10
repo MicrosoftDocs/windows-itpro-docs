@@ -31,8 +31,6 @@ current version of Internet Explorer.
 
 Internet Explorer 11 replaces Internet Explorer 8, Internet Explorer 9, or Internet Explorer 10. If you decide you don’t want Internet Explorer 11, and you’re running Windows 7 SP1 or Windows Server 2008 R2 with SP1, you can uninstall it from the **View installed updates** section of the **Uninstall an update** page of the Control Panel.
 
-[./media/image1.jpeg](./media/image1.jpeg)
-
 >[!Note]
 >If a user installs Internet Explorer 11 and then removes it, it won’t be re-offered to that computer through Automatic Updates. Instead, the user will have to manually re-install the app. 
 
@@ -46,8 +44,7 @@ Users who were automatically upgraded to Internet Explorer 11 can decide to unin
 
 If you use Automatic Updates in your company, but want to stop your users from automatically getting Internet Explorer 11, do one of the following:
 
--   **Download and use the Internet Explorer 11 Blocker Toolkit.**  Includes a Group Policy template and a script that permanently blocks Internet Explorer 11 from being offered by Windows Update or Microsoft Update as a high-priority update. You can download this kit from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=40722).<p>[./media/image1.jpeg](./media/image1.jpeg)
-
+-   **Download and use the Internet Explorer 11 Blocker Toolkit.**  Includes a Group Policy template and a script that permanently blocks Internet Explorer 11 from being offered by Windows Update or Microsoft Update as a high-priority update. You can download this kit from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=40722).
 
     >[!Note]
     >The toolkit won't stop users with local administrator accounts from manually installing Internet Explorer 11. Using this toolkit also prevents your users from receiving automatic upgrades from Internet Explorer 8, Internet Explorer 9, or Internet Explorer 10 to Internet Explorer 11. For more information, see the [Internet Explorer 11 Blocker Toolkit frequently asked questions](https://technet.microsoft.com/microsoft-edge/dn449234).  
@@ -76,11 +73,12 @@ Internet Explorer 11 will be released to WSUS as an Update Rollup package. There
 3.  Click **Automatic Approvals**.
 
 4.  Click the rule that automatically approves an update that is classified as
-    Update Rollup, and then click **Edit.**<p>[./media/image1.jpeg](./media/image1.jpeg)                                                                                 
+    Update Rollup, and then click **Edit.** 
+    
     >[!Note]
     >If you don’t see a rule like this, you most likely haven’t configured WSUS to automatically approve Update Rollups for installation. In this situation, you don’t have to do anything else. 
 
-5.  Click the **Update Rollups** property under the **Step 2: Edit the properties (click an underlined value)** section.<p>[./media/image1.jpeg](./media/image1.jpeg) 
+5.  Click the **Update Rollups** property under the **Step 2: Edit the properties (click an underlined value)** section. 
 
     >[!Note]
     >The properties for this rule will resemble the following:<ul><li>When an update is in Update Rollups</li><li>Approve the update for all computers</li></ul>
@@ -99,7 +97,7 @@ Internet Explorer 11 will be released to WSUS as an Update Rollup package. There
 
 12.  Choose **Unapproved** in the **Approval**drop down box.
 
-13.  Check to make sure that Microsoft Internet Explorer 11 is listed as an unapproved update.<p>[./media/image1.jpeg](./media/image1.jpeg) 
+13.  Check to make sure that Microsoft Internet Explorer 11 is listed as an unapproved update.
  
     >[!Note]
     >There may be multiple updates, depending on the imported language and operating system updates. 
@@ -120,7 +118,7 @@ If you need to reset your Update Rollups packages to auto-approve, do this:
 
 6.  Check the **Update Rollups** check box, and then click **OK**.
 
-7.  Click **OK** to close the **Automatic Approvals** dialog box.<p>[./media/image1.jpeg](./media/image1.jpeg) 
+7.  Click **OK** to close the **Automatic Approvals** dialog box. 
 
 >[!Note]
 >Because auto-approval rules are only evaluated when an update is first imported into WSUS, turning this rule back on after the Internet Explorer 11 update has been imported and synchronized to the server won’t cause this update to be auto-approved.

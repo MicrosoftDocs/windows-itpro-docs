@@ -19,7 +19,7 @@ Get answers to commonly asked questions about the Internet Explorer Administrati
 
 **What is IEAK 11?**
 
-IEAK 11 enables you to customize, brand, and distribute customized Internet Explorer 11 browser packages across an organization. Download the kit from the [Microsoft Edge IT Center](ieak-information-and-downloads.md).
+IEAK 11 enables you to customize, brand, and distribute customized Internet Explorer 11 browser packages across an organization. Download the kit from the [Internet Explorer Administration Kit (IEAK) information and downloads](../ie11-ieak/ieak-information-and-downloads.md).
 
 **What are the supported operating systems?**
 
@@ -48,7 +48,7 @@ The IEAK 11 enables you to customize branding and settings for Internet Explorer
 Yes. You can use IEAK 11 to build custom Internet Explorer 11 packages in any of the supported 24 languages. You'll select the language for the custom package on the Language Selection page of the customization wizard.  
 
 >[!Note]
->IEAK 11 is available in 24 languages but can build customized Internet Explorer 11 packages in all languages of the supported operating systems. To download IEAK 11, see [IEAK information and downloads](ieak-information-and-downloads.md).
+>IEAK 11 is available in 24 languages but can build customized Internet Explorer 11 packages in all languages of the supported operating systems. To download IEAK 11, see [Internet Explorer Administration Kit (IEAK) information and downloads](../ie11-ieak/ieak-information-and-downloads.md).
 
 **Q: Is there a version of the Internet Explorer Administration Kit (IEAK) supporting IE11?**<br>
 Yes. The Internet Explorer Administration Kit 11 (IEAK 11) is available for download. IEAK 11 lets you create custom versions of IE11 for use in your organization. For more information, see the following resources:
@@ -58,7 +58,7 @@ Yes. The Internet Explorer Administration Kit 11 (IEAK 11) is available for do
 - [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](../ie11-ieak/index.md)
 
 **What are the different modes available for the Internet Explorer Customization Wizard?**
-The IEAK Customization Wizard displays pages based on your licensing mode selection, either **Internal** or **External**. For more information on IEAK Customization Wizard modes, see [What IEAK can do for you](what-ieak-can-do-for-you.md).
+The IEAK Customization Wizard displays pages based on your licensing mode selection, either **Internal** or **External**. For more information on IEAK Customization Wizard modes, see [What IEAK can do for you](../ie11-ieak/what-ieak-can-do-for-you.md).
 
 The following table displays which pages are available in IEAK 11, based on the licensing mode:
 
