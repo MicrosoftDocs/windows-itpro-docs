@@ -7,6 +7,8 @@ ms.pagetype: security
 title: Security enhancements for Microsoft Edge (Microsoft Edge for IT Pros)
 ms.localizationpriority: high
 ms.date: 10/16/2017
+ms.author: pashort
+author: shortpatti
 ---
 
 # Security enhancements for Microsoft Edge

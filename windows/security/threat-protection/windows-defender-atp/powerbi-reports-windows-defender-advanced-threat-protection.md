@@ -40,7 +40,7 @@ You can access these options from the Windows Defender ATP portal. Both the Powe
 ## Create a Windows Defender ATP dashboard on Power BI service
 Windows Defender ATP makes it easy to create a Power BI dashboard by providing an option straight from the portal. 
 
-1. In the navigation pane, select **Settings** > **General** > **Power BI reports**.
+1. In the navigation pane, select **Settings** > **Power BI reports**.
 
 2.	Click **Create dashboard**.
 
@@ -127,7 +127,7 @@ You can create a custom dashboard in Power BI Desktop to create visualizations t
 ### Before you begin
 1.	Make sure you use Power BI Desktop June 2017 and above. [Download the latest version](https://powerbi.microsoft.com/en-us/desktop/).
 
-2.	In the navigation pane, select **Settings** > **General** > **Power BI reports**.
+2.	In the navigation pane, select **Settings** > **Power BI reports**.
 
 3.	Click **Download connector** to download the WDATPPowerBI.zip file and extract it.
 

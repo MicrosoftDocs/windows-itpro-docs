@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/24/2018
+ms.date: 05/08/2018
 ---
 
 # Configure advanced features in Windows Defender ATP
@@ -86,6 +86,11 @@ When you enable this feature, you'll be able to share Windows Defender ATP devic
 >[!NOTE]
 >You'll need to enable the integration on both Intune and Windows Defender ATP to use this feature. 
 
+
+## Preview features
+Learn about new features in the Windows Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
+
+You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.
 
 ## Enable advanced features
 1. In the navigation pane, select **Preferences setup** > **Advanced features**.

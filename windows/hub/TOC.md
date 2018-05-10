@@ -6,5 +6,6 @@
 ## [Client management](/windows/client-management)
 ## [Application management](/windows/application-management)
 ## [Security](/windows/security)
+## [Privacy](/windows/privacy)
 ## [Troubleshooting](/windows/client-management/windows-10-support-solutions)
 ## [Other Windows client versions](https://docs.microsoft.com/previous-versions/windows)
