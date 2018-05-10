@@ -9,6 +9,7 @@ ms.sitesec: library
 author: brecords
 ms.date: 01/31/2018
 ms.author: jdecker
+ms.topic: article
 ---
 
 # Windows Autopilot and Surface devices

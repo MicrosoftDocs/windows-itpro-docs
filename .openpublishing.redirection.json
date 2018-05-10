@@ -6406,6 +6406,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/configuration/configure-devices-without-mdm.md",
+"redirect_url": "/windows/configuration/provisioning-packages/provisioning-packages",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/configure/configure-mobile.md",
 "redirect_url": "/windows/configuration/mobile-devices/configure-mobile",
 "redirect_document_id": true

@@ -7,6 +7,8 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
+ms.topic: article
+ms.author: jdecker
 ms.localizationpriority: medium
 ms.date: 02/08/2018
 ---

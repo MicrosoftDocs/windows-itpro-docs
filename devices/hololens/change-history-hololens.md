@@ -7,6 +7,8 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
+ms.author: jdecker
+ms.topic: article
 ms.localizationpriority: medium
 ms.date: 05/07/2018
 ---
