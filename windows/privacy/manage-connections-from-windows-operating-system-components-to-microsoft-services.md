@@ -1847,7 +1847,7 @@ If you're not running Windows 10, version 1607 or later, you can use the other o
 
     -   Create a new REG\_DWORD registry setting named **DisableWindowsConsumerFeatures** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a value of 1 (one).
 
-For more info, see [Windows Spotlight on the lock screen](windows-spotlight.md).
+For more info, see [Windows Spotlight on the lock screen](/windows/configuration/windows-spotlight).
 
 ### <a href="" id="bkmk-windowsstore"></a>26. Microsoft Store
 

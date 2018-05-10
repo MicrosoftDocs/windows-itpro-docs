@@ -10,6 +10,8 @@ ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: miladCA
+ms.author: jdecker
+ms.topic: article
 ---
 
 # Microsoft Surface Deployment Accelerator
