@@ -63,6 +63,7 @@
 ###[Remove sites from a local Enterprise Mode site list](ie11-deploy-guide/remove-sites-from-a-local-enterprise-mode-site-list.md)
 ###[Remove sites from a local compatibility view list](ie11-deploy-guide/remove-sites-from-a-local-compatibililty-view-list.md)
 ###[Turn off Enterprise Mode](ie11-deploy-guide/turn-off-enterprise-mode.md)
+###[Tips and tricks to manage Internet Explorer compatibility](ie11-deploy-guide/tips-and-tricks-to-manage-ie-compatibility.md)
 
 ##[Group Policy and Internet Explorer 11 (IE11)](ie11-deploy-guide/group-policy-and-ie11.md)
 ###[Group Policy management tools](ie11-deploy-guide/group-policy-objects-and-ie11.md)
@@ -115,6 +116,7 @@
 
 #[Internet Explorer Administration Kit 11 (IEAK 11) - Administration Guide for IT Pros](ie11-ieak/index.md)
 ##[What IEAK can do for you](ie11-ieak/what-ieak-can-do-for-you.md)
+##[Internet Explorer Administration Kit (IEAK) information and downloads](ie11-ieak/ieak-information-and-downloads.md)
 ##[Before you start using IEAK 11](ie11-ieak/before-you-create-custom-pkgs-ieak11.md)
 ###[Hardware and software requirements for IEAK 11](ie11-ieak/hardware-and-software-reqs-ieak11.md)
 ###[Determine the licensing version and features to use in IEAK 11](ie11-ieak/licensing-version-and-features-ieak11.md)
@@ -132,6 +134,7 @@
 ###[Create multiple versions of your custom package using IEAK 11](ie11-ieak/create-multiple-browser-packages-ieak11.md)
 ###[Before you install your package over your network using IEAK 11](ie11-ieak/prep-network-install-with-ieak11.md)
 ###[Use the RSoP snap-in to review policy settings](ie11-ieak/rsop-snapin-for-policy-settings-ieak11.md)
+###[IEAK 11 - Frequently Asked Questions](ie11-faq/faq-ieak11.md)
 ###[Troubleshoot custom package and IEAK 11 problems](ie11-ieak/troubleshooting-custom-browser-pkg-ieak11.md)
 
 ##[Internet Explorer Administration Kit 11 (IEAK 11) Customization Wizard options](ie11-ieak/ieak11-wizard-custom-options.md)
