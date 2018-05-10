@@ -9,6 +9,8 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: jobotto
+ms.author: jdecker
+ms.topic: article
 ms.date: 07/27/2017
 ---
 
