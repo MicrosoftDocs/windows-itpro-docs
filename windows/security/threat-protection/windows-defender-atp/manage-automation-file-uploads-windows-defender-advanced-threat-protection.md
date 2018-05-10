@@ -35,7 +35,7 @@ For example, if you add *exe* and *bat* as file or attachment extension names, t
 
 ## Add file extension names and attachment extension names.
 
-1. In the navigation pane, select **Settings** > **Rules** > **Automation file uploads**. 
+1. In the navigation pane, select **Settings** > **Automation file uploads**. 
 
 2. Toggle the content analysis setting between **On** and **Off**.
 

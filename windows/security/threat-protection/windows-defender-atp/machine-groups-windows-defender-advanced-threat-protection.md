@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/24/2018
+ms.date: 05/08/2018
 ---
 
 # Create and manage machine groups in Windows Defender ATP
@@ -33,61 +33,61 @@ In Windows Defender ATP, you can create machine groups and use them to:
 - Configure different auto-remediation settings for different sets of machines
 
 As part of the process of creating a machine group, you'll:
-- Set the automated remediation level for that group
-- Define a matching rule based on the machine name, domain, tags, and OS platform to determine which machines belong to the group. If a machine is also matched to other groups, it is added only to the highest ranked machine group.
-- Determine access to machine group
-- Rank the machine group relative to other groups after it is created 
+- Set the automated remediation level for that group. For more information on remediation levels, see [Use Automated investigation to investigate and remediate threats](automated-investigations-windows-defender-advanced-threat-protection.md).
+- Specify the matching rule that determines which machine group belongs to the group based on the machine name, domain, tags, and OS platform. If a machine is also matched to other groups, it is added only to the highest ranked machine group.
+- Select the Azure AD user group that should have access to the machine group.
+- Rank the machine group relative to other groups after it is created.
 
 >[!NOTE]
->All machine groups are accessible to all users if you don’t assign any Azure AD groups to them.
+>A machine group is accessible to all users if you don’t assign any Azure AD groups to it.
 
 
 ## Add a machine group
 
-1.	In the navigation pane, select **Settings > Permissions > Machine groups**.
+1.	In the navigation pane, select **Settings** > **Machine groups**.
 
 2.	Click **Add machine group**. 
 
-3.	Set the machine group details, configure an association rule, preview the results, then assign the group to an Azure user group:
+3.	Enter the group name and automation settings and specify the matching rule that determines which machines belong to the group.
 
-	 - **Name**
-
-	 - **Remediation level for automated investigations**
-	  - **No remediation**
-	  - **Require approval (all folders)**
-	  - **Require approval (non-temp folders)**
-	  - **Require approval (core folders)**
-	  - **Fully automated**
+    - **Machine group name**
+    - **Automation level**
+	  - **Semi - require approval for any remediation**
+      - **Semi - require approval for non-temp folders remediation**
+      - **Semi - require approval for core folders remediation**
+      - **Full - remediate threats automatically**
+        
+        >[!NOTE]
+        > For more information on automation levels, see [Understand the Automated investigation flow](automated-investigations-windows-defender-advanced-threat-protection.md#understand-the-automated-investigation-flow).        
 
 	 - **Description**
+	 - **Members**      
 
-	 - **Matching rule** – you can apply the rule based on machine name, domain, tag, or OS version. 
+    >[!TIP]
+    >If you want to group machines by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Manage machine group and tags](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection#manage-machine-group-and-tags).
 
-		>[!TIP]
-		>If you want to group machines by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Manage machine group and tags](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/investigate-machines-windows-defender-advanced-threat-protection#manage-machine-group-and-tags).
-
-4.	Review the result of the preview of matched machines. If you are satisfied with the rules, click the **Access** tab.
+4.	Preview several machines that will be matched by this rule. If you are satisfied with the rule, click the **Access** tab.
 
 5.	Assign the user groups that can access the machine group you created. 
 
     >[!NOTE]
     >You can only grant access to Azure AD user groups that have been assigned to RBAC roles. 
 
-6.	Click **Close**.
+6.	Click **Close**. The configuration changes are applied.
 
-7.	Apply the configuration settings.
 
-## Understand matching and manage groups
-You can promote the rank of a machine group so that it is given higher priority during matching. When a machine is matched to more than one group, it is added only to the highest ranked group. You can also edit and delete groups.
+## Manage machine groups
+You can promote or demote the rank of a machine group so that it is given higher or lower priority during matching. When a machine is matched to more than one group, it is added only to the highest ranked group. You can also edit and delete groups.
+
+>[!WARNING]
+>Deleting a machine group may affect email notification rules. If a machine group is configured under an email notification rule, it will be removed from that rule. If the machine group is the only group configured for an email notification, that email notification rule will be deleted along with the machine group.
 
 By default, machine groups are accessible to all users with portal access. You can change the default behavior by assigning Azure AD user groups to the machine group.
 
 Machines that are not matched to any groups are added to Ungrouped machines (default) group. You cannot change the rank of this group or delete it. However, you can change the remediation level of this group, and define the Azure AD user groups that can access this group.
 
 >[!NOTE]
->Applying changes to machine group configuration may take up to several minutes.
-
-
+> - Applying changes to machine group configuration may take up to several minutes.
 
 
 ## Related topic
