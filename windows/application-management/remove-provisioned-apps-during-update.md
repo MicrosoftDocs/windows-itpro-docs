@@ -41,8 +41,8 @@ Use the following steps to create a registry key:
        ```
        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\A ppxAllUserStore\Deprovisioned\Microsoft.BingWeather_8wekyb3d8bbwe]
        ```
-    1. Save the file with a .txt extension, then right-click the file and change the extension to .reg.
-4. Double-click the .reg file to create the registry keys. You can see the new keys in HKLM\\path-to-reg-keys.
+    3. Save the file with a .txt extension, then right-click the file and change the extension to .reg.
+3. Double-click the .reg file to create the registry keys. You can see the new keys in HKLM\\path-to-reg-keys.
 
 You're now ready to update your computer. After the update, check the list of apps in the computer to confirm the removed apps are still gone.
 
