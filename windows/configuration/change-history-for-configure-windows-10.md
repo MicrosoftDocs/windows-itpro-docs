@@ -30,6 +30,20 @@ The topics in this library have been updated for Windows 10, version 1803. The f
 - Windows Configuration Designer setting: [AccountManagement](wcd/wcd-accountmanagement.md)
 - Windows Configuration Designer setting: [RcsPresence](wcd/wcd-rcspresence.md)
 
+The following topics were moved into the [Privacy](/windows/privacy/index) library:
+
+- [Configure Windows diagnostic data in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization)
+- [Diagnostic Data Viewer Overview](/windows/privacy/diagnostic-data-viewer-overview)
+- [Windows 10, version 1803 basic level Windows diagnostic events and fields](/windows/privacy/basic-level-windows-diagnostic-events-and-fields)
+- [Windows 10, version 1709 basic level Windows diagnostic events and fields](/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1709)
+- [Windows 10, version 1703 basic level Windows diagnostic events and fields](/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1703)
+- [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)
+- [Windows 10, version 1709 diagnostic data for the Full level](/windows/privacy/windows-diagnostic-data)
+- [Windows 10, version 1703 diagnostic data for the Full level](/windows/privacy/windows-diagnostic-data-1703)
+- [Beginning your General Data Protection Regulation (GDPR) journey for Windows 10](/windows/privacy/gdpr-win10-whitepaper)
+- [Manage connections from Windows operating system components to Microsoft services](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
+- [Manage Windows 10 connection endpoints](/windows/privacy/manage-windows-endpoints-version-1709)
+
 ## April 2018
 
 New or changed topic | Description
