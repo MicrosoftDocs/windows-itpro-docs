@@ -8,6 +8,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerms
+ms.author: jdecker
+ms.topic: article
 ms.localizationpriority: high
 ms.date: 07/27/2017
 ---

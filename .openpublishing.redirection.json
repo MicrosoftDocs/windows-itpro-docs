@@ -5182,7 +5182,7 @@
 },
 {
 "source_path": "education/windows/switch-to-pro-education.md",
-"redirect_url": "/education/windows/s-mode-switch-to-edu",
+"redirect_url": "/education/windows/change-to-pro-education",
 "redirect_document_id": true
 },
 {
@@ -6403,6 +6403,11 @@
 {
 "source_path": "windows/configure/configure-devices-without-mdm.md",
 "redirect_url": "/windows/configuration/configure-devices-without-mdm",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/configure-devices-without-mdm.md",
+"redirect_url": "/windows/configuration/provisioning-packages/provisioning-packages",
 "redirect_document_id": true
 },
 {

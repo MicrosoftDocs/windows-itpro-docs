@@ -7,6 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
+ms.topic: article
 ms.date: 09/15/2017
 ---
 

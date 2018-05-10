@@ -7,6 +7,8 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: KiranDavane
+ms.author: jdecker
+ms.topic: article
 ms.date: 02/01/2017
 ---
 
