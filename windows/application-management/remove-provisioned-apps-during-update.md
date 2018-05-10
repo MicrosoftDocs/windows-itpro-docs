@@ -15,7 +15,8 @@ ms.date: 05/10/2018
 When you update a computer running Windows 10, version 1703 or 1709, you might see provisioned apps that you previously removed return post-update. This can happen if the computer was offline when you removed the apps. This issue was fixed in Windows 10, version 1803.
 
 >[!NOTE]
->This only applies to first-party apps that shipped with Windows 10. This doesn't apply to third-party apps, Microsoft Store apps, or LOB apps.
+>- This issue only occurs after a feature update (from one version to the next), not monthly updates or security-related updates.
+>- This only applies to first-party apps that shipped with Windows 10. This doesn't apply to third-party apps, Microsoft Store apps, or LOB apps.
 
 To remove a provisioned app, you need to remove the provisioning package. The apps might reappear if you removed the packages in one of the following ways:
 
