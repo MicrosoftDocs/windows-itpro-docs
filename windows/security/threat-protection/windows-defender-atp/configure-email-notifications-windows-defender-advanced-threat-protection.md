@@ -30,26 +30,29 @@ ms.date: 05/01/2018
 You can configure Windows Defender ATP to send email notifications to specified recipients for new alerts. This feature enables you to identify a group of individuals who will immediately be informed and can act on alerts based on their severity.
 
 > [!NOTE]
-> Only users with full access can configure email notifications.
+> Only users with 'Manage security settings' permissions can configure email notifications. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications.
 
-You can set the alert severity levels that trigger notifications. When you turn enable the email notifications feature, itâ€™s set to high and medium alerts by default.
+You can set the alert severity levels that trigger notifications. You can also add or remove recipients of the email notification. New recipients get notified about alerts encountered after they are added. For more information about alerts, see [View and organize the Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md).
 
-You can also add or remove recipients of the email notification. New recipients get notified about alerts encountered after they are added. For more information about alerts, see [View and organize the Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md).
+If you're using role-based access control (RBAC), recipients will only receive notifications based on the machine groups that were configured in the notification rule.
+Users with the proper permission can only create, edit, or delete notifications that are limited to their machine group management scope.
+Only users assigned to the Global administrator role can manage notification rules that are configured for all machine groups.
 
 The email notification includes basic information about the alert and a link to the portal where you can do further investigation.
+
 
 ## Set up email notifications for alerts
 The email notifications feature is turned off by default. Turn it on to start receiving email notifications.
 
 1. On the navigation pane, select **Settings** > **Alert notifications**.
 2. Toggle the setting between **On** and **Off**.
-3.	Select the alert severity level that youâ€™d like your recipients to receive:
-      - **High** â€“ Select this level to send notifications for high-severity alerts.
-      - **Medium** â€“ Select this level to send notifications for medium-severity alerts.
+3.	Select the alert severity level that you’d like your recipients to receive:
+      - **High** – Select this level to send notifications for high-severity alerts.
+      - **Medium** – Select this level to send notifications for medium-severity alerts.
       - **Low** - Select this level to send notifications for low-severity alerts.
       - **Informational** - Select this level to send notification for alerts that might not be considered harmful but good to keep track of.
 4.	In **Email recipients to notify on new alerts**, type the email address then select the + sign.
-5.	Click **Save preferences** when youâ€™ve completed adding all the recipients.
+5.	Click **Save preferences** when you’ve completed adding all the recipients.
 
 Check that email recipients are able to receive the email notifications by selecting **Send test email**. All recipients in the list will receive the test email.
 
@@ -59,9 +62,8 @@ Here's an example email notification:
 
 ## Remove email recipients
 
-1. Select the trash bin icon beside the email address youâ€™d like to remove.
+1. Select the trash bin icon beside the email address you’d like to remove.
 2. Click **Save preferences**.
-
 
 ## Troubleshoot email notifications for alerts
 This section lists various issues that you may encounter when using email notifications for alerts.
