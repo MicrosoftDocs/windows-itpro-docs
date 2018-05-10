@@ -26,6 +26,7 @@
 ##[Collect data using Enterprise Site Discovery](ie11-deploy-guide/collect-data-using-enterprise-site-discovery.md)
 
 ##[Enterprise Mode for Internet Explorer 11 (IE11)](ie11-deploy-guide/enterprise-mode-overview-for-ie11.md)
+###[Tips and tricks to manage Internet Explorer compatibility](ie11-deploy-guide/tips-and-tricks-to-manage-ie-compatibility.md)
 ###[Enterprise Mode and the Enterprise Mode Site List](ie11-deploy-guide/what-is-enterprise-mode.md)
 ###[Set up Enterprise Mode logging and data collection](ie11-deploy-guide/set-up-enterprise-mode-logging-and-data-collection.md)
 ###[Turn on Enterprise Mode and use a site list](ie11-deploy-guide/turn-on-enterprise-mode-and-use-a-site-list.md)
@@ -63,7 +64,7 @@
 ###[Remove sites from a local Enterprise Mode site list](ie11-deploy-guide/remove-sites-from-a-local-enterprise-mode-site-list.md)
 ###[Remove sites from a local compatibility view list](ie11-deploy-guide/remove-sites-from-a-local-compatibililty-view-list.md)
 ###[Turn off Enterprise Mode](ie11-deploy-guide/turn-off-enterprise-mode.md)
-###[Tips and tricks to manage Internet Explorer compatibility](ie11-deploy-guide/tips-and-tricks-to-manage-ie-compatibility.md)
+
 
 ##[Group Policy and Internet Explorer 11 (IE11)](ie11-deploy-guide/group-policy-and-ie11.md)
 ###[Group Policy management tools](ie11-deploy-guide/group-policy-objects-and-ie11.md)
