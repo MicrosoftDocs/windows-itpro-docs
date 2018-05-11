@@ -12,6 +12,8 @@ searchScope:
   - Store
 ms.author: trudyha
 ms.date: 1/5/2018
+ms.topic: conceptual
+---
 
 # For teachers - get Minecraft: Education Edition
 

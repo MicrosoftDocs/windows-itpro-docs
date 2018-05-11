@@ -11,6 +11,7 @@ author: jdeckerms
 ms.localizationpriority: medium
 ms.date: 09/27/2017
 ms.author: jdecker
+ms.topic: article
 ---
 
 # Troubleshoot multi-app kiosk
