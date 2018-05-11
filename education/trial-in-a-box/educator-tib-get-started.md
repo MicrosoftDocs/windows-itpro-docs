@@ -70,13 +70,17 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 **Try this!**
 
 1. On the **Start** menu, click the Word document titled **Design Think**.
+
 2. Click **Edit Document** and select **Edit in Browser**.
+
 3. Select the **View** menu.
+
 4. Select the **Immersive Reader** button.  
 
   ![Word Online's Immersive Reader](images/word_online_immersive_reader.png)
 
 5. Press the **Play** button to hear text read aloud.
+
 6. Select these various settings to see different ways to configure Immersive Reader for your students.
 
   | Text to Speech | Text Preferences | Grammar Options | Line Focus |
@@ -103,6 +107,7 @@ Take a guided tour of Microsoft Teams and test drive this digital hub.
 **Try this!**
 
 1. Take a guided tour of Microsoft Teams and test drive some teaching tasks. Open the Microsoft Edge browser and navigate to <a href="https://msteamsdemo.azurewebsites.net/" target="_blank">https://msteamsdemo.azurewebsites.net</a>.
+
 2. Use your school credentials provided in the **Credentials Sheet**.
 
 </br>
@@ -123,7 +128,9 @@ See how a group project comes together with opportunities to interact with other
 When you're not using the pen, just use the magnet to stick it to the left side of the screen until you need it again. 
 
 1. On the **Start** menu, click the OneNote shortcut named **Imagine Giza** to open the **Reimagine the Great Pyramid of Giza project**.
+
 2. Take the digital pen out of the box and make notes or draw.
+
 3. Follow the instructions for the project. Look for the **Try this!** callouts to experiment with these engaging activities.
   - Discover the power of digital ink by selecting the Draw tab. Choose your pen and get scribbling.
 
@@ -153,20 +160,29 @@ The Photos app now has a built-in video editor, making it easy for you and your 
 **Try this!**
 Use video to create a project summary.
 
-1. Check you have the latest version of Microsoft Photos. Open the **Start** menu and search for **Store**. Select the **See more** button (**…**) and select **Downloads and updates**. Select **Get updates**.   
-2. Open Microsoft Edge and visit <a href="http://aka.ms/PhotosTIB" target="_blank">http://aka.ms/PhotosTIB</a> to download a zip file of the project media.   
+1. Check you have the latest version of Microsoft Photos. Open the **Start** menu and search for **Store**. Select the **See more** button (**…**) and select **Downloads and updates**. Select **Get updates**. 
+
+2. Open Microsoft Edge and visit <a href="http://aka.ms/PhotosTIB" target="_blank">http://aka.ms/PhotosTIB</a> to download a zip file of the project media. 
+
 3. Once the download has completed, open the zip file and select **Extract** > **Extract all**.  Select **Browse** and choose the **Pictures** folder as the destination, and then select **Extract**.  
+
 4. In the **Start** menu, search for **Photos** or select the Photos tile to launch the app.  
+
 5. Select the first video to preview it full screen. Select **Edit & Create**, then select **Create a video with text**.
   1. If you don't see the **Edit & Create** menu, select the video and the menu will appear at the top of the screen. 
+
 6. Name your project “Laser Maze Project.” Hit Enter to continue.   
+
 7. Select **Add photos and videos** and then **From my collection**. Scroll to select the 6 additional videos and select **Add**.
+
 8. Drag the videos to the Storyboard, one by one. Your project should look roughly like this:
 
   ![Photos app layout showing videos added in previous steps](images/photo_app_1.png)
 
 9. Select the first card in the Storyboard (the video of the project materials) and select **Text**, type a title in, a text style, a layout, and select **Done**. 
+
 10.	Select the third card in the Storyboard (the video of the children assembling the maze) and select **Trim**.  Drag the trim handle on the left to shorten the duration of the clip and select **Done**. 
+
 11.	Select the last card on the Storyboard and select **3D effects**.
   1. Position the playback indicator to be roughly 1 second into the video clip, or when the boy moves down to examine the laser.  
   2. Find the **lightning bolt** effect and click or drag to add it to the scene.  Rotate, scale, and position the effect so it looks like the lightning is coming out of the laser beam and hitting the black back of the mirror.
@@ -179,8 +195,11 @@ Use video to create a project summary.
 12. Select **Music** and select a track from the **Recommended** music collection.
   1. The music will update automatically to match the length of your video project, even as you make changes.
   2. If you don’t see more than a few music options, confirm that you’re connected to Wi-Fi and then close and re-open Microsoft Photos (returning to your project via the **Albums** tab). Additional music files should download in the background.
+
 13. You can adjust the volume for the background music using the **Music volume** button.  
+
 14. Preview your video to see how it all came together.
+
 15. Select **Export or share** and select either the **Small** or **Medium** file size. You can share your video to social media, email, or another apps.  
 
 Check out this use case video of the Photos team partnering with the Bureau Of Fearless Ideas in Seattle to bring the Photos app to local middle school students: <a href="https://www.youtube.com/watch?v=0dFFAu6XwPg" target="_blank">https://www.youtube.com/watch?v=0dFFAu6XwPg</a>
@@ -201,24 +220,31 @@ Minecraft: Education Edition provides an immersive environment to develop creati
 Today, we'll explore a Minecraft world through the eyes of a student.
 
 1. Connect the included mouse to your computer for optimal interaction. 
+
 2. Open Microsoft Edge and visit <a href="https://aka.ms/lessonhub" target="_blank">https://aka.ms/lessonhub</a>.
+
 3. Scroll down to the **Details** section and select **Download World**.
 
   ![Select the download world link](images/mcee_downloadworld.png)
 
 4. When prompted, save the world.
+
 5. Enter your same teacher username and password and click **Accept**.
+
 6. Click **OK** on the **Minecraft: Education Edition Free Trial** box.
+
 7. Click **Play**.
+
 8. Click **Lesson Hub Vol 1** to enter the downloaded world.
+
 9. Explore the world by using the keys on your keyboard.
   * **W** moves forward.
   * **A** moves left.
   * **S** moves right.
   * **D** moves backward.
   
-
 10. Use your mouse as your "eyes". Just move it to look around.
+
 11. For a bird's eye view, double-tap the SPACE BAR. Now press the SPACE BAR to fly higher. And then hold the SHIFT key to safely land.
 
   To try more advanced movements or building within Minecraft, use the Minecraft Controls Diagram.
@@ -250,18 +276,25 @@ This digital tutor is available in the OneNote app for Windows 10 and OneNote On
 **Try this in OneNote!**
 To solve x^2-3x+2=0:
 1. Write your equation in ink or type it as text. Use the **Lasso** tool to select the inked equation (or select the text if you typed it) and then, on the **Draw** tab, click the **Math** button.
+
 2. From the drop-down menu in the Math pane, select the option to **Solve for x**. You can now see the final solution of the equation.
+
 3. From the second drop down below, choose **Steps Using the Quadratic Formula**, which shows you the step-by-step solution of this equation.
   ![Select the Math button and use the dropdown menus](images/Math1.png)
+
 4. Finally, **drag and drop** the steps to your page.
+
 5. On the **View** tab, click the **Replay** button and select the written equation to watch it replay your text. 
 
 To graph y=sin(x):
 1. Write your equation in ink or type it as text (make sure the "y" isn't capitalized). Use the **Lasso** tool to select the inked equation (or select the text if you typed it) and then, on the **Draw** tab, click the **Math** button.
+
 2. From the drop-down menu in the Math pane, select the option to **Graph in 2D**. 
   >You can play with the interactive graph of your equation - use a **single finger** to move the graph position or **two fingers** to change the zoom level, or use a mouse to **click and drag** to move the position or use the **magnification** buttons to change the zoom level.
   > ![Select the Math button and use the dropdown menu](images/Math2.png)
+
 3. Expand **Key Graph Features** to understand the properties of your function, such as minima, maxima, zeros, etc.
+
 4. Finally, click the **Insert on Page** button below the graph to add a screenshot of the graph to your page.
 </br>
 </br>
