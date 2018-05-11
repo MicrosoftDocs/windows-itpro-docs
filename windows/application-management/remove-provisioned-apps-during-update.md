@@ -6,23 +6,24 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.author: helohr
 author: HeidiLohr
-ms.date: 05/09/2018
+ms.date: 05/10/2018
 ---
 # How to keep apps removed from Windows 10 from returning during an update
 
->Applies to: Windows 10, version 1703; Windows 10 version 1709; Windows 10, version 1803
+>Applies to: Windows 10 (Semi-Annual Channel)
 
-When you update a computer running Windows 10, version 1703 or 1709, you might see provisioned apps that you previously removed return post-update. This can happen if the computer was offline when you removed the apps.
+When you update a computer running Windows 10, version 1703 or 1709, you might see provisioned apps that you previously removed return post-update. This can happen if the computer was offline when you removed the apps. This issue was fixed in Windows 10, version 1803.
 
 >[!NOTE]
->This only applies to first-party apps that shipped with Windows 10. This doesn't apply to third-party apps, Microsoft Store apps, or LOB apps.
+>* This issue only occurs after a feature update (from one version to the next), not monthly updates or security-related updates.
+>* This only applies to first-party apps that shipped with Windows 10. This doesn't apply to third-party apps, Microsoft Store apps, or LOB apps.
 
 To remove a provisioned app, you need to remove the provisioning package. The apps might reappear if you removed the packages in one of the following ways:
 
 * If you removed the packages while the wim file was mounted when the device was offline.
 * If you removed the packages by running a PowerShell cmdlet on the device while Windows was online. Although the apps won't appear for new users, you'll still see the apps for the user account you signed in as.
 
-When you remove a provisioned app, we create a registry key that tells Windows not to reinstall or update that app the next time Windows is updated. If the computer isn't online when you deprovision the app, then we don't create that registry key. (This behavior is fixed in Windows 10, version 1803. If you're running WIndows 10, version 1709, apply the latest security update to fix it.)
+When you remove a provisioned app, we create a registry key that tells Windows not to reinstall or update that app the next time Windows is updated. If the computer isn't online when you deprovision the app, then we don't create that registry key. (This behavior is fixed in Windows 10, version 1803. If you're running Windows 10, version 1709, apply the latest security update to fix it.)
 
 >[!NOTE]
 >If you remove a provisioned app while Windows is online, it's only removed for *new users*—the user that you signed in as will still have that provisioned app. That's because the registry key created when you deprovision the app only applies to new users created *after* the key is created. This doesn't happen if you remove the provisioned app while Windows is offline.
@@ -36,7 +37,10 @@ Use the following steps to create a registry key:
 1. Identify any provisioned apps you want removed. Record the package name for each app.
 2. Create a .reg file to generate a registry key for each app. Use [this list of Windows 10, version 1709 registry keys](#registry-keys-for-provisioned-apps) as your starting point.
     1. Paste the list of registry keys into Notepad (or a text editor).
-    2. Remove the registry keys belonging to the apps you want to keep. For example, if you want to keep the Bing Weather app, delete this registry key: `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.BingWeather_8wekyb3d8 bbwe]`
+    2. Remove the registry keys belonging to the apps you want to keep. For example, if you want to keep the Bing Weather app, delete this registry key:
+       ```
+       HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\A ppxAllUserStore\Deprovisioned\Microsoft.BingWeather_8wekyb3d8bbwe]
+       ```
     3. Save the file with a .txt extension, then right-click the file and change the extension to .reg.
 3. Double-click the .reg file to create the registry keys. You can see the new keys in HKLM\\path-to-reg-keys.
 

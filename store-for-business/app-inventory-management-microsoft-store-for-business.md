@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
+ms.topic: conceptual
 ms.date: 10/16/2017
 ---
 
