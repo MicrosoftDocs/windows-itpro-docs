@@ -2,8 +2,7 @@
 ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: security
-description: UActiveX controls are small apps that let websites provide content, like videos and games, and let you interact with content, like toolbars. We'll periodically update this page with new ActiveX controls blocked by this
-feature. 
+description: UActiveX controls are small apps that let websites provide content, like videos and games, and let you interact with content, like toolbars. We'll periodically update this page with new ActiveX controls blocked by this feature. 
 author: shortpatti
 ms.author: pashort
 ms.prod: ie11
