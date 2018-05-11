@@ -33,7 +33,7 @@ You can learn more about Windows functional and diagnostic data through these ar
 - [Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1709.md)
 - [Windows 10, version 1703 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md)
 - [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
-- [Manage Windows 10 connection endpoints](manage-windows-endpoints-version-1709.md)
+- [Manage Windows 10 connection endpoints](manage-windows-endpoints.md)
 - [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md)
 
 

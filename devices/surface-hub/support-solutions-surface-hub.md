@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: kaushika-msft
 ms.author: jdecker
+ms.topic: article
 ms.date: 10/24/2017
 ms.localizationpriority: medium
 ---
