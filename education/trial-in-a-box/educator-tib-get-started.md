@@ -249,16 +249,18 @@ This digital tutor is available in the OneNote app for Windows 10 and OneNote On
 
 **Try this in OneNote!**
 To solve x^2-3x+2=0:
-1. Write your equation in ink or type it as text. Use the **Lasso** tool to select the equation and then, on the **Draw** tab, click the **Math** button.
+1. Write your equation in ink or type it as text. Use the **Lasso** tool to select the inked equation (or select the text if you typed it) and then, on the **Draw** tab, click the **Math** button.
 2. From the drop-down menu in the Math pane, select the option to **Solve for x**. You can now see the final solution of the equation.
 3. From the second drop down below, choose **Steps Using the Quadratic Formula**, which shows you the step-by-step solution of this equation.
+  ![Select the Math button and use the dropdown menus](images/Math1.png)
 4. Finally, **drag and drop** the steps to your page.
 5. On the **View** tab, click the **Replay** button and select the written equation to watch it replay your text. 
 
 To graph y=sin(x):
-1. Write your equation in ink or type it as text (make sure the "y" isn't capitalized). Use the **Lasso** tool to select the equation and then, on the **Draw** tab, click the **Math** button.
+1. Write your equation in ink or type it as text (make sure the "y" isn't capitalized). Use the **Lasso** tool to select the inked equation (or select the text if you typed it) and then, on the **Draw** tab, click the **Math** button.
 2. From the drop-down menu in the Math pane, select the option to **Graph in 2D**. 
   >You can play with the interactive graph of your equation - use a **single finger** to move the graph position or **two fingers** to change the zoom level, or use a mouse to **click and drag** to move the position or use the **magnification** buttons to change the zoom level.
+  > ![Select the Math button and use the dropdown menu](images/Math2.png)
 3. Expand **Key Graph Features** to understand the properties of your function, such as minima, maxima, zeros, etc.
 4. Finally, click the **Insert on Page** button below the graph to add a screenshot of the graph to your page.
 
