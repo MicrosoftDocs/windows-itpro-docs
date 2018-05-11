@@ -7,6 +7,8 @@ ms.pagetype: store, mobile
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: TrudyHa
+ms.author: TrudyHa
+ms.topic: conceptual
 ms.localizationpriority: high
 ms.date: 10/17/2017
 ---

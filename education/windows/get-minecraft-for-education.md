@@ -12,6 +12,7 @@ searchScope:
 ms.author: trudyha
 ms.date: 07/27/2017
 ms.technology: Windows
+ms.topic: conceptual
 ---
 
 # Get Minecraft: Education Edition
