@@ -3,9 +3,9 @@ title: Blocked out-of-date ActiveX controls
 description: This page is periodically updated with new ActiveX controls blocked by this feature.
 author: shortpatti
 ms.author: pashort
-ms.manager: elizapo
+manager: elizapo
 ms.date: 05/10/2018
-ms.topic: ''
+ms.topic: article
 ms.prod: ie11
 ms.localizationpriority: low
 ms.mktglfcycl: deploy
