@@ -13,6 +13,9 @@ ms.date: 05/05/2018
 ---
 # Windows Hello for Business Frequently Ask Questions
 
+**Applies to**
+-   Windows 10
+
 ## What about virtual smart cards?
 
 Windows Hello for Business is the modern, two-factor credential for Windows 10.  Microsoft will be deprecating virtual smart cards in the future but not date at this time.  Customers using Windows 10 and virtual smart cards should move to Windows Hello for Business.  Microsoft will publish the date early to ensure customers have adequate lead time to move to Windows Hello for Business.  Microsoft recommends new Windows 10 deployments to use Windows Hello for Business. Virtual smart card remain supported for Windows 7 and Windows 8.
@@ -30,19 +33,19 @@ Windows Hello for Business deployments using System Center Configuration Manager
 
 Watch Principal Program Manager Karanbir Singh's Ignite 2017 presentation **Microsoft's guide for going password-less**
 
-[Microsoft's passwordless strategy](hello-videos.md#Microsofts-passwordless-strategy)
+[Microsoft's passwordless strategy](hello-videos.md#microsofts-passwordless-strategy)
 
 ## What is the user experience for Windows Hello for Business?
 
 The user experience for Windows Hello for Business occurs after user sign-in, after you deploy Windows Hello for Business policy settings to your environment.
 
-[Windows Hello for Business user enrollment experience](hello-videos.md#Windows-Hello-for-Business-user-enrollment-experience)
+[Windows Hello for Business user enrollment experience](hello-videos.md#windows-hello-for-business-user-enrollment-experience)
 
 ## What happens when my user forgets their PIN?
 
 If the user can sign-in with a password, they can reset their PIN by clicking the "I forgot my PIN" link in settings.  Beginning with the Fall Creators Update, users can reset their PIN above the lock screen by clicking the "I forgot my PIN" link on the PIN credential provider.
 
-[Windows Hello for Business forgotten PIN user experience](hello-videos.md#Windows-Hello-for-Business-forgotten-PIN-user-experience)
+[Windows Hello for Business forgotten PIN user experience](hello-videos.md#windows-hello-for-business-forgotten-pin-user-experience)
 
 For on-premises deployments, devices must be well connected to their on-premises network (domain controllers and/or certificate authority) to reset their PINs.  Hybrid customers can on-board their Azure tenant to use the Windows Hello for Business PIN reset service to reset their PINs without access to their corporate network.
 

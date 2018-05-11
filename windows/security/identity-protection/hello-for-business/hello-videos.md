@@ -13,6 +13,9 @@ ms.date: 05/05/2018
 ---
 # Windows Hello for Business Videos
 
+**Applies to**
+-   Windows 10
+
 ## Overview of Windows Hello for Business and Features
 
 Watch Pieter Wigleven explain Windows Hello for Business, Multi-factor Unlock, and Dynamic Lock
