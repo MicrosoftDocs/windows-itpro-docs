@@ -114,18 +114,11 @@ IE11 includes all of the previous Group Policy settings you've used to manage an
 
 For more information, see [New group policy settings for IE11](../ie11-deploy-guide/new-group-policy-settings-for-ie11.md).
 
-**Q: Is there a version of the Internet Explorer Administration Kit (IEAK) supporting IE11?**<br>
-Yes. The Internet Explorer Administration Kit 11 (IEAK 11) is available for download. IEAK 11 lets you create custom versions of IE11 for use in your organization. For more information, see the following resources:
-
-- [Internet Explorer Administration Kit Information and Downloads](https://go.microsoft.com/fwlink/p/?LinkId=214250) on the Internet Explorer TechCenter.
-
-- [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](../ie11-ieak/index.md)
 
 **Q: Where can I get more information about IE11 for IT pros?**<br>
 Visit the [Springboard Series for Microsoft Browsers](https://go.microsoft.com/fwlink/p/?LinkId=313191) webpage on TechNet.
 
-**Q: Is there a version of the Internet Explorer Blocker Toolkit that will prevent automatic installation of IE11?**<br>
-Yes. The IE11 Blocker Toolkit is available for download. For more information, see [Toolkit to Disable Automatic Delivery of IE11](https://go.microsoft.com/fwlink/p/?LinkId=328195) on the Microsoft Download Center.
+
 
 **Q: Can I customize settings for IE on Windows 8.1?**<br>
 Settings can be customized in the following ways:
@@ -146,7 +139,6 @@ Group Policy settings can be set to open either IE or Internet Explorer for the 
 |Always in Internet Explorer for the desktop |Links always open in Internet Explorer for the desktop. |
 
 
-
 **Q. Can IEAK 11 build custom Internet Explorer 11 packages in languages other than the language of the in-use IEAK 11 version?**
 Yes. You can use IEAK 11 to build custom Internet Explorer 11 packages in any of the supported 24 languages. You'll select the language for the custom package on the Language Selection page of the customization wizard.
 
@@ -161,6 +153,7 @@ IEAK 11 is available in 24 languages but can build customized Internet Explorer 
 |[Japanese](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/ja-jp/ieak.msi)     |[Korean](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/ko-kr/ieak.msi)         |[Polish](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/pl-pl/ieak.msi)         |
 |[Portuguese (Brazil)](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/pt-br/ieak.msi)     |[Portuguese (Portugal)](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/pt-pt/ieak.msi)         |[Russian](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/ru-ru/ieak.msi)         |
 |[Spanish](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/es-es/ieak.msi)     |[Swedish](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/sv-se/ieak.msi)         |[Turkish](http://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/tr-tr/ieak.msi)         |
+
 
 
 
