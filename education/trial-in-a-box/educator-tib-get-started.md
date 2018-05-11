@@ -269,7 +269,7 @@ Today, we'll explore a Minecraft world through the eyes of a student.
 ## <a name="edu-task7"></a>7. Go digital in your Math classroom
 
 Whether you are an Ink user or prefer to type your math as text, Math Assistant can: 
-*	give your students step-by-step instructions on how to solve their math problems 
+*	give your students step-by-step instructions on how to solve their math problems. 
 *	help them visualize math functions on an interactive 2D graph.
 This digital tutor is available in the OneNote app for Windows 10 and OneNote Online.
 
