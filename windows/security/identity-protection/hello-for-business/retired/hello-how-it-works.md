@@ -23,7 +23,7 @@ Windows Hello for Business requires a registered device. When the device is set 
 A goal of device registration is to allow a user to open a brand-new device, securely join an organizational network to download and manage organizational data, and create a new Windows Hello gesture to secure the device. Microsoft refers to the process of setting up a device for use with Windows Hello as registration.
  
 > [!NOTE]
->This is separate from the organizational configuration required to use Windows Hello with Active Directory or Azure Active Directory (Azure AD); that configuration information is in [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md). Organizational configuration must be completed before users can begin to register.  
+>This is separate from the organizational configuration required to use Windows Hello with Active Directory or Azure Active Directory (Azure AD); that configuration information is in [Manage Windows Hello for Business in your organization](../hello-manage-in-organization.md). Organizational configuration must be completed before users can begin to register.  
 
  The registration process works like this: 
  
@@ -51,7 +51,7 @@ It’s important to keep in mind that there are no physical containers on disk, 
 
 The container actually contains a set of keys, some of which are used to protect other keys. The following image shows an example: the protector key is used to encrypt the authentication key, and the authentication key is used to encrypt the individual keys stored in the container.
  
-![Each logical container holds one or more sets of keys](images/passport-fig3-logicalcontainer.png)
+![Each logical container holds one or more sets of keys](../images/passport-fig3-logicalcontainer.png)
 
 Containers can contain several types of key material:
 
@@ -112,11 +112,11 @@ Windows Hello depends on having compatible IDPs available to it. As of this writ
 
 ## Related topics
 
-- [Windows Hello for Business](hello-identity-verification.md)
-- [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
-- [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
-- [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
-- [Windows Hello and password changes](hello-and-password-changes.md)
-- [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
-- [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
-- [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)
+- [Windows Hello for Business](../hello-identity-verification.md)
+- [Manage Windows Hello for Business in your organization](../hello-manage-in-organization.md)
+- [Why a PIN is better than a password](../hello-why-pin-is-better-than-password.md)
+- [Prepare people to use Windows Hello](../hello-prepare-people-to-use.md)
+- [Windows Hello and password changes](../hello-and-password-changes.md)
+- [Windows Hello errors during PIN creation](../hello-errors-during-pin-creation.md)
+- [Event ID 300 - Windows Hello successfully created](../hello-event-300.md)
+- [Windows Hello biometrics in the enterprise](../hello-biometrics-in-enterprise.md)
