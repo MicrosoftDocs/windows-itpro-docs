@@ -15,15 +15,17 @@ ms.date: 05/10/2018
 
 # Internet Explorer Administration Kit (IEAK) information and downloads
 
-The Internet Explorer Administration Kit (IEAK) simplifies the creation, deployment, and management of customized Internet Explorer packages. You can use the IEAK to configure the out-of-box Internet Explorer experience or to manage user settings after Internet Explorer deployment. To find more information on the IEAK, see What IEAK can do for you.
+The Internet Explorer Administration Kit (IEAK) simplifies the creation, deployment, and management of customized Internet Explorer packages. You can use the IEAK to configure the out-of-box Internet Explorer experience or to manage user settings after Internet Explorer deployment. To find more information on the IEAK, see [What IEAK can do for you](what-ieak-can-do-for-you.md).
 
 ## Internet Explorer Administration Kit 11 (IEAK 11)
 
-[IEAK 11 documentation IEAK 11 licensing guidelines](licensing-version-and-features-ieak11.md)
+[IEAK 11 documentation](index.md)
+
+[IEAK 11 licensing guidelines](licensing-version-and-features-ieak11.md)
 
 [IEAK 11 - Frequently Asked Questions](../ie11-faq/faq-ieak11.md)
 
-[Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](index.md)
+[Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](before-you-create-custom-pkgs-ieak11.md)
 
 ## Download IEAK
 
