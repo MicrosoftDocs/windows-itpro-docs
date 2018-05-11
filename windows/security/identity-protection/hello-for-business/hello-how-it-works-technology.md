@@ -35,16 +35,16 @@ ms.date: 05/05/2018
 <hr>
 
 ## Attestation Identity Keys
-Because the endorsement certificate is unique for each device and does not change, the usage of it may present privacy concerns because it's theoretically possible to track a specific device. To avoid this privacy problem, Windows 10 issues a derived attestation anchor based on the endorsement certificate. This intermediate key, which can be attested to an endorsement key, is the Attestation Identity Key (AIK) and the corresponding certificate is called the AIK certificate. This AIK certificate is issued by a Microsoft cloud service.
+Because the endorsement certificate is unique for each device and does not change, the usage of it may present privacy concerns because it's theoretically possible to track a specific device. To avoid this privacy problem, Windows 10 issues a derived attestation anchor based on the endorsement certificate. This intermediate key, which can be attested to an endorsement key, is the Attestation Identity Key (AIK) and the corresponding certificate is called the AIK certificate. This AIK certificate is issued by a Microsoft cloud service.
 
->**Note:**  The AIK certificate must be provisioned in conjunction with a third-party service like the Microsoft Cloud CA service. After it is provisioned, the AIK private key can be used to report platform configuration. Windows 10 creates a signature over the platform log state (and a monotonic counter value) at each boot by using the AIK.
- 
-The AIK is an asymmetric (public/private) key pair that is used as a substitute for the EK as an identity for the TPM for privacy purposes. The private portion of an AIK is never revealed or used outside the TPM and can only be used inside the TPM for a limited set of operations. Furthermore, it can only be used for signing, and only for limited, TPM-defined operations.
+> [!NOTE]
+> The AIK certificate must be provisioned in conjunction with a third-party service like the Microsoft Cloud CA service. After it is provisioned, the AIK private key can be used to report platform configuration. Windows 10 creates a signature over the platform log state (and a monotonic counter value) at each boot by using the AIK.
+> The AIK is an asymmetric (public/private) key pair that is used as a substitute for the EK as an identity for the TPM for privacy purposes. The private portion of an AIK is never revealed or used outside the TPM and can only be used inside the TPM for a limited set of operations. Furthermore, it can only be used for signing, and only for limited, TPM-defined operations.
 
-Windows 10 creates AIKs protected by the TPM, if available, that are 2048-bit RSA signing keys. Microsoft hosts a cloud service called Microsoft Cloud CA to establish cryptographically that it is communicating with a real TPM and that the TPM possesses the presented AIK. After the Microsoft 
-Cloud CA service has established these facts, it will issue an AIK certificate to the Windows 10-based device.
+Windows 10 creates AIKs protected by the TPM, if available, that are 2048-bit RSA signing keys. Microsoft hosts a cloud service called Microsoft Cloud CA to establish cryptographically that it is communicating with a real TPM and that the TPM possesses the presented AIK. After the Microsoft 
+Cloud CA service has established these facts, it will issue an AIK certificate to the Windows 10 device.
 
-Many existing devices that will upgrade to Windows 10 will not have a TPM, or the TPM will not contain an endorsement certificate. **To accommodate those devices, Windows 10 allows the issuance of AIK certificates without the presence of an endorsement certificate.** Such AIK certificates are not issued by Microsoft Cloud CA. Note that this is not as trustworthy as an endorsement certificate that is burned into the device during manufacturing, but it will provide compatibility for advanced scenarios like Windows Hello for Business without TPM.
+Many existing devices that will upgrade to Windows 10 will not have a TPM, or the TPM will not contain an endorsement certificate. **To accommodate those devices, Windows 10 allows the issuance of AIK certificates without the presence of an endorsement certificate.** Such AIK certificates are not issued by Microsoft Cloud CA. Note that this is not as trustworthy as an endorsement certificate that is burned into the device during manufacturing, but it will provide compatibility for advanced scenarios like Windows Hello for Business without TPM.
 
 In the issued AIK certificate, a special OID is added to attest that endorsement certificate was used during the attestation process. This information can be leveraged by a relying party to decide whether to reject devices that are attested using AIK certificates without an endorsement certificate or accept them. Another scenario can be to not allow access to high-value assets from devices that are attested by an AIK certificate that is not backed by an endorsement certificate.
 
@@ -67,7 +67,7 @@ Azure AD Join is intended for organizations that desire to be cloud-first or clo
 
 [Return to Top](#Technology-and-Terms)
 ## Azure AD Registered
-The goal of Azure AD registered devices is to provide you with support for the Bring Your Own Device (BYOD) scenario. In this scenario, a user can access your organization’s Azure Active Directory controlled resources using a personal device. 
+The goal of Azure AD registered devices is to provide you with support for the Bring Your Own Device (BYOD) scenario. In this scenario, a user can access your organization's Azure Active Directory controlled resources using a personal device. 
 ### Related topics
 [Azure AD Joined](#Azure-AD-Joined), [Hybrid Azure AD Joined](#Hybrid-Azure-AD-Joined), [Join Type](#Join-Type)
 
@@ -116,9 +116,9 @@ The endorsement key acts as an identity card for the TPM.
 
 The endorsement key is often accompanied by one or two digital certificates:
 
--   One certificate is produced by the TPM manufacturer and is called the **endorsement certificate**. The endorsement certificate is used to prove the authenticity of the TPM (for example, that it’s a real TPM manufactured by a specific chip maker) to local processes, applications, or cloud services. The endorsement certificate is created during manufacturing or the first time the TPM is initialized by communicating with an online service.
+-   One certificate is produced by the TPM manufacturer and is called the **endorsement certificate**. The endorsement certificate is used to prove the authenticity of the TPM (for example, that it's a real TPM manufactured by a specific chip maker) to local processes, applications, or cloud services. The endorsement certificate is created during manufacturing or the first time the TPM is initialized by communicating with an online service.
 -   The other certificate is produced by the platform builder and is called the **platform certificate** to indicate that a specific TPM is integrated with a certain device.
-For certain devices that use firmware-based TPM produced by Intel or Qualcomm, the endorsement certificate is created when the TPM is initialized during the OOBE of Windows 10.
+For certain devices that use firmware-based TPM produced by Intel or Qualcomm, the endorsement certificate is created when the TPM is initialized during the OOBE of Windows 10.
 
 ### Related topics
 [Attestation Identity Keys](#Attestation-Identity-Keys), [Storage Root Key](#Storage-Root-Key), [Trusted Platform Module](#Trusted-Platform-Module)
@@ -164,7 +164,7 @@ The Windows Hello for Business hybrid deployment is for organizations that have 
 [Return to Top](#Technology-and-Terms)
 ## Join type
 Join type is how devices are associated with Azure Active Directory. For a device to authenticate to Azure Active Directory it must be registered or joined.
-Registering a device to Azure AD enables you to manage a device’s identity. When a device is registered, Azure AD device registration provides the device with an identity that is used to authenticate the device when a user signs-in to Azure AD. You can use the identity to enable or disable a device.
+Registering a device to Azure AD enables you to manage a device's identity. When a device is registered, Azure AD device registration provides the device with an identity that is used to authenticate the device when a user signs-in to Azure AD. You can use the identity to enable or disable a device.
 When combined with a mobile device management(MDM) solution such as Microsoft Intune, the device attributes in Azure AD are updated with additional information about the device. This allows you to create conditional access rules that enforce access from devices to meet your standards for security and compliance. For more information on enrolling devices in Microsoft Intune, see Enroll devices for management in Intune .
 Joining a device is an extension to registering a device. This means, it provides you with all the benefits of registering a device and in addition to this, it also changes the local state of a device. Changing the local state enables your users to sign-in to a device using an organizational work or school account instead of a personal account.
 
@@ -203,7 +203,7 @@ The Windows Hello for Business on-premises deployment is for organizations that 
 
 [Return to Top](#Technology-and-Terms)
 ## Pass-through authentication
-Provides a simple password validation for Azure AD authentication services using a software agent running on one or more on-premises servers to validate the users directly with your on-premises Active Directory. With pass-through authentication (PTA), you synchronize on-premises Active Directory user account objects with Office 365 and manage your users on-premises. Allows your users to sign in to both on-premises and Office 365 resources and applications using their on-premises account and password. This configuration validates users’ passwords directly against your on-premises Active Directory without sending password hashes to Office 365. Companies with a security requirement to immediately enforce on-premises user account states, password policies, and logon hours would use this authentication method. With seamless single sign-on, users are automatically signed in to Azure AD when they are on their corporate devices and connected to your corporate network.
+Provides a simple password validation for Azure AD authentication services using a software agent running on one or more on-premises servers to validate the users directly with your on-premises Active Directory. With pass-through authentication (PTA), you synchronize on-premises Active Directory user account objects with Office 365 and manage your users on-premises. Allows your users to sign in to both on-premises and Office 365 resources and applications using their on-premises account and password. This configuration validates users' passwords directly against your on-premises Active Directory without sending password hashes to Office 365. Companies with a security requirement to immediately enforce on-premises user account states, password policies, and logon hours would use this authentication method. With seamless single sign-on, users are automatically signed in to Azure AD when they are on their corporate devices and connected to your corporate network.
 
 ### Related topics
 [Federated Environment](#Federated-Environment), [Managed Environment](#Managed-Environment), [Password Hash Synchronization](#Password-Hash-Synchronization)
@@ -253,47 +253,36 @@ The trust type determines how a user authenticates to the Active Directory to ac
 [Return to Top](#Technology-and-Terms)
 ## Trusted Platform Module
 
--   A Trusted Platform Module (TPM) is a hardware component that provides unique security features.
+A Trusted Platform Module (TPM) is a hardware component that provides unique security features.<br>
 
-    Windows 10 leverages security characteristics of a TPM for measuring boot integrity sequence (and based on that, unlocking automatically BitLocker protected drives), for protecting credentials or for health attestation.
+Windows 10 leverages security characteristics of a TPM for measuring boot integrity sequence (and based on that, unlocking automatically BitLocker protected drives), for protecting credentials or for health attestation.
 
-    A TPM implements controls that meet the specification described by the Trusted Computing Group (TCG). At the time of this writing, there are two versions of TPM specification produced by TCG that are not compatible with each other:
+A TPM implements controls that meet the specification described by the Trusted Computing Group (TCG). At the time of this writing, there are two versions of TPM specification produced by TCG that are not compatible with each other:
+- The first TPM specification, version 1.2, was published in February 2005 by the TCG and standardized under ISO / IEC 11889 standard.
+- The latest TPM specification, referred to as TPM 2.0, was released in April 2014 and has been approved by the ISO/IEC Joint Technical Committee (JTC) as ISO/IEC 11889:2015.
 
-    -   The first TPM specification, version 1.2, was published in February 2005 by the TCG and standardized under ISO / IEC 11889 standard.
-    -   The latest TPM specification, referred to as TPM 2.0, was released in April 2014 and has been approved by the ISO/IEC Joint Technical Committee (JTC) as ISO/IEC 11889:2015.
+Windows 10 uses the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Windows Hello, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=733948).
 
-    Windows 10 uses the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Windows Hello, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=733948).
+Windows 10 recognizes versions 1.2 and 2.0 TPM specifications produced by the TCG. For the most recent and modern security features, Windows 10 supports only TPM 2.0. 
 
-    Windows 10 recognizes versions 1.2 and 2.0 TPM specifications produced by the TCG. For the most recent and modern security features, Windows 10 supports only TPM 2.0. 
+TPM 2.0 provides a major revision to the capabilities over TPM 1.2:
 
-    TPM 2.0 provides a major revision to the capabilities over TPM 1.2:
-
-    -   Update crypto strength to meet modern security needs
-
-        -   Support for SHA-256 for PCRs
-        -   Support for HMAC command
-
-    -   Cryptographic algorithms flexibility to support government needs
-
-        -   TPM 1.2 is severely restricted in terms of what algorithms it can support
-        -   TPM 2.0 can support arbitrary algorithms with minor updates to the TCG specification documents
-
-    -   Consistency across implementations
-
-        -   The TPM 1.2 specification allows vendors wide latitude when choosing implementation details
-        -   TPM 2.0 standardizes much of this behavior
-
-
-
-
-This section describes endorsement key (EK) (that acts as an identity card for TPM), storage root key (SRK) (that protect keys) and attestation identity key (AIK) (that can report platform state) are used for health attestation reporting.
+- Update cryptography strength to meet modern security needs
+    - Support for SHA-256 for PCRs
+    - Support for HMAC command
+- Cryptographic algorithms flexibility to support government needs
+    - TPM 1.2 is severely restricted in terms of what algorithms it can support
+    - TPM 2.0 can support arbitrary algorithms with minor updates to the TCG specification documents
+- Consistency across implementations
+    - The TPM 1.2 specification allows vendors wide latitude when choosing implementation details
+    - TPM 2.0 standardizes much of this behavior
 
 In a simplified manner, the TPM is a passive component with limited resources. It can calculate random numbers, RSA keys, decrypt short data, store hashes taken when booting the device.  A TPM incorporates in a single component:
-* A RSA 2048-bit key generator
-* A random number generator
-* Nonvolatile memory for storing EK, SRK, and AIK keys
-* A cryptographic engine to encrypt, decrypt, and sign
-* Volatile memory for storing the PCRs and RSA keys
+- A RSA 2048-bit key generator
+- A random number generator
+- Nonvolatile memory for storing EK, SRK, and AIK keys
+- A cryptographic engine to encrypt, decrypt, and sign
+- Volatile memory for storing the PCRs and RSA keys
 
 
 ### Related topics
