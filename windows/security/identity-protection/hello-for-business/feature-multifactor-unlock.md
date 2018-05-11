@@ -93,6 +93,7 @@ Each rule element has a **signal** element.  All signal elements have a **type**
 |Attribute|Value|
 |---------|-----|
 | type| "bluetooth" or "ipConfig" (Windows 10, version 1709)| 
+| type| "wifi" (Windows 10, version 1803)
 
 #### Bluetooth
 You define the bluetooth signal with additional attribute in the signal element. The bluetooth configuration does not use any other elements. You can end the signal element with short ending tag "\/>".
@@ -192,12 +193,61 @@ The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IP
 <ipv6DnsServer>21DA:00D3:0000:2F3B:02AA:00FF:FE28:9C5A%2</ipv6DnsServer>
 ```
 ##### dnsSuffix
-The fully qualified domain name of your organizations internal dns suffix where any part of the fully qualified domain name in this setting exists in the computer's primary dns suffix.  The **signal** element may contain one or more **dnsSuffix** elements.<br>
+The fully qualified domain name of your organizations internal DNS suffix where any part of the fully qualified domain name in this setting exists in the computer's primary DNS suffix.  The **signal** element may contain one or more **dnsSuffix** elements.<br>
 **Example**
 ```
 <dnsSuffix>corp.contoso.com</dnsSuffix>
 ```
 
+#### Wi-Fi
+
+**Applies to:**
+-   Windows 10, version 1803
+
+You define Wi-Fi signals using one or more wifi elements.  Each element has a string value.  Wifi elements do not have attributes or nested elements.
+
+#### SSID
+Contains the service set identifier (SSID) of a wireless network.  The SSID is the name of the wireless network.  The SSID element is required.<br>
+```
+<ssid>corpnetwifi</ssid>
+```
+
+#### BSSID
+Contains the basic service set identifier (BSSID) of a wireless access point.  the BSSID is the mac address of the wireless access point.  The BSSID element is optional.<br>
+**Example**
+```
+<bssid>12-ab-34-ff-e5-46</bssid>
+```
+
+#### Security
+Contains the type of security the client uses when connecting to the wireless network.  The security element is required and must contain one of the following values:<br>
+
+|Value | Description|
+|:----:|:-----------|
+|Open| The wireless network is an open network that does not require any authentication or encryption.|
+|WEP| The wireless network is protected using Wired Equivalent Privacy.|
+|WPA-Personal| The wireless network is protected using Wi-Fi Protected Access.|
+|WPA-Enterprise| The wireless network is protected using Wi-Fi Protected Access-Enterprise.|
+|WPA2-Personal| The wireless network is protected using Wi-Fi Protected Access 2, which typically uses a pre-shared key.|
+|WPA2-Enterprise| The wireless network is protected using Wi-Fi Protected Access 2-Enterprise.|
+
+**Example**
+```
+<security>WPA2-Enterprise</security> 
+```
+#### TrustedRootCA
+Contains the thumbprint of the trusted root certificate of the wireless network. This may be any valid trusted root certificate. The value is represented as hexadecimal string where each byte in the string is separated by a single space.  This element is optional.<br>
+**Example**
+```
+<trustedRootCA>a2 91 34 aa 22 3a a2 3a 4a 78 a2 aa 75 a2 34 2a 3a 11 4a aa</trustedRootCA>
+```
+#### Sig_quality
+Contains numeric value ranging from 0 to 100 to represent the wireless network's signal strength needed to be considered a trusted signal.<br>
+**Example**
+```
+<sig_quality>80</sig_quality>
+```
+ 
 ### Sample Trusted Signal Congfigurations
 
 These examples are wrapped for readability.  Once properly formatted, the entire XML contents must be a single line.
@@ -243,7 +293,19 @@ This example configures the same as example 2 using compounding And elements.  T
 </and>
 </rule>
 ```
-
+#### Example 4 
+This example configures Wi-Fi as a trusted signal (Windows 10, version 1803)
+```
+<rule version="1.0"> 
+  <signal type="wifi"> 
+    <ssid>contoso</ssid> 
+    <bssid>12-ab-34-ff-e5-46</bssid> 
+    <security>WPA2-Enterprise</security> 
+    <trustedRootCA>a2 91 34 aa 22 3a a2 3a 4a 78 a2 aa 75 a2 34 2a 3a 11 4a aa</trustedRootCA> 
+    <sig_quality>80</sig_quality> 
+  </signal> 
+</rule> 
+```
 
 ## Deploying Multifactor Unlock
 
