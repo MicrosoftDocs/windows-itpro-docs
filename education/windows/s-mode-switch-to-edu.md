@@ -12,7 +12,7 @@ ms.date: 04/30/2018
 author: Mikeblodge
 ---
 
-# Windows 10 Pro in S mode for Education
+# Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode
 
 S mode is an enhanced security mode of Windows 10 – streamlined for security and superior performance. With Windows 10 in S mode, everyone can download and install Microsoft-verified apps from the Microsoft Store for Education – this keep devices running fast and secure day in and day out. 
 

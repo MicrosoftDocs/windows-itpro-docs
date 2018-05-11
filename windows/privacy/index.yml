@@ -1,0 +1,148 @@
+### YamlMime:YamlDocument
+
+documentType: LandingData
+
+title: Windows Privacy
+
+metadata:
+
+  document_id: 
+
+  title: Windows Privacy
+
+  description: Learn about how privacy is managed in Windows.
+
+  keywords: Windows 10, Windows Server, Windows Server 2016, privacy, GDPR, compliance, endpoints
+
+  ms.localizationpriority: high
+
+  author: danihalfin
+
+  ms.author: daniha
+
+  ms.date: 04/25/2018
+
+  ms.topic: article
+
+  ms.devlang: na
+
+sections:
+
+- items:
+
+  - type: markdown
+
+    text: Get ready for General Data Protection Regulation (GDPR) by viewing and configuring diagnostics data in your organization. 
+
+- items:
+
+  - type: list
+
+    style: cards
+
+    className: cardsM
+
+    columns: 3
+
+    items:
+
+    - href: \windows\privacy\gdpr-win10-whitepaper
+
+      html: <p>Learn about GDPR and how Microsoft helps you get started towards compliance</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_advanced.svg
+
+      title: Begin your GDPR journey
+
+    - href: \windows\privacy\configure-windows-diagnostic-data-in-your-organization
+
+      html: <p>Make informed decisions about how you can configure diagnostic data in your organization</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_filter.svg
+
+      title: Configure Windows diagnostic data
+
+    - href: \windows\privacy\diagnostic-data-viewer-overview
+
+      html: <p>Review the diagnostic data sent to Microsoft by device in your organization</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_investigate.svg
+
+      title: View diagnostic data
+
+- title: Understand Diagnostic Data in Windows 10 
+
+  items:
+
+  - type: paragraph
+
+    text: 'For the latest Windows 10 version, Learn more about what Windows Diagnostic Data is gathered at various diagnostics levels.'
+
+  - type: list
+
+    style: cards
+
+    className: cardsM
+
+    columns: 3
+
+    items:
+
+    - href: \windows\privacy\basic-level-windows-diagnostic-events-and-fields
+
+      html: <p>Learn more about basic diagnostics events and fields collected</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_extend.svg
+      
+      title: Basic level events and fields
+
+    - href: \windows\privacy\enhanced-diagnostic-data-windows-analytics-events-and-fields
+
+      html: <p>Learn more about diagnostics events and fields used by Windows Analytics</p>  
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_delivery.svg
+      
+      title: Enhanced level events and fields
+
+    - href: \windows\privacy\windows-diagnostic-data
+    
+      html: <p>Learn more about all diagnostics data collected</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_get-started.svg
+      
+      title: Full level events and fields
+
+- items:
+
+  - type: list
+
+    style: cards
+
+    className: cardsL
+
+    items:
+
+    - title: View and manage Windows 10 connection endpoints
+
+      html: <p><a class="barLink" href="/windows/privacy/manage-windows-endpoints-version-1709">Manage Windows 10 connection endpoints</a></p>
+
+            <p><a class="barLink" href="/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services">Manage connections from Windows to Microsoft services</a></p>
+
+    - title: Additional resources
+
+      html: <p><a class="barLink" href="https://www.microsoft.com/en-us/trustcenter/cloudservices/windows10">Windows 10 on Trust Center</a></p>
+
+            <p><a class="barLink" href="https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr">GDPR on Microsoft365 Compliance solutions</a></p>
+      

@@ -11,6 +11,7 @@ ms.sitesec: library
 author: brecords
 ms.date: 02/23/2018
 ms.author: jdecker
+ms.topic: article
 ---
 
 # Microsoft Surface Dock Updater

@@ -29,7 +29,7 @@ ms.date: 04/24/2018
 
 Before you can create custom threat intelligence (TI) using REST API, you'll need to set up the custom threat intelligence application through the Windows Defender ATP portal.
 
-1. In the navigation pane, select **Settings** > **APIs** > **Threat intel**.
+1. In the navigation pane, select **Settings** >  **Threat intel**.
 
   ![Image of threat intel API menu](images/atp-threat-intel-api.png)
 
