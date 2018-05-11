@@ -280,6 +280,7 @@ To solve x^2-3x+2=0:
 2. From the drop-down menu in the Math pane, select the option to **Solve for x**. You can now see the final solution of the equation.
 
 3. From the second drop down below, choose **Steps Using the Quadratic Formula**, which shows you the step-by-step solution of this equation.
+  
   ![Select the Math button and use the dropdown menus](images/Math1.png)
 
 4. Finally, **drag and drop** the steps to your page.
@@ -291,6 +292,7 @@ To graph y=sin(x):
 
 2. From the drop-down menu in the Math pane, select the option to **Graph in 2D**. 
   >You can play with the interactive graph of your equation - use a **single finger** to move the graph position or **two fingers** to change the zoom level, or use a mouse to **click and drag** to move the position or use the **magnification** buttons to change the zoom level.
+  
   > ![Select the Math button and use the dropdown menu](images/Math2.png)
 
 3. Expand **Key Graph Features** to understand the properties of your function, such as minima, maxima, zeros, etc.
