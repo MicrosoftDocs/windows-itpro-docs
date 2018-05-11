@@ -48,7 +48,7 @@ It also works with these operating system and IE combinations:
 |Windows Server 2008 SP2                 |Windows Internet Explorer 9 only |
 |Windows Vista SP2                       |Windows Internet Explorer 9 only |
      
-For more info about this new feature, see the [Internet Explorer begins blocking out-of-date ActiveX controls](https://go.microsoft.com/fwlink/p/?LinkId=507691) blog. To see the complete list of out-of-date Active controls blocked by this feature, see [Blocked out-of-date ActiveX controls](https://go.microsoft.com/fwlink/p/?LinkId=517023).
+For more info about this new feature, see the [Internet Explorer begins blocking out-of-date ActiveX controls](https://go.microsoft.com/fwlink/p/?LinkId=507691) blog. To see the complete list of out-of-date Active controls blocked by this feature, see [Blocked out-of-date ActiveX controls](blocked-out-of-date-activex-controls.md).
 
 
 ## What does the out-of-date ActiveX control blocking notification look like?

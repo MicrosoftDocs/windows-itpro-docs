@@ -104,8 +104,7 @@ A. You only need to change your settings if:
 
 -   You don’t want to upgrade your older versions of Internet Explorer to Internet Explorer 11 right now.
 
-If these scenarios apply to your company, see [Internet Explorer 11 delivery through automatic updates](https://technet.microsoft.com/microsoft-edge/dn449235) for more
-information on how to prevent automatic installation.
+If these scenarios apply to your company, see [Internet Explorer 11 delivery through automatic updates](../ie11-deploy-guide/ie11-delivery-through-automatic-updates.md) for more information on how to prevent automatic installation.
 
 
 ## Additional resources
@@ -114,6 +113,6 @@ information on how to prevent automatic installation.
 
 -   [Internet Explorer 11 FAQ for IT pros](https://docs.microsoft.com/internet-explorer/ie11-faq/faq-for-it-pros-ie11)
 
--   [Internet Explorer 11 delivery through automatic updates](https://technet.microsoft.com/microsoft-edge/dn449235)
+-   [Internet Explorer 11 delivery through automatic updates](../ie11-deploy-guide/ie11-delivery-through-automatic-updates.md)
 
 -   [Internet Explorer 11 deployment guide](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/index)
