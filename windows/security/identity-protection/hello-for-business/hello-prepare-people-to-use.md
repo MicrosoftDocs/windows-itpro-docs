@@ -17,7 +17,6 @@ ms.date: 07/27/2017
 
 **Applies to**
 -   Windows 10
--   Windows 10 Mobile
 
 When you set a policy to require Windows Hello for Business in the workplace, you will want to prepare people in your organization by explaining how to use Hello.
 

@@ -12,6 +12,10 @@ localizationpriority: high
 ms.date: 05/05/2018
 ---
 # Technical Deep Dive
+
+**Applies to:**
+-   Windows 10
+
 Windows Hello for Business authentication works through collection of components and infrastructure working together.  You can group the infrastructure and components in three categories:
 - [Registration](#Registration)
 - [Provisioning](#Provisioning)

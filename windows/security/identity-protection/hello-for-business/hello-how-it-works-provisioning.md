@@ -11,6 +11,10 @@ localizationpriority: high
 ms.date: 05/05/2018
 ---
 # Windows Hello for Business Provisioning
+
+**Applies to:**
+-   Windows 10
+
 Windows Hello for Business provisioning enables a user to enroll a new, strong, two-factor credential that they can use for passwordless authentication.  Provisioning experience vary based on:
 - How the device is joined to Azure Active Directory
 - The Windows Hello for Business deployment type

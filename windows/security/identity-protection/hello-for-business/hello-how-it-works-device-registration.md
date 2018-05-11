@@ -11,6 +11,10 @@ localizationpriority: high
 ms.date: 05/05/2018
 ---
 # Windows Hello for Business and Device Registration
+
+**Applies to:**
+-   Windows 10
+
 Device Registration is a prerequisite to Windows Hello for Business provisioning.  Device registration occurs regardless of a cloud, hybrid, or on-premises deployments.  For cloud and hybrid deployments, devices register with Azure Active Directory. For on-premises deployments, devices registered with the enterprise device registration service hosted by Active Directory Federation Services (AD FS).
 
 [Azure AD joined in Managed environments](#Azure-AD-joined-in-Managed-environments)<br>

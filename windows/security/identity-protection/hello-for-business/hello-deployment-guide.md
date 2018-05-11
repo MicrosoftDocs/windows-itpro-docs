@@ -15,7 +15,7 @@ ms.date: 11/08/2017
 
 **Applies to**
 -   Windows 10
--   Windows 10 Mobile
+
 
 > This guide only applies to Windows 10, version 1703 or higher.
 
