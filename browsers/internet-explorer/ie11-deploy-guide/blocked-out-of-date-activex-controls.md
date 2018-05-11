@@ -1,15 +1,17 @@
 ---
+title: Blocked out-of-date ActiveX controls
+description: This page is periodically updated with new ActiveX controls blocked by this feature.
+author: shortpatti
+ms.author: pashort
+ms.manager: elizapo
+ms.date: 05/10/2018
+ms.topic: ''
+ms.prod: ie11
 ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: security
-description: UActiveX controls are small apps that let websites provide content, like videos and games, and let you interact with content, like toolbars. We'll periodically update this page with new ActiveX controls blocked by this feature. 
-author: shortpatti
-ms.author: pashort
-ms.prod: ie11
-ms.assetid: e61866bb-1ff1-4a8d-96f2-61d3534e8199
-title: Blocked out-of-date ActiveX controls
+ms.assetid: ''
 ms.sitesec: library
-ms.date: 05/10/2018
 ---
 
 # Blocked out-of-date ActiveX controls
