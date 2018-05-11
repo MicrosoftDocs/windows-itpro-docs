@@ -14,15 +14,18 @@ ms.date: 05/05/2018
 #Windows Hello for Business Videos
 
 ## Overview of Windows Hello for Business and Features
+
 Watch Pieter Wigleven explain Windows Hello for Business, Multi-factor Unlock, and Dynamic Lock
 > [!VIDEO https://www.youtube.com/embed/G-GJuDWbBE8]
 
 ## Microsoft's passwordless strategy
+
 Watch Karanbir Singh's Ignite 2017 presentation **Microsoft's guide for going password-less**
 
 > [!VIDEO https://www.youtube.com/embed/mXJS615IGLM]
 
 ## Windows Hello for Business user enrollment experience
+
 The user experience for Windows Hello for Business occurs after user sign-in, after you deploy Windows Hello for Business policy settings to your environment.
 
 > [!VIDEO https://www.youtube.com/embed/FJqHPTZTpNM]

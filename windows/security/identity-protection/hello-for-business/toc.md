@@ -2,6 +2,12 @@
 
 ## [Windows Hello for Business Overview](hello-overview.md)
 ## [How Windows Hello for Business works](hello-how-it-works.md)
+### [Technical Deep Dive](hello-how-it-works.md#Technical-Deep-Dive)
+#### [Technology and Terminology](hello-how-it-works-technology.md)
+#### [Device Registration](hello-how-it-works-device-registration.md)
+#### [Provisioning](hello-how-it-works-provisioning.md)
+#### [Authentication](hello-how-it-works-authentication.md)
+
 ## [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
 ## [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
 ## [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)

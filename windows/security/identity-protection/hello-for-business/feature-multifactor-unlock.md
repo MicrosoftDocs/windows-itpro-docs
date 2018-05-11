@@ -15,26 +15,27 @@ ms.date: 03/20/2018
 
 **Requirements:**
 * Windows Hello for Business deployment (Hybrid or On-premises)
-* Hybird Azure AD joined (Hybrid deployments)
+* Azure AD joined device (Cloud and Hybrid deployments)
+* Hybrid Azure AD joined (Hybrid deployments)
 * Domain Joined (on-premises deployments) 
 * Windows 10, version 1709
 * Bluetooth, Bluetooth capable phone - optional
 
 Windows, today, natively only supports the use of a single credential (password, PIN, fingerprint, face, etc.) for unlocking a device. Therefore, if any of those credentials are compromised (shoulder surfed), an attacker could gain access to the system.
 
-Windows 10 offers Multifactor device unlock by extending Windows Hello with trusted signals, administrators can configure Windows 10 to request a combination of factors and trusted signals to unlock their devices. 
+Windows 10 offers Multi-factor device unlock by extending Windows Hello with trusted signals, administrators can configure Windows 10 to request a combination of factors and trusted signals to unlock their devices. 
 
-Which organizations can take advanage of Multifactor unlock? Those who:
+Which organizations can take advantage of Multi-factor unlock? Those who:
 * Have expressed that PINs alone do not meet their security needs.
 * Want to prevent Information Workers from sharing credentials.
-* Want their orgs to comply with regulatory two-factor authentication policy.
-* Want to retain the familiar Windows logon UX and not settle for a custom solution.
+* Want their organizations to comply with regulatory two-factor authentication policy.
+* Want to retain the familiar Windows sign-in user experience and not settle for a custom solution.
  
-You enable multifactor unlock using Group Policy.  The **Configure device unlock factors** policy setting is located under **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business**.
+You enable multi-factor unlock using Group Policy.  The **Configure device unlock factors** policy setting is located under **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business**.
 
 ## The Basics: How it works
 
-First unlock factor credential provider and Second unlock credential provider are repsonsible for the bulk of the configuration.  Each of these components contains a globally unqiue identifier (GUID) that represents a different Windows credential provider.  With the policy setting enabled, users unlock the device using at least one credenital provider from each category before Windows allows the user to proceed to their desktop.
+First unlock factor credential provider and Second unlock credential provider are responsible for the bulk of the configuration.  Each of these components contains a globally unique identifier (GUID) that represents a different Windows credential provider.  With the policy setting enabled, users unlock the device using at least one credential provider from each category before Windows allows the user to proceed to their desktop.
 
 The policy setting has three components:
 * First unlock factor credential provider
@@ -60,7 +61,7 @@ Supported credential providers include:
 The default credential providers for the **First unlock factor credential provider** include:
 * PIN
 * Fingerprint
-* Facial Recongition
+* Facial Recognition
 
 The default credential providers for the **Second unlock factor credential provider** include:
 * Trusted Signal
@@ -76,7 +77,7 @@ For example, if you include the PIN and fingerprint credential providers in both
 The **Signal rules for device unlock** setting contains the rules the Trusted Signal credential provider uses to satisfy unlocking the device.
 
 ### Rule element
-You represent signal rules in XML.  Each signal rule has an starting and ending **rule** element that contains the **schemaVersion** attribute and value.  The current supported scheam version is 1.0.<br>
+You represent signal rules in XML.  Each signal rule has an starting and ending **rule** element that contains the **schemaVersion** attribute and value.  The current supported schema version is 1.0.<br>
 **Example**
 ```
 <rule schemaVersion="1.0">
@@ -91,7 +92,7 @@ Each rule element has a **signal** element.  All signal elements have a **type**
 | type| "bluetooth" or "ipConfig" (Windows 10, version 1709)| 
 
 #### Bluetooth
-You define the bluetooth signal with additional attribute in the signal elment. The bluetooth configuration does not use any other elements. You can end the signal element with short ending tag "\/>".
+You define the bluetooth signal with additional attribute in the signal element. The bluetooth configuration does not use any other elements. You can end the signal element with short ending tag "\/>".
 
 |Attribute|Value|Required|
 |---------|-----|--------|
@@ -248,7 +249,7 @@ This example configures the same as example 2 using compounding And elements.  T
 
 ### How to configure Multifactor Unlock policy settings
 
-You need a Windows 10, version 1709 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business  Group Policy settings, which includes muiltifactor unlock. To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows 10. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=45520). Install the Remote Server Administration Tools for Windows 10 on a computer running Windows 10, version 1709.
+You need a Windows 10, version 1709 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business  Group Policy settings, which includes multi-factor unlock. To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows 10. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=45520). Install the Remote Server Administration Tools for Windows 10 on a computer running Windows 10, version 1709.
 
 Alternatively, you can create copy the .ADMX and .ADML files from a Windows 10, version 1703 to their respective language folder on a Windows Server or you can create a Group Policy Central Store and copy them their respective language folder. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administrative-templates-in-windows) for more information.
 
@@ -277,7 +278,7 @@ The Group Policy object contains the policy settings needed to trigger Windows H
 11. Click **Ok** to close the **Group Policy Management Editor**. Use the **Group Policy Management Console** to deploy the newly created Group Policy object to your organization's computers.
 
  ## Troubleshooting
-Mulitfactor unlock writes events to event log under **Application and Services Logs\Microsoft\Windows\HelloForBusiness** with the category name **Device Unlock**.
+Multi-factor unlock writes events to event log under **Application and Services Logs\Microsoft\Windows\HelloForBusiness** with the category name **Device Unlock**.
 
 ### Events
 
