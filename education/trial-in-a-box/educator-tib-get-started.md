@@ -43,8 +43,8 @@ ms.date: 03/18/2018
 To try out the educator tasks, start by logging in as a teacher.
 
 1. Turn on **Device A** and ensure you plug in the PC to an electrical outlet.
-2. Connect to your school's Wi-Fi network or connect with a local Ethernet connection.
-   >**Note**: If your Wi-Fi network requires a web browser login page to connect to the Internet you should connect using the Ethernet port. If your Wi-Fi network has additional restrictions that will prevent the device from connecting to the internet without registration you should consider using Device A from a different network.
+2. Connect **Device A** to your school's Wi-Fi network or connect with a local Ethernet connection using the Ethernet adapter included in this kit.
+   >**Note**: If your Wi-Fi network requires a web browser login page to connect to the Internet, connect using the Ethernet port. If your Wi-Fi network has additional restrictions that will prevent the device from connecting to the internet without registration, consider connecting **Device A** to a different network.
    
 3. Log in to **Device A** using the **Teacher Username** and **Teacher Password** included in the **Credentials Sheet** located in your kit.
 
