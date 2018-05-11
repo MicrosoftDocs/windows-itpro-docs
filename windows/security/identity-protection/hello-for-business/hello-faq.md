@@ -30,7 +30,7 @@ Windows Hello for Business deployments using System Center Configuration Manager
 
 Watch Principal Program Manager Karanbir Singh's Ignite 2017 presentation **Microsoft's guide for going password-less**
 
-[Microsoft's password-less strategy](hello-videos.md#Microsofts-passwordless-strategy)
+[Microsoft's passwordless strategy](hello-videos.md#Microsofts-passwordless-strategy)
 
 ## What is the user experience for Windows Hello for Business?
 

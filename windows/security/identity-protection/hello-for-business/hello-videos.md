@@ -11,7 +11,7 @@ ms.author: mstephen
 localizationpriority: high
 ms.date: 05/05/2018
 ---
-#Windows Hello for Business Videos
+# Windows Hello for Business Videos
 
 ## Overview of Windows Hello for Business and Features
 
