@@ -263,7 +263,8 @@ To graph y=sin(x):
   > ![Select the Math button and use the dropdown menu](images/Math2.png)
 3. Expand **Key Graph Features** to understand the properties of your function, such as minima, maxima, zeros, etc.
 4. Finally, click the **Insert on Page** button below the graph to add a screenshot of the graph to your page.
-
+</br>
+</br>
 
 **Watch what Educators say about Microsoft Education delivering better learning outcomes**
 Bring out the best in students by providing a platform for collaborating, exploring, personalized learning, and getting things done across all devices.
