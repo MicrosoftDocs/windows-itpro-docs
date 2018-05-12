@@ -1,6 +1,6 @@
 ---
-title: Administering App-V Virtual Applications by Using the Management Console (Windows 10)
-description: Administering App-V Virtual Applications by Using the Management Console
+title: Administering App-V Virtual Applications by using the Management Console (Windows 10)
+description: Administering App-V Virtual Applications by using the Management Console
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -8,23 +8,23 @@ ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ---
-# Administering App-V Virtual Applications by Using the Management Console
+# Administering App-V Virtual Applications by using the Management Console
 
 >Applies to: Windows 10, version 1607
 
-Use the Microsoft Application Virtualization (App-V) management server to manage packages, connection groups, and package access in your environment. The server publishes application icons, shortcuts, and file type associations to authorized computers that run the App-V client. One or more management servers typically share a common data store for configuration and package information.
+Use the Microsoft Application Virtualization (App-V) management server to manage packages, connection groups, and package access in your environment. The server publishes application icons, shortcuts, and file type associations to authorized computers running the App-V client. One or more management servers typically share a common data store for configuration and package information.
 
 The management server uses Active Directory Domain Services (AD DS) groups to manage user authorization and has SQL Server installed to manage the database and data store.
 
 Because the management servers stream applications to end users on demand, these servers are ideally suited for system configurations that have reliable, high-bandwidth LANs. The management server consists of the following components:
 
-- Management Server—Use the management server to manage packages and connection groups.
-- Publishing Server—Use the publishing server to deploy packages to computers that run the App-V client.
-- Management Database—Use the management database to manage the package access and to publish the server’s synchronization with the management server.
+- The **management server** manages packages and connection groups.
+- The **publishing server** deploys packages to computers running the App-V Client.
+- The **management database** manages the package access publishes the server’s synchronization with the management server.
 
 ## Management Console tasks
 
-The most common tasks that you can perform with the App-V Management console are:
+Here are some articles that can show you how to perform the most common tasks that the App-V Management Console is used for:
 
 - [How to connect to the Management Console](appv-connect-to-the-management-console.md)
 - [How to add or upgrade packages by using the Management Console](appv-add-or-upgrade-packages-with-the-management-console.md)
@@ -48,7 +48,7 @@ The main elements of the App-V Management Console are:
 |Administrators tab|Use the **Administrators** tab to register, add, or remove administrators in your App-V environment.|
 
 >[!IMPORTANT]
->JavaScript must be enabled on the browser that opens the Web Management Console.
+>JavaScript must be enabled on the browser you use to open the Web Management Console.
 
 ## Have a suggestion for App-V?
 

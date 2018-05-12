@@ -12,7 +12,7 @@ ms.date: 04/19/2017
 
 >Applies to: Windows 10, version 1607
 
-You can the following procedure to add or upgrade a package to the App-V Management Console. To upgrade a package that already exists in the Management Console, use the following steps and import the upgraded package using the same package **Name**.
+You can use the following procedure to add or upgrade a package to the App-V Management Console. To upgrade a package that already exists in the Management Console, use the following steps and import the upgraded package using the same package **Name**.
 
 ## Add a package to the Management Console
 

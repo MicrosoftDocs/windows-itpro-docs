@@ -161,40 +161,6 @@ There are two package registry locations and two connection group locations wher
 |Package|- Machine Registry\Client\Packages\PkgGUID\Versions\VerGuid\Registry\Machine<br>- User Registry Classes\Client\Packages\PkgGUID\Versions\VerGUID\Registry|
 |Native|- Native application registry location|
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Location</strong></p></td>
-<td align="left"><p><strong>Description</strong></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>COW</strong></p></td>
-<td align="left"><ul>
-<li><p>Machine Registry\Client\Packages\PkgGUID\REGISTRY (Only elevate process can write)</p></li>
-<li><p>User Registry\Client\Packages\PkgGUID\REGISTRY (User Roaming anything written under HKCU except Software\Classes</p></li>
-<li><p>User Registry Classes\Client\Packages\PkgGUID\REGISTRY (HKCU\Software\Classes writes and HKLM for non elevated process)</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Package</strong></p></td>
-<td align="left"><ul>
-<li><p>Machine Registry\Client\Packages\PkgGUID\Versions\VerGuid\Registry\Machine</p></li>
-<li><p>User Registry Classes\Client\Packages\PkgGUID\Versions\VerGUID\Registry</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Native</strong></p></td>
-<td align="left"><ul>
-<li><p>Native application registry location</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
 #### Connection Group VReg
 
 |Location|Description|
@@ -203,45 +169,11 @@ There are two package registry locations and two connection group locations wher
 |Package|- Machine Registry\Client\PackageGroups\GrpGUID\Versions\VerGUID\REGISTRY<br>- User Registry Classes\Client\PackageGroups\GrpGUID\Versions\VerGUID\REGISTRY|
 |Native|- Native application registry location|
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Location</strong></p></td>
-<td align="left"><p><strong>Description</strong></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>COW</strong></p></td>
-<td align="left"><ul>
-<li><p>Machine Registry\Client\PackageGroups\GrpGUID\REGISTRY (only elevate process can write)</p></li>
-<li><p>User Registry\Client\PackageGroups\GrpGUID\REGISTRY (Anything written to HKCU except Software\Classes</p></li>
-<li><p>User Registry Classes\Client\PackageGroups\GrpGUID\REGISTRY</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Package</strong></p></td>
-<td align="left"><ul>
-<li><p>Machine Registry\Client\PackageGroups\GrpGUID\Versions\VerGUID\REGISTRY</p></li>
-<li><p>User Registry Classes\Client\PackageGroups\GrpGUID\Versions\VerGUID\REGISTRY</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Native</strong></p></td>
-<td align="left"><ul>
-<li><p>Native application registry location</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-There are two COW locations for HKLM; elevated and non-elevated processes. Elevated processes always write HKLM changes to the secure COW under HKLM. Non-elevated processes always write HKLM changes to the non-secure COW under HKCU\\Software\\Classes. When an application reads changes from HKLM, elevated processes will read changes from the secure COW under HKLM. Non-elevated reads from both, favoring the changes made in the unsecure COW first.
+There are two COW locations for HKLM: elevated and non-elevated processes. Elevated processes always write HKLM changes to the secure COW under HKLM. Non-elevated processes always write HKLM changes to the non-secure COW under HKCU\\Software\\Classes. When an application reads changes from HKLM, elevated processes will read changes from the secure COW under HKLM. Non-elevated reads from both, favoring the changes made in the unsecure COW first.
 
 ### Pass-through keys
 
-Pass-through keys enable an administrator to configure certain keys so they can only be read from the native registry, bypassing the Package and COW locations. Pass-through locations are global to the machine (not package specific) and can be configured by adding the path to the key, which should be treated as pass-through to the **REG\_MULTI\_SZ** value called **PassThroughPaths** of the key ```HKLM\Software\Microsoft\AppV\Subsystem\VirtualRegistry```. Any key that appears under this multi-string value (and their children) will be treated as pass-through.
+Pass-through keys enable an administrator to configure certain keys so they can only be read from the native registry, bypassing the Package and COW locations. Pass-through locations are global to the machine (not package-specific) and can be configured by adding the path to the key, which should be treated as pass-through to the **REG\_MULTI\_SZ** value called **PassThroughPaths** of the key ```HKLM\Software\Microsoft\AppV\Subsystem\VirtualRegistry```. Any key that appears under this multi-string value (and their children) will be treated as pass-through.
 
 The following locations are configured as pass-through locations by default:
 
@@ -263,7 +195,7 @@ The following locations are configured as pass-through locations by default:
 
 - HKEY\_CURRENT\_USER\\SOFTWARE\\Policies
 
-The purpose of pass-through keys is to ensure that a virtual application does not write registry data in the VReg that is required for non-virtual applications for successful operation or integration. The Policies key ensures that Group Policy-based settings set by the administrator are utilized and not per package settings. The AppModel key is required for integration with Windows Modern UI-based applications. Administers ideally should not modify any of the default pass-through keys, but in some instances, based on application behavior the admin may need to add additional pass-through keys.
+The purpose of pass-through keys is to ensure that a virtual application does not write registry data in the VReg that is required for non-virtual applications for successful operation or integration. The Policies key ensures that Group Policy-based settings set by the administrator are utilized and not per package settings. The AppModel key is required for integration with Windows Modern UI-based applications. Administers ideally should not modify any of the default pass-through keys, but in some instances, the admin may need to add additional pass-through keys to adjust application behavior.
 
 ## App-V package store behavior
 
@@ -271,7 +203,7 @@ App-V manages the Package Store, which is the location where the expanded asset 
 
 ### Add packages
 
-App-V Packages are staged upon addition to the computer with the App-V Client. The App-V Client provides on-demand staging. During publishing or a manual Add-AppVClientPackage, the data structure is built in the package store (c:\\programdata\\App-V\\{PkgGUID}\\{VerGUID}). The package files identified in the publishing block defined in the StreamMap.xml are added to the system and the top level folders and child files staged to ensure proper application assets exist at launch.
+App-V Packages are staged upon addition to the computer with the App-V Client. The App-V Client provides on-demand staging. When publishing or manually entering the **Add-AppVClientPackage** cmdlet, the data structure is built in the package store (C:\\programdata\\App-V\\{PkgGUID}\\{VerGUID}). The package files identified in the publishing block defined in the **StreamMap.xml** file are added to the system, and the top level folders and child files are staged to ensure proper application assets exist at launch.
 
 ### Mounting packages
 
@@ -289,45 +221,7 @@ The App-V Client can be configured to change the default behavior of streaming. 
 |PackageSourceRoot|The root override where packages should be streamed from|
 |SharedContentStoreMode|Enables the use of Shared Content Store for VDI scenarios|
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Policy</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>AllowHighCostLaunch</p></td>
-<td align="left"><p>Allows streaming over 3G and cellular networks</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>AutoLoad</p></td>
-<td align="left"><p>Specifies the Background Load setting:</p>
-<p><strong>0</strong> - Disabled</p>
-<p><strong>1</strong> – Previously Used Packages only</p>
-<p><strong>2</strong> – All Packages</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>PackageInstallationRoot</p></td>
-<td align="left"><p>The root folder for the package store in the local machine</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>PackageSourceRoot</p></td>
-<td align="left"><p>The root override where packages should be streamed from</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>SharedContentStoreMode</p></td>
-<td align="left"><p>Enables the use of Shared Content Store for VDI scenarios</p></td>
-</tr>
-</tbody>
-</table>
-
-These settings affect the behavior of streaming App-V package assets to the client. By default, App-V only downloads the assets required after downloading the initial publishing and primary feature blocks. There are three specific behaviors around streaming packages that must be explained:
+These settings affect the behavior of streaming App-V package assets to the client. By default, App-V only downloads the assets required after downloading the initial publishing and primary feature blocks. There are three specific behaviors in streaming packages that it's particularly important to understand:
 
 - Background Streaming
 - Optimized Streaming
@@ -335,7 +229,7 @@ These settings affect the behavior of streaming App-V package assets to the clie
 
 ### Background streaming
 
-The Windows PowerShell cmdlet ```Get-AppvClientConfiguration``` can be used to determine the current mode for background streaming with the AutoLoad setting and modified with the cmdlet Set-AppvClientConfiguration or from the registry (HKLM\\SOFTWARE\\Microsoft\\AppV\\ClientStreaming key). Background streaming is a default setting where the Autoload setting is set to download previously used packages. The behavior based on default setting (value=1) downloads App-V data blocks in the background after the application has been launched. This setting can be disabled all together (value=0) or enabled for all packages (value=2), whether they have been launched.
+The Windows PowerShell cmdlet ```Get-AppvClientConfiguration``` can be used to determine the current mode for background streaming with the AutoLoad setting and modified with either the **Set-AppvClientConfiguration** cmdlet or from the registry (HKLM\\SOFTWARE\\Microsoft\\AppV\\ClientStreaming key). Background streaming is a default setting where the Autoload setting is set to download previously used packages. The behavior based on default setting (value=1) downloads App-V data blocks in the background after the application has been launched. This setting can either be disabled altogether (value=0) or enabled for all packages (value=2), regardless of whether they have been launched.
 
 ### Optimized streaming
 
