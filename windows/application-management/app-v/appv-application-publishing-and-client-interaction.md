@@ -325,10 +325,10 @@ The time stamp is used to determine a “last writer wins” scenario if there i
 This completes the successful roaming of application settings that are present in AppData\\Roaming locations. The only other condition that must be addressed is a package repair operation. The details of the process are:
 
 1. During repair, detect if the path to the user’s roaming AppData directory isn't local.
-2. Map the non-local roaming AppData path targets are recreated the expected roaming and local AppData locations.
+2. Map the non-local roaming AppData path targets, recreating the expected roaming and local AppData locations.
 3. Delete the time stamp stored in the registry, if present.
 
-This process will re-create both the local and network locations for AppData and remove the registry record of the time stamp.
+This process will recreate both the local and network locations for AppData and remove the registry record of the time stamp.
 
 ## App-V Client application lifecycle management
 
