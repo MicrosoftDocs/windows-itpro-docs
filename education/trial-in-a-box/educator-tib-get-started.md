@@ -29,7 +29,7 @@ ms.date: 03/18/2018
 | [![Open OneNote](images/edu-TIB-setp-4-v3.png)](#edu-task4) | **Trying to expand classroom creativity and interaction between students?** </br>Open [OneNote](#edu-task4) and create an example group project for your class. |
 | [![Try Photos app](images/edu-tib-setp-5-v4.png)](#edu-task5) | **Curious about telling stories through video?** </br>Try the [Photos app](#edu-task5) to make your own example video. |
 | [![Play with Minecraft: Education Edition](images/edu-tib-setp-6-v4.png)](#edu-task6) | **Want to teach kids to further collaborate and problem solve?** </br>Play with [Minecraft: Education Edition](#edu-task6) to see how it can be used as a collaborative and versatile platform across subjects to encourage 21st century skills. |
-| [![Do Math with Ink](images/edu-tib-setp-7-v1.png)](#edu-task7) | **Attempting to show students how to solve math equations step-by-step?** </br>Use the [Math Assistant](#edu-task7) in OneNote to show students the steps of solving problems and graph equations. |
+<!-- | [![Do Math with Ink](images/edu-tib-setp-7-v1.png)](#edu-task7) | **Attempting to show students how to solve math equations step-by-step?** </br>Use the [Math Assistant](#edu-task7) in OneNote to show students the steps of solving problems and graph equations. | -->
 |  |  |
 
 </br>
@@ -265,7 +265,7 @@ Today, we'll explore a Minecraft world through the eyes of a student.
 </br>
 </br>
 
-![Help students understand new math concepts with the Math Assistant in OneNote](images/edu-TIB-setp-7-jump.png) 
+<!-- ![Help students understand new math concepts with the Math Assistant in OneNote](images/edu-TIB-setp-7-jump.png) 
 ## <a name="edu-task7"></a>7. Go digital in your Math classroom
 
 Whether you are an Ink user or prefer to type your math as text, Math Assistant can: 
@@ -299,7 +299,7 @@ To graph y=sin(x):
 
 4. Finally, click the **Insert on Page** button below the graph to add a screenshot of the graph to your page.
 </br>
-</br>
+</br> -->
 
 **Watch what Educators say about Microsoft Education delivering better learning outcomes**
 Bring out the best in students by providing a platform for collaborating, exploring, personalized learning, and getting things done across all devices.
