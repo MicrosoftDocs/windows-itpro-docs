@@ -245,7 +245,7 @@ App-V Packages require updating throughout the lifecycle of the application. App
 
 ### Package removal
 
-The App-V Client's behavior when packages are removed depends on the package removal method. Using an App-V full infrastructure to unpublish the application, the user catalog files (machine catalog for globally published applications) are removed, but retains the package store location and COW locations. When the Windows PowerShell cmdlet ```Remove-AppVClientPackge``` is used to remove an App-V Package, the package store location is cleaned. Remember that unpublishing an App-V Package from the Management Server does not perform a Remove operation. Neither operation will remove the Package Store package files.
+The App-V Client's behavior when packages are removed depends on the package removal method. Using an App-V full infrastructure to unpublish the application, the user catalog files (machine catalog for globally published applications) are removed, but retains the package store location and COW locations. When the **Remove-AppVClientPackge** Windows PowerShell cmdlet is used to remove an App-V Package, the package store location is cleaned. Remember that unpublishing an App-V Package from the Management Server does not perform a Remove operation. Neither operation will remove the Package Store package files.
 
 ## Roaming registry and data
 
@@ -306,7 +306,7 @@ The current App-V Client VFS driver can't write to network locations, so the App
 
 This process solves the problem of a non-local %AppData% that is not supported by the App-V Client VFS driver. However, the data stored in this new location is not roamed with folder redirection. All changes during the running of the application happen to the local AppData location and must be copied to the redirected location. The detailed steps of this process are:
 
-1. App-V application is shut down, which shuts down the virtual environment.
+1. The App-V application is shut down, which shuts down the virtual environment.
 2. The local cache of the roaming AppData location is compressed and stored in a .zip file.
 3. A time stamp at the end of the .zip packaging process is used to name the file.
 4. The time stamp is recorded in the HKEY\_CURRENT\_USER\\Software\\Microsoft\\AppV\\Client\\Packages\\&lt;GUID&gt;\\AppDataTime registry as the last known AppData time stamp.
@@ -324,7 +324,7 @@ The time stamp is used to determine a “last writer wins” scenario if there i
 
 This completes the successful roaming of application settings that are present in AppData\\Roaming locations. The only other condition that must be addressed is a package repair operation. The details of the process are:
 
-1. During repair, detect if the path to the user’s roaming AppData directory is not local.
+1. During repair, detect if the path to the user’s roaming AppData directory isn't local.
 2. Map the non-local roaming AppData path targets are recreated the expected roaming and local AppData locations.
 3. Delete the time stamp stored in the registry, if present.
 
