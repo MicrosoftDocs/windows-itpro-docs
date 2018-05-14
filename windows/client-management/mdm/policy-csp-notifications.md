@@ -6,10 +6,11 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 04/16/2018
+ms.date: 05/03/2018
 ---
 
 # Policy CSP - Notifications
+
 
 
 <hr/>
@@ -98,7 +99,6 @@ Validation:
 3. Ensure that you can't receive a notification from Facebook app while FB app isn't running
 
 <!--/Validation-->
-
 <!--/Policy-->
 
 <hr/>
@@ -120,7 +120,7 @@ Validation:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
