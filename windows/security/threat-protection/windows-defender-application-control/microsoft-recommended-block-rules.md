@@ -79,30 +79,30 @@ Microsoft recommends that you block the following Microsoft-signed applications 
 
 ```
   <?xml version="1.0" encoding="utf-8" ?> 
-- <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
+  <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
   <VersionEx>10.0.0.0</VersionEx> 
   <PolicyTypeID>{A244370E-44C9-4C06-B551-F6016E563076}</PolicyTypeID> 
   <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID> 
-- <Rules>
-- <Rule>
+  <Rules>
+  <Rule>
   <Option>Enabled:Unsigned System Integrity Policy</Option> 
   </Rule>
-- <Rule>
+  <Rule>
   <Option>Enabled:Audit Mode</Option> 
   </Rule>
-- <Rule>
+  <Rule>
   <Option>Enabled:Advanced Boot Options Menu</Option> 
   </Rule>
-- <Rule>
+  <Rule>
   <Option>Enabled:UMCI</Option> 
   </Rule>
   </Rules>
-- <!-- EKUS
+  <!-- EKUS
   --> 
   <EKUs /> 
-- <!-- File Rules
+  <!-- File Rules
   --> 
-- <FileRules>
+  <FileRules>
   <Deny ID="ID_DENY_BGINFO" FriendlyName="bginfo.exe" FileName="BGINFO.Exe" MinimumFileVersion="4.21.0.0"/> 
   <Deny ID="ID_DENY_CBD" FriendlyName="cdb.exe" FileName="CDB.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_KD" FriendlyName="kd.exe" FileName="kd.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
@@ -159,7 +159,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
   <Deny ID="ID_DENY_D_24" FriendlyName="Powershell 24" Hash="F16E605B55774CDFFDB0EB99FAFF43A40622ED2AB1C011D1195878F4B20030BC"/> 
   <Deny ID="ID_DENY_D_25" FriendlyName="Powershell 25" Hash="F29A958287788A6EEDE6035D49EF5CB85EEC40D214FDDE5A0C6CAA65AFC00EEC"/> 
   <Deny ID="ID_DENY_D_26" FriendlyName="Powershell 26" Hash="F875E43E12685ECE0BA2D42D55A13798CE9F1FFDE3CAE253D2529F4304811A52"/> 
-- <!-- System.Management.Automation.dll 
+  <!-- System.Management.Automation.dll 
   --> 
   <Deny ID="ID_DENY_D_27" FriendlyName="PowerShell 27" Hash="720D826A84284E18E0003526A0CD9B7FF0C4A98A"/> 
   <Deny ID="ID_DENY_D_28" FriendlyName="PowerShell 28" Hash="CB5DF9D0D25571948C3D257882E07C7FA5E768448E0DEBF637E110F9FF575808"/> 
@@ -383,103 +383,103 @@ Microsoft recommends that you block the following Microsoft-signed applications 
   <Deny ID="ID_DENY_D_246" FriendlyName="PowerShell 246" Hash="0C4688AACD02829850DE0F792AC06D3C87895412A910EA76F7F9BF31B3B4A3E9"/> 
   <Deny ID="ID_DENY_D_247" FriendlyName="PowerShell 247" Hash="6DC048AFA50B5B1B0AD7DD3125AC83D46FED730A"/> 
   <Deny ID="ID_DENY_D_248" FriendlyName="PowerShell 248" Hash="432F666CCE8CD222484E263AE02F63E0038143DD6AD07B3EB1633CD3C498C13D"/> 
-- <!-- pubprn.vbs
+  <!-- pubprn.vbs
   --> 
-- <!-- rs2 x86fre
+  <!-- rs2 x86fre
   --> 
   <Deny ID="ID_DENY_D_249" FriendlyName="PubPrn 249" Hash="68E96BE23748AA680D5E1E557778901F332ED5D3"/> 
   <Deny ID="ID_DENY_D_250" FriendlyName="PubPrn 250" Hash="8FA30B5931806565C2058E565C06AD5F1C5A48CDBE609975EB31207C25214063"/> 
-- <!-- rs2 amd64fre
+  <!-- rs2 amd64fre
   --> 
   <Deny ID="ID_DENY_D_251" FriendlyName="PubPrn 251" Hash="32C4B29FE428B1DF473F3F4FECF519D285E93521"/> 
   <Deny ID="ID_DENY_D_252" FriendlyName="PubPrn 252" Hash="D44FB563198D60DFDC91608949FE2FADAD6161854D084EB1968C558AA36513C7"/> 
-- <!-- rs2 amd64chk
+  <!-- rs2 amd64chk
   --> 
   <Deny ID="ID_DENY_D_253" FriendlyName="PubPrn 253" Hash="9EDBEF086D350863F29175F5AB5178B88B142C75"/> 
   <Deny ID="ID_DENY_D_254" FriendlyName="PubPrn 254" Hash="9B22C98351F2B6DEDDCED0D805C65F5B166FF519A8DF41EB242CB909471892EB"/> 
-- <!-- rs2 x86chk
+  <!-- rs2 x86chk
   --> 
   <Deny ID="ID_DENY_D_255" FriendlyName="PubPrn 255" Hash="8A3B30F345C43246B3500721CFEEADBAC6B9D9C6"/> 
   <Deny ID="ID_DENY_D_256" FriendlyName="PubPrn 256" Hash="37C20BF20A2BBACE50957F8D0AB3FD16174BC005E79D47E51E899AFD9E4B7724"/> 
-- <!-- rs2 woafre
+  <!-- rs2 woafre
   --> 
   <Deny ID="ID_DENY_D_257" FriendlyName="PubPrn 257" Hash="C659DAD2B37375781E2D584E16AAE2A10B5A1156"/> 
   <Deny ID="ID_DENY_D_258" FriendlyName="PubPRn 258" Hash="EBDACA86F10AC0446D60CC75628EC7A370B1E2236E6D20F22372F91033B6D429"/> 
-- <!-- rs3 amd64chk
+  <!-- rs3 amd64chk
   --> 
   <Deny ID="ID_DENY_D_259" FriendlyName="PubPrn 259" Hash="C9D6394BBFF8CD9C6590F08C54EC6AFDEB5CFFB4"/> 
   <Deny ID="ID_DENY_D_260" FriendlyName="PubPrn 260" Hash="518E4EA7A2B70713E1AEC6E7E75A488C39384B625C5F2779073E9294CBF2BD9F"/> 
-- <!-- rs3 amd64fre
+  <!-- rs3 amd64fre
   --> 
   <Deny ID="ID_DENY_D_261" FriendlyName="PubPrn 261" Hash="C9D6394BBFF8CD9C6590F08C54EC6AFDEB5CFFB4"/> 
   <Deny ID="ID_DENY_D_262" FriendlyName="PubPrn 262" Hash="518E4EA7A2B70713E1AEC6E7E75A488C39384B625C5F2779073E9294CBF2BD9F"/> 
-- <!-- rs3 arm64chk
+  <!-- rs3 arm64chk
   --> 
   <Deny ID="ID_DENY_D_263" FriendlyName="PubPrn 263" Hash="763A652217A1E30F2D288B7F44E08346949A02CD"/> 
   <Deny ID="ID_DENY_D_264" FriendlyName="PubPrn 264" Hash="FCDDA212B06602F642B29FC05316EF75E4EE9975E6E8A9526E842BE2EA237C5D"/> 
-- <!-- rs3 arm64fre
+  <!-- rs3 arm64fre
   --> 
   <Deny ID="ID_DENY_D_265" FriendlyName="PubPrn 265" Hash="763A652217A1E30F2D288B7F44E08346949A02CD"/> 
   <Deny ID="ID_DENY_D_266" FriendlyName="PubPrn 266" Hash="FCDDA212B06602F642B29FC05316EF75E4EE9975E6E8A9526E842BE2EA237C5D"/> 
-- <!-- rs3 woachk
+  <!-- rs3 woachk
   --> 
   <Deny ID="ID_DENY_D_267" FriendlyName="PubPrn 267" Hash="60FD28D770B23A0477679311D247DA4D5C61074C"/> 
   <Deny ID="ID_DENY_D_268" FriendlyName="PubPrn 268" Hash="D09A4B2EA611CDFDC6DCA44314289B622B2A5EDA09716EF4A16B91EC90BFBA8F"/> 
-- <!-- rs3 woafre
+  <!-- rs3 woafre
   --> 
   <Deny ID="ID_DENY_D_269" FriendlyName="PubPrn 269" Hash="60FD28D770B23A0477679311D247DA4D5C61074C"/> 
   <Deny ID="ID_DENY_D_270" FriendlyName="PubPrn 270" Hash="D09A4B2EA611CDFDC6DCA44314289B622B2A5EDA09716EF4A16B91EC90BFBA8F"/> 
-- <!-- rs3 x86chk
+  <!-- rs3 x86chk
   --> 
   <Deny ID="ID_DENY_D_271" FriendlyName="PubPrn 271" Hash="47CBE201ED224BF3F5C322F7A49EF64469AF2E1A"/> 
   <Deny ID="ID_DENY_D_272" FriendlyName="PubPrn 272" Hash="24855B9CC420719D5AB93F4F1589CE09E4063E4FC98681BD91A1D18A3C8ACB43"/> 
-- <!-- rs3 x86fre
+  <!-- rs3 x86fre
   --> 
   <Deny ID="ID_DENY_D_273" FriendlyName="PubPrn 273" Hash="47CBE201ED224BF3F5C322F7A49EF64469AF2E1A"/> 
   <Deny ID="ID_DENY_D_274" FriendlyName="PubPrn 274" Hash="24855B9CC420719D5AB93F4F1589CE09E4063E4FC98681BD91A1D18A3C8ACB43"/> 
-- <!-- rs3 sxs amd64
+  <!-- rs3 sxs amd64
   --> 
   <Deny ID="ID_DENY_D_275" FriendlyName="PubPrn 275" Hash="663D8E25BAE20510A882F6692BE2620FBABFB94E"/> 
   <Deny ID="ID_DENY_D_276" FriendlyName="PubPrn 276" Hash="649A9E5A4867A28C7D0934793F33B545F9441EA23872715C84826D80CC8EC576"/> 
-- <!-- rs3 sxs arm64
+  <!-- rs3 sxs arm64
   --> 
   <Deny ID="ID_DENY_D_277" FriendlyName="PubPrn 277" Hash="226ABB2FBAEFC5A7E2A819D9D708F826C00FD215"/> 
   <Deny ID="ID_DENY_D_278" FriendlyName="PubPrn 278" Hash="AC6B35C904D388FD12C07C2F6A1A07F337D31895713BF01DCCE7A7F187D7F4D9"/> 
-- <!-- rs3 sxs woa
+  <!-- rs3 sxs woa
   --> 
   <Deny ID="ID_DENY_D_279" FriendlyName="PubPrn 279" Hash="071D7849941E43144839988971255FE34690A747"/> 
   <Deny ID="ID_DENY_D_280" FriendlyName="PubPrn 280" Hash="5AF75895BDC11A6B68C816A8677D7CF9692BF25A95C4378A43FBDE740B18EEB1"/> 
-- <!-- rs3 sxs x86
+  <!-- rs3 sxs x86
   --> 
   <Deny ID="ID_DENY_D_281" FriendlyName="PubPrn 281" Hash="9FBFF074C201BFEBE37710CB453EFF9A14AE3BFF"/> 
   <Deny ID="ID_DENY_D_282" FriendlyName="PubPrn 282" Hash="A0C71A925850D2D481C7E520F5D5A83305EC169EEA4C5B8DC20C8D8AFCD8A512"/> 
-- <!-- psworkflowutility.psm1
+  <!-- psworkflowutility.psm1
   --> 
-- <!-- th1
+  <!-- th1
   --> 
   <Deny ID="ID_DENY_D_283" FriendlyName="PSWorkflowUtility 283" Hash="4FBC9A72C5D5246F34994F13076A5AD98A1A844E"/> 
   <Deny ID="ID_DENY_D_284" FriendlyName="PSWorkflowUtility 284" Hash="7BF44433D3A606104778F64B11B92C52FC99C4BA570C50B70438275D0B587B8E"/> 
-- <!-- th2
+  <!-- th2
   --> 
   <Deny ID="ID_DENY_D_285" FriendlyName="PSWorkflowUtility 285" Hash="99382ED8FA3577DFD903C01478A79D6D90681406"/> 
   <Deny ID="ID_DENY_D_286" FriendlyName="PSWorkflowUtility 286" Hash="C3A5DAB20947CA8FD092E75C25177E7BAE7884CA58710F14827144C09EA1F94B"/> 
   </FileRules>
-- <!-- Signers
+  <!-- Signers
   --> 
   <Signers /> 
-- <!-- Driver Signing Scenarios
+  <!-- Driver Signing Scenarios
   --> 
-- <SigningScenarios>
-- <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_DRIVERS_1" FriendlyName="Driver Signing Scenarios">
-- <ProductSigners>
-- <FileRulesRef>
+  <SigningScenarios>
+  <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_DRIVERS_1" FriendlyName="Driver Signing Scenarios">
+  <ProductSigners>
+  <FileRulesRef>
   <FileRuleRef RuleID="ID_DENY_KD_KMCI"/> 
   </FileRulesRef>
   </ProductSigners>
   </SigningScenario>
-- <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_WINDOWS" FriendlyName="User Mode Signing Scenarios">
-- <ProductSigners>
-- <FileRulesRef>
+  <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_WINDOWS" FriendlyName="User Mode Signing Scenarios">
+  <ProductSigners>
+  <FileRulesRef>
   <FileRuleRef RuleID="ID_DENY_BGINFO"/> 
   <FileRuleRef RuleID="ID_DENY_CBD"/> 
   <FileRuleRef RuleID="ID_DENY_KD"/> 

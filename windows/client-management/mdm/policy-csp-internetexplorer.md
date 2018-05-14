@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 04/16/2018
+ms.date: 05/14/2018
 ---
 
 # Policy CSP - InternetExplorer
