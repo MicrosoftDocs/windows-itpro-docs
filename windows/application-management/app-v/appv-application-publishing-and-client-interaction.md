@@ -436,17 +436,15 @@ During the Publishing Refresh operation, the specific publishing operation, **Pu
         >[!NOTE]
         >This enables restore extension points if the package is unpublished.
 
-
-
     3. Run scripts targeted for publishing timing.
 
-Publishing an App-V Package that is part of a Connection Group is very similar to the above process. For connection groups, the path that stores the specific catalog information includes PackageGroups as a child of the Catalog Directory. Review the machine and users catalog information in the preceding sections for details.
+Publishing an App-V Package that is part of a Connection Group is very similar to the above process. For connection groups, the path that stores the specific catalog information includes PackageGroups as a child of the Catalog Directory. Review the Machine and User Catalog information in the preceding sections for details.
 
 ![package add file and registry data - global](images/packageaddfileandregistrydata-global.png)
 
 ### Application launch
 
-After the Publishing Refresh process, the user launches and subsequently re-launches an App-V application. The process is very simple and optimized to launch quickly with a minimum of network traffic. The App-V Client checks the path to the user catalog for files created during publishing. After rights to launch the package are established, the App-V Client creates a virtual environment, begins streaming any necessary data, and applies the appropriate manifest and deployment configuration files during virtual environment creation. With the virtual environment created and configured for the specific package and application, the application starts.
+After the Publishing Refresh process, the user launches and then relaunches an App-V application. The App-V Client checks the path to the user catalog for files created during publishing. After establishing rights to launch the package, the App-V Client creates a virtual environment, begins streaming any necessary data, and applies the appropriate manifest and deployment configuration files during virtual environment creation. Once the virtual environment created and configured for the specific package and application, the application starts. This might seem like a lot, but the process in action is actually quite fast, and is optimized to minimize network traffic.
 
 #### How to launch App-V applications
 
@@ -471,7 +469,7 @@ After the Publishing Refresh process, the user launches and subsequently re-laun
 
 ### Upgrading an App-V package
 
-The App-V package upgrade process in the current version of App-V differs from the older versions. App-V supports multiple versions of the same package on a machine entitled to different users. Package versions can be added at any time, as the package store and catalogs are updated with the new resources. The only process specific to the addition of new version resources is storage optimization. During an upgrade, only new files are added to the new version store location, and hard links are created for unchanged files. This reduces overall storage by only presenting the file on one disk location and then projecting it into all folders with a file location entry on the disk.
+The current version of App-V's package upgrade process differs from the older versions in its storage optimization. App-V supports multiple versions of the same package on a machine entitled to different users. Package versions can be added at any time, as the package store and catalogs are updated with the new resources. During an upgrade in the new version, only new files are added to the new version store location, and hard links are created for unchanged files. This reduces overall storage by only presenting the file on one disk location, then projecting it into all folders with a file location entry on the disk.
 
 #### How to upgrade an App-V package
 
@@ -602,7 +600,7 @@ As mentioned previously, the App-V shortcuts are placed by default in the user�
 
 ### File type associations
 
-The App-V Client manages the local operating system File Type Associations during publishing, which enables users to use file type invocations or to open a file with a specifically registered extension (.docx) to start an App-V application. File type associations are present in the manifest and dynamic configuration files as represented in the example below:
+The App-V Client manages the local operating system File Type Associations during publishing, which enables users to use file type invocations or to open a file with a specifically registered extension (.docx) to start an App-V application. File type associations are present in the manifest and dynamic configuration files, as represented in the following example:
 
 ```XML
 <Extension Category="AppV.FileTypeAssociation">
@@ -654,7 +652,7 @@ Shell extensions are embedded in the package automatically during the sequencing
 #### Requirements for using shell extensions
 
 - Packages that contain embedded shell extensions must be published globally.
-- The “bitness” of the application, Sequencer, and App-V Client must match, or the shell extensions won’t work. For example:
+- The “bitness” of the application, Sequencer, and App-V Client must match, or the shell extensions won’t work. The following example configuration fuflills the matching requirement:
   - The version of the application is 64-bit.
   - The Sequencer is running on a 64-bit computer.
   - The package is being delivered to a 64-bit App-V Client computer.
