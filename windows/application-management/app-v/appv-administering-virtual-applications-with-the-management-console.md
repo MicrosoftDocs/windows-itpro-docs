@@ -48,7 +48,7 @@ The main elements of the App-V Management Console are:
 |Administrators tab|Use the **Administrators** tab to register, add, or remove administrators in your App-V environment.|
 
 >[!IMPORTANT]
->JavaScript must be enabled on the browser you use to open the Web Management Console.
+>The browser you're using to open the Web Management Console must have JavaScript enabled.
 
 ## Have a suggestion for App-V?
 

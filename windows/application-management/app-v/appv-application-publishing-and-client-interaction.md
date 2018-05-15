@@ -51,7 +51,7 @@ The appv file contains the following folder and files, which are used when creat
 
 ## App-V Client data storage locations
 
-The App-V Client performs tasks to ensure that virtual applications run properly and work like locally installed applications. The process of opening and running virtual applications requires mapping from the virtual file system and registry to ensure the application has the required components of a traditional application expected by users. This section describes the assets that are required to run virtual applications and lists the location where App-V stores the assets.
+The App-V Client performs tasks to keep virtual applications running properly and working like locally installed applications. The process of opening and running virtual applications requires mapping from the virtual file system and registry to ensure the application has the required components of a traditional application expected by users. This section describes the assets that are required to run virtual applications and lists the location where App-V stores the assets.
 
 | Name | Location | Description |
 |---|---|---|
