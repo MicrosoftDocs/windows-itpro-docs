@@ -147,7 +147,7 @@ The staged registry persists the same way as in the single package case. Staged 
 
 ### Virtual registry
 
-The purpose of the virtual registry (VREG) is to provide a single merged view of the package registry and the native registry to applications. It also provides copy-on-write (COW) functionality—that is, any changes made to the registry from the context of a virtual process are made to a separate COW location. This means that the VREG must combine up to three separate registry locations into a single view based on the populated locations in the registry COW -&gt; package -&gt; native. When a request is made for a registry data it will locate in order until it finds the data it was requesting. Meaning if there is a value stored in a COW location it will not proceed to other locations, however, if there is no data in the COW location it will proceed to the Package and then Native location until it finds the appropriate data.
+The purpose of the virtual registry (VREG) is to provide a single merged view of the package registry and the native registry to applications. It also provides copy-on-write (COW) functionality—that is, any changes made to the registry from the context of a virtual process are made to a separate COW location. This means that the VREG must combine up to three separate registry locations into a single view based on the populated locations in the **registry COW** > **package** > **native**. When a request is made for a registry data it will locate in order until it finds the data it was requesting. Meaning if there is a value stored in a COW location it will not proceed to other locations, however, if there is no data in the COW location it will proceed to the Package and then Native location until it finds the appropriate data.
 
 ### Registry locations
 
@@ -241,11 +241,11 @@ After the initial stream of any publishing data and the primary feature block, r
 
 ### Package upgrades
 
-App-V Packages require updating throughout the lifecycle of the application. App-V Package upgrades are similar to the package publish operation, as each version will be created in its own PackageRoot location: ```%ProgramData%\App-V\{PkgGUID}\{newVerGUID}```. The upgrade operation is optimized by creating hard links to identical and streamed files from other versions of the same package.
+App-V Packages require updating throughout the lifecycle of the application. App-V Package upgrades are like the package publish operation, as each version will be created in its own PackageRoot location: ```%ProgramData%\App-V\{PkgGUID}\{newVerGUID}```. The upgrade operation is optimized by creating hard links to identical and streamed files from other versions of the same package.
 
 ### Package removal
 
-The App-V Client's behavior when packages are removed depends on the package removal method. Using an App-V full infrastructure to unpublish the application, the user catalog files (machine catalog for globally published applications) are removed, but retains the package store location and COW locations. When the **Remove-AppVClientPackge** Windows PowerShell cmdlet is used to remove an App-V Package, the package store location is cleaned. Remember that unpublishing an App-V Package from the Management Server does not perform a Remove operation. Neither operation will remove the Package Store package files.
+The App-V Client's behavior when packages are removed depends on the package removal method. Using an App-V full infrastructure to unpublish the application, the user catalog files (machine catalog for globally published applications) are removed, but the package store location and COW locations remain. When the **Remove-AppVClientPackge** Windows PowerShell cmdlet is used to remove an App-V Package, the package store location is cleaned. Remember that unpublishing an App-V Package from the Management Server does not perform a Remove operation. Neither operation will remove the Package Store package files.
 
 ## Roaming registry and data
 
@@ -306,20 +306,20 @@ The current App-V Client VFS driver can't write to network locations, so the App
 
 This process solves the problem of a non-local %AppData% that is not supported by the App-V Client VFS driver. However, the data stored in this new location is not roamed with folder redirection. All changes during the running of the application happen to the local AppData location and must be copied to the redirected location. The detailed steps of this process are:
 
-1. The App-V application is shut down, which shuts down the virtual environment.
-2. The local cache of the roaming AppData location is compressed and stored in a .zip file.
-3. A time stamp at the end of the .zip packaging process is used to name the file.
-4. The time stamp is recorded in the HKEY\_CURRENT\_USER\\Software\\Microsoft\\AppV\\Client\\Packages\\&lt;GUID&gt;\\AppDataTime registry as the last known AppData time stamp.
-5. The folder redirection process is called to evaluate and initiate the .zip file uploaded to the roaming AppData directory.
+1. Shut down the App-V application, which also shuts down the virtual environment.
+2. Compress the local cache of the roaming AppData location and store it in a .zip file.
+3. Use the time stamp at the end of the .zip packaging process to name the file.
+4. Record the time stamp in the HKEY\_CURRENT\_USER\\Software\\Microsoft\\AppV\\Client\\Packages\\&lt;GUID&gt;\\AppDataTime registry as the last known AppData time stamp.
+5. Call the folder redirection process to evaluate and initiate the .zip file uploaded to the roaming AppData directory.
 
-The time stamp is used to determine a “last writer wins” scenario if there is a conflict and is used to optimize the download of the data when the App-V application is published or the virtual environment is started. Folder redirection will make the data available from any other clients covered by the supporting policy and will initiate the process of storing the AppData\\Roaming data to the local AppData location on the client. The detailed processes are:
+The time stamp is used to determine a “last writer wins” scenario if there is a conflict and is used to optimize the download of the data when the App-V application is published, or the virtual environment is started. Folder redirection will make the data available from any other clients covered by the supporting policy and will initiate the process of storing the AppData\\Roaming data to the local AppData location on the client. The detailed processes are:
 
-1. The user starts the virtual environment by starting an application.
+1. The user starts an application, which also starts the virtual environment.
 2. The application’s virtual environment checks for the most recent time stamped .zip file, if present.
-3. The registry is checked for the last known uploaded time stamp, if present.
+3. The virtual environment checks the registry for the last known uploaded time stamp, if present.
 4. The most recent .zip file is downloaded unless the local last known upload time stamp is greater than or equal to the time stamp from the .zip file.
 5. If the local last known upload time stamp is earlier than that of the most recent .zip file in the roaming AppData location, the .zip file is extracted to the local temp directory in the user’s profile.
-6. After the .zip file is successfully extracted, the local cache of the roaming AppData directory is renamed and the new data is moved into place.
+6. After the .zip file is successfully extracted, the local cache of the roaming AppData directory is renamed and the new data moved into place.
 7. The renamed directory is deleted and the application opens with the most recently saved roaming AppData data.
 
 This completes the successful roaming of application settings that are present in AppData\\Roaming locations. The only other condition that must be addressed is a package repair operation. The details of the process are:
