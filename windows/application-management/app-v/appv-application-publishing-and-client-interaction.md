@@ -55,15 +55,15 @@ The App-V Client performs tasks to keep virtual applications running properly an
 
 | Name | Location | Description |
 |---|---|---|
-| Package Store | %ProgramData%\App-V| Default location for read only package files|
-| Machine Catalog | %ProgramData%\Microsoft\AppV\Client\Catalog| Contains per-machine configuration documents|
-| User Catalog | %AppData%\Microsoft\AppV\Client\Catalog| Contains per-user configuration documents|
-| Shortcut Backups | %AppData%\Microsoft\AppV\Client\Integration\ShortCutBackups| Stores previous integration points that enable restore on package unpublish|
-| Copy on Write (COW) Roaming | %AppData%\Microsoft\AppV\Client\VFS| Writeable roaming location for package modification|
-| Copy on Write (COW) Local | %LocalAppData%\Microsoft\AppV\Client\VFS| Writeable non-roaming location for package modification|
-| Machine Registry | HKLM\Software\Microsoft\AppV| Contains package state information, including VReg for machine or globally published packages (Machine hive)|
-| User Registry | HKCU\Software\Microsoft\AppV| Contains user package state information including VReg|
-| User Registry Classes | HKCU\Software\Classes\AppV| Contains additional user package state information|
+| Package Store | %ProgramData%\App-V| Default location for read-only package files.|
+| Machine Catalog | %ProgramData%\Microsoft\AppV\Client\Catalog| Contains per-machine configuration documents.|
+| User Catalog | %AppData%\Microsoft\AppV\Client\Catalog| Contains per-user configuration documents.|
+| Shortcut Backups | %AppData%\Microsoft\AppV\Client\Integration\ShortCutBackups| Stores previous integration points that enable restore on package unpublish.|
+| Copy on Write (COW) Roaming | %AppData%\Microsoft\AppV\Client\VFS| Writeable roaming location for package modification.|
+| Copy on Write (COW) Local | %LocalAppData%\Microsoft\AppV\Client\VFS| Writeable non-roaming location for package modification.|
+| Machine Registry | HKLM\Software\Microsoft\AppV| Contains package state information, including VReg for machine or globally published packages (Machine hive).|
+| User Registry | HKCU\Software\Microsoft\AppV| Contains user package state information including VReg.|
+| User Registry Classes | HKCU\Software\Classes\AppV| Contains additional user package state information.|
 
 Additional details for the table are provided in the section below and throughout the document.
 
@@ -97,7 +97,7 @@ The App-V Client manages the following two file-based locations:
 
 |||
 |---|---|
-|Description|Stores package documents that are available to users on the machine, when packages are added and published. However, if a package is “global” at publishing time, the integrations are available to all users.<br></br>If a package is non-global, the integrations are published only for specific users, but there are still global resources that are modified and visible to anyone on the client computer (such as when the package directory is in a shared disk location).<br></br>If a package is available to a user on the computer (global or non-global), the manifest is stored in the Machine Catalog. When a package is published globally, there is a Dynamic Configuration file, stored in the Machine Catalog; therefore, the determination of whether a package is global is defined according to whether there is a policy file (UserDeploymentConfiguration file) in the Machine Catalog.|
+|Description|Stores package documents that are available to users on the machine when packages are added and published. However, if a package is “global” at publishing time, the integrations are available to all users.<br></br>If a package is non-global, the integrations are published only for specific users, but there are still global resources that are modified and visible to anyone on the client computer (such as when the package directory is in a shared disk location).<br></br>If a package is available to a user on the computer (global or non-global), the manifest is stored in the Machine Catalog. When a package is published globally, there is a Dynamic Configuration file, stored in the Machine Catalog; therefore, the determination of whether a package is global is defined according to whether there is a policy file (UserDeploymentConfiguration file) in the Machine Catalog.|
 |Default storage location|```%programdata%\Microsoft\AppV\Client\Catalog\```<br></br>This location is not the same as the Package Store location. The Package Store is the golden or pristine copy of the package files.|
 |Files in the machine catalog|- Manifest.xml<br>- DeploymentConfiguration.xml<br>- UserManifest.xml (Globally Published Package)<br>- UserDeploymentConfiguration.xml (Globally Published Package)|
 |Additional machine catalog location, used when the package is part of a connection group|The following location is in addition to the specific package location mentioned previously as the default storage location:<br></br>```%programdata%\Microsoft\AppV\Client\Catalog\PackageGroups\ConGroupGUID\ConGroupVerGUID```|
@@ -119,7 +119,7 @@ During the publishing process, the App-V Client backs up any shortcuts and integ
 
 ### Copy on Write files
 
-The Package Store contains a pristine copy of the package files that have been streamed from the publishing server. During normal operation of an App-V application, the user or service may require changes to the files. These changes are not made in the package store in order to preserve your ability to repair the application, which removes these changes. These locations, called Copy on Write (COW), support both roaming and non-roaming locations. The location where the modifications are stored depends where the application has been programmed to write changes to in a native experience.
+The Package Store contains a pristine copy of the package files that have been streamed from the publishing server. During normal operation of an App-V application, the user or service may require changes to the files. However, these changes aren't made in the package store to preserve your ability to repair the application, which removes these changes. These locations, called Copy on Write (COW), support both roaming and non-roaming locations. The location where the modifications are stored depends where the application has been programmed to write changes to in a native experience.
 
 ### COW roaming
 
@@ -127,7 +127,7 @@ The COW Roaming location described above stores changes to files and directories
 
 ### COW local
 
-The COW Local location is similar to the roaming location, but the directories and files are not roamed to other computers, even if roaming support has been configured. The COW Local location described above stores changes applicable to typical windows and not the %AppData% location. The directories listed will vary but there will be two locations for any typical Windows locations (for example, Common AppData and Common AppDataS). The **S** signifies the restricted location when the virtual service requests the change as a different elevated user from the logged on users. The non-**S** location stores user based changes.
+The COW Local location is similar to the roaming location, but the directories and files are not roamed to other computers, even if roaming support has been configured. The COW Local location described above stores changes applicable to typical windows and not the %AppData% location. The directories listed will vary but there will be two locations for any typical Windows locations (for example, Common AppData and Common AppDataS). The **S** signifies the restricted location when the virtual service requests the change as a different elevated user from the signed-in users. The non-**S** location stores user-based changes.
 
 ## Package registry
 
@@ -137,7 +137,7 @@ When a new package is added to the App-V Client, a copy of the REGISTRY.DAT file
 
 **Registry.dat from Package Store** > **%ProgramData%\Microsoft\AppV\Client\Vreg\\{VersionGuid}.dat**
 
-When the first application from the package is launched on the client, the client stages or copies the contents out of the hive file, re-creating the package registry data in an alternate location ```HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\Packages\PackageGuid\Versions\VersionGuid\REGISTRY```. The staged registry data has two distinct types of machine data and user data. Machine data is shared across all users on the machine. User data is staged for each user to a userspecific location ```HKCU\Software\Microsoft\AppV\Client\Packages\PackageGuid\Registry\User```. The machine data is ultimately removed at package removal time, and the user data is removed on a user unpublish operation.
+When the first application from the package is launched on the client, the client stages or copies the contents out of the hive file, re-creating the package registry data in an alternate location ```HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\Packages\PackageGuid\Versions\VersionGuid\REGISTRY```. The staged registry data has two distinct types of machine data and user data. Machine data is shared across all users on the machine. User data is staged for each user to a user-specific location ```HKCU\Software\Microsoft\AppV\Client\Packages\PackageGuid\Registry\User```. The machine data is ultimately removed at package removal time, and the user data is removed on a user unpublish operation.
 
 ### Package registry staging vs. connection group registry staging
 
@@ -157,7 +157,7 @@ There are two package registry locations and two connection group locations wher
 
 |Location|Description|
 |---|---|
-|COW|- Machine Registry\Client\Packages\PkgGUID\REGISTRY (Only elevate process can write)<br>- User Registry\Client\Packages\PkgGUID\REGISTRY (User Roaming anything written under HKCU except Software\Classes<br>- User Registry Classes\Client\Packages\PkgGUID\REGISTRY (HKCU\Software\Classes writes and HKLM for non elevated process)|
+|COW|- Machine Registry\Client\Packages\PkgGUID\REGISTRY (Only elevate process can write)<br>- User Registry\Client\Packages\PkgGUID\REGISTRY (User Roaming anything written under HKCU except Software\Classes<br>- User Registry Classes\Client\Packages\PkgGUID\REGISTRY (HKCU\Software\Classes writes and HKLM for non-elevated process)|
 |Package|- Machine Registry\Client\Packages\PkgGUID\Versions\VerGuid\Registry\Machine<br>- User Registry Classes\Client\Packages\PkgGUID\Versions\VerGUID\Registry|
 |Native|- Native application registry location|
 
