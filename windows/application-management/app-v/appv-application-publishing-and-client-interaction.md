@@ -738,7 +738,7 @@ For situations where there is more than one application that could register the 
 
 ### AppPath
 
-The AppPath extension point supports calling App-V applications directly from the operating system. This is typically accomplished from the Run or Start Screen, depending on the operating system, which enables administrators to provide access to App-V applications from operating system commands or scripts without calling the specific path to the executable. It therefore avoids modifying the system path environment variable on all systems, as it is accomplished during publishing.
+The AppPath extension point supports calling App-V applications directly from the operating system. Administrators can provide access to App-V applications from operating system commands or scripts without calling the specific path to the executable from either the Run or Start Screen, depending on the operating system. It therefore avoids modifying the system path environment variable on all systems, as it is accomplished during publishing.
 
 The AppPath extension point is configured either in the manifest or in the dynamic configuration files and is stored in the registry on the local machine during publishing for the user. For additional information on AppPath review: [App Paths - A Virtual Application Extension in App-V 5.0](https://blogs.technet.microsoft.com/virtualworld/2012/12/12/app-paths-a-virtual-application-extension-in-app-v-5-0/).
 
@@ -777,9 +777,9 @@ Deploying App-V packages to a single machine or user is very simple. However, as
 
 App-V dynamic configuration lets you specify a package policy at either the machine or user levels. Dynamic Configuration files enable sequencing engineers to modify the configuration of a package post-sequencing to address the needs of individual groups of users or machines. In some instances, it may be necessary to modify the application to provide proper functionality within the App-V environment. For example, you may need to modify the \_\*config.xml files to allow certain actions to be performed at a specified time while executing the application, like disabling a mailto extension to prevent a virtualized application from overwriting that extension from another application.
 
-App-V packages contain the Manifest file inside of the appv package file, which is representative of sequencing operations and is the policy of choice unless Dynamic Configuration files are assigned to a specific package. Post-sequencing, the Dynamic Configuration files can be modified to allow an application to be published to different desktops or users with different extension points. The two Dynamic Configuration Files are the Dynamic Deployment Configuration (DDC) and Dynamic User Configuration (DUC) files. This section focuses on the combination of the manifest and dynamic configuration files.
+App-V packages contain the Manifest file inside of the App-V Package file, which is representative of sequencing operations and is the policy of choice unless Dynamic Configuration files are assigned to a specific package. Post-sequencing, the Dynamic Configuration files can be modified to allow an application to be published to different desktops or users with different extension points. The two Dynamic Configuration files are the Dynamic Deployment Configuration (DDC) and Dynamic User Configuration (DUC) files. This section focuses on the combination of the manifest and dynamic configuration files.
 
-### Example for dynamic configuration files
+### Examples of dynamic configuration files
 
 The following example shows the combination of the Manifest, Deployment Configuration, and User Configuration files after publishing and during normal operation. These examples are abbreviated examples of each of the files. The purpose is show the combination of the files only, not to be a complete description of the specific categories available in each file. For more information, download the [App-V Sequencing Guide](https://www.microsoft.com/en-us/download/details.aspx?id=27760).
 
