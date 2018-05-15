@@ -173,7 +173,7 @@ There are two COW locations for HKLM: elevated and non-elevated processes. Eleva
 
 ### Pass-through keys
 
-Pass-through keys enable an administrator to configure certain keys so they can only be read from the native registry, bypassing the Package and COW locations. Pass-through locations are global to the machine (not package-specific) and can be configured by adding the path to the key, which should be treated as pass-through to the **REG\_MULTI\_SZ** value called **PassThroughPaths** of the key ```HKLM\Software\Microsoft\AppV\Subsystem\VirtualRegistry```. Any key that appears under this multi-string value (and their children) will be treated as pass-through.
+An administrator can use pass-through keys to configure certain keys to only be read from the native registry, bypassing the Package and COW locations. Pass-through locations are global to the machine (not package-specific) and can be configured by adding the path to the key, which should be treated as pass-through to the **REG\_MULTI\_SZ** value called **PassThroughPaths** of the key ```HKLM\Software\Microsoft\AppV\Subsystem\VirtualRegistry```. Any key that appears under this multi-string value (and their children) will be treated as pass-through.
 
 The following locations are configured as pass-through locations by default:
 
@@ -564,7 +564,7 @@ When App-V applications are published to a computer with the App-V Client, some 
 
 ### Extension points
 
-The App-V publishing files (manifest and dynamic configuration) provide several extension points that enable the application to integrate with the local operating system. These extension points perform typical application installation tasks, such as placing shortcuts, creating file type associations, and registering components. As these are virtualized applications that are not installed in the same manner a traditional application, there are some differences. The following is a list of extension points covered in this section:
+The App-V publishing files (manifest and dynamic configuration) provide several extension points to integrate the application with the local operating system. These extension points perform typical application installation tasks, such as placing shortcuts, creating file type associations, and registering components. As these are virtualized applications that are not installed in the same manner a traditional application, there are some differences. The following is a list of extension points covered in this section:
 
 - Shortcuts
 - File type associations
@@ -600,7 +600,7 @@ As mentioned previously, the App-V shortcuts are placed by default in the user�
 
 ### File type associations
 
-The App-V Client manages the local operating system File Type Associations during publishing, which enables users to use file type invocations or to open a file with a specifically registered extension (.docx) to start an App-V application. File type associations are present in the manifest and dynamic configuration files, as represented in the following example:
+Users can use file type invocations or open a file with a specifically registered extension (.docx) to start an App-V application because the App-V Client manages the local operating system File Type Associations during publishing. File type associations are present in the manifest and dynamic configuration files, as shown in the following example:
 
 ```XML
 <Extension Category="AppV.FileTypeAssociation">
@@ -680,7 +680,7 @@ For details on App-V integration, see [Microsoft Application Virtualization 5.0 
 
 ### Software clients and application capabilities
 
-App-V supports specific software clients and application capabilities extension points that enable virtualized applications to be registered with the software client of the operating system. This enables users to select default programs for operations like email, instant messaging, and using the media player. This operation is performed in the control panel with **Set Program Access** and **Computer Defaults**, and configured during sequencing in the manifest or dynamic configuration files. Application capabilities are only supported when the App-V applications are published globally.
+App-V supports specific software clients and application capabilities extension points to register virtualized applications with the operating system's software client. This means users can select default programs for operations like email, instant messaging, and using the media player. This operation is performed in the control panel with **Set Program Access** and **Computer Defaults**, and configured during sequencing in the manifest or dynamic configuration files. Application capabilities are only supported when the App-V applications are published globally.
 
 The following is an example of software client registration of an App-V-based mail client.
 
@@ -775,7 +775,7 @@ Extension points are not all published the same way, where some extension points
 
 Deploying App-V packages to a single machine or user is very simple. However, as organizations deploy App-V applications across business lines and geographic and political boundaries, it becomes impossible to sequence all applications with the same settings. App-V was designed to overcome this problem by capturing specific settings and configurations during sequencing in the Manifest file while also supporting modification with Dynamic Configuration files.
 
-App-V dynamic configuration lets you specify a package policy at either the machine or user levels. Dynamic Configuration files enable sequencing engineers to modify the configuration of a package post-sequencing to address the needs of individual groups of users or machines. In some instances, it may be necessary to modify the application to provide proper functionality within the App-V environment. For example, you may need to modify the \_\*config.xml files to allow certain actions to be performed at a specified time while executing the application, like disabling a mailto extension to prevent a virtualized application from overwriting that extension from another application.
+App-V dynamic configuration lets you specify a package policy at either the machine or user levels. Sequencing engineers can use Dynamic Configuration files to modify the configuration of a package post-sequencing to address the needs of individual groups of users or machines. In some instances, it may be necessary to modify the application to provide proper functionality within the App-V environment. For example, you may need to modify the \_\*config.xml files to allow certain actions to be performed at a specified time while executing the application, like disabling a mailto extension to prevent a virtualized application from overwriting that extension from another application.
 
 App-V packages contain the Manifest file inside of the App-V Package file, which is representative of sequencing operations and is the policy of choice unless Dynamic Configuration files are assigned to a specific package. Post-sequencing, the Dynamic Configuration files can be modified to allow an application to be published to different desktops or users with different extension points. The two Dynamic Configuration files are the Dynamic Deployment Configuration (DDC) and Dynamic User Configuration (DUC) files. This section focuses on the combination of the manifest and dynamic configuration files.
 
@@ -851,18 +851,20 @@ The following example shows the combination of the Manifest, Deployment Configur
 
 ## Side-by-side assemblies
 
-App-V supports automatic packaging of side-by-side assemblies during sequencing and deployment on the client during virtual application publishing. App-V also supports capturing side-by-side assemblies during sequencing for assemblies not present on the sequencing machine. For assemblies consisting of Visual C++ (Version 8 and newer) or MSXML run-time, the Sequencer will automatically detect and capture these dependencies even if they weren't installed during monitoring. The side-by-side assemblies feature removes the limitations of previous versions of App-V, where the App-V Sequencer did not capture assemblies already present on the sequencing workstation, and privatizing the assemblies which limited to one bit version per package. This behavior resulted in App-V applications deployed to clients missing the required side-by-side assemblies, causing application launch failures. This forced the packaging process to document and then ensure that all assemblies required for packages were locally installed on the user’s client operating system to ensure support for the virtual applications. Based on the number of assemblies and the lack of application documentation for the required dependencies, this task was both a management and implementation challenge.
+App-V supports automatic packaging of side-by-side assemblies during sequencing and deployment on the client during virtual application publishing. App-V also supports capturing side-by-side assemblies during sequencing for assemblies not present on the sequencing machine. For assemblies consisting of Visual C++ (Version 8 and newer) or MSXML run-time, the Sequencer will automatically detect and capture these dependencies even if they weren't installed during monitoring.
+
+The side-by-side assemblies feature removes the limitations of previous versions of App-V, where the App-V Sequencer did not capture assemblies already present on the sequencing workstation, and privatized the assemblies, which limited it to one bit version per package. This behavior resulted in App-V applications being deployed to clients missing the required side-by-side assemblies, which led to application launch failures. This forced the packaging process to document and ensure that all assemblies required for packages were locally installed on the user’s client operating system. This task was both a management and implementation challenge due to the number of assemblies and the lack of application documentation for the required dependencies.
 
 Side-by-side assembly support in App-V has the following features:
 
-- Automatic captures of side-by-side assembly during Sequencing, regardless of whether the assembly was already installed on the sequencing workstation.
+- Automatic captures of side-by-side assembly during sequencing, regardless of whether the assembly was already installed on the sequencing workstation.
 - The App-V Client automatically installs required side-by-side assemblies to the client computer at publishing time if they aren't already installed.
 - The Sequencer reports the VC run-time dependency in Sequencer reporting mechanism.
-- The Sequencer allows opting to not package the assemblies that are already installed on the Sequencer, supporting scenarios where the assemblies have previously been installed on the target computers.
+- The Sequencer allows opting to not package assemblies already installed on the Sequencer, supporting scenarios where the assemblies have previously been installed on the target computers.
 
 ### Automatic publishing of side-by-side assemblies
 
-During publishing of an App-V package with side-by-side assemblies, the App-V Client will check for the presence of the assembly on the machine. If the assembly does not exist, the client will deploy the assembly to the machine. Packages that are part of connection groups will rely on the side-by-side assembly installations in the base packages, as the connection groups don't contain any information about assembly installation.
+During publishing of an App-V package with side-by-side assemblies, the App-V Client will check for the presence of the assembly on the machine. If it doesn't detect an assembly, the client will deploy the assembly to the machine. Packages that are part of connection groups will rely on the side-by-side assembly installations in the base packages, as the connection groups don't contain any information about assembly installation.
 
 >[!NOTE]
 >Unpublishing or removing a package with an assembly does not remove the assemblies for that package.
