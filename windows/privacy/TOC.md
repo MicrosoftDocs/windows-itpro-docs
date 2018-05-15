@@ -1,5 +1,7 @@
 # [Privacy](index.yml)
 ## [Beginning your General Data Protection Regulation (GDPR) journey for Windows 10](gdpr-win10-whitepaper.md)
+## [Windows 10 and the GDPR for IT Decision Makers](gdpr-it-guidance.md)
+## [Windows 10 personal data services configuration](windows-personal-data-services-configuration.md)
 ## [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md)
 ## [Diagnostic Data Viewer Overview](diagnostic-data-viewer-overview.md)
 ## Basic level diagnostics events and fields
