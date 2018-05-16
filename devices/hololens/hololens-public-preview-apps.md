@@ -9,7 +9,7 @@ author: alhopper
 ms.author: alhopper
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 05/08/2018
+ms.date: 05/22/2018
 ---
 # Get ready to preview new mixed reality apps for HoloLens
 
