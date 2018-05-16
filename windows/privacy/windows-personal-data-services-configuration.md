@@ -43,44 +43,49 @@ This setting determines the amount of Windows diagnostic data sent to Microsoft.
 
 #### Group Policy
 
-| | |
-|:-|:-|
-| **Group Policy** | Computer Configuration\Administrative Templates\Windows Components\Data Collection and Preview Builds |
-| **Policy Name** | Allow Telemetry |
-| **Default setting** | 2 - Enhanced |
-| **Recommended** | 2 - Enhanced |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **Group Policy** | Computer Configuration\Administrative Templates\Windows Components\Data Collection and Preview Builds |
+>| **Policy Name** | Allow Telemetry |
+>| **Default setting** | 2 - Enhanced |
+>| **Recommended** | 2 - Enhanced |
 
-| | |
-|:-|:-|
-| **Group Policy** | User Configuration\Administrative Templates\Windows Components\Data Collection and Preview Builds |
-| **Policy Name** | Allow Telemetry |
-| **Default setting** | 2 - Enhanced |
-| **Recommended** | 2 - Enhanced |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **Group Policy** | User Configuration\Administrative Templates\Windows Components\Data Collection and Preview Builds |
+>| **Policy Name** | Allow Telemetry |
+>| **Default setting** | 2 - Enhanced |
+>| **Recommended** | 2 - Enhanced |
 
 #### Registry
 
-| | |
-|:-|:-|
-| **Registry key** | HKLM\Software\Policies\Microsoft\Windows\DataCollection |
-| **Value** | AllowTelemetry |
-| **Type** | REG_DWORD |
-| **Setting** | "00000002" |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **Registry key** | HKLM\Software\Policies\Microsoft\Windows\DataCollection |
+>| **Value** | AllowTelemetry |
+>| **Type** | REG_DWORD |
+>| **Setting** | "00000002" |
 
-| | |
-|:-|:-|
-| **Registry key** | HKCU\Software\Policies\Microsoft\Windows\DataCollection |
-| **Value** | AllowTelemetry |
-| **Type** | REG_DWORD |
-| **Setting** | "00000002" |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **Registry key** | HKCU\Software\Policies\Microsoft\Windows\DataCollection |
+>| **Value** | AllowTelemetry |
+>| **Type** | REG_DWORD |
+>| **Setting** | "00000002" |
 
 #### MDM
 
-| | |
-|:-|:-|
-| **MDM CSP** | System |
-| **Policy** | AllowTelemetry (scope: device and user)  |
-| **Default setting** | 2 – Enhanced |
-| **Recommended** | 2 – Allowed |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **MDM CSP** | System |
+>| **Policy** | AllowTelemetry (scope: device and user)  |
+>| **Default setting** | 2 – Enhanced |
+>| **Recommended** | 2 – Allowed |
 
 ### Diagnostic opt-in change notifications
 
@@ -88,30 +93,33 @@ This setting determines whether a device shows notifications about Windows diagn
 
 #### Group Policy
 
-| | |
-|:-|:-|
-| **Group Policy** | Computer Configuration\Administrative Templates\Windows Components\Data Collection and Preview Builds |
-| **Policy Name** | Configure telemetry opt-in change notifications |
-| **Default setting** | Enabled |
-| **Recommended** | Enabled |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **Group Policy** | Computer Configuration\Administrative Templates\Windows Components\Data Collection and Preview Builds |
+>| **Policy Name** | Configure telemetry opt-in change notifications |
+>| **Default setting** | Enabled |
+>| **Recommended** | Enabled |
 
 #### Registry
 
-| | |
-|:-|:-|
-| **Registry key** | HKLM\Software\Policies\Microsoft\Windows\DataCollection |
-| **Value** | DisableTelemetryOptInChangeNotification |
-| **Type** | REG_DWORD |
-| **Setting** | "00000001" |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **Registry key** | HKLM\Software\Policies\Microsoft\Windows\DataCollection |
+>| **Value** | DisableTelemetryOptInChangeNotification |
+>| **Type** | REG_DWORD |
+>| **Setting** | "00000001" |
 
 #### MDM
 
-| | |
-|:-|:-|
-| **MDM CSP** | System |
-| **Policy** | ConfigureTelemetryOptInChangeNotification  |
-| **Default setting** | 0 – Enabled |
-| **Recommended** | 0 – Enabled |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **MDM CSP** | System |
+>| **Policy** | ConfigureTelemetryOptInChangeNotification  |
+>| **Default setting** | 0 – Enabled |
+>| **Recommended** | 0 – Enabled |
 
 ### Configure telemetry opt-in setting user interface
 
@@ -119,30 +127,33 @@ This setting determines whether people can change their own Windows diagnostic d
 
 #### Group Policy
 
-| | |
-|:-|:-|
-| **Group Policy** | Computer Configuration\Administrative Templates\Windows Components\Data Collection and Preview Builds |
-| **Policy Name** | Configure telemetry opt-in setting user interface |
-| **Default setting** | Enabled |
-| **Recommended** | Enabled |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **Group Policy** | Computer Configuration\Administrative Templates\Windows Components\Data Collection and Preview Builds |
+>| **Policy Name** | Configure telemetry opt-in setting user interface |
+>| **Default setting** | Enabled |
+>| **Recommended** | Enabled |
 
 #### Registry
 
-| | |
-|:-|:-|
-| **Registry key** | HKLM\Software\Policies\Microsoft\Windows\DataCollection |
-| **Value** | DisableTelemetryOptInSettingsUx |
-| **Type** | REG_DWORD |
-| **Setting** | "00000001" |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **Registry key** | HKLM\Software\Policies\Microsoft\Windows\DataCollection |
+>| **Value** | DisableTelemetryOptInSettingsUx |
+>| **Type** | REG_DWORD |
+>| **Setting** | "00000001" |
 
 #### MDM
 
-| | |
-|:-|:-|
-| **MDM CSP** | System |
-| **Policy** | ConfigureTelemetryOptInSettingsUx  |
-| **Default setting** | 0 – Enabled |
-| **Recommended** | 0 – Enabled |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **MDM CSP** | System |
+>| **Policy** | ConfigureTelemetryOptInSettingsUx  |
+>| **Default setting** | 0 – Enabled |
+>| **Recommended** | 0 – Enabled |
 
 ## Policies affecting personal data protection managed by the Enterprise IT
 
@@ -158,66 +169,73 @@ The following settings determine whether fixed and removable drives are protecte
 
 #### Group Policy
 
-| | |
-|:-|:-|
-| **Group Policy** | Computer Configuration\Administrative Templates\Windows Components\Bitlocker Drive Encryption\Fixed Data Drives |
-| **Policy Name** | Deny write access to fixed drives not protected by BitLocker |
-| **Default setting** | Not configured |
-| **Recommended** | Enabled |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **Group Policy** | Computer Configuration\Administrative Templates\Windows Components\Bitlocker Drive Encryption\Fixed Data Drives |
+>| **Policy Name** | Deny write access to fixed drives not protected by BitLocker |
+>| **Default setting** | Not configured |
+>| **Recommended** | Enabled |
 
 #### Registry
 
-| | |
-|:-|:-|
-| **Registry key** | HKLM\System\CurrentControlSet\Policies\Microsoft\FVE |
-| **Value** | FDVDenyWriteAccess |
-| **Type** | REG_DWORD |
-| **Setting** | "00000001" |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **Registry key** | HKLM\System\CurrentControlSet\Policies\Microsoft\FVE |
+>| **Value** | FDVDenyWriteAccess |
+>| **Type** | REG_DWORD |
+>| **Setting** | "00000001" |
 
 #### MDM
 
-| | |
-|:-|:-|
-| **MDM CSP** | BitLocker |
-| **Policy** | RemovableDrivesRequireEncryption  |
-| **Default setting** | Disabled |
-| **Recommended** | Enabled (see [instructions](/windows/client-management/mdm/bitlocker-csp#fixeddrivesrequireencryption)) |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **MDM CSP** | BitLocker |
+>| **Policy** | RemovableDrivesRequireEncryption  |
+>| **Default setting** | Disabled |
+>| **Recommended** | Enabled (see [instructions](/windows/client-management/mdm/bitlocker-csp#fixeddrivesrequireencryption)) |
 
 #### Removable Data Drives
 
 #### Group Policy
 
-| | |
-|:-|:-|
-| **Group Policy** | Computer Configuration\Administrative Templates\Windows Components\Bitlocker Drive Encryption\Removable Data Drives |
-| **Policy Name** | Deny write access to removable drives not protected by BitLocker |
-| **Default setting** | Not configured |
-| **Recommended** | Enabled |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **Group Policy** | Computer Configuration\Administrative Templates\Windows Components\Bitlocker Drive Encryption\Removable Data Drives |
+>| **Policy Name** | Deny write access to removable drives not protected by BitLocker |
+>| **Default setting** | Not configured |
+>| **Recommended** | Enabled |
 
 #### Registry
 
-| | |
-|:-|:-|
-| **Registry key** | HKLM\System\CurrentControlSet\Policies\Microsoft\FVE |
-| **Value** | RDVDenyWriteAccess |
-| **Type** | REG_DWORD |
-| **Setting** | "00000001" |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **Registry key** | HKLM\System\CurrentControlSet\Policies\Microsoft\FVE |
+>| **Value** | RDVDenyWriteAccess |
+>| **Type** | REG_DWORD |
+>| **Setting** | "00000001" |
 
-| | |
-|:-|:-|
-| **Registry key** | HKLM\Software\Policies\Microsoft\FVE |
-| **Value** | RDVDenyCrossOrg |
-| **Type** | REG_DWORD |
-| **Setting** | "00000000" |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **Registry key** | HKLM\Software\Policies\Microsoft\FVE |
+>| **Value** | RDVDenyCrossOrg |
+>| **Type** | REG_DWORD |
+>| **Setting** | "00000000" |
 
 #### MDM
 
-| | |
-|:-|:-|
-| **MDM CSP** | BitLocker |
-| **Policy** | RemovableDrivesRequireEncryption  |
-| **Default setting** | Disabled |
-| **Recommended** | Enabled (see [instructions](/windows/client-management/mdm/bitlocker-csp#removabledrivesrequireencryption)) |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **MDM CSP** | BitLocker |
+>| **Policy** | RemovableDrivesRequireEncryption  |
+>| **Default setting** | Disabled |
+>| **Recommended** | Enabled (see [instructions](/windows/client-management/mdm/bitlocker-csp#removabledrivesrequireencryption)) |
 
 ### Privacy – AdvertisingID
 
@@ -225,30 +243,33 @@ This setting determines if the advertising ID, which preventing apps from using 
 
 #### Group Policy
 
-| | |
-|:-|:-|
-| **Group Policy** | Computer Configuration\Administrative Templates\System\User Profiles |
-| **Policy Name** | Turn off the advertising ID |
-| **Default setting** | Not configured |
-| **Recommended** | Enabled |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **Group Policy** | Computer Configuration\Administrative Templates\System\User Profiles |
+>| **Policy Name** | Turn off the advertising ID |
+>| **Default setting** | Not configured |
+>| **Recommended** | Enabled |
 
 #### Registry
 
-| | |
-|:-|:-|
-| **Registry key** | HKLM\Software\Policies\Microsoft\Windows\AdvertisingInfo |
-| **Value** | DisabledByGroupPolicy |
-| **Type** | REG_DWORD |
-| **Setting** | "00000001" |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **Registry key** | HKLM\Software\Policies\Microsoft\Windows\AdvertisingInfo |
+>| **Value** | DisabledByGroupPolicy |
+>| **Type** | REG_DWORD |
+>| **Setting** | "00000001" |
 
 #### MDM
 
-| | |
-|:-|:-|
-| **MDM CSP** | Privacy |
-| **Policy** | DisableAdvertisingId  |
-| **Default setting** | 65535 (default) - Not configured |
-| **Recommended** | 1 – Enabled |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **MDM CSP** | Privacy |
+>| **Policy** | DisableAdvertisingId  |
+>| **Default setting** | 65535 (default) - Not configured |
+>| **Recommended** | 1 – Enabled |
 
 ### Edge
 
@@ -259,44 +280,49 @@ These settings whether employees send “Do Not Track” from the Microsoft Edge
 
 #### Group Policy
 
-| | |
-|:-|:-|
-| **Group Policy** | Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge |
-| **Policy Name** | Configure Do Not Track |
-| **Default setting** | Disabled |
-| **Recommended** | Disabled |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **Group Policy** | Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge |
+>| **Policy Name** | Configure Do Not Track |
+>| **Default setting** | Disabled |
+>| **Recommended** | Disabled |
 
-| | |
-|:-|:-|
-| **Group Policy** | User Configuration\Administrative Templates\Windows Components\Microsoft Edge |
-| **Policy Name** | Configure Do Not Track |
-| **Default setting** | Disabled |
-| **Recommended** | Disabled |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **Group Policy** | User Configuration\Administrative Templates\Windows Components\Microsoft Edge |
+>| **Policy Name** | Configure Do Not Track |
+>| **Default setting** | Disabled |
+>| **Recommended** | Disabled |
 
 #### Registry
 
-| | |
-|:-|:-|
-| **Registry key** | HKLM\Software\Policies\Microsoft\MicrosoftEdge\Main |
-| **Value** | DoNotTrack |
-| **Type** | REG_DWORD |
-| **Setting** | "00000000" |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **Registry key** | HKLM\Software\Policies\Microsoft\MicrosoftEdge\Main |
+>| **Value** | DoNotTrack |
+>| **Type** | REG_DWORD |
+>| **Setting** | "00000000" |
 
-| | |
-|:-|:-|
-| **Registry key** | HKCU\Software\Policies\Microsoft\MicrosoftEdge\Main |
-| **Value** | DoNotTrack |
-| **Type** | REG_DWORD |
-| **Setting** | "00000000" |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **Registry key** | HKCU\Software\Policies\Microsoft\MicrosoftEdge\Main |
+>| **Value** | DoNotTrack |
+>| **Type** | REG_DWORD |
+>| **Setting** | "00000000" |
 
 #### MDM
 
-| | |
-|:-|:-|
-| **MDM CSP** | Browser |
-| **Policy** | AllowDoNotTrack (scope: device + user)  |
-| **Default setting** | 0 (default) – Not allowed |
-| **Recommended** | 0 – Not allowed |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **MDM CSP** | Browser |
+>| **Policy** | AllowDoNotTrack (scope: device + user)  |
+>| **Default setting** | 0 (default) – Not allowed |
+>| **Recommended** | 0 – Not allowed |
 
 ### Internet Explorer
 
@@ -304,41 +330,46 @@ These settings whether employees send “Do Not Track” header from the Microso
 
 #### Group Policy
 
-| | |
-|:-|:-|
-| **Group Policy** | Computer Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel\Advanced Page |
-| **Policy Name** | Always send Do Not Track header |
-| **Default setting** | Disabled |
-| **Recommended** | Disabled |
+> [!div class="mx-tableFixed"]
+>| | |
+>|:-|:-|
+>| **Group Policy** | Computer Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel\Advanced Page |
+>| **Policy Name** | Always send Do Not Track header |
+>| **Default setting** | Disabled |
+>| **Recommended** | Disabled |
 
-|||
-|:-|:-|
-| **Group Policy** | User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel\Advanced Page |
-| **Policy Name** | Always send Do Not Track header |
-| **Default setting** | Disabled |
-| **Recommended** | Disabled |
+> [!div class="mx-tableFixed"]
+>|||
+>|:-|:-|
+>| **Group Policy** | User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel\Advanced Page |
+>| **Policy Name** | Always send Do Not Track header |
+>| **Default setting** | Disabled |
+>| **Recommended** | Disabled |
 
 #### Registry
 
-|||
-|:-|:-|
-| **Registry key** | HKLM\Software\Policies\Microsoft\Internet Explorer\Main |
-| **Value** | DoNotTrack |
-| **Type** | REG_DWORD |
-| **Setting** | "00000000" |
+> [!div class="mx-tableFixed"]
+>|||
+>|:-|:-|
+>| **Registry key** | HKLM\Software\Policies\Microsoft\Internet Explorer\Main |
+>| **Value** | DoNotTrack |
+>| **Type** | REG_DWORD |
+>| **Setting** | "00000000" |
 
-|||
-|:-|:-|
-| **Registry key** | HKCU\Software\Policies\Microsoft\Internet Explorer\Main |
-| **Value** | DoNotTrack |
-| **Type** | REG_DWORD |
-| **Setting** | "00000000" |
+> [!div class="mx-tableFixed"]
+>|||
+>|:-|:-|
+>| **Registry key** | HKCU\Software\Policies\Microsoft\Internet Explorer\Main |
+>| **Value** | DoNotTrack |
+>| **Type** | REG_DWORD |
+>| **Setting** | "00000000" |
 
 #### MDM
 
-|||
-|:-|:-|
-| **MDM CSP** | N/A |
+> [!div class="mx-tableFixed"]
+>|||
+>|:-|:-|
+>| **MDM CSP** | N/A |
 
 ## Additional resources
 
