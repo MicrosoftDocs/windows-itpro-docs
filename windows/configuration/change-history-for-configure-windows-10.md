@@ -22,6 +22,7 @@ This topic lists new and updated topics in the [Configure Windows 10](index.md) 
 New or changed topic | Description
 --- | ---
 [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md) | Added note that Wi-Fi Sense is no longer available.
+Topics about Windows 10 diagnostic data | Moved to [Windows Privacy](https://docs.microsoft.com/windows/privacy/).
 
 ## RELEASE: Windows 10, version 1803
 
