@@ -298,35 +298,35 @@ The following table shows local and roaming locations, when folder redirection h
 | appv_ROOT | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\\&lt;GUID&gt;\appv\_ROOT |
 | AppData | \\Fileserver\users\Local\roaming\Microsoft\AppV\Client\VFS\\&lt;GUID&gt;\AppData |
 
-The current App-V Client VFS driver can't write to network locations, so the App-V Client detects the presence of folder redirection and copies the data on the local drive during publishing and when the virtual environment starts. After the user closes the App-V application and the App-V Client closes the virtual environment, the local storage of the VFS AppData is copied back to the network, enabling roaming to additional machines, where the process will be repeated. The detailed steps of the processes are:
+The current App-V Client VFS driver can't write to network locations, so the App-V Client detects the presence of folder redirection and copies the data on the local drive during publishing and when the virtual environment starts. After the user closes the App-V application and the App-V Client closes the virtual environment, the local storage of the VFS AppData is copied back to the network, enabling roaming to additional machines, where the process will be repeated. Here's what happens during the process:
 
 1. During publishing or virtual environment startup, the App-V Client detects the location of the AppData directory.
 2. If the roaming AppData path is local or ino AppData\\Roaming location is mapped, nothing happens.
 3. If the roaming AppData path is not local, the VFS AppData directory is mapped to the local AppData directory.
 
-This process solves the problem of a non-local %AppData% that is not supported by the App-V Client VFS driver. However, the data stored in this new location is not roamed with folder redirection. All changes during the running of the application happen to the local AppData location and must be copied to the redirected location. The detailed steps of this process are:
+This process solves the problem of a non-local %AppData% that is not supported by the App-V Client VFS driver. However, the data stored in this new location is not roamed with folder redirection. All changes during the running of the application happen to the local AppData location and must be copied to the redirected location. The process does the following things:
 
-1. Shut down the App-V application, which also shuts down the virtual environment.
-2. Compress the local cache of the roaming AppData location and store it in a .zip file.
-3. Use the time stamp at the end of the .zip packaging process to name the file.
-4. Record the time stamp in the HKEY\_CURRENT\_USER\\Software\\Microsoft\\AppV\\Client\\Packages\\&lt;GUID&gt;\\AppDataTime registry as the last known AppData time stamp.
-5. Call the folder redirection process to evaluate and initiate the .zip file uploaded to the roaming AppData directory.
+1. Shuts down the App-V application, which also shuts down the virtual environment.
+2. Compresses the local cache of the roaming AppData location and store it in a .zip file.
+3. Uses the time stamp at the end of the .zip packaging process to name the file.
+4. Records the time stamp in the HKEY\_CURRENT\_USER\\Software\\Microsoft\\AppV\\Client\\Packages\\&lt;GUID&gt;\\AppDataTime registry as the last known AppData time stamp.
+5. Calls the folder redirection process to evaluate and initiate the .zip file uploaded to the roaming AppData directory.
 
-The time stamp is used to determine a “last writer wins” scenario if there is a conflict and is used to optimize the download of the data when the App-V application is published, or the virtual environment is started. Folder redirection will make the data available from any other clients covered by the supporting policy and will initiate the process of storing the AppData\\Roaming data to the local AppData location on the client. The detailed processes are:
+The time stamp is used to determine a “last writer wins” scenario if there is a conflict and is used to optimize the download of the data when the App-V application is published, or the virtual environment is started. Folder redirection will make the data available from any other clients covered by the supporting policy and will initiate the process of storing the AppData\\Roaming data to the local AppData location on the client. Here's what happens during the process:
 
 1. The user starts an application, which also starts the virtual environment.
 2. The application’s virtual environment checks for the most recent time stamped .zip file, if present.
 3. The virtual environment checks the registry for the last known uploaded time stamp, if present.
-4. The most recent .zip file is downloaded unless the local last known upload time stamp is greater than or equal to the time stamp from the .zip file.
-5. If the local last known upload time stamp is earlier than that of the most recent .zip file in the roaming AppData location, the .zip file is extracted to the local temp directory in the user’s profile.
+4. The virtual environment downloads the most recent .zip file unless the local last known upload time stamp is greater than or equal to the time stamp from the .zip file.
+5. If the local last known upload time stamp is earlier than that of the most recent .zip file in the roaming AppData location, the virtual environment extracts the .zip file to the local temp directory in the user’s profile.
 6. After the .zip file is successfully extracted, the local cache of the roaming AppData directory is renamed and the new data moved into place.
 7. The renamed directory is deleted and the application opens with the most recently saved roaming AppData data.
 
-This completes the successful roaming of application settings that are present in AppData\\Roaming locations. The only other condition that must be addressed is a package repair operation. The details of the process are:
+This completes the successful roaming of application settings that are present in AppData\\Roaming locations. The only other condition that must be addressed is a package repair operation. The process does the following things:
 
-1. During repair, detect if the path to the user’s roaming AppData directory isn't local.
-2. Map the non-local roaming AppData path targets, recreating the expected roaming and local AppData locations.
-3. Delete the time stamp stored in the registry, if present.
+1. During repair, detects if the path to the user’s roaming AppData directory isn't local.
+2. Maps the non-local roaming AppData path targets, recreating the expected roaming and local AppData locations.
+3. Deletes the time stamp stored in the registry, if present.
 
 This process will recreate both the local and network locations for AppData and remove the registry record of the time stamp.
 
