@@ -178,7 +178,7 @@ If an IT organization has not disabled this policy, users within the organizatio
 
 Windows 10, version 1803, and later can provide users with a notification during their logon. If the IT organization has not disabled the Group Policy **Computer Configuration\Administrative Templates\Windows Components\Data Collection and Preview Builds\Configure telemetry opt-in change notifications** or the MDM policy **ConfigureTelemetryOptInChangeNotification**, Windows diagnostic data notifications can appear at logon so that the users of a device are aware of the data collection.
 
-This notification can also be shown when the diagnostic level for the device was changed. For instance, if the telemetry level on the device is set to “Basic” and the IT organization changes it to “Full”, users will be notified on their next logon.
+This notification can also be shown when the diagnostic level for the device was changed. For instance, if the diagnostic level on the device is set to “Basic” and the IT organization changes it to “Full”, users will be notified on their next logon.
 
 ### Diagnostic Data Viewer (DDV)
 

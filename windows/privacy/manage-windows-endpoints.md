@@ -24,13 +24,13 @@ Some Windows components, app, and related services transfer data to Microsoft ne
 -	Connecting to the cloud to store and access backups.
 -	Using your location to show a weather forecast.
 
-This article lists different endpoints that are available on a clean installation of Windows 10 Enterprise, version 1709 and later.
+This article lists different endpoints that are available on a clean installation of Windows 10, version 1709 and later.
 Details about the different ways to control traffic to these endpoints are covered in [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md). 
 Where applicable, each endpoint covered in this topic includes a link to specific details about how to control traffic to it. 
 
 We used the following methodology to derive these network endpoints:
 
-1.	Set up the latest version of Windows 10 Enterprise test virtual machine using the default settings. 
+1.	Set up the latest version of Windows 10 on a test virtual machine using the default settings. 
 2.	Leave the devices running idle for a week (that is, a user is not interacting with the system/device).
 3.	Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
 4.	Compile reports on traffic going to public IP addresses.
@@ -38,6 +38,8 @@ We used the following methodology to derive these network endpoints:
 
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
+
+## Windows 10 Enterprise connection endpoints
 
 ## Apps
 
