@@ -90,7 +90,7 @@ You can use Windows Configuration Designer to create a provisioning package that
 
 ## Education customers with Azure AD joined devices
 
-Academic institutions can easily move from Windows 10 Pro to Windows 10 Pro Education without using activation keys or reboots. When one of your users enters their Azure AD credentials associated with a Windows 10 Pro Education license, the operating system changees to Windows 10 Pro Education and all the appropriate Windows 10 Pro Education features are unlocked. Previously, only schools or organizations purchasing devices as part of the Shape the Future K-12 program or with a Microsoft Volume Licensing Agreement could deploy Windows 10 Pro Education to their users. Now, if you have an Azure AD for your organization, you can take advantage of the Windows 10 Pro Education features.
+Academic institutions can easily move from Windows 10 Pro to Windows 10 Pro Education without using activation keys or reboots. When one of your users enters their Azure AD credentials associated with a Windows 10 Pro Education license, the operating system changes to Windows 10 Pro Education and all the appropriate Windows 10 Pro Education features are unlocked. Previously, only schools or organizations purchasing devices as part of the Shape the Future K-12 program or with a Microsoft Volume Licensing Agreement could deploy Windows 10 Pro Education to their users. Now, if you have an Azure AD for your organization, you can take advantage of the Windows 10 Pro Education features.
 
 When you change to Windows 10 Pro Education, you get the following benefits:
 
@@ -284,10 +284,10 @@ Once the automatic change to Windows 10 Pro Education is turned off, the change 
 
     ![Revert to Windows 10 Pro](images/msfe_manage_reverttowin10pro.png)
 
-4. You will be asked if you're sure that you want to turn off automatic changees to Windows 10 Pro Education. Click **Yes**.
+4. You will be asked if you're sure that you want to turn off automatic changes to Windows 10 Pro Education. Click **Yes**.
 5. Click **Close** in the **Success** page.
 
-    All global admins get a confirmation email that a request was made to roll back your organization to Windows 10 Pro. If you, or another global admin, decide later that you want to turn on automatic changees again, you can do this by selecting **change to Windows 10 Pro Education for free** from the **Manage > Benefits** in the Microsoft Store for Education.
+    All global admins get a confirmation email that a request was made to roll back your organization to Windows 10 Pro. If you, or another global admin, decide later that you want to turn on automatic changes again, you can do this by selecting **change to Windows 10 Pro Education for free** from the **Manage > Benefits** in the Microsoft Store for Education.
 
 
 ## Preparing for deployment of Windows 10 Pro Education licenses
