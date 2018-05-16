@@ -139,6 +139,10 @@ Use the solution explorer to view alerts in Splunk.
 5. Find the query you saved in the list and click **Run**. The results are displayed based on your query.
 
 
+>[!TIP]
+> To mininimize alert duplications, you can use the following query:
+>```source="rest://windows atp alerts" | spath | dedup _raw | table *``` 
+
 ## Related topics
 - [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
 - [Configure ArcSight to pull Windows Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
