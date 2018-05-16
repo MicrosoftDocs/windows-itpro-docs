@@ -8,6 +8,7 @@ ms.sitesec: library
 author: brecords
 ms.date: 01/29/2018
 ms.author: jdecker
+ms.topic: article
 ---
 
 # Deploy Surface devices

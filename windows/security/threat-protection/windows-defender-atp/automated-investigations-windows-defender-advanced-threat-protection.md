@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/24/2018
+ms.date: 05/08/2018
 ---
 
 # Use Automated investigations to investigate and remediate threats
@@ -36,7 +36,10 @@ The Automated investigations list shows all the investigations that have been in
 
 ## Understand the Automated investigation flow
 ### How the Automated investigation starts
-Entities are the starting point for Automated investigations. When an alert contains a supported entity for Automated investigation (for example, a file) an Automated investigation starts. 
+Entities are the starting point for Automated investigations. When an alert contains a supported entity for Automated investigation (for example, a file) that resides on a machine that has a supported operating system for Automated investigation then an Automated investigation can start.
+
+>[!NOTE]
+>Currently, Automated investigation only supports Windows 10, version 1803 or later.
 
 The alerts start by analyzing the supported entities from the alert and also runs a generic machine playbook to see if there is anything else suspicious on that machine. The outcome and details from the investigation is seen in the Automated investigation view.
 
@@ -62,14 +65,23 @@ While an investigation is running, any other alert generated from the machine wi
 If an incriminated entity is seen in another machine, the Automated investigation will expand the investigation to include that machine and a generic machine playbook will start on that machine. If 10 or more machines are found during this expansion process from the same entity, then that expansion action will require an approval and will be seen in the **Pending actions** view.
 
 ### How threats are remediated
-Depending on how you set up the machine groups and their level of automation, the Automated investigation will either automaticlly remediate threats or require user approval (this is the default). For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md). 
+Depending on how you set up the machine groups and their level of automation, the Automated investigation will either require user approval (default) or automatically remediate threats.
+
+You can configure the following levels of automation:
+
+Automation level | Description 
+:---|:---
+Semi - require approval for any remediation | This is the default automation level.<br><br>  An approval is needed for any remediation action. 
+Semi - require approval for non-temp folders remediation | An approval is required on files or executables that are not in temporary folders. <br><br> Files or executables in temporary folders, such as the user's download folder or the user's temp folder, will automatically be remediated if needed.
+Semi - require approval for non-temp folders remediation | An approval is required on files or executables that are in the operating system directories such as Windows folder and Program files folder.  <br><br> Files or executables in all other folders will automatically be remediated if needed.
+Semi - require approval for core folders remediation | An approval is required on files or executables that are in the operating system directories such as Windows folder and Program files folder. <br><br> Files or executables in all other folders will  automatically be remediated if needed.
+Full - remediate threats automatically | All remediation actions will be performed automatically.
+
+For more information on how to configure these automation levels, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md).
 
 The default machine group is configured for semi-automatic remediation. This means that any malicious entity that needs to be remediated requires an approval and the investigation is added to the **Pending actions** section, this can be changed to fully automatic so that no user approval is needed. 
 
 When a pending action is approved, the entity is then remediated and this new state is reflected in the **Entities** tab of the investigation.
-
-### How an Automated investigation is completed
-When the Automated investigation completes its analysis, and all pending actions are resolved, an investigation is considered complete. It's important to understand that an investigation is only considered complete if there are no pending actions on it. 
 
 
 ## Manage Automated investigations
@@ -100,19 +112,15 @@ Status | Description
 | No threats found                                          | No malicious entities found during the investigation.
 | Failed                                                    | A problem has interrupted the investigation, preventing it from completing.                                                         |
 | Partially remediated                                      | A problem prevented the remediation of some malicious entities.                                                                     |
-| Action required                                           | Remediation actions require review and approval.                                                                                    |
+| Pending                                           | Remediation actions require review and approval.                                                                                    |
 | Waiting for machine                                       | Investigation paused. The investigation will resume as soon as the machine is available.                                            |
 | Queued                                                    | Investigation has been queued and will resume as soon as other remediation activities are completed.                                |
 | Running                                                   | Investigation ongoing. Malicious entities found will be remediated.                                                                 |
 | Remediated                                                | Malicious entities found were successfully remediated.                                                                              |
 | Terminated by system                                      | Investigation was stopped due to <reason>.                                                                                          |
-| Terminated by user                                        | A user stopped the investigation before it could complete.                                                                          |
-| Not applicable                                            | Automated investigations do not apply to this alert type.                                                                           |
+| Terminated by user                                        | A user stopped the investigation before it could complete.  
 | Partially investigated                                    | Entities directly related to the alert have been investigated. However, a problem stopped the investigation of collateral entities. |
-| Automated investigation not applicable to alert type      | Automated investigation does not apply to this alert type.                                                                          |
-| Automated investigation does not support OS               | Machine is running an OS that is not supported by Automated investigation.                                                          |
-| Automated investigation unavailable for preexisting alert | Automated investigation does not apply to alerts that were generated before it was deployed.                                        |
-| Automated investigation unavailable for suppressed alert  | Automated investigation does not apply to suppressed alerts.                                                                        |
+
 
 
 **Detection source**</br>

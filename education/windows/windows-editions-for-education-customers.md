@@ -3,6 +3,7 @@ title: Windows 10 editions for education customers
 description: Provides an overview of the two Windows 10 editions that are designed for the needs of K-12 institutions.
 keywords: Windows 10 Pro Education, Windows 10 Education, Windows 10 editions, education customers
 ms.prod: w10
+ms.technology: Windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
@@ -61,7 +62,7 @@ Customers who deploy Windows 10 Enterprise are able to configure the product to 
 For any other questions, contact [Microsoft Customer Service and Support](https://support.microsoft.com/en-us).
 
 ## Related topics
-* [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md)
+* [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md)
 * [Windows deployment for education](http://aka.ms/edudeploy)
 * [Windows 10 upgrade paths](https://go.microsoft.com/fwlink/?LinkId=822787)
 * [Volume Activation for Windows 10](https://go.microsoft.com/fwlink/?LinkId=822788)

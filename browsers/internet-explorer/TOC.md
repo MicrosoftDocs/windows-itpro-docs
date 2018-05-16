@@ -1,7 +1,11 @@
 #[IE11 Deployment Guide for IT Pros](ie11-deploy-guide/index.md)
+
 ##[Change history for the Internet Explorer 11 (IE11) Deployment Guide](ie11-deploy-guide/change-history-for-internet-explorer-11.md)
+
 ##[System requirements and language support for Internet Explorer 11](ie11-deploy-guide/system-requirements-and-language-support-for-ie11.md)
+
 ##[List of updated features and tools - Internet Explorer 11 (IE11)](ie11-deploy-guide/updated-features-and-tools-with-ie11.md)
+
 ##[Install and Deploy Internet Explorer 11 (IE11)](ie11-deploy-guide/install-and-deploy-ie11.md)
 ###[Customize Internet Explorer 11 installation packages](ie11-deploy-guide/customize-ie11-install-packages.md)
 ####[Using IEAK 11 to create packages](ie11-deploy-guide/using-ieak11-to-create-install-packages.md)
@@ -18,8 +22,11 @@
 ####[Deploy Internet Explorer 11 using Automatic Version Synchronization (AVS)](ie11-deploy-guide/deploy-ie11-using-automatic-version-synchronization-avs.md)
 ####[Deploy Internet Explorer 11 using software distribution tools](ie11-deploy-guide/deploy-ie11-using-software-distribution-tools.md)
 ###[Virtualization and compatibility with Internet Explorer 11](ie11-deploy-guide/virtualization-and-compatibility-with-ie11.md)
+
 ##[Collect data using Enterprise Site Discovery](ie11-deploy-guide/collect-data-using-enterprise-site-discovery.md)
+
 ##[Enterprise Mode for Internet Explorer 11 (IE11)](ie11-deploy-guide/enterprise-mode-overview-for-ie11.md)
+###[Tips and tricks to manage Internet Explorer compatibility](ie11-deploy-guide/tips-and-tricks-to-manage-ie-compatibility.md)
 ###[Enterprise Mode and the Enterprise Mode Site List](ie11-deploy-guide/what-is-enterprise-mode.md)
 ###[Set up Enterprise Mode logging and data collection](ie11-deploy-guide/set-up-enterprise-mode-logging-and-data-collection.md)
 ###[Turn on Enterprise Mode and use a site list](ie11-deploy-guide/turn-on-enterprise-mode-and-use-a-site-list.md)
@@ -57,6 +64,8 @@
 ###[Remove sites from a local Enterprise Mode site list](ie11-deploy-guide/remove-sites-from-a-local-enterprise-mode-site-list.md)
 ###[Remove sites from a local compatibility view list](ie11-deploy-guide/remove-sites-from-a-local-compatibililty-view-list.md)
 ###[Turn off Enterprise Mode](ie11-deploy-guide/turn-off-enterprise-mode.md)
+
+
 ##[Group Policy and Internet Explorer 11 (IE11)](ie11-deploy-guide/group-policy-and-ie11.md)
 ###[Group Policy management tools](ie11-deploy-guide/group-policy-objects-and-ie11.md)
 ####[Group Policy and the Group Policy Management Console (GPMC)](ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11.md)
@@ -71,10 +80,12 @@
 ###[Group policy preferences and Internet Explorer 11](ie11-deploy-guide/group-policy-preferences-and-ie11.md)
 ###[Administrative templates and Internet Explorer 11](ie11-deploy-guide/administrative-templates-and-ie11.md)
 ###[Enable and disable add-ons using administrative templates and group policy](ie11-deploy-guide/enable-and-disable-add-ons-using-administrative-templates-and-group-policy.md)
+
 ##[Manage Internet Explorer 11](ie11-deploy-guide/manage-ie11-overview.md)
 ###[Auto detect settings Internet Explorer 11](ie11-deploy-guide/auto-detect-settings-for-ie11.md)
 ###[Auto configuration settings for Internet Explorer 11](ie11-deploy-guide/auto-configuration-settings-for-ie11.md)
 ###[Auto proxy configuration settings for Internet Explorer 11](ie11-deploy-guide/auto-proxy-configuration-settings-for-ie11.md)
+
 ##[Troubleshoot Internet Explorer 11 (IE11)](ie11-deploy-guide/troubleshoot-ie11.md)
 ###[Setup problems with Internet Explorer 11](ie11-deploy-guide/setup-problems-with-ie11.md)
 ###[Install problems with Internet Explorer 11](ie11-deploy-guide/install-problems-with-ie11.md)
@@ -87,14 +98,27 @@
 ###[Fix font rendering problems by turning off natural metrics](ie11-deploy-guide/turn-off-natural-metrics.md)
 ###[Intranet problems with Internet Explorer 11](ie11-deploy-guide/intranet-problems-and-ie11.md)
 ###[Browser cache changes and roaming profiles](ie11-deploy-guide/browser-cache-changes-and-roaming-profiles.md)
+
 ##[Out-of-date ActiveX control blocking](ie11-deploy-guide/out-of-date-activex-control-blocking.md)
+###[Blocked out-of-date ActiveX controls](ie11-deploy-guide/blocked-out-of-date-activex-controls.md) 
+
 ##[Deprecated document modes and Internet Explorer 11](ie11-deploy-guide/deprecated-document-modes.md)
+
 ##[What is the Internet Explorer 11 Blocker Toolkit?](ie11-deploy-guide/what-is-the-internet-explorer-11-blocker-toolkit.md)
+###[Internet Explorer 11 delivery through automatic updates](ie11-deploy-guide/ie11-delivery-through-automatic-updates.md)
+###[Internet Explorer 11 Blocker Toolkit FAQ](ie11-faq/faq-ie11-blocker-toolkit.md)
+
 ##[Missing Internet Explorer Maintenance settings for Internet Explorer 11](ie11-deploy-guide/missing-internet-explorer-maintenance-settings-for-ie11.md)
+
 ##[Missing the Compatibility View Button](ie11-deploy-guide/missing-the-compatibility-view-button.md)
+
 ##[Deploy pinned websites using Microsoft Deployment Toolkit (MDT) 2013](ie11-deploy-guide/deploy-pinned-sites-using-mdt-2013.md)
+
 #[IE11 Frequently Asked Questions (FAQ) Guide for IT Pros](ie11-faq/faq-for-it-pros-ie11.md)
+
 #[Internet Explorer Administration Kit 11 (IEAK 11) - Administration Guide for IT Pros](ie11-ieak/index.md)
+##[What IEAK can do for you](ie11-ieak/what-ieak-can-do-for-you.md)
+##[Internet Explorer Administration Kit (IEAK) information and downloads](ie11-ieak/ieak-information-and-downloads.md)
 ##[Before you start using IEAK 11](ie11-ieak/before-you-create-custom-pkgs-ieak11.md)
 ###[Hardware and software requirements for IEAK 11](ie11-ieak/hardware-and-software-reqs-ieak11.md)
 ###[Determine the licensing version and features to use in IEAK 11](ie11-ieak/licensing-version-and-features-ieak11.md)
@@ -112,7 +136,9 @@
 ###[Create multiple versions of your custom package using IEAK 11](ie11-ieak/create-multiple-browser-packages-ieak11.md)
 ###[Before you install your package over your network using IEAK 11](ie11-ieak/prep-network-install-with-ieak11.md)
 ###[Use the RSoP snap-in to review policy settings](ie11-ieak/rsop-snapin-for-policy-settings-ieak11.md)
+###[IEAK 11 - Frequently Asked Questions](ie11-faq/faq-ieak11.md)
 ###[Troubleshoot custom package and IEAK 11 problems](ie11-ieak/troubleshooting-custom-browser-pkg-ieak11.md)
+
 ##[Internet Explorer Administration Kit 11 (IEAK 11) Customization Wizard options](ie11-ieak/ieak11-wizard-custom-options.md)
 ###[Use the File Locations page in the IEAK 11 Wizard](ie11-ieak/file-locations-ieak11-wizard.md)
 ###[Use the Platform Selection page in the IEAK 11 Wizard](ie11-ieak/platform-selection-ieak11-wizard.md)
@@ -140,6 +166,7 @@
 ###[Use the Programs page in the IEAK 11 Wizard](ie11-ieak/programs-ieak11-wizard.md)
 ###[Use the Additional Settings page in the IEAK 11 Wizard](ie11-ieak/additional-settings-ieak11-wizard.md)
 ###[Use the Wizard Complete - Next Steps page in the IEAK 11 Wizard](ie11-ieak/wizard-complete-ieak11-wizard.md)
+
 ##[Using Internet Settings (.INS) files with IEAK 11](ie11-ieak/using-internet-settings-ins-files.md)
 ###[Use the Branding .INS file to create custom branding and setup info](ie11-ieak/branding-ins-file-setting.md)
 ###[Use the BrowserToolbars .INS file to customize the Internet Explorer toolbar](ie11-ieak/browsertoolbars-ins-file-setting.md)
@@ -154,6 +181,7 @@
 ###[Use the Proxy .INS file to specify a proxy server](ie11-ieak/proxy-ins-file-setting.md)
 ###[Use the Security Imports .INS file to import security info](ie11-ieak/security-imports-ins-file-setting.md)
 ###[Use the URL .INS file to use an auto-configured proxy server](ie11-ieak/url-ins-file-setting.md)
+
 ##[IExpress Wizard for Windows Server 2008 R2 with SP1](ie11-ieak/iexpress-wizard-for-win-server.md)
 ###[IExpress Wizard command-line options](ie11-ieak/iexpress-command-line-options.md)
 ###[Internet Explorer Setup command-line options and return codes](ie11-ieak/ie-setup-command-line-options-and-return-codes.md)

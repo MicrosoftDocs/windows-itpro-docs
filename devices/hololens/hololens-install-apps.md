@@ -6,6 +6,8 @@ ms.mktglfcycl: manage
 ms.pagetype: hololens, devices
 ms.sitesec: library
 author: jdeckerms
+ms.author: jdecker
+ms.topic: article
 ms.localizationpriority: medium
 ms.date: 12/20/2017
 ---

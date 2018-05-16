@@ -3,12 +3,13 @@ ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Use out-of-date ActiveX control blocking to help you know when IE prevents a webpage from loading outdated ActiveX controls and to update the outdated control, so that it’s safer to use.
-author: eross-msft
+author: shortpatti
+ms.author: pashort
 ms.prod: ie11
 ms.assetid: e61866bb-1ff1-4a8d-96f2-61d3534e8199
 title: Out-of-date ActiveX control blocking (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
-ms.date: 07/27/2017
+ms.date: 05/10/2018
 ---
 
 
@@ -47,7 +48,8 @@ It also works with these operating system and IE combinations:
 |Windows Server 2008 SP2                 |Windows Internet Explorer 9 only |
 |Windows Vista SP2                       |Windows Internet Explorer 9 only |
      
-For more info about this new feature, see the [Internet Explorer begins blocking out-of-date ActiveX controls](https://go.microsoft.com/fwlink/p/?LinkId=507691) blog. To see the complete list of out-of-date Active controls blocked by this feature, see [Blocked out-of-date ActiveX controls](https://go.microsoft.com/fwlink/p/?LinkId=517023).
+For more info about this new feature, see the [Internet Explorer begins blocking out-of-date ActiveX controls](https://go.microsoft.com/fwlink/p/?LinkId=507691) blog. To see the complete list of out-of-date Active controls blocked by this feature, see [Blocked out-of-date ActiveX controls](blocked-out-of-date-activex-controls.md).
+
 
 ## What does the out-of-date ActiveX control blocking notification look like?
 When IE blocks an outdated ActiveX control, you’ll see a notification bar similar to this, depending on your version of IE:
@@ -101,7 +103,7 @@ reg add "HKCU\Software\Microsoft\Internet Explorer\VersionManager" /v DownloadVe
 Turning off this automatic download breaks the out-of-date ActiveX control blocking feature by not letting the version list update with newly outdated controls, potentially compromising the security of your computer. Use this configuration option at your own risk.
 
 ## Out-of-date ActiveX control blocking on managed devices
-Out-of-date ActiveX control blocking includes 4 new Group Policy settings that you can use to manage your web browser configuration, based on your domain controller. You can download the administrative templates, including the new settings, from the [Administrative templates (.admx) for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=746579) page or the [Administrative Templates (.admx) for Windows 8.1 and Windows Server 2012 R2](https://go.microsoft.com/fwlink/p/?LinkId=746580) page, depending on your operating system.
+Out-of-date ActiveX control blocking includes four new Group Policy settings that you can use to manage your web browser configuration, based on your domain controller. You can download the administrative templates, including the new settings, from the [Administrative templates (.admx) for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=746579) page or the [Administrative Templates (.admx) for Windows 8.1 and Windows Server 2012 R2](https://go.microsoft.com/fwlink/p/?LinkId=746580) page, depending on your operating system.
 
 ### Group Policy settings
 Here’s a list of the new Group Policy info, including the settings, location, requirements, and Help text strings. All of these settings can be set in either the Computer Configuration or User Configuration scope, but Computer Configuration takes precedence over User Configuration.

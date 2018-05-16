@@ -5,13 +5,14 @@ keywords: Windows 10 Pro Education in S mode, S mode, system requirements, Overv
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.prod: w10
+ms.technology: Windows
 ms.sitesec: library
 ms.pagetype: edu
 ms.date: 04/30/2018
 author: Mikeblodge
 ---
 
-# Windows 10 Pro in S mode for Education
+# Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode
 
 S mode is an enhanced security mode of Windows 10 – streamlined for security and superior performance. With Windows 10 in S mode, everyone can download and install Microsoft-verified apps from the Microsoft Store for Education – this keep devices running fast and secure day in and day out. 
 
@@ -51,8 +52,8 @@ However, in some limited scenarios, you might need to switch to Windows 10 Educa
 **Switch using the Microsoft Store for Education**<BR>
 There are two switch options available using the Microsoft Store for Education:
 
-Tenant-wide Windows 10 Pro in S mode > Pro EDU in S mode <BR>
-Tenant-wide Windows 10 Pro > Pro EDU
+Tenant-wide Windows 10 Pro in S mode > Pro Education in S mode <BR>
+Tenant-wide Windows 10 Pro > Pro Education
 
 > [!NOTE]
 > To rollback to Windows 10 Pro in S mode, a BMR factory reset must be performed.
@@ -67,6 +68,7 @@ Tenant-wide Windows 10 Pro > Pro EDU
 > There is currently no "bulk-switch" option for devices running Windows 10, version 1803. 
 
 ## Related Topics
+[FAQs](https://support.microsoft.com/en-us/help/4020089/windows-10-in-s-mode-faq)<br>
 [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)<BR> 
 [Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md) <BR>
 [Compare Windows 10 editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)

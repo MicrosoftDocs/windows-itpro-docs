@@ -54,15 +54,17 @@ To enable data sharing, configure your proxy sever to whitelist the following en
 
 
 >[!NOTE]
->If you have SSL Inspection enabled on your proxy server, you might need to add the above URLs to your SSL inspection exclusion list to allow data to reach Microsoft endpoints.
+>Proxy authentation and SSL inspections are frequent challenges for enterprises. See the following sections for configuration options.
 
-### Configuring endpoint access with proxy servers
+### Configuring endpoint access with SSL inspection
+To ensure privacy and data integrity Windows checks for a Microsoft SSL certificate when communicating with the diagnostic data endpoints. Accordingly SSL interception and inspection is not possible. To use Windows Analytics services you should exclude the above endpoints from SSL inspection.
+
+### Configuring endpoint access with proxy server authentication
 If your organization uses proxy server authentication for outbound traffic, use one or more of the following approaches to ensure that the diagnostic data is not blocked by proxy authentication:
 
-- **Best option:** Configure your proxy servers to **not** require proxy authentication for any traffic to the diagnostic data endpoints. In particular, disable SSL inspection. Windows checks for a Microsoft SSL certificate on the site, and this will be stripped and replaced if the proxy performs inspection. This is the most comprehensive solution and it works for all versions of Windows 10.
-- **User proxy authentication:** Alternatively, you can configure devices on the user side. First, update the devices to Windows 10, version 1703 or later. Then, ensure that users of the devices have proxy permission to reach the diagnostic data endpoints. This requires that the devices have console users with proxy permissions, so you couldn't use this method with headless devices.
+- **Best option: Bypass** Configure your proxy servers to **not** require proxy authentication for  traffic to the diagnostic data endpoints. This is the most comprehensive solution and it works for all versions of Windows 10.
+- **User proxy authentication:** Alternatively, you can configure devices to use the logged on user's context for proxy authentication. First, update the devices to Windows 10, version 1703 or later. Then, ensure that users of the devices have proxy permission to reach the diagnostic data endpoints. This requires that the devices have console users with proxy permissions, so you couldn't use this method with headless devices.
 - **Device proxy authentication:** Another option--the most complex--is as follows: First, configure a system level proxy server on the devices. Then, configure these devices to use machine-account-based outbound proxy authentication. Finally, configure proxy servers to allow the machine accounts access to the diagnostic data endpoints. 
-
 
 ## Deploy the compatibility update and related updates
 

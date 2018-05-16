@@ -5178,8 +5178,18 @@
 {
 "source_path": "education/windows/windows-10-pro-to-pro-edu-upgrade.md",
 "redirect_url": "/education/windows/switch-to-pro-education",
+"redirect_document_id": false
+},
+{
+"source_path": "education/windows/switch-to-pro-education.md",
+"redirect_url": "/education/windows/change-to-pro-education",
 "redirect_document_id": true
 },
+{
+    "source_path": "education/windows/swithc-to-pro-de.md",
+    "redirect_url": "/education/windows/switch-to-pro-education",
+    "redirect_document_id": false
+    },
 {
 "source_path": "windows/client-management/mdm/policy-admx-backed.md",
 "redirect_url": "/windows/client-management/mdm/policy-configuration-service-provider",
@@ -6393,6 +6403,11 @@
 {
 "source_path": "windows/configure/configure-devices-without-mdm.md",
 "redirect_url": "/windows/configuration/configure-devices-without-mdm",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/configure-devices-without-mdm.md",
+"redirect_url": "/windows/configuration/provisioning-packages/provisioning-packages",
 "redirect_document_id": true
 },
 {
@@ -13610,8 +13625,61 @@
 "redirect_url": "/windows/security/threat-protection/windows-defender-atp/time-settings-windows-defender-advanced-threat-protection",
 "redirect_document_id": true
 },
-
-
+{
+"source_path": "windows/configuration/basic-level-windows-diagnostic-events-and-fields-1703.md",
+"redirect_url": "/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1703",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/basic-level-windows-diagnostic-events-and-fields-1709.md",
+"redirect_url": "/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1709",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/basic-level-windows-diagnostic-events-and-fields.md",
+"redirect_url": "/windows/privacy/basic-level-windows-diagnostic-events-and-fields",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/configure-windows-diagnostic-data-in-your-organization.md",
+"redirect_url": "/windows/privacy/configure-windows-diagnostic-data-in-your-organization",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/diagnostic-data-viewer-overview.md",
+"redirect_url": "/windows/privacy/diagnostic-data-viewer-overview",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields.md",
+"redirect_url": "/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/gdpr-win10-whitepaper.md",
+"redirect_url": "/windows/privacy/gdpr-win10-whitepaper",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/manage-connections-from-windows-operating-system-components-to-microsoft-services.md",
+"redirect_url": "/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/manage-windows-endpoints-version-1709.md",
+"redirect_url": "/windows/privacy/manage-windows-endpoints",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/windows-diagnostic-data-1703.md",
+"redirect_url": "/windows/privacy/windows-diagnostic-data-1703",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/windows-diagnostic-data.md",
+"redirect_url": "/windows/privacy/windows-diagnostic-data",
+"redirect_document_id": true
+},
 
 ]
 }
