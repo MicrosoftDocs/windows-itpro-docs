@@ -7,6 +7,8 @@ ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: Scottmca
+ms.author: jdecker
+ms.topic: article
 ms.date: 10/16/2017
 ---
 

@@ -5,7 +5,9 @@ ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.localizationpriority: high
-ms.date: 09/19/2017
+ms.date: ''
+ms.author: pashort
+author: shortpatti
 ---
 
 # Change history for Microsoft Edge

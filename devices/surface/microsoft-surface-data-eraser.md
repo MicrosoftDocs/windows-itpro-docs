@@ -10,6 +10,7 @@ ms.pagetype: surface, devices, security
 ms.sitesec: library
 author: brecords
 ms.author: jdecker
+ms.topic: article
 ms.date: 02/12/2018
 ---
 

@@ -8,6 +8,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
 ms.author: jdecker
+ms.topic: article
 ms.date: 04/30/2018
 ---
 
@@ -44,11 +45,16 @@ Avoid selecting Windows apps that are designed to launch other apps as part of t
 
 In Windows 10, version 1803, you can install the **Kiosk Browser** app from Microsoft to use as your kiosk app. For digital signage scenarios, you can configure **Kiosk Browser** to navigate to a URL and show only that content -- no navigation buttons, no address bar, etc. For kiosk scenarios, you can configure additional settings, such as allowed and blocked URLs, navigation buttons, and end session buttons. For example, you could configure your kiosk to show the online catalog for your store, where customers can navigate between departments and items, but aren’t allowed to go to a competitor's website. 
 
+>[!NOTE]
+>Kiosk Browser app is coming soon to Microsoft Store for Business. 
+
 **Kiosk Browser** must be downloaded for offline licensing using Microsoft Store For Business. You can deploy **Kiosk Browser** to devices running Windows 10, version 1803 (Pro, Business, Enterprise, and Education).
 
 1. [Get **Kiosk Browser** in Microsoft Store for Business with offline license type.](https://docs.microsoft.com/microsoft-store/acquire-apps-microsoft-store-for-business#acquire-apps)
 2. [Deploy **Kiosk Browser** to kiosk devices.](https://docs.microsoft.com/microsoft-store/distribute-offline-apps)
 3. Configure policies using settings from the Policy Configuration Service Provider (CSP) for [KioskBrowser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-kioskbrowser). These settings can be configured using your MDM service provider, or [in a provisioning package](provisioning-packages/provisioning-create-package.md).
+
+### Other browsers
 
 >[!NOTE]
 >Microsoft Edge and any third-party web browsers that can be set as a default browser have special permissions beyond that of most Windows apps. Microsoft Edge is not currently supported for assigned access.

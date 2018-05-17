@@ -28,7 +28,7 @@ ms.date: 04/24/2018
 
 During the onboarding process, a wizard takes you through the general settings of Windows Defender ATP. After onboarding, you might want to update the data retention settings.
 
-1. In the navigation pane, select **Settings** > **General** > **Data rention**.
+1. In the navigation pane, select **Settings** > **Data rention**.
 
 2. Select the data retention duration from the drop-down list.
 

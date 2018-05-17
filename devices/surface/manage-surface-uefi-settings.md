@@ -8,6 +8,8 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: devices, surface
 author: miladCA
+ms.author: jdecker
+ms.topic: article
 ms.date: 07/27/2017
 ---
 

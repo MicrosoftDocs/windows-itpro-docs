@@ -3,6 +3,7 @@ title: Windows 10 for Education (Windows 10)
 description: Learn how to use Windows 10 in schools.
 keywords: Windows 10, education
 ms.prod: w10
+ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
@@ -39,7 +40,7 @@ ms.date: 10/13/2017
 
 ## ![Switch to Windows 10 for Education](images/windows.png) Switch
 
-<p><b>[Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md)</b><br />If you have an education tenant and use Windows 10 Pro or Windows 10 S in your schools, find out how you can opt-in to a free switch to Windows 10 Pro Education.</p>
+<p><b>[Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md)</b><br />If you have an education tenant and use Windows 10 Pro or Windows 10 S in your schools, find out how you can opt-in to a free switch to Windows 10 Pro Education.</p>
 
 
 ## Windows 8.1

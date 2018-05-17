@@ -5,6 +5,8 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
+ms.author: jdecker
+ms.topic: article
 ms.date: 02/12/2018
 ---
 

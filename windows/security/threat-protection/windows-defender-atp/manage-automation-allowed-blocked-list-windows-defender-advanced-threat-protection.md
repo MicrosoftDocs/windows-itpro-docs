@@ -36,7 +36,7 @@ Entities added to the blocked list are considered malicious and will be remediat
 You can define the conditions for when entities are identified as malicious or safe based on certain attributes such as hash values or certificates. 
 
 ## Create an allowed or blocked list
-1. In the navigation pane, select **Settings** > **Rules**  > **Automation allowed/blocked list**.  
+1. In the navigation pane, select **Settings** > **Automation allowed/blocked list**.  
 
 2. Select the type of entity you'd like to create an exclusion for. You can choose any of the following entities: 
    - File hash
@@ -52,14 +52,14 @@ You can define the conditions for when entities are identified as malicious or s
 5. Click **Update rule**.
 
 ## Edit a list
-1. In the navigation pane, select **Settings** > **Rules**  > **Automation allowed/blocked list**.  
+1. In the navigation pane, select **Settings** > **Automation allowed/blocked list**.  
 
 2. Select the type of entity you'd like to edit the list from.  
 
 3. Update the details of the rule and click **Update rule**.
 
 ## Delete a list 
-1. In the navigation pane, select **Settings** > **Rules**  > **Automation allowed/blocked list**.  
+1. In the navigation pane, select **Settings** > **Automation allowed/blocked list**.  
 
 2. Select the type of entity you'd like to delete the list from.
 

@@ -49,7 +49,7 @@ You can use existing System Center Configuration Manager functionality to create
 
 1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
+    a. In the navigation pane, select **Settings** > **Onboarding**.
     
     b. Select Windows 10 as the operating system.
 
@@ -127,7 +127,7 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a. In the navigation pane, select **Settings** > **Machine management** >  **Offboarding**.
+    a. In the navigation pane, select **Settings** >  **Offboarding**.
 
     b. Select Windows 10 as the operating system.
 

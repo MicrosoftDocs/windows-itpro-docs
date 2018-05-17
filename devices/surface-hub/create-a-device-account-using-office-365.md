@@ -9,7 +9,8 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 10/20/2017
+ms.topic: article
+ms.date: 05/04/2018
 ms.localizationpriority: medium
 ---
 
@@ -68,21 +69,7 @@ If you prefer to use a graphical user interface, you can create a device account
 
     ![Image with new mobile device mailbox policy in Exchange admin center.](images/setupdeviceaccto365-12.png)
 
-6.  Now, to apply the ActiveSync policy without using PowerShell, you can do the following: In the EAC, click **Recipients** &gt; **Mailboxes** and then select a mailbox.
 
-    ![Image showing mailbox in Exchange admin center.](images/setupdeviceaccto365-13.png)
-
-7.  In the Details pane, scroll to **Phone and Voice Features** and click **View details** to display the **Mobile Device Details** screen.
-
-    ![Image showing mobile device details for the mailbox.](images/setupdeviceaccto365-14.png)
-
-8.  The mobile device mailbox policy that’s currently assigned is displayed. To change the mobile device mailbox policy, click **Browse**.
-
-    ![Image with details for the mobile device policy.](images/setupdeviceaccto365-15.png)
-
-9.  Choose the appropriate mobile device mailbox policy from the list, click **OK** and then click **Save**.
-
-    ![Image showing multiple mobile device mailbox policies.](images/setupdeviceaccto365-16.png)
 
 ### <a href="" id="create-device-acct-o365-complete-acct"></a>Use PowerShell to complete device account creation
 
@@ -152,19 +139,19 @@ Now that you're connected to the online services, you can finish setting up the 
 
 1.  You’ll need to enter the account’s mail address and create a variable with that value:
 
-    ``` syntax
+    ```powershell 
     $mailbox = (Get-Mailbox <your device account’s alias>)
     ```
 
     To store the value get it from the mailbox:
 
-    ``` syntax
+    ```powershell 
     $strEmail = $mailbox.WindowsEmailAddress
     ```
 
     Print the value:
 
-    ``` syntax
+    ```powershell 
     $strEmail
     ```
 
@@ -172,7 +159,11 @@ Now that you're connected to the online services, you can finish setting up the 
 
     ![Image showing PowerShell cmdlet.](images/setupdeviceaccto365-23.png)
 
+2. Run the following cmdlet:
 
+    ```powershell
+    Set-CASMailbox $strEmail  -ActiveSyncMailboxPolicy "SurfaceHubDeviceMobilePolicy" 
+    ```
 
 4.  Various Exchange properties can be set on the device account to improve the meeting experience. You can see which properties need to be set in the [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md) section.
 
@@ -244,7 +235,8 @@ You can use the Exchange Admin Center to create a device account:
 
 ### <a href="" id="create-device-acct-exch-mbx-policy"></a>Create a mobile device mailbox policy from the Exchange Admin Center
 
->**Note**  If you want to create and assign a policy to the account you created, and are using Exchange 2010, look up the corresponding information regarding policy creation and policy assignment when using the EMC (Exchange management console).
+>[!NOTE]
+>If you want to create and assign a policy to the account you created, and are using Exchange 2010, look up the corresponding information regarding policy creation and policy assignment when using the EMC (Exchange management console).
 
  
 
@@ -310,7 +302,7 @@ Now that you're connected to the online services, you can finish setting up the 
 
     You will see the correct email address.
 
-2.  You need to convert the account into to a room mailbox, so run:
+2.  You need to convert the account into a room mailbox, so run:
 
     ``` syntax
     Set-Mailbox $strEmail -Type Room

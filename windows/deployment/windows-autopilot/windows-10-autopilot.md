@@ -7,9 +7,9 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.sitesec: library
 ms.pagetype: deploy
-author: DaniHalfin
-ms.author: daniha
-ms.date: 12/13/2017
+author: coreyp-at-msft
+ms.author: coreyp
+ms.date: 05/09/2018
 ---
 
 # Overview of Windows Autopilot
@@ -20,6 +20,11 @@ ms.date: 12/13/2017
 
 Windows Autopilot is a collection of technologies used to set up and pre-configure new devices, getting them ready for productive use. In addition, you can use Windows Autopilot to reset, repurpose and recover devices.</br>
 This solution enables an IT department to achieve the above with little to no infrastructure to manage, with a process that's easy and simple.
+
+The following video shows the process of setting up Autopilot:
+
+</br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KYVptkpsOqs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
 
 ## Benefits of Windows Autopilot
 
@@ -69,7 +74,7 @@ MDM enrollment ensures policies are applied, apps are installed and setting are 
 
 #### Device registration and OOBE customization
 
-In order to register devices, you will need to acquire their hardware ID and register it. We are actively working with various hardware vendors to enable them to provide the required information to you, or upload it on your behalf. 
+To register devices, you will need to acquire their hardware ID and register it. We are actively working with various hardware vendors to enable them to provide the required information to you, or upload it on your behalf. 
 
 If you would like to capture that information by yourself, you can use the [Get-WindowsAutopilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutopilotInfo), which will generate a .csv file with the device's hardware ID.
 

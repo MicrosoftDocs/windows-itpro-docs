@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 author: jsuther1974
-ms.date: 02/27/2018
+ms.date: 05/16/2018
 ---
 
 # Planning and getting started on the Windows Defender Application Control deployment process
@@ -60,5 +60,25 @@ This topic provides a roadmap for planning and getting started on the Windows De
 
 8.  Enable desired virtualization-based security (VBS) features. Hardware-based security features—also called virtualization-based security (VBS) features—strengthen the protections offered by Windows Defender Application Control. 
 
-    > [!WARNING]
-    >  Virtualization-based protection of code integrity may be incompatible with some devices and applications. We strongly recommend testing this configuration in your lab before enabling virtualization-based protection of code integrity on production systems. Failure to do so may result in unexpected failures up to and including data loss or a blue screen error (also called a stop error).
+## Known issues
+
+This section covers known issues with WDAC and Device Guard. Virtualization-based protection of code integrity may be incompatible with some devices and applications, which might cause unexpected failures, data loss, or a blue screen error (also called a stop error). 
+Test this configuration in your lab before enabling it in production. 
+
+### MSI Installations are blocked by WDAC
+
+Installing .msi files directly from the internet to a computer protected by WDAC will fail. 
+For example, this command will not work:
+ 
+```code
+msiexec –i https://download.microsoft.com/download/2/E/3/2E3A1E42-8F50-4396-9E7E-76209EA4F429/Windows10_Version_1511_ADMX.msi
+``` 
+
+As a workaround, download the MSI file and run it locally: 
+
+ 
+```code
+msiexec –i c:\temp\Windows10_Version_1511_ADMX.msi  
+```
+
+
