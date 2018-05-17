@@ -59,7 +59,7 @@ For a limited time, users can also [Get Microsoft Layout from the Microsoft Stor
 
 ### Get and deploy the Import Tool for Microsoft Layout
 
-The **Import tool for Microsoft Layout** is a companion app for Layout that makes model optimization and management easy. The Import Tool runs on Windows 10 PCs, and is required to transfer existing 3D models from your PC to Microsoft Layout, for viewing and editing on Microsoft HoloLens or a Windows Mixed Reality headset.
+The **Import Tool for Microsoft Layout** is a companion app for Layout that makes model optimization and management easy. The Import Tool runs on Windows 10 PCs, and is required to transfer existing 3D models from your PC to Microsoft Layout, for viewing and editing on Microsoft HoloLens or a Windows Mixed Reality headset.
 
 The companion app is available in both the Microsoft Store for Business, and the Microsoft Store, for free for a limited time:
 
