@@ -11,14 +11,15 @@
 
 ## [Windows Defender Application Control deployment guide](windows-defender-application-control-deployment-guide.md)
 ### [Types of devices](types-of-devices.md)
-### [Use WDAC with a managed installer](use-windows-defender-application-control-with-managed-installer.md)
 ###Use WDAC with custom policies
 #### [Create an initial default policy](create-initial-default-policy.md)
 #### [Microsoft recommended block rules](microsoft-recommended-block-rules.md)
 ### [Audit WDAC policies](audit-windows-defender-application-control-policies.md)
 ### [Merge WDAC policies](merge-windows-defender-application-control-policies.md)
 ### [Enforce WDAC policies](enforce-windows-defender-application-control-policies.md)
-### [Deploy WDAC policies](deploy-windows-defender-application-control-policies-using-group-policy.md)
+### [Deploy WDAC with a managed installer](use-windows-defender-application-control-with-managed-installer.md)
+### [Deploy WDAC policies using Group Policy](deploy-windows-defender-application-control-policies-using-group-policy.md)
+### [Deploy WDAC policies using Intune](deploy-windows-defender-application-control-policies-using-intune.md)
 ### [Use code signing to simplify application control for classic Windows applications](use-code-signing-to-simplify-application-control-for-classic-windows-applications.md)
 #### [Optional: Use the Device Guard Signing Portal in the Microsoft Store for Business](use-device-guard-signing-portal-in-microsoft-store-for-business.md)
 #### [Optional: Create a code signing cert for WDAC](create-code-signing-cert-for-windows-defender-application-control.md)
