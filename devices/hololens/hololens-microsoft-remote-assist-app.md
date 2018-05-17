@@ -24,8 +24,8 @@ Below are the technical requirements to deploy and use Microsoft Remote Assist t
 | Device                     | OS requirements                   | Details                                                    |
 |:---------------------------|:----------------------------------|:-----------------------------------------------------------|
 | HoloLens                   | Build 10.0.14393.0 or above  | See [Manage updates to HoloLens](https://docs.microsoft.com/en-us/HoloLens/hololens-updates) for instructions on using Windows Update for Business, MDM, and Windows Server Update Service (WSUS) to deploy updates to HoloLens.   |
-| Windows 10 PC (optional)   | Any Windows 10 build              | You can use a Windows 10 PC to collaborate with the HoloLens. |
-| Mobile device (optional)   | Android or iOS                    | You can use a mobile device to collaborate with the HoloLens. Inking, annotations, and image insertion are not currently available on mobile.                        |
+| Windows 10 PC (optional)   | Any Windows 10 build              | A Windows 10 PC can collaborate with the HoloLens using Microsoft Teams. |
+| Mobile device (optional)   | Android or iOS                    | A mobile device can collaborate with the HoloLens using Microsoft Teams. Inking, annotations, and image insertion are not currently available on mobile.                        |
 
 > [!Note]
 > HoloLens build 10.0.14393.0 is the minimum that supports Remote Assist. We recommend updating the HoloLens to newer versions when they are available.
