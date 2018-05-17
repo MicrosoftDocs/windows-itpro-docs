@@ -297,8 +297,6 @@ The following is a sample plug-in VPN profile. This blob would fall under the Pr
 
 After you configure the settings that you want using ProfileXML, you can apply it using Intune and a **Custom Configuration (Windows 10 Desktop and Mobile and later)** policy.
 
-![Custom VPN Profile](images/custom-vpn-profile.png)
-
 1. Sign into the Azure portal.
 2. Go to **Intune** > **Device Configuration** > **Profiles**.
 3. Click **Create Profile**.
@@ -315,6 +313,7 @@ After you configure the settings that you want using ProfileXML, you can apply i
 9. Click **OK**, then click **Create**.
 10.	Assign the profile.
 
+![Custom VPN Profile](images/custom-vpn-profile.png)
 
 ## Learn more
 
