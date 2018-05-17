@@ -23,9 +23,11 @@ You can use Microsoft Intune to configure Windows Defender Application Control (
 
 3. Type a name for the new profile, select **Windows 10 and later** as the **Platform** and **Endpoint protection** as the **Profile type**.  
 
-   ![Select platform](images\wdac-intune-create-profile-name.png)
+   ![Configure profile](images\wdac-intune-create-profile-name.png)
 
 4. Click **Configure** > **Windows Defender Application Control**.  for the following settings and then click **OK**:
 
    - **Application control code intergity policies**: Select **Audit only** to log events but not block any apps from running or select **Enforce** to allow only Windows components and Store apps to run.  
    - **Trust apps with good reputation**: Select **Enable** to allow reputable apps as defined by the Intelligent Security Graph to run in addition to Windows components and Store apps.
+
+   ![Configure WDAC](images\wdac-intune-wdac-settings.png)
