@@ -37,10 +37,10 @@ The following table lists the VPN settings and whether the setting can be config
 | Name resolution: persistent | no |
 | Auto-trigger: app trigger | yes |
 | Auto-trigger: name trigger | yes |
-| Auto-trigger: Always On | no |
+| Auto-trigger: Always On | yes |
 | Auto-trigger: trusted network detection | no |
 | LockDown | no |
-| Windows Information Protection (WIP) | no |
+| Windows Information Protection (WIP) | yes |
 | Traffic filters | yes |
 
 The ProfileXML node was added to the VPNv2 CSP to allow users to deploy VPN profile as a single blob. This is particularly useful for deploying profiles with features that are not yet supported by MDMs. You can get additional examples in the [ProfileXML XSD](https://msdn.microsoft.com/library/windows/hardware/mt755930.aspx) topic.
