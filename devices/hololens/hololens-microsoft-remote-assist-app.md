@@ -61,3 +61,7 @@ For a limited time, users can also [Get Microsoft Remote Assist from the Microso
 ## Use Microsoft Remote Assist
 
 For guidance on using the features of the Microsoft Remote Assist app, please see [Set up and use Microsoft Remote Assist](https://support.microsoft.com/en-us/help/4294812).
+
+## Questions and support
+
+You can ask questions and engage with our team in the [Mixed Reality Tech Community](https://techcommunity.microsoft.com/t5/Mixed-Reality/ct-p/MixedReality).
