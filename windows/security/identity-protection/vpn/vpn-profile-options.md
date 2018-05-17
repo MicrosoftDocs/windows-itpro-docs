@@ -297,24 +297,23 @@ The following is a sample plug-in VPN profile. This blob would fall under the Pr
 
 After you configure the settings that you want using ProfileXML, you can apply it using Intune and a **Custom Configuration (Windows 10 Desktop and Mobile and later)** policy.
 
-![Custom VPN Profile](images/custom-vpn-profile.png)
-
-1.	Sign into the Azure portal.
-2.	Go to **Intune** > **Device Configuration** > **Profiles**.
-3.	Click **Create Profile**.
-4.	Enter a name and (optionally) a description.
-5.	Choose **Windows 10 and later** as the platform.
-6.	Choose **Custom** as the profile type.
-7.	Click **Add**.
-8.	Configure the custom setting:
-    a.	Enter a name and (optionally) a description.
-    b.	Enter the OMA-URI: **./user/vendor/MSFT/_VPN profile name_/ProfileXML**.
-    c.	Set Data type to **String (XML file)**.
-    d.	Upload the file with the profile XML.
-    e.	Click **OK**.
-    9.	Click **OK**, then click **Create**.
+1. Sign into the Azure portal.
+2. Go to **Intune** > **Device Configuration** > **Profiles**.
+3. Click **Create Profile**.
+4. Enter a name and (optionally) a description.
+5. Choose **Windows 10 and later** as the platform.
+6. Choose **Custom** as the profile type.
+7. Click **Add**.
+8. Configure the custom setting:
+    a. Enter a name and (optionally) a description.
+    b. Enter the OMA-URI: **./user/vendor/MSFT/_VPN profile name_/ProfileXML**.
+    c. Set Data type to **String (XML file)**.
+    d. Upload the file with the profile XML.
+    e. Click **OK**.
+9. Click **OK**, then click **Create**.
 10.	Assign the profile.
 
+![Custom VPN Profile](images/custom-vpn-profile.png)
 
 ## Learn more
 
