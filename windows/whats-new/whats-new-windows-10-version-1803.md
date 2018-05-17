@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
-ms.date: 05/09/2018
+ms.date: 05/10/2018
 ms.localizationpriority: high
 ---
 
@@ -15,9 +15,11 @@ ms.localizationpriority: high
 **Applies to**
 -   Windows 10, version 1803
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10 version 1803, also known as the Windows 10 April 2018 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1709. Also see [What's New in Windows](https://docs.microsoft.com/en-us/windows-hardware/get-started/what-s-new-in-windows) hardware.
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10 version 1803, also known as the Windows 10 April 2018 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1709. 
 
-The following 3-minute video summarizes some of the new features that are available in this release.
+>If you are not an IT Pro, see the following topics for information about what's new in Windows 10, version 1803 in [hardware](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows), for [developers](https://docs.microsoft.com/windows/uwp/whats-new/windows-10-build-17134), and for [consumers](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update).
+
+The following 3-minute video summarizes some of the new features that are available for IT Pros in this release.
 
 &nbsp;
 
