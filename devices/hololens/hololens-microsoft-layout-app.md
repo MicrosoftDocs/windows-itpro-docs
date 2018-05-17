@@ -65,3 +65,7 @@ The companion app is available in both the Microsoft Store for Business, and the
 
 1. [Get the Microsoft Layout Import Tool](https://businessstore.microsoft.com/en-us/store/details/app/9N88Q3RXPLP0) from the Microsoft Store for Business. See [Install apps on HoloLens](hololens-install-apps.md) for instructions on using the Microsoft Store for Business, and/or MDM, to deploy HoloLens apps throughout your organization.
 1. Alternately, have your users [Get the Microsoft Layout Import Tool](https://www.microsoft.com/store/productId/9N88Q3RXPLP0) from the Microsoft Store to install the app on their device device.
+
+## Use Microsoft Layout
+
+For guidance on using the features of the Microsoft Layout app, please see [Set up and use Microsoft Layout](https://support.microsoft.com/help/4294437).

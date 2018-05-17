@@ -48,6 +48,16 @@ Below are the technical requirements to deploy and use Microsoft Remote Assist t
 
 See [Preparing your organization's network for Microsoft Teams](https://docs.microsoft.com/en-us/MicrosoftTeams/prepare-network) to learn more.
 
-## Get Microsoft Remote Assist
+## Get and deploy Microsoft Remote Assist
 
-## Distribute Microsoft Remote Assist throughout your organization
+Microsoft Remote Assist is available from the Microsoft Store for Business for free for a limited time:
+
+1. Go to the [Microsoft Remote Assist](https://businessstore.microsoft.com/en-us/store/details/app/9PPJSDMD680S) app in the Microsoft Store for Business.
+1. Click **Get the app**. Microsoft Remote Assist is added to the **Products and Services** tab for your private store.
+1. Users can open the **Products and Services** tab to install the app to their device, or you can deploy the app throughout your organization using MDM. See [Install apps on HoloLens](hololens-install-apps.md) for further instructions on deploying apps.
+
+For a limited time, users can also [Get Microsoft Remote Assist from the Microsoft Store](https://www.microsoft.com/store/productId/9PPJSDMD680S) for free.
+
+## Use Microsoft Remote Assist
+
+For guidance on using the features of the Microsoft Remote Assist app, please see [Set up and use Microsoft Remote Assist](https://support.microsoft.com/en-us/help/4294812).
