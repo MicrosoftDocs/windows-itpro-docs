@@ -6,8 +6,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: jsuther1974
-ms.date: 02/28/2018
+author: justinha
+ms.date: 05/17/2018
 ---
 
 # Deploy Windows Defender Application Control policies by using Microsoft Intune
@@ -17,7 +17,7 @@ ms.date: 02/28/2018
 -   Windows 10
 -   Windows Server 2016
 
-You can apply Windows Defender Application Control (WDAC) to Windows 10 client computers using Microsoft Intune.
+You can use Microsoft Intune to configure Windows Defender Application Control (WDAC). You can configure Windows 10 client computers to only run Windows components and Microsoft Store apps, or let them also run reputable apps defined by the Intelligent Security Graph.   
 
 1. Open the Microsoft Intune portal and click **Device configuration** > **Profiles** > **Creae profile**.
 
@@ -27,5 +27,5 @@ You can apply Windows Defender Application Control (WDAC) to Windows 10 client c
 
 4. Click **Configure** > **Windows Defender Application Control**.  for the following settings and then click **OK**:
 
-   - **Application control code intergity policies**: Select **Audit only** to log events but not block any apps from running or select **Enforce** to allow only Windows components and Microsoft Store apps to run.  
+   - **Application control code intergity policies**: Select **Audit only** to log events but not block any apps from running or select **Enforce** to allow only Windows components and Store apps to run.  
    - **Trust apps with good reputation**: Select **Enable** to allow reputable apps as defined by the Intelligent Security Graph to run in addition to Windows components and Store apps.
