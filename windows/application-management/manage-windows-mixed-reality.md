@@ -44,7 +44,7 @@ Organizations that use Windows Server Update Services (WSUS) must take action to
 
     ```
     Add-Package
-    Dism /Online /add-windowspackage <cab>
+    Dism /Online /add-package /packagepath:(path)
     ```
 
   c. In **Settings** > **Update & Security** > **Windows Update**, select **Check for updates**.
