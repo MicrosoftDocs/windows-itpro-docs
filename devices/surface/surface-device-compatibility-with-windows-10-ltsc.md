@@ -35,8 +35,7 @@ The LTSC servicing option is designed for device types and scenarios where the k
 >[!NOTE]
 >For general information about Windows servicing branches, including LTSC, see [Overview of Windows as a service](https://technet.microsoft.com/itpro/windows/update/waas-overview#long-term-servicing-branch).
 
->[!NOTE]
->As a general guideline, devices that fulfill the following criteria are considered general-purpose devices and should be paired with Windows 10 Pro or Windows 10 Enterprise using the Semi-Annual Channel servicing option:
+As a general guideline, devices that fulfill the following criteria are considered general-purpose devices and should be paired with Windows 10 Pro or Windows 10 Enterprise using the Semi-Annual Channel servicing option:
 
 * Devices that run productivity software such as Microsoft Office
 
