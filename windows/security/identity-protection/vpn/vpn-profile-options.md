@@ -315,7 +315,6 @@ After you configure the settings that you want using ProfileXML, you can apply i
 10.	Assign the profile.
 
 
-
 ## Learn more
 
 - [Learn how to configure VPN connections in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/vpn-connections-in-microsoft-intune)
