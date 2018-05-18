@@ -309,7 +309,8 @@ After you configure the settings that you want using ProfileXML, you can apply i
     b.	Enter the OMA-URI: **./user/vendor/MSFT/_VPN profile name_/ProfileXML**.
     c.	Set Data type to **String (XML file)**.
     d.	Upload the file with the profile XML.
-    e.	Click **OK**.<p>![Custom VPN Profile](images/custom-vpn-profile.png)
+    e.	Click **OK**.
+    ![Custom VPN Profile](images/custom-vpn-profile.png)
 9.	Click **OK**, then click **Create**.
 10.	Assign the profile.
 
