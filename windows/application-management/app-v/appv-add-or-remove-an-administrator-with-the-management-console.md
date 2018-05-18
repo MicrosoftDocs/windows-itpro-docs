@@ -22,7 +22,7 @@ Use the following procedures to add or remove an administrator on the Microsoft 
 
 ## Remove an administrator using the Management Console
 
-1. Open the Microsoft Application Virtualization (App-V) Management Console and click **Administrators** in the navigation pane. The navigation pane displays a list of AD users and groups that currently have administrative access to the Microsoft Application Virtualization (App-V) server.
+1. Open the Microsoft Application Virtualization (App-V) Management Console and select **Administrators** in the navigation pane. The navigation pane displays a list of AD users and groups that currently have administrative access to the Microsoft Application Virtualization (App-V) server.
 2. Right-click the account to be removed from the list of administrators and select **Remove**.
 
 ## Have a suggestion for App-V?

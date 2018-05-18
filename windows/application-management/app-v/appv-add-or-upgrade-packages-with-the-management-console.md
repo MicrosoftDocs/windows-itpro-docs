@@ -24,14 +24,14 @@ You can use the following procedure to add or upgrade a package to the App-V Man
 
 2. Select **Add or Upgrade Packages** to specify which package you want to add.
 
-3. Enter the full path to the package that you want to add. Use the UNC or HTTP path format, for example **\\\\servername\\sharename\\foldername\\packagename.appv** or **http<span></span>://server.1234/file.appv**, and then click **Add**.
+3. Enter the full path to the package that you want to add. Use the UNC or HTTP path format, for example **\\\\servername\\sharename\\foldername\\packagename.appv** or **http<span></span>://server.1234/file.appv**, and then select **Add**.
 
     >[!IMPORTANT]
     >You must select a package with the **.appv** file name extension.
 
 4. The page displays the status message **Adding &lt;Packagename&gt;**. Select **IMPORT STATUS** to check the status of a package that you have imported.
 
-    Click **OK** to add the package and close the **Add Package** page. If there was an error during the import, select **Detail** on the **Package Import** page for more information. The newly added package is now available in the **PACKAGES** pane.
+    Select **OK** to add the package and close the **Add Package** page. If there was an error during the import, select **Detail** on the **Package Import** page for more information. The newly added package is now available in the **PACKAGES** pane.
 
 5. Select **Close** to close the **Add or Upgrade Packages** page.
 

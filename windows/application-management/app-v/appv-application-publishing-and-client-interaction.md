@@ -387,11 +387,11 @@ The process then configures the client for package or connection group additions
 
     5. Create the machine catalog entries. Create the **Manifest.xml** and **DeploymentConfiguration.xml** from the package files (if no **DeploymentConfiguration.xml** file in the package a placeholder is created).
 
-    6. Create location of the package store in the registry HKLM\\Software\\Microsoft\\AppV\\Client\\Packages\\PkgGUID\\Versions\\VerGUID\\Catalog
+    6. Create location of the package store in the registry **HKLM\\Software\\Microsoft\\AppV\\Client\\Packages\\PkgGUID\\Versions\\VerGUID\\Catalog**.
 
-    7. Create the **Registry.dat** file from the package store to **%ProgramData%\\Microsoft\\AppV\\Client\\VReg\\{VersionGUID}.dat**
+    7. Create the **Registry.dat** file from the package store to **%ProgramData%\\Microsoft\\AppV\\Client\\VReg\\{VersionGUID}.dat**.
 
-    8. Register the package with the App-V Kernal Mode Driver at HKLM\\Microsoft\\Software\\AppV\\MAV
+    8. Register the package with the App-V Kernal Mode Driver at **HKLM\\Microsoft\\Software\\AppV\\MAV**.
 
     9. Invoke scripting from the **AppxManifest.xml** or **DeploymentConfig.xml** file for Package Add timing.
 
@@ -425,7 +425,7 @@ During the Publishing Refresh operation, the specific publishing operation, **Pu
 
     2. Machine targeted (global) packages: the **UserDeploymentConfiguration.xml** is placed in the Machine Catalog.
 
-2. Register the package with the kernel mode driver for the user at HKLM\\Software\\Microsoft\\AppV\\MAV
+2. Register the package with the kernel mode driver for the user at **HKLM\\Software\\Microsoft\\AppV\\MAV**.
 
 3. Perform integration tasks.
 
@@ -448,7 +448,7 @@ After the Publishing Refresh process, the user launches and then relaunches an A
 
 #### How to launch App-V applications
 
-1. User launches the application by clicking on a shortcut or file type invocation.
+1. User launches the application by selecting a shortcut or file type invocation.
 
 2. The App-V Client verifies existence in the User Catalog for the following files
 
@@ -477,11 +477,11 @@ The current version of App-V's package upgrade process differs from the older ve
 
 2. Package entries are added to the appropriate catalog for the new version
 
-    1. User targeted packages: the **UserDeploymentConfiguration.xml** and **UserManifest.xml** are placed on the machine in the user catalog at appdata\\roaming\\Microsoft\\AppV\\Client\\Catalog\\Packages\\PkgGUID\\VerGUID
+    1. User targeted packages: the **UserDeploymentConfiguration.xml** and **UserManifest.xml** are placed on the machine in the user catalog at **appdata\\roaming\\Microsoft\\AppV\\Client\\Catalog\\Packages\\PkgGUID\\VerGUID**.
 
-    2. Machine targeted (global) packages: the **UserDeploymentConfiguration.xml** is placed in the machine catalog at %programdata%\\Microsoft\\AppV\\Client\\Catalog\\Packages\\PkgGUID\\VerGUID
+    2. Machine targeted (global) packages: the **UserDeploymentConfiguration.xml** is placed in the machine catalog at **%programdata%\\Microsoft\\AppV\\Client\\Catalog\\Packages\\PkgGUID\\VerGUID**.
 
-3. Register the package with the kernel mode driver for the user at HKLM\\Software\\Microsoft\\AppV\\MAV
+3. Register the package with the kernel mode driver for the user at **HKLM\\Software\\Microsoft\\AppV\\MAV**.
 
 4. Perform integration tasks.
 
@@ -536,11 +536,11 @@ App-V Packages can be published in one of two ways; as user, which entitles an A
 
 ### Removing an App-V package
 
-Removing App-V applications in a Full Infrastructure is an unpublish operation, and does not perform a package removal. The process is the same as the publish process above, but instead of adding the removal process reverses the changes that have been made for App-V Packages.
+Removing App-V applications in a Full Infrastructure is an unpublish operation and does not perform a package removal. The process is the same as the publish process above, but instead of adding the removal process reverses the changes that have been made for App-V Packages.
 
 ### Repairing an App-V package
 
-The repair operation is easy to do, but may affect many locations on the machine. The previously mentioned Copy on Write (COW) locations are removed, and extension points are deintegrated and then reintegrated. Before repairing, please review where the COW data placement locations are registered in the registry. To perform a Repair operation, all you need to do is initiate it from the App-V Client Console or through the **Repair-AppVClientPackage** PowerShell cmdlet. After that, the operation is completed automatically.
+The repair operation is easy to do but may affect many locations on the machine. The previously mentioned Copy on Write (COW) locations are removed, and extension points are deintegrated and then reintegrated. Before repairing, please review where the COW data placement locations are registered in the registry. To perform a Repair operation, all you need to do is initiate it from the App-V Client Console or through the **Repair-AppVClientPackage** PowerShell cmdlet. After that, the operation is completed automatically.
 
 ## Integration of App-V packages
 
@@ -560,7 +560,7 @@ When App-V applications are published to a computer with the App-V Client, some 
 
     1. App-V packages are given ownership based on the last integrated package where the ownership is passed to the newest published App-V application.
     2. Ownership transfers from one App-V package to another when the owning App-V package is unpublished. This will not initiate a restore of the data or registry.
-    3. Restore the backed up data when the last package is unpublished or removed on a per extension point basis.
+    3. Restore the backed-up data when the last package is unpublished or removed on a per-extension point basis.
 
 ### Extension points
 
@@ -580,7 +580,7 @@ The App-V publishing files (manifest and dynamic configuration) provide several 
 
 The shortcut is one of the basic elements of integration with the OS and is the interface for direct user launch of an App-V application. During the publishing and unpublishing of App-V applications.
 
-From the package manifest and dynamic configuration XML files, the path to a specific application executable can be found in a section similar to the following:
+From the package manifest and dynamic configuration XML files, the path to a specific application executable can be found in a section like the following:
 
 ```XML
 <Extension Category="AppV.Shortcut">
@@ -652,7 +652,7 @@ Shell extensions are embedded in the package automatically during the sequencing
 #### Requirements for using shell extensions
 
 - Packages that contain embedded shell extensions must be published globally.
-- The “bitness” of the application, Sequencer, and App-V Client must match, or the shell extensions won’t work. The following example configuration fuflills the matching requirement:
+- The “bitness” of the application, Sequencer, and App-V Client must match, or the shell extensions won’t work. The following example configuration fulfills the matching requirement:
   - The version of the application is 64-bit.
   - The Sequencer is running on a 64-bit computer.
   - The package is being delivered to a 64-bit App-V Client computer.
@@ -663,7 +663,7 @@ The following table displays the supported shell extensions.
 |---|---|
 | Context menu handler | Adds menu items to the context menu. It is called before the context menu is displayed. |
 | Drag-and-drop handler | Controls the action upon right-click drag-and-drop and modifies the context menu that appears. |
-| Drop target handler | Controls the action after a data object is dragged-and-dropped over a drop target such as a file.|
+| Drop target handler | Controls the action after a data object is dragged-and-dropped over a drop target, such as a file.|
 | Data object handler| Controls the action after a file is copied to the clipboard or dragged-and-dropped over a drop target. It can provide additional clipboard formats to the drop target.|
 | Property sheet handler| Replaces or adds pages to the property sheet dialog box of an object.|
 | Infotip handler| Allows retrieving flags and infotip information for an item and displaying it inside a popup tooltip upon mouse-hover.|
@@ -744,11 +744,11 @@ The AppPath extension point is configured either in the manifest or in the dynam
 
 ### Virtual application
 
-This subsystem provides a list of applications captured during sequencing which is usually consumed by other App-V components. Integration of extension points belonging to a particular application can be disabled using dynamic configuration files. For example, if a package contains two applications, you can disable all extension points belonging to one application to only allow integration of extension points for the other application.
+This subsystem provides a list of applications captured during sequencing which is usually consumed by other App-V components. Integration of extension points belonging to a specific application can be disabled using dynamic configuration files. For example, if a package contains two applications, you can disable all extension points belonging to one application to only allow integration of extension points for the other application.
 
 ### Extension point rules
 
-The previously described extension points are integrated into the operating system based on how the packages has been published. Global publishing places extension points in public machine locations, where user publishing places extension points in user locations. For example a shortcut that is created on the desktop and published globally will result in the file data for the shortcut (%Public%\\Desktop) and the registry data (HKLM\\Software\\Classes). The same shortcut would have file data (%UserProfile%\\Desktop) and registry data (HKCU\\Software\\Classes).
+The previously described extension points are integrated into the operating system based on how the packages has been published. Global publishing places extension points in public machine locations, where user publishing places extension points in user locations. For example, a shortcut created on the desktop and published globally will result in the file data for the shortcut (%Public%\\Desktop) and the registry data (HKLM\\Software\\Classes). The same shortcut would have file data (%UserProfile%\\Desktop) and registry data (HKCU\\Software\\Classes).
 
 Extension points are not all published the same way, where some extension points will require global publishing and others require sequencing on the specific operating system and architecture where they are delivered. Below is a table that describes these two key rules.
 
