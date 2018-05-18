@@ -14,14 +14,14 @@ ms.date: 4/30/2018
 
 # Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge
 
-> Applies to: Windows 10, Windows 10 Mobile
+> Applies to: Windows 10, Windows 10 Mobile
 
 Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings. Group Policy objects (GPOs) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences.
 
 By using Group Policy and Intune, you can set up a policy setting once, and then copy that setting onto many computers. For example, you can set up multiple security settings in a GPO that is linked to a domain, and then apply all of those settings to every computer in the domain.
 
 > [!NOTE]
-> For more info about the tools you can use to change your Group Policy objects, see the Internet Explorer 11 topics, [Group Policy and the Group Policy Management Console (GPMC)](https://go.microsoft.com/fwlink/p/?LinkId=617921), [Group Policy and the Local Group Policy Editor](https://go.microsoft.com/fwlink/p/?LinkId=617922), [Group Policy and the Advanced Group Policy Management (AGPM)](https://go.microsoft.com/fwlink/p/?LinkId=617923), and [Group Policy and Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=617924).
+> For more info about the tools you can use to change your Group Policy objects, see the Internet Explorer 11 topics, [Group Policy and the Group Policy Management Console (GPMC)](https://go.microsoft.com/fwlink/p/?LinkId=617921), [Group Policy and the Local Group Policy Editor](https://go.microsoft.com/fwlink/p/?LinkId=617922), [Group Policy and the Advanced Group Policy Management (AGPM)](https://go.microsoft.com/fwlink/p/?LinkId=617923), and [Group Policy and Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=617924).
 
 
 Microsoft Edge works with the following Group Policy settings to help you manage your company's web browser configurations. The Group Policy settings are found in the Group Policy Editor in the following location: 
@@ -36,7 +36,7 @@ You can configure Microsoft Edge to use a shared folder to store books from the 
  
 If enabled, a shared books folder is allowed.
  
-If disabled, a shared books folder not allowed.​
+If disabled, a shared books folder not allowed. 
 
 **MDM settings in Microsoft Intune** 
 |   |   |
@@ -82,7 +82,7 @@ Adobe Flash is integrated with Microsoft Edge and is updated via Windows Update.
 ## Allow clearing browsing data on exit
 >*Supported versions: Windows 10, version 1703*
 
-Your browsing data is the information that Microsoft Edge remembers and stores as you browse websites. Browsing data includes information you entered into forms, passwords, and the websites you visited. By default, this policy is disabled or not configured, the browsing data is not cleared when exiting. When this policy is disabled or not configured, you can turn on and configure the Clear browsing data option under Settings. 
+Your browsing data is the information that Microsoft Edge remembers and stores as you browse websites. Browsing data includes information you entered forms, passwords, and the websites you visited. By default, this policy is disabled or not configured, the browsing data is not cleared when exiting. When this policy is disabled or not configured, you can turn on and configure the Clear browsing data option under Settings. 
 
 
 **Microsoft Intune to manage your MDM settings**
@@ -115,7 +115,7 @@ not configured. If disabled, Microsoft Edge does not retrieve the Books configur
 ## Allow Cortana
 >*Supported versions: Windows 10, version 1607 or later*
 
-Cortana is integrated with Microsoft Edge, and when enabled, Cortana allows you use the voice assistant on your device. If disabled, Cortana is not available for use, but you can search to find items on your device. 
+Cortana is integrated with Microsoft Edge, and when enabled, Cortana allows you to use the voice assistant on your device. If disabled, Cortana is not available for use, but you can search to find items on your device. 
 
 **Microsoft Intune to manage your MDM settings**
 |   |   |
@@ -130,7 +130,7 @@ Cortana is integrated with Microsoft Edge, and when enabled, Cortana allows you 
 ## Allow Developer Tools
 >*Supported versions: Windows 10, version 1511 or later*
 
-F12 developer tools is a suite of tools to help you build and debug your webpage. By default, this policy is enabled making the F12 Developer Tools availabe to use.  
+F12 developer tools is a suite of tools to help you build and debug your webpage. By default, this policy is enabled making the F12 Developer Tools available to use.  
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -205,7 +205,7 @@ Microsoft Edge uses the compatibility list that helps websites with known compat
 ## Allow search engine customization
 >*Supported versions: Windows 10, version 1703 or later*
 
-This policy setting allows search engine customization for domain-joined or MDM-enrolled devices only. For example, you can change the default search engine or add a new search engine. By default, this setting is enabled allowing you to add new search engines and change the default under Settings. If disabled, you cannot add search enginess or change the default.
+This policy setting allows search engine customization for domain-joined or MDM-enrolled devices only. For example, you can change the default search engine or add a new search engine. By default, this setting is enabled allowing you to add new search engines and change the default under Settings. If disabled, you cannot add search engines or change the default.
 
 For more information, see [Microsoft browser extension policy](https://docs.microsoft.com/en-us/legal/windows/agreements/microsoft-browser-extension-policy).
 
@@ -216,7 +216,7 @@ For more information, see [Microsoft browser extension policy](https://docs.micr
 |Supported devices |Desktop<br>Mobile  |
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/AllowSearchEngineCustomization  |
 |Data type | Integer |
-|Allowed values |<ul><li>**0** - Additional search engines are not allowed and the default cannot be changed in the Address bar.</li><li>**1 (default)** - Additional search engines are allowed and the default can be changed in the Address bar.</li></ul> |
+|Allowed values |<ul><li>**0** - Additional search engines are not allowed, and the default cannot be changed in the Address bar.</li><li>**1 (default)** - Additional search engines are allowed, and the default can be changed in the Address bar.</li></ul> |
 
 ## Allow web content on New Tab page
 >*Supported versions: Windows 10*
@@ -249,7 +249,7 @@ This policy settings specifies whether to always show the Books Library in Micro
 
 This policy setting, when enabled, lets you add up to five additional search engines. Employees cannot remove these search engines, but they can set any one as the default. By default, this setting is not configured and does not allow additional search engines to be added. If disabled, the search engines added are deleted.
 
-For each additional search engine you add, specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/browser/search-provider-discovery/).
+For each additional search engine, you add, specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/browser/search-provider-discovery/).
 
 This setting does not set the default search engine. For that, you must use the "Set default search engine" setting.
 
@@ -293,7 +293,7 @@ This policy setting specifies whether cookies are allowed. By default, this sett
 ## Configure Do Not Track
 >*Supported versions: Windows 10*
 
-This policy setting specifies whether Do Not Track requests to websites is allowed. By default, this setting is not configured allowing you to choose whether or not to send tracking information. If enabled, Do Not Track requests are always sent to websites asking for tracking information. If disabled, Do Not Track requests are never sent. 
+This policy setting specifies whether Do Not Track requests to websites is allowed. By default, this setting is not configured allowing you to choose if to send tracking information. If enabled, Do Not Track requests are always sent to websites asking for tracking information. If disabled, Do Not Track requests are never sent. 
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -317,7 +317,7 @@ If you disable or don't configure this setting, employees will see the Favorites
 ## Configure Password Manager
 >*Supported versions: Windows 10*
 
-This policy setting specifies whether saving and managing passwords locally on the device is allowed. By default, this setting is enabled allowing you to save their passwords locally. If not configured, you can choose whether or not to save and manage passwords locally. If disabled, saving and managing passwords locally is turned off. 
+This policy setting specifies whether saving and managing passwords locally on the device is allowed. By default, this setting is enabled allowing you to save their passwords locally. If not configured, you can choose if to save and manage passwords locally. If disabled, saving and managing passwords locally is turned off. 
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -373,7 +373,7 @@ This policy setting specifies your Start pages for domain-joined or MDM-enrolled
 ## Configure the Adobe Flash Click-to-Run setting
 >*Supported versions: Windows 10, version 1703 or later*
 
-This policy setting specifies whether you must take action, such as clicking the content or a Click-to-Run button, before seeing content in Adobe Flash. By default, this setting is enabled. when the setting is enabled, you must click the content, Click-to-Run button, or have the site appear on an auto-allow list before before the Adobe Flash content loads. If disabled, Adobe Flash loads and runs automatically.
+This policy setting specifies whether you must take action, such as clicking the content or a Click-to-Run button, before seeing content in Adobe Flash. By default, this setting is enabled. When the setting is enabled, you must click the content, Click-to-Run button, or have the site appear on an auto-allow list before the Adobe Flash content loads. If disabled, Adobe Flash loads and runs automatically.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -405,7 +405,7 @@ This policy setting lets you configure whether to use Enterprise Mode and the En
 ## Configure Windows Defender SmartScreen
 >*Supported versions: Windows 10*
 
-This policy setting specifies whether Windows Defender SmartScreen is allowed. By default, this setting is enabled or turned on and you cannot turn it off. If disabled, Windows Defender SmartScreen is turned off and you cannot turn it on. If not configured, you can choose whether to use Windows Defender SmartScreen.
+This policy setting specifies whether Windows Defender SmartScreen is allowed. By default, this setting is enabled or turned on, and you cannot turn it off. If disabled, Windows Defender SmartScreen is turned off, and you cannot turn it on. If not configured, you can choose whether to use Windows Defender SmartScreen.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -434,7 +434,7 @@ This policy setting specifies whether the lockdown on the Start pages is disable
 ## Do not sync
 >*Supported versions: Windows 10*
 
-This policy setting specifies whether you can use the Sync your Settings option to sync their settings to and from their device. By default, this setting is disabled or not configured, which means the Sync your Settings options are turned on, letting you pick what can sync on their device. If enabled, the Sync your Settings options are turned off and none of the Sync your Setting groups are synced on the device. You can use the Allow users to turn syncing on option to turn the feature off by default, but to let the employee change this setting. For information about what settings are sync'ed, see [About sync setting on Windows 10 devices](http://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices).
+This policy setting specifies whether you can use the Sync your Settings option to sync their settings to and from their device. By default, this setting is disabled or not configured, which means the Sync your Settings options are turned on, letting you pick what can sync on their device. If enabled, the Sync your Settings options are turned off and none of the Sync your Setting groups are synced on the device. You can use the Allow users to turn syncing on the option to turn the feature off by default, but to let the employee change this setting. For information about what settings are synced, see [About sync setting on Windows 10 devices](http://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices).
 
 **Microsoft Intune to manage your MDM settings**
 |   |   |
@@ -557,7 +557,7 @@ This policy setting specifies whether to enable or disable the First Run webpage
 >*Supported versions: Windows 10, version 1511 or later*
 
 
-This policy setting specifies whether localhost IP address are visible or hiddle while making phone calls to the WebRTC protocol. By default, this setting is disabled or not configured (turned off), which means the localhost IP address are visible. If enabled (turned on), localhost IP addresses are hidden. 
+This policy setting specifies whether localhost IP address is visible or hidden while making phone calls to the WebRTC protocol. By default, this setting is disabled or not configured (turned off), which means the localhost IP address is visible. If enabled (turned on), localhost IP addresses are hidden. 
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -632,7 +632,7 @@ To set the default search engine, you must specify a link to the OpenSearch XML 
 >*Supported versions: Windows 10, version 1607 and later*
 
 
-This policy setting specifies whether you see an additional page in Microsoft Edge when opening sites that are configured to open in Internet Explorer using the Enterprise Site List. By default, this policy is disabled, which means no additional pages display. If enabled, you see an additional page.
+This policy setting specifies whether you see an additional page in Microsoft Edge when opening sites that are configured to open in Internet Explorer using the Enterprise Site List. By default, this policy is disabled, which means no additional page’s display. If enabled, you see an additional page.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |

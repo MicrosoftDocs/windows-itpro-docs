@@ -8,7 +8,8 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: jdeckerms
 ms.author: jdecker
-ms.date: 04/30/2018
+ms.topic: article
+ms.date: 05/16/2018
 ---
 
 # Enable or block Windows Mixed Reality apps in the enterprise
@@ -43,7 +44,7 @@ Organizations that use Windows Server Update Services (WSUS) must take action to
 
     ```
     Add-Package
-    Dism /Image:C:\test\offline /Add-Package /PackagePath:*path to the cab file*
+    Dism /Online /add-package /packagepath:(path)
     ```
 
   c. In **Settings** > **Update & Security** > **Windows Update**, select **Check for updates**.

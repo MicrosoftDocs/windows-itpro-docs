@@ -7,6 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
+ms.topic: article
 ms.date: 09/06/2017
 ---
 
@@ -77,7 +78,7 @@ Use the following PowerShell cmdlet to remove carriage returns and line feeds fr
 
 ```PS
 $path="file path"
-(Get-Content $path -Raw).Replace("'r'n","") | Set-Content $path -Force
+(Get-Content $admxFile -Raw).Replace("`r`n","") | Set-Content $path -Force
 ```
 
 ## Category and policy in ADMX

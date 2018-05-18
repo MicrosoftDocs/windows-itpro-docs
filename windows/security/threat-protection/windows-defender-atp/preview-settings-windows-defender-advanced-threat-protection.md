@@ -28,7 +28,7 @@ ms.date: 04/24/2018
 
 Turn on the preview experience setting to be among the first to try upcoming features.
 
-1. In the navigation pane, select **Settings** > **Preview experience**.
+1. In the navigation pane, select **Settings** > **Advanced features**.
 
     ![Image of settings and preview experience](images/atp-preview-features.png)
 

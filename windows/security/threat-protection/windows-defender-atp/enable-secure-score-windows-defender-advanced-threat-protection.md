@@ -30,7 +30,7 @@ Set the baselines for calculating the score of Windows Defender security control
   >[!NOTE]
   >Changes might take up to a few hours to reflect on the dashboard. 
 
-1. In the navigation pane, select **Settings** > **General** > **Secure Score**.
+1. In the navigation pane, select **Settings** > **Secure Score**.
 
     ![Image of Secure Score controls from Preferences setup menu](images/atp-enable-security-analytics.png)
 

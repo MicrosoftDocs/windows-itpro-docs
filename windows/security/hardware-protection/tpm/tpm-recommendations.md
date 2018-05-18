@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: brianlic-msft
-ms.date: 10/27/2017
+ms.date: 05/16/2018
 ---
 
 # TPM recommendations
@@ -102,7 +102,9 @@ The following table defines which Windows features require TPM support.
 | Measured Boot           | Yes          | Yes                | Yes                | Measured Boot requires TPM 1.2 or 2.0 and UEFI Secure Boot         |
 | BitLocker               | Yes           | Yes                | Yes                | TPM 1.2 or 2.0 is required  |
 | Device Encryption       | Yes          | N/A                | Yes                | Device Encryption requires Modern Standby/Connected Standby certification, which requires TPM 2.0. | 
-| Device Guard            | No           | Yes                | Yes                |          |
+| Windows Defender Application Control (Device Guard)            | No           | Yes                | Yes                |          |
+| Windows Defender Exploit Guard | Yes   | Yes                | Yes                |           | 
+| Windows Defender System Guard | Yes   | Yes                | Yes                |           | 
 | Credential Guard        | No           | Yes                | Yes                | Windows 10, version 1507 (End of Life as of May 2017) only supported TPM 2.0 for Credential Guard. Beginning with Windows 10, version 1511, TPM 1.2 and 2.0 are supported.   |
 | Device Health Attestation| Yes         | Yes                | Yes                |          |
 | Windows Hello/Windows Hello for Business| No | Yes          | Yes                | Azure AD join supports both versions of TPM, but requires TPM with keyed-hash message authentication code (HMAC) and Endorsement Key (EK) certificate for key attestation support.         |

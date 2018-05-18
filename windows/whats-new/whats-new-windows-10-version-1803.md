@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
-ms.date: 04/30/2018
+ms.date: 05/10/2018
 ms.localizationpriority: high
 ---
 
@@ -15,9 +15,11 @@ ms.localizationpriority: high
 **Applies to**
 -   Windows 10, version 1803
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10 version 1803, also known as the Windows 10 April 2018 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1709. Also see [What's New in Windows](https://docs.microsoft.com/en-us/windows-hardware/get-started/what-s-new-in-windows) hardware.
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10 version 1803, also known as the Windows 10 April 2018 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1709. 
 
-The following 3-minute video summarizes some of the new features that are available in this release.
+>If you are not an IT Pro, see the following topics for information about what's new in Windows 10, version 1803 in [hardware](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows), for [developers](https://docs.microsoft.com/windows/uwp/whats-new/windows-10-build-17134), and for [consumers](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update).
+
+The following 3-minute video summarizes some of the new features that are available for IT Pros in this release.
 
 &nbsp;
 
@@ -42,7 +44,7 @@ Some additional information about Windows 10 in S mode:
  
 - Microsoft-verified. All of your applications are verified by Microsoft for security and performance. 
 - Performance that lasts. Start-ups are quick, and S mode is built to keep them that way. 
-- Choice and flexibility. Save your files to your favorite cloud, like OneDrive or DropBox, and access them from any device you choose. Browse the Microsoft Store for thousands of apps[]
+- Choice and flexibility. Save your files to your favorite cloud, like OneDrive or DropBox, and access them from any device you choose. Browse the Microsoft Store for thousands of apps.
 - S mode, on a range of modern devices. Enjoy all the great Windows multi-tasking features, like snapping Windows, task view and virtual desktops on a range of S mode enabled devices. 
 
 If you want to switch out of S mode, you will be able to do so at no charge, regardless of edition. Once you switch out of S mode, you cannot switch back.
@@ -149,7 +151,7 @@ The OS uninstall period is a length of time that users are given when they can o
 - Windows Hello is part of the account protection pillar in Windows Defender Security Center. Account Protection will encourage password users to set up Windows Hello Face, Fingerprint or PIN for faster sign in, and will notify Dynamic lock users if Dynamic lock has stopped working because their phone or device Bluetooth is off.
 - You can set up Windows Hello from lock screen for MSA accounts. We’ve made it easier for Microsoft account users to set up Windows Hello on their devices for faster and more secure sign-in. Previously, you had to navigate deep into Settings to find Windows Hello. Now, you can set up Windows Hello Face, Fingerprint or PIN straight from your lock screen by clicking the Windows Hello tile under Sign-in options.
 - New [public API](https://docs.microsoft.com/en-us/uwp/api/windows.security.authentication.web.core.webauthenticationcoremanager.findallaccountsasync#Windows_Security_Authentication_Web_Core_WebAuthenticationCoreManager_FindAllAccountsAsync_Windows_Security_Credentials_WebAccountProvider_) for secondary account SSO for a particular identity provider.
-- Is is easier to set up Dynamic lock, and WD SC actionable alerts have been added when Dynamic lock stops working (ex: phone Bluetooth is off).
+- It is easier to set up Dynamic lock, and WD SC actionable alerts have been added when Dynamic lock stops working (ex: phone Bluetooth is off).
  
 For more information, see: [Windows Hello and FIDO2 Security Keys enable secure and easy authentication for shared devices](https://blogs.windows.com/business/2018/04/17/windows-hello-fido2-security-keys/#OdKBg3pwJQcEKCbJ.97)
 

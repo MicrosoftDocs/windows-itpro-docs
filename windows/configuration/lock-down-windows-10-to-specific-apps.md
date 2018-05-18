@@ -11,6 +11,7 @@ author: jdeckerms
 ms.localizationpriority: high
 ms.date: 04/30/2018
 ms.author: jdecker
+ms.topic: article
 ---
 
 # Create a Windows 10 kiosk that runs multiple apps

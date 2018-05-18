@@ -11,6 +11,7 @@ author: jdeckerms
 ms.localizationpriority: medium
 ms.date: 04/30/2018
 ms.author: jdecker
+ms.topic: article
 ---
 
 #  Assigned Access configuration (kiosk) XML reference

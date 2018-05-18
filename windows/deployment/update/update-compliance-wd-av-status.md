@@ -5,16 +5,19 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: DaniHalfin
-ms.author: daniha
-ms.date: 10/13/2017
+author: jaimeo
+ms.author: jaimeo
+ms.date: 05/17/2018
 ---
 
 # Windows Defender AV Status
 
 ![The Windows Defender AV Status report](images/uc-windowsdefenderavstatus.png)
 
-The Windows Defender AV Status section deals with data concerning signature and threat status for devices that use Windows Defender Antivirus. The section tile in the [Overview Blade](update-compliance-using.md#overview-blade) provides the percentage of devices with insufficient protection – this percentage only considers devices using Windows Defender Antivirus. 
+The Windows Defender AV Status section deals with data concerning signature and threat status for devices that use Windows Defender Antivirus. The section tile in the [Overview Blade](update-compliance-using.md#overview-blade) provides the percentage of devices with insufficient protection – this percentage only considers devices using Windows Defender Antivirus.
+
+>[!NOTE]
+>Customers with E5 licenses can monitor the Windows Defender AV status by using the Windows Defender ATP portal. For more information about monitoring devices with this portal, see [Onboard Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection).
 
 The **Protection Status** blade gives a count for devices that have either out-of-date signatures or real-time protection turned off. Below, it gives a more detailed breakdown of the two issues. Clicking any of these statuses will navigate you to a Log Search view containing the query. 
 

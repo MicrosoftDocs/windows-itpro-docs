@@ -67,8 +67,7 @@ Feature | Windows 8.1 (Group Policy) | Windows 10, version 1607 (Group Policy) |
 ---|---|---|---|---|---|---
 Cloud-protection service label | Microsoft Advanced Protection Service | Microsoft Advanced Protection Service | Cloud-based Protection | NA | Cloud protection service | Microsoft Advanced Protection Service
 Reporting level (MAPS membership level) | Basic, Advanced | Advanced | Advanced | Dependent on Windows version | Dependent on Windows version | Dependent on Windows version
-Block at first sight availability | No | Yes | Yes | Not configurable | Configurable | No
-Cloud block timeout period | No | No | Configurable | Not configurable | Configurable | No
+Cloud block timeout period | No | No | Configurable | Not configurable | Configurable | Configurable
  
 You can also [configure Windows Defender AV to automatically receive new protection updates based on reports from our cloud service](manage-event-based-updates-windows-defender-antivirus.md#cloud-report-updates).
 
