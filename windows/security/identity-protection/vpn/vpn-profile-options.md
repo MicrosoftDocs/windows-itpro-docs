@@ -302,18 +302,15 @@ After you configure the settings that you want using ProfileXML, you can apply i
 3. Click **Create Profile**.
 4. Enter a name and (optionally) a description.
 5. Choose **Windows 10 and later** as the platform.
-6. Choose **Custom** as the profile type.
-7. Click **Add**.
+6. Choose **Custom** as the profile type and click **Add**.
 8. Enter a name and (optionally) a description.
 9. Enter the OMA-URI **./user/vendor/MSFT/_VPN profile name_/ProfileXML**.
 10. Set Data type to **String (XML file)**.
 11. Upload the profile XML file.
 12. Click **OK**.
-
     ![Custom VPN profile](images/custom-vpn-profile.png)
- 
-9. Click **OK**, then **Create**.
-10. Assign the profile.
+13. Click **OK**, then **Create**.
+14. Assign the profile.
 
 
 ## Learn more
