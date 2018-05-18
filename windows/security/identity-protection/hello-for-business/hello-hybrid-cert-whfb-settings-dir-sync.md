@@ -77,5 +77,5 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
 4. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
-5. Configure Windows Hello for Business settings: Directory Syncrhonization (*You are here*)
+5. Configure Windows Hello for Business settings: Directory Synchronization (*You are here*)
 6. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)

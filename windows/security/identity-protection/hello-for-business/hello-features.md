@@ -87,10 +87,10 @@ RSSI measurements are relative and lower as the bluetooth signals between the tw
 ### Hybrid Deployments
 
 **Requirements:**
-* Azure Active Directory
-* Hybrid Windows Hello for Business deployment
-* Azure AD registered, Azure AD joined, and Hybrid Azure AD joined
-
+- Azure Active Directory
+- Hybrid Windows Hello for Business deployment
+- Azure AD registered, Azure AD joined, and Hybrid Azure AD joined
+- Windows 10, version 1709 or later, **Enterprise Edition**
  
 The Microsoft PIN reset services enables you to help users who have forgotten their PIN.  Using Group Policy, Microsoft Intune or a compatible MDM, you can configure Windows 10 devices to securely use the Microsoft PIN reset service that enables users to reset their forgotten PIN through settings or above the lock screen without requiring re-enrollment.
 
@@ -142,8 +142,8 @@ dsregcmd /status | findstr -snip "tenantid"
 ** Requirements**
 * Active Directory
 * On-premises Windows Hello for Business deployment
-* Reset from settings - Windows 10, version 1703
-* Reset above Lock - Windows 10, version 1709
+* Reset from settings - Windows 10, version 1703, Professional
+* Reset above Lock - Windows 10, version 1709, Professional
 
 On-premises deployments provide users with the ability to reset forgotten PINs either through the settings page or from above the user's lock screen.  Users must know or be provided their password for authentication, must perform a second factor of authentication, and then re-provision Windows Hello for Business.
 

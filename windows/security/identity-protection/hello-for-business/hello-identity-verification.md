@@ -34,7 +34,7 @@ Windows Hello addresses the following problems with passwords:
 * Windows 10, version 1511 or later
 * Microsoft Azure Account
 * Azure Active Directory
-* Azure Multifactor authentication
+* Azure Multi-factor authentication
 * Modern Management (Intune or supported third-party MDM), *optional*
 * Azure AD Premium subscription - *optional*, needed for automatic MDM enrollment when the device joins Azure Active Directory
 
@@ -53,7 +53,7 @@ The table shows the minimum requirements for each deployment.
 | Azure Account | Azure Account | Azure Account | Azure Account |
 | Azure Active Directory | Azure Active Directory | Azure Active Directory | Azure Active Directory |
 | Azure AD Connect | Azure AD Connect | Azure AD Connect | Azure AD Connect | 
-| Azure AD Premium, optional | Azure AD Premium, needed for device writeback | Azure AD Premium, optional for automatic MDM enrollment | Azure AD Premium, optional for automatic MDM enrollment |
+| Azure AD Premium, optional | Azure AD Premium, needed for device write-back | Azure AD Premium, optional for automatic MDM enrollment | Azure AD Premium, optional for automatic MDM enrollment |
 
 ### On-premises Deployments 
 The table shows the minimum requirements for each deployment.

@@ -49,13 +49,35 @@ If the user can sign-in with a password, they can reset their PIN by clicking th
 
 For on-premises deployments, devices must be well connected to their on-premises network (domain controllers and/or certificate authority) to reset their PINs.  Hybrid customers can on-board their Azure tenant to use the Windows Hello for Business PIN reset service to reset their PINs without access to their corporate network.
 
+## What URLs do I need to whitelist for a hybrid deployment?
+
+Communicating with Azure Active Directory uses the following URLs:
+- enterpriseregistration.windows.net
+- login.microsoftonline.com
+- login.windows.net
+
+If your environment uses Microsoft Intune, you need these additional URLs:
+- enrollment.manage-beta.microsoft.com
+- enrollment.manage.microsoft.com
+- portal.manage-beta.microsoft.com
+- portal.manage.microsoft.com
+
+
+
 ## Do I need Windows Server 2016 domain controllers?
 
 There are many deployment options from which to choose. Some of those options require an adequate number of Windows Server 2016 domain controllers in the site where you have deployed Windows Hello for Business. There are other deployment options that use existing Windows Server 2008 R2 or later domain controllers. Choose the deployment option that best suits your environment
 
+## What attributes are sychronized by Azure AD Connect with Windows Hello for Business?
+Review [Azure AD Connect sync: Attributes syncrhonized to Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized) for a list of attributes that are sync based on scenarios.  The base scenarios that include Windows Hello for Business are [Windows 10](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#windows-10) scenario and the [Device writeback](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#device-writeback) scenario. Your environment may include additional attributes.
+
 ## Is Windows Hello for Business multifactor authentication?
 
 Windows Hello for Business is two-factor authentication based the observed authentication factors of: something you have, something you know, and something part of you.  Windows Hello for Business incorporates two of these factors: something you have (the user's private key protected by the device's security module) and something you know (your PIN). With the proper hardware, you can enhance the user experience by introducing biometrics. Using biometrics, you can replace the "something you know" authentication factor with the "something that is part of you" factor, with the assurances that users can fall back to the "something you know factor".
+
+## What are the biometric requirements for Windows Hello for Business?
+
+Read [Windows Hello biometric requirements](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) for more information.
 
 ## Can I use PIN and biometrics to unlock my device?
 
@@ -65,9 +87,13 @@ Starting in Windows 10, version 1709, you can use multi-factor unlock to require
 
 Windows Hello represents the biometric framework provided in Windows 10.  Windows Hello enables users to use biometrics to sign into their devices by securely storing their user name and password and releasing it for authentication when the user successfully identifies themselves using biometrics.  Windows Hello for Business uses asymmetric keys protected by the device's security module that requires a user gesture (PIN or biometrics) to authenticate.
 
+## Why can I not enroll biometrics for my local built-in Administrator?
+
+Windows 10 does not allow the local administrator to enroll biometric gestures(face or fingerprint).
+
 ## I have extended Active Directory to Azure Active Directory.  Can I use the on-prem deployment model?
 
-No. If your organization is federated or using online services, such as Office 365 or OneDrive, then you must use a hybrid deployment model.  On-premises deployments are exclusive to organization who need more time before moving to the cloud and exclusively use Active Directory.
+No. If your organization is federated or using on-line services, such as Office 365 or OneDrive, then you must use a hybrid deployment model.  On-premises deployments are exclusive to organization who need more time before moving to the cloud and exclusively use Active Directory.
 
 ## Does Windows Hello for Business prevent the use of simple PINs?
 
@@ -99,6 +125,14 @@ No. The movement away from passwords is accomplished by gradually reducing the u
 Wherever possible, Windows Hello for Business takes advantage of trusted platform module (TPM) 2.0 hardware to generate and protect keys. However, Windows Hello and Windows Hello for Business does not require a TPM. Administrators can choose to allow key operations in software  
 
 Whenever possible, Microsoft strongly recommends the use of TPM hardware. The TPM protects against a variety of known and potential attacks, including PIN brute-force attacks. The TPM provides an additional layer of protection after an account lockout, too. When the TPM has locked the key material, the user will have to reset the PIN (which means he or she will have to use MFA to re-authenticate to the IDP before the IDP allows him or her to re-register).
+
+## Can Windows Hello for Business work in air gapped environments?
+
+Yes.  You can use the on-premises Windows Hello for Business deployment and combine it with a third-party MFA provider that does not require Internet connectivity to achieve an air-gapped Windows Hello for Business deployment.
+
+## Can I use third-party authentication providers with Windows Hello for Business?
+
+Yes, if you are federated hybrid deployment, you can use any third-party that provides an Active Directory Federation Services (AD FS) multi-factor authentication adapter.  A list of third-party MFA adapters can be found [here](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods).
 
 ## Does Windows Hello for Business work with third party federation servers?
 
