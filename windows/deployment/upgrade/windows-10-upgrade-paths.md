@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.pagetype: mobile
 author: greg-lindsay
-ms.date: 01/18/2018
+ms.date: 05/18/2018
 ---
 
 # Windows 10 upgrade paths
@@ -20,7 +20,7 @@ ms.date: 01/18/2018
 
 This topic provides a summary of available upgrade paths to Windows 10. You can upgrade to Windows 10 from Windows 7 or a later operating system. This includes upgrading from one release of Windows 10 to later release of Windows 10. Migrating from one edition of Windows 10 to a different edition of the same release is also supported. For more information about migrating to a different edition of Windows 10, see [Windows 10 edition upgrade](windows-10-edition-upgrades.md).
 
->**Windows 10 version upgrade**: You can directly upgrade any Windows 10 version to a newer, supported Windows 10 version, even if it involves skipping versions.
+>**Windows 10 version upgrade**: You can directly upgrade a supported version of Windows 10 to a newer version of Windows 10, even if it involves skipping versions. Work with your account representative if your current version of Windows is out of support. See the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet) for availability and service information. 
 
 >**Windows 10 LTSC/LTSB**: Due to [naming changes](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#naming-changes), product versions that display Windows 10 LTSB will be replaced with Windows 10 LTSC in subsequent feature updates. The term LTSC is used here to refer to all long term servicing versions.
 
