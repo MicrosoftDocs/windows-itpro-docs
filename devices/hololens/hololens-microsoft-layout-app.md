@@ -21,7 +21,7 @@ Below are the device options, and technical requirements, to use and deploy Micr
 
 ### Device options
 
-You can use Microsoft Layout with a HoloLens, or with a Windows Mixed Reality headset with motion controllers.
+Microsoft Layout works with a HoloLens, or with a Windows Mixed Reality headset with motion controllers.
 
 #### HoloLens requirements
 

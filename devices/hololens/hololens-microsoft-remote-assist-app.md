@@ -13,7 +13,7 @@ ms.date: 05/22/2018
 ---
 # Microsoft Remote Assist
 
-Collaborate remotely with heads-up, hands-free video calling, image sharing, and mixed reality annotations. Share what you see with an expert, while staying hands on to solve problems and complete tasks together, faster. Backed by enterprise-level security, Microsoft Remote Assist enables you to communicate with peace of mind.
+Collaborate remotely with heads-up, hands-free video calling, image sharing, and mixed reality annotations. Firstline Workers can share what they see with any expert on Microsoft Teams, while staying hands on to solve problems and complete tasks together, faster. Backed by enterprise-level security, Microsoft Remote Assist enables communication with peace of mind.
 
 ## Technical requirements
 
