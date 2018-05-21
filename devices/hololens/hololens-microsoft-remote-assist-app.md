@@ -9,7 +9,7 @@ author: alhopper-msft
 ms.author: alhopper
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 05/22/2018
+ms.date: 05/21/2018
 ---
 # Microsoft Remote Assist
 
@@ -34,7 +34,7 @@ Below are the technical requirements to deploy and use Microsoft Remote Assist t
 
 | Product required                  | Details           | Learn more        |
 |:----------------------------------|:------------------|:------------------|
-| Azure Active Directory (Azure AD) | Required to log users into the Remote Assist app through Microsoft Teams. Also required for app distribution through the [Microsoft Store for Business](https://docs.microsoft.com/en-us/microsoft-store/sign-up-microsoft-store-for-business). If you choose not to distribute the app through the Microsoft Store for Business, users can alternately install Remote Assist on a HoloLens or PC from the [Microsoft Store](https://www.microsoft.com/en-us/store/apps) using their Microsoft Account credentials (MSA). | [Get started with Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/get-started-azure-ad) |
+| Azure Active Directory (Azure AD) | Required to log users into the Remote Assist app through Microsoft Teams. Also required for app distribution through the [Microsoft Store for Business](https://docs.microsoft.com/en-us/microsoft-store/sign-up-microsoft-store-for-business). If you choose not to distribute the app through the Microsoft Store for Business, users can alternately install Remote Assist on a HoloLens or PC from the [Microsoft Store](https://www.microsoft.com/en-us/store/apps). | [Get started with Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/get-started-azure-ad) |
 | Microsoft Teams                   | Microsoft Teams facilitates communication in Remote Assist. Microsoft Teams must be installed on any device that will make calls to the HoloLens. | [Overview of Microsoft Teams](https://docs.microsoft.com/en-us/MicrosoftTeams/teams-overview) |
 | Microsoft Office 365              | Because Microsoft Teams is part of Office 365, each user who will make calls from their PC/phone to the HoloLens will need an Office 365 license. | [Office 365 licensing for Microsoft Teams](https://docs.microsoft.com/en-us/MicrosoftTeams/office-365-licensing) |
 
