@@ -14,8 +14,7 @@ ms.date: 04/30/2018
 
 # Set up HoloLens in kiosk mode
 
->[!WARNING]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 
 In Windows 10, version 1803, you can configure your HoloLens devices to run as multi-app or single-app kiosks.
 
