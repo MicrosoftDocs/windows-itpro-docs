@@ -11,7 +11,7 @@
 ## Enhanced level diagnostics events and fields
 ### [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](enhanced-diagnostic-data-windows-analytics-events-and-fields.md)
 ## Full level diagnostics events and fields
-### [Windows 10, version 1709 and later diagnostic data for the Full level](windows-diagnostic-data.md)
+### [Windows 10, version 1709 and newer diagnostic data for the Full level](windows-diagnostic-data.md)
 ### [Windows 10, version 1703 diagnostic data for the Full level](windows-diagnostic-data-1703.md)
 ## [Manage Windows 10 connection endpoints](manage-windows-endpoints.md)
 ## [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
