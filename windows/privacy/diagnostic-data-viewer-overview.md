@@ -21,8 +21,7 @@ ms.date: 01/17/2018
 ## Introduction
 The Diagnostic Data Viewer is a Windows app that lets you review the diagnostic data your device is sending to Microsoft, grouping the info into simple categories based on how it's used by Microsoft.
 
-## Install and Use the Diagnostic Data Viewer
-You must turn on data viewing and download the app before you can use the Diagnostic Data Viewer to review your device's diagnostic data.
+## Install and Use the Diagnostic Data ViewerYou must turn on data viewing and download the app before you can use the Diagnostic Data Viewer to review your device's diagnostic data.
 
 ### Turn on data viewing
 Before you can use this tool, you must turn on data viewing in the **Settings** panel. Turning on data viewing lets Windows store your device's diagnostic data until you turn it off. Turning off data viewing stops Windows from collecting your diagnostic data and clears the existing diagnostic data from your device.
@@ -69,9 +68,9 @@ The Diagnostic Data Viewer provides you with the following features to view and 
 
     Selecting a check box lets you filter between the diagnostic event categories.
 
-- **Help to make your Windows experience better through sampling.** Microsoft only needs diagnostic data from a small amount of devices to make big improvements to the Windows operating system and ultimately, your experience. If you’re a part of this small device group and you experience issues, Microsoft will collect the associated event diagnostic data, allowing your info to potentially help fix the issue for others.
+- **Help to make your Windows experience better.** Microsoft samples diagnostic data from a small amount of devices to make big improvements to the Windows operating system and ultimately, your experience. If you’re a part of this small device group and you experience issues, Microsoft will collect the associated event diagnostic data, allowing your info to potentially help fix the issue for others.
 
-    To signify your contribution, you’ll see this icon (![Icon to review the device-level sampling](images/ddv-device-sample.png)) if your device is part of the group. In addition, if any of your diagnostic data events are sent from your device to Microsoft to help make improvements, you’ll see this icon (![Icon to review the event-level sampling](images/ddv-event-sample.png)). 
+    To signify your contribution, you’ll see this icon (![Icon to review the device-level sampling](images/ddv-device-sample.png)) if your device is part of the sampling group. In addition, if any of your diagnostic data events are sent from your device to Microsoft to help make improvements, you’ll see this icon (![Icon to review the event-level sampling](images/ddv-event-sample.png)). 
 
 - **Provide diagnostic event feedback.** The **Feedback** icon opens the Feedback Hub app, letting you provide feedback about the Diagnostic Data Viewer and the diagnostic events.
 
