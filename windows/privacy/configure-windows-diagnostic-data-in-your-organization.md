@@ -32,7 +32,7 @@ To frame a discussion about diagnostic data, it is important to understand Micro
 
 This article applies to Windows and Windows Server diagnostic data only. Other Microsoft or third-party apps, such as System Center Configuration Manager, System Center Endpoint Protection, or System Center Data Protection Manager, might send data to their cloud services in ways that are inconsistent with this guide. Their publishers are responsible for notifying users of their privacy policies, diagnostic data controls, and so on. This article describes the types of diagnostic data we may gather, the ways you might manage it in your organization, and some examples of how diagnostic data can provide you with valuable insights into your enterprise deployments. Microsoft uses the data to quickly identify and address issues affecting its customers.
 
-Use this article to make informed decisions about how you might configure diagnostic data in your organization. Diagnostic data is a term that means different things to different people and organizations. For this article, we discuss diagnostic data as system data that is uploaded by the Connected User Experiences and Telemetry component. The diagnostic data data is used to help keep Windows devices secure by identifying malware trends and other threats and to help Microsoft improve the quality of Windows and Microsoft services.
+Use this article to make informed decisions about how you might configure diagnostic data in your organization. Diagnostic data is a term that means different things to different people and organizations. For this article, we discuss diagnostic data as system data that is uploaded by the Connected User Experiences and Telemetry component. The diagnostic data is used to help keep Windows devices secure by identifying malware trends and other threats and to help Microsoft improve the quality of Windows and Microsoft services.
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
 
@@ -95,7 +95,7 @@ Windows diagnostic data also helps Microsoft better understand how customers use
 -	**Cortana.** We use diagnostic data to monitor the scalability of our cloud service, improving search performance.
 -	**Application switching.**  Research and observations from earlier Windows versions showed that people rarely used Alt+Tab to switch between applications.  After discussing this with some users, we learned they loved the feature, saying that it would be highly productive, but they did not know about it previously. Based on this, we created the Task View button in Windows 10 to make this feature more discoverable. Later diagnostic data showed significantly higher usage of this feature.
 
-**These examples show how the use of diagnostic data data enables Microsoft to build or enhance features which can help organizations increase employee productivity while lowering help desk calls.**
+**These examples show how the use of diagnostic data enables Microsoft to build or enhance features which can help organizations increase employee productivity while lowering help desk calls.**
 
 
 ### Insights into your own organization
@@ -122,7 +122,7 @@ Use Upgrade Readiness to get:
 
 The Upgrade Readiness workflow steps you through the discovery and rationalization process until you have a list of computers that are ready to be upgraded.
 
-## How is diagnostic data data handled by Microsoft?
+## How is diagnostic data handled by Microsoft?
 
 ### Data collection
 
@@ -131,13 +131,13 @@ Windows 10 and Windows Server 2016 includes the Connected User Experiences and T
 1. Operating system features and some management applications are instrumented to publish events and data. Examples of management applications include Virtual Machine Manager (VMM), Server Manager, and Storage Spaces.
 2. Events are gathered using public operating system event logging and tracing APIs.
 3. You can configure the diagnostic data level by using MDM policy, Group Policy, or registry settings.
-4. The Connected User Experiences and Telemetry component transmits the diagnostic data data.
+4. The Connected User Experiences and Telemetry component transmits the diagnostic data.
 
 Info collected at the Enhanced and Full levels of diagnostic data is typically gathered at a fractional sampling rate, which can be as low as 1% of devices reporting data at those levels.
 
 ### Data transmission
 
-All diagnostic data data is encrypted using SSL and uses certificate pinning during transfer from the device to the Microsoft Data Management Service. With Windows 10, data is uploaded on a schedule that is sensitive to event priority, battery use, and network cost. Real-time events, such as Windows Defender Advanced Threat Protection, are always sent immediately. Normal events are not uploaded on metered networks, unless you are on a metered server connection. On a free network, normal events can be uploaded every 4 hours if on battery, or every 15 minutes if on A/C power. Diagnostic and crash data are only uploaded on A/C power and free networks.
+All diagnostic data is encrypted using SSL and uses certificate pinning during transfer from the device to the Microsoft Data Management Service. With Windows 10, data is uploaded on a schedule that is sensitive to event priority, battery use, and network cost. Real-time events, such as Windows Defender Advanced Threat Protection, are always sent immediately. Normal events are not uploaded on metered networks, unless you are on a metered server connection. On a free network, normal events can be uploaded every 4 hours if on battery, or every 15 minutes if on A/C power. Diagnostic and crash data are only uploaded on A/C power and free networks.
 
 The data transmitted at the Basic and Enhanced data diagnostic levels is quite small; typically less than 1 MB per device per day,  but occasionally up to 2 MB per device per day).
 
@@ -163,7 +163,7 @@ The following table defines the endpoints for other diagnostic data services:
 
 ### Data use and access
 
-The principle of least privileged access guides access to diagnostic data data. Microsoft does not share personal data of our customers with third parties, except at the customer’s discretion or for the limited purposes described in the [Privacy Statement](https://privacy.microsoft.com/privacystatement). Microsoft may share business reports with OEMs and third-party partners that include aggregated and anonymized diagnostic data information. Data-sharing decisions are made by an internal team including privacy, legal, and data management.
+The principle of least privileged access guides access to diagnostic data. Microsoft does not share personal data of our customers with third parties, except at the customer’s discretion or for the limited purposes described in the [Privacy Statement](https://privacy.microsoft.com/privacystatement). Microsoft may share business reports with OEMs and third-party partners that include aggregated and anonymized diagnostic data information. Data-sharing decisions are made by an internal team including privacy, legal, and data management.
 
 ### Retention
 
@@ -172,7 +172,7 @@ Microsoft believes in and practices information minimization. We strive to gathe
 ## Diagnostic data levels
 This section explains the different diagnostic data levels in Windows 10, Windows Server 2016, and System Center. These levels are available on all desktop and mobile editions of Windows 10, except for the **Security** level, which is limited to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016.
 
-The diagnostic data data is categorized into four levels:
+The diagnostic data is categorized into four levels:
 
 -   **Security**. Information that’s required to help keep Windows, Windows Server, and System Center secure, including data about the Connected User Experiences and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.
 
@@ -193,7 +193,7 @@ The Security level gathers only the diagnostic data info that is required to kee
 > [!NOTE]  
 > If your organization relies on Windows Update for updates, you shouldn’t use the **Security** level. Because no Windows Update information is gathered at this level, important information about update failures is not sent. Microsoft uses this information to fix the causes of those failures and improve the quality of our updates.
 
-Windows Server Update Services (WSUS) and System Center Configuration Manager functionality is not affected at this level, nor is diagnostic data data about Windows Server features or System Center gathered.
+Windows Server Update Services (WSUS) and System Center Configuration Manager functionality is not affected at this level, nor is diagnostic data about Windows Server features or System Center gathered.
 
 The data gathered at this level includes:
 
@@ -217,7 +217,7 @@ No user content, such as user files or communications, is gathered at the **Secu
 
 ### Basic level
 
-The Basic level gathers a limited set of data that’s critical for understanding the device and its configuration. This level also includes the **Security** level data. This level helps to identify problems that can occur on a specific hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a specific driver version. The Connected User Experiences and Telemetry component does not gather diagnostic data data about System Center, but it can transmit diagnostic data for other non-Windows applications if they have user consent.
+The Basic level gathers a limited set of data that’s critical for understanding the device and its configuration. This level also includes the **Security** level data. This level helps to identify problems that can occur on a specific hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a specific driver version. The Connected User Experiences and Telemetry component does not gather diagnostic data about System Center, but it can transmit diagnostic data for other non-Windows applications if they have user consent.
 
 The normal upload range for the Basic diagnostic data level is between 109 KB - 159 KB per day, per device.
 
@@ -327,7 +327,7 @@ However, before more data is gathered, Microsoft’s privacy governance team, in
 
 ## Enterprise management
 
-Sharing diagnostic data data with Microsoft provides many benefits to enterprises, so we do not recommend turning it off. For most enterprise customers, simply adjusting the diagnostic data level and managing specific components is the best option.
+Sharing diagnostic data with Microsoft provides many benefits to enterprises, so we do not recommend turning it off. For most enterprise customers, simply adjusting the diagnostic data level and managing specific components is the best option.
 
 Customers can set the diagnostic data level in both the user interface and with existing management tools. Users can change the diagnostic data level in the **Diagnostic data** setting. In the **Settings** app, it is in **Privacy\Feedback & diagnostics**. They can choose between Basic and Full. The Enhanced level will only be displayed as an option when Group Policy or Mobile Device Management (MDM) are invoked with this level. The Security level is not available.
 
