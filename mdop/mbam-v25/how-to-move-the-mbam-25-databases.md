@@ -381,6 +381,7 @@ PS C:\> Stop-Website "Microsoft BitLocker Administration and Monitoring"
 2.  To automate this procedure, create a SQL file (.sql) that contains the following SQL script:
 
     ```syntax
+
     USE master;
 
     GO
