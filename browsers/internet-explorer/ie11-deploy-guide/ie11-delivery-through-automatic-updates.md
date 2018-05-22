@@ -27,7 +27,15 @@ Internet Explorer 11 makes browsing the web faster, easier, safer, and more reli
 - [Prevent automatic installation of Internet Explorer 11 with WSUS](#prevent-automatic-installation-of-internet-explorer-11-with-wsus)
 
 
+[Automatic updates delivery process](#automatic-updates-delivery-process)
 
+[Internet Explorer 11 automatic upgrades](#internet-explorer-11-automatic-upgrades)
+
+[Options for blocking automatic delivery](#options-for-blocking-automatic-delivery)
+
+[Availability of Internet Explorer 11](#availability-of-internet-explorer 11)
+
+[Prevent automatic installation of Internet Explorer 11 with WSUS](#prevent-automatic-installation-of-internet-explorer-11-with-wsus)
 
 ## Automatic updates delivery process
 
