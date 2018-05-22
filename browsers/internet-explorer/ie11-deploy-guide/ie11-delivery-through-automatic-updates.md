@@ -10,18 +10,21 @@ ms.prod: ie11
 ms.assetid: 
 title: Internet Explorer 11 delivery through automatic updates
 ms.sitesec: library
-ms.date: 05/10/2018
+ms.date: 05/22/2018
 ---
 
 # Internet Explorer 11 delivery through automatic updates
 Internet Explorer 11 makes browsing the web faster, easier, safer, and more reliable than ever. To help customers become more secure and up-to-date, Microsoft will distribute Internet Explorer 11 through Automatic Updates and the Windows Update and Microsoft Update sites. Internet Explorer 11 will be available for users of the 32-bit and 64-bit versions of Windows 7 Service Pack 1 (SP1), and 64-bit version of Windows Server 2008 R2 SP1. This article provides an overview of the delivery process and options available for IT administrators to control how and when Internet Explorer 11 is deployed to their organization through Automatic Updates.
 
-- [Automatic updates delivery process](#automatic-updates-delivery-process) 
-- [Internet Explorer 11 automatic upgrades](#internet-explorer-11-automatic-upgrades)
-- [Options for blocking automatic delivery](#options-for-blocking-automatic-delivery)
-- [Availability of Internet Explorer 11](#availability-of-internet-explorer 11)
-- [Prevent automatic installation of Internet Explorer 11 with WSUS](#prevent-automatic-installation-of-internet-explorer-11-with-wsus)
+- [Automatic updates delivery process](https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/ie11-delivery-through-automatic-updates#automatic-updates-delivery-process)
 
+- [Internet Explorer 11 automatic upgrades](https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/ie11-delivery-through-automatic-updates#internet-explorer-11-automatic-upgrades)
+
+- [Options for blocking automatic delivery](https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/ie11-delivery-through-automatic-updates#options-for-blocking-automatic-delivery)
+
+- [Availability of Internet Explorer 11](https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/ie11-delivery-through-automatic-updates#availability-of-internet-explorer-11)
+
+- [Prevent automatic installation of Internet Explorer 11 with WSUS](https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/ie11-delivery-through-automatic-updates#prevent-automatic-installation-of-internet-explorer-11-with-wsus)
 
 ## Automatic updates delivery process
 
