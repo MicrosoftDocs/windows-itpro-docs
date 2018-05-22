@@ -46,7 +46,7 @@ The following fields are available:
 - **LicenseType:** Reserved for future use
 - **ProcessDurationMS_Sum:** Total duration of wall clock process instances
 - **ReadCountAtExit_Sum:** Total IO reads for a process when it exited
-- **ReadSizeInKBAtExit_Sum:**Total IO read size for a process when it exited
+- **ReadSizeInKBAtExit_Sum:** Total IO read size for a process when it exited
 - **ResumeCount:** Number of times a process instance has resumed
 - **RunningDurationMS_Sum:** Total uptime
 - **SuspendCount:** Number of times a process instance was suspended
