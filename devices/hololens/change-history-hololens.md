@@ -7,13 +7,23 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
+ms.author: jdecker
+ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/30/2018
+ms.date: 05/21/2018
 ---
 
 # Change history for Microsoft HoloLens documentation
 
 This topic lists new and updated topics in the [Microsoft HoloLens documentation](index.md).
+
+## May 2018
+
+New or changed topic | Description
+--- | ---
+[Preview new mixed reality apps for HoloLens](hololens-public-preview-apps.md) | New
+[Microsoft Remote Assist app](hololens-microsoft-remote-assist-app.md) | New
+[Microsoft Layout app](hololens-microsoft-layout-app.md) | New
 
 ## Windows 10 Holographic for Business, version 1803
 

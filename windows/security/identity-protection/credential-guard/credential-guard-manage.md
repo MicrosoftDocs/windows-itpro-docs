@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: brianlic-msft
-ms.date: 01/12/2018
+ms.date: 05/18/2018
 ---
 
 # Manage Windows Defender Credential Guard
@@ -140,7 +140,7 @@ For client machines that are running Windows 10 1703, LsaIso.exe is running when
       
 ## Disable Windows Defender Credential Guard
 
-If you have to disable Windows Defender Credential Guard on a PC, you can use the following set of procedures, or you can [use the Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool](#turn-off-with-hardware-readiness-tool).
+To disable Windows Defender Credential Guard, you can use the following set of procedures or [the Device Guard and Credential Guard hardware readiness tool](#turn-off-with-hardware-readiness-tool). If Credential Guard was enabled with UEFI Lock then you must use the following procedure as the settings are persisted in EFI (firmware) variables and it will require physical presence at the machine to press a function key to accept the change. If Credential Guard was enabled without UEFI Lock then you can turn it off by using Group Policy.
 
 1.  If you used Group Policy, disable the Group Policy setting that you used to enable Windows Defender Credential Guard (**Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Device Guard** -&gt; **Turn on Virtualization Based Security**).
 2.  Delete the following registry settings:

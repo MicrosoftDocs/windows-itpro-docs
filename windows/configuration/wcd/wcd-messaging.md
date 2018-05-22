@@ -7,6 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
+ms.topic: article
 ms.date: 04/30/2018
 ---
 
@@ -289,7 +290,7 @@ Setting | Description
 --- | ---
 TaiwanAlertEnabled | Receive Taiwan alerts.
 TaiwanEmergencyAlertEnabled | Receive Taiwan emergency alerts.
-TaiwanPresidentialAlertEnabled | Receive Taiwan Presidential alerts.
+TaiwanPresidentialAlertEnabled | Receive alerts from the Leader of the Taiwan Area.
 TaiwanRequiredMonthlytestEnabled | Receive Taiwan Required Monthly Test alerts.
 
 

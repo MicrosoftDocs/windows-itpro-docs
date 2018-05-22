@@ -6,14 +6,15 @@ ms.mktglfcycl: manage
 ms.pagetype: hololens, devices
 ms.sitesec: library
 author: jdeckerms
+ms.author: jdecker
+ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/30/2018
 ---
 
 # Unlock Windows Holographic for Business features
 
->[!WARNING]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 
 Microsoft HoloLens is available in the *Development Edition*, which runs Windows Holographic (an edition of Windows 10 designed for HoloLens), and in the [Commercial Suite](https://docs.microsoft.com/windows/mixed-reality/commercial-features), which provides extra features designed for business. 
 

@@ -11,6 +11,7 @@ author: jdeckerms
 ms.localizationpriority: high
 ms.date: 08/14/2017
 ms.author: jdecker
+ms.topic: article
 ---
 
 # Use AppLocker to create a Windows 10 kiosk that runs multiple apps

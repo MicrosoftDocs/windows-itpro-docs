@@ -339,7 +339,7 @@ You must install SQL Server with the **SQL\_Latin1\_General\_CP1\_CI\_AS** coll
 <td align="left"><p>Microsoft SQL Server 2016</p></td>
 <td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
 <td align="left"><p>SP1</p></td>
-<td align="left"><p>64-bit</p></td>
+https://www.microsoft.com/en-us/download/details.aspx?id=54967<td align="left"><p>64-bit</p></td>
 <tr class="odd">
 <td align="left"><p>Microsoft SQL Server 2014</p></td>
 <td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
@@ -359,6 +359,8 @@ You must install SQL Server with the **SQL\_Latin1\_General\_CP1\_CI\_AS** coll
 </tbody>
 </table>
 
+**Note**  
+In order to support SQL 2016 you must install the March 2017 Servicing Release for MDOP https://www.microsoft.com/en-us/download/details.aspx?id=54967 .  In general stay current by always using the most recent servicing update as it also includes all bugfixes and new features.
  
 
 ### <a href="" id="bkmk-sql-stand-alone-ramreqs"></a>SQL Server processor, RAM, and disk space requirements – Stand-alone topology

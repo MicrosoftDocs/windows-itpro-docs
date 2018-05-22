@@ -11,6 +11,8 @@ searchScope:
   - Store
 ms.author: trudyha
 ms.date: 1/5/2018
+ms.technology: Windows
+ms.topic: conceptual
 ---
 
 # For IT administrators - get Minecraft: Education Edition

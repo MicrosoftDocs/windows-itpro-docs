@@ -25,7 +25,7 @@ On-premises deployments must use the On-premises Azure MFA Server using the AD F
 
 ## Prerequisites
 
-The Azure MFA Server and User Portal servers have several perquisites and must have connectivity to the Internet.
+The Azure MFA Server and User Portal servers have several prerequisites and must have connectivity to the Internet.
 
 ### Primary MFA Server
 
