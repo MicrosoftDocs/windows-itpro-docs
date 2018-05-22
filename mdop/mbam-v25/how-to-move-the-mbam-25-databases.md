@@ -74,9 +74,9 @@ PS C:\> Stop-Website "Microsoft BitLocker Administration and Monitoring"
 
 ### Back up the Recovery Database on Server A
 
-Use the **Back Up** task in SQL Server Management Studio to back up the Recovery Database on Server A.  By default, the database name is **MBAM Recovery Database**.
+1.  Use the **Back Up** task in SQL Server Management Studio to back up the Recovery Database on Server A.  By default, the database name is **MBAM Recovery Database**.
 
-To automate this procedure, create a SQL file (.sql) that contains the following SQL script, and change the MBAM Recovery Database to use the full recovery mode:
+2  To automate this procedure, create a SQL file (.sql) that contains the following SQL script, and change the MBAM Recovery Database to use the full recovery mode:
 
     ```syntax
 
@@ -123,7 +123,9 @@ To automate this procedure, create a SQL file (.sql) that contains the following
     );
 
     GO
+
     ```
+
 3.  Use the following value to replace the values in the code example with values that match your environment:
 
     **$PASSWORD$** - password that you use to encrypt the Private Key file.
