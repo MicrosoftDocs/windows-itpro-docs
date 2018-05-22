@@ -8,13 +8,13 @@ ms.date: 05/22/2018
 
 # Targeting a new operating system version
 
-After you've used Upgrade Readiness to help deploy a given version of Windows 10, you might want to use it again to help deploy a newer version of Windows 10. When you change the target operating system version (as described in [Use Upgrade Readiness to manage Windows upgrades](upgrade/use-upgrade-readiness-to-manage-windows-upgrades#target-version.md)), the app states (Importance, AppOwner, UpgradeDecision, TestPlan, and TestResult) are not reset. Follow this guidance to preserve or reset these states as needed: 
+After you've used Upgrade Readiness to help deploy a given version of Windows 10, you might want to use it again to help deploy a newer version of Windows 10. When you change the target operating system version (as described in [Use Upgrade Readiness to manage Windows upgrades](use-upgrade-readiness-to-manage-windows-upgrades.md#target-version)), the app states (Importance, AppOwner, UpgradeDecision, TestPlan, and TestResult) are not reset. Follow this guidance to preserve or reset these states as needed: 
  
 ## TestResults
 
 If you want to preserve the TestResults from the previous operating system version testing, there is nothing you need to do.
  
-If you want to reset them, click any of the rows in the **Prioritize Application** blade (described in [Upgrade Readiness - Step 1: Identify important apps](upgrade/upgrade-readiness-identify-apps.md)). This will take you to the **Log Search** user experience. Replace the query in that window with the following query:
+If you want to reset them, click any of the rows in the **Prioritize Application** blade (described in [Upgrade Readiness - Step 1: Identify important apps](upgrade-readiness-identify-apps.md)). This will take you to the **Log Search** user experience. Replace the query in that window with the following query:
  
 `search in (UAApp) IsRollup == true and RollupLevel == "Granular" and TestResult <> "Not started"`
  
@@ -49,7 +49,7 @@ After a short period of time, you will see the "user input" perspective render, 
 
 ## Related topics
 
-[Windows Analytics overview](../update/windows-analytics-overview)
-[Manage Windows upgrades with Upgrade Readiness](manage-windows-updgrades-with-upgrade-readiness)
-[Get started with Upgrade Readiness](upgrade-readiness-get-started)
+[Windows Analytics overview](../update/windows-analytics-overview.md)
+[Manage Windows upgrades with Upgrade Readiness](manage-windows-upgrades-with-upgrade-readiness.md)
+[Get started with Upgrade Readiness](upgrade-readiness-get-started.md)
 
