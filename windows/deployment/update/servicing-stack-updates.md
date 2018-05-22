@@ -7,7 +7,7 @@ ms.sitesec: library
 author: Jaimeo
 ms.localizationpriority: high
 ms.author: jaimeo
-ms.date:05/27/2018
+ms.date: 05/27/2018
 ---
 
 # Servicing stack updates
