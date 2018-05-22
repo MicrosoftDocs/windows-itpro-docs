@@ -50,6 +50,8 @@ After a short period of time, you will see the "user input" perspective render, 
 ## Related topics
 
 [Windows Analytics overview](../update/windows-analytics-overview.md)
+
 [Manage Windows upgrades with Upgrade Readiness](manage-windows-upgrades-with-upgrade-readiness.md)
+
 [Get started with Upgrade Readiness](upgrade-readiness-get-started.md)
 
