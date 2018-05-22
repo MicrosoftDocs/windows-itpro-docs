@@ -35,7 +35,6 @@ ms.date: 03/18/2018
 | Editor  | <ul><li>Word 2016</li></ul>  |   | <p style="text-align: center;">X</p>  | <p style="text-align: center;">X</p>  |   |   |   |   |   |
 </br>
 
-<!-->
 | Creating accessible content features  |  Available in which apps|Office 2016 MSI|Office 2019| Office 365 ProPlus Monthly (C2R)  | Office 365 ProPlus Semi Annual (C2R)  | Office 365 ProPlus Annual (C2R)  | Office 365 Web  | Office Mac  | Office iPad  |
 |---|---|---|---|---|---|---|---|---|---|
 | Accessibility Checker  | <ul><li>All Office 365 authoring applications on PC, Mac, Web</li></ul>  |   |   |   |   |   |   |   |   |
@@ -45,12 +44,10 @@ ms.date: 03/18/2018
 | Export as tagged PDF  | <ul><li>Word for PCs, Mac</li><li>Sway on iOS, Web, Windows 10</li></ul>  |   |   |   |   |   |   |   |   |
 | Ability to request accessible content  | <ul><li>Outlook Web Access</li></ul>  |   |   |   |   |   |   |   |   |
 </br>
--->
 
-<!-->
+
 | Communication features   | Available in which apps|Office 2016 MSI|Office 2019| Office 365 ProPlus Monthly (C2R)  | Office 365 ProPlus Semi Annual (C2R)  | Office 365 ProPlus Annual (C2R)  | Office 365 Web  | Office Mac  | Office iPad  |
 |---|---|---|---|---|---|---|---|---|---|
 | Translate Language of Document  | <ul><li>Word 2016</li><li>PowerPoint 2016</li></ul>  |   |   |   |   |   |   |   |   |
 | PowerPoint Translator  | <ul><li>PowerPoint 2016 Add-in</li></ul>  |   |   |   |   |   |   |   |   |
 </br>
--->
