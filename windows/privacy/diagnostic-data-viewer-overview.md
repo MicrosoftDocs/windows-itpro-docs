@@ -21,7 +21,9 @@ ms.date: 01/17/2018
 ## Introduction
 The Diagnostic Data Viewer is a Windows app that lets you review the diagnostic data your device is sending to Microsoft, grouping the info into simple categories based on how it's used by Microsoft.
 
-## Install and Use the Diagnostic Data ViewerYou must turn on data viewing and download the app before you can use the Diagnostic Data Viewer to review your device's diagnostic data.
+## Install and Use the Diagnostic Data Viewer
+
+You must turn on data viewing and download the app before you can use the Diagnostic Data Viewer to review your device's diagnostic data.
 
 ### Turn on data viewing
 Before you can use this tool, you must turn on data viewing in the **Settings** panel. Turning on data viewing lets Windows store your device's diagnostic data until you turn it off. Turning off data viewing stops Windows from collecting your diagnostic data and clears the existing diagnostic data from your device.
