@@ -12,8 +12,7 @@ ms.date: 05/23/2018
 
 # How to Move the MBAM 2.5 Databases
 
-Use these procedures to move the following databases from one computer to
-another; from Server A to Server B, for example:
+Use these procedures to move the following databases from one computer to another; from Server A to Server B, for example:
 
 -   Compliance and Audit Database
 
@@ -162,6 +161,7 @@ Use the information in the following table to replace the values in the code exa
 |----------------------|---------------------------------------------------------------|
 | $SERVERNAME$       | Name of the server to which the files will be copied.         |
 | $DESTINATIONSHARE$ | Name of the share and path to which the files will be copied. |
+---
 
 ### Restore the Recovery Database on Server B
 
@@ -441,6 +441,7 @@ PS C:\> Stop-Website "Microsoft BitLocker Administration and Monitoring"
     |----------------------|---------------------------------------------------------------|
     | $SERVERNAME$       | Name of the server to which the files will be copied.         |
     | $DESTINATIONSHARE$ | Name of the share and path to which the files will be copied. |
+    ---
 
 ### Restore the Compliance and Audit Database on Server B
 
