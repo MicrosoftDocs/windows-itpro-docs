@@ -15,8 +15,20 @@ author: greg-lindsay
 
 This topic describes how to deploy Windows 10 Enterprise E3 or E5 licenses with [Windows 10 Enterprise Subscription Activation](windows-10-enterprise-subscription-activation.md) or [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md) and Azure Active Directory (Azure AD).
 
->Note: Windows 10 Enterprise Subscription Activation (EA or MPSA) requires Windows 10 Pro, version 1703 or later.<BR>
+>[!NOTE]
+>Windows 10 Enterprise Subscription Activation (EA or MPSA) requires Windows 10 Pro, version 1703 or later.<BR>
 >Windows 10 Enterprise E3 in CSP requires Windows 10 Pro, version 1607 or later.<BR>
+>Automatic, non-KMS activation requires Windows 10, version 1803 or later on a device with a firmware-embedded activation key.<BR>
+
+## Firware-embedded activation key
+
+To determine if the computer has a firmware-embedded activation key, type the following command at an elevated Windows PowerShell prompt
+
+```
+(Get-WmiObject -query ‘select * from SoftwareLicensingService’).OA3xOriginalProductKey
+```
+
+If the device has a firmware-embedded activation key, it will be displayed in the output. If the output is blank, the device does not have a firmware embedded activation key. Most OEM-provided devices designed to run Windows 8 or later will have a firmware-embedded key.
 
 ## Enabling Subscription Activation with an existing EA
 
@@ -82,7 +94,7 @@ The following methods are available to assign licenses:
 
 ## Explore the upgrade experience
 
-Now that your subscription has been established and Windows 10 Enterprise E3 or E5 licenses have been assigned to users, the users are ready to upgrade their devices running Windows 10 Pro, version 1703 edition to Windows 10 Enterprise edition. So what will the users experience? How will they upgrade their devices?
+Now that your subscription has been established and Windows 10 Enterprise E3 or E5 licenses have been assigned to users, the users are ready to upgrade their devices running Windows 10 Pro, (version 1703 or later) to Windows 10 Enterprise. What will the users experience? How will they upgrade their devices?
 
 ### Step 1: Join Windows 10 Pro devices to Azure AD
 
@@ -135,15 +147,17 @@ Now the device is Azure AD joined to the company’s subscription.
 
 Now the device is Azure AD joined to the company’s subscription.
 
-### Step 2: Verify that Pro edition is activated
+### Step 2: Pro edition activation
 
-Windows 10 Pro must be successfully activated in **Settings &gt; Update & Security &gt; Activation**, as illustrated in **Figure 7a**.
+>[!IMPORTANT]
+>If the device is running Windows 10, version 1803 or later, this step is no longer necessary when there is a firmware-embedded activation key on the device. Starting with Windows 10, version 1803 the device will automatically activate Windows 10 Enterprise using the firmware-embedded activation key.<br>
+>If the device is running Windows 10, version 1703 or 1709, then Windows 10 Pro must be successfully activated in **Settings &gt; Update & Security &gt; Activation**, as illustrated in **Figure 7a**.
 
 <span id="win-10-pro-activated"/>
 <img src="images/sa-pro-activation.png" alt="Windows 10 Pro activated" width="710" height="440" />
 <BR>**Figure 7a - Windows 10 Pro activation in Settings** <BR>
 
-Windows 10 Pro activation is required before Enterprise E3 or E5 can be enabled. 
+Windows 10 Pro activation is required before Enterprise E3 or E5 can be enabled (Windows 10, versions 1703 and 1709 only). 
 
 
 ### Step 3: Sign in using Azure AD account
@@ -176,7 +190,7 @@ Virtual machines (VMs) must be configured to enable Windows 10 Enterprise subscr
 
 In some instances, users may experience problems with the Windows 10 Enterprise E3 or E5 subscription. The most common problems that users may experience are as follows:
 
-- The existing Windows 10 Pro, version 1703 operating system is not activated.
+- The existing Windows 10 Pro, version 1703 or 1709 operating system is not activated. This problem does not apply to Windows 10, version 1803 or later.
 
 - The Windows 10 Enterprise E3 or E5 subscription has lapsed or has been removed.
 

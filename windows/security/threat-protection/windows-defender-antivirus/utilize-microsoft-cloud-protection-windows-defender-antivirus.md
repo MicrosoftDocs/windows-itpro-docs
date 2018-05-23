@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 05/21/2018
 ---
 
 # Use next-gen technologies in Windows Defender Antivirus through cloud-delivered protection
@@ -63,7 +63,7 @@ Organizations running Windows 10 E5, version 1803 can also take advantage of eme
 The following table describes the differences in cloud-delivered protection between recent versions of Windows and System Center Configuration Manager.
 
 
-Feature | Windows 8.1 (Group Policy) | Windows 10, version 1607 (Group Policy) | Windows 10, version 1703 (Group Policy) | Configuration manager 2012 | Configuration manager (current branch) | Microsoft Intune
+Feature | Windows 8.1 (Group Policy) | Windows 10, version 1607 (Group Policy) | Windows 10, version 1703 (Group Policy) | System Center Configuration Manager 2012 | System Center Configuration Manager (Current Branch) | Microsoft Intune
 ---|---|---|---|---|---|---
 Cloud-protection service label | Microsoft Advanced Protection Service | Microsoft Advanced Protection Service | Cloud-based Protection | NA | Cloud protection service | Microsoft Advanced Protection Service
 Reporting level (MAPS membership level) | Basic, Advanced | Advanced | Advanced | Dependent on Windows version | Dependent on Windows version | Dependent on Windows version
