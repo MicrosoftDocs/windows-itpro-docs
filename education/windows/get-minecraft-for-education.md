@@ -24,7 +24,7 @@ ms.topic: conceptual
 
 [Minecraft: Education Edition](http://education.minecraft.net/) is built for learning. Watch this video to learn more about Minecraft.
 
-<iframe width="501" height="282" src="https://www.youtube.com/embed/hl9ZQiektJE" frameborder="0" allowfullscreen></iframe>
+<iframe width="501" height="282" src="https://www.youtube-nocookie.com/embed/hl9ZQiektJE" frameborder="0" allowfullscreen></iframe>
 
 Teachers and IT administrators can now get early access to **Minecraft: Education Edition** and add it their Microsoft Store for Business for distribution. 
 
