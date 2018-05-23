@@ -18,7 +18,7 @@ ms.date: 10/30/2017
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="/media/common/i_advanced.svg" src="/media/common/i_advanced.svg" alt="" />
+                                        <img data-hoverimage="https://docs.microsoft.com/en-us/media/common/i_advanced.svg" src="https://docs.microsoft.com/en-us/media/common/i_advanced.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -30,35 +30,17 @@ ms.date: 10/30/2017
                 </a>
             </li>
             <li>
-                <a href="https://docs.microsoft.com/education/get-started/get-started-with-microsoft-education" target="_blank">
+                <a href="/microsoft-365/education/index?branch=m365-integration" target="_blank">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="/media/common/i_get-started.svg" src="/media/common/i_get-started.svg" alt="" />
+                                        <img data-hoverimage="https://docs.microsoft.com/en-us/media/common/i_get-started.svg" src="https://docs.microsoft.com/en-us/media/common/i_get-started.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <span class="likeAnH3">For IT Pros: Get Started using Microsoft Education</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="/education/windows/test-windows10s-for-edu" target="_blank">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img data-hoverimage="/media/common/i_download-install.svg" src="/media/common/i_download-install.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <span class="likeAnH3">Test Windows 10 S for Education</span>
+                                    <span class="likeAnH3">Deploy Microsoft 365 Education</span>
                                 </div>
                             </div>
                         </div>
@@ -82,18 +64,18 @@ ms.date: 10/30/2017
                                 </div>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx" target="_blank">
+                                <a href="/microsoft-365/education/index?branch=m365-integration#pivot=itpro&amp;panel=itpro-scd" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/M365-education.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/education/education-pro-office365.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Microsoft 365 Education</h3>
-                                                    <p>Find out how to empower educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.</p>
+                                                    <h3>Cloud deployment</h3>
+                                                    <p>Get started by creating your Office 365 tenant, setting up a cloud infrastructure for your school, and creating, managing, and syncing user accounts.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -101,159 +83,7 @@ ms.date: 10/30/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/education/get-started/get-started-with-microsoft-education" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-get-started.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Get started for IT Pros</h3>
-                                                    <p>Get started with Microsoft Education and set up a cloud infrastructure for your school, acquire apps, and configure and deploy settings to your Windows 10 devices.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://support.office.com/en-us/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa?ui=en-US&amp;rs=en-US&amp;ad=US&amp;fromAR=1#ID0EAAAAEAAA=Education" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-office365.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Office 365 for Education</h3>
-                                                    <p>Manage Office 365 users and groups, get reports, and more.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/intune-education" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-intune.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Microsoft Intune for Education</h3>
-                                                    <p>Manage apps and settings on your Windows 10 devices.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/education/windows" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-windows10.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Windows 10 for Education</h3>
-                                                    <p>Configure and deploy the most secure Windows version for your school.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://docs.microsoft.com/schooldatasync/" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-school-data.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>School Data Sync</h3>
-                                                    <p>Import Student Information System (SIS) into Office 365.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/azure/active-directory/" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-azure-directory.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Azure Active Directory</h3>
-                                                    <p>Use to create and manage user and group accounts.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/microsoft-store/index?toc=/microsoft-store/education/toc.json" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-store.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Microsoft Store for Education</h3>
-                                                    <p>Purchase and manage apps and licenses for your school.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/education/windows/school-get-minecraft" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-minecraft.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Minecraft: Education Edition</h3>
-                                                    <p>Learn how to get, distribute, and manage permissions for Minecraft: Education Edition.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/education/windows/use-set-up-school-pcs-app" target="_blank">
+                                <a href="/microsoft-365/education/index?branch=m365-integration#pivot=itpro&amp;panel=itpro-sdm" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -263,8 +93,8 @@ ms.date: 10/30/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Set up School PCs</h3>
-                                                    <p>Use the app to create a provisioning package that you can use to quickly set up one or more Windows 10 devices.</p>
+                                                    <h3>Device Management</h3>
+                                                    <p>Improve student learning outcomes through connected classrooms and engaging new technologies with streamlined device management.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -272,7 +102,7 @@ ms.date: 10/30/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/microsoftteams/teams-quick-start-edu" target="_blank">
+                                <a href="/microsoft-365/education/index?branch=m365-integration#pivot=itpro&amp;panel=itpro-atft" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -282,8 +112,8 @@ ms.date: 10/30/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Microsoft Teams</h3>
-                                                    <p>Make the most of Microsoft Teams and find out how to deploy, launch pilot teams, and launch Teams to the rest of your organization.</p>
+                                                    <h3>Tools for Teachers</h3>
+                                                    <p>The latest classroom resources at teachers’ fingertips when you deploy Learning Tools, OneNote Class Notebooks, Teams, and more.</p>
                                                 </div>
                                             </div>
                                         </div>
