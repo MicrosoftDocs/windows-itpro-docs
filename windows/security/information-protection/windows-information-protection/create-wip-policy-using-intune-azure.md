@@ -46,7 +46,7 @@ Follow these steps to add a WIP policy using Intune.
         ![Add a mobile app policy](images/add-a-mobile-app-policy.png)
 
         >[!Important]
-        >Choosing **With enrollment** only applies for organizations using MDM. If you're using MAM, you must use these instructions instead: [Create and deploy Windows Information Protection (WIP) app protection policy with Intune](https://docs.microsoft.com/en-us/intune/deploy-use/create-windows-information-protection-policy-with-intune).
+        >Choosing **With enrollment** only applies for organizations using MDM. If you're using MAM only (without device enrollment), you must use these instructions instead: [Create and deploy Windows Information Protection (WIP) app protection policy with Intune](https://docs.microsoft.com/en-us/intune/deploy-use/create-windows-information-protection-policy-with-intune).
 
 4.  Click **Protected apps** and then click **Add apps**.
 
