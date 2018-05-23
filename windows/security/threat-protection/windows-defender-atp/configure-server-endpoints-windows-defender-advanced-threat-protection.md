@@ -115,7 +115,7 @@ You’ll be able to onboard in the same method available for Windows 10 client m
     If the result is ‘The specified service does not exist as an installed service’, then you'll need to install Windows Defender AV. For more information, see [Windows Defender Antivirus in Windows 10](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
 
 ## Offboard servers 
-You can offboard Windows Server, 1803 in the same method available for Windows 10 client machines.
+You can offboard Windows Server, version 1803 in the same method available for Windows 10 client machines. 
 
 For other server versions, you have two options to offboard servers from the service:
 - Uninstall the MMA agent
@@ -145,7 +145,7 @@ To offboard the server, you can use either of the following methods:
 #### Run a PowerShell command to remove the configuration
 
 1. Get your Workspace ID:
-   a. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
+   a. In the navigation pane, select **Settings** > **Onboarding**.
 
    b. Select **Windows server 2012, 2012R2 and 2016** as the operating system and get your Workspace ID:
     

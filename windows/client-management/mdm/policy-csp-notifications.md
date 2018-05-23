@@ -5,11 +5,12 @@ ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
-ms.date: 04/16/2018
+author: MariciaAlforque
+ms.date: 05/14/2018
 ---
 
 # Policy CSP - Notifications
+
 
 
 <hr/>
@@ -78,6 +79,9 @@ If you disable or do not configure this policy setting, the client computer will
 
 No reboots or service restarts are required for this policy setting to take effect.
 
+> [!Warning]  
+> This policy is designed for zero exhaust. This policy may cause some MDM processes to break because WNS notification is used by the MDM server to send real time tasks to the device, such as remote wipe, unenroll, remote find, and mandatory app installation. When this policy is set to disallow WNS, those real time processes will no longer work and some time-sensitive actions such as remote wipe when the device is stolen or unenrollment when the device is compromised will not work.
+
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -98,7 +102,6 @@ Validation:
 3. Ensure that you can't receive a notification from Facebook app while FB app isn't running
 
 <!--/Validation-->
-
 <!--/Policy-->
 
 <hr/>
@@ -120,7 +123,7 @@ Validation:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>

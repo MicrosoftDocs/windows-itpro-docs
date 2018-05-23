@@ -110,7 +110,7 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
 
 ### View the list of suppression rules
 
-1. In the navigation pane, select **Settings** > **Rules**  > **Alert suppression**.
+1. In the navigation pane, select **Settings** > **Alert suppression**.
 
 2. The list of suppression rules shows all the rules that users in your organization have created.
 

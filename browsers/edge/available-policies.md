@@ -230,7 +230,7 @@ If you disable this setting, Microsoft Edge opens a new tab with a blank page. I
 If you don't configure this setting, employees can choose how new tabs appears.
 
 
-## Always Enable book library
+## Always show the Books Library in Microsoft Edge
 >*Supported versions: Windows 10, version 1709 or later*
 
 This policy settings specifies whether to always show the Books Library in Microsoft Edge. By default, this setting is disabled, which means the library is only visible in countries or regions where available. if enabled, the Books Library is always shown regardless of countries or region of activation.

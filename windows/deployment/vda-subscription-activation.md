@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
-ms.date: 12/05/2017
+ms.date: 05/17/2018
 author: greg-lindsay
 ---
 
@@ -23,15 +23,27 @@ Deployment instructions are provided for the following scenarios:
 ## Requirements
 
 - VMs must be running Windows 10 Pro, version 1703 (also known as the Creator's Update) or later.
-- VMs must be Active Directory-joined or Azure Active Directory-joined.
+- VMs must be Active Directory-joined or Azure Active Directory (AAD)-joined.
 - VMs must be generation 1.
 - VMs must hosted by a [Qualified Multitenant Hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) (QMTH).
 
 ## Activation
 
-The underlying Windows 10 Pro license must be activated prior to Subscription Activation of Windows 10 Enterprise. 
+### Scenario 1 
+- The VM is running Windows 10, version 1803 or later.
+- The VM is hosted in Azure or another [Qualified Multitenant Hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) (QMTH).
+ 
+    When a user with VDA rights signs in to the VM using their AAD credentials, the VM is automatically stepped-up to Enterprise and activated. There is no need to perform Windows 10 Pro activation. This eliminates the need to maintain KMS or MAK in the qualifying cloud infrastructure.
 
-Procedures in this topic provide a Windows 10 Pro Generic Volume License Key (GVLK). Activation with this key is accomplished using a Volume License KMS activation server provided by the QMTH. Alternatively, a KMS activation server on your corporate network can be used if you have configured a private connection, such as [ExpressRoute](https://azure.microsoft.com/services/expressroute/) or [VPN Gateway](https://azure.microsoft.com/services/vpn-gateway/).
+### Scenario 2
+- The Hyper-V host and the VM are both running Windows 10, version 1803 or later.
+
+    [Inherited Activation](https://docs.microsoft.com/windows/deployment/windows-10-enterprise-subscription-activation#inherited-activation) is enabled. All VMs created by a user with a Windows 10 E3 or E5 license are automatically activated independent of whether a user signs in iwth a local account or using an Azure Active Directory account.
+
+### Scenario 3
+- The VM is running Windows 10, version 1703 or 1709, or the hoster is not an authorized [QMTH](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) partner. 
+
+    In this scenario, the underlying Windows 10 Pro license must be activated prior to Subscription Activation of Windows 10 Enterprise. Activation is accomplished using a Windows 10 Pro Generic Volume License Key (GVLK) and a Volume License KMS activation server provided by the hoster. Alternatively, a KMS activation server on your corporate network can be used if you have configured a private connection, such as [ExpressRoute](https://azure.microsoft.com/services/expressroute/) or [VPN Gateway](https://azure.microsoft.com/services/vpn-gateway/).
 
 For examples of activation issues, see [Troubleshoot the user experience](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses#troubleshoot-the-user-experience).
 
@@ -50,23 +62,26 @@ For examples of activation issues, see [Troubleshoot the user experience](https:
 6. Follow the instructions to use sysprep at [Steps to generalize a VHD](https://docs.microsoft.com/azure/virtual-machines/windows/prepare-for-upload-vhd-image#steps-to-generalize-a-vhd) and then start the VM again.
 7. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
 8. Open Windows Configuration Designer and click **Provison desktop services**.
-9. Under **Name**, type **Desktop AD Enrollment Pro GVLK**, click **Finish**, and then on the **Set up device** page enter a device name. 
-    - Note: You can use a different project name, but this name is also used with dism.exe in a subsequent step.
-10. Under **Enter product key** type the Pro GVLK key: **W269N-WFGWX-YVC9B-4J6C9-T83GX**.
-11. On the Set up network page, choose **Off**.
-12. On the Account Management page, choose **Enroll into Active Directory** and then enter the account details.
+9. If you must activate Windows 10 Pro as described for [scenario 3](#scenario-3), complete the following steps. Otherwise, skip to step 10.
+ 
+    1. Under **Name**, type **Desktop AD Enrollment Pro GVLK**, click **Finish**, and then on the **Set up device** page enter a device name.
+        - Note: You can use a different project name, but this name is also used with dism.exe in a subsequent step.
+    2. Under **Enter product key** type the Pro GVLK key: **W269N-WFGWX-YVC9B-4J6C9-T83GX**.
+10. On the Set up network page, choose **Off**.
+11. On the Account Management page, choose **Enroll into Active Directory** and then enter the account details.
     - Note: This step is different for [Azure AD-joined VMs](#azure-active-directory-joined-vms).
-13. On the Add applications page, add applications if desired. This step is optional.
-14. On the Add certificates page, add certificates if desired. This step is optional.
-15. On the Finish page, click **Create**.
-16. In file explorer, double-click the VHD to mount the disk image. Determine the drive letter of the mounted image.
-17. Type the following at an elevated commnand prompt. Replace the letter **G** with the drive letter of the mounted image, and enter the project name you used if it is different than the one suggested:
+12. On the Add applications page, add applications if desired. This step is optional.
+13. On the Add certificates page, add certificates if desired. This step is optional.
+14. On the Finish page, click **Create**.
+15. If you must activate Windows 10 Pro as described for [scenario 3](#scenario-3), complete the following steps. Otherwise, skip to step 16.
+    1. In file explorer, double-click the VHD to mount the disk image. Determine the drive letter of the mounted image.
+    2. Type the following at an elevated commnand prompt. Replace the letter **G** with the drive letter of the mounted image, and enter the project name you used if it is different than the one suggested:
 
     ```
     Dism.exe /Image=G:\ /Add-ProvisioningPackage /PackagePath: "Desktop AD Enrollment Pro GVLK.ppkg"
     ```
-18. Right-click the mounted image in file explorer and click **Eject**.
-19. See instructions at [Upload and create VM from generalized VHD](https://docs.microsoft.com/azure/virtual-machines/windows/upload-generalized-managed#log-in-to-azure) to log in to Azure, get your storage account details, upload the VHD, and create a managed image.
+    3. Right-click the mounted image in file explorer and click **Eject**.
+1. See instructions at [Upload and create VM from generalized VHD](https://docs.microsoft.com/azure/virtual-machines/windows/upload-generalized-managed#log-in-to-azure) to log in to Azure, get your storage account details, upload the VHD, and create a managed image.
 
 ## Azure Active Directory-joined VMs
 
@@ -75,8 +90,8 @@ For examples of activation issues, see [Troubleshoot the user experience](https:
 
 For Azure AD-joined VMs, follow the same instructions (above) as for [Active Directory-joined VMs](#active-directory-joined-vms) with the following exceptions:
 - In step 9, during setup with Windows Configuration Designer, under **Name**, type a name for the project that indicates it is not for Active Directory joined VMs, such as **Desktop Bulk Enrollment Token Pro GVLK**.
-- In step 12, during setup with Windows Configuration Designer, on the Account Management page, instead of enrolling in Active Directory, choose **Enroll in Azure AD**, click **Get Bulk Token**, sign in and add the bulk token using your organization's credentials.
-- In step 17, when entering the PackagePath, use the project name you entered in step 9 (ex: **Desktop Bulk Enrollment Token Pro GVLK.ppkg**)
+- In step 11, during setup with Windows Configuration Designer, on the Account Management page, instead of enrolling in Active Directory, choose **Enroll in Azure AD**, click **Get Bulk Token**, sign in and add the bulk token using your organization's credentials.
+- In step 15, sub-step 2, when entering the PackagePath, use the project name you entered in step 9 (ex: **Desktop Bulk Enrollment Token Pro GVLK.ppkg**)
 - When attempting to access the VM using remote desktop, you will need to create a custom RDP settings file as described below in [Create custom RDP settings for Azure](#create-custom-rpd-settings-for-azure).
 
 ## Azure Gallery VMs
@@ -92,9 +107,10 @@ For Azure AD-joined VMs, follow the same instructions (above) as for [Active Dir
 4. Click **Add**, type **Authenticated users**, and then click **OK** three times.
 5. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
 6. Open Windows Configuration Designer and click **Provison desktop services**.
-7. Under **Name**, type **Desktop Bulk Enrollment Token Pro GVLK**, click **Finish**, and then on the **Set up device** page enter a device name. 
-    - Note: You can use a different project name, but this name is also used with dism.exe in a subsequent step.
-8. Under **Enter product key** type the Pro GVLK key: **W269N-WFGWX-YVC9B-4J6C9-T83GX**.
+7. If you must activate Windows 10 Pro as described for [scenario 3](#scenario-3), complete the following steps. Otherwise, skip to step 8.
+    1. Under **Name**, type **Desktop Bulk Enrollment Token Pro GVLK**, click **Finish**, and then on the **Set up device** page enter a device name.
+    2. Under **Enter product key** type the Pro GVLK key: **W269N-WFGWX-YVC9B-4J6C9-T83GX**.
+8. Under **Name**, type **Desktop Bulk Enrollment**, click **Finish**, and then on the **Set up device** page enter a device name.
 9. On the Set up network page, choose **Off**.
 10. On the Account Management page, choose **Enroll in Azure AD**, click **Get Bulk Token**, sign in, and add the bulk token using your organizations credentials.
 11. On the Add applications page, add applications if desired. This step is optional.

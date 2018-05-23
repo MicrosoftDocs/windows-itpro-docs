@@ -5,8 +5,8 @@ ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
-ms.date: 03/12/2018
+author: MariciaAlforque
+ms.date: 05/14/2018
 ---
 
 # Policy CSP - EnterpriseCloudPrint

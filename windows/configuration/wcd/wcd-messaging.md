@@ -290,7 +290,7 @@ Setting | Description
 --- | ---
 TaiwanAlertEnabled | Receive Taiwan alerts.
 TaiwanEmergencyAlertEnabled | Receive Taiwan emergency alerts.
-TaiwanPresidentialAlertEnabled | Receive Taiwan Presidential alerts.
+TaiwanPresidentialAlertEnabled | Receive alerts from the Leader of the Taiwan Area.
 TaiwanRequiredMonthlytestEnabled | Receive Taiwan Required Monthly Test alerts.
 
 
