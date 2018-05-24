@@ -20,7 +20,7 @@ This topic describes how to deploy Windows 10 Enterprise E3 or E5 licenses with 
 >Windows 10 Enterprise E3 in CSP requires Windows 10 Pro, version 1607 or later.<BR>
 >Automatic, non-KMS activation requires Windows 10, version 1803 or later on a device with a firmware-embedded activation key.<BR>
 
-## Firware-embedded activation key
+## Firmware-embedded activation key
 
 To determine if the computer has a firmware-embedded activation key, type the following command at an elevated Windows PowerShell prompt
 
