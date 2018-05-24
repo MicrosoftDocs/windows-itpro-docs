@@ -14,7 +14,7 @@ ms.date: 05/05/2018
 # Single-sign on using Windows Hello for Business on Azure Active Directory joined devices
 
 **Applies to**
--   Windows 10
+-   Windows 10
 -   Azure Active Directory joined
 -   Hybrid deployment
 
