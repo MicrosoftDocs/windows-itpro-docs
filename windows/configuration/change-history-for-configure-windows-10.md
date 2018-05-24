@@ -23,6 +23,7 @@ New or changed topic | Description
 --- | ---
 [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md) | Added note that Wi-Fi Sense is no longer available.
 Topics about Windows 10 diagnostic data | Moved to [Windows Privacy](https://docs.microsoft.com/windows/privacy/).
+[Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md) | Added details of event log entries to check for when customization is not applied as expected.
 
 ## RELEASE: Windows 10, version 1803
 
