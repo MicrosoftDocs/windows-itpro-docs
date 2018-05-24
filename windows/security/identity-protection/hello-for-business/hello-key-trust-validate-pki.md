@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 10/10/2017
+ms.date: 05/05/2018
 ---
 # Validate and Configure Public Key Infrastructure
 
@@ -60,7 +60,7 @@ Sign-in to a certificate authority or management workstations with _Domain Admin
 1.	Open the **Certificate Authority** management console.
 2.	Right-click **Certificate Templates** and click **Manage**.
 3.	In the **Certificate Template Console**, right-click the **Kerberos Authentication** template in the details pane and click **Duplicate Template**.
-4.	On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Authority** list. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Recipient** list.
+4.	On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2008 R2** from the **Certification Authority** list. Select **Windows 7.Server 2008 R2** from the **Certification Recipient** list.
 5.	On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise’s needs.   
     **Note**If you use different template names, you’ll need to remember and substitute these names in different portions of the lab.
 6.	On the **Subject** tab, select the **Build from this Active Directory information** button if it is not already selected.  Select **None** from the **Subject name format** list.  Select **DNS name** from the **Include this information in alternate subject** list. Clear all other items.

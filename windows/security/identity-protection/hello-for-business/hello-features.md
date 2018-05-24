@@ -15,7 +15,7 @@ ms.date: 05/05/2018
 # Windows Hello for Business Features
 
 **Applies to:**
--   Windows 10
+-   Windows 10
 
 Consider these additional features you can use after your organization deploys Windows Hello for Business. 
 

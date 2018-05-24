@@ -14,7 +14,7 @@ ms.date: 05/05/2018
 # Windows Hello for Business Videos
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 ## Overview of Windows Hello for Business and Features
 

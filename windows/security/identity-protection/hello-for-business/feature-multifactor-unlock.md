@@ -14,7 +14,7 @@ ms.date: 03/20/2018
 # Multifactor Unlock
 
 **Applies to:**
--   Windows 10
+-   Windows 10
 
 **Requirements:**
 * Windows Hello for Business deployment (Hybrid or On-premises)

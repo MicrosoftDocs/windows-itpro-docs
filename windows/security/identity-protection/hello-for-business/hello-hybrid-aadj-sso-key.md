@@ -1,5 +1,5 @@
 ---
-title: Configure Key trust Azure AD joined devices for authentication to Active Directory
+title: Configure Azure AD joined devices for On-premises Single-Sign On
 description: Azure Active Directory joined devices in a hybrid Deployment for on-premises single sign-on
 keywords: identity, PIN, biometric, Hello, passport, AADJ, SSO, 
 ms.prod: w10
@@ -11,7 +11,7 @@ ms.author: mstephen
 localizationpriority: high
 ms.date: 05/05/2018
 ---
-# Configure Key trust Azure AD joined devices for authentication to Active Directory
+# Configure Azure AD joined devices for On-premises Single-Sign On
 
 **Applies to**
 - Windows 10
@@ -32,19 +32,31 @@ Certificates issued by a certificate authority can be revoked.  When a certifica
 
 ![Domain Controller Certificate with LDAP CDP](images/aadj/Certificate-CDP.png)
 
-The preceding domain controller certificate shows a CRL distribution path (CDP) using Active Directory.  You can determine this because the value in the URL begins with **ldap**.  Using Active Directory for domain joined devices provides a highly available CRL distribution point.  However, Azure Active Directory joined devices and users on Azure Active Directory joined devices cannot read data from Active Directory, and certificate validation does not provide an opportunity to authenticate prior to reading the certificate revocation list.  This becomes a circular problem as the user is attempting to authenticate, but must read Active Directory to perform the complete the authentication.  However, the user cannot read Active Directory because they have not authenticated.  To resolve this issue, the CRL distribution point must be a location that is accessible by Azure Active Directory joined devices that does not require authentication.  The easiest solution is to publish the CRL distribution point on a web server that uses HTTP (not HTTPS).
+The preceding domain controller certificate shows a CRL distribution path (CDP) using Active Directory.  You can determine this because the value in the URL begins with **ldap**.  Using Active Directory for domain joined devices provides a highly available CRL distribution point.  However, Azure Active Directory joined devices and users on Azure Active Directory joined devices cannot read data from Active Directory, and certificate validation does not provide an opportunity to authenticate prior to reading the certificate revocation list.  This becomes a circular problem as the user is attempting to authenticate, but must read Active Directory to complete the authentication, but the user cannot read Active Directory because they have not authenticated.
 
-If your CRL distribution point does not list an HTTP distribution point, then you need to reconfigure the issuing certificate authority to include an HTTP CRL distribution point, preferably first in the list of distribution points. 
+To resolve this issue, the CRL distribution point must be a location that is accessible by Azure Active Directory joined devices that does not require authentication.  The easiest solution is to publish the CRL distribution point on a web server that uses HTTP (not HTTPS).
+
+If your CRL distribution point does not list an HTTP distribution point, then you need to reconfigure the issuing certificate authority to include an HTTP CRL distribution point, preferably first in the list of distribution points.
 
 ### Domain Controller Certificates
 
 Certificate authorities write CRL distribution points in certificates as they are issued.  If the distribution point changes, then previously issued certificates must be reissued for the certificate authority to include the new CRL distribution point.  The domain controller certificate is one the critical components of Azure AD joined devices authenticating to Active Directory
+
+### Why does Windows need to validate the domain controller certifcate?
+
+Windows Hello for Business enforces the strict KDC validation security feature, which enforces a more restrictive criteria that must be met by the Key Distribution Center (KDC). When authenticating using Windows Hello for Business, the Windows 10 client validates the reply from the domain controller by ensuring all of the following are met:
+
+- The domain controller has the private key for the certificate provided.
+- The root CA that issued the domain controller's certificate is in the device's **Trusted Root Certificate Authorties**. 
+- The domain controller's certificate has the **KDC Authentication** enhanced key usage.
+- The domain controller's certificate's subject alternate name has a DNS Name that matches the name of the domain.
 
 ## Configuring a CRL Distribution Point for an issuing certificate authority
 
 Use this set of procedures to update your certificate authority that issues your domain controller certificates to include an http-based CRL distribution point. 
 
 Steps you will be performing include:
+
 -[Configure Internet Information Services to host CRL distribution point](#configure-internet-information-services-to-host-crl-distribution-point) 
 - [Prepare a file share to host the certificate revocation list](#prepare-a-file-share-to-host-the-certificate-revocation-list)
 - [Configure the new CRL distribution point in the issuing certificate authority](#Configure-the-new-crl-distribution-point-in-the-issuing-certificate-authority)
@@ -130,7 +142,7 @@ These procedures configure NTFS and share permissions on the web server to allow
 The web server is ready to host the CRL distribution point.  Now, configure the issuing certificate authority to publish the CRL at the new location and to include the new CRL distribution point
 
 
-#### Configure the CRL distrubution Point
+#### Configure the CRL distribution Point
 1. On the issuing certificate authority, sign-in as a local administrator.  Start the **Certificate Authority** console from **Administrative Tools**. 
 2. In the navigation pane, right-click the name of the certificate authority and click **Properties**
 3. Click **Extensions**.  On the **Extensions** tab, select **CRL Distribution Point (CDP)** from the **Select extension** list.
@@ -232,4 +244,12 @@ A **Trusted Certificate** device configuration profile is how you deploy trusted
 ![Intune Trusted Certificate Profile](images/aadj/intune-create-trusted-certificate-profile.png)
 5. In the **Enterprise Root Certificate** blade, click **Assignmnets**.  In the **Include** tab, select **All Devices** from the **Assign to** list.  Click **Save**.
 ![Intune Profile assignment](images/aadj/intune-device-config-enterprise-root-assignment.png)
-6. Sign out of the Microsoft Azure Portal. 
+6. Sign out of the Microsoft Azure Portal.
+
+## Using Certificates for On-premises Single-sign On
+
+If you plan to use certificates for on-premises single-sign on, then follow these **addtiional** steps to configure the environment to enroll certificates for Azure AD joined devices.
+
+
+
+<hr>

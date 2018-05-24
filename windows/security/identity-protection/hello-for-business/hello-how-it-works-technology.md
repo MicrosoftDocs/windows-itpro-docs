@@ -13,7 +13,7 @@ ms.date: 05/05/2018
 # Technology and Terms
 
 **Applies to:**
--   Windows 10
+-   Windows 10
 
 - [Attestation Identity Keys](#Attestation-Identity-Keys)
 - [Azure AD Joined](#Azure-AD-Joined)

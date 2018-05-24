@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 03/26/2018
+ms.date: 05/05/2018
 ---
 # Planning a Windows Hello for Business Deployment
 
@@ -85,9 +85,9 @@ The in-box Windows Hello for Business provisioning experience creates a hardware
 
 #### Multifactor authentication
 
-The goal of Windows Hello for Business is to move organizations away from passwords by providing them a strong credential that provides easy two-factor authentication.  The inbox provisioning experience accepts the user’s weak credentials (username and password) as the first factor authentication; however, the user must provide a second factor of authentication before Windows provisions a strong credential.  
+The goal of Windows Hello for Business is to move organizations away from passwords by providing them a strong credential that provides easy two-factor authentication.  The in-box provisioning experience accepts the user’s weak credentials (username and password) as the first factor authentication; however, the user must provide a second factor of authentication before Windows provisions a strong credential.  
 
-Cloud only and hybrid deployments provide many choices for multifactor authentication.  On-premises deployments must use a multifactor authentication that provides an AD FS multifactor adapter to be used in conjunction with the on-premises Windows Server 2016 AD FS server role. Organizations can use the on-premises Azure Multifactor Authentication server, or choose from several third parties (Read [Microsoft and third-party additional authentication methods](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods) for more information).
+Cloud only and hybrid deployments provide many choices for multi-factor authentication.  On-premises deployments must use a multi-factor authentication that provides an AD FS multi-factor adapter to be used in conjunction with the on-premises Windows Server 2016 AD FS server role. Organizations can use the on-premises Azure Multi-factor Authentication server, or choose from several third parties (Read [Microsoft and third-party additional authentication methods](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods) for more information).
 >[!NOTE]
 > Azure Multi-Factor Authentication is available through:
 >* Microsoft Enterprise Agreement
@@ -163,7 +163,7 @@ Choose a trust type that is best suited for your organizations.  Remember, the t
 
 One trust model is not more secure than the other. The major difference is based on the organization comfort with deploying Windows Server 2016 domain controllers and not enrolling users with end entity certificates (key-trust) against using existing domain controllers (Windows Server 2008R2 or later) and needing to enroll certificates for all their users (certificate trust).  
 
-Because the certificate trust types issues certificates, there is more configuration and infrastructure needed to accomodate user certificate enrollment, which could also be a factor to consider in your decision.  Additional infrastructure needed for certificate-trust deployements includes a certificate registration authority.  Hybrid Azure AD joined devices managed by Group Policy need the Windows Server 2016 AD FS role to issue certificates.  Hybrid Azure AD joined devices and Azure AD joined devices managed by Intune or a compatible MDM need the Windows Server NDES server role to issue certificates.  
+Because the certificate trust types issues certificates, there is more configuration and infrastructure needed to accommodate user certificate enrollment, which could also be a factor to consider in your decision.  Additional infrastructure needed for certificate-trust deployments includes a certificate registration authority.  Hybrid Azure AD joined devices managed by Group Policy need the Windows Server 2016 AD FS role to issue certificates.  Hybrid Azure AD joined devices and Azure AD joined devices managed by Intune or a compatible MDM need the Windows Server NDES server role to issue certificates.  
 
 If your organization wants to use the key trust type, write **key trust** in box **1b** on your planning worksheet. Write **Windows Server 2016** in box **4d**. Write **N/A** in box **5b**.
 
@@ -187,17 +187,17 @@ If box **1a** on your planning worksheet reads **on-premises**, write **AD FS** 
 
 ### Directory Synchronization
 
-Windows Hello for Business is strong user authentication, which usually means there is an identity (a user or username) and a credential (typically a key pair).  Some operations require writing or reading user data to or from the directory. For example, reading the user’s phone number to perform multifactor authentication during provisioning or writing the user’s public key.
+Windows Hello for Business is strong user authentication, which usually means there is an identity (a user or username) and a credential (typically a key pair).  Some operations require writing or reading user data to or from the directory. For example, reading the user’s phone number to perform multi-factor authentication during provisioning or writing the user’s public key.
 
 If box **1a** on your planning worksheet reads **cloud only**, write **N/A** in box **1e**.  User information is written directly to Azure Active Directory and there is not another directory with which the information must be synchronized.
 
 If box **1a** on your planning worksheet reads **hybrid**, then write **Azure AD Connect** in box **1e** on your planning worksheet.
 
-If box **1a** on your planning worksheet reads **on-premises**, then write **Azure MFA Server**.  This deployment exclusively uses Active Directory for user information with the exception of the multifactor authentication.  The on-premises Azure MFA server synchronizes a subset of the user information, such as phone number, to provide multifactor authentication while the user’s credential remain on the on-premises network.
+If box **1a** on your planning worksheet reads **on-premises**, then write **Azure MFA Server**.  This deployment exclusively uses Active Directory for user information with the exception of the multi-factor authentication.  The on-premises Azure MFA server synchronizes a subset of the user information, such as phone number, to provide multi-factor authentication while the user’s credential remain on the on-premises network.
 
 ### Multifactor Authentication
 
-The goal of Windows Hello for Business is to move user authentication away from passwords to a strong, key-based user authentication.  Passwords are weak credentials and cannot be trusted by themselves as an attacker with a stolen password could be attempting to enroll in Windows Hello for Business.  To keep the transition from a weak to a strong credential secure, Windows Hello for Business relies on multifactor authentication during provisioning to have some assurances that the user identity provisioning a Windows Hello for Business credential is the proper identity.
+The goal of Windows Hello for Business is to move user authentication away from passwords to a strong, key-based user authentication.  Passwords are weak credentials and cannot be trusted by themselves as an attacker with a stolen password could be attempting to enroll in Windows Hello for Business.  To keep the transition from a weak to a strong credential secure, Windows Hello for Business relies on multi-factor authentication during provisioning to have some assurances that the user identity provisioning a Windows Hello for Business credential is the proper identity.
 
 If box **1a** on your planning worksheet reads **cloud only**, then your only option is to use the Azure MFA cloud service.  Write **Azure MFA** in box **1f** on your planning worksheet.
 
@@ -311,9 +311,9 @@ Windows Hello for Business does not require an Azure AD premium subscription.  H
 
 If box **1a** on your planning worksheet reads **on-premises**, write **No** in box **6c** on your planning worksheet.
 
-If box **1a** on your planning worksheet reads **hybrid** and box **1b** reads **key trust**, write **No** in box **6c** on your planning worksheet.  You can deploy Windows Hello for Business using the free Azure Active Directory account (additional costs needed for multifactor authentication).
+If box **1a** on your planning worksheet reads **hybrid** and box **1b** reads **key trust**, write **No** in box **6c** on your planning worksheet.  You can deploy Windows Hello for Business using the free Azure Active Directory account (additional costs needed for multi-factor authentication).
 
-If box **5b** on your planning worksheet reads **AD FS RA**, write **Yes** in box **6c** on your planning worksheet.  Enrolling a certificate using the AD FS registration authority requires devices to authenticate to the AD FS server, which requires device writeback—an Azure AD Premium feature.
+If box **5b** on your planning worksheet reads **AD FS RA**, write **Yes** in box **6c** on your planning worksheet.  Enrolling a certificate using the AD FS registration authority requires devices to authenticate to the AD FS server, which requires device write-back, an Azure AD Premium feature.
 
 Modern managed devices do not require an Azure AD premium subscription.  By forgoing the subscription, your users must manually enroll devices in the modern management software, such as Intune or a supported third-party MDM.
 

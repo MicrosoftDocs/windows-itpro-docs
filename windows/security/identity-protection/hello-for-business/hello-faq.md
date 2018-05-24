@@ -14,7 +14,7 @@ ms.date: 05/05/2018
 # Windows Hello for Business Frequently Ask Questions
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 ## What about virtual smart cards?
 
