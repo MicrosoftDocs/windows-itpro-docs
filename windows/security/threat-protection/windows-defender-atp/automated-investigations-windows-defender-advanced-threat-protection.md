@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 05/08/2018
+ms.date: 05/21/2018
 ---
 
 # Use Automated investigations to investigate and remediate threats
@@ -117,7 +117,7 @@ Status | Description
 | Queued                                                    | Investigation has been queued and will resume as soon as other remediation activities are completed.                                |
 | Running                                                   | Investigation ongoing. Malicious entities found will be remediated.                                                                 |
 | Remediated                                                | Malicious entities found were successfully remediated.                                                                              |
-| Terminated by system                                      | Investigation was stopped due to <reason>.                                                                                          |
+| Terminated by system                                      | Investigation was stopped by the system.                                                                                          |
 | Terminated by user                                        | A user stopped the investigation before it could complete.  
 | Partially investigated                                    | Entities directly related to the alert have been investigated. However, a problem stopped the investigation of collateral entities. |
 

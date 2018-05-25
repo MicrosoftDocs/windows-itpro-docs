@@ -38,68 +38,26 @@ For more information on enabling MDM with Microsoft Intune, see [Setup Windows D
 
 For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
 
-### Using the Azure Intune Portal to deploy Windows Defender Advanced Threat Protection policies on Windows 10 1607 and higher
+### Use the Azure Intune Portal to deploy Windows Defender Advanced Threat Protection policies on Windows 10 1607 and higher
 
-1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
+1. Login to the [Microsoft Azure portal](https://portal.azure.com).
 
-    a. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
+2. Select **Device Configuration > Profiles > Create profile**.
 
-    b. Select Windows 10 as the operating system.
+3. Enter a **Name** and **Description**.
 
-    c. In the **Deployment method** field, select **Mobile Device Management / Microsoft Intune**.
-    
-    d. Click **Download package**, and save the .zip file.
+4. For **Platform**, select **Windows 10 and later**.
 
-2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATP.onboarding*.
+5. For **Profile type**, select **Windows Defender ATP (Windows 10 Desktop)**.
 
-3. Login to the [Microsoft Azure portal](https://portal.azure.com).
+6. Configure the settings:
+    - **Onboard Configuration Package**: Browse and select the **WindowsDefenderATP.onboarding** file you downloaded. This file enables a setting so devices can report to the Windows Defender ATP service.
+    - **Sample sharing for all files**: Allows samples to be collected, and shared with Windows Defender ATP. For example, if you see a suspicious file, you can submit it to Windows Defender ATP for deep analysis.
+    - **Expedite telemetry reporting frequency**: For devices that are at high risk, enable this setting so it reports telemetry to the Windows Defender ATP service more frequently.
+    - **Offboard Configuration Package**: If you want to remove Windows Defender ATP monitoring, you can download an offboarding package from the Windows Defender ATP portal, and add it. Otherwise, skip this property.
+   
+7. Select **OK**, and **Create** to save your changes, which creates the profile.
 
-4. From the Intune blade, choose **Device configuration**.
-
-  ![Image of device configuration menu in Microsoft Azure](images/atp-azure-intune-device-config.png)
-
-5. Under **Manage**, choose **Profiles** and click **Create Profile**.
-
-  ![Image of policy creation in Azure](images/atp-azure-intune-create-profile.png)
-
-6. Type a name, description and choose **Windows 10 and later** as the Platform and **Custom** as the Profile type.
-
-  ![Image of naming a policy](images/atp-intune-custom.png)
-
-7. Click **Settings** > **Configure**.
-
-  ![Image of settings](images/atp-intune-configure.png)
-
-8. Under Custom OMA-URI Settings, click **Add**.
-
-  ![Image of configuration settings](images/atp-custom-oma-uri.png)
-
-9. Enter the following values, then click **OK**.
-
-  ![Image of profile creation](images/atp-oma-uri-values.png)
-
-  - **Name**: Type a name for the setting.
-  - **Description**: Type a description for the setting.
-  - **OMA-URI**: _./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Onboarding_
-  - **Value**: Copy and paste the contents of the WindowsDefenderATP.onboarding file you downloaded.
-
-10. Save the settings by clicking **OK**.
-  
-11. Click **Create**.
-
-  ![Image of the policy being created](images/atp-intune-create-policy.png)
-
-12. To deploy the Profile, click **Assignments**. 
-
-  ![Image of groups](images/atp-intune-assignments.png)
-
-13. Search for and select the Group you want to apply the Configuration Profile to, then click **Select**.
-
-  ![Image of groups](images/atp-intune-group.png)
-
-14. Click **Save** to finish deploying the Configuration Profile.
-
-  ![Image of deployment](images/atp-intune-save-deployment.png)
 
 
 ### Onboard and monitor machines using the classic Intune console

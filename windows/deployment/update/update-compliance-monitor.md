@@ -37,7 +37,7 @@ See the following topics in this guide for detailed information about configurin
 
 Click the following link to see a video demonstrating Update Compliance features.
 
-[![YouTube video demonstrating Update Compliance](images/UC-vid-crop.jpg)](https://www.youtube.com/embed/1cmF5c_R8I4) 
+[![YouTube video demonstrating Update Compliance](images/UC-vid-crop.jpg)](https://www.youtube-nocookie.com/embed/1cmF5c_R8I4) 
 
 ## Update Compliance architecture
  

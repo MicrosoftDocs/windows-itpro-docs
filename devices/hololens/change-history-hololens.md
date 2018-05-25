@@ -10,7 +10,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 05/07/2018
+ms.date: 05/22/2018
 ---
 
 # Change history for Microsoft HoloLens documentation
@@ -21,9 +21,10 @@ This topic lists new and updated topics in the [Microsoft HoloLens documentation
 
 New or changed topic | Description
 --- | ---
-[Get ready to preview new mixed reality apps for HoloLens](hololens-public-preview-apps.md) | New
-
-
+[Preview new mixed reality apps for HoloLens](hololens-public-preview-apps.md) | New
+[Microsoft Remote Assist app](hololens-microsoft-remote-assist-app.md) | New
+[Microsoft Layout app](hololens-microsoft-layout-app.md) | New
+[Set up HoloLens in kiosk mode](hololens-kiosk.md) | Added instructions for setting up a guest account for kiosk mode.
 
 ## Windows 10 Holographic for Business, version 1803
 
