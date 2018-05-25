@@ -55,7 +55,7 @@ Windows Hello for Business enforces the strict KDC validation security feature, 
 
 Use this set of procedures to update your certificate authority that issues your domain controller certificates to include an http-based CRL distribution point. 
 
-Steps you will be performing include:
+Steps you will perform include:
 
 - [Configure Internet Information Services to host CRL distribution point](#configure-internet-information-services-to-host-crl-distribution-point) 
 - [Prepare a file share to host the certificate revocation list](#prepare-a-file-share-to-host-the-certificate-revocation-list)
@@ -170,7 +170,6 @@ The web server is ready to host the CRL distribution point.  Now, configure the 
 7. Select the CDP you just created.
 
 ![CDP publishing location](images/aadj/cdp-extension-complete-unc.png)
-
 8. Select **Publish CRLs to this location**.
 9. Select **Publish Delta CRLs to this location**.
 10. Click **Apply** save your selections.  Click **Yes** when ask to restart the service.  Click **OK** to close the properties dialog box.
@@ -217,7 +216,9 @@ With the CA properly configured with a valid HTTP-based CRL distribution point, 
 
 Your domain controllers have new certificate that include the new CRL distribution point.  Next, you need your enterprise root certificate so you can deploy it to Azure AD joined devices.  Deploying the enterprise root certificates to the device, ensures the device trusts any certificates issued by the certificate authority.  Without the certificate, Azure AD joined devices do not trust domain controller certificates and authentication fails. 
 
-First, you need to export the enterprise root certificate authority certificate to a file.
+Steps you will perform include:
+- [Export Enterprise Root certificate](#export-enterprise-root-certificate)
+- [Create and Assign a Trust Certificate Device Configuration Profile](#create-and-assign-a-trust-certificate-device-configuration-profile)
 
 ### Export Enterprise Root certificate
 
@@ -248,10 +249,19 @@ A **Trusted Certificate** device configuration profile is how you deploy trusted
 ![Intune Profile assignment](images/aadj/intune-device-config-enterprise-root-assignment.png)
 6. Sign out of the Microsoft Azure Portal.
 
-## Using Certificates for On-premises Single-sign On
+## Section Review
+> [!div class="checklist"]
+> * Configure Internet Information Services to host CRL distribution point
+> * Prepare a file share to host the certificate revocation list
+> * Configure the new CRL distribution point in the issuing certificate authority
+> * Publish CRL
+> * Reissue domain controller certificates
+> * Export Enterprise Root certificate
+> * Create and Assign a Trust Certificate Device Configuration Profile
 
-If you plan to use certificates for on-premises single-sign on, then follow these **addtiional** steps to configure the environment to enroll certificates for Azure AD joined devices.
+
+If you plan on using certificates for on-premises single-sign on, perform the additional steps in [Using Certificates for On-premises Single-sign On](hello-hybrid-aadj-sso-cert.md). 
+ 
 
 
 
-<hr>

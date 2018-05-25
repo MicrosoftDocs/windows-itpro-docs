@@ -1,5 +1,5 @@
 ---
-title: Azure Active Directory joined devices in a hybrid Deployment for on-premises single sign-on
+title: Using Certificates for On-premises Single-sign On single sign-on
 description: Azure Active Directory joined devices in a hybrid Deployment for on-premises single sign-on
 keywords: identity, PIN, biometric, Hello, passport, AADJ, SSO, 
 ms.prod: w10
@@ -11,9 +11,14 @@ ms.author: mstephen
 localizationpriority: high
 ms.date: 05/05/2018
 ---
-# Configure Certificate trust authentication to Active Directory for Azure AD joined devices
+# Using Certificates for On-premises Single-sign On
 
 **Applies to**
 - Windows 10
 - Azure Active Directory joined
 - Hybrid Deployment
+
+If you plan to use certificates for on-premises single-sign on, then follow these **addtional** steps to configure the environment to enroll certificates for Azure AD joined devices.
+
+Steps you will perform include:
+ 

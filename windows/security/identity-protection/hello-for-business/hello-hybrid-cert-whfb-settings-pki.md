@@ -180,9 +180,9 @@ Sign-in to the certificate authority or management workstation with _Enterprise 
 > [!div class="checklist"]
 > * Domain Controller certificate template
 > * Configure superseded domain controller certificate templates
-> * Enrollment Agent certifcate template
+> * Enrollment Agent certificate template
 > * Windows Hello for Business Authentication certificate template
-> * Mark the certifcate template as Windows Hello for Business sign-in template
+> * Mark the certificate template as Windows Hello for Business sign-in template
 > * Publish Certificate templates to certificate authorities
 > * Unpublish superseded certificate templates
 
