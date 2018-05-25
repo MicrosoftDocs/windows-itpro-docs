@@ -10,46 +10,6 @@ ms.date: 10/30/2017
 ---
 <div id="main" class="v2">
     <div class="container">
-        <ul class="cardsY panelContent featuredContent">
-            <li>
-                <a href="https://www.microsoft.com/education" target="_blank">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img data-hoverimage="https://docs.microsoft.com/en-us/media/common/i_advanced.svg" src="https://docs.microsoft.com/en-us/media/common/i_advanced.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <span class="likeAnH3">Learn about Microsoft Education</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="/microsoft-365/education/index?branch=m365-integration" target="_blank">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img data-hoverimage="https://docs.microsoft.com/en-us/media/common/i_get-started.svg" src="https://docs.microsoft.com/en-us/media/common/i_get-started.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <span class="likeAnH3">Deploy Microsoft 365 Education</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div class="container">
         <h1>Microsoft Education documentation and resources</h1>
         <ul class="pivots">
             <li>
@@ -64,6 +24,46 @@ ms.date: 10/30/2017
                                 </div>
                             </li>
                             <li>
+                                <a href="https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/microsoft365/M365-education.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Learn Why Microsoft 365 Education</h3>
+                                                    <p>Find out how to empower educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/microsoft-365/education/deploy/" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/education/education-pro-get-started.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Deploy Overview</h3>
+                                                    <p>Learn how to deploy our suite of education offerings. Set up a cloud infrastructure for your school, acquire apps, and configure and manage Windows 10 devices.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                            </li>
+                            <li>
                                 <a href="/microsoft-365/education/index?branch=m365-integration#pivot=itpro&amp;panel=itpro-scd" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -74,7 +74,7 @@ ms.date: 10/30/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Cloud deployment</h3>
+                                                    <h3>1. Cloud deployment</h3>
                                                     <p>Get started by creating your Office 365 tenant, setting up a cloud infrastructure for your school, and creating, managing, and syncing user accounts.</p>
                                                 </div>
                                             </div>
@@ -93,7 +93,7 @@ ms.date: 10/30/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Device Management</h3>
+                                                    <h3>2. Device Management</h3>
                                                     <p>Improve student learning outcomes through connected classrooms and engaging new technologies with streamlined device management.</p>
                                                 </div>
                                             </div>
@@ -112,7 +112,7 @@ ms.date: 10/30/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Tools for Teachers</h3>
+                                                    <h3>3. Tools for Teachers</h3>
                                                     <p>The latest classroom resources at teachers’ fingertips when you deploy Learning Tools, OneNote Class Notebooks, Teams, and more.</p>
                                                 </div>
                                             </div>
