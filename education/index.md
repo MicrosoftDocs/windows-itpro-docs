@@ -53,13 +53,15 @@ ms.date: 10/30/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Deploy Overview/h3>
+                                                    <h3>Deploy Overview</h3>
                                                     <p>Learn how to deploy our suite of education offerings. Set up a cloud infrastructure for your school, acquire apps, and configure and manage Windows 10 devices.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
+                            </li>
+                            <li>
                             </li>
                             <li>
                                 <a href="/microsoft-365/education/index?branch=m365-integration#pivot=itpro&amp;panel=itpro-scd" target="_blank">
