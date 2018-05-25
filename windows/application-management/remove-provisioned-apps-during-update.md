@@ -89,7 +89,7 @@ You're now ready to update your computer. After the update, check the list of ap
 ## Registry keys for provisioned apps
 
 ```syntax
-1709 Registry Keys
+;1709 Registry Keys
 Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned]
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.BingWeather_8wekyb3d8bbwe]
