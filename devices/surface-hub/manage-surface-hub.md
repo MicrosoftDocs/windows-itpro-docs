@@ -41,7 +41,8 @@ Learn about managing and updating Surface Hub.
 | [Connect other devices and display with Surface Hub](https://technet.microsoft.com/itpro/surface-hub/connect-and-display-with-surface-hub) | You can connect other device to your Surface Hub to display content.|
 | [Miracast on existing wireless network or LAN](miracast-over-infrastructure.md) | You can use Miracast on your wireless network or LAN to connect to Surface Hub. |
  [Enable 802.1x wired authentication](enable-8021x-wired-authentication.md) | 802.1x Wired Authentication MDM policies have been enabled on Surface Hub devices. 
-| [Using a room control system]( https://technet.microsoft.com/itpro/surface-hub/use-room-control-system-with-surface-hub) | Room control systems can be used with your Microsoft Surface Hub.|
+| [Using a room control system](https://technet.microsoft.com/itpro/surface-hub/use-room-control-system-with-surface-hub) | Room control systems can be used with your Microsoft Surface Hub.|
+[Using the Surface Hub Recovery Tool](surface-hub-recovery-tool.md) | Use the Surface Hub Recovery Tool to re-image the Surface Hub SSD.
 
 ## Related topics
 

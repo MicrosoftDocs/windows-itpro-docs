@@ -10,7 +10,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 10/31/2017
+ms.date: 05/24/2018
 ---
 
 # Manage Windows 10 Start and taskbar layout
@@ -108,6 +108,16 @@ The new taskbar layout for upgrades to Windows 10, version 1607 or later, will a
 * New apps specified in updated layout file are pinned to right of user's pinned apps.
   
 [Learn how to configure Windows 10 taskbar](configure-windows-10-taskbar.md).
+
+## Start layout configuration errors
+
+If your Start layout customization is not applied as expected, open **Event Viewer** and navigate to **Applications and Services Log** > **Microsoft** > **Windows** > **ShellCommon-StartLayoutPopulation** > **Operational**, and check for one of the following events:
+
+- **Event 22** is logged when the xml is malformed, meaning the specified file simply isn’t valid xml.   This can occur if the file has extra spaces or unexpected characters, or if the file is not saved in the UTF8 format.
+- **Event 64**  is logged when the xml is valid, but has unexpected values. This can happen when the desired configuration is not understood or source is not found such as a missing or misspelled .lnk.
+
+ 
+
 
 ## Related topics
 

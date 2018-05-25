@@ -21,7 +21,7 @@ ms.date: 05/09/18
 In this topic you'll learn how to set-up a Windows Autopilot deployment for a Virtual Machine using Hyper-V. Watch the following video to see an overview of the process:
 
 </br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KYVptkpsOqs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KYVptkpsOqs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
 
 ## Prerequisites
 
