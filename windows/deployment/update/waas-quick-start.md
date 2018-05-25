@@ -7,7 +7,7 @@ ms.sitesec: library
 author: Jaimeo
 ms.localizationpriority: high
 ms.author: jaimeo
-ms.date: 05/27/2018
+ms.date: 05/25/2018
 ---
 
 # Quick guide to Windows as a service
@@ -25,7 +25,7 @@ Windows as a service is a new concept, introduced with the release of Windows 10
 
 Some new terms have been introduced as part of Windows as a service, so you should know what these terms mean.
 - **Feature updates** will be released twice per year, around March and September.  As the name suggests, these will add new features to Windows 10, delivered in bite-sized chunks compared to the previous practice of Windows releases every 3-5 years.
-- **Quality updates** are released monthly, delivering both security and non-security fixes. Typically released the second Tuesday of each month (though they can be released at any time), these include security updates, critical updates, servicing stack updates, and driver updates. The "servicing stack" is the code that installs other updates, so they are especially important to keep current. For more information, see [Servicing stack updates](servicing-stack-updates.md)  Quality updates are cumulative, so installing the latest quality update is sufficient to get all the available fixes for a specific Windows 10 feature update.
+- **Quality updates** are released monthly, delivering both security and non-security fixes. Typically released the second Tuesday of each month (though they can be released at any time), these include security updates, critical updates, servicing stack updates, and driver updates. Quality updates are cumulative, so installing the latest quality update is sufficient to get all the available fixes for a specific Windows 10 feature update. The "servicing stack" is the code that installs other updates, so they are important to keep current. For more information, see [Servicing stack updates](servicing-stack-updates.md).
 - **Insider Preview** builds are made available during the development of the features that will be shipped in the next feature update, enabling organizations to validate new features as well as compatibility with existing apps and infrastructure, providing feedback to Microsoft on any issues encountered.
 - **Servicing channels** allow organizations to choose when to deploy new features. 
     - The **Semi-Annual Channel** receives feature updates twice per year. 

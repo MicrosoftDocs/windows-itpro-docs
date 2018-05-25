@@ -7,7 +7,7 @@ ms.sitesec: library
 author: Jaimeo
 ms.localizationpriority: high
 ms.author: jaimeo
-ms.date: 05/27/2018
+ms.date: 05/25/2018
 ---
 
 # Servicing stack updates
@@ -16,8 +16,6 @@ ms.date: 05/27/2018
 **Applies to**
 
 - Windows 10
-- Windows 10 Mobile
-- Windows 10 IoT Mobile
 
 ## What is a servicing stack update?
 The "servicing stack" is the code that installs other operating system updates. Additionally, it contains the "component-based servicing stack" (CBS), which is a key underlying component for several elements of Windows deployment, such as DISM, SFC, changing Windows features or roles, and repairing components. The CBS is a small component that typically does not have updates released every month.
@@ -32,7 +30,7 @@ Currently, the servicing stack update releases are aligned with the monthly qual
 
 ## Is there any special guidance?
 
-Typically, the improvements are reliability, security, and performance improvements that do not require any specific special guidance. If there is any significant impact is will be present in the release notes.
+Typically, the improvements are reliability, security, and performance improvements that do not require any specific special guidance. If there is any significant impact, it will be present in the release notes.
 
 ## Installation notes
 
