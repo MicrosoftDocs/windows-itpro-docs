@@ -87,7 +87,11 @@ Yes. However, shadow copies made prior to enabling BitLocker will be automatical
 
 ## Does BitLocker support virtual hard disks (VHDs)?
 
-BitLocker is not supported on bootable VHDs, but BitLocker is supported on data volume VHDs, such as those used by clusters, if you are running Windows 10, Windows 8.1, Windows 8, Windows Server 2012, or Windows Server 2012 R2.
+BitLocker should work like any specific physical machine within its hardware limitations as long as the environment (physical or virtual) meets Windows Operating System requirements to run.
+- With TPM - Yes it is supported
+- Without  TPM - Yes it is supported (with password ) protector
+
+BitLocker is also supported on data volume VHDs, such as those used by clusters, if you are running Windows 10, Windows 8.1, Windows 8, Windows Server 2012, or Windows Server 2012 R2.
 
 ## Can I use BitLocker with virtual machines (VMs)?
 
