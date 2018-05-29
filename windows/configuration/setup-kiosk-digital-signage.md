@@ -10,7 +10,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 04/30/2018
+ms.date: 05/25/2018
 ---
 
 # Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education
@@ -48,14 +48,14 @@ Choose this method | For this edition | For this kiosk account type
 --- | --- | ---
 [Local settings](#local) (for 1 or a few devices) | Pro, Ent, Edu | Local standard user
 [PowerShell](#powershell)  | Pro, Ent, Edu | Local standard user
-[Provisioning](#wizard)  | Pro (version 1709), Ent, Edu | Local standard user 
+[Provisioning](#wizard)  | Pro (version 1709), Ent, Edu | Local standard user, Active Directory 
 [Intune or other mobile device management (MDM)](#set-up-assigned-access-in-mdm)  | Pro (version 1709), Ent, Edu | Local standard user, Azure AD
 
 ### Methods for kiosks and digital signs running a Classic Windows app
 
 Choose this method | For this edition | For this kiosk account type 
 --- | --- | ---
-[Provisioning](#wizard) | Ent, Edu | Local standard user 
+[Provisioning](#wizard) | Ent, Edu | Local standard user, Active Directory 
 [ShellLauncher](#shelllauncher) | Ent, Edu | Local standard user or administrator, Active Directory, Azure AD
 
 
