@@ -7,7 +7,7 @@ ms.sitesec: library
 author: Jaimeo
 ms.localizationpriority: high
 ms.author: jaimeo
-ms.date: 05/25/2018
+ms.date: 05/29/2018
 ---
 
 # Servicing stack updates
@@ -22,7 +22,7 @@ The "servicing stack" is the code that installs other operating system updates. 
 
 ## Why should servicing stack updates be installed and kept up to date?
   
-Having the latest servicing stack update is a prerequisite to reliably installing the latest quality updates and feature updates.  
+Having the latest servicing stack update is a prerequisite to reliably installing the latest quality updates and feature updates. 
 
 ## When are they released?
 
@@ -35,5 +35,5 @@ Typically, the improvements are reliability, security, and performance improveme
 ## Installation notes
 
 •	Servicing stack updates contain the full servicing stack; as a result, typically administrators only need to install the latest servicing stack update for the operating system.
-•	Installing servicing stack update does not require restarting the device, so installation should not be disruptive.  
+•	Installing servicing stack update does not require restarting the device, so installation should not be disruptive. 
 •	Servicing stack update releases are specific to the operating system version (build number), much like quality updates.
