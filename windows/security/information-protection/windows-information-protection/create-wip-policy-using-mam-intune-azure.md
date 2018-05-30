@@ -6,8 +6,8 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
-ms.author: lizross
-ms.date: 10/13/2017
+ms.author: justinha
+ms.date: 05/30/2018
 localizationpriority: medium
 ---
 
