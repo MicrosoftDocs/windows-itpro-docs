@@ -60,7 +60,8 @@ To get the MBAM software, see [How Do I Get MDOP](https://go.microsoft.com/fwlin
 
 -   [Apply Hotfixes on MBAM 2.5 SP1 Server](apply-hotfix-for-mbam-25-sp1.md)
 
-    View updated product information and known issues for MBAM 2.5
+    Guide of how to apply MBAM 2.5 SP1 Server hotfixes
+    
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
