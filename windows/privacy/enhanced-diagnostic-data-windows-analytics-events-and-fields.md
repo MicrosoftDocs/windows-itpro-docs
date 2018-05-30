@@ -13,11 +13,11 @@ ms.author: jaimeo
 ---
 
 
-# Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics
+# Windows 10 enhanced diagnostic data events and fields used by Windows Analytics
 
  **Applies to**
 
-- Windows 10, version 1709 and later
+- Windows 10, version 1709 and newer
 
 Windows Analytics Device Health reports are powered by diagnostic data not included in the Basic level. This includes crash reports and certain OS diagnostic data events. Organizations sending Enhanced or Full level diagnostic data were able to participate in Device Health, but some organizations which required detailed event and field level documentation were unable to move from Basic to Enhanced. 
 
