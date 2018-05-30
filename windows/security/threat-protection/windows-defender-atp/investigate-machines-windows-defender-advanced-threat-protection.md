@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/24/2018
+ms.date: 05/30/2018
 ---
 
 # Investigate machines in the Windows Defender ATP Machines list
@@ -163,6 +163,12 @@ You can add tags on machines using the following ways:
 
 ### Add machine tags by setting a registry key value
 Add tags on machines which can be used as a filter in Machines list view. You can limit the machines in the list by selecting the Tag filter on the Machines list.
+
+>[!NOTE]
+> Applicable only on the following:
+>- Windows 10, version 1709 and later
+>- Windows Server, version 1803
+>- Operations Management Suite (OMS) on Windows Server 2016 and Windows Server 2012 R2 
 
 Machines with similar tags can be handy when you need to apply contextual action on a specific list of machines. 
 
