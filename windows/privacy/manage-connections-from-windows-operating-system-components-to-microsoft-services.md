@@ -1403,12 +1403,13 @@ To turn off **Let apps automatically share and sync info with wireless devices t
 
     -or-
 
--    Apply the Privacy/LetAppsSyncWithDevices MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappssyncwithdevices), where:
+-    Apply the Privacy/LetAppsSyncWithDevices MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappssyncwithdevices), where:   
 
-    -   **0**. User in control
-    -   **1**. Force allow
-    -   **2**. Force deny
+      -   **0**. User in control
+      -   **1**. Force allow
+      -   **2**. Force deny  
 
+   
      -or-
 
 -   Create a REG\_DWORD registry setting named **LetAppsSyncWithDevices** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
@@ -1422,6 +1423,16 @@ To turn off **Let your apps use your trusted devices (hardware you've already co
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access trusted devices**
 
     -   Set the **Select a setting** box to **Force Deny**.
+
+    -or-
+
+-    Apply the **Privacy/LetAppsAccessTrustedDevices** MDM policy from the [Policy CSP](/windows/client-management/mdm/policy-csp-privacy.md#privacy-letappsaccesstrusteddevices
+), where:   
+
+        - **0**. User in control
+        - **1**. Force allow
+        - **2**. Force deny  
+
 
 ### <a href="" id="bkmk-priv-feedback"></a>17.16 Feedback & diagnostics
 
