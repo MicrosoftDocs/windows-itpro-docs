@@ -7,9 +7,9 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: coreyp-at-msft
+ms.author: justinha
+ms.date: 05/30/2018
 ms.localizationpriority: medium
-ms.date: 09/11/2017
 ---
 
 # Protect your enterprise data using Windows Information Protection (WIP)

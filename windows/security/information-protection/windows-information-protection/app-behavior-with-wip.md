@@ -6,9 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.pagetype: security
 ms.sitesec: library
-author: eross-msft
+ms.author: justinha
+ms.date: 05/30/2018
 ms.localizationpriority: medium
-ms.date: 09/11/2017
 ---
 
 # Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)
