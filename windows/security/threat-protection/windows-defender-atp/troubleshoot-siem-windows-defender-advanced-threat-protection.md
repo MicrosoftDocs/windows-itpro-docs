@@ -65,6 +65,7 @@ If you encounter an error when trying to get a refresh token when using the thre
 5. Add the following URL:
    - For US:  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback`.
    - For Europe: `https://winatpmanagement-eu.securitycenter.windows.com/UserAuthenticationCallback`
+   - For United Kingdom: `https://winatpmanagement-uk.securitycenter.windows.com/UserAuthenticationCallback`
 
 6. Click **Save**.
 
