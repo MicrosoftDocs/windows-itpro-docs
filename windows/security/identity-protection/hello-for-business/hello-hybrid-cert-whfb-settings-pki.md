@@ -96,7 +96,7 @@ Sign-in a certificate authority or management workstations with _Domain Admin_ e
 8. On the **Security** tab, click **Add**. 
 9. Click **Object Types**.  Select the **Service Accounts** check box and click **OK**.
 10.	Type **adfssvc** in the **Enter the object names to select** text box and click **OK**.
-11.	Click the **adfssvc** from the **Group or users names** list. In the **Permissions for adfssvc** section, In the **Permissions for adfssvc** section, select the **Allow** check box for the **Enroll** permission. Excluding the **adfssvc** user, clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list if the check boxes are not already cleared. Click **OK**. 
+11.	Click the **adfssvc** from the **Group or users names** list. In the **Permissions for adfssvc** section, select the **Allow** check box for the **Enroll** permission. Excluding the **adfssvc** user, clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list if the check boxes are not already cleared. Click **OK**. 
 12.	Close the console.
 
 #### Creating an Enrollment Agent certificate for typical Service Acconts
