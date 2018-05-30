@@ -24,7 +24,7 @@ Microsoft Intune helps you create and deploy your Windows Information Protection
 
 This topic covers creating a Windows Information Protection (WIP) policy for organizations already managing devices by using Mobile Device Management (MDM) solutions. If your organization uses a mobile application management (MAM) solution to deploy your WIP policy to Intune apps without managing devices, see [Create a Windows Information Protection (WIP) policy with MAM using the Azure portal for Microsoft Intune](create-wip-policy-using-mam-intune-azure.md). 
 
-If the same user and device are targeted for both MDM policy and MAM-only (without device enrollment) policy, the MDM policy will be applied to devices joined to Azure AD. For personal devices that are workplace-joined, the MAM-only policy will be preferred but it's possible to upgrade the device management to MDM in **Settings**. 
+If the same user and device are targeted for both MDM policy and MAM-only (without device enrollment) policy, the MDM policy will be applied to devices joined to Azure AD. For personal devices that are workplace-joined (that is, added by using **Settings** > **Email & accounts** > **Add a work or school account**), the MAM-only policy will be preferred but it's possible to upgrade the device management to MDM in **Settings**. 
 
 Windows Home edition only supports WIP for MAM-only; upgrading to MDM policy on Home edition will revoke WIP-protected data access. 
 
