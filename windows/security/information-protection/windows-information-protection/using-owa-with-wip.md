@@ -17,7 +17,7 @@ ms.date: 09/11/2017
 - Windows 10, version 1607 and later
 - Windows 10 Mobile, version 1607 and later
 
->Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
+>Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/WindowsForBusiness/Compare).
 
 Because Outlook on the web can be used both personally and as part of your organization, you have the following options to configure it with Windows Information Protection (WIP):
 
