@@ -19,7 +19,6 @@ ms.date: 06/11/2018
 
 - Windows 7 SP1 Enterprise
 - Windows 7 SP1 Pro
-- Windows 8.1
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
