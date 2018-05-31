@@ -1,7 +1,7 @@
 ---
-title: Onboard Windows 7 SP 1 machines on Windows Defender ATP
-description: Onboard Windows 7 SP 1 machines so that they can send sensor data to the Windows Defender ATP sensor
-keywords: Onboard Windows 7 machines, oms, sp1, enterprise, pro, down level
+title: Onboard previous versions of Windows on Windows Defender ATP
+description: Onboard supported previous versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor
+keywords: onboard, windows, 7, 8, oms, sp1, enterprise, pro, down level
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,12 +13,14 @@ ms.localizationpriority: high
 ms.date: 06/11/2018
 ---
 
-# Onboard Windows 7 SP1 machines
+# Onboard Windows previous versions of Windows
 
 **Applies to:**
 
 - Windows 7 SP1 Enterprise
 - Windows 7 SP1 Pro
+- Windows 8.1 Enterprise
+- Windows 8.1 Pro
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
@@ -62,7 +64,7 @@ Review the following details to verify minimum system requirements:
       On the **Agent Setup Options** page, select **Connect the agent to Azure Log Analytics (OMS)
     - [Install the agent using command line](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-agent-windows#install-the-agent-using-the-command-line) and [configure the agent using a script](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-agent-windows#add-a-workspace-using-a-script).
 
-4. If you’re using a proxy server to connect to the Internet see the Configure proxy settings section.
+4. If you're using a proxy server to connect to the Internet see the Configure proxy settings section.
 
 Once completed, you should see onboarded servers in the portal within an hour.
 
@@ -83,8 +85,6 @@ Agent Resource    |    Ports
 |    winatp-gw-weu.microsoft.com    |    443    |
 |winatp-gw-uks.microsoft.com | 443 |
 |winatp-gw-ukw.microsoft.com | 443 | 
-| winatp-gw-aus.microsoft.com | 443| 
-| winatp-gw-aue.microsoft.com |443 | 
 
 
 ## Offboard client endpoints
