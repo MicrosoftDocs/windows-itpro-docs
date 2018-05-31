@@ -3,7 +3,7 @@ title: Upgrade Readiness - Targeting a new operating system version
 description: Explains how to run Upgrade Readiness again to target a different operating system version or bulk-approve all apps from a given vendor
 ms.prod: w10
 author: jaimeo
-ms.date: 05/22/2018
+ms.date: 05/31/2018
 ---
 
 # Targeting a new operating system version
@@ -31,10 +31,10 @@ If you want to reset them, keep these important points in mind:
  
 To do this, type the following query in **Log Search**:
  
-`search in (UAApp) IsRollup == true and RollupLevel == "Granular" and Importance <> "Ignore" and Importance <> "Low install count"` 
+`search in (UAApp) IsRollup == true and RollupLevel == "Granular" and Importance <> "Ignore" and Importance <> "Low install count" and UpgradeDecision == "Ready to upgrade"` 
 
 >[!NOTE]
->You can also append `'and UpgradeDecision="Ready to upgrade"'`, for example, if you just want to reset apps that were previously marked **Ready**.
+>If you just want to reset all **UpgradeDecision** values, you can simply remove `'and UpgradeDecision == "Ready to upgrade"` from the query.
 
 After a short period of time, you will see the "user input" perspective render, which will let you bulk-edit the results. Select the check box in the table header, click the **bulk edit** button, and then set the **UpgradeDecision** to *Not reviewed*. Leave all other fields as they are.
  
