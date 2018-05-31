@@ -472,7 +472,7 @@ This policy setting specifies whether favorites are kept in sync between Interne
 |Supported devices |Desktop  |
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/SyncFavoritesBetweenIEAndMicrosoftEdge  |
 |Data type | Integer |
-|Allowed values |<ul><li>**0 (default)** - Synchronization is turned off.</li><li>**1** - Synchronization is turned on.</li></ul> |
+|Allowed values |<ul><li>**0 (default)** - Turn off synchronization.</li><li>**1** - Turn on synchronization.</li></ul> |
 
 ## Prevent access to the about:flags page
 >*Supported versions: Windows 10, version 1607 or later*
