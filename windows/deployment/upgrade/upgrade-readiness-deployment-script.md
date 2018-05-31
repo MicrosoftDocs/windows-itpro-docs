@@ -146,7 +146,7 @@ The deployment script displays the following exit codes to let you know if it wa
         <td>**Http Get** on the end points did not return a success exit code.<BR>
         For Windows 10, connectivity is verified by connecting to https://v10.vortex-win.data.microsoft.com/health/keepalive.<BR>
         For previous operating systems, connectivity is verified by connecting to https://vortex-win.data.microsoft.com/health/keepalive.  
-        <BR>If there is an error verifying connectivity, this will prevent the collected data from being sent to Upgrade Readiness. To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enroll devices in Windows Analytics](../update/windows-analytics-get-started.md)
+        <BR>If there is an error verifying connectivity, this will prevent the collected data from being sent to Upgrade Readiness. To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enrolling devices in Windows Analytics](../update/windows-analytics-get-started.md)
     <tr>
         <td>13 - Can’t connect to Microsoft - setting. </td>
         <td>An error occurred connecting to  https://settings.data.microsoft.com/qos. This error will prevent the collected data from being sent to Upgrade Readiness. To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enrolling devices in Windows Analytics](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#enable-data-sharing). Verify that the required endpoints are whitelisted correctly. See Whitelist select endpoints for more details. 
@@ -154,11 +154,11 @@ The deployment script displays the following exit codes to let you know if it wa
     </tr>
     <tr>
         <td>14 - Can’t connect to Microsoft - compatexchange.</td>
-        <td>An error occurred connecting to [CompatibilityExchangeService.svc](https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc). This error will prevent the collected data from being sent to Upgrade Readiness. To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enroll devices in Windows Analytics](../update/windows-analytics-get-started.md).</td>
+        <td>An error occurred connecting to [CompatibilityExchangeService.svc](https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc). This error will prevent the collected data from being sent to Upgrade Readiness. To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enrolling devices in Windows Analytics](../update/windows-analytics-get-started.md).</td>
     </tr>
     <tr>
         <td>15 - Function CheckVortexConnectivity failed with an unexpected exception.</td>
-        <td>This error will prevent the collected data from being sent to Upgrade Readiness. To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enroll devices in Windows Analytics](../update/windows-analytics-get-started.md). Check the logs for the exception message and the HResult.</td>
+        <td>This error will prevent the collected data from being sent to Upgrade Readiness. To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enrolling devices in Windows Analytics](../update/windows-analytics-get-started.md). Check the logs for the exception message and the HResult.</td>
     </tr>
     <tr>
         <td>16 - The computer requires a reboot before running the script.</td>
