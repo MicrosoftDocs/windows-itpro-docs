@@ -9,14 +9,14 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/30/2018
+ms.date: 05/22/2018
 ---
 
 # Set up HoloLens in kiosk mode
 
 
 
-In Windows 10, version 1803, you can configure your HoloLens devices to run as multi-app or single-app kiosks.
+In Windows 10, version 1803, you can configure your HoloLens devices to run as multi-app or single-app kiosks. You can also configure guest access for a HoloLens kiosk device by [designating a SpecialGroup account in your XML file.](#guest)
 
 When HoloLens is configured as a multi-app kiosk, only the allowed apps are available to the user. The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access. 
 
@@ -115,6 +115,22 @@ Follow [the instructions for creating a kiosk configuration XML file for desktop
 
 - Do not include Classic Windows applications (Win32) since they aren't supported on HoloLens.
 - Use the [placeholder Start XML](#start-kiosk) for HoloLens.
+
+<span id="guest" />
+#### Add guest access to the kiosk configuration (optional)
+
+In the [Configs section of the XML file](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configs), you can configure a special group named **Visitor** to allow guests to use the kiosk. When the kiosk is configured with the **Visitor** special group, a "**Guest**" option is added to the sign-in page. The **Guest** account does not require a password, and any data associated with the account is deleted when the account signs out.
+
+Use the following snippet in your kiosk configuration XML to enable the **Guest** account:
+
+```xml
+<Configs>
+  <Config> 
+    <SpecialGroup Name="Visitor" /> 
+    <DefaultProfile Id="enter a profile ID"/> 
+  </Config> 
+</Configs> 
+```
 
 
 <span id="add-xml"/>

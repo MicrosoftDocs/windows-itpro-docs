@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.pagetype: mobile
 author: greg-lindsay
-ms.date: 05/18/2018
+ms.date: 05/29/2018
 ---
 
 # Windows 10 upgrade paths
@@ -27,6 +27,8 @@ This topic provides a summary of available upgrade paths to Windows 10. You can 
 >In-place upgrade from Windows 7, Windows 8.1, or Windows 10 semi-annual channel to Windows 10 LTSC is not supported.  **Note**: Windows 10 LTSC 2015 did not block this upgrade path.  This was corrected in the Windows 10 LTSC 2016 release, which will now only allow data-only and clean install options. You can upgrade from Windows 10 LTSC to Windows 10 semi-annual channel, provided that you upgrade to the same or a newer build version. For example, Windows 10 Enterprise 2016 LTSB can be upgraded to Windows 10 Enterprise version 1607 or later.
 
 >**Windows N/KN**: Windows "N" and "KN" SKUs follow the same upgrade paths shown below. If the pre-upgrade and post-upgrade editions are not the same type (e.g. Windows 8.1 Pro N to Windows 10 Pro), personal data will be kept but applications and settings will be removed during the upgrade process.
+
+>**Windows 8.0**: You cannot upgrade directly from Windows 8.0 to Windows 10. To upgrade from Windows 8.0, you must first install the [Windows 8.1 update](https://support.microsoft.com/help/15356/windows-8-install-update-kb-2919355).
 
 ✔ = Full upgrade is supported including personal data, settings, and applications.<BR>
 D = Edition downgrade; personal data is maintained, applications and settings are removed.
@@ -110,86 +112,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td>✔</td>
         <td>✔</td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td rowspan="8" nowrap="nowrap">Windows 8</td>
-    </tr>
-    <tr>
-        <td>(Core)</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Professional</td>
-        <td>D</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Professional WMC</td>
-        <td>D</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Enterprise</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>✔</td>
-        <td>✔</td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Embedded Industry</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>✔</td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Windows RT</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Windows Phone 8</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>

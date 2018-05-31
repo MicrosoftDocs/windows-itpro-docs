@@ -9,7 +9,7 @@ author: alhopper-msft
 ms.author: alhopper
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 05/21/2018
+ms.date: 05/22/2018
 ---
 # Microsoft Remote Assist
 
@@ -25,7 +25,6 @@ Below are the technical requirements to deploy and use Microsoft Remote Assist t
 |:---------------------------|:----------------------------------|:-----------------------------------------------------------|
 | HoloLens                   | Build 10.0.14393.0 or above  | See [Manage updates to HoloLens](https://docs.microsoft.com/en-us/HoloLens/hololens-updates) for instructions on using Windows Update for Business, MDM, and Windows Server Update Service (WSUS) to deploy updates to HoloLens.   |
 | Windows 10 PC (optional)   | Any Windows 10 build              | A Windows 10 PC can collaborate with the HoloLens using Microsoft Teams. |
-| Mobile device (optional)   | Android or iOS                    | A mobile device can collaborate with the HoloLens using Microsoft Teams. Inking, annotations, and image insertion are not currently available on mobile.                        |
 
 > [!Note]
 > HoloLens build 10.0.14393.0 is the minimum that supports Remote Assist. We recommend updating the HoloLens to newer versions when they are available.
@@ -42,7 +41,7 @@ Below are the technical requirements to deploy and use Microsoft Remote Assist t
 
 1.5 MB/s is the recommended bandwidth for optimal performance of Microsoft Remote Assist. Though audio/video calls may be possible in environments with reduced bandwidth, you may experience HoloLens feature degradation, limiting the user experience. To test your company’s network bandwidth, follow these steps:
 
-   1. Have a mobile Teams user (iOS or Android) video call a desktop Teams user.
+   1. Have a Teams user video call another Teams user.
    2. Add another separate video call between a 3rd and 4th user, and another for a 5th and 6th user.
    3. Continue adding video callers to stress test your network bandwidth until confident that multiple users can successfully connect on video calls at the same time.
 

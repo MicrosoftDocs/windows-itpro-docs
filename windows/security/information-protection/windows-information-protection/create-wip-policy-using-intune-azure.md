@@ -6,8 +6,9 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
+ms.author: justinha
 ms.localizationpriority: medium
-ms.date: 10/16/2017
+ms.date: 05/30/2018
 ---
 
 # Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune
@@ -17,99 +18,77 @@ ms.date: 10/16/2017
 -   Windows 10, version 1607 and later
 -   Windows 10 Mobile, version 1607 and later (except Microsoft Azure Rights Management, which is only available on the desktop)
 
-Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network.
+Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your protected apps, your WIP-protection level, and how to find enterprise data on the network.
 
->[!Important]
->This topic covers creating a Windows Information Protection (WIP) policy for organizations already managing devices by using Mobile Device Management (MDM) solutions. If your organization uses a mobile application management (MAM) solution to deploy your WIP policy to Intune apps without managing devices, you must follow the instructions in the [Create a Windows Information Protection (WIP) policy with MAM using the Azure portal for Microsoft Intune](create-wip-policy-using-mam-intune-azure.md) topic.
+## Alternative steps if you use MAM only (without device enrollment)
+
+This topic covers creating a Windows Information Protection (WIP) policy for organizations already managing devices by using Mobile Device Management (MDM) solutions. If your organization uses a mobile application management (MAM) solution to deploy your WIP policy to Intune apps without managing devices, see [Create a Windows Information Protection (WIP) policy with MAM using the Azure portal for Microsoft Intune](create-wip-policy-using-mam-intune-azure.md). 
+
+If the same user and device are targeted for both MDM policy and MAM-only (without device enrollment) policy, the MDM policy will be applied to devices joined to Azure AD. For personal devices that are workplace-joined (that is, added by using **Settings** > **Email & accounts** > **Add a work or school account**), the MAM-only policy will be preferred but it's possible to upgrade the device management to MDM in **Settings**. 
+
+Windows Home edition only supports WIP for MAM-only; upgrading to MDM policy on Home edition will revoke WIP-protected data access. 
 
 ## Add a WIP policy
-After you’ve set up Intune for your organization, you must create a WIP-specific policy.
+Follow these steps to add a WIP policy using Intune.
 
 **To add a WIP policy**
-1.  Open the Microsoft Intune mobile application management console, click **All settings**, and then click **App policy**.
+1.  Open Microsoft Intune and click **Mobile apps**.
 
-    ![Microsoft Intune management console: App policy link](images/wip-azure-portal-start.png)
+    ![Open Mobile apps](images/open-mobile-apps.png)
 
-2.  In the **App policy** screen, click **Add a policy**, and then fill out the fields:
+2. In **Mobile apps**, click **App protection policies**.
+
+    ![App protection policies](images/app-protection-policies.png)
+
+3.  In the **App policy** screen, click **Add a policy**, and then fill out the fields:
     - **Name.** Type a name (required) for your new policy.
 
     - **Description.** Type an optional description.
 
-    - **Platform.** Choose **Windows 10** as the supported platform for your policy.
+    - **Platform.** Choose **Windows 10**.
 
-    - **Enrollment state.** Choose **With enrollment** as the enrollment state for your policy.
+    - **Enrollment state.** Choose **With enrollment**.
 
-        ![Microsoft Intune management console: Create your new policy in the Add a policy blade](images/wip-azure-portal-add-policy.png)
+        ![Add a mobile app policy](images/add-a-mobile-app-policy.png)
 
         >[!Important]
-        >Choosing **With enrollment** only applies for organizations using MDM. If you're using MAM, you must use these instructions, [Create and deploy Windows Information Protection (WIP) app protection policy with Intune](https://docs.microsoft.com/en-us/intune/deploy-use/create-windows-information-protection-policy-with-intune), instead.
+        >Choosing **With enrollment** only applies for organizations using MDM. If you're using MAM only (without device enrollment), see [Create a Windows Information Protection (WIP) policy with MAM using the Azure portal for Microsoft Intune](create-wip-policy-using-mam-intune-azure.md).
 
-3.  Click **Create**.
+4.  Click **Protected apps** and then click **Add apps**.
+
+    ![Add protected apps](images/add-protected-apps.png)
+
+    You can add these types of apps:
+
+    - [Recommended apps](#add-recommended-apps)
+    - [Store apps](#add-store-apps)
+    - [Desktop apps](#add-desktop-apps)
     
-    The policy is created and appears in the table on the **App Policy** screen.
+### Add recommended apps 
 
-    >[!NOTE]
-    >Optionally, you can also add your apps and set your settings from the **Add a policy** blade, but for the purposes of this documentation, we recommend instead that you create the policy first, and then use the subsequent menus that become available.
-
-## Add apps to your Allowed apps list
-During the policy-creation process in Intune, you can choose the apps you want to give access to your enterprise data through WIP. Apps included in this list can protect data on behalf of the enterprise and are restricted from copying or moving enterprise data to unprotected apps.
-
-The steps to add your apps are based on the type of template being applied. You can add a recommended app, a store app (also known as a Universal Windows Platform (UWP) app), or a signed Windows desktop app.
-
->[!Important]
->Enlightened apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, WIP-unaware apps might not respect the corporate network boundary, and WIP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.<br><br>Care must be taken to get a support statement from the software provider that their app is safe with WIP before adding it to your **Allowed apps** list. If you don’t get this statement, it’s possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
-
-### Add a Recommended app to your Allowed apps list
-For this example, we’re going to add Microsoft Edge, a recommended app, to the **Allowed apps** list.
-
-**To add a recommended app**
-1.  From the **App policy** blade, click the name of your policy, and then click **Allowed apps** from the menu that appears.
+To add **Recommended apps**, select each app you want to access your enterprise data, and then click **OK**.
     
-    The **Allowed apps** blade appears, showing you any apps that are already included in the list for this policy.
+The **Protected apps** blade updates to show you your selected apps.
 
-    ![Microsoft Intune management console: Viewing the recommended apps that you can add to your policy](images/wip-azure-allowed-apps-pane.png)
+![Microsoft Intune management console: Recommended apps](images/wip-azure-allowed-apps-with-apps.png)    
 
-2.  From the **Allowed apps** blade, click **Add apps**.
-    
-    The **Add apps** blade appears, showing you all **Recommended apps**.
+### Add Store apps 
 
-    ![Microsoft Intune management console: Adding recommended apps to your policy](images/wip-azure-add-recommended-apps.png)
+To add **Store apps**, type the app product name and publisher and click **OK**. For example, to add the Power BI Mobile App from the Store, type the following: 
 
-3.  Select each app you want to access your enterprise data, and then click **OK**.
-    
-    The **Allowed apps** blade updates to show you your selected apps.
+- **Name**: Microsoft Power BI
+- **Publisher**: `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`
+- **Product Name**: `Microsoft.MicrosoftPowerBIForWindows`
 
-    ![Microsoft Intune management console: Allowed apps blade with recommended apps](images/wip-azure-allowed-apps-with-apps.png)    
+![Add Store app](images\add-a-protected-store-app.png)
 
-### Add a Store app to your Allowed apps list
-For this example, we’re going to add Microsoft Power BI, a store app, to the **Allowed apps** list.
+To add multiple Store apps, click the elipsis **…**. 
 
-**To add a Store app**
-1.	From the **App policy** blade, click the name of your policy, and then click **Allowed apps** from the menu that appears.
-    
-    The **Allowed apps** blade appears, showing you any apps that are already included in the list for this policy.
+If you don't know the Store app publisher or product name, you can find them for both desktop devices and Windows 10 Mobile phones by following these steps.
 
-2.	From the **Allowed apps** blade, click **Add apps**.
+1.	Go to the [Microsoft Store for Business](https://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, *Power BI Mobile App*.
 
-3.	On the **Add apps** blade, click **Store apps** from the dropdown list.
-    
-    The blade changes to show boxes for you to add a publisher and app name.
-
-4.	Type the name of the app and the name of its publisher, and then click **OK**. For this UWP app example, the **Publisher** is `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US` and the Product **name** is `Microsoft.MicrosoftPowerBIForWindows`.
-
-5.	After you’ve entered the info into the fields, click **OK** to add the app to your **Allowed apps** list.
-
-    >[!NOTE]
-    >To add multiple Store apps at the same time, you can click the menu **(…)** at the end of the app row, and then continue to add more apps. When you’re done, click **OK**.
-
-    ![Microsoft Intune management console: Adding Store app info](images/wip-azure-add-store-apps.png)
-
-If you don't know the publisher or product name, you can find them for both desktop devices and Windows 10 Mobile phones by following these steps.
-
-**To find the publisher and product name values for Store apps without installing them**
-1.	Go to the [Microsoft Store for Business](https://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, *Microsoft Power BI*.
-
-2.	Copy the ID value from the app URL. For example, Microsoft Power BI ID URL is https://www.microsoft.com/en-us/store/p/microsoft-power-bi/9nblgggzlxn1, and you'd copy the ID value, `9nblgggzlxn1`.
+2.	Copy the ID value from the app URL. For example, the Power BI Mobile App ID URL is https://www.microsoft.com/store/p/microsoft-power-bi/9nblgggzlxn1, and you'd copy the ID value, `9nblgggzlxn1`.
 
 3.	In a browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values. For example, run https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9nblgggzlxn1/applockerdata, where `9nblgggzlxn1` is replaced with your ID value.
     
@@ -122,24 +101,24 @@ If you don't know the publisher or product name, you can find them for both desk
         }
     ```
 
-4. Copy the `publisherCertificateName` value into the **Publisher** box and copy the `packageIdentityName` value into the **Name** box of Intune.
+4.  Copy the `publisherCertificateName` value into the **Publisher** box and copy the `packageIdentityName` value into the **Name** box of Intune.
 
     >[!Important]
     >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<br><br>For example:<br>
     <code>{<br>"windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",<br>}</code>
 
-**To find the publisher and product name values for apps installed on Windows 10 mobile phones**
-1.	If you need to add mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
 
-    >**Note**<br>Your PC and phone must be on the same wireless network.
+If you need to add Windows 10 mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
 
-2.	On the Windows Phone, go to **Settings**, choose **Update & security**, and then choose **For developers**.
+>**Note**<br>Your PC and phone must be on the same wireless network.
 
-3.	In the **For developers** screen, turn on **Developer mode**, turn on **Device Discovery**, and then turn on **Device Portal**.
+1.	On the Windows Phone, go to **Settings**, choose **Update & security**, and then choose **For developers**.
 
-4.	Copy the URL in the **Device Portal** area into your device's browser, and then accept the SSL certificate.
+2.	In the **For developers** screen, turn on **Developer mode**, turn on **Device Discovery**, and then turn on **Device Portal**.
 
-5.	In the **Device discovery** area, press **Pair**, and then enter the PIN into the website from the previous step.
+3.	Copy the URL in the **Device Portal** area into your device's browser, and then accept the SSL certificate.
+
+4.	In the **Device discovery** area, press **Pair**, and then enter the PIN into the website from the previous step.
 
 6.	On the **Apps** tab of the website, you can see details for the running apps, including the publisher and product names.
 
@@ -151,83 +130,77 @@ If you don't know the publisher or product name, you can find them for both desk
     >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<br><br>For example:<br>
     <code>{<br>"windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",<br>}</code>
 
-### Add a Desktop app to your Allowed apps list
-For this example, we’re going to add WordPad, a desktop app, to the **Allowed apps** list.
+### Add Desktop apps
 
-**To add a Desktop app**
-1.	From the **App policy** blade, click the name of your policy, and then click **Allowed apps** from the menu that appears.
+To add **Desktop apps**, complete the following fields, based on what results you want returned.
 
-    The **Allowed apps** blade appears, showing you any apps that are already included in the list for this policy.
-
-2.	From the **Allowed apps** blade, click **Add apps**.
-
-3.	On the **Add apps** blade, click **Desktop apps** from the dropdown list.
-
-    The blade changes to show boxes for you to add the following, based on what results you want returned:
-
-    <table>
-        <tr>
-            <th>Field</th>
-            <th>Manages</th>
-        </tr>
-        <tr>
-            <td>All fields marked as “*”</td>
-            <td>All files signed by any publisher. (Not recommended)</td>
-        </tr>
-        <tr>
-            <td>Publisher only</td>
-            <td>If you only fill out this field, you’ll get all files signed by the named publisher.<br><br>This might be useful if your company is the publisher and signer of internal line-of-business apps.</td>
-        </tr>
-        <tr>
-            <td>Publisher and Name only</td>
+<table>
+    <tr>
+        <th>Field</th>
+        <th>Manages</th>
+    </tr>
+    <tr>
+        <td>All fields marked as “*”</td>
+        <td>All files signed by any publisher. (Not recommended)</td>
+    </tr>
+    <tr>
+        <td>Publisher only</td>
+        <td>If you only fill out this field, you’ll get all files signed by the named publisher.<br><br>This might be useful if your company is the publisher and signer of internal line-of-business apps.</td>
+    </tr>
+    <tr>
+        <td>Publisher and Name only</td>
             <td>If you only fill out these fields, you’ll get all files for the specified product, signed by the named publisher.</td>
-        </tr>
-        <tr>
-            <td>Publisher, Name, and File only</td>
-            <td>If you only fill out these fields, you’ll get any version of the named file or package for the specified product, signed by the named publisher.</td>
-        </tr>
-        <tr>
-            <td>Publisher, Name, File, and Min version only</td>
-            <td>If you only fill out these fields, you’ll get the specified version or newer releases of the named file or package for the specified product, signed by the named publisher.<br><br>This option is recommended for enlightened apps that weren't previously enlightened.</td>
-        </tr>
-        <tr>
-            <td>Publisher, Name, File, and Max version only</td>
-            <td>If you only fill out these fields, you’ll get the specified version or older releases of the named file or package for the specified product, signed by the named publisher.</td>
-        </tr>
-        <tr>
-            <td>All fields completed</td>
-            <td>If you fill out all fields, you’ll get the specified version of the named file or package for the specified product, signed by the named publisher.</td>
-        </tr>
-    </table>
+    </tr>
+    <tr>
+        <td>Publisher, Name, and File only</td>
+        <td>If you only fill out these fields, you’ll get any version of the named file or package for the specified product, signed by the named publisher.</td>
+    </tr>
+    <tr>
+        <td>Publisher, Name, File, and Min version only</td>
+        <td>If you only fill out these fields, you’ll get the specified version or newer releases of the named file or package for the specified product, signed by the named publisher.<br><br>This option is recommended for enlightened apps that weren't previously enlightened.</td>
+    </tr>
+    <tr>
+        <td>Publisher, Name, File, and Max version only</td>
+        <td>If you only fill out these fields, you’ll get the specified version or older releases of the named file or package for the specified product, signed by the named publisher.</td>
+    </tr>
+    <tr>
+        <td>All fields completed</td>
+        <td>If you fill out all fields, you’ll get the specified version of the named file or package for the specified product, signed by the named publisher.</td>
+    </tr>
+</table>
 
-4.	After you’ve entered the info into the fields, click **OK** to add the app to your **Allowed apps** list.
+After you’ve entered the info into the fields, click **OK**.
 
-    >[!Note]
-    >To add multiple Desktop apps at the same time, you can click the menu **(…)** at the end of the app row, and then continue to add more apps. When you’re done, click **OK**.
+>[!Note]
+>To add multiple Desktop apps, click the elipsis **…**. When you’re done, click **OK**.
 
-    ![Microsoft Intune management console: Adding Desktop app info](images/wip-azure-add-desktop-apps.png)
+![Microsoft Intune management console: Adding Desktop app info](images/wip-azure-add-desktop-apps.png)
+ 
+If you’re unsure about what to include for the publisher, you can run this PowerShell command:
 
-    **To find the Publisher values for Desktop apps**
-    If you’re unsure about what to include for the publisher, you can run this PowerShell command:
+```ps1
+Get-AppLockerFileInformation -Path "<path_of_the_exe>"
+```
+Where `"<path_of_the_exe>"` goes to the location of the app on the device. For example:
 
-    ```ps1
-        Get-AppLockerFileInformation -Path "<path_of_the_exe>"
-    ```
-    Where `"<path_of_the_exe>"` goes to the location of the app on the device. For example, `Get-AppLockerFileInformation -Path "C:\Program Files\Windows NT\Accessories\wordpad.exe"`.
+```ps1
+Get-AppLockerFileInformation -Path "C:\Program Files\Windows NT\Accessories\wordpad.exe"
+```
 
-    In this example, you'd get the following info:
+In this example, you'd get the following info:
 
-    ``` json
-        Path                   Publisher
-        ----                   ---------
-        %PROGRAMFILES%\WINDOWS NT\ACCESSORIES\WORDPAD.EXE O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US
-    ```
-    Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the publisher name to enter into the **Publisher** box and `WORDPAD.EXE` is the text to enter into the **File** box.
+```
+Path                   Publisher
+----                   ---------
+%PROGRAMFILES%\WINDOWS NT\ACCESSORIES\WORDPAD.EXE O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US
+```
 
-### Import a list of apps to your Allowed apps list
-For this example, we’re going to add an AppLocker XML file to the **Allowed apps** list. You’ll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
+Where `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the **Publisher** name and `WORDPAD.EXE` is the **File** name.
 
-**To create a list of Allowed apps using the AppLocker tool**
+### Import a list of apps 
+For this example, we’re going to add an AppLocker XML file to the **Protected apps** list. You’ll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
+
+**To create a list of protected apps using the AppLocker tool**
 1.	Open the Local Security Policy snap-in (SecPol.msc).
     
 2.	In the left blade, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**.
@@ -238,11 +211,11 @@ For this example, we’re going to add an AppLocker XML file to the **Allowed ap
 
     The **Create Packaged app Rules** wizard appears.
 
-4. On the **Before You Begin** page, click **Next**.
+4.  On the **Before You Begin** page, click **Next**.
 
     ![Create Packaged app Rules wizard, showing the Before You Begin page](images/wip-applocker-secpol-wizard-1.png)
 
-5. On the **Permissions** page, make sure the **Action** is set to **Allow** and the **User or group** is set to **Everyone**, and then click **Next**.
+5.  On the **Permissions** page, make sure the **Action** is set to **Allow** and the **User or group** is set to **Everyone**, and then click **Next**.
 
     ![Create Packaged app Rules wizard, showing the Before You Begin page](images/wip-applocker-secpol-wizard-2.png)
 
@@ -250,19 +223,19 @@ For this example, we’re going to add an AppLocker XML file to the **Allowed ap
 
     ![Create Packaged app Rules wizard, showing the Publisher](images/wip-applocker-secpol-wizard-3.png)
 
-7. In the **Select applications** box, pick the app that you want to use as the reference for your rule, and then click **OK**. For this example, we’re using Microsoft Dynamics 365.
+7.  In the **Select applications** box, pick the app that you want to use as the reference for your rule, and then click **OK**. For this example, we’re using Microsoft Dynamics 365.
 
     ![Create Packaged app Rules wizard, showing the Select applications page](images/wip-applocker-secpol-wizard-4.png)
 
-8. On the updated **Publisher** page, click **Create**.
+8.  On the updated **Publisher** page, click **Create**.
 
     ![Create Packaged app Rules wizard, showing the Microsoft Dynamics 365 on the Publisher page](images/wip-applocker-secpol-wizard-5.png)
 
-9. Click **No** in the dialog box that appears, asking if you want to create the default rules. You must not create default rules for your WIP policy.
+9.  Click **No** in the dialog box that appears, asking if you want to create the default rules. You must not create default rules for your WIP policy.
 
     ![Create Packaged app Rules wizard, showing the Microsoft Dynamics 365 on the Publisher page](images/wip-applocker-default-rule-warning.png)
 
-9. Review the Local Security Policy snap-in to make sure your rule is correct.
+9.  Review the Local Security Policy snap-in to make sure your rule is correct.
 
     ![Local security snap-in, showing the new rule](images/wip-applocker-secpol-create.png)
 
@@ -300,47 +273,49 @@ For this example, we’re going to add an AppLocker XML file to the **Allowed ap
 
 12.	After you’ve created your XML file, you need to import it by using Microsoft Intune.
 
-**To import your list of Allowed apps using Microsoft Intune**
+**To import a list of protected apps using Microsoft Intune**
 
-1.	From the **Allowed apps** area, click **Import apps**.
+1.	In **Protected apps**, click **Import apps**.
+
+    ![Import protected apps](images/import-protected-apps.png)
     
-    The blade changes to let you add your import file.
+    Then import your file.
     
     ![Microsoft Intune, Importing your AppLocker policy file using Intune](images/wip-azure-import-apps.png)
 
 2.	Browse to your exported AppLocker policy file, and then click **Open**.
 
-    The file imports and the apps are added to your **Allowed app** list.
+    The file imports and the apps are added to your **Protected apps** list.
 
-### Add exempt apps to your policy
+### Exempt apps from a WIP policy
 If you're running into compatibility issues where your app is incompatible with WIP, but still needs to be used with enterprise data, you can exempt the app from the WIP restrictions. This means that your apps won't include auto-encryption or tagging and won't honor your network restrictions. It also means that your exempted apps might leak.
 
-**To exempt a Store app, a Desktop app, or an AppLocker policy file from the Allowed apps list**
+**To exempt a Store app, a Desktop app, or an AppLocker policy file from the Protected apps list**
 
-1.	From the **App policy** blade, click the name of your policy, and then click **Exempt apps** from the menu that appears.
+1.	In **Mobile apps - App protection policies**, click **Exempt apps**.
     
-    The **Exempt apps** blade appears, showing you any apps that are already included in the list for this policy.
+    ![Exempt apps](images/exempt-apps.png)
 
-2.	From the **Exempt apps** blade, click **Add apps**.
+2.	In **Exempt apps**, click **Add apps**.
 
-    Be aware that when you exempt apps, they’re allowed to bypass the WIP restrictions and access your corporate data. To allow apps, see the [Add app rules to your policy](#add-apps-to_your-allowed-apps-list) section of this topic.
+    Be aware that when you exempt apps, they’re allowed to bypass the WIP restrictions and access your corporate data. 
     
 3.	Fill out the rest of the app info, based on the type of app you’re adding:
 
-    - **Recommended app.** Follow the instructions in the [Add a Recommended app to your Allowed apps list](#add-a-recommended-app-to_your-allowed-apps-list) section of this topic.
+    - [Add Recommended apps](#add-recommended-apps)
 
-    - **Store app.** Follow the instructions in the [Add a Store app to your Allowed apps list](#add-a-store-app-to_your-allowed-apps-list) section of this topic.
+    - [Add Store apps](#add-store-apps)
 
-    - **Desktop app.** Follow the instructions in the [Add a Desktop app to your Allowed apps list](#add-a-desktop-app-to_your-allowed-apps-list) section of this topic.
+    - [Add Desktop apps](#add-desktop-apps)
 
-    - **AppLocker policy file.** Follow the instructions to create your app list in the [Import a list of apps to your Allowed apps list](#import-a-list-of-apps-to_your-allowed-apps-list) section of this topic, using a list of exempted apps.
+    - [Import apps](#import-a-list-of-apps)
 
-4. Click **OK**.
+4.  Click **OK**.
 
 ## Manage the WIP protection mode for your enterprise data
 After you've added the apps you want to protect with WIP, you'll need to apply a management and protection mode.
 
-We recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your allowed apps list. After you're done, you can change to your final enforcement policy, **Hide Overrides**.
+We recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your protected apps list. After you're done, you can change to your final enforcement policy, **Hide Overrides**.
 
 >[!NOTE]
 >For info about how to collect your audit log files, see [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md).
@@ -369,11 +344,9 @@ Starting with Windows 10, version 1703, Intune automatically determines your cor
 
 **To change your corporate identity**
 
-1.	From the **App policy** blade, click the name of your policy, and then click **Required settings** from the menu that appears.
+1.	From the **App policy** blade, click the name of your policy, and then click **Required settings**.
 
-    The **Required settings** blade appears.
-
-2. If the auto-defined identity isn’t correct, you can change the info in the **Corporate identity** field. If you need to add additional domains, for example your email domains, you can do it in the **Advanced settings** area.
+2.  If the auto-defined identity isn’t correct, you can change the info in the **Corporate identity** field. If you need to add additional domains, for example your email domains, you can do it in the **Advanced settings** area.
 
     ![Microsoft Intune, Set your corporate identity for your organization](images/wip-azure-required-settings-corp-identity.png)
 
@@ -385,15 +358,11 @@ There are no default locations included with WIP, you must add each of your netw
 >[!Important]
 >Every WIP policy should include policy that defines your enterprise network locations.<br>Classless Inter-Domain Routing (CIDR) notation isn’t supported for WIP configurations.
 
-**To define where your allowed apps can find and send enterprise data on you network**
+**To define where your protected apps can find and send enterprise data on you network**
 
-1.	From the **App policy** blade, click the name of your policy, and then click **Advanced settings** from the menu that appears.
-    
-    The **Advanced settings** blade appears.
+1.	From the **App policy** blade, click the name of your policy, and then click **Advanced settings**.
 
 2.	Click **Add network boundary** from the Network perimeter area.
-
-    The **Add network boundary** blade appears.
 
     ![Microsoft Intune, Set where your apps can access enterprise data on your network](images/wip-azure-advanced-settings-network.png)
 
@@ -410,10 +379,15 @@ There are no default locations included with WIP, you must add each of your netw
         <tr>
             <td>Cloud Resources</td>
             <td><strong>With proxy:</strong> contoso.sharepoint.com,contoso.internalproxy1.com|<br>contoso.visualstudio.com,contoso.internalproxy2.com<br><br><strong>Without proxy:</strong> contoso.sharepoint.com|contoso.visualstudio.com</td>
-            <td>Specify the cloud resources to be treated as corporate and protected by WIP.<br><br>For each cloud resource, you may also optionally specify a proxy server from your Internal proxy servers list to route traffic for this cloud resource. Be aware that all traffic routed through your Internal proxy servers is considered enterprise.<br><br>If you have multiple resources, you must separate them using the "|" delimiter. If you don’t use proxy servers, you must also include the "," delimiter just before the "|". For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;</code>.<br><br><strong>Important</strong><br>In some cases, such as when an app connects directly to a cloud resource through an IP address, Windows can’t tell whether it’s attempting to connect to an enterprise cloud resource or to a personal site. In this case, Windows blocks the connection by default. To stop Windows from automatically blocking these connections, you can add the <code>/&#42;AppCompat&#42;/</code> string to the setting. For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;|/&#42;AppCompat&#42;/</code>.<br><br>When using this string, we recommend that you also turn on [Azure Active Directory Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access), using the <strong>Domain joined or marked as compliant</strong> option, which blocks apps from accessing any enterprise cloud resources that are protected by conditional access.</td>
+            <td>Specify the cloud resources to be treated as corporate and protected by WIP.<br><br>For each cloud resource, you may also optionally specify a proxy server from your Internal proxy servers list to route traffic for this cloud resource. Be aware that all traffic routed through your Internal proxy servers is considered enterprise.<br><br>If you have multiple resources, you must separate them using the "|" delimiter. If you don’t use proxy servers, you must also include the "," delimiter just before the "|". For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;</code>.<br><br><strong>Important</strong><br>In some cases, such as when an app connects directly to a cloud resource through an IP address, Windows can’t tell whether it’s attempting to connect to an enterprise cloud resource or to a personal site. In this case, Windows blocks the connection by default. To stop Windows from automatically blocking these connections, you can add the <code>/&#42;AppCompat&#42;/</code> string to the setting. For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;|/&#42;AppCompat&#42;/</code>.<br><br>When using this string, we recommend that you also turn on [Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access), using the <strong>Domain joined or marked as compliant</strong> option, which blocks apps from accessing any enterprise cloud resources that are protected by conditional access.</td>
         </tr>
         <tr>
-            <td>Network domain names</td>
+            <td>Protected domains</td>
+            <td>exchange.contoso.com,contoso.com,region.contoso.com</td>
+            <td>Specify the domains used for identities in your environment. All traffic to the fully-qualified domains appearing in this list will be protected.<br><br>If you have multiple domains, you must separate them using the "," delimiter.</td>
+        </tr>
+        <tr>
+            <td>Network domains</td>
             <td>corp.contoso.com,region.contoso.com</td>
             <td>Starting with Windows 10, version 1703, this field is optional.<br><br>Specify the DNS suffixes used in your environment. All traffic to the fully-qualified domains appearing in this list will be protected.<br><br>If you have multiple resources, you must separate them using the "," delimiter.</td>
         </tr>
@@ -458,14 +432,14 @@ There are no default locations included with WIP, you must add each of your netw
 After you create and deploy your WIP policy to your employees, Windows begins to encrypt your corporate data on the employees’ local device drive. If somehow the employees’ local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the Data Recovery Agent (DRA) certificate lets Windows use an included public key to encrypt the local data while you maintain the private key that can unencrypt the data.
 
 >[!Important]
->Using a DRA certificate isn’t mandatory. However, we strongly recommend it. For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](https://go.microsoft.com/fwlink/p/?LinkId=761462) topic. For more info about creating and verifying your EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](https://docs.microsoft.com/en-us/windows/threat-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate) topic.
+>Using a DRA certificate isn’t mandatory. However, we strongly recommend it. For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](https://go.microsoft.com/fwlink/p/?LinkId=761462) topic. For more info about creating and verifying your EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate) topic.
 
 **To upload your DRA certificate**
 1.	From the **App policy** blade, click the name of your policy, and then click **Advanced settings** from the menu that appears.
 
     The **Advanced settings** blade appears.
 
-2. In the **Upload a Data Recovery Agent (DRA) certificate to allow recovery of encrypted data** box, click **Browse** to add a data recovery certificate for your policy.
+2.  In the **Upload a Data Recovery Agent (DRA) certificate to allow recovery of encrypted data** box, click **Browse** to add a data recovery certificate for your policy.
 
     ![Microsoft Intune, Upload your Data Recovery Agent (DRA) certificate](images/wip-azure-advanced-settings-efsdra.png)
 
@@ -492,9 +466,9 @@ After you've decided where your protected apps can access enterprise data on you
         
     - **Show the Windows Information Protection icon overlay.** Determines whether the Windows Information Protection icon overlay appears on corporate files in the Save As and File Explorer views. The options are:
     
-        - **On.** Allows the Windows Information Protection icon overlay to appear on corporate files in the Save As and File Explorer views. Additionally, for unenlightened but allowed apps, the icon overlay also appears on the app tile and with Managed text on the app name in the **Start** menu.
+        - **On.** Allows the Windows Information Protection icon overlay to appear on corporate files in the Save As and File Explorer views. Additionally, for unenlightened but protected apps, the icon overlay also appears on the app tile and with Managed text on the app name in the **Start** menu.
         
-        - **Off, or not configured (recommended).** Stops the Windows Information Protection icon overlay from appearing on corporate files or unenlightened, but allowed apps. Not configured is the default option.
+        - **Off, or not configured (recommended).** Stops the Windows Information Protection icon overlay from appearing on corporate files or unenlightened, but protected apps. Not configured is the default option.
         
     - **Use Azure RMS for WIP.** Determines whether to use Azure Rights Management encryption with Windows Information Protection.
     
@@ -503,7 +477,7 @@ After you've decided where your protected apps can access enterprise data on you
         - **Off, or not configured.** Stops using Azure Rights Management encryption with WIP.
 
 ## Choose to set up Azure Rights Management with WIP
-WIP can integrate with Microsoft Azure Rights Management to enable secure sharing of files by using removable drives such as USB drives. For more info about Azure Rights Management, see [Microsoft Azure Rights Management](https://products.office.com/en-us/business/microsoft-azure-rights-management). To integrate Azure Rights Management with WIP, you must already have Azure Rights Management set up.
+WIP can integrate with Microsoft Azure Rights Management to enable secure sharing of files by using removable drives such as USB drives. For more info about Azure Rights Management, see [Microsoft Azure Rights Management](https://products.office.com/business/microsoft-azure-rights-management). To integrate Azure Rights Management with WIP, you must already have Azure Rights Management set up.
 
 To configure WIP to use Azure Rights Management, you must set the **AllowAzureRMSForEDP** MDM setting to **1** in Microsoft Intune. This setting tells WIP to encrypt files copied to removable drives with Azure Rights Management, so they can be shared amongst your employees on computers running at least Windows 10, version 1703.
 
@@ -513,7 +487,7 @@ Optionally, if you don’t want everyone in your organization to be able to shar
 >Curly braces -- {} -- are required around the RMS Template ID.
 
 >[!NOTE]
->For more info about setting the **AllowAzureRMSForEDP** and the **RMSTemplateIDForEDP** MDM settings, see the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterprisedataprotection-csp) topic. For more info about setting up and using a custom template, see [Configuring custom templates for the Azure Rights Management service](https://docs.microsoft.com/en-us/information-protection/deploy-use/configure-custom-templates) topic.
+>For more info about setting the **AllowAzureRMSForEDP** and the **RMSTemplateIDForEDP** MDM settings, see the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterprisedataprotection-csp) topic. For more info about setting up and using a custom template, see [Configuring custom templates for the Azure Rights Management service](https://docs.microsoft.com/information-protection/deploy-use/configure-custom-templates) topic.
 
 ## Related topics
 - [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md)
@@ -524,9 +498,9 @@ Optionally, if you don’t want everyone in your organization to be able to shar
 
 - [General guidance and best practices for Windows Information Protection (WIP)](guidance-and-best-practices-wip.md)
 
-- [What is Azure Rights Management?]( https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-azure-rms)
+- [What is Azure Rights Management?]( https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
-- [Create and deploy Windows Information Protection (WIP) app protection policy with Intune and MAM](https://docs.microsoft.com/en-us/intune/deploy-use/create-windows-information-protection-policy-with-intune)
+- [Create and deploy Windows Information Protection (WIP) app protection policy with Intune and MAM](https://docs.microsoft.com/intune/deploy-use/create-windows-information-protection-policy-with-intune)
 
 - [Intune MAM Without Enrollment](https://blogs.technet.microsoft.com/configmgrdogs/2016/02/04/intune-mam-without-enrollment/)
 

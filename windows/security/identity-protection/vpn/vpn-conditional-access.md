@@ -23,9 +23,10 @@ The VPN client is now able to integrate with the cloud-based Conditional Access 
 >Conditional Access is an Azure AD Premium feature. 
 
 Conditional Access Platform components used for Device Compliance include the following cloud-based services:
-- [Conditional Access Framework](https://blogs.technet.microsoft.com/tip_of_the_day/2016/03/12/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn/)
 
-- [Azure AD Connect Health](https://azure.microsoft.com/documentation/articles/active-directory-Azure ADconnect-health/)
+- [Conditional Access Framework](https://blogs.technet.microsoft.com/tip_of_the_day/2016/03/12/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn)
+
+- [Azure AD Connect Health](https://docs.microsoft.com/en-us/azure/active-directory/connect-health/active-directory-aadconnect-health)
 
 - [Windows Health Attestation Service](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices#device-health-attestation) (optional)
 

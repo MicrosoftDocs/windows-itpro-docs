@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
-ms.date: 10/18/2017
+ms.date: 05/25/2018
 author: greg-lindsay
 ---
 
@@ -19,6 +19,16 @@ This topic describes how to deploy Windows 10 Enterprise E3 or E5 licenses with 
 >Windows 10 Enterprise Subscription Activation (EA or MPSA) requires Windows 10 Pro, version 1703 or later.<BR>
 >Windows 10 Enterprise E3 in CSP requires Windows 10 Pro, version 1607 or later.<BR>
 >Automatic, non-KMS activation requires Windows 10, version 1803 or later on a device with a firmware-embedded activation key.<BR>
+
+## Firmware-embedded activation key
+
+To determine if the computer has a firmware-embedded activation key, type the following command at an elevated Windows PowerShell prompt
+
+```
+(Get-WmiObject -query ‘select * from SoftwareLicensingService’).OA3xOriginalProductKey
+```
+
+If the device has a firmware-embedded activation key, it will be displayed in the output. If the output is blank, the device does not have a firmware embedded activation key. Most OEM-provided devices designed to run Windows 8 or later will have a firmware-embedded key.
 
 ## Enabling Subscription Activation with an existing EA
 
