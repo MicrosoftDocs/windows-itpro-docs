@@ -42,7 +42,7 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 
 ## Preview features
 The following features are included in the preview release:
-- [Onboard previous versions of Windows](onboard-downlevel--windows-defender-advanced-threat-protection.md)<br>
+- [Onboard previous versions of Windows](onboard-downlevel-windows-defender-advanced-threat-protection.md)<br>
 Onboard supported versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor
   - Windows 7 SP1 Enterprise
   - Windows 7 SP1 Pro
