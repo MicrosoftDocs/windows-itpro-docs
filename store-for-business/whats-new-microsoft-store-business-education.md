@@ -8,7 +8,7 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
-ms.date: 4/26/2018
+ms.date: 5/31/2018
 ---
 
 # What's new in Microsoft Store for Business and Education
@@ -17,15 +17,19 @@ Microsoft Store for Business and Education regularly releases new and improved f
 
 ## Latest updates for Store for Business and Education
 
-**April 2018**
+**May 2018**
 
 |  |  |
 |--------------------------------------|---------------------------------|
-| ![License assign icon](images/license-assign-icon.png) |**Assign apps to larger groups**<br /><br /> We're making it easier for admins to assign apps to groups of people. Admins can assign licenses to groups of any size, and include subgroups within those groups. We’ll figure out who’s in those groups, and assign licenses to people in the groups (skipping people who already have licenses). Along the way, we’ll let you know how many licenses are needed, and provide an estimate on the time required to assign licenses.<br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
-| ![Private store icon](images/private-store-icon.png) |**Change collection order in private store**<br /><br /> Private store collections make it easy for groups of people to find the apps that they need. Now, you can customize the order of your private store collections. <br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
-| ![Office logo icon](images/office-logo.png) |**Office 365 subscription management**<br /><br /> We know that sometimes customers need to cancel subscription. While we don't want to lose a customer, we want the process for managing subscriptions to be easy. Now, you can delete your Office 365 subscription without calling Support. From Microsoft Store for Business and Education, you can request to delete an Office 365 subscription. We'll wait three days before permanently deleting the subscription. In case of a mistake, customers are welcome to reactivate subscriptions during the three-day period. <br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
+| ![performance icon](images/edu-icon.png) |**Immersive Reader app in Microsoft Store for Education**<br /><br /> Microsoft Immersive Reader is now available for education organizations using Microsoft Store for Education. This app is a free tool that uses proven techniques to improve reading and writing for people regardless of their age or ability. You can add the app to your private store, so students can easily install and use it. Check out and download [Immersive Reader](https://educationstore.microsoft.com/en-us/store/details/immersive-reader/9PJZQZ821DQ2). <br /><br /> **Applies to**:<br /> Microsoft Store for Education |
 
-
+<!---
+|  |  |
+|--------------------------------------|---------------------------------|
+| ![Private store icon](images/private-store-icon.png) |**Change order within private store collection**<br /><br /> Following last month's update to customize the order of your private store collections, now you can customize the order of products in each collection. <br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
+| ![performance icon](images/perf-improvement-icon.png) |**Performance improvements in private store**<br /><br /> We continue to work on performance improvements in the private store. Now, most products new to your inventory are available in your private store within 15 minutes of adding them. <br /><br /> [Get more info](https://docs.microsoft.com/microsoft-store/manage-private-store-settings#private-store-performance) <br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
+-->
+ 
 <!---
 We’ve been working on bug fixes and performance improvements to provide you a better experience. Stay tuned for new features!
 |  |  |
@@ -37,6 +41,11 @@ We’ve been working on bug fixes and performance improvements to provide you a 
 -->
 
 ## Previous releases and updates
+
+[April 2018](release-history-microsoft-store-business-education.md#april-2018)
+- Assign apps to larger groups
+- Change collection order in private store
+- Office 365 subscription management
 
 [March 2018](release-history-microsoft-store-business-education.md#march-2018)
 - Performance improvements in private store
