@@ -25,4 +25,4 @@ This topic describes the process for applying the hotfixes for Microsoft BitLock
 5. Configure MBAM features using MBAM Server Configurator.
 
 #### Steps to install the new MBAM 2.5 SP1 server hotfix
-Refer to the document for [new server installation](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/mbam-v25/deploying-the-mbam-25-server-infrastructure).
+Refer to the document for [new server installation](deploying-the-mbam-25-server-infrastructure.md).
