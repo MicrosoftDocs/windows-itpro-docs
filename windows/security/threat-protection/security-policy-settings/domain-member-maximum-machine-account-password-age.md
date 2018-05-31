@@ -32,8 +32,9 @@ For more information, see [Machine Account Password Process](https://blogs.techn
 
 ### Best practices
 
-It is often advisable to set **Domain member: Maximum machine account password age** to about 30 days.
+1. It is often advisable to set **Domain member: Maximum machine account password age** to about 30 days.
 Setting the value to fewer days can increase replication and impact domain controllers. For example, in Windows NT domains, machine passwords were changed every 7 days. The additional replication churn would impact domain controllers in large organizations with many computers or slow links between sites. 
+2. Some organizations pre-build computers and then store them for later use or ship them to remote locations. When a computer starts after being offline more than 30 days, the Netlogon service will notice the password age and initiate a secure channel to a domain controller to change it. If the secure channel cannot be established, the computer will not authenticate with the domain. For this reason, some organizations might want to create a special organizational unit (OU) for computers that are prebuilt, and configure the value for this policy setting to a larger number of days.
 
 ### Location
 
