@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.date: 05/02/2018
+ms.date: 05/30/2018
 ms.localizationpriority: high
 ---
 
@@ -312,38 +312,57 @@ Each rule name and its associated unique rule identifier are listed with a descr
     - Detects a migration unit failure that caused the update to fail.  This rule will output the name of the migration plug-in as well as the error code it produced for diagnostic purposes.
 24.	FindMigGatherUnitFailure - D04C064B-CD77-4E64-96D6-D26F30B4EE29
     - Detects a migration gather unit failure that caused the update to fail.  This rule will output the name of the gather unit/plug-in as well as the error code it produced for diagnostic purposes.
-25.	OptionalComponentInstallFailure - D012E2A2-99D8-4A8C-BBB2-088B92083D78
-    - This rule detects an optional component installation failure that caused the update to fail.  It will output the optional component name and error code its installation resulted in for diagnostic purposes.
-26.	CriticalSafeOSDUFailure - 73566DF2-CA26-4073-B34C-C9BC70DBF043
+25.	CriticalSafeOSDUFailure - 73566DF2-CA26-4073-B34C-C9BC70DBF043
     - This rule indicates a failure occurred while updating the SafeOS image with a critical dynamic update.  It will indicate the phase and error code that occurred while attempting to update the SafeOS image for diagnostic purposes.
-27.	UserProfileCreationFailureDuringOnlineApply - 678117CE-F6A9-40C5-BC9F-A22575C78B14
+26.	UserProfileCreationFailureDuringOnlineApply - 678117CE-F6A9-40C5-BC9F-A22575C78B14
     - Indicates there was a critical failure while creating or modifying a User Profile during the online apply phase of the update.  It will indicate the operation and error code associated with the failure for diagnostic purposes.
-28.	WimMountFailure - BE6DF2F1-19A6-48C6-AEF8-D3B0CE3D4549
+27.	WimMountFailure - BE6DF2F1-19A6-48C6-AEF8-D3B0CE3D4549
     - This rule indicates the update failed to mount a wim file.  It will show the name of the wim file as well as the error message and error code associated with the failure for diagnostic purposes.
-29.	FindSuccessfulUpgrade - 8A0824C8-A56D-4C55-95A0-22751AB62F3E
+28.	FindSuccessfulUpgrade - 8A0824C8-A56D-4C55-95A0-22751AB62F3E
     - Determines if the given setup was a success or not based off the logs.
-30.	FindSetupHostReportedFailure - 6253C04F-2E4E-4F7A-B88E-95A69702F7EC
+29.	FindSetupHostReportedFailure - 6253C04F-2E4E-4F7A-B88E-95A69702F7EC
     - Gives information about failures surfaced early in the upgrade process by setuphost.exe
-31.	FindDownlevelFailure - 716334B7-F46A-4BAA-94F2-3E31BC9EFA55
+30.	FindDownlevelFailure - 716334B7-F46A-4BAA-94F2-3E31BC9EFA55
     - Gives failure information surfaced by SetupPlatform, later in the down-level phase.
-32.	FindAbruptDownlevelFailure - 55882B1A-DA3E-408A-9076-23B22A0472BD
+31.	FindAbruptDownlevelFailure - 55882B1A-DA3E-408A-9076-23B22A0472BD
     - Gives last operation failure information when the system fails in the down-level, but the log just ends abruptly.
-33.	FindSetupPlatformFailedOperationInfo - 307A0133-F06B-4B75-AEA8-116C3B53C2D1
+32.	FindSetupPlatformFailedOperationInfo - 307A0133-F06B-4B75-AEA8-116C3B53C2D1
     - Gives last phase and error information when SetupPlatform indicates a critical failure.  This rule will indicate the operation and error associated with the failure for diagnostic purposes.
-34.	FindRollbackFailure - 3A43C9B5-05B3-4F7C-A955-88F991BB5A48
+33.	FindRollbackFailure - 3A43C9B5-05B3-4F7C-A955-88F991BB5A48
     - Gives last operation, failure phase and error information when a rollback occurs.
+34. AdvancedInstallerGenericFailure – 4019550D-4CAA-45B0-A222-349C48E86F71
+    - A rule to match AdvancedInstaller read/write failures in a generic sense.  Will output the executable being called as well as the error code and exit code reported.
+35. OptionalComponentFailedToGetOCsFromPackage – D012E2A2-99D8-4A8C-BBB2-088B92083D78  (NOTE:  This rule replaces the OptionalComponentInstallFailure rule present in v1.10.
+    - This matches a specific Optional Component failure when attempting to enumerate components in a package.  Will output the package name and error code.
+36. OptionalComponentOpenPackageFailed – 22952520-EC89-4FBD-94E0-B67DF88347F6
+    - Matches a specific Optional Component failure when attempting to open an OC package.  Will output the package name and error code.
+37. OptionalComponentInitCBSSessionFailed – 63340812-9252-45F3-A0F2-B2A4CA5E9317
+    - Matches a specific failure where the advanced installer service or components aren’t operating or started on the system.  Will output the error code.
+38. UserProfileCreationFailureDuringFinalize – C6677BA6-2E53-4A88-B528-336D15ED1A64
+    - Matches a specific User Profile creation error during the finalize phase of setup.  Will output the failure code.
+39. WimApplyExtractFailure – 746879E9-C9C5-488C-8D4B-0C811FF3A9A8
+    - Matches a wim apply failure during wim extraction phases of setup.  Will output the extension, path and error code.
+40. UpdateAgentExpanderFailure – 66E496B3-7D19-47FA-B19B-4040B9FD17E2
+    - Matches DPX expander failures in the down-level phase of update from WU.  Will output the package name, function, expression and error code.
+41. FindFatalPluginFailure – E48E3F1C-26F6-4AFB-859B-BF637DA49636
+    - Matches any plug in failure that setupplatform decides is fatal to setup.  Will output the plugin name, operation and error code.
 
 
 ## Release notes
 
-05/02/2018 - SetupDiag v1.1 is released with 34 rules, as a standalone tool available from the Download Center.
+05/30/2018 - SetupDiag v1.20 is released with 41 rules, as a standalone tool available from the Download Center.
+   - Fixed a bug in device install failure detection in online mode.
+   - Changed SetupDiag to work without an instance of setupact.log. Previously, SetupDiag required at least one setupact.log to operate.  This change enables the tool to analyze update failures that occur prior to calling SetupHost.
+   - Telemetry is refactored to only send the rule name and GUID (or “NoRuleMatched” if no rule is matched) and the Setup360 ReportId. This change assures data privacy during rule processing.
+
+05/02/2018 - SetupDiag v1.10 is released with 34 rules, as a standalone tool available from the Download Center.
    - A performance enhancment has been added to result in faster rule processing.
    - Rules output now includes links to support articles, if applicable.
    - SetupDiag now provides the path and name of files that it is processing.
    - You can now run SetupDiag by simply clicking on it and then examining the output log file.
    - An output log file is now always created, whether or not a rule was matched.
 
-03/30/2018 - SetupDiag v1.0 is released with 26 rules, as a standalone tool available from the Download Center.
+03/30/2018 - SetupDiag v1.00 is released with 26 rules, as a standalone tool available from the Download Center.
 
 ## Related topics
 
