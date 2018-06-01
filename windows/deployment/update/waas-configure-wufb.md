@@ -4,10 +4,10 @@ description: You can use Group Policy or your mobile device management (MDM) ser
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: DaniHalfin
+author: jaimeo
 ms.localizationpriority: high
-ms.author: daniha
-ms.date: 10/13/2017
+ms.author: jaimeo
+ms.date: 06/01/2018
 ---
 
 # Configure Windows Update for Business
@@ -21,14 +21,14 @@ ms.date: 10/13/2017
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 >[!IMPORTANT]
->Due to [naming changes](waas-overview.md#naming-changes), older terms like CB,CBB and LTSB may still be displayed in some of our products.
+>Due to [naming changes](waas-overview.md#naming-changes), older terms like CB,CBB, and LTSB might still appear in some of our products.
 >
 >In the following settings CB refers to Semi-Annual Channel (Targeted), while CBB refers to Semi-Annual Channel.
 
 You can use Group Policy or your mobile device management (MDM) service to configure Windows Update for Business settings for your devices. The sections in this topic provide the Group Policy and MDM policies for Windows 10, version 1511 and above. The MDM policies use the OMA-URI setting from the [Policy CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx).  
 
 >[!IMPORTANT]
->For Windows Update for Business policies to be honored, the Diagnostic Data level of the device must be set to **1 (Basic)** or higher.  If it is set to **0 (Security)**, Windows Update for Business policies will have no effect. For instructions, see [Configure the operating system diagnostic data level](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-levels).
+>For Windows Update for Business policies to be honored, the diagnostic data level of the device must be set to **1 (Basic)** or higher. If it is set to **0 (Security)**, Windows Update for Business policies will have no effect. For instructions, see [Configure the operating system diagnostic data level](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-levels).
 
 Some Windows Update for Business policies are not applicable or behave differently for devices running Windows 10 Mobile Enterprise. Specifically, policies pertaining to Feature Updates will not be applied to Windows 10 Mobile Enterprise. All Windows 10 Mobile updates are recognized as Quality Updates, and can only be deferred or paused using the Quality Update policy settings. Additional information is provided in this topic and in [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md).
 
@@ -42,7 +42,7 @@ By grouping devices with similar deferral periods, administrators are able to cl
 <span id="configure-devices-for-current-branch-or-current-branch-for-business"/>
 ## Configure devices for Current Branch (CB) or Current Branch for Business (CBB)
 
-With Windows Update for Business, you can set a device to be on either the Current Branch (CB) or the Current Branch for Business (CBB) servicing branch. For more information on this servicing model, see [Windows 10 servicing options](waas-overview.md#servicing-channels). 
+With Windows Update for Business, you can set a device to be on either the Current Branch (CB) (now called Semi-Annual Channel (Targeted)) or the Current Branch for Business (CBB) (now called Semi-Annual Channel) servicing branch. For more information on this servicing model, see [Windows 10 servicing options](waas-overview.md#servicing-channels). 
 
 **Release branch policies**
 
@@ -59,6 +59,9 @@ Starting with version 1703, users are able to configure their device's branch re
 
 >[!NOTE]
 >Users will not be able to change this setting if it was configured by policy.
+
+>[!IMPORTANT]
+>Devices on the Semi-Annual Channel (formerly called Current Branch for Business) must have their diagnostic data set to **1 (Basic)** or higher, in order to ensure that the service is performing at the expected quality. If diagnostic data is set to **0**, the device will be treated as if it were in the Semi-Annual Channel (Targeted)(formerly called Current Branch or CB) branch. For instructions to set the diagnostic data level, see [Configure the operating system diagnostic data level](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-levels).
 
 ## Configure when devices receive Feature Updates
 
