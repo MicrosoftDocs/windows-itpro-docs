@@ -7,7 +7,7 @@ ms.sitesec: library
 author: Jaimeo
 ms.localizationpriority: high
 ms.author: jaimeo
-ms.date: 02/09/2018
+ms.date: 06/01/2018
 ---
 
 # Overview of Windows as a service
@@ -72,11 +72,16 @@ As part of the alignment with Windows 10 and Office 365 ProPlus, we are adopting
 * Semi-Annual Channel - We will be referreing to Current Branch (CB) as "Semi-Annual Channel (Targeted)", while Current Branch for Business (CBB) will simply be referred to as "Semi-Annual Channel". 
 * Long-Term Servicing Channel -  The Long-Term Servicing Branch (LTSB) will be referred to as Long-Term Servicing Channel (LTSC).
 
+>[!IMPORTANT]
+>With each Semi-Annual Channel release, we recommend beginning deployment right away to devices selected for early adoption (targeted validation) and ramp up to full deployment at your discretion, regardless of the "Targeted" designation. This will enable you to gain access to new features, experiences, and integrated security as soon as possible. For nmore information, see the blog post [Windows 10 and the "disappearing" SAC-T](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-and-the-disappearing-SAC-T/ba-p/199747).
+
 >[!NOTE]
 >For additional information, see the section about [Servicing Channels](#servicing-channels). 
 >
->You can also read [this blog post](https://blogs.technet.microsoft.com/windowsitpro/2017/07/27/waas-simplified-and-aligned/), with details on this change. 
+>You can also read the blog post [Waas simplified and aligned](https://blogs.technet.microsoft.com/windowsitpro/2017/07/27/waas-simplified-and-aligned/), with details on this change. 
 
+>[!IMPORTANT]
+>Devices on the Semi-Annual Channel (formerly called Current Branch for Business) must have their diagnostic data set to **1 (Basic)** or higher, in order to ensure that the service is performing at the expected quality. If diagnostic data is set to **0**, the device will be treated as if it were in the Semi-Annual Channel (Targeted)(formerly called Current Branch or CB) branch. For instructions to set the diagnostic data level, see [Configure the operating system diagnostic data level](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-levels).
 
 ### Feature updates
 
