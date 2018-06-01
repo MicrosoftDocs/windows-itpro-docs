@@ -23,6 +23,9 @@ Windows Defender Advanced Threat Protection is a unified endpoint security platf
 - Windows Firewall
 - Windows Defender Security Analytics
 
+You get all these good stuff which you configure individually. You can pick and choose what you need and what you don't. When you're done with setting 'em up, you'll be rewarded with the convenience of seeing everything in once place: Windows Defender Security Center. 
+
+
 
 With these you'll get the following capabilities:
 ![Windows Defender ATP service components](windows-defender-atp/images/WDATP-components.png)
