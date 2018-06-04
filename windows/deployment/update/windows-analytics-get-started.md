@@ -9,6 +9,7 @@ ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
 ms.date: 03/08/2018
+ms.localizationpriority: high
 ---
 
 # Enrolling devices in Windows Analytics
