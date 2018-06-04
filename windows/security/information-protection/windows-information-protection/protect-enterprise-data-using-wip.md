@@ -7,9 +7,9 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: coreyp-at-msft
+ms.author: justinha
+ms.date: 05/30/2018
 ms.localizationpriority: medium
-ms.date: 09/11/2017
 ---
 
 # Protect your enterprise data using Windows Information Protection (WIP)
@@ -18,7 +18,7 @@ ms.date: 09/11/2017
 - Windows 10, version 1607 and later
 - Windows 10 Mobile, version 1607 and later
 
->Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
+>Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/WindowsForBusiness/Compare).
 
 With the increase of employee-owned devices in the enterprise, there’s also an increasing risk of accidental data leak through apps and services, like email, social media, and the public cloud, which are outside of the enterprise’s control. For example, when an employee sends the latest engineering pictures from their personal email account, copies and pastes product info into a tweet, or saves an in-progress sales report to their public cloud storage.
 
@@ -29,7 +29,7 @@ You’ll need this software to run WIP in your enterprise:
 
 |Operating system | Management solution |
 |-----------------|---------------------|
-|Windows 10, version 1607 or later | Microsoft Intune<br><br>-OR-<br><br>System Center Configuration Manager<br><br>-OR-<br><br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product. If your 3rd party MDM does not have UI support for the policies, refer to the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt697634.aspx) documentation.|
+|Windows 10, version 1607 or later | Microsoft Intune<br><br>-OR-<br><br>System Center Configuration Manager<br><br>-OR-<br><br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product. If your 3rd party MDM does not have UI support for the policies, refer to the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt697634.aspx) documentation.|
 
 ## What is enterprise data control?
 Effective collaboration means that you need to share data with others in your enterprise. This sharing can be from one extreme where everyone has access to everything without any security, all the way to the other extreme where people can’t share anything and it’s all highly secured. Most enterprises fall somewhere in between the two extremes, where success is balanced between providing the necessary access with the potential for improper data disclosure.

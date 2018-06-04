@@ -957,7 +957,7 @@ To turn off **Location for this device**:
 
    -or-
 
--   Create a REG\_DWORD registry setting named **LetAppsAccessLocation** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+-   Create a REG\_DWORD registry setting named **LetAppsAccessLocation** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
     -or-
 
@@ -990,7 +990,7 @@ To turn off **Location**:
 
    -or-
 
--   Create a REG\_DWORD registry setting named **DisableLocation** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\LocationAndSensors** with a value of 1 (one).
+-   Create a REG\_DWORD registry setting named **DisableLocation** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\LocationAndSensors** with a value of 1 (one).
 
     -or-
 
@@ -1018,7 +1018,7 @@ To turn off **Let apps use my camera**:
 
    -or-
 
--   Create a REG\_DWORD registry setting named **LetAppsAccessCamera** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+-   Create a REG\_DWORD registry setting named **LetAppsAccessCamera** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
     -or-
 
@@ -1067,7 +1067,7 @@ To turn off **Let apps use my microphone**:
     
     -or-
 
--   Create a REG\_DWORD registry setting named **LetAppsAccessMicrophone** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two)
+-   Create a REG\_DWORD registry setting named **LetAppsAccessMicrophone** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two)
 
 To turn off **Choose apps that can use your microphone**:
 
@@ -1105,7 +1105,7 @@ To turn off **Let apps access my notifications**:
 
     -   Set the **Select a setting** box to **Force Deny**.
 
-        -or-
+    -or-
 
 -    Apply the Privacy/LetAppsAccessNotifications MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessnotifications), where:
 
@@ -1113,9 +1113,9 @@ To turn off **Let apps access my notifications**:
     -   **1**. Force allow
     -   **2**. Force deny
 
-       -or-
+    -or-
 
--   Create a REG\_DWORD registry setting named **LetAppsAccessNotifications** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two)
+-   Create a REG\_DWORD registry setting named **LetAppsAccessNotifications** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two)
 
 ### <a href="" id="bkmk-priv-speech"></a>17.6 Speech, inking, & typing
 
@@ -1134,15 +1134,15 @@ To turn off the functionality:
 
        -or-
 
--   Create a REG\_DWORD registry setting named **RestrictImplicitInkCollection** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\InputPersonalization** with a value of 1 (one).
+-   Create a REG\_DWORD registry setting named **RestrictImplicitInkCollection** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\InputPersonalization** with a value of 1 (one).
 
    -or-
 
--   Create a REG\_DWORD registry setting named **AcceptedPrivacyPolicy** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Personalization\\Settings** with a value of 0 (zero).
+-   Create a REG\_DWORD registry setting named **AcceptedPrivacyPolicy** in **HKEY\_CURRENT\_USER\\Software\\Microsoft\\Personalization\\Settings** with a value of 0 (zero).
 
    -and-
 
--  Create a REG\_DWORD registry setting named **HarvestContacts** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\InputPersonalization\\TrainedDataStore** with a value of 0 (zero).
+-  Create a REG\_DWORD registry setting named **HarvestContacts** in **HKEY\_CURRENT\_USER\\Software\\Microsoft\\InputPersonalization\\TrainedDataStore** with a value of 0 (zero).
 
 If you're running at least Windows 10, version 1703, you can turn off updates to the speech recognition and speech synthesis models:
 
@@ -1203,15 +1203,15 @@ To turn off **Choose apps that can access contacts**:
 
     -   Set the **Select a setting** box to **Force Deny**.
 
-    -or-
+   -or-
 
--    Apply the Privacy/LetAppsAccessContacts MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccesscontacts), where:
+-    Apply the Privacy/LetAppsAccessContacts MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccesscontacts), where:   
+  
+     -   **0**. User in control
+     -   **1**. Force allow
+     -   **2**. Force deny
 
-    -   **0**. User in control
-    -   **1**. Force allow
-    -   **2**. Force deny
-
-    -or-
+   -or-
 
 - Create a REG\_DWORD registry setting named **LetAppsAccessContacts** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
@@ -1237,7 +1237,7 @@ To turn off **Let apps access my calendar**:
     -   **1**. Force allow
     -   **2**. Force deny
     
-    -or-
+   -or-
 
 - Create a REG\_DWORD registry setting named **LetAppsAccessCalendar** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
@@ -1269,7 +1269,7 @@ To turn off **Let apps access my call history**:
 
         -or-
 
--   Create a REG\_DWORD registry setting named **LetAppsAccessCallHistory** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+-   Create a REG\_DWORD registry setting named **LetAppsAccessCallHistory** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 ### <a href="" id="bkmk-priv-email"></a>17.11 Email
 
@@ -1295,7 +1295,7 @@ To turn off **Let apps access and send email**:
 
      -or-
 
--   Create a REG\_DWORD registry setting named **LetAppsAccessEmail** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+-   Create a REG\_DWORD registry setting named **LetAppsAccessEmail** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 ### <a href="" id="bkmk-priv-messaging"></a>17.12 Messaging
 
@@ -1313,13 +1313,13 @@ To turn off **Let apps read or send messages (text or MMS)**:
 
     -or-
 
--    Apply the Privacy/LetAppsAccess<Messaging MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessmessaging), where:
+-    Apply the Privacy/LetAppsAccessMessaging MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessmessaging), where:
 
     -   **0**. User in control
     -   **1**. Force allow
     -   **2**. Force deny
 
-     -or-
+    -or-
 
 -   Create a REG\_DWORD registry setting named **LetAppsAccessMessaging** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
@@ -1349,9 +1349,9 @@ To turn off **Let apps make phone calls**:
     -   **1**. Force allow
     -   **2**. Force deny
 
-     -or-
+    -or-
 
--   Create a REG\_DWORD registry setting named **LetAppsAccessPhone** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+-   Create a REG\_DWORD registry setting named **LetAppsAccessPhone** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 
 To turn off **Choose apps that can make phone calls**:
@@ -1380,9 +1380,9 @@ To turn off **Let apps control radios**:
     -   **1**. Force allow
     -   **2**. Force deny
 
-     -or-
+    -or-
 
--   Create a REG\_DWORD registry setting named **LetAppsAccessRadios** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+-   Create a REG\_DWORD registry setting named **LetAppsAccessRadios** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 
 To turn off **Choose apps that can control radios**:
@@ -1412,7 +1412,7 @@ To turn off **Let apps automatically share and sync info with wireless devices t
    
      -or-
 
--   Create a REG\_DWORD registry setting named **LetAppsSyncWithDevices** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+-   Create a REG\_DWORD registry setting named **LetAppsSyncWithDevices** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 To turn off **Let your apps use your trusted devices (hardware you've already connected, or comes with your PC, tablet, or phone)**:
 
@@ -1453,7 +1453,7 @@ To change how frequently **Windows should ask for my feedback**:
 
    -or-
 
--   Create a REG\_DWORD registry setting named **DoNotShowFeedbackNotifications** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\DataCollection** with a value of 1 (one).
+-   Create a REG\_DWORD registry setting named **DoNotShowFeedbackNotifications** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection** with a value of 1 (one).
 
    -or-
 
@@ -1570,9 +1570,9 @@ To turn off **Let Windows and your apps use your motion data and collect motion 
     -   **1**. Force allow
     -   **2**. Force deny
     
-    -or-
+   -or-
 
--   Create a REG\_DWORD registry setting named **LetAppsAccessMotion** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+-   Create a REG\_DWORD registry setting named **LetAppsAccessMotion** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 ### <a href="" id="bkmk-priv-tasks"></a>17.19 Tasks
 
@@ -1631,7 +1631,7 @@ For Windows 10:
 
    -or-
 
-- Create a REG\_DWORD registry setting named **NoGenTicket** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows NT\\CurrentVersion\\Software Protection Platform** with a value of 1 (one).
+- Create a REG\_DWORD registry setting named **NoGenTicket** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\CurrentVersion\\Software Protection Platform** with a value of 1 (one).
 
 For Windows Server 2016 with Desktop Experience or Windows Server 2016 Server Core:
 
@@ -1639,7 +1639,7 @@ For Windows Server 2016 with Desktop Experience or Windows Server 2016 Server Co
 
    -or-
 
-- Create a REG\_DWORD registry setting named **NoGenTicket** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows NT\\CurrentVersion\\Software Protection Platform** with a value of 1 (one).
+- Create a REG\_DWORD registry setting named **NoGenTicket** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\CurrentVersion\\Software Protection Platform** with a value of 1 (one).
 
 The Windows activation status will be valid for a rolling period of 180 days with weekly activation status checks to the KMS.
 
@@ -1663,7 +1663,7 @@ You can control if your settings are synchronized:
 
     -or-
 
--   Create a REG\_DWORD registry setting named **DisableSettingSync** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\SettingSync** with a value of 2 (two) and another named **DisableSettingSyncUserOverride** in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\SettingSync** with a value of 1 (one).
+-   Create a REG\_DWORD registry setting named **DisableSettingSync** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\SettingSync** with a value of 2 (two) and another named **DisableSettingSyncUserOverride** in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\SettingSync** with a value of 1 (one).
 
     -or-
 
