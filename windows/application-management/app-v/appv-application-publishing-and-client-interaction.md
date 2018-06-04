@@ -69,7 +69,7 @@ Additional details for the table are provided in the section below and throughou
 
 ### Package store
 
-The App-V Client manages the applications assets mounted in the package store. This default storage location is `%ProgramData%\App-V`, but you can configure it during or after setup by using the **Set-AppVClientConfiguration** Windows PowerShell cmdlet, which modifies the local registry (`PackageInstallationRoot` value under the `HKLM\Software\Microsoft\AppV\Client\Streaming` key). The package store must be located at a local path on the client operating system. The individual packages are stored in the package store in subdirectories named after the Package GUID and Version GUID.
+The App-V Client manages the applications assets mounted in the package store. This default storage location is %ProgramData%\App-V, but you can configure it during or after setup by using the **Set-AppVClientConfiguration** Windows PowerShell cmdlet, which modifies the local registry (`PackageInstallationRoot` value under the HKLM\Software\Microsoft\AppV\Client\Streaming key). The package store must be located at a local path on the client operating system. The individual packages are stored in the package store in subdirectories named after the Package GUID and Version GUID.
 
 Example of a path to a specific application:
 
@@ -98,9 +98,9 @@ The App-V Client manages the following two file-based locations:
 |||
 |---|---|
 |Description|Stores package documents that are available to users on the machine when packages are added and published. However, if a package is “global” at publishing time, the integrations are available to all users.<br></br>If a package is non-global, the integrations are published only for specific users, but there are still global resources that are modified and visible to anyone on the client computer (such as when the package directory is in a shared disk location).<br></br>If a package is available to a user on the computer (global or non-global), the manifest is stored in the Machine Catalog. When a package is published globally, there is a Dynamic Configuration file, stored in the Machine Catalog; therefore, the determination of whether a package is global is defined according to whether there is a policy file (UserDeploymentConfiguration file) in the Machine Catalog.|
-|Default storage location|```%programdata%\Microsoft\AppV\Client\Catalog\```<br></br>This location is not the same as the Package Store location. The Package Store is the golden or pristine copy of the package files.|
+|Default storage location|%programdata%\Microsoft\AppV\Client\Catalog\<br></br>This location is not the same as the Package Store location. The Package Store is the golden or pristine copy of the package files.|
 |Files in the machine catalog|- Manifest.xml<br>- DeploymentConfiguration.xml<br>- UserManifest.xml (Globally Published Package)<br>- UserDeploymentConfiguration.xml (Globally Published Package)|
-|Additional machine catalog location, used when the package is part of a connection group|The following location is in addition to the specific package location mentioned previously as the default storage location:<br></br>```%programdata%\Microsoft\AppV\Client\Catalog\PackageGroups\ConGroupGUID\ConGroupVerGUID```|
+|Additional machine catalog location, used when the package is part of a connection group|The following location is in addition to the specific package location mentioned previously as the default storage location:<br></br>%programdata%\Microsoft\AppV\Client\Catalog\PackageGroups\ConGroupGUID\ConGroupVerGUID|
 |Additional files in the machine catalog when the package is part of a connection group|- PackageGroupDescriptor.xml<br>- UserPackageGroupDescriptor.xml (globally published Connection Group)|
 
 ### User catalog
@@ -108,14 +108,14 @@ The App-V Client manages the following two file-based locations:
 |||
 |---|---|
 |Description|Created during the publishing process. Contains information used for publishing the package, and for making sure that a package is provisioned to a specific user at launch. Created in a roaming location and includes user-specific publishing information.<br></br>When a package is published for a user, the policy file is stored in the User Catalog. At the same time, a copy of the manifest is also stored in the User Catalog. When a package entitlement is removed for a user, the relevant package files are removed from the User Catalog. Looking at the user catalog, an administrator can view the presence of a Dynamic Configuration file, which indicates that the package is entitled for that user.<br></br>For roaming users, the User Catalog needs to be in a roaming or shared location to preserve the legacy App-V behavior of targeting users by default. Entitlement and policy are tied to a user, not a computer, so they should roam with the user once they are provisioned.|
-|Default storage location|```appdata\roaming\Microsoft\AppV\Client\Catalog\Packages\PkgGUID\VerGUID```|
+|Default storage location|appdata\roaming\Microsoft\AppV\Client\Catalog\Packages\PkgGUID\VerGUID|
 |Files in the user catalog|- UserManifest.xml<br>- DynamicConfiguration.xml or UserDeploymentConfiguration.xml|
-|Additional user catalog location, used when the package is part of a connection group|The following location is in addition to the specific package location mentioned above:<br></br>```appdata\roaming\Microsoft\AppV\Client\Catalog\PackageGroups\PkgGroupGUID\PkgGroupVerGUID```|
-|Additional file in the machine catalog when the package is part of a connection group|```UserPackageGroupDescriptor.xml```|
+|Additional user catalog location, used when the package is part of a connection group|The following location is in addition to the specific package location mentioned above:<br></br>appdata\roaming\Microsoft\AppV\Client\Catalog\PackageGroups\PkgGroupGUID\PkgGroupVerGUID|
+|Additional file in the machine catalog when the package is part of a connection group|**UserPackageGroupDescriptor.xml**|
 
 ### Shortcut backups
 
-During the publishing process, the App-V Client backs up any shortcuts and integration points to ```%AppData%\Microsoft\AppV\Client\Integration\ShortCutBackups```. This backup lets integration points restore to the previous versions when the package is unpublished.
+During the publishing process, the App-V Client backs up any shortcuts and integration points to %AppData%\Microsoft\AppV\Client\Integration\ShortCutBackups. This backup lets integration points restore to the previous versions when the package is unpublished.
 
 ### Copy on Write files
 
@@ -133,11 +133,11 @@ The COW Local location is similar to the roaming location, but the directories a
 
 Before an application can access the package registry data, the App-V Client must make the package registry data available to the applications. The App-V Client uses the real registry as a backing store for all registry data.
 
-When a new package is added to the App-V Client, a copy of the REGISTRY.DAT file from the package is created at ```%ProgramData%\Microsoft\AppV\Client\VREG\{Version GUID}.dat```. The name of the file is the version GUID with the .DAT extension. The reason this copy is made is to ensure that the actual hive file in the package is never in use, which would prevent the removal of the package at a later time.
+When a new package is added to the App-V Client, a copy of the REGISTRY.DAT file from the package is created at %ProgramData%\Microsoft\AppV\Client\VREG\{Version GUID}.dat. The name of the file is the version GUID with the .DAT extension. The reason this copy is made is to ensure that the actual hive file in the package is never in use, which would prevent the removal of the package at a later time.
 
 **Registry.dat from Package Store** > **%ProgramData%\Microsoft\AppV\Client\Vreg\\{VersionGuid}.dat**
 
-When the first application from the package is launched on the client, the client stages or copies the contents out of the hive file, re-creating the package registry data in an alternate location ```HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\Packages\PackageGuid\Versions\VersionGuid\REGISTRY```. The staged registry data has two distinct types of machine data and user data. Machine data is shared across all users on the machine. User data is staged for each user to a user-specific location ```HKCU\Software\Microsoft\AppV\Client\Packages\PackageGuid\Registry\User```. The machine data is ultimately removed at package removal time, and the user data is removed on a user unpublish operation.
+When the first application from the package is launched on the client, the client stages or copies the contents out of the hive file, re-creating the package registry data in an alternate location under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\Packages\PackageGuid\Versions\VersionGuid\REGISTRY. The staged registry data has two distinct types of machine data and user data. Machine data is shared across all users on the machine. User data is staged for each user to a user-specific location HKCU\Software\Microsoft\AppV\Client\Packages\PackageGuid\Registry\User. The machine data is ultimately removed at package removal time, and the user data is removed on a user unpublish operation.
 
 ### Package registry staging vs. connection group registry staging
 
@@ -173,7 +173,7 @@ There are two COW locations for HKLM: elevated and non-elevated processes. Eleva
 
 ### Pass-through keys
 
-An administrator can use pass-through keys to configure certain keys to only be read from the native registry, bypassing the Package and COW locations. Pass-through locations are global to the machine (not package-specific) and can be configured by adding the path to the key, which should be treated as pass-through to the **REG\_MULTI\_SZ** value called **PassThroughPaths** of the key ```HKLM\Software\Microsoft\AppV\Subsystem\VirtualRegistry```. Any key that appears under this multi-string value (and their children) will be treated as pass-through.
+An administrator can use pass-through keys to configure certain keys to only be read from the native registry, bypassing the Package and COW locations. Pass-through locations are global to the machine (not package-specific) and can be configured by adding the path to the key, which should be treated as pass-through to the **REG\_MULTI\_SZ** value called **PassThroughPaths** of the key HKLM\Software\Microsoft\AppV\Subsystem\VirtualRegistry. Any key that appears under this multi-string value (and their children) will be treated as pass-through.
 
 The following locations are configured as pass-through locations by default:
 
@@ -211,7 +211,7 @@ Packages can be explicitly loaded by entering the  **Mount-AppVClientPackage** P
 
 ### Streaming packages
 
-The App-V Client can be configured to change the default behavior of streaming. All streaming policies are stored under the following registry key: ```HKEY_LOCAL_MACHINE\Software\Microsoft\AppV\Client\Streaming```. Policies are set by entering the **Set-AppvClientConfiguration** PowerShell cmdlet. The following policies apply to streaming:
+The App-V Client can be configured to change the default behavior of streaming. All streaming policies are stored under the following registry key: HKEY_LOCAL_MACHINE\Software\Microsoft\AppV\Client\Streaming. Policies are set by entering the **Set-AppvClientConfiguration** PowerShell cmdlet. The following policies apply to streaming:
 
 |Policy|Description|
 |---|---|
@@ -229,7 +229,7 @@ These settings affect the behavior of streaming App-V package assets to the clie
 
 ### Background streaming
 
-The Windows PowerShell cmdlet ```Get-AppvClientConfiguration``` can be used to determine the current mode for background streaming with the AutoLoad setting and modified with either the **Set-AppvClientConfiguration** cmdlet or from the registry (HKLM\\SOFTWARE\\Microsoft\\AppV\\ClientStreaming key). Background streaming is a default setting where the Autoload setting is set to download previously used packages. The behavior based on default setting (value=1) downloads App-V data blocks in the background after the application has been launched. This setting can either be disabled altogether (value=0) or enabled for all packages (value=2), regardless of whether they have been launched.
+The Windows PowerShell cmdlet **Get-AppvClientConfiguration** can be used to determine the current mode for background streaming with the AutoLoad setting and modified with either the **Set-AppvClientConfiguration** cmdlet or from the registry (HKLM\\SOFTWARE\\Microsoft\\AppV\\ClientStreaming key). Background streaming is a default setting where the Autoload setting is set to download previously used packages. The behavior based on default setting (value=1) downloads App-V data blocks in the background after the application has been launched. This setting can either be disabled altogether (value=0) or enabled for all packages (value=2), regardless of whether they have been launched.
 
 ### Optimized streaming
 
@@ -241,7 +241,7 @@ After the initial stream of any publishing data and the primary feature block, r
 
 ### Package upgrades
 
-App-V Packages require updating throughout the lifecycle of the application. App-V Package upgrades are like the package publish operation, as each version will be created in its own PackageRoot location: ```%ProgramData%\App-V\{PkgGUID}\{newVerGUID}```. The upgrade operation is optimized by creating hard links to identical and streamed files from other versions of the same package.
+App-V Packages require updating throughout the lifecycle of the application. App-V Package upgrades are like the package publish operation, as each version will be created in its own PackageRoot location: %ProgramData%\App-V\{PkgGUID}\{newVerGUID}. The upgrade operation is optimized by creating hard links to identical and streamed files from other versions of the same package.
 
 ### Package removal
 
@@ -256,12 +256,12 @@ App-V is able to provide a near-native experience when roaming, depending on how
 App-V stores data, which represents the state of the user’s catalog, in the form of:
 
 - Files under %appdata%\\Microsoft\\AppV\\Client\\Catalog
-- Registry settings under `HKEY_CURRENT_USER\Software\Microsoft\AppV\Client\Packages`
+- Registry settings under HKEY_CURRENT_USER\Software\Microsoft\AppV\Client\Packages
 
 Together, these files and registry settings represent the user’s catalog, so either both must be roamed, or neither must be roamed for a given user. App-V does not support roaming %AppData%, but not roaming the user’s profile (registry), or vice versa.
 
 >[!NOTE]
->The **Repair-AppvClientPackage** cmdlet does not repair the publishing state of packages, where the user’s App-V state under `HKEY_CURRENT_USER` is missing or mismatched with the data in %appdata%.
+>The **Repair-AppvClientPackage** cmdlet does not repair the publishing state of packages, where the user’s App-V state under HKEY_CURRENT_USER is missing or mismatched with the data in %appdata%.
 
 ### Registry-based data
 
