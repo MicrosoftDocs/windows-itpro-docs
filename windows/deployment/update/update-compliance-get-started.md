@@ -9,6 +9,7 @@ ms.pagetype: deploy
 author: Jaimeo
 ms.author: jaimeo
 ms.date: 03/15/2018
+ms.localizationpriority: high
 ---
 
 # Get started with Update Compliance
