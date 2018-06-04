@@ -9,6 +9,7 @@ ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
 ms.date: 05/02/2018
+ms.localizationpriority: high
 ---
 
 # Frequently asked questions and troubleshooting Windows Analytics
