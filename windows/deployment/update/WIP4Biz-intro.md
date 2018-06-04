@@ -1,6 +1,7 @@
 ---
 title: Introduction to the Windows Insider Program for Business
 description: Introduction to the Windows Insider Program for Business and why IT Pros should join it 
+keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, WiP4Biz, enterprise, rings, flight
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
