@@ -444,12 +444,21 @@ This policy setting specifies whether you can use the Sync your Settings option 
 |URI full path |./Vendor/MSFT/Policy/Config/Experience/AllowSyncMySettings  |
 |Location |Computer Configuration\Administrative Templates\Windows Components\sync your settings\Do not sync |
 |Data type | Integer |
-|Allowed values |<ul><li>**0** - Employees cannot sync settings between PCs.</li><li>**1 (default)** - Employees can sync between PCs.</li></ul> |
+|Allowed values |<ul><li>**0** - Disable syncing between PCs.</li><li>**1 (default)** - Allow syncing between PCs.</li></ul> |
 
 ## Do not sync browser settings
 >*Supported versions: Windows 10*
 
 This policy setting specifies whether a browser group can use the Sync your Settings options to sync their information to and from their device. Settings include information like History and Favorites. By default, this setting is disabled or not configured, which means the Sync your Settings options are turned on, letting browser groups pick what can sync on their device. If enabled, the Sync your Settings options are turned off so that browser groups are unable to sync their settings and info. You can use the Allow users to turn browser syncing on option to turn the feature off by default, but to let the employee change this setting.
+
+**MDM settings in Microsoft Intune** 
+|   |   |
+|---|---|
+|MDM name |Experience/DoNotSynBrowserSettings |
+|Supported devices |Desktop<br>Mobile  |
+|URI full path |./Vendor/MSFT/Policy/Config/Experience/DoNotSynBrowserSettings  |
+|Data type |Integer  |
+|Allowed values |<ul><li>**0** - Disable browser syncing.</li><li>**1 (default)** - Allow browser syncing.</li></ul> |
 
 ## Keep favorites in sync between Internet Explorer and Microsoft Edge
 >*Supported versions: Windows 10, version 1703 or later*
@@ -463,7 +472,7 @@ This policy setting specifies whether favorites are kept in sync between Interne
 |Supported devices |Desktop  |
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/SyncFavoritesBetweenIEAndMicrosoftEdge  |
 |Data type | Integer |
-|Allowed values |<ul><li>**0 (default)** - Synchronization is turned off.</li><li>**1** - Synchronization is turned on.</li></ul> |
+|Allowed values |<ul><li>**0 (default)** - Turn off synchronization.</li><li>**1** - Turn on synchronization.</li></ul> |
 
 ## Prevent access to the about:flags page
 >*Supported versions: Windows 10, version 1607 or later*

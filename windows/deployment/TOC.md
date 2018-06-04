@@ -251,6 +251,7 @@
 ##### [Step 2: Resolve issues](upgrade/upgrade-readiness-resolve-issues.md)
 ##### [Step 3: Deploy Windows](upgrade/upgrade-readiness-deploy-windows.md)
 ##### [Additional insights](upgrade/upgrade-readiness-additional-insights.md)
+##### [Targeting a new operating system version](upgrade/upgrade-readiness-target-new-OS.md)
 ### [Monitor Windows Updates with Update Compliance](update/update-compliance-monitor.md)
 #### [Get started with Update Compliance](update/update-compliance-get-started.md)
 #### [Use Update Compliance](update/update-compliance-using.md)
