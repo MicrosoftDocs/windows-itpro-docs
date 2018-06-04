@@ -24,7 +24,7 @@ This solution enables an IT department to achieve the above with little to no in
 The following video shows the process of setting up Autopilot:
 
 </br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KYVptkpsOqs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KYVptkpsOqs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
 
 ## Benefits of Windows Autopilot
 
@@ -70,7 +70,7 @@ Multiple additional settings are skipped here, since the device automatically re
 MDM enrollment ensures policies are applied, apps are installed and setting are configured on the device. Windows Update for Business applies the latest updates to ensure the device is up to date.
 
 </br>
-<iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/4K4hC5NchbE" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" align="center" src="https://www.youtube-nocookie.com/embed/4K4hC5NchbE" frameborder="0" allowfullscreen></iframe>
 
 #### Device registration and OOBE customization
 

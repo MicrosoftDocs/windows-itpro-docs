@@ -213,6 +213,7 @@
 
 ## [Update Windows 10](update/index.md)
 ### [Quick guide to Windows as a service](update/waas-quick-start.md)
+#### [Servicing stack updates](update/servicing-stack-updates.md)
 ### [Overview of Windows as a service](update/waas-overview.md)
 ### [Prepare servicing strategy for Windows 10 updates](update/waas-servicing-strategy-windows-10-updates.md)
 ### [Build deployment rings for Windows 10 updates](update/waas-deployment-rings-windows-10-updates.md)
@@ -250,6 +251,7 @@
 ##### [Step 2: Resolve issues](upgrade/upgrade-readiness-resolve-issues.md)
 ##### [Step 3: Deploy Windows](upgrade/upgrade-readiness-deploy-windows.md)
 ##### [Additional insights](upgrade/upgrade-readiness-additional-insights.md)
+##### [Targeting a new operating system version](upgrade/upgrade-readiness-target-new-OS.md)
 ### [Monitor Windows Updates with Update Compliance](update/update-compliance-monitor.md)
 #### [Get started with Update Compliance](update/update-compliance-get-started.md)
 #### [Use Update Compliance](update/update-compliance-using.md)

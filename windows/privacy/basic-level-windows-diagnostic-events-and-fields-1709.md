@@ -36,7 +36,7 @@ You can learn more about Windows functional and diagnostic data through these ar
 
 
 
-# Common data extensions
+## Common data extensions
 
 ### Common Data Extensions.App
 
@@ -346,7 +346,7 @@ The following fields are available:
 - **Programids** The unique program identifier the driver is associated with.
 
 
-## Microsoft.Windows.Inventory.Core.InventoryApplicationDriverStartSync
+### Microsoft.Windows.Inventory.Core.InventoryApplicationDriverStartSync
 
 This event indicates that a new set of InventoryApplicationDriverStartAdd events will be sent. 
 

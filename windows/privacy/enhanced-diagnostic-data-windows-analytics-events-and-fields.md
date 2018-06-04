@@ -13,11 +13,11 @@ ms.author: jaimeo
 ---
 
 
-# Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics
+# Windows 10 enhanced diagnostic data events and fields used by Windows Analytics
 
  **Applies to**
 
-- Windows 10, version 1709 and later
+- Windows 10, version 1709 and newer
 
 Windows Analytics Device Health reports are powered by diagnostic data not included in the Basic level. This includes crash reports and certain OS diagnostic data events. Organizations sending Enhanced or Full level diagnostic data were able to participate in Device Health, but some organizations which required detailed event and field level documentation were unable to move from Basic to Enhanced. 
 
@@ -46,7 +46,7 @@ The following fields are available:
 - **LicenseType:** Reserved for future use
 - **ProcessDurationMS_Sum:** Total duration of wall clock process instances
 - **ReadCountAtExit_Sum:** Total IO reads for a process when it exited
-- **ReadSizeInKBAtExit_Sum:**Total IO read size for a process when it exited
+- **ReadSizeInKBAtExit_Sum:** Total IO read size for a process when it exited
 - **ResumeCount:** Number of times a process instance has resumed
 - **RunningDurationMS_Sum:** Total uptime
 - **SuspendCount:** Number of times a process instance was suspended

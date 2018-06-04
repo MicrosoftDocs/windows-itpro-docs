@@ -9,7 +9,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 05/07/2018
+ms.date: 05/21/2018
 ---
 
 # Microsoft HoloLens
@@ -33,7 +33,7 @@ ms.date: 05/07/2018
 [Share HoloLens with multiple people](hololens-multiple-users.md) | Multiple users can shared a HoloLens device by using their Azure Active Directory accounts. |
 | [Configure HoloLens using a provisioning package](hololens-provisioning.md) | Provisioning packages make it easy for IT administrators to configure HoloLens devices without imaging |
 | [Install apps on HoloLens](hololens-install-apps.md) | Use Microsoft Store for Business, mobile device management (MDM), or the Windows Device Portal to install apps on HoloLens |
-| [Get ready to preview new mixed reality apps for HoloLens](hololens-public-preview-apps.md) | Get ready to distribute and use new mixed reality apps for HoloLens during private preview |
+| [Preview new mixed reality apps for HoloLens](hololens-public-preview-apps.md) | Download and deploy new mixed reality apps for HoloLens, free for a limited time during public preview |
 | [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md) | Learn how to use Bitlocker device encryption to protect files and information stored on the HoloLens |
 | [Change history for Microsoft HoloLens documentation](change-history-hololens.md) | See new and updated topics in the HoloLens documentation library. |
 
