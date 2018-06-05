@@ -1,6 +1,7 @@
 ---
 title: Windows Insider Program for Business
 description: Overview of the Windows Insider Program for Business
+keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, WiP4Biz, enterprise, rings, flight
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

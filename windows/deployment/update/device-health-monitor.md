@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 ms.date: 11/14/2017
 ms.pagetype: deploy
 author: jaimeo
+ms.author: jaimeo
 ---
 
 # Monitor the health of devices with Device Health

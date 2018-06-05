@@ -8,6 +8,8 @@ ms.sitesec: library
 ms.date: 03/20/2018
 ms.pagetype: deploy
 author: jaimeo
+ms.author: jaimeo
+ms.localizationpriority: high
 ---
 
 # Get started with Device Health

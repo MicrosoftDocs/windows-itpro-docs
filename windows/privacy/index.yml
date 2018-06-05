@@ -46,7 +46,7 @@ sections:
 
     items:
 
-    - href: \windows\privacy\gdpr-win10-whitepaper
+    - href: \windows\privacy\gdpr-it-guidance
 
       html: <p>Learn about GDPR and how Microsoft helps you get started towards compliance</p>
 
@@ -54,7 +54,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_advanced.svg
 
-      title: Begin your GDPR journey
+      title: Start with GDPR basics
 
     - href: \windows\privacy\configure-windows-diagnostic-data-in-your-organization
 
