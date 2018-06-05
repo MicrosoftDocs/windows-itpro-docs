@@ -1,5 +1,5 @@
 ---
-title: Demo the Windows Autopilot Deployment Program on a Virtual Machine
+title: Demonstrate Autopilot deployment on a VM
 description: Step-by-step instructions on how to set-up a Virtual Machine with a Windows Autopilot deployment
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10
@@ -9,10 +9,10 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: coreyp-at-msft
 ms.author: coreyp
-ms.date: 05/09/18
+ms.date: 06/01/18
 ---
 
-# Demo the Windows Autopilot Deployment Program on a Virtual Machine
+# Demonstrate Autopilot deployment on a VM
 
 **Applies to**
 
