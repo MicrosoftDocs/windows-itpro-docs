@@ -1,9 +1,12 @@
 ---
 title: Upgrade Readiness requirements (Windows 10)
 description: Provides requirements for Upgrade Readiness.
+keywords: windows analytics, oms, operations management suite, prerequisites, requirements, upgrades, log analytics, 
 ms.prod: w10
 author: jaimeo
+ms.author:
 ms.date: 03/15/2018
+ms.localizationpriority: high
 ---
 
 # Upgrade Readiness requirements
