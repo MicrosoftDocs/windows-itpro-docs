@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
-ms.date: 04/19/2017
+ms.date: 06/04/2018
 ---
 
 # Prepare your organization for BitLocker: Planning and policies
@@ -157,17 +157,12 @@ Full drive encryption means that the entire drive will be encrypted, regardless 
 
 ## <a href="" id="bkmk-addscons"></a>Active Directory Domain Services considerations
 
-BitLocker integrates with Active Directory Domain Services (AD DS) to provide centralized key management. By default, no recovery information is backed up to Active Directory. Administrators can configure Group Policy settings to enable backup of BitLocker or TPM recovery information. Before configuring these settings verify that access permissions have been granted to perform the backup.
+BitLocker integrates with Active Directory Domain Services (AD DS) to provide centralized key management. By default, no recovery information is backed up to Active Directory. Administrators can configure the following Group Policy setting to enable backup of BitLocker recovery information:
 
-By default, domain administrators are the only users that will have access to BitLocker recovery information. When you plan your support process, define what parts of your organization need access to BitLocker recovery information. Use this information to define how the appropriate rights will be delegated in your AD DS environment.
+Computer Configuration\\Administrative Templates\\Windows Components\\BitLocker Drive Encryption\\Turn on BitLocker backup to Active Directory Domain Services
 
-It is a best practice to require backup of recovery information for both the TPM and BitLocker to AD DS. You can implement this practice by configuring the Group Policy settings below for your BitLocker-protected computers.
+By default, only Domain Admins have access to BitLocker recovery information. When you plan your support process, define what parts of your organization need access to BitLocker recovery information. Use this information to define how the appropriate rights will be delegated in your AD DS environment.
 
-| BitLocker Group Policy setting | Configuration |
-| - | - |
-| BitLocker Drive Encryption: Turn on BitLocker backup to Active Directory Domain Services| Require BitLocker backup to AD DS (Passwords and key packages)| 
-| Trusted Platform Module Services: Turn on TPM backup to Active Directory Domain Services | Require TPM backup to AD DS|
- 
 The following recovery data will be saved for each computer object:
 
 -   **Recovery password**
@@ -177,51 +172,6 @@ The following recovery data will be saved for each computer object:
 -   **Key package data**
 
     With this key package and the recovery password, you will be able decrypt portions of a BitLocker-protected volume if the disk is severely damaged. Each key package will only work with the volume it was created on, which can be identified by the corresponding volume ID.
-
--   **TPM owner authorization password hash**
-
-    When ownership of the TPM is taken a hash of the ownership password can be taken and stored in AD DS. This information can then be used to reset ownership of the TPM.
-
-Starting in Windows 8, a change to how the TPM owner authorization value is stored in AD DS was implemented in the AD DS schema. The TPM owner authorization value is now stored in a separate object which is linked to the Computer object. This value was stored as a property in the Computer object itself for the default Windows Server 2008 R2 and later schemas.
-
-To take advantage of this integration, you must upgrade your domain controllers to Windows Server 2012 or extend the Active Directory schema and configure BitLocker-specific Group Policy objects.
-
->**Note:**  The account that you use to update the Active Directory schema must be a member of the Schema Admins group.
- 
-Windows Server 2012 domain controllers have the default schema to backup TPM owner authorization information in the separate object. If you are not upgrading your domain controller to Windows Server 2012 you need to extend the schema to support this change.
-
-**To support Windows 8 and later computers that are managed by a Windows Server 2003 or Windows 2008 domain controller**
-
-There are two schema extensions that you can copy down and add to your AD DS schema:
-
--   **TpmSchemaExtension.ldf**
-
-    This schema extension brings parity with the Windows Server 2012 schema. With this change, the TPM owner authorization information is stored in a separate TPM object linked to the corresponding computer object. Only the Computer object that has created the TPM object can update it. This means that any subsequent updates to the TPM objects will not succeed in dual boot scenarios or scenarios where the computer is reimaged resulting in a new AD computer object being created. To support such scenarios, an update to the schema was created.
-
--   **TpmSchemaExtensionACLChanges.ldf**
-
-    This schema update modifies the ACLs on the TPM object to be less restrictive so that any subsequent operating system which takes ownership of the computer object can update the owner authorization value in AD DS. However, this is less secure as any computer in the domain can now update the OwnerAuth of the TPM object (although it cannot read the OwnerAuth) and DOS attacks can be made from within the enterprise. The recommended mitigation in such a scenario is to do regular backup of TPM objects and enable auditing to track changes for these objects.
-
-To download the schema extensions, see [AD DS schema extensions to support TPM backup](https://technet.microsoft.com/library/jj635854.aspx).
-
-If you have a Windows Server 2012 domain controller in your environment, the schema extensions are already in place and do not need to be updated.
-
->**Caution:**  To configure Group Policy objects to backup TPM and BitLocker information in AD DS at least one of the domain controllers in your forest must be running at least Windows Server 2008 R2.
-If Active Directory backup of the TPM owner authorization value is enabled in an environment without the required schema extensions, the TPM provisioning will fail and the TPM will remain in a Not Ready state for computers running Windows 8 and later.
- 
-**Setting the correct permissions in AD DS**
-
-To initialize the TPM successfully so that you can turn on BitLocker requires that the correct permissions for the SELF account in be set in AD DS for the **ms-TPMOwnerInformation** attribute. The following steps detail setting these permissions as required by BitLocker:
-
-1.  Open **Active Directory Users and Computers**.
-2.  Select the organizational unit (OU) which contains the computer accounts that will have BitLocker turned on.
-3.  Right-click the OU and click **Delegate Control** to open the **Delegation of Control** wizard.
-4.  Click **Next** to go to the **Users or Groups** page and then click **Add**.
-5.  In the **Select Users, Computers, or Groups** dialog box, type **SELF** as the object name and then click **OK** Once the object has been validated you will be returned to the **Users or Groups** wizard page and the SELF account will be listed. Click **Next**.
-6.  On the **Tasks to Delegate** page, choose **Create a custom task to delegate** and then click **Next**.
-7.  On the **Active Directory Object Type** page, choose **Only the following objects in the folder** and then check **Computer Objects** and then click **Next**.
-8.  On the **Permissions** page, for **Show these permissions**, check **General**, **Property-specific**, and **Creation/deletion of specific child objects**. Scroll down the **Permissions** list and check both **Write msTPM-OwnerInformation** and **Write msTPM-TpmInformationForComputer** then click **Next**.
-9.  Click **Finish** to apply the permissions settings.
 
 ## <a href="" id="bkmk-fipssupport"></a>FIPS support for recovery password protector
 
