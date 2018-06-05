@@ -28,7 +28,7 @@ When deploying new devices using Windows Autopilot, a common set of steps are re
 
 3.  Boot the device. When the device is connected to a network with internet access, it will contact the Windows Autopilot Deployment Service to see if the device is registered, and if it is, it will download the profile settings which are used to customize the end user experience.
 
-<img src="./media/image2.png" width="511" height="249" />
+<img src="./images/image2.png" width="511" height="249" />
 
 ### Device identification
 
@@ -93,5 +93,3 @@ For each device that has been defined to the Windows Autopilot Deployment Servic
 -   **Skip End User License Agreement (EULA)**. Starting in Windows 10 version 1709, organizations can decide to skip the EULA page presented during the OOBE process. This means that organizations accept the EULA terms on behalf of their users.
 
 -   **Disable Windows consumer features**. Starting in Windows 10 version 1803, organizations can disable Windows consumer features so that the device does not automatically install any additional Microsoft Store apps when the user first signs into the device. See the [MDM documentation](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-allowwindowsconsumerfeatures) for more details.
-
-Missing something in this topic? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=windows-10-autopilot-demo-vm.md). 

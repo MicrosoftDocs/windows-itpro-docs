@@ -27,10 +27,10 @@ In this topic you'll learn how to set-up a Windows Autopilot deployment for a Vi
 
 These are the thing you'll need on your device to get started:
 * Installation media for the latest version of Windows 10 Professional or Enterprise (ISO file)
-* Internet access (see [Network connectivity requirements](windows-10-autopilot.md#network-connectivity-requirements))
+* Internet access (see [Network connectivity requirements](windows-autopilot.md#network-connectivity-requirements))
 * Hypervisor needs to be unoccupied, or used by Hyper-V, as we will be using Hyper-V to create the Virtual Machine
 
-See additional prerequisites in the [Windows Autopilot overview topic](windows-10-autopilot.md#prerequisites).
+See additional prerequisites in the [Windows Autopilot overview topic](windows-autopilot.md#prerequisites).
 
 ## Create your Virtual Machine
 
@@ -209,4 +209,3 @@ Once you select a language and a keyboard layout, your company branded sign-in s
 
 Windows Autopilot will now take over to automatically join your Virtual Machine into Azure Active Directory and enroll it to Microsoft Intune. Use the checkpoints you've created to go through this process again with different settings.
 
-Missing something in this topic? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=windows-10-autopilot-demo-vm.md). 
