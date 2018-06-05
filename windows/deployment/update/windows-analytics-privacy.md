@@ -9,6 +9,7 @@ ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
 ms.date: 04/05/2018
+ms.localizationpriority: high
 ---
 
 # Windows Analytics and privacy

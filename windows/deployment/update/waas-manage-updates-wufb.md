@@ -4,10 +4,10 @@ description: Windows Update for Business lets you manage when devices received u
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: DaniHalfin
+author: jaimeo
 ms.localizationpriority: high
-ms.author: daniha
-ms.date: 10/13/2017
+ms.author: jaimeo
+ms.date: 06/01/2018
 ---
 
 # Deploy updates using Windows Update for Business
@@ -21,11 +21,11 @@ ms.date: 10/13/2017
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 >[!IMPORTANT]
->Due to [naming changes](waas-overview.md#naming-changes), older terms like CB,CBB and LTSB may still be displayed in some of our products.
+>Due to [naming changes](waas-overview.md#naming-changes), older terms like CB,CBB, and LTSB might still apear in some of our products.
 >
->In the following settings CB refers to Semi-Annual Channel (Targeted), while CBB refers to Semi-Annual Channel. 
+>In the following settings, CB refers to Semi-Annual Channel (Targeted), while CBB refers to Semi-Annual Channel. 
 
-Windows Update for Business enables information technology administrators to keep the Windows 10 devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Windows Update service.  You can use Group Policy or MDM solutions such as Intune to configure the Windows Update for Business settings that control how and when Windows 10 devices are updated. In addition, by using Intune, organizations can manage devices that are not joined to a domain at all or are joined to Microsoft Azure Active Directory (Azure AD) alongside your on-premises domain-joined machines. Windows Update for Business leverages diagnostic data to provide reporting and insights into an organization's Windows 10 devices.  
+Windows Update for Business enables information technology administrators to keep the Windows 10 devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Windows Update service. You can use Group Policy or MDM solutions such as Intune to configure the Windows Update for Business settings that control how and when Windows 10 devices are updated. In addition, by using Intune, organizations can manage devices that are not joined to a domain at all or are joined to Microsoft Azure Active Directory (Azure AD) alongside your on-premises domain-joined machines. Windows Update for Business leverages diagnostic data to provide reporting and insights into an organization's Windows 10 devices. 
 
 Specifically, Windows Update for Business allows for: 
 
@@ -45,7 +45,7 @@ Windows Update for Business is a free service that is available for Windows Pro,
 Windows Update for Business provides three types of updates to Windows 10 devices:
 
 - **Feature Updates**: previously referred to as *upgrades*, Feature Updates contain not only security and quality revisions, but also significant feature additions and changes; they are released semi-annually.
-- **Quality Updates**: these are traditional operating system updates, typically released the second Tuesday of each month (though they can be released at any time).  These include security, critical, and driver updates. Windows Update for Business also treats non-Windows updates (such as those for Microsoft Office or Visual Studio) as Quality Updates. These non-Windows Updates are known as *Microsoft Updates* and devices can be optionally configured to receive such updates along with their Windows Updates.
+- **Quality Updates**: these are traditional operating system updates, typically released the second Tuesday of each month (though they can be released at any time). These include security, critical, and driver updates. Windows Update for Business also treats non-Windows updates (such as those for Microsoft Office or Visual Studio) as Quality Updates. These non-Windows Updates are known as *Microsoft Updates* and devices can be optionally configured to receive such updates along with their Windows Updates.
 - **Non-deferrable updates**: Currently, antimalware and antispyware Definition Updates from Windows Update cannot be deferred.
  
 Both Feature and Quality Updates can be deferred from deploying to client devices by a Windows Update for Business administrator within a bounded range of time from when those updates are first made available on the Windows Update Service. This deferral capability allows administrators to validate deployments as they are pushed to all client devices configured for Windows Update for Business.
@@ -102,10 +102,10 @@ The pause period is now calculated starting from the set start date. For additio
 
 ## Comparing Windows Update for Business in Windows 10, version 1511 and version 1607
 
-Windows Update for Business was first made available in Windows 10, version 1511. In Windows 10, version 1607 (also known as the Anniversary Update), there are several new or changed capabilities provided as well as updated behavior.   
+Windows Update for Business was first made available in Windows 10, version 1511. In Windows 10, version 1607 (also known as the Anniversary Update), there are several new or changed capabilities provided as well as updated behavior.  
 
 >[!NOTE]
->For more information on Current Branch and Current Branch for Business, see [Windows 10 servicing options](waas-overview.md#servicing-channels).
+>For more information on Current Branch (Semi-Annual Channel (Targeted)) and Current Branch for Business (Semi-Annual Channel), see [Windows 10 servicing options](waas-overview.md#servicing-channels).
 
 <table>
     <thead>
@@ -113,7 +113,7 @@ Windows Update for Business was first made available in Windows 10, version 1511
         </tr>
     </thead>
     <tbody>
-        <tr><td><p>Select Servicing Options: CB or CBB</p></td><td><p>Not available.  To defer updates, all systems must be on the Current Branch for Business (CBB)</p></td><td><p>Ability to set systems on the Current Branch (CB) or Current Branch for Business (CBB).</p></td></tr>
+        <tr><td><p>Select servicing options: CB or CBB</p></td><td><p>Not available. To defer updates, all systems must be on the Current Branch for Business (CBB)</p></td><td><p>Ability to set systems on the Current Branch (CB) or Current Branch for Business (CBB).</p></td></tr>
 <tr><td><p>Quality Updates</p></td><td><p>Able to defer receiving Quality Updates:</p><ul><li>Up to 4 weeks</li><li>In weekly increments</li></ul></td><td><p>Able to defer receiving Quality Updates:</p><ul><li>Up to 30 days</li><li>In daily increments</li></ul></td></tr>
 <tr><td><p>Feature Updates</p></td><td><p>Able to defer receiving Feature Updates:</p><ul><li>Up to 8 months</li><li>In monthly increments</li></ul></td><td><p>Able to defer receiving Feature Updates:</p><ul><li>Up to 180 days</li><li>In daily increments</li></ul></td></tr>
 <tr><td><p>Pause updates</p></td><td><ul><li>Feature Updates and Quality Updates paused together</li><li>Maximum of 35 days</li></ul></td><td><p>Features and Quality Updates can be paused separately.</p><ul><li>Feature Updates: maximum 60 days</li><li>Quality Updates: maximum 35 days</li></ul></td></tr>

@@ -8,6 +8,8 @@ ms.sitesec: library
 ms.date: 03/20/2018
 ms.pagetype: deploy
 author: jaimeo
+ms.author: jaimeo
+ms.localizationpriority: high
 ---
 
 # Get started with Device Health
@@ -26,9 +28,9 @@ Steps are provided in sections that follow the recommended setup process:
 
 Device Health is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud-based servicing for monitoring and automating your on-premise and cloud environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/). 
 
-**If you are already using OMS**, you’ll find Device Health in the Solutions Gallery. Select the **Device Health** tile in the gallery and then click **Add** on the solution's details page. Device Health is now visible in your workspace. While you're in the Solutions Gallery, you should consider installing the [Upgrade Readiness](../upgrade/use-upgrade-readiness-to-manage-windows-upgrades.md)  and [Update Compliance](update-compliance-monitor.md) solutions as well, if you haven't already.
+**If you are already using Windows Analytics**, you should use the same Azure Log Analytics workspace you're already using. find Device Health in the Solutions Gallery. Select the **Device Health** tile in the gallery and then click **Add** on the solution's details page. Device Health is now visible in your workspace. While you're in the Solutions Gallery, you should consider installing the [Upgrade Readiness](../upgrade/use-upgrade-readiness-to-manage-windows-upgrades.md)  and [Update Compliance](update-compliance-monitor.md) solutions as well, if you haven't already.
 
-**If you are not yet using OMS**, use the following steps to subscribe to OMS Device Health:
+**If you are not yet using Windows Analytics or Azure Log Analytics**, use the following steps to subscribe:
 
 1.	Go to [Operations Management Suite](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite) on Microsoft.com and click **Sign in**.
    [![Operations Management Suite bar with sign-in button](images/uc-02a.png)](images/uc-02.png)
@@ -50,11 +52,11 @@ Device Health is offered as a solution in the Microsoft Operations Management Su
 
     [![OMS dialog to link existing Azure subscription or create a new one](images/uc-06a.png)](images/uc-06.png)
 
-6.	To add Device Health to your workspace, go to the Solution Gallery, Select the **Device Health** tile and then select **Add** on the solution's detail page. While you have this dialog open, you should also consider adding the [Upgrade Readiness](../upgrade/use-upgrade-readiness-to-manage-windows-upgrades.md) and [Update Compliance](update-compliance-monitor.md) solutions as well, if you haven't already. To do so, just select the check boxes for those solutions.
+6.	To add Update Readiness to your workspace, go to the Solution Gallery, Select the **Update Readiness** tile and then select **Add** on the solution's detail page.
 
     [![Windows Analytics details page in Solutions Gallery](images/solution-bundle.png)](images/solution-bundle.png)
 
-7.	Click the **Device Health** tile to configure the solution. The **Settings Dashboard** opens. In this example, both Upgrade Readiness and Device Health solutions have been added.
+7.	Click the **Update Readiness** tile to configure the solution. The **Settings Dashboard** opens. In this example, both Upgrade Readiness and Device Health solutions have been added.
 
     [![OMS Settings Dashboard showing Device Health and Upgrade Readiness tiles](images/OMS-after-adding-solution.jpg)](images/OMS-after-adding-solution.jpg)
 
