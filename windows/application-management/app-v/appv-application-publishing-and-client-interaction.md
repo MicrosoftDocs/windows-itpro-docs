@@ -69,7 +69,7 @@ Additional details for the table are provided in the section below and throughou
 
 ### Package store
 
-The App-V Client manages the applications assets mounted in the package store. This default storage location is %ProgramData%\App-V, but you can configure it during or after setup by using the **Set-AppVClientConfiguration** Windows PowerShell cmdlet, which modifies the local registry (`PackageInstallationRoot` value under the HKLM\Software\Microsoft\AppV\Client\Streaming key). The package store must be located at a local path on the client operating system. The individual packages are stored in the package store in subdirectories named after the Package GUID and Version GUID.
+The App-V Client manages the applications assets mounted in the package store. This default storage location is %ProgramData%\App-V, but you can configure it during or after setup by using the **Set-AppVClientConfiguration** Windows PowerShell cmdlet, which modifies the local registry (**PackageInstallationRoot** value under the HKLM\Software\Microsoft\AppV\Client\Streaming key). The package store must be located at a local path on the client operating system. The individual packages are stored in the package store in subdirectories named after the Package GUID and Version GUID.
 
 Example of a path to a specific application:
 
@@ -95,6 +95,8 @@ The App-V Client manages the following two file-based locations:
 
 ### Machine catalog
 
+The locations described in this table can be found in the %programdata%\Microsoft\AppV\Client\Catalog\ folder.
+
 |||
 |---|---|
 |Description|Stores package documents that are available to users on the machine when packages are added and published. However, if a package is “global” at publishing time, the integrations are available to all users.<br></br>If a package is non-global, the integrations are published only for specific users, but there are still global resources that are modified and visible to anyone on the client computer (such as when the package directory is in a shared disk location).<br></br>If a package is available to a user on the computer (global or non-global), the manifest is stored in the Machine Catalog. When a package is published globally, there is a Dynamic Configuration file, stored in the Machine Catalog; therefore, the determination of whether a package is global is defined according to whether there is a policy file (UserDeploymentConfiguration file) in the Machine Catalog.|
@@ -104,6 +106,8 @@ The App-V Client manages the following two file-based locations:
 |Additional files in the machine catalog when the package is part of a connection group|- PackageGroupDescriptor.xml<br>- UserPackageGroupDescriptor.xml (globally published Connection Group)|
 
 ### User catalog
+
+The locations described in this table can be found in the appdata\roaming\Microsoft\AppV\Client\Catalog\ folder.
 
 |||
 |---|---|
@@ -155,6 +159,8 @@ There are two package registry locations and two connection group locations wher
 
 #### Single Package VReg
 
+The registries in the following table are located in the Registry\Client\Packages\PkgGUID\ folder.
+
 |Location|Description|
 |---|---|
 |COW|- Machine Registry\Client\Packages\PkgGUID\REGISTRY (Only elevate process can write)<br>- User Registry\Client\Packages\PkgGUID\REGISTRY (User Roaming anything written under HKCU except Software\Classes<br>- User Registry Classes\Client\Packages\PkgGUID\REGISTRY (HKCU\Software\Classes writes and HKLM for non-elevated process)|
@@ -162,6 +168,8 @@ There are two package registry locations and two connection group locations wher
 |Native|- Native application registry location|
 
 #### Connection Group VReg
+
+The registries in the following table are located in the Machine Registry\Client\PackageGroups\GrpGUID\ and User Registry Classes\Client\PackageGroups\GrpGUID\ folders.
 
 |Location|Description|
 |---|---|
@@ -278,7 +286,7 @@ App-V supports folder redirection of the roaming AppData folder (%AppData%). Whe
 
 A typical package has several locations mapped in the user’s backing store for settings in both AppData\\Local and AppData\\Roaming. These locations are the Copy on Write locations that are stored per user in the user’s profile, and that are used to store changes made to the package VFS directories and to protect the default package VFS.
 
-The following table shows local and roaming locations, when folder redirection has not been implemented.
+The following table shows local and roaming locations when folder redirection has not been implemented.
 
 | VFS directory in package | Mapped location of backing store |
 |---|---|
@@ -288,7 +296,7 @@ The following table shows local and roaming locations, when folder redirection h
 | appv\_ROOT | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\\&lt;GUID&gt;\appv_ROOT|
 | AppData | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\\&lt;GUID&gt;\AppData |
 
-The following table shows local and roaming locations, when folder redirection has been implemented for %AppData%, and the location has been redirected (typically to a network location).
+The following table shows local and roaming locations when folder redirection has been implemented for %AppData% and the location has been redirected (typically to a network location).
 
 | VFS directory in package | Mapped location of backing store |
 |---|---|
