@@ -161,9 +161,9 @@ BitLocker integrates with Active Directory Domain Services (AD DS) to provide ce
 
 Computer Configuration\\Administrative Templates\\Windows Components\\BitLocker Drive Encryption\\Turn on BitLocker backup to Active Directory Domain Services
 
-By default, only Domain Admins have access to BitLocker recovery information. When you plan your support process, define what parts of your organization need access to BitLocker recovery information. Use this information to define how the appropriate rights will be delegated in your AD DS environment.
+By default, only Domain Admins have access to BitLocker recovery information, but [access can be delegated to others](https://blogs.technet.microsoft.com/craigf/2011/01/26/delegating-access-in-ad-to-bitlocker-recovery-information/). 
 
-The following recovery data will be saved for each computer object:
+The following recovery data is saved for each computer object:
 
 -   **Recovery password**
 
