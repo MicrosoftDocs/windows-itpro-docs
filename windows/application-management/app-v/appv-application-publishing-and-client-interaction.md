@@ -450,6 +450,7 @@ During the Publishing Refresh operation, the specific publishing operation, **Pu
 Publishing an App-V Package that is part of a Connection Group is very similar to the above process. For connection groups, the path that stores the specific catalog information includes PackageGroups as a child of the Catalog Directory. Review the Machine and User Catalog information in the preceding sections for details.
 
 ![package add file and registry data - global](images/packageaddfileandregistrydata-global.png)
+**Package add file and registry data—global**
 
 ### Application launch
 
@@ -475,6 +476,7 @@ After the Publishing Refresh process, the user launches and then relaunches an A
 7. The Application launches. For any missing files in the package store (sparse files), App-V will stream fault the files on an as needed basis.
 
     ![package add file and registry data - stream](images/packageaddfileandregistrydata-stream.png)
+    **Package add file and registry data—stream**
 
 ### Upgrading an App-V package
 
