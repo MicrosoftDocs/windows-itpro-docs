@@ -3,10 +3,13 @@ title: Using Device Health
 description: Explains how to begin usihg Device Health.
 ms.prod: w10
 ms.mktglfcycl: deploy
+keywords: oms, operations management suite, wdav, health, log analytics
 ms.sitesec: library
 ms.date: 03/30/2018
 ms.pagetype: deploy
 author: jaimeo
+ms.author: jaimeo
+ms.localizationpriority: medium
 ---
 
 # Using Device Health

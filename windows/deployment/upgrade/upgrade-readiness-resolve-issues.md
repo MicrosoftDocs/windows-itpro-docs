@@ -1,9 +1,12 @@
 ﻿---
 title: Upgrade Readiness - Resolve application and driver issues (Windows 10)
 description: Describes how to resolve application and driver issues that can occur during an upgrade with Upgrade Readiness.
+keywords: windows analytics, oms, operations management suite, prerequisites, requirements, upgrades, log analytics, 
 ms.prod: w10
 author: jaimeo
+ms.author: jaimeo
 ms.date: 08/31/2017
+ms.localizationpriority: high
 ---
 
 # Upgrade Readiness - Step 2: Resolve app and driver issues
