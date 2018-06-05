@@ -269,7 +269,7 @@ App-V stores data, which represents the state of the user’s catalog, in the fo
 Together, these files and registry settings represent the user’s catalog, so either both must be roamed, or neither must be roamed for a given user. App-V does not support roaming %AppData%, but not roaming the user’s profile (registry), or vice versa.
 
 >[!NOTE]
->The **Repair-AppvClientPackage** cmdlet does not repair the publishing state of packages, where the user’s App-V state under HKEY_CURRENT_USER is missing or mismatched with the data in %appdata%.
+>The **Repair-AppvClientPackage** cmdlet doesn't repair the publishing state of packages where the user’s App-V state under HKEY_CURRENT_USER is missing or mismatched with the data in %appdata%.
 
 ### Registry-based data
 
@@ -420,6 +420,7 @@ The process then configures the client for package or connection group additions
 This completes an App-V package add for the publishing refresh process. The next step is publishing the package to a specific target (machine or user).
 
 ![Package add file and registry data](images/packageaddfileandregistrydata.png)
+**Package add file and registry data**
 
 #### Publishing an App-V package
 
