@@ -1,6 +1,6 @@
 # [Security](index.yml)
+## [Windows Defender Advanced Threat Protection](wdatp/index.md)
 ## [Identity and access management](identity-protection/index.md)
 ## [Threat protection](threat-protection/index.md)
 ## [Information protection](information-protection/index.md)
 ## [Hardware-based protection](hardware-protection/index.md)
-## [Windows Defender Advanced Threat Protection](wdatp/index.md)
