@@ -71,7 +71,7 @@ Additional details for the table are provided in the section below and throughou
 
 The App-V Client manages the applications assets mounted in the package store. This default storage location is %ProgramData%\App-V, but you can configure it during or after setup by using the **Set-AppVClientConfiguration** Windows PowerShell cmdlet, which modifies the local registry (**PackageInstallationRoot** value under the HKLM\Software\Microsoft\AppV\Client\Streaming key). The package store must be located at a local path on the client operating system. The individual packages are stored in the package store in subdirectories named after the Package GUID and Version GUID.
 
-Example of a path to a specific application:
+The following is an example of a path to a specific application:
 
 ```syntax
 C:\ProgramData\App-V\PackGUID\VersionGUID
@@ -81,7 +81,7 @@ To change the default location of the package store during setup, see [Enable th
 
 ### Shared Content Store
 
-If the App-V Client is configured in Shared Content Store mode, no data is written to disk when a stream fault occurs, which means that the packages require minimal local disk space (publishing data). The use of less disk space is highly desirable in VDI environments, where local storage can be limited, and streaming the applications from a high-performance network location (such as a SAN) is preferable. For more information, see [Shared Content Store in Microsoft App-V 5.0 - Behind the Scenes](https://blogs.technet.microsoft.com/appv/2013/07/22/shared-content-store-in-microsoft-app-v-5-0-behind-the-scenes/).
+If the App-V Client is configured in Shared Content Store mode, no data is written to disk when a stream fault occurs, which means that the packages require minimal local disk space (publishing data). In VDI environments where local storage can be limited, it's important to use as little disk space as possible. You can minimize disk space usage by streaming applications from a high-performance network location (such as a SAN). For more information, see [Shared Content Store in Microsoft App-V 5.0 - Behind the Scenes](https://blogs.technet.microsoft.com/appv/2013/07/22/shared-content-store-in-microsoft-app-v-5-0-behind-the-scenes/).
 
 >[!NOTE]
 >The machine and package store must be located on a local drive, even when you’re using Shared Content Store configurations for the App-V Client.
@@ -478,7 +478,7 @@ After the Publishing Refresh process, the user launches and then relaunches an A
 7. The Application launches. For any missing files in the package store (sparse files), App-V will stream fault the files on an as needed basis.
 
     ![package add file and registry data - stream](images/packageaddfileandregistrydata-stream.png)
-    
+
     **Package add file and registry data—stream**
 
 ### Upgrading an App-V package
