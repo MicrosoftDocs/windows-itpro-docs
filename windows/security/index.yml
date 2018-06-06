@@ -96,16 +96,6 @@ sections:
 
     items:
 
-    - href: \windows\security\hardware-protection\how-hardware-based-containers-help-protect-windows
-
-      html: <p>Protect the boot process and maintain system integrity</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_identity-protection.svg
-      
-      title: Windows Defender System Guard
-
     - href: \windows\security\threat-protection\windows-defender-antivirus\windows-defender-antivirus-in-windows-10
 
       html: <p>Protect against malware management using next-generation antivirus technologies</p>
@@ -115,6 +105,16 @@ sections:
         src: https://docs.microsoft.com/media/common/i_threat-protection.svg
       
       title: Windows Defender Antivirus
+
+	- href: \windows\security\hardware-protection\how-hardware-based-containers-help-protect-windows
+
+      html: <p>Protect the boot process and maintain system integrity</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_identity-protection.svg
+      
+      title: Windows Defender SmartScreen
 
     - href: \windows\security\information-protection\bitlocker\bitlocker-overview
 
@@ -134,7 +134,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_identity-protection.svg
       
-      title: Windows Hello 
+      title: Windows Defender Firewall
       
     - href: \windows\security\threat-protection\windows-defender-application-control\windows-defender-application-control
 
@@ -154,7 +154,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_information-protection.svg
       
-      title: Windows Information Protection 
+      title: Windows Defender Exploit Guard
 
 - title: Videos
 
