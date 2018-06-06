@@ -34,49 +34,49 @@ sections:
 
   - type: markdown
 
-	text: Secure corporate data and manage risk. 
+    text: Secure corporate data and manage risk. 
 
 - items:
 
   - type: list
 
-	style: cards
+    style: cards
 
-	className: cardsM
+    className: cardsM
 
-	columns: 3
+    columns: 3
 
-	items:
+    items:
 
-	- href: \windows\security\identity-protection\
+    - href: \windows\security\identity-protection\
 
-	  html: <p>Deploy secure enterprise-grade authentication and access control to protect accounts and data</p>
+      html: <p>Deploy secure enterprise-grade authentication and access control to protect accounts and data</p>
 
-	  image:
+      image:
 
-		src: https://docs.microsoft.com/media/common/i_identity-protection.svg
+        src: https://docs.microsoft.com/media/common/i_identity-protection.svg
 
-	  title: Identity and access management
+      title: Identity and access management
 
-	- href: \windows\security\threat-protection\
+    - href: \windows\security\threat-protection\
 
-	  html: <p>Stop cyberthreats and quickly identify and respond to breaches</p>
+      html: <p>Stop cyberthreats and quickly identify and respond to breaches</p>
 
-	  image:
+      image:
 
-		src: https://docs.microsoft.com/media/common/i_threat-protection.svg
+        src: https://docs.microsoft.com/media/common/i_threat-protection.svg
 
-	  title: Threat protection
+      title: Threat protection
 
-	- href: \windows\security\information-protection\
+    - href: \windows\security\information-protection\
 
-	  html: <p>Identify and secure critical data to prevent data loss</p>
+      html: <p>Identify and secure critical data to prevent data loss</p>
 
-	  image:
+      image:
 
-		src: https://docs.microsoft.com/media/common/i_information-protection.svg
+        src: https://docs.microsoft.com/media/common/i_information-protection.svg
 
-	  title: Information protection
+      title: Information protection
 
 - title: Windows Defender Advanced Threat Protection 
 
@@ -84,77 +84,77 @@ sections:
 
   - type: paragraph
 
-	text: 'Prevent, detect, investigate, and respond to advanced threats.'
+    text: 'Windows 10 enables critical security features to protect your device right from the start.'
 
   - type: list
 
-	style: cards
+    style: cards
 
-	className: cardsM
+    className: cardsM
 
-	columns: 3
+    columns: 3
 
-	items:
+    items:
 
-	- href: \windows\security\threat-protection\windows-defender-antivirus\windows-defender-antivirus-in-windows-10
+    - href: \windows\security\hardware-protection\how-hardware-based-containers-help-protect-windows
 
-	  html: <p>Protect against malware management using next-generation antivirus technologies</p>
+      html: <p>Protect the boot process and maintain system integrity</p>
 
-	  image:
+      image:
 
-		src: https://docs.microsoft.com/media/common/i_threat-protection.svg
-	  
-	  title: Windows Defender Antivirus
+        src: https://docs.microsoft.com/media/common/i_identity-protection.svg
+      
+      title: Windows Defender System Guard
 
-	  - href: \windows\security\threat-protection\windows-defender-exploit-guard\windows-defender-exploit-guard
+    - href: \windows\security\threat-protection\windows-defender-antivirus\windows-defender-antivirus-in-windows-10
 
-	  html: <p>Manage and reduce the attack surface of apps</p>
+      html: <p>Protect against malware management using next-generation antivirus technologies</p>
 
-	  image:
+      image:
 
-		src: https://docs.microsoft.com/media/common/i_threat-protection.svg
-	  
-	  title: Windows Defender Exploit Guard
+        src: https://docs.microsoft.com/media/common/i_threat-protection.svg
+      
+      title: Windows Defender Antivirus
 
-	  	- href: \windows\security\threat-protection\windows-defender-application-control\windows-defender-application-control
+    - href: \windows\security\information-protection\bitlocker\bitlocker-overview
 
-	  html: <p>Lock down applications that run on a device</p>
+      html: <p>Prevent data theft from lost or stolen devices</p>
 
-	  image:
+      image:
 
-		src: https://docs.microsoft.com/media/common/i_threat-protection.svg
-	  
-	  title: Windows Defender Application Control
-	  
-	- href: \windows\security\threat-protection\windows-defender-application-guard\wd-app-guard-overview
+        src: https://docs.microsoft.com/media/common/i_information-protection.svg
+      
+      title: BitLocker
 
-	  html: <p>Isolate enterprise-defined untrusted sites</p>
+    - href: \windows\security\identity-protection\hello-for-business\hello-overview
 
-	  image:
+      html: <p>Give users a more personal and secure way to access their devices</p>
 
-		src: https://docs.microsoft.com/media/common/i_threat-protection.svg
-	  
-	  title: Windows Defender Application Guard
-	  	
-	- href: \windows\security\threat-protection\windows-defender-smartscreen\windows-defender-smartscreen-overview
+      image:
 
-	  html: <p>Protect users from malicious sites</p>
+        src: https://docs.microsoft.com/media/common/i_identity-protection.svg
+      
+      title: Windows Hello for Business
+      
+    - href: \windows\security\threat-protection\windows-defender-application-control\windows-defender-application-control
 
-	  image:
+      html: <p>Lock down applications that run on a device</p>
 
-		src: https://docs.microsoft.com/media/common/i_threat-protection.svg
-	  
-	  title: Windows Defender SmartScreen
-	  
-	- href: \windows\security\information-protection\windows-information-protection\protect-enterprise-data-using-wip
+      image:
 
-	  html: <p>Block unauthorized network traffic flowing into or out of a local device</p>
+        src: https://docs.microsoft.com/media/common/i_threat-protection.svg
+      
+      title: Windows Defender Application Control
 
-	  image:
+    - href: \windows\security\information-protection\windows-information-protection\protect-enterprise-data-using-wip
 
-		src: https://docs.microsoft.com/media/common/i_information-protection.svg
-	  
-	  title: Windows Defender Firewall
+      html: <p>Prevent accidental data leaks from enterprise devices</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_information-protection.svg
+      
+      title: Windows Information Protection 
 
 - title: Videos
 
@@ -162,49 +162,49 @@ sections:
 
   - type: markdown
 
-	text: ">[![VIDEO](images/next-generation-windows-security-vision.png)](https://www.youtube.com/watch?v=IvZySDNfNpo)"
+    text: ">[![VIDEO](images/next-generation-windows-security-vision.png)](https://www.youtube.com/watch?v=IvZySDNfNpo)"
 
   - type: markdown
 
-	text: ">[![VIDEO](images/fall-creators-update-next-gen-security.png)](https://www.youtube.com/watch?v=JDGMNFwyUg8)"
-	
+    text: ">[![VIDEO](images/fall-creators-update-next-gen-security.png)](https://www.youtube.com/watch?v=JDGMNFwyUg8)"
+    
 - title: Additional security features in Windows 10 
 
   items:
 
   - type: paragraph
 
-	text: 'These additional security features are also built in to Windows 10 Enterprise.'
+    text: 'These additional security features are also built in to Windows 10 Enterprise.'
 
   - type: list
 
-	style: unordered
+    style: unordered
 
-	items:
+    items:
 
-	- html: <a href="/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security">Windows Defender Firewall</a>
-	- html: <a href="/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard">Windows Defender Exploit Guard</a>
-	- html: <a href="/windows/security/identity-protection/credential-guard/credential-guard">Windows Defender Credential Guard</a>
-	- html: <a href="/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control">Windows Defender Application Control</a>  
-	- html: <a href="/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview">Windows Defender Application Guard</a>
-	- html: <a href="/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview">Windows Defender SmartScreen</a>  
-	- html: <a href="/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center">Windows Defender Security Center</a>
-	  
+    - html: <a href="/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security">Windows Defender Firewall</a>
+    - html: <a href="/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard">Windows Defender Exploit Guard</a>
+    - html: <a href="/windows/security/identity-protection/credential-guard/credential-guard">Windows Defender Credential Guard</a>
+    - html: <a href="/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control">Windows Defender Application Control</a>  
+    - html: <a href="/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview">Windows Defender Application Guard</a>
+    - html: <a href="/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview">Windows Defender SmartScreen</a>  
+    - html: <a href="/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center">Windows Defender Security Center</a>
+      
 - title: Security Resources
 
   items:
 
   - type: list
 
-	style: unordered
+    style: unordered
 
-	items:
+    items:
 
-	- html: <a href="https://www.microsoft.com/wdsi">Windows Defender Security Intelligence</a>
-	- html: <a href="https://cloudblogs.microsoft.com/microsoftsecure/">Microsoft Secure blog</a>
-	- html: <a href="https://portal.msrc.microsoft.com/">Security Update blog</a>
-	- html: <a href="https://technet.microsoft.com/security/dn440717.aspx(d=robot)">Microsoft Security Response Center (MSRC)</a>
-	- html: <a href="https://blogs.technet.microsoft.com/msrc/">MSRC Blog</a>
-	- html: <a href="https://www.microsoft.com/wdsi/threats/ransomware">Ransomware FAQ</a>
-	
+    - html: <a href="https://www.microsoft.com/wdsi">Windows Defender Security Intelligence</a>
+    - html: <a href="https://cloudblogs.microsoft.com/microsoftsecure/">Microsoft Secure blog</a>
+    - html: <a href="https://portal.msrc.microsoft.com/">Security Update blog</a>
+    - html: <a href="https://technet.microsoft.com/security/dn440717.aspx(d=robot)">Microsoft Security Response Center (MSRC)</a>
+    - html: <a href="https://blogs.technet.microsoft.com/msrc/">MSRC Blog</a>
+    - html: <a href="https://www.microsoft.com/wdsi/threats/ransomware">Ransomware FAQ</a>
+    
 
