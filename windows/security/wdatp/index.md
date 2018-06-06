@@ -13,13 +13,10 @@ ms.date: 06/04/2018
 
 # Windows Defender Advanced Threat Protection
 
-Windows Defender Advanced Threat Protection (Windows Defender ATP) is a unified endpoint security platform using built-in security technologies working together and powered by the cloud.
+Windows Defender Advanced Threat Protection (Windows Defender ATP)is a unified platform for preventative protection, post-breach detection, automated investigation and response, employing intelligent protection to protect endpoints from cyber threats.
 
-![Windows Defender ATP service components](images/WDATP-components.png)
 
 ![Windows Defender ATP components](images/wdatp-pillars.png)
-
-Windows Defender ATP offers a comprehensive approach in securing enterprise networks by offerring an end-to-end stack of security capabilities. 
 
 
 The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
@@ -38,7 +35,7 @@ The following table can help you better understand how capabilities align within
 
  Attack surface reduction | Next generation protection | Endpoint detection and response | Auto investigation and remediation | Security posture 
 :---|:---|:---|:---|:---
-[Windows Defender SmartScreen](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview) OTHER PRODUCTS?? <br> OR <br> Hardware based isolation<br><br> Application control<br><br> Exploit protection<br><br> Network protection<br><br> Controlled folder access | [Windows Defender Antivirus](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) <br> OR <br> Web protection <br><br> Machine learning <br><br> Script and memory attack protection <br><br> Antivirus <br><br> Runtime emulator<br><br> Threat intelligence<br><br> URL/IP reputation <br><br> Sandbox service | Deep operating system recording sensor <br><br> Machine learning, behavioral and anomaly detection <br><br> Response containment <br><br> Realtime and historical threat hunting <br><br> Threat intelligence and custom detections | Forensic collection <br><br> Response orchestration <br><br> Historical endpoint data <br><br> Artificial intelligence reponse playbooks | Asset inventory <br> Operating system baseline compliance <br><br> Recommended improvement actions<br> <br> Secure score <br><br> Threat analytics <br><br> Reporting and trends
+ Hardware based isolation<br><br> Application control<br><br> Exploit protection<br><br> Network protection<br><br> Controlled folder access |  Web protection <br><br> Machine learning <br><br> Script and memory attack protection <br><br> Antivirus <br><br> Runtime emulator<br><br> Threat intelligence<br><br> URL/IP reputation <br><br> Sandbox service | Deep operating system recording sensor <br><br> Machine learning, behavioral and anomaly detection <br><br> Response containment <br><br> Realtime and historical threat hunting <br><br> Threat intelligence and custom detections | Forensic collection <br><br> Response orchestration <br><br> Historical endpoint data <br><br> Artificial intelligence reponse playbooks | Asset inventory <br> Operating system baseline compliance <br><br> Recommended improvement actions<br> <br> Secure score <br><br> Threat analytics <br><br> Reporting and trends
 
 These capabilities are available across multiple products that make up the Windows Defender ATP platform. For more information on how to leverage all the Windows Defender ATP capabilities, see [Threat protection](https://docs.microsoft.com/en-us/windows/security/threat-protection/index).
 
