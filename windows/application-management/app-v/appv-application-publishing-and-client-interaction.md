@@ -139,9 +139,9 @@ Before an application can access the package registry data, the App-V Client mus
 
 When a new package is added to the App-V Client, a copy of the REGISTRY.DAT file from the package is created at %ProgramData%\Microsoft\AppV\Client\VREG\{Version GUID}.dat. The name of the file is the version GUID with the .DAT extension. The reason this copy is made is to ensure that the actual hive file in the package is never in use, which would prevent the removal of the package at a later time.
 
-**Registry.dat from Package Store** > **%ProgramData%\Microsoft\AppV\Client\Vreg\\{VersionGuid}.dat**
+**Registry.dat from Package Store** > **%ProgramData%\Microsoft\AppV\Client\Vreg\\{VersionGUID}.dat**
 
-When the first application from the package is launched on the client, the client stages or copies the contents out of the hive file, re-creating the package registry data in an alternate location under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\Packages\PackageGuid\Versions\VersionGuid\REGISTRY. The staged registry data has two distinct types of machine data and user data. Machine data is shared across all users on the machine. User data is staged for each user to a user-specific location HKCU\Software\Microsoft\AppV\Client\Packages\PackageGuid\Registry\User. The machine data is ultimately removed at package removal time, and the user data is removed on a user unpublish operation.
+When the first application from the package is launched on the client, the client stages or copies the contents out of the hive file, re-creating the package registry data in an alternate location under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\Packages\PackageGuid\Versions\VersionGUID\REGISTRY. The staged registry data has two distinct types of machine data and user data. Machine data is shared across all users on the machine. User data is staged for each user to a user-specific location HKCU\Software\Microsoft\AppV\Client\Packages\PackageGUID\Registry\User. The machine data is ultimately removed at package removal time, and the user data is removed on a user unpublish operation.
 
 ### Package registry staging vs. connection group registry staging
 
@@ -278,7 +278,7 @@ App-V registry roaming falls into two scenarios, as shown in the following table
 |Scenario|Description|
 |---|---|
 |Applications that are run as standard users|When a standard user launches an App-V application, both HKLM and HKCU for App-V applications are stored in the HKCU hive on the machine. This presents as two distinct paths:<br><br>- HKLM's location is  HKCU\SOFTWARE\Classes\AppV\Client\Packages\\{PkgGUID}\REGISTRY\MACHINE\SOFTWARE<br>- HKCU's location is HKCU\SOFTWARE\Microsoft\AppV\Client\Packages\\{PkgGUID}\REGISTRY\USER\\{UserSID}\SOFTWARE<br><br>The locations are enabled for roaming based on the operating system settings.|
-|Applications that are run with elevation|When an application is launched with elevation:<br><br>- HKLM data is stored in the HKLM hive on the local computer<br>- HKCU data is stored in the User Registry location<br><br>In this scenario, these settings are not roamed with normal operating system roaming configurations, and the resulting registry keys and values are stored in the following locations:<br><br>- HKLM's location is HKLM\SOFTWARE\Microsoft\AppV\Client\Packages\\{PkgGUID}\\{UserSID}\REGISTRY\MACHINE\SOFTWARE<br>- HKCU's location is  HKCU\SOFTWARE\Microsoft\AppV\Client\Packages\\{PkgGUID}\\Registry\User\\{UserSID}\SOFTWARE|
+|Applications that are run with elevation|When an application is launched with elevation:<br><br>- HKLM data is stored in the HKLM hive on the local computer<br>- HKCU data is stored in the User Registry location<br><br>In this scenario, these settings are not roamed with normal operating system roaming configurations, and the resulting registry keys and values are stored in the following locations:<br><br>- HKLM's location is HKLM\SOFTWARE\Microsoft\AppV\Client\Packages\\{PkgGUID}\\{UserSID}\REGISTRY\MACHINE\SOFTWARE<br>- HKCU's location is HKCU\SOFTWARE\Microsoft\AppV\Client\Packages\\{PkgGUID}\\Registry\User\\{UserSID}\SOFTWARE|
 
 ### App-V and folder redirection
 
@@ -475,7 +475,7 @@ After the Publishing Refresh process, the user launches and then relaunches an A
 
 6. After downloading, the App-V Client service consumes the manifest and deployment configuration files to configure the virtual environment and all App-V subsystems are loaded.
 
-7. The Application launches. For any missing files in the package store (sparse files), App-V will stream fault the files on an as needed basis.
+7. The Application launches. For any missing files in the package store (sparse files), App-V will stream fault the files on an as-needed basis.
 
     ![package add file and registry data - stream](images/packageaddfileandregistrydata-stream.png)
 
@@ -489,7 +489,7 @@ The current version of App-V's package upgrade process differs from the older ve
 
 1. The App-V Client performs a Publishing Refresh and discovers a newer version of an App-V Package.
 
-2. Package entries are added to the appropriate catalog for the new version
+2. Package entries are added to the appropriate catalog for the new version.
 
     1. User targeted packages: the **UserDeploymentConfiguration.xml** and **UserManifest.xml** are placed on the machine in the user catalog at **appdata\\roaming\\Microsoft\\AppV\\Client\\Catalog\\Packages\\PkgGUID\\VerGUID**.
 
@@ -694,7 +694,7 @@ For details on App-V integration, see [Microsoft Application Virtualization 5.0 
 
 ### Software clients and application capabilities
 
-App-V supports specific software clients and application capabilities extension points to register virtualized applications with the operating system's software client. This means users can select default programs for operations like email, instant messaging, and using the media player. This operation is performed in the control panel with **Set Program Access** and **Computer Defaults**, and configured during sequencing in the manifest or dynamic configuration files. Application capabilities are only supported when the App-V applications are published globally.
+App-V supports specific software clients and application capabilities extension points to register virtualized applications with the operating system's software client. This means users can select default programs for operations like email, instant messaging, and using the media player. This operation is performed in the control panel with **Set Program Access** and **Computer Defaults**, and is configured during sequencing in the manifest or dynamic configuration files. Application capabilities are only supported when the App-V applications are published globally.
 
 The following is an example of software client registration of an App-V-based mail client.
 
