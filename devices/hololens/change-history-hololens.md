@@ -2,10 +2,9 @@
 title: Change history for Microsoft HoloLens documentation
 description: This topic lists new and updated topics for HoloLens.
 keywords: change history
-ms.prod: w10
+ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article

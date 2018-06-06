@@ -630,7 +630,7 @@ Here are the minimum steps for WEF to operate:
   </Query>
   <Query Id="12" Path="Microsoft-Windows-PowerShell/Operational">
     <!-- PowerShell execute block activity (4103), Remote Command(4104), Start Command(4105), Stop Command(4106) -->
-    <Select Path="Microsoft-Windows-PowerShell/Operational">*[System[(EventID=4103 or EventId=4104 or EventId=4105 or EventId=4106)]]</Select>
+    <Select Path="Microsoft-Windows-PowerShell/Operational">*[System[(EventID=4103 or EventID=4104 or EventID=4105 or EventID=4106)]]</Select>
   </Query>
   <Query Id="13" Path="Microsoft-Windows-DriverFrameworks-UserMode/Operational">
     <!-- Detect User-Mode drivers loaded - for potential BadUSB detection. -->

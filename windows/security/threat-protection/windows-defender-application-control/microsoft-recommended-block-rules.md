@@ -78,7 +78,7 @@ For October 2017, we are announcing an update to system.management.automation.dl
 Microsoft recommends that you block the following Microsoft-signed applications and PowerShell files by merging the following policy into your existing policy to add these deny rules using the Merge-CIPolicy cmdlet:
 
 ```
-  <?xml version="1.0" encoding="utf-8" ?> 
+<?xml version="1.0" encoding="utf-8" ?> 
   <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
   <VersionEx>10.0.0.0</VersionEx> 
   <PolicyTypeID>{A244370E-44C9-4C06-B551-F6016E563076}</PolicyTypeID> 
@@ -132,6 +132,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
   <Deny ID="ID_DENY_INFINSTALL" FriendlyName="infdefaultinstall.exe" FileName="infdefaultinstall.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_LXRUN" FriendlyName="lxrun.exe" FileName="lxrun.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_PWRSHLCUSTOMHOST" FriendlyName="powershellcustomhost.exe" FileName="powershellcustomhost.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
+  <Deny ID="ID_DENY_TEXTTRANSFORM" FriendlyName="texttransform.exe" FileName="texttransform.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_WMIC" FriendlyName="wmic.exe" FileName="wmic.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_D_1" FriendlyName="Powershell 1" Hash="02BE82F63EE962BCD4B8303E60F806F6613759C6"/> 
   <Deny ID="ID_DENY_D_2" FriendlyName="Powershell 2" Hash="13765D9A16CC46B2113766822627F026A68431DF"/> 
@@ -508,6 +509,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
   <FileRuleRef RuleID="ID_DENY_INFINSTALL"/> 
   <FileRuleRef RuleID="ID_DENY_LXRUN"/> 
   <FileRuleRef RuleID="ID_DENY_PWRSHLCUSTOMHOST"/> 
+  <FileRuleRef RuleID="ID_DENY_TEXTTRANSFORM"/> 
   <FileRuleRef RuleID="ID_DENY_WMIC"/> 
   <FileRuleRef RuleID="ID_DENY_D_1"/> 
   <FileRuleRef RuleID="ID_DENY_D_2"/> 
