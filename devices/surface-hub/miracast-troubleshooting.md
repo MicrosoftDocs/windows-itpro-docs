@@ -1,10 +1,8 @@
 ---
 title: Troubleshoot Miracast on Surface Hub
 description: Learn how to resolve issues with Miracast on Surface Hub.
-ms.prod: w10
-ms.mktglfcycl: manage
+ms.prod: surface-hub
 ms.sitesec: library
-ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
