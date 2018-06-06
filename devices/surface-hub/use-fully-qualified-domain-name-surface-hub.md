@@ -7,10 +7,8 @@ ms.author: jdecker
 ms.topic: article
 ms.date: 07/27/2017
 ms.localizationpriority: medium
-ms.prod: w10
-ms.mktglfcycl: support
+ms.prod: surface-hub
 ms.sitesec: library
-ms.pagetype: surfacehub
 ---
 
 # Configure domain name for Skype for Business
