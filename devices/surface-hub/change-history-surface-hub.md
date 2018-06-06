@@ -2,10 +2,8 @@
 title: Change history for Surface Hub
 description: This topic lists new and updated topics for Surface Hub.
 keywords: change history
-ms.prod: w10
-ms.mktglfcycl: manage
+ms.prod: surface-hub
 ms.sitesec: library
-ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article

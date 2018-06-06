@@ -3,10 +3,8 @@ title: Physically install Microsoft Surface Hub
 description: The Microsoft Surface Hub Readiness Guide will help make sure that your site is ready for the installation.
 ms.assetid: C764DBFB-429B-4B29-B4E8-D7F0073BC554
 keywords: Surface Hub, readiness guide, installation location, mounting options
-ms.prod: w10
-ms.mktglfcycl: manage
+ms.prod: surface-hub
 ms.sitesec: library
-ms.pagetype: surfacehub, readiness
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
