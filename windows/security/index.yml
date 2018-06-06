@@ -124,7 +124,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_information-protection.svg
       
-      title: BitLocker
+      title: Windows Defender Application Guard
 
     - href: \windows\security\identity-protection\hello-for-business\hello-overview
 
