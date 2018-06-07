@@ -808,6 +808,10 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
+
+> [!Warning]  
+> Starting in the next major version of Windows, this policy is deprecated.
+
 Domain member: Digitally encrypt or sign secure channel data (always)
 
 This security setting determines whether all secure channel traffic initiated by the domain member must be signed or encrypted.
@@ -883,6 +887,10 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
+
+> [!Warning]  
+> Starting in the next major version of Windows, this policy is deprecated.
+
 Domain member: Digitally encrypt secure channel data (when possible)
 
 This security setting determines whether a domain member attempts to negotiate encryption for all secure channel traffic that it initiates.
@@ -955,6 +963,10 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
+
+> [!Warning]  
+> Starting in the next major version of Windows, this policy is deprecated.
+
 Domain member: Disable machine account password changes
 
 Determines whether a domain member periodically changes its computer account password. If this setting is enabled, the domain member does not attempt to change its computer account password. If this setting is disabled, the domain member attempts to change its computer account password as specified by the setting for Domain Member: Maximum age for machine account password, which by default is every 30 days.
