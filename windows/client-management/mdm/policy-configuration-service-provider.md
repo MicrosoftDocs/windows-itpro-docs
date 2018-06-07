@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/14/2018
+ms.date: 06/05/2018
 ---
 
 # Policy CSP
@@ -2975,6 +2975,12 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-system.md#system-bootstartdriverinitialization" id="system-bootstartdriverinitialization">System/BootStartDriverInitialization</a>
   </dd>
   <dd>
+    <a href="./policy-csp-system.md#system-configuretelemetryoptinchangenotification" id="system-configuretelemetryoptinchangenotification">System/ConfigureTelemetryOptInChangeNotification</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-system.md#system-configuretelemetryoptinsettingsux" id="system-configuretelemetryoptinsettingsux">System/ConfigureTelemetryOptInSettingsUx</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-system.md#system-disableenterpriseauthproxy" id="system-disableenterpriseauthproxy">System/DisableEnterpriseAuthProxy</a>
   </dd>
   <dd>
@@ -4587,6 +4593,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [System/AllowLocation](./policy-csp-system.md#system-allowlocation)
 -   [System/AllowTelemetry](./policy-csp-system.md#system-allowtelemetry)
 -   [System/BootStartDriverInitialization](./policy-csp-system.md#system-bootstartdriverinitialization)
+-   [System/ConfigureTelemetryOptInChangeNotification](./policy-csp-system.md#system-configuretelemetryoptinchangenotification)
+-   [System/ConfigureTelemetryOptInSettingsUx](./policy-csp-system.md#system-configuretelemetryoptinsettingsux)
 -   [System/DisableEnterpriseAuthProxy](./policy-csp-system.md#system-disableenterpriseauthproxy)
 -   [System/DisableOneDriveFileSync](./policy-csp-system.md#system-disableonedrivefilesync)
 -   [System/DisableSystemRestore](./policy-csp-system.md#system-disablesystemrestore)
