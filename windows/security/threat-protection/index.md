@@ -10,10 +10,9 @@ ms.date: 02/05/2018
 ---
 
 # Threat Protection
-Windows Defender Advanced Threat Protection is a unified endpoint security platform using built-in security technologies working together and powered by the cloud.
+Windows Defender Advanced Threat Protection (Windows Defender ATP) is a unified endpoint security suite that uses built-in security technologies working together and powered by the cloud. 
 
-
-## Get Windows Defender ATP and you get #errrythanggg security
+The following products in the threat protection stack make up the capabilities under the Windows Defender ATP suite:
 
 - Windows Defender Security Center 
 - Windows Defender Antivirus
@@ -23,8 +22,8 @@ Windows Defender Advanced Threat Protection is a unified endpoint security platf
 - Windows Firewall
 - Windows Defender Security Analytics
 
-You get all these good stuff which you configure individually. You can pick and choose what you need and what you don't. When you're done with setting 'em up, you'll be rewarded with the convenience of seeing everything in once place: Windows Defender Security Center. 
 
+You can configure these products individually in a way that best suites your environment. When you're done with setting them up, your security operations team will be rewarded with the convenience of seeing everything in once place in the Windows Defender ATP portal. 
 
 
 With these you'll get the following capabilities:
