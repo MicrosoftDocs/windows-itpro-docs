@@ -34,7 +34,7 @@ Windows Defender Advanced Threat Protection is a suite of capabilities designed 
 To help you maximize the effectiveness of the security suite, you can configure individual capabilities that surface in the Windows Defender ATP portal. For more information about the Windows Defender ATP capabilities, see [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/en-us/windows/security/wdatp).
 
 
-The Windows Defender ATP portal is where all the capabilities that are available across multiple products come together in a single-pane of glass.
+The Windows Defender ATP portal is where all the capabilities that are available across multiple products come together to give security operations teams the ability to effectively manage the security perimeter of their organization's network.
 
 
 Get a quick, but in-depth overview of Windows Defender ATP for Windows 10 and the new capabilities in Windows 10, version 1703 see [Windows Defender ATP for Windows 10 Creators Update](https://technet.microsoft.com/en-au/windows/mt782787).
