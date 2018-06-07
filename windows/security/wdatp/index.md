@@ -37,7 +37,7 @@ Windows Defender ATP also provides a security posture capability to help you dyn
 Advanced hunting gives you the flexibility of using a powerful search and query tool to proactively hunt for possible threats across your organization.
 
 
-The following table can help you better understand how capabilities align within the Windows Defender ATP offering:
+Understand how capabilities align within the Windows Defender ATP suite offering:
 
 
  Attack surface reduction | Next generation protection | Endpoint detection and response | Auto investigation and remediation | Security posture 
