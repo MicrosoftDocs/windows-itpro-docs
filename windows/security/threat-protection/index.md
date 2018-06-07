@@ -26,15 +26,8 @@ The following products in the threat protection stack make up the capabilities u
 You can configure these products individually in a way that best suites your organization. When you're done with setting them up, your security operations team will have the convenience of seeing everything in once place through the Windows Defender ATP portal. 
 
 
-The Windows Defender ATP suit offers the following capabilities:
+The Windows Defender ATP suite offers the following capabilities:
 ![Windows Defender ATP service components](windows-defender-atp/images/WDATP-components.png)
-
--	Attack Surface Reduction
--	Next Generation Protection
--	Endpoint Detection and Response
--	Automatic Investigation and Remediation
--	Security Posture
--	Managed Hunting
 
 Learn more about how to help protect against threats in Windows 10 and Windows 10 Mobile.
 
