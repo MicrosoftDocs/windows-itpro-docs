@@ -1,4 +1,4 @@
-# [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md)
+# [Windows Defender Advanced Threat Protection portal](windows-defender-advanced-threat-protection.md)
 ##Get started
 ### [Minimum requirements](minimum-requirements-windows-defender-advanced-threat-protection.md)
 ### [Validate licensing and complete setup](licensing-windows-defender-advanced-threat-protection.md)
