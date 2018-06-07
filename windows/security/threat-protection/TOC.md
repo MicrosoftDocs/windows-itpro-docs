@@ -1,10 +1,24 @@
 # [Threat protection](index.md)
 
 
+## [The Windows Defender Security Center app](windows-defender-security-center/windows-defender-security-center.md)
+### [Customize the Windows Defender Security Center app for your organization](windows-defender-security-center/wdsc-customize-contact-information.md)
+### [Hide Windows Defender Security Center app notifications](windows-defender-security-center/wdsc-hide-notifications.md)
+### [Manage Windows Defender Security Center in Windows 10 in S mode](windows-defender-security-center\wdsc-windows-10-in-s-mode.md)
+### [Virus and threat protection](windows-defender-security-center/wdsc-virus-threat-protection.md)
+### [Account protection](windows-defender-security-center\wdsc-account-protection.md)
+### [Firewall and network protection](windows-defender-security-center\wdsc-firewall-network-protection.md)
+### [App and browser control](windows-defender-security-center\wdsc-app-browser-control.md)
+### [Device security](windows-defender-security-center\wdsc-device-security.md)
+### [Device performance and health](windows-defender-security-center\wdsc-device-performance-health.md)
+### [Family options](windows-defender-security-center\wdsc-family-options.md)
 
 
 
-## [Windows Defender Advanced Threat Protection portal](windows-defender-atp/windows-defender-advanced-threat-protection.md)
+
+
+## [Windows Defender Advanced Threat Protection](windows-defender-atp/windows-defender-advanced-threat-protection.md)
+###Get started
 #### [Minimum requirements](windows-defender-atp\minimum-requirements-windows-defender-advanced-threat-protection.md)
 #### [Validate licensing and complete setup](windows-defender-atp\licensing-windows-defender-advanced-threat-protection.md)
 #### [Troubleshoot subscription and portal access issues](windows-defender-atp\troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
@@ -272,19 +286,6 @@
 #### [Use PowerShell cmdlets to configure and manage Windows Defender AV](windows-defender-antivirus\use-powershell-cmdlets-windows-defender-antivirus.md)
 #### [Use Windows Management Instrumentation (WMI) to configure and manage Windows Defender AV](windows-defender-antivirus\use-wmi-windows-defender-antivirus.md)
 #### [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender AV](windows-defender-antivirus\command-line-arguments-windows-defender-antivirus.md)
-
-
-## [The Windows Defender Security Center app](windows-defender-security-center/windows-defender-security-center.md)
-### [Customize the Windows Defender Security Center app for your organization](windows-defender-security-center/wdsc-customize-contact-information.md)
-### [Hide Windows Defender Security Center app notifications](windows-defender-security-center/wdsc-hide-notifications.md)
-### [Manage Windows Defender Security Center in Windows 10 in S mode](windows-defender-security-center\wdsc-windows-10-in-s-mode.md)
-### [Virus and threat protection](windows-defender-security-center/wdsc-virus-threat-protection.md)
-### [Account protection](windows-defender-security-center\wdsc-account-protection.md)
-### [Firewall and network protection](windows-defender-security-center\wdsc-firewall-network-protection.md)
-### [App and browser control](windows-defender-security-center\wdsc-app-browser-control.md)
-### [Device security](windows-defender-security-center\wdsc-device-security.md)
-### [Device performance and health](windows-defender-security-center\wdsc-device-performance-health.md)
-### [Family options](windows-defender-security-center\wdsc-family-options.md)
 
 
 
