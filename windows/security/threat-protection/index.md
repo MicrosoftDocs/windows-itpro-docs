@@ -17,7 +17,7 @@ The following products in the threat protection stack make up the capabilities u
 - Windows Defender Security Center 
 - Windows Defender Antivirus
 - Windows Defender Exploit Guard
-- Windows Defender Application control
+- Windows Defender Application Control
 - Windows Defender Application Guard
 - Windows Firewall
 - Windows Defender Security Analytics
@@ -33,9 +33,9 @@ Learn more about how to help protect against threats in Windows 10 and Windows 1
 
 | Section | Description |
 |-|-|
-|[Windows Defender Security Center](windows-defender-security-center/windows-defender-security-center.md)|Learn about the easy-to-use app that brings together common Windows security features.|
-|[Windows Defender Advanced Threat Protection](windows-defender-atp/windows-defender-advanced-threat-protection.md)|Provides info about Windows Defender Advanced Threat Protection (Windows Defender ATP), an out-of-the-box Windows enterprise security service that enables enterprise cybersecurity teams to detect and respond to advanced threats on their networks.|
+|[Windows Defender Advanced Threat Protection portal](windows-defender-atp/windows-defender-advanced-threat-protection.md)|Provides info about the Windows Defender Advanced Threat Protection (Windows Defender ATP) portal, an out-of-the-box Windows enterprise security service that enables enterprise security operations teams to detect and respond to advanced threats on their networks.|
 |[Windows Defender Antivirus in Windows 10](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)|Provides info about Windows Defender Antivirus, a built-in antimalware solution that helps provide security and antimalware management for desktops, portable computers, and servers. Includes a list of system requirements and new features.|
+|[Windows Defender Security Center](windows-defender-security-center/windows-defender-security-center.md)|Learn about the easy-to-use app that brings together common Windows security features.|
 |[Windows Defender Application Guard](windows-defender-application-guard/wd-app-guard-overview.md)|Provides info about Windows Defender Application Guard, the hardware-based virtualization solution that helps to isolate a device and operating system from an untrusted browser session.|
 |[Windows Defender Application Control](windows-defender-application-control/windows-defender-application-control.md)|Explains how Windows Defender Application Control restricts the applications that users are allowed to run and the code that runs in the System Core (kernel).|
 |[Enable HVCI](windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity.md)|Explains how to enable HVCI to protect Windows kernel-mode processes against the injection and execution of malicious or unverified code.|
