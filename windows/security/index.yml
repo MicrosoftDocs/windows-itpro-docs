@@ -78,13 +78,13 @@ sections:
 
       title: Information protection
 
-- title: Security features built in to Windows 10 
+- title: Windows Defender Advanced Threat Protection 
 
   items:
 
   - type: paragraph
 
-    text: 'Windows 10 enables critical security features to protect your device right from the start.'
+    text: 'Prevent, detect, investigate, and respond to advanced threats.'
 
   - type: list
 
@@ -95,16 +95,6 @@ sections:
     columns: 3
 
     items:
-
-    - href: \windows\security\hardware-protection\how-hardware-based-containers-help-protect-windows
-
-      html: <p>Protect the boot process and maintain system integrity</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_identity-protection.svg
-      
-      title: Windows Defender System Guard
 
     - href: \windows\security\threat-protection\windows-defender-antivirus\windows-defender-antivirus-in-windows-10
 
@@ -112,115 +102,59 @@ sections:
 
       image:
 
-        src: https://docs.microsoft.com/media/common/i_threat-protection.svg
+        src: https://docs.microsoft.com/media/common/i_identity-protection.svg
       
       title: Windows Defender Antivirus
 
-    - href: \windows\security\information-protection\bitlocker\bitlocker-overview
+    - href: \windows\security\threat-protection\windows-defender-smartscreen\windows-defender-smartscreen-overview
 
-      html: <p>Prevent data theft from lost or stolen devices</p>
+      html: <p>Protect users from potentially malicious sites</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_threat-protection.svg
+      
+      title: Windows Defender SmartScreen
+
+    - href: \windows\security\threat-protection\windows-defender-exploit-guard\windows-defender-exploit-guard
+
+      html: <p>Manage and reduce the attack surface of apps using host intrusion prevention capabilities</p>
 
       image:
 
         src: https://docs.microsoft.com/media/common/i_information-protection.svg
       
-      title: BitLocker
+      title: Windows Defender Exploit Guard
 
-- title: Security features in Microsoft 365 E3
-
-  items:
-
-  - type: paragraph
-
-    text: 'Windows 10 Enterprise provides the foundation for Microsoft 365 E3 and a secure modern workplace.'
-
-  - type: list
-
-    style: cards
-
-    className: cardsM
-
-    columns: 3
-
-    items:
-
-    - href: \windows\security\identity-protection\hello-for-business\hello-overview
-
-      html: <p>Give users a more personal and secure way to access their devices</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_identity-protection.svg
-      
-      title: Windows Hello for Business
-      
     - href: \windows\security\threat-protection\windows-defender-application-control\windows-defender-application-control
 
       html: <p>Lock down applications that run on a device</p>
 
       image:
 
-        src: https://docs.microsoft.com/media/common/i_threat-protection.svg
-      
-      title: Windows Defender Application Control
-
-    - href: \windows\security\information-protection\windows-information-protection\protect-enterprise-data-using-wip
-
-      html: <p>Prevent accidental data leaks from enterprise devices</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_information-protection.svg
-      
-      title: Windows Information Protection 
-
-- title: Security features in Microsoft 365 E5
-
-  items:
-
-  - type: paragraph
-
-    text: 'Get all of the protection from Microsoft 365 E3 security, plus these cloud-based security features to help you defend against even the most advanced threats.'
-
-  - type: list
-
-    style: cards
-
-    className: cardsM
-
-    columns: 3
-
-    items:
-
-    - href: https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection
-
-      html: <p>Identity Protection and Privileged Identity Management</p>
-
-      image:
-
         src: https://docs.microsoft.com/media/common/i_identity-protection.svg
       
-      title: Azure Active Directory P2
+      title: Windows Defender Application Control
+      
+    - href: \windows\security\threat-protection\windows-defender-application-guard\wd-app-guard-overview
 
-    - href: \windows\security\threat-protection\Windows-defender-atp\windows-defender-advanced-threat-protection
-
-      html: <p>Detect, investigate, and respond to advanced cyberattacks</p>
+      html: <p>Protect users from untrusted web sites and resources</p>
 
       image:
 
         src: https://docs.microsoft.com/media/common/i_threat-protection.svg
       
-      title: Windows Defender Advanced Threat Protection 
+      title: Windows Defender Application Guard
 
-    - href: https://www.microsoft.com/cloud-platform/azure-information-protection
+    - href: \windows\security\identity-protection\windows-firewall\windows-firewall-with-advanced-security
 
-      html: <p>Protect documents and email automatically</p>
+      html: <p>Block unauthorized network traffic flowing into or out of a device</p>
 
       image:
 
         src: https://docs.microsoft.com/media/common/i_information-protection.svg
       
-      title: Azure Information Protection P2
+      title: Windows Defender Firewall
 
 - title: Videos
 
