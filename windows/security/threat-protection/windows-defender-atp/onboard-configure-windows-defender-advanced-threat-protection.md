@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/24/2018
+ms.date: 07/01/2018
 ---
 
 # Onboard machines to the Windows Defender ATP service
@@ -43,6 +43,44 @@ Windows Defender Advanced Threat Protection requires one of the following Micros
   - Microsoft 365 Enterprise E5 which includes Windows 10 Enterprise E5
 
 For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us/Licensing/product-licensing/windows10.aspx#tab=2).
+
+## Hardware and software requirements
+### Supported Windows versions
+- Windows 7
+- Windows 8.1
+- Windows 10
+  - Windows 10 Enterprise
+  - Windows 10 Education
+  - Windows 10 Pro
+  - Windows 10 Pro Education
+- Windows server
+  - Windows Server 2012 R2
+  - Windows Server 2016
+  - Windows Server, version 1803
+
+Machines on your network must be running one of these editions.
+
+The hardware requirements for Windows Defender ATP on machines is the same as those for the supported editions.
+
+> [!NOTE]
+> Machines that are running mobile versions of Windows are not supported.
+
+
+### Other supported operating systems
+>[!NOTE]
+>You'll need to know the exact Linux distros and macOS X versions that are compatible with Windows Defender ATP for the integration to work. 
+-  macOSX
+-  Linux
+
+#### Internet connectivity
+Internet connectivity on machines is required either directly or through proxy.
+
+The Windows Defender ATP sensor can utilize a daily average bandwidth of 5MB to communicate with the Windows Defender ATP cloud service and report cyber data.
+
+For more information on additional proxy configuration settings see, [Configure machine proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) .
+
+Before you onboard machines, the diagnostic data service must be enabled. The service is enabled by default in Windows 10.
+
 
 ## Windows Defender Antivirus configuration requirement
 The Windows Defender ATP agent depends on the ability of Windows Defender Antivirus to scan files and provide information about them. 

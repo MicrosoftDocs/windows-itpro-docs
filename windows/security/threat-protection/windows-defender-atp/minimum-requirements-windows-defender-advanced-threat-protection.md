@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 06/04/2018
+ms.date: 07/01/2018
 ---
 
 # Minimum requirements for Windows Defender ATP
@@ -48,31 +48,6 @@ When you run the onboarding wizard for the first time, you must choose where you
 > [!NOTE]
 > -   You cannot change your data storage location after the first-time setup.
 > -   Review the [Windows Defender ATP data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md) for more information on where and how Microsoft stores your data.
-
-### Hardware and software requirements
-
-The Windows Defender ATP agent only supports the following editions of Windows 10:
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
-
-Machines on your network must be running one of these editions.
-
-The hardware requirements for Windows Defender ATP on machines is the same as those for the supported editions.
-
-> [!NOTE]
-> Machines that are running mobile versions of Windows are not supported.
-
-#### Internet connectivity
-Internet connectivity on machines is required either directly or through proxy.
-
-The Windows Defender ATP sensor can utilize a daily average bandwidth of 5MB to communicate with the Windows Defender ATP cloud service and report cyber data.
-
-For more information on additional proxy configuration settings see, [Configure machine proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) .
-
-Before you onboard machines, the diagnostic data service must be enabled. The service is enabled by default in Windows 10.
 
 <span id="telemetry-and-diagnostics-settings" />
 ### Diagnostic data settings
