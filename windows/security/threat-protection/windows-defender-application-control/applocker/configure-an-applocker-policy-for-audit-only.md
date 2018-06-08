@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
-ms.date: 09/21/2017
+ms.date: 06/08/2018
 ---
 
 # Configure an AppLocker policy for audit only
