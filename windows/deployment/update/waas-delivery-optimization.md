@@ -1,6 +1,7 @@
 ---
 title: Configure Delivery Optimization for Windows 10 updates (Windows 10)
 description: Delivery Optimization is a new peer-to-peer distribution method in Windows 10
+keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

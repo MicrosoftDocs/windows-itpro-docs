@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/24/2018
+ms.date: 05/21/2018
 ---
 
 
@@ -209,6 +209,12 @@ Ensure real-time antimalware protection is running properly.</td>
 <td>[Ensure the diagnostic data service is enabled](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-diagnostic-data-service-is-enabled).<br>
 Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md).</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Failed to read the offboarding parameters. Error type: %1, Error code: %2, Description: %3 </td>
+<td>This event occurs when the system can't read the offboarding parameters.</td>
+<td>Ensure the machine has Internet access, then run the entire offboarding process again.</td>
 </tr>
 <tr>
 <td>30</td>

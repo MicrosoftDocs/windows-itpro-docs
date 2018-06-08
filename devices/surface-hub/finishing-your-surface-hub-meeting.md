@@ -2,10 +2,8 @@
 title: End session - ending a Surface Hub meeting
 description: To end a Surface Hub meeting, tap End session. Surface Hub cleans up the application state, operating system state, and the user interface so that Surface Hub is ready for the next meeting.
 keywords: I am Done, end Surface Hub meeting, finish Surface Hub meeting, clean up Surface Hub meeting
-ms.prod: w10
-ms.mktglfcycl: manage
+ms.prod: surface-hub
 ms.sitesec: library
-ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article

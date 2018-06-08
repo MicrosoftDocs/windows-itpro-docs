@@ -1509,15 +1509,20 @@ This event sends data about the processor (architecture, speed, number of cores,
 
 The following fields are available:
 
-- **ProcessorArchitecture**  Retrieves the processor architecture of the installed operating system.
+- **KvaShadow**  Microcode info of the processor.
+- **MMSettingOverride**  Microcode setting of the processor.
+- **MMSettingOverrideMask**  Microcode setting override of the processor.
+- **ProcessorArchitecture**  Processor architecture of the installed operating system. 
 - **ProcessorClockSpeed**  Clock speed of the processor in MHz.
 - **ProcessorCores**  Number of logical cores in the processor.
 - **ProcessorIdentifier**  Processor Identifier of a manufacturer.
 - **ProcessorManufacturer**  Name of the processor manufacturer.
 - **ProcessorModel**  Name of the processor model.
 - **ProcessorPhysicalCores**  Number of physical cores in the processor.
-- **ProcessorUpdateRevision**  Microcode revision
+- **ProcessorUpdateRevision**  Microcode revision.
+- **ProcessorUpdateStatus**  The status of the microcode update.
 - **SocketCount**  Count of CPU sockets.
+- **SpeculationControl**  If the system has enabled protections needed to validate the speculation control vulnerability.
 
 
 ### Census.Security

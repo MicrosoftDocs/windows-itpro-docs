@@ -10,7 +10,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 04/30/2018
+ms.date: 06/05/2018
 ---
 
 # Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education
@@ -38,7 +38,7 @@ Some desktop devices in an enterprise serve a special purpose, such as a PC in t
 >[!WARNING]
 >For kiosks in public-facing environments with auto sign-in enabled, you should use a user account with least privilege, such as a local standard user account.
 >
->Assigned access can be configured via Windows Mangement Instrumentation (WMI) or configuration service provider (CSP) to run its applications under a domain user or service account, rather than a local account. However, use of domain user or service accounts introduces risks that an attacker subverting the assigned access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so.
+>Assigned access can be configured via Windows Management Instrumentation (WMI) or configuration service provider (CSP) to run its applications under a domain user or service account, rather than a local account. However, use of domain user or service accounts introduces risks that an attacker subverting the assigned access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so.
 
 **Which edition of Windows 10 will the kiosk run?** All of the configuration methods work for Windows 10 Enterprise and Education; some of the methods work for Windows 10 Pro. Kiosk mode is not available on Windows 10 Home. 
 
@@ -48,14 +48,14 @@ Choose this method | For this edition | For this kiosk account type
 --- | --- | ---
 [Local settings](#local) (for 1 or a few devices) | Pro, Ent, Edu | Local standard user
 [PowerShell](#powershell)  | Pro, Ent, Edu | Local standard user
-[Provisioning](#wizard)  | Pro (version 1709), Ent, Edu | Local standard user 
+[Provisioning](#wizard)  | Pro (version 1709), Ent, Edu | Local standard user, Active Directory 
 [Intune or other mobile device management (MDM)](#set-up-assigned-access-in-mdm)  | Pro (version 1709), Ent, Edu | Local standard user, Azure AD
 
 ### Methods for kiosks and digital signs running a Classic Windows app
 
 Choose this method | For this edition | For this kiosk account type 
 --- | --- | ---
-[Provisioning](#wizard) | Ent, Edu | Local standard user 
+[Provisioning](#wizard) | Ent, Edu | Local standard user, Active Directory 
 [ShellLauncher](#shelllauncher) | Ent, Edu | Local standard user or administrator, Active Directory, Azure AD
 
 
@@ -200,7 +200,7 @@ Clear-AssignedAccess
 >
 >OS edition: Windows 10 Pro (version 1709) for UWP only; Ent, Edu for both app types
 >
->Account type: Local standard user 
+>Account type: Local standard user, Active Directory 
 
 >[!IMPORTANT]
 >When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature does not work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows](https://support.microsoft.com/help/324737/how-to-turn-on-automatic-logon-in-windows).
@@ -268,11 +268,11 @@ The following steps explain how to configure a kiosk in Microsoft Intune. For ot
 5. Select **Create profile**.
 6. Enter a friendly name for the profile.
 7. Select **Windows 10 and later** for the platform.
-8. Select **Device restrictions** for the profile type.
-9. Select **Kiosk**.
-10. In **Kiosk Mode**, select **Single app kiosk**.
-1. Enter the user account (Azure AD or a local standard user account).
-11. Enter the Application User Model ID for an installed app.
+8. Select **Kiosk (Preview)** for the profile type.
+9. Enter a friendly name for the kiosk configuration.
+10. In **Kiosk Mode**, select **Single full-screen app kiosk**.
+10. Select either **Select a managed app** to choose a kiosk app that is managed by Intune, or **Enter UWP app AUMID** to specify the kiosk app by AUMID, and then select the app or enter the AUMID as appropriate.
+1. For the user account, select either **Autologon** to create a user account for the kiosk that will sign in automatically, or **Local user account** to configure an existing user account to run the kiosk. **Local user account** can be a local standard user account on the device or an Azure Active Directory account.
 14. Select **OK**, and then select **Create**.
 18. Assign the profile to a device group to configure the devices in that group as kiosks.
 

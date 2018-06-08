@@ -10,12 +10,18 @@ ms.localizationpriority: high
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 04/30/2018
+ms.date: 06/05/2018
 ---
 
 # Change history for Configure Windows 10
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
+
+## June 2018
+
+New or changed topic | Description
+--- | ---
+[Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](setup-kiosk-digital-signage.md) and [Create a Windows 10 kiosk that runs multiple apps](lock-down-windows-10-to-specific-apps.md)  | Updated instructions for using Microsoft Intune to configure a kiosk.
 
 ## May 2018
 
@@ -23,7 +29,9 @@ New or changed topic | Description
 --- | ---
 [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md) | Added note that Wi-Fi Sense is no longer available.
 Topics about Windows 10 diagnostic data | Moved to [Windows Privacy](https://docs.microsoft.com/windows/privacy/).
+[Guidelines for choosing an app for assigned access (kiosk mode)](guidelines-for-assigned-access-app.md) | Added information on Kiosk Browser settings and URL filtering.
 [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md) | Added details of event log entries to check for when customization is not applied as expected.
+[Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](setup-kiosk-digital-signage.md) | Added Active Directory domain account to provisioning method.
 
 ## RELEASE: Windows 10, version 1803
 

@@ -1,9 +1,7 @@
 ---
 title: Set up HoloLens in kiosk mode (HoloLens)
 description: Use a kiosk configuration to lock down the apps on HoloLens. 
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.pagetype: hololens, devices
+ms.prod: hololens
 ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
@@ -119,7 +117,9 @@ Follow [the instructions for creating a kiosk configuration XML file for desktop
 <span id="guest" />
 #### Add guest access to the kiosk configuration (optional)
 
-In the [Configs section of the XML file](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configs), you can configure a special group account named **Visitor** to allow guests to use the kiosk. Use the following snippet in your kiosk configuration XML to enable **Visitor**:
+In the [Configs section of the XML file](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configs), you can configure a special group named **Visitor** to allow guests to use the kiosk. When the kiosk is configured with the **Visitor** special group, a "**Guest**" option is added to the sign-in page. The **Guest** account does not require a password, and any data associated with the account is deleted when the account signs out.
+
+Use the following snippet in your kiosk configuration XML to enable the **Guest** account:
 
 ```xml
 <Configs>

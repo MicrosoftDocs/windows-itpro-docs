@@ -53,7 +53,7 @@ ms.date: 10/30/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Deploy Overview</h3>
+                                                    <h3>Deployment Overview</h3>
                                                     <p>Learn how to deploy our suite of education offerings. Set up a cloud infrastructure for your school, acquire apps, and configure and manage Windows 10 devices.</p>
                                                 </div>
                                             </div>
@@ -447,7 +447,7 @@ ms.date: 10/30/2017
                                 </div>
                             </li>
                             <li>
-                                <a href="https://www.mepn.com" target="_blank">
+                                <a href="https://partner.microsoft.com/solutions/education" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -457,8 +457,8 @@ ms.date: 10/30/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Microsoft Education Partner Network</h3>
-                                                    <p>Find out the latest news and announcements for Microsoft Education partners.</p>
+                                                    <h3>Microsoft Partner Network</h3>
+                                                    <p>Discover the latest news and resources for Microsoft Education products, solutions, licensing, and readiness.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -466,7 +466,7 @@ ms.date: 10/30/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.mepn.com/MEPN/AEPHome.aspx" target="_blank">
+                                <a href="https://www.mepn.com" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -476,8 +476,8 @@ ms.date: 10/30/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Authorized Education Partner (AEP) home page</h3>
-                                                    <p>Access the essentials and find out what it takes to become an AEP.</p>
+                                                    <h3>Authorized Education Partner (AEP) program</h3>
+                                                    <p>Become authorized to purchase and resell academic priced offers and products to Qualified Educational Users (QEU).</p>
                                                 </div>
                                             </div>
                                         </div>
