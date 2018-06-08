@@ -59,6 +59,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 |Alex Ionescu | @aionescu|
 |Lee Christensen|@tifkin_|
 |Vladas Bulavas | Kaspersky Lab |
+|Lasse Trolle Borup | Langkjaer Cyber Defence |
 
 <br />
 
