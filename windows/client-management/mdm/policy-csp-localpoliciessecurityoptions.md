@@ -829,6 +829,8 @@ Logon information transmitted over the secure channel is always encrypted regard
 
 <!--/Description-->
 <!--RegistryMapped-->
+Starting in Windows 10, next major version, this policy is deprecated.
+
 GP Info:  
 -   GP English name: *Domain member: Digitally encrypt or sign secure channel data (always)*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
