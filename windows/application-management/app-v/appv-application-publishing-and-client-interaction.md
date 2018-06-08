@@ -115,7 +115,7 @@ The locations described in this table can be found in the appdata\roaming\Micros
 |Default storage location|appdata\roaming\Microsoft\AppV\Client\Catalog\Packages\PkgGUID\VerGUID|
 |Files in the user catalog|- UserManifest.xml<br>- DynamicConfiguration.xml or UserDeploymentConfiguration.xml|
 |Additional user catalog location, used when the package is part of a connection group|The following location is in addition to the specific package location mentioned above:<br></br>appdata\roaming\Microsoft\AppV\Client\Catalog\PackageGroups\PkgGroupGUID\PkgGroupVerGUID|
-|Additional file in the machine catalog when the package is part of a connection group|**UserPackageGroupDescriptor.xml**|
+|Additional file in the machine catalog when the package is part of a connection group|UserPackageGroupDescriptor.xml|
 
 ### Shortcut backups
 
@@ -211,7 +211,7 @@ App-V manages the Package Store, which is the location where the expanded asset 
 
 ### Add packages
 
-App-V Packages are staged upon addition to the computer with the App-V Client. The App-V Client provides on-demand staging. When publishing or manually entering the **Add-AppVClientPackage** cmdlet, the data structure is built in the package store (C:\\programdata\\App-V\\{PkgGUID}\\{VerGUID}). The package files identified in the publishing block defined in the **StreamMap.xml** file are added to the system, and the top level folders and child files are staged to ensure proper application assets exist at launch.
+App-V Packages are staged upon addition to the computer with the App-V Client. The App-V Client provides on-demand staging. When publishing or manually entering the **Add-AppVClientPackage** cmdlet, the data structure is built in the package store (C:\\programdata\\App-V\\{PkgGUID}\\{VerGUID}). The package files identified in the publishing block defined in the StreamMap.xml file are added to the system, and the top level folders and child files are staged to ensure proper application assets exist at launch.
 
 ### Mounting packages
 
@@ -224,7 +224,7 @@ The App-V Client can be configured to change the default behavior of streaming. 
 |Policy|Description|
 |---|---|
 |AllowHighCostLaunch|Allows streaming over 3G and cellular networks|
-|AutoLoad|Specifies the Background Load setting:<br>**0** – Disabled<br>**1** – Previously Used Packages only<br>**2** – All Packages|
+|AutoLoad|Specifies the Background Load setting:<br>0 – Disabled<br>1 – Previously Used Packages only<br>2 – All Packages|
 |PackageInstallationRoot|The root folder for the package store in the local machine|
 |PackageSourceRoot|The root override where packages should be streamed from|
 |SharedContentStoreMode|Enables the use of Shared Content Store for VDI scenarios|
@@ -379,7 +379,7 @@ The process then configures the client for package or connection group additions
 
     2. The package file is opened and the **AppXManifest.xml** and **StreamMap.xml** files are downloaded to the Package Store.
 
-    3. Completely stream publishing block data defined in the **StreamMap.xml**. Publishing block data is stored in Package Store\\PkgGUID\\VerGUID\\Root.
+    3. Completely stream publishing block data defined in the **StreamMap.xml** file. Publishing block data is stored in Package Store\\PkgGUID\\VerGUID\\Root.
 
         - Icons: Targets of extension points.
         - Portable Executable Headers (PE Headers): Targets of extension points that contain the base information about the image need on disk, accessed directly or through file types.
@@ -393,7 +393,7 @@ The process then configures the client for package or connection group additions
 
         All other files are created when the directory is listed as sparse on disk and streamed on demand.
 
-    5. Create the machine catalog entries. Create the **Manifest.xml** and **DeploymentConfiguration.xml** from the package files (if no **DeploymentConfiguration.xml** file in the package a placeholder is created).
+    5. Create the machine catalog entries. Create the **Manifest.xml** and **DeploymentConfiguration.xml** files from the package files (if no **DeploymentConfiguration.xml** file in the package a placeholder is created).
 
     6. Create location of the package store in the registry **HKLM\\Software\\Microsoft\\AppV\\Client\\Packages\\PkgGUID\\Versions\\VerGUID\\Catalog**.
 
@@ -431,7 +431,7 @@ During the Publishing Refresh operation, the specific publishing operation, **Pu
 
 1. Package entries are added to the user catalog
 
-    1. User targeted packages: the **UserDeploymentConfiguration.xml** and **UserManifest.xml** are placed on the machine in the User Catalog.
+    1. User targeted packages: the **UserDeploymentConfiguration.xml** and **UserManifest.xml** files are placed on the machine in the User Catalog.
 
     2. Machine targeted (global) packages: the **UserDeploymentConfiguration.xml** is placed in the Machine Catalog.
 
@@ -491,7 +491,7 @@ The current version of App-V's package upgrade process differs from the older ve
 
 2. Package entries are added to the appropriate catalog for the new version.
 
-    1. User targeted packages: the **UserDeploymentConfiguration.xml** and **UserManifest.xml** are placed on the machine in the user catalog at **appdata\\roaming\\Microsoft\\AppV\\Client\\Catalog\\Packages\\PkgGUID\\VerGUID**.
+    1. User targeted packages: the **UserDeploymentConfiguration.xml** and **UserManifest.xml** files are placed on the machine in the user catalog at **appdata\\roaming\\Microsoft\\AppV\\Client\\Catalog\\Packages\\PkgGUID\\VerGUID**.
 
     2. Machine targeted (global) packages: the **UserDeploymentConfiguration.xml** is placed in the machine catalog at **%programdata%\\Microsoft\\AppV\\Client\\Catalog\\Packages\\PkgGUID\\VerGUID**.
 
@@ -545,8 +545,8 @@ Use the following example scenarios as a guide for updating packages.
 
 App-V Packages can be published in one of two ways; as user, which entitles an App-V package to a specific user or group of users, or as global, which entitles the App-V package to the entire machine for all users of the machine. Once a package upgrade has been pended and the App-V package is not in use, consider the two types of publishing:
 
-- **Globally published**: the application is published to a machine; all users on that machine can use it. The upgrade will happen when the App-V Client Service starts, which effectively means a machine restart.
-- **User-published**: the application is published to a user. If there are multiple users on the machine, the application can be published to a subset of the users. The upgrade will happen when the user signs in or when it is published again (periodically, ConfigMgr Policy refresh and evaluation, or an App-V periodic publishing/refresh, or explicitly through Windows PowerShell commands).
+- Global publishing is when the application is published to a machine; all users on that machine can use it. The upgrade will happen when the App-V Client Service starts, which effectively means a machine restart.
+- User publishing is when the application is published to a user. If there are multiple users on the machine, the application can be published to a subset of the users. The upgrade will happen when the user signs in or when it is published again (periodically, ConfigMgr Policy refresh and evaluation, or an App-V periodic publishing/refresh, or explicitly through Windows PowerShell commands).
 
 ### Removing an App-V package
 
@@ -560,9 +560,9 @@ The repair operation is easy to do but may affect many locations on the machine.
 
 The App-V Client and package architecture provides specific integration with the local operating system during the addition and publishing of packages. Three files define the integration or extension points for an App-V Package:
 
-- **AppXManifest.xml**: Stored inside of the package with fallback copies stored in the package store and the user profile. Contains the options created during the sequencing process.
-- **DeploymentConfig.xml**: Provides configuration information of computer- and user-based integration extension points.
-- **UserConfig.xml**: A subset of the **Deploymentconfig.xml** that only provides user-based configurations and only targets user-based extension points.
+- AppXManifest.xml is stored inside of the package with fallback copies stored in the package store and the user profile. Contains the options created during the sequencing process.
+- DeploymentConfig.xml provides configuration information of computer- and user-based integration extension points.
+- UserConfig.xml is a subset of the Deploymentconfig.xml file that only provides user-based configurations and only targets user-based extension points.
 
 ### Rules of integration
 
@@ -688,7 +688,7 @@ The following table displays the supported shell extensions.
 
 The App-V Client supports publishing applications with support for COM integration and virtualization. COM integration allows the App-V Client to register COM objects on the local operating system and virtualization of the objects. For the purposes of this document, the integration of COM objects requires additional detail.
 
-App-V supports registering COM objects from the package to the local operating system with two process types: Out-of-process and In-process. Registering COM objects is accomplished with one or a combination of multiple modes of operation for a specific App-V package that includes Off, Isolated, and Integrated. Integrated mode is configured for either the Out-of-process or In-process type. Configuration of COM modes and types is accomplished with dynamic configuration files (**deploymentconfig.xml** or **userconfig.xml**).
+App-V supports registering COM objects from the package to the local operating system with two process types: Out-of-process and In-process. Registering COM objects is accomplished with one or a combination of multiple modes of operation for a specific App-V package that includes Off, Isolated, and Integrated. Integrated mode is configured for either the Out-of-process or In-process type. Configuration of COM modes and types is accomplished with dynamic configuration files (deploymentconfig.xml or userconfig.xml).
 
 For details on App-V integration, see [Microsoft Application Virtualization 5.0 Integration](https://blogs.technet.microsoft.com/appv/2013/01/03/microsoft-application-virtualization-5-0-integration).
 
