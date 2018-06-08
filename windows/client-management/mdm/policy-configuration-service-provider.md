@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/14/2018
+ms.date: 06/05/2018
 ---
 
 # Policy CSP
@@ -2323,6 +2323,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-privacy.md#privacy-allowautoacceptpairingandprivacyconsentprompts" id="privacy-allowautoacceptpairingandprivacyconsentprompts">Privacy/AllowAutoAcceptPairingAndPrivacyConsentPrompts</a>
   </dd>
   <dd>
+    <a href="./policy-csp-privacy.md#privacy-allowcrossdeviceclipboard" id="privacy-allowcrossdeviceclipboard">Privacy/AllowCrossDeviceClipboard</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-privacy.md#privacy-allowinputpersonalization" id="privacy-allowinputpersonalization">Privacy/AllowInputPersonalization</a>
   </dd>
   <dd>
@@ -2402,6 +2405,18 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-privacy.md#privacy-letappsaccessemail-userincontroloftheseapps" id="privacy-letappsaccessemail-userincontroloftheseapps">Privacy/LetAppsAccessEmail_UserInControlOfTheseApps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsaccessgazeinput" id="privacy-letappsaccessgazeinput">Privacy/LetAppsAccessGazeInput</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsaccessgazeinput-forceallowtheseapps" id="privacy-letappsaccessgazeinput-forceallowtheseapps">Privacy/LetAppsAccessGazeInput_ForceAllowTheseApps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsaccessgazeinput-forcedenytheseapps" id="privacy-letappsaccessgazeinput-forcedenytheseapps">Privacy/LetAppsAccessGazeInput_ForceDenyTheseApps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsaccessgazeinput-userincontroloftheseapps" id="privacy-letappsaccessgazeinput-userincontroloftheseapps">Privacy/LetAppsAccessGazeInput_UserInControlOfTheseApps</a>
   </dd>
   <dd>
     <a href="./policy-csp-privacy.md#privacy-letappsaccesslocation" id="privacy-letappsaccesslocation">Privacy/LetAppsAccessLocation</a>
@@ -2549,6 +2564,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-privacy.md#privacy-publishuseractivities" id="privacy-publishuseractivities">Privacy/PublishUserActivities</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-uploaduseractivities" id="privacy-uploaduseractivities">Privacy/UploadUserActivities</a>
   </dd>
 </dl>
 
@@ -2973,6 +2991,12 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-system.md#system-bootstartdriverinitialization" id="system-bootstartdriverinitialization">System/BootStartDriverInitialization</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-system.md#system-configuretelemetryoptinchangenotification" id="system-configuretelemetryoptinchangenotification">System/ConfigureTelemetryOptInChangeNotification</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-system.md#system-configuretelemetryoptinsettingsux" id="system-configuretelemetryoptinsettingsux">System/ConfigureTelemetryOptInSettingsUx</a>
   </dd>
   <dd>
     <a href="./policy-csp-system.md#system-disableenterpriseauthproxy" id="system-disableenterpriseauthproxy">System/DisableEnterpriseAuthProxy</a>
@@ -4448,6 +4472,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Printers/PointAndPrintRestrictions](./policy-csp-printers.md#printers-pointandprintrestrictions)
 -   [Printers/PointAndPrintRestrictions_User](./policy-csp-printers.md#printers-pointandprintrestrictions-user)
 -   [Printers/PublishPrinters](./policy-csp-printers.md#printers-publishprinters)
+-   [Privacy/AllowCrossDeviceClipboard](./policy-csp-privacy.md#privacy-allowcrossdeviceclipboard)
 -   [Privacy/AllowInputPersonalization](./policy-csp-privacy.md#privacy-allowinputpersonalization)
 -   [Privacy/DisableAdvertisingId](./policy-csp-privacy.md#privacy-disableadvertisingid)
 -   [Privacy/EnableActivityFeed](./policy-csp-privacy.md#privacy-enableactivityfeed)
@@ -4524,6 +4549,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Privacy/LetAppsSyncWithDevices_ForceDenyTheseApps](./policy-csp-privacy.md#privacy-letappssyncwithdevices-forcedenytheseapps)
 -   [Privacy/LetAppsSyncWithDevices_UserInControlOfTheseApps](./policy-csp-privacy.md#privacy-letappssyncwithdevices-userincontroloftheseapps)
 -   [Privacy/PublishUserActivities](./policy-csp-privacy.md#privacy-publishuseractivities)
+-   [Privacy/UploadUserActivities](./policy-csp-privacy.md#privacy-uploaduseractivities)
 -   [RemoteAssistance/CustomizeWarningMessages](./policy-csp-remoteassistance.md#remoteassistance-customizewarningmessages)
 -   [RemoteAssistance/SessionLogging](./policy-csp-remoteassistance.md#remoteassistance-sessionlogging)
 -   [RemoteAssistance/SolicitedRemoteAssistance](./policy-csp-remoteassistance.md#remoteassistance-solicitedremoteassistance)
@@ -4587,6 +4613,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [System/AllowLocation](./policy-csp-system.md#system-allowlocation)
 -   [System/AllowTelemetry](./policy-csp-system.md#system-allowtelemetry)
 -   [System/BootStartDriverInitialization](./policy-csp-system.md#system-bootstartdriverinitialization)
+-   [System/ConfigureTelemetryOptInChangeNotification](./policy-csp-system.md#system-configuretelemetryoptinchangenotification)
+-   [System/ConfigureTelemetryOptInSettingsUx](./policy-csp-system.md#system-configuretelemetryoptinsettingsux)
 -   [System/DisableEnterpriseAuthProxy](./policy-csp-system.md#system-disableenterpriseauthproxy)
 -   [System/DisableOneDriveFileSync](./policy-csp-system.md#system-disableonedrivefilesync)
 -   [System/DisableSystemRestore](./policy-csp-system.md#system-disablesystemrestore)
@@ -4726,7 +4754,13 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
 -   [Experience/AllowCortana](#experience-allowcortana)  
 -   [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)  
+-   [Privacy/AllowCrossDeviceClipboard](#privacy-allowcrossdeviceclipboard)  
 -   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)  
+-   [Privacy/LetAppsAccessGazeInput](#privacy-letappsaccessgazeinput)  
+-   [Privacy/LetAppsAccessGazeInput_ForceAllowTheseApps](#privacy-letappsaccessgazeinput-forceallowtheseapps)  
+-   [Privacy/LetAppsAccessGazeInput_ForceDenyTheseApps](#privacy-letappsaccessgazeinput-forcedenytheseapps)  
+-   [Privacy/LetAppsAccessGazeInput_UserInControlOfTheseApps](#privacy-letappsaccessgazeinput-userincontroloftheseapps)  
+-   [Privacy/UploadUserActivities](#privacy-uploaduseractivities)  
 -   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
 -   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
 -   [Settings/AllowDateTime](#settings-allowdatetime)  
