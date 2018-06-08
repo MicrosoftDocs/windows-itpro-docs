@@ -8,9 +8,28 @@ ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ---
-
 # Available Mobile Device Management (MDM) settings for App-V
-With Windows 10, version 1703, you can configure, deploy, and manage your App-V apps by using these Mobile Device Management (MDM) settings. For the full list of available settings, see the [EnterpriseAppVManagement CSP](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/enterpriseappvmanagement-csp) page. 
+
+With Windows 10, version 1703, you can configure, deploy, and manage your App-V apps by using these Mobile Device Management (MDM) settings. For the full list of available settings, see the [EnterpriseAppVManagement CSP](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/enterpriseappvmanagement-csp) page.
+
+|Policy name|Supported versions|URI full path|Data type|Values|
+|---|---|---|---|---|
+|Name|Windows 10, version 1703|./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/<enterprise_id>/<package_family_name>/<package_full_name>/Name|String|Read-only data, provided by your App-V packages.|
+|Version|Windows 10, version 1703||||
+|Publisher|Windows 10, version 1703||||
+|InstallLocation|Windows 10, version 1703||||
+|InstallDate|Windows 10, version 1703||||
+|Users|Windows 10, version 1703||||
+|AppVPackageID|Windows 10, version 1703||||
+|AppVVersionID|Windows 10, version 1703||||
+|AppVPackageUri|Windows 10, version 1703||||
+|LastError|Windows 10, version 1703||||
+|LastErrorDescription|Windows 10, version 1703||||
+|SyncStatusDescription|Windows 10, version 1703||||
+|SyncProgress|Windows 10, version 1703||||
+|PublishXML|Windows 10, version 1703||||
+|Policy|Windows 10, version 1703||||
+
 
 <table>
     <tr>
