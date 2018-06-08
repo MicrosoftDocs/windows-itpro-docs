@@ -10,7 +10,7 @@ author: trudyha
 searchScope:
   - Store
 ms.author: trudyha
-ms.date: 07/27/2017
+ms.date: 06/05/2018
 ms.technology: Windows
 ---
 
@@ -20,6 +20,19 @@ ms.technology: Windows
 
 -   Windows 10  
 
+The **Minecraft: Education Edition** with Windows 10 device promotion ended January 31, 2018.
+
+Qualifying customers that received one-year subscriptions for Minecraft: Education Edition as part of this program and wish to continue using the game in their schools can purchase new subscriptions in Microsoft Store for Education. 
+For more information on purchasing Minecraft: Education Edition, see [Add Minecraft to your Store for Education](https://docs.microsoft.com/education/windows/school-get-minecraft?toc=/microsoft-store/education/toc.json). 
+
+>[!Note]
+>**Minecraft: Education Edition** with Windows 10 device promotion subscriptions are valid for 1 year from the time 
+of redemption. At the end of 1 year, the promotional subscriptions will expire and any people using these subscriptions will be reverted to a trial license of **Minecraft: Education Edition**. 
+
+To prevent being reverted to a trial license, admins or teachers need to purchase new **Minecraft: Education Edition** subscriptions from Store for Education, and assign licenses to users who used a promotional subscription. 
+
+
+<!---
 For qualifying customers, receive a one-year, single-user subscription for Minecraft: Education Edition for each Windows 10 device you purchase for your K-12 school. You’ll need your invoice or receipt, so be sure to keep track of that. For more information including terms of use, see [Minecraft: Education Edition promotion](https://info.microsoft.com/Minecraft-Education-Edition-Signup.html). 
 
 ## Requirements
@@ -73,3 +86,4 @@ After that, we’ll add the appropriate number of Minecraft: Education Edition l
 Teachers or admins can distribute the licenses:
 - [Learn how teachers can distribute **Minecraft: Education Edition**](teacher-get-minecraft.md#distribute-minecraft)
 - [Learn how IT administrators can distribute **Minecraft: Education Edition**](school-get-minecraft.md#distribute-minecraft)
+-->

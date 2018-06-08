@@ -1,10 +1,8 @@
 ---
 title: Configure Surface Hub Start menu
 description: Use MDM to customize the Start menu on Surface Hub. 
-ms.prod: w10
-ms.mktglfcycl: manage
+ms.prod: surface-hub
 ms.sitesec: library
-ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article

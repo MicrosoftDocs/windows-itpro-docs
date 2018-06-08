@@ -1,9 +1,7 @@
 ---
 title: Microsoft Remote Assist
 description: How to get and deploy the Microsoft Remote Assist app throughout your organization
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.pagetype: hololens, devices
+ms.prod: hololens
 ms.sitesec: library
 author: alhopper-msft
 ms.author: alhopper
