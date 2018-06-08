@@ -33,7 +33,7 @@ To use %AppData% folder redirection, you must:
     * Files under %appdata%\Microsoft\AppV\Client\Catalog
     * Registry settings under HKEY_CURRENT_USER\Software\Microsoft\AppV\Client\Packages
 
-For more information, see [Application publishing and client interaction](appv-application-publishing-and-client-interaction.md#bkmk-clt-inter-roam-reqs).
+For more information, see [Application publishing and client interaction](appv-application-publishing-and-client-interaction.md#roaming-requirements-and-user-catalog-data-storage).
 
 ## Unsupported scenarios for App-V folder redirection
 
