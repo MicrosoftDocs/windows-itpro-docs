@@ -52,7 +52,7 @@ You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provi
 12. Enter a friendly name for the configuration.
 10. In **Kiosk Mode**, select **Multi app kiosk**.
 13. Select an app type.
-  - For **Add Win32 app**, enter the **App Name** and **Identifier**.
+  - For **Add Win32 app**, enter a friendly name for the app in **App Name**, and enter the path to the app executable in **Identifier**.
   - For **Add managed apps**, select an app that you manage through Intune.
   - For **Add app by AUMID**, enter the Application User Model ID (AUMID) for an installed UWP app.
 14. Select whether to enable the taskbar.
@@ -61,7 +61,8 @@ You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provi
 17. Select **OK**. You can add additional configurations or finish.
 18. Assign the profile to a device group to configure the devices in that group as kiosks.
 
-
+>[!NOTE]
+>Managed apps are apps that are in the Microsoft Store for Business that is synced with your Intune subscription.
 
 
 
