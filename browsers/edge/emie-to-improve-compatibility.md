@@ -43,14 +43,14 @@ Microsoft Edge doesn't support ActiveX controls, Browser Helper Objects, VBScrip
 
 ### Set up Microsoft Edge to use the Enterprise Mode site list
 
-You must turn on the **Use Enterprise Mode Site List** Group Policy setting before Microsoft Edge can use the Enterprise Mode site list. This Group Policy applies to both Microsoft Edge and IE11, letting Microsoft Edge switch to IE11 as needed, based on the Enterprise Mode site list. For more info about IE11 and Enterprise Mode, see [Enterprise Mode for Internet Explorer 11 (IE11)](https://go.microsoft.com/fwlink/p/?linkid=618377).
+You must turn on the **Configure the Enterprise Mode Site List** Group Policy setting before Microsoft Edge can use the Enterprise Mode site list. This Group Policy applies to both Microsoft Edge and IE11, letting Microsoft Edge switch to IE11 as needed, based on the Enterprise Mode site list. For more info about IE11 and Enterprise Mode, see [Enterprise Mode for Internet Explorer 11 (IE11)](https://go.microsoft.com/fwlink/p/?linkid=618377).
 
 > **Note**<br>
 > If there’s an .xml file in the cache container, IE waits 65 seconds and then checks the local cache for a newer version of the file from the server, based on standard caching rules. If the server file has a different version number than the version in the cache container, the server file is used and stored in the cache container.<p>If you’re already using a site list, enterprise mode continues to work during the 65 second wait; it just uses your existing site list instead of your new one.
 
 **To turn on Enterprise Mode using Group Policy**
 
-1.  Open your Group Policy editor and go to the **Administrative Templates\\Windows Components\\Microsoft Edge\\Allows you to configure the Enterprise Mode Site list** setting.<p>Turning this setting on also requires you to create and store a site list.<p>![Local Group Policy Editor for using a site list](images/edge-emie-grouppolicysitelist.png)
+1.  Open your Group Policy editor and go to the **Administrative Templates\\Windows Components\\Microsoft Edge\\Configure the Enterprise Mode Site List** policy.<p>Turning this setting on also requires you to create and store a site list.<p>![Local Group Policy Editor for using a site list](images/edge-emie-grouppolicysitelist.png)
 
 2.  Click **Enabled**, and then in the **Options** area, type the location to your site list.
 
