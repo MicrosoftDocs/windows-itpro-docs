@@ -14,6 +14,9 @@ ms.author: alhughes
 ms.date: 03/18/2018
 ---
 
+# Inclusive Classroom IT Admin Guide
+
+## Inclusive Classroom features
 |Reading features|Available in which apps|Office 2016 MSI|Office 2019| Office 365 ProPlus Monthly (C2R)  | Office 365 ProPlus Semi Annual (C2R)  | Office 365 ProPlus Annual (C2R)  | Office 365 Web  | Office Mac  | Office iPad  |
 |---|---|---|---|---|---|---|---|---|---|
 | Read aloud with simultaneous highlighting | OneNote 2016 (add-in), OneNote Online, OneNote for Windows 10, OneNote for iPad, OneNote Mac <br/>Word 2016, Word Online, Word Mac, Word for iOS <br/>Outlook 2016, Outlook Web Access <br/>Office Lens on iOS  |  | <p style="text-align: center;">X</p>  | <p style="text-align: center;">X</p>  | <p style="text-align: center;">X</p>  |   | <p style="text-align: center;">X</p>  |   | |
@@ -44,7 +47,6 @@ ms.date: 03/18/2018
 | Export as tagged PDF  | <ul><li>Word for PCs, Mac</li><li>Sway on iOS, Web, Windows 10</li></ul>  |   |   |   |   |   |   |   |   |
 | Ability to request accessible content  | <ul><li>Outlook Web Access</li></ul>  |   |   |   |   |   |   |   |   |
 </br>
-
 
 | Communication features   | Available in which apps|Office 2016 MSI|Office 2019| Office 365 ProPlus Monthly (C2R)  | Office 365 ProPlus Semi Annual (C2R)  | Office 365 ProPlus Annual (C2R)  | Office 365 Web  | Office Mac  | Office iPad  |
 |---|---|---|---|---|---|---|---|---|---|
