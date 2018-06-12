@@ -21,7 +21,7 @@ To perform an in-place upgrade, user computers must be running the latest versio
 
 The compatibility update that sends diagnostic data from user computers to Microsoft data centers works with Windows 7 SP1 and Windows 8.1 only. Upgrade Readiness cannot evaluate Windows XP or Windows Vista for upgrade eligibility.
 
-<!--With Windows 10, edition 1607, the compatibility update KB is installed automatically.-->
+<!--With Windows 10, edition 1607, the compatibility update is installed automatically.-->
 
 If you need to update user computers to Windows 7 SP1 or Windows 8.1, use Windows Update or download and deploy the applicable package from the Microsoft Download Center.
 
@@ -44,7 +44,8 @@ If you’re already using OMS or Azure Log Analytics, you’ll find Upgrade Read
 
 If you are not using OMS or Azure Log Analytics, go to [Log Analytics](https://azure.microsoft.com/services/log-analytics/) on Microsoft.com and select **Start free** to start the setup process. During the process, you’ll create a workspace and add the Upgrade Readiness solution to it.
 
->[!IMPORTANT] You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory, use a Work >or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS. You also need an Azure subscription to link to your OMS workspace. The account you used to create the workspace must have administrator permissions on the Azure subscription in order to link the workspace to the Azure account. Once the link has been established, you can revoke the administrator permissions.
+>[!IMPORTANT]
+>You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory, use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS. You also need an Azure subscription to link to your OMS workspace. The account you used to create the workspace must have administrator permissions on the Azure subscription in order to link the workspace to the Azure account. Once the link has been established, you can revoke the administrator permissions.
 
 ## System Center Configuration Manager integration
 

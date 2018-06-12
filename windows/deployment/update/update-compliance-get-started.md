@@ -30,7 +30,7 @@ Update Compliance is offered as a solution in the Microsoft Operations Managemen
 If you are already using OMS, skip to step **6** to add Update Compliance to your workspace.
 
 >[!NOTE]
->If you are already using OMS, you can also follow [this link](https://portal.mms.microsoft.com/#Workspace/ipgallery/details/details/index?IPId=WaaSUpdateInsights) to go directly to the Device Health solution and add it to your workspace.
+>If you are already using OMS, you can also follow [this link](https://portal.mms.microsoft.com/#Workspace/ipgallery/details/details/index?IPId=WaaSUpdateInsights) to go directly to the Update Compliance solution and add it to your workspace.
 
 
 If you are not yet using OMS, use the following steps to subscribe to OMS Update Compliance:
