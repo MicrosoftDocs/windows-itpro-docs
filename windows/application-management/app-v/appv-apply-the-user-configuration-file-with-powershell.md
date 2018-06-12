@@ -12,18 +12,18 @@ ms.date: 06/12/2018
 
 >Applies to: Windows 10, version 1607
 
-The dynamic user configuration file is applied when a package is published to a specific user and determines how the package will run.
+When you publish a package to a specific user, you'll also need to specify a dynamic user configuration file to tell that package how to run.
 
 ## Apply a user configuration file
 
-You can follow these steps to specify a user-specific configuration file:
+Here's how to specify a user-specific configuration file:
 
 >[!NOTE]
->The following procedure uses the following example file path for its package:
+>The following example cmdlets use this example file path for its package:
     >
     >* C:\\Packages\\Contoso\\MyApp.appv.
     >
->f your package file uses a different file path than the example, feel free to replace it as needed.
+>If your package file uses a different file path than the example, feel free to replace it as needed.
 
 1. Enter the following cmdlet in Windows PowerShell to add the package to the computer:
 

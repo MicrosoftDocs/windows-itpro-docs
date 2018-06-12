@@ -12,10 +12,7 @@ ms.date: 06/12/2018
 
 >Applies to: Windows 10, version 1607
 
-The dynamic deployment configuration file is applied when a package is added or set to a computer running the App-V client before the package has been published. The file configures the default settings of the package that all users share on the computer running the App-V client. This section will tell you how to use a deployment configuration file. The procedure is based on the following example and assumes the following package and configuration files exist on a computer:
-
-* C:\\Packages\\Contoso\\MyApp.appv
-* C:\\Packages\\Contoso\\DynamicConfigurations\\deploymentconfig.xml
+When you add or set a package to a computer running the App-V client before it's been published, a dynamic deployment configuration file is applied to it. The dynamic deployment configuration file configures the default settings for the package that all users share on the computer running the App-V client. This section will tell you how to use a deployment configuration file.
 
 ## Apply the deployment configuration file with Windows PowerShell
 
@@ -34,7 +31,7 @@ Add-AppVClientPackage -Path C:\Packages\Contoso\MyApp.appv -DynamicDeploymentCon
 ```
 
 >[!NOTE]
->This command captures the resulting object into $pkg. If the package is already present on the computer, the **Set-AppVclientPackage** cmdlet can be used to apply the deployment configuration document:
+>This command captures the resulting object into $pkg. If the package is already present on the computer, you can use the **Set-AppVclientPackage** cmdlet to apply the deployment configuration document:
 
     ```PowerShell
     Set-AppVClientPackage -Name Myapp -Path C:\Packages\Contoso\MyApp.appv -DynamicDeploymentConfiguration C:\Packages\Contoso\DynamicConfigurations\deploymentconfig.xml
