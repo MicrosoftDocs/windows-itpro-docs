@@ -27,7 +27,7 @@ The recommended practice for BitLocker configuration on an operating system driv
 
 ## What are the implications of using the sleep or hibernate power management options?
 
-BitLocker on operating system drives in its basic configuration (with a TPM but without advanced authentication) provides additional security for the hibernate mode. However, BitLocker provides greater security when it is configured to use an advanced authentication mode (TPM+PIN, TPM+USB, or TPM+PIN+USB) with the hibernate mode. This method is more secure because returning from hibernation requires BitLocker authentication. As a best practice, we recommend that sleep mode be disabled and that you use TPM+PIN for the authentication method.
+BitLocker on operating system drives in its basic configuration (with a TPM but without advanced authentication) provides additional security for the hibernate mode. However, BitLocker provides greater security when it is configured to use an advanced authentication mode (TPM+PIN, TPM+USB, or TPM+PIN+USB) with the hibernate mode. This method is more secure because returning from hibernation requires authentication. As a best practice, we recommend that sleep mode be disabled and that you use TPM+PIN for the authentication method. Startup authentication can be configured by using [Group Policy](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings#a-href-idbkmk-unlockpol1arequire-additional-authentication-at-startup) or Mobile Device Management with the [Bitlocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp). 
 
 ## What are the advantages of a TPM?
 
