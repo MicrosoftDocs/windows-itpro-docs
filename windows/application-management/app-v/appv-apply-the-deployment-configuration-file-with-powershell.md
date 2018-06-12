@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 06/12/2018
 ---
 # How to apply the deployment configuration file by using Windows PowerShell
 
@@ -20,12 +20,12 @@ The dynamic deployment configuration file is applied when a package is added or 
 ## Apply the deployment configuration file with Windows PowerShell
 
 >[!NOTE]
->The following procedure is an example that uses the following two file paths for the package and configuration files:
+>The following example cmdlet uses the following two file paths for the package and configuration files:
     >
     >* C:\\Packages\\Contoso\\MyApp.appv
     >* C:\\Packages\\Contoso\\DynamicConfigurations\\deploymentconfig.xml
     >
->If your package and configuration file use different file paths than the example, feel free to replace them as needed.
+>If your package and configuration files use different file paths than the example, feel free to replace them as needed.
 
 To specify a new default set of configurations for all users who will run the package on a specific computer, in a Windows PowerShell console, enter the following cmdlet:
 
@@ -35,10 +35,10 @@ Add-AppVClientPackage -Path C:\Packages\Contoso\MyApp.appv -DynamicDeploymentCon
 
 >[!NOTE]
 >This command captures the resulting object into $pkg. If the package is already present on the computer, the **Set-AppVclientPackage** cmdlet can be used to apply the deployment configuration document:
-    >
-        ```PowerShell
-        Set-AppVClientPackage -Name Myapp -Path C:\Packages\Contoso\MyApp.appv -DynamicDeploymentConfiguration C:\Packages\Contoso\DynamicConfigurations\deploymentconfig.xml
-        ```
+
+    ```PowerShell
+    Set-AppVClientPackage -Name Myapp -Path C:\Packages\Contoso\MyApp.appv -DynamicDeploymentConfiguration C:\Packages\Contoso\DynamicConfigurations\deploymentconfig.xml
+    ```
 
 ## Have a suggestion for App-V?
 

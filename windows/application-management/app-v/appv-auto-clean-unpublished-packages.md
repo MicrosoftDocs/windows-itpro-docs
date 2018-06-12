@@ -1,18 +1,18 @@
 ---
-title: Automatically cleanup unpublished packages on the App-V client (Windows 10)
-description: How to automatically clean-up any unpublished packages on your App-V client devices.
+title: Automatically clean up unpublished packages on the App-V client (Windows 10)
+description: How to automatically clean up any unpublished packages on your App-V client devices.
 author: eross-msft
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 06/12/2018
 ---
 # Automatically clean up unpublished packages on the App-V client
 
 >Applies to: Windows 10, version 1703
 
-Previous versions of App-V have required you to manually remove your unpublished packages from your client devices, to free up additional storage space. Windows 10, version 1703 introduces the ability to use PowerShell or Group Policy settings to automatically clean up your unpublished packages after a device restart.
+If you wanted to free up additional storage space in previous versions of App-V, you would have had to manually remove your unpublished packages from your client devices. Windows 10, version 1703 introduces the ability to use PowerShell or Group Policy settings to automatically clean up your unpublished packages after restarting your device.
 
 ## Clean up with PowerShell cmdlets
 
@@ -20,7 +20,7 @@ You can enter PowerShell cmdlets to turn on the **AutoCleanupEnabled** setting, 
 
 ### Turn on the AutoCleanupEnabled option
 
-1. Open PowerShell as an admin and enter the following cmdlet to turn on the automatic package clean up functionality:
+1. Open PowerShell as an admin and enter the following cmdlet to turn on the automatic package cleanup functionality:
 
     ```PowerShell
     Set-AppvClientConfiguration -AutoCleanupEnabled 1
@@ -32,7 +32,7 @@ You can enter PowerShell cmdlets to turn on the **AutoCleanupEnabled** setting, 
     |---|---|---|
     |AutoCleanupEnabled|1|False|
 
-2. Run the following cmdlet to make sure the configuration is ready to automatically clean up your packages.
+1. Run the following cmdlet to check if the configuration has the cleanup setting turned on.
 
     ```PowerShell
     Get-AppvClientConfiguration
@@ -41,9 +41,9 @@ You can enter PowerShell cmdlets to turn on the **AutoCleanupEnabled** setting, 
 
 ## Clean up with Group Policy settings
 
-Using Group Policy, you can turn on the **Enable automatic clean up of unused App-V packages** setting to automatically clean up your unpublished App-V packages from your App-V client devices.
+Using Group Policy, you can turn on the **Enable automatic cleanup of unused App-V packages** setting to automatically clean up your unpublished App-V packages from your App-V client devices.
 
-### Turn on the Enable automatic clean up of unused App-V packages setting
+### Turn on the Enable automatic cleanup of unused App-V packages setting
 
 1. Open your Group Policy editor and select the **Administrative Templates\System\App-V\PackageManagement\Enable automatic cleanup of unused App-V packages** setting.
 
