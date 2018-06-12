@@ -15,8 +15,8 @@ ms.date: 06/12/2018
 ---
 
 # Inclusive Classroom IT Admin Guide
-The following guide will show you what Inclusive Classroom features are available in which apps and which versions of Office. 
-You will also learn how to deploy apps using Intune, turn on or off Ease of access settings for users, and change how you pay for your Office 365 subscription.
+The following guide will show you what Inclusive Classroom features are available in which apps and which versions of Microsoft Office. 
+You will also learn how to deploy apps using Microsoft Intune, turn on or off Ease of access settings for users, and change how you pay for your Office 365 subscription.
 
 1. [Inclusive Classroom features](#features)
 2. [Deploying apps with Microsoft Intune](#intune)
@@ -64,19 +64,19 @@ You will also learn how to deploy apps using Intune, turn on or off Ease of acce
 Microsoft Intune can be used to deploy apps such as Immersive Reader and Mirosoft Translator to all the computers connected in the same groups.
 1. Go to the <a href="https://admin.manage.microsoft.com" target="_blank">Intune for Education portal</a> and login with your account.
 2. Select the **Apps** page.
-3. Find the app your looking for either in the included list or if it's not there you can select **Add app** and download it from the Microsoft Store.
+3. Find the app you're looking for either in the included list or, if it's not there, you can select **Add app** and download it from the Microsoft Store.
 4. Selecting your app will show you if it has been deployed to any of the groups that have been set up. From the **Groups** page you can select **Change group assignment** and choose which groups you want to deploy the app(s) to.
 
-## <a name="ease"></a>How to disable the Ease of Accesss settings for text in Windows 10
+## <a name="ease"></a>How to disable the Ease of Access settings for text in Windows 10
 The Ease of Access settings in Windows 10 are very useful accessibility tools, but not every one needs them activated for their computer. With the following instructions you can turn off users ability to get to the Ease of access settings.
 1. Go to the <a href="https://admin.manage.microsoft.com" target="_blank">Intune for Education portal</a> and login with your account.
 2. Select the **Groups** page and then select your desired group.
-3. Select **Settings** and under the **User access and device settings** section you find the toggle to set Ease of access to **Blocked** or **Not blocked**.
+3. Select **Settings** and under the **User access and device settings** section you will find the toggle to set **Ease of access** to **Blocked** or **Not blocked**.
 4. Select **Save** after making your selection.
 
 ## <a name="account"></a>How to change your Office 365 account from monthly, semi-annual, or yearly
 Depending on how you plan to do billing, you can have Office 365 accounts that are set to renew monthly, semi-annually, or yearly.
-1. Sign in to your <a href="https://account.microsoft.com/services" target="_blank">services and subscriptions<a/> with your Microsoft account.
+1. Sign-in to your <a href="https://account.microsoft.com/services" target="_blank">services and subscriptions<a/> with your Microsoft account.
 2. Find the subscription in the list, then select **Change how you pay**. 
     >**Note:** If you don't see **Change how you pay**, it could be because auto-renew is not turned on. You won't be able to change how you pay if auto-renew is off because the subscription has already been paid and will end when its duration expires.
 3. Choose a new way to pay from the list or select **Add a new way to pay** and follow the instructions. 
