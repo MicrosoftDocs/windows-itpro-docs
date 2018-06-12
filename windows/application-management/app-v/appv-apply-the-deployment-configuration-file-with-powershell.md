@@ -33,9 +33,9 @@ Add-AppVClientPackage -Path C:\Packages\Contoso\MyApp.appv -DynamicDeploymentCon
 >[!NOTE]
 >This command captures the resulting object into $pkg. If the package is already present on the computer, you can use the **Set-AppVclientPackage** cmdlet to apply the deployment configuration document:
 >
->      ```PowerShell
->      Set-AppVClientPackage -Name Myapp -Path C:\Packages\Contoso\MyApp.appv -DynamicDeploymentConfiguration C:\Packages\Contoso\DynamicConfigurations\deploymentconfig.xml
->      ```
+>  ```PowerShell
+>  Set-AppVClientPackage -Name Myapp -Path C:\Packages\Contoso\MyApp.appv -DynamicDeploymentConfiguration C:\Packages\Contoso\DynamicConfigurations\deploymentconfig.xml
+>  ```
 
 ## Have a suggestion for App-V?
 
