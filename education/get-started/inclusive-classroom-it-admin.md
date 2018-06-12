@@ -1,7 +1,7 @@
 ---
 title: Inclusive Classroom IT Admin Guide
 description: Learning which Inclusive Classroom features are available in which apps and in which versions of Microsoft Office.
-keywords: Test
+keywords: Inclusive Classroom, Admin, Administrator, Microsoft Intune, Intune, Ease of Access, Office 365, account
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -11,12 +11,19 @@ ms.pagetype: edu
 ROBOTS: noindex,nofollow
 author: alhughes
 ms.author: alhughes
-ms.date: 03/18/2018
+ms.date: 06/12/2018
 ---
 
 # Inclusive Classroom IT Admin Guide
+The following guide will show you what Inclusive Classroom features are available in which apps and which versions of Office. 
+You will also learn how to deploy apps using Intune, turn on or off Ease of access settings for users, and change how you pay for your Office 365 subscription.
 
-## Inclusive Classroom features
+1. [Inclusive Classroom features](#features)
+2. [Deploying apps with Microsoft Intune](#intune)
+3. [How to disable the Ease of Accesss settings for text in Windows 10](#ease)
+4. [How to change your Office 365 account from monthly, semi-annual, or yearly](#account)
+
+## <a name="features"></a>Inclusive Classroom features
 |Reading features|Available in which apps|Office 2016 MSI|Office 2019| Office 365 ProPlus Monthly (C2R)  | Office 365 ProPlus Semi Annual (C2R)  | Office 365 ProPlus Annual (C2R)  |
 |---|---|---|---|---|---|---|
 | Read aloud with simultaneous highlighting | <ul><li>OneNote 2016 (add-in), OneNote Online, OneNote for Windows 10, OneNote for iPad, OneNote Mac</li><li>Word 2016, Word Online, Word Mac, Word for iOS</li><li>Outlook 2016, Outlook Web Access</li><li>Office Lens on iOS, Android</li></ul>  |  | <p style="text-align: center;">X</p> <p style="text-align: center;">(Not including Word for iOS, Word Online, Outlook Web Access, or Office Lens)</p>  | <p style="text-align: center;">X</p>  | <p style="text-align: center;">X</p> <p style="text-align: center;">(Not including Outlook PC)</p>  | <p style="text-align: center;">X</p> <p style="text-align: center;">(Not including any OneNote apps or Outlook PC)</p>  | 
@@ -52,3 +59,24 @@ ms.date: 03/18/2018
 |---|---|---|---|---|---|---|
 | Microsoft Translator  | <ul><li>Word 2016</li><li>Excel 2016</li><li>"Translator for Outlook" Add-in</li><li>PowerPoint 2016 (and PowerPoint Garage Add-in)</li></ul>  | <p style="text-align: center;">X</p>  | <p style="text-align: center;">X</p>  | <p style="text-align: center;">X</p>  | <p style="text-align: center;">X</p>  | <p style="text-align: center;">X</p>  |  
 </br>
+
+## <a name="intune"></a>Deploying apps with Microsoft Intune
+Microsoft Intune can be used to deploy apps such as Immersive Reader and Mirosoft Translator to all the computers connected in the same groups.
+1. Go to the <a href="https://admin.manage.microsoft.com" target="_blank">Intune for Education portal</a> and login with your account.
+2. Select the **Apps** page.
+3. Find the app your looking for either in the included list or if it's not there you can select **Add app** and download it from the Microsoft Store.
+4. Selecting your app will show you if it has been deployed to any of the groups that have been set up. From the **Groups** page you can select **Change group assignment** and choose which groups you want to deploy the app(s) to.
+
+## <a name="ease"></a>How to disable the Ease of Accesss settings for text in Windows 10
+The Ease of Access settings in Windows 10 are very useful accessibility tools, but not every one needs them activated for their computer. With the following instructions you can turn off users ability to get to the Ease of access settings.
+1. Go to the <a href="https://admin.manage.microsoft.com" target="_blank">Intune for Education portal</a> and login with your account.
+2. Select the **Groups** page and then select your desired group.
+3. Select **Settings** and under the **User access and device settings** section you find the toggle to set Ease of access to **Blocked** or **Not blocked**.
+4. Select **Save** after making your selection.
+
+## <a name="account"></a>How to change your Office 365 account from monthly, semi-annual, or yearly
+Depending on how you plan to do billing, you can have Office 365 accounts that are set to renew monthly, semi-annually, or yearly.
+1. Sign in to your <a href="https://account.microsoft.com/services" target="_blank">services and subscriptions<a/> with your Microsoft account.
+2. Find the subscription in the list, then select **Change how you pay**. 
+    >**Note:** If you don't see **Change how you pay**, it could be because auto-renew is not turned on. You won't be able to change how you pay if auto-renew is off because the subscription has already been paid and will end when its duration expires.
+3. Choose a new way to pay from the list or select **Add a new way to pay** and follow the instructions. 
