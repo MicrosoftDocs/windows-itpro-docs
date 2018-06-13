@@ -236,14 +236,14 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. This policy allows the IT admin to block users on these managed devices from using Quick Pair and other proximity based scenarios.
+Added in Windows 10, version 1803. This policy allows the IT admin to block users on these managed devices from using Swift Pair and other proximity based scenarios.
 
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:  
 
--   0 - Disallow. Block users on these managed devices from using Quick Pair and other proximity based scenarios
--   1 - Allow. Allow users on these managed devices to use Quick Pair and other proximity based scenarios
+-   0 - Disallow. Block users on these managed devices from using Swift Pair and other proximity based scenarios
+-   1 - Allow. Allow users on these managed devices to use Swift Pair and other proximity based scenarios
 
 <!--/SupportedValues-->
 <!--/Policy-->
