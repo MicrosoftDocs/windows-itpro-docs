@@ -1,7 +1,7 @@
 ---
 title: Onboard previous versions of Windows on Windows Defender ATP
 description: Onboard supported previous versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor
-keywords: onboard, windows, 7, 8, oms, sp1, enterprise, pro, down level
+keywords: onboard, windows, 7, oms, sp1, enterprise, pro, down level
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 06/11/2018
+ms.date: 06/17/2018
 ---
 
 # Onboard Windows previous versions of Windows
@@ -19,15 +19,13 @@ ms.date: 06/11/2018
 
 - Windows 7 SP1 Enterprise
 - Windows 7 SP1 Pro
-- Windows 8.1 Enterprise
-- Windows 8.1 Pro
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
 
-Windows Defender ATP extends support to also include down-level operating systems, providing advanced attack detection and investigation capabilities, seamlessly through the Windows Defender Security Center console.
+Windows Defender ATP extends support to also include down-level operating systems, providing advanced attack detection and investigation capabilities on supported Windows versions.
 
-To onboard down-level Windows client endpoints to Windows Defender ATP, you’ll need to:
+To onboard down-level Windows client endpoints to Windows Defender ATP, you'll need to:
 - Configure and update System Center Endpoint Protection clients.
 - Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Windows Defender ATP as instructed below.
 
