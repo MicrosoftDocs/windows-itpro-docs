@@ -502,8 +502,7 @@ In addition to the endpoints listed for Windows 10 Enterprise, the following end
 | *.search.msn.com | TLSv1.2 | Used to retrieve Windows Spotlight metadata. |
 | *.wac.edgecastcdn.net | TLSv1.2 | Used by the Verizon Content Delivery Network to perform Windows updates. |
 | *.wns.windows.com | TLSv1.2 | Used for the Windows Push Notification Services (WNS). |
-| *prod.do.dsp.mp.microsoft.com | TLSv1.2/
-HTTPS | Used for Windows Update downloads of apps and OS updates. |
+| *prod.do.dsp.mp.microsoft.com | TLSv1.2\/HTTPS | Used for Windows Update downloads of apps and OS updates. |
 | .g.akamaiedge.net | HTTP | Used to check for updates to maps that have been downloaded for offline use. |
 | telecommand.telemetry.microsoft.com | HTTPS | Used by Windows Error Reporting. |
 | 2.dl.delivery.mp.microsoft.com | HTTP | Enables connections to Windows Update. |
@@ -594,8 +593,7 @@ TLSv1.2 | Used to check for updates to maps that have been downloaded for offlin
 | *.wac.edgecastcdn.net | TLSv1.2 | Used by the Verizon Content Delivery Network to perform Windows updates. |
 | *.wac.phicdn.net | HTTP | Used by the Verizon Content Delivery Network to perform Windows updates. |
 | *.wns.windows.com | TLSv1.2 | Used for the Windows Push Notification Services (WNS). |
-| *prod.do.dsp.mp.microsoft.com | TLSv1.2/
-HTTPS | Used for Windows Update downloads of apps and OS updates. |
+| *prod.do.dsp.mp.microsoft.com | TLSv1.2\/HTTPS | Used for Windows Update downloads of apps and OS updates. |
 | 3.dl.delivery.mp.microsoft.com | HTTPS | Enables connections to Windows Update. |
 | 3.dl.delivery.mp.microsoft.com.c.footprint.net | HTTP | Enables connections to Windows Update. |
 | 3.tlu.dl.delivery.mp.microsoft.com | HTTP | Enables connections to Windows Update. |
