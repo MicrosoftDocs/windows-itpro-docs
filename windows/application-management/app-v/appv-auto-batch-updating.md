@@ -41,29 +41,28 @@ Updating multiple apps at the same time requires that you create a **ConfigFile*
         **Example:**
         ```XML
         <?xml version="1.0"?>
-            <Applications>
-                <Application>
-                    <AppName>Skype for Windows Update</AppName>
-                    <InstallerFolder>D:\Install\Update\SkypeforWindows</InstallerFolder>
-                    <Installer>SkypeSetup.exe</Installer>
-                    <InstallerOptions>/S</InstallerOptions>
-                    <Package>C:\App-V_Package\Microsoft_Apps\skypeupdate.appv</Package>
-                    <TimeoutInMinutes>20</TimeoutInMinutes>
-                    <Cmdlet>True</Cmdlet>
-                    <Enabled>True</Enabled>
-                </Application>
-                <Application>
-                    <AppName>Microsoft Power BI Update</AppName>
-                    <InstallerFolder>D:\Install\Update\PowerBI</InstallerFolder>
-                    <Installer>PBIDesktop.msi</Installer>
-                    <InstallerOptions>/S</InstallerOptions>
-                    <Package>C:\App-V_Package\MS_Apps\powerbiupdate.appv</Package>
-                    <TimeoutInMinutes>20</TimeoutInMinutes>
-                    <Cmdlet>True</Cmdlet>
-                    <Enabled>True</Enabled>
-                </Application>
-            </Applications>
-        </xml>
+        <Applications>
+            <Application>
+                <AppName>Skype for Windows Update</AppName>
+                <InstallerFolder>D:\Install\Update\SkypeforWindows</InstallerFolder>
+                <Installer>SkypeSetup.exe</Installer>
+                <InstallerOptions>/S</InstallerOptions>
+                <Package>C:\App-V_Package\Microsoft_Apps\skypeupdate.appv</Package>
+                <TimeoutInMinutes>20</TimeoutInMinutes>
+                <Cmdlet>true</Cmdlet>
+                <Enabled>true</Enabled>
+            </Application>
+            <Application>
+                <AppName>Microsoft Power BI Update</AppName>
+                <InstallerFolder>D:\Install\Update\PowerBI</InstallerFolder>
+                <Installer>PBIDesktop.msi</Installer>
+                <InstallerOptions>/S</InstallerOptions>
+                <Package>C:\App-V_Package\MS_Apps\powerbiupdate.appv</Package>
+                <TimeoutInMinutes>20</TimeoutInMinutes>
+                <Cmdlet>true</Cmdlet>
+                <Enabled>true</Enabled>
+            </Application>
+        </Applications>
         ```
 
 3. Save your completed file under the name **ConfigFile**.
@@ -101,29 +100,28 @@ Updating multipe apps at the same time requires that you create a **ConfigFile**
 
         ```XML
         <?xml version="1.0"?>
-            <Applications>
-                <Application>
-                    <AppName>Skype for Windows Update</AppName>
-                    <InstallerFolder>D:\Install\Update\SkypeforWindows</InstallerFolder>
-                    <Installer>SkypeSetup.exe</Installer>
-                    <InstallerOptions>/S</InstallerOptions>
-                    <Package>C:\App-V_Package\Microsoft_Apps\skypeupdate.appv</Package>
-                    <TimeoutInMinutes>20</TimeoutInMinutes>
-                    <Cmdlet>False</Cmdlet>
-                    <Enabled>True</Enabled>
-                </Application>
-                <Application>
-                    <AppName>Microsoft Power BI Update</AppName>
-                    <InstallerFolder>D:\Install\Update\PowerBI</InstallerFolder>
-                    <Installer>PBIDesktop.msi</Installer>
-                    <InstallerOptions>/S</InstallerOptions>
-                    <Package>C:\App-V_Package\MS_Apps\powerbiupdate.appv</Package>
-                    <TimeoutInMinutes>20</TimeoutInMinutes>
-                    <Cmdlet>False</Cmdlet>
-                    <Enabled>True</Enabled>
-                </Application>
-            </Applications>
-        </xml>
+        <Applications>
+            <Application>
+                <AppName>Skype for Windows Update</AppName>
+                <InstallerFolder>D:\Install\Update\SkypeforWindows</InstallerFolder>
+                <Installer>SkypeSetup.exe</Installer>
+                <InstallerOptions>/S</InstallerOptions>
+                <Package>C:\App-V_Package\Microsoft_Apps\skypeupdate.appv</Package>
+                <TimeoutInMinutes>20</TimeoutInMinutes>
+                <Cmdlet>false</Cmdlet>
+                <Enabled>true</Enabled>
+            </Application>
+            <Application>
+                <AppName>Microsoft Power BI Update</AppName>
+                <InstallerFolder>D:\Install\Update\PowerBI</InstallerFolder>
+                <Installer>PBIDesktop.msi</Installer>
+                <InstallerOptions>/S</InstallerOptions>
+                <Package>C:\App-V_Package\MS_Apps\powerbiupdate.appv</Package>
+                <TimeoutInMinutes>20</TimeoutInMinutes>
+                <Cmdlet>false</Cmdlet>
+                <Enabled>true</Enabled>
+            </Application>
+        </Applications>
         ```   
 
 ### Start the App-V Sequencer interface and app installation process
