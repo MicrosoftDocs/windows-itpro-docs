@@ -15,11 +15,39 @@ ms.date: 03/01/2018
 -   Windows 10
 -   Windows Server 2016
 
+Application execution control can be difficult to implement in enterprises that do not have processes to effectively control the deployment of applications centrally through an IT managed system. 
+In such environments, users are empowered to acquire the applications they need for work, making accounting for all the applications that would need to be authorized for execution control a daunting task.  
 
-```code
+Windows 10, version 1709 (also known as the Windows 10 Fall Creators Update) provides a new option, known as Intelligent Security Graph (ISG) authorization, that allows IT administrators to automatically authorize applications that Microsoft’s ISG recognizes as having known good reputation. The ISG option helps IT organizations take a significant first step towards going from having no application control at all to a simple means of preventing the execution of unknown and known bad software.
+
+## How does the integration between WDAC and the Intelligent Security Graph work? 
+
+The ISG relies on Microsoft’s vast security intelligence and machine learning analytics to help classify applications as having known good reputation. When users download applications on a system with WDAC enabled with the ISG authorization option specified, the reputation of the downloaded file, commonly an installer, is used to determine whether to run the installer and then that original reputation information is passed along to any files that were written by the installer. When any of these files try to execute after they are installed the reputation data is used to help make the right policy authorization decision.   
+
+After that initial download and installation, the WDAC component will check for the presence of the positive reputation information when evaluating other application execution control rules specified in the policy. If there are no deny rules present for the file, it will be authorized based on the known good reputation classification.  
+
+The reputation data on the client is rechecked periodically and enterprises can also specify that any cached reputation results are flushed on reboot.    
+
+>[!NOTE]
+>Admins needs to ensure that there is a WDAC policy in place to allow the system to boot and run any other authorized applications that may not be classified as being known good by the Intelligent Security Graph, for example custom line-of-business (LOB) apps. Since the Intelligent Security Graph is powered by global prevalence data, internal LOB apps may not be recognized as being known good. Other mechanisms like managed installer and explicit rules will help cover internal applications. Both System Center Configuration Manager (SCCM) and Microsoft Intune can be used to create and push a WDAC policy to your client machines.  
+
+Other examples of WDAC policies are available in C:\Windows\schemas\CodeIntegrity\ExamplePolicies and can help authorize Windows OS components, WHQL signed drivers and all Store apps. Admins can reference and customize them as needed for their Windows Defender Application Control deployment or [create a custom WDAC policy](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/create-initial-default-policy). 
+
+## Configuring Intelligent Security Graph authorization for Windows Defender Application Control 
+
+Setting up the ISG authorization is easy regardless of what management solution you use. Configuring the ISG option involves these basic steps: 
+
+- [Ensure that the ISG option is enabled in the WDAC policy XML](#ensure-that-the-intelligent-security-graph-option-is-enabled-in-the-wdac-policy-xml) 
+- [Enable the necessary services to allow WDAC to use the ISG correctly on the client](#enable-the-necessary-services-to-allow-wdac-to-use-the-isg-correctly-on-the-client) 
+
+### Ensure that the Intelligent Security Graph option is enabled in the WDAC policy XML 
+
+In order to enable trust for executables based on classifications in the ISG, the Enabled: Intelligent Security Graph authorization option must be specified in the WDAC policy. This can be done with the Set-RuleOption cmdlet. In addition it is recommended from a security perspective to also enable the Enabled:Invalidate EAs on Reboot option to invalidate the cached ISG results on reboot to force rechecking of applications against the ISG. Caution is advised if devices will regularly transition to and from environments that may not be able to access the ISG. An example of both options being set is shown below. 
+
+<pre>
 <Rules> 
     <Rule> 
-      <Option><b>Enabled:Unsigned System Integrity Policy</b></Option> 
+      <Option>Enabled:Unsigned System Integrity Policy</Option> 
     </Rule> 
     <Rule> 
       <Option>Enabled:Advanced Boot Options Menu</Option> 
@@ -27,12 +55,12 @@ ms.date: 03/01/2018
     <Rule> 
       <Option>Required:Enforce Store Applications</Option> 
     </Rule> 
-    <Rule> 
-      <Option>Enabled:UMCI</Option> 
-    </Rule> 
-    <Rule> 
-      <Option>Enabled:Managed Installer</Option> 
-    </Rule> 
+    <b><Rule></b> 
+      <b><Option>Enabled:UMCI</Option></b> 
+    <b></Rule></b> 
+    <b><Rule></b> 
+      <b><Option>Enabled:Managed Installer</Option></b> 
+    <b></Rule></b> 
     <Rule> 
       <Option>Enabled:Intelligent Security Graph Authorization</Option> 
     </Rule> 
@@ -40,103 +68,30 @@ ms.date: 03/01/2018
       <Option>Enabled:Invalidate EAs on Reboot</Option> 
     </Rule> 
 </Rules> 
+</pre>
+
+### Enable the necessary services to allow WDAC to use the ISG correctly on the client
+
+In order for the heuristics used by the ISG to function properly, a number of component in Windows need to be enabled. The easiest way to do this is to run the appidtel executable in c:\windows\system32.
+
+```
+appidtel start
 ```
 
-## Enable service enforcement in AppLocker policy
+For WDAC policies deployed over MDM using the AppLocker CSP this step is not required as the CSP will enable the necessary components. ISG enabled through the SCCM WDAC UX will not need this step but if custom policies are being deployed outside of the WDAC UX through SCCM then this step is required.   
 
-Since many installation processes rely on services, it is typically necessary to enable tracking of services. 
-Correct tracking of services requires the presence of at least one rule in the rule collection – a simple audit only rule will suffice. 
-For example:
+## Security considerations with using the Intelligent Security Graph 
 
-```code
-<RuleCollection Type="Dll" EnforcementMode="AuditOnly" >
-    <FilePathRule Id="86f235ad-3f7b-4121-bc95-ea8bde3a5db5" Name="Dummy Rule" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePathCondition Path="%OSDRIVE%\ThisWillBeBlocked.dll" />
-      </Conditions>
-    </FilePathRule>
-    <RuleCollectionExtensions>
-      <ThresholdExtensions>
-        <Services EnforcementMode="Enabled" />
-      </ThresholdExtensions>
-      <RedstoneExtensions>
-        <SystemApps Allow="Enabled"/>
-      </RedstoneExtensions>
-    </RuleCollectionExtensions>
-  </RuleCollection>
-  <RuleCollection Type="Exe" EnforcementMode="AuditOnly">
-    <FilePathRule Id="9420c496-046d-45ab-bd0e-455b2649e41e" Name="Dummy Rule" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePathCondition Path="%OSDRIVE%\ThisWillBeBlocked.exe" />
-      </Conditions>
-    </FilePathRule>
-    <RuleCollectionExtensions>
-      <ThresholdExtensions>
-        <Services EnforcementMode="Enabled" />
-      </ThresholdExtensions>
-      <RedstoneExtensions>
-        <SystemApps Allow="Enabled"/>
-      </RedstoneExtensions>
-    </RuleCollectionExtensions>
-  </RuleCollection>
-```
+Since the ISG is a heuristic-based mechanism, it does not provide the same security guarantees that explicit allow or deny rules do. It is best suited for deployment to systems where each user is configured as a standard user and there are other monitoring systems in place like Windows Defender Advanced Threat Protection to help provide optics into what users are doing. 
 
-### Enable the managed installer option in WDAC policy
+Users with administrator privileges or malware running as an administrator user on the system may be able to circumvent the intent of WDAC when the ISG option is allowed by circumventing or corrupting the heuristics used to assign reputation to application executables. The ISG option uses the same heuristic tracking as managed installer and so for application installers that include an option to automatically run the application at the end of the installation process the heuristic may over-authorize.  
 
-In order to enable trust for the binaries laid down by managed installers, the Allow: Managed Installer option must be specified in your WDAC policy.
-This can be done by using the [Set-RuleOption cmdlet](https://docs.microsoft.com/powershell/module/configci/set-ruleoption). 
-An example of the managed installer option being set in policy is shown below.
+## Known limitations with using the Intelligent Security Graph
 
-```code
-<Rules>  
-    <Rule>  
-      <Option>Enabled:Unsigned System Integrity Policy</Option>  
-    </Rule>  
-    <Rule>  
-      <Option>Enabled:Advanced Boot Options Menu</Option>  
-    </Rule>  
-    <Rule>  
-      <Option>Enabled:UMCI</Option>  
-    </Rule>  
-    <Rule>  
-      <Option>Enabled:Inherit Default Policy</Option>  
-    </Rule>
-    <Rule>  
-      <Option>Enabled:Managed Installer </Option>  
-    </Rule>  
-  </Rules>  
-```
+Since the ISG relies on identifying executables as being known good there are cases where it may classify legitimate executables as unknown leading to blocks that need to be resolved either with a rule in the WDAC policy, a catalog signed by a certificate trusted in WDAC policy or by deployment through a WDAC managed installer. Typically this is due to an installer or application using a dynamic file as part of execution. These files do not tend to build up known good reputation. Auto-updating applications have also been observed using this mechanism and may be flagged by the ISG.  
 
-## Security considerations with managed installer
+Modern apps are not supported with the ISG heuristic and will need to be separately authorized in your WDAC policy. As modern apps are signed by the Microsoft Store and Microsoft Store for Business it is straightforward to authorize modern apps with signer rules in the WDAC policy.
 
-Since managed installer is a heuristic-based mechanism, it does not provide the same security guarantees that explicit allow or deny rules do. 
-It is best suited for deployment to systems where each user is configured as a standard user and where all software is deployed and installed by a software distribution solution, such as System Center Configuration Manager. 
+The ISG heuristic does not authorize kernel mode drivers. The WDAC policy must have rules that allow the necessary drivers to run.  
 
-Users with administrator privileges or malware running as an administrator user on the system may be able to circumvent the intent of Windows Defender Application Control when the managed installer option is allowed. 
-If the authorized managed installer process performs installations in the context of a user with standard privileges, then it is possible that standard users or malware running as standard user may be able to circumvent the intent of Windows Defender Application Control. 
-Some application installers include an option to automatically run the application at the end of the installation process. If this happens when the installer is run by a managed installer, then the managed installer's heuristic tracking and authorization may continue to apply to all files created during the first run of the application. This could result in over-authorization for executables that were not intended.
-To avoid this, ensure that the application deployment solution being used as a managed installer limits running applications as part of installation.   
-
-## Known limitations with managed installer
-
-- Application execution control based on managed installer does not support applications that self-update. 
-If an application deployed by a managed installer subsequently updates itself, the updated application files will no longer include the managed installer origin information and will not be authorized to run. 
-Enterprises should deploy and install all application updates using the managed installer. 
-In some cases, it may be possible to also designate an application binary that performs the self-updates as a managed installer. 
-Proper review for functionality and security should be performed for the application before using this method. 
-
-- Although WDAC policies can be deployed in both audit and enforced mode, the managed installer option is currently only recommended for use with policies set to enforced except in lab environments. 
-Using the managed installer option with WDAC policies set to audit only may result in unexpected behavior if the policy is subsequently changed to enforced mode. 
-
-- Modern apps deployed through a managed installer will not be tracked by the managed installer heuristic and will need to be separately authorized in your WDAC policy.
-
-- Executables that extract files and then attempt to execute may not be allowed by the managed installer heuristic. 
-In some cases, it may be possible to also designate an application binary that performs such an operation as a managed installer. 
-Proper review for functionality and security should be performed for the application before using this method.
-
-- The managed installer heuristic does not authorize drivers. 
-The WDAC policy must have rules that allow the necessary drivers to run.  
-
-- In some cases, the code integrity logs where WDAC errors and warnings are written will contain error events for native images generated for .NET assemblies. 
-Typically, the error is functionally benign as a blocked native image will result in the corresponding assembly being re-interpreted. 
-Review for functionality and performance for the related applications using the native images maybe necessary in some cases. 
+In some cases, the code integrity logs where WDAC errors and warnings are written will contain error events for native images generated for .NET assemblies. Typically, the error is functionally benign as a blocked native image will result in the corresponding assembly being re-interpreted. Review for functionality and performance for the related applications using the native images maybe necessary in some cases. 
