@@ -10,12 +10,18 @@ ms.localizationpriority: high
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 05/31/2018
+ms.date: 06/05/2018
 ---
 
 # Change history for Configure Windows 10
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
+
+## June 2018
+
+New or changed topic | Description
+--- | ---
+[Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](setup-kiosk-digital-signage.md) and [Create a Windows 10 kiosk that runs multiple apps](lock-down-windows-10-to-specific-apps.md)  | Updated instructions for using Microsoft Intune to configure a kiosk.
 
 ## May 2018
 

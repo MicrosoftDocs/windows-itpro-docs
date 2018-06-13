@@ -1,9 +1,7 @@
 ---
 title: Microsoft Layout
 description: How to get and deploy the Microsoft Layout app throughout your organization
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.pagetype: hololens, devices
+ms.prod: hololens
 ms.sitesec: library
 author: alhopper-msft
 ms.author: alhopper

@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/24/2018
+ms.date: 06/04/2018
 ---
 
 # Minimum requirements for Windows Defender ATP
@@ -43,7 +43,7 @@ Windows Defender Advanced Threat Protection requires one of the following Micros
 For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us/Licensing/product-licensing/windows10.aspx#tab=2).
 
 ### Network and data storage and configuration requirements
-When you run the onboarding wizard for the first time, you must choose where your Windows Defender Advanced Threat Protection-related information is stored: either in a European or United States datacenter.
+When you run the onboarding wizard for the first time, you must choose where your Windows Defender Advanced Threat Protection-related information is stored: in the United Kingdom, Europe, or United States datacenter.
 
 > [!NOTE]
 > -   You cannot change your data storage location after the first-time setup.

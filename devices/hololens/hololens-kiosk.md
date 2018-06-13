@@ -1,9 +1,7 @@
 ---
 title: Set up HoloLens in kiosk mode (HoloLens)
 description: Use a kiosk configuration to lock down the apps on HoloLens. 
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.pagetype: hololens, devices
+ms.prod: hololens
 ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker

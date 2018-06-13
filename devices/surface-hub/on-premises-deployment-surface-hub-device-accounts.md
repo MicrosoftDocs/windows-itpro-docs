@@ -3,14 +3,11 @@ title: On-premises deployment single forest (Surface Hub)
 description: This topic explains how you add a device account for your Microsoft Surface Hub when you have a single-forest, on-premises deployment.
 ms.assetid: 80E12195-A65B-42D1-8B84-ECC3FCBAAFC6
 keywords: single forest deployment, on prem deployment, device account, Surface Hub
-ms.prod: w10
-ms.mktglfcycl: deploy
+ms.prod: surface-hub
 ms.sitesec: library
-ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.topic: article
-ms.date: 04/13/2018
+ms.date: 06/01/2018
 ms.localizationpriority: medium
 ---
 
@@ -105,10 +102,54 @@ If you have a single-forest on-premises deployment with Microsoft Exchange 2013 
     Set-CsMeetingRoom  -Identity HUB01 -DomainController DC-ND-001.contoso.com -LineURI “tel:+14255550555;ext=50555"  -EnterpriseVoiceEnabled $true
     ```
 
-    Again, you'll need to replace the provided domain controller and phone number examples with your own information. The parameter value `$true` stays the same.
+    Again, you need to replace the provided domain controller and phone number examples with your own information. The parameter value `$true` stays the same.
     
 
- 
+ ## Disable anonymous email and IM
+
+
+>[!WARNING]
+>This information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+Surface Hub uses a device account to provide email and collaboration services (IM, video, voice). This device account is used as the originating identity (the “from” party) when sending email, IM, and placing calls. As this account is not coming from an individual, identifiable user, it is deemed “anonymous” because it originated from the Surface Hub's device account.  
+
+Assume you have a per-user client policy assigned to each meeting room device with an identity of **SurfaceHubPolicy**. To disable anonymous email and messaging, you add a clientPolicyEntry to this client policy by using the following commands.
+
+```
+$policyEntry = New-CsClientPolicyEntry -Name AllowResourceAccountSendMessage -value $false
+$clientPolicy = Get-CsClientPolicy -Identity SurfaceHubPolicy
+$clientPolicy.PolicyEntry.Add($policyEntry)
+Set-CsClientPolicy -Instance $clientPolicy
+```
+
+To verify that the policy has been set:
+
+```
+Select-Object -InputObject $clientPolicy -Property PolicyEntry
+```
+
+The output should be:
+
+```
+PolicyEntry
+-----------
+{Name=AllowResourceAccountSendMessage;Value=False}
+```
+	
+	
+To change the policy entry:
+
+```
+$policyEntry =  New-CsClientPolicyEntry -Name AllowResourceAccountSendMessage -value $true
+$clientPolicy | Set-CsClientPolicy -PolicyEntry @{Replace = $policyEntry}
+```	
+	
+To remove the policy entry:
+
+```
+$policyEntry = New-CsClientPolicyEntry -Name AllowResourceAccountSendMessage -value $true
+$clientPolicy | Set-CsClientPolicy -PolicyEntry @{Remove = $policyEntry}
+```
 
  
 
