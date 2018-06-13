@@ -22,7 +22,7 @@ Windows 10, version 1709 (also known as the Windows 10 Fall Creators Update) pro
 
 ## How does the integration between WDAC and the Intelligent Security Graph work? 
 
-The ISG relies on Microsoft’s vast security intelligence and machine learning analytics to help classify applications as having known good reputation. When users download applications on a system with WDAC enabled with the ISG authorization option specified, the reputation of the downloaded file, commonly an installer, is used to determine whether to run the installer and then that original reputation information is passed along to any files that were written by the installer. When any of these files try to execute after they are installed the reputation data is used to help make the right policy authorization decision.   
+The ISG relies on Microsoft’s vast security intelligence and machine learning analytics to help classify applications as having known good reputation. When users download applications on a system with WDAC enabled with the ISG authorization option specified, the reputation of the downloaded file, commonly an installer, is used to determine whether to run the installer and then that original reputation information is passed along to any files that were written by the installer. When any of these files try to execute after they are installed, the reputation data is used to help make the right policy authorization decision.   
 
 After that initial download and installation, the WDAC component will check for the presence of the positive reputation information when evaluating other application execution control rules specified in the policy. If there are no deny rules present for the file, it will be authorized based on the known good reputation classification.  
 
@@ -42,9 +42,9 @@ Setting up the ISG authorization is easy regardless of what management solution 
 
 ### Ensure that the Intelligent Security Graph option is enabled in the WDAC policy XML 
 
-In order to enable trust for executables based on classifications in the ISG, the Enabled: Intelligent Security Graph authorization option must be specified in the WDAC policy. This can be done with the Set-RuleOption cmdlet. In addition it is recommended from a security perspective to also enable the Enabled:Invalidate EAs on Reboot option to invalidate the cached ISG results on reboot to force rechecking of applications against the ISG. Caution is advised if devices will regularly transition to and from environments that may not be able to access the ISG. An example of both options being set is shown below. 
+In order to enable trust for executables based on classifications in the ISG, the **Enabled: Intelligent Security Graph authorization** option must be specified in the WDAC policy. This can be done with the Set-RuleOption cmdlet. In addition, it is recommended from a security perspective to also enable the **Enabled:Invalidate EAs on Reboot** option to invalidate the cached ISG results on reboot to force rechecking of applications against the ISG. Caution is advised if devices will regularly transition to and from environments that may not be able to access the ISG. The following example shows both options being set. 
 
-<pre>
+```code
 <Rules> 
     <Rule> 
       <Option>Enabled:Unsigned System Integrity Policy</Option> 
@@ -55,12 +55,12 @@ In order to enable trust for executables based on classifications in the ISG, th
     <Rule> 
       <Option>Required:Enforce Store Applications</Option> 
     </Rule> 
-    <b><Rule></b> 
-      <b><Option>Enabled:UMCI</Option></b> 
-    <b></Rule></b> 
-    <b><Rule></b> 
-      <b><Option>Enabled:Managed Installer</Option></b> 
-    <b></Rule></b> 
+    <Rule>
+      <Option>Enabled:UMCI</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Managed Installer</Option> 
+    </Rule>
     <Rule> 
       <Option>Enabled:Intelligent Security Graph Authorization</Option> 
     </Rule> 
@@ -68,7 +68,7 @@ In order to enable trust for executables based on classifications in the ISG, th
       <Option>Enabled:Invalidate EAs on Reboot</Option> 
     </Rule> 
 </Rules> 
-</pre>
+```
 
 ### Enable the necessary services to allow WDAC to use the ISG correctly on the client
 
@@ -88,9 +88,9 @@ Users with administrator privileges or malware running as an administrator user 
 
 ## Known limitations with using the Intelligent Security Graph
 
-Since the ISG relies on identifying executables as being known good there are cases where it may classify legitimate executables as unknown leading to blocks that need to be resolved either with a rule in the WDAC policy, a catalog signed by a certificate trusted in WDAC policy or by deployment through a WDAC managed installer. Typically this is due to an installer or application using a dynamic file as part of execution. These files do not tend to build up known good reputation. Auto-updating applications have also been observed using this mechanism and may be flagged by the ISG.  
+Since the ISG relies on identifying executables as being known good, there are cases where it may classify legitimate executables as unknown, leading to blocks that need to be resolved either with a rule in the WDAC policy, a catalog signed by a certificate trusted in the WDAC policy or by deployment through a WDAC managed installer. Typically, this is due to an installer or application using a dynamic file as part of execution. These files do not tend to build up known good reputation. Auto-updating applications have also been observed using this mechanism and may be flagged by the ISG.  
 
-Modern apps are not supported with the ISG heuristic and will need to be separately authorized in your WDAC policy. As modern apps are signed by the Microsoft Store and Microsoft Store for Business it is straightforward to authorize modern apps with signer rules in the WDAC policy.
+Modern apps are not supported with the ISG heuristic and will need to be separately authorized in your WDAC policy. As modern apps are signed by the Microsoft Store and Microsoft Store for Business. it is straightforward to authorize modern apps with signer rules in the WDAC policy.
 
 The ISG heuristic does not authorize kernel mode drivers. The WDAC policy must have rules that allow the necessary drivers to run.  
 
