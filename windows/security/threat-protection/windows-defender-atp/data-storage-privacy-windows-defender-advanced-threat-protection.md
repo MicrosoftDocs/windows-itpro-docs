@@ -27,7 +27,7 @@ This section covers some of the most frequently asked questions regarding privac
 
 ## What data does Windows Defender ATP collect?
 
-Windows Defender ATP will collect and store information from your configured machines in a customer dedicate and segregated tenant specific to the service for administration, tracking, and reporting purposes. 
+Windows Defender ATP will collect and store information from your configured machines in a customer dedicated and segregated tenant specific to the service for administration, tracking, and reporting purposes. 
 
 Information collected includes file data (such as file names, sizes, and hashes), process data (running processes, hashes), registry data, network connection data (host IPs and ports), and machine details (such as machine identifiers, names, and the operating system version).
 
