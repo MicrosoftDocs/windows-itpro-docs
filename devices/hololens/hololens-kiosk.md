@@ -93,7 +93,7 @@ You will [create an XML file](#ppkg-kiosk) to define the kiosk configuration to 
 <span id="intune-kiosk"/>
 ## Set up kiosk mode using Microsoft Intune or MDM (Windows 10, version 1803)
 
-For HoloLens devices that are managed by Microsoft Intune, you [create a device restriction profile](https://docs.microsoft.com/intune/device-profile-create) and configure the [Kiosk (Preview) settings](https://docs.microsoft.com/intune/device-restrictions-windows-holographic#kiosk-preview).
+For HoloLens devices that are managed by Microsoft Intune, you [create a device profile](https://docs.microsoft.com/intune/device-profile-create) and configure the [Kiosk settings](https://docs.microsoft.com/intune/kiosk-settings).
 
 For other MDM services, check your provider's documentation for instructions. If you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service, [create an XML file that defines the kiosk configuration](#create-xml-file), and make sure to include the [Start layout](#start-layout-for-a-provisioning-package) in the XML file.  
 
@@ -213,8 +213,7 @@ Use the following snippet in your kiosk configuration XML to enable the **Guest*
 
 ## More information
 
-Watch how to configure a kiosk in Microsoft Intune.
->[!VIDEO https://www.microsoft.com/videoplayer/embed/ce9992ab-9fea-465d-b773-ee960b990c4a?autoplay=false]
+
 
 Watch how to configure a kiosk in a provisioning package.
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
