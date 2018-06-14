@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 author: mdsakibMSFT
-ms.date: 03/01/2018
+ms.date: 06/14/2018
 ---
 
 # Use Windows Defender Application Control (WDAC) with the Microsoft Intelligent Security Graph 
@@ -42,7 +42,7 @@ Setting up the ISG authorization is easy regardless of what management solution 
 
 ### Ensure that the Intelligent Security Graph option is enabled in the WDAC policy XML 
 
-In order to enable trust for executables based on classifications in the ISG, the **Enabled: Intelligent Security Graph authorization** option must be specified in the WDAC policy. This can be done with the Set-RuleOption cmdlet. In addition, it is recommended from a security perspective to also enable the **Enabled:Invalidate EAs on Reboot** option to invalidate the cached ISG results on reboot to force rechecking of applications against the ISG. Caution is advised if devices will regularly transition to and from environments that may not be able to access the ISG. The following example shows both options being set. 
+In order to enable trust for executables based on classifications in the ISG, the **Enabled:Intelligent Security Graph authorization** option must be specified in the WDAC policy. This can be done with the Set-RuleOption cmdlet. In addition, it is recommended from a security perspective to also enable the **Enabled:Invalidate EAs on Reboot** option to invalidate the cached ISG results on reboot to force rechecking of applications against the ISG. Caution is advised if devices will regularly transition to and from environments that may not be able to access the ISG. The following example shows both options being set. 
 
 ```code
 <Rules> 
