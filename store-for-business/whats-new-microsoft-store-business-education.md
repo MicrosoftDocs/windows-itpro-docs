@@ -68,7 +68,7 @@ We’ve been working on bug fixes and performance improvements to provide you a 
 - Bug fixes and performance improvements
 
 [October 2017](release-history-microsoft-store-business-education.md#october-2017)
-- Bug fixes and permformance improvements 
+- Bug fixes and performance improvements 
 
 [September 2017](release-history-microsoft-store-business-education.md#september-2017)
 - Manage Windows device deployment with Windows Autopilot Deployment
