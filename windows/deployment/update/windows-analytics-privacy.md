@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 04/05/2018
+ms.date: 06/20/2018
 ms.localizationpriority: high
 ---
 
@@ -37,6 +37,7 @@ The data flow sequence is as follows:
 
 See these topics for additional background information about related privacy issues:
 
+- [Windows 10 and the GDPR for IT Decision Makers](https://docs.microsoft.com/windows/privacy/gdpr-it-guidance)
 - [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization)
 - [Windows 7, Windows 8, and Windows 8.1 Appraiser Telemetry Events, and Fields](https://go.microsoft.com/fwlink/?LinkID=822965) (link downloads a PDF file)
 - [Windows 10, version 1703 basic level Windows diagnostic events and fields](https://docs.microsoft.com/windows/configuration/basic-level-windows-diagnostic-events-and-fields-1703)
@@ -44,7 +45,7 @@ See these topics for additional background information about related privacy iss
 - [Diagnostic Data Viewer Overview](https://docs.microsoft.com/windows/configuration/diagnostic-data-viewer-overview)
 - [Licensing Terms and Documentation](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Learn about security and privacy at Microsoft datacenters](http://www.microsoft.com/datacenters)
-- [Confidence in the trusted cloud](https://azure.microsoft.com/en-us/support/trust-center/) 
+- [Confidence in the trusted cloud](https://azure.microsoft.com/en-us/support/trust-center/)
 
 ### Can Windows Analytics be used without a direct client connection to the Microsoft Data Management Service?
 No, the entire service is powered by Windows diagnostic data, which requires that devices have this direct connectivity.
