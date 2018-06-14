@@ -42,7 +42,8 @@ If you use [MDM, Microsoft Intune](#intune-kiosk), or a [provisioning package](#
 >[!NOTE]
 >Because a single-app kiosk launches the kiosk app when a user signs in, there is no Start screen displayed.
 
-### Start layout file for Intune
+<span id="start-layout-file-for-intune" />
+### Start layout file for MDM (Intune and others)
 
 Save the following sample as an XML file. You will select this file when you configure the kiosk in Microsoft Intune (or in another MDM service that provides a kiosk profile).
 
