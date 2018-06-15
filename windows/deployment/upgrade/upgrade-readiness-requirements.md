@@ -5,7 +5,7 @@ keywords: windows analytics, oms, operations management suite, prerequisites, re
 ms.prod: w10
 author: jaimeo
 ms.author:
-ms.date: 03/15/2018
+ms.date: 06/12/2018
 ms.localizationpriority: high
 ---
 
@@ -21,7 +21,7 @@ To perform an in-place upgrade, user computers must be running the latest versio
 
 The compatibility update that sends diagnostic data from user computers to Microsoft data centers works with Windows 7 SP1 and Windows 8.1 only. Upgrade Readiness cannot evaluate Windows XP or Windows Vista for upgrade eligibility.
 
-<!--With Windows 10, edition 1607, the compatibility update KB is installed automatically.-->
+<!--With Windows 10, edition 1607, the compatibility update is installed automatically.-->
 
 If you need to update user computers to Windows 7 SP1 or Windows 8.1, use Windows Update or download and deploy the applicable package from the Microsoft Download Center.
 
@@ -32,19 +32,20 @@ See [Windows 10 Specifications](http://www.microsoft.com/en-US/windows/windows-1
 ### Windows 10
 
 Keeping Windows 10 up to date involves deploying a feature update, and Upgrade Readiness tools help you prepare and plan for these Windows updates.
-The latest cumulative updates must be installed on Windows 10 computers to make sure that the required compatibility updates are installed.  You can find the latest cumulative update on the [Microsoft Update Catalog](https://catalog.update.microsoft.com). 
+The latest cumulative updates must be installed on Windows 10 computers to make sure that the required compatibility updates are installed. You can find the latest cumulative update on the [Microsoft Update Catalog](https://catalog.update.microsoft.com). 
 
 While Upgrade Readiness can be used to assist with updating devices from Windows 10 Long-Term Servicing Channel (LTSC) to Windows 10 Semi-Annual Channel, Upgrade Readiness does not support updates to Windows 10 LTSC. The Long-Term Servicing Channel of Windows 10 is not intended for general deployment, and does not receive feature updates, therefore it is not a supported target with Upgrade Readiness. See [Windows as a service overview](../update/waas-overview.md#long-term-servicing-channel) to understand more about LTSC.
 
-## Operations Management Suite
+## Operations Management Suite or Azure Log Analytics
 
-Upgrade Readiness is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud based services for managing on premise and cloud computing environments. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/).
+Upgrade Readiness is offered as a solution in Microsoft Operations Management Suite (OMS) and Azure Log Analytics, a collection of cloud based services for managing on premise and cloud computing environments. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/) or the Azure [Log Analytics overview](https://azure.microsoft.com/services/log-analytics/).
 
-If you’re already using OMS, you’ll find Upgrade Readiness in the Solutions Gallery. Click the Upgrade Readiness tile in the gallery and then click Add on the solution’s details page. Upgrade Readiness is now visible in your workspace.
+If you’re already using OMS or Azure Log Analytics, you’ll find Upgrade Readiness in the Solutions Gallery. Click the **Upgrade Readiness** tile in the gallery and then click **Add** on the solution’s details page. Upgrade Readiness is now visible in your workspace. You can also 
 
-If you are not using OMS, go to the [Upgrade Readiness page](https://www.microsoft.com/en-us/windowsforbusiness/simplified-updates) on Microsoft.com and select **Sign up** to kick off the OMS onboarding process. During the onboarding process, you’ll create an OMS workspace and add the Upgrade Readiness solution to it.
+If you are not using OMS or Azure Log Analytics, go to [Log Analytics](https://azure.microsoft.com/services/log-analytics/) on Microsoft.com and select **Start free** to start the setup process. During the process, you’ll create a workspace and add the Upgrade Readiness solution to it.
 
-Important: You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory, use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS. You also need an Azure subscription to link to your OMS workspace.  The account you used to create the workspace must have administrator permissions on the Azure subscription in order to link the workspace to the Azure account.  Once the link has been established, you can revoke the administrator permissions.
+>[!IMPORTANT]
+>You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory, use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS. You also need an Azure subscription to link to your OMS workspace. The account you used to create the workspace must have administrator permissions on the Azure subscription in order to link the workspace to the Azure account. Once the link has been established, you can revoke the administrator permissions.
 
 ## System Center Configuration Manager integration
 
