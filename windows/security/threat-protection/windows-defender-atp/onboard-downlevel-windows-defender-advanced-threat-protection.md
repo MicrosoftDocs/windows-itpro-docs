@@ -42,6 +42,7 @@ Windows Defender ATP integrates with System Center Endpoint Protection to provid
 The following steps are required to enable this integration: 
 >[!NOTE]
 >Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro.
+
 - Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/en-us/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
 - Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting
 
