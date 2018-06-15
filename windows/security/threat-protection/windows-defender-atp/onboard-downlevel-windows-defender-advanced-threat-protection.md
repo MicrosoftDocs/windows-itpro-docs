@@ -13,18 +13,19 @@ ms.localizationpriority: high
 ms.date: 06/17/2018
 ---
 
-# Onboard Windows previous versions of Windows
+# Onboard previous versions of Windows
 
 **Applies to:**
 
 - Windows 7 SP1 Enterprise
 - Windows 7 SP1 Pro
-- Windows 8.1
+- Windows 8.1 Pro
+- Windows 8.1 Enterprise
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
 
-Windows Defender ATP extends support to also include down-level operating systems, providing advanced attack detection and investigation capabilities on supported Windows versions.
+Windows Defender ATP extends support to include down-level operating systems, providing advanced attack detection and investigation capabilities on supported Windows versions.
 
 To onboard down-level Windows client endpoints to Windows Defender ATP, you'll need to:
 - Configure and update System Center Endpoint Protection clients.
@@ -40,9 +41,6 @@ To onboard down-level Windows client endpoints to Windows Defender ATP, you'll n
 Windows Defender ATP integrates with System Center Endpoint Protection to provide visibility to malware detections and to stop propagation of an attack in your organization by banning potentially malicious files or suspected malware. 
 
 The following steps are required to enable this integration: 
->[!NOTE]
->Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro.
-
 - Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/en-us/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
 - Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting
 
@@ -50,8 +48,12 @@ The following steps are required to enable this integration:
 
 ### Before you begin
 Review the following details to verify minimum system requirements:
-- Install the [February monthly update rollout](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598) 
+- Install the [February monthly update rollout](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
+  >[!NOTE]
+  >Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro. 
 - Install the [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
+  >[!NOTE]
+  >Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro.
 - Meet the Azure Log Analytics agent minimum system requirements. For more information, see [Collect data from computers in you environment with Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
 
 1. Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603) or [Windows 32-bit agent](https://go.microsoft.com/fwlink/?LinkId=828604).
@@ -63,16 +65,16 @@ Review the following details to verify minimum system requirements:
 
 3. Using the Workspace ID and Workspace key choose any of the following installation methods to install the agent:
     - Manually install the agent using setup<br>
-      On the **Agent Setup Options** page, select **Connect the agent to Azure Log Analytics (OMS)
-    - [Install the agent using command line](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-agent-windows#install-the-agent-using-the-command-line) and [configure the agent using a script](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-agent-windows#add-a-workspace-using-a-script).
+      On the **Agent Setup Options** page, select **Connect the agent to Azure Log Analytics (OMS)**
+    - [Install the agent using command line](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-agent-windows#install-the-agent-using-the-command-line) and [configure the agent using a script](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-agent-windows#add-a-workspace-using-a-script)
 
-4. If you're using a proxy server to connect to the Internet see the Configure proxy settings section.
+4. If you're using a proxy to connect to the Internet see the Configure proxy settings section.
 
-Once completed, you should see onboarded servers in the portal within an hour.
+Once completed, you should see onboarded endpoints in the portal within an hour.
 
-### Configure server proxy and Internet connectivity settings
+### Configure proxy and Internet connectivity settings
  
-- Each Windows server must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the [OMS Gateway](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-oms-gateway).
+- Each Windows endpoint must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the [OMS Gateway](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-oms-gateway).
 - If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service:
 
 Agent Resource    |    Ports 
