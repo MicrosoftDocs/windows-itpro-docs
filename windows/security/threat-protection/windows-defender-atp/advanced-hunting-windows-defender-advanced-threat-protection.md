@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/24/2018
+ms.date: 06/13/2018
 ---
 
 # Query data using Advanced hunting in Windows Defender ATP
@@ -53,6 +53,8 @@ We then add a filter on the _FileName_  to contain only instances of _powershell
 
 Afterwards, we add a filter on the _ProcessCommandLine_
 Finally, we  project only the columns we're interested in exploring and limit the results to 100 and click **Run query**.
+
+You have the option of expanding the screen view so you can focus on your hunting query and related results.
 
 ### Use operators
 The query language is very powerful and has a lot of available operators, some of them are - 
