@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 06/04/2018
+ms.date: 06/15/2018
 ---
 
 # Minimum requirements for Windows Defender ATP
@@ -41,6 +41,9 @@ Windows Defender Advanced Threat Protection requires one of the following Micros
 - Microsoft 365 E5 (M365 E5) which includes Windows 10 Enterprise E5
 
 For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us/Licensing/product-licensing/windows10.aspx#tab=2).
+
+### Browser requirements
+Internet Explorer and Microsoft Edge are supported. Any HTML5 compliant browsers are also supported. 
 
 ### Network and data storage and configuration requirements
 When you run the onboarding wizard for the first time, you must choose where your Windows Defender Advanced Threat Protection-related information is stored: in the European Union, the United Kingdom, or the United States datacenter.
