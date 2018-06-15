@@ -19,6 +19,7 @@ ms.date: 06/17/2018
 
 - Windows 7 SP1 Enterprise
 - Windows 7 SP1 Pro
+- Windows 8.1
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
@@ -39,6 +40,8 @@ To onboard down-level Windows client endpoints to Windows Defender ATP, you'll n
 Windows Defender ATP integrates with System Center Endpoint Protection to provide visibility to malware detections and to stop propagation of an attack in your organization by banning potentially malicious files or suspected malware. 
 
 The following steps are required to enable this integration: 
+>[!NOTE]
+>Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro.
 - Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/en-us/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
 - Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting
 
