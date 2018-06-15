@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 06/11/2018
+ms.date: 06/14/2018
 ---
 
 # Manage automation allowed/blocked lists
@@ -43,8 +43,6 @@ You can define the conditions for when entities are identified as malicious or s
    - Certificate
    - IP address
    - DNS
-   - Email
-   - Process memory
 
 3. Click **Add system exclusion**.
 
