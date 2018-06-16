@@ -7,7 +7,7 @@ ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.prod: w10
-ms.date: 05/23/2018
+ms.date: 06/15/2018
 ---
 
 # How to Move the MBAM 2.5 Databases
@@ -64,8 +64,8 @@ The high-level steps for moving the Recovery Database are:
 
 To automate this procedure, you can use Windows PowerShell to enter a command that is similar to the following:
 
-```syntax
-PS C:\> Stop-Website "Microsoft BitLocker Administration and Monitoring"
+```powershell
+Stop-Website "Microsoft BitLocker Administration and Monitoring"
 
 ```
 
@@ -130,8 +130,8 @@ PS C:\> Stop-Website "Microsoft BitLocker Administration and Monitoring"
 
 4.  In Windows PowerShell, run the script that is stored in the file and similar to the following:
 
-    ```syntax
-    PS C:\> Invoke-Sqlcmd -InputFile
+    ```powershell
+    Invoke-Sqlcmd -InputFile
     'Z:\BackupMBAMRecoveryandHardwarDatabaseScript.sql' -ServerInstance $SERVERNAME$\$SQLINSTANCENAME$
     ```
 5.  Use the following value to replace the values in the code example with values that match your environment:
@@ -144,24 +144,24 @@ Use Windows Explorer to move the **MBAM Compliance Status Database Data.bak** fi
 
 To automate this procedure, you can use Windows PowerShell to run a command that is similar to the following:
 
-```syntax
-PS C:\> Copy-Item “Z:\MBAM Recovery Database Data.bak”
+```powershell
+Copy-Item “Z:\MBAM Recovery Database Data.bak”
 \\$SERVERNAME$\$DESTINATIONSHARE$
 
-PS C:\> Copy-Item “Z:\SQLServerInstanceCertificateFile”
+Copy-Item “Z:\SQLServerInstanceCertificateFile”
 \\$SERVERNAME$\$DESTINATIONSHARE$
 
-PS C:\> Copy-Item “Z:\SQLServerInstanceCertificateFilePrivateKey”
+Copy-Item “Z:\SQLServerInstanceCertificateFilePrivateKey”
 \\$SERVERNAME$\$DESTINATIONSHARE$
 
 ```
 Use the information in the following table to replace the values in the code example with values that match your environment.
 
-| **Parameter**        | **Description**                                               |
-|----------------------|---------------------------------------------------------------|
-| $SERVERNAME$       | Name of the server to which the files will be copied.         |
+| **Parameter**        | **Description**  |
+|----------------------|------------------|
+| $SERVERNAME$       | Name of the server to which the files will be copied. |
 | $DESTINATIONSHARE$ | Name of the share and path to which the files will be copied. |
-|---|---|
+
 
 ### Restore the Recovery Database on Server B
 
@@ -173,7 +173,7 @@ Use the information in the following table to replace the values in the code exa
 
 4.  To automate this procedure, create a SQL file (.sql) that contains the following SQL script:
 
-    ```syntax
+    ```
     -- Restore MBAM Recovery Database.
 
     USE master
@@ -219,8 +219,8 @@ Use the information in the following table to replace the values in the code exa
 
 6.  In Windows PowerShell, run the script that is stored in the file and similar to the following:
 
-    ```syntax
-    PS C:\> Invoke-Sqlcmd -InputFile 'Z:\RestoreMBAMRecoveryandHardwarDatabaseScript.sql' -ServerInstance $SERVERNAME$\$SQLINSTANCENAME$
+    ```powershell
+    Invoke-Sqlcmd -InputFile 'Z:\RestoreMBAMRecoveryandHardwarDatabaseScript.sql' -ServerInstance $SERVERNAME$\$SQLINSTANCENAME$
     ```
 7.  Use the following value to replace the values in the code example with values that match your environment.
 
@@ -245,19 +245,19 @@ Use the information in the following table to replace the values in the code exa
 
 6.  To automate this process, you can use the Windows PowerShell command prompt to enter a command line on the Administration and Monitoring Server that is similar to the following:
 
-    ```syntax
-    PS C:\> reg add "HKEY_LOCAL_MACHINE\SOFTWARE\\Microsoft\MBAM Server\\Web" /v
+    ```powershell
+    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\\Microsoft\MBAM Server\\Web" /v
     RecoveryDBConnectionString /t REG_SZ /d "Integrated Security=SSPI;Initial
     Catalog=$DATABASE$;Data Source=$SERVERNAME$\$SQLINSTANCENAME$" /f
 
-    PS C:\> Set-WebConfigurationProperty
+    Set-WebConfigurationProperty
     'connectionStrings/add[@name="KeyRecoveryConnectionString"]' -PSPath
     "IIS:\sites\Microsoft Bitlocker Administration and
     Monitoring\MBAMAdministrationService" -Name "connectionString" -Value “Data
     Source=$SERVERNAME$\$SQLINSTANCENAME$;Initial Catalog=MBAM Recovery and
     Hardware;Integrated Security=SSPI;”
 
-    PS C:\> Set-WebConfigurationProperty
+    Set-WebConfigurationProperty
     'connectionStrings/add[\@name="Microsoft.Mbam.RecoveryAndHardwareDataStore.ConnectionString"]'
     -PSPath "IIS:\sites\Microsoft Bitlocker Administration and
     Monitoring\MBAMRecoveryAndHardwareService" -Name "connectionString" -Value
@@ -271,52 +271,11 @@ Use the information in the following table to replace the values in the code exa
 
 7.  Use the following table to replace the values in the code example with values that match your environment.
 
-    ```html
-    <table>
+   |Parameter|Description|
+   |---------|-----------|
+   |$SERVERNAME$/\$SQLINSTANCENAME$|Server name and instance of SQL Server where the Recovery Database is located.|
+   |$DATABASE$|Name of the Recovery database.|
 
-    <colgroup>
-
-    <col width="50%" />
-
-    <col width="50%" />
-
-    </colgroup>
-
-    <thead>
-
-    <tr class="header">
-
-    <th align="left">Parameter</th>
-
-    <th align="left">Description</th>
-
-    </tr>
-
-    </thead>
-
-    <tbody>
-
-    <tr class="odd">
-
-    <td align="left"><p>$SERVERNAME$\$SQLINSTANCENAME$</p></td>
-
-    <td align="left"><p>Server name and instance of SQL Server where the Recovery Database is located.</p></td>
-
-    </tr>
-
-    <tr class="even">
-
-    <td align="left"><p>$DATABASE$</p></td>
-
-    <td align="left"><p>Name of the Recovery database.</p></td>
-
-    </tr>
-
-    </tbody>
-
-    </table>
-
-    ```
 
 ### Install MBAM Server software and run the MBAM Server Configuration wizard on Server B
 
@@ -334,8 +293,8 @@ On the server that is running the Administration and Monitoring Website, use the
 
 To automate this procedure, you can use Windows PowerShell to run a command that is similar to the following:
 
-```syntax 
-PS C:\> Start-Website "Microsoft BitLocker Administration and Monitoring"
+```powershell 
+Start-Website "Microsoft BitLocker Administration and Monitoring"
 ```
 
 >[!NOTE]  
@@ -366,8 +325,8 @@ The high-level steps for moving the Compliance and Audit Database are:
 
 To automate this procedure, you can use Windows PowerShell to enter a command that is similar to the following:
 
-```syntax
-PS C:\> Stop-Website "Microsoft BitLocker Administration and Monitoring"
+```powershell
+Stop-Website "Microsoft BitLocker Administration and Monitoring"
 
 ```
 
@@ -380,8 +339,7 @@ PS C:\> Stop-Website "Microsoft BitLocker Administration and Monitoring"
 
 2.  To automate this procedure, create a SQL file (.sql) that contains the following SQL script:
 
-    ```syntax
-
+    ```
     USE master;
 
     GO
@@ -414,8 +372,8 @@ PS C:\> Stop-Website "Microsoft BitLocker Administration and Monitoring"
 
 3.  Run the script that is stored in the .sql file by using a Windows PowerShell command that is similar to the following:
 
-    ```syntax
-    PS C:\> Invoke-Sqlcmd -InputFile "Z:\BackupMBAMComplianceStatusDatabaseScript.sql" –ServerInstance     $SERVERNAME$\$SQLINSTANCENAME$
+    ```powershell
+    Invoke-Sqlcmd -InputFile "Z:\BackupMBAMComplianceStatusDatabaseScript.sql" –ServerInstance     $SERVERNAME$\$SQLINSTANCENAME$
 
     ```
 
@@ -429,10 +387,9 @@ PS C:\> Stop-Website "Microsoft BitLocker Administration and Monitoring"
 
 2.  To automate this procedure, you can use Windows PowerShell to run a command that is similar to the following:
 
-    ```syntax
-    PS C:\> Copy-Item "Z:\MBAM Compliance Status Database Data.bak"
+    ```powershell
+    Copy-Item "Z:\MBAM Compliance Status Database Data.bak"
     \\$SERVERNAME$\$DESTINATIONSHARE$
-
     ```
 
 3.  Using the following table, replace the values in the code example with values that match your environment.
@@ -441,7 +398,7 @@ PS C:\> Stop-Website "Microsoft BitLocker Administration and Monitoring"
     |----------------------|---------------------------------------------------------------|
     | $SERVERNAME$       | Name of the server to which the files will be copied.         |
     | $DESTINATIONSHARE$ | Name of the share and path to which the files will be copied. |
-    |---|---|
+    
 
 ### Restore the Compliance and Audit Database on Server B
 
@@ -453,7 +410,7 @@ PS C:\> Stop-Website "Microsoft BitLocker Administration and Monitoring"
 
 4.  To automate this procedure, create a SQL file (.sql) that contains the following SQL script:
 
-    ```syntax
+    ```
     -- Create MBAM Compliance Status Database Data logical backup devices.
 
     Use master
@@ -472,8 +429,8 @@ PS C:\> Stop-Website "Microsoft BitLocker Administration and Monitoring"
 
 5.  In Windows PowerShell, run the script that is stored in the file and similar to the following:
 
-    ```syntax
-    PS C:\> Invoke-Sqlcmd -InputFile "Z:\RestoreMBAMComplianceStatusDatabaseScript.sql" -ServerInstance $SERVERNAME$\$SQLINSTANCENAME$
+    ```powershell
+    Invoke-Sqlcmd -InputFile "Z:\RestoreMBAMComplianceStatusDatabaseScript.sql" -ServerInstance $SERVERNAME$\$SQLINSTANCENAME$
 
     ```
 
@@ -500,8 +457,8 @@ PS C:\> Stop-Website "Microsoft BitLocker Administration and Monitoring"
 
 6.  To automate this process, you can use the Windows PowerShell command prompt to enter a command line on the Administration and Monitoring Server that is similar to the following:
 
-    ```syntax
-    PS C:\> reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MBAM Server\Web" /v
+    ```powershell
+    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MBAM Server\Web" /v
     ComplianceDBConnectionString /t REG_SZ /d "Integrated Security=SSPI;Initial
     Catalog=$DATABASE$;Data Source=$SERVERNAME$\$SQLINSTANCENAME$" /f
 
@@ -512,52 +469,10 @@ PS C:\> Stop-Website "Microsoft BitLocker Administration and Monitoring"
 
 7.  Using the following table, replace the values in the code example with values that match your environment.
 
-    ```html
-    <table>
-
-    <colgroup>
-
-    <col width="50%" />
-
-    <col width="50%" />
-
-    </colgroup>
-
-    <thead>
-
-    <tr class="header">
-
-    <th align="left">Parameter</th>
-
-    <th align="left">Description</th>
-
-    </tr>
-
-    </thead>
-
-    <tbody>
-
-    <tr class="odd">
-
-    <td align="left"><p>$SERVERNAME$\$SQLINSTANCENAME$</p></td>
-
-    <td align="left"><p>Server name and instance of SQL Server where the Recovery Database is located.</p></td>
-
-    </tr>
-
-    <tr class="even">
-
-    <td align="left"><p>$DATABASE$</p></td>
-
-    <td align="left"><p>Name of the recovered database.</p></td>
-
-    </tr>
-
-    </tbody>
-
-    </table>
-
-    ```
+   |Parameter | Description |
+   |---------|------------|
+   |$SERVERNAME$\$SQLINSTANCENAME$ | Server name and instance of SQL Server where the Recovery Database is located.|
+   |$DATABASE$|Name of the recovered database.|
 
 ### Install MBAM Server software and run the MBAM Server Configuration wizard on Server B
 
@@ -575,8 +490,8 @@ On the server that is running the Administration and Monitoring Website, use the
 
 To automate this procedure, you can use Windows PowerShell to run a command that is similar to the following:
 
-```syntax
-PS C:\> Start-Website "Microsoft BitLocker Administration and Monitoring"
+```powershell
+Start-Website "Microsoft BitLocker Administration and Monitoring"
 
 ```
 
