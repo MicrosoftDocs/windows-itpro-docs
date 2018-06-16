@@ -171,7 +171,7 @@ The XML below is the current version for this CSP.
                 </DFProperties>
               </Node>
               <Node>
-                <NodeName>MCCMNPairs</NodeName>
+                <NodeName>MCCMNCPairs</NodeName>
                 <DFProperties>
                   <AccessType>
                     <Get />
@@ -477,7 +477,202 @@ The XML below is the current version for this CSP.
                       <DDFName></DDFName>
                     </DFType>
                   </DFProperties>
+                </Node>                
+              </Node>
+              <Node>
+                <NodeName>RootCertificate4</NodeName>
+                <DFProperties>
+                  <AccessType>
+                    <Get />
+                  </AccessType>
+                  <Description>Specifies the root certificate for the H-SLP server.</Description>
+                  <DFFormat>
+                    <node />
+                  </DFFormat>
+                  <Occurrence>
+                    <One />
+                  </Occurrence>
+                  <Scope>
+                    <Permanent />
+                  </Scope>
+                  <DFType>
+                    <DDFName></DDFName>
+                  </DFType>
+                </DFProperties>
+                <Node>
+                  <NodeName>Name</NodeName>
+                  <DFProperties>
+                    <AccessType>
+                      <Get />
+                      <Replace />
+                    </AccessType>
+                    <Description>Specifies the name of the H-SLP root certificate as a string, in the format name.cer.</Description>
+                    <DFFormat>
+                      <chr />
+                    </DFFormat>
+                    <Occurrence>
+                      <One />
+                    </Occurrence>
+                    <Scope>
+                      <Permanent />
+                    </Scope>
+                    <DFType>
+                      <MIME>text/plain</MIME>
+                    </DFType>
+                  </DFProperties>
                 </Node>
+                <Node>
+                  <NodeName>Data</NodeName>
+                  <DFProperties>
+                    <AccessType>
+                      <Get />
+                      <Replace />
+                    </AccessType>
+                    <Description>The base 64 encoded blob of the H-SLP root certificate.</Description>
+                    <DFFormat>
+                      <b64 />
+                    </DFFormat>
+                    <Occurrence>
+                      <One />
+                    </Occurrence>
+                    <Scope>
+                      <Permanent />
+                    </Scope>
+                    <DFType>
+                      <DDFName></DDFName>
+                    </DFType>
+                  </DFProperties>
+                </Node>                
+              </Node>
+              <Node>
+                <NodeName>RootCertificate5</NodeName>
+                <DFProperties>
+                  <AccessType>
+                    <Get />
+                  </AccessType>
+                  <Description>Specifies the root certificate for the H-SLP server.</Description>
+                  <DFFormat>
+                    <node />
+                  </DFFormat>
+                  <Occurrence>
+                    <One />
+                  </Occurrence>
+                  <Scope>
+                    <Permanent />
+                  </Scope>
+                  <DFType>
+                    <DDFName></DDFName>
+                  </DFType>
+                </DFProperties>
+                <Node>
+                  <NodeName>Name</NodeName>
+                  <DFProperties>
+                    <AccessType>
+                      <Get />
+                      <Replace />
+                    </AccessType>
+                    <Description>Specifies the name of the H-SLP root certificate as a string, in the format name.cer.</Description>
+                    <DFFormat>
+                      <chr />
+                    </DFFormat>
+                    <Occurrence>
+                      <One />
+                    </Occurrence>
+                    <Scope>
+                      <Permanent />
+                    </Scope>
+                    <DFType>
+                      <MIME>text/plain</MIME>
+                    </DFType>
+                  </DFProperties>
+                </Node>
+                <Node>
+                  <NodeName>Data</NodeName>
+                  <DFProperties>
+                    <AccessType>
+                      <Get />
+                      <Replace />
+                    </AccessType>
+                    <Description>The base 64 encoded blob of the H-SLP root certificate.</Description>
+                    <DFFormat>
+                      <b64 />
+                    </DFFormat>
+                    <Occurrence>
+                      <One />
+                    </Occurrence>
+                    <Scope>
+                      <Permanent />
+                    </Scope>
+                    <DFType>
+                      <DDFName></DDFName>
+                    </DFType>
+                  </DFProperties>
+                </Node>                
+              </Node>
+              <Node>
+                <NodeName>RootCertificate6</NodeName>
+                <DFProperties>
+                  <AccessType>
+                    <Get />
+                  </AccessType>
+                  <Description>Specifies the root certificate for the H-SLP server.</Description>
+                  <DFFormat>
+                    <node />
+                  </DFFormat>
+                  <Occurrence>
+                    <One />
+                  </Occurrence>
+                  <Scope>
+                    <Permanent />
+                  </Scope>
+                  <DFType>
+                    <DDFName></DDFName>
+                  </DFType>
+                </DFProperties>
+                <Node>
+                  <NodeName>Name</NodeName>
+                  <DFProperties>
+                    <AccessType>
+                      <Get />
+                      <Replace />
+                    </AccessType>
+                    <Description>Specifies the name of the H-SLP root certificate as a string, in the format name.cer.</Description>
+                    <DFFormat>
+                      <chr />
+                    </DFFormat>
+                    <Occurrence>
+                      <One />
+                    </Occurrence>
+                    <Scope>
+                      <Permanent />
+                    </Scope>
+                    <DFType>
+                      <MIME>text/plain</MIME>
+                    </DFType>
+                  </DFProperties>
+                </Node>
+                <Node>
+                  <NodeName>Data</NodeName>
+                  <DFProperties>
+                    <AccessType>
+                      <Get />
+                      <Replace />
+                    </AccessType>
+                    <Description>The base 64 encoded blob of the H-SLP root certificate.</Description>
+                    <DFFormat>
+                      <b64 />
+                    </DFFormat>
+                    <Occurrence>
+                      <One />
+                    </Occurrence>
+                    <Scope>
+                      <Permanent />
+                    </Scope>
+                    <DFType>
+                      <DDFName></DDFName>
+                    </DFType>
+                  </DFProperties>
+                </Node>                
               </Node>
             </Node>
           </Node>
