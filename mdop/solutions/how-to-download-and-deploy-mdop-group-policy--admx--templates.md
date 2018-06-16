@@ -7,7 +7,7 @@ ms.pagetype: mdop
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w8
-ms.date: 07/26/2017
+ms.date: 06/15/2018
 ---
 
 
@@ -18,7 +18,6 @@ You can manage the feature settings of certain Microsoft Desktop Optimization Pa
 
 ## MDOP Group Policy templates
 
-
 **How to download and deploy the MDOP Group Policy templates**
 
 1.  Download the latest [MDOP Group Policy templates](https://www.microsoft.com/en-us/download/details.aspx?id=55531) 
@@ -28,17 +27,15 @@ You can manage the feature settings of certain Microsoft Desktop Optimization Pa
     **Warning**  
     Do not extract the templates directly to the Group Policy deployment directory. Multiple technologies and versions are bundled in this file.
 
-     
-
 3.  In the extracted folder, locate the technology-version .admx file. Certain MDOP technologies have multiple sets of Group Policy Objects (GPOs). For example, MBAM includes MBAM Management settings and MBAM User settings.
 
 4.  Locate the appropriate .adml file by language-culture (that is, *en-us* for English-United States).
 
 5.  Copy the .admx and .adml files to a policy definition folder. Depending on where you store the templates, you can configure Group Policy settings from the local device or from any computer on the domain.
 
-    **Local files:** To configure Group Policy settings from the local device, copy template files to the following locations:
+   - **Local files:** To configure Group Policy settings from the local device, copy template files to the following locations:
 
-    <table>
+   <table>
     <colgroup>
     <col width="50%" />
     <col width="50%" />
@@ -61,11 +58,9 @@ You can manage the feature settings of certain Microsoft Desktop Optimization Pa
     </tbody>
     </table>
 
-     
+   - **Domain central store:** To enable Group Policy settings configuration by a Group Policy administrator from any computer on the domain, copy files to the following locations on the domain controller:
 
-    **Domain central store:** To enable Group Policy settings configuration by a Group Policy administrator from any computer on the domain, copy files to the following locations on the domain controller:
-
-    <table>
+   <table>
     <colgroup>
     <col width="50%" />
     <col width="50%" />
@@ -89,9 +84,7 @@ You can manage the feature settings of certain Microsoft Desktop Optimization Pa
     </tbody>
     </table>
 
-     
-
-6.  Edit the Group Policy settings using Group Policy Management Console (GPMC) or Advanced Group Policy Management (AGPM) to configure Group Policy settings for the MDOP technology.
+6. Edit the Group Policy settings using Group Policy Management Console (GPMC) or Advanced Group Policy Management (AGPM) to configure Group Policy settings for the MDOP technology.
 
 ### MDOP Group Policy by technology
 
