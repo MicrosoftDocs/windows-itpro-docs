@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 06/17/2018
+ms.date: 06/18/2018
 ---
 
 # Onboard previous versions of Windows
