@@ -50,7 +50,9 @@ You can create rules that determine the machines and alert severities to send em
 2. Click **Add notification rule**.
 
 3.	Specify the General information:
-    - **Rule name**
+    - **Rule name** - Specify a name for the notification rule.
+    - **Show customer display name** - Specify the customer name that appears on the email notification.
+    - **Include a deeplink** - Adds a link with the tenant ID to allow access to a specific tenant.
     - **Machines** - Choose whether to notify recipients for alerts on all machines (Global administrator role only) or on selected machine groups. For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md).
     - **Alert severity** - Choose the alert severity level
 
