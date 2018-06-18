@@ -7,7 +7,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 06/16/2016
+ms.date: 06/15/2018
 ---
 
 
@@ -16,18 +16,17 @@ ms.date: 06/16/2016
 
 In order to complete the **appv\_server\_setup.exe** Server setup successfully using the command line, you must specify and combine multiple parameters.
 
-**To Install the App-V 5.0 server using a script**
+Use the following tables for more information about installing the App-V 5.0 server using the command line.
 
--   Use the following tables for more information about installing the App-V 5.0 server using the command line.
+>[!NOTE]  
+>The information in the following tables can also be accessed using the command line by typing the following command:
+>```
+> appv\_server\_setup.exe /?
+>```
 
-    **Note**  
-    The information in the following tables can also be accessed using the command line by typing the following command: **appv\_server\_setup.exe /?**.
+## Common parameters and Examples
 
-     
-
-    **Common parameters and Examples**
-
-    <table>
+<table>
     <colgroup>
     <col width="50%" />
     <col width="50%" />
@@ -67,10 +66,8 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
     </tr>
     </tbody>
     </table>
-
      
-
-    <table>
+<table>
     <colgroup>
     <col width="50%" />
     <col width="50%" />
@@ -109,11 +106,9 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
     <p>/EXISTING_MANAGEMENT_DB_NAME =”AppVManagement”</p></td>
     </tr>
     </tbody>
-    </table>
+    </table>  
 
-     
-
-    <table>
+<table>
     <colgroup>
     <col width="50%" />
     <col width="50%" />
@@ -153,10 +148,8 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
     </tr>
     </tbody>
     </table>
-
-     
-
-    <table>
+    
+<table>
     <colgroup>
     <col width="50%" />
     <col width="50%" />
@@ -191,9 +184,7 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
     </tbody>
     </table>
 
-     
-
-    <table>
+<table>
     <colgroup>
     <col width="50%" />
     <col width="50%" />
@@ -228,9 +219,7 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
     </tbody>
     </table>
 
-     
-
-    <table>
+<table>
     <colgroup>
     <col width="50%" />
     <col width="50%" />
@@ -255,9 +244,7 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
     </tbody>
     </table>
 
-     
-
-    <table>
+<table>
     <colgroup>
     <col width="50%" />
     <col width="50%" />
@@ -298,9 +285,7 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
     </tbody>
     </table>
 
-     
-
-    <table>
+<table>
     <colgroup>
     <col width="50%" />
     <col width="50%" />
@@ -339,9 +324,7 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
     </tbody>
     </table>
 
-     
-
-    <table>
+<table>
     <colgroup>
     <col width="50%" />
     <col width="50%" />
@@ -380,9 +363,7 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
     </tbody>
     </table>
 
-     
-
-    <table>
+<table>
     <colgroup>
     <col width="50%" />
     <col width="50%" />
@@ -417,9 +398,7 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
     </tbody>
     </table>
 
-     
-
-    <table>
+<table>
     <colgroup>
     <col width="50%" />
     <col width="50%" />
@@ -454,13 +433,11 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
     </tbody>
     </table>
 
-     
+## Parameter Definitions
 
-    **Parameter Definitions**
+### General Parameters
 
-    **General Parameters**
-
-    <table>
+<table>
     <colgroup>
     <col width="50%" />
     <col width="50%" />
@@ -503,11 +480,9 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
     </tbody>
     </table>
 
-     
+### Management Server Installation Parameters
 
-    **Management Server Installation Parameters**
-
-    <table>
+<table>
     <colgroup>
     <col width="50%" />
     <col width="50%" />
@@ -538,11 +513,9 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
     </tbody>
     </table>
 
-     
+### Parameters for the Management Server Database
 
-    **Parameters for the Management Server Database**
-
-    <table>
+<table>
     <colgroup>
     <col width="50%" />
     <col width="50%" />
@@ -585,11 +558,9 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
     </tbody>
     </table>
 
-     
+### Parameters for Installing Publishing Server
 
-    **Parameters for Installing Publishing Server**
-
-    <table>
+<table>
     <colgroup>
     <col width="50%" />
     <col width="50%" />
@@ -620,11 +591,9 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
     </tbody>
     </table>
 
-     
+### Parameters for Reporting Server
 
-    **Parameters for Reporting Server**
-
-    <table>
+<table>
     <colgroup>
     <col width="50%" />
     <col width="50%" />
@@ -653,9 +622,9 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
 
      
 
-    **Parameters for using an Existing Reporting Server Database**
+### Parameters for using an Existing Reporting Server Database
 
-    <table>
+<table>
     <colgroup>
     <col width="50%" />
     <col width="50%" />
@@ -690,11 +659,9 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
     </tbody>
     </table>
 
-     
+### Parameters for installing Reporting Server Database
 
-    **Parameters for installing Reporting Server Database**
-
-    <table>
+<table>
     <colgroup>
     <col width="50%" />
     <col width="50%" />
@@ -733,11 +700,9 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
     </tbody>
     </table>
 
-     
+### Parameters for using an existing Management Server Database
 
-    **Parameters for using an existing Management Server Database**
-
-    <table>
+<table>
     <colgroup>
     <col width="50%" />
     <col width="50%" />
@@ -770,14 +735,12 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
     <td align="left"><p>Specifies the name of the existing management database that should be used. Example usage: <strong>/EXISITING_MANAGEMENT_DB_NAME=”AppVMgmtDB”</strong>. If /DB_PREDEPLOY_MANAGEMENT is specified, this will be ignored.</p>
     <p></p>
     <p><strong>Got a suggestion for App-V</strong>? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). <strong>Got an App-V issu</strong>e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).</p></td>
-    </tr>
-    </tbody>
-    </table>
-
-     
+</tr>
+</tbody>
+</table>
+  
 
 ## Related topics
-
 
 [Deploying the App-V 5.0 Server](deploying-the-app-v-50-server.md)
 
