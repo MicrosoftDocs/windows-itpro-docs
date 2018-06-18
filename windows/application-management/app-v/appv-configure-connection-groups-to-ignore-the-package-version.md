@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 06/15/2018
+ms.date: 06/18/2018
 ---
 # How to make a connection group ignore the package version
 
