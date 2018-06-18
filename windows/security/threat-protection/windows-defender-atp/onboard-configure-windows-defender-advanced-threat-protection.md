@@ -17,14 +17,18 @@ ms.date: 04/24/2018
 
 **Applies to:**
 
+- Windows 7 SP1 Enterprise
+- Windows 7 SP1 Pro
+- Windows 8.1 Enterprise
+- Windows 8.1 Pro
 - Windows 10 Enterprise
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
-- macOS
-- Linux
 - Windows Server 2012 R2
 - Windows Server 2016
+- macOS
+- Linux
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 [!include[Prerelease information](prerelease.md)]
@@ -44,6 +48,38 @@ Windows Defender Advanced Threat Protection requires one of the following Micros
 
 For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us/Licensing/product-licensing/windows10.aspx#tab=2).
 
+## Hardware and software requirements
+### Supported Windows versions
+- Windows 7 SP1 Enterprise
+- Windows 7 SP1 Pro
+- Windows 8.1 Enterprise
+- Windows 8.1 Pro
+- Windows 10
+  - Windows 10 Enterprise
+  - Windows 10 Education
+  - Windows 10 Pro
+  - Windows 10 Pro Education
+- Windows server
+  - Windows Server 2012 R2
+  - Windows Server 2016
+  - Windows Server, version 1803
+
+Machines on your network must be running one of these editions.
+
+The hardware requirements for Windows Defender ATP on machines is the same as those for the supported editions.
+
+> [!NOTE]
+> Machines that are running mobile versions of Windows are not supported.
+
+
+### Other supported operating systems
+>[!NOTE]
+>You'll need to know the exact Linux distros and macOS X versions that are compatible with Windows Defender ATP for the integration to work. 
+
+-  macOSX
+-  Linux
+
+
 ## Windows Defender Antivirus configuration requirement
 The Windows Defender ATP agent depends on the ability of Windows Defender Antivirus to scan files and provide information about them. 
 
@@ -61,7 +97,8 @@ For more information, see [Windows Defender Antivirus compatibility](../windows-
 Topic | Description
 :---|:---
 [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md) | You'll need to onboard machines for it to report to the Windows Defender ATP service. Learn about the tools and methods you can use to configure machines in your enterprise.
-[Onboard servers](configure-server-endpoints-windows-defender-advanced-threat-protection.md) |  Onboard Windows Server 2012 R2 and Windows Server 2016 to Windows Defender ATP 
+[Onboard previous versions of Windows](onboard-downlevel-windows-defender-advanced-threat-protection.md)| Onboard Windows 7 and Windows 8.1 machines to Windows Defender ATP. 
+[Onboard servers](configure-server-endpoints-windows-defender-advanced-threat-protection.md) |  Onboard Windows Server 2012 R2 and Windows Server 2016 to Windows Defender ATP. 
 [Onboard non-Windows machines](configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md) | Windows Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in the Windows Defender ATP portal and better protect your organization's network. This experience leverages on a third-party security products' sensor data. 
 [Run a detection test on a newly onboarded machine](run-detection-test-windows-defender-advanced-threat-protection.md) | Run a script on a newly onboarded machine to verify that it is properly reporting to the Windows Defender ATP service.
 [Configure proxy and Internet settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)| Enable communication with the Windows Defender ATP cloud service by configuring the proxy and Internet connectivity settings.
