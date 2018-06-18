@@ -23,11 +23,15 @@ Steps are provided in sections that follow the recommended setup process:
 
 
 
-## Add Update Compliance to Microsoft Operations Management Suite
+## Add Update Compliance to Microsoft Operations Management Suite or Azure Log Analytics
 
-Update Compliance is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud-based servicing for monitoring and automating your on-premise and cloud environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/). 
+Update Compliance is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud-based servicing for monitoring and automating your on-premise and cloud environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/) or the Azure [Log Analytics overview](https://azure.microsoft.com/services/log-analytics/).
 
 If you are already using OMS, skip to step **6** to add Update Compliance to your workspace.
+
+>[!NOTE]
+>If you are already using OMS, you can also follow [this link](https://portal.mms.microsoft.com/#Workspace/ipgallery/details/details/index?IPId=WaaSUpdateInsights) to go directly to the Update Compliance solution and add it to your workspace.
+
 
 If you are not yet using OMS, use the following steps to subscribe to OMS Update Compliance:
 

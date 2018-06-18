@@ -5,7 +5,7 @@ keywords: Device Health, oms, operations management suite, prerequisites, requir
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.date: 03/20/2018
+ms.date: 06/12/2018
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
@@ -24,13 +24,16 @@ Steps are provided in sections that follow the recommended setup process:
 
 
 
-## Add Device Health to Microsoft Operations Management Suite
+## Add Device Health to Microsoft Operations Management Suite or Azure Log Analytics
 
-Device Health is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud-based servicing for monitoring and automating your on-premise and cloud environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/). 
+Device Health is offered as a solution in the Microsoft Operations Management Suite (OMS) and Azure Log Analytics, a collection of cloud-based servicing for monitoring and automating your on-premise and cloud environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/) or the Azure [Log Analytics overview](https://azure.microsoft.com/services/log-analytics/).
 
-**If you are already using Windows Analytics**, you should use the same Azure Log Analytics workspace you're already using. find Device Health in the Solutions Gallery. Select the **Device Health** tile in the gallery and then click **Add** on the solution's details page. Device Health is now visible in your workspace. While you're in the Solutions Gallery, you should consider installing the [Upgrade Readiness](../upgrade/use-upgrade-readiness-to-manage-windows-upgrades.md)  and [Update Compliance](update-compliance-monitor.md) solutions as well, if you haven't already.
+**If you are already using Windows Analytics**, you should use the same Azure Log Analytics workspace you're already using. Find Device Health in the Solutions Gallery. Select the **Device Health** tile in the gallery and then click **Add** on the solution's details page. Device Health is now visible in your workspace. While you're in the Solutions Gallery, you should consider installing the [Upgrade Readiness](../upgrade/use-upgrade-readiness-to-manage-windows-upgrades.md)  and [Update Compliance](update-compliance-monitor.md) solutions as well, if you haven't already.
 
-**If you are not yet using Windows Analytics or Azure Log Analytics**, use the following steps to subscribe:
+>[!NOTE]
+>If you are already using OMS, you can also follow [this link](https://portal.mms.microsoft.com/#Workspace/ipgallery/details/details/index?IPId=DeviceHealthProd) to go directly to the Device Health solution and add it to your workspace.
+
+**If you are not yet using Windows Analytics or Azure Log Analytics**, follow these steps to subscribe:
 
 1.	Go to [Operations Management Suite](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite) on Microsoft.com and click **Sign in**.
    [![Operations Management Suite bar with sign-in button](images/uc-02a.png)](images/uc-02.png)
