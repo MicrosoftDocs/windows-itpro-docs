@@ -29,7 +29,7 @@ ms.date: 03/18/2018
 | [![Open OneNote](images/edu-TIB-setp-4-v3.png)](#edu-task4) | **Trying to expand classroom creativity and interaction between students?** </br>Open [OneNote](#edu-task4) and create an example group project for your class. |
 | [![Try Photos app](images/edu-tib-setp-5-v4.png)](#edu-task5) | **Curious about telling stories through video?** </br>Try the [Photos app](#edu-task5) to make your own example video. |
 | [![Play with Minecraft: Education Edition](images/edu-tib-setp-6-v4.png)](#edu-task6) | **Want to teach kids to further collaborate and problem solve?** </br>Play with [Minecraft: Education Edition](#edu-task6) to see how it can be used as a collaborative and versatile platform across subjects to encourage 21st century skills. | 
-| [![Do Math with Windows Ink](images/edu-tib-setp-7-v1.png)(#edu-task7)] | **Want to provide a personal math tutor for your students?** </br>Use [Windows Ink and the Math Assistant feature](#edu-task7) in OneNote to give students step-by-step instructions and interactive 2D graphs for math problems. | 
+| [![Do Math with Windows Ink](images/edu-tib-setp-7-v1.png)](#edu-task7) | **Want to provide a personal math tutor for your students?** </br>Use [Windows Ink and the Math Assistant feature](#edu-task7) in OneNote to give students step-by-step instructions and interactive 2D graphs for math problems. | 
 |  |  |
 
 </br>
@@ -265,39 +265,45 @@ Today, we'll explore a Minecraft world through the eyes of a student.
 </br>
 </br>
 
-![Help students understand new math concepts with the Math Assistant in OneNote](images/edu-TIB-setp-7-jump.png) 
-## <a name="edu-task7"></a>7. Go digital in your Math classroom
+![Help students understand new math concepts with the Math Assistant in OneNote](images/Inking.png) 
+## <a name="edu-task7"></a>7. Use Windows Ink to provide a personal math tutor for your students
 
-Whether you are an Ink user or prefer to type your math as text, Math Assistant can: 
-*	give your students step-by-step instructions on how to solve their math problems. 
-*	help them visualize math functions on an interactive 2D graph.
-This digital tutor is available in the OneNote app for Windows 10 and OneNote Online.
+The **Math Assistant** and **Ink Replay** features available in the OneNote app for Windows 10 and OneNote Online give your students step-by-step instructions on how to solve their math problems and help them visualize math functions on an interactive 2D graph.
 
-**Try this in OneNote!**
-To solve x^2-3x+2=0:
-1. Write your equation in ink or type it as text. Use the **Lasso** tool to select the inked equation (or select the text if you typed it) and then, on the **Draw** tab, click the **Math** button.
+**Solve 3x+4=7 in OneNote!**
+1. Open the OneNote app for Windows 10 (not OneNote 2016).
 
-2. From the drop-down menu in the Math pane, select the option to **Solve for x**. You can now see the final solution of the equation.
+2. Click **Add Page** to launch a blank work space.
 
-3. From the second drop down below, choose **Steps Using the Quadratic Formula**, which shows you the step-by-step solution of this equation.
-  
-  ![Select the Math button and use the dropdown menus](images/Math1.png)
+  ![Select add page button](images/plus-page.png)
 
-4. Finally, **drag and drop** the steps to your page.
+3. Write the equation 3x+4=7 in ink or type it as text.
 
-5. On the **View** tab, click the **Replay** button and select the written equation to watch it replay your text. 
+4. If you wrote the equation using digital ink, use the **Lasso** tool to circle the equation. If you typed the equation, highlight it using your cursor.
 
-To graph y=sin(x):
-1. Write your equation in ink or type it as text (make sure the "y" isn't capitalized). Use the **Lasso** tool to select the inked equation (or select the text if you typed it) and then, on the **Draw** tab, click the **Math** button.
+  ![Lasso tool button](images/lasso.png)
 
-2. From the drop-down menu in the Math pane, select the option to **Graph in 2D**. 
-  >You can play with the interactive graph of your equation - use a **single finger** to move the graph position or **two fingers** to change the zoom level, or use a mouse to **click and drag** to move the position or use the **magnification** buttons to change the zoom level.
-  
-  > ![Select the Math button and use the dropdown menu](images/Math2.png)
+5. On the Draw tab, click the **Math** button.
 
-3. Expand **Key Graph Features** to understand the properties of your function, such as minima, maxima, zeros, etc.
+  ![Math button](images/math-button.png)
 
-4. Finally, click the **Insert on Page** button below the graph to add a screenshot of the graph to your page.
+To solve 3x+4=7:
+1. From the drop-down menu in the **Math** pane, select the option to **Solve for x**. You can now see the final solution of the equation.
+
+  ![Solve for x menu](images/solve-for-x.png)
+
+2. From the second drop-down below, choose **Steps for Solving Linear Formula**, which shows you the step-by-step solution of this equation.
+
+3. On the **View** tab, click the **Replay** button and select the written equation to watch it replay your text. Replay is great for students to review how the teacher solved the equation, for example.
+
+  ![Replay button](images/replay.png)
+
+To graph 3x+4=7:
+1. From the drop-down menu in the **Math** pane, select the option to **Graph Both Sides in 2D**. You can play with the interactive graph of your equation - use a single finger to move the graph position or two fingers to change the **zoom** level.
+
+  ![Graph both sides in 2D](images/graph-for-x.png)
+
+2. Click the **Insert on Page** button below the graph to add a screenshot of the graph to your page. 
 </br>
 </br>
 
