@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/24/2018
+ms.date: 06/18/2018
 ---
 
 # Windows Defender ATP preview features
@@ -42,12 +42,19 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 
 ## Preview features
 The following features are included in the preview release:
+- [Onboard previous versions of Windows](onboard-downlevel-windows-defender-advanced-threat-protection.md)<br>
+Onboard supported versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor
+  - Windows 7 SP1 Enterprise
+  - Windows 7 SP1 Pro
+  - Windows 8.1 Enterprise
+  - Windows 8.1 Pro 
 
 - [Onboard servers](configure-server-endpoints-windows-defender-advanced-threat-protection.md)<br>
 Windows Defender ATP supports the onboarding of the following servers:
     - Windows Server 2012 R2
     - Windows Server 2016
     - Windows Server, version 1803
+    
 
 - [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)<br>
 Windows Defender ATP supports the use of Power BI data connectors to enable you to connect and access Windows Defender ATP data using Microsoft Graph.
