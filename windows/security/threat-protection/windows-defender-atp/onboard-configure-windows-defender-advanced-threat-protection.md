@@ -61,7 +61,7 @@ For more information, see [Windows Defender Antivirus compatibility](../windows-
 Topic | Description
 :---|:---
 [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md) | You'll need to onboard machines for it to report to the Windows Defender ATP service. Learn about the tools and methods you can use to configure machines in your enterprise.
-[Onboard previous versions of Windows](onboard-configure-windows-defender-advanced-threat-protection.md)|
+[Onboard previous versions of Windows](onboard-downlevel-windows-defender-advanced-threat-protection.md)| Onboard Windows 7 and Windows 8.1 machines to Windows Defender ATP 
 [Onboard servers](configure-server-endpoints-windows-defender-advanced-threat-protection.md) |  Onboard Windows Server 2012 R2 and Windows Server 2016 to Windows Defender ATP 
 [Onboard non-Windows machines](configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md) | Windows Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in the Windows Defender ATP portal and better protect your organization's network. This experience leverages on a third-party security products' sensor data. 
 [Run a detection test on a newly onboarded machine](run-detection-test-windows-defender-advanced-threat-protection.md) | Run a script on a newly onboarded machine to verify that it is properly reporting to the Windows Defender ATP service.
