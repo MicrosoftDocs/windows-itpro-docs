@@ -8,7 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.author: justinha
-ms.date: 05/30/2018
+ms.date: 06/18/2018
 ms.localizationpriority: medium
 ---
 
@@ -39,7 +39,7 @@ As an admin, you can address the question of who gets access to your data by usi
 In the end, all of these security measures have one thing in common: employees will tolerate only so much inconvenience before looking for ways around the security restrictions. For example, if you don’t allow employees to share files through a protected system, employees will turn to an outside app that more than likely lacks security controls.
 
 ### Using data loss prevention systems
-To help address this security insufficiency, company’s developed data loss prevention (also known as DLP) systems. Data loss prevention systems require:
+To help address this security insufficiency, companies developed data loss prevention (also known as DLP) systems. Data loss prevention systems require:
 - **A set of rules about how the system can identify and categorize the data that needs to be protected.** For example, a rule set might contain a rule that identifies credit card numbers and another rule that identifies Social Security numbers.
 
 - **A way to scan company data to see whether it matches any of your defined rules.** Currently, Microsoft Exchange Server and Exchange Online provide this service for email in transit, while Microsoft SharePoint and SharePoint Online provide this service for content stored in document libraries.
