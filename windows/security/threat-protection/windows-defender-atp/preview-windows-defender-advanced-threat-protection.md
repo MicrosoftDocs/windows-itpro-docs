@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 06/11/2018
+ms.date: 06/18/2018
 ---
 
 # Windows Defender ATP preview features

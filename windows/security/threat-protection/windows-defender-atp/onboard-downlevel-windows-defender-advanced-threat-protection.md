@@ -1,7 +1,7 @@
 ---
 title: Onboard previous versions of Windows on Windows Defender ATP
 description: Onboard supported previous versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor
-keywords: onboard, windows, 7, oms, sp1, enterprise, pro, down level
+keywords: onboard, windows, 7, 81, oms, sp1, enterprise, pro, down level
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
