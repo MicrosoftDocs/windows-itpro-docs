@@ -27,6 +27,9 @@ Steps are provided in sections that follow the recommended setup process:
 
 Update Compliance is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud-based servicing for monitoring and automating your on-premise and cloud environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/) or the Azure [Log Analytics overview](https://azure.microsoft.com/services/log-analytics/).
 
+>[!IMPORTANT]
+>Update Compliance is a free solution for Azure subscribers.
+
 If you are already using OMS, skip to step **6** to add Update Compliance to your workspace.
 
 >[!NOTE]
