@@ -42,8 +42,7 @@ You can define the conditions for when entities are identified as malicious or s
    - File hash
    - Certificate
    - IP address
-   - DNS
-
+  
 3. Click **Add system exclusion**.
 
 4. For each attribute specify the exclusion type, details, and their corresponding required values.
