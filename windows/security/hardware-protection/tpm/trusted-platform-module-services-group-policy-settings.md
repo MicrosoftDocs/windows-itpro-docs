@@ -88,6 +88,7 @@ The following table shows the TPM owner authorization values in the registry.
 | 2          | Delegated |
 | 4          | Full      |
 
+A value of 5 means discard the **Full** TPM owner authorization for TPM 1.2 but keep it for TPM 2.0.
  
 If you enable this policy setting, the Windows operating system will store the TPM owner authorization in the registry of the local computer according to the TPM authentication setting you choose.
 
