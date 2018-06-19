@@ -193,18 +193,16 @@ In this example, you'd get the following info:
 Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the publisher name to enter in the **Publisher Name** box.
 
 ### Add an AppLocker policy file
-Now we’re going to add an AppLocker XML file to the **App Rules** list. You’ll use this option if you want to add multiple apps at the same time. The first example shows how to create a Publisher rule for packaged apps. The second example shows how to create a Path rule for unsigned apps. For more info, see [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview).
+Now we’re going to add an AppLocker XML file to the **App Rules** list. You’ll use this option if you want to add multiple apps at the same time. The first example shows how to create a Packaged App rule for Store apps. The second example shows how to create an Executable rule by using a path for unsigned apps. For more info, see [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview).
 
-**To create a Publisher rule and xml file for packaged apps using the AppLocker tool**
+**To create a Packaged App rule rule and xml file**
 1.	Open the Local Security Policy snap-in (SecPol.msc).
     
-2.	In the left pane, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**.
+2.	In the left pane, click **Application Control Policies** > **AppLocker** > **Packaged App Rules**.
 
     ![Local security snap-in, showing the Packaged app Rules](images/intune-local-security-snapin.png)
 
-3.	Right-click in the right-hand pane, and then click **Create New Rule**.
-
-    The **Create Packaged app Rules** wizard appears.
+3. Right-click **Packaged App Rules** > **Create New Rule**.
 
 4. On the **Before You Begin** page, click **Next**.
 
@@ -262,14 +260,14 @@ Now we’re going to add an AppLocker XML file to the **App Rules** list. You’
     ```
 12.	After you’ve created your XML file, you need to import it by using Microsoft Intune.
 
-**To create a Path rule and xml file for unsigned apps using the AppLocker tool**
+**To create an Executable rule and xml file for unsigned apps**
 1. Open the Local Security Policy snap-in (SecPol.msc).
     
-2. In the left pane, expand **Application Control Policies**, expand **AppLocker**, and then click **Executable Rules**.
+2. In the left pane, click **Application Control Policies** > **AppLocker** > **Executable Rules**.
+
+3. Right-click **Executable Rules** > **Create New Rule**.
 
    ![Local security snap-in, showing the Executable Rules](images/create-new-path-rule.png)
-
-3. Right-click in the right-hand pane, and then click **Create New Rule**.
 
 4. On the **Before You Begin** page, click **Next**.
 
@@ -287,11 +285,7 @@ Now we’re going to add an AppLocker XML file to the **App Rules** list. You’
 
 9. On the **Name** page, type a name and description for the rule and then click **Create**.
 
-10.	In the left pane, right-click on **AppLocker**, and then click **Export policy**.
-
-    The **Export policy** box opens, letting you export and save your new policy as XML.
-
-    ![Local security snap-in, showing the Export Policy option](images/intune-local-security-export.png)
+10.	In the left pane, right-click **AppLocker** > **Export policy**.
 
 11.	In the **Export policy** box, browse to where the policy should be stored, give the policy a name, and then click **Save**.
 
