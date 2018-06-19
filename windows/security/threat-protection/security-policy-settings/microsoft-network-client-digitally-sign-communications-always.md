@@ -1,21 +1,21 @@
 ---
-title: SMB v1 Microsoft network client Digitally sign communications (always) (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the Microsoft network client Digitally sign communications (always) security policy setting.
+title: Microsoft network client Digitally sign communications (always) (Windows 10)
+description: For SMBv3 and SMBv2, describes the best practices, location, values, policy management and security considerations for the Microsoft network client Digitally sign communications (always) security policy setting.
 ms.assetid: 4b7b0298-b130-40f8-960d-60418ba85f76
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
-ms.date: 04/19/2017
+ms.date: 06/19/2018
 ---
 
-# SMB v1 Microsoft network client: Digitally sign communications (always)
+# Microsoft network client: Digitally sign communications (always)
 
 **Applies to**
 -   Windows 10
 
-Describes the best practices, location, values, policy management and security considerations for the **Microsoft network client: Digitally sign communications (always)** security policy setting for SMB v3 and SMB v2. 
+Describes the best practices, location, values, policy management and security considerations for the **Microsoft network client: Digitally sign communications (always)** security policy setting for SMBv3 and SMBv2. 
 
 ## Reference
 
@@ -23,15 +23,13 @@ The Server Message Block (SMB) protocol provides the basis for file and print sh
 
 Implementation of digital signatures in high-security networks helps prevent the impersonation of client computers and servers, which is known as "session hijacking." But misuse of these policy settings is a common error that can cause data loss or problems with data access or security.
 
-With SMB v2 clients and servers, signing can be either required or not required. If this policy setting is enabled, SMBv2 clients will digitally sign all packets. 
+Beginning with SMBv2 clients and servers, signing can be either required or not required. If this policy setting is enabled, SMBv2 clients will digitally sign all packets. 
 
-Performance is improved with SMB v2 signing compared with SMB v1. If you are using SMB2 plus signing with a 1GbE network and a modern CPU, there is limited degradation in performance. If you are using a faster network (like 10GbE), the performance impact of signing will be greater.
+Performance of SMB signing is improved in SMBv2. If you are using a 1 Gb Ethernet network and a modern CPU, there is limited degradation in performance. If you are using a faster network (such as 10 Gb), the performance impact of signing will be greater.
 
-There is another policy setting that relates to packet-signing requirements for SMB v3 and SMB v2 communications:
--   [Microsoft network server: Digitally sign communications (always)](microsoft-network-server-digitally-sign-communications-always.md)
+Another policy setting determines whether signing is required for SMBv3 and SMBv2 server communications: [Microsoft network server: Digitally sign communications (always)](microsoft-network-server-digitally-sign-communications-always.md).
 
-There is a negotiation done between the SMB client and the SMB server to decide whether signing will effectively be used.
-Here’s a summary of the effective behavior for SMB v3 and v2:
+There is a negotiation done between the SMB client and the SMB server to decide whether signing will effectively be used. The following table has the effective behavior for SMBv3 and SMBv2:
 
 |   | Server – Required | Server – Not Required |
 | Client – Required | Signed | Signed           | 
@@ -79,13 +77,13 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-Session hijacking uses tools that allow attackers who have access to the same network as the client device or server to interrupt, end, or steal a session in progress. Attackers can potentially intercept and modify unsigned Server Message Block (SMB) packets and then modify the traffic and forward it so that the server might perform objectionable actions. Alternatively, the attacker could pose as the server or client computer after legitimate authentication, and gain unauthorized access to data.
+Session hijacking uses tools that allow attackers who have access to the same network as the client device or server to interrupt, end, or steal a session in progress. Attackers can potentially intercept and modify unsigned SMB packets and then modify the traffic and forward it so that the server might perform objectionable actions. Alternatively, the attacker could pose as the server or client computer after legitimate authentication, and gain unauthorized access to data.
 
 SMB is the resource-sharing protocol that is supported by many Windows operating systems. It is the basis of NetBIOS and many other protocols. SMB signatures authenticate users and the servers that host the data. If either side fails the authentication process, data transmission does not take place.
 
 ### Countermeasure
 
-Configure the settings as follows:
+Configure this setting as follows:
 
 -   Enable **Microsoft network client: Digitally sign communications (always)**.
 

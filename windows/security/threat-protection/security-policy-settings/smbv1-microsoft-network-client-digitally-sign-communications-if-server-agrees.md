@@ -1,6 +1,6 @@
 ---
-title: Microsoft network client Digitally sign communications (if server agrees) (Windows 10)
-description: Describes the best practices, location, values, and security considerations for the Microsoft network client Digitally sign communications (if server agrees) security policy setting.
+title: SMBv1 Microsoft network client Digitally sign communications (if server agrees) (Windows 10)
+description: For SMBv1 only, describes the best practices, location, values, and security considerations for the Microsoft network client Digitally sign communications (if server agrees) security policy setting.
 ms.assetid: e553f700-aae5-425c-8650-f251c90ba5dd
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -8,14 +8,16 @@ ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
 
-ms.date: 04/19/2017
+ms.date: 06/19/2018
 ---
-# Microsoft network client: Digitally sign communications (if server agrees)
+# SMBv1 Microsoft network client: Digitally sign communications (if server agrees)
 
 **Applies to**
 -   Windows 10
 
-Describes the best practices, location, values, and security considerations for the **Microsoft network client: Digitally sign communications (if server agrees)** security policy setting.
+This topic is about the Server Message Block (SMB) v1 protocol. SMBv1 is not secure and has been deprecated in Windows. Beginning with Windows 10 Fall Creators Update and Windows Server, version 1709, [SMBv1 is not installed by default](https://support.microsoft.com/help/4034314/smbv1-is-not-installed-by-default-in-windows). 
+
+The rest of this topic describes the best practices, location, values, and security considerations for the **Microsoft network client: Digitally sign communications (if server agrees)** security policy setting only for SMBv1. The same policy setting can be applied to computers that run SMBv2. For more information, see [Microsoft network client: Digitally sign communications (if server agrees)](microsoft-network-client-digitally-sign-communications-if-server-agrees.md).
 
 ## Reference
 
