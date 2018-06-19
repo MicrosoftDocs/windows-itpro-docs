@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 06/06/2018
+ms.date: 06/19/2018
 ---
 
 # Configure alert notifications in Windows Defender ATP
@@ -52,7 +52,7 @@ You can create rules that determine the machines and alert severities to send em
 3.	Specify the General information:
     - **Rule name** - Specify a name for the notification rule.
     - **Show customer display name** - Specify the customer name that appears on the email notification.
-    - **Include a deeplink** - Adds a link with the tenant ID to allow access to a specific tenant.
+    - **Include anonymous link** - Adds a link with the tenant ID to allow access to a specific tenant.
     - **Machines** - Choose whether to notify recipients for alerts on all machines (Global administrator role only) or on selected machine groups. For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md).
     - **Alert severity** - Choose the alert severity level
 
