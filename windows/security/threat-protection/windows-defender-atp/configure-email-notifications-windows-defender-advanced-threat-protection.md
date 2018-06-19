@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 06/06/2018
+ms.date: 06/18/2018
 ---
 
 # Configure alert notifications in Windows Defender ATP
