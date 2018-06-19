@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/24/2018
+ms.date: 06/19/2018
 ---
 
 # Onboard machines to the Windows Defender ATP service
@@ -76,7 +76,7 @@ The hardware requirements for Windows Defender ATP on machines is the same as th
 >[!NOTE]
 >You'll need to know the exact Linux distros and macOS X versions that are compatible with Windows Defender ATP for the integration to work. 
 
--  macOSX
+-  macOS X
 -  Linux
 
 
