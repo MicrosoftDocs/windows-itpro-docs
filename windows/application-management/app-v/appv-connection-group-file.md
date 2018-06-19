@@ -8,24 +8,21 @@ ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ---
+# About the connection group file
 
+>Applies to: Windows 10, version 1607
 
-# About the Connection Group File
+## Connection group file overview
 
-**Applies to**
--   Windows 10, version 1607
+### What is a connection group?
 
-**In this topic:**
+A connection group is an App-V feature that can group packages together to create a virtual environment where applications within that package group can interact with each other.
 
--   [Connection group file purpose and location](#bkmk-cg-purpose-loc)
+For example, let's say you want to use plug-ins with Microsoft Office. You can create one package that contains the plug-ins and another package that contains Office, then add both packages to a connection group to enable Office to use those plug-ins.
 
--   [Structure of the connection group XML file](#bkmk-define-cg-5-0sp3)
+### How a connection group file works
 
--   [Configuring the priority of packages in a connection group](#bkmk-config-pkg-priority-incg)
-
--   [Supported virtual application connection configurations](#bkmk-va-conn-configs)
-
-## <a href="" id="bkmk-cg-purpose-loc"></a>Connection group file purpose and location
+When you apply an App-V connection group file, the packages that are enumerated in the file will be combined at runtime into a single virtual environment. Use the Microsoft Application Virtualization (App-V) connection group file to configure existing App-V connection groups.
 
 
 <table>
@@ -50,22 +47,19 @@ ms.date: 04/19/2017
 </tbody>
 </table>
 
- 
+## Structure of the connection group XML file
 
-## <a href="" id="bkmk-define-cg-5-0sp3"></a>Structure of the connection group XML file
-
-
-**In this section:**
-
--   [Parameters that define the connection group](#bkmk-params-define-cg)
-
--   [Parameters that define the packages in the connection group](#bkmk-params-define-pkgs-incg)
-
--   [App-V example connection group XML file](#bkmk-50sp3-exp-cg-xml)
-
-### <a href="" id="bkmk-params-define-cg"></a>Parameters that define the connection group
+### Parameters that define the connection group
 
 The following table describes the parameters in the XML file that define the connection group itself, not the packages.
+
+|Field|Description|
+|-----|-----------|
+|Schema name|Name of the schema.</br>If you want to use the “optional packages” and “use any version” features that are described in this table, you must specify the following schema in the XML file:</br>`xmlns="https://schemas.microsoft.com/appv/2014/virtualapplicationconnectiongroup"`|
+|AppConnectionGroupId|Unique GUID identifier for this connection group. The connection group state is associated with this identifier. Specify this identifier only when you create the connection group.</br>You can create a new GUID by entering **[Guid]::NewGuid()**.|
+|VersionId|Version GUID identifier for this version of the connection group.</br>When you update a connection group (for example, by adding or updating a new package), you must update the version GUID to reflect the new version.|
+|DisplayName|Display name of the connection group.|
+|Priority|Optional priority field for the connection group.</br>A value of **0** indicates the highest priority.</br>If a priority is required, but has not been configured, the package will fail because the correct connection group to use cannot be determined.|
 
 <table>
 <colgroup>
@@ -108,9 +102,7 @@ The following table describes the parameters in the XML file that define the con
 </tbody>
 </table>
 
- 
-
-### <a href="" id="bkmk-params-define-pkgs-incg"></a>Parameters that define the packages in the connection group
+### Parameters that define the packages in the connection group
 
 In the &lt;Packages&gt; section of the connection group XML file, you list the member packages in the connection group by specifying each package’s unique package identifier and version identifier, as described in the following table. The first package in the list has the highest precedence.
 
@@ -149,7 +141,7 @@ In the &lt;Packages&gt; section of the connection group XML file, you list the m
 
  
 
-### <a href="" id="bkmk-50sp3-exp-cg-xml"></a>App-V example connection group XML file
+### App-V example connection group XML file
 
 The following example connection group XML file shows examples of the fields in the previous tables.
 
@@ -176,7 +168,7 @@ xmlns:appv="http://schemas.microsoft.com/appv/2014/virtualapplicationconnectiong
   </appv:Packages>
 ```
 
-## <a href="" id="bkmk-config-pkg-priority-incg"></a>Configuring the priority of packages in a connection group
+## Configuring the priority of packages in a connection group
 
 
 Package precedence is configured using the package list order. The first package in the document has the highest precedence. Subsequent packages in the list have descending priority.
@@ -202,7 +194,7 @@ If a virtual application is opened using another virtual application the virtual
 
 The virtual application Microsoft Outlook is running in virtual environment **XYZ**. When you open an attached Microsoft Word document, a virtualized version Microsoft Word opens in the virtual environment **XYZ**, regardless of the virtualized Microsoft Word’s associated connection groups or runtime priorities.
 
-## <a href="" id="bkmk-va-conn-configs"></a>Supported virtual application connection configurations
+## Supported virtual application connection configurations
 
 The following application connection configurations are supported.
 
@@ -261,8 +253,8 @@ The following application connection configurations are supported.
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
 
 ## Related topics
 
-[Managing Connection Groups](appv-managing-connection-groups.md)
+- [Managing Connection Groups](appv-managing-connection-groups.md)
