@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Overview about how Group Policy works with Windows Powershell and Internet Explorer 11

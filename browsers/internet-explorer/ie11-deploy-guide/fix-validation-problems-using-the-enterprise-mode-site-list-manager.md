@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: When you add multiple sites to your Enterprise Mode site list entries, they’re validated by the Enterprise Mode Site List Manager before they’re entered into your global list.
