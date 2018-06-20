@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: Use the \[CustomBranding\] .INS file setting to specify the location of your branding cabinet (.cab) file.
 author: eross-msft

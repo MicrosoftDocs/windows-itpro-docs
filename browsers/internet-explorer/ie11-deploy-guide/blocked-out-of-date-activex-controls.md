@@ -7,7 +7,7 @@ manager: elizapo
 ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ie11
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 ms.assetid: ''
