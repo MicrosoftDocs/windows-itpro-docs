@@ -26,7 +26,7 @@ This policy setting determines whether SMB packet signing must be negotiated bef
 
 Implementation of digital signatures in high-security networks helps to prevent the impersonation of client computers and servers, which is known as "session hijacking." But misuse of these policy settings is a common error that can cause data loss or problems with data access or security.
 
-For this policy to take effect on computers running Windows 2000, client-side packet signing must also be enabled. To enable client-side SMB packet signing, set [Microsoft network client: Digitally sign communications (if server agrees)](microsoft-network-client-digitally-sign-communications-if-server-agrees.md). Devices that have this policy set will not be able to communicate with devices that do not have server-side packet signing enabled. By default, server-side packet signing is enabled only on domain controllers. Server-side packet signing can be enabled on devices by setting [Microsoft network server: Digitally sign communications (if client agrees)](microsoft-network-server-digitally-sign-communications-if-client-agrees.md).
+For this policy to take effect on computers running Windows 2000, client-side packet signing must also be enabled. To enable client-side SMB packet signing, set [Microsoft network client: Digitally sign communications (if server agrees)](smbv1-microsoft-network-client-digitally-sign-communications-if-server-agrees.md). Devices that have this policy set will not be able to communicate with devices that do not have server-side packet signing enabled. By default, server-side packet signing is enabled only on domain controllers. Server-side packet signing can be enabled on devices by setting [Microsoft network server: Digitally sign communications (if client agrees)](smbv1-microsoft-network-server-digitally-sign-communications-if-client-agrees.md).
 
 If server-side SMB signing is required, a client device will not be able to establish a session with that server, unless it has client-side SMB signing enabled. By default, client-side SMB signing is enabled on workstations, servers, and domain controllers. Similarly, if client-side SMB signing is required, that client device will not be able to establish a session with servers that do not have packet signing enabled. By default, server-side SMB signing is enabled only on domain controllers.
 
@@ -36,9 +36,9 @@ Using SMB packet signing can impose up to a 15 percent performance degradation o
 
 There are three other policy settings that relate to packet-signing requirements for Server Message Block (SMB) communications:
 
--   [Microsoft network client: Digitally sign communications (always)](microsoft-network-client-digitally-sign-communications-always.md)
--   [Microsoft network client: Digitally sign communications (if server agrees)](microsoft-network-client-digitally-sign-communications-if-server-agrees.md)
--   [Microsoft network server: Digitally sign communications (if client agrees)](microsoft-network-server-digitally-sign-communications-if-client-agrees.md)
+-   [Microsoft network client: Digitally sign communications (always)](smbv1-microsoft-network-client-digitally-sign-communications-always.md)
+-   [Microsoft network client: Digitally sign communications (if server agrees)](smbv1-microsoft-network-client-digitally-sign-communications-if-server-agrees.md)
+-   [Microsoft network server: Digitally sign communications (if client agrees)](smbv1-microsoft-network-server-digitally-sign-communications-if-client-agrees.md)
 
 ### Possible values
 
@@ -50,10 +50,10 @@ There are three other policy settings that relate to packet-signing requirements
 
 1.  Configure the following security policy settings as follows:
 
-    -   Disable [Microsoft network client: Digitally sign communications (always)](microsoft-network-client-digitally-sign-communications-always.md).
+    -   Disable [Microsoft network client: Digitally sign communications (always)](smbv1-microsoft-network-client-digitally-sign-communications-always.md).
     -   Disable **Microsoft network server: Digitally sign communications (always)**.
-    -   Enable [Microsoft network client: Digitally sign communications (if server agrees)](microsoft-network-client-digitally-sign-communications-if-server-agrees.md).
-    -   Enable [Microsoft network server: Digitally sign communications (if client agrees)](microsoft-network-server-digitally-sign-communications-if-client-agrees.md).
+    -   Enable [Microsoft network client: Digitally sign communications (if server agrees)](smbv1-microsoft-network-client-digitally-sign-communications-if-server-agrees.md).
+    -   Enable [Microsoft network server: Digitally sign communications (if client agrees)](smbv1-microsoft-network-server-digitally-sign-communications-if-client-agrees.md).
 
 2.  Alternately, you can set all of these policy settings to Enabled, but enabling them can cause slower performance on client devices and prevent them from communicating with legacy SMB applications and operating systems.
 
@@ -96,10 +96,10 @@ SMB is the resource-sharing protocol that is supported by many Windows operating
 
 Configure the settings as follows:
 
--   Disable [Microsoft network client: Digitally sign communications (always)](microsoft-network-client-digitally-sign-communications-always.md).
+-   Disable [Microsoft network client: Digitally sign communications (always)](smbv1-microsoft-network-client-digitally-sign-communications-always.md).
 -   Disable **Microsoft network server: Digitally sign communications (always)**.
--   Enable [Microsoft network client: Digitally sign communications (if server agrees)](microsoft-network-client-digitally-sign-communications-if-server-agrees.md).
--   Enable [Microsoft network server: Digitally sign communications (if client agrees)](microsoft-network-server-digitally-sign-communications-if-client-agrees.md).
+-   Enable [Microsoft network client: Digitally sign communications (if server agrees)](smbv1-microsoft-network-client-digitally-sign-communications-if-server-agrees.md).
+-   Enable [Microsoft network server: Digitally sign communications (if client agrees)](smbv1-microsoft-network-server-digitally-sign-communications-if-client-agrees.md).
 
 In highly secure environments we recommend that you configure all of these settings to Enabled. However, that configuration may cause slower performance on client devices and prevent communications with earlier SMB applications and operating systems.
 
