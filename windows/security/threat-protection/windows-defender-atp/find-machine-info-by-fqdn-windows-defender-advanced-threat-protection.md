@@ -1,7 +1,7 @@
 ---
-title: Find machine information by interal IP API
-description: Use this API to create calls related to finding a machine entry around a specific timestamp by interal IP.
-keywords: ip, apis, graph api, supported apis, find machine, machine information
+title: Find machine information by interal FQDN API
+description: Use this API to create calls related to finding a machine entry around a specific timestamp by FQDN.
+keywords: frdn, apis, graph api, supported apis, find machine, machine information
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 06/20/2018
 ---
 
-# Find machine information by interal IP API
+# Find machine information by interal FQDN API
 
 **Applies to:**
 
@@ -21,14 +21,14 @@ ms.date: 06/20/2018
 
 [!include[Prerelease information](prerelease.md)]
 
-Find a machine entity around a specific timestamp by internal IP.
+Find a machine entity around a specific timestamp by FQDN.
 
 ## Permissions
 User needs read permissions.
 
 ## HTTP request
 ```
-GET /testwdatppreview/machines/find(timestamp={time},key={IP})
+GET /testwdatppreview/machines/find(timestamp={time},key={FQDN})
 ```
 
 ## Request headers
@@ -54,7 +54,7 @@ Request
 Here is an example of the request.
 
 ```
-GET https://graph.microsoft.com/testwdatppreview/machines/find(timestamp=2018-06-19T10:00:00Z,key='10.0.0.0')
+GET https://graph.microsoft.com/testwdatppreview/machines/find(timestamp=2018-06-19T10:00:00Z,key='https://contoso.com')
 Content-type: application/json
 ```
 
@@ -62,7 +62,7 @@ Response
 
 Here is an example of the response.
 
-The response will return a list of all machines that reported this IP address within sixteen minutes prior and after the timestamp. 
+The response will return a list of all machines that reported this FQDN address within sixteen minutes prior and after the timestamp. 
 
 ```
 HTTP/1.1 200 OK
