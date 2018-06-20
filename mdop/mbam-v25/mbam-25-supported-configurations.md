@@ -464,6 +464,12 @@ The following table lists the operating systems that are supported for MBAM Clie
 </tr>
 </thead>
 <tbody>
+<tr class="even">
+    <td align="left"><p>Windows 10 IoT</p></td>
+    <td align="left"><p>Enterprise</p></td>
+    <td align="left"><p></p></td>
+    <td align="left"><p>32-bit or 64-bit</p></td>
+</tr>  
 <tr class="odd">
 <td align="left"><p>Windows 10</p></td>
 <td align="left"><p>Enterprise</p></td>
@@ -518,6 +524,12 @@ The following table lists the operating systems that are supported for MBAM Grou
 </tr>
 </thead>
 <tbody>
+ <tr class="even">
+      <td align="left"><p>Windows 10 IoT</p></td>
+      <td align="left"><p>Enterprise</p></td>
+      <td align="left"><p></p></td>
+      <td align="left"><p>32-bit or 64-bit</p></td>
+ </tr>
 <tr class="odd">
 <td align="left"><p>Windows 10</p></td>
 <td align="left"><p>Enterprise</p></td>
