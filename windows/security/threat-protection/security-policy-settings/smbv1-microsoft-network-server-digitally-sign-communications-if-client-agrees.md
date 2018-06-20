@@ -17,7 +17,7 @@ ms.date: 06/19/2018
 
 This topic is about the Server Message Block (SMB) v1 protocol. SMBv1 is not secure and has been deprecated in Windows. Beginning with Windows 10 Fall Creators Update and Windows Server, version 1709, [SMBv1 is not installed by default](https://support.microsoft.com/help/4034314/smbv1-is-not-installed-by-default-in-windows). 
 
-The rest of this topic describes the best practices, location, values, policy management and security considerations for the **Microsoft network server: Digitally sign communications (if client agrees)** security policy setting only for SMBv1. The same policy setting can be applied to computers that run SMBv2. For more information, see [Microsoft network server: Digitally sign communications (if client agrees)](microsoft-network-server-digitally-sign-communications-if-client-agrees.md).
+The rest of this topic describes the best practices, location, values, policy management and security considerations for the **Microsoft network server: Digitally sign communications (if client agrees)** security policy setting only for SMBv1. The same policy setting can be applied to computers that run SMBv2. For more information, see [Microsoft network server: Digitally sign communications (if client agrees)](microsoft-network-server-digitally-sign-communications-always.md).
 
 ## Reference
 
