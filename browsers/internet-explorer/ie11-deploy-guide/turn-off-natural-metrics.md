@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: support
 description: Turn off natural metrics for Internet Explorer 11
 author: eross-msft

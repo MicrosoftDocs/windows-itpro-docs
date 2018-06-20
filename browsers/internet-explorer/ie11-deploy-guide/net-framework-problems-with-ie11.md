@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: support
 description: How to turn managed browser hosting controls back on in Internet Explorer 11.
 author: eross-msft

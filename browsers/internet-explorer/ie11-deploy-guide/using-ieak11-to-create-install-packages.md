@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use IEAK 11 while planning, customizing, and building the custom installation package.
 author: eross-msft
