@@ -7,7 +7,7 @@ author: lizap
 ms.date: 09/28/2017
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ---
 # Architectural planning posters for Windows 10
 
