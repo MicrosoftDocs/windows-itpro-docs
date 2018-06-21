@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerms
 ms.localizationpriority: high
-ms.date: 04/30/2018
+ms.date: 06/21/2018
 ms.author: jdecker
 ms.topic: article
 ---
@@ -38,9 +38,6 @@ You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provi
 <span id="intune"/>
 ## Configure a kiosk in Microsoft Intune
 
-Watch how to use Intune to configure a multi-app kiosk.
-
->[!VIDEO https://www.microsoft.com/videoplayer/embed/ce9992ab-9fea-465d-b773-ee960b990c4a?autoplay=false]
 
 1. [Generate the Start layout for the kiosk device.](#startlayout)
 2. In the Microsoft Azure portal, search for **Intune** or go to **More services** > **Intune**.
@@ -49,21 +46,23 @@ Watch how to use Intune to configure a multi-app kiosk.
 5. Select **Create profile**.
 6. Enter a friendly name for the profile.
 7. Select **Windows 10 and later** for the platform.
-8. Select **Device restrictions** for the profile type.
-9. Select **Kiosk**.
-10. In **Kiosk Mode**, select **Multi app kiosk**.
-11. Select **Add** to define a configuration, which specifies the apps that will run and the layout for the Start menu.
+8. Select **Kiosk (Preview)** for the profile type.
+9. Select **Kiosk - 1 setting available**.
+10. Select **Add** to define a configuration, which specifies the apps that will run and the layout for the Start menu.
 12. Enter a friendly name for the configuration.
-13. Select an app type, either **Win32 App** for a classic desktop application or **UWP App** for a Universal Windows Platform app.
-  - For **Win32 App**, enter the fully qualified pathname of the executable, with respect to the device.
-  - For **UWP App**, enter the Application User Model ID for an installed app.
+10. In **Kiosk Mode**, select **Multi app kiosk**.
+13. Select an app type.
+  - For **Add Win32 app**, enter a friendly name for the app in **App Name**, and enter the path to the app executable in **Identifier**.
+  - For **Add managed apps**, select an app that you manage through Intune.
+  - For **Add app by AUMID**, enter the Application User Model ID (AUMID) for an installed UWP app.
 14. Select whether to enable the taskbar.
 15. Browse to and select the Start layout XML file that you generated in step 1.
 16. Add one or more accounts. When the account signs in, only the apps defined in the configuration will be available.
 17. Select **OK**. You can add additional configurations or finish.
 18. Assign the profile to a device group to configure the devices in that group as kiosks.
 
-
+>[!NOTE]
+>Managed apps are apps that are in the Microsoft Store for Business that is synced with your Intune subscription.
 
 
 
@@ -298,6 +297,8 @@ You can assign:
 ##### Config for AutoLogon Account
 
 When you use `<AutoLogonAccount>` and the configuration is applied to a device, the specified account (managed by Assigned Access) is created on the device as a local standard user account. The specified account is signed in automatically after restart.
+
+On domain-joined devices, local user accounts aren't shown on the sign-in screen by default. To show the **AutoLogonAccount** on the sign-in screen, enable the following Group Policy setting: **Computer Configuration > Administrative Templates > System > Logon > Enumerate local users on domain-joined computers**. (The corresponding MDM policy setting is [WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers in the Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-enumeratelocalusersondomainjoinedcomputers).)
 
 ```xml
 <Configs>

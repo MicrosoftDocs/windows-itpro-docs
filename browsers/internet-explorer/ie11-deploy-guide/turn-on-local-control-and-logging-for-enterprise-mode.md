@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Turn on local user control and logging for Enterprise Mode.

@@ -1,9 +1,7 @@
 ---
 title: Configure HoloLens using a provisioning package (HoloLens)
 description: Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging.
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.pagetype: hololens, devices
+ms.prod: hololens
 ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
@@ -24,7 +22,7 @@ Some of the HoloLens configurations that you can apply in a provisioning package
 - Set up a Wi-Fi connection
 - Apply certificates to the device
 
-To create provisioning packages, you must install Windows Configuration Designer [from Microsoft Store]((https://www.microsoft.com/store/apps/9nblggh4tx22)) or [from the Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). If you install Windows Configurations Designer from the Windows ADK, select **Configuration Designer** from the **Select the features you want to install** dialog box.
+To create provisioning packages, you must install Windows Configuration Designer [from Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22) or [from the Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). If you install Windows Configurations Designer from the Windows ADK, select **Configuration Designer** from the **Select the features you want to install** dialog box.
 
 
 

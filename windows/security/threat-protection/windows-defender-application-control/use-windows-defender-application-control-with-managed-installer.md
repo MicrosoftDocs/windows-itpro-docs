@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 author: mdsakibMSFT
-ms.date: 03/01/2018
+ms.date: 06/13/2018
 ---
 
 # Deploy Managed Installer for Windows Defender Application Control

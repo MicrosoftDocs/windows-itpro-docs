@@ -7,16 +7,16 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
-author: brianlic-msft
-ms.author: brianlic-msft
-ms.date: 04/09/2018
+author: danihalfin
+ms.author: daniha
+ms.date: 06/05/2018
 ---
 
 # Manage connections from Windows operating system components to Microsoft services
  
 **Applies to**
 
--   Windows 10 Enterprise edition
+-   Windows 10 Enterprise, version 1607 and newer
 -   Windows Server 2016
 
 If you're looking for content on what each diagnostic data level means and how to configure it in your organization, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
@@ -32,7 +32,10 @@ This baseline was created in the same way as the [Windows security baselines](/w
 Running the Windows Restricted Traffic Limited Functionality Baseline on devices in your organization will allow you to quickly configure all of the settings covered in this document. 
 However, some of the settings reduce the functionality and security configuration of your device and are therefore not recommended. 
 Make sure should you've chosen the right settings configuration for your environment before applying. 
-You should not extract this package to the windows\\system32 folder because it will not apply correctly. 
+You should not extract this package to the windows\\system32 folder because it will not apply correctly.
+
+>[!IMPORTANT]
+> As part of the [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887), MDM functionallity is disabled. If you manage devices through MDM, make sure [cloud notifications are enabled](#bkmk-priv-notifications).
 
 Applying the Windows Restricted Traffic Limited Functionality Baseline is the same as applying each setting covered in this article. 
 It is recommended that you restart a device after making configuration changes to it. 
@@ -87,12 +90,12 @@ Here's a list of changes that were made to this article for Windows 10, version 
 
 The following sections list the components that make network connections to Microsoft services by default. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure diagnostic data at the Security level, turn off Windows Defender diagnostic data and MSRT reporting, and turn off all of these connections.
 
->[!NOTE]
->For some settings, MDM policies only partly cover capabilities available through Group Policy. See each setting’s section for more details.
-
 ### Settings for Windows 10 Enterprise edition 
 
-The following table lists management options for each setting, beginning with Windows 10 Enterprise version 1703.
+The following table lists management options for each setting, beginning with Windows 10 Enterprise version 1607.
+
+>[!NOTE]
+>For some settings, MDM policies only partly cover capabilities available through Group Policy. See each setting’s section for more details.
 
 | Setting | UI | Group Policy | MDM policy | Registry | Command line |
 | - | :-: | :-: | :-: | :-: | :-: |
@@ -1075,6 +1078,9 @@ To turn off **Choose apps that can use your microphone**:
 
 ### <a href="" id="bkmk-priv-notifications"></a>17.5 Notifications
 
+>[!IMPORTANT]
+>Disabling notifications will also disable the ability to manage the device through MDM. If you are using an MDM solution, make sure cloud notifications are enabled through one of the options below.
+
 To turn off notifications network usage:
 
 -   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Notifications** > **Turn off Notifications network usage**
@@ -1968,7 +1974,7 @@ You can turn off Windows Update by setting the following registry entries:
 
     -and-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Update** &gt; **Specify intranet Microsoft update service location** and set the **Set the alternate download server** to "".
+-   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Update** &gt; **Specify intranet Microsoft update service location** and set the **Set the alternate download server** to " ".
 
 
 You can turn off automatic updates by doing one of the following. This is not recommended.

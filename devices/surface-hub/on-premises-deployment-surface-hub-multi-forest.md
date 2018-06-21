@@ -2,10 +2,8 @@
 title: On-premises deployment multi-forest (Surface Hub)
 description: This topic explains how you add a device account for your Microsoft Surface Hub when you have a multi-forest, on-premises deployment.
 keywords: multi forest deployment, on prem deployment, device account, Surface Hub
-ms.prod: w10
-ms.mktglfcycl: deploy
+ms.prod: surface-hub
 ms.sitesec: library
-ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
 ms.date: 06/01/2018

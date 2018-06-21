@@ -1,9 +1,7 @@
 ---
 title: Preview new mixed reality apps for HoloLens
 description: Here's how to download and distribute new mixed reality apps for HoloLens, free for a limited time during public preview
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.pagetype: hololens, devices
+ms.prod: hololens
 ms.sitesec: library
 author: alhopper
 ms.author: alhopper

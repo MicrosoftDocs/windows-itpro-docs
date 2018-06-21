@@ -28,10 +28,8 @@ ms.date: 06/01/2018
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
 
-## Advanced hunting table reference
-When you run a query using Advanced hunting, a table with columns is returned as a result. 
-
-Use the following table to understand what the columns represent, its data type, and their description. 
+## Advanced hunting column reference
+To effectively build queries that span multiple tables, you need to understand the columns in the Advanced hunting schema. The following table lists all the available columns, along with their data types and descriptions. This information is also available in the schema representation in the Advanced hunting screen.
 
 | Column name | Data type | Description
 :---|:--- |:---                                                            
@@ -69,8 +67,9 @@ Use the following table to understand what the columns represent, its data type,
 | IsAzureADJoined | boolean | Boolean indicator of whether machine is joined to the Azure Active Directory |
 | LocalIP | string | IP address assigned to the local machine used during communication |
 | LocalPort | int | TCP port on the local machine used during communication |
+| LogonId | string | Identifier for a logon session. This identifier is unique on the same machine only between restarts. |
 | LoggedOnUsers | string | List of all users that are logged on the machine at the time of the event in JSON array format |
-| LogonType | string | Type of logon session, specifically: <br><br> - **Interactive** - User physically interacts with the machine using the local keyboard and screen.<br> <br> - **Remote interactive (RDP) logons** - User interacts with the machine remotely using Remote Desktop, Terminal Services, Remote Assistance, or other RDP clients. <br><br> - **Network** - Session initiated when the machine is accessed using PsExec or when shared resources on the machine, such as printers and shared folders, are accessed. <br><br> - **Batch** - Session initiated by scheduled tasks. <br><br> - **Service** - Session initiated by services as they start. <br> 
+| LogonType | string | Type of logon session, specifically:<br><br> - **Interactive** - User physically interacts with the machine using the local keyboard and screen<br><br> - **Remote interactive (RDP) logons** - User interacts with the machine remotely using Remote Desktop, Terminal Services, Remote Assistance, or other RDP clients<br><br> - **Network** - Session initiated when the machine is accessed using PsExec or when shared resources on the machine, such as printers and shared folders, are accessed<br><br> - **Batch** - Session initiated by scheduled tasks<br><br> - **Service** - Session initiated by services as they start<br> 
 | MachineGroup | string | Machine group of the machine. This group is used by role-based access control to determine access to the machine. |
 | MachineId | string | Unique identifier for the machine in the service |
 | MD5 | string | MD5 hash of the file that the recorded action was applied to |
@@ -88,16 +87,17 @@ Use the following table to understand what the columns represent, its data type,
 | ProcessIntegrityLevel | string | Integrity level of the newly created process. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet downloaded. These integrity levels influence permissions to resources. |
 | ProcessTokenElevation | string | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the newly created process |
 | ProviderId | string | Unique identifier for the Event Tracing for Windows (ETW) provider that collected the event log |
-| RemoteComputerName | string | Name of the machine that performed a remote operation on the affected machine. Depending on the event being reported, this name could be a fully-qualified domain name (FQDN), a NetBIOS name, or a host name without domain information. | |
+| PublicIP | string | Public IP address used by the onboarded machine to connect to the Windows Defender ATP service. This could be the IP address of the machine itself, a NAT device, or a proxy. |
 | RegistryKey | string | Registry key that the recorded action was applied to |
 | RegistryValueData | string | Data of the registry value that the recorded action was applied to |
 | RegistryValueName | string | Name of the registry value that the recorded action was applied to |
 | RegistryValueType | string | Data type, such as binary or string, of the registry value that the recorded action was applied to |
+| RemoteComputerName | string | Name of the machine that performed a remote operation on the affected machine. Depending on the event being reported, this name could be a fully-qualified domain name (FQDN), a NetBIOS name, or a host name without domain information. |
 | RemoteIP | string | IP address that was being connected to |
 | RemotePort | int | TCP port on the remote device that was being connected to |
 | RemoteUrl | string | URL or fully qualified domain name (FQDN) that was being connected to |
-| SHA1 | string | SHA-1 of the file that the recorded action was applied to |
 | ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns. |
+| SHA1 | string | SHA-1 of the file that the recorded action was applied to |
 | SHA256 | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated—use the SHA1 column when available. |
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-belowfoldlink)        

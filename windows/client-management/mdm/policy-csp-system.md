@@ -6,11 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/14/2018
+ms.date: 06/05/2018
 ---
 
 # Policy CSP - System
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -45,6 +47,12 @@ ms.date: 05/14/2018
   </dd>
   <dd>
     <a href="#system-bootstartdriverinitialization">System/BootStartDriverInitialization</a>
+  </dd>
+  <dd>
+    <a href="#system-configuretelemetryoptinchangenotification">System/ConfigureTelemetryOptInChangeNotification</a>
+  </dd>
+  <dd>
+    <a href="#system-configuretelemetryoptinsettingsux">System/ConfigureTelemetryOptInSettingsUx</a>
   </dd>
   <dd>
     <a href="#system-disableenterpriseauthproxy">System/DisableEnterpriseAuthProxy</a>
@@ -684,6 +692,137 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
+<a href="" id="system-configuretelemetryoptinchangenotification"></a>**System/ConfigureTelemetryOptInChangeNotification**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting determines whether a device shows notifications about telemetry levels to people on first logon or when changes occur in Settings. 
+If you set this policy setting to "Disable telemetry change notifications", telemetry level notifications stop appearing.
+If you set this policy setting to "Enable telemetry change notifications" or don't configure this policy setting, telemetry notifications appear at first logon and when changes occur in Settings.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure telemetry opt-in change notifications.*
+-   GP name: *ConfigureTelemetryOptInChangeNotification*
+-   GP element: *ConfigureTelemetryOptInChangeNotification*
+-   GP path: *Data Collection and Preview Builds*
+-   GP ADMX file name: *DataCollection.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="system-configuretelemetryoptinsettingsux"></a>**System/ConfigureTelemetryOptInSettingsUx**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting determines whether people can change their own telemetry levels in Settings. This setting should be used in conjunction with the Allow Telemetry settings.
+
+If you set this policy setting to "Disable Telemetry opt-in Settings", telemetry levels are disabled in Settings, preventing people from changing them.
+
+If you set this policy setting to "Enable Telemetry opt-in Setings" or don't configure this policy setting, people can change their own telemetry levels in Settings.
+
+Note:
+Set the Allow Telemetry policy setting to prevent people from sending diagnostic data to Microsoft beyond your organization's limit.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure telemetry opt-in setting user interface.*
+-   GP name: *ConfigureTelemetryOptInSettingsUx*
+-   GP element: *ConfigureTelemetryOptInSettingsUx*
+-   GP path: *Data Collection and Preview Builds*
+-   GP ADMX file name: *DataCollection.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="system-disableenterpriseauthproxy"></a>**System/DisableEnterpriseAuthProxy**  
 
 <!--SupportedSKUs-->
@@ -1051,6 +1190,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
+-   5 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
 

@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Enhanced Protected Mode problems with Internet Explorer

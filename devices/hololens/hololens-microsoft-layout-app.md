@@ -1,9 +1,7 @@
 ---
 title: Microsoft Layout
 description: How to get and deploy the Microsoft Layout app throughout your organization
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.pagetype: hololens, devices
+ms.prod: hololens
 ms.sitesec: library
 author: alhopper-msft
 ms.author: alhopper
@@ -27,7 +25,7 @@ Microsoft Layout works with a HoloLens, or with a Windows Mixed Reality headset 
 
 | OS requirements                   | Details                                                    |
 |:----------------------------------|:-----------------------------------------------------------|
-| Build 10.0.17134.77 or above | See [Manage updates to HoloLens](hololens-updates.md) for instructions on upgrading to this build. |
+| Build 10.0.17134.77 or above | See [Update HoloLens](https://support.microsoft.com/help/12643/hololens-update-hololens) for instructions on upgrading to this build. |
 
 #### Windows Mixed Reality headset requirements
 

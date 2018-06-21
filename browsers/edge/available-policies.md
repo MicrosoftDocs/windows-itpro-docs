@@ -32,11 +32,11 @@ Computer Configuration\Administrative Templates\Windows Components\Microsoft Edg
 >*Supported versions: Windows 10, version 1803*<br>
 >*Default setting: None*
 
-You can configure Microsoft Edge to use a shared folder to store books from the Books Library.
+You can configure Microsoft Edge to store books from the Books Library to a default, shared folder for Windows, which decreases the amount of storage used by book files. When you enable this policy, Microsoft Edge downloads book files automatically to a common, shared folder, and prevents users from removing the book from the library. For this policy to work properly, users must be signed in with a school or work account.  
+
+If you disable or don’t configure this policy, Microsoft Edge does not use a shared folder but downloads book files to a per-user folder for each user. 
  
-If enabled, a shared books folder is allowed.
- 
-If disabled, a shared books folder not allowed. 
+
 
 **MDM settings in Microsoft Intune** 
 |   |   |
@@ -45,30 +45,30 @@ If disabled, a shared books folder not allowed.
 |Supported devices |Desktop  |
 |URI full path |./Vendor/MSFT/Policy/Config/Browser/UseSharedFolderForBooks  |
 |Data type |Integer  |
-|Allowed values |<ul><li>**0** - No folder shared.</li><li>**1** - Use a shared folder.</li></ul> |
+|Allowed values |<ul><li>**0** - Disabled.</li><li>**1** - Enabled.</li></ul> |
 
 
 ## Allow Address bar drop-down list suggestions
 >*Supported versions: Windows 10, version 1703 or later*
 
-The Address bar drop-down list, when enabled, allows the Address bar drop-down functionality in Microsoft Edge. By default, this policy is enabled. If disabled, you do not see the address bar drop-down functionality and disables the user-defined policy "Show search and site suggestions as I type."  Therefore, because search suggestions are shown in the drop-down, this policy takes precedence over the [Configure search suggestions in Address bar](https://review.docs.microsoft.com/en-us/microsoft-edge/deploy/available-policies?branch=pashort_edge-backlog_vsts15846461#configure-search-suggestions-in-address-bar) or [AllowSearchSuggestionsinAddressBar](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsearchsuggestionsinaddressbar) policy.
+By default, Microsoft Edge shows the Address bar drop-down list and makes it available.  If you want to minimize network connections from Microsoft Edge to Microsoft service, we recommend disabling this policy. Disabling this policy turns off the Address bar drop-down list functionality. 
 
-If you want to minimize network connections from Microsoft Edge to Microsoft services, we recommend that you disable this policy. 
+When disabled, Microsoft Edge also disables the user-defined policy Show search and site suggestions as I type. Because the drop-down shows the search suggestions, this policy takes precedence over the [Configure search suggestions in Address bar](https://docs.microsoft.com/en-us/microsoft-edge/deploy/available-policies#configure-search-suggestions-in-address-bar) policy.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
 |---|---|
-|MDM name |[AllowAddressBarDropdown](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowaddressbardropdown) |
+|MDM name |Browser/[AllowAddressBarDropdown](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowaddressbardropdown) |
 |Supported devices |Desktop  |
 |URI full path | ./Vendor/MSFT/Policy/Config/Browser/AllowAddressBarDropdown |
 |Data type | Integer |
-|Allowed values |<ul><li>**0** - Not Allowed. Address bar drop-down is disabled, which also disables the user-defined policy, "Show search and site suggestions as I type."</li><li>**1 (default)** - Allowed. Address bar drop-down is enabled.</li></ul> |
+|Allowed values |<ul><li>**0** - Disabled. Not allowed.</li><li>**1 (default)** - Enabled or not configured. Allowed.</li></ul> |
 
  
 ## Allow Adobe Flash
 >*Supported version: Windows 10*
 
-Adobe Flash is integrated with Microsoft Edge and is updated via Windows Update. By default, this policy is enabled or not configured allowing you to use Adobe Flash Player in Microsoft Edge. 
+Adobe Flash is integrated with Microsoft Edge and updated via Windows Update. With this policy, you can configure Microsoft Edge to run Adobe Flash content or prevent Adobe Flash from running.
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -77,12 +77,12 @@ Adobe Flash is integrated with Microsoft Edge and is updated via Windows Update.
 |Supported devices |Desktop  |
 |URI full path | ./Vendor/MSFT/Policy/Config/Browser/AllowAdobeFlash |
 |Data type | Integer |
-|Allowed values |<ul><li>**0** - Adobe Flash cannot be used Microsoft Edge.</li><li>**1 (default)** - Adobe Flash can be used in Microsoft Edge. </li></ul> |
+|Allowed values |<ul><li>**0** - Disabled. Microsoft Edge prevents Adobe Flash content from running.</li><li>**1 (default)** - Enabled or not configured. Microsoft Edge runs Adobe Flash content. </li></ul> |
 
 ## Allow clearing browsing data on exit
 >*Supported versions: Windows 10, version 1703*
 
-Your browsing data is the information that Microsoft Edge remembers and stores as you browse websites. Browsing data includes information you entered forms, passwords, and the websites you visited. By default, this policy is disabled or not configured, the browsing data is not cleared when exiting. When this policy is disabled or not configured, you can turn on and configure the Clear browsing data option under Settings. 
+By default, Microsoft Edge does not clear the browsing data on exit, but users can configure the _Clear browsing data_ option in Settings.  Browsing data includes information you entered in forms, passwords, and even the websites visited. Enable this policy if you want to clear the browsing data automatically each time Microsoft Edge closes.
 
 
 **Microsoft Intune to manage your MDM settings**
@@ -92,7 +92,7 @@ Your browsing data is the information that Microsoft Edge remembers and stores a
 |Supported devices |Desktop  |
 |URI full path | ./Vendor/MSFT/Policy/Config/Browser/ClearBrowsingDataOnExit  |
 |Data type | Integer |
-|Allowed values |<ul><li>**0 (default)** - Browsing data is not cleared on exit. The type of browsing data to clear can be configured by the employee in the Clear browsing data options under Settings.</li><li>**1** - Browsing data is cleared on exit.</li></ul> |
+|Allowed values |<ul><li>**0 (default)** - Disabled or not configured. Microsoft Edge does not clear the browsing data on exit, but users can configure the _Clear browsing data_ option in Settings.</li><li>**1** - Enabled. Clears the browsing data each time Microsoft Edge closes.</li></ul> |
 
 
 ## Allow configuration updates for the Books Library
