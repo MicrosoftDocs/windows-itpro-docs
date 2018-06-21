@@ -21,19 +21,21 @@ Describes the best practices, location, values, policy management and security c
 
 The Server Message Block (SMB) protocol provides the basis for file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. 
 
-Implementation of digital signatures in high-security networks helps prevent the impersonation of client computers and servers, which is known as "session hijacking." But misuse of these policy settings is a common error that can cause data loss or problems with data access or security.
+Implementation of digital signatures in high-security networks helps prevent the impersonation of client computers and servers, which is known as "session hijacking." But misuse of these policy settings is a common error that can cause failure to access data.
 
 Beginning with SMBv2 clients and servers, signing can be either required or not required. If this policy setting is enabled, SMBv2 clients will digitally sign all packets. 
 
-Performance of SMB signing is improved in SMBv2. If you are using a 1 Gb Ethernet network and a modern CPU, there is limited degradation in performance. If you are using a faster network (such as 10 Gb), the performance impact of signing will be greater.
+Performance of SMB signing is improved in SMBv2. For more details, see [Potential impact](#potential-impact). 
 
 Another policy setting determines whether signing is required for SMBv3 and SMBv2 server communications: [Microsoft network client: Digitally sign communications (always)](microsoft-network-client-digitally-sign-communications-always.md).
 
 There is a negotiation done between the SMB client and the SMB server to decide whether signing will effectively be used. The following table has the effective behavior for SMBv3 and SMBv2:
 
 |   | Server – Required | Server – Not Required |
+|---|-------------------|-----------------------|
 | Client – Required | Signed | Signed           | 
 | Client – Not Required | Signed <sup>*</sup> | Not Signed<sup>**</sup> |
+
 <sup>*</sup> Default for domain controller SMB traffic
 <sup>**</sup> Default for all other SMB traffic
 
@@ -79,19 +81,18 @@ This section describes how an attacker might exploit a feature or its configurat
 
 Session hijacking uses tools that allow attackers who have access to the same network as the client device or server to interrupt, end, or steal a session in progress. Attackers can potentially intercept and modify unsigned Server Message Block (SMB) packets and then modify the traffic and forward it so that the server might perform objectionable actions. Alternatively, the attacker could pose as the server or client device after legitimate authentication and gain unauthorized access to data.
 
-SMB is the resource-sharing protocol that is supported by many Windows operating systems. It is the basis of NetBIOS and many other protocols. SMB signatures authenticate users and the servers that host the data. If either side fails the authentication process, data transmission does not take place.
+SMB is the resource-sharing protocol that is supported by many Windows operating systems. It is the basis of many modern features like Storage Spaces Direct, Storage Replica, and SMB Direct, as well as many legacy protocols and tools. If either side fails the authentication process, data transmission does not take place.
 
 ### Countermeasure
 
-Configure this setting as follows:
-
--   Enable **Microsoft network server: Digitally sign communications (always)**.
+Enable **Microsoft network server: Digitally sign communications (always)**.
 
 >[!NOTE]  
 >An alternative countermeasure that could protect all network traffic is to implement digital signatures with IPsec. There are hardware-based accelerators for IPsec encryption and signing that could be used to minimize the performance impact on the servers' CPUs. No such accelerators are available for SMB signing.
  
 ### Potential impact
 
+Storage speeds impact performance. A faster drive on the source and destination allows more throughput, which causes more CPU usage of signing. If you are using a 1 Gb Ethernet network or slower storage speed with a modern CPU, there is limited degradation in performance. If you are using a faster network (such as 10 Gb), the performance impact of signing may be greater.
 
 ## Related topics
 
