@@ -276,30 +276,38 @@ To get started:
 
   ![OneNote icon](images/OneNote_logo.png)
 
-2. Click **Add Page** to launch a blank work space.
+2. In the top left corner, click on the **<** arrow to access your notebooks and pages.
+
+  ![OneNote back arrow navigation button](images/left_arrow.png)
+
+3. Click **Add Page** to launch a blank work space.
 
   ![Select add page button](images/plus-page.png)
 
-3. Write the equation 3x+4=7 in ink or type it as text.
-
 4. Make sure your pen is paired to the device. To pair, see <a href="https://support.microsoft.com/en-us/help/12383" target="_blank">Connect to Bluetooth devices</a>.
 
-5. On the Draw tab, click the **Math** button.
+To solve the equation 3x+4=7, follow these instructions:
+1. Write the equation 3x+4=7 in ink using the pen or type it in as text.
+
+2. If you wrote the equation using digital ink, use the Lasso tool to circle the equation. If you typed the equation, highlight it using your mouse.
+
+  ![Lasso button](images/lasso.png)
+
+3. On the **Draw** tab, click the **Math** button.  
 
   ![Math button](images/math-button.png)
 
-To solve the equation 3x+4=7, follow these instructions:
-1. From the drop-down menu in the **Math** pane, select the option to **Solve for x**. You can now see the final solution of the equation.
+4. From the drop-down menu in the **Math** pane, select the option to **Solve for x**. You can now see the final solution of the equation.
 
   ![Solve for x menu](images/solve-for-x.png)
 
-2. From the second drop-down below, choose **Steps for Solving Linear Formula**, which shows you the step-by-step solution of this equation.
+5. From the second drop-down below, choose **Steps for Solving Linear Formula**, which shows you the step-by-step solution of this equation.
 
-3. On the **View** tab, click the **Replay** button and select the written equation to watch it replay your text. Replay is great for students to review how the teacher solved the equation, for example.
+6. 6.	On the **View** tab, click the **Replay** button. Use your mouse to select the written equation and watch your text in replay. Replay is great for students to review how the teacher solved the equation and for teachers to review how students approached a problem.
 
   ![Replay button](images/replay.png)
 
-To graph 3x+4=7:
+To graph the equation 3x+4=7, follow these instructions:
 1. From the drop-down menu in the **Math** pane, select the option to **Graph Both Sides in 2D**. You can play with the interactive graph of your equation - use a single finger to move the graph position or two fingers to change the **zoom** level.
 
   ![Graph both sides in 2D](images/graph-for-x.png)
