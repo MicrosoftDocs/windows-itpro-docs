@@ -69,6 +69,7 @@ The hardware requirements for Windows Defender ATP on machines is the same as th
 ### Other supported operating systems
 >[!NOTE]
 >You'll need to know the exact Linux distros and macOS X versions that are compatible with Windows Defender ATP for the integration to work. 
+
 -  macOSX
 -  Linux
 
