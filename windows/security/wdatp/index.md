@@ -16,7 +16,7 @@ ms.date: 06/04/2018
 Windows Defender Advanced Threat Protection (Windows Defender ATP)is a unified platform for preventative protection, post-breach detection, automated investigation and response, employing intelligent protection to protect endpoints from cyber threats.
 
 
-![Windows Defender ATP components](images/wdatp-pillars.png)
+![Windows Defender ATP components](images/wdatp-pillars2.png)
 
 **Attack surface reduction**<br>
 The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
@@ -32,9 +32,6 @@ In conjunction with being able to quickly respond to advanced attacks, Windows D
 
 **Security posture**<br>
 Windows Defender ATP also provides a security posture capability to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security state of your network.
-
-**Advanced hunting**<br>
-Advanced hunting gives you the flexibility of using a powerful search and query tool to proactively hunt for possible threats across your organization.
 
 
 Understand how capabilities align within the Windows Defender ATP suite offering:
