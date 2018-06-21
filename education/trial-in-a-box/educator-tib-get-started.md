@@ -274,21 +274,21 @@ The **Math Assistant** and **Ink Replay** features available in the OneNote app 
 To get started:
 1. Open the OneNote app for Windows 10 (not OneNote 2016).
 
+  ![OneNote icon](images/OneNote_logo.png)
+
 2. Click **Add Page** to launch a blank work space.
 
   ![Select add page button](images/plus-page.png)
 
 3. Write the equation 3x+4=7 in ink or type it as text.
 
-4. If you wrote the equation using digital ink, use the **Lasso** tool to circle the equation. If you typed the equation, highlight it using your cursor.
-
-  ![Lasso tool button](images/lasso.png)
+4. Make sure your pen is paired to the device. To pair, see <a href="https://support.microsoft.com/en-us/help/12383" target="_blank">Connect to Bluetooth devices</a>.
 
 5. On the Draw tab, click the **Math** button.
 
   ![Math button](images/math-button.png)
 
-To solve 3x+4=7:
+To solve the equation 3x+4=7, follow these instructions:
 1. From the drop-down menu in the **Math** pane, select the option to **Solve for x**. You can now see the final solution of the equation.
 
   ![Solve for x menu](images/solve-for-x.png)
