@@ -270,7 +270,8 @@ Today, we'll explore a Minecraft world through the eyes of a student.
 
 The **Math Assistant** and **Ink Replay** features available in the OneNote app for Windows 10 and OneNote Online give your students step-by-step instructions on how to solve their math problems and help them visualize math functions on an interactive 2D graph.
 
-**Solve 3x+4=7 in OneNote!**
+**Let's solve 3x+4=7 in OneNote using the pen!**
+To get started:
 1. Open the OneNote app for Windows 10 (not OneNote 2016).
 
 2. Click **Add Page** to launch a blank work space.
