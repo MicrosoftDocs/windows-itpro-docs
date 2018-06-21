@@ -10,7 +10,7 @@ ms.localizationpriority: high
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 06/19/2018
+ms.date: 06/21/2018
 ---
 
 # Change history for Configure Windows 10
@@ -21,7 +21,7 @@ This topic lists new and updated topics in the [Configure Windows 10](index.md) 
 
 New or changed topic | Description
 --- | ---
-[Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](setup-kiosk-digital-signage.md) and [Create a Windows 10 kiosk that runs multiple apps](lock-down-windows-10-to-specific-apps.md)  | Updated instructions for using Microsoft Intune to configure a kiosk.
+[Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](setup-kiosk-digital-signage.md) and [Create a Windows 10 kiosk that runs multiple apps](lock-down-windows-10-to-specific-apps.md)  | Updated instructions for using Microsoft Intune to configure a kiosk. Added instructions for showing local accounts on the sign-in screen for domain-joined devices.
 [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md) | Added new Group Policy to remove "Recently added" list from Start menu.
 
 ## May 2018
