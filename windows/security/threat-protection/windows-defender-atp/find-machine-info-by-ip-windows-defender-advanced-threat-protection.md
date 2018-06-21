@@ -19,7 +19,7 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 Find a machine entity around a specific timestamp by FQDN or internal IP.
 
