@@ -33,6 +33,8 @@ In conjunction with being able to quickly respond to advanced attacks, Windows D
 **Security posture**<br>
 Windows Defender ATP also provides a security posture capability to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security state of your network.
 
+**Management and APIs**
+Windows Defender ATP provides integrated configuration management in the cloud. The service also supports third-party mobile device management (MDM) tools, cross-platform support, and APIs that allow customers to create custom threat intelligence and  automate workflows.
 
 Understand how capabilities align within the Windows Defender ATP suite offering:
 

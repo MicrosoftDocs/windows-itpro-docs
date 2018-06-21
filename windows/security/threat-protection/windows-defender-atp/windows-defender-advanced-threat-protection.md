@@ -1,6 +1,6 @@
 ---
-title: Windows Defender Advanced Threat Protection portal
-description: The Windows Defender Advanced Threat Protection portal is teh gateway that helps secops to prevent, detect, investigate, and respond to possible cybersecurity threats related to advanced persistent threats.
+title: Windows Defender Advanced Threat Protection suite
+description: Windows Defender Advanced Threat Protection is an enterprise security suite that helps secops to prevent, detect, investigate, and respond to possible cybersecurity threats related to advanced persistent threats.
 keywords: introduction to Windows Defender Advanced Threat Protection, introduction to Windows Defender ATP, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 07/01/2018
 ---
 
-# Windows Defender Advanced Threat Protection portal
+# Windows Defender Advanced Threat Protection suite
 
 **Applies to:**
 
