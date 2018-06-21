@@ -29,11 +29,7 @@ There are some minimum requirements for onboarding machines to the service.
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
 
-## Minimum requirements
-You must be on Windows 10, version 1607 at a minimum.
-For more information, see [Windows 10 Enterprise edition](https://www.microsoft.com/en-us/WindowsForBusiness/buy).
-
-### Licensing requirements
+## Licensing requirements
 Windows Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:
 
 - Windows 10 Enterprise E5
@@ -42,75 +38,7 @@ Windows Defender Advanced Threat Protection requires one of the following Micros
 
 For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us/Licensing/product-licensing/windows10.aspx#tab=2).
 
-### Network and data storage and configuration requirements
-When you run the onboarding wizard for the first time, you must choose where your Windows Defender Advanced Threat Protection-related information is stored: in the European Union, the United Kingdom, or the United States datacenter.
 
-> [!NOTE]
-> -   You cannot change your data storage location after the first-time setup.
-> -   Review the [Windows Defender ATP data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md) for more information on where and how Microsoft stores your data.
-
-<span id="telemetry-and-diagnostics-settings" />
-### Diagnostic data settings
-You must ensure that the diagnostic data service is enabled on all the machines in your organization.
-By default, this service is enabled, but it's good practice to check to ensure that you'll get sensor data from them.
-
-**Use the command line to check the Windows 10 diagnostic data service startup type**:
-
-1.  Open an elevated command-line prompt on the machine:
-
-  a.  Go to **Start** and type **cmd**.
-
-  b.  Right-click **Command prompt** and select **Run as administrator**.
-
-2.  Enter the following command, and press **Enter**:
-
-    ```text
-    sc qc diagtrack
-    ```
-
-If the service is enabled, then the result should look like the following screenshot:
-
-![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
-
-If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the service to automatically start.
-
-
-
-**Use the command line to set the Windows 10 diagnostic data service to automatically start:**
-
-1.  Open an elevated command-line prompt on the endpoint:
-
-	  a. Go to **Start** and type **cmd**.
-
-    b. Right-click **Command prompt** and select **Run as administrator**.
-
-2.  Enter the following command, and press **Enter**:
-
-    ```text
-    sc config diagtrack start=auto
-    ```
-
-3.  A success message is displayed. Verify the change by entering the following command, and press **Enter**:
-
-    ```text
-    sc qc diagtrack
-    ```
-
-## Windows Defender Antivirus signature updates are configured
-The Windows Defender ATP agent depends on the ability of Windows Defender Antivirus to scan files and provide information about them. 
-
-You must configure the signature updates on the Windows Defender ATP machines whether Windows Defender Antivirus is the active antimalware or not. For more information, see [Manage Windows Defender Antivirus updates and apply baselines](../windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md).
-
-When Windows Defender Antivirus is not the active antimalware in your organization and you use the Windows Defender ATP service, Windows Defender Antivirus goes on passive mode. If your organization has disabled Windows Defender Antivirus through group policy or other methods, machines that are onboarded to Windows Defender ATP must be excluded from this group policy.
-
-Depending on the server version you're onboarding, you might need to configure a Group Policy setting to run on passive mode. For more information, see [Onboard servers](configure-server-endpoints-windows-defender-advanced-threat-protection.md).
-
-For more information, see [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
-
-## Windows Defender Antivirus Early Launch Antimalware (ELAM) driver is enabled
-If you're running Windows Defender Antivirus as the primary antimalware product on your machines, the Windows Defender ATP agent will successfully onboard.
-
-If you're running a third-party antimalware client and use Mobile Device Management solutions or System Center Configuration Manager (current branch) version 1606, you'll need to ensure that the Windows Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Windows Defender Antivirus is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=technet-wd-atp-minreq-belowfoldlink1)
 
