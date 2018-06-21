@@ -29,7 +29,7 @@ Performance of SMB signing is improved in SMBv2. For more details, see [Potentia
 
 Another policy setting determines whether signing is required for SMBv3 and SMBv2 server communications: [Microsoft network client: Digitally sign communications (always)](microsoft-network-client-digitally-sign-communications-always.md).
 
-There is a negotiation done between the SMB client and the SMB server to decide whether signing will effectively be used. The following table has the effective behavior for SMBv3 and SMBv2:
+There is a negotiation done between the SMB client and the SMB server to decide whether signing will effectively be used. The following table has the effective behavior for SMBv3 and SMBv2.
 
 |   | Server – Required | Server – Not Required |
 |---|-------------------|-----------------------|
