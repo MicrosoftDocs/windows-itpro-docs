@@ -16,26 +16,13 @@ ms.date: 06/19/2018
 # Onboard machines to the Windows Defender ATP service
 
 **Applies to:**
-
-- Windows 7 SP1 Enterprise
-- Windows 7 SP1 Pro
-- Windows 8.1 Enterprise
-- Windows 8.1 Pro
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
-- Windows Server 2012 R2
-- Windows Server 2016
-- macOS
-- Linux
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-You need to onboard to Windows Defender ATP before you can use the service.
+You need to onboard machines to Windows Defender ATP before you can use the service.
 
 For more information, see [Onboard your Windows 10 machines to Windows Defender ATP](https://www.youtube.com/watch?v=JT7VGYfeRlA&feature=youtu.be).
 
