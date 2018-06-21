@@ -23,7 +23,7 @@ ms.date: 06/15/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 There are some minimum requirements for onboarding machines to the service.
 

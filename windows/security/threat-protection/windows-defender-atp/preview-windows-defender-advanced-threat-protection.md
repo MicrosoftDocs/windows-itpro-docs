@@ -23,7 +23,7 @@ ms.date: 06/21/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 The Windows Defender ATP service is constantly being updated to include new feature enhancements and capabilities.
 
