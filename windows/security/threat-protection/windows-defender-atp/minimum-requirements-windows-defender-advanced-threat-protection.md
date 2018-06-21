@@ -44,3 +44,4 @@ For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us
 
 ## Related topic
 - [Validate licensing and complete setup](licensing-windows-defender-advanced-threat-protection.md)
+- [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)
