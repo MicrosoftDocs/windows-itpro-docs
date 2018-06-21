@@ -34,10 +34,10 @@ There is a negotiation done between the SMB client and the SMB server to decide 
 |   | Server – Required | Server – Not Required |
 |---|-------------------|-----------------------|
 | Client – Required | Signed | Signed           | 
-| Client – Not Required | Signed <sup>*</sup> | Not Signed<sup>**</sup> |
-
-<sup>*</sup> Default for domain controller SMB traffic
-<sup>**</sup> Default for all other SMB traffic
+| Client – Not Required | Signed <sup>1</sup> | Not Signed<sup>2</sup> |
+</br>
+<sup>1</sup> Default for domain controller SMB traffic</br>
+<sup>2</sup> Default for all other SMB traffic
 
 ### Possible values
 
