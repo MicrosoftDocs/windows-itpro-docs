@@ -35,8 +35,8 @@ There is a negotiation done between the SMB client and the SMB server to decide 
 |---|-------------------|-----------------------|
 | Client – Required | Signed | Signed           | 
 | Client – Not Required | Signed <sup>*</sup> | Not Signed<sup>**</sup> |
-
-<sup>*</sup> Default for domain controller SMB traffic
+</br>
+<sup>*</sup> Default for domain controller SMB traffic</br>
 <sup>**</sup> Default for all other SMB traffic
 
 
