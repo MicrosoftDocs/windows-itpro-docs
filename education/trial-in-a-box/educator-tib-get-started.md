@@ -289,7 +289,7 @@ To get started:
 To solve the equation 3x+4=7, follow these instructions:
 1. Write the equation 3x+4=7 in ink using the pen or type it in as text.
 
-2. If you wrote the equation using digital ink, use the Lasso tool to circle the equation. If you typed the equation, highlight it using your mouse.
+2. If you wrote the equation using digital ink, use the **Lasso tool** to circle the equation. If you typed the equation, highlight it using your mouse.
 
   ![Lasso button](images/lasso.png)
 
@@ -303,7 +303,7 @@ To solve the equation 3x+4=7, follow these instructions:
 
 5. From the second drop-down below, choose **Steps for Solving Linear Formula**, which shows you the step-by-step solution of this equation.
 
-6. 6.	On the **View** tab, click the **Replay** button. Use your mouse to select the written equation and watch your text in replay. Replay is great for students to review how the teacher solved the equation and for teachers to review how students approached a problem.
+6. On the **View** tab, click the **Replay** button. Use your mouse to select the written equation and watch your text in replay. Replay is great for students to review how the teacher solved the equation and for teachers to review how students approached a problem.
 
   ![Replay button](images/replay.png)
 
