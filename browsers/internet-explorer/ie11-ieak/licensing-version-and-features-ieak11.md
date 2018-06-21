@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: Learn about which version of the IEAK 11 you should run, based on your license agreement.
 author: pashort

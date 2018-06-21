@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: article
 ms.author: elizapo
 author: lizap
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.date: 04/26/2018
 ---
 # How to add apps and features to Windows 10

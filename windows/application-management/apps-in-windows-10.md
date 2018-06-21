@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: mobile
 ms.author: elizapo
 author: lizap
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.date: 04/30/2018
 ---
 # Understand the different apps included in Windows 10

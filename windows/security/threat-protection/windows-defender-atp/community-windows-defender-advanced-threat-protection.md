@@ -19,7 +19,7 @@ ms.date: 04/24/2018
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 The Windows Defender ATP Community Center is a place where community members can learn, collaborate, and share experiences about the product. 
 
