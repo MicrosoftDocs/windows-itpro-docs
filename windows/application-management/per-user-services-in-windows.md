@@ -29,7 +29,7 @@ For more information about disabling system services for Windows Server, see [Gu
 
 ## Per-user services
 
-Windows 10 and Windows Server (with the Desktop Experience) have the following per-user services. The template services are located in the registry at HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services.
+The following table lists per-user services and when they were added to Windows 10 and Windows Server with the Desktop Experience. The template services are located in the registry at HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services.
 
 Before you disable any of these services, review the **Description** column in this table to understand the implications, including dependent apps that will no longer work correctly.
 
@@ -38,7 +38,7 @@ Before you disable any of these services, review the **Description** column in t
 | 1803            | BcastDVRUserService    | GameDVR and Broadcast User Service      | Manual             |              | Used for Game Recordings and Live Broadcasts                                                                                                                                          |
 | 1803            | BluetoothUserService   | Bluetooth User Support Service          | Manual             |              | Supports proper functionality of Bluetooth features relevant to each user session                                                                                                     |
 | 1803            | CaptureService         | CaptureService                          | Manual             |              | OneCore Capture Service                                                                                                                                                               |
-| 1607            | CDPUserSvc             | CDPUserSvc                              | Auto               | Network Connection Broker</br>Remote Procedure Call (RPC)</br>TCP/IP Protocol Driver | Used for Connected Devices Platform scenarios                                                                 |
+| 1607            | CDPUserSvc             | CDPUserSvc                              | Auto               | - Network Connection Broker</br>- Remote Procedure Call (RPC)</br>- TCP/IP Protocol Driver | Used for Connected Devices Platform scenarios                                                                 |
 | 1803            | DevicePickerUserSvc    | DevicePicker                            | Manual             |              | Device Picker                                                                                                                                                                         |
 | 1703            | DevicesFlowUserSvc     | DevicesFlow                             | Manual             |              | Device Discovery and Connecting                                                                                                                                                       |
 | 1703            | MessagingService       | MessagingService                        | Manual             |              | Service supporting text messaging and related functionality                                                                                                                           |
