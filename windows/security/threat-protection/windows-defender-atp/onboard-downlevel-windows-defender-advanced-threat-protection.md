@@ -23,7 +23,9 @@ ms.date: 06/18/2018
 - Windows 8.1 Enterprise
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+[!include[Prerelease information](prerelease.md)]
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-downlevel-abovefoldlink)
 
 Windows Defender ATP extends support to include down-level operating systems, providing advanced attack detection and investigation capabilities on supported Windows versions.
 
