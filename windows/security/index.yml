@@ -104,7 +104,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_identity-protection.svg
       
-      title: Attack surface reduction
+      title: Windows Defender Antivirus
 
     - href: \windows\security\threat-protection\windows-defender-smartscreen\windows-defender-smartscreen-overview
 
@@ -114,7 +114,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_threat-protection.svg
       
-      title:Next generation protection
+      title: Windows Defender SmartScreen
 
     - href: \windows\security\threat-protection\windows-defender-exploit-guard\windows-defender-exploit-guard
 
@@ -124,7 +124,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_information-protection.svg
       
-      title: Endpoint detection & response
+      title: Windows Defender Exploit Guard
 
     - href: \windows\security\threat-protection\windows-defender-application-control\windows-defender-application-control
 
@@ -134,7 +134,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_identity-protection.svg
       
-      title: Auto investigation & remediation
+      title: Windows Defender Application Control
       
     - href: \windows\security\threat-protection\windows-defender-application-guard\wd-app-guard-overview
 
@@ -144,7 +144,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_threat-protection.svg
       
-      title: Security posture
+      title: Windows Defender Application Guard
 
     - href: \windows\security\identity-protection\windows-firewall\windows-firewall-with-advanced-security
 
@@ -154,7 +154,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_information-protection.svg
       
-      title: Advanced hunting
+      title: Windows Defender Firewall
 
 - title: Videos
 
