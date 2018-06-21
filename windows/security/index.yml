@@ -114,7 +114,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_threat-protection.svg
       
-      title:Next generation protection
+      title: Next generation protection
 
     - href: \windows\security\threat-protection\windows-defender-exploit-guard\windows-defender-exploit-guard
 
