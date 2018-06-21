@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
-ms.date: 06/19/2018
+ms.date: 06/21/2018
 ---
 
 # Microsoft network client: Digitally sign communications (always)
 
 **Applies to**
 -   Windows 10
+-   Windows Server
 
 Describes the best practices, location, values, policy management and security considerations for the **Microsoft network client: Digitally sign communications (always)** security policy setting for SMBv3 and SMBv2. 
 
@@ -21,13 +22,9 @@ Describes the best practices, location, values, policy management and security c
 
 The Server Message Block (SMB) protocol provides the basis for file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. 
 
-Implementation of digital signatures in high-security networks helps prevent the impersonation of client computers and servers, which is known as "session hijacking." But misuse of these policy settings is a common error that can cause failure to access data.
+Implementation of digital signatures in high-security networks helps prevent the impersonation of client computers and servers, which is known as "session hijacking." But misuse of these policy settings is a common error that can cause data access failure.
 
-Beginning with SMBv2 clients and servers, signing can be either required or not required. If this policy setting is enabled, SMBv2 clients will digitally sign all packets. 
-
-Performance of SMB signing is improved in SMBv2. For more details, see [Potential impact](#potential-impact). 
-
-Another policy setting determines whether signing is required for SMBv3 and SMBv2 server communications: [Microsoft network server: Digitally sign communications (always)](microsoft-network-server-digitally-sign-communications-always.md).
+Beginning with SMBv2 clients and servers, signing can be either required or not required. If this policy setting is enabled, SMBv2 clients will digitally sign all packets. Another policy setting determines whether signing is required for SMBv3 and SMBv2 server communications: [Microsoft network server: Digitally sign communications (always)](microsoft-network-server-digitally-sign-communications-always.md).
 
 There is a negotiation done between the SMB client and the SMB server to decide whether signing will effectively be used. The following table has the effective behavior for SMBv3 and SMBv2.
 
@@ -39,6 +36,7 @@ There is a negotiation done between the SMB client and the SMB server to decide 
 <sup>1</sup> Default for domain controller SMB traffic</br>
 <sup>2</sup> Default for all other SMB traffic
 
+Performance of SMB signing is improved in SMBv2. For more details, see [Potential impact](#potential-impact). 
 
 ### Possible values
 
