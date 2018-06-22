@@ -1,12 +1,12 @@
 ---
 title: Policy CSP - Browser
 description: Policy CSP - Browser
-ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 05/14/2018
+author: shortpatti
+ms.author: pashort
+ms.date: 06/21/2018
 ---
 
 # Policy CSP - Browser
@@ -181,10 +181,9 @@ ms.date: 05/14/2018
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Specifies whether to allow the address bar drop-down functionality in Microsoft Edge. If you want to minimize network connections from Microsoft Edge to Microsoft services, we recommend disabling this functionality. 
+Added in Windows 10, version 1703. 
 
-> [!NOTE]
-> Disabling this setting turns off the address bar drop-down functionality. Because search suggestions are shown in the drop-down list, this setting takes precedence over the Browser/AllowSearchSuggestionsinAddressBar setting.
+By default, Microsoft Edge shows the Address bar drop-down list and makes it available.  When enabled (default setting), this policy takes precedence over the [Browser/AllowSearchSuggestionsinAddressBar](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsearchsuggestionsinaddressbar) policy. If you want to minimize network connections from Microsoft Edge to Microsoft service, we recommend disabling this policy, which hides the Address bar drop-down list functionality. When disabled, Microsoft Edge also disables the _Show search and site suggestions as I type_ toggle in Settings.  
 
 Most restricted value is 0.
 
@@ -245,7 +244,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether autofill on websites is allowed.
+By default, users can choose to use Autofill for filling in form fields automatically.  With this policy, you can configure Microsoft Edge, when enabled to use Autofill or, when disabled to prevent using Autofill. 
 
 Most restricted value is 0.
 
@@ -318,12 +317,9 @@ To verify AllowAutofill is set to 0 (not allowed):
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. For desktop devices, use the [AppLocker CSP](applocker-csp.md) instead.
 
-
-Specifies whether the browser is allowed on the device.
+By default, the device allows Microsoft Edge on Windows 10 Mobile. Disabling this policy disables the Microsoft Edge tile, and when clicking the tile, a message opens indicating that the administrator disabled Internet browsing.
 
 Most restricted value is 0.
-
-When this policy is set to 0 (not allowed), the Microsoft Edge for Windows 10 Mobile tile will appear greyed out, and clicking on the tile will display a message indicating theat Internet browsing has been disabled by your administrator.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -374,7 +370,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting lets you decide whether Microsoft Edge can automatically update the configuration data for the Books Library.
+By default, Microsoft Edge automatically updates the configuration data for the Books Library.  Enabling this policy prevents Microsoft Edge from updating the configuration data. 
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -425,7 +421,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether cookies are allowed.
+By default, Microsoft Edge allows all cookies from all websites.  With this policy, however, you can configure Microsoft to block only 3rd-party cookies or block all cookies. 
 
 
 Most restricted value is 0.
@@ -443,9 +439,9 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Block all cookies
--   1 – Block only third party cookies
--   2 - Allow cookies
+-   0 – Block all cookies from all sites.
+-   1 – Block only cookies from third party websites.
+-   2 - Allow all cookies from all sites.
 
 <!--/SupportedValues-->
 <!--Validation-->
@@ -501,8 +497,7 @@ To verify AllowCookies is set to 0 (not allowed):
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
-
-Specifies whether employees can use F12 Developer Tools on Microsoft Edge. Turning this setting on, or not configuring it, lets employees use F12 Developer Tools. Turning this setting off stops employees from using F12 Developer Tools.
+By default, Microsoft Edge allows users to use the F12 developer tools to build and debug web pages. Disabling this policy prevents users from using the F12 developer tools.
 
 Most restricted value is 0.
 
@@ -563,7 +558,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether Do Not Track headers are allowed.
+By default, Microsoft Edge does not send Do Not Track requests to websites asking for tracking information, but users can choose to send tracking information to sites they visit. With this policy, you can configure Microsoft Edge to send or never send tracking information.
 
 Most restricted value is 1.
 
@@ -579,8 +574,10 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Not allowed.
--   1 – Allowed.
+-	Blank/Null (default) Not configured - Does not send tracking information, but allow users to choose whether to send tracking information to sites they visit.
+-	0 (Disabled) - Never sends tracking information.
+-	1 (Enabled) - Sends tracking information, including to the third parties whose content may be hosted on the sites visited.
+
 
 <!--/SupportedValues-->
 <!--Validation-->
