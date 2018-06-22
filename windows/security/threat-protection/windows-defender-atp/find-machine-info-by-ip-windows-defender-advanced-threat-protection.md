@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 06/20/2018
+ms.date: 06/22/2018
 ---
 
 # Find machine information by interal IP API
@@ -54,7 +54,7 @@ Request
 Here is an example of the request.
 
 ```
-GET https://graph.microsoft.com/testwdatppreview/machines/find(timestamp=2018-06-19T10:00:00Z,key='10.0.0.0')
+GET https://graph.microsoft.com/testwdatppreview/machines/find(timestamp=2018-06-19T10:00:00Z,key='10.166.93.61')
 Content-type: application/json
 ```
 
@@ -73,7 +73,7 @@ Content-type: application/json
         {
             "id": "04c99d46599f078f1c3da3783cf5b95f01ac61bb",
             "computerDnsName": "",
-            "firstSeen": "2018-06-19T01:25:04.9480498Z",
+            "firstSeen": "2017-07-06T01:25:04.9480498Z",
             "osPlatform": "Windows10",
 …
 }
