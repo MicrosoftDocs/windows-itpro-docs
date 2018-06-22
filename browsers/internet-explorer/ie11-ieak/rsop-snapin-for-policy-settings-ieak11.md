@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: manage
 description: Learn how to use the Resultant Set of Policy (RSoP) snap-in to view your policy settings.
 author: eross-msft

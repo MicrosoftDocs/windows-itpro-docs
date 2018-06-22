@@ -19,7 +19,7 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 Prevent a file from being executed in the organization using Windows Defender Antivirus.
 

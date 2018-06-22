@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: Customization guidelines for your Internet Explorer toolbar button and Favorites List icons.
 author: eross-msft
