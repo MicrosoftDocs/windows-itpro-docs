@@ -2397,8 +2397,9 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Intranet traffic is sent to Internet Explorer.
--   1 – Intranet traffic is sent to Microsoft Edge.
+- 0 (default) - Opens all websites, including intranet sites, in Microsoft Edge.
+- 1 - Opens all intranet sites in Internet Explorer 11.
+
 
 <!--/SupportedValues-->
 <!--/Policy-->
