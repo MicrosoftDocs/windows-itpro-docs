@@ -747,6 +747,10 @@ copy <appName>.lnk "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs\<app
 
 In Windows Configuration Designer, under **ProvisioningCommands** > **DeviceContext**:
 
-- Under **CommandFiles**, upload your batch file, your .lnk file, and your desktop app installation file 
-- Under **CommandLine**, enter cmd /c *FileName*.bat
+- Under **CommandFiles**, upload your batch file, your .lnk file, and your desktop app installation file.
+
+  >[!IMPORTANT]
+  >Paste the full file path to the .lnk file in the **CommandFiles** field. If you browse to and select the .lnk file, the file path will be changed to the path of the target of the .lnk.
+
+- Under **CommandLine**, enter `cmd /c *FileName*.bat`.
 
