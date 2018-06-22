@@ -96,6 +96,13 @@ sections:
 
     items:
 
+    - title: Attack surface reduction
+
+      html: <p><a class="barLink" href="/windows/privacy/manage-windows-endpoints">Manage Windows 10 connection endpoints</a></p>
+
+            <p><a class="barLink" href="/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services">Manage connections from Windows to Microsoft services</a></p>
+
+
     - href: \windows\security\threat-protection\windows-defender-antivirus\windows-defender-antivirus-in-windows-10
 
       html: <p>Protect against malware management using next-generation antivirus technologies</p>
