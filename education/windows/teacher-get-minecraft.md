@@ -28,7 +28,7 @@ To get started, go to http://education.minecraft.net/ and select **GET STARTED**
 
 ## Try Minecraft: Education Edition for Free 
 
-Minecraft: Education Edition is available for anyone to try, but there is a limit to the number of logins allowed before purchasing a subscription is required.
+Minecraft: Education Edition is available for anyone to try for free! The free trial is fully-functional but limited by the number of logins (25 for teachers and 10 for students) before a paid license will be required to continue playing.
 
 To learn more and get started, go to http://education.minecraft.net/ and select **GET STARTED**.
 
