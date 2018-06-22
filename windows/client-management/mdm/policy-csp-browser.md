@@ -2381,7 +2381,7 @@ ADMX Info:
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
-Specifies whether to send intranet traffic over to Internet Explorer.
+By default, all websites, including intranet sites, open in Microsoft Edge automatically.  Only enable this policy if there are known compatibility problems with Microsoft Edge.  Enabling this policy loads only intranet sites in Internet Explorer 11 automatically.
 
 Most restricted value is 0.
 
@@ -2397,8 +2397,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) - Open all websites, including intranet sites, in Microsoft Edge.
-- 1 - Open all intranet sites in Internet Explorer 11.
+- 0 (default) - All websites, including intranet sites, open in Microsoft Edge automatically.
+- 1 - Only intranet sites open in Internet Explorer 11 automatically.
 
 
 <!--/SupportedValues-->
