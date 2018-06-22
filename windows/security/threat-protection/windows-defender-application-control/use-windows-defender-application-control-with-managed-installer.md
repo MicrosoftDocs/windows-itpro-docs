@@ -112,7 +112,7 @@ For example:
 
 ### Enable the managed installer option in WDAC policy
 
-In order to enable trust for the binaries laid down by managed installers, the Allow: Managed Installer option must be specified in your WDAC policy.
+In order to enable trust for the binaries laid down by managed installers, the Enabled: Managed Installer option must be specified in your WDAC policy.
 This can be done by using the [Set-RuleOption cmdlet](https://docs.microsoft.com/powershell/module/configci/set-ruleoption). 
 An example of the managed installer option being set in policy is shown below.
 
@@ -135,6 +135,17 @@ An example of the managed installer option being set in policy is shown below.
     </Rule>  
   </Rules>  
 ```
+## Set the AppLocker filter driver to autostart
+
+To enable the managed installer, you need to set the AppLocker filter driver to autostart and start it. 
+Run the following command as an Administrator: 
+
+```code
+appidtel.exe start [-mionly]
+```
+
+Specify `-mionly` if you will not use the Intelligent Security Graph (ISG).
+
 
 ## Security considerations with managed installer
 
