@@ -52,7 +52,6 @@ This policy setting allows you to enforce or ignore the computer's local list of
 
 The local list of blocked TPM commands is configured outside of Group Policy by typing **tpm.msc** at the command prompt to open the TPM Management Console, or scripting using the **Win32\_Tpm** interface. (The default list of blocked TPM commands is preconfigured by Windows.) 
 
-
 If you enable this policy setting, the Windows operating system will ignore the computer's local list of blocked TPM commands, and it will block only those TPM commands that are specified by Group Policy or the default list.
 
 If you disable or do not configure this policy setting, Windows will block the TPM commands in the local list, in addition to the commands that are specified in Group Policy and the default list of blocked TPM commands.
@@ -65,9 +64,9 @@ This policy setting configures how much of the TPM owner authorization informati
 
 There are three TPM owner authentication settings that are managed by the Windows operating system. You can choose a value of **Full**, **Delegate**, or **None**.
 
--   **Full**   This setting stores the full TPM owner authorization, the TPM administrative delegation blob, and the TPM user delegation blob in the local registry. With this setting, you can use the TPM without requiring remote or external storage of the TPM owner authorization value. This setting is appropriate for scenarios that do not require you to reset the TPM anti-hammering logic or change the TPM owner authorization value. Some TPM-based applications may require that this setting is changed before features that depend on the TPM anti-hammering logic can be used.
+-   **Full**   This setting stores the full TPM owner authorization, the TPM administrative delegation blob, and the TPM user delegation blob in the local registry. With this setting, you can use the TPM without requiring remote or external storage of the TPM owner authorization value. This setting is appropriate for scenarios that do not require you to reset the TPM anti-hammering logic or change the TPM owner authorization value. Some TPM-based applications may require that this setting is changed before features that depend on the TPM anti-hammering logic can be used. Full owner authorization in TPM 1.2 is similar to lockout authorization in TPM 2.0. Owner authorization has a different meaning for TPM 2.0.
 
--   **Delegated**   This setting stores only the TPM administrative delegation blob and the TPM user delegation blob in the local registry. This setting is appropriate for use with TPM-based applications that depend on the TPM antihammering logic. This is the default setting in Windows.
+-   **Delegated**   This setting stores only the TPM administrative delegation blob and the TPM user delegation blob in the local registry. This setting is appropriate for use with TPM-based applications that depend on the TPM antihammering logic. This is the default setting in Windows prior to version 1803.
 
 -   **None**   This setting provides compatibility with previous operating systems and applications. You can also use it for scenarios when TPM owner authorization cannot be stored locally. Using this setting might cause issues with some TPM-based applications.
 
@@ -88,8 +87,10 @@ The following table shows the TPM owner authorization values in the registry.
 | 2          | Delegated |
 | 4          | Full      |
 
-A value of 5 means discard the **Full** TPM owner authorization for TPM 1.2 but keep it for TPM 2.0.
- 
+Beginning with Windows 10 version 1803, the new default value for this setting is 5. This value is implemented during provisioning so that another Windows component can either delete it or take ownership of it, depending on the system configuration. 
+For TPM 2.0, a value of 5 means keep the lockout authorization. 
+For TPM 1.2, it means discard the Full TPM owner authorization and retain only the Delegated authorization.
+
 If you enable this policy setting, the Windows operating system will store the TPM owner authorization in the registry of the local computer according to the TPM authentication setting you choose.
 
 If you disable or do not configure this policy setting, and the **Turn on TPM backup to Active Directory Domain Services** policy setting is also disabled or not configured, the default setting is to store the full TPM authorization value in the local registry. If this policy is disabled or not
