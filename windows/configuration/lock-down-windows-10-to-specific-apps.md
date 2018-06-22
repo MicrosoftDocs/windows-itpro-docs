@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerms
 ms.localizationpriority: high
-ms.date: 06/05/2018
+ms.date: 06/21/2018
 ms.author: jdecker
 ms.topic: article
 ---
@@ -52,7 +52,7 @@ You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provi
 12. Enter a friendly name for the configuration.
 10. In **Kiosk Mode**, select **Multi app kiosk**.
 13. Select an app type.
-  - For **Add Win32 app**, enter the **App Name** and **Identifier**.
+  - For **Add Win32 app**, enter a friendly name for the app in **App Name**, and enter the path to the app executable in **Identifier**.
   - For **Add managed apps**, select an app that you manage through Intune.
   - For **Add app by AUMID**, enter the Application User Model ID (AUMID) for an installed UWP app.
 14. Select whether to enable the taskbar.
@@ -61,7 +61,8 @@ You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provi
 17. Select **OK**. You can add additional configurations or finish.
 18. Assign the profile to a device group to configure the devices in that group as kiosks.
 
-
+>[!NOTE]
+>Managed apps are apps that are in the Microsoft Store for Business that is synced with your Intune subscription.
 
 
 
@@ -296,6 +297,8 @@ You can assign:
 ##### Config for AutoLogon Account
 
 When you use `<AutoLogonAccount>` and the configuration is applied to a device, the specified account (managed by Assigned Access) is created on the device as a local standard user account. The specified account is signed in automatically after restart.
+
+On domain-joined devices, local user accounts aren't shown on the sign-in screen by default. To show the **AutoLogonAccount** on the sign-in screen, enable the following Group Policy setting: **Computer Configuration > Administrative Templates > System > Logon > Enumerate local users on domain-joined computers**. (The corresponding MDM policy setting is [WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers in the Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-enumeratelocalusersondomainjoinedcomputers).)
 
 ```xml
 <Configs>
@@ -744,6 +747,10 @@ copy <appName>.lnk "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs\<app
 
 In Windows Configuration Designer, under **ProvisioningCommands** > **DeviceContext**:
 
-- Under **CommandFiles**, upload your batch file, your .lnk file, and your desktop app installation file 
-- Under **CommandLine**, enter cmd /c *FileName*.bat
+- Under **CommandFiles**, upload your batch file, your .lnk file, and your desktop app installation file.
+
+  >[!IMPORTANT]
+  >Paste the full file path to the .lnk file in the **CommandFiles** field. If you browse to and select the .lnk file, the file path will be changed to the path of the target of the .lnk.
+
+- Under **CommandLine**, enter `cmd /c *FileName*.bat`.
 

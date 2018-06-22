@@ -270,7 +270,9 @@ The following steps explain how to configure a kiosk in Microsoft Intune. For ot
 7. Select **Windows 10 and later** for the platform.
 8. Select **Kiosk (Preview)** for the profile type.
 9. Enter a friendly name for the kiosk configuration.
-10. In **Kiosk Mode**, select **Single full-screen app kiosk**.
+10. Select **Kiosk - 1 setting available**.
+10. Select **Add** to add a kiosk configuration.
+10. Enter a friendly name for the kiosk configuration, and then in **Kiosk Mode**, select **Single full-screen app kiosk**.
 10. Select either **Select a managed app** to choose a kiosk app that is managed by Intune, or **Enter UWP app AUMID** to specify the kiosk app by AUMID, and then select the app or enter the AUMID as appropriate.
 1. For the user account, select either **Autologon** to create a user account for the kiosk that will sign in automatically, or **Local user account** to configure an existing user account to run the kiosk. **Local user account** can be a local standard user account on the device or an Azure Active Directory account.
 14. Select **OK**, and then select **Create**.

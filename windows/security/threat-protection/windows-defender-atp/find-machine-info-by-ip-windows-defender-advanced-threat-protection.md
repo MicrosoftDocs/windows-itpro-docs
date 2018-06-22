@@ -1,6 +1,6 @@
 ---
-title: Find machine information by interal IP API
-description: Use this API to create calls related to finding a machine entry around a specific timestamp by FQDN or interal IP.
+title: Find machine information by internal IP API
+description: Use this API to create calls related to finding a machine entry around a specific timestamp by FQDN or internal IP.
 keywords: apis, graph api, supported apis, find machine, machine information, IP
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -13,13 +13,13 @@ ms.localizationpriority: high
 ms.date: 12/08/2017
 ---
 
-# Find machine information by interal IP API
+# Find machine information by internal IP API
 
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 Find a machine entity around a specific timestamp by FQDN or internal IP.
 

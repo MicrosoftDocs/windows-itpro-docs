@@ -29,7 +29,7 @@ Misuse of this policy setting is a common error that can cause data loss or prob
 
 -   Enabled
 
-    An anonymous user can request the SID attribute for another user. An anonymous user with knowledge of an administrator's SID could contact a computer that has this policy enabled and use the SID to get the administrator's name. This setting affects the SID-to-name translation as well as the name-to-SID translation
+    An anonymous user can request the SID attribute for another user. An anonymous user with knowledge of an administrator's SID could contact a computer that has this policy enabled and use the SID to get the administrator's name. This setting affects the SID-to-name translation as well as the name-to-SID translation.
 
 -   Disabled
 
@@ -52,7 +52,7 @@ The following table lists the actual and effective default values for this polic
 | Server type or GPO | Default value |
 | - | - |
 | Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Note defined| 
+| Default Domain Controller Policy | Not defined| 
 | Stand-Alone Server Default Settings | Disabled| 
 | DC Effective Default Settings | Enabled| 
 | Member Server Effective Default Settings| Disabled| 

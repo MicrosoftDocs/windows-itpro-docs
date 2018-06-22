@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Use the topics in this section to learn how to perform all of the workflow-related processes in the Enterprise Mode Site List Portal.

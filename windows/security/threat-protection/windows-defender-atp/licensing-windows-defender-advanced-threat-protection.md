@@ -22,7 +22,7 @@ ms.date: 10/16/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-validatelicense-abovefoldlink)
 
@@ -66,7 +66,7 @@ When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.
 
 	You will need to set up your preferences for the Windows Defender ATP portal.
 
-3. When onboarding the service for the first time, you can choose to store your data in the Microsoft Azure datacenters in the United Kingdom, Europe, or The United States. Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Microsoft will not transfer the data from the specified geolocation.
+3. When onboarding the service for the first time, you can choose to store your data in the Microsoft Azure datacenters in the European Union, the United Kingdom, or the United States. Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Microsoft will not transfer the data from the specified geolocation.
 
 	> [!WARNING]
 	> This option cannot be changed without completely offboarding from Windows Defender ATP and completing a new enrollment process.

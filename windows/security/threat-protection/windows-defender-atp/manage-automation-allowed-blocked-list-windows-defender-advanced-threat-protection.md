@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 04/24/2018
+ms.date: 06/14/2018
 ---
 
 # Manage automation allowed/blocked lists
@@ -23,7 +23,7 @@ ms.date: 04/24/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
@@ -38,30 +38,28 @@ You can define the conditions for when entities are identified as malicious or s
 ## Create an allowed or blocked list
 1. In the navigation pane, select **Settings** > **Automation allowed/blocked list**.  
 
-2. Select the type of entity you'd like to create an exclusion for. You can choose any of the following entities: 
+2. Select the tab of the type of entity you'd like to create an exclusion for. You can choose any of the following entities: 
    - File hash
    - Certificate
-
+   - IP address
+  
 3. Click **Add system exclusion**.
 
-4. For each attribute specify the exclusion type, details, and the following required values:
-
-    - **Files** -  Hash value
-    - **Certificate** - PEM certificate file
+4. For each attribute specify the exclusion type, details, and their corresponding required values.
     
-5. Click **Update rule**.
+5. Click **Add rule**.
 
 ## Edit a list
 1. In the navigation pane, select **Settings** > **Automation allowed/blocked list**.  
 
-2. Select the type of entity you'd like to edit the list from.  
+2. Select the tab of the entity type you'd like to edit the list from.  
 
 3. Update the details of the rule and click **Update rule**.
 
 ## Delete a list 
 1. In the navigation pane, select **Settings** > **Automation allowed/blocked list**.  
 
-2. Select the type of entity you'd like to delete the list from.
+2. Select the tab of the entity type you'd like to delete the list from.
 
 3. Select the list type by clicking the check-box beside the list type.
 
