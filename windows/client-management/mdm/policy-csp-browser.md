@@ -2397,8 +2397,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) - Opens all websites, including intranet sites, in Microsoft Edge.
-- 1 - Opens all intranet sites in Internet Explorer 11.
+- 0 (default) - Open all websites, including intranet sites, in Microsoft Edge.
+- 1 - Open all intranet sites in Internet Explorer 11.
 
 
 <!--/SupportedValues-->
