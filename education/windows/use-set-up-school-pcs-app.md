@@ -198,7 +198,7 @@ The **Set up School PCs** app guides you through the configuration choices for t
 
     If you select this option, this adds a **Guest** account button in the PC's sign-in screen to allow anyone to use the PC.
  
-  - Select **Enable Autopilot Reset** to reset student PCs from the lock screen any time and apply original settings and device management enrollment (Azure AD and MDM) so theyâ€™re ready to use. Make sure you are running Windows 10, version 1709 on the student PCs if you want to use Autopilot Reset through the Set up School PCs app.
+  - Select **Enable Autopilot Reset** to reset student PCs from the lock screen any time and apply original settings and device management enrollment (Azure AD and MDM) so they're ready to use. Make sure you are running Windows 10, version 1709 on the student PCs if you want to use Autopilot Reset through the Set up School PCs app.
   - To change the default lock screen background or to use your school's custom lock screen background, click **Browse** to select a new lock screen background.
 
     **Figure 4** - Configure student PC settings

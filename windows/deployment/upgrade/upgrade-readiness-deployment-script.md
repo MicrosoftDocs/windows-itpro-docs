@@ -229,7 +229,7 @@ The deployment script displays the following exit codes to let you know if it wa
     </tr>
     <tr>
         <td>32 - Appraiser version on the machine is outdated. </td>
-        <td>The configuration script detected a version of the compatibility update module that is older than the minimum required to correctly collect the data required by Upgrade Readiness solution. Use the latest version of the [compatibility update](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#deploy-the-compatibility-update-and-related-kbs) for Windows 7 SP1/Windows 8.1.</td>
+        <td>The configuration script detected a version of the compatibility update module that is older than the minimum required to correctly collect the data required by Upgrade Readiness solution. Use the latest version of the [compatibility update](https://docs.microsoft.com/en-us/windows/deployment/update/windows-analytics-get-started#deploy-the-compatibility-update-and-related-updates) for Windows 7 SP1/Windows 8.1.</td>
     </tr>
     <tr>
         <td>33 - **CompatTelRunner.exe** exited with an exit code </td>

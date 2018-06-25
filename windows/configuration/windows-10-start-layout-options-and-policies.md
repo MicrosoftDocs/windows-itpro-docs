@@ -10,7 +10,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 05/24/2018
+ms.date: 06/19/2018
 ---
 
 # Manage Windows 10 Start and taskbar layout
@@ -30,6 +30,8 @@ Organizations might want to deploy a customized Start and taskbar configuration 
 >Start and taskbar configuration can be applied to devices running Windows 10 Pro, version 1703.
 >
 >Using the layout modification XML to configure Start is not supported with roaming user profiles. For more information, see [Deploy Roaming User Profiles](https://technet.microsoft.com/library/jj649079.aspx).
+>
+>Using CopyProfile for Start menu customization in Windows 10 isn't supported. For more information [Customize the Default User Profile by Using CopyProfile](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/customize-the-default-user-profile-by-using-copyprofile)
 
 
 
@@ -49,7 +51,7 @@ The following table lists the different parts of Start and any applicable policy
 | User tile | MDM: **Start/HideUserTile**</br>**Start/HideSwitchAccount**</br>**Start/HideSignOut**</br>**Start/HideLock**</br>**Start/HideChangeAccountSettings**</br></br>Group Policy: **Remove Logoff on the Start menu** | none  |
 | Most used | MDM: **Start/HideFrequentlyUsedApps**</br></br>Group Policy: **Remove frequent programs from the Start menu** | **Settings** &gt; **Personalization** &gt; **Start** &gt; **Show most used apps** |
 | Suggestions</br>-and-</br>Dynamically inserted app tile | MDM: **Allow Windows Consumer Features**</br></br>Group Policy: **Computer Configuration\Administrative Templates\Windows Components\Cloud Content\Turn off Microsoft consumer experiences**</br></br>**Note:** This policy also enables or disables notifications for a user's Microsoft account and app tiles from Microsoft dynamically inserted in the default Start menu. | **Settings** &gt; **Personalization** &gt; **Start** &gt; **Occasionally show suggestions in Start** |
-| Recently added | MDM: **Start/HideRecentlyAddedApps** | **Settings** &gt; **Personalization** &gt; **Start** &gt; **Show recently added apps** |
+| Recently added | MDM: **Start/HideRecentlyAddedApps**<br>Group Policy: **Computer configuration**\\**Administrative Template**\\**Start Menu and Taskbar**\\**Remove "Recently Added" list from Start Menu** (for Windows 10, version 1803) | **Settings** &gt; **Personalization** &gt; **Start** &gt; **Show recently added apps** |
 | Pinned folders | MDM: **AllowPinnedFolder** | **Settings** &gt; **Personalization** &gt; **Start** &gt; **Choose which folders appear on Start** |
 | Power | MDM: **Start/HidePowerButton**</br>**Start/HideHibernate**</br>**Start/HideRestart**</br>**Start/HideShutDown**</br>**Start/HideSleep**</br></br>Group Policy: **Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands** | none |
 | Start layout | MDM: **Start layout**</br>**ImportEdgeAssets**</br></br>Group Policy: **Prevent users from customizing their Start screen**</br></br>**Note:** When a full Start screen layout is imported with Group Policy or MDM, the users cannot pin, unpin, or uninstall apps from the Start screen. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to the Start screen. When a partial Start screen layout is imported, users cannot change the tile groups applied by the partial layout, but can modify other tile groups and create their own.</br></br>**Start layout** policy can be used to pin apps to the taskbar based on an XML File that you provide. Users will be able to change the order of pinned apps, unpin apps, and pin additional apps to the taskbar. | none |

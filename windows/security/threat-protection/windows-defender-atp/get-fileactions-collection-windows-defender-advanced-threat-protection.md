@@ -19,7 +19,7 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 Gets collection of actions done on files. Get FileActions collection API supports OData V4 queries.
 

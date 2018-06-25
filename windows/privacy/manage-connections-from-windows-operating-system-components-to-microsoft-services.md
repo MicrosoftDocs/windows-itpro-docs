@@ -1625,7 +1625,7 @@ To turn this off:
 
 ### <a href="" id="bkmk-spp"></a>18. Software Protection Platform
 
-Enterprise customers can manage their Windows activation status with volume licensing using an on-premise Key Management Server. You can opt out of sending KMS client activation data to Microsoft automatically by doing one of the following:
+Enterprise customers can manage their Windows activation status with volume licensing using an on-premises Key Management Server. You can opt out of sending KMS client activation data to Microsoft automatically by doing one of the following:
 
 For Windows 10:
 
@@ -1974,7 +1974,7 @@ You can turn off Windows Update by setting the following registry entries:
 
     -and-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Update** &gt; **Specify intranet Microsoft update service location** and set the **Set the alternate download server** to "".
+-   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Update** &gt; **Specify intranet Microsoft update service location** and set the **Set the alternate download server** to " ".
 
 
 You can turn off automatic updates by doing one of the following. This is not recommended.

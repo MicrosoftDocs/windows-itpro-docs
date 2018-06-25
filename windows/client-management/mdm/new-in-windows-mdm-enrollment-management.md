@@ -1600,7 +1600,8 @@ Alternatively you can use the following procedure to create an EAP Configuration
 7.  Close the rasphone dialog box.
 8.  Continue following the procedure in the [EAP configuration](eap-configuration.md) topic from Step 9 to get an EAP TLS profile with appropriate filtering.
 
-> **Note**  You can also set all the other applicable EAP Properties through this UI as well. A guide for what these properties mean can be found in the [Extensible Authentication Protocol (EAP) Settings for Network Access](https://technet.microsoft.com/library/hh945104.aspx) topic.
+>[!NOTE]
+>You can also set all the other applicable EAP Properties through this UI as well. A guide for what these properties mean can be found in the [Extensible Authentication Protocol (EAP) Settings for Network Access](https://technet.microsoft.com/library/hh945104.aspx) topic.
 
 
 ### <a href="" id="remote"></a>Remote PIN reset not supported in Azure Active Directory joined mobile devices
@@ -1617,7 +1618,7 @@ In Azure AD joined Windows 10 PC, provisioning /.User resources fails when the 
 
 ### <a href="" id="kerberos"></a>Requirements to note for VPN certificates also used for Kerberos Authentication
 
-If you want to use the certificate used for VPN authentication also for Kerberos authentication (required if you need access to on-premise resources using NTLM or Kerberos), the user's certificate must meet the requirements for smart card certificate, the Subject field should contain the DNS domain name in the DN or the SAN should contain a fully qualified UPN so that the DC can be located from the DNS registrations. If certificates that do not meet these requirements are used for VPN, users may fail to access resources that require Kerberos authentication. This issue primarily impacts Windows Phone.
+If you want to use the certificate used for VPN authentication also for Kerberos authentication (required if you need access to on-premises resources using NTLM or Kerberos), the user's certificate must meet the requirements for smart card certificate, the Subject field should contain the DNS domain name in the DN or the SAN should contain a fully qualified UPN so that the DC can be located from the DNS registrations. If certificates that do not meet these requirements are used for VPN, users may fail to access resources that require Kerberos authentication. This issue primarily impacts Windows Phone.
 
 ### <a href="" id="pushbuttonreset"></a>Device management agent for the push-button reset is not working
 
@@ -2204,7 +2205,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[Mobile device enrollment](mobile-device-enrollment.md)</td>
 <td style="vertical-align:top"><p>Added the following statement:</p>
 <ul>
-<li>Devices that are joined to an on-premise Active Directory can enroll into MDM via the Work access page in <strong>Settings</strong>. However, the enrollment can only target the user enrolled with user-specific policies. Device targeted policies will continue to impact all users of the device.</li>
+<li>Devices that are joined to an on-premises Active Directory can enroll into MDM via the Work access page in <strong>Settings</strong>. However, the enrollment can only target the user enrolled with user-specific policies. Device targeted policies will continue to impact all users of the device.</li>
 </ul>
 </td></tr>
 <tr class="odd">

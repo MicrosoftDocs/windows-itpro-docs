@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Use the Group Policy setting, Set a default associations configuration file, to set the default browser for your company devices running Windows 10.

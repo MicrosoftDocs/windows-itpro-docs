@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.pagetype: mobile
 author: greg-lindsay
-ms.date: 06/07/2018
+ms.date: 06/15/2018
 ---
 
 # Windows 10 downgrade paths
@@ -77,9 +77,9 @@ Downgrading from any edition of Windows 10 to Windows 7, 8, or 8.1 by entering a
     <tr>
         <td>Pro for Workstations</td>
         <td></td>
-        <td align="center">✔</td>
         <td></td>
-        <td align="center">✔</td>
+        <td></td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>

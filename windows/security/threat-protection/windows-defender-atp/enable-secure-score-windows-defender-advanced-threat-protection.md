@@ -23,7 +23,7 @@ ms.date: 04/24/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 Set the baselines for calculating the score of Windows Defender security controls on the Secure Score dashboard. If you use third-party solutions, consider excluding the corresponding controls from the calculations.
 

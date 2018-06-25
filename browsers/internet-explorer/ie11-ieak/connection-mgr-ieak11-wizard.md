@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: We’re sorry. We’ve removed all of the functionality included on the **Connection Manager** page of the Internet Explorer Customization Wizard 11.
 author: eross-msft

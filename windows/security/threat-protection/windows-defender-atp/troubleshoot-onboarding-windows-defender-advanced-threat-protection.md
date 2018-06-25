@@ -25,7 +25,7 @@ ms.date: 04/24/2018
 - Windows Server 2012 R2
 - Windows Server 2016
 
-[!include[Prerelease information](prerelease.md)]
+
 
 You might need to troubleshoot the Windows Defender ATP onboarding process if you encounter issues.
 This page provides detailed steps to troubleshoot onboarding issues that might occur when deploying with one of the deployment tools and common errors that might occur on the machines.

@@ -23,7 +23,7 @@ ms.date: 06/01/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
@@ -67,6 +67,7 @@ To effectively build queries that span multiple tables, you need to understand t
 | IsAzureADJoined | boolean | Boolean indicator of whether machine is joined to the Azure Active Directory |
 | LocalIP | string | IP address assigned to the local machine used during communication |
 | LocalPort | int | TCP port on the local machine used during communication |
+| LogonId | string | Identifier for a logon session. This identifier is unique on the same machine only between restarts. |
 | LoggedOnUsers | string | List of all users that are logged on the machine at the time of the event in JSON array format |
 | LogonType | string | Type of logon session, specifically:<br><br> - **Interactive** - User physically interacts with the machine using the local keyboard and screen<br><br> - **Remote interactive (RDP) logons** - User interacts with the machine remotely using Remote Desktop, Terminal Services, Remote Assistance, or other RDP clients<br><br> - **Network** - Session initiated when the machine is accessed using PsExec or when shared resources on the machine, such as printers and shared folders, are accessed<br><br> - **Batch** - Session initiated by scheduled tasks<br><br> - **Service** - Session initiated by services as they start<br> 
 | MachineGroup | string | Machine group of the machine. This group is used by role-based access control to determine access to the machine. |
@@ -86,6 +87,7 @@ To effectively build queries that span multiple tables, you need to understand t
 | ProcessIntegrityLevel | string | Integrity level of the newly created process. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet downloaded. These integrity levels influence permissions to resources. |
 | ProcessTokenElevation | string | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the newly created process |
 | ProviderId | string | Unique identifier for the Event Tracing for Windows (ETW) provider that collected the event log |
+| PublicIP | string | Public IP address used by the onboarded machine to connect to the Windows Defender ATP service. This could be the IP address of the machine itself, a NAT device, or a proxy. |
 | RegistryKey | string | Registry key that the recorded action was applied to |
 | RegistryValueData | string | Data of the registry value that the recorded action was applied to |
 | RegistryValueName | string | Name of the registry value that the recorded action was applied to |

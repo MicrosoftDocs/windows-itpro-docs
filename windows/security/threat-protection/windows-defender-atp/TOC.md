@@ -7,6 +7,7 @@
 ### [Data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md)
 ### [Assign user access to the portal](assign-portal-access-windows-defender-advanced-threat-protection.md)
 ## [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md)
+### [Onboard previous versions of Windows](onboard-downlevel-windows-defender-advanced-threat-protection.md)
 ### [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
 #### [Onboard machines using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
 #### [Onboard machines using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)

@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: How to create your folder structure on the computer that you’ll use to build your custom browser package.
 author: eross-msft
