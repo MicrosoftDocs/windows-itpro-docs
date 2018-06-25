@@ -30,7 +30,7 @@ On the desktop, you can create an Active Directory account, such as "enrollment@
 
 On the desktop and mobile devices, you can use an enrollment certificate or enrollment username and password, such as "enroll@contoso.com" and "enrollmentpassword." These credentials are used in the provisioning package, which you can use to enroll multiple devices to the MDM service. Once the devices are joined, many users can use them.
 
-> **Note**  
+>[!NOTE]  
 > -   Bulk-join is not supported in Azure Active Directory Join.
 > -   Bulk enrollment does not work in Intune standalone enviroment.
 > -   Bulk enrollment works in System Center Configuration Manager (SCCM) + Intune hybrid environment where the ppkg is generated from the SCCM console.
@@ -47,7 +47,7 @@ On the desktop and mobile devices, you can use an enrollment certificate or enro
 
     Some organizations require custom APNs to be provisioned before talking to the enrollment endpoint or custom VPN to join a domain.
 
-## Create and apply a provisioning package for on-premise authentication
+## Create and apply a provisioning package for on-premises authentication
 
 Using the ICD, create a provisioning package using the enrollment information required by your organization. Ensure that you have all the configuration settings.
 
