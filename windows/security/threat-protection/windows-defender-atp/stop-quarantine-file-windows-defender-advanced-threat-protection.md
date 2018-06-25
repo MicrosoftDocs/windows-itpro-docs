@@ -52,7 +52,7 @@ If successful, this method returns 201, Created response code and _FileMachineAc
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -65,7 +65,7 @@ Content-type: application/json
 }
 
 ```
-Response
+**Response**
 
 Here is an example of the response.
 

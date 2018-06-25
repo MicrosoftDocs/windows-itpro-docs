@@ -49,7 +49,7 @@ If alert not found or files not found - 404 Not Found.
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/testwdatppreview/alerts/{id}/files
 Content-type: application/json
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 

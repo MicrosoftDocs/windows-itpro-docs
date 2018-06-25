@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 06/22/2018
+ms.date: 06/25/2018
 ---
 
 # Find machine information by interal IP API
@@ -49,7 +49,7 @@ If no machine found - 404 Not Found.
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/testwdatppreview/machines/find(timestamp=2018-06
 Content-type: application/json
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 

@@ -47,7 +47,7 @@ If successful, this method returns 200, Ok response code with a collection of Ma
 
 ## Example 1
 
-Request
+**Request**
 
 Here is an example of the request on an organization that has three MachineActions.
 
@@ -55,7 +55,7 @@ Here is an example of the request on an organization that has three MachineActio
 GET https://graph.microsoft.com/testwdatppreview/machineactions
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 
@@ -107,7 +107,7 @@ Content-type: application/json
 
 ## Example 2
 
-Request
+**Request**
 
 Here is an example of a request that filters the MachineActions by machine ID and shows the latest two MachineActions.
 
@@ -117,7 +117,7 @@ GET https://graph.microsoft.com/testwdatppreview/machineactions?$filter=machineI
 
 
 
-Response
+**Response**
 
 Here is an example of the response.
 

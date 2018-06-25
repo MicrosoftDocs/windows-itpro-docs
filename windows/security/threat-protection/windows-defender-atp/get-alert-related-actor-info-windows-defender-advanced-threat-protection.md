@@ -49,7 +49,7 @@ If alert not found or actor not found - 404 Not Found.
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -59,7 +59,7 @@ Content-type: application/json
 
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 

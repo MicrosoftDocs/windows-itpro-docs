@@ -47,7 +47,7 @@ If successful, this method returns 200, Ok response code with the *MachineAction
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -55,7 +55,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/testwdatppreview/machineactions/2e9da30d-27f6-4208-81f2-9cd3d67893ba
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 
