@@ -283,7 +283,7 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1607. Allows secondary authentication devices to work with Windows.
 
-The default for this policy must be on for consumer devices (defined as local or Microsoft account connected device) and off for enterprise devices (such as cloud domain-joined, cloud domain-joined in an on-premise only environment, cloud domain-joined in a hybrid environment, and BYOD).
+The default for this policy must be on for consumer devices (defined as local or Microsoft account connected device) and off for enterprise devices (such as cloud domain-joined, cloud domain-joined in an on-premises only environment, cloud domain-joined in a hybrid environment, and BYOD).
 
 <!--/Description-->
 <!--ADMXMapped-->
