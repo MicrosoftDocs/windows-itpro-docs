@@ -76,7 +76,7 @@ This cloud service encrypts a recovery secret, which is stored locally on the cl
 <p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="tenantid-policies-usecertificateforonpremauth--only-for---device-vendor-msft-"></a>***TenantId*/Policies/UseCertificateForOnPremAuth** (only for ./Device/Vendor/MSFT)  
-<p style="margin-left: 20px">Boolean value that enables Windows Hello for Business to use certificates to authenticate on-premise resources.
+<p style="margin-left: 20px">Boolean value that enables Windows Hello for Business to use certificates to authenticate on-premises resources.
 
 <p style="margin-left: 20px">If you enable this policy setting, Windows Hello for Business will wait until the device has received a certificate payload from the mobile device management server before provisioning a PIN.
 
