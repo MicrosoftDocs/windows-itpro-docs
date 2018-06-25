@@ -736,7 +736,7 @@ Start/DisableContextMenus | 1 - Context menus are hidden for Start apps | No
 <span id="lnk-files" />
 ## Provision .lnk files using Windows Configuration Designer
 
-First, create your desktop app's shortcut file by installing the app on a test device. Right-click the installed application, and choose **Send to** > **Desktop (create shortcut)**. Rename the shortcut to `<appName>.lnk`
+First, create your desktop app's shortcut file by installing the app on a test device, using the default installation location. Right-click the installed application, and choose **Send to** > **Desktop (create shortcut)**. Rename the shortcut to `<appName>.lnk`
 
 Next, create a batch file with two commands. If the desktop app is already installed on the target device, skip the first command for MSI install. 
 
