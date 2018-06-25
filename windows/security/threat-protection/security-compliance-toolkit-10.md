@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.author: sagaudre
 author: brianlic-msft
-ms.date: 05/01/2018
+ms.date: 06/25/2018
 ---
 
 # Microsoft Security Compliance Toolkit 1.0
@@ -21,7 +21,7 @@ The SCT enables administrators to effectively manage their enterprise’s Group 
 
 The Security Compliance Toolkit consists of:
 
--   Windows 10 Security Baselines
+-   Windows 10 security baselines
     -   Windows 10 Version 1803 (April 2018 Update)
     -   Windows 10 Version 1709 (Fall Creators Update)
     -   Windows 10 Version 1703 (Creators Update)
@@ -29,11 +29,11 @@ The Security Compliance Toolkit consists of:
     -   Windows 10 Version 1511 (November Update)
     -   Windows 10 Version 1507
 
--   Windows Server Security Baselines
+-   Windows Server security baselines
     -   Windows Server 2016
     -   Windows Server 2012 R2
 
--   Microsoft Office Security Baselines
+-   Microsoft Office security baseline
     -   Office 2016 
 
 -   Tools
