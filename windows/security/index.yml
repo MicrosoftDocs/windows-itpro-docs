@@ -84,7 +84,7 @@ sections:
 
   - type: paragraph
 
-    text: 'Prevent, detect, investigate, and respond to advanced threats.'
+    text: 'Prevent, detect, investigate, and respond to advanced threats. The following capabilities are available across multiple products that make up the Windows Defender ATP platform' 
 
   - type: list
 
