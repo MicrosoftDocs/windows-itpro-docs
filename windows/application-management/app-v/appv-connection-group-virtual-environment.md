@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 06/22/2018
+ms.date: 06/25/2018
 ---
 # About the connection group virtual environment
 

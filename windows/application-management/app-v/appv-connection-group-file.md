@@ -1,12 +1,12 @@
 ---
-title: About the Connection Group File (Windows 10)
-description: About the Connection Group File
+title: About the connection group file (Windows 10)
+description: A summary of what the connection group file is and how to configure it.
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 06/22/2018
+ms.date: 06/25/2018
 ---
 # About the connection group file
 
@@ -87,7 +87,7 @@ Package precedence is the resolution for otherwise inevitable resource collision
 
 You can use the connection group file to configure each connection group by using the following methods:
 
-- Specify runtime priorities for connection groups. To edit priority by using the App-V Management Console, click the connection group and then click **Edit**.
+- Specify runtime priorities for connection groups. To edit priority by using the App-V Management Console, select the connection group and then select **Edit**.
 
     >[!NOTE]
     >A package only requires priority if it's associated with more than one connection group.

@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 06/22/2018
+ms.date: 06/25/2018
 ---
 # How to configure the client to receive package and connection groups updates from the publishing server
 
