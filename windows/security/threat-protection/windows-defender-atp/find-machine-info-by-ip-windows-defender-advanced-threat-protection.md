@@ -23,6 +23,9 @@ ms.date: 06/25/2018
 
 Find a machine entity around a specific timestamp by internal IP.
 
+>[!NOTE]
+>The timestamp must be within the last 30 days.
+
 ## Permissions
 User needs read permissions.
 
