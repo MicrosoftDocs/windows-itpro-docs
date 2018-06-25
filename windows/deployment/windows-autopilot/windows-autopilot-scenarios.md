@@ -16,17 +16,5 @@ ms.date: 06/01/2018
 
 **Applies to: Windows 10**
 
-Windows Autopilot includes support for a growing list of scenarios, designed to support common organization needs which can vary based on the type of organization and their progress moving to Windows 10 and [transitioning to modern management](https://docs.microsoft.com/en-us/windows/client-management/manage-windows-10-in-your-organization-modern-management).#### Scenario: “Canonical”
-
-Note that enrollment status page settings, available in Microsoft Intune, are configured separately from Autopilot profile settings.
-
-## Scenario: “Canonical” 
-
-### AAD Join
-
-### Hybrid AAD Join
-
-## Scenario: “Plug & Forget”
-
-## Scenario: “Rip & Replace”
+Windows Autopilot includes support for a growing list of scenarios, designed to support common organization needs which can vary based on the type of organization and their progress moving to Windows 10 and [transitioning to modern management](https://docs.microsoft.com/en-us/windows/client-management/manage-windows-10-in-your-organization-modern-management).
 

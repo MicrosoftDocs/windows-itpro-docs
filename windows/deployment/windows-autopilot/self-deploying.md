@@ -15,7 +15,7 @@ ms.date: 06/01/2018
 
 # Windows Autopilot Self-Deploying mode (Preview)
 
-**Applies to: Windows 10 build 17672**
+**Applies to: Windows 10 build 17672 or later**
 
 Windows Autopilot self-deploying mode offers truly zero touch provisioning. With this mode, all you need to do is power on a device, plug it into Ethernet, and watch Windows Autopilot do its magic. When a user powers on a device configured with Windows Autopilot self-deploying mode, the only screen they’ll see is a branded page welcoming them to their device and, if they have it configured in Microsoft Intune, the enrollment status page letting them know the details of the provisioning process. 
 
