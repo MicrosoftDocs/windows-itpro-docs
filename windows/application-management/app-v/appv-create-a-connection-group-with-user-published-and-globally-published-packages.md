@@ -1,6 +1,6 @@
 ---
-title: How to Create a Connection Group with User-Published and Globally Published Packages (Windows 10)
-description: How to Create a Connection Group with User-Published and Globally Published Packages
+title: How to create a connection croup with user-published and globally published packages (Windows 10)
+description: How to create a connection croup with user-published and globally published packages.
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -8,12 +8,9 @@ ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ---
+# How to create a connection croup with user-published and globally published packages
 
-
-# How to Create a Connection Group with User-Published and Globally Published Packages
-
-**Applies to**
--   Windows 10, version 1607
+>Applies to: Windows 10, version 1607
 
 You can create user-entitled connection groups that contain both user-published and globally published packages, using either of the following methods:
 
@@ -21,7 +18,12 @@ You can create user-entitled connection groups that contain both user-published 
 
 -   [How to use the App-V Server to create user-entitled connection groups](#how-to-use-the-app-v-server-to-create-user-entitled-connection-groups)
 
-## What to know before you start:
+## Unsupported scenarios and potential issues
+
+Here are some important things to know before you get started:
+
+- If you add user-published packages in globally entitled connection groups, the connection group will fail.
+- 
 
 <table>
 <colgroup>
@@ -53,7 +55,7 @@ You can create user-entitled connection groups that contain both user-published 
 
 1.  Add and publish packages by using the following commands:
     
-    ```
+    ```PowerShell
     Add-AppvClientPackage <Package1_AppV_file_Path>
     Add-AppvClientPackage <Package2_AppV_file_Path>
     Publish-AppvClientPackage -PackageId <Package1_ID> -VersionId <Package1_Version_ID> -Global
@@ -64,7 +66,7 @@ You can create user-entitled connection groups that contain both user-published 
 
 3.  Add and publish the connection group by using the following commands:
     
-    ```
+    ```PowerShell
     Add-AppvClientConnectionGroup <Connection_Group_XML_file_Path>
     Enable-AppvClientConnectionGroup -GroupId <CG_Group_ID> -VersionId <CG_Version_ID>
     ```
