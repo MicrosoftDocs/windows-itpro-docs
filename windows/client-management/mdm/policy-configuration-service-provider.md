@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 06/05/2018
+ms.date: 06/26/2018
 ---
 
 # Policy CSP
@@ -2071,9 +2071,6 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networkaccess-donotallowanonymousenumerationofsamaccountsandshares" id="localpoliciessecurityoptions-networkaccess-donotallowanonymousenumerationofsamaccountsandshares">LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networkaccess-leteveryonepermissionsapplytoanonymoususers" id="localpoliciessecurityoptions-networkaccess-leteveryonepermissionsapplytoanonymoususers">LocalPoliciesSecurityOptions/NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers</a>
   </dd>
   <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networkaccess-restrictanonymousaccesstonamedpipesandshares" id="localpoliciessecurityoptions-networkaccess-restrictanonymousaccesstonamedpipesandshares">LocalPoliciesSecurityOptions/NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares</a>
@@ -4775,8 +4772,15 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)  
 -   [Browser/AllowSmartScreen](#browser-allowsmartscreen)  
 -   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
--   [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)  
--   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
+-   [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
+-   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
+-   [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
+-   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
+-   [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
+-   [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)
+-   [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)
+-   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters) 
+-   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)   
 -   [Experience/AllowCortana](#experience-allowcortana)  
 -   [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)  
 -   [Privacy/AllowCrossDeviceClipboard](#privacy-allowcrossdeviceclipboard)  
