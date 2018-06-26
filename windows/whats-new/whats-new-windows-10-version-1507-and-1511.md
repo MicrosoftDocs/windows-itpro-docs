@@ -207,7 +207,7 @@ The following sections describe the new and changed functionality in the TPM for
 
 ### <a href="" id="bkmk-dha"></a>Device health attestation
 
-Device health attestation enables enterprises to establish trust based on hardware and software components of a managed device. With device heath attestation, you can configure an MDM server to query a health attestation service that will allow or deny a managed device access to a secure resource.
+Device health attestation enables enterprises to establish trust based on hardware and software components of a managed device. With device health attestation, you can configure an MDM server to query a health attestation service that will allow or deny a managed device access to a secure resource.
 Some things that you can check on the device are:
 -   Is Data Execution Prevention supported and enabled?
 -   Is BitLocker Drive Encryption supported and enabled?
