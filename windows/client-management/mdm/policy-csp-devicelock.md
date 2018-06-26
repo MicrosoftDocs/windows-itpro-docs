@@ -1235,7 +1235,14 @@ Footnote:
 <!--StartHoloLens-->
 ## <a href="" id="hololenspolicies"></a>DeviceLock policies supported by Windows Holographic for Business  
 
--   [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)  
--   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
+-   [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
+-   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
+-   [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
+-   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
+-   [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
+-   [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)
+-   [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)
+-   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters) 
+-   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)   
 <!--EndHoloLens-->
 
