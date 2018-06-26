@@ -23,7 +23,9 @@ You can create user-entitled connection groups that contain both user-published 
 Here are some important things to know before you get started:
 
 - If you add user-published packages in globally entitled connection groups, the connection group will fail.
-- 
+- Track the connection groups where you've used a non-optional package before removing it with the **Unpublish-AppvClientPackage <</span>package> -global** cmdlet.
+      
+    In situations where you have a gobally published package that's listed as non-optional in a user-published connection group that also appears in other packages, running that cmdlet can unpublish the package from every connection group containing that package.
 
 <table>
 <colgroup>
@@ -49,11 +51,9 @@ Here are some important things to know before you get started:
 </tbody>
 </table>
 
- 
-
 ## How to use Windows PowerShell cmdlets to create user-entitled connection groups
 
-1.  Add and publish packages by using the following commands:
+1. Add and publish packages by using the following commands:
     
     ```PowerShell
     Add-AppvClientPackage <Package1_AppV_file_Path>
@@ -62,9 +62,9 @@ Here are some important things to know before you get started:
     Publish-AppvClientPackage -PackageId <Package2_ID> -VersionId <Package2_Version_ID>
     ```
 
-2.  Create the connection group XML file. For more information, see [About the Connection Group File](appv-connection-group-file.md).
+2. Create the connection group XML file. For more information, see [About the connection group file](appv-connection-group-file.md).
 
-3.  Add and publish the connection group by using the following commands:
+3. Add and publish the connection group by using the following commands:
     
     ```PowerShell
     Add-AppvClientConnectionGroup <Connection_Group_XML_file_Path>
@@ -73,17 +73,16 @@ Here are some important things to know before you get started:
 
 ## How to use the App-V Server to create user-entitled connection groups
 
-1.  Open the App-V Management Console.
+1. Open the App-V Management Console.
 
-2.  Follow the instructions in [How to Publish a Package by Using the Management Console](appv-publish-a-packages-with-the-management-console.md) to publish packages globally and to the user.
+2. Follow the instructions in [How to publish a package by using the Management Console](appv-publish-a-packages-with-the-management-console.md) to publish packages globally and to the user.
 
-3.  Follow the instructions in [How to Create a Connection Group](appv-create-a-connection-group.md) to create the connection group, and add the user-published and globally published packages.
+3. Follow the instructions in [How to create a connection group](appv-create-a-connection-group.md) to create the connection group and  add the user-published and globally published packages.
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
 
 ## Related topics
 
-
-[Managing Connection Groups](appv-managing-connection-groups.md)
+- [Managing Connection Groups](appv-managing-connection-groups.md)
