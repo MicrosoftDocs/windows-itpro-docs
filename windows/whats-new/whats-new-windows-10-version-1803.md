@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
-ms.date: 05/10/2018
+ms.date: 06/08/2018
 ms.localizationpriority: high
 ---
 
@@ -169,7 +169,7 @@ In the Feedback and Settings page under Privacy Settings you can now delete the 
 
 ### Security Baselines
 
-A draft of the new [security baseline for Windows 10 version 1803](https://blogs.technet.microsoft.com/secguide/2018/03/27/security-baseline-for-windows-10-v1803-redstone-4-draft/) has been published. 
+The new [security baseline for Windows 10 version 1803](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) has been published. 
 
 ### Windows Defender Antivirus
 

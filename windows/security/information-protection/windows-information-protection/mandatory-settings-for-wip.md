@@ -6,9 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: eross-msft
+ms.author: justinha
+ms.date: 05/30/2018
 ms.localizationpriority: medium
-ms.date: 09/11/2017
 ---
 
 # Mandatory tasks and settings required to turn on Windows Information Protection (WIP)
@@ -29,7 +29,7 @@ This list provides all of the tasks and settings that are required for the opera
 |Specify your corporate identity.|This field is automatically filled out for you by Microsoft Intune. However, you must manually correct it if it’s incorrect or if you need to add additional domains. For more info about where this area is and what it means, see the **Define your enterprise-managed corporate identity** section of the policy creation topics.
 |Specify your network domain names.|Starting with Windows 10, version 1703, this field is optional.<br><br>Specify the DNS suffixes used in your environment. All traffic to the fully-qualified domains appearing in this list will be protected. For more info about where this area is and how to add your suffixes, see the table that appears in the **Choose where apps can access enterprise data** section of the policy creation topics.|
 |Specify your enterprise IPv4 or IPv6 ranges.|Starting with Windows 10, version 1703, this field is optional.<br><br>Specify the addresses for a valid IPv4 or IPv6 value range within your intranet. These addresses, used with your Network domain names, define your corporate network boundaries. For more info about where this area is and what it means, see the table that appears in the **Define your enterprise-managed corporate identity** section of the policy creation topics.|
-|Include your Data Recovery Agent (DRA) certificate.|Starting with Windows 10, version 1703, this field is optional. But we strongly recommend that you add a certificate.<br><br>This certificate makes sure that any of your WIP-encrypted data can be decrypted, even if the security keys are lost. For more info about where this area is and what it means, see the [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/create-and-verify-an-efs-dra-certificate) topic.|
+|Include your Data Recovery Agent (DRA) certificate.|Starting with Windows 10, version 1703, this field is optional. But we strongly recommend that you add a certificate.<br><br>This certificate makes sure that any of your WIP-encrypted data can be decrypted, even if the security keys are lost. For more info about where this area is and what it means, see the [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](https://technet.microsoft.com/itpro/windows/keep-secure/create-and-verify-an-efs-dra-certificate) topic.|
 
 
 >[!NOTE]

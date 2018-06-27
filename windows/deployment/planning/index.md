@@ -6,7 +6,7 @@ keywords: deploy, upgrade, update, configure
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: TrudyHa
 ms.date: 07/27/2017
 ---

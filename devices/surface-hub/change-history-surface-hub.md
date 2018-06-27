@@ -2,20 +2,24 @@
 title: Change history for Surface Hub
 description: This topic lists new and updated topics for Surface Hub.
 keywords: change history
-ms.prod: w10
-ms.mktglfcycl: manage
+ms.prod: surface-hub
 ms.sitesec: library
-ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 05/22/2018
+ms.date: 06/01/2018
 ms.localizationpriority: medium
 ---
 
 # Change history for Surface Hub
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
+
+## June 2018
+
+New or changed topic | Description
+--- | ---
+[On-premises deployment (single forest)](on-premises-deployment-surface-hub-device-accounts.md) and [On-premises deployment (multiple forests)](on-premises-deployment-surface-hub-multi-forest.md) | Added (prerelease) instructions for disabling anonymous email and IM.
 
 ## May 2018
 
@@ -28,6 +32,7 @@ New or changed topic | Description
 New or changed topic | Description
 --- | ---
 [Hybrid deployment](hybrid-deployment-surface-hub-device-accounts.md) | Updated instructions for Skype for Business Hybrid.
+
 
 ## March 2018
 

@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: DaniHalfin
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.author: daniha
 ms.date: 10/24/2017
 ---

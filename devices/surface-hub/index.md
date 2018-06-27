@@ -2,10 +2,8 @@
 title: Microsoft Surface Hub admin guide
 description: Documents related to the Microsoft Surface Hub.
 ms.assetid: 69C99E91-1441-4318-BCAF-FE8207420555
-ms.prod: w10
-ms.mktglfcycl: explore
+ms.prod: surface-hub
 ms.sitesec: library
-ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article

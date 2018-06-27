@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: Windows
 ms.pagetype: edu
 ms.sitesec: library
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: MikeBlodge
 ms.author: MikeBlodge
 ms.date: 04/30/2018

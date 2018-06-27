@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Learn how to register an uninstall app for your custom components, using IEAK 11.
 author: eross-msft

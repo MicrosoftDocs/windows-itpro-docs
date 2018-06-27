@@ -9,7 +9,7 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.date: 11/01/2017
 ms.topic: conceptual
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Acquire apps in Microsoft Store for Business and Education

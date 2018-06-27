@@ -1,9 +1,7 @@
 ---
 title: What's new in Windows 10, version 1703 for Surface Hub 
 description: Windows 10, version 1703 (Creators Update) brings new features to Microsoft Surface Hub.
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.pagetype: devices
+ms.prod: surface-hub
 ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker

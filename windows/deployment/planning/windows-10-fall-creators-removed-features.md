@@ -3,7 +3,7 @@ title: Windows 10 Fall Creators Update - Features removed or planned for removal
 description: Which features were removed in Windows 10 Fall Creators Update (version 1709)? Which features are we thinking of removing in the future?
 ms.prod: w10
 ms.mktglfcycl: plan
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 author: lizap
 ms.date: 10/09/2017

@@ -8,6 +8,8 @@ ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
 ms.date: 03/27/2018
+keywords: oms, operations management suite, optimization, downloads, updates, log analytics
+ms.localizationpriority: medium
 ---
 
 # Delivery Optimization in Update Compliance

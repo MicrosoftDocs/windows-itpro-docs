@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use the \[URL\] .INS file setting to decide whether to use an auto-configured proxy server.
 author: eross-msft

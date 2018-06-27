@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Use this section to learn about how to turn on and use IE7 Enterprise Mode or IE8 Enterprise Mode.

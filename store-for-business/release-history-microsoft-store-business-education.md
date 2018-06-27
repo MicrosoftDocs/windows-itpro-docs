@@ -8,7 +8,7 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
-ms.date: 4/26/2018
+ms.date: 5/31/2018
 ---
 
 # Microsoft Store for Business and Education release history
@@ -16,6 +16,11 @@ ms.date: 4/26/2018
 Microsoft Store for Business and Education regularly releases new and improved feaures. Here's a summary of new or updated features in previous releases. 
 
 Looking for info on the latest release? Check out [What's new in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md) 
+
+## April 2018
+- **Assign apps to larger groups** - We're making it easier for admins to assign apps to groups of people. Admins can assign licenses to groups of any size, and include subgroups within those groups. We’ll figure out who’s in those groups, and assign licenses to people in the groups (skipping people who already have licenses). Along the way, we’ll let you know how many licenses are needed, and provide an estimate on the time required to assign licenses.
+- **Change collection order in private store** - Private store collections make it easy for groups of people to find the apps that they need. Now, you can customize the order of your private store collections. 
+- **Office 365 subscription management** -  We know that sometimes customers need to cancel a subscription. While we don't want to lose a customer, we want the process for managing subscriptions to be easy. Now, you can delete your Office 365 subscription without calling Support. From Microsoft Store for Business and Education, you can request to delete an Office 365 subscription. We'll wait three days before permanently deleting the subscription. In case of a mistake, customers are welcome to reactivate subscriptions during the three-day period.
 
 ## March 2018
 - **Performance improvements in private store** - We've made it significantly faster for you to udpate the private store. Many changes to the private store are available immediately after you make them. [Get more info](https://docs.microsoft.com/microsoft-store/manage-private-store-settings#private-store-performance)

@@ -7,7 +7,7 @@ ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.topic: hero-article
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested

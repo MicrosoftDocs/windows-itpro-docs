@@ -4,10 +4,10 @@ description: You can downgrade Windows 10 if the downgrade path is supported.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.pagetype: mobile
 author: greg-lindsay
-ms.date: 06/07/2018
+ms.date: 06/15/2018
 ---
 
 # Windows 10 downgrade paths
@@ -83,12 +83,6 @@ Downgrading from any edition of Windows 10 to Windows 7, 8, or 8.1 by entering a
         <td></td>
         <td></td>
         <td></td>
-    </tr>
-    <tr>
-        <td>Pro Education</td>
-        <td></td>
-        <td align="center">✔</td>
-        <td align="center">✔</td>
         <td></td>
         <td></td>
         <td></td>

@@ -4,7 +4,7 @@ description: Explains how
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: jsuther1974
 ms.date: 05/03/2018
 ---

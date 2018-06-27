@@ -1,9 +1,8 @@
 ---
 title: Install apps on HoloLens (HoloLens)
 description: The recommended way to install apps on HoloLens is to use Microsoft Store for Business.
-ms.prod: w10
+ms.prod: hololens
 ms.mktglfcycl: manage
-ms.pagetype: hololens, devices
 ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker

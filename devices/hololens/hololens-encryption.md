@@ -1,9 +1,8 @@
 ---
 title: Enable Bitlocker encryption for HoloLens (HoloLens)
 description: Enable Bitlocker device encryption to protect files stored on the HoloLens  
-ms.prod: w10
+ms.prod: hololens
 ms.mktglfcycl: manage
-ms.pagetype: hololens, devices
 ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker

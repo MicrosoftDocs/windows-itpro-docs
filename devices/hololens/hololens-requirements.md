@@ -1,15 +1,13 @@
 ---
 title: HoloLens in the enterprise requirements and FAQ (HoloLens)
 description: Requirements and FAQ for general use, Wi-Fi, and device management for HoloLens in the enterprise.
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.pagetype: hololens, devices
+ms.prod: hololens
 ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 07/27/2017
+ms.date: 06/04/2018
 ---
 
 # Microsoft HoloLens in the enterprise: requirements and FAQ
@@ -47,9 +45,17 @@ When you develop for HoloLens, there are [system requirements and tools](https:/
 
 ## FAQ for HoloLens
 
+<span id="pin"/>
 #### Is Windows Hello for Business supported on HoloLens?
 
-Hello for Business (using a PIN to sign in) is supported for HoloLens. It must be configured [using MDM](hololens-enroll-mdm.md).
+Windows Hello for Business (using a PIN to sign in) is supported for HoloLens. To allow Windows Hello for Business PIN sign-in on HoloLens:
+
+1. The HoloLens device must be [managed by MDM](hololens-enroll-mdm.md).
+2. You must enable Windows Hello for Business for the device. ([See instructions for Microsoft Intune.](https://docs.microsoft.com/intune/windows-hello))
+3. On HoloLens, the user can then set up a PIN from **Settings** > **Sign-in Options** > **Add PIN**.
+
+>[!NOTE]
+>Users who sign in with a Microsoft account can also set up a PIN in **Settings** > **Sign-in Options** > **Add PIN**. This PIN is associated with [Windows Hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello), rather than [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview).
 
 #### Does the type of account change the sign-in behavior?
 

@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: explore
 description: Get answers to commonly asked questions about the Internet Explorer 11 Blocker Toolkit.
 author: shortpatti

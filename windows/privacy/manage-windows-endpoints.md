@@ -34,7 +34,7 @@ We used the following methodology to derive these network endpoints:
 2.	Leave the devices running idle for a week (that is, a user is not interacting with the system/device).
 3.	Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
 4.	Compile reports on traffic going to public IP addresses.
-5.  The test virtual machine was logged in using a local account and was not joined to a domain or Azure Active Directory.
+5. The test virtual machine was logged in using a local account and was not joined to a domain or Azure Active Directory.
 
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
@@ -502,8 +502,7 @@ In addition to the endpoints listed for Windows 10 Enterprise, the following end
 | *.search.msn.com | TLSv1.2 | Used to retrieve Windows Spotlight metadata. |
 | *.wac.edgecastcdn.net | TLSv1.2 | Used by the Verizon Content Delivery Network to perform Windows updates. |
 | *.wns.windows.com | TLSv1.2 | Used for the Windows Push Notification Services (WNS). |
-| *prod.do.dsp.mp.microsoft.com | TLSv1.2/
-HTTPS | Used for Windows Update downloads of apps and OS updates. |
+| *prod.do.dsp.mp.microsoft.com | TLSv1.2\/HTTPS | Used for Windows Update downloads of apps and OS updates. |
 | .g.akamaiedge.net | HTTP | Used to check for updates to maps that have been downloaded for offline use. |
 | telecommand.telemetry.microsoft.com | HTTPS | Used by Windows Error Reporting. |
 | 2.dl.delivery.mp.microsoft.com | HTTP | Enables connections to Windows Update. |
@@ -530,8 +529,7 @@ HTTPS | Used for Windows Update downloads of apps and OS updates. |
 | dual-a-0001.a-msedge.net | TLSv1.2 | Used by OfficeHub to get the metadata of Office apps. |
 | fe2.update.microsoft.com | HTTPS | Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
 | fe2.update.microsoft.com.nsatc.net | TLSv1.2 | Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
-| fe3.delivery.dsp.mp.microsoft.com.nsatc.net | TLSv1.2/
-HTTPS | Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
+| fe3.delivery.dsp.mp.microsoft.com.nsatc.net | TLSv1.2\/HTTPS | Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
 | fg.download.windowsupdate.com.c.footprint.net | HTTP | Used to download operating system patches and updates. |
 | fp.msedge.net | HTTPS | Used by OfficeHub to get the metadata of Office apps. |
 | g.live.com/1rewlive5skydrive/ | HTTPS | Used by a redirection service to automatically update URLs. |
@@ -553,11 +551,9 @@ HTTPS | Enables connections to Windows Update, Microsoft Update, and the online 
 | pti.store.microsoft.com | HTTPS | Used to communicate with Microsoft Store. |
 | pti.store.microsoft.com.unistore.akadns.net | TLSv1.2 | Used to communicate with Microsoft Store. |
 | purchase.mp.microsoft.com | HTTPS | Used to communicate with Microsoft Store. |
-| ris.api.iris.microsoft.com.akadns.net | TLSv1.2/
-HTTPS | Used to retrieve Windows Spotlight metadata. |
+| ris.api.iris.microsoft.com.akadns.net | TLSv1.2\/HTTPS | Used to retrieve Windows Spotlight metadata. |
 | settings-win.data.microsoft.com | HTTPS | Used for Windows apps to dynamically update their configuration. |
-| sls.update.microsoft.com.nsatc.net | TLSv1.2/
-HTTPS | Enables connections to Windows Update. |
+| sls.update.microsoft.com.nsatc.net | TLSv1.2\/HTTPS | Enables connections to Windows Update. |
 | star-mini.c10r.facebook.com | TLSv1.2 | Used for the Facebook Live Tile. |
 | storecatalogrevocation.storequality.microsoft.com | HTTPS | Used to revoke licenses for malicious apps on the Microsoft Store. |
 | storeedgefd.dsx.mp.microsoft.com | HTTPS | Used to communicate with Microsoft Store. |
@@ -579,8 +575,7 @@ HTTPS | Enables connections to Windows Update. |
 | **Destination** | **Protocol** | **Description** |
 | --- | --- | --- |
 | *.*.akamai.net | HTTP | Used to download content. |
-| *.*.akamaiedge.net | HTTP/
-TLSv1.2 | Used to check for updates to maps that have been downloaded for offline use. |
+| *.*.akamaiedge.net | TLSv1.2\/HTTP | Used to check for updates to maps that have been downloaded for offline use. |
 | *.a-msedge.net | TLSv1.2 | Used by OfficeHub to get the metadata of Office apps. |
 | *.blob.core.windows.net | HTTPS | Used by Windows Update to update words used for language input methods. |
 | *.c-msedge.net | HTTP | Used by OfficeHub to get the metadata of Office apps. |
@@ -594,8 +589,7 @@ TLSv1.2 | Used to check for updates to maps that have been downloaded for offlin
 | *.wac.edgecastcdn.net | TLSv1.2 | Used by the Verizon Content Delivery Network to perform Windows updates. |
 | *.wac.phicdn.net | HTTP | Used by the Verizon Content Delivery Network to perform Windows updates. |
 | *.wns.windows.com | TLSv1.2 | Used for the Windows Push Notification Services (WNS). |
-| *prod.do.dsp.mp.microsoft.com | TLSv1.2/
-HTTPS | Used for Windows Update downloads of apps and OS updates. |
+| *prod.do.dsp.mp.microsoft.com | TLSv1.2\/HTTPS | Used for Windows Update downloads of apps and OS updates. |
 | 3.dl.delivery.mp.microsoft.com | HTTPS | Enables connections to Windows Update. |
 | 3.dl.delivery.mp.microsoft.com.c.footprint.net | HTTP | Enables connections to Windows Update. |
 | 3.tlu.dl.delivery.mp.microsoft.com | HTTP | Enables connections to Windows Update. |
@@ -620,8 +614,7 @@ HTTPS | Used for Windows Update downloads of apps and OS updates. |
 | evoke-windowsservices-tas.msedge.net | HTTPS | Used by the Photos app to download configuration files, and to connect to the Office 365 portal’s shared infrastructure, including Office Online. |
 | fe2.update.microsoft.com | HTTPS | Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
 | fe2.update.microsoft.com.nsatc.net | TLSv1.2 | Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
-| fe3.delivery.dsp.mp.microsoft.com.nsatc.net | TLSv1.2/
-HTTPS | Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
+| fe3.delivery.dsp.mp.microsoft.com.nsatc.net | TLSv1.2\/HTTPS | Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
 | fe3.delivery.mp.microsoft.com | HTTPS | Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
 | fg.download.windowsupdate.com.c.footprint.net | HTTP | Used to download operating system patches and updates. |
 | fp.msedge.net | HTTPS | Used by OfficeHub to get the metadata of Office apps. |
@@ -706,8 +699,7 @@ HTTPS | Enables connections to Windows Update, Microsoft Update, and the online 
 | fe3.delivery.dsp.mp.microsoft.com.nsatc.net | TLSv1.2 | Enables connections to Windows Update. |
 | fg.download.windowsupdate.com.c.footprint.net | HTTP | Used to download operating system patches and updates. |
 | fp.msedge.net | HTTPS | Used by OfficeHub to get the metadata of Office apps. |
-| g.msn.com.nsatc.net | HTTP/
-TLSv1.2 | Used to retrieve Windows Spotlight metadata. |
+| g.msn.com.nsatc.net | TLSv1.2\/HTTP | Used to retrieve Windows Spotlight metadata. |
 | geo-prod.do.dsp.mp.microsoft.com.nsatc.net | TLSv1.2 | Enables connections to Windows Update. |
 | geover-prod.do.dsp.mp.microsoft.com | HTTPS | Enables connections to Windows Update. |
 | go.microsoft.com | HTTPS | Used by a redirection service to automatically update URLs. |

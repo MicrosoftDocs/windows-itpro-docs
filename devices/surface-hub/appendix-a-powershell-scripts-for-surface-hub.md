@@ -3,10 +3,8 @@ title: PowerShell for Surface Hub (Surface Hub)
 description: PowerShell scripts to help set up and manage your Microsoft Surface Hub.
 ms.assetid: 3EF48F63-8E4C-4D74-ACD5-461F1C653784
 keywords: PowerShell, set up Surface Hub, manage Surface Hub
-ms.prod: w10
-ms.mktglfcycl: manage
+ms.prod: surface-hub
 ms.sitesec: library
-ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
@@ -20,7 +18,7 @@ ms.localizationpriority: medium
 PowerShell scripts to help set up and manage your Microsoft Surface Hub.
 
 -   [PowerShell scripts for Surface Hub admins](#scripts-for-admins)
-    -   [Create an on-premise account](#create-on-premise-ps-scripts)
+    -   [Create an on-premises account](#create-on-premises-ps-scripts)
     -   [Create a device account using Office 365](#create-os356-ps-scripts)
     -   [Account verification script](#acct-verification-ps-scripts)
     -   [Enable Skype for Business (EnableSfb.ps1)](#enable-sfb-ps-scripts)
@@ -187,7 +185,7 @@ These scripts will create a device account for you. You can use the [Account ver
 
 The account creation scripts cannot modify an already existing account, but can be used to help you understand which cmdlets need to be run to configure the existing account correctly.
 
-### <a href="" id="create-on-premise-ps-scripts"></a>Create an on-premise account
+### <a href="" id="create-on-premises-ps-scripts"></a>Create an on-premises account
 
 Creates an account as described in [On-premises deployment](on-premises-deployment-surface-hub-device-accounts.md).
 

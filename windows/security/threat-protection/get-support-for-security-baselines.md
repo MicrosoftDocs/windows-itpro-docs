@@ -4,10 +4,10 @@ description: This article, and the articles it links to, answers frequently aske
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.author: sagaudre
 author: brianlic-msft
-ms.date: 05/01/2018
+ms.date: 06/25/2018
 ---
 
 # Get Support
@@ -25,7 +25,7 @@ Any version of Windows baseline before Windows 10 1703 can still be downloaded u
 -   [SCM 4.0 Download](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx)
 -   [SCM Frequently Asked Questions (FAQ)](https://social.technet.microsoft.com/wiki/contents/articles/1836.microsoft-security-compliance-manager-scm-frequently-asked-questions-faq.aspx)
 -   [SCM Release Notes](https://social.technet.microsoft.com/wiki/contents/articles/1864.microsoft-security-compliance-manager-scm-release-notes.aspx)
--   [SCM Baseline Download Help](https://social.technet.microsoft.com/wiki/contents/articles/1865.microsoft-security-compliance-manager-scm-baseline-download-help.aspx)
+-   [SCM baseline download help](https://social.technet.microsoft.com/wiki/contents/articles/1865.microsoft-security-compliance-manager-scm-baseline-download-help.aspx)
 
 **What file formats are supported by the new SCT?**
 
@@ -94,4 +94,4 @@ Internet Explorer 11 | [SecGuide](https://blogs.technet.microsoft.com/secguide/2
 
 ## See also
 
-[Windows Security Baselines](windows-security-baselines.md)
+[Windows security baselines](windows-security-baselines.md)

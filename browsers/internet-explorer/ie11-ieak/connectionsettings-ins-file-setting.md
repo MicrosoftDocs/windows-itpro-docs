@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: Use the \[ConnectionSettings\] .INS file setting to specify the network connection settings needed to install your custom package.
 author: eross-msft

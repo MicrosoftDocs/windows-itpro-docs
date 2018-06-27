@@ -6,6 +6,7 @@ description: Learn about product documentation and resources available for schoo
 author: CelesteDG
 ms.topic: hub-page
 ms.author: celested
+ms.collection: ITAdminEDU
 ms.date: 10/30/2017
 ---
 <div id="main" class="v2">
@@ -447,7 +448,7 @@ ms.date: 10/30/2017
                                 </div>
                             </li>
                             <li>
-                                <a href="https://www.mepn.com" target="_blank">
+                                <a href="https://partner.microsoft.com/solutions/education" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -457,8 +458,8 @@ ms.date: 10/30/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Microsoft Education Partner Network</h3>
-                                                    <p>Find out the latest news and announcements for Microsoft Education partners.</p>
+                                                    <h3>Microsoft Partner Network</h3>
+                                                    <p>Discover the latest news and resources for Microsoft Education products, solutions, licensing, and readiness.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -466,7 +467,7 @@ ms.date: 10/30/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.mepn.com/MEPN/AEPHome.aspx" target="_blank">
+                                <a href="https://www.mepn.com" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -476,8 +477,8 @@ ms.date: 10/30/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Authorized Education Partner (AEP) home page</h3>
-                                                    <p>Access the essentials and find out what it takes to become an AEP.</p>
+                                                    <h3>Authorized Education Partner (AEP) program</h3>
+                                                    <p>Become authorized to purchase and resell academic priced offers and products to Qualified Educational Users (QEU).</p>
                                                 </div>
                                             </div>
                                         </div>

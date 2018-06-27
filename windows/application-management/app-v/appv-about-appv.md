@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/18/2018
+ms.date: 06/08/2018
 ---
 # What's new in App-V for Windows 10, version 1703 and earlier
 

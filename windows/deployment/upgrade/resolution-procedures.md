@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.date: 03/30/2018
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Resolution procedures
@@ -738,7 +738,7 @@ Also see the following sequential list of modern setup (mosetup) error codes wit
 | 0XC190020d | MOSETUP_E_DOWNLOADDISKSPACE_CANCEL | The user has chosen to cancel as the device does not have enough disk space to download. | 
 | 0XC190020e | MOSETUP_E_INSTALLDISKSPACE_BLOCK | The system does not pass the diskspace requirements to install the payload. | 
 | 0XC190020f | MOSETUP_E_INSTALLDISKSPACE_CANCEL | The user has chosen to cancel as the device does not have enough disk space to install. | 
-| 0XC1900210 | MOSETUP_E_COMPAT_SCANONLY | The user has use the setup.exe command line to do scanonly, not to install the OS. | 
+| 0XC1900210 | MOSETUP_E_COMPAT_SCANONLY | The user has used the setup.exe command line to do scanonly, not to install the OS. | 
 | 0XC1900211 | MOSETUP_E_DOWNLOAD_UNPACK_DISKSPACE_BLOCK | The system does not pass the disk space requirements to download and unpack media. | 
 | 0XC1900212 | MOSETUP_E_DOWNLOAD_UNPACK_DISKSPACE_MULTIARCH_BLOCK | The system does not pass the disk space requirements to download and unpack multi-architecture media. | 
 | 0XC1900213 | MOSETUP_E_NO_OFFER_FOUND | There was no offer found that matches the required criteria. | 

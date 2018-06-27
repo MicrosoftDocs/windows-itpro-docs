@@ -9,7 +9,7 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.date: 4/26/2018
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Change history for Microsoft Store for Business and Microsoft Store for Education  

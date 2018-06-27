@@ -2,20 +2,25 @@
 title: Change history for Microsoft HoloLens documentation
 description: This topic lists new and updated topics for HoloLens.
 keywords: change history
-ms.prod: w10
+ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 05/22/2018
+ms.date: 06/04/2018
 ---
 
 # Change history for Microsoft HoloLens documentation
 
 This topic lists new and updated topics in the [Microsoft HoloLens documentation](index.md).
+
+## June 2018
+
+New or changed topic | Description
+--- | ---
+[HoloLens in the enterprise: requirements and FAQ](hololens-requirements.md#pin) | Added instructions for creating a sign-in PIN. 
 
 ## May 2018
 

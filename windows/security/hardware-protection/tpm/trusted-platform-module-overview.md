@@ -6,9 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: brianlic-msft
-ms.date: 07/27/2017
+ms.date: 06/18/2018
 ---
 
 # Trusted Platform Module Technology Overview

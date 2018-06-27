@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
-ms.date: 09/21/2017
+ms.date: 06/08/2018
 ---
 
 # Configure an AppLocker policy for audit only
@@ -21,8 +21,6 @@ This topic for IT professionals describes how to set AppLocker policies to **Aud
 After AppLocker rules are created within the rule collection, you can configure the enforcement setting to **Enforce rules** or **Audit only**.
 
 When AppLocker policy enforcement is set to **Enforce rules**, rules are enforced for the rule collection and all events are audited. When AppLocker policy enforcement is set to **Audit only**, rules are only evaluated but all events generated from that evaluation are written to the AppLocker log.
-
->**Note:**  There is no audit mode for the DLL rule collection. DLL rules affect specific apps. Therefore, test the impact of these rules first before deploying them to production. To enable the DLL rule collection, see [Enable the DLL rule collection](enable-the-dll-rule-collection.md).
  
 You can perform this task by using the Group Policy Management Console for an AppLocker policy in a Group Policy Object (GPO) or by using the Local Security Policy snap-in for an AppLocker policy on a local computer or in a security template. For info how to use these MMC snap-ins to administer AppLocker, see [Administer AppLocker](administer-applocker.md#bkmk-using-snapins).
 

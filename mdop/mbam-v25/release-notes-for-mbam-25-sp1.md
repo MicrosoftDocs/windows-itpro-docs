@@ -136,10 +136,12 @@ Digging this further with Fiddler – it does look like once we click on Reports
 
 **Workaround:** Looking at the site.master code and noticed the X-UA mode was dictated as IE8. As IE8 is WAY past the end of life, and customer is using IE11. Update the setting to the below code. This allows the site to utilize IE11 rendering technologies
 
-<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
 Original setting is: 
-<meta http-equiv="X-UA-Compatible" content="IE=8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+
 
 This is the reason why the issue was not seen with other browsers like Chrome, Firefox etc.
 
