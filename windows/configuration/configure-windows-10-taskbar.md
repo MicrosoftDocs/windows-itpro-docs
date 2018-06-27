@@ -8,7 +8,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 01/18/2018
 ---
 # Configure Windows 10 taskbar

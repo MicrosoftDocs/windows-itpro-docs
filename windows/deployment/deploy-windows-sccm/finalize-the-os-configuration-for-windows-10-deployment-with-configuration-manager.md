@@ -4,7 +4,7 @@ description: This topic walks you through the steps to finalize the configuratio
 ms.assetid: 38b55fa8-e717-4689-bd43-8348751d493e
 keywords: configure, deploy, upgrade
 ms.prod: w10
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mtniehaus

@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: devices
 author: MariciaAlforque
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 04/26/2018
 ---
 

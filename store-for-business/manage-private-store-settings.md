@@ -10,7 +10,7 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.date: 3/29/2018
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Manage private store settings

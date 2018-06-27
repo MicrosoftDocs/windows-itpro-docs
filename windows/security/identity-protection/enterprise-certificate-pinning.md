@@ -9,7 +9,7 @@ ms.prod: w10
 ms.technology: windows
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 07/27/2017
 ---
 

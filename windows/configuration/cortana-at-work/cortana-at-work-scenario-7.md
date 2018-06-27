@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: eross-msft
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.author: lizross
 ms.date: 10/05/2017
 ---

@@ -9,7 +9,7 @@ ms.pagetype: devices
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 09/20/2017
 ---
 

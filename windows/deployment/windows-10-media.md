@@ -4,7 +4,7 @@ description: There are specific infrastructure requirements to deploy and manage
 keywords: deploy, upgrade, update, software, media
 ms.prod: w10
 ms.mktglfcycl: plan
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 10/20/2017
 ms.sitesec: library
 author: greg-lindsay
