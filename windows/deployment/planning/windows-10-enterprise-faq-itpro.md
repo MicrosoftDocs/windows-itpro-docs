@@ -4,7 +4,7 @@ description: Get answers to common questions around compatibility, installation,
 keywords: Windows 10 Enterprise, download, system requirements, drivers, appcompat, manage udpates, Windows as a service, servicing channels, deployment tools
 ms.prod: w10
 ms.mktglfcycl: plan
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 author: 
 ms.date: 08/18/2017

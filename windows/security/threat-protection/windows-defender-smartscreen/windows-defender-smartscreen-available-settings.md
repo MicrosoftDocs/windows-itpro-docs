@@ -7,7 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: jasongerend
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 1/26/2018
 ---
 # Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings

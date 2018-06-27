@@ -5,7 +5,7 @@ ms.assetid: 5103c418-0c61-414b-b93c-a8e8207d1226
 keywords: deploy, system requirements
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay

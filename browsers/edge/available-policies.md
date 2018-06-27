@@ -8,7 +8,7 @@ ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
 title: Group Policy and Mobile Device Management settings for Microsoft Edge (Microsoft Edge for IT Pros)
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 4/30/2018 
 ---
 

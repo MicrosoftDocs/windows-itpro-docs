@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-tanewt
 author: tbit0001
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 11/28/2017
 ---
 

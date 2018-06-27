@@ -3,7 +3,7 @@ title: Deploy Windows Defender Application Control with Intelligent Security Gra
 description: Automatically authorize applications that Microsoft’s ISG recognizes as having known good reputation.
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: mdsakibMSFT
 ms.date: 06/14/2018
 ---

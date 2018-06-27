@@ -9,7 +9,7 @@ ms.pagetype: deploy
 author: Jaimeo
 ms.author: jaimeo
 ms.date: 02/09/2018
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Monitor Windows Updates and Windows Defender Antivirus with Update Compliance

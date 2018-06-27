@@ -6,7 +6,7 @@ ms.prod: edge
 ms.mktglfcycl: support
 ms.sitesec: library
 ms.pagetype: appcompat
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 10/16/2017
 ---
 

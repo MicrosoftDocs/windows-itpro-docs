@@ -4,7 +4,7 @@ description: Explains how you can use a managed installer to automatically autho
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: mdsakibMSFT
 ms.date: 06/13/2018
 ---
