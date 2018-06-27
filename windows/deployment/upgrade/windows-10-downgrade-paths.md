@@ -1,27 +1,31 @@
 ---
-title: Windows 10 downgrade paths (Windows 10)
+title: Windows 10 edition downgrade (Windows 10)
 description: You can downgrade Windows 10 if the downgrade path is supported.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.pagetype: mobile
 author: greg-lindsay
-ms.date: 06/15/2018
+ms.date: 06/27/2018
 ---
 
-# Windows 10 downgrade paths
+# Windows 10 edition downgrade
 **Applies to**
 
 -   Windows 10
 
 ## Downgrading Windows 10
 
-This topic provides a summary of supported Windows 10 downgrade paths. You might need to downgrade the edition of Windows 10, for example, if an Enterprise license is expired. To perform a downgrade, you can use the same methods as when performing an [edition upgrade](windows-10-edition-upgrades.md). For example, you might downgrade an Enterprise edition by manually entering a valid Pro license key.
+This topic provides a summary of supported Windows 10 edition downgrade paths. You might need to downgrade the edition of Windows 10, for example, if an Enterprise license is expired. To perform a downgrade, you can use the same methods as when performing an [edition upgrade](windows-10-edition-upgrades.md). For example, you might downgrade an Enterprise edition by manually entering a valid Pro license key. If a downgrade is supported, then your apps and settings can be migrated from the current edition to the downgraded edition. If a path is not supported, then a clean install is required.
 
-If a downgrade is supported, then your apps and settings can be migrated from the current edition to the downgraded edition. If a path is not supported, then a clean install is required.
+Downgrading from any edition of Windows 10 to Windows 7, 8, or 8.1 by entering a different product key is not supported. The only downgrade method available for this the rollback of a previous upgrade.  You also cannot downgrade from a later version to an earlier version of the same edition (Ex: Windows 10 Pro 1709 to 1703) unless the rollback process is used. This topic does not discuss version downgrades.
 
-Downgrading from any edition of Windows 10 to Windows 7, 8, or 8.1 by entering a different product key is not supported. The only downgrade method available for this the rollback of a previous upgrade.  You also cannot downgrade from a later version to an earlier version of the same edition (Ex: Windows 10 Pro 1709 to 1703) unless the rollback process is used.
+**Note**: As of October 2017 computers that are supplied by an OEM include a firmware embedded product key. If a computer has this key, it will affect the available edition downgrade paths. To determine if a computer has a firmware-embedded activation key and to discover the the original, pre-installed operating system, type the following at an elevated Windows PowerShell prompt:
+
+```
+(Get-WmiObject -query ‘select * from SoftwareLicensingService’).OA3xOriginalProductKey
+```
 
 >**Windows 10 LTSC/LTSB**: Due to [naming changes](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#naming-changes), product versions that display Windows 10 LTSB will be replaced with Windows 10 LTSC in subsequent feature updates. The term LTSC is used here to refer to all long term servicing versions.
 
@@ -83,6 +87,12 @@ Downgrading from any edition of Windows 10 to Windows 7, 8, or 8.1 by entering a
         <td></td>
         <td></td>
         <td></td>
+    </tr>
+    <tr>
+        <td>Pro Education</td>
+        <td></td>
+        <td align="center">✔</td>
+        <td align="center">✔</td>
         <td></td>
         <td></td>
         <td></td>
