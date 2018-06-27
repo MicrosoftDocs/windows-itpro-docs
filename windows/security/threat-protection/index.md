@@ -10,13 +10,28 @@ ms.date: 02/05/2018
 ---
 
 # Threat Protection
-Windows Defender Advanced Threat Protection (Windows Defender ATP) is a unified endpoint security platform that uses built-in security technologies working together and powered by the cloud. 
+Windows Defender Advanced Threat Protection (Windows Defender ATP)is a unified platform for preventative protection, post-breach detection, automated investigation and response, employing intelligent protection to protect endpoints from cyber threats.
 
-The products in the threat protection stack make up the capabilities in Windows Defender ATP.
+![Windows Defender ATP components](images/wdatp-pillars2.png)
 
-![Windows Defender ATP service components](windows-defender-atp/images/wdatp-pillars2.png)
+**Attack surface reduction**<br>
+The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
 
-You can configure these products individually in a way that best suites your organization. When you're done with setting them up, your security operations team will have the convenience of seeing everything in once place through the Windows Defender ATP portal. 
+**Next generation protection**<br>
+To further reinforce the security perimeter of your network, Windows Defender ATP uses next generation protection designed to catch all types of emerging threats.
+
+**Endpoint detection and response**<br>
+Endpoint detection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
+
+**Auto investigation and remediation**<br>
+In conjunction with being able to quickly respond to advanced attacks, Windows Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
+
+**Security posture**<br>
+Windows Defender ATP also provides a security posture capability to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security state of your network.
+
+**Management and APIs**<br>
+Windows Defender ATP provides integrated configuration management in the cloud. The service also supports third-party mobile device management (MDM) tools, cross-platform support, and APIs that allow customers to create custom threat intelligence and  automate workflows.
+
 
 
 Learn more about how to help protect against threats in Windows 10 and Windows 10 Mobile.
