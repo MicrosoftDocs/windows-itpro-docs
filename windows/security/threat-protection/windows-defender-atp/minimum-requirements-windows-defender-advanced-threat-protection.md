@@ -23,11 +23,11 @@ ms.date: 07/01/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
-
 There are some minimum requirements for onboarding machines to the service.
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
+
+[!include[Prerelease information](prerelease.md)]
 
 ## Licensing requirements
 Windows Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:
@@ -38,9 +38,6 @@ Windows Defender Advanced Threat Protection requires one of the following Micros
 
 For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us/Licensing/product-licensing/windows10.aspx#tab=2).
 
-
-
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=technet-wd-atp-minreq-belowfoldlink1)
 
 ## Related topic
 - [Validate licensing and complete setup](licensing-windows-defender-advanced-threat-protection.md)

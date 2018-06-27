@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 07/01/2018
 ---
 
-# Windows Defender Advanced Threat Protection suite
+# Windows Defender Advanced Threat Protection
 
 **Applies to:**
 
@@ -29,12 +29,11 @@ ms.date: 07/01/2018
 >
 >For more info about Windows 10 Enterprise Edition features and functionality, see [Windows 10 Enterprise edition](https://www.microsoft.com/WindowsForBusiness/buy).
 
-Windows Defender Advanced Threat Protection is a suite of capabilities designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
+Windows Defender Advanced Threat Protection is a platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
 
-To help you maximize the effectiveness of the security suite, you can configure individual capabilities that surface in the Windows Defender ATP portal. For more information about the Windows Defender ATP capabilities, see [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/en-us/windows/security/wdatp).
+To help you maximize the effectiveness of the security platform, you can configure individual capabilities that surface in the Windows Defender ATP portal/Windows Defender Security Center. 
 
-
-The Windows Defender ATP portal is where all the capabilities that are available across multiple products come together to give security operations teams the ability to effectively manage the security perimeter of their organization's network.
+The Windows Defender ATP platform is where all the capabilities that are available across multiple products come together to give security operations teams the ability to effectively manage their organization's network.
 
 
 Get a quick, but in-depth overview of Windows Defender ATP for Windows 10 and the new capabilities in Windows 10, version 1703 see [Windows Defender ATP for Windows 10 Creators Update](https://technet.microsoft.com/en-au/windows/mt782787).
