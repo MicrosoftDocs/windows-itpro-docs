@@ -11,6 +11,7 @@ ms.sitesec: library
 ms.pagetype: smb
 author: CelesteDG
 ms.date: 05/01/2017
+ms.localizationpriority: medium
 ---
 
 # Windows 10 for SMB
