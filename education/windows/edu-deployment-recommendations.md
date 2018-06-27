@@ -4,7 +4,7 @@ description: Provides guidance on ways to customize the OS privacy settings, as 
 keywords: Windows 10 deployment, recommendations, privacy settings, school
 ms.mktglfcycl: plan
 ms.sitesec: library
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: CelesteDG
 ms.author: celested
 ms.date: 10/13/2017

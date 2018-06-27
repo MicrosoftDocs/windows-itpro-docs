@@ -6,7 +6,7 @@ ms.prod: w10
 author: jaimeo
 ms.author:
 ms.date: 06/12/2018
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Upgrade Readiness requirements

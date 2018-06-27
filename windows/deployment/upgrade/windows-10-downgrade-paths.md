@@ -4,7 +4,7 @@ description: You can downgrade Windows 10 if the downgrade path is supported.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.pagetype: mobile
 author: greg-lindsay
 ms.date: 06/15/2018

@@ -7,7 +7,7 @@ ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: MikeBlodge
 ms.author: MikeBlodge
 ms.date: 04/30/2018

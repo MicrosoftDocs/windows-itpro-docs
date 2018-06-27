@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/14/2018
+ms.date: 06/26/2018
 ---
 
 # Policy CSP - Start
@@ -1621,6 +1621,14 @@ To validate on Desktop, do the following:
 > [!NOTE]
 > This policy requires reboot to take effect.
 
+Here is additional SKU support information:
+
+|Release |SKU Supported  |
+|---------|---------|
+|Windows 10, version 1607 and older |Not supported |
+|Windows 10, version 1703 and later |Enterprise, Education, Business |
+|Windows 10, version 1709 and later |Enterprise, Education, Business, Pro, ProEducation, S, ProWorkstation |
+
 Added in Windows 10, version 1703. This policy imports Edge assets (e.g. .png/.jpg files) for secondary tiles into its local app data path which allows the StartLayout policy to pin Edge secondary tiles as weblink that tie to the image asset files.
 
 > [!IMPORTANT]
@@ -1740,7 +1748,15 @@ To validate on Desktop, do the following:
 <!--/Scope-->
 <!--Description-->
 > [!IMPORTANT]
-> Added in Windows 10 version 1703: In addition to being able to set this node on a per user-basis, it can now also be set on a per-device basis. For more information, see [Policy scope](./policy-configuration-service-provider.md#policy-scope)
+> Added in Windows 10 version 1703: In addition to being able to set this node on a per user-basis, it can now also be set on a per-device basis. For more information, see [Policy scope](./policy-configuration-service-provider.md#policy-scope)  
+
+Here is additional SKU support information:
+
+|Release |SKU Supported  |
+|---------|---------|
+|Windows 10, version 1511 and older |Not supported         |
+|Windows 10, version 1607 and later |Enterprise, Education, Business |
+|Windows 10, version 1709 and later |Enterprise, Education, Business, Pro, ProEducation, S, ProWorkstation |
 
 Allows you to override the default Start layout and prevents the user from changing it. If both user and device policies are set, the user policy will be used. Apps pinned to the taskbar can also be changed with this policy
 
