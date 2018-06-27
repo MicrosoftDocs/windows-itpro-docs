@@ -7,12 +7,26 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 06/26/2017
+ms.date: 06/25/2018
 ---
 
 # Diagnose MDM failures in Windows 10
 
 To help diagnose enrollment or device management issues in Windows 10 devices managed by an MDM server, you can examine the MDM logs collected from the desktop or mobile device. The following sections describe the procedures for collecting MDM logs.
+
+## Download the MDM Diagnostic Information log from Windows 10 PCs
+
+1. On your managed device go to **Settings** > **Accounts** > **Access work or school**.
+1. Click your work or school account, then click **Info.**  
+   ![Access work or school page in Settings](images/diagnose-mdm-failures15.png)
+
+1. At the bottom of the **Settings** page, click **Create report**.  
+   ![Access work or school page in Settings](images/diagnose-mdm-failures16.png)
+1. A window opens that shows the path to the log files. Click **Export**.
+
+   ![Access work or school page in Settings](images/diagnose-mdm-failures17.png)
+
+1. In File Explorer, navigate to c:\Users\Public\Documents\MDMDiagnostics to see the report.
 
 ## Collect logs directly from Windows 10 PCs
 
