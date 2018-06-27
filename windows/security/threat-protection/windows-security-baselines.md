@@ -1,16 +1,16 @@
 ---
-title: Windows Security Baselines
-description: This article, and the articles it links to, describe how to use Windows Security Baselines in your organization
+title: Windows security baselines
+description: This article, and the articles it links to, describe how to use Windows security baselines in your organization
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.author: sagaudre
 author: brianlic-msft
-ms.date: 05/01/2018
+ms.date: 06/25/2018
 ---
 
-# Windows Security Baselines
+# Windows security baselines
 
 **Applies to**  
 
