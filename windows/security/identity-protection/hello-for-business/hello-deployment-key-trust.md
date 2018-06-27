@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
-localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 10/23/2017
 ---
 # On Premises Key Trust Deployment

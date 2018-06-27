@@ -8,7 +8,7 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
-localizationpriority: high
+ms.localizationpriority: medium
 ms.author:
 ms.date: 10/22/2017
 ---
