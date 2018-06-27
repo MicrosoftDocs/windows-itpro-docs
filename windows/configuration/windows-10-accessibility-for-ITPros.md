@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.author: jaimeo
 author: jaimeo
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 01/12/2018
 ---
 

@@ -6,6 +6,7 @@ description: Learn about product documentation and resources available for schoo
 author: CelesteDG
 ms.topic: hub-page
 ms.author: celested
+ms.collection: ITAdminEDU
 ms.date: 10/30/2017
 ---
 <div id="main" class="v2">

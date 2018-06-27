@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: 
 ms.sitesec: library
 author: kaushika-msft
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.author: jaimeo
 ms.date: 04/05/2018
 ---

@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Instructions about how to create and configure shortcut preference extensions to file system objects, URLs, and shell objects.

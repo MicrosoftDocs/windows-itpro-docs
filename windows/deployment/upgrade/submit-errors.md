@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.date: 03/16/2018
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Submit Windows 10 upgrade errors using Feedback Hub

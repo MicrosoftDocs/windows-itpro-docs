@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: Learn about the security features available in Internet Explorer 11 and IEAK 11.
 author: eross-msft

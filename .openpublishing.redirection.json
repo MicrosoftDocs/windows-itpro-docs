@@ -6307,7 +6307,7 @@
 },
 {
 "source_path": "windows/whats-new/device-guard-overview.md",
-"redirect_url": "/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
+"redirect_url": "/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control",
 "redirect_document_id": false
 },
 {
@@ -9007,7 +9007,7 @@
 },
 {
 "source_path": "windows/keep-secure/device-guard-deployment-guide.md",
-"redirect_url": "/windows/device-security/device-guard/device-guard-deployment-guide",
+"redirect_url": "/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide",
 "redirect_document_id": true
 },
 {

@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Deploy Internet Explorer 11 using software distribution tools
 author: eross-msft

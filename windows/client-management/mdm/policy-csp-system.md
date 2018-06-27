@@ -1204,7 +1204,6 @@ Footnote:
 <!--StartHoloLens-->
 ## <a href="" id="hololenspolicies"></a>System policies supported by Windows Holographic for Business  
 
--   [System/AllowFontProviders](#system-allowfontproviders)  
 -   [System/AllowLocation](#system-allowlocation)  
 -   [System/AllowTelemetry](#system-allowtelemetry)  
 <!--EndHoloLens-->

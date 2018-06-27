@@ -4,7 +4,7 @@ description: This topic describes how to add Microsoft Store for Business applic
 keywords: upgrade, update, windows, windows 10, deploy, store, image, wim
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
 author: DaniHalfin
