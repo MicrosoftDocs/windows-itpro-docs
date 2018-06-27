@@ -18,13 +18,13 @@ ms.date: 07/01/2018
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
-
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
-
 You need to onboard machines to Windows Defender ATP before you can use the service.
 
 For more information, see [Onboard your Windows 10 machines to Windows Defender ATP](https://www.youtube.com/watch?v=JT7VGYfeRlA&feature=youtu.be).
+
+[!include[Prerelease information](prerelease.md)]
+
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 ## Licensing requirements
 Windows Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:

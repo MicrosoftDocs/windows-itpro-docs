@@ -27,8 +27,6 @@ There are some minimum requirements for onboarding machines to the service.
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
 
-[!include[Prerelease information](prerelease.md)]
-
 ## Licensing requirements
 Windows Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:
 
