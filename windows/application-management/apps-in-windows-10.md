@@ -97,7 +97,7 @@ System apps are integral to the operating system. Here are the typical system ap
 Here are the typical installed Windows apps in Windows 10 versions 1703, 1709, and 1803.
 
 | Name               | Full name                                | 1703 | 1709 | 1803 |Uninstall through UI? |
-|--------------------|------------------------------------------|:------:|:------:|:------:|----------------------|
+|--------------------|------------------------------------------|:----:|:----:|:----:|----------------------|
 | Remote Desktop     | Microsoft.RemoteDesktop                  | x    | x    |      | Yes                  |
 | PowerBI            | Microsoft.Microsoft PowerBIforWindows    | x    |      |      | Yes                  |
 | Code Writer        | ActiproSoftwareLLC.562882FEEB491         | x    | x    | x    | Yes                  |
@@ -106,7 +106,7 @@ Here are the typical installed Windows apps in Windows 10 versions 1703, 1709, a
 | Photoshop Express  | AdobeSystemIncorporated. AdobePhotoshop  | x    | x    | x    | Yes                  |
 | Duolingo           | D5EA27B7.Duolingo- LearnLanguagesforFree | x    | x    | x    | Yes                  |
 | Network Speed Test | Microsoft.NetworkSpeedTest               | x    | x    | x    | Yes                  |
-| News                            | Microsoft.BingNews                     | x    |  x   | x    | Yes                       |
+| News               | Microsoft.BingNews                       | x    |  x   | x    | Yes                  |
 | Flipboard          |                                          |      |      |      | Yes                  |
 |                    | Microsoft.Advertising.Xaml               | x    | x    | x    | Yes                  |
 |                    | Microsoft.NET.Native.Framework.1.2       | x    | x    | x    | Yes                  |
@@ -172,3 +172,6 @@ Here are the typical provisioned Windows apps in Windows 10 versions 1703, 1709,
 |                                 | Microsoft.XboxGamingOverlay            |      |      | x    | No                        |
 |                                 | Microsoft.XboxIdentityProvider         | x    |  x   | x    | No                        |
 |                                 | Microsoft.XboxSpeech ToTextOverlay     | x    |  x   | x    | No                        |
+
+>[!NOTE]
+>If you want to remove and reinstall the Store app, the only supported methods for restoring a removed Store app are either by restoring the system from a backup, or by resetting your system. If you really want to remove the Store app, you should use group policies to hide or disable it.
