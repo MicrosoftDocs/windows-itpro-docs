@@ -15,7 +15,7 @@ ms.date: 06/28/2018
 
 -   Windows 10
 
-This topic provides a summary of supported Windows 10 edition in-place downgrade paths. A valid product key for the destination edition is required. You might need to downgrade the edition of Windows 10, for example, if an Enterprise license is expired. 
+This topic provides a summary of supported Windows 10 in-place edition downgrade paths. A valid product key for the destination edition is required to perform the downgrade. You might need to downgrade the edition of Windows 10, for example, if an Enterprise license is expired. 
 
 To perform a downgrade, you can use the same methods as when performing an [edition upgrade](windows-10-edition-upgrades.md). If the downgrade path is supported, then your apps and settings can be migrated from the current edition to the downgraded edition. If a path is not supported, then a clean install is required.
 
@@ -23,10 +23,11 @@ Downgrading from any edition of Windows 10 to Windows 7, 8, or 8.1 by entering a
 
 ### Firmware-embedded activation keys
 
-As of October 2017. computers that are supplied by an OEM include a firmware embedded product key. If a computer has this key, it will affect the available edition downgrade paths. To determine if a computer has a firmware-embedded activation key and to discover the the original, pre-installed OS edition, type the following at an elevated Windows PowerShell prompt:
+As of October 2017. computers that are supplied by an OEM include a firmware embedded product key. If a computer has this key, it will affect the available edition downgrade paths. To display the firmware-embedded activation key (if it exists) and to discover the the original, pre-installed OS edition, type the following commands at an elevated Windows PowerShell prompt:
 
 ```
 (Get-WmiObject -query ‘select * from SoftwareLicensingService’).OA3xOriginalProductKey
+(Get-WmiObject -query ‘select * from SoftwareLicensingService’).OA3xOriginalProductKeyDescription
 ```
 
 ### Scenario example
