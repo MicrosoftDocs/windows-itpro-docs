@@ -1652,9 +1652,11 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Recent changes:</p>
 <ul>
-<li>System/AllowFontProviders is not supported in Windows Holographic for Business</li>
+<li>System/AllowFontProviders is not supported in Windows Holographic for Business.</li>
 <li>Security/RequireDeviceEncryption is suported in the Home SKU.</li>
 <li>Removed LocalPoliciesSecurityOptions/NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers. This policy is not supported.</li>
+<li>Start/StartLayout - added a table of SKU support information.</li>
+<li>Start/ImportEdgeAssets - added a table of SKU support information.</li>
 </ul>
 </td></tr>
 </tbody>
