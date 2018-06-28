@@ -6,7 +6,7 @@ keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: danihalfin
 ms.author: daniha
 ms.date: 06/05/2018
@@ -1625,7 +1625,7 @@ To turn this off:
 
 ### <a href="" id="bkmk-spp"></a>18. Software Protection Platform
 
-Enterprise customers can manage their Windows activation status with volume licensing using an on-premise Key Management Server. You can opt out of sending KMS client activation data to Microsoft automatically by doing one of the following:
+Enterprise customers can manage their Windows activation status with volume licensing using an on-premises Key Management Server. You can opt out of sending KMS client activation data to Microsoft automatically by doing one of the following:
 
 For Windows 10:
 

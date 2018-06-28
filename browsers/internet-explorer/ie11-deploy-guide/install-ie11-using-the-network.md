@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to install the Internet Explorer 11 update using your network
 author: eross-msft

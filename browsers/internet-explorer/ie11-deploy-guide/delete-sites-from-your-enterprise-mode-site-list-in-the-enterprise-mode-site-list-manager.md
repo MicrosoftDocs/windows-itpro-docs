@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 description: Delete a single site from your global Enterprise Mode site list.
 ms.pagetype: appcompat
 ms.mktglfcycl: deploy

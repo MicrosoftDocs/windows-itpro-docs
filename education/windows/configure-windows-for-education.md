@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.prod: w10
 ms.technology: Windows
 ms.pagetype: edu
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: CelesteDG
 ms.author: celested
 ms.date: 08/31/2017

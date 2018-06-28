@@ -2592,9 +2592,10 @@ The following list shows the configuration service providers supported in Window
 | [CertificateStore CSP](certificatestore-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)|
 | [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [DevDetail CSP](devdetail-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [DeveloperSetup CSP](developersetup-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)2   (Provisioning only)|
+| [DeveloperSetup CSP](developersetup-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)2   (runtime provisioning via provisioning packages only; no MDM support)|
 | [DeviceStatus CSP](devicestatus-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)  |
 | [DevInfo CSP](devinfo-csp.md)  | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [DiagnosticLog CSP](diagnosticlog-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [DMAcc CSP](dmacc-csp.md)      | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [DMClient CSP](dmclient-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |

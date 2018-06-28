@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.date: 05/30/2018
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # SetupDiag

@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: Review the file types that are created and used by tools in the Internet Explorer Administration Kit 11 (IEAK 11).
 author: eross-msft

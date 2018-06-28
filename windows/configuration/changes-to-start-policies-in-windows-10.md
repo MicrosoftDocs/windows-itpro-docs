@@ -9,7 +9,7 @@ ms.sitesec: library
 author: coreyp
 ms.author: coreyp
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 11/28/2017
 ---
 

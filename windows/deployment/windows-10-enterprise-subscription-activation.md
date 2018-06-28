@@ -4,7 +4,7 @@ description: How to enable Windows 10 Enterprise E3 and E5 subscriptions
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
-localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 ms.date: 05/23/2018

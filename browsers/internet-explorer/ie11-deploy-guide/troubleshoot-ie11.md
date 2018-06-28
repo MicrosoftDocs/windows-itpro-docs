@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: support
 description: Use the topics in this section to learn how to troubleshoot several of the more common problems experienced with Internet Explorer.
 author: eross-msft

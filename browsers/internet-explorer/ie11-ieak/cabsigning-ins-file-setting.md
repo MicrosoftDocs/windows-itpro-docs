@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use the \[CabSigning\] .INS file setting to customize the digital signature info for your apps.
 author: eross-msft

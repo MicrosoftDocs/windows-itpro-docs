@@ -7,7 +7,7 @@ ms.technology: Windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: CelesteDG
 ms.author: celested
 ms.date: 10/16/2017

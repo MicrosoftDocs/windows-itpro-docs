@@ -9,7 +9,7 @@ ms.pagetype: store, security
 author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 10/17/2017
 ---
 

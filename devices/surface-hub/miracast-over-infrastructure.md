@@ -35,10 +35,11 @@ If you have a Surface Hub or other Windows 10 device that has been updated to Wi
 
 - The Surface Hub or device (Windows PC or phone) needs to be running Windows 10, version 1703.
 - A Surface Hub or Windows PC can act as a Miracast over Infrastructure *receiver*. A Windows PC or phone can act as a Miracast over Infrastructure *source*.
-    - As a Miracast receiver, the Surface Hub or device must be connected to your enterprise network via either Ethernet or a secure Wi-Fi connection (e.g. using either WPA2-PSK or WPA2-Enterprise security). If the Hub is connected to an open Wi-Fi connection, Miracast over Infrastructure will disable itself.
+    - As a Miracast receiver, the Surface Hub or device must be connected to your enterprise network via either Ethernet or a secure Wi-Fi connection (e.g. using either WPA2-PSK or WPA2-Enterprise security). If the Surface Hub or device is connected to an open Wi-Fi connection, Miracast over Infrastructure will disable itself.
     - As a Miracast source, the Windows PC or phone must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection.
-- The DNS Hostname (device name) of the Surface Hub or deviceneeds to be resolvable via your DNS servers. You can achieve this by either allowing your Surface Hub to register automatically via Dynamic DNS, or by manually creating an A or AAAA record for the Surface Hub's hostname. 
-- Windows 10 PCs must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection.  
+- The DNS Hostname (device name) of the Surface Hub or device needs to be resolvable via your DNS servers. You can achieve this by either allowing your Surface Hub to register automatically via Dynamic DNS, or by manually creating an A or AAAA record for the Surface Hub's hostname. 
+- Windows 10 PCs must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection. 
+- On Windows 10 PCs, the **Projecting to this PC** feature must be enabled within System Settings, and the device must have a Wi-Fi interface enabled in order to respond to discovery requests. 
 
 
 It is important to note that Miracast over Infrastructure is not a replacement for standard Miracast. Instead, the functionality is complementary, and provides an advantage to users who are part of the enterprise network. Users who are guests to a particular location and don’t have access to the enterprise network will continue to connect using the Wi-Fi Direct connection method.

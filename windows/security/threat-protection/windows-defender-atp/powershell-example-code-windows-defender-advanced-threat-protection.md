@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 04/24/2018
 ---
 
@@ -23,7 +23,7 @@ ms.date: 04/24/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 This article provides PowerShell code examples for using the custom threat intelligence API.
 
