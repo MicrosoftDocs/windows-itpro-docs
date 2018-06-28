@@ -110,7 +110,7 @@ After the task sequence finishes, the computer will be fully upgraded to Windows
 ## Upgrade to Windows 10 with System Center Configuration Manager Current Branch
 
 
-With System Center Configuration Manager Current Branch, new built-in functionality is provided to make it even easier to upgrade existing Windows 7, Windows 8, Windows 8.1 PCs and Windows 10 computers to the latest version of Windows 10.
+With System Center Configuration Manager Current Branch, new built-in functionality makes it easier to upgrade to Windows 10.
 
 **Note**  
 For more details about Configuration Manager Current Branch, see the [Configuration Manager Team blog](https://go.microsoft.com/fwlink/p/?LinkId=620205). An [evaluation version is currently available](https://go.microsoft.com/fwlink/p/?LinkId=620206) for you to try. The instructions below are specific to the Technical Preview 2 release and may change after the next version of Configuration Manager is released.
