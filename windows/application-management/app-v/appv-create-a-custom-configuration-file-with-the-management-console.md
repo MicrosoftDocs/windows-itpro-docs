@@ -24,10 +24,10 @@ You can create a dynamic user configuration file with the App-V Management Conso
 
 3. Select **Edit**. The Dynamic User Configuration assigned to the AD Group will appear.
 
-4. Select **Advanced**, and then select **Export Configuration**. Enter a filename and select **Save**. Now you can edit the file to configure a package for a user.
+4. Select **Advanced**, and then select **Export Configuration**. Enter a file name and select **Save**. Now you can edit the file to configure a package for a user.
 
     >[!NOTE]  
-    >If you want to export a configuration while running on Windows Server, make sure to disable "IE Enhanced Security Configuration". If the setting is enabled and set to block downloads, you won't be able to download anything from the App-V Server.
+    >If you want to export a configuration while running on Windows Server, make sure to disable the IE Enhanced Security Configuration setting. If this setting is enabled and set to block downloads, you won't be able to download anything from the App-V Server.
 
 ## Have a suggestion for App-V?
 
