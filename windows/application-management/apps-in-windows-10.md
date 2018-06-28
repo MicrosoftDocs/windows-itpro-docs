@@ -157,7 +157,7 @@ Here are the typical provisioned Windows apps in Windows 10 versions 1703, 1709,
 | Print 3D                        | Microsoft.Print3D                      |      |  x   | x    | No                        |
 | Solitaire                       | Microsoft.Microsoft SolitaireCollection| x    |  x   | x    | Yes                       |
 | Sticky Notes                    | Microsoft.MicrosoftStickyNotes         | x    |  x   | x    | No                        |
-| Store                           | Microsoft.WindowsStore                 | x    |  x   | x    | No                        |
+| Store*                          | Microsoft.WindowsStore                 | x    |  x   | x    | No                        |
 | Sway                            | Microsoft.Office.Sway                  | *    |  x   | x    | Yes                       |
 | Voice Recorder                  | Microsoft.SoundRecorder                | x    |  x   | x    | No                        |
 | Wallet                          | Microsoft.Wallet                       | x    |  x   | x    | No                        |
@@ -173,5 +173,4 @@ Here are the typical provisioned Windows apps in Windows 10 versions 1703, 1709,
 |                                 | Microsoft.XboxIdentityProvider         | x    |  x   | x    | No                        |
 |                                 | Microsoft.XboxSpeech ToTextOverlay     | x    |  x   | x    | No                        |
 
->[!NOTE]
->If you want to remove and reinstall the Store app, the only supported methods for restoring a removed Store app are either by restoring the system from a backup, or by resetting your system. If you really want to remove the Store app, you should use group policies to hide or disable it.
+*<span> Because the Store app can't be removed, if you want to remove and reinstall the Store app, the only supported methods for restoring it are either by restoring the system from a backup or by resetting your system. Instead of removing the Store app, you should use group policies to hide or disable it.
