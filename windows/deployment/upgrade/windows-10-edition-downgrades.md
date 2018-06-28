@@ -17,18 +17,20 @@ ms.date: 06/28/2018
 
 This topic provides a summary of supported Windows 10 edition in-place downgrade paths. A valid product key for the destination edition is required. You might need to downgrade the edition of Windows 10, for example, if an Enterprise license is expired. 
 
-To perform a downgrade, you can use the same methods as when performing an [edition upgrade](windows-10-edition-upgrades.md). If a downgrade is supported, then your apps and settings can be migrated from the current edition to the downgraded edition. If a path is not supported, then a clean install is required.
+To perform a downgrade, you can use the same methods as when performing an [edition upgrade](windows-10-edition-upgrades.md). If the downgrade path is supported, then your apps and settings can be migrated from the current edition to the downgraded edition. If a path is not supported, then a clean install is required.
 
 Downgrading from any edition of Windows 10 to Windows 7, 8, or 8.1 by entering a different product key is not supported. The only downgrade method available for this path is through the rollback of a previous upgrade.  You also cannot downgrade from a later version to an earlier version of the same edition (Ex: Windows 10 Pro 1709 to 1703) unless the rollback process is used. This topic does not discuss version downgrades.
 
-**Note**: As of October 2017 computers that are supplied by an OEM include a firmware embedded product key. If a computer has this key, it will affect the available edition downgrade paths. To determine if a computer has a firmware-embedded activation key and to discover the the original, pre-installed OS edition, type the following at an elevated Windows PowerShell prompt:
+## Firmware-embedded activation keys
+
+As of October 2017. computers that are supplied by an OEM include a firmware embedded product key. If a computer has this key, it will affect the available edition downgrade paths. To determine if a computer has a firmware-embedded activation key and to discover the the original, pre-installed OS edition, type the following at an elevated Windows PowerShell prompt:
 
 ```
 (Get-WmiObject -query ‘select * from SoftwareLicensingService’).OA3xOriginalProductKey
 ```
 
-Scenario example:
-- Downgrade Enterprise
+Scenario example:<br>
+Downgrade Enterprise
     - Original edition with firmware-embedded key: **Pro**
     - Upgrade edition: **Enterprise**
     - Valid downgrade paths: **Pro, Pro for Workstations, Pro Education, Education**
@@ -44,10 +46,10 @@ Scenario example:
 >Edition changes that are considered upgrades (Ex: Pro to Enterprise, Pro to Pro for Workstations) are not shown here. 
 >For more information see [Windows 10 edition upgrade](windows-10-edition-upgrades.md).<br> 
 
-Switching between different editions of Pro might not be possible if the device has a firmware-embedded key associated with an OEM pre-installed OS. An exception is that you can perform an upgrade from Pro to Pro for Workstation using a computer with an embedded Pro key, and then later downgrade this computer back to Pro, assuming you a valid license keys for Pro.
+Switching between different editions of Pro might not be possible if the source OS is associated with a [firmware-embedded activation key](#firmware-embedded-activation-keys). An exception is that you can perform an upgrade from Pro to Pro for Workstation using a computer with an embedded Pro key, and then later downgrade this computer back to Pro.
 
 ✔ = Supported downgrade path<br>
-N&nbsp; = Not supported from OEM pre-installed<br>
+N&nbsp;&nbsp; = Not supported from OEM pre-installed<br>
 
 <br>
 <table border="0" cellpadding="1">
