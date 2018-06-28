@@ -12,7 +12,7 @@ ms.date: 04/19/2017
 
 >Applies to: Windows 10, version 1607
 
-You can use a dynamic configuration to customize an App-V package for a specific user. However, you must first create the dynamic user configuration (.xml) file or the dynamic deployment configuration file before you can use the files. Creation of the file is an advanced manual operation. For general information about dynamic user configuration files, see, [About App-V dynamic configuration](appv-dynamic-configuration.md).
+You can use a dynamic configuration to customize an App-V package for a specific user. However, you must first create the dynamic user configuration (.xml) file or the dynamic deployment configuration file before you can use the files. Creation of the file is an advanced manual operation. For general information about dynamic user configuration files, see [About App-V dynamic configuration](appv-dynamic-configuration.md).
 
 You can create a dynamic user configuration file with the App-V Management Console by following the steps in this article.
 
@@ -20,14 +20,14 @@ You can create a dynamic user configuration file with the App-V Management Conso
 
 1. Right-click the name of the package that you want to view and select **Edit active directory access** to view the configuration that is assigned to a given user group. Alternatively, select the package, and click **Edit**.
 
-2. Using the list of **AD Entities with Access**, select the AD group that you want to customize. Select **Custom** from the drop-down list. A link named **Edit** will be displayed.
+2. Using the list of **AD Entities with Access**, select the AD group that you want to customize. Select **Custom** from the drop-down list. A link named **Edit** will appear.
 
 3. Select **Edit**. The Dynamic User Configuration assigned to the AD Group will appear.
 
 4. Select **Advanced**, and then select **Export Configuration**. Enter a filename and select **Save**. Now you can edit the file to configure a package for a user.
 
     >[!NOTE]  
-    >To export a configuration while running on Windows Server, you must disable "IE Enhanced Security Configuration". If the setting is enabled and set to block downloads, you cannot download anything from the App-V Server.
+    >If you want to export a configuration while running on Windows Server, make sure to disable "IE Enhanced Security Configuration". If the setting is enabled and set to block downloads, you won't be able to download anything from the App-V Server.
 
 ## Have a suggestion for App-V?
 
