@@ -23,7 +23,7 @@ Downgrading from any edition of Windows 10 to Windows 7, 8, or 8.1 by entering a
 
 ### Firmware-embedded activation keys
 
-As of October 2017. computers that are supplied by an OEM include a firmware embedded product key. If a computer has this key, it will affect the available edition downgrade paths. To display the firmware-embedded activation key (if it exists) and to discover the the original, pre-installed OS edition, type the following commands at an elevated Windows PowerShell prompt:
+As of October 2017, computers that are supplied by an OEM include a firmware embedded product key that can affect the available downgrade paths. If this key exists, you can display it and the pre-installed OS edition by typing the following commands at an elevated Windows PowerShell prompt:
 
 ```
 (Get-WmiObject -query ‘select * from SoftwareLicensingService’).OA3xOriginalProductKey
@@ -33,11 +33,11 @@ As of October 2017. computers that are supplied by an OEM include a firmware emb
 ### Scenario example
 
 Downgrading from Enterprise
-    - Original edition with firmware-embedded key: **Pro**
+    - Original edition with firmware-embedded key: **Professional OEM**
     - Upgrade edition: **Enterprise**
     - Valid downgrade paths: **Pro, Pro for Workstations, Pro Education, Education**
 
-In this example, you can move from Enterprise to Pro using the embedded activation key. Downgrading to Pro for Workstations, Pro Education, or Education requires an additional activation key. Using this activation key you can move directly from Enterprise to the destination OS.
+You can move directly from Enterprise to any valid destination edition. In this example, downgrading to Pro for Workstations, Pro Education, or Education requires an additional activation key to supercede the firmware-embedded Pro key. In all cases, you must comply with [Microsoft License Terms](https://www.microsoft.com/useterms). If you are a volume license customer, refer to the [Microsoft Volume Licensing Reference Guide](https://www.microsoft.com/en-us/download/details.aspx?id=11091).
 
 ### Supported Windows 10 downgrade paths
 
