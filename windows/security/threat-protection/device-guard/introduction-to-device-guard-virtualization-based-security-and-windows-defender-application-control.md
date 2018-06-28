@@ -1,5 +1,5 @@
 ---
-title: Introduction to Windows Defender Device Guard - virtualization-based security and code integrity policies (Windows 10)
+title: Windows Defender Device Guard - virtualization-based security and code integrity policies (Windows 10)
 description: Microsoft Windows Defender Device Guard is a feature set that consists of both hardware and software system integrity hardening features that revolutionize the Windows operating system’s security.
 keywords: virtualization, security, malware
 ms.prod: w10
@@ -9,7 +9,7 @@ author: mdsakibMSFT
 ms.date: 04/19/2018
 ---
 
-# Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control
+# Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control
 
 **Applies to**
 -   Windows 10
