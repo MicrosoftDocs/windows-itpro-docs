@@ -43,7 +43,7 @@ When multiple provisioning packages are available for device provisioning, the c
 
 1. Microsoft 
 
-2. Silicon Vender 
+2. Silicon Vendor 
 
 3. OEM 
 
