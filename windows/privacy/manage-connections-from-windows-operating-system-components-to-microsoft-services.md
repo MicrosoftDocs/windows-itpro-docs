@@ -6,7 +6,7 @@ keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: danihalfin
 ms.author: daniha
 ms.date: 06/05/2018
