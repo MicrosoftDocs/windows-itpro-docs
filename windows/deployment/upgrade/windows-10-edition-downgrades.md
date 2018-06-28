@@ -21,7 +21,7 @@ To perform a downgrade, you can use the same methods as when performing an [edit
 
 Downgrading from any edition of Windows 10 to Windows 7, 8, or 8.1 by entering a different product key is not supported. The only downgrade method available for this path is through the rollback of a previous upgrade.  You also cannot downgrade from a later version to an earlier version of the same edition (Ex: Windows 10 Pro 1709 to 1703) unless the rollback process is used. This topic does not discuss version downgrades.
 
-## Firmware-embedded activation keys
+### Firmware-embedded activation keys
 
 As of October 2017. computers that are supplied by an OEM include a firmware embedded product key. If a computer has this key, it will affect the available edition downgrade paths. To determine if a computer has a firmware-embedded activation key and to discover the the original, pre-installed OS edition, type the following at an elevated Windows PowerShell prompt:
 
@@ -29,27 +29,25 @@ As of October 2017. computers that are supplied by an OEM include a firmware emb
 (Get-WmiObject -query ‘select * from SoftwareLicensingService’).OA3xOriginalProductKey
 ```
 
-Scenario example:<br>
-Downgrade Enterprise
+### Scenario example
+
+Downgrading from Enterprise
     - Original edition with firmware-embedded key: **Pro**
     - Upgrade edition: **Enterprise**
     - Valid downgrade paths: **Pro, Pro for Workstations, Pro Education, Education**
 
+In this example, you can move from Enterprise to Pro using the embedded activation key. Downgrading to Pro for Workstations, Pro Education, or Education requires an additional activation key. Using this activation key you can move directly from Enterprise to the destination OS.
 
->**Windows 10 LTSC/LTSB**: Due to [naming changes](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#naming-changes), product versions that display Windows 10 LTSB will be replaced with Windows 10 LTSC in subsequent feature updates. The term LTSC is used here to refer to all long term servicing versions.
-
->**Windows N/KN**: Windows "N" and "KN" SKUs follow the same rules shown below.
-
-## Supported Windows 10 downgrade paths
+### Supported Windows 10 downgrade paths
 
 >[!NOTE]
 >Edition changes that are considered upgrades (Ex: Pro to Enterprise, Pro to Pro for Workstations) are not shown here. 
 >For more information see [Windows 10 edition upgrade](windows-10-edition-upgrades.md).<br> 
 
-Switching between different editions of Pro might not be possible if the source OS is associated with a [firmware-embedded activation key](#firmware-embedded-activation-keys). An exception is that you can perform an upgrade from Pro to Pro for Workstation using a computer with an embedded Pro key, and then later downgrade this computer back to Pro.
+Switching between different editions of Pro might not be possible if the source OS is associated with a [firmware-embedded activation key](#firmware-embedded-activation-keys). An exception is that you can perform an upgrade from Pro to Pro for Workstation on a computer with an embedded Pro key, and then later downgrade this computer back to Pro.
 
 ✔ = Supported downgrade path<br>
-N&nbsp;&nbsp; = Not supported from OEM pre-installed<br>
+&nbsp;N&nbsp; = Not supported from OEM pre-installed<br>
 
 <br>
 <table border="0" cellpadding="1">
@@ -142,6 +140,9 @@ N&nbsp;&nbsp; = Not supported from OEM pre-installed<br>
     </tr>
 </table>
 
+>**Windows 10 LTSC/LTSB**: Due to [naming changes](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#naming-changes), product versions that display Windows 10 LTSB will be replaced with Windows 10 LTSC in subsequent feature updates. The term LTSC is used here to refer to all long term servicing versions.
+
+>**Windows N/KN**: Windows "N" and "KN" SKUs follow the same rules shown above.
 
 ## Related Topics
 
