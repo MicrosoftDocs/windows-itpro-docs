@@ -13685,5 +13685,10 @@
 "redirect_url": "/windows/deployment/upgrade/windows-10-edition-downgrades",
 "redirect_document_id": true
 },
+{
+"source_path": "education/windows/windows-automatic-redeployment.md",
+"redirect_url": "/education/windows/autopilot-reset",
+"redirect_document_id": true
+},
 ]
 }
