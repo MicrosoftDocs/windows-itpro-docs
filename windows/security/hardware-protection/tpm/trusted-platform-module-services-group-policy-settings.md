@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
-ms.date: 06/22/2018
+ms.date: 06/29/2018
 ---
 
 # TPM Group Policy settings
