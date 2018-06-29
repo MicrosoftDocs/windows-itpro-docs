@@ -82,7 +82,7 @@ You can move directly from Enterprise to any valid destination edition. In this 
     <tr>
         <td>Pro for Workstations</td>
         <td></td>
-        <td></td>
+        <td align="center">N</td>
         <td></td>
         <td></td>
         <td></td>
@@ -135,7 +135,7 @@ You can move directly from Enterprise to any valid destination edition. In this 
 
 >**Windows N/KN**: Windows "N" and "KN" SKUs follow the same rules shown above.
 
-Some more complex scenarios are not represented by the table above. For example, you can perform an upgrade from Pro to Pro for Workstation on a computer with an embedded Pro key using a Pro for Workstation license key, and then later downgrade this computer back to Pro with the firmware-embedded key. The downgrade is allowed but only because the pre-installed OS is Pro.
+Some slightly more complex scenarios are not represented by the table above. For example, you can perform an upgrade from Pro to Pro for Workstation on a computer with an embedded Pro key using a Pro for Workstation license key, and then later downgrade this computer back to Pro with the firmware-embedded key. The downgrade is allowed but only because the pre-installed OS is Pro.
 
 ## Related Topics
 
@@ -143,8 +143,3 @@ Some more complex scenarios are not represented by the table above. For example,
 [Windows upgrade and migration considerations](windows-upgrade-and-migration-considerations.md)<br>
 [Windows 10 edition upgrade](windows-10-edition-upgrades.md)<br>
 [Windows 10 upgrade paths](windows-10-upgrade-paths.md)
-
-
-
-
-

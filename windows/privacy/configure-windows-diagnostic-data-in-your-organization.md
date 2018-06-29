@@ -25,7 +25,7 @@ To frame a discussion about diagnostic data, it is important to understand Micro
 
 -	**Control.** We offer customers control of the diagnostic data they share with us by providing easy-to-use management tools.
 -	**Transparency.** We provide information about the diagnostic data that Windows and Windows Server collects so our customers can make informed decisions.
--	**Security.** We encrypt diagnostic data in transit from your device and protect that data at our secure data centers.
+-	**Security.** We encrypt diagnostic data in transit from your device via TLS 1.2, and additionally use certificate pinning to secure the connection.
 -	**Strong legal protections.** We respect customers’ local privacy laws and fight for legal protection of their privacy as a fundamental human right.
 -	**No content-based targeting.** We take steps to avoid and minimize the collection of customer content, such as the content of files, chats, or emails, through the Windows diagnostic data system.  Customer content inadvertently collected is kept confidential and not used for user targeting.
 -	**Benefits to you.** We collect Windows diagnostic data to help provide you with an up-to-date, more secure, reliable and performant product, and to improve Windows for all our customers.
