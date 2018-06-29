@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.pagetype: mobile
 author: greg-lindsay
-ms.date: 06/28/2018
+ms.date: 06/29/2018
 ---
 
 # Windows 10 edition downgrade
@@ -21,21 +21,12 @@ To perform a downgrade, you can use the same methods as when performing an [edit
 
 Downgrading from any edition of Windows 10 to Windows 7, 8, or 8.1 by entering a different product key is not supported. The only downgrade method available for this path is through the rollback of a previous upgrade.  You also cannot downgrade from a later version to an earlier version of the same edition (Ex: Windows 10 Pro 1709 to 1703) unless the rollback process is used. This topic does not discuss version downgrades.
 
-### Firmware-embedded activation keys
-
-As of October 2017, computers that are supplied by an OEM include a firmware embedded product key that can affect the available downgrade paths. If this key exists, you can display it and the pre-installed OS edition by typing the following commands at an elevated Windows PowerShell prompt:
-
-```
-(Get-WmiObject -query ‘select * from SoftwareLicensingService’).OA3xOriginalProductKey
-(Get-WmiObject -query ‘select * from SoftwareLicensingService’).OA3xOriginalProductKeyDescription
-```
-
 ### Scenario example
 
 Downgrading from Enterprise
-    - Original edition with firmware-embedded key: **Professional OEM**
-    - Upgrade edition: **Enterprise**
-    - Valid downgrade paths: **Pro, Pro for Workstations, Pro Education, Education**
+- Original edition: **Professional OEM**
+- Upgrade edition: **Enterprise**
+- Valid downgrade paths: **Pro, Pro for Workstations, Pro Education, Education**
 
 You can move directly from Enterprise to any valid destination edition. In this example, downgrading to Pro for Workstations, Pro Education, or Education requires an additional activation key to supercede the firmware-embedded Pro key. In all cases, you must comply with [Microsoft License Terms](https://www.microsoft.com/useterms). If you are a volume license customer, refer to the [Microsoft Volume Licensing Reference Guide](https://www.microsoft.com/en-us/download/details.aspx?id=11091).
 
@@ -45,10 +36,9 @@ You can move directly from Enterprise to any valid destination edition. In this 
 >Edition changes that are considered upgrades (Ex: Pro to Enterprise, Pro to Pro for Workstations) are not shown here. 
 >For more information see [Windows 10 edition upgrade](windows-10-edition-upgrades.md).<br> 
 
-Switching between different editions of Pro might not be possible if the source OS is associated with a [firmware-embedded activation key](#firmware-embedded-activation-keys). An exception is that you can perform an upgrade from Pro to Pro for Workstation on a computer with an embedded Pro key, and then later downgrade this computer back to Pro.
-
 ✔ = Supported downgrade path<br>
-&nbsp;N&nbsp; = Not supported from OEM pre-installed<br>
+&nbsp;S&nbsp; = Supported; Not considered a downgrade or an upgrade<br>
+[blank] = Not supported or not a downgrade<br>
 
 <br>
 <table border="0" cellpadding="1">
@@ -102,8 +92,8 @@ Switching between different editions of Pro might not be possible if the source 
     <tr>
         <td>Pro Education</td>
         <td></td>
-        <td align="center">N</td>
-        <td align="center">N</td>
+        <td></td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -117,7 +107,7 @@ Switching between different editions of Pro might not be possible if the source 
         <td align="center">✔</td>
         <td></td>
         <td></td>
-        <td></td>
+        <td>S</td>
     </tr>
     <tr>
         <td>Enterprise LTSC</td>
@@ -135,7 +125,7 @@ Switching between different editions of Pro might not be possible if the source 
         <td align="center">✔</td>
         <td align="center">✔</td>
         <td align="center">✔</td>
-        <td align="center">✔</td>
+        <td align="center">S</td>
         <td></td>
         <td></td>
     </tr>
@@ -145,14 +135,11 @@ Switching between different editions of Pro might not be possible if the source 
 
 >**Windows N/KN**: Windows "N" and "KN" SKUs follow the same rules shown above.
 
+Some slightly more complex scenarios are not represented by the table above. For example, you can perform an upgrade from Pro to Pro for Workstation on a computer with an embedded Pro key using a Pro for Workstation license key, and then later downgrade this computer back to Pro with the firmware-embedded key. The downgrade is allowed but only because the pre-installed OS is Pro.
+
 ## Related Topics
 
 [Windows 10 deployment scenarios](../windows-10-deployment-scenarios.md)<br>
 [Windows upgrade and migration considerations](windows-upgrade-and-migration-considerations.md)<br>
 [Windows 10 edition upgrade](windows-10-edition-upgrades.md)<br>
 [Windows 10 upgrade paths](windows-10-upgrade-paths.md)
-
-
-
-
-
