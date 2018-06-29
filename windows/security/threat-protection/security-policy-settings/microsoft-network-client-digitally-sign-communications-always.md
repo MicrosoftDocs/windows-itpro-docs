@@ -6,8 +6,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: brianlic-msft
-ms.date: 06/21/2018
+author: justinha
+ms.date: 06/28/2018
 ---
 
 # Microsoft network client: Digitally sign communications (always)
