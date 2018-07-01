@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.pagetype: mobile
 author: greg-lindsay
-ms.date: 06/29/2018
+ms.date: 06/30/2018
 ---
 
 # Windows 10 edition downgrade
@@ -82,7 +82,7 @@ You can move directly from Enterprise to any valid destination edition. In this 
     <tr>
         <td>Pro for Workstations</td>
         <td></td>
-        <td align="center">N</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
