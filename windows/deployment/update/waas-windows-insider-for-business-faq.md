@@ -48,7 +48,7 @@ Yes. Starting with Windows 10, version 1709, the Windows Insider Program for Bus
 **Manage preview builds:** Administrators can enable or prevent builds from installing on a device. You also have an option to disable preview builds once the release is public.    
 **Branch Readiness Level:** Administrators can set the Windows readiness level, including Fast, Slow, Release Preview Rings of Windows Insider Preview) and allows administrators to defer or pause delivery of updates.  
 
-See more information on the [Getting started with Windows Insider Program for Business](waas-windows-insider-for-business.md#getting-started-with-windows-insider-program-for-business) section.
+See more information on the [Getting started with Windows Insider Program for Business](/windows-insider/at-work-pro/wip-4-biz-get-started) section.
 
 ### <a id="connected-to-aad"> </a>How can I find out if my corporate account is on Azure Active Directory? 
 On your PC, go to **Settings > Accounts > Access work or school**. If your organization has set up your corporate account in Azure Active Directory and it is connected to your PC, you will see the account listed as highlighted in the image below.
@@ -59,7 +59,7 @@ On your PC, go to **Settings > Accounts > Access work or school**. If your organ
 Register for Windows Insider Program for Business with the same active account that you use to access your corporate email in Office 365 and other Microsoft services. To ensure you get the most benefit out of the Windows Insider Program for Business and that your company is fully represented, do not set up a separate tenant for testing activities. There will be no modifications to the AAD tenant to support Windows Insider Program for Business, and it will only be used as an authentication method. 
 
 ### Can I register multiple users from my organization at the same time for the Windows Insider Program for Business? 
-Yes. The Windows Insider Program for Business now allows organizations to register their domain and control settings centrally rather than require each user to register individually for Insider Preview builds. In order to register, follow instructions on the [Getting started with Windows Insider Program for Business](waas-windows-insider-for-business.md#getting-started-with-windows-insider-program-for-business) section.
+Yes. The Windows Insider Program for Business now allows organizations to register their domain and control settings centrally rather than require each user to register individually for Insider Preview builds. In order to register, follow instructions on the [Getting started with Windows Insider Program for Business](/windows-insider/at-work-pro/wip-4-biz-get-started) section.
 
 ### My account is listed in Active Directory but not Azure Active Directory. Can I still register using my Active Directory credentials?
 No. At this point, we are only supporting Azure Active Directory as a corporate authentication method. If you’d like to suggest or upvote another authentication method, please visit this [forum](https://answers.microsoft.com/en-us/insider/forum/insider_wintp).
