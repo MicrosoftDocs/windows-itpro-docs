@@ -542,7 +542,7 @@ Find the Microsoft Edge Group Policy objects under **Computer Configuration** &g
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Allow configuration updates for the Books Library            | Choose whether configuration updates are done for the Books Library. <br /> Default: Disabled       |
+| Allow configuration updates for the Books Library            | Choose whether configuration updates are done for the Books Library. <br /> Default: Enabled       |
 | Configure Autofill                                    | Choose whether employees can use autofill on websites. <br /> Default: Enabled                      |
 | Configure Do Not Track         | Choose whether employees can send Do Not Track headers.<br /> Default: Disabled                     |
 | Configure Password Manager                            | Choose whether employees can save passwords locally on their devices. <br /> Default: Enabled       |
