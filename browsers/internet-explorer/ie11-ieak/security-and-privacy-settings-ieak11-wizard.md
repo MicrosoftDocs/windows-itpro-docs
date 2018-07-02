@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Security and Privacy Settings page in the IEAK 11 Customization Wizard to manage your security zones, privacy settings, and content ratings.
 author: eross-msft

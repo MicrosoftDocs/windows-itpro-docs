@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use Setup information (.inf) files to uninstall custom components from your custom browser packages.
 author: eross-msft

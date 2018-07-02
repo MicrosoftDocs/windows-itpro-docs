@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: support
 ms.pagetype: appcompat
 description: Reviewing log files to learn more about potential setup problems with Internet Explorer 11.

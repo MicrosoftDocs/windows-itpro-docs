@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: brianlic-msft
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 10/13/2017
 ---
 

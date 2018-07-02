@@ -6,7 +6,7 @@ ms.author: lizross
 ms.prod: edge
 ms.mktglfcycl: general
 ms.sitesec: library
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 09/19/2017
 ---
 

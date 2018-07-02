@@ -5,7 +5,7 @@ ms.assetid: 1d70a3d8-1b1d-4051-b656-c0393a93f83c
 keywords: deployment, automate, tools, configure
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
@@ -634,7 +634,7 @@ Follow these steps to create a bootable USB stick from the offline media content
 
 ## <a href="" id="sec11"></a>Unified Extensible Firmware Interface (UEFI)-based deployments
 
-As referenced in [Windows 10 deployment tools](https://go.microsoft.com/fwlink/p/?LinkId=619546), Unified Extensible Firmware Interface (UEFI)-based deployments are becoming more common. In fact, when you create a generation 2 virtual machine in Hyper-V, you get a UEFI-based computer. During deployment, MDT automatically detects that you have an UEFI-based machine and creates the partitions UEFI requires. You do not need to update or change your task sequences in any way to accommodate UFEI.
+As referenced in [Windows 10 deployment tools](https://go.microsoft.com/fwlink/p/?LinkId=619546), Unified Extensible Firmware Interface (UEFI)-based deployments are becoming more common. In fact, when you create a generation 2 virtual machine in Hyper-V, you get a UEFI-based computer. During deployment, MDT automatically detects that you have an UEFI-based machine and creates the partitions UEFI requires. You do not need to update or change your task sequences in any way to accommodate UEFI.
 
 ![figure 14](../images/mdt-07-fig16.png)
 

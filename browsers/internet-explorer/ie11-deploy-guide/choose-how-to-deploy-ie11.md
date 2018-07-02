@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Choose how to deploy Internet Explorer 11 (IE11)
 author: eross-msft

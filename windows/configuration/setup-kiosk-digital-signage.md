@@ -9,7 +9,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 06/05/2018
 ---
 
@@ -22,7 +22,7 @@ ms.date: 06/05/2018
 
 
 
-Some desktop devices in an enterprise serve a special purpose, such as a PC in the lobby that customers can use to view your product catalog or a PC displaying visual content as a digital sign. A single-use, kiosk device is easy to set up in Windows 10. (For kiosks that run more than one more app, see [Create a Windows 10 kiosk that runs multiple apps.](lock-down-windows-10-to-specific-apps.md).)
+Some desktop devices in an enterprise serve a special purpose, such as a PC in the lobby that customers can use to view your product catalog or a PC displaying visual content as a digital sign. A single-use, kiosk device is easy to set up in Windows 10. (For kiosks that run more than one more app, see [Create a Windows 10 kiosk that runs multiple apps](lock-down-windows-10-to-specific-apps.md).)
 
 
 

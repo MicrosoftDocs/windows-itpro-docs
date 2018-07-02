@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Details about how Administrators can schedule approved change requests for production in the Enterprise Mode Site List Portal.

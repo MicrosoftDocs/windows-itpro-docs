@@ -9,7 +9,7 @@ ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
 ms.date: 10/13/2017
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Use Update Compliance

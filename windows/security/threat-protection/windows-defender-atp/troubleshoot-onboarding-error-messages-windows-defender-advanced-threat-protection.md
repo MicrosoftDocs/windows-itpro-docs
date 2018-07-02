@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-tanewt
 author: tbit0001
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 11/28/2017
 ---
 
@@ -69,7 +69,7 @@ If the portal dashboard, and other sections show an error message such as "Data 
 
 ![Image of data currently isn't available](images/atp-data-not-available.png)
 
-You'll need to whitelist the `security.windows.com` and all sub-domains under it. For example `*security.windows.com`.
+You'll need to whitelist the `securitycenter.windows.com` and all sub-domains under it. For example `*.securitycenter.windows.com`.
 
 
 ## Related topics

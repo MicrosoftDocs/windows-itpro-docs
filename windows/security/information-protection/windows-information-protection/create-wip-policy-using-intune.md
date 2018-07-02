@@ -193,18 +193,16 @@ In this example, you'd get the following info:
 Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the publisher name to enter in the **Publisher Name** box.
 
 ### Add an AppLocker policy file
-For this example, we’re going to add an AppLocker XML file to the **App Rules** list. You’ll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
+Now we’re going to add an AppLocker XML file to the **App Rules** list. You’ll use this option if you want to add multiple apps at the same time. For more info, see [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview).
 
-**To create an app rule and xml file using the AppLocker tool**
+**To create a Packaged App rule rule and xml file**
 1.	Open the Local Security Policy snap-in (SecPol.msc).
     
-2.	In the left pane, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**.
+2.	In the left pane, click **Application Control Policies** > **AppLocker** > **Packaged App Rules**.
 
     ![Local security snap-in, showing the Packaged app Rules](images/intune-local-security-snapin.png)
 
-3.	Right-click in the right-hand pane, and then click **Create New Rule**.
-
-    The **Create Packaged app Rules** wizard appears.
+3. Right-click **Packaged App Rules** > **Create New Rule**.
 
 4. On the **Before You Begin** page, click **Next**.
 

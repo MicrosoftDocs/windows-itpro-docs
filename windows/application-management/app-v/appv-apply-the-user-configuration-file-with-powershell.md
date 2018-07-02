@@ -1,41 +1,45 @@
 ---
-title: How to Apply the User Configuration File by Using Windows PowerShell (Windows 10)
-description: How to Apply the User Configuration File by Using Windows PowerShell
+title: How to apply the user configuration file by using Windows PowerShell (Windows 10)
+description: How to apply the user configuration file by using Windows PowerShell (Windows 10).
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 06/15/2018
 ---
+# How to apply the user configuration file by using Windows PowerShell
 
+>Applies to: Windows 10, version 1607
 
-# How to Apply the User Configuration File by Using Windows PowerShell
+When you publish a package to a specific user, you'll also need to specify a dynamic user configuration file to tell that package how to run.
 
-**Applies to**
--   Windows 10, version 1607
+## Apply a user configuration file
 
-The dynamic user configuration file is applied when a package is published to a specific user and determines how the package will run.
+Here's how to specify a user-specific configuration file:
 
-Use the following procedure to specify a user-specific configuration file. The following procedure is based on the example:
+>[!NOTE]
+>The following example cmdlets use this example file path for its package:
+    >
+    >* C:\\Packages\\Contoso\\MyApp.appv.
+    >
+>If your package file uses a different file path than the example, feel free to replace it as needed.
 
-**c:\\Packages\\Contoso\\MyApp.appv**
+1. Enter the following cmdlet in Windows PowerShell to add the package to the computer:
 
-**To apply a user Configuration file**
+    ```PowerShell
+    Add-AppVClientPackage C:\Packages\Contoso\MyApp.appv
+    ```
+2. Enter the following cmdlet to publish the package to the user and specify the updated the dynamic user configuration file:
 
-1.  To add the package to the computer using the Windows PowerShell console, type the following command:
-
-    `Add-AppVClientPackage c:\Packages\Contoso\MyApp.appv`
-
-2.  Use the following command to publish the package to the user and specify the updated the dynamic user configuration file:
-
-    `Publish-AppVClientPackage $pkg -DynamicUserConfigurationPath c:\Packages\Contoso\config.xml`
-
+    ```PowerShell
+    Publish-AppVClientPackage $pkg -DynamicUserConfigurationPath C:\Packages\Contoso\config.xml
+    ```
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](https://appv.uservoice.com/forums/280448-microsoft-application-virtualization).
 
 ## Related topics
 
-[Operations for App-V](appv-operations.md)
+* [Operations for App-V](appv-operations.md)

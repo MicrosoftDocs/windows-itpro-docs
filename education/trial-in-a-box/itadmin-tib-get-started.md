@@ -7,7 +7,7 @@ ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.topic: get-started
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.pagetype: edu
 ROBOTS: noindex,nofollow
 author: CelesteDG

@@ -4,11 +4,11 @@ description: With Windows 10, you can quickly upgrade from one edition of Windo
 ms.assetid: A7642E90-A3E7-4A25-8044-C4E402DC462A
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mobile
 author: greg-lindsay
-ms.date: 04/30/2018
+ms.date: 06/28/2018
 ---
 
 # Windows 10 edition upgrade
@@ -19,6 +19,8 @@ ms.date: 04/30/2018
 -   Windows 10 Mobile
 
 With Windows 10, you can quickly upgrade from one edition of Windows 10 to another, provided the upgrade path is supported. For information on what edition of Windows 10 is right for you, see [Compare Windows 10 Editions](https://go.microsoft.com/fwlink/p/?LinkID=690882). For a comprehensive list of all possible upgrade paths to Windows 10, see [Windows 10 upgrade paths](windows-10-upgrade-paths.md).
+
+Edition changes that are considered downgrades are not shown here. For more information, see [Windows 10 edition downgrade](windows-10-edition-downgrades.md).
 
 The following table shows the methods and paths available to change the edition of Windows 10 that is running on your computer. **Note**: The reboot requirement for upgrading from Pro to Enterprise was removed in version 1607. 
 
@@ -56,7 +58,6 @@ X = unsupported <BR>
 | **Pro Education > Education** | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) <br>(MSfB) | ![supported, reboot required](../images/check_grn.png) | ![not supported](../images/x_blk.png) |
 | **Enterprise > Education** | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) <br>(MSfB) | ![supported, reboot required](../images/check_grn.png) | ![not supported](../images/x_blk.png) |
 | **Enterprise LTSC > Enterprise** | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) <br>(MSfB) | ![supported, reboot required](../images/check_grn.png) | ![not supported](../images/x_blk.png) |
-| **Pro for Workstations > Pro Education** | ![supported, no reboot](../images/check_blu.png) | ![supported, no reboot](../images/check_blu.png) | ![supported, no reboot](../images/check_blu.png) | ![supported, no reboot](../images/check_blu.png) <br>(MSfB) | ![supported, no reboot](../images/check_blu.png) | ![not supported](../images/x_blk.png) |
 | **Mobile > Mobile Enterprise** | ![supported, no reboot](../images/check_blu.png) |![supported, no reboot](../images/check_blu.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) |
 
 > [!NOTE]

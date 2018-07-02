@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security, networking
 author: shortpatti
 ms.author: pashort
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 05/17/2018
 ---
 

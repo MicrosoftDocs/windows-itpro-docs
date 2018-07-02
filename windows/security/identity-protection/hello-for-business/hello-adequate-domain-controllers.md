@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
-localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 10/20/2017
 ---
 # Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments
