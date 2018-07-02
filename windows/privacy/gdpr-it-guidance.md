@@ -156,7 +156,9 @@ Windows diagnostic data collection level can be set by a user in Windows (*Start
 >[!NOTE]
 >For more information on the Enhanced level, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).  
 
-* For Windows 10, version 1709, and Windows 10, version 1703, the recommended Windows diagnostic level configuration for EEA and Switzerland residents is “Basic”.
+* For Windows 10, version 1709, and Windows 10, version 1703, the recommended Windows diagnostic level configuration for EEA and Switzerland commercial users is “Basic”.
+
+* For Windows 7, Microsoft recommends configuring enterprise devices for Windows Analytics to facilitate upgrade planning to Windows 10.
 
 ## Controlling the data collection and notification about it
 
