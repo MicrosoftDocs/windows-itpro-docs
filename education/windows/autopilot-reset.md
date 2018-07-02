@@ -8,9 +8,9 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: CelesteDG
+author: greg-lindsay
 ms.author: celested
-ms.date: 03/08/2018
+ms.date: 06/27/2018
 ---
 
 # Reset devices with Autopilot Reset 
@@ -102,7 +102,7 @@ To make sure WinRE is enabled, use the [REAgentC.exe tool](https://docs.microsof
 reagentc /enable
 ```
 
-If Windows Automatic Reployment fails after enabling WinRE, or if you are unable to enable WinRE, please contact [Microsoft Support](https://support.microsoft.com) for assistance.
+If Autopilot Reset fails after enabling WinRE, or if you are unable to enable WinRE, please contact [Microsoft Support](https://support.microsoft.com) for assistance.
 
 ## Related topics
 
