@@ -107,13 +107,13 @@ Figure 2. Upgrade from Windows 7 to Windows 10 Enterprise x64 with a task sequ
 
 After the task sequence finishes, the computer will be fully upgraded to Windows 10.
 
-## Upgrade to Windows 10 with the next version of System Center Configuration Manager
+## Upgrade to Windows 10 with System Center Configuration Manager Current Branch
 
 
-With the next release of System Center Configuration Manager (currently planned for Q4 of 2015), new built-in functionality will be provided to make it even easier to upgrade existing Windows 7, Windows 8, and Windows 8.1 PCs to Windows 10.
+With System Center Configuration Manager Current Branch, new built-in functionality makes it easier to upgrade to Windows 10.
 
 **Note**  
-For more details about the next version of Configuration Manager, see the [Configuration Manager Team blog](https://go.microsoft.com/fwlink/p/?LinkId=620205). An [evaluation version is currently available](https://go.microsoft.com/fwlink/p/?LinkId=620206) for you to try. The instructions below are specific to the Technical Preview 2 release and may change after the next version of Configuration Manager is released.
+For more details about Configuration Manager Current Branch, see the [Configuration Manager Team blog](https://go.microsoft.com/fwlink/p/?LinkId=620205). An [evaluation version is currently available](https://go.microsoft.com/fwlink/p/?LinkId=620206) for you to try. The instructions below are specific to the Technical Preview 2 release and may change after the next version of Configuration Manager is released.
 
  
 
@@ -139,7 +139,7 @@ To create an upgrade task sequence, perform the following steps:
 
 ![figure 3](../images/upgradecfg-fig3-upgrade.png)
 
-Figure 3. The Configuration Manager vNext upgrade task sequence.
+Figure 3. The Configuration Manager upgrade task sequence.
 
 ### Create a device collection
 
@@ -190,7 +190,7 @@ In this section, you create a deployment for the Windows 10 Enterprise x64 Upda
 In this section, you start the Windows 10 Upgrade task sequence on PC0003 (currently running Windows 7 SP1).
 
 1.  On PC0003, start the **Software Center**.
-2.  Select the **Windows vNext Upgrade** task sequence, and then click **Install.**
+2.  Select the **Windows 10 Enterprise x64 Upgrade** task sequence, and then click **Install.**
 
 When the task sequence begins, it automatically initiates the in-place upgrade process by invoking the Windows setup program (Setup.exe) with the necessary command-line parameters to perform an automated upgrade, which preserves all data, settings, apps, and drivers.
 
