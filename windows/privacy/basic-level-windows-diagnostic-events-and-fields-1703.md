@@ -3125,8 +3125,8 @@ The following fields are available:
 - **BIOSVendor**  The vendor of the device's system bios
 - **BiosVersion**  The version of the device's system bios
 - **BiosReleaseDate**  The release date of the device's system bios
-- **SystemBIOSMajorRelease**  The major release version of the device's system system
-- **SystemBIOSMinorRelease**  The minor release version of the device's system system
+- **SystemBIOSMajorRelease**  The major release version of the device's system bios
+- **SystemBIOSMinorRelease**  The minor release version of the device's system bios
 - **BiosFamily**  The device's family as defined in system bios
 - **BiosSKUNumber**  The device's SKU as defined in system bios
 - **ClientVersion**  The version number of the software distribution client
