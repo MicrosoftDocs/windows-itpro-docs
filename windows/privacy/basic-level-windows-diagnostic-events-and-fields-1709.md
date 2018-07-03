@@ -922,7 +922,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.InventoryApplicationFileStartSync
 
-This event indicates indicates that a new set of InventoryApplicationFileAdd events will be sent.
+This event indicates that a new set of InventoryApplicationFileAdd events will be sent.
 
 The following fields are available:
 
@@ -1169,7 +1169,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.DecisionApplicationFileRemove
 
-This event indicates Indicates that the DecisionApplicationFile object is no longer present.
+This event indicates that the DecisionApplicationFile object is no longer present.
 
 The following fields are available:
 
