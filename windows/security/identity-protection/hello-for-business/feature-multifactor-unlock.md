@@ -24,10 +24,10 @@ Windows, today, natively only supports the use of a single credential (password,
 
 Windows 10 offers Multifactor device unlock by extending Windows Hello with trusted signals, administrators can configure Windows 10 to request a combination of factors and trusted signals to unlock their devices. 
 
-Which organizations can take advanage of Multifactor unlock? Those who:
+Which organizations can take advantage of Multifactor unlock? Those who:
 * Have expressed that PINs alone do not meet their security needs.
 * Want to prevent Information Workers from sharing credentials.
-* Want their orgs to comply with regulatory two-factor authentication policy.
+* Want their organisations to comply with regulatory two-factor authentication policy.
 * Want to retain the familiar Windows logon UX and not settle for a custom solution.
  
 You enable multifactor unlock using Group Policy.  The **Configure device unlock factors** policy setting is located under **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business**.
