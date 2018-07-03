@@ -934,7 +934,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>ExternalMgmtAgentHint - a string the agent uses to give hints the enrollment server may need.</li>
 <li>DomainName - fully qualified domain name if the device is domain-joined.</li>
 </ul>
-<p>For examples, see section 4.3.1 RequestSecurityToken of the the MS-MDE2 protocol documentation.</p>
+<p>For examples, see section 4.3.1 RequestSecurityToken of the MS-MDE2 protocol documentation.</p>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
@@ -2191,7 +2191,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>ExternalMgmtAgentHint - a string the agent uses to give hints the enrollment server may need.</li>
 <li>DomainName - fully qualified domain name if the device is domain-joined.</li>
 </ul>
-<p>For examples, see section 4.3.1 RequestSecurityToken of the the MS-MDE2 protocol documentation.</p>
+<p>For examples, see section 4.3.1 RequestSecurityToken of the MS-MDE2 protocol documentation.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[EntepriseAPN CSP](enterpriseapn-csp.md)</td>
