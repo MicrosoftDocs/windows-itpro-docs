@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 05/08/2018
 ---
 
