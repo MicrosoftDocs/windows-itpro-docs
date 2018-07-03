@@ -23,7 +23,7 @@ To set this value to **No auditing**, in the **Properties** dialog box for this 
 
 **Default:** No auditing.
 
-## Configure this this security setting
+## Configure this security setting
 
 You can configure this security setting under Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Audit Policy.
 
