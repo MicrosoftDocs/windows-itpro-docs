@@ -15,3 +15,5 @@ ms.date: 06/01/2018
 # Rip and replace
 
 **Applies to: Windows 10**
+
+DO NOT PUBLISH.  Just a placeholder for now, coming with 1809.

@@ -1,5 +1,5 @@
 ---
-title: Self-service mode
+title: Hybrid AAD Join
 description: Listing of Autopilot scenarios
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10
@@ -12,8 +12,9 @@ ms.author: coreyp
 ms.date: 06/01/2018
 ---
 
-# Self-service mode
+
+# Windows Autopilot user-driven mode for Hybrid Azure Active Directory Join
 
 **Applies to: Windows 10**
 
-When deploying 
+DO NOT PUBLISH.  This eventually will contain the AD-specific (hybrid) instuctions.  This will be in preview at a later point in time.
