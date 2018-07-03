@@ -4,7 +4,7 @@ description: This article describes how to use the Security Compliance Toolkit i
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.author: sagaudre
 author: brianlic-msft
 ms.date: 06/25/2018

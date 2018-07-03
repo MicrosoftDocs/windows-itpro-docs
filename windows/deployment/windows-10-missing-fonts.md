@@ -5,7 +5,7 @@ keywords: deploy, upgrade, FoD, optional feature
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: kaushika-msft
 ms.author: kaushika
 ms.date: 10/31/2017

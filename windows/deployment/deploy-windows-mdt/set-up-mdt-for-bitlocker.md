@@ -5,7 +5,7 @@ description:
 keywords: disk, encryption, TPM, configure, secure, script
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay

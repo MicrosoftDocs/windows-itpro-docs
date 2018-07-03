@@ -6,11 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 06/21/2018
+ms.date: 06/27/2018
 ---
 
 # Change history for Configure Windows 10
@@ -23,6 +23,7 @@ New or changed topic | Description
 --- | ---
 [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](setup-kiosk-digital-signage.md) and [Create a Windows 10 kiosk that runs multiple apps](lock-down-windows-10-to-specific-apps.md)  | Updated instructions for using Microsoft Intune to configure a kiosk. Added instructions for showing local accounts on the sign-in screen for domain-joined devices.
 [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md) | Added new Group Policy to remove "Recently added" list from Start menu.
+|[Add image for secondary tiles](start-secondary-tiles.md#using-mdm) | Updated mobile device management (MDM) instructions. |
 
 ## May 2018
 

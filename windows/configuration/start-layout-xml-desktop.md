@@ -9,7 +9,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.date: 01/02/2018
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Start layout XML for desktop editions of Windows 10 (reference)

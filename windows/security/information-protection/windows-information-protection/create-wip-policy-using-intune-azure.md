@@ -198,7 +198,7 @@ Path                   Publisher
 Where `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the **Publisher** name and `WORDPAD.EXE` is the **File** name.
 
 ### Import a list of apps 
-For this example, we’re going to add an AppLocker XML file to the **Protected apps** list. You’ll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
+For this example, we’re going to add an AppLocker XML file to the **Protected apps** list. You’ll use this option if you want to add multiple apps at the same time. The first example shows how to create a Packaged App rule for Store apps. The second example shows how to create an Executable rule by using a path for unsigned apps. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
 
 **To create a list of protected apps using the AppLocker tool**
 1.	Open the Local Security Policy snap-in (SecPol.msc).
@@ -270,6 +270,39 @@ For this example, we’re going to add an AppLocker XML file to the **Protected 
             <RuleCollection EnforcementMode="NotConfigured" Type="Script"/>
         </AppLockerPolicy>
     ```
+
+12.	After you’ve created your XML file, you need to import it by using Microsoft Intune.
+
+**To create an Executable rule and xml file for unsigned apps**
+1. Open the Local Security Policy snap-in (SecPol.msc).
+    
+2. In the left pane, click **Application Control Policies** > **AppLocker** > **Executable Rules**.
+
+3. Right-click **Executable Rules** > **Create New Rule**.
+
+   ![Local security snap-in, showing the Executable Rules](images/create-new-path-rule.png)
+
+4. On the **Before You Begin** page, click **Next**.
+
+5. On the **Permissions** page, make sure the **Action** is set to **Allow** and the **User or group** is set to **Everyone**, and then click **Next**.
+
+6. On the **Conditions** page, click **Path** and then click **Next**.
+
+    ![Create Packaged app Rules wizard, showing the Publisher](images/path-condition.png)
+
+7. Click **Browse Folders...** and select the path for the unsigned apps. For this example, we’re using "C:\Program Files".
+
+    ![Create Packaged app Rules wizard, showing the Select applications page](images/select-path.png)
+
+8. On the **Exceptions** page, add any exceptions and then click **Next**.
+
+9. On the **Name** page, type a name and description for the rule and then click **Create**.
+
+10.	In the left pane, right-click **AppLocker** > **Export policy**.
+
+11.	In the **Export policy** box, browse to where the policy should be stored, give the policy a name, and then click **Save**.
+
+    The policy is saved and you’ll see a message that says 1 rule was exported from the policy.
 
 12.	After you’ve created your XML file, you need to import it by using Microsoft Intune.
 

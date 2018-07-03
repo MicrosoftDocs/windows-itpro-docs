@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: lomayor
 author: lomayor
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 28/02/2018
 ---
 
