@@ -56,5 +56,5 @@ This OMA-URI node takes a text string of XML as a parameter. The XML provided as
 
 ## Adding certificates
 
-If your selected authentication method is certificate-based, you will will need to [create a provisioning package](provisioning-packages-for-surface-hub.md), [utilize MDM](https://docs.microsoft.com/windows/client-management/mdm/clientcertificateinstall-csp), or import a certificate from settings (**Settings** > **Update and Security** > **Certificates**) to deploy those certificates to your Surface Hub device in the appropriate Certificate Store. When adding certificates, each PFX must contain only one certificate (a PFX cannot have multiple certificates).
+If your selected authentication method is certificate-based, you will need to [create a provisioning package](provisioning-packages-for-surface-hub.md), [utilize MDM](https://docs.microsoft.com/windows/client-management/mdm/clientcertificateinstall-csp), or import a certificate from settings (**Settings** > **Update and Security** > **Certificates**) to deploy those certificates to your Surface Hub device in the appropriate Certificate Store. When adding certificates, each PFX must contain only one certificate (a PFX cannot have multiple certificates).
 
