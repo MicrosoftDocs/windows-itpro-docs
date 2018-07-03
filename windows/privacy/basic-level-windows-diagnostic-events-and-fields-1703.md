@@ -3479,7 +3479,7 @@ The following fields are available:
 - **HostOSBuildNumber**  The build number of the previous OS.
 - **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT
 - **Setup360Mode**  The phase of Setup360. Example: Predownload, Install, Finalize, Rollback
-- **Setup360Result**  The result of Setup360. This is an HRESULT error code that can be used used to diagnose errors.
+- **Setup360Result**  The result of Setup360. This is an HRESULT error code that can be used to diagnose errors.
 - **Setup360Extended**  Extension of result - more granular information about phase/action when the potential failure happened
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
 
