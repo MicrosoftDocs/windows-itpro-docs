@@ -1816,7 +1816,7 @@ The following fields are available:
 
 ### TelClientSynthetic.HeartBeat_5
 
-This event sends data about the health and quality of the diagnostic data data from the given device, to help keep Windows up to date. It also enables data analysts to determine how 'trusted' the data is from a given device.
+This event sends data about the health and quality of the diagnostic data from the given device, to help keep Windows up to date. It also enables data analysts to determine how 'trusted' the data is from a given device.
 
 The following fields are available:
 
