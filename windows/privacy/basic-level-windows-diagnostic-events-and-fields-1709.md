@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localizationpriority: high
+ms.localizationpriority: medium
 author: eross-msft
 ms.author: lizross
 ms.date: 03/13/2018

@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt, sccm, M365
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 04/23/2018
 author: greg-lindsay
 ---

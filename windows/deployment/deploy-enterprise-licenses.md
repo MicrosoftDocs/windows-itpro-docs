@@ -4,7 +4,7 @@ description: Steps to deploy Windows 10 Enterprise licenses for Windows 10 Enter
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
-localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 ms.date: 05/25/2018

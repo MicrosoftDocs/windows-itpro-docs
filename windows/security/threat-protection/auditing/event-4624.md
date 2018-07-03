@@ -214,7 +214,7 @@ This event generates when a logon session is created (on destination machine). I
 
 **Process Information:**
 
--   **Caller Process ID** \[Type = Pointer\]: hexadecimal Process ID of the process that attempted the logon. Process ID (PID) is a number used by the operating system to uniquely identify an active process. To see the PID for a specific process you can, for example, use Task Manager (Details tab, PID column):
+-   **Process ID** \[Type = Pointer\]: hexadecimal Process ID of the process that attempted the logon. Process ID (PID) is a number used by the operating system to uniquely identify an active process. To see the PID for a specific process you can, for example, use Task Manager (Details tab, PID column):
 
     <img src="images/task-manager.png" alt="Task manager illustration" width="585" height="375" />
 
@@ -222,7 +222,7 @@ This event generates when a logon session is created (on destination machine). I
 
     You can also correlate this process ID with a process ID in other events, for example, “[4688](event-4688.md): A new process has been created” **Process Information\\New Process ID**.
 
--   **Caller Process Name** \[Type = UnicodeString\]**:** full path and the name of the executable for the process.
+-   **Process Name** \[Type = UnicodeString\]**:** full path and the name of the executable for the process.
 
 **Network Information:**
 

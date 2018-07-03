@@ -9,7 +9,7 @@ ms.date: 06/12/2018
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Get started with Device Health

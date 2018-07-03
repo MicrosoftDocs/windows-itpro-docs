@@ -3,7 +3,7 @@ title: Windows 10 Creators Update Deprecated Features
 description: Learn about features that were removed in Windows 10 Creators Update (version 1703)
 ms.prod: w10
 ms.mktglfcycl: plan
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 author: lizap
 ms.date: 10/09/2017
