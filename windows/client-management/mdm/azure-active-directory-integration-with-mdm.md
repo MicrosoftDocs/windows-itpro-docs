@@ -610,7 +610,7 @@ Authorization:Bearer <Azure AD User Token Inserted here>
 Additional claims may be present in the Azure AD token, such as:
 
 -   User - user currently logged in
--   Device compliance - value set the the MDM service into Azure
+-   Device compliance - value set the MDM service into Azure
 -   Device ID - identifies the device that is checking in
 -   Tenant ID
 
