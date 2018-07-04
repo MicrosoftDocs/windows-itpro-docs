@@ -126,7 +126,7 @@ Windows To Go can be deployed using standard Windows deployment tools like Diskp
 
 -   A Windows 10 Enterprise or Windows 10 Education image
 
--   A Windows 10 Enterprise or Windows 10 Education host PC that can be used to provision new USB keys
+-   A Windows 10 Enterprise, Windows 10 Education or Windows 10 Professional host PC that can be used to provision new USB keys
 
 You can use a Windows PowerShell script to target several drives and scale your deployment for a large number of Windows To Go drives. You can also use a USB duplicator to duplicate a Windows To Go drive after it has been provisioned if you are creating a large number of drives. See the [Windows To Go Step by Step](https://go.microsoft.com/fwlink/p/?LinkId=618950) article on the TechNet wiki for a walkthrough of the drive creation process.
 
@@ -153,7 +153,7 @@ Yes. Because USB 3.0 offers significantly faster speeds than USB 2.0, a Windows 
 ## <a href="" id="wtg-faq-selfpro"></a>Can the user self-provision Windows To Go?
 
 
-Yes, if the user has administrator permissions they can self-provision a Windows To Go drive using the Windows To Go Creator wizard which is included in Windows 10 Enterprise and Windows 10 Education. Additionally, System Center 2012 Configuration Manager SP1 and later releases includes support for user self-provisioning of Windows To Go drives. Configuration Manager can be downloaded for evaluation from the [Microsoft TechNet Evaluation Center](https://go.microsoft.com/fwlink/p/?LinkID=618746).
+Yes, if the user has administrator permissions they can self-provision a Windows To Go drive using the Windows To Go Creator wizard which is included in Windows 10 Enterprise, Windows 10 Education and Windows 10 Professional. Additionally, System Center 2012 Configuration Manager SP1 and later releases includes support for user self-provisioning of Windows To Go drives. Configuration Manager can be downloaded for evaluation from the [Microsoft TechNet Evaluation Center](https://go.microsoft.com/fwlink/p/?LinkID=618746).
 
 ## <a href="" id="wtg-faq-mng"></a>How can Windows To Go be managed in an organization?
 
