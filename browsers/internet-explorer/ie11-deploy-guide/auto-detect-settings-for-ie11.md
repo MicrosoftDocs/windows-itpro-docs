@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: networking
 description: Auto detect settings Internet Explorer 11
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: c6753cf4-3276-43c5-aae9-200e9e82753f
 title: Auto detect settings Internet Explorer 11 (Internet Explorer 11 for IT Pros)
