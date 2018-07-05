@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: virtualization
 description: Virtualization and compatibility with Internet Explorer 11
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: b0388c04-2584-4b6d-a7a8-4e0476773a80
 title: Virtualization and compatibility with Internet Explorer 11 (Internet Explorer 11 for IT Pros)

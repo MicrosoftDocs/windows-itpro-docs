@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use the \[ISP_Security\] .INS file setting to add the root certificate for your custom Internet Explorer package.
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: 4eca2de5-7071-45a2-9c99-75115be00d06
 title: Use the ISP_Security .INS file to add your root certificate (Internet Explorer Administration Kit 11 for IT Pros)
