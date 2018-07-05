@@ -106,7 +106,7 @@ Requirements:
 - Enterprise AD must be integrated with Azure AD.
 - Ensure that PCs belong to same computer group.
 
-1.	Create a Group Policy Object (GPO) and enable the Group Policy **Auto MDM enrollment with AAD token**.
+1.	Create a Group Policy Object (GPO) and enable the Group Policy **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **MDM** > **Enable automatic MDM enrollment using default Azure AD credentials**.
 2.	Create a Security Group for the PCs.
 3.	Link the GPO.
 4.	Filter using Security Groups.
