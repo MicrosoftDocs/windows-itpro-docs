@@ -330,11 +330,11 @@
 
 
 ### [Windows Defender Application Guard](windows-defender-application-guard/wd-app-guard-overview.md)
-###[System requirements for Windows Defender Application Guard](windows-defender-application-guard/reqs-wd-app-guard.md)
-###[Prepare and install Windows Defender Application Guard](windows-defender-application-guard/install-wd-app-guard.md)
-###[Configure the Group Policy settings for Windows Defender Application Guard](windows-defender-application-guard/configure-wd-app-guard.md)
-###[Testing scenarios using Windows Defender Application Guard in your business or organization](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
-###[Frequently Asked Questions - Windows Defender Application Guard](windows-defender-application-guard/faq-wd-app-guard.md)
+#### [System requirements for Windows Defender Application Guard](windows-defender-application-guard/reqs-wd-app-guard.md)
+#### [Prepare and install Windows Defender Application Guard](windows-defender-application-guard/install-wd-app-guard.md)
+#### [Configure the Group Policy settings for Windows Defender Application Guard](windows-defender-application-guard/configure-wd-app-guard.md)
+#### [Testing scenarios using Windows Defender Application Guard in your business or organization](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
+#### [Frequently Asked Questions - Windows Defender Application Guard](windows-defender-application-guard/faq-wd-app-guard.md)
 
 
 ## Other security features
