@@ -47,16 +47,16 @@ Use the following procedure to create a package accelerator.
 
 5. If the application is already installed on the computer running the sequencer, to specify the installation file, select **Files installed on local system**. To use this option, the application must already be installed in the default installation location.
 
-6. On the **Gathering Information** page, review the files that were not found in the location specified on the **Installation Files** page of this wizard. If the files displayed are not required, select **Remove these files**, then select **Next**. If the files are required, select **Previous** and copy the required files to the directory specified on the **Installation Files** page.
+6. On the **Gathering Information** page, review the files that you couldn't find in the location specified on the **Installation Files** page of this wizard. If the files displayed are not required, select **Remove these files**, then select **Next**. If the files are required, select **Previous** and copy the required files to the directory specified on the **Installation Files** page.
 
     >[!NOTE]
     >You must either remove the unrequired files or select **Previous** and locate the required files to advance to the next page of this wizard.
 
-7. On the **Select Files** page, carefully review the files that were detected, and clear any file that should be removed from the package accelerator. Select only files that are required for the application to run successfully, and then click **Next**.
+7. On the **Select Files** page, carefully review the detected files and clear any file the package accelerator does not need to run successfully. Select only files that the application requires, then select **Next**.
 
-8. On the **Verify Applications** page, confirm that all installation files that are required to build the package are displayed. When the Package Accelerator is used to create a new package, all installation files displayed in the **Applications** pane are required to create the package.
+8. Confirm that the **Verify Applications** page displays all installation files required to build the package. The Package Accelerator requires all installation files displayed in the **Applications** pane in order to create the package.
 
-    If necessary, to add additional Installer files, click **Add**. To remove unnecessary installation files, select the Installer file, and then click **Delete**. To edit the properties associated with an installer, click **Edit**. The installation files specified in this step will be required when the Package Accelerator is used to create a new virtual application package. After you have confirmed the information displayed, click **Next**.
+    If you need to add additional Installer files, select **Add**. To remove unnecessary installation files, select the **Installer file**, then select **Delete**. To edit the properties associated with an installer, select **Edit**. The Package Accelerator requires the installation files specified in this step to create a new virtual application package. After you have confirmed the information displayed, click **Next**.
 
 9. On the **Select Guidance** page, to specify a file that contains information about how the Package Accelerator, click **Browse**. For example, this file can contain information about how the computer running the Sequencer should be configured, application prerequisite information for target computers, and general notes. You should provide all required information for the Package Accelerator to be successfully applied. The file you select must be in rich text (.rtf) or text file (.txt) format. Click **Next**.
 
