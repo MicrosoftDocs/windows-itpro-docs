@@ -1,24 +1,14 @@
 # [Threat protection](index.md)
 
 
-## [The Windows Defender Security Center app](windows-defender-security-center/windows-defender-security-center.md)
-### [Customize the Windows Defender Security Center app for your organization](windows-defender-security-center/wdsc-customize-contact-information.md)
-### [Hide Windows Defender Security Center app notifications](windows-defender-security-center/wdsc-hide-notifications.md)
-### [Manage Windows Defender Security Center in Windows 10 in S mode](windows-defender-security-center\wdsc-windows-10-in-s-mode.md)
-### [Virus and threat protection](windows-defender-security-center/wdsc-virus-threat-protection.md)
-### [Account protection](windows-defender-security-center\wdsc-account-protection.md)
-### [Firewall and network protection](windows-defender-security-center\wdsc-firewall-network-protection.md)
-### [App and browser control](windows-defender-security-center\wdsc-app-browser-control.md)
-### [Device security](windows-defender-security-center\wdsc-device-security.md)
-### [Device performance and health](windows-defender-security-center\wdsc-device-performance-health.md)
-### [Family options](windows-defender-security-center\wdsc-family-options.md)
-
 
 
 
 
 ## [Windows Defender Advanced Threat Protection](windows-defender-atp/windows-defender-advanced-threat-protection.md)
-###Get started
+
+###Windows Defender Security Center
+####Get started
 #### [Minimum requirements](windows-defender-atp\minimum-requirements-windows-defender-advanced-threat-protection.md)
 #### [Validate licensing and complete setup](windows-defender-atp\licensing-windows-defender-advanced-threat-protection.md)
 #### [Troubleshoot subscription and portal access issues](windows-defender-atp\troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
@@ -221,7 +211,8 @@
 #### [Review events and errors on machines with Event Viewer](windows-defender-atp\event-error-codes-windows-defender-advanced-threat-protection.md)
 ### [Windows Defender Antivirus compatibility with Windows Defender ATP](windows-defender-atp\defender-compatibility-windows-defender-advanced-threat-protection.md)
 
-##	[Windows Defender Antivirus in Windows 10](windows-defender-antivirus\windows-defender-antivirus-in-windows-10.md)
+###	[Windows Defender Antivirus in Windows 10](windows-defender-antivirus\windows-defender-antivirus-in-windows-10.md)
+### [Windows Defender AV in the Windows Defender Security Center app](windows-defender-antivirus\windows-defender-security-center-antivirus.md)
 ### [Windows Defender AV on Windows Server 2016](windows-defender-antivirus\windows-defender-antivirus-on-windows-server-2016.md)
 
 ### [Windows Defender Antivirus compatibility](windows-defender-antivirus\windows-defender-antivirus-compatibility.md)
@@ -285,9 +276,32 @@
 #### [Use Windows Management Instrumentation (WMI) to configure and manage Windows Defender AV](windows-defender-antivirus\use-wmi-windows-defender-antivirus.md)
 #### [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender AV](windows-defender-antivirus\command-line-arguments-windows-defender-antivirus.md)
 
-## [Windows Defender AV in the Windows Defender Security Center app](windows-defender-antivirus\windows-defender-security-center-antivirus.md)
 
-## [Windows Defender Exploit Guard](windows-defender-exploit-guard\windows-defender-exploit-guard.md)
+
+
+
+
+### [The Windows Defender Security Center app](windows-defender-security-center/windows-defender-security-center.md)
+### [Customize the Windows Defender Security Center app for your organization](windows-defender-security-center/wdsc-customize-contact-information.md)
+### [Hide Windows Defender Security Center app notifications](windows-defender-security-center/wdsc-hide-notifications.md)
+### [Manage Windows Defender Security Center in Windows 10 in S mode](windows-defender-security-center\wdsc-windows-10-in-s-mode.md)
+### [Virus and threat protection](windows-defender-security-center/wdsc-virus-threat-protection.md)
+### [Account protection](windows-defender-security-center\wdsc-account-protection.md)
+### [Firewall and network protection](windows-defender-security-center\wdsc-firewall-network-protection.md)
+### [App and browser control](windows-defender-security-center\wdsc-app-browser-control.md)
+### [Device security](windows-defender-security-center\wdsc-device-security.md)
+### [Device performance and health](windows-defender-security-center\wdsc-device-performance-health.md)
+### [Family options](windows-defender-security-center\wdsc-family-options.md)
+
+
+
+
+
+
+
+
+
+### [Windows Defender Exploit Guard](windows-defender-exploit-guard\windows-defender-exploit-guard.md)
 ### [Evaluate Windows Defender Exploit Guard](windows-defender-exploit-guard\evaluate-windows-defender-exploit-guard.md)
 #### [Use auditing mode to evaluate Windows Defender Exploit Guard](windows-defender-exploit-guard\audit-windows-defender-exploit-guard.md)
 #### [View Exploit Guard events](windows-defender-exploit-guard\event-views-exploit-guard.md)
@@ -316,7 +330,7 @@
 #### [Enable virtualization-based protection of code integrity](windows-defender-exploit-guard\enable-virtualization-based-protection-of-code-integrity.md)
 
 
-## [Windows Defender Application Control](windows-defender-application-control/windows-defender-application-control.md)
+### [Windows Defender Application Control](windows-defender-application-control/windows-defender-application-control.md)
 
 ## [Control the health of Windows 10-based devices](protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md)
 
@@ -326,22 +340,25 @@
 ### [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md)
 ### [Set up and use Windows Defender SmartScreen on individual devices](windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device.md)
 
-##[Windows Defender Application Guard](windows-defender-application-guard/wd-app-guard-overview.md)
+### [Windows Defender Application Guard](windows-defender-application-guard/wd-app-guard-overview.md)
 ###[System requirements for Windows Defender Application Guard](windows-defender-application-guard/reqs-wd-app-guard.md)
 ###[Prepare and install Windows Defender Application Guard](windows-defender-application-guard/install-wd-app-guard.md)
 ###[Configure the Group Policy settings for Windows Defender Application Guard](windows-defender-application-guard/configure-wd-app-guard.md)
 ###[Testing scenarios using Windows Defender Application Guard in your business or organization](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
 ###[Frequently Asked Questions - Windows Defender Application Guard](windows-defender-application-guard/faq-wd-app-guard.md)
 
-## [Mitigate threats by using Windows 10 security features](overview-of-threat-mitigations-in-windows-10.md)
 
-## [Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md)
+## Other security features
 
-## [Use Windows Event Forwarding to help with intrusion detection](use-windows-event-forwarding-to-assist-in-intrusion-detection.md)
+### [Mitigate threats by using Windows 10 security features](overview-of-threat-mitigations-in-windows-10.md)
 
-## [Block untrusted fonts in an enterprise](block-untrusted-fonts-in-enterprise.md)
+### [Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md)
 
-## [Security auditing](auditing/security-auditing-overview.md)
+### [Use Windows Event Forwarding to help with intrusion detection](use-windows-event-forwarding-to-assist-in-intrusion-detection.md)
+
+### [Block untrusted fonts in an enterprise](block-untrusted-fonts-in-enterprise.md)
+
+### [Security auditing](auditing/security-auditing-overview.md)
 ### [Basic security audit policies](auditing/basic-security-audit-policies.md)
 #### [Create a basic audit policy for an event category](auditing/create-a-basic-audit-policy-settings-for-an-event-category.md)
 #### [Apply a basic audit policy on a file or folder](auditing/apply-a-basic-audit-policy-on-a-file-or-folder.md)
@@ -694,7 +711,7 @@
 ##### [Registry (Global Object Access Auditing) ](auditing/registry-global-object-access-auditing.md)
 ##### [File System (Global Object Access Auditing) ](auditing/file-system-global-object-access-auditing.md)
 
-## [Security policy settings](security-policy-settings/security-policy-settings.md)
+### [Security policy settings](security-policy-settings/security-policy-settings.md)
 ### [Administer security policy settings](security-policy-settings/administer-security-policy-settings.md)
 #### [Network List Manager policies](security-policy-settings/network-list-manager-policies.md)
 ### [Configure security policy settings](security-policy-settings/how-to-configure-security-policy-settings.md)
@@ -866,10 +883,10 @@
 ##### [Take ownership of files or other objects](security-policy-settings/take-ownership-of-files-or-other-objects.md)
 
 
-## [Windows security baselines](windows-security-baselines.md)
+### [Windows security baselines](windows-security-baselines.md)
 ### [Security Compliance Toolkit](security-compliance-toolkit-10.md)
 ### [Get support](get-support-for-security-baselines.md)
 
-## [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
+### [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
 
-## [Change history for Threat protection](change-history-for-threat-protection.md)
+### [Change history for Threat protection](change-history-for-threat-protection.md)
