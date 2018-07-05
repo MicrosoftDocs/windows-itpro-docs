@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/02/2018
+ms.date: 07/03/2018
 ---
 
 # Policy CSP - ApplicationManagement
@@ -949,12 +949,78 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
+To ensure apps are up-to-date, this policy allows the admins to set a recurring or one time date to restart apps whose update failed due to the app being in use allowing the update to be applied. 
 
+Value type is string.
 <!--/Description-->
 <!--SupportedValues-->
 
 <!--/SupportedValues-->
 <!--Example-->
+Sample SyncML:
+
+``` syntax
+<SyncML xmlns="SYNCML:SYNCML1.1"> 
+  <SyncBody> 
+    <Add> 
+      <CmdID>2</CmdID> 
+      <Item> 
+        <Target>  
+          <LocURI> ./Device/Vendor/MSFT/Policy/Config/ApplicationManagement/ScheduleForceRestartForUpdateFailures 
+          </LocURI>  
+        </Target> 
+        <Meta> 
+          <Format xmlns="syncml:metinf">xml</Format> 
+        </Meta> 
+        <Data> 
+          <ForceRestart StartDateTime="2018-03-28T22:21:52Z"  
+                        Recurrence="[none/daily/weekly/monthly]"  
+                        DayOfWeek=”1”  
+                        DayOfMonth=”12”  
+                        RunIfTaskIsMissed=”1”/> 
+        </Data> 
+      </Item> 
+    </Add> 
+  </SyncBody> 
+</SycnML>
+```
+XSD:
+
+``` syntax
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="recurrence" final="restriction">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="None" />
+        <xs:enumeration value="Daily" />
+        <xs:enumeration value="Weekly" />
+        <xs:enumeration value="Monthly" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="daysOfWeek" final="restriction">
+    <xs:restriction base="xs:unsignedByte">
+      <xs:minInclusive value="1" />
+      <xs:maxInclusive value="127" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="daysOfMonth" final="restriction">
+    <xs:restriction base="xs:unsignedInt">
+      <xs:minInclusive value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="ForceRestart">
+    <xs:complexType>
+      <xs:attribute name="StartDateTime" type="xs:dateTime" use="required"/> 
+      <xs:attribute name="Recurrence" type="recurrence" use="required"/> 
+      <xs:attribute name="RunIfTaskIsMissed" type="xs:boolean" use="required"/> 
+      <xs:attribute name="DaysOfWeek" type="daysOfWeek"/> 
+      <xs:attribute name="DaysOfMonth" type="daysOfMonth"/> 
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+```
 
 <!--/Example-->
 <!--Validation-->
