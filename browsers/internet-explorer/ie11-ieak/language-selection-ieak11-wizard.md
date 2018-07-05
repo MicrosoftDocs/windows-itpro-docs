@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Language Selection page in the IEAK 11 Customization Wizard to choose the lanaguage for your IEAK 11 custom package.
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: f9d4ab57-9b1d-4cbc-9398-63f4938df1f6
 title: Use the Language Selection page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
