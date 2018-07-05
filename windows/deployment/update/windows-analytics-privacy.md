@@ -45,7 +45,8 @@ See these topics for additional background information about related privacy iss
 - [Diagnostic Data Viewer Overview](https://docs.microsoft.com/windows/configuration/diagnostic-data-viewer-overview)
 - [Licensing Terms and Documentation](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Learn about security and privacy at Microsoft datacenters](http://www.microsoft.com/datacenters)
-- [Confidence in the trusted cloud](https://azure.microsoft.com/en-us/support/trust-center/)
+- [Confidence in the trusted cloud](https://azure.microsoft.com/support/trust-center/)
+- [Trust Center](https://www.microsoft.com/trustcenter)
 
 ### Can Windows Analytics be used without a direct client connection to the Microsoft Data Management Service?
 No, the entire service is powered by Windows diagnostic data, which requires that devices have this direct connectivity.
