@@ -6,7 +6,7 @@
 
 
 ## [Windows Defender Advanced Threat Protection](windows-defender-atp/windows-defender-advanced-threat-protection.md)
-###Windows Defender Security Center
+### [Windows Defender Security Center](windows-defender-atp/windows-defender-security-center-atp.md)
 ####Get started
 ##### [Minimum requirements](windows-defender-atp\minimum-requirements-windows-defender-advanced-threat-protection.md)
 ##### [Validate licensing and complete setup](windows-defender-atp\licensing-windows-defender-advanced-threat-protection.md)
@@ -333,13 +333,10 @@
 
 ### [Windows Defender Application Control](windows-defender-application-control/windows-defender-application-control.md)
 
-## [Control the health of Windows 10-based devices](protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md)
 
-## [Windows Defender Device Guard: virtualization-based security and WDAC](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 
-## [Windows Defender SmartScreen](windows-defender-smartscreen/windows-defender-smartscreen-overview.md)
-### [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md)
-### [Set up and use Windows Defender SmartScreen on individual devices](windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device.md)
+
+
 
 ### [Windows Defender Application Guard](windows-defender-application-guard/wd-app-guard-overview.md)
 ###[System requirements for Windows Defender Application Guard](windows-defender-application-guard/reqs-wd-app-guard.md)
@@ -350,6 +347,15 @@
 
 
 ## Other security features
+### [Windows Defender SmartScreen](windows-defender-smartscreen/windows-defender-smartscreen-overview.md)
+#### [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md)
+#### [Set up and use Windows Defender SmartScreen on individual devices](windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device.md)
+
+
+### [Windows Defender Device Guard: virtualization-based security and WDAC](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
+
+
+### [Control the health of Windows 10-based devices](protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md)
 
 ### [Mitigate threats by using Windows 10 security features](overview-of-threat-mitigations-in-windows-10.md)
 
@@ -358,12 +364,13 @@
 ### [Use Windows Event Forwarding to help with intrusion detection](use-windows-event-forwarding-to-assist-in-intrusion-detection.md)
 
 ### [Block untrusted fonts in an enterprise](block-untrusted-fonts-in-enterprise.md)
-
 ### [Security auditing](auditing/security-auditing-overview.md)
+
 ### [Basic security audit policies](auditing/basic-security-audit-policies.md)
 #### [Create a basic audit policy for an event category](auditing/create-a-basic-audit-policy-settings-for-an-event-category.md)
 #### [Apply a basic audit policy on a file or folder](auditing/apply-a-basic-audit-policy-on-a-file-or-folder.md)
 #### [View the security event log](auditing/view-the-security-event-log.md)
+
 #### [Basic security audit policy settings](auditing/basic-security-audit-policy-settings.md)
 ##### [Audit account logon events](auditing/basic-audit-account-logon-events.md)
 ##### [Audit account management](auditing/basic-audit-account-management.md)
@@ -374,10 +381,16 @@
 ##### [Audit privilege use](auditing/basic-audit-privilege-use.md)
 ##### [Audit process tracking](auditing/basic-audit-process-tracking.md)
 ##### [Audit system events](auditing/basic-audit-system-events.md)
+
+
 ### [Advanced security audit policies](auditing/advanced-security-auditing.md)
 #### [Planning and deploying advanced security audit policies](auditing/planning-and-deploying-advanced-security-audit-policies.md)
+
+
 #### [Advanced security auditing FAQ](auditing/advanced-security-auditing-faq.md)
 ##### [Which editions of Windows support advanced audit policy configuration](auditing/which-editions-of-windows-support-advanced-audit-policy-configuration.md)
+
+
 #### [Using advanced security auditing options to monitor dynamic access control objects](auditing/using-advanced-security-auditing-options-to-monitor-dynamic-access-control-objects.md)
 ##### [Monitor the central access policies that apply on a file server](auditing/monitor-the-central-access-policies-that-apply-on-a-file-server.md)
 ##### [Monitor the use of removable storage devices](auditing/monitor-the-use-of-removable-storage-devices.md)
@@ -387,6 +400,7 @@
 ##### [Monitor the resource attributes on files and folders](auditing/monitor-the-resource-attributes-on-files-and-folders.md)
 ##### [Monitor the central access policies associated with files and folders](auditing/monitor-the-central-access-policies-associated-with-files-and-folders.md)
 ##### [Monitor claim types](auditing/monitor-claim-types.md)
+
 #### [Advanced security audit policy settings](auditing/advanced-security-audit-policy-settings.md)
 ##### [Audit Credential Validation](auditing/audit-credential-validation.md)
 ###### [Event 4774 S, F: An account was mapped for logon.](auditing/event-4774.md)
