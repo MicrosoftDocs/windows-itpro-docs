@@ -19,7 +19,7 @@
 ###### [Onboard machines using Group Policy](windows-defender-atp\configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
 ###### [Onboard machines using System Center Configuration Manager](windows-defender-atp\configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
 ###### [Onboard machines using Mobile Device Management tools](windows-defender-atp\configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
-####### [Onboard machines using Microsoft Intune](windows-defender-atp\configure-endpoints-mdm-windows-defender-advanced-threat-protection.md#onboard-windows-10-machines-using-microsoft-intune)
+####### [Onboard machines using Microsoft Intune](windows-defender-atp\configure-endpoints-mdm-windows-defender-advanced-threat-protection.md#onboard-machines-using-microsoft-intune)
 ###### [Onboard machines using a local script](windows-defender-atp\configure-endpoints-script-windows-defender-advanced-threat-protection.md)
 ###### [Onboard non-persistent virtual desktop infrastructure (VDI) machines](windows-defender-atp\configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
 ##### [Onboard servers](windows-defender-atp\configure-server-endpoints-windows-defender-advanced-threat-protection.md)
@@ -282,17 +282,7 @@
 
 
 
-### [The Windows Defender Security Center app](windows-defender-security-center/windows-defender-security-center.md)
-### [Customize the Windows Defender Security Center app for your organization](windows-defender-security-center/wdsc-customize-contact-information.md)
-### [Hide Windows Defender Security Center app notifications](windows-defender-security-center/wdsc-hide-notifications.md)
-### [Manage Windows Defender Security Center in Windows 10 in S mode](windows-defender-security-center\wdsc-windows-10-in-s-mode.md)
-### [Virus and threat protection](windows-defender-security-center/wdsc-virus-threat-protection.md)
-### [Account protection](windows-defender-security-center\wdsc-account-protection.md)
-### [Firewall and network protection](windows-defender-security-center\wdsc-firewall-network-protection.md)
-### [App and browser control](windows-defender-security-center\wdsc-app-browser-control.md)
-### [Device security](windows-defender-security-center\wdsc-device-security.md)
-### [Device performance and health](windows-defender-security-center\wdsc-device-performance-health.md)
-### [Family options](windows-defender-security-center\wdsc-family-options.md)
+
 
 
 
@@ -303,32 +293,33 @@
 
 
 ### [Windows Defender Exploit Guard](windows-defender-exploit-guard\windows-defender-exploit-guard.md)
-### [Evaluate Windows Defender Exploit Guard](windows-defender-exploit-guard\evaluate-windows-defender-exploit-guard.md)
-#### [Use auditing mode to evaluate Windows Defender Exploit Guard](windows-defender-exploit-guard\audit-windows-defender-exploit-guard.md)
-#### [View Exploit Guard events](windows-defender-exploit-guard\event-views-exploit-guard.md)
-
-### [Exploit protection](windows-defender-exploit-guard\exploit-protection-exploit-guard.md)
-#### [Comparison with Enhanced Mitigation Experience Toolkit](windows-defender-exploit-guard\emet-exploit-protection-exploit-guard.md)
-#### [Evaluate Exploit protection](windows-defender-exploit-guard\evaluate-exploit-protection.md)
-#### [Enable Exploit protection](windows-defender-exploit-guard\enable-exploit-protection.md)
-#### [Customize Exploit protection](windows-defender-exploit-guard\customize-exploit-protection.md)
-##### [Import, export, and deploy Exploit protection configurations](windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
-### [Attack surface reduction](windows-defender-exploit-guard\attack-surface-reduction-exploit-guard.md)
+#### [Evaluate Windows Defender Exploit Guard](windows-defender-exploit-guard\evaluate-windows-defender-exploit-guard.md)
+##### [Use auditing mode to evaluate Windows Defender Exploit Guard](windows-defender-exploit-guard\audit-windows-defender-exploit-guard.md)
+##### [View Exploit Guard events](windows-defender-exploit-guard\event-views-exploit-guard.md)
+#### [Exploit protection](windows-defender-exploit-guard\exploit-protection-exploit-guard.md)
+##### [Comparison with Enhanced Mitigation Experience Toolkit](windows-defender-exploit-guard\emet-exploit-protection-exploit-guard.md)
+##### [Evaluate Exploit protection](windows-defender-exploit-guard\evaluate-exploit-protection.md)
+##### [Enable Exploit protection](windows-defender-exploit-guard\enable-exploit-protection.md)
+##### [Customize Exploit protection](windows-defender-exploit-guard\customize-exploit-protection.md)
+###### [Import, export, and deploy Exploit protection configurations](windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
+##### [Memory integrity](windows-defender-exploit-guard\memory-integrity.md)
+###### [Requirements for virtualization-based protection of code integrity](windows-defender-exploit-guard\requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
+###### [Enable virtualization-based protection of code integrity](windows-defender-exploit-guard\enable-virtualization-based-protection-of-code-integrity.md)
+#### [Attack surface reduction](windows-defender-exploit-guard\attack-surface-reduction-exploit-guard.md)
 #### [Evaluate Attack surface reduction](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
 #### [Enable Attack surface reduction](windows-defender-exploit-guard\enable-attack-surface-reduction.md)
 #### [Customize Attack surface reduction](windows-defender-exploit-guard\customize-attack-surface-reduction.md)
 #### [Troubleshoot Attack surface reduction rules](windows-defender-exploit-guard\troubleshoot-asr.md)
-### [Network Protection](windows-defender-exploit-guard\network-protection-exploit-guard.md)
+#### [Network Protection](windows-defender-exploit-guard\network-protection-exploit-guard.md)
 #### [Evaluate Network Protection](windows-defender-exploit-guard\evaluate-network-protection.md)
 #### [Enable Network Protection](windows-defender-exploit-guard\enable-network-protection.md)
 #### [Troubleshoot Network protection](windows-defender-exploit-guard\troubleshoot-np.md)
-### [Controlled folder access](windows-defender-exploit-guard\controlled-folders-exploit-guard.md)
+#### [Controlled folder access](windows-defender-exploit-guard\controlled-folders-exploit-guard.md)
 #### [Evaluate Controlled folder access](windows-defender-exploit-guard\evaluate-controlled-folder-access.md)
 #### [Enable Controlled folder access](windows-defender-exploit-guard\enable-controlled-folders-exploit-guard.md)
 #### [Customize Controlled folder access](windows-defender-exploit-guard\customize-controlled-folders-exploit-guard.md)
-### [Memory integrity](windows-defender-exploit-guard\memory-integrity.md)
-#### [Requirements for virtualization-based protection of code integrity](windows-defender-exploit-guard\requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
-#### [Enable virtualization-based protection of code integrity](windows-defender-exploit-guard\enable-virtualization-based-protection-of-code-integrity.md)
+
+
 
 
 ### [Windows Defender Application Control](windows-defender-application-control/windows-defender-application-control.md)
@@ -347,6 +338,19 @@
 
 
 ## Other security features
+### [The Windows Defender Security Center app](windows-defender-security-center/windows-defender-security-center.md)
+#### [Customize the Windows Defender Security Center app for your organization](windows-defender-security-center/wdsc-customize-contact-information.md)
+#### [Hide Windows Defender Security Center app notifications](windows-defender-security-center/wdsc-hide-notifications.md)
+#### [Manage Windows Defender Security Center in Windows 10 in S mode](windows-defender-security-center\wdsc-windows-10-in-s-mode.md)
+#### [Virus and threat protection](windows-defender-security-center/wdsc-virus-threat-protection.md)
+#### [Account protection](windows-defender-security-center\wdsc-account-protection.md)
+#### [Firewall and network protection](windows-defender-security-center\wdsc-firewall-network-protection.md)
+#### [App and browser control](windows-defender-security-center\wdsc-app-browser-control.md)
+#### [Device security](windows-defender-security-center\wdsc-device-security.md)
+#### [Device performance and health](windows-defender-security-center\wdsc-device-performance-health.md)
+#### [Family options](windows-defender-security-center\wdsc-family-options.md)
+
+
 ### [Windows Defender SmartScreen](windows-defender-smartscreen/windows-defender-smartscreen-overview.md)
 #### [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md)
 #### [Set up and use Windows Defender SmartScreen on individual devices](windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device.md)
