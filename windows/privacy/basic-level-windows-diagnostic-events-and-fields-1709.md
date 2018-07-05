@@ -6,10 +6,10 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
-author: eross-msft
-ms.author: lizross
-ms.date: 03/13/2018
+localizationpriority: high
+author: danihalfin
+ms.author: daniha
+ms.date: 06/20/2018
 ---
 
 
@@ -2773,11 +2773,92 @@ The following fields are available:
 - **UserGuid**  The CEIP user ID.
 
 
+## Remediation events
+
+>[!NOTE]
+>Events from this provider are sent with the installation of KB4023057 and any subsequent Windows update. For details, see [this support article](https://support.microsoft.com/help/4023057).
+
+### Microsoft.Windows.Remediation.Applicable
+
+Reports whether a specific remediation to issues preventing security and quality updates is applicable based on detection.
+
+The following fields are available:
+
+- **CV** Correlation vector.
+- **DetectedCondition** Boolean true if detect condition is true and perform action will be run.
+- **GlobalEventCounter** Client side counter which indicates ordering of events sent by the remediation system.
+- **PackageVersion** Current package version of Remediation.
+- **PluginName** Name of the remediation plugin specified for each generic plugin event.
+- **RemediationShellDeviceManaged** TRUE if the device is WSUS managed or Windows Updated is disabled.
+- **RemediationShellDeviceNewOS** TRUE if the device has a recently installed OS.
+- **RemediationShellDeviceSccm** TRUE if the device is SCCM managed.
+- **RemediationShellDeviceZeroExhaust** TRUE if the device has opted out of Windows Updates completely.
+- **Result** Result for detection or perform action phases of the remediation system.
+
+### Microsoft.Windows.Remediation.ChangePowerProfileDetection
+
+Indicates whether the remediation system can put in a request to defer a system-initiated sleep to enable installation of security or quality updates.
+
+The following fields are available:
+
+- **ActionName** A descriptive name for the plugin action.
+- **CurrentPowerPlanGUID** The ID of the current power plan configured on the device.
+- **CV** Correlation vector.
+- **GlobalEventCounter** Counter that indicates the ordering of events on the device.
+- **PackageVersion** Current package version of remediation service.
+- **RemediationBatteryPowerBatteryLevel** Integer between 0 and 100 indicating % battery power remaining (if not on battery, expect 0).
+- **RemediationFUInProcess** Result that shows whether the device is currently installing a feature update.
+- **RemediationScanInProcess** Result that shows whether the device is currently scanning for updates.
+- **RemediationTargetMachine** Result that shows whether this device is a candidate for remediation(s) that will fix update issues.
+- **SetupMutexAvailable** Result that shows whether setup mutex is available or not.
+- **SysPowerStatusAC** Result that shows whether system is on AC power or not.
+
+### Microsoft.Windows.Remediation.Completed
+
+Enables tracking the completion of a process that remediates issues preventing security and quality updates.
+
+The following fields are available:
+
+- **CV** Correlation vector.
+- **GlobalEventCounter** Client side counter which indicates ordering of events sent by the remediation system.
+- **PackageVersion** Current package version of Remediation.
+- **PluginName** Name of the specific remediation for each generic plugin event.
+- **RemediationNoisyHammerTaskKickOffIsSuccess** Event that indicates the Update Assistant task has been started successfully.
+- **Result** Indicates whether the remediation has completed.
+
+### Microsoft.Windows.Remediation.RemediationShellMainExeEventId
+
+Enables tracking the ID of a process that remediates issues preventing security and quality updates.
+
+The following fields are available:
+
+- **CV** Correlation vector.
+- **GlobalEventCounter** Client side counter which indicates ordering of events sent by the remediation system.
+- **PackageVersion** Current package version of Remediation.
+- **RemediationShellCanAcquireSedimentMutex** True if the remediation was able to acquire the sediment mutex. False if it is already running.
+- **RemediationShellExecuteShellResult** Indicates if the remediation system completed without errors.
+- **RemediationShellFoundDriverDll** Indicates whether the remediation system found its component files to run properly.
+- **RemediationShellLoadedShellDriver** Indicates whether the remediation system loaded its component files to run properly.
+- **RemediationShellLoadedShellFunction** Indicates whether the remediation system loaded the functions from its component files to run properly.
+
+### Microsoft.Windows.Remediation.Started
+
+Enables tracking the start of a process that remediates issues preventing security and quality updates.
+
+The following fields are available:
+
+- **CV** Correlation vector.
+- **GlobalEventCounter** Client side counter which indicates ordering of events sent by the remediation system.
+- **PackageVersion** Current package version of Remediation.
+- **PluginName** Name of the specific remediation for each generic plugin event.
+- **Result** Results of the detection or perform action phases of the remediation system.
+
+
 ## Setup events
 
 ### SetupPlatformTel.SetupPlatformTelActivityStarted
 
-"This event sends basic metadata about the update installation process generated by SetupPlatform to help keep Windows up to date. "
+This event sends basic metadata about the update installation process generated by SetupPlatform to help keep Windows up to date.
 
 The following fields are available:
 
