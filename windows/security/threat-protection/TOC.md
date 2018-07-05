@@ -222,8 +222,6 @@
 ### [Windows Defender Antivirus compatibility with Windows Defender ATP](windows-defender-atp\defender-compatibility-windows-defender-advanced-threat-protection.md)
 
 ##	[Windows Defender Antivirus in Windows 10](windows-defender-antivirus\windows-defender-antivirus-in-windows-10.md)
-### [Windows Defender AV in the Windows Defender Security Center app](windows-defender-antivirus\windows-defender-security-center-antivirus.md)
-
 ### [Windows Defender AV on Windows Server 2016](windows-defender-antivirus\windows-defender-antivirus-on-windows-server-2016.md)
 
 ### [Windows Defender Antivirus compatibility](windows-defender-antivirus\windows-defender-antivirus-compatibility.md)
@@ -287,7 +285,7 @@
 #### [Use Windows Management Instrumentation (WMI) to configure and manage Windows Defender AV](windows-defender-antivirus\use-wmi-windows-defender-antivirus.md)
 #### [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender AV](windows-defender-antivirus\command-line-arguments-windows-defender-antivirus.md)
 
-
+## [Windows Defender AV in the Windows Defender Security Center app](windows-defender-antivirus\windows-defender-security-center-antivirus.md)
 
 ## [Windows Defender Exploit Guard](windows-defender-exploit-guard\windows-defender-exploit-guard.md)
 ### [Evaluate Windows Defender Exploit Guard](windows-defender-exploit-guard\evaluate-windows-defender-exploit-guard.md)
