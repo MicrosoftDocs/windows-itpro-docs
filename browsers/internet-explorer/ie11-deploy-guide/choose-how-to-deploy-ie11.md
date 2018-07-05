@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Choose how to deploy Internet Explorer 11 (IE11)
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: 21b6a301-c222-40bc-ad0b-27f66fc54d9d
 title: Choose how to deploy Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)
