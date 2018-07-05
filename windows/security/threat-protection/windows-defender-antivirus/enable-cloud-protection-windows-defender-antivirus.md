@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 07/05/2018
 ---
 
 # Enable cloud-delivered protection in Windows Defender AV
@@ -108,25 +108,22 @@ See the following for more information and allowed parameters:
 
 **Use Intune to enable cloud-delivered protection**
 
-1.  Open the [Microsoft Intune administration console](https://manage.microsoft.com/), and navigate to the associated policy you want to configure.
-2.  Under the **Endpoint Protection** setting, scroll down to the **Endpoint Protection Service** section set the **Submit files automatically when further analysis is required** setting to either of the following:
-    1. **Send samples automatically**
-    1. **Send all samples automatically**
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Select **All services > Intune**.
+3. In the **Intune** pane, select **Device configuration > Profiles**, and then select the **Device restrictions** profile type you want to configure. If you haven't yet created a **Device restrictions** profile type, or if you want to create a new one, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure).
+4. Select **Properties**, select **Settings: Configure**, and then select **Windows Defender Antivirus**.
+5. On the **Cloud-delivered protection** switch, select **Enable**.
+6. In the **Prompt users before sample submission** dropdown, select **Send all data without prompting**. 
+7. In the **Submit samples consent** dropdown, select one of the following:
+    1. **Send safe samples automatically**
+    2. **Send all samples automatically**
 
         > [!WARNING]
         > Setting to **Always Prompt** will lower the protection state of the device. Setting to **Never send** means the [Block at First Sight](configure-block-at-first-sight-windows-defender-antivirus.md) feature will not function.
-5. Scroll down to the **Microsoft Active Protection Service** section and set the following settings:
-    
-   Setting | Set to
-    --|--
-    Join Microsoft Active Protection Service | Yes
-    Membership level | Advanced
-    Receive dynamic definitions based on Microsoft Active Protection Service reports | Yes
+8. Click **OK** to exit the **Windows Defender Antivirus** settings pane, click **OK** to exit the **Device restrictions** pane, and then click **Save** to save the changes to your **Device restrictions** profile.
+
+For more information about Intune device profiles, including how to create and configure their settings, see [What are Microsoft Intune device profiles?](https://docs.microsoft.com/en-us/intune/device-profiles).
   
-3.  Save and [deploy the policy as usual](https://docs.microsoft.com/en-us/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).
-
-See [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) for more details.
-
 **Enable cloud-delivered protection on individual clients with the Windows Defender Security Center app**
 > [!NOTE]
 > If the **Configure local setting override for reporting Microsoft MAPS** Group Policy setting is set to **Disabled**, then the **Cloud-based protection** setting in Windows Settings will be greyed-out and unavailable. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings.
