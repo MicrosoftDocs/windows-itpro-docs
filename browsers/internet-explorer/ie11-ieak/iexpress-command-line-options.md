@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Reference about the command-line options for the IExpress Wizard.
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: aa16d738-1067-403c-88b3-bada12cf9752
 title: IExpress Wizard command-line options (Internet Explorer Administration Kit 11 for IT Pros)

@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Platform Selection page in the IEAK 11 Customization Wizard to pick the specs for your employee devices that will get the install package.
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: 9cbf5abd-86f7-42b6-9810-0b606bbe8218
 title: Use the Platform Selection page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
