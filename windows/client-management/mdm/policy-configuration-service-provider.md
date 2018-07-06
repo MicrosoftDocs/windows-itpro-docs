@@ -214,6 +214,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-applicationmanagement.md#applicationmanagement-disablestoreoriginatedapps" id="applicationmanagement-disablestoreoriginatedapps">ApplicationManagement/DisableStoreOriginatedApps</a>
   </dd>
   <dd>
+    <a href="./policy-csp-applicationmanagement.md#applicationmanagement-launchappafterlogon" id="applicationmanagement-launchappafterlogon">ApplicationManagement/LaunchAppAfterLogOn</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-applicationmanagement.md#applicationmanagement-msiallowusercontroloverinstall" id="applicationmanagement-msiallowusercontroloverinstall">ApplicationManagement/MSIAllowUserControlOverInstall</a>
   </dd>
   <dd>
@@ -227,6 +230,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-applicationmanagement.md#applicationmanagement-restrictapptosystemvolume" id="applicationmanagement-restrictapptosystemvolume">ApplicationManagement/RestrictAppToSystemVolume</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-applicationmanagement.md#applicationmanagement-scheduleforcerestartforupdatefailures" id="applicationmanagement-scheduleforcerestartforupdatefailures">ApplicationManagement/ScheduleForceRestartForUpdateFailures</a>
   </dd>
 </dl>
 
@@ -4751,15 +4757,15 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)  
 -   [Browser/AllowSmartScreen](#browser-allowsmartscreen)  
 -   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
--   [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
--   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
--   [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
--   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
--   [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
--   [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)
--   [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)
--   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters) 
--   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)   
+-   [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)  
+-   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)  
+-   [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)  
+-   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
+-   [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)  
+-   [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)  
+-   [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)  
+-   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)  
+-   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
 -   [Experience/AllowCortana](#experience-allowcortana)  
 -   [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)  
 -   [Privacy/AllowCrossDeviceClipboard](#privacy-allowcrossdeviceclipboard)  
