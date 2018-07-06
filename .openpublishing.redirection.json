@@ -13696,11 +13696,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/deployment/upgrade/windows-10-downgrade-paths.md",
-"redirect_url": "/windows/deployment/upgrade/windows-10-edition-upgrades",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/deployment/upgrade/windows-10-edition-downgrades.md",
 "redirect_url": "/windows/deployment/upgrade/windows-10-edition-upgrades",
 "redirect_document_id": true
