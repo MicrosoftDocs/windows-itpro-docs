@@ -21,10 +21,10 @@ Use the following procedure to create a package accelerator.
 
 >[!IMPORTANT]
 >
-> - Package Accelerators can contain password and user-specific information. Therefore you must save Package Accelerators and the associated installation media in a secure location, and you should digitally sign the Package Accelerator after you create it so that the publisher can be verified when the App-V Package Accelerator is applied.
-> - Before you begin the following procedure, perform the following:
-     >- Copy the virtual application package that you will use to create the package accelerator locally to the computer running the sequencer.
-     >- Copy all required installation files associated with the virtual application package to the computer running the sequencer.
+> - Because Package Accelerators can contain password and user-specific information, you should save Package Accelerators and the associated installation media in a secure location, and you should also digitally sign the Package Accelerator after creating it so that you can verify the publisher when applying the App-V Package Accelerator.
+> - Before you begin creating a package accelerator, do the following:
+>     - Copy the virtual application package that you will use to create the package accelerator locally to the computer running the sequencer.
+>     - Copy all required installation files associated with the virtual application package to the computer running the sequencer.
 > - The App-V Sequencer does not grant any license rights to the software application you are using to create the Package Accelerator. You must abide by all end user license terms for the application you are using. It is your responsibility to make sure the software application’s license terms allow you to create a package accelerator with the App-V sequencer.
 
 ## Create a package accelerator
