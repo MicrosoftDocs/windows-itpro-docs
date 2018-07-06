@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mobile
 author: greg-lindsay
-ms.date: 06/28/2018
+ms.date: 07/06/2018
 ---
 
 # Windows 10 edition upgrade
