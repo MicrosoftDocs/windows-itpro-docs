@@ -33,19 +33,19 @@ Use the following procedure to create a package accelerator.
 
 2. To start the App-V **Create Package Accelerator** wizard, in the App-V sequencer console, select **Tools** > **Create Accelerator**.
 
-3. On the **Select Package** page, to specify an existing virtual application package to use to create the Package Accelerator, select **Browse**, then locate the existing virtual application package (it will appear as an .appv file).
+3. On the **Select Package** page, select **Browse** tospecify an existing virtual application package to use to create the Package Accelerator, then locate the existing virtual application package (it will appear as an .appv file).
 
     >[!TIP]
     >Copy the files associated with the virtual application package you plan to use locally to the computer running the Sequencer.
 
     Select **Next**.
 
-4. To specify the folder containing original virtual package's installation files, go to the **Installation Files** page and select **Browse**, then select the directory that contains the installation files.
+4. Go to the **Installation Files** page and select **Browse**, then select the directory that contains the installation files to specify the folder containing the original virtual package's installation files.
 
     >[!TIP]
     >Copy the folder that contains the required installation files to the computer running the Sequencer.
 
-5. If the application is already installed on the computer running the sequencer, to specify the installation file, select **Files installed on local system**. To use this option, the application must already be installed in the default installation location.
+5. If the application is already installed on the computer running the sequencer, then select **Files installed on local system** to specify the installation file,. To use this option, the application must already be installed in the default installation location.
 
 6. On the **Gathering Information** page, review the files that you couldn't find in the location specified on the **Installation Files** page of this wizard. If the files displayed are not required, select **Remove these files**, then select **Next**. If the files are required, select **Previous** and copy the required files to the directory specified on the **Installation Files** page.
 
