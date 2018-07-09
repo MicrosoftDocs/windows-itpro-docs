@@ -185,7 +185,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.
+Added in Windows 10, version 1703. Allows IT Admins to control whether users can ignore SmartScreen warnings and run malicious files.
 
 <!--/Description-->
 <!--ADMXMapped-->
