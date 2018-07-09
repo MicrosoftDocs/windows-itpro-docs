@@ -171,7 +171,7 @@ Starting with Windows 10, version 1803, the device name is no longer collected b
 
 ### Disable Upgrade Readiness
 
-If you want to stop using Upgrade Readiness and stop sending diagnostic data data to Microsoft, follow these steps:
+If you want to stop using Upgrade Readiness and stop sending diagnostic data to Microsoft, follow these steps:
 
 1.  Unsubscribe from the Upgrade Readiness solution in the OMS portal. In the OMS portal, go to **Settings** > **Connected Sources** > **Windows Telemetry** and choose the **Unsubscribe** option.
 

@@ -195,7 +195,7 @@ Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the 
 ### Add an AppLocker policy file
 Now we’re going to add an AppLocker XML file to the **App Rules** list. You’ll use this option if you want to add multiple apps at the same time. For more info, see [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview).
 
-**To create a Packaged App rule rule and xml file**
+**To create a Packaged App rule and xml file**
 1.	Open the Local Security Policy snap-in (SecPol.msc).
     
 2.	In the left pane, click **Application Control Policies** > **AppLocker** > **Packaged App Rules**.
