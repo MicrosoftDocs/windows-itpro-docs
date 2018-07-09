@@ -213,7 +213,7 @@
 #### [Windows Defender Antivirus compatibility with Windows Defender ATP](windows-defender-atp\defender-compatibility-windows-defender-advanced-threat-protection.md)
 
 ###	[Windows Defender Antivirus in Windows 10](windows-defender-antivirus\windows-defender-antivirus-in-windows-10.md)
-#### [Windows Defender AV in the Windows Defender Security Center app](windows-defender-antivirus\windows-defender-security-center-antivirus.md)
+#### [Windows Defender AV in the Windows Defender Security app](windows-defender-antivirus\windows-defender-security-center-antivirus.md)
 #### [Windows Defender AV on Windows Server 2016](windows-defender-antivirus\windows-defender-antivirus-on-windows-server-2016.md)
 
 #### [Windows Defender Antivirus compatibility](windows-defender-antivirus\windows-defender-antivirus-compatibility.md)
@@ -338,10 +338,10 @@
 
 
 ## Other security features
-### [The Windows Defender Security Center app](windows-defender-security-center/windows-defender-security-center.md)
-#### [Customize the Windows Defender Security Center app for your organization](windows-defender-security-center/wdsc-customize-contact-information.md)
-#### [Hide Windows Defender Security Center app notifications](windows-defender-security-center/wdsc-hide-notifications.md)
-#### [Manage Windows Defender Security Center in Windows 10 in S mode](windows-defender-security-center\wdsc-windows-10-in-s-mode.md)
+### [The Windows Security app](windows-defender-security-center/windows-defender-security-center.md)
+#### [Customize the Windows Security app for your organization](windows-defender-security-center/wdsc-customize-contact-information.md)
+#### [Hide Windows Security app notifications](windows-defender-security-center/wdsc-hide-notifications.md)
+#### [Manage Windows Security app in Windows 10 in S mode](windows-defender-security-center\wdsc-windows-10-in-s-mode.md)
 #### [Virus and threat protection](windows-defender-security-center/wdsc-virus-threat-protection.md)
 #### [Account protection](windows-defender-security-center\wdsc-account-protection.md)
 #### [Firewall and network protection](windows-defender-security-center\wdsc-firewall-network-protection.md)
