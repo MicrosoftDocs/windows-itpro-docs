@@ -1,6 +1,6 @@
 ---
-title: Windows Defender Advanced Threat Protection suite
-description: Windows Defender Advanced Threat Protection is an enterprise security suite that helps secops to prevent, detect, investigate, and respond to possible cybersecurity threats related to advanced persistent threats.
+title: Windows Defender Advanced Threat Protection
+description: Windows Defender Advanced Threat Protection is an enterprise security platform that helps secops to prevent, detect, investigate, and respond to possible cybersecurity threats related to advanced persistent threats.
 keywords: introduction to Windows Defender Advanced Threat Protection, introduction to Windows Defender ATP, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -31,12 +31,12 @@ ms.date: 07/01/2018
 
 Windows Defender Advanced Threat Protection is a platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
 
-To help you maximize the effectiveness of the security platform, you can configure individual capabilities that surface in the Windows Defender ATP portal/Windows Defender Security Center. 
+To help you maximize the effectiveness of the security platform, you can configure individual capabilities that surface in Windows Defender Security Center. 
 
 The Windows Defender ATP platform is where all the capabilities that are available across multiple products come together to give security operations teams the ability to effectively manage their organization's network.
 
 
-Get a quick, but in-depth overview of Windows Defender ATP for Windows 10 and the new capabilities in Windows 10, version 1703 see [Windows Defender ATP for Windows 10 Creators Update](https://technet.microsoft.com/en-au/windows/mt782787).
+Get a quick, but in-depth overview of Windows Defender ATP and the new capabilities in Windows 10, version 1703 see [Windows Defender ATP for Windows 10 Creators Update](https://technet.microsoft.com/en-au/windows/mt782787).
 
 Windows Defender ATP uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
 

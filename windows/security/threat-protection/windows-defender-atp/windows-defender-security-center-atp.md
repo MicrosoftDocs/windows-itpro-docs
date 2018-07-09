@@ -27,9 +27,9 @@ Topic | Description
 :---|:---
 Get started  |  Learn about the minimum requirements, validate licensing and complete setup, know about preview features, understand data storage and privacy, and how to assign user access to the portal.
 [Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md) | Learn about onboarding client, server, and non-Windows machines. Learn how to run a detection test, configure proxy and Internet connectivity settings, and how to troubleshoot potential onboarding issues.
-[Understand the Windows Defender ATP portal](use-windows-defender-advanced-threat-protection.md) | Understand the Security operations, Secure Score, and Threat analytics dashboards as well as how to navigate the portal.
+[Understand the portal](use-windows-defender-advanced-threat-protection.md) | Understand the Security operations, Secure Score, and Threat analytics dashboards as well as how to navigate the portal.
 Investigate and remediate threats | Investigate alerts, machines, and take response actions to remediate threats.
-API and SIEM support | Use the supported APIs to pull and create custom alerts, or automate workflows. Use the supported SIEM tools to pull alerts from the Windows Defender ATP portal.
+API and SIEM support | Use the supported APIs to pull and create custom alerts, or automate workflows. Use the supported SIEM tools to pull alerts from Windows Defender Security Center.
 Reporting | Create and build Power BI reports using Windows Defender ATP data.
 Check service health and sensor state | Verify that the service is running and check the sensor state on machines.
 [Configure Windows Defender settings](preferences-setup-windows-defender-advanced-threat-protection.md) | Configure general settings, turn on the preview experience, notifications, and enable other features.
