@@ -28,7 +28,7 @@
 ##### [Run simulated attacks on machines](windows-defender-atp\attack-simulations-windows-defender-advanced-threat-protection.md)
 ##### [Configure proxy and Internet connectivity settings](windows-defender-atp\configure-proxy-internet-windows-defender-advanced-threat-protection.md)
 ##### [Troubleshoot onboarding issues](windows-defender-atp\troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
-#### [Understand the Windows Defender ATP portal](windows-defender-atp\use-windows-defender-advanced-threat-protection.md)
+#### [Understand the portal ](windows-defender-atp\use-windows-defender-advanced-threat-protection.md)
 ##### [Portal overview](windows-defender-atp\portal-overview-windows-defender-advanced-threat-protection.md)
 ##### [View the Security operations dashboard](windows-defender-atp\security-operations-dashboard-windows-defender-advanced-threat-protection.md)
 ##### [View the Secure Score dashboard and improve your secure score](windows-defender-atp\secure-score-dashboard-windows-defender-advanced-threat-protection.md)
@@ -178,11 +178,11 @@
 ##### [Check service health](windows-defender-atp\service-status-windows-defender-advanced-threat-protection.md)
 
 
-####[Configure Windows Defender ATP Settings](windows-defender-atp\preferences-setup-windows-defender-advanced-threat-protection.md)
+####[Configure Windows Defender Security Center settings](windows-defender-atp\preferences-setup-windows-defender-advanced-threat-protection.md)
 #####General
 ###### [Update data retention settings](windows-defender-atp\data-retention-settings-windows-defender-advanced-threat-protection.md)
 ###### [Configure alert notifications](windows-defender-atp\configure-email-notifications-windows-defender-advanced-threat-protection.md)
-###### [Enable and create Power BI reports using Windows Defender ATP data](windows-defender-atp\powerbi-reports-windows-defender-advanced-threat-protection.md)
+###### [Enable and create Power BI reports using Windows Defender Security center data](windows-defender-atp\powerbi-reports-windows-defender-advanced-threat-protection.md)
 ###### [Enable Secure score security controls](windows-defender-atp\enable-secure-score-windows-defender-advanced-threat-protection.md)
 ###### [Configure advanced features](windows-defender-atp\advanced-features-windows-defender-advanced-threat-protection.md)
 
@@ -205,9 +205,9 @@
 ###### [Onboarding machines](windows-defender-atp\onboard-configure-windows-defender-advanced-threat-protection.md)
 ###### [Offboarding machines](windows-defender-atp\offboard-machines-windows-defender-advanced-threat-protection.md)
 
-#### [Configure Windows Defender ATP time zone settings](windows-defender-atp\time-settings-windows-defender-advanced-threat-protection.md)
+#### [Configure Windows Defender Security Center time zone settings](windows-defender-atp\time-settings-windows-defender-advanced-threat-protection.md)
 
-#### [Access the Windows Defender ATP Community Center](windows-defender-atp\community-windows-defender-advanced-threat-protection.md)
+#### [Access the Windows Defender Security Center Community Center](windows-defender-atp\community-windows-defender-advanced-threat-protection.md)
 #### [Troubleshoot Windows Defender ATP](windows-defender-atp\troubleshoot-windows-defender-advanced-threat-protection.md)
 ##### [Review events and errors on machines with Event Viewer](windows-defender-atp\event-error-codes-windows-defender-advanced-threat-protection.md)
 #### [Windows Defender Antivirus compatibility with Windows Defender ATP](windows-defender-atp\defender-compatibility-windows-defender-advanced-threat-protection.md)
