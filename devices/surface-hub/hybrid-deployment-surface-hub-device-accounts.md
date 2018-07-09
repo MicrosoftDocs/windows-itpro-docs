@@ -141,7 +141,7 @@ Next, you enable the device account with [Skype for Business Online](#skype-for-
 
 To enable Skype for Business online, your tenant users must have Exchange mailboxes (at least one Exchange mailbox in the tenant is required). The following table explains which plans or additional services you need.
 
-| Skype room system scenario | If you have Office 365 Premium, Office 365 ProPlus, or Skype for Business Standalone Plan 2, you need: | If you have an Enterprise-based plan, you need: | If you have have Skype for Business Server 2015 (on-premises or hybrid), you need: |
+| Skype room system scenario | If you have Office 365 Premium, Office 365 ProPlus, or Skype for Business Standalone Plan 2, you need: | If you have an Enterprise-based plan, you need: | If you have Skype for Business Server 2015 (on-premises or hybrid), you need: |
 | --- | --- | --- | --- |
 | Join a scheduled meeting | Skype for Business Standalone Plan 1 | E1, 3, 4, or 5 | Skype for Business Server Standard CAL |
 | Initiate an ad-hoc meeting | Skype for Business Standalone Plan 2 | E 1, 3, 4, or 5 | Skype for Business Server Standard CAL or Enterprise CAL |
