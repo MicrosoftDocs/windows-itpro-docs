@@ -33,7 +33,7 @@ Use the following procedure to create a package accelerator.
 
 2. To start the App-V **Create Package Accelerator** wizard, in the App-V sequencer console, select **Tools** > **Create Accelerator**.
 
-3. On the **Select Package** page, select **Browse** tospecify an existing virtual application package to use to create the Package Accelerator, then locate the existing virtual application package (it will appear as an .appv file).
+3. On the **Select Package** page, select **Browse** to specify an existing virtual application package to use to create the Package Accelerator, then locate the existing virtual application package (it will appear as an .appv file).
 
     >[!TIP]
     >Copy the files associated with the virtual application package you plan to use locally to the computer running the Sequencer.
@@ -58,7 +58,7 @@ Use the following procedure to create a package accelerator.
 
     If you need to add additional Installer files, select **Add**. To remove unnecessary installation files, select the **Installer file**, then select **Delete**. To edit the properties associated with an installer, select **Edit**. The Package Accelerator requires the installation files specified in this step to create a new virtual application package. After you have confirmed the information displayed, select **Next**.
 
-9. On the **Select Guidance** page, select **Browse** to specify a file that contains information about how the Package Accelerator will be applied. For example, this file can contain information about how the computer running the Sequencer should be configured, application prerequisite information for target computers, and general notes. You should provide all information required for successful application of the Package Accelerator. The file you select must be in rich text (.rtf) or text file (.txt) format. After specifying the file, select **Next**.
+9. On the **Select Guidance** page, select **Browse** to specify the file that will provide the Package Accelerator with application instructions. For example, this file can contain information about how the computer running the Sequencer should be configured, application prerequisite information for target computers, and general notes. You should provide all required information for successful Package Accelerator application. The file you select must be in rich text (.rtf) or text file (.txt) format. After specifying the file, select **Next**.
 
 10. On the **Create Package Accelerator** page, select **Browse** and select the directory where you want to save the Package Accelerator.
 

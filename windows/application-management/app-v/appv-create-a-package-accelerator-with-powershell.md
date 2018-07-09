@@ -12,7 +12,7 @@ ms.date: 04/19/2017
 
 >Applies to: Windows 10, version 1607
 
-App-V package accelerators automatically sequence large, complex applications. Additionally, when you apply an App-V package accelerator, you are not always required to manually install an application to create the virtualized package.
+App-V package accelerators automatically sequence large, complex applications. Also, when you apply an App-V package accelerator, you don't have to manually install an application to create the virtualized package.
 
 ## Create a package accelerator
 
@@ -36,7 +36,7 @@ App-V package accelerators automatically sequence large, complex applications. A
 
     You can also use the following optional parameter with the **New-AppvPackageAccelerator** cmdlet:
 
-    - *AcceleratorDescriptionFile* specifies the path to user created package accelerator instructions. The package accelerator instructions are **.txt** or **.rtf** description files that will be included in the package created by the package accelerator.
+    - *AcceleratorDescriptionFile* specifies the path to user-created package accelerator instructions. The package accelerator instructions are **.txt** or **.rtf** description files that will be included in the package created by the package accelerator.
 
 ## Have a suggestion for App-V?
 
