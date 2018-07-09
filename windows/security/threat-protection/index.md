@@ -14,6 +14,8 @@ Windows Defender Advanced Threat Protection (Windows Defender ATP) is a unified 
 
 ![Windows Defender ATP components](images/wdatp-pillars2.png)
 
+The following capabilities are available across multiple products that make up the Windows Defender ATP platform. 
+
 **Attack surface reduction**<br>
 The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
 
