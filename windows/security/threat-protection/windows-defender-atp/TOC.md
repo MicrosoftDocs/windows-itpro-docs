@@ -165,7 +165,7 @@
 ### [Inactive machines](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#inactive-machines)
 ### [Misconfigured machines](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#misconfigured-machines)
 ### [Check service health](service-status-windows-defender-advanced-threat-protection.md)
-## [Configure Windows Defender ATP Settings](preferences-setup-windows-defender-advanced-threat-protection.md)
+## [Configure Windows Defender Security Center settings](preferences-setup-windows-defender-advanced-threat-protection.md)
 
 ###General
 #### [Update data retention settings](data-retention-settings-windows-defender-advanced-threat-protection.md)
@@ -193,9 +193,9 @@
 #### [Onboarding machines](onboard-configure-windows-defender-advanced-threat-protection.md)
 #### [Offboarding machines](offboard-machines-windows-defender-advanced-threat-protection.md)
 
-## [Configure Windows Defender ATP time zone settings](time-settings-windows-defender-advanced-threat-protection.md)
+## [Configure Windows Defender Security Center zone settings](time-settings-windows-defender-advanced-threat-protection.md)
 
 ## [Access the Windows Defender ATP Community Center](community-windows-defender-advanced-threat-protection.md)
 ## [Troubleshoot Windows Defender ATP](troubleshoot-windows-defender-advanced-threat-protection.md)
 ### [Review events and errors on machines with Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
-## [Windows Defender Antivirus compatibility with Windows Defender ATP](defender-compatibility-windows-defender-advanced-threat-protection.md)
+
