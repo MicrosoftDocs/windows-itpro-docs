@@ -82,7 +82,7 @@ The App-V package converter will save the App-V 4.6 installation root folder and
     dir C:\ContentStore | ConvertFrom-AppvLegacyAppvPackage -Target C:\ConvertedPackages
     ```
 
-- Other functionality—Windows PowerShell has other built-in functionality for features such as aliases, lazy-binding, .NET object, and many others. These features can help you create advanced scenarios for the Package Converter.
+- Other functionality—Windows PowerShell has other built-in functionality for features such as aliases, lazy-binding, .NET Object, and many others. These features can help you create advanced scenarios for the Package Converter.
 
 ## Have a suggestion for App-V?
 
