@@ -418,7 +418,7 @@ The following diagram shows the BitLocker configuration service provider in tree
         
 <p style="margin-left: 20px">If you set the value to "2" (Use custom recovery message), the message you set in the "RecoveryMessage_Input" data field will be displayed in the pre-boot key recovery screen. If a recovery URL is available, include it in the message.</p>
                         
-<p style="margin-left: 20px">If you set the the value to "3" (Use custom recovery URL), the URL you type in the "RecoveryUrl_Input" data field will replace the default URL in the default recovery message, which will be displayed in the pre-boot key recovery screen.</p>
+<p style="margin-left: 20px">If you set the value to "3" (Use custom recovery URL), the URL you type in the "RecoveryUrl_Input" data field will replace the default URL in the default recovery message, which will be displayed in the pre-boot key recovery screen.</p>
                          
 <p style="margin-left: 20px">Sample value for this node to enable this policy is:</p>
 

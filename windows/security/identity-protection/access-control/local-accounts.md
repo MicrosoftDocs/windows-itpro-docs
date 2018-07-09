@@ -92,7 +92,7 @@ The Administrator account cannot be deleted or removed from the Administrators g
 
 **Security considerations**
 
-Because the Administrator account is known to exist on many versions of the Windows operating system, it is a best practice to disable the Administrator account when possible to make it more difficult for malicious users to gain access to to the server or client computer.
+Because the Administrator account is known to exist on many versions of the Windows operating system, it is a best practice to disable the Administrator account when possible to make it more difficult for malicious users to gain access to the server or client computer.
 
 You can rename the Administrator account. However, a renamed Administrator account continues to use the same automatically assigned security identifier (SID), which can be discovered by malicious users. For more information about how to rename or disable a user account, see [Disable or activate a local user account](http://technet.microsoft.com/library/cc732112.aspx) and [Rename a local user account](http://technet.microsoft.com/library/cc725595.aspx).
 
