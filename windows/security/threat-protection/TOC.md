@@ -208,7 +208,7 @@
 #### [Configure Windows Defender Security Center time zone settings](windows-defender-atp\time-settings-windows-defender-advanced-threat-protection.md)
 
 #### [Access the Windows Defender Security Center Community Center](windows-defender-atp\community-windows-defender-advanced-threat-protection.md)
-#### [Troubleshoot Windows Defender ATP](windows-defender-atp\troubleshoot-windows-defender-advanced-threat-protection.md)
+#### [Troubleshoot Windows Defender ATP service issues](windows-defender-atp\troubleshoot-windows-defender-advanced-threat-protection.md)
 ##### [Review events and errors on machines with Event Viewer](windows-defender-atp\event-error-codes-windows-defender-advanced-threat-protection.md)
 #### [Windows Defender Antivirus compatibility with Windows Defender ATP](windows-defender-atp\defender-compatibility-windows-defender-advanced-threat-protection.md)
 

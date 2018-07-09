@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot Windows Defender Advanced Threat Protection
+title: Troubleshoot Windows Defender Advanced Threat Protection service issues
 description: Find solutions and work arounds to known issues such as server errors when trying to access the service.
 keywords: troubleshoot Windows Defender Advanced Threat Protection, troubleshoot Windows ATP, server error, access denied, invalid credentials, no data, dashboard portal, whitelist, event viewer
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 10/23/2017
 ---
 
-# Troubleshoot Windows Defender Advanced Threat Protection
+# Troubleshoot Windows Defender Advanced Threat Protection service issues
 
 **Applies to:**
 
