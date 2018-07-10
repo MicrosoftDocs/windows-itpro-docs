@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: brianlic-msft
-ms.date: 05/03/2018
+ms.date: 07/10/2018
 ---
 
 # Using BitLocker with other programs FAQ

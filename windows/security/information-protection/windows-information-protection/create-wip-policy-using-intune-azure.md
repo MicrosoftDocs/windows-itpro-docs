@@ -8,7 +8,7 @@ ms.pagetype: security
 author: justinha
 ms.author: justinha
 ms.localizationpriority: medium
-ms.date: 05/30/2018
+ms.date: 07/10/2018
 ---
 
 # Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune
