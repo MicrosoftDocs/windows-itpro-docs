@@ -6,7 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 04/19/2017
+ms.date: 07/10/2018
 ---
 # How to create a connection croup with user-published and globally published packages
 
@@ -24,31 +24,7 @@ Here are some important things to know before you get started:
 - If you add user-published packages in globally entitled connection groups, the connection group will fail.
 - Track the connection groups where you've used a non-optional package before removing it with the **Unpublish-AppvClientPackage <</span>package> -global** cmdlet.
       
-    In situations where you have a gobally published package that's listed as non-optional in a user-published connection group that also appears in other packages, running that cmdlet can unpublish the package from every connection group containing that package.
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Unsupported scenarios and potential issues</th>
-<th align="left">Result</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>You cannot include user-published packages in globally entitled connection groups.</p></td>
-<td align="left"><p>The connection group will fail.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>If you publish a package globally and then create a user-published connection group in which you’ve made that package non-optional, you can still run <strong>Unpublish-AppvClientPackage &lt;package&gt; -global</strong> to unpublish the package, even when that package is being used in another connection group.</p></td>
-<td align="left"><p>If any other connection groups are using that package, the package will fail in those connection groups.</p>
-<p>To avoid inadvertently unpublishing a non-optional package that is being used in another connection group, we recommend that you track the connection groups in which you’ve used a non-optional package.</p></td>
-</tr>
-</tbody>
-</table>
+    In situations where you have a gobally published package that's listed as non-optional in a user-published connection group that also appears in other packages, running **Unpublish-AppvClientPackage <</span>package> -global** cmdlet can unpublish the package from every connection group containing that package. Tracking connection groups can help you avoid unintentionally unpublishing non-optional packages.
 
 ## How to use Windows PowerShell cmdlets to create user-entitled connection groups
 
