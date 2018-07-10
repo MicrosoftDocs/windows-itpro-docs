@@ -15,11 +15,11 @@ ms.date: 07/10/2018
 Use the following procedure to create a virtual application package with the App-V Package Accelerator.
 
 >[!IMPORTANT]
->The App-V Sequencer does not grant any license rights to the software application that you use to create the Package Accelerator. You must abide by all end user license terms for the application that you use. It is your responsibility to make sure that the software application’s license terms allow you to create a Package Accelerator with the App-V Sequencer.
+>The App-V Sequencer does not grant any license rights to the software application that you use to create the package accelerator. You must abide by all end user license terms for the application that you use. It is your responsibility to make sure that the software application’s license terms allow you to create a package accelerator with the App-V Sequencer.
 
 ## Create a virtual application package with an App-V Package Accelerator
 
-1. Make sure you've copied the required Package Accelerator locally to the computer running the App-V Sequencer. Also make sure to copy all required installation files for the package to a local folder on the computer running the Sequencer. This is the folder that you have to specify in step 6 of this procedure.
+1. Make sure you've copied the required package accelerator locally to the computer running the App-V Sequencer. Also make sure to copy all required installation files for the package to a local folder on the computer running the Sequencer. This is the folder that you have to specify in step 6 of this procedure.
 
 2. To start the App-V Sequencer on the computer that runs the Sequencer, go to **Start** > **All Programs** > **Microsoft Application Virtualization** > **Microsoft Application Virtualization Sequencer**.
 
@@ -30,7 +30,7 @@ Use the following procedure to create a virtual application package with the App
     >[!IMPORTANT]
     >If the publisher of the package accelerator cannot be verified and does not contain a valid digital signature, then before you select **Run**, you must confirm that you trust the source of the package accelerator. Confirm your choice in the **Security Warning** dialog box.
 
-5. On the **Guidance** page, review the publishing guidance information that is displayed in the information pane. This information was added when the Package Accelerator was created and it contains guidance about how to create and publish the package. To export the guidance information to a text (.txt) file, select **Export** and specify the location where the file should be saved, and then select **Next**.
+5. On the **Guidance** page, review the publishing guidance information that is displayed in the information pane. This information was added when the package accelerator was created and it contains guidance about how to create and publish the package. To export the guidance information to a text (.txt) file, select **Export** and specify the location where the file should be saved, and then select **Next**.
 
 6. On the **Select Installation Files** page, select **Make New Folder** to create a local folder that contains all required installation files for the package, and specify where the folder should be saved. You must also specify a name to be assigned to the folder. You must then copy all required installation files to the location that you specified. If the folder that contains the installation files already exists on the computer that runs the Sequencer, select **Browse** to select the folder.
 
@@ -44,7 +44,7 @@ Use the following procedure to create a virtual application package with the App
     > - The actual application files
     > The following file types are not supported: **.msp** and **.exe** files. If you specify an **.exe** file, you must extract the installation files manually.
 
-7. If the package accelerator requires you to install an application before you apply the Package Accelerator and you have already installed the required application, select **I have installed all applications**, then select **Next** on the **Local Installation** page.
+7. If the package accelerator requires you to install an application before you apply the package accelerator and you have already installed the required application, select **I have installed all applications**, then select **Next** on the **Local Installation** page.
 
 8. On the **Package Name** page, specify a name that will be associated with the package. The name you choose will identify the package in the App-V Management Console. Select **Next**.
 

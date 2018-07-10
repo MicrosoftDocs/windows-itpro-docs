@@ -12,7 +12,7 @@ ms.date: 07/10/2018
 
 >Applies to: Windows 10, version 1607
 
-You can use an App-V project template (.appvt) file to save commonly applied settings associated with an existing virtual application package. You can then apply these settings whenever you create new virtual application packages in your environment, streamlining the package creation process. App-V project templates differ from App-V Package Accelerators because App-V Package Accelerators are application-specific, while App-V project templates can be applied to multiple applications. To learn more about Package Accelerators, see [How to create a Package Accelerator](appv-create-a-package-accelerator.md).
+You can use an App-V project template (.appvt) file to save commonly applied settings associated with an existing virtual application package. You can then apply these settings whenever you create new virtual application packages in your environment, streamlining the package creation process. App-V project templates differ from App-V Package Accelerators because App-V Package Accelerators are application-specific, while App-V project templates can be applied to multiple applications. To learn more about package accelerators, see [How to create a package accelerator](appv-create-a-package-accelerator.md).
 
 >[!IMPORTANT]
 >In Windows 10, version 1703, running the **New-AppvSequencerPackage** or the **Update-AppvSequencerPackage** cmdlets will automatically capture and store your customizations as an App-V project template. If you want to make changes to this package later, you can automatically load your customizations from this template file. If you have an auto-saved template and you attempt to load another template through the *TemplateFilePath* parameter, the customization value from the parameter will override the auto-saved template.
@@ -37,7 +37,7 @@ You must first create and save a project template, including a virtual app packa
 After creating the template, you can apply it to all of your new virtual app packages, automatically including all of the settings.
 
 >[!IMPORTANT]
->Virtual app packages don't support using both a project template and a Package Accelerator at the same time.
+>Virtual app packages don't support using both a project template and a package accelerator at the same time.
 
 1. On the device running the App-V Sequencer, select **Start** > **All Programs** > **Microsoft Application Virtualization** > **Microsoft Application Virtualization Sequencer**.
 
