@@ -98,8 +98,9 @@ See the following for more information and allowed parameters:
 
 **Use Microsoft Intune to run a scan:**
 
+1. In Intune, go to **Devices > All Devices** and select the device you want to scan.
 
-See [Help secure Windows PCs with Endpoint Protection for Microsoft Intune: Run a malware scan](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune#run-a-malware-scan-or-update-malware-definitions-on-a-computer) and [Windows Defender policy settings in Windows 10](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune#windows-defender-1) for more details.
+2. Select **...More** and then select **Quick Scan** or **Full Scan**.
 
 
 ## Related topics
