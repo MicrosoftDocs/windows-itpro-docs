@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: eross-msft
+author: justinha
 ms.localizationpriority: medium
 ms.date: 05/30/2018
 ---
