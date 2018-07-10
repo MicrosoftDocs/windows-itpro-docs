@@ -7,8 +7,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: security
 ms.sitesec: library
-author: eross-msft
-ms.author: lizross
+author: justinha
+ms.author: justinha
 ms.date: 08/14/2017
 ms.localizationpriority: medium
 ---
