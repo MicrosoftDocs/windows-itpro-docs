@@ -3044,6 +3044,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### TaskManager policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-taskmanager.md#taskmanager-allowendtask" id="taskmanager-allowendtask">TaskManager/AllowEndTask</a>
+  </dd>
+</dl>
+
 ### TaskScheduler policies
 
 <dl>
