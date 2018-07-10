@@ -15,13 +15,13 @@ ms.date: 06/01/2018
 
 # Windows Autopilot Self-Deploying mode (Preview)
 
-**Applies to: Windows 10 build 17672 or later**
+**Applies to: Windows 10, build 17672 or later**
 
 Windows Autopilot self-deploying mode offers truly zero touch provisioning. With this mode, all you need to do is power on a device, plug it into Ethernet, and watch Windows Autopilot fully configure the device. No additional user interaction is required.
 
 ![The user experience with Windows Autopilot self-deploying mode](images/self-deploy-welcome.png)
 
- >[!NOTE]
+>[!NOTE]
 >While today there is a “Next” button that must be clicked to continue the deployment process, and an Activities opt-in page in OOBE, both of these will be removed in future Insider Preview builds to enable a completely automated deployment process – no user authentication or user interaction will be required. 
  
 Self-deploying mode can register the device into an organization’s Azure Active Directory tenant, enroll the device in the organization’s mobile device management (MDM) provider (leveraging Azure AD for automatic MDM enrollment), and ensure that all policies, applications, certificates, and networking profiles are provisioned on the device before the user ever logs on (levering the enrollment status page to prevent access to the desktop until the device is fully provisioned). 
