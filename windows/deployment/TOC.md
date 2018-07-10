@@ -23,7 +23,6 @@
 ### [Windows 10 in S mode](windows-10-pro-in-s-mode.md)
 ### [Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)
 ### [Windows 10 edition upgrade](upgrade/windows-10-edition-upgrades.md)
-### [Windows 10 edition downgrade](upgrade/windows-10-edition-downgrades.md)
 ### [Windows 10 volume license media](windows-10-media.md)
 
 ### [Windows 10 deployment test lab](windows-10-poc.md)
@@ -221,6 +220,10 @@
 ### [Optimize Windows 10 update delivery](update/waas-optimize-windows-10-updates.md)
 #### [Configure Delivery Optimization for Windows 10 updates](update/waas-delivery-optimization.md)
 #### [Configure BranchCache for Windows 10 updates](update/waas-branchcache.md)
+### [Best practices for feature updates on mission-critical devices](update/feature-update-mission-critical.md)
+#### [Deploy feature updates during maintenance windows](update/feature-update-maintenance-window.md)
+#### [Deploy feature updates for user-initiated installations](update/feature-update-user-install.md)
+#### [Conclusion](update/feature-update-conclusion.md)
 ### [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](update/waas-mobile-updates.md)
 ### [Deploy updates using Windows Update for Business](update/waas-manage-updates-wufb.md)
 #### [Configure Windows Update for Business](update/waas-configure-wufb.md)

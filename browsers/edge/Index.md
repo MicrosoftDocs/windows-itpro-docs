@@ -1,7 +1,7 @@
 ---
 description: Overview information about Microsoft Edge, the default browser for Windows 10. This topic includes links to other Microsoft Edge topics.
 ms.assetid: 70377735-b2f9-4b0b-9658-4cf7c1d745bb
-author: eross-msft
+author: shortpatti
 ms.prod: edge
 ms.mktglfcycl: general
 ms.sitesec: library

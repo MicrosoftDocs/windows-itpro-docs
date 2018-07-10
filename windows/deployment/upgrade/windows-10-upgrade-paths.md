@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.pagetype: mobile
 author: greg-lindsay
-ms.date: 05/29/2018
+ms.date: 07/06/2018
 ---
 
 # Windows 10 upgrade paths
@@ -305,8 +305,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
 
 [Windows 10 deployment scenarios](../windows-10-deployment-scenarios.md)<br>
 [Windows upgrade and migration considerations](windows-upgrade-and-migration-considerations.md)<br>
-[Windows 10 edition upgrade](windows-10-edition-upgrades.md)<br>
-[Windows 10 downgrade paths](windows-10-downgrade-paths.md)
+[Windows 10 edition upgrade](windows-10-edition-upgrades.md)
 
 
 
