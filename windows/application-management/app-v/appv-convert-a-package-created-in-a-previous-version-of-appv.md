@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.prod: w10
 ms.date: 07/10/2018
 ---
-# How to Convert a Package Created in a Previous Version of App-V
+# How to convert a package created in a previous version of App-V
 
 >Applies to: Windows 10, version 1607
 
