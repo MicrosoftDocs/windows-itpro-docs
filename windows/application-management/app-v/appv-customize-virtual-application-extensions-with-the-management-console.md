@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.prod: w10
 ms.date: 07/10/2018
 ---
-# How to Customize Virtual Applications Extensions for a Specific AD Group by Using the Management Console
+# How to customize virtual applications extensions for a specific AD group by using the Management Console
 
 >Applies to: Windows 10, version 1607
 

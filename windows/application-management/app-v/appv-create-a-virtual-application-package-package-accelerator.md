@@ -57,11 +57,8 @@ Use the following procedure to create a virtual application package with the App
     The following items can be configured using the Sequencer as part of this step:
 
     - **Load Package** loads files associated with the package. It can take several seconds to an hour to decode the package.
-
     - **Run Each Program** optionally runs programs contained within the package. This step can help you complete associated license or configuration tasks that must be completed before deploying and running the package on target computers. To run all the programs at once, select at least one program, and then select **Run All**. To run specific programs, select the program or programs that you want to run, and then select **Run Selected**. Complete the required configuration tasks, then close the applications. It can take several minutes for all programs to run. Select **Next**.
-
     - **Save Package** saves the package.
-
     - **Primary Feature Block** optimizes the package for streaming by rebuilding the primary feature block.
 
     If you don't want to configure the applications, select **Skip this step**, then select **Next**.

@@ -12,7 +12,7 @@ ms.date: 07/10/2018
 
 >Applies to: Windows 10, version 1607
 
-App-V package accelerators automatically generate new virtual application packages.
+App-V Package Accelerators automatically generate new virtual application packages.
 
 >[!NOTE]
 >You can use Windows PowerShell to create a package accelerator. For more information, see [How to create a package accelerator by using Windows PowerShell](appv-create-a-package-accelerator-with-powershell.md).
