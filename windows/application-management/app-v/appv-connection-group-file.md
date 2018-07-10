@@ -44,7 +44,7 @@ The following table describes the parameters in the XML file that define the con
 
 ### Parameters that define the packages in the connection group
 
-In the &lt;Packages&gt; section of the connection group XML file, you list the member packages in the connection group by specifying each package’s unique package identifier and version identifier, as described in the following table. The first package in the list has the highest precedence.
+In the **&lt;Packages&gt;** section of the connection group XML file, you list the member packages in the connection group by specifying each package’s unique package identifier and version identifier, as described in the following table. The first package in the list has the highest precedence.
 
 |Field|Description|
 |---|---|
