@@ -131,7 +131,7 @@ VideoCallingDescription | Enter text to describe the video calling feature.
 VideoCallingLabel | Enter text to describe the video calling toggle.
 VideoCapabilityDescription | Enter text to describe the video capability feature.
 VideoCapabilityLabel | Enter text to describe the video capability toggle.
-VideoTransitionTimeout | Enter the the time in milliseconds to check how long the video transition state will remain until the remote party responds. The minimum value is 10000 and the maximum value is 30000. 
+VideoTransitionTimeout | Enter the time in milliseconds to check how long the video transition state will remain until the remote party responds. The minimum value is 10000 and the maximum value is 30000. 
 VoLTEAudioQualityString | Partners can add a string to the call progress screen to indicate if the active call is a high quality voice over LTE (VoLTE). Set the value of VoLTEAudioQualityString to the string that you want to display in the call progress screen to indicate that the call is a VoLTE call. This string is combined with the PLMN so if the string is "VoLTE", the resulting string is "PLMN_String VoLTE". For example, the string displayed in the call progress screen can be "Litware VoLTE" if the PLMN_String is "Litware". The value you specify for VoLTEAudioQualityString must exceed 10 characters.
 
 
