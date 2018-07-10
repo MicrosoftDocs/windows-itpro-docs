@@ -36,9 +36,9 @@ The App-V package converter will save the App-V 4.6 installation root folder and
 
     - **Test-AppvLegacyPackage**—This cmdlet checks packages. It will return information about any failures with the package such as missing **.sft** files, an invalid source, **.osd** file errors, or invalid package version. This cmdlet will not parse the **.sft** file or do any in-depth validation. For information about options and basic functionality for this cmdlet, using Windows PowerShell, enter the following cmdlet:
 
-          ```PowerShell
-          Test-AppvLegacyPackage -?
-          ```
+         ```PowerShell
+         Test-AppvLegacyPackage -?
+         ```
 
     - **ConvertFrom-AppvLegacyPackage**—This cmdlet converts packages from legacy versions to updated versions. To convert an existing package, enter the following cmdlet:
 
