@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 04/24/2018
 ---
 
@@ -19,7 +19,7 @@ ms.date: 04/24/2018
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 The Windows Defender ATP Community Center is a place where community members can learn, collaborate, and share experiences about the product. 
 
@@ -30,7 +30,7 @@ There are several spaces you can explore to learn about specific information:
 
 
 There are several ways you can access the Community Center:
-- In the Windows Defender ATP portal navigation pane, select **Community center**.  A new browser tab opens and takes you to the Windows Defender ATP Tech Community page. 
+- In the Windows Defender Security Center navigation pane, select **Community center**.  A new browser tab opens and takes you to the Windows Defender ATP Tech Community page. 
 - Access the community through the [Windows Defender Advanced Threat Protection Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced) page
 
 

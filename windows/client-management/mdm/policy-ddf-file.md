@@ -7,12 +7,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 04/26/2018
+ms.date: 07/03/2018
 ---
 
 # Policy DDF file
 
-
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic shows the OMA DM device description framework (DDF) for the **Policy** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
@@ -25,7 +26,7 @@ You can download the DDF files from the links below:
 - [Download the Policy DDF file for Windows 10, version 1607 release 8C](http://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607_8C.xml)
 - [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)
 
-The XML below is the DDF for Windows 10, version 1803.
+The XML below is the DDF for Windows 10, next major version.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
@@ -51,7 +52,7 @@ The XML below is the DDF for Windows 10, version 1803.
         <Permanent />
       </Scope>
       <DFType>
-        <MIME>com.microsoft/7.0/MDM/Policy</MIME>
+        <MIME>com.microsoft/8.0/MDM/Policy</MIME>
       </DFType>
     </DFProperties>
     <Node>
@@ -641,6 +642,34 @@ The XML below is the DDF for Windows 10, version 1803.
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AllowFullScreenMode</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>With this policy, you can specify whether to allow full-screen mode, which shows only the web content and hides the Microsoft Edge UI.
+
+If enabled or not configured, full-screen mode is available for use in Microsoft Edge. Your users and extensions must have the proper permissions.
+
+If disabled, full-screen mode is unavailable for use in Microsoft Edge.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AllowInPrivate</NodeName>
           <DFProperties>
             <AccessType>
@@ -673,7 +702,7 @@ The XML below is the DDF for Windows 10, version 1803.
               <Get />
               <Replace />
             </AccessType>
-            <Description>This policy setting lets you decide whether the Microsoft Compatibility List is enabled or disabled in Microsoft Edge. This feature uses a Microsoft-provided list to ensure that any sites with known compatibility issues are displayed correctly when a user navigates to them. By default, the Microsoft Compatibility List is enabled and can be viewed by navigating to about:compat.
+            <Description>This policy setting lets you decide whether the Microsoft Compatibility List is enabled or disabled in Microsoft Edge. This feature uses a Microsoft-provided list to ensure that any sites with known compatibility issues are displayed correctly when a user navigates to them. By default, the Microsoft Compatibility List is enabled and can be viewed by navigating to about&#58;compat.
 
 If you enable or don’t configure this setting, Microsoft Edge will periodically download the latest version of the list from Microsoft and will apply the configurations specified there during browser navigation. If a user visits a site on the Microsoft Compatibility List, he or she will be prompted to open the site in Internet Explorer 11. Once in Internet Explorer, the site will automatically be rendered as if the user is viewing it in the previous version of Internet Explorer it requires to display correctly.
 
@@ -726,6 +755,86 @@ If you disable this setting, the Microsoft Compatibility List will not be used d
               <Replace />
             </AccessType>
             <Description>This setting lets you decide whether to turn on Pop-up Blocker and whether to allow pop-ups to appear in secondary windows.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowPrelaunch</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowPrinting</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>With this policy, you can restrict whether printing web content in Microsoft Edge is allowed.
+
+If enabled, printing is allowed.
+
+If disabled, printing is not allowed.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowSavingHistory</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Microsoft Edge saves your user&apos;s browsing history, which is made up of info about the websites they visit, on their devices.
+
+If enabled or not configured, the browsing history is saved and visible in the History pane.
+
+If disabled, the browsing history stops saving and is not visible in the History pane. If browsing history exists before this policy was disabled, the previous browsing history remains visible in the History pane. This policy, when disabled, does not stop roaming of existing history or history coming from other roamed devices.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -794,6 +903,30 @@ This policy will only apply on domain joined machines or when the device is MDM 
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AllowSideloadingOfExtensions</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This setting lets you decide whether employees can sideload extensions in Microsoft Edge.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AllowSmartScreen</NodeName>
           <DFProperties>
             <AccessType>
@@ -803,6 +936,60 @@ This policy will only apply on domain joined machines or when the device is MDM 
               <Replace />
             </AccessType>
             <Description>This setting lets you decide whether to turn on Windows Defender SmartScreen.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowTabPreloading</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Prevent Microsoft Edge from starting and loading the Start and New Tab page at Windows startup and each time Microsoft Edge is closed.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowWebContentOnNewTabPage</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting lets you configure what appears when Microsoft Edge opens a new tab. By default, Microsoft Edge opens the New Tab page.
+
+If you enable this setting, Microsoft Edge opens a new tab with the New Tab page.
+
+If you disable this setting, Microsoft Edge opens a new tab with a blank page. If you use this setting, employees can&apos;t change it.
+
+If you don&apos;t configure this setting, employees can choose how new tabs appears.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -878,11 +1065,208 @@ This policy will only apply on domain joined machines or when the device is MDM 
 
 If this setting is turned on, you can add up to 5 additional search engines for your employee. For each additional search engine you wish to add, you must specify a link to the OpenSearch XML file that contains, at minimum, the short name and the URL to the search engine. This policy does not affect the default search engine. Employees will not be able to remove these search engines, but they can set any one of these as the default.
 
-If this setting is not configured, the search engines are the ones specified in the App settings. If this setting is disabled, the search engines you had added will be deleted from your employee's machine.
+If this setting is not configured, the search engines are the ones specified in the App settings. If this setting is disabled, the search engines you had added will be deleted from your employee&apos;s machine.
 
 Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.</Description>
             <DFFormat>
               <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureFavoritesBar</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>The favorites bar shows your user&apos;s links to sites they have added to it. With this policy, you can specify whether to set the favorites bar to always be visible or hidden on any page.
+
+If enabled, favorites bar is always visible on any page, and the favorites bar toggle in Settings sets to On, but disabled preventing your users from making changes. An error message also shows at the top of the Settings pane indicating that your organization manages some settings. The show bar/hide bar option is hidden from the context menu.
+
+If disabled, the favorites bar is hidden, and the favorites bar toggle resets to Off, but disabled preventing your users from making changes. An error message also shows at the top of the Settings pane indicating that your organization manages some settings.
+
+If not configured, the favorites bar is hidden but is visible on the Start and New Tab pages, and the favorites bar toggle in Settings sets to Off but is enabled allowing the user to make changes.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureHomeButton</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>The Home button loads either the default Start page, the New tab page, or a URL defined in the Set Home Button URL policy.
+
+By default, this policy is disabled or not configured and clicking the home button loads the default Start page.
+
+When enabled, the home button is locked down preventing your users from making changes in Microsoft Edge&apos;s UI settings. To let your users change the Microsoft Edge UI settings, enable the Unlock Home Button policy.
+
+If Enabled AND:
+- Show home button &amp; set to Start page is selected, clicking the home button loads the Start page.
+- Show home button &amp; set to New tab page is selected, clicking the home button loads a New tab page.
+- Show home button &amp; set a specific page is selected, clicking the home button loads the URL specified in the Set Home Button URL policy.
+- Hide home button is selected, the home button is hidden in Microsoft Edge.
+
+Default setting: Disabled or not configured
+Related policies:
+- Set Home Button URL
+- Unlock Home Button</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureKioskMode</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Configure how Microsoft Edge behaves when it’s running in kiosk mode with assigned access, either as a single app or as one of multiple apps running on the kiosk device. You can control whether Microsoft Edge runs InPrivate full screen, InPrivate multi-tab with limited functionality, or normal Microsoft Edge.
+
+You need to configure Microsoft Edge in assigned access for this policy to take effect; otherwise, these settings are ignored. To learn more about assigned access and kiosk configuration, see “Configure kiosk and shared devices running Windows desktop editions” (https://aka.ms/E489vw).
+
+If enabled and set to 0 (Default or not configured):
+- If it’s a single app, it runs InPrivate full screen for digital signage or interactive displays.
+- If it’s one of many apps, Microsoft Edge runs as normal.
+If enabled and set to 1:
+- If it’s a single app, it runs a limited multi-tab version of InPrivate and is the only app available for public browsing. Users can’t minimize, close, or open windows or customize Microsoft Edge, but can clear browsing data and downloads and restart by clicking “End session.” You can configure Microsoft Edge to restart after a period of inactivity by using the “Configure kiosk reset after idle timeout” policy.
+- If it’s one of many apps, it runs in a limited multi-tab version of InPrivate for public browsing with other apps. Users can minimize, close, and open multiple InPrivate windows, but they can’t customize Microsoft Edge.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureKioskResetAfterIdleTimeout</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>You can configure Microsoft Edge to reset to the configured start experience after a specified amount of idle time. The reset timer begins after the last user interaction. Resetting to the configured start experience deletes the current user’s browsing data.
+
+If enabled, you can set the idle time in minutes (0-1440). You must set the Configure kiosk mode policy to 1 and configure Microsoft Edge in assigned access as a single app for this policy to work. Once the idle time meets the time specified, a confirmation message prompts the user to continue, and if no user action, Microsoft Edge resets after 30 seconds.
+
+If you set this policy to 0, Microsoft Edge does not use an idle timer.
+
+If disabled or not configured, the default value is 5 minutes.
+
+If you do not configure Microsoft Edge in assigned access, then this policy does not take effect.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureOpenMicrosoftEdgeWith</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>You can configure Microsoft Edge to lock down the Start page, preventing users from changing or customizing it.
+
+If enabled, you can choose one of the following options:
+- Start page: the Start page loads ignoring the Configure Start Pages policy.
+- New tab page: the New tab page loads ignoring the Configure Start Pages policy.
+- Previous pages: all tabs the user had open when Microsoft Edge last closed loads ignoring the Configure Start Pages policy.
+- A specific page or pages: the URL(s) specified with Configure Start Pages policy load(s). If selected, you must specify at least one URL in Configure Start Pages; otherwise, this policy is ignored.
+
+When enabled, and you want to make changes, you must first set the Disable Lockdown of Start Pages to not configured, make the changes to the Configure Open Edge With policy, and then enable the Disable Lockdown of Start Pages policy.
+
+If disabled or not configured, and you enable the Disable Lockdown of Start Pages policy, your users can change or customize the Start page.
+
+Default setting: A specific page or pages (default)
+Related policies:
+-Disable Lockdown of Start Pages
+-Configure Start Pages</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureTelemetryForMicrosoft365Analytics</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Configures what browsing data will be sent to Microsoft 365 Analytics for devices belonging to an organization.</Description>
+            <DFFormat>
+              <int/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -904,12 +1288,14 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
               <Replace />
             </AccessType>
-            <Description>Boolean policy that specifies whether the lockdown on the Start pages is disabled. This policy works with the Browser/HomePages policy, which locks down the Start pages that the users cannot modify. You can use the DisableLockdownOfStartPages policy to allow users to modify the Start pages when Browser/HomePages policy is in effect.
+            <Description>You can configure Microsoft Edge to disable the lockdown of Start pages allowing users to change or customize their start pages.  To do this, you must also enable the Configure Start Pages or Configure Open Microsoft With policy. When enabled, all configured start pages are editable. Any Start page configured using the Configure Start pages policy is not locked down allowing users to edit their Start pages.
 
-Note: This policy has no effect when Browser/HomePages is not configured.
+If disabled or not configured, the Start pages configured in the Configure Start Pages policy cannot be changed and remain locked down.
 
-Important
-This setting can only be used with domain-joined or MDM-enrolled devices. For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).</Description>
+Supported devices: Domain-joined or MDM-enrolled
+Related policy:
+- Configure Start Pages
+- Configure Open Microsoft Edge With</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -1021,6 +1407,30 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>ForceEnabledExtensions</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This setting lets you decide which extensions should be always enabled.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>HomePages</NodeName>
           <DFProperties>
             <AccessType>
@@ -1029,12 +1439,24 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
               <Get />
               <Replace />
             </AccessType>
-            <Description>Configure the Start page URLs for your employees.
-Example:
-If you wanted to allow contoso.com and fabrikam.com then you would append /support to the site strings like contoso.com/support and fabrikam.com/support.
-Encapsulate each string with greater than and less than characters like any other XML tag.
+            <Description>When you enable the Configure Open Microsoft Edge With policy, you can configure one or more Start pages. When you enable this policy, users are not allowed to make changes to their Start pages.
 
-Version 1703 or later:  If you don't want to send traffic to Microsoft, you can use the about:blank value (encapsulate with greater than and less than characters like any other XML tag), which is honored for both domain- and non-domain-joined machines, when it's the only configured URL.</Description>
+If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
+
+      &lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;
+
+If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
+
+Version 1703 or later:
+If you do not want to send traffic to Microsoft, enable this policy and use the &lt;about&#58;blank&gt; value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+
+Version 1809:
+If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
+
+Supported devices: Domain-joined or MDM-enrolled
+Related policy:
+- Configure Open Microsoft Edge With
+- Disable Lockdown of Start Pages</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -1060,12 +1482,12 @@ Version 1703 or later:  If you don't want to send traffic to Microsoft, you ca
             </AccessType>
             <Description>This policy setting lets you decide whether employees can add, import, sort, or edit the Favorites list on Microsoft Edge.
 
-If you enable this setting, employees won't be able to add, import, or change anything in the Favorites list. Also as part of this, Save a Favorite, Import settings, and the context menu items (such as, Create a new folder) are all turned off.
+If you enable this setting, employees won&apos;t be able to add, import, or change anything in the Favorites list. Also as part of this, Save a Favorite, Import settings, and the context menu items (such as, Create a new folder) are all turned off.
 
 Important
-Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
+Don&apos;t enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
 
-If you disable or don't configure this setting (default), employees can add, import and make changes to the Favorites list.</Description>
+If you disable or don&apos;t configure this setting (default), employees can add, import and make changes to the Favorites list.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -1089,7 +1511,35 @@ If you disable or don't configure this setting (default), employees can add, imp
               <Get />
               <Replace />
             </AccessType>
-            <Description>Prevent access to the about:flags page in Microsoft Edge.</Description>
+            <Description>Prevent access to the about&#58;flags page in Microsoft Edge.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventCertErrorOverrides</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Web security certificates are used to ensure a site your users go to is legitimate, and in some circumstances encrypts the data. With this policy, you can specify whether to prevent users from bypassing the security warning to sites that have SSL errors.
+
+If enabled, overriding certificate errors are not allowed.
+
+If disabled or not configured, overriding certificate errors are allowed.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -1165,7 +1615,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
               <Replace />
             </AccessType>
-            <Description>Don't allow Windows Defender SmartScreen warning overrides</Description>
+            <Description>Don&apos;t allow Windows Defender SmartScreen warning overrides</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -1189,31 +1639,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
               <Replace />
             </AccessType>
-            <Description>Don't allow Windows Defender SmartScreen warning overrides for unverified files.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>PreventTabPreloading</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Prevent Microsoft Edge from starting and loading the Start and New Tab page at Windows startup and each time Microsoft Edge is closed.</Description>
+            <Description>Don&apos;t allow Windows Defender SmartScreen warning overrides for unverified files.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -1263,12 +1689,12 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </AccessType>
             <Description>This policy setting allows you to configure a default set of favorites, which will appear for employees. Employees cannot modify, sort, move, export or delete these provisioned favorites.
 
-If you enable this setting, you can set favorite URL's and favorite folders to appear on top of users' favorites list (either in the Hub or Favorites Bar). The user favorites will appear after these provisioned favorites.
+If you enable this setting, you can set favorite URL&apos;s and favorite folders to appear on top of users&apos; favorites list (either in the Hub or Favorites Bar). The user favorites will appear after these provisioned favorites.
 
 Important
-Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
+Don&apos;t enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
 
-If you disable or don't configure this setting, employees will see the favorites they set in the Hub and Favorites Bar.</Description>
+If you disable or don&apos;t configure this setting, employees will see the favorites they set in the Hub and Favorites Bar.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -1338,6 +1764,66 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>SetHomeButtonURL</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>The home button can be configured to load a custom URL when your user clicks the home button.
+
+If enabled, or configured, and the Configure Home Button policy is enabled, and the Show home button &amp; set a specific page is selected, a custom URL loads when your user clicks the home button.
+
+Default setting: Blank or not configured
+Related policy: Configure Home Button</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SetNewTabPageURL</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>You can set the default New Tab page URL in Microsoft Edge.  Enabling this policy prevents your users from changing the New tab page setting. When enabled and the Allow web content on New Tab page policy is disabled, Microsoft Edge ignores the URL specified in this policy and opens about&#58;blank.
+
+If enabled, you can set the default New Tab page URL.
+
+If disabled or not configured, the default Microsoft Edge new tab page is used.
+
+Default setting:  Disabled or not configured
+Related policy: Allow web content on New Tab page</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>ShowMessageWhenOpeningSitesInInternetExplorer</NodeName>
           <DFProperties>
             <AccessType>
@@ -1346,7 +1832,16 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
               <Replace />
             </AccessType>
-            <Description>Show message when opening sites in Internet Explorer</Description>
+            <Description>You can configure Microsoft Edge to open a site automatically in Internet Explorer 11 and choose to display a notification before the site opens. If you want to display a notification, you must enable Configure the Enterprise Mode Site List or Send all intranets sites to Internet Explorer 11 or both.
+
+If enabled, the notification appears on a new page. If you want users to continue in Microsoft Edge, select the Show Keep going in Microsoft Edge option from the drop-down list under Options.
+
+If disabled or not configured, the default app behavior occurs and no additional page displays.
+
+Default setting: Disabled or not configured
+Related policies:
+-Configure the Enterprise Mode Site List
+-Send all intranet sites to Internet Explorer 11</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -1371,6 +1866,39 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Replace />
             </AccessType>
             <Description>Specifies whether favorites are kept in sync between Internet Explorer and Microsoft Edge. Changes to favorites in one browser are reflected in the other, including: additions, deletions, modifications, and ordering.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>UnlockHomeButton</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>By default, when enabling Configure Home Button or Set Home Button URL, the home button is locked down to prevent your users from changing what page loads when clicking the home button. Use this policy to let users change the home button even when Configure Home Button or Set Home Button URL are enabled.
+
+If enabled, the UI settings for the home button are enabled allowing your users to make changes, including hiding and showing the home button as well as configuring a custom URL.
+
+If disabled or not configured, the UI settings for the home button are disabled preventing your users from making changes.
+
+Default setting: Disabled or not configured
+Related policy:
+-Configure Home Button
+-Set Home Button URL</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -1578,7 +2106,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
               <Replace />
             </AccessType>
-            <Description>This policy sets user's default printer</Description>
+            <Description>This policy sets user&apos;s default printer</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -7882,7 +8410,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
               <Replace />
             </AccessType>
-            <Description>Enable/disable kiosk browser's end session button.</Description>
+            <Description>Enable/disable kiosk browser&apos;s end session button.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -7906,7 +8434,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
               <Replace />
             </AccessType>
-            <Description>Enable/disable kiosk browser's home button.</Description>
+            <Description>Enable/disable kiosk browser&apos;s home button.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -7930,7 +8458,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
               <Replace />
             </AccessType>
-            <Description>Enable/disable kiosk browser's navigation buttons (forward/back).</Description>
+            <Description>Enable/disable kiosk browser&apos;s navigation buttons (forward/back).</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -8087,6 +8615,52 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
         </Node>
       </Node>
       <Node>
+        <NodeName>Security</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>RecoveryEnvironmentAuthentication</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy controls the requirement of Admin Authentication in RecoveryEnvironment.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
         <NodeName>Settings</NodeName>
         <DFProperties>
           <AccessType>
@@ -8119,6 +8693,30 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <Description></Description>
             <DFFormat>
               <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PageVisibilityList</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -8178,6 +8776,78 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>ForceStartSize</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>HideAppList</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Setting the value of this policy to 1 or 2 collapses the app list. Setting the value of this policy to 3 removes the app list entirely. Setting the value of this policy to 2 or 3 disables the corresponding toggle in the Settings app.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>HideFrequentlyUsedApps</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Enabling this policy hides the most used apps from appearing on the start menu and disables the corresponding toggle in the Settings app.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>HidePeopleBar</NodeName>
           <DFProperties>
             <AccessType>
@@ -8187,6 +8857,54 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Replace />
             </AccessType>
             <Description>Enabling this policy removes the people icon from the taskbar as well as the corresponding settings toggle. It also prevents users from pinning people to the taskbar.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>HideRecentJumplists</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Enabling this policy hides recent jumplists from appearing on the start menu/taskbar and disables the corresponding toggle in the Settings app.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>HideRecentlyAddedApps</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Enabling this policy hides recently added apps from appearing on the start menu and disables the corresponding toggle in the Settings app.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -8950,6 +9668,37 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AllowFullScreenMode</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>With this policy, you can specify whether to allow full-screen mode, which shows only the web content and hides the Microsoft Edge UI.
+
+If enabled or not configured, full-screen mode is available for use in Microsoft Edge. Your users and extensions must have the proper permissions.
+
+If disabled, full-screen mode is unavailable for use in Microsoft Edge.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowFullScreenMode</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AllowInPrivate</NodeName>
           <DFProperties>
             <AccessType>
@@ -8983,7 +9732,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
             </AccessType>
             <DefaultValue>1</DefaultValue>
-            <Description>This policy setting lets you decide whether the Microsoft Compatibility List is enabled or disabled in Microsoft Edge. This feature uses a Microsoft-provided list to ensure that any sites with known compatibility issues are displayed correctly when a user navigates to them. By default, the Microsoft Compatibility List is enabled and can be viewed by navigating to about:compat.
+            <Description>This policy setting lets you decide whether the Microsoft Compatibility List is enabled or disabled in Microsoft Edge. This feature uses a Microsoft-provided list to ensure that any sites with known compatibility issues are displayed correctly when a user navigates to them. By default, the Microsoft Compatibility List is enabled and can be viewed by navigating to about&#58;compat.
 
 If you enable or don’t configure this setting, Microsoft Edge will periodically download the latest version of the list from Microsoft and will apply the configurations specified there during browser navigation. If a user visits a site on the Microsoft Compatibility List, he or she will be prompted to open the site in Internet Explorer 11. Once in Internet Explorer, the site will automatically be rendered as if the user is viewing it in the previous version of Internet Explorer it requires to display correctly.
 
@@ -9063,6 +9812,97 @@ If you disable this setting, the Microsoft Compatibility List will not be used d
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AllowPrelaunch</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowPrelaunch</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowPrinting</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>With this policy, you can restrict whether printing web content in Microsoft Edge is allowed.
+
+If enabled, printing is allowed.
+
+If disabled, printing is not allowed.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowPrinting</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowSavingHistory</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>Microsoft Edge saves your user&apos;s browsing history, which is made up of info about the websites they visit, on their devices.
+
+If enabled or not configured, the browsing history is saved and visible in the History pane.
+
+If disabled, the browsing history stops saving and is not visible in the History pane. If browsing history exists before this policy was disabled, the previous browsing history remains visible in the History pane. This policy, when disabled, does not stop roaming of existing history or history coming from other roamed devices.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowSavingHistory</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AllowSearchEngineCustomization</NodeName>
           <DFProperties>
             <AccessType>
@@ -9122,6 +9962,34 @@ This policy will only apply on domain joined machines or when the device is MDM 
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AllowSideloadingOfExtensions</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This setting lets you decide whether employees can sideload extensions in Microsoft Edge.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowSideloadingOfExtensions</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AllowSmartScreen</NodeName>
           <DFProperties>
             <AccessType>
@@ -9145,6 +10013,67 @@ This policy will only apply on domain joined machines or when the device is MDM 
             <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AllowSmartScreen</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowTabPreloading</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>Prevent Microsoft Edge from starting and loading the Start and New Tab page at Windows startup and each time Microsoft Edge is closed.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowTabPreloading</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowWebContentOnNewTabPage</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This policy setting lets you configure what appears when Microsoft Edge opens a new tab. By default, Microsoft Edge opens the New Tab page.
+
+If you enable this setting, Microsoft Edge opens a new tab with the New Tab page.
+
+If you disable this setting, Microsoft Edge opens a new tab with a blank page. If you use this setting, employees can&apos;t change it.
+
+If you don&apos;t configure this setting, employees can choose how new tabs appears.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowWebContentOnNewTabPage</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -9214,7 +10143,7 @@ This policy will only apply on domain joined machines or when the device is MDM 
 
 If this setting is turned on, you can add up to 5 additional search engines for your employee. For each additional search engine you wish to add, you must specify a link to the OpenSearch XML file that contains, at minimum, the short name and the URL to the search engine. This policy does not affect the default search engine. Employees will not be able to remove these search engines, but they can set any one of these as the default.
 
-If this setting is not configured, the search engines are the ones specified in the App settings. If this setting is disabled, the search engines you had added will be deleted from your employee's machine.
+If this setting is not configured, the search engines are the ones specified in the App settings. If this setting is disabled, the search engines you had added will be deleted from your employee&apos;s machine.
 
 Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.</Description>
             <DFFormat>
@@ -9237,18 +10166,99 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>DisableLockdownOfStartPages</NodeName>
+          <NodeName>ConfigureFavoritesBar</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>The favorites bar shows your user&apos;s links to sites they have added to it. With this policy, you can specify whether to set the favorites bar to always be visible or hidden on any page.
+
+If enabled, favorites bar is always visible on any page, and the favorites bar toggle in Settings sets to On, but disabled preventing your users from making changes. An error message also shows at the top of the Settings pane indicating that your organization manages some settings. The show bar/hide bar option is hidden from the context menu.
+
+If disabled, the favorites bar is hidden, and the favorites bar toggle resets to Off, but disabled preventing your users from making changes. An error message also shows at the top of the Settings pane indicating that your organization manages some settings.
+
+If not configured, the favorites bar is hidden but is visible on the Start and New Tab pages, and the favorites bar toggle in Settings sets to Off but is enabled allowing the user to make changes.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ConfigureFavoritesBar</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureHomeButton</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Boolean policy that specifies whether the lockdown on the Start pages is disabled. This policy works with the Browser/HomePages policy, which locks down the Start pages that the users cannot modify. You can use the DisableLockdownOfStartPages policy to allow users to modify the Start pages when Browser/HomePages policy is in effect.
+            <Description>The Home button loads either the default Start page, the New tab page, or a URL defined in the Set Home Button URL policy.
 
-Note: This policy has no effect when Browser/HomePages is not configured.
+By default, this policy is disabled or not configured and clicking the home button loads the default Start page.
 
-Important
-This setting can only be used with domain-joined or MDM-enrolled devices. For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).</Description>
+When enabled, the home button is locked down preventing your users from making changes in Microsoft Edge&apos;s UI settings. To let your users change the Microsoft Edge UI settings, enable the Unlock Home Button policy.
+
+If Enabled AND:
+- Show home button &amp; set to Start page is selected, clicking the home button loads the Start page.
+- Show home button &amp; set to New tab page is selected, clicking the home button loads a New tab page.
+- Show home button &amp; set a specific page is selected, clicking the home button loads the URL specified in the Set Home Button URL policy.
+- Hide home button is selected, the home button is hidden in Microsoft Edge.
+
+Default setting: Disabled or not configured
+Related policies:
+- Set Home Button URL
+- Unlock Home Button</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>ConfigureHomeButtonDropdown</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ConfigureHomeButton</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureKioskMode</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Configure how Microsoft Edge behaves when it’s running in kiosk mode with assigned access, either as a single app or as one of multiple apps running on the kiosk device. You can control whether Microsoft Edge runs InPrivate full screen, InPrivate multi-tab with limited functionality, or normal Microsoft Edge.
+
+You need to configure Microsoft Edge in assigned access for this policy to take effect; otherwise, these settings are ignored. To learn more about assigned access and kiosk configuration, see “Configure kiosk and shared devices running Windows desktop editions” (https://aka.ms/E489vw).
+
+If enabled and set to 0 (Default or not configured):
+- If it’s a single app, it runs InPrivate full screen for digital signage or interactive displays.
+- If it’s one of many apps, Microsoft Edge runs as normal.
+If enabled and set to 1:
+- If it’s a single app, it runs a limited multi-tab version of InPrivate and is the only app available for public browsing. Users can’t minimize, close, or open windows or customize Microsoft Edge, but can clear browsing data and downloads and restart by clicking “End session.” You can configure Microsoft Edge to restart after a period of inactivity by using the “Configure kiosk reset after idle timeout” policy.
+- If it’s one of many apps, it runs in a limited multi-tab version of InPrivate for public browsing with other apps. Users can minimize, close, and open multiple InPrivate windows, but they can’t customize Microsoft Edge.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -9264,6 +10274,152 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
             <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>ConfigureKioskMode_TextBox</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ConfigureKioskMode</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureKioskResetAfterIdleTimeout</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>5</DefaultValue>
+            <Description>You can configure Microsoft Edge to reset to the configured start experience after a specified amount of idle time. The reset timer begins after the last user interaction. Resetting to the configured start experience deletes the current user’s browsing data.
+
+If enabled, you can set the idle time in minutes (0-1440). You must set the Configure kiosk mode policy to 1 and configure Microsoft Edge in assigned access as a single app for this policy to work. Once the idle time meets the time specified, a confirmation message prompts the user to continue, and if no user action, Microsoft Edge resets after 30 seconds.
+
+If you set this policy to 0, Microsoft Edge does not use an idle timer.
+
+If disabled or not configured, the default value is 5 minutes.
+
+If you do not configure Microsoft Edge in assigned access, then this policy does not take effect.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1440"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>ConfigureKioskResetAfterIdleTimeout_TextBox</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ConfigureKioskResetAfterIdleTimeout</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureOpenMicrosoftEdgeWith</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>3</DefaultValue>
+            <Description>You can configure Microsoft Edge to lock down the Start page, preventing users from changing or customizing it.
+
+If enabled, you can choose one of the following options:
+- Start page: the Start page loads ignoring the Configure Start Pages policy.
+- New tab page: the New tab page loads ignoring the Configure Start Pages policy.
+- Previous pages: all tabs the user had open when Microsoft Edge last closed loads ignoring the Configure Start Pages policy.
+- A specific page or pages: the URL(s) specified with Configure Start Pages policy load(s). If selected, you must specify at least one URL in Configure Start Pages; otherwise, this policy is ignored.
+
+When enabled, and you want to make changes, you must first set the Disable Lockdown of Start Pages to not configured, make the changes to the Configure Open Edge With policy, and then enable the Disable Lockdown of Start Pages policy.
+
+If disabled or not configured, and you enable the Disable Lockdown of Start Pages policy, your users can change or customize the Start page.
+
+Default setting: A specific page or pages (default)
+Related policies:
+-Disable Lockdown of Start Pages
+-Configure Start Pages</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>ConfigureOpenEdgeWithListBox</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ConfigureOpenEdgeWith</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureTelemetryForMicrosoft365Analytics</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Configures what browsing data will be sent to Microsoft 365 Analytics for devices belonging to an organization.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>ZonesListBox</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~DataCollectionAndPreviewBuilds</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ConfigureTelemetryForMicrosoft365Analytics</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableLockdownOfStartPages</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>You can configure Microsoft Edge to disable the lockdown of Start pages allowing users to change or customize their start pages.  To do this, you must also enable the Configure Start Pages or Configure Open Microsoft With policy. When enabled, all configured start pages are editable. Any Start page configured using the Configure Start pages policy is not locked down allowing users to edit their Start pages.
+
+If disabled or not configured, the Start pages configured in the Configure Start Pages policy cannot be changed and remain locked down.
+
+Supported devices: Domain-joined or MDM-enrolled
+Related policy:
+- Configure Start Pages
+- Configure Open Microsoft Edge With</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>DisableLockdownOfStartPagesListBox</MSFT:ADMXMappedElement>
             <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisableLockdownOfStartPages</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
@@ -9373,18 +10529,58 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>ForceEnabledExtensions</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>This setting lets you decide which extensions should be always enabled.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>ForceEnabledExtensions_List</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ForceEnabledExtensions</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>HomePages</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
             </AccessType>
             <DefaultValue></DefaultValue>
-            <Description>Configure the Start page URLs for your employees.
-Example:
-If you wanted to allow contoso.com and fabrikam.com then you would append /support to the site strings like contoso.com/support and fabrikam.com/support.
-Encapsulate each string with greater than and less than characters like any other XML tag.
+            <Description>When you enable the Configure Open Microsoft Edge With policy, you can configure one or more Start pages. When you enable this policy, users are not allowed to make changes to their Start pages.
 
-Version 1703 or later:  If you don't want to send traffic to Microsoft, you can use the about:blank value (encapsulate with greater than and less than characters like any other XML tag), which is honored for both domain- and non-domain-joined machines, when it's the only configured URL.</Description>
+If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
+
+      &lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;
+
+If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
+
+Version 1703 or later:
+If you do not want to send traffic to Microsoft, enable this policy and use the &lt;about&#58;blank&gt; value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+
+Version 1809:
+If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
+
+Supported devices: Domain-joined or MDM-enrolled
+Related policy:
+- Configure Open Microsoft Edge With
+- Disable Lockdown of Start Pages</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -9414,12 +10610,12 @@ Version 1703 or later:  If you don't want to send traffic to Microsoft, you ca
             <DefaultValue>0</DefaultValue>
             <Description>This policy setting lets you decide whether employees can add, import, sort, or edit the Favorites list on Microsoft Edge.
 
-If you enable this setting, employees won't be able to add, import, or change anything in the Favorites list. Also as part of this, Save a Favorite, Import settings, and the context menu items (such as, Create a new folder) are all turned off.
+If you enable this setting, employees won&apos;t be able to add, import, or change anything in the Favorites list. Also as part of this, Save a Favorite, Import settings, and the context menu items (such as, Create a new folder) are all turned off.
 
 Important
-Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
+Don&apos;t enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
 
-If you disable or don't configure this setting (default), employees can add, import and make changes to the Favorites list.</Description>
+If you disable or don&apos;t configure this setting (default), employees can add, import and make changes to the Favorites list.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -9446,7 +10642,7 @@ If you disable or don't configure this setting (default), employees can add, imp
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Prevent access to the about:flags page in Microsoft Edge.</Description>
+            <Description>Prevent access to the about&#58;flags page in Microsoft Edge.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -9463,6 +10659,37 @@ If you disable or don't configure this setting (default), employees can add, imp
             <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>PreventAccessToAboutFlagsInMicrosoftEdge</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventCertErrorOverrides</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Web security certificates are used to ensure a site your users go to is legitimate, and in some circumstances encrypts the data. With this policy, you can specify whether to prevent users from bypassing the security warning to sites that have SSL errors.
+
+If enabled, overriding certificate errors are not allowed.
+
+If disabled or not configured, overriding certificate errors are allowed.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>PreventCertErrorOverrides</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -9532,7 +10759,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Don't allow Windows Defender SmartScreen warning overrides</Description>
+            <Description>Don&apos;t allow Windows Defender SmartScreen warning overrides</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -9559,7 +10786,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Don't allow Windows Defender SmartScreen warning overrides for unverified files.</Description>
+            <Description>Don&apos;t allow Windows Defender SmartScreen warning overrides for unverified files.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -9576,34 +10803,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>PreventSmartScreenPromptOverrideForFiles</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>PreventTabPreloading</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description>Prevent Microsoft Edge from starting and loading the Start and New Tab page at Windows startup and each time Microsoft Edge is closed.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
-            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>PreventTabPreloading</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -9643,12 +10842,12 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DefaultValue></DefaultValue>
             <Description>This policy setting allows you to configure a default set of favorites, which will appear for employees. Employees cannot modify, sort, move, export or delete these provisioned favorites.
 
-If you enable this setting, you can set favorite URL's and favorite folders to appear on top of users' favorites list (either in the Hub or Favorites Bar). The user favorites will appear after these provisioned favorites.
+If you enable this setting, you can set favorite URL&apos;s and favorite folders to appear on top of users&apos; favorites list (either in the Hub or Favorites Bar). The user favorites will appear after these provisioned favorites.
 
 Important
-Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
+Don&apos;t enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
 
-If you disable or don't configure this setting, employees will see the favorites they set in the Hub and Favorites Bar.</Description>
+If you disable or don&apos;t configure this setting, employees will see the favorites they set in the Hub and Favorites Bar.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -9730,13 +10929,90 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>SetHomeButtonURL</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>The home button can be configured to load a custom URL when your user clicks the home button.
+
+If enabled, or configured, and the Configure Home Button policy is enabled, and the Show home button &amp; set a specific page is selected, a custom URL loads when your user clicks the home button.
+
+Default setting: Blank or not configured
+Related policy: Configure Home Button</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>SetHomeButtonURLPrompt</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>SetHomeButtonURL</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SetNewTabPageURL</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>You can set the default New Tab page URL in Microsoft Edge.  Enabling this policy prevents your users from changing the New tab page setting. When enabled and the Allow web content on New Tab page policy is disabled, Microsoft Edge ignores the URL specified in this policy and opens about&#58;blank.
+
+If enabled, you can set the default New Tab page URL.
+
+If disabled or not configured, the default Microsoft Edge new tab page is used.
+
+Default setting:  Disabled or not configured
+Related policy: Allow web content on New Tab page</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>SetNewTabPageURLPrompt</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>SetNewTabPageURL</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>ShowMessageWhenOpeningSitesInInternetExplorer</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Show message when opening sites in Internet Explorer</Description>
+            <Description>You can configure Microsoft Edge to open a site automatically in Internet Explorer 11 and choose to display a notification before the site opens. If you want to display a notification, you must enable Configure the Enterprise Mode Site List or Send all intranets sites to Internet Explorer 11 or both.
+
+If enabled, the notification appears on a new page. If you want users to continue in Microsoft Edge, select the Show Keep going in Microsoft Edge option from the drop-down list under Options.
+
+If disabled or not configured, the default app behavior occurs and no additional page displays.
+
+Default setting: Disabled or not configured
+Related policies:
+-Configure the Enterprise Mode Site List
+-Send all intranet sites to Internet Explorer 11</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -9749,7 +11025,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
@@ -9782,6 +11058,43 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>SyncFavoritesBetweenIEAndMicrosoftEdge</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>UnlockHomeButton</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>By default, when enabling Configure Home Button or Set Home Button URL, the home button is locked down to prevent your users from changing what page loads when clicking the home button. Use this policy to let users change the home button even when Configure Home Button or Set Home Button URL are enabled.
+
+If enabled, the UI settings for the home button are enabled allowing your users to make changes, including hiding and showing the home button as well as configuring a custom URL.
+
+If disabled or not configured, the UI settings for the home button are disabled preventing your users from making changes.
+
+Default setting: Disabled or not configured
+Related policy:
+-Configure Home Button
+-Set Home Button URL</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>UnlockHomeButton</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -9982,7 +11295,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
             </AccessType>
             <DefaultValue></DefaultValue>
-            <Description>This policy sets user's default printer</Description>
+            <Description>This policy sets user&apos;s default printer</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -17018,7 +18331,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Enable/disable kiosk browser's end session button.</Description>
+            <Description>Enable/disable kiosk browser&apos;s end session button.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -17043,7 +18356,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Enable/disable kiosk browser's home button.</Description>
+            <Description>Enable/disable kiosk browser&apos;s home button.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -17068,7 +18381,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Enable/disable kiosk browser's navigation buttons (forward/back).</Description>
+            <Description>Enable/disable kiosk browser&apos;s navigation buttons (forward/back).</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -17234,6 +18547,51 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
         </Node>
       </Node>
       <Node>
+        <NodeName>Security</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>RecoveryEnvironmentAuthentication</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy controls the requirement of Admin Authentication in RecoveryEnvironment.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
         <NodeName>Settings</NodeName>
         <DFProperties>
           <AccessType>
@@ -17276,6 +18634,33 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXMapped>Taskbar.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>Taskbar~AT~StartMenu~TPMCategory</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>ConfigureTaskbarCalendar</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PageVisibilityList</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ADMXMapped>ControlPanel.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>SettingsPageVisibilityBox</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>ControlPanel~AT~ControlPanel</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>SettingsPageVisibility</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -17328,6 +18713,87 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>ForceStartSize</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>StartMenu.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>StartMenu~AT~StartMenu</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ForceStartSize</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>HideAppList</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Setting the value of this policy to 1 or 2 collapses the app list. Setting the value of this policy to 3 removes the app list entirely. Setting the value of this policy to 2 or 3 disables the corresponding toggle in the Settings app.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>HideFrequentlyUsedApps</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Enabling this policy hides the most used apps from appearing on the start menu and disables the corresponding toggle in the Settings app.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>StartMenu.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>StartMenu~AT~StartMenu</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>NoFrequentUsedPrograms</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>HidePeopleBar</NodeName>
           <DFProperties>
             <AccessType>
@@ -17352,6 +18818,62 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXMapped>StartMenu.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>StartMenu~AT~StartMenu</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>HidePeopleBar</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>HideRecentJumplists</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Enabling this policy hides recent jumplists from appearing on the start menu/taskbar and disables the corresponding toggle in the Settings app.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>StartMenu.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>StartMenu~AT~StartMenu</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>NoRecentDocsHistory</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>HideRecentlyAddedApps</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Enabling this policy hides recently added apps from appearing on the start menu and disables the corresponding toggle in the Settings app.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>StartMenu.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>StartMenu~AT~StartMenu</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>HideRecentlyAddedApps</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -17497,7 +19019,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
         <Permanent />
       </Scope>
       <DFType>
-        <MIME>com.microsoft/7.0/MDM/Policy</MIME>
+        <MIME>com.microsoft/8.0/MDM/Policy</MIME>
       </DFType>
     </DFProperties>
     <Node>
@@ -18178,6 +19700,30 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>LaunchAppAfterLogOn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are to be launched after logon.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>MSIAllowUserControlOverInstall</NodeName>
           <DFProperties>
             <AccessType>
@@ -18285,6 +19831,30 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <Description></Description>
             <DFFormat>
               <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ScheduleForceRestartForUpdateFailures</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -19131,6 +20701,78 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
           </DFProperties>
         </Node>
+        <Node>
+          <NodeName>EnableFastFirstSignIn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Specifies whether new non-admin AAD accounts should auto-connect to pre-created candidate local accounts</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>EnableWebSignIn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Specifies whether web-based sign in is allowed for logging in to Windows</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreferredAadTenantDomainName</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Specifies the preferred domain among available domains in the AAD tenant.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
       </Node>
       <Node>
         <NodeName>Autoplay</NodeName>
@@ -19249,6 +20891,172 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
         </DFProperties>
         <Node>
           <NodeName>EncryptionMethod</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>BITS</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>BandwidthThrottlingEndTime</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>BandwidthThrottlingStartTime</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>BandwidthThrottlingTransferRate</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>CostedNetworkBehaviorBackgroundPriority</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>CostedNetworkBehaviorForegroundPriority</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>JobInactivityTimeout</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -19700,6 +21508,34 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AllowFullScreenMode</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>With this policy, you can specify whether to allow full-screen mode, which shows only the web content and hides the Microsoft Edge UI.
+
+If enabled or not configured, full-screen mode is available for use in Microsoft Edge. Your users and extensions must have the proper permissions.
+
+If disabled, full-screen mode is unavailable for use in Microsoft Edge.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AllowInPrivate</NodeName>
           <DFProperties>
             <AccessType>
@@ -19732,7 +21568,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
               <Replace />
             </AccessType>
-            <Description>This policy setting lets you decide whether the Microsoft Compatibility List is enabled or disabled in Microsoft Edge. This feature uses a Microsoft-provided list to ensure that any sites with known compatibility issues are displayed correctly when a user navigates to them. By default, the Microsoft Compatibility List is enabled and can be viewed by navigating to about:compat.
+            <Description>This policy setting lets you decide whether the Microsoft Compatibility List is enabled or disabled in Microsoft Edge. This feature uses a Microsoft-provided list to ensure that any sites with known compatibility issues are displayed correctly when a user navigates to them. By default, the Microsoft Compatibility List is enabled and can be viewed by navigating to about&#58;compat.
 
 If you enable or don’t configure this setting, Microsoft Edge will periodically download the latest version of the list from Microsoft and will apply the configurations specified there during browser navigation. If a user visits a site on the Microsoft Compatibility List, he or she will be prompted to open the site in Internet Explorer 11. Once in Internet Explorer, the site will automatically be rendered as if the user is viewing it in the previous version of Internet Explorer it requires to display correctly.
 
@@ -19785,6 +21621,86 @@ If you disable this setting, the Microsoft Compatibility List will not be used d
               <Replace />
             </AccessType>
             <Description>This setting lets you decide whether to turn on Pop-up Blocker and whether to allow pop-ups to appear in secondary windows.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowPrelaunch</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowPrinting</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>With this policy, you can restrict whether printing web content in Microsoft Edge is allowed.
+
+If enabled, printing is allowed.
+
+If disabled, printing is not allowed.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowSavingHistory</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Microsoft Edge saves your user&apos;s browsing history, which is made up of info about the websites they visit, on their devices.
+
+If enabled or not configured, the browsing history is saved and visible in the History pane.
+
+If disabled, the browsing history stops saving and is not visible in the History pane. If browsing history exists before this policy was disabled, the previous browsing history remains visible in the History pane. This policy, when disabled, does not stop roaming of existing history or history coming from other roamed devices.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -19853,6 +21769,30 @@ This policy will only apply on domain joined machines or when the device is MDM 
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AllowSideloadingOfExtensions</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This setting lets you decide whether employees can sideload extensions in Microsoft Edge.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AllowSmartScreen</NodeName>
           <DFProperties>
             <AccessType>
@@ -19862,6 +21802,60 @@ This policy will only apply on domain joined machines or when the device is MDM 
               <Replace />
             </AccessType>
             <Description>This setting lets you decide whether to turn on Windows Defender SmartScreen.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowTabPreloading</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Prevent Microsoft Edge from starting and loading the Start and New Tab page at Windows startup and each time Microsoft Edge is closed.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowWebContentOnNewTabPage</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting lets you configure what appears when Microsoft Edge opens a new tab. By default, Microsoft Edge opens the New Tab page.
+
+If you enable this setting, Microsoft Edge opens a new tab with the New Tab page.
+
+If you disable this setting, Microsoft Edge opens a new tab with a blank page. If you use this setting, employees can&apos;t change it.
+
+If you don&apos;t configure this setting, employees can choose how new tabs appears.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -19937,11 +21931,208 @@ This policy will only apply on domain joined machines or when the device is MDM 
 
 If this setting is turned on, you can add up to 5 additional search engines for your employee. For each additional search engine you wish to add, you must specify a link to the OpenSearch XML file that contains, at minimum, the short name and the URL to the search engine. This policy does not affect the default search engine. Employees will not be able to remove these search engines, but they can set any one of these as the default.
 
-If this setting is not configured, the search engines are the ones specified in the App settings. If this setting is disabled, the search engines you had added will be deleted from your employee's machine.
+If this setting is not configured, the search engines are the ones specified in the App settings. If this setting is disabled, the search engines you had added will be deleted from your employee&apos;s machine.
 
 Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.</Description>
             <DFFormat>
               <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureFavoritesBar</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>The favorites bar shows your user&apos;s links to sites they have added to it. With this policy, you can specify whether to set the favorites bar to always be visible or hidden on any page.
+
+If enabled, favorites bar is always visible on any page, and the favorites bar toggle in Settings sets to On, but disabled preventing your users from making changes. An error message also shows at the top of the Settings pane indicating that your organization manages some settings. The show bar/hide bar option is hidden from the context menu.
+
+If disabled, the favorites bar is hidden, and the favorites bar toggle resets to Off, but disabled preventing your users from making changes. An error message also shows at the top of the Settings pane indicating that your organization manages some settings.
+
+If not configured, the favorites bar is hidden but is visible on the Start and New Tab pages, and the favorites bar toggle in Settings sets to Off but is enabled allowing the user to make changes.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureHomeButton</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>The Home button loads either the default Start page, the New tab page, or a URL defined in the Set Home Button URL policy.
+
+By default, this policy is disabled or not configured and clicking the home button loads the default Start page.
+
+When enabled, the home button is locked down preventing your users from making changes in Microsoft Edge&apos;s UI settings. To let your users change the Microsoft Edge UI settings, enable the Unlock Home Button policy.
+
+If Enabled AND:
+- Show home button &amp; set to Start page is selected, clicking the home button loads the Start page.
+- Show home button &amp; set to New tab page is selected, clicking the home button loads a New tab page.
+- Show home button &amp; set a specific page is selected, clicking the home button loads the URL specified in the Set Home Button URL policy.
+- Hide home button is selected, the home button is hidden in Microsoft Edge.
+
+Default setting: Disabled or not configured
+Related policies:
+- Set Home Button URL
+- Unlock Home Button</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureKioskMode</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Configure how Microsoft Edge behaves when it’s running in kiosk mode with assigned access, either as a single app or as one of multiple apps running on the kiosk device. You can control whether Microsoft Edge runs InPrivate full screen, InPrivate multi-tab with limited functionality, or normal Microsoft Edge.
+
+You need to configure Microsoft Edge in assigned access for this policy to take effect; otherwise, these settings are ignored. To learn more about assigned access and kiosk configuration, see “Configure kiosk and shared devices running Windows desktop editions” (https://aka.ms/E489vw).
+
+If enabled and set to 0 (Default or not configured):
+- If it’s a single app, it runs InPrivate full screen for digital signage or interactive displays.
+- If it’s one of many apps, Microsoft Edge runs as normal.
+If enabled and set to 1:
+- If it’s a single app, it runs a limited multi-tab version of InPrivate and is the only app available for public browsing. Users can’t minimize, close, or open windows or customize Microsoft Edge, but can clear browsing data and downloads and restart by clicking “End session.” You can configure Microsoft Edge to restart after a period of inactivity by using the “Configure kiosk reset after idle timeout” policy.
+- If it’s one of many apps, it runs in a limited multi-tab version of InPrivate for public browsing with other apps. Users can minimize, close, and open multiple InPrivate windows, but they can’t customize Microsoft Edge.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureKioskResetAfterIdleTimeout</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>You can configure Microsoft Edge to reset to the configured start experience after a specified amount of idle time. The reset timer begins after the last user interaction. Resetting to the configured start experience deletes the current user’s browsing data.
+
+If enabled, you can set the idle time in minutes (0-1440). You must set the Configure kiosk mode policy to 1 and configure Microsoft Edge in assigned access as a single app for this policy to work. Once the idle time meets the time specified, a confirmation message prompts the user to continue, and if no user action, Microsoft Edge resets after 30 seconds.
+
+If you set this policy to 0, Microsoft Edge does not use an idle timer.
+
+If disabled or not configured, the default value is 5 minutes.
+
+If you do not configure Microsoft Edge in assigned access, then this policy does not take effect.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureOpenMicrosoftEdgeWith</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>You can configure Microsoft Edge to lock down the Start page, preventing users from changing or customizing it.
+
+If enabled, you can choose one of the following options:
+- Start page: the Start page loads ignoring the Configure Start Pages policy.
+- New tab page: the New tab page loads ignoring the Configure Start Pages policy.
+- Previous pages: all tabs the user had open when Microsoft Edge last closed loads ignoring the Configure Start Pages policy.
+- A specific page or pages: the URL(s) specified with Configure Start Pages policy load(s). If selected, you must specify at least one URL in Configure Start Pages; otherwise, this policy is ignored.
+
+When enabled, and you want to make changes, you must first set the Disable Lockdown of Start Pages to not configured, make the changes to the Configure Open Edge With policy, and then enable the Disable Lockdown of Start Pages policy.
+
+If disabled or not configured, and you enable the Disable Lockdown of Start Pages policy, your users can change or customize the Start page.
+
+Default setting: A specific page or pages (default)
+Related policies:
+-Disable Lockdown of Start Pages
+-Configure Start Pages</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureTelemetryForMicrosoft365Analytics</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Configures what browsing data will be sent to Microsoft 365 Analytics for devices belonging to an organization.</Description>
+            <DFFormat>
+              <int/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -19963,12 +22154,14 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
               <Replace />
             </AccessType>
-            <Description>Boolean policy that specifies whether the lockdown on the Start pages is disabled. This policy works with the Browser/HomePages policy, which locks down the Start pages that the users cannot modify. You can use the DisableLockdownOfStartPages policy to allow users to modify the Start pages when Browser/HomePages policy is in effect.
+            <Description>You can configure Microsoft Edge to disable the lockdown of Start pages allowing users to change or customize their start pages.  To do this, you must also enable the Configure Start Pages or Configure Open Microsoft With policy. When enabled, all configured start pages are editable. Any Start page configured using the Configure Start pages policy is not locked down allowing users to edit their Start pages.
 
-Note: This policy has no effect when Browser/HomePages is not configured.
+If disabled or not configured, the Start pages configured in the Configure Start Pages policy cannot be changed and remain locked down.
 
-Important
-This setting can only be used with domain-joined or MDM-enrolled devices. For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).</Description>
+Supported devices: Domain-joined or MDM-enrolled
+Related policy:
+- Configure Start Pages
+- Configure Open Microsoft Edge With</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -20080,6 +22273,30 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>ForceEnabledExtensions</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This setting lets you decide which extensions should be always enabled.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>HomePages</NodeName>
           <DFProperties>
             <AccessType>
@@ -20088,12 +22305,24 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
               <Get />
               <Replace />
             </AccessType>
-            <Description>Configure the Start page URLs for your employees.
-Example:
-If you wanted to allow contoso.com and fabrikam.com then you would append /support to the site strings like contoso.com/support and fabrikam.com/support.
-Encapsulate each string with greater than and less than characters like any other XML tag.
+            <Description>When you enable the Configure Open Microsoft Edge With policy, you can configure one or more Start pages. When you enable this policy, users are not allowed to make changes to their Start pages.
 
-Version 1703 or later:  If you don't want to send traffic to Microsoft, you can use the about:blank value (encapsulate with greater than and less than characters like any other XML tag), which is honored for both domain- and non-domain-joined machines, when it's the only configured URL.</Description>
+If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
+
+      &lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;
+
+If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
+
+Version 1703 or later:
+If you do not want to send traffic to Microsoft, enable this policy and use the &lt;about&#58;blank&gt; value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+
+Version 1809:
+If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
+
+Supported devices: Domain-joined or MDM-enrolled
+Related policy:
+- Configure Open Microsoft Edge With
+- Disable Lockdown of Start Pages</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -20119,12 +22348,12 @@ Version 1703 or later:  If you don't want to send traffic to Microsoft, you ca
             </AccessType>
             <Description>This policy setting lets you decide whether employees can add, import, sort, or edit the Favorites list on Microsoft Edge.
 
-If you enable this setting, employees won't be able to add, import, or change anything in the Favorites list. Also as part of this, Save a Favorite, Import settings, and the context menu items (such as, Create a new folder) are all turned off.
+If you enable this setting, employees won&apos;t be able to add, import, or change anything in the Favorites list. Also as part of this, Save a Favorite, Import settings, and the context menu items (such as, Create a new folder) are all turned off.
 
 Important
-Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
+Don&apos;t enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
 
-If you disable or don't configure this setting (default), employees can add, import and make changes to the Favorites list.</Description>
+If you disable or don&apos;t configure this setting (default), employees can add, import and make changes to the Favorites list.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -20148,7 +22377,35 @@ If you disable or don't configure this setting (default), employees can add, imp
               <Get />
               <Replace />
             </AccessType>
-            <Description>Prevent access to the about:flags page in Microsoft Edge.</Description>
+            <Description>Prevent access to the about&#58;flags page in Microsoft Edge.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventCertErrorOverrides</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Web security certificates are used to ensure a site your users go to is legitimate, and in some circumstances encrypts the data. With this policy, you can specify whether to prevent users from bypassing the security warning to sites that have SSL errors.
+
+If enabled, overriding certificate errors are not allowed.
+
+If disabled or not configured, overriding certificate errors are allowed.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -20224,7 +22481,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
               <Replace />
             </AccessType>
-            <Description>Don't allow Windows Defender SmartScreen warning overrides</Description>
+            <Description>Don&apos;t allow Windows Defender SmartScreen warning overrides</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -20248,31 +22505,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
               <Replace />
             </AccessType>
-            <Description>Don't allow Windows Defender SmartScreen warning overrides for unverified files.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>PreventTabPreloading</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Prevent Microsoft Edge from starting and loading the Start and New Tab page at Windows startup and each time Microsoft Edge is closed.</Description>
+            <Description>Don&apos;t allow Windows Defender SmartScreen warning overrides for unverified files.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -20322,12 +22555,12 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </AccessType>
             <Description>This policy setting allows you to configure a default set of favorites, which will appear for employees. Employees cannot modify, sort, move, export or delete these provisioned favorites.
 
-If you enable this setting, you can set favorite URL's and favorite folders to appear on top of users' favorites list (either in the Hub or Favorites Bar). The user favorites will appear after these provisioned favorites.
+If you enable this setting, you can set favorite URL&apos;s and favorite folders to appear on top of users&apos; favorites list (either in the Hub or Favorites Bar). The user favorites will appear after these provisioned favorites.
 
 Important
-Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
+Don&apos;t enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
 
-If you disable or don't configure this setting, employees will see the favorites they set in the Hub and Favorites Bar.</Description>
+If you disable or don&apos;t configure this setting, employees will see the favorites they set in the Hub and Favorites Bar.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -20397,6 +22630,66 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>SetHomeButtonURL</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>The home button can be configured to load a custom URL when your user clicks the home button.
+
+If enabled, or configured, and the Configure Home Button policy is enabled, and the Show home button &amp; set a specific page is selected, a custom URL loads when your user clicks the home button.
+
+Default setting: Blank or not configured
+Related policy: Configure Home Button</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SetNewTabPageURL</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>You can set the default New Tab page URL in Microsoft Edge.  Enabling this policy prevents your users from changing the New tab page setting. When enabled and the Allow web content on New Tab page policy is disabled, Microsoft Edge ignores the URL specified in this policy and opens about&#58;blank.
+
+If enabled, you can set the default New Tab page URL.
+
+If disabled or not configured, the default Microsoft Edge new tab page is used.
+
+Default setting:  Disabled or not configured
+Related policy: Allow web content on New Tab page</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>ShowMessageWhenOpeningSitesInInternetExplorer</NodeName>
           <DFProperties>
             <AccessType>
@@ -20405,7 +22698,16 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
               <Replace />
             </AccessType>
-            <Description>Show message when opening sites in Internet Explorer</Description>
+            <Description>You can configure Microsoft Edge to open a site automatically in Internet Explorer 11 and choose to display a notification before the site opens. If you want to display a notification, you must enable Configure the Enterprise Mode Site List or Send all intranets sites to Internet Explorer 11 or both.
+
+If enabled, the notification appears on a new page. If you want users to continue in Microsoft Edge, select the Show Keep going in Microsoft Edge option from the drop-down list under Options.
+
+If disabled or not configured, the default app behavior occurs and no additional page displays.
+
+Default setting: Disabled or not configured
+Related policies:
+-Configure the Enterprise Mode Site List
+-Send all intranet sites to Internet Explorer 11</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -20430,6 +22732,39 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Replace />
             </AccessType>
             <Description>Specifies whether favorites are kept in sync between Internet Explorer and Microsoft Edge. Changes to favorites in one browser are reflected in the other, including: additions, deletions, modifications, and ordering.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>UnlockHomeButton</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>By default, when enabling Configure Home Button or Set Home Button URL, the home button is locked down to prevent your users from changing what page loads when clicking the home button. Use this policy to let users change the home button even when Configure Home Button or Set Home Button URL are enabled.
+
+If enabled, the UI settings for the home button are enabled allowing your users to make changes, including hiding and showing the home button as well as configuring a custom URL.
+
+If disabled or not configured, the UI settings for the home button are disabled preventing your users from making changes.
+
+Default setting: Disabled or not configured
+Related policy:
+-Configure Home Button
+-Set Home Button URL</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -21064,10 +23399,11 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           <DFProperties>
             <AccessType>
               <Add />
+              <Delete />
               <Get />
               <Replace />
             </AccessType>
-            <Description>If set to 1 then any MDM policy that is set that has an equivalent GP policy will result in GP service blocking the setting of the policy by GP MMC</Description>
+            <Description>If set to 1 then any MDM policy that is set that has an equivalent GP policy will result in GP service blocking the setting of the policy by GP MMC. Setting the value to 0 (zero) or deleting the policy will remove the GP policy blocks restore the saved GP policies.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -21909,6 +24245,30 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>CheckForSignaturesBeforeRunningScan</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>CloudBlockLevel</NodeName>
           <DFProperties>
             <AccessType>
@@ -22029,7 +24389,79 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DisableCatchupFullScan</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableCatchupQuickScan</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EnableControlledFolderAccess</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>EnableLowCPUPriority</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -22293,6 +24725,54 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>SignatureUpdateFallbackOrder</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SignatureUpdateFileSharesSources</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>SignatureUpdateInterval</NodeName>
           <DFProperties>
             <AccessType>
@@ -22422,6 +24902,30 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <Description></Description>
             <DFFormat>
               <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DOCacheHost</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -22985,6 +25489,30 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFType>
         </DFProperties>
         <Node>
+          <NodeName>EnableSystemGuard</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Secure Launch configuration: 0 - Unmanaged, configurable by Administrative user, 1 - Enables Secure Launch if supported by hardware, 2 - Disables Secure Launch.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EnableVirtualizationBasedSecurity</NodeName>
           <DFProperties>
             <AccessType>
@@ -23078,6 +25606,102 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DDFName></DDFName>
           </DFType>
         </DFProperties>
+        <Node>
+          <NodeName>AllowInstallationOfMatchingDeviceIDs</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowInstallationOfMatchingDeviceSetupClasses</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventDeviceMetadataFromNetwork</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventInstallationOfDevicesNotDescribedByOtherPolicySettings</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
         <Node>
           <NodeName>PreventInstallationOfMatchingDeviceIDs</NodeName>
           <DFProperties>
@@ -23728,6 +26352,52 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
         </Node>
       </Node>
       <Node>
+        <NodeName>DmaGuard</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>DeviceEnumerationPolicy</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
         <NodeName>ErrorReporting</NodeName>
         <DFProperties>
           <AccessType>
@@ -24008,6 +26678,30 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DDFName></DDFName>
           </DFType>
         </DFProperties>
+        <Node>
+          <NodeName>AllowClipboardHistory</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Allows history of clipboard items to be stored in memory.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
         <Node>
           <NodeName>AllowCopyPaste</NodeName>
           <DFProperties>
@@ -24354,6 +27048,58 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <Replace />
             </AccessType>
             <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DoNotSyncBrowserSetting</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>You can configure Microsoft Edge, when enabled, to prevent the &quot;browser&quot; group from using the Sync your Settings option to sync information, such as history and favorites, between user&apos;s devices. If you want syncing turned off by default in Microsoft Edge but not disabled, enable the Allow users to turn browser syncing on policy. If disabled or not configured, the Sync your Settings options are turned on in Microsoft Edge by default, and configurable by the user. 
+                        Related policy: PreventUsersFromTurningOnBrowserSyncing
+                        0 (default) = allow syncing, 2 = disable syncing</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventUsersFromTurningOnBrowserSyncing</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>You can configure Microsoft Edge to allow users to turn on the Sync your Settings option to sync information, such as history and favorites, between user&apos;s devices.  When enabled and you enable the Do not sync browser setting policy, browser settings sync automatically. If disabled, users have the option to sync the browser settings.
+                        Related policy: DoNotSyncBrowserSetting
+                        1 (default) = Do not allow users to turn on syncing, 0 = Allows users to turn on syncing</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -30572,6 +33318,32 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
           </DFProperties>
         </Node>
+        <Node>
+          <NodeName>UPNNameHints</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Devices joined to Azure Active Directory in a hybrid environment need to interact with Active Directory Domain Controllers, but they lack the built-in ability to find a Domain Controller that a domain-joined device has. This can cause failures when such a device needs to resolve an AAD UPN into an Active Directory Principal.
+                
+                This parameter adds a list of domains that an Azure Active Directory joined device should attempt to contact if it is otherwise unable to resolve a UPN to a principal.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
       </Node>
       <Node>
         <NodeName>KioskBrowser</NodeName>
@@ -30675,7 +33447,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <Get />
               <Replace />
             </AccessType>
-            <Description>Enable/disable kiosk browser's end session button.</Description>
+            <Description>Enable/disable kiosk browser&apos;s end session button.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -30699,7 +33471,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <Get />
               <Replace />
             </AccessType>
-            <Description>Enable/disable kiosk browser's home button.</Description>
+            <Description>Enable/disable kiosk browser&apos;s home button.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -30723,7 +33495,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <Get />
               <Replace />
             </AccessType>
-            <Description>Enable/disable kiosk browser's navigation buttons (forward/back).</Description>
+            <Description>Enable/disable kiosk browser&apos;s navigation buttons (forward/back).</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -30911,9 +33683,9 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </AccessType>
             <Description>This policy setting prevents users from adding new Microsoft accounts on this computer.
 
-If you select the "Users can’t add Microsoft accounts" option, users will not be able to create new Microsoft accounts on this computer, switch a local account to a Microsoft account, or connect a domain account to a Microsoft account. This is the preferred option if you need to limit the use of Microsoft accounts in your enterprise.
+If you select the &quot;Users can’t add Microsoft accounts&quot; option, users will not be able to create new Microsoft accounts on this computer, switch a local account to a Microsoft account, or connect a domain account to a Microsoft account. This is the preferred option if you need to limit the use of Microsoft accounts in your enterprise.
 
-If you select the "Users can’t add or log on with Microsoft accounts" option, existing Microsoft account users will not be able to log on to Windows. Selecting this option might make it impossible for an existing administrator on this computer to log on and manage the system.
+If you select the &quot;Users can’t add or log on with Microsoft accounts&quot; option, existing Microsoft account users will not be able to log on to Windows. Selecting this option might make it impossible for an existing administrator on this computer to log on and manage the system.
 
 If you disable or do not configure this policy (recommended), users will be able to use Microsoft accounts with Windows.</Description>
             <DFFormat>
@@ -31002,7 +33774,7 @@ Note: If the Guest account is disabled and the security option Network Access: S
             </AccessType>
             <Description>Accounts: Limit local account use of blank passwords to console logon only
 
-This security setting determines whether local accounts that are not password protected can be used to log on from locations other than the physical computer console. If enabled, local accounts that are not password protected will only be able to log on at the computer's keyboard.
+This security setting determines whether local accounts that are not password protected can be used to log on from locations other than the physical computer console. If enabled, local accounts that are not password protected will only be able to log on at the computer&apos;s keyboard.
 
 Default: Enabled.
 
@@ -31069,7 +33841,7 @@ Default: Administrator.</Description>
             </AccessType>
             <Description>Accounts: Rename guest account
 
-This security setting determines whether a different account name is associated with the security identifier (SID) for the account "Guest." Renaming the well-known Guest account makes it slightly more difficult for unauthorized persons to guess this user name and password combination.
+This security setting determines whether a different account name is associated with the security identifier (SID) for the account &quot;Guest.&quot; Renaming the well-known Guest account makes it slightly more difficult for unauthorized persons to guess this user name and password combination.
 
 Default: Guest.</Description>
             <DFFormat>
@@ -31211,118 +33983,6 @@ Default: This policy is not defined and CD-ROM access is not restricted to the l
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Domain member: Digitally encrypt or sign secure channel data (always)
-
-This security setting determines whether all secure channel traffic initiated by the domain member must be signed or encrypted.
-
-When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass through authentication, LSA SID/name Lookup etc.
-
-This setting determines whether or not all secure channel traffic initiated by the domain member meets minimum security requirements. Specifically it determines whether all secure channel traffic initiated by the domain member must be signed or encrypted. If this policy is enabled, then the secure channel will not be established unless either signing or encryption of all secure channel traffic is negotiated. If this policy is disabled, then encryption and signing of all secure channel traffic is negotiated with the Domain Controller in which case the level of signing and encryption depends on the version of the Domain Controller and the settings of the following two policies:
-
-Domain member: Digitally encrypt secure channel data (when possible)
-Domain member: Digitally sign secure channel data (when possible)
-
-Default: Enabled.
-
-Notes:
-
-If this policy is enabled, the policy Domain member: Digitally sign secure channel data (when possible) is assumed to be enabled regardless of its current setting. This ensures that the domain member attempts to negotiate at least signing of the secure channel traffic.
-If this policy is enabled, the policy Domain member: Digitally sign secure channel data (when possible) is assumed to be enabled regardless of its current setting. This ensures that the domain member attempts to negotiate at least signing of the secure channel traffic.
-Logon information transmitted over the secure channel is always encrypted regardless of whether encryption of ALL other secure channel traffic is negotiated or not.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>DomainMember_DigitallyEncryptSecureChannelDataWhenPossible</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Domain member: Digitally encrypt secure channel data (when possible)
-
-This security setting determines whether a domain member attempts to negotiate encryption for all secure channel traffic that it initiates.
-
-When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass-through authentication, LSA SID/name Lookup etc.
-
-This setting determines whether or not the domain member attempts to negotiate encryption for all secure channel traffic that it initiates. If enabled, the domain member will request encryption of all secure channel traffic. If the domain controller supports encryption of all secure channel traffic, then all secure channel traffic will be encrypted. Otherwise only logon information transmitted over the secure channel will be encrypted. If this setting is disabled, then the domain member will not attempt to negotiate secure channel encryption.
-
-Default: Enabled.
-
-Important
-
-There is no known reason for disabling this setting. Besides unnecessarily reducing the potential confidentiality level of the secure channel, disabling this setting may unnecessarily reduce secure channel throughput, because concurrent API calls that use the secure channel are only possible when the secure channel is signed or encrypted.
-
-Note: Domain controllers are also domain members and establish secure channels with other domain controllers in the same domain as well as domain controllers in trusted domains.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>DomainMember_DisableMachineAccountPasswordChanges</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Domain member: Disable machine account password changes
-
-Determines whether a domain member periodically changes its computer account password. If this setting is enabled, the domain member does not attempt to change its computer account password. If this setting is disabled, the domain member attempts to change its computer account password as specified by the setting for Domain Member: Maximum age for machine account password, which by default is every 30 days.
-
-Default: Disabled.
-
-Notes
-
-This security setting should not be enabled. Computer account passwords are used to establish secure channel communications between members and domain controllers and, within the domain, between the domain controllers themselves. Once it is established, the secure channel is used to transmit sensitive information that is necessary for making authentication and authorization decisions.
-This setting should not be used in an attempt to support dual-boot scenarios that use the same computer account. If you want to dual-boot two installations that are joined to the same domain, give the two installations different computer names.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked</NodeName>
           <DFProperties>
             <AccessType>
@@ -31358,7 +34018,7 @@ Do not display user information (3)</Description>
               <Get />
               <Replace />
             </AccessType>
-            <Description>Interactive logon: Don't display last signed-in
+            <Description>Interactive logon: Don&apos;t display last signed-in
 This security setting determines whether the Windows sign-in screen will show the username of the last person who signed in on this PC.
 If this policy is enabled, the username will not be shown.
 
@@ -31388,7 +34048,7 @@ Default: Disabled.</Description>
               <Get />
               <Replace />
             </AccessType>
-            <Description>Interactive logon: Don't display username at sign-in
+            <Description>Interactive logon: Don&apos;t display username at sign-in
 This security setting determines whether the username of the person signing in to this PC appears at Windows sign-in, after credentials are entered, and before the PC desktop is shown.
 If this policy is enabled, the username will not be shown.
 
@@ -31422,7 +34082,7 @@ Default: Disabled.</Description>
 
 This security setting determines whether pressing CTRL+ALT+DEL is required before a user can log on.
 
-If this policy is enabled on a computer, a user is not required to press CTRL+ALT+DEL to log on. Not having to press CTRL+ALT+DEL leaves users susceptible to attacks that attempt to intercept the users' passwords. Requiring CTRL+ALT+DEL before users log on ensures that users are communicating by means of a trusted path when entering their passwords.
+If this policy is enabled on a computer, a user is not required to press CTRL+ALT+DEL to log on. Not having to press CTRL+ALT+DEL leaves users susceptible to attacks that attempt to intercept the users&apos; passwords. Requiring CTRL+ALT+DEL before users log on ensures that users are communicating by means of a trusted path when entering their passwords.
 
 If this policy is disabled, any user is required to press CTRL+ALT+DEL before logging on to Windows.
 
@@ -31561,6 +34221,52 @@ Default: This policy is not defined, which means that the system treats it as No
 On Windows Vista and above: For this setting to work, the Smart Card Removal Policy service must be started.</Description>
             <DFFormat>
               <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>MicrosoftNetworkClient_DigitallySignCommunicationsAlways</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Microsoft network client: Digitally sign communications (always)
+
+This security setting determines whether packet signing is required by the SMB client component.
+
+The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB server is permitted.
+
+If this setting is enabled, the Microsoft network client will not communicate with a Microsoft network server unless that server agrees to perform SMB packet signing. If this policy is disabled, SMB packet signing is negotiated between the client and server.
+
+Default: Disabled.
+
+Important
+
+For this policy to take effect on computers running Windows 2000, client-side packet signing must also be enabled. To enable client-side SMB packet signing, set Microsoft network client: Digitally sign communications (if server agrees).
+
+Notes
+
+All Windows operating systems support both a client-side SMB component and a server-side SMB component. On Windows 2000 and later operating systems, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
+Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing.
+Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
+Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing.
+Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled.
+SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors.
+For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.</Description>
+            <DFFormat>
+              <int/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -31911,6 +34617,44 @@ This policy is supported on at least Windows Server 2016.</Description>
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Network security: Allow Local System to use computer identity for NTLM
+
+This policy setting allows Local System services that use Negotiate to use the computer identity when reverting to NTLM authentication.
+
+If you enable this policy setting, services running as Local System that use Negotiate will use the computer identity. This might cause some authentication requests between Windows operating systems to fail and log an error.
+
+If you disable this policy setting, services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously.
+
+By default, this policy is enabled on Windows 7 and above.
+
+By default, this policy is disabled on Windows Vista.
+
+This policy is supported on at least Windows Vista or Windows Server 2008.
+
+Note: Windows Vista or Windows Server 2008 do not expose this setting in Group Policy.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>NetworkSecurity_AllowPKU2UAuthenticationRequests</NodeName>
           <DFProperties>
             <AccessType>
@@ -32022,6 +34766,41 @@ Windows Vista, Windows Server 2008, Windows 7, and Windows Server 2008 R2: Send 
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Network security: Minimum session security for NTLM SSP based (including secure RPC) clients
+
+This security setting allows a client to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are:
+
+Require NTLMv2 session security: The connection will fail if NTLMv2 protocol is not negotiated.
+Require 128-bit encryption: The connection will fail if strong encryption (128-bit) is not negotiated.
+
+Default:
+
+Windows XP, Windows Vista, Windows 2000 Server, Windows Server 2003, and Windows Server 2008: No requirements.
+
+Windows 7 and Windows Server 2008 R2: Require 128-bit encryption</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</NodeName>
           <DFProperties>
             <AccessType>
@@ -32067,7 +34846,7 @@ Windows 7 and Windows Server 2008 R2: Require 128-bit encryption</Description>
             </AccessType>
             <Description>Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication
 
-This policy setting allows you to create an exception list of remote servers to which clients are allowed to use NTLM authentication if the  "Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers" policy setting is configured.
+This policy setting allows you to create an exception list of remote servers to which clients are allowed to use NTLM authentication if the  &quot;Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers&quot; policy setting is configured.
 
 If you configure this policy setting, you can define a list of remote servers to which clients are allowed to use NTLM authentication.
 
@@ -32101,15 +34880,15 @@ The naming format for servers on this exception list is the fully qualified doma
 
 This policy setting allows you to audit incoming NTLM traffic.
 
-If you select "Disable", or do not configure this policy setting, the server will not log events for incoming NTLM traffic.
+If you select &quot;Disable&quot;, or do not configure this policy setting, the server will not log events for incoming NTLM traffic.
 
-If you select "Enable auditing for domain accounts", the server will log events for NTLM pass-through authentication requests that would be blocked when the "Network Security: Restrict NTLM: Incoming NTLM traffic" policy setting is set to the "Deny all domain accounts" option.
+If you select &quot;Enable auditing for domain accounts&quot;, the server will log events for NTLM pass-through authentication requests that would be blocked when the &quot;Network Security: Restrict NTLM: Incoming NTLM traffic&quot; policy setting is set to the &quot;Deny all domain accounts&quot; option.
 
-If you select "Enable auditing for all accounts", the server will log events for all NTLM authentication requests that would be blocked when the "Network Security: Restrict NTLM: Incoming NTLM traffic" policy setting is set to the "Deny all accounts" option.
+If you select &quot;Enable auditing for all accounts&quot;, the server will log events for all NTLM authentication requests that would be blocked when the &quot;Network Security: Restrict NTLM: Incoming NTLM traffic&quot; policy setting is set to the &quot;Deny all accounts&quot; option.
 
 This policy is supported on at least Windows 7 or Windows Server 2008 R2.
 
-Note: Audit events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.</Description>
+Note: Audit events are recorded on this computer in the &quot;Operational&quot; Log located under the Applications and Services Log/Microsoft/Windows/NTLM.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -32137,15 +34916,15 @@ Note: Audit events are recorded on this computer in the "Operational" Log locate
 
 This policy setting allows you to deny or allow incoming NTLM traffic.
 
-If you select "Allow all" or do not configure this policy setting, the server will allow all NTLM authentication requests.
+If you select &quot;Allow all&quot; or do not configure this policy setting, the server will allow all NTLM authentication requests.
 
-If you select "Deny all domain accounts," the server will deny NTLM authentication requests for domain logon and display an NTLM blocked error, but allow local account logon.
+If you select &quot;Deny all domain accounts,&quot; the server will deny NTLM authentication requests for domain logon and display an NTLM blocked error, but allow local account logon.
 
-If you select "Deny all accounts," the server will deny NTLM authentication requests from incoming traffic and display an NTLM blocked error.
+If you select &quot;Deny all accounts,&quot; the server will deny NTLM authentication requests from incoming traffic and display an NTLM blocked error.
 
 This policy is supported on at least Windows 7 or Windows Server 2008 R2.
 
-Note: Block events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.</Description>
+Note: Block events are recorded on this computer in the &quot;Operational&quot; Log located under the Applications and Services Log/Microsoft/Windows/NTLM.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -32173,15 +34952,15 @@ Note: Block events are recorded on this computer in the "Operational" Log locate
 
 This policy setting allows you to deny or audit outgoing NTLM traffic from this Windows 7 or this Windows Server 2008 R2 computer to any Windows remote server.
 
-If you select "Allow all" or do not configure this policy setting, the client computer can authenticate identities to a remote server by using NTLM authentication.
+If you select &quot;Allow all&quot; or do not configure this policy setting, the client computer can authenticate identities to a remote server by using NTLM authentication.
 
-If you select "Audit all," the client computer logs an event for each NTLM authentication request to a remote server. This allows you to identify those servers receiving NTLM authentication requests from the client computer.
+If you select &quot;Audit all,&quot; the client computer logs an event for each NTLM authentication request to a remote server. This allows you to identify those servers receiving NTLM authentication requests from the client computer.
 
-If you select "Deny all," the client computer cannot authenticate identities to a remote server by using NTLM authentication. You can use the "Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication" policy setting to define a list of remote servers to which clients are allowed to use NTLM authentication.
+If you select &quot;Deny all,&quot; the client computer cannot authenticate identities to a remote server by using NTLM authentication. You can use the &quot;Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication&quot; policy setting to define a list of remote servers to which clients are allowed to use NTLM authentication.
 
 This policy is supported on at least Windows 7 or Windows Server 2008 R2.
 
-Note: Audit and block events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.</Description>
+Note: Audit and block events are recorded on this computer in the &quot;Operational&quot; Log located under the Applications and Services Log/Microsoft/Windows/NTLM.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -32274,9 +35053,9 @@ Default: Disabled.</Description>
 
 This policy setting controls whether User Interface Accessibility (UIAccess or UIA) programs can automatically disable the secure desktop for elevation prompts used by a standard user.
 
-• Enabled: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you do not disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop.
+• Enabled: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you do not disable the &quot;User Account Control: Switch to the secure desktop when prompting for elevation&quot; policy setting, the prompts appear on the interactive user&apos;s desktop instead of the secure desktop.
 
-• Disabled: (Default) The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.</Description>
+• Disabled: (Default) The secure desktop can be disabled only by the user of the interactive desktop or by disabling the &quot;User Account Control: Switch to the secure desktop when prompting for elevation&quot; policy setting.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -32308,15 +35087,15 @@ The options are:
 
 • Elevate without prompting: Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials. Note: Use this option only in the most constrained environments.
 
-• Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege.
+• Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user&apos;s highest available privilege.
 
-• Prompt for consent on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
+• Prompt for consent on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user&apos;s highest available privilege.
 
 • Prompt for credentials: When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
 
-• Prompt for consent: When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
+• Prompt for consent: When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user&apos;s highest available privilege.
 
-• Prompt for consent for non-Windows binaries: (Default) When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.</Description>
+• Prompt for consent for non-Windows binaries: (Default) When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user&apos;s highest available privilege.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -32509,13 +35288,13 @@ The options are:
             </AccessType>
             <Description>User Account Control: Switch to the secure desktop when prompting for elevation
 
-This policy setting controls whether the elevation request prompt is displayed on the interactive user's desktop or the secure desktop.
+This policy setting controls whether the elevation request prompt is displayed on the interactive user&apos;s desktop or the secure desktop.
 
 The options are:
 
 • Enabled: (Default) All elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users.
 
-• Disabled: All elevation requests go to the interactive user's desktop. Prompt behavior policy settings for administrators and standard users are used.</Description>
+• Disabled: All elevation requests go to the interactive user&apos;s desktop. Prompt behavior policy settings for administrators and standard users are used.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -32787,7 +35566,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>This policy setting allows backup and restore of cellular text messages to Microsoft's cloud services.</Description>
+            <Description>This policy setting allows backup and restore of cellular text messages to Microsoft&apos;s cloud services.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -33758,6 +36537,30 @@ The options are:
               <Replace />
             </AccessType>
             <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowCrossDeviceClipboard</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Allows syncing of Clipboard across devices under the same Microsoft account.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -35365,7 +38168,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'trusted devices' privacy setting for the listed apps. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the &apos;trusted devices&apos; privacy setting for the listed apps. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -35653,7 +38456,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'Communicate with unpaired wireless devices' privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the &apos;Communicate with unpaired wireless devices&apos; privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -35677,7 +38480,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>Allows apps/system to publish 'User Activities' into ActivityFeed.</Description>
+            <Description>Allows apps/system to publish &apos;User Activities&apos; into ActivityFeed.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -35701,7 +38504,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>Allows ActivityFeed to upload published 'User Activities'.</Description>
+            <Description>Allows ActivityFeed to upload published &apos;User Activities&apos;.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -37238,6 +40041,30 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>RecoveryEnvironmentAuthentication</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy controls the requirement of Admin Authentication in RecoveryEnvironment.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>RequireDeviceEncryption</NodeName>
           <DFProperties>
             <AccessType>
@@ -38126,7 +40953,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>Enabling this policy hides "Change account settings" from appearing in the user tile in the start menu.</Description>
+            <Description>Enabling this policy hides &quot;Change account settings&quot; from appearing in the user tile in the start menu.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -38174,7 +41001,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>Enabling this policy hides "Hibernate" from appearing in the power button in the start menu.</Description>
+            <Description>Enabling this policy hides &quot;Hibernate&quot; from appearing in the power button in the start menu.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -38198,7 +41025,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>Enabling this policy hides "Lock" from appearing in the user tile in the start menu.</Description>
+            <Description>Enabling this policy hides &quot;Lock&quot; from appearing in the user tile in the start menu.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -38294,7 +41121,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>Enabling this policy hides "Restart/Update and restart" from appearing in the power button in the start menu.</Description>
+            <Description>Enabling this policy hides &quot;Restart/Update and restart&quot; from appearing in the power button in the start menu.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -38318,7 +41145,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>Enabling this policy hides "Shut down/Update and shut down" from appearing in the power button in the start menu.</Description>
+            <Description>Enabling this policy hides &quot;Shut down/Update and shut down&quot; from appearing in the power button in the start menu.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -38342,7 +41169,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>Enabling this policy hides "Sign out" from appearing in the user tile in the start menu.</Description>
+            <Description>Enabling this policy hides &quot;Sign out&quot; from appearing in the user tile in the start menu.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -38366,7 +41193,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>Enabling this policy hides "Sleep" from appearing in the power button in the start menu.</Description>
+            <Description>Enabling this policy hides &quot;Sleep&quot; from appearing in the power button in the start menu.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -38390,7 +41217,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>Enabling this policy hides "Switch account" from appearing in the user tile in the start menu.</Description>
+            <Description>Enabling this policy hides &quot;Switch account&quot; from appearing in the user tile in the start menu.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -38559,6 +41386,30 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <Description></Description>
             <DFFormat>
               <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>RemovableDiskDenyWriteAccess</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>If you enable this policy setting, write access is denied to this removable storage class. If you disable or do not configure this policy setting, write access is allowed to this removable storage class. Note: To require that users write data to BitLocker-protected storage, enable the policy setting &quot;Deny write access to drives not protected by BitLocker,&quot; which is located in &quot;Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Removable Data Drives.&quot;</Description>
+            <DFFormat>
+              <int/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -38810,6 +41661,30 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>ConfigureMicrosoft365UploadEndpoint</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>ConfigureTelemetryOptInChangeNotification</NodeName>
           <DFProperties>
             <AccessType>
@@ -38835,6 +41710,54 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
         </Node>
         <Node>
           <NodeName>ConfigureTelemetryOptInSettingsUx</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableDeviceDelete</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableDiagnosticDataViewer</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -38962,7 +41885,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>This policy setting, in combination with the Allow Telemetry policy setting, enables organizations to send Microsoft a specific set of diagnostic data for IT insights via Windows Analytics services. By configuring this setting, you're not stopping people from changing their Telemetry Settings; however, you are stopping them from choosing a higher level than you've set for the organization. To enable this behavior, you must complete two steps: 1. Enable this policy setting 2. Set Allow Telemetry to level 2 (Enhanced).If you configure these policy settings together, you'll send the Basic level of diagnostic data plus any additional events that are required for Windows Analytics, to Microsoft. The additional events are documented here: https://go.Microsoft.com/fwlink/?linked=847594. If you enable Enhanced diagnostic data in the Allow Telemetry policy setting, but you don't configure this policy setting, you'll send the required events for Windows Analytics, plus any additional Enhanced level telemetry data to Microsoft. This setting has no effect on computers configured to send Full, Basic, or Security level diagnostic data to Microsoft. If you disable or don't configure this policy setting, then the level of diagnostic data sent to Microsoft is determined by the Allow Telemetry policy setting.</Description>
+            <Description>This policy setting, in combination with the Allow Telemetry policy setting, enables organizations to send Microsoft a specific set of diagnostic data for IT insights via Windows Analytics services. By configuring this setting, you&apos;re not stopping people from changing their Telemetry Settings; however, you are stopping them from choosing a higher level than you&apos;ve set for the organization. To enable this behavior, you must complete two steps: 1. Enable this policy setting 2. Set Allow Telemetry to level 2 (Enhanced).If you configure these policy settings together, you&apos;ll send the Basic level of diagnostic data plus any additional events that are required for Windows Analytics, to Microsoft. The additional events are documented here: https://go.Microsoft.com/fwlink/?linked=847594. If you enable Enhanced diagnostic data in the Allow Telemetry policy setting, but you don&apos;t configure this policy setting, you&apos;ll send the required events for Windows Analytics, plus any additional Enhanced level telemetry data to Microsoft. This setting has no effect on computers configured to send Full, Basic, or Security level diagnostic data to Microsoft. If you disable or don&apos;t configure this policy setting, then the level of diagnostic data sent to Microsoft is determined by the Allow Telemetry policy setting.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -39032,7 +41955,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <Description>This setting determines whether the service&apos;s start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -39056,7 +41979,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <Description>This setting determines whether the service&apos;s start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -39080,7 +42003,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <Description>This setting determines whether the service&apos;s start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -39104,7 +42027,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <Description>This setting determines whether the service&apos;s start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -39128,7 +42051,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <Description>This setting determines whether the service&apos;s start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -39152,7 +42075,53 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <Description>This setting determines whether the service&apos;s start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>TaskManager</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>AllowEndTask</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This setting determines whether non-administrators can use Task Manager to end tasks - enabled (1) or disabled (0). Default: enabled</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -40072,6 +43041,30 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AutoRestartDeadlinePeriodInDaysForFeatureUpdates</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AutoRestartNotificationSchedule</NodeName>
           <DFProperties>
             <AccessType>
@@ -40336,6 +43329,30 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>EngagedRestartDeadlineForFeatureUpdates</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EngagedRestartSnoozeSchedule</NodeName>
           <DFProperties>
             <AccessType>
@@ -40360,7 +43377,55 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>EngagedRestartSnoozeScheduleForFeatureUpdates</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EngagedRestartTransitionSchedule</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>EngagedRestartTransitionScheduleForFeatureUpdates</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -40936,7 +44001,79 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>SetDisablePauseUXAccess</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SetDisableUXWUAccess</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>SetEDURestart</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>UpdateNotificationKioskMode</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -41038,7 +44175,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>This user right is used by Credential Manager during Backup/Restore. No accounts should have this privilege, as it is only assigned to Winlogon. Users' saved credentials might be compromised if this privilege is given to other entities.</Description>
+            <Description>This user right is used by Credential Manager during Backup/Restore. No accounts should have this privilege, as it is only assigned to Winlogon. Users&apos; saved credentials might be compromised if this privilege is given to other entities.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -41182,7 +44319,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>This security setting determines whether users can create global objects that are available to all sessions. Users can still create objects that are specific to their own session if they do not have this user right. Users who can create global objects could affect processes that run under other users' sessions, which could lead to application failure or data corruption. Caution: Assigning this user right can be a security risk. Assign this user right only to trusted users.</Description>
+            <Description>This security setting determines whether users can create global objects that are available to all sessions. Users can still create objects that are specific to their own session if they do not have this user right. Users who can create global objects could affect processes that run under other users&apos; sessions, which could lead to application failure or data corruption. Caution: Assigning this user right can be a security risk. Assign this user right only to trusted users.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -41254,7 +44391,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>This user right determines if the user can create a symbolic link from the computer he is logged on to. Caution: This privilege should only be given to trusted users. Symbolic links can expose security vulnerabilities in applications that aren't designed to handle them. Note: This setting can be used in conjunction a symlink filesystem setting that can be manipulated with the command line utility to control the kinds of symlinks that are allowed on the machine. Type 'fsutil behavior set symlinkevaluation /?' at the command line to get more information about fsutil and symbolic links.</Description>
+            <Description>This user right determines if the user can create a symbolic link from the computer he is logged on to. Caution: This privilege should only be given to trusted users. Symbolic links can expose security vulnerabilities in applications that aren&apos;t designed to handle them. Note: This setting can be used in conjunction a symlink filesystem setting that can be manipulated with the command line utility to control the kinds of symlinks that are allowed on the machine. Type &apos;fsutil behavior set symlinkevaluation /?&apos; at the command line to get more information about fsutil and symbolic links.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -41446,7 +44583,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>Assigning this user right to a user allows programs running on behalf of that user to impersonate a client. Requiring this user right for this kind of impersonation prevents an unauthorized user from convincing a client to connect (for example, by remote procedure call (RPC) or named pipes) to a service that they have created and then impersonating that client, which can elevate the unauthorized user's permissions to administrative or system levels. Caution: Assigning this user right can be a security risk. Only assign this user right to trusted users. Note: By default, services that are started by the Service Control Manager have the built-in Service group added to their access tokens. Component Object Model (COM) servers that are started by the COM infrastructure and that are configured to run under a specific account also have the Service group added to their access tokens. As a result, these services get this user right when they are started. In addition, a user can also impersonate an access token if any of the following conditions exist. 
+            <Description>Assigning this user right to a user allows programs running on behalf of that user to impersonate a client. Requiring this user right for this kind of impersonation prevents an unauthorized user from convincing a client to connect (for example, by remote procedure call (RPC) or named pipes) to a service that they have created and then impersonating that client, which can elevate the unauthorized user&apos;s permissions to administrative or system levels. Caution: Assigning this user right can be a security risk. Only assign this user right to trusted users. Note: By default, services that are started by the Service Control Manager have the built-in Service group added to their access tokens. Component Object Model (COM) servers that are started by the COM infrastructure and that are configured to run under a specific account also have the Service group added to their access tokens. As a result, these services get this user right when they are started. In addition, a user can also impersonate an access token if any of the following conditions exist. 
 1) The access token that is being impersonated is for this user.
 2) The user, in this logon session, created the access token by logging on to the network with explicit credentials.
 3) The requested level is less than Impersonate, such as Anonymous or Identify.
@@ -42036,6 +45173,30 @@ Because of these factors, users do not usually need this user right. Warning: If
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DisableClearTpmButton</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DisableDeviceSecurityUI</NodeName>
           <DFProperties>
             <AccessType>
@@ -42157,6 +45318,30 @@ Because of these factors, users do not usually need this user right. Warning: If
         </Node>
         <Node>
           <NodeName>DisableNotifications</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableTpmFirmwareUpdateWarning</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -42349,6 +45534,30 @@ Because of these factors, users do not usually need this user right. Warning: If
         </Node>
         <Node>
           <NodeName>HideTPMTroubleshooting</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>HideWindowsSecurityNotificationAreaControl</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -42809,7 +46018,7 @@ Because of these factors, users do not usually need this user right. Warning: If
               <Replace />
             </AccessType>
             <Description>This policy setting allows you to turn off projection to a PC
-                            If you set it to 0, your PC isn't discoverable and can't be projected to
+                            If you set it to 0, your PC isn&apos;t discoverable and can&apos;t be projected to
                             If you set it to 1, your PC is discoverable and can be projected to above the lock screen only. The user has an option to turn it always on or off except for manual launch, too.</Description>
             <DFFormat>
               <int/>
@@ -42835,7 +46044,7 @@ Because of these factors, users do not usually need this user right. Warning: If
               <Replace />
             </AccessType>
             <Description>This policy setting allows you to turn off projection to a PC over infrastructure.
-                            If you set it to 0, your PC cannot be discoverable and can't be projected to over infrastructure, though it may still be possible to project over WiFi Direct.
+                            If you set it to 0, your PC cannot be discoverable and can&apos;t be projected to over infrastructure, though it may still be possible to project over WiFi Direct.
                             If you set it to 1, your PC can be discoverable and can be projected to over infrastructure.</Description>
             <DFFormat>
               <int/>
@@ -42885,8 +46094,9 @@ Because of these factors, users do not usually need this user right. Warning: If
               <Replace />
             </AccessType>
             <Description>This policy setting allows you to require a pin for pairing.
-                            If you turn this on, the pairing ceremony for new devices will always require a PIN
-                            If you turn it off or don't configure it, a pin isn't required for pairing.</Description>
+                            If you set this to 0, a pin isn&apos;t required for pairing.
+                            If you set this to 1, the pairing ceremony for new devices will always require a PIN.
+                            If you set this to 2, all pairings will require PIN.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -43487,6 +46697,29 @@ Because of these factors, users do not usually need this user right. Warning: If
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>LaunchAppAfterLogOn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are to be launched after logon.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>MSIAllowUserControlOverInstall</NodeName>
           <DFProperties>
             <AccessType>
@@ -43621,6 +46854,62 @@ Because of these factors, users do not usually need this user right. Warning: If
             <MSFT:ADMXCategory>AppxPackageManager~AT~WindowsComponents~AppxDeployment</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisableDeploymentToNonSystemVolumes</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ScheduleForceRestartForUpdateFailures</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:XMLSchema><![CDATA[<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="recurrence" final="restriction">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="None" />
+        <xs:enumeration value="Daily" />
+        <xs:enumeration value="Weekly" />
+        <xs:enumeration value="Monthly" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="daysOfWeek" final="restriction">
+    <xs:restriction base="xs:unsignedByte">
+      <xs:minInclusive value="1" />
+      <xs:maxInclusive value="127" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="daysOfMonth" final="restriction">
+    <xs:restriction base="xs:unsignedInt">
+      <xs:minInclusive value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="ForceRestart">
+    <xs:complexType>
+      <xs:attribute name="StartDateTime" type="xs:dateTime" use="required"/> 
+      <xs:attribute name="Recurrence" type="recurrence" use="required"/> 
+      <xs:attribute name="RunIfTaskIsMissed" type="xs:boolean" use="required"/> 
+      <xs:attribute name="DaysOfWeek" type="daysOfWeek"/> 
+      <xs:attribute name="DaysOfMonth" type="daysOfMonth"/> 
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></MSFT:XMLSchema>
           </DFProperties>
         </Node>
       </Node>
@@ -44542,6 +47831,79 @@ Because of these factors, users do not usually need this user right. Warning: If
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
+        <Node>
+          <NodeName>EnableFastFirstSignIn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Specifies whether new non-admin AAD accounts should auto-connect to pre-created candidate local accounts</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>EnableWebSignIn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Specifies whether web-based sign in is allowed for logging in to Windows</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreferredAadTenantDomainName</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>Specifies the preferred domain among available domains in the AAD tenant.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
       </Node>
       <Node>
         <NodeName>Autoplay</NodeName>
@@ -44684,6 +48046,194 @@ Because of these factors, users do not usually need this user right. Warning: If
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:SupportedValues AllowedValues="3,4,6,7"></MSFT:SupportedValues>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>BITS</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>BandwidthThrottlingEndTime</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>17</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="23"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>Bits.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>BITS_BandwidthLimitSchedTo</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>Bits~AT~Network~BITS</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>BITS_MaxBandwidth</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>BandwidthThrottlingStartTime</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>8</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="23"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>Bits.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>BITS_BandwidthLimitSchedFrom</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>Bits~AT~Network~BITS</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>BITS_MaxBandwidth</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>BandwidthThrottlingTransferRate</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1000</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="4294967200"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>Bits.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>BITS_MaxTransferRateText</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>Bits~AT~Network~BITS</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>BITS_MaxBandwidth</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>CostedNetworkBehaviorBackgroundPriority</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="1" high="5"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>Bits.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>BITS_TransferPolicyNormalPriorityValue</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>Bits~AT~Network~BITS</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>BITS_SetTransferPolicyOnCostedNetwork</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>CostedNetworkBehaviorForegroundPriority</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="1" high="5"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>Bits.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>BITS_TransferPolicyForegroundPriorityValue</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>Bits~AT~Network~BITS</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>BITS_SetTransferPolicyOnCostedNetwork</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>JobInactivityTimeout</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>90</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="1" high="999"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>Bits.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>BITS_Job_Timeout_Time</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>Bits~AT~Network~BITS</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>BITS_Job_Timeout</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -45141,6 +48691,37 @@ Because of these factors, users do not usually need this user right. Warning: If
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AllowFullScreenMode</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>With this policy, you can specify whether to allow full-screen mode, which shows only the web content and hides the Microsoft Edge UI.
+
+If enabled or not configured, full-screen mode is available for use in Microsoft Edge. Your users and extensions must have the proper permissions.
+
+If disabled, full-screen mode is unavailable for use in Microsoft Edge.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowFullScreenMode</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AllowInPrivate</NodeName>
           <DFProperties>
             <AccessType>
@@ -45174,7 +48755,7 @@ Because of these factors, users do not usually need this user right. Warning: If
               <Get />
             </AccessType>
             <DefaultValue>1</DefaultValue>
-            <Description>This policy setting lets you decide whether the Microsoft Compatibility List is enabled or disabled in Microsoft Edge. This feature uses a Microsoft-provided list to ensure that any sites with known compatibility issues are displayed correctly when a user navigates to them. By default, the Microsoft Compatibility List is enabled and can be viewed by navigating to about:compat.
+            <Description>This policy setting lets you decide whether the Microsoft Compatibility List is enabled or disabled in Microsoft Edge. This feature uses a Microsoft-provided list to ensure that any sites with known compatibility issues are displayed correctly when a user navigates to them. By default, the Microsoft Compatibility List is enabled and can be viewed by navigating to about&#58;compat.
 
 If you enable or don’t configure this setting, Microsoft Edge will periodically download the latest version of the list from Microsoft and will apply the configurations specified there during browser navigation. If a user visits a site on the Microsoft Compatibility List, he or she will be prompted to open the site in Internet Explorer 11. Once in Internet Explorer, the site will automatically be rendered as if the user is viewing it in the previous version of Internet Explorer it requires to display correctly.
 
@@ -45254,6 +48835,97 @@ If you disable this setting, the Microsoft Compatibility List will not be used d
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AllowPrelaunch</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowPrelaunch</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowPrinting</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>With this policy, you can restrict whether printing web content in Microsoft Edge is allowed.
+
+If enabled, printing is allowed.
+
+If disabled, printing is not allowed.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowPrinting</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowSavingHistory</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>Microsoft Edge saves your user&apos;s browsing history, which is made up of info about the websites they visit, on their devices.
+
+If enabled or not configured, the browsing history is saved and visible in the History pane.
+
+If disabled, the browsing history stops saving and is not visible in the History pane. If browsing history exists before this policy was disabled, the previous browsing history remains visible in the History pane. This policy, when disabled, does not stop roaming of existing history or history coming from other roamed devices.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowSavingHistory</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AllowSearchEngineCustomization</NodeName>
           <DFProperties>
             <AccessType>
@@ -45313,6 +48985,34 @@ This policy will only apply on domain joined machines or when the device is MDM 
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AllowSideloadingOfExtensions</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This setting lets you decide whether employees can sideload extensions in Microsoft Edge.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowSideloadingOfExtensions</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AllowSmartScreen</NodeName>
           <DFProperties>
             <AccessType>
@@ -45336,6 +49036,67 @@ This policy will only apply on domain joined machines or when the device is MDM 
             <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AllowSmartScreen</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowTabPreloading</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>Prevent Microsoft Edge from starting and loading the Start and New Tab page at Windows startup and each time Microsoft Edge is closed.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowTabPreloading</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowWebContentOnNewTabPage</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This policy setting lets you configure what appears when Microsoft Edge opens a new tab. By default, Microsoft Edge opens the New Tab page.
+
+If you enable this setting, Microsoft Edge opens a new tab with the New Tab page.
+
+If you disable this setting, Microsoft Edge opens a new tab with a blank page. If you use this setting, employees can&apos;t change it.
+
+If you don&apos;t configure this setting, employees can choose how new tabs appears.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowWebContentOnNewTabPage</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -45405,7 +49166,7 @@ This policy will only apply on domain joined machines or when the device is MDM 
 
 If this setting is turned on, you can add up to 5 additional search engines for your employee. For each additional search engine you wish to add, you must specify a link to the OpenSearch XML file that contains, at minimum, the short name and the URL to the search engine. This policy does not affect the default search engine. Employees will not be able to remove these search engines, but they can set any one of these as the default.
 
-If this setting is not configured, the search engines are the ones specified in the App settings. If this setting is disabled, the search engines you had added will be deleted from your employee's machine.
+If this setting is not configured, the search engines are the ones specified in the App settings. If this setting is disabled, the search engines you had added will be deleted from your employee&apos;s machine.
 
 Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.</Description>
             <DFFormat>
@@ -45428,18 +49189,99 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>DisableLockdownOfStartPages</NodeName>
+          <NodeName>ConfigureFavoritesBar</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>The favorites bar shows your user&apos;s links to sites they have added to it. With this policy, you can specify whether to set the favorites bar to always be visible or hidden on any page.
+
+If enabled, favorites bar is always visible on any page, and the favorites bar toggle in Settings sets to On, but disabled preventing your users from making changes. An error message also shows at the top of the Settings pane indicating that your organization manages some settings. The show bar/hide bar option is hidden from the context menu.
+
+If disabled, the favorites bar is hidden, and the favorites bar toggle resets to Off, but disabled preventing your users from making changes. An error message also shows at the top of the Settings pane indicating that your organization manages some settings.
+
+If not configured, the favorites bar is hidden but is visible on the Start and New Tab pages, and the favorites bar toggle in Settings sets to Off but is enabled allowing the user to make changes.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ConfigureFavoritesBar</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureHomeButton</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Boolean policy that specifies whether the lockdown on the Start pages is disabled. This policy works with the Browser/HomePages policy, which locks down the Start pages that the users cannot modify. You can use the DisableLockdownOfStartPages policy to allow users to modify the Start pages when Browser/HomePages policy is in effect.
+            <Description>The Home button loads either the default Start page, the New tab page, or a URL defined in the Set Home Button URL policy.
 
-Note: This policy has no effect when Browser/HomePages is not configured.
+By default, this policy is disabled or not configured and clicking the home button loads the default Start page.
 
-Important
-This setting can only be used with domain-joined or MDM-enrolled devices. For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).</Description>
+When enabled, the home button is locked down preventing your users from making changes in Microsoft Edge&apos;s UI settings. To let your users change the Microsoft Edge UI settings, enable the Unlock Home Button policy.
+
+If Enabled AND:
+- Show home button &amp; set to Start page is selected, clicking the home button loads the Start page.
+- Show home button &amp; set to New tab page is selected, clicking the home button loads a New tab page.
+- Show home button &amp; set a specific page is selected, clicking the home button loads the URL specified in the Set Home Button URL policy.
+- Hide home button is selected, the home button is hidden in Microsoft Edge.
+
+Default setting: Disabled or not configured
+Related policies:
+- Set Home Button URL
+- Unlock Home Button</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>ConfigureHomeButtonDropdown</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ConfigureHomeButton</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureKioskMode</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Configure how Microsoft Edge behaves when it’s running in kiosk mode with assigned access, either as a single app or as one of multiple apps running on the kiosk device. You can control whether Microsoft Edge runs InPrivate full screen, InPrivate multi-tab with limited functionality, or normal Microsoft Edge.
+
+You need to configure Microsoft Edge in assigned access for this policy to take effect; otherwise, these settings are ignored. To learn more about assigned access and kiosk configuration, see “Configure kiosk and shared devices running Windows desktop editions” (https://aka.ms/E489vw).
+
+If enabled and set to 0 (Default or not configured):
+- If it’s a single app, it runs InPrivate full screen for digital signage or interactive displays.
+- If it’s one of many apps, Microsoft Edge runs as normal.
+If enabled and set to 1:
+- If it’s a single app, it runs a limited multi-tab version of InPrivate and is the only app available for public browsing. Users can’t minimize, close, or open windows or customize Microsoft Edge, but can clear browsing data and downloads and restart by clicking “End session.” You can configure Microsoft Edge to restart after a period of inactivity by using the “Configure kiosk reset after idle timeout” policy.
+- If it’s one of many apps, it runs in a limited multi-tab version of InPrivate for public browsing with other apps. Users can minimize, close, and open multiple InPrivate windows, but they can’t customize Microsoft Edge.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -45455,6 +49297,152 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
             <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>ConfigureKioskMode_TextBox</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ConfigureKioskMode</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureKioskResetAfterIdleTimeout</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>5</DefaultValue>
+            <Description>You can configure Microsoft Edge to reset to the configured start experience after a specified amount of idle time. The reset timer begins after the last user interaction. Resetting to the configured start experience deletes the current user’s browsing data.
+
+If enabled, you can set the idle time in minutes (0-1440). You must set the Configure kiosk mode policy to 1 and configure Microsoft Edge in assigned access as a single app for this policy to work. Once the idle time meets the time specified, a confirmation message prompts the user to continue, and if no user action, Microsoft Edge resets after 30 seconds.
+
+If you set this policy to 0, Microsoft Edge does not use an idle timer.
+
+If disabled or not configured, the default value is 5 minutes.
+
+If you do not configure Microsoft Edge in assigned access, then this policy does not take effect.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1440"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>ConfigureKioskResetAfterIdleTimeout_TextBox</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ConfigureKioskResetAfterIdleTimeout</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureOpenMicrosoftEdgeWith</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>3</DefaultValue>
+            <Description>You can configure Microsoft Edge to lock down the Start page, preventing users from changing or customizing it.
+
+If enabled, you can choose one of the following options:
+- Start page: the Start page loads ignoring the Configure Start Pages policy.
+- New tab page: the New tab page loads ignoring the Configure Start Pages policy.
+- Previous pages: all tabs the user had open when Microsoft Edge last closed loads ignoring the Configure Start Pages policy.
+- A specific page or pages: the URL(s) specified with Configure Start Pages policy load(s). If selected, you must specify at least one URL in Configure Start Pages; otherwise, this policy is ignored.
+
+When enabled, and you want to make changes, you must first set the Disable Lockdown of Start Pages to not configured, make the changes to the Configure Open Edge With policy, and then enable the Disable Lockdown of Start Pages policy.
+
+If disabled or not configured, and you enable the Disable Lockdown of Start Pages policy, your users can change or customize the Start page.
+
+Default setting: A specific page or pages (default)
+Related policies:
+-Disable Lockdown of Start Pages
+-Configure Start Pages</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>ConfigureOpenEdgeWithListBox</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ConfigureOpenEdgeWith</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureTelemetryForMicrosoft365Analytics</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Configures what browsing data will be sent to Microsoft 365 Analytics for devices belonging to an organization.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="3"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>ZonesListBox</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~DataCollectionAndPreviewBuilds</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ConfigureTelemetryForMicrosoft365Analytics</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableLockdownOfStartPages</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>You can configure Microsoft Edge to disable the lockdown of Start pages allowing users to change or customize their start pages.  To do this, you must also enable the Configure Start Pages or Configure Open Microsoft With policy. When enabled, all configured start pages are editable. Any Start page configured using the Configure Start pages policy is not locked down allowing users to edit their Start pages.
+
+If disabled or not configured, the Start pages configured in the Configure Start Pages policy cannot be changed and remain locked down.
+
+Supported devices: Domain-joined or MDM-enrolled
+Related policy:
+- Configure Start Pages
+- Configure Open Microsoft Edge With</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>DisableLockdownOfStartPagesListBox</MSFT:ADMXMappedElement>
             <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisableLockdownOfStartPages</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
@@ -45564,18 +49552,58 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>ForceEnabledExtensions</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>This setting lets you decide which extensions should be always enabled.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>ForceEnabledExtensions_List</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ForceEnabledExtensions</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>HomePages</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
             </AccessType>
             <DefaultValue></DefaultValue>
-            <Description>Configure the Start page URLs for your employees.
-Example:
-If you wanted to allow contoso.com and fabrikam.com then you would append /support to the site strings like contoso.com/support and fabrikam.com/support.
-Encapsulate each string with greater than and less than characters like any other XML tag.
+            <Description>When you enable the Configure Open Microsoft Edge With policy, you can configure one or more Start pages. When you enable this policy, users are not allowed to make changes to their Start pages.
 
-Version 1703 or later:  If you don't want to send traffic to Microsoft, you can use the about:blank value (encapsulate with greater than and less than characters like any other XML tag), which is honored for both domain- and non-domain-joined machines, when it's the only configured URL.</Description>
+If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
+
+      &lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;
+
+If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
+
+Version 1703 or later:
+If you do not want to send traffic to Microsoft, enable this policy and use the &lt;about&#58;blank&gt; value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+
+Version 1809:
+If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
+
+Supported devices: Domain-joined or MDM-enrolled
+Related policy:
+- Configure Open Microsoft Edge With
+- Disable Lockdown of Start Pages</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -45605,12 +49633,12 @@ Version 1703 or later:  If you don't want to send traffic to Microsoft, you ca
             <DefaultValue>0</DefaultValue>
             <Description>This policy setting lets you decide whether employees can add, import, sort, or edit the Favorites list on Microsoft Edge.
 
-If you enable this setting, employees won't be able to add, import, or change anything in the Favorites list. Also as part of this, Save a Favorite, Import settings, and the context menu items (such as, Create a new folder) are all turned off.
+If you enable this setting, employees won&apos;t be able to add, import, or change anything in the Favorites list. Also as part of this, Save a Favorite, Import settings, and the context menu items (such as, Create a new folder) are all turned off.
 
 Important
-Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
+Don&apos;t enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
 
-If you disable or don't configure this setting (default), employees can add, import and make changes to the Favorites list.</Description>
+If you disable or don&apos;t configure this setting (default), employees can add, import and make changes to the Favorites list.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -45637,7 +49665,7 @@ If you disable or don't configure this setting (default), employees can add, imp
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Prevent access to the about:flags page in Microsoft Edge.</Description>
+            <Description>Prevent access to the about&#58;flags page in Microsoft Edge.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -45654,6 +49682,37 @@ If you disable or don't configure this setting (default), employees can add, imp
             <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>PreventAccessToAboutFlagsInMicrosoftEdge</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventCertErrorOverrides</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Web security certificates are used to ensure a site your users go to is legitimate, and in some circumstances encrypts the data. With this policy, you can specify whether to prevent users from bypassing the security warning to sites that have SSL errors.
+
+If enabled, overriding certificate errors are not allowed.
+
+If disabled or not configured, overriding certificate errors are allowed.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>PreventCertErrorOverrides</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -45723,7 +49782,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Don't allow Windows Defender SmartScreen warning overrides</Description>
+            <Description>Don&apos;t allow Windows Defender SmartScreen warning overrides</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -45750,7 +49809,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Don't allow Windows Defender SmartScreen warning overrides for unverified files.</Description>
+            <Description>Don&apos;t allow Windows Defender SmartScreen warning overrides for unverified files.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -45767,34 +49826,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>PreventSmartScreenPromptOverrideForFiles</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>PreventTabPreloading</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description>Prevent Microsoft Edge from starting and loading the Start and New Tab page at Windows startup and each time Microsoft Edge is closed.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
-            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>PreventTabPreloading</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -45834,12 +49865,12 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DefaultValue></DefaultValue>
             <Description>This policy setting allows you to configure a default set of favorites, which will appear for employees. Employees cannot modify, sort, move, export or delete these provisioned favorites.
 
-If you enable this setting, you can set favorite URL's and favorite folders to appear on top of users' favorites list (either in the Hub or Favorites Bar). The user favorites will appear after these provisioned favorites.
+If you enable this setting, you can set favorite URL&apos;s and favorite folders to appear on top of users&apos; favorites list (either in the Hub or Favorites Bar). The user favorites will appear after these provisioned favorites.
 
 Important
-Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
+Don&apos;t enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
 
-If you disable or don't configure this setting, employees will see the favorites they set in the Hub and Favorites Bar.</Description>
+If you disable or don&apos;t configure this setting, employees will see the favorites they set in the Hub and Favorites Bar.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -45921,13 +49952,90 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>SetHomeButtonURL</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>The home button can be configured to load a custom URL when your user clicks the home button.
+
+If enabled, or configured, and the Configure Home Button policy is enabled, and the Show home button &amp; set a specific page is selected, a custom URL loads when your user clicks the home button.
+
+Default setting: Blank or not configured
+Related policy: Configure Home Button</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>SetHomeButtonURLPrompt</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>SetHomeButtonURL</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SetNewTabPageURL</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>You can set the default New Tab page URL in Microsoft Edge.  Enabling this policy prevents your users from changing the New tab page setting. When enabled and the Allow web content on New Tab page policy is disabled, Microsoft Edge ignores the URL specified in this policy and opens about&#58;blank.
+
+If enabled, you can set the default New Tab page URL.
+
+If disabled or not configured, the default Microsoft Edge new tab page is used.
+
+Default setting:  Disabled or not configured
+Related policy: Allow web content on New Tab page</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>SetNewTabPageURLPrompt</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>SetNewTabPageURL</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>ShowMessageWhenOpeningSitesInInternetExplorer</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Show message when opening sites in Internet Explorer</Description>
+            <Description>You can configure Microsoft Edge to open a site automatically in Internet Explorer 11 and choose to display a notification before the site opens. If you want to display a notification, you must enable Configure the Enterprise Mode Site List or Send all intranets sites to Internet Explorer 11 or both.
+
+If enabled, the notification appears on a new page. If you want users to continue in Microsoft Edge, select the Show Keep going in Microsoft Edge option from the drop-down list under Options.
+
+If disabled or not configured, the default app behavior occurs and no additional page displays.
+
+Default setting: Disabled or not configured
+Related policies:
+-Configure the Enterprise Mode Site List
+-Send all intranet sites to Internet Explorer 11</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -45940,7 +50048,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
@@ -45973,6 +50081,43 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>SyncFavoritesBetweenIEAndMicrosoftEdge</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>UnlockHomeButton</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>By default, when enabling Configure Home Button or Set Home Button URL, the home button is locked down to prevent your users from changing what page loads when clicking the home button. Use this policy to let users change the home button even when Configure Home Button or Set Home Button URL are enabled.
+
+If enabled, the UI settings for the home button are enabled allowing your users to make changes, including hiding and showing the home button as well as configuring a custom URL.
+
+If disabled or not configured, the UI settings for the home button are disabled preventing your users from making changes.
+
+Default setting: Disabled or not configured
+Related policy:
+-Configure Home Button
+-Set Home Button URL</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>MicrosoftEdge.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>MicrosoftEdge~AT~WindowsComponents~MicrosoftEdge</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>UnlockHomeButton</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -46641,7 +50786,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>If set to 1 then any MDM policy that is set that has an equivalent GP policy will result in GP service blocking the setting of the policy by GP MMC</Description>
+            <Description>If set to 1 then any MDM policy that is set that has an equivalent GP policy will result in GP service blocking the setting of the policy by GP MMC. Setting the value to 0 (zero) or deleting the policy will remove the GP policy blocks restore the saved GP policies.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -46654,7 +50799,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:SupportedValues low="1" high="1"></MSFT:SupportedValues>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -47550,6 +51695,35 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>CheckForSignaturesBeforeRunningScan</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>WindowsDefender.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>CheckForSignaturesBeforeRunningScan</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>WindowsDefender~AT~WindowsComponents~AntiSpywareDefender~Scan</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>CheckForSignaturesBeforeRunningScan</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>CloudBlockLevel</NodeName>
           <DFProperties>
             <AccessType>
@@ -47693,6 +51867,64 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DisableCatchupFullScan</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>WindowsDefender.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>Scan_DisableCatchupFullScan</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>WindowsDefender~AT~WindowsComponents~AntiSpywareDefender~Scan</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Scan_DisableCatchupFullScan</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableCatchupQuickScan</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>WindowsDefender.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>Scan_DisableCatchupQuickScan</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>WindowsDefender~AT~WindowsComponents~AntiSpywareDefender~Scan</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Scan_DisableCatchupQuickScan</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EnableControlledFolderAccess</NodeName>
           <DFProperties>
             <AccessType>
@@ -47718,6 +51950,35 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXMappedElement>ExploitGuard_ControlledFolderAccess_EnableControlledFolderAccess</MSFT:ADMXMappedElement>
             <MSFT:ADMXCategory>WindowsDefender~AT~WindowsComponents~AntiSpywareDefender~ExploitGuard~ExploitGuard_ControlledFolderAccess</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>ExploitGuard_ControlledFolderAccess_EnableControlledFolderAccess</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>EnableLowCPUPriority</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>WindowsDefender.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>Scan_LowCpuPriority</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>WindowsDefender~AT~WindowsComponents~AntiSpywareDefender~Scan</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Scan_LowCpuPriority</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -47856,6 +52117,10 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>WindowsDefender.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>Root_PUAProtection</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>WindowsDefender~AT~WindowsComponents~AntiSpywareDefender</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Root_PUAProtection</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -48001,6 +52266,62 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXMappedElement>Scan_ScheduleTime</MSFT:ADMXMappedElement>
             <MSFT:ADMXCategory>WindowsDefender~AT~WindowsComponents~AntiSpywareDefender~Scan</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Scan_ScheduleTime</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SignatureUpdateFallbackOrder</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>WindowsDefender.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>SignatureUpdate_FallbackOrder</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>WindowsDefender~AT~WindowsComponents~AntiSpywareDefender~SignatureUpdate</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>SignatureUpdate_FallbackOrder</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SignatureUpdateFileSharesSources</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>WindowsDefender.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>SignatureUpdate_DefinitionUpdateFileSharesSources</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>WindowsDefender~AT~WindowsComponents~AntiSpywareDefender~SignatureUpdate</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>SignatureUpdate_DefinitionUpdateFileSharesSources</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -48164,6 +52485,33 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXCategory>DeliveryOptimization~AT~WindowsComponents~DeliveryOptimizationCat</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AllowVPNPeerCaching</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DOCacheHost</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ADMXMapped>DeliveryOptimization.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>CacheHost</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>DeliveryOptimization~AT~WindowsComponents~DeliveryOptimizationCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>CacheHost</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48662,6 +53010,10 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             </DFType>
             <MSFT:SupportedValues low="0" high="100"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>DeliveryOptimization.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>PercentageMaxDownloadBandwidth</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>DeliveryOptimization~AT~WindowsComponents~DeliveryOptimizationCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>PercentageMaxDownloadBandwidth</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -48866,6 +53218,35 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFType>
         </DFProperties>
         <Node>
+          <NodeName>EnableSystemGuard</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Secure Launch configuration: 0 - Unmanaged, configurable by Administrative user, 1 - Enables Secure Launch if supported by hardware, 2 - Disables Secure Launch.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,2"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>DeviceGuard.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>SystemGuardDrop</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>DeviceGuard~AT~System~DeviceGuardCategory</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>VirtualizationBasedSecurity</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecureZeroHasNoLimits</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EnableVirtualizationBasedSecurity</NodeName>
           <DFProperties>
             <AccessType>
@@ -48971,6 +53352,114 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DDFName></DDFName>
           </DFType>
         </DFProperties>
+        <Node>
+          <NodeName>AllowInstallationOfMatchingDeviceIDs</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>deviceinstallation.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>DeviceInstallation~AT~System~DeviceInstall_Category~DeviceInstall_Restrictions_Category</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DeviceInstall_IDs_Allow</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowInstallationOfMatchingDeviceSetupClasses</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>deviceinstallation.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>DeviceInstallation~AT~System~DeviceInstall_Category~DeviceInstall_Restrictions_Category</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DeviceInstall_Classes_Allow</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventDeviceMetadataFromNetwork</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>DeviceSetup.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>DeviceInstallation~AT~System~DeviceInstall_Category~DeviceInstall_Restrictions_Category</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DeviceMetadata_PreventDeviceMetadataFromNetwork</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventInstallationOfDevicesNotDescribedByOtherPolicySettings</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>deviceinstallation.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>DeviceInstallation~AT~System~DeviceInstall_Category~DeviceInstall_Restrictions_Category</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DeviceInstall_Unspecified_Deny</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
         <Node>
           <NodeName>PreventInstallationOfMatchingDeviceIDs</NodeName>
           <DFProperties>
@@ -49654,6 +54143,53 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
         </Node>
       </Node>
       <Node>
+        <NodeName>DmaGuard</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>DeviceEnumerationPolicy</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>dmaguard.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>dmaguard~AT~System~DmaGuard</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DmaGuardEnumerationPolicy</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
         <NodeName>ErrorReporting</NodeName>
         <DFProperties>
           <AccessType>
@@ -49955,6 +54491,33 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DDFName></DDFName>
           </DFType>
         </DFProperties>
+        <Node>
+          <NodeName>AllowClipboardHistory</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>Allows history of clipboard items to be stored in memory.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>OSPolicy.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>OSPolicy~AT~System~PolicyPolicies</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowClipboardHistory</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
         <Node>
           <NodeName>AllowCopyPaste</NodeName>
           <DFProperties>
@@ -50258,7 +54821,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <AccessType>
               <Get />
             </AccessType>
-            <DefaultValue>0</DefaultValue>
+            <DefaultValue>1</DefaultValue>
             <Description></Description>
             <DFFormat>
               <int/>
@@ -50332,6 +54895,65 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXMapped>FeedbackNotifications.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>FeedbackNotifications~AT~WindowsComponents~DataCollectionAndPreviewBuilds</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DoNotShowFeedbackNotifications</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DoNotSyncBrowserSetting</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>You can configure Microsoft Edge, when enabled, to prevent the &quot;browser&quot; group from using the Sync your Settings option to sync information, such as history and favorites, between user&apos;s devices. If you want syncing turned off by default in Microsoft Edge but not disabled, enable the Allow users to turn browser syncing on policy. If disabled or not configured, the Sync your Settings options are turned on in Microsoft Edge by default, and configurable by the user. 
+                        Related policy: PreventUsersFromTurningOnBrowserSyncing
+                        0 (default) = allow syncing, 2 = disable syncing</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues AllowedValues="0,2"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>SettingSync.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>SettingSync~AT~WindowsComponents~SettingSync</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DisableWebBrowserSettingSync</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventUsersFromTurningOnBrowserSyncing</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>You can configure Microsoft Edge to allow users to turn on the Sync your Settings option to sync information, such as history and favorites, between user&apos;s devices.  When enabled and you enable the Do not sync browser setting policy, browser settings sync automatically. If disabled, users have the option to sync the browser settings.
+                        Related policy: DoNotSyncBrowserSetting
+                        1 (default) = Do not allow users to turn on syncing, 0 = Allows users to turn on syncing</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>SettingSync.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>CheckBox_UserOverride</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>SettingSync~AT~WindowsComponents~SettingSync</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DisableWebBrowserSettingSync</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -57284,6 +61906,32 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
+        <Node>
+          <NodeName>UPNNameHints</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description>Devices joined to Azure Active Directory in a hybrid environment need to interact with Active Directory Domain Controllers, but they lack the built-in ability to find a Domain Controller that a domain-joined device has. This can cause failures when such a device needs to resolve an AAD UPN into an Active Directory Principal.
+                
+                This parameter adds a list of domains that an Azure Active Directory joined device should attempt to contact if it is otherwise unable to resolve a UPN to a principal.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
       </Node>
       <Node>
         <NodeName>KioskBrowser</NodeName>
@@ -57383,7 +62031,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Enable/disable kiosk browser's end session button.</Description>
+            <Description>Enable/disable kiosk browser&apos;s end session button.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -57408,7 +62056,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Enable/disable kiosk browser's home button.</Description>
+            <Description>Enable/disable kiosk browser&apos;s home button.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -57433,7 +62081,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Enable/disable kiosk browser's navigation buttons (forward/back).</Description>
+            <Description>Enable/disable kiosk browser&apos;s navigation buttons (forward/back).</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -57628,9 +62276,9 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DefaultValue>0</DefaultValue>
             <Description>This policy setting prevents users from adding new Microsoft accounts on this computer.
 
-If you select the "Users can’t add Microsoft accounts" option, users will not be able to create new Microsoft accounts on this computer, switch a local account to a Microsoft account, or connect a domain account to a Microsoft account. This is the preferred option if you need to limit the use of Microsoft accounts in your enterprise.
+If you select the &quot;Users can’t add Microsoft accounts&quot; option, users will not be able to create new Microsoft accounts on this computer, switch a local account to a Microsoft account, or connect a domain account to a Microsoft account. This is the preferred option if you need to limit the use of Microsoft accounts in your enterprise.
 
-If you select the "Users can’t add or log on with Microsoft accounts" option, existing Microsoft account users will not be able to log on to Windows. Selecting this option might make it impossible for an existing administrator on this computer to log on and manage the system.
+If you select the &quot;Users can’t add or log on with Microsoft accounts&quot; option, existing Microsoft account users will not be able to log on to Windows. Selecting this option might make it impossible for an existing administrator on this computer to log on and manage the system.
 
 If you disable or do not configure this policy (recommended), users will be able to use Microsoft accounts with Windows.</Description>
             <DFFormat>
@@ -57728,7 +62376,7 @@ Note: If the Guest account is disabled and the security option Network Access: S
             <DefaultValue>1</DefaultValue>
             <Description>Accounts: Limit local account use of blank passwords to console logon only
 
-This security setting determines whether local accounts that are not password protected can be used to log on from locations other than the physical computer console. If enabled, local accounts that are not password protected will only be able to log on at the computer's keyboard.
+This security setting determines whether local accounts that are not password protected can be used to log on from locations other than the physical computer console. If enabled, local accounts that are not password protected will only be able to log on at the computer&apos;s keyboard.
 
 Default: Enabled.
 
@@ -57800,7 +62448,7 @@ Default: Administrator.</Description>
             <DefaultValue>Guest</DefaultValue>
             <Description>Accounts: Rename guest account
 
-This security setting determines whether a different account name is associated with the security identifier (SID) for the account "Guest." Renaming the well-known Guest account makes it slightly more difficult for unauthorized persons to guess this user name and password combination.
+This security setting determines whether a different account name is associated with the security identifier (SID) for the account &quot;Guest.&quot; Renaming the well-known Guest account makes it slightly more difficult for unauthorized persons to guess this user name and password combination.
 
 Default: Guest.</Description>
             <DFFormat>
@@ -57956,127 +62604,6 @@ Default: This policy is not defined and CD-ROM access is not restricted to the l
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue>1</DefaultValue>
-            <Description>Domain member: Digitally encrypt or sign secure channel data (always)
-
-This security setting determines whether all secure channel traffic initiated by the domain member must be signed or encrypted.
-
-When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass through authentication, LSA SID/name Lookup etc.
-
-This setting determines whether or not all secure channel traffic initiated by the domain member meets minimum security requirements. Specifically it determines whether all secure channel traffic initiated by the domain member must be signed or encrypted. If this policy is enabled, then the secure channel will not be established unless either signing or encryption of all secure channel traffic is negotiated. If this policy is disabled, then encryption and signing of all secure channel traffic is negotiated with the Domain Controller in which case the level of signing and encryption depends on the version of the Domain Controller and the settings of the following two policies:
-
-Domain member: Digitally encrypt secure channel data (when possible)
-Domain member: Digitally sign secure channel data (when possible)
-
-Default: Enabled.
-
-Notes:
-
-If this policy is enabled, the policy Domain member: Digitally sign secure channel data (when possible) is assumed to be enabled regardless of its current setting. This ensures that the domain member attempts to negotiate at least signing of the secure channel traffic.
-If this policy is enabled, the policy Domain member: Digitally sign secure channel data (when possible) is assumed to be enabled regardless of its current setting. This ensures that the domain member attempts to negotiate at least signing of the secure channel traffic.
-Logon information transmitted over the secure channel is always encrypted regardless of whether encryption of ALL other secure channel traffic is negotiated or not.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
-            <MSFT:GPRegistryMappedName>Domain member: Digitally encrypt or sign secure channel data (always)</MSFT:GPRegistryMappedName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>DomainMember_DigitallyEncryptSecureChannelDataWhenPossible</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue>1</DefaultValue>
-            <Description>Domain member: Digitally encrypt secure channel data (when possible)
-
-This security setting determines whether a domain member attempts to negotiate encryption for all secure channel traffic that it initiates.
-
-When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass-through authentication, LSA SID/name Lookup etc.
-
-This setting determines whether or not the domain member attempts to negotiate encryption for all secure channel traffic that it initiates. If enabled, the domain member will request encryption of all secure channel traffic. If the domain controller supports encryption of all secure channel traffic, then all secure channel traffic will be encrypted. Otherwise only logon information transmitted over the secure channel will be encrypted. If this setting is disabled, then the domain member will not attempt to negotiate secure channel encryption.
-
-Default: Enabled.
-
-Important
-
-There is no known reason for disabling this setting. Besides unnecessarily reducing the potential confidentiality level of the secure channel, disabling this setting may unnecessarily reduce secure channel throughput, because concurrent API calls that use the secure channel are only possible when the secure channel is signed or encrypted.
-
-Note: Domain controllers are also domain members and establish secure channels with other domain controllers in the same domain as well as domain controllers in trusted domains.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
-            <MSFT:GPRegistryMappedName>Domain member: Digitally encrypt secure channel data (when possible)</MSFT:GPRegistryMappedName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>DomainMember_DisableMachineAccountPasswordChanges</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description>Domain member: Disable machine account password changes
-
-Determines whether a domain member periodically changes its computer account password. If this setting is enabled, the domain member does not attempt to change its computer account password. If this setting is disabled, the domain member attempts to change its computer account password as specified by the setting for Domain Member: Maximum age for machine account password, which by default is every 30 days.
-
-Default: Disabled.
-
-Notes
-
-This security setting should not be enabled. Computer account passwords are used to establish secure channel communications between members and domain controllers and, within the domain, between the domain controllers themselves. Once it is established, the secure channel is used to transmit sensitive information that is necessary for making authentication and authorization decisions.
-This setting should not be used in an attempt to support dual-boot scenarios that use the same computer account. If you want to dual-boot two installations that are joined to the same domain, give the two installations different computer names.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
-            <MSFT:GPRegistryMappedName>Domain member: Disable machine account password changes</MSFT:GPRegistryMappedName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked</NodeName>
           <DFProperties>
             <AccessType>
@@ -58113,7 +62640,7 @@ Do not display user information (3)</Description>
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Interactive logon: Don't display last signed-in
+            <Description>Interactive logon: Don&apos;t display last signed-in
 This security setting determines whether the Windows sign-in screen will show the username of the last person who signed in on this PC.
 If this policy is enabled, the username will not be shown.
 
@@ -58146,7 +62673,7 @@ Default: Disabled.</Description>
               <Get />
             </AccessType>
             <DefaultValue>1</DefaultValue>
-            <Description>Interactive logon: Don't display username at sign-in
+            <Description>Interactive logon: Don&apos;t display username at sign-in
 This security setting determines whether the username of the person signing in to this PC appears at Windows sign-in, after credentials are entered, and before the PC desktop is shown.
 If this policy is enabled, the username will not be shown.
 
@@ -58183,7 +62710,7 @@ Default: Disabled.</Description>
 
 This security setting determines whether pressing CTRL+ALT+DEL is required before a user can log on.
 
-If this policy is enabled on a computer, a user is not required to press CTRL+ALT+DEL to log on. Not having to press CTRL+ALT+DEL leaves users susceptible to attacks that attempt to intercept the users' passwords. Requiring CTRL+ALT+DEL before users log on ensures that users are communicating by means of a trusted path when entering their passwords.
+If this policy is enabled on a computer, a user is not required to press CTRL+ALT+DEL to log on. Not having to press CTRL+ALT+DEL leaves users susceptible to attacks that attempt to intercept the users&apos; passwords. Requiring CTRL+ALT+DEL before users log on ensures that users are communicating by means of a trusted path when entering their passwords.
 
 If this policy is disabled, any user is required to press CTRL+ALT+DEL before logging on to Windows.
 
@@ -58346,6 +62873,55 @@ On Windows Vista and above: For this setting to work, the Smart Card Removal Pol
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
             <MSFT:GPRegistryMappedName>Interactive logon: Smart card removal behavior</MSFT:GPRegistryMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>MicrosoftNetworkClient_DigitallySignCommunicationsAlways</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Microsoft network client: Digitally sign communications (always)
+
+This security setting determines whether packet signing is required by the SMB client component.
+
+The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB server is permitted.
+
+If this setting is enabled, the Microsoft network client will not communicate with a Microsoft network server unless that server agrees to perform SMB packet signing. If this policy is disabled, SMB packet signing is negotiated between the client and server.
+
+Default: Disabled.
+
+Important
+
+For this policy to take effect on computers running Windows 2000, client-side packet signing must also be enabled. To enable client-side SMB packet signing, set Microsoft network client: Digitally sign communications (if server agrees).
+
+Notes
+
+All Windows operating systems support both a client-side SMB component and a server-side SMB component. On Windows 2000 and later operating systems, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
+Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing.
+Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
+Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing.
+Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled.
+SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors.
+For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
+            <MSFT:GPRegistryMappedName>Microsoft network client: Digitally sign communications (always)</MSFT:GPRegistryMappedName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -58713,6 +63289,47 @@ This policy is supported on at least Windows Server 2016.</Description>
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>Network security: Allow Local System to use computer identity for NTLM
+
+This policy setting allows Local System services that use Negotiate to use the computer identity when reverting to NTLM authentication.
+
+If you enable this policy setting, services running as Local System that use Negotiate will use the computer identity. This might cause some authentication requests between Windows operating systems to fail and log an error.
+
+If you disable this policy setting, services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously.
+
+By default, this policy is enabled on Windows 7 and above.
+
+By default, this policy is disabled on Windows Vista.
+
+This policy is supported on at least Windows Vista or Windows Server 2008.
+
+Note: Windows Vista or Windows Server 2008 do not expose this setting in Group Policy.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
+            <MSFT:GPRegistryMappedName>Network security: Allow Local System to use computer identity for NTLM</MSFT:GPRegistryMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>NetworkSecurity_AllowPKU2UAuthenticationRequests</NodeName>
           <DFProperties>
             <AccessType>
@@ -58833,6 +63450,44 @@ Windows Vista, Windows Server 2008, Windows 7, and Windows Server 2008 R2: Send 
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Network security: Minimum session security for NTLM SSP based (including secure RPC) clients
+
+This security setting allows a client to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are:
+
+Require NTLMv2 session security: The connection will fail if NTLMv2 protocol is not negotiated.
+Require 128-bit encryption: The connection will fail if strong encryption (128-bit) is not negotiated.
+
+Default:
+
+Windows XP, Windows Vista, Windows 2000 Server, Windows Server 2003, and Windows Server 2008: No requirements.
+
+Windows 7 and Windows Server 2008 R2: Require 128-bit encryption</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues AllowedValues="0,524288,536870912,537395200"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
+            <MSFT:GPRegistryMappedName>Network security: Minimum session security for NTLM SSP based (including secure RPC) clients</MSFT:GPRegistryMappedName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</NodeName>
           <DFProperties>
             <AccessType>
@@ -58879,7 +63534,7 @@ Windows 7 and Windows Server 2008 R2: Require 128-bit encryption</Description>
             <DefaultValue></DefaultValue>
             <Description>Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication
 
-This policy setting allows you to create an exception list of remote servers to which clients are allowed to use NTLM authentication if the  "Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers" policy setting is configured.
+This policy setting allows you to create an exception list of remote servers to which clients are allowed to use NTLM authentication if the  &quot;Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers&quot; policy setting is configured.
 
 If you configure this policy setting, you can define a list of remote servers to which clients are allowed to use NTLM authentication.
 
@@ -58915,15 +63570,15 @@ The naming format for servers on this exception list is the fully qualified doma
 
 This policy setting allows you to audit incoming NTLM traffic.
 
-If you select "Disable", or do not configure this policy setting, the server will not log events for incoming NTLM traffic.
+If you select &quot;Disable&quot;, or do not configure this policy setting, the server will not log events for incoming NTLM traffic.
 
-If you select "Enable auditing for domain accounts", the server will log events for NTLM pass-through authentication requests that would be blocked when the "Network Security: Restrict NTLM: Incoming NTLM traffic" policy setting is set to the "Deny all domain accounts" option.
+If you select &quot;Enable auditing for domain accounts&quot;, the server will log events for NTLM pass-through authentication requests that would be blocked when the &quot;Network Security: Restrict NTLM: Incoming NTLM traffic&quot; policy setting is set to the &quot;Deny all domain accounts&quot; option.
 
-If you select "Enable auditing for all accounts", the server will log events for all NTLM authentication requests that would be blocked when the "Network Security: Restrict NTLM: Incoming NTLM traffic" policy setting is set to the "Deny all accounts" option.
+If you select &quot;Enable auditing for all accounts&quot;, the server will log events for all NTLM authentication requests that would be blocked when the &quot;Network Security: Restrict NTLM: Incoming NTLM traffic&quot; policy setting is set to the &quot;Deny all accounts&quot; option.
 
 This policy is supported on at least Windows 7 or Windows Server 2008 R2.
 
-Note: Audit events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.</Description>
+Note: Audit events are recorded on this computer in the &quot;Operational&quot; Log located under the Applications and Services Log/Microsoft/Windows/NTLM.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -58954,15 +63609,15 @@ Note: Audit events are recorded on this computer in the "Operational" Log locate
 
 This policy setting allows you to deny or allow incoming NTLM traffic.
 
-If you select "Allow all" or do not configure this policy setting, the server will allow all NTLM authentication requests.
+If you select &quot;Allow all&quot; or do not configure this policy setting, the server will allow all NTLM authentication requests.
 
-If you select "Deny all domain accounts," the server will deny NTLM authentication requests for domain logon and display an NTLM blocked error, but allow local account logon.
+If you select &quot;Deny all domain accounts,&quot; the server will deny NTLM authentication requests for domain logon and display an NTLM blocked error, but allow local account logon.
 
-If you select "Deny all accounts," the server will deny NTLM authentication requests from incoming traffic and display an NTLM blocked error.
+If you select &quot;Deny all accounts,&quot; the server will deny NTLM authentication requests from incoming traffic and display an NTLM blocked error.
 
 This policy is supported on at least Windows 7 or Windows Server 2008 R2.
 
-Note: Block events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.</Description>
+Note: Block events are recorded on this computer in the &quot;Operational&quot; Log located under the Applications and Services Log/Microsoft/Windows/NTLM.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -58993,15 +63648,15 @@ Note: Block events are recorded on this computer in the "Operational" Log locate
 
 This policy setting allows you to deny or audit outgoing NTLM traffic from this Windows 7 or this Windows Server 2008 R2 computer to any Windows remote server.
 
-If you select "Allow all" or do not configure this policy setting, the client computer can authenticate identities to a remote server by using NTLM authentication.
+If you select &quot;Allow all&quot; or do not configure this policy setting, the client computer can authenticate identities to a remote server by using NTLM authentication.
 
-If you select "Audit all," the client computer logs an event for each NTLM authentication request to a remote server. This allows you to identify those servers receiving NTLM authentication requests from the client computer.
+If you select &quot;Audit all,&quot; the client computer logs an event for each NTLM authentication request to a remote server. This allows you to identify those servers receiving NTLM authentication requests from the client computer.
 
-If you select "Deny all," the client computer cannot authenticate identities to a remote server by using NTLM authentication. You can use the "Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication" policy setting to define a list of remote servers to which clients are allowed to use NTLM authentication.
+If you select &quot;Deny all,&quot; the client computer cannot authenticate identities to a remote server by using NTLM authentication. You can use the &quot;Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication&quot; policy setting to define a list of remote servers to which clients are allowed to use NTLM authentication.
 
 This policy is supported on at least Windows 7 or Windows Server 2008 R2.
 
-Note: Audit and block events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.</Description>
+Note: Audit and block events are recorded on this computer in the &quot;Operational&quot; Log located under the Applications and Services Log/Microsoft/Windows/NTLM.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -59103,9 +63758,9 @@ Default: Disabled.</Description>
 
 This policy setting controls whether User Interface Accessibility (UIAccess or UIA) programs can automatically disable the secure desktop for elevation prompts used by a standard user.
 
-• Enabled: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you do not disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop.
+• Enabled: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you do not disable the &quot;User Account Control: Switch to the secure desktop when prompting for elevation&quot; policy setting, the prompts appear on the interactive user&apos;s desktop instead of the secure desktop.
 
-• Disabled: (Default) The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.</Description>
+• Disabled: (Default) The secure desktop can be disabled only by the user of the interactive desktop or by disabling the &quot;User Account Control: Switch to the secure desktop when prompting for elevation&quot; policy setting.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -59140,15 +63795,15 @@ The options are:
 
 • Elevate without prompting: Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials. Note: Use this option only in the most constrained environments.
 
-• Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege.
+• Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user&apos;s highest available privilege.
 
-• Prompt for consent on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
+• Prompt for consent on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user&apos;s highest available privilege.
 
 • Prompt for credentials: When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
 
-• Prompt for consent: When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
+• Prompt for consent: When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user&apos;s highest available privilege.
 
-• Prompt for consent for non-Windows binaries: (Default) When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.</Description>
+• Prompt for consent for non-Windows binaries: (Default) When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user&apos;s highest available privilege.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -59359,13 +64014,13 @@ The options are:
             <DefaultValue>1</DefaultValue>
             <Description>User Account Control: Switch to the secure desktop when prompting for elevation
 
-This policy setting controls whether the elevation request prompt is displayed on the interactive user's desktop or the secure desktop.
+This policy setting controls whether the elevation request prompt is displayed on the interactive user&apos;s desktop or the secure desktop.
 
 The options are:
 
 • Enabled: (Default) All elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users.
 
-• Disabled: All elevation requests go to the interactive user's desktop. Prompt behavior policy settings for administrators and standard users are used.</Description>
+• Disabled: All elevation requests go to the interactive user&apos;s desktop. Prompt behavior policy settings for administrators and standard users are used.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -59648,7 +64303,7 @@ The options are:
               <Get />
             </AccessType>
             <DefaultValue>1</DefaultValue>
-            <Description>This policy setting allows backup and restore of cellular text messages to Microsoft's cloud services.</Description>
+            <Description>This policy setting allows backup and restore of cellular text messages to Microsoft&apos;s cloud services.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -60712,6 +65367,33 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowCrossDeviceClipboard</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>Allows syncing of Clipboard across devices under the same Microsoft account.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>OSPolicy.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>OSPolicy~AT~System~PolicyPolicies</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowCrossDeviceClipboard</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -62552,7 +67234,7 @@ The options are:
               <Get />
             </AccessType>
             <DefaultValue></DefaultValue>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'trusted devices' privacy setting for the listed apps. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the &apos;trusted devices&apos; privacy setting for the listed apps. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -62888,7 +67570,7 @@ The options are:
               <Get />
             </AccessType>
             <DefaultValue></DefaultValue>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'Communicate with unpaired wireless devices' privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the &apos;Communicate with unpaired wireless devices&apos; privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -62916,7 +67598,7 @@ The options are:
               <Get />
             </AccessType>
             <DefaultValue>1</DefaultValue>
-            <Description>Allows apps/system to publish 'User Activities' into ActivityFeed.</Description>
+            <Description>Allows apps/system to publish &apos;User Activities&apos; into ActivityFeed.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -62943,7 +67625,7 @@ The options are:
               <Get />
             </AccessType>
             <DefaultValue>1</DefaultValue>
-            <Description>Allows ActivityFeed to upload published 'User Activities'.</Description>
+            <Description>Allows ActivityFeed to upload published &apos;User Activities&apos;.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -64024,6 +68706,39 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:XMLSchema><![CDATA[<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
+                        <xs:simpleType name="member_name">
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="255" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                        <xs:element name="accessgroup">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="member" minOccurs="0" maxOccurs="unbounded">
+                                <xs:annotation>
+                                  <xs:documentation>Restricted Group Member</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                  <xs:attribute name="name" type="member_name" use="required"/>
+                                </xs:complexType>
+                              </xs:element>
+                            </xs:sequence>
+                            <xs:attribute name="desc" type="member_name" use="required"/>
+                          </xs:complexType>
+                        </xs:element>
+                        <xs:element name="groupmembership">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="accessgroup" minOccurs="0" maxOccurs="unbounded">
+                                <xs:annotation>
+                                  <xs:documentation>Restricted Group</xs:documentation>
+                                </xs:annotation>
+                              </xs:element>
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:schema>]]></MSFT:XMLSchema>
           </DFProperties>
         </Node>
       </Node>
@@ -64610,6 +69325,31 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>RecoveryEnvironmentAuthentication</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>This policy controls the requirement of Admin Authentication in RecoveryEnvironment.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -65502,6 +70242,9 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             </DFType>
             <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>StartMenu.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>StartMenu~AT~StartMenu</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ForceStartSize</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -65537,7 +70280,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Enabling this policy hides "Change account settings" from appearing in the user tile in the start menu.</Description>
+            <Description>Enabling this policy hides &quot;Change account settings&quot; from appearing in the user tile in the start menu.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -65576,6 +70319,9 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             </DFType>
             <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>StartMenu.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>StartMenu~AT~StartMenu</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>NoFrequentUsedPrograms</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -65586,7 +70332,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Enabling this policy hides "Hibernate" from appearing in the power button in the start menu.</Description>
+            <Description>Enabling this policy hides &quot;Hibernate&quot; from appearing in the power button in the start menu.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -65610,7 +70356,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Enabling this policy hides "Lock" from appearing in the user tile in the start menu.</Description>
+            <Description>Enabling this policy hides &quot;Lock&quot; from appearing in the user tile in the start menu.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -65673,6 +70419,9 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             </DFType>
             <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>StartMenu.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>StartMenu~AT~StartMenu</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>NoRecentDocsHistory</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -65711,7 +70460,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Enabling this policy hides "Restart/Update and restart" from appearing in the power button in the start menu.</Description>
+            <Description>Enabling this policy hides &quot;Restart/Update and restart&quot; from appearing in the power button in the start menu.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -65735,7 +70484,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Enabling this policy hides "Shut down/Update and shut down" from appearing in the power button in the start menu.</Description>
+            <Description>Enabling this policy hides &quot;Shut down/Update and shut down&quot; from appearing in the power button in the start menu.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -65759,7 +70508,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Enabling this policy hides "Sign out" from appearing in the user tile in the start menu.</Description>
+            <Description>Enabling this policy hides &quot;Sign out&quot; from appearing in the user tile in the start menu.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -65783,7 +70532,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Enabling this policy hides "Sleep" from appearing in the power button in the start menu.</Description>
+            <Description>Enabling this policy hides &quot;Sleep&quot; from appearing in the power button in the start menu.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -65807,7 +70556,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>Enabling this policy hides "Switch account" from appearing in the user tile in the start menu.</Description>
+            <Description>Enabling this policy hides &quot;Switch account&quot; from appearing in the user tile in the start menu.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -65997,6 +70746,34 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <MSFT:ADMXCategory>EnhancedStorage~AT~System~EnStorDeviceAccess</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>TCGSecurityActivationDisabled</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>RemovableDiskDenyWriteAccess</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>If you enable this policy setting, write access is denied to this removable storage class. If you disable or do not configure this policy setting, write access is allowed to this removable storage class. Note: To require that users write data to BitLocker-protected storage, enable the policy setting &quot;Deny write access to drives not protected by BitLocker,&quot; which is located in &quot;Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Removable Data Drives.&quot;</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>RemovableStorage.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>RemovableDisks_DenyWrite_Access_2</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>RemovableStorage~AT~System~DeviceAccess</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>RemovableDisks_DenyWrite_Access_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -66252,6 +71029,33 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>ConfigureMicrosoft365UploadEndpoint</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ADMXMapped>DataCollection.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>ConfigureMicrosoft365UploadEndpoint</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>DataCollection~AT~WindowsComponents~DataCollectionAndPreviewBuilds</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ConfigureMicrosoft365UploadEndpoint</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>ConfigureTelemetryOptInChangeNotification</NodeName>
           <DFProperties>
             <AccessType>
@@ -66304,6 +71108,62 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <MSFT:ADMXMappedElement>ConfigureTelemetryOptInSettingsUx</MSFT:ADMXMappedElement>
             <MSFT:ADMXCategory>DataCollection~AT~WindowsComponents~DataCollectionAndPreviewBuilds</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>ConfigureTelemetryOptInSettingsUx</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableDeviceDelete</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>DataCollection.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>DisableDeviceDelete</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>DataCollection~AT~WindowsComponents~DataCollectionAndPreviewBuilds</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DisableDeviceDelete</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableDiagnosticDataViewer</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>DataCollection.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>DisableDiagnosticDataViewer</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>DataCollection~AT~WindowsComponents~DataCollectionAndPreviewBuilds</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DisableDiagnosticDataViewer</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -66420,7 +71280,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
             </AccessType>
             <DefaultValue>0</DefaultValue>
-            <Description>This policy setting, in combination with the Allow Telemetry policy setting, enables organizations to send Microsoft a specific set of diagnostic data for IT insights via Windows Analytics services. By configuring this setting, you're not stopping people from changing their Telemetry Settings; however, you are stopping them from choosing a higher level than you've set for the organization. To enable this behavior, you must complete two steps: 1. Enable this policy setting 2. Set Allow Telemetry to level 2 (Enhanced).If you configure these policy settings together, you'll send the Basic level of diagnostic data plus any additional events that are required for Windows Analytics, to Microsoft. The additional events are documented here: https://go.Microsoft.com/fwlink/?linked=847594. If you enable Enhanced diagnostic data in the Allow Telemetry policy setting, but you don't configure this policy setting, you'll send the required events for Windows Analytics, plus any additional Enhanced level telemetry data to Microsoft. This setting has no effect on computers configured to send Full, Basic, or Security level diagnostic data to Microsoft. If you disable or don't configure this policy setting, then the level of diagnostic data sent to Microsoft is determined by the Allow Telemetry policy setting.</Description>
+            <Description>This policy setting, in combination with the Allow Telemetry policy setting, enables organizations to send Microsoft a specific set of diagnostic data for IT insights via Windows Analytics services. By configuring this setting, you&apos;re not stopping people from changing their Telemetry Settings; however, you are stopping them from choosing a higher level than you&apos;ve set for the organization. To enable this behavior, you must complete two steps: 1. Enable this policy setting 2. Set Allow Telemetry to level 2 (Enhanced).If you configure these policy settings together, you&apos;ll send the Basic level of diagnostic data plus any additional events that are required for Windows Analytics, to Microsoft. The additional events are documented here: https://go.Microsoft.com/fwlink/?linked=847594. If you enable Enhanced diagnostic data in the Allow Telemetry policy setting, but you don&apos;t configure this policy setting, you&apos;ll send the required events for Windows Analytics, plus any additional Enhanced level telemetry data to Microsoft. This setting has no effect on computers configured to send Full, Basic, or Security level diagnostic data to Microsoft. If you disable or don&apos;t configure this policy setting, then the level of diagnostic data sent to Microsoft is determined by the Allow Telemetry policy setting.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -66494,8 +71354,8 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <AccessType>
               <Get />
             </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <DefaultValue>3</DefaultValue>
+            <Description>This setting determines whether the service&apos;s start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -66521,8 +71381,8 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <AccessType>
               <Get />
             </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <DefaultValue>3</DefaultValue>
+            <Description>This setting determines whether the service&apos;s start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -66548,8 +71408,8 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <AccessType>
               <Get />
             </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <DefaultValue>3</DefaultValue>
+            <Description>This setting determines whether the service&apos;s start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -66575,8 +71435,8 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <AccessType>
               <Get />
             </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <DefaultValue>3</DefaultValue>
+            <Description>This setting determines whether the service&apos;s start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -66602,8 +71462,8 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <AccessType>
               <Get />
             </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <DefaultValue>3</DefaultValue>
+            <Description>This setting determines whether the service&apos;s start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -66629,8 +71489,8 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <AccessType>
               <Get />
             </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <DefaultValue>3</DefaultValue>
+            <Description>This setting determines whether the service&apos;s start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -66648,6 +71508,50 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <MSFT:GPDBMappedCategory>Windows Settings~Security Settings~System Services</MSFT:GPDBMappedCategory>
             <MSFT:GPDBMappedName>Xbox Live Networking Service</MSFT:GPDBMappedName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>TaskManager</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>AllowEndTask</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>This setting determines whether non-administrators can use Task Manager to end tasks - enabled (1) or disabled (0). Default: enabled</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -67438,7 +72342,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <AccessType>
               <Get />
             </AccessType>
-            <DefaultValue>2</DefaultValue>
+            <DefaultValue>6</DefaultValue>
             <Description></Description>
             <DFFormat>
               <int/>
@@ -67452,7 +72356,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:SupportedValues low="0" high="5"></MSFT:SupportedValues>
+            <MSFT:SupportedValues low="0" high="6"></MSFT:SupportedValues>
             <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
             <MSFT:ADMXMappedElement>AutoUpdateMode</MSFT:ADMXMappedElement>
             <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat</MSFT:ADMXCategory>
@@ -67590,6 +72494,34 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <MSFT:SupportedValues low="2" high="30"></MSFT:SupportedValues>
             <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
             <MSFT:ADMXMappedElement>AutoRestartDeadline</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AutoRestartDeadline</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AutoRestartDeadlinePeriodInDaysForFeatureUpdates</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>7</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="2" high="30"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>AutoRestartDeadlineForFeatureUpdates</MSFT:ADMXMappedElement>
             <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AutoRestartDeadline</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
@@ -67899,6 +72831,34 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>EngagedRestartDeadlineForFeatureUpdates</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>14</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="2" high="30"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>EngagedRestartDeadlineForFeatureUpdates</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>EngagedRestartTransitionSchedule</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EngagedRestartSnoozeSchedule</NodeName>
           <DFProperties>
             <AccessType>
@@ -67927,6 +72887,34 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>EngagedRestartSnoozeScheduleForFeatureUpdates</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>3</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="1" high="3"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>EngagedRestartSnoozeScheduleForFeatureUpdates</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>EngagedRestartTransitionSchedule</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EngagedRestartTransitionSchedule</NodeName>
           <DFProperties>
             <AccessType>
@@ -67949,6 +72937,34 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <MSFT:SupportedValues low="2" high="30"></MSFT:SupportedValues>
             <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
             <MSFT:ADMXMappedElement>EngagedRestartTransitionSchedule</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>EngagedRestartTransitionSchedule</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>EngagedRestartTransitionScheduleForFeatureUpdates</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>7</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="2" high="30"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>EngagedRestartTransitionScheduleForFeatureUpdates</MSFT:ADMXMappedElement>
             <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>EngagedRestartTransitionSchedule</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
@@ -68580,6 +73596,60 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>SetDisablePauseUXAccess</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>SetDisablePauseUXAccess</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SetDisableUXWUAccess</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>SetDisableUXWUAccess</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>SetEDURestart</NodeName>
           <DFProperties>
             <AccessType>
@@ -68603,6 +73673,33 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>SetEDURestart</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>UpdateNotificationKioskMode</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
+            <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>UpdateNotificationKioskMode</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -68688,7 +73785,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
             </AccessType>
             <DefaultValue></DefaultValue>
-            <Description>This user right is used by Credential Manager during Backup/Restore. No accounts should have this privilege, as it is only assigned to Winlogon. Users' saved credentials might be compromised if this privilege is given to other entities.</Description>
+            <Description>This user right is used by Credential Manager during Backup/Restore. No accounts should have this privilege, as it is only assigned to Winlogon. Users&apos; saved credentials might be compromised if this privilege is given to other entities.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -68850,7 +73947,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
             </AccessType>
             <DefaultValue></DefaultValue>
-            <Description>This security setting determines whether users can create global objects that are available to all sessions. Users can still create objects that are specific to their own session if they do not have this user right. Users who can create global objects could affect processes that run under other users' sessions, which could lead to application failure or data corruption. Caution: Assigning this user right can be a security risk. Assign this user right only to trusted users.</Description>
+            <Description>This security setting determines whether users can create global objects that are available to all sessions. Users can still create objects that are specific to their own session if they do not have this user right. Users who can create global objects could affect processes that run under other users&apos; sessions, which could lead to application failure or data corruption. Caution: Assigning this user right can be a security risk. Assign this user right only to trusted users.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -68931,7 +74028,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
             </AccessType>
             <DefaultValue></DefaultValue>
-            <Description>This user right determines if the user can create a symbolic link from the computer he is logged on to. Caution: This privilege should only be given to trusted users. Symbolic links can expose security vulnerabilities in applications that aren't designed to handle them. Note: This setting can be used in conjunction a symlink filesystem setting that can be manipulated with the command line utility to control the kinds of symlinks that are allowed on the machine. Type 'fsutil behavior set symlinkevaluation /?' at the command line to get more information about fsutil and symbolic links.</Description>
+            <Description>This user right determines if the user can create a symbolic link from the computer he is logged on to. Caution: This privilege should only be given to trusted users. Symbolic links can expose security vulnerabilities in applications that aren&apos;t designed to handle them. Note: This setting can be used in conjunction a symlink filesystem setting that can be manipulated with the command line utility to control the kinds of symlinks that are allowed on the machine. Type &apos;fsutil behavior set symlinkevaluation /?&apos; at the command line to get more information about fsutil and symbolic links.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -69147,7 +74244,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
             </AccessType>
             <DefaultValue></DefaultValue>
-            <Description>Assigning this user right to a user allows programs running on behalf of that user to impersonate a client. Requiring this user right for this kind of impersonation prevents an unauthorized user from convincing a client to connect (for example, by remote procedure call (RPC) or named pipes) to a service that they have created and then impersonating that client, which can elevate the unauthorized user's permissions to administrative or system levels. Caution: Assigning this user right can be a security risk. Only assign this user right to trusted users. Note: By default, services that are started by the Service Control Manager have the built-in Service group added to their access tokens. Component Object Model (COM) servers that are started by the COM infrastructure and that are configured to run under a specific account also have the Service group added to their access tokens. As a result, these services get this user right when they are started. In addition, a user can also impersonate an access token if any of the following conditions exist. 
+            <Description>Assigning this user right to a user allows programs running on behalf of that user to impersonate a client. Requiring this user right for this kind of impersonation prevents an unauthorized user from convincing a client to connect (for example, by remote procedure call (RPC) or named pipes) to a service that they have created and then impersonating that client, which can elevate the unauthorized user&apos;s permissions to administrative or system levels. Caution: Assigning this user right can be a security risk. Only assign this user right to trusted users. Note: By default, services that are started by the Service Control Manager have the built-in Service group added to their access tokens. Component Object Model (COM) servers that are started by the COM infrastructure and that are configured to run under a specific account also have the Service group added to their access tokens. As a result, these services get this user right when they are started. In addition, a user can also impersonate an access token if any of the following conditions exist. 
 1) The access token that is being impersonated is for this user.
 2) The user, in this logon session, created the access token by logging on to the network with explicit credentials.
 3) The requested level is less than Impersonate, such as Anonymous or Identify.
@@ -69790,6 +74887,34 @@ Because of these factors, users do not usually need this user right. Warning: If
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DisableClearTpmButton</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>WindowsDefenderSecurityCenter.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>WindowsDefenderSecurityCenter~AT~WindowsComponents~WindowsDefenderSecurityCenter~DeviceSecurity</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DeviceSecurity_DisableClearTpmButton</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DisableDeviceSecurityUI</NodeName>
           <DFProperties>
             <AccessType>
@@ -69954,6 +75079,34 @@ Because of these factors, users do not usually need this user right. Warning: If
             <MSFT:ADMXMapped>WindowsDefenderSecurityCenter.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>WindowsDefenderSecurityCenter~AT~WindowsComponents~WindowsDefenderSecurityCenter~Notifications</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Notifications_DisableNotifications</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableTpmFirmwareUpdateWarning</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>WindowsDefenderSecurityCenter.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>WindowsDefenderSecurityCenter~AT~WindowsComponents~WindowsDefenderSecurityCenter~DeviceSecurity</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DeviceSecurity_DisableTpmFirmwareUpdateWarning</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -70178,6 +75331,34 @@ Because of these factors, users do not usually need this user right. Warning: If
             <MSFT:ADMXMapped>WindowsDefenderSecurityCenter.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>WindowsDefenderSecurityCenter~AT~WindowsComponents~WindowsDefenderSecurityCenter~DeviceSecurity</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DeviceSecurity_HideTPMTroubleshooting</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>HideWindowsSecurityNotificationAreaControl</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXMapped>WindowsDefenderSecurityCenter.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXCategory>WindowsDefenderSecurityCenter~AT~WindowsComponents~WindowsDefenderSecurityCenter~Systray</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Systray_HideSystray</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -70644,7 +75825,7 @@ Because of these factors, users do not usually need this user right. Warning: If
             </AccessType>
             <DefaultValue>1</DefaultValue>
             <Description>This policy setting allows you to turn off projection to a PC
-                            If you set it to 0, your PC isn't discoverable and can't be projected to
+                            If you set it to 0, your PC isn&apos;t discoverable and can&apos;t be projected to
                             If you set it to 1, your PC is discoverable and can be projected to above the lock screen only. The user has an option to turn it always on or off except for manual launch, too.</Description>
             <DFFormat>
               <int/>
@@ -70674,7 +75855,7 @@ Because of these factors, users do not usually need this user right. Warning: If
             </AccessType>
             <DefaultValue>1</DefaultValue>
             <Description>This policy setting allows you to turn off projection to a PC over infrastructure.
-                            If you set it to 0, your PC cannot be discoverable and can't be projected to over infrastructure, though it may still be possible to project over WiFi Direct.
+                            If you set it to 0, your PC cannot be discoverable and can&apos;t be projected to over infrastructure, though it may still be possible to project over WiFi Direct.
                             If you set it to 1, your PC can be discoverable and can be projected to over infrastructure.</Description>
             <DFFormat>
               <int/>
@@ -70724,8 +75905,9 @@ Because of these factors, users do not usually need this user right. Warning: If
             </AccessType>
             <DefaultValue>0</DefaultValue>
             <Description>This policy setting allows you to require a pin for pairing.
-                            If you turn this on, the pairing ceremony for new devices will always require a PIN
-                            If you turn it off or don't configure it, a pin isn't required for pairing.</Description>
+                            If you set this to 0, a pin isn&apos;t required for pairing.
+                            If you set this to 1, the pairing ceremony for new devices will always require a PIN.
+                            If you set this to 2, all pairings will require PIN.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -70738,11 +75920,11 @@ Because of these factors, users do not usually need this user right. Warning: If
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
             <MSFT:ADMXMapped>WirelessDisplay.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>WirelessDisplay~AT~WindowsComponents~Connect</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>RequirePinForPairing</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>

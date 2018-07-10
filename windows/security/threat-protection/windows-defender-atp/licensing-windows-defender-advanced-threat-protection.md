@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-tanewt
 author: tbit0001
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 10/16/2017
 ---
 # Validate licensing provisioning and complete set up for Windows Defender ATP
@@ -22,7 +22,7 @@ ms.date: 10/16/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-validatelicense-abovefoldlink)
 
@@ -50,9 +50,9 @@ To gain access into which licenses are provisioned to your company, and to check
 
    ![Image of O365 admin portal](images\atp-O365-admin-portal-customer.png)
 
-## Access the Windows Defender ATP portal for the first time
+## Access Windows Defender Security Center for the first time
 
-When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.com) for the first time there will be a setup wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Windows Defender ATP created.
+When accessing [Windows Defender Security Center](https://SecurityCenter.Windows.com) for the first time there will be a setup wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Windows Defender ATP created.
 
 1. Each time you access the portal you will need to validate that you are authorized to access the product. This **Set up your permissions** step will only be available if you are not currently authorized to access the product.
 
@@ -64,7 +64,7 @@ When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.
 
 	![Image of Welcome screen for portal set up](images\atp-portal-welcome-screen.png)
 
-	You will need to set up your preferences for the Windows Defender ATP portal.
+	You will need to set up your preferences for Windows Defender Security Center.
 
 3. When onboarding the service for the first time, you can choose to store your data in the Microsoft Azure datacenters in the European Union, the United Kingdom, or the United States. Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Microsoft will not transfer the data from the specified geolocation.
 
@@ -108,11 +108,11 @@ When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.
 8. You will receive a warning notifying you that you won't be able to change some of your preferences once you click **Continue**.
 
 	> [!NOTE]
-	> Some of these options can be changed at a later time in the Windows Defender ATP portal.
+	> Some of these options can be changed at a later time in Windows Defender Security Center.
 
 	![Image of final preference set up](images\atp-final-preference-setup.png)
 
-9. A dedicated cloud instance of the Windows Defender ATP portal is being created at this time. This step will take an average of 5 minutes to complete.
+9. A dedicated cloud instance of Windows Defender Security Center portal is being created at this time. This step will take an average of 5 minutes to complete.
 
 	![Image of Windows Defender ATP cloud instance](images\atp-windows-cloud-instance-creation.png)
 

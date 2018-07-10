@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerms
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 06/21/2018
 ms.author: jdecker
 ms.topic: article
@@ -440,6 +440,8 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 Provisioning packages can be applied to a device during the first-run experience (out-of-box experience or "OOBE") and after ("runtime").
 
+>[!TIP]
+>In addition to the methods below, you can use the PowerShell comdlet [install-provisioningpackage](https://docs.microsoft.com/powershell/module/provisioning/Install-ProvisioningPackage?view=win10-ps) with `-LogsDirectoryPath` to get logs for the operation.
 
 #### During initial setup, from a USB drive
 
@@ -736,7 +738,7 @@ Start/DisableContextMenus | 1 - Context menus are hidden for Start apps | No
 <span id="lnk-files" />
 ## Provision .lnk files using Windows Configuration Designer
 
-First, create your desktop app's shortcut file by installing the app on a test device. Right-click the installed application, and choose **Send to** > **Desktop (create shortcut)**. Rename the shortcut to `<appName>.lnk`
+First, create your desktop app's shortcut file by installing the app on a test device, using the default installation location. Right-click the installed application, and choose **Send to** > **Desktop (create shortcut)**. Rename the shortcut to `<appName>.lnk`
 
 Next, create a batch file with two commands. If the desktop app is already installed on the target device, skip the first command for MSI install. 
 
@@ -747,6 +749,10 @@ copy <appName>.lnk "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs\<app
 
 In Windows Configuration Designer, under **ProvisioningCommands** > **DeviceContext**:
 
-- Under **CommandFiles**, upload your batch file, your .lnk file, and your desktop app installation file 
-- Under **CommandLine**, enter cmd /c *FileName*.bat
+- Under **CommandFiles**, upload your batch file, your .lnk file, and your desktop app installation file.
+
+  >[!IMPORTANT]
+  >Paste the full file path to the .lnk file in the **CommandFiles** field. If you browse to and select the .lnk file, the file path will be changed to the path of the target of the .lnk.
+
+- Under **CommandLine**, enter `cmd /c *FileName*.bat`.
 

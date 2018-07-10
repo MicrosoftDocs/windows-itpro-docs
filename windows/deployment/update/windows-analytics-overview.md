@@ -9,7 +9,7 @@ ms.date: 03/09/2018
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Windows Analytics overview

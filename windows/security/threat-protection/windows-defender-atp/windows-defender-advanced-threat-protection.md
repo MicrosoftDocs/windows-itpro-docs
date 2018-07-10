@@ -1,6 +1,6 @@
 ---
-title: Windows Defender Advanced Threat Protection portal
-description: The Windows Defender Advanced Threat Protection portal is teh gateway that helps secops to prevent, detect, investigate, and respond to possible cybersecurity threats related to advanced persistent threats.
+title: Windows Defender Advanced Threat Protection
+description: Windows Defender Advanced Threat Protection is an enterprise security platform that helps secops to prevent, detect, investigate, and respond to possible cybersecurity threats related to advanced persistent threats.
 keywords: introduction to Windows Defender Advanced Threat Protection, introduction to Windows Defender ATP, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 07/01/2018
 ---
 
-# Windows Defender Advanced Threat Protection portal
+# Windows Defender Advanced Threat Protection
 
 **Applies to:**
 
@@ -23,21 +23,20 @@ ms.date: 07/01/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-main-abovefoldlink)
 >
 >For more info about Windows 10 Enterprise Edition features and functionality, see [Windows 10 Enterprise edition](https://www.microsoft.com/WindowsForBusiness/buy).
 
-Windows Defender Advanced Threat Protection is a suite of capabilities designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
+Windows Defender Advanced Threat Protection is a platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
 
-To help you maximize the effectiveness of the security suite, you can configure individual capabilities that surface in the Windows Defender ATP portal. For more information about the Windows Defender ATP capabilities, see [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/en-us/windows/security/wdatp).
+To help you maximize the effectiveness of the security platform, you can configure individual capabilities that surface in Windows Defender Security Center. 
+
+The Windows Defender ATP platform is where all the capabilities that are available across multiple products come together to give security operations teams the ability to effectively manage their organization's network.
 
 
-The Windows Defender ATP portal is where all the capabilities that are available across multiple products come together in a single-pane of glass.
-
-
-Get a quick, but in-depth overview of Windows Defender ATP for Windows 10 and the new capabilities in Windows 10, version 1703 see [Windows Defender ATP for Windows 10 Creators Update](https://technet.microsoft.com/en-au/windows/mt782787).
+Get a quick, but in-depth overview of Windows Defender ATP and the new capabilities in Windows 10, version 1703 see [Windows Defender ATP for Windows 10 Creators Update](https://technet.microsoft.com/en-au/windows/mt782787).
 
 Windows Defender ATP uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
 
@@ -83,21 +82,6 @@ detect sophisticated cyber-attacks, providing:
 
     Significantly reduces alert volume by leveraging inspection algorithms used by analysts to examine alerts and take remediation action. 
 
-## In this section
-
-Topic | Description
-:---|:---
-Get started  |  Learn about the minimum requirements, validate licensing and complete setup, know about preview features, understand data storage and privacy, and how to assign user access to the portal.
-[Onboard machines](onboard-configure-windows-defender-advanced-threat-protection.md) | Learn about onboarding client, server, and non-Windows machines. Learn how to run a detection test, configure proxy and Internet connectivity settings, and how to troubleshoot potential onboarding issues.
-[Understand the Windows Defender ATP portal](use-windows-defender-advanced-threat-protection.md) | Understand the Security operations, Secure Score, and Threat analytics dashboards as well as how to navigate the portal.
-Investigate and remediate threats | Investigate alerts, machines, and take response actions to remediate threats.
-API and SIEM support | Use the supported APIs to pull and create custom alerts, or automate workflows. Use the supported SIEM tools to pull alerts from the Windows Defender ATP portal.
-Reporting | Create and build Power BI reports using Windows Defender ATP data.
-Check service health and sensor state | Verify that the service is running and check the sensor state on machines.
-[Configure Windows Defender settings](preferences-setup-windows-defender-advanced-threat-protection.md) | Configure general settings, turn on the preview experience, notifications, and enable other features.
-[Access the Windows Defender ATP Community Center](community-windows-defender-advanced-threat-protection.md) | Access the Windows Defender ATP Community Center to learn, collaborate, and share experiences about the product.
-[Troubleshoot Windows Defender ATP](troubleshoot-windows-defender-advanced-threat-protection.md) | This section addresses issues that might arise as you use the Windows Defender Advanced Threat service.
-[Windows Defender Antivirus compatibility with Windows Defender ATP](defender-compatibility-windows-defender-advanced-threat-protection.md) | Understand how Windows Defender Antivirus integrates with Windows Defender ATP. 
 
 
 ## Related topic

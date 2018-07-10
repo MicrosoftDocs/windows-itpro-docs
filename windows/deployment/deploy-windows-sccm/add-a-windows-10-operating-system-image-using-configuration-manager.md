@@ -5,7 +5,7 @@ ms.assetid: 77f769cc-1a47-4f36-8082-201cd77b8d3b
 keywords: image, deploy, distribute
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 author: mtniehaus
 ms.date: 07/27/2017

@@ -10,31 +10,29 @@ ms.date: 02/05/2018
 ---
 
 # Threat Protection
-Windows Defender Advanced Threat Protection is a unified endpoint security platform using built-in security technologies working together and powered by the cloud.
+Windows Defender Advanced Threat Protection (ATP) is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Windows Defender ATP protects endpoints from cyber threats; detects advanced attacks and data breaches, automates security incidents and improves security posture.
 
+![Windows Defender ATP components](images/wdatp-pillars2.png)
 
-## Get Windows Defender ATP and you get #errrythanggg security
+The following capabilities are available across multiple products that make up the Windows Defender ATP platform. 
 
-- Windows Defender Security Center 
-- Windows Defender Antivirus
-- Windows Defender Exploit Guard
-- Windows Defender Application control
-- Windows Defender Application Guard
-- Windows Firewall
-- Windows Defender Security Analytics
+**Attack surface reduction**<br>
+The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
 
-You get all these good stuff which you configure individually. You can pick and choose what you need and what you don't. When you're done with setting 'em up, you'll be rewarded with the convenience of seeing everything in once place: Windows Defender Security Center. 
+**Next generation protection**<br>
+To further reinforce the security perimeter of your network, Windows Defender ATP uses next generation protection designed to catch all types of emerging threats.
 
+**Endpoint detection and response**<br>
+Endpoint detection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
 
+**Auto investigation and remediation**<br>
+In conjunction with being able to quickly respond to advanced attacks, Windows Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
 
-With these you'll get the following capabilities:
-![Windows Defender ATP service components](windows-defender-atp/images/WDATP-components.png)
+**Security posture**<br>
+Windows Defender ATP also provides a security posture capability to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security state of your network.
 
--	Attack Surface Reduction
--	Next Generation Protection
--	Endpoint Detection and Response
--	Automatic Investigation and Remediation
--	Security Posture
--	Managed Hunting
+**Management and APIs**<br>
+Windows Defender ATP provides integrated configuration management in the cloud. The service also supports third-party mobile device management (MDM) tools, cross-platform support, and APIs that allow customers to create custom threat intelligence and  automate workflows.
+
 
 

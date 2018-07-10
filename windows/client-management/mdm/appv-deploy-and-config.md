@@ -13,7 +13,7 @@ ms.date: 06/26/2017
 
 ## Executive summary
 
-<p>Microsoft Application Virtualization (App-V) apps have typically been configured, deployed, and managed through on-premise group policies using System Center Configuration Manager (SCCM) or App-V server. In Windows 10, version 1703, App-V apps can be configured, deployed, and managed using mobile device management (MDM), matching their on-premise counterparts.</p>
+<p>Microsoft Application Virtualization (App-V) apps have typically been configured, deployed, and managed through on-premises group policies using System Center Configuration Manager (SCCM) or App-V server. In Windows 10, version 1703, App-V apps can be configured, deployed, and managed using mobile device management (MDM), matching their on-premises counterparts.</p>
 
 <p>MDM services can be used to publish App-V packages to clients running Windows 10, version 1703 (or later). All capabilities such as App-V enablement, configuration, and publishing can be completed using the EnterpriseAppVManagement CSP.</p>
 
@@ -79,7 +79,7 @@ ms.date: 06/26/2017
 
 ## Scenarios addressed in App-V MDM functionality
 
-<p>All App-V group policies will be reflected by having a corresponding CSP that can be set using the Policy CSP. The CSPs match all on-premise App-V configuration capabilities. In addition, new App-V package management capability has been added to closely match the App-V PowerShell functionality.</p>
+<p>All App-V group policies will be reflected by having a corresponding CSP that can be set using the Policy CSP. The CSPs match all on-premises App-V configuration capabilities. In addition, new App-V package management capability has been added to closely match the App-V PowerShell functionality.</p>
 
 <p>A complete list of App-V policies can be found here:</p>
 

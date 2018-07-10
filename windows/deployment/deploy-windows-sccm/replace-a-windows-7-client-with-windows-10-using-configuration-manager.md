@@ -5,7 +5,7 @@ ms.assetid: 3c8a2d53-8f08-475f-923a-bca79ca8ac36
 keywords: upgrade, install, installation, replace computer, setup
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 author: mtniehaus
 ms.date: 07/27/2017

@@ -32,7 +32,7 @@ Select **Enrollments**, enter a UPN, and then click **Add** to configure the set
 | DiscoveryServiceFullUrl | URL | The full URL for the discovery service |
 | EnrollmentServiceFullUrl | URL | The full URL for the enrollment service |
 | PolicyServiceFullUrl | URL | The full URL for the policy service |
-| Secret | - Password string for on-premise authentication enrollment</br>- Federated security token for federated enrollment</br>- Certificate thumb print for certificate-based enrollment | Enter the appropriate value for the selected AuthPolicy  |
+| Secret | - Password string for on-premises authentication enrollment</br>- Federated security token for federated enrollment</br>- Certificate thumb print for certificate-based enrollment | Enter the appropriate value for the selected AuthPolicy  |
 
 ## Related topics
 

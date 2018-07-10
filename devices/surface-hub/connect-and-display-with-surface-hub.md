@@ -33,7 +33,7 @@ When connecting external devices and displays to a Surface Hub, there are severa
 ## Guest Mode
 
 
-Guest Mode uses a wired connection, so people can display content from their devices to the Surface Hub. If the source device is Windows-based, that device can also provide Touchback and Inkback. Surface Hub's internal PC takes video and audio from the connected device and presents them on the Surface Hub. If Surface Hub encounters a High-Bandwidth Digital Content Protection (HDCP) signal, the source will be be displayed as a black image. To display your content without violating HDCP requirements, use the keypad on the right side of the Surface Hub to directly choose the external source.
+Guest Mode uses a wired connection, so people can display content from their devices to the Surface Hub. If the source device is Windows-based, that device can also provide Touchback and Inkback. Surface Hub's internal PC takes video and audio from the connected device and presents them on the Surface Hub. If Surface Hub encounters a High-Bandwidth Digital Content Protection (HDCP) signal, the source will be displayed as a black image. To display your content without violating HDCP requirements, use the keypad on the right side of the Surface Hub to directly choose the external source.
 
 >[!NOTE]
 >When an HDCP source is connected, use the side  keypad to change source inputs.

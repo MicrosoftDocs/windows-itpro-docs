@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 07/27/2017
 ---
 
@@ -43,7 +43,7 @@ When multiple provisioning packages are available for device provisioning, the c
 
 1. Microsoft 
 
-2. Silicon Vender 
+2. Silicon Vendor 
 
 3. OEM 
 

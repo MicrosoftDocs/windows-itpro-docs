@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerms
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 07/27/2017
 ---
 
@@ -64,7 +64,7 @@ On the device, perform the following steps: (add select certificate)
 7.  Tap the back arrow.
 
 ## Encrypt or sign individual messages
-1.  While composing a message, choose **Options** from the ribbon. On phone, **Options** can be accessed by tapping the the ellipsis (...).
+1.  While composing a message, choose **Options** from the ribbon. On phone, **Options** can be accessed by tapping the ellipsis (...).
 
 2.  Use **Sign** and **Encrypt** icons to turn on digital signature and encryption for this message.
 
