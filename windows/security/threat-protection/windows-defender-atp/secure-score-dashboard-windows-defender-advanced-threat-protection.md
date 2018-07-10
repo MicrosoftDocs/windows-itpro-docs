@@ -326,7 +326,7 @@ For a machine to be considered "well configured", it must comply to a minimum ba
 Machines are considered "well configured" for Windows Defender Credential Guard if the following requirements are met:
 
 - Hardware and software prerequisites are met
-- Windows Defender Credential Guard is turned on on compatible machines
+- Windows Defender Credential Guard is turned on compatible machines
 
 
 ##### Recommended actions:
