@@ -85,7 +85,7 @@ Use the [**Get** method of the **MSFT_MpThreat** and **MSFT_MpThreatDetection**]
 
 1. In Intune, go to **Devices > All Devices** and select the device you want to scan.
 
-2. Select **...More** and then select **Quick Scan** or **Full Scan**.
+2. Click the scan results in **Device actions status**.
 
 
 
