@@ -22,8 +22,8 @@ The attack surface reduction set of capabilities provide the first line of defen
 **Next generation protection**<br>
 To further reinforce the security perimeter of your network, Windows Defender ATP uses next generation protection designed to catch all types of emerging threats.
 
-**Endpoint detection and response**<br>
-Endpoint detection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
+**Endpoint protection and response**<br>
+Endpoint protection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
 
 **Auto investigation and remediation**<br>
 In conjunction with being able to quickly respond to advanced attacks, Windows Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
@@ -31,8 +31,6 @@ In conjunction with being able to quickly respond to advanced attacks, Windows D
 **Security posture**<br>
 Windows Defender ATP also provides a security posture capability to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security state of your network.
 
-**Management and APIs**<br>
-Windows Defender ATP provides integrated configuration management in the cloud. The service also supports third-party mobile device management (MDM) tools, cross-platform support, and APIs that allow customers to create custom threat intelligence and  automate workflows.
 
 
 
