@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 07/10/2018
 
 ---
 
@@ -68,10 +68,8 @@ See [How to create and deploy antimalware policies: Scan settings]( https://docs
 
 **Use Microsoft Intune to configure scanning options**
 
+See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure) and [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-windows-10#windows-defender-antivirus) for more details.
 
-
-See [Help secure Windows PCs with Endpoint Protection for Microsoft Intune: Scan options](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune#specify-scan-options-settings) and [Windows Defender policy settings in Windows 10](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune#windows-defender-1) for more details.
- 
 
 
 <a id="ref1"></a>
