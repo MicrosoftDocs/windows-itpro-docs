@@ -1659,6 +1659,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Start/ImportEdgeAssets - added a table of SKU support information.</li>
 </ul>
 </td></tr>
+<tr>
+<td style="vertical-align:top">[WiredNetwork CSP](wirednetwork-csp.md)</td>
+<td style="vertical-align:top">New CSP added in Windows 10, next major version.
+</td></tr>
 </tbody>
 </table>
 
