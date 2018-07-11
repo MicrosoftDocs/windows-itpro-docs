@@ -320,4 +320,5 @@
 #### [WindowsLicensing DDF file](windowslicensing-ddf-file.md)
 ### [WindowsSecurityAuditing CSP](windowssecurityauditing-csp.md)
 #### [WindowsSecurityAuditing DDF file](windowssecurityauditing-ddf-file.md)
-
+### [WiredNetwork CSP](wirednetwork-csp.md)
+#### [WiredNetwork DDF file](wirednetwork-ddf-file.md)
