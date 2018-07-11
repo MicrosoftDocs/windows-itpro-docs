@@ -78,7 +78,7 @@ For October 2017, we are announcing an update to system.management.automation.dl
 
 Microsoft recommends that you block the following Microsoft-signed applications and PowerShell files by merging the following policy into your existing policy to add these deny rules using the Merge-CIPolicy cmdlet:
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8" ?> 
   <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
   <VersionEx>10.0.0.0</VersionEx> 
