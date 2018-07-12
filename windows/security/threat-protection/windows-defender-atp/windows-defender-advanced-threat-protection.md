@@ -34,11 +34,11 @@ The Windows Defender ATP platform is where all the capabilities that are availab
 
 Topic | Description
 :---|:---
-Windows Defender Security Center | Windows Defender Security Center is the portal where you can access Windows Defender Advanced Threat Protection capabilities. It gives enterprise security operations teams a single pane of glass experience to help secure networks.
-Windows Defender Antivirus | Windows Defender Antivirus is a built-in antimalware solution that provides security and antimalware management for desktops, portable computers, and servers.
-Windows Defender Exploit Guard | Windows Defender Exploit Guard (Windows Defender EG) is a new set of host intrusion prevention capabilities for Windows 10, allowing you to manage and reduce the attack surface of apps used by your employees.
-Windows Defender Application Control | Windows Defender Application Control (WDAC) can help mitigate security threats by restricting the applications that users are allowed to run and the code that runs in the System Core (kernel). 
-Windows Defender Application Guard | Windows Defender Application Guard helps to isolate enterprise-defined untrusted sites, protecting your company while your employees browse the Internet. 
+[Windows Defender Security Center](windows-defender-security-center-atp.md) | Windows Defender Security Center is the portal where you can access Windows Defender Advanced Threat Protection capabilities. It gives enterprise security operations teams a single pane of glass experience to help secure networks.
+[Windows Defender Antivirus](windows-defender-antivirus\windows-defender-antivirus-in-windows-10.md) | Windows Defender Antivirus is a built-in antimalware solution that provides security and antimalware management for desktops, portable computers, and servers.
+[Windows Defender Exploit Guard](windows-defender-exploit-guard\windows-defender-exploit-guard.md) | Windows Defender Exploit Guard (Windows Defender EG) is a new set of host intrusion prevention capabilities for Windows 10, allowing you to manage and reduce the attack surface of apps used by your employees.
+[Windows Defender Application Control](windows-defender-application-control/windows-defender-application-control.md) | Windows Defender Application Control (WDAC) can help mitigate security threats by restricting the applications that users are allowed to run and the code that runs in the System Core (kernel). 
+[Windows Defender Application Guard](windows-defender-application-guard/wd-app-guard-overview.md) | Windows Defender Application Guard helps to isolate enterprise-defined untrusted sites, protecting your company while your employees browse the Internet. 
 
 
 
