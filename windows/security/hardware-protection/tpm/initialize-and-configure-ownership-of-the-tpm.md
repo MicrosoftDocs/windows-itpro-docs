@@ -28,7 +28,7 @@ With TPM 1.2 and Windows 10, version 1507 or 1511, you can also take the followi
 
 -   [Turn on or turn off the TPM](#turn-on-or-turn-off)
 
-For information about the TPM cmdlets, see [TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx).
+For information about the TPM cmdlets, see [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/trustedplatformmodule/?view=win10-ps).
 
 ## About TPM initialization and ownership
 
@@ -165,7 +165,7 @@ This capability was fully removed from TPM.msc in later versions of Windows.
 
 ## Use the TPM cmdlets
 
-You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx).
+You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/trustedplatformmodule/?view=win10-ps).
 
 ## Related topics
 
