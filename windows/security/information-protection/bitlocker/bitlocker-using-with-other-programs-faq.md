@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: brianlic-msft
-ms.date: 05/03/2018
+ms.date: 07/10/2018
 ---
 
 # Using BitLocker with other programs FAQ
@@ -89,11 +89,11 @@ Yes. However, shadow copies made prior to enabling BitLocker will be automatical
 
 BitLocker should work like any specific physical machine within its hardware limitations as long as the environment (physical or virtual) meets Windows Operating System requirements to run.
 - With TPM - Yes it is supported
-- Without  TPM - Yes it is supported (with password ) protector
+- Without  TPM - Yes it is supported (with password protector)
 
-BitLocker is also supported on data volume VHDs, such as those used by clusters, if you are running Windows 10, Windows 8.1, Windows 8, Windows Server 2012, or Windows Server 2012 R2.
+BitLocker is also supported on data volume VHDs, such as those used by clusters, if you are running Windows 10, Windows 8.1, Windows 8, Windows Server 2016, Windows Server 2012 R2, or Windows Server 2012.
 
 ## Can I use BitLocker with virtual machines (VMs)?
 
-Yes. Password protectors and virtual TPMs can be used with BitLocker to protect virtual machines. VMs can be domain joined, Azure AD-joined, or workplace-joined (in **Settings** under **Accounts** > **Access work or school** > **Connect** to receive policy. You can enable encryption either while creating the VM or by using other existing management tools such as the BitLocker CSP, or even by using a startup script or logon script delivered by Group Policy. Windows Server 2016 also supports [Shielded VMs and guarded fabric](https://docs.microsoft.com/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms-top-node) to protect VMs from malicious administrators.  
+Yes. Password protectors and virtual TPMs can be used with BitLocker to protect virtual machines. VMs can be domain joined, Azure AD-joined, or workplace-joined (via **Settings** > **Accounts** > **Access work or school** > **Connect**) to receive policy. You can enable encryption either while creating the VM or by using other existing management tools such as the BitLocker CSP, or even by using a startup script or logon script delivered by Group Policy. Windows Server 2016 also supports [Shielded VMs and guarded fabric](https://docs.microsoft.com/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms-top-node) to protect VMs from malicious administrators.  
 

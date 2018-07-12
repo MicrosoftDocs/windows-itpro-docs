@@ -1,7 +1,6 @@
 ---
-title: WiFi DDF file
-description: WiFi DDF file
-ms.assetid: 00DE1DA7-23DE-4871-B3F0-28EB29A62D61
+title: WiredNetwork DDF file
+description: This topic shows the OMA DM device description framework (DDF) for the WiredNetwork configuration service provider. 
 ms.author: maricia
 ms.topic: article
 ms.prod: w10
@@ -10,141 +9,44 @@ author: MariciaAlforque
 ms.date: 06/28/2018
 ---
 
-# WiFi DDF file
+# WiredNetwork DDF file
 
 
-This topic shows the OMA DM device description framework (DDF) for the **WiFi** configuration service provider. DDF files are used only with OMA DM provisioning XML.
+This topic shows the OMA DM device description framework (DDF) for the WiredNetwork configuration service provider. This CSP was added in Windows 10, version 1511.  
 
-The XML below is for Windows 10, next major version.
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+
+The XML below is the current version for this CSP.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
-  [
-  <?oma-dm-ddf-ver supported-versions="1.2"?>
-]>
+  [<?oma-dm-ddf-ver supported-versions="1.2"?>]>
 <MgmtTree xmlns:MSFT="http://schemas.microsoft.com/MobileDevice/DM">
   <VerDTD>1.2</VerDTD>
-  <Node>
-    <NodeName>WiFi</NodeName>
-    <Path>./Vendor/MSFT</Path>
-    <DFProperties>
-      <AccessType>
-        <Get />
-      </AccessType>
-      <DFFormat>
-        <node />
-      </DFFormat>
-      <Occurrence>
-        <One />
-      </Occurrence>
-      <Scope>
-        <Permanent />
-      </Scope>
-      <DFType>
-        <MIME>com.microsoft/1.1/MDM/WiFi</MIME>
-      </DFType>
-    </DFProperties>
-    <Node>
-      <NodeName>Profile</NodeName>
-      <DFProperties>
-        <AccessType>
-          <Get />
-        </AccessType>
-        <DFFormat>
-          <node />
-        </DFFormat>
-        <Occurrence>
-          <One />
-        </Occurrence>
-        <Scope>
-          <Permanent />
-        </Scope>
-        <DFType>
-          <DDFName></DDFName>
-        </DFType>
-      </DFProperties>
       <Node>
-        <NodeName></NodeName>
+        <NodeName>WiredNetwork</NodeName>
+        <Path>./User/Vendor/MSFT</Path>
         <DFProperties>
           <AccessType>
-            <Add />
-            <Delete />
             <Get />
-            <Replace />
           </AccessType>
-          <Description>The Profile name of the Wi-Fi network. This is added when WlanXML node is added and deleted when Wlanxml is deleted.</Description>
           <DFFormat>
             <node />
           </DFFormat>
           <Occurrence>
-            <ZeroOrMore />
+            <One />
           </Occurrence>
           <Scope>
-            <Dynamic />
+            <Permanent />
           </Scope>
-          <DFTitle>SSID</DFTitle>
           <DFType>
             <DDFName></DDFName>
           </DFType>
         </DFProperties>
         <Node>
-          <NodeName>WlanXml</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>
-              XML describing the network configuration and follows Windows WLAN_profile schema.
-              Link to schema: http://msdn.microsoft.com/en-us/library/windows/desktop/ms707341(v=vs.85).aspx
-            </Description>
-            <DFFormat>
-              <chr />
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>Proxy</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Optional node. The format is url:port. Configuration of the network proxy (if any).</Description>
-            <DFFormat>
-              <chr />
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <CaseSense>
-              <CIS />
-            </CaseSense>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>ProxyPacUrl</NodeName>
+          <NodeName>LanXML</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -152,7 +54,7 @@ The XML below is for Windows 10, next major version.
               <Delete />
               <Replace />
             </AccessType>
-            <Description>Optional node. URL to the PAC file location.</Description>
+            <Description>XML describing the wired network configuration and follows the LAN_profile schemas https://msdn.microsoft.com/en-us/library/windows/desktop/aa816366(v=vs.85).aspx</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -162,16 +64,13 @@ The XML below is for Windows 10, next major version.
             <Scope>
               <Dynamic />
             </Scope>
-            <CaseSense>
-              <CIS />
-            </CaseSense>
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>ProxyWPAD</NodeName>
+          <NodeName>EnableBlockPeriod</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -179,9 +78,9 @@ The XML below is for Windows 10, next major version.
               <Delete />
               <Replace />
             </AccessType>
-            <Description>Optional node: The presence of the field enables WPAD for proxy lookup.</Description>
+            <Description> Enable block period (minutes), used to specify the duration for which automatic authentication attempts will be blocked from occurring after a failed authentication attempt.</Description>
             <DFFormat>
-              <bool />
+              <int />
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -195,22 +94,74 @@ The XML below is for Windows 10, next major version.
           </DFProperties>
         </Node>
       </Node>
-    </Node>
-  </Node>
+      <Node>
+        <NodeName>WiredNetwork</NodeName>
+        <Path>./Device/Vendor/MSFT</Path>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>LanXML</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Add />
+              <Delete />
+              <Replace />
+            </AccessType>
+            <Description>XML describing the wired network configuration and follows the LAN_profile schemas https://msdn.microsoft.com/en-us/library/windows/desktop/aa816366(v=vs.85).aspx</Description>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>EnableBlockPeriod</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Add />
+              <Delete />
+              <Replace />
+            </AccessType>
+            <Description> Enable block period (minutes), used to specify the duration for which automatic authentication attempts will be blocked from occurring after a failed authentication attempt.</Description>
+            <DFFormat>
+              <int />
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
 </MgmtTree>
 ```
-
-## Related topics
-
-
-[WiFi configuration service provider](wifi-csp.md)
-
- 
-
- 
-
-
-
-
-
-
