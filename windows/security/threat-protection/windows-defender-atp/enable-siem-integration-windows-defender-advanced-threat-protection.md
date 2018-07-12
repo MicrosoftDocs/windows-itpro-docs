@@ -27,7 +27,7 @@ ms.date: 04/24/2018
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-enablesiem-abovefoldlink) 
 
-Enable security information and event management (SIEM) integration so you can pull alerts from the Windows Defender ATP portal using your SIEM solution or by connecting directly to the alerts REST API.
+Enable security information and event management (SIEM) integration so you can pull alerts from Windows Defender Security Center using your SIEM solution or by connecting directly to the alerts REST API.
 
 1. In the navigation pane, select **Settings** > **SIEM**.
 
@@ -55,7 +55,7 @@ Enable security information and event management (SIEM) integration so you can p
   > [!NOTE]
   > You'll need to generate a new Refresh token every 90 days. 
 
-You can now proceed with configuring your SIEM solution or connecting to the alerts REST API through programmatic access. You'll need to use the tokens when configuring your SIEM solution to allow it to receive alerts from the Windows Defender ATP portal.
+You can now proceed with configuring your SIEM solution or connecting to the alerts REST API through programmatic access. You'll need to use the tokens when configuring your SIEM solution to allow it to receive alerts from Windows Defender Security Center.
 
 
 

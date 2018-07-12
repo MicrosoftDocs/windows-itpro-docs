@@ -1,6 +1,6 @@
 ---
 title: Pull Windows Defender ATP alerts using REST API
-description: Pull alerts from the Windows Defender ATP portal REST API.
+description: Pull alerts from Windows Defender ATP REST API.
 keywords: alerts, pull alerts, rest api, request, response
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
