@@ -1,6 +1,6 @@
 ---
 title: Kernel DMA protection for Thunderbolt™ 3
-description: In the Windows 10 version 1803 release, Microsoft introduced Kernel DMA Protection, a native OS solution for protecting PCs against drive-by DMA attacks via Thunderbolt™ 3 enabled ports.
+description: In the Windows 10 version 1803 release, Microsoft introduced kernel DMA protection, a native OS solution for protecting PCs against drive-by DMA attacks via Thunderbolt™ 3 enabled ports.
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -22,7 +22,7 @@ Beginning in 2013, Intel added incremental capabilities to Thunderbolt technolog
 When the host is properly configured with these capabilities, an end user would have to first approve the Thunderbolt peripheral when initially attached to the port, approved as either “Connect Only Once” or “Connect Always”. Although this methodology mitigates most Physical DMA attacks from un-authorized Thunderbolt devices, if a Thunderbolt device with a PCIe slot is approved as “Connect Always”, a physical “DMA attack” might still be possible, given the correct hardware and physical access to a previously approved Thunderbolt device with PCIe expandability (such as ae.g. PCIe slot or, ExpressCard). 
 Although the “Connect Only Once” does provide additional mitigation from such attacks, it places an unwelcome burden on the end user who would be required to approve the device every time it’s connected.
 
-In the Windows 10 version 1803 release, Microsoft introduced a native OS solution for protecting PCs against drive-by DMA attacks via Thunderbolt™ 3 enabled ports called *Kernel DMA Protection*. 
+In the Windows 10 version 1803 release, Microsoft introduced a native OS solution for protecting PCs against drive-by DMA attacks via Thunderbolt™ 3 enabled ports called *kernel DMA protection*. 
 Drive-by DMA attacks are attacks that can be performed in less the 10 minutes, with off-the-shelf equipment costing less than $1,000, that do not require disassembly of the PC chassis. 
 Without protection, a drive-by DMA attacker could dump or overwrite the entire memory of the system, inject malware, or even short-circuit the login algorithm to gain full access to the PC being attacked.
 
