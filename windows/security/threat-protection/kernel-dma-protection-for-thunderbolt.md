@@ -14,12 +14,12 @@ ms.date: 07/12/2018
 
 Some bus types (such as PCI, Thunderbolt™3, ExpressCard, 1394, and so on) support Direct Memory Access (DMA). 
 DMA-enabled buses can directly read and write to arbitrary physical memory addresses (that is, all of RAM). 
-While this facilitates performance, it introduces security concerns as it can provide maliciously-constructed or compromised devices with the ability to read system secrets or modify system code and& data. 
+While this facilitates performance, it introduces security concerns as it can provide maliciously-constructed or compromised devices with the ability to read system secrets or modify system code and data. 
 So-called “DMA attacks” were popularized in 2004 but faded in recent times as DMA-capable external ports disappeared from laptops with the rise of USB. 
 With the increasing popularity of Thunderbolt™ 3 hosts and peripherals, industry experts are exploring new possible physical DMA attack vectors via these ports.
 
 Beginning in 2013, Intel added incremental capabilities to Thunderbolt technology to reduce DMA exposure. 
-When the host is properly configured with these capabilities, an end user would have to first approve the Thunderbolt peripheral when initially attached to the port, approved as either “Connect Only Once” or “Connect Always”. Although this methodology mitigates most Physical DMA attacks from un-authorized Thunderbolt devices, if a Thunderbolt device with a PCIe slot is approved as “Connect Always”, a physical “DMA attack” might still be possible, given the correct hardware and physical access to a previously approved Thunderbolt device with PCIe expandability (such as ae.g. PCIe slot or, ExpressCard). 
+When the host is properly configured with these capabilities, an end user would have to first approve the Thunderbolt peripheral when initially attached to the port, approved as either “Connect Only Once” or “Connect Always”. Although this methodology mitigates most Physical DMA attacks from un-authorized Thunderbolt devices, if a Thunderbolt device with a PCIe slot is approved as “Connect Always”, a physical “DMA attack” might still be possible, given the correct hardware and physical access to a previously approved Thunderbolt device with PCIe expandability (such as a PCIe slot or, ExpressCard). 
 Although the “Connect Only Once” does provide additional mitigation from such attacks, it places an unwelcome burden on the end user who would be required to approve the device every time it’s connected.
 
 In the Windows 10 version 1803 release, Microsoft introduced a native OS solution for protecting PCs against drive-by DMA attacks via Thunderbolt™ 3 enabled ports called *kernel DMA protection*. 
@@ -61,9 +61,9 @@ For PCI Thunderbolt™ 3 devices that are required to function before the user s
 To be DMAr compatible and to opt in to DMAr, the device driver must:
 
 1. Only perform DMA using the Microsoft standard DMA interfaces:
-   - [WDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdmaenabler/)
-   - [NDIS Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
-   - [WDM Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+   - [Windows Driver Framework (WDF) Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdmaenabler/)
+   - [Network Driver Interface Specification (NDIS) Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
+   - [Windows Driver Model (WDM) Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model)
 2. Opt -in to DMAr using the following INF directive: 
    ```inf
    [MyServiceInstall_AddReg]
