@@ -1,5 +1,5 @@
 ---
-title: Configure Windows Defender ATP settings
+title: Configure Windows Defender Security Center settings
 description: Use the settings page to configure general settings, permissions, apis, and rules.
 keywords: settings, general settings, permissions, apis, rules
 search.product: eADQiWindows 10XVcnh
@@ -12,7 +12,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 ms.date: 04/24/2018
 ---
-# Configure Windows Defender ATP settings
+# Configure Windows Defender Security Center settings
 
 **Applies to:**
 

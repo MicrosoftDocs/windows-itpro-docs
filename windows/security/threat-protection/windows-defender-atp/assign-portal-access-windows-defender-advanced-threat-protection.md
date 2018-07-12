@@ -1,5 +1,5 @@
 ---
-title: Assign user access to the Windows Defender ATP portal
+title: Assign user access to Windows Defender Security Center
 description: Assign read and write or read only access to the Windows Defender Advanced Threat Protection portal.
 keywords: assign user roles, assign read and write access, assign read only access, user, user roles, roles
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 04/24/2018
 ---
 
-# Assign user access to the Windows Defender ATP portal
+# Assign user access to Windows Defender Security Center
 **Applies to:**
 
 - Windows 10 Enterprise
