@@ -1,4 +1,16 @@
-Kernel DMA protection for Thunderbolt™ 3
+---
+title: Kernel DMA protection for Thunderbolt™ 3
+description: In the Windows 10 version 1803 release, Microsoft introduced Kernel DMA Protection, a native OS solution for protecting PCs against drive-by DMA attacks via Thunderbolt™ 3 enabled ports.
+keywords: virtualization, security, malware
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.localizationpriority: medium
+ms.author: justinha
+author: brianlic-msft
+ms.date: 07/12/2018
+---
+
+# Kernel DMA protection for Thunderbolt™ 3
 
 Some bus types (such as PCI, Thunderbolt™3, ExpressCard, 1394, and so on) support Direct Memory Access (DMA). 
 DMA-enabled buses can directly read and write to arbitrary physical memory addresses (that is, all of RAM). 
