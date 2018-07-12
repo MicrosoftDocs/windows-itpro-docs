@@ -323,8 +323,6 @@
 
 ## [Windows Defender Device Guard: virtualization-based security and WDAC](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 
-## [Kernel DMA protection for Thunderbolt™ 3](kernel-dma-protection-for-thunderbolt.md)
-
 ## [Windows Defender SmartScreen](windows-defender-smartscreen/windows-defender-smartscreen-overview.md)
 ### [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md)
 ### [Set up and use Windows Defender SmartScreen on individual devices](windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device.md)
