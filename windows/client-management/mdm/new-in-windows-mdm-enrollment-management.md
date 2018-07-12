@@ -1644,6 +1644,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>ApplicationManagement/LaunchAppAfterLogOn</li>
 <li>ApplicationManagement/ScheduleForceRestartForUpdateFailures </li>
 <li>TaskManager/AllowEndTask</li>
+<li>WindowsLogon/DontDisplayNetworkSelectionUI</li>
 </ul>
 </td></tr>
 </tbody>

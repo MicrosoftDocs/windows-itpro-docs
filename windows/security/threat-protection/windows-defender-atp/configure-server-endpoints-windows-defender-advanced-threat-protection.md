@@ -27,7 +27,7 @@ ms.date: 05/08/2018
 
 Windows Defender ATP extends support to also include the Windows Server operating system, providing advanced attack detection and investigation capabilities, seamlessly through the Windows Defender Security Center console.
 
-Windows Defender ATP supports the onboarding of the following servers:
+The service supports the onboarding of the following servers:
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server, version 1803

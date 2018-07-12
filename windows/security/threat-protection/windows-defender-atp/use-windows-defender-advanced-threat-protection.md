@@ -1,6 +1,6 @@
 ---
 title: Use the Windows Defender Advanced Threat Protection portal
-description: Learn about the features on Windows Defender ATP portal, including how alerts work, and suggestions on how to investigate possible breaches and attacks.
+description: Learn about the features on Windows Defender Security Center, including how alerts work, and suggestions on how to investigate possible breaches and attacks.
 keywords: dashboard, alerts queue, manage alerts, investigation, investigate alerts, investigate machines, submit files, deep analysis, high, medium, low, severity, ioc, ioa
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -27,7 +27,7 @@ ms.date: 03/12/2018
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-usewdatp-abovefoldlink) 
 
-You can use the Windows Defender ATP portal to carry out an end-to-end security breach investigation through the dashboards.
+You can use Windows Defender Security Center to carry out an end-to-end security breach investigation through the dashboards.
 
 Use the **Security operations** dashboard to gain insight on the various alerts on machines and users in your network.
 
