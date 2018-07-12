@@ -10,17 +10,12 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 10/23/2017
+ms.date: 07/12/2017
 ---
 
-# Troubleshoot Windows Defender Advanced Threat Protection service issues
+# Troubleshoot service issues
 
 **Applies to:**
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 

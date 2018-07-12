@@ -32,7 +32,7 @@ Investigate and remediate threats | Investigate alerts, machines, and take respo
 API and SIEM support | Use the supported APIs to pull and create custom alerts, or automate workflows. Use the supported SIEM tools to pull alerts from Windows Defender Security Center.
 Reporting | Create and build Power BI reports using Windows Defender ATP data.
 Check service health and sensor state | Verify that the service is running and check the sensor state on machines.
-[Configure Windows Defender settings](preferences-setup-windows-defender-advanced-threat-protection.md) | Configure general settings, turn on the preview experience, notifications, and enable other features.
+[Configure Windows Defender Security Center settings](preferences-setup-windows-defender-advanced-threat-protection.md) | Configure general settings, turn on the preview experience, notifications, and enable other features.
 [Access the Windows Defender ATP Community Center](community-windows-defender-advanced-threat-protection.md) | Access the Windows Defender ATP Community Center to learn, collaborate, and share experiences about the product.
-[Troubleshoot Windows Defender ATP](troubleshoot-windows-defender-advanced-threat-protection.md) | This section addresses issues that might arise as you use the Windows Defender Advanced Threat service.
-[Windows Defender Antivirus compatibility with Windows Defender ATP](defender-compatibility-windows-defender-advanced-threat-protection.md) | Understand how Windows Defender Antivirus integrates with Windows Defender ATP. 
+[Troubleshoot service issues](troubleshoot-windows-defender-advanced-threat-protection.md) | This section addresses issues that might arise as you use the Windows Defender Advanced Threat service.
+
