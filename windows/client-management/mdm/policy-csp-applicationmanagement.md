@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/03/2018
+ms.date: 07/11/2018
 ---
 
 # Policy CSP - ApplicationManagement
@@ -589,6 +589,17 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are launched after logon. This policy allows the IT admin to specify a list of applications that users can run after logging on to the device.
+
+For this policy to work, the Windows apps need to declare in their manifest that they will use the start up task. Example of the declaration here: 
+
+``` syntax
+<desktop:Extension Category="windows.startupTask"> 
+   <desktop:StartupTask TaskId="CoffeeStartupTask" Enabled="true" DisplayName="ms-resource:Description" /> 
+</desktop:Extension>
+```
+
+> [!Note]  
+> This policy only works on modern apps.
 
 <!--/Description-->
 <!--SupportedValues-->
