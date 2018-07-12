@@ -196,6 +196,6 @@
 ## [Configure Windows Defender Security Center zone settings](time-settings-windows-defender-advanced-threat-protection.md)
 
 ## [Access the Windows Defender ATP Community Center](community-windows-defender-advanced-threat-protection.md)
-## [Troubleshoot Windows Defender ATP](troubleshoot-windows-defender-advanced-threat-protection.md)
+## [Troubleshoot Windows Defender ATP service issues](troubleshoot-windows-defender-advanced-threat-protection.md)
 ### [Review events and errors on machines with Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
 
