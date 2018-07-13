@@ -1011,6 +1011,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### DmaGuard policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-dmaguard.md#dmaguard-deviceenumerationpolicy" id="dmaguard-deviceenumerationpolicy">DmaGuard/DeviceEnumerationPolicy</a>
+  </dd>
+</dl>
+
 ### Education policies
 
 <dl>
@@ -4147,6 +4155,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Display/EnablePerProcessDpiForApps](./policy-csp-display.md#display-enableperprocessdpiforapps)
 -   [Display/TurnOffGdiDPIScalingForApps](./policy-csp-display.md#display-turnoffgdidpiscalingforapps)
 -   [Display/TurnOnGdiDPIScalingForApps](./policy-csp-display.md#display-turnongdidpiscalingforapps)
+-   [DmaGuard/DeviceEnumerationPolicy](./policy-csp-dmaguard.md#dmaguard-deviceenumerationpolicy)
 -   [Education/PreventAddingNewPrinters](./policy-csp-education.md#education-preventaddingnewprinters)
 -   [ErrorReporting/CustomizeConsentSettings](./policy-csp-errorreporting.md#errorreporting-customizeconsentsettings)
 -   [ErrorReporting/DisableWindowsErrorReporting](./policy-csp-errorreporting.md#errorreporting-disablewindowserrorreporting)
