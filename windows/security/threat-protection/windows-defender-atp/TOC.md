@@ -77,6 +77,7 @@
 #### [Advanced hunting reference](advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
 #### [Advanced hunting query language best practices](advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
 
+## [Protect data with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
 ##API and SIEM support
 ### [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md)
 #### [Enable SIEM integration](enable-siem-integration-windows-defender-advanced-threat-protection.md)
@@ -173,7 +174,7 @@
 #### [Enable and create Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
 #### [Enable Secure score security controls](enable-secure-score-windows-defender-advanced-threat-protection.md)
 #### [Configure advanced features](advanced-features-windows-defender-advanced-threat-protection.md)
-#### [Protect data with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
+
 
 ###Permissions
 #### [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md)
