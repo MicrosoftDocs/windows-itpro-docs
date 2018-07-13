@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: coreyp-at-msft
+author: greg-lindsay
 ms.author: greg-lindsay
 ms.date: 07/13/18
 ---
@@ -27,10 +27,10 @@ In this topic you'll learn how to set-up a Windows Autopilot deployment for a Vi
 
 These are the thing you'll need on your device to get started:
 * Installation media for the latest version of Windows 10 Professional or Enterprise (ISO file)
-* Internet access (see [Network connectivity requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot#network-connectivity-requirements))
+* Internet access (see [Windows Autopilot networking requirements](windows-autopilot-requirements-network))
 * Hypervisor needs to be unoccupied, or used by Hyper-V, as we will be using Hyper-V to create the Virtual Machine
 
-See additional prerequisites in the [Windows Autopilot overview topic](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot#prerequisites).
+See additional prerequisites listed in [Windows Autopilot requirements](windows-autopilot-requirements).
 
 ## Create your Virtual Machine
 
