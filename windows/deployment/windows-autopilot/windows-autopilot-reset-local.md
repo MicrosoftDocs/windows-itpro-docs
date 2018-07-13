@@ -26,7 +26,7 @@ To enable local Autopilot Reset in Windows 10:
 
 ## Enable local Windows Autopilot Reset
 
-To enable a local Windows Autopilot Reset, the **DisableAutomaticReDeploymentCredentials** policy must be configured. This policy is documented in the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialproviders), **CredentialProviders/DisableAutomaticReDeploymentCredentials**. By default, this policy is set to 1 (Disable). This ensures that a local Autopilot Reset isn't triggered by accident.
+To enable a local Windows Autopilot Reset, the **DisableAutomaticReDeploymentCredentials** policy must be configured. This policy is documented in the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialproviders), **CredentialProviders/DisableAutomaticReDeploymentCredentials**. By default, local Windows Autopilot is disabled. This ensures that a local Autopilot Reset is not triggered by accident.
 
 You can set the policy using one of these methods:
 
@@ -37,7 +37,7 @@ You can set the policy using one of these methods:
 
 - Windows Configuration Designer
 
-    You can [use Windows Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package) to set the **Runtime settings > Policies > CredentialProviders > DisableAutomaticReDeploymentCredentials** setting and create a provisioning package.
+    You can [use Windows Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package) to set the **Runtime settings > Policies > CredentialProviders > DisableAutomaticReDeploymentCredentials** setting to 0 and then create a provisioning package.
 
 - Set up School PCs app
 
@@ -61,9 +61,4 @@ Performing a local Windows Autopilot Reset is a two-step process: trigger it and
 
 2. Sign in with the admin account credentials. If you created a provisioning package, plug in the USB drive and trigger the local Autopilot Reset.
 
-    Once the local Autopilot Reset is triggered, the reset process starts.
-    
-    ![Notification that provisioning is complete](images/autopilot-reset-provisioningcomplete.png)
-
-    Once provisioning is complete, the device is again ready for use.
-
+    Once the local Autopilot Reset is triggered, the reset process starts. Once provisioning is complete, the device is again ready for use.
