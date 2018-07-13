@@ -1623,6 +1623,33 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### July 2018
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies in Windows 10, next major version:</p>
+<ul>
+<li>ApplicationManagement/LaunchAppAfterLogOn</li>
+<li>ApplicationManagement/ScheduleForceRestartForUpdateFailures </li>
+<li>TaskManager/AllowEndTask</li>
+<li>WindowsLogon/DontDisplayNetworkSelectionUI</li>
+</ul>
+</td></tr>
+</tbody>
+</table>
+
 ### June 2018
 
 <table class="mx-tdBreakAll">
@@ -1637,6 +1664,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="vertical-align:top">[Wifi CSP](wifi-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node WifiCost.</p>
+</td></tr>
 <tr>
 <td style="vertical-align:top">[Diagnose MDM failures in Windows 10](diagnose-mdm-failures-in-windows-10.md)</td>
 <td style="vertical-align:top"><p>Recent changes:</p>
@@ -1658,6 +1689,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Start/StartLayout - added a table of SKU support information.</li>
 <li>Start/ImportEdgeAssets - added a table of SKU support information.</li>
 </ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[WiredNetwork CSP](wirednetwork-csp.md)</td>
+<td style="vertical-align:top">New CSP added in Windows 10, next major version.
 </td></tr>
 </tbody>
 </table>

@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 07/02/2018
+ms.date: 07/11/2018
 ms.localizationpriority: high
 ---
 
@@ -229,3 +229,6 @@ System Center Configuration Manager (SCCM) considers a device ready to upgrade i
 Currently, you can choose the criteria you wish to use:
 - To use the SCCM criteria, create the collection of devices ready to upgrade within the SCCM console (using the analytics connector).
 - To use the Upgrade Readiness criteria, export the list of ready-to-upgrade devices from the corresponding Upgrade Readiness report, and then build the SCCM collection from that spreadsheet.
+
+### How does Upgrade Readiness collect the inventory of devices and applications?
+For details about this process and some tips, see [How does Upgrade Readiness in WA collects application inventory for your OMS workspace?](https://techcommunity.microsoft.com/t5/Windows-Analytics-Blog/How-does-Upgrade-Readiness-in-WA-collects-application-inventory/ba-p/213586) on the Windows Analytics blog.

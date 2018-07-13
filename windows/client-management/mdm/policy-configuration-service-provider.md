@@ -389,6 +389,29 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### BITS policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-bits.md#bits-bandwidththrottlingendtime" id="bits-bandwidththrottlingendtime">BITS/BandwidthThrottlingEndTime</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-bits.md#bits-bandwidththrottlingstarttime" id="bits-bandwidththrottlingstarttime">BITS/BandwidthThrottlingStartTime</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-bits.md#bits-bandwidththrottlingtransferrate" id="bits-bandwidththrottlingtransferrate">BITS/BandwidthThrottlingTransferRate</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-bits.md#bits-costednetworkbehaviorbackgroundpriority" id="bits-costednetworkbehaviorbackgroundpriority">BITS/CostedNetworkBehaviorBackgroundPriority</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-bits.md#bits-costednetworkbehaviorforegroundpriority" id="bits-costednetworkbehaviorforegroundpriority">BITS/CostedNetworkBehaviorForegroundPriority</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-bits.md#bits-jobinactivitytimeout" id="bits-jobinactivitytimeout">BITS/JobInactivityTimeout</a>
+  </dd>
+</dl>
+
 ### Bluetooth policies
 
 <dl>
@@ -3044,6 +3067,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### TaskManager policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-taskmanager.md#taskmanager-allowendtask" id="taskmanager-allowendtask">TaskManager/AllowEndTask</a>
+  </dd>
+</dl>
+
 ### TaskScheduler policies
 
 <dl>
@@ -3983,6 +4014,12 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Autoplay/DisallowAutoplayForNonVolumeDevices](./policy-csp-autoplay.md#autoplay-disallowautoplayfornonvolumedevices)
 -   [Autoplay/SetDefaultAutoRunBehavior](./policy-csp-autoplay.md#autoplay-setdefaultautorunbehavior)
 -   [Autoplay/TurnOffAutoPlay](./policy-csp-autoplay.md#autoplay-turnoffautoplay)
+-   [BITS/BandwidthThrottlingEndTime](./policy-csp-bits.md#bits-bandwidththrottlingendtime)
+-   [BITS/BandwidthThrottlingStartTime](./policy-csp-bits.md#bits-bandwidththrottlingstarttime)
+-   [BITS/BandwidthThrottlingTransferRate](./policy-csp-bits.md#bits-bandwidththrottlingtransferrate)
+-   [BITS/CostedNetworkBehaviorBackgroundPriority](./policy-csp-bits.md#bits-costednetworkbehaviorbackgroundpriority)
+-   [BITS/CostedNetworkBehaviorForegroundPriority](./policy-csp-bits.md#bits-costednetworkbehaviorforegroundpriority)
+-   [BITS/JobInactivityTimeout](./policy-csp-bits.md#bits-jobinactivitytimeout)
 -   [Browser/AllowAddressBarDropdown](./policy-csp-browser.md#browser-allowaddressbardropdown)
 -   [Browser/AllowAutofill](./policy-csp-browser.md#browser-allowautofill)
 -   [Browser/AllowCookies](./policy-csp-browser.md#browser-allowcookies)

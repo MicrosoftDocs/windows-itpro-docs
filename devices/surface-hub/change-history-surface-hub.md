@@ -7,13 +7,19 @@ ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 06/01/2018
+ms.date: 07/12/2018
 ms.localizationpriority: medium
 ---
 
 # Change history for Surface Hub
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
+
+## July 2018
+
+New or changed topic | Description
+--- | ---
+[Set up and use Whiteboard to Whiteboard collaboration](whiteboard-collaboration.md) | Added information and links for new Microsoft Whiteboard app release.
 
 ## June 2018
 

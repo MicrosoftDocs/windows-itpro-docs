@@ -249,6 +249,7 @@
 #### [Storage](policy-csp-storage.md)
 #### [System](policy-csp-system.md)
 #### [SystemServices](policy-csp-systemservices.md)
+#### [TaskManager](policy-csp-taskmanager.md)
 #### [TaskScheduler](policy-csp-taskscheduler.md)
 #### [TextInput](policy-csp-textinput.md)
 #### [TimeLanguageSettings](policy-csp-timelanguagesettings.md)
@@ -320,4 +321,5 @@
 #### [WindowsLicensing DDF file](windowslicensing-ddf-file.md)
 ### [WindowsSecurityAuditing CSP](windowssecurityauditing-csp.md)
 #### [WindowsSecurityAuditing DDF file](windowssecurityauditing-ddf-file.md)
-
+### [WiredNetwork CSP](wirednetwork-csp.md)
+#### [WiredNetwork DDF file](wirednetwork-ddf-file.md)
