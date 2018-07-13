@@ -1097,6 +1097,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
+    <a href="./policy-csp-experience.md#experience-allowclipboardhistory" id="experience-allowclipboardhistory">Experience/AllowClipboardHistory</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-experience.md#experience-allowcopypaste" id="experience-allowcopypaste">Experience/AllowCopyPaste</a>
   </dd>
   <dd>
@@ -4166,6 +4169,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [EventLogService/SpecifyMaximumFileSizeApplicationLog](./policy-csp-eventlogservice.md#eventlogservice-specifymaximumfilesizeapplicationlog)
 -   [EventLogService/SpecifyMaximumFileSizeSecurityLog](./policy-csp-eventlogservice.md#eventlogservice-specifymaximumfilesizesecuritylog)
 -   [EventLogService/SpecifyMaximumFileSizeSystemLog](./policy-csp-eventlogservice.md#eventlogservice-specifymaximumfilesizesystemlog)
+-   [Experience/AllowClipboardHistory](./policy-csp-experience.md#experience-allowclipboardhistory)
 -   [Experience/AllowCortana](./policy-csp-experience.md#experience-allowcortana)
 -   [Experience/AllowFindMyDevice](./policy-csp-experience.md#experience-allowfindmydevice)
 -   [Experience/AllowTailoredExperiencesWithDiagnosticData](./policy-csp-experience.md#experience-allowtailoredexperienceswithdiagnosticdata)
