@@ -12,7 +12,7 @@ ms.author: coreyp
 ms.date: 06/01/2018
 ---
 
-# Windows Autopilot licesning requirements
+# Windows Autopilot licensing requirements
 
 **Applies to: Windows 10**
 
