@@ -335,6 +335,11 @@ You must install SQL Server with the **SQL\_Latin1\_General\_CP1\_CI\_AS** coll
 </tr>
 </thead>
 <tbody>
+<tr class="odd">
+<td align="left"><p>Microsoft SQL Server 2017</p></td>
+<td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
+<td align="left"><p></p></td>
+<td align="left"><p>64-bit</p></td>    
 <tr class="even">
 <td align="left"><p>Microsoft SQL Server 2016</p></td>
 <td align="left"><p>Standard, Enterprise, or Datacenter</p></td>

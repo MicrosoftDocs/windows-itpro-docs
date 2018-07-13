@@ -7,16 +7,19 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 12/05/2017
+ms.date: 07/11/2018
 ---
 
 # DevDetail DDF file
+
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic shows the OMA DM device description framework (DDF) for the **DevDetail** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is the current version for this CSP.
+The XML below is for Windows 10, next major version.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
@@ -42,7 +45,7 @@ The XML below is the current version for this CSP.
         <Permanent />
       </Scope>
       <DFType>
-        <DDFName>urn:oma:mo:oma-dm-devdetail:1.1</DDFName>
+        <DDFName>urn:oma:mo:oma-dm-devdetail:1.2</DDFName>
       </DFType>
     </DFProperties>
     <Node>
@@ -525,6 +528,27 @@ The XML below is the current version for this CSP.
             </DFType>
           </DFProperties>
         </Node>
+        <Node>
+          <NodeName>SMBIOSSerialNumber</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>SMBIOS Serial Number of the device.</Description>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
       </Node>
       <Node>
         <NodeName>WLANMACAddress</NodeName>
@@ -677,18 +701,3 @@ The XML below is the current version for this CSP.
   </Node>
 </MgmtTree>
 ```
-
-## Related topics
-
-
-[DevDetail configuration service provider](devdetail-csp.md)
-
- 
-
- 
-
-
-
-
-
-
