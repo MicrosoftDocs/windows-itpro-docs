@@ -28,24 +28,24 @@ In the table, *True* means that the setting is enabled, allowed, or applied. Use
 
 For a more detailed look at the policies, see the Windows article [Set up shared or guest PC](https://docs.microsoft.com/en-us/windows/configuration/set-up-shared-or-guest-pc#policies-set-by-shared-pc-mode).
 
-|Policy name |Default value |Description |
-|---------|---------|---------|,
-|Enable Shared PC mode|True| Configures the PCs so they are in shared PC mode.|
-|Set education policies    | True      | School-optimized settings are applied to the PCs so that they are appropriate for an educational environment. To see all recommended and enabled policies, see [Windows 10 configuration recommendation for education customers](https://docs.microsoft.com/en-us/education/windows/configure-windows-for-education).       |
-|Account Model| Only guest, Domain-joined only, or Domain-joined and guest  |Controls how users can sign in on the PC. Configurable from the Set up School PCs app. Choosing domain-joined will enable any user in the domain to sign in. Specifying the guest option will add the Guest option to the sign-in screen and enable anonymous guest access to the PC. |
-|Deletion policy  |   Delete at disk space threshold and inactive threshold     | Delete at disk space threshold will start deleting accounts when available disk space falls below the threshold you set for disk level deletion. It will stop deleting accounts when the available disk space reaches the threshold you set for disk level caching. Accounts are deleted in order of oldest accessed to most recently accessed. Also deletes accounts if they have not signed in within the number of days specified by inactive threshold policy.        |
-|Disk level caching  |   50%     | Sets 50% of total disk space to be used as the disk space threshold for account caching.       |
-|Disk level deletion    |   For shared device setup, 25%; for single device-student setup, 0%.   |  When your devices are optimized for shared use across multiple PCs, this policy sets 25% of total disk space to be used as the disk space threshold for account caching. When your devices are optimized for use by a single student, this policy sets the value to 0% and does not delete accounts.   |
-|Enable account manager    |  True      |  Enables automatic account management.       |
+|Policy name|Default value|Description|  
+|---------|---------|---------|  
+|Enable Shared PC mode|True| Configures the PCs so they are in shared PC mode.|  
+|Set education policies    | True      | School-optimized settings are applied to the PCs so that they are appropriate for an educational environment. To see all recommended and enabled policies, see [Windows 10 configuration recommendation for education customers](https://docs.microsoft.com/en-us/education/windows/configure-windows-for-education).       |  
+|Account Model| Only guest, Domain-joined only, or Domain-joined and guest  |Controls how users can sign in on the PC. Configurable from the Set up School PCs app. Choosing domain-joined will enable any user in the domain to sign in. Specifying the guest option will add the Guest option to the sign-in screen and enable anonymous guest access to the PC. |  
+|Deletion policy  |   Delete at disk space threshold and inactive threshold     | Delete at disk space threshold will start deleting accounts when available disk space falls below the threshold you set for disk level deletion. It will stop deleting accounts when the available disk space reaches the threshold you set for disk level caching. Accounts are deleted in order of oldest accessed to most recently accessed. Also deletes accounts if they have not signed in within the number of days specified by inactive threshold policy.        |  
+|Disk level caching  |   50%     | Sets 50% of total disk space to be used as the disk space threshold for account caching.       |  
+|Disk level deletion    |   For shared device setup, 25%; for single device-student setup, 0%.   |  When your devices are optimized for shared use across multiple PCs, this policy sets 25% of total disk space to be used as the disk space threshold for account caching. When your devices are optimized for use by a single student, this policy sets the value to 0% and does not delete accounts.   |  
+|Enable account manager    |  True      |  Enables automatic account management.       |  
 |Inactive threshold| For shared device setup, 30 days; for single device-student setup, 180 days.| After 30 or 180 days, respectively, if an account has not signed in, it will be deleted.
-|Kiosk Mode AMUID   | Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App  | Configures the kiosk account on student devices to only run the Take a Test secure assessment browser.    |
-|Kiosk Mode User Tile Display Text | Take a Test | Displays "Take a Test" as the name of the kiosk account on student devices.     |
-|Restrict local storage    |   For shared device setup, True; for single device-student setup, False.     |   When devices are optimized for shared use across multiple PCs, this policy forces students to save to the cloud to prevent data loss. When your devices are optimized for use by a single student, this policy does not prevent students from saving on the PCs local hard drive.  |
-|Maintenance start time     | 0 - midnight       | The maintenance start time when automatic maintenance tasks, such as Windows Update, run on student devices.  |
-|Max page file size in MB| 1024| Sets the maximum size of the paging file to 1024 MB. Applies only to systems with less than 32-GB storage and at least 3 GB of RAM.|
-|Set power policies     |  True      |  Prevents users from changing power settings and turns off hibernate. Also overrides all power state transitions to sleep, such as lid close.       |
-|Sign in on resume   |  True     | Requires the device user to sign in with a password when the PC wakes from sleep.        |
-|Sleep timeout    |  3600 seconds      | Specifies the maximum idle time before the PC should sleep. If you don't set sleep timeout, the default time, 3600 seconds (1 hour), is applied.    |
+|Kiosk Mode AMUID   | Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App  | Configures the kiosk account on student devices to only run the Take a Test secure assessment browser.    |  
+|Kiosk Mode User Tile Display Text | Take a Test | Displays "Take a Test" as the name of the kiosk account on student devices.     |  
+|Restrict local storage    |   For shared device setup, True; for single device-student setup, False.     |   When devices are optimized for shared use across multiple PCs, this policy forces students to save to the cloud to prevent data loss. When your devices are optimized for use by a single student, this policy does not prevent students from saving on the PCs local hard drive.  |  
+|Maintenance start time     | 0 - midnight       | The maintenance start time when automatic maintenance tasks, such as Windows Update, run on student devices.  |  
+|Max page file size in MB| 1024| Sets the maximum size of the paging file to 1024 MB. Applies only to systems with less than 32-GB storage and at least 3 GB of RAM.|  
+|Set power policies     |  True      |  Prevents users from changing power settings and turns off hibernate. Also overrides all power state transitions to sleep, such as lid close.       |  
+|Sign in on resume   |  True     | Requires the device user to sign in with a password when the PC wakes from sleep.        |  
+|Sleep timeout    |  3600 seconds      | Specifies the maximum idle time before the PC should sleep. If you don't set sleep timeout, the default time, 3600 seconds (1 hour), is applied.    |  
 
 ## MDM and local group policies 
 This section lists only the local group policies configured uniquely for the Set up School PCs app.     

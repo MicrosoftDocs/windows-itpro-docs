@@ -20,10 +20,10 @@ Shared PC mode optimizes Windows 10 for shared use scenarios, such as classrooms
 Shared PC mode can be applied to Windows 10 Pro, Pro Education, Education, and Enterprise. For more information about setting up your device in shared PC mode, see [Set up a shared or guest PC with Windows 10](https://docs.microsoft.com/en-us/windows/configuration/set-up-shared-or-guest-pc).  
 
 ## Windows Updates
-Shared PC mode configures power and Windows Update settings so that computers update regularly. Computers that are set up through the Set up School PCs app are configured to:
-	* Wake nightly.
-	* Check for and install updates.
-	* Forcibly reboot, when necessary, to complete updates.
+Shared PC mode configures power and Windows Update settings so that computers update regularly. Computers that are set up through the Set up School PCs app are configured to:  
+	* Wake nightly.  
+	* Check for and install updates.  
+	* Forcibly reboot, when necessary, to complete updates.  
 These configurations reduce the need to update and reboot computers during daytime work hours. Notifications about needed updates are also blocked from disrupting students.
 
 ## Default admin accounts in Azure Active Directory

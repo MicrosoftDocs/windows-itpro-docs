@@ -34,7 +34,7 @@ To learn more about the app's functionality, start with the [Technical reference
 Before you begin, make sure that you, your computer, and your school's network are configured with the following requirements.
 
 * Office 365 and Azure Active Directory
-* [Latest Set up School PCs app](https://www.microsoft.com/store/apps/9nblggh4ls40).
+* [Latest Set up School PCs app](https://www.microsoft.com/store/apps/9nblggh4ls40)  
 * Permission to buy apps in Microsoft Store for Education
 * Set up School PCs app has permission to access the Microsoft Store for Education
 * A NTFS-formatted USB drive that is at least 1 GB, if not installing Office; and at least 8 GB, if installing Office
@@ -101,14 +101,9 @@ You can set up PCs at the same time. Just save the provisioning package to an ad
 ### Limit changes to school-optimized settings
 
 We strongly recommend that you avoid changing preset policies. Changes can slow down setup, performance, and sign-in time.  
-
 ## Create the provisioning package
 
-The **Set up School PCs** app guides you through the configuration choices for the student PCs.
-
-1. Open the Set up School PCs app on your PC and click **Get started**.
-
-  **Figure 1** - Launch the Set up School PCs app  
+The **Set up School PCs** app guides you through the configuration choices for the student PCs.  
 
 ### Sign-in
 1. Open the Set up School PCs app on your PC and click **Get started**.  
@@ -135,7 +130,7 @@ Add and save a wireless network profile to provision on each student PC. Only sk
 
 Select your school's Wi-Fi network from the list of available wireless networks, or click **Add a wireless network** to manually configure it. Then click **Next.** 
 
- ![Wireless network page with two Wi-Fi networks listed and one selected.](images/suspc-select-wifi-1807.png)  
+ ![Wireless network page with two Wi-Fi networks listed and one selected.](images/suspc-select-wifi-network-1807.png)  
 
 ### Device names
 Create a short name to add as a prefix to each of the PCs you set up. The name will help you recognize and manage this group of devices in your mobile device manager. The name must be five (5) characters or less.  
@@ -163,8 +158,9 @@ Setting selections vary based on the OS version you select. The following table 
 
 ### Take a Test app  
 Set up the Take a Test app to give online quizzes and high-stakes assessments. During assessments, Windows locks down the student PC so that students can't access anything else on the device.  
-1. Select **Yes** to create a Take a Test button on the sign-in screens of your students' PCs.   
-    ![Set up Take a Test app page with "Yes" selected to create an app button. Page also has two checkboxes for additional settings and one text field for the assessment URL.](images/suspc_createpackage_takeatestpage_073117.png)  
+1. Select **Yes** to create a Take a Test button on the sign-in screens of your students' PCs.    
+
+    ![Set up Take a Test app page with "Yes" selected to create an app button. Page also has two checkboxes for additional settings and one text field for the assessment URL.](images/suspc_createpackage_takeatestpage_073117.png)   
 2. Select from the advanced settings. The following table lists available settings and their descriptions.  
 
 |Setting |Description |
@@ -172,9 +168,7 @@ Set up the Take a Test app to give online quizzes and high-stakes assessments. D
 |Allow keyboard auto-suggestions    | Allows app to suggest words as the student types on the PC's keyboard.       |
 |Allow teachers to monitor online tests     |  Enables screen capture in the Take a Test app.  |  
 
-3. Enter the URL where the test is hosted. When students log in to the Take a Test account, they'll be able to click or enter the link to view the assessment. 
-
-    ![Screenshot of the "Assessment URL (optional)" text field filled in with example text.](images/suspc-assessment-url-1807.png)  
+3. Enter the URL where the test is hosted. When students log in to the Take a Test account, they'll be able to click or enter the link to view the assessment.  
 
 4. Click **Next**. 
 
