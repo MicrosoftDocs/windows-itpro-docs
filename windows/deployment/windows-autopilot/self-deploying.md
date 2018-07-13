@@ -18,6 +18,8 @@ ms.date: 06/01/2018
 **Applies to: Windows 10, build 17672 or later**
 
 Windows Autopilot self-deploying mode offers truly zero touch provisioning. With this mode, all you need to do is power on a device, plug it into Ethernet, and watch Windows Autopilot fully configure the device. No additional user interaction is required.
+>[!NOTE]
+>In order to display an organization-specific logo and organization name during the Autopilot process, Azure Active Directory Company Branding needs to be configured with the images and text that should be displayed.  See [Quickstart: Add company branding to your sign-in page in Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/customize-branding) for more details. 
 
 ![The user experience with Windows Autopilot self-deploying mode](images/self-deploy-welcome.png)
 
