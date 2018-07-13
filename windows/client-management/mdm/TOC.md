@@ -208,6 +208,7 @@
 #### [DeviceInstallation](policy-csp-deviceinstallation.md)
 #### [DeviceLock](policy-csp-devicelock.md)
 #### [Display](policy-csp-display.md)
+#### [DmaGuard](policy-csp-dmaguard.md)
 #### [Education](policy-csp-education.md)
 #### [EnterpriseCloudPrint](policy-csp-enterprisecloudprint.md)
 #### [ErrorReporting](policy-csp-errorreporting.md)
