@@ -39,7 +39,6 @@ The Enrollment Status page tracks a subset of the available MDM CSP policies tha
     - Enterprise modern apps (Appx/MSIX) installed by the [Enterprise Modern App Managment CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/enterprisemodernappmanagement-csp).
     - Enterprise desktop apps (single-file MSIs) installed by the [Enterprise Desktop App Management CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/enterprisedesktopappmanagement-csp).
 - Certain device configuration policies.
-    - TODO
 
 Presently the following types of policies are not tracked:
 
