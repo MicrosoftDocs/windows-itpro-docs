@@ -6,11 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/14/2018
+ms.date: 07/13/2018
 ---
 
 # Policy CSP - Experience
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -19,6 +21,9 @@ ms.date: 05/14/2018
 ## Experience policies  
 
 <dl>
+  <dd>
+    <a href="#experience-allowclipboardhistory">Experience/AllowClipboardHistory</a>
+  </dd>
   <dd>
     <a href="#experience-allowcopypaste">Experience/AllowCopyPaste</a>
   </dd>
@@ -87,6 +92,77 @@ ms.date: 05/14/2018
   </dd>
 </dl>
 
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="experience-allowclipboardhistory"></a>**Experience/AllowClipboardHistory**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Allows history of clipboard items to be stored in memory.
+
+Value type is integer. Supported values:  
+-  0 - Not allowed
+-  1 - Allowed (default)
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Clipboard History*
+-   GP name: *AllowClipboardHistory*
+-   GP path: *System/OS Policies*
+-   GP ADMX file name: *OSPolicy.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+**Validation procedure**  
+
+1. Configure Experiences/AllowClipboardHistory to 0.
+1. Open Notepad (or any editor app), select a text, and copy it to the clipboard.
+1. Press Win+V to open the clipboard history UI.
+1. You should not see any clipboard item including current item you copied.
+1. The setting under Settings App->System->Clipboard should be grayed out with policy warning.
+
+<!--/Validation-->
+<!--/Policy-->
 
 <hr/>
 
@@ -1313,6 +1389,7 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--/Policy-->
+
 <hr/>
 
 Footnote:
@@ -1321,6 +1398,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
+-   5 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
 

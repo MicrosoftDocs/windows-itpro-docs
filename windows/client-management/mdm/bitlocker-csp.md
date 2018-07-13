@@ -6,11 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 01/04/2018
+ms.date: 06/29/2018
 ---
 
 # BitLocker CSP
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices. This CSP was added in Windows 10, version 1703.
 
@@ -842,6 +844,34 @@ The following diagram shows the BitLocker configuration service provider in tree
 </Replace>
 ```
 
+<a href="" id="allowstandarduserencryption"></a>**AllowStandardUserEncryption**  
+Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where policy is pushed while current logged on user is non-admin/standard user.
+                         
+"AllowStandardUserEncryption" policy is tied to "AllowWarningForOtherDiskEncryption" policy  being set to "0", i.e, silent encryption is enforced.
+                     
+If "AllowWarningForOtherDiskEncryption" is not set, or is set to "1", "RequireDeviceEncryption" policy will not try to encrypt drive(s) if a standard user is the current logged on user in the system.
+
+The expected values for this policy are: 
+
+- 1 = "RequireDeviceEncryption" policy will try to enable encryption on all fixed drives even if a current logged in user is standard user.
+- 0 = This is the default, when the policy is not set. If current logged on user is a standard user, "RequireDeviceEncryption" policy will not try to enable encryption on any drive.
+
+If you want to disable this policy use the following SyncML:
+
+``` syntax
+ <Replace>
+ <CmdID>111</CmdID>
+   <Item>
+     <Target>
+         <LocURI>./Device/Vendor/MSFT/BitLocker/AllowStandardUserEncryption</LocURI>
+     </Target>
+     <Meta>
+         <Format xmlns="syncml:metinf">int</Format>
+     </Meta>
+     <Data>0</Data>
+   </Item>
+ </Replace>
+```
 ### SyncML example
 
 The following example is provided to show proper format and should not be taken as a recommendation.
