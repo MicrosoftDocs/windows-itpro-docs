@@ -1,17 +1,17 @@
----
-title: Shared PC mode for school devices
-description: Describes how shared PC mode is set for devices set up with the Set up School PCs app,
-keywords: shared cart, shared PC, school, set up school pcs
-ms.prod: w10
-ms.technology: Windows
-ms.mktglfcycl: plan
-ms.sitesec: library
-ms.pagetype: edu
-ms.localizationpriority: medium
-author: lenewsad
-ms.author: lanewsad
-ms.date: 07/13/2018
----
+---  
+title: Shared PC mode for school devices  
+description: Describes how shared PC mode is set for devices set up with the Set up School PCs app.  
+keywords: shared cart, shared PC, school, set up school pcs  
+ms.prod: w10  
+ms.technology: Windows  
+ms.mktglfcycl: plan  
+ms.sitesec: library  
+ms.pagetype: edu  
+ms.localizationpriority: medium  
+author: lenewsad  
+ms.author: lanewsad  
+ms.date: 07/13/2018  
+---  
 
 # Shared PC mode for school devices
 
@@ -21,9 +21,10 @@ Shared PC mode can be applied to Windows 10 Pro, Pro Education, Education, and E
 
 ## Windows Updates
 Shared PC mode configures power and Windows Update settings so that computers update regularly. Computers that are set up through the Set up School PCs app are configured to:  
-	* Wake nightly.  
-	* Check for and install updates.  
-	* Forcibly reboot, when necessary, to complete updates.  
+* Wake nightly.  
+* Check for and install updates.  
+* Forcibly reboot, when necessary, to complete updates.  
+
 These configurations reduce the need to update and reboot computers during daytime work hours. Notifications about needed updates are also blocked from disrupting students.
 
 ## Default admin accounts in Azure Active Directory

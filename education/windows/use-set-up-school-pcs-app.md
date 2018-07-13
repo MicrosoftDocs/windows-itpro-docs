@@ -15,20 +15,15 @@ ms.date: 07/11/2018
 
 # Use the Set up School PCs app  
 
-**Applies to:**
+IT administrators and technical teachers can use the **Set up School PCs** app to quickly set up Windows 10 PCs for students. The app configures PCs with the apps and features students need, and it removes the ones they don't need. During setup, if licensed in your tenant, the app anrolls each student PC into a mobile device management (MDM) provider, such as Intune for Education. You can then manage all the settings Set up School PCs configures through the MDM.   
 
--   Windows 10   
-
-IT administrators and technical teachers can use the **Set up School PCs** app to quickly set up PCs for students. The app configures PCs with the apps and features students need, and it removes the ones they don't need. Set up School PCs also:  
+Set up School PCs also:  
 * Joins each student PC to your organization's Office 365 and Azure Active Directory tenant.  
-* Enrolls each student PC into a mobile device management (MDM) provider, such as Intune for Education, if licensed in your tenant. You can manage all the settings Set up School PCs configures through the MDM.  
-* Enables the optional Autopilot Reset feature, to return devices to a fully configured or known IT-approved state.
-* Keeps student PCs up-to-date without interfering with class time using Windows Update and maintenance hours.
-* Locks down the student PC to prevent activity that isn't beneficial to their education.
+* Enables the optional Autopilot Reset feature, to return devices to a fully configured or known IT-approved state.  
+* Keeps student PCs up-to-date without interfering with class time using Windows Update and maintenance hours.  
+* Locks down the student PC to prevent activity that isn't beneficial to their education.  
 
-This article describes how to get started and provide information about your school in the Set up School PCs app.
-
-To learn more about the app's functionality, start with the [Technical reference for the Set up School PCs app](set-up-school-pcs-technical.md).  
+This article describes how to get started and provide information about your school in the Set up School PCs app. To learn more about the app's functionality, start with the [Technical reference for the Set up School PCs app](set-up-school-pcs-technical.md).  
 
 ## Requirements    
 Before you begin, make sure that you, your computer, and your school's network are configured with the following requirements.
@@ -135,16 +130,18 @@ Select your school's Wi-Fi network from the list of available wireless networks,
 ### Device names
 Create a short name to add as a prefix to each of the PCs you set up. The name will help you recognize and manage this group of devices in your mobile device manager. The name must be five (5) characters or less.  
 
+To make sure all device names are unique, Set up School PCs automatically appends `_%SERIAL%` to the name.  For example, if you add *Math4* as the prefix, the device names will appear as *Math4* followed by a random string of letters and numbers.   
+
   !["Name these devices" screen with the device field filled in with example device name, "Grd8."](images/suspc-device-names-1807.png)  
 
-To make sure all device names are unique, Set up School PCs automatically appends `_%SERIAL%` to the name.  For example, if you add *Math4* as the prefix, the device names will appear as *Math4* followed by a random string of letters and numbers. 
+
 
 ### Settings
 Select additional settings to include in the provisioning package. To begin, select the operating system on your student PCs.  
 
 ![Configure student PC settings page showing 5 settings with checkboxes and 1 setting with browser button](images/suspc-configure-student-settings-1807.png)
 
-Setting selections vary based on the OS version you select. The following table lists all possible settings, descriptions, and important notes to consider.  When you're done, click **Next**.  
+Setting selections vary based on the OS version you select. The following table lists all possible settings, descriptions, and important notes to consider.  After you've made your selections, click **Next**.  
 
 |Setting  |What happens if I select it? |Note|
 |---------|---------|---------|
@@ -188,7 +185,7 @@ The following table lists the recommended apps you'll see.
 
 ### Summary
 1. Review all of the settings for accuracy and completeness. Check carefully. To make changes to a saved package, you have to start over.  
-2. To make changes, click any page along the left side of the window.  
+2. To make changes now, click any page along the left side of the window.  
 3. When finished, click **Accept**.  
 
       ![Example image of the Summary screen, showing the user's configurations for Sign-in, Wireless network, Device names, Settings, Take a Test, and Recommended apps. Accept button is active and the page contains three links on the right-hand side to help and support.](images/suspc_createpackage_summary_073117.png)
@@ -219,9 +216,9 @@ When used in context of the Set up School PCs app, the word *package* refers to 
 
 1.  Start with the student PC turned off or with the PC on the first-run setup screen. In Windows 10 version 1803, the first-run setup screen reads, **Let's start with region. Is this right?** 
 
-If the PC has gone past the account setup screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.  
+    If the PC has gone past the account setup screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.  
 
-   ![Example screenshot of the first screen the Windows 10 PC setup for OOBE. United States is selected as the region and the Yes button is active.](images/win10_1703_oobe_firstscreen.png)  
+       ![Example screenshot of the first screen the Windows 10 PC setup for OOBE. United States is selected as the region and the Yes button is active.](images/win10_1703_oobe_firstscreen.png)  
   
 2. Insert the USB drive. Windows automatically recognizes and installs the package.  
    
@@ -232,6 +229,6 @@ If the PC has gone past the account setup screen, reset the PC to start over. To
 
 4. If you did not set up the package to do Azure AD Join, go through the rest of the Windows device setup experience.  If you did configure the package for Azure AD Join, the computer is ready for use and no further configurations are required.  
 
-  If successful, you'll see a setup complete message. The PCs start up on the lock screen with your school's custom background. Upon first use, students and teachers will be able to connect to your school's network and resources.
+      If successful, you'll see a setup complete message. The PCs start up on the lock screen with your school's custom background. Upon first use, students and teachers will be able to connect to your school's network and resources.
 
 

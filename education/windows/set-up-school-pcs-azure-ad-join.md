@@ -64,8 +64,7 @@ The following table describes each setting within **Device Settings**.
 | Maximum number of devices per user                         | Set the maximum number of devices a user is allowed to have in Azure AD. If the maximum is exceeded, the user must remove one or more existing devices before additional ones are added.                                                                                                                               |
 | Users may sync settings and enterprise app data            | Allow all or none of your users to sync settings and app data across multiple devices. Tenants with Azure AD Premium are permitted to select specific users to allow.                                                                                                                                                  |
 
-## Clear Azure AD tokens
----------------------
+## Clear Azure AD tokens  
 
 Your Intune tenant can only have 500 active Azure AD tokens, or packages, at a time. You'll receive a notification in the Intune portal when you reach 500 active tokens.
 

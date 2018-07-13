@@ -1,17 +1,17 @@
----
-title: What's in Set up School PCs provisioning package
-description: Lists the provisioning package settings that are configured in the Set up School PCs app.
-keywords: shared cart, shared PC, school, set up school pcs
-ms.prod: w10
-ms.technology: Windows
-ms.mktglfcycl: plan
-ms.sitesec: library
-ms.pagetype: edu
-ms.localizationpriority: medium
-author: lenewsad
-ms.author: lanewsad
-ms.date: 07/13/2018
----
+---  
+title: What's in Set up School PCs provisioning package  
+description: Lists the provisioning package settings that are configured in the Set up School PCs app.  
+keywords: shared cart, shared PC, school, set up school pcs  
+ms.prod: w10  
+ms.technology: Windows  
+ms.mktglfcycl: plan  
+ms.sitesec: library  
+ms.pagetype: edu  
+ms.localizationpriority: medium  
+author: lenewsad  
+ms.author: lanewsad  
+ms.date: 07/13/2018  
+---  
 
 # What's in my provisioning package?
 The Set up School PCs app builds a specialized provisioning package with school-optimized settings. 
@@ -78,8 +78,7 @@ For a more detailed look of each policy listed, see [Policy CSP](https://docs.mi
 |Personalization  |     Deploy lock screen image  | Set to the image you picked when you customized the lock screen during device setup. If you didn't customize the image, the computer will show the default.     | Deploys a jpg, jpeg, or png image to be used as lock screen image on the device.
 |Personalization| Lock screen image URL| Image filename| You can specify a jpg, jpeg, or png image to be used as the device lock screen image. This setting can take an http or https URL to a remote image to be downloaded, or a file URLto an existing local image. 
 |Update|Active hours end    | 5 PM       | There will be no update reboots before this time.        |
-|Update|Active hours start     |  7 AM     |  There will be no update reboots after this time.      |
-    |  
+|Update|Active hours start     |  7 AM     |  There will be no update reboots after this time.      |    
 |Updates Windows    |  Nightly       |  Sets Windows to update on a nightly basis.       |
 
 ## Apps uninstalled from Windows 10 devices
