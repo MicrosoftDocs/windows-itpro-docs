@@ -17,7 +17,13 @@ ms.date: 07/13/2018
 
 Shared PC mode optimizes Windows 10 for shared use scenarios, such as classrooms and school libraries.  A Windows 10 PC in shared PC mode requires minimal to zero maintenance and management. Update settings are optimized for classroom settings, so that they automatically occur outside of school hours.
 
-Shared PC mode can be applied to Windows 10 Pro, Pro Education, Education, and Enterprise. For more information about setting up your device in shared PC mode, see [Set up a shared or guest PC with Windows 10](https://docs.microsoft.com/en-us/windows/configuration/set-up-shared-or-guest-pc).  
+Shared PC mode can be applied on devices running:
+* Windows 10 Pro
+* Windows 10 Pro Education
+* Windows 10 Education
+* Windows 10 Enterprise  
+
+To learn more about how to set up a device in shared PC mode, see [Set up a shared or guest PC with Windows 10](https://docs.microsoft.com/en-us/windows/configuration/set-up-shared-or-guest-pc).  
 
 ## Windows Updates
 Shared PC mode configures power and Windows Update settings so that computers update regularly. Computers that are set up through the Set up School PCs app are configured to:  
@@ -27,7 +33,7 @@ Shared PC mode configures power and Windows Update settings so that computers up
 
 These configurations reduce the need to update and reboot computers during daytime work hours. Notifications about needed updates are also blocked from disrupting students.
 
-## Default admin accounts in Azure Active Directory
+## Default admin accounts in Azure Active Directory  
 By default, the account that joins your computer to Azure AD will be given admin permissions on the computer. Global administrators in the joined Azure AD domain will also have admin permissions when signed in to the joined computer.  
 
 An Azure AD Premium subscription lets you specify the accounts that get admin accounts on a computer. These accounts are configured in Intune in the Azure portal.  
@@ -43,9 +49,7 @@ The default deletion policy is set to automatically cache accounts. Cached accou
 Guest accounts and accounts created through Kiosk are deleted after they sign out of their account.
 
 ### Local accounts
-Local accounts that you created before enabling shared PC mode aren't deleted. 
-
-Local accounts that you create through **Settings** > **Accounts** > **Other people** > **Add someone else to this PC** after enabling PC mode are not deleted.
+Local accounts that you created before enabling shared PC mode aren't deleted. Local accounts that you create through the following path, after enabling PC mode, are not deleted: **Settings** app > **Accounts** > **Other people** > **Add someone**     
 
 ## Create custom Windows images
 Shared PC mode is compatible with custom Windows images.  

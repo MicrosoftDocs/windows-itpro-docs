@@ -42,7 +42,7 @@ USB drives are, by default, FAT32-formatted, and are unable to save more than 4 
 1. Insert the USB drive into your computer.
 2. Go to the **Start** > **This PC**.
 3. In the **Devices and drives** section, find your USB drive. Right-click to see its options.
-4. Select **Format** from the list to bring up the **Format *DRIVE NAME*** window.
+4. Select **Format** from the list to bring up the **Format drive name** window.
 5. Set **File system** to **NTFS**.
 6. Click **Start** to format the drive.
 
@@ -56,7 +56,7 @@ To begin, go to the **Settings** app on the appropriate PC.
 2. In the **Reset this PC** section, click **Get started**. 
 3. Click **Remove everything**.
 
-As another option, go to **Start** > **Power** icon. Hold down the Shift key and click **Restart** to load the Windows boot user experience. From there, follow these steps: 
+You can also go to **Start** > **Power** icon. Hold down the Shift key and click **Restart** to load the Windows boot user experience. From there, follow these steps: 
 1. Click **Troubleshoot** and then choose **Reset this PC**.
 2. Select **Remove everything**.
 3. If the option appears, select **Only the drive where Windows is installed**.  
@@ -64,7 +64,7 @@ As another option, go to **Start** > **Power** icon. Hold down the Shift key and
 5. Click **Reset**.
 
 ## Recommendations  
-This section offers recommendations to help you have the best setup experience.  
+This section offers recommendations to prepare you for the best possible setup experience.  
 ### Run the same Windows 10 build on the admin device and the student PCs  
 We recommend you run the IT administrator or technical teacher's device on the same Windows 10 build as the student PCs.
 
@@ -87,8 +87,9 @@ Don't use Set up School PCs over a certification-based network, or one where you
 We recommend that you:  
 * Configure your DHCP so at least 200 IP addresses are available for your devices. Having available IP addresses will allow you to set up many devices simultaneously.  
 * Configure your IP addresses to expire after a short time--about 30 minutes. IP addresses will free up quickly so you can continue to set up devices without network issues.    
-> [!WARNING]  
-  > Only use the provisioning package on PCs that you want to configure and lock down for students. After you apply the provisioning package to a student PC, the PC must be reset to remove the settings.  
+
+>> [!WARNING]
+> Only use the provisioning package on PCs that you want to configure and lock down for students. After you apply the provisioning package to a student PC, the PC must be reset to remove the settings.  
 
 ### Use an additional USB drive  
 You can set up PCs at the same time. Just save the provisioning package to an additional USB drive. Then plug them in at the same time during deployment.  
@@ -115,6 +116,7 @@ The **Set up School PCs** app guides you through the configuration choices for t
 a. Click **Work or school account** > **Continue**.  
         b. Type in the account username and click **Next**.  
         c. You may be asked to verify the user account and password.   
+
 1. Click **Accept** to allow Set up School PCs to access your account throughout setup.
 2. When your account name appears on the page, as shown in the image below, click **Next.**
 
@@ -139,9 +141,11 @@ To make sure all device names are unique, Set up School PCs automatically append
 ### Settings
 Select additional settings to include in the provisioning package. To begin, select the operating system on your student PCs.  
 
+
 ![Configure student PC settings page showing 5 settings with checkboxes and 1 setting with browser button](images/suspc-configure-student-settings-1807.png)
 
-Setting selections vary based on the OS version you select. The following table lists all possible settings, descriptions, and important notes to consider.  After you've made your selections, click **Next**.  
+Setting selections vary based on the OS version you select. The following table lists all possible settings, descriptions, and important notes to consider.  After you've made your selections, click **Next**.   
+
 
 |Setting  |What happens if I select it? |Note|
 |---------|---------|---------|
@@ -196,7 +200,7 @@ The following table lists the recommended apps you'll see.
 
       ![Insert a USB drive now screen with USB drive selection highlighted. Save button is blue and active.](images/suspc_savepackage_insertusb.png)
 
-4. When the package is ready, you'll see the filename and package expiration date. You can also click **Add a USB** to save the same provisioning package to another USB drive. When you're done, remove the USB drive and click **Next**. 
+3. When the package is ready, you'll see the filename and package expiration date. You can also click **Add a USB** to save the same provisioning package to another USB drive. When you're done, remove the USB drive and click **Next**. 
 
       ![Your provisioning package is ready screen with package details, active Next button, and grayed-out Add a USB button.](images/suspc_savepackage_ppkgisready.png)  
 
@@ -212,7 +216,7 @@ The provisioning package on your USB drive is named SetupSchoolPCs_<*devicename*
 When used in context of the Set up School PCs app, the word *package* refers to your provisioning package. The word *provisioning* refers to the act of installing the package on the student PC. This section describes how to apply the settings to a PC in your school.  
 
 > [!IMPORTANT]
-> The PC must have a new or reset Windows 10 image and must not already have been through first-run setup (also referred to as OOBE). For instructions about how to reset a computer's image, see [Prepare existing PC account for new setup](set-up-school-pcs-app.md#prepare-existing-pc-account-for-new-setup).  
+> The PC must have a new or reset Windows 10 image and must not already have been through first-run setup (also referred to as OOBE). For instructions about how to reset a computer's image, see [Prepare existing PC account for new setup](use-set-up-school-pcs-app.md#prepare-existing-pc-account-for-new-setup).  
 
 1.  Start with the student PC turned off or with the PC on the first-run setup screen. In Windows 10 version 1803, the first-run setup screen reads, **Let's start with region. Is this right?** 
 

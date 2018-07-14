@@ -48,9 +48,10 @@ For a more detailed look at the policies, see the Windows article [Set up shared
 |Sleep timeout    |  3600 seconds      | Specifies the maximum idle time before the PC should sleep. If you don't set sleep timeout, the default time, 3600 seconds (1 hour), is applied.    |  
 
 ## MDM and local group policies 
-This section lists only the local group policies configured uniquely for the Set up School PCs app.     
+This section lists only the MDM and local group policies that are configured uniquely for the Set up School PCs app.     
 
-For a more detailed look of each policy listed, see [Policy CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider) in the Windows IT Pro Center documentation.
+For a more detailed look of each policy listed, see [Policy CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider) in the Windows IT Pro Center documentation.  
+
 
 |Policy name  |Default value |Description |
 |---------|---------|---------|
@@ -72,17 +73,18 @@ For a more detailed look of each policy listed, see [Policy CSP](https://docs.mi
 |Allow add provisioning package  |  Disabled         | Students cannot add and upload new provisioning packages to their device.        |
 |Allow remove provisioning package   | Disabled       | Students cannot remove packages that you've uploaded to their device, including the Set up School PCs app        |
 |Start Layout|Enabled |Lets you specify the Start layout for users and prevents them from changing the configuration.|
-|Import Edge Assets| Enabled| Import Microsoft Edge assets, such as PNG and JPG files, for secondary tiles on the Start layout. Tiles will appear as weblinks and will be tied to the relevant image asset files.)
-|Allow pinned folder downloads|1 - The shortcut is visible and disables the setting in the Settings app.|Makes the Downloads shortcut on the Start menu visible to students.|
-|Allow pinned folder File Explorer|1 - The shortcut is visible and disables the setting in the Settings app.|Makes the File Explorer shortcut on the Start menu visible to students.|
+|Import Edge Assets| Enabled| Import Microsoft Edge assets, such as PNG and JPG files, for secondary tiles on the Start layout. Tiles will appear as weblinks and will be tied to the relevant image asset files.|  
+|Allow pinned folder downloads|1 - The shortcut is visible and disables the setting in the Settings app |Makes the Downloads shortcut on the Start menu visible to students.|
+|Allow pinned folder File Explorer|1 - The shortcut is visible and disables the setting in the Settings app |Makes the File Explorer shortcut on the Start menu visible to students.|
 |Personalization  |     Deploy lock screen image  | Set to the image you picked when you customized the lock screen during device setup. If you didn't customize the image, the computer will show the default.     | Deploys a jpg, jpeg, or png image to be used as lock screen image on the device.
 |Personalization| Lock screen image URL| Image filename| You can specify a jpg, jpeg, or png image to be used as the device lock screen image. This setting can take an http or https URL to a remote image to be downloaded, or a file URLto an existing local image. 
 |Update|Active hours end    | 5 PM       | There will be no update reboots before this time.        |
 |Update|Active hours start     |  7 AM     |  There will be no update reboots after this time.      |    
-|Updates Windows    |  Nightly       |  Sets Windows to update on a nightly basis.       |
+|Updates Windows    |  Nightly       |  Sets Windows to update on a nightly basis.       |  
 
 ## Apps uninstalled from Windows 10 devices
-Set up School PCs app uses the Universal app uninstall policy. This policy identifies default apps that are not relevant to the classroom experience, and uninstalls them from each device.  The following table lists all apps uninstalled from Windows 10 devices.
+Set up School PCs app uses the Universal app uninstall policy. This policy identifies default apps that are not relevant to the classroom experience, and uninstalls them from each device.  The following table lists all apps uninstalled from Windows 10 devices.  
+
 
 |App name |Application User Model ID |
 |---------|---------|
@@ -108,7 +110,7 @@ Set up School PCs uses the Universal app install policy to install school-releva
 ## Next steps  
 Learn more about setting up devices with the Set up School PCs app.  
 * [Azure AD Join with Set up School PCs](set-up-school-pcs-azure-ad-join.md)
-* [Shared PC mode for schools](set-up-school-pc-shared-mode.md)
+* [Shared PC mode for schools](set-up-school-pcs-shared-mode.md)
 * [Set up School PCs technical reference](set-up-school-pcs-technical.md)
 * [Set up Windows 10 devices for education](set-up-windows-10.md) 
 
