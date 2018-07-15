@@ -6,7 +6,7 @@ ms.prod: w10
 author: jaimeo
 ms.author:
 ms.date: 06/12/2018
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Upgrade Readiness requirements
@@ -38,9 +38,9 @@ While Upgrade Readiness can be used to assist with updating devices from Windows
 
 ## Operations Management Suite or Azure Log Analytics
 
-Upgrade Readiness is offered as a solution in Microsoft Operations Management Suite (OMS) and Azure Log Analytics, a collection of cloud based services for managing on premise and cloud computing environments. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/) or the Azure [Log Analytics overview](https://azure.microsoft.com/services/log-analytics/).
+Upgrade Readiness is offered as a solution in Microsoft Operations Management Suite (OMS) and Azure Log Analytics, a collection of cloud based services for managing on premises and cloud computing environments. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/) or the Azure [Log Analytics overview](https://azure.microsoft.com/services/log-analytics/).
 
-If you’re already using OMS or Azure Log Analytics, you’ll find Upgrade Readiness in the Solutions Gallery. Click the **Upgrade Readiness** tile in the gallery and then click **Add** on the solution’s details page. Upgrade Readiness is now visible in your workspace. You can also 
+If you’re already using OMS or Azure Log Analytics, you’ll find Upgrade Readiness in the Solutions Gallery. Click the **Upgrade Readiness** tile in the gallery and then click **Add** on the solution’s details page. Upgrade Readiness is now visible in your workspace. 
 
 If you are not using OMS or Azure Log Analytics, go to [Log Analytics](https://azure.microsoft.com/services/log-analytics/) on Microsoft.com and select **Start free** to start the setup process. During the process, you’ll create a workspace and add the Upgrade Readiness solution to it.
 

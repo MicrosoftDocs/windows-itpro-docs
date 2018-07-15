@@ -9,7 +9,7 @@ author: shortpatti
 ms.author: pashort
 manager: elizapo
 ms.reviewer: 
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 04/20/2018
 ---
 

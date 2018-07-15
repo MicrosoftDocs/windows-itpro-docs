@@ -138,11 +138,11 @@ The following is a list of functions performed by the Device HealthAttestation C
 </tr>
 <tr class="even">
 <td style="vertical-align:top">Device Health Attestation – On Premise<p>(DHA-OnPrem)</p></td>
-<td style="vertical-align:top"><p>DHA-OnPrem refers to DHA-Service that is running on premise:</p>
+<td style="vertical-align:top"><p>DHA-OnPrem refers to DHA-Service that is running on premises:</p>
 <ul>
 <li>Offered to Windows Server 2016 customer (no added licensing cost for enabling/running DHA-Service) </li>
 <li>Hosted on an enterprise owned and managed server device/hardware</li>
-<li>Supported by 1st and 3rd party DHA-Enabled device management solution providers that support on premise and hybrid (Cloud + OnPrem) hardware attestation scenarios</li>
+<li>Supported by 1st and 3rd party DHA-Enabled device management solution providers that support on-premises and hybrid (Cloud + OnPrem) hardware attestation scenarios</li>
 <li><p>Accessible to all enterprise managed devices via following:</p>
 <ul>
 <li>FQDN = (enterprise assigned)</li>
@@ -151,14 +151,14 @@ The following is a list of functions performed by the Device HealthAttestation C
 </ul>
 </li>
 </ul></td>
-<td style="vertical-align:top">The operation cost of running one or more instances of Server 2016 on premise.</td>
+<td style="vertical-align:top">The operation cost of running one or more instances of Server 2016 on-premises.</td>
 </tr>
 <tr class="even">
 <td style="vertical-align:top">Device Health Attestation - Enterprise Managed Cloud<p>(DHA-EMC)</p></td>
 <td style="vertical-align:top"><p>DHA-EMC refers to an enterprise managed DHA-Service that is running as a virtual host/service on a Windows Server 2016 compatible - enterprise managed cloud service, such as Microsoft Azure.</p>
 <ul>
 <li>Offered to Windows Server 2016 customers with no additional licensing cost (no added licensing cost for enabling/running DHA-Service)</li>
-<li>Supported by 1st and 3rd party DHA-Enabled device management solution providers that support on premise and hybrid (Cloud + OnPrem) hardware attestation scenarios </li>
+<li>Supported by 1st and 3rd party DHA-Enabled device management solution providers that support on-premises and hybrid (Cloud + OnPrem) hardware attestation scenarios </li>
 <li><p>Accessible to all enterprise managed devices via following:</p>
 <ul>
 <li>FQDN = (enterprise assigned)</li>
@@ -304,7 +304,7 @@ SSL-Session:
 
 There are three types of DHA-Service:
 - Device Health Attestation – Cloud (owned and operated by Microsoft)
-- Device Health Attestation – On Premise (owned and operated by an enterprise, runs on Windows Server 2016 on premise)
+- Device Health Attestation – On Premise (owned and operated by an enterprise, runs on Windows Server 2016 on premises)
 - Device Health Attestation - Enterprise Managed Cloud (owned and operated by an enterprise, runs on Windows Server 2016 compatible enterprise managed cloud)
 
 DHA-Cloud is the default setting. No further action is required if an enterprise is planning to use Microsoft DHA-Cloud as the trusted DHA-Service provider.

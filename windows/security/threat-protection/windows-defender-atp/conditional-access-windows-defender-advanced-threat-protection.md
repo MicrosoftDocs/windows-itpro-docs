@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 04/24/2018
 ---
 
@@ -23,7 +23,7 @@ ms.date: 04/24/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
 
@@ -88,13 +88,13 @@ You need to make sure that all your devices are enrolled in Intune. You can use 
 
 
 
-There are steps you'll need to take in the Windows Defender ATP portal, the Intune portal, and Azure AD portal.
+There are steps you'll need to take in Windows Defender Security Center, the Intune portal, and Azure AD portal.
 
 > [!NOTE] 
 > You'll need a Microsoft Intune environment, with Intune managed and Azure AD joined Windows 10 devices.
 
 Take the following steps to enable conditional access:
-- Step 1: Turn on the Microsoft Intune connection from the Windows Defender ATP portal
+- Step 1: Turn on the Microsoft Intune connection from Windows Defender Security Center
 - Step 2: Turn on the Windows Defender ATP integration in Intune
 - Step 3: Create the compliance policy in Intune
 - Step 4: Assign the policy 

@@ -1,5 +1,5 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Find out how to achieve better backward compatibility for your legacy web applications with the Enterprise Mode Site List.

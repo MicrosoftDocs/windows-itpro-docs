@@ -1,9 +1,9 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Group Policy, the Local Group Policy Editor, and Internet Explorer 11
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: 6fc30e91-efac-4ba5-9ee2-fa77dcd36467
 title: Group Policy, the Local Group Policy Editor, and Internet Explorer 11 (Internet Explorer 11 for IT Pros)

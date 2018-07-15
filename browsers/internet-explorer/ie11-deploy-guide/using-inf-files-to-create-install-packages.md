@@ -1,8 +1,8 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use Setup Information (.inf) files to create installation packages.
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: 04fa2ba8-8d84-4af6-ab99-77e4f1961b0e
 title: Using Setup Information (.inf) files to create packages (Internet Explorer 11 for IT Pros)

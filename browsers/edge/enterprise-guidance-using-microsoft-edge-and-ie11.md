@@ -1,12 +1,12 @@
 ---
 title: Microsoft Edge and Internet Explorer 11 (Microsoft Edge for IT Pros)
 description: Enterprise guidance for using Microsoft Edge and Internet Explorer 11.
-author: eross-msft
+author: shortpatti
 ms.prod: edge
 ms.mktglfcycl: support
 ms.sitesec: library
 ms.pagetype: appcompat
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 10/16/2017
 ---
 

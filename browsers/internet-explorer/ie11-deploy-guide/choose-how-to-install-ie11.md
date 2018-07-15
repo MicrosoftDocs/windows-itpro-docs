@@ -1,8 +1,8 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Choose how to install Internet Explorer 11 (IE11)
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: 9572f5f1-5d67-483e-bd63-ffea95053481
 title: Choose how to install Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)

@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: brianlic-msft
 ms.date: 01/12/2018
 ---

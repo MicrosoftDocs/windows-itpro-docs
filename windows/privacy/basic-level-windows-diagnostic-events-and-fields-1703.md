@@ -556,7 +556,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.DecisionApplicationFileRemove
 
-This event indicates Indicates that the DecisionApplicationFile object is no longer present.
+This event indicates that the DecisionApplicationFile object is no longer present.
 
 The following fields are available:
 
@@ -880,7 +880,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.InventoryApplicationFileStartSync
 
-This event indicates indicates that a new set of InventoryApplicationFileAdd events will be sent.
+This event indicates that a new set of InventoryApplicationFileAdd events will be sent.
 
 The following fields are available:
 
@@ -1863,7 +1863,7 @@ The following fields are available:
 
 ### TelClientSynthetic.HeartBeat_5
 
-This event sends data about the health and quality of the diagnostic data data from the given device, to help keep Windows up to date. It also enables data analysts to determine how 'trusted' the data is from a given device.
+This event sends data about the health and quality of the diagnostic data from the given device, to help keep Windows up to date. It also enables data analysts to determine how 'trusted' the data is from a given device.
 
 The following fields are available:
 
@@ -3125,8 +3125,8 @@ The following fields are available:
 - **BIOSVendor**  The vendor of the device's system bios
 - **BiosVersion**  The version of the device's system bios
 - **BiosReleaseDate**  The release date of the device's system bios
-- **SystemBIOSMajorRelease**  The major release version of the device's system system
-- **SystemBIOSMinorRelease**  The minor release version of the device's system system
+- **SystemBIOSMajorRelease**  The major release version of the device's system bios
+- **SystemBIOSMinorRelease**  The minor release version of the device's system bios
 - **BiosFamily**  The device's family as defined in system bios
 - **BiosSKUNumber**  The device's SKU as defined in system bios
 - **ClientVersion**  The version number of the software distribution client
@@ -3479,7 +3479,7 @@ The following fields are available:
 - **HostOSBuildNumber**  The build number of the previous OS.
 - **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT
 - **Setup360Mode**  The phase of Setup360. Example: Predownload, Install, Finalize, Rollback
-- **Setup360Result**  The result of Setup360. This is an HRESULT error code that can be used used to diagnose errors.
+- **Setup360Result**  The result of Setup360. This is an HRESULT error code that can be used to diagnose errors.
 - **Setup360Extended**  Extension of result - more granular information about phase/action when the potential failure happened
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
 

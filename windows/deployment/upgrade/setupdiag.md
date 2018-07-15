@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.date: 05/30/2018
+ms.date: 07/10/2018
 ms.localizationpriority: high
 ---
 
@@ -45,6 +45,7 @@ See the [Release notes](#release-notes) section at the bottom of this topic for 
 | /LogsPath:\<Path to logs\> | <ul><li>This optional parameter is required only when **/Mode:Offline** is specified.  This tells SetupDiag.exe where to find the log files. These log files can be in a flat folder format, or containing multiple subdirectories.  SetupDiag will recursively search all child directories. This parameter should be omitted when the **/Mode:Online** is specified.</ul> |
 | /ZipLogs:\<True \| False\> | <ul><li>This optional parameter tells SetupDiag.exe to create a zip file continuing its results and all the log files it parsed.  The zip file is created in the same directory where SetupDiag.exe is run.<li>Default: If not specified, a value of 'true' is used.</ul> |
 | /Verbose | <ul><li>This optional parameter will output much more data to the log file produced by SetupDiag.exe.  By default SetupDiag will only produce a log file entry for serious errors.  Using **/Verbose** will cause SetupDiag to always produce a log file with debugging details, which can be useful when reporting a problem with SetupDiag.</ul> |
+| /Format:\<xml \| json\> | <ul><li>This optional parameter can be used to output log files in xml or JSON format.  If this parameter is not specified, text format is used by default.</ul> |
 
 ### Examples:
 
@@ -346,9 +347,22 @@ Each rule name and its associated unique rule identifier are listed with a descr
     - Matches DPX expander failures in the down-level phase of update from WU.  Will output the package name, function, expression and error code.
 41. FindFatalPluginFailure – E48E3F1C-26F6-4AFB-859B-BF637DA49636
     - Matches any plug in failure that setupplatform decides is fatal to setup.  Will output the plugin name, operation and error code.
-
+42. AdvancedInstallerFailed - 77D36C96-32BE-42A2-BB9C-AAFFE64FCADC
+    - Indicates critical failure in the AdvancedInstaller while running an installer package, includes the .exe being called, the phase, mode, component and error codes.
+43. MigrationAbortedDueToPluginFailure - D07A24F6-5B25-474E-B516-A730085940C9
+    - Indicates a critical failure in a migration plugin that causes setup to abort the migration.  Will provide the setup operation, plug in name, plug in action and error code.
+44. DISMAddPackageFailed - 6196FF5B-E69E-4117-9EC6-9C1EAB20A3B9
+    - Indicates a critical failure during a DISM add package operation.  Will specify the Package Name, DISM error and add package error code.
 
 ## Release notes
+
+07/10/2018 - SetupDiag v1.30 is released with 44 rules, as a standalone tool available from the Download Center.
+   - Bug fix for an over-matched plug-in rule. The rule will now correctly match only critical (setup failure) plug-in issues.
+   - New feature: Ability to output logs in JSON and XML format.
+       - Use "/Format:xml" or "/Format:json" command line parameters to specify the new output format. See [sample logs](#sample-logs) at the bottom of this topic.
+       - If the “/Format:xml” or “/Format:json” parameter is omitted, the log output format will default to text.
+   - New Feature: Where possible, specific instructions are now provided in rule output to repair the identified error. For example, instructions are provided to remediate known blocking issues such as uninstalling an incompatible app or freeing up space on the system drive.
+   - 3 new rules added: AdvancedInstallerFailed, MigrationAbortedDueToPluginFailure, DISMAddPackageFailed.
 
 05/30/2018 - SetupDiag v1.20 is released with 41 rules, as a standalone tool available from the Download Center.
    - Fixed a bug in device install failure detection in online mode.
@@ -363,6 +377,84 @@ Each rule name and its associated unique rule identifier are listed with a descr
    - An output log file is now always created, whether or not a rule was matched.
 
 03/30/2018 - SetupDiag v1.00 is released with 26 rules, as a standalone tool available from the Download Center.
+
+## Sample logs
+
+### Text log sample
+
+```
+Matching Profile found: OptionalComponentOpenPackageFailed - 22952520-EC89-4FBD-94E0-B67DF88347F6
+System Information:
+	Machine Name = Offline
+	Manufacturer = MSI
+	Model = MS-7998
+	HostOSArchitecture = x64
+	FirmwareType = PCAT
+	BiosReleaseDate = 20160727000000.000000+000
+	BiosVendor = BIOS Date: 07/27/16 10:01:46 Ver: V1.70
+	BiosVersion = 1.70
+	HostOSVersion = 10.0.15063
+	HostOSBuildString = 15063.0.amd64fre.rs2_release.170317-1834
+	TargetOSBuildString = 10.0.16299.15 (rs3_release.170928-1534)
+	HostOSLanguageId = 2057
+	HostOSEdition = Core
+	RegisteredAV = Windows Defender,
+	FilterDrivers = WdFilter,wcifs,WIMMount,luafv,Wof,FileInfo,
+	UpgradeStartTime = 3/21/2018 9:47:16 PM
+	UpgradeEndTime = 3/21/2018 10:02:40 PM
+	UpgradeElapsedTime = 00:15:24
+	ReportId = dd4db176-4e3f-4451-aef6-22cf46de8bde
+
+Error: SetupDiag reports Optional Component installation failed to open OC Package. Package Name: Foundation, Error: 0x8007001F
+Recommend you check the "Windows Modules Installer" service (Trusted Installer) is started on the system and set to automatic start, reboot and try the update again.  Optionally, you can check the status of optional components on the system (search for Windows Features), uninstall any unneeded optional components, reboot and try the update again.
+Error: SetupDiag reports down-level failure, Operation: Finalize, Error: 0x8007001F - 0x50015
+Refer to https://docs.microsoft.com/en-us/windows/deployment/upgrade/upgrade-error-codes for error information.
+```
+
+### XML log sample
+
+```
+<?xml version="1.0" encoding="utf-16"?>
+<SetupDiag xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="https://docs.microsoft.com/en-us/windows/deployment/upgrade/setupdiag">
+  <Version>1.3.0.0</Version>
+  <ProfileName>DiskSpaceBlockInDownLevel</ProfileName>
+  <ProfileGuid>6080AFAC-892E-4903-94EA-7A17E69E549E</ProfileGuid>
+  <SystemInfo>
+    <MachineName>Offline</MachineName>
+    <Manufacturer>Microsoft Corporation</Manufacturer>
+    <Model>Virtual Machine</Model>
+    <HostOSArchitecture>x64</HostOSArchitecture>
+    <FirmwareType>UEFI</FirmwareType>
+    <BiosReleaseDate>20171012000000.000000+000</BiosReleaseDate>
+    <BiosVendor>Hyper-V UEFI Release v2.5</BiosVendor>
+    <BiosVersion>Hyper-V UEFI Release v2.5</BiosVersion>
+    <HostOSVersion>10.0.14393</HostOSVersion>
+    <HostOSBuildString>14393.1794.amd64fre.rs1_release.171008-1615</HostOSBuildString>
+    <TargetOSBuildString>10.0.16299.15 (rs3_release.170928-1534)</TargetOSBuildString>
+    <HostOSLanguageId>1033</HostOSLanguageId>
+    <HostOSEdition>Core</HostOSEdition>
+    <RegisteredAV />
+    <FilterDrivers />
+    <UpgradeStartTime>2017-12-21T12:56:22</UpgradeStartTime>
+    <UpgradeElapsedTime />
+    <UpgradeEndTime>2017-12-21T13:22:46</UpgradeEndTime>
+    <RollbackStartTime>0001-01-01T00:00:00</RollbackStartTime>
+    <RollbackEndTime>0001-01-01T00:00:00</RollbackEndTime>
+    <RollbackElapsedTime />
+    <CommercialId>Offline</CommercialId>
+    <SetupReportId>06600fcd-acc0-40e4-b7f8-bb984dc8d05a</SetupReportId>
+    <ReportId>06600fcd-acc0-40e4-b7f8-bb984dc8d05a</ReportId>
+  </SystemInfo>
+  <FailureData>Warning: Found Disk Space Hard Block.</FailureData>
+  <Remediation>You must free up at least "6603" MB of space on the System Drive, and try again.</Remediation>
+</SetupDiag>
+```
+
+### JSON log sample
+
+```
+{"Version":"1.3.0.0","ProfileName":"DiskSpaceBlockInDownLevel","ProfileGuid":"6080AFAC-892E-4903-94EA-7A17E69E549E","SystemInfo":{"BiosReleaseDate":"20171012000000.000000+000","BiosVendor":"Hyper-V UEFI Release v2.5","BiosVersion":"Hyper-V UEFI Release v2.5","CV":null,"CommercialId":"Offline","FilterDrivers":"","FirmwareType":"UEFI","HostOSArchitecture":"x64","HostOSBuildString":"14393.1794.amd64fre.rs1_release.171008-1615","HostOSEdition":"Core","HostOSLanguageId":"1033","HostOSVersion":"10.0.14393","MachineName":"Offline","Manufacturer":"Microsoft Corporation","Model":"Virtual Machine","RegisteredAV":"","ReportId":"06600fcd-acc0-40e4-b7f8-bb984dc8d05a","RollbackElapsedTime":"PT0S","RollbackEndTime":"\/Date(-62135568000000-0800)\/","RollbackStartTime":"\/Date(-62135568000000-0800)\/","SDMode":1,"SetupReportId":"06600fcd-acc0-40e4-b7f8-bb984dc8d05a","TargetOSArchitecture":null,"TargetOSBuildString":"10.0.16299.15 (rs3_release.170928-1534)","UpgradeElapsedTime":"PT26M24S","UpgradeEndTime":"\/Date(1513891366000-0800)\/","UpgradeStartTime":"\/Date(1513889782000-0800)\/"},"FailureData":["Warning: Found Disk Space Hard Block."],"DeviceDriverInfo":null,"Remediation":["You must free up at least \"6603\" MB of space on the System Drive, and try again."]}
+```
 
 ## Related topics
 

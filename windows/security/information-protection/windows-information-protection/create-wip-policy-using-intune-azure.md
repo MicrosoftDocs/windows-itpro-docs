@@ -5,10 +5,10 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: eross-msft
+author: justinha
 ms.author: justinha
 ms.localizationpriority: medium
-ms.date: 05/30/2018
+ms.date: 07/10/2018
 ---
 
 # Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune
@@ -198,7 +198,7 @@ Path                   Publisher
 Where `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the **Publisher** name and `WORDPAD.EXE` is the **File** name.
 
 ### Import a list of apps 
-For this example, we’re going to add an AppLocker XML file to the **Protected apps** list. You’ll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
+For this example, we’re going to add an AppLocker XML file to the **Protected apps** list. You’ll use this option if you want to add multiple apps at the same time. The first example shows how to create a Packaged App rule for Store apps. The second example shows how to create an Executable rule by using a path for unsigned apps. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
 
 **To create a list of protected apps using the AppLocker tool**
 1.	Open the Local Security Policy snap-in (SecPol.msc).
@@ -270,6 +270,39 @@ For this example, we’re going to add an AppLocker XML file to the **Protected 
             <RuleCollection EnforcementMode="NotConfigured" Type="Script"/>
         </AppLockerPolicy>
     ```
+
+12.	After you’ve created your XML file, you need to import it by using Microsoft Intune.
+
+**To create an Executable rule and xml file for unsigned apps**
+1. Open the Local Security Policy snap-in (SecPol.msc).
+    
+2. In the left pane, click **Application Control Policies** > **AppLocker** > **Executable Rules**.
+
+3. Right-click **Executable Rules** > **Create New Rule**.
+
+   ![Local security snap-in, showing the Executable Rules](images/create-new-path-rule.png)
+
+4. On the **Before You Begin** page, click **Next**.
+
+5. On the **Permissions** page, make sure the **Action** is set to **Allow** and the **User or group** is set to **Everyone**, and then click **Next**.
+
+6. On the **Conditions** page, click **Path** and then click **Next**.
+
+    ![Create Packaged app Rules wizard, showing the Publisher](images/path-condition.png)
+
+7. Click **Browse Folders...** and select the path for the unsigned apps. For this example, we’re using "C:\Program Files".
+
+    ![Create Packaged app Rules wizard, showing the Select applications page](images/select-path.png)
+
+8. On the **Exceptions** page, add any exceptions and then click **Next**.
+
+9. On the **Name** page, type a name and description for the rule and then click **Create**.
+
+10.	In the left pane, right-click **AppLocker** > **Export policy**.
+
+11.	In the **Export policy** box, browse to where the policy should be stored, give the policy a name, and then click **Save**.
+
+    The policy is saved and you’ll see a message that says 1 rule was exported from the policy.
 
 12.	After you’ve created your XML file, you need to import it by using Microsoft Intune.
 
@@ -346,7 +379,7 @@ Starting with Windows 10, version 1703, Intune automatically determines your cor
 
 1.	From the **App policy** blade, click the name of your policy, and then click **Required settings**.
 
-2.  If the auto-defined identity isn’t correct, you can change the info in the **Corporate identity** field. If you need to add additional domains, for example your email domains, you can do it in the **Advanced settings** area.
+2.  If the auto-defined identity isn’t correct, you can change the info in the **Corporate identity** field. If you need to add domains, for example your email domains, you can do it in the **Advanced settings** area.
 
     ![Microsoft Intune, Set your corporate identity for your organization](images/wip-azure-required-settings-corp-identity.png)
 
@@ -454,7 +487,7 @@ After you've decided where your protected apps can access enterprise data on you
     
     - **Prevent corporate data from being accessed by apps when the device is locked. Applies only to Windows 10 Mobile.** Determines whether to encrypt enterprise data using a key that's protected by an employee's PIN code on a locked device. Apps won't be able to read corporate data when the device is locked. The options are:
         
-        - **On (recommended).** Turns on the feature and provides the additional protection.
+        - **On.** Turns on the feature and provides the additional protection.
         
         - **Off, or not configured.** Doesn't enable this feature.
     
@@ -464,7 +497,7 @@ After you've decided where your protected apps can access enterprise data on you
         
         - **Off.** Stop local encryption keys from being revoked from a device during unenrollment. For example if you’re migrating between Mobile Device Management (MDM) solutions.
         
-    - **Show the Windows Information Protection icon overlay.** Determines whether the Windows Information Protection icon overlay appears on corporate files in the Save As and File Explorer views. The options are:
+    - **Show the enterprise data protection icon.** Determines whether the Windows Information Protection icon overlay appears on corporate files in the Save As and File Explorer views. The options are:
     
         - **On.** Allows the Windows Information Protection icon overlay to appear on corporate files in the Save As and File Explorer views. Additionally, for unenlightened but protected apps, the icon overlay also appears on the app tile and with Managed text on the app name in the **Start** menu.
         
@@ -475,6 +508,12 @@ After you've decided where your protected apps can access enterprise data on you
         - **On.** Starts using Azure Rights Management encryption with WIP. By turning this option on, you can also add a TemplateID GUID to specify who can access the Azure Rights Management protected files, and for how long. For more info about setting up Azure Rights management and using a template ID with WIP, see the [Choose to set up Azure Rights Management with WIP](#choose-to-set-up-azure-rights-management-with-wip) section of this topic.
         
         - **Off, or not configured.** Stops using Azure Rights Management encryption with WIP.
+
+    - **Allow Windows Search Indexer to search encrypted files.** Determines whether to allow the Windows Search Indexer to index items that are encrypted, such as WIP protected files.
+    
+        - **On.** Starts Windows Search Indexer to index encrypted files.
+    
+        - **Off, or not configured.** Stops Windows Search Indexer from indexing encrypted files.
 
 ## Choose to set up Azure Rights Management with WIP
 WIP can integrate with Microsoft Azure Rights Management to enable secure sharing of files by using removable drives such as USB drives. For more info about Azure Rights Management, see [Microsoft Azure Rights Management](https://products.office.com/business/microsoft-azure-rights-management). To integrate Azure Rights Management with WIP, you must already have Azure Rights Management set up.

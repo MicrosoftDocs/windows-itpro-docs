@@ -6,7 +6,7 @@ ms.prod: W10
 ms.technology: Windows
 ms.mktglfcycl: plan
 ms.sitesec: library
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: CelesteDG
 ms.author: celested
 ms.date: 07/27/2017

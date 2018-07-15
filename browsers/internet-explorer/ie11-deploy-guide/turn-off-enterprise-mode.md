@@ -1,9 +1,9 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: How to turn Enteprrise Mode off temporarily while testing websites and how to turn it off completely if you no longer want to to use it.
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: 5027c163-71e0-49b8-9dc0-f0a7310c7ae3
 title: Turn off Enterprise Mode (Internet Explorer 11 for IT Pros)

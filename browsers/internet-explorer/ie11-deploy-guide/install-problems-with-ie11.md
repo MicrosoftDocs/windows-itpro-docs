@@ -1,8 +1,8 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to fix potential installation problems with Internet Explorer 11
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: 3ae77745-86ac-40a9-a37d-eebbf37661a3
 title: Install problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)

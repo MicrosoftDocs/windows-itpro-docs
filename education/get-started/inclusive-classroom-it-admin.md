@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.topic: article
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.pagetype: edu
 ROBOTS: noindex,nofollow
 author: alhughes

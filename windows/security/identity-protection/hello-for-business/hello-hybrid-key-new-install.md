@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
-localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 03/26/2018
 ---
 # Windows Hello for Business Key Trust New Installation
@@ -80,11 +80,11 @@ If you do not have an existing public key infrastructure, please review [Certifi
 ### Section Review ###
 
 > [!div class="checklist"]
-> *  Miniumum Windows Server 2012 Certificate Authority.
+> *  Minimum Windows Server 2012 Certificate Authority.
 > *  Enterprise Certificate Authority.
 > *  Functioning public key infrastructure.
 > *  Root certifcate authority certificate (Azure AD Joined devices).
-> *  Highly availalbe certificate revoication list (Azure AD Joined devices).
+> *  Highly available certificate revocation list (Azure AD Joined devices).
   
 ## Azure Active Directory ##
 You’ve prepared your Active Directory.  Hybrid Windows Hello for Business deployment needs Azure Active Directory to host your cloud-based identities. 

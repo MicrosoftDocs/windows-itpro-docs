@@ -1,18 +1,18 @@
 ---
-title: Demo the Windows Autopilot Deployment Program on a Virtual Machine
+title: Demonstrate Autopilot deployment on a VM
 description: Step-by-step instructions on how to set-up a Virtual Machine with a Windows Autopilot deployment
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
 author: coreyp-at-msft
-ms.author: coreyp
-ms.date: 05/09/18
+ms.author: greg-lindsay
+ms.date: 07/13/18
 ---
 
-# Demo the Windows Autopilot Deployment Program on a Virtual Machine
+# Demonstrate Autopilot deployment on a VM
 
 **Applies to**
 
@@ -27,10 +27,10 @@ In this topic you'll learn how to set-up a Windows Autopilot deployment for a Vi
 
 These are the thing you'll need on your device to get started:
 * Installation media for the latest version of Windows 10 Professional or Enterprise (ISO file)
-* Internet access (see [Network connectivity requirements](windows-10-autopilot.md#network-connectivity-requirements))
+* Internet access (see [Network connectivity requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot#network-connectivity-requirements))
 * Hypervisor needs to be unoccupied, or used by Hyper-V, as we will be using Hyper-V to create the Virtual Machine
 
-See additional prerequisites in the [Windows Autopilot overview topic](windows-10-autopilot.md#prerequisites).
+See additional prerequisites in the [Windows Autopilot overview topic](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot#prerequisites).
 
 ## Create your Virtual Machine
 
@@ -209,4 +209,3 @@ Once you select a language and a keyboard layout, your company branded sign-in s
 
 Windows Autopilot will now take over to automatically join your Virtual Machine into Azure Active Directory and enroll it to Microsoft Intune. Use the checkpoints you've created to go through this process again with different settings.
 
-Missing something in this topic? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=windows-10-autopilot-demo-vm.md). 

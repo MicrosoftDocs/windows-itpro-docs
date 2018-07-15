@@ -7,7 +7,7 @@ ms.technology: Windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: CelesteDG
 ms.author: celested
 ms.date: 04/04/2018
@@ -42,7 +42,7 @@ Here's a list of what you get when using the Set up School PCs app in your schoo
 > If your school uses Active Directory, use [Windows Configuration Designer](set-up-students-pcs-to-join-domain.md) to configure your PCs to join the domain. You can only use the Set up School PCs app to set up PCs that are connected to Azure AD.
 
 ## Automated Azure AD join
-One of the most important features in Set up School PCs is the ability to create a provisioning package that performs automated Azure AD join. With this feature, you no longer have to spend minutes going through Windows setup, manually connecting to a network, and manually joining your Azure AD domain. With the automated Azure AD join feature in Set up School School PCs, this process is reduced to zero clicks! You can skip all of the Windows setup experience and the OS automatically joins the PC to your Azure AD domain and enrolls it into MDM if you have a MDM provider activated.
+One of the most important features in Set up School PCs is the ability to create a provisioning package that performs automated Azure AD join. With this feature, you no longer have to spend minutes going through Windows setup, manually connecting to a network, and manually joining your Azure AD domain. With the automated Azure AD join feature in Set up School PCs, this process is reduced to zero clicks! You can skip all of the Windows setup experience and the OS automatically joins the PC to your Azure AD domain and enrolls it into MDM if you have a MDM provider activated.
 
 To make this as seamless as possible, in your Azure AD tenant:
 - Allow your teacher and other IT staff to join devices to Azure AD so they can sucessfully request an automated Azure AD join token. 

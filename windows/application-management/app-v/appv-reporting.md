@@ -200,7 +200,7 @@ To retrieve report information and create reports using App-V you must use one o
 
     To run the Microsoft SQL Server Scheduled Stored procedure, the Microsoft SQL Server Agent must be running. Make sure the Microsoft SQL Server Agent is set to **AutoStart**. For more information, see [Autostart SQL Server Agent (SQL Server Management Studio)](https://docs.microsoft.com/en-us/sql/ssms/agent/autostart-sql-server-agent-sql-server-management-studio).
 
-    The stored procedure is also created when when you use the App-V database scripts.
+    The stored procedure is also created when you use the App-V database scripts.
 
 You should also ensure that the reporting server web service’s **Maximum Concurrent Connections** is set to a value that the server can manage without affecting availability. The recommended number of **Maximum Concurrent Connections** for the **Reporting Web Service** is **10,000**.
 

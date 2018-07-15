@@ -6,10 +6,10 @@ ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 ms.sitesec: library
-author: eross-msft
-ms.author: lizross
+author: shortpatti
+ms.author: pashort
 ms.date: 08/14/2017
-ms.localizationpriority: low
+ms.localizationpriority: medium
 
 
 

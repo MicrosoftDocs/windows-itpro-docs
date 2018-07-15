@@ -1,7 +1,7 @@
 ---
 description: A full-sized view of how document modes are chosen in IE11.
 title: Full-sized flowchart detailing how document modes are chosen in IE11
-author: eross-msft
+author: shortpatti
 ms.date: 04/19/2017
 ---
 

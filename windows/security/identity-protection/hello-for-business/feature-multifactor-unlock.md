@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
-localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 03/20/2018
 ---
 # Multifactor Unlock
@@ -24,10 +24,10 @@ Windows, today, natively only supports the use of a single credential (password,
 
 Windows 10 offers Multifactor device unlock by extending Windows Hello with trusted signals, administrators can configure Windows 10 to request a combination of factors and trusted signals to unlock their devices. 
 
-Which organizations can take advanage of Multifactor unlock? Those who:
+Which organizations can take advantage of Multifactor unlock? Those who:
 * Have expressed that PINs alone do not meet their security needs.
 * Want to prevent Information Workers from sharing credentials.
-* Want their orgs to comply with regulatory two-factor authentication policy.
+* Want their organizations to comply with regulatory two-factor authentication policy.
 * Want to retain the familiar Windows logon UX and not settle for a custom solution.
  
 You enable multifactor unlock using Group Policy.  The **Configure device unlock factors** policy setting is located under **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business**.
@@ -188,7 +188,8 @@ The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IP
 <ipv6DnsServer>21DA:00D3:0000:2F3B:02AA:00FF:FE28:9C5A%2</ipv6DnsServer>
 ```
 ##### dnsSuffix
-The fully qualified domain name of your organizations internal dns suffix where any part of the fully qualified domain name in this setting exists in the computer's primary dns suffix.  The **signal** element may contain one or more **dnsSuffix** elements.<br>
+The fully qualified domain name of your 
+s internal dns suffix where any part of the fully qualified domain name in this setting exists in the computer's primary dns suffix.  The **signal** element may contain one or more **dnsSuffix** elements.<br>
 **Example**
 ```
 <dnsSuffix>corp.contoso.com</dnsSuffix>

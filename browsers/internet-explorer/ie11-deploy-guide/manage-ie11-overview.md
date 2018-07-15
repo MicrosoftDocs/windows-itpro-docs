@@ -1,8 +1,8 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use the topics in this section to learn about how to auto detect your settings, auto configure your configuration settings, and auto configure your proxy configuration settings for Internet Explorer.
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: eb3cce62-fc7b-41e3-97b6-2916b85bcf55
 title: Manage Internet Explorer 11 (Internet Explorer 11 for IT Pros)

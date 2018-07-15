@@ -9,7 +9,7 @@ ms.pagetype: deploy
 author: Jaimeo
 ms.author: jaimeo
 ms.date: 03/15/2018
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Get started with Update Compliance
@@ -25,7 +25,7 @@ Steps are provided in sections that follow the recommended setup process:
 
 ## Add Update Compliance to Microsoft Operations Management Suite or Azure Log Analytics
 
-Update Compliance is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud-based servicing for monitoring and automating your on-premise and cloud environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/) or the Azure [Log Analytics overview](https://azure.microsoft.com/services/log-analytics/).
+Update Compliance is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud-based servicing for monitoring and automating your on-premises and cloud environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/) or the Azure [Log Analytics overview](https://azure.microsoft.com/services/log-analytics/).
 
 >[!IMPORTANT]
 >Update Compliance is a free solution for Azure subscribers.
@@ -77,4 +77,4 @@ Once you've added Update Compliance to Microsoft Operations Management Suite, yo
 
 ## Use Update Compliance to monitor Windows Updates
 
-Once your devices are enrolled, you can starte to [Use Update Compliance to monitor Windows Updates](update-compliance-using.md).
+Once your devices are enrolled, you can start to [Use Update Compliance to monitor Windows Updates](update-compliance-using.md).

@@ -109,7 +109,7 @@ This setting determines whether a device shows notifications about Windows diagn
 >| **Registry key** | HKLM\Software\Policies\Microsoft\Windows\DataCollection |
 >| **Value** | DisableTelemetryOptInChangeNotification |
 >| **Type** | REG_DWORD |
->| **Setting** | "00000001" |
+>| **Setting** | "00000000" |
 
 #### MDM
 
