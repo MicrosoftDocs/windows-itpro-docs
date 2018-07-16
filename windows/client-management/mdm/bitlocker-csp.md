@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 06/29/2018
+ms.date: 07/16/2018
 ---
 
 # BitLocker CSP
@@ -845,7 +845,10 @@ The following diagram shows the BitLocker configuration service provider in tree
 ```
 
 <a href="" id="allowstandarduserencryption"></a>**AllowStandardUserEncryption**  
-Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where policy is pushed while current logged on user is non-admin/standard user.
+Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where policy is pushed while current logged on user is non-admin/standard user Azure AD account.
+
+> [!Note]  
+> This policy is only supported in Azure AD accounts.
                          
 "AllowStandardUserEncryption" policy is tied to "AllowWarningForOtherDiskEncryption" policy  being set to "0", i.e, silent encryption is enforced.
                      
