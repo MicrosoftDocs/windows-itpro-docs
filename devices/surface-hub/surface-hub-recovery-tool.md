@@ -18,6 +18,9 @@ The [Microsoft Surface Hub Recovery Tool](https://www.microsoft.com/download/det
 
 To re-image the Surface Hub SSD using the Recovery Tool, you'll need to remove the SSD from the Surface Hub, connect the drive to the USB-to-SATA cable, and then connect the cable to the desktop PC on which the Recovery Tool is installed. For more information on how to remove the existing drive from your Surface Hub, please refer to the [Surface Hub SSD Replacement Guide (PDF)](http://download.microsoft.com/download/1/F/2/1F202254-7156-459F-ABD2-39CF903A25DE/surface-hub-ssd-replacement-guide_en-us.pdf).
 
+>[!IMPORTANT]
+>Do not let the device go to sleep or interrupt the download of the image file.
+
 If the tool is unsuccessful in reimaging your drive, please contact [Surface Hub Support](https://support.microsoft.com/help/4037644/surface-contact-surface-warranty-and-software-support).
 
 ## Prerequisites

@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 author: jsuther1974
-ms.date: 07/10/2018
+ms.date: 07/16/2018
 ---
 
 # Microsoft recommended block rules
@@ -762,6 +762,12 @@ Microsoft recommends that you block the following Microsoft-signed applications 
   --> 
   <Deny ID="ID_DENY_D_285" FriendlyName="PSWorkflowUtility 285" Hash="99382ED8FA3577DFD903C01478A79D6D90681406"/> 
   <Deny ID="ID_DENY_D_286" FriendlyName="PSWorkflowUtility 286" Hash="C3A5DAB20947CA8FD092E75C25177E7BAE7884CA58710F14827144C09EA1F94B"/> 
+
+  <!-- winrm.vbs
+  --> 
+  <Deny ID="ID_DENY_D_583" FriendlyName="Winrm 583" Hash="3FA2D2963CBF47FFD5F7F5A9B4576F34ED42E552"/> 
+  <Deny ID="ID_DENY_D_584" FriendlyName="Winrm 584" Hash="6C96E976DC47E0C99B77814E560E0DC63161C463C75FA15B7A7CA83C11720E82"/> 
+ 
   </FileRules>
   <!-- Signers
   --> 
@@ -1391,7 +1397,8 @@ Microsoft recommends that you block the following Microsoft-signed applications 
   <FileRuleRef RuleID="ID_DENY_D_580"/>
   <FileRuleRef RuleID="ID_DENY_D_581"/>
   <FileRuleRef RuleID="ID_DENY_D_582"/>
-
+  <FileRuleRef RuleID="ID_DENY_D_583"/>
+  <FileRuleRef RuleID="ID_DENY_D_584"/>
   </FileRulesRef>
   </ProductSigners>
   </SigningScenario>

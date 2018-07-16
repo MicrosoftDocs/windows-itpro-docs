@@ -40,6 +40,9 @@ To effectively build queries that span multiple tables, you need to understand t
 | AdditionalFields | string | Additional information about the event in JSON array format |
 | AlertId | string | Unique identifier for the alert |
 | ComputerName | string | Fully qualified domain name (FQDN) of the machine |
+| ConnectedNetworks | string | Networks that the adapter is connected to. Each JSON array contains the network name, category (public, private or domain), a description, and a flag indicating if it’s connected publicly to the internet. |
+| DefaultGateways | string | Default gateway addresses in JSON array format |
+| DnsServers | string | DNS server addresses in JSON array format |
 | EventTime | datetime | Date and time when the event was recorded |
 | EventType | string | Table where the record is stored |
 | FileName | string | Name of the file that the recorded action was applied to |
@@ -64,15 +67,22 @@ To effectively build queries that span multiple tables, you need to understand t
 | InitiatingProcessSha1 | string | SHA-1 of the process (image file) that initiated the event |
 | InitiatingProcessSha256 | string | SHA-256 of the process (image file) that initiated the event. This field is usually not populated—use the SHA1 column when available. |
 | InitiatingProcessTokenElevation | string | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event |
+| IPAddresses | string | JSON array containing all the IP addresses assigned to the adapter, along with their respective subnet prefix and IP address space, such as public, private, or link-local |
+| Ipv4Dhcp | string | IPv4 address of DHCP server |
+| Ipv6Dhcp | string | IPv6 address of DHCP server |
 | IsAzureADJoined | boolean | Boolean indicator of whether machine is joined to the Azure Active Directory |
 | LocalIP | string | IP address assigned to the local machine used during communication |
 | LocalPort | int | TCP port on the local machine used during communication |
 | LogonId | string | Identifier for a logon session. This identifier is unique on the same machine only between restarts. |
 | LoggedOnUsers | string | List of all users that are logged on the machine at the time of the event in JSON array format |
 | LogonType | string | Type of logon session, specifically:<br><br> - **Interactive** - User physically interacts with the machine using the local keyboard and screen<br><br> - **Remote interactive (RDP) logons** - User interacts with the machine remotely using Remote Desktop, Terminal Services, Remote Assistance, or other RDP clients<br><br> - **Network** - Session initiated when the machine is accessed using PsExec or when shared resources on the machine, such as printers and shared folders, are accessed<br><br> - **Batch** - Session initiated by scheduled tasks<br><br> - **Service** - Session initiated by services as they start<br> 
+| MacAddress | string | MAC address of the network adapter |
 | MachineGroup | string | Machine group of the machine. This group is used by role-based access control to determine access to the machine. |
 | MachineId | string | Unique identifier for the machine in the service |
 | MD5 | string | MD5 hash of the file that the recorded action was applied to |
+| NetworkAdapterName | string | Name of the network adapter |
+| NetworkAdapterStatus | string | Operational status of the network adapter. For the possible values, refer to [this enumeration](https://docs.microsoft.com/en-us/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2). |
+| NetworkAdapterType | string | Network adapter type. For the possible values, refer to [this enumeration](https://docs.microsoft.com/en-us/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2). |
 | NetworkCardIPs | string | List of all network adapters on the machine, including their MAC addresses and assigned IP addresses, in JSON array format |
 | OSArchitecture | string | Architecture of the operating system running on the machine |
 | OSBuild | string | Build version of the operating system running on the machine |
@@ -99,6 +109,7 @@ To effectively build queries that span multiple tables, you need to understand t
 | ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns. |
 | SHA1 | string | SHA-1 of the file that the recorded action was applied to |
 | SHA256 | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated—use the SHA1 column when available. |
+| TunnelingProtocol | string | Tunneling protocol, if the interface is used for this purpose, for example: <br> - Various IPv6 to IPv4 tunneling protocols (6to4, Teredo, ISATAP) <br> - VPN (PPTP, SSTP) <br> - SSH <br> **NOTE:** This field doesn’t provide full IP tunneling specifications. |
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-belowfoldlink)        
 
