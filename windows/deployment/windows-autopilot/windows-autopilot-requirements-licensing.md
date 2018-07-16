@@ -12,7 +12,7 @@ ms.author: coreyp
 ms.date: 06/01/2018
 ---
 
-# Windows Autopilot licesning requirements
+# Windows Autopilot licensing requirements
 
 **Applies to: Windows 10**
 
@@ -23,6 +23,8 @@ Windows Autopilot depends on specific capabilities available in Windows 10 and A
 -   One of the following, to provide needed Azure Active Directory (automatic MDM enrollment and company branding features) and MDM functionality:
 
     -   Microsoft 365 Business subscriptions
+    
+    -   Microsoft 365 F1 subscriptions
 
     -   Microsoft 365 Enterprise E3 or E5 subscriptions, which include all Windows 10, Office 365, and EM+S features (Azure AD and Intune)
 
