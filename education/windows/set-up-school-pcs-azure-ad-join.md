@@ -70,7 +70,7 @@ Your Intune tenant can only have 500 active Azure AD tokens, or packages, at a t
 
 To reduce your inventory, clear out all unnecessary and inactive tokens.
 1. Go to **Azure Active Directory** \> **Users** \> **All users**  
-2. In the **User Name** column, select and delete all accounts with a **package\_**
+2. In the **User Name** column, select and delete all accounts with a **package\ _**
 prefix. These accounts are created at a 1:1 ratio for every token and are safe
 to delete.   
 3. Select and delete inactive and expired user accounts. 
@@ -83,7 +83,7 @@ Automated Azure AD tokens expire after 30 days. The expiration date for each tok
 ## Next steps    
 Learn more about setting up devices with the Set up School PCs app.  
 * [What's in my provisioning package?](set-up-school-pcs-provisioning-package.md)
-* [Shared PC mode for schools](set-up-school-pcs-shared-mode.md)
+* [Shared PC mode for schools](set-up-school-pcs-shared-pc-mode.md)
 * [Set up School PCs technical reference](set-up-school-pcs-technical.md)
 * [Set up Windows 10 devices for education](set-up-windows-10.md) 
 
