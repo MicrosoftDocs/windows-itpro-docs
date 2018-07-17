@@ -51,7 +51,8 @@ For multi-app assigned access:
 **Value type:** REG_SZ
 
 ### Related policies
-[Configure kiosk reset after idle timeout](#configure-edge-kiosk-reset-idle-timeout-include): [!INCLUDE [configure-kiosk-reset-after-idle-timeout-shortdesc](../shortdesc/configure-kiosk-reset-after-idle-timeout-shortdesc.md)] 
+[Configure kiosk reset after idle timeout](../new-policies.md#configure-kiosk-reset-after-idle-timeout): [!INCLUDE [configure-kiosk-reset-after-idle-timeout-shortdesc](../shortdesc/configure-kiosk-reset-after-idle-timeout-shortdesc.md)] 
+
 
 ### Related documents
 
