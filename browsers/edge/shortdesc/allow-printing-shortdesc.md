@@ -1,0 +1,1 @@
+By default, Microsoft Edge allows users to print web content. Disabling this policy prevents users from printing web content. 

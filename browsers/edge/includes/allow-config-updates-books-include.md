@@ -1,0 +1,38 @@
+<!-- ## Allow configuration updates for the Books Library -->
+>*Supported versions: Microsoft Edge on Windows 10, version 1802 or later*<br>
+>*Default setting:  Enabled or not configured (Allowed)*
+
+[!INCLUDE [allow-configuration-updates-for-books-library-shortdesc](../shortdesc/allow-configuration-updates-for-books-library-shortdesc.md)]
+
+### Allowed values
+
+|Group Policy  |MDM |Registry |Description |Most restricted |
+|---|:---:|:---:|---|:---:|
+|Disabled |0 |0 |Prevented/not allowed. |![Most restricted value](../images/check-gn.png) |
+|Enabled or not configured<br>**(default)** |1 |1 |Allowed. Microsoft Edge updates the configuration data for the Books Library automatically. | |
+---
+
+### ADMX info and settings
+
+#### ADMX info
+- **GP English name:** 
+- **GP name:** 
+- **GP path:** Windows Components/Microsoft Edge
+- **GP ADMX file name:** MicrosoftEdge.admx
+
+#### MDM settings
+- **MDM name:** Browser/[AllowConfigurationUpdateForBooksLibrary](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowconfigurationupdateforbookslibrary)
+- **Supported devices:** Desktop
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowConfigurationUpdateForBooksLibrary 
+- **Data type:** Integer
+
+#### Registry settings
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\BooksLibrary
+- **Value name:** AllowConfigurationUpdateForBooksLibrary 
+- **Value type:** REG_DWORD
+
+### Related documents
+
+[Manage connections from Windows operating system components to Microsoft services](https://docs.microsoft.com/en-us/windows/configuration/manage-connections-from-windows-operating-system-components-to-microsoft-services)
+
+<hr>

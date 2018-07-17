@@ -1,0 +1,1 @@
+By default, Microsoft Edge loads a specific page or pages defined in the Configure Start Pages policy. With this policy, you can configure Microsoft Edge to load either the Start page, New tab page, or previously opened pages. You can also configure Microsoft Edge to prevent users from changing or customizing the Start page.
