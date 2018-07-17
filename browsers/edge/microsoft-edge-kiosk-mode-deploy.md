@@ -105,7 +105,7 @@ Windows Settings is the simplest and easiest way to set up one or a couple of de
     >[!NOTE]
     >The URL sets the Home Button, Start page, and New Tab page.
 
-11.  Microsoft Edge in kiosk mode has a built-in timer to help keep data safe in public browsing sessions. When the idle time (no user activity) meets the time limit, a confirmation message prompts the user to continue; if **Continue** is not selected, Microsoft Edge resets to the default URL. Accept the default value of **5 minutes,** or you can choose your own idle timer value.
+11.  Microsoft Edge in kiosk mode has a built-in timer to help keep data safe in public browsing sessions.<p>When the idle time (no user activity) meets the time limit, a confirmation message prompts the user to continue; if **Continue** is not selected, Microsoft Edge resets to the default URL. Accept the default value of **5 minutes,** or you can choose your own idle timer value.
 
 12.  Select **Next**, and then select **Close**.
 
