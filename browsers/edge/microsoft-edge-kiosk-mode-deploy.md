@@ -75,7 +75,7 @@ fixed-purpose device.
 
 The multi-app Microsoft Edge kiosk mode types include:
 
-1.  **Public browsing** (shared browsing) supports browsing the internet and
+3.  **Public browsing** (shared browsing) supports browsing the internet and
     runs InPrivate with minimal features available. In this configuration,
     Microsoft Edge can be one of many apps available. Users can minimize, close,
     and open multiple InPrivate windows. On a multi-app kiosk device, Microsoft
@@ -87,7 +87,7 @@ The multi-app Microsoft Edge kiosk mode types include:
 
     ![multi-app public browsing station](images/multi-app-pbs.png)
 
-1.  **Normal mode** runs a full version of Microsoft Edge, but some features may
+4.  **Normal mode** runs a full version of Microsoft Edge, but some features may
     not work depending on what other apps you configured in assigned access. For
     example, if the Microsoft Store is not set up, users cannot install
     extensions. If the user logs in with an MSA, their browsing data will roam
