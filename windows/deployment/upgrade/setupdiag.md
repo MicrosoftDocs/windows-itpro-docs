@@ -18,13 +18,19 @@ ms.localizationpriority: high
 
 >[!NOTE]
 >This is a 300 level topic (moderate advanced).<br>
->See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
+>See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.<br>
 
-[SetupDiag.exe](https://go.microsoft.com/fwlink/?linkid=870142) is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
+[![Download SetupDiag](../images/download.png)](https://go.microsoft.com/fwlink/?linkid=870142)
+
+## About SetupDiag
+
+<I>Current version of SetupDiag: 1.3.1.0</I>
+
+SetupDiag is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
 
 SetupDiag works by examining Windows Setup log files. It attempts to parse these log files to determine the root cause of a failure to update or upgrade the computer to Windows 10. SetupDiag can be run on the computer that failed to update, or you can export logs from the computer to another location and run SetupDiag in offline mode.
 
-See the [Release notes](#release-notes) section at the bottom of this topic for information about updates to this tool. 
+See the [Release notes](#release-notes) section at the bottom of this topic for information about the latest updates to this tool. 
 
 ## Requirements
 
@@ -355,6 +361,9 @@ Each rule name and its associated unique rule identifier are listed with a descr
     - Indicates a critical failure during a DISM add package operation.  Will specify the Package Name, DISM error and add package error code.
 
 ## Release notes
+
+07/16/2018 - SetupDiag v1.3.1 is released with 44 rules, as a standalone tool available from the Download Center.
+   - This release fixes a problem that can occur when running SetupDiag in online mode on a computer that produces a setupmem.dmp file, but does not have debugger binaries installed.
 
 07/10/2018 - SetupDiag v1.30 is released with 44 rules, as a standalone tool available from the Download Center.
    - Bug fix for an over-matched plug-in rule. The rule will now correctly match only critical (setup failure) plug-in issues.
