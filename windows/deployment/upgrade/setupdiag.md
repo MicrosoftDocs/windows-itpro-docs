@@ -20,7 +20,7 @@ ms.localizationpriority: high
 >This is a 300 level topic (moderate advanced).<br>
 >See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.<br>
 
-[![Download SetupDiag](../images/download.png)](https://go.microsoft.com/fwlink/?linkid=870142)
+&nbsp;[![Download SetupDiag](../images/download.png)](https://go.microsoft.com/fwlink/?linkid=870142)
 
 ## About SetupDiag
 
@@ -29,6 +29,16 @@ ms.localizationpriority: high
 SetupDiag is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
 
 SetupDiag works by examining Windows Setup log files. It attempts to parse these log files to determine the root cause of a failure to update or upgrade the computer to Windows 10. SetupDiag can be run on the computer that failed to update, or you can export logs from the computer to another location and run SetupDiag in offline mode.
+
+To quickly use SetupDiag on your current computer:
+1. Click [Download SetupDiag](https://go.microsoft.com/fwlink/?linkid=870142).
+2. If your web browser asks what to do with the file, choose **Save**. By default, the file will be saved to your **Downloads** folder.
+3. When SetupDiag has finished downloading, open the **Downloads** folder. If you downloaded the file somewhere else, open that folder instead. 
+4. Double-click the SetupDiag file. Click **Yes** if you are asked to approve running the program. 
+5. A command window will open while SetupDiag diagnoses your computer. Wait for this to finish.
+6. When SetupDiag finishes, two files will be created in the same folder where you double-clicked SetupDiag. One is a configuration file, the other is a log file.
+7. Use Notepad or another text file viewer application to open the log file displaying the current date in the name (ex: SetupDiag_17-Jul-2018.log).
+8. Review the information to discover if any rules were matched that can tell you why the computer failed to upgrade. For an example, see the [Text log sample](#text-log-sample) below.
 
 See the [Release notes](#release-notes) section at the bottom of this topic for information about the latest updates to this tool. 
 
