@@ -1,5 +1,5 @@
 <!-- ## Allow sideloading of Extensions -->
->*Supported versions: Microsoft Edge on Windows 10, version 1810*<br>
+>*Supported versions: Microsoft Edge on Windows 10, next major version*<br>
 >*Default setting: Enabled (Allowed)*
 
 [!INCLUDE [allow-sideloading-of-extensions-shortdesc](../shortdesc/allow-sideloading-of-extensions-shortdesc.md)]
@@ -9,7 +9,7 @@
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Disabled or not configured |0 |0 |Prevented, but does not prevent sideloading of extensions using Add-AppxPackage via PowerShell.<p>To prevent this, enable **Allows development of Windows Store apps and installing them from an integrated development environment (IDE)** policy, located at Computer Configuration \> Administrative Templates \> Windows Components \> App Package Deployment. For the MDM setting, enable **ApplicationManagement/AllowDeveloperUnlock**. |![Most restricted value](../images/check-gn.png) |
-|Enabled<br>**(default)** |1 |1 |Allowed | |
+|Enabled<br>**(default)** |1 |1 |Allowed. | |
 ---
 
 ### ADMX info and settings
@@ -33,9 +33,9 @@
 
 ### Related policies
 
-- **Allows development of Windows Store apps and installing them from an integrated development environment (IDE)**: When you enable this policy and the Allow all trusted apps to install policy, you allow users to develop Windows Store apps and install them directly from an IDE.
+- Allows development of Windows Store apps and installing them from an integrated development environment (IDE): When you enable this policy and the Allow all trusted apps to install policy, you allow users to develop Windows Store apps and install them directly from an IDE.
 
-- **Allow all trusted apps to install:** When you enable this policy, you can manage the installation of trusted line-of-business (LOB) or developer-signed Windows Store apps.
+- Allow all trusted apps to install: When you enable this policy, you can manage the installation of trusted line-of-business (LOB) or developer-signed Windows Store apps.
 
 ### Related topics
 

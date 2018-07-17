@@ -8,7 +8,7 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Enabled or not configured<br>**(default)** |0 |0 |Allow preloading of the Start and New Tab page. | |
+|Enabled or not configured<br>**(default)** |0 |0 |Allowed. Preload Start and New tab pages. | |
 |Disabled |1 |1 |Prevent/not allowed. |![Most restricted value](../images/check-gn.png) |
 ---
 

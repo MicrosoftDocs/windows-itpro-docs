@@ -1,5 +1,5 @@
 <!-- ## Do not sync browser settings -->
->*Supported versions: Microsoft Edge on Windows 10*<br>
+>*Supported versions: Microsoft Edge on Windows 10, next major version*<br>
 >*Default setting:  Disabled or not configured (Allowed/turned on)*
 
 [!INCLUDE [do-not-sync-browser-settings-shortdesc](../shortdesc/do-not-sync-browser-settings-shortdesc.md)]
@@ -65,10 +65,11 @@ To verify if syncing is turned on or off:
 
 ### Related policies
 
-[Prevent users from turning on browser syncing](../new-policies.md#prevent-users-from-turning-on-browser-syncing): [!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
+[Prevent users from turning on browser syncing](../new-policies.md#preventusersfromturningonbrowsersyncing): [!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
+
 
 ### Related topics
 
 [About sync setting on Microsoft Edge on Windows 10 devices](http://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices)
-
+<p>
 <hr>

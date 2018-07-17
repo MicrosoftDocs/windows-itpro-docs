@@ -65,8 +65,9 @@ With these values, you can do any of the following configurations:
 
 ### Related policies
 
-- [Set Home Button URL](../new-policies.md#set-new-tab-url-include): [!INCLUDE [set-home-button-url-shortdesc](../shortdesc/set-home-button-url-shortdesc.md)]
+- [Set Home button URL](../new-policies.md#set-home-button-url): [!INCLUDE [set-home-button-url-shortdesc](../shortdesc/set-home-button-url-shortdesc.md)]
  
-- [Unlock Home Button](../new-policies.md#unlock-home-button-include): [!INCLUDE [unlock-home-button-shortdesc](../shortdesc/unlock-home-button-shortdesc.md)] 
+- [Unlock Home button](../new-policies.md#unlock-home-button): [!INCLUDE [unlock-home-button-shortdesc](../shortdesc/unlock-home-button-shortdesc.md)] 
+
 
 <hr>

@@ -1,5 +1,5 @@
 <!-- ## Allow fullscreen mode -->
->*Supported versions: Microsoft Edge on Windows 10, version 1810*<br> 
+>*Supported versions: Microsoft Edge on Windows 10, next major version*<br> 
 >*Default setting:  Enabled or not configured (Allowed)*
 
 
@@ -9,8 +9,8 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled |0 |0 |Prevented/not allowed. |![Most restricted value](../images/check-gn.png) |
-|Enabled<br>**(default)** |1 |1 |Allowed. | |
+|Disabled |0 |0 |Prevented/not allowed |![Most restricted value](../images/check-gn.png) |
+|Enabled<br>**(default)** |1 |1 |Allowed | |
 ---
 
 ### ADMX info and settings

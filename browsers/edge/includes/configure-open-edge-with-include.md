@@ -124,11 +124,11 @@ If you want to make changes to this policy:<ol><li>Set the Disabled Lockdown of 
 
 ### Related policies
 
-- [Configure Start Pages](../new-policies.md#configure-start-pages-include): [!INCLUDE [configure-start-pages-shortdesc](../shortdesc/configure-start-pages-shortdesc.md)]
+- [Configure Start pages](../available-policies.md#configure-start-pages): [!INCLUDE [configure-start-pages-shortdesc](../shortdesc/configure-start-pages-shortdesc.md)]
 
-- [Disable Lockdown of Start Pages](../new-policies.md#disable-lockdown-of-start-pages-include): [!INCLUDE [disable-lockdown-of-start-pages-shortdesc](../shortdesc/disable-lockdown-of-start-pages-shortdesc.md)]
+- [Disable lockdown of Start pages](../available-policies.md#disable-lockdown-of-start-pages): [!INCLUDE [disable-lockdown-of-start-pages-shortdesc](../shortdesc/disable-lockdown-of-start-pages-shortdesc.md)]
 
-### Scenarios
+
 
 
 

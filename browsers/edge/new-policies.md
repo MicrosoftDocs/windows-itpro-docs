@@ -1,5 +1,5 @@
 ---
-description: 
+description: The Microsoft Edge team introduces new Group Policies and MDM Settings for IT administrators to configure Microsoft Edge. The new policies allow you to enable/disabled full-screen mode, printing, favorites bar, saving history. You can also prevent certificate error overrides, and configure New tab page, Home button and startup options, as well as manage extensions.
 ms.assetid: 
 author: shortpatti
 ms.author: pashort
@@ -15,9 +15,11 @@ ms.date: 07/18/2018
 
 > Applies to: Microsoft Edge on Windows 10 and Windows 10 Mobile
 
-The Microsoft Edge team introduces new Group Policies and MDM Settings for IT administrators to configure Microsoft Edge. The new policies include enabling/disabling full-screen mode, printing, favorites bar, saving history; prevent certificate error overrides; configure New Tab page, the  Home button, startup options, and managing extensions.
+The Microsoft Edge team introduces new Group Policies and MDM Settings for IT administrators to configure Microsoft Edge. The new policies allow you to enable/disabled full-screen mode, printing, favorites bar, saving history. You can also prevent certificate error overrides, and configure New tab page, Home button and startup options, as well as manage extensions.
 
 You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge\
+
+<!-- add links to the below policies -->
 
 <!-- RS5 policies -->
 
@@ -73,7 +75,7 @@ You can find the Microsoft Edge Group Policy settings in the following location 
 [!INCLUDE [unlock-home-button-include.md](includes/unlock-home-button-include.md)]
 
 
-# MDM policies added
+## MDM policies added
 In addition to the 20 or so new group policies, we added three MDM policies to align with the existing group policies.
 
 ## AllowWebContentOnNewTabPage

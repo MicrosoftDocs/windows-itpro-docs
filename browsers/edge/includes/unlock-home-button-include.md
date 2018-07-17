@@ -1,5 +1,5 @@
 <!-- ## Unlock Home Button -->
->*Supported versions: Microsoft Edge on Windows 10*<br>
+>*Supported versions: Microsoft Edge on Windows 10, next major version*<br>
 >*Default setting: Disabled or not configured (Home button is locked)*
 
 [!INCLUDE [unlock-home-button-shortdesc](../shortdesc/unlock-home-button-shortdesc.md)]
@@ -39,8 +39,9 @@ With these values, you can do any of the following configurations:
 
 ### Related policies
 
-- [Configure Home Button](../new-policies.md#configure-home-button-include): [!INCLUDE [configure-home-button-shortdesc](../shortdesc/configure-home-button-shortdesc.md)] 
+- [Configure Home Button](../new-policies.md#configure-home-button): [!INCLUDE [configure-home-button-shortdesc](../shortdesc/configure-home-button-shortdesc.md)] 
  
-- [Set Home Button URL](../new-policies.md#set-home-button-url-include): [!INCLUDE [set-home-button-url-shortdesc](../shortdesc/set-home-button-url-shortdesc.md)]
+- [Set Home button URL](../new-policies.md#set-home-button-url): [!INCLUDE [set-home-button-url-shortdesc](../shortdesc/set-home-button-url-shortdesc.md)]
+
 
 <hr>
