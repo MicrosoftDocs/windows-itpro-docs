@@ -32,13 +32,13 @@ SetupDiag works by examining Windows Setup log files. It attempts to parse these
 
 To quickly use SetupDiag on your current computer:
 1. Click [Download SetupDiag](https://go.microsoft.com/fwlink/?linkid=870142).
-2. If your web browser asks what to do with the file, choose **Save**. By default, the file will be saved to your **Downloads** folder.
-3. When SetupDiag has finished downloading, open the **Downloads** folder. If you downloaded the file somewhere else, open that folder instead. 
-4. Double-click the SetupDiag file. Click **Yes** if you are asked to approve running the program. 
+2. If your web browser asks what to do with the file, choose **Save**. By default, the file will be saved to your **Downloads** folder. You can also save it to a different location if desired by using **Save As**.
+3. When SetupDiag has finished downloading, open the folder where you downloaded the file. As mentioned above, by default this is your **Downloads** folder which is displayed in File Explorer under **Quick access** in the left pane.
+4. Double-click the SetupDiag file to run it. Click **Yes** if you are asked to approve running the program. 
 5. A command window will open while SetupDiag diagnoses your computer. Wait for this to finish.
 6. When SetupDiag finishes, two files will be created in the same folder where you double-clicked SetupDiag. One is a configuration file, the other is a log file.
-7. Use Notepad or another text file viewer application to open the log file displaying the current date in the name (ex: SetupDiag_17-Jul-2018.log).
-8. Review the information to discover if any rules were matched that can tell you why the computer failed to upgrade. For an example, see the [Text log sample](#text-log-sample) below.
+7. Use Notepad or another text file viewer application to open the log file (SetupDiagResults.log).
+8. Review the information to discover if any rules were matched that can tell you why the computer failed to upgrade. See the [Text log sample](#text-log-sample) below.
 
 See the [Release notes](#release-notes) section at the bottom of this topic for information about the latest updates to this tool. 
 
