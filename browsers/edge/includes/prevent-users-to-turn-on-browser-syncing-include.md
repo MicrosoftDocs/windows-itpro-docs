@@ -18,29 +18,29 @@
 | --- | --- | --- |
 | 0/disabled or not configured (default) – Turned on; users can make changes | 0/disabled (default) | Microsoft Edge syncs browser settings automatically. |
 | 0/disabled or not configured (default) – Turned on; users can make changes | 1/enabled or not configured | Microsoft Edge syncs browser settings automatically. |
-| 2/enabled – Prevented/turned off | 0/disabled (default) | Prevents syncing of browser setting, but gives users the choice to turn it on. |
-| 2/enabled – Turned off | 1/enabled or not configured | Prevents browser setting sync and prevents users from turning on syncing. |
+| 2/enabled – Prevented/turned off | 0/disabled (default) | Prevent syncing of browser setting but gives users the choice to turn it on. |
+| 2/enabled – Turned off | 1/enabled or not configured | Prevent browser setting sync and prevents users from turning on syncing. |
 | 0/disabled or not configured (default) – Turned on; users can make changes | N/A | Turn on Sync your Settings option by default and allow users to make changes. |
 ---
 
-#### If you want to prevent syncing of browser settings and prevent users from turning it on:
+#### Prevent syncing of browser settings and prevent users from turning it on:
 1. Enable the Do not sync browser settings policy.
 2. Enable or don’t configure this policy (Prevented/turned off).
 
-#### If you want to prevent syncing of browser settings and give users a choice to turn on syncing:
+#### Prevent syncing of browser settings and give users a choice to turn on syncing:
 1. Enable the Do not sync browser settings policy.
 2. Disable this policy (Allowed/turned on).
 
-#### If you want syncing turned off by default but not disabled:
+#### Turn off syncing by default but do not disable:
 1. Enable the Do not sync browser setting policy.
 2. Select the _Allow users to turn “browser” syncing_ option.
 
 ### ADMX info and settings
 #### ADMX info
 - **GP English name:** Prevent users from turning on browser syncing
-- **GP name:** ???
+- **GP name:** PreventUsersFromTurningOnBrowserSyncing
 - **GP path:** Windows Components/Microsoft Edge
-- **GP ADMX file name:** ???.admx
+- **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
 - **MDM name:** Experience/[PreventUsersFromTurningOnBrowserSyncing]()
@@ -49,9 +49,9 @@
 - **Data type:** String
 
 #### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\??? 
-- **Value name:** ???
-- **Value type:** REG_SZ
+- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge 
+- **Value name:** 
+- **Value type:** 
 
 ### Related policies
 [Do not sync browser settings](../available-policies.md#do-not-sync-browser-settings): [!INCLUDE [do-not-sync-browser-settings-shortdesc](../shortdesc/do-not-sync-browser-settings-shortdesc.md)].

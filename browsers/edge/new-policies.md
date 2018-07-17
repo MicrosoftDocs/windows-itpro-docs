@@ -60,9 +60,6 @@ You can find the Microsoft Edge Group Policy settings in the following location 
 ## Prevent certificate error overrides
 [!INCLUDE [prevent-certificate-error-overrides-include.md](includes/prevent-certificate-error-overrides-include.md)]
 
-## Prevent users from turning on browser syncing
-[!INCLUDE [prevent-users-to-turn-on-browser-syncing-include](includes/prevent-users-to-turn-on-browser-syncing-include.md)]
-
 ## Prevent turning off required extensions
 [!INCLUDE [prevent-turning-off-required-extensions-include.md](includes/prevent-turning-off-required-extensions-include.md)]
 
@@ -84,6 +81,9 @@ In addition to the 20 or so new group policies, we added three MDM policies to a
 
 ## DoNotSyncBrowserSetting
 [!INCLUDE [do-not-sync-browser-settings-include](includes/do-not-sync-browser-settings-include.md)]
+
+## PreventUsersFromTurningOnBrowserSyncing
+[!INCLUDE [prevent-users-to-turn-on-browser-syncing-include](includes/prevent-users-to-turn-on-browser-syncing-include.md)]
 
 ## ShowMessageWhenOpeningInteretExplorerSites
 [!INCLUDE [show-message-opening-sites-ie-include](includes/show-message-opening-sites-ie-include.md)]

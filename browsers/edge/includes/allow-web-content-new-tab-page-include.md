@@ -11,8 +11,8 @@
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Not configured |Blank |Blank |Users can choose what loads in the New tab page. | |
-|Disabled |0 |0 |A blank page loads instead of the default New tab page and prevent users from changing it. | |
-|Enabled **(default)** |1 |1 |Default New tab page loads. | |
+|Disabled |0 |0 |Load a blank page instead of the default New tab page and prevents users from changing it. | |
+|Enabled **(default)** |1 |1 |Load the default New tab page. | |
 ---
 
 ### ADMX info and settings
@@ -24,7 +24,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowWebContentOnNewTabPage]()
+- **MDM name:** Browser/[AllowWebContentOnNewTabPage](../new-policies.md#allowwebcontentonnewtabpage)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowWebContentOnNewTabPage 
 - **Data type:** Integer

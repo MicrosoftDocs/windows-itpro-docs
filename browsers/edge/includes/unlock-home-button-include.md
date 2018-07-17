@@ -14,25 +14,9 @@
 
 With these values, you can do any of the following configurations:
 
-#### If you want to show the home button, load the New tab page, and prevent users from making changes to the settings.
-1. **Configure Home Button:** Enable and select the _Show home button & set to New tab page_ option.
-2. **Set Home Button URL:** Leave blank or not configured. 
-3. **Unlock Home Button:** Leave disabled or not configured.
+![Show home button and load Start page or New tab page](../images/home-button-start-new-tab-page.png)
 
-#### If you want to show the home button, load the New tab page, and let users make changes:
-1. **Configure Home Button:** Enable and select the _Show home button & set to New tab page_ option.
-2. **Set Home Button URL:** Leave blank or not configured. 
-3. **Unlock Home Button:** Enable to let users make changes.
-
-#### If you want to show the home button, load a custom URL, and prevent users from making changes:
-1. **Configure Home Button:** Enable and select the _Show the home button & set a specific page_ option.
-2. **Set Home Button URL:** Enter a URL in string format, for example, https://www.bing.com. 
-3. **Unlock Home Button:** Leave disabled or not configured.
-
-#### If you want to show the home button, load a custom URL, and let users make changes:
-1. **Configure Home Button:** Enable and select the _Show the home button & set a specific page_ option.
-2. **Set Home Button URL:** Enter a URL in string format, for example, https://www.bing.com. 
-3. **Unlock Home Button:** Enable to let users make changes.
+![Show home button and load custom URL](../images/home-button-custom-url.png)
 
 
 ### ADMX info and settings
@@ -43,7 +27,7 @@ With these values, you can do any of the following configurations:
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[UnlockHomeButton]()
+- **MDM name:** Browser/[UnlockHomeButton](../new-policies.md#unlock-home-button)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/UnlockHomeButton
 - **Data type:** Integer
@@ -55,8 +39,8 @@ With these values, you can do any of the following configurations:
 
 ### Related policies
 
-- [Configure Home Button](#configure-home-button-include): [!INCLUDE [configure-home-button-shortdesc](../shortdesc/configure-home-button-shortdesc.md)] 
+- [Configure Home Button](../new-policies.md#configure-home-button-include): [!INCLUDE [configure-home-button-shortdesc](../shortdesc/configure-home-button-shortdesc.md)] 
  
-- [Set Home Button URL](#set-home-button-url-include): [!INCLUDE [set-home-button-url-shortdesc](../shortdesc/set-home-button-url-shortdesc.md)]
+- [Set Home Button URL](../new-policies.md#set-home-button-url-include): [!INCLUDE [set-home-button-url-shortdesc](../shortdesc/set-home-button-url-shortdesc.md)]
 
 <hr>

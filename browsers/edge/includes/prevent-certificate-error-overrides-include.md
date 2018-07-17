@@ -1,12 +1,12 @@
 <!-- ## Prevent certificate error overrides -->
->*Supported versions: Microsoft Edge on Windows 10, version 1810*<br>
+>*Supported versions: Microsoft Edge on Windows 10, next major version*<br>
 >*Default setting:  Disabled or not configured (Allowed/turned off)*
 
 [!INCLUDE [prevent-certificate-error-overrides-shortdesc](../shortdesc/prevent-certificate-error-overrides-shortdesc.md)]
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Allowed/turned on. Overrides the security warning to sites that have SSL errors.  | |
+|Disabled or not configured<br>**(default)** |0 |0 |Allowed/turned on. Override the security warning to sites that have SSL errors.  | |
 |Enabled |1 |1 |Prevented/turned on.  |![Most restricted value](../images/check-gn.png) |
 ---
 
@@ -18,7 +18,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[PreventCertErrorOverrides]()
+- **MDM name:** Browser/[PreventCertErrorOverrides](../new-policies.md#prevent-certificate-error-overrides)
 - **Supported devices:** Desktop and Mobile
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventCertErrorOverrides 
 - **Data type:** Integer

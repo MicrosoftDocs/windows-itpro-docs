@@ -17,14 +17,15 @@ ms.date: 07/18/2018
 Microsoft Edge kiosk mode works with assigned access to allow IT, administrators, to create a tailored browsing experience designed for kiosk
 devices. To use Microsoft Edge kiosk mode, you must configure Microsoft Edge as an application in assigned access. Learn more about [Configuring kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc).
 
-When you configure Microsoft Edge kiosk mode in assigned access, you can set it up to show only a single URL in full-screen, in the case of digital/interactive signage on a single-app kiosk device. You can restrict Microsoft Edge for public browsing (on a single and multi-app kiosk device) which runs a multi-tab version of InPrivate with limited functionality. Also, you can configure a multi-app kiosk device to run a full or normal version of Microsoft Edge.
+When you configure Microsoft Edge kiosk mode in assigned access, you can set it up to show only a single URL in full-screen, in the case of digital/interactive signage on a single-app kiosk device. You can restrict Microsoft Edge for public browsing (on a single and multi-app kiosk device) which runs a multi-tab version of InPrivate with limited functionality. Also, you can configure a multi-app kiosk device to run a full or normal version of Microsoft Edge. 
 
 Digital/Interactive signage and public browsing protects the user’s data by running Microsoft Edge InPrivate. In single-app public browsing, there is both an idle timer and an 'End Session' button. The idle timer resets the browsing session after a specified time of user inactivity.
 
+In this deployment guidance, you learn about the different Microsoft Edge kiosk mode types to help you determine what configuration is best suited for your kiosk device.  You also learn how to setup your Microsoft Edge kiosk mode experience.
+
 
 ## Microsoft Edge kiosk types
-
-Windows 10 offers two different kiosk type experiences in assigned access for public and specialized use: single-app kiosk and multi-app kiosk. Microsoft Edge kiosk mode supports **four** types, depending on how a Microsoft Edge kiosk is set up in assigned access.
+Microsoft Edge kiosk mode supports **four** types, depending on how a Microsoft Edge kiosk is set up in assigned access; single-app and multi-app kiosk.
 
 ### Single-app kiosk
 
@@ -32,24 +33,22 @@ When you set up Microsoft Edge kiosk mode in single-app assigned access, Microso
 
 The single-app Microsoft Edge kiosk mode types include:
 
-1. **Digital / Interactive signage** devices display a specific site in full-screen mode where Microsoft Edge runs InPrivate mode. Examples of Digital signage are, a rotating advertisement or menu. Examples of Interactive signage are an interactive museum display or restaurant order/pay station.
+1. **Digital / Interactive signage** devices display a specific site in full-screen mode in which Microsoft Edge runs InPrivate mode. Examples of Digital signage are a rotating advertisement or menu. Examples of Interactive signage are an interactive museum display or restaurant order/pay station.
 
-2. **Public browsing** devices run a limited multi-tab version of InPrivate and are the only app available. Users can’t minimize, close, or open new Microsoft Edge windows or customize Microsoft Edge. Users can clear browsing data, downloads and restart Microsoft Edge by clicking “End session.” You can configure Microsoft Edge to restart after a period of inactivity by using the “Configure kiosk reset after idle timeout” policy. For example, an information kiosk at a public library.
+2. **Public browsing** devices run a limited multi-tab version of InPrivate and are the only app available. Users can’t minimize, close, or open new Microsoft Edge windows or customize Microsoft Edge. Users can clear browsing data, downloads and restart Microsoft Edge by clicking “End session.” You can configure Microsoft Edge to restart after a period of inactivity by using the “Configure kiosk reset after idle timeout” policy. An example usage of this mode is an information kiosk at a public library. 
 
     ![single-app kiosk mode public browsing station](images/single-app-pbs.png)
 
 ### Multi-app kiosk
-
-When you set up Microsoft Edge kiosk mode in multi-app assigned access, Microsoft Edge runs a limited multi-tab version of InPrivate or a normal
-browsing version. For more details about running a multi-app kiosk, or fixed-purpose device, see [Set up a multi-app kiosk](https://aka.ms/Ckmq4n). Here you learn how to create kiosks that run more than one app and the benefits of a multi-app kiosk, or fixed-purpose device.
+When you set up Microsoft Edge kiosk mode in multi-app assigned access, Microsoft Edge runs a limited multi-tab version of InPrivate or a normal browsing version.  For more details about running a multi-app kiosk, or fixed-purpose device, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps). Here you learn how to create kiosks that run more than one app and the benefits of a multi-app kiosk, or fixed-purpose device.
 
 The multi-app Microsoft Edge kiosk mode types include:
 
-3.  **Public browsing** (shared browsing) supports browsing the internet and runs InPrivate with minimal features available. In this configuration, Microsoft Edge can be one of many apps available. Users can minimize, close, and open multiple InPrivate windows. On a multi-app kiosk device, Microsoft Edge can interact with other applications. For example, users can install extensions from Microsoft Store if Microsoft Store is set up in assigned access. You can enable Enterprise Mode to automatically switch users to Internet Explorer 11 for sites that need backward compatibility support.
+3.  **Public browsing** (shared browsing) supports browsing the internet and runs InPrivate with minimal features available. In this configuration, Microsoft Edge can be one of many apps available. Users can, close and open multiple InPrivate windows. On a multi-app kiosk device, Microsoft Edge can interact with other applications. For example, users can install extensions from Microsoft Store if Microsoft Store is set up in assigned access. You can enable Enterprise Mode to automatically switch users to Internet Explorer 11 for sites that need backward compatibility support.
 
     ![multi-app public browsing station](images/multi-app-pbs.png)
 
-4.  **Normal mode** runs a full version of Microsoft Edge, but some features may not work depending on what other apps you configured in assigned access. For example, if the Microsoft Store is not set up, users cannot install extensions. If the user logs in with an MSA, their browsing data will roam with them. If you also have Internet Explorer 11 set up in assigned access; you can enable Enterprise Mode to automatically switch users to Internet Explorer 11 for sites that need backward compatibility support.
+4.  **Normal mode** mode runs a full version of Microsoft Edge, but some features may not work depending on what other apps you configured in assigned access. For example, if the Microsoft Store is not set up, users cannot install extensions. If you also have Internet Explorer 11 set up in assigned access, you can enable Enterprise Mode to automatically switch users to Internet Explorer 11 for sites that need backward compatibility support. 
 
     ![normal mode kiosk app](images/normal-mode.png)
 
@@ -57,7 +56,7 @@ The multi-app Microsoft Edge kiosk mode types include:
 
 Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Edge in assigned access. You can set up Microsoft Edge kiosk mode in assigned access using:
 
--   **Windows Settings.** Best for physically setting up a single device as a kiosk. With this method, you set up assigned access and configure the kiosk or digital sign device using Settings. You can configure Microsoft Edge in single-app (kiosk type – Full-screen or public browsing) and define a single URL for the Home Button, Start Page and New Tab page. You can also set the reset after idle timeout. 
+-   **Windows Settings.** Best for physically setting up a single device as a kiosk. With this method, you set up assigned access and configure the kiosk or digital sign device using Settings.  You can configure Microsoft Edge in single-app (kiosk type – Full-screen or public browsing) and define a single URL for the Home Button, Start Page and New Tab page. You can also set the reset after idle timeout.
 
 -   **Microsoft Intune or other MDM service.** Best for setting up multiple devices as a kiosk. With this method, you configure Microsoft Edge in assigned access and configure how Microsoft Edge behaves when it’s running in kiosk mode with assigned access.
 
@@ -94,9 +93,9 @@ Windows Settings is the simplest and easiest way to set up one or a couple of de
 
 8.  Select how Microsoft Edge displays when running in kiosk mode:
 
-    - **As a digital sign or interactive display,** the default URL shows in full screen, without browser controls.
+    - **As a digital sign or interactive display**, the default URL shows in full screen, without browser controls.
 
-    - **As a public browser,** the default URL shows in a browser view with limited browser controls.
+    - **As a public browser**, the default URL shows in a browser view with limited browser controls.
 
 9.  Select **Next**.
 
@@ -105,11 +104,11 @@ Windows Settings is the simplest and easiest way to set up one or a couple of de
     >[!NOTE]
     >The URL sets the Home button, Start page, and New tab page.
 
-11.  Microsoft Edge in kiosk mode has a built-in timer to help keep data safe in public browsing sessions.<p>When the idle time (no user activity) meets the time limit, a confirmation message prompts the user to continue; if **Continue** is not selected, Microsoft Edge resets to the default URL. Accept the default value of **5 minutes,** or you can choose your own idle timer value.
+11.  Microsoft Edge in kiosk mode has a built-in timer to help keep data safe in public browsing sessions.<p>When the idle time (no user activity) meets the time limit, a confirmation message prompts the user to continue. If **Continue** is not selected, Microsoft Edge resets to the default URL. You can accept the default value of **5 minutes,** or you can choose your own idle timer value.
 
 12.  Select **Next**, and then select **Close**.
 
-13.  Close **Settings** to save your choices automatically and apply them the next time the user accounts logs on.
+13.  Close **Settings** to save your choices automatically and apply them the next time the user account logs on.
 
 14.  Configure the policies for Microsoft Edge kiosk mode. For details on the valid kiosk policy settings, see [Related policies](#related-policies).
 
@@ -129,20 +128,20 @@ Windows Settings is the simplest and easiest way to set up one or a couple of de
 
 ### Use Microsoft Intune or other MDM service
 
-With this method, you can use Microsoft Intune or other MDM services to configure Microsoft Edge in assigned access and how it behaves when it’s running in assigned access.
+With this method, you can use Microsoft Intune or other MDM services to configure Microsoft Edge in assigned access and how it behaves when it’s running in assigned access. 
 
-1.  In Microsoft Intune or other MDM service, configure AssignedAccess to prevent users from accessing the file system, running executables, or other apps.
+1.  In Microsoft Intune or other MDM service, configure [AssignedAccess](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) to prevent users from accessing the file system, running executables, or other apps.
 
 2.  Configure the following MDM settings to control a web browser app on the kiosk device.
 
     |   |   |
     |---|---|
-    | **[ConfigureKioskMode](new-policies.md#configure-kiosk-mode)**<p>![](images/icon-thin-line-computer.png) | Configure the display mode for Microsoft Edge as a kiosk app.<p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureKioskMode<p>**Data type:**  Integer<p>**Allowed values:**<ul><li>**Single-app kiosk experience**<ul><li>**0** - Digital signage and interactive display</li><li>**1** - InPrivate Public browsing</li></ul></li><li>**Multi-app kiosk experience**<ul><li>**0** - Normal Microsoft Edge running in assigned access</li><li>**1** - InPrivate public browsing with other apps</li></ul></li></ul> |
-    | **[ConfigureKioskResetAfterIdleTimeout](new-policies.md#configure-kiosk-reset-after-idle-timeout)**<p>![](images/icon-thin-line-computer.png) | Change the time in minutes from the last user activity before Microsoft Edge kiosk mode resets to the default kiosk configuration.<p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureKioskResetAfterIdleTimeout<p>**Data type:** Integer<p>**Allowed values:**<ul><li>**0** - No idle timer</li><li>**1-1440 (5 minutes is the default)** - Set reset on idle timer</li></ul>  |
-    | **[HomePages](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-homepages)**<p>![](images/icon-thin-line-computer.png)  | Set one or more start pages, URLs, to load when Microsoft Edge launches.<p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/HomePages<p>**Data type:** String<p>**Allowed values:**<p>Enter one or more URL, for example,<br>&nbsp;&nbsp;&nbsp;\<https://www.msn.com\>\<https:/www.bing.com\>  |
-    | **[ConfigureHomeButton](new-policies.md#configure-home-button)**<p>![](images/icon-thin-line-computer.png)  | Configure how the Home Button behaves.<p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureHomeButton<p>**Data type:** Integer<p> **Allowed values:**<ul><li>**0 (default)** - Not configured. Show home button, and load the default Start page.</li><li>**1** - Enabled. Show home button and load New tab page</li><li>**2** - Enabled. Show home button & set a specific page.</li><li>**3** - Enabled. Hide the home button.</li></ul>   |
-    | ** [SetNewTabPageURL](new-policies.md#set-new-tab-page-url)**<p>![](images/icon-thin-line-computer.png)   | Set a custom URL for the New tab page.<p> **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.msn.com      |
-    | **[SetHomeButtonURL](new-policies.md#set-home-button-url)**<p>![](images/icon-thin-line-computer.png)    | If you set ConfigureHomeButton to 2, configure the home button URL.<p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.bing.com    |
+    | **[ConfigureKioskMode](new-policies.md#configure-kiosk-mode)**<p>![](images/icon-thin-line-computer.png) | Configure the display mode for Microsoft Edge as a kiosk app.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureKioskMode<p>**Data type:**  Integer<p>**Allowed values:**<ul><li>**Single-app kiosk experience**<ul><li>**0** - Digital signage and interactive display</li><li>**1** - InPrivate Public browsing</li></ul></li><li>**Multi-app kiosk experience**<ul><li>**0** - Normal Microsoft Edge running in assigned access</li><li>**1** - InPrivate public browsing with other apps</li></ul></li></ul> |
+    | **[ConfigureKioskResetAfterIdleTimeout](new-policies.md#configure-kiosk-reset-after-idle-timeout)**<p>![](images/icon-thin-line-computer.png) | Change the time in minutes from the last user activity before Microsoft Edge kiosk mode resets to the default kiosk configuration.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureKioskResetAfterIdleTimeout<p>**Data type:** Integer<p>**Allowed values:**<ul><li>**0** - No idle timer</li><li>**1-1440 (5 minutes is the default)** - Set reset on idle timer</li></ul>  |
+    | **[HomePages](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-homepages)**<p>![](images/icon-thin-line-computer.png)  | Set one or more start pages, URLs, to load when Microsoft Edge launches.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/HomePages<p>**Data type:** String<p>**Allowed values:**<p>Enter one or more URL, for example,<br>&nbsp;&nbsp;&nbsp;\<https://www.msn.com\>\<https:/www.bing.com\>  |
+    | **[ConfigureHomeButton](new-policies.md#configure-home-button)**<p>![](images/icon-thin-line-computer.png)  | Configure how the Home Button behaves.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureHomeButton<p>**Data type:** Integer<p> **Allowed values:**<ul><li>**0 (default)** - Not configured. Show home button, and load the default Start page.</li><li>**1** - Enabled. Show home button and load New tab page</li><li>**2** - Enabled. Show home button & set a specific page.</li><li>**3** - Enabled. Hide the home button.</li></ul>   |
+    | ** [SetNewTabPageURL](new-policies.md#set-new-tab-page-url)**<p>![](images/icon-thin-line-computer.png)   | Set a custom URL for the New tab page.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.msn.com      |
+    | **[SetHomeButtonURL](new-policies.md#set-home-button-url)**<p>![](images/icon-thin-line-computer.png)    | If you set ConfigureHomeButton to 2, configure the home button URL.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.bing.com    |
     ---
 
 3.  Restart the device and sign in using the kiosk app user account.
@@ -153,7 +152,7 @@ With this method, you can use Microsoft Intune or other MDM services to configur
 
 ### Use a provisioning package 
 
-With this method, you can use a provisioning package to configure Microsoft Edge in assigned access. After you set up the provisioning package for configuring Microsoft Edge in assigned access, you configure how Microsoft Edge behaves when it’s running in kiosk mode with assigned access.
+With this method, you can use a provisioning package to configure Microsoft Edge in assigned access. After you set up the provisioning package for configuring Microsoft Edge in assigned access, you configure how Microsoft Edge behaves when it’s running in kiosk mode with assigned access. 
 
 1.  Open Windows Configuration Designer to create a provisioning package and configure Microsoft Edge in assigned access.
 
@@ -163,12 +162,12 @@ With this method, you can use a provisioning package to configure Microsoft Edge
 
     |   |   |
     |---|---|
-    | **[ConfigureKioskMode](new-policies.md#configure-kiosk-mode)**<p>![](images/icon-thin-line-computer.png) | Configure the display mode for Microsoft Edge as a kiosk app.<p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureKioskMode<p>**Data type:**  Integer<p>**Allowed values:**<ul><li>**Single-app kiosk experience**<ul><li>**0** - Digital signage and interactive display</li><li>**1** - InPrivate Public browsing</li></ul></li><li>**Multi-app kiosk experience**<ul><li>**0** - Normal Microsoft Edge running in assigned access</li><li>**1** - InPrivate public browsing with other apps</li></ul></li></ul> |
-    | **[ConfigureKioskResetAfterIdleTimeout](new-policies.md#configure-kiosk-reset-after-idle-timeout)**<p>![](images/icon-thin-line-computer.png) | Change the time in minutes from the last user activity before Microsoft Edge kiosk mode resets to the default kiosk configuration.<p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureKioskResetAfterIdleTimeout<p>**Data type:** Integer<p>**Allowed values:**<ul><li>**0** - No idle timer</li><li>**1-1440 (5 minutes is the default)** - Set reset on idle timer</li></ul>  |
-    | **[HomePages](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-homepages)**<p>![](images/icon-thin-line-computer.png)  | Set one or more start pages, URLs, to load when Microsoft Edge launches.<p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/HomePages<p>**Data type:** String<p>**Allowed values:**<p>Enter one or more URL, for example,<br>&nbsp;&nbsp;&nbsp;\<https://www.msn.com\>\<https:/www.bing.com\>  |
-    | **[ConfigureHomeButton](new-policies.md#configure-home-button)**<p>![](images/icon-thin-line-computer.png)  | Configure how the Home Button behaves.<p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureHomeButton<p>**Data type:** Integer<p> **Allowed values:**<ul><li>**0 (default)** - Not configured. Show home button, and load the default Start page.</li><li>**1** - Enabled. Show home button and load New tab page</li><li>**2** - Enabled. Show home button & set a specific page.</li><li>**3** - Enabled. Hide the home button.</li></ul>   |
-    | **[SetNewTabPageURL](new-policies.md#set-new-tab-page-url)**<p>![](images/icon-thin-line-computer.png)   | Set a custom URL for the New tab page.<p> **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.msn.com      |
-    | **[SetHomeButtonURL](new-policies.md#set-home-button-url)**<p>![](images/icon-thin-line-computer.png)    | If you set ConfigureHomeButton to 2, configure the home button URL.<p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.bing.com    |
+    | **[ConfigureKioskMode](new-policies.md#configure-kiosk-mode)**<p>![](images/icon-thin-line-computer.png) | Configure the display mode for Microsoft Edge as a kiosk app.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureKioskMode<p>**Data type:**  Integer<p>**Allowed values:**<ul><li>**Single-app kiosk experience**<ul><li>**0** - Digital signage and interactive display</li><li>**1** - InPrivate Public browsing</li></ul></li><li>**Multi-app kiosk experience**<ul><li>**0** - Normal Microsoft Edge running in assigned access</li><li>**1** - InPrivate public browsing with other apps</li></ul></li></ul> |
+    | **[ConfigureKioskResetAfterIdleTimeout](new-policies.md#configure-kiosk-reset-after-idle-timeout)**<p>![](images/icon-thin-line-computer.png) | Change the time in minutes from the last user activity before Microsoft Edge kiosk mode resets to the default kiosk configuration.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureKioskResetAfterIdleTimeout<p>**Data type:** Integer<p>**Allowed values:**<ul><li>**0** - No idle timer</li><li>**1-1440 (5 minutes is the default)** - Set reset on idle timer</li></ul>  |
+    | **[HomePages](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-homepages)**<p>![](images/icon-thin-line-computer.png)  | Set one or more start pages, URLs, to load when Microsoft Edge launches.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/HomePages<p>**Data type:** String<p>**Allowed values:**<p>Enter one or more URL, for example,<br>&nbsp;&nbsp;&nbsp;\<https://www.msn.com\>\<https:/www.bing.com\>  |
+    | **[ConfigureHomeButton](new-policies.md#configure-home-button)**<p>![](images/icon-thin-line-computer.png)  | Configure how the Home Button behaves.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureHomeButton<p>**Data type:** Integer<p> **Allowed values:**<ul><li>**0 (default)** - Not configured. Show home button, and load the default Start page.</li><li>**1** - Enabled. Show home button and load New tab page</li><li>**2** - Enabled. Show home button & set a specific page.</li><li>**3** - Enabled. Hide the home button.</li></ul>   |
+    | ** [SetNewTabPageURL](new-policies.md#set-new-tab-page-url)**<p>![](images/icon-thin-line-computer.png)   | Set a custom URL for the New tab page.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.msn.com      |
+    | **[SetHomeButtonURL](new-policies.md#set-home-button-url)**<p>![](images/icon-thin-line-computer.png)    | If you set ConfigureHomeButton to 2, configure the home button URL.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.bing.com    |
     ---
 
 4.  After you’ve configured the Microsoft Edge kiosk mode policies, including any of the related policies, it’s time to build the package.
@@ -181,33 +180,11 @@ With this method, you can use a provisioning package to configure Microsoft Edge
 
 **_Next steps._** Use your new kiosk. Sign in to the device using the user account that you selected to run the kiosk app.
 
-## Feature comparison of kiosk mode and kiosk browser app
-
-In the following table, we show you the features available in both Microsoft Edge kiosk mode and Kiosk Browser app available in Microsoft Store. Both kiosk mode and kiosk browser app work in assigned access.
-
-| **Feature**   | **Microsoft Edge kiosk mode**  | **Kiosk Browser**    |
-|---------------|:----------------:|:---------------:|
-| Print support   | ![Supported](images/148767.png)   | ![Not supported](images/148766.png)   |
-| Multi-tab support    | ![Supported](images/148767.png)   | ![Not supported](images/148766.png)   |
-| Allow URL support    | ![Supported](images/148767.png) <p>*\*For Microsoft Edge kiosk mode use* [Windows Defender Firewall](#_*Windows_Defender_Firewall)*. Microsoft kiosk browser has custom policy support.* | ![Supported](images/148767.png)  |
-| Block URL support    | ![Supported](images/148767.png)<p>*\*For Microsoft Edge kiosk mode use* [Windows Defender Firewall](#_*Windows_Defender_Firewall)*. Microsoft kiosk browser has custom policy support.* | ![Supported](images/148767.png)     |
-| Configure Home button   | ![Supported](images/148767.png)   | ![Supported](images/148767.png)      |
-| Set Start page(s) URL    | ![Supported](images/148767.png)      | ![Supported](images/148767.png) <p>*Same as Home button URL*     |
-| Set New Tab page URL  | ![Supported](images/148767.png)    | ![Not supported](images/148766.png)   |
-| Favorites management     | ![Supported](images/148767.png)     | ![Not supported](images/148766.png) |
-| End session button    | ![Supported](images/148767.png)   | ![Supported](images/148767.png)<p>*In Intune, must create custom URI to enable. Dedicated UI configuration targeted for 1808.* |
-| Reset on inactivity  | ![Supported](images/148767.png) | ![Supported](images/148767.png)   |
-| Internet Explorer integration (Enterprise Mode site list) | ![Supported](images/148767.png)<p>*Multi-app mode only*  | ![Not supported](images/148766.png)     |
----
-
-### \*Windows Defender Firewall
-To prevent unwanted websites, use Windows Defender Firewall to configure a list of allowed websites or blocked websites or both. For more details, see [Windows Defender Firewall with Advanced Security Deployment](https://docs.microsoft.com/en-us/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide).
-
 ## Related policies
 
 You can use any of the following policies to enhance the kiosk experience.  To learn more about these policies, see [Policy CSP - Browser](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser).
 
-| **MDM Setting**  | **Digital /<br>Interactive signage** | **Public browsing<br>single-app** | **Public browsing<br>multi-app**   | **Normal**   |
+| **MDM Setting**  | **Digital /<br>Interactive signage** | **Public browsing<br>single-app** | **Public browsing<br>multi-app**   | **Normal<br>mode**   |
 |------------------|:---------:|:---------:|:---------:|:---------:|
 | [AllowAddressBarDropdown](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowaddressbardropdown)    | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
 | [AllowAutofill](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowautofill)                                                          | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
@@ -221,13 +198,13 @@ You can use any of the following policies to enhance the kiosk experience.  To l
 | [AllowFlashClickToRun](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowflashclicktorun)                                                   | ![Supported](images/148767.png)     | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
 | [AllowFullscreen](new-policies.md#allow-fullscreen-mode)\*                                                   | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
 | [AllowInPrivate](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowinprivate)                                                         | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
-| [AllowMicrosoftCompatibilityList](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowmicrosoftcompatibilitylist)                                        | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Supported](images/148767.png) \* | ![Supported](images/148767.png)   |
+| [AllowMicrosoftCompatibilityList](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowmicrosoftcompatibilitylist)                                        | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)\** | ![Supported](images/148767.png)   |
 | [AllowPasswordManager](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowpasswordmanager)                                                   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
 | [AllowPopups](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowpopups)                                                            | ![Not supported](images/148766.png) ? | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
 | [AllowPrelaunch](new-policies.md#allow-prelaunch)\*                                                       | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
 | [AllowPrinting](new-policies.md#allow-printing)\*                                                        | ![Supported](images/148767.png)     | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
 | [AllowSavingHistory](new-policies.md#allow-saving-history)\*                                                   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
-| AllowSearchEngineCustomization                                         | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
+| [AllowSearchEngineCustomization](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsearchenginecustomization)                                         | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
 | [AllowSearchSuggestionsinAddressBar](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsearchenginecustomization)                                     | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
 | [AllowSideloadingOfExtensions](new-policies.md#allow-sideloading-of-extensions)\*                                         | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
 | [AllowSmartScreen](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen)                                                       | ![Supported](images/148767.png)     | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
@@ -244,9 +221,9 @@ You can use any of the following policies to enhance the kiosk experience.  To l
 | [ConfigureOpenMicrosoftEdgeWith](new-policies.md#configure-open-microsoft-edge-with)\*                                       | ![Supported](images/148767.png)     | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
 | [ConfigureTelemetryForMicrosoft365Analytics](new-policies.md#configure-collection-of-browsing-data-for-microsoft-365-analytics)\*                           | ![Supported](images/148767.png)     | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
 | [DisableLockdownOfStartPages](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-disablelockdownofstartpages)                                            | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
-| [DoNotSyncBrowserSetting](new-policies.md#donotsyncbrowsersetting)\* & [!INCLUDE [PreventUsersFromTurningOnBrowserSyncing](includes/prevent-users-to-turn-on-browser-syncing-include.md)]\* | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png) ?  | ![Supported](images/148767.png)   |
+| [DoNotSyncBrowserSetting](new-policies.md#donotsyncbrowsersetting)\* and  [PreventUsersFromTurningOnBrowserSyncing](new-policies.md#prevent-users-from-turning-on-browser-syncing)\* | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png) ?  | ![Supported](images/148767.png)   |
 | [EnableExtendedBooksTelemetry](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-enableextendedbookstelemetry)                                           | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
-| [EnterpriseModeSiteList](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-enterprisemodesitelist)                                                 | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Supported](images/148767.png) \* | ![Supported](images/148767.png)   |
+| [EnterpriseModeSiteList](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-enterprisemodesitelist)                                                 | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)\** | ![Supported](images/148767.png)   |
 | [FirstRunURL](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-firstrunurl)                                                            | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Not supported](images/148766.png) |
 | [HomePages](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-homepages)                                                              | ![Supported](images/148767.png)     | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
 | [LockdownFavorites](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-lockdownfavorites)                                                      | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
@@ -259,12 +236,12 @@ You can use any of the following policies to enhance the kiosk experience.  To l
 | [PreventTurningOffRequiredExtensions](new-policies.md#prevent-turning-off-required-extensions)\*                                  | ![Supported](images/148767.png)     | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
 | [PreventUsingLocalHostIPAddressForWebRTC](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-preventusinglocalhostipaddressforwebrtc)                               | ?                                            | ?                                            | ?                                             | ![Supported](images/148767.png)   |
 | [ProvisionFavorites](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-provisionfavorites)                                                     | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
-| [SendIntranetTraffictoInternetExplorer](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-sendintranettraffictointernetexplorer)                                  | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ?\*                                           | ![Supported](images/148767.png)   |
+| [SendIntranetTraffictoInternetExplorer](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-sendintranettraffictointernetexplorer)                                  | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)\**         | ![Supported](images/148767.png)   |
 | [SetDefaultSearchEngine](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-setdefaultsearchengine)                                                 | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
 | [SetHomeButtonURL](new-policies.md#set-home-button-url)\*                                                     | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
 | [SetNewTabPageURL](new-policies.md#set-new-tab-page-url)\*                                                     | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
-| [ShowMessageWhenOpeningInteretExplorerSites](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-showmessagewhenopeningsitesininternetexplorer)                             | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)     | ![Supported](images/148767.png) \* | ![Supported](images/148767.png)   |
-| [SyncFavoritesBetweenIEAndMicrosoftEdge](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-syncfavoritesbetweenieandmicrosoftedge)                                 | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Supported](images/148767.png) ?  | ![Supported](images/148767.png)   |
+| [ShowMessageWhenOpeningInteretExplorerSites](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-showmessagewhenopeningsitesininternetexplorer)                             | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)     | ![Supported](images/148767.png)\** | ![Supported](images/148767.png)   |
+| [SyncFavoritesBetweenIEAndMicrosoftEdge](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-syncfavoritesbetweenieandmicrosoftedge)                                 | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)\**  | ![Supported](images/148767.png)   |
 | [UnlockHomeButton](new-policies.md#unlock-home-button)\*                                                     | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
 | [UseSharedFolderForBooks](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-usesharedfolderforbooks)                                               | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
 ---
@@ -290,6 +267,13 @@ You can use any of the following policies to enhance the kiosk experience.  To l
     - **Actual behavior** – Books are accessible in _Settings and more_ menu.
 
 
+## Provide feedback or get support
+
+To provide feedback on Microsoft Edge kiosk mode in Feedback Hub, select **Microsoft Edge** as the  **Category**, and **All other issues** as the
+subcategory. 
+
+**_For multi-app kiosk only._** If you have set up the Feedback Hub in assigned access, you can you submit the feedback from the device running Microsoft Edge in kiosk mode in which you can include diagnostic logs. In the Feedback Hub, select **Microsoft Edge** as the **Category**, and **All other issues** as the subcategory.
+
 ## Related topics
 
 -   **[Create a Kiosk Experience](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/create-a-kiosk-image):** Learn how to set up single-function kiosk devices, such as restaurant menus, and optional features for a welcome screen or power button availability. Also, learn how to create a multi-app kiosk, or fixed-purpose device, to provide an easy-to-understand experience giving users the things they need to use.
@@ -308,14 +292,26 @@ You can use any of the following policies to enhance the kiosk experience.  To l
 
 -   **[Create a provisioning page for Windows 10](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package):*. Learn to use Windows Configuration Designer (WCD) to create a provisioning package (.ppkg) for configuring devices running Windows 10. The WCD wizard options provide a simple interface to configure desktop, mobile, and kiosk device settings.
 
+## Feature comparison of kiosk mode and kiosk browser app
 
+In the following table, we show you the features available in both Microsoft Edge kiosk mode and Kiosk Browser app available in Microsoft Store. Both kiosk mode and kiosk browser app work in assigned access.
 
-## Provide feedback or get support
+| **Feature**   | **Microsoft Edge kiosk mode**  | **Kiosk Browser**    |
+|---------------|:----------------:|:---------------:|
+| Print support   | ![Supported](images/148767.png)   | ![Not supported](images/148766.png)   |
+| Multi-tab support    | ![Supported](images/148767.png)   | ![Not supported](images/148766.png)   |
+| Allow URL support    | ![Supported](images/148767.png) <p>*\*For Microsoft Edge kiosk mode use* [Windows Defender Firewall](#_*Windows_Defender_Firewall)*. Microsoft kiosk browser has custom policy support.* | ![Supported](images/148767.png)  |
+| Block URL support    | ![Supported](images/148767.png)<p>*\*For Microsoft Edge kiosk mode use* [Windows Defender Firewall](#_*Windows_Defender_Firewall)*. Microsoft kiosk browser has custom policy support.* | ![Supported](images/148767.png)     |
+| Configure Home button   | ![Supported](images/148767.png)   | ![Supported](images/148767.png)      |
+| Set Start page(s) URL    | ![Supported](images/148767.png)      | ![Supported](images/148767.png) <p>*Same as Home button URL*     |
+| Set New Tab page URL  | ![Supported](images/148767.png)    | ![Not supported](images/148766.png)   |
+| Favorites management     | ![Supported](images/148767.png)     | ![Not supported](images/148766.png) |
+| End session button    | ![Supported](images/148767.png)   | ![Supported](images/148767.png)<p>*In Intune, must create custom URI to enable. Dedicated UI configuration targeted for 1808.* |
+| Reset on inactivity  | ![Supported](images/148767.png) | ![Supported](images/148767.png)   |
+| Internet Explorer integration (Enterprise Mode site list) | ![Supported](images/148767.png)<p>*Multi-app mode only*  | ![Not supported](images/148766.png)     |
+---
 
-To provide feedback on Microsoft Edge kiosk mode in Feedback Hub, select **Microsoft Edge** as the  **Category**, and **All other issues** as the
-subcategory. 
-
-*For multi-app kiosk only.* If you have set up the Feedback Hub in assigned access, you can you submit the feedback from the device running Microsoft Edge in kiosk mode in which you can include diagnostic logs. In the Feedback Hub, select **Microsoft Edge** as the **Category**, and **All other issues** as the
-subcategory.
+### \*Windows Defender Firewall
+To prevent unwanted websites, use Windows Defender Firewall to configure a list of allowed websites or blocked websites or both. For more details, see [Windows Defender Firewall with Advanced Security Deployment](https://docs.microsoft.com/en-us/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide).
 
 ---

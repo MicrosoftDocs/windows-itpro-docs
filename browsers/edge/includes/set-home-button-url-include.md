@@ -8,7 +8,7 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |Blank |Blank |Microsoft Edge shows the home button and loads the Start page, and locks down the home button to prevent users from changing what page loads. | |
+|Disabled or not configured<br>**(default)** |Blank |Blank |Show the home button and loads the Start page and locks down the home button to prevent users from changing what page loads. | |
 |Enabled - String |String |String |Enter a URL in string format, for example, https://www.msn.com. A custom URL loads when clicking the home button.  You must also enable the [Configure Home Button](../new-policies.md#configure-home-button) policy and select the _Show home button & set a specific page_ option.  | |
 ---
 
@@ -39,7 +39,7 @@ Enable the **Configure Home Button** policy and select the _Hide home button_ op
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[SetHomeButtonURL]()
+- **MDM name:** Browser/[SetHomeButtonURL](../new-policies.md#set-home-button-url)
 - **Supported devices:** Desktop and Mobile
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetHomeButtonURL 
 - **Data type:** Integer
