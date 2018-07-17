@@ -2,6 +2,8 @@
 
 ##[New Microsoft Edge Group Policies and MDM settings](new-policies.md)
 
+##[Deploy Microsoft Edge kiosk mode](microsoft-edge-kiosk-mode-deploy.md)
+
 ##[Change history for Microsoft Edge](change-history-for-microsoft-edge.md)
 
 ##[Enterprise guidance about using Microsoft Edge and Internet Explorer 11](enterprise-guidance-using-microsoft-edge-and-ie11.md)
