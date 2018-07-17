@@ -1,5 +1,5 @@
-<!-- ## Allow printing  -->
->*Supported versions: Microsoft Edge on Windows 10, next major version*<br>
+<!-- ## Allow printing  
+>*Supported versions: Microsoft Edge on Windows 10, next major version*<br> -->
 >*Default setting:  Enabled or not configured (Allowed)*
 
 [!INCLUDE [allow-printing-shortdesc](../shortdesc/allow-printing-shortdesc.md)]

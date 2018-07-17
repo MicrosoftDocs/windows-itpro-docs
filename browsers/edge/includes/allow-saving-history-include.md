@@ -1,5 +1,5 @@
-<!-- ## Allow Saving History -->
->*Supported versions: Microsoft Edge on Windows 10, next major version*<br>
+<!-- ## Allow Saving History 
+>*Supported versions: Microsoft Edge on Windows 10, next major version*<br> -->
 >*Default setting:  Enabled or not configured (Allowed)*
 
 [!INCLUDE [allow-saving-history-shortdesc](../shortdesc/allow-saving-history-shortdesc.md)]

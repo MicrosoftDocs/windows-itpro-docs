@@ -1,5 +1,5 @@
-<!-- ## Set Home Button URL -->
->*Supported versions: Microsoft Edge on Windows 10, next major version*<br>
+<!-- ## Set Home Button URL
+>*Supported versions: Microsoft Edge on Windows 10, next major version*<br> -->
 >*Default setting: Disabled or not configured (Blank)*
 
 [!INCLUDE [set-home-button-url-shortdesc](../shortdesc/set-home-button-url-shortdesc.md)]

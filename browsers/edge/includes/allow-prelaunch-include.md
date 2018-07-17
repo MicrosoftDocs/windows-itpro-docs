@@ -1,6 +1,6 @@
 
-<!-- Allow Prelaunch -->
->*Supported versions: Microsoft Edge on Windows 10, next major version*<br> 
+<!-- Allow Prelaunch 
+>*Supported versions: Microsoft Edge on Windows 10, next major version*<br>  -->
 >*Default setting:  Enabled or not configured (Allowed)*
 
 [!INCLUDE [allow-prelaunch-shortdesc](../shortdesc/allow-prelaunch-shortdesc.md)]

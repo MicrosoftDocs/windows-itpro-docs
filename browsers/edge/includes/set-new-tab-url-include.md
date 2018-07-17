@@ -1,5 +1,5 @@
-<!-- ## Set New Tab page URL -->
->*Supported versions: Microsoft Edge on Windows 10, next major version*<br>
+<!-- ## Set New Tab page URL
+>*Supported versions: Microsoft Edge on Windows 10, next major version*<br> -->
 >*Default setting:  Disabled or not configured (Blank)*
 
 [!INCLUDE [set-new-tab-url-shortdesc](../shortdesc/set-new-tab-url-shortdesc.md)]

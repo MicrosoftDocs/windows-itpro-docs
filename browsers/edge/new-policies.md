@@ -13,7 +13,7 @@ ms.date: 07/18/2018
 
 # New Microsoft Edge Group Policies and MDM settings (Preview Build 17718)
 
-> Applies to: Microsoft Edge on Windows 10 and Windows 10 Mobile
+> Applies to: Microsoft Edge on Windows 10 and Windows 10 Mobile, next major release
 
 The Microsoft Edge team introduces new Group Policies and MDM Settings for IT administrators to configure Microsoft Edge. The new policies allow you to enable/disabled full-screen mode, printing, favorites bar, saving history. You can also prevent certificate error overrides, and configure New tab page, Home button and startup options, as well as manage extensions.
 
