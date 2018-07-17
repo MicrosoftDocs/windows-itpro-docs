@@ -34,7 +34,7 @@
 [Allow Developer Tools](../available-policies.md#allow-developer-tools): [!INCLUDE [allow-developer-tools-shortdesc](../shortdesc/allow-developer-tools-shortdesc.md)]
 
 
-### Related documents
+### Related topics
 
 - [Find a package family name (PFN) for per-app VPN](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn): There are two ways to find a PFN so that you can configure a per-app VPN.
 - [How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune](https://docs.microsoft.com/en-us/intune/windows-store-for-business): The Microsoft Store for Business gives you a place to find and purchase apps for your organization, individually, or in volume. By connecting the store to Microsoft Intune, you can manage volume-purchased apps from the Azure portal. 

@@ -31,7 +31,7 @@
 - **Value name:** AllowConfigurationUpdateForBooksLibrary 
 - **Value type:** REG_DWORD
 
-### Related documents
+### Related topics
 
 [Manage connections from Windows operating system components to Microsoft services](https://docs.microsoft.com/en-us/windows/configuration/manage-connections-from-windows-operating-system-components-to-microsoft-services)
 

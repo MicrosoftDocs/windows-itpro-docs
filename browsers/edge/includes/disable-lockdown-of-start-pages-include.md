@@ -114,7 +114,7 @@
 - [Configure Open Microsoft Edge With](../new-policies.md#configure-open-microsoft-edge-with): [!INCLUDE [configure-open-microsoft-edge-with-shortdesc](../shortdesc/configure-open-microsoft-edge-with-shortdesc.md)]
 
 
-### Related documents
+### Related topics
 
 [Microsoft browser extension policy](aka.ms/browser policy)
 

@@ -17,7 +17,7 @@ ms.date: 07/18/2018
 
 The Microsoft Edge team introduces new Group Policies and MDM Settings for IT administrators to configure Microsoft Edge. The new policies include enabling/disabling full-screen mode, printing, favorites bar, saving history; prevent certificate error overrides; configure New Tab page, the  Home button, startup options, and managing extensions.
 
-You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:<p>&nbsp;&nbsp;&nbsp;Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge\
+You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge\
 
 <!-- RS5 policies -->
 

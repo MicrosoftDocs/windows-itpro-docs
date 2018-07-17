@@ -16,20 +16,20 @@
 ### ADMX info and settings
 
 #### ADMX info
-- **GP English name:** 
-- **GP name:** 
+- **GP English name:** Allow Prelaunch
+- **GP name:** AllowPreLaunch
 - **GP path:** Windows Components/Microsoft Edge
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowPrelaunch]()
+- **MDM name:** Browser/[AllowPrelaunch](../new-policies.md#allow-prelaunch)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowPrelaunch 
 - **Data type:** Integer
 
 #### Registry settings
 - **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\ 
-- **Value name:** 
+- **Value name:** AllowPrelaunch
 - **Value type:** REG_DWORD
 
 <hr>

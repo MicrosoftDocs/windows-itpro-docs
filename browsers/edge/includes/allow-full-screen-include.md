@@ -22,7 +22,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowFullscreen]()
+- **MDM name:** Browser/[AllowFullscreen](../new-policies.md#allow-fullscreen-mode)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowFullscreen 
 - **Data type:** Integer

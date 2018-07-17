@@ -21,7 +21,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowSavingHistory]()
+- **MDM name:** Browser/[AllowSavingHistory](../new-policies.md#allow-saving-history)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowSavingHistory 
 - **Data type:** Integer

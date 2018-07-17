@@ -21,7 +21,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowSideloadingExtensions]()
+- **MDM name:** Browser/[AllowSideloadingExtensions](../new-policies.md#allow-sideloading-of-extensions)
 - **Supported devices:** Desktop and Mobile
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowSideloadingExtensions 
 - **Data type:** Integer
@@ -33,11 +33,11 @@
 
 ### Related policies
 
-- Allows development of Windows Store apps and installing them from an integrated development environment (IDE): When you enable this policy and the Allow all trusted apps to install policy, you allow users to develop Windows Store apps and install them directly from an IDE.
+- **Allows development of Windows Store apps and installing them from an integrated development environment (IDE)**: When you enable this policy and the Allow all trusted apps to install policy, you allow users to develop Windows Store apps and install them directly from an IDE.
 
-- Allow all trusted apps to install: When you enable this policy, you can manage the installation of trusted line-of-business (LOB) or developer-signed Windows Store apps.
+- **Allow all trusted apps to install:** When you enable this policy, you can manage the installation of trusted line-of-business (LOB) or developer-signed Windows Store apps.
 
-### Related Documents
+### Related topics
 
 [Enable your device for development](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development): Configure your Windows 10 device for development and debugging.
 

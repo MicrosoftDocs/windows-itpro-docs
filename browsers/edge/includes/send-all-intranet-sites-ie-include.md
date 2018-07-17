@@ -43,7 +43,7 @@
 - [Show message when opening sites in Internet Explorer](../available-policies.md#show-message-when-opening-sites-in-internet-explorer): [!INCLUDE [show-message-when-opening-sites-in-ie-shortdesc](../shortdesc/show-message-when-opening-sites-in-ie-shortdesc.md)]
 
 
-### Related documents
+### Related topics
 - [Blog: How Microsoft Edge and Internet Explorer 11 on Windows 10 work better together in the Enterprise](https://go.microsoft.com/fwlink/p/?LinkID=624035). Many customers depend on legacy features only available in older versions of Internet Explorer and are familiar with our Enterprise Mode tools for IE11. The Enterprise Mode has been extended to support to Microsoft Edge by opening any site specified on the Enterprise Mode Site List in IE11. IT Pros can use their existing IE11 Enterprise Mode Site List or they can create a new one specifically for Microsoft Edge. By keeping Microsoft Edge as the default browser in Windows 10 and only opening legacy line of business sites in IE11 when necessary, you can help keep newer development projects on track, using the latest web standards on Microsoft Edge. 
 
 - [Enterprise Mode for Internet Explorer 11 (IE11)](https://go.microsoft.com/fwlink/p/?linkid=618377).  Learn how to set up and use Enterprise Mode and the Enterprise Mode Site List Manager in your company.

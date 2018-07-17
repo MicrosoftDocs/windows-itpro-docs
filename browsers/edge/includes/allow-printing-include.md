@@ -21,7 +21,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowPrinting]()
+- **MDM name:** Browser/[AllowPrinting](../new-policies.md#allow-printing)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowPrinting 
 - **Data type:** Integer

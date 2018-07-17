@@ -4,7 +4,7 @@
 
 [!INCLUDE [configure-kiosk-reset-after-idle-timeout-shortdesc](../shortdesc/configure-kiosk-reset-after-idle-timeout-shortdesc.md)]
 
-For this policy to work, you must leave the default setting (not configured) for the Configure kiosk mode policy. You need to configure Microsoft Edge in assigned access for this policy to take effect; otherwise, Microsoft Edge ignores these settings. To learn more about assigned access and kiosk configuration, see [Configure kiosk and shared devices running Windows desktop editions](https://aka.ms/E489vw).
+For this policy to work, you must enable the Configure kiosk mode policy (set to 1 - InPrivate public browsing) and configure Microsoft Edge as a single-app in assigned access; otherwise, Microsoft Edge ignores this setting. To learn more about assigned access and kiosk configuration, see [Configure kiosk and shared devices running Windows desktop editions](https://aka.ms/E489vw).
 
 ### Allowed values
 
@@ -21,7 +21,7 @@ For this policy to work, you must leave the default setting (not configured) for
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[ConfigureKioskResetAfterIdleTimeout]()
+- **MDM name:** Browser/[ConfigureKioskResetAfterIdleTimeout](../new-policies.md#configure-kiosk-reset-after-idle-timeout)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureKioskResetAfterIdleTimeout 
 - **Data type:** Integer
@@ -35,21 +35,9 @@ For this policy to work, you must leave the default setting (not configured) for
 
 ### Related policies
 
-[Configure kiosk mode](#configure-microsoft-edge-kiosk-mode-include): [!INCLUDE [configure-kiosk-mode-shortdesc](../shortdesc/configure-kiosk-mode-shortdesc.md)] 
+[Configure kiosk mode](../new-policies.md#configure-microsoft-edge-kiosk-mode-include): [!INCLUDE [configure-kiosk-mode-shortdesc](../shortdesc/configure-kiosk-mode-shortdesc.md)] 
 
 
-### Related topics:
-
-- [Create a Kiosk Experience](https://aka.ms/Sed1cr)
-
-- [Configure assigned access](https://aka.ms/Xscxri)
-
-- [Configure a Windows 10 kiosk that runs multiple apps](https://aka.ms/Ckmq4n)
-
-- [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](https://aka.ms/R4cdff)
-
-- [Kiosk apps for assigned access: Best practices](https://aka.ms/H1s8y4)
-
-- [Guidelines for choosing an app for assigned access (kiosk mode)](https://aka.ms/Ul7dw3)​
-
+### Related topics
+[Deploy Microsoft Edge kiosk mode](../microsoft-edge-kiosk-mode-deploy.md): Microsoft Edge kiosk mode works with assigned access to allow IT administrators, to create a tailored browsing experience designed for kiosk devices. In this deployment guidance, you learn about the different Microsoft Edge kiosk mode types to help you determine what configuration is best suited for your kiosk device.  You also learn about the other group policies to help you enhance the how to setup your Microsoft Edge kiosk mode experience.
 <br>

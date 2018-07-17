@@ -67,7 +67,7 @@ To verify if syncing is turned on or off:
 
 Prevent users from turning on browser syncing: [!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
 
-### Related documents
+### Related topics
 
 [About sync setting on Microsoft Edge on Windows 10 devices](http://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices)
 
