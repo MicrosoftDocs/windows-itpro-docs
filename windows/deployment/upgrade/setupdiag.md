@@ -35,11 +35,12 @@ To quickly use SetupDiag on your current computer:
 2. Click [Download SetupDiag](https://go.microsoft.com/fwlink/?linkid=870142).
 3. If your web browser asks what to do with the file, choose **Save**. By default, the file will be saved to your **Downloads** folder. You can also save it to a different location if desired by using **Save As**.
 4. When SetupDiag has finished downloading, open the folder where you downloaded the file. As mentioned above, by default this is your **Downloads** folder which is displayed in File Explorer under **Quick access** in the left pane.
-5. Double-click the SetupDiag file to run it. Click **Yes** if you are asked to approve running the program. 
-6. A command window will open while SetupDiag diagnoses your computer. Wait for this to finish.
-7. When SetupDiag finishes, two files will be created in the same folder where you double-clicked SetupDiag. One is a configuration file, the other is a log file.
-8. Use Notepad to open the log file: **SetupDiagResults.log**.
-9. Review the information that is displayed. If a rule was matched this can tell you why the computer failed to upgrade, and potentially how to fix the problem. See the [Text log sample](#text-log-sample) below.
+5. Double-click the SetupDiag file to run it. Click **Yes** if you are asked to approve running the program.
+    >Double-clicking the file to run it will automatically close the command window when SetupDiag has completed its analysis. If you wish to keep this window open instead, and review the messages that you see, run the program by typing SetupDiag at the command prompt instead of double-clicking it. You will need to change directories to the location of SetupDiag to run it this way.
+1. A command window will open while SetupDiag diagnoses your computer. Wait for this to finish.
+2. When SetupDiag finishes, two files will be created in the same folder where you double-clicked SetupDiag. One is a configuration file, the other is a log file.
+3. Use Notepad to open the log file: **SetupDiagResults.log**.
+4. Review the information that is displayed. If a rule was matched this can tell you why the computer failed to upgrade, and potentially how to fix the problem. See the [Text log sample](#text-log-sample) below.
 
 For instructions on how to run the tool in offline more and with more advanced options, see the [Parameters](#parameters) section below.
 
