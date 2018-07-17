@@ -1,5 +1,5 @@
 ---
-description: 
+description: Microsoft Edge kiosk mode works with assigned access to allow IT, administrators, to create a tailored browsing experience designed for kiosk devices. To use Microsoft Edge kiosk mode, you must configure Microsoft Edge as an application in assigned access.
 ms.assetid: 
 author: shortpatti
 ms.author: pashort
@@ -14,8 +14,7 @@ ms.date: 07/18/2018
 
 >Applies to: Microsoft Edge on Windows 10
 
-Microsoft Edge kiosk mode works with assigned access to allow IT, administrators, to create a tailored browsing experience designed for kiosk
-devices. To use Microsoft Edge kiosk mode, you must configure Microsoft Edge as an application in assigned access. Learn more about [Configuring kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc).
+Microsoft Edge kiosk mode works with assigned access to allow IT, administrators, to create a tailored browsing experience designed for kiosk devices. To use Microsoft Edge kiosk mode, you must configure Microsoft Edge as an application in assigned access. Learn more about [Configuring kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc).
 
 When you configure Microsoft Edge kiosk mode in assigned access, you can set it up to show only a single URL in full-screen, in the case of digital/interactive signage on a single-app kiosk device. You can restrict Microsoft Edge for public browsing (on a single and multi-app kiosk device) which runs a multi-tab version of InPrivate with limited functionality. Also, you can configure a multi-app kiosk device to run a full or normal version of Microsoft Edge. 
 

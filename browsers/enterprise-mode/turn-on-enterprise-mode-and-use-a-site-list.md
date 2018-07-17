@@ -8,14 +8,11 @@ centralized control, you can create one global list of websites that render usin
 
 1.  Open your Group Policy editor and go to the **Administrative Templates\\Windows Components\\Microsoft Edge\\Configure the Enterprise Mode     Site List** setting.<p>Turning this setting on also requires you to create and store a site list.
 
-    ![Local Group Policy Editor for using a site list](media/a9c0db9b720c600fda486796008d901b.png)
+    ![Local Group Policy Editor for using a site list](media/config-enterprise-site-list.png)
 
+2.  Click **Enabled**, and then in the **Options** area, type the location to your site list.
 
-1.  Click **Enabled**, and then in the **Options** area, type the location to your site list.
-
-2.  Refresh your policy and then view the affected sites in Microsoft Edge.
-
--   The site shows a message in Microsoft Edge, saying that the page needs IE. At the same time, the page opens in IE11; in a new frame if it's not yet running, or in a new tab if it is.
+3.  Refresh your policy and then view the affected sites in Microsoft Edge.<p>The site shows a message in Microsoft Edge, saying that the page needs IE. At the same time, the page opens in IE11; in a new frame if it's not yet running, or in a new tab if it is.
 
 **Registry**
 
@@ -25,7 +22,7 @@ All of your managed devices must have access to this location if you want them t
 
 2.  Edit the `SiteList` registry key to point to where you want to keep your Enterprise Mode site list file.<p>For example:
     
-    ![Enterprise mode with site list in the registry](media/af5ddbf7547abeb779bf9c8d67a4746d.png)
+    ![Enterprise mode with site list in the registry](media/enterprise-mode-value-data.png)
 
     -   **HTTPS location:** `"SiteList"="https://localhost:8080/sites.xml"`
 
@@ -41,8 +38,7 @@ All of your managed devices must have access to this location if you want them t
 
     >   Drive Letter C:.xml
 
-    All of your managed devices must have access to this location if you want
-    them to use Enterprise Mode and your site list.
+    All of your managed devices must have access to this location if you want them to use Enterprise Mode and your site list.
 
 3.  Refresh the policy in your organization and then view the affected sites in
     Microsoft Edge.<p>The site shows a message in Microsoft Edge, saying that the page needs IE.

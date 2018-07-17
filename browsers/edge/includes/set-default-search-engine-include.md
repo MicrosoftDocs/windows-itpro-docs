@@ -15,7 +15,7 @@
 
 ### Configuration combinations
 
-| **Set default search engine** | **Allow search engine customization** | **Configure additional search engines** | **Results** |
+| **Set default search engine** | **Allow search engine customization** | **Configure additional search engines** | **Outcome** |
 | --- | --- | --- | --- |
 | Not configured (default) | Disabled | Disabled or not configured (default) | Default search engine specified in App settings. Users cannot make changes. |
 | Not configured (default) | Enabled or not configured (default) | Disabled or not configured (default) | Default search engine specified in App settings. Users can make changes to the default search engine at any time. |

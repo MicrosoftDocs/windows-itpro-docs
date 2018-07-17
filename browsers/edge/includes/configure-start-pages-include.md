@@ -13,7 +13,7 @@
 ---
 
 ### Configuration combinations
-| **Configure Open Microsoft Edge With** | **Configure Start Pages** | **Disabled Lockdown of Start Pages** | **Results** |
+| **Configure Open Microsoft Edge With** | **Configure Start Pages** | **Disabled Lockdown of Start Pages** | **Outcome** |
 | --- | --- | --- | --- |
 | Enabled (applies to all options) | Enabled – String | Enabled (all configured start pages are editable) | [\#1: Load URLs defined in the Configure Open Microsoft Edge With policy, and allow users to edit all configured start pages.](#1-load-the-urls-defined-in-the-configure-open-microsoft-edge-with-policy-and-allow-users-to-edit-all-configured-start-pages) |
 | Disabled or not configured | Enabled – String | Enabled (any Start page configured in the Configured Start Pages policy) | [\#2: Load any start page and allow users to edit their Start pages.](#2-load-any-start-page-configured-using-the-configured-start-pages-policy-and-allow-users-to-edit-their-start-pages) |

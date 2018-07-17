@@ -74,8 +74,8 @@ You can find the Microsoft Edge Group Policy settings in the following location 
 ## Unlock Home button
 [!INCLUDE [unlock-home-button-include.md](includes/unlock-home-button-include.md)]
 
+---
 
-## MDM policies added
 In addition to the 20 or so new group policies, we added three MDM policies to align with the existing group policies.
 
 ## AllowWebContentOnNewTabPage

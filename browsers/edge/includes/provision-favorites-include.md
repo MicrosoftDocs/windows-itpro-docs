@@ -16,7 +16,7 @@
 ---
 
 ### Configuration combinations
-| **Keep favorites in sync between IE and Microsoft Edge** | **Provision Favorites** | **Results** |
+| **Keep favorites in sync between IE and Microsoft Edge** | **Provision Favorites** | **Outcome** |
 | --- | --- | --- |
 | Disabled or not configured (default) | Disabled or not configured (default) | **Turned off/not syncing**. Microsoft Edge prevents users from syncing their favorites. |
 | Enabled (turned on/syncing) | Disabled or not configured (default) | **Turned on/syncing**. Syncs favorites between Internet Explorer and Microsoft Edge. |
