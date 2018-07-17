@@ -1,11 +1,11 @@
 <!-- Configure Open Microsoft Edge With -->
 
->*Supported versions: Microsoft Edge on Windows 10, version 1810*<br>
+>*Supported versions: Microsoft Edge on Windows 10, next major version*<br>
 >*Default setting:  Enabled (A specific page or pages)*
 
 [!INCLUDE [configure-open-microsoft-edge-with-shortdesc](../shortdesc/configure-open-microsoft-edge-with-shortdesc.md)]
 
-**Version 1703 or later:**<br>If you do not want to send traffic to Microsoft, use the \<about:blank\> value, which honors both domain and non-domain-joined devices when it is the only configured URL.
+**Version 1703 or later:**<br>If you don't want to send traffic to Microsoft, use the \<about:blank\> value, which honors both domain and non domain-joined devices when it's the only configured URL.
 
 **Version 1810:**<br>When you enable this policy and select an option, and also enable the Configure Start Pages policy, Microsoft Edge ignores the Configure Start Page policy.<p>
 
@@ -30,8 +30,9 @@
 | Enabled (Previous pages) | Enabled – String | Blank or not configured | Load previously opened pages and prevent users from making changes. |
 | Enabled (A specific page or pages) | Enabled – String | Blank or not configured | Load a specific page or pages and prevent users from making changes. |
 | Enabled (A specific page or pages) | Enabled – String | Enabled (any Start page configured in Configure Start Pages policy) | Load a specific page or pages and let users make changes. |
-| N/A | Blank or not configured | N/A | Load the pages specified in App settings as the default Start pages. |
 ---
+
+
 If you want to make changes to this policy:<ol><li>Set the Disabled Lockdown of Start Pages to not configured.</li><li>Make changes to the Configure Open Microsoft With policy.</li><li>Enable the Disabled Lockdown of Start Pages.</li></ol>
 
 #### Load URLs defined in the Configure Open Microsoft Edge With policy, and let users make changes.
@@ -74,7 +75,6 @@ If you want to make changes to this policy:<ol><li>Set the Disabled Lockdown of 
 
 ---
 
-
 #### Load previously opened pages and prevent users from making changes.
 
 1. Enable the **Configure Open Microsoft Edge With** policy by selecting *Previous pages*.<p>
@@ -84,7 +84,6 @@ If you want to make changes to this policy:<ol><li>Set the Disabled Lockdown of 
 3. Disable or don't configure the **Disabled Lockdown of Start Pages** policy.
 
 ---
-
 
 #### Load a specific page or pages and prevent users from making changes.
 
@@ -96,7 +95,6 @@ If you want to make changes to this policy:<ol><li>Set the Disabled Lockdown of 
 
 ---
 
-
 #### Load a specific page or pages and let users make changes.
 
 1. Enable the **Configure Open Microsoft Edge With** policy by selecting *A specific page or pages*. <p>
@@ -104,6 +102,8 @@ If you want to make changes to this policy:<ol><li>Set the Disabled Lockdown of 
 2. In the **Configure Start Pages** policy, enter URLs to the pages, separating multiple pages by using angle brackets:<p>\<support.contoso.com\>\<support.microsoft.com\>
 
 3. Enable **Disabled Lockdown of Start Pages** by selecting *Start pages are not editable*.
+
+
 ### ADMX info and settings
 #### ADMX info
 - **GP English name:** Configure Open Microsoft Edge With
@@ -112,7 +112,7 @@ If you want to make changes to this policy:<ol><li>Set the Disabled Lockdown of 
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[ConfigureOpenEdgeWith]()
+- **MDM name:** Browser/[ConfigureOpenEdgeWith](../new-policies.md#configure-open-microsoft-edge-with)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureOpenEdgeWith
 - **Data type:** Integer
@@ -124,9 +124,9 @@ If you want to make changes to this policy:<ol><li>Set the Disabled Lockdown of 
 
 ### Related policies
 
-- [Configure Start Pages](#configure-start-pages-include): [!INCLUDE [configure-start-pages-shortdesc](../shortdesc/configure-start-pages-shortdesc.md)]
+- [Configure Start Pages](../new-policies.md#configure-start-pages-include): [!INCLUDE [configure-start-pages-shortdesc](../shortdesc/configure-start-pages-shortdesc.md)]
 
-- [Disable Lockdown of Start Pages](#disable-lockdown-of-start-pages-include): [!INCLUDE [disable-lockdown-of-start-pages-shortdesc](../shortdesc/disable-lockdown-of-start-pages-shortdesc.md)]
+- [Disable Lockdown of Start Pages](../new-policies.md#disable-lockdown-of-start-pages-include): [!INCLUDE [disable-lockdown-of-start-pages-shortdesc](../shortdesc/disable-lockdown-of-start-pages-shortdesc.md)]
 
 ### Scenarios
 

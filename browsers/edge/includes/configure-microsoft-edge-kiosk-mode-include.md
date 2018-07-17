@@ -1,6 +1,6 @@
 
 <!-- ## Configure kiosk mode -->
->*Supported versions: Microsoft Edge on Windows 10, version 1810*<br>
+>*Supported versions: Microsoft Edge on Windows 10, next major version*<br>
 >*Default setting:  Not configured*
 
 [!INCLUDE [configure-kiosk-mode-shortdesc](../shortdesc/configure-kiosk-mode-shortdesc.md)]
@@ -36,15 +36,15 @@ For multi-app assigned access:
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-**<ul><li>**MDM name:** Browser/[ConfigureKioskMode](../new-policies.md#configure-kiosk-mode)
-**Supported devices:** Desktop
-**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureKioskMode 
-**Data type:** Integer
+- **MDM name:** Browser/[ConfigureKioskMode](../new-policies.md#configure-kiosk-mode)
+- **Supported devices:** Desktop
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureKioskMode 
+- **Data type:** Integer
 
 #### Registry settings
-**<ul><li>**Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\KioskMode
-**Value name:** ConfigureKioskMode
-**Value type:** REG_SZ
+- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\KioskMode
+- **Value name:** ConfigureKioskMode
+- **Value type:** REG_SZ
 
 ### Related policies
 [Configure kiosk reset after idle timeout](../new-policies.md#configure-kiosk-reset-after-idle-timeout): [!INCLUDE [configure-kiosk-reset-after-idle-timeout-shortdesc](../shortdesc/configure-kiosk-reset-after-idle-timeout-shortdesc.md)] 

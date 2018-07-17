@@ -4,13 +4,13 @@
 
 [!INCLUDE [configure-kiosk-reset-after-idle-timeout-shortdesc](../shortdesc/configure-kiosk-reset-after-idle-timeout-shortdesc.md)]
 
-For this policy to work, you must enable the Configure kiosk mode policy (set to 1 - InPrivate public browsing) and configure Microsoft Edge as a single-app in assigned access; otherwise, Microsoft Edge ignores this setting. To learn more about assigned access and kiosk configuration, see [Configure kiosk and shared devices running Windows desktop editions](https://aka.ms/E489vw).
+You must set the Configure kiosk mode policy to enabled (1 - InPrivate public browsing) and configure Microsoft Edge as a single-app in assigned access for this policy to take effect; otherwise, Microsoft Edge ignores this setting. To learn more about assigned access and kiosk configuration, see [Configure kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc).
 
 ### Allowed values
 
--   0-1440 - Any integer from 1-1440 (5 minutes is the default) – The time in minutes from the last user activity before Microsoft Edge kiosk mode resets to the default kiosk configuration. A confirmation dialog displays for the user to cancel or continue and automatically continues after 30 seconds.
+-   **0-1440 - Any integer from 1-1440 (5 minutes is the default)** – The time in minutes from the last user activity before Microsoft Edge kiosk mode resets to the default kiosk configuration. A confirmation dialog displays for the user to cancel or continue and automatically continues after 30 seconds.
 
--   0 – No restart after idle timer.
+-   **0** – No idle timer.
 
 ### ADMX info and settings
 #### ADMX info
@@ -40,4 +40,5 @@ For this policy to work, you must enable the Configure kiosk mode policy (set to
 
 ### Related topics
 [Deploy Microsoft Edge kiosk mode](../microsoft-edge-kiosk-mode-deploy.md): Microsoft Edge kiosk mode works with assigned access to allow IT administrators, to create a tailored browsing experience designed for kiosk devices. In this deployment guidance, you learn about the different Microsoft Edge kiosk mode types to help you determine what configuration is best suited for your kiosk device.  You also learn about the other group policies to help you enhance the how to setup your Microsoft Edge kiosk mode experience.
-<br>
+
+<hr>
