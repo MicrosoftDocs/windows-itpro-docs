@@ -31,16 +31,19 @@ SetupDiag is a standalone diagnostic tool that can be used to obtain details abo
 SetupDiag works by examining Windows Setup log files. It attempts to parse these log files to determine the root cause of a failure to update or upgrade the computer to Windows 10. SetupDiag can be run on the computer that failed to update, or you can export logs from the computer to another location and run SetupDiag in offline mode.
 
 To quickly use SetupDiag on your current computer:
-1. Click [Download SetupDiag](https://go.microsoft.com/fwlink/?linkid=870142).
-2. If your web browser asks what to do with the file, choose **Save**. By default, the file will be saved to your **Downloads** folder. You can also save it to a different location if desired by using **Save As**.
-3. When SetupDiag has finished downloading, open the folder where you downloaded the file. As mentioned above, by default this is your **Downloads** folder which is displayed in File Explorer under **Quick access** in the left pane.
-4. Double-click the SetupDiag file to run it. Click **Yes** if you are asked to approve running the program. 
-5. A command window will open while SetupDiag diagnoses your computer. Wait for this to finish.
-6. When SetupDiag finishes, two files will be created in the same folder where you double-clicked SetupDiag. One is a configuration file, the other is a log file.
-7. Use Notepad or another text file viewer application to open the log file (SetupDiagResults.log).
-8. Review the information to discover if any rules were matched that can tell you why the computer failed to upgrade. See the [Text log sample](#text-log-sample) below.
+1. Verify that your system meets the [requirements](#requirements) described below. If needed, install the [.NET framework 4.6](https://www.microsoft.com/download/details.aspx?id=48137).
+2. Click [Download SetupDiag](https://go.microsoft.com/fwlink/?linkid=870142).
+3. If your web browser asks what to do with the file, choose **Save**. By default, the file will be saved to your **Downloads** folder. You can also save it to a different location if desired by using **Save As**.
+4. When SetupDiag has finished downloading, open the folder where you downloaded the file. As mentioned above, by default this is your **Downloads** folder which is displayed in File Explorer under **Quick access** in the left pane.
+5. Double-click the SetupDiag file to run it. Click **Yes** if you are asked to approve running the program. 
+6. A command window will open while SetupDiag diagnoses your computer. Wait for this to finish.
+7. When SetupDiag finishes, two files will be created in the same folder where you double-clicked SetupDiag. One is a configuration file, the other is a log file.
+8. Use Notepad to open the log file: **SetupDiagResults.log**.
+9. Review the information that is displayed. If a rule was matched this can tell you why the computer failed to upgrade, and potentially how to fix the problem. See the [Text log sample](#text-log-sample) below.
 
-See the [Release notes](#release-notes) section at the bottom of this topic for information about the latest updates to this tool. 
+For instructions on how to run the tool in offline more and with more advanced options, see the [Parameters](#parameters) section below.
+
+See the [Release notes](#release-notes) section at the bottom of this topic for information about recent updates to this tool. 
 
 ## Requirements
 
