@@ -1,0 +1,1 @@
+By default, Microsoft Edge does not clear the browsing data on exit, but users can configure the _Clear browsing data_ option in Settings.  Browsing data includes information you entered in forms, passwords, and even the websites visited. Enabling this policy clears the browsing data automatically each time Microsoft Edge closes.
