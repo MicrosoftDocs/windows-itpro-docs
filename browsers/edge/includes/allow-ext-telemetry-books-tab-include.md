@@ -32,10 +32,4 @@
 - **Value type:** REG_DWORD
 
 
-### Scenario
-
-Due to current Privacy policy, the Books feature does not have the right to gather the book's unique identifier through regular events (because it could help to build a Reading history, which is not an explicit feature).
-
-For Schools that are one of the target of this feature of Edge, we will propose an advanced telemetry report to the Teachers. This advanced report system will require to have the ProductId in events so IT Admin will be able to enable the propagation from the user's device to Microsoft Telemetry servers of events that contain ProductId.
-
 <hr>
