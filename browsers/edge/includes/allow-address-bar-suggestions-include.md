@@ -9,8 +9,8 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled |0 |0 |Not allowed. Hides the Address bar drop-down functionality, which also disables the _Show search and site suggestions as I type_ toggle in Settings.  |![Most restricted value](../images/check-gn.png) |
-|Enabled or not configured **(default)** |1 |1 |Allowed. Shows the Address bar drop-down list and makes it available. | |
+|Disabled |0 |0 |Prevented/not allowed. Hide the Address bar drop-down functionality and disable the _Show search and site suggestions as I type_ toggle in Settings.  |![Most restricted value](../images/check-gn.png) |
+|Enabled or not configured **(default)** |1 |1 |Allowed. Show the Address bar drop-down list and make it available. | |
 ---
 
 ### ADMX info and settings
@@ -30,7 +30,7 @@
 #### Registry settings
 - **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\ServiceUI 
 - **Value name:** ShowOneBox
-- **Value type:** REG_
+- **Value type:** REG_DWORD
 
 
 ### Related policies

@@ -6,15 +6,10 @@
 
 ### Allowed values
 
--	(0) Disabled - Prevented.
--	(1 default) Enabled – Allowed.
-
-Most restricted value: None### Allowed values
-
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Disabled |0 |0 |Prevented/not allowed. | 
-|Enabled or not configured<br>**(default)** |1 |1 |Allowed. | 
+|Disabled |0 |0 |Prevented/not allowed | 
+|Enabled or not configured<br>**(default)** |1 |1 |Allowed | 
 ---
 
 ### ADMX info and settings

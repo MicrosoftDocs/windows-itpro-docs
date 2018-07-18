@@ -6,10 +6,10 @@
 
 ### Allowed values
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Allowed/turned on. The “browser” group syncs automatically between user’s devices and lets users to make changes. | |
-|Enabled |2 |2 |Prevented/turned off.  The “browser” group does not use the Sync your Settings option. | |
+|Group Policy  |MDM |Registry |Description |
+|---|:---:|:---:|---|
+|Disabled or not configured<br>**(default)** |0 |0 |Allowed/turned on. The “browser” group syncs automatically between user’s devices and lets users to make changes. |
+|Enabled |2 |2 |Prevented/turned off.  The “browser” group does not use the Sync your Settings option. |
 ---
 
 ### Configuration options

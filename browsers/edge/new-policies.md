@@ -47,7 +47,7 @@ In addition to the new group policies, we added a couple of new MDM policies to 
 - [Experience/DoNotSyncBrowserSetting](#donotsyncbrowsersetting)
 - [Browser/AllowWebContentOnNewTabPage](#allowwebcontentonnewtabpage)
 
-We are also deprecating the **Configure Favorites** group policy because no MDM equivalent existed. Use the **[Provision Favorites](available-policies.md#provision-favorites)** in place of Configure Favorites.  
+We are also deprecating the **Configure Favorites** group policy because no MDM equivalent existed. Use the **[Provision Favorites](available-policies.md#provision-favorites)** in place of Configure Favorites.   
  
  <!-- RS5 policies -->
 
