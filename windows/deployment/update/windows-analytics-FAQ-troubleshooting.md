@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 07/11/2018
+ms.date: 07/18/2018
 ms.localizationpriority: high
 ---
 
@@ -23,6 +23,8 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 [Devices not showing up](#devices-not-showing-up)
 
 [Device Health crash data not appearing](#device-health-crash-data-not-appearing)
+
+[Apps not appearing in Device Health App Reliability](#apps-not-appearing-in-device-health-app-reliability)
 
 
 [Upgrade Readiness shows many "Computers with outdated KB"](#upgrade-readiness-shows-many-computers-with-outdated-kb)
@@ -58,24 +60,57 @@ If you want to check a large number of devices, you should run the latest script
 
 If you think the issue might be related to a network proxy, check "Enable data sharing" section of the [Enrolling devices in Windows Analytics](windows-analytics-get-started.md) topic. Also see [Understanding connectivity scenarios and the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog.
 
-If you have deployed images that have not been generalized, then many of them might have the same ID and so analytics will see them as one device. If you suspect this is the issue, then you can reset the IDs on the non-generalized devices by performing these steps:
+If you have deployed images that have not been generalized, then many of them might have the same ID and so Windows Analytics will see them as one device. If you suspect this is the issue, then you can reset the IDs on the non-generalized devices by performing these steps:
 1. Net stop diagtrack
 2. Reg delete hklm\software\microsoft\sqmclient /v MachineId /f
 3. Net start diagtrack
 
+#### Devices not showing up in Device Health
+
+If you have devices that appear in other solutions, but not Device Health, follow these steps to investigate the issue:
+1. Confirm that the devices are running Windows10.
+2. Verify that the Commercial ID is present in the device's registry. For details see [https://gpsearch.azurewebsites.net/#13551](https://gpsearch.azurewebsites.net/#13551).
+3. Confirm that devices have opted in to provide diagnostic data by checking in the registry that **AllowTelemetry** is set to 2 (Enhanced) or 3 (Full) in **HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection** (or **HKLM\Software\Policies\Microsoft\Windows\DataCollection**, which takes precedence if set).
+4. Verify that devices can reach the endpoints specified in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md). Also check settings for SSL inspection and proxy authentication; see [Configuring endpoint access with SSL inspection](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started#configuring-endpoint-access-with-ssl-inspection) for more information.
+5. Wait 48 hours for activity to appear in the reports.
+6. If you need additional troubleshooting, contact Microsoft Support.
+
 
 ### Device Health crash data not appearing
 
-#### Is WER disabled?
-If Windows Error Reporting (WER) is disabled or redirected on your Windows devices, then reliability information cannot be shown in Device Health.
+If you know that devices are experiencing crashes that do not seem to be reflected in the count of devices with crashes, follow these steps to investigate the issue:
 
-Check these registry settings in **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Windows Error Reporting**:
+1. Verify that devices are reporting data properly by following the steps in the [Devices not showing up](#devices-not-showing-up) section of this topic.
+2. Trigger a known crash on a test device by using a tool such as [NotMyFault](https://docs.microsoft.com/sysinternals/downloads/notmyfault) from Windows Sysinternals.
+3. Verify that Windows Error Reporting (WER) is not disabled or redirected by confirming the registry settings in **HKLM\SOFTWARE\Microsoft\Windows\Windows Error Reporting** (or **HKLM\Software\Policies\Microsoft\Windows\DataCollection**, which will take precedence if set):
 
 - Verify that the value "Disabled" (REG_DWORD), if set, is 0.
 - Verify that the value "DontSendAdditionalData" (REG_DWORD), if set, is 0.
 - Verify that the value "CorporateWERServer" (REG_SZ) is not configured.
 
-If you need further information on Windows Error Reporting (WER) settings, see WER Settings. 
+4. Verify that WER can reach all diagnostic endpoints specified in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md)--if WER can only reach some of the endpoints, it could be included in the device count while not reporting crashes.
+5. Check that crash reports successfully complete the round trip with Event 1001 and that BucketID is not blank. You can use the following Windows PowerShell snippet to summarize recent occurences of Event 1001. Most events should have a value for BucketID (a few intermittent blank values are OK, however).
+
+```powershell
+
+$limitToMostRecentNEvents = 20
+Get-WinEvent -FilterHashTable @{ProviderName="Windows Error Reporting"; ID=1001} | 
+  ?{ $_.Properties[2].Value -match "crash|blue" } |
+  % { [pscustomobject]@{ 
+    TimeCreated=$_.TimeCreated
+    WEREvent=$_.Properties[2].Value
+    BucketId=$_.Properties[0].Value
+    ContextHint = $(
+       if($_.Properties[2].Value -eq "bluescreen"){"kernel"}
+       else{ $_.Properties[5].Value }
+    )
+  }} | Select-Object -First $limitToMostRecentNEvents
+
+
+```
+6. Check that some other installed device, app, or crash monitoring solution is not intercepting crash events.
+7. Wait 48 hours for activity to appear in the reports.
+8. If you need additional troubleshooting, contact Microsoft Support.
 
 #### Endpoint connectivity
 
@@ -129,6 +164,27 @@ Get-Content $outputFileFullPath
 ```
 
 As in the other example, if this is successful, `TcpTestSucceeded` should return `True` for each of the endpoints.
+
+### Apps not appearing in Device Health App Reliability
+
+If apps that you know are installed do not appear in App Reliability, follow these steps to investigate the issue:
+
+1. Double-check the steps in the [Devices not showing up](#devices-not-showing-up) and [Device Health crash data not appearing](#device-health-crash-data-not-appearing) sections of this topic.
+2. Confirm that an in-scope application has crashed on an enrolled device. Keep the following points in mind:
+- Not all user-mode crashes are included in App Reliability, which tracks only apps that have a GUI, include user interaction, and are not part of the operating system.
+- Enrolling more devices ensures helps to ensure that there are enough naturally occurring app crashes.
+- You can use tools which are designed to crash on demand.
+
+3. Verify that *per-user* Windows Error Reporting (WER) is not disabled or redirected by confirming the registry settings in **HKCU\SOFTWARE\Microsoft\Windows\Windows Error Reporting** (or **HKCU\Software\Policies\Microsoft\Windows\DataCollection**, which will take precedence if set):
+
+- Verify that the value "Disabled" (REG_DWORD), if set, is 0.
+- Verify that the value "DontSendAdditionalData" (REG_DWORD), if set, is 0.
+- Verify that the value "CorporateWERServer" (REG_SZ) is not configured.
+
+4. Check that some other installed device, app, or crash monitoring solution is not intercepting crash events.
+5. Wait 48 hours for activity to appear in the reports.
+6. If you need additional troubleshooting, contact Microsoft Support.
+
 
 ### Upgrade Readiness shows many "Computers with outdated KB"
 If you see a large number of devices reported as shown in this screenshot of the Upgrade Readiness tile:
