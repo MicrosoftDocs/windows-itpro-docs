@@ -9,7 +9,7 @@
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Enabled or not configured<br>**(default)** |0 |0 |Allowed. Preload Start and New tab pages. | |
-|Disabled |1 |1 |Prevent/not allowed. |![Most restricted value](../images/check-gn.png) |
+|Disabled |1 |1 |Prevented/not allowed. |![Most restricted value](../images/check-gn.png) |
 ---
 
 ### ADMX info and settings
