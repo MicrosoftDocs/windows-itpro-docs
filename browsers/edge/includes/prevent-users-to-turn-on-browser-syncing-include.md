@@ -6,10 +6,10 @@
 [!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
 
 ### Allowed values
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled |0 |0 |Allowed/turned on. Users can sync the browser settings.  | |
-|Enabled or not configured<br>**(default)** |1 |1 |Prevented/turned off. | |
+|Group Policy  |MDM |Registry |Description |
+|---|:---:|:---:|---|
+|Disabled |0 |0 |Allowed/turned on. Users can sync the browser settings.  | 
+|Enabled or not configured<br>**(default)** |1 |1 |Prevented/turned off. | 
 ---
 
 ### Configuration options
@@ -30,15 +30,11 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Experience/[PreventUsersFromTurningOnBrowserSyncing]()
+- **MDM name:** Experience/[PreventUsersFromTurningOnBrowserSyncing](../new-policies.md#prevent-users-from-turning-on-browser-syncing)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Experience/PreventUsersFromTurningOnBrowserSyncing 
 - **Data type:** String
 
-#### Registry settings
-- **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge 
-- **Value name:** 
-- **Value type:** 
 
 ### Related policies
 [Do not sync browser settings](../available-policies.md#do-not-sync-browser-settings): [!INCLUDE [do-not-sync-browser-settings-shortdesc](../shortdesc/do-not-sync-browser-settings-shortdesc.md)].

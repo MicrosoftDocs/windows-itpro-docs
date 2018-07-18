@@ -19,35 +19,13 @@
 | --- | --- | --- | --- |
 | Not configured (default) | Disabled | Disabled or not configured (default) | Default search engine specified in App settings. Users cannot make changes. |
 | Not configured (default) | Enabled or not configured (default) | Disabled or not configured (default) | Default search engine specified in App settings. Users can make changes to the default search engine at any time. |
-| Not configured (default) | Disabled | Enabled | ??? |
-| Not configured (default) | Enabled or not configured (default) | Enabled | ??? |
 | Disabled | Disabled | Disabled or not configured (default) | Users cannot add, remove, or change any of the search engines, but they can set a default search engine. |
 | Disabled | Enabled or not configured (default) | Disabled or not configured (default) | Users can add new search engines or change the default search engine, in Settings. |
 | Enabled | Disabled | Disabled or not configured (default) | Set the default search engine preventing users from making changes. |
 | Enabled | Enabled or not configured (default) | Disabled or not configured (default) | Set the default search engine and allow users to add search engines or make changes. |
+---
 
-#### If you want to use the default search engine in Apps settings and prevent users from making changes.
-
-
-#### If you want to use the default search engine in Apps setting and let users make changes.
-
-
-#### ???
-
-
-#### ???
-
-
-#### If you don't want users to add, remove, or change any of the search engines, but users can set a default search engine of their own.
-
-
-#### If you want users to add new search engines or change the default in Settings.
-
-
-#### If you want to set the default search engine and prevent users from making changes.  
-
-
-#### If you want to set the default search engine and let users make changes. 
+![Set default search engine](../images/set-default-search-engine.png)
 
 
 ### ADMX info and settings

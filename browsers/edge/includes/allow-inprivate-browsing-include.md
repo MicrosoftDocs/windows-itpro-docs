@@ -10,8 +10,8 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled |0 |0 |Prevented/not allowed. |![Most restricted value](../images/check-gn.png) |
-|Enabled or not configured<br>**(default)** |1 |1 |Allowed. | |
+|Disabled |0 |0 |Prevented/not allowed |![Most restricted value](../images/check-gn.png) |
+|Enabled or not configured<br>**(default)** |1 |1 |Allowed | |
 ---
 
 ### ADMX info and settings
