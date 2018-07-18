@@ -1,1 +1,1 @@
-By default, Microsoft Edge shows the Books Library only in countries or regions where supported.  Enabling this policy shows the Books Library, regardless of the device’s country or region. 
+Microsoft Edge shows the Books Library only in countries or regions where supported. With this policy you can configure Microsoft Edge to show the Books Library regardless of the device’s country or region.

@@ -8,7 +8,7 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled or not configured |0 |0 |Prevented, but does not prevent sideloading of extensions using Add-AppxPackage via PowerShell.<p>To prevent this, enable **Allows development of Windows Store apps and installing them from an integrated development environment (IDE)** policy, located at Computer Configuration \> Administrative Templates \> Windows Components \> App Package Deployment. For the MDM setting, enable **ApplicationManagement/AllowDeveloperUnlock**. |![Most restricted value](../images/check-gn.png) |
+|Disabled or not configured |0 |0 |Prevented/not allowed. Disabling does not prevent sideloading of extensions using Add-AppxPackage via PowerShell. To prevent this, enable **Allows development of Windows Store apps and installing them from an integrated development environment (IDE)** policy, located at Windows Components > App Package Deployment.<p>For the MDM setting, enable **ApplicationManagement/AllowDeveloperUnlock**. |![Most restricted value](../images/check-gn.png) |
 |Enabled<br>**(default)** |1 |1 |Allowed. | |
 ---
 
@@ -22,18 +22,18 @@
 
 #### MDM settings
 - **MDM name:** Browser/[AllowSideloadingExtensions](../new-policies.md#allow-sideloading-of-extensions)
-- **Supported devices:** Desktop and Mobile
+- **Supported devices:** Desktop 
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowSideloadingExtensions 
 - **Data type:** Integer
 
 #### Registry settings
 - **Path:** HLKM\Software\Policies\Microsoft\MicrosoftEdge\Extensions 
 - **Value name:** AllowSideloadingOfExtensions
-- **Value type:** REG_SZ
+- **Value type:** REG_DWORD
 
 ### Related policies
 
-- Allows development of Windows Store apps and installing them from an integrated development environment (IDE): When you enable this policy and the Allow all trusted apps to install policy, you allow users to develop Windows Store apps and install them directly from an IDE.
+- Allows development of Windows Store apps and installing them from an integrated development environment (IDE): When you enable this policy and the **Allow all trusted apps to install** policy, you allow users to develop Windows Store apps and install them directly from an IDE.
 
 - Allow all trusted apps to install: When you enable this policy, you can manage the installation of trusted line-of-business (LOB) or developer-signed Windows Store apps.
 

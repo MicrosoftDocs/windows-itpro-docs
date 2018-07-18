@@ -6,10 +6,10 @@
 
 ### Allowed values
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Lock down the home button to prevent users from making changes. | |
-|Enabled |1 |1 |Let users make changes. | |
+|Group Policy  |MDM |Registry |Description |
+|---|:---:|:---:|---|
+|Disabled or not configured<br>**(default)** |0 |0 |Lock down the home button to prevent users from making changes. | 
+|Enabled |1 |1 |Let users make changes. | 
 ---
 
 ### ADMX info and settings
