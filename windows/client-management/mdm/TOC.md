@@ -189,6 +189,7 @@
 #### [Authentication](policy-csp-authentication.md)
 #### [Autoplay](policy-csp-autoplay.md)
 #### [Bitlocker](policy-csp-bitlocker.md)
+#### [BITS](policy-csp-bits.md)
 #### [Bluetooth](policy-csp-bluetooth.md)
 #### [Browser](policy-csp-browser.md)
 #### [Camera](policy-csp-camera.md)

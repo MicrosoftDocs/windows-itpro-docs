@@ -7,7 +7,7 @@
 ### Allowed values
 
 |Group Policy  |MDM |Registry |Description |
-|---|:---:|:---:|---|:---:|
+|---|:---:|:---:|---|
 |Disabled or not configured<br>**(default)** |Blank |Blank |Show the home button and loads the Start page and locks down the home button to prevent users from changing what page loads. |
 |Enabled - String |String |String |Enter a URL in string format, for example, https://www.msn.com. A custom URL loads when clicking the home button.  You must also enable the [Configure Home Button](../new-policies.md#configure-home-button) policy and select the _Show home button & set a specific page_ option.  |
 ---
@@ -44,7 +44,7 @@ Enable the **Configure Home Button** policy and select the _Hide home button_ op
 
 #### Registry settings
 - **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Internet Settings
-- **Value name:** HomeButtonURL
+- **Value name:** ConfigureHomeButtonURL
 - **Value type:** REG_SZ
 
 ### Related policies

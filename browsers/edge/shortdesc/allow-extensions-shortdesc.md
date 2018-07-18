@@ -1,1 +1,1 @@
-By default, this policy allows users to add or personalize extensions in Microsoft Edge. Disabling this policy prevents users from adding or personalizing extensions. 
+Microsoft Edge allows users to add or personalize extensions in Microsoft Edge by default. With this policy, you can configure Microsoft to prevent users from adding or personalizing extensions.
