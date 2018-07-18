@@ -15,17 +15,7 @@ For this policy to work, you must configure Microsoft Edge in assigned access; o
 |(1) Enabled |<ul><li>If it’s a single app, it runs a limited multi-tab version of InPrivate and is the only app available for public browsing. Users can’t minimize, close, or open windows or customize Microsoft Edge, but can clear browsing data and downloads and restart by clicking “End session.” You can configure Microsoft Edge to restart after a period of inactivity by using the “Configure kiosk reset after idle timeout” policy.</li><li>If it’s one of many apps, it runs in a limited multi-tab version of InPrivate for public browsing with other apps. Users can minimize, close, and open multiple InPrivate windows, but they can’t customize Microsoft Edge.</li></ul> |
 ---
 
-For single app assigned access:
-
-- 0 = Full-screen digital signage and interactive display
-
-- 1 = InPrivate public browsing (limited features)
-
-For multi-app assigned access:
-
-- 0 = Normal Microsoft Edge running in assigned access
-
-- 1 = InPrivate public browsing
+![Microsoft Edge kiosk experience](../images/microsoft-edge-kiosk-mode.png)
 
 ### ADMX info and settings
 #### ADMX info
