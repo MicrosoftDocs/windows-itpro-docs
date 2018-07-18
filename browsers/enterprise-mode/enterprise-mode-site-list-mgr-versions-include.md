@@ -1,0 +1,7 @@
+## Enterprise Mode Site List Manager versions
+There are currently two versions of the Enterprise Site List Manager, both based on your schema and operating system. Download the [Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853) or the [Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378) tool, based on your operating system.
+
+|Schema version |Operating system |Enterprise Site List Manager version |
+|-----------------|---------------|------------------------------------|
+|Enterprise Mode schema, version 2 (v.2) |Windows 10<br>-OR-<br>Windows 8.1<br>-OR-<br>Windows 7|Uses the Enterprise Mode Site List Manager (schema v.2) and the v.2 version of the schema. If you import a v.1 version schema into the Enterprise Mode Site List Manager (schema v.2),  the XML is saved into the v.2 version of the schema.<br><br>For more info about the v.2 version of the schema, see [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md).|
+|Enterprise Mode schema, version 1 (v.1) |Windows 10<br>-OR-<br>Windows 8.1<br>-OR-<br>Windows 7|Uses the Enterprise Mode Site List Manager (schema v.1) and the v.1 version of the schema. <br><br> For more info about the v.1 version of the schema, see [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md)|

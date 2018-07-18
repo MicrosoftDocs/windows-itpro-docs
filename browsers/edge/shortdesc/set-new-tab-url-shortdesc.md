@@ -1,0 +1,1 @@
+Microsoft Edge loads the default New tab page by default. Enabling this policy lets you set a New tab page URL in Microsoft Edge, preventing users from changing it.  When you enable this policy, and you disable the Allow web content on New tab page policy, Microsoft Edge ignores any URL specified in this policy and opens about:blank. 

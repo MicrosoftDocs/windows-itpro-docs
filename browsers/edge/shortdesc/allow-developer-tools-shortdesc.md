@@ -1,0 +1,1 @@
+By default, Microsoft Edge allows users to use the F12 developer tools to build and debug web pages. Disabling this policy prevents users from using the F12 developer tools.

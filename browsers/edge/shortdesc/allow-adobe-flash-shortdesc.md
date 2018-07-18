@@ -1,0 +1,1 @@
+Adobe Flash is integrated with Microsoft Edge and updated via Windows Update. By default, Microsoft Edge runs Adobe Flash content.  With this policy, you can configure Microsoft Edge to prevent running Adobe Flash content.
