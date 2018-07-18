@@ -35,18 +35,6 @@ Though much  Windows BitLocker [documentation](bitlocker-overview.md) has been p
 
    <br />
 
-## BitLocker management at a glance
-
-| | PC – Old Hardware | PC – New* Hardware |[Servers](#servers)/[VMs](#VMs) | Phone 
-|---|---|----|---|---|
-|On-premises Domain-joined |[MBAM](#MBAM25)| [MBAM](#MBAM25) | [Scripts](#powershell) |N/A|
-|Cloud-managed|[MDM](#MDM) |Auto-encryption|[Scripts](#powershell)|[MDM](#MDM)/EAS|
-
-<br />
-*PC hardware that supports Modern Standby or HSTI 
-
-<br />
-<br />
 
  <a id="dom_join"></a>
 ## Recommendations for domain-joined computers
