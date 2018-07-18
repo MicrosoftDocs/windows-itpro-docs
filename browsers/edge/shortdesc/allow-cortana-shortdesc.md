@@ -1,0 +1,1 @@
+Since Microsoft Edge is integration with Cortana, and by default, Microsoft Edge allows users to use Cortana voice assistant. Disabling this policy prevents users from using Cortana, but they can still search to find items on their device.
