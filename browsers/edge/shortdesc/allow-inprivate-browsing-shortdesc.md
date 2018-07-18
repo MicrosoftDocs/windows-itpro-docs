@@ -1,0 +1,1 @@
+By default, Microsoft Edge allows InPrivate browsing, and after closing all InPrivate tabs, Microsoft Edge deletes the browsing data from the device.  Disabling this policy prevents InPrivate web browsing.
