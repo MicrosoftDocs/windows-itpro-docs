@@ -8,16 +8,9 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Prevent users from making changes to the home button settings. | |
-|Enabled |1 |1 |Allow users to make changes to the home button settings. | |
+|Disabled or not configured<br>**(default)** |0 |0 |Lock down the home button to prevent users from making changes. | |
+|Enabled |1 |1 |Let users make changes. | |
 ---
-
-With these values, you can do any of the following configurations:
-
-![Show home button and load Start page or New tab page](../images/home-button-start-new-tab-page.png)
-
-![Show home button and load custom URL](../images/home-button-custom-url.png)
-
 
 ### ADMX info and settings
 #### ADMX info

@@ -13,28 +13,20 @@
 ---
 
 ### Configuration options
-| **Do not sync browser settings** | **Prevent users from turning on browser syncing** | **Result** |
-| --- | --- | --- |
-| 0/disabled or not configured (default) – Turned on; users can make changes | 0/disabled (default) | Microsoft Edge syncs browser settings automatically. |
-| 0/disabled or not configured (default) – Turned on; users can make changes | 1/enabled or not configured | Microsoft Edge syncs browser settings automatically. |
-| 2/enabled – Prevented/turned off | 0/disabled (default) | Prevents syncing of browser setting, but gives users the choice to turn it on. |
-| 2/enabled – Turned off | 1/enabled or not configured | Prevents browser setting sync and prevents users from turning on syncing. |
-| 0/disabled or not configured (default) – Turned on; users can make changes | N/A | Turn on Sync your Settings option by default and allow users to make changes. |
----
 
 #### Sync the browser settings automatically:
-Disable both the Do not sync browser settings Prevent users from turning on browser syncing policies.
+**Disable** both the Do not sync browser settings Prevent users from turning on browser syncing policies.
 
 #### Prevent syncing of browser settings and prevent users from turning it on:
-1. Enable the Do not sync browser settings policy.
-2. Enable or don’t configure this policy (Prevented/turned off).
+1. **Enable** the Do not sync browser settings policy.
+2. **Enable** or don’t configure this policy (Prevented/turned off).
 
 #### Prevent syncing of browser settings and give users a choice to turn on syncing:
-1. Enable the Do not sync browser settings policy.
-2. Disable this policy (Allowed/turned on).
+1. **Enable** the Do not sync browser settings policy.
+2. **Disable** this policy (Allowed/turned on).
 
 #### Syncing turned off by default but not disabled:
-1. Enable the Do not sync browser setting policy.
+1. **Enable** the Do not sync browser setting policy.
 2. Select the _Allow users to turn “browser” syncing_ option.
 
 #### Verify configuration

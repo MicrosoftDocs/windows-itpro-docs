@@ -16,24 +16,11 @@
 <!-- put the grids in a document that categorizes the policies  -->
 | **Do not sync browser settings** | **Prevent users from turning on browser syncing** | **Result** |
 | --- | --- | --- |
-| 0/disabled or not configured (default) – Turned on; users can make changes | 0/disabled (default) | Microsoft Edge syncs browser settings automatically. |
-| 0/disabled or not configured (default) – Turned on; users can make changes | 1/enabled or not configured | Microsoft Edge syncs browser settings automatically. |
-| 2/enabled – Prevented/turned off | 0/disabled (default) | Prevent syncing of browser setting but gives users the choice to turn it on. |
-| 2/enabled – Turned off | 1/enabled or not configured | Prevent browser setting sync and prevents users from turning on syncing. |
-| 0/disabled or not configured (default) – Turned on; users can make changes | N/A | Turn on Sync your Settings option by default and allow users to make changes. |
+| Disabled or not configured (0 default) – Turned on. Let users make changes | Disabled (0 default) | Sync browser settings automatically. |
+| Disabled or not configured (0 default) – Turned on. Let users make changes | Enabled or not configured (1) | Sync browser settings automatically. |
+| Enabled (2) – Prevented/turned off  | Disabled (0 default) | Prevent syncing of browser settings and let users choose to turn it on. |
+| Enabled (2) – Turned off | Enabled or not configured (1) | Prevent syncing of browser settings and prevents users from turning on syncing. |
 ---
-
-#### Prevent syncing of browser settings and prevent users from turning it on:
-1. Enable the Do not sync browser settings policy.
-2. Enable or don’t configure this policy (Prevented/turned off).
-
-#### Prevent syncing of browser settings and give users a choice to turn on syncing:
-1. Enable the Do not sync browser settings policy.
-2. Disable this policy (Allowed/turned on).
-
-#### Turn off syncing by default but do not disable:
-1. Enable the Do not sync browser setting policy.
-2. Select the _Allow users to turn “browser” syncing_ option.
 
 ### ADMX info and settings
 #### ADMX info

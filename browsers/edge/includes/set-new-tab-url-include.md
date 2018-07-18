@@ -6,11 +6,10 @@
 
 ### Allowed values
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
+|Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |Blank |Blank |Load the default New tab page. | |
-|Enabled - String |String |String |Enter a URL in string format, for example, https://www.msn.com.<p>Prevent users from changing the New tab page.
-  | |
+|Disabled or not configured<br>**(default)** |Blank |Blank |Load the default New tab page. |
+|Enabled - String |String |String |Enter a URL in string format, for example, https://www.msn.com.<p>Prevent users from changing the New tab page. |
 ---
 
 ### ADMX info and settings

@@ -39,13 +39,13 @@ You can find the Microsoft Edge Group Policy settings in the following location 
 - [Prevent users from turning on browser syncing](#preventusersfromturningonbrowsersyncing)
 - [Set Home button URL](#set-home-button-url)
 - [Set New Tab page URL](#set-new-tab-page-url)
-- - *(Modified)* [Show message when opening sites in Internet Explorer](#showmessagewhenopeninginteretexplorersites)
+- _(Modified)_ [Show message when opening sites in Internet Explorer](#showmessagewhenopeninginteretexplorersites)
 - [Unlock Home button](#unlock-home-button)
 
 In addition to the new group policies, we added a couple of new MDM policies to align with the existing group policies.
 
-- **(New MDM)** [Experience/DoNotSyncBrowserSetting](#donotsyncbrowsersetting)
-- **(New MDM)** [Browser/AllowWebContentOnNewTabPage](#allowwebcontentonnewtabpage)
+- [Experience/DoNotSyncBrowserSetting](#donotsyncbrowsersetting)
+- [Browser/AllowWebContentOnNewTabPage](#allowwebcontentonnewtabpage)
 
 We are also deprecating the **Configure Favorites** group policy because ... Use the __ in place of Configure Favorites.  
  
@@ -114,4 +114,3 @@ We are also deprecating the **Configure Favorites** group policy because ... Use
 ## Unlock Home button
 [!INCLUDE [unlock-home-button-include.md](includes/unlock-home-button-include.md)]
 
-<hr>
