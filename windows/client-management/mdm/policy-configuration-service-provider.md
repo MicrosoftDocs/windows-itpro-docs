@@ -764,6 +764,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-defender.md#defender-avgcpuloadfactor" id="defender-avgcpuloadfactor">Defender/AvgCPULoadFactor</a>
   </dd>
   <dd>
+    <a href="./policy-csp-defender.md#defender-checkforsignaturesbeforerunningscan" id="defender-checkforsignaturesbeforerunningscan">Defender/CheckForSignaturesBeforeRunningScan</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-defender.md#defender-cloudblocklevel" id="defender-cloudblocklevel">Defender/CloudBlockLevel</a>
   </dd>
   <dd>
@@ -779,7 +782,16 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-defender.md#defender-daystoretaincleanedmalware" id="defender-daystoretaincleanedmalware">Defender/DaysToRetainCleanedMalware</a>
   </dd>
   <dd>
+    <a href="./policy-csp-defender.md#defender-disablecatchupfullscan" id="defender-disablecatchupfullscan">Defender/DisableCatchupFullScan</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-defender.md#defender-disablecatchupquickscan" id="defender-disablecatchupquickscan">Defender/DisableCatchupQuickScan</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-defender.md#defender-enablecontrolledfolderaccess" id="defender-enablecontrolledfolderaccess">Defender/EnableControlledFolderAccess</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-defender.md#defender-enablelowcpupriority" id="defender-enablelowcpupriority">Defender/EnableLowCPUPriority</a>
   </dd>
   <dd>
     <a href="./policy-csp-defender.md#defender-enablenetworkprotection" id="defender-enablenetworkprotection">Defender/EnableNetworkProtection</a>
@@ -810,6 +822,12 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-defender.md#defender-schedulescantime" id="defender-schedulescantime">Defender/ScheduleScanTime</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-defender.md#defender-signatureupdatefallbackorder" id="defender-signatureupdatefallbackorder">Defender/SignatureUpdateFallbackOrder</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-defender.md#defender-signatureupdatefilesharessources" id="defender-signatureupdatefilesharessources">Defender/SignatureUpdateFileSharesSources</a>
   </dd>
   <dd>
     <a href="./policy-csp-defender.md#defender-signatureupdateinterval" id="defender-signatureupdateinterval">Defender/SignatureUpdateInterval</a>
@@ -4103,12 +4121,16 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Defender/AttackSurfaceReductionOnlyExclusions](./policy-csp-defender.md#defender-attacksurfacereductiononlyexclusions)
 -   [Defender/AttackSurfaceReductionRules](./policy-csp-defender.md#defender-attacksurfacereductionrules)
 -   [Defender/AvgCPULoadFactor](./policy-csp-defender.md#defender-avgcpuloadfactor)
+-   [Defender/CheckForSignaturesBeforeRunningScan](./policy-csp-defender.md#defender-checkforsignaturesbeforerunningscan)
 -   [Defender/CloudBlockLevel](./policy-csp-defender.md#defender-cloudblocklevel)
 -   [Defender/CloudExtendedTimeout](./policy-csp-defender.md#defender-cloudextendedtimeout)
 -   [Defender/ControlledFolderAccessAllowedApplications](./policy-csp-defender.md#defender-controlledfolderaccessallowedapplications)
 -   [Defender/ControlledFolderAccessProtectedFolders](./policy-csp-defender.md#defender-controlledfolderaccessprotectedfolders)
 -   [Defender/DaysToRetainCleanedMalware](./policy-csp-defender.md#defender-daystoretaincleanedmalware)
+-   [Defender/DisableCatchupFullScan](./policy-csp-defender.md#defender-disablecatchupfullscan)
+-   [Defender/DisableCatchupQuickScan](./policy-csp-defender.md#defender-disablecatchupquickscan)
 -   [Defender/EnableControlledFolderAccess](./policy-csp-defender.md#defender-enablecontrolledfolderaccess)
+-   [Defender/EnableLowCPUPriority](./policy-csp-defender.md#defender-enablelowcpupriority)
 -   [Defender/EnableNetworkProtection](./policy-csp-defender.md#defender-enablenetworkprotection)
 -   [Defender/ExcludedExtensions](./policy-csp-defender.md#defender-excludedextensions)
 -   [Defender/ExcludedPaths](./policy-csp-defender.md#defender-excludedpaths)
@@ -4118,6 +4140,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Defender/ScheduleQuickScanTime](./policy-csp-defender.md#defender-schedulequickscantime)
 -   [Defender/ScheduleScanDay](./policy-csp-defender.md#defender-schedulescanday)
 -   [Defender/ScheduleScanTime](./policy-csp-defender.md#defender-schedulescantime)
+-   [Defender/SignatureUpdateFallbackOrder](./policy-csp-defender.md#defender-signatureupdatefallbackorder)
+-   [Defender/SignatureUpdateFileSharesSources](./policy-csp-defender.md#defender-signatureupdatefilesharessources)
 -   [Defender/SignatureUpdateInterval](./policy-csp-defender.md#defender-signatureupdateinterval)
 -   [Defender/SubmitSamplesConsent](./policy-csp-defender.md#defender-submitsamplesconsent)
 -   [Defender/ThreatSeverityDefaultAction](./policy-csp-defender.md#defender-threatseveritydefaultaction)
