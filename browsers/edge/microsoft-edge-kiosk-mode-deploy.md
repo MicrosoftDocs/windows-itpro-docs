@@ -47,7 +47,7 @@ The multi-app Microsoft Edge kiosk mode types include:
 
     ![multi-app public browsing station](images/Multi-app_kiosk_inFrame.png)
 
-4.  **Normal mode** mode runs a full version of Microsoft Edge, but some features may not work depending on what other apps you configured in assigned access. For example, if the Microsoft Store is not set up, users cannot install extensions. If you also have Internet Explorer 11 set up in assigned access, you can enable Enterprise Mode to automatically switch users to Internet Explorer 11 for sites that need backward compatibility support. 
+4.  **Normal mode** runs a full version of Microsoft Edge, but some features may not work depending on what other apps you configured in assigned access. For example, if Internet Explorer 11 is set up in assigned access, you can enable Enterprise Mode to automatically switch users to Internet Explorer 11 for sites that need backward compatibility support. 
 
     ![normal mode kiosk app](images/Normal_inFrame.png)
 
@@ -55,7 +55,7 @@ The multi-app Microsoft Edge kiosk mode types include:
 
 Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Edge in assigned access. You can set up Microsoft Edge kiosk mode in assigned access using:
 
--   **Windows Settings.** Best for physically setting up a single device as a kiosk. With this method, you set up assigned access and configure the kiosk or digital sign device using Settings.  You can configure Microsoft Edge in single-app (kiosk type – Full-screen or public browsing) and define a single URL for the Home Button, Start Page and New Tab page. You can also set the reset after idle timeout.
+-   **Windows Settings.** Best for physically setting up a single device as a kiosk. With this method, you set up assigned access and configure the kiosk or digital sign device using Settings.  You can configure Microsoft Edge in single-app (kiosk type – Full-screen or public browsing) and define a single URL for the Home Button, Start Page, and New Tab page. You can also set the reset after an idle timeout.
 
 -   **Microsoft Intune or other MDM service.** Best for setting up multiple devices as a kiosk. With this method, you configure Microsoft Edge in assigned access and configure how Microsoft Edge behaves when it’s running in kiosk mode with assigned access.
 
@@ -255,11 +255,11 @@ You can use any of the following policies to enhance the kiosk experience.  To l
 
 ## Known issues with RS_PRERELEASE build 17718
 
-- When you set up Microsoft Edge as your kiosk app and define the URL in assigned access Settings the URL Microsoft Edge may not get launched with the configured URL.
+- When you set up Microsoft Edge as your kiosk app and define the URL in assigned access Settings the URL, Microsoft Edge may not get launched with the configured URL.
     - **Expected behavior** – Microsoft Edge kiosk mode opens the URL on startup. 
     - **Actual behavior** – Microsoft Edge kiosk mode may not open with the URL on startup.
 
-- Bug with Microsoft Edge kiosk mode when setting up as a single-app in assigned access and “Configure kiosk mode” is not set. 
+- Bug with Microsoft Edge kiosk mode when setting up a single-app in assigned access and “Configure kiosk mode” is not set. 
     - **Expected behavior** – Microsoft Edge kiosk mode launches in full-screen mode. 
     - **Actual behavior** – Normal Microsoft Edge launches.
 
@@ -285,6 +285,8 @@ subcategory.
 
 ## Related topics
 
+-  **[Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](https://docs.microsoft.com/en-us/windows/configuration/setup-kiosk-digital-signage)**: Learn about the different methods to configuring your kiosks and digitals signs.  Also, learn about the settings you can use to lock down the kiosk for a more secure kiosk experience.
+
 -   **[Create a Kiosk Experience](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/create-a-kiosk-image):** Learn how to set up single-function kiosk devices, such as restaurant menus, and optional features for a welcome screen or power button availability. Also, learn how to create a multi-app kiosk, or fixed-purpose device, to provide an easy-to-understand experience giving users the things they need to use.
 
 -   **[Configure a Windows 10 kiosk that runs multiple apps](https://aka.ms/Ckmq4n):** Learn how to create kiosks that run more than one app and the benefits of a multi-app kiosk, or fixed-purpose device.
@@ -299,10 +301,9 @@ subcategory.
 
 -   **[AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/en-us/windows/client-management/mdm/assignedaccess-csp):** The AssignedAccess configuration service provider (CSP) sets the device to run in kiosk mode. Once the CSP has executed, then the next user login associated with the kiosk mode puts the device into the kiosk mode running the application specified in the CSP configuration.
 
--   **[Create a provisioning page for Windows 10](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package):*. Learn to use Windows Configuration Designer (WCD) to create a provisioning package (.ppkg) for configuring devices running Windows 10. The WCD wizard options provide a simple interface to configure desktop, mobile, and kiosk device settings.
+-   **[Create a provisioning page for Windows 10](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package):**. Learn to use Windows Configuration Designer (WCD) to create a provisioning package (.ppkg) for configuring devices running Windows 10. The WCD wizard options provide a simple interface to configure desktop, mobile, and kiosk device settings.
 
 ## Feature comparison of kiosk mode and kiosk browser app
-
 In the following table, we show you the features available in both Microsoft Edge kiosk mode and Kiosk Browser app available in Microsoft Store. Both kiosk mode and kiosk browser app work in assigned access.
 
 | **Feature**   | **Microsoft Edge kiosk mode**  | **Kiosk Browser**    |
