@@ -22,30 +22,31 @@ You can find the Microsoft Edge Group Policy settings in the following location 
 
 <!-- add links to the below policies -->
 
-- [Allow fullscreen mode](#allow-fullscreen-mode)
-- [Allow Microsoft Edge to start and load the Start and New Tab page at Windows startup and each time Microsoft Edge is closed](#allow-microsoft-edge-to-start-and-load-the-start-and-new-tab-page-at-windows-startup-and-each-time-microsoft-edge-is-closed)
-- [Allow Prelaunch](#allow-prelaunch)
-- [Allow printing](#allow-printing)
-- [Allow Saving History](#allow-saving-history)
-- [Allow sideloading of Extensions](#allow-sideloading-of-extensions)
-- [Configure collection of browsing data for Microsoft 365 Analytics](#configure-collection-of-browsing-data-for-microsoft-365-analytics)
-- [Configure Favorites Bar](#configure-favorites-bar)
-- [Configure Home Button](#configure-home-button)
-- [Configure kiosk mode](#configure-kiosk-mode)
-- [Configure kiosk reset after idle timeout](#configure-kiosk-reset-after-idle-timeout)
-- [Configure Open Microsoft Edge With](#configure-open-microsoft-edge-with)
-- [Prevent certificate error overrides](#prevent-certificate-error-overrides)
-- [Prevent turning off required extensions](#prevent-turning-off-required-extensions)
-- [Prevent users from turning on browser syncing](#preventusersfromturningonbrowsersyncing)
-- [Set Home button URL](#set-home-button-url)
-- [Set New Tab page URL](#set-new-tab-page-url)
-- _(Modified)_ [Show message when opening sites in Internet Explorer](#showmessagewhenopeninginteretexplorersites)
-- [Unlock Home button](#unlock-home-button)
 
-In addition to the new group policies, we added a couple of new MDM policies to align with the existing group policy counterpart.
-
-- [Experience/DoNotSyncBrowserSetting](#donotsyncbrowsersetting)
-- [Browser/AllowWebContentOnNewTabPage](#allowwebcontentonnewtabpage)
+| **Group Policy** | **New/update?** | **MDM Setting** | **New/update?** |
+| --- | --- | --- | --- |
+| [Allow fullscreen mode](#allow-fullscreen-mode) | New |  AllowFullscreen | New |
+| [Allow Microsoft Edge to start and load the Start and New Tab page at Windows startup and each time Microsoft Edge is closed](#allow-microsoft-edge-to-start-and-load-the-start-and-new-tab-page-at-windows-startup-and-each-time-microsoft-edge-is-closed) | New | PreventTabPreloading | New |
+| [Allow Prelaunch](#allow-prelaunch) | New | AllowPrelaunch | New |
+| [Allow printing](#allow-printing) | New |  AllowPrinting | New |
+| [Allow Saving History](#allow-saving-history) | New | AllowSavingHistory | New |
+| [Allow sideloading of Extensions](#allow-sideloading-of-extensions) | New | AllowSideloadingOfExtensions | New |
+| Allow web content on new tab page | -- | [Browser/AllowWebContentOnNewTabPage](#allowwebcontentonnewtabpage) | New |
+| [Configure collection of browsing data for Microsoft 365 Analytics](#configure-collection-of-browsing-data-for-microsoft-365-analytics) | New | ConfigureTelemetryForMicrosoft365Analytics | New |
+| [Configure Favorites Bar](#configure-favorites-bar) | New | ConfigureFavoritesBar | New |
+| [Configure Home Button](#configure-home-button) | New | ConfigureHomeButton | New |
+| [Configure kiosk mode](#configure-kiosk-mode) | New |  ConfigureKioskMode | New |
+| [Configure kiosk reset after idle timeout](#configure-kiosk-reset-after-idle-timeout) | New |  ConfigureKioskResetAfterIdleTimeout | New |
+| [Configure Open Microsoft Edge With](#configure-open-microsoft-edge-with) | New | ConfigureOpenMicrosoftEdgeWith | New |
+| Do not sync browser settings | -- | [Experience/DoNotSyncBrowserSetting](#donotsyncbrowsersetting)  | New |
+| [Prevent certificate error overrides](#prevent-certificate-error-overrides) | New | PreventCertErrorOverrides | New |
+| [Prevent users from turning on browser syncing](#preventusersfromturningonbrowsersyncing) | New | PreventUsersFromTurningOnBrowserSyncing | New |
+| [Prevent turning off required extensions](#prevent-turning-off-required-extensions) | New | PreventTurningOffRequiredExtensions | New |
+| [Set Home button URL](#set-home-button-url) | New | SetHomeButtonURL | New |
+| [Set New Tab page URL](#set-new-tab-page-url) | New | SetNewTabPageURL | New |
+| [Show message when opening sites in Internet Explorer](#showmessagewhenopeninginteretexplorersites) | Updated | ShowMessageWhenOpeningInteretExplorerSites | Updated |
+| [Unlock Home button](#unlock-home-button) | New | UnlockHomeButton | New |
+---
 
 We are also deprecating the **Configure Favorites** group policy because no MDM equivalent existed. Use the **[Provision Favorites](available-policies.md#provision-favorites)** in place of Configure Favorites.   
  
