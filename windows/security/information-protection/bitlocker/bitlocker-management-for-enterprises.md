@@ -55,7 +55,7 @@ Windows continues to be the focus for new features and improvements for built-in
 
 Companies that image their own computers using Microsoft System Center 2012 Configuration Manager SP1 (SCCM) or later can use an existing task sequence to [pre-provision BitLocker](https://technet.microsoft.com/library/hh846237.aspx#BKMK_PreProvisionBitLocker) encryption while in Windows Preinstallation Environment (WinPE) and can then [enable protection](https://technet.microsoft.com/library/hh846237.aspx#BKMK_EnableBitLocker). This can help ensure that computers are encrypted from the start, even before users receive them. As part of the imaging process, a company could also decide to use SCCM to pre-set any desired [BitLocker Group Policy](https://technet.microsoft.com/library/ee706521(v=ws.10).aspx).
 
-For older client computers with BitLocker that are domain joined on-premises, Microsoft BitLocker Administration and Management<sup>[1]</sup> (MBAM) remains the best way to manage BitLocker. MBAM continues to be maintained and receives security patches. Using MBAM provides the following functionality:
+For older client computers with BitLocker that are domain joined on-premises, use Microsoft BitLocker Administration and Management<sup>[1]</sup>. Using MBAM provides the following functionality:
 
 - Encrypts device with BitLocker using MBAM
 - Stores BitLocker Recovery keys in MBAM Server
