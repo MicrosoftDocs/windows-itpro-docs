@@ -12,7 +12,7 @@
 ### Allowed values
 
 |Group Policy  |MDM |Registry |Description |
-|---|---|---|---|
+|---|:---:|:---:|---|
 |Not configured |Blank |Blank |If you don't configure this policy and you enable the Disable Lockdown of Start Pages policy, users can change or customize the Start page. |
 |Enabled |0 |0 |Loads the Start page. |
 |Enabled |1 |1 |Load the New tab page. |
@@ -34,74 +34,6 @@
 
 
 If you want to make changes to this policy:<ol><li>Set the Disabled Lockdown of Start Pages to not configured.</li><li>Make changes to the Configure Open Microsoft With policy.</li><li>Enable the Disabled Lockdown of Start Pages.</li></ol>
-
-#### Load URLs defined in the Configure Open Microsoft Edge With policy, and let users make changes.
-
-1. Enable the **Configure Open Microsoft Edge With** policy. Applies to all options for this policy. <p>
-
-2. In the **Configure Start Pages** policy, enter URLs to the pages, separating multiple pages by using angle brackets:<p>\<support.contoso.com\>\<support.microsoft.com\>
-
-3. Enable the **Disabled Lockdown of Start Pages** policy by selecting *All configured start pages are editable*.
-
----
-
-#### Load any start page and let users make changes.
-
-1. Disable or don't configure the **Configure Open Microsoft Edge With** policy.
-
-2. In the **Configure Start Pages** policy, enter URLs to the pages, separating multiple pages by using angle brackets in the following format:<p> \<support.contoso.com\>\<support.microsoft.com\>
-
-3. Enable the **Disabled Lockdown of Start Pages** policy by selecting *Start pages are not editable*.
-
----
-
-#### Load Start page(s) and prevent users from making changes.
-
-1. Enable the **Configure Open Microsoft Edge With** policy by selecting *Start page*.<p>
-
-2. In the **Configure Start Pages** policy, enter URLs to the pages, separating multiple pages by using angle brackets:<p>\<support.contoso.com\>\<support.microsoft.com\>
-
-3. Disable or don't configure the **Disabled Lockdown of Start Pages** policy.
-
----
-
-#### Load New tab page and prevent users from making changes.
-
-1. Enable the **Configure Open Microsoft Edge With** policy by selecting *New tab page*.<p>
-
-2. In the **Configure Start Pages** policy, enter URLs to the pages, separating multiple pages by using angle brackets:<p>\<support.contoso.com\>\<support.microsoft.com\>
-
-3. Disable or don't configure the **Disabled Lockdown of Start Pages** policy.
-
----
-
-#### Load previously opened pages and prevent users from making changes.
-
-1. Enable the **Configure Open Microsoft Edge With** policy by selecting *Previous pages*.<p>
-
-2. In the **Configure Start Pages** policy, enter URLs to the pages, separating multiple pages by using angle brackets:<p>\<support.contoso.com\>\<support.microsoft.com\>
-
-3. Disable or don't configure the **Disabled Lockdown of Start Pages** policy.
-
----
-
-#### Load a specific page or pages and prevent users from making changes.
-
-1. Enable the **Configure Open Microsoft Edge With** policy by selecting *A specific page or pages*.<p>
-
-2. In the **Configure Start Pages** policy, enter URLs to the pages, separating multiple pages by using angle brackets:<p>\<support.contoso.com\>\<support.microsoft.com\>
-
-3. Disable or don't configure the **Disabled Lockdown of Start Pages** policy.
-
----
-
-#### Load a specific page or pages and let users make changes.
-
-1. Enable the **Configure Open Microsoft Edge With** policy by selecting *A specific page or pages*. <p>
-
-2. In the **Configure Start Pages** policy, enter URLs to the pages, separating multiple pages by using angle brackets:<p>\<support.contoso.com\>\<support.microsoft.com\>
-
-3. Enable **Disabled Lockdown of Start Pages** by selecting *Start pages are not editable*.
 
 
 ### ADMX info and settings

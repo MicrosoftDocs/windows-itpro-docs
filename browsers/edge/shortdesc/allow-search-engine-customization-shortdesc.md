@@ -1,1 +1,1 @@
-By default, users can add new search engines or change the default search engine, in Settings, in Microsoft Edge. Disabling this policy prevents users from customizing the search engine in Microsoft Edge. 
+By default, users can add new search engines or change the default search engine, in Settings. With this policy, you can prevent users from customizing the search engine in Microsoft Edge. 

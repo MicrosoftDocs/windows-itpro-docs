@@ -1,6 +1,6 @@
 <!-- ## Allow Start and New Tab page preload (aka: AllowStartAndNewTabPagePreload) 
 >*Supported versions: Microsoft Edge on Windows 10, version 1802*<br> -->
->*Default setting:  Enabled or not configured (Allow preloading)*
+>*Default setting:  Enabled or not configured (Allowed)*
 
 [!INCLUDE [allow-tab-preloading-shortdesc](../shortdesc/allow-tab-preloading-shortdesc.md)]
 
@@ -9,7 +9,7 @@
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Enabled or not configured<br>**(default)** |0 |0 |Allowed. Preload Start and New tab pages. | |
-|Disabled |1 |1 |Prevent/not allowed. |![Most restricted value](../images/check-gn.png) |
+|Disabled |1 |1 |Prevented/not allowed. |![Most restricted value](../images/check-gn.png) |
 ---
 
 ### ADMX info and settings

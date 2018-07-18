@@ -1,1 +1,1 @@
-By default, Microsoft Edge automatically updates the configuration data for the Books Library.  Enabling this policy prevents Microsoft Edge from updating the configuration data. 
+Microsoft Edge automatically updates the configuration data for the Books Library. Disabling this policy prevents Microsoft Edge from updating the configuration data.
