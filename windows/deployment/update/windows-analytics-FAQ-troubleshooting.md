@@ -20,12 +20,13 @@ This topic compiles the most common issues encountered with configuring and usin
 
 If you've followed the steps in the [Enrolling devices in Windows Analytics](windows-analytics-get-started.md) topic and are still encountering problems, you might find the solution here.
 
-[Devices not showing up](#devices-not-showing-up)
+[Devices not appearing in Upgrade Readiness](#devices-not-appearing-in-upgrade-readiness)
 
-[Device Health crash data not appearing](#device-health-crash-data-not-appearing)
+[Devices not appearing in Device Health Device Reliability](#devices-not-appearing-in-device-health-device-reliability)
+
+[Device crashes not appearing in Device Health Device Reliability](#device-crashes-not-appearing-in-device-health-device-reliability)
 
 [Apps not appearing in Device Health App Reliability](#apps-not-appearing-in-device-health-app-reliability)
-
 
 [Upgrade Readiness shows many "Computers with outdated KB"](#upgrade-readiness-shows-many-computers-with-outdated-kb)
 
@@ -38,7 +39,7 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 [Exporting large data sets](#exporting-large-data-sets)
 
 
-### Devices not showing up
+### Devices not appearing in Upgrade Readiness
 
 In Log Analytics, go to **Settings > Connected sources > Windows telemetry** and verify that you are subscribed to the Windows Analytics solutions you intend to use.
 
@@ -65,7 +66,9 @@ If you have deployed images that have not been generalized, then many of them mi
 2. Reg delete hklm\software\microsoft\sqmclient /v MachineId /f
 3. Net start diagtrack
 
-#### Devices not showing up in Device Health
+#### Devices not appearing in Device Health Device Reliability
+
+[![Device Reliability tile showing device count highlighted](images/device-reliability-device-count.png)](images/device-reliability-device-count.png)
 
 If you have devices that appear in other solutions, but not Device Health, follow these steps to investigate the issue:
 1. Confirm that the devices are running Windows10.
@@ -76,11 +79,13 @@ If you have devices that appear in other solutions, but not Device Health, follo
 6. If you need additional troubleshooting, contact Microsoft Support.
 
 
-### Device Health crash data not appearing
+### Device crashes not appearing in Device Health Device Reliability
 
-If you know that devices are experiencing crashes that do not seem to be reflected in the count of devices with crashes, follow these steps to investigate the issue:
+[![Device Reliability tile showing crash count highlighted](images/device-reliability-crash-count.png)](images/device-reliability-crash-count.png)
 
-1. Verify that devices are reporting data properly by following the steps in the [Devices not showing up](#devices-not-showing-up) section of this topic.
+If you know that devices are experiencing stop error crashes that do not seem to be reflected in the count of devices with crashes, follow these steps to investigate the issue:
+
+1. Verify that devices are reporting data properly by following the steps in the [Devices not appearing in Device Health Device Reliability](#devices-not-appearing-in-device-health-device-reliability) section of this topic.
 2. Trigger a known crash on a test device by using a tool such as [NotMyFault](https://docs.microsoft.com/sysinternals/downloads/notmyfault) from Windows Sysinternals.
 3. Verify that Windows Error Reporting (WER) is not disabled or redirected by confirming the registry settings in **HKLM\SOFTWARE\Microsoft\Windows\Windows Error Reporting** (or **HKLM\Software\Policies\Microsoft\Windows\DataCollection**, which will take precedence if set):
 
@@ -89,7 +94,11 @@ If you know that devices are experiencing crashes that do not seem to be reflect
 - Verify that the value "CorporateWERServer" (REG_SZ) is not configured.
 
 4. Verify that WER can reach all diagnostic endpoints specified in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md)--if WER can only reach some of the endpoints, it could be included in the device count while not reporting crashes.
-5. Check that crash reports successfully complete the round trip with Event 1001 and that BucketID is not blank. You can use the following Windows PowerShell snippet to summarize recent occurences of Event 1001. Most events should have a value for BucketID (a few intermittent blank values are OK, however).
+5. Check that crash reports successfully complete the round trip with Event 1001 and that BucketID is not blank. A typical such event looks like this:
+
+[![Event viewer detail showing Event 1001 details](images/event_1001.png)](images/event_1001.png)
+ 
+You can use the following Windows PowerShell snippet to summarize recent occurences of Event 1001. Most events should have a value for BucketID (a few intermittent blank values are OK, however).
 
 ```powershell
 
@@ -116,64 +125,22 @@ Get-WinEvent -FilterHashTable @{ProviderName="Windows Error Reporting"; ID=1001}
 
 Devices must be able to reach the endpoints specified in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md).
 
-If you are using proxy server authentication, it is worth taking extra care to check the configuration. Prior to Windows 10, version 1703, WER uploads error reports in the machine context. Both user (typically authenticated) and machine (typically anonymous) contexts require access through proxy servers to the diagnostic endpoints. In Windows 10, version 1703, and later WER will attempt to use the context of the user that is logged on for proxy authentication such that only the user account requires proxy access.
- 
-Therefore, it's important to ensure that both machine and user accounts have access to the endpoints using authentication (or to whitelist the endpoints so that outbound proxy authentication is not required). For suggested methods, see [Enrolling devices in Windows Analytics](windows-analytics-get-started.md#configuring-endpoint-access-with-proxy-server-authentication).
- 
-To test access as a given user, you can run this Windows PowerShell cmdlet *while logged on as that user*: 
+If you are using proxy server authentication, it's worth taking extra care to check the configuration. Prior to Windows 10, version 1703, WER only uploads error reports in the machine context, so whitelisting endpoints to allow non-authenticated access was typically used. In Windows 10, version 1703 and later versions, WER will attempt to use the context of the user that is logged on for proxy authentication such that only the user account requires proxy access.
 
-```powershell
 
-$endPoints = @(
-        'watson.telemetry.microsoft.com'
-        'oca.telemetry.microsoft.com'
-        'v10.events.data.microsoft.com'
-    )
-
-$endPoints | %{ Test-NetConnection -ComputerName $_ -Port 443 -ErrorAction Continue } | Select-Object -Property ComputerName,TcpTestSucceeded
-
-```
-
-If this is successful, `TcpTestSucceeded` should return `True` for each of the endpoints.
-
-To test access in the machine context (requires administrative rights), run the above as SYSTEM using PSexec or Task Scheduler, as in this example:
-
-```powershell
-
-[scriptblock]$accessTest = {
-    $endPoints = @(
-        'watson.telemetry.microsoft.com'
-        'oca.telemetry.microsoft.com'
-        'v10.events.data.microsoft.com'
-    )
-
-    $endPoints | %{ Test-NetConnection -ComputerName $_ -Port 443 -ErrorAction Continue } | Select-Object -Property ComputerName,TcpTestSucceeded
-}
-
-$scriptFullPath = Join-Path $env:ProgramData "TestAccessToMicrosoftEndpoints.ps1"
-$outputFileFullPath = Join-Path $env:ProgramData "TestAccessToMicrosoftEndpoints_Output.txt"
-$accessTest.ToString() > $scriptFullPath
-$null > $outputFileFullPath
-$taskAction = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument "-ExecutionPolicy Bypass -Command `"&{$scriptFullPath > $outputFileFullPath}`"" 
-$taskTrigger = New-ScheduledTaskTrigger -Once -At (Get-Date).Addseconds(10)
-$task = Register-ScheduledTask -User 'NT AUTHORITY\SYSTEM' -TaskName 'MicrosoftTelemetryAccessTest' -Trigger $taskTrigger -Action $taskAction -Force
-Start-Sleep -Seconds 120
-Unregister-ScheduledTask -TaskName $task.TaskName -Confirm:$false
-Get-Content $outputFileFullPath
-
-```
-
-As in the other example, if this is successful, `TcpTestSucceeded` should return `True` for each of the endpoints.
+For more information, see [Enrolling devices in Windows Analytics](windows-analytics-get-started.md#configuring-endpoint-access-with-proxy-server-authentication).
 
 ### Apps not appearing in Device Health App Reliability
 
-If apps that you know are installed do not appear in App Reliability, follow these steps to investigate the issue:
+[![App Reliability tile showing relability events trend](images/app-reliability.png)](images/app-reliability.png)
 
-1. Double-check the steps in the [Devices not showing up](#devices-not-showing-up) and [Device Health crash data not appearing](#device-health-crash-data-not-appearing) sections of this topic.
+If apps that you know are crashing do not appear in App Reliability, follow these steps to investigate the issue:
+
+1. Double-check the steps in the [Devices not appearing in Device Health Device Reliability](#devices-not-appearing-in-device-health-device-reliability) and [Device crashes not appearing in Device Health Device Reliability](#device-crashes-not-appearing-in-device-health-device-reliability) sections of this topic.
 2. Confirm that an in-scope application has crashed on an enrolled device. Keep the following points in mind:
-- Not all user-mode crashes are included in App Reliability, which tracks only apps that have a GUI, include user interaction, and are not part of the operating system.
-- Enrolling more devices ensures helps to ensure that there are enough naturally occurring app crashes.
-- You can use tools which are designed to crash on demand.
+- Not all user-mode crashes are included in App Reliability, which tracks only apps that have a GUI, have been used interactively by a user, and are not part of the operating system.
+- Enrolling more devices helps to ensure that there are enough naturally occurring app crashes.
+- You can also use test apps which are designed to crash on demand.
 
 3. Verify that *per-user* Windows Error Reporting (WER) is not disabled or redirected by confirming the registry settings in **HKCU\SOFTWARE\Microsoft\Windows\Windows Error Reporting** (or **HKCU\Software\Policies\Microsoft\Windows\DataCollection**, which will take precedence if set):
 
