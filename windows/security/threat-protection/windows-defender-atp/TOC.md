@@ -1,4 +1,4 @@
-# [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md)
+# [Windows Defender Security Center](windows-defender-security-center-atp.md)
 ##Get started
 ### [Minimum requirements](minimum-requirements-windows-defender-advanced-threat-protection.md)
 ### [Validate licensing and complete setup](licensing-windows-defender-advanced-threat-protection.md)
@@ -21,7 +21,7 @@
 ### [Run simulated attacks on machines](attack-simulations-windows-defender-advanced-threat-protection.md)
 ### [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
 ### [Troubleshoot onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
-## [Understand the Windows Defender ATP portal](use-windows-defender-advanced-threat-protection.md)
+## [Understand the portal](use-windows-defender-advanced-threat-protection.md)
 ### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
 ### [View the Security operations dashboard](security-operations-dashboard-windows-defender-advanced-threat-protection.md)
 ### [View the Secure Score dashboard and improve your secure score](secure-score-dashboard-windows-defender-advanced-threat-protection.md)
@@ -77,6 +77,7 @@
 #### [Advanced hunting reference](advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
 #### [Advanced hunting query language best practices](advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
 
+## [Protect data with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
 ##API and SIEM support
 ### [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md)
 #### [Enable SIEM integration](enable-siem-integration-windows-defender-advanced-threat-protection.md)
@@ -165,7 +166,7 @@
 ### [Inactive machines](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#inactive-machines)
 ### [Misconfigured machines](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#misconfigured-machines)
 ### [Check service health](service-status-windows-defender-advanced-threat-protection.md)
-## [Configure Windows Defender ATP Settings](preferences-setup-windows-defender-advanced-threat-protection.md)
+## [Configure Windows Defender Security Center settings](preferences-setup-windows-defender-advanced-threat-protection.md)
 
 ###General
 #### [Update data retention settings](data-retention-settings-windows-defender-advanced-threat-protection.md)
@@ -173,7 +174,7 @@
 #### [Enable and create Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
 #### [Enable Secure score security controls](enable-secure-score-windows-defender-advanced-threat-protection.md)
 #### [Configure advanced features](advanced-features-windows-defender-advanced-threat-protection.md)
-#### [Protect data with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
+
 
 ###Permissions
 #### [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md)
@@ -193,9 +194,9 @@
 #### [Onboarding machines](onboard-configure-windows-defender-advanced-threat-protection.md)
 #### [Offboarding machines](offboard-machines-windows-defender-advanced-threat-protection.md)
 
-## [Configure Windows Defender ATP time zone settings](time-settings-windows-defender-advanced-threat-protection.md)
+## [Configure Windows Defender Security Center zone settings](time-settings-windows-defender-advanced-threat-protection.md)
 
 ## [Access the Windows Defender ATP Community Center](community-windows-defender-advanced-threat-protection.md)
-## [Troubleshoot Windows Defender ATP](troubleshoot-windows-defender-advanced-threat-protection.md)
+## [Troubleshoot Windows Defender ATP service issues](troubleshoot-windows-defender-advanced-threat-protection.md)
 ### [Review events and errors on machines with Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
-## [Windows Defender Antivirus compatibility with Windows Defender ATP](defender-compatibility-windows-defender-advanced-threat-protection.md)
+

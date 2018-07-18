@@ -91,9 +91,9 @@ If a proxy or firewall is blocking all traffic by default and allowing only spec
 Service location | Microsoft.com DNS record
 :---|:---
 Common URLs for all locations | ```*.blob.core.windows.net``` <br>```crl.microsoft.com```<br> ```ctldl.windowsupdate.com``` <br>```events.data.microsoft.com```
-US | ```us.vortex-win.data.microsoft.com```<br> ```us-v20.events.data.microsoft.com```<br>```winatp-gw-cus.microsoft.com``` <br>```winatp-gw-eus.microsoft.com```
-Europe | ```eu.vortex-win.data.microsoft.com```<br>```eu-v20.events.data.microsoft.com```<br>```winatp-gw-neu.microsoft.com```<br>```winatp-gw-weu.microsoft.com```
-UK | ```uk.vortex-win.data.microsoft.com``` <br>```uk-v20.events.data.microsoft.com```<br>```winatp-gw-uks.microsoft.com```<br>```winatp-gw-ukw.microsoft.com```
+European Union | ```eu.vortex-win.data.microsoft.com```<br>```eu-v20.events.data.microsoft.com```<br>```winatp-gw-neu.microsoft.com```<br>```winatp-gw-weu.microsoft.com```
+United Kingdom | ```uk.vortex-win.data.microsoft.com``` <br>```uk-v20.events.data.microsoft.com```<br>```winatp-gw-uks.microsoft.com```<br>```winatp-gw-ukw.microsoft.com```
+United States | ```us.vortex-win.data.microsoft.com```<br> ```us-v20.events.data.microsoft.com```<br>```winatp-gw-cus.microsoft.com``` <br>```winatp-gw-eus.microsoft.com```
 
 
 If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted in the above listed URLs.

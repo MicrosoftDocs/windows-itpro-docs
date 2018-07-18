@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot Windows Defender Advanced Threat Protection
+title: Troubleshoot Windows Defender Advanced Threat Protection service issues
 description: Find solutions and work arounds to known issues such as server errors when trying to access the service.
 keywords: troubleshoot Windows Defender Advanced Threat Protection, troubleshoot Windows ATP, server error, access denied, invalid credentials, no data, dashboard portal, whitelist, event viewer
 search.product: eADQiWindows 10XVcnh
@@ -10,17 +10,12 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 10/23/2017
+ms.date: 07/12/2017
 ---
 
-# Troubleshoot Windows Defender Advanced Threat Protection
+# Troubleshoot service issues
 
 **Applies to:**
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
@@ -32,7 +27,7 @@ If you encounter a server error when trying to access the service, you’ll need
 Configure your browser to allow cookies.
 
 ### Elements or data missing on the portal
-If some UI elements or data is missing on the Windows Defender ATP portal it’s possible that proxy settings are blocking it.
+If some UI elements or data is missing on Windows Defender Security Center it’s possible that proxy settings are blocking it.
 
 Make sure that `*.securitycenter.windows.com` is included the proxy whitelist.
 

@@ -389,6 +389,29 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### BITS policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-bits.md#bits-bandwidththrottlingendtime" id="bits-bandwidththrottlingendtime">BITS/BandwidthThrottlingEndTime</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-bits.md#bits-bandwidththrottlingstarttime" id="bits-bandwidththrottlingstarttime">BITS/BandwidthThrottlingStartTime</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-bits.md#bits-bandwidththrottlingtransferrate" id="bits-bandwidththrottlingtransferrate">BITS/BandwidthThrottlingTransferRate</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-bits.md#bits-costednetworkbehaviorbackgroundpriority" id="bits-costednetworkbehaviorbackgroundpriority">BITS/CostedNetworkBehaviorBackgroundPriority</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-bits.md#bits-costednetworkbehaviorforegroundpriority" id="bits-costednetworkbehaviorforegroundpriority">BITS/CostedNetworkBehaviorForegroundPriority</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-bits.md#bits-jobinactivitytimeout" id="bits-jobinactivitytimeout">BITS/JobInactivityTimeout</a>
+  </dd>
+</dl>
+
 ### Bluetooth policies
 
 <dl>
@@ -988,6 +1011,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### DmaGuard policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-dmaguard.md#dmaguard-deviceenumerationpolicy" id="dmaguard-deviceenumerationpolicy">DmaGuard/DeviceEnumerationPolicy</a>
+  </dd>
+</dl>
+
 ### Education policies
 
 <dl>
@@ -1065,6 +1096,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 ### Experience policies
 
 <dl>
+  <dd>
+    <a href="./policy-csp-experience.md#experience-allowclipboardhistory" id="experience-allowclipboardhistory">Experience/AllowClipboardHistory</a>
+  </dd>
   <dd>
     <a href="./policy-csp-experience.md#experience-allowcopypaste" id="experience-allowcopypaste">Experience/AllowCopyPaste</a>
   </dd>
@@ -3991,6 +4025,12 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Autoplay/DisallowAutoplayForNonVolumeDevices](./policy-csp-autoplay.md#autoplay-disallowautoplayfornonvolumedevices)
 -   [Autoplay/SetDefaultAutoRunBehavior](./policy-csp-autoplay.md#autoplay-setdefaultautorunbehavior)
 -   [Autoplay/TurnOffAutoPlay](./policy-csp-autoplay.md#autoplay-turnoffautoplay)
+-   [BITS/BandwidthThrottlingEndTime](./policy-csp-bits.md#bits-bandwidththrottlingendtime)
+-   [BITS/BandwidthThrottlingStartTime](./policy-csp-bits.md#bits-bandwidththrottlingstarttime)
+-   [BITS/BandwidthThrottlingTransferRate](./policy-csp-bits.md#bits-bandwidththrottlingtransferrate)
+-   [BITS/CostedNetworkBehaviorBackgroundPriority](./policy-csp-bits.md#bits-costednetworkbehaviorbackgroundpriority)
+-   [BITS/CostedNetworkBehaviorForegroundPriority](./policy-csp-bits.md#bits-costednetworkbehaviorforegroundpriority)
+-   [BITS/JobInactivityTimeout](./policy-csp-bits.md#bits-jobinactivitytimeout)
 -   [Browser/AllowAddressBarDropdown](./policy-csp-browser.md#browser-allowaddressbardropdown)
 -   [Browser/AllowAutofill](./policy-csp-browser.md#browser-allowautofill)
 -   [Browser/AllowCookies](./policy-csp-browser.md#browser-allowcookies)
@@ -4118,6 +4158,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Display/EnablePerProcessDpiForApps](./policy-csp-display.md#display-enableperprocessdpiforapps)
 -   [Display/TurnOffGdiDPIScalingForApps](./policy-csp-display.md#display-turnoffgdidpiscalingforapps)
 -   [Display/TurnOnGdiDPIScalingForApps](./policy-csp-display.md#display-turnongdidpiscalingforapps)
+-   [DmaGuard/DeviceEnumerationPolicy](./policy-csp-dmaguard.md#dmaguard-deviceenumerationpolicy)
 -   [Education/PreventAddingNewPrinters](./policy-csp-education.md#education-preventaddingnewprinters)
 -   [ErrorReporting/CustomizeConsentSettings](./policy-csp-errorreporting.md#errorreporting-customizeconsentsettings)
 -   [ErrorReporting/DisableWindowsErrorReporting](./policy-csp-errorreporting.md#errorreporting-disablewindowserrorreporting)
@@ -4128,6 +4169,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [EventLogService/SpecifyMaximumFileSizeApplicationLog](./policy-csp-eventlogservice.md#eventlogservice-specifymaximumfilesizeapplicationlog)
 -   [EventLogService/SpecifyMaximumFileSizeSecurityLog](./policy-csp-eventlogservice.md#eventlogservice-specifymaximumfilesizesecuritylog)
 -   [EventLogService/SpecifyMaximumFileSizeSystemLog](./policy-csp-eventlogservice.md#eventlogservice-specifymaximumfilesizesystemlog)
+-   [Experience/AllowClipboardHistory](./policy-csp-experience.md#experience-allowclipboardhistory)
 -   [Experience/AllowCortana](./policy-csp-experience.md#experience-allowcortana)
 -   [Experience/AllowFindMyDevice](./policy-csp-experience.md#experience-allowfindmydevice)
 -   [Experience/AllowTailoredExperiencesWithDiagnosticData](./policy-csp-experience.md#experience-allowtailoredexperienceswithdiagnosticdata)

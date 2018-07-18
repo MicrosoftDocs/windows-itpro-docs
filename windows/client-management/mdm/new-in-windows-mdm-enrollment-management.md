@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 06/26/2018
+ms.date: 07/16/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -1623,6 +1623,47 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### July 2018
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node AllowStandardUserEncryption.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node SMBIOSSerialNumber.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies in Windows 10, next major version:</p>
+<ul>
+<li>ApplicationManagement/LaunchAppAfterLogOn</li>
+<li>ApplicationManagement/ScheduleForceRestartForUpdateFailures </li>
+<li>DmaGuard/DeviceEnumerationPolicy</li>
+<li>Experience/AllowClipboardHistory</li>
+<li>TaskManager/AllowEndTask</li>
+<li>WindowsLogon/DontDisplayNetworkSelectionUI</li>
+</ul>
+<p>Recent changes:</p>
+<ul>
+<li>DataUsage/SetCost3G - deprecated in RS5.</li>
+</ul>
+</td></tr>
+</tbody>
+</table>
+
 ### June 2018
 
 <table class="mx-tdBreakAll">
@@ -1648,6 +1689,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Added procedure for collecting logs remotely from Windows 10 Holographic.</li>
 <li>Added procedure for downloading the MDM Diagnostic Information log.</li>
 </ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Bitlocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top"><p>Added new node AllowStandardUserEncryption.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
