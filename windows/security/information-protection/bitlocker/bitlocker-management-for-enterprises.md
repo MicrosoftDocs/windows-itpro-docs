@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: brianlic-msft
-ms.date: 10/27/2017
+ms.date: 07/18/2018
 ---
 
 # BitLocker Management Recommendations for Enterprises
