@@ -58,7 +58,8 @@ Companies that image their own computers using Microsoft System Center 2012 Conf
 For older client computers with BitLocker that are domain joined on-premises, Microsoft recommends moving from Microsoft BitLocker Administration and Management<sup>[1]</sup> to cloud management:
 
 1. Disable MBAM management and leave MBAM as only a database backup for the recovery key.
-2. Join the computers to Azure Active Directory (Azure AD). BitLocker will generate a new recovery key and upload it to Azure AD. 
+2. Join the computers to Azure Active Directory (Azure AD). 
+3. Use `Manage-bde -protectors -aadbackup` to backup the recovery key to Azure AD.
 
 BitLocker recovery keys can be managed from Azure AD thereafter. The MBAM database does not need to be migrated. 
 
