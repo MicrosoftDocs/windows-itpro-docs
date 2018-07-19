@@ -13,7 +13,7 @@ ms.date: 07/18/2018
 # Deploy Microsoft Edge kiosk mode (Preview)
 
 >Applies to: Microsoft Edge on Windows 10 <br>
->Preview build 17718
+>Preview build 17713+
 
 Microsoft Edge kiosk mode works with assigned access to let IT administrators create a tailored browsing experience designed for kiosk devices. To use Microsoft Edge kiosk mode, you must configure Microsoft Edge as an application in assigned access. Learn more about [Configuring kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc).
 
