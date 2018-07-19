@@ -11,7 +11,7 @@
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
 |Not configured |Blank |Blank |Users can choose what loads on the New tab page. | 
-|Disabled |0 |0 |Load a blank page instead of the default New tab page and prevents users from changing it. | 
+|Disabled |0 |0 |Load a blank page instead of the default New tab page and prevent users from changing it. | 
 |Enabled **(default)** |1 |1 |Load the default New tab page. | 
 ---
 

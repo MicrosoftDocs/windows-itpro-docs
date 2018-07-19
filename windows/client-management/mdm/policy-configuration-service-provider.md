@@ -764,6 +764,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-defender.md#defender-avgcpuloadfactor" id="defender-avgcpuloadfactor">Defender/AvgCPULoadFactor</a>
   </dd>
   <dd>
+    <a href="./policy-csp-defender.md#defender-checkforsignaturesbeforerunningscan" id="defender-checkforsignaturesbeforerunningscan">Defender/CheckForSignaturesBeforeRunningScan</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-defender.md#defender-cloudblocklevel" id="defender-cloudblocklevel">Defender/CloudBlockLevel</a>
   </dd>
   <dd>
@@ -779,7 +782,16 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-defender.md#defender-daystoretaincleanedmalware" id="defender-daystoretaincleanedmalware">Defender/DaysToRetainCleanedMalware</a>
   </dd>
   <dd>
+    <a href="./policy-csp-defender.md#defender-disablecatchupfullscan" id="defender-disablecatchupfullscan">Defender/DisableCatchupFullScan</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-defender.md#defender-disablecatchupquickscan" id="defender-disablecatchupquickscan">Defender/DisableCatchupQuickScan</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-defender.md#defender-enablecontrolledfolderaccess" id="defender-enablecontrolledfolderaccess">Defender/EnableControlledFolderAccess</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-defender.md#defender-enablelowcpupriority" id="defender-enablelowcpupriority">Defender/EnableLowCPUPriority</a>
   </dd>
   <dd>
     <a href="./policy-csp-defender.md#defender-enablenetworkprotection" id="defender-enablenetworkprotection">Defender/EnableNetworkProtection</a>
@@ -810,6 +822,12 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-defender.md#defender-schedulescantime" id="defender-schedulescantime">Defender/ScheduleScanTime</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-defender.md#defender-signatureupdatefallbackorder" id="defender-signatureupdatefallbackorder">Defender/SignatureUpdateFallbackOrder</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-defender.md#defender-signatureupdatefilesharessources" id="defender-signatureupdatefilesharessources">Defender/SignatureUpdateFileSharesSources</a>
   </dd>
   <dd>
     <a href="./policy-csp-defender.md#defender-signatureupdateinterval" id="defender-signatureupdateinterval">Defender/SignatureUpdateInterval</a>
@@ -3210,6 +3228,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-update.md#update-autorestartdeadlineperiodindays" id="update-autorestartdeadlineperiodindays">Update/AutoRestartDeadlinePeriodInDays</a>
   </dd>
   <dd>
+    <a href="./policy-csp-update.md#update-autorestartdeadlineperiodindaysforfeatureupdates" id="update-autorestartdeadlineperiodindaysforfeatureupdates">Update/AutoRestartDeadlinePeriodInDaysForFeatureUpdates</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-update.md#update-autorestartnotificationschedule" id="update-autorestartnotificationschedule">Update/AutoRestartNotificationSchedule</a>
   </dd>
   <dd>
@@ -3243,10 +3264,19 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-update.md#update-engagedrestartdeadline" id="update-engagedrestartdeadline">Update/EngagedRestartDeadline</a>
   </dd>
   <dd>
+    <a href="./policy-csp-update.md#update-engagedrestartdeadlineforfeatureupdates" id="update-engagedrestartdeadlineforfeatureupdates">Update/EngagedRestartDeadlineForFeatureUpdates</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-update.md#update-engagedrestartsnoozeschedule" id="update-engagedrestartsnoozeschedule">Update/EngagedRestartSnoozeSchedule</a>
   </dd>
   <dd>
+    <a href="./policy-csp-update.md#update-engagedrestartsnoozescheduleforfeatureupdates" id="update-engagedrestartsnoozescheduleforfeatureupdates">Update/EngagedRestartSnoozeScheduleForFeatureUpdates</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-update.md#update-engagedrestarttransitionschedule" id="update-engagedrestarttransitionschedule">Update/EngagedRestartTransitionSchedule</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-engagedrestarttransitionscheduleforfeatureupdates" id="update-engagedrestarttransitionscheduleforfeatureupdates">Update/EngagedRestartTransitionScheduleForFeatureUpdates</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-excludewudriversinqualityupdate" id="update-excludewudriversinqualityupdate">Update/ExcludeWUDriversInQualityUpdate</a>
@@ -3318,7 +3348,16 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-update.md#update-setautorestartnotificationdisable" id="update-setautorestartnotificationdisable">Update/SetAutoRestartNotificationDisable</a>
   </dd>
   <dd>
+    <a href="./policy-csp-update.md#update-setdisablepauseuxaccess" id="update-setdisablepauseuxaccess">Update/SetDisablePauseUXAccess</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-setdisableuxwuaccess" id="update-setdisableuxwuaccess">Update/SetDisableUXWUAccess</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-update.md#update-setedurestart" id="update-setedurestart">Update/SetEDURestart</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-updatenotificationkioskmode" id="update-updatenotificationkioskmode">Update/UpdateNotificationKioskMode</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-updateserviceurl" id="update-updateserviceurl">Update/UpdateServiceUrl</a>
@@ -4103,12 +4142,16 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Defender/AttackSurfaceReductionOnlyExclusions](./policy-csp-defender.md#defender-attacksurfacereductiononlyexclusions)
 -   [Defender/AttackSurfaceReductionRules](./policy-csp-defender.md#defender-attacksurfacereductionrules)
 -   [Defender/AvgCPULoadFactor](./policy-csp-defender.md#defender-avgcpuloadfactor)
+-   [Defender/CheckForSignaturesBeforeRunningScan](./policy-csp-defender.md#defender-checkforsignaturesbeforerunningscan)
 -   [Defender/CloudBlockLevel](./policy-csp-defender.md#defender-cloudblocklevel)
 -   [Defender/CloudExtendedTimeout](./policy-csp-defender.md#defender-cloudextendedtimeout)
 -   [Defender/ControlledFolderAccessAllowedApplications](./policy-csp-defender.md#defender-controlledfolderaccessallowedapplications)
 -   [Defender/ControlledFolderAccessProtectedFolders](./policy-csp-defender.md#defender-controlledfolderaccessprotectedfolders)
 -   [Defender/DaysToRetainCleanedMalware](./policy-csp-defender.md#defender-daystoretaincleanedmalware)
+-   [Defender/DisableCatchupFullScan](./policy-csp-defender.md#defender-disablecatchupfullscan)
+-   [Defender/DisableCatchupQuickScan](./policy-csp-defender.md#defender-disablecatchupquickscan)
 -   [Defender/EnableControlledFolderAccess](./policy-csp-defender.md#defender-enablecontrolledfolderaccess)
+-   [Defender/EnableLowCPUPriority](./policy-csp-defender.md#defender-enablelowcpupriority)
 -   [Defender/EnableNetworkProtection](./policy-csp-defender.md#defender-enablenetworkprotection)
 -   [Defender/ExcludedExtensions](./policy-csp-defender.md#defender-excludedextensions)
 -   [Defender/ExcludedPaths](./policy-csp-defender.md#defender-excludedpaths)
@@ -4118,6 +4161,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Defender/ScheduleQuickScanTime](./policy-csp-defender.md#defender-schedulequickscantime)
 -   [Defender/ScheduleScanDay](./policy-csp-defender.md#defender-schedulescanday)
 -   [Defender/ScheduleScanTime](./policy-csp-defender.md#defender-schedulescantime)
+-   [Defender/SignatureUpdateFallbackOrder](./policy-csp-defender.md#defender-signatureupdatefallbackorder)
+-   [Defender/SignatureUpdateFileSharesSources](./policy-csp-defender.md#defender-signatureupdatefilesharessources)
 -   [Defender/SignatureUpdateInterval](./policy-csp-defender.md#defender-signatureupdateinterval)
 -   [Defender/SubmitSamplesConsent](./policy-csp-defender.md#defender-submitsamplesconsent)
 -   [Defender/ThreatSeverityDefaultAction](./policy-csp-defender.md#defender-threatseveritydefaultaction)
@@ -4693,6 +4738,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/AllowMUUpdateService](./policy-csp-update.md#update-allowmuupdateservice)
 -   [Update/AllowUpdateService](./policy-csp-update.md#update-allowupdateservice)
 -   [Update/AutoRestartDeadlinePeriodInDays](./policy-csp-update.md#update-autorestartdeadlineperiodindays)
+-   [Update/AutoRestartDeadlinePeriodInDaysForFeatureUpdates](./policy-csp-update.md#update-autorestartdeadlineperiodindaysforfeatureupdates)
 -   [Update/AutoRestartNotificationSchedule](./policy-csp-update.md#update-autorestartnotificationschedule)
 -   [Update/AutoRestartRequiredNotificationDismissal](./policy-csp-update.md#update-autorestartrequirednotificationdismissal)
 -   [Update/BranchReadinessLevel](./policy-csp-update.md#update-branchreadinesslevel)
@@ -4703,8 +4749,11 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/DetectionFrequency](./policy-csp-update.md#update-detectionfrequency)
 -   [Update/DisableDualScan](./policy-csp-update.md#update-disabledualscan)
 -   [Update/EngagedRestartDeadline](./policy-csp-update.md#update-engagedrestartdeadline)
+-   [Update/EngagedRestartDeadlineForFeatureUpdates](./policy-csp-update.md#update-engagedrestartdeadlineforfeatureupdates)
 -   [Update/EngagedRestartSnoozeSchedule](./policy-csp-update.md#update-engagedrestartsnoozeschedule)
+-   [Update/EngagedRestartSnoozeScheduleForFeatureUpdates](./policy-csp-update.md#update-engagedrestartsnoozescheduleforfeatureupdates)
 -   [Update/EngagedRestartTransitionSchedule](./policy-csp-update.md#update-engagedrestarttransitionschedule)
+-   [Update/EngagedRestartTransitionScheduleForFeatureUpdates](./policy-csp-update.md#update-engagedrestarttransitionscheduleforfeatureupdates)
 -   [Update/ExcludeWUDriversInQualityUpdate](./policy-csp-update.md#update-excludewudriversinqualityupdate)
 -   [Update/FillEmptyContentUrls](./policy-csp-update.md#update-fillemptycontenturls)
 -   [Update/ManagePreviewBuilds](./policy-csp-update.md#update-managepreviewbuilds)
@@ -4724,7 +4773,10 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/ScheduledInstallThirdWeek](./policy-csp-update.md#update-scheduledinstallthirdweek)
 -   [Update/ScheduledInstallTime](./policy-csp-update.md#update-scheduledinstalltime)
 -   [Update/SetAutoRestartNotificationDisable](./policy-csp-update.md#update-setautorestartnotificationdisable)
+-   [Update/SetDisablePauseUXAccess](./policy-csp-update.md#update-setdisablepauseuxaccess)
+-   [Update/SetDisableUXWUAccess](./policy-csp-update.md#update-setdisableuxwuaccess)
 -   [Update/SetEDURestart](./policy-csp-update.md#update-setedurestart)
+-   [Update/UpdateNotificationKioskMode](./policy-csp-update.md#update-updatenotificationkioskmode)
 -   [Update/UpdateServiceUrl](./policy-csp-update.md#update-updateserviceurl)
 -   [Update/UpdateServiceUrlAlternate](./policy-csp-update.md#update-updateserviceurlalternate)
 -   [UserRights/AccessCredentialManagerAsTrustedCaller](./policy-csp-userrights.md#userrights-accesscredentialmanagerastrustedcaller)
