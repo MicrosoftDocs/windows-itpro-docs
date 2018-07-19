@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 07/18/2018
+ms.date: 07/20/2018
 ms.localizationpriority: high
 ---
 
@@ -89,16 +89,16 @@ If you know that devices are experiencing stop error crashes that do not seem to
 2. Trigger a known crash on a test device by using a tool such as [NotMyFault](https://docs.microsoft.com/sysinternals/downloads/notmyfault) from Windows Sysinternals.
 3. Verify that Windows Error Reporting (WER) is not disabled or redirected by confirming the registry settings in **HKLM\SOFTWARE\Microsoft\Windows\Windows Error Reporting** (or **HKLM\Software\Policies\Microsoft\Windows\DataCollection**, which will take precedence if set):
 
-- Verify that the value "Disabled" (REG_DWORD), if set, is 0.
-- Verify that the value "DontSendAdditionalData" (REG_DWORD), if set, is 0.
-- Verify that the value "CorporateWERServer" (REG_SZ) is not configured.
+    - Verify that the value "Disabled" (REG_DWORD), if set, is 0.
+    - Verify that the value "DontSendAdditionalData" (REG_DWORD), if set, is 0.
+-     Verify that the value "CorporateWERServer" (REG_SZ) is not configured.
 
 4. Verify that WER can reach all diagnostic endpoints specified in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md)--if WER can only reach some of the endpoints, it could be included in the device count while not reporting crashes.
 5. Check that crash reports successfully complete the round trip with Event 1001 and that BucketID is not blank. A typical such event looks like this:
 
 [![Event viewer detail showing Event 1001 details](images/event_1001.png)](images/event_1001.png)
  
-You can use the following Windows PowerShell snippet to summarize recent occurences of Event 1001. Most events should have a value for BucketID (a few intermittent blank values are OK, however).
+You can use the following Windows PowerShell snippet to summarize recent occurences of Event 1001. Most events should have a value for BucketID (a few intermittent blank values are OK, however).[![App Reliability tile showing relability events trend](images/app-reliability.png)](images/app-reliability.png)
 
 ```powershell
 
@@ -117,6 +117,9 @@ Get-WinEvent -FilterHashTable @{ProviderName="Windows Error Reporting"; ID=1001}
 
 
 ```
+The output should look something like this:
+[![Typical out put of this PowerShell snippet](images/device-reliability-event1001-PSoutput.png)](images/device-reliablity-event1001-PSoutput.png)
+
 6. Check that some other installed device, app, or crash monitoring solution is not intercepting crash events.
 7. Wait 48 hours for activity to appear in the reports.
 8. If you need additional troubleshooting, contact Microsoft Support.
@@ -138,16 +141,15 @@ If apps that you know are crashing do not appear in App Reliability, follow thes
 
 1. Double-check the steps in the [Devices not appearing in Device Health Device Reliability](#devices-not-appearing-in-device-health-device-reliability) and [Device crashes not appearing in Device Health Device Reliability](#device-crashes-not-appearing-in-device-health-device-reliability) sections of this topic.
 2. Confirm that an in-scope application has crashed on an enrolled device. Keep the following points in mind:
-- Not all user-mode crashes are included in App Reliability, which tracks only apps that have a GUI, have been used interactively by a user, and are not part of the operating system.
-- Enrolling more devices helps to ensure that there are enough naturally occurring app crashes.
-- You can also use test apps which are designed to crash on demand.
+    - Not all user-mode crashes are included in App Reliability, which tracks only apps that have a GUI, have been used interactively by a user, and are not part of the operating system.
+    - Enrolling more devices helps to ensure that there are enough naturally occurring app crashes.
+    - You can also use test apps which are designed to crash on demand.
 
 3. Verify that *per-user* Windows Error Reporting (WER) is not disabled or redirected by confirming the registry settings in **HKCU\SOFTWARE\Microsoft\Windows\Windows Error Reporting** (or **HKCU\Software\Policies\Microsoft\Windows\DataCollection**, which will take precedence if set):
 
-- Verify that the value "Disabled" (REG_DWORD), if set, is 0.
-- Verify that the value "DontSendAdditionalData" (REG_DWORD), if set, is 0.
-- Verify that the value "CorporateWERServer" (REG_SZ) is not configured.
-
+    - Verify that the value "Disabled" (REG_DWORD), if set, is 0.
+    - Verify that the value "DontSendAdditionalData" (REG_DWORD), if set, is 0.
+    - Verify that the value "CorporateWERServer" (REG_SZ) is not configured.
 4. Check that some other installed device, app, or crash monitoring solution is not intercepting crash events.
 5. Wait 48 hours for activity to appear in the reports.
 6. If you need additional troubleshooting, contact Microsoft Support.

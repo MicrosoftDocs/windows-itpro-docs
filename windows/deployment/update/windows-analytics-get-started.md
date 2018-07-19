@@ -52,9 +52,9 @@ To enable data sharing, configure your proxy sever to whitelist the following en
 | `http://adl.windows.com` | Allows the compatibility update to receive the latest compatibility data from Microsoft. |
 | `https://watson.telemetry.microsoft.com` | Windows Error Reporting (WER); required for Device Health and Update Compliance AV reports. Not used by Upgrade Readiness. |
 | `https://oca.telemetry.microsoft.com`  | Online Crash Analysis; required for Device Health and Update Compliance AV reports. Not used by Upgrade Readiness. |
-| `https://login.live.com` | Used by Device Health for device tickets. |
-| `https://www.msftncsi.com` | Used by Device Health to check connectivity. |
-| `https://www.msftconnecttest.com` | Used by Device Health to check connectivity. |
+| `https://login.live.com` | Windows Error Reporting (WER); required by Device Health for device tickets. |
+| `https://www.msftncsi.com` | Windows Error Reporting (WER); required for Device Health to check connectivity. |
+| `https://www.msftconnecttest.com` | Windows Error Reporting (WER); required for Device Health to check connectivity. |
 
 
 >[!NOTE]
