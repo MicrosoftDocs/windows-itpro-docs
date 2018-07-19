@@ -3228,6 +3228,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-update.md#update-autorestartdeadlineperiodindays" id="update-autorestartdeadlineperiodindays">Update/AutoRestartDeadlinePeriodInDays</a>
   </dd>
   <dd>
+    <a href="./policy-csp-update.md#update-autorestartdeadlineperiodindaysforfeatureupdates" id="update-autorestartdeadlineperiodindaysforfeatureupdates">Update/AutoRestartDeadlinePeriodInDaysForFeatureUpdates</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-update.md#update-autorestartnotificationschedule" id="update-autorestartnotificationschedule">Update/AutoRestartNotificationSchedule</a>
   </dd>
   <dd>
@@ -3261,10 +3264,19 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-update.md#update-engagedrestartdeadline" id="update-engagedrestartdeadline">Update/EngagedRestartDeadline</a>
   </dd>
   <dd>
+    <a href="./policy-csp-update.md#update-engagedrestartdeadlineforfeatureupdates" id="update-engagedrestartdeadlineforfeatureupdates">Update/EngagedRestartDeadlineForFeatureUpdates</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-update.md#update-engagedrestartsnoozeschedule" id="update-engagedrestartsnoozeschedule">Update/EngagedRestartSnoozeSchedule</a>
   </dd>
   <dd>
+    <a href="./policy-csp-update.md#update-engagedrestartsnoozescheduleforfeatureupdates" id="update-engagedrestartsnoozescheduleforfeatureupdates">Update/EngagedRestartSnoozeScheduleForFeatureUpdates</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-update.md#update-engagedrestarttransitionschedule" id="update-engagedrestarttransitionschedule">Update/EngagedRestartTransitionSchedule</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-engagedrestarttransitionscheduleforfeatureupdates" id="update-engagedrestarttransitionscheduleforfeatureupdates">Update/EngagedRestartTransitionScheduleForFeatureUpdates</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-excludewudriversinqualityupdate" id="update-excludewudriversinqualityupdate">Update/ExcludeWUDriversInQualityUpdate</a>
@@ -3336,7 +3348,16 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-update.md#update-setautorestartnotificationdisable" id="update-setautorestartnotificationdisable">Update/SetAutoRestartNotificationDisable</a>
   </dd>
   <dd>
+    <a href="./policy-csp-update.md#update-setdisablepauseuxaccess" id="update-setdisablepauseuxaccess">Update/SetDisablePauseUXAccess</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-setdisableuxwuaccess" id="update-setdisableuxwuaccess">Update/SetDisableUXWUAccess</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-update.md#update-setedurestart" id="update-setedurestart">Update/SetEDURestart</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-updatenotificationkioskmode" id="update-updatenotificationkioskmode">Update/UpdateNotificationKioskMode</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-updateserviceurl" id="update-updateserviceurl">Update/UpdateServiceUrl</a>
@@ -4717,6 +4738,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/AllowMUUpdateService](./policy-csp-update.md#update-allowmuupdateservice)
 -   [Update/AllowUpdateService](./policy-csp-update.md#update-allowupdateservice)
 -   [Update/AutoRestartDeadlinePeriodInDays](./policy-csp-update.md#update-autorestartdeadlineperiodindays)
+-   [Update/AutoRestartDeadlinePeriodInDaysForFeatureUpdates](./policy-csp-update.md#update-autorestartdeadlineperiodindaysforfeatureupdates)
 -   [Update/AutoRestartNotificationSchedule](./policy-csp-update.md#update-autorestartnotificationschedule)
 -   [Update/AutoRestartRequiredNotificationDismissal](./policy-csp-update.md#update-autorestartrequirednotificationdismissal)
 -   [Update/BranchReadinessLevel](./policy-csp-update.md#update-branchreadinesslevel)
@@ -4727,8 +4749,11 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/DetectionFrequency](./policy-csp-update.md#update-detectionfrequency)
 -   [Update/DisableDualScan](./policy-csp-update.md#update-disabledualscan)
 -   [Update/EngagedRestartDeadline](./policy-csp-update.md#update-engagedrestartdeadline)
+-   [Update/EngagedRestartDeadlineForFeatureUpdates](./policy-csp-update.md#update-engagedrestartdeadlineforfeatureupdates)
 -   [Update/EngagedRestartSnoozeSchedule](./policy-csp-update.md#update-engagedrestartsnoozeschedule)
+-   [Update/EngagedRestartSnoozeScheduleForFeatureUpdates](./policy-csp-update.md#update-engagedrestartsnoozescheduleforfeatureupdates)
 -   [Update/EngagedRestartTransitionSchedule](./policy-csp-update.md#update-engagedrestarttransitionschedule)
+-   [Update/EngagedRestartTransitionScheduleForFeatureUpdates](./policy-csp-update.md#update-engagedrestarttransitionscheduleforfeatureupdates)
 -   [Update/ExcludeWUDriversInQualityUpdate](./policy-csp-update.md#update-excludewudriversinqualityupdate)
 -   [Update/FillEmptyContentUrls](./policy-csp-update.md#update-fillemptycontenturls)
 -   [Update/ManagePreviewBuilds](./policy-csp-update.md#update-managepreviewbuilds)
@@ -4748,7 +4773,10 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/ScheduledInstallThirdWeek](./policy-csp-update.md#update-scheduledinstallthirdweek)
 -   [Update/ScheduledInstallTime](./policy-csp-update.md#update-scheduledinstalltime)
 -   [Update/SetAutoRestartNotificationDisable](./policy-csp-update.md#update-setautorestartnotificationdisable)
+-   [Update/SetDisablePauseUXAccess](./policy-csp-update.md#update-setdisablepauseuxaccess)
+-   [Update/SetDisableUXWUAccess](./policy-csp-update.md#update-setdisableuxwuaccess)
 -   [Update/SetEDURestart](./policy-csp-update.md#update-setedurestart)
+-   [Update/UpdateNotificationKioskMode](./policy-csp-update.md#update-updatenotificationkioskmode)
 -   [Update/UpdateServiceUrl](./policy-csp-update.md#update-updateserviceurl)
 -   [Update/UpdateServiceUrlAlternate](./policy-csp-update.md#update-updateserviceurlalternate)
 -   [UserRights/AccessCredentialManagerAsTrustedCaller](./policy-csp-userrights.md#userrights-accesscredentialmanagerastrustedcaller)
