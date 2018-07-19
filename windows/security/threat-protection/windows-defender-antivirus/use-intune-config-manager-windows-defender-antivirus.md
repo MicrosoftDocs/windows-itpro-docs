@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 08/26/2017
+ms.date: 07/19/2017
 ---
 
 # Use System Center Configuration Manager and Microsoft Intune to configure and manage Windows Defender AV
@@ -22,7 +22,7 @@ In some cases, the protection will be labeled as Endpoint Protection, although t
 
 See the [Endpoint Protection](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-protection) library on docs.microsoft.com for information on using Configuration Manager.
 
-For Microsoft Intune, consult the [Help secure Windows PCs with Endpoint Protection for Microsoft Intune library](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
+For Microsoft Intune, consult the [Microsoft Intune library](https://docs.microsoft.com/en-us/intune/introduction-intune) and [Configure device restriction settings in Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure).
 
 
 ## Related topics
