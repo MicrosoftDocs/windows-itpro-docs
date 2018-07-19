@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 07/19/2017
+ms.date: 07/19/2018
 ---
 
 # Use System Center Configuration Manager and Microsoft Intune to configure and manage Windows Defender AV
