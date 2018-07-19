@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 01/29/2018
+ms.date: 07/18/2018
 ---
 
 # Defender CSP
@@ -185,9 +185,9 @@ The following list shows the supported values:
 -   0 = Clean
 -   1 = Pending full scan
 -   2 = Pending reboot
--   4 = Pending manual steps
+-   4 = Pending manual steps (Windows Defender is waiting for the user to take some action, such as restarting the computer or running a full scan)
 -   8 = Pending offline scan
--   16 = Pending critical failure
+-   16 = Pending critical failure (Windows Defender has failed critically and an Adminsitrator needs to investigate and take some action, such as restarting the computer or reinstalling Windows Defender)
 
 Supported operation is Get.
 
