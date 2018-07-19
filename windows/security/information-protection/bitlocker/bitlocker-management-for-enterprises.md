@@ -11,21 +11,17 @@ author: brianlic-msft
 ms.date: 07/18/2018
 ---
 
-# BitLocker Management Recommendations for Enterprises
+# BitLocker Management for Enterprises
 
-This topic explains recommendations for managing BitLocker, both on-premises using older hardware and cloud-based management of modern devices. 
-
-## Forward-looking recommendations for managing BitLocker
-
-The ideal for modern BitLocker management is to eliminate the need for IT admins to set management policies using tools or other mechanisms by having Windows perform tasks that are more practical to automate. This vision leverages modern hardware developments. The growth of TPM 2.0, Secure Boot, and other hardware improvements, for example, has helped to alleviate the support burden on the helpdesk, and we are seeing a consequent decrease in support call volumes, yielding improved user satisfaction. Windows continues to be the focus for new features and improvements for built-in encryption management, such as automatically enabling encryption on devices that support Modern Standby beginning with Windows 8.1. 
+The ideal for BitLocker management is to eliminate the need for IT admins to set management policies using tools or other mechanisms by having Windows perform tasks that are more practical to automate. This vision leverages modern hardware developments. The growth of TPM 2.0, Secure Boot, and other hardware improvements, for example, has helped to alleviate the support burden on the helpdesk, and we are seeing a consequent decrease in support call volumes, yielding improved user satisfaction. Windows continues to be the focus for new features and improvements for built-in encryption management, such as automatically enabling encryption on devices that support Modern Standby beginning with Windows 8.1. 
 
 Though much Windows BitLocker [documentation](bitlocker-overview.md) has been published, customers frequently ask for recommendations and pointers to specific, task-oriented documentation that is both easy to digest and focused on how to deploy and manage BitLocker. This article links to relevant documentation, products, and services to help answer this and other related frequently-asked questions, and also provides BitLocker recommendations for different types of computers.
 
-## Recommendations for domain-joined computers and moving to cloud management
+## Managing domain-joined computers and moving to cloud  
 
 Companies that image their own computers using Microsoft System Center 2012 Configuration Manager SP1 (SCCM) or later can use an existing task sequence to [pre-provision BitLocker](https://technet.microsoft.com/library/hh846237.aspx#BKMK_PreProvisionBitLocker) encryption while in Windows Preinstallation Environment (WinPE) and can then [enable protection](https://technet.microsoft.com/library/hh846237.aspx#BKMK_EnableBitLocker). This can help ensure that computers are encrypted from the start, even before users receive them. As part of the imaging process, a company could also decide to use SCCM to pre-set any desired [BitLocker Group Policy](https://technet.microsoft.com/library/ee706521(v=ws.10).aspx).
 
-Microsoft recommends [Microsoft BitLocker Administration and Management (MBAM)](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/) to manage client computers with BitLocker that are domain-joined on-premises. MBAM remains in [mainstream support until July 2019](https://support.microsoft.com/en-us/lifecycle/search?alpha=Microsoft%20BitLocker%20Administration%20and%20Monitoring%202.5%20Service%20Pack%201) and can receive extended support until July 2024. Enterprises that are transitioning to the cloud can follow these steps to proactively move from MBAM to cloud management:
+Enterprises can use [Microsoft BitLocker Administration and Management (MBAM)](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/) to manage client computers with BitLocker that are domain-joined on-premises until [mainstream support ends in July 2019](https://support.microsoft.com/en-us/lifecycle/search?alpha=Microsoft%20BitLocker%20Administration%20and%20Monitoring%202.5%20Service%20Pack%201) or they can receive extended support until July 2024. During this time, following these steps to move to cloud-based management of BitLocker is a good strategy:
 
 1. Disable MBAM management and leave MBAM as only a database backup for the recovery key.
 2. Join the computers to Azure Active Directory (Azure AD). 
@@ -35,7 +31,7 @@ BitLocker recovery keys can be managed from Azure AD thereafter. The MBAM databa
 
 <br />
 
-## Recommendations for devices joined to Azure Active Directory
+## Managing devices joined to Azure Active Directory
 
 Devices joined to Azure Active Directory (Azure AD) are managed using Mobile Device Management (MDM) policy from an MDM solution such as [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune). BitLocker Device Encryption status can be queried from managed machines via the [Policy Configuration Settings Provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider), which reports on whether BitLocker Device Encryption is enabled on the device. Compliance with BitLocker Device Encryption policy can be a requirement for [Conditional Access](https://www.microsoft.com/cloud-platform/conditional-access) to services like Exchange Online and SharePoint Online.
 
@@ -44,12 +40,12 @@ Starting with Windows 10 version 1703 (also known as the Windows Creators Update
 For hardware that is compliant with Modern Standby and HSTI, when using either of these features, BitLocker Device Encryption is automatically turned on whenever the user joins a device to Azure AD. Azure AD provides a portal where recovery keys are also backed up, so users can retrieve their own recovery key for self-service, if required. For older devices that are not yet encrypted, beginning with Windows 10 version 1703 (the Windows 10 Creators Update), admins can use the [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) to trigger encryption and store the recovery key in Azure AD.
 
 
-## Workplace-joined PCs and phones
+## Managing workplace-joined PCs and phones
 
 For Windows PCs and Windows Phones that enroll using **Connect to work or school account**, BitLocker Device Encryption is managed over MDM, the same as devices joined to Azure AD.
 
 
-##  Recommendations for servers
+##  Managing servers
 
 Servers are often installed, configured, and deployed using PowerShell, so the recommendation is to also use [PowerShell to enable BitLocker on a server](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md#a-href-idbkmk-blcmdletsabitlocker-cmdlets-for-windows-powershell), ideally as part of the initial setup. BitLocker is an Optional Component (OC) in Windows Server, so follow the directions in [BitLocker: How to deploy on Windows Server 2012 and later](bitlocker-how-to-deploy-on-windows-server.md) to add the BitLocker OC. 
 
