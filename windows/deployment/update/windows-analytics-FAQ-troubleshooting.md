@@ -91,7 +91,7 @@ If you know that devices are experiencing stop error crashes that do not seem to
 
     - Verify that the value "Disabled" (REG_DWORD), if set, is 0.
     - Verify that the value "DontSendAdditionalData" (REG_DWORD), if set, is 0.
--     Verify that the value "CorporateWERServer" (REG_SZ) is not configured.
+    - Verify that the value "CorporateWERServer" (REG_SZ) is not configured.
 
 4. Verify that WER can reach all diagnostic endpoints specified in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md)--if WER can only reach some of the endpoints, it could be included in the device count while not reporting crashes.
 5. Check that crash reports successfully complete the round trip with Event 1001 and that BucketID is not blank. A typical such event looks like this:
