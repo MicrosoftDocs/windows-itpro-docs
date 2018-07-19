@@ -9,8 +9,8 @@
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Not configured<br>**(default)** |Blank |Blank |Users can choose to see search suggestions. | |
-|Disabled |0 |0 |Hides the search suggestions. |![Most restricted value](../images/check-gn.png) |
-|Enabled |1 |1 |Shows the search suggestions. | |
+|Disabled |0 |0 |Prevented/not allowed. Hide the search suggestions. |![Most restricted value](../images/check-gn.png) |
+|Enabled |1 |1 |Allowed. Show the search suggestions. | |
 ---
 
 ### ADMX info and settings

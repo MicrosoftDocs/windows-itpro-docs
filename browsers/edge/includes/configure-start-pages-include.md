@@ -6,10 +6,10 @@
 
 ### Allowed values
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Not configured |Blank |Blank |Microsoft Edge loads the pages specified in App settings as the default Start pages. | |
-|Enabled | | |Enter URLs to the pages, separating multiple pages by using angle brackets in the following format:<p>\<support.contoso.com\>\<support.microsoft.com\><p>**Version 1703 or later:**<br>If you do not want to send traffic to Microsoft, use the \<about:blank\> value, which honors both domain and non-domain-joined devices when it is the only configured URL.<p>**Version 1810:**<br>When you enable the Configure Open Microsoft Edge With policy with an option selected, and you enable the Configure Start Pages policy, Microsoft Edge ignores the Configure Start Page policy. | |
+|Group Policy  |MDM |Registry |Description |
+|---|:---:|:---:|---|
+|Not configured |Blank |Blank |Load the pages specified in App settings as the default Start pages. | 
+|Enabled |String |String |Enter the URLs of the pages you want to load as the Start pages, separating each page using angle brackets:<p>\<support.contoso.com\>\<support.microsoft.com\><p>**Version 1703 or later:**<br>If you do not want to send traffic to Microsoft, use the \<about:blank\> value, which honors both domain and non-domain-joined devices when it's the only configured URL.<p>**Version 1810:**<br>When you enable the Configure Open Microsoft Edge With policy with any option selected, and you enable the Configure Start Pages policy, the Configure Open Microsoft Edge With policy takes precedence, ignoring the Configure Start Pages policy.  | 
 ---
 
 ### Configuration combinations
