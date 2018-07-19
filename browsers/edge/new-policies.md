@@ -36,7 +36,7 @@ We are also deprecating the **Configure Favorites** group policy because no MDM 
 | [Allow printing](#allow-printing) | New |  AllowPrinting | New |
 | [Allow Saving History](#allow-saving-history) | New | AllowSavingHistory | New |
 | [Allow sideloading of Extensions](#allow-sideloading-of-extensions) | New | AllowSideloadingOfExtensions | New |
-| Allow web content on new tab page | -- | [Browser/AllowWebContentOnNewTabPage](#allowwebcontentonnewtabpage) | New |
+| Allow web content on new tab page | -- | [AllowWebContentOnNewTabPage](#allowwebcontentonnewtabpage) | New |
 | [Configure collection of browsing data for Microsoft 365 Analytics](#configure-collection-of-browsing-data-for-microsoft-365-analytics) | New | ConfigureTelemetryForMicrosoft365Analytics | New |
 | [Configure Favorites Bar](#configure-favorites-bar) | New | ConfigureFavoritesBar | New |
 | [Configure Home Button](#configure-home-button) | New | ConfigureHomeButton | New |
