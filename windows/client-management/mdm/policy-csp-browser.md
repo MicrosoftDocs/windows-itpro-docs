@@ -239,9 +239,8 @@ ms.date: 07/18/2018
 <!--Description-->
 Added in Windows 10, version 1703. 
 
-By default, Microsoft Edge shows the Address bar drop-down list and makes it available.  When enabled (default setting), this policy takes precedence over the [Browser/AllowSearchSuggestionsinAddressBar](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsearchsuggestionsinaddressbar) policy. If you want to minimize network connections from Microsoft Edge to Microsoft service, we recommend disabling this policy, which hides the Address bar drop-down list functionality. When disabled, Microsoft Edge also disables the _Show search and site suggestions as I type_ toggle in Settings.  
+[!INCLUDE [allow-address-bar-drop-down-shortdesc](../../../browsers/edge/shortdesc/allow-address-bar-drop-down-shortdesc.md)]
 
-Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -253,11 +252,12 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
--   0 – Not allowed. Address bar drop-down is disabled, which also disables the user-defined setting, "Show search and site suggestions as I type." 
--   1 (default) – Allowed. Address bar drop-down is enabled.
+-   0 – Prevented/not allowed. Hide the Address bar drop-down functionality and disable the _Show search and site suggestions as I type_ toggle in Settings. 
+-   1 (default) – Allowed. Show the Address bar drop-down list and make it available.
 
+Most restricted value: 0
 <!--/SupportedValues-->
 <!--/Policy-->
 
@@ -300,9 +300,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-By default, users can choose to use Autofill for filling in form fields automatically.  With this policy, you can configure Microsoft Edge, when enabled to use Autofill or, when disabled to prevent using Autofill. 
-
-Most restricted value is 0.
+[!INCLUDE [configure-autofill-shortdesc](../../../browsers/edge/shortdesc/configure-autofill-shortdesc.md)]
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -314,11 +312,13 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
--   0 – Not allowed.
+-  Blank - Users can choose to use AutoFill.
+-   0 – Prevented/not allowed.
 -   1 (default) – Allowed.
 
+Most restricted value: 0 
 <!--/SupportedValues-->
 <!--Validation-->
 To verify AllowAutofill is set to 0 (not allowed):
@@ -373,17 +373,18 @@ To verify AllowAutofill is set to 0 (not allowed):
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. For desktop devices, use the [AppLocker CSP](applocker-csp.md) instead.
 
-By default, the device allows Microsoft Edge on Windows 10 Mobile. Disabling this policy disables the Microsoft Edge tile, and when clicking the tile, a message opens indicating that the administrator disabled Internet browsing.
+The device allows Microsoft Edge on Windows 10 Mobile by default. With this policy, you can disable the Microsoft Edge tile, and when clicking the tile, a message opens indicating that the administrator disabled Internet browsing.
 
-Most restricted value is 0.
+
 
 <!--/Description-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
--   0 – Not allowed.
+-   0 – Prevented/not allowed.
 -   1 (default) – Allowed.
 
+Most restricted value: 0
 <!--/SupportedValues-->
 <!--/Policy-->
 
@@ -426,14 +427,14 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-By default, Microsoft Edge automatically updates the configuration data for the Books Library.  Enabling this policy prevents Microsoft Edge from updating the configuration data.
+Microsoft Edge automatically updates the configuration data for the Books Library. Disabling this policy prevents Microsoft Edge from updating the configuration data. 
 
 <!--/Description-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
--   0 - Disable. Microsoft Edge cannot retrieve a configuration
--   1 - Enable (default). Microsoft Edge can retrieve a configuration for Books Library
+-   0 - Prevented/not allowed.
+-   1 (default). Allowed. Microsoft Edge updates the configuration data for the Books Library automatically.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -493,7 +494,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 – Block all cookies from all sites.
 -   1 – Block only cookies from third party websites.
@@ -567,7 +568,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
@@ -628,7 +629,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -	Blank/Null (default) Not configured - Does not send tracking information, but allow users to choose whether to send tracking information to sites they visit.
 -	0 (Disabled) - Never sends tracking information.
@@ -697,7 +698,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
@@ -756,7 +757,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
@@ -815,7 +816,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 – Adobe Flash content is automatically loaded and run by Microsoft Edge.
 -   1 (default) – Users must click the content, click a Click-to-Run button, or have the site appear on an auto-allow list before Microsoft Edge loads and runs Adobe Flash content.
@@ -942,7 +943,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
@@ -1006,7 +1007,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 – Not enabled.
 -   1 (default) – Enabled.
@@ -1067,7 +1068,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
@@ -1407,7 +1408,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
@@ -1468,7 +1469,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
@@ -1596,7 +1597,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
@@ -1800,7 +1801,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 (default) - Disable. Use default visibility of the Books Library. The Library will be only visible in countries or regions where it’s available.
 -   1 - Enable. Always show the Books Library, regardless of countries or region of activation.
@@ -1861,7 +1862,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 – (default) Browsing data is not cleared on exit. The type of browsing data to clear can be configured by the employee in the Clear browsing data options under Settings.
 -   1 – Browsing data is cleared on exit.
@@ -1940,7 +1941,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 (default) – Additional search engines are not allowed.
 -   1 – Additional search engines are allowed.
@@ -2437,7 +2438,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 (default) – Enable lockdown of the Start pages according to the settings specified in the Browser/HomePages policy. Users cannot change the Start pages. 
 -   1  – Disable lockdown of the Start pages and allow users to modify them.
@@ -2498,7 +2499,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 (default) - Disable. No additional diagnostic data.
 -   1 - Enable. Additional diagnostic data for schools.
@@ -2562,7 +2563,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   Not configured. The device checks for updates from Microsoft Update.
 -   Set to a URL location of the enterprise site list.
@@ -2850,7 +2851,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 - Disabled. Do not lockdown Favorites.
 -   1 - Enabled. Lockdown Favorites.
@@ -2909,7 +2910,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 (default) – Users can access the about:flags page in Microsoft Edge.
 -   1 – Users can't access the about:flags page in Microsoft Edge.
@@ -3037,7 +3038,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 (default) – Employees see the First Run webpage. 
 -   1 – Employees don't see the First Run webpage.
@@ -3098,7 +3099,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 (default) – Microsoft servers will be contacted if a site is pinned to Start from Microsoft Edge.
 -   1 – Microsoft servers will not be contacted if a site is pinned to Start from Microsoft Edge.
@@ -3159,7 +3160,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 (default) – Off.
 -   1 – On.
@@ -3218,7 +3219,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 (default) – Off.
 -   1 – On.
@@ -3280,7 +3281,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 (default) – Allow pre-launch and preload.
 -   1 – Prevent pre-launch and preload.
@@ -3343,7 +3344,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 (default) – The localhost IP address is shown.
 -   1 – The localhost IP address is hidden.
@@ -3474,7 +3475,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 - 0 (default) - All websites, including intranet sites, open in Microsoft Edge automatically.
 - 1 - Only intranet sites open in Internet Explorer 11 automatically.
@@ -3544,7 +3545,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 (default) - The default search engine is set to the one specified in App settings.
 -   1 - Allows you to configure the default search engine for your employees.
@@ -3808,7 +3809,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 (default) – Synchronization is off.
 -   1 – Synchronization is on.
@@ -3944,7 +3945,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 - No shared folder.
 -   1 - Use a shared folder.

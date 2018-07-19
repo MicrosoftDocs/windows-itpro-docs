@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/18/2018
+ms.date: 07/19/2018
 ---
 
 # Defender CSP
@@ -114,6 +114,9 @@ The following table describes the supported values:
 | 46    | Behavior                    |
 | 47    | Vulnerability               |
 | 48    | Policy                      |
+| 49    | EUS (Enterprise Unwanted Software)|
+| 50    | Ransomware                  |
+| 51    | ASR Rule                    |
 
  
 
@@ -126,19 +129,17 @@ The data type is a integer.
 
 The following list shows the supported values:
 
--   0 = Unknown
--   1 = Detected
--   2 = Cleaned
--   3 = Quarantined
--   4 = Removed
--   5 = Allowed
--   6 = Blocked
--   102 = Clean failed
--   103 = Quarantine failed
--   104 = Remove failed
--   105 = Allow failed
--   106 = Abandoned
--   107 = Block failed
+-   0 = Active
+-   1 = Action failed
+-   2 = Manual steps required
+-   3 = Full scan required
+-   4 = Reboot required
+-   5 = Remediated with non critical failures
+-   6 = Quarantined
+-   7 = Removed
+-   8 = Cleaned
+-   9 = Allowed
+-   10 = No Status ( Cleared)
 
 Supported operation is Get.
 
