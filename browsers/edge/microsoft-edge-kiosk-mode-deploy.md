@@ -225,15 +225,11 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
 
 ## Known issues with RS_PRERELEASE build 17713+
 
-- When you set up Microsoft Edge as your kiosk app and define the URL in assigned access Settings the URL, Microsoft Edge may not get launched with the configured URL.
-    - **Expected behavior** – Microsoft Edge kiosk mode opens the URL on startup. 
-    - **Actual behavior** – Microsoft Edge kiosk mode may not open with the URL on startup.
-
 - When you set up Microsoft Edge kiosk mode on a single-app kiosk device you must set the “ConfigureKioskMode” policy because the default behavior is not honored. 
     - **Expected behavior** – Microsoft Edge kiosk mode launches in full-screen mode. 
     - **Actual behavior** – Normal Microsoft Edge launches.
 
-- “Configure Favorites bar” policy when setting to enabled or 1 does not show the favorites bar in Microsoft Edge kiosk mode. 
+- When you enable or set the “Configure Favorites bar” policy to 1, the favorites bar does not show in Microsoft Edge kiosk mode. 
     - **Expected behavior** – Microsoft Edge kiosk mode shows the favorites bar. 
     - **Actual behavior** – The favorites bar is hidden.
 
