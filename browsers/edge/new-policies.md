@@ -18,7 +18,11 @@ ms.date: 07/19/2018
 
 The Microsoft Edge team introduces new Group Policies and MDM Settings for the Windows 10 Insider Preview Build 17713+. The new policies allow IT administrators to enable/disable full-screen mode, printing, favorites bar, saving history. You can also prevent certificate error overrides, and configure New tab page, Home button and startup options, as well as manage extensions.
 
-You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:
+
+We are also deprecating the **Configure Favorites** group policy because no MDM equivalent existed. Use the **[Provision Favorites](available-policies.md#provision-favorites)** in place of Configure Favorites.   
+
+>You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:
+> 
 >*Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\*
 <p>
 <!-- add links to the below policies -->
@@ -49,7 +53,6 @@ You can find the Microsoft Edge Group Policy settings in the following location 
 | [Unlock Home button](#unlock-home-button) | New | UnlockHomeButton | New |
 ---
 
-We are also deprecating the **Configure Favorites** group policy because no MDM equivalent existed. Use the **[Provision Favorites](available-policies.md#provision-favorites)** in place of Configure Favorites.   
  
  <!-- RS5 policies -->
 
