@@ -1,9 +1,12 @@
 ﻿---
 title: Upgrade Readiness - Resolve application and driver issues (Windows 10)
 description: Describes how to resolve application and driver issues that can occur during an upgrade with Upgrade Readiness.
+keywords: windows analytics, oms, operations management suite, prerequisites, requirements, upgrades, log analytics, 
 ms.prod: w10
 author: jaimeo
+ms.author: jaimeo
 ms.date: 08/31/2017
+ms.localizationpriority: medium
 ---
 
 # Upgrade Readiness - Step 2: Resolve app and driver issues
@@ -46,7 +49,7 @@ To change an application's upgrade decision:
 1. Select **Decide upgrade readiness** to view applications with issues. 
 2. In the table view, select an **UpgradeDecision** value. 
 3. Select **Decide upgrade readiness** to change the upgrade decision for each application.
-4. Select the applications you want to change to a specific upgrade decision and then then select the appropriate option from the **Select upgrade decision** list.
+4. Select the applications you want to change to a specific upgrade decision and then select the appropriate option from the **Select upgrade decision** list.
 5. Click **Save** when finished.  
 
 IMPORTANT: Ensure that you have the most recent versions of the compatibility update and related KBs installed to get the most up-to-date compatibility information.

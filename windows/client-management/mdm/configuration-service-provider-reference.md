@@ -30,6 +30,7 @@ Footnotes:
 - 2 - Added in Windows 10, version 1703
 - 3 - Added in Windows 10, version 1709
 - 4 - Added in Windows 10, version 1803
+- 5 - Added in Windows 10, next major version
 
 <!--StartCSPs-->
 <hr/>
@@ -2532,6 +2533,34 @@ Footnotes:
 <!--EndCSP-->
 
 <!--StartCSP-->
+[WiredNetwork CSP](wirednetwork-csp.md)  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
 [w7 APPLICATION CSP](w7-application-csp.md)  
 
 <!--StartSKU-->
@@ -2568,6 +2597,7 @@ Footnotes:
 - 2 - Added in Windows 10, version 1703  
 - 3 - Added in Windows 10, version 1709
 - 4 - Added in Windows 10, version 1803
+- 5 - Added in Windows 10, next major version
 
 ## CSP DDF files download
 
@@ -2592,15 +2622,17 @@ The following list shows the configuration service providers supported in Window
 | [CertificateStore CSP](certificatestore-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)|
 | [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [DevDetail CSP](devdetail-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [DeveloperSetup CSP](developersetup-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)2   (Provisioning only)|
+| [DeveloperSetup CSP](developersetup-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)2   (runtime provisioning via provisioning packages only; no MDM support)|
 | [DeviceStatus CSP](devicestatus-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)  |
 | [DevInfo CSP](devinfo-csp.md)  | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [DiagnosticLog CSP](diagnosticlog-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [DMAcc CSP](dmacc-csp.md)      | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [DMClient CSP](dmclient-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [NodeCache CSP](nodecache-csp.md)  | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 [PassportForWork CSP](passportforwork-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
 | [Policy CSP](policy-configuration-service-provider.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [RemoteWipe CSP](remotewipe-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       |
 | [RootCATrustedCertificates CSP](rootcacertificates-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [Update CSP](update-csp.md)     | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [VPN2 CSP](vpnv2-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
@@ -2612,6 +2644,7 @@ The following list shows the configuration service providers supported in Window
 - 2 - Added in Windows 10, version 1703  
 - 3 - Added in Windows 10, version 1709
 - 4 - Added in Windows 10, version 1803
+- 5 - Added in Windows 10, next major version
 
 ## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
 

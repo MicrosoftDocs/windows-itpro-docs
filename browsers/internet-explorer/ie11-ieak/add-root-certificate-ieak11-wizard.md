@@ -1,8 +1,8 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: We’re sorry. While we continue to recommend that you digitally sign your package, we’ve removed all of the functionality that allowed you to add a root certificate using the Internet Explorer Customization Wizard 11. The wizard page itself will be removed in a future version of the IEAK.
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: 7ae4e747-49d2-4551-8790-46a61b5fe838
 title: Use the Add a Root Certificate page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)

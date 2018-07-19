@@ -1,8 +1,8 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: Review the options available to help you customize your browser install packages for deployment to your employee's devices.
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: 4b804da3-c3ac-4b60-ab1c-99536ff6e31b
 title: Internet Explorer Administration Kit 11 (IEAK 11) Customization Wizard options (Internet Explorer Administration Kit 11 for IT Pros)

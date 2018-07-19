@@ -2,10 +2,8 @@
 title: Differences between Surface Hub and Windows 10 Enterprise
 description: This topic explains the differences between Windows 10 Team and Windows 10 Enterprise.
 keywords: change history
-ms.prod: w10
-ms.mktglfcycl: manage
+ms.prod: surface-hub
 ms.sitesec: library
-ms.pagetype: surfacehub
 author: isaiahng
 ms.author: jdecker
 ms.topic: article

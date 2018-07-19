@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
-localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 03/26/2018
 ---
 # Windows Hello for Business

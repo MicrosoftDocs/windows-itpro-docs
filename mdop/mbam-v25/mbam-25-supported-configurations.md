@@ -335,6 +335,11 @@ You must install SQL Server with the **SQL\_Latin1\_General\_CP1\_CI\_AS** coll
 </tr>
 </thead>
 <tbody>
+<tr class="odd">
+<td align="left"><p>Microsoft SQL Server 2017</p></td>
+<td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
+<td align="left"><p></p></td>
+<td align="left"><p>64-bit</p></td>    
 <tr class="even">
 <td align="left"><p>Microsoft SQL Server 2016</p></td>
 <td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
@@ -464,6 +469,12 @@ The following table lists the operating systems that are supported for MBAM Clie
 </tr>
 </thead>
 <tbody>
+<tr class="even">
+    <td align="left"><p>Windows 10 IoT</p></td>
+    <td align="left"><p>Enterprise</p></td>
+    <td align="left"><p></p></td>
+    <td align="left"><p>32-bit or 64-bit</p></td>
+</tr>  
 <tr class="odd">
 <td align="left"><p>Windows 10</p></td>
 <td align="left"><p>Enterprise</p></td>
@@ -518,6 +529,12 @@ The following table lists the operating systems that are supported for MBAM Grou
 </tr>
 </thead>
 <tbody>
+ <tr class="even">
+      <td align="left"><p>Windows 10 IoT</p></td>
+      <td align="left"><p>Enterprise</p></td>
+      <td align="left"><p></p></td>
+      <td align="left"><p>32-bit or 64-bit</p></td>
+ </tr>
 <tr class="odd">
 <td align="left"><p>Windows 10</p></td>
 <td align="left"><p>Enterprise</p></td>

@@ -23,7 +23,7 @@ UE-V 2.1 SP1 adds support for Windows 10, in addition to the same software that 
 
 ### Compatibility with Microsoft Azure
 
-Windows 10 lets enterprise users synchronize Windows app settings and Windows operating system settings to Azure instead of to OneDrive. You can use the Windows 10 enterprise sync functionality together with UE-V on on-premises domain-joined computers only. To enable coexistence between Windows 10 and UE-V, you must disable the following UE-V templates using either PowerShell on each client or Group Policy.
+Windows 10 lets enterprise users synchronize Windows app settings and Windows operating system settings to Azure instead of to OneDrive. You can use the Windows 10 enterprise sync functionality together with UE-V for on-premises domain-joined computers only. To enable coexistence between Windows 10 and UE-V, you must disable the following UE-V templates using either PowerShell on each client or Group Policy.
 
 In Group Policy, under the Microsoft User Experience Virtualization node, configure these policy settings:
 

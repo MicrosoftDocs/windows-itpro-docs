@@ -4,10 +4,10 @@ description: Deployment rings in Windows 10 are similar to the deployment groups
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: DaniHalfin
-ms.localizationpriority: high
-ms.author: daniha
-ms.date: 07/27/2017
+author: jaimeo
+ms.localizationpriority: medium
+ms.author: jaimeo
+ms.date: 07/11/2018
 ---
 
 # Build deployment rings for Windows 10 updates
@@ -38,9 +38,7 @@ Table 1 provides an example of the deployment rings you might use.
 | Critical | Semi-annual channel | 180 days | 30 days | Devices that are critical and will only receive updates once they've been vetted for a period of time by the majority of the organization |
 
 >[!NOTE]
->In this example, there are no rings made up of the long-term servicing channel (LTSC). The LTSC servicing channel does not receive feature updates. 
->
->Windows Insider PCs must be enrolled manually on each device and serviced based on the Windows Insider level chosen in the **Settings** app on that particular PC. Feature update servicing for Windows Insider devices is done completely through Windows Update; no servicing tools can manage Windows Insider feature updates.
+>In this example, there are no rings made up of the long-term servicing channel (LTSC). The LTSC does not receive feature updates. 
 
 
 As Table 1 shows, each combination of servicing channel and deployment group is tied to a specific deployment ring. As you can see, the associated groups of devices are combined with a servicing channel to specify which deployment ring those devices and their users fall into. The naming convention used to identify the rings is completely customizable as long as the name clearly identifies the sequence. Deployment rings represent a sequential deployment timeline, regardless of the servicing channel they contain. Deployment rings will likely rarely change for an organization, but they should be periodically assessed to ensure that the deployment cadence still makes sense. 
@@ -66,6 +64,7 @@ As Table 1 shows, each combination of servicing channel and deployment group is 
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
+- [Manage software updates in Intune](https://docs.microsoft.com/intune/windows-update-for-business-configure)
 - [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
 - [Manage device restarts after updates](waas-restart.md)
 

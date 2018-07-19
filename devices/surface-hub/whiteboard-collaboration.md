@@ -1,20 +1,21 @@
 ---
 title: Set up and use Whiteboard to Whiteboard collaboration 
 description: Microsoft Whiteboard’s latest update includes the capability for two Surface Hubs to collaborate in real time on the same board.
-ms.prod: w10
-ms.mktglfcycl: manage
+ms.prod: surface-hub
 ms.sitesec: library
-ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 10/20/2017
+ms.date: 07/12/2018
 ms.localizationpriority: medium
 ---
 
 # Set up and use Whiteboard to Whiteboard collaboration (Surface Hub)
 
-Microsoft Whiteboard’s latest update (17.8302.5275X or greater) includes the capability for two Surface Hubs to collaborate in real time on the same board. 
+The Microsoft Whiteboard app includes the capability for two Surface Hubs to collaborate in real time on the same board. 
+
+>[!IMPORTANT]
+>A new Microsoft Whiteboard app was released on July 12, 2018. The existing Whiteboard app that comes installed on Surface Hub and is pinned to the Welcome screen cannot collaborate with the new version that can be installed on the PC. If people in your organization install the new Whiteboard on their PCs, you must install the new Whiteboard on Surface Hub to enable collaboration. To learn more about installing the new Whiteboard on your Surface Hub, see [Whiteboard on Surface Hub opt-in](https://go.microsoft.com/fwlink/p/?LinkId=2004277).
 
 By ensuring that your organization meets the prerequisites, users can then ink, collaborate, and ideate together. 
 

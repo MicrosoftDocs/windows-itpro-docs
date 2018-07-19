@@ -5,9 +5,9 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-author: eross-msft
-ms.author: lizross
-ms.date: 10/23/2017
+author: justinha
+ms.author: justinha
+ms.date: 07/09/2018
 ---
 
 # Windows Defender Application Guard overview
@@ -15,10 +15,8 @@ ms.date: 10/23/2017
 **Applies to:**
 - Windows 10 Enterprise edition, version 1709 or higher
 - Windows 10 Professional edition, version 1803
-
-The threat landscape is continually evolving. While hackers are busy developing new techniques to breach enterprise networks by compromising workstations, phishing schemes remain one of the top ways to lure employees into social engineering attacks.
  
-Windows Defender Application Guard (Application Guard) is designed to help prevent old, and newly emerging attacks, to help keep employees productive. Using our unique hardware isolation approach, our goal is to destroy the playbook that attackers use by rendering current attack methods obsolete. 
+Windows Defender Application Guard (Application Guard) is designed to help prevent old and newly emerging attacks to help keep employees productive. Using our unique hardware isolation approach, our goal is to destroy the playbook that attackers use by rendering current attack methods obsolete. 
 
 ## What is Application Guard and how does it work?
 Designed for Windows 10 and Microsoft Edge, Application Guard helps to isolate enterprise-defined untrusted sites, protecting your company while your employees browse the Internet. As an enterprise administrator, you define what is among trusted web sites, cloud resources, and internal networks. Everything not on your list is considered untrusted.

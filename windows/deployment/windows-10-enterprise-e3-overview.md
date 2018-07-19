@@ -4,7 +4,7 @@ description: Describes Windows 10 Enterprise E3, an offering that delivers, by s
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 ms.date: 08/24/2017

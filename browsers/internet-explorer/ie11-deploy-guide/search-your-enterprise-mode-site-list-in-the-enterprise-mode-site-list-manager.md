@@ -1,9 +1,9 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Search to see if a specific site already appears in your global Enterprise Mode site list.
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: e399aeaf-6c3b-4cad-93c9-813df6ad47f9
 title: Search your Enterprise Mode site list in the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)

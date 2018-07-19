@@ -6,9 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-localizationpriority: high
+ms.localizationpriority: medium
 author: brianlic-msft
-ms.date: 05/03/2018
+ms.date: 06/25/2018
 ---
 
 # BitLocker Deployment and Administration FAQ
@@ -44,12 +44,12 @@ No, BitLocker does not encrypt and decrypt the entire drive when reading and wri
 
 ## How can I prevent users on a network from storing data on an unencrypted drive?
 
-You can can Group Policy settings to require that data drives be BitLocker-protected before a BitLocker-protected computer can write data to them. For more info, see [BitLocker Group Policy settings](bitlocker-group-policy-settings.md).
+You can configure Group Policy settings to require that data drives be BitLocker-protected before a BitLocker-protected computer can write data to them. For more info, see [BitLocker Group Policy settings](bitlocker-group-policy-settings.md).
 When these policy settings are enabled, the BitLocker-protected operating system will mount any data drives that are not protected by BitLocker as read-only.
 
 ## What is Used Disk Space Only encryption?
 
-BitLocker in Windows 10 lets users choose to encrypt just their data. Although it's not the most secure way to encrypt a drive, this option can reduce encryption time by more than 99 percent, depending on how much data that needs to beencrypted. For more information, see [Used Disk Space Only encryption](bitlocker-device-encryption-overview-windows-10.md#used-disk-space-only-encryption).
+BitLocker in Windows 10 lets users choose to encrypt just their data. Although it's not the most secure way to encrypt a drive, this option can reduce encryption time by more than 99 percent, depending on how much data that needs to be encrypted. For more information, see [Used Disk Space Only encryption](bitlocker-device-encryption-overview-windows-10.md#used-disk-space-only-encryption).
 
 ## What system changes would cause the integrity check on my operating system drive to fail?
 

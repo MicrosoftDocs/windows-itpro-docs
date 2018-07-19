@@ -7,11 +7,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/14/2018
+ms.date: 07/03/2018
 ---
 
 # Policy CSP
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The Policy configuration service provider enables the enterprise to configure policies on Windows 10. Use this configuration service provider to configure any company policies.
 
@@ -148,20 +150,6 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-### AccountPoliciesAccountLockoutPolicy policies
-
-<dl>
-  <dd>
-    <a href="./policy-csp-accountpoliciesaccountlockoutpolicy.md#accountpoliciesaccountlockoutpolicy-accountlockoutduration" id="accountpoliciesaccountlockoutpolicy-accountlockoutduration">AccountPoliciesAccountLockoutPolicy/AccountLockoutDuration</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-accountpoliciesaccountlockoutpolicy.md#accountpoliciesaccountlockoutpolicy-accountlockoutthreshold" id="accountpoliciesaccountlockoutpolicy-accountlockoutthreshold">AccountPoliciesAccountLockoutPolicy/AccountLockoutThreshold</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-accountpoliciesaccountlockoutpolicy.md#accountpoliciesaccountlockoutpolicy-resetaccountlockoutcounterafter" id="accountpoliciesaccountlockoutpolicy-resetaccountlockoutcounterafter">AccountPoliciesAccountLockoutPolicy/ResetAccountLockoutCounterAfter</a>
-  </dd>
-</dl>
-
 ### Accounts policies
 
 <dl>
@@ -226,6 +214,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-applicationmanagement.md#applicationmanagement-disablestoreoriginatedapps" id="applicationmanagement-disablestoreoriginatedapps">ApplicationManagement/DisableStoreOriginatedApps</a>
   </dd>
   <dd>
+    <a href="./policy-csp-applicationmanagement.md#applicationmanagement-launchappafterlogon" id="applicationmanagement-launchappafterlogon">ApplicationManagement/LaunchAppAfterLogOn</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-applicationmanagement.md#applicationmanagement-msiallowusercontroloverinstall" id="applicationmanagement-msiallowusercontroloverinstall">ApplicationManagement/MSIAllowUserControlOverInstall</a>
   </dd>
   <dd>
@@ -239,6 +230,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-applicationmanagement.md#applicationmanagement-restrictapptosystemvolume" id="applicationmanagement-restrictapptosystemvolume">ApplicationManagement/RestrictAppToSystemVolume</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-applicationmanagement.md#applicationmanagement-scheduleforcerestartforupdatefailures" id="applicationmanagement-scheduleforcerestartforupdatefailures">ApplicationManagement/ScheduleForceRestartForUpdateFailures</a>
   </dd>
 </dl>
 
@@ -392,6 +386,29 @@ The following diagram shows the Policy configuration service provider in tree fo
 <dl>
   <dd>
     <a href="./policy-csp-bitlocker.md#bitlocker-encryptionmethod" id="bitlocker-encryptionmethod">Bitlocker/EncryptionMethod</a>
+  </dd>
+</dl>
+
+### BITS policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-bits.md#bits-bandwidththrottlingendtime" id="bits-bandwidththrottlingendtime">BITS/BandwidthThrottlingEndTime</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-bits.md#bits-bandwidththrottlingstarttime" id="bits-bandwidththrottlingstarttime">BITS/BandwidthThrottlingStartTime</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-bits.md#bits-bandwidththrottlingtransferrate" id="bits-bandwidththrottlingtransferrate">BITS/BandwidthThrottlingTransferRate</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-bits.md#bits-costednetworkbehaviorbackgroundpriority" id="bits-costednetworkbehaviorbackgroundpriority">BITS/CostedNetworkBehaviorBackgroundPriority</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-bits.md#bits-costednetworkbehaviorforegroundpriority" id="bits-costednetworkbehaviorforegroundpriority">BITS/CostedNetworkBehaviorForegroundPriority</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-bits.md#bits-jobinactivitytimeout" id="bits-jobinactivitytimeout">BITS/JobInactivityTimeout</a>
   </dd>
 </dl>
 
@@ -747,6 +764,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-defender.md#defender-avgcpuloadfactor" id="defender-avgcpuloadfactor">Defender/AvgCPULoadFactor</a>
   </dd>
   <dd>
+    <a href="./policy-csp-defender.md#defender-checkforsignaturesbeforerunningscan" id="defender-checkforsignaturesbeforerunningscan">Defender/CheckForSignaturesBeforeRunningScan</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-defender.md#defender-cloudblocklevel" id="defender-cloudblocklevel">Defender/CloudBlockLevel</a>
   </dd>
   <dd>
@@ -762,7 +782,16 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-defender.md#defender-daystoretaincleanedmalware" id="defender-daystoretaincleanedmalware">Defender/DaysToRetainCleanedMalware</a>
   </dd>
   <dd>
+    <a href="./policy-csp-defender.md#defender-disablecatchupfullscan" id="defender-disablecatchupfullscan">Defender/DisableCatchupFullScan</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-defender.md#defender-disablecatchupquickscan" id="defender-disablecatchupquickscan">Defender/DisableCatchupQuickScan</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-defender.md#defender-enablecontrolledfolderaccess" id="defender-enablecontrolledfolderaccess">Defender/EnableControlledFolderAccess</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-defender.md#defender-enablelowcpupriority" id="defender-enablelowcpupriority">Defender/EnableLowCPUPriority</a>
   </dd>
   <dd>
     <a href="./policy-csp-defender.md#defender-enablenetworkprotection" id="defender-enablenetworkprotection">Defender/EnableNetworkProtection</a>
@@ -793,6 +822,12 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-defender.md#defender-schedulescantime" id="defender-schedulescantime">Defender/ScheduleScanTime</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-defender.md#defender-signatureupdatefallbackorder" id="defender-signatureupdatefallbackorder">Defender/SignatureUpdateFallbackOrder</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-defender.md#defender-signatureupdatefilesharessources" id="defender-signatureupdatefilesharessources">Defender/SignatureUpdateFileSharesSources</a>
   </dd>
   <dd>
     <a href="./policy-csp-defender.md#defender-signatureupdateinterval" id="defender-signatureupdateinterval">Defender/SignatureUpdateInterval</a>
@@ -994,6 +1029,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### DmaGuard policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-dmaguard.md#dmaguard-deviceenumerationpolicy" id="dmaguard-deviceenumerationpolicy">DmaGuard/DeviceEnumerationPolicy</a>
+  </dd>
+</dl>
+
 ### Education policies
 
 <dl>
@@ -1071,6 +1114,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 ### Experience policies
 
 <dl>
+  <dd>
+    <a href="./policy-csp-experience.md#experience-allowclipboardhistory" id="experience-allowclipboardhistory">Experience/AllowClipboardHistory</a>
+  </dd>
   <dd>
     <a href="./policy-csp-experience.md#experience-allowcopypaste" id="experience-allowcopypaste">Experience/AllowCopyPaste</a>
   </dd>
@@ -2049,10 +2095,16 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior" id="localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior">LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior</a>
   </dd>
   <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-microsoftnetworkclient-digitallysigncommunicationsalways" id="localpoliciessecurityoptions-microsoftnetworkclient-digitallysigncommunicationsalways">LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsAlways</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-microsoftnetworkclient-digitallysigncommunicationsifserveragrees" id="localpoliciessecurityoptions-microsoftnetworkclient-digitallysigncommunicationsifserveragrees">LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees</a>
   </dd>
   <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-microsoftnetworkclient-sendunencryptedpasswordtothirdpartysmbservers" id="localpoliciessecurityoptions-microsoftnetworkclient-sendunencryptedpasswordtothirdpartysmbservers">LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-microsoftnetworkserver-amountofidletimerequiredbeforesuspendingsession" id="localpoliciessecurityoptions-microsoftnetworkserver-amountofidletimerequiredbeforesuspendingsession">LocalPoliciesSecurityOptions/MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession</a>
   </dd>
   <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-microsoftnetworkserver-digitallysigncommunicationsalways" id="localpoliciessecurityoptions-microsoftnetworkserver-digitallysigncommunicationsalways">LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsAlways</a>
@@ -2067,13 +2119,13 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networkaccess-donotallowanonymousenumerationofsamaccountsandshares" id="localpoliciessecurityoptions-networkaccess-donotallowanonymousenumerationofsamaccountsandshares">LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares</a>
   </dd>
   <dd>
-    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networkaccess-leteveryonepermissionsapplytoanonymoususers" id="localpoliciessecurityoptions-networkaccess-leteveryonepermissionsapplytoanonymoususers">LocalPoliciesSecurityOptions/NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networkaccess-restrictanonymousaccesstonamedpipesandshares" id="localpoliciessecurityoptions-networkaccess-restrictanonymousaccesstonamedpipesandshares">LocalPoliciesSecurityOptions/NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares</a>
   </dd>
   <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networkaccess-restrictclientsallowedtomakeremotecallstosam" id="localpoliciessecurityoptions-networkaccess-restrictclientsallowedtomakeremotecallstosam">LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-allowlocalsystemtousecomputeridentityforntlm" id="localpoliciessecurityoptions-networksecurity-allowlocalsystemtousecomputeridentityforntlm">LocalPoliciesSecurityOptions/NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM</a>
   </dd>
   <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-allowpku2uauthenticationrequests" id="localpoliciessecurityoptions-networksecurity-allowpku2uauthenticationrequests">LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests</a>
@@ -2083,6 +2135,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-lanmanagerauthenticationlevel" id="localpoliciessecurityoptions-networksecurity-lanmanagerauthenticationlevel">LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedclients" id="localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedclients">LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</a>
   </dd>
   <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedservers" id="localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedservers">LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</a>
@@ -2323,6 +2378,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-privacy.md#privacy-allowautoacceptpairingandprivacyconsentprompts" id="privacy-allowautoacceptpairingandprivacyconsentprompts">Privacy/AllowAutoAcceptPairingAndPrivacyConsentPrompts</a>
   </dd>
   <dd>
+    <a href="./policy-csp-privacy.md#privacy-allowcrossdeviceclipboard" id="privacy-allowcrossdeviceclipboard">Privacy/AllowCrossDeviceClipboard</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-privacy.md#privacy-allowinputpersonalization" id="privacy-allowinputpersonalization">Privacy/AllowInputPersonalization</a>
   </dd>
   <dd>
@@ -2402,6 +2460,18 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-privacy.md#privacy-letappsaccessemail-userincontroloftheseapps" id="privacy-letappsaccessemail-userincontroloftheseapps">Privacy/LetAppsAccessEmail_UserInControlOfTheseApps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsaccessgazeinput" id="privacy-letappsaccessgazeinput">Privacy/LetAppsAccessGazeInput</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsaccessgazeinput-forceallowtheseapps" id="privacy-letappsaccessgazeinput-forceallowtheseapps">Privacy/LetAppsAccessGazeInput_ForceAllowTheseApps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsaccessgazeinput-forcedenytheseapps" id="privacy-letappsaccessgazeinput-forcedenytheseapps">Privacy/LetAppsAccessGazeInput_ForceDenyTheseApps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsaccessgazeinput-userincontroloftheseapps" id="privacy-letappsaccessgazeinput-userincontroloftheseapps">Privacy/LetAppsAccessGazeInput_UserInControlOfTheseApps</a>
   </dd>
   <dd>
     <a href="./policy-csp-privacy.md#privacy-letappsaccesslocation" id="privacy-letappsaccesslocation">Privacy/LetAppsAccessLocation</a>
@@ -2549,6 +2619,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-privacy.md#privacy-publishuseractivities" id="privacy-publishuseractivities">Privacy/PublishUserActivities</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-uploaduseractivities" id="privacy-uploaduseractivities">Privacy/UploadUserActivities</a>
   </dd>
 </dl>
 
@@ -2975,6 +3048,12 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-system.md#system-bootstartdriverinitialization" id="system-bootstartdriverinitialization">System/BootStartDriverInitialization</a>
   </dd>
   <dd>
+    <a href="./policy-csp-system.md#system-configuretelemetryoptinchangenotification" id="system-configuretelemetryoptinchangenotification">System/ConfigureTelemetryOptInChangeNotification</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-system.md#system-configuretelemetryoptinsettingsux" id="system-configuretelemetryoptinsettingsux">System/ConfigureTelemetryOptInSettingsUx</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-system.md#system-disableenterpriseauthproxy" id="system-disableenterpriseauthproxy">System/DisableEnterpriseAuthProxy</a>
   </dd>
   <dd>
@@ -3014,6 +3093,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-systemservices.md#systemservices-configurexboxlivenetworkingservicestartupmode" id="systemservices-configurexboxlivenetworkingservicestartupmode">SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode</a>
+  </dd>
+</dl>
+
+### TaskManager policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-taskmanager.md#taskmanager-allowendtask" id="taskmanager-allowendtask">TaskManager/AllowEndTask</a>
   </dd>
 </dl>
 
@@ -3956,6 +4043,12 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Autoplay/DisallowAutoplayForNonVolumeDevices](./policy-csp-autoplay.md#autoplay-disallowautoplayfornonvolumedevices)
 -   [Autoplay/SetDefaultAutoRunBehavior](./policy-csp-autoplay.md#autoplay-setdefaultautorunbehavior)
 -   [Autoplay/TurnOffAutoPlay](./policy-csp-autoplay.md#autoplay-turnoffautoplay)
+-   [BITS/BandwidthThrottlingEndTime](./policy-csp-bits.md#bits-bandwidththrottlingendtime)
+-   [BITS/BandwidthThrottlingStartTime](./policy-csp-bits.md#bits-bandwidththrottlingstarttime)
+-   [BITS/BandwidthThrottlingTransferRate](./policy-csp-bits.md#bits-bandwidththrottlingtransferrate)
+-   [BITS/CostedNetworkBehaviorBackgroundPriority](./policy-csp-bits.md#bits-costednetworkbehaviorbackgroundpriority)
+-   [BITS/CostedNetworkBehaviorForegroundPriority](./policy-csp-bits.md#bits-costednetworkbehaviorforegroundpriority)
+-   [BITS/JobInactivityTimeout](./policy-csp-bits.md#bits-jobinactivitytimeout)
 -   [Browser/AllowAddressBarDropdown](./policy-csp-browser.md#browser-allowaddressbardropdown)
 -   [Browser/AllowAutofill](./policy-csp-browser.md#browser-allowautofill)
 -   [Browser/AllowCookies](./policy-csp-browser.md#browser-allowcookies)
@@ -4028,12 +4121,16 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Defender/AttackSurfaceReductionOnlyExclusions](./policy-csp-defender.md#defender-attacksurfacereductiononlyexclusions)
 -   [Defender/AttackSurfaceReductionRules](./policy-csp-defender.md#defender-attacksurfacereductionrules)
 -   [Defender/AvgCPULoadFactor](./policy-csp-defender.md#defender-avgcpuloadfactor)
+-   [Defender/CheckForSignaturesBeforeRunningScan](./policy-csp-defender.md#defender-checkforsignaturesbeforerunningscan)
 -   [Defender/CloudBlockLevel](./policy-csp-defender.md#defender-cloudblocklevel)
 -   [Defender/CloudExtendedTimeout](./policy-csp-defender.md#defender-cloudextendedtimeout)
 -   [Defender/ControlledFolderAccessAllowedApplications](./policy-csp-defender.md#defender-controlledfolderaccessallowedapplications)
 -   [Defender/ControlledFolderAccessProtectedFolders](./policy-csp-defender.md#defender-controlledfolderaccessprotectedfolders)
 -   [Defender/DaysToRetainCleanedMalware](./policy-csp-defender.md#defender-daystoretaincleanedmalware)
+-   [Defender/DisableCatchupFullScan](./policy-csp-defender.md#defender-disablecatchupfullscan)
+-   [Defender/DisableCatchupQuickScan](./policy-csp-defender.md#defender-disablecatchupquickscan)
 -   [Defender/EnableControlledFolderAccess](./policy-csp-defender.md#defender-enablecontrolledfolderaccess)
+-   [Defender/EnableLowCPUPriority](./policy-csp-defender.md#defender-enablelowcpupriority)
 -   [Defender/EnableNetworkProtection](./policy-csp-defender.md#defender-enablenetworkprotection)
 -   [Defender/ExcludedExtensions](./policy-csp-defender.md#defender-excludedextensions)
 -   [Defender/ExcludedPaths](./policy-csp-defender.md#defender-excludedpaths)
@@ -4043,6 +4140,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Defender/ScheduleQuickScanTime](./policy-csp-defender.md#defender-schedulequickscantime)
 -   [Defender/ScheduleScanDay](./policy-csp-defender.md#defender-schedulescanday)
 -   [Defender/ScheduleScanTime](./policy-csp-defender.md#defender-schedulescantime)
+-   [Defender/SignatureUpdateFallbackOrder](./policy-csp-defender.md#defender-signatureupdatefallbackorder)
+-   [Defender/SignatureUpdateFileSharesSources](./policy-csp-defender.md#defender-signatureupdatefilesharessources)
 -   [Defender/SignatureUpdateInterval](./policy-csp-defender.md#defender-signatureupdateinterval)
 -   [Defender/SubmitSamplesConsent](./policy-csp-defender.md#defender-submitsamplesconsent)
 -   [Defender/ThreatSeverityDefaultAction](./policy-csp-defender.md#defender-threatseveritydefaultaction)
@@ -4083,6 +4182,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Display/EnablePerProcessDpiForApps](./policy-csp-display.md#display-enableperprocessdpiforapps)
 -   [Display/TurnOffGdiDPIScalingForApps](./policy-csp-display.md#display-turnoffgdidpiscalingforapps)
 -   [Display/TurnOnGdiDPIScalingForApps](./policy-csp-display.md#display-turnongdidpiscalingforapps)
+-   [DmaGuard/DeviceEnumerationPolicy](./policy-csp-dmaguard.md#dmaguard-deviceenumerationpolicy)
 -   [Education/PreventAddingNewPrinters](./policy-csp-education.md#education-preventaddingnewprinters)
 -   [ErrorReporting/CustomizeConsentSettings](./policy-csp-errorreporting.md#errorreporting-customizeconsentsettings)
 -   [ErrorReporting/DisableWindowsErrorReporting](./policy-csp-errorreporting.md#errorreporting-disablewindowserrorreporting)
@@ -4093,6 +4193,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [EventLogService/SpecifyMaximumFileSizeApplicationLog](./policy-csp-eventlogservice.md#eventlogservice-specifymaximumfilesizeapplicationlog)
 -   [EventLogService/SpecifyMaximumFileSizeSecurityLog](./policy-csp-eventlogservice.md#eventlogservice-specifymaximumfilesizesecuritylog)
 -   [EventLogService/SpecifyMaximumFileSizeSystemLog](./policy-csp-eventlogservice.md#eventlogservice-specifymaximumfilesizesystemlog)
+-   [Experience/AllowClipboardHistory](./policy-csp-experience.md#experience-allowclipboardhistory)
 -   [Experience/AllowCortana](./policy-csp-experience.md#experience-allowcortana)
 -   [Experience/AllowFindMyDevice](./policy-csp-experience.md#experience-allowfindmydevice)
 -   [Experience/AllowTailoredExperiencesWithDiagnosticData](./policy-csp-experience.md#experience-allowtailoredexperienceswithdiagnosticdata)
@@ -4383,17 +4484,21 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [LocalPoliciesSecurityOptions/InteractiveLogon_MessageTextForUsersAttemptingToLogOn](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-interactivelogon-messagetextforusersattemptingtologon)
 -   [LocalPoliciesSecurityOptions/InteractiveLogon_MessageTitleForUsersAttemptingToLogOn](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-interactivelogon-messagetitleforusersattemptingtologon)
 -   [LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior)
+-   [LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsAlways](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-microsoftnetworkclient-digitallysigncommunicationsalways)
 -   [LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-microsoftnetworkclient-digitallysigncommunicationsifserveragrees)
 -   [LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-microsoftnetworkclient-sendunencryptedpasswordtothirdpartysmbservers)
+-   [LocalPoliciesSecurityOptions/MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-microsoftnetworkserver-amountofidletimerequiredbeforesuspendingsession)
 -   [LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsAlways](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-microsoftnetworkserver-digitallysigncommunicationsalways)
 -   [LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-microsoftnetworkserver-digitallysigncommunicationsifclientagrees)
 -   [LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networkaccess-donotallowanonymousenumerationofsamaccounts)
 -   [LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networkaccess-donotallowanonymousenumerationofsamaccountsandshares)
 -   [LocalPoliciesSecurityOptions/NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networkaccess-restrictanonymousaccesstonamedpipesandshares)
 -   [LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networkaccess-restrictclientsallowedtomakeremotecallstosam)
+-   [LocalPoliciesSecurityOptions/NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-allowlocalsystemtousecomputeridentityforntlm)
 -   [LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-allowpku2uauthenticationrequests)
 -   [LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-donotstorelanmanagerhashvalueonnextpasswordchange)
 -   [LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-lanmanagerauthenticationlevel)
+-   [LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedclients)
 -   [LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-minimumsessionsecurityforntlmsspbasedservers)
 -   [LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-restrictntlm-addremoteserverexceptionsforntlmauthentication)
 -   [LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic](./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-restrictntlm-auditincomingntlmtraffic)
@@ -4448,6 +4553,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Printers/PointAndPrintRestrictions](./policy-csp-printers.md#printers-pointandprintrestrictions)
 -   [Printers/PointAndPrintRestrictions_User](./policy-csp-printers.md#printers-pointandprintrestrictions-user)
 -   [Printers/PublishPrinters](./policy-csp-printers.md#printers-publishprinters)
+-   [Privacy/AllowCrossDeviceClipboard](./policy-csp-privacy.md#privacy-allowcrossdeviceclipboard)
 -   [Privacy/AllowInputPersonalization](./policy-csp-privacy.md#privacy-allowinputpersonalization)
 -   [Privacy/DisableAdvertisingId](./policy-csp-privacy.md#privacy-disableadvertisingid)
 -   [Privacy/EnableActivityFeed](./policy-csp-privacy.md#privacy-enableactivityfeed)
@@ -4524,6 +4630,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Privacy/LetAppsSyncWithDevices_ForceDenyTheseApps](./policy-csp-privacy.md#privacy-letappssyncwithdevices-forcedenytheseapps)
 -   [Privacy/LetAppsSyncWithDevices_UserInControlOfTheseApps](./policy-csp-privacy.md#privacy-letappssyncwithdevices-userincontroloftheseapps)
 -   [Privacy/PublishUserActivities](./policy-csp-privacy.md#privacy-publishuseractivities)
+-   [Privacy/UploadUserActivities](./policy-csp-privacy.md#privacy-uploaduseractivities)
 -   [RemoteAssistance/CustomizeWarningMessages](./policy-csp-remoteassistance.md#remoteassistance-customizewarningmessages)
 -   [RemoteAssistance/SessionLogging](./policy-csp-remoteassistance.md#remoteassistance-sessionlogging)
 -   [RemoteAssistance/SolicitedRemoteAssistance](./policy-csp-remoteassistance.md#remoteassistance-solicitedremoteassistance)
@@ -4587,6 +4694,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [System/AllowLocation](./policy-csp-system.md#system-allowlocation)
 -   [System/AllowTelemetry](./policy-csp-system.md#system-allowtelemetry)
 -   [System/BootStartDriverInitialization](./policy-csp-system.md#system-bootstartdriverinitialization)
+-   [System/ConfigureTelemetryOptInChangeNotification](./policy-csp-system.md#system-configuretelemetryoptinchangenotification)
+-   [System/ConfigureTelemetryOptInSettingsUx](./policy-csp-system.md#system-configuretelemetryoptinsettingsux)
 -   [System/DisableEnterpriseAuthProxy](./policy-csp-system.md#system-disableenterpriseauthproxy)
 -   [System/DisableOneDriveFileSync](./policy-csp-system.md#system-disableonedrivefilesync)
 -   [System/DisableSystemRestore](./policy-csp-system.md#system-disablesystemrestore)
@@ -4723,15 +4832,27 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Browser/AllowSmartScreen](#browser-allowsmartscreen)  
 -   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
 -   [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)  
+-   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)  
+-   [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)  
 -   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
+-   [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)  
+-   [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)  
+-   [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)  
+-   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)  
+-   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
 -   [Experience/AllowCortana](#experience-allowcortana)  
 -   [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)  
+-   [Privacy/AllowCrossDeviceClipboard](#privacy-allowcrossdeviceclipboard)  
 -   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)  
+-   [Privacy/LetAppsAccessGazeInput](#privacy-letappsaccessgazeinput)  
+-   [Privacy/LetAppsAccessGazeInput_ForceAllowTheseApps](#privacy-letappsaccessgazeinput-forceallowtheseapps)  
+-   [Privacy/LetAppsAccessGazeInput_ForceDenyTheseApps](#privacy-letappsaccessgazeinput-forcedenytheseapps)  
+-   [Privacy/LetAppsAccessGazeInput_UserInControlOfTheseApps](#privacy-letappsaccessgazeinput-userincontroloftheseapps)  
+-   [Privacy/UploadUserActivities](#privacy-uploaduseractivities)  
 -   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
 -   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
 -   [Settings/AllowDateTime](#settings-allowdatetime)  
 -   [Settings/AllowVPN](#settings-allowvpn)  
--   [System/AllowFontProviders](#system-allowfontproviders)  
 -   [System/AllowLocation](#system-allowlocation)  
 -   [System/AllowTelemetry](#system-allowtelemetry)  
 -   [Update/AllowAutoUpdate](#update-allowautoupdate)  

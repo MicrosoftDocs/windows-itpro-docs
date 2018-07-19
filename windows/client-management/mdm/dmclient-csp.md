@@ -658,7 +658,7 @@ Required. Added in Windows 10, version 1709. This node contains a list of LocURI
 Supported operations are Add, Delete, Get, and Replace. Value type is string.
 
 <a href="" id="provider-providerid-firstsyncstatus-expectednetworkprofiles "></a>**Provider/*ProviderID*/FirstSyncStatus/ExpectedNetworkProfiles**  
-Required. Added in Windows 10, version 1709. This node contains a list of LocURIs that refer to Wi-Fi profiles and VPN profiles the the management service provider expects to provision, delimited by the character L"\xF000".
+Required. Added in Windows 10, version 1709. This node contains a list of LocURIs that refer to Wi-Fi profiles and VPN profiles the management service provider expects to provision, delimited by the character L"\xF000".
 
 Supported operations are Add, Delete, Get, and Replace. Value type is string.
 

@@ -1,9 +1,7 @@
 ---
 title: Manage updates to HoloLens (HoloLens)
 description: Administrators can use mobile device management to manage updates to HoloLens devices.
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.pagetype: hololens, devices
+ms.prod: hololens
 ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
@@ -14,7 +12,7 @@ ms.date: 04/30/2018
 
 # Manage updates to HoloLens
 
-
+>**Looking for how to get the latest update? See [Update HoloLens](https://support.microsoft.com/help/12643/hololens-update-hololens).**
 
 Windows 10, version 1803, is the first feature update to Windows Holographic for Business since its release in Windows 10, version 1607. As with desktop devices, administrators can manage updates to the HoloLens operating system using [Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb).
 

@@ -122,6 +122,7 @@
 #### [UniversalAppUninstall](wcd/wcd-universalappuninstall.md) 
 #### [UsbErrorsOEMOverride](wcd/wcd-usberrorsoemoverride.md)
 #### [WeakCharger](wcd/wcd-weakcharger.md)  
+#### [WindowsHelloForBusiness](wcd/wcd-windowshelloforbusiness.md)
 #### [WindowsTeamSettings](wcd/wcd-windowsteamsettings.md)     
 #### [WLAN](wcd/wcd-wlan.md)     
 #### [Workplace](wcd/wcd-workplace.md)  

@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 04/24/2018
 ---
 
@@ -23,7 +23,7 @@ ms.date: 04/24/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
 
@@ -57,7 +57,7 @@ Whenever a change or comment is made to an alert, it is recorded in the **Commen
 Added comments instantly appear on the pane.
 
 ## Suppress alerts
-There might be scenarios where you need to suppress alerts from appearing in the Windows Defender ATP portal. Windows Defender ATP lets you create suppression rules for specific alerts that are known to be innocuous such as known tools or processes in your organization. 
+There might be scenarios where you need to suppress alerts from appearing in Windows Defender Security Center. Windows Defender ATP lets you create suppression rules for specific alerts that are known to be innocuous such as known tools or processes in your organization. 
 
 Suppression rules can be created from an existing alert. They can be disabled and reenabled if needed.
 

@@ -4,7 +4,7 @@ description: Typically, deployment of Windows Defender Application Control happe
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: brianlic-msft
 ms.date: 03/01/2018
 ---

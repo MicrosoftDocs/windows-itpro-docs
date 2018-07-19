@@ -64,7 +64,7 @@ A TPM virtual smart card simulates a physical smart card, and it uses the TPM to
 -   **Isolated cryptography**: TPMs provide the same properties of isolated cryptography that is offered by physical smart cards, and this is utilized by virtual smart cards. Unencrypted copies of private keys are loaded only within the TPM and never into memory that is accessible by the operating system. All cryptographic operations with these private keys occur inside the TPM.
 
 -   **Anti-hammering**: If a user enters a PIN incorrectly, the virtual smart card responds by using the anti-hammering logic of the TPM, which rejects further attempts for a period of time instead of blocking the card. This is also known as lockout.
-    For more information, see [Evaluate Virtual Smart Card Security](virtual-smart-card-evaluate-security.md).
+    For more information, see [Blocked virtual smart card](#blocked-virtual-smart-card) and [Evaluate Virtual Smart Card Security](virtual-smart-card-evaluate-security.md). 
 
 There are several options for creating virtual smart cards, depending on the size of the deployment and budget of the organization. The lowest cost option is using Tpmvscmgr.exe to create cards individually on users’ computers. Alternatively, a virtual smart card management solution can be purchased to more easily accomplish virtual smart card creation on a larger scale and aid in further phases of deployment. Virtual smart cards can be created on computers that are to be provisioned for an employee or on those that are already in an employee’s possession. In either approach, there should be some central control over personalization and provisioning. If a computer is intended for use by multiple employees, multiple virtual smart cards can be created on a computer.
 
@@ -261,7 +261,9 @@ The most common scenario in an organization is reissuing virtual smart cards, wh
 
 #### Blocked virtual smart card
 
-The anti-hammering behavior of a TPM virtual smart card is different from that of a physical smart card. A physical smart card blocks itself after the user enters the wrong PIN a few times. A TPM virtual smart card enters a timed delay after the user enters the wrong PIN a few times. If the TPM is in the timed-delay mode, when the user attempts to use the TPM virtual smart card, the user is notified that the card is blocked. Furthermore, if you enable the integrated unlock functionality, the user can see the user interface to unlock the virtual smart card. Unlocking the virtual smart card does not reset the TPM lockout. The user needs to perform an extra step to reset the TPM lockout or wait for the timed delay to expire.
+The anti-hammering behavior of a TPM virtual smart card is different from that of a physical smart card. A physical smart card blocks itself after the user enters the wrong PIN a few times. A TPM virtual smart card enters a timed delay after the user enters the wrong PIN a few times. If the TPM is in the timed-delay mode, when the user attempts to use the TPM virtual smart card, the user is notified that the card is blocked. Furthermore, if you enable the integrated unlock functionality, the user can see the user interface to unlock the virtual smart card and change the PIN. Unlocking the virtual smart card does not reset the TPM lockout. The user needs to perform an extra step to reset the TPM lockout or wait for the timed delay to expire.
+
+For more information about setting the Allow Integrated Unblock policy, see [Allow Integrated Unblock screen to be displayed at the time of logon](https://docs.microsoft.com/windows/security/identity-protection/smart-cards/smart-card-group-policy-and-registry-settings#allow-integrated-unblock-screen-to-be-displayed-at-the-time-of-logon).
 
 ## See also
 

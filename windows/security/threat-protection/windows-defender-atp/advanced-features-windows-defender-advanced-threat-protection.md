@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 05/08/2018
 ---
 
@@ -23,7 +23,7 @@ ms.date: 05/08/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
 
@@ -71,7 +71,7 @@ When you complete the integration steps on both portals, you'll be able to see r
 ## Office 365 Threat Intelligence connection
 This feature is only available if you have an active Office 365 E5 or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
 
-When you enable this feature, you'll be able to incorporate data from Office 365 Advanced Threat Protection into the Windows Defender ATP portal to conduct a holistic security investigation across Office 365 mailboxes and Windows machines.
+When you enable this feature, you'll be able to incorporate data from Office 365 Advanced Threat Protection into Windows Defender Security Center to conduct a holistic security investigation across Office 365 mailboxes and Windows machines.
 
 >[!NOTE]
 >You'll need to have the appropriate license to enable this feature. 

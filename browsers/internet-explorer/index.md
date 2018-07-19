@@ -1,12 +1,12 @@
 ---
 ms.mktglfcycl: deploy
 description: The landing page for IE11 that lets you access the documentation.
-author: eross-msft
+author: shortpatti
 ms.prod: IE11
 title: Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)
 assetid: be3dc32e-80d9-4d9f-a802-c7db6c50dbe0
 ms.sitesec: library
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.date: 07/27/2017
 ---
 

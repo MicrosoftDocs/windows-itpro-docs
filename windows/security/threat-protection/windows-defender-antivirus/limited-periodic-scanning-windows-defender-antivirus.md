@@ -39,6 +39,7 @@ Limited periodic scanning is a special type of threat detection and remediation 
 
 It can only be enabled in certain situations. See the [Windows Defender Antivirus compatibility](windows-defender-antivirus-compatibility.md) topic for more information on when limited periodic scanning can be enabled, and how Windows Defender Antivirus works with other AV products.
 
+**Microsoft does not recommend using this feature in enterprise environments. This is a feature primarily intended for consumers.** This feature only uses a very limited subset of the capabilities of Windows Defender Antivirus to detect malware, and will not be able to detect most malware and potentially unwanted software. Also, management and reporting capabilities will be limited. Microsoft recommends enterprises choose their primary antivirus solution and use it exclusively.
 
 ## How to enable limited periodic scanning
 

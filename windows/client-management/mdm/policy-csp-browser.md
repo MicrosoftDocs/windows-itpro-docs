@@ -1,16 +1,18 @@
 ---
 title: Policy CSP - Browser
 description: Policy CSP - Browser
-ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 05/14/2018
+author: shortpatti
+ms.author: pashort
+ms.date: 07/18/2018
 ---
 
 # Policy CSP - Browser
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -50,6 +52,9 @@ ms.date: 05/14/2018
     <a href="#browser-allowflashclicktorun">Browser/AllowFlashClickToRun</a>
   </dd>
   <dd>
+    <a href="#browser-allowfullscreenmode">Browser/AllowFullScreenMode</a>
+  </dd>
+  <dd>
     <a href="#browser-allowinprivate">Browser/AllowInPrivate</a>
   </dd>
   <dd>
@@ -62,13 +67,31 @@ ms.date: 05/14/2018
     <a href="#browser-allowpopups">Browser/AllowPopups</a>
   </dd>
   <dd>
+    <a href="#browser-allowprelaunch">Browser/AllowPrelaunch</a>
+  </dd>
+  <dd>
+    <a href="#browser-allowprinting">Browser/AllowPrinting</a>
+  </dd>
+  <dd>
+    <a href="#browser-allowsavinghistory">Browser/AllowSavingHistory</a>
+  </dd>
+  <dd>
     <a href="#browser-allowsearchenginecustomization">Browser/AllowSearchEngineCustomization</a>
   </dd>
   <dd>
     <a href="#browser-allowsearchsuggestionsinaddressbar">Browser/AllowSearchSuggestionsinAddressBar</a>
   </dd>
   <dd>
+    <a href="#browser-allowsideloadingofextensions">Browser/AllowSideloadingOfExtensions</a>
+  </dd>
+  <dd>
     <a href="#browser-allowsmartscreen">Browser/AllowSmartScreen</a>
+  </dd>
+  <dd>
+    <a href="#browser-allowtabpreloading">Browser/AllowTabPreloading</a>
+  </dd>
+  <dd>
+    <a href="#browser-allowwebcontentonnewtabpage">Browser/AllowWebContentOnNewTabPage</a>
   </dd>
   <dd>
     <a href="#browser-alwaysenablebookslibrary">Browser/AlwaysEnableBooksLibrary</a>
@@ -78,6 +101,24 @@ ms.date: 05/14/2018
   </dd>
   <dd>
     <a href="#browser-configureadditionalsearchengines">Browser/ConfigureAdditionalSearchEngines</a>
+  </dd>
+  <dd>
+    <a href="#browser-configurefavoritesbar">Browser/ConfigureFavoritesBar</a>
+  </dd>
+  <dd>
+    <a href="#browser-configurehomebutton">Browser/ConfigureHomeButton</a>
+  </dd>
+  <dd>
+    <a href="#browser-configurekioskmode">Browser/ConfigureKioskMode</a>
+  </dd>
+  <dd>
+    <a href="#browser-configurekioskresetafteridletimeout">Browser/ConfigureKioskResetAfterIdleTimeout</a>
+  </dd>
+  <dd>
+    <a href="#browser-configureopenmicrosoftedgewith">Browser/ConfigureOpenMicrosoftEdgeWith</a>
+  </dd>
+  <dd>
+    <a href="#browser-configuretelemetryformicrosoft365analytics">Browser/ConfigureTelemetryForMicrosoft365Analytics</a>
   </dd>
   <dd>
     <a href="#browser-disablelockdownofstartpages">Browser/DisableLockdownOfStartPages</a>
@@ -95,6 +136,9 @@ ms.date: 05/14/2018
     <a href="#browser-firstrunurl">Browser/FirstRunURL</a>
   </dd>
   <dd>
+    <a href="#browser-forceenabledextensions">Browser/ForceEnabledExtensions</a>
+  </dd>
+  <dd>
     <a href="#browser-homepages">Browser/HomePages</a>
   </dd>
   <dd>
@@ -102,6 +146,9 @@ ms.date: 05/14/2018
   </dd>
   <dd>
     <a href="#browser-preventaccesstoaboutflagsinmicrosoftedge">Browser/PreventAccessToAboutFlagsInMicrosoftEdge</a>
+  </dd>
+  <dd>
+    <a href="#browser-preventcerterroroverrides">Browser/PreventCertErrorOverrides</a>
   </dd>
   <dd>
     <a href="#browser-preventfirstrunpage">Browser/PreventFirstRunPage</a>
@@ -131,10 +178,19 @@ ms.date: 05/14/2018
     <a href="#browser-setdefaultsearchengine">Browser/SetDefaultSearchEngine</a>
   </dd>
   <dd>
+    <a href="#browser-sethomebuttonurl">Browser/SetHomeButtonURL</a>
+  </dd>
+  <dd>
+    <a href="#browser-setnewtabpageurl">Browser/SetNewTabPageURL</a>
+  </dd>
+  <dd>
     <a href="#browser-showmessagewhenopeningsitesininternetexplorer">Browser/ShowMessageWhenOpeningSitesInInternetExplorer</a>
   </dd>
   <dd>
     <a href="#browser-syncfavoritesbetweenieandmicrosoftedge">Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</a>
+  </dd>
+  <dd>
+    <a href="#browser-unlockhomebutton">Browser/UnlockHomeButton</a>
   </dd>
   <dd>
     <a href="#browser-usesharedfolderforbooks">Browser/UseSharedFolderForBooks</a>
@@ -181,10 +237,9 @@ ms.date: 05/14/2018
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Specifies whether to allow the address bar drop-down functionality in Microsoft Edge. If you want to minimize network connections from Microsoft Edge to Microsoft services, we recommend disabling this functionality. 
+Added in Windows 10, version 1703. 
 
-> [!NOTE]
-> Disabling this setting turns off the address bar drop-down functionality. Because search suggestions are shown in the drop-down list, this setting takes precedence over the Browser/AllowSearchSuggestionsinAddressBar setting.
+By default, Microsoft Edge shows the Address bar drop-down list and makes it available.  When enabled (default setting), this policy takes precedence over the [Browser/AllowSearchSuggestionsinAddressBar](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsearchsuggestionsinaddressbar) policy. If you want to minimize network connections from Microsoft Edge to Microsoft service, we recommend disabling this policy, which hides the Address bar drop-down list functionality. When disabled, Microsoft Edge also disables the _Show search and site suggestions as I type_ toggle in Settings.  
 
 Most restricted value is 0.
 
@@ -245,7 +300,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether autofill on websites is allowed.
+By default, users can choose to use Autofill for filling in form fields automatically.  With this policy, you can configure Microsoft Edge, when enabled to use Autofill or, when disabled to prevent using Autofill. 
 
 Most restricted value is 0.
 
@@ -318,12 +373,9 @@ To verify AllowAutofill is set to 0 (not allowed):
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. For desktop devices, use the [AppLocker CSP](applocker-csp.md) instead.
 
-
-Specifies whether the browser is allowed on the device.
+By default, the device allows Microsoft Edge on Windows 10 Mobile. Disabling this policy disables the Microsoft Edge tile, and when clicking the tile, a message opens indicating that the administrator disabled Internet browsing.
 
 Most restricted value is 0.
-
-When this policy is set to 0 (not allowed), the Microsoft Edge for Windows 10 Mobile tile will appear greyed out, and clicking on the tile will display a message indicating theat Internet browsing has been disabled by your administrator.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -374,7 +426,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting lets you decide whether Microsoft Edge can automatically update the configuration data for the Books Library.
+By default, Microsoft Edge automatically updates the configuration data for the Books Library.  Enabling this policy prevents Microsoft Edge from updating the configuration data.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -425,7 +477,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether cookies are allowed.
+By default, Microsoft Edge allows all cookies from all websites.  With this policy, however, you can configure Microsoft to block only 3rd-party cookies or block all cookies. 
 
 
 Most restricted value is 0.
@@ -443,9 +495,9 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Block all cookies
--   1 – Block only third party cookies
--   2 - Allow cookies
+-   0 – Block all cookies from all sites.
+-   1 – Block only cookies from third party websites.
+-   2 - Allow all cookies from all sites.
 
 <!--/SupportedValues-->
 <!--Validation-->
@@ -501,8 +553,7 @@ To verify AllowCookies is set to 0 (not allowed):
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
-
-Specifies whether employees can use F12 Developer Tools on Microsoft Edge. Turning this setting on, or not configuring it, lets employees use F12 Developer Tools. Turning this setting off stops employees from using F12 Developer Tools.
+By default, Microsoft Edge allows users to use the F12 developer tools to build and debug web pages. Disabling this policy prevents users from using the F12 developer tools.
 
 Most restricted value is 0.
 
@@ -563,7 +614,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether Do Not Track headers are allowed.
+By default, Microsoft Edge does not send Do Not Track requests to websites asking for tracking information, but users can choose to send tracking information to sites they visit. With this policy, you can configure Microsoft Edge to send or never send tracking information.
 
 Most restricted value is 1.
 
@@ -579,8 +630,9 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Not allowed.
--   1 – Allowed.
+-	Blank/Null (default) Not configured - Does not send tracking information, but allow users to choose whether to send tracking information to sites they visit.
+-	0 (Disabled) - Never sends tracking information.
+-	1 (Enabled) - Sends tracking information, including to the third parties whose content may be hosted on the sites visited.
 
 <!--/SupportedValues-->
 <!--Validation-->
@@ -769,6 +821,72 @@ The following list shows the supported values:
 -   1 (default) – Users must click the content, click a Click-to-Run button, or have the site appear on an auto-allow list before Microsoft Edge loads and runs Adobe Flash content.
 
 <!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="browser-allowfullscreenmode"></a>**Browser/AllowFullScreenMode**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Next Windows 10 major release<p>
+Microsoft Edge allows full-screen mode by default, which shows only the web content and hides the Microsoft Edge UI. When allowing full-screen mode, users and extensions must have the proper permissions. Disabling this policy prevents full-screen mode in Microsoft Edge.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow FullScreen Mode*
+-   GP name: *AllowFullScreenMode*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Allowed values:
+- 0 - Prevented/not allowed
+- 1 (default) - Allowed
+
+Most restricted value: 0
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -1019,7 +1137,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
 -   0 (default) – Pop-up blocker is not allowed. It means that pop-up browser windows are allowed.
 -   1 – Pop-up blocker is allowed or enabled. It means that pop-up browser windows are blocked.
@@ -1032,6 +1150,204 @@ To verify AllowPopups is set to 0 (not allowed):
 2.  In the upper-right corner of the browser, click **…**.
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
 4.  Verify the setting **Block pop-ups** is greyed out.
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="browser-allowprelaunch"></a>**Browser/AllowPrelaunch**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Next Windows 10 major release<p>
+Microsoft Edge pre-launches during Windows startup when the system is idle, and each time Microsoft Edge closes by default. When Microsoft Edge pre-launches, it runs as a background process waiting to be launched by the user. Pre-launching helps the performance of Microsoft Edge and minimizes the amount of time required to start up Microsoft Edge. With this policy, you can configure Microsoft Edge to prevent Microsoft Edge from pre-launching.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed*
+-   GP name: *AllowPrelaunch*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Allowed values:
+- 0 - Prevented/not allowed
+- 1 (default) - Allowed
+
+Most restricted value: 0
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="browser-allowprinting"></a>**Browser/AllowPrinting**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Next Windows 10 major release<p>
+Microsoft Edge allows users to print web content by default. With this policy though, you can configure Microsoft Edge to prevent users from printing web content. 
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow printing*
+-   GP name: *AllowPrinting*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Allowed values:
+- 0 - Prevented/not allowed
+- 1 (default) - Allowed
+
+Most restricted value: 0
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="browser-allowsavinghistory"></a>**Browser/AllowSavingHistory**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Next Windows 10 major release<p>
+Microsoft Edge saves the browsing history of visited websites and shows them in the History pane by default. Disabling this policy prevents Microsoft Edge from saving the browsing history. If browsing history existed before disabling this policy, the previous browsing history remains in the History pane. Disabling this policy does not stop roaming of existing browsing history or browsing history from other devices.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Saving History*
+-   GP name: *AllowSavingHistory*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Allowed values:
+- 0 - Prevented/not allowed
+- 1 (default) - Allowed
+
+Most restricted value: 0
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
 
 <!--/Validation-->
 <!--/Policy-->
@@ -1163,6 +1479,73 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="browser-allowsideloadingofextensions"></a>**Browser/AllowSideloadingOfExtensions**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Next Windows 10 major release<p>
+By default, Microsoft Edge allows sideloading, which installs and runs unverified extensions. Disabling this policy prevents sideloading of extensions but does not prevent sideloading using Add-AppxPackage via PowerShell. You can only install extensions through Microsoft store (including a store for business), enterprise storefront (such as Company Portal) or PowerShell (using Add-AppxPackage).
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Sideloading of extension*
+-   GP name: *AllowSideloadingOfExtensions*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Allowed values:
+
+- 0 - Prevented, but does not prevent sideloading of extensions using Add-AppxPackage via PowerShell. To prevent this, enable ApplicationManagement/AllowDeveloperUnlock.
+- 1 (default) - Allowed.
+
+Most restricted value: 0
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="browser-allowsmartscreen"></a>**Browser/AllowSmartScreen**  
 
 <!--SupportedSKUs-->
@@ -1226,6 +1609,142 @@ To verify AllowSmartScreen is set to 0 (not allowed):
 2.  In the upper-right corner of the browser, click **…**.
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
 4.  Verify the setting **Help protect me from malicious sites and download with SmartScreen Filter** is greyed out.
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="browser-allowtabpreloading"></a>**Browser/AllowTabPreloading**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Next Windows 10 major release<p>
+Microsoft Edge allows preloading of the Start and New tab pages during Windows sign in, and each time Microsoft Edge closes by default. Preloading minimizes the amount of time required to start Microsoft Edge and load a new tab. With this policy, you can configure Microsoft Edge to prevent preloading of tabs.
+
+
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Microsoft Edge to start and load the Start and New Tab page at Windows startup and each time Microsoft Edge is closed*
+-   GP name: *AllowTabPreloading*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Allowed values:
+
+- 0 (default) - Allowed. Preload Start and New tab pages.
+- 1 - Prevented/not allowed.
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="browser-allowwebcontentonnewtabpage"></a>**Browser/AllowWebContentOnNewTabPage**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Next Windows 10 major release<p>
+
+This policy setting lets you configure what appears when Microsoft Edge opens a new tab. By default, Microsoft Edge opens the New Tab page.
+
+If you enable this setting, Microsoft Edge opens a new tab with the New Tab page.
+
+If you disable this setting, Microsoft Edge opens a new tab with a blank page. If you use this setting, employees can't change it.
+
+If you don't configure this setting, employees can choose how new tabs appears.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow web content on New Tab page*
+-   GP name: *AllowWebContentOnNewTabPage*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
 
 <!--/Validation-->
 <!--/Policy-->
@@ -1427,6 +1946,436 @@ The following list shows the supported values:
 -   1 – Additional search engines are allowed.
 
 <!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="browser-configurefavoritesbar"></a>**Browser/ConfigureFavoritesBar**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Next Windows 10 major release<p>
+
+Microsoft Edge hides the favorites bar by default but shows the favorites bar on the Start and New tab pages. Also, by default, the favorites bar toggle, in Settings, is set to Off but enabled allowing users to make changes. With this policy, you can configure Microsoft Edge to either show or hide the favorites bar on all pages.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Favorites Bar*
+-   GP name: *ConfigureFavoritesBar*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Allowed values:
+
+- Blank (default) - Hide the favorites bar but show it on the Start and New tab pages. The favorites bar toggle, in Settings, is set to Off but enabled allowing users to make changes.
+- 0 - Hide the favorites bar on all pages. Also, the favorites bar toggle, in Settings, is set to Off and disabled preventing users from making changes. Microsoft Edge also hides the “show bar/hide bar” option in the context menu.
+- 1 - Show the favorites bar on all pages. Also, the favorites bar toggle, in Settings, is set to On and disabled preventing users from making changes. Microsoft Edge also hides the “show bar/hide bar” option in the context menu.
+
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="browser-configurehomebutton"></a>**Browser/ConfigureHomeButton**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Next Windows 10 major release<p>
+
+Microsoft Edge shows the home button and by clicking it the Start page loads by default. With this policy, you can configure the Home button to load the New tab page or a URL defined in the Set Home Button URL policy. You can also configure Microsoft Edge to hide the home button. 
+
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Home Button*
+-   GP name: *ConfigureHomeButton*
+-   GP element: *ConfigureHomeButtonDropdown*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Allowed values:
+
+- 0 (default) - Show the home button and load the Start page.
+- 1 - Show the home button and load the New tab page.
+- 2 - Show the home button and load the custom URL defined in the Set Home Button URL policy.
+- 3 - Hide the home button.
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="browser-configurekioskmode"></a>**Browser/ConfigureKioskMode**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Next Windows 10 major release<p>
+Configure how Microsoft Edge behaves when it’s running in kiosk mode with assigned access, either as a single-app or as one of many apps running on the kiosk device. You can control whether Microsoft Edge runs InPrivate full screen, InPrivate multi-tab with limited functionality, or normal Microsoft Edge.
+
+For this policy to work, you must configure Microsoft Edge in assigned access; otherwise, Microsoft Edge ignores the settings in this policy. To learn more about assigned access and kiosk configuration, see [Configure kiosk and shared devices running Windows desktop editions](https://aka.ms/E489vw).
+
+
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure kiosk mode*
+-   GP name: *ConfigureKioskMode*
+-   GP element: *ConfigureKioskMode_TextBox*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Allowed values:
+
+**0 (Default or not configured)**:
+- If it’s a single app, it runs InPrivate full screen for digital signage or interactive displays.
+- If it’s one of many apps, Microsoft Edge runs as normal.
+
+**1**:
+- If it’s a single app, it runs a limited multi-tab version of InPrivate and is the only app available for public browsing. Users can’t minimize, close, or open windows or customize Microsoft Edge, but can clear browsing data and downloads and restart by clicking “End session.” You can configure Microsoft Edge to restart after a period of inactivity by using the “Configure kiosk reset after idle timeout” policy.
+- If it’s one of many apps, it runs in a limited multi-tab version of InPrivate for public browsing with other apps. Users can minimize, close, and open multiple InPrivate windows, but they can’t customize Microsoft Edge.
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="browser-configurekioskresetafteridletimeout"></a>**Browser/ConfigureKioskResetAfterIdleTimeout**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Next Windows 10 major release<p>
+You can configure Microsoft Edge kiosk mode to reset to the configured start experience after a specified amount of idle time in minutes (0-1440). The reset timer begins after the last user interaction. Once the idle time meets the time specified, a confirmation message prompts the user to continue, and if no user action, Microsoft Edge kiosk mode resets after 30 seconds. Resetting to the configured start experience deletes the current user’s browsing data.
+
+You must set the Configure kiosk mode policy to enabled (1 - InPrivate public browsing) and configure Microsoft Edge as a single-app in assigned access for this policy to take effect; otherwise, Microsoft Edge ignores this setting. To learn more about assigned access and kiosk configuration, see [Configure kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc).
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure kiosk reset after idle timeout*
+-   GP name: *ConfigureKioskResetAfterIdleTimeout*
+-   GP element: *ConfigureKioskResetAfterIdleTimeout_TextBox*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Allowed values:
+-   **Any integer from 1-1440 (5 minutes is the default)** – The time in minutes from the last user activity before Microsoft Edge kiosk mode resets to the default kiosk configuration. A confirmation dialog displays for the user to cancel or continue and automatically continues after 30 seconds.
+
+-   **0** – No idle timer.
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="browser-configureopenmicrosoftedgewith"></a>**Browser/ConfigureOpenMicrosoftEdgeWith**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Next Windows 10 major release<p>
+
+By default, Microsoft Edge loads a specific page or pages defined in the Configure Start Pages policy and allow users to make changes. With this policy, you can configure Microsoft Edge to load either the Start page, New tab page, previously opened pages. You can also configure Microsoft Edge to prevent users from changing or customizing the Start page. For this policy to work correctly, you must also configure the Configure Start Pages. If you want to prevent users from making changes, don’t configure the Disable Lockdown of Start Pages policy.
+
+**Version 1703 or later**:<br>
+If you don't want to send traffic to Microsoft, use the <about:blank> value, which honors both domain and non domain-joined devices when it's the only configured URL.
+
+
+**Version 1810**:<br>
+When you enable this policy and select an option, and also enable the Configure Start Pages policy, Microsoft Edge ignores the Configure Start Page policy.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure Open Microsoft Edge With*
+-   GP name: *ConfigureOpenEdgeWith*
+-   GP element: *ConfigureOpenEdgeWithListBox*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Allowed values:
+
+- Blank - If you don't configure this policy and you enable the Disable Lockdown of Start Pages policy, users can change or customize the Start page.
+- 0 - Loads the Start page.
+- 1 - Load the New tab page.
+- 2 - Load the previous pages.
+- 3 (default) - Load a specific page or pages.
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="browser-configuretelemetryformicrosoft365analytics"></a>**Browser/ConfigureTelemetryForMicrosoft365Analytics**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Next Windows 10 major release<p>
+Microsoft Edge does not send browsing history data to Microsoft 365 Analytics by default. With this policy though, you can configure Microsoft Edge to send intranet history only, internet history only, or both to Microsoft 365 Analytics for enterprise devices with a configured Commercial ID.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure collection of browsing data for Microsoft 365 Analytics*
+-   GP name: *ConfigureTelemetryForMicrosoft365Analytics*
+-   GP element: *ZonesListBox*
+-   GP path: *Data Collection and Preview Builds*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Allowed values:
+
+- 0 (default) - Microsoft Edge does not collect or send browsing history data.
+- 1 - Send intranet history only.
+- 2 - Send Internet history only.
+- 3 - Send both intranet and Internet history.
+
+Most restricted value: 0
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -1721,6 +2670,66 @@ The default value is an empty string. Otherwise, the string should contain the U
 <hr/>
 
 <!--Policy-->
+<a href="" id="browser-forceenabledextensions"></a>**Browser/ForceEnabledExtensions**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This setting lets you decide which extensions should be always enabled.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP name: *ForceEnabledExtensions*
+-   GP element: *ForceEnabledExtensions_List*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="browser-homepages"></a>**Browser/HomePages**  
 
 <!--SupportedSKUs-->
@@ -1906,6 +2915,73 @@ The following list shows the supported values:
 -   1 – Users can't access the about:flags page in Microsoft Edge.
 
 <!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="browser-preventcerterroroverrides"></a>**Browser/PreventCertErrorOverrides**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Next Windows 10 major release<p>
+Web security certificates are used to ensure a site that users go to is legitimate, and in some circumstances, encrypts the data. By default, Microsoft Edge allows overriding of the security warnings to sites that have SSL errors, bypassing or ignoring certificate errors. Enabling this policy prevents overriding of the security warnings.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Prevent certificate error overrides*
+-   GP name: *PreventCertErrorOverrides*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Allowed values:
+
+- 0 (default) - Allowed/turned on. Override the security warning to sites that have SSL errors.
+- 1 - Prevented/turned on.
+
+Most restricted value: 1
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -2189,7 +3265,10 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. This is only a placeholder. Do not use in production code.
+Added in Windows 10, version 1803. <p>
+
+
+
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2381,7 +3460,7 @@ ADMX Info:
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
-Specifies whether to send intranet traffic over to Internet Explorer.
+By default, all websites, including intranet sites, open in Microsoft Edge automatically.  Only enable this policy if there are known compatibility problems with Microsoft Edge.  Enabling this policy loads only intranet sites in Internet Explorer 11 automatically.
 
 Most restricted value is 0.
 
@@ -2397,8 +3476,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Intranet traffic is sent to Internet Explorer.
--   1 – Intranet traffic is sent to Microsoft Edge.
+- 0 (default) - All websites, including intranet sites, open in Microsoft Edge automatically.
+- 1 - Only intranet sites open in Internet Explorer 11 automatically.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2476,6 +3555,141 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="browser-sethomebuttonurl"></a>**Browser/SetHomeButtonURL**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Next Windows 10 major release<p>
+
+By default, Microsoft Edge shows the home button and loads the Start page, and locks down the home button to prevent users from changing what page loads. Enabling this policy loads a custom URL for the home button. When you enable this policy, and enable the Configure Home Button policy with the _Show home button & set a specific page_ option selected, a custom URL loads when the user clicks the home button.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Set Home Button URL*
+-   GP name: *SetHomeButtonURL*
+-   GP element: *SetHomeButtonURLPrompt*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Allowed values:
+
+- Blank (default) - Show the home button and loads the Start page and locks down the home button to prevent users from changing what page loads.
+- String - A custom URL loads when clicking the home button. You must also enable the Configure Home Button policy and select the _Show home button & set a specific page_ option. Enter a URL in string format, for example, https://www.msn.com.
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="browser-setnewtabpageurl"></a>**Browser/SetNewTabPageURL**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Next Windows 10 major release<p>
+
+Microsoft Edge loads the default New tab page by default. Enabling this policy lets you set a New tab page URL in Microsoft Edge, preventing users from changing it. When you enable this policy, and you disable the Allow web content on New tab page policy, Microsoft Edge ignores any URL specified in this policy and opens about:blank. 
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Set New Tab page URL*
+-   GP name: *SetNewTabPageURL*
+-   GP element: *SetNewTabPageURLPrompt*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Allowed values:
+
+- Blank (default) - Load the default New tab page.
+- String - Prevent users from changing the New tab page. Enter a URL in string format, for example, https://www.msn.com.
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="browser-showmessagewhenopeningsitesininternetexplorer"></a>**Browser/ShowMessageWhenOpeningSitesInInternetExplorer**  
 
 <!--SupportedSKUs-->
@@ -2516,9 +3730,7 @@ The following list shows the supported values:
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
-Added in Windows 10, version 1607. Specifies whether users should see a full interstitial page in Microsoft Edge when opening sites that are configured to open in Internet Explorer using the Enterprise Site List.
-
-Most restricted value is 0.
+Microsoft Edge does not show a notification before opening sites in Internet Explorer 11. However, with this policy, you can configure Microsoft Edge to display a notification before a site opens in IE11 or let users continue in Microsoft Edge. If you want users to continue in Microsoft Edge, enable this policy to show the “Keep going in Microsoft Edge” link in the notification. For this policy to work correctly, you must also enable the Configure the Enterprise Mode Site List or Send all intranet sites to Internet Explorer 11, or both.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2530,11 +3742,13 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+Allowed values:
 
--   0 (default) – Interstitial pages are not shown.
--   1 – Interstitial pages are shown.
+-   0 (default) – No additional message displays.
+-   1 – Show an additional message stating that a site has opened in IE11.
+-   2 - Show an additional message with a "Keep going in Microsoft Edge" link.
 
+Most restricted value: 0
 <!--/SupportedValues-->
 <!--/Policy-->
 
@@ -2615,6 +3829,73 @@ To verify that favorites are in synchronized between Internet Explorer and Micro
 <hr/>
 
 <!--Policy-->
+<a href="" id="browser-unlockhomebutton"></a>**Browser/UnlockHomeButton**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Next Windows 10 major release<p>
+
+By default, when you enable the Configure Home Button policy or provide a URL in the Set Home Button URL policy, Microsoft Edge locks down the home button to prevent users from changing the settings. When you enable this policy, users can make changes to the home button even if you enabled the Configure Home Button or Set Home Button URL policies. 
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Unlock Home Button*
+-   GP name: *UnlockHomeButton*
+-   GP path: *Windows Components/Microsoft Edge*
+-   GP ADMX file name: *MicrosoftEdge.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Allowed values:
+
+- 0 (default) - Lock down the home button to prevent users from making changes.
+- 1 - Let users make changes.
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="browser-usesharedfolderforbooks"></a>**Browser/UseSharedFolderForBooks**  
 
 <!--SupportedSKUs-->
@@ -2678,6 +3959,7 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
+-   5 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
 

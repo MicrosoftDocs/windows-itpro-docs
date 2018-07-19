@@ -1,9 +1,9 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Links to troubleshooting topics and log files that can help address Group Policy problems with Internet Explorer 11.
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: 0da0d9a9-200c-46c4-96be-630e82de017b
 title: Group Policy problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)

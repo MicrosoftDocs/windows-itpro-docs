@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/14/2018
+ms.date: 07/12/2018
 ---
 
 # Policy CSP - WindowsLogon
@@ -142,6 +142,31 @@ This policy setting allows you to control whether anyone can interact with avail
 If you enable this policy setting, the PC's network connectivity state cannot be changed without signing into Windows.
 
 If you disable or don't configure this policy setting, any user can disconnect the PC from the network or can connect the PC to other available networks without signing into Windows.
+
+Here is an example to enable this policy:
+
+``` syntax
+<SyncML xmlns="SYNCML:SYNCML1.2">
+  <SyncBody>
+    <Atomic>
+      <CmdID>300</CmdID>
+      <Replace>
+        <CmdID>301</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Device/Vendor/MSFT/Policy/Config/WindowsLogon/DontDisplayNetworkSelectionUI</LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">chr</Format>
+          </Meta>
+          <Data><![CDATA[<enabled/>]]></Data>
+        </Item>
+      </Replace>
+    </Atomic>
+    <Final/>
+  </SyncBody>
+</SyncML>
+```
 
 <!--/Description-->
 > [!TIP]

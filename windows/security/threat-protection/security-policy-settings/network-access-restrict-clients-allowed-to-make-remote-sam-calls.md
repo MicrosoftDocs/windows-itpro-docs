@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: justinha
 ms.date: 07/27/2017
 ---
@@ -25,7 +25,7 @@ ms.date: 07/27/2017
 
 
 The **Network access: Restrict clients allowed to make remote calls to SAM** security policy setting controls which users can enumerate users and groups in the local Security Accounts Manager (SAM) database and Active Directory. 
-The setting was first supported by Windows 10 version 1607 and Windows Server 2016 (RTM) and can be configured on earlier Windows client and server operating systems by installing updates from the the KB articles listed in **Applies to** section of this topic. 
+The setting was first supported by Windows 10 version 1607 and Windows Server 2016 (RTM) and can be configured on earlier Windows client and server operating systems by installing updates from the KB articles listed in **Applies to** section of this topic. 
 
 This topic describes the default values for this security policy setting in different versions of Windows.
 By default, computers beginning with Windows 10 version 1607 and Windows Server 2016 are more restrictive than earlier versions of Windows. 

@@ -54,7 +54,7 @@ Administrators can still define which user-customized application settings can s
 
 ## Compatibility with Microsoft Enterprise State Roaming
 
-With Windows 10, version 1607, users can synchronize Windows application settings and Windows operating system settings to Azure instead of to OneDrive. You can use the Windows 10 enterprise sync functionality together with UE-V on on-premises domain-joined devices only.
+With Windows 10, version 1607, users can synchronize Windows application settings and Windows operating system settings to Azure instead of to OneDrive. You can use the Windows 10 enterprise sync functionality together with UE-V for on-premises domain-joined devices only.
 
 In hybrid cloud environments, UE-V can roam Win32 applications on-premises while [Enterprise State Roaming](https://azure.microsoft.com/documentation/articles/active-directory-windows-enterprise-state-roaming-overview/) (ESR) can roam the rest, e.g., Windows and desktop settings, themes, colors, etc., to an Azure cloud installation.
 

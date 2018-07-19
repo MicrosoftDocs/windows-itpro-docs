@@ -7,10 +7,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 10/09/2017
+ms.date: 07/16/2018
 ---
 
 # WindowsLicensing CSP
+
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The WindowsLicensing configuration service provider is designed for licensing related management scenarios. Currently the scope is limited to edition upgrades of Windows 10 desktop and mobile devices, such as Windows 10 Pro to Windows 10 Enterprise. In addition, this CSP provides the capability to activate or change the product key of Windows 10 desktop devices.
 
@@ -157,8 +160,27 @@ The data type is a chr.
 
 The supported operation is Get.
 
+<a href="" id="smode"></a>**SMode**  
+Interior node for managing S mode.
 
+<a href="" id="smode-switchingpolicy"></a>**SMode/SwitchingPolicy**  
+Added in Windows 10, next major version. Determines whether a consumer can switch the device out of S mode. This setting is only applicable to devices available in S mode.
 
+Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
+Supported values:  
+-  0 - No Restriction: The user is allowed to switch the device out of S mode.
+-  1 - User Blocked: The admin has blocked the user from switching their device out of S mode. Only the admin can switch the device out of S mode through the SMode/SwitchFromSMode node.
+
+<a href="" id="smode-switchfromsmode"></a>**SMode/SwitchFromSMode**  
+Added in Windows 10, next major version. Switches a device out of S mode if possible. Does not reboot.
+
+Supported operation is Execute.
+
+<a href="" id="smode-status"></a>**SMode/Status**   
+Added in Windows 10, next major version. Returns the status of the latest SwitchFromSMode set request.
+
+Value type is integer. Supported operation is Get.
 
 ## SyncML examples
 

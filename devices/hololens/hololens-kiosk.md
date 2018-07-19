@@ -1,22 +1,20 @@
 ---
 title: Set up HoloLens in kiosk mode (HoloLens)
 description: Use a kiosk configuration to lock down the apps on HoloLens. 
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.pagetype: hololens, devices
+ms.prod: hololens
 ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/30/2018
+ms.date: 05/22/2018
 ---
 
 # Set up HoloLens in kiosk mode
 
 
 
-In Windows 10, version 1803, you can configure your HoloLens devices to run as multi-app or single-app kiosks.
+In Windows 10, version 1803, you can configure your HoloLens devices to run as multi-app or single-app kiosks. You can also configure guest access for a HoloLens kiosk device by [designating a SpecialGroup account in your XML file.](#guest)
 
 When HoloLens is configured as a multi-app kiosk, only the allowed apps are available to the user. The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access. 
 
@@ -44,7 +42,8 @@ If you use [MDM, Microsoft Intune](#intune-kiosk), or a [provisioning package](#
 >[!NOTE]
 >Because a single-app kiosk launches the kiosk app when a user signs in, there is no Start screen displayed.
 
-### Start layout file for Intune
+<span id="start-layout-file-for-intune" />
+### Start layout file for MDM (Intune and others)
 
 Save the following sample as an XML file. You will select this file when you configure the kiosk in Microsoft Intune (or in another MDM service that provides a kiosk profile).
 
@@ -94,7 +93,7 @@ You will [create an XML file](#ppkg-kiosk) to define the kiosk configuration to 
 <span id="intune-kiosk"/>
 ## Set up kiosk mode using Microsoft Intune or MDM (Windows 10, version 1803)
 
-For HoloLens devices that are managed by Microsoft Intune, you [create a device restriction profile](https://docs.microsoft.com/intune/device-profile-create) and configure the [Kiosk (Preview) settings](https://docs.microsoft.com/intune/device-restrictions-windows-holographic#kiosk-preview).
+For HoloLens devices that are managed by Microsoft Intune, you [create a device profile](https://docs.microsoft.com/intune/device-profile-create) and configure the [Kiosk settings](https://docs.microsoft.com/intune/kiosk-settings).
 
 For other MDM services, check your provider's documentation for instructions. If you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service, [create an XML file that defines the kiosk configuration](#create-xml-file), and make sure to include the [Start layout](#start-layout-for-a-provisioning-package) in the XML file.  
 
@@ -115,6 +114,22 @@ Follow [the instructions for creating a kiosk configuration XML file for desktop
 
 - Do not include Classic Windows applications (Win32) since they aren't supported on HoloLens.
 - Use the [placeholder Start XML](#start-kiosk) for HoloLens.
+
+<span id="guest" />
+#### Add guest access to the kiosk configuration (optional)
+
+In the [Configs section of the XML file](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configs), you can configure a special group named **Visitor** to allow guests to use the kiosk. When the kiosk is configured with the **Visitor** special group, a "**Guest**" option is added to the sign-in page. The **Guest** account does not require a password, and any data associated with the account is deleted when the account signs out.
+
+Use the following snippet in your kiosk configuration XML to enable the **Guest** account:
+
+```xml
+<Configs>
+  <Config> 
+    <SpecialGroup Name="Visitor" /> 
+    <DefaultProfile Id="enter a profile ID"/> 
+  </Config> 
+</Configs> 
+```
 
 
 <span id="add-xml"/>
@@ -198,8 +213,7 @@ Follow [the instructions for creating a kiosk configuration XML file for desktop
 
 ## More information
 
-Watch how to configure a kiosk in Microsoft Intune.
->[!VIDEO https://www.microsoft.com/videoplayer/embed/ce9992ab-9fea-465d-b773-ee960b990c4a?autoplay=false]
+
 
 Watch how to configure a kiosk in a provisioning package.
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]

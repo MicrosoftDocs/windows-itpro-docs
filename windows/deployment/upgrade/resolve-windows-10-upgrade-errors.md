@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.date: 04/18/2018
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Resolve Windows 10 upgrade errors : Technical information for IT Pros

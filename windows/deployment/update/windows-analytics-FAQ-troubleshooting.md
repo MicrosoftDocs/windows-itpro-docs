@@ -8,7 +8,8 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 05/02/2018
+ms.date: 07/11/2018
+ms.localizationpriority: high
 ---
 
 # Frequently asked questions and troubleshooting Windows Analytics
@@ -40,6 +41,7 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 In Log Analytics, go to **Settings > Connected sources > Windows telemetry** and verify that you are subscribed to the Windows Analytics solutions you intend to use.
 
 Even though devices can take 2-3 days after enrollment to show up due to latency in the system, you can now verify the status of your devices with a few hours of running the deployment script as described in [You can now check on the status of your computers within hours of running the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/05/12/wheres-my-data/) on the Windows Analytics blog.
+
 >[!NOTE]
 > If you generate the status report and get an error message saying "Sorry! We’re not recognizing your Commercial Id," go to **Settings > Connected sources > Windows telemetry** and unsubscribe, wait a minute and then re-subscribe to Upgrade Readiness.
  
@@ -161,12 +163,15 @@ Double-check that IE site discovery opt-in has been configured in the deployment
 Also, on Windows 10 devices remember that IE site discovery requires data diagnostics set to the Enhanced level.
 Finally, Upgrade Readiness only collects IE site discovery data on devices that are not yet upgraded to the target operating system version specified in the Upgrade Readiness Overview blade. This is because Upgrade Readiness targets upgrade planning (for devices not yet upgraded).
 
+>[!NOTE]
+> IE site discovery is disabled on devices running Windows 7 and Windows 8.1 that are in Switzerland and EU countries.
+
 ### Device Names don't show up on Windows 10 devices
 Starting with Windows 10, version 1803, the device name is no longer collected by default and requires a separate opt-in. For more information, see [Enrolling devices in Windows Analytics](windows-analytics-get-started.md).
 
 ### Disable Upgrade Readiness
 
-If you want to stop using Upgrade Readiness and stop sending diagnostic data data to Microsoft, follow these steps:
+If you want to stop using Upgrade Readiness and stop sending diagnostic data to Microsoft, follow these steps:
 
 1.  Unsubscribe from the Upgrade Readiness solution in the OMS portal. In the OMS portal, go to **Settings** > **Connected Sources** > **Windows Telemetry** and choose the **Unsubscribe** option.
 
@@ -224,3 +229,6 @@ System Center Configuration Manager (SCCM) considers a device ready to upgrade i
 Currently, you can choose the criteria you wish to use:
 - To use the SCCM criteria, create the collection of devices ready to upgrade within the SCCM console (using the analytics connector).
 - To use the Upgrade Readiness criteria, export the list of ready-to-upgrade devices from the corresponding Upgrade Readiness report, and then build the SCCM collection from that spreadsheet.
+
+### How does Upgrade Readiness collect the inventory of devices and applications?
+For details about this process and some tips, see [How does Upgrade Readiness in WA collects application inventory for your OMS workspace?](https://techcommunity.microsoft.com/t5/Windows-Analytics-Blog/How-does-Upgrade-Readiness-in-WA-collects-application-inventory/ba-p/213586) on the Windows Analytics blog.

@@ -6,9 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: eross-msft
+ms.author: justinha
+ms.date: 05/30/2018
 ms.localizationpriority: medium
-ms.date: 09/11/2017
 ---
 
 # Determine the Enterprise Context of an app running in Windows Information Protection (WIP)
@@ -17,7 +17,7 @@ ms.date: 09/11/2017
 - Windows 10, version 1607 and later
 - Windows 10 Mobile, version 1607 and later
 
->Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
+>Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/WindowsForBusiness/Compare).
 
 Use Task Manager to check the context of your apps while running in Windows Information Protection (WIP) to make sure that your organization's policies are applied and running correctly.
 

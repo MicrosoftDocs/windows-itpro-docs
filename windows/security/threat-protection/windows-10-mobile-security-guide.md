@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security, mobile
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: AMeeus
 ms.date: 10/13/2017
 ---

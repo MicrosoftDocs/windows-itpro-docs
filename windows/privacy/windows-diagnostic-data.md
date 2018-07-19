@@ -256,6 +256,7 @@ This table provides the ISO/IEC 19944:2017-specific definitions for use and de-i
 |<a name="#promote">Promote</a>|9.3.6 Market/advertise/promote|Use of the specified data categories to promote a product or service in or on a first-party Microsoft product or service.|
 
 <br><br>
+
 |Data identification qualifiers |ISO/IEC 19944:2017 Reference |Microsoft usage notes |
 |-|-|-|
 |<a name="#pseudo">Pseudonymized Data</a> |8.3.3 Pseudonymized data|As defined|

@@ -1,15 +1,13 @@
 ---
 title: Microsoft HoloLens (HoloLens)
 description: HoloLens provides extra features designed for business in the Commercial Suite.
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.pagetype: hololens, devices
+ms.prod: hololens
 ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 05/22/2018
+ms.date: 05/21/2018
 ---
 
 # Microsoft HoloLens

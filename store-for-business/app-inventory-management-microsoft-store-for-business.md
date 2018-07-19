@@ -9,7 +9,7 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 06/07/2018
 ---
 
 # App inventory management for Microsoft Store for Business and Education
@@ -100,9 +100,10 @@ If you decide that you don't want an app available for employees to install on t
 
 **To remove an app from the private store**
  
-1.  Sign in to the [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://businessstore.microsoft.com).
-2.	Click **Manage**, and then choose **Apps & software**.
-3.	Find an app, click the ellipses under **Action**, choose **Remove from private store**, and then click **Remove**.
+1. Sign in to the [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://businessstore.microsoft.com).
+2. Click **Manage**, and then choose **Products & services**.
+3. Find an app, click the ellipses, choose **Remove from private store**, and then click **Remove**.
+4. Choose the private store collection, and then under **In collection**, switch to **Off**. 
 
 The app will still be in your inventory, but your employees will not have access to the app from your private store. 
 
@@ -110,7 +111,7 @@ The app will still be in your inventory, but your employees will not have access
 
 1.	Sign in to the [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://businessstore.microsoft.com).
 2.	Click **Manage**, and then choose **Inventory**.
-3.	Find an app, click the ellipses under **Action**, and then choose **Assign to people**.
+3.	Find an app, click the ellipses, and then choose **Assign to people**.
 4.	Type the email address for the employee that you're assigning the app to, and click **Confirm**.
 
 Employees will receive an email with a link that will install the app on their device. Click the link to start the Microsoft Store app, and then click **Install**. Also, in the Microsoft Store app, they can find the app under **My Library**.

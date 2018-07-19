@@ -2,14 +2,12 @@
 title: Change history for Surface Hub
 description: This topic lists new and updated topics for Surface Hub.
 keywords: change history
-ms.prod: w10
-ms.mktglfcycl: manage
+ms.prod: surface-hub
 ms.sitesec: library
-ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 03/06/2018
+ms.date: 07/12/2018
 ms.localizationpriority: medium
 ---
 
@@ -17,11 +15,30 @@ ms.localizationpriority: medium
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
 
+## July 2018
+
+New or changed topic | Description
+--- | ---
+[Set up and use Whiteboard to Whiteboard collaboration](whiteboard-collaboration.md) | Added information and links for new Microsoft Whiteboard app release.
+
+## June 2018
+
+New or changed topic | Description
+--- | ---
+[On-premises deployment (single forest)](on-premises-deployment-surface-hub-device-accounts.md) and [On-premises deployment (multiple forests)](on-premises-deployment-surface-hub-multi-forest.md) | Added (prerelease) instructions for disabling anonymous email and IM.
+
+## May 2018
+
+New or changed topic | Description
+--- | ---
+[Using the Surface Hub Recovery Tool](surface-hub-recovery-tool.md) | New
+
 ## April 2018
 
 New or changed topic | Description
 --- | ---
 [Hybrid deployment](hybrid-deployment-surface-hub-device-accounts.md) | Updated instructions for Skype for Business Hybrid.
+
 
 ## March 2018
 

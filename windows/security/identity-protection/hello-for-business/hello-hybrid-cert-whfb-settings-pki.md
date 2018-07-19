@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-localizationpriority: high
+ms.localizationpriority: medium
 author: mikestephens-MS
 ms.author: mstephen
 ms.date: 11/08/2017

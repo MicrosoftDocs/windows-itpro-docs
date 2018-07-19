@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: brianlic-msft
 ms.date: 01/12/2018
 ---
@@ -28,7 +28,7 @@ For Windows Defender Credential Guard to provide protection, the computers you a
 To provide basic protections against OS level attempts to read Credential Manager domain credentials, NTLM and Kerberos derived credentials, Windows Defender Credential Guard uses:
 - Support for Virtualization-based security (required)
 - Secure boot (required)
-- TPM 2.0 either discrete or firmware (preferred - provides binding to hardware)
+- TPM 1.2 or 2.0, either discrete or firmware (preferred - provides binding to hardware)
 - UEFI lock (preferred - prevents attacker from disabling with a simple registry key change)
 
 The Virtualization-based security requires:
