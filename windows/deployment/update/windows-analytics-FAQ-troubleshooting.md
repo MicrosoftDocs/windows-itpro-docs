@@ -96,29 +96,30 @@ If you know that devices are experiencing stop error crashes that do not seem to
 4. Verify that WER can reach all diagnostic endpoints specified in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md)--if WER can only reach some of the endpoints, it could be included in the device count while not reporting crashes.
 5. Check that crash reports successfully complete the round trip with Event 1001 and that BucketID is not blank. A typical such event looks like this:
 
- [![Event viewer detail showing Event 1001 details](images/event_1001.png)](images/event_1001.png)
+   [![Event viewer detail showing Event 1001 details](images/event_1001.png)](images/event_1001.png)
  
- You can use the following Windows PowerShell snippet to summarize recent occurences of Event 1001. Most events should have a value for BucketID (a few intermittent blank values are OK, however).
+   You can use the following Windows PowerShell snippet to summarize recent occurences of Event 1001. Most events should have a value for BucketID (a few intermittent blank values are OK, however).
 
-```powershell
+   ```powershell
 
-$limitToMostRecentNEvents = 20
-Get-WinEvent -FilterHashTable @{ProviderName="Windows Error Reporting"; ID=1001} | 
-  ?{ $_.Properties[2].Value -match "crash|blue" } |
-  % { [pscustomobject]@{ 
-    TimeCreated=$_.TimeCreated
-    WEREvent=$_.Properties[2].Value
-    BucketId=$_.Properties[0].Value
-    ContextHint = $(
-       if($_.Properties[2].Value -eq "bluescreen"){"kernel"}
-       else{ $_.Properties[5].Value }
-    )
-  }} | Select-Object -First $limitToMostRecentNEvents
+   $limitToMostRecentNEvents = 20
+   Get-WinEvent -FilterHashTable @{ProviderName="Windows Error Reporting"; ID=1001} | 
+     ?{ $_.Properties[2].Value -match "crash|blue" } |
+     % { [pscustomobject]@{ 
+       TimeCreated=$_.TimeCreated
+       WEREvent=$_.Properties[2].Value
+       BucketId=$_.Properties[0].Value
+       ContextHint = $(
+          if($_.Properties[2].Value -eq "bluescreen"){"kernel"}
+          else{ $_.Properties[5].Value }
+       )
+     }} | Select-Object -First $limitToMostRecentNEvents
 
 
-```
- The output should look something like this:
- [![Typical out put of this PowerShell snippet](images/device-reliability-event1001-PSoutput.png)](images/device-reliablity-event1001-PSoutput.png)
+   ```
+   The output should look something like this:
+
+   [![Typical out put of this PowerShell snippet](images/device-reliability-event1001-PSoutput.png)](images/device-reliablity-event1001-PSoutput.png)
 
 6. Check that some other installed device, app, or crash monitoring solution is not intercepting crash events.
 7. Wait 48 hours for activity to appear in the reports.
