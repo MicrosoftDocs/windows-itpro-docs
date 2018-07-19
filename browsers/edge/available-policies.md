@@ -51,9 +51,7 @@ If you disable or don’t configure this policy, Microsoft Edge does not use a s
 ## Allow Address bar drop-down list suggestions
 >*Supported versions: Windows 10, version 1703 or later*
 
-By default, Microsoft Edge shows the Address bar drop-down list and makes it available.  If you want to minimize network connections from Microsoft Edge to Microsoft service, we recommend disabling this policy. Disabling this policy turns off the Address bar drop-down list functionality. 
-
-When disabled, Microsoft Edge also disables the user-defined policy Show search and site suggestions as I type. Because the drop-down shows the search suggestions, this policy takes precedence over the [Configure search suggestions in Address bar](https://docs.microsoft.com/en-us/microsoft-edge/deploy/available-policies#configure-search-suggestions-in-address-bar) policy.
+[!INCLUDE [allow-address-bar-drop-down-shortdesc](shortdesc/allow-address-bar-drop-down-shortdesc.md)]
 
 **Microsoft Intune to manage your MDM settings** 
 |   |   |
@@ -307,6 +305,8 @@ This policy setting specifies whether Do Not Track requests to websites is allow
 
 ## Configure Favorites
 >*Supported versions: Microsoft Edge on Windows 10, version 1511 or later*
+
+
 This policy setting lets you configure the default list of Favorites that appear for your employees. Employees can change their favorites by adding or removing items at any time.
 
 If you enable this setting, you can configure what default Favorites appear for your employees. If this setting is enabled, you must also provide a list of Favorites in the Options section. This list is imported after your policy is deployed.
