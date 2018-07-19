@@ -1,6 +1,6 @@
 <!-- ## Configure Password Manager -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
->*Default setting:  Enabled (Allowed)
+>*Default setting:  Enabled (Allowed/users can change the setting)
 
 [!INCLUDE [configure-password-manager-shortdesc](../shortdesc/configure-password-manager-shortdesc.md)]
 
@@ -8,7 +8,7 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Not configured |Blank |Blank |Users can choose whether to save and manage passwords locally. | |
+|Not configured |Blank |Blank |Users can choose to save and manage passwords locally. | |
 |Disabled |0 |no |Not allowed. |![Most restricted value](../images/check-gn.png) |
 |Enabled<br>**(default)** |1 |yes |Allowed. | |
 ---
@@ -16,7 +16,7 @@
 Verify not allowed/disabled settings:
 1. In the upper-right corner of Microsoft Edge or Microsoft Edge for Windows 10 Mobile, click or tap ellipses (…).
 2. Click  **Settings** and select **View Advanced settings**.
-3. Verify the settings **???** are greyed out.
+3. Verify the settings **Save Password** is toggled off or on and is greyed out.
 
 ### ADMX info and settings
 #### ADMX info

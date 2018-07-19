@@ -1,8 +1,6 @@
 #[Microsoft Edge - Deployment Guide for IT Pros](index.md)
 
-##[New Microsoft Edge Group Policies and MDM settings](new-policies.md)
 
-##[Deploy Microsoft Edge kiosk mode](microsoft-edge-kiosk-mode-deploy.md)
 
 ##[Change history for Microsoft Edge](change-history-for-microsoft-edge.md)
 
