@@ -9,7 +9,7 @@
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Disabled or not configured<br>**(default)** |0 |0 |Depending on the device configuration, Microsoft Edge gathers only basic diagnostic data. |![Most restricted value](../images/check-gn.png) |
-|Enabled |1 |1 |Microsoft Edge gathers both basic and additional diagnostic data. | |
+|Enabled |1 |1 |Gathers both basic and additional diagnostic data. | |
 ---
 
 ### ADMX info and settings

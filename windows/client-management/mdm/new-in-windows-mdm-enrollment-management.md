@@ -1707,6 +1707,15 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Start/StartLayout - added a table of SKU support information.</li>
 <li>Start/ImportEdgeAssets - added a table of SKU support information.</li>
 </ul>
+<p>Added the following new policies in Windows 10, next major version:</p>
+<ul>
+<li>Update/EngagedRestartDeadlineForFeatureUpdates</li>
+<li>Update/EngagedRestartSnoozeScheduleForFeatureUpdates</li>
+<li>Update/EngagedRestartTransitionScheduleForFeatureUpdates</li>
+<li>Update/SetDisablePauseUXAccess</li>
+<li>Update/SetDisableUXWUAccess</li>
+<li>Update/UpdateNotificationKioskMode</li>
+</ul>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[WiredNetwork CSP](wirednetwork-csp.md)</td>

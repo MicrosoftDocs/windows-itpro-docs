@@ -34,7 +34,7 @@ When you set up Microsoft Edge kiosk mode in single-app assigned access, Microso
 
 The single-app Microsoft Edge kiosk mode types include:
 
-1. **Digital / Interactive signage** devices display a specific site in full-screen mode in which Microsoft Edge runs InPrivate mode. Examples of Digital signage are a rotating advertisement or menu. Examples of Interactive signage are an interactive museum display and restaurant order/pay station.
+1. **Digital / Interactive signage** devices display a specific site in full-screen mode in which Microsoft Edge runs InPrivate mode. Examples of Digital signage are a rotating advertisement or menu. Examples of Interactive signage include an interactive museum display or a restaurant order/pay station.
 
 2. **Public browsing** devices run a limited multi-tab version of InPrivate and Microsoft Edge is the only app available. Users can’t minimize, close, or open new Microsoft Edge windows or customize Microsoft Edge. Users can clear browsing data, downloads and restart Microsoft Edge by clicking the “End session” button. You can configure Microsoft Edge to restart after a period of inactivity by using the “Configure kiosk reset after idle timeout” policy. A public library or hotel concierge desk are two examples of public browsing in single-app kiosk device. 
 
@@ -56,7 +56,7 @@ The multi-app Microsoft Edge kiosk mode types include:
 ## Let’s get started!
 Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Edge in assigned access. You can set up Microsoft Edge kiosk mode in assigned access using:
 
--   **Windows Settings.** Best for physically setting up a single device as a kiosk. With this method, you set up assigned access and configure the kiosk or digital sign device using Settings.  You can configure Microsoft Edge in single-app (kiosk type – Full-screen or public browsing) and define a single URL for the Home button, Start page, and New tab page. You can also set the reset after an idle timeout.  
+-   **Windows Settings.** Best for physically setting up a single device as a kiosk. With this method, you set up assigned access and configure the kiosk or digital sign device using Settings.  You can configure Microsoft Edge in single-app (kiosk type – Full-screen or public browsing) and define a single URL for the Home button, Start page, and New tab page. You can also set the idle timer to restart the kiosk session after a period of inactivity.  
 
 -   **Microsoft Intune or other MDM service.** Best for setting up multiple devices as a kiosk. With this method, you configure Microsoft Edge in assigned access and configure how Microsoft Edge behaves when it’s running in kiosk mode with assigned access.
 
@@ -104,7 +104,7 @@ Windows Settings is the simplest and easiest way to set up one or a couple of de
     >[!NOTE]
     >The URL sets the Home button, Start page, and New tab page.
 
-11.  11.	Microsoft Edge in kiosk mode has a built-in timer to help keep data safe in public browsing sessions. When the idle time (no user activity) meets the time limit, a confirmation message prompts the user to continue. If **Continue** is not selected, Microsoft Edge resets to the default URL. You can accept the default value of **5 minutes**, or you can choose your own idle timer value.
+11.  Microsoft Edge in kiosk mode has a built-in timer to help keep data safe in public browsing sessions. When the idle time (no user activity) meets the time limit, a confirmation message prompts the user to continue. If **Continue** is not selected, Microsoft Edge resets to the default URL. You can accept the default value of **5 minutes**, or you can choose your own idle timer value.
 
 12.  Select **Next**, and then select **Close**.
 
@@ -140,8 +140,8 @@ With this method, you can use Microsoft Intune or other MDM services to configur
     | **[ConfigureKioskResetAfterIdleTimeout](new-policies.md#configure-kiosk-reset-after-idle-timeout)**<p>![](images/icon-thin-line-computer.png) | Change the time in minutes from the last user activity before Microsoft Edge kiosk mode resets to the default kiosk configuration.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureKioskResetAfterIdleTimeout<p>**Data type:** Integer<p>**Allowed values:**<ul><li>**0** - No idle timer</li><li>**1-1440 (5 minutes is the default)** - Set reset on idle timer</li></ul>  |
     | **[HomePages](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-homepages)**<p>![](images/icon-thin-line-computer.png)  | Set one or more start pages, URLs, to load when Microsoft Edge launches.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/HomePages<p>**Data type:** String<p>**Allowed values:**<p>Enter one or more URLs, for example,<br>&nbsp;&nbsp;&nbsp;\<https://www.msn.com\>\<https:/www.bing.com\>  |
     | **[ConfigureHomeButton](new-policies.md#configure-home-button)**<p>![](images/icon-thin-line-computer.png)  | Configure how the Home Button behaves.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureHomeButton<p>**Data type:** Integer<p> **Allowed values:**<ul><li>**0 (default)** - Not configured. Show home button, and load the default Start page.</li><li>**1** - Enabled. Show home button and load New tab page</li><li>**2** - Enabled. Show home button & set a specific page.</li><li>**3** - Enabled. Hide the home button.</li></ul>   |
-    | **[SetNewTabPageURL](new-policies.md#set-new-tab-page-url)**<p>![](images/icon-thin-line-computer.png)   | Set a custom URL for the New tab page.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.msn.com      |
-    | **[SetHomeButtonURL](new-policies.md#set-home-button-url)**<p>![](images/icon-thin-line-computer.png)    | If you set ConfigureHomeButton to 2, configure the home button URL.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.bing.com    |
+    | **[SetNewTabPageURL](new-policies.md#set-new-tab-page-url)**<p>![](images/icon-thin-line-computer.png)   | Set a custom URL for the New tab page.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetNewTabPageURL <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.msn.com      |
+    | **[SetHomeButtonURL](new-policies.md#set-home-button-url)**<p>![](images/icon-thin-line-computer.png)    | If you set ConfigureHomeButton to 2, configure the home button URL.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetHomeButtonURL <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.bing.com    |
     ---
 <br>
 3.  Restart the device and sign in using the kiosk app user account.
@@ -166,8 +166,8 @@ With this method, you can use a provisioning package to configure Microsoft Edge
     | **[ConfigureKioskResetAfterIdleTimeout](new-policies.md#configure-kiosk-reset-after-idle-timeout)**<p>![](images/icon-thin-line-computer.png) | Change the time in minutes from the last user activity before Microsoft Edge kiosk mode resets to the default kiosk configuration.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureKioskResetAfterIdleTimeout<p>**Data type:** Integer<p>**Allowed values:**<ul><li>**0** - No idle timer</li><li>**1-1440 (5 minutes is the default)** - Set reset on idle timer</li></ul>  |
     | **[HomePages](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-homepages)**<p>![](images/icon-thin-line-computer.png)  | Set one or more start pages, URLs, to load when Microsoft Edge launches.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/HomePages<p>**Data type:** String<p>**Allowed values:**<p>Enter one or more URLs, for example,<br>&nbsp;&nbsp;&nbsp;\<https://www.msn.com\>\<https:/www.bing.com\>  |
     | **[ConfigureHomeButton](new-policies.md#configure-home-button)**<p>![](images/icon-thin-line-computer.png)  | Configure how the Home Button behaves.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureHomeButton<p>**Data type:** Integer<p> **Allowed values:**<ul><li>**0 (default)** - Not configured. Show home button, and load the default Start page.</li><li>**1** - Enabled. Show home button and load New tab page</li><li>**2** - Enabled. Show home button & set a specific page.</li><li>**3** - Enabled. Hide the home button.</li></ul>   |
-    | **[SetNewTabPageURL](new-policies.md#set-new-tab-page-url)**<p>![](images/icon-thin-line-computer.png)   | Set a custom URL for the New tab page.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.msn.com      |
-    | **[SetHomeButtonURL](new-policies.md#set-home-button-url)**<p>![](images/icon-thin-line-computer.png)    | If you set ConfigureHomeButton to 2, configure the home button URL.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.bing.com    |
+    | **[SetNewTabPageURL](new-policies.md#set-new-tab-page-url)**<p>![](images/icon-thin-line-computer.png)   | Set a custom URL for the New tab page.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetNewTabPageURL <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.msn.com      |
+    | **[SetHomeButtonURL](new-policies.md#set-home-button-url)**<p>![](images/icon-thin-line-computer.png)    | If you set ConfigureHomeButton to 2, configure the home button URL.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetHomeButtonURL <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.bing.com    |
     ---
 <br>
 4.  After you’ve configured the Microsoft Edge kiosk mode policies, including any of the related policies, it’s time to build the package.
@@ -273,7 +273,7 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
 
 -   **[AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/en-us/windows/client-management/mdm/assignedaccess-csp):** The AssignedAccess configuration service provider (CSP) sets the device to run in kiosk mode. Once the CSP has executed, then the next user login associated with the kiosk mode puts the device into the kiosk mode running the application specified in the CSP configuration.
 
--   **[Create a provisioning page for Windows 10](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package):**. Learn to use Windows Configuration Designer (WCD) to create a provisioning package (.ppkg) for configuring devices running Windows 10. The WCD wizard options provide a simple interface to configure desktop, mobile, and kiosk device settings.
+-   **[Create a provisioning page for Windows 10](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package):** Learn to use Windows Configuration Designer (WCD) to create a provisioning package (.ppkg) for configuring devices running Windows 10. The WCD wizard options provide a simple interface to configure desktop, mobile, and kiosk device settings.
 
 ## Known issues with RS_PRERELEASE build 17718
 
@@ -281,7 +281,7 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
     - **Expected behavior** – Microsoft Edge kiosk mode opens the URL on startup. 
     - **Actual behavior** – Microsoft Edge kiosk mode may not open with the URL on startup.
 
-- •	When you set up Microsoft Edge kiosk mode on a single-app kiosk device you must set the “ConfigureKioskMode” policy because the default behavior is not honored. 
+- When you set up Microsoft Edge kiosk mode on a single-app kiosk device you must set the “ConfigureKioskMode” policy because the default behavior is not honored. 
     - **Expected behavior** – Microsoft Edge kiosk mode launches in full-screen mode. 
     - **Actual behavior** – Normal Microsoft Edge launches.
 
