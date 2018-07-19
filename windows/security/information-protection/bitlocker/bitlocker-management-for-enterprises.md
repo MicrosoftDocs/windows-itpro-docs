@@ -29,7 +29,7 @@ Enterprises can use [Microsoft BitLocker Administration and Management (MBAM)](h
 
 BitLocker recovery keys can be managed from Azure AD thereafter. The MBAM database does not need to be migrated. 
 
-<br />
+Enterprises that choose to continue managing BitLocker on-premises after MBAM support ends can use the [BitLocker WMI provider class](https://msdn.microsoft.com/library/windows/desktop/aa376483) to create a custom management solution. 
 
 ## Managing devices joined to Azure Active Directory
 
