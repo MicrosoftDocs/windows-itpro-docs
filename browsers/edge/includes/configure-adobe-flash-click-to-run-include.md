@@ -8,8 +8,8 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled |0 |0 |Loads and runs Adobe Flash content automatically. | |
-|Enabled or not configured<br>**(default)** |1 |1 |Does not load or run Adobe Flash content automatically, requiring action from the user before the content loads and runs.  For example, clicking the **Click-to-Run** button or clicking the content.  |![Most restricted value](../images/check-gn.png) |
+|Disabled |0 |0 |Load and run Adobe Flash content automatically. | |
+|Enabled or not configured<br>**(default)** |1 |1 |Do not load or run Adobe Flash content automatically. Requires action from the user.  |![Most restricted value](../images/check-gn.png) |
 ---
 
 ### ADMX info and settings

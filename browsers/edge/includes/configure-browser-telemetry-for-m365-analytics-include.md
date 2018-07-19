@@ -8,10 +8,10 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Microsoft Edge does not collect or send browsing history data. |![Most restricted value](../images/check-gn.png) |
-|Enabled |1 |1 |Send intranet history only. | |
-|Enabled |2 |2 |Send Internet history only. | |
-|Enabled |3 |3 |Send both intranet and Internet history. | |
+|Disabled or not configured<br>**(default)** |0 |0 |No data collected or sent |![Most restricted value](../images/check-gn.png) |
+|Enabled |1 |1 |Send intranet history only | |
+|Enabled |2 |2 |Send Internet history only | |
+|Enabled |3 |3 |Send both intranet and Internet history | |
 ---
 
 >[!IMPORTANT]

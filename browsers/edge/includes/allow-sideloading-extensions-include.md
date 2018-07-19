@@ -8,7 +8,7 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled or not configured |0 |0 |Prevented/not allowed. Disabling does not prevent sideloading of extensions using Add-AppxPackage via PowerShell. To prevent this, enable **Allows development of Windows Store apps and installing them from an integrated development environment (IDE)** policy, located at Windows Components > App Package Deployment.<p>For the MDM setting, enable **ApplicationManagement/AllowDeveloperUnlock**. |![Most restricted value](../images/check-gn.png) |
+|Disabled or not configured |0 |0 |Prevented/not allowed. Disabling does not prevent sideloading of extensions using Add-AppxPackage via PowerShell. To prevent this, enable **Allows development of Windows Store apps and installing them from an integrated development environment (IDE)** policy, located at Windows Components > App Package Deployment.<p>For the MDM setting, set the **ApplicationManagement/AllowDeveloperUnlock** policy to 1 (enable). |![Most restricted value](../images/check-gn.png) |
 |Enabled<br>**(default)** |1 |1 |Allowed. | |
 ---
 
@@ -33,12 +33,12 @@
 
 ### Related policies
 
-- Allows development of Windows Store apps and installing them from an integrated development environment (IDE): When you enable this policy and the **Allow all trusted apps to install** policy, you allow users to develop Windows Store apps and install them directly from an IDE.
+- [Allows development of Windows Store apps and installing them from an integrated development environment (IDE)](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock): When you enable this policy and the **Allow all trusted apps to install** policy, you allow users to develop Windows Store apps and install them directly from an IDE.
 
-- Allow all trusted apps to install: When you enable this policy, you can manage the installation of trusted line-of-business (LOB) or developer-signed Windows Store apps.
+- [Allow all trusted apps to install](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps): When you enable this policy, you can manage the installation of trusted line-of-business (LOB) or developer-signed Windows Store apps.
 
 ### Related topics
 
-[Enable your device for development](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development): Configure your Windows 10 device for development and debugging.
+[Enable your device for development](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development): Access development features, along with other developer-focused settings to make it possible for you to develop, test, and debug apps. Learn how to configure your environment for development, the difference between Developer Mode and sideloading, and the security risks of Developer mode. 
 
 <hr>
