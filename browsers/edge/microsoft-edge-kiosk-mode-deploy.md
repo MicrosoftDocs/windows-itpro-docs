@@ -128,7 +128,7 @@ With this method, you can use a provisioning package to configure Microsoft Edge
 
 **_Next steps._** Use your new kiosk. Sign in to the device using the user account that you selected to run the kiosk app.
 
-## Related policies
+## Relevant policies
 
 Use any of the Microsoft Edge policies listed below to enhance the kiosk experience depending on the Microsoft Edge kiosk mode type you configure. To learn more about these policies, see [Policy CSP - Browser](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser).
 
@@ -223,7 +223,7 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
 
 -   **[Create a provisioning page for Windows 10](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package):** Learn to use Windows Configuration Designer (WCD) to create a provisioning package (.ppkg) for configuring devices running Windows 10. The WCD wizard options provide a simple interface to configure desktop, mobile, and kiosk device settings.
 
-## Known issues with RS_PRERELEASE build 17718
+## Known issues with RS_PRERELEASE build 17713+
 
 - When you set up Microsoft Edge as your kiosk app and define the URL in assigned access Settings the URL, Microsoft Edge may not get launched with the configured URL.
     - **Expected behavior** – Microsoft Edge kiosk mode opens the URL on startup. 
