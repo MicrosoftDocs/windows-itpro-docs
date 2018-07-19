@@ -40,7 +40,7 @@ Enable the **Configure Home Button** policy and select the _Hide home button_ op
 - **MDM name:** Browser/[SetHomeButtonURL](../new-policies.md#set-home-button-url)
 - **Supported devices:** Desktop and Mobile
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetHomeButtonURL 
-- **Data type:** Integer
+- **Data type:** String
 
 #### Registry settings
 - **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Internet Settings
