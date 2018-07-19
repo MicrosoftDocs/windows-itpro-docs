@@ -35,18 +35,6 @@ Though much  Windows BitLocker [documentation](bitlocker-overview.md) has been p
 
    <br />
 
-## BitLocker management at a glance
-
-| | PC – Old Hardware | PC – New* Hardware |[Servers](#servers)/[VMs](#VMs) | Phone 
-|---|---|----|---|---|
-|On-premises Domain-joined |[MBAM](#MBAM25)| [MBAM](#MBAM25) | [Scripts](#powershell) |N/A|
-|Cloud-managed|[MDM](#MDM) |Auto-encryption|[Scripts](#powershell)|[MDM](#MDM)/EAS|
-
-<br />
-*PC hardware that supports Modern Standby or HSTI 
-
-<br />
-<br />
 
  <a id="dom_join"></a>
 ## Recommendations for domain-joined computers
@@ -55,15 +43,13 @@ Windows continues to be the focus for new features and improvements for built-in
 
 Companies that image their own computers using Microsoft System Center 2012 Configuration Manager SP1 (SCCM) or later can use an existing task sequence to [pre-provision BitLocker](https://technet.microsoft.com/library/hh846237.aspx#BKMK_PreProvisionBitLocker) encryption while in Windows Preinstallation Environment (WinPE) and can then [enable protection](https://technet.microsoft.com/library/hh846237.aspx#BKMK_EnableBitLocker). This can help ensure that computers are encrypted from the start, even before users receive them. As part of the imaging process, a company could also decide to use SCCM to pre-set any desired [BitLocker Group Policy](https://technet.microsoft.com/library/ee706521(v=ws.10).aspx).
 
-For older client computers with BitLocker that are domain joined on-premises, use Microsoft BitLocker Administration and Management<sup>[1]</sup>. Using MBAM provides the following functionality:
+For client computers with BitLocker that are domain joined on-premises, Microsoft recommends moving from Microsoft BitLocker Administration and Management (MBAM) to cloud management:
 
-- Encrypts device with BitLocker using MBAM
-- Stores BitLocker Recovery keys in MBAM Server
-- Provides Recovery key access to end-user, helpdesk and advanced helpdesk
-- Provides Reporting on Compliance and Recovery key access audit
+1. Disable MBAM management and leave MBAM as only a database backup for the recovery key.
+2. Join the computers to Azure Active Directory (Azure AD). 
+3. Use `Manage-bde -protectors -aadbackup` to backup the recovery key to Azure AD.
 
-<a id="MBAM25"></a>
-<sup>[1]</sup>The latest MBAM version is [MBAM 2.5](https://technet.microsoft.com/windows/hh826072.aspx) with Service Pack 1 (SP1).
+BitLocker recovery keys can be managed from Azure AD thereafter. The MBAM database does not need to be migrated. 
 
 <br />
 
