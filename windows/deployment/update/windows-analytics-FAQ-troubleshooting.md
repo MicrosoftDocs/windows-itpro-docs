@@ -98,7 +98,7 @@ If you know that devices are experiencing stop error crashes that do not seem to
 
  [![Event viewer detail showing Event 1001 details](images/event_1001.png)](images/event_1001.png)
  
- You can use the following Windows PowerShell snippet to summarize recent occurences of Event 1001. Most events should have a value for BucketID (a few intermittent blank values are OK, however).[![App Reliability tile showing relability events trend](images/app-reliability.png)](images/app-reliability.png)
+ You can use the following Windows PowerShell snippet to summarize recent occurences of Event 1001. Most events should have a value for BucketID (a few intermittent blank values are OK, however).
 
 ```powershell
 
