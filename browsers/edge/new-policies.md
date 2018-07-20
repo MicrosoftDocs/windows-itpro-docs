@@ -1,5 +1,5 @@
 ---
-description: Windows Insider Preview - The Microsoft Edge team introduces new Group Policies and MDM Settings for IT administrators to configure Microsoft Edge. The new policies allow you to enable/disabled full-screen mode, printing, favorites bar, saving history. You can also prevent certificate error overrides, and configure New tab page, Home button and startup options, as well as manage extensions.
+description: Microsoft Edge now has new Group Policies and MDM Settings for IT administrators to configure Microsoft Edge. The new policies allow you to enable/disabled full-screen mode, printing, favorites bar, saving history. You can also prevent certificate error overrides, and configure New tab page, Home button and startup options, as well as manage extensions.
 ms.assetid: 
 author: shortpatti
 ms.author: pashort
@@ -18,12 +18,13 @@ ms.date: 07/19/2018
 
 The Microsoft Edge team introduces new Group Policies and MDM Settings for the Windows 10 Insider Preview Build 17713+. The new policies allow IT administrators to enable/disable full-screen mode, printing, favorites bar, saving history. You can also prevent certificate error overrides, and configure New tab page, Home button and startup options, as well as manage extensions.
 
+We are discontinuing the use of the **Configure Favorites** group policy. Use the **[Provision Favorites](available-policies.md#provision-favorites)** in place of Configure Favorites. 
 
-We are also deprecating the **Configure Favorites** group policy because no MDM equivalent existed. Use the **[Provision Favorites](available-policies.md#provision-favorites)** in place of Configure Favorites.   
+
 
 >You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:
 > 
->*Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\*
+>>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\*
 <p>
 <!-- add links to the below policies -->
 
@@ -36,14 +37,14 @@ We are also deprecating the **Configure Favorites** group policy because no MDM 
 | [Allow printing](#allow-printing) | New |  AllowPrinting | New |
 | [Allow Saving History](#allow-saving-history) | New | AllowSavingHistory | New |
 | [Allow sideloading of Extensions](#allow-sideloading-of-extensions) | New | AllowSideloadingOfExtensions | New |
-| Allow web content on new tab page | -- | [AllowWebContentOnNewTabPage](#allowwebcontentonnewtabpage) | New |
+| [Allow web content on new tab page](available-policies.md#allow-web-content-on-new-tab-page) | -- | [AllowWebContentOnNewTabPage](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowwebcontentonnewtabpage) | New |
 | [Configure collection of browsing data for Microsoft 365 Analytics](#configure-collection-of-browsing-data-for-microsoft-365-analytics) | New | ConfigureTelemetryForMicrosoft365Analytics | New |
 | [Configure Favorites Bar](#configure-favorites-bar) | New | ConfigureFavoritesBar | New |
 | [Configure Home Button](#configure-home-button) | New | ConfigureHomeButton | New |
 | [Configure kiosk mode](#configure-kiosk-mode) | New |  ConfigureKioskMode | New |
 | [Configure kiosk reset after idle timeout](#configure-kiosk-reset-after-idle-timeout) | New |  ConfigureKioskResetAfterIdleTimeout | New |
 | [Configure Open Microsoft Edge With](#configure-open-microsoft-edge-with) | New | ConfigureOpenMicrosoftEdgeWith | New |
-| Do not sync browser settings | -- | [Experience/DoNotSyncBrowserSetting](#donotsyncbrowsersetting)  | New |
+| [Do not sync browser settings](available-policies.md#do-not-sync-browser-settings) | -- | Experience/DoNotSyncBrowserSetting  | New |
 | [Prevent certificate error overrides](#prevent-certificate-error-overrides) | New | PreventCertErrorOverrides | New |
 | [Prevent users from turning on browser syncing](#preventusersfromturningonbrowsersyncing) | New | PreventUsersFromTurningOnBrowserSyncing | New |
 | [Prevent turning off required extensions](#prevent-turning-off-required-extensions) | New | PreventTurningOffRequiredExtensions | New |
@@ -74,8 +75,6 @@ We are also deprecating the **Configure Favorites** group policy because no MDM 
 ## Allow sideloading of Extensions
 [!INCLUDE [allow-sideloading-extensions-include.md](includes/allow-sideloading-extensions-include.md)]
 
-## AllowWebContentOnNewTabPage
-[!INCLUDE [allow-web-content-new-tab-page-include](includes/allow-web-content-new-tab-page-include.md)]
 
 ## Configure collection of browsing data for Microsoft 365 Analytics
 [!INCLUDE [configure-browser-telemetry-for-m365-analytics-include](includes/configure-browser-telemetry-for-m365-analytics-include.md)]
@@ -94,9 +93,6 @@ We are also deprecating the **Configure Favorites** group policy because no MDM 
 
 ## Configure Open Microsoft Edge With
 [!INCLUDE [configure-open-edge-with-include.md](includes/configure-open-edge-with-include.md)]
-
-## DoNotSyncBrowserSetting
-[!INCLUDE [do-not-sync-browser-settings-include](includes/do-not-sync-browser-settings-include.md)]
 
 ## Prevent certificate error overrides
 [!INCLUDE [prevent-certificate-error-overrides-include.md](includes/prevent-certificate-error-overrides-include.md)]
