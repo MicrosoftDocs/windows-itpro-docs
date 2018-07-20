@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 07/19/2018
 ---
 
 # Specify the cloud-delivered protection level
@@ -30,6 +30,7 @@ ms.date: 04/30/2018
 
 - Group Policy
 - System Center Configuration Manager (current branch)
+- Intune
 
 You can specify the level of cloud-protection offered by Windows Defender Antivirus with Group Policy and System Center Configuration Manager.
 
@@ -59,7 +60,25 @@ You can specify the level of cloud-protection offered by Windows Defender Antivi
 
 1.  See [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service) for details on configuring System Center Configuration Manager (current branch).
 
+**Use Intune to specify the level of cloud-delivered protection:**
 
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Select **All services > Intune**.
+3. In the **Intune** pane, select **Device configuration > Profiles**, and then select the **Device restrictions** profile type you want to configure. If you haven't yet created a **Device restrictions** profile type, or if you want to create a new one, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure).
+4. Select **Properties**, select **Settings: Configure**, and then select **Windows Defender Antivirus**.
+5. On the **File Blocking Level** switch, select one of the following:
+
+    1. **High** to provide a strong level of detection
+    2. **High +** to apply additional protection measures
+    3. **Zero tolerance** to block all unknown executables
+
+        > [!WARNING]
+        > While unlikely, setting this switch to **High** might cause some legitimate files to be detected. The **High +** setting might impact client performance. We recommend you set this to the default level (**Not configured**).
+
+8. Click **OK** to exit the **Windows Defender Antivirus** settings pane, click **OK** to exit the **Device restrictions** pane, and then click **Save** to save the changes to your **Device restrictions** profile.
+
+For more information about Intune device profiles, including how to create and configure their settings, see [What are Microsoft Intune device profiles?](https://docs.microsoft.com/en-us/intune/device-profiles)
+  
 
 
 ## Related topics
