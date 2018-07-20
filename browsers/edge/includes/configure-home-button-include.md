@@ -26,11 +26,11 @@
 
 With these values, you can do any of the following configurations:
 
-![Show home button and load Start page or New tab page](../images/home-button-start-new-tab-page-v4.png)
+![Show home button and load Start page or New tab page](../images/home-button-start-new-tab-page-v4-sm.png)
 
-![Show home button and load custom URL](../images/home-buttom-custom-url-v4.png)
+![Show home button and load custom URL](../images/home-buttom-custom-url-v4-sm.png)
 
-![Hide home button](../images/home-button-hide-v4.png)
+![Hide home button](../images/home-button-hide-v4-sm.png)
 
 ### ADMX info and settings
 #### ADMX info
