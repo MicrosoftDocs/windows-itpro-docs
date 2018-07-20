@@ -9,7 +9,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 title: Group Policy and Mobile Device Management settings for Microsoft Edge (Microsoft Edge for IT Pros)
 ms.localizationpriority: medium
-ms.date: 4/30/2018 
+ms.date: 07/20/2018 
 ---
 
 # Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge
@@ -153,6 +153,8 @@ Computer Configuration\Administrative Templates\Windows Components\Microsoft Edg
 
 ## Show message when opening sites in Internet Explorer
 [!INCLUDE [show-message-opening-sites-ie-include.md](includes/show-message-opening-sites-ie-include.md)] 
+
+
 
 ## Related topics
 * [Mobile Device Management (MDM) settings]( https://go.microsoft.com/fwlink/p/?LinkId=722885)
