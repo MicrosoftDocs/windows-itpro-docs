@@ -4,7 +4,7 @@
 
 [!INCLUDE [allow-tab-preloading-shortdesc](../shortdesc/allow-tab-preloading-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
@@ -15,7 +15,7 @@
 ### ADMX info and settings
 
 #### ADMX info
-- **GP English name:** Allow Start and New Tab page preload
+- **GP English name:** Allow Microsoft Edge to start and load the Start and New Tab pages in the background at Windows startup and each time Microsoft Edge is closed
 - **GP name:** AllowTabPreloading
 - **GP path:** Windows Components/Microsoft Edge
 - **GP ADMX file name:** MicrosoftEdge.admx

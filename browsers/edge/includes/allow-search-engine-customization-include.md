@@ -4,7 +4,7 @@
 
 [!INCLUDE [allow-search-engine-customization-shortdesc](../shortdesc/allow-search-engine-customization-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
@@ -13,7 +13,7 @@
 ---
 
 
-### Configuration combinations
+### Configuration options
 
 | **Set default search engine** | **Allow search engine customization** | **Configure additional search engines** | **Outcome** |
 | --- | --- | --- | --- |

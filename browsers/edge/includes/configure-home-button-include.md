@@ -6,22 +6,22 @@
 [!INCLUDE [configure-home-button-shortdesc](../shortdesc/configure-home-button-shortdesc.md)]
 
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Disabled or not configured<br>**(default)** |0 |0 |Show the home button and load the Start page. |
-|Enabled |1 |1 |Show the home button and load the New tab page. |
-|Enabled |2 |2 |Show the home button and load the custom URL defined in the Set Home Button URL policy. |
-|Enabled |3 |3 |Hide the home button. |
+|Disabled or not configured<br>**(default)** |0 |0 |Show home button and load the Start page. |
+|Enabled |1 |1 |Show home button and load the New tab page. |
+|Enabled |2 |2 |Show home button and load the custom URL defined in the Set Home Button URL policy. |
+|Enabled |3 |3 |Hide home button. |
 ---
 
 >[!TIP]
->If you want to make changes to this policy:<ol><li>Enable the Unlock Home Button.</li><li>Make changes to the Configure Home Button policy or Set Home Button URL policy.</li><li>Disable the Unlock Home Button.</li></ol>
+>If you want to make changes to this policy:<ol><li>Enable the **Unlock Home Button** policy.</li><li>Make changes to the **Configure Home Button** policy or **Set Home Button URL** policy.</li><li>Disable the **Unlock Home Button** policy.</li></ol>
 
 
 
-With these values, you can do any of the following configurations:
+### Configuration options
 
 ![Show home button and load Start page or New tab page](../images/home-button-start-new-tab-page-v4-sm.png)
 

@@ -4,16 +4,16 @@
 
 [!INCLUDE [set-default-search-engine-shortdesc](../shortdesc/set-default-search-engine-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Not configured<br>**(default)** |Blank |Blank |Microsoft Edge uses the default search engine specified in App settings. If you don't configure this policy and disable the [Allow search engine customization](#allow-search-engine-customization-include) policy, users cannot make changes. | |
 |Disabled |0 |0 |Microsoft Edge removes the policy-set search engine and uses the Microsoft Edge specified engine for the market. | |
-|Enabled |1 |1 |Microsoft Edge uses the policy-set search engine specified in the OpenSearch XML file. Users cannot change the default search engine.<p>Specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](https://docs.microsoft.com/en-us/microsoft-edge/dev-guide/browser/search-provider-discovery). Use this format to specify the link you want to add.<p>If you want users to use the default Microsoft Edge settings for each market set the string to EDGEDEFAULT. <p>If you would like users to use Microsoft Bing as the default search engine set the string to EDGEBING. |![Most restricted value](../images/check-gn.png) |
+|Enabled |1 |1 |Microsoft Edge uses the policy-set search engine specified in the OpenSearch XML file. Users cannot change the default search engine.<p><p>Specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](https://docs.microsoft.com/en-us/microsoft-edge/dev-guide/browser/search-provider-discovery). Use this format to specify the link you want to add.<p><p>If you want users to use the default Microsoft Edge settings for each market set the string to **EDGEDEFAULT**.<p><p>If you would like users to use Microsoft Bing as the default search engine set the string to **EDGEBING**. |![Most restricted value](../images/check-gn.png) |
 ---
 
-### Configuration combinations
+### Configuration options
 
 | **Set default search engine** | **Allow search engine customization** | **Configure additional search engines** | **Outcome** |
 | --- | --- | --- | --- |

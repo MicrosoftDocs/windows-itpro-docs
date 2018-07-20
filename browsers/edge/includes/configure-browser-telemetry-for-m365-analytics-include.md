@@ -4,7 +4,7 @@
 
 [!INCLUDE [configure-browser-telemetry-for-m365-analytics-shortdesc](../shortdesc/configure-browser-telemetry-for-m365-analytics-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
@@ -23,7 +23,7 @@
 - **GP English name:** Configure collection of browsing data for Microsoft 365 Analytics
 - **GP name:** ConfigureTelemetryForMicrosoft365Analytics
 - **GP element:** ZonesListBox
-- **GP path:** Data Collection and Preview Builds
+- **GP path:** Windows Components/Microsoft Edge
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 

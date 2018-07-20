@@ -9,7 +9,7 @@
 
 **Version 1810:**<br>When you enable this policy (Configure Open Microsoft Edge With) and select an option, and also enable the Configure Start Pages policy, Microsoft Edge ignores the Configure Start Page policy.<p>
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
@@ -20,7 +20,10 @@
 |Enabled<br>**(default)** |3 |3 |Load a specific page or pages. |
 ---
 
-### Configuration combinations
+>[!TIP]
+>If you want to make changes to this policy:<ol><li>Set the **Disabled Lockdown of Start Pages** policy to not configured.</li><li>Make changes to the **Configure Open Microsoft With** policy.</li><li>Enable the **Disabled Lockdown of Start Pages** policy.</li></ol>
+
+### Configuration options
 | **Configure Open Microsoft Edge With** | **Configure Start Pages** | **Disabled Lockdown of Start Pages** | **Outcome** |
 | --- | --- | --- | --- |
 | Enabled (applies to all options) | Enabled – String | Enabled (all configured start pages are editable) | Load URLs defined in the Configure Open Microsoft Edge With policy, and allow users to make changes. |
@@ -31,9 +34,6 @@
 | Enabled (A specific page or pages) | Enabled – String | Blank or not configured | Load a specific page or pages and prevent users from making changes. |
 | Enabled (A specific page or pages) | Enabled – String | Enabled (any Start page configured in Configure Start Pages policy) | Load a specific page or pages and let users make changes. |
 ---
-
-
-If you want to make changes to this policy:<ol><li>Set the Disabled Lockdown of Start Pages to not configured.</li><li>Make changes to the Configure Open Microsoft With policy.</li><li>Enable the Disabled Lockdown of Start Pages.</li></ol>
 
 
 ### ADMX info and settings

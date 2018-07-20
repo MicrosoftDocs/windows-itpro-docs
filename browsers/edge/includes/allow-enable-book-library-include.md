@@ -4,7 +4,7 @@
 
 [!INCLUDE [always-show-books-library-shortdesc](../shortdesc/always-show-books-library-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
