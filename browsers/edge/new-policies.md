@@ -22,9 +22,9 @@ We are discontinuing the use of the **Configure Favorites** group policy. Use th
 
 
 
->You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:
+>*You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:*
 > 
->>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\*
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\*
 <p>
 <!-- add links to the below policies -->
 
