@@ -5,6 +5,7 @@
 
 [!INCLUDE [configure-home-button-shortdesc](../shortdesc/configure-home-button-shortdesc.md)]
 
+
 ### Allowed values
 
 |Group Policy  |MDM |Registry |Description |
@@ -15,13 +16,18 @@
 |Enabled |3 |3 |Hide the home button. |
 ---
 
+>[!TIP]
+>If you want to make changes to this policy:<ol><li>Enable the Unlock Home Button.</li><li>Make changes to the Configure Home Button policy or Set Home Button URL policy.</li><li>Disable the Unlock Home Button.</li></ol>
+
+
+
 With these values, you can do any of the following configurations:
 
-![Show home button and load Start page or New tab page](../images/home-button-start-new-tab-page.png)
+![Show home button and load Start page or New tab page](../images/home-button-start-new-tab-page-v4-sm.png)
 
-![Show home button and load custom URL](../images/home-button-custom-url.png)
+![Show home button and load custom URL](../images/home-buttom-custom-url-v4-sm.png)
 
-![Hide home button](../images/home-button-hide.png)
+![Hide home button](../images/home-button-hide-v4-sm.png)
 
 ### ADMX info and settings
 #### ADMX info

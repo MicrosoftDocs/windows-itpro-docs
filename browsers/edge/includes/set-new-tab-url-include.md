@@ -33,7 +33,8 @@
 
 ### Related policies
 
-[Allow web content on New Tab page](../new-policies.md#allowwebcontentonnewtabpage):  [!INCLUDE [allow-web-content-on-new-tab-page-shortdesc](../shortdesc/allow-web-content-on-new-tab-page-shortdesc.md)]
+[Allow web content on New Tab page](../available-policies.md#allow-web-content-on-new-tab-page):  [!INCLUDE [allow-web-content-on-new-tab-page-shortdesc](../shortdesc/allow-web-content-on-new-tab-page-shortdesc.md)]
+ 
 
 
 <hr>
