@@ -17,7 +17,7 @@ ms.date: 07/19/2018
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
-Use WindowsHelloForBusiness settings to specify whether [FIDO2 security keys for Windows Hello for Business ](https://blogs.windows.com/business/2018/04/17/windows-hello-fido2-security-keys/) can be used to sign in to Windows on a device configured for [Shared PC mode](wcd-sharedpc.md).
+Use WindowsHelloForBusiness settings to specify whether [FIDO2 security keys for Windows Hello](https://blogs.windows.com/business/2018/04/17/windows-hello-fido2-security-keys/) can be used to sign in to Windows on a device configured for [Shared PC mode](wcd-sharedpc.md).
 
 ## Applies to
 
@@ -29,5 +29,5 @@ Use WindowsHelloForBusiness settings to specify whether [FIDO2 security keys for
 
 Select the desired value:
 
-- `0`: security keys for Windows Hello for Business are disabled.
-- `1`: security keys for Windows Hello for Business are enabled on [Shared PCs](wcd-sharedpc.md).
+- `0`: security keys for Windows Hello are disabled.
+- `1`: security keys for Windows Hello are enabled on [Shared PCs](wcd-sharedpc.md).

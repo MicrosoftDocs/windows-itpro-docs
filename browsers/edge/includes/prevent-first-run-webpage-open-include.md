@@ -4,7 +4,7 @@
 
 [!INCLUDE [prevent-first-run-webpage-from-opening-shortdesc](../shortdesc/prevent-first-run-webpage-from-opening-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|

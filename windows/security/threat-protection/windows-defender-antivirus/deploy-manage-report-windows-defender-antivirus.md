@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 05/21/2018
+ms.date: 07/19/2018
 ---
 
 # Deploy, manage, and report on Windows Defender Antivirus
@@ -41,7 +41,7 @@ You'll also see additional links for:
 Tool|Deployment options (<a href="#fn2" id="ref2">2</a>)|Management options (network-wide configuration and policy or baseline deployment) ([3](#fn3))|Reporting options  
 ---|---|---|---  
 System Center Configuration Manager ([1](#fn1))|Use the [Endpoint Protection point site system role][] and [enable Endpoint Protection with custom client settings][]|With [default and customized antimalware policies][] and [client management][]|With the default [Configuration Manager Monitoring workspace][] and [email alerts][]  
-Microsoft Intune|[Deploy the Microsoft Intune client to endpoints][]|Use and deploy a [custom Intune policy][] and use the Intune console to [manage tasks][]|[Monitor endpoint protection in the Microsoft Intune administration console][]  
+Microsoft Intune|[Add endpoint protection settings in Intune](https://docs.microsoft.com/en-us/intune/endpoint-protection-configure)|[Configure device restriction settings in Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure)| [Use the Intune console to manage devices](https://docs.microsoft.com/en-us/intune/device-management)  
 Windows Management Instrumentation|Deploy with Group Policy, System Center Configuration Manager, or manually on individual endpoints.|Use the [Set method of the MSFT_MpPreference class][] and the [Update method of the MSFT_MpSignature class][]|Use the [MSFT_MpComputerStatus][] class and the get method of associated classes in the [Windows Defender WMIv2 Provider][]
 PowerShell|Deploy with Group Policy, System Center Configuration Manager, or manually on individual endpoints.|Use the [Set-MpPreference][] and [Update-MpSignature] [] cmdlets available in the Defender module|Use the appropriate [Get- cmdlets available in the Defender module][]
 Group Policy and Active Directory (domain-joined)|Use a Group Policy Object to deploy configuration changes and ensure Windows Defender Antivirus is enabled.|Use Group Policy Objects (GPOs) to [Configure update options for Windows Defender Antivirus][] and [Configure Windows Defender features][]|Endpoint reporting is not available with Group Policy. You can generate a list of [Group Policies to determine if any settings or policies are not applied][]

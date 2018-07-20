@@ -4,7 +4,7 @@
 
 [!INCLUDE [allow-extended-telemetry-for-books-tab-shortdesc](../shortdesc/allow-extended-telemetry-for-books-tab-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|

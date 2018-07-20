@@ -4,7 +4,7 @@
 
 [!INCLUDE [configure-autofill-shortdesc](../shortdesc/configure-autofill-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|

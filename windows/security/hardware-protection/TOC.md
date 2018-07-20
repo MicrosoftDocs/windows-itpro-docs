@@ -2,7 +2,7 @@
 
 ## [Encrypted Hard Drive](encrypted-hard-drive.md)
 
-## [How hardware-based containers help protect Windows 10](how-hardware-based-containers-help-protect-windows.md)
+## [Windows Defender System Guard](how-hardware-based-containers-help-protect-windows.md)
 
 ## [Secure the Windows 10 boot process](secure-the-windows-10-boot-process.md)
 

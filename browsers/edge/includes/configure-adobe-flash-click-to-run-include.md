@@ -4,7 +4,7 @@
 
 [!INCLUDE [configure-adobe-flash-click-to-run-setting-shortdesc](../shortdesc/configure-adobe-flash-click-to-run-setting-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|

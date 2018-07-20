@@ -4,12 +4,12 @@
 
 [!INCLUDE [set-new-tab-url-shortdesc](../shortdesc/set-new-tab-url-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
 |Disabled or not configured<br>**(default)** |Blank |Blank |Load the default New tab page. |
-|Enabled - String |String |String |Prevent users from changing the New tab page.<p>Enter a URL in string format, for example, https://www.msn.com. |
+|Enabled - String |String |String |Prevent users from changing the New tab page.<p><p>Enter a URL in string format, for example, https://www.msn.com. |
 ---
 
 ### ADMX info and settings
@@ -33,7 +33,8 @@
 
 ### Related policies
 
-[Allow web content on New Tab page](../new-policies.md#allowwebcontentonnewtabpage):  [!INCLUDE [allow-web-content-on-new-tab-page-shortdesc](../shortdesc/allow-web-content-on-new-tab-page-shortdesc.md)]
+[Allow web content on New Tab page](../available-policies.md#allow-web-content-on-new-tab-page):  [!INCLUDE [allow-web-content-on-new-tab-page-shortdesc](../shortdesc/allow-web-content-on-new-tab-page-shortdesc.md)]
+ 
 
 
 <hr>

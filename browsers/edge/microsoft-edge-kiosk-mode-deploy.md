@@ -158,7 +158,7 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
 | [AllowSmartScreen](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen)                                                       | ![Supported](images/148767.png)     | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
 | [AllowSyncMySettings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-allowsyncmysettings)                                                    | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)   |
 | [AllowTabPreloading](new-policies.md#allow-microsoft-edge-to-start-and-load-the-start-and-new-tab-page-at-windows-startup-and-each-time-microsoft-edge-is-closed)\*                                                   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
-| [AllowWebContentOnNewTabPage](new-policies.md#allowwebcontentonnewtabpage)\*                                          | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
+| [AllowWebContentOnNewTabPage](available-policies.md#allow-web-content-on-new-tab-page)\*                                          | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
 | [AlwaysEnabledBooksLibrary](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-alwaysenablebookslibrary)                                              | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
 | [ClearBrowsingDataOnExit](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-clearbrowsingdataonexit)                                                | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
 | [ConfigureAdditionalSearchEngines](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configureadditionalsearchengines)                                       | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
@@ -169,7 +169,7 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
 | [ConfigureOpenMicrosoftEdgeWith](new-policies.md#configure-open-microsoft-edge-with)\*                                       | ![Supported](images/148767.png)     | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
 | [ConfigureTelemetryForMicrosoft365Analytics](new-policies.md#configure-collection-of-browsing-data-for-microsoft-365-analytics)\*                           | ![Supported](images/148767.png)     | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
 | [DisableLockdownOfStartPages](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-disablelockdownofstartpages)                                            | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
-| [DoNotSyncBrowserSetting](new-policies.md#donotsyncbrowsersetting)\* and [PreventUsersFromTurningOnBrowserSyncing](new-policies.md#prevent-users-from-turning-on-browser-syncing)\* | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)   |
+| [DoNotSyncBrowserSetting](available-policies.md#do-not-sync-browser-settings)\* and [PreventUsersFromTurningOnBrowserSyncing](new-policies.md#prevent-users-from-turning-on-browser-syncing)\* | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)   |
 | [EnableExtendedBooksTelemetry](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-enableextendedbookstelemetry)                                           | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
 | [EnterpriseModeSiteList](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-enterprisemodesitelist)                                                 | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)<sup>1</sup> | ![Supported](images/148767.png)   |
 | [FirstRunURL](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-firstrunurl)                                                            | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Not supported](images/148766.png) |
@@ -225,15 +225,11 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
 
 ## Known issues with RS_PRERELEASE build 17713+
 
-- When you set up Microsoft Edge as your kiosk app and define the URL in assigned access Settings the URL, Microsoft Edge may not get launched with the configured URL.
-    - **Expected behavior** – Microsoft Edge kiosk mode opens the URL on startup. 
-    - **Actual behavior** – Microsoft Edge kiosk mode may not open with the URL on startup.
-
 - When you set up Microsoft Edge kiosk mode on a single-app kiosk device you must set the “ConfigureKioskMode” policy because the default behavior is not honored. 
     - **Expected behavior** – Microsoft Edge kiosk mode launches in full-screen mode. 
     - **Actual behavior** – Normal Microsoft Edge launches.
 
-- “Configure Favorites bar” policy when setting to enabled or 1 does not show the favorites bar in Microsoft Edge kiosk mode. 
+- When you enable or set the “Configure Favorites bar” policy to 1, the favorites bar does not show in Microsoft Edge kiosk mode. 
     - **Expected behavior** – Microsoft Edge kiosk mode shows the favorites bar. 
     - **Actual behavior** – The favorites bar is hidden.
 

@@ -1,1 +1,1 @@
-Microsoft Edge automatically updates the configuration data for the Books Library. Disabling this policy prevents Microsoft Edge from updating the configuration data.
+Microsoft Edge automatically updates the configuration data for the Books library. Disabling this policy prevents Microsoft Edge from updating the configuration data. If Microsoft receives feedback about the amount of data about the Books library, the data comes as a JSON file.

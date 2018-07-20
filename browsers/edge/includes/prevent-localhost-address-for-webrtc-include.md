@@ -4,7 +4,7 @@
 
 [!INCLUDE [prevent-using-localhost-ip-address-for-webrtc-shortdesc](../shortdesc/prevent-using-localhost-ip-address-for-webrtc-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|

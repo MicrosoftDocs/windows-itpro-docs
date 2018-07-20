@@ -315,6 +315,8 @@
 #### [WiFi DDF file](wifi-ddf-file.md)
 ### [Win32AppInventory CSP](win32appinventory-csp.md)
 #### [Win32AppInventory DDF file](win32appinventory-ddf-file.md)
+### [Win32CompatibilityAppraiser CSP](win32compatibilityappraiser-csp.md)
+#### [Win32CompatibilityAppraiser DDF file](win32compatibilityappraiser-ddf.md)
 ### [WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)
 #### [WindowsAdvancedThreatProtection DDF file](windowsadvancedthreatprotection-ddf.md)
 ### [WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)

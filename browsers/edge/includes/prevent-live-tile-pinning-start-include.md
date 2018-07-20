@@ -4,7 +4,7 @@
 
 [!INCLUDE [prevent-edge-from-gathering-live-tile-info-shortdesc](../shortdesc/prevent-edge-from-gathering-live-tile-info-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|

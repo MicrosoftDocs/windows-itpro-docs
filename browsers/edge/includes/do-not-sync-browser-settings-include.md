@@ -4,7 +4,7 @@
 
 [!INCLUDE [do-not-sync-browser-settings-shortdesc](../shortdesc/do-not-sync-browser-settings-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
@@ -44,7 +44,7 @@ To verify if syncing is turned on or off:
 - **GP ADMX file name:** SettingSync.admx
 
 #### MDM settings
-- **MDM name:** Experience/[Experience/DoNotSyncBrowserSetting](../new-policies.md#donotsyncbrowsersetting)
+- **MDM name:** [Experience/DoNotSyncBrowserSetting](../available-policies.md#do-not-sync-browser-settings)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Experience/DoNotSyncBrowserSetting
 - **Data type:** Integer
