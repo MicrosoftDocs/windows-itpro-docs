@@ -142,6 +142,9 @@ Computer Configuration\Administrative Templates\Windows Components\Microsoft Edg
 ## Prevent using Localhost IP address for WebRTC
 [!INCLUDE [prevent-localhost-address-for-webrtc-include.md](includes/prevent-localhost-address-for-webrtc-include.md)] 
 
+## Provision Favorites
+[!INCLUDE [provision-favorites-include](includes/provision-favorites-include.md)]
+
 ## Send all intranet sites to Internet Explorer 11
 [!INCLUDE [send-all-intranet-sites-ie-include.md](includes/send-all-intranet-sites-ie-include.md)] 
 
