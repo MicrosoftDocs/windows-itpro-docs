@@ -4,11 +4,11 @@
 
 [!INCLUDE [allow-a-shared-books-folder-shortdesc](../shortdesc/allow-a-shared-books-folder-shortdesc.md)]
 
-### Allowed values
+### Supported values
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Disabled or not configured<br>**(default)** |0 |0 |Prevented/not allowed, but Microsoft Edge downloads book files to a per-user folder for each user. |![Most restricted value](../images/check-gn.png) |
-|Enabled |1 |1 |Allowed. | |
+|Enabled |1 |1 |Allowed. Microsoft Edge downloads book files to a shared folder.| |
 ---
 
 ### ADMX info and settings
@@ -29,9 +29,5 @@
 - **Path:** HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\BooksLibrary
 - **Value name:** UseSharedFolderForBooks
 - **Value type:** REG_DWORD
-
-### Scenarios
-
-Some schools may use a Shared Cart (a physical cart), to store some devices. For example, at the beginning of the lessons, each student picks up a device and returns their device at the end of the of lessons.
 
 <hr>

@@ -4,7 +4,7 @@
 
 [!INCLUDE [configure-do-not-track-shortdesc](../shortdesc/configure-do-not-track-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|

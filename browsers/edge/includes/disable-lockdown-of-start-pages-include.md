@@ -4,12 +4,12 @@
 
 [!INCLUDE [disable-lockdown-of-start-pages-shortdesc](../shortdesc/disable-lockdown-of-start-pages-shortdesc.md)]
  
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Not configured |0 |0 |Lockdown Start pages configured in either the Configure Open Microsoft Edge With policy and Configure Start Pages policy. |![Most restricted value](../images/check-gn.png) |
-|Enabled |1 |1 |Unlocked. Users can make changes to all configured start pages.<p>When you enable this policy and define a set of URLs in the Configure Start Pages policy, Microsoft Edge uses the URLs defined in the Configure Open Microsoft Edge With policy. | |
+|Enabled |1 |1 |Unlocked. Users can make changes to all configured start pages.<p><p>When you enable this policy and define a set of URLs in the Configure Start Pages policy, Microsoft Edge uses the URLs defined in the Configure Open Microsoft Edge With policy. | |
 ---
 
 ### ADMX info and settings
