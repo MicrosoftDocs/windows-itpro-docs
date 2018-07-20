@@ -39,9 +39,8 @@
 
 - [Configure Open Microsoft Edge With](../new-policies.md#configure-open-microsoft-edge-with): [!INCLUDE [configure-open-microsoft-edge-with-shortdesc](../shortdesc/configure-open-microsoft-edge-with-shortdesc.md)]
 
-
 ### Related topics
 
-[Microsoft browser extension policy](aka.ms/browser policy)
+[!INCLUDE [browser-extension-policy-shortdesc-include](browser-extension-policy-shortdesc-include.md)]
 
 <hr>

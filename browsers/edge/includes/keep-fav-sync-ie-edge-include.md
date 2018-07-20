@@ -12,15 +12,6 @@
 |Enabled |1 |1 |Turned on/syncing.  |![Most restricted value](../images/check-gn.png) |
 ---
 
-### Configuration options
-| **Keep favorites in sync between IE and Microsoft Edge** | **Provision Favorites** | **Outcome** |
-| --- | --- | --- |
-| Disabled or not configured (default) | Disabled or not configured (default) | **Turned off/not syncing**. Microsoft Edge prevents users from syncing their favorites. |
-| Enabled (turned on/syncing) | Disabled or not configured (default) | **Turned on/syncing**. Syncs favorites between Internet Explorer and Microsoft Edge. |
-| Enabled (turned on/syncing) | Enabled (provision list of favorites) | **Turned off/not syncing**. Microsoft Edge prevents users from syncing their favorites. |
-| Disabled or not configured (default) | Enabled (provision list of Favorites) | **Turned on/syncing**. Syncs favorites between Internet Explorer and Microsoft Edge. |
----
-
 ### ADMX info and settings
 ### ADMX info
 - **GP English name:** Keep favorites in sync between Internet Explorer and Microsoft Edge 
