@@ -26,8 +26,8 @@
 - **Data type:** Integer
 
 #### Registry settings
-**<ul><li>**Path:** HKLM\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main
-**Value name:** PreventLiveTileDataCollection
-**Value type:** REG_DWORD
+- **Path:** HKLM\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main
+- **Value name:** PreventLiveTileDataCollection
+- **Value type:** REG_DWORD
 
 <hr>
