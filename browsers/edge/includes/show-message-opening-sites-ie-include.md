@@ -5,13 +5,13 @@
 <!-- RS5 update: add option for showing interstitial page with stay in Edge link (Koch) -->
 [!INCLUDE [show-message-when-opening-sites-in-ie-shortdesc](../shortdesc/show-message-when-opening-sites-in-ie-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Disabled or not configured<br>**(default)** |0 |0 |No additional message displays. |![Most restricted value](../images/check-gn.png) |
 |Enabled |1 |1 |Show an additional message stating that a site has opened in IE11. | |
-|Enabled |2 |2 |Show an additional message with a "Keep going in Microsoft Edge" link. | |
+|Enabled |2 |2 |Show an additional message with a "Keep going in Microsoft Edge" link to allow users to open the site in Microsoft Edge. | |
 ---
 
 ### ADMX info and settings

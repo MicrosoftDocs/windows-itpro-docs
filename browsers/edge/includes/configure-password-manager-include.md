@@ -4,7 +4,7 @@
 
 [!INCLUDE [configure-password-manager-shortdesc](../shortdesc/configure-password-manager-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|

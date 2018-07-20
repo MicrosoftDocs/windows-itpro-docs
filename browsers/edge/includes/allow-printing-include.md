@@ -4,12 +4,12 @@
 
 [!INCLUDE [allow-printing-shortdesc](../shortdesc/allow-printing-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Disabled |0 |0 |Prevented/not allowed |![Most restrictive value](../images/check-gn.png) |
-|Enabled<br>**(default)** |1 |1 |Allowed | |
+|Enabled or not configured<br>**(default)** |1 |1 |Allowed | |
 ---
 
 ### ADMX info and settings

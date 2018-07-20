@@ -4,7 +4,7 @@
 
 [!INCLUDE [do-not-sync-shortdesc](../shortdesc/do-not-sync-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
