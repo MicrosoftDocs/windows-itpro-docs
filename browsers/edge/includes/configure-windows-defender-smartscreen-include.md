@@ -4,7 +4,7 @@
 
 [!INCLUDE [configure-windows-defender-smartscreen-shortdesc](../shortdesc/configure-windows-defender-smartscreen-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|

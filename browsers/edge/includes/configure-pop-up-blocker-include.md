@@ -4,7 +4,7 @@
 
 [!INCLUDE [configure-pop-up-blocker-shortdesc](../shortdesc/configure-pop-up-blocker-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|

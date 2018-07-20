@@ -5,7 +5,7 @@
 [!INCLUDE [allow-address-bar-drop-down-shortdesc](../shortdesc/allow-address-bar-drop-down-shortdesc.md)]
 
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|

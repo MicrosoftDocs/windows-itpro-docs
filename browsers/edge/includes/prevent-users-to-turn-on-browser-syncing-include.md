@@ -5,7 +5,7 @@
 
 [!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
 
-### Allowed values
+### Supported values
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
 |Disabled |0 |0 |Allowed/turned on. Users can sync the browser settings.  | 

@@ -7,17 +7,19 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 12/05/2017
+ms.date: 07/20/2018
 ---
 
 # SUPL DDF file
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic shows the OMA DM device description framework (DDF) for the **SUPL** configuration service provider.
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is the current version for this CSP.
+The XML below is for Windows 10, next major version.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>

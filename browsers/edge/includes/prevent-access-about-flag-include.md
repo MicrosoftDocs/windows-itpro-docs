@@ -4,7 +4,7 @@
 
 [!INCLUDE [prevent-access-to-about-flags-page-shortdesc](../shortdesc/prevent-access-to-about-flags-page-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|

@@ -5,7 +5,7 @@
 
 [!INCLUDE [allow-fullscreen-mode-shortdesc](../shortdesc/allow-fullscreen-mode-shortdesc.md)]  
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
