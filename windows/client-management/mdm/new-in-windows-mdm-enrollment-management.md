@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 06/26/2018
+ms.date: 07/16/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -1638,13 +1638,27 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr>
+<td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node AllowStandardUserEncryption.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node SMBIOSSerialNumber.</p>
+</td></tr>
+<tr>
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies in Windows 10, next major version:</p>
 <ul>
 <li>ApplicationManagement/LaunchAppAfterLogOn</li>
 <li>ApplicationManagement/ScheduleForceRestartForUpdateFailures </li>
+<li>DmaGuard/DeviceEnumerationPolicy</li>
+<li>Experience/AllowClipboardHistory</li>
 <li>TaskManager/AllowEndTask</li>
 <li>WindowsLogon/DontDisplayNetworkSelectionUI</li>
+</ul>
+<p>Recent changes:</p>
+<ul>
+<li>DataUsage/SetCost3G - deprecated in RS5.</li>
 </ul>
 </td></tr>
 </tbody>
@@ -1692,6 +1706,15 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Security/RequireDeviceEncryption is suported in the Home SKU.</li>
 <li>Start/StartLayout - added a table of SKU support information.</li>
 <li>Start/ImportEdgeAssets - added a table of SKU support information.</li>
+</ul>
+<p>Added the following new policies in Windows 10, next major version:</p>
+<ul>
+<li>Update/EngagedRestartDeadlineForFeatureUpdates</li>
+<li>Update/EngagedRestartSnoozeScheduleForFeatureUpdates</li>
+<li>Update/EngagedRestartTransitionScheduleForFeatureUpdates</li>
+<li>Update/SetDisablePauseUXAccess</li>
+<li>Update/SetDisableUXWUAccess</li>
+<li>Update/UpdateNotificationKioskMode</li>
 </ul>
 </td></tr>
 <tr>
