@@ -4,7 +4,7 @@
 
 [!INCLUDE [configure-cookies-shortdesc](../shortdesc/configure-cookies-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|

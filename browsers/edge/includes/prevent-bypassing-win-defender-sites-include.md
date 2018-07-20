@@ -4,7 +4,7 @@
 
 [!INCLUDE [prevent-bypassing-windows-defender-prompts-for-sites-shortdesc](../shortdesc/prevent-bypassing-windows-defender-prompts-for-sites-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|

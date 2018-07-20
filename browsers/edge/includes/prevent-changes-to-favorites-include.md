@@ -4,7 +4,7 @@
 
 [!INCLUDE [prevent-changes-to-favorites-shortdesc](../shortdesc/prevent-changes-to-favorites-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|

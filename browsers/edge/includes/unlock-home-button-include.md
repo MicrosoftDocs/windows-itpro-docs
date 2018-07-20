@@ -4,11 +4,11 @@
 
 [!INCLUDE [unlock-home-button-shortdesc](../shortdesc/unlock-home-button-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
-|Disabled or not configured<br>**(default)** |0 |0 |Lock down the home button to prevent users from making changes. | 
+|Disabled or not configured<br>**(default)** |0 |0 |Lock down the home button to prevent users from making changes to the home button settings. | 
 |Enabled |1 |1 |Let users make changes. | 
 ---
 

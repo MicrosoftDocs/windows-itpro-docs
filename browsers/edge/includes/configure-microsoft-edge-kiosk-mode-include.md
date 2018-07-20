@@ -7,7 +7,7 @@
 
 For this policy to work, you must configure Microsoft Edge in assigned access; otherwise, Microsoft Edge ignores the settings in this policy. To learn more about assigned access and kiosk configuration, see [Configure kiosk and shared devices running Windows desktop editions](https://aka.ms/E489vw).
 
-### Allowed values
+### Supported values
 
 | | |
 |---|---|

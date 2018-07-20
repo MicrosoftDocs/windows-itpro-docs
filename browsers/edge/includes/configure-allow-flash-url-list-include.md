@@ -4,7 +4,7 @@
 
 [!INCLUDE [configure-allow-flash-for-url-list-shortdesc](../shortdesc/configure-allow-flash-for-url-list-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|

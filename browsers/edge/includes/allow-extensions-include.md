@@ -4,7 +4,7 @@
 
 [!INCLUDE [allow-extensions-shortdesc](../shortdesc/allow-extensions-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|

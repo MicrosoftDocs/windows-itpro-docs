@@ -4,7 +4,7 @@
 
 [!INCLUDE [set-home-button-url-shortdesc](../shortdesc/set-home-button-url-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
@@ -12,7 +12,7 @@
 |Enabled - String |String |String |A custom URL loads when clicking the home button.  You must also enable the [Configure Home Button](../new-policies.md#configure-home-button) policy and select the _Show home button & set a specific page_ option.<p>Enter a URL in string format, for example, https://www.msn.com.   |
 ---
 
-With these values, you can do any of the following configurations:
+### Configuration options
 
 #### Show the home button, load a custom URL, and let users make changes:
 1. **Configure Home Button:** Enable and select the _Show the home button & set a specific page_ option.
