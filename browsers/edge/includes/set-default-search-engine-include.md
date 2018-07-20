@@ -25,7 +25,7 @@
 | Enabled | Enabled or not configured (default) | Disabled or not configured (default) | Set the default search engine and allow users to add search engines or make changes. |
 ---
 
-![Set default search engine](../images/set-default-search-engine-sm.png)
+![Set default search engine configurations](../images/set-default-search-engine-v4-sm.png)
 
 
 ### ADMX info and settings
