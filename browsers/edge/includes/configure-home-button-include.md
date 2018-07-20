@@ -5,9 +5,6 @@
 
 [!INCLUDE [configure-home-button-shortdesc](../shortdesc/configure-home-button-shortdesc.md)]
 
-**Version 1703 or later:**<br>If you don't want to send traffic to Microsoft, use the \<about:blank\> value, which honors both domain and non domain-joined devices when it's the only configured URL.
-
-**Version 1810:**<br>When you enable the Configure Open Microsoft Edge With policy and select an option, and also enable the Configure Start Pages policy, Microsoft Edge ignores the Configure Start Page policy.<p>
 
 ### Allowed values
 
