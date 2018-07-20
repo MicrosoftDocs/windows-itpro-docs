@@ -13,7 +13,6 @@
 ---
 
 ### Configuration options
-### Configuration options
 | **Keep favorites in sync between IE and Microsoft Edge** | **Provision Favorites** | **Outcome** |
 | --- | --- | --- |
 | Disabled or not configured (default) | Disabled or not configured (default) | **Turned off/not syncing**. Microsoft Edge prevents users from syncing their favorites. |

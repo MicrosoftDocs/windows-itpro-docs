@@ -64,9 +64,6 @@ Computer Configuration\Administrative Templates\Windows Components\Microsoft Edg
 ## Allow search engine customization
 [!INCLUDE [allow-search-engine-customization-include.md](includes/allow-search-engine-customization-include.md)]
 
-## Allow Start and New Tab page preload
-[!INCLUDE [allow-tab-preloading-include](includes/allow-tab-preloading-include.md)]
-
 ## Allow web content on New Tab page
 [!INCLUDE [allow-web-content-new-tab-page-include.md](includes/allow-web-content-new-tab-page-include.md)]
 
