@@ -44,7 +44,7 @@ To verify if syncing is turned on or off:
 - **GP ADMX file name:** SettingSync.admx
 
 #### MDM settings
-- **MDM name:** [Experience/DoNotSyncBrowserSetting](../new-policies.md#donotsyncbrowsersetting)
+- **MDM name:** [Experience/DoNotSyncBrowserSetting](../available-policies.md#do-not-sync-browser-settings)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Experience/DoNotSyncBrowserSetting
 - **Data type:** Integer
