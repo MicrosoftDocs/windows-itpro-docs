@@ -162,10 +162,7 @@ ms.date: 07/18/2018
   <dd>
     <a href="#browser-preventsmartscreenpromptoverrideforfiles">Browser/PreventSmartScreenPromptOverrideForFiles</a>
   </dd>
-  <dd>
-    <a href="#browser-preventtabpreloading">Browser/PreventTabPreloading</a>
-  </dd>
-  <dd>
+   <dd>
     <a href="#browser-preventusinglocalhostipaddressforwebrtc">Browser/PreventUsingLocalHostIPAddressForWebRTC</a>
   </dd>
   <dd>
