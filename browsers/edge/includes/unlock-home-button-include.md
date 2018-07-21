@@ -20,7 +20,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[UnlockHomeButton](../new-policies.md#unlock-home-button)
+- **MDM name:** Browser/[UnlockHomeButton](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-unlockhomebutton)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/UnlockHomeButton
 - **Data type:** Integer

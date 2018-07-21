@@ -21,7 +21,7 @@ You must set the Configure kiosk mode policy to enabled (1 - InPrivate public br
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[ConfigureKioskResetAfterIdleTimeout](../new-policies.md#configure-kiosk-reset-after-idle-timeout)
+- **MDM name:** Browser/[ConfigureKioskResetAfterIdleTimeout](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configurekioskresetafteridletimeout)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureKioskResetAfterIdleTimeout 
 - **Data type:** Integer
