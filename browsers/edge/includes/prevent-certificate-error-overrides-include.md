@@ -24,7 +24,7 @@
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** Software\Policies\Microsoft\MicrosoftEdge\Internet Setting
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Internet Setting
 - **Value name:** PreventCertErrorOverrides
 - **Value type:** REG_DWORD
 
