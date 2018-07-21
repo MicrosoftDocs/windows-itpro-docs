@@ -234,7 +234,7 @@ ms.date: 07/18/2018
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703* 
 
 [!INCLUDE [allow-address-bar-drop-down-shortdesc](../../../browsers/edge/shortdesc/allow-address-bar-drop-down-shortdesc.md)]
 
@@ -249,7 +249,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 – Prevented/not allowed. Hide the Address bar drop-down functionality and disable the _Show search and site suggestions as I type_ toggle in Settings. 
 -   1 (default) – Allowed. Show the Address bar drop-down list and make it available.
@@ -297,6 +297,7 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
+
 [!INCLUDE [configure-autofill-shortdesc](../../../browsers/edge/shortdesc/configure-autofill-shortdesc.md)]
 
 <!--/Description-->
@@ -309,7 +310,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -  Blank - Users can choose to use AutoFill.
 -   0 – Prevented/not allowed.
@@ -376,7 +377,7 @@ The device allows Microsoft Edge on Windows 10 Mobile by default. With this poli
 
 <!--/Description-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 – Prevented/not allowed.
 -   1 (default) – Allowed.
@@ -429,7 +430,7 @@ Most restricted value: 0
 
 <!--/Description-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 - Prevented/not allowed.
 -   1 (default). Allowed. Microsoft Edge updates the configuration data for the Books Library automatically.
@@ -492,7 +493,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 – Block all cookies from all sites
 -   1 – Block only cookies from third party websites
@@ -565,7 +566,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 – Prevented/not allowed.
 -   1 (default) – Allowed.
@@ -625,7 +626,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -	Blank (default) - Do not send tracking information but let users choose to send tracking information to sites they visit.
 -	0 - Never send tracking information.
@@ -683,7 +684,7 @@ To verify AllowDoNotTrack is set to 0 (not allowed):
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1607. 
+>*Supported versions: Microsoft Edge on Windows 10, version 1607* 
 
 [!INCLUDE [allow-extensions-shortdesc](../../../browsers/edge/shortdesc/allow-extensions-shortdesc.md)]
 
@@ -697,7 +698,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 – Prevented/not allowed.
 -   1 (default) – Allowed.
@@ -744,7 +745,7 @@ Allowed values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10. 
+
 
 [!INCLUDE [allow-adobe-flash-shortdesc](../../../browsers/edge/shortdesc/allow-adobe-flash-shortdesc.md)]
 
@@ -758,7 +759,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 – Prevented/not allowed.
 -   1 (default) – Allowed.
@@ -805,7 +806,8 @@ Allowed values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703*  
+
 
 [!INCLUDE [configure-adobe-flash-click-to-run-setting-shortdesc](../../../browsers/edge/shortdesc/configure-adobe-flash-click-to-run-setting-shortdesc.md)]
 
@@ -819,7 +821,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 – Load and run Adobe Flash content automatically.
 -   1 (default) – Do not load or run Adobe Flash content automatically. Requires user action.
@@ -867,7 +869,8 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
-Next Windows 10 major release 
+>*Supported versions: Microsoft Edge on Windows 10, next major release* 
+
 
 [!INCLUDE [allow-fullscreen-mode-shortdesc](../../../browsers/edge/shortdesc/allow-fullscreen-mode-shortdesc.md)]
 
@@ -881,7 +884,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 - 0 - Prevented/not allowed
 - 1 (default) - Allowed
 
@@ -936,7 +939,7 @@ Most restricted value: 0
 <!--Description-->
 [!INCLUDE [allow-inprivate-browsing-shortdesc](../../../browsers/edge/shortdesc/allow-inprivate-browsing-shortdesc.md)]
 
-Most restricted value is 0.
+Most restricted value:  0
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -948,7 +951,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 – Prevented/not allowed
 -   1 (default) – Allowed
@@ -995,11 +998,12 @@ Allowed values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703* 
+
 
 [!INCLUDE [allow-microsoft-compatibility-list-shortdesc](../../../browsers/edge/shortdesc/allow-microsoft-compatibility-list-shortdesc.md)]
 
-Most restricted value is 0.
+Most restricted value:  0
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1011,7 +1015,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 – Prevented/not allowed
 -   1 (default) – Allowed
@@ -1071,7 +1075,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 - Blank - Users can shoose to save and manage passwords locally.
 - 0 – Not allowed.
@@ -1143,7 +1147,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 - Blank - Users can choose to use Pop-up Blocker.
 - 0 (default) – Turn off Pop-up Blocker letting pop-up windows open.
@@ -1201,7 +1205,9 @@ To verify AllowPopups is set to 0 (not allowed):
 
 <!--/Scope-->
 <!--Description-->
-Next Windows 10 major release
+
+
+>*Supported versions: Microsoft Edge on Windows 10, next major release* 
 
 [!INCLUDE [allow-prelaunch-shortdesc](../../../browsers/edge/shortdesc/allow-prelaunch-shortdesc.md)]
 
@@ -1215,7 +1221,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 - 0 - Prevented/not allowed
 - 1 (default) - Allowed
 
@@ -1268,7 +1274,8 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
-Next Windows 10 major release
+>*Supported versions: Microsoft Edge on Windows 10, next major release* 
+
 
 [!INCLUDE [allow-printing-shortdesc](../../../browsers/edge/shortdesc/allow-printing-shortdesc.md)]
 
@@ -1282,7 +1289,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 - 0 - Prevented/not allowed
 - 1 (default) - Allowed
 
@@ -1335,7 +1342,8 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
-Next Windows 10 major release
+>*Supported versions: Microsoft Edge on Windows 10, next major release* 
+
 
 [!INCLUDE [allow-saving-history-shortdesc](../../../browsers/edge/shortdesc/allow-saving-history-shortdesc.md)]
 
@@ -1349,7 +1357,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 - 0 - Prevented/not allowed
 - 1 (default) - Allowed
 
@@ -1402,7 +1410,9 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. 
+
+>*Supported versions: Microsoft Edge on Windows 10, version 1703* 
+
 
 [!INCLUDE [allow-search-engine-customization-shortdesc](../../../browsers/edge/shortdesc/allow-search-engine-customization-shortdesc.md)]
 
@@ -1418,7 +1428,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 – Prevented/not allowed
 -   1 (default) – Allowed
@@ -1479,7 +1489,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 - Blank (default) - Users can choose to see search suggestions.
 - 0 – Prevented/not allowed. Hide the search suggestions.
@@ -1528,7 +1538,8 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
-Next Windows 10 major release
+>*Supported versions: Microsoft Edge on Windows 10, next major release* 
+
 
 [!INCLUDE [allow-sideloading-of-extensions-shortdesc](../../../browsers/edge/shortdesc/allow-sideloading-of-extensions-shortdesc.md)]
 
@@ -1542,7 +1553,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 - 0 - Prevented, but does not prevent sideloading of extensions using Add-AppxPackage via PowerShell. To prevent this, set the **ApplicationManagement/AllowDeveloperUnlock** policy to 1 (enabled).
 - 1 (default) - Allowed.
@@ -1608,7 +1619,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 - Blank - Users can choose to use Windows Defender SmartScreen or not.
 - 0 – Turned off. Do not protect users from potential threats and prevent users from turning it on.
@@ -1666,7 +1677,8 @@ To verify AllowSmartScreen is set to 0 (not allowed):
 
 <!--/Scope-->
 <!--Description-->
-Next Windows 10 major release
+>*Supported versions: Microsoft Edge on Windows 10, next major release* 
+
 
 [!INCLUDE [allow-tab-preloading-shortdesc](../../../browsers/edge/shortdesc/allow-tab-preloading-shortdesc.md)]
 
@@ -1680,7 +1692,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 - 0 (default) - Allowed. Preload Start and New tab pages.
 - 1 - Prevented/not allowed.
@@ -1734,7 +1746,8 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
-Next Windows 10 major release 
+>*Supported versions: Microsoft Edge on Windows 10, next major release* 
+
 
 [!INCLUDE [allow-web-content-on-new-tab-page-shortdesc](../../../browsers/edge/shortdesc/allow-web-content-on-new-tab-page-shortdesc.md)]
 <!--/Description-->
@@ -1747,7 +1760,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 - Blank - Users can choose what loads on the New tab page.
 - 0 - Load a blank page instead of the default New tab page and prevent users from changing it.
@@ -1816,7 +1829,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 (default) - Show the Books Library only in countries or regions where supported.
 -   1 - Show the Books Library, regardless of the device’s country or region.
@@ -1864,7 +1877,7 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. 
+>*Supported versions: Microsoft Edge on Windows 10, next major release* 
 
 [!INCLUDE [allow-clearing-browsing-data-on-exit-shortdesc](../../../browsers/edge/shortdesc/allow-clearing-browsing-data-on-exit-shortdesc.md)]
 
@@ -1878,7 +1891,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 – (default) Prevented/not allowed. Users can configure the _Clear browsing data_ option in Settings.
 -   1 – Allowed. Clear the browsing data upon exit automatically.
@@ -1935,7 +1948,7 @@ To verify that browsing data is cleared on exit (ClearBrowsingDataOnExit is set 
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703* 
 
 [!INCLUDE [configure-additional-search-engines-shortdesc](../../../browsers/edge/shortdesc/configure-additional-search-engines-shortdesc.md)]
 
@@ -1954,7 +1967,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 (default) – Prevented/not allowed. Microsoft Edge uses the search engine specified in App settings.<p><p>If you enabled this policy and now want to disable it, disabling removes all previously configured search engines.
 -   1 – Allowed. Add up to five additional search engines and set any one of them as the default.<p><p>For each search engine added you must specify a link to the OpenSearch XML file that contains, at a minimum, the short name and URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/browser/search-provider-discovery/).
@@ -2002,7 +2015,8 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
-Next Windows 10 major release
+>*Supported versions: Microsoft Edge on Windows 10, next major release* 
+
 
 [!INCLUDE [configure-favorites-bar-shortdesc](../../../browsers/edge/shortdesc/configure-favorites-bar-shortdesc.md)]
 
@@ -2016,7 +2030,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 - Blank (default) - Hide the favorites bar but show it on the Start and New tab pages. The favorites bar toggle, in Settings, is set to Off but enabled allowing users to make changes.
 - 0 - Hide the favorites bar on all pages. Also, the favorites bar toggle, in Settings, is set to Off and disabled preventing users from making changes. Microsoft Edge also hides the “show bar/hide bar” option in the context menu.
@@ -2071,7 +2085,8 @@ Allowed values:
 
 <!--/Scope-->
 <!--Description-->
-Next Windows 10 major release
+>*Supported versions: Microsoft Edge on Windows 10, next major release* 
+
 
 [!INCLUDE [configure-home-button-shortdesc](../../../browsers/edge/shortdesc/configure-home-button-shortdesc.md)]
 
@@ -2086,7 +2101,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 - 0 (default) - Show home button and load the Start page.
 - 1 - Show home button and load the New tab page.
@@ -2145,7 +2160,8 @@ Allowed values:
 
 <!--/Scope-->
 <!--Description-->
-Next Windows 10 major release
+>*Supported versions: Microsoft Edge on Windows 10, next major release* 
+
 
 [!INCLUDE [configure-kiosk-mode-shortdesc](../../../browsers/edge/shortdesc/configure-kiosk-mode-shortdesc.md)]
 
@@ -2164,7 +2180,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 **0 (Default or not configured)**:
 - If it’s a single app, it runs InPrivate full screen for digital signage or interactive displays.
@@ -2221,7 +2237,8 @@ Allowed values:
 
 <!--/Scope-->
 <!--Description-->
-Next Windows 10 major release
+>*Supported versions: Microsoft Edge on Windows 10, next major release* 
+
 
 [!INCLUDE [configure-kiosk-reset-after-idle-timeout-shortdesc](../../../browsers/edge/shortdesc/configure-kiosk-reset-after-idle-timeout-shortdesc.md)]
 
@@ -2238,7 +2255,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 -   **Any integer from 1-1440 (5 minutes is the default)** – The time in minutes from the last user activity before Microsoft Edge kiosk mode resets to the default kiosk configuration. A confirmation dialog displays for the user to cancel or continue and automatically continues after 30 seconds.
 
 -   **0** – No idle timer.
@@ -2290,7 +2307,8 @@ Allowed values:
 
 <!--/Scope-->
 <!--Description-->
-Next Windows 10 major release
+>*Supported versions: Microsoft Edge on Windows 10, next major release* 
+
 
 [!INCLUDE [configure-open-microsoft-edge-with-shortdesc](../../../browsers/edge/shortdesc/configure-open-microsoft-edge-with-shortdesc.md)]
 
@@ -2312,7 +2330,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 - Blank - If you don't configure this policy and you enable the Disable Lockdown of Start Pages policy, users can change or customize the Start page.
 - 0 - Load the Start page.
@@ -2372,7 +2390,8 @@ Allowed values:
 
 <!--/Scope-->
 <!--Description-->
-Next Windows 10 major release
+>*Supported versions: Microsoft Edge on Windows 10, next major release* 
+
 
 [!INCLUDE [configure-browser-telemetry-for-m365-analytics-shortdesc](../../../browsers/edge/shortdesc/configure-browser-telemetry-for-m365-analytics-shortdesc.md)]
 
@@ -2387,7 +2406,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 - 0 (default) - No data collected or sent
 - 1 - Send intranet history only
@@ -2443,7 +2462,7 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703*  
 
 [!INCLUDE [disable-lockdown-of-start-pages-shortdesc](../../../browsers/edge/shortdesc/disable-lockdown-of-start-pages-shortdesc.md)]
   
@@ -2453,7 +2472,7 @@ Added in Windows 10, version 1703.
 > [!IMPORTANT]
 > This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](https://docs.microsoft.com/en-us/legal/windows/agreements/microsoft-browser-extension-policy).
 
-Most restricted value is 0.
+Most restricted value:  0
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2465,7 +2484,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 - 0 – Locked. Lockdown the Start pages configured in either the Configure Open Microsoft Edge With policy or Configure Start Pages policy. 
 - 1 (default) – Unlocked. Users can make changes to all configured start pages.<p><p>When you enable this policy and define a set of URLs in the Configure Start Pages policy, Microsoft Edge uses the URLs defined in the Configure Open Microsoft Edge With policy.
@@ -2526,7 +2545,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 (default) - Gather and send only basic diagnotic data, depending on the device configuration.
 -   1 - Gather both basic and additional data, such as usage data.
@@ -2594,7 +2613,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 (default) - Turned off. Microsoft Edge does not check the Enterprise Mode Site List, and in this case, users might experience problems while using legacy apps.
 -   Turned on. Microsoft Edge checks the Enterprise Mode Site List if configured. If an XML file exists in the cache container, IE11 waits 65 seconds and then checks the local cache for a new version from the server. If the server has a different version, Microsoft Edge uses the server file and stores it in the cache container. If you already use a site list, Enterprise Mode continues to work during the 65 second, but uses the existing file. To add the location to your site list, enter it in the {URI} box.
@@ -2801,8 +2820,6 @@ ADMX Info:
 
 [!INCLUDE [configure-start-pages-shortdesc](../../../browsers/edge/shortdesc/configure-start-pages-shortdesc.md)]
 
-Starting in Windows 10, version 1607, this policy will be enforced so that the Start pages specified by this policy cannot be changed by the users.
-
 **Version 1607**<br>
 Starting with this version, the HomePages policy enforces that users cannot change the Start pages settings.
 
@@ -2874,7 +2891,7 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. 
+>*Supported versions: Microsoft Edge on Windows 10, version 1709* 
 
 [!INCLUDE [prevent-changes-to-favorites-shortdesc](../../../browsers/edge/shortdesc/prevent-changes-to-favorites-shortdesc.md)]
 
@@ -2889,7 +2906,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 (default) - Allowed/not locked down. Users can add, import, and make changes to the favorites.
 -   1 - Prevented/locked down.
@@ -2950,7 +2967,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 (default) – Allowed.
 -   1 – Prevented/not allowed. Users cannot access the about:flags page.
@@ -2998,7 +3015,7 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
-Next Windows 10 major release
+>*Supported versions: Microsoft Edge on Windows 10, next major release* 
 
 [!INCLUDE [prevent-certificate-error-overrides-shortdesc](../../../browsers/edge/shortdesc/prevent-certificate-error-overrides-shortdesc.md)]
 
@@ -3012,7 +3029,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 - 0 (default) - Allowed/turned on. Override the security warning to sites that have SSL errors.
 - 1 - Prevented/turned on.
@@ -3066,7 +3083,7 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703.
+>*Supported versions: Microsoft Edge on Windows 10, version 1703* 
 
 [!INCLUDE [prevent-first-run-webpage-from-opening-shortdesc](../../../browsers/edge/shortdesc/prevent-first-run-webpage-from-opening-shortdesc.md)]
 
@@ -3080,7 +3097,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 (default) – Allowed. Microsoft Edge loads the First Run webpage. 
 -   1 – Prevented/not allowed.
@@ -3128,7 +3145,7 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703* 
 
 [!INCLUDE [prevent-edge-from-gathering-live-tile-info-shortdesc](../../../browsers/edge/shortdesc/prevent-edge-from-gathering-live-tile-info-shortdesc.md)]
 
@@ -3142,7 +3159,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 (default) – Collect and send Live Tile metadata to Microsoft.
 -   1 – No data collected.
@@ -3202,7 +3219,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 (default) – Allowed/turned off. Users can ignore the warning and continue to the site.
 -   1 – Prevented/turned on.
@@ -3263,7 +3280,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 (default) – Allowed/turned off. Users can ignore the warning and continue to download the unverified file(s).
 -   1 – Prevented/turned on.
@@ -3326,7 +3343,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 (default) – Allowed. Show localhost IP addresses.
 -   1 – Prevented/not allowed.
@@ -3374,7 +3391,7 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. 
+>*Supported versions: Microsoft Edge on Windows 10, version 1709* 
 
 [!INCLUDE [prevent-using-localhost-ip-address-for-webrtc-shortdesc](../../../browsers/edge/shortdesc/prevent-using-localhost-ip-address-for-webrtc-shortdesc.md)]
  
@@ -3461,7 +3478,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 - 0 (default) - All sites, including intranet sites, open in Microsoft Edge automatically.
 - 1 - Only intranet sites open in Internet Explorer 11 automatically. Enabling this policy opens all intranet sites in IE11 automatically, even if the users have Microsoft Edge as their default browser.
@@ -3509,7 +3526,7 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703*  
 
 [!INCLUDE [set-default-search-engine-shortdesc](../../../browsers/edge/shortdesc/set-default-search-engine-shortdesc.md)]
 
@@ -3517,7 +3534,7 @@ Added in Windows 10, version 1703.
 > This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](https://docs.microsoft.com/en-us/legal/windows/agreements/microsoft-browser-extension-policy).
 
 
-Most restricted value is 0.
+Most restricted value:  0
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -3530,7 +3547,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 - Blank (default) - Microsoft Edge uses the default search engine specified in App settings. If you don't configure this policy and disable the AllowSearchEngineCustomization policy, users cannot make changes.
 - 0 - Microsoft Edge removes the policy-set search engine and uses the Microsoft Edge specified engine for the market.
@@ -3579,7 +3596,8 @@ Most restricted value: 1
 
 <!--/Scope-->
 <!--Description-->
-Next Windows 10 major release 
+>*Supported versions: Microsoft Edge on Windows 10, next major release* 
+
 
 [!INCLUDE [set-home-button-url-shortdesc](../../../browsers/edge/shortdesc/set-home-button-url-shortdesc.md)]
 
@@ -3594,7 +3612,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 - Blank (default) - Show the home button and loads the Start page and locks down the home button to prevent users from changing what page loads.
 - String - Load a custom URL for the home button. You must also enable the Configure Home Button policy and select the _Show home button & set a specific page_ option.<p><p>Enter a URL in string format, for example, https://www.msn.com.
@@ -3647,7 +3665,8 @@ Allowed values:
 
 <!--/Scope-->
 <!--Description-->
-Next Windows 10 major release
+>*Supported versions: Microsoft Edge on Windows 10, next major release* 
+
 
 [!INCLUDE [set-new-tab-url-shortdesc](../../../browsers/edge/shortdesc/set-new-tab-url-shortdesc.md)]
 
@@ -3662,7 +3681,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 - Blank (default) - Load the default New tab page.
 - String - Prevent users from changing the New tab page.<p><p>Enter a URL in string format, for example, https://www.msn.com.
@@ -3730,7 +3749,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 (default) – No additional message displays.
 -   1 – Show an additional message stating that a site has opened in IE11.
@@ -3779,7 +3798,8 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. 
+>*Supported versions: Microsoft Edge on Windows 10, version 1703* 
+ 
 
 [!INCLUDE [keep-favorites-in-sync-between-ie-and-edge-shortdesc](../../../browsers/edge/shortdesc/keep-favorites-in-sync-between-ie-and-edge-shortdesc.md)]
 
@@ -3796,7 +3816,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 (default) – Turned off/not syncing
 -   1 – Turned on/syncing
@@ -3853,7 +3873,8 @@ To verify that favorites are in synchronized between Internet Explorer and Micro
 
 <!--/Scope-->
 <!--Description-->
-Next Windows 10 major release
+>*Supported versions: Microsoft Edge on Windows 10, next major release* 
+
 
 [!INCLUDE [unlock-home-button-shortdesc](../../../browsers/edge/shortdesc/unlock-home-button-shortdesc.md)]
 
@@ -3867,7 +3888,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 - 0 (default) - Lock down the home button to prevent users from making changes to the settings.
 - 1 - Let users make changes.
@@ -3933,7 +3954,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Allowed values:
+Supported values:
 
 -   0 - Prevented/not allowed, but Microsoft Edge downloads book files to a per-user folder for each user. 
 -   1 - Allowed. Microsoft Edge downloads book files into a shared folder.
@@ -3945,10 +3966,10 @@ Most restricted value: 0
 
 Footnote:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
+-   1 - Supported versions, version 1607.
+-   2 - Supported versions, version 1703.
+-   3 - Supported versions, version 1709.
+-   4 - Supported versions, version 1803.
 -   5 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
