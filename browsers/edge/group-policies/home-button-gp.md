@@ -11,7 +11,9 @@ Microsoft Edge shows the home button and by clicking it the Start page loads by 
 
 ## Policies
 - [Configure Home Button](../new-policies.md#configure-home-button)<p>[!INCLUDE [configure-home-button-shortdesc](../shortdesc/configure-home-button-shortdesc.md)]
+  
 - [Set Home Button URL](../new-policies.md#set-home-button-url)<p>[!INCLUDE [set-home-button-url-shortdesc](../shortdesc/set-home-button-url-shortdesc.md)]
+  
 - [Unlock Home Button](../new-policies.md#unlock-home-button)<p>[!INCLUDE [unlock-home-button-shortdesc](../shortdesc/unlock-home-button-shortdesc.md)]
 
 ## Configuration options
