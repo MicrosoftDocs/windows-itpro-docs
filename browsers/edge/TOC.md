@@ -2,6 +2,10 @@
 
 ##[New Microsoft Edge Group Policies and MDM settings](new-policies.md)
 
+###[Home button configuration options](group-policies/home-button-gp.md)
+###[Prelaunch Microsoft Edge and preload tabs in the background](group-policies/prelaunch-preload-gp.md)
+###[Sync browser settings](group-policies/sync-browser-settings-gp.md)
+
 ##[Deploy Microsoft Edge kiosk mode](microsoft-edge-kiosk-mode-deploy.md)
 
 ##[Change history for Microsoft Edge](change-history-for-microsoft-edge.md)

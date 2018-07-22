@@ -12,6 +12,10 @@
 |Disabled |1 |1 |Prevented/not allowed. |![Most restricted value](../images/check-gn.png) |
 ---
 
+### Configuration options
+
+For more details about configuring the prelaunch and preload options, see [Prelaunch Microsoft Edge and preload tabs in the background](../group-policies/prelaunch-preload-gp.md).
+
 ### ADMX info and settings
 
 #### ADMX info
