@@ -2,7 +2,7 @@
 
 ##[New Microsoft Edge Group Policies and MDM settings](new-policies.md)
 
-##[Group Policy configuration options]
+##Group Policy configuration options
 ###[Home button](group-policies/home-button-gp.md)
 ###[Prelaunch Microsoft Edge and preload tabs](group-policies/prelaunch-preload-gp.md)
 ###[Start pages](group-policies/start-pages-gp.md)
