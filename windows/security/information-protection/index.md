@@ -11,7 +11,7 @@ ms.date: 02/05/2018
 
 # Information protection
 
-Learn more about how to secure documents and and other data across your organization.
+Learn more about how to secure documents and other data across your organization.
 
 | Section | Description |
 |-|-|

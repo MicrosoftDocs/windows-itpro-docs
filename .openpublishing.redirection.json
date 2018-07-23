@@ -1,6 +1,11 @@
 {
 "redirections": [
 {
+"source_path": "windows/deployment/update/waas-windows-insider-for-business.md",
+"redirect_url": "/windows-insider/at-work-pro/wip-4-biz-get-started",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/security/threat-protection/applocker/add-rules-for-packaged-apps-to-existing-applocker-rule-set.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-application-control/applocker/add-rules-for-packaged-apps-to-existing-applocker-rule-set",
 "redirect_document_id": true
@@ -8,6 +13,16 @@
 {
 "source_path": "windows/security/threat-protection/device-guard/device-guard-deployment-guide.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/security-policy-settings/microsoft-network-client-digitally-sign-communications-if-server-agrees.md",
+"redirect_url": "/windows/security/threat-protection/security-policy-settings/smbv1-microsoft-network-client-digitally-sign-communications-if-server-agrees",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-if-client-agress.md",
+"redirect_url": "/windows/security/threat-protectionsecurity-policy-settings/smbv1-microsoft-network-server-digitally-sign-communications-if-client-agrees",
 "redirect_document_id": true
 },
 {
@@ -13680,6 +13695,15 @@
 "redirect_url": "/windows/privacy/windows-diagnostic-data",
 "redirect_document_id": true
 },
-
+{
+"source_path": "windows/deployment/upgrade/windows-10-edition-downgrades.md",
+"redirect_url": "/windows/deployment/upgrade/windows-10-edition-upgrades",
+"redirect_document_id": true
+},
+{
+"source_path": "education/windows/windows-automatic-redeployment.md",
+"redirect_url": "/education/windows/autopilot-reset",
+"redirect_document_id": true
+},
 ]
 }

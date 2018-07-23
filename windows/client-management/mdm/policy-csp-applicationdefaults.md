@@ -80,7 +80,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--Example-->
-To create create the SyncML, follow these steps:
+To create the SyncML, follow these steps:
 <ol>
 <li>Install a few apps and change your defaults.</li>
 <li>From an elevated prompt, run "dism /online /export-defaultappassociations:appassoc.xml"</li>

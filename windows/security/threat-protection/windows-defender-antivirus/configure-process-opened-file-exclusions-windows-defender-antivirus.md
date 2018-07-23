@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: andreabichsel
 ms.author: v-anbic
-ms.date: 04/30/2018
+ms.date: 07/10/2018
 ---
 
 # Configure exclusions for files opened by processes
@@ -142,8 +142,7 @@ See [How to create and deploy antimalware policies: Exclusion settings](https://
 
 **Use Microsoft Intune to exclude files that have been opened by specified processes from scans:**
 
-
-See [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) and [Windows Defender policy settings in Windows 10](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune#windows-defender-1) for more details.
+See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure) and [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-windows-10#windows-defender-antivirus) for more details.
 
 
 **Use the Windows Defender Security Center app to exclude files that have been opened by specified processes from scans:**
@@ -173,7 +172,7 @@ Environment variables | The defined variable will be populated as a path when th
 <a id="review"></a>
 ## Review the list of exclusions
 
-You can retrieve the items in the exclusion list with PowerShell, [System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings), [Intune](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune), or the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions).
+You can retrieve the items in the exclusion list with PowerShell, [System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings), [Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure), or the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions).
 
 If you use PowerShell, you can retrieve the list in two ways:
 

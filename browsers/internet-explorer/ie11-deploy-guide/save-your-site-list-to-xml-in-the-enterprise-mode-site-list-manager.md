@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: You can save your current Enterprise Mode compatibility site list as an XML file, for distribution and use by your managed systems.
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: 254a986b-494f-4316-92c1-b089ee8b3e0a
 title: Save your site list to XML in the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)

@@ -38,7 +38,7 @@ Sign-in a domain controller or management workstations with *Domain Admin* equiv
 5. The **Select User, Computer, Service Account, or Group** dialog box appears. In the **Enter the object name to select** text box, type **KeyCredential Admins**.  Click **OK**.
 6. In the **Applies to** list box, select **Descendant User objects**.
 7. Using the scroll bar, scroll to the bottom of the page and click **Clear all**.
-8. In the **Properties** section, select **Read msDS-KeyCredentialLink** and **Write msDS-KeyCrendentialLink**.
+8. In the **Properties** section, select **Read msDS-KeyCredentialLink** and **Write msDS-KeyCredentialLink**.
 9. Click **OK** three times to complete the task. 
 
 

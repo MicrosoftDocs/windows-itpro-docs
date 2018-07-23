@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: eross-msft
+author: justinha
 ms.localizationpriority: medium
 ms.date: 10/31/2017
 ---
@@ -41,10 +41,7 @@ The recovery process included in this topic only works for desktop devices. WIP 
     >[!Important]
     >Because the private keys in your DRA .pfx files can be used to decrypt any WIP file, you must protect them accordingly. We highly recommend storing these files offline, keeping copies on a smart card with strong protection for normal use and master copies in a secured physical location.
 
-4. Add your EFS DRA certificate to your WIP policy using a deployment tool, such as Microsoft Intune or System Center Configuration Manager.
-
-    >[!Note]
-    >To add your EFS DRA certificate to your policy by using Microsoft Intune, see the [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) topic. To add your EFS DRA certificate to your policy by using System Center Configuration Manager, see the [Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md) topic.
+4. Add your EFS DRA certificate to your WIP policy using a deployment tool, such as [Microsoft Intune](create-wip-policy-using-intune.md) or [System Center Configuration Manager](create-wip-policy-using-sccm.md).
 
 ## Verify your data recovery certificate is correctly set up on a WIP client computer
 
@@ -52,7 +49,7 @@ The recovery process included in this topic only works for desktop devices. WIP 
 
 2. Open an app on your protected app list, and then create and save a file so that it’s encrypted by WIP.
 
-3.	Open a command prompt with elevated rights, navigate to where you stored the file you just created, and then run this command:
+3. Open a command prompt with elevated rights, navigate to where you stored the file you just created, and then run this command:
 
     <code>cipher /c <i>filename</i></code>
 

@@ -1,0 +1,1 @@
+Adobe Flash is integrated with Microsoft Edge and runs Adobe Flash content by default. With this policy, you can configure Microsoft Edge to prevent Adobe Flash content from running.
