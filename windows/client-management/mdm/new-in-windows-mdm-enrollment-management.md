@@ -1638,6 +1638,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr>
+<td style="vertical-align:top">[Defender CSP](defender-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node Health/ProductStatus.</p>
+</td></tr>
+<tr>
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
 <td style="vertical-align:top"><p>Added a new node AllowStandardUserEncryption.</p>
 </td></tr>
