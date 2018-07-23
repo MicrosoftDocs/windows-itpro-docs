@@ -1,9 +1,9 @@
 ---
 title: Microsoft Edge - Prelaunch and tab preload configuration options
-description: Microsoft Edge shows the home button and by clicking it the Start page loads by default.
+description: Microsoft Edge pre-launches as a background process during Windows startup when the system is idle waiting to be launched by the user.  Pre-launching helps the performance of Microsoft Edge and minimizes the amount of time required to start up Microsoft Edge.
 ms.author: pashort
 author: shortpatti
-ms.date: 07/20/2018
+ms.date: 07/23/2018
 ---
 
 # Prelaunch Microsoft Edge and preload tabs in the background  
