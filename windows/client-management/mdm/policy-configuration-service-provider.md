@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/03/2018
+ms.date: 07/23/2018
 ---
 
 # Policy CSP
@@ -469,6 +469,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-browser.md#browser-allowflashclicktorun" id="browser-allowflashclicktorun">Browser/AllowFlashClickToRun</a>
   </dd>
   <dd>
+    <a href="./policy-csp-browser.md#browser-allowfullscreenmode" id="browser-allowfullscreenmode">Browser/AllowFullScreenMode</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-browser.md#browser-allowinprivate" id="browser-allowinprivate">Browser/AllowInPrivate</a>
   </dd>
   <dd>
@@ -481,13 +484,31 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-browser.md#browser-allowpopups" id="browser-allowpopups">Browser/AllowPopups</a>
   </dd>
   <dd>
+    <a href="./policy-csp-browser.md#browser-allowprelaunch" id="browser-allowprelaunch">Browser/AllowPrelaunch</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-browser.md#browser-allowprinting" id="browser-allowprinting">Browser/AllowPrinting</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-browser.md#browser-allowsavinghistory" id="browser-allowsavinghistory">Browser/AllowSavingHistory</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-browser.md#browser-allowsearchenginecustomization" id="browser-allowsearchenginecustomization">Browser/AllowSearchEngineCustomization</a>
   </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-allowsearchsuggestionsinaddressbar" id="browser-allowsearchsuggestionsinaddressbar">Browser/AllowSearchSuggestionsinAddressBar</a>
   </dd>
   <dd>
+    <a href="./policy-csp-browser.md#browser-allowsideloadingofextensions" id="browser-allowsideloadingofextensions">Browser/AllowSideloadingOfExtensions</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-browser.md#browser-allowsmartscreen" id="browser-allowsmartscreen">Browser/AllowSmartScreen</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-browser.md#browser-allowtabpreloading" id="browser-allowtabpreloading">Browser/AllowTabPreloading</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-browser.md#browser-allowwebcontentonnewtabpage" id="browser-allowwebcontentonnewtabpage">Browser/AllowWebContentOnNewTabPage</a>
   </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-alwaysenablebookslibrary" id="browser-alwaysenablebookslibrary">Browser/AlwaysEnableBooksLibrary</a>
@@ -497,6 +518,24 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-configureadditionalsearchengines" id="browser-configureadditionalsearchengines">Browser/ConfigureAdditionalSearchEngines</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-browser.md#browser-configurefavoritesbar" id="browser-configurefavoritesbar">Browser/ConfigureFavoritesBar</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-browser.md#browser-configurehomebutton" id="browser-configurehomebutton">Browser/ConfigureHomeButton</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-browser.md#browser-configurekioskmode" id="browser-configurekioskmode">Browser/ConfigureKioskMode</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-browser.md#browser-configurekioskresetafteridletimeout" id="browser-configurekioskresetafteridletimeout">Browser/ConfigureKioskResetAfterIdleTimeout</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-browser.md#browser-configureopenmicrosoftedgewith" id="browser-configureopenmicrosoftedgewith">Browser/ConfigureOpenMicrosoftEdgeWith</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-browser.md#browser-configuretelemetryformicrosoft365analytics" id="browser-configuretelemetryformicrosoft365analytics">Browser/ConfigureTelemetryForMicrosoft365Analytics</a>
   </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-disablelockdownofstartpages" id="browser-disablelockdownofstartpages">Browser/DisableLockdownOfStartPages</a>
@@ -514,6 +553,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-browser.md#browser-firstrunurl" id="browser-firstrunurl">Browser/FirstRunURL</a>
   </dd>
   <dd>
+    <a href="./policy-csp-browser.md#browser-forceenabledextensions" id="browser-forceenabledextensions">Browser/ForceEnabledExtensions</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-browser.md#browser-homepages" id="browser-homepages">Browser/HomePages</a>
   </dd>
   <dd>
@@ -521,6 +563,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-preventaccesstoaboutflagsinmicrosoftedge" id="browser-preventaccesstoaboutflagsinmicrosoftedge">Browser/PreventAccessToAboutFlagsInMicrosoftEdge</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-browser.md#browser-preventcerterroroverrides" id="browser-preventcerterroroverrides">Browser/PreventCertErrorOverrides</a>
   </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-preventfirstrunpage" id="browser-preventfirstrunpage">Browser/PreventFirstRunPage</a>
@@ -547,10 +592,19 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-browser.md#browser-setdefaultsearchengine" id="browser-setdefaultsearchengine">Browser/SetDefaultSearchEngine</a>
   </dd>
   <dd>
+    <a href="./policy-csp-browser.md#browser-sethomebuttonurl" id="browser-sethomebuttonurl">Browser/SetHomeButtonURL</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-browser.md#browser-setnewtabpageurl" id="browser-setnewtabpageurl">Browser/SetNewTabPageURL</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-browser.md#browser-showmessagewhenopeningsitesininternetexplorer" id="browser-showmessagewhenopeningsitesininternetexplorer">Browser/ShowMessageWhenOpeningSitesInInternetExplorer</a>
   </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-syncfavoritesbetweenieandmicrosoftedge" id="browser-syncfavoritesbetweenieandmicrosoftedge">Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-browser.md#browser-unlockhomebutton" id="browser-unlockhomebutton">Browser/UnlockHomeButton</a>
   </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-usesharedfolderforbooks" id="browser-usesharedfolderforbooks">Browser/UseSharedFolderForBooks</a>
@@ -939,6 +993,18 @@ The following diagram shows the Policy configuration service provider in tree fo
 ### DeviceInstallation policies
 
 <dl>
+  <dd>
+    <a href="./policy-csp-deviceinstallation.md#deviceinstallation-allowinstallationofmatchingdeviceids" id="deviceinstallation-allowinstallationofmatchingdeviceids">DeviceInstallation/AllowInstallationOfMatchingDeviceIDs</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-deviceinstallation.md#deviceinstallation-allowinstallationofmatchingdevicesetupclasses" id="deviceinstallation-allowinstallationofmatchingdevicesetupclasses">DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-deviceinstallation.md#deviceinstallation-preventdevicemetadatafromnetwork" id="deviceinstallation-preventdevicemetadatafromnetwork">DeviceInstallation/PreventDeviceMetadataFromNetwork</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-deviceinstallation.md#deviceinstallation-preventinstallationofdevicesnotdescribedbyotherpolicysettings" id="deviceinstallation-preventinstallationofdevicesnotdescribedbyotherpolicysettings">DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings</a>
+  </dd>
   <dd>
     <a href="./policy-csp-deviceinstallation.md#deviceinstallation-preventinstallationofmatchingdeviceids" id="deviceinstallation-preventinstallationofmatchingdeviceids">DeviceInstallation/PreventInstallationOfMatchingDeviceIDs</a>
   </dd>
@@ -3503,6 +3569,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-disableappbrowserui" id="windowsdefendersecuritycenter-disableappbrowserui">WindowsDefenderSecurityCenter/DisableAppBrowserUI</a>
   </dd>
   <dd>
+    <a href="./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-disablecleartpmbutton" id="windowsdefendersecuritycenter-disablecleartpmbutton">WindowsDefenderSecurityCenter/DisableClearTpmButton</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-disabledevicesecurityui" id="windowsdefendersecuritycenter-disabledevicesecurityui">WindowsDefenderSecurityCenter/DisableDeviceSecurityUI</a>
   </dd>
   <dd>
@@ -3519,6 +3588,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-disablenotifications" id="windowsdefendersecuritycenter-disablenotifications">WindowsDefenderSecurityCenter/DisableNotifications</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-disabletpmfirmwareupdatewarning" id="windowsdefendersecuritycenter-disabletpmfirmwareupdatewarning">WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning</a>
   </dd>
   <dd>
     <a href="./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-disablevirusui" id="windowsdefendersecuritycenter-disablevirusui">WindowsDefenderSecurityCenter/DisableVirusUI</a>
@@ -3543,6 +3615,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-hidetpmtroubleshooting" id="windowsdefendersecuritycenter-hidetpmtroubleshooting">WindowsDefenderSecurityCenter/HideTPMTroubleshooting</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-hidewindowssecuritynotificationareacontrol" id="windowsdefendersecuritycenter-hidewindowssecuritynotificationareacontrol">WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl</a>
   </dd>
   <dd>
     <a href="./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-phone" id="windowsdefendersecuritycenter-phone">WindowsDefenderSecurityCenter/Phone</a>
@@ -3670,11 +3745,14 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials](./policy-csp-credentialsdelegation.md#credentialsdelegation-remotehostallowsdelegationofnonexportablecredentials)
 -   [CredentialsUI/DisablePasswordReveal](./policy-csp-credentialsui.md#credentialsui-disablepasswordreveal)
 -   [CredentialsUI/EnumerateAdministrators](./policy-csp-credentialsui.md#credentialsui-enumerateadministrators)
--   [DataUsage/SetCost3G](./policy-csp-datausage.md#datausage-setcost3g)
 -   [DataUsage/SetCost4G](./policy-csp-datausage.md#datausage-setcost4g)
 -   [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
 -   [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
 -   [Desktop/PreventUserRedirectionOfProfileFolders](./policy-csp-desktop.md#desktop-preventuserredirectionofprofilefolders)
+-   [DeviceInstallation/AllowInstallationOfMatchingDeviceIDs](./policy-csp-deviceinstallation.md#deviceinstallation-allowinstallationofmatchingdeviceids)
+-   [DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses](./policy-csp-deviceinstallation.md#deviceinstallation-allowinstallationofmatchingdevicesetupclasses)
+-   [DeviceInstallation/PreventDeviceMetadataFromNetwork](./policy-csp-deviceinstallation.md#deviceinstallation-preventdevicemetadatafromnetwork)
+-   [DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings](./policy-csp-deviceinstallation.md#deviceinstallation-preventinstallationofdevicesnotdescribedbyotherpolicysettings)
 -   [DeviceInstallation/PreventInstallationOfMatchingDeviceIDs](./policy-csp-deviceinstallation.md#deviceinstallation-preventinstallationofmatchingdeviceids)
 -   [DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses](./policy-csp-deviceinstallation.md#deviceinstallation-preventinstallationofmatchingdevicesetupclasses)
 -   [DeviceLock/PreventEnablingLockScreenCamera](./policy-csp-devicelock.md#devicelock-preventenablinglockscreencamera)
@@ -4075,22 +4153,37 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Browser/AllowExtensions](./policy-csp-browser.md#browser-allowextensions)
 -   [Browser/AllowFlash](./policy-csp-browser.md#browser-allowflash)
 -   [Browser/AllowFlashClickToRun](./policy-csp-browser.md#browser-allowflashclicktorun)
+-   [Browser/AllowFullScreenMode](./policy-csp-browser.md#browser-allowfullscreenmode)
 -   [Browser/AllowInPrivate](./policy-csp-browser.md#browser-allowinprivate)
 -   [Browser/AllowMicrosoftCompatibilityList](./policy-csp-browser.md#browser-allowmicrosoftcompatibilitylist)
 -   [Browser/AllowPasswordManager](./policy-csp-browser.md#browser-allowpasswordmanager)
 -   [Browser/AllowPopups](./policy-csp-browser.md#browser-allowpopups)
+-   [Browser/AllowPrelaunch](./policy-csp-browser.md#browser-allowprelaunch)
+-   [Browser/AllowPrinting](./policy-csp-browser.md#browser-allowprinting)
+-   [Browser/AllowSavingHistory](./policy-csp-browser.md#browser-allowsavinghistory)
 -   [Browser/AllowSearchEngineCustomization](./policy-csp-browser.md#browser-allowsearchenginecustomization)
 -   [Browser/AllowSearchSuggestionsinAddressBar](./policy-csp-browser.md#browser-allowsearchsuggestionsinaddressbar)
+-   [Browser/AllowSideloadingOfExtensions](./policy-csp-browser.md#browser-allowsideloadingofextensions)
 -   [Browser/AllowSmartScreen](./policy-csp-browser.md#browser-allowsmartscreen)
+-   [Browser/AllowTabPreloading](./policy-csp-browser.md#browser-allowtabpreloading)
+-   [Browser/AllowWebContentOnNewTabPage](./policy-csp-browser.md#browser-allowwebcontentonnewtabpage)
 -   [Browser/AlwaysEnableBooksLibrary](./policy-csp-browser.md#browser-alwaysenablebookslibrary)
 -   [Browser/ClearBrowsingDataOnExit](./policy-csp-browser.md#browser-clearbrowsingdataonexit)
 -   [Browser/ConfigureAdditionalSearchEngines](./policy-csp-browser.md#browser-configureadditionalsearchengines)
+-   [Browser/ConfigureFavoritesBar](./policy-csp-browser.md#browser-configurefavoritesbar)
+-   [Browser/ConfigureHomeButton](./policy-csp-browser.md#browser-configurehomebutton)
+-   [Browser/ConfigureKioskMode](./policy-csp-browser.md#browser-configurekioskmode)
+-   [Browser/ConfigureKioskResetAfterIdleTimeout](./policy-csp-browser.md#browser-configurekioskresetafteridletimeout)
+-   [Browser/ConfigureOpenMicrosoftEdgeWith](./policy-csp-browser.md#browser-configureopenmicrosoftedgewith)
+-   [Browser/ConfigureTelemetryForMicrosoft365Analytics](./policy-csp-browser.md#browser-configuretelemetryformicrosoft365analytics)
 -   [Browser/DisableLockdownOfStartPages](./policy-csp-browser.md#browser-disablelockdownofstartpages)
 -   [Browser/EnableExtendedBooksTelemetry](./policy-csp-browser.md#browser-enableextendedbookstelemetry)
 -   [Browser/EnterpriseModeSiteList](./policy-csp-browser.md#browser-enterprisemodesitelist)
+-   [Browser/ForceEnabledExtensions](./policy-csp-browser.md#browser-forceenabledextensions)
 -   [Browser/HomePages](./policy-csp-browser.md#browser-homepages)
 -   [Browser/LockdownFavorites](./policy-csp-browser.md#browser-lockdownfavorites)
 -   [Browser/PreventAccessToAboutFlagsInMicrosoftEdge](./policy-csp-browser.md#browser-preventaccesstoaboutflagsinmicrosoftedge)
+-   [Browser/PreventCertErrorOverrides](./policy-csp-browser.md#browser-preventcerterroroverrides)
 -   [Browser/PreventFirstRunPage](./policy-csp-browser.md#browser-preventfirstrunpage)
 -   [Browser/PreventLiveTileDataCollection](./policy-csp-browser.md#browser-preventlivetiledatacollection)
 -   [Browser/PreventSmartScreenPromptOverride](./policy-csp-browser.md#browser-preventsmartscreenpromptoverride)
@@ -4099,8 +4192,11 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Browser/ProvisionFavorites](./policy-csp-browser.md#browser-provisionfavorites)
 -   [Browser/SendIntranetTraffictoInternetExplorer](./policy-csp-browser.md#browser-sendintranettraffictointernetexplorer)
 -   [Browser/SetDefaultSearchEngine](./policy-csp-browser.md#browser-setdefaultsearchengine)
+-   [Browser/SetHomeButtonURL](./policy-csp-browser.md#browser-sethomebuttonurl)
+-   [Browser/SetNewTabPageURL](./policy-csp-browser.md#browser-setnewtabpageurl)
 -   [Browser/ShowMessageWhenOpeningSitesInInternetExplorer](./policy-csp-browser.md#browser-showmessagewhenopeningsitesininternetexplorer)
 -   [Browser/SyncFavoritesBetweenIEAndMicrosoftEdge](./policy-csp-browser.md#browser-syncfavoritesbetweenieandmicrosoftedge)
+-   [Browser/UnlockHomeButton](./policy-csp-browser.md#browser-unlockhomebutton)
 -   [Browser/UseSharedFolderForBooks](./policy-csp-browser.md#browser-usesharedfolderforbooks)
 -   [Camera/AllowCamera](./policy-csp-camera.md#camera-allowcamera)
 -   [Cellular/LetAppsAccessCellularData](./policy-csp-cellular.md#cellular-letappsaccesscellulardata)
@@ -4122,7 +4218,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [CredentialsUI/DisablePasswordReveal](./policy-csp-credentialsui.md#credentialsui-disablepasswordreveal)
 -   [CredentialsUI/EnumerateAdministrators](./policy-csp-credentialsui.md#credentialsui-enumerateadministrators)
 -   [Cryptography/AllowFipsAlgorithmPolicy](./policy-csp-cryptography.md#cryptography-allowfipsalgorithmpolicy)
--   [DataUsage/SetCost3G](./policy-csp-datausage.md#datausage-setcost3g)
 -   [DataUsage/SetCost4G](./policy-csp-datausage.md#datausage-setcost4g)
 -   [Defender/AllowArchiveScanning](./policy-csp-defender.md#defender-allowarchivescanning)
 -   [Defender/AllowBehaviorMonitoring](./policy-csp-defender.md#defender-allowbehaviormonitoring)
@@ -4189,6 +4284,10 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeviceGuard/EnableVirtualizationBasedSecurity](./policy-csp-deviceguard.md#deviceguard-enablevirtualizationbasedsecurity)
 -   [DeviceGuard/LsaCfgFlags](./policy-csp-deviceguard.md#deviceguard-lsacfgflags)
 -   [DeviceGuard/RequirePlatformSecurityFeatures](./policy-csp-deviceguard.md#deviceguard-requireplatformsecurityfeatures)
+-   [DeviceInstallation/AllowInstallationOfMatchingDeviceIDs](./policy-csp-deviceinstallation.md#deviceinstallation-allowinstallationofmatchingdeviceids)
+-   [DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses](./policy-csp-deviceinstallation.md#deviceinstallation-allowinstallationofmatchingdevicesetupclasses)
+-   [DeviceInstallation/PreventDeviceMetadataFromNetwork](./policy-csp-deviceinstallation.md#deviceinstallation-preventdevicemetadatafromnetwork)
+-   [DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings](./policy-csp-deviceinstallation.md#deviceinstallation-preventinstallationofdevicesnotdescribedbyotherpolicysettings)
 -   [DeviceInstallation/PreventInstallationOfMatchingDeviceIDs](./policy-csp-deviceinstallation.md#deviceinstallation-preventinstallationofmatchingdeviceids)
 -   [DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses](./policy-csp-deviceinstallation.md#deviceinstallation-preventinstallationofmatchingdevicesetupclasses)
 -   [DeviceLock/MinimumPasswordAge](./policy-csp-devicelock.md#devicelock-minimumpasswordage)
@@ -4810,12 +4909,14 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [WindowsDefenderSecurityCenter/CompanyName](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-companyname)
 -   [WindowsDefenderSecurityCenter/DisableAccountProtectionUI](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-disableaccountprotectionui)
 -   [WindowsDefenderSecurityCenter/DisableAppBrowserUI](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-disableappbrowserui)
+-   [WindowsDefenderSecurityCenter/DisableClearTpmButton](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-disablecleartpmbutton)
 -   [WindowsDefenderSecurityCenter/DisableDeviceSecurityUI](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-disabledevicesecurityui)
 -   [WindowsDefenderSecurityCenter/DisableEnhancedNotifications](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-disableenhancednotifications)
 -   [WindowsDefenderSecurityCenter/DisableFamilyUI](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-disablefamilyui)
 -   [WindowsDefenderSecurityCenter/DisableHealthUI](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-disablehealthui)
 -   [WindowsDefenderSecurityCenter/DisableNetworkUI](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-disablenetworkui)
 -   [WindowsDefenderSecurityCenter/DisableNotifications](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-disablenotifications)
+-   [WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-disabletpmfirmwareupdatewarning)
 -   [WindowsDefenderSecurityCenter/DisableVirusUI](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-disablevirusui)
 -   [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-disallowexploitprotectionoverride)
 -   [WindowsDefenderSecurityCenter/Email](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-email)
@@ -4824,6 +4925,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [WindowsDefenderSecurityCenter/HideRansomwareDataRecovery](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-hideransomwaredatarecovery)
 -   [WindowsDefenderSecurityCenter/HideSecureBoot](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-hidesecureboot)
 -   [WindowsDefenderSecurityCenter/HideTPMTroubleshooting](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-hidetpmtroubleshooting)
+-   [WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-hidewindowssecuritynotificationareacontrol)
 -   [WindowsDefenderSecurityCenter/Phone](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-phone)
 -   [WindowsDefenderSecurityCenter/URL](./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-url)
 -   [WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace](./policy-csp-windowsinkworkspace.md#windowsinkworkspace-allowsuggestedappsinwindowsinkworkspace)
