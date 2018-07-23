@@ -22,9 +22,9 @@ We are discontinuing the use of the **Configure Favorites** group policy. Use th
 
 
 
->*You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:*
+>You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:
 > 
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\*
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**_Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\_**
 <p>
 <!-- add links to the below policies -->
 
@@ -40,7 +40,7 @@ We are discontinuing the use of the **Configure Favorites** group policy. Use th
 | [Allow web content on new tab page](available-policies.md#allow-web-content-on-new-tab-page) | -- | [AllowWebContentOnNewTabPage](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowwebcontentonnewtabpage) | New |
 | [Configure collection of browsing data for Microsoft 365 Analytics](#configure-collection-of-browsing-data-for-microsoft-365-analytics) | New | ConfigureTelemetryForMicrosoft365Analytics | New |
 | [Configure Favorites Bar](#configure-favorites-bar) | New | ConfigureFavoritesBar | New |
-| [Configure Home Button](#configure-home-button) | New | ConfigureHomeButton | New |
+| [Configure Home button](#configure-home-button) | New | ConfigureHomeButton | New |
 | [Configure kiosk mode](#configure-kiosk-mode) | New |  ConfigureKioskMode | New |
 | [Configure kiosk reset after idle timeout](#configure-kiosk-reset-after-idle-timeout) | New |  ConfigureKioskResetAfterIdleTimeout | New |
 | [Configure Open Microsoft Edge With](#configure-open-microsoft-edge-with) | New | ConfigureOpenMicrosoftEdgeWith | New |
@@ -82,7 +82,7 @@ We are discontinuing the use of the **Configure Favorites** group policy. Use th
 ## Configure Favorites Bar
 [!INCLUDE [configure-favorites-bar-include.md](includes/configure-favorites-bar-include.md)]
 
-## Configure Home Button
+## Configure Home button
 [!INCLUDE [configure-home-button-include.md](includes/configure-home-button-include.md)]
 
 ## Configure kiosk mode
