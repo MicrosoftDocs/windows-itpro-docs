@@ -3,7 +3,7 @@ title: Microsoft Edge - Home button configuration options
 description: Microsoft Edge shows the home button and by clicking it the Start page loads by default.
 ms.author: pashort
 author: shortpatti
-ms.date: 07/20/2018
+ms.date: 07/23/2018
 ---
 
 # Home button configuration options
