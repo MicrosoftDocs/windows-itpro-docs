@@ -9,10 +9,12 @@
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
 |Not configured |Blank |Blank |Load the pages specified in App settings as the default Start pages. | 
-|Enabled |String |String |Enter the URLs of the pages you want to load as the Start pages, separating each page using angle brackets:<p>\<support.contoso.com\>\<support.microsoft.com\><p>**Version 1703 or later:**<br>If you do not want to send traffic to Microsoft, use the \<about:blank\> value, which honors both domain and non-domain-joined devices when it's the only configured URL.<p>**Version 1810:**<br>When you enable the Configure Open Microsoft Edge With policy with any option selected, and you enable the Configure Start Pages policy, the Configure Open Microsoft Edge With policy takes precedence, ignoring the Configure Start Pages policy.  | 
+|Enabled |String |String |Enter the URLs of the pages you want to load as the Start pages, separating each page using angle brackets:<p><p>&nbsp;&nbsp;&nbsp;&nbsp;\<support.contoso.com\>\<support.microsoft.com\><p>**Version 1703 or later:**<br>If you do not want to send traffic to Microsoft, use the \<about:blank\> value, which honors both domain and non-domain-joined devices when it's the only configured URL.<p>**Version 1810:**<br>When you enable the Configure Open Microsoft Edge With policy with any option selected, and you enable the Configure Start Pages policy, the Configure Open Microsoft Edge With policy takes precedence, ignoring the Configure Start Pages policy.  | 
 ---
 
+### Configuration options
 
+For more details about configuring the Start pages, see [Start pages](../group-policies/start-pages-gp.md).
 
 ### ADMX info and settings
 #### ADMX info

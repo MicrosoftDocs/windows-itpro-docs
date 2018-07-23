@@ -14,26 +14,9 @@
 
 ### Configuration options
 
-#### Sync the browser settings automatically:
-**Disable** both the Do not sync browser settings Prevent users from turning on browser syncing policies.
+For more details about configuring the browser syncing options, see [Sync browser settings](../group-policies/sync-browser-settings-gp.md).
 
-#### Prevent syncing of browser settings and prevent users from turning it on:
-1. **Enable** the Do not sync browser settings policy.
-2. **Enable** or don’t configure this policy (Prevented/turned off).
 
-#### Prevent syncing of browser settings and give users a choice to turn on syncing:
-1. **Enable** the Do not sync browser settings policy.
-2. **Disable** this policy (Allowed/turned on).
-
-#### Syncing turned off by default but not disabled:
-1. **Enable** the Do not sync browser setting policy.
-2. Select the _Allow users to turn “browser” syncing_ option.
-
-#### Verify configuration
-To verify if syncing is turned on or off:
-1. In the upper-right corner of Microsoft Edge, click the ellipses \(**...**\).
-2. Click **Settings**.
-3. Under Account, see if the setting is toggled on or off.<p>![Verify configuration](../images/sync-settings.PNG)
 
 
 ### ADMX info and settings
