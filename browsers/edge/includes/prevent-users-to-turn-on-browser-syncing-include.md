@@ -13,14 +13,9 @@
 ---
 
 ### Configuration options
-<!-- put the grids in a document that categorizes the policies  -->
-| **Do not sync browser settings** | **Prevent users from turning on browser syncing** | **Result** |
-| --- | --- | --- |
-| Disabled or not configured (0 default) – Turned on. Let users make changes | Disabled (0 default) | Sync browser settings automatically. |
-| Disabled or not configured (0 default) – Turned on. Let users make changes | Enabled or not configured (1) | Sync browser settings automatically. |
-| Enabled (2) – Prevented/turned off  | Disabled (0 default) | Prevent syncing of browser settings and let users choose to turn it on. |
-| Enabled (2) – Turned off | Enabled or not configured (1) | Prevent syncing of browser settings and prevents users from turning on syncing. |
----
+
+For more details about configuring the browser syncing options, see [Sync browser settings](../group-policies/sync-browser-settings-gp.md).
+
 
 ### ADMX info and settings
 #### ADMX info

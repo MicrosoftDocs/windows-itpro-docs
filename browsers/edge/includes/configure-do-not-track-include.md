@@ -8,9 +8,9 @@
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Not configured |Blank |Blank |Do not send tracking information but let users choose to send tracking information to sites they visit. | |
+|Not configured<br>**(default)** |Blank |Blank |Do not send tracking information but let users choose to send tracking information to sites they visit. | |
 |Disabled |1 |1 |Never send tracking information. | |
-|Enabled<br>**(default)** |1 |1 |Send tracking information. |![Most restricted value](../images/check-gn.png) |
+|Enabled |1 |1 |Send tracking information. |![Most restricted value](../images/check-gn.png) |
 ---
 
 ### ADMX info and settings
