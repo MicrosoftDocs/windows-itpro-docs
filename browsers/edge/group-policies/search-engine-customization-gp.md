@@ -25,13 +25,4 @@ By default, Microsoft Edge uses the default search engine specified in App setti
 ![Set default search engine configurations](../images/set-default-search-engine-v4-sm.png)
 
 
-| **Set default search engine** | **Allow search engine customization** | **Configure additional search engines** | **Outcome** |
-| --- | --- | --- | --- |
-| Not configured (default) | Disabled | Disabled or not configured (default) | Use search engine specified in App settings. Users cannot make changes. |
-| Not configured (default) | Enabled or not configured (default) | Disabled or not configured (default) | Use search engine specified in App settings. Users can make changes to the default search engine at any time. |
-| Disabled | Disabled | Disabled or not configured (default) | Use the policy-set search engine specified in OpenSearch XML and prevent users from making changes to any of the search engines, but they can set a default search engine. |
-| Disabled | Enabled or not configured (default) | Disabled or not configured (default) | Use the policy-set search engine specified in OpenSearch XML and let users make changes in Settings. |
-| Enabled | Disabled | Disabled or not configured (default) | Set the default search engine preventing users from making changes. |
-| Enabled | Enabled or not configured (default) | Disabled or not configured (default) | Set the default search engine and allow users to add search engines or make changes. |
----
 
