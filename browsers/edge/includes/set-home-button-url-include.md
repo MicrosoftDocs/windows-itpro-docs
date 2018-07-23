@@ -12,20 +12,10 @@
 |Enabled - String |String |String |Load a custom URL for the home button. You must also enable the [Configure Home button](../new-policies.md#configure-home-button) policy and select the _Show home button & set a specific page_ option.<p>Enter a URL in string format, for example, https://www.msn.com.   |
 ---
 
+
 ### Configuration options
 
-#### Show the home button, load a custom URL, and let users make changes:
-1. **Configure Home button:** Enable and select the _Show the home button & set a specific page_ option.
-2. **Set Home button URL:** Enter a URL in string format, for example, https://www.bing.com. 
-3. **Unlock Home Button:** Enable to let users make changes.
-
-#### Show the home button, load a custom URL, and prevent users from making changes:
-1. **Configure Home button:** Enable and select the _Show the home button & set a specific page_ option.
-2. **Set Home button URL:** Enter a URL in string format, for example, https://www.bing.com.
-3. **Unlock Home Button:** Leave disabled or not configured.
-
-#### Hide the home button:
-Enable the **Configure Home button** policy and select the _Hide home button_ option.
+For more details about configuring the different Home button options, see [Home button](../group-policies/home-button-gp.md).
 
 
 ### ADMX info and settings

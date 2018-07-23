@@ -16,11 +16,9 @@
 |Enabled |3 |3 |Hide home button. |
 ---
 
-
-
 ### Configuration options
 
-For more details about configuring the different Home Button options, see [Home Button](../group-policies/home-button-gp.md).
+For more details about configuring the different Home button options, see [Home button](../group-policies/home-button-gp.md).
 
 >[!TIP]
 >If you want to make changes to this policy:<ol><li>Enable the **Unlock Home Button** policy.</li><li>Make changes to the **Configure Home button** policy or **Set Home button URL** policy.</li><li>Disable the **Unlock Home Button** policy.</li></ol>

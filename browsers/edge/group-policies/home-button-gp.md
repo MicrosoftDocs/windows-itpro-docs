@@ -23,3 +23,4 @@ Microsoft Edge shows the home button and by clicking it the Start page loads by 
 ![Show home button and load custom URL](../images/home-buttom-custom-url-v4-sm.png)
 
 ![Hide home button](../images/home-button-hide-v4-sm.png)
+

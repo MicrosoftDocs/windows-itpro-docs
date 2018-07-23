@@ -12,6 +12,11 @@
 |Enabled |1 |1 |Unlocked. Users can make changes to all configured start pages.<p><p>When you enable this policy and define a set of URLs in the Configure Start Pages policy, Microsoft Edge uses the URLs defined in the Configure Open Microsoft Edge With policy. | |
 ---
 
+### Configuration options
+
+For more details about configuring the Start pages, see [Start pages](../group-policies/start-pages-gp.md).
+
+
 ### ADMX info and settings
 #### ADMX info
 - **GP English name:** Disable lockdown of Start pages
