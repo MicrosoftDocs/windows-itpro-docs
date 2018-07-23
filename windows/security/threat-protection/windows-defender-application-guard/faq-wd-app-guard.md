@@ -5,8 +5,8 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-author: eross-msft
-ms.author: lizross
+author: justinha
+ms.author: justinha
 ms.date: 11/07/2017
 ---
 
@@ -63,4 +63,10 @@ Answering frequently asked questions about Windows Defender Application Guard (A
 |---|----------------------------|
 |**Q:** |I enabled the hardware acceleration policy on my Windows 10 Enterprise, version 1803 deployment. Why are my users still only getting CPU rendering?|
 |**A:** |This feature is currently experimental-only and is not functional without an additional regkey provided by Microsoft. If you would like to evaluate this feature on a deployment of Windows 10 Enterprise, version 1803, please contact Microsoft and we’ll work with you to enable the feature.|
+<br>
+
+| | |
+|---|----------------------------|
+|**Q:** |What is the WDAGUtilityAccount local account?|
+|**A:** |This account is part of Application Guard beginning with Windows 10 version 1709 (Fall Creators Update). This account remains disabled until Application Guard is enabled on your device. This item is integrated to the OS and is not considered as a threat/virus/malware.|
 <br>

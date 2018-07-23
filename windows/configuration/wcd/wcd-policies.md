@@ -302,7 +302,7 @@ These settings apply to the **Kiosk Browser** app available in Microsoft Store. 
 
 | Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: | :---: |
-| [EnableLocation](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#location-enablelocation) | Configure whether the the Location Service's Device Switch is enabled or disabled for the device. | X | X |  |  |  |
+| [EnableLocation](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#location-enablelocation) | Configure whether the Location Service's Device Switch is enabled or disabled for the device. | X | X |  |  |  |
 
 
 ## Privacy

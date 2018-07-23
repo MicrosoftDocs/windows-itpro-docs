@@ -17,6 +17,8 @@ ms.date: 06/27/2018
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
+
+
 ## June 2018
 
 New or changed topic | Description

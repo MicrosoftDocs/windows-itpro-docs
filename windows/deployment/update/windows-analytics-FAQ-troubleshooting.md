@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
-ms.date: 05/02/2018
-ms.localizationpriority: medium
+ms.date: 07/20/2018
+ms.localizationpriority: high
 ---
 
 # Frequently asked questions and troubleshooting Windows Analytics
@@ -20,10 +20,13 @@ This topic compiles the most common issues encountered with configuring and usin
 
 If you've followed the steps in the [Enrolling devices in Windows Analytics](windows-analytics-get-started.md) topic and are still encountering problems, you might find the solution here.
 
-[Devices not showing up](#devices-not-showing-up)
+[Devices not appearing in Upgrade Readiness](#devices-not-appearing-in-upgrade-readiness)
 
-[Device Health crash data not appearing](#device-health-crash-data-not-appearing)
+[Devices not appearing in Device Health Device Reliability](#devices-not-appearing-in-device-health-device-reliability)
 
+[Device crashes not appearing in Device Health Device Reliability](#device-crashes-not-appearing-in-device-health-device-reliability)
+
+[Apps not appearing in Device Health App Reliability](#apps-not-appearing-in-device-health-app-reliability)
 
 [Upgrade Readiness shows many "Computers with outdated KB"](#upgrade-readiness-shows-many-computers-with-outdated-kb)
 
@@ -36,11 +39,12 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 [Exporting large data sets](#exporting-large-data-sets)
 
 
-### Devices not showing up
+### Devices not appearing in Upgrade Readiness
 
 In Log Analytics, go to **Settings > Connected sources > Windows telemetry** and verify that you are subscribed to the Windows Analytics solutions you intend to use.
 
 Even though devices can take 2-3 days after enrollment to show up due to latency in the system, you can now verify the status of your devices with a few hours of running the deployment script as described in [You can now check on the status of your computers within hours of running the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/05/12/wheres-my-data/) on the Windows Analytics blog.
+
 >[!NOTE]
 > If you generate the status report and get an error message saying "Sorry! We’re not recognizing your Commercial Id," go to **Settings > Connected sources > Windows telemetry** and unsubscribe, wait a minute and then re-subscribe to Upgrade Readiness.
  
@@ -57,77 +61,96 @@ If you want to check a large number of devices, you should run the latest script
 
 If you think the issue might be related to a network proxy, check "Enable data sharing" section of the [Enrolling devices in Windows Analytics](windows-analytics-get-started.md) topic. Also see [Understanding connectivity scenarios and the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog.
 
-If you have deployed images that have not been generalized, then many of them might have the same ID and so analytics will see them as one device. If you suspect this is the issue, then you can reset the IDs on the non-generalized devices by performing these steps:
+If you have deployed images that have not been generalized, then many of them might have the same ID and so Windows Analytics will see them as one device. If you suspect this is the issue, then you can reset the IDs on the non-generalized devices by performing these steps:
 1. Net stop diagtrack
 2. Reg delete hklm\software\microsoft\sqmclient /v MachineId /f
 3. Net start diagtrack
 
+#### Devices not appearing in Device Health Device Reliability
 
-### Device Health crash data not appearing
+[![Device Reliability tile showing device count highlighted](images/device-reliability-device-count.png)](images/device-reliability-device-count.png)
 
-#### Is WER disabled?
-If Windows Error Reporting (WER) is disabled or redirected on your Windows devices, then reliability information cannot be shown in Device Health.
+If you have devices that appear in other solutions, but not Device Health, follow these steps to investigate the issue:
+1. Confirm that the devices are running Windows10.
+2. Verify that the Commercial ID is present in the device's registry. For details see [https://gpsearch.azurewebsites.net/#13551](https://gpsearch.azurewebsites.net/#13551).
+3. Confirm that devices have opted in to provide diagnostic data by checking in the registry that **AllowTelemetry** is set to 2 (Enhanced) or 3 (Full) in **HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection** (or **HKLM\Software\Policies\Microsoft\Windows\DataCollection**, which takes precedence if set).
+4. Verify that devices can reach the endpoints specified in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md). Also check settings for SSL inspection and proxy authentication; see [Configuring endpoint access with SSL inspection](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started#configuring-endpoint-access-with-ssl-inspection) for more information.
+5. Wait 48 hours for activity to appear in the reports.
+6. If you need additional troubleshooting, contact Microsoft Support.
 
-Check these registry settings in **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Windows Error Reporting**:
 
-- Verify that the value "Disabled" (REG_DWORD), if set, is 0.
-- Verify that the value "DontSendAdditionalData" (REG_DWORD), if set, is 0.
-- Verify that the value "CorporateWERServer" (REG_SZ) is not configured.
+### Device crashes not appearing in Device Health Device Reliability
 
-If you need further information on Windows Error Reporting (WER) settings, see WER Settings. 
+[![Device Reliability tile showing crash count highlighted](images/device-reliability-crash-count.png)](images/device-reliability-crash-count.png)
+
+If you know that devices are experiencing stop error crashes that do not seem to be reflected in the count of devices with crashes, follow these steps to investigate the issue:
+
+1. Verify that devices are reporting data properly by following the steps in the [Devices not appearing in Device Health Device Reliability](#devices-not-appearing-in-device-health-device-reliability) section of this topic.
+2. Trigger a known crash on a test device by using a tool such as [NotMyFault](https://docs.microsoft.com/sysinternals/downloads/notmyfault) from Windows Sysinternals.
+3. Verify that Windows Error Reporting (WER) is not disabled or redirected by confirming the registry settings in **HKLM\SOFTWARE\Microsoft\Windows\Windows Error Reporting** (or **HKLM\Software\Policies\Microsoft\Windows\DataCollection**, which will take precedence if set):
+
+    - Verify that the value "Disabled" (REG_DWORD), if set, is 0.
+    - Verify that the value "DontSendAdditionalData" (REG_DWORD), if set, is 0.
+    - Verify that the value "CorporateWERServer" (REG_SZ) is not configured.
+
+4. Verify that WER can reach all diagnostic endpoints specified in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md)--if WER can only reach some of the endpoints, it could be included in the device count while not reporting crashes.
+5. Check that crash reports successfully complete the round trip with Event 1001 and that BucketID is not blank. A typical such event looks like this:
+
+   [![Event viewer detail showing Event 1001 details](images/event_1001.png)](images/event_1001.png)
+ 
+   You can use the following Windows PowerShell snippet to summarize recent occurences of Event 1001. Most events should have a value for BucketID (a few intermittent blank values are OK, however).
+
+   ```powershell
+   $limitToMostRecentNEvents = 20
+   Get-WinEvent -FilterHashTable @{ProviderName="Windows Error Reporting"; ID=1001} | 
+     ?{ $_.Properties[2].Value -match "crash|blue" } |
+     % { [pscustomobject]@{ 
+       TimeCreated=$_.TimeCreated
+       WEREvent=$_.Properties[2].Value
+       BucketId=$_.Properties[0].Value
+       ContextHint = $(
+          if($_.Properties[2].Value -eq "bluescreen"){"kernel"}
+          else{ $_.Properties[5].Value }
+       )
+     }} | Select-Object -First $limitToMostRecentNEvents
+   ```
+   The output should look something like this:
+   [![Typical output for this snippet](images/device-reliability-event1001-PSoutput.png)](images/device-reliability-event1001-PSoutput.png)
+
+6. Check that some other installed device, app, or crash monitoring solution is not intercepting crash events.
+7. Wait 48 hours for activity to appear in the reports.
+8. If you need additional troubleshooting, contact Microsoft Support.
 
 #### Endpoint connectivity
 
 Devices must be able to reach the endpoints specified in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md).
 
-If you are using proxy server authentication, it is worth taking extra care to check the configuration. Prior to Windows 10, version 1703, WER uploads error reports in the machine context. Both user (typically authenticated) and machine (typically anonymous) contexts require access through proxy servers to the diagnostic endpoints. In Windows 10, version 1703, and later WER will attempt to use the context of the user that is logged on for proxy authentication such that only the user account requires proxy access.
- 
-Therefore, it's important to ensure that both machine and user accounts have access to the endpoints using authentication (or to whitelist the endpoints so that outbound proxy authentication is not required). For suggested methods, see [Enrolling devices in Windows Analytics](windows-analytics-get-started.md#configuring-endpoint-access-with-proxy-server-authentication).
- 
-To test access as a given user, you can run this Windows PowerShell cmdlet *while logged on as that user*: 
+If you are using proxy server authentication, it's worth taking extra care to check the configuration. Prior to Windows 10, version 1703, WER only uploads error reports in the machine context, so whitelisting endpoints to allow non-authenticated access was typically used. In Windows 10, version 1703 and later versions, WER will attempt to use the context of the user that is logged on for proxy authentication such that only the user account requires proxy access.
 
-```powershell
 
-$endPoints = @(
-        'watson.telemetry.microsoft.com'
-        'oca.telemetry.microsoft.com'
-        'v10.events.data.microsoft.com'
-    )
+For more information, see [Enrolling devices in Windows Analytics](windows-analytics-get-started.md#configuring-endpoint-access-with-proxy-server-authentication).
 
-$endPoints | %{ Test-NetConnection -ComputerName $_ -Port 443 -ErrorAction Continue } | Select-Object -Property ComputerName,TcpTestSucceeded
+### Apps not appearing in Device Health App Reliability
 
-```
+[![App Reliability tile showing relability events trend](images/app-reliability.png)](images/app-reliability.png)
 
-If this is successful, `TcpTestSucceeded` should return `True` for each of the endpoints.
+If apps that you know are crashing do not appear in App Reliability, follow these steps to investigate the issue:
 
-To test access in the machine context (requires administrative rights), run the above as SYSTEM using PSexec or Task Scheduler, as in this example:
+1. Double-check the steps in the [Devices not appearing in Device Health Device Reliability](#devices-not-appearing-in-device-health-device-reliability) and [Device crashes not appearing in Device Health Device Reliability](#device-crashes-not-appearing-in-device-health-device-reliability) sections of this topic.
+2. Confirm that an in-scope application has crashed on an enrolled device. Keep the following points in mind:
+    - Not all user-mode crashes are included in App Reliability, which tracks only apps that have a GUI, have been used interactively by a user, and are not part of the operating system.
+    - Enrolling more devices helps to ensure that there are enough naturally occurring app crashes.
+    - You can also use test apps which are designed to crash on demand.
 
-```powershell
+3. Verify that *per-user* Windows Error Reporting (WER) is not disabled or redirected by confirming the registry settings in **HKCU\SOFTWARE\Microsoft\Windows\Windows Error Reporting** (or **HKCU\Software\Policies\Microsoft\Windows\DataCollection**, which will take precedence if set):
 
-[scriptblock]$accessTest = {
-    $endPoints = @(
-        'watson.telemetry.microsoft.com'
-        'oca.telemetry.microsoft.com'
-        'v10.events.data.microsoft.com'
-    )
+    - Verify that the value "Disabled" (REG_DWORD), if set, is 0.
+    - Verify that the value "DontSendAdditionalData" (REG_DWORD), if set, is 0.
+    - Verify that the value "CorporateWERServer" (REG_SZ) is not configured.
+4. Check that some other installed device, app, or crash monitoring solution is not intercepting crash events.
+5. Wait 48 hours for activity to appear in the reports.
+6. If you need additional troubleshooting, contact Microsoft Support.
 
-    $endPoints | %{ Test-NetConnection -ComputerName $_ -Port 443 -ErrorAction Continue } | Select-Object -Property ComputerName,TcpTestSucceeded
-}
-
-$scriptFullPath = Join-Path $env:ProgramData "TestAccessToMicrosoftEndpoints.ps1"
-$outputFileFullPath = Join-Path $env:ProgramData "TestAccessToMicrosoftEndpoints_Output.txt"
-$accessTest.ToString() > $scriptFullPath
-$null > $outputFileFullPath
-$taskAction = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument "-ExecutionPolicy Bypass -Command `"&{$scriptFullPath > $outputFileFullPath}`"" 
-$taskTrigger = New-ScheduledTaskTrigger -Once -At (Get-Date).Addseconds(10)
-$task = Register-ScheduledTask -User 'NT AUTHORITY\SYSTEM' -TaskName 'MicrosoftTelemetryAccessTest' -Trigger $taskTrigger -Action $taskAction -Force
-Start-Sleep -Seconds 120
-Unregister-ScheduledTask -TaskName $task.TaskName -Confirm:$false
-Get-Content $outputFileFullPath
-
-```
-
-As in the other example, if this is successful, `TcpTestSucceeded` should return `True` for each of the endpoints.
 
 ### Upgrade Readiness shows many "Computers with outdated KB"
 If you see a large number of devices reported as shown in this screenshot of the Upgrade Readiness tile:
@@ -162,12 +185,15 @@ Double-check that IE site discovery opt-in has been configured in the deployment
 Also, on Windows 10 devices remember that IE site discovery requires data diagnostics set to the Enhanced level.
 Finally, Upgrade Readiness only collects IE site discovery data on devices that are not yet upgraded to the target operating system version specified in the Upgrade Readiness Overview blade. This is because Upgrade Readiness targets upgrade planning (for devices not yet upgraded).
 
+>[!NOTE]
+> IE site discovery is disabled on devices running Windows 7 and Windows 8.1 that are in Switzerland and EU countries.
+
 ### Device Names don't show up on Windows 10 devices
 Starting with Windows 10, version 1803, the device name is no longer collected by default and requires a separate opt-in. For more information, see [Enrolling devices in Windows Analytics](windows-analytics-get-started.md).
 
 ### Disable Upgrade Readiness
 
-If you want to stop using Upgrade Readiness and stop sending diagnostic data data to Microsoft, follow these steps:
+If you want to stop using Upgrade Readiness and stop sending diagnostic data to Microsoft, follow these steps:
 
 1.  Unsubscribe from the Upgrade Readiness solution in the OMS portal. In the OMS portal, go to **Settings** > **Connected Sources** > **Windows Telemetry** and choose the **Unsubscribe** option.
 
@@ -225,3 +251,6 @@ System Center Configuration Manager (SCCM) considers a device ready to upgrade i
 Currently, you can choose the criteria you wish to use:
 - To use the SCCM criteria, create the collection of devices ready to upgrade within the SCCM console (using the analytics connector).
 - To use the Upgrade Readiness criteria, export the list of ready-to-upgrade devices from the corresponding Upgrade Readiness report, and then build the SCCM collection from that spreadsheet.
+
+### How does Upgrade Readiness collect the inventory of devices and applications?
+For details about this process and some tips, see [How does Upgrade Readiness in WA collects application inventory for your OMS workspace?](https://techcommunity.microsoft.com/t5/Windows-Analytics-Blog/How-does-Upgrade-Readiness-in-WA-collects-application-inventory/ba-p/213586) on the Windows Analytics blog.
