@@ -1,6 +1,6 @@
 <!-- ## Prevent Microsoft Edge from gathering Live Tile information when pinning a site to Start -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*<br>
->*Default setting:  Disabled or not configured (Collected and sent)*
+>*Default setting:  Disabled or not configured (Collect and send)*
 
 [!INCLUDE [prevent-edge-from-gathering-live-tile-info-shortdesc](../shortdesc/prevent-edge-from-gathering-live-tile-info-shortdesc.md)]
 
@@ -9,7 +9,7 @@
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Disabled or not configured<br>**(default)** |0 |0 |Collect and send Live Tile metadata. | |
-|Enabled |1 |1 |Not collected and sent. |![Most restricted value](../images/check-gn.png) |
+|Enabled |1 |1 |Do not collect. |![Most restricted value](../images/check-gn.png) |
 ---
 
 ### ADMX info and settings
@@ -26,8 +26,8 @@
 - **Data type:** Integer
 
 #### Registry settings
-**<ul><li>**Path:** HKLM\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main
-**Value name:** PreventLiveTileDataCollection
-**Value type:** REG_DWORD
+- **Path:** HKLM\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main
+- **Value name:** PreventLiveTileDataCollection
+- **Value type:** REG_DWORD
 
 <hr>

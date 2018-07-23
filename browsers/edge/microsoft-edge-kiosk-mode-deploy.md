@@ -128,6 +128,8 @@ With this method, you can use a provisioning package to configure Microsoft Edge
 
 **_Next steps._** Use your new kiosk. Sign in to the device using the user account that you selected to run the kiosk app.
 
+---
+
 ## Relevant policies
 
 Use any of the Microsoft Edge policies listed below to enhance the kiosk experience depending on the Microsoft Edge kiosk mode type you configure. To learn more about these policies, see [Policy CSP - Browser](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser).
@@ -202,6 +204,7 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Not supported](images/148766.png) = Not applicable or not supported <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Supported](images/148767.png) = Supported
 
+---
 
 ## Related topics
 
@@ -223,6 +226,8 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
 
 -   **[Create a provisioning page for Windows 10](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package):** Learn to use Windows Configuration Designer (WCD) to create a provisioning package (.ppkg) for configuring devices running Windows 10. The WCD wizard options provide a simple interface to configure desktop, mobile, and kiosk device settings.
 
+---
+
 ## Known issues with RS_PRERELEASE build 17713+
 
 - When you set up Microsoft Edge kiosk mode on a single-app kiosk device you must set the “ConfigureKioskMode” policy because the default behavior is not honored. 
@@ -241,12 +246,15 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
     - **Expected behavior** – Books are disabled in _Settings and more_ menu. 
     - **Actual behavior** – Books are accessible in _Settings and more_ menu.
 
+---
 
 ## Provide feedback or get support
 
 To provide feedback on Microsoft Edge kiosk mode in Feedback Hub, select **Microsoft Edge** as the  **Category**, and **All other issues** as the subcategory. 
 
 **_For multi-app kiosk only._** If you have set up the Feedback Hub in assigned access, you can you submit the feedback from the device running Microsoft Edge in kiosk mode in which you can include diagnostic logs. In the Feedback Hub, select **Microsoft Edge** as the **Category**, and **All other issues** as the subcategory.
+
+---
 
 ## Feature comparison of kiosk mode and kiosk browser app
 In the following table, we show you the features available in both Microsoft Edge kiosk mode and Kiosk Browser app available in Microsoft Store. Both kiosk mode and kiosk browser app work in assigned access.

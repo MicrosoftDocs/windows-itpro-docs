@@ -28,7 +28,7 @@
 
 
 #### MDM settings
-- **MDM name:** Browser/[ConfigureTelemetryForMicrosoft365Analytics](../new-policies.md#configure-collection-of-browsing-data-for-microsoft-365-analytics)
+- **MDM name:** Browser/[ConfigureTelemetryForMicrosoft365Analytics](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configuretelemetryformicrosoft365analytics)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureTelemetryForMicrosoft365Analytics
 - **Data type:** Integer

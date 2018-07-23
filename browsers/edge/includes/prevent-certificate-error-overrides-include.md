@@ -18,13 +18,13 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[PreventCertErrorOverrides](../new-policies.md#prevent-certificate-error-overrides)
+- **MDM name:** Browser/[PreventCertErrorOverrides](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-preventcerterroroverrides)
 - **Supported devices:** Desktop and Mobile
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventCertErrorOverrides 
 - **Data type:** Integer
 
 #### Registry settings
-- **Path:** Software\Policies\Microsoft\MicrosoftEdge\Internet Setting
+- **Path:** HKLM\Software\Policies\Microsoft\MicrosoftEdge\Internet Setting
 - **Value name:** PreventCertErrorOverrides
 - **Value type:** REG_DWORD
 
