@@ -46,7 +46,7 @@ We are discontinuing the use of the **Configure Favorites** group policy. Use th
 | [Configure Open Microsoft Edge With](#configure-open-microsoft-edge-with) | New | [ConfigureOpenEdgeWith](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configureopenmicrosoftedgewith) | New |
 | [Do not sync browser settings](available-policies.md#do-not-sync-browser-settings) | -- | Experience/DoNotSyncBrowserSetting  | New |
 | [Prevent certificate error overrides](#prevent-certificate-error-overrides) | New | [PreventCertErrorOverrides](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-preventcerterroroverrides) | New |
-| [Prevent users from turning on browser syncing](#preventusersfromturningonbrowsersyncing) | New | PreventUsersFromTurningOnBrowserSyncing | New |
+| [Prevent users from turning on browser syncing](#preventusersfromturningonbrowsersyncing) | New | Experience/PreventUsersFromTurningOnBrowserSyncing | New |
 | [Prevent turning off required extensions](#prevent-turning-off-required-extensions) | New | PreventTurningOffRequiredExtensions | New |
 | [Set Home button URL](#set-home-button-url) | New | [SetHomeButtonURL](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-sethomebuttonurl) | New |
 | [Set New Tab page URL](#set-new-tab-page-url) | New | [SetNewTabPageURL](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-setnewtabpageurl) | New |
