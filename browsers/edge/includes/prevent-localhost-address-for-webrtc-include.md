@@ -4,11 +4,11 @@
 
 [!INCLUDE [prevent-using-localhost-ip-address-for-webrtc-shortdesc](../shortdesc/prevent-using-localhost-ip-address-for-webrtc-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Allowed. Shows localhost IP addresses. | |
+|Disabled or not configured<br>**(default)** |0 |0 |Allowed. Show localhost IP addresses. | |
 |Enabled |1 |1 |Prevented. |![Most restricted value](../images/check-gn.png) |
 ---
 

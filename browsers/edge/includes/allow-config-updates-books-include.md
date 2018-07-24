@@ -4,7 +4,7 @@
 
 [!INCLUDE [allow-configuration-updates-for-books-library-shortdesc](../shortdesc/allow-configuration-updates-for-books-library-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
@@ -15,8 +15,8 @@
 ### ADMX info and settings
 
 #### ADMX info
-- **GP English name:** 
-- **GP name:** 
+- **GP English name:** Allow configuration updates for the Books Library
+- **GP name:** AllowConfigurationUpdateForBooksLibrary
 - **GP path:** Windows Components/Microsoft Edge
 - **GP ADMX file name:** MicrosoftEdge.admx
 
@@ -34,5 +34,5 @@
 ### Related topics
 
 [Manage connections from Windows operating system components to Microsoft services](https://docs.microsoft.com/en-us/windows/configuration/manage-connections-from-windows-operating-system-components-to-microsoft-services)
-
+<p>
 <hr>

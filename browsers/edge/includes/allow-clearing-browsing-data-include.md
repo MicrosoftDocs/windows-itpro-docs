@@ -1,15 +1,15 @@
 <!-- ## Allow clearing browsing data on exit -->
 >*Supported versions: Microsoft Edge on Windows 10, version 1703 or later*<br>
->*Default setting:  Disabled or not configured (Prevented)*
+>*Default setting:  Disabled or not configured (Prevented/not allowed)*
 
 [!INCLUDE [allow-clearing-browsing-data-on-exit-shortdesc](../shortdesc/allow-clearing-browsing-data-on-exit-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Prevented, but users can configure the _Clear browsing data_ option in Settings. | |
-|Enabled |1 |1 |Allowed |![Most restricted value](../images/check-gn.png) |
+|Disabled or not configured<br>**(default)** |0 |0 |Prevented/not allowed. Users can configure the _Clear browsing data_ option in Settings. | |
+|Enabled |1 |1 |Allowed. Clear the browsing data upon exit automatically. |![Most restricted value](../images/check-gn.png) |
 ---
 
 
@@ -30,6 +30,6 @@
 #### *Registry
 - **Path:** HLKM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Privacy
 - **Value name:** ClearBrowsingHistoryOnExit
-- **Value type:** REG_DWORD</li></ul> 
+- **Value type:** REG_DWORD 
 
 <hr>

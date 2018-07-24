@@ -4,13 +4,13 @@
 
 [!INCLUDE [configure-pop-up-blocker-shortdesc](../shortdesc/configure-pop-up-blocker-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Not configured |Blank |Blank |Users can choose to use Pop-up Blocker. | |
-|Disabled<br>**(default)** |0 |0 |Turns off Pop-up Blocker letting pop-ups windows appear. | |
-|Enabled |1 |1 |Turns on Pop-up Blocker stopping pop-up windows from appearing. |![Most restricted value](../images/check-gn.png) |
+|Disabled<br>**(default)** |0 |0 |Turn off Pop-up Blocker letting pop-up windows open. | |
+|Enabled |1 |1 |Turn on Pop-up Blocker stopping pop-up windows from opening. |![Most restricted value](../images/check-gn.png) |
 ---
 
 ### ADMX info and settings

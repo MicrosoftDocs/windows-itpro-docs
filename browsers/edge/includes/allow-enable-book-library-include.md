@@ -4,12 +4,12 @@
 
 [!INCLUDE [always-show-books-library-shortdesc](../shortdesc/always-show-books-library-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Shows the Books Library only in countries or regions where supported. |![Most restricted value](../images/check-gn.png) |
-|Enabled |1 |1 |Shows the Books Library, regardless of the device’s country or region. | |
+|Disabled or not configured<br>**(default)** |0 |0 |Show the Books Library only in countries or regions where supported. |![Most restricted value](../images/check-gn.png) |
+|Enabled |1 |1 |Show the Books Library, regardless of the device’s country or region. | |
 ---
 ### ADMX info and settings
 

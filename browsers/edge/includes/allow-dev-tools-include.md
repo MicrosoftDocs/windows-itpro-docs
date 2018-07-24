@@ -5,12 +5,12 @@
 [!INCLUDE [allow-developer-tools-shortdesc](../shortdesc/allow-developer-tools-shortdesc.md)]
 
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled |0 |0 |Prevented/not allowed. |![Most restricted value](../images/check-gn.png) |
-|Enabled |1 |1 |Allowed. | |
+|Disabled |0 |0 |Prevented/not allowed |![Most restricted value](../images/check-gn.png) |
+|Enabled |1 |1 |Allowed | |
 ---
 
 
@@ -23,7 +23,7 @@
 - **GP ADMX file name:**  MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/AllowDeveloperTools
+- **MDM name:** Browser/[AllowDeveloperTools](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowdevelopertools)
 - **Supported devices:** Desktop
 - **URI full Path:**	./Vendor/MSFT/Policy/Config/Browser/AllowDeveloperTools
 - **Data type:** Integer

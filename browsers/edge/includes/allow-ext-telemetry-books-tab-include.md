@@ -4,12 +4,12 @@
 
 [!INCLUDE [allow-extended-telemetry-for-books-tab-shortdesc](../shortdesc/allow-extended-telemetry-for-books-tab-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Disabled or not configured<br>**(default)** |0 |0 |Depending on the device configuration, Microsoft Edge gathers only basic diagnostic data. |![Most restricted value](../images/check-gn.png) |
-|Enabled |1 |1 |Microsoft Edge gathers both basic and additional diagnostic data. | |
+|Enabled |1 |1 |Gathers both basic and additional diagnostic data. | |
 ---
 
 ### ADMX info and settings
@@ -31,11 +31,5 @@
 - **Value name:** EnableExtendedBooksTelemetry
 - **Value type:** REG_DWORD
 
-
-### Scenario
-
-Due to current Privacy policy, the Books feature does not have the right to gather the book's unique identifier through regular events (because it could help to build a Reading history, which is not an explicit feature).
-
-For Schools that are one of the target of this feature of Edge, we will propose an advanced telemetry report to the Teachers. This advanced report system will require to have the ProductId in events so IT Admin will be able to enable the propagation from the user's device to Microsoft Telemetry servers of events that contain ProductId.
 
 <hr>

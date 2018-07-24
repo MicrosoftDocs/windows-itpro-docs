@@ -1,1 +1,1 @@
-By default, Microsoft Edge does not send Do Not Track requests to websites asking for tracking information, but users can choose to send tracking information to sites they visit. With this policy, you can configure Microsoft Edge to send or never send tracking information.
+Microsoft Edge does not send ‘Do Not Track’ requests to websites asking for tracking information, but users can choose to send tracking information to sites they visit. With this policy, you can configure Microsoft Edge to send or never send tracking information.
