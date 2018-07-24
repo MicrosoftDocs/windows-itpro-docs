@@ -55,28 +55,32 @@ Before using the APIs, you’ll need to create an app that you’ll use to authe
 
 
 4.	Click **Settings** > **Required permissions** > **Add**.
+
     ![Image of new app in Azure](images/webapp-add-permission.png)
 
-5.	Click **Select an API** > **WindowsDefenderATP**, then click **Select**. 
-**Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
+5.	Click **Select an API** > **WindowsDefenderATP**, then click **Select**.
+	
+	**Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
     ![Image of API access and API selection](images/webapp-add-permission-2.png)
 
 6. Click **Select permissions** > **Run advanced queries** > **Select**.
-**Important note**: You need to select the relevant permission. 'Run advanced queries' is only an example!
+	
+	**Important note**: You need to select the relevant permission. 'Run advanced queries' is only an example!
 
     ![Image of select permissions](images/webapp-select-permission.png)
 
-In order to send telemetry events to WDATP, check 'Write timeline events' permission
-In order to send TI events to WDATP, check 'Read and write IOCs belonging to the app' permission
-In order to run advanced queries in WDATP, check 'Run advanced queries' permission
+	- In order to send telemetry events to WDATP, check 'Write timeline events' permission
+	- In order to send TI events to WDATP, check 'Read and write IOCs belonging to the app' permission
+	- In order to run advanced queries in WDATP, check 'Run advanced queries' permission
 
 7. Click **Done**
 
     ![Image of add permissions completion](images/webapp-add-permission-end.png)
 
 8. Click **Keys** and type a key name and click **Save**.
-After you save, **copy the key value**. You won't be able to retrieve after you leave!
+
+	**Important**: After you save, **copy the key value**. You won't be able to retrieve after you leave!
 
     ![Image of create app key](images/webapp-create-key.png)
 
@@ -84,13 +88,11 @@ After you save, **copy the key value**. You won't be able to retrieve after you 
     
 	![Image of app ID](images/webapp-get-appid.png)
 
-9. (**Optional**)Set your application to be multi-tenanted
+9. Set your application to be multi-tenanted
 	
-This is required for 3rd party apps (i.e., if you create an application that is intended to run in multiple customers tenant).
-This is not required if you create a service that you want to run in your tenant only (i.e., if you create an application for your own usage that will only interact with your own data)​
+	This is **required** for 3rd party apps (i.e., if you create an application that is intended to run in multiple customers tenant).
+	This is **not required** if you create a service that you want to run in your tenant only (i.e., if you create an application for your own usage that will only interact with your own data)​
 
-Click **Properties** > **Yes** > **Save**.
+	Click **Properties** > **Yes** > **Save**.
 
 	![Image of multi tenant](images/webapp-edit-multitenant.png)
-	
-
