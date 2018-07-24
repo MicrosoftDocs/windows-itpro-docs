@@ -1,0 +1,1 @@
+By default, Microsoft Edge collects the Live Tile metadata and sends it to Microsoft to help provide users a more complete experience when they pin Live Tiles to the Start menu. However, with this policy, you can configure Microsoft Edge to prevent Microsoft from collecting Live Tile metadata, providing users a limited experience. 
