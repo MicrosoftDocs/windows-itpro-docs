@@ -56,7 +56,7 @@ The multi-app Microsoft Edge kiosk mode types include:
 ## Let’s get started!
 Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Edge in assigned access. You can set up Microsoft Edge kiosk mode in assigned access using:
 
--   **Windows Settings.** Best for physically setting up a single device as a kiosk. With this method, you set up assigned access and configure the kiosk or digital sign device using Settings.  You can configure Microsoft Edge in single-app (kiosk type – Full-screen or public browsing) and define a single URL for the Home button, Start page, and New tab page. You can also set the reset after an idle timeout. 
+-   **Windows Settings.** (Build 17723) Best for physically setting up a single device as a kiosk. With this method, you set up assigned access and configure the kiosk or digital sign device using Settings.  You can configure Microsoft Edge in single-app (kiosk type – Full-screen or public browsing) and define a single URL for the Home button, Start page, and New tab page. You can also set the reset after an idle timeout. 
 
 -   **Microsoft Intune or other MDM service.** Best for setting up multiple devices as a kiosk. With this method, you configure Microsoft Edge in assigned access and configure how Microsoft Edge behaves when it’s running in kiosk mode with assigned access.
 
@@ -78,6 +78,8 @@ Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Ed
 
 
 ### Use Windows Settings 
+>Preview build 17723 
+ 
 
 Windows Settings is the simplest and easiest way to set up one or a couple of devices because you must perform these steps on each device. This method is ideal for small businesses.
 
