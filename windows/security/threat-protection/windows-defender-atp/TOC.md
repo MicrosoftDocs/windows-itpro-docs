@@ -98,7 +98,7 @@
 
 ### [Use the Windows Defender ATP APIs](exposed-apis-windows-defender-advanced-threat-protection-new.md)
 #### Supported Windows Defender ATP APIs
-##### [Advanced Hunting](run-advanced-query-windows-defender-advanced-threat-protection)
+##### [Advanced Hunting](run-advanced-query-windows-defender-advanced-threat-protection.md)
 
 
 ### [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)
