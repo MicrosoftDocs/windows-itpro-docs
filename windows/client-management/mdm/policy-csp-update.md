@@ -178,9 +178,6 @@ ms.date: 07/18/2018
     <a href="#update-setedurestart">Update/SetEDURestart</a>
   </dd>
   <dd>
-    <a href="#update-updatenotificationkioskmode">Update/UpdateNotificationKioskMode</a>
-  </dd>
-  <dd>
     <a href="#update-updateserviceurl">Update/UpdateServiceUrl</a>
   </dd>
   <dd>
@@ -3399,74 +3396,6 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-updatenotificationkioskmode"></a>**Update/UpdateNotificationKioskMode**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td></td>
-	<td></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy allows you to define what Windows Update notifications users see. This policy doesn’t control how and when updates are downloaded and installed.
-
-Valid values:  
--  0 (default) – Use the default Windows Update notifications
--  1 – Turn off all notifications, excluding restart warnings
--  2 – Turn off all notifications, including restart warnings
-
-> [!Important]  
-> If you choose not to get update notifications and also define the policy “Configure Automatic Updates” so that devices aren’t automatically getting updates, neither you nor device users will be aware of critical security, quality, or feature updates, and your devices may be at risk.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Display options for update notifications*
--   GP name: *UpdateNotificationKioskMode*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
 <a href="" id="update-updateserviceurl"></a>**Update/UpdateServiceUrl**  
 
 <!--SupportedSKUs-->
@@ -3648,7 +3577,6 @@ Footnote:
 -   [Update/ScheduledInstallTime](#update-scheduledinstalltime)  
 -   [Update/SetDisablePauseUXAccess](#update-setdisablepauseuxaccess)  
 -   [Update/SetDisableUXWUAccess](#update-setdisableuxwuaccess)  
--   [Update/UpdateNotificationKioskMode](#update-updatenotificationkioskmode)  
 -   [Update/UpdateServiceUrl](#update-updateserviceurl)  
 <!--EndIoTCore-->
 

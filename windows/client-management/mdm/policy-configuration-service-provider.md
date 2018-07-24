@@ -3420,9 +3420,6 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-update.md#update-setedurestart" id="update-setedurestart">Update/SetEDURestart</a>
   </dd>
   <dd>
-    <a href="./policy-csp-update.md#update-updatenotificationkioskmode" id="update-updatenotificationkioskmode">Update/UpdateNotificationKioskMode</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-update.md#update-updateserviceurl" id="update-updateserviceurl">Update/UpdateServiceUrl</a>
   </dd>
   <dd>
@@ -4871,7 +4868,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/SetDisablePauseUXAccess](./policy-csp-update.md#update-setdisablepauseuxaccess)
 -   [Update/SetDisableUXWUAccess](./policy-csp-update.md#update-setdisableuxwuaccess)
 -   [Update/SetEDURestart](./policy-csp-update.md#update-setedurestart)
--   [Update/UpdateNotificationKioskMode](./policy-csp-update.md#update-updatenotificationkioskmode)
 -   [Update/UpdateServiceUrl](./policy-csp-update.md#update-updateserviceurl)
 -   [Update/UpdateServiceUrlAlternate](./policy-csp-update.md#update-updateserviceurlalternate)
 -   [UserRights/AccessCredentialManagerAsTrustedCaller](./policy-csp-userrights.md#userrights-accesscredentialmanagerastrustedcaller)
