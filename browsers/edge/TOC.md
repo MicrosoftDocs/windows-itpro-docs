@@ -2,7 +2,7 @@
 
 ##[New Microsoft Edge Group Policies and MDM settings](new-policies.md)
 
-###[Deploy Microsoft Edge kiosk mode](microsoft-edge-kiosk-mode-deploy.md)
+##[Deploy Microsoft Edge kiosk mode](microsoft-edge-kiosk-mode-deploy.md)
 
 ##Group Policy configuration options
 ###[Home button settings](group-policies/home-button-gp.md)
