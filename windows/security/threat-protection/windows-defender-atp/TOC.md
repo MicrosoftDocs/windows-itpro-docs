@@ -72,10 +72,11 @@
 ###### [View deep analysis reports](respond-file-alerts-windows-defender-advanced-threat-protection.md#view-deep-analysis-reports)
 ###### [Troubleshoot deep analysis](respond-file-alerts-windows-defender-advanced-threat-protection.md#troubleshoot-deep-analysis)
 
-### [Use Automated investigation to investigate and remediate threats](automated-investigations-windows-defender-advanced-threat-protection.md)
 ### [Query data using Advanced hunting](advanced-hunting-windows-defender-advanced-threat-protection.md)
 #### [Advanced hunting reference](advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
 #### [Advanced hunting query language best practices](advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
+
+## [Use Automated investigation to investigate and remediate threats](automated-investigations-windows-defender-advanced-threat-protection.md)
 
 ## [Protect data with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
 ##API and SIEM support

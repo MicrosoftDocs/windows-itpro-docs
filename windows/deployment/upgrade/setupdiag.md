@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.date: 07/10/2018
+ms.date: 07/18/2018
 ms.localizationpriority: high
 ---
 
@@ -18,13 +18,33 @@ ms.localizationpriority: high
 
 >[!NOTE]
 >This is a 300 level topic (moderate advanced).<br>
->See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
+>See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.<br>
 
-[SetupDiag.exe](https://go.microsoft.com/fwlink/?linkid=870142) is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
+&nbsp;[![Download SetupDiag](../images/download.png)](https://go.microsoft.com/fwlink/?linkid=870142)
+
+## About SetupDiag
+
+<I>Current version of SetupDiag: 1.3.1.0</I>
+
+SetupDiag is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
 
 SetupDiag works by examining Windows Setup log files. It attempts to parse these log files to determine the root cause of a failure to update or upgrade the computer to Windows 10. SetupDiag can be run on the computer that failed to update, or you can export logs from the computer to another location and run SetupDiag in offline mode.
 
-See the [Release notes](#release-notes) section at the bottom of this topic for information about updates to this tool. 
+To quickly use SetupDiag on your current computer:
+1. Verify that your system meets the [requirements](#requirements) described below. If needed, install the [.NET framework 4.6](https://www.microsoft.com/download/details.aspx?id=48137).
+2. [Download SetupDiag](https://go.microsoft.com/fwlink/?linkid=870142).
+3. If your web browser asks what to do with the file, choose **Save**. By default, the file will be saved to your **Downloads** folder. You can also save it to a different location if desired by using **Save As**.
+4. When SetupDiag has finished downloading, open the folder where you downloaded the file. As mentioned above, by default this is your **Downloads** folder which is displayed in File Explorer under **Quick access** in the left navigation pane.
+5. Double-click the **SetupDiag** file to run it. Click **Yes** if you are asked to approve running the program.
+    - Double-clicking the file to run it will automatically close the command window when SetupDiag has completed its analysis. If you wish to keep this window open instead, and review the messages that you see, run the program by typing **SetupDiag** at the command prompt instead of double-clicking it. You will need to change directories to the location of SetupDiag to run it this way.
+6. A command window will open while SetupDiag diagnoses your computer. Wait for this to finish.
+7. When SetupDiag finishes, two files will be created in the same folder where you double-clicked SetupDiag. One is a configuration file, the other is a log file.
+8. Use Notepad to open the log file: **SetupDiagResults.log**.
+9. Review the information that is displayed. If a rule was matched this can tell you why the computer failed to upgrade, and potentially how to fix the problem. See the [Text log sample](#text-log-sample) below.
+
+For instructions on how to run the tool in offline more and with more advanced options, see the [Parameters](#parameters) and [Examples](#examples) sections below.
+
+The [Release notes](#release-notes) section at the bottom of this topic has information about recent updates to this tool. 
 
 ## Requirements
 
@@ -43,7 +63,7 @@ See the [Release notes](#release-notes) section at the bottom of this topic for 
 | /Output:\<path to results file\> | <ul><li>This optional parameter enables you to specify the output file for results. This is where you will find what SetupDiag was able to determine.  Only text format output is supported.  UNC paths will work, provided the context under which SetupDiag runs has access to the UNC path.  If the path has a space in it, you must enclose the entire path in double quotes (see the example section below). <li>Default: If not specified, SetupDiag will create the file **SetupDiagResults.log** in the same  directory where SetupDiag.exe is run.</ul> |
 | /Mode:\<Offline \| Online\>  |  <ul><li>This optional parameter allows you to specify the mode in which SetupDiag will operate: Offline or Online.<li>Offline: tells SetupDiag to run against a set of log files already captured from a failed system.  In this mode you can run anywhere you have access to the log files.  This mode does not require SetupDiag to be run on the computer that failed to update. When you specify offline mode, you must also specify the /LogsPath: parameter.<li>Online: tells SetupDiag that it is being run on the computer that failed to update. SetupDiag will attempt find log files and resources in standard Windows locations, such as the **%SystemDrive%\$Windows.~bt** directory for setup log files.<li>Log file search paths are configurable in the SetupDiag.exe.config file, under the SearchPath key.  Search paths are comma separated.  Note: A large number of search paths will extend the time required for SetupDiag to return results.<li>Default: If not specified, SetupDiag will run in Online mode.</ul> |
 | /LogsPath:\<Path to logs\> | <ul><li>This optional parameter is required only when **/Mode:Offline** is specified.  This tells SetupDiag.exe where to find the log files. These log files can be in a flat folder format, or containing multiple subdirectories.  SetupDiag will recursively search all child directories. This parameter should be omitted when the **/Mode:Online** is specified.</ul> |
-| /ZipLogs:\<True \| False\> | <ul><li>This optional parameter tells SetupDiag.exe to create a zip file continuing its results and all the log files it parsed.  The zip file is created in the same directory where SetupDiag.exe is run.<li>Default: If not specified, a value of 'true' is used.</ul> |
+| /ZipLogs:\<True \| False\> | <ul><li>This optional parameter tells SetupDiag.exe to create a zip file containing the results and all the log files it parsed.  The zip file is created in the same directory where SetupDiag.exe is run.<li>Default: If not specified, a value of 'true' is used.</ul> |
 | /Verbose | <ul><li>This optional parameter will output much more data to the log file produced by SetupDiag.exe.  By default SetupDiag will only produce a log file entry for serious errors.  Using **/Verbose** will cause SetupDiag to always produce a log file with debugging details, which can be useful when reporting a problem with SetupDiag.</ul> |
 | /Format:\<xml \| json\> | <ul><li>This optional parameter can be used to output log files in xml or JSON format.  If this parameter is not specified, text format is used by default.</ul> |
 
@@ -355,6 +375,9 @@ Each rule name and its associated unique rule identifier are listed with a descr
     - Indicates a critical failure during a DISM add package operation.  Will specify the Package Name, DISM error and add package error code.
 
 ## Release notes
+
+07/16/2018 - SetupDiag v1.3.1 is released with 44 rules, as a standalone tool available from the Download Center.
+   - This release fixes a problem that can occur when running SetupDiag in online mode on a computer that produces a setupmem.dmp file, but does not have debugger binaries installed.
 
 07/10/2018 - SetupDiag v1.30 is released with 44 rules, as a standalone tool available from the Download Center.
    - Bug fix for an over-matched plug-in rule. The rule will now correctly match only critical (setup failure) plug-in issues.
