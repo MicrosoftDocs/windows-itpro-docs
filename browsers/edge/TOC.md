@@ -1,9 +1,10 @@
-#[Microsoft Edge - Deployment Guide for IT Pros](index.md)
+#[Microsoft Edge - Deployment guidance for IT Pros](index.md)
 
 ##[New Microsoft Edge Group Policies and MDM settings](new-policies.md)
 
+##[Deploy Microsoft Edge kiosk mode](microsoft-edge-kiosk-mode-deploy.md)
+
 ##Group Policy configuration options
-###[Deploy Microsoft Edge kiosk mode](microsoft-edge-kiosk-mode-deploy.md)
 ###[Home button settings](group-policies/home-button-gp.md)
 ###[Prelaunch Microsoft Edge and preload tabs](group-policies/prelaunch-preload-gp.md)
 ###[Search engine customization](group-policies/search-engine-customization-gp.md)
