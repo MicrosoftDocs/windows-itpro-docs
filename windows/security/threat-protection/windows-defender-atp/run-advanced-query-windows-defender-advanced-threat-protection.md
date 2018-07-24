@@ -1,7 +1,7 @@
 ﻿---
-title: Collect investigation package API
-description: Use this API to create calls related to the collecting an investigation package from a machine.
-keywords: apis, graph api, supported apis, collect investigation package
+title: Advanced Hunting API
+description: Use this API to run advanced queries
+keywords: apis, supported apis, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy

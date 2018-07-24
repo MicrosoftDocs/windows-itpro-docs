@@ -1,5 +1,5 @@
 ---
-title: Use the Windows Defender Advanced Threat Protection exposed APIs  
+title: Use the Windows Defender Advanced Threat Protection APIs  
 description: Use the exposed data and actions using a set of progammatic APIs that are part of the Microsoft Intelligence Security Graph.
 keywords: apis, graph api, supported apis, actor, alerts, machine, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 10/23/2017
 ---
 
-# Use the Windows Defender ATP exposed APIs 
+# Use the Windows Defender ATP APIs 
 
 **Applies to:**
 
