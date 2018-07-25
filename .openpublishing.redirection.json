@@ -13501,11 +13501,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/update/waas-windows-insider-for-business-faq.md",
-"redirect_url": "/windows/deployment/update/waas-windows-insider-for-business-faq",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/update/waas-windows-insider-for-business.md",
 "redirect_url": "/windows/deployment/update/waas-windows-insider-for-business",
 "redirect_document_id": true
