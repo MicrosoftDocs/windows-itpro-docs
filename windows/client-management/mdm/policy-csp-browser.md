@@ -1214,7 +1214,7 @@ To verify AllowPopups is set to 0 (not allowed):
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Prelaunch*
+-   GP English name: *Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed*
 -   GP name: *AllowPrelaunch*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*

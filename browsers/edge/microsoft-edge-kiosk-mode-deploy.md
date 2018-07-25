@@ -45,7 +45,7 @@ When you set up Microsoft Edge kiosk mode in multi-app assigned access, Microsof
 
 The multi-app Microsoft Edge kiosk mode types include:
 
-3.  **Public browsing** supports browsing the internet and runs InPrivate with minimal features available. In this configuration, Microsoft Edge can be one of many apps available. Users can close and open multiple InPrivate windows. On a multi-app kiosk device, Microsoft Edge can interact with other applications. For example, if Internet Explorer 11 is set up in multi-app assigned access. You can enable Enterprise Mode to automatically switch users to Internet Explorer 11 for sites that need backward compatibility support.  Examples of public browsing include an information kiosk device at a public library or hotel concierge desk that provides access to Microsoft Edge and other app(s).
+3.  **Public browsing** supports browsing the internet and runs InPrivate with minimal features available. In this configuration, Microsoft Edge can be one of many apps available. Users can close and open multiple InPrivate windows. On a multi-app kiosk device, Microsoft Edge can interact with other applications. For example, if Internet Explorer 11 is set up in multi-app assigned access. You can enable Enterprise Mode to automatically switch users to Internet Explorer 11 for sites that need backward compatibility support. A public library or hotel concierge desk are two examples of public browsing that provides access to Microsoft Edge and other app(s).
 
     ![Public browsing Microsoft Edge kiosk mode on a multi-app kiosk device](images/Multi-app_kiosk_inFrame.png)
 
@@ -292,7 +292,7 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
 - When you set up Microsoft Edge kiosk mode on a single-app kiosk device you must set the “ConfigureKioskMode” policy because the default behavior is not honored. 
     - **Expected behavior** – Microsoft Edge kiosk mode launches in full-screen mode. 
     - **Actual behavior** – Normal Microsoft Edge launches.
-
+<!-- 
 - When you enable or set the “ConfigureFavoritesBar” policy to 1, the favorites bar does not show in Microsoft Edge kiosk mode. 
     - **Expected behavior** – Microsoft Edge kiosk mode shows the favorites bar. 
     - **Actual behavior** – The favorites bar is hidden.
@@ -304,7 +304,7 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
 - Books should not be available in Public browsing multi-app kiosk. 
     - **Expected behavior** – Books are disabled in _Settings and more_ menu. 
     - **Actual behavior** – Books are accessible in _Settings and more_ menu.
-
+-->
 ---
 
 ## Provide feedback or get support
