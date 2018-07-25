@@ -1,5 +1,5 @@
 <!-- ## Prevent turning off required extensions
->*Supported versions: Microsoft Edge on Windows 10, next major version*<br> -->
+>*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> -->
 >*Default setting:  Disabled or not configured (Allowed)*
 
 [!INCLUDE [prevent-turning-off-required-extensions-shortdesc](../shortdesc/prevent-turning-off-required-extensions-shortdesc.md)]

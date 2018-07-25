@@ -1,6 +1,6 @@
 
 <!-- ## Configure kiosk mode
->*Supported versions: Microsoft Edge on Windows 10, next major version*<br> -->
+>*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> -->
 >*Default setting:  Not configured*
 
 [!INCLUDE [configure-kiosk-mode-shortdesc](../shortdesc/configure-kiosk-mode-shortdesc.md)]
@@ -26,7 +26,7 @@ For this policy to work, you must configure Microsoft Edge in assigned access; o
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[ConfigureKioskMode](../new-policies.md#configure-kiosk-mode)
+- **MDM name:** Browser/[ConfigureKioskMode](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureKioskMode 
 - **Data type:** Integer

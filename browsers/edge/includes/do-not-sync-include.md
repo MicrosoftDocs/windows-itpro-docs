@@ -13,10 +13,22 @@
 ---
 
 ### ADMX info and settings
-| |
-|---|
-|**ADMX info**<ul><li>**GP English name:** Do not sync</li><li>**GP name:** AllowSyncMySettings</li><li>**GP path:** Windows Components/Microsoft Edge</li><li>**GP ADMX file name:** MicrosoftEdge.admx</li></ul>**MDM settings**<ul><li>**MDM name:** Experience/[AllowSyncMySettings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-allowsyncmysettings)</li><li>**Supported devices:** Desktop</li><li>**URI full path:** ./Vendor/MSFT/Policy/Config/Experience/AllowSyncMySettings </li><li>**Data type:** Integer</li></ul>**Registry**<ul><li>**Path:** HKLM\Software\Policies\Microsoft\Windows\SettingSync</li><li>**Value name:** DisableSettingSync</li><li>**Value type:** REG_DWORD</li></ul>  |
----
+#### ADMX info
+- **GP English name:** Do not sync
+- **GP name:** AllowSyncMySettings
+- **GP path:** Windows Components/Sync your settings
+- **GP ADMX file name:** MicrosoftEdge.admx
+
+#### MDM settings
+- **MDM name:** Experience/[AllowSyncMySettings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-allowsyncmysettings)
+- **Supported devices:** Desktop
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Experience/AllowSyncMySettings
+- **Data type:** Integer
+
+#### Registry settings
+- **Path:** HKLM\Software\Policies\Microsoft\Windows\SettingSync
+- **Value name:** DisableSettingSyn
+- **Value type:** REG_DWORD
 
 ### Related topics 
 [About sync setting on Microsoft Edge on Windows 10 devices](http://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices): Learn about what settings are sync'ed.
