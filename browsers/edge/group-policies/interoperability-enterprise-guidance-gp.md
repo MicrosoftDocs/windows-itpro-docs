@@ -12,7 +12,10 @@ ms.sitesec: library
 # Interoperability and enterprise guidance
 >*Supported versions: Microsoft Edge on Windows 10*  
 
-I need a description here, maybe with scenarios 
+If you have specific websites and apps that you know have compatibility problems with Microsoft Edge, you can use the Enterprise Mode site list so that the websites automatically open using Internet Explorer 11. Additionally, if you know that your intranet sites aren't going to work correctly with Microsoft Edge, you can set all intranet sites to open using IE11 automatically.
+
+Using Enterprise Mode means that you can continue to use Microsoft Edge as your default browser, while also ensuring that your apps continue working on IE11.
+
 
 **Policies** 
 

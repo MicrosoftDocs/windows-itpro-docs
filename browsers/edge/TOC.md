@@ -11,6 +11,7 @@
 ###[Security and privacy management](group-policies/security-privacy-management-gp.md)
 ###[Start pages settings](group-policies/start-pages-gp.md)
 ###[Sync browser settings](group-policies/sync-browser-settings-gp.md)
+###[Interoperability and enterprise guidance](group-policies/interoperability-enterprise-guidance-gp.md)
 
 
 ##[Change history for Microsoft Edge](change-history-for-microsoft-edge.md)
