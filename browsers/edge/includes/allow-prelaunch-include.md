@@ -1,6 +1,7 @@
 
-<!-- Allow Prelaunch 
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br>  -->
+<!-- Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed -->
+
+>*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br>  
 >*Default setting:  Enabled or not configured (Allowed)*
 
 [!INCLUDE [allow-prelaunch-shortdesc](../shortdesc/allow-prelaunch-shortdesc.md)]
@@ -20,7 +21,7 @@ For more details about configuring the prelaunch and preload options, see [Prela
 ### ADMX info and settings
 
 #### ADMX info
-- **GP English name:** Allow Prelaunch
+- **GP English name:** Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed
 - **GP name:** AllowPreLaunch
 - **GP path:** Windows Components/Microsoft Edge
 - **GP ADMX file name:** MicrosoftEdge.admx

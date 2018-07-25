@@ -1,5 +1,5 @@
-<!-- ## Do not sync browser settings
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> -->
+<!-- ## Do not sync browser settings  --> 
+>*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> 
 >*Default setting:  Disabled or not configured (Allowed/turned on)*
 
 [!INCLUDE [do-not-sync-browser-settings-shortdesc](../shortdesc/do-not-sync-browser-settings-shortdesc.md)]
@@ -14,7 +14,7 @@
 
 ### Configuration options
 
-For more details about configuring the browser syncing options, see [Sync browser settings](../group-policies/sync-browser-settings-gp.md).
+For more details about configuring the browser syncing options, see [Sync browser settings options](../group-policies/sync-browser-settings-gp.md).
 
 
 
