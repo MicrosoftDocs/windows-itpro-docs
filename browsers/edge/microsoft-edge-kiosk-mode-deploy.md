@@ -114,7 +114,7 @@ Windows Settings is the simplest and easiest way to set up one or a couple of de
 
 13.  Close **Settings** to save your choices automatically and apply them the next time the user account logs on.
 
-14.  Configure the policies for Microsoft Edge kiosk mode. For details on the valid kiosk policy settings, see [Related policies](#related-policies).
+14.  Configure the policies for Microsoft Edge kiosk mode. For details on the valid kiosk policy settings, see [Relevant policies](#relevant-policies).
 
 15.  Validate the Microsoft Edge kiosk mode by restarting the device and signing in with the local kiosk account.
 
