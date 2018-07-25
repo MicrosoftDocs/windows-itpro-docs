@@ -47,7 +47,7 @@ If successful, this method returns 200, Ok response code with a collection of Fi
 
 ## Example 1
 
-Request
+**Request**
 
 Here is an example of the request on an organization that has three FileMachineActions.
 
@@ -55,7 +55,7 @@ Here is an example of the request on an organization that has three FileMachineA
 GET https://graph.microsoft.com/testwdatppreview/filemachineactions
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 
@@ -113,7 +113,7 @@ Content-type: application/json
 
 ##Example 2
 
-Request
+**Request**
 
 Here is an example of a request that filters the FileMachineActions by machine ID and shows the latest two FileMachineActions.
 
@@ -121,7 +121,7 @@ Here is an example of a request that filters the FileMachineActions by machine I
 GET https://graph.microsoft.com/testwdatppreview/filemachineactions?$filter=machineId eq 'f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f'&$top=2
 ```
 
-Response 
+**Response** 
 
 ```
 HTTP/1.1 200 Ok

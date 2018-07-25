@@ -7,13 +7,13 @@ ms.prod: edge
 ms.sitesec: library
 title: Deploy Microsoft Edge kiosk mode
 ms.localizationpriority: high
-ms.date: 07/23/2018 
+ms.date: 07/25/2018 
 ---
 
 # Deploy Microsoft Edge kiosk mode (Preview)
 
 >Applies to: Microsoft Edge on Windows 10 <br>
->Preview build 17713+
+>Preview build 17723
 
 Microsoft Edge kiosk mode works with assigned access to let IT administrators create a tailored browsing experience designed for kiosk devices. To use Microsoft Edge kiosk mode, you must configure Microsoft Edge as an application in assigned access. Learn more about [Configuring kiosk and shared devices running Windows desktop editions](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc).
 
@@ -45,7 +45,7 @@ When you set up Microsoft Edge kiosk mode in multi-app assigned access, Microsof
 
 The multi-app Microsoft Edge kiosk mode types include:
 
-3.  **Public browsing** supports browsing the internet and runs InPrivate with minimal features available. In this configuration, Microsoft Edge can be one of many apps available. Users can close and open multiple InPrivate windows. On a multi-app kiosk device, Microsoft Edge can interact with other applications. For example, if Internet Explorer 11 is set up in multi-app assigned access. You can enable Enterprise Mode to automatically switch users to Internet Explorer 11 for sites that need backward compatibility support.  Examples of public browsing include an information kiosk device at a public library or hotel concierge desk that provides access to Microsoft Edge and other app(s).
+3.  **Public browsing** supports browsing the internet and runs InPrivate with minimal features available. In this configuration, Microsoft Edge can be one of many apps available. Users can close and open multiple InPrivate windows. On a multi-app kiosk device, Microsoft Edge can interact with other applications. For example, if Internet Explorer 11 is set up in multi-app assigned access. You can enable Enterprise Mode to automatically switch users to Internet Explorer 11 for sites that need backward compatibility support. A public library or hotel concierge desk are two examples of public browsing that provides access to Microsoft Edge and other app(s).
 
     ![Public browsing Microsoft Edge kiosk mode on a multi-app kiosk device](images/Multi-app_kiosk_inFrame.png)
 
@@ -56,7 +56,7 @@ The multi-app Microsoft Edge kiosk mode types include:
 ## Let’s get started!
 Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Edge in assigned access. You can set up Microsoft Edge kiosk mode in assigned access using:
 
--   **Windows Settings.** (Build 17723) Best for physically setting up a single device as a kiosk. With this method, you set up assigned access and configure the kiosk or digital sign device using Settings.  You can configure Microsoft Edge in single-app (kiosk type – Full-screen or public browsing) and define a single URL for the Home button, Start page, and New tab page. You can also set the reset after an idle timeout. 
+-   **Windows Settings.** Best for physically setting up a single device as a kiosk. With this method, you set up assigned access and configure the kiosk or digital sign device using Settings.  You can configure Microsoft Edge in single-app (kiosk type – Full-screen or public browsing) and define a single URL for the Home button, Start page, and New tab page. You can also set the reset after an idle timeout. 
 
 -   **Microsoft Intune or other MDM service.** Best for setting up multiple devices as a kiosk. With this method, you configure Microsoft Edge in assigned access and configure how Microsoft Edge behaves when it’s running in kiosk mode with assigned access.
 
@@ -78,8 +78,6 @@ Before you can configure Microsoft Edge kiosk mode, you must set up Microsoft Ed
 
 
 ### Use Windows Settings 
->Preview build 17723 
- 
 
 Windows Settings is the simplest and easiest way to set up one or a couple of devices because you must perform these steps on each device. This method is ideal for small businesses.
 
@@ -116,7 +114,7 @@ Windows Settings is the simplest and easiest way to set up one or a couple of de
 
 13.  Close **Settings** to save your choices automatically and apply them the next time the user account logs on.
 
-14.  Configure the policies for Microsoft Edge kiosk mode. For details on the valid kiosk policy settings, see [Related policies](#related-policies).
+14.  Configure the policies for Microsoft Edge kiosk mode. For details on the valid kiosk policy settings, see [Relevant policies](#relevant-policies).
 
 15.  Validate the Microsoft Edge kiosk mode by restarting the device and signing in with the local kiosk account.
 
@@ -210,7 +208,7 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
 | [AllowMicrosoftCompatibilityList](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowmicrosoftcompatibilitylist)                                        | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)<sup>1</sup> | ![Supported](images/148767.png)   |
 | [AllowPasswordManager](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowpasswordmanager)                                                   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
 | [AllowPopups](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowpopups)                                                            | ![Not supported](images/148766.png) | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
-| [AllowPrelaunch](new-policies.md#allow-prelaunch)\*                                                       | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
+| [AllowPrelaunch](new-policies.md#allow-microsoft-edge-to-pre-launch-at-windows-startup-when-the-system-is-idle-and-each-time-microsoft-edge-is-closed)\*                                                      | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
 | [AllowPrinting](new-policies.md#allow-printing)\*                                                        | ![Supported](images/148767.png)     | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
 | [AllowSavingHistory](new-policies.md#allow-saving-history)\*                                                   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
 | [AllowSearchEngineCustomization](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsearchenginecustomization)                                         | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
@@ -230,7 +228,7 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
 | [ConfigureOpenMicrosoftEdgeWith](new-policies.md#configure-open-microsoft-edge-with)\*                                       | ![Supported](images/148767.png)     | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
 | [ConfigureTelemetryForMicrosoft365Analytics](new-policies.md#configure-collection-of-browsing-data-for-microsoft-365-analytics)\*                           | ![Supported](images/148767.png)     | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
 | [DisableLockdownOfStartPages](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-disablelockdownofstartpages)                                            | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
-| [DoNotSyncBrowserSetting](available-policies.md#do-not-sync-browser-settings)\* and [PreventUsersFromTurningOnBrowserSyncing](new-policies.md#prevent-users-from-turning-on-browser-syncing)\* | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)   |
+| [Experience/DoNotSyncBrowserSetting](available-policies.md#do-not-sync-browser-settings)\* and [Experience/PreventUsersFromTurningOnBrowserSyncing](new-policies.md#prevent-users-from-turning-on-browser-syncing)\* | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)   |
 | [EnableExtendedBooksTelemetry](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-enableextendedbookstelemetry)                                           | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
 | [EnterpriseModeSiteList](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-enterprisemodesitelist)                                                 | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)<sup>1</sup> | ![Supported](images/148767.png)   |
 | [FirstRunURL](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-firstrunurl)                                                            | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Not supported](images/148766.png) |
@@ -257,7 +255,7 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
 
 *\* New policy coming in the next release of Windows 10.*<p>
 *1) For multi-app assigned access, you must configure Internet Explorer 11.*<br>
-*2) For digital/interactive signage to enable Flash, set [AllowFlashClickToRun](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowflashclicktorun) to 0.*
+*2) For digital/interactive signage to enable Flash, set [AllowFlashClickToRun].(https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowflashclicktorun) to 0.*
 
 **Legend:**<p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Not supported](images/148766.png) = Not applicable or not supported <br>
@@ -287,23 +285,11 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
 
 ---
 
-## Known issues with RS_PRERELEASE build 17723
+## Known issues with prerelease build 17723
 
-- When you set up Microsoft Edge kiosk mode on a single-app kiosk device you must set the “ConfigureKioskMode” policy because the default behavior is not honored. 
-    - **Expected behavior** – Microsoft Edge kiosk mode launches in full-screen mode. 
-    - **Actual behavior** – Normal Microsoft Edge launches.
-
-- When you enable or set the “ConfigureFavoritesBar” policy to 1, the favorites bar does not show in Microsoft Edge kiosk mode. 
-    - **Expected behavior** – Microsoft Edge kiosk mode shows the favorites bar. 
-    - **Actual behavior** – The favorites bar is hidden.
-
-- Extensions should not be available in Public browsing multi-app kiosk. 
-    - **Expected behavior** – Extensions are disabled in _Settings and more_ menu. 
-    - **Actual behavior** – Extensions are accessible in _Settings and more_ menu.
-
-- Books should not be available in Public browsing multi-app kiosk. 
-    - **Expected behavior** – Books are disabled in _Settings and more_ menu. 
-    - **Actual behavior** – Books are accessible in _Settings and more_ menu.
+When you set up Microsoft Edge kiosk mode on a single-app kiosk device you must set the “ConfigureKioskMode” policy because the default behavior is not honored. 
+- **Expected behavior** – Microsoft Edge kiosk mode launches in full-screen mode. 
+- **Actual behavior** – Normal Microsoft Edge launches.
 
 ---
 
