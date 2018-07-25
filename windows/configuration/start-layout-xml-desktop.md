@@ -9,7 +9,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.date: 01/02/2018
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Start layout XML for desktop editions of Windows 10 (reference)
@@ -31,7 +31,7 @@ On Windows 10 for desktop editions, the customized Start works by:
     - No limit to the number of apps that can be pinned. There is a theoretical limit of 24 tiles per group (4 small tiles per medium square x 3 columns x 2 rows). 
     
 >[!NOTE]
->Using the layout modification XML to configure Start is not supported with roaming user profiles. For more information, see [Deploy Roaming User Profiles](https://technet.microsoft.com/en-US/library/jj649079.aspx).
+>To use the layout modification XML to configure Start with roaming user profiles, see [Deploying Roaming User Profiles](https://docs.microsoft.com/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#step-7-optionally-specify-a-start-layout-for-windows-10-pcs).
 
 
 

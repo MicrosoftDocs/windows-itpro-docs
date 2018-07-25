@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 04/24/2018
 ---
 
@@ -135,7 +135,7 @@ Content-Type: application/json;
 }
 ```
 
-The following values correspond to the alert sections surfaced on the Windows Defender ATP portal:
+The following values correspond to the alert sections surfaced on Windows Defender Security Center:
 ![Image of alert from the portal](images/atp-custom-ti-mapping.png)
 
 Highlighted section | JSON key name

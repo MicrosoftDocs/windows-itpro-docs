@@ -1,0 +1,1 @@
+By default, users can choose to use the Autofill feature to automatically populate the form fields.  With this policy, you can configure Microsoft Edge, when enabled to use Autofill or, when disabled to prevent using Autofill. 

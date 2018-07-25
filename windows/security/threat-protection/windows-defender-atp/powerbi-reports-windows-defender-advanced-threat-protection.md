@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 04/24/2018
 ---
 # Create and build Power BI reports using Windows Defender ATP data
@@ -35,7 +35,7 @@ You can easily get started by:
 - Creating a dashboard on the Power BI service 
 - Building a custom dashboard on Power BI Desktop and tweaking it to fit the visual analytics and reporting requirements of your organization 
 
-You can access these options from the Windows Defender ATP portal. Both the Power BI service and Power BI Desktop are supported. 
+You can access these options from Windows Defender Security Center. Both the Power BI service and Power BI Desktop are supported. 
 
 ## Create a Windows Defender ATP dashboard on Power BI service
 Windows Defender ATP makes it easy to create a Power BI dashboard by providing an option straight from the portal. 

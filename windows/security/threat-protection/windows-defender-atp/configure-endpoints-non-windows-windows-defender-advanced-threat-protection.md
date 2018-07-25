@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 04/24/2018
 ---
 
@@ -24,7 +24,7 @@ ms.date: 04/24/2018
 
 
 
-Windows Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in the Windows Defender ATP portal and better protect your organization's network. This experience leverages on a third-party security products’ sensor data. 
+Windows Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Windows Defender Security Center and better protect your organization's network. This experience leverages on a third-party security products’ sensor data. 
 
 You'll need to know the exact Linux distros and macOS X versions that are compatible with Windows Defender ATP for the integration to work. 
 

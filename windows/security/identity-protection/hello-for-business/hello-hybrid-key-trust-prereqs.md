@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
-localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 11/17/2017
 ---
 # Hybrid Key trust Windows Hello for Business Prerequisites

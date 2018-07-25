@@ -1,0 +1,1 @@
+UI settings for the home button are disabled preventing your users from making changes

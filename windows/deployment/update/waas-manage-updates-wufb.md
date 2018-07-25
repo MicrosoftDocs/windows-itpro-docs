@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jaimeo
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.author: jaimeo
 ms.date: 06/01/2018
 ---
@@ -29,7 +29,7 @@ Windows Update for Business enables information technology administrators to kee
 
 Specifically, Windows Update for Business allows for: 
 
-- The creation of deployment rings, where administrators can specify which devices go first in an update wave, and which ones will come later (to ensure any quality bars are met).
+- The creation of deployment rings, where administrators can specify which devices go first in an update wave, and which ones will come later (to allow for reliability and performance testing on a subset of systems before rolling out updates across the organization).
 - Selectively including or excluding drivers as part of Microsoft-provided updates
 - Integration with existing management tools such as Windows Server Update Services (WSUS), System Center Configuration Manager, and Microsoft Intune.
 - Peer-to-peer delivery for Microsoft updates, which optimizes bandwidth efficiency and reduces the need for an on-site server caching solution.

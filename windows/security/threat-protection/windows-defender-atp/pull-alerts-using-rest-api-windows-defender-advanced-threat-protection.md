@@ -1,6 +1,6 @@
 ---
 title: Pull Windows Defender ATP alerts using REST API
-description: Pull alerts from the Windows Defender ATP portal REST API.
+description: Pull alerts from Windows Defender ATP REST API.
 keywords: alerts, pull alerts, rest api, request, response
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 04/24/2018
 ---
 
@@ -103,7 +103,7 @@ Use optional query parameters to specify and control the amount of data returned
 
 Name | Value| Description
 :---|:---|:---
-DateTime?sinceTimeUtc | string | Defines the lower time bound alerts are retrieved from, based on field: <br> `LastProccesedTimeUtc` <br> The time range will be: from sinceTimeUtc time to current time. <br><br> **NOTE**: When not specified, all alerts generated in the last two hours are retrieved.
+DateTime?sinceTimeUtc | string | Defines the lower time bound alerts are retrieved from, based on field: <br> `LastProcessedTimeUtc` <br> The time range will be: from sinceTimeUtc time to current time. <br><br> **NOTE**: When not specified, all alerts generated in the last two hours are retrieved.
 DateTime?untilTimeUtc | string | Defines the upper time bound alerts are retrieved. <br> The time range will be: from `sinceTimeUtc` time to `untilTimeUtc` time. <br><br> **NOTE**: When not specified, the default value will be the current time.
 string ago | string | Pulls alerts in the following time range: from `(current_time - ago)` time to `current_time` time. <br><br> Value should be set according to **ISO 8601** duration format <br> E.g. `ago=PT10M` will pull alerts received in the last 10 minutes.
 int?limit | int | Defines the number of alerts to be retrieved. Most recent alerts will be retrieved based on the number defined.<br><br> **NOTE**: When not specified, all alerts available in the time range will be retrieved.

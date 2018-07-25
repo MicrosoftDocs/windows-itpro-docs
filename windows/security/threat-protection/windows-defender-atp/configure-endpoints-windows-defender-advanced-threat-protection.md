@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
-ms.date: 04/24/2018
+ms.localizationpriority: medium
+ms.date: 07/12/2018
 ---
 
 # Onboard Windows 10 machines
@@ -27,7 +27,7 @@ ms.date: 04/24/2018
 
 Machines in your organization must be configured so that the Windows Defender ATP service can get sensor data from them. There are various methods and deployment tools that you can use to configure the machines in your organization.
 
-Windows Defender ATP supports the following deployment tools and methods:
+The following deployment tools and methods are supported:
 
 - Group Policy
 - System Center Configuration Manager

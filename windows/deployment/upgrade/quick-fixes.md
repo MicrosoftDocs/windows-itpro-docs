@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.date: 05/03/2018
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Quick fixes

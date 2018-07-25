@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: support
 description: Info about where features went in the IEAK11, where the Favorites, Command, and Status bars went, and where the search bar went.
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: 7324faff-ccb6-4e14-ad91-af12dbca575e
 title: User interface problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)

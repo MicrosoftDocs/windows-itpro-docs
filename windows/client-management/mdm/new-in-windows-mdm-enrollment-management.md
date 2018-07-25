@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/11/2018
+ms.date: 07/23   /2018
 ---
 
 # What's new in MDM enrollment and management
@@ -934,7 +934,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>ExternalMgmtAgentHint - a string the agent uses to give hints the enrollment server may need.</li>
 <li>DomainName - fully qualified domain name if the device is domain-joined.</li>
 </ul>
-<p>For examples, see section 4.3.1 RequestSecurityToken of the the MS-MDE2 protocol documentation.</p>
+<p>For examples, see section 4.3.1 RequestSecurityToken of the MS-MDE2 protocol documentation.</p>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
@@ -1139,9 +1139,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1803:</p>
 <ul>
-<li>AccountPoliciesAccountLockoutPolicy/AccountLockoutDuration</li>
-<li>AccountPoliciesAccountLockoutPolicy/AccountLockoutThreshold</li>
-<li>AccountPoliciesAccountLockoutPolicy/ResetAccountLockoutCounterAfter</li>
 <li>ApplicationDefaults/EnableAppUriHandlers</li>
 <li>ApplicationManagement/MSIAllowUserControlOverInstall</li>
 <li>ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges</li>
@@ -1185,7 +1182,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares</li> 
-<li>LocalPoliciesSecurityOptions/NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</li> 
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange</li> 
@@ -1627,6 +1623,128 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### July 2018
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top">[WindowsLicensing  CSP](windowslicensing-csp.md)</td>
+<td style="vertical-align:top"><p>Added S mode settings.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[SUPL CSP](supl-csp.md)</td>
+<td style="vertical-align:top"><p>Added 3 new certificate nodes.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Defender CSP](defender-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node Health/ProductStatus.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node AllowStandardUserEncryption.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node SMBIOSSerialNumber.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies in Windows 10, next major version:</p>
+<ul>
+<li>ApplicationManagement/LaunchAppAfterLogOn</li>
+<li>ApplicationManagement/ScheduleForceRestartForUpdateFailures </li>
+<li>Defender/CheckForSignaturesBeforeRunningScan</li>
+<li>Defender/DisableCatchupFullScan </li>
+<li>Defender/DisableCatchupQuickScan </li>
+<li>Defender/EnableLowCPUPriority</li>
+<li>Defender/SignatureUpdateFallbackOrder </li>
+<li>Defender/SignatureUpdateFileSharesSources </li>
+<li>DmaGuard/DeviceEnumerationPolicy</li>
+<li>Experience/AllowClipboardHistory</li>
+<li>TaskManager/AllowEndTask</li>
+<li>WindowsDefenderSecurityCenter/DisableClearTpmButton</li>
+<li>WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning</li>
+<li>WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl</li>
+<li>WindowsLogon/DontDisplayNetworkSelectionUI</li>
+</ul>
+<p>Recent changes:</p>
+<ul>
+<li>DataUsage/SetCost3G - deprecated in RS5.</li>
+</ul>
+</td></tr>
+</tbody>
+</table>
+
+### June 2018
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top">[Wifi CSP](wifi-csp.md)</td>
+<td style="vertical-align:top"><p>Added a new node WifiCost.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Diagnose MDM failures in Windows 10](diagnose-mdm-failures-in-windows-10.md)</td>
+<td style="vertical-align:top"><p>Recent changes:</p>
+<ul>
+<li>Added procedure for collecting logs remotely from Windows 10 Holographic.</li>
+<li>Added procedure for downloading the MDM Diagnostic Information log.</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Bitlocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top"><p>Added new node AllowStandardUserEncryption.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Recent changes:</p>
+<ul>
+<li>AccountPoliciesAccountLockoutPolicy/AccountLockoutDuration - removed from docs. Not supported.</li>
+<li>AccountPoliciesAccountLockoutPolicy/AccountLockoutThreshold - removed from docs. Not supported.</li>
+<li>AccountPoliciesAccountLockoutPolicy/ResetAccountLockoutCounterAfter - removed from docs. Not supported.</li>
+<li>LocalPoliciesSecurityOptions/NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers - removed from docs. Not supported.</li>
+<li>System/AllowFontProviders is not supported in Windows Holographic for Business.</li>
+<li>Security/RequireDeviceEncryption is suported in the Home SKU.</li>
+<li>Start/StartLayout - added a table of SKU support information.</li>
+<li>Start/ImportEdgeAssets - added a table of SKU support information.</li>
+</ul>
+<p>Added the following new policies in Windows 10, next major version:</p>
+<ul>
+<li>Update/EngagedRestartDeadlineForFeatureUpdates</li>
+<li>Update/EngagedRestartSnoozeScheduleForFeatureUpdates</li>
+<li>Update/EngagedRestartTransitionScheduleForFeatureUpdates</li>
+<li>Update/SetDisablePauseUXAccess</li>
+<li>Update/SetDisableUXWUAccess</li>
+</ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[WiredNetwork CSP](wirednetwork-csp.md)</td>
+<td style="vertical-align:top">New CSP added in Windows 10, next major version.
+</td></tr>
+</tbody>
+</table>
+
+
 ### May 2018
 
 <table class="mx-tdBreakAll">
@@ -1874,13 +1992,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1803:</p>
 <ul>
-<li>AccountPoliciesAccountLockoutPolicy/AccountLockoutDuration</li>
-<li>AccountPoliciesAccountLockoutPolicy/AccountLockoutThreshold</li>
 <li>Browser/AllowConfigurationUpdateForBooksLibrary</li>
 <li>Browser/AlwaysEnableBooksLibrary</li>
 <li>Browser/EnableExtendedBooksTelemetry</li>
 <li>Browser/UseSharedFolderForBooks</li>
-<li>AccountPoliciesAccountLockoutPolicy/ResetAccountLockoutCounterAfter</li>
 <li>DeliveryOptimization/DODelayBackgroundDownloadFromHttp</li>
 <li>DeliveryOptimization/DODelayForegroundDownloadFromHttp</li>
 <li>DeliveryOptimization/DOGroupIdSource</li>
@@ -1906,7 +2021,6 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares</li> 
-<li>LocalPoliciesSecurityOptions/NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares</li> 
 <li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</li> 
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange</li> 
@@ -2156,7 +2270,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>ExternalMgmtAgentHint - a string the agent uses to give hints the enrollment server may need.</li>
 <li>DomainName - fully qualified domain name if the device is domain-joined.</li>
 </ul>
-<p>For examples, see section 4.3.1 RequestSecurityToken of the the MS-MDE2 protocol documentation.</p>
+<p>For examples, see section 4.3.1 RequestSecurityToken of the MS-MDE2 protocol documentation.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[EntepriseAPN CSP](enterpriseapn-csp.md)</td>

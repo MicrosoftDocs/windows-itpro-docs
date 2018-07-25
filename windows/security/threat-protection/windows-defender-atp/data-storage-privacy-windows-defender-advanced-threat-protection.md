@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
-ms.date: 06/13/2018
+ms.localizationpriority: medium
+ms.date: 07/05/2018
 ---
 
 # Windows Defender ATP data storage and privacy
@@ -51,7 +51,7 @@ In all scenarios, data is encrypted using 256-bit [AES encyption](https://en.wik
 
 ## Do I have the flexibility to select where to store my data?
 
-When onboarding the service for the first time, you can choose to store your data in Microsoft Azure datacenters in the European Union, the United Kingdom, or the United States. Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Customer data in de-identified form may also be stored in the central storage and processing systems in the United States.
+When onboarding the service for the first time, you can choose to store your data in Microsoft Azure datacenters in the European Union, the United Kingdom, or the United States. Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Customer data in pseudonymized form may also be stored in the central storage and processing systems in the United States.
 
 ## Is my data isolated from other customer data?
 Yes, your data is isolated through access authentication and logical segregation based on customer identifier. Each customer can only access data collected from its own organization and generic data that Microsoft provides.

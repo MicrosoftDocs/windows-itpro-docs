@@ -9,7 +9,7 @@ ms.pagetype: deploy
 author: Jaimeo
 ms.author: jaimeo
 ms.date: 03/15/2018
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Get started with Update Compliance
@@ -77,4 +77,4 @@ Once you've added Update Compliance to Microsoft Operations Management Suite, yo
 
 ## Use Update Compliance to monitor Windows Updates
 
-Once your devices are enrolled, you can starte to [Use Update Compliance to monitor Windows Updates](update-compliance-using.md).
+Once your devices are enrolled, you can start to [Use Update Compliance to monitor Windows Updates](update-compliance-using.md).

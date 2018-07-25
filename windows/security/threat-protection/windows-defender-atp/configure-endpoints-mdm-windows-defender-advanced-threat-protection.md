@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 04/24/2018
 ---
 
@@ -54,7 +54,7 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
     - **Onboard Configuration Package**: Browse and select the **WindowsDefenderATP.onboarding** file you downloaded. This file enables a setting so devices can report to the Windows Defender ATP service.
     - **Sample sharing for all files**: Allows samples to be collected, and shared with Windows Defender ATP. For example, if you see a suspicious file, you can submit it to Windows Defender ATP for deep analysis.
     - **Expedite telemetry reporting frequency**: For devices that are at high risk, enable this setting so it reports telemetry to the Windows Defender ATP service more frequently.
-    - **Offboard Configuration Package**: If you want to remove Windows Defender ATP monitoring, you can download an offboarding package from the Windows Defender ATP portal, and add it. Otherwise, skip this property.
+    - **Offboard Configuration Package**: If you want to remove Windows Defender ATP monitoring, you can download an offboarding package from Windows Defender Security Center, and add it. Otherwise, skip this property.
    
 7. Select **OK**, and **Create** to save your changes, which creates the profile.
 
@@ -62,7 +62,7 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
 
 ### Onboard and monitor machines using the classic Intune console
 
-1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
+1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Windows Defender Security Center](https://securitycenter.windows.com/):
 
     a. In the navigation pane, select **Settings** > **Onboarding**.
 
@@ -145,7 +145,7 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same machine at the same time, otherwise this will cause unpredictable collisions.
 
-1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
+1.	Get the offboarding package from [Windows Defender Security Center](https://securitycenter.windows.com/):
 
    a. In the navigation pane, select **Settings** > **Offboarding**.
 

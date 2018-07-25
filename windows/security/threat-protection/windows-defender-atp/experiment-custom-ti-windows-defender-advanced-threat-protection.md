@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 11/09/2017
 ---
 
@@ -139,7 +139,7 @@ This step will guide you in simulating an event in connection to a malicious IP 
 ## Step 4: Explore the custom alert in the portal
 This step will guide you in exploring the custom alert in the portal.
 
-1.	Open the [Windows Defender ATP portal](http://securitycenter.windows.com/) on a browser.
+1.	Open [Windows Defender Security Center](http://securitycenter.windows.com/) on a browser.
 
 2.	Log in with your Windows Defender ATP credentials.
 
@@ -148,7 +148,7 @@ This step will guide you in exploring the custom alert in the portal.
     ![Image of sample custom ti alert in the portal](images/atp-sample-custom-ti-alert.png)
 
 > [!NOTE]
-> There is a latency time of approximately 20 minutes between the the time a custom TI is introduced and when it becomes effective.
+> There is a latency time of approximately 20 minutes between the time a custom TI is introduced and when it becomes effective.
 
 ## Related topics
 - [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)

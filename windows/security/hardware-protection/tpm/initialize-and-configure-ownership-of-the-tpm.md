@@ -28,7 +28,7 @@ With TPM 1.2 and Windows 10, version 1507 or 1511, you can also take the followi
 
 -   [Turn on or turn off the TPM](#turn-on-or-turn-off)
 
-For information about the TPM cmdlets, see [TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx).
+For information about the TPM cmdlets, see [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/trustedplatformmodule/?view=win10-ps).
 
 ## About TPM initialization and ownership
 
@@ -83,7 +83,7 @@ There are several ways to clear the TPM:
 
 -   **Clear the TPM as part of a complete reset of the computer**: You might want to remove all files from the computer and completely reset it, for example, in preparation for a clean installation. To do this, we recommend that you use the **Reset** option in **Settings**. When you perform a reset and use the **Remove everything** option, it will clear the TPM as part of the reset. You might be prompted to press a key before the TPM can be cleared. For more information, see the “Reset this PC” section in [Recovery options in Windows 10](https://support.microsoft.com/en-us/help/12415/windows-10-recovery-options).
 
--   **Clear the TPM to fix “reduced functionality” or “Not ready” TPM status**: If you open TPM.msc and see that the TPM status is something other than **Ready**, you can can try using TPM.msc to clear the TPM and fix the status. However, be sure to review the precautions in the next section.
+-   **Clear the TPM to fix “reduced functionality” or “Not ready” TPM status**: If you open TPM.msc and see that the TPM status is something other than **Ready**, you can try using TPM.msc to clear the TPM and fix the status. However, be sure to review the precautions in the next section.
 
 ### Precautions to take before clearing the TPM
 
@@ -165,7 +165,7 @@ This capability was fully removed from TPM.msc in later versions of Windows.
 
 ## Use the TPM cmdlets
 
-You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx).
+You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/trustedplatformmodule/?view=win10-ps).
 
 ## Related topics
 

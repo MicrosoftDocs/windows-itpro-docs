@@ -1,7 +1,7 @@
 ---
 title: Windows Defender Advanced Threat Protection portal overview
-description: Use the Windows Defender ATP portal to monitor your enterprise network and assist in responding to alerts to potential advanced persistent threat (APT) activity or data breaches.
-keywords: Windows Defender ATP portal, portal, cybersecurity threat intelligence, dashboard, alerts queue, machines list, settings, machine management, advanced attacks
+description: Use Windows Defender Security Center to monitor your enterprise network and assist in responding to alerts to potential advanced persistent threat (APT) activity or data breaches.
+keywords: Windows Defender Security Center, portal, cybersecurity threat intelligence, dashboard, alerts queue, machines list, settings, machine management, advanced attacks
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 04/24/2018
 ---
 
@@ -27,14 +27,14 @@ ms.date: 04/24/2018
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
 
-Enterprise security teams can use the Windows Defender ATP portal to monitor and assist in responding to alerts of potential advanced persistent threat (APT) activity or data breaches.
+Enterprise security teams can use Windows Defender Security Center to monitor and assist in responding to alerts of potential advanced persistent threat (APT) activity or data breaches.
 
-You can use the [Windows Defender ATP portal](https://securitycenter.windows.com/) to:
+You can use [Windows Defender Security Center](https://securitycenter.windows.com/) to:
 - View, sort, and triage alerts from your endpoints
 - Search for more information on observed indicators such as files and IP Addresses
 - Change Windows Defender ATP settings, including time zone and review licensing information.
 
-## Windows Defender ATP portal
+## Windows Defender Security Center
 When you open the portal, you’ll see the main areas of the application:
 
  ![Windows Defender Advanced Threat Protection portal](images/dashboard.png)

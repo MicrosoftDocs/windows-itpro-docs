@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
-ms.date: 02/26/2018
+ms.localizationpriority: medium
+ms.date: 06/25/2018
 ---
 
 # Troubleshoot custom threat intelligence issues
@@ -39,8 +39,10 @@ If your client secret expires or if you've misplaced the copy provided when you 
 
 3. Select your tenant.
 
-4. Click **App registrations** > **All apps**. Then select the application name **WindowsDefenderATPThreatIntelAPI** (formerly known as **WindowsDefenderATPCustomerTiConnector**).
-
+4. Click **App registrations** > **All apps**. Then select the relevant application name:
+    - **WindowsDefenderATPThreatIntelAPI** (formerly known as **WindowsDefenderATPCustomerTiConnector**)
+    - **WindowsDefenderATPSiemConnector**
+    
 5. Under **Settings**, select **Keys**, then provide a key description and specify the key validity duration.
 
 6. Click **Save**. The key value is displayed.

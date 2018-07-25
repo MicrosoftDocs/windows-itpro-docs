@@ -7,12 +7,26 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 06/26/2017
+ms.date: 06/25/2018
 ---
 
 # Diagnose MDM failures in Windows 10
 
 To help diagnose enrollment or device management issues in Windows 10 devices managed by an MDM server, you can examine the MDM logs collected from the desktop or mobile device. The following sections describe the procedures for collecting MDM logs.
+
+## Download the MDM Diagnostic Information log from Windows 10 PCs
+
+1. On your managed device go to **Settings** > **Accounts** > **Access work or school**.
+1. Click your work or school account, then click **Info.**  
+   ![Access work or school page in Settings](images/diagnose-mdm-failures15.png)
+
+1. At the bottom of the **Settings** page, click **Create report**.  
+   ![Access work or school page in Settings](images/diagnose-mdm-failures16.png)
+1. A window opens that shows the path to the log files. Click **Export**.
+
+   ![Access work or school page in Settings](images/diagnose-mdm-failures17.png)
+
+1. In File Explorer, navigate to c:\Users\Public\Documents\MDMDiagnostics to see the report.
 
 ## Collect logs directly from Windows 10 PCs
 
@@ -96,9 +110,9 @@ Example: Export the Debug logs
 </SyncML>
 ```
 
-## Collect logs from Windows 10 Mobile devices
+## Collect logs from Windows 10 Mobile devices
 
-Since there is no Event Viewer in Windows 10 Mobile, you can use the [Field Medic]( http://go.microsoft.com/fwlink/p/?LinkId=718232) app to collect logs.
+Since there is no Event Viewer in Windows 10 Mobile, you can use the [Field Medic](https://www.microsoft.com/en-us/p/field-medic/9wzdncrfjb82?activetab=pivot%3aoverviewtab) app to collect logs.
 
 **To collect logs manually**
 
@@ -168,9 +182,9 @@ The following table contains a list of common providers and their corresponding 
 
  
 
-## Collect logs remotely from Windows 10 Mobile devices
+## Collect logs remotely from Windows 10 Holographic or Windows 10 Mobile devices
 
-For mobile devices already enrolled in MDM, you can remotely collect MDM logs through the MDM channel using the [DiagnosticLog CSP](diagnosticlog-csp.md).
+For holographic or mobile devices already enrolled in MDM, you can remotely collect MDM logs through the MDM channel using the [DiagnosticLog CSP](diagnosticlog-csp.md).
 
 You can use the DiagnosticLog CSP to enable the ETW provider. The provider ID is 3DA494E4-0FE2-415C-B895-FB5265C5C83B. The following examples show how to enable the ETW provider:
 

@@ -5,7 +5,7 @@ keywords: school, Minecraft, education edition
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: trudyha
 searchScope:
   - Store

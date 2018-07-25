@@ -9,7 +9,7 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 3/30/2018
 ---
 
