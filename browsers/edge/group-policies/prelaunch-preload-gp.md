@@ -7,6 +7,8 @@ ms.date: 07/25/2018
 ---
 
 # Prelaunch Microsoft Edge and preload tabs in the background  
+>*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*
+
 
 Microsoft Edge pre-launches as a background process during Windows startup when the system is idle waiting to be launched by the user.  Pre-launching helps the performance of Microsoft Edge and minimizes the amount of time required to start up Microsoft Edge. You can also configure Microsoft Edge to prevent Microsoft Edge from pre-launching.  
 
