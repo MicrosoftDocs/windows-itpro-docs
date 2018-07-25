@@ -4,6 +4,9 @@ description: Microsoft Edge shows the home button and by clicking it the Start p
 ms.author: pashort
 author: shortpatti
 ms.date: 07/23/2018
+ms.prod: edge
+ms.mktglfcycl: explore
+ms.sitesec: library
 ---
 
 # Home button configuration options
