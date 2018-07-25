@@ -48,7 +48,7 @@ If successful, this method returns 200, Ok response code with object that holds 
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/testwdatppreview/machineactions/7327b54fd718525c
 
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 
