@@ -1638,6 +1638,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr>
+<td style="vertical-align:top">[Win32CompatibilityAppraiser  CSP](win32compatibilityappraiser-csp.md)</td>
+<td style="vertical-align:top"><p>Added new configuration service provider.</p>
+</td></tr>
+<tr>
 <td style="vertical-align:top">[WindowsLicensing  CSP](windowslicensing-csp.md)</td>
 <td style="vertical-align:top"><p>Added S mode settings.</p>
 </td></tr>
@@ -1669,6 +1673,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Defender/EnableLowCPUPriority</li>
 <li>Defender/SignatureUpdateFallbackOrder </li>
 <li>Defender/SignatureUpdateFileSharesSources </li>
+<li>DeviceInstallation/AllowInstallationOfMatchingDeviceIDs</li>
+<li>DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses</li>
+<li>DeviceInstallation/PreventDeviceMetadataFromNetwork</li>
+<li>DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings</li>
 <li>DmaGuard/DeviceEnumerationPolicy</li>
 <li>Experience/AllowClipboardHistory</li>
 <li>TaskManager/AllowEndTask</li>

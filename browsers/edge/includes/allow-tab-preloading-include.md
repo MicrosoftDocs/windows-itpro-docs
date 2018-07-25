@@ -1,5 +1,5 @@
-<!-- ## Allow Start and New Tab page preload (aka: AllowStartAndNewTabPagePreload) 
->*Supported versions: Microsoft Edge on Windows 10, version 1802*<br> -->
+<!-- ## Allow Start and New Tab page preload (aka: AllowStartAndNewTabPagePreload)  -->  
+>*Supported versions: Microsoft Edge on Windows 10, version 1802*<br> 
 >*Default setting:  Enabled or not configured (Allowed)*
 
 [!INCLUDE [allow-tab-preloading-shortdesc](../shortdesc/allow-tab-preloading-shortdesc.md)]

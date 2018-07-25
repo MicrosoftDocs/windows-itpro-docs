@@ -1,5 +1,6 @@
-<!-- ## Show message when opening sites in Internet Explorer
->*Supported versions: Microsoft Edge on Windows 10, version 1607 and later*<br> -->
+<!-- ## Show message when opening sites in Internet Explorer --> 
+
+>*Supported versions: Microsoft Edge on Windows 10, version 1607 and later*<br> 
 >*Default setting:  Disabled or not configured (No additional message)*
 
 <!-- RS5 update: add option for showing interstitial page with stay in Edge link (Koch) -->
