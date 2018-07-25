@@ -7,7 +7,7 @@ ms.prod: edge
 ms.sitesec: library
 title: Deploy Microsoft Edge kiosk mode
 ms.localizationpriority: high
-ms.date: 07/23/2018 
+ms.date: 07/25/2018 
 ---
 
 # Deploy Microsoft Edge kiosk mode (Preview)

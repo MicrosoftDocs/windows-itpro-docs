@@ -8,7 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 title: New Microsoft Edge Group Policies and MDM settings
 ms.localizationpriority: 
-ms.date: 07/23/2018 
+ms.date: 07/25/2018 
 ---
 
 # New Microsoft Edge Group Policies and MDM settings (Preview)
