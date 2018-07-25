@@ -1,6 +1,5 @@
-
-<!-- Prevent users from turning on browser syncing
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br>  -->
+ <!-- Prevent users from turning on browser syncing -->  
+>*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br>  
 >*Default setting:  Enabled or not configured (Prevented/turned off)*
 
 [!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
@@ -14,7 +13,7 @@
 
 ### Configuration options
 
-For more details about configuring the browser syncing options, see [Sync browser settings](../group-policies/sync-browser-settings-gp.md).
+For more details about configuring the browser syncing options, see [Sync browser settings options](../group-policies/sync-browser-settings-gp.md).
 
 
 ### ADMX info and settings

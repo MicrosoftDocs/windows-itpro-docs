@@ -1,5 +1,5 @@
-<!-- ## Allow web content on New Tab page
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> -->
+<!-- ## Allow web content on New Tab page -->  
+>*Supported versions: Microsoft Edge on Windows 10*<br>  
 >*Default setting:  Enabled (Default New tab page loads)*
 
 
