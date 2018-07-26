@@ -80,6 +80,26 @@ sections:
       
       title: Home button settings
 
+    - href: \browsers\edge\group-policies\start-pages-gp
+
+      html: <p>Learn how configure the Start and New tab pages in Microsoft Edge.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_setup.svg
+      
+      title: Start page settings
+
+    - href: \browsers\edge\group-policies\new-tab-page-settings-gp
+
+      html: <p>Learn how configure the New tab page in Microsoft Edge.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_setup.svg
+      
+      title: New tab page settings
+
     - href: \browsers\edge\group-policies\interoperability-enterprise-guidance-gp
 
       html: <p>Learn how you use Microsoft Edge and Internet Explorer together for a full browsing experience.</p>
@@ -178,22 +198,13 @@ sections:
       
       title: Security & privacy management
 
-    - href: \browsers\edge\group-policies\start-pages-gp
-
-      html: <p>Learn how configure the Start and New tab pages in Microsoft Edge.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      
-      title: Start page & New tab page
-
     - href: \browsers\edge\group-policies\developer-settings-gp
 
-      html: <p>Learn how configure set up Microsoft Edge for development and testing.</p>
+      html: <p>Learn how configure Microsoft Edge for development and testing.</p>
 
       image:
 
         src: https://docs.microsoft.com/media/common/i_config-tools.svg
       
       title: Developer tools & settings
+
