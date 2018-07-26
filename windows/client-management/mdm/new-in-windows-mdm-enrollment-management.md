@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/23   /2018
+ms.date: 07/23/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -1638,12 +1638,16 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr>
+<td style="vertical-align:top">[EnterpriseModernAppManagement  CSP](enterprisemodernappmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added NonRemovable setting under AppManagement node.</p>
+</td></tr>
+<tr>
 <td style="vertical-align:top">[Win32CompatibilityAppraiser  CSP](win32compatibilityappraiser-csp.md)</td>
 <td style="vertical-align:top"><p>Added new configuration service provider.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[WindowsLicensing  CSP](windowslicensing-csp.md)</td>
-<td style="vertical-align:top"><p>Added S mode settings.</p>
+<td style="vertical-align:top"><p>Added S mode settings and SyncML examples.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[SUPL CSP](supl-csp.md)</td>
@@ -1687,7 +1691,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul>
 <p>Recent changes:</p>
 <ul>
-<li>DataUsage/SetCost3G - deprecated in RS5.</li>
+<li>DataUsage/SetCost3G - deprecated in Windows 10, next major version.</li>
 </ul>
 </td></tr>
 </tbody>
