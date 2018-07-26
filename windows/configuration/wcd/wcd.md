@@ -49,7 +49,9 @@ This section describes the settings that you can configure in [provisioning pack
 | [HotSpot](wcd-hotspot.md) | X | X | X | X | X |
 | [InitialSetup](wcd-initialsetup.md) |  | X |  |  |  |
 | [InternetExplorer](wcd-internetexplorer.md) |  | X |  |  |  |
+| [KioskBrowser](wcd-kioskbrowser.md) |  |  |  |  | X |
 | [Licensing](wcd-licensing.md) | X |  |  |  |  |
+| [Location](wcd-location.md) |  | X |  |  | X |
 | [Maps](wcd-maps.md) |X | X | X | X |  |
 | [Messaging](wcd-messaging.md) |  | X |  |  |  |
 | [ModemConfigurations](wcd-modemconfigurations.md) |  | X |  |  |  |
