@@ -142,7 +142,7 @@ sections:
 
     - title: Microsoft Edge resources 
 
-      html: <p><a class="barLink" href="https://docs.microsoft.com/en-us/microsoft-edge/deploy/change-history-for-microsoft-edge">Change history</a></p>
+      html: <p><a class="barLink" href="https://docs.microsoft.com/en-us/microsoft-edge/deploy/change-history-for-microsoft-edge">Document change history</a></p>
 
             <p><a class="barLink" href="https://www.microsoft.com/en-us/WindowsForBusiness/Compare">Compare Windows 10 Editions</a></p>
 

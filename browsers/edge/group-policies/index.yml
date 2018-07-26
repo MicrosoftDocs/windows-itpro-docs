@@ -2,15 +2,15 @@
 
 documentType: LandingData
 
-title: Microsoft Edge Group Policy configuration options 
+title: Microsoft Edge group policies 
 
 metadata:
 
   document_id: 
 
-  title: Microsoft Edge Group Policy configuration options  
+  title: Microsoft Edge group policies  
 
-  description: Learn how to deploy and configure group policies in Microsoft Edge on Windows 10.
+  description: Learn how to configure group policies in Microsoft Edge on Windows 10.
 
   text: Some of the features coming to Microsoft Edge gives you the ability to set a custom URL for the New tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar. 
 

@@ -1,10 +1,11 @@
-#[Microsoft Edge - Deployment guidance for IT Pros](index.yml)
+#[Microsoft Edge for IT Pros](index.yml)
 
 ##[New Microsoft Edge Group Policies and MDM settings](new-policies.md)
 
 ##[Deploy Microsoft Edge kiosk mode](microsoft-edge-kiosk-mode-deploy.md)
 
-##[Group Policy configuration options](group-policies/index.yml)
+##[Microsoft Edge configuration options](group-policies/index.yml)
+###[All group policies](available-policies.md)
 ###[Home button settings](group-policies/home-button-gp.md)
 ###[Prelaunch Microsoft Edge and preload tabs](group-policies/prelaunch-preload-gp.md)
 ###[Search engine customization](group-policies/search-engine-customization-gp.md)
@@ -15,9 +16,11 @@
 
 ##[Change history for Microsoft Edge](change-history-for-microsoft-edge.md)
 
-##[Microsoft Edge requirements and language support](hardware-and-software-requirements.md)
+##[System requirements](about-microsoft-edge.md#minimum-system-requirements)
 
-##[Available policies for Microsoft Edge](available-policies.md)
+##[Supported languages](about-microsoft-edge.md#supported-languages)
+
+
 
 ##[Use Enterprise Mode to improve compatibility](emie-to-improve-compatibility.md)
 

@@ -27,75 +27,11 @@ Microsoft Edge is designed with significant security improvements, helping to de
 
 
 
-Microsoft Edge is the first browser to natively support Windows Hello as a more personal, seamless, and secure way to authenticate on the web, powered by an early implementation of the [Web Authentication (formerly FIDO 2.0 Web API) specification](http://w3c.github.io/webauthn/).
 
-
-## Interoperability goals and enterprise guidance
-
-Our primary goal is that your modern websites work in Microsoft Edge. To that end, we've made Microsoft Edge the default browser.
-
-However, if you're running web apps that continue to use:
-
-* ActiveX controls
-
-* x-ua-compatible headers
-
-* &lt;meta&gt; tags
-
-* Enterprise mode or compatibility view to address compatibility issues
-
-* legacy document modes
-
-You'll need to keep running them using IE11. If you don't have IE11 installed anymore, you can download it from the Microsoft Store or from the [Internet Explorer 11 download page](https://go.microsoft.com/fwlink/p/?linkid=290956). Alternatively, you can also use Enterprise Mode with Microsoft Edge to transition only the sites that need these technologies to load in IE11. For info about Enterprise Mode and Edge, see [Use Enterprise Mode to improve compatibility](emie-to-improve-compatibility.md).
-
-
-### Enterprise guidance
-Microsoft Edge is the default browser experience for Windows 10 and Windows 10 Mobile. However, if you're running web apps that need ActiveX controls, we recommend that you continue to use Internet Explorer 11 for them. If you don't have IE11 installed anymore, you can download it from the Microsoft Store or from the [Internet Explorer 11 download page](https://go.microsoft.com/fwlink/p/?linkid=290956).
-
-We also recommend that you upgrade to IE11 if you're running any earlier versions of Internet Explorer. IE11 is supported on Windows 7, Windows 8.1, and Windows 10. So any legacy apps that work with IE11 will continue to work even as you migrate to Windows 10.
-
-If you're having trouble deciding whether Microsoft Edge is good for your organization, you can take a look at this infographic about the potential impact of using Microsoft Edge in an organization.
-
-![Microsoft Edge infographic](images/microsoft-edge-infographic-sm.png)<br>
-[Click to enlarge](img-microsoft-edge-infographic-lg.md)<br>
-[Click to download image](https://www.microsoft.com/download/details.aspx?id=53892)
-
-#### Microsoft Edge
-Microsoft Edge takes you beyond just browsing to actively engaging with the web through features like Web Note, Reading View, and Cortana.
-
--   **Web Note.** Microsoft Edge lets you annotate, highlight, and call things out directly on webpages.
--   **Reading view.** Microsoft Edge lets you enjoy and print online articles in a distraction-free layout that's optimized for your screen size. While in reading view, you can also save webpages or PDF files to your reading list, for later viewing.
--   **Cortana.** Cortana is automatically enabled on Microsoft Edge. Microsoft Edge lets you highlight words for more info and gives you one-click access to things like restaurant reservations and reviews, without leaving the webpage.
--   **Compatibility and security.** Microsoft Edge lets you continue to use IE11 for sites that are on your corporate intranet or that are included on your Enterprise Mode Site List. You must use IE11 to run older, less secure technology, such as ActiveX controls.
-
-#### IE11
-IE11 offers enterprises additional security, manageability, performance, backward compatibility, and modern standards support.
-
--   **Backward compatibility.** IE11 supports 9 document modes that include high-fidelity emulations for older versions of IE.
--   **Modern web standards.** IE11 supports modern web technologies like HTML5, CSS3, and WebGL, which help to ensure today's modern websites and apps work just as well as your old, legacy websites and apps.
--   **More secure.** IE11 was designed with security in mind and is more secure than older versions. Using security features like SmartScreen and Enhanced Protected Mode can help IE11 reduce your risk.
--   **Faster.** IE11 is significantly faster than previous versions of Internet Explorer, taking advantage of network optimization and hardware-accelerated text, graphics, and JavaScript rendering.
--   **Easier migration to Windows 10.** IE11 is the only version of IE that runs on Windows 7, Windows 8.1, and Windows 10. Upgrading to IE11 on Windows 7 can also help your organization support the next generation of software, services, and devices.
--   **Administration.** IE11 can use the Internet Explorer Administration Kit (IEAK) 11 or MSIs for deployment, and includes more than 1,600 Group Policies and preferences for granular control.
-
-
-## Security and privacy
-
-
-| | |
-|---|---|
-| **[Windows Hello](http://blogs.windows.com/bloggingwindows/2015/03/17/making-windows-10-more-personal-and-more-secure-with-windows-hello/)** | Authenticates the user and the website with asymmetric cryptography technology. |
-| **Microsoft SmartScreen** | Defends against phishing by performing reputation checks on sites visited and blocking any site that is thought to be a phishing site. SmartScreen also helps to defend against installing malicious software or file downloads, even from trusted sites. |
-| **Certificate Reputation system** | Collects data about certificates in use, detecting new certificates and flagging fraudulent certificates automatically. |
-| **Microsoft EdgeHTML** | Defends against hacking through the following security standards features:<ul><li>Support for the W3C standard for Content Security Policy (CSP), which helps web developers defend their sites against cross-site scripting attacks.</li><li>Support for the HTTP Strict Transport Security (HSTS) feature, which is IETF-standard compliant, and helps to ensure that connections to sites are always secure.</li></ul> |
-| **Code integrity and image loading restrictions** | Prevents malicious DLLs from loading or injecting into the content processes. Only signed images are allowed to load in Microsoft Edge. Binaries on remote devices (such as UNC or WebDAV) can&#39;t load. |
-| **Memory corruption mitigations** | Defends against memory corruption weaknesses and vulnerabilities with the use of [CWE-416: Use After Free](http://cwe.mitre.org/data/definitions/416.html) (UAF). |
-| **Memory Garbage Collector (MemGC) mitigation** | Replaces Memory Protector and helps to defend the browser from UAF vulnerabilities by freeing memory from the programmer and automating it, only freeing memory when the automation detects that there are no more references left pointing to a given block of memory. |
-| **Control Flow Guard** | Compiles checks around code that performs indirect jumps based on a pointer, restricting those jumps to only going to function entry points with known addresses. Control Flow Guard is a Microsoft Visual Studio technology. |
 
 
 ## Minimum system requirements
-Some of the components in this table might also need additional system resources. Check the component's documentation for more information.
+Some of the components might also need additional system resources. Check the component's documentation for more information.
 
 
 | Item               | Minimum requirements          |
@@ -231,3 +167,4 @@ Microsoft Edge supports all of the same languages as Windows 10, including:
 | Yoruba                   | Nigeria        | yo-NG  | 
 
  
+---

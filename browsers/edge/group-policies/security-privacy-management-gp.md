@@ -3,34 +3,48 @@ title: Microsoft Edge - Security and privacy management
 description: Microsoft Edge helps to defend from increasingly sophisticated and prevalent web-based attacks against Windows.  While most websites are safe, some sites have been designed to steal personal information or gain access to your system’s resources. 
 ms.author: pashort
 author: shortpatti
-ms.date: 07/25/2018
+ms.date: 07/27/2018
 ---
 
 # Security and privacy management
 >*Supported versions: Microsoft Edge on Windows 10*
 
-Microsoft Edge helps to defend from increasingly sophisticated and prevalent web-based attacks against Windows.  While most websites are safe, some sites are malicious in nature, like stealing personal information or gain access to your system’s resources. By no longer supporting VBScript, JScript, VML, Browser Helper Objects, Toolbars, ActiveX controls, and Internet Explorer document modes, Microsoft Edge significantly reduces attacks making the browser more secure.  
+Microsoft Edge helps to defend from increasingly sophisticated and prevalent web-based attacks against Windows.  While most websites are safe, some sites are malicious in nature, like stealing personal information or gain access to your system’s resources. By no longer supporting VBScript, JScript, VML, Browser Helper Objects, Toolbars, ActiveX controls, and Internet Explorer document modes, Microsoft Edge significantly reduces attacks making the browser more secure. 
+ 
+
+| | |
+|---|---|
+| **[Windows Hello](http://blogs.windows.com/bloggingwindows/2015/03/17/making-windows-10-more-personal-and-more-secure-with-windows-hello/)** | Authenticates the user and the website with asymmetric cryptography technology. Microsoft Edge natively supports Windows Hello as a more personal, seamless, and secure way to authenticate on the web, powered by an early implementation of the [Web Authentication (formerly FIDO 2.0 Web API) specification](http://w3c.github.io/webauthn/). |
+| **Microsoft SmartScreen** | Defends against phishing by performing reputation checks on sites visited and blocking any site that is thought to be a phishing site. SmartScreen also helps to defend against installing malicious software or file downloads, even from trusted sites. |
+| **Certificate Reputation system** | Collects data about certificates in use, detecting new certificates and flagging fraudulent certificates automatically. |
+| **Microsoft EdgeHTML** | Defends against hacking through the following security standards features:<ul><li>Support for the W3C standard for Content Security Policy (CSP), which helps web developers defend their sites against cross-site scripting attacks.</li><li>Support for the HTTP Strict Transport Security (HSTS) feature, which is IETF-standard compliant, and helps to ensure that connections to sites are always secure.</li></ul> |
+| **Code integrity and image loading restrictions** | Prevents malicious DLLs from loading or injecting into the content processes. Only signed images are allowed to load in Microsoft Edge. Binaries on remote devices (such as UNC or WebDAV) can&#39;t load. |
+| **Memory corruption mitigations** | Defends against memory corruption weaknesses and vulnerabilities with the use of [CWE-416: Use After Free](http://cwe.mitre.org/data/definitions/416.html) (UAF). |
+| **Memory Garbage Collector (MemGC) mitigation** | Replaces Memory Protector and helps to defend the browser from UAF vulnerabilities by freeing memory from the programmer and automating it, only freeing memory when the automation detects that there are no more references left pointing to a given block of memory. |
+| **Control Flow Guard** | Compiles checks around code that performs indirect jumps based on a pointer, restricting those jumps to only going to function entry points with known addresses. Control Flow Guard is a Microsoft Visual Studio technology. |
+
+## Relevant group policies
 
 
-## Configure cookies
+### Configure cookies
 [!INCLUDE [configure-cookies-include](../includes/configure-cookies-include.md)]
 
-## Configure Password Manager
+### Configure Password Manager
 [!INCLUDE [configure-password-manager-include](../includes/configure-password-manager-include.md)]
 
-## Configure Windows Defender SmartScreen
+### Configure Windows Defender SmartScreen
 [!INCLUDE [configure-windows-defender-smartscreen-include](../includes/configure-windows-defender-smartscreen-include.md)]
 
-## Prevent bypassing Windows Defender SmartScreen prompts for files 
+### Prevent bypassing Windows Defender SmartScreen prompts for files 
 [!INCLUDE [prevent-bypassing-win-defender-files-include](../includes/prevent-bypassing-win-defender-files-include.md)]
 
-## Prevent bypassing Windows Defender SmartScreen prompts for sites 
+### Prevent bypassing Windows Defender SmartScreen prompts for sites 
 [!INCLUDE [prevent-bypassing-win-defender-sites-include](../includes/prevent-bypassing-win-defender-sites-include.md)]
 
-## Prevent certificate error overrides 
+### Prevent certificate error overrides 
 [!INCLUDE [prevent-certificate-error-overrides-include](../includes/prevent-certificate-error-overrides-include.md)]
 
-## Prevent using Localhost IP address for WebRTC
+### Prevent using Localhost IP address for WebRTC
 [!INCLUDE [prevent-localhost-address-for-webrtc-include](../includes/prevent-localhost-address-for-webrtc-include.md)]
 
 
