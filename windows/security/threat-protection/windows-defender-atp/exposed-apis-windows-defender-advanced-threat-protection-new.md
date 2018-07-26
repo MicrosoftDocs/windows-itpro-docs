@@ -1,5 +1,5 @@
 ---
-title: Use the Windows Defender Advanced Threat Protection APIs  
+title: Use Windows Defender Advanced Threat Protection APIs  
 description: Use the exposed data and actions using a set of progammatic APIs that are part of the Microsoft Intelligence Security Graph.
 keywords: apis, graph api, supported apis, actor, alerts, machine, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 10/23/2017
 ---
 
-# Use the Windows Defender ATP APIs 
+# Use Windows Defender ATP APIs 
 
 **Applies to:**
 
@@ -27,7 +27,7 @@ ms.date: 10/23/2017
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Windows Defender ATP exposes much of the available data and actions using a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Windows Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Windows Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Windows Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you’ll need to take the following steps to use the APIs:
 -	Create an app
@@ -91,6 +91,7 @@ Before using the APIs, you’ll need to create an app that you’ll use to authe
 9. Set your application to be multi-tenanted
 	
 	This is **required** for 3rd party apps (i.e., if you create an application that is intended to run in multiple customers tenant).
+
 	This is **not required** if you create a service that you want to run in your tenant only (i.e., if you create an application for your own usage that will only interact with your own data)​
 
 	Click **Properties** > **Yes** > **Save**.
