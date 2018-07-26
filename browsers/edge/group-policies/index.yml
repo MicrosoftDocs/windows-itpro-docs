@@ -1,0 +1,199 @@
+### YamlMime:YamlDocument
+
+documentType: LandingData
+
+title: Microsoft Edge Group Policy configuration options 
+
+metadata:
+
+  document_id: 
+
+  title: Microsoft Edge Group Policy configuration options  
+
+  description: Learn how to deploy and configure group policies in Microsoft Edge on Windows 10.
+
+  text: Some of the features coming to Microsoft Edge gives you the ability to set a custom URL for the New tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar. 
+
+  keywords: Microsoft Edge, Windows 10
+
+  ms.localizationpriority: high
+
+  author: shortpatti
+
+  ms.author: pashort
+
+  ms.date: 07/26/2018
+
+  ms.topic: article
+
+  ms.devlang: na
+
+sections:
+
+- title: Learn about interoperability goals and enterprise guidance along with system requirements, language support and frequently asked questions.
+
+- items:
+
+  - type: markdown
+
+    text: Get ready to deploy Microsoft Edge. 
+
+- items:
+
+  - type: list
+
+    style: cards
+
+    className: cardsE
+
+    columns: 3
+
+    items:
+
+    - href: \browsers\edge\available-policies
+
+      html: <p>Set up a policy setting once and then copy that setting onto many computers.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_policy.svg
+      
+      title: All group policies
+      
+    - href: \browsers\edge\microsoft-edge-kiosk-mode-deploy
+
+      html: <p>Learn how Microsoft Edge kiosk mode works with assigned access to let IT administrators create a tailored browsing experience designed for kiosk devices.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_categorize.svg
+      
+      title: Deploy Microsoft Edge kiosk mode      
+
+    - href: \browsers\edge\group-policies\home-button-gp
+
+      html: <p>Learn how you can customize the home button or hide it.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_setup.svg
+      
+      title: Home button settings
+
+    - href: \browsers\edge\group-policies\interoperability-enterprise-guidance-gp
+
+      html: <p>Learn how you use Microsoft Edge and Internet Explorer together for a full browsing experience.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_management.svg
+      
+      title: Enterprise mode
+
+    - href: \browsers\edge\group-policies\bowser-settings-management-gp
+
+      html: <p>Learn how you can customize the browser settings, such as printing and saving browsing history, plus more.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_management.svg
+      
+      title: Browser settings management
+      
+    - href: \browsers\edge\group-policies\books-library-management-gp
+
+      html: <p>Learn how you can set up and use the books library, such as using a shared books folder for students and teachers.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_management.svg
+      
+      title: Books library management
+
+    - href: \browsers\edge\group-policies\adobe-settings-gp
+
+      html: <p>Learn how you can configure Microsoft Edge to load Adobe Flash content automatically.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_setup.svg
+      
+      title: Adobe Flash settings
+
+    - href: \browsers\edge\group-policies\extensions-management-gp
+
+      html: <p>Learn how you can configure Microsoft Edge to either prevent or allow users to install and run unverified extensions.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_extensions.svg
+      
+      title: Extensions management
+
+    - href: \browsers\edge\group-policies\search-engine-customization-gp
+
+      html: <p>Learn how you can set the default search engine and configure additional search engines.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_search.svg
+      
+      title: Search engine management
+
+    - href: \browsers\edge\group-policies\telemetry-management-gp
+
+      html: <p>Learn how you can configure Microsoft Edge to collect certain data.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_data-collection.svg
+      
+      title: Telemetry and data collection management
+
+    - href: \browsers\edge\group-policies\address-bar-settings-gp
+
+      html: <p>Learn how you can configure Microsoft Edge to show search suggestions in the address bar.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_http.svg
+      
+      title: Address bar settings
+
+    - href: \browsers\edge\group-policies\favorites-management-gp
+
+      html: <p>Learn how you can provision a standard favorites list as well as keep the favorites lists in sync between IE11 and Microsoft Edge.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_link.svg
+
+    - href: \browsers\edge\group-policies\security-privacy-management-gp
+
+      html: <p>Learn how you can keep your environment and users safe from attacks.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_security-management.svg
+      
+      title: Security & privacy management
+
+    - href: \browsers\edge\group-policies\start-pages-gp
+
+      html: <p>Learn how configure the Start and New tab pages in Microsoft Edge.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_setup.svg
+      
+      title: Start page & New tab page
+
+    - href: \browsers\edge\group-policies\developer-settings-gp
+
+      html: <p>Learn how configure set up Microsoft Edge for development and testing.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_config-tools.svg
+      
+      title: Developer tools & settings
