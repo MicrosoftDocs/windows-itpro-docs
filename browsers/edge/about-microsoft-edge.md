@@ -11,11 +11,9 @@ ms.date: 10/16/2017
 ---
 
 # Microsoft Edge - Deployment Guide for IT Pros
+>Applies to:  Microsoft Edge on Windows 10 and Windows 10 Mobile
 
-**Applies to:**
 
-- Windows 10
-- Windows 10 Mobile
 
 >Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
 
