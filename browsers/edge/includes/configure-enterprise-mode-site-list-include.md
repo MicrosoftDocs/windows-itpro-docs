@@ -5,12 +5,12 @@
 
 [!INCLUDE [configure-enterprise-mode-site-list-shortdesc](../shortdesc/configure-enterprise-mode-site-list-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Turned off. Microsoft Edge does not check the Enterprise Mode Site List, and in this case, users might experience problems while using legacy apps. | |
-|Enabled |1 |1 |Turned on. Microsoft Edge checks the Enterprise Mode Site List if configured.  If an XML file exists in the cache container, IE11 waits 65 seconds and then checks the local cache for a new version from the server. If the server has a different version, Microsoft Edge uses the server file and stores it in the cache container. If you already use a site list, Enterprise Mode continues to work during the 65 second, but uses the existing file.  To add the location to your site list, enter it in the **{URI}** box.<p>For details on how to configure the Enterprise Mode Site List, see the [Instructions](#instructions) section below.   | |
+|Group Policy  |MDM |Registry |Description |
+|---|:---:|:---:|---|
+|Disabled or not configured<br>**(default)** |0 |0 |Turned off. Microsoft Edge does not check the Enterprise Mode Site List, and in this case, users might experience problems while using legacy apps. | 
+|Enabled |1 |1 |Turned on. Microsoft Edge checks the Enterprise Mode Site List if configured.  If an XML file exists in the cache container, IE11 waits 65 seconds and then checks the local cache for a new version from the server. If the server has a different version, Microsoft Edge uses the server file and stores it in the cache container. If you already use a site list, Enterprise Mode continues to work during the 65 second, but uses the existing file.  To add the location to your site list, enter it in the **{URI}** box.<p>For details on how to configure the Enterprise Mode Site List, see the [Instructions](#instructions) section below.   | 
 ---
 
 ### ADMX info and settings
@@ -35,8 +35,7 @@
 
 ### Related Policies
 
-[Show message opening sites in IE](../available-policies.md#show-message-when-opening-sites-in-internet-explorer):
-[!INCLUDE
+[Show message opening sites in IE](../available-policies.md#show-message-when-opening-sites-in-internet-explorer): [!INCLUDE
 [show-message-when-opening-sites-in-ie-shortdesc](../shortdesc/show-message-when-opening-sites-in-ie-shortdesc.md)]
 
 ### Related topics
@@ -70,8 +69,7 @@ which is the equivalent to this Microsoft Edge policy.
 - [Step 1. Turn on Enterprise Mode](#step-1-turn-on-enterprise-mode)
 - [Step 2. (Optional) Import your Enterprise Mode Site List](#step-2-optional-import-your-enterprise-mode-site-list)
 - [Step 3. Add sites to your list](#step-3-add-sites-to-your-list)
-- [Step 4. Turn on Enterprise Mode and use a site list](#step-4-set-up-microsoft-edge-to-use-the-enterprise-mode-site-list)  
-- [Step 5. Send all intranet sites to Internet Explorer 11](#step-5-send-all-intranet-sites-to-internet-explorer-11)
+- [Step 4. Send all intranet sites to Internet Explorer 11](#step-5-send-all-intranet-sites-to-internet-explorer-11)
 
 #### Step 1. Turn on Enterprise Mode
 
@@ -95,11 +93,7 @@ which is the equivalent to this Microsoft Edge policy.
 
 6.  On the **File** menu, go to where you want to save the file, and then click **Save to XML**.<p>You can save the file locally or to a network share. However, you must make sure you deploy it to the location specified in your Group Policy setting.
 
-#### Step 4. Set up Microsoft Edge to use the Enterprise Mode Site List
-
-add the steps here, if there are steps
-
-#### Step 5. Send all intranet sites to Internet Explorer 11
+#### Step 4. Send all intranet sites to Internet Explorer 11
 
 Enabling the Send all intranet sites to Internet Explorer 11 policy automatically opens all intranet sites in IE11, even if the users have Microsoft Edge as their default browser.
 

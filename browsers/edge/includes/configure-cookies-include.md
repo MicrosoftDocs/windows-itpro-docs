@@ -4,7 +4,7 @@
 
 [!INCLUDE [configure-cookies-shortdesc](../shortdesc/configure-cookies-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
@@ -28,8 +28,8 @@
 - **Data type:** Integer
 
 #### Registry settings
-** |<ul><li>**Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main 
-**Value name:** Cookies
-**Value type:** REG_DWORD
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main 
+- **Value name:** Cookies
+- **Value type:** REG_DWORD
 
 <hr>

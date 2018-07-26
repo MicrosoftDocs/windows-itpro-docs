@@ -4,7 +4,7 @@
 
 [!INCLUDE [allow-search-engine-customization-shortdesc](../shortdesc/allow-search-engine-customization-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
@@ -12,21 +12,9 @@
 |Enabled or not configured<br>**(default)** |1 |1 |Allowed | |
 ---
 
+### Configuration options
 
-### Configuration combinations
-
-| **Set default search engine** | **Allow search engine customization** | **Configure additional search engines** | **Outcome** |
-| --- | --- | --- | --- |
-| Not configured (default) | Disabled | Disabled or not configured (default) | Default search engine specified in App settings. Users cannot make changes. |
-| Not configured (default) | Enabled or not configured (default) | Disabled or not configured (default) | Default search engine specified in App settings. Users can make changes to the default search engine at any time. |
-| Disabled | Disabled | Disabled or not configured (default) | Users cannot add, remove, or change any of the search engines, but they can set a default search engine. |
-| Disabled | Enabled or not configured (default) | Disabled or not configured (default) | Users can add new search engines or change the default search engine, in Settings. |
-| Enabled | Disabled | Disabled or not configured (default) | Set the default search engine preventing users from making changes. |
-| Enabled | Enabled or not configured (default) | Disabled or not configured (default) | Set the default search engine and allow users to add search engines or make changes. |
----
-
-![Set default search engine](../images/set-default-search-engine.png)
-
+For more details about configuring the search engine, see [Search engine customization](../group-policies/search-engine-customization-gp.md).
 
 ### ADMX info and settings
 
@@ -56,8 +44,9 @@
 - [Configure additional search engines](../available-policies.md#configure-additional-search-engines): [!INCLUDE [configure-additional-search-engines-shortdesc](../shortdesc/configure-additional-search-engines-shortdesc.md)]
 
 ### Related topics
-- [Microsoft browser extension policy](https://docs.microsoft.com/en-us/legal/windows/agreements/microsoft-browser-extension-policy): This document describes the supported mechanisms for extending or modifying the behavior or user experience of Microsoft Edge and Internet Explorer, or the content displayed by these browsers. Any technique not explicitly listed in this document is considered **unsupported**.
 
-- [Search provider discovery](https://docs.microsoft.com/en-us/microsoft-edge/dev-guide/browser/search-provider-discovery): Rich search integration is built into the Microsoft Edge address bar, including search suggestions, results from the web, your browsing history, and favorites. 
+- [!INCLUDE [man-connections-win-comp-services-shortdesc-include](man-connections-win-comp-services-shortdesc-include.md)]
+
+- [!INCLUDE [search-provider-discovery-shortdesc-include](search-provider-discovery-shortdesc-include.md)]
 
 <hr>

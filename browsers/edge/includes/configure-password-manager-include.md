@@ -1,10 +1,10 @@
 <!-- ## Configure Password Manager -->
 >*Supported versions: Microsoft Edge on Windows 10*<br>
->*Default setting:  Enabled (Allowed/users can change the setting)
+>*Default setting:  Enabled (Allowed/users can change the setting)*
 
 [!INCLUDE [configure-password-manager-shortdesc](../shortdesc/configure-password-manager-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|

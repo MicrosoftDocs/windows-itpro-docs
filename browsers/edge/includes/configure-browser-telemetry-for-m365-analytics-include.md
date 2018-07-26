@@ -1,10 +1,10 @@
-<!-- Configure collection of browsing data for Microsoft 365 Analytics
->*Supported versions: Microsoft Edge on Windows 10, next major version*<br>  -->
+<!-- Configure collection of browsing data for Microsoft 365 Analytics -->  
+>*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br>  
 >*Default setting:  Disabled or not configured (No data collected or sent)*
 
 [!INCLUDE [configure-browser-telemetry-for-m365-analytics-shortdesc](../shortdesc/configure-browser-telemetry-for-m365-analytics-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
@@ -23,12 +23,12 @@
 - **GP English name:** Configure collection of browsing data for Microsoft 365 Analytics
 - **GP name:** ConfigureTelemetryForMicrosoft365Analytics
 - **GP element:** ZonesListBox
-- **GP path:** Data Collection and Preview Builds
+- **GP path:** Windows Components/Microsoft Edge
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 
 #### MDM settings
-- **MDM name:** Browser/[ConfigureTelemetryForMicrosoft365Analytics](../new-policies.md#configure-collection-of-browsing-data-for-microsoft-365-analytics)
+- **MDM name:** Browser/[ConfigureTelemetryForMicrosoft365Analytics](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configuretelemetryformicrosoft365analytics)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureTelemetryForMicrosoft365Analytics
 - **Data type:** Integer

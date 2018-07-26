@@ -4,7 +4,7 @@
 
 [!INCLUDE [allow-microsoft-compatibility-list-shortdesc](../shortdesc/allow-microsoft-compatibility-list-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|

@@ -1,12 +1,12 @@
-<!-- ##Configure Favorites Bar
->*Supported versions: Microsoft Edge on Windows 10, new major release*<br> -->
+<!-- ##Configure Favorites Bar --> 
+>*Supported versions: Microsoft Edge on Windows 10, new major release*<br>  
 >*Default setting:  Not configured (Hidden)*
 
 
 [!INCLUDE [allow-favorites-bar-shortdesc](../shortdesc/configure-favorites-bar-shortdesc.md)]
 
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
@@ -23,7 +23,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[ConfigureFavoritesBar](../new-policies.md#configure-favorites-bar)
+- **MDM name:** Browser/[ConfigureFavoritesBar](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configurefavoritesbar)
 - **Supported devices:** Desktop and Mobile
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureFavoritesBar 
 - **Data type:** Integer
