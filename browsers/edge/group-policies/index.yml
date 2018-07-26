@@ -30,7 +30,7 @@ metadata:
 
 sections:
 
-- title: Microsoft Edge group policies
+- title: 
 
 - items:
 
@@ -44,9 +44,9 @@ sections:
 
     style: cards
 
-    className: cardsG
+    className: cardsI
 
-    columns: 3
+    columns: 2
 
     items:
 
