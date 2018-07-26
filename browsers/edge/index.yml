@@ -30,13 +30,13 @@ metadata:
 
 sections:
 
-- title: Learn about interoperability goals and enterprise guidance along with system requirements, language support and frequently asked questions.
+- title: Get ready to deploy Microsoft Edge
 
 - items:
 
   - type: markdown
 
-    text: Get ready to deploy Microsoft Edge. 
+    text: Learn about interoperability goals and enterprise guidance along with system requirements, language support and frequently asked questions.
 
 - items:
 
