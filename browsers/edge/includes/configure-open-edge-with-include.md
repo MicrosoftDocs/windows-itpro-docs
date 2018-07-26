@@ -1,6 +1,6 @@
 <!-- Configure Open Microsoft Edge With
 
->*Supported versions: Microsoft Edge on Windows 10, next major version*<br> -->
+>*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> -->
 >*Default setting:  Enabled (A specific page or pages)*
 
 [!INCLUDE [configure-open-microsoft-edge-with-shortdesc](../shortdesc/configure-open-microsoft-edge-with-shortdesc.md)]
@@ -20,20 +20,14 @@
 |Enabled<br>**(default)** |3 |3 |Load a specific page or pages. |
 ---
 
+### Configuration options
+
+For more details about configuring the Start pages, see [Start pages](../group-policies/start-pages-gp.md).
+
+
 >[!TIP]
 >If you want to make changes to this policy:<ol><li>Set the **Disabled Lockdown of Start Pages** policy to not configured.</li><li>Make changes to the **Configure Open Microsoft With** policy.</li><li>Enable the **Disabled Lockdown of Start Pages** policy.</li></ol>
 
-### Configuration options
-| **Configure Open Microsoft Edge With** | **Configure Start Pages** | **Disabled Lockdown of Start Pages** | **Outcome** |
-| --- | --- | --- | --- |
-| Enabled (applies to all options) | Enabled – String | Enabled (all configured start pages are editable) | Load URLs defined in the Configure Open Microsoft Edge With policy, and allow users to make changes. |
-| Disabled or not configured | Enabled – String | Enabled (any Start page configured in the Configured Start Pages policy) |  Load any start page and let users make changes .|
-| Enabled (Start page) | Enabled – String | Blank or not configured | Load Start page(s) and prevent users from making changes. |
-| Enabled (New tab page) | Enabled – String | Blank or not configured | Load New tab page and prevent users from making changes. |
-| Enabled (Previous pages) | Enabled – String | Blank or not configured | Load previously opened pages and prevent users from making changes. |
-| Enabled (A specific page or pages) | Enabled – String | Blank or not configured | Load a specific page or pages and prevent users from making changes. |
-| Enabled (A specific page or pages) | Enabled – String | Enabled (any Start page configured in Configure Start Pages policy) | Load a specific page or pages and let users make changes. |
----
 
 
 ### ADMX info and settings
@@ -44,7 +38,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[ConfigureOpenEdgeWith](../new-policies.md#configure-open-microsoft-edge-with)
+- **MDM name:** Browser/[ConfigureOpenEdgeWith](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configureopenmicrosoftedgewith)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureOpenEdgeWith
 - **Data type:** Integer

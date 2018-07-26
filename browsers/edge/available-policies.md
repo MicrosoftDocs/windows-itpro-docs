@@ -24,9 +24,11 @@ By using Group Policy and Intune, you can set up a policy setting once, and then
 > For more info about the tools you can use to change your Group Policy objects, see the Internet Explorer 11 topics, [Group Policy and the Group Policy Management Console (GPMC)](https://go.microsoft.com/fwlink/p/?LinkId=617921), [Group Policy and the Local Group Policy Editor](https://go.microsoft.com/fwlink/p/?LinkId=617922), [Group Policy and the Advanced Group Policy Management (AGPM)](https://go.microsoft.com/fwlink/p/?LinkId=617923), and [Group Policy and Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=617924).
 
 
-Microsoft Edge works with the following Group Policy settings to help you manage your company's web browser configurations. The Group Policy settings are found in the Group Policy Editor in the following location: 
 
-Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge\
+>*You can find the Microsoft Edge Group Policy settings in the following location of the Group Policy Editor:*
+> 
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\*
+<p>
 
 ## Allow a shared books folder
 [!INCLUDE [allow-shared-folder-books-include.md](includes/allow-shared-folder-books-include.md)] 
@@ -63,9 +65,6 @@ Computer Configuration\Administrative Templates\Windows Components\Microsoft Edg
 
 ## Allow search engine customization
 [!INCLUDE [allow-search-engine-customization-include.md](includes/allow-search-engine-customization-include.md)]
-
-## Allow Start and New Tab page preload
-[!INCLUDE [allow-tab-preloading-include](includes/allow-tab-preloading-include.md)]
 
 ## Allow web content on New Tab page
 [!INCLUDE [allow-web-content-new-tab-page-include.md](includes/allow-web-content-new-tab-page-include.md)]

@@ -1,2 +1,4 @@
 <!-- ## Configure Favorites -->
->Use [Provision Favorites](../available-policies.md#provision-favorites) in place of this policy.
+>Use the **[Provision Favorites](../available-policies.md#provision-favorites)** policy in place of Configure Favorites.
+
+<hr>

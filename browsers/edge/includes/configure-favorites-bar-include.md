@@ -23,7 +23,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[ConfigureFavoritesBar](../new-policies.md#configure-favorites-bar)
+- **MDM name:** Browser/[ConfigureFavoritesBar](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configurefavoritesbar)
 - **Supported devices:** Desktop and Mobile
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureFavoritesBar 
 - **Data type:** Integer

@@ -1,5 +1,5 @@
 <!-- ## Allow Saving History 
->*Supported versions: Microsoft Edge on Windows 10, next major version*<br> -->
+>*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> -->
 >*Default setting:  Enabled or not configured (Allowed)*
 
 [!INCLUDE [allow-saving-history-shortdesc](../shortdesc/allow-saving-history-shortdesc.md)]
@@ -21,7 +21,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowSavingHistory](../new-policies.md#allow-saving-history)
+- **MDM name:** Browser/[AllowSavingHistory](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsavinghistory)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowSavingHistory 
 - **Data type:** Integer
