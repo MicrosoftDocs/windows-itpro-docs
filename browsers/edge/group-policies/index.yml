@@ -126,7 +126,7 @@ sections:
 
       image:
 
-        src: https://docs.microsoft.com/media/common/i_management.svg
+        src: https://docs.microsoft.com/media/common/i_library.svg
       
       title: Books library management
 
