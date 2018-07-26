@@ -15,7 +15,8 @@ ms.date: 07/27/2018
 Welcome to the latest Insider Preview builds for HoloLens!  It’s simple to get started and provide valuable feedback for our next major operating system update for HoloLens. 
  
 >Latest insider version: 10.0.17720.1000 
- 
+
+<span id="get-insider" />
 ## How do I install the Insider builds? 
  
 On a device running the Windows 10 April 2018 Update, go to **Settings -> Update & Security -> Windows Insider Program** and select **Get started**. Link the account you used to register as a Windows Insider. 
@@ -74,14 +75,14 @@ In order to switch to the Chinese or Japanese version of HoloLens, you’ll need
 >[!IMPORTANT] 
 >Installing the Chinese or Japanese builds of HoloLens using WDRT will delete existing data, like personal files and settings, from your HoloLens. 
  
-1. On a retail HoloLens device, opt in to Insider Preview builds to prepare your device for the RS5 Preview.  See above for details 
-2. On your PC, download and install the Windows Device Recovery Tool (WDRT) 
-3. Download the package for the language you want to your PC.  Simplified Chinese or Japanese 
-4. When the download is finished, select File Explorer > Downloads. Right-click the zipped folder you just downloaded, and select Extract all... > Extract to unzip it. 
+1. On a retail HoloLens device, [opt in to Insider Preview builds](#get-insider) to prepare your device for the RS5 Preview.   
+2. On your PC, download and install [the Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379). 
+3. Download the package for the language you want to your PC:  [Simplified Chinese](https://aka.ms/hololenspreviewdownload-ch) or [Japanese](https://aka.ms/hololenspreviewdownload-jp).
+4. When the download is finished, select **File Explorer > Downloads**. Right-click the zipped folder you just downloaded, and select **Extract all... > Extract** to unzip it. 
 5. Connect your HoloLens to your PC using the micro-USB cable it came with. (Even if you've been using other cables to connect your HoloLens, this one works best.)  
 6. The tool will automatically detect your HoloLens. Select the Microsoft HoloLens tile. 
-7. On the next screen, select Manual package selection and choose the installation file contained in the folder you unzipped in step 4. (Look for a file with the extension “.ffu”.) 
-8. Select Install software and follow the instructions to finish installing. 
-9. Once the build is installed, HoloLens setup will start automatically.  Put on the device and follow the setup directions. 
+7. On the next screen, select **Manual package selection** and choose the installation file contained in the folder you unzipped in step 4. (Look for a file with the extension “.ffu”.) 
+8. Select **Install software** and follow the instructions to finish installing. 
+9. Once the build is installed, HoloLens setup will start automatically. Put on the device and follow the setup directions. 
  
-When you’re done with setup, go to Settings -> Update & Security -> Windows Insider Program and check that you’re configured to receive the latest preview builds.  The Chinese/Japanese version of HoloLens will be kept up-to-date with the latest preview builds via the Windows Insider Program the same way the English version is. 
+When you’re done with setup, go to **Settings -> Update & Security -> Windows Insider Program** and check that you’re configured to receive the latest preview builds.  The Chinese/Japanese version of HoloLens will be kept up-to-date with the latest preview builds via the Windows Insider Program the same way the English version is. 
