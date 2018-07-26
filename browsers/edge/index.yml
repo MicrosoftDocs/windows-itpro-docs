@@ -72,7 +72,7 @@ sections:
 
     - href: https://www.microsoft.com/en-us/WindowsForBusiness/Compare
 
-      html: <p>Learn about the supported features and functionality in each Windows edition.</p>
+      html: <p>Learn about the supported features & functionality in each Windows edition.</p>
 
       image:
 
@@ -88,7 +88,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_security-management.svg
 
-      title: Security and protection
+      title: Security & protection
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/interoperability-enterprise-guidance-gp
 
@@ -98,7 +98,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_management.svg
 
-      title: Interoperability and enterprise guidance
+      title: Interoperability & enterprise guidance
 
     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies
 
@@ -108,27 +108,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_policy.svg
 
-      title: Group policies and configuration options   
-
-    - href: https://www.microsoft.com/itpro/microsoft-edge/technical-benefits
-
-      html: <p>Learn about the impact of using Microsoft Edge in a large organization.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_config-tools.svg
-      
-      title: Measuring the impact of Microsoft Edge
-
-        - href: https://developer.microsoft.com/microsoft-edge/platform/changelog
-
-      html: <p>Learn about the features in the current Microsoft Edge releases, the Windows Insider Preview builds, and what was introduced in previous releases.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_config-tools.svg
-      
-      title: Microsoft Edge changelog
+      title: Group policies & configuration options   
 
 - items:
 
@@ -150,6 +130,9 @@ sections:
 
             <p><a class="barLink" href="https://twitter.com/MSEdgeDev">Microsoft Edge Dev on Twitter</a></p>
 
+            <p><a class="barLink" href="hhttps://developer.microsoft.com/microsoft-edge/platform/changelog/">Microsoft Edge changelog</a></p>
+
+            <p><a class="barLink" href="https://www.microsoft.com/itpro/microsoft-edge/technical-benefits">Measuring the impact of Microsoft Edge</a></p>
         
     - title: Internet Explorer 11 resources 
 

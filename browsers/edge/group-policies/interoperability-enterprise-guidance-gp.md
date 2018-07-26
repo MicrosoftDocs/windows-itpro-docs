@@ -13,6 +13,11 @@ ms.sitesec: library
 >*Supported versions: Microsoft Edge on Windows 10*  
 
 
+ 
+
+
+
+
 default browser for Windows 10 and Windows 10 Mobile
 
 goal is that all websites work in Microsoft Edge but at the same time if you have apps that use any of the following legacy technologies, you must keep running them in Internet Explorer 11:
