@@ -62,6 +62,7 @@
 ### [PowerShell cmdlets for provisioning Windows 10 (reference)](provisioning-packages/provisioning-powershell.md)
 ### [Windows Configuration Designer command-line interface (reference)](provisioning-packages/provisioning-command-line.md)
 ### [Windows Configuration Designer provisioning settings (reference)](wcd/wcd.md)
+#### [Changes to settings in Windows Configuration Designer](wcd/wcd-changes.md)
 #### [AccountManagement](wcd/wcd-accountmanagement.md)
 #### [Accounts](wcd/wcd-accounts.md) 
 #### [ADMXIngestion](wcd/wcd-admxingestion.md) 
