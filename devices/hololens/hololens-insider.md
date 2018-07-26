@@ -41,7 +41,7 @@ HoloLens overlays (file picker, keyboard, dialogs, etc.) | You’ll now see over
 Visual feedback overlay UI for volume change | When you use the volume up/down buttons on your HoloLens you’ll see a visual display of the volume level. | Adjust the device volume using the volume up/down buttons located on the right arm of the HoloLens. Use the visual display to track the volume level. 
 New UI for device boot | A loading indicator was added during the boot process to provide visual feedback that the system is loading. | Reboot your device to see the new loading indicator—it’s between the "Hello" message and the Windows boot logo. 
 Share UX: Nearby Sharing | Addition of the Windows Nearby Sharing experience, allowing you to share a capture with a nearby Windows device. | Capture a photo or video on HoloLens (or use the share button from an app such as Microsoft Edge).  Select a nearby Windows device to share with. 
-Share from Microsoft Edge | Share button is now available on Microsoft Edge windows on HoloLens. | In Microsoft Edge, select Share. Use the HoloLens share picker to share web content. 
+Share from Microsoft Edge | Share button is now available on Microsoft Edge windows on HoloLens. | In Microsoft Edge, select **Share**. Use the HoloLens share picker to share web content. 
 
 ### For developers 
  
