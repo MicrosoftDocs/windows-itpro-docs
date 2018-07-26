@@ -46,7 +46,7 @@ sections:
 
     className: cardsG
 
-    columns: 2
+    columns: 3
 
     items:
 
