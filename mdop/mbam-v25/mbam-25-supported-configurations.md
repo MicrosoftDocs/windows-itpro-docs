@@ -284,7 +284,7 @@ MBAM supports the following versions of Configuration Manager.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft System Center Configuration Manager (Current Branch), version 1610</p></td>
+<td align="left"><p>Microsoft System Center Configuration Manager (Current Branch), versions up to 1806</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>

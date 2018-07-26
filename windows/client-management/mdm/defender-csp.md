@@ -12,6 +12,8 @@ ms.date: 07/19/2018
 
 # Defender CSP
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
 
@@ -175,6 +177,57 @@ Supported operation is Get.
 An interior node to group information about Windows Defender health status.
 
 Supported operation is Get.
+
+<a href="" id="health-productstatus"></a>**Health/ProductStatus**  
+Added in Windows 10, next major version. Provide the current state of the product. This is a bitmask flag value that can represent one or multiple product states from below list. 
+
+Data type is integer. Supported operation is Get. 
+
+Supported product status values:  
+-  No status                                                        = 0
+-  Service not running                                              = 1 << 0
+-  Service started without any malware protection engine            = 1 << 1
+-  Pending full scan due to threat action                           = 1 << 2
+-  Pending reboot due to threat action                              = 1 << 3
+-  ending manual steps due to threat action                        = 1 << 4
+-  AV signatures out of date                                        = 1 << 5
+-  AS signatures out of date                                        = 1 << 6
+-  No quick scan has happened for a specified period                = 1 << 7
+-  No full scan has happened for a specified period                 = 1 << 8
+-  System initiated scan in progress                                = 1 << 9
+-  System initiated clean in progress                               = 1 << 10
+-  There are samples pending submission                             = 1 << 11
+-  Product running in evaluation mode                               = 1 << 12
+-  Product running in non-genuine Windows mode                      = 1 << 13
+-  Product expired                                                  = 1 << 14
+-  Off-line scan required                                           = 1 << 15
+-  Service is shutting down as part of system shutdown              = 1 << 16
+-  Threat remediation failed critically                             = 1 << 17
+-  Threat remediation failed non-critically                         = 1 << 18
+-  No status flags set (well initialized state)                     = 1 << 19
+-  Platform is out of date                                          = 1 << 20
+-  Platform update is in progress                                   = 1 << 21
+-  Platform is about to be outdated                                 = 1 << 22
+-  Signature or platform end of life is past or is impending        = 1 << 23
+-  Windows SMode signatures still in use on non-Win10S install      = 1 << 24
+
+Example:
+
+``` syntax
+<SyncML xmlns="SYNCML:SYNCML1.1">
+  <SyncBody>
+    <Get>
+      <CmdID>1</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/Defender/Health/ProductStatus</LocURI>
+          </Target>
+        </Item>     
+    </Get>
+    <Final/>
+  </SyncBody>
+</SyncML>
+```
 
 <a href="" id="health-computerstate"></a>**Health/ComputerState**  
 Provide the current state of the device.

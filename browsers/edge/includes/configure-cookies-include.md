@@ -28,8 +28,8 @@
 - **Data type:** Integer
 
 #### Registry settings
-** |<ul><li>**Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main 
-**Value name:** Cookies
-**Value type:** REG_DWORD
+- **Path:** HKLM\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main 
+- **Value name:** Cookies
+- **Value type:** REG_DWORD
 
 <hr>

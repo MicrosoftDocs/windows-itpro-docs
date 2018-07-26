@@ -14,7 +14,7 @@ ms.date: 01/26/2018
 
 The Firewall configuration service provider (CSP) allows the mobile device management (MDM) server to configure the Windows Defender Firewall global settings, per profile settings, as well as the desired set of custom rules to be enforced on the device.  Using the Firewall CSP the IT admin can now manage non-domain devices, and reduce the risk of network security threats across all systems connecting to the corporate network.  This CSP was added Windows 10, version 1709.
  
-Firewall configuration commands must be wrapped in an Atomic block in SyncML.
+Each of the Firewall rules in the FirewallRules section must be wrapped in an Atomic block in SyncML.
 
 For detailed information on some of the fields below see [[MS-FASP]: Firewall and Advanced Security Protocol documentation](https://msdn.microsoft.com/en-us/library/mt620101.aspx).
 
@@ -284,7 +284,7 @@ Sample syncxml to provision the firewall settings to evaluate
 
 <a href="" id="enabled"></a>**FirewallRules/_FirewallRuleName_/Enabled**
 <p style="margin-left: 20px">Indicates whether the rule is enabled or disabled. If the rule must be enabled, this value must be set to true.
-<p style="margin-left: 20px">If not specified - a new rule is disabled by default.</p>
+<p style="margin-left: 20px">If not specified - a new rule is enabled by default.</p>
 <p style="margin-left: 20px">Boolean value. Supported operations are Get and Replace.</p>
 
 <a href="" id="profiles"></a>**FirewallRules/_FirewallRuleName_/Profiles**
@@ -310,7 +310,7 @@ Sample syncxml to provision the firewall settings to evaluate
 <ul>
 <li>IN - the rule applies to inbound traffic.</li>
 <li>OUT - the rule applies to outbound traffic.</li>
-<li>If not specified, the default is IN.</li>
+<li>If not specified, the default is Out.</li>
 </ul>
 <p style="margin-left: 20px">Value type is string. Supported operations are Get and Replace.</p>
 

@@ -2853,6 +2853,208 @@ The following fields are available:
 - **PluginName** Name of the specific remediation for each generic plugin event.
 - **Result** Results of the detection or perform action phases of the remediation system.
 
+## Sediment Service events
+
+>[!NOTE]
+>Events from this provider are sent with the installation of KB4023057 and any subsequent Windows update. For details, see [this support article](https://support.microsoft.com/help/4023057).
+
+### Microsoft.Windows.SedimentService.Applicable
+
+Indicates whether a given plugin is applicable.
+
+The following fields are available:
+
+- **CV** Correlation vector.
+- **DetectedCondition** Boolean true if detect condition is true and perform action will be run.
+- **GlobalEventCounter** Client side counter which indicates ordering of events.
+- **IsSelfUpdateEnabledInOneSettings** True/False based on whether self update is enabled.
+- **IsSelfUpdateNeeded** True/False based on whether a newer version is available.
+- **PackageVersion** Version of the package.
+- **PluginName** Name of the plugin specified for each generic plugin event.
+- **Result** This is the HRESULT for detection or perform action phases of the plugin.
+
+### Microsoft.Windows.SedimentService.Completed
+
+Indicates whether a given plugin has completed its work.
+
+The following fields are available:
+
+- **CV** Correlation vector.
+- **FailedReasons** String reason for any plugin failures.
+- **GlobalEventCounter** Client side counter which indicates ordering of events.
+- **PackageVersion** Current package version of Remediation.
+- **PluginName** Name of the plugin specified for each generic plugin event.
+- **Result** Result of the service execution.
+- **SedimentServiceCheckTaskFunctional** Result of checking if the scheduled task is functional.
+- **SedimentServiceCurrentBytes** Current number of bytes the service is consuming.
+- **SedimentServiceKillService** True/False based on whether the service should be stopped.
+- **SedimentServiceMaximumBytes** Maximum bytes the service can consume.
+- **SedimentServiceRetrievedKillService** True/False whether the kill service information was retrieved.
+- **SedimentServiceStopping** True/False indicating whether the service was found to be stopping.
+- **SedimentServiceTaskFunctional** True/False if scheduled task is functional. If task is not functional this indicates plugins will be run.
+- **SedimentServiceTotalIterations** Number of iterations service will wait before running again.
+
+### Microsoft.Windows.SedimentService.Error
+
+Indicates whether an error condition occurs in the plugin.
+
+The following fields are available:
+
+- **Message** String message containing information from the service.
+- **PackageVersion** Version of the package.
+- **HResult** Return value from the plugin result.
+
+### Microsoft.Windows.SedimentService.FallbackError
+
+Indicates whether an error occurs for a fallback in the plugin.
+
+The following fields are available:
+
+- **s0** Fallback error level.
+- **wilResult** Result for Windows Installer Logging function.
+
+### Microsoft.Windows.SedimentService.Information
+
+General information returned from the plugin.
+
+The following fields are available:
+
+- **HResult** Result of the plugin execution.
+- **Message** Information collected from the plugin based on the purpose of the plugin.
+- **PackageVersion** Version of the package.
+
+### Microsoft.Windows.SedimentService.Started
+
+Indicates that a given plugin has started.
+
+The following fields are available:
+
+- **CV** Correlation vector
+- **GlobalEventCounter** Client side counter which indicates ordering of events.
+- **PackageVersion** Version of the package.
+- **PluginName** Name of the plugin running.
+- **Result** Return code from the plugin result.
+
+### Microsoft.Windows.SedimentService.wilResult
+
+Result from the windows internal library.
+
+The following fields are available:
+
+- **callContext** List of telemetry activities containing this error.
+- **currentContextId** Identifier for the newest telemetry activity containing this error.
+- **currentContextMessage** Custom message associated with the newest telemetry activity containing this error (if any).
+- **currentContextName** Name of the newest telemetry activity containing this error.
+- **failureType** Indicates what type of failure was observed (exception, returned error, logged error or fail fast.
+- **failureId** Identifier assigned to this failure.
+- **filename** The name of the source file where the error occurred.
+- **hresult** Failure error code.
+- **lineNumber** Line number within the source file where the error occurred.
+- **message** Custom message associated with the failure (if any).
+- **module** Name of the binary where the error occurred.
+- **originatingContextId** Identifier for the oldest telemetry activity containing this error.
+- **originatingContextMessage** Custom message associated with the oldest telemetry activity containing this error (if any).
+- **originatingContextName** Name of the oldest telemetry activity containing this error.
+- **threadId** Identifier of the thread the error occurred on.
+
+## Sediment Launcher events
+
+>[!NOTE]
+>Events from this provider are sent with the installation of KB4023057 and any subsequent Windows update. For details, see [this support article](https://support.microsoft.com/help/4023057).
+
+### Microsoft.Windows.SedimentLauncher.Applicable
+
+Indicates whether a given plugin is applicable.
+
+The following fields are available:
+
+- **CV** Correlation vector.
+- **DetectedCondition** Boolean true if detect condition is true and action will be run.
+- **GlobalEventCounter** Client side counter which indicates ordering of events.
+- **IsSelfUpdateEnabledInOneSettings** True/False based on whether self update is enabled.
+- **IsSelfUpdateNeeded** True/False based on whether a newer version is available.
+- **PackageVersion** Version of the package.
+- **PluginName** Name of the plugin specified for each generic plugin event.
+- **Result** This is the HRESULT for detection or perform action phases of the plugin.
+
+### Microsoft.Windows.SedimentLauncher.Completed
+
+Indicates whether a given plugin has completed its work.
+
+The following fields are available:
+
+- **CV** Correlation vector.
+- **FailedReasons** String reason for any plugin failures. 
+- **GlobalEventCounter** Client side counter which indicates ordering of events.
+- **PackageVersion** Current package version of Remediation.
+- **PluginName** Name of the plugin specified for each generic plugin event.
+- **Result** Result of the service execution.
+- **SedLauncherExecutionResult** Final result of launcher running the plugins from the dll.
+
+### Microsoft.Windows.SedimentLauncher.Error
+
+Error occurred during execution of the plugin.
+
+The following fields are available:
+
+- **Message** Information message returned from a plugin containing only information internal to plugin execution.
+- **PackageVersion** Version of the package.
+- **HResult** Return value from the plugin result.
+
+### Microsoft.Windows.SedimentLauncher.FallbackError
+
+Error occurred during execution of the plugin fallback.
+
+The following fields are available:
+
+- **s0** Fallback error level for plugin.
+- **wilResult** Result from executing Windows Installer Logging based function.
+
+### Microsoft.Windows.SedimentLauncher.Information
+
+General information returned from the plugin.
+
+The following fields are available:
+
+- **HResult** Result of the plugin execution.
+- **Message** Information collected from the plugin based on the purpose of the plugin.
+- **PackageVersion** Version of the package.
+
+### Microsoft.Windows.SedimentLauncher.Started
+
+Indicates that a given plugin has started.
+
+The following fields are available:
+
+- **CV** Correlation vector.
+- **GlobalEventCounter** Client side counter which indicates ordering of events.
+- **PackageVersion** Version of the package.
+- **PluginName** Name of the plugin running.
+- **Result** Return code from the plugin result.
+
+### Microsoft.Windows.SedimentLauncher.wilResult
+
+Result from the windows internal library.
+
+The following fields are available:
+
+- **callContext** List of telemetry activities containing this error.
+- **currentContextId** Identifier for the newest telemetry activity containing this error.
+- **currentContextMessage** Custom message associated with the newest telemetry activity containing this error (if any).
+- **currentContextName** Name of the newest telemetry activity containing this error.
+- **failurecount** Number of failures seen.
+- **failureType** Indicates what type of failure was observed (exception, returned error, logged error or fail fast.
+- **failureId** Identifier assigned to this failure.
+- **filename** The name of the source file where the error occurred.
+- **function** Name of the function where the error occurred.
+- **hresult** Failure error code.
+- **lineNumber** Line number within the source file where the error occurred.
+- **message** Custom message associated with the failure (if any).
+- **module** Name of the binary where the error occurred.
+- **originatingContextId** Identifier for the oldest telemetry activity containing this error.
+- **originatingContextMessage** Custom message associated with the oldest telemetry activity containing this error (if any).
+- **originatingContextName** Name of the oldest telemetry activity containing this error.
+- **threadId** Identifier of the thread the error occurred on.
 
 ## Setup events
 

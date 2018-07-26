@@ -1,6 +1,16 @@
 {
 "redirections": [
 {
+    "source_path": "windows/deployment/update/waas-windows-insider-for-business-add.md",
+    "redirect_url": "https://docs.microsoft.com/en-us/windows-insider/at-work-pro/wip-4-biz-add",
+        "redirect_document_id": true
+ },
+{
+    "source_path": "windows/deployment/update/waas-windows-insider-for-business-faq.md",
+    "redirect_url": "https://docs.microsoft.com/en-us//windows-insider/at-work-pro/wip-4-biz-get-started",
+    "redirect_document_id": true
+},
+{
 "source_path": "windows/deployment/update/waas-windows-insider-for-business.md",
 "redirect_url": "/windows-insider/at-work-pro/wip-4-biz-get-started",
 "redirect_document_id": true
@@ -13488,11 +13498,6 @@
 {
 "source_path": "windows/update/waas-windows-insider-for-business-aad.md",
 "redirect_url": "/windows/deployment/update/waas-windows-insider-for-business-aad",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/update/waas-windows-insider-for-business-faq.md",
-"redirect_url": "/windows/deployment/update/waas-windows-insider-for-business-faq",
 "redirect_document_id": true
 },
 {
