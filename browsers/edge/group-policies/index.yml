@@ -30,13 +30,13 @@ metadata:
 
 sections:
 
-- title: Learn about interoperability goals and enterprise guidance along with system requirements, language support and frequently asked questions.
+- title: Microsoft Edge group policies
 
 - items:
 
   - type: markdown
 
-    text: Get ready to deploy Microsoft Edge. 
+    text: Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings. Group Policy objects (GPOs) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences.
 
 - items:
 
@@ -118,7 +118,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_management.svg
       
-      title: Browser settings management
+      title: Browser settings
       
     - href: \browsers\edge\group-policies\books-library-management-gp
 
@@ -168,7 +168,7 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_data-collection.svg
       
-      title: Telemetry and data collection management
+      title: Telemetry and data collection 
 
     - href: \browsers\edge\group-policies\address-bar-settings-gp
 
@@ -187,6 +187,8 @@ sections:
       image:
 
         src: https://docs.microsoft.com/media/common/i_link.svg
+
+      title: Favorites management
 
     - href: \browsers\edge\group-policies\security-privacy-management-gp
 
