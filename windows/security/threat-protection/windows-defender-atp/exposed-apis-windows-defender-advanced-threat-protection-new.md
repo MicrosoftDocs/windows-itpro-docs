@@ -97,3 +97,8 @@ Before using the APIs, you’ll need to create an app that you’ll use to authe
 	Click **Properties** > **Yes** > **Save**.
 
 	![Image of multi tenant](images/webapp-edit-multitenant.png)
+
+
+
+## Related topics
+- [Supported Windows Defender ATP APIs](supported-apis-windows-defender-advanced-threat-protection-new.md)
