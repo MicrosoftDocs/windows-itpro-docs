@@ -120,7 +120,7 @@ sections:
       
       title: Measuring the impact of Microsoft Edge
 
-        - href: https://developer.microsoft.com/microsoft-edge/platform/changelog/
+        - href: https://developer.microsoft.com/microsoft-edge/platform/changelog
 
       html: <p>Learn about the features in the current Microsoft Edge releases, the Windows Insider Preview builds, and what was introduced in previous releases.</p>
 
@@ -159,4 +159,20 @@ sections:
             
             <p><a class="barLink" href="https://go.microsoft.com/fwlink/p/?linkid=290956">Download Internet Explorer 11</a></p>
 
+    - title: Additional resources 
+
+      html: <p><a class="barLink" href="https://go.microsoft.com/fwlink/p/?LinkId=617921">Group Policy and the Group Policy Management Console (GPMC)</a></p>
+
+            <p><a class="barLink" href="https://go.microsoft.com/fwlink/p/?LinkId=617922">Group Policy and the Local Group Policy Editor</a></p>
+            
+            <p><a class="barLink" href="https://go.microsoft.com/fwlink/p/?LinkId=617923">Group Policy and the Advanced Group Policy Management (AGPM)</a></p>
+
+            <p><a class="barLink" href="https://go.microsoft.com/fwlink/p/?LinkId=617924">Group Policy and Windows PowerShell</a></p>
+
+
+
+
+
+
+            
             
