@@ -9,12 +9,18 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 06/04/2018
+ms.date: 07/27/2018
 ---
 
 # Change history for Microsoft HoloLens documentation
 
 This topic lists new and updated topics in the [Microsoft HoloLens documentation](index.md).
+
+## July 2018
+
+New or changed topic | Description
+--- | ---
+[Insider preview for Microsoft HoloLens](hololens-insider.md) | New
 
 ## June 2018
 

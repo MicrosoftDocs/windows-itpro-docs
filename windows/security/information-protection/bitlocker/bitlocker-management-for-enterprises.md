@@ -24,7 +24,7 @@ Companies that image their own computers using Microsoft System Center 2012 Conf
 Enterprises can use [Microsoft BitLocker Administration and Management (MBAM)](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/) to manage client computers with BitLocker that are domain-joined on-premises until [mainstream support ends in July 2019](https://support.microsoft.com/en-us/lifecycle/search?alpha=Microsoft%20BitLocker%20Administration%20and%20Monitoring%202.5%20Service%20Pack%201) or they can receive extended support until July 2024. Thus, over the next few years, a good strategy for enterprises will be to plan and move to cloud-based management for BitLocker. When moving to cloud-based management, following these steps could be helpful:
 
 1. Disable MBAM management and leave MBAM as only a database backup for the recovery key.
-2. Join the computers to Azure Active Directory (Azure AD). 
+2. Join the computers to Azure Active Directory (Azure AD).
 3. Use `Manage-bde -protectors -aadbackup` to backup the recovery key to Azure AD.
 
 BitLocker recovery keys can be managed from Azure AD thereafter. The MBAM database does not need to be migrated. 
