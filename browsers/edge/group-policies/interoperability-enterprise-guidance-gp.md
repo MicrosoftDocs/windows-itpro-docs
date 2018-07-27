@@ -34,7 +34,7 @@ goal is that all websites work in Microsoft Edge but at the same time if you hav
 
 
 >[!TIP]
->You can also use Enterprise Mode with Microsoft Edge to transition only the sites that need these technologies to load in IE11. For info about Enterprise Mode and Edge, see [Use Enterprise Mode to improve compatibility](emie-to-improve-compatibility.md). 
+>You can also use Enterprise Mode with Microsoft Edge to transition only the sites that need these technologies to load in IE11. For info about Enterprise Mode and Edge, see [Use Enterprise Mode to improve compatibility](../emie-to-improve-compatibility.md). 
 
 
 
