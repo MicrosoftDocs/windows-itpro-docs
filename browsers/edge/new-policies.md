@@ -8,7 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 title: New Microsoft Edge Group Policies and MDM settings
 ms.localizationpriority: 
-ms.date: 07/23/2018 
+ms.date: 07/25/2018 
 ---
 
 # New Microsoft Edge Group Policies and MDM settings (Preview)
@@ -32,8 +32,8 @@ We are discontinuing the use of the **Configure Favorites** group policy. Use th
 | **Group Policy** | **New/update?** | **MDM Setting** | **New/update?** |
 | --- | --- | --- | --- |
 | [Allow fullscreen mode](#allow-fullscreen-mode) | New |  [AllowFullscreen](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowfullscreenmode) | New |
+| [Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed](#allow-prelaunch) | New | [AllowPrelaunch](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowprelaunch) | New |
 | [Allow Microsoft Edge to start and load the Start and New Tab page at Windows startup and each time Microsoft Edge is closed](#allow-microsoft-edge-to-start-and-load-the-start-and-new-tab-page-at-windows-startup-and-each-time-microsoft-edge-is-closed) | New | [AllowTabPreloading](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowtabpreloading) | New |
-| [Allow Prelaunch](#allow-prelaunch) | New | [AllowPrelaunch](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowprelaunch) | New |
 | [Allow printing](#allow-printing) | New |  [AllowPrinting](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowprinting) | New |
 | [Allow Saving History](#allow-saving-history) | New | [AllowSavingHistory](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsavinghistory) | New |
 | [Allow sideloading of Extensions](#allow-sideloading-of-extensions) | New | [AllowSideloadingExtensions](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsideloadingofextensions) | New |
@@ -60,11 +60,11 @@ We are discontinuing the use of the **Configure Favorites** group policy. Use th
 ## Allow fullscreen mode
 [!INCLUDE [allow-full-screen-include](includes/allow-full-screen-include.md)]
 
+## Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed
+[!INCLUDE [allow-prelaunch-include](includes/allow-prelaunch-include.md)]
+
 ## Allow Microsoft Edge to start and load the Start and New Tab page at Windows startup and each time Microsoft Edge is closed
 [!INCLUDE [allow-tab-preloading-include](includes/allow-tab-preloading-include.md)]
-
-## Allow Prelaunch
-[!INCLUDE [allow-prelaunch-include](includes/allow-prelaunch-include.md)]
 
 ## Allow printing
 [!INCLUDE [allow-printing-include.md](includes/allow-printing-include.md)]
