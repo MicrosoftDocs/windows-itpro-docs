@@ -53,8 +53,6 @@ Using Enterprise Mode means that you can continue to use Microsoft Edge as your 
 
 ![Use Enterprise Mode with Microsoft Edge to improve compatibility](../images/use-enterprise-mode-with-microsoft-edge-sm.png)
 
-
-
 ### Configure the Enterprise Mode Site List
 [!INCLUDE [configure-enterprise-mode-site-list-include](../includes/configure-enterprise-mode-site-list-include.md)] 
 
