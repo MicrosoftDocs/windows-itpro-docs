@@ -1246,6 +1246,12 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-experience.md#experience-donotshowfeedbacknotifications" id="experience-donotshowfeedbacknotifications">Experience/DoNotShowFeedbackNotifications</a>
   </dd>
+  <dd>
+    <a href="./policy-csp-experience.md#experience-donotsyncbrowsersetting" id="experience-donotsyncbrowsersetting">Experience/DoNotSyncBrowserSetting</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-experience.md#experience-preventusersfromturningonbrowsersyncing" id="experience-preventusersfromturningonbrowsersyncing">Experience/PreventUsersFromTurningOnBrowserSyncing</a>
+  </dd>
 </dl>
 
 ### ExploitGuard policies
@@ -4319,6 +4325,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Experience/AllowWindowsTips](./policy-csp-experience.md#experience-allowwindowstips)
 -   [Experience/ConfigureWindowsSpotlightOnLockScreen](./policy-csp-experience.md#experience-configurewindowsspotlightonlockscreen)
 -   [Experience/DoNotShowFeedbackNotifications](./policy-csp-experience.md#experience-donotshowfeedbacknotifications)
+-   [Experience/DoNotSyncBrowserSetting](./policy-csp-experience.md#experience-donotsyncbrowsersetting)
+-   [Experience/PreventUsersFromTurningOnBrowserSyncing](./policy-csp-experience.md#experience-preventusersfromturningonbrowsersyncing)
 -   [ExploitGuard/ExploitProtectionSettings](./policy-csp-exploitguard.md#exploitguard-exploitprotectionsettings)
 -   [FileExplorer/TurnOffDataExecutionPreventionForExplorer](./policy-csp-fileexplorer.md#fileexplorer-turnoffdataexecutionpreventionforexplorer)
 -   [FileExplorer/TurnOffHeapTerminationOnCorruption](./policy-csp-fileexplorer.md#fileexplorer-turnoffheapterminationoncorruption)
