@@ -54,7 +54,7 @@ Share from Microsoft Edge | Share button is now available on Microsoft Edge wind
 Feature | Details | Instructions 
 --- | --- | ---
 Enable post-setup provisioning | Can now apply a runtime provisioning package at any time using **Settings**. | On your PC:<br><br>1. Create a provisioning package as described at [Create a provisioning package for HoloLens using the HoloLens wizard](hololens-provisioning.md). <br>2. Connect the HoloLens device via USB to a PC. HoloLens will show up as a device in File Explorer on the PC. <br>3. Drag and drop the provisioning package to the Documents folder on the HoloLens. <br><br>On your HoloLens: <br><br>1. Go to **Settings > Accounts > Access work or school**. <br>2. In **Related Settings**, select **Add or remove a provisioning package**.<br>3. On the next page, select **Add a package** to launch the file picker and select your provisioning package. <br>**Note:** if the folder is empty, make sure you select **This Device** and select **Documents**.<br>After your package has been applied, it will show in the list of Installed packages. To view package details or to remove the package from the device, select the listed package. 
-Assigned access with Azure AD groups | Flexibility to use Azure AD groups for configuration of Windows assigned access to set up single or multi-app kiosk configuration. | Prepare XML file to configure Assigned Access on PC:<br><br>1. In a text editor, open the provided file AssignedAccessHoloLensConfiguration_AzureADGroup.xml.<br>2. Change the group ID to one available in your Azure AD tenant. You can find the group ID of an Azure Active Directory Group by either :<br>- following the steps at [Azure Active Directory version 2 cmdlets for group management](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-v2-cmdlets),<br>OR<br>- in the Azure portal, with the steps at [Manage the settings for a group in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-settings-azure-portal).<br><br>**Note:** The sample configures the following 4 apps: Skype, Learning, Feedback Hub, and Calibration. <br><br>Create provisioning package with WCD:<br><br>1. On a PC, follow the steps at [Create a provisioning package for HoloLens using the HoloLens wizard](hololens-provisioning.md) to create a provisioning package.<br>2. Ensure that you include the license file in **Set up device**.<br>3. Select **Switch to advanced editor** (bottom left), and **Yes** for warning prompt.<br>4. Expand the runtime settings selection in the **Available customizations** panel and select **AssignedAccess > MultiAppAssignedAccessSettings**.<br>5. In the middle panel, you should now see the setting displayed with documentation in the panel below. Browse to the XML you modified for Assigned Access.<br>6. On the **Export** menu, select **Provisioning package**. <br>**Warning:** If you encrypt the provisioning package, provisioning the HoloLens device will fail.<br>7. Select **Next** to specify the output location where you want the provisioning package to go once it's built.<br>8. Select **Next**, and then select **Build** to start building the package.<br>9. When the build completes, select **Finish**. <br><br>Apply the package to HoloLens: <br><br>1. Connect HoloLens via USB to a PC and start the device, but do not continue past the **Fit** page of OOBE (the first page with the blue box). HoloLens will show up as a device in File Explorer on the PC. <br>2. In File Explorer, drag and drop the provisioning package (.ppkg) onto the device storage.<br>3. Briefly press and release the **Volume Down** and **Power** buttons simultaneously again while on the fit page. <br>4. The device will ask you if you trust the package and would like to apply it. Confirm that you trust the package.<br>5. You will see whether the package was applied successfully or not. If it failed, you can fix your package and try again. If it succeeded, proceed with OOBE.<br><br>Enable assigned access on HoloLens: <br><br>1. After applying the provisioning package, during the **Account Setup** flows in OOBE, select **My work or school owns this** to set up your device with an Azure AD account. <br>**Note:** This account must not be in the group chosen for Assigned Access.<br>2. Once you reach the Shell, ensure the Skype app is installed either via your MDM environment or from the Store. <br>3. After the Skype app is installed, sign out. <br>4. On the sign-in screen, select the **Other User** option and enter an Azure AD account email address that belongs to the group chosen for Assigned Access. Then enter the password to sign in. You should now see this user with only the apps configured in the Assigned Access profile. 
+Assigned access with Azure AD groups | Flexibility to use Azure AD groups for configuration of Windows assigned access to set up single or multi-app kiosk configuration. | Prepare XML file to configure Assigned Access on PC:<br><br>1. In a text editor, open [the provided file AssignedAccessHoloLensConfiguration_AzureADGroup.xml](#xml).<br>2. Change the group ID to one available in your Azure AD tenant. You can find the group ID of an Azure Active Directory Group by either :<br>- following the steps at [Azure Active Directory version 2 cmdlets for group management](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-v2-cmdlets),<br>OR<br>- in the Azure portal, with the steps at [Manage the settings for a group in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-settings-azure-portal).<br><br>**Note:** The sample configures the following apps: Skype, Learning, Feedback Hub, Flow, Camera, and Calibration. <br><br>Create provisioning package with WCD:<br><br>1. On a PC, follow the steps at [Create a provisioning package for HoloLens using the HoloLens wizard](hololens-provisioning.md) to create a provisioning package.<br>2. Ensure that you include the license file in **Set up device**.<br>3. Select **Switch to advanced editor** (bottom left), and **Yes** for warning prompt.<br>4. Expand the runtime settings selection in the **Available customizations** panel and select **AssignedAccess > MultiAppAssignedAccessSettings**.<br>5. In the middle panel, you should now see the setting displayed with documentation in the panel below. Browse to the XML you modified for Assigned Access.<br>6. On the **Export** menu, select **Provisioning package**. <br>**Warning:** If you encrypt the provisioning package, provisioning the HoloLens device will fail.<br>7. Select **Next** to specify the output location where you want the provisioning package to go once it's built.<br>8. Select **Next**, and then select **Build** to start building the package.<br>9. When the build completes, select **Finish**. <br><br>Apply the package to HoloLens: <br><br>1. Connect HoloLens via USB to a PC and start the device, but do not continue past the **Fit** page of OOBE (the first page with the blue box). HoloLens will show up as a device in File Explorer on the PC. <br>2. In File Explorer, drag and drop the provisioning package (.ppkg) onto the device storage.<br>3. Briefly press and release the **Volume Down** and **Power** buttons simultaneously again while on the fit page. <br>4. The device will ask you if you trust the package and would like to apply it. Confirm that you trust the package.<br>5. You will see whether the package was applied successfully or not. If it failed, you can fix your package and try again. If it succeeded, proceed with OOBE.<br><br>Enable assigned access on HoloLens: <br><br>1. After applying the provisioning package, during the **Account Setup** flows in OOBE, select **My work or school owns this** to set up your device with an Azure AD account. <br>**Note:** This account must not be in the group chosen for Assigned Access.<br>2. Once you reach the Shell, ensure the Skype app is installed either via your MDM environment or from the Store. <br>3. After the Skype app is installed, sign out. <br>4. On the sign-in screen, select the **Other User** option and enter an Azure AD account email address that belongs to the group chosen for Assigned Access. Then enter the password to sign in. You should now see this user with only the apps configured in the Assigned Access profile. 
 PIN sign-in on profile switch from sign-in screen  | PIN sign-in is now available for **Other User**.  | When signing in as **Other User**, the PIN option is now available under **Sign-In options**. 
 Sign in with Web Cred Provider using password | You can now select the Globe sign-in option to launch web sign-in with your password. Look for additional web sign-in methods coming in the future. | From the sign-in screen, select **Sign-In options** and select the Globe option to launch web sign-in. Enter your user name if needed, then your password. <br>**Note:** You can choose to bypass any PIN/Smartcard options when prompted during web sign-in.  
 Read device hardware info through MDM so devices can be tracked by serial # | IT administrators can see and track HoloLens by device serial number in their MDM console. | Refer to your MDM documentation for feature availability, and for how to use your MDM console to view HoloLens device serial number. 
@@ -102,3 +102,75 @@ Please use [the Feedback Hub app](https://docs.microsoft.com/windows/mixed-reali
 >[!NOTE]
 >Be sure to accept the prompt that asks whether you’d like Feedback Hub to access your Documents folder (select **Yes** when prompted).
  
+<span id="xml" />
+## AssignedAccessHoloLensConfiguration_AzureADGroup.xml
+
+Copy this sample XML to use for the [**Assigned access with Azure AD groups** feature](#for-commercial-customers).
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+  This is a sample Assigned Access XML file. The Profile specifies which apps are allowed
+  and their app IDs. An Assigned Access Config specifies the accounts or groups to which 
+  a Profile is applicable. 
+  
+  !!! NOTE: Change the Name of the AzureActiveDirectoryGroup below to a valid object ID for a group in the tenant being tested.  !!!
+  
+  You can find the object ID of an Azure Active Directory Group by following the steps at 
+  https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-groups-settings-v2-cmdlets
+  
+  OR in the Azure portal with the steps at
+  https://docs.microsoft.com/en-us/azure/active-directory/active-directory-groups-settings-azure-portal
+  
+-->
+<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
+    <Profiles>
+        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
+            <AllAppsList>
+                <AllowedApps>
+                    <!-- Learning app -->
+                    <App AppUserModelId="GGVLearning_cw5n1h2txyewy!GGVLearning" />
+                    <!-- Calibration app -->
+                    <App AppUserModelId="ViewCalibrationApp_cw5n1h2txyewy!ViewCalibrationApp" />
+                    <!-- Feedback Hub -->
+                    <App AppUserModelId="Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App" />
+                    <!-- HoloSkype -->
+                    <App AppUserModelId="Microsoft.SkypeApp_kzf8qxf38zg5c!App" />
+                    <!-- HoloCamera -->
+                    <App AppUserModelId="HoloCamera_cw5n1h2txyewy!App" />
+                    <!-- HoloDevicesFlow -->
+                    <App AppUserModelId="HoloDevicesFlow_cw5n1h2txyewy!App" />
+                </AllowedApps>
+            </AllAppsList>
+            <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
+            <StartLayout>
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                      <LayoutOptions StartTileGroupCellWidth="6" />
+                      <DefaultLayoutOverride>
+                        <StartLayoutCollection>
+                          <defaultlayout:StartLayout GroupCellWidth="6">
+                            <start:Group Name="Life at a glance">
+                              <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.SkypeApp_kzf8qxf38zg5c!App" />
+                            </start:Group>
+                          </defaultlayout:StartLayout>
+                        </StartLayoutCollection>
+                      </DefaultLayoutOverride>
+                    </LayoutModificationTemplate>
+                ]]>
+            </StartLayout>
+            <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
+            <Taskbar ShowTaskbar="true"/>
+        </Profile>
+    </Profiles>
+    <Configs>
+        <!-- IMPORTANT: Replace the group ID here with a valid object ID for a group in the tenant being tested that you want to 
+        be enabled for assigned access.  -->
+        <Config>
+           <UserGroup Type="AzureActiveDirectoryGroup" Name="ade2d5d2-1c86-4303-888e-80f323c33c61" /> <!-- All Intune Licensed Users -->
+           <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+        </Config>
+    </Configs>
+</AssignedAccessConfiguration>
+
+```
+
