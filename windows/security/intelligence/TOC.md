@@ -26,6 +26,8 @@
 
 ## [Worms](worms-malware.md)
 
+## [Transparency report](transparency-report.md)
+
 # [Industry collaboration programs](cybersecurity-industry-partners.md)
 
 ## [Virus information alliance](virus-information-alliance-criteria.md)
