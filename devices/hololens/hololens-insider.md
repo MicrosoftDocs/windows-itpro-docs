@@ -91,7 +91,7 @@ When you’re done with setup, go to **Settings -> Update & Security -> Windows 
 - You can’t change the system language between English, Japanese, and Chinese using the Settings app. Flashing a new build is the only supported way to change the device system language.
 - While you can enter Simplified Chinese / Japanese text using the on-screen Pinyin keyboard, typing in Simplified Chinese / Japanese using a Bluetooth hardware keyboard is not supported at this time.  However, on Chinese/Japanese HoloLens, you can continue to use a BT keyboard to type in English (the ~ key on a hardware keyboard toggles the keyboard to type in English).
 
-## Note for Developers
+## Note for developers
 
 You are welcome and encouraged to try developing your applications using this build of HoloLens.  Check out the [HoloLens Developer Documentation](https://developer.microsoft.com/windows/mixed-reality/development) to get started.  Those same instructions work with this latest build of HoloLens.  You can use the same builds of Unity and Visual Studio that you're already using for HoloLens development.
 
