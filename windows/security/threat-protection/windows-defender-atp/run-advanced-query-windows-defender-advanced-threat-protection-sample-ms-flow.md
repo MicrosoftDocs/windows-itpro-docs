@@ -23,9 +23,7 @@ Schedule advanced query.
 
 ## Use case
 
-You need to schedule an advanced query and use the result for follow up actions and processing.
-
-You can use [Microsoft Flow](https://flow.microsoft.com/) (or Logic Apps) for it!
+If you need to schedule an advanced query and use the results for follow up actions and processing, you can use [Microsoft Flow](https://flow.microsoft.com/) (or Logic Apps) for it!
 
 ## Define a flow to run query and parse results
 
@@ -59,24 +57,26 @@ You will find below a very basic flow example:
 
 ## Expand the flow to use the query results
 
-	The below section shows how to use the parsed results to insert them in SQL database.
+The below section shows how to use the parsed results to insert them in SQL database.
 
-	This is an example only, you could perform on your results any other action supported by Microsoft Flow.
+This is an example only, you could perform on your results any other action supported by Microsoft Flow.
 
-	- Add an 'Apply to each' action
-	- Select the Results json (which was an output of the last parse action)
-	- Add an 'Insert row' action – you will need to supply the connection details
-	- Select the table you want to update and define the mapping between the WD-ATP output to the SQL. Note it is possible to manipulate the data inside the flow. In the example I changed the type of the EventTime.
+- Add an 'Apply to each' action
+- Select the Results json (which was an output of the last parse action)
+- Add an 'Insert row' action – you will need to supply the connection details
+- Select the table you want to update and define the mapping between the WD-ATP output to the SQL. Note it is possible to manipulate the data inside the flow. In the example I changed the type of the EventTime.
 
-	![Image of insert into DB](images/ms-flow-insert-db.png)
+![Image of insert into DB](images/ms-flow-insert-db.png)
 
-	The output in the SQL DB is getting updates and can be used for correlation with other data sources. You can now read from your table:
+The output in the SQL DB is getting updates and can be used for correlation with other data sources. You can now read from your table:
 
-	![Image of select from DB](images/ms-flow-read-db.png)
+![Image of select from DB](images/ms-flow-read-db.png)
+
+## Full flow definition
 
 You can find below the full definition
 
-	![Image of E2E flow](images/ms-flow-e2e.png)
+![Image of E2E flow](images/ms-flow-e2e.png)
 
 ## Related topic
 - [Advanced Hunting API](run-advanced-query-windows-defender-advanced-threat-protection.md)

@@ -89,15 +89,19 @@ If you want to run complex queries (or multilines queries), save your query in a
 
 ## Work with query results
 
-To work with the results you can, for instance, do the below
+You can now use the query results.
+
+To output the results of the query in CSV format in file file1.csv do the below:
 
 ```
 $results | ConvertTo-Csv -NoTypeInformation | Set-Content file1.csv
-$results | ConvertTo-Json | Set-Content "file1.json"
 ```
 
-- Line 1 outputs the results of the query in CSV format in file file1.csv
-- Line 2 outputs the results of the query in JSON format in file file1.json​
+To output the results of the query in JSON format in file file1.json​ do the below:
+
+```
+$results | ConvertTo-Json | Set-Content "file1.json"
+```
 
 
 ## Related topic
