@@ -35,8 +35,8 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass
 
 ```
 $tenantId = '00000000-0000-0000-0000-000000000000' # Paste your own tenant ID here
-$appId = '00000000-0000-0000-0000-000000000000' # Paste your own app ID here
-$appSecret = '00000000-0000-0000-0000-000000000000' # Paste your own app secret here
+$appId = '11111111-1111-1111-1111-111111111111' # Paste your own app ID here
+$appSecret = '22222222-2222-2222-2222-222222222222' # Paste your own app secret here
 
 $resourceAppIdUri = 'https://securitycenter.onmicrosoft.com/windowsatpservice'
 $oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
