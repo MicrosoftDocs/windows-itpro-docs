@@ -13,18 +13,17 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Collect investigation package API
+# Advanced Hunting API
 
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
-
 Run advanced query.
 
 ## Permissions
-Application needs 'Run advanced queries' role.
+Application needs 'Run advanced queries' role (See [How to select a permission](exposed-apis-windows-defender-advanced-threat-protection-new#create-an-app)).
 
 ## HTTP request
 ```
@@ -35,7 +34,7 @@ POST /advancedqueries/query
 
 Header | Value 
 :---|:---
-Authorization | Bearer {token}. Required.
+Authorization | Bearer {token}. **Required**.
 Content-Type	| application/json
 
 ## Request body

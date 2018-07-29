@@ -97,8 +97,8 @@
 #### [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)
 #### [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
 
-### [Use the Windows Defender ATP APIs](exposed-apis-windows-defender-advanced-threat-protection-new.md)
-#### Supported Windows Defender ATP APIs
+### [**Beta!** Use Windows Defender ATP APIs](exposed-apis-windows-defender-advanced-threat-protection-new.md)
+#### [Supported Windows Defender ATP APIs](supported-apis-windows-defender-advanced-threat-protection-new.md)
 ##### [Advanced Hunting](run-advanced-query-windows-defender-advanced-threat-protection.md)
 
 
