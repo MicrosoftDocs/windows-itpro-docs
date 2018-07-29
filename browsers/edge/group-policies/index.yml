@@ -44,9 +44,9 @@ sections:
 
     style: cards
 
-    className: cardsI
+    className: cardsA
 
-    columns: 2
+    columns: 3
 
     items:
 
