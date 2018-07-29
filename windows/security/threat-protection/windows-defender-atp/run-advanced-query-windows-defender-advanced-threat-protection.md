@@ -15,6 +15,9 @@ ms.date: 12/08/2017
 
 # Advanced Hunting API
 
+>[!NOTE]
+>**Important**: This API is in preview and is subject to change. Use of this API in production applications is not recommended.
+
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
@@ -23,7 +26,11 @@ ms.date: 12/08/2017
 Run advanced query.
 
 ## Permissions
-Application needs 'Run advanced queries' role (See [How to select a permission](exposed-apis-windows-defender-advanced-threat-protection-new#create-an-app)).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Create your app](exposed-apis-windows-defender-advanced-threat-protection-new.md#create-an-app)
+
+Permission type |	Permission	|	Permission display name
+:---|:---|:---
+Application |	AdvancedQuery.Read.All |	'Run advanced queries'
 
 ## HTTP request
 ```
