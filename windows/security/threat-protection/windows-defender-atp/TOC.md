@@ -100,6 +100,9 @@
 ### [**Beta!** Use Windows Defender ATP APIs](exposed-apis-windows-defender-advanced-threat-protection-new.md)
 #### [Supported Windows Defender ATP APIs](supported-apis-windows-defender-advanced-threat-protection-new.md)
 ##### [Advanced Hunting](run-advanced-query-windows-defender-advanced-threat-protection.md)
+#### [Examples how to use APIs]
+##### [Schedule advanced Hunting using Microsoft Flow](run-advanced-query-windows-defender-advanced-threat-protection-sample-ms-flow.md)
+##### [Advanced Hunting using PowerShell](run-advanced-query-windows-defender-advanced-threat-protection-sample-powershell.md)
 
 
 ### [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)
