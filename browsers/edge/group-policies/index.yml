@@ -180,7 +180,7 @@ sections:
       
       title: Prelaunch Microsoft Edge and preload tabs in the background
   
-     - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/search-engine-customization-gp
+    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/search-engine-customization-gp
 
       html: <p>Learn how you can set the default search engine and configure additional search engines.</p>
 
@@ -190,7 +190,7 @@ sections:
       
       title: Search engine management 
   
-      - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/security-privacy-management-gp
+    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/security-privacy-management-gp
 
       html: <p>Learn how you can keep your environment and users safe from attacks.</p>
 
