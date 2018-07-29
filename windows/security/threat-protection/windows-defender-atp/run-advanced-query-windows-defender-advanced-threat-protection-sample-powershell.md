@@ -26,11 +26,13 @@ In this section we share PowerShell samples to retrieve a token and use it to ru
 ```
 Set-ExecutionPolicy -ExecutionPolicy Bypass
 ```
+
 >For more details, refer to [PowerShell documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
 ## Get token
 
-- Run
+- Run the below
+
 ```
 $tenantId = '00000000-0000-0000-0000-000000000000' # Paste your own tenant ID here
 $appId = '00000000-0000-0000-0000-000000000000' # Paste your own app ID here
@@ -48,6 +50,7 @@ $response = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $body -ErrorActi
 $aadToken = $response.access_token
 
 ```
+
 where
 - $tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)
 - $appId: ID of your AAD app (the app must have 'Run advanced queries' permission to WDATP)
