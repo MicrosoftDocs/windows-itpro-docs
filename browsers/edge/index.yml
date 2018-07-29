@@ -100,7 +100,7 @@ sections:
 
       title: Interoperability & enterprise guidance
 
-    - href: browsers/edge/group-policies/group-policies
+    - href: browsers/edge/group-policies
     
       html: <p>Learn about the advanced VPN features you can add to improve the security and availability of your VPN connection.</p>
 
