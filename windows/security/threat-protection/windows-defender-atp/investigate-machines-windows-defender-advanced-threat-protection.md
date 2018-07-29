@@ -177,6 +177,7 @@ Use the following registry key entry to add a tag on a machine:
 
 -	Registry key: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`
 -	Registry key value (string): Group
+-   Reboot machine
 
 
 ### Add machine tags using the portal
