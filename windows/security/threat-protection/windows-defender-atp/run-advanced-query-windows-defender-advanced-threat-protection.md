@@ -124,14 +124,14 @@ Content-Type: application/json​
 
 ## T​roubl​eshooting:
 
-	- (403) Forbidden.
-	
-	If you get this error when calling WDATP API, your token probably does not include the necessary permission.
-	Please refer to section "Verify you can access WDATP app using your app" in Create an AAD app.
-	If the 'roles' section in the token does not include the necessary permission, either you did not add the necessary permission to your app (refer to step 6 in Create an AAD app) or you did not authorized your app in the tenant (refer to "Application consent" in Create an AAD app​)
+- (403) Forbidden.
+If you get this error when calling WDATP API, your token probably does not include the necessary permission.
+Please refer to section "Verify you can access WDATP app using your app" in Create an AAD app.
+If the 'roles' section in the token does not include the necessary permission, either you did not add the necessary permission to your app (refer to step 6 in Create an AAD app) or you did not authorized your app in the tenant (refer to "Application consent" in Create an AAD app​)
 
 
 ## Related topic
+- [Advanced Hunting from Portal](advanced-hunting-windows-defender-advanced-threat-protection.md)
 - [Advanced Hunting using PowerShell](run-advanced-query-windows-defender-advanced-threat-protection-sample-powershell.md)
 - [Schedule Advanced Hunting](run-advanced-query-windows-defender-advanced-threat-protection-sample-ms-flow.md)
 - [Create your app](exposed-apis-windows-defender-advanced-threat-protection-new.md)
