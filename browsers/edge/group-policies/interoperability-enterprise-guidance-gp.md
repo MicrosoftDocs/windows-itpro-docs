@@ -13,24 +13,18 @@ ms.sitesec: library
 >*Supported versions: Microsoft Edge on Windows 10*  
 
 
- 
+Microsoft Edge lets you continue to use IE11 for sites that are on your corporate intranet or included on your Enterprise Mode Site List. If you are running web apps that continue to use ActiveX controls, x-ua-compatible headers, or legacy document modes, you need to keep running them in IE11.  IE11 offers additional security, manageability, performance, backward compatibility, and modern standards support.
 
 
+>[!TIP]
+> If you are running an earlier version of Internet Explorer, then we recommend upgrading to IE11, so any legacy apps continue to work correctly.
 
+**Technology not supported by Microsoft Edge**
+- ActiveX controls
+- x-ua-compatible headers
+- &lt;meta&gt; tags
+- Legacy document modes
 
-default browser for Windows 10 and Windows 10 Mobile
-
-goal is that all websites work in Microsoft Edge but at the same time if you have apps that use any of the following legacy technologies, you must keep running them in Internet Explorer 11:
-
-* ActiveX controls
-
-* x-ua-compatible headers
-
-* &lt;meta&gt; tags
-
-* Enterprise mode or compatibility view to address compatibility issues
-
-* legacy document modes
 
 
 >[!TIP]

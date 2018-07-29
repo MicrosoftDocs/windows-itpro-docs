@@ -30,7 +30,7 @@ metadata:
 
 sections:
 
-- title: Deploy Microsoft Edge
+- title: 
 
 - items:
 
@@ -117,12 +117,16 @@ sections:
     style: cards
 
     className: cardsL
-
+            
     items:
 
     - title: Microsoft Edge resources 
 
-      html: <p><a class="barLink" href="https://docs.microsoft.com/en-us/microsoft-edge/deploy/change-history-for-microsoft-edge">Document change history</a></p>
+      html: <p><a class="barLink" href="https://docs.microsoft.com/en-us/microsoft-edge/deploy/about-microsoft-edge.md#minimum-system-requirements">Minimum system requirements</a></p>
+
+            <p><a class="barLink" href="https://docs.microsoft.com/en-us/microsoft-edge/deploy/about-microsoft-edge.md#supported-languages">Supported languages</a></p>
+      
+            <p><a class="barLink" href="https://docs.microsoft.com/en-us/microsoft-edge/deploy/change-history-for-microsoft-edge">Document change history</a></p>
 
             <p><a class="barLink" href="https://www.microsoft.com/en-us/WindowsForBusiness/Compare">Compare Windows 10 Editions</a></p>
 
@@ -157,5 +161,3 @@ sections:
 
 
 
-            
-            

@@ -35,7 +35,7 @@ Microsoft Edge loads the pages specified in App settings as the default Start pa
 [!INCLUDE [disable-lockdown-of-start-pages-include](../includes/disable-lockdown-of-start-pages-include.md)]
 
 
-## Configuration options
+### Configuration options
 
 | **Configure Open Microsoft Edge With** | **Configure Start Pages** | **Disabled Lockdown of Start Pages** | **Outcome** |
 | --- | --- | --- | --- |
