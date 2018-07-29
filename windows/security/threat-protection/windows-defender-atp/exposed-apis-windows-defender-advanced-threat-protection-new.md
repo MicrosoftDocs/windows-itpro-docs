@@ -105,7 +105,7 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
 
 ### Using dedicated executable
 
-- Download [AadTokenGetter.zip](exe/AadTokenGetter.zip) application​
+- Download AadTokenGetter.zip application​
 - Unzip the application
 - Open 'AadTokenGetter.exe.config' file and fill the 3 required settings:
 	- tenantId
