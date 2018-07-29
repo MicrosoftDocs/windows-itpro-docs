@@ -47,7 +47,7 @@ If successful, this method returns 200, Ok response code with the *FileMachineAc
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -55,7 +55,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/testwdatppreview/filemachineactions/3dc88ce3-dd0c-40f7-93fc-8bd14317aab6
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 
