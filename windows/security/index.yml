@@ -95,9 +95,9 @@ sections:
 
       - href: \windows\security\threat-protection\
 
-      html: <p>Stop cyberthreats and quickly identify and respond to breaches</p>
+		html: <p>Stop cyberthreats and quickly identify and respond to breaches</p>
 
-      image:
+		image:
 
         src: https://docs.microsoft.com/media/common/i_threat-protection.svg
 
