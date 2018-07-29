@@ -13,10 +13,9 @@ ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
-# Advanced Hunting API
+# Advanced hunting API
 
->[!NOTE]
->**Important**: This API is in preview and is subject to change. Use of this API in production applications is not recommended.
+[!include[Prerelease information](prerelease.md)]
 
 **Applies to:**
 
