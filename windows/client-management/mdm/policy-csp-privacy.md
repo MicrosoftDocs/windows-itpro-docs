@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 06/05/2018
+ms.date: 07/30/2018
 ---
 
 # Policy CSP - Privacy
@@ -4844,43 +4844,4 @@ Footnote:
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Privacy policies supported by Windows Holographic for Business  
-
--   [Privacy/AllowCrossDeviceClipboard](#privacy-allowcrossdeviceclipboard)  
--   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)  
--   [Privacy/LetAppsAccessGazeInput](#privacy-letappsaccessgazeinput)  
--   [Privacy/LetAppsAccessGazeInput_ForceAllowTheseApps](#privacy-letappsaccessgazeinput-forceallowtheseapps)  
--   [Privacy/LetAppsAccessGazeInput_ForceDenyTheseApps](#privacy-letappsaccessgazeinput-forcedenytheseapps)  
--   [Privacy/LetAppsAccessGazeInput_UserInControlOfTheseApps](#privacy-letappsaccessgazeinput-userincontroloftheseapps)  
--   [Privacy/UploadUserActivities](#privacy-uploaduseractivities)  
-<!--EndHoloLens-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>Privacy policies supported by IoT Core  
-
--   [Privacy/LetAppsGetDiagnosticInfo](#privacy-letappsgetdiagnosticinfo)  
--   [Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps](#privacy-letappsgetdiagnosticinfo-forceallowtheseapps)  
--   [Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps](#privacy-letappsgetdiagnosticinfo-forcedenytheseapps)  
--   [Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps](#privacy-letappsgetdiagnosticinfo-userincontroloftheseapps)  
--   [Privacy/LetAppsRunInBackground](#privacy-letappsruninbackground)  
--   [Privacy/LetAppsRunInBackground_ForceAllowTheseApps](#privacy-letappsruninbackground-forceallowtheseapps)  
--   [Privacy/LetAppsRunInBackground_ForceDenyTheseApps](#privacy-letappsruninbackground-forcedenytheseapps)  
--   [Privacy/LetAppsRunInBackground_UserInControlOfTheseApps](#privacy-letappsruninbackground-userincontroloftheseapps)  
-<!--EndIoTCore-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>Privacy policies supported by Microsoft Surface Hub  
-
--   [Privacy/EnableActivityFeed](#privacy-enableactivityfeed)  
--   [Privacy/LetAppsGetDiagnosticInfo](#privacy-letappsgetdiagnosticinfo)  
--   [Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps](#privacy-letappsgetdiagnosticinfo-forceallowtheseapps)  
--   [Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps](#privacy-letappsgetdiagnosticinfo-forcedenytheseapps)  
--   [Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps](#privacy-letappsgetdiagnosticinfo-userincontroloftheseapps)  
--   [Privacy/LetAppsRunInBackground](#privacy-letappsruninbackground)  
--   [Privacy/LetAppsRunInBackground_ForceAllowTheseApps](#privacy-letappsruninbackground-forceallowtheseapps)  
--   [Privacy/LetAppsRunInBackground_ForceDenyTheseApps](#privacy-letappsruninbackground-forcedenytheseapps)  
--   [Privacy/LetAppsRunInBackground_UserInControlOfTheseApps](#privacy-letappsruninbackground-userincontroloftheseapps)  
--   [Privacy/PublishUserActivities](#privacy-publishuseractivities)  
-<!--EndSurfaceHub-->
 

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/13/2018
+ms.date: 07/30/2018
 ---
 
 # Policy CSP - Experience
@@ -1396,7 +1396,6 @@ The following list shows the supported values:
 <!--/SupportedValues-->
 <!--/Policy-->
 
-<<<<<<< HEAD
 <hr/>
 
 <!--Policy-->
@@ -1546,8 +1545,10 @@ Microsoft Edge on your PC:
 
 <!--/Validation-->
 <!--/Policy-->
+<<<<<<< HEAD
 =======
->>>>>>> 785954ffa54220bce4c3bdaef580253b43197a5a
+
+>>>>>>> 3c06afe9875ad82fff960313bea663f49a2f7d2c
 <hr/>
 
 Footnote:
@@ -1560,10 +1561,4 @@ Footnote:
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Experience policies supported by Windows Holographic for Business  
-
--   [Experience/AllowCortana](#experience-allowcortana)  
--   [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)  
-<!--EndHoloLens-->
 
