@@ -119,14 +119,16 @@ You’ll be able to onboard in the same method available for Windows 10 client m
 Windows Defender ATP integrates with Azure Security Center to provide a comprehensive server protection solution. With this integration Azure Security Center can leverage the power of Windows Defender ATP to provide improved threat detection for Windows Servers.
 
 The following capabilities are included in this integration:
-- Automated onboarding - Windows Defender ATP sensor is automatically enabled on Windows Servers that are onboarded to ASC. For more information on onboarding to ASC, see Onboarding to Azure Security Center Standard for enhanced security.
+- Automated onboarding - Windows Defender ATP sensor is automatically enabled on Windows Servers that are onboarded to ASC. For more information on onboarding to ASC, see [Onboarding to Azure Security Center Standard for enhanced security](https://docs.microsoft.com/en-us/azure/security-center/security-center-onboarding).
+
     >[!NOTE]
     > Automated onboarding is only applicable for Windows Server 2012 R2 and Windows Server 2016.
+
 - Servers monitored by  Azure Security Center will also be available in Windows Defender ATP - ASC seamlessly connects to the Windows Defender ATP tenant, providing a single view across clients and servers.  In addition, Windows Defender ATP alerts will be available in the Azure Security Center console.
 - Server investigation -  Azure Security Center customers can access the Windows Defender ATP portal to perform detailed investigation to uncover the scope of a potential breach
 
 >[!IMPORTANT]
->- When you use Azure Security Center to monitor servers, a Windows Defender ATP tenant is automatically created. The Windows Defender ATP data is stored in Europe by default. For more information on how to change the geolocation, please contact support.
+>- When you use Azure Security Center detection end response capabilities, a Windows Defender ATP tenant is automatically created. The Windows Defender ATP data is stored in Europe by default. For more information on how to change the geolocation, please contact support: [Open a ticket](https://support.microsoft.com/en-us/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561).
 >- If you use Windows Defender ATP before using Azure Security Center, your data will be stored in the location you specified when you created your tenant even if you integrate with Azure Security Center at a later time.
 
 
