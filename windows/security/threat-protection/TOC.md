@@ -407,43 +407,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-#### [Windows Defender AV in the Windows Defender Security app](windows-defender-antivirus\windows-defender-security-center-antivirus.md)
-
-
-
-
-##### [Configure end-user interaction with Windows Defender AV](windows-defender-antivirus\configure-end-user-interaction-windows-defender-antivirus.md)
-###### [Configure the notifications that appear on endpoints](windows-defender-antivirus\configure-notifications-windows-defender-antivirus.md)
-###### [Prevent users from seeing or interacting with the user interface](windows-defender-antivirus\prevent-end-user-interaction-windows-defender-antivirus.md)
-###### [Prevent or allow users to locally modify policy settings](windows-defender-antivirus\configure-local-policy-overrides-windows-defender-antivirus.md)
-
-
-### [Windows Defender Exploit Guard](windows-defender-exploit-guard\windows-defender-exploit-guard.md)
-
-##### [View Exploit Guard events](windows-defender-exploit-guard\event-views-exploit-guard.md)
-
-
-##### [Memory integrity](windows-defender-exploit-guard\memory-integrity.md)
-###### [Requirements for virtualization-based protection of code integrity](windows-defender-exploit-guard\requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
-###### [Enable virtualization-based protection of code integrity](windows-defender-exploit-guard\enable-virtualization-based-protection-of-code-integrity.md)
-
-
-
-#### [Windows Defender Antivirus compatibility with Windows Defender ATP](windows-defender-atp\defender-compatibility-windows-defender-advanced-threat-protection.md)
-
-
-
 ## Other security features
 ### [The Windows Security app](windows-defender-security-center/windows-defender-security-center.md)
 #### [Customize the Windows Security app for your organization](windows-defender-security-center/wdsc-customize-contact-information.md)
