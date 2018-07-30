@@ -379,7 +379,7 @@
 
 
 ### [Troubleshoot everything](troubleshoot.md)
-#### [Review event logs and error codes to troubleshoot issues](windows-demanagement and apisfender-antivirus\troubleshoot-windows-defender-antivirus.md)
+#### [Review event logs and error codes to troubleshoot issues](windows-defender-antivirus\troubleshoot-windows-defender-antivirus.md)
 
 ####[Check service health and sensor state](troubleshoot-sense.md) 
 ##### [Check sensor state](windows-defender-atp\check-sensor-status-windows-defender-advanced-threat-protection.md)
