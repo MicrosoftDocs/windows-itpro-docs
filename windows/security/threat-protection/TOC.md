@@ -48,23 +48,22 @@
 
 
 
-#### [Configure NGP](configure2.md)
-##### [Windows Defender Antivirus](windows-defender-antivirus\windows-defender-antivirus-in-windows-10.md)
-###### [Windows Defender AV on Windows Server 2016](windows-defender-antivirus\windows-defender-antivirus-on-windows-server-2016.md)
-###### [Windows Defender Antivirus compatibility](windows-defender-antivirus\windows-defender-antivirus-compatibility.md)
-####### [Use limited periodic scanning in Windows Defender AV](windows-defender-antivirus\limited-periodic-scanning-windows-defender-antivirus.md)
+#### [Configure NGP](windows-defender-antivirus\windows-defender-antivirus-in-windows-10.md)
+##### [Windows Defender AV on Windows Server 2016](windows-defender-antivirus\windows-defender-antivirus-on-windows-server-2016.md)
+##### [Windows Defender Antivirus compatibility](windows-defender-antivirus\windows-defender-antivirus-compatibility.md)
+###### [Use limited periodic scanning in Windows Defender AV](windows-defender-antivirus\limited-periodic-scanning-windows-defender-antivirus.md)
 
-###### [Deploy, manage updates, and report on Windows Defender Antivirus](windows-defender-antivirus\deploy-manage-report-windows-defender-antivirus.md)
-####### [Deploy and enable Windows Defender Antivirus](windows-defender-antivirus\deploy-windows-defender-antivirus.md)
-######## [Deployment guide for VDI environments](windows-defender-antivirus\deployment-vdi-windows-defender-antivirus.md)
-####### [Report on Windows Defender Antivirus protection](windows-defender-antivirus\report-monitor-windows-defender-antivirus.md)
-######## [Troubleshoot Windows Defender Antivirus reporting in Update Compliance](windows-defender-antivirus\troubleshoot-reporting.md)
-####### [Manage updates and apply baselines](windows-defender-antivirus\manage-updates-baselines-windows-defender-antivirus.md)
-######## [Manage protection and definition updates](windows-defender-antivirus\manage-protection-updates-windows-defender-antivirus.md)
-######## [Manage when protection updates should be downloaded and applied](windows-defender-antivirus\manage-protection-update-schedule-windows-defender-antivirus.md)
-######## [Manage updates for endpoints that are out of date](windows-defender-antivirus\manage-outdated-endpoints-windows-defender-antivirus.md)
-######## [Manage event-based forced updates](windows-defender-antivirus\manage-event-based-updates-windows-defender-antivirus.md)
-######## [Manage updates for mobile devices and VMs](windows-defender-antivirus\manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
+##### [Deploy, manage updates, and report on Windows Defender Antivirus](windows-defender-antivirus\deploy-manage-report-windows-defender-antivirus.md)
+###### [Deploy and enable Windows Defender Antivirus](windows-defender-antivirus\deploy-windows-defender-antivirus.md)
+####### [Deployment guide for VDI environments](windows-defender-antivirus\deployment-vdi-windows-defender-antivirus.md)
+###### [Report on Windows Defender Antivirus protection](windows-defender-antivirus\report-monitor-windows-defender-antivirus.md)
+####### [Troubleshoot Windows Defender Antivirus reporting in Update Compliance](windows-defender-antivirus\troubleshoot-reporting.md)
+###### [Manage updates and apply baselines](windows-defender-antivirus\manage-updates-baselines-windows-defender-antivirus.md)
+####### [Manage protection and definition updates](windows-defender-antivirus\manage-protection-updates-windows-defender-antivirus.md)
+####### [Manage when protection updates should be downloaded and applied](windows-defender-antivirus\manage-protection-update-schedule-windows-defender-antivirus.md)
+####### [Manage updates for endpoints that are out of date](windows-defender-antivirus\manage-outdated-endpoints-windows-defender-antivirus.md)
+####### [Manage event-based forced updates](windows-defender-antivirus\manage-event-based-updates-windows-defender-antivirus.md)
+####### [Manage updates for mobile devices and VMs](windows-defender-antivirus\manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
 
 ##### [Customize, initiate, and review the results of scans and remediation](windows-defender-antivirus\customize-run-review-remediate-scans-windows-defender-antivirus.md)
 ###### [Configure and validate exclusions in Windows Defender AV scans](windows-defender-antivirus\configure-exclusions-windows-defender-antivirus.md)
@@ -78,7 +77,6 @@
 ###### [Review scan results](windows-defender-antivirus\review-scan-results-windows-defender-antivirus.md)
 ###### [Run and review the results of a Windows Defender Offline scan](windows-defender-antivirus\windows-defender-offline.md)
 ##### [Restore quarantined files in Windows Defender AV](windows-defender-antivirus\restore-quarantined-files-windows-defender-antivirus.md)
-
 ##### [Manage Windows Defender AV in your business](windows-defender-antivirus\configuration-management-reference-windows-defender-antivirus.md)
 ###### [Use Group Policy settings to configure and manage Windows Defender AV](windows-defender-antivirus\use-group-policy-windows-defender-antivirus.md)
 ###### [Use System Center Configuration Manager and Microsoft Intune to configure and manage Windows Defender AV](windows-defender-antivirus\use-intune-config-manager-windows-defender-antivirus.md)
@@ -89,11 +87,12 @@
 
 
 
-####[Configure AutoIR](configure3.md)
+
+####[Configure AutoIR - needs new content, u can configure through the portal settings + link to the settings page](configure3.md)
 
 
 
-#### [Configure Windows Defender Security Center settings](windows-defender-atp\preferences-setup-windows-defender-advanced-threat-protection.md)
+#### [Windows Defender Security Center settings](windows-defender-atp\preferences-setup-windows-defender-advanced-threat-protection.md)
 #####General
 ###### [Update data retention settings](windows-defender-atp\data-retention-settings-windows-defender-advanced-threat-protection.md)
 ###### [Configure alert notifications](windows-defender-atp\configure-email-notifications-windows-defender-advanced-threat-protection.md)
