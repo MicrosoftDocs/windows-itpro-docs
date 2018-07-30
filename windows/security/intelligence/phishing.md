@@ -106,19 +106,15 @@ If in doubt, contact the business by known channels to verify if any suspicious 
 
 For more information, download and read this Microsoft [e-book on preventing social engineering attacks](https://info.microsoft.com/Protectyourweakestlink.html?ls=social), especially in enterprise environments.
 
-### Security solutions for organizations
+### Software solutions for organizations
 
 * [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/index) and [Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview) offer protection from the increasing threat of targeted attacks using Microsoft's industry leading Hyper-V virtualization technology. If a browsed website is deemed untrusted, the Hyper-V container will isolate that PC from the rest of your network thereby preventing access to your enterprise data.
 
-* [Microsoft Exchange Online Protection (EOP)](https://products.office.com/exchange/exchange-email-security-spam-protection) offers enterprise-class reliability and protection against spam and malware, while maintaining access to email during and after emergencies. EOP provides a layer of protection features that are deployed across a global network of data centers, helping you simplify the administration of your messaging environments. Using various layers of filtering, EOP can provide different controls for spam filtering, such as bulk mail controls and international spam, that will further enhance your protection services.
+* [Microsoft Exchange Online Protection (EOP)](https://products.office.com/exchange/exchange-email-security-spam-protection) offers enterprise-class reliability and protection against spam and malware, while maintaining access to email during and after emergencies.  Using various layers of filtering, EOP can provide different controls for spam filtering, such as bulk mail controls and international spam, that will further enhance your protection services.
 
 * Use [Office 365 Advanced Threat Protection (ATP)](https://products.office.com/exchange/online-email-threat-protection?ocid=cx-blog-mmpc) to help protect your email, files, and online storage against malware. It offers holistic protection in Microsoft Teams, Word, Excel, PowerPoint, Visio, SharePoint Online, and OneDrive for Business. By protecting against unsafe attachments and expanding protection against malicious links, it complements the security features of Exchange Online Protection to provide better zero-day protection.
 
-* [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) replaces passwords with strong two-factor authentication on PCs and mobile devices. This authentication consists of a new type of user credential that is tied to a device and uses a biometric or PIN. It lets user authenticate to an Active Directory or Azure Active Directory account.
-
-* [Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) uses virtualization-based security to isolate secrets so that only privileged system software can access them. They are protected using virtualization-based security which blocks credential theft attack techniques and tools used in many targeted attacks. Malware running in the operating system with administrative privileges cannot extract secrets that are protected by virtualization-based security.
-
-For more general tips, see [prevent malware infection](prevent-malware-infection.md).
+For more tips and software solutions, see [prevent malware infection](prevent-malware-infection.md).
 
 ## What do I do if I've already been a victim of a phishing scam?
 
@@ -128,7 +124,7 @@ If you feel that you have been a victim of a phishing attack, contact your IT Ad
 
 Submit phishing scam emails to **Microsoft** by sending an email with the scam as an attachment to: phish@office365.microsoft.com. For more information on submitting messages to Microsoft, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](https://docs.microsoft.com/en-us/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis).
 
-For Outlook and Outlook on the web users, use the Report Message Add-in for Microsoft Outlook. For information about how to install and use this tool, see [Enable the Report Message add-in](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676).
+For Outlook and Outlook on the web users, use the **Report Message Add-in** for Microsoft Outlook. For information about how to install and use this tool, see [Enable the Report Message add-in](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676).
 
 Send an email with the phishing scam to **The Anti-Phishing Working Group**: reportphishing@apwg.org. The group uses reports generated from emails sent to fight phishing scams and hackers. ISPs, security vendors, financial institutions and law enforcement agencies are involved.
 
