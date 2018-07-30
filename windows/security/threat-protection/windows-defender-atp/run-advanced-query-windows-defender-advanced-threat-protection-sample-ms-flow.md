@@ -21,6 +21,8 @@ ms.date: 30/07/2018
 
 Schedule advanced query.
 
+>**Prerequisite**: You first need to [create an app](exposed-apis-windows-defender-advanced-threat-protection-new.md).
+
 ## Use case
 
 If you need to schedule an advanced query and use the results for follow up actions and processing, you can use [Microsoft Flow](https://flow.microsoft.com/) (or Logic Apps) for it!

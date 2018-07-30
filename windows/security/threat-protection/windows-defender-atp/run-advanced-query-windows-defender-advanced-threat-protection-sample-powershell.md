@@ -19,6 +19,8 @@ Run advanced queries using PowerShell. Please read about [Advanced Hunting API](
 
 In this section we share PowerShell samples to retrieve a token and use it to run a query.
 
+>**Prerequisite**: You first need to [create an app](exposed-apis-windows-defender-advanced-threat-protection-new.md).
+
 ## Preparation Instructions
 
 - Open a PowerShell window.

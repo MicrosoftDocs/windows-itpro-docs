@@ -24,18 +24,16 @@ ms.date: 30/07/2018
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
-
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 Windows Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Windows Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you’ll need to take the following steps to use the APIs:
--	Create an app
--	Get an access token
--	Use Windows Defender ATP API
+- Create an app
+- Get an access token
+- Use the token to access Windows Defender ATP API
 
-### Before you begin
-Before using the APIs, you’ll need to create an app that you’ll use to authenticate against the graph. You’ll need to create a web app to use for the adhoc queries. 
+This page explains how to create an app, get an access token to Windows Defender ATP and validate the token includes the required permission.
 
 ## Create an app
 
