@@ -1,6 +1,6 @@
 ---
 title: Guidelines for choosing an app for assigned access (Windows 10)
-description: You can configure Windows 10 as a kiosk device, so that users can only interact with a single app.
+description: The following guidelines may help you choose an appropriate Windows app for your assigned access experience.
 keywords: ["kiosk", "lockdown", "assigned access"]
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -9,7 +9,7 @@ author: jdeckerms
 ms.localizationpriority: medium
 ms.author: jdecker
 ms.topic: article
-ms.date: 05/31/2018
+ms.date: 07/30/2018
 ---
 
 # Guidelines for choosing an app for assigned access (kiosk mode)
@@ -55,7 +55,7 @@ In Windows 10, version 1803, you can install the **Kiosk Browser** app from Micr
 >[!NOTE]
 >If you configure the kiosk using a provisioning package, you must apply the provisioning package after the device completes the out-of-box experience (OOBE).
 
-#### Kiosk Browser settings
+### Kiosk Browser settings
 
 Kiosk Browser settings | Use this setting to
 --- | ---
