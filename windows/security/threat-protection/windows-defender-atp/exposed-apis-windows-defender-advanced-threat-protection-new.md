@@ -97,6 +97,21 @@ This page explains how to create an app, get an access token to Windows Defender
 	![Image of multi tenant](images/webapp-edit-multitenant.png)
 
 
+## Application consent
+
+You need your application to be approved in each tenant where you intend to use it. This is because your application interacts with WDATP application on behalf of your customer.
+
+You (or your customer if you are writing a 3rd party application) need to click the consent link and approve your application. The consent should be done with a user who has admin privileges in the active directory.
+
+Consent link is of the form: 
+
+```
+https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true​
+```
+
+where 00000000-0000-0000-0000-000000000000​ should be replaced with your Azure application ID
+
+
 ## Get an access token
 
 For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
@@ -117,16 +132,13 @@ The token is displayed in the application window
 ### Using Curl 
 
 > [!NOTE]
-> The below procedure supposed Curl is already installed on your computer
+> The below procedure supposed Curl for Windows is already installed on your computer
 
 - Open a command window
 - ​Set CLIENT_ID to your Azure application ID
 - Set CLIENT_SECRET to your Azure application secret
 - Set TENANT_ID to the Azure tenant ID of the customer that wants to use your application to access WDATP application
 - Run the below command:
-
-> [!NOTE]
-> The below syntax is for curl in Windows. For Linux you should use $CLIENT_ID​ instead of %CLIENT_ID% (same for CLIENT_SECRET and TENANT_ID​)
 
 ```
 curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice​/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID​%/oauth2/v2.0/token" -k​
@@ -144,21 +156,6 @@ You will get an answer of the form:
 - Validate you get a 'roles' claim with the desired permission, as shown in the below screenshot
 
 ![Image of token validation](images/webapp-validate-token.png)
-
-## Application consent
-
-You need your application to be approved in each tenant where you intend to use it. This is because your application interacts with WDATP application on behalf of your customer.
-
-You (or your customer if you are writing a 3rd party application) need to click the consent link and approve your application. The consent should be done with a user who has admin privileges in the active directory.
-
-Consent link is of the form: 
-
-```
-https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true​
-```
-
-where 00000000-0000-0000-0000-000000000000​ should be replaced with your Azure application ID
-
 
 ## Related topics
 - [Supported Windows Defender ATP APIs](supported-apis-windows-defender-advanced-threat-protection-new.md)

@@ -126,9 +126,9 @@ Content-Type: application/json​
 
 - (403) Forbidden.
 	
-	If you get this error when calling WDATP API, your token probably does not include the necessary permission.
-	Please refer to section "Verify you can access WDATP app using your app" in Create an AAD app.
-	If the 'roles' section in the token does not include the necessary permission, either you did not add the necessary permission to your app (refer to step 6 in Create an AAD app) or you did not authorized your app in the tenant (refer to "Application consent" in Create an AAD app​)
+	If you get this error when calling WDATP API, your token probably does not include the necessary permission,
+	[Check the permissions](exposed-apis-windows-defender-advanced-threat-protection-new.md#validate-the-token) included in your token.
+	If the 'roles' section in the token does not include the necessary permission, either you did not add the necessary permission to your app (refer to step 6 in [Create your app](exposed-apis-windows-defender-advanced-threat-protection-new.md#create-an-app)) or you did not authorized your app in the tenant (refer to [Application consent](exposed-apis-windows-defender-advanced-threat-protection-new.md#application-consent))
 
 
 ## Related topic
