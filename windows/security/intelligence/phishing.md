@@ -13,7 +13,7 @@ ms.date: 07/18/2018
 
 # Phishing
 
-Phishing attacks attempt to steal sensitive information from internet users through emails, websites, text messages, or other forms of electronic communication that often look to be official communication from legitimate companies or individuals.
+Phishing attacks attempt to steal sensitive information through emails, websites, text messages, or other forms of electronic communication that often look to be official communication from legitimate companies or individuals.
 
 The information that phishers (as the cybercriminals behind phishing attacks are called) attempt to steal can be user names and passwords, credit card details, bank account information, or other credentials. Attackers can then use stolen information for malicious purposes, such as hacking, identity theft, or stealing money directly from bank accounts and credit cards. Phishers can also sell the information in cybercriminal underground marketplaces.  
 
@@ -21,7 +21,7 @@ The information that phishers (as the cybercriminals behind phishing attacks are
 
 Phishing attacks are scams that often use social engineering bait or lure content. For example, during tax season, bait content involves tax-filing announcements that attempt to lure you into providing your personal information such as your Social Security number or bank account information.
 
-Legitimate-looking communication, usually email, that links to a phishing site is one of the most common methods used in phishing attacks. The phishing site typically mimics legitimate sign-in pages that require users to input login credentials and account information. The phishing site then captures the sensitive information as soon as the user provides it, giving attackers access to the information.
+Legitimate-looking communication, usually email, that links to a phishing site is one of the most common methods used in phishing attacks. The phishing site typically mimics sign-in pages that require users to input login credentials and account information. The phishing site then captures the sensitive information as soon as the user provides it, giving attackers access to the information.
 
 Another common phishing technique is the use of emails that direct you to open a malicious attachment, for example a PDF file. The attachment often contains a message asking you to provide login credentials to another site such as email or file sharing websites to open the document. When you access these phishing sites using your login credentials, the attacker now has access to your information and can gain additional personal information about you.
 
@@ -49,9 +49,9 @@ Phishing emails can be very effective, and so attackers can using them to distri
 
 We have also seen phishing emails that have links to [tech support scam](support-scams.md) websites, which use various scare tactics to trick you into calling hotlines and paying for unnecessary "technical support services" that supposedly fix contrived device, platform, or software problems.
 
-### Targeted attacks against enterprises
+## Targeted attacks against enterprises
 
-#### Spear phishing
+### Spear phishing
 
 Spear phishing is a targeted phishing attack that involves highly customized lure content. To perform spear phishing, attackers will typically do reconnaissance work, surveying social media and other information sources about their intended target.
 
@@ -59,11 +59,11 @@ Spear phishing may involve tricking you into logging into fake sites and divulgi
 
 The implanted malware serves as the point of entry for a more sophisticated attack known as an advanced persistent threat (APT). APTs are generally designed to establish control and steal data over extended periods. As part of the attack, attackers often try to deploy more covert hacking tools, move laterally to other computers, compromise or create privileged accounts, and regularly exfiltrate information from compromised networks.
 
-#### Whaling
+### Whaling
 
 Whaling is a form of phishing in which the attack is directed at high-level or senior executives within specific companies with the direct goal of gaining access to their credentials and/or bank information. The content of the email may be written as a legal subpoena, customer complaint, or other executive issue. This type of attack can also lead to an APT attack within an organization. When the links or attachment are opened, it can assist the attacker in accessing credentials and other personal information, or launch a malware that will lead to an APT.  
 
-#### Business email compromise
+### Business email compromise
 
 Business email compromise (BEC) is a sophisticated scam that targets businesses often working with foreign suppliers and businesses that regularly perform wire transfer payments. One of the most common schemes used by BEC attackers involves gaining access to a company’s network through a spear phishing attack, where the attacker creates a domain similar to the company they are targeting or spoofs their email to scam users into releasing personal account information for money transfers.
 
@@ -73,25 +73,36 @@ Social engineering attacks are designed to take advantage of a user's possible l
 
 ### Awareness
 
-The best protection is awareness and education. Don’t open attachments or click links in unsolicited emails, even if the emails came from someone you know. If you are not expecting the email, be wary about opening the attachment and verify the URL.
+The best protection is awareness and education. Don’t open attachments or click links in unsolicited emails, even if the emails came from a recognized source. If the email is unexpected, be wary about opening the attachment and verify the URL.
 
-Enterprises should educate and train their employees to be wary of any emails, phone calls, or the like, that request personal or financial information, and instruct them to report the threat to the company’s security operations team immediately.
+Enterprises should educate and train their employees to be wary of any communication that requests personal or financial information, and instruct them to report the threat to the company’s security operations team immediately.
 
 Here are several telltale signs of a phishing scam:
 
-* If links or URLs provided in emails are not pointing to the correct location or are attempting to have you access a third-party site that is not affiliated with the sender of the email, you should use caution. For example, in the image below you see that the URL provided does not match the URL that you will be taken to if you click the link.  This is a red flag and you should be wary of attempting to access this website.
-
+* The links or URLs provided in emails are **not pointing to the correct location** or are attempting to have you access a third-party site that is not affiliated with the sender of the email. For example, in the image below the URL provided does not match the URL that you will be taken to.
     ![example of how exploit kits work](./images/URLhover.png)
 
-* Emails that request personal information such as social security numbers or bank or financial information are always a good sign that you should do further investigation. Never release any personal, private, or confidential information unless you are positive the email is from a valid source. Even official communications won't generally request personal information from you in the form of an email.
+* There is a **request for personal information** such as social security numbers or bank or financial information. Official communications won't generally request personal information from you in the form of an email.
 
-* Oftentimes the scammer will change letters, add numbers, or otherwise change items in the email address so that it is similar enough to a legitimate email address.
+* **Items in the email address will be changed** so that it is similar enough to a legitimate email address but has added numbers or changed letters.
 
-* Phishing websites are designed to look like legitimate sites that you are familiar with and use on a regular basis, but may use outdated logos, have typos, or ask you to give additional information that are not asked by legitimate sign-in websites.
+* The message is **unexpected and unsolicited**. If you suddenly receive an email from an entity or a person you rarely deal with, consider this email suspect.
 
-* Sometimes you will notice that the page that opens is not a live page but rather an image that is designed to look like the site you are familiar with. Be careful if, upon opening a new website, a pop-up appears that requests you to enter your credentials.
+* The message or the attachment asks you to **enable macros, adjust security settings, or install applications**. Normal emails will not ask you to do this.
 
-If you are unsure if the email is a phishing scam, you should contact the business associated with it by phone or email to notify them of the email you received.
+* The message contains **errors**. Legitimate corporate messages are less likely to have typographic or grammatical errors or contain wrong information.
+
+* The **sender address does not match** the signature on the message itself. For example, an email is purported to be from Mary of Contoso Corp, but the sender address is john<span></span>@example.com.
+
+* There are **multiple recipients** in the “To” field and they appear to be random addresses. Corporate messages are normally sent directly to individual recipients.
+
+* The greeting on the message itself **does not personally address you**. Apart from messages that mistakenly address a different person, those that misuse your name or pull your name directly from your email address tend to be malicious.
+
+* The website looks familiar but there are **inconsistencies or things that are not quite right** such as outdated logos, typos, or ask users to give additional information that is not asked by legitimate sign-in websites.
+
+* The page that opens is **not a live page** but rather an image that is designed to look like the site you are familiar with. A pop-up may appear that requests credentials.
+
+If in doubt, contact the business by known channels to verify if any suspicious emails are in fact legitimate.
 
 For more information, download and read this Microsoft [e-book on preventing social engineering attacks](https://info.microsoft.com/Protectyourweakestlink.html?ls=social), especially in enterprise environments.
 
@@ -107,15 +118,19 @@ For more information, download and read this Microsoft [e-book on preventing soc
 
 * [Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) uses virtualization-based security to isolate secrets so that only privileged system software can access them. They are protected using virtualization-based security which blocks credential theft attack techniques and tools used in many targeted attacks. Malware running in the operating system with administrative privileges cannot extract secrets that are protected by virtualization-based security.
 
+For more general tips, see [prevent malware infection](prevent-malware-infection.md).
+
 ## What do I do if I've already been a victim of a phishing scam?
 
-If you feel that you have been a victim of a phishing attack, contact your local law enforcement immediately. You should also immediately change all passwords associated with the accounts, and report any fraudulent activity to your bank, credit card company, etc.
+If you feel that you have been a victim of a phishing attack, contact your IT Admin. You should also immediately change all passwords associated with the accounts, and report any fraudulent activity to your bank, credit card company, etc.
 
-You can report phishing emails to phish@office365.microsoft.com. For more information see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](https://docs.microsoft.com/en-us/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis).
+### Reporting spam
 
-Download the [Microsoft Junk E-mail Reporting Add-in for Microsoft Office Outlook](https://www.microsoft.com/download/details.aspx?id=18275).
+Submit phishing scam emails to **Microsoft** by sending an email with the scam as an attachment to: phish@office365.microsoft.com. For more information on submitting messages to Microsoft, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](https://docs.microsoft.com/en-us/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis).
 
-The Anti-Phishing Working Group – which includes and involves ISPs, security vendors, financial institutions and law enforcement agencies – uses reports generated from emails sent to reportphishing@apwg.org to fight phishing scams and hackers.
+For Outlook and Outlook on the web users, use the Report Message Add-in for Microsoft Outlook. For information about how to install and use this tool, see [Enable the Report Message add-in](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676).
+
+Send an email with the phishing scam to **The Anti-Phishing Working Group**: reportphishing@apwg.org. The group uses reports generated from emails sent to fight phishing scams and hackers. ISPs, security vendors, financial institutions and law enforcement agencies are involved.
 
 ## Where to find more information about phishing attacks
 
