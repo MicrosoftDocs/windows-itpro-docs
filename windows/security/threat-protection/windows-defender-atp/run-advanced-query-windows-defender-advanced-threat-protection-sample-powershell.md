@@ -86,7 +86,7 @@ $schema = $response.Schema
 If you want to run complex queries (or multilines queries), save your query in a file and, instead of the first line in the above sample, run the below command:
 
 ```
-​​​​$query = [IO.File]::ReadAllText("C:\myQuery.txt"); # Replace with the path to your file
+$query = [IO.File]::ReadAllText("C:\myQuery.txt"); # Replace with the path to your file
 ```
 
 ## Work with query results
