@@ -50,7 +50,7 @@ sections:
 
     items:
 
-    - href: https://docs.microsoft.com/en-us/microsoft-edge/deploy/about-microsoft-edge
+    - href: https://review.docs.microsoft.com/en-us/microsoft-edge/deploy/about-microsoft-edge
 
       html: <p>Learn about Microsoft Edge, including system requirements and language support</p>
 
