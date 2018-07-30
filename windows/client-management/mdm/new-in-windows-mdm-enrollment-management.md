@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/23   /2018
+ms.date: 07/27/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -1638,28 +1638,36 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr>
+<td style="vertical-align:top">[PassportForWork  CSP](passportforwork-csp.md)</td>
+<td style="vertical-align:top"><p>Added new settings in Windows 10, next major version.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top">[EnterpriseModernAppManagement  CSP](enterprisemodernappmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Added NonRemovable setting under AppManagement node in Windows 10, next major version.</p>
+</td></tr>
+<tr>
 <td style="vertical-align:top">[Win32CompatibilityAppraiser  CSP](win32compatibilityappraiser-csp.md)</td>
-<td style="vertical-align:top"><p>Added new configuration service provider.</p>
+<td style="vertical-align:top"><p>Added new configuration service provider in Windows 10, next major version.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[WindowsLicensing  CSP](windowslicensing-csp.md)</td>
-<td style="vertical-align:top"><p>Added S mode settings.</p>
+<td style="vertical-align:top"><p>Added S mode settings and SyncML examples in Windows 10, next major version.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[SUPL CSP](supl-csp.md)</td>
-<td style="vertical-align:top"><p>Added 3 new certificate nodes.</p>
+<td style="vertical-align:top"><p>Added 3 new certificate nodes in Windows 10, next major version.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Defender CSP](defender-csp.md)</td>
-<td style="vertical-align:top"><p>Added a new node Health/ProductStatus.</p>
+<td style="vertical-align:top"><p>Added a new node Health/ProductStatus in Windows 10, next major version.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
-<td style="vertical-align:top"><p>Added a new node AllowStandardUserEncryption.</p>
+<td style="vertical-align:top"><p>Added a new node AllowStandardUserEncryption in Windows 10, next major version.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
-<td style="vertical-align:top"><p>Added a new node SMBIOSSerialNumber.</p>
+<td style="vertical-align:top"><p>Added a new node SMBIOSSerialNumber in Windows 10, next major version.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
@@ -1687,7 +1695,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul>
 <p>Recent changes:</p>
 <ul>
-<li>DataUsage/SetCost3G - deprecated in RS5.</li>
+<li>DataUsage/SetCost3G - deprecated in Windows 10, next major version.</li>
 </ul>
 </td></tr>
 </tbody>
