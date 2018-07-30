@@ -68,7 +68,7 @@ Some things that you can check on the device are:
 -   Is SecureBoot supported and enabled?
 
 > [!NOTE]
-> The device must be running Windows 10 and it must support at least TPM 2.0.
+> The device must be running Windows 10 and it must support at least TPM 2.0 in order to utilize Device Health Attestation.
 
 ## Supported versions
 
