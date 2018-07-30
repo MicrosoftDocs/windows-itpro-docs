@@ -31,11 +31,11 @@ Microsoft Edge shows the home button and by clicking it the Start page loads by 
 
 
 ## Configure Home button
-[!INCLUDE [configure-home-button-include.md](includes/configure-home-button-include.md)]
+[!INCLUDE [configure-home-button-include.md](../includes/configure-home-button-include.md)]
 
 ## Set Home button URL
-[!INCLUDE [set-home-button-url-include](includes/set-home-button-url-include.md)]
+[!INCLUDE [set-home-button-url-include](../includes/set-home-button-url-include.md)]
 
 ## Unlock Home button
-[!INCLUDE [unlock-home-button-include.md](includes/unlock-home-button-include.md)]
+[!INCLUDE [unlock-home-button-include.md](../includes/unlock-home-button-include.md)]
 

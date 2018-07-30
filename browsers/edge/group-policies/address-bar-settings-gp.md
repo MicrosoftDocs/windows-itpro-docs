@@ -19,7 +19,7 @@ I need a description here
 
 
 ## Allow Address bar drop-down list suggestions
-[!INCLUDE [allow-address-bar-suggestions-include.md](includes/allow-address-bar-suggestions-include.md)]
+[!INCLUDE [allow-address-bar-suggestions-include.md](../includes/allow-address-bar-suggestions-include.md)]
 
 ## Configure search suggestions in Address bar
-[!INCLUDE [configure-search-suggestions-address-bar-include.md](includes/configure-search-suggestions-address-bar-include.md)]
+[!INCLUDE [configure-search-suggestions-address-bar-include.md](../includes/configure-search-suggestions-address-bar-include.md)]
