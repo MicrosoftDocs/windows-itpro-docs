@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/14/2018
+ms.date: 07/30/2018
 ---
 
 # Policy CSP - DeviceLock
@@ -1216,33 +1216,4 @@ Footnote:
 -   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
-
-<!--StartEAS-->
-## <a href="" id="eas"></a>DeviceLock policies that can be set using Exchange Active Sync (EAS)  
-
--   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)  
--   [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)  
--   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
--   [DeviceLock/DevicePasswordExpiration](#devicelock-devicepasswordexpiration)  
--   [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)  
--   [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)  
--   [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)  
--   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)  
--   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
--   [DeviceLock/PreventLockScreenSlideShow](#devicelock-preventlockscreenslideshow)  
-<!--EndEAS-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>DeviceLock policies supported by Windows Holographic for Business  
-
--   [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
--   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
--   [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
--   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
--   [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
--   [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)
--   [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)
--   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters) 
--   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)   
-<!--EndHoloLens-->
 

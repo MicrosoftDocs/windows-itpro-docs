@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/18/2018
+ms.date: 07/30/2018
 ---
 
 # Policy CSP - Update
@@ -3551,52 +3551,4 @@ Footnote:
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Update policies supported by Windows Holographic for Business  
-
--   [Update/AllowAutoUpdate](#update-allowautoupdate)  
--   [Update/AllowUpdateService](#update-allowupdateservice)  
--   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
--   [Update/RequireUpdateApproval](#update-requireupdateapproval)  
--   [Update/UpdateServiceUrl](#update-updateserviceurl)  
-<!--EndHoloLens-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>Update policies supported by IoT Core  
-
--   [Update/AllowNonMicrosoftSignedUpdate](#update-allownonmicrosoftsignedupdate)  
--   [Update/AllowUpdateService](#update-allowupdateservice)  
--   [Update/AutoRestartDeadlinePeriodInDaysForFeatureUpdates](#update-autorestartdeadlineperiodindaysforfeatureupdates)  
--   [Update/EngagedRestartDeadlineForFeatureUpdates](#update-engagedrestartdeadlineforfeatureupdates)  
--   [Update/EngagedRestartSnoozeScheduleForFeatureUpdates](#update-engagedrestartsnoozescheduleforfeatureupdates)  
--   [Update/EngagedRestartTransitionScheduleForFeatureUpdates](#update-engagedrestarttransitionscheduleforfeatureupdates)  
--   [Update/PauseDeferrals](#update-pausedeferrals)  
--   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
--   [Update/RequireUpdateApproval](#update-requireupdateapproval)  
--   [Update/ScheduledInstallDay](#update-scheduledinstallday)  
--   [Update/ScheduledInstallTime](#update-scheduledinstalltime)  
--   [Update/SetDisablePauseUXAccess](#update-setdisablepauseuxaccess)  
--   [Update/SetDisableUXWUAccess](#update-setdisableuxwuaccess)  
--   [Update/UpdateServiceUrl](#update-updateserviceurl)  
-<!--EndIoTCore-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>Update policies supported by Microsoft Surface Hub  
-
--   [Update/AllowAutoUpdate](#update-allowautoupdate)  
--   [Update/AllowUpdateService](#update-allowupdateservice)  
--   [Update/AutoRestartNotificationSchedule](#update-autorestartnotificationschedule)  
--   [Update/AutoRestartRequiredNotificationDismissal](#update-autorestartrequirednotificationdismissal)  
--   [Update/BranchReadinessLevel](#update-branchreadinesslevel)  
--   [Update/DeferFeatureUpdatesPeriodInDays](#update-deferfeatureupdatesperiodindays)  
--   [Update/DeferQualityUpdatesPeriodInDays](#update-deferqualityupdatesperiodindays)  
--   [Update/DetectionFrequency](#update-detectionfrequency)  
--   [Update/PauseFeatureUpdates](#update-pausefeatureupdates)  
--   [Update/PauseQualityUpdates](#update-pausequalityupdates)  
--   [Update/ScheduleImminentRestartWarning](#update-scheduleimminentrestartwarning)  
--   [Update/ScheduleRestartWarning](#update-schedulerestartwarning)  
--   [Update/SetAutoRestartNotificationDisable](#update-setautorestartnotificationdisable)  
--   [Update/UpdateServiceUrl](#update-updateserviceurl)  
--   [Update/UpdateServiceUrlAlternate](#update-updateserviceurlalternate)  
-<!--EndSurfaceHub-->
 
