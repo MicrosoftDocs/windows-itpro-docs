@@ -92,52 +92,8 @@
 ####[Configure AutoIR](configure3.md)
 
 
-####[Configure Settings](configure4.md)
 
-
-
-
-
-
-
-### [Windows Defender Security Center](windows-defender-atp/windows-defender-security-center-atp.md)
-#### [Understand the portal / Windows Defender Security Center ](windows-defender-atp\use-windows-defender-advanced-threat-protection.md)
-##### [Portal overview](windows-defender-atp\portal-overview-windows-defender-advanced-threat-protection.md)
-##### [View the Security operations dashboard](windows-defender-atp\security-operations-dashboard-windows-defender-advanced-threat-protection.md)
-
-##### [View the Threat analytics dashboard and take recommended mitigation actions](windows-defender-atp\threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
-
-
-
-
-
-
-
-
-###### [Query data using Advanced hunting](windows-defender-atp\advanced-hunting-windows-defender-advanced-threat-protection.md)
-####### [Advanced hunting reference](windows-defender-atp\advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
-####### [Advanced hunting query language best practices](windows-defender-atp\advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
-
-
-
-
-####API and SIEM support
-
-
-
-
-####Reporting
-
-
-####Check service health and sensor state
-##### [Check sensor state](windows-defender-atp\check-sensor-status-windows-defender-advanced-threat-protection.md)
-##### [Fix unhealthy sensors](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
-##### [Inactive machines](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#inactive-machines)
-##### [Misconfigured machines](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#misconfigured-machines)
-##### [Check service health](windows-defender-atp\service-status-windows-defender-advanced-threat-protection.md)
-
-
-####[Configure Windows Defender Security Center settings](windows-defender-atp\preferences-setup-windows-defender-advanced-threat-protection.md)
+#### [Configure Windows Defender Security Center settings](windows-defender-atp\preferences-setup-windows-defender-advanced-threat-protection.md)
 #####General
 ###### [Update data retention settings](windows-defender-atp\data-retention-settings-windows-defender-advanced-threat-protection.md)
 ###### [Configure alert notifications](windows-defender-atp\configure-email-notifications-windows-defender-advanced-threat-protection.md)
@@ -162,12 +118,50 @@
 ###### [Onboarding machines](windows-defender-atp\onboard-configure-windows-defender-advanced-threat-protection.md)
 ###### [Offboarding machines](windows-defender-atp\offboard-machines-windows-defender-advanced-threat-protection.md)
 
-#### [Configure Windows Defender Security Center time zone settings](windows-defender-atp\time-settings-windows-defender-advanced-threat-protection.md)
+##### [Configure Windows Defender Security Center time zone settings](windows-defender-atp\time-settings-windows-defender-advanced-threat-protection.md)
 
-#### [Access the Windows Defender Security Center Community Center](windows-defender-atp\community-windows-defender-advanced-threat-protection.md)
-#### [Troubleshoot Windows Defender ATP service issues](windows-defender-atp\troubleshoot-windows-defender-advanced-threat-protection.md)
-##### [Review events and errors on machines with Event Viewer](windows-defender-atp\event-error-codes-windows-defender-advanced-threat-protection.md)
-#### [Windows Defender Antivirus compatibility with Windows Defender ATP](windows-defender-atp\defender-compatibility-windows-defender-advanced-threat-protection.md)
+
+
+
+### [Windows Defender Security Center](windows-defender-atp/windows-defender-security-center-atp.md)
+#### [Understand the portal / Windows Defender Security Center ](windows-defender-atp\use-windows-defender-advanced-threat-protection.md)
+##### [Portal overview](windows-defender-atp\portal-overview-windows-defender-advanced-threat-protection.md)
+##### [View the Security operations dashboard](windows-defender-atp\security-operations-dashboard-windows-defender-advanced-threat-protection.md)
+
+##### [View the Threat analytics dashboard and take recommended mitigation actions](windows-defender-atp\threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+##### [Access the Windows Defender Security Center Community Center](windows-defender-atp\community-windows-defender-advanced-threat-protection.md)
+
+
+
+
+
+
+
+###### [Query data using Advanced hunting](windows-defender-atp\advanced-hunting-windows-defender-advanced-threat-protection.md)
+####### [Advanced hunting reference](windows-defender-atp\advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
+####### [Advanced hunting query language best practices](windows-defender-atp\advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
+
+
+
+
+####API and SIEM support
+
+
+
+
+####Reporting
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### [Attack surface reduction](windows-defender-exploit-guard\attack-surface-reduction-exploit-guard.md)
@@ -387,6 +381,15 @@
 ### [Troubleshoot everything](troubleshoot.md)
 #### [Review event logs and error codes to troubleshoot issues](windows-demanagement and apisfender-antivirus\troubleshoot-windows-defender-antivirus.md)
 
+####[Check service health and sensor state](troubleshoot-sense.md) 
+##### [Check sensor state](windows-defender-atp\check-sensor-status-windows-defender-advanced-threat-protection.md)
+##### [Fix unhealthy sensors](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
+##### [Inactive machines](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#inactive-machines)
+##### [Misconfigured machines](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#misconfigured-machines)
+##### [Check service health](windows-defender-atp\service-status-windows-defender-advanced-threat-protection.md)
+
+#### [Troubleshoot Windows Defender ATP service issues](windows-defender-atp\troubleshoot-windows-defender-advanced-threat-protection.md)
+##### [Review events and errors on machines with Event Viewer](windows-defender-atp\event-error-codes-windows-defender-advanced-threat-protection.md)
 
 
 
@@ -413,8 +416,6 @@
 
 
 
-
-----------------------
 
 
 #### [Windows Defender AV in the Windows Defender Security app](windows-defender-antivirus\windows-defender-security-center-antivirus.md)
@@ -436,6 +437,11 @@
 ##### [Memory integrity](windows-defender-exploit-guard\memory-integrity.md)
 ###### [Requirements for virtualization-based protection of code integrity](windows-defender-exploit-guard\requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
 ###### [Enable virtualization-based protection of code integrity](windows-defender-exploit-guard\enable-virtualization-based-protection-of-code-integrity.md)
+
+
+
+#### [Windows Defender Antivirus compatibility with Windows Defender ATP](windows-defender-atp\defender-compatibility-windows-defender-advanced-threat-protection.md)
+
 
 
 ## Other security features
