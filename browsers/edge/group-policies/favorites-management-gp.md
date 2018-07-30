@@ -28,4 +28,4 @@ I need a description here, maybe with scenarios
 [!INCLUDE [prevent-changes-to-favorites-include](../includes/prevent-changes-to-favorites-include.md)] 
 
 ## Provision Favorites 
-[!INCLUDE [provision-favorites-shortdesc](../shortdesc/provision-favorites-shortdesc.md)] 
+[!INCLUDE [provision-favorites-include](../includes/provision-favorites-include.md)]
