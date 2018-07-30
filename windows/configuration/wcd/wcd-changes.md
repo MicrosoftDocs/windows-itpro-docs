@@ -13,10 +13,17 @@ ms.date: 04/30/2018
 
 # Changes to settings in Windows Configuration Designer
 
-New settings
+Settings added in Windows 10, version 1809
 
+
+- [Browser > AllowPrelaunch](wcd/wcd-browser.md#allowprelaunch)
+- [Browser > FavoriteBarItems](wcd/wcd-browser.md#favoritebaritems)
+- [Cellular > PerSim > SignalBlockingTable](wcd/wcd-cellular.md#signalblockingtable)
 - [KioskBrowser](wcd/wcd-kioskbrowser.md)
 - [Location](wcd/wcd-location.md)
 - [WindowsHelloForBusiness](wcd/wcd-windowshelloforbusiness.md)
 
 
+Settings removed in Windows 10, version 1809
+
+- [CellCore](wcd/wcd-cellcore.md)
