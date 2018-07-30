@@ -1,8 +1,8 @@
 #[Microsoft Edge deployment for IT Pros](index.yml)
 
-##[New Microsoft Edge Group Policies and MDM settings](new-policies.md)
+##[(Preview) New Microsoft Edge Group Policies and MDM settings](new-policies.md)
 
-##[Deploy Microsoft Edge kiosk mode](microsoft-edge-kiosk-mode-deploy.md)
+##[(Preview) Deploy Microsoft Edge kiosk mode](microsoft-edge-kiosk-mode-deploy.md)
 
 ##[Group policies & configuration options](group-policies/index.yml)
 ###[All group policies](available-policies.md)
@@ -15,7 +15,7 @@
 ###[Favorites management](group-policies/favorites-management-gp.md)
 ###[Home button settings](group-policies/home-button-gp.md)
 ###[Interoperability and enterprise guidance](group-policies/interoperability-enterprise-guidance-gp.md)
-###[New tab page](group-policies/new-tab-page-settings-gp.md)
+###[New tab page settings](group-policies/new-tab-page-settings-gp.md)
 ###[Prelaunch Microsoft Edge and preload tabs](group-policies/prelaunch-preload-gp.md)
 ###[Search engine customization](group-policies/search-engine-customization-gp.md)
 ###[Security and privacy management](group-policies/security-privacy-management-gp.md)

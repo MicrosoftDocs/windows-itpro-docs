@@ -44,7 +44,7 @@ sections:
 
     style: cards
 
-    className: cardsE
+    className: cardsB
 
     columns: 3
 
@@ -178,11 +178,11 @@ sections:
 
         src: https://docs.microsoft.com/media/common/i_setup.svg
       
-      title: Prelaunch Microsoft Edge and preload tabs in the background
+      title: Prelaunch Microsoft Edge and preload tabs
   
     - href: https://review.docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/search-engine-customization-gp?branch=pr-en-us-10183
 
-      html: <p>Learn how you can set the default search engine and configure additional search engines.</p>
+      html: <p>Learn how you can set the default search engine and configure additional ones.</p>
 
       image:
 
