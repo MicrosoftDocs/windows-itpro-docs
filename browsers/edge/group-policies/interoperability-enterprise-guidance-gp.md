@@ -35,7 +35,7 @@ If you have specific websites and apps that you know have compatibility problems
 
 Using Enterprise Mode means that you can continue to use Microsoft Edge as your default browser, while also ensuring that your apps continue working on IE11.
 
-## Use Enterprise Mode in Microsoft Edge
+## Relevant group policies
 
 1. [Configure the Enterprise Mode Site List](#configure-the-enterprise-mode-site-list)
 2. [Send all intranet sites to Internet Explorer 11](#send-all-intranet-sites-to-internet-explorer-11)
@@ -45,14 +45,14 @@ Using Enterprise Mode means that you can continue to use Microsoft Edge as your 
 
 ![Use Enterprise Mode with Microsoft Edge to improve compatibility](../images/use-enterprise-mode-with-microsoft-edge-sm.png)
 
-### Configure the Enterprise Mode Site List
+## Configure the Enterprise Mode Site List
 [!INCLUDE [configure-enterprise-mode-site-list-include](../includes/configure-enterprise-mode-site-list-include.md)] 
 
-### Send all intranet sites to Internet Explorer 11
+## Send all intranet sites to Internet Explorer 11
 [!INCLUDE [send-all-intranet-sites-ie-include](../includes/send-all-intranet-sites-ie-include.md)]
 
-### Show message when opening sites in Internet Explorer
+## Show message when opening sites in Internet Explorer
 [!INCLUDE [show-message-opening-sites-ie-include](../includes/show-message-opening-sites-ie-include.md)] 
 
-### (IE11 policy) Send all sites not included in the Enterprise Mode Site List to Microsoft Edge 
+## (IE11 policy) Send all sites not included in the Enterprise Mode Site List to Microsoft Edge 
 [!INCLUDE [ie11-send-all-sites-not-in-site-list-include](../includes/ie11-send-all-sites-not-in-site-list-include.md)] 

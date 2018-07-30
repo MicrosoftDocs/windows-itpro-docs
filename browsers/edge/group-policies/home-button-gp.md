@@ -14,7 +14,7 @@ ms.sitesec: library
 
 Microsoft Edge shows the home button and by clicking it the Start page loads by default. You can configure the Home button to load the New tab page or a URL defined in the Set Home button URL policy. You can also configure Microsoft Edge to hide the home button. 
 
-## Policies
+## Relevant group policies
 
 - [Configure Home button](#configure-home-button)
 - [Set Home button URL](#set-home-button-url)

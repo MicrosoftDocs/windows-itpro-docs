@@ -15,7 +15,7 @@ ms.sitesec: library
 
 Microsoft Edge loads the pages specified in App settings as the default Start pages.  You can configure Microsoft Edge to load either the Start page, New tab page, previously opened pages, or a specific page or pages.  You can also configure Microsoft Edge to prevent users from making changes. 
 
-**Policies**
+## Relevant group policies
 
 - [Configure Open Microsoft Edge With](#configure-open-microsoft-edge-with)
 - [Configure Start Pages](#configure-start-pages)

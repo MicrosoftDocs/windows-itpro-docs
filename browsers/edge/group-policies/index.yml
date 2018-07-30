@@ -210,6 +210,16 @@ sections:
       
       title: Start page settings
 
+    - href: https://review.docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/sync-browser-settings-gp?branch=pr-en-us-10183
+
+      html: <p>Learn how to you can prevent the "browser" group from syncing and prevent users from turning on the the Sync your Settings toggle.</p>
+
+      image:
+
+        src: https://docs.microsoft.com/media/common/i_sync.svg
+      
+      title: Sync browser settings
+
     - href: https://review.docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/telemetry-management-gp?branch=pr-en-us-10183
 
       html: <p>Learn how you can configure Microsoft Edge to collect certain data.</p>
