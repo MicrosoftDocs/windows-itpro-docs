@@ -14,7 +14,7 @@ ms.date: 01/26/2018
 
 The Firewall configuration service provider (CSP) allows the mobile device management (MDM) server to configure the Windows Defender Firewall global settings, per profile settings, as well as the desired set of custom rules to be enforced on the device.  Using the Firewall CSP the IT admin can now manage non-domain devices, and reduce the risk of network security threats across all systems connecting to the corporate network.  This CSP was added Windows 10, version 1709.
  
-Each of the Firewall rules in the FirewallRules section must be wrapped in an Atomic block in SyncML.
+Firewall rules in the FirewallRules section must be wrapped in an Atomic block in SyncML, either individually or collectively.
 
 For detailed information on some of the fields below see [[MS-FASP]: Firewall and Advanced Security Protocol documentation](https://msdn.microsoft.com/en-us/library/mt620101.aspx).
 
@@ -331,7 +331,7 @@ Sample syncxml to provision the firewall settings to evaluate
 <p style="margin-left: 20px">New rules have the EdgeTraversal property disabled by default.</p>
 <p style="margin-left: 20px">Value type is bool. Supported operations are Add, Get, Replace, and Delete.</p>
 
-<a href="" id="localuserauthorizedlist"></a>**FirewallRules/_FirewallRuleName_/LocalUserAuthorizedList**
+<a href="" id="localuserauthorizedlist"></a>**FirewallRules/_FirewallRuleName_/LocalUserAuthorizationList**
 <p style="margin-left: 20px">Specifies the list of authorized local users for the app container. This is a string in Security Descriptor Definition Language (SDDL) format.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
 

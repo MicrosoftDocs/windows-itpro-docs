@@ -52,7 +52,7 @@ If successful, this method returns 200, Ok response code with empty body, which 
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -64,7 +64,7 @@ Content-type: application/json
 }
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 
