@@ -12,15 +12,16 @@ ms.date: 07/29/2018
 
 
 ## Allow extended telemetry for the Books tab
-[!INCLUDE [allow-ext-telemetry-books-tab-include.md](includes/allow-ext-telemetry-books-tab-include.md)]
+[!INCLUDE [allow-ext-telemetry-books-tab-include.md](../includes/allow-ext-telemetry-books-tab-include.md)]
 
 ## Configure collection of browsing data for Microsoft 365 Analytics
-[!INCLUDE [configure-browser-telemetry-for-m365-analytics-include](includes/configure-browser-telemetry-for-m365-analytics-include.md)]
+[!INCLUDE [configure-browser-telemetry-for-m365-analytics-include](../includes/configure-browser-telemetry-for-m365-analytics-include.md)]
+
 
 
 ## Configure Do Not Track
-[!INCLUDE [configure-do-not-track-include.md](includes/configure-do-not-track-include.md)]
+[!INCLUDE [configure-do-not-track-include.md](../includes/configure-do-not-track-include.md)]
 
 
 ## Prevent Microsoft Edge from gathering Live Tile information when pinning a site to Start
-[!INCLUDE [prevent-live-tile-pinning-start-include](includes/prevent-live-tile-pinning-start-include.md)]
+[!INCLUDE [prevent-live-tile-pinning-start-include](../includes/prevent-live-tile-pinning-start-include.md)]
