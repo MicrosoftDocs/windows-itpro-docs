@@ -1,5 +1,5 @@
 <!-- ##Configure Favorites Bar --> 
->*Supported versions: Microsoft Edge on Windows 10, new major release*<br>  
+>*Supported versions: Microsoft Edge on Windows 10, new major release*  
 >*Default setting:  Not configured (Hidden)*
 
 

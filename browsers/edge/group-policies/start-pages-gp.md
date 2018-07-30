@@ -9,7 +9,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ---
 
-# Start pages 
+# Start pages configuration options
 >*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*
 
 
