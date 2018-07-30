@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 12/08/2017
+ms.date: 30/07/2018
 ---
 
 # Schedule Advanced Hunting using Microsoft Flow 
