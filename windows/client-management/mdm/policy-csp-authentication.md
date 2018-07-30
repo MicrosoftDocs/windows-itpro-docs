@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/14/2018
+ms.date: 07/30/2018
 ---
 
 # Policy CSP - Authentication
@@ -312,16 +312,3 @@ Footnote:
 -   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Authentication policies supported by Windows Holographic for Business  
-
--   [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)  
-<!--EndHoloLens-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>Authentication policies supported by IoT Core  
-
--   [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)  
-<!--EndIoTCore-->
-
