@@ -387,10 +387,10 @@
 ###### [Audit process tracking](auditing/basic-audit-process-tracking.md)
 ###### [Audit system events](auditing/basic-audit-system-events.md)
 
-##### [Advanced security audit policies](auditing/advanced-security-auditing.md)
-###### [Planning and deploying advanced security audit policies](auditing/planning-and-deploying-advanced-security-audit-policies.md)
-###### [Advanced security auditing FAQ](auditing/advanced-security-auditing-faq.md)
-####### [Which editions of Windows support advanced audit policy configuration](auditing/which-editions-of-windows-support-advanced-audit-policy-configuration.md)
+#### [Advanced security audit policies](auditing/advanced-security-auditing.md)
+##### [Planning and deploying advanced security audit policies](auditing/planning-and-deploying-advanced-security-audit-policies.md)
+##### [Advanced security auditing FAQ](auditing/advanced-security-auditing-faq.md)
+###### [Which editions of Windows support advanced audit policy configuration](auditing/which-editions-of-windows-support-advanced-audit-policy-configuration.md)
 
 ###### [Using advanced security auditing options to monitor dynamic access control objects](auditing/using-advanced-security-auditing-options-to-monitor-dynamic-access-control-objects.md)
 ####### [Monitor the central access policies that apply on a file server](auditing/monitor-the-central-access-policies-that-apply-on-a-file-server.md)
@@ -731,7 +731,7 @@
 
 
 
-#### [Security policy settings](security-policy-settings/security-policy-settings.md)
+### [Security policy settings](security-policy-settings/security-policy-settings.md)
 #### [Administer security policy settings](security-policy-settings/administer-security-policy-settings.md)
 ##### [Network List Manager policies](security-policy-settings/network-list-manager-policies.md)
 #### [Configure security policy settings](security-policy-settings/how-to-configure-security-policy-settings.md)
