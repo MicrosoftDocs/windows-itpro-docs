@@ -7,10 +7,10 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: justinha
-ms.date: 06/29/2017
+ms.date: 07/31/2018
 ---
 
-# How hardware-based containers help protect Windows 10
+# Windows Defender System Guard: How hardware-based containers help protect Windows 10
 
 Windows 10 uses containers to isolate sensitive system services and data, enabling them to remain secure even when the operating system has been compromised. 
 Windows 10 protects critical resources, such as the Windows authentication stack, single sign-on tokens, Windows Hello biometric stack, and Virtual Trusted Platform Module, by using a container type called Windows Defender System Guard. 
