@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 06/21/2018
+ms.date: 07/30/2018
 ---
 
 # Windows Defender ATP preview features
@@ -48,6 +48,10 @@ Onboard supported versions of Windows machines so that they can send sensor data
   - Windows 7 SP1 Pro
   - Windows 8.1 Enterprise
   - Windows 8.1 Pro 
+
+- [Integration with Azure Security Center](configure-server-endpoints-windows-defender-advanced-threat-protection.md#integration-with-azure-security-center)<br>
+Windows Defender ATP integrates with Azure Security Center to provide a comprehensive server protection solution. With this integration Azure Security Center can leverage the power of Windows Defender ATP to provide improved threat detection for Windows Servers.
+
 
  
 
