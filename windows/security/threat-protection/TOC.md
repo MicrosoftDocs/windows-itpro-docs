@@ -15,8 +15,8 @@
 #### [Data storage and privacy](windows-defender-atp\data-storage-privacy-windows-defender-advanced-threat-protection.md)
 #### [Assign user access to the portal](windows-defender-atp\assign-portal-access-windows-defender-advanced-threat-protection.md)
 
-#### [Evaluate Windows Defender ATP](evaluate.md)
-##### [Evaluate Attack surface reduction - ASR controls](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
+#### [Evaluate Windows Defender ATP](../../evaluate.md)
+##### [Evaluate Attack surface reduction - ASR controls](../windows-defender-exploit-guard/evaluate-attack-surface-reduction.md)
 ##### [Evaluate Exploit protection](windows-defender-exploit-guard\evaluate-exploit-protection.md)
 ##### [Evaluate Network Protection](windows-defender-exploit-guard\evaluate-network-protection.md)
 ##### [Evaluate Controlled folder access](windows-defender-exploit-guard\evaluate-controlled-folder-access.md)
