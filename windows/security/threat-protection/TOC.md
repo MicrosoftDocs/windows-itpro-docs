@@ -731,7 +731,7 @@
 
 
 
-#### [Security policy settings](security-policy-settings/security-policy-settings.md)
+### [Security policy settings](security-policy-settings/security-policy-settings.md)
 #### [Administer security policy settings](security-policy-settings/administer-security-policy-settings.md)
 ##### [Network List Manager policies](security-policy-settings/network-list-manager-policies.md)
 #### [Configure security policy settings](security-policy-settings/how-to-configure-security-policy-settings.md)
