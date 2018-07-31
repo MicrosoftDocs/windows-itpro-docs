@@ -10,7 +10,7 @@
 ### [Assign user access to the portal](assign-portal-access-windows-defender-advanced-threat-protection.md)
 
 
-### [Evaluate Windows Defender ATP](../threat-protection/evaluate.md)
+### [Evaluate Windows Defender ATP](./evaluate.md)
 #### [Evaluate Attack surface reduction - ASR controls](../windows-defender-exploit-guard/evaluate-attack-surface-reduction.md)
 #### [Evaluate Exploit protection](../windows-defender-exploit-guard/evaluate-exploit-protection.md)
 #### [Evaluate Network Protection](../windows-defender-exploit-guard/evaluate-network-protection.md)
@@ -21,7 +21,7 @@
 #### [Testing scenarios using Windows Defender Application Guard in your business or organization](../windows-defender-application-guard//test-scenarios-wd-app-guard.md)
  
  
-## [Onboard and configure machines to Windows Defender ATP](./onboard.md)
+## [Onboard and configure machines to Windows Defender ATP](../threat-protection/onboard.md)
 ### [Onboard machines - need to revise this page](onboard-configure-windows-defender-advanced-threat-protection.md)
 #### [Onboard previous versions of Windows](onboard-downlevel-windows-defender-advanced-threat-protection.md)
 #### [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
@@ -134,7 +134,7 @@
  
 #### [Enable Exploit protection - Chris, Amitai, Justin](../windows-defender-exploit-guard/enable-exploit-protection.md)
 #### [Customize Exploit protection](../windows-defender-exploit-guard/customize-exploit-protection.md)
-##### [Import, export, and deploy Exploit protection configurations](windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
+##### [Import, export, and deploy Exploit protection configurations](../windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
 
 ### [Network Protection](../windows-defender-exploit-guard/network-protection-exploit-guard.md)
  
@@ -164,7 +164,7 @@
 #### [Enable and configure always-on protection and monitoring](../windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus.md)
 
 
-## [Endpoint detection and response - Tomer B.](faketopic.md)
+## [Endpoint detection and response - Tomer B.](../threat-protection/faketopic.md)
 ###Alerts queue
 #### [View and organize the Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
 #### [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
@@ -222,7 +222,7 @@
 ### [View the Threat analytics dashboard and take recommended mitigation actions - Evald](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
 
 
-## [Management and APIs](management-apis.md)
+## [Management and APIs](./management-apis.md)
 ### [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md)
 #### [Enable SIEM integration](enable-siem-integration-windows-defender-advanced-threat-protection.md)
 #### [Configure Splunk to pull alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
@@ -306,16 +306,16 @@
 #### [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
 
 
-### [Reporting](reporting.md)
+### [Reporting](../threat-protection/reporting.md)
 #### [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
 
 
-### [Permissions](permissions.md)
+### [Permissions](../threat-protection/permissions.md)
 #### [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md)
 #### [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md)
 
 
-## [Microsoft threat protection - Heike or Raviv or Alon - need to make new page - put anchors inside for each integ](integration.md)
+## [Microsoft threat protection - Heike or Raviv or Alon - need to make new page - put anchors inside for each integ](../threat-protection/integration.md)
 ###  [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
 
 
