@@ -1,7 +1,7 @@
 # [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md)
 
 
-## [Get started - FIXED!!](./fake2.md)
+## [Get started](../fake2.md)
 ### [Minimum requirements](minimum-requirements-windows-defender-advanced-threat-protection.md)
 ### [Validate licensing and complete setup](licensing-windows-defender-advanced-threat-protection.md)
 ### [Troubleshoot subscription and portal access issues](troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
@@ -129,10 +129,10 @@
 ### [Windows Defender Application Control](../windows-defender-application-control/windows-defender-application-control.md)
 
 
-### [Exploit protection - Chris, Amitai, Justin](../windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
+### [Exploit protection - Chris, Amitai, Andrea](../windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
 #### [Comparison with Enhanced Mitigation Experience Toolkit](../windows-defender-exploit-guard/emet-exploit-protection-exploit-guard.md)
  
-#### [Enable Exploit protection - Chris, Amitai, Justin](../windows-defender-exploit-guard/enable-exploit-protection.md)
+#### [Enable Exploit protection](../windows-defender-exploit-guard/enable-exploit-protection.md)
 #### [Customize Exploit protection](../windows-defender-exploit-guard/customize-exploit-protection.md)
 ##### [Import, export, and deploy Exploit protection configurations](../windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
 
