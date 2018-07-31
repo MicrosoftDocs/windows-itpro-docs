@@ -22,7 +22,7 @@
 >>You can find this policy and the related policies in the following location of the Group Policy Editor:
 >> 
 >>**_Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection and Preview Builds\\_**
->><ul><li>Allow Telemetry</li><li>Configure the Commercial ID</li><li>Configure collection of browsing data for Microsoft 365 Analytics</li></ul> 
+>><ul><li>Allow Telemetry = Enabled, _Enhanced_</li><li>Configure the Commercial ID = String of the Commercial ID</li><li>Configure collection of browsing data for Microsoft 365 Analytics</li></ul> 
 
 
 
