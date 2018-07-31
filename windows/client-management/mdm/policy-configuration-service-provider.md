@@ -2916,6 +2916,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-security.md#security-preventautomaticdeviceencryptionforazureadjoineddevices" id="security-preventautomaticdeviceencryptionforazureadjoineddevices">Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices</a>
   </dd>
   <dd>
+    <a href="./policy-csp-security.md#security-recoveryenvironmentauthentication" id="security-recoveryenvironmentauthentication">Security/RecoveryEnvironmentAuthentication</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-security.md#security-requiredeviceencryption" id="security-requiredeviceencryption">Security/RequireDeviceEncryption</a>
   </dd>
   <dd>
