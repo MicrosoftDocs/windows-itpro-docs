@@ -10,7 +10,7 @@
 ### [Assign user access to the portal](assign-portal-access-windows-defender-advanced-threat-protection.md)
 
 
-### [Evaluate Windows Defender ATP](./evaluate.md)
+### [Evaluate Windows Defender ATP](../evaluate.md)
 #### [Evaluate Attack surface reduction - ASR controls](../windows-defender-exploit-guard/evaluate-attack-surface-reduction.md)
 #### [Evaluate Exploit protection](../windows-defender-exploit-guard/evaluate-exploit-protection.md)
 #### [Evaluate Network Protection](../windows-defender-exploit-guard/evaluate-network-protection.md)
@@ -21,7 +21,7 @@
 #### [Testing scenarios using Windows Defender Application Guard in your business or organization](../windows-defender-application-guard//test-scenarios-wd-app-guard.md)
  
  
-## [Onboard and configure machines to Windows Defender ATP](../threat-protection/onboard.md)
+## [Onboard and configure machines to Windows Defender ATP](../onboard.md)
 ### [Onboard machines - need to revise this page](onboard-configure-windows-defender-advanced-threat-protection.md)
 #### [Onboard previous versions of Windows](onboard-downlevel-windows-defender-advanced-threat-protection.md)
 #### [Onboard Windows 10 machines](configure-endpoints-windows-defender-advanced-threat-protection.md)
@@ -39,7 +39,7 @@
 #### [Troubleshoot onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
 
 
-###[Configure Attack surface reduction](./configure1.md)
+###[Configure Attack surface reduction](../configure1.md)
 #### [System requirements for Windows Defender Application Guard](../windows-defender-application-guard//reqs-wd-app-guard.md)
 #### [Prepare and install Windows Defender Application Guard](../windows-defender-application-guard//install-wd-app-guard.md)
 #### [Configure the Group Policy settings for Windows Defender Application Guard](../windows-defender-application-guard//configure-wd-app-guard.md)
@@ -84,7 +84,7 @@
 ##### [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender AV](../windows-defender-antivirus/command-line-arguments-windows-defender-antivirus.md)
 
 
-### [Configure Automatic investigation and remediation  - needs new content, u can configure through the portal settings + link to the settings page](./configure3.md)
+### [Configure Automatic investigation and remediation  - needs new content, u can configure through the portal settings + link to the settings page](../configure3.md)
 
 
 ### [Windows Defender Security Center settings](preferences-setup-windows-defender-advanced-threat-protection.md)
@@ -164,7 +164,7 @@
 #### [Enable and configure always-on protection and monitoring](../windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus.md)
 
 
-## [Endpoint detection and response - Tomer B.](../threat-protection/faketopic.md)
+## [Endpoint detection and response - Tomer B.](../faketopic.md)
 ###Alerts queue
 #### [View and organize the Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
 #### [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
@@ -222,7 +222,7 @@
 ### [View the Threat analytics dashboard and take recommended mitigation actions - Evald](threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
 
 
-## [Management and APIs](./management-apis.md)
+## [Management and APIs](../management-apis.md)
 ### [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md)
 #### [Enable SIEM integration](enable-siem-integration-windows-defender-advanced-threat-protection.md)
 #### [Configure Splunk to pull alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
@@ -306,16 +306,16 @@
 #### [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
 
 
-### [Reporting](../threat-protection/reporting.md)
+### [Reporting](../reporting.md)
 #### [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
 
 
-### [Permissions](../threat-protection/permissions.md)
+### [Permissions](../permissions.md)
 #### [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md)
 #### [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md)
 
 
-## [Microsoft threat protection - Heike or Raviv or Alon - need to make new page - put anchors inside for each integ](../threat-protection/integration.md)
+## [Microsoft threat protection - Heike or Raviv or Alon - need to make new page - put anchors inside for each integ](../integration.md)
 ###  [Protect users, data, and devices with conditional access](conditional-access-windows-defender-advanced-threat-protection.md)
 
 
