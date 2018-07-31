@@ -19,20 +19,11 @@
 |Enabled |3 |3 |Send both intranet and Internet history | |
 ---
 
-<<<<<<< HEAD
 >>You can find this policy and the related policies in the following location of the Group Policy Editor:
 >> 
 >>**_Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection and Preview Builds\\_**
 >><ul><li>Allow Telemetry = Enabled, _Enhanced_</li><li>Configure the Commercial ID = String of the Commercial ID</li><li>Configure collection of browsing data for Microsoft 365 Analytics</li></ul> 
 
-=======
->>You can find this setting in the following location of the Group Policy Editor:
->> 
->>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**_Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection and Preview Builds\\_**
-
->[!IMPORTANT]
->For this policy to work, enable the Allow Telemetry policy with the _Enhanced_ option and enable the Configure the Commercial ID policy by providing the Commercial ID.
->>>>>>> d9ed64c05b90318b610f2f9214605443099f9927
 
 
 ### ADMX info and settings
