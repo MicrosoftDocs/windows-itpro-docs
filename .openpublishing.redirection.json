@@ -1,6 +1,16 @@
 {
 "redirections": [
 {
+    "source_path": "windows/deployment/update/waas-windows-insider-for-business-aad.md",
+    "redirect_url": "https://docs.microsoft.com/en-us/windows-insider/at-work-pro/wip-4-biz-add",
+        "redirect_document_id": true
+ },
+{
+    "source_path": "windows/deployment/update/waas-windows-insider-for-business-faq.md",
+    "redirect_url": "https://docs.microsoft.com/en-us/windows-insider/at-work-pro/wip-4-biz-get-started",
+    "redirect_document_id": true
+},
+{
 "source_path": "windows/deployment/update/waas-windows-insider-for-business.md",
 "redirect_url": "/windows-insider/at-work-pro/wip-4-biz-get-started",
 "redirect_document_id": true
@@ -6556,6 +6566,21 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/configuration/kiosk-shared-pc.md",
+"redirect_url": "/windows/configuration/kiosk-methods",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/setup-kiosk-digital-signage.md",
+"redirect_url": "/windows/configuration/kiosk-single-app",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/multi-app-kiosk-xml.md",
+"redirect_url": "/windows/configuration/kiosk-xml",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/configure/lock-down-windows-10-to-specific-apps.md",
 "redirect_url": "/windows/configuration/lock-down-windows-10-to-specific-apps",
 "redirect_document_id": true
@@ -6674,11 +6699,6 @@
 "source_path": "windows/configure/provisioning-script-to-install-app.md",
 "redirect_url": "/windows/configuration/provisioning-packages/provisioning-script-to-install-app",
 "redirect_document_id": true
-},
-{
-"source_path": "windows/configuration/multi-app-kiosk-xml.md",
-"redirect_url": "windows/configuration/kiosk-xml.md",
-"redirect_document_id": true     
 },
 {
 "source_path": "windows/configure/provisioning-uninstall-package.md",
@@ -13488,11 +13508,6 @@
 {
 "source_path": "windows/update/waas-windows-insider-for-business-aad.md",
 "redirect_url": "/windows/deployment/update/waas-windows-insider-for-business-aad",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/update/waas-windows-insider-for-business-faq.md",
-"redirect_url": "/windows/deployment/update/waas-windows-insider-for-business-faq",
 "redirect_document_id": true
 },
 {

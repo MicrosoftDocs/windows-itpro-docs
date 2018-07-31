@@ -422,7 +422,7 @@ There are no default locations included with WIP, you must add each of your netw
         <tr>
             <td>Network domains</td>
             <td>corp.contoso.com,region.contoso.com</td>
-            <td>Starting with Windows 10, version 1703, this field is optional.<br><br>Specify the DNS suffixes used in your environment. All traffic to the fully-qualified domains appearing in this list will be protected.<br><br>If you have multiple resources, you must separate them using the "," delimiter.</td>
+            <td>Specify the DNS suffixes used in your environment. All traffic to the fully-qualified domains appearing in this list will be protected.<br><br>If you have multiple resources, you must separate them using the "," delimiter.</td>
         </tr>
         <tr>
             <td>Proxy servers</td>

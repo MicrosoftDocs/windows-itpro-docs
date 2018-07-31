@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 06/26/2018
+ms.date: 07/30/2018
 ---
 
 # Policy CSP - Security
@@ -664,31 +664,5 @@ Footnote:
 
 <!--/Policies-->
 
-<!--StartEAS-->
-## <a href="" id="eas"></a>Security policies that can be set using Exchange Active Sync (EAS)  
 
--   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
-<!--EndEAS-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Security policies supported by Windows Holographic for Business  
-
--   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
-<!--EndHoloLens-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>Security policies supported by IoT Core  
-
--   [Security/AllowAddProvisioningPackage](#security-allowaddprovisioningpackage)  
--   [Security/AllowRemoveProvisioningPackage](#security-allowremoveprovisioningpackage)  
--   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
--   [Security/RequireProvisioningPackageSignature](#security-requireprovisioningpackagesignature)  
-<!--EndIoTCore-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>Security policies supported by Microsoft Surface Hub  
-
--   [Security/RequireProvisioningPackageSignature](#security-requireprovisioningpackagesignature)  
--   [Security/RequireRetrieveHealthCertificateOnBoot](#security-requireretrievehealthcertificateonboot)  
-<!--EndSurfaceHub-->
 
