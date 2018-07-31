@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/11/2018
+ms.date: 07/30/2018
 ---
 
 # Policy CSP - ApplicationManagement
@@ -1049,18 +1049,4 @@ Footnote:
 -   5 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>ApplicationManagement policies supported by Windows Holographic for Business  
-
--   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)  
--   [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)  
--   [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)  
-<!--EndHoloLens-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>ApplicationManagement policies supported by IoT Core  
-
--   [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)  
-<!--EndIoTCore-->
 

@@ -45,7 +45,7 @@ To change to a new TPM owner password, in TPM.msc, click **Change Owner Password
 
 ## Use the TPM cmdlets
 
-You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx).
+You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/en-us/powershell/module/trustedplatformmodule).
 
 ## Related topics
 
