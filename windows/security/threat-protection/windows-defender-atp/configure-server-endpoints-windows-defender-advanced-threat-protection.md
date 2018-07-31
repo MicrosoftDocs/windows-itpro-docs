@@ -128,7 +128,7 @@ The following capabilities are included in this integration:
 - Server investigation -  Azure Security Center customers can access the Windows Defender ATP portal to perform detailed investigation to uncover the scope of a potential breach
 
 >[!IMPORTANT]
->- When you use Azure Security Center detection end response capabilities, a Windows Defender ATP tenant is automatically created. The Windows Defender ATP data is stored in Europe by default. For more information on how to change the geolocation, please contact support: [Open a ticket](https://support.microsoft.com/en-us/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561).
+>- When you use Azure Security Center to monitor servers, a Windows Defender ATP tenant is automatically created. The Windows Defender ATP data is stored in Europe by default. For more information on how to change the geolocation, please contact support: [Open a ticket](https://support.microsoft.com/en-us/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561).
 >- If you use Windows Defender ATP before using Azure Security Center, your data will be stored in the location you specified when you created your tenant even if you integrate with Azure Security Center at a later time.
 
 
