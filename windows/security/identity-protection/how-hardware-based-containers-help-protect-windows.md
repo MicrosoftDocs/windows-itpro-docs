@@ -31,7 +31,7 @@ After successful verification and startup of the device’s firmware and Windows
 
 This is where Windows Defender System Guard protection begins with its ability to ensure that only properly signed and secure Windows files and drivers, including third party, can start on the device. At the end of the Windows boot process, System Guard will start the system’s antimalware solution, which scans all third party drivers, at which point the system boot process is completed. In the end, Windows Defender System Guard helps ensure that the system securely boots with integrity and that it hasn’t been compromised before the remainder of your system defenses start.
 
-![Boot time integrity](images/windows-defender-system-guard-boot-time-integrity.png)
+![Boot time integrity](../hardware-protection/images/windows-defender-system-guard-boot-time-integrity.png)
 
 ## Maintaining integrity of the system after it’s running (run time)
 
@@ -47,5 +47,4 @@ While Windows Defender System Guard provides advanced protection that will help 
 
 As Windows 10 boots, a series of integrity measurements are taken by Windows Defender System Guard using the device’s Trusted Platform Module 2.0 (TPM 2.0). This process and data are hardware-isolated away from Windows to help ensure that the measurement data is not subject to the type of tampering that could happen if the platform was compromised. From here, the measurements can be used to determine the integrity of the device’s firmware, hardware configuration state, and Windows boot-related components, just to name a few. After the system boots, Windows Defender System Guard signs and seals these measurements using the TPM. Upon request, a management system like Intune or System Center Configuration Manager can acquire them for remote analysis. If Windows Defender System Guard indicates that the device lacks integrity, the management system can take a series of actions, such as denying the device access to resources.
 
-![Windows Defender System Guard](images/windows-defender-system-guard-validate-system-integrity.png) 
-
+![Windows Defender System Guard](../hardware-protection/images/windows-defender-system-guard-validate-system-integrity.png)
