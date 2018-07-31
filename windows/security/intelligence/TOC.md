@@ -18,7 +18,7 @@
 
 ## [Supply chain](supply-chain-malware.md)
 
-## [Support scams](support-scams.md)
+## [Tech support scams](support-scams.md)
 
 ## [Trojan malware](trojans-malware.md)
 

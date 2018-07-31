@@ -14,7 +14,7 @@ ms.date: 07/01/2018
 
 Unwanted software are programs that alter your Windows experience without your consent or control. The altered experience can be in the form of modified browsing experience, lack of control over downloads and installation, misleading messages, or unauthorized changes to Windows settings.
 
-## How does unwanted software get infect PCs?
+## How unwanted software works
 
 Unwanted software can be introduced when a user searches for and downloads applications from the Internet. Some applications are software bundlers, which means that they are packed with other applications. As a result, other programs can be inadvertently installed when the original application is downloaded.
 
@@ -32,7 +32,7 @@ Some unwanted behaviors are harder to recognize. Some unwanted software, for exa
 
 Microsoft uses an extensive [evaluation criteria](https://www.microsoft.com/wdsi/antimalware-support/malware-and-unwanted-software-evaluation-criteria) to identify unwanted software.
 
-## How do I protect my PC against unwanted software?
+## How to protect against unwanted software
 
 To prevent unwanted software infection, download software only from official websites, or from the Microsoft Store. Be wary of downloading software from third-party sites.
 
@@ -44,7 +44,7 @@ Download [Microsoft Security Essentials](https://www.microsoft.com/download/deta
 
 For more general tips, see [prevent malware infection](prevent-malware-infection.md).
 
-## What should I do if my PC is infected? 
+### What should I do if my PC is infected? 
 
 If you suspect that you have unwanted software your PC, you can [submit files for analysis](https://www.microsoft.com/wdsi/filesubmission).
 
