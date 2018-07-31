@@ -17,21 +17,17 @@ The Windows Defender ATP team is committed to delivering industry-leading protec
 
 ## Top scoring in independent tests
 
-[Starting in 2015](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/22/why-windows-defender-antivirus-is-the-most-deployed-in-the-enterprise/) our results in two major independent tests ([AV-Comparatives](https://www.av-comparatives.org/) and [AV-TEST](https://www.av-test.org/)) began to improve dramatically. Simply put, we completely redesigned our antivirus solutions for both Windows 7 and Windows 10 from the ground up.
-
-Microsoft has worked hard to make our [Windows Defender Antivirus](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) capabilities increasingly more effective by utilizing heuristic detections, machine learning, behavioral analysis, and other evolutions. By removing dependency on constant input from researchers, our antivirus solution can block nearly all malware at first sight and in milliseconds.
+Microsoft has worked hard to make our capabilities increasingly more effective by utilizing heuristic detections, machine learning, behavioral analysis, and other evolutions. By removing dependency on constant input from researchers, our antivirus solution can block nearly all malware at first sight and in milliseconds. That is why [Windows Defender Antivirus is the most deployed in the enterprise](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
 
 The time and effort Microsoft puts into improving Windows Defender Antivirus continues to show in the form of consistently high scores from independent tests.
 
-### Scores
+### AV-TEST
 
-* In March 2015 our scores on the AV-TEST Prevalence Test averaged **85%**. Over the next 5 months the score would rapidly increase.
+The diagrams below show Windows Defender AV’s detection rates in “Real World” and “Prevalent malware” testing over a six month period
 
-* By August 2015 it was **100%**. Since then, we’ve averaged that type of score (or extremely close) consistently.
+![Prevent Malware](./images/PreventMalware072018.png)
 
-* In December 2017 we achieved a **perfect score** across both the AV-TEST Prevalence and Real-World based tests. Previously we had only scored a perfect 100% on one of the two tests for a given month.
-
-* Starting at the end of 2017 and going into 2018, we consistently **detect all malware samples** in the AV Real World Protection test
+![Real World](./images/RealWorld072018.png)
 
 ## Factors not represented in the tests
 
@@ -44,6 +40,11 @@ If organizations like AV-Comparatives and AV-TEST performed testing against the 
 ## Reports
 
 ### AV Test
+
+**May-June 2018**
+
+* [AV-Test results](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2018/microsoft-windows-defender-antivirus-4.12-182374/
+)
 
 **March-April 2018**
 
