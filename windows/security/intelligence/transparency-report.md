@@ -25,9 +25,10 @@ The time and effort Microsoft puts into improving Windows Defender Antivirus con
 
 The diagrams below show Windows Defender AV’s detection rates in “Real World” and “Prevalent malware” testing over a six month period
 
-![Prevent Malware](./images/PreventMalware072018.png)
-
-![Real World](./images/RealWorld072018.png)
+|||
+|---|---|
+|![Prevent Malware](./images/PreventMalware072018.png)| ![Real World](./images/RealWorld072018.png)|
+|||
 
 ## Factors not represented in the tests
 
@@ -60,7 +61,7 @@ If organizations like AV-Comparatives and AV-TEST performed testing against the 
 
 ### AV Comparatives
 
-**March-June** 2018
+**March-June 2018**
 
 * [Real-World Protection Test](https://www.av-comparatives.org/comparison/)
 
