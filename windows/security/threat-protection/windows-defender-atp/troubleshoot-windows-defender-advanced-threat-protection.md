@@ -68,10 +68,7 @@ Support of use of comma as a separator in numbers are not supported. Regions whe
 ## Windows Defender ATP tenant was automatically created in Europe
 When you use Azure Security Center to monitor servers, a Windows Defender ATP tenant is automatically created. The Windows Defender ATP data is stored in Europe by default.
 
-If you want to store your data from Europe to another data center,  please contact support: [Open a ticket](https://support.microsoft.com/en-us/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561). 
 
-  > [!WARNING]
-  > If you decide to change the location of your data, know that it will require deleting the existing Windows Defender ATP tenant and that it also deletes all historical data and alerts within the tenant.
 
 
 
