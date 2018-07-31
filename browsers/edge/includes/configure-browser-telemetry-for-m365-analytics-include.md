@@ -4,6 +4,10 @@
 
 [!INCLUDE [configure-browser-telemetry-for-m365-analytics-shortdesc](../shortdesc/configure-browser-telemetry-for-m365-analytics-shortdesc.md)]
 
+
+>[!IMPORTANT]
+>For this policy to work, enable the Allow Telemetry policy with the _Enhanced_ option and enable the Configure the Commercial ID policy by providing the Commercial ID.
+
 ### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
@@ -14,8 +18,9 @@
 |Enabled |3 |3 |Send both intranet and Internet history | |
 ---
 
->[!IMPORTANT]
->For this policy to work, enable the Allow Telemetry policy with the _Enhanced_ option and enable the Configure the Commercial ID policy by providing the Commercial ID.
+>>You can find this setting in the following location of the Group Policy Editor:
+>> 
+>>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**_Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection and Preview Builds\\_**
 
 
 ### ADMX info and settings
