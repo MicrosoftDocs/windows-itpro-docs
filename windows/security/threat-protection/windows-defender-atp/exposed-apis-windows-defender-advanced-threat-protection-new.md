@@ -116,20 +116,39 @@ where 00000000-0000-0000-0000-000000000000​ should be replaced with your Azure
 
 For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
-### Using dedicated executable
+### Using C#
 
-- Download AadTokenGetter.zip application​
-- Unzip the application
-- Open 'AadTokenGetter.exe.config' file and fill the 3 required settings:
-	- tenantId
-	- appId
-	- appSecret
-- ​Run AadTokenGetter.exe
+>The below code was tested with nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8
 
-The token is displayed in the application window
+- Create a new Console Application
+- Install Nuget [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
+- Add the below using
 
+	```
+	using Microsoft.IdentityModel.Clients.ActiveDirectory;
+	```
 
-### Using Curl 
+- Copy/Paste the below code in your application (do not forget to update the 3 variables: ```tenantId, appId, appSecret```)
+
+	```
+	string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
+	string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
+	string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here
+
+	const string aadUri = "https://login.windows.net";
+	const string wdatpResourceId = "https://securitycenter.onmicrosoft.com/windowsatpservice";
+
+	AuthenticationContext auth = new AuthenticationContext($"{aadUri}/{tenantId}/");
+	ClientCredential clientCredential = new ClientCredential(appId, appSecret);
+	AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
+	string token = authenticationResult.AccessToken;
+	```
+
+### Using PowerShell 
+
+Refer to [Get token](run-advanced-query-windows-defender-advanced-threat-protection-sample-powershell.md#get-token) section in the Advanced Hunting document
+
+### Using Curl
 
 > [!NOTE]
 > The below procedure supposed Curl for Windows is already installed on your computer
