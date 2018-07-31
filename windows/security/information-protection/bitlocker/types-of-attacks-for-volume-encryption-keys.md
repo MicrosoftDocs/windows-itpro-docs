@@ -85,13 +85,13 @@ DMA-based expansion slots are another avenue of attack, but these slots generall
 
 To mitigate a port-based DMA attack an administrator can configure policy settings to disable FireWire and other device types that have DMA. Also, many PCs allow those devices to be disabled by using firmware settings. Although the need for pre-boot authentication can be eliminated at the device level or through Windows configuration, the BitLocker pre-boot authentication feature is still available when needed. When used, it successfully mitigates all types of DMA port and expansion slot attacks on any type of device.
 
-### Hyberfil.sys Attacks
+### Hiberfil.sys Attacks
 
-The hyberfil.sys file is the Windows hibernation file. It contains a snapshot of system memory that is generated when a device goes into hibernation and includes the encryption key for BitLocker and other encryption technologies. Attackers have claimed that they have successfully extracted encryption keys from the hyberfil.sys file.
+The hiberfil.sys file is the Windows hibernation file. It contains a snapshot of system memory that is generated when a device goes into hibernation and includes the encryption key for BitLocker and other encryption technologies. Attackers have claimed that they have successfully extracted encryption keys from the hiberfil.sys file.
 
-Like the DMA port attack discussed in the previous section, tools are available that can scan the hyberfile.sys file and locate the encryption key, including a tool made by [Passware](http://www.lostpassword.com/). Microsoft does not consider Windows to be vulnerable to this type of attack, because Windows stores the hyberfil.sys file within the encrypted system volume. As a result, the file would be accessible only if the attacker had both physical and sign-in access to the PC. When an attacker has sign-in access to the PC, there are few reasons for the attacker to decrypt the drive, because they would already have full access to the data within it.
+Like the DMA port attack discussed in the previous section, tools are available that can scan the hiberfile.sys file and locate the encryption key, including a tool made by [Passware](http://www.lostpassword.com/). Microsoft does not consider Windows to be vulnerable to this type of attack, because Windows stores the hiberfil.sys file within the encrypted system volume. As a result, the file would be accessible only if the attacker had both physical and sign-in access to the PC. When an attacker has sign-in access to the PC, there are few reasons for the attacker to decrypt the drive, because they would already have full access to the data within it.
 
-In practice, the only reason an attack on hyberfil.sys would grant an attacker additional access is if an administrator had changed the default Windows configuration and stored the hyberfil.sys file on an unencrypted drive. By default, Windows 10 is designed to be secure against this type of attack.
+In practice, the only reason an attack on hiberfil.sys would grant an attacker additional access is if an administrator had changed the default Windows configuration and stored the hiberfil.sys file on an unencrypted drive. By default, Windows 10 is designed to be secure against this type of attack.
 
 ### Memory Remanence Attacks
 

@@ -1,5 +1,5 @@
 <!-- Configure collection of browsing data for Microsoft 365 Analytics -->  
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br>  
+>*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br>
 >*Default setting:  Disabled or not configured (No data collected or sent)*
 
 [!INCLUDE [configure-browser-telemetry-for-m365-analytics-shortdesc](../shortdesc/configure-browser-telemetry-for-m365-analytics-shortdesc.md)]
@@ -13,6 +13,10 @@
 |Enabled |2 |2 |Send Internet history only | |
 |Enabled |3 |3 |Send both intranet and Internet history | |
 ---
+
+>>You can find this setting in the following location of the Group Policy Editor:
+>> 
+>>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**_Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection and Preview Builds\\_**
 
 >[!IMPORTANT]
 >For this policy to work, enable the Allow Telemetry policy with the _Enhanced_ option and enable the Configure the Commercial ID policy by providing the Commercial ID.

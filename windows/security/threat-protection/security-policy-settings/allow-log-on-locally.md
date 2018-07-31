@@ -50,7 +50,7 @@ By default, the members of the following groups have this right on domain contro
 
 ### Location
 
-Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\User Rights Assignment
+Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Local Policies\\User Rights Assignment
 
 ### Default values
 
