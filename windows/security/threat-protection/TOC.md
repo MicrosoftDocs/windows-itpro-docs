@@ -15,20 +15,20 @@
 #### [Data storage and privacy](windows-defender-atp\data-storage-privacy-windows-defender-advanced-threat-protection.md)
 #### [Assign user access to the portal](windows-defender-atp\assign-portal-access-windows-defender-advanced-threat-protection.md)
 
-#### [Evaluate WDATP](evaluate.md)
-##### [Evaluate Windows Defender Antivirus protection](windows-defender-antivirus\evaluate-windows-defender-antivirus.md)
+#### [Evaluate Windows Defender ATP](evaluate.md)
+##### [Evaluate Attack surface reduction - ASR controls](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
 ##### [Evaluate Exploit protection](windows-defender-exploit-guard\evaluate-exploit-protection.md)
 ##### [Evaluate Network Protection](windows-defender-exploit-guard\evaluate-network-protection.md)
 ##### [Evaluate Controlled folder access](windows-defender-exploit-guard\evaluate-controlled-folder-access.md)
-##### [Evaluate Attack surface reduction - ASR controls](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
+##### [Evaluate Windows Defender Antivirus protection](windows-defender-antivirus\evaluate-windows-defender-antivirus.md)
 ##### [Evaluate Windows Defender Exploit Guard-rewrite](windows-defender-exploit-guard\evaluate-windows-defender-exploit-guard.md)
 ##### [Use auditing mode to evaluate Windows Defender Exploit Guard](windows-defender-exploit-guard\audit-windows-defender-exploit-guard.md)
+##### [Testing scenarios using Windows Defender Application Guard in your business or organization](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
 
 
 
-
-### [Onboard and configure](onboard.md)
-#### [Onboard machines](windows-defender-atp\onboard-configure-windows-defender-advanced-threat-protection.md)
+### [Onboard and configure machines to Windows Defender ATP](onboard.md)
+#### [Onboard machines - need to revise this page](windows-defender-atp\onboard-configure-windows-defender-advanced-threat-protection.md)
 ##### [Onboard previous versions of Windows](windows-defender-atp\onboard-downlevel-windows-defender-advanced-threat-protection.md)
 ##### [Onboard Windows 10 machines](windows-defender-atp\configure-endpoints-windows-defender-advanced-threat-protection.md)
 ###### [Onboard machines using Group Policy](windows-defender-atp\configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
@@ -43,12 +43,21 @@
 ##### [Run simulated attacks on machines](windows-defender-atp\attack-simulations-windows-defender-advanced-threat-protection.md)
 ##### [Configure proxy and Internet connectivity settings](windows-defender-atp\configure-proxy-internet-windows-defender-advanced-threat-protection.md)
 ##### [Troubleshoot onboarding issues](windows-defender-atp\troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
+
+
+
+
 ####[Configure ASR](configure1.md)
+##### [System requirements for Windows Defender Application Guard](windows-defender-application-guard/reqs-wd-app-guard.md)
+##### [Prepare and install Windows Defender Application Guard](windows-defender-application-guard/install-wd-app-guard.md)
+##### [Configure the Group Policy settings for Windows Defender Application Guard](windows-defender-application-guard/configure-wd-app-guard.md)
 
 
 
 
-#### [Configure NGP](windows-defender-antivirus\windows-defender-antivirus-in-windows-10.md)
+
+
+#### [Configure Next generation protection](windows-defender-antivirus\windows-defender-antivirus-in-windows-10.md)
 ##### [Windows Defender AV on Windows Server 2016](windows-defender-antivirus\windows-defender-antivirus-on-windows-server-2016.md)
 ##### [Windows Defender Antivirus compatibility](windows-defender-antivirus\windows-defender-antivirus-compatibility.md)
 ###### [Use limited periodic scanning in Windows Defender AV](windows-defender-antivirus\limited-periodic-scanning-windows-defender-antivirus.md)
@@ -88,7 +97,7 @@
 
 
 
-####[Configure AutoIR - needs new content, u can configure through the portal settings + link to the settings page](configure3.md)
+#### [Configure AutoIR - needs new content, u can configure through the portal settings + link to the settings page](configure3.md)
 
 
 
@@ -122,13 +131,11 @@
 
 
 
-### [Windows Defender Security Center](windows-defender-atp/windows-defender-security-center-atp.md)
-#### [Understand the portal / Windows Defender Security Center ](windows-defender-atp\use-windows-defender-advanced-threat-protection.md)
-##### [Portal overview](windows-defender-atp\portal-overview-windows-defender-advanced-threat-protection.md)
-##### [View the Security operations dashboard](windows-defender-atp\security-operations-dashboard-windows-defender-advanced-threat-protection.md)
+### [Windows Defender Security Center](windows-defender-atp\use-windows-defender-advanced-threat-protection.md)
+#### [Portal overview](windows-defender-atp\portal-overview-windows-defender-advanced-threat-protection.md)
+#### [View the Security operations dashboard - consdier moving to the relevant pillar](windows-defender-atp\security-operations-dashboard-windows-defender-advanced-threat-protection.md)
 
-##### [View the Threat analytics dashboard and take recommended mitigation actions](windows-defender-atp\threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
-##### [Access the Windows Defender Security Center Community Center](windows-defender-atp\community-windows-defender-advanced-threat-protection.md)
+#### [Access the Windows Defender Security Center Community Center](windows-defender-atp\community-windows-defender-advanced-threat-protection.md)
 
 
 
@@ -142,21 +149,16 @@
 
 
 
-### [Attack surface reduction](windows-defender-exploit-guard\attack-surface-reduction-exploit-guard.md)
+### [Attack surface reduction - Chris, Amitai, Justin](windows-defender-exploit-guard\attack-surface-reduction-exploit-guard.md)
 #### [Hardware based isolation](windows-defender-application-guard/wd-app-guard-overview.md)
-##### [System requirements for Windows Defender Application Guard](windows-defender-application-guard/reqs-wd-app-guard.md)
-##### [Prepare and install Windows Defender Application Guard](windows-defender-application-guard/install-wd-app-guard.md)
-##### [Configure the Group Policy settings for Windows Defender Application Guard](windows-defender-application-guard/configure-wd-app-guard.md)
-##### [Testing scenarios using Windows Defender Application Guard in your business or organization](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
 ##### [Frequently Asked Questions - Windows Defender Application Guard](windows-defender-application-guard/faq-wd-app-guard.md)
-
 #### [Windows Defender Application Control](windows-defender-application-control/windows-defender-application-control.md)
 
 
-#### [Exploit protection](windows-defender-exploit-guard\exploit-protection-exploit-guard.md)
+#### [Exploit protection - Chris, Amitai, Justin](windows-defender-exploit-guard\exploit-protection-exploit-guard.md)
 ##### [Comparison with Enhanced Mitigation Experience Toolkit](windows-defender-exploit-guard\emet-exploit-protection-exploit-guard.md)
 
-##### [Enable Exploit protection](windows-defender-exploit-guard\enable-exploit-protection.md)
+##### [Enable Exploit protection - Chris, Amitai, Justin](windows-defender-exploit-guard\enable-exploit-protection.md)
 ##### [Customize Exploit protection](windows-defender-exploit-guard\customize-exploit-protection.md)
 ###### [Import, export, and deploy Exploit protection configurations](windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
 
@@ -175,7 +177,7 @@
 ##### [Customize Attack surface reduction](windows-defender-exploit-guard\customize-attack-surface-reduction.md)
 ##### [Troubleshoot Attack surface reduction rules](windows-defender-exploit-guard\troubleshoot-asr.md)
 
-### [Next gen protection](windows-defender-antivirus\configure-windows-defender-antivirus-features.md)
+### [Next gen protection - Andrea, Chris, Amitai](windows-defender-antivirus\configure-windows-defender-antivirus-features.md)
 #### [Utilize Microsoft cloud-delivered protection](windows-defender-antivirus\utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
 ##### [Enable cloud-delivered protection](windows-defender-antivirus\enable-cloud-protection-windows-defender-antivirus.md)
 ##### [Specify the cloud-delivered protection level](windows-defender-antivirus\specify-cloud-protection-level-windows-defender-antivirus.md)
@@ -188,7 +190,7 @@
 
 
 
-### [EDR](faketopic.md)
+### [Endpoint detection and response - Tomer B.](faketopic.md)
 ####Alerts queue
 ##### [View and organize the Alerts queue](windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection.md)
 ##### [Manage alerts](windows-defender-atp/manage-alerts-windows-defender-advanced-threat-protection.md)
@@ -238,13 +240,16 @@
 ##### [Advanced hunting query language best practices](windows-defender-atp\advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
 
 
-### [Automatic investigation and remediation](windows-defender-atp\automated-investigations-windows-defender-advanced-threat-protection.md)
+### [Automatic investigation and remediation - Benny](windows-defender-atp\automated-investigations-windows-defender-advanced-threat-protection.md)
 
 
-### [View the Secure Score dashboard and improve your secure score](windows-defender-atp\secure-score-dashboard-windows-defender-advanced-threat-protection.md)
+###Security posture
+#### [Secure posture - Evald](windows-defender-atp\secure-score-dashboard-windows-defender-advanced-threat-protection.md)
+#### [View the Threat analytics dashboard and take recommended mitigation actions - Evald](windows-defender-atp\threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
 
 
-### [Managment and APIs](management-apis.md)
+
+### [Management and APIs](management-apis.md)
 #### [Pull alerts to your SIEM tools](windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection.md)
 ##### [Enable SIEM integration](windows-defender-atp/enable-siem-integration-windows-defender-advanced-threat-protection.md)
 ##### [Configure Splunk to pull alerts](windows-defender-atp/configure-splunk-windows-defender-advanced-threat-protection.md)
@@ -336,7 +341,7 @@
 
 
 
-### [Microsoft threat protection - need to make new page - put anchors inside for each integ](integration.md)
+### [Microsoft threat protection - Heike or Raviv or Alon - need to make new page - put anchors inside for each integ](integration.md)
 ####  [Protect users, data, and devices with conditional access](windows-defender-atp\conditional-access-windows-defender-advanced-threat-protection.md)
 
 
@@ -360,18 +365,19 @@
 
 
 
-### [Troubleshoot everything](troubleshoot.md)
-#### [Review event logs and error codes to troubleshoot issues](windows-defender-antivirus\troubleshoot-windows-defender-antivirus.md)
+###Troubleshoot Windows Defender ATP
+#### [Review AV/NEXT GEN event logs and error codes to troubleshoot issues - Amitai, etc](windows-defender-antivirus\troubleshoot-windows-defender-antivirus.md)
 
-####[Check service health and sensor state](troubleshoot-sense.md) 
+####Troubleshoot sensor state - Ask Heike name of sensor
 ##### [Check sensor state](windows-defender-atp\check-sensor-status-windows-defender-advanced-threat-protection.md)
 ##### [Fix unhealthy sensors](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
 ##### [Inactive machines](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#inactive-machines)
 ##### [Misconfigured machines](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#misconfigured-machines)
-##### [Check service health](windows-defender-atp\service-status-windows-defender-advanced-threat-protection.md)
+##### [Review events and errors on machines with Event Viewer](windows-defender-atp\event-error-codes-windows-defender-advanced-threat-protection.md)
 
 #### [Troubleshoot Windows Defender ATP service issues](windows-defender-atp\troubleshoot-windows-defender-advanced-threat-protection.md)
-##### [Review events and errors on machines with Event Viewer](windows-defender-atp\event-error-codes-windows-defender-advanced-threat-protection.md)
+##### [Check service health](windows-defender-atp\service-status-windows-defender-advanced-threat-protection.md)
+
 
 
 

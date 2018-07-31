@@ -18,7 +18,11 @@ ms.date: 07/01/2018
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-You need to onboard machines to Windows Defender ATP before you can use the service.
+You need to turn on the sensor to give visibility within Windows Defender ATP.
+
+JOEY: LOOK INTO THIS AGAIN - REVISE
+OWNER: NAAMA
+
 
 For more information, see [Onboard your Windows 10 machines to Windows Defender ATP](https://www.youtube.com/watch?v=JT7VGYfeRlA&feature=youtu.be).
 
