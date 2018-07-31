@@ -1,336 +1,310 @@
-# [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md)
- 
-## [Get started](fake2.md)
-### [Minimum requirements](minimum-requirements-windows-defender-advanced-threat-protection.md)
-### [Validate licensing and complete setup](licensing-windows-defender-advanced-threat-protection.md)
-### [Troubleshoot subscription and portal access issues](troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
-### [Preview features](preview-windows-defender-advanced-threat-protection.md)
-### [Data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md)
-### [Assign user access to the portal](assign-portal-access-windows-defender-advanced-threat-protection.md)
- 
-### [Evaluate Windows Defender ATP](threat-protection/evaluate.md)
-#### [Evaluate Attack surface reduction - ASR controls](windows-defender-exploit-guard/evaluate-attack-surface-reduction.md)
-#### [Evaluate Exploit protection](windows-defender-exploit-guard\evaluate-exploit-protection.md)
-#### [Evaluate Network Protection](windows-defender-exploit-guard\evaluate-network-protection.md)
-#### [Evaluate Controlled folder access](windows-defender-exploit-guard\evaluate-controlled-folder-access.md)
-#### [Evaluate Windows Defender Antivirus protection](windows-defender-antivirus\evaluate-windows-defender-antivirus.md)
-#### [Evaluate Windows Defender Exploit Guard-rewrite](windows-defender-exploit-guard\evaluate-windows-defender-exploit-guard.md)
-#### [Use auditing mode to evaluate Windows Defender Exploit Guard](windows-defender-exploit-guard\audit-windows-defender-exploit-guard.md)
-#### [Testing scenarios using Windows Defender Application Guard in your business or organization](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
- 
- 
-## [Onboard and configure machines to Windows Defender ATP](threat-protection/onboard.md)
-### [Onboard machines - need to revise this page](windows-defender-atp\onboard-configure-windows-defender-advanced-threat-protection.md)
-#### [Onboard previous versions of Windows](windows-defender-atp\onboard-downlevel-windows-defender-advanced-threat-protection.md)
-#### [Onboard Windows 10 machines](windows-defender-atp\configure-endpoints-windows-defender-advanced-threat-protection.md)
-##### [Onboard machines using Group Policy](windows-defender-atp\configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
-##### [Onboard machines using System Center Configuration Manager](windows-defender-atp\configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
-##### [Onboard machines using Mobile Device Management tools](windows-defender-atp\configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
-###### [Onboard machines using Microsoft Intune](windows-defender-atp\configure-endpoints-mdm-windows-defender-advanced-threat-protection.md#onboard-machines-using-microsoft-intune)
-##### [Onboard machines using a local script](windows-defender-atp\configure-endpoints-script-windows-defender-advanced-threat-protection.md)
-##### [Onboard non-persistent virtual desktop infrastructure (VDI) machines](windows-defender-atp\configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
-#### [Onboard servers](windows-defender-atp\configure-server-endpoints-windows-defender-advanced-threat-protection.md)
-#### [Onboard non-Windows machines](windows-defender-atp\configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)
-#### [Run a detection test on a newly onboarded machine](windows-defender-atp\run-detection-test-windows-defender-advanced-threat-protection.md)
-#### [Run simulated attacks on machines](windows-defender-atp\attack-simulations-windows-defender-advanced-threat-protection.md)
-#### [Configure proxy and Internet connectivity settings](windows-defender-atp\configure-proxy-internet-windows-defender-advanced-threat-protection.md)
-#### [Troubleshoot onboarding issues](windows-defender-atp\troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
- 
- 
-###[Configure ASR](configure1.md)
-#### [System requirements for Windows Defender Application Guard](windows-defender-application-guard/reqs-wd-app-guard.md)
-#### [Prepare and install Windows Defender Application Guard](windows-defender-application-guard/install-wd-app-guard.md)
-#### [Configure the Group Policy settings for Windows Defender Application Guard](windows-defender-application-guard/configure-wd-app-guard.md)
- 
- 
-### [Configure Next generation protection](windows-defender-antivirus\windows-defender-antivirus-in-windows-10.md)
-#### [Windows Defender AV on Windows Server 2016](windows-defender-antivirus\windows-defender-antivirus-on-windows-server-2016.md)
-#### [Windows Defender Antivirus compatibility](windows-defender-antivirus\windows-defender-antivirus-compatibility.md)
-##### [Use limited periodic scanning in Windows Defender AV](windows-defender-antivirus\limited-periodic-scanning-windows-defender-antivirus.md)
- 
- 
-#### [Deploy, manage updates, and report on Windows Defender Antivirus](windows-defender-antivirus\deploy-manage-report-windows-defender-antivirus.md)
-##### [Deploy and enable Windows Defender Antivirus](windows-defender-antivirus\deploy-windows-defender-antivirus.md)
-###### [Deployment guide for VDI environments](windows-defender-antivirus\deployment-vdi-windows-defender-antivirus.md)
-##### [Report on Windows Defender Antivirus protection](windows-defender-antivirus\report-monitor-windows-defender-antivirus.md)
-###### [Troubleshoot Windows Defender Antivirus reporting in Update Compliance](windows-defender-antivirus\troubleshoot-reporting.md)
-##### [Manage updates and apply baselines](windows-defender-antivirus\manage-updates-baselines-windows-defender-antivirus.md)
-###### [Manage protection and definition updates](windows-defender-antivirus\manage-protection-updates-windows-defender-antivirus.md)
-###### [Manage when protection updates should be downloaded and applied](windows-defender-antivirus\manage-protection-update-schedule-windows-defender-antivirus.md)
-###### [Manage updates for endpoints that are out of date](windows-defender-antivirus\manage-outdated-endpoints-windows-defender-antivirus.md)
-###### [Manage event-based forced updates](windows-defender-antivirus\manage-event-based-updates-windows-defender-antivirus.md)
-###### [Manage updates for mobile devices and VMs](windows-defender-antivirus\manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
- 
- 
-#### [Customize, initiate, and review the results of scans and remediation](windows-defender-antivirus\customize-run-review-remediate-scans-windows-defender-antivirus.md)
-##### [Configure and validate exclusions in Windows Defender AV scans](windows-defender-antivirus\configure-exclusions-windows-defender-antivirus.md)
-###### [Configure and validate exclusions based on file name, extension, and folder location](windows-defender-antivirus\configure-extension-file-exclusions-windows-defender-antivirus.md)
-###### [Configure and validate exclusions for files opened by processes](windows-defender-antivirus\configure-process-opened-file-exclusions-windows-defender-antivirus.md)
-###### [Configure exclusions in Windows Defender AV on Windows Server 2016](windows-defender-antivirus\configure-server-exclusions-windows-defender-antivirus.md)
-##### [Configure scanning options in Windows Defender AV](windows-defender-antivirus\configure-advanced-scan-types-windows-defender-antivirus.md)
-##### [Configure remediation for scans](windows-defender-antivirus\configure-remediation-windows-defender-antivirus.md)
-##### [Configure scheduled scans](windows-defender-antivirus\scheduled-catch-up-scans-windows-defender-antivirus.md)
-##### [Configure and run scans](windows-defender-antivirus\run-scan-windows-defender-antivirus.md)
-##### [Review scan results](windows-defender-antivirus\review-scan-results-windows-defender-antivirus.md)
-##### [Run and review the results of a Windows Defender Offline scan](windows-defender-antivirus\windows-defender-offline.md)
-#### [Restore quarantined files in Windows Defender AV](windows-defender-antivirus\restore-quarantined-files-windows-defender-antivirus.md)
-#### [Manage Windows Defender AV in your business](windows-defender-antivirus\configuration-management-reference-windows-defender-antivirus.md)
-##### [Use Group Policy settings to configure and manage Windows Defender AV](windows-defender-antivirus\use-group-policy-windows-defender-antivirus.md)
-##### [Use System Center Configuration Manager and Microsoft Intune to configure and manage Windows Defender AV](windows-defender-antivirus\use-intune-config-manager-windows-defender-antivirus.md)
-##### [Use PowerShell cmdlets to configure and manage Windows Defender AV](windows-defender-antivirus\use-powershell-cmdlets-windows-defender-antivirus.md)
-##### [Use Windows Management Instrumentation (WMI) to configure and manage Windows Defender AV](windows-defender-antivirus\use-wmi-windows-defender-antivirus.md)
-##### [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender AV](windows-defender-antivirus\command-line-arguments-windows-defender-antivirus.md)
- 
- 
- 
-### [Configure AutoIR - needs new content, u can configure through the portal settings + link to the settings page](configure3.md)
- 
- 
- 
-### [Windows Defender Security Center settings](windows-defender-atp\preferences-setup-windows-defender-advanced-threat-protection.md)
-####General
-##### [Update data retention settings](windows-defender-atp\data-retention-settings-windows-defender-advanced-threat-protection.md)
-##### [Configure alert notifications](windows-defender-atp\configure-email-notifications-windows-defender-advanced-threat-protection.md)
-##### [Enable and create Power BI reports using Windows Defender Security center data](windows-defender-atp\powerbi-reports-windows-defender-advanced-threat-protection.md)
-##### [Enable Secure score security controls](windows-defender-atp\enable-secure-score-windows-defender-advanced-threat-protection.md)
-##### [Configure advanced features](windows-defender-atp\advanced-features-windows-defender-advanced-threat-protection.md)
- 
- 
- 
-####APIs
-##### [Enable Threat intel](windows-defender-atp\enable-custom-ti-windows-defender-advanced-threat-protection.md)
-##### [Enable SIEM integration](windows-defender-atp\enable-siem-integration-windows-defender-advanced-threat-protection.md)
- 
-####Rules
-##### [Manage suppression rules](windows-defender-atp\manage-suppression-rules-windows-defender-advanced-threat-protection.md)
-##### [Manage automation allowed/blocked](windows-defender-atp\manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
-##### [Manage automation file uploads](windows-defender-atp\manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
-##### [Manage automation folder exclusions](windows-defender-atp\manage-automation-folder-exclusions-windows-defender-advanced-threat-protection.md)
- 
- 
-####Machine management
-##### [Onboarding machines](windows-defender-atp\onboard-configure-windows-defender-advanced-threat-protection.md)
-##### [Offboarding machines](windows-defender-atp\offboard-machines-windows-defender-advanced-threat-protection.md)
- 
- 
-#### [Configure Windows Defender Security Center time zone settings](windows-defender-atp\time-settings-windows-defender-advanced-threat-protection.md)
- 
- 
-## [Windows Defender Security Center](windows-defender-atp\use-windows-defender-advanced-threat-protection.md)
-### [Portal overview](windows-defender-atp\portal-overview-windows-defender-advanced-threat-protection.md)
-### [View the Security operations dashboard - consdier moving to the relevant pillar](windows-defender-atp\security-operations-dashboard-windows-defender-advanced-threat-protection.md)
- 
- 
-### [Access the Windows Defender Security Center Community Center](windows-defender-atp\community-windows-defender-advanced-threat-protection.md)
- 
- 
-## [Attack surface reduction - Chris, Amitai, Justin](windows-defender-exploit-guard\attack-surface-reduction-exploit-guard.md)
-### [Hardware based isolation](windows-defender-application-guard/wd-app-guard-overview.md)
-#### [Frequently Asked Questions - Windows Defender Application Guard](windows-defender-application-guard/faq-wd-app-guard.md)
-### [Windows Defender Application Control](windows-defender-application-control/windows-defender-application-control.md)
- 
- 
-### [Exploit protection - Chris, Amitai, Justin](windows-defender-exploit-guard\exploit-protection-exploit-guard.md)
-#### [Comparison with Enhanced Mitigation Experience Toolkit](windows-defender-exploit-guard\emet-exploit-protection-exploit-guard.md)
- 
- 
-#### [Enable Exploit protection - Chris, Amitai, Justin](windows-defender-exploit-guard\enable-exploit-protection.md)
-#### [Customize Exploit protection](windows-defender-exploit-guard\customize-exploit-protection.md)
-##### [Import, export, and deploy Exploit protection configurations](windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
- 
- 
-### [Network Protection](windows-defender-exploit-guard\network-protection-exploit-guard.md)
- 
- 
-#### [Enable Network Protection](windows-defender-exploit-guard\enable-network-protection.md)
-#### [Troubleshoot Network protection](windows-defender-exploit-guard\troubleshoot-np.md)
-### [Controlled folder access](windows-defender-exploit-guard\controlled-folders-exploit-guard.md)
- 
- 
-#### [Enable Controlled folder access](windows-defender-exploit-guard\enable-controlled-folders-exploit-guard.md)
-#### [Customize Controlled folder access](windows-defender-exploit-guard\customize-controlled-folders-exploit-guard.md)
- 
- 
-#### [Enable Attack surface reduction](windows-defender-exploit-guard\enable-attack-surface-reduction.md)
-#### [Customize Attack surface reduction](windows-defender-exploit-guard\customize-attack-surface-reduction.md)
-#### [Troubleshoot Attack surface reduction rules](windows-defender-exploit-guard\troubleshoot-asr.md)
- 
- 
-## [Next gen protection - Andrea, Chris, Amitai](windows-defender-antivirus\configure-windows-defender-antivirus-features.md)
-### [Utilize Microsoft cloud-delivered protection](windows-defender-antivirus\utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
-#### [Enable cloud-delivered protection](windows-defender-antivirus\enable-cloud-protection-windows-defender-antivirus.md)
-#### [Specify the cloud-delivered protection level](windows-defender-antivirus\specify-cloud-protection-level-windows-defender-antivirus.md)
-#### [Configure and validate network connections](windows-defender-antivirus\configure-network-connections-windows-defender-antivirus.md)
-#### [Enable the Block at First Sight feature](windows-defender-antivirus\configure-block-at-first-sight-windows-defender-antivirus.md)
-#### [Configure the cloud block timeout period](windows-defender-antivirus\configure-cloud-block-timeout-period-windows-defender-antivirus.md)
-### [Configure behavioral, heuristic, and real-time protection](windows-defender-antivirus\configure-protection-features-windows-defender-antivirus.md)
-#### [Detect and block Potentially Unwanted Applications](windows-defender-antivirus\detect-block-potentially-unwanted-apps-windows-defender-antivirus.md)
-#### [Enable and configure always-on protection and monitoring](windows-defender-antivirus\configure-real-time-protection-windows-defender-antivirus.md)
- 
- 
-## [Endpoint detection and response - Tomer B.](faketopic.md)
-###Alerts queue
-#### [View and organize the Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
-#### [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
-#### [Investigate alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
-#### [Investigate files](investigate-files-windows-defender-advanced-threat-protection.md)
-#### [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md)
-#### [Investigate an IP address](investigate-ip-windows-defender-advanced-threat-protection.md)
-#### [Investigate a domain](investigate-domain-windows-defender-advanced-threat-protection.md)
-#### [Investigate a user account](investigate-user-windows-defender-advanced-threat-protection.md)
- 
- 
-###Machines list
-#### [View and organize the Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)
-#### [Manage machine group and tags](investigate-machines-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags)
-#### [Alerts related to this machine](investigate-machines-windows-defender-advanced-threat-protection.md#alerts-related-to-this-machine)
-#### [Machine timeline](investigate-machines-windows-defender-advanced-threat-protection.md#machine-timeline)
-##### [Search for specific events](investigate-machines-windows-defender-advanced-threat-protection.md#search-for-specific-events)
-##### [Filter events from a specific date](investigate-machines-windows-defender-advanced-threat-protection.md#filter-events-from-a-specific-date)
-##### [Export machine timeline events](investigate-machines-windows-defender-advanced-threat-protection.md#export-machine-timeline-events)
-##### [Navigate between pages](investigate-machines-windows-defender-advanced-threat-protection.md#navigate-between-pages)
- 
- 
-### [Take response actions](response-actions-windows-defender-advanced-threat-protection.md)
-#### [Take response actions on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md)
-##### [Collect investigation package](respond-machine-alerts-windows-defender-advanced-threat-protection.md#collect-investigation-package-from-machines)
-##### [Run antivirus scan](respond-machine-alerts-windows-defender-advanced-threat-protection.md#run-windows-defender-antivirus-scan-on-machines)
-##### [Restrict app execution](respond-machine-alerts-windows-defender-advanced-threat-protection.md#restrict-app-execution)
-##### [Remove app restriction](respond-machine-alerts-windows-defender-advanced-threat-protection.md#remove-app-restriction)
-##### [Isolate machines from the network](respond-machine-alerts-windows-defender-advanced-threat-protection.md#isolate-machines-from-the-network)
-##### [Release machine from isolation](respond-machine-alerts-windows-defender-advanced-threat-protection.md#release-machine-from-isolation)
-##### [Check activity details in Action center](respond-machine-alerts-windows-defender-advanced-threat-protection.md#check-activity-details-in-action-center)
- 
- 
-#### [Take response actions on a file](respond-file-alerts-windows-defender-advanced-threat-protection.md)
-##### [Stop and quarantine files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#stop-and-quarantine-files-in-your-network)
-##### [Remove file from quarantine](respond-file-alerts-windows-defender-advanced-threat-protection.md#remove-file-from-quarantine)
-##### [Block files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#block-files-in-your-network)
-##### [Remove file from blocked list](respond-file-alerts-windows-defender-advanced-threat-protection.md#remove-file-from-blocked-list)
-##### [Check activity details in Action center](respond-file-alerts-windows-defender-advanced-threat-protection.md#check-activity-details-in-action-center)
-##### [Deep analysis](respond-file-alerts-windows-defender-advanced-threat-protection.md#deep-analysis)
-##### [Submit files for analysis](respond-file-alerts-windows-defender-advanced-threat-protection.md#submit-files-for-analysis)
-##### [View deep analysis reports](respond-file-alerts-windows-defender-advanced-threat-protection.md#view-deep-analysis-reports)
-##### [Troubleshoot deep analysis](respond-file-alerts-windows-defender-advanced-threat-protection.md#troubleshoot-deep-analysis)
- 
- 
-### [Query data using Advanced hunting](windows-defender-atp\advanced-hunting-windows-defender-advanced-threat-protection.md)
-#### [Advanced hunting reference](windows-defender-atp\advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
-#### [Advanced hunting query language best practices](windows-defender-atp\advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
- 
- 
-## [Automatic investigation and remediation - Benny](windows-defender-atp\automated-investigations-windows-defender-advanced-threat-protection.md)
- 
- 
-##Security posture
-### [Secure posture - Evald](windows-defender-atp\secure-score-dashboard-windows-defender-advanced-threat-protection.md)
-### [View the Threat analytics dashboard and take recommended mitigation actions - Evald](windows-defender-atp\threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
- 
- 
-## [Management and APIs](management-apis.md)
-### [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md)
-#### [Enable SIEM integration](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-#### [Configure Splunk to pull alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
-#### [Configure HP ArcSight to pull alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
-#### [Windows Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
-#### [Pull alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
-#### [Troubleshoot SIEM tool integration issues](troubleshoot-siem-windows-defender-advanced-threat-protection.md)
- 
-### [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)
-#### [Supported Windows Defender ATP APIs](supported-apis-windows-defender-advanced-threat-protection.md)
-#####Actor
-###### [Get actor information](get-actor-information-windows-defender-advanced-threat-protection.md)
-###### [Get actor related alerts](get-actor-related-alerts-windows-defender-advanced-threat-protection.md)
-#####Alerts
-###### [Get alerts](get-alerts-windows-defender-advanced-threat-protection.md)
-###### [Get alert information by ID](get-alert-info-by-id-windows-defender-advanced-threat-protection.md)
-###### [Get alert related actor information](get-alert-related-actor-info-windows-defender-advanced-threat-protection.md)
-###### [Get alert related domain information](get-alert-related-domain-info-windows-defender-advanced-threat-protection.md)
-###### [Get alert related file information](get-alert-related-files-info-windows-defender-advanced-threat-protection.md)
-###### [Get alert related IP information](get-alert-related-ip-info-windows-defender-advanced-threat-protection.md)
-###### [Get alert related machine information](get-alert-related-machine-info-windows-defender-advanced-threat-protection.md)
-######Domain
-#######  [Get domain related alerts](get-domain-related-alerts-windows-defender-advanced-threat-protection.md)
-####### [Get domain related machines](get-domain-related-machines-windows-defender-advanced-threat-protection.md)
-####### [Get domain statistics](get-domain-statistics-windows-defender-advanced-threat-protection.md)
-####### [Is domain seen in organization](is-domain-seen-in-org-windows-defender-advanced-threat-protection.md)
- 
-#####File
-###### [Block file API](block-file-windows-defender-advanced-threat-protection.md)
-###### [Get file information](get-file-information-windows-defender-advanced-threat-protection.md)
-###### [Get file related alerts](get-file-related-alerts-windows-defender-advanced-threat-protection.md)
-###### [Get file related machines](get-file-related-machines-windows-defender-advanced-threat-protection.md)
-###### [Get file statistics](get-file-statistics-windows-defender-advanced-threat-protection.md)
-###### [Get FileActions collection API](get-fileactions-collection-windows-defender-advanced-threat-protection.md)
-###### [Unblock file API](unblock-file-windows-defender-advanced-threat-protection.md)
- 
-#####IP
-###### [Get IP related alerts](get-ip-related-alerts-windows-defender-advanced-threat-protection.md)
-###### [Get IP related machines](get-ip-related-machines-windows-defender-advanced-threat-protection.md)
-###### [Get IP statistics](get-ip-statistics-windows-defender-advanced-threat-protection.md)
-###### [Is IP seen in organization](is-ip-seen-org-windows-defender-advanced-threat-protection.md)
-#####Machines
-###### [Collect investigation package API](collect-investigation-package-windows-defender-advanced-threat-protection.md)
-###### [Find machine information by IP](find-machine-info-by-ip-windows-defender-advanced-threat-protection.md)
-###### [Get machines](get-machines-windows-defender-advanced-threat-protection.md)
-###### [Get FileMachineAction object API](get-filemachineaction-object-windows-defender-advanced-threat-protection.md)
-###### [Get FileMachineActions collection API](get-filemachineactions-collection-windows-defender-advanced-threat-protection.md)
-###### [Get machine by ID](get-machine-by-id-windows-defender-advanced-threat-protection.md)
-###### [Get machine log on users](get-machine-log-on-users-windows-defender-advanced-threat-protection.md)
-###### [Get machine related alerts](get-machine-related-alerts-windows-defender-advanced-threat-protection.md)
-###### [Get MachineAction object API](get-machineaction-object-windows-defender-advanced-threat-protection.md)
-###### [Get MachineActions collection API](get-machineactions-collection-windows-defender-advanced-threat-protection.md)
-###### [Get machines](get-machines-windows-defender-advanced-threat-protection.md)
-###### [Get package SAS URI API](get-package-sas-uri-windows-defender-advanced-threat-protection.md)
-###### [Isolate machine API](isolate-machine-windows-defender-advanced-threat-protection.md)
-###### [Release machine from isolation API](unisolate-machine-windows-defender-advanced-threat-protection.md)
-###### [Remove app restriction API](unrestrict-code-execution-windows-defender-advanced-threat-protection.md)
-###### [Request sample API](request-sample-windows-defender-advanced-threat-protection.md)
-###### [Restrict app execution API](restrict-code-execution-windows-defender-advanced-threat-protection.md)
-###### [Run antivirus scan API](run-av-scan-windows-defender-advanced-threat-protection.md)
-###### [Stop and quarantine file API](stop-quarantine-file-windows-defender-advanced-threat-protection.md)
- 
- 
-#####User
-###### [Get alert related user information](get-alert-related-user-info-windows-defender-advanced-threat-protection.md)
-###### [Get user information](get-user-information-windows-defender-advanced-threat-protection.md)
-###### [Get user related alerts](get-user-related-alerts-windows-defender-advanced-threat-protection.md)
-###### [Get user related machines](get-user-related-machines-windows-defender-advanced-threat-protection.md)
- 
- 
-### [Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md)
-#### [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
-#### [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
-#### [Create custom threat intelligence alerts](custom-ti-api-windows-defender-advanced-threat-protection.md)
-#### [PowerShell code examples](powershell-example-code-windows-defender-advanced-threat-protection.md)
-#### [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md)
-#### [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)
-#### [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
- 
-### [Reporting](reporting.md)
-#### [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
- 
-### [Permissions](permissions.md)
-#### [Manage portal access using RBAC](windows-defender-atp\rbac-windows-defender-advanced-threat-protection.md)
-#### [Create and manage machine groups](windows-defender-atp\machine-groups-windows-defender-advanced-threat-protection.md)
- 
- 
-## [Microsoft threat protection - Heike or Raviv or Alon - need to make new page - put anchors inside for each integ](integration.md)
-###  [Protect users, data, and devices with conditional access](windows-defender-atp\conditional-access-windows-defender-advanced-threat-protection.md)
- 
-##Troubleshoot Windows Defender ATP
-### [Review AV/NEXT GEN event logs and error codes to troubleshoot issues - Amitai, etc](windows-defender-antivirus\troubleshoot-windows-defender-antivirus.md)
- 
- 
-###Troubleshoot sensor state - Ask Heike name of sensor
-#### [Check sensor state](windows-defender-atp\check-sensor-status-windows-defender-advanced-threat-protection.md)
-#### [Fix unhealthy sensors](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
-#### [Inactive machines](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#inactive-machines)
-#### [Misconfigured machines](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#misconfigured-machines)
-#### [Review events and errors on machines with Event Viewer](windows-defender-atp\event-error-codes-windows-defender-advanced-threat-protection.md)
- 
-### [Troubleshoot Windows Defender ATP service issues](windows-defender-atp\troubleshoot-windows-defender-advanced-threat-protection.md)
-#### [Check service health](windows-defender-atp\service-status-windows-defender-advanced-threat-protection.md)
+# [Threat protection](index.md)
+
+## [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md)
+
+### [Get started](fake2.md)
+#### [Minimum requirements](minimum-requirements-windows-defender-advanced-threat-protection.md)
+#### [Validate licensing and complete setup](licensing-windows-defender-advanced-threat-protection.md)
+#### [Troubleshoot subscription and portal access issues](troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
+#### [Preview features](preview-windows-defender-advanced-threat-protection.md)
+#### [Data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md)
+#### [Assign user access to the portal](assign-portal-access-windows-defender-advanced-threat-protection.md)
+
+#### [Evaluate Windows Defender ATP](threat-protection/evaluate.md)
+##### [Evaluate Attack surface reduction - ASR controls](windows-defender-exploit-guard/evaluate-attack-surface-reduction.md)
+##### [Evaluate Exploit protection](windows-defender-exploit-guard\evaluate-exploit-protection.md)
+##### [Evaluate Network Protection](windows-defender-exploit-guard\evaluate-network-protection.md)
+##### [Evaluate Controlled folder access](windows-defender-exploit-guard\evaluate-controlled-folder-access.md)
+##### [Evaluate Windows Defender Antivirus protection](windows-defender-antivirus\evaluate-windows-defender-antivirus.md)
+##### [Evaluate Windows Defender Exploit Guard-rewrite](windows-defender-exploit-guard\evaluate-windows-defender-exploit-guard.md)
+##### [Use auditing mode to evaluate Windows Defender Exploit Guard](windows-defender-exploit-guard\audit-windows-defender-exploit-guard.md)
+##### [Testing scenarios using Windows Defender Application Guard in your business or organization](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
+
+### [Onboard and configure machines to Windows Defender ATP](threat-protection/onboard.md)
+#### [Onboard machines - need to revise this page](windows-defender-atp\onboard-configure-windows-defender-advanced-threat-protection.md)
+##### [Onboard previous versions of Windows](windows-defender-atp\onboard-downlevel-windows-defender-advanced-threat-protection.md)
+##### [Onboard Windows 10 machines](windows-defender-atp\configure-endpoints-windows-defender-advanced-threat-protection.md)
+###### [Onboard machines using Group Policy](windows-defender-atp\configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
+###### [Onboard machines using System Center Configuration Manager](windows-defender-atp\configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
+###### [Onboard machines using Mobile Device Management tools](windows-defender-atp\configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
+####### [Onboard machines using Microsoft Intune](windows-defender-atp\configure-endpoints-mdm-windows-defender-advanced-threat-protection.md#onboard-machines-using-microsoft-intune)
+###### [Onboard machines using a local script](windows-defender-atp\configure-endpoints-script-windows-defender-advanced-threat-protection.md)
+###### [Onboard non-persistent virtual desktop infrastructure (VDI) machines](windows-defender-atp\configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
+##### [Onboard servers](windows-defender-atp\configure-server-endpoints-windows-defender-advanced-threat-protection.md)
+##### [Onboard non-Windows machines](windows-defender-atp\configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)
+##### [Run a detection test on a newly onboarded machine](windows-defender-atp\run-detection-test-windows-defender-advanced-threat-protection.md)
+##### [Run simulated attacks on machines](windows-defender-atp\attack-simulations-windows-defender-advanced-threat-protection.md)
+##### [Configure proxy and Internet connectivity settings](windows-defender-atp\configure-proxy-internet-windows-defender-advanced-threat-protection.md)
+##### [Troubleshoot onboarding issues](windows-defender-atp\troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
+
+####[Configure ASR](configure1.md)
+##### [System requirements for Windows Defender Application Guard](windows-defender-application-guard/reqs-wd-app-guard.md)
+##### [Prepare and install Windows Defender Application Guard](windows-defender-application-guard/install-wd-app-guard.md)
+##### [Configure the Group Policy settings for Windows Defender Application Guard](windows-defender-application-guard/configure-wd-app-guard.md)
+
+#### [Configure Next generation protection](windows-defender-antivirus\windows-defender-antivirus-in-windows-10.md)
+##### [Windows Defender AV on Windows Server 2016](windows-defender-antivirus\windows-defender-antivirus-on-windows-server-2016.md)
+##### [Windows Defender Antivirus compatibility](windows-defender-antivirus\windows-defender-antivirus-compatibility.md)
+###### [Use limited periodic scanning in Windows Defender AV](windows-defender-antivirus\limited-periodic-scanning-windows-defender-antivirus.md)
+
+##### [Deploy, manage updates, and report on Windows Defender Antivirus](windows-defender-antivirus\deploy-manage-report-windows-defender-antivirus.md)
+###### [Deploy and enable Windows Defender Antivirus](windows-defender-antivirus\deploy-windows-defender-antivirus.md)
+####### [Deployment guide for VDI environments](windows-defender-antivirus\deployment-vdi-windows-defender-antivirus.md)
+###### [Report on Windows Defender Antivirus protection](windows-defender-antivirus\report-monitor-windows-defender-antivirus.md)
+####### [Troubleshoot Windows Defender Antivirus reporting in Update Compliance](windows-defender-antivirus\troubleshoot-reporting.md)
+###### [Manage updates and apply baselines](windows-defender-antivirus\manage-updates-baselines-windows-defender-antivirus.md)
+####### [Manage protection and definition updates](windows-defender-antivirus\manage-protection-updates-windows-defender-antivirus.md)
+####### [Manage when protection updates should be downloaded and applied](windows-defender-antivirus\manage-protection-update-schedule-windows-defender-antivirus.md)
+####### [Manage updates for endpoints that are out of date](windows-defender-antivirus\manage-outdated-endpoints-windows-defender-antivirus.md)
+####### [Manage event-based forced updates](windows-defender-antivirus\manage-event-based-updates-windows-defender-antivirus.md)
+####### [Manage updates for mobile devices and VMs](windows-defender-antivirus\manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
+
+##### [Customize, initiate, and review the results of scans and remediation](windows-defender-antivirus\customize-run-review-remediate-scans-windows-defender-antivirus.md)
+###### [Configure and validate exclusions in Windows Defender AV scans](windows-defender-antivirus\configure-exclusions-windows-defender-antivirus.md)
+####### [Configure and validate exclusions based on file name, extension, and folder location](windows-defender-antivirus\configure-extension-file-exclusions-windows-defender-antivirus.md)
+####### [Configure and validate exclusions for files opened by processes](windows-defender-antivirus\configure-process-opened-file-exclusions-windows-defender-antivirus.md)
+####### [Configure exclusions in Windows Defender AV on Windows Server 2016](windows-defender-antivirus\configure-server-exclusions-windows-defender-antivirus.md)
+###### [Configure scanning options in Windows Defender AV](windows-defender-antivirus\configure-advanced-scan-types-windows-defender-antivirus.md)
+###### [Configure remediation for scans](windows-defender-antivirus\configure-remediation-windows-defender-antivirus.md)
+###### [Configure scheduled scans](windows-defender-antivirus\scheduled-catch-up-scans-windows-defender-antivirus.md)
+###### [Configure and run scans](windows-defender-antivirus\run-scan-windows-defender-antivirus.md)
+###### [Review scan results](windows-defender-antivirus\review-scan-results-windows-defender-antivirus.md)
+###### [Run and review the results of a Windows Defender Offline scan](windows-defender-antivirus\windows-defender-offline.md)
+##### [Restore quarantined files in Windows Defender AV](windows-defender-antivirus\restore-quarantined-files-windows-defender-antivirus.md)
+##### [Manage Windows Defender AV in your business](windows-defender-antivirus\configuration-management-reference-windows-defender-antivirus.md)
+###### [Use Group Policy settings to configure and manage Windows Defender AV](windows-defender-antivirus\use-group-policy-windows-defender-antivirus.md)
+###### [Use System Center Configuration Manager and Microsoft Intune to configure and manage Windows Defender AV](windows-defender-antivirus\use-intune-config-manager-windows-defender-antivirus.md)
+###### [Use PowerShell cmdlets to configure and manage Windows Defender AV](windows-defender-antivirus\use-powershell-cmdlets-windows-defender-antivirus.md)
+###### [Use Windows Management Instrumentation (WMI) to configure and manage Windows Defender AV](windows-defender-antivirus\use-wmi-windows-defender-antivirus.md)
+###### [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender AV](windows-defender-antivirus\command-line-arguments-windows-defender-antivirus.md)
+ 
+#### [Configure AutoIR - needs new content, u can configure through the portal settings + link to the settings page](configure3.md)
+
+#### [Windows Defender Security Center settings](windows-defender-atp\preferences-setup-windows-defender-advanced-threat-protection.md)
+#####General
+###### [Update data retention settings](windows-defender-atp\data-retention-settings-windows-defender-advanced-threat-protection.md)
+###### [Configure alert notifications](windows-defender-atp\configure-email-notifications-windows-defender-advanced-threat-protection.md)
+###### [Enable and create Power BI reports using Windows Defender Security center data](windows-defender-atp\powerbi-reports-windows-defender-advanced-threat-protection.md)
+###### [Enable Secure score security controls](windows-defender-atp\enable-secure-score-windows-defender-advanced-threat-protection.md)
+###### [Configure advanced features](windows-defender-atp\advanced-features-windows-defender-advanced-threat-protection.md)
+
+#####APIs
+###### [Enable Threat intel](windows-defender-atp\enable-custom-ti-windows-defender-advanced-threat-protection.md)
+###### [Enable SIEM integration](windows-defender-atp\enable-siem-integration-windows-defender-advanced-threat-protection.md)
+
+#####Rules
+###### [Manage suppression rules](windows-defender-atp\manage-suppression-rules-windows-defender-advanced-threat-protection.md)
+###### [Manage automation allowed/blocked](windows-defender-atp\manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
+###### [Manage automation file uploads](windows-defender-atp\manage-automation-file-uploads-windows-defender-advanced-threat-protection.md)
+###### [Manage automation folder exclusions](windows-defender-atp\manage-automation-folder-exclusions-windows-defender-advanced-threat-protection.md)
+
+#####Machine management
+###### [Onboarding machines](windows-defender-atp\onboard-configure-windows-defender-advanced-threat-protection.md)
+###### [Offboarding machines](windows-defender-atp\offboard-machines-windows-defender-advanced-threat-protection.md)
+
+##### [Configure Windows Defender Security Center time zone settings](windows-defender-atp\time-settings-windows-defender-advanced-threat-protection.md)
+
+### [Windows Defender Security Center](windows-defender-atp\use-windows-defender-advanced-threat-protection.md)
+#### [Portal overview](windows-defender-atp\portal-overview-windows-defender-advanced-threat-protection.md)
+#### [View the Security operations dashboard - consdier moving to the relevant pillar](windows-defender-atp\security-operations-dashboard-windows-defender-advanced-threat-protection.md)
+ 
+#### [Access the Windows Defender Security Center Community Center](windows-defender-atp\community-windows-defender-advanced-threat-protection.md)
+ #
+ #
+### [Attack surface reduction - Chris, Amitai, Justin](windows-defender-exploit-guard\attack-surface-reduction-exploit-guard.md)
+#### [Hardware based isolation](windows-defender-application-guard/wd-app-guard-overview.md)
+##### [Frequently Asked Questions - Windows Defender Application Guard](windows-defender-application-guard/faq-wd-app-guard.md)
+#### [Windows Defender Application Control](windows-defender-application-control/windows-defender-application-control.md)
+
+#### [Exploit protection - Chris, Amitai, Justin](windows-defender-exploit-guard\exploit-protection-exploit-guard.md)
+##### [Comparison with Enhanced Mitigation Experience Toolkit](windows-defender-exploit-guard\emet-exploit-protection-exploit-guard.md)
+
+##### [Enable Exploit protection - Chris, Amitai, Justin](windows-defender-exploit-guard\enable-exploit-protection.md)
+##### [Customize Exploit protection](windows-defender-exploit-guard\customize-exploit-protection.md)
+###### [Import, export, and deploy Exploit protection configurations](windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
+
+#### [Network Protection](windows-defender-exploit-guard\network-protection-exploit-guard.md)
+
+##### [Enable Network Protection](windows-defender-exploit-guard\enable-network-protection.md)
+##### [Troubleshoot Network protection](windows-defender-exploit-guard\troubleshoot-np.md)
+#### [Controlled folder access](windows-defender-exploit-guard\controlled-folders-exploit-guard.md)
+
+##### [Enable Controlled folder access](windows-defender-exploit-guard\enable-controlled-folders-exploit-guard.md)
+##### [Customize Controlled folder access](windows-defender-exploit-guard\customize-controlled-folders-exploit-guard.md)
+
+##### [Enable Attack surface reduction](windows-defender-exploit-guard\enable-attack-surface-reduction.md)
+##### [Customize Attack surface reduction](windows-defender-exploit-guard\customize-attack-surface-reduction.md)
+##### [Troubleshoot Attack surface reduction rules](windows-defender-exploit-guard\troubleshoot-asr.md)
+
+### [Next gen protection - Andrea, Chris, Amitai](windows-defender-antivirus\configure-windows-defender-antivirus-features.md)
+#### [Utilize Microsoft cloud-delivered protection](windows-defender-antivirus\utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
+##### [Enable cloud-delivered protection](windows-defender-antivirus\enable-cloud-protection-windows-defender-antivirus.md)
+##### [Specify the cloud-delivered protection level](windows-defender-antivirus\specify-cloud-protection-level-windows-defender-antivirus.md)
+##### [Configure and validate network connections](windows-defender-antivirus\configure-network-connections-windows-defender-antivirus.md)
+##### [Enable the Block at First Sight feature](windows-defender-antivirus\configure-block-at-first-sight-windows-defender-antivirus.md)
+##### [Configure the cloud block timeout period](windows-defender-antivirus\configure-cloud-block-timeout-period-windows-defender-antivirus.md)
+#### [Configure behavioral, heuristic, and real-time protection](windows-defender-antivirus\configure-protection-features-windows-defender-antivirus.md)
+##### [Detect and block Potentially Unwanted Applications](windows-defender-antivirus\detect-block-potentially-unwanted-apps-windows-defender-antivirus.md)
+##### [Enable and configure always-on protection and monitoring](windows-defender-antivirus\configure-real-time-protection-windows-defender-antivirus.md)
+ 
+### [Endpoint detection and response - Tomer B.](faketopic.md)
+####Alerts queue
+##### [View and organize the Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
+##### [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
+##### [Investigate alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
+##### [Investigate files](investigate-files-windows-defender-advanced-threat-protection.md)
+##### [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md)
+##### [Investigate an IP address](investigate-ip-windows-defender-advanced-threat-protection.md)
+##### [Investigate a domain](investigate-domain-windows-defender-advanced-threat-protection.md)
+##### [Investigate a user account](investigate-user-windows-defender-advanced-threat-protection.md)
+
+####Machines list
+##### [View and organize the Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)
+##### [Manage machine group and tags](investigate-machines-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags)
+##### [Alerts related to this machine](investigate-machines-windows-defender-advanced-threat-protection.md#alerts-related-to-this-machine)
+##### [Machine timeline](investigate-machines-windows-defender-advanced-threat-protection.md#machine-timeline)
+###### [Search for specific events](investigate-machines-windows-defender-advanced-threat-protection.md#search-for-specific-events)
+###### [Filter events from a specific date](investigate-machines-windows-defender-advanced-threat-protection.md#filter-events-from-a-specific-date)
+###### [Export machine timeline events](investigate-machines-windows-defender-advanced-threat-protection.md#export-machine-timeline-events)
+###### [Navigate between pages](investigate-machines-windows-defender-advanced-threat-protection.md#navigate-between-pages)
+
+#### [Take response actions](response-actions-windows-defender-advanced-threat-protection.md)
+##### [Take response actions on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md)
+###### [Collect investigation package](respond-machine-alerts-windows-defender-advanced-threat-protection.md#collect-investigation-package-from-machines)
+###### [Run antivirus scan](respond-machine-alerts-windows-defender-advanced-threat-protection.md#run-windows-defender-antivirus-scan-on-machines)
+###### [Restrict app execution](respond-machine-alerts-windows-defender-advanced-threat-protection.md#restrict-app-execution)
+###### [Remove app restriction](respond-machine-alerts-windows-defender-advanced-threat-protection.md#remove-app-restriction)
+###### [Isolate machines from the network](respond-machine-alerts-windows-defender-advanced-threat-protection.md#isolate-machines-from-the-network)
+###### [Release machine from isolation](respond-machine-alerts-windows-defender-advanced-threat-protection.md#release-machine-from-isolation)
+###### [Check activity details in Action center](respond-machine-alerts-windows-defender-advanced-threat-protection.md#check-activity-details-in-action-center)
+
+##### [Take response actions on a file](respond-file-alerts-windows-defender-advanced-threat-protection.md)
+###### [Stop and quarantine files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#stop-and-quarantine-files-in-your-network)
+###### [Remove file from quarantine](respond-file-alerts-windows-defender-advanced-threat-protection.md#remove-file-from-quarantine)
+###### [Block files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#block-files-in-your-network)
+###### [Remove file from blocked list](respond-file-alerts-windows-defender-advanced-threat-protection.md#remove-file-from-blocked-list)
+###### [Check activity details in Action center](respond-file-alerts-windows-defender-advanced-threat-protection.md#check-activity-details-in-action-center)
+###### [Deep analysis](respond-file-alerts-windows-defender-advanced-threat-protection.md#deep-analysis)
+###### [Submit files for analysis](respond-file-alerts-windows-defender-advanced-threat-protection.md#submit-files-for-analysis)
+###### [View deep analysis reports](respond-file-alerts-windows-defender-advanced-threat-protection.md#view-deep-analysis-reports)
+###### [Troubleshoot deep analysis](respond-file-alerts-windows-defender-advanced-threat-protection.md#troubleshoot-deep-analysis)
+
+#### [Query data using Advanced hunting](windows-defender-atp\advanced-hunting-windows-defender-advanced-threat-protection.md)
+##### [Advanced hunting reference](windows-defender-atp\advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
+##### [Advanced hunting query language best practices](windows-defender-atp\advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
+
+### [Automatic investigation and remediation - Benny](windows-defender-atp\automated-investigations-windows-defender-advanced-threat-protection.md)
+
+###Security posture
+#### [Secure posture - Evald](windows-defender-atp\secure-score-dashboard-windows-defender-advanced-threat-protection.md)
+#### [View the Threat analytics dashboard and take recommended mitigation actions - Evald](windows-defender-atp\threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+
+### [Management and APIs](management-apis.md)
+#### [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md)
+##### [Enable SIEM integration](enable-siem-integration-windows-defender-advanced-threat-protection.md)
+##### [Configure Splunk to pull alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
+##### [Configure HP ArcSight to pull alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
+##### [Windows Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
+##### [Pull alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
+##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem-windows-defender-advanced-threat-protection.md)
+
+#### [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)
+##### [Supported Windows Defender ATP APIs](supported-apis-windows-defender-advanced-threat-protection.md)
+######Actor
+####### [Get actor information](get-actor-information-windows-defender-advanced-threat-protection.md)
+####### [Get actor related alerts](get-actor-related-alerts-windows-defender-advanced-threat-protection.md)
+######Alerts
+####### [Get alerts](get-alerts-windows-defender-advanced-threat-protection.md)
+####### [Get alert information by ID](get-alert-info-by-id-windows-defender-advanced-threat-protection.md)
+####### [Get alert related actor information](get-alert-related-actor-info-windows-defender-advanced-threat-protection.md)
+####### [Get alert related domain information](get-alert-related-domain-info-windows-defender-advanced-threat-protection.md)
+####### [Get alert related file information](get-alert-related-files-info-windows-defender-advanced-threat-protection.md)
+####### [Get alert related IP information](get-alert-related-ip-info-windows-defender-advanced-threat-protection.md)
+####### [Get alert related machine information](get-alert-related-machine-info-windows-defender-advanced-threat-protection.md)
+#######Domain
+########  [Get domain related alerts](get-domain-related-alerts-windows-defender-advanced-threat-protection.md)
+######## [Get domain related machines](get-domain-related-machines-windows-defender-advanced-threat-protection.md)
+######## [Get domain statistics](get-domain-statistics-windows-defender-advanced-threat-protection.md)
+######## [Is domain seen in organization](is-domain-seen-in-org-windows-defender-advanced-threat-protection.md)
+
+######File
+####### [Block file API](block-file-windows-defender-advanced-threat-protection.md)
+####### [Get file information](get-file-information-windows-defender-advanced-threat-protection.md)
+####### [Get file related alerts](get-file-related-alerts-windows-defender-advanced-threat-protection.md)
+####### [Get file related machines](get-file-related-machines-windows-defender-advanced-threat-protection.md)
+####### [Get file statistics](get-file-statistics-windows-defender-advanced-threat-protection.md)
+####### [Get FileActions collection API](get-fileactions-collection-windows-defender-advanced-threat-protection.md)
+####### [Unblock file API](unblock-file-windows-defender-advanced-threat-protection.md)
+ 
+######IP
+####### [Get IP related alerts](get-ip-related-alerts-windows-defender-advanced-threat-protection.md)
+####### [Get IP related machines](get-ip-related-machines-windows-defender-advanced-threat-protection.md)
+####### [Get IP statistics](get-ip-statistics-windows-defender-advanced-threat-protection.md)
+####### [Is IP seen in organization](is-ip-seen-org-windows-defender-advanced-threat-protection.md)
+######Machines
+####### [Collect investigation package API](collect-investigation-package-windows-defender-advanced-threat-protection.md)
+####### [Find machine information by IP](find-machine-info-by-ip-windows-defender-advanced-threat-protection.md)
+####### [Get machines](get-machines-windows-defender-advanced-threat-protection.md)
+####### [Get FileMachineAction object API](get-filemachineaction-object-windows-defender-advanced-threat-protection.md)
+####### [Get FileMachineActions collection API](get-filemachineactions-collection-windows-defender-advanced-threat-protection.md)
+####### [Get machine by ID](get-machine-by-id-windows-defender-advanced-threat-protection.md)
+####### [Get machine log on users](get-machine-log-on-users-windows-defender-advanced-threat-protection.md)
+####### [Get machine related alerts](get-machine-related-alerts-windows-defender-advanced-threat-protection.md)
+####### [Get MachineAction object API](get-machineaction-object-windows-defender-advanced-threat-protection.md)
+####### [Get MachineActions collection API](get-machineactions-collection-windows-defender-advanced-threat-protection.md)
+####### [Get machines](get-machines-windows-defender-advanced-threat-protection.md)
+####### [Get package SAS URI API](get-package-sas-uri-windows-defender-advanced-threat-protection.md)
+####### [Isolate machine API](isolate-machine-windows-defender-advanced-threat-protection.md)
+####### [Release machine from isolation API](unisolate-machine-windows-defender-advanced-threat-protection.md)
+####### [Remove app restriction API](unrestrict-code-execution-windows-defender-advanced-threat-protection.md)
+####### [Request sample API](request-sample-windows-defender-advanced-threat-protection.md)
+####### [Restrict app execution API](restrict-code-execution-windows-defender-advanced-threat-protection.md)
+####### [Run antivirus scan API](run-av-scan-windows-defender-advanced-threat-protection.md)
+####### [Stop and quarantine file API](stop-quarantine-file-windows-defender-advanced-threat-protection.md)
+
+######User
+####### [Get alert related user information](get-alert-related-user-info-windows-defender-advanced-threat-protection.md)
+####### [Get user information](get-user-information-windows-defender-advanced-threat-protection.md)
+####### [Get user related alerts](get-user-related-alerts-windows-defender-advanced-threat-protection.md)
+####### [Get user related machines](get-user-related-machines-windows-defender-advanced-threat-protection.md)
+
+#### [Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md)
+##### [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
+##### [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+##### [Create custom threat intelligence alerts](custom-ti-api-windows-defender-advanced-threat-protection.md)
+##### [PowerShell code examples](powershell-example-code-windows-defender-advanced-threat-protection.md)
+##### [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md)
+##### [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)
+##### [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
+
+#### [Reporting](reporting.md)
+##### [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
+
+#### [Permissions](permissions.md)
+##### [Manage portal access using RBAC](windows-defender-atp\rbac-windows-defender-advanced-threat-protection.md)
+##### [Create and manage machine groups](windows-defender-atp\machine-groups-windows-defender-advanced-threat-protection.md)
+
+### [Microsoft threat protection - Heike or Raviv or Alon - need to make new page - put anchors inside for each integ](integration.md)
+####  [Protect users, data, and devices with conditional access](windows-defender-atp\conditional-access-windows-defender-advanced-threat-protection.md)
+
+###Troubleshoot Windows Defender ATP
+#### [Review AV/NEXT GEN event logs and error codes to troubleshoot issues - Amitai, etc](windows-defender-antivirus\troubleshoot-windows-defender-antivirus.md)
+ 
+####Troubleshoot sensor state - Ask Heike name of sensor
+##### [Check sensor state](windows-defender-atp\check-sensor-status-windows-defender-advanced-threat-protection.md)
+##### [Fix unhealthy sensors](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
+##### [Inactive machines](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#inactive-machines)
+##### [Misconfigured machines](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#misconfigured-machines)
+##### [Review events and errors on machines with Event Viewer](windows-defender-atp\event-error-codes-windows-defender-advanced-threat-protection.md)
+ 
+#### [Troubleshoot Windows Defender ATP service issues](windows-defender-atp\troubleshoot-windows-defender-advanced-threat-protection.md)
+##### [Check service health](windows-defender-atp\service-status-windows-defender-advanced-threat-protection.md)
+
+
+
+
+
+
 
 
 
