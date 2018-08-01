@@ -33,32 +33,6 @@ The graphs below show Windows Defender AV’s detection rates in “Real World�
 
 **Prevent malware** refers to detection of widespread and prevalent malware discovered in the last 4 weeks.
 
-
-![Prevent Malware](./images/PreventMalware072018Large.png)
-
-![Real World](./images/RealWorld072018.png)
-
-## AV Comparatives
-
-The results show the AV Comparatives Enterprise Real-World Protection Test
-
-**March-June of 2018**
-
-Blocked (malware was successfully blocked by AV): 98.7%
-
-
-## Factors not represented in the tests
-
-It is important to remember that [Windows Defender ATP](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=cx-blog-mmpc) (which integrates our antivirus capabilities and the whole Windows security stack) provides a much larger set of protection features that are not factored into the tests. These features provide **additional layers of protection** that help prevent malware from getting onto devices in the first place:
-
-If organizations like AV-Comparatives and AV-TEST performed testing against the complete endpoint protection solution, the results would better represent the kind of protection our customers actually enjoy daily.
-
- To see these capabilities for yourself sign up for a [90-day trial of Windows Defender ATP](https://www.microsoft.com/windowsforbusiness/windows-atp?ocid=cx-blog-mmpc) today, or [enable Preview features on existing tenants](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-settings-windows-defender-advanced-threat-protection).
-
-![Real World](./images/wdatp-pillars2.png)
-
-## Reports
-
 ### AV-TEST
 
 |**January-February 2018** | **March-April 2018**  |**May-June 2018**| 
@@ -66,11 +40,29 @@ If organizations like AV-Comparatives and AV-TEST performed testing against the 
 |* [AV-Test results](https://www.av-test.org/en/antivirus/home-windows/windows-7/february-2018/kaspersky-lab-internet-security-18.0-180557/)|* [AV-Test results](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/april-2018/microsoft-windows-defender-antivirus-4.12-181574/)|* [AV-Test results](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2018/microsoft-windows-defender-antivirus-4.12-182374/)|
 |* [Microsoft transparency report](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE27O5A?ocid=cx-blog-mmpc)|* [Microsoft transparency report](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA)|||
 
-### AV Comparatives
+
+## AV Comparatives
+
+The results show the AV Comparatives Enterprise Real-World Protection Test
 
 **March-June 2018**
 
+Blocked (malware was successfully blocked by AV): **98.7%**
 * [Real-World Protection Test](https://www.av-comparatives.org/comparison/)
+## Factors not represented in the tests
+
+It is important to remember that [Windows Defender ATP](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=cx-blog-mmpc) (which integrates our antivirus capabilities and the whole Windows security stack) provides a much larger set of protection features that are not factored into the tests. These features provide **additional layers of protection** that help prevent malware from getting onto devices in the first place:
+
+ To see these capabilities for yourself sign up for a [90-day trial of Windows Defender ATP](https://www.microsoft.com/windowsforbusiness/windows-atp?ocid=cx-blog-mmpc) today, or [enable Preview features on existing tenants](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-settings-windows-defender-advanced-threat-protection).
+
+![Real World](./images/wdatp-pillars2.png)
+
+## Reports
+
+
+
+### AV Comparatives
+
 
 ### Tom's Guide
 
