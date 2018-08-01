@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 05/08/2018
+ms.date: 07/30/2018
 ---
 
 # Onboard servers to the Windows Defender ATP service
@@ -113,6 +113,25 @@ You’ll be able to onboard in the same method available for Windows 10 client m
    ```sc query Windefend```
 
     If the result is ‘The specified service does not exist as an installed service’, then you'll need to install Windows Defender AV. For more information, see [Windows Defender Antivirus in Windows 10](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
+
+
+## Integration with Azure Security Center
+Windows Defender ATP integrates with Azure Security Center to provide a comprehensive server protection solution. With this integration Azure Security Center can leverage the power of Windows Defender ATP to provide improved threat detection for Windows Servers.
+
+The following capabilities are included in this integration:
+- Automated onboarding - Windows Defender ATP sensor is automatically enabled on Windows Servers that are onboarded to ASC. For more information on onboarding to ASC, see [Onboarding to Azure Security Center Standard for enhanced security](https://docs.microsoft.com/en-us/azure/security-center/security-center-onboarding).
+
+    >[!NOTE]
+    > Automated onboarding is only applicable for Windows Server 2012 R2 and Windows Server 2016.
+
+- Servers monitored by  Azure Security Center will also be available in Windows Defender ATP - ASC seamlessly connects to the Windows Defender ATP tenant, providing a single view across clients and servers.  In addition, Windows Defender ATP alerts will be available in the Azure Security Center console.
+- Server investigation -  Azure Security Center customers can access the Windows Defender ATP portal to perform detailed investigation to uncover the scope of a potential breach
+
+>[!IMPORTANT]
+>- When you use Azure Security Center to monitor servers, a Windows Defender ATP tenant is automatically created. The Windows Defender ATP data is stored in Europe by default. 
+>- If you use Windows Defender ATP before using Azure Security Center, your data will be stored in the location you specified when you created your tenant even if you integrate with Azure Security Center at a later time.
+
+
 
 ## Offboard servers 
 You can offboard Windows Server, version 1803 in the same method available for Windows 10 client machines. 

@@ -15,6 +15,7 @@
 ##### [Data storage and privacy](windows-defender-atp\data-storage-privacy-windows-defender-advanced-threat-protection.md)
 ##### [Assign user access to the portal](windows-defender-atp\assign-portal-access-windows-defender-advanced-threat-protection.md)
 #### [Onboard machines](windows-defender-atp\onboard-configure-windows-defender-advanced-threat-protection.md)
+##### [Onboard previous versions of Windows](windows-defender-atp\onboard-downlevel-windows-defender-advanced-threat-protection.md)
 ##### [Onboard Windows 10 machines](windows-defender-atp\configure-endpoints-windows-defender-advanced-threat-protection.md)
 ###### [Onboard machines using Group Policy](windows-defender-atp\configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
 ###### [Onboard machines using System Center Configuration Manager](windows-defender-atp\configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
@@ -80,12 +81,11 @@
 ######## [View deep analysis reports](windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection.md#view-deep-analysis-reports)
 ######## [Troubleshoot deep analysis](windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection.md#troubleshoot-deep-analysis)
 
-###### [Use Automated investigation to investigate and remediate threats](windows-defender-atp\automated-investigations-windows-defender-advanced-threat-protection.md)
 ###### [Query data using Advanced hunting](windows-defender-atp\advanced-hunting-windows-defender-advanced-threat-protection.md)
 ####### [Advanced hunting reference](windows-defender-atp\advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
 ####### [Advanced hunting query language best practices](windows-defender-atp\advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
 
-
+#### [Use Automated investigation to investigate and remediate threats](windows-defender-atp\automated-investigations-windows-defender-advanced-threat-protection.md)
 ####  [Protect users, data, and devices with conditional access](windows-defender-atp\conditional-access-windows-defender-advanced-threat-protection.md)
 
 ####API and SIEM support
@@ -125,13 +125,13 @@
 ######### [Is domain seen in organization](windows-defender-atp/is-domain-seen-in-org-windows-defender-advanced-threat-protection.md)
 
 #######File
-######## [Block file API](windows-defender-atp/block-file-windows-defender-advanced-threat-protection.md)
+######## [Block file](windows-defender-atp/block-file-windows-defender-advanced-threat-protection.md)
 ######## [Get file information](windows-defender-atp/get-file-information-windows-defender-advanced-threat-protection.md)
 ######## [Get file related alerts](windows-defender-atp/get-file-related-alerts-windows-defender-advanced-threat-protection.md)
 ######## [Get file related machines](windows-defender-atp/get-file-related-machines-windows-defender-advanced-threat-protection.md)
 ######## [Get file statistics](windows-defender-atp/get-file-statistics-windows-defender-advanced-threat-protection.md)
-######## [Get FileActions collection API](windows-defender-atp/get-fileactions-collection-windows-defender-advanced-threat-protection.md)
-######## [Unblock file API](windows-defender-atp/unblock-file-windows-defender-advanced-threat-protection.md)
+######## [Get FileActions collection](windows-defender-atp/get-fileactions-collection-windows-defender-advanced-threat-protection.md)
+######## [Unblock file](windows-defender-atp/unblock-file-windows-defender-advanced-threat-protection.md)
 
 #######IP
 ######## [Get IP related alerts](windows-defender-atp/get-ip-related-alerts-windows-defender-advanced-threat-protection.md)
@@ -139,25 +139,25 @@
 ######## [Get IP statistics](windows-defender-atp/get-ip-statistics-windows-defender-advanced-threat-protection.md)
 ######## [Is IP seen in organization](windows-defender-atp/is-ip-seen-org-windows-defender-advanced-threat-protection.md)
 #######Machines
-######## [Collect investigation package API](windows-defender-atp/collect-investigation-package-windows-defender-advanced-threat-protection.md)
+######## [Collect investigation package](windows-defender-atp/collect-investigation-package-windows-defender-advanced-threat-protection.md)
 ######## [Find machine information by IP](windows-defender-atp/find-machine-info-by-ip-windows-defender-advanced-threat-protection.md)
 ######## [Get machines](windows-defender-atp/get-machines-windows-defender-advanced-threat-protection.md)
-######## [Get FileMachineAction object API](windows-defender-atp/get-filemachineaction-object-windows-defender-advanced-threat-protection.md)
-######## [Get FileMachineActions collection API](windows-defender-atp/get-filemachineactions-collection-windows-defender-advanced-threat-protection.md)
+######## [Get FileMachineAction object](windows-defender-atp/get-filemachineaction-object-windows-defender-advanced-threat-protection.md)
+######## [Get FileMachineActions collection](windows-defender-atp/get-filemachineactions-collection-windows-defender-advanced-threat-protection.md)
 ######## [Get machine by ID](windows-defender-atp/get-machine-by-id-windows-defender-advanced-threat-protection.md)
 ######## [Get machine log on users](windows-defender-atp/get-machine-log-on-users-windows-defender-advanced-threat-protection.md)
 ######## [Get machine related alerts](windows-defender-atp/get-machine-related-alerts-windows-defender-advanced-threat-protection.md)
-######## [Get MachineAction object API](windows-defender-atp/get-machineaction-object-windows-defender-advanced-threat-protection.md)
-######## [Get MachineActions collection API](windows-defender-atp/get-machineactions-collection-windows-defender-advanced-threat-protection.md)
+######## [Get MachineAction object](windows-defender-atp/get-machineaction-object-windows-defender-advanced-threat-protection.md)
+######## [Get MachineActions collection](windows-defender-atp/get-machineactions-collection-windows-defender-advanced-threat-protection.md)
 ######## [Get machines](windows-defender-atp/get-machines-windows-defender-advanced-threat-protection.md)
-######## [Get package SAS URI API](windows-defender-atp/get-package-sas-uri-windows-defender-advanced-threat-protection.md)
-######## [Isolate machine API](windows-defender-atp/isolate-machine-windows-defender-advanced-threat-protection.md)
-######## [Release machine from isolation API](windows-defender-atp/unisolate-machine-windows-defender-advanced-threat-protection.md)
-######## [Remove app restriction API](windows-defender-atp/unrestrict-code-execution-windows-defender-advanced-threat-protection.md)
-######## [Request sample API](windows-defender-atp/request-sample-windows-defender-advanced-threat-protection.md)
-######## [Restrict app execution API](windows-defender-atp/restrict-code-execution-windows-defender-advanced-threat-protection.md)
-######## [Run antivirus scan API](windows-defender-atp/run-av-scan-windows-defender-advanced-threat-protection.md)
-######## [Stop and quarantine file API](windows-defender-atp/stop-quarantine-file-windows-defender-advanced-threat-protection.md)
+######## [Get package SAS URI](windows-defender-atp/get-package-sas-uri-windows-defender-advanced-threat-protection.md)
+######## [Isolate machine](windows-defender-atp/isolate-machine-windows-defender-advanced-threat-protection.md)
+######## [Release machine from isolation](windows-defender-atp/unisolate-machine-windows-defender-advanced-threat-protection.md)
+######## [Remove app restriction](windows-defender-atp/unrestrict-code-execution-windows-defender-advanced-threat-protection.md)
+######## [Request sample](windows-defender-atp/request-sample-windows-defender-advanced-threat-protection.md)
+######## [Restrict app execution](windows-defender-atp/restrict-code-execution-windows-defender-advanced-threat-protection.md)
+######## [Run antivirus scan](windows-defender-atp/run-av-scan-windows-defender-advanced-threat-protection.md)
+######## [Stop and quarantine file](windows-defender-atp/stop-quarantine-file-windows-defender-advanced-threat-protection.md)
 
 
 
@@ -387,10 +387,10 @@
 ###### [Audit process tracking](auditing/basic-audit-process-tracking.md)
 ###### [Audit system events](auditing/basic-audit-system-events.md)
 
-##### [Advanced security audit policies](auditing/advanced-security-auditing.md)
-###### [Planning and deploying advanced security audit policies](auditing/planning-and-deploying-advanced-security-audit-policies.md)
-###### [Advanced security auditing FAQ](auditing/advanced-security-auditing-faq.md)
-####### [Which editions of Windows support advanced audit policy configuration](auditing/which-editions-of-windows-support-advanced-audit-policy-configuration.md)
+#### [Advanced security audit policies](auditing/advanced-security-auditing.md)
+##### [Planning and deploying advanced security audit policies](auditing/planning-and-deploying-advanced-security-audit-policies.md)
+##### [Advanced security auditing FAQ](auditing/advanced-security-auditing-faq.md)
+###### [Which editions of Windows support advanced audit policy configuration](auditing/which-editions-of-windows-support-advanced-audit-policy-configuration.md)
 
 ###### [Using advanced security auditing options to monitor dynamic access control objects](auditing/using-advanced-security-auditing-options-to-monitor-dynamic-access-control-objects.md)
 ####### [Monitor the central access policies that apply on a file server](auditing/monitor-the-central-access-policies-that-apply-on-a-file-server.md)
@@ -731,7 +731,7 @@
 
 
 
-#### [Security policy settings](security-policy-settings/security-policy-settings.md)
+### [Security policy settings](security-policy-settings/security-policy-settings.md)
 #### [Administer security policy settings](security-policy-settings/administer-security-policy-settings.md)
 ##### [Network List Manager policies](security-policy-settings/network-list-manager-policies.md)
 #### [Configure security policy settings](security-policy-settings/how-to-configure-security-policy-settings.md)

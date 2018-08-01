@@ -43,7 +43,7 @@ You use Windows Configuration Designer to create a provisioning package (.ppkg) 
     
         - [Instructions for the desktop wizard](provision-pcs-for-initial-deployment.md)
         - [Instructions for the mobile wizard](../mobile-devices/provisioning-configure-mobile.md)
-        - [Instructions for the kiosk wizard](../setup-kiosk-digital-signage.md#wizard)
+        - [Instructions for the kiosk wizard](../kiosk-single-app.md#wizard)
         - [Instructions for HoloLens wizard](https://technet.microsoft.com/itpro/hololens/hololens-provisioning)
         - [Instructions for Surface Hub wizard](https://technet.microsoft.com/itpro/surface-hub/provisioning-packages-for-certificates-surface-hub)
         

@@ -6,11 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/14/2018
+ms.date: 07/30/2018
 ---
 
 # Policy CSP - Update
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -47,6 +49,9 @@ ms.date: 05/14/2018
     <a href="#update-autorestartdeadlineperiodindays">Update/AutoRestartDeadlinePeriodInDays</a>
   </dd>
   <dd>
+    <a href="#update-autorestartdeadlineperiodindaysforfeatureupdates">Update/AutoRestartDeadlinePeriodInDaysForFeatureUpdates</a>
+  </dd>
+  <dd>
     <a href="#update-autorestartnotificationschedule">Update/AutoRestartNotificationSchedule</a>
   </dd>
   <dd>
@@ -80,10 +85,19 @@ ms.date: 05/14/2018
     <a href="#update-engagedrestartdeadline">Update/EngagedRestartDeadline</a>
   </dd>
   <dd>
+    <a href="#update-engagedrestartdeadlineforfeatureupdates">Update/EngagedRestartDeadlineForFeatureUpdates</a>
+  </dd>
+  <dd>
     <a href="#update-engagedrestartsnoozeschedule">Update/EngagedRestartSnoozeSchedule</a>
   </dd>
   <dd>
+    <a href="#update-engagedrestartsnoozescheduleforfeatureupdates">Update/EngagedRestartSnoozeScheduleForFeatureUpdates</a>
+  </dd>
+  <dd>
     <a href="#update-engagedrestarttransitionschedule">Update/EngagedRestartTransitionSchedule</a>
+  </dd>
+  <dd>
+    <a href="#update-engagedrestarttransitionscheduleforfeatureupdates">Update/EngagedRestartTransitionScheduleForFeatureUpdates</a>
   </dd>
   <dd>
     <a href="#update-excludewudriversinqualityupdate">Update/ExcludeWUDriversInQualityUpdate</a>
@@ -153,6 +167,12 @@ ms.date: 05/14/2018
   </dd>
   <dd>
     <a href="#update-setautorestartnotificationdisable">Update/SetAutoRestartNotificationDisable</a>
+  </dd>
+  <dd>
+    <a href="#update-setdisablepauseuxaccess">Update/SetDisablePauseUXAccess</a>
+  </dd>
+  <dd>
+    <a href="#update-setdisableuxwuaccess">Update/SetDisableUXWUAccess</a>
   </dd>
   <dd>
     <a href="#update-setedurestart">Update/SetEDURestart</a>
@@ -690,11 +710,21 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. This policy defines the deadline in days after which a reboot for updates will become mandatory.
+For Quality Updates, this policy specifies the deadline in days before automatically executing a scheduled restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart is scheduled.
 
-Supported values are 2-30 days.
+Value type is integer. Default is 7 days. 
 
-The default value is 7 days.
+Supported values range: 2-30.
+
+Note that the PC must restart for certain updates to take effect.
+
+If you enable this policy, a restart will automatically occur the specified number of days after the restart was scheduled.
+
+If you disable or do not configure this policy, the PC will restart according to the default schedule.
+
+If any of the following two policies are enabled, this policy has no effect:
+1. No auto-restart with logged on users for scheduled automatic updates installations.
+2. Always automatically restart at scheduled time.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -706,6 +736,81 @@ ADMX Info:
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-autorestartdeadlineperiodindaysforfeatureupdates"></a>**Update/AutoRestartDeadlinePeriodInDaysForFeatureUpdates**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+For Feature Updates, this policy specifies the deadline in days before automatically executing a scheduled restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart is scheduled.
+
+Value type is integer. Default is 7 days. 
+
+Supported values range: 2-30.
+
+Note that the PC must restart for certain updates to take effect.
+
+If you enable this policy, a restart will automatically occur the specified number of days after the restart was scheduled.
+
+If you disable or do not configure this policy, the PC will restart according to the default schedule.
+
+If any of the following two policies are enabled, this policy has no effect:
+1. No auto-restart with logged on users for scheduled automatic updates installations.
+2. Always automatically restart at scheduled time.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify deadline before auto-restart for update installation*
+-   GP name: *AutoRestartDeadline*
+-   GP element: *AutoRestartDeadlineForFeatureUpdates*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -1402,11 +1507,20 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Allows the IT Admin to specify the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to be automatically executed within the specified period.  If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (pending user scheduling).
+For Quality Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
 
-Supported values are 2-30 days.
+Value type is integer. Default is 14.
 
-The default value is 0 days (not specified).
+Supported value range: 2 - 30.
+
+If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (e.g. pending user scheduling).
+
+If you disable or do not configure this policy, the default behaviors will be used.
+
+If any of the following policies are configured, this policy has no effect:
+1. No auto-restart with logged on users for scheduled automatic updates installations
+2. Always automatically restart at scheduled time
+3. Specify deadline before auto-restart for update installation
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1418,6 +1532,80 @@ ADMX Info:
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-engagedrestartdeadlineforfeatureupdates"></a>**Update/EngagedRestartDeadlineForFeatureUpdates**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+For Feature Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
+
+Value type is integer. Default is 14.
+
+Supported value range: 2 - 30.
+
+If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (e.g. pending user scheduling).
+
+If you disable or do not configure this policy, the default behaviors will be used.
+
+If any of the following policies are configured, this policy has no effect:
+1. No auto-restart with logged on users for scheduled automatic updates installations
+2. Always automatically restart at scheduled time
+3. Specify deadline before auto-restart for update installation
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify Engaged restart transition and notification schedule for updates*
+-   GP name: *EngagedRestartTransitionSchedule*
+-   GP element: *EngagedRestartDeadlineForFeatureUpdates*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -1458,11 +1646,18 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Allows the IT Admin to control the number of days a user can snooze Engaged restart reminder notifications.
+For Quality Updates, this policy specifies the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days.
 
-Supported values are 1-3 days.
+Value type is integer. Default is 3 days.
 
-The default value is 3 days.
+Supported value range: 1 - 3.
+
+If you disable or do not configure this policy, the default behaviors will be used.
+
+If any of the following policies are configured, this policy has no effect:
+1. No auto-restart with logged on users for scheduled automatic updates installations
+2. Always automatically restart at scheduled time
+3. Specify deadline before auto-restart for update installation
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1474,6 +1669,78 @@ ADMX Info:
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-engagedrestartsnoozescheduleforfeatureupdates"></a>**Update/EngagedRestartSnoozeScheduleForFeatureUpdates**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+For Feature Updates, this policy specifies the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days.
+
+Value type is integer. Default is 3 days.
+
+Supported value range: 1 - 3.
+
+If you disable or do not configure this policy, the default behaviors will be used.
+
+If any of the following policies are configured, this policy has no effect:
+1. No auto-restart with logged on users for scheduled automatic updates installations
+2. Always automatically restart at scheduled time
+3. Specify deadline before auto-restart for update installation
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify Engaged restart transition and notification schedule for updates*
+-   GP name: *EngagedRestartTransitionSchedule*
+-   GP element: *EngagedRestartSnoozeScheduleForFeatureUpdates*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -1514,11 +1781,18 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Allows the IT Admin to control the timing before transitioning from Auto restarts scheduled outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 2 and 30 days from the time the restart becomes pending.
+For Quality Updates, this policy specifies the timing before transitioning from Auto restarts scheduled_outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 2 and 30 days from the time the restart becomes pending.
 
-Supported values are 2-30 days.
+Value type is integer. 
 
-The default value is 7 days.
+Supported value range: 0 - 30.
+
+If you disable or do not configure this policy, the default behaviors will be used.
+
+If any of the following policies are configured, this policy has no effect:
+1. No auto-restart with logged on users for scheduled automatic updates installations
+2. Always automatically restart at scheduled time
+3. Specify deadline before auto-restart for update installation
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1530,6 +1804,78 @@ ADMX Info:
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-engagedrestarttransitionscheduleforfeatureupdates"></a>**Update/EngagedRestartTransitionScheduleForFeatureUpdates**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+For Feature Updates, this policy specifies the timing before transitioning from Auto restarts scheduled_outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 2 and 30 days from the time the restart becomes pending.
+
+Value type is integer.
+
+Supported value range: 0 - 30.
+
+If you disable or do not configure this policy, the default behaviors will be used.
+
+If any of the following policies are configured, this policy has no effect:
+1. No auto-restart with logged on users for scheduled automatic updates installations
+2. Always automatically restart at scheduled time
+3. Specify deadline before auto-restart for update installation
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Specify Engaged restart transition and notification schedule for updates*
+-   GP name: *EngagedRestartTransitionSchedule*
+-   GP element: *EngagedRestartTransitionScheduleForFeatureUpdates*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -2872,6 +3218,126 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="update-setdisablepauseuxaccess"></a>**Update/SetDisablePauseUXAccess**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy allows the IT admin to disable the "Pause Updates" feature. When this policy is enabled, the user cannot access the "Pause updates" feature.
+
+Value type is integer. Default is 0. Supported values 0, 1.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP name: *SetDisablePauseUXAccess*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-setdisableuxwuaccess"></a>**Update/SetDisableUXWUAccess**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy allows the IT admin to remove access to scan Windows Update. When this policy is enabled, the user cannot access the Windows Update scan, download, and install features.
+
+Value type is integer. Default is 0. Supported values 0, 1.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP name: *SetDisableUXWUAccess*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="update-setedurestart"></a>**Update/SetEDURestart**  
 
 <!--SupportedSKUs-->
@@ -3081,49 +3547,8 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
+-   5 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Update policies supported by Windows Holographic for Business  
-
--   [Update/AllowAutoUpdate](#update-allowautoupdate)  
--   [Update/AllowUpdateService](#update-allowupdateservice)  
--   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
--   [Update/RequireUpdateApproval](#update-requireupdateapproval)  
--   [Update/UpdateServiceUrl](#update-updateserviceurl)  
-<!--EndHoloLens-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>Update policies supported by IoT Core  
-
--   [Update/AllowNonMicrosoftSignedUpdate](#update-allownonmicrosoftsignedupdate)  
--   [Update/AllowUpdateService](#update-allowupdateservice)  
--   [Update/PauseDeferrals](#update-pausedeferrals)  
--   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
--   [Update/RequireUpdateApproval](#update-requireupdateapproval)  
--   [Update/ScheduledInstallDay](#update-scheduledinstallday)  
--   [Update/ScheduledInstallTime](#update-scheduledinstalltime)  
--   [Update/UpdateServiceUrl](#update-updateserviceurl)  
-<!--EndIoTCore-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>Update policies supported by Microsoft Surface Hub  
-
--   [Update/AllowAutoUpdate](#update-allowautoupdate)  
--   [Update/AllowUpdateService](#update-allowupdateservice)  
--   [Update/AutoRestartNotificationSchedule](#update-autorestartnotificationschedule)  
--   [Update/AutoRestartRequiredNotificationDismissal](#update-autorestartrequirednotificationdismissal)  
--   [Update/BranchReadinessLevel](#update-branchreadinesslevel)  
--   [Update/DeferFeatureUpdatesPeriodInDays](#update-deferfeatureupdatesperiodindays)  
--   [Update/DeferQualityUpdatesPeriodInDays](#update-deferqualityupdatesperiodindays)  
--   [Update/DetectionFrequency](#update-detectionfrequency)  
--   [Update/PauseFeatureUpdates](#update-pausefeatureupdates)  
--   [Update/PauseQualityUpdates](#update-pausequalityupdates)  
--   [Update/ScheduleImminentRestartWarning](#update-scheduleimminentrestartwarning)  
--   [Update/ScheduleRestartWarning](#update-schedulerestartwarning)  
--   [Update/SetAutoRestartNotificationDisable](#update-setautorestartnotificationdisable)  
--   [Update/UpdateServiceUrl](#update-updateserviceurl)  
--   [Update/UpdateServiceUrlAlternate](#update-updateserviceurlalternate)  
-<!--EndSurfaceHub-->
 
