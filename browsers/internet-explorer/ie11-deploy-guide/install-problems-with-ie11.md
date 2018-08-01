@@ -48,7 +48,7 @@ If you get an error during the Windows Update process, see [Fix the problem with
 
 5.  Try to reinstall IE11 from either Windows Update (if you saw it in Step 3) or from the [Download Internet Explorer 11](https://go.microsoft.com/fwlink/p/?linkid=327753) website.
 
-If these steps didn't fix your problem, see [Troubleshooting a failed installation of Internet Explorer 11](https://go.microsoft.com/fwlink/p/?LinkId=304130).
+
 
  
 

@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 03/12/2018
+ms.date: 07/26/2018
 ---
 
 # DeviceStatus CSP
@@ -178,10 +178,23 @@ Supported operation is Get.
 <a href="" id="devicestatus-antispyware-signaturestatus"></a>**DeviceStatus/Antispyware/SignatureStatus**  
 Added in Windows, version 1607. Integer that specifies the status of the antispyware signature.
 
+Valid values:
+
+-  0 - The security software reports that it is not the most recent version.
+-  1 - The security software reports that it is the most recent version.
+-  2 - Not applicable. This is returned for devices like the phone that do not have an antivirus (where the API doesn’t exist.)
+
 Supported operation is Get.
 
 <a href="" id="devicestatus-antispyware-status"></a>**DeviceStatus/Antispyware/Status**  
 Added in Windows, version 1607. Integer that specifies the status of the antispyware.
+
+Valid values:
+
+-  0 - The status of the security provider category is good and does not need user attention.
+-  1 - The status of the security provider category is not monitored by Windows Security Center (WSC).
+-  2 - The status of the security provider category is poor and the computer may be at risk.
+-  3 - The security provider category is in snooze state. Snooze indicates that WSC is not actively protecting the computer.
 
 Supported operation is Get.
 

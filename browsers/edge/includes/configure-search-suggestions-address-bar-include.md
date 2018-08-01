@@ -4,7 +4,7 @@
 
 [!INCLUDE [configure-search-suggestions-in-address-bar-shortdesc](../shortdesc/configure-search-suggestions-in-address-bar-shortdesc.md)] 
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|

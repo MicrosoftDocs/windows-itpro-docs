@@ -15,7 +15,7 @@ ms.date: 07/11/2018
 
 # Use the Set up School PCs app  
 
-IT administrators and technical teachers can use the **Set up School PCs** app to quickly set up Windows 10 PCs for students. The app configures PCs with the apps and features students need, and it removes the ones they don't need. During setup, if licensed in your tenant, the app anrolls each student PC into a mobile device management (MDM) provider, such as Intune for Education. You can then manage all the settings Set up School PCs configures through the MDM.   
+IT administrators and technical teachers can use the **Set up School PCs** app to quickly set up Windows 10 PCs for students. The app configures PCs with the apps and features students need, and it removes the ones they don't need. During setup, if licensed in your tenant, the app enrolls each student PC into a mobile device management (MDM) provider, such as Intune for Education. You can then manage all the settings Set up School PCs configures through the MDM.   
 
 Set up School PCs also:  
 * Joins each student PC to your organization's Office 365 and Azure Active Directory tenant.  

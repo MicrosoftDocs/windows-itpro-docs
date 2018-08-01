@@ -1,14 +1,14 @@
-<!-- ## Allow sideloading of Extensions
->*Supported versions: Microsoft Edge on Windows 10, next major version*<br> -->
+<!-- ## Allow sideloading of Extensions -->  
+>*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br>  
 >*Default setting: Enabled (Allowed)*
 
 [!INCLUDE [allow-sideloading-of-extensions-shortdesc](../shortdesc/allow-sideloading-of-extensions-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
-|Disabled or not configured |0 |0 |Prevented/not allowed. Disabling does not prevent sideloading of extensions using Add-AppxPackage via PowerShell. To prevent this, enable **Allows development of Windows Store apps and installing them from an integrated development environment (IDE)** policy, located at Windows Components > App Package Deployment.<p>For the MDM setting, set the **ApplicationManagement/AllowDeveloperUnlock** policy to 1 (enable). |![Most restricted value](../images/check-gn.png) |
+|Disabled or not configured |0 |0 |Prevented/not allowed. Disabling does not prevent sideloading of extensions using Add-AppxPackage via PowerShell. To prevent this, enable **Allows development of Windows Store apps and installing them from an integrated development environment (IDE)** policy, located at Windows Components > App Package Deployment.<p>For the MDM setting, set the **ApplicationManagement/AllowDeveloperUnlock** policy to 1 (enabled). |![Most restricted value](../images/check-gn.png) |
 |Enabled<br>**(default)** |1 |1 |Allowed. | |
 ---
 
@@ -21,7 +21,7 @@
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Browser/[AllowSideloadingExtensions](../new-policies.md#allow-sideloading-of-extensions)
+- **MDM name:** Browser/[AllowSideloadingExtensions](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsideloadingofextensions)
 - **Supported devices:** Desktop 
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowSideloadingExtensions 
 - **Data type:** Integer

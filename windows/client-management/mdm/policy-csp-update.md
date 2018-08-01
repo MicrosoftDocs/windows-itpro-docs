@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/18/2018
+ms.date: 07/30/2018
 ---
 
 # Policy CSP - Update
@@ -176,9 +176,6 @@ ms.date: 07/18/2018
   </dd>
   <dd>
     <a href="#update-setedurestart">Update/SetEDURestart</a>
-  </dd>
-  <dd>
-    <a href="#update-updatenotificationkioskmode">Update/UpdateNotificationKioskMode</a>
   </dd>
   <dd>
     <a href="#update-updateserviceurl">Update/UpdateServiceUrl</a>
@@ -3399,74 +3396,6 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-updatenotificationkioskmode"></a>**Update/UpdateNotificationKioskMode**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td></td>
-	<td></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy allows you to define what Windows Update notifications users see. This policy doesn’t control how and when updates are downloaded and installed.
-
-Valid values:  
--  0 (default) – Use the default Windows Update notifications
--  1 – Turn off all notifications, excluding restart warnings
--  2 – Turn off all notifications, including restart warnings
-
-> [!Important]  
-> If you choose not to get update notifications and also define the policy “Configure Automatic Updates” so that devices aren’t automatically getting updates, neither you nor device users will be aware of critical security, quality, or feature updates, and your devices may be at risk.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Display options for update notifications*
--   GP name: *UpdateNotificationKioskMode*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
 <a href="" id="update-updateserviceurl"></a>**Update/UpdateServiceUrl**  
 
 <!--SupportedSKUs-->
@@ -3622,53 +3551,4 @@ Footnote:
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Update policies supported by Windows Holographic for Business  
-
--   [Update/AllowAutoUpdate](#update-allowautoupdate)  
--   [Update/AllowUpdateService](#update-allowupdateservice)  
--   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
--   [Update/RequireUpdateApproval](#update-requireupdateapproval)  
--   [Update/UpdateServiceUrl](#update-updateserviceurl)  
-<!--EndHoloLens-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>Update policies supported by IoT Core  
-
--   [Update/AllowNonMicrosoftSignedUpdate](#update-allownonmicrosoftsignedupdate)  
--   [Update/AllowUpdateService](#update-allowupdateservice)  
--   [Update/AutoRestartDeadlinePeriodInDaysForFeatureUpdates](#update-autorestartdeadlineperiodindaysforfeatureupdates)  
--   [Update/EngagedRestartDeadlineForFeatureUpdates](#update-engagedrestartdeadlineforfeatureupdates)  
--   [Update/EngagedRestartSnoozeScheduleForFeatureUpdates](#update-engagedrestartsnoozescheduleforfeatureupdates)  
--   [Update/EngagedRestartTransitionScheduleForFeatureUpdates](#update-engagedrestarttransitionscheduleforfeatureupdates)  
--   [Update/PauseDeferrals](#update-pausedeferrals)  
--   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
--   [Update/RequireUpdateApproval](#update-requireupdateapproval)  
--   [Update/ScheduledInstallDay](#update-scheduledinstallday)  
--   [Update/ScheduledInstallTime](#update-scheduledinstalltime)  
--   [Update/SetDisablePauseUXAccess](#update-setdisablepauseuxaccess)  
--   [Update/SetDisableUXWUAccess](#update-setdisableuxwuaccess)  
--   [Update/UpdateNotificationKioskMode](#update-updatenotificationkioskmode)  
--   [Update/UpdateServiceUrl](#update-updateserviceurl)  
-<!--EndIoTCore-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>Update policies supported by Microsoft Surface Hub  
-
--   [Update/AllowAutoUpdate](#update-allowautoupdate)  
--   [Update/AllowUpdateService](#update-allowupdateservice)  
--   [Update/AutoRestartNotificationSchedule](#update-autorestartnotificationschedule)  
--   [Update/AutoRestartRequiredNotificationDismissal](#update-autorestartrequirednotificationdismissal)  
--   [Update/BranchReadinessLevel](#update-branchreadinesslevel)  
--   [Update/DeferFeatureUpdatesPeriodInDays](#update-deferfeatureupdatesperiodindays)  
--   [Update/DeferQualityUpdatesPeriodInDays](#update-deferqualityupdatesperiodindays)  
--   [Update/DetectionFrequency](#update-detectionfrequency)  
--   [Update/PauseFeatureUpdates](#update-pausefeatureupdates)  
--   [Update/PauseQualityUpdates](#update-pausequalityupdates)  
--   [Update/ScheduleImminentRestartWarning](#update-scheduleimminentrestartwarning)  
--   [Update/ScheduleRestartWarning](#update-schedulerestartwarning)  
--   [Update/SetAutoRestartNotificationDisable](#update-setautorestartnotificationdisable)  
--   [Update/UpdateServiceUrl](#update-updateserviceurl)  
--   [Update/UpdateServiceUrlAlternate](#update-updateserviceurlalternate)  
-<!--EndSurfaceHub-->
 

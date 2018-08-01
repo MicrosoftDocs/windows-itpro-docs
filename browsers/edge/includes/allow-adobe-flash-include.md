@@ -4,7 +4,7 @@
 
 [!INCLUDE [allow-adobe-flash-shortdesc](../shortdesc/allow-adobe-flash-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|

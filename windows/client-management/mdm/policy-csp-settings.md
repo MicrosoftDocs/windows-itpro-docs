@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/14/2018
+ms.date: 07/30/2018
 ---
 
 # Policy CSP - Settings
@@ -849,10 +849,5 @@ Footnote:
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Settings policies supported by Windows Holographic for Business  
 
--   [Settings/AllowDateTime](#settings-allowdatetime)  
--   [Settings/AllowVPN](#settings-allowvpn)  
-<!--EndHoloLens-->
 

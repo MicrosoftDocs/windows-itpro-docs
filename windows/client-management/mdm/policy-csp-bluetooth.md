@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/14/2018
+ms.date: 07/30/2018
 ---
 
 # Policy CSP - Bluetooth
@@ -439,30 +439,4 @@ Footnote: * The Surface pen uses the HID over GATT profile
 
 {00001105-0000-1000-8000-00805F9B34FB};{00000008-0000-1000-8000-00805F9B34FB};{0000111E-0000-1000-8000-00805F9B34FB};{00001800-0000-1000-8000-00805F9B34FB};{0000180A-0000-1000-8000-00805F9B34FB};{00001813-0000-1000-8000-00805F9B34FB}
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Bluetooth policies supported by Windows Holographic for Business  
-
--   [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)  
--   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)  
--   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)  
-<!--EndHoloLens-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>Bluetooth policies supported by IoT Core  
-
--   [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)  
--   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)  
--   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)  
--   [Bluetooth/ServicesAllowedList](#bluetooth-servicesallowedlist)  
-<!--EndIoTCore-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>Bluetooth policies supported by Microsoft Surface Hub  
-
--   [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)  
--   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)  
--   [Bluetooth/AllowPrepairing](#bluetooth-allowprepairing)  
--   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)  
--   [Bluetooth/ServicesAllowedList](#bluetooth-servicesallowedlist)  
-<!--EndSurfaceHub-->
 

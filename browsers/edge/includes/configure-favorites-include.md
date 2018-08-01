@@ -1,2 +1,4 @@
 <!-- ## Configure Favorites -->
->Deprecated. Use [Provision Favorites](../available-policies.md#provision-favorites).
+>Use the **[Provision Favorites](../available-policies.md#provision-favorites)** policy in place of Configure Favorites.
+
+<hr>

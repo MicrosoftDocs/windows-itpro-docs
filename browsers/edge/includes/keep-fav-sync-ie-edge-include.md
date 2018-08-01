@@ -4,22 +4,12 @@
 
 [!INCLUDE [keep-favorites-in-sync-between-ie-and-edge-shortdesc](../shortdesc/keep-favorites-in-sync-between-ie-and-edge-shortdesc.md)]
 
-### Allowed values
+### Supported values
 
 |Group Policy  |MDM |Registry |Description |Most restricted |
 |---|:---:|:---:|---|:---:|
 |Disabled or not configured<br>**(default)** |0 |0 |Turned off/not syncing. | |
 |Enabled |1 |1 |Turned on/syncing.  |![Most restricted value](../images/check-gn.png) |
----
-
-### Configuration combinations
-### Configuration combinations
-| **Keep favorites in sync between IE and Microsoft Edge** | **Provision Favorites** | **Outcome** |
-| --- | --- | --- |
-| Disabled or not configured (default) | Disabled or not configured (default) | **Turned off/not syncing**. Microsoft Edge prevents users from syncing their favorites. |
-| Enabled (turned on/syncing) | Disabled or not configured (default) | **Turned on/syncing**. Syncs favorites between Internet Explorer and Microsoft Edge. |
-| Enabled (turned on/syncing) | Enabled (provision list of favorites) | **Turned off/not syncing**. Microsoft Edge prevents users from syncing their favorites. |
-| Disabled or not configured (default) | Enabled (provision list of Favorites) | **Turned on/syncing**. Syncs favorites between Internet Explorer and Microsoft Edge. |
 ---
 
 ### ADMX info and settings

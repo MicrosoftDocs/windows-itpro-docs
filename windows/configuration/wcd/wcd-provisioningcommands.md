@@ -13,7 +13,7 @@ ms.date: 09/06/2017
 
 # ProvisioningCommands (Windows Configuration Designer reference)
 
-Use ProvisioningCommands settings to install Classic Windows apps using a provisioning package. 
+Use ProvisioningCommands settings to install Windows desktop applications using a provisioning package. 
 
 ## Applies to
 
