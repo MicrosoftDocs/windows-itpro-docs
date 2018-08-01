@@ -21,13 +21,31 @@ Microsoft has worked hard to make our capabilities increasingly more effective b
 
 The time and effort Microsoft puts into improving Windows Defender Antivirus continues to show in the form of consistently high scores from independent tests.
 
-### AV-TEST
+The following display scores for two independent tests.
 
-The diagrams below show Windows Defender AV’s detection rates in “Real World” and “Prevalent malware” testing over a six month period
+## AV-TEST
+
+AV-TEST is an independent IT security institute from Germany and has been testing internationally relevant IT security products for over 15 years.
+
+The graphs below show Windows Defender AV’s detection rates in “Real World” and “Prevalent malware” testing over a six month period.
+
+**Real-world testing** refers to protection against 0-day malware attacks, inclusive of web and e-mail threats.
+
+**Prevent malware** refers to detection of widespread and prevalent malware discovered in the last 4 weeks.
+
 
 ![Prevent Malware](./images/PreventMalware072018Large.png)
 
 ![Real World](./images/RealWorld072018.png)
+
+## AV Comparatives
+
+The results show the AV Comparatives Enterprise Real-World Protection Test
+
+**March-June of 2018**
+
+Blocked (malware was successfully blocked by AV): 98.7%
+
 
 ## Factors not represented in the tests
 
@@ -37,26 +55,16 @@ If organizations like AV-Comparatives and AV-TEST performed testing against the 
 
  To see these capabilities for yourself sign up for a [90-day trial of Windows Defender ATP](https://www.microsoft.com/windowsforbusiness/windows-atp?ocid=cx-blog-mmpc) today, or [enable Preview features on existing tenants](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-settings-windows-defender-advanced-threat-protection).
 
+![Real World](./images/wdatp-pillars2.png)
+
 ## Reports
 
-### AV Test
+### AV-TEST
 
-**May-June 2018**
-
-* [AV-Test results](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2018/microsoft-windows-defender-antivirus-4.12-182374/
-)
-
-**March-April 2018**
-
-* [AV-Test results](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/april-2018/microsoft-windows-defender-antivirus-4.12-181574/)
-
-* [Microsoft transparency report](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA)
-
-**January-February 2018**
-
-* [AV-Test results](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/april-2018/microsoft-windows-defender-antivirus-4.12-181574/)
-
-* [Microsoft transparency report](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE27O5A?ocid=cx-blog-mmpc)
+|**January-February 2018** | **March-April 2018**  |**May-June 2018**| 
+|-----|-----|-----|
+|* [AV-Test results](https://www.av-test.org/en/antivirus/home-windows/windows-7/february-2018/kaspersky-lab-internet-security-18.0-180557/)|* [AV-Test results](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/april-2018/microsoft-windows-defender-antivirus-4.12-181574/)|* [AV-Test results](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2018/microsoft-windows-defender-antivirus-4.12-182374/)|
+|* [Microsoft transparency report](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE27O5A?ocid=cx-blog-mmpc)|* [Microsoft transparency report](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA)|||
 
 ### AV Comparatives
 
@@ -66,4 +74,4 @@ If organizations like AV-Comparatives and AV-TEST performed testing against the 
 
 ### Tom's Guide
 
-https://www.tomsguide.com/us/best-antivirus,review-2588.html
+* [Best Free PC Antivirus Software 2018](https://www.tomsguide.com/us/best-antivirus,review-2588-5.html)
