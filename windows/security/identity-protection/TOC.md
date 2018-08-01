@@ -13,6 +13,8 @@
 
 ## [Configure S/MIME for Windows 10 and Windows 10 Mobile](configure-s-mime.md)
 
+## [Encrypted Hard Drive](encrypted-hard-drive.md)
+
 ## [Enterprise Certificate Pinning](enterprise-certificate-pinning.md)
 
 ## [Install digital certificates on Windows 10 Mobile](installing-digital-certificates-on-windows-10-mobile.md)
@@ -31,6 +33,8 @@
 
 ## [Protect Remote Desktop credentials with Remote Credential Guard](remote-credential-guard.md)
 
+## [Secure the Windows 10 boot process](secure-the-windows-10-boot-process.md)
+
 ## [Smart Cards](smart-cards/smart-card-windows-smart-card-technical-reference.md)
 ### [How Smart Card Sign-in Works in Windows](smart-cards/smart-card-how-smart-card-sign-in-works-in-windows.md)
 #### [Smart Card Architecture](smart-cards/smart-card-architecture.md)
@@ -43,6 +47,19 @@
 #### [Smart Cards Debugging Information](smart-cards/smart-card-debugging-information.md)
 #### [Smart Card Group Policy and Registry Settings](smart-cards/smart-card-group-policy-and-registry-settings.md)
 #### [Smart Card Events](smart-cards/smart-card-events.md)
+
+## [Trusted Platform Module](tpm/trusted-platform-module-top-node.md)
+### [Trusted Platform Module Overview](tpm/trusted-platform-module-overview.md)
+### [TPM fundamentals](tpm/tpm-fundamentals.md)
+### [How Windows 10 uses the TPM](tpm/how-windows-uses-the-tpm.md)
+### [TPM Group Policy settings](tpm/trusted-platform-module-services-group-policy-settings.md)
+### [Back up the TPM recovery information to AD DS](tpm/backup-tpm-recovery-information-to-ad-ds.md)
+### [Manage TPM commands](tpm/manage-tpm-commands.md)
+### [Manage TPM lockout](tpm/manage-tpm-lockout.md)
+### [Change the TPM owner password](tpm/change-the-tpm-owner-password.md)
+### [View status, clear, or troubleshoot the TPM](tpm/initialize-and-configure-ownership-of-the-tpm.md)
+### [Understanding PCR banks on TPM 2.0 devices](tpm/switch-pcr-banks-on-tpm-2-0-devices.md)
+### [TPM recommendations](tpm/tpm-recommendations.md)
 
 ### [User Account Control](user-account-control\user-account-control-overview.md)
 #### [How User Account Control works](user-account-control\how-user-account-control-works.md)
