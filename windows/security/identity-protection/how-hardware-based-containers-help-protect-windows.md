@@ -25,13 +25,13 @@ Windows Defender System Guard reorganizes the existing Windows 10 system integri
 
 With Windows 7, one of the means attackers would use to persist and evade detection was to install what is often referred to as a bootkit or rootkit on the system. This malicious software would start before Windows started, or during the boot process itself, enabling it to start with the highest level of privilege.
 
-With Windows 10 running on modern hardware (that is, Windows 8-certified or greater) we have a hardware-based root of trust that helps us ensure that no unauthorized firmware or software (such as a bootkit) can start before the Windows bootloader. This hardware-based root of trust comes from the device’s [Secure Boot feature](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-8.1-and-8/hh824987), which is part of the Unified Extensible Firmware Interface (UEFI). 
+With Windows 10 running on modern hardware (that is, Windows 8-certified or greater) we have a hardware-based root of trust that helps us ensure that no unauthorized firmware or software (such as a bootkit) can start before the Windows bootloader. This hardware-based root of trust comes from the device’s [Secure Boot feature](secure-the-windows-10-boot-process.md), which is part of the Unified Extensible Firmware Interface (UEFI). 
 
 After successful verification and startup of the device’s firmware and Windows bootloader, the next opportunity for attackers to tamper with the system’s integrity is while the rest of the Windows operating system and defenses are starting. As an attacker, embedding your malicious code using a rootkit within the boot process enables you to gain the maximum level of privilege and gives you the ability to more easily persist and evade detection. 
 
 This is where Windows Defender System Guard protection begins with its ability to ensure that only properly signed and secure Windows files and drivers, including third party, can start on the device. At the end of the Windows boot process, System Guard will start the system’s antimalware solution, which scans all third party drivers, at which point the system boot process is completed. In the end, Windows Defender System Guard helps ensure that the system securely boots with integrity and that it hasn’t been compromised before the remainder of your system defenses start.
 
-![Boot time integrity](../hardware-protection/images/windows-defender-system-guard-boot-time-integrity.png)
+![Boot time integrity](images/windows-defender-system-guard-boot-time-integrity.png)
 
 ## Maintaining integrity of the system after it’s running (run time)
 
@@ -47,5 +47,5 @@ While Windows Defender System Guard provides advanced protection that will help 
 
 As Windows 10 boots, a series of integrity measurements are taken by Windows Defender System Guard using the device’s Trusted Platform Module 2.0 (TPM 2.0). This process and data are hardware-isolated away from Windows to help ensure that the measurement data is not subject to the type of tampering that could happen if the platform was compromised. From here, the measurements can be used to determine the integrity of the device’s firmware, hardware configuration state, and Windows boot-related components, just to name a few. After the system boots, Windows Defender System Guard signs and seals these measurements using the TPM. Upon request, a management system like Intune or System Center Configuration Manager can acquire them for remote analysis. If Windows Defender System Guard indicates that the device lacks integrity, the management system can take a series of actions, such as denying the device access to resources.
 
-![Windows Defender System Guard](../hardware-protection/images/windows-defender-system-guard-validate-system-integrity.png)
+![Windows Defender System Guard](images/windows-defender-system-guard-validate-system-integrity.png)
 
