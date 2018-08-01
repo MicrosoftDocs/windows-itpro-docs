@@ -23,7 +23,7 @@ ms.date: 05/21/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
+BENNY: look at this page and see if there are "settings/ configurations" if yes, point them to the settings page and remove it from here.
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)
 
