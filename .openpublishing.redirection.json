@@ -17,67 +17,72 @@
 },
 {
 "source_path": "windows/security/hardware-protection/encrypted-hard-drive.md",
-"redirect_url": "/windows/security/identity-protection/encrypted-hard-drived",
+"redirect_url": "/windows/security/information-protection/encrypted-hard-drive",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/hardware-protection/secure-the-windows-10-boot-process.md",
+"redirect_url": "/windows/security/information-protection/secure-the-windows-10-boot-process",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/security/hardware-protection/tpm/backup-tpm-recovery-information-to-ad-ds.md",
-"redirect_url": "/windows/security/identity-protection/tpm/backup-tpm-recovery-information-to-ad-ds",
+"redirect_url": "/windows/security/information-protection/tpm/backup-tpm-recovery-information-to-ad-ds",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/security/hardware-protection/tpm/change-the-tpm-owner-password.md",
-"redirect_url": "/windows/security/identity-protection/tpm/change-the-tpm-owner-password",
+"redirect_url": "/windows/security/information-protection/tpm/change-the-tpm-owner-password",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/security/hardware-protection/tpm/how-windows-uses-the-tpm.md",
-"redirect_url": "/windows/security/identity-protection/tpm/how-windows-uses-the-tpm",
+"redirect_url": "/windows/security/information-protection/tpm/how-windows-uses-the-tpm",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/security/hardware-protection/tpm/initialize-and-configure-ownership-of-the-tpm.md",
-"redirect_url": "/windows/security/identity-protection/tpm/initialize-and-configure-ownership-of-the-tpm",
+"redirect_url": "/windows/security/information-protection/tpm/initialize-and-configure-ownership-of-the-tpm",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/security/hardware-protection/tpm/manage-tpm-commands.md",
-"redirect_url": "/windows/security/identity-protection/tpm/manage-tpm-commands",
+"redirect_url": "/windows/security/information-protection/tpm/manage-tpm-commands",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/security/hardware-protection/tpm/manage-tpm-lockout.md",
-"redirect_url": "/windows/security/identity-protection/tpm/manage-tpm-lockout",
+"redirect_url": "/windows/security/information-protection/tpm/manage-tpm-lockout",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/security/hardware-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices.md",
-"redirect_url": "/windows/security/identity-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices",
+"redirect_url": "/windows/security/information-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/security/hardware-protection/tpm/tpm-fundamentals.md",
-"redirect_url": "/windows/security/identity-protection/tpm/tpm-fundamentals",
+"redirect_url": "/windows/security/information-protection/tpm/tpm-fundamentals",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/security/hardware-protection/tpm/tpm-recommendations.md",
-"redirect_url": "/windows/security/identity-protection/tpm/tpm-recommendations",
+"redirect_url": "/windows/security/information-protection/tpm/tpm-recommendations",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/security/hardware-protection/tpm/trusted-platform-module-overview.md",
-"redirect_url": "/windows/security/identity-protection/tpm/trusted-platform-module-overview",
+"redirect_url": "/windows/security/information-protection/tpm/trusted-platform-module-overview",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/security/hardware-protection/tpm/trusted-platform-module-services-group-policy-settings.md",
-"redirect_url": "/windows/security/identity-protection/tpm/trusted-platform-module-services-group-policy-settings",
+"redirect_url": "/windows/security/information-protection/tpm/trusted-platform-module-services-group-policy-settings",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/security/hardware-protection/tpm/trusted-platform-module-top-node.md",
-"redirect_url": "/windows/security/identity-protection/tpm/trusted-platform-module-top-node",
+"redirect_url": "/windows/security/information-protection/tpm/trusted-platform-module-top-node",
 "redirect_document_id": true
 },
 {
