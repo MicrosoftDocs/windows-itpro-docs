@@ -127,7 +127,7 @@ Upon reboot, you should find your Surface Go device now is now in S mode.
 |ISSUE | RESOLUTION |
 |------------------------ |-----------------------|
 |DISM fails to apply the unattend.xml because the OS drive is encrypted. | This is one reason why it’s best to enable S mode before setting up and configuring a device. If the OS drive has already been encrypted, you’ll need to fully decrypt the drive before you can enable S mode. |
-|Unattend.xml has been applied and dism reports success. However, when I boot the device, it’s not in S mode. | This can happen when a device was booted to Windows 10 Pro before S mode was enabled. To resolve this issue, do the following:
+|Unattend.xml has been applied and dism reports success. However, when I boot the device, it’s not in S mode. This can happen when a device was booted to Windows 10 Pro before S mode was enabled. To resolve this issue, do the following:
 1.  **Run** “shutdown.exe -p -f” to force a complete shutdown.
 2.  Hold the **vol-up** button while pressing the **power** button to power on the
     device. Continue to hold **vol-up** until you see the Surface UEFI settings.
@@ -136,7 +136,7 @@ Upon reboot, you should find your Surface Go device now is now in S mode.
     settings and reboot the device back to Windows.
 5.  Confirm that S mode is now properly enabled.
 6.  Once you’ve confirmed S mode, you should re-enable Secure Boot… repeat the above steps, choosing to **Enable** Secure Boot from the UEFI security
-    settings.
+    settings. |
     
 ### Additional Info
 
