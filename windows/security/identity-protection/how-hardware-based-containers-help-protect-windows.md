@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: justinha
-ms.date: 07/31/2018
+ms.date: 08/01/2018
 ---
 
 
@@ -26,7 +26,7 @@ Windows Defender System Guard reorganizes the existing Windows 10 system integri
 
 With Windows 7, one of the means attackers would use to persist and evade detection was to install what is often referred to as a bootkit or rootkit on the system. This malicious software would start before Windows started, or during the boot process itself, enabling it to start with the highest level of privilege.
 
-With Windows 10 running on modern hardware (that is, Windows 8-certified or greater) we have a hardware-based root of trust that helps us ensure that no unauthorized firmware or software (such as a bootkit) can start before the Windows bootloader. This hardware-based root of trust comes from the device’s [Secure Boot feature](secure-the-windows-10-boot-process.md), which is part of the Unified Extensible Firmware Interface (UEFI). 
+With Windows 10 running on modern hardware (that is, Windows 8-certified or greater) we have a hardware-based root of trust that helps us ensure that no unauthorized firmware or software (such as a bootkit) can start before the Windows bootloader. This hardware-based root of trust comes from the device’s Secure Boot feature, which is part of the Unified Extensible Firmware Interface (UEFI). 
 
 After successful verification and startup of the device’s firmware and Windows bootloader, the next opportunity for attackers to tamper with the system’s integrity is while the rest of the Windows operating system and defenses are starting. As an attacker, embedding your malicious code using a rootkit within the boot process enables you to gain the maximum level of privilege and gives you the ability to more easily persist and evade detection. 
 
