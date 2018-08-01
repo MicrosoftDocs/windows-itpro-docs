@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/13/2018
+ms.date: 07/30/2018
 ---
 
 # Policy CSP - Experience
@@ -89,6 +89,12 @@ ms.date: 07/13/2018
   </dd>
   <dd>
     <a href="#experience-donotshowfeedbacknotifications">Experience/DoNotShowFeedbackNotifications</a>
+  </dd>
+  <dd>
+    <a href="#experience-donotsyncbrowsersetting">Experience/DoNotSyncBrowserSetting</a>
+  </dd>
+  <dd>
+    <a href="#experience-preventusersfromturningonbrowsersyncing">Experience/PreventUsersFromTurningOnBrowserSyncing</a>
   </dd>
 </dl>
 
@@ -1392,6 +1398,159 @@ The following list shows the supported values:
 
 <hr/>
 
+<!--Policy-->
+<a href="" id="experience-donotsyncbrowsersetting"></a>**Experience/DoNotSyncBrowserSetting**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+By default, the "browser" group syncs automatically between user’s devices and allowing users to choose to make changes. The "browser" group uses the **Sync your Settings** option in Settings to sync information like history and favorites. Enabling this policy prevents the "browser" group from using the **Sync your Settings** option. If you want syncing turned off by default but not disabled, select the Allow users to turn "browser" syncing option.
+
+Related policy: PreventUsersFromTurningOnBrowserSyncing.
+
+Value type is integer. Supported values:  
+
+-  0 (default) - Allowed/turned on. The "browser" group syncs automatically between user’s devices and lets users to make changes.
+-  2 - Prevented/turned off. The "browser" group does not use the **Sync your Settings** option.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Do not sync browser settings*
+-   GP name: *DisableWebBrowserSettingSync*
+-   GP path: *Windows Components/Sync your settings*
+-   GP ADMX file name: *SettingSync.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="experience-preventusersfromturningonbrowsersyncing"></a>**Experience/PreventUsersFromTurningOnBrowserSyncing**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+By default, the "browser" group syncs automatically between the user’s devices, letting users make changes. With this policy, though, you can prevent the "browser" group from syncing and prevent users from turning on the Sync your Settings toggle in Settings. If you want syncing turned off by default but not disabled, select the Allow users to turn "browser" syncing option in the Do not sync browser policy. For this policy to work correctly, you must enable the Do not sync browser policy.
+
+Related policy: DoNotSyncBrowserSetting
+
+Value type is integer. Supported values:  
+
+-  0 - Allowed/turned on. Users can sync the browser settings.
+-  1 (default) - Prevented/turned off.
+
+This policy only works with the Experience/DoNotSyncBrowserSetting policy, and for this policy to work correctly, you must set Experience/DoNotSynBrowserSettings to 2 (enabled). By default, when you set this policy and the Experience/DoNotSyncBrowserSetting policy to 0 (disabled or not configured), the browser settings sync automatically. However, with this policy, you can prevent the syncing of browser settings and prevent users from turning on the Sync your Settings option. Additionally, you can prevent syncing the browser settings but give users a choice to turn on syncing. 
+
+If you want to prevent syncing of browser settings and prevent users from turning it on:  
+1. Set Experience/DoNotSyncBrowserSetting to 2 (enabled).
+1. Set this policy (Experience/PreventUsersFromTurningOnBrowserSyncing) to 1 (enabled or not configured).
+
+If you want to prevent syncing of browser settings but give users a choice to turn on syncing:  
+1. Set Experience/DoNotSyncBrowserSetting to 2 (enabled).
+1. Set this policy (Experience/PreventUsersFromTurningOnBrowserSyncing) to 0 (disabled).
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Do not sync browser settings*
+-   GP name: *DisableWebBrowserSettingSync*
+-   GP element: *CheckBox_UserOverride*
+-   GP path: *Windows Components/Sync your settings*
+-   GP ADMX file name: *SettingSync.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+**Validation procedure:**  
+
+Microsoft Edge on your PC:
+1. Select More  > Settings.
+1. See if the setting is enabled or disabled based on your setting.
+
+<!--/Validation-->
+<!--/Policy-->
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3c06afe9875ad82fff960313bea663f49a2f7d2c
+<hr/>
+
 Footnote:
 
 -   1 - Added in Windows 10, version 1607.
@@ -1402,10 +1561,4 @@ Footnote:
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Experience policies supported by Windows Holographic for Business  
-
--   [Experience/AllowCortana](#experience-allowcortana)  
--   [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)  
-<!--EndHoloLens-->
 

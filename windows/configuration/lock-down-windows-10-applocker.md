@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 08/14/2017
+ms.date: 07/30/2018
 ms.author: jdecker
 ms.topic: article
 ---
@@ -37,7 +37,7 @@ This topic describes how to lock down apps on a local device. You can also use A
 ## Install apps
 
 
-First, install the desired apps on the device for the target user account(s). This works for both Store and Win32. For Store apps, you must log on as that user for the app to install. For Win32 you can install an app for all users without logging on to the particular account.
+First, install the desired apps on the device for the target user account(s). This works for both Unified Windows Platform (UWP) apps and Windows desktop apps. For UWP apps, you must log on as that user for the app to install. For desktop apps, you can install an app for all users without logging on to the particular account.
 
 ## Use AppLocker to set rules for apps
 

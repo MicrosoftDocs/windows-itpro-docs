@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 06/05/2018
+ms.date: 07/30/2018
 ---
 
 # Policy CSP - System
@@ -1194,34 +1194,5 @@ Footnote:
 
 <!--/Policies-->
 
-<!--StartEAS-->
-## <a href="" id="eas"></a>System policies that can be set using Exchange Active Sync (EAS)  
 
--   [System/AllowStorageCard](#system-allowstoragecard)  
--   [System/TelemetryProxy](#system-telemetryproxy)  
-<!--EndEAS-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>System policies supported by Windows Holographic for Business  
-
--   [System/AllowLocation](#system-allowlocation)  
--   [System/AllowTelemetry](#system-allowtelemetry)  
-<!--EndHoloLens-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>System policies supported by IoT Core  
-
--   [System/AllowEmbeddedMode](#system-allowembeddedmode)  
--   [System/AllowFontProviders](#system-allowfontproviders)  
--   [System/AllowStorageCard](#system-allowstoragecard)  
--   [System/TelemetryProxy](#system-telemetryproxy)  
-<!--EndIoTCore-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>System policies supported by Microsoft Surface Hub  
-
--   [System/AllowFontProviders](#system-allowfontproviders)  
--   [System/AllowLocation](#system-allowlocation)  
--   [System/AllowTelemetry](#system-allowtelemetry)  
-<!--EndSurfaceHub-->
 
