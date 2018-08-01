@@ -1638,6 +1638,13 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr>
+<td style="vertical-align:top">[AssignedAccess CSP](assignedaccess-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following note:</p>
+<ul>
+<li>You can only assign one single app kiosk profile to an individual user account on a device. The single app profile does not support domain groups.</li>
+</ul>
+</td></tr>
+<tr>
 <td style="vertical-align:top">[PassportForWork  CSP](passportforwork-csp.md)</td>
 <td style="vertical-align:top"><p>Added new settings in Windows 10, next major version.</p>
 </td></tr>
@@ -1675,18 +1682,23 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>ApplicationManagement/LaunchAppAfterLogOn</li>
 <li>ApplicationManagement/ScheduleForceRestartForUpdateFailures </li>
+<li>Authentication/EnableFastFirstSignIn</li>
+<li>Authentication/EnableWebSignIn</li>
+<li>Authentication/PreferredAadTenantDomainName</li>
 <li>Defender/CheckForSignaturesBeforeRunningScan</li>
 <li>Defender/DisableCatchupFullScan </li>
 <li>Defender/DisableCatchupQuickScan </li>
 <li>Defender/EnableLowCPUPriority</li>
-<li>Defender/SignatureUpdateFallbackOrder </li>
-<li>Defender/SignatureUpdateFileSharesSources </li>
+<li>Defender/SignatureUpdateFallbackOrder</li>
+<li>Defender/SignatureUpdateFileSharesSources</li>
+<li>DeviceGuard/EnableSystemGuard</li>
 <li>DeviceInstallation/AllowInstallationOfMatchingDeviceIDs</li>
 <li>DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses</li>
 <li>DeviceInstallation/PreventDeviceMetadataFromNetwork</li>
 <li>DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings</li>
 <li>DmaGuard/DeviceEnumerationPolicy</li>
 <li>Experience/AllowClipboardHistory</li>
+<li>Security/RecoveryEnvironmentAuthentication</li>
 <li>TaskManager/AllowEndTask</li>
 <li>WindowsDefenderSecurityCenter/DisableClearTpmButton</li>
 <li>WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning</li>

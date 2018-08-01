@@ -28,7 +28,6 @@
 ### [Credential Guard: Additional mitigations](credential-guard/additional-mitigations.md)
 ### [Credential Guard: Known issues](credential-guard/credential-guard-known-issues.md)
 
-
 ## [Protect Remote Desktop credentials with Remote Credential Guard](remote-credential-guard.md)
 
 ## [Smart Cards](smart-cards/smart-card-windows-smart-card-technical-reference.md)
