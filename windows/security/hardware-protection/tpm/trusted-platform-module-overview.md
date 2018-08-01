@@ -68,14 +68,15 @@ Some things that you can check on the device are:
 -   Is SecureBoot supported and enabled?
 
 > [!NOTE]
-> The device must be running Windows 10 and it must support at least TPM 2.0 in order to utilize Device Health Attestation.
+>  Windows 10 and Windows Server 2016 support Device Health Attestation with TPM 2.0. Support for TPM 1.2 was added beginning with Windows version 1607 (RS1).
 
 ## Supported versions
 
-| TPM version | Windows 10 | Windows Server 2016 |
-|-------------|------------|---------------------|
-| TPM 1.2     | X          | X                   |
-| TPM 2.0     | X          | X                   |
+| TPM version | Windows 10  | Windows Server 2016 |
+|-------------|-------------|---------------------|
+| TPM 1.2     | >= ver 1607 | >= ver 1607         |
+| TPM 2.0     | X           | X                   |
+
 
 ## Related topics
 
