@@ -19,6 +19,9 @@ For a step-by-step guide for setting up devices to run in kiosk mode, see [Set u
 
  In Windows 10, version 1709, the AssignedAccess configuration service provider (CSP) has been expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package. For a step-by-step guide, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps).
 
+> [!Warning]  
+> You can only assign one single app kiosk profile to an individual user account on a device. The single app profile does not support domain groups.
+
 > [!Note]
 > The AssignedAccess CSP is supported in Windows 10 Enterprise and Windows 10 Education. Starting from Windows 10, version 1709 it is also supported in Windows 10 Pro and Windows 10 S. Starting in Windows 10, version 1803, it is also supported in Windows Holographic for Business edition.
 
