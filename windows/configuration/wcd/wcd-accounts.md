@@ -30,7 +30,7 @@ The **Azure > Authority** and **Azure > BPRT** settings for bulk Azure Active Di
 
 - [Instructions for desktop wizard](../provisioning-packages/provision-pcs-for-initial-deployment.md)
 - [Instructions for the mobile wizard](../mobile-devices/provisioning-configure-mobile.md)
-- [Instructions for the kiosk wizard](../setup-kiosk-digital-signage.md#wizard)
+- [Instructions for the kiosk wizard](../kiosk-single-app.md#wizard)
 
 ## ComputerAccount
 
