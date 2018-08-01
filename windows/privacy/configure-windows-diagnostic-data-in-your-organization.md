@@ -379,7 +379,7 @@ Use the [Policy Configuration Service Provider (CSP)](http://msdn.microsoft.com/
 
 Use Registry Editor to manually set the registry level on each device in your organization or you can write a script to edit the registry. If a management policy already exists, such as Group Policy or MDM, it will override this registry setting.
 
-1.  Open Registry Editor, and go to **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\DataCollection**.
+1.  Open Registry Editor, and go to **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection**.
 
 2.  Right-click **DataCollection**, click New, and then click **DWORD (32-bit) Value**.
 
