@@ -10,6 +10,7 @@ author: justinha
 ms.date: 07/31/2018
 ---
 
+
 # Windows Defender System Guard: How hardware-based containers help protect Windows 10
 
 Windows 10 uses containers to isolate sensitive system services and data, enabling them to remain secure even when the operating system has been compromised. 
