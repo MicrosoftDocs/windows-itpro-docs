@@ -72,5 +72,14 @@ If the portal dashboard, and other sections show an error message such as "Data 
 You'll need to whitelist the `securitycenter.windows.com` and all sub-domains under it. For example `*.securitycenter.windows.com`.
 
 
+## Portal communication issues
+If you encounter issues with accessing the portal, missing data, or restricted access to portions of the portal, you'll need to verify that the following urls are whitelisted and open for communciation.
+
+- `*.blob.core.windows.net 
+crl.microsoft.com`
+- `https://*.microsoftonline-p.com`- `https://*.securitycenter.windows.com` - `https://automatediracs-eus-prd.securitycenter.windows.com`- `https://login.microsoftonline.com`- `https://login.windows.net`- `https://onboardingpackagescusprd.blob.core.windows.net`
+- `https://secure.aadcdn.microsoftonline-p.com` 
+- `https://securitycenter.windows.com` - `https://static2.sharepointonline.com` 
+
 ## Related topics
 - [Validate licensing provisioning and complete setup for Windows Defender ATP](licensing-windows-defender-advanced-threat-protection.md)

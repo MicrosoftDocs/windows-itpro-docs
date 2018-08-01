@@ -90,7 +90,7 @@ If a proxy or firewall is blocking all traffic by default and allowing only spec
 
 Service location | Microsoft.com DNS record
 :---|:---
-Common URLs for all locations | ```*.blob.core.windows.net``` <br>```crl.microsoft.com```<br> ```ctldl.windowsupdate.com``` <br>```events.data.microsoft.com```<br>```https://*.microsoftonline-p.com```<br>```https://*.securitycenter.windows.com```<br>```https://automatediracs-eus-prd.securitycenter.windows.com```<br>```https://login.microsoftonline.com```<br>```https://login.windows.net```<br>```https://onboardingpackagescusprd.blob.core.windows.net```<br>```https://secure.aadcdn.microsoftonline-p.com```<br>```https://securitycenter.onmicrosoft.com```<br>```https://securitycenter.windows.com```<br>```https://static2.sharepointonline.com```<br>
+Common URLs for all locations | ```*.blob.core.windows.net``` <br>```crl.microsoft.com```<br> ```ctldl.windowsupdate.com``` <br>```events.data.microsoft.com```
 European Union | ```eu.vortex-win.data.microsoft.com```<br>```eu-v20.events.data.microsoft.com```<br>```winatp-gw-neu.microsoft.com```<br>```winatp-gw-weu.microsoft.com```
 United Kingdom | ```uk.vortex-win.data.microsoft.com``` <br>```uk-v20.events.data.microsoft.com```<br>```winatp-gw-uks.microsoft.com```<br>```winatp-gw-ukw.microsoft.com```
 United States | ```us.vortex-win.data.microsoft.com```<br> ```us-v20.events.data.microsoft.com```<br>```winatp-gw-cus.microsoft.com``` <br>```winatp-gw-eus.microsoft.com```
