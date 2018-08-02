@@ -37,46 +37,45 @@ process](https://docs.microsoft.com/windows/deployment/windows-10-deployment-sce
 
 1.  Use DISM to mount your offline Windows 10 Pro (1803) image.
 
-```
-dism /Mount-image /imagefile:\<path_to_Image_file\> {/Index:\<image_index\> | /Name:\<image_name\>} /MountDir:\<local_target_directory\>
-```
+   ```
+   dism /Mount-image /imagefile:\<path_to_Image_file\> {/Index:\<image_index\> | /Name:\<image_name\>} /MountDir:\<local_target_directory\>
+   ```
 
-1.  Create an unattend.xml answer file, adding the
+2.  Create an unattend.xml answer file, adding the
     amd64_Microsoft_Windows_CodeIntegrity component to Pass 2 offline Servicing
     and setting amd64_Microsoft_Windows_CodeIntegrity\\SkuPolicyRequired to “1”.
     The resulting xml should look like this…
 
-XML Copy
-``` 
-<settings pass=”offlineServicing”>
-  <component name=”Microsoft-Windows-CodeIntegrity” 
-           processorArchitecture=”amd64” 
-           publicKeyToken=”31bf3856ad364e35” 
-           language=”neutral” 
-           versionScope=”nonSxS”
-           xmlns:wcm=”http://schemas.microsoft.com/WMIConfig/2002/State” 
-           xmlns:xsi=”http://www.w3.org/2001/XMLSchema-instance”>
-      <SkuPolicyRequired>1</SkuPolicyRequired>
-  </component>
-</settings>
-```
+   Copy
+   ``` 
+    <settings pass=”offlineServicing”>
+     <component name=”Microsoft-Windows-CodeIntegrity” 
+              processorArchitecture=”amd64” 
+              publicKeyToken=”31bf3856ad364e35” 
+              language=”neutral” 
+              versionScope=”nonSxS”
+              xmlns:wcm=”http://schemas.microsoft.com/WMIConfig/2002/State” 
+              xmlns:xsi=”http://www.w3.org/2001/XMLSchema-instance”>
+         <SkuPolicyRequired>1</SkuPolicyRequired>
+      </component>
+     </settings>
+   ```
+3. Save the answer file in the **Windows\Panther** folder of your mounted image as unattend.xml.
+4. Use DISM to apply the unattend.xml file and enable S Mode:
 
-1.  Save the answer file in the **Windows\Panther** folder of your mounted image as unattend.xml.
-2.  Use DISM to apply the unattend.xml file and enable S Mode:
+   Copy
+      ```
+         dism /image:C:\mount\windows /apply-unattend:C:\mount\windows\windows\panther\unattend.xml
+      ```
 
-Copy
-```
-dism /image:C:\mount\windows /apply-unattend:C:\mount\windows\windows\panther\unattend.xml
-```
->   Note: in the above example, C:\\mount\\ is the local directory used to mount
->   the offline image.
+   >   Note: in the above example, C:\\mount\\ is the local directory used to mount
+   >   the offline image.   
+5. Commit the image changes and unmount the image
 
-1.  Commit the image changes and unmount the image
-
-Copy
-```
-dism /Unmount-image /MountDir:C:\\mount /Commit
-```
+   Copy
+      ```
+         dism /Unmount-image /MountDir:C:\\mount /Commit
+      ```
 >Note: don’t forget the /Commit parameter to ensure you don’t lose your
     changes.
 
@@ -87,39 +86,38 @@ Your Windows 10 Pro (1803) image now has S mode enabled and is ready to deploy t
 Education customers who wish to avoid the additional overhead associated with Windows image creation, customization, and deployment can enable S mode on a per-device basis. Performing the following steps on a Surface Go device will enable S mode on an existing installation of Windows 10 Pro (1803).
 
 1.  Create a bootable WinPE media. See [Create a bootable Windows PE USB
-    drive](http://msdn.microsoft.com/library/windows/hardware/dn938386.aspx) for
-    details.
+    drive](http://msdn.microsoft.com/library/windows/hardware/dn938386.aspx) for details.
 
-1.  Create an unattend.xml answer file, adding the
+2. Create an unattend.xml answer file, adding the
     amd64_Microsoft_Windows_CodeIntegrity component to Pass 2 offline Servicing
     and setting amd64_Microsoft_Windows_CodeIntegrity\\SkuPolicyRequired to “1”. The resulting xml should look like this…
 
-XML Copy
-```
-<settings pass=”offlineServicing”>
-  <component name=”Microsoft-Windows-CodeIntegrity” 
-           processorArchitecture=”amd64” 
-           publicKeyToken=”31bf3856ad364e35” 
-           language=”neutral” 
-           versionScope=”nonSxS”
-           xmlns:wcm=”http://schemas.microsoft.com/WMIConfig/2002/State” 
-           xmlns:xsi=”http://www.w3.org/2001/XMLSchema-instance”>
-      <SkuPolicyRequired>1</SkuPolicyRequired>
-  </component>
-</settings>
-```
+   Copy
+   ```
+      <settings pass=”offlineServicing”>
+        <component name=”Microsoft-Windows-CodeIntegrity” 
+              processorArchitecture=”amd64” 
+              publicKeyToken=”31bf3856ad364e35” 
+              language=”neutral” 
+              versionScope=”nonSxS”
+              xmlns:wcm=”http://schemas.microsoft.com/WMIConfig/2002/State” 
+              xmlns:xsi=”http://www.w3.org/2001/XMLSchema-instance”>
+         <SkuPolicyRequired>1</SkuPolicyRequired>
+     </component>
+   </settings>
+   ```
 
-1.  Attach your bootable WinPE USB drive to a Surface Go device and perform a USB boot (hold the **volume down** button while powering on the device… continue to hold until the Surface logo appears)
-2.  Wait for WinPE to launch a command window     (*X:\\windows\\system32\\cmd.exe*).
-3.  Apply the unattend.xml created in step 2 using DISM.
+3. Attach your bootable WinPE USB drive to a Surface Go device and perform a USB boot (hold the **volume down** button while powering on the device… continue to hold until the Surface logo appears)
+4. Wait for WinPE to launch a command window     (*X:\\windows\\system32\\cmd.exe*).
+5. Apply the unattend.xml created in step 2 using DISM.
 
-Copy
-```
-dism /image:C:\ /apply-unattend:D:\unattend.xml
-```
->   Note: in the above example, C:\\ is the local OS drive (offline). D:\ is where the S mode unattend.xml file (from Step 2) resides.
+   Copy
+   ```
+      dism /image:C:\ /apply-unattend:D:\unattend.xml
+   ```
+   >  Note: in the above example, C:\\ is the local OS drive (offline). D:\ is where the S mode unattend.xml file (from Step 2) resides.
 
-1.  Once DISM has successfully applied the unattend.xml, reboot the Surface Go device.
+6.  Once DISM has successfully applied the unattend.xml, reboot the Surface Go device.
 Upon reboot, you should find your Surface Go device now is now in S mode.
 
 ### Troubleshooting
