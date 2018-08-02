@@ -28,7 +28,7 @@ Users need to have Security administrator or Global admin directory roles.
 
 ## HTTP request
 ```
-POST /testwdatppreview/machineactions/{id}/getPackageUri
+GET /testwdatppreview/machineactions/{id}/getPackageUri
 ```
 
 ## Request headers
