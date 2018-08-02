@@ -176,17 +176,13 @@ Set up the Take a Test app to give online quizzes and high-stakes assessments. D
 
     ![Set up Take a Test app page with "Yes" selected to create an app button. Page also has two checkboxes for additional settings and one text field for the assessment URL.](images/suspc-take-a-test-1807.png)   
 
-2. Select from the advanced settings. The following table lists available settings and their descriptions.  
-
-|Setting |Description |
-|---------|---------|
-|Allow keyboard auto-suggestions    | Allows app to suggest words as the student types on the PC's keyboard.       |
-|Allow teachers to monitor online tests     |  Enables screen capture in the Take a Test app.  |  
-
+2. Select from the advanced settings. Available settings inclue:  
+    * Allow keyboard auto-suggestions: Allows app to suggest words as the student types on the PC's keyboard.  
+    * Allow teachers to monitor online tests: Enables screen capture in the Take a Test app.  
 3. Enter the URL where the test is hosted. When students log in to the Take a Test account, they'll be able to click or enter the link to view the assessment.  
 4. Click **Next**. 
 
-### Add recommended apps  
+### Recommended apps  
 Choose from a list of recommended Microsoft Store apps to install on student PCs. Then click **Next**. After they're assigned, apps are pinned to the student's Start menu.  
 
   ![Add recommended apps screen with 7 icons of recommended apps and selection boxes. Skip button is enabled and Next button is disabled. ](images/suspc-add-recommended-apps-1807.png)  
