@@ -16,6 +16,7 @@ ms.date: 08/01/2018
 The MSIX Packaging Tool (Preview) is now available to install from the Microsoft Store. The MSIX Packaging Tool enables you to repackage your existing win32 applications to the MSIX format. You can run your desktop installers through this tool interactively and obtain an MSIX package that you can install on your machine and upload to the Microsoft Store (coming soon). 
 
 > Prerequisites:
+
 - Participation in the Windows Insider Program  
 - Minimum Windows 10 build 17701 
 - Admin privileges on your PC account 
@@ -58,7 +59,7 @@ Open Feedback Hub. Alternatively, launch the tool and select the **Settings** ge
 - Declaring an installation location field on the Package information page is optional but *recommended*. Make sure that this path matches the installation location of application Installer. 
 - Performing the preparation steps on the **Prepare Computer** page is optional but *highly recommended*.  
 
-## Known bugs
+## Known issues
 1. Signing the package with Password protected certificates does not work. Please use a non-password protected password in the tool, or use Signtool (available from SDK) to sign your package for sideload testing.
 2.	You cannot edit the manifest manually from within the tool. (edit manifest button is disabled). Please use the SDK tools to unpack the MSIX package to edit the manifest manually.
 
