@@ -65,14 +65,14 @@ Run the below
 ```
 $query = 'RegistryEvents | limit 10' # Paste your own query here
 
-$queryServiceUri = "https://api.securitycenter.windows.com/advancedqueries/query"
+$url = "https://api.securitycenter.windows.com/advancedqueries/query"
 $headers = @{ 
 	'Content-Type' = 'application/json'
 	Accept = 'application/json'
 	Authorization = "Bearer $aadToken" 
 }
 $body = ConvertTo-Json -InputObject $query
-$webResponse = Invoke-WebRequest -Method Post -Uri $queryServiceUri -Headers $headers -Body $body -ErrorAction Stop
+$webResponse = Invoke-WebRequest -Method Post -Uri $url -Headers $headers -Body $body -ErrorAction Stop
 $response =  $webResponse | ConvertFrom-Json
 $results = $response.Results
 $schema = $response.Schema
@@ -102,11 +102,12 @@ $results | ConvertTo-Csv -NoTypeInformation | Set-Content file1.csv
 To output the results of the query in JSON format in file file1.json​ do the below:
 
 ```
-$results | ConvertTo-Json | Set-Content "file1.json"
+$results | ConvertTo-Json | Set-Content file1.json
 ```
 
 
 ## Related topic
 - [Advanced Hunting API](run-advanced-query-windows-defender-advanced-threat-protection.md)
+- [Advanced Hunting using Python](run-advanced-query-windows-defender-advanced-threat-protection-sample-python.md)
 - [Schedule Advanced Hunting](run-advanced-query-windows-defender-advanced-threat-protection-sample-ms-flow.md)
 - [Create your app](exposed-apis-windows-defender-advanced-threat-protection-new.md)

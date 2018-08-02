@@ -103,6 +103,7 @@
 #### How to use APIs - Samples
 ##### [Schedule advanced Hunting using Microsoft Flow](run-advanced-query-windows-defender-advanced-threat-protection-sample-ms-flow.md)
 ##### [Advanced Hunting using PowerShell](run-advanced-query-windows-defender-advanced-threat-protection-sample-powershell.md)
+##### [Advanced Hunting using Python](run-advanced-query-windows-defender-advanced-threat-protection-sample-python.md)
 
 
 ### [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)
