@@ -10,7 +10,7 @@ ms.pagetype: edu
 ms.localizationpriority: high
 author: lenewsad
 ms.author: lanewsad
-ms.date: 07/11/2018
+ms.date: 08/02/2018
 ---
 
 # Use the Set up School PCs app  
@@ -120,7 +120,7 @@ a. Click **Work or school account** > **Continue**.
 1. Click **Accept** to allow Set up School PCs to access your account throughout setup.
 2. When your account name appears on the page, as shown in the image below, click **Next.**
 
-      ![Verify that the account you selected shows up](images/suspc_createpackage_signin.png)
+      ![Verify that the account you selected shows up](images/suspc-createpackage-signin-1807.png)
 
 ### Wireless network
 Add and save a wireless network profile to provision on each student PC. Only skip Wi-Fi setup if you have an Ethernet connection.  
@@ -139,29 +139,43 @@ To make sure all device names are unique, Set up School PCs automatically append
 
 
 ### Settings
-Select additional settings to include in the provisioning package. To begin, select the operating system on your student PCs.  
+Select additional settings to include in the provisioning package. To begin, select the operating system on your student PCs. 
 
+![Screenshot of the Current OS version page with the Select OS version menu selected, showing 6 Windows 10 options. All other settings on page are unavailable to select.](images/suspc-current-os-version-1807.png)  
 
-![Configure student PC settings page showing 5 settings with checkboxes and 1 setting with browser button](images/suspc-configure-student-settings-1807.png)
+Setting selections vary based on the OS version you select. The example screenshot below shows the settings that become available when you select **Windows 10 version 1703**. The option to **Enable Autopilot Reset** is not available for this version of Windows 10.  
 
-Setting selections vary based on the OS version you select. The following table lists all possible settings, descriptions, and important notes to consider.  After you've made your selections, click **Next**.   
+![Example screenshot of the Current OS version page, with Windows 10 version 1803 selected. 4 available settings and 1 unavailable setting are shown, and none are selected.](images/suspc-available-student-settings-1807.png)  
 
+> [!NOTE]
+> The [**Time zone** setting](use-set-up-school-pcs-app.md#time-zone), shown in the sidebar of the screenshot below, is not made available to versions of Windows 10 in S mode. If you select a version in S mode, you will not be asked to configure the time zone.  
 
-|Setting  |What happens if I select it? |Note|
-|---------|---------|---------|
-|Remove apps pre-installed by the device manufacturer |  Uninstalls apps that came loaded on the computer by the device's manufacturer. |Adds about 30 minutes to the provisioning process.|
-|Allow local storage (not recommended for shared devices)    | Lets students save files to the Desktop and Documents folder on the Student PC.         |Not recommended if the device will be part of a shared cart or lab.|
-|Optimize device for a single student, instead of a shared cart or lab    |Optimizes the device for use by a single student, rather than many students.       |Recommended option only if the device is not shared with other students in the school. Single-optimized accounts are set to expire, and require a signin, 180 days after setup. This setting increases the maximum PC storage to 100% of the available disk space. In this case, student accounts aren't deleted unless the account has been inactive for 180 days. |
-|Let guests sign in to these PCs     |Allows guests to use student PCs without a school account. |Common to use within a public, shared space, such as a library. Also used when a student loses their password. Adds a **Guest** account to the PC sign-in screen that anyone can sign in to.|
-|Enable Windows Autopilot Reset  | Lets you remotely reset a student’s PC from the lock screen, apply the device’s original settings, and enroll it in device management (Azure AD and MDM).  |Requires Windows 10, version 1709 and WinRE must be enabled on the PC. Setup will fail if both requirements aren't met.|
-|Lock screen background|Change the default screen lock background to a custom image.|Click **Browse** to search for an image file on your computer. Accepted image formats are jpg, jpeg, and png.|  
+The following table describes each setting and lists the applicable Windows 10 versions. To find out if a setting is available in your version of Windows 10, look for an *X* in the setting row and in the version column.   
 
+|Setting  |1703|1709|1803|What happens if I select it? |Note|
+|---------|---------|---------|---------|---------|---------|
+|Remove apps pre-installed by the device manufacturer |X|X|X| Uninstalls apps that came loaded on the computer by the device's manufacturer. |Adds about 30 minutes to the provisioning process.|
+|Allow local storage (not recommended for shared devices)    |X|X|X| Lets students save files to the Desktop and Documents folder on the Student PC.         |Not recommended if the device will be part of a shared cart or lab.|
+|Optimize device for a single student, instead of a shared cart or lab    |X|X|X|Optimizes the device for use by a single student, rather than many students.       |Recommended option only if the device is not shared with other students in the school. Single-optimized accounts are set to expire, and require a signin, 180 days after setup. This setting increases the maximum PC storage to 100% of the available disk space. In this case, student accounts aren't deleted unless the account has been inactive for 180 days. |
+|Let guests sign in to these PCs     |X|X|X|Allows guests to use student PCs without a school account. |Common to use within a public, shared space, such as a library. Also used when a student loses their password. Adds a **Guest** account to the PC sign-in screen that anyone can sign in to.|
+|Enable Autopilot Reset  |Not available|X|X| Lets you remotely reset a student’s PC from the lock screen, apply the device’s original settings, and enroll it in device management (Azure AD and MDM).  |Requires Windows 10, version 1709 and WinRE must be enabled on the PC. Setup will fail if both requirements aren't met.|
+|Lock screen background|X|X|X|Change the default screen lock background to a custom image.|Click **Browse** to search for an image file on your computer. Accepted image formats are jpg, jpeg, and png.|   
 
-### Take a Test app  
+After you've made your selections, click **Next**.   
+
+![Configure student PC settings page showing 5 settings, with two settings selected. Lock screen background image is the default image. Cursor is hovering over the blue Next button.](images/suspc-current-os-version-next-1807.png)  
+
+### Time zone 
+Choose the time zone where your school's PCs are used. This setting ensures that all PCs are provisioned in the same time zone. When you're done, click **Next**.  
+
+![Choose PC time zone page with the time zone menu expanded to show all time zone selections.](images/suspc-time-zone-1807.png)  
+
+### Take a Test  
 Set up the Take a Test app to give online quizzes and high-stakes assessments. During assessments, Windows locks down the student PC so that students can't access anything else on the device.  
 1. Select **Yes** to create a Take a Test button on the sign-in screens of your students' PCs.    
 
     ![Set up Take a Test app page with "Yes" selected to create an app button. Page also has two checkboxes for additional settings and one text field for the assessment URL.](images/suspc_createpackage_takeatestpage_073117.png)   
+
 2. Select from the advanced settings. The following table lists available settings and their descriptions.  
 
 |Setting |Description |
@@ -170,7 +184,6 @@ Set up the Take a Test app to give online quizzes and high-stakes assessments. D
 |Allow teachers to monitor online tests     |  Enables screen capture in the Take a Test app.  |  
 
 3. Enter the URL where the test is hosted. When students log in to the Take a Test account, they'll be able to click or enter the link to view the assessment.  
-
 4. Click **Next**. 
 
 ### Add recommended apps  
@@ -186,23 +199,25 @@ The following table lists the recommended apps you'll see.
 |Minecraft: Education Edition | Free trial|
 |Other apps fit for the classroom |Select from WeDo 2.0 LEGO®, Arduino IDE, Ohbot, Sesavis Visual, and EV3 Programming|   
 
+If you receive an error and are unable to add the selected apps, click **Skip**. Contact your IT admin to get these apps later.
+
 
 ### Summary
 1. Review all of the settings for accuracy and completeness. Check carefully. To make changes to a saved package, you have to start over.  
 2. To make changes now, click any page along the left side of the window.  
 3. When finished, click **Accept**.  
 
-      ![Example image of the Summary screen, showing the user's configurations for Sign-in, Wireless network, Device names, Settings, Take a Test, and Recommended apps. Accept button is active and the page contains three links on the right-hand side to help and support.](images/suspc_createpackage_summary_073117.png)
+      ![Example image of the Summary screen, showing the user's configurations for Sign-in, Wireless network, Device names, Settings, Time zone, Take a Test. Accept button is available and the page contains three links on the right-hand side to help and support.](images/suspc-createpackage-summary-1807.png)
 
 ### Insert USB
 1. Insert a USB drive. The **Save** button will light up when your computer detects the USB.  
 2. Choose your USB drive from the list and click **Save**.
 
-      ![Insert a USB drive now screen with USB drive selection highlighted. Save button is blue and active.](images/suspc_savepackage_insertusb.png)
+      ![Insert a USB drive now screen with USB drive selection highlighted. Save button is blue and active.](images/suspc-savepackage-insertusb-1807.png)
 
 3. When the package is ready, you'll see the filename and package expiration date. You can also click **Add a USB** to save the same provisioning package to another USB drive. When you're done, remove the USB drive and click **Next**. 
 
-      ![Your provisioning package is ready screen with package details, active Next button, and grayed-out Add a USB button.](images/suspc_savepackage_ppkgisready.png)  
+      ![Your provisioning package is ready screen with package filename and expiration date. Shows an active blue, Next button, and a gray Add a USB button.](images/suspc-savepackage-ppkgisready-1807.png)  
 
 ## Run package - Get PCs ready  
 Complete each step on the **Get PCs ready** page to prepare student PCs for set-up. Then click **Next**.  
