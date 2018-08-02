@@ -9,7 +9,7 @@
 |Group Policy  |MDM |Registry |Description |
 |---|:---:|:---:|---|
 |Disabled |0 |0 |Prevented/not allowed |
-|Enabled<br>**(default)** |1 |1 |Allowed |
+|Enabled **(default)** |1 |1 |Allowed |
 --- 
 
 ### ADMX info and settings

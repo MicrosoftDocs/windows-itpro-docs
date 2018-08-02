@@ -9,13 +9,13 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ---
 
-# Start pages 
+# Start pages configuration options
 >*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*
 
 
 Microsoft Edge loads the pages specified in App settings as the default Start pages.  You can configure Microsoft Edge to load either the Start page, New tab page, previously opened pages, or a specific page or pages.  You can also configure Microsoft Edge to prevent users from making changes. 
 
-**Policies**
+## Relevant group policies
 
 - [Configure Open Microsoft Edge With](#configure-open-microsoft-edge-with)
 - [Configure Start Pages](#configure-start-pages)
@@ -35,7 +35,7 @@ Microsoft Edge loads the pages specified in App settings as the default Start pa
 [!INCLUDE [disable-lockdown-of-start-pages-include](../includes/disable-lockdown-of-start-pages-include.md)]
 
 
-## Configuration options
+### Configuration options
 
 | **Configure Open Microsoft Edge With** | **Configure Start Pages** | **Disabled Lockdown of Start Pages** | **Outcome** |
 | --- | --- | --- | --- |

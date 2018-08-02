@@ -18,7 +18,7 @@ ms.date: 07/25/2018
 
 The Microsoft Edge team introduces new Group Policies and MDM Settings for the Windows 10 Insider Preview Build 17713+. The new policies allow IT administrators to enable/disable full-screen mode, printing, favorites bar, saving history. You can also prevent certificate error overrides, and configure New tab page, Home button and startup options, as well as manage extensions.
 
-We are discontinuing the use of the **Configure Favorites** group policy. Use the **[Provision Favorites](available-policies.md#provision-favorites)** instead. 
+We are discontinuing the **Configure Favorites** group policy. Use the **[Provision Favorites](available-policies.md#provision-favorites)** instead. 
 
 
 
@@ -33,7 +33,7 @@ We are discontinuing the use of the **Configure Favorites** group policy. Use th
 | --- | --- | --- | --- |
 | [Allow fullscreen mode](#allow-fullscreen-mode) | New |  [AllowFullscreen](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowfullscreenmode) | New |
 | [Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed](#allow-prelaunch) | New | [AllowPrelaunch](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowprelaunch) | New |
-| [Allow Microsoft Edge to start and load the Start and New Tab page at Windows startup and each time Microsoft Edge is closed](#allow-microsoft-edge-to-start-and-load-the-start-and-new-tab-page-at-windows-startup-and-each-time-microsoft-edge-is-closed) | New | [AllowTabPreloading](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowtabpreloading) | New |
+| [Allow Microsoft Edge to load the Start and New Tab page at Windows startup and each time Microsoft Edge is closed](#allow-microsoft-edge-to-start-and-load-the-start-and-new-tab-page-at-windows-startup-and-each-time-microsoft-edge-is-closed) | New | [AllowTabPreloading](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowtabpreloading) | New |
 | [Allow printing](#allow-printing) | New |  [AllowPrinting](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowprinting) | New |
 | [Allow Saving History](#allow-saving-history) | New | [AllowSavingHistory](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsavinghistory) | New |
 | [Allow sideloading of Extensions](#allow-sideloading-of-extensions) | New | [AllowSideloadingExtensions](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsideloadingofextensions) | New |
@@ -63,7 +63,7 @@ We are discontinuing the use of the **Configure Favorites** group policy. Use th
 ## Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed
 [!INCLUDE [allow-prelaunch-include](includes/allow-prelaunch-include.md)]
 
-## Allow Microsoft Edge to start and load the Start and New Tab page at Windows startup and each time Microsoft Edge is closed
+## Allow Microsoft Edge to load the Start and New Tab page at Windows startup and each time Microsoft Edge is closed
 [!INCLUDE [allow-tab-preloading-include](includes/allow-tab-preloading-include.md)]
 
 ## Allow printing
