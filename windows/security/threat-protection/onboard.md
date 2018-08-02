@@ -13,4 +13,9 @@ ms.localizationpriority: high
 ms.date: 07/01/2018
 ---
 
-# TO do: naama and joey to write this topic
+# Onboard and configure machines to Windows Defender ATP
+
+Onboard to the sensor, configure the indivual capabilities in Windows Defender ATP. 
+
+## In this section 
+table for configure to the parent nodes for each 
