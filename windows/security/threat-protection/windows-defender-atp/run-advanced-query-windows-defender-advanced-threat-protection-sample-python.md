@@ -56,9 +56,9 @@ aadToken = jsonResponse["access_token"]
 ```
 
 where
-- $tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)
-- $appId: ID of your AAD app (the app must have 'Run advanced queries' permission to WDATP)
-- $appSecret: Secret of your AAD app
+- tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)
+- appId: ID of your AAD app (the app must have 'Run advanced queries' permission to WDATP)
+- appSecret: Secret of your AAD app
 
 ## Run query
 
@@ -107,6 +107,8 @@ To iterate over the results do the below:
 for result in results:
 	print(result) # Prints the whole result
 	print(result["EventTime"]) # Prints only the property 'EventTime' from the result
+
+
 ```
 
 
@@ -120,6 +122,7 @@ output = csv.writer(outputFile)
 output.writerow(results[0].keys())
 for result in results:
 	output.writerow(result.values())
+
 outputFile.close()
 ```
 
