@@ -14,7 +14,7 @@
 
 ### Configuration options
 
-For more details about configuring the Start pages, see [Start pages](../group-policies/start-pages-gp.md).
+For more details about configuring the Start pages, see [Start pages configuration options](../group-policies/start-pages-gp.md).
 
 ### ADMX info and settings
 #### ADMX info
