@@ -6,7 +6,7 @@
 
 ## [Windows Defender Advanced Threat Protection](windows-defender-atp/windows-defender-advanced-threat-protection.md)
 
-### [Get started](fake2.md)
+###Get started
 #### [Minimum requirements](windows-defender-atp\minimum-requirements-windows-defender-advanced-threat-protection.md)
 #### [Validate licensing and complete setup](windows-defender-atp\licensing-windows-defender-advanced-threat-protection.md)
 #### [Troubleshoot subscription and portal access issues](windows-defender-atp\troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
@@ -14,7 +14,7 @@
 #### [Data storage and privacy](windows-defender-atp\data-storage-privacy-windows-defender-advanced-threat-protection.md)
 #### [Assign user access to the portal](windows-defender-atp\assign-portal-access-windows-defender-advanced-threat-protection.md)
 
-#### [Evaluate Windows Defender ATP](evaluate.md)
+####Evaluate Windows Defender ATP
 ##### [Evaluate Attack surface reduction - ASR controls](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
 ##### [Evaluate Exploit protection](windows-defender-exploit-guard\evaluate-exploit-protection.md)
 ##### [Evaluate Network Protection](windows-defender-exploit-guard\evaluate-network-protection.md)

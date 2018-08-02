@@ -24,3 +24,5 @@ wdatp allows you to interact with the platform and other systems
 enable to manage and interact with the system
 
 APIs, SIEM connectors, Reporting, powerbi, etc
+
+## In this section 

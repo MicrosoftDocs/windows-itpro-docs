@@ -84,9 +84,6 @@
 ##### [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender AV](../windows-defender-antivirus/command-line-arguments-windows-defender-antivirus.md)
 
 
-### [Configure Automatic investigation and remediation  - needs new content, u can configure through the portal settings + link to the settings page](../configure3.md)
-
-
 ### [Windows Defender Security Center settings](preferences-setup-windows-defender-advanced-threat-protection.md)
 ####General
 ##### [Update data retention settings](data-retention-settings-windows-defender-advanced-threat-protection.md)
