@@ -25,6 +25,7 @@ The MSIX Packaging Tool (Preview) is now available to install from the Microsoft
 ## What's new
 - Moved "Send Feedback" to a top-level page in settings for better visibility.
 - "Settings" saves now persist across app launches.
+- Changing default save location is now supported through Settings menu.
 - All pop ups now have a uniform size.
 
 
@@ -60,6 +61,9 @@ Open Feedback Hub. Alternatively, launch the tool and select the **Settings** ge
 - Performing the preparation steps on the **Prepare Computer** page is optional but *highly recommended*.  
 
 ## Known issues
-1. Signing the package with Password protected certificates does not work. Please use a non-password protected password in the tool, or use Signtool (available from SDK) to sign your package for sideload testing.
-2.	You cannot edit the manifest manually from within the tool. (edit manifest button is disabled). Please use the SDK tools to unpack the MSIX package to edit the manifest manually.
+1. MSIX Packaging Tool Driver will fail to install if Windows Insider flight ring settings do no match the OS build of the conversion environment. Navigate to Settings, Updates & Security, Windows Insider Program to make sure your Insider preview build settings do not need attention. If you see this message click on the Fix me button to log in again. You might have to go to Windows Update page and check for update before settings change takes effect. Then try to run the tool again to download the MSIX Packaging Tool driver. If you are still hitting issues, try changing your flight ring to Canary or Insider Fast, install the latest Windows updates and try again. 
+2. You cannot edit the manifest manually from within the tool. (edit manifest button is disabled). Please use the SDK tools to unpack the MSIX package to edit the manifest manually.
+3. Restarting the machine during application installation is not supported. Please ignore the restart request if possible or pass an argument to the installer to not require a restart.
+4. Signing the package with Password protected certificates does not work. Please use a non-password protected password in the tool, or use Signtool (available from SDK) to sign your package for sideload testing.
+
 
