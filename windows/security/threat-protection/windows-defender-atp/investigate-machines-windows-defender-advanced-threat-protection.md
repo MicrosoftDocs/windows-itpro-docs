@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 05/30/2018
+ms.date: 08/01/2018
 ---
 
 # Investigate machines in the Windows Defender ATP Machines list
@@ -177,6 +177,9 @@ Use the following registry key entry to add a tag on a machine:
 
 -	Registry key: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`
 -	Registry key value (string): Group
+
+>[!NOTE]
+>The device tag is part of the machine information report that’s generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new machine information report. 
 
 
 ### Add machine tags using the portal
