@@ -41,9 +41,7 @@ For example, if you add *exe* and *bat* as file or attachment extension names, t
 
 3. Configure the following extension names and separate extension names with a comma:
    - **File extension names** -  Suspicious files except email attachments will be submitted for additional inspection
-   - **Attachment extension names** - Suspicious email attachments with these extension names will be submitted for additional inspection
-
-
+  
 
 ## Related topics
 - [Manage automation allowed/blocked lists](manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)
