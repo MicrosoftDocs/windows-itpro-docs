@@ -18,7 +18,7 @@ Additionally, Microsoft Edge preloads the Start and New tab pages during Windows
 ## Relevant group policies
 
 - [Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed](#allow-microsoft-edge-to-pre-launch-at-windows-startup-when-the-system-is-idle-and-each-time-microsoft-edge-is-closed)
-- [Allow Microsoft Edge to start and load the Start and New Tab page at Windows startup and each time Microsoft Edge is closed](#allow-microsoft-edge-to-start-and-load-the-start-and-new-tab-page-at-windows-startup-and-each-time-microsoft-edge-is-closed)
+- [Allow Microsoft Edge to load the Start and New Tab page at Windows startup and each time Microsoft Edge is closed](#allow-microsoft-edge-to-start-and-load-the-start-and-new-tab-page-at-windows-startup-and-each-time-microsoft-edge-is-closed)
 
 
 ## Configuration options
@@ -34,5 +34,5 @@ Additionally, Microsoft Edge preloads the Start and New tab pages during Windows
 ## Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed
 [!INCLUDE [allow-prelaunch-include](../includes/allow-prelaunch-include.md)]
 
-## Allow Microsoft Edge to start and load the Start and New Tab page at Windows startup and each time Microsoft Edge is closed
+## Allow Microsoft Edge to load the Start and New Tab page at Windows startup and each time Microsoft Edge is closed
 [!INCLUDE [allow-tab-preloading-include](../includes/allow-tab-preloading-include.md)]
