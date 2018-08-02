@@ -17,7 +17,7 @@ ms.date: 07/30/2018
 
 Surface Go devices are available with both Windows 10 Home in S mode and Windows 10 Pro configurations. Education customers who purchase Surface Go devices with Windows 10 Pro may wish to take advantage of S mode on their Pro devices. These customers can create their own S mode image for Surface Go or enable S mode on a per-device basis.
 
-### Prerequisites
+## Prerequisites
 
 Here are some things you’ll need before attempting any of these procedures:
 
@@ -30,7 +30,7 @@ Here are some things you’ll need before attempting any of these procedures:
 -   [Bootable Windows Preinstall Environment
     (WinPE)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)
 
-### Enabling S Mode – Windows Image (WIM)
+## Enabling S Mode – Windows Image (WIM)
 
 Like enterprise administrators performing large-scale deployment of customized Windows images, education customers can create their own customized Windows images for deployment to multiple classroom devices. An education customer who plans to follow [a traditional image-based deployment
 process](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios#traditional-deployment) using a Windows 10 Pro (1803) image for Surface Go devices can enable S mode as follows:
@@ -81,7 +81,7 @@ process](https://docs.microsoft.com/windows/deployment/windows-10-deployment-sce
 
 Your Windows 10 Pro (1803) image now has S mode enabled and is ready to deploy to Surface Go devices.
 
-### Enabling S Mode – Per Device
+## Enabling S Mode – Per Device
 
 Education customers who wish to avoid the additional overhead associated with Windows image creation, customization, and deployment can enable S mode on a per-device basis. Performing the following steps on a Surface Go device will enable S mode on an existing installation of Windows 10 Pro (1803).
 
@@ -120,23 +120,26 @@ Education customers who wish to avoid the additional overhead associated with Wi
 6.  Once DISM has successfully applied the unattend.xml, reboot the Surface Go device.
 Upon reboot, you should find your Surface Go device now is now in S mode.
 
-### Troubleshooting
+## Troubleshooting
 
 |ISSUE | RESOLUTION |
 |------------------------ |-----------------------|
 |DISM fails to apply the unattend.xml because the OS drive is encrypted. | This is one reason why it’s best to enable S mode before setting up and configuring a device. If the OS drive has already been encrypted, you’ll need to fully decrypt the drive before you can enable S mode. |
 |Unattend.xml has been applied and dism reports success. However, when I boot the device, it’s not in S mode. This can happen when a device was booted to Windows 10 Pro before S mode was enabled. To resolve this issue, do the following: | 1.  **Run** “shutdown.exe -p -f” to force a complete shutdown. <br> 2.  Hold the **vol-up** button while pressing the **power** button to power on the device. Continue to hold **vol-up** until you see the Surface UEFI settings. <br> 3.  Under **Security** find the **Secure Boot** option and disable it. <br> 4.  With SecureBoot disabled choose **exit** -\> **restart now** to exit UEFI settings and reboot the device back to Windows. <br> 5.  Confirm that S mode is now properly enabled. <br> 6.  Once you’ve confirmed S mode, you should re-enable Secure Boot… repeat the above steps, choosing to **Enable** Secure Boot from the UEFI securitysettings.
     
-### Additional Info
+## Additional Info
 
-[Service a Windows image using DISM](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+[Windows 10 deployment scenarios](https://docs.microsoft.com/en-us/windows/deployment/windows-10-deployment-scenarios)
+
+[Windows 10 deployment scenarios and tools](https://docs.microsoft.com/en-us/windows/deployment/windows-deployment-scenarios-and-tools)
+
+[Download and install the Windows ADK](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install)
+
+[Windows ADK for Windows 10 scenarios for IT Pros](https://docs.microsoft.com/en-us/windows/deployment/windows-adk-scenarios-for-it-pros)
+
+[Modify a Windows Image Using DISM](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
 
 [Service a Windows Image Using DISM](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/service-a-windows-image-using-dism)
 
-[Deployment Image Servicing and Management (DISM.exe)](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
+[DISM Image Management Command-Line Options](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
 
-[Windows Assessment and Deployment Kit ](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#winADK)
-
-[Windows Deployment scenarios and tools](https://docs.microsoft.com/en-us/windows/deployment/windows-deployment-scenarios-and-tools)
-
-[Windows 10 Deployment scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)
