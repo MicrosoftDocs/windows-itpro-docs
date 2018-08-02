@@ -364,7 +364,7 @@ Added in Windows 10, next major version. Specifies if an app is nonremovable by 
 
 This setting allows the IT admin to set an app to be nonremovable, or unable to be uninstalled by a user. This is useful in enterprise and education scenarios, where the IT admin might want to ensure that everyone always has certain apps and they won't be removed accidentally. This is also useful when there are multiple users per device, and you want to ensure that one user doesn’t remove it for all users.  
 
-This setting requires admin permission. This can only be set per device, not per user. You can query the setting using AppInvetoryQuery or AppInventoryResults.
+NonRemovable requires admin permission. This can only be set per device, not per user. You can query the setting using AppInventoryQuery or AppInventoryResults.
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
@@ -382,12 +382,12 @@ Add an app to the nonremovable app policy list
             <CmdID>1</CmdID> 
             <Item> 
                 <Target> 
-                    <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Test123/NonRemovable</LocURI> 
+                    <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI> 
                 </Target> 
                 <Meta> 
                     <Format xmlns="syncml:metinf">int</Format> 
                 </Meta> 
-                <Data>0</Data> 
+                <Data>1</Data> 
             </Item> 
         </Add> 
         <Final/> 
@@ -403,7 +403,7 @@ Delete an app from the nonremovable app policy list
             <CmdID>1</CmdID> 
                 <Item> 
                     <Target> 
-                        <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Test123/NonRemovable</LocURI> 
+                        <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI> 
                     </Target> 
                 </Item> 
         </Delete> 
@@ -412,7 +412,7 @@ Delete an app from the nonremovable app policy list
 </SyncML> 
 ```
 
-Get list of apps in the nonremovable app policy list 
+Get the status for a particular app  
 ```
 <SyncML xmlns="SYNCML:SYNCML1.2"> 
     <SyncBody> 
@@ -420,7 +420,7 @@ Get list of apps in the nonremovable app policy list
             <CmdID>1</CmdID> 
             <Item> 
                 <Target> 
-                    <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Test123/NonRemovable</LocURI> 
+                    <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI> 
                 </Target> 
             </Item> 
         </Get> 
@@ -429,9 +429,9 @@ Get list of apps in the nonremovable app policy list
 </SyncML> 
 ```
 
-Replace an app in the nonremovable app policy list 
-Data 0 = app is not in the app policy list 
-Data 1 = app is in the app policy list 
+Replace an app in the nonremovable app policy list  
+Data 0 = app is not in the app policy list  
+Data 1 = app is in the app policy list
 ```
 <SyncML xmlns="SYNCML:SYNCML1.2"> 
     <SyncBody> 
@@ -439,7 +439,7 @@ Data 1 = app is in the app policy list
             <CmdID>1</CmdID> 
             <Item> 
                 <Target> 
-                    <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Test123/NonRemovable</LocURI> 
+                    <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/NonRemovable</LocURI> 
                 </Target> 
                 <Meta> 
                     <Format xmlns="syncml:metinf">int</Format> 

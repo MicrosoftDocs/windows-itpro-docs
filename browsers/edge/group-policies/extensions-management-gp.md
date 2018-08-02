@@ -15,7 +15,7 @@ ms.sitesec: library
 # Extensions management
 >*Supported versions: Microsoft Edge on Windows 10*  
 
-I need a description here, maybe with scenarios 
+
 
 ## Allow Extensions 
 [!INCLUDE [allow-extensions-include](../includes/allow-extensions-include.md)] 
