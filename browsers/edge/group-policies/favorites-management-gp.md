@@ -15,7 +15,7 @@ ms.sitesec: library
 # Favorites management
 >*Supported versions: Microsoft Edge on Windows 10*  
 
-I need a description here, maybe with scenarios
+
 
 
 ## Configure Favorites Bar 

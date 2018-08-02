@@ -15,7 +15,7 @@ ms.sitesec: library
 # Adobe settings
 >*Supported versions: Microsoft Edge on Windows 10*  
 
-I need a description here, maybe with scenarios
+
 
 ## Allow Adobe Flash 
 [!INCLUDE [allow-adobe-flash-include.md](../includes/allow-adobe-flash-include.md)]

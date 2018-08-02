@@ -15,7 +15,7 @@ ms.sitesec: library
 # Developer settings
 >*Supported versions: Microsoft Edge on Windows 10*  
 
-I need a description here, maybe with scenarios
+
 
 ## Allow Developer Tools 
 [!INCLUDE [allow-dev-tools-include](../includes/allow-dev-tools-include.md)] 

@@ -15,7 +15,7 @@ ms.sitesec: library
 # Address bar settings
 >*Supported versions: Microsoft Edge on Windows 10*  
 
-I need a description here
+
 
 
 ## Allow Address bar drop-down list suggestions
