@@ -41,7 +41,7 @@ Use to add items to the Favorites Bar in Microsoft Edge.
 
 Setting | Description
 --- | ---
-ItemFavIconFile |
+ItemFavIconFile | Enter the path to the icon file, local to the device where the browser will run. The icon file must be added to the device to the specified path.
 ItemName | Enter the name for the item, which will be displayed on the Favorites Bar.
 ItemUrl | Enter the target URL for the item.
 

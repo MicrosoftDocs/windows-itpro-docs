@@ -21,3 +21,5 @@ Use KioskBrowser settings to configure Internet sharing.
 | --- | :---: | :---: | :---: | :---: | :---: |
 | All settings |  |    |  |  | X |
 
+>[!NOTE]
+>To configure Kiosk Browser settings for desktop editions, go to [Policies > KioskBrowser](wcd-policies.md#kioskbrowser).
