@@ -1,15 +1,14 @@
 ---
 description: Microsoft Edge now has new Group Policies and MDM Settings for IT administrators to configure Microsoft Edge. The new policies allow you to enable/disabled full-screen mode, printing, favorites bar, saving history. You can also prevent certificate error overrides, and configure New tab page, Home button and startup options, as well as manage extensions.
 ms.assetid: 
-author: shortpatti
-ms.author: pashort
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
 title: New Microsoft Edge Group Policies and MDM settings
-ms.localizationpriority: 
-ms.date: 07/25/2018 
 ms.localizationpriority: medium
+author: shortpatti
+ms.author: pashort
+ms.date: 07/25/2018 
 ---
 
 # New Microsoft Edge Group Policies and MDM settings (Preview)
@@ -27,7 +26,7 @@ We are discontinuing the **Configure Favorites** group policy. Use the **[Provis
 >> 
 >>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**_Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\_**
 <p>
-<!-- add links to the below policies -->
+<!-- links to the policies -->
 
 
 | **Group Policy** | **New/update?** | **MDM Setting** | **New/update?** |
@@ -75,7 +74,6 @@ We are discontinuing the **Configure Favorites** group policy. Use the **[Provis
 
 ## Allow sideloading of Extensions
 [!INCLUDE [allow-sideloading-extensions-include.md](includes/allow-sideloading-extensions-include.md)]
-
 
 ## Configure collection of browsing data for Microsoft 365 Analytics
 [!INCLUDE [configure-browser-telemetry-for-m365-analytics-include](includes/configure-browser-telemetry-for-m365-analytics-include.md)]
