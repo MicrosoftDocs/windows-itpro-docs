@@ -146,7 +146,11 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
 
 ### Using PowerShell 
 
-Refer to [Get token](run-advanced-query-windows-defender-advanced-threat-protection-sample-powershell.md#get-token) section in the Advanced Hunting document
+Refer to [Get token using PowerShell](run-advanced-query-windows-defender-advanced-threat-protection-sample-powershell.md#get-token)
+
+### Using Python
+
+Refer to [Get token using Python](run-advanced-query-windows-defender-advanced-threat-protection-sample-python.md#get-token)
 
 ### Using Curl
 
