@@ -13,7 +13,7 @@ ms.author:
 ms.date: 07/30/2018
 ---
 
-# Enabling S mode on Surface Go devices with Windows 10 Pro for education
+# Surface Go for Education - Enabling S mode
 
 Surface Go devices are available with both Windows 10 Home in S mode and Windows 10 Pro configurations. Education customers who purchase Surface Go devices with Windows 10 Pro may wish to take advantage of S mode on their Pro devices. These customers can create their own S mode image for Surface Go or enable S mode on a per-device basis.
 
