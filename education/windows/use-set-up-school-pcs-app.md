@@ -174,7 +174,7 @@ Choose the time zone where your school's PCs are used. This setting ensures that
 Set up the Take a Test app to give online quizzes and high-stakes assessments. During assessments, Windows locks down the student PC so that students can't access anything else on the device.  
 1. Select **Yes** to create a Take a Test button on the sign-in screens of your students' PCs.    
 
-    ![Set up Take a Test app page with "Yes" selected to create an app button. Page also has two checkboxes for additional settings and one text field for the assessment URL.](images/suspc_createpackage_takeatestpage_073117.png)   
+    ![Set up Take a Test app page with "Yes" selected to create an app button. Page also has two checkboxes for additional settings and one text field for the assessment URL.](images/suspc-take-a-test-1807.png)   
 
 2. Select from the advanced settings. The following table lists available settings and their descriptions.  
 
