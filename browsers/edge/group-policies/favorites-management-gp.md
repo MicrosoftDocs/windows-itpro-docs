@@ -1,8 +1,8 @@
 ---
 title: Microsoft Edge - Favorites management
-description: 115-145 characters including spaces. Edit the intro para describing article intent to fit here. This abstract displays in the search result.
+description: 
 services: 
-keywords: Don’t add or edit keywords without consulting your SEO champ.
+keywords: 
 author: shortpatti
 ms.author: pashort
 ms.date: 07/25/2018
@@ -15,7 +15,7 @@ ms.sitesec: library
 # Favorites management
 >*Supported versions: Microsoft Edge on Windows 10*  
 
-I need a description here, maybe with scenarios
+
 
 
 ## Configure Favorites Bar 
@@ -28,4 +28,4 @@ I need a description here, maybe with scenarios
 [!INCLUDE [prevent-changes-to-favorites-include](../includes/prevent-changes-to-favorites-include.md)] 
 
 ## Provision Favorites 
-[!INCLUDE [provision-favorites-shortdesc](../shortdesc/provision-favorites-shortdesc.md)] 
+[!INCLUDE [provision-favorites-include](../includes/provision-favorites-include.md)]
