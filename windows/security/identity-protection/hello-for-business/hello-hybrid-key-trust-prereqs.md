@@ -23,7 +23,7 @@ Hybrid environments are distributed systems that enable organizations to use on-
 
 The distributed systems on which these technologies were built involved several pieces of on-premises and cloud infrastructure.  High-level pieces of the infrastructure include:
 * [Directories](#directories)
-* [Public Key Infrastucture](#public-key-infastructure)
+* [Public Key Infrastructure](#public-key-infrastructure)
 * [Directory Synchronization](#directory-synchronization)
 * [Federation](#federation)
 * [MultiFactor Authetication](#multifactor-authentication)
@@ -32,7 +32,7 @@ The distributed systems on which these technologies were built involved several 
 ## Directories ##
 Hybrid Windows Hello for Business needs two directories: on-premises Active Directory and a cloud Azure Active Directory.  The minimum required domain functional and forest functional levels for Windows Hello for Business deployment is Windows Server 2008 R2. The 
 
-A hybrid Windows Hello for Busines deployment needs an Azure Active Directory subscription.  The hybrid key trust deployment, does not need a premium Azure Active Directory subscription.
+A hybrid Windows Hello for Business deployment needs an Azure Active Directory subscription.  The hybrid key trust deployment, does not need a premium Azure Active Directory subscription.
 
 You can deploy Windows Hello for Business in any environment with Windows Server 2008 R2 or later domain controllers.  However, the key trust deployment needs an ***adequate*** number of Windows Server 2016 domain controllers at each site where users authenticate using Windows Hello for Business.  Read the [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
  
@@ -52,13 +52,13 @@ Review these requirements and those from the Windows Hello for Business planning
 ## Public Key Infrastructure ##
 The Windows Hello for Business deployment depends on an enterprise public key infrastructure as trust anchor for authentication. Domain controllers for hybrid deployments need a certificate in order for Windows 10 devices to trust the domain controller.
 
-Key trust deployments do not need client issued certificates for on-premises authentication.  Active Directory user accounts are automatically configured for public key mapping by Azure AD Connect synchronizing the public key of the registered Windows Hello for Business credential to an attribute on the user's Active Diretory object.
+Key trust deployments do not need client issued certificates for on-premises authentication.  Active Directory user accounts are automatically configured for public key mapping by Azure AD Connect synchronizing the public key of the registered Windows Hello for Business credential to an attribute on the user's Active Directory object.
 
 The minimum required enterprise certificate authority that can be used with Windows Hello for Business is Windows Server 2012.
 
 > [!IMPORTANT]
 > For Azure AD joined device to authenticate to and use on-premises resources, ensure you:
-> * Install the root certificate authority certificate for your organization in the user's trusted root certifcate store.
+> * Install the root certificate authority certificate for your organization in the user's trusted root certificate store.
 > * Publish your certificate revocation list to a location that is available to Azure AD joined devices, such as a web-based url.
 
 ### Section Review
@@ -99,12 +99,12 @@ Hybrid Windows Hello for Business deployments can use Azure’s Multifactor Auth
 > [!div class="checklist"]
 > * Azure MFA Service
 > * Windows Server 2016 AD FS and Azure (optional, if federated)
-> * Windows Server 2016 AD FS and third party MFA Adapter (optional, if federated)
+> * Windows Server 2016 AD FS and third-party MFA Adapter (optional, if federated)
 
 <br>
 
 ## Device Registration ##
-Organizations wanting to deploy hybrid key trust need thier domain joined devices to register to Azure Active Directory.  Just as a computer has an identity in Active Directory, that same computer has an identity in the cloud.  This ensures that only approved computers are used with that Azure Active Directory.  Each computer registers its identity in Azure Active Directory. 
+Organizations wanting to deploy hybrid key trust need their domain joined devices to register to Azure Active Directory.  Just as a computer has an identity in Active Directory, that same computer has an identity in the cloud.  This ensures that only approved computers are used with that Azure Active Directory.  Each computer registers its identity in Azure Active Directory. 
  
 
 ### Section Checklist ###
@@ -114,11 +114,11 @@ Organizations wanting to deploy hybrid key trust need thier domain joined device
 <br>
 
 ### Next Steps ###
-Follow the Windows Hello for Business hybrid key trust deployment guide.  For proof-of-concepts, labs, and new installations, choose the **New Installation Basline**.  
+Follow the Windows Hello for Business hybrid key trust deployment guide.  For proof-of-concepts, labs, and new installations, choose the **New Installation Baseline**.  
 
-For environments transitioning from on-premises to hybrid, start with  **Configure Azure Directory Syncrhonization**. 
+For environments transitioning from on-premises to hybrid, start with  **Configure Azure Directory Synchronization**. 
 
-For federerated and non-federated environments, start with **Configure Windows Hello for Business settings**.
+For federated and non-federated environments, start with **Configure Windows Hello for Business settings**.
 
 > [!div class="op_single_selector"]
 > - [New Installation Baseline](hello-hybrid-key-new-install.md)
@@ -131,7 +131,7 @@ For federerated and non-federated environments, start with **Configure Windows H
 
 ## Follow the Windows Hello for Business hybrid key trust deployment guide
 1. [Overview](hello-hybrid-key-trust.md)
-2. Prerequistes (*You are here*)
+2. Prerequisites (*You are here*)
 3. [New Installation Baseline](hello-hybrid-key-new-install.md)
 4. [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md)
 5. [Configure Azure Device Registration](hello-hybrid-key-trust-devreg.md)
