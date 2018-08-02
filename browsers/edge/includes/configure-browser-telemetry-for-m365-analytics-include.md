@@ -4,23 +4,24 @@
 
 [!INCLUDE [configure-browser-telemetry-for-m365-analytics-shortdesc](../shortdesc/configure-browser-telemetry-for-m365-analytics-shortdesc.md)]
 
-### Supported values
-
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |No data collected or sent |![Most restricted value](../images/check-gn.png) |
-|Enabled |1 |1 |Send intranet history only | |
-|Enabled |2 |2 |Send Internet history only | |
-|Enabled |3 |3 |Send both intranet and Internet history | |
----
-
->>You can find this setting in the following location of the Group Policy Editor:
->> 
->>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**_Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection and Preview Builds\\_**
-
 >[!IMPORTANT]
 >For this policy to work, enable the Allow Telemetry policy with the _Enhanced_ option and enable the Configure the Commercial ID policy by providing the Commercial ID.
 
+### Supported values
+
+>[!div class="mx-tableFixed"]
+>|Group Policy  |MDM |Registry |Description |Most restricted |
+>|---|:---:|:---:|---|:---:|
+>|Disabled or not configured<br>**(default)** |0 |0 |No data collected or sent |![Most restricted value](../images/check-gn.png) |
+>|Enabled |1 |1 |Send intranet history only | |
+>|Enabled |2 |2 |Send Internet history only | |
+>|Enabled |3 |3 |Send both intranet and Internet history | |
+---
+
+>>You can find this policy and the related policies in the following location of the Group Policy Editor:
+>> 
+>>**_Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection and Preview Builds\\_**
+>><ul><li>Allow Telemetry = Enabled, _Enhanced_</li><li>Configure the Commercial ID = String of the Commercial ID</li><li>Configure collection of browsing data for Microsoft 365 Analytics</li></ul> 
 
 ### ADMX info and settings
 #### ADMX info
