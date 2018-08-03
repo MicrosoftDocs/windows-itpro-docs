@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerms
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 07/30/2018
 ms.author: jdecker
 ---
