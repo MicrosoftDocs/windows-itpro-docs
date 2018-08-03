@@ -10,7 +10,7 @@ ms.pagetype: edu
 ms.localizationpriority: high
 author: lenewsad
 ms.author: lanewsad
-ms.date: 08/02/2018
+ms.date: 08/03/2018
 ---
 
 # Use the Set up School PCs app  
@@ -46,7 +46,7 @@ USB drives are, by default, FAT32-formatted, and are unable to save more than 4 
 5. Set **File system** to **NTFS**.
 6. Click **Start** to format the drive.
 
-### Prepare existing PC account for new setup
+### Prepare existing PC account for new setup  
 Apply new packages to factory reset or new PCs. If you apply it to a PC that's already set up, you may lose the accounts and data.
 
 If a PC has already been set up, and you want to apply a new package, reset the PC to a clean state.
@@ -68,12 +68,12 @@ This section offers recommendations to prepare you for the best possible setup e
 ### Run the same Windows 10 build on the admin device and the student PCs  
 We recommend you run the IT administrator or technical teacher's device on the same Windows 10 build as the student PCs.
 
-### Student PCs should meet OS requirements for the app
-Check the minimum OS requirements in the Set up School PCs app. We recommend using the latest Set up School PCs app along with the latest Windows 10 images on the student PCs.  
+### Student PCs should meet OS requirements for the app  
+Check the OS requirements in the Set up School PCs app. We recommend using the latest Set up School PCs app along with the latest Windows 10 images on the student PCs.  
 
 To check the app's OS requirements, go to the Microsoft Store and locate the Set up School PCs app. In the app's description, go to **System Requirements > OS**.
 
-### Use app on a PC that is connected to your school's network
+### Use app on a PC that is connected to your school's network  
 We recommend that you run the Set up School PCs app on a computer that's connected to your school's network. That way the app can gather accurate information about your school's wireless networks and cloud subscriptions. If it's not connected, you'll need to enter the information manually.
 
  > [!NOTE]  
@@ -82,7 +82,7 @@ We recommend that you run the Set up School PCs app on a computer that's connect
  >* Open Wi-Fi networks that require the user to accept Terms of Use.
 
 ### Run app on an open network or network that requires a basic password  
-Don't use Set up School PCs over a certification-based network, or one where you have to enter credentials in a browser. If you need to set up numerous devices over Wi-Fi, make sure that your network configuration can support it.
+Don't use Set up School PCs over a certification-based network, or one where you have to enter credentials in a browser. If you need to set up many devices over Wi-Fi, make sure that your network configuration can support it.
 
 We recommend that you:  
 * Configure your DHCP so at least 200 IP addresses are available for your devices. Having available IP addresses will allow you to set up many devices simultaneously.  
@@ -92,16 +92,17 @@ We recommend that you:
 > Only use the provisioning package on PCs that you want to configure and lock down for students. After you apply the provisioning package to a student PC, the PC must be reset to remove the settings.  
 
 ### Use an additional USB drive  
-You can set up PCs at the same time. Just save the provisioning package to an additional USB drive. Then plug them in at the same time during deployment.  
+To set up more than one PC at the same time, save the provisioning package to additional USB drives. Then plug the USBs in at the same time during setup. 
 
-### Limit changes to school-optimized settings
+### Limit changes to school-optimized settings  
 
-We strongly recommend that you avoid changing preset policies. Changes can slow down setup, performance, and sign-in time.  
-## Create the provisioning package
+We strongly recommend that you avoid changing preset policies. Changes can slow down setup, performance, and the time it takes to sign in.  
+
+## Create the provisioning package  
 
 The **Set up School PCs** app guides you through the configuration choices for the student PCs.  
 
-### Sign-in
+### Sign in  
 1. Open the Set up School PCs app on your PC and click **Get started**.  
     
       ![Launch the Set up School PCs app](images/suspc_getstarted_050817.png)  
@@ -123,7 +124,7 @@ a. Click **Work or school account** > **Continue**.
       ![Verify that the account you selected shows up](images/suspc-createpackage-signin-1807.png)
 
 ### Wireless network
-Add and save a wireless network profile to provision on each student PC. Only skip Wi-Fi setup if you have an Ethernet connection.  
+Add and save the wireless network profile that you want student PCs to connect to. Only skip Wi-Fi setup if you have an Ethernet connection.  
 
 Select your school's Wi-Fi network from the list of available wireless networks, or click **Add a wireless network** to manually configure it. Then click **Next.** 
 
@@ -246,8 +247,8 @@ When used in context of the Set up School PCs app, the word *package* refers to 
 
      ![Screen with message telling user to remove the USB drive.](images/suspc_setup_removemediamessage.png)  
 
-4. If you did not set up the package to do Azure AD Join, go through the rest of the Windows device setup experience.  If you did configure the package for Azure AD Join, the computer is ready for use and no further configurations are required.  
+4. If you didn't set up the package with Azure AD Join, continue the Windows device setup experience.  If you did configure the package with Azure AD Join, the computer is ready for use and no further configurations are required.  
 
-      If successful, you'll see a setup complete message. The PCs start up on the lock screen with your school's custom background. Upon first use, students and teachers will be able to connect to your school's network and resources.
+      If successful, you'll see a setup complete message. The PCs start up on the lock screen, with your school's custom background. Upon first use, students and teachers can connect to your school's network and resources.
 
 
