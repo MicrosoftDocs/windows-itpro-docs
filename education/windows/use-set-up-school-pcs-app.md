@@ -7,7 +7,7 @@ ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: lenewsad
 ms.author: lanewsad
 ms.date: 08/03/2018

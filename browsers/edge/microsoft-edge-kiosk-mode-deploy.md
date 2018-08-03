@@ -6,7 +6,7 @@ ms.author: pashort
 ms.prod: edge
 ms.sitesec: library
 title: Deploy Microsoft Edge kiosk mode
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 07/25/2018 
 ---
 
