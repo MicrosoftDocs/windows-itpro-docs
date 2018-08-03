@@ -4,6 +4,7 @@
 
 [!INCLUDE [configure-browser-telemetry-for-m365-analytics-shortdesc](../shortdesc/configure-browser-telemetry-for-m365-analytics-shortdesc.md)]
 
+
 >[!IMPORTANT]
 >For this policy to work, enable the Allow Telemetry policy with the _Enhanced_ option and enable the Configure the Commercial ID policy by providing the Commercial ID.
 
@@ -22,6 +23,8 @@
 >> 
 >>**_Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection and Preview Builds\\_**
 >><ul><li>Allow Telemetry = Enabled, _Enhanced_</li><li>Configure the Commercial ID = String of the Commercial ID</li><li>Configure collection of browsing data for Microsoft 365 Analytics</li></ul> 
+
+
 
 ### ADMX info and settings
 #### ADMX info
@@ -44,7 +47,7 @@
 - **Value type:** REG_DWORD
 
 ### Related policies
-- Allow Telemetry: Determine the highest level of Windows diagnostic data sent to Microsoft. When you enable this policy, users can change their Telemetry Settings but prevent users from choosing a higher level than configured.  
+- Allow Telemetry: Allows Microsoft to run diagnostics on the device and troubleshoot. The default setting for Allow Telemetry is set to _Enhanced_  (2 for MDM). 
 
 - Configure the Commercial ID: Define the Commercial ID used to associate the device's telemetry data as belonging to a given organization.
 

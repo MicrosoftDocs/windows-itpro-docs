@@ -6,10 +6,11 @@
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Prevented/not allowed. Users can configure the _Clear browsing data_ option in Settings. | |
-|Enabled |1 |1 |Allowed. Clear the browsing data upon exit automatically. |![Most restricted value](../images/check-gn.png) |
+>[!div class="mx-tableFixed"]
+>|Group Policy  |MDM |Registry |Description |Most restricted |
+>|---|:---:|:---:|---|:---:|
+>|Disabled or not configured **(default)** |0 |0 |Prevented/not allowed. Users can configure the _Clear browsing data_ option in Settings. | |
+>|Enabled |1 |1 |Allowed. Clear the browsing data upon exit automatically. |![Most restricted value](../images/check-gn.png) |
 ---
 
 

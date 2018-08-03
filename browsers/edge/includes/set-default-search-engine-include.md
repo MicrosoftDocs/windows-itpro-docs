@@ -13,20 +13,10 @@
 |Enabled |1 |1 |Microsoft Edge uses the policy-set search engine specified in the OpenSearch XML file. Users cannot change the default search engine.<p><p>Specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](https://docs.microsoft.com/en-us/microsoft-edge/dev-guide/browser/search-provider-discovery). Use this format to specify the link you want to add.<p><p>If you want users to use the default Microsoft Edge settings for each market set the string to **EDGEDEFAULT**.<p><p>If you would like users to use Microsoft Bing as the default search engine set the string to **EDGEBING**. |![Most restricted value](../images/check-gn.png) |
 ---
 
+
 ### Configuration options
 
-| **Set default search engine** | **Allow search engine customization** | **Configure additional search engines** | **Outcome** |
-| --- | --- | --- | --- |
-| Not configured (default) | Disabled | Disabled or not configured (default) | Default search engine specified in App settings. Users cannot make changes. |
-| Not configured (default) | Enabled or not configured (default) | Disabled or not configured (default) | Default search engine specified in App settings. Users can make changes to the default search engine at any time. |
-| Disabled | Disabled | Disabled or not configured (default) | Users cannot add, remove, or change any of the search engines, but they can set a default search engine. |
-| Disabled | Enabled or not configured (default) | Disabled or not configured (default) | Users can add new search engines or change the default search engine, in Settings. |
-| Enabled | Disabled | Disabled or not configured (default) | Set the default search engine preventing users from making changes. |
-| Enabled | Enabled or not configured (default) | Disabled or not configured (default) | Set the default search engine and allow users to add search engines or make changes. |
----
-
-![Set default search engine configurations](../images/set-default-search-engine-v4-sm.png)
-
+For more details about configuring the search engine, see [Search engine customization](../group-policies/search-engine-customization-gp.md).
 
 ### ADMX info and settings
 #### ADMX info

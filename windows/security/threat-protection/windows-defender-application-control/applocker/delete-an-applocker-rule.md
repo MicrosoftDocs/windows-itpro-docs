@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
-ms.date: 09/21/2017
+ms.date: 08/02/2018
 ---
 
 # Delete an AppLocker rule
@@ -43,6 +43,7 @@ Use the Set-AppLockerPolicy cmdlet with the -XMLPolicy parameter, using an .XML 
       <RuleCollection Type="Msi" EnforcementMode="NotConfigured" />
       <RuleCollection Type="Script" EnforcementMode="NotConfigured" />
       <RuleCollection Type="Dll" EnforcementMode="NotConfigured" />
+      <RuleCollection Type="Appx" EnforcementMode="NotConfigured" />
     </AppLockerPolicy>
 
 To use the Set-AppLockerPolicy cmdlet, first import the Applocker modules:

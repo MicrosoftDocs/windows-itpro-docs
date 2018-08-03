@@ -18,7 +18,7 @@
 
 ### Configuration options
 
-For more details about configuring the different Home button options, see [Home button](../group-policies/home-button-gp.md).
+For more details about configuring the different Home button options, see [Home button configuration options](../group-policies/home-button-gp.md).
 
 >[!TIP]
 >If you want to make changes to this policy:<ol><li>Enable the **Unlock Home Button** policy.</li><li>Make changes to the **Configure Home button** policy or **Set Home button URL** policy.</li><li>Disable the **Unlock Home Button** policy.</li></ol>
