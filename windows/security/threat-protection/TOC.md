@@ -15,13 +15,15 @@
 #### [Assign user access to the portal](windows-defender-atp\assign-portal-access-windows-defender-advanced-threat-protection.md)
 
 ####Evaluate Windows Defender ATP
-##### [Hardware-based isolation](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
 ##### [ASR](windows-defender-exploit-guard\evaluate-windows-defender-exploit-guard.md)
+###### [Hardware-based isolation](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
+###### [Application control](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 ###### [Exploit protection](windows-defender-exploit-guard\evaluate-exploit-protection.md)
 ###### [Network Protection](windows-defender-exploit-guard\evaluate-network-protection.md)
 ###### [Controlled folder access](windows-defender-exploit-guard\evaluate-controlled-folder-access.md)
 ###### [ASR controls](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
 ###### [Auditing mode](windows-defender-exploit-guard\audit-windows-defender-exploit-guard.md)
+###### [Network firewall](windows-firewall\evaluating-windows-firewall-with-advanced-security-design-examples.md)
 ##### [Next gen protection](windows-defender-antivirus\evaluate-windows-defender-antivirus.md)
 
 
@@ -149,6 +151,7 @@
 
 
 ### [Attack surface reduction - Chris, Amitai, Justin](windows-defender-exploit-guard\windows-defender-exploit-guard.md)
+
 #### [Hardware-based isolation](windows-defender-application-guard\wd-app-guard-overview.md)
 ##### [Frequently Asked Questions - Windows Defender Application Guard](windows-defender-application-guard/faq-wd-app-guard.md)
 
@@ -407,7 +410,8 @@
 
 
 
-## Other security features
+## More Windows 10 security
+
 ### [The Windows Security app](windows-defender-security-center/windows-defender-security-center.md)
 #### [Customize the Windows Security app for your organization](windows-defender-security-center/wdsc-customize-contact-information.md)
 #### [Hide Windows Security app notifications](windows-defender-security-center/wdsc-hide-notifications.md)
@@ -978,8 +982,8 @@
 
 
 ### [Windows security baselines](windows-security-baselines.md)
-### [Security Compliance Toolkit](security-compliance-toolkit-10.md)
-### [Get support](get-support-for-security-baselines.md)
+#### [Security Compliance Toolkit](security-compliance-toolkit-10.md)
+#### [Get support](get-support-for-security-baselines.md)
 
 ### [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
 
