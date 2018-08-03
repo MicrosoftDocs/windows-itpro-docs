@@ -4,7 +4,7 @@ description: This topic goes over Windows Autopilot and how it helps setup OOBE 
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
 author: coreyp-at-msft

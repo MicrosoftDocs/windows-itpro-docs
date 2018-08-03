@@ -6,7 +6,7 @@ ms.prod: edge
 ms.mktglfcycl: general
 ms.sitesec: library
 title: Microsoft Edge for IT Pros
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 07/29/2018
 ---
 
