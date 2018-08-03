@@ -31,7 +31,7 @@ The AV-TEST Product Review and Certification Report tests on three categories: p
 
 **Prevalent malware** refers to detection of widespread and prevalent malware discovered in the last 4 weeks.
 
-||January-February 2018 | March-April 2018 | May-June 2018|
+|2018 |January - February | March - April | May - June|
 |-----|-----|-----|-----| 
 |Real World detection rate| 100.00%, 100.00%| 98.00%, 100.00%| 100.00%, 100.00%|
 |Prevalent Malware detection rate| 99.92%, 100.00%|100.00%, 100.00%|100.00%, 100.00%|
@@ -42,23 +42,23 @@ The AV-TEST Product Review and Certification Report tests on three categories: p
 
 The graphs below show Windows Defender AV's detection rates in “Real World” and “Prevalent malware” testing over a six month period.
 
-![Real World](./images/RealWorld072018.png)
-![Prevalent Malware](./images/PrevalentMalware072018.png)
+![Real World](./images/RealWorld0818.png)
+![Prevalent Malware](./images/PrevalentMalware0818.png)
 
 ## AV Comparatives
 
 AV-Comparatives is an independent organization offering systematic testing for security software such as PC/Mac-based antivirus products and mobile security solutions.
 
-The  **Real-World Protection Test (Enterprise)** evaluates the “real-world” protection capabilities with default settings. The goal is to find out whether the security software protects the computer by either hindering the malware from changing any systems or remediating all changes if any were made. 
+The  **Real-World Protection Test (Enterprise)** evaluates the “real-world” protection capabilities with default settings. The goal is to find out whether the security software protects the computer by either hindering the malware from changing any systems or remediating all changes if any were made.
 
 The **Malware Protection Test Enterprise** assesses a security program’s ability to protect a system against infection by malicious files before, during or after execution. It is only tested every six months.
 
 The **blocked** category tests whether malware was successfully blocked by AV.
 
-|| Jan. | Feb. | Mar. | Apr. | May | Jun. |
+|2018| Jan. | Feb. | Mar. | Apr. | May | Jun. |
 |---|---|---|---|---|---|---|
 |Real World (blocked) | No test| 100.00% | 94.40% | 96.40% | 100.00%| 99.50%|
-|Malware protection (blocked)| No test | No test | 99.90% | No test | No test | No test | 
+|Malware protection (blocked)| No test | No test | 99.90% | No test | No test | No test |
 
 * [Real-World Protection Test (Enterprise) February - June 2018](https://www.av-comparatives.org/tests/real-world-protection-test-february-june-2018/)
 
