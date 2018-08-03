@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
-ms.date: 07/30/2018
+ms.date: 08/03/2018
 ---
 
 # Set up digital signs on Windows 10
@@ -61,6 +61,10 @@ This procedure explains how to configure digital signage using Kiosk Browser on 
     - In **BlockedUrl**, enter `*`.
     - In **DefaultUrl**, enter `https://www.contoso.com/menu`.
     - Set **EnableEndSessionButton**, **EnableHomeButton**, and **EnableNavigationButtons** to **No**.
+
+    >[!TIP]
+    >For more information on kiosk browser settings, see [Guidelines for web browsers](guidelines-for-assigned-access-app.md#guidelines-for-web-browsers).
+
 13. On the **File** menu, select **Save**, and select **OK** in the **Keep your info secure** dialog box.
 14. On the **Export** menu, select **Provisioning package**.
 15. Change the **Owner** to **IT Admin**, and select **Next**.
