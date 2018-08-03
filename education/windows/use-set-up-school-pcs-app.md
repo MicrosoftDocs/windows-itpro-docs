@@ -168,7 +168,7 @@ After you've made your selections, click **Next**.
 ### Time zone  
 
 > [!WARNING]
-> If you are using the Autounattend.xml to reimage your school PCs, do not specify a time zone in the file. If you set the time zone in the file *and* in this step, you will encounter an error.
+> If you are using the Autounattend.xml file to reimage your school PCs, do not specify a time zone in the file. If you set the time zone in the file *and* in this app, you will encounter an error.
 
 Choose the time zone where your school's PCs are used. This setting ensures that all PCs are provisioned in the same time zone. When you're done, click **Next**.  
 
