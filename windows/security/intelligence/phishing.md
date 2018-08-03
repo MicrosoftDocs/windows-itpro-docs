@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: ellevin
 author: levinec
-ms.date: 07/18/2018
+ms.date: 08/01/2018
 ---
 
 # Phishing
