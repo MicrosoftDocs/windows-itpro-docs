@@ -49,9 +49,17 @@
 
 
 ####[Configure ASR](configure1.md)
-##### [System requirements for Windows Defender Application Guard](windows-defender-application-guard/reqs-wd-app-guard.md)
-##### [Prepare and install Windows Defender Application Guard](windows-defender-application-guard/install-wd-app-guard.md)
-##### [Configure the Group Policy settings for Windows Defender Application Guard](windows-defender-application-guard/configure-wd-app-guard.md)
+##### [Hardware-based isolation](windows-defender-application-guard/configure-wd-app-guard.md)
+##### [Application control](windows-defender-application-control/windows-defender-application-control-deployment-guide.md)
+##### [Exploit protection](windows-defender-exploit-guard\enable-exploit-protection.md)
+##### [Network Protection](windows-defender-exploit-guard\enable-network-protection.md)
+##### [Controlled folder access](windows-defender-exploit-guard\enable-controlled-folders-exploit-guard.md)
+##### [ASR controls](windows-defender-exploit-guard\enable-attack-surface-reduction.md)
+##### [Network firewall](windows-firewall\windows-firewall-with-advanced-security-deployment-guide.md)
+
+
+
+
 
 
 
@@ -137,9 +145,6 @@
 #### [View the Security operations dashboard - consdier moving to the relevant pillar](windows-defender-atp\security-operations-dashboard-windows-defender-advanced-threat-protection.md)
 
 #### [Access the Windows Defender Security Center Community Center](windows-defender-atp\community-windows-defender-advanced-threat-protection.md)
-
-
-
 
 
 
