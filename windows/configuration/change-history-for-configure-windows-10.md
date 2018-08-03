@@ -10,12 +10,18 @@ ms.localizationpriority: medium
 author: jdeckerms
 ms.author: jdecker
 ms.topic: article
-ms.date: 07/30/2018
+ms.date: 08/03/2018
 ---
 
 # Change history for Configure Windows 10
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
+
+## August 2018
+
+New or changed topic | Description
+--- | ---
+[Guidelines for choosing an app for assigned access (kiosk mode)](guidelines-for-assigned-access-app.md) | Added instructions for specifying multiple URLs in configuration settings for Kiosk Browser.
 
 ## July 2018
 
