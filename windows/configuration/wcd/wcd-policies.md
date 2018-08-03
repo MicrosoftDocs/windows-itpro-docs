@@ -8,7 +8,7 @@ author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
 ms.topic: article
-ms.date: 04/30/2018
+ms.date: 08/03/2018
 ---
 
 # Policies (Windows Configuration Designer reference)
@@ -290,13 +290,21 @@ These settings apply to the **Kiosk Browser** app available in Microsoft Store. 
 
 | Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: | :---: |
-[BlockedUrlExceptions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-kioskbrowser#kioskbrowser-blockedurlexceptions) | List of exceptions to the blocked website URLs (with wildcard support). Separate multiple URLs using `&#xF000;`. This is used to configure URLs kiosk browsers are allowed to navigate to, which are a subset of the blocked URLs. | X |  |  |  |  |
-[BlockedUrls](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-kioskbrowser#kioskbrowser-blockedurls) | List of blocked website URLs (with wildcard support). Separate multiple URLs using `&#xF000;`. This is used to configure blocked URLs kiosk browsers cannot navigate to. | X |  |  |  |  |
+[BlockedUrlExceptions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-kioskbrowser#kioskbrowser-blockedurlexceptions) | List of exceptions to the blocked website URLs (with wildcard support). This is used to configure URLs kiosk browsers are allowed to navigate to, which are a subset of the blocked URLs. | X |  |  |  |  |
+[BlockedUrls](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-kioskbrowser#kioskbrowser-blockedurls) | List of blocked website URLs (with wildcard support). This is used to configure blocked URLs kiosk browsers cannot navigate to. | X |  |  |  |  |
 [DefaultURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-kioskbrowser#kioskbrowser-defaulturl) | Configures the default URL kiosk browsers to navigate on launch and restart.  | X |  |  |  |  |
 [EnableHomeButton](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-kioskbrowser#kioskbrowser-enablehomebutton) | Enable/disable kiosk browser's home button.  | X |  |  |  |  |
 [EnableNavigationButtons](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-kioskbrowser#kioskbrowser-enablenavigationbuttons) | Enable/disable kiosk browser's navigation buttons (forward/back). | X |  |  |  |  |
 [RestartOnIdleTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-kioskbrowser#kioskbrowser-restartonidletime) | Amount of time in minutes the session is idle until the kiosk browser restarts in a fresh state.  The value is an int 1-1440 that specifies the amount of minutes the session is idle until the kiosk browser restarts in a fresh state. The default value is empty which means there is no idle timeout within the kiosk browser. | X |  |  |  |  |
 
+To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in Windows Configuration Designer:
+
+1. Create the provisioning package. When ready to export, close the project in Windows Configuration Designer.
+2. Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18). 
+3. Insert the null character string in between each URL (e.g www.bing.com&#xF000;www.contoso.com). 
+4. Save the XML file.
+5. Open the project again in Windows Configuration Designer.
+6. Export the package. Ensure you do not revisit the created policies under Kiosk Browser or else the null character will be removed.
 
 ## Location
 
