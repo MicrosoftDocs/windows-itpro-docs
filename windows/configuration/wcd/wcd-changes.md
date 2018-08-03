@@ -18,7 +18,7 @@ Settings added in Windows 10, version 1809
 
 - [Browser > AllowPrelaunch](wcd-browser.md#allowprelaunch)
 - [Browser > FavoriteBarItems](wcd-browser.md#favoritebaritems)
-- [Cellular > PerSim > SignalBlockingTable](wcd-cellular.md#signalblockingtable)
+- [Cellular > SignalBarMappingTable](wcd-cellular.md#signalbarmappingtable)
 - [KioskBrowser](wcd-kioskbrowser.md)
 - [Location](wcd-location.md)
 - [WindowsHelloForBusiness](wcd-windowshelloforbusiness.md)
