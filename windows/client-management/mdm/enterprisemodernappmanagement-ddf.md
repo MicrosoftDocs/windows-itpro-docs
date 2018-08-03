@@ -495,7 +495,6 @@ The XML below is for Windows 10, next major version.
               <AccessType>
                 <Get />
                 <Add />
-                <Delete />
                 <Replace />
               </AccessType>
               <DFFormat>
