@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.date: 30/07/2018
 ---
 
-# Use Windows Defender ATP APIs 
+# Use Windows Defender ATP APIsx 
 
 **Applies to:**
 
