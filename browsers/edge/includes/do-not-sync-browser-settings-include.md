@@ -27,9 +27,9 @@ For more details about configuring the browser syncing options, see [Sync browse
 - **GP ADMX file name:** SettingSync.admx
 
 #### MDM settings
-- **MDM name:** [Experience/DoNotSyncBrowserSetting](../available-policies.md#do-not-sync-browser-settings)
+- **MDM name:** [Experience/DoNotSyncBrowserSettings](../available-policies.md#do-not-sync-browser-settings)
 - **Supported devices:** Desktop
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Experience/DoNotSyncBrowserSetting
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Experience/DoNotSyncBrowserSettings
 - **Data type:** Integer
 
 #### Registry settings
