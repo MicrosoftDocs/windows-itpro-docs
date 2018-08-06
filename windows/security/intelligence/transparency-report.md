@@ -13,7 +13,7 @@ ms.date: 08/03/2018
 
 # Top scoring in industry antivirus tests
 
-Antivirus capabilities in Windows Defender Advanced Threat Protection (ATP) **consistently receive high scores** from independent tests, making Windows Defender ATP a top choice in the antivirus market. Windows 10 has technological advances in AV as well as other built-in security solutions, raising the bar for exploits, malware, and other threats.
+Antivirus capabilities in Windows Defender Advanced Threat Protection (Windows Defender ATP) **consistently receive high scores** from independent tests, making Windows Defender ATP a top choice in the antivirus market. Windows 10 has technological advances in AV as well as other built-in security solutions, raising the bar for exploits, malware, and other threats.
 
 Windows Defender ATP [next generation protection](https://www.youtube.com/watch?v=Xy3MOxkX_o4) detects and stops malware at first sight by using a model that leverages predictive technologies, [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering/), [artificial intelligence](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak/), behavioral analysis, and other advanced technologies.
 
@@ -75,7 +75,7 @@ The **Malware Protection Test Enterprise** assesses a security program’s abili
 
 ## Protection capabilities not represented in the tests
 
-It is important to remember that [Windows Defender ATP](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=cx-blog-mmpc) (which integrates our antivirus capabilities and the whole Windows security stack) provides a much larger set of protection features that are not factored into the tests. These features provide [additional layers of protection](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses/) that help prevent malware from getting onto devices in the first place  like endpoint detection and response (EDR) capabilities, Windows Defender SmartScreen, Windows Defender Exploit Guard, and others.
+It is important to remember that the capabilities within [Windows Defender ATP](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=cx-blog-mmpc) provide [additional layers of protection](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses/) that are not factored into tests. The capabilities such as attack surface reduction and next generation protection help prevent malware from getting onto devices in the first place.
 
  To see these capabilities for yourself sign up for a [90-day trial of Windows Defender ATP](https://www.microsoft.com/windowsforbusiness/windows-atp?ocid=cx-blog-mmpc) today, or [enable Preview features on existing tenants](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-settings-windows-defender-advanced-threat-protection).
 
