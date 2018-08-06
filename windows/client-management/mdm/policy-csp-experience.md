@@ -91,7 +91,7 @@ ms.date: 07/30/2018
     <a href="#experience-donotshowfeedbacknotifications">Experience/DoNotShowFeedbackNotifications</a>
   </dd>
   <dd>
-    <a href="#experience-donotsyncbrowsersetting">Experience/DoNotSyncBrowserSetting</a>
+    <a href="#experience-donotsyncbrowsersetting">Experience/DoNotSyncBrowserSettings</a>
   </dd>
   <dd>
     <a href="#experience-preventusersfromturningonbrowsersyncing">Experience/PreventUsersFromTurningOnBrowserSyncing</a>
@@ -1399,7 +1399,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-donotsyncbrowsersetting"></a>**Experience/DoNotSyncBrowserSetting**  
+<a href="" id="experience-donotsyncbrowsersetting"></a>**Experience/DoNotSyncBrowserSettings**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1434,14 +1434,16 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-By default, the "browser" group syncs automatically between user’s devices and allowing users to choose to make changes. The "browser" group uses the **Sync your Settings** option in Settings to sync information like history and favorites. Enabling this policy prevents the "browser" group from using the **Sync your Settings** option. If you want syncing turned off by default but not disabled, select the Allow users to turn "browser" syncing option.
+By default, the "browser" group syncs automatically between user’s devices and allowing users to choose to make changes. The "browser" group uses the _Sync your Settings_ option in Settings to sync information like history and favorites. Enabling this policy prevents the "browser" group from using the _Sync your Settings_ option. If you want syncing turned off by default but not disabled, select the _Allow users to turn "browser" syncing_ option.
 
 Related policy: PreventUsersFromTurningOnBrowserSyncing.
 
-Value type is integer. Supported values:  
+Value type is integer. 
+
+Supported values:  
 
 -  0 (default) - Allowed/turned on. The "browser" group syncs automatically between user’s devices and lets users to make changes.
--  2 - Prevented/turned off. The "browser" group does not use the **Sync your Settings** option.
+-  2 - Prevented/turned off. The "browser" group does not use the _Sync your Settings_ option.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1501,23 +1503,25 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-By default, the "browser" group syncs automatically between the user’s devices, letting users make changes. With this policy, though, you can prevent the "browser" group from syncing and prevent users from turning on the Sync your Settings toggle in Settings. If you want syncing turned off by default but not disabled, select the Allow users to turn "browser" syncing option in the Do not sync browser policy. For this policy to work correctly, you must enable the Do not sync browser policy.
+By default, the "browser" group syncs automatically between the user’s devices, letting users make changes. With this policy, though, you can prevent the "browser" group from syncing and prevent users from turning on the _Sync your Settings_ toggle in Settings. If you want syncing turned off by default but not disabled, select the _Allow users to turn "browser" syncing_ option in the Do not sync browser policy. For this policy to work correctly, you must enable the Do not sync browser policy.
 
-Related policy: DoNotSyncBrowserSetting
+Related policy: DoNotSyncBrowserSettings
 
-Value type is integer. Supported values:  
+Value type is integer. 
+
+Supported values:  
 
 -  0 - Allowed/turned on. Users can sync the browser settings.
 -  1 (default) - Prevented/turned off.
 
-This policy only works with the Experience/DoNotSyncBrowserSetting policy, and for this policy to work correctly, you must set Experience/DoNotSynBrowserSettings to 2 (enabled). By default, when you set this policy and the Experience/DoNotSyncBrowserSetting policy to 0 (disabled or not configured), the browser settings sync automatically. However, with this policy, you can prevent the syncing of browser settings and prevent users from turning on the Sync your Settings option. Additionally, you can prevent syncing the browser settings but give users a choice to turn on syncing. 
+This policy only works with the Experience/DoNotSyncBrowserSettings policy, and for this policy to work correctly, you must set Experience/DoNotSynBrowserSettings to 2 (enabled). By default, when you set this policy and the Experience/DoNotSyncBrowserSettings policy to 0 (disabled or not configured), the browser settings sync automatically. However, with this policy, you can prevent the syncing of browser settings and prevent users from turning on the Sync your Settings option. Additionally, you can prevent syncing the browser settings but give users a choice to turn on syncing. 
 
 If you want to prevent syncing of browser settings and prevent users from turning it on:  
-1. Set Experience/DoNotSyncBrowserSetting to 2 (enabled).
+1. Set Experience/DoNotSyncBrowserSettings to 2 (enabled).
 1. Set this policy (Experience/PreventUsersFromTurningOnBrowserSyncing) to 1 (enabled or not configured).
 
 If you want to prevent syncing of browser settings but give users a choice to turn on syncing:  
-1. Set Experience/DoNotSyncBrowserSetting to 2 (enabled).
+1. Set Experience/DoNotSyncBrowserSettings to 2 (enabled).
 1. Set this policy (Experience/PreventUsersFromTurningOnBrowserSyncing) to 0 (disabled).
 
 <!--/Description-->
@@ -1540,15 +1544,12 @@ ADMX Info:
 **Validation procedure:**  
 
 Microsoft Edge on your PC:
-1. Select More  > Settings.
+1. Select **More > Settings**.
 1. See if the setting is enabled or disabled based on your setting.
 
 <!--/Validation-->
 <!--/Policy-->
-<<<<<<< HEAD
-=======
 
->>>>>>> 3c06afe9875ad82fff960313bea663f49a2f7d2c
 <hr/>
 
 Footnote:
