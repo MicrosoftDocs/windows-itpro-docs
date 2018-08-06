@@ -6,7 +6,7 @@ ms.prod: w10
 ms.technology: windows
 author: shortpatti
 ms.author: pashort
-ms.date: 07/18/2018
+ms.date: 07/30/2018
 ---
 
 # Policy CSP - Browser
@@ -1214,7 +1214,7 @@ To verify AllowPopups is set to 0 (not allowed):
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Prelaunch*
+-   GP English name: *Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed*
 -   GP name: *AllowPrelaunch*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -3973,58 +3973,4 @@ Footnote:
 -   5 - Added in the next major update to Windows of Windows 10.
 
 <!--/Policies-->
-
-<!--StartEAS-->
-## <a href="" id="eas"></a>Browser policies that can be set using Exchange Active Sync (EAS)  
-
--   [Browser/AllowBrowser](#browser-allowbrowser)  
-<!--EndEAS-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Browser policies supported by Windows Holographic for Business  
-
--   [Browser/AllowCookies](#browser-allowcookies)  
--   [Browser/AllowDoNotTrack](#browser-allowdonottrack)  
--   [Browser/AllowPasswordManager](#browser-allowpasswordmanager)  
--   [Browser/AllowPopups](#browser-allowpopups)  
--   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)  
--   [Browser/AllowSmartScreen](#browser-allowsmartscreen)  
-<!--EndHoloLens-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>Browser policies supported by IoT Core  
-
--   [Browser/AllowAutofill](#browser-allowautofill)  
--   [Browser/AllowBrowser](#browser-allowbrowser)  
--   [Browser/AllowCookies](#browser-allowcookies)  
--   [Browser/AllowDoNotTrack](#browser-allowdonottrack)  
--   [Browser/AllowInPrivate](#browser-allowinprivate)  
--   [Browser/AllowPasswordManager](#browser-allowpasswordmanager)  
--   [Browser/AllowPopups](#browser-allowpopups)  
--   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)  
--   [Browser/EnterpriseModeSiteList](#browser-enterprisemodesitelist)  
--   [Browser/EnterpriseSiteListServiceUrl](#browser-enterprisesitelistserviceurl)  
--   [Browser/SendIntranetTraffictoInternetExplorer](#browser-sendintranettraffictointernetexplorer)  
-<!--EndIoTCore-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>Browser policies supported by Microsoft Surface Hub  
-
--   [Browser/AllowAddressBarDropdown](#browser-allowaddressbardropdown)  
--   [Browser/AllowCookies](#browser-allowcookies)  
--   [Browser/AllowDeveloperTools](#browser-allowdevelopertools)  
--   [Browser/AllowDoNotTrack](#browser-allowdonottrack)  
--   [Browser/AllowMicrosoftCompatibilityList](#browser-allowmicrosoftcompatibilitylist)  
--   [Browser/AllowPopups](#browser-allowpopups)  
--   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)  
--   [Browser/AllowSmartScreen](#browser-allowsmartscreen)  
--   [Browser/ClearBrowsingDataOnExit](#browser-clearbrowsingdataonexit)  
--   [Browser/ConfigureAdditionalSearchEngines](#browser-configureadditionalsearchengines)  
--   [Browser/DisableLockdownOfStartPages](#browser-disablelockdownofstartpages)  
--   [Browser/HomePages](#browser-homepages)  
--   [Browser/PreventLiveTileDataCollection](#browser-preventlivetiledatacollection)  
--   [Browser/PreventSmartScreenPromptOverride](#browser-preventsmartscreenpromptoverride)  
--   [Browser/PreventSmartScreenPromptOverrideForFiles](#browser-preventsmartscreenpromptoverrideforfiles)  
--   [Browser/SetDefaultSearchEngine](#browser-setdefaultsearchengine)  
-<!--EndSurfaceHub-->
 

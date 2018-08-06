@@ -8,7 +8,7 @@ author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
 ms.topic: article
-ms.date: 04/30/2018
+ms.date: 08/03/2018
 ---
 
 # Policies (Windows Configuration Designer reference)
@@ -49,7 +49,7 @@ This section describes the **Policies** settings that you can configure in [prov
 | [AllowDeveloperUnlock](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#applicationmanagement-allowdeveloperunlock)  | Whether developer unlock of device is allowed  | X  | X | X  | X  | X |
 | [AllowGameDVR](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#applicationmanagement-allowgamedvr)  |Whether DVR and broadcasting is allowed   | X  |  |   |   |  |
 | [AllowSharedUserAppData](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#applicationmanagement-allowshareduserappdata)  | Whether multiple users of the same app can share data  | X  | X |   |   |  |
-| [AllowStore](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#applicationmanagement-allowstore)  | Whether app store is allowed at device (?)  |   | X |   |   |  |
+| [AllowStore](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#applicationmanagement-allowstore)  | Whether app store is allowed at device  |   | X |   |   |  |
 | [ApplicationRestrictions](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#applicationmanagement-applicationrestrictions)  | An XML blob that specifies app restrictions, such as an allow list, disallow list, etc.  |   | x |   |   |  |
 | [RestrictAppDataToSystemVolume](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#applicationmanagement-restrictappdatatosystemvolume)  | Whether app data is restricted to the system drive  | X  | X |   |   |  |
 | [RestrictAppToSystemVolume](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#applicationmanagement-restrictapptosystemvolume)  | Whether the installation of apps is restricted to the system drive   | X  | X |   |   |  |
@@ -297,6 +297,14 @@ These settings apply to the **Kiosk Browser** app available in Microsoft Store. 
 [EnableNavigationButtons](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-kioskbrowser#kioskbrowser-enablenavigationbuttons) | Enable/disable kiosk browser's navigation buttons (forward/back). | X |  |  |  |  |
 [RestartOnIdleTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-kioskbrowser#kioskbrowser-restartonidletime) | Amount of time in minutes the session is idle until the kiosk browser restarts in a fresh state.  The value is an int 1-1440 that specifies the amount of minutes the session is idle until the kiosk browser restarts in a fresh state. The default value is empty which means there is no idle timeout within the kiosk browser. | X |  |  |  |  |
 
+To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in Windows Configuration Designer:
+
+1. Create the provisioning package. When ready to export, close the project in Windows Configuration Designer.
+2. Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18). 
+3. Insert the null character string in between each URL (e.g www.bing.com&#xF000;www.contoso.com). 
+4. Save the XML file.
+5. Open the project again in Windows Configuration Designer.
+6. Export the package. Ensure you do not revisit the created policies under Kiosk Browser or else the null character will be removed.
 
 ## Location
 
@@ -439,7 +447,7 @@ ConfigureTelemetryOptInSettingsUx | This policy setting determines whether peopl
 | [ActiveHoursEnd](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-activehoursend) | Use with **Update/ActiveHoursStart** to manage the range of active hours where update rboots are not scheduled. | X | X | X |  | X |
 | [ActiveHoursMaxRange](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-activehoursmaxrange) | Specify the maximum active hours range. | X | X | X |  | X |
 | [ActiveHoursStart](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-activehoursstart) | Use with **Update/ActiveHoursEnd** to manage the range of active hours where update reboots are not scheduled. | X | X | X |  | X |
-| [AllowautoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate) | Configure automatic update behavior to scan, download, and install updates. | X | X | X | X | X |
+| [AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate) | Configure automatic update behavior to scan, download, and install updates. | X | X | X | X | X |
 | [AllowAutoWindowsUpdateDownloadOverMeteredNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautowindowsupdatedownloadovermeterednetwork)| Option to download updates automatically over metered connections (off by default). Enter `0` for not allowed, or `1` for allowed. | X | X | X |  | X |
 | [AllowMUUpdateService](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowmuupdateservice) | Manage whether to scan for app updates from Microsoft Update. | X | X | X | X | X |
 | [AllowNonMicrosoftSignedUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allownonmicrosoftsignedupdate) | Manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found at the UpdateServiceUrl location. | X | X | X |  | X |

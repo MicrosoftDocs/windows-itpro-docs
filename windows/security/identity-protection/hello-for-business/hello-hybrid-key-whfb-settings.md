@@ -21,7 +21,7 @@ ms.date: 10/23/2017
 You are ready to configure your hybrid key trust environment for Windows Hello for Business.
   
 > [!IMPORTANT]
-> Ensure your environment meets all the [prerequistes](hello-hybrid-key-trust-prereqs.md) before proceeding. Review the [New Installation baseline](hello-hybrid-key-new-install.md) section of this deployment document to learn how to prepare your environment for your Windows Hello for Business deployment.  
+> Ensure your environment meets all the [prerequisites](hello-hybrid-key-trust-prereqs.md) before proceeding. Review the [New Installation baseline](hello-hybrid-key-new-install.md) section of this deployment document to learn how to prepare your environment for your Windows Hello for Business deployment.  
 
 The configuration for Windows Hello for Business is grouped in four categories.  These categories are: 
 * [Active Directory](hello-hybrid-key-whfb-settings-ad.md)

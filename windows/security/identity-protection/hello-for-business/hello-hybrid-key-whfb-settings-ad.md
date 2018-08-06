@@ -18,7 +18,7 @@ ms.date: 10/23/2017
 
 >This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
-Configure the appropriate security groups to effeiciently deploy Windows Hello for Business to users. 
+Configure the appropriate security groups to efficiently deploy Windows Hello for Business to users. 
 
 
 ### Creating Security Groups

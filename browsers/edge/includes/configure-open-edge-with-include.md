@@ -1,6 +1,6 @@
-<!-- Configure Open Microsoft Edge With
+<!-- Configure Open Microsoft Edge With-->
 
->*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> -->
+>*Supported versions: Microsoft Edge on Windows 10, next major update to Windows*<br> 
 >*Default setting:  Enabled (A specific page or pages)*
 
 [!INCLUDE [configure-open-microsoft-edge-with-shortdesc](../shortdesc/configure-open-microsoft-edge-with-shortdesc.md)]
@@ -22,7 +22,7 @@
 
 ### Configuration options
 
-For more details about configuring the Start pages, see [Start pages](../group-policies/start-pages-gp.md).
+For more details about configuring the Start pages, see [Start pages configuration options](../group-policies/start-pages-gp.md).
 
 
 >[!TIP]
