@@ -366,7 +366,7 @@ This setting allows the IT admin to set an app to be nonremovable, or unable to 
 
 NonRemovable requires admin permission. This can only be set per device, not per user. You can query the setting using AppInventoryQuery or AppInventoryResults.
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+Value type is integer. Supported operations are Add, Get, and Replace.
 
 Valid values:  
 -	0 – app is not in the nonremovable app policy list

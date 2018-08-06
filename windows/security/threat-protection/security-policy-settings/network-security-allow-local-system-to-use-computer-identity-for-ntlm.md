@@ -26,7 +26,7 @@ When a service connects with the device identity, signing and encryption are sup
 ### Possible values
 
 | Setting | Windows Server 2008 and Windows Vista | At least Windows Server 2008 R2 and Windows 7 |
-| - | - |
+| - | - | - | 
 | Enabled | Services running as Local System that use Negotiate will use the computer identity. This might cause some authentication requests between Windows operating systems to fail and log an error.| Services running as Local System that use Negotiate will use the computer identity. This is the default behavior. |
 | Disabled| Services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously. This is the default behavior.| Services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously.|
 |Neither|Services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously. | Services running as Local System that use Negotiate will use the computer identity. This might cause some authentication requests between Windows operating systems to fail and log an error.| 
