@@ -8,27 +8,19 @@ ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ---
+# How to load the Windows PowerShell cmdlets for App-V and get cmdlet help
 
+>Applies to: Windows 10, version 1607
 
-# How to Load the Windows PowerShell Cmdlets for App-V and Get Cmdlet Help
-
-**Applies to**
--   Windows 10, version 1607
-
-What this topic covers:
-
--   [Requirements for using Windows PowerShell cmdlets](#bkmk-reqs-using-posh)
-
--   [Loading the Windows PowerShell cmdlets](#bkmk-load-cmdlets)
-
--   [Getting help for the Windows PowerShell cmdlets](#bkmk-get-cmdlet-help)
-
--   [Displaying the help for a Windows PowerShell cmdlet](#bkmk-display-help-cmdlet)
-
-## <a href="" id="bkmk-reqs-using-posh"></a>Requirements for using Windows PowerShell cmdlets
-
+## Requirements for using Windows PowerShell cmdlets
 
 Review the following requirements for using the Windows PowerShell cmdlets:
+
+|Requirement|Details|
+|---|---|
+|||
+|||
+|||
 
 <table>
 <colgroup>
@@ -85,10 +77,26 @@ Review the following requirements for using the Windows PowerShell cmdlets:
 </tbody>
 </table>
 
- 
+Alt:
 
-## <a href="" id="bkmk-load-cmdlets"></a>Loading the Windows PowerShell cmdlets
+This section will tell you what you'll need to use the PowerShell cmdlets.
 
+### How to let users use cmdlets
+
+You can grant your users access to PowerShell cmdlets through one of the following methods:
+
+* While you're deploying and configuring the App-V server, specify an Active Directory group or individual user with permissions to manage the App-V environment. For more information, see [How to deploy the App-V Server](appv-deploy-the-appv-server.md).
+* After you've deployed the App-V server, you can use the App-V Management console to add an additional Active Directory group or user. For more information, see [How to add or remove an administrator by using the Management console](appv-add-or-remove-an-administrator-with-the-management-console.md).
+
+### Elevated command prompt
+
+You'll need an elevated command prompt to run the following cmdlets:
+
+* Add-AppvClientPackage
+* Remove-AppvClientPackage
+* Set-AppvClientConfiguration
+
+## Loading the Windows PowerShell cmdlets
 
 To load the Windows PowerShell cmdlet modules:
 
@@ -123,9 +131,7 @@ To load the Windows PowerShell cmdlet modules:
 </tbody>
 </table>
 
- 
-
-## <a href="" id="bkmk-get-cmdlet-help"></a>Getting help for the Windows PowerShell cmdlets
+## Getting help for the Windows PowerShell cmdlets
 
 Starting in App-V 5.0 SP3, cmdlet help is available in two formats:
 
