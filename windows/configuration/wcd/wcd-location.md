@@ -13,11 +13,14 @@ ms.date: 04/30/2018
 
 # Location (Windows Configuration Designer reference)
 
-Use Location settings to configure Internet sharing.
+Use Location settings to configure location services.
 
 ## Applies to
 
 | Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All settings |  |  X  |  |  | X |
+| [EnableLocation](#enablelocation) |  |    |  |  | X |
 
+## EnableLocation
+
+Use this setting to enable or disable location services for the device.

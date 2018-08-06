@@ -21,9 +21,35 @@ Settings added in Windows 10, version 1809
 - [Cellular > SignalBarMappingTable](wcd-cellular.md#signalbarmappingtable)
 - [KioskBrowser](wcd-kioskbrowser.md)
 - [Location](wcd-location.md)
+- [Policies > Browser:](wcd-policies.md#browser)
+    - AllowFullScreenMode
+    - AllowPrelaunch
+    - AllowPrinting
+    - AllowSavingHistory
+    - AllowSideloadingOfExtensions
+    - AllowTabPreloading
+    - AllowWebContentOnNewTabPage
+    - ConfigureFavoritesBar
+    - ConfigureHomeButton
+    - ConfigureKioskMode
+    - ConfigureKioskResetAfterIdleTimer
+    - ConfigureOpenMicrosoftEdgeWith
+    - ConfigureTelemetryForMicrosoft365
+    - FirstRunURL
+    - PreventCertErrorOverrides 
+    - PreventTurningOffRequiredExtensions
+    - SetHomeButtonURL
+    - SetNewTabPageURL
+    - UnlockHomeButton
+- [UnifiedWriteFilter > OverlayFlags](wcd-unifiedwritefilter.md#overlayflags)
+- [UnifiedWriteFilter > ResetPersistentState](wcd-unifiedwritefilter.md#resetpersistentstate)
 - [WindowsHelloForBusiness](wcd-windowshelloforbusiness.md)
 
 
 Settings removed in Windows 10, version 1809
 
 - [CellCore](wcd-cellcore.md)
+- [Policies > Browser > AllowBrowser](wcd-policies.md#browser)
+    - AllowBrowser
+    - PreventTabReloading
+
