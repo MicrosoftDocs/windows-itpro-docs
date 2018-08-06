@@ -15,14 +15,16 @@
 #### [Assign user access to the portal](windows-defender-atp\assign-portal-access-windows-defender-advanced-threat-protection.md)
 
 ####Evaluate Windows Defender ATP
-##### [Evaluate Attack surface reduction - ASR controls](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
-##### [Evaluate Exploit protection](windows-defender-exploit-guard\evaluate-exploit-protection.md)
-##### [Evaluate Network Protection](windows-defender-exploit-guard\evaluate-network-protection.md)
-##### [Evaluate Controlled folder access](windows-defender-exploit-guard\evaluate-controlled-folder-access.md)
-##### [Evaluate Windows Defender Antivirus protection](windows-defender-antivirus\evaluate-windows-defender-antivirus.md)
-##### [Evaluate Windows Defender Exploit Guard-rewrite](windows-defender-exploit-guard\evaluate-windows-defender-exploit-guard.md)
-##### [Use auditing mode to evaluate Windows Defender Exploit Guard](windows-defender-exploit-guard\audit-windows-defender-exploit-guard.md)
-##### [Testing scenarios using Windows Defender Application Guard in your business or organization](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
+##### [ASR](windows-defender-exploit-guard\evaluate-windows-defender-exploit-guard.md)
+###### [Hardware-based isolation](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
+###### [Application control](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
+###### [Exploit protection](windows-defender-exploit-guard\evaluate-exploit-protection.md)
+###### [Network Protection](windows-defender-exploit-guard\evaluate-network-protection.md)
+###### [Controlled folder access](windows-defender-exploit-guard\evaluate-controlled-folder-access.md)
+###### [ASR controls](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
+###### [Auditing mode](windows-defender-exploit-guard\audit-windows-defender-exploit-guard.md)
+###### [Network firewall](windows-firewall\evaluating-windows-firewall-with-advanced-security-design-examples.md)
+##### [Next gen protection](windows-defender-antivirus\evaluate-windows-defender-antivirus.md)
 
 
 
@@ -47,9 +49,17 @@
 
 
 ####[Configure ASR](configure1.md)
-##### [System requirements for Windows Defender Application Guard](windows-defender-application-guard/reqs-wd-app-guard.md)
-##### [Prepare and install Windows Defender Application Guard](windows-defender-application-guard/install-wd-app-guard.md)
-##### [Configure the Group Policy settings for Windows Defender Application Guard](windows-defender-application-guard/configure-wd-app-guard.md)
+##### [Hardware-based isolation](windows-defender-application-guard/configure-wd-app-guard.md)
+##### [Application control](windows-defender-application-control/windows-defender-application-control-deployment-guide.md)
+##### [Exploit protection](windows-defender-exploit-guard\enable-exploit-protection.md)
+##### [Network Protection](windows-defender-exploit-guard\enable-network-protection.md)
+##### [Controlled folder access](windows-defender-exploit-guard\enable-controlled-folders-exploit-guard.md)
+##### [ASR controls](windows-defender-exploit-guard\enable-attack-surface-reduction.md)
+##### [Network firewall](windows-firewall\windows-firewall-with-advanced-security-deployment-guide.md)
+
+
+
+
 
 
 
@@ -145,36 +155,47 @@
 
 
 
+### [Attack surface reduction - Chris, Amitai, Justin](windows-defender-exploit-guard\windows-defender-exploit-guard.md)
 
-
-
-### [Attack surface reduction - Chris, Amitai, Justin](windows-defender-exploit-guard\attack-surface-reduction-exploit-guard.md)
-#### [Hardware based isolation](windows-defender-application-guard/wd-app-guard-overview.md)
+#### [Hardware-based isolation](windows-defender-application-guard\wd-app-guard-overview.md)
 ##### [Frequently Asked Questions - Windows Defender Application Guard](windows-defender-application-guard/faq-wd-app-guard.md)
-#### [Windows Defender Application Control](windows-defender-application-control/windows-defender-application-control.md)
 
+#### [Application control](windows-defender-application-control/windows-defender-application-control.md)
+##### [Design](windows-defender-application-control/windows-defender-application-control-design-guide.md)
+##### [Deploy](windows-defender-application-control/windows-defender-application-control-deployment-guide.md)
+##### [AppLocker](windows-defender-application-control/applocker/applocker-overview.md)
 
 #### [Exploit protection - Chris, Amitai, Justin](windows-defender-exploit-guard\exploit-protection-exploit-guard.md)
-##### [Comparison with Enhanced Mitigation Experience Toolkit](windows-defender-exploit-guard\emet-exploit-protection-exploit-guard.md)
-
-##### [Enable Exploit protection - Chris, Amitai, Justin](windows-defender-exploit-guard\enable-exploit-protection.md)
-##### [Customize Exploit protection](windows-defender-exploit-guard\customize-exploit-protection.md)
-###### [Import, export, and deploy Exploit protection configurations](windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
+##### [Compare with EMET](windows-defender-exploit-guard\emet-exploit-protection-exploit-guard.md)
+##### [Evaluate](windows-defender-exploit-guard\evaluate-exploit-protection.md)
+##### [Enable](windows-defender-exploit-guard\enable-exploit-protection.md)
+##### [Customize](windows-defender-exploit-guard\customize-exploit-protection.md)
+###### [Import, export, and deploy](windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
 
 #### [Network Protection](windows-defender-exploit-guard\network-protection-exploit-guard.md)
+##### [Evaluate](windows-defender-exploit-guard\evaluate-network-protection.md)
+##### [Enable](windows-defender-exploit-guard\enable-network-protection.md)
+##### [Troubleshoot](windows-defender-exploit-guard\troubleshoot-np.md)
 
-##### [Enable Network Protection](windows-defender-exploit-guard\enable-network-protection.md)
-##### [Troubleshoot Network protection](windows-defender-exploit-guard\troubleshoot-np.md)
 #### [Controlled folder access](windows-defender-exploit-guard\controlled-folders-exploit-guard.md)
+##### [Evaluate](windows-defender-exploit-guard\evaluate-controlled-folder-access.md)
+##### [Enable](windows-defender-exploit-guard\enable-controlled-folders-exploit-guard.md)
+##### [Customize](windows-defender-exploit-guard\customize-controlled-folders-exploit-guard.md)
 
-##### [Enable Controlled folder access](windows-defender-exploit-guard\enable-controlled-folders-exploit-guard.md)
-##### [Customize Controlled folder access](windows-defender-exploit-guard\customize-controlled-folders-exploit-guard.md)
 
+#### [ASR controls](windows-defender-exploit-guard\attack-surface-reduction-exploit-guard.md)
+##### [Evaluate](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
+##### [Enable](windows-defender-exploit-guard\enable-attack-surface-reduction.md)
+##### [Customize](windows-defender-exploit-guard\customize-attack-surface-reduction.md)
+##### [Troubleshoot](windows-defender-exploit-guard\troubleshoot-asr.md)
 
+#### [Network firewall](windows-firewall\windows-firewall-with-advanced-security.md)
+##### [Isolate Store Apps](windows-firewall\isolating-apps-on-your-network.md)
+##### [Secure IPsec Connections](windows-firewall\securing-end-to-end-ipsec-connections-by-using-ikev2.md)
+##### [PowerShell](windows-firewall\windows-firewall-with-advanced-security-administration-with-windows-powershell.md)
+##### [Design](windows-firewall\windows-firewall-with-advanced-security-design-guide.md)
+##### [Deploy](windows-firewall\windows-firewall-with-advanced-security-deployment-guide.md)
 
-##### [Enable Attack surface reduction](windows-defender-exploit-guard\enable-attack-surface-reduction.md)
-##### [Customize Attack surface reduction](windows-defender-exploit-guard\customize-attack-surface-reduction.md)
-##### [Troubleshoot Attack surface reduction rules](windows-defender-exploit-guard\troubleshoot-asr.md)
 
 ### [Next gen protection - Andrea, Chris, Amitai](windows-defender-antivirus\configure-windows-defender-antivirus-features.md)
 #### [Utilize Microsoft cloud-delivered protection](windows-defender-antivirus\utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
@@ -394,7 +415,8 @@
 
 
 
-## Other security features
+## More Windows 10 security
+
 ### [The Windows Security app](windows-defender-security-center/windows-defender-security-center.md)
 #### [Customize the Windows Security app for your organization](windows-defender-security-center/wdsc-customize-contact-information.md)
 #### [Hide Windows Security app notifications](windows-defender-security-center/wdsc-hide-notifications.md)
@@ -494,7 +516,7 @@
 ####### [Event 4733 S: A member was removed from a security-enabled local group.](auditing/event-4733.md)
 ####### [Event 4734 S: A security-enabled local group was deleted.](auditing/event-4734.md)
 ####### [Event 4735 S: A security-enabled local group was changed.](auditing/event-4735.md)
-####### [Event 4764 S: A group’s type was changed.](auditing/event-4764.md)
+####### [Event 4764 S: A groupï¿½s type was changed.](auditing/event-4764.md)
 ####### [Event 4799 S: A security-enabled local group membership was enumerated.](auditing/event-4799.md)
 ###### [Audit User Account Management](auditing/audit-user-account-management.md)
 ####### [Event 4720 S: A user account was created.](auditing/event-4720.md)
@@ -965,8 +987,8 @@
 
 
 ### [Windows security baselines](windows-security-baselines.md)
-### [Security Compliance Toolkit](security-compliance-toolkit-10.md)
-### [Get support](get-support-for-security-baselines.md)
+#### [Security Compliance Toolkit](security-compliance-toolkit-10.md)
+#### [Get support](get-support-for-security-baselines.md)
 
 ### [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
 

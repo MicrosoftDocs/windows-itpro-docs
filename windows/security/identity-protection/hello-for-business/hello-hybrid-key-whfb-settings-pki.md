@@ -19,13 +19,13 @@ ms.date: 10/23/2017
 
 >This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
-Windows Hello for Business deployments rely on certificates.  Hybrid deployments uses publicly issued server authentication certifcates to validate the name of the server to which they are connecting and to encyrpt the data that flows them and the client computer.
+Windows Hello for Business deployments rely on certificates.  Hybrid deployments uses publicly issued server authentication certificates to validate the name of the server to which they are connecting and to encrypt the data that flows them and the client computer.
 
 All deployments use enterprise issued certificates for domain controllers as a root of trust. 
 
-## Certifcate Templates
+## Certificate Templates
 
-This section has you configure certificate templates on your Windows Server 2012 or later issuing certificate authtority. 
+This section has you configure certificate templates on your Windows Server 2012 or later issuing certificate authority. 
 
 ### Domain Controller certificate template
 
@@ -49,7 +49,7 @@ Sign-in a certificate authority or management workstations with _Domain Admin_ e
 7.	On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**. 
 8.	Close the console.
 
-#### Configure Certificate Suspeding for the Domain Controller Authentication (Kerberos) Certificate Template
+#### Configure Certificate Superseding for the Domain Controller Authentication (Kerberos) Certificate Template
 
 Many domain controllers may have an existing domain controller certificate.  The Active Directory Certificate Services provides a default certificate template for domain controllers--the domain controller certificate template.  Later releases provided a new certificate template--the domain controller authentication certificate template.  These certificate templates were provided prior to update of the Kerberos specification that stated Key Distribution Centers (KDCs) performing certificate authentication needed to include the **KDC Authentication** extension.  
 
@@ -108,7 +108,7 @@ Sign-in to the certificate authority or management workstation with _Enterprise 
 
 ## Follow the Windows Hello for Business hybrid key trust deployment guide
 1. [Overview](hello-hybrid-cert-trust.md)
-2. [Prerequistes](hello-hybrid-key-trust-prereqs.md)
+2. [Prerequisites](hello-hybrid-key-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-key-new-install.md)
 4. [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md)
 5. [Configure Azure Device Registration](hello-hybrid-key-trust-devreg.md)
