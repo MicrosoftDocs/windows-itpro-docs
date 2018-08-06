@@ -51,3 +51,10 @@ In some ways, adding your new Surface Hub is just like adding any other Microsof
 
 
 
+## Additional resources
+
+- [Surface Hub update history](https://support.microsoft.com/help/4037666/surface-surface-hub-update-history)
+- [Surface IT Pro Blog](https://blogs.technet.microsoft.com/surface/)
+- [Surface Playlist of videos](https://www.youtube.com/playlist?list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ)
+- [Microsoft Surface on Twitter](https://twitter.com/surface)
+

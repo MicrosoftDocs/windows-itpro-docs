@@ -70,7 +70,7 @@ To align with this new update delivery model, Windows 10 has three servicing cha
 ### Naming changes
 
 As part of the alignment with Windows 10 and Office 365 ProPlus, we are adopting common terminology to make it as easy as possible to understand the servicing process. Going forward, these are the new terms we will be using:
-* Semi-Annual Channel - We will be referreing to Current Branch (CB) as "Semi-Annual Channel (Targeted)", while Current Branch for Business (CBB) will simply be referred to as "Semi-Annual Channel". 
+* Semi-Annual Channel - We will be referring to Current Branch (CB) as "Semi-Annual Channel (Targeted)", while Current Branch for Business (CBB) will simply be referred to as "Semi-Annual Channel". 
 * Long-Term Servicing Channel -  The Long-Term Servicing Branch (LTSB) will be referred to as Long-Term Servicing Channel (LTSC).
 
 >[!IMPORTANT]
