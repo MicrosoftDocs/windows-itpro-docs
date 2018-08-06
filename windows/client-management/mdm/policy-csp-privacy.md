@@ -433,7 +433,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Updated in Windows 10, version 1709. Allows the usage of cloud based speech services for Cortana, dictation, or Store applications. Setting this policy to 1, lets Microsoft use the user's voice data to improve cloud speech services for all users.
+Updated in Windows 10, version 1809. This policy specifies whether users on the device have the option to enable online speech recognition. When enabled, users can use their voice for dictation and to talk to Cortana and other apps that use Microsoft cloud-based speech recognition. Microsoft will use voice input to help improve our speech services. If the policy value is set to 0, online speech recognition will be disabled and users cannot enable online speech recognition via settings. If policy value is set to 1 or is not configured, control is deferred to users.
 
 Most restricted value is 0.
 
@@ -450,7 +450,7 @@ ADMX Info:
 The following list shows the supported values:
 
 -   0 – Not allowed.
--   1 (default) – Allowed.
+-   1 (default) – Choice deferred to user's preference.
 
 <!--/SupportedValues-->
 <!--/Policy-->
