@@ -1,13 +1,13 @@
 ---
 description: Microsoft Edge now has new Group Policies and MDM Settings for IT administrators to configure Microsoft Edge. The new policies allow you to enable/disabled full-screen mode, printing, favorites bar, saving history. You can also prevent certificate error overrides, and configure New tab page, Home button and startup options, as well as manage extensions.
 ms.assetid: 
-author: shortpatti
-ms.author: pashort
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
 title: New Microsoft Edge Group Policies and MDM settings
-ms.localizationpriority: 
+ms.localizationpriority: medium
+author: shortpatti
+ms.author: pashort
 ms.date: 07/25/2018 
 ---
 
@@ -18,7 +18,7 @@ ms.date: 07/25/2018
 
 The Microsoft Edge team introduces new Group Policies and MDM Settings for the Windows 10 Insider Preview Build 17713+. The new policies allow IT administrators to enable/disable full-screen mode, printing, favorites bar, saving history. You can also prevent certificate error overrides, and configure New tab page, Home button and startup options, as well as manage extensions.
 
-We are discontinuing the use of the **Configure Favorites** group policy. Use the **[Provision Favorites](available-policies.md#provision-favorites)** instead. 
+We are discontinuing the **Configure Favorites** group policy. Use the **[Provision Favorites](available-policies.md#provision-favorites)** instead. 
 
 
 
@@ -26,14 +26,14 @@ We are discontinuing the use of the **Configure Favorites** group policy. Use th
 >> 
 >>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**_Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\_**
 <p>
-<!-- add links to the below policies -->
+<!-- links to the policies -->
 
 
 | **Group Policy** | **New/update?** | **MDM Setting** | **New/update?** |
 | --- | --- | --- | --- |
 | [Allow fullscreen mode](#allow-fullscreen-mode) | New |  [AllowFullscreen](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowfullscreenmode) | New |
 | [Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed](#allow-prelaunch) | New | [AllowPrelaunch](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowprelaunch) | New |
-| [Allow Microsoft Edge to start and load the Start and New Tab page at Windows startup and each time Microsoft Edge is closed](#allow-microsoft-edge-to-start-and-load-the-start-and-new-tab-page-at-windows-startup-and-each-time-microsoft-edge-is-closed) | New | [AllowTabPreloading](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowtabpreloading) | New |
+| [Allow Microsoft Edge to load the Start and New Tab page at Windows startup and each time Microsoft Edge is closed](#allow-microsoft-edge-to-start-and-load-the-start-and-new-tab-page-at-windows-startup-and-each-time-microsoft-edge-is-closed) | New | [AllowTabPreloading](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowtabpreloading) | New |
 | [Allow printing](#allow-printing) | New |  [AllowPrinting](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowprinting) | New |
 | [Allow Saving History](#allow-saving-history) | New | [AllowSavingHistory](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsavinghistory) | New |
 | [Allow sideloading of Extensions](#allow-sideloading-of-extensions) | New | [AllowSideloadingExtensions](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsideloadingofextensions) | New |
@@ -44,10 +44,10 @@ We are discontinuing the use of the **Configure Favorites** group policy. Use th
 | [Configure kiosk mode](#configure-kiosk-mode) | New |  [ConfigureKioskMode](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode) | New |
 | [Configure kiosk reset after idle timeout](#configure-kiosk-reset-after-idle-timeout) | New |  [ConfigureKioskResetAfterIdleTimeout](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configurekioskresetafteridletimeout) | New |
 | [Configure Open Microsoft Edge With](#configure-open-microsoft-edge-with) | New | [ConfigureOpenEdgeWith](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configureopenmicrosoftedgewith) | New |
-| [Do not sync browser settings](available-policies.md#do-not-sync-browser-settings) | -- | Experience/DoNotSyncBrowserSetting  | New |
+| [Do not sync browser settings](available-policies.md#do-not-sync-browser-settings) | -- | [Experience/DoNotSyncBrowserSettings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-donotsyncbrowsersetting)  | New |
 | [Prevent certificate error overrides](#prevent-certificate-error-overrides) | New | [PreventCertErrorOverrides](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-preventcerterroroverrides) | New |
 | [Prevent users from turning on browser syncing](#preventusersfromturningonbrowsersyncing) | New | Experience/PreventUsersFromTurningOnBrowserSyncing | New |
-| [Prevent turning off required extensions](#prevent-turning-off-required-extensions) | New | PreventTurningOffRequiredExtensions | New |
+| [Prevent turning off required extensions](#prevent-turning-off-required-extensions) | New | [PreventTurningOffRequiredExtensions](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-preventusersfromturningonbrowsersyncing) | New |
 | [Set Home button URL](#set-home-button-url) | New | [SetHomeButtonURL](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-sethomebuttonurl) | New |
 | [Set New Tab page URL](#set-new-tab-page-url) | New | [SetNewTabPageURL](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-setnewtabpageurl) | New |
 | [Show message when opening sites in Internet Explorer](#showmessagewhenopeninginteretexplorersites) | Updated | [ShowMessageWhenOpeningSitesInInternetExplorer](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-showmessagewhenopeningsitesininternetexplorer) | Updated |
@@ -63,7 +63,7 @@ We are discontinuing the use of the **Configure Favorites** group policy. Use th
 ## Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed
 [!INCLUDE [allow-prelaunch-include](includes/allow-prelaunch-include.md)]
 
-## Allow Microsoft Edge to start and load the Start and New Tab page at Windows startup and each time Microsoft Edge is closed
+## Allow Microsoft Edge to load the Start and New Tab page at Windows startup and each time Microsoft Edge is closed
 [!INCLUDE [allow-tab-preloading-include](includes/allow-tab-preloading-include.md)]
 
 ## Allow printing
@@ -74,7 +74,6 @@ We are discontinuing the use of the **Configure Favorites** group policy. Use th
 
 ## Allow sideloading of Extensions
 [!INCLUDE [allow-sideloading-extensions-include.md](includes/allow-sideloading-extensions-include.md)]
-
 
 ## Configure collection of browsing data for Microsoft 365 Analytics
 [!INCLUDE [configure-browser-telemetry-for-m365-analytics-include](includes/configure-browser-telemetry-for-m365-analytics-include.md)]
