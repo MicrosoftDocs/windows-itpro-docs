@@ -22,7 +22,6 @@ This section describes the settings that you can configure in [provisioning pack
 [AccountManagement](wcd-accountmanagement.md) |  |  |  | X |  |
 | [Accounts](wcd-accounts.md) | X | X | X | X | X |
 | [ADMXIngestion](wcd-admxingestion.md) | X | | | | |
-| [ApplicationManagement](wcd-applicationmanagement.md) |  |  |  |  | X |
 | [AssignedAccess](wcd-assignedaccess.md) | X |  | | X | |
 | [AutomaticTime](wcd-automatictime.md) | | X | | | |
 | [Browser](wcd-browser.md) | X | X | X | X |  |

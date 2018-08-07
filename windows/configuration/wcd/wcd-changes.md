@@ -41,6 +41,11 @@ Settings added in Windows 10, version 1809
     - SetHomeButtonURL
     - SetNewTabPageURL
     - UnlockHomeButton
+- [Policies > Authentication:](wcd-policies.md#authentication)
+    - AllowFastReconnect
+    - EnableFastFirstSignin
+    - EnableWebSignin
+    - Preferred AadTenanceDomainName
 - [UnifiedWriteFilter > OverlayFlags](wcd-unifiedwritefilter.md#overlayflags)
 - [UnifiedWriteFilter > ResetPersistentState](wcd-unifiedwritefilter.md#resetpersistentstate)
 - [WindowsHelloForBusiness](wcd-windowshelloforbusiness.md)
