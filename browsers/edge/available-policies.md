@@ -16,6 +16,10 @@ ms.date: 07/20/2018
 
 > Applies to: Windows 10, Windows 10 Mobile
 
+Set up a policy setting once and then copy that setting onto many computers.
+
+
+
 Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings. Group Policy objects (GPOs) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences.
 
 By using Group Policy and Intune, you can set up a policy setting once, and then copy that setting onto many computers. For example, you can set up multiple security settings in a GPO that is linked to a domain, and then apply all of those settings to every computer in the domain.
