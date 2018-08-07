@@ -45,6 +45,29 @@ Settings added in Windows 10, version 1809
     - EnableFastFirstSignin
     - EnableWebSignin
     - PreferredAadTenantDomainName
+- [Policies > DeliveryOptimization:](wcd-policies.md#deliveryoptimization)
+    - DODelayBackgroundDownloadFromHttp
+    - DODelayForegroundDownloadFromHttp
+    - DOGroupIdSource
+    - DOPercentageMaxBackDownloadBandwidth
+    - DOPercentageMaxForeDownloadBandwidth
+    - DORestrictPeerSelectionsBy
+    - DOSetHoursToLimitBackgroundDownloadBandwidth
+    - DOSetHoursToLimitForegroundDownloadBandwidth
+- [Policies > KioskBrowser](wcd-policies.md#kioskbrowser) > EnableEndSessionButton
+- [Policies > Search](wcd-policies.md#search) > DoNotUseWebResults
+- [Policies > System:](wcd-policies.md#system)
+    - DisableDeviceDelete
+    - DisableDiagnosticDataViewer
+- [Policies > Update:](wcd-policies.md#update)
+    - AutoRestartDeadlinePeriodInDaysForFeatureUpdates
+    - EngagedRestartDeadlineForFeatureUpdates
+    - EngagedRestartSnoozeScheduleForFeatureUpdates
+    - EngagedRestartTransitionScheduleForFeatureUpdates
+    - ExcludeWUDriversInQualityUpdate
+    - SetDisablePauseUXAccess
+    - SetDisableUXWUAccess
+    - UpdateNotificationLevel
 - [UnifiedWriteFilter > OverlayFlags](wcd-unifiedwritefilter.md#overlayflags)
 - [UnifiedWriteFilter > ResetPersistentState](wcd-unifiedwritefilter.md#resetpersistentstate)
 - [WindowsHelloForBusiness](wcd-windowshelloforbusiness.md)
