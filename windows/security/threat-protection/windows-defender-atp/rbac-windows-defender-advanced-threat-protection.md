@@ -16,10 +16,7 @@ ms.date: 05/08/2018
 # Manage portal access using role-based access control
 **Applies to:**
 
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
+
 - Azure Active Directory
 - Office 365
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)

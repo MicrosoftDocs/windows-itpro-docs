@@ -16,10 +16,7 @@ ms.date: 04/24/2018
 # Assign user access to Windows Defender Security Center
 **Applies to:**
 
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
+
 - Azure Active Directory
 - Office 365
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)

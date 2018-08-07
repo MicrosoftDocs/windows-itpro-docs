@@ -17,10 +17,7 @@ ms.date: 04/24/2018
 
 **Applies to:**
 
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
+
 - macOS
 - Linux
 - Windows Server 2012 R2

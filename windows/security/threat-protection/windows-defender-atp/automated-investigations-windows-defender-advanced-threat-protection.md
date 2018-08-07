@@ -17,10 +17,7 @@ ms.date: 05/21/2018
 
 **Applies to:**
 
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
+
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 BENNY: look at this page and see if there are "settings/ configurations" if yes, point them to the settings page and remove it from here.
