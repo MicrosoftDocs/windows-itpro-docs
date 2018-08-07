@@ -39,6 +39,7 @@ Topic | Description
 [Security posture](../securityposture.md)| Assess the security posture of your organization, see where attention is required, and apply the recommended action to contain attacks, increase your organizational resilience, and prevent specific threats.
 [Management and APIs]() | Learn about the tools you can use to manage, integrate with, such as APIs, SIEM connectors, reporting, and others. 
 [Microsoft threat protection](../integration.md)| The platform is designed to integrate well with other Microsoft products. Learn about how you can maximize other Microsoft security offerings to further expand your security coverage.
+Troubleshoot Windows Defender ATP | Learn how to address issues that you might encounter while using the platform.
 
 ## Related topic
 [Windows Defender ATP helps detect sophisticated threats](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
