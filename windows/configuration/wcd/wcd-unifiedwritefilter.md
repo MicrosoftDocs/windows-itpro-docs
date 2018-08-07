@@ -67,6 +67,7 @@ Use **Remove** to remove a registry entry from the exclusion list after you rest
 
 ## ResetPersistentState
 
+Set to **True** to reset UWF settings to the original state that was captured at installation time.
 
 ## Volumes
 
