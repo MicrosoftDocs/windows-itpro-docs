@@ -76,7 +76,7 @@ Settings added in Windows 10, version 1809
 Settings removed in Windows 10, version 1809
 
 - [CellCore](wcd-cellcore.md)
-- [Policies > Browser > AllowBrowser](wcd-policies.md#browser)
+- [Policies > Browser:](wcd-policies.md#browser)
     - AllowBrowser
     - PreventTabReloading
 
