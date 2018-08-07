@@ -161,7 +161,7 @@
 #### [Enable and configure always-on protection and monitoring](../windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus.md)
 
 
-## [Endpoint detection and response - Tomer B.](../faketopic.md)
+## [Endpoint detection and response - Tomer B.](../edr.md)
 ###Alerts queue
 #### [View and organize the Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
 #### [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md)

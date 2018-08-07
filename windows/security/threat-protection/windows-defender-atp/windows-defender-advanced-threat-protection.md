@@ -29,7 +29,7 @@ The Windows Defender ATP platform is where all the capabilities that are availab
 
 Topic | Description
 :---|:---
-Get started | Learn about the requirements of the platform and the intial steps you need to take to get started with Windows Defender ATP.
+[Get started](../get-started.md) | Learn about the requirements of the platform and the intial steps you need to take to get started with Windows Defender ATP.
 [Onboard and configure machines to Windows Defender ATP](../onboard.md)| Onboard to the sensor, configure the indivual capabilities in Windows Defender ATP. 
 [Windows Defender Security Center](use-windows-defender-advanced-threat-protection.md)| Understand how to use the Windows Defender Security Center portal and the capabilities you can leverage to better protect your organization.
 [Attack surface reduction](../windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md) | Leverage the intrusion prevention capabilities such as application control, exploit protection, and others to manage and reduce the attack surface of your organization.
