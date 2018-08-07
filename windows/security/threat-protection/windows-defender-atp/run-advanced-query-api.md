@@ -31,7 +31,7 @@ This API is a beta version only and is currently restricted
 3. The nu​mber of executions is limited​ (up to 15 minutes every hour and 4 hours a day)
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Create your app](exposed-apis-intro.md#create-an-app)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Windows Defender ATP APIs](exposed-apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -127,8 +127,10 @@ Content-Type: application/json​
 - (403) Forbidden.
 	
 	If you get this error when calling WDATP API, your token probably does not include the necessary permission,
-	[Check the permissions](exposed-apis-intro.md#validate-the-token) included in your token.
-	If the 'roles' section in the token does not include the necessary permission, either you did not add the necessary permission to your app (refer to step 6 in [Create your app](exposed-apis-intro.md#create-an-app)) or you did not authorized your app in the tenant (refer to [Application consent](exposed-apis-intro.md#application-consent))
+	Check [app permissions](exposed-apis-create-app-webapp.md#validate-the-token) or [delegated permissions](exposed-apis-create-app-nativeapp.md#validate-the-token) included in your token.
+	If the 'roles' section in the token does not include the necessary permission, 
+		- either you did not add the necessary permission to your app (refer to [Access Windows Defender ATP without a user](exposed-apis-create-app-webapp.md#create-an-app) or [Access Windows Defender ATP on behalf of a user](exposed-apis-create-app-nativeapp.md#create-an-app)) 
+		- or you did not authorized your app in the tenant (refer to [Application consent](exposed-apis-create-app-webapp.md#application-consent))
 
 
 ## Related topic
