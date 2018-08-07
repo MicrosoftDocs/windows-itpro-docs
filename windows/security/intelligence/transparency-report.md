@@ -22,16 +22,15 @@ Millions of devices are protected from malware outbreaks and cyberattacks every 
 Test scores, real-world performance, and tight integration with the platform as well as other security technologies are the main reasons why Windows Defender ATP antivirus capabilities is [gaining a foothold in the enterprise market](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10). 
 
 
-
 ## AV-TEST
-
-AV-TEST is an independent IT security institute from Germany and has been testing internationally relevant IT security products for over 15 years.
 
 The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The scores listed below are for the protection category against malware infections which has two scores, the AV-Test reference set (known as just "prevalent malware") and the real world testing.
 
 **Real-world testing** refers to protection against zero-day malware attacks, inclusive of web and email threats.
 
 **Prevalent malware** refers to detection of widespread and prevalent malware discovered in the last 4 weeks.
+
+The below scores are the results of AV-TEST tests on **Windows Defender ATP antivirus capabilities**.
 
 |Month (2018)|Real World test score| Prevalent malware test score | AV-Test report| Microsoft analysis|
 |---|---|---|---|---|
@@ -44,8 +43,6 @@ June|100.00%| 100.00%| [Report (May-Jun)](https://www.av-test.org/en/antivirus/b
 
 ### Graphs
 
-The graphs below show Windows Defender AV's detection rates in “Real World” and “Prevalent malware” testing over a six month period.
-
 ![Real World](./images/RealWorld0818.png)
 ![Prevalent Malware](./images/PrevalentMalware0818.png)
 
@@ -57,8 +54,9 @@ The **blocked** category tests whether malware was successfully blocked by AV.
 
 The  **Real-World Protection Test (Enterprise)** evaluates the “real-world” protection capabilities with default settings. The goal is to find out whether the security software protects the computer by either hindering the malware from changing any systems or remediating all changes if any were made.
 
-
 The **Malware Protection Test Enterprise** assesses a security program’s ability to protect a system against infection by malicious files before, during or after execution. It is only tested every *six months*.
+
+The below scores are the results of AV Comparatives tests on **Windows Defender ATP antivirus capabilities**.
 
 |Month (2018)| Real World (blocked) test score| Malware (blocked) test score|
 |---|---|---|
