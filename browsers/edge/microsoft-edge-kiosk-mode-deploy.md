@@ -6,7 +6,7 @@ ms.author: pashort
 ms.prod: edge
 ms.sitesec: library
 title: Deploy Microsoft Edge kiosk mode
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 07/25/2018 
 ---
 
@@ -137,7 +137,7 @@ With this method, you can use Microsoft Intune or other MDM services to configur
 
 1.  In Microsoft Intune or other MDM service, configure [AssignedAccess](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) to prevent users from accessing the file system, running executables, or other apps.
 
-2.  Configure the following MDM settings to control a web browser app on the kiosk device.
+2.  Configure the following MDM settings to control a web browser app on the kiosk device and then restart the device.
 
     |   |   |
     |---|---|
@@ -149,7 +149,6 @@ With this method, you can use Microsoft Intune or other MDM services to configur
     | **[SetHomeButtonURL](new-policies.md#set-home-button-url)**<p>![](images/icon-thin-line-computer.png)    | If you set ConfigureHomeButton to 2, configure the home button URL.<p><p>**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetHomeButtonURL <p>**Data type:** String<p>**Allowed values:** Enter a URL, for example, https://www.bing.com    |
     ---
 <br>
-3.  Restart the device and sign in using the kiosk app user account.
 
 **_Congratulations!_** You’ve finished setting up a kiosk or digital signage and configuring policies for Microsoft Edge kiosk mode using Microsoft Intune or other MDM service.
 
@@ -216,7 +215,7 @@ Use any of the Microsoft Edge policies listed below to enhance the kiosk experie
 | [AllowSideloadingOfExtensions](new-policies.md#allow-sideloading-of-extensions)\*                                         | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
 | [AllowSmartScreen](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen)                                                       | ![Supported](images/148767.png)     | ![Supported](images/148767.png)     | ![Supported](images/148767.png)      | ![Supported](images/148767.png)   |
 | [AllowSyncMySettings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-allowsyncmysettings)                                                    | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Supported](images/148767.png)   |
-| [AllowTabPreloading](new-policies.md#allow-microsoft-edge-to-start-and-load-the-start-and-new-tab-page-at-windows-startup-and-each-time-microsoft-edge-is-closed)\*                                                   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
+| [AllowTabPreloading](new-policies.md#allow-microsoft-edge-to-load-the-start-and-new-tab-page-at-windows-startup-and-each-time-microsoft-edge-is-closed)\*                                                   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
 | [AllowWebContentOnNewTabPage](available-policies.md#allow-web-content-on-new-tab-page)\*                                          | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
 | [AlwaysEnabledBooksLibrary](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-alwaysenablebookslibrary)                                              | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |
 | [ClearBrowsingDataOnExit](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-clearbrowsingdataonexit)                                                | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)   | ![Not supported](images/148766.png)    | ![Supported](images/148767.png)   |

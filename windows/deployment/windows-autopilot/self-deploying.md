@@ -7,7 +7,7 @@ ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype:
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: coreyp-at-msft
 ms.author: coreyp
 ms.date: 06/01/2018
