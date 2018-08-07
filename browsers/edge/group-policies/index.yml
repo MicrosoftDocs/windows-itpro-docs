@@ -14,9 +14,9 @@ metadata:
 
   text: Some of the features coming to Microsoft Edge gives you the ability to set a custom URL for the New tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar. 
 
-  keywords: Microsoft Edge, Windows 10
+  keywords: Microsoft Edge, Windows 10, Windows 10 Mobile
 
-  ms.localizationpriority: high
+  ms.localizationpriority: medium
 
   author: shortpatti
 

@@ -1,13 +1,13 @@
 ---
 description: Microsoft Edge now has new Group Policies and MDM Settings for IT administrators to configure Microsoft Edge. The new policies allow you to enable/disabled full-screen mode, printing, favorites bar, saving history. You can also prevent certificate error overrides, and configure New tab page, Home button and startup options, as well as manage extensions.
 ms.assetid: 
-author: shortpatti
-ms.author: pashort
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
 title: New Microsoft Edge Group Policies and MDM settings
-ms.localizationpriority: 
+ms.localizationpriority: medium
+author: shortpatti
+ms.author: pashort
 ms.date: 07/25/2018 
 ---
 
@@ -26,7 +26,7 @@ We are discontinuing the **Configure Favorites** group policy. Use the **[Provis
 >> 
 >>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**_Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Edge\\_**
 <p>
-<!-- add links to the below policies -->
+<!-- links to the policies -->
 
 
 | **Group Policy** | **New/update?** | **MDM Setting** | **New/update?** |
@@ -44,10 +44,10 @@ We are discontinuing the **Configure Favorites** group policy. Use the **[Provis
 | [Configure kiosk mode](#configure-kiosk-mode) | New |  [ConfigureKioskMode](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode) | New |
 | [Configure kiosk reset after idle timeout](#configure-kiosk-reset-after-idle-timeout) | New |  [ConfigureKioskResetAfterIdleTimeout](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configurekioskresetafteridletimeout) | New |
 | [Configure Open Microsoft Edge With](#configure-open-microsoft-edge-with) | New | [ConfigureOpenEdgeWith](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-configureopenmicrosoftedgewith) | New |
-| [Do not sync browser settings](available-policies.md#do-not-sync-browser-settings) | -- | Experience/DoNotSyncBrowserSettings  | New |
+| [Do not sync browser settings](available-policies.md#do-not-sync-browser-settings) | -- | [Experience/DoNotSyncBrowserSettings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-donotsyncbrowsersetting)  | New |
 | [Prevent certificate error overrides](#prevent-certificate-error-overrides) | New | [PreventCertErrorOverrides](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-preventcerterroroverrides) | New |
 | [Prevent users from turning on browser syncing](#preventusersfromturningonbrowsersyncing) | New | Experience/PreventUsersFromTurningOnBrowserSyncing | New |
-| [Prevent turning off required extensions](#prevent-turning-off-required-extensions) | New | PreventTurningOffRequiredExtensions | New |
+| [Prevent turning off required extensions](#prevent-turning-off-required-extensions) | New | [PreventTurningOffRequiredExtensions](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-preventusersfromturningonbrowsersyncing) | New |
 | [Set Home button URL](#set-home-button-url) | New | [SetHomeButtonURL](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-sethomebuttonurl) | New |
 | [Set New Tab page URL](#set-new-tab-page-url) | New | [SetNewTabPageURL](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-setnewtabpageurl) | New |
 | [Show message when opening sites in Internet Explorer](#showmessagewhenopeninginteretexplorersites) | Updated | [ShowMessageWhenOpeningSitesInInternetExplorer](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-browser#browser-showmessagewhenopeningsitesininternetexplorer) | Updated |
@@ -74,7 +74,6 @@ We are discontinuing the **Configure Favorites** group policy. Use the **[Provis
 
 ## Allow sideloading of Extensions
 [!INCLUDE [allow-sideloading-extensions-include.md](includes/allow-sideloading-extensions-include.md)]
-
 
 ## Configure collection of browsing data for Microsoft 365 Analytics
 [!INCLUDE [configure-browser-telemetry-for-m365-analytics-include](includes/configure-browser-telemetry-for-m365-analytics-include.md)]

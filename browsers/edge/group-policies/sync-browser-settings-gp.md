@@ -3,7 +3,7 @@ title: Microsoft Edge - Sync browser settings options
 description: By default, the “browser” group syncs automatically between the user’s devices, letting users make changes.
 ms.author: pashort
 author: shortpatti
-ms.date: 07/23/2018
+ms.date: 08/06/2018
 ---
 
 # Sync browser settings options 
@@ -13,9 +13,8 @@ By default, the “browser” group syncs automatically between the user’s dev
 
 
 ## Relevant policies
-- [Do not sync browser settings](../available-policies.md#do-not-sync-browser-settings) 
-
-- [Prevent users from turning on browser syncing](../new-policies.md#prevent-users-from-turning-on-browser-syncing) 
+- [Do not sync browser settings](#do-not-sync-browser-settings)
+- [Prevent users from turning on browser syncing](#prevent-users-from-turning-on-browser-syncing)
 
 
 ## Configuration options
@@ -27,6 +26,13 @@ By default, the “browser” group syncs automatically between the user’s dev
 
 ## Verify the configuration
 To verify if syncing is turned on or off:
-1. In the upper-right corner of Microsoft Edge, click the ellipses \(**...**\).
+1. In the upper-right corner of Microsoft Edge, click **More** \(**...**\).
 2. Click **Settings**.
 3. Under Account, see if the setting is toggled on or off.<p>![Verify configuration](../images/sync-settings.PNG)
+
+
+## Do not sync browser settings
+[!INCLUDE [do-not-sync-browser-settings-include](../includes/do-not-sync-browser-settings-include.md)]
+
+## Prevent users from turning on browser syncing
+[!INCLUDE [prevent-users-to-turn-on-browser-syncing-include](../includes/prevent-users-to-turn-on-browser-syncing-include.md)]
