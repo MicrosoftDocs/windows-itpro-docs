@@ -27,11 +27,7 @@ For more details about configuring the browser syncing options, see [Sync browse
 - **GP ADMX file name:** SettingSync.admx
 
 #### MDM settings
-<<<<<<< HEAD
 - **MDM name:** [Experience/DoNotSyncBrowserSettings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-donotsyncbrowsersetting)
-=======
-- **MDM name:** [Experience/DoNotSyncBrowserSettings](../available-policies.md#do-not-sync-browser-settings)
->>>>>>> 5fa3b7b039c599d82dd9013a4b2092f20578f503
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Experience/DoNotSyncBrowserSettings
 - **Data type:** Integer
