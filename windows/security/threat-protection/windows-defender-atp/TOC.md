@@ -1,7 +1,7 @@
 # [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md)
 
 
-## [Get started](../fake2.md)
+## [Get started](../get-started.md)
 ### [Minimum requirements](minimum-requirements-windows-defender-advanced-threat-protection.md)
 ### [Validate licensing and complete setup](licensing-windows-defender-advanced-threat-protection.md)
 ### [Troubleshoot subscription and portal access issues](troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
