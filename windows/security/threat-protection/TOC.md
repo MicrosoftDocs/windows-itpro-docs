@@ -189,7 +189,7 @@
 
 
 
-### [Endpoint detection and response - Tomer B.](faketopic.md)
+### [Endpoint detection and response - Tomer B.](edr.md)
 ####Alerts queue
 ##### [View and organize the Alerts queue](windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection.md)
 ##### [Manage alerts](windows-defender-atp/manage-alerts-windows-defender-advanced-threat-protection.md)
@@ -243,8 +243,8 @@
 
 
 ###Security posture
-#### [Secure posture - Evald](windows-defender-atp\secure-score-dashboard-windows-defender-advanced-threat-protection.md)
-#### [View the Threat analytics dashboard and take recommended mitigation actions - Evald](windows-defender-atp\threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
+#### [Secure posture - Evald](windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection.md)
+#### [View the Threat analytics dashboard and take recommended mitigation actions - Evald](windows-defender-atp/threat-analytics-dashboard-windows-defender-advanced-threat-protection.md)
 
 
 

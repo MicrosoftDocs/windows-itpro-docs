@@ -10,15 +10,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 07/12/2018
+ms.date: 09/12/2018
 ---
 
 # Windows Defender Advanced Threat Protection
-
-**Applies to:**
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-main-abovefoldlink)
 >
@@ -34,13 +29,16 @@ The Windows Defender ATP platform is where all the capabilities that are availab
 
 Topic | Description
 :---|:---
-[Windows Defender Security Center](windows-defender-security-center-atp.md) | Windows Defender Security Center is the portal where you can access Windows Defender Advanced Threat Protection capabilities. It gives enterprise security operations teams a single pane of glass experience to help secure networks.
-[Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) | Windows Defender Antivirus is a built-in antimalware solution that provides security and antimalware management for desktops, portable computers, and servers.
-[Windows Defender Exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard) | Windows Defender Exploit Guard (Windows Defender EG) is a new set of host intrusion prevention capabilities for Windows 10, allowing you to manage and reduce the attack surface of apps used by your employees.
-[Windows Defender Application Control](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Windows Defender Application Control (WDAC) can help mitigate security threats by restricting the applications that users are allowed to run and the code that runs in the System Core (kernel). 
-[Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview) | Windows Defender Application Guard helps to isolate enterprise-defined untrusted sites, protecting your company while your employees browse the Internet. 
-
-
+Get started | Learn about the requirements of the platform and the intial steps you need to take to get started with Windows Defender ATP.
+[Onboard and configure machines to Windows Defender ATP](../onboard.md)| Onboard to the sensor, configure the indivual capabilities in Windows Defender ATP. 
+[Windows Defender Security Center](use-windows-defender-advanced-threat-protection.md)| Understand how to use the Windows Defender Security Center portal and the capabilities you can leverage to better protect your organization.
+[Attack surface reduction](../windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md) | Leverage the intrusion prevention capabilities such as application control, exploit protection, and others to manage and reduce the attack surface of your organization.
+[Next generation protection](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md) | Learn about the antivirus, machine learning, and other capabilities to further reinforce the security perimeter of your organization. 
+[Endpoint detection and response](../edr.md)| Detect, investigate, and respond to advanced threats that may have made it past the first two security pillars using the endpoint detection and response capabilities.
+[Auto investigation](automated-investigations-windows-defender-advanced-threat-protection.md)| Reduce the volume of alerts that need to be investigated individually by leveraging the auto investigation capability.
+[Security posture](../securityposture.md)| Assess the security posture of your organization, see where attention is required, and apply the recommended action to contain attacks, increase your organizational resilience, and prevent specific threats.
+[Management and APIs]() | Learn about the tools you can use to manage, integrate with, such as APIs, SIEM connectors, reporting, and others. 
+[Microsoft threat protection](../integration.md)| The platform is designed to integrate well with other Microsoft products. Learn about how you can maximize other Microsoft security offerings to further expand your security coverage.
 
 ## Related topic
 [Windows Defender ATP helps detect sophisticated threats](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
