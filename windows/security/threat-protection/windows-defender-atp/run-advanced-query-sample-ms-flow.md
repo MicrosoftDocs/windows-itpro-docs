@@ -21,7 +21,7 @@ ms.date: 30/07/2018
 
 Schedule advanced query.
 
->**Prerequisite**: You first need to [create an app](exposed-apis-windows-defender-advanced-threat-protection-new.md).
+>**Prerequisite**: You first need to [create an app](exposed-apis-intro.md).
 
 ## Use case
 
@@ -81,6 +81,6 @@ You can find below the full definition
 ![Image of E2E flow](images/ms-flow-e2e.png)
 
 ## Related topic
-- [Advanced Hunting API](run-advanced-query-windows-defender-advanced-threat-protection.md)
-- [Advanced Hunting using PowerShell](run-advanced-query-windows-defender-advanced-threat-protection-sample-powershell.md)
-- [Create your app](exposed-apis-windows-defender-advanced-threat-protection-new.md)
+- [Windows Defender ATP APIs](exposed-apis-intro.md)
+- [Advanced Hunting API](run-advanced-query-api.md)
+- [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
