@@ -24,7 +24,7 @@ For more details about configuring the browser syncing options, see [Sync browse
 - **GP ADMX file name:** MicrosoftEdge.admx
 
 #### MDM settings
-- **MDM name:** Experience/[PreventUsersFromTurningOnBrowserSyncing](../new-policies.md#prevent-users-from-turning-on-browser-syncing)
+- **MDM name:** Experience/[PreventUsersFromTurningOnBrowserSyncing](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-preventusersfromturningonbrowsersyncing)
 - **Supported devices:** Desktop
 - **URI full path:** ./Vendor/MSFT/Policy/Config/Experience/PreventUsersFromTurningOnBrowserSyncing 
 - **Data type:** String
