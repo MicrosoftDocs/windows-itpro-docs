@@ -15,11 +15,11 @@ ms.date: 30/07/2018
 
 # Advanced Hunting using Python
 
-Run advanced queries using Python. Please read about [Advanced Hunting API](run-advanced-query-windows-defender-advanced-threat-protection.md) before.
+Run advanced queries using Python. Please read about [Advanced Hunting API](run-advanced-query-api.md) before.
 
 In this section we share Python samples to retrieve a token and use it to run a query.
 
->**Prerequisite**: You first need to [create an app](exposed-apis-windows-defender-advanced-threat-protection-new.md).
+>**Prerequisite**: You first need to [create an app](exposed-apis-intro.md).
 
 ## Get token
 
@@ -136,7 +136,7 @@ outputFile.close()
 
 
 ## Related topic
-- [Advanced Hunting API](run-advanced-query-windows-defender-advanced-threat-protection.md)
-- [Advanced Hunting using PowerShell](run-advanced-query-windows-defender-advanced-threat-protection-sample-powershell.md)
-- [Schedule Advanced Hunting](run-advanced-query-windows-defender-advanced-threat-protection-sample-ms-flow.md)
-- [Create your app](exposed-apis-windows-defender-advanced-threat-protection-new.md)
+- [Windows Defender ATP APIs](exposed-apis-intro.md)
+- [Advanced Hunting API](run-advanced-query-api.md)
+- [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
+- [Schedule Advanced Hunting](run-advanced-query-sample-ms-flow.md)
