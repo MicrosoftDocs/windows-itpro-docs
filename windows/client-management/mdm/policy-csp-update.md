@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/30/2018
+ms.date: 08/06/2018
 ---
 
 # Policy CSP - Update
@@ -428,7 +428,7 @@ The following list shows the supported values:
 -   3 – Auto install and restart at a specified time. The IT specifies the installation day and time. If no day and time are specified, the default is 3 AM daily. Automatic installation happens at this time and device restart happens after a 15-minute countdown. If the user is logged in when Windows is ready to restart, the user can interrupt the 15-minute countdown to delay the restart.
 -   4 – Auto install and restart without end-user control. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This setting option also sets the end-user control panel to read-only.
 -   5 – Turn off automatic updates.
-
+-   6 - When AllowAutoUpdate is set to 6, Windows will automatically check, download, and install updates. The device will reboot as per Windows default settings unless configured by other policies. (Added Windows 10, next major version). 
 <!--/SupportedValues-->
 <!--/Policy-->
 
