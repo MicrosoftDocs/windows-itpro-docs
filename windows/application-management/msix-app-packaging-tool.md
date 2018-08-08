@@ -23,10 +23,14 @@ The MSIX Packaging Tool (Preview) is now available to install from the Microsoft
 - A valid MSA alias (to access the app from the Store) 
 
 ## What's new
-- Moved "Send Feedback" to a top-level page in settings for better visibility.
-- "Settings" saves now persist across app launches.
-- Changing default save location is now supported through Settings menu.
-- All pop ups now have a uniform size.
+v1.2018.807.0
+- Ability to add/edit/remove file and registry exclusion items is now supported in Settings menu.
+- Fixed an issue where signing in with password protected certificates would fail in the tool.
+- Fixed an issue where the tool was crashing when editing an existing MSIX package.
+- Fixed an issue where the tool was injecting whitespaces programmatically to install location paths that was causing conversion failures.
+- Minor UI tweaks to add clarity.
+- Minor updates to the logs for added clarity.
+
 
 
 ## Installing the MSIX Packaging Tool
@@ -43,7 +47,6 @@ This is an early preview build and not all features are supported. Here is what 
 
 Features not supported in the tool are currently greyed out. Here are some of the highlighted missing features: 
 
-- Some options in the Settings page, such as adding/removing VFS/VREG and defining a default save location.  
 - Package Support Framework integration. For more detail on how you can use Package Support Framework today, check out the article posted on the [MSIX blog](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftechcommunity.microsoft.com%2Ft5%2FMSIX-Blog%2FMSIX-Package-Support-Framework-is-now-available-on-GitHub%2Fba-p%2F214548&data=02%7C01%7Cpezan%40microsoft.com%7Cbe2761c174cd465136ce08d5f1252d8a%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636680064344941094&sdata=uW3oOOEYQxd0iVgsJkZXZTQwlvf%2FimVCaOdFUXcRoeY%3D&reserved=0). 
 - Packaging on existing virtual machines. You can still install the Tool on a fresh VM, but the tool cannot currently spawn off a conversion from a local machine to an existing VM. 
 - Command Line Interface support  
@@ -64,6 +67,5 @@ Open Feedback Hub. Alternatively, launch the tool and select the **Settings** ge
 1. MSIX Packaging Tool Driver will fail to install if Windows Insider flight ring settings do no match the OS build of the conversion environment. Navigate to Settings, Updates & Security, Windows Insider Program to make sure your Insider preview build settings do not need attention. If you see this message click on the Fix me button to log in again. You might have to go to Windows Update page and check for update before settings change takes effect. Then try to run the tool again to download the MSIX Packaging Tool driver. If you are still hitting issues, try changing your flight ring to Canary or Insider Fast, install the latest Windows updates and try again. 
 2. You cannot edit the manifest manually from within the tool. (edit manifest button is disabled). Please use the SDK tools to unpack the MSIX package to edit the manifest manually.
 3. Restarting the machine during application installation is not supported. Please ignore the restart request if possible or pass an argument to the installer to not require a restart.
-4. Signing the package with Password protected certificates does not work. Please use a non-password protected password in the tool, or use Signtool (available from SDK) to sign your package for sideload testing.
 
 
