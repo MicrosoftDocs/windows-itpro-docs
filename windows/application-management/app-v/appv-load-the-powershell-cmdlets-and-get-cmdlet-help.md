@@ -122,9 +122,14 @@ To configure these cmdlets to require an elevated command prompt, use one of the
 
 To load the Windows PowerShell cmdlet modules:
 
-1.  Open Windows PowerShell or Windows PowerShell Integrated Scripting Environment (ISE).
+1. Open Windows PowerShell or Windows PowerShell Integrated Scripting Environment (ISE).
+2. Enter one of the following cmdlets to load a list of usable cmdlets for the module you want:
 
-2.  Type one of the following commands to load the cmdlets for the module you want:
+|App-v component|Cmdlet to enter|
+|---|---|
+|App-V Server|**Import-Module AppvServer**|
+|App-V Sequencer|**Import-Module AppvSequencer**|
+|App-V Client|**Import-Module AppvClient**|
 
 <table>
 <colgroup>
@@ -157,7 +162,13 @@ To load the Windows PowerShell cmdlet modules:
 
 Starting in App-V 5.0 SP3, cmdlet help is available in two formats:
 
-- **As a downloadable module**: To download the latest help after downloading the cmdlet module, open Windows PowerShell or Windows PowerShell Integrated Scripting Environment (ISE), and type one of the following commands: 
+* **As a downloadable module**: To download the latest help after downloading the cmdlet module, open Windows PowerShell or Windows PowerShell Integrated Scripting Environment (ISE), and type one of the following commands:
+
+|App-v component|Cmdlet to enter|
+|---|---|
+|||
+|||
+|||
 
 <table>
 <colgroup>
@@ -188,17 +199,14 @@ Starting in App-V 5.0 SP3, cmdlet help is available in two formats:
 
 <br>
 
-- **On TechNet as web pages**: See the App-V node under [Microsoft Desktop Optimization Pack Automation with Windows PowerShell](https://technet.microsoft.com/library/dn520245.aspx).
+* **On TechNet as web pages**: See the App-V node under [Microsoft Desktop Optimization Pack Automation with Windows PowerShell](https://technet.microsoft.com/library/dn520245.aspx).
 
-## <a href="" id="bkmk-display-help-cmdlet"></a>Displaying the help for a Windows PowerShell cmdlet
-
+## Displaying the help for a Windows PowerShell cmdlet
 
 To display help for a specific Windows PowerShell cmdlet:
 
-1.  Open Windows PowerShell or Windows PowerShell Integrated Scripting Environment (ISE).
-
-2.  Type **Get-Help** &lt;*cmdlet*&gt;, for example, **Get-Help Publish-AppvClientPackage**.
-
+1. Open Windows PowerShell or Windows PowerShell Integrated Scripting Environment (ISE).
+2. Enter **Get-Help** &lt;*cmdlet*&gt;, for example, **Get-Help Publish-AppvClientPackage**.
 
 ## Have a suggestion for App-V?
 
