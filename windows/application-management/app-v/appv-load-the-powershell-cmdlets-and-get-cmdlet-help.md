@@ -95,6 +95,28 @@ You'll need an elevated command prompt to run the following cmdlets:
 * Add-AppvClientPackage
 * Remove-AppvClientPackage
 * Set-AppvClientConfiguration
+* Add-AppvClientConnectionGroup
+* Remove-AppvClientConnectionGroup
+* Add-AppvPublishingServer
+* Remove-AppvPublishingServer
+* Send-AppvClientReport
+* Set-AppvClientMode
+* Set-AppvClientPackage
+* Set-AppvPublishingServer
+
+### Other cmdlets
+
+The following cmdlets are ones that end-users can run unless you configure them to require an elevated command prompt.
+
+* Publish-AppvClientPackage
+* Unpublish-AppvClientPackage
+
+To configure these cmdlets to require an elevated command prompt, use one of the following methods:
+
+* Run the **Set-AppvClientConfiguration** cmdlet with the *-RequirePublishAsAdmin* parameter. For more information, see the following articles:
+    * [How to manage connection groups on a stand-alone computer by using Windows PowerShell](appv-manage-connection-groups-on-a-stand-alone-computer-with-powershell.md)
+    * [How to manage App-V packages running on a stand-alone computer by using Windows PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#bkmk-admins-pub-pkgs)
+* Enable the “Require publish as administrator” Group Policy setting for App-V Clients. For more information, see [How to publish a package by using the Management Console](appv-publish-a-packages-with-the-management-console.md).
 
 ## Loading the Windows PowerShell cmdlets
 
