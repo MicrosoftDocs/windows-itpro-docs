@@ -8,7 +8,7 @@ ms.pagetype: security
 author: justinha
 ms.author: justinha
 ms.localizationpriority: medium
-ms.date: 07/10/2018
+ms.date: 08/08/2018
 ---
 
 # Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune
@@ -348,14 +348,14 @@ If you're running into compatibility issues where your app is incompatible with 
 ## Manage the WIP protection mode for your enterprise data
 After you've added the apps you want to protect with WIP, you'll need to apply a management and protection mode.
 
-We recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your protected apps list. After you're done, you can change to your final enforcement policy, **Hide Overrides**.
+We recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your protected apps list. After you're done, you can change to your final enforcement policy, **Block**.
 
 >[!NOTE]
 >For info about how to collect your audit log files, see [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md).
 
 **To add your protection mode**
 
-1.	From the **App policy** blade, click the name of your policy, and then click **Required settings** from the menu that appears.
+1.	From the **App protection policy** blade, click the name of your policy, and then click **Required settings** from the menu that appears.
     
     The **Required settings** blade appears.
 
@@ -363,7 +363,7 @@ We recommend that you start with **Silent** or **Allow Overrides** while verifyi
 
     |Mode |Description |
     |-----|------------|
-    |Hide Overrides |WIP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise.|
+    |Block |WIP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise.|
     |Allow Overrides |WIP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log. For info about how to collect your audit log files, see [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md).|
     |Silent |WIP runs silently, logging inappropriate data sharing, without blocking anything that would’ve been prompted for employee interaction while in Allow Override mode. Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still stopped.|
     |Off (not recommended) |WIP is turned off and doesn't help to protect or audit your data.<br><br>After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that your previous decryption and policy info isn’t automatically reapplied if you turn WIP protection back on.|
