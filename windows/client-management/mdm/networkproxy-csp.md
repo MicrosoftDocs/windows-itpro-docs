@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 04/12/2018
+ms.date: 08/08/2018
 ---
 
 # NetworkProxy CSP
@@ -34,7 +34,10 @@ The following diagram shows the NetworkProxy configuration service provider in t
 The root node for the NetworkProxy configuration service provider..</p>
 
 <a href="" id="proxysettingsperuser"></a>**ProxySettingsPerUser**  
-Added in Windows 10, version 1803. When set to 0, it enables proxy configuration as global, machine wide; set to 1 for proxy configuratio per user.
+Added in Windows 10, version 1803. When set to 0, it enables proxy configuration as global, machine wide.
+
+> [!Note]  
+> Per user proxy configuration setting is not supported.
 
 <a href="" id="autodetect"></a>**AutoDetect**  
 Automatically detect settings. If enabled, the system tries to find the path to a PAC script.</p>
