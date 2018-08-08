@@ -1,7 +1,7 @@
 ---
 title: Repackage your existing win32 applications to the MSIX format.
 description: Learn how to install and use the MSIX packaging tool.
-keyboards: ["MSIX", "application", "app", "win32", "packaging tool"]
+keywords: ["MSIX", "application", "app", "win32", "packaging tool"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
