@@ -23,7 +23,7 @@ The MSIX Packaging Tool (Preview) is now available to install from the Microsoft
 - A valid MSA alias (to access the app from the Store) 
 
 ## What's new
-v1.2018.807.0
+v1.2018.808.0
 - Ability to add/edit/remove file and registry exclusion items is now supported in Settings menu.
 - Fixed an issue where signing in with password protected certificates would fail in the tool.
 - Fixed an issue where the tool was crashing when editing an existing MSIX package.
