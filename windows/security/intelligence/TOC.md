@@ -26,7 +26,7 @@
 
 ## [Worms](worms-malware.md)
 
-## [Industry antivirus tests](transparency-report.md)
+# [Industry antivirus tests](transparency-report.md)
 
 # [Industry collaboration programs](cybersecurity-industry-partners.md)
 
