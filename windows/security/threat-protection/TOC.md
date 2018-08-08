@@ -9,7 +9,6 @@
 ### [Get started](get-started.md) | 
 #### [Minimum requirements](windows-defender-atp/minimum-requirements-windows-defender-advanced-threat-protection.md)
 #### [Validate licensing and complete setup](windows-defender-atp\licensing-windows-defender-advanced-threat-protection.md)
-#### [Troubleshoot subscription and portal access issues](windows-defender-atp\troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
 #### [Preview features](windows-defender-atp\preview-windows-defender-advanced-threat-protection.md)
 #### [Data storage and privacy](windows-defender-atp\data-storage-privacy-windows-defender-advanced-threat-protection.md)
 #### [Assign user access to the portal](windows-defender-atp\assign-portal-access-windows-defender-advanced-threat-protection.md)
@@ -44,7 +43,7 @@
 ##### [Run simulated attacks on machines](windows-defender-atp\attack-simulations-windows-defender-advanced-threat-protection.md)
 ##### [Configure proxy and Internet connectivity settings](windows-defender-atp\configure-proxy-internet-windows-defender-advanced-threat-protection.md)
 ##### [Troubleshoot onboarding issues](windows-defender-atp\troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
-
+###### [Troubleshoot subscription and portal access issues](windows-defender-atp\troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
 
 
 
