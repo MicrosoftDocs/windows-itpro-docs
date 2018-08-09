@@ -15,9 +15,12 @@ ms.date: 08/03/2018
 
 [Antivirus capabilities](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10?ocid=cx-blog-mmpc) in Windows Defender Advanced Threat Protection ([Windows Defender ATP](https://www.microsoft.com/windowsforbusiness/windows-atp?ocid=cx-blog-mmpc)) **consistently achieve high scores** from independent tests, displaying how Windows Defender ATP is a top choice in the antivirus market.
 
-Millions of devices are protected from malware outbreaks and cyberattacks every day, sometimes [milliseconds after a campaign starts](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign/). In many cases, customers might not even know they were protected. That is because Windows Defender ATP [next generation protection](https://www.youtube.com/watch?v=Xy3MOxkX_o4) detects and stops malware at first sight by using a model that leverages predictive technologies, [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering/), [artificial intelligence](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak/), behavioral analysis, and other advanced technologies.
+We want to be transparent and have gathered top industry reports that demonstrate our enterprise antivirus capabilities. Note that these tests only provide results for antivirus and do not test for additional security protections.
 
-Test scores, real-world performance, and a unified endpoint security platform are some of the main reasons why [most enterprises use the antivirus capabilities in Windows Defender ATP](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
+In the real world, millions of devices are protected from cyberattacks every day, sometimes [milliseconds after a campaign starts](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign/). In many cases, customers might not even know they were protected. That's because Windows Defender ATP's [next generation protection](https://www.youtube.com/watch?v=Xy3MOxkX_o4) detects and stops malware at first sight by using predictive technologies, [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering/), [artificial intelligence](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak/), behavioral analysis, and other advanced technologies.
+
+Learn why [most enterprises use the antivirus capabilities in Windows Defender ATP](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
+
 
 ## AV-TEST
 
@@ -25,7 +28,7 @@ The AV-TEST Product Review and Certification Report tests on three categories: p
 
 **Real-world testing** refers to protection against zero-day malware attacks, inclusive of web and email threats.
 
-**Prevalent malware** refers to detection of widespread and prevalent malware discovered in the last 4 weeks.
+**Prevalent malware** refers to detection of widespread and prevalent malware discovered in the last four weeks.
 
 The below scores are the results of AV-TEST tests on **Windows Defender ATP antivirus capabilities**.
 
@@ -53,23 +56,29 @@ The **Malware Protection Test Enterprise** assesses a security program’s abili
 
 The below scores are the results of AV-Comparatives tests on **Windows Defender ATP antivirus capabilities**. The scores are specifically for the ability to block malware.
 
-|Month (2018)| Real World test score| Malware test score|
+|Month (2018)| Real-World test score| Malware test score (every 6 months)|
 |---|---|---|
-|January| No test| No test|
-|February| 100.00%| No test|
+|February| 100.00%| N/A|
 |March| 94.40%| 99.90%|
-|April| 96.40%%| No test|
-|May| 100.00%| No test|
-|June| 99.50%%| No test|
+|April| 96.40%%| N/A|
+|May| 100.00%| N/A|
+|June| 99.50%%| N/A|
 
 * [Real-World Protection Test (Enterprise) February - June 2018](https://www.av-comparatives.org/tests/real-world-protection-test-february-june-2018/)
 
 * [Malware Protection Test Enterprise March 2018](https://www.av-comparatives.org/tests/malware-protection-test-enterprise-march-2018-testresult/)
 
-## Protection capabilities not represented in the tests
+## Protection capabilities not represented in tests
 
-It is important to remember that the capabilities within [Windows Defender ATP](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=cx-blog-mmpc) provide [additional layers of protection](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses/) that are not factored into tests. The capabilities such as attack surface reduction and next generation protection help prevent malware from getting onto devices in the first place.
+It is important to remember that the capabilities within [Windows Defender ATP](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=cx-blog-mmpc) provide [additional layers of protection](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses/) that are not factored into tests. The capabilities such as attack surface reduction and endpoint detection & response help prevent malware from getting onto devices in the first place.
 
- To see these capabilities for yourself sign up for a [90-day trial of Windows Defender ATP](https://www.microsoft.com/windowsforbusiness/windows-atp?ocid=cx-blog-mmpc) today, or [enable Preview features on existing tenants](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-settings-windows-defender-advanced-threat-protection).
+These reports test one aspect of the product, just using a single technique. Through these reports, customer can view one aspect of their security suite but can't assess the complete protection of all the security features.
+
+There are other technologies in nearly every Endpoint Security suite that are not tested. These other technologies often address some of the latest and most sophisticated threats.
+
+A holistic approach to security must span across protection, detection and response by supporting all aspects of an infection and attacker behaviors.
+
+Customers need more comprehensive reports that demonstrate end to end protections, but until then customers can evaluate Windows Defender Advanced Threat Protection in their own networks by signing up for a [90-day trial of Windows Defender ATP](https://www.microsoft.com/windowsforbusiness/windows-atp?ocid=cx-blog-mmpc) today, or [enabling Preview features on existing tenants](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-settings-windows-defender-advanced-threat-protection).
+
 
 ![ATP](./images/wdatp-pillars2.png)
