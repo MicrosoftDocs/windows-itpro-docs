@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 07/23/2018
+ms.date: 08/08/2018
 ---
 
 # Policy CSP
@@ -1259,7 +1259,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-experience.md#experience-donotshowfeedbacknotifications" id="experience-donotshowfeedbacknotifications">Experience/DoNotShowFeedbackNotifications</a>
   </dd>
   <dd>
-    <a href="./policy-csp-experience.md#experience-donotsyncbrowsersetting" id="experience-donotsyncbrowsersetting">Experience/DoNotSyncBrowserSetting</a>
+    <a href="./policy-csp-experience.md#experience-donotsyncbrowsersetting" id="experience-donotsyncbrowsersetting">Experience/DoNotSyncBrowserSettings</a>
   </dd>
   <dd>
     <a href="./policy-csp-experience.md#experience-preventusersfromturningonbrowsersyncing" id="experience-preventusersfromturningonbrowsersyncing">Experience/PreventUsersFromTurningOnBrowserSyncing</a>
@@ -3441,6 +3441,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-update.md#update-setedurestart" id="update-setedurestart">Update/SetEDURestart</a>
   </dd>
   <dd>
+    <a href="./policy-csp-update.md#update-updatenotificationlevel" id="update-updatenotificationlevel">Update/UpdateNotificationLevel</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-update.md#update-updateserviceurl" id="update-updateserviceurl">Update/UpdateServiceUrl</a>
   </dd>
   <dd>
@@ -4341,7 +4344,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Experience/AllowWindowsTips](./policy-csp-experience.md#experience-allowwindowstips)
 -   [Experience/ConfigureWindowsSpotlightOnLockScreen](./policy-csp-experience.md#experience-configurewindowsspotlightonlockscreen)
 -   [Experience/DoNotShowFeedbackNotifications](./policy-csp-experience.md#experience-donotshowfeedbacknotifications)
--   [Experience/DoNotSyncBrowserSetting](./policy-csp-experience.md#experience-donotsyncbrowsersetting)
+-   [Experience/DoNotSyncBrowserSettings](./policy-csp-experience.md#experience-donotsyncbrowsersetting)
 -   [Experience/PreventUsersFromTurningOnBrowserSyncing](./policy-csp-experience.md#experience-preventusersfromturningonbrowsersyncing)
 -   [ExploitGuard/ExploitProtectionSettings](./policy-csp-exploitguard.md#exploitguard-exploitprotectionsettings)
 -   [FileExplorer/TurnOffDataExecutionPreventionForExplorer](./policy-csp-fileexplorer.md#fileexplorer-turnoffdataexecutionpreventionforexplorer)
@@ -4892,6 +4895,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Update/SetDisablePauseUXAccess](./policy-csp-update.md#update-setdisablepauseuxaccess)
 -   [Update/SetDisableUXWUAccess](./policy-csp-update.md#update-setdisableuxwuaccess)
 -   [Update/SetEDURestart](./policy-csp-update.md#update-setedurestart)
+-   [Update/UpdateNotificationLevel](./policy-csp-update.md#update-updatenotificationlevel)
 -   [Update/UpdateServiceUrl](./policy-csp-update.md#update-updateserviceurl)
 -   [Update/UpdateServiceUrlAlternate](./policy-csp-update.md#update-updateserviceurlalternate)
 -   [UserRights/AccessCredentialManagerAsTrustedCaller](./policy-csp-userrights.md#userrights-accesscredentialmanagerastrustedcaller)
@@ -4959,78 +4963,11 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [WirelessDisplay/AllowProjectionToPC](./policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectiontopc)
 -   [WirelessDisplay/RequirePinForPairing](./policy-csp-wirelessdisplay.md#wirelessdisplay-requirepinforpairing)
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic for Business  
-
--   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)  
--   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)  
--   [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)  
--   [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)  
--   [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)  
--   [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)  
--   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)  
--   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)  
--   [Browser/AllowCookies](#browser-allowcookies)  
--   [Browser/AllowDoNotTrack](#browser-allowdonottrack)  
--   [Browser/AllowPasswordManager](#browser-allowpasswordmanager)  
--   [Browser/AllowPopups](#browser-allowpopups)  
--   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)  
--   [Browser/AllowSmartScreen](#browser-allowsmartscreen)  
--   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
--   [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)  
--   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)  
--   [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)  
--   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
--   [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)  
--   [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)  
--   [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)  
--   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)  
--   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
--   [Experience/AllowCortana](#experience-allowcortana)  
--   [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)  
--   [Privacy/AllowCrossDeviceClipboard](#privacy-allowcrossdeviceclipboard)  
--   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)  
--   [Privacy/LetAppsAccessGazeInput](#privacy-letappsaccessgazeinput)  
--   [Privacy/LetAppsAccessGazeInput_ForceAllowTheseApps](#privacy-letappsaccessgazeinput-forceallowtheseapps)  
--   [Privacy/LetAppsAccessGazeInput_ForceDenyTheseApps](#privacy-letappsaccessgazeinput-forcedenytheseapps)  
--   [Privacy/LetAppsAccessGazeInput_UserInControlOfTheseApps](#privacy-letappsaccessgazeinput-userincontroloftheseapps)  
--   [Privacy/UploadUserActivities](#privacy-uploaduseractivities)  
--   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
--   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
--   [Settings/AllowDateTime](#settings-allowdatetime)  
--   [Settings/AllowVPN](#settings-allowvpn)  
--   [System/AllowLocation](#system-allowlocation)  
--   [System/AllowTelemetry](#system-allowtelemetry)  
--   [Update/AllowAutoUpdate](#update-allowautoupdate)  
--   [Update/AllowUpdateService](#update-allowupdateservice)  
--   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
--   [Update/RequireUpdateApproval](#update-requireupdateapproval)  
--   [Update/UpdateServiceUrl](#update-updateserviceurl)  
-<!--EndHoloLens-->
-
 <!--StartEAS-->
 ## <a href="" id="eas"></a>Policies that can be set using Exchange Active Sync (EAS)  
 
--   [Browser/AllowBrowser](#browser-allowbrowser)  
 -   [Camera/AllowCamera](#camera-allowcamera)  
 -   [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)  
--   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
--   [Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
--   [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
--   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)  
--   [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)  
--   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
--   [DeviceLock/DevicePasswordExpiration](#devicelock-devicepasswordexpiration)  
--   [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)  
--   [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)  
--   [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)  
--   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)  
--   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
--   [DeviceLock/PreventLockScreenSlideShow](#devicelock-preventlockscreenslideshow)  
--   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
--   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
--   [System/AllowStorageCard](#system-allowstoragecard)  
--   [System/TelemetryProxy](#system-telemetryproxy)  
 -   [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
 -   [Wifi/AllowWiFi](#wifi-allowwifi)  
 <!--EndEAS-->
