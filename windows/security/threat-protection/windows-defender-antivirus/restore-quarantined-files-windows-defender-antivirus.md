@@ -16,16 +16,6 @@ ms.date: 04/23/2018
 
 # Restore quarantined files in Windows Defender AV
 
-
-**Applies to:**
-
-- Windows 10
-- Windows Server 2016
-
-**Audience**
-
-- Enterprise security administrators
-
 **Manageability available with**
 
 - Windows Defender Security Center

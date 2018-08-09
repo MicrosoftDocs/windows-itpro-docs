@@ -16,13 +16,6 @@ ms.date: 04/30/2018
 
 # Manage updates for mobile devices and virtual machines (VMs)
 
-**Applies to**
--   Windows 10
-
-**Audience**
-
-- Network administrators
-
 **Manageability available with**
 
 - Group Policy

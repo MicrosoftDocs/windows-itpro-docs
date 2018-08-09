@@ -16,14 +16,6 @@ ms.date: 04/30/2018
 
 # Windows Defender Antivirus in the Windows Defender Security Center app
 
-**Applies to**
-
-- Windows 10, version 1703 and later
-
-**Audience**
-
-- End-users
-
 **Manageability available with**
 
 - Windows Defender Security Center app  

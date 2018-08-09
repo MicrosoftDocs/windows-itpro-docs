@@ -15,18 +15,6 @@ ms.date: 04/30/2018
 ---
 
 # Prevent users from seeing or interacting with the Windows Defender AV user interface
-**Applies to:**
-
-- Windows 10
-
-**Audience**
-
-- Enterprise security administrators
-
-**Manageability available with**
-
-- Group Policy
-
 
 You can use Group Policy to prevent users on endpoints from seeing the Windows Defender Antivirus interface. You can also prevent them from pausing scans.
 

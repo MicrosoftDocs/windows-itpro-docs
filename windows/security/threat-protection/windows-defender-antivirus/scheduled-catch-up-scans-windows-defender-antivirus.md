@@ -14,15 +14,7 @@ ms.author: v-anbic
 ms.date: 07/26/2018
 ---
 
-
 # Configure scheduled quick or full scans for Windows Defender AV
-
-
-
-**Applies to**
--   Windows 10
-
-**Audience**
 
 - Enterprise security administrators
 

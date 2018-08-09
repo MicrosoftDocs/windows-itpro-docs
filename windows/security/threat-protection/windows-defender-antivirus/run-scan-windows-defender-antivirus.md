@@ -14,19 +14,7 @@ ms.author: v-anbic
 ms.date: 07/10/2018
 ---
 
-
-
-
-
 # Configure and run on-demand Windows Defender AV scans
-
-**Applies to:**
-
-- Windows 10
-
-**Audience**
-
-- Enterprise security administrators
 
 **Manageability available with**
 

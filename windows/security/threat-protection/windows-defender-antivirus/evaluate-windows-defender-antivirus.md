@@ -16,16 +16,6 @@ ms.date: 04/30/2018
 
 # Evaluate Windows Defender Antivirus protection
 
-
-**Applies to:**
-
-- Windows 10, version 1703 and later
-
-**Audience**
-
-- Enterprise security administrators
-
-
 If you're an enterprise security administrator, and you want to determine how well Windows Defender Antivirus protects you from viruses, malware, and potentially unwanted applications, then you can use this guide to help you evaluate Microsoft protection.
 
 >[!TIP]

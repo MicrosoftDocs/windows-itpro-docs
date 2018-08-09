@@ -16,16 +16,6 @@ ms.date: 07/19/2018
 
 # Specify the cloud-delivered protection level
 
-
-
-**Applies to:**
-
-- Windows 10, version 1703 and later
-
-**Audience**
-
-- Enterprise security administrators
-
 **Manageability available with**
 
 - Group Policy

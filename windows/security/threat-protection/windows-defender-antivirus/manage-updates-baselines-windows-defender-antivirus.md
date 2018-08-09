@@ -16,15 +16,6 @@ ms.date: 04/30/2018
 
 # Manage Windows Defender Antivirus updates and apply baselines
 
-
-**Applies to:**
-
-- Windows 10
-
-**Audience**
-
-- Network administrators
-
 There are two types of updates related to keeping Windows Defender Antivirus:
 1. Protection updates
 2. Product updates

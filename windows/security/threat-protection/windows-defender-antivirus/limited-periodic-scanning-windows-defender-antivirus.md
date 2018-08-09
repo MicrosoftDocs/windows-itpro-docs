@@ -18,18 +18,6 @@ ms.date: 04/30/2018
 
 # Use limited periodic scanning in Windows Defender AV
 
-
-
-**Applies to:**
-
-- Windows 10, version 1703 and later
-
-
-**Audience**
-
-- Enterprise security administrators
-
-
 **Manageability available with**
 
 - Windows Defender Security Center app

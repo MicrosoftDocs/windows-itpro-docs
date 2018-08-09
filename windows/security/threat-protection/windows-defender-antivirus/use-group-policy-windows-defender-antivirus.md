@@ -16,10 +16,6 @@ ms.date: 04/30/2018
 
 # Use Group Policy settings to configure and manage Windows Defender AV
 
-**Applies to:**
-
-- Windows 10, version 1703
-
 You can use [Group Policy](https://msdn.microsoft.com/en-us/library/ee663280(v=vs.85).aspx) to configure and manage Windows Defender Antivirus on your endpoints.
 
 In general, you can use the following procedure to configure or change Windows Defender AV group policy settings:

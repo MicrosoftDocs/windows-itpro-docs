@@ -14,19 +14,7 @@ ms.author: v-anbic
 ms.date: 04/11/2018
 ---
 
-
 # Windows Defender Antivirus on Windows Server 2016
-
-
-**Applies to:**
-
-- Windows Server 2016
-
-**Audience**
-
-- Enterprise security administrators
-- Network administrators
-
 
 **Manageability available with**
 

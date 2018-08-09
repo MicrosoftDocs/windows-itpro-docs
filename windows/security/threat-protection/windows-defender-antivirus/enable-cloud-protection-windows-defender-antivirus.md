@@ -16,16 +16,6 @@ ms.date: 07/10/2018
 
 # Enable cloud-delivered protection in Windows Defender AV
 
-
-
-**Applies to:**
-
-- Windows 10
-
-**Audience**
-
-- Enterprise security administrators
-
 **Manageability available with**
 
 - Group Policy

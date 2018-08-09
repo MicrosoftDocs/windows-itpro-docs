@@ -16,13 +16,6 @@ ms.date: 04/30/2018
 
 # Manage the sources for Windows Defender Antivirus protection updates
 
-**Applies to**
--   Windows 10
-
-**Audience**
-
-- Enterprise security administrators
-
 **Manageability available with**
 
 - Group Policy

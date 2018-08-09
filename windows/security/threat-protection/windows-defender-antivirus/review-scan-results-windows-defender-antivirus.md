@@ -16,15 +16,6 @@ ms.date: 07/10/2018
 
 # Review Windows Defender AV scan results
 
-
-**Applies to:**
-
-- Windows 10
-
-**Audience**
-
-- Enterprise security administrators
-
 **Manageability available with**
 
 - PowerShell

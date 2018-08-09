@@ -16,13 +16,6 @@ ms.date: 04/30/2018
 
 # Manage the schedule for when protection updates should be downloaded and applied
 
-**Applies to**
--   Windows 10
-
-**Audience**
-
-- Network administrators
-
 **Manageability available with**
 
 - Group Policy

@@ -16,14 +16,6 @@ ms.date: 07/10/2018
 
 # Report on Windows Defender Antivirus protection
 
-**Applies to:**
-
-- Windows 10
-
-**Audience**
-
-- IT administrators
-
 There are a number of ways you can review protection status and alerts, depending on the management tool you are using for Windows Defender AV.
 
 

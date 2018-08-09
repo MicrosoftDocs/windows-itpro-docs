@@ -14,19 +14,7 @@ ms.author: v-anbic
 ms.date: 04/04/2018
 ---
 
-
 # Windows Defender Antivirus compatibility
-
-
-**Applies to:**
-
-- Windows 10
-- Windows Server 2016
-
-**Audience**
-
-- Enterprise security administrators
-
 
 Windows Defender Antivirus is automatically enabled and installed on endpoints and devices that are running Windows 10.
 

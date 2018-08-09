@@ -16,16 +16,6 @@ ms.date: 04/16/2018
 
 # Review event logs and error codes to troubleshoot issues with Windows Defender AV
 
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
-
-**Audience**
-
-- Enterprise security administrators
-
-
 If you encounter a problem with Windows Defender Antivirus, you can search the tables in this topic to find a matching issue and potential solution.
 
 The tables list:

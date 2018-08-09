@@ -16,14 +16,6 @@ ms.date: 04/30/2018
 
 # Troubleshoot Windows Defender Antivirus reporting in Update Compliance
 
-**Applies to:**
-
-- Windows 10
-
-**Audience**
-
-- IT administrators
-
 When you use [Windows Analytics Update Compliance to obtain reporting into the protection status of machines or endpoints](/windows/deployment/update/update-compliance-using#wdav-assessment) in your network that are using Windows Defender Antivirus, you may encounter problems or issues.
 
 Typically, the most common indicators of a problem are:

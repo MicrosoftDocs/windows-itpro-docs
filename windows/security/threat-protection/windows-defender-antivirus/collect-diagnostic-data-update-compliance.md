@@ -1,6 +1,6 @@
 ---
 title: Collect diagnostic data for Update Compliance and antivirus
-description: Use a tool to collect data to troubleshoot Update Compliance issues when using the Windows Defender AV Assessment add in
+description: Use a tool to collect data to troubleshoot Update Compliance issues when using the antivirus Assessment add in
 keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, windows defender av
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security

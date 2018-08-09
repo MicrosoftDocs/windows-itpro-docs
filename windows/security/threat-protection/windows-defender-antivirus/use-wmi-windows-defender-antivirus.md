@@ -16,10 +16,6 @@ ms.date: 08/26/2017
 
 # Use Windows Management Instrumentation (WMI) to configure and manage Windows Defender AV
 
-**Applies to:**
-
-- Windows 10
-
 Windows Management Instrumentation (WMI) is a scripting interface that allows you to retrieve, modify, and update settings.
 
 Read more about WMI at the [Microsoft Developer Network System Administration library](https://msdn.microsoft.com/en-us/library/aa394582(v=vs.85).aspx).
