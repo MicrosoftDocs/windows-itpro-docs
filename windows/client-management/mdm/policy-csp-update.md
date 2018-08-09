@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: Policy CSP - Update
 description: Policy CSP - Update
@@ -3576,7 +3575,6 @@ Footnote:
 -   [Update/UpdateNotificationLevel](#update-updatenotificationlevel)  
 <!--EndIoTCore-->
 
-=======
 ---
 title: Policy CSP - Update
 description: Policy CSP - Update
@@ -7131,4 +7129,3 @@ Footnote:
 <!--/Policies-->
 
 
->>>>>>> 99b57fdafc5a0b02ce34b65cd72bb8843a775b0b
