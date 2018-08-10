@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 03/26/2018
+ms.date: 08/06/2018
 ---
 # Prepare and Deploy Windows Server 2016 Active Directory Federation Services
 
@@ -57,7 +57,7 @@ It’s recommended that you mark the private key as exportable so that the same 
 
 Be sure to enroll or import the certificate into the AD FS server’s computer certificate store.  Also, ensure all nodes in the farm have the proper TLS server authentication certificate.
 
-### Internal Server Authentication Certificate Enrollment
+### Internal Web Server Authentication Certificate Enrollment
 
 Sign-in the federation server with domain admin equivalent credentials.
 1. Start the Local Computer **Certificate Manager** (certlm.msc).

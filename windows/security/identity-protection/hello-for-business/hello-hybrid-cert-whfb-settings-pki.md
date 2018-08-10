@@ -73,7 +73,7 @@ The certificate template is configured to supersede all the certificate template
 
 ### Enrollment Agent certificate template
 
-Active Directory Federation Server used for Windows Hello for Business certificate enrollment performs its own certificate lifecycle management.  Once the registration authority is configured with the proper certificate template, the AD FS server attempts to enroll the certificate on the first certificate request or when the service first starts.
+Active Directory Federation Server used for Windows Hello for Business certificate enrollment performs its own certificate life-cycle management.  Once the registration authority is configured with the proper certificate template, the AD FS server attempts to enroll the certificate on the first certificate request or when the service first starts.
 
 Approximately 60 days prior to enrollment agent certificate's expiration, the AD FS service attempts to renew the certificate until it is successful.  If the certificate fails to renew, and the certificate expires, the AD FS server will request a new enrollment agent certificate.  You can view the AD FS event logs to determine the status of the enrollment agent certificate.
 
@@ -159,7 +159,7 @@ Sign-in to the certificate authority or management workstations with an _Enterpr
 3.	Click **Certificate Templates** in the navigation pane.
 4.	Right-click the **Certificate Templates** node.  Click **New**, and click **Certificate Template** to issue.
 5.	In the **Enable Certificates Templates** window, select the **Domain Controller Authentication (Kerberos)**, **WHFB Enrollment Agent** and **WHFB Authentication** templates you created in the previous steps.  Click **OK** to publish the selected certificate templates to the certificate authority.   
-7.	Close the console.
+6.	Close the console.
 
 
 #### Unpublish Superseded Certificate Templates
