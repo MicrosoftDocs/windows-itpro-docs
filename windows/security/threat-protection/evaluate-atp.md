@@ -33,13 +33,17 @@ Next gen protections help detect and block the latest threats.
 - [Evaluate antivirus](windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
 ## Endpoint detection and response
-
+- [Learn about the alerts queue](windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protectio)
+- [Learn about the machines list](windows-defender-atp/machines-view-overview-windows-defender-advanced-threat-protection.md)
+- [Learn how to take response actions](windows-defender-atp/response-actions-windows-defender-advanced-threat-protection.md)
 ## Auto investigation
-- [Learn about Automated investigation and remediation](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md)]
+- [Learn about Automated investigation and remediation](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md)
 
 ## Security posture
+- [Learn about improving your security posture](windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection.md)
 
 ## Advanced hunting
+[Learn how to build your own advanced hunting queries](windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection.md)
 
 ## See Also
 [Get started with Windows Defender Advanced Threat Protection](get-started.md)
