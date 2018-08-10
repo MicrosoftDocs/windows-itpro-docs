@@ -1,7 +1,7 @@
 ---
-title: Configure and test Windows Defender Antivirus network connections
-description: Configure and test your connection to the Windows Defender Antivirus cloud-delivered protection service.
-keywords: windows defender antivirus, antimalware, security, defender, cloud, aggressiveness, protection level
+title: Configure and validate antivirus network connections
+description: Configure and test your connection to the antivirus cloud protection service.
+keywords: antivirus, windows defender antivirus, antimalware, security, defender, cloud, aggressiveness, protection level
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -14,38 +14,29 @@ ms.author: v-anbic
 ms.date: 04/30/2018
 ---
 
-# Configure and validate network connections for Windows Defender Antivirus
+# Configure and validate antivirus network connections
 
-
-**Applies to:**
-
-- Windows 10 (some instructions are only applicable for Windows 10, version 1703 or later)
-
-**Audience**
-
-- Enterprise security administrators
-
-
-To ensure Windows Defender Antivirus cloud-delivered protection works properly, you need to configure your network to allow connections between your endpoints and certain Microsoft servers.
+To ensure antivirus cloud-delivered protection works properly, you need to configure your network to allow connections between your endpoints and certain Microsoft servers.
 
 This topic lists the connections that must be allowed, such as by using firewall rules, and provides instructions for validating your connection. This will help ensure you receive the best protection from our cloud-delivered protection services.
 
 See the Enterprise Mobility and Security blog post [Important changes to Microsoft Active Protection Services endpoint](https://blogs.technet.microsoft.com/enterprisemobility/2016/05/31/important-changes-to-microsoft-active-protection-service-maps-endpoint/) for some details about network connectivity.
 
 >[!TIP]
->You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
+>You can also visit the Windows Defender ATP demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
+>
 >- Cloud-delivered protection
->- Fast learning (including Block at first sight)
+>- Fast learning (including block at first sight)
 >- Potentially unwanted application blocking
 
-## Allow connections to the Windows Defender Antivirus cloud
+## Allow connections to the antivirus cloud service
 
-The Windows Defender Antivirus cloud provides fast, strong protection for your endpoints. Enabling the cloud-delivered protection service is optional, however it is highly recommend as it provides very important protection against malware on your endpoints and across your network.
+The antivirus cloud service provides fast, strong protection for your endpoints. Enabling the cloud-delivered protection service is optional, however it is highly recommended because it provides very important protection against malware on your endpoints and across your network.
 
->[!NOTE] 
->The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional signature updates.
+>[!NOTE]
+>The antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional signature updates.
 
-See the [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md) topic for details on enabling the service with Group Policy, System Center Configuration Manager, PowerShell cmdlets, Microsoft Intune, or on individual clients in the Windows Defender Security Center app.
+See [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md) for details on enabling the service with Intune, System Center Configuration Manager, Group Policy, PowerShell cmdlets, or on individual clients in the Windows Defender Security Center app.
 
 After you've enabled the service, you may need to configure your network or firewall to allow connections between it and your endpoints.
 
@@ -59,10 +50,10 @@ The following table lists the services and their associated URLs that your netwo
 </tr>
 <tr style="vertical-align:top">
 <td>
- Windows Defender Antivirus cloud-delivered protection service, also referred to as Microsoft Active Protection Service (MAPS)
+ Antivirus cloud-delivered protection service, also referred to as Microsoft Active Protection Service (MAPS)
 </td>
 <td>
- Used by Windows Defender Antivirus to provide cloud-delivered protection
+ Used by antivirus to provide cloud-delivered protection
 </td>
 <td>
 *.wdcp.microsoft.com*<br />
@@ -85,7 +76,7 @@ Signature and product updates
  Definition updates alternate download location (ADL)
 </td>
 <td>
- Alternate location for Windows Defender Antivirus definition updates if the installed definitions fall out of date (7 or more days behind)
+ Alternate location for antivirus definition updates if the installed definitions fall out of date (7 or more days behind)
 </td>
 <td>
 *.download.microsoft.com
@@ -122,7 +113,7 @@ http://www.microsoft.com/pki/certs
 Symbol Store 
 </td>
 <td>
-Used by Windows Defender Antivirus to restore certain critical files during remediation flows
+Used by antivirus to restore certain critical files during remediation flows
 </td>
 <td>
 https://msdl.microsoft.com/download/symbols
@@ -133,46 +124,45 @@ https://msdl.microsoft.com/download/symbols
 Universal Telemetry Client
 </td>
 <td>
-Used by Windows to send client diagnostic data, Windows Defender Antivirus uses this for product quality monitoring purposes
+Used by Windows to send client diagnostic data; antivirus uses this for product quality monitoring purposes
 </td>
 <td>
 This update uses SSL (TCP Port 443) to download manifests and upload diagnostic data to Microsoft that uses the following DNS endpoints:  <ul><li>vortex-win.data.microsoft.com</li><li>settings-win.data.microsoft.com</li></ul></td>
 </tr>
-
 </table>
 
 <a id="validate"></a>
 
-
 ## Validate connections between your network and the cloud
 
-After whitelisting the URLs listed above, you can test if you are connected to the Windows Defender AV cloud and are correctly reporting and receiving information to ensure you are fully protected.
+After whitelisting the URLs listed above, you can test if you are connected to the antivirus cloud service and are correctly reporting and receiving information to ensure you are fully protected.
 
 **Use the cmdline tool to validate cloud-delivered protection:**
 
-Use the following argument with the Windows Defender AV command line utility (*mpcmdrun.exe*) to verify that your network can communicate with the Windows Defender AV cloud:
+Use the following argument with the antivirus command line utility (*mpcmdrun.exe*) to verify that your network can communicate with the antivirus cloud service:
 
 ```DOS
-MpCmdRun -ValidateMapsConnection 
+MpCmdRun -ValidateMapsConnection
 ```
-> [!NOTE]
-> You need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt. This command will only work on Windows 10, version 1703.
 
-See [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender Antivirus](command-line-arguments-windows-defender-antivirus.md) for more information on how to use the *mpcmdrun.exe* utility.
+> [!NOTE]
+> You need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt. This command will only work on Windows 10, version 1703 or higher.
+
+See [Mange antivirus with the mpcmdrun.exe commandline tool](command-line-arguments-windows-defender-antivirus.md) for more information on how to use the *mpcmdrun.exe* utility.
 
 **Attempt to download a fake malware file from Microsoft:**
 
-You can download a sample file that Windows Defender AV will detect and block if you are properly connected to the cloud.
+You can download a sample file that antivirus will detect and block if you are properly connected to the cloud.
 
 Download the file by visiting the following link:
 - http://aka.ms/ioavtest
 
->[!NOTE] 
+>[!NOTE]
 >This file is not an actual piece of malware. It is a fake file that is designed to test if you are properly connected to the cloud.
 
-If you are properly connected, you will see a warning notification from Windows Defender Antivirus:
+If you are properly connected, you will see a warning antivirus notification:
 
-![Windows Defender Antivirus notification informing the user that malware was found](images/defender/wdav-malware-detected.png)
+![Antivirus notification informing the user that malware was found](images/defender/wdav-malware-detected.png)
 
 If you are using Microsoft Edge, you'll also see a notification message:
 
@@ -180,7 +170,7 @@ If you are using Microsoft Edge, you'll also see a notification message:
 
 A similar message occurs if you are using Internet Explorer:
 
-![Windows Defender Antivirus notification informing the user that malware was found](images/defender/wdav-bafs-ie.png)
+![Antivirus notification informing the user that malware was found](images/defender/wdav-bafs-ie.png)
 
 You will also see a detection under **Quarantined threats** in the **Scan history** section in the Windows Defender Security Center app:
 
@@ -189,23 +179,22 @@ You will also see a detection under **Quarantined threats** in the **Scan histor
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Scan history** label:
 
     ![Screenshot of the Scan history label in the Windows Defender Security Center app](images/defender/wdav-history-wdsc.png)
-    
+
 3. Under the **Quarantined threats** section, click the **See full history** label to see the detected fake malware:
 
     ![Screenshot of quarantined items in the Windows Defender Security Center app](images/defender/wdav-quarantined-history-wdsc.png)
 
 >[!NOTE]
->Versions of Windows 10 before version 1703 have a different user interface. See the [Windows Defender Antivirus in the Windows Defender Security Center](windows-defender-security-center-antivirus.md) topic for more information about the differences between versions, and instructions on how to perform common tasks in the different interfaces.
+>Versions of Windows 10 before version 1703 have a different user interface. See [Antivirus in the Windows Defender Security Center](windows-defender-security-center-antivirus.md) for more information about the differences between versions, and instructions on how to perform common tasks in the different interfaces.
 
 The Windows event log will also show [Windows Defender client event ID 2050](troubleshoot-windows-defender-antivirus.md).
 
 >[!IMPORTANT]
->You will not be able to use a proxy auto-config (.pac) file to test network connections to these URLs. You will  need to verify your proxy servers and any network filtering tools manually to ensure connectivity.
-
+>You will not be able to use a proxy auto-config (.pac) file to test network connections to these URLs. You will need to verify your proxy servers and any network filtering tools manually to ensure connectivity.
 
 ## Related topics
 
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
 - [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
-- [Run a Windows Defender scan from the command line](command-line-arguments-windows-defender-antivirus.md) and [Command line arguments](command-line-arguments-windows-defender-antivirus.md)
+- [Run an antivirus scan from the command line](command-line-arguments-windows-defender-antivirus.md) and [Command line arguments](command-line-arguments-windows-defender-antivirus.md)
 - [Important changes to Microsoft Active Protection Services endpoint](https://blogs.technet.microsoft.com/enterprisemobility/2016/05/31/important-changes-to-microsoft-active-protection-service-maps-endpoint/) 

@@ -16,14 +16,6 @@ ms.date: 05/21/2018
 
 # Use next-gen technologies in Windows Defender Antivirus through cloud-delivered protection
 
-**Applies to:**
-
-- Windows 10, version 1703 and later
-
-**Audience**
-
-- Enterprise security administrators
-
 Microsoft next-gen technologies in Windows Defender Antivirus provide near-instant, automated protection against new and emerging threats. To dynamically identify new threats, these technologies work with large sets of interconnected data in the Microsoft Intelligent Security Graph and powerful artificial intelligence (AI) systems driven by advanced machine learning models.  
 
 To take advantage of the power and speed of these next-gen technologies, Windows Defender Antivirus works seamlessly with Microsoft cloud services. These cloud protection services, also referred to as Microsoft Advanced Protection Service (MAPS), enhances standard real-time protection, providing arguably the best antivirus defense. 

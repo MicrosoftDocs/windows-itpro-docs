@@ -16,10 +16,6 @@ ms.date: 04/30/2018
 
 # Windows Defender Antivirus in Windows 10 and Windows Server 2016
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
-
 Windows Defender Antivirus is a built-in antimalware solution that provides security and antimalware management for desktops, portable computers, and servers.
 
 This library of documentation is for enterprise security administrators who are either considering deployment, or have already deployed and are wanting to manage and configure Windows Defender AV on PC endpoints in their network.
