@@ -3182,6 +3182,71 @@ The following fields are available:
 - **EndpointUrl**  The endpoint URL where the device obtains update metadata. This is used to distinguish between test, staging, and production environments.
 - **SLSPrograms**  A test program to which a device may have opted in. Example: Insider Fast
 
+## Update Assistant Orchestrator events
+
+>[!NOTE]
+>Events from this provider are sent with the installation of KB4023814. For details, see [this support article](https://support.microsoft.com/help/4023814).
+
+### Microsoft.Windows.UpdateAssistant.Orchestrator.BlockingEventId
+
+Event sends basic info on the reason that Windows 10 was not updated due to compatibility issues, previous rollbacks, or admin policies..
+
+The following fields are available:
+
+- **ApplicabilityBlockedReason** Blocked due to an applicability issue.
+- **ClientId** Identification of the current installed version of Update Assistant.
+- **TriggerTaskSource** Describes which task launched this instance of Update Assistant.
+
+### Microsoft.Windows.UpdateAssistant.Orchestrator.DeniedLaunchEventId
+
+Event sends basic info on the reason the Windows 10 update was blocked or prevented.
+
+The following fields are available:
+
+- **ClientId** Identification of the current installed version of Update Assistant.
+- **DenyReason** Reasons why Update Assistant was prevented from launching.
+- **TriggerTaskSource** Describes which task launched this instance of Update Assistant.
+
+### Microsoft.Windows.UpdateAssistant.Orchestrator.FailedLaunchEventId
+
+Event sends basic info when the Windows 10 Update Assistant tool could not be launched due to an error..
+
+The following fields are available:
+
+- **ClientId** Identification of the current installed version of Update Assistant.
+- **HResult** Error code of the Update Assistant Orchestrator error.
+- **TriggerTaskSource** Describes which task launched this instance of Update Assistant.
+
+### Microsoft.Windows.UpdateAssistant.Orchestrator.FailedOneSettingsQueryEventId
+
+Event sends basic info to signal when the settings related to the Windows 10 update could not be downloaded.
+
+The following fields are available:
+
+- **ClientId** Identification of the current installed version of Update Assistant.
+- **HResult** Error code of the attempted query for the settings.
+
+### Microsoft.Windows.UpdateAssistant.Orchestrator.LaunchEventId
+
+Event sends basic info on whether the device should or should not be updated to the latest Windows 10 version.
+
+The following fields are available:
+
+- **ClientId** Identification of the current installed version of Update Assistant.
+- **LaunchMode** Type of launch performed.
+- **LaunchTypeReason** All of the reasons for the type of launch performed.
+- **TriggerTaskSource** Describes which task launched this instance of Update Assistant.
+- **UALaunchRunCount** Total number of times Update Assistant was launched.
+
+### Microsoft.Windows.UpdateAssistant.Orchestrator.RestoreEventId
+
+Event sends basic info on whether the Windows 10 update notification had launched previously.
+
+The following fields are available:
+
+- **ClientId** Identification of the current installed version of Update Assistant.
+- **RestoreReason** All of the reasons for being restored.
+- **TriggerTaskSource** Describes which task launched this instance of Update Assistant.
 
 ## Update events
 
