@@ -52,4 +52,4 @@ Topic | Description
 [Preview features](windows-defender-atp/preview-windows-defender-advanced-threat-protection.md) | Learn about new features in the Windows Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
 [Data storage and privacy](windows-defender-atp/data-storage-privacy-windows-defender-advanced-threat-protection.md) | Explains the data storage and privacy details related to Windows Defender ATP.
 [Assign user access to the portal](windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection.md) | Set permissions to manage who can access the portal. You can set basic permissions or set granular permissions using role-based access control (RBAC).
-[Evaluate Windows Defender ATP](evaluate.md) | Evaluate the various capabilities in Windows Defender ATP and test features out.
+[Evaluate Windows Defender ATP](evaluate-atp.md) | Evaluate the various capabilities in Windows Defender ATP and test features out.
