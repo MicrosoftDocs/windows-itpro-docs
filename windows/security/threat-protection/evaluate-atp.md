@@ -27,16 +27,17 @@ These capabilities help prevent attacks and exploitations from infecting your or
 - [Evaluate network protection](windows-defender-exploit-guard/evaluate-exploit-protection.md)
 - [Evaluate controlled folder access](evaluate-controlled-folder-access.md)
 
-## Evaluate next gen Protection
+## Evaluate next gen protection
 Next gen protections help detect and block the latest threats.
 - [Evaluate antivirus](windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
 ## Endpoint detection and response
-- [Learn about the alerts queue](windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protectio)
+- [Learn about the alerts queue](windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection.md)
 - [Learn about the machines list](windows-defender-atp/machines-view-overview-windows-defender-advanced-threat-protection.md)
 - [Learn how to take response actions](windows-defender-atp/response-actions-windows-defender-advanced-threat-protection.md)
+
 ## Auto investigation
-- [Learn about Automated investigation and remediation](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md)
+- [Learn about automated investigation and remediation](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md)
 
 ## Security posture
 - [Learn about improving your security posture](windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection.md)
