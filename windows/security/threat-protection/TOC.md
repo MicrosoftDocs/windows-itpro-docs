@@ -34,9 +34,9 @@
 ###### [Onboard machines using Group Policy](windows-defender-atp\configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
 ###### [Onboard machines using System Center Configuration Manager](windows-defender-atp\configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
 ###### [Onboard machines using Mobile Device Management tools](windows-defender-atp\configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
-####### [Onboard machines using Microsoft Intune](windows-defender-atp\configure-endpoints-mdm-windows-defender-advanced-threat-protection.md#onboard-machines-using-microsoft-intune)
-###### [Onboard machines using a local script](windows-defender-atp\configure-endpoints-script-windows-defender-advanced-threat-protection.md)
-###### [Onboard non-persistent virtual desktop infrastructure (VDI) machines](windows-defender-atp\configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
+####### [Onboard machines using Microsoft Intune](windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection.md#onboard-machines-using-microsoft-intune)
+###### [Onboard machines using a local script](windows-defender-atp/configure-endpoints-script-windows-defender-advanced-threat-protection.md)
+###### [Onboard non-persistent virtual desktop infrastructure (VDI) machines](windows-defender-atp/configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
 ##### [Onboard servers](windows-defender-atp\configure-server-endpoints-windows-defender-advanced-threat-protection.md)
 ##### [Onboard non-Windows machines](windows-defender-atp\configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)
 ##### [Run a detection test on a newly onboarded machine](windows-defender-atp\run-detection-test-windows-defender-advanced-threat-protection.md)
@@ -154,7 +154,7 @@
 
 
 
-### [Attack surface reduction - Chris, Amitai, Justin](windows-defender-exploit-guard\windows-defender-exploit-guard.md)
+### [Attack surface reduction](windows-defender-exploit-guard\windows-defender-exploit-guard.md)
 
 #### [Hardware-based isolation](windows-defender-application-guard\wd-app-guard-overview.md)
 ##### [Frequently Asked Questions - Windows Defender Application Guard](windows-defender-application-guard/faq-wd-app-guard.md)
@@ -164,7 +164,7 @@
 ##### [Deploy](windows-defender-application-control/windows-defender-application-control-deployment-guide.md)
 ##### [AppLocker](windows-defender-application-control/applocker/applocker-overview.md)
 
-#### [Exploit protection - Chris, Amitai, Justin](windows-defender-exploit-guard\exploit-protection-exploit-guard.md)
+#### [Exploit protection](windows-defender-exploit-guard\exploit-protection-exploit-guard.md)
 ##### [Compare with EMET](windows-defender-exploit-guard\emet-exploit-protection-exploit-guard.md)
 ##### [Evaluate](windows-defender-exploit-guard\evaluate-exploit-protection.md)
 ##### [Enable](windows-defender-exploit-guard\enable-exploit-protection.md)
@@ -196,7 +196,7 @@
 ##### [Deploy](windows-firewall\windows-firewall-with-advanced-security-deployment-guide.md)
 
 
-### [Next gen protection - Andrea, Chris, Amitai](windows-defender-antivirus\configure-windows-defender-antivirus-features.md)
+### [Next gen protection](windows-defender-antivirus\configure-windows-defender-antivirus-features.md)
 #### [Utilize Microsoft cloud-delivered protection](windows-defender-antivirus\utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
 ##### [Enable cloud-delivered protection](windows-defender-antivirus\enable-cloud-protection-windows-defender-antivirus.md)
 ##### [Specify the cloud-delivered protection level](windows-defender-antivirus\specify-cloud-protection-level-windows-defender-antivirus.md)
@@ -254,12 +254,12 @@
 
 
 
-#### [Query data using Advanced hunting](windows-defender-atp\advanced-hunting-windows-defender-advanced-threat-protection.md)
-##### [Advanced hunting reference](windows-defender-atp\advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
-##### [Advanced hunting query language best practices](windows-defender-atp\advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
+#### [Query data using Advanced hunting](windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection.md)
+##### [Advanced hunting reference](windows-defender-atp/advanced-hunting-reference-windows-defender-advanced-threat-protection.md)
+##### [Advanced hunting query language best practices](windows-defender-atp/advanced-hunting-best-practices-windows-defender-advanced-threat-protection.md)
 
 
-### [Automatic investigation and remediation - Benny](windows-defender-atp\automated-investigations-windows-defender-advanced-threat-protection.md)
+### [Automatic investigation and remediation](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md)
 
 
 ###Security posture
