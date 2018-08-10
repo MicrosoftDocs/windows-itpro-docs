@@ -15,4 +15,4 @@ ms.date: 09/12/2018
 
 ## Evaluate Windows Defender ATP capabilities
 
-You can 
+You can evaluate wdatp
