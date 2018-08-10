@@ -30,7 +30,7 @@ There are two components to managing protection updates - where the updates are 
 
 This topic describes where you can specify the updates should be downloaded from, also known as the fallback order.
 
-See the [Manage Windows Defender AV updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md) topic for an overview on how updates work, and how to configure other aspects of updates (such as scheduling updates).
+See [Manage next generation protection updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md) topic for an overview on how updates work, and how to configure other aspects of updates (such as scheduling updates).
 
 <a id="fallback-order"></a>
 
@@ -150,11 +150,11 @@ See the following for more information:
 
 
 ## Related topics
-- [Deploy, manage updates, and report on Windows Defender AV](deploy-manage-report-windows-defender-antivirus.md)
-- [Manage Windows Defender AV updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
-- [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md)
+
+- [Deploy next generation protection](deploy-manage-report-windows-defender-antivirus.md)
+- [Manage next generation protection updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
 - [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
 - [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
 - [Manage updates for mobile devices and VMs](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
-- [Windows Defender AV in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Next generation protection in Windows 10](windows-defender-antivirus-in-windows-10.md)
 
