@@ -13,6 +13,32 @@ ms.localizationpriority: high
 ms.date: 09/12/2018
 ---
 
-## Evaluate Windows Defender ATP capabilities
+# Evaluate Windows Defender ATP capabilities
+Windows Defender Advanced Threat Protection (ATP) is a unified platform for preventative protection, post-breach detection, automated investigation, and response.
 
-You can evaluate wdatp test test test
+You can evaluate Windows Defender Advanced Threat Protection in your organization by [Starting your free trial](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp)
+
+You can also evaluate the different security capabilities in Windows Defender ATP by using the following instructions. 
+
+## Evaluate attack surface reduction
+These capabilities help prevent attacks and exploitations from infecting your organization.
+- [Evaluate attack surface reduction](./windows-defender-exploit-guard/evaluate-attack-surface-reduction.md)
+
+- [Evaluate exploit protection](windows-defender-exploit-guard/evaluate-exploit-protection.md)
+- [Evaluate network protection](windows-defender-exploit-guard/evaluate-exploit-protection.md)
+- [Evaluate controlled folder access](evaluate-controlled-folder-access.md)
+
+## Evaluate Next Gen Protection
+Next gen protections help detect and block the latest threats.
+- [Evaluate antivirus](windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
+
+## Endpoint detection and response
+
+## Auto investigation
+
+## Security postire
+
+## Advanced hunting
+
+## See Also
+[Get started with Windows Defender Advanced Threat Protection](get-started.md)
