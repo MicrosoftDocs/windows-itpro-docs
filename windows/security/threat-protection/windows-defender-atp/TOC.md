@@ -41,7 +41,9 @@
 ##### [Customize Attack surface reduction](../windows-defender-exploit-guard/customize-attack-surface-reduction.md)
 ##### [Troubleshoot Attack surface reduction rules](../windows-defender-exploit-guard/troubleshoot-asr.md)
  
-### [Next gen protection - Andrea, Chris, Amitai](../windows-defender-antivirus/configure-windows-defender-antivirus-features.md)
+### [Next gen protection - Andrea, Chris, Amitai](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
+
+
 #### [Utilize Microsoft cloud-delivered protection](../windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
 ##### [Enable cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md)
 ##### [Specify the cloud-delivered protection level](../windows-defender-antivirus/specify-cloud-protection-level-windows-defender-antivirus.md)
@@ -237,11 +239,22 @@
 #### [Configure the Group Policy settings for Windows Defender Application Guard](../windows-defender-application-guard//configure-wd-app-guard.md)
  
  
-### [Configure Next generation protection](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
+
+### [Configure Next generation protection](../windows-defender-antivirus/configure-windows-defender-antivirus-features.md)
+#### [Utilize Microsoft cloud-delivered protection](../windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
+##### [Enable cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md)
+##### [Specify the cloud-delivered protection level](../windows-defender-antivirus/specify-cloud-protection-level-windows-defender-antivirus.md)
+##### [Configure and validate network connections](../windows-defender-antivirus/configure-network-connections-windows-defender-antivirus.md)
+##### [Enable the Block at First Sight feature](../windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus.md)
+##### [Configure the cloud block timeout period](../windows-defender-antivirus/configure-cloud-block-timeout-period-windows-defender-antivirus.md)
+#### [Configure behavioral, heuristic, and real-time protection](../windows-defender-antivirus/configure-protection-features-windows-defender-antivirus.md)
+##### [Detect and block Potentially Unwanted Applications](../windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus.md)
+##### [Enable and configure always-on protection and monitoring](../windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus.md)
 #### [Windows Defender AV on Windows Server 2016](../windows-defender-antivirus/windows-defender-antivirus-on-windows-server-2016.md)
 #### [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md)
 ##### [Use limited periodic scanning in Windows Defender AV](../windows-defender-antivirus/limited-periodic-scanning-windows-defender-antivirus.md)
- 
+
+
  
 #### [Deploy, manage updates, and report on Windows Defender Antivirus](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md)
 ##### [Deploy and enable Windows Defender Antivirus](../windows-defender-antivirus/deploy-windows-defender-antivirus.md)
