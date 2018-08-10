@@ -27,7 +27,7 @@ These capabilities help prevent attacks and exploitations from infecting your or
 - [Evaluate network protection](windows-defender-exploit-guard/evaluate-exploit-protection.md)
 - [Evaluate controlled folder access](evaluate-controlled-folder-access.md)
 
-## Evaluate next gen protection
+## Evaluate next generation protection
 Next gen protections help detect and block the latest threats.
 - [Evaluate antivirus](windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
