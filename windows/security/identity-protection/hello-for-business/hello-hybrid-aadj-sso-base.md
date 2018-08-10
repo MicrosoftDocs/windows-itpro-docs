@@ -1,5 +1,5 @@
 ---
-title: Configure Azure AD joined devices for On-premises Single-Sign On
+title: Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business
 description: Azure Active Directory joined devices in a hybrid Deployment for on-premises single sign-on
 keywords: identity, PIN, biometric, Hello, passport, AADJ, SSO, 
 ms.prod: w10
@@ -11,7 +11,7 @@ ms.author: mstephen
 localizationpriority: high
 ms.date: 05/05/2018
 ---
-# Configure Azure AD joined devices for On-premises Single-Sign On
+# Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business
 
 **Applies to**
 - Windows 10
@@ -96,7 +96,7 @@ In the list of named value-pairs in the content pane, configure **allowDoubleEsc
 
 1. On your DNS server or from an administrative workstation, open **DNS Manager** from **Administrative Tools**.
 2. Expand **Forward Lookup Zones** to show the DNS zone for your domain.  Right-click your domain name in the navigation pane and click **New Host (A or AAAA)...**.
-3. In the **New Host** dialog box, type **crl** in **Name**.  Type the IP address of the web server you configured in **IP Address**. Click **Add Host**.  Click **OK** to dismiss **DNS** dialog box.
+3. In the **New Host** dialog box, type **crl** in **Name**.  Type the IP address of the web server you configured in **IP Address**. Click **Add Host**.  Click **OK** to close the **DNS** dialog box.  Click **Done**.
 ![Create DNS host record](images/aadj/dns-new-host-dialog.png)
 4. Close the **DNS Manager**. 
 
@@ -112,8 +112,8 @@ These procedures configure NTFS and share permissions on the web server to allow
 ![cdp sharing](images/aadj/cdp-sharing.png)
 4. In the **Permissions for cdp$** dialog box, click **Add**.
 5. In the **Select Users, Computers, Service Accounts, or Groups** dialog box, click **Object Types**.  In the **Object Types** dialog box, select **Computers**, and then click **OK**.
-7. In the **Select Users, Computers, Service Accounts, or Groups** dialog box, in **Enter the object names to select**, type the name of the web server, and then click **Check Names**. Click **OK**.
-8. In the **Permissions for cdp$** dialog box, select the web server from the **Group or user names list**. In the **Permissions for** section, select **Allow** for **Full control**. Click **OK**.
+7. In the **Select Users, Computers, Service Accounts, or Groups** dialog box, in **Enter the object names to select**, type the name of the server running the certificate authority issuing the certificate revocation list, and then click **Check Names**. Click **OK**.
+8. In the **Permissions for cdp$** dialog box, select the certificate authority from the **Group or user names list**. In the **Permissions for** section, select **Allow** for **Full control**. Click **OK**.
 ![CDP Share Permissions](images/aadj/cdp-share-permissions.png)
 9. In the **Advanced Sharing** dialog box, click **OK**.
 
@@ -132,8 +132,8 @@ These procedures configure NTFS and share permissions on the web server to allow
 5. In the **Permissions for cdp** dialog box, click **Add**.
 ![CDP NTFS Permissions](images/aadj/cdp-ntfs-permissions.png)
 6. In the **Select Users, Computers, Service Accounts, or Groups** dialog box, click **Object Types**.  In the **Object Types** dialog box, select **Computers**. Click **OK**.
-7. In the **Select Users, Computers, Service Accounts, or Groups** dialog box, in **Enter the object names to select**, type the name of the web server, and then click **Check Names**. Click **OK**.
-8. In the **Permissions for cdp** dialog box, select the name of the web server from the **Group or user names** list. In the **Permissions for** section, select **Allow** for **Full control**. Click **OK**.
+7. In the **Select Users, Computers, Service Accounts, or Groups** dialog box, in **Enter the object names to select**, type the name of the certificate authority, and then click **Check Names**. Click **OK**.
+8. In the **Permissions for cdp** dialog box, select the name of the certificate authority from the **Group or user names** list. In the **Permissions for** section, select **Allow** for **Full control**. Click **OK**.
 9. Click **Close** in the **cdp Properties** dialog box.
 
 
@@ -146,7 +146,7 @@ The web server is ready to host the CRL distribution point.  Now, configure the 
 1. On the issuing certificate authority, sign-in as a local administrator.  Start the **Certificate Authority** console from **Administrative Tools**. 
 2. In the navigation pane, right-click the name of the certificate authority and click **Properties**
 3. Click **Extensions**.  On the **Extensions** tab, select **CRL Distribution Point (CDP)** from the **Select extension** list.
-4. On the **Extensions** tab, click **Add**. Type **http://crl.[domainname].com/cdp** in **location**.  For example, *http://crl.corp.contoso.com/cdp* or *http://crl.contoso.com/cdp*. 
+4. On the **Extensions** tab, click **Add**. Type **http://crl.[domainname]/cdp/** in **location**.  For example, *http://crl.corp.contoso.com/cdp/* or *http://crl.contoso.com/cdp/* (do not forget the trailing forward slash). 
 ![CDP New Location dialog box](images/aadj/cdp-extension-new-location.png)
 5. Select **\<CaName>** from the **Variable** list and click **Insert**.  Select **\<CRLNameSuffix>** from the **Variable** list and click **Insert**.  Select **\<DeltaCRLAllowed>** from the **Variable** list and click **Insert**.
 6. Type **.crl** at the end of the text in **Location**. Click **OK**.
@@ -164,11 +164,10 @@ The web server is ready to host the CRL distribution point.  Now, configure the 
 1. On the issuing certificate authority, sign-in as a local administrator.  Start the **Certificate Authority** console from **Administrative Tools**. 
 2. In the navigation pane, right-click the name of the certificate authority and click **Properties**
 3. Click **Extensions**.  On the **Extensions** tab, select **CRL Distribution Point (CDP)** from the **Select extension** list.
-4. On the **Extensions** tab, click **Add**.  Type the computer and share name you create for your CRL distribution point in [Configure the CDP file share](#configure-the-cdp-file-share).  For example, **\\app\cdp$**.
+4. On the **Extensions** tab, click **Add**.  Type the computer and share name you create for your CRL distribution point in [Configure the CDP file share](#configure-the-cdp-file-share).  For example, **\\\app\cdp$\** (do not forget the trailing backwards slash).
 5. Select **\<CaName>** from the **Variable** list and click **Insert**.  Select **\<CRLNameSuffix>** from the **Variable** list and click **Insert**.  Select **\<DeltaCRLAllowed>** from the **Variable** list and click **Insert**.
 6. Type **.crl** at the end of the text in **Location**. Click **OK**.
 7. Select the CDP you just created.
-
 ![CDP publishing location](images/aadj/cdp-extension-complete-unc.png)
 8. Select **Publish CRLs to this location**.
 9. Select **Publish Delta CRLs to this location**.
@@ -249,6 +248,40 @@ A **Trusted Certificate** device configuration profile is how you deploy trusted
 ![Intune Profile assignment](images/aadj/intune-device-config-enterprise-root-assignment.png)
 6. Sign out of the Microsoft Azure Portal.
 
+## Configure Windows Hello for Business Device Enrollment
+
+Sign-in a workstation with access equivalent to a _domain user_.
+
+1. Sign-in to the [Azure Portal](https://portal.azure.com/).
+2. Select **All Services**.  Type **Intune** to filter the list of services.  Click **Microsoft Intune**.
+3. Click **device enrollment**.
+4. Click **Windows enrollment**
+5. Under **Windows enrollment**, click **Windows Hello for Business**.
+6. Under **Priority**, click **Default**. 
+7. Under **All users and all devices**, click **Settings**.
+8. Select **Enabled** from the **Configure Windows Hello for Business** list.
+9. Select **Required** next to **Use a Trusted Platform Module (TPM).  By default, Windows Hello for Business prefers TPM 2.0 or falls backs to software. Choosing **Required** forces Windows Hello for Business to only use TPM 2.0 or TPM 1.2 and does not allow fall back to software based keys.
+10. Type the desired **Minimum PIN length** and **Maximum PIN length**.
+
+> [!IMPORTANT]
+> The default minimum PIN length for Windows Hello for Business on Windows 10 is 6.  Microsoft Intune defaults the minimum PIN length to 4, which reduces the security of the user's PIN.  If you do not have a desired PIN length, set the minimum PIN length to 6.
+
+11. Select the appropriate configuration for the following settings.
+* **Lowercase letters in PIN**
+* **Uppercase letters in PIN**
+* **Special characters in PIN**
+* **PIN expiration (days)**
+* **Remember PIN history** 
+
+> [!NOTE]
+> The Windows Hello for Business PIN is not a symmetric key (a password).  A copy of the current PIN is not stored locally or on a server like in the case of passowrds.  Making the PIN as complex and changed frequently as a password increases the liklihood of forgotten PINs.  Additionally, enabling PIN history is the only scenario that requires Windows 10 to store older PIN combinations (protected to the current PIN). Windows Hello for Business combined with a TPM provides anti-hammering functionality that prevents brute force attacks of the user's PIN.  If you are concered with user-to-user shoulder surfacing, rather that forcing complex PIN that change frequently, consider using the "Multifactor Unlock" feature.
+
+12. Select **Yes** next to **Allow biometric authentication** if you want to allow users to use biometrics (fingerprint and/or facial recognition) to unlock the device.  To further secure the use of biometrics, select **Yes** to **Use enhanced anti-spoofing, when available**
+13. Select **No** to **Allow phone sign-in**.  This feature has been deprecated.
+14. Click **Save**
+15. Sign-out of the Azure portal. 
+
+
 ## Section Review
 > [!div class="checklist"]
 > * Configure Internet Information Services to host CRL distribution point
@@ -258,7 +291,7 @@ A **Trusted Certificate** device configuration profile is how you deploy trusted
 > * Reissue domain controller certificates
 > * Export Enterprise Root certificate
 > * Create and Assign a Trust Certificate Device Configuration Profile
-
+> * Configure Windows Hello for Business Device Enrollment
 
 If you plan on using certificates for on-premises single-sign on, perform the additional steps in [Using Certificates for On-premises Single-sign On](hello-hybrid-aadj-sso-cert.md). 
  

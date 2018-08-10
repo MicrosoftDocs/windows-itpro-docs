@@ -80,7 +80,7 @@ The easiest way to verify the onPremisesDistingushedNamne attribute is synchroni
 3. In the Azure AD Graph Explorer URL, type **https://graph.windows.net/myorganization/users/[userid], where **[userid]** is the user principal name of user in Azure Active Directory.  Click **Go**
 4. In the returned results, review the JSON data for the **onPremisesDistinguishedName** attribute.  Ensure the attribute has a value and the value is accurate for the given user.
 
-## Prepare the Network Device Enrollment Services Service Account
+## Prepare the Network Device Enrollment Services (NDES) Service Account
 
 ### Create the NDES Servers gobal security group
 
@@ -102,7 +102,6 @@ Sign-in a domain controller or management workstation with *Domain Admin* equiva
 2.  Expand the domain node from the navigation pane.
 3.  Click **Computers** from the navigation pane. Right-click the name of the NDES server that will host the NDES server role.  Click **Add to a group...**.
 4. Type **NDES Servers** in **Enter the object names to select**.  Click **OK**.  Click **OK** on the **Active Directory Domain Services** success dialog.
-
 
 ### Create the NDES Service Account
 
@@ -338,7 +337,7 @@ A single NDES server can request a maximum of three certificate template.  The N
 
 Each value maps to a registry value name in the NDES server.  The NDES server translate an incoming SCEP provide value into the correspond certificate template.  The table belows shows the SCEP provide value to the NDES certificate template registry value name
 
-|SCEP Profile| NDES Registry Value Name|
+|SCEP Profile Key usage| NDES Registry Value Name|
 |:----------:|:-----------------------:|
 |Digital Signature|SignatureTemplate|
 |Key Encipherment|EncryptionTemplate|
@@ -412,7 +411,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 4. Click **Configure an app**.
 5. Under **Basic Settings** next to **Name**, type **WHFB NDES 01**.  Choose a name that correlates this Azure AD Application Proxy setting with the on-premises NDES server.  Each NDES server must have its own Azure AD Application Proxy as two NDES servers cannot share the same internal URL.
 6. Next to **Internal Url**, type the internal fully qualified DNS name of the NDES server associated with this Azure AD Application Proxy.  For example, https://ndes.corp.mstepdemo.net).  This must match the internal DNS name of the NDES server and ensure you prefix the Url with **https**.
-7. Under **Internal Url**, select **https://** from the first list.  In the text box next to **https://**, type the hostname you want to use as your external hostnamne for the Azure AD Application Proxy.  In the list next to the hostname you typed, select a DNS suffix you want to use externally for the Azure AD Application Proxy.  It is recommended to use the default, -[tenantName].msapproxy.net where **[tenantName]** is your current Azure Active Directory tenant name (-mstephendemo.msappproxy.net).
+7. Under **Internal Url**, select **https://** from the first list.  In the text box next to **https://**, type the hostname you want to use as your external hostname for the Azure AD Application Proxy.  In the list next to the hostname you typed, select a DNS suffix you want to use externally for the Azure AD Application Proxy.  It is recommended to use the default, -[tenantName].msapproxy.net where **[tenantName]** is your current Azure Active Directory tenant name (-mstephendemo.msappproxy.net).
 
 > [!IMPORTANT]
 > Write down the internal and external Urls.  You will need this information when you enroll the NDES-Intune Authentication certificate.
@@ -606,14 +605,70 @@ A web page showing a 403 error (similar to the following should appear) in your 
 
 ## Create and Assign a Simple Certificate Enrollment Protocol (SCEP) Certificate Profile
 
+### Create an AADJ WHFB Certificate Users Group
+
+Sign-in a workstation with access equivalent to a _domain user_.
+
+1. Sign-in to the [Azure Portal](https://portal.azure.com/) with access equivalent to **Global Administrator**.
+2. Select **All Services**.  Type **Azure Active Directory** to filter the list of services.  Under **SERVICES**, Click **Azure Active Directory**.
+3. Click **Groups**.  Click **New group**. 
+4. Select **Security** from the **Group type** list.
+5. Under **Group Name**, type the name of the group.  For example, **AADJ WHFB Certificate Users**.
+6. Provide a **Group description**, if applicable.
+7. Select **Assigned** from the **Membership type** list.
+8. Click **Members**.  Use the  **Select members** pane to add members to this group. When finished click **Select**.
+9. Click **Create**.
+
+
+### Create a SCEP Certificte Profile
+
 Sign-in a workstation with access equivalent to a _domain user_.
 
 1. Sign-in to the [Azure Portal](https://portal.azure.com/).
-2. Select **All Services**.  Type **Intune** to filter the list of services.  Click **Microsoft Intune**.
+2. 2. Select **All Services**.  Type **Intune** to filter the list of services.  Click **Microsoft Intune**.
 3. Select **Device Configuration**, and then click **Profiles**.
 4. Select **Create Profile**.
+5. Next to **Name**, type **WHFB Certificate Enrollment**.
+6. Next to **Description**, provide a description meaningful for your environment.
+7. Select **Windows 10 and later** from the **Platform** list.
+8. Select **SCEP certificate** from the **Profile** list.
+9. The **SCEP Certificate** blade should open. Configure **Certificate validity period** to match your organization.
+
+> [!IMPORTANT]
+> Remember that you need to configiure your certificate authority to allow Microsoft Intune to configure certificate validity.
+
+10. Select **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)** from the **Key storage provider (KSP) list.
+11. Select **Custom** from the **Subject name format** list.
+12. Next to **Custom**, type **CN={{OnPrem_Distinguished_Name}}** to make the on-premises distinguished name the subject of the issued certificate.
+13. Refer to the "Configure Certificate Templates on NDES" task for how you configured the **AADJ WHFB Authentication** certificate template in the registry. Select the appropriate combination of key usages from the **Key Usages** list that map to configured NDES template in the registry. In this example, the **AADJ WHFB Authentication** certificate template was added to the **SignatureTemplate** registry value name.  The **Key usage** that maps to that registry value name is **Digital Signature**.
+14. Select a previously configured **Trusted certificate** profile that matches the root certificate of the issuing certificate authority.
+15. Under **Extended key usage**, type **Smart Card Logon** under **Name. Type **1.3.6.1.4.1.311.20.2.2** under **Object identifier**.  Click **Add**.
+16. Type a percentage (without the percent sign) next to **Renewal Threshold** to determine when the certificate should attempt to renew. The recommended value is **20**.
+17. Under *SCEP Server URLs*, type the fully qualified external name of the Azure AD Application proxy you configured. Append to the name **/certsrv/mscep/mscep.dll**.  For example, https://ndes-mtephendemo.msappproxy.net/certsrv/mscep/mscep.dll.  Click **Add**.  Repeat this step for each additional NDES Azure AD Application Proxy you configured to issue Windows Hello for Business certificates. Microsoft Intune round-robin load balances requests amongst the Urls listed in the SCEP certificate profile.
+18. Click **OK**.
+19. Click **Create**.
+
+### Assign Group to the WHFB Certificate Enrollment Certificate Profile
+
+Sign-in a workstation with access equivalent to a _domain user_.
+
+1. Sign-in to the [Azure Portal](https://portal.azure.com/).
+2. 2. Select **All Services**.  Type **Intune** to filter the list of services.  Click **Microsoft Intune**.
+3. Select **Device Configuration**, and then click **Profiles**.
+4. Click **WHFB Certificate Enrollment**.
+5. Click **Assignments**
+6. In the **Assignments** pane, Click **Include**.  Select **Selected Groups** from the **Assign to** list.  Click **Select groups to include**.
+7. Select the **AADJ WHFB Certificate Users** group. Click **Select**.
+8. Click **Save**.
 
 
-
-
-6. Sign-out of the Azure Portal.
+## Section Review
+> [!div class="checklist"]
+> * Requirements
+> * Prepare Azure AD Connect
+> * Prepare the Network Device Enrollment Services (NDES) Service Acccount
+> * Prepare Active Directory Certificate Authority
+> * Install and Configure the NDES Role
+> * Configure Network Device Enrollment Services to work with Microsoft Intune
+> * Download, Install, and Configure the Intune Certificate Connector
+> * Create and Assign a Simple Certificate Enrollment Protocol (SCEP Certificate Profile)

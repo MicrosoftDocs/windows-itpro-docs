@@ -29,3 +29,5 @@ When using a key, the on-premises environment needs an adequate distribution of 
 When using a certificate, the on-premises environment can use Windows Server 2008 R2 and later domain controllers, which removes the Windows Server 2016 domain controller requirement.  However, single-sign on using a key require additional infrastructure to issue certificate when the user enrolls for Windows Hello for Business.  Azure AD joined devices enroll certificates using Microsoft Intune or a compatible Mobile Device Management (MDM).  Microsoft Intune and Windows Hello for Business use the Network Device Enrollment Services (NDES) role and support Microsoft Intune connector.
 
 
+
+
