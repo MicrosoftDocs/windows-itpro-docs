@@ -21,10 +21,9 @@ In the real world, millions of devices are protected from cyberattacks every day
 
 Learn why [most enterprises use the antivirus capabilities in Windows Defender ATP](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
 
-
 ## AV-TEST
 
-The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The scores listed below are for the protection category which has two scores: real world testing and the AV-Test reference set (known as "prevalent malware").
+The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The scores listed below are for the protection category which has two scores: real world testing and the AV-TEST reference set (known as "prevalent malware").
 
 **Real-world testing** refers to protection against zero-day malware attacks, inclusive of web and email threats.
 
@@ -68,7 +67,7 @@ The below scores are the results of AV-Comparatives tests on **Windows Defender 
 
 * [Malware Protection Test Enterprise March 2018](https://www.av-comparatives.org/tests/malware-protection-test-enterprise-march-2018-testresult/)
 
-## Protection capabilities not represented in tests
+## To what extent are tests representative of protection in the real world?
 
 It is important to remember that the capabilities within [Windows Defender ATP](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=cx-blog-mmpc) provide [additional layers of protection](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses/) that are not factored into tests. The capabilities such as attack surface reduction and endpoint detection & response help prevent malware from getting onto devices in the first place.
 
