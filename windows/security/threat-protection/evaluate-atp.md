@@ -35,8 +35,9 @@ Next gen protections help detect and block the latest threats.
 ## Endpoint detection and response
 
 ## Auto investigation
+- [Learn about Automated investigation and remediation](windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection.md)]
 
-## Security postire
+## Security posture
 
 ## Advanced hunting
 
