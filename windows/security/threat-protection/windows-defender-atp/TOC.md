@@ -309,12 +309,12 @@
 ### [Review AV/NEXT GEN event logs and error codes to troubleshoot issues - Amitai, etc](../windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md)
 
 
-## Troubleshoot sensor state - Ask Heike name of sensor
-#### [Check sensor state](check-sensor-status-windows-defender-advanced-threat-protection.md)
-#### [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
-#### [Inactive machines](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#inactive-machines)
-#### [Misconfigured machines](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#misconfigured-machines)
-#### [Review events and errors on machines with Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
+## Troubleshoot sensor state
+### [Check sensor state](check-sensor-status-windows-defender-advanced-threat-protection.md)
+### [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
+### [Inactive machines](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#inactive-machines)
+### [Misconfigured machines](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#misconfigured-machines)
+### [Review events and errors on machines with Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
  
 ### [Troubleshoot Windows Defender ATP service issues](troubleshoot-windows-defender-advanced-threat-protection.md)
 #### [Check service health](service-status-windows-defender-advanced-threat-protection.md)
