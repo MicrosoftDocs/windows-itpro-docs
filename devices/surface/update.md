@@ -6,6 +6,8 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: heatherpoulsen
+ms.author: jdecker
+ms.topic: article
 ms.date: 12/01/2016
 ---
 

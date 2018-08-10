@@ -7,12 +7,15 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
+ms.topic: article
 ms.date: 10/16/2017
 ---
 
 # SharedPC (Windows Configuration Designer reference)
 
 Use SharedPC settings to optimize Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise and temporary customer use in retail. 
+
+
 
 ## Applies to
 

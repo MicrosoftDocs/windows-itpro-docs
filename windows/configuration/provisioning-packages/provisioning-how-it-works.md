@@ -5,7 +5,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: jdeckerms
-ms.localizationpriority: high
+ms.author: jdecker
+ms.topic: article
+ms.localizationpriority: medium
 ms.date: 07/27/2017
 ---
 
@@ -41,7 +43,7 @@ When multiple provisioning packages are available for device provisioning, the c
 
 1. Microsoft 
 
-2. Silicon Vender 
+2. Silicon Vendor 
 
 3. OEM 
 

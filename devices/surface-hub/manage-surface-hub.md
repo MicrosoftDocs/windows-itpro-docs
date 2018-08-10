@@ -3,12 +3,11 @@ title: Manage Microsoft Surface Hub
 description: How to manage your Surface Hub after finishing the first-run program.
 ms.assetid: FDB6182C-1211-4A92-A930-6C106BCD5DC1
 keywords: manage Surface Hub
-ms.prod: w10
-ms.mktglfcycl: manage
+ms.prod: surface-hub
 ms.sitesec: library
-ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
+ms.topic: article
 ms.date: 01/17/2018
 ms.localizationpriority: medium
 ---
@@ -40,7 +39,8 @@ Learn about managing and updating Surface Hub.
 | [Connect other devices and display with Surface Hub](https://technet.microsoft.com/itpro/surface-hub/connect-and-display-with-surface-hub) | You can connect other device to your Surface Hub to display content.|
 | [Miracast on existing wireless network or LAN](miracast-over-infrastructure.md) | You can use Miracast on your wireless network or LAN to connect to Surface Hub. |
  [Enable 802.1x wired authentication](enable-8021x-wired-authentication.md) | 802.1x Wired Authentication MDM policies have been enabled on Surface Hub devices. 
-| [Using a room control system]( https://technet.microsoft.com/itpro/surface-hub/use-room-control-system-with-surface-hub) | Room control systems can be used with your Microsoft Surface Hub.|
+| [Using a room control system](https://technet.microsoft.com/itpro/surface-hub/use-room-control-system-with-surface-hub) | Room control systems can be used with your Microsoft Surface Hub.|
+[Using the Surface Hub Recovery Tool](surface-hub-recovery-tool.md) | Use the Surface Hub Recovery Tool to re-image the Surface Hub SSD.
 
 ## Related topics
 

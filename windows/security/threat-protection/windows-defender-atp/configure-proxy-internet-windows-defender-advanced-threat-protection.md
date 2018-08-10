@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.localizationpriority: medium
+ms.date: 05/29/2018
 ---
 
 
@@ -85,12 +85,18 @@ For example: netsh winhttp set proxy 10.0.0.6:8080
 ## Enable access to Windows Defender ATP service URLs in the proxy server
 If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service in port 80 and 443:
 
-Service location | .Microsoft.com DNS record
-:---|:---
- US |```*.blob.core.windows.net``` <br>```crl.microsoft.com```<br> ```ctldl.windowsupdate.com```<br> ```us.vortex-win.data.microsoft.com```<br> ```winatp-gw-cus.microsoft.com``` <br> ```winatp-gw-eus.microsoft.com```
-Europe |```*.blob.core.windows.net```<br>```crl.microsoft.com```<br>```ctldl.windowsupdate.com```<br>  ```eu.vortex-win.data.microsoft.com```<br>```winatp-gw-neu.microsoft.com```<br> ```winatp-gw-weu.microsoft.com```<br>
+>![NOTE]
+> URLs that include v20 in them are only needed if you have Windows 10, version 1803 or later machines. For example, ```us-v20.events.data.microsoft.com``` is only needed if the machine is on Windows 10, version 1803 or later. 
 
- If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted in the above listed URLs.
+Service location | Microsoft.com DNS record
+:---|:---
+Common URLs for all locations | ```*.blob.core.windows.net``` <br>```crl.microsoft.com```<br> ```ctldl.windowsupdate.com``` <br>```events.data.microsoft.com```
+European Union | ```eu.vortex-win.data.microsoft.com```<br>```eu-v20.events.data.microsoft.com```<br>```winatp-gw-neu.microsoft.com```<br>```winatp-gw-weu.microsoft.com```
+United Kingdom | ```uk.vortex-win.data.microsoft.com``` <br>```uk-v20.events.data.microsoft.com```<br>```winatp-gw-uks.microsoft.com```<br>```winatp-gw-ukw.microsoft.com```
+United States | ```us.vortex-win.data.microsoft.com```<br> ```us-v20.events.data.microsoft.com```<br>```winatp-gw-cus.microsoft.com``` <br>```winatp-gw-eus.microsoft.com```
+
+
+If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted in the above listed URLs.
 
 
 ## Verify client connectivity to Windows Defender ATP service URLs
@@ -121,14 +127,14 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
 
 6. Open *WDATPConnectivityAnalyzer.txt* and verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs. <br><br>
 The tool checks the connectivity of Windows Defender ATP service URLs that Windows Defender ATP client is configured to interact with. It then prints the results into the *WDATPConnectivityAnalyzer.txt* file for each URL that can potentially be used to communicate with the Windows Defender ATP  services. For example:
-  ```text
-  Testing URL : https://xxx.microsoft.com/xxx
-  1 - Default proxy: Succeeded (200)
-  2 - Proxy auto discovery (WPAD): Succeeded (200)
-  3 - Proxy disabled: Succeeded (200)
-  4 - Named proxy: Doesn't exist
-  5 - Command line proxy: Doesn't exist              
-  ```
+      ```text
+      Testing URL : https://xxx.microsoft.com/xxx
+      1 - Default proxy: Succeeded (200)
+      2 - Proxy auto discovery (WPAD): Succeeded (200)
+      3 - Proxy disabled: Succeeded (200)
+      4 - Named proxy: Doesn't exist
+      5 - Command line proxy: Doesn't exist              
+      ```
 
 If at least one of the connectivity options returns a (200) status, then the Windows Defender ATP client can communicate with the tested URL properly using this connectivity method. <br><br>
 

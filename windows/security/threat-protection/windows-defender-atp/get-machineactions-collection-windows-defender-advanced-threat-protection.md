@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
@@ -19,7 +19,7 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
  Gets collection of actions done on machines. Get MachineAction collection API supports OData V4 queries.
 
@@ -47,7 +47,7 @@ If successful, this method returns 200, Ok response code with a collection of Ma
 
 ## Example 1
 
-Request
+**Request**
 
 Here is an example of the request on an organization that has three MachineActions.
 
@@ -55,7 +55,7 @@ Here is an example of the request on an organization that has three MachineActio
 GET https://graph.microsoft.com/testwdatppreview/machineactions
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 
@@ -107,7 +107,7 @@ Content-type: application/json
 
 ## Example 2
 
-Request
+**Request**
 
 Here is an example of a request that filters the MachineActions by machine ID and shows the latest two MachineActions.
 
@@ -117,7 +117,7 @@ GET https://graph.microsoft.com/testwdatppreview/machineactions?$filter=machineI
 
 
 
-Response
+**Response**
 
 Here is an example of the response.
 

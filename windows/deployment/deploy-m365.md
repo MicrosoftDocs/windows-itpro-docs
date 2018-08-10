@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt, sccm, M365
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 04/23/2018
 author: greg-lindsay
 ---
@@ -23,7 +23,7 @@ This topic provides a brief overview of Microsoft 365 and describes how to use a
 
 For Windows 10 deployment, Microsoft 365 includes a fantasic deployment advisor that can walk you through the entire process of deploying Windows 10. The wizard supports multiple Windows 10 deployment methods, including:
 
-- Windows AutoPilot
+- Windows Autopilot
 - In-place upgrade
 - Deploying Windows 10 upgrade with Intune
 - Deploying Windows 10 upgrade with System Center Configuration Manager

@@ -1,23 +1,25 @@
 ---
 title: Unlock Windows Holographic for Business features (HoloLens)
 description: HoloLens provides extra features designed for business when you upgrade to Windows Holographic for Business.
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.pagetype: hololens, devices
+ms.prod: hololens
 ms.sitesec: library
 author: jdeckerms
+ms.author: jdecker
+ms.topic: article
 ms.localizationpriority: medium
-ms.date: 02/02/2018
+ms.date: 07/09/2018
 ---
 
 # Unlock Windows Holographic for Business features
+
+
 
 Microsoft HoloLens is available in the *Development Edition*, which runs Windows Holographic (an edition of Windows 10 designed for HoloLens), and in the [Commercial Suite](https://docs.microsoft.com/windows/mixed-reality/commercial-features), which provides extra features designed for business. 
 
 When you purchase the Commercial Suite, you receive a license that upgrades Windows Holographic to Windows Holographic for Business. This license can be applied to the device either through the organization's [mobile device management (MDM) provider](#edition-upgrade-using-mdm) or a [provisioning package](#edition-upgrade-using-a-provisioning-package).
 
 >[!TIP]
->You can tell that the HoloLens has been upgraded to the business edition in **Settings** > **Network & Internet**. The **VPN** option is only available in Windows Holographic for Business.
+>In Windows 10, version 1803, you can tell that the HoloLens has been upgraded to the business edition in **Settings** > **System**. 
 
 
 
@@ -37,7 +39,7 @@ Provisioning packages are files created by the Windows Configuration Designer to
 
 ### Create a provisioning package that upgrades the Windows Holographic edition
 
-1.	[Create a provisioning package for HoloLens.](hololens-provisioning.md#create-a-provisioning-package-for-hololens)
+1.	[Create a provisioning package for HoloLens.](hololens-provisioning.md)
 
 2.  Go to **Runtime settings** > **EditionUpgrade**, and select **EditionUpgradeWithLicense**.
 
@@ -79,11 +81,10 @@ Provisioning packages are files created by the Windows Configuration Designer to
 
 ### Apply the provisioning package to HoloLens
 
-1. Connect the device via USB to a PC and start the device, but do not continue past the **fit** page of the initial setup experience (the first page with the blue box).
+1. Connect the device via USB to a PC and start the device, but do not continue past the **fit** page of the initial setup experience (the first page with the blue box). HoloLens will show up as a device in File Explorer on the PC.
 
-2. Briefly press and release the **Volume Down** and **Power** buttons simultaneously.
-
-3. HoloLens will show up as a device in File Explorer on the PC.
+    >[!NOTE]
+    >If the HoloLens device is running Windows 10, version 1607 or earlier, briefly press and release the **Volume Down** and **Power** buttons simultaneously to open File Explorer.
 
 4. In File Explorer, drag and drop the provisioning package (.ppkg) onto the device storage.
 
@@ -93,8 +94,7 @@ Provisioning packages are files created by the Windows Configuration Designer to
 
 7. You will see whether the package was applied successfully or not. If it failed, you can fix your package and try again. If it succeeded, proceed with device setup.
 
->[!NOTE]
->If the device was purchased before August 2016, you will need to sign into the device with a Microsoft account, get the latest OS update, and then reset the OS in order to apply the provisioning package. 
+
 
 
 

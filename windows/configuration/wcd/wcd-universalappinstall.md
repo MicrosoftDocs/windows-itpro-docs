@@ -7,7 +7,8 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 10/09/2017
+ms.topic: article
+ms.date: 04/30/2018
 ---
 
 # UniversalAppInstall (reference)

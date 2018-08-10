@@ -4,6 +4,7 @@
 ## [Enable or block Windows Mixed Reality apps in the enterprise](manage-windows-mixed-reality.md)
 ## [Understand apps in Windows 10](apps-in-windows-10.md)
 ## [Add apps and features in Windows 10](add-apps-and-features.md)
+### [Repackage win32 apps in the MSIX format](msix-app-packaging-tool.md)
 ## [Application Virtualization (App-V) for Windows](app-v/appv-for-windows.md)
 ### [Getting Started with App-V](app-v/appv-getting-started.md)
 #### [What's new in App-V for Windows 10, version 1703 and earlier](app-v/appv-about-appv.md)
@@ -108,3 +109,4 @@
 ## [Disabling System Services in Windows Server](https://docs.microsoft.com/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server)
 ## [Deploy app upgrades on Windows 10 Mobile](deploy-app-upgrades-windows-10-mobile.md)
 ## [Change history for Application management](change-history-for-application-management.md)
+## [How to keep apps removed from Windows 10 from returning during an update](remove-provisioned-apps-during-update.md)

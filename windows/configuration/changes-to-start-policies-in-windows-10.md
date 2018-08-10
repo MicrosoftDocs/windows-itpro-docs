@@ -6,8 +6,10 @@ keywords: ["group policy", "start menu", "start screen"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.localizationpriority: high
+author: coreyp
+ms.author: coreyp
+ms.topic: article
+ms.localizationpriority: medium
 ms.date: 11/28/2017
 ---
 

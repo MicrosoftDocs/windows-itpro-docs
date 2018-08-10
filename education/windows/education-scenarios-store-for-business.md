@@ -5,12 +5,13 @@ keywords: school, Microsoft Store for Education, Microsoft education store
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
-ms.localizationpriority: high
+ms.localizationpriority: medium
 searchScope:
   - Store
 author: trudyha
 ms.author: trudyha
 ms.date: 3/30/2018
+ms.technology: Windows
 ---
 
 # Working with Microsoft Store for Education

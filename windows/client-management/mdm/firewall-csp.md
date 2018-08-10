@@ -5,7 +5,7 @@ ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: MariciaAlforque
 ms.date: 01/26/2018
 ---
 
@@ -14,7 +14,7 @@ ms.date: 01/26/2018
 
 The Firewall configuration service provider (CSP) allows the mobile device management (MDM) server to configure the Windows Defender Firewall global settings, per profile settings, as well as the desired set of custom rules to be enforced on the device.  Using the Firewall CSP the IT admin can now manage non-domain devices, and reduce the risk of network security threats across all systems connecting to the corporate network.  This CSP was added Windows 10, version 1709.
  
-Firewall configuration commands must be wrapped in an Atomic block in SyncML.
+Firewall rules in the FirewallRules section must be wrapped in an Atomic block in SyncML, either individually or collectively.
 
 For detailed information on some of the fields below see [[MS-FASP]: Firewall and Advanced Security Protocol documentation](https://msdn.microsoft.com/en-us/library/mt620101.aspx).
 
@@ -150,7 +150,7 @@ The following diagram shows the Firewall configuration service provider in tree 
 <p style="margin-left: 20px">Value type is bool. Supported operations are Add, Get and Replace.</p>
 
 <a href="" id="defaultoutboundaction"></a>**/DefaultOutboundAction**
-<p style="margin-left: 20px">This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.</p>
+<p style="margin-left: 20px">This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used. DefaultOutboundAction will block all outbound traffic unless it is explicitly specified not to block.</p>
 <ul>
 <li>0x00000000 - allow</li>
 <li>0x00000001 - block</li>
@@ -158,6 +158,30 @@ The following diagram shows the Firewall configuration service provider in tree 
 <p style="margin-left: 20px">Default value is 0 (allow).</p>
 <p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get and Replace.</p>
 
+Sample syncxml to provision the firewall settings to evaluate
+
+``` syntax
+<?xml version="1.0" encoding="utf-8"?>
+<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncBody>
+    <!-- Block Outbound by default -->
+    <Add>
+      <CmdID>2010</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./Vendor/MSFT/Firewall/MdmStore/DomainProfile/DefaultOutboundAction</LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">int</Format>
+        </Meta>
+        <Data>1</Data>
+      </Item>
+    </Add>
+<Final/>
+</SyncBody>
+</SyncML>
+
+```
 <a href="" id="defaultinboundaction"></a>**/DefaultInboundAction**
 <p style="margin-left: 20px">This value is the action that the firewall does by default (and evaluates at the very end) on inbound connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore.win if it is configured; otherwise, the local store value is used.</p>
 <ul>
@@ -260,7 +284,7 @@ The following diagram shows the Firewall configuration service provider in tree 
 
 <a href="" id="enabled"></a>**FirewallRules/_FirewallRuleName_/Enabled**
 <p style="margin-left: 20px">Indicates whether the rule is enabled or disabled. If the rule must be enabled, this value must be set to true.
-<p style="margin-left: 20px">If not specified - a new rule is disabled by default.</p>
+<p style="margin-left: 20px">If not specified - a new rule is enabled by default.</p>
 <p style="margin-left: 20px">Boolean value. Supported operations are Get and Replace.</p>
 
 <a href="" id="profiles"></a>**FirewallRules/_FirewallRuleName_/Profiles**
@@ -286,7 +310,7 @@ The following diagram shows the Firewall configuration service provider in tree 
 <ul>
 <li>IN - the rule applies to inbound traffic.</li>
 <li>OUT - the rule applies to outbound traffic.</li>
-<li>If not specified, the default is IN.</li>
+<li>If not specified, the default is Out.</li>
 </ul>
 <p style="margin-left: 20px">Value type is string. Supported operations are Get and Replace.</p>
 
@@ -307,7 +331,7 @@ The following diagram shows the Firewall configuration service provider in tree 
 <p style="margin-left: 20px">New rules have the EdgeTraversal property disabled by default.</p>
 <p style="margin-left: 20px">Value type is bool. Supported operations are Add, Get, Replace, and Delete.</p>
 
-<a href="" id="localuserauthorizedlist"></a>**FirewallRules/_FirewallRuleName_/LocalUserAuthorizedList**
+<a href="" id="localuserauthorizedlist"></a>**FirewallRules/_FirewallRuleName_/LocalUserAuthorizationList**
 <p style="margin-left: 20px">Specifies the list of authorized local users for the app container. This is a string in Security Descriptor Definition Language (SDDL) format.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
 

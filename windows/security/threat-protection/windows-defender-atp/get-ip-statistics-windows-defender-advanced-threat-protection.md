@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
@@ -19,7 +19,7 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 Retrieves the prevalence for the given IP.
 
@@ -49,7 +49,7 @@ If domain does not exist - 404 Not Found.
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/testwdatppreview/ips/{id}/machines
 Content-type: application/json
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 

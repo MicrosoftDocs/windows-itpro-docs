@@ -5,10 +5,10 @@ ms.assetid: a6cd5657-6a16-4fff-bfb4-44760902d00c
 keywords: replication, replicate, deploy, configure, remote
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-author: mtniehaus
+author: greg-lindsay
 ms.date: 07/27/2017
 ---
 

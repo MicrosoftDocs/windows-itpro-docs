@@ -7,7 +7,7 @@ author: lizap
 ms.date: 09/28/2017
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ---
 # Architectural planning posters for Windows 10
 
@@ -17,7 +17,7 @@ You can download the following posters for architectural information about deplo
   Learn about the options and steps for a new installation of Windows 10.
 - [Deploy Windows 10 - In-place upgrade](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/master/windows/media/ModernSecureDeployment/Deploy-InplaceUpgrade.pdf)
   Learn about the steps to upgrade from a previous version of Windows.
-- [Deploy Windows 10 - Windows AutoPilot](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/master/windows/media/ModernSecureDeployment/Deploy-WindowsAutoPilot.pdf)
+- [Deploy Windows 10 - Windows Autopilot](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/master/windows/media/ModernSecureDeployment/Deploy-WindowsAutoPilot.pdf)
   Learn how you can set up and pre-configure Windows 10 devices.
 - [Deploy Windows 10 - Windows servicing](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/master/windows/media/ModernSecureDeployment/WindowsServicing.pdf)
   Learn how to keep Windows up to date.

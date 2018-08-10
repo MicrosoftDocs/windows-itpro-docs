@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
-ms.date: 04/24/2018
+ms.localizationpriority: medium
+ms.date: 07/30/2018
 ---
 
 # Windows Defender ATP preview features
@@ -23,7 +23,7 @@ ms.date: 04/24/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 The Windows Defender ATP service is constantly being updated to include new feature enhancements and capabilities.
 
@@ -36,24 +36,24 @@ You'll have access to upcoming features which you can provide feedback on to hel
 
 Turn on the preview experience setting to be among the first to try upcoming features.
 
-1. In the navigation pane, select **Settings** > **General** > **Advanced features** > **Preview features**.
+1. In the navigation pane, select **Settings** > **Advanced features** > **Preview features**.
 
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.
 
 ## Preview features
 The following features are included in the preview release:
+- [Onboard previous versions of Windows](onboard-downlevel-windows-defender-advanced-threat-protection.md)<br>
+Onboard supported versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor
+  - Windows 7 SP1 Enterprise
+  - Windows 7 SP1 Pro
+  - Windows 8.1 Enterprise
+  - Windows 8.1 Pro 
 
-- [Onboard servers](configure-server-endpoints-windows-defender-advanced-threat-protection.md)<br>
-Windows Defender ATP supports the onboarding of the following servers:
-    - Windows Server 2012 R2
-    - Windows Server 2016
+- [Integration with Azure Security Center](configure-server-endpoints-windows-defender-advanced-threat-protection.md#integration-with-azure-security-center)<br>
+Windows Defender ATP integrates with Azure Security Center to provide a comprehensive server protection solution. With this integration Azure Security Center can leverage the power of Windows Defender ATP to provide improved threat detection for Windows Servers.
 
-- [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)<br>
-Windows Defender ATP supports the use of Power BI data connectors to enable you to connect and access Windows Defender ATP data using Microsoft Graph.
 
-- [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)<br>
-    Windows Defender ATP exposes much of the available data and actions using a set of programmatic APIs that are part of the Microsoft Intelligence Security Graph. Those APIs will enable you, to automate workflows and innovate based on Windows Defender ATP capabilities.
-
+ 
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-belowfoldlink)  
 

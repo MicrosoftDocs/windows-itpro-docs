@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 08/26/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 07/10/2018
 ---
 
 # Review Windows Defender AV scan results
@@ -83,7 +83,9 @@ Use the [**Get** method of the **MSFT_MpThreat** and **MSFT_MpThreatDetection**]
 
 **Use Microsoft Intune to review Windows Defender AV scan results:**
 
-See [Help secure Windows PCs with Endpoint Protection for Microsoft Intune: Monitor Endpoint Protection](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune#monitor-endpoint-protection).
+1. In Intune, go to **Devices > All Devices** and select the device you want to scan.
+
+2. Click the scan results in **Device actions status**.
 
 
 

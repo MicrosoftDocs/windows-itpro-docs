@@ -5,14 +5,11 @@ ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: MariciaAlforque
 ms.date: 04/16/2018
 ---
 
 # Policy CSP - ApplicationDefaults
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -83,7 +80,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--Example-->
-To create create the SyncML, follow these steps:
+To create the SyncML, follow these steps:
 <ol>
 <li>Install a few apps and change your defaults.</li>
 <li>From an elevated prompt, run "dism /online /export-defaultappassociations:appassoc.xml"</li>

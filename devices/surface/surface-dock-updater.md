@@ -3,7 +3,7 @@ title: Microsoft Surface Dock Updater (Surface)
 description: This article provides a detailed walkthrough of Microsoft Surface Dock Updater.
 ms.assetid: 1FEFF277-F7D1-4CB4-8898-FDFE8CBE1D5C
 keywords: install, update, firmware
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
@@ -11,6 +11,7 @@ ms.sitesec: library
 author: brecords
 ms.date: 02/23/2018
 ms.author: jdecker
+ms.topic: article
 ---
 
 # Microsoft Surface Dock Updater
@@ -115,6 +116,14 @@ Microsoft periodically updates Surface Dock Updater. To learn more about the app
 
 >[!Note]
 >Each update to Surface Dock firmware is included in a new version of Surface Dock Updater. To update a Surface Dock to the latest firmware, you must use the latest version of Surface Dock Updater.
+
+### Version 2.22.139.0
+*Release Date: 26 July 2018*
+
+This version of Surface Dock Updater adds support for the following:
+
+- Increase update reliability
+- Add support for Surface Go
 
 ### Version 2.12.136.0
 *Release Date: 29 January 2018*

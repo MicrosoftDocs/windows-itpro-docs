@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
@@ -19,7 +19,7 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 Allow a file to be executed in the organization, using Windows Defender Antivirus.
 
@@ -52,7 +52,7 @@ If successful, this method returns 200, Ok response code with empty body, which 
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -64,7 +64,7 @@ Content-type: application/json
 }
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 

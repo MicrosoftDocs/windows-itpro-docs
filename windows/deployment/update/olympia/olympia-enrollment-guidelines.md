@@ -1,30 +1,31 @@
 ---
 title: Olympia Corp enrollment guidelines
 description: Olympia Corp enrollment guidelines
-ms.author: nibr
+ms.author: jaimeo
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: jaimeo
 ms.date: 03/02/2018
+keywords: insider, trial, enterprise, lab, corporation, test
 ---
 
 # Olympia Corp
 
 ## What is Windows Insider Lab for Enterprise and Olympia Corp?
 
-Windows Insider Lab for Enterprise is intended for Windows Insiders who want to try new experimental and pre-release Enterprise Privacy and Security features. To get the complete experience of these Enterprise features, Olympia Corp, a virtual corporation has been set up to reflect the IT infrastructure of real world business. Selected customers are invited to join Olympia Corp and try these features.
+Windows Insider Lab for Enterprise is intended for Windows Insiders who want to try new experimental and pre-release enterprise privacy and security features. To get the complete experience of these enterprise features, Olympia Corp, a virtual corporation has been set up to reflect the IT infrastructure of real world business. Selected customers are invited to join Olympia Corp and try these features.
 
 As an Olympia user, you will have an opportunity to: 
 
--   Use various Enterprise features like Windows Information Protection (WIP), Advanced Threat Protection (ATP), windows Defender Application Guard (WDAG), and Application Virtualization (APP-V).
+-   Use various enterprise features like Windows Information Protection (WIP), Advanced Threat Protection (ATP), windows Defender Application Guard (WDAG), and Application Virtualization (APP-V).
 -   Learn how Microsoft is preparing for GDPR, as well as enabling enterprise customers to prepare for their own readiness.
 -   Validate and test pre-release software in your environment.
 -   Provide feedback.
 -   Interact with engineering team members through a variety of communication channels.
 
 >[!Note]
->Enterprise features might have reduced or different security, privacy, accessibility, availability, and reliability standards relative to commercially provided services and software. We may change or discontinue any of the Enterprise features at any time without notice.
+>Enterprise features might have reduced or different security, privacy, accessibility, availability, and reliability standards relative to commercially provided services and software. We may change or discontinue any of the enterprise features at any time without notice.
 
 For more information about Olympia Corp, see [https://olympia.windows.com/Info/FAQ](https://olympia.windows.com/Info/FAQ).
 

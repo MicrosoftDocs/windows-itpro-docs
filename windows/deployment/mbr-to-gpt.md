@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.date: 02/13/2018
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # MBR2GPT.EXE
@@ -25,7 +25,7 @@ ms.localizationpriority: high
 
 See the following video for a detailed description and demonstration of MBR2GPT.
 
-<iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/hfJep4hmg9o" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" align="center" src="https://www.youtube-nocookie.com/embed/hfJep4hmg9o" frameborder="0" allowfullscreen></iframe>
 
 You can use MBR2GPT to: 
 

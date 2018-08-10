@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 04/24/2018
 ---
 # Update data retention settings for Windows Defender ATP 
@@ -22,13 +22,13 @@ ms.date: 04/24/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-gensettings-abovefoldlink)
 
 During the onboarding process, a wizard takes you through the general settings of Windows Defender ATP. After onboarding, you might want to update the data retention settings.
 
-1. In the navigation pane, select **Settings** > **General** > **Data rention**.
+1. In the navigation pane, select **Settings** > **Data rention**.
 
 2. Select the data retention duration from the drop-down list.
 

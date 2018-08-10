@@ -1,6 +1,6 @@
 ---
 title: Configure Splunk to pull Windows Defender ATP alerts
-description: Configure Splunk to receive and pull alerts from the Windows Defender ATP portal.
+description: Configure Splunk to receive and pull alerts from Windows Defender Security Center.
 keywords: configure splunk, security information and events management tools, splunk
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 10/16/2017
 ---
 
@@ -138,6 +138,10 @@ Use the solution explorer to view alerts in Splunk.
 
 5. Find the query you saved in the list and click **Run**. The results are displayed based on your query.
 
+
+>[!TIP]
+> To mininimize alert duplications, you can use the following query:
+>```source="rest://windows atp alerts" | spath | dedup _raw | table *``` 
 
 ## Related topics
 - [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)

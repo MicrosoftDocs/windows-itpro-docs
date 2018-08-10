@@ -1,12 +1,12 @@
 ---
 title: Microsoft Edge - Frequently Asked Questions (FAQs) for IT Pros (Microsoft Edge for IT Pros)
 description: Answering frequently asked questions about Microsoft Edge features, integration, support, and potential problems.
-author: eross-msft
-ms.author: lizross
+author: shortpatti
+ms.author: pashort
 ms.prod: edge
 ms.mktglfcycl: general
 ms.sitesec: library
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 09/19/2017
 ---
 

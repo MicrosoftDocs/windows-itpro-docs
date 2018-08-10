@@ -8,6 +8,7 @@ ms.pagetype: surface, devices
 ms.sitesec: library
 author: brecords
 ms.author: jdecker
+ms.topic: article
 ms.date: 01/03/2018
 ---
 

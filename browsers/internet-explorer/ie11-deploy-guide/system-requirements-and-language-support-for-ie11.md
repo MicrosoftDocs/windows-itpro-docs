@@ -1,8 +1,8 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Lists the minimum system requirements and supported languages for Internet Explorer 11.
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: 27185e3d-c486-4e4a-9c51-5cb317c0006d
 title: System requirements and language support for Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)
@@ -24,7 +24,7 @@ ms.date: 07/27/2017
 Internet Explorer 11 is available for a number of systems and languages. This topic provides info about the minimum system requirements and language support.
 
 ## Minimum system requirements for IE11
-IE11 is pre-installed on Windows 8.1 and Windows Server 2012 R2 and is listed here for reference. It's also supported on Windows 10, but isn't pre-installed. For more info about IE11 on Windows 10, see [Browser: Microsoft Edge and Internet Explorer 11](https://technet.microsoft.com/library/mt156988.aspx).
+IE11 is pre-installed on Windows 8.1, Windows 10, and Windows Server 2012 R2 and is listed here for reference. For more info about IE11 on Windows 10, see [Browser: Microsoft Edge and Internet Explorer 11](https://technet.microsoft.com/library/mt156988.aspx).
 
 **Important**<br> 
 IE11 isn't supported on Windows 8 or Windows Server 2012.

@@ -7,6 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
+ms.topic: article
 ms.date: 09/14/2017
 ---
 
@@ -21,7 +22,7 @@ Use UniversalAppUninstall settings to uninstall or remove Windows apps.
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
 | [RemoveProvisionedApp](#removeprovisionedapp) | X |  |  |  |   |
-| [Uninstall](#uninstall) | X | X | X | X | X  |
+| [Uninstall](#uninstall) | X | X | X |  | X  |
 
 ## RemoveProvisionedApp
 

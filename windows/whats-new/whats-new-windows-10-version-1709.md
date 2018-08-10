@@ -26,19 +26,19 @@ A brief description of new or updated features in this version of Windows 10 is 
 
 ## Deployment
 
-### Windows AutoPilot
+### Windows Autopilot
 
-Windows AutoPilot is a zero touch experience for deploying Windows 10 devices. Configuration profiles can now be applied at the hardware vendor with devices being shipped directly to employees. For more information, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot).
+Windows Autopilot is a zero touch experience for deploying Windows 10 devices. Configuration profiles can now be applied at the hardware vendor with devices being shipped directly to employees. For more information, see [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot).
 
-You can also apply an AutoPilot deployment profile to your devices using Microsoft Store for Business. When people in your organization run the out-of-box experience on the device, the profile configures Windows based on the AutoPilot deployment profile you applied to the device. For more information, see [Manage Windows device deployment with Windows AutoPilot Deployment](https://docs.microsoft.com/en-us/microsoft-store/add-profile-to-devices).
+You can also apply an Autopilot deployment profile to your devices using Microsoft Store for Business. When people in your organization run the out-of-box experience on the device, the profile configures Windows based on the Autopilot deployment profile you applied to the device. For more information, see [Manage Windows device deployment with Windows Autopilot Deployment](https://docs.microsoft.com/en-us/microsoft-store/add-profile-to-devices).
 
 ### Windows 10 Subscription Activation
 
 Windows 10 Subscription Activation lets you deploy Windows 10 Enterprise in your organization with no keys and no reboots using a list of subscribed users. When a subscribed user signs in on their Windows 10 Pro device, features that are Enterprise-only are automatically enabled. For more information, see [Windows 10 Subscription Activation](https://docs.microsoft.com/windows/deployment/windows-10-enterprise-subscription-activation).
 
-### Windows Automatic Redeployment	
+### Autopilot Reset	
 
-IT Pros can use Windows Automatic Redeployment to quickly remove personal files, apps, and settings. A custom login screen is available from the lock screen that enables you to apply original settings and management enrollment (Azure Active Directory and device management) so that devices are returned to a fully configured, known, IT-approved state and ready to use. For more information, see [Reset devices with Windows Automatic Redeployment](https://docs.microsoft.com/education/windows/windows-automatic-redeployment).
+IT Pros can use Autopilot Reset to quickly remove personal files, apps, and settings. A custom login screen is available from the lock screen that enables you to apply original settings and management enrollment (Azure Active Directory and device management) so that devices are returned to a fully configured, known, IT-approved state and ready to use. For more information, see [Reset devices with Autopilot Reset](https://docs.microsoft.com/education/windows/autopilot-reset).
 
 
 ## Update
@@ -115,7 +115,7 @@ The minimum PIN length is being changed from 6 to 4, with a default of 6. For mo
 Microsoft has released new [Windows security baselines](https://docs.microsoft.com/en-us/windows/device-security/windows-security-baselines) for Windows Server and Windows 10. A security baseline is a group of Microsoft-recommended configuration settings with an explanation of their security impact. For more information, and to download the Policy Analyzer tool, see [Microsoft Security Compliance Toolkit 1.0](https://docs.microsoft.com/en-us/windows/device-security/security-compliance-toolkit-10).
 
 ### SMBLoris vulnerability
-An issue, known as “SMBLoris”, which could result in denial of service, has been addressed.
+An issue, known as “SMBLoris�?, which could result in denial of service, has been addressed.
 
 
 ## Windows Analytics

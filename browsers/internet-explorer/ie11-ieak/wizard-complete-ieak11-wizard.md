@@ -1,8 +1,8 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Wizard Complete - Next Steps page in the IEAK 11 Customization Wizard to build your custom Internet Explorer install package.
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: aaaac88a-2022-4d0b-893c-b2404b45cabc
 title: Use the Wizard Complete - Next Steps page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)

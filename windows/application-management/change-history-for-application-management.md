@@ -8,12 +8,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: jdeckerms
+ms.author: jdecker
+ms.topic: article
 ms.date: 10/24/2017
 ---
 
 # Change history for Application management in Windows 10
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
+
+## RELEASE: Windows 10, version 1803
+
+The topics in this library have been updated for Windows 10, version 1803.
 
 ## October 2017
 

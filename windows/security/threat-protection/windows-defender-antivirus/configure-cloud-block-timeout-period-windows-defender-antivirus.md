@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 08/26/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 04/30/2018
 ---
 
 # Configure the cloud block timeout period
@@ -20,7 +20,7 @@ ms.date: 08/26/2017
 
 **Applies to:**
 
-- Windows 10, version 1703
+- Windows 10, version 1703 and later
 
 **Audience**
 
@@ -53,9 +53,7 @@ You can use Group Policy to specify an extended timeout for cloud checks.
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
-2.  In the **Group Policy Management Editor** go to **Computer configuration**.
-
-3.  Click **Policies** then **Administrative templates**.
+2.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
 4.  Expand the tree to **Windows components > Windows Defender Antivirus > MpEngine**
     

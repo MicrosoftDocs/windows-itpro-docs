@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 08/26/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 07/19/2018
 ---
 
 # Deploy, manage, and report on Windows Defender Antivirus
@@ -41,13 +41,13 @@ You'll also see additional links for:
 Tool|Deployment options (<a href="#fn2" id="ref2">2</a>)|Management options (network-wide configuration and policy or baseline deployment) ([3](#fn3))|Reporting options  
 ---|---|---|---  
 System Center Configuration Manager ([1](#fn1))|Use the [Endpoint Protection point site system role][] and [enable Endpoint Protection with custom client settings][]|With [default and customized antimalware policies][] and [client management][]|With the default [Configuration Manager Monitoring workspace][] and [email alerts][]  
-Microsoft Intune|[Deploy the Microsoft Intune client to endpoints][]|Use and deploy a [custom Intune policy][] and use the Intune console to [manage tasks][]|[Monitor endpoint protection in the Microsoft Intune administration console][]  
+Microsoft Intune|[Add endpoint protection settings in Intune](https://docs.microsoft.com/en-us/intune/endpoint-protection-configure)|[Configure device restriction settings in Intune](https://docs.microsoft.com/en-us/intune/device-restrictions-configure)| [Use the Intune console to manage devices](https://docs.microsoft.com/en-us/intune/device-management)  
 Windows Management Instrumentation|Deploy with Group Policy, System Center Configuration Manager, or manually on individual endpoints.|Use the [Set method of the MSFT_MpPreference class][] and the [Update method of the MSFT_MpSignature class][]|Use the [MSFT_MpComputerStatus][] class and the get method of associated classes in the [Windows Defender WMIv2 Provider][]
 PowerShell|Deploy with Group Policy, System Center Configuration Manager, or manually on individual endpoints.|Use the [Set-MpPreference][] and [Update-MpSignature] [] cmdlets available in the Defender module|Use the appropriate [Get- cmdlets available in the Defender module][]
 Group Policy and Active Directory (domain-joined)|Use a Group Policy Object to deploy configuration changes and ensure Windows Defender Antivirus is enabled.|Use Group Policy Objects (GPOs) to [Configure update options for Windows Defender Antivirus][] and [Configure Windows Defender features][]|Endpoint reporting is not available with Group Policy. You can generate a list of [Group Policies to determine if any settings or policies are not applied][]
 Microsoft Azure|Deploy Microsoft Antimalware for Azure in the [Azure portal, by using Visual Studio virtual machine configuration, or using Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/azure/security/azure-security-antimalware#antimalware-deployment-scenarios). You can also [Install Endpoint protection in Azure Security Center](https://docs.microsoft.com/en-us/azure/security-center/security-center-install-endpoint-protection)|Configure [Microsoft Antimalware for Virtual Machines and Cloud Services with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/servicemanagement/azure.antimalware/v3.4.0/azure.antimalware) or [use code samples](https://gallery.technet.microsoft.com/Antimalware-For-Azure-5ce70efe)|Use [Microsoft Antimalware for Virtual Machines and Cloud Services with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/servicemanagement/azure.antimalware/v3.4.0/azure.antimalware) to enable monitoring. You can also review usage reports in Azure Active Directory to determine suspicious activity, including the [Possibly infected devices][] report and configure an SIEM tool to report on [Windows Defender Antivirus events][] and add that tool as an app in AAD.
 
-1. <span id="fn1" />The availability of some functions and features, especially related to cloud-delivered protection, differ between System Center Configuration Manager, current branch (for example, System Center Configuration Manager 2016) and System Center Configuration Manager 2012. In this library, we've focused on Windows 10, Windows Server 2016, and System Center Configuration Manager, current branch (2016). See the [Utilize Microsoft cloud-provided protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) topic for a table that describes the major differences. [(Return to table)](#ref2)
+1. <span id="fn1" />The availability of some functions and features, especially related to cloud-delivered protection, differ between System Center Configuration Manager (Current Branch) and System Center Configuration Manager 2012. In this library, we've focused on Windows 10, Windows Server 2016, and System Center Configuration Manager (Current Branch). See [Use Microsoft cloud-provided protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) for a table that describes the major differences. [(Return to table)](#ref2)
   
 2.	<span id="fn2" />In Windows 10, Windows Defender Antivirus is a component available without installation or deployment of an additional client or service. It will automatically be enabled when third-party antivirus products are either uninstalled or out of date ([except on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md)). Traditional deployment therefore is not required. Deployment here refers to ensuring the Windows Defender Antivirus component is available and enabled on endpoints or servers. [(Return to table)](#ref2)
 

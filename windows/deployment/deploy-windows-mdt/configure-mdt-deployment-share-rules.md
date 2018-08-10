@@ -5,10 +5,10 @@ ms.assetid: b5ce2360-33cc-4b14-b291-16f75797391b
 keywords: rules, configuration, automate, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-author: mtniehaus
+author: greg-lindsay
 ms.date: 07/27/2017
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Use role-based access control to grant fine-grained access to the Windows Defender ATP portal
+title: Use role-based access control to grant fine-grained access to Windows Defender Security Center
 description: Create roles and groups within your security operations to grant access to the portal.
 keywords: rbac, role, based, access, control, groups, control, tier, aad
 search.product: eADQiWindows 10XVcnh
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
-ms.date: 04/24/2018
+ms.localizationpriority: medium
+ms.date: 05/08/2018
 ---
 
 # Manage portal access using role-based access control
@@ -24,7 +24,7 @@ ms.date: 04/24/2018
 - Office 365
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-rbac-abovefoldlink)
 
@@ -57,12 +57,12 @@ Before using RBAC, it's important that you understand the roles that can grant p
 > [!WARNING]
 > Before enabling the feature, it's important that you have a Global Administrator role or Security Administrator role in Azure AD and that you have your Azure AD groups ready to reduce the risk of being locked out of the portal. 
 
-When you first log in to the Windows Defender ATP portal, you're granted either full access or read only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. Read only access is granted to users with a Security Reader role in Azure AD. 
+When you first log in to Windows Defender Security Center, you're granted either full access or read only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. Read only access is granted to users with a Security Reader role in Azure AD. 
 
 Someone with a Windows Defender ATP Global administrator role has unrestricted access to all machines, regardless of their machine group association and the Azure AD user groups assignments
 
 > [!WARNING]
-> Initially, only those with Azure AD Global Administrator or Security Administrator rights will be able to create and assign roles in the Windows Defender ATP portal, therefore, having the right groups ready in Azure AD is important.
+> Initially, only those with Azure AD Global Administrator or Security Administrator rights will be able to create and assign roles in Windows Defender Security Center, therefore, having the right groups ready in Azure AD is important.
 >
 > **Turning on role-based access control will cause users with read-only permissions (for example, users assigned to Azure AD Security reader role) to lose access until they are assigned to a role.** 
 >
@@ -76,17 +76,18 @@ Someone with a Windows Defender ATP Global administrator role has unrestricted a
 
 2.	Click **Add role**. 
 
-3.	Enter the role name, description, and active permissions you’d like to assign to the role.
+3.	Enter the role name, description, and permissions you’d like to assign to the role.
 
 	 - **Role name**
 
 	 - **Description**
 
-	 - **Active permissions**
+	 - **Permissions**
 		  - **View data** - Users can view information in the portal.
 		  - **Investigate alerts** - Users can manage alerts, initiate automated investigations, collect investigation packages, manage machine tags, and export machine timeline.
 		  - **Approve or take action** - Users can take response actions and approve or dismiss pending remediation actions.
 		  - **Manage system settings** - Users can configure settings, SIEM and threat intel API settings, advanced settings, preview features, and automated file uploads.
+		  - **Manage security settings** - Users can configure alert suppression settings, manage allowed/blocked lists for automation, manage folder exclusions for automation, onboard and offboard machines, and manage email notifications.
 		  
 4.	Click **Next** to assign the role to an Azure AD group.
 
@@ -102,13 +103,13 @@ Someone with a Windows Defender ATP Global administrator role has unrestricted a
 
 2.	Click **Edit**.
 
-3.	Modify the details or the groups that the role is a part of. 
+3.	Modify the details or the groups that are assigned to the role. 
 
 4.	Click **Save and close**.
 
 ## Delete roles
 
-1.	Select the role row you'd like to delete.
+1.	Select the role you'd like to delete.
 
 2.	Click the drop-down button and select **Delete role**.
 

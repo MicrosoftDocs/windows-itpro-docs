@@ -20,7 +20,7 @@ If you use a testing organizational unit (OU) to test Group Policy objects (GPOs
 
 1.  While you have the GPO checked out for editing, in the **Group Policy Management Console**, click **Group Policy Objects** in the forest and domain in which you are managing GPOs.
 
-2.  Click the checked out copy of the GPO to be tested. The name will be preceded with **\[Checked Out\]**. (If it is not listed, click **Action**, then **Refresh**. Sort the names alphabetically, and **\[Checked Out\]** GPOs will typically appear at the top of the list.)
+2.  Click the checked out copy of the GPO to be tested. The name will be preceded with **\[AGPM\]**. (If it is not listed, click **Action**, then **Refresh**. Sort the names alphabetically, and **\[AGPM\]** GPOs will typically appear at the top of the list.)
 
 3.  Drag and drop the GPO to the test OU.
 

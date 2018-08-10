@@ -2,12 +2,11 @@
 title: Connect other devices and display with Surface Hub
 description: You can connect other device to your Surface Hub to display content. 
 ms.assetid: 8BB80FA3-D364-4A90-B72B-65F0F0FC1F0D
-ms.prod: w10
-ms.mktglfcycl: manage
+ms.prod: surface-hub
 ms.sitesec: library
-ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
+ms.topic: article
 ms.date: 07/27/2017
 ms.localizationpriority: medium
 ---
@@ -34,7 +33,7 @@ When connecting external devices and displays to a Surface Hub, there are severa
 ## Guest Mode
 
 
-Guest Mode uses a wired connection, so people can display content from their devices to the Surface Hub. If the source device is Windows-based, that device can also provide Touchback and Inkback. Surface Hub's internal PC takes video and audio from the connected device and presents them on the Surface Hub. If Surface Hub encounters a High-Bandwidth Digital Content Protection (HDCP) signal, the source will be be displayed as a black image. To display your content without violating HDCP requirements, use the keypad on the right side of the Surface Hub to directly choose the external source.
+Guest Mode uses a wired connection, so people can display content from their devices to the Surface Hub. If the source device is Windows-based, that device can also provide Touchback and Inkback. Surface Hub's internal PC takes video and audio from the connected device and presents them on the Surface Hub. If Surface Hub encounters a High-Bandwidth Digital Content Protection (HDCP) signal, the source will be displayed as a black image. To display your content without violating HDCP requirements, use the keypad on the right side of the Surface Hub to directly choose the external source.
 
 >[!NOTE]
 >When an HDCP source is connected, use the side  keypad to change source inputs.

@@ -284,7 +284,7 @@ MBAM supports the following versions of Configuration Manager.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft System Center Configuration Manager (Current Branch), version 1610</p></td>
+<td align="left"><p>Microsoft System Center Configuration Manager (Current Branch), versions up to 1806</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
@@ -335,11 +335,16 @@ You must install SQL Server with the **SQL\_Latin1\_General\_CP1\_CI\_AS** coll
 </tr>
 </thead>
 <tbody>
+<tr class="odd">
+<td align="left"><p>Microsoft SQL Server 2017</p></td>
+<td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
+<td align="left"><p></p></td>
+<td align="left"><p>64-bit</p></td>    
 <tr class="even">
 <td align="left"><p>Microsoft SQL Server 2016</p></td>
 <td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
 <td align="left"><p>SP1</p></td>
-<td align="left"><p>64-bit</p></td>
+https://www.microsoft.com/en-us/download/details.aspx?id=54967<td align="left"><p>64-bit</p></td>
 <tr class="odd">
 <td align="left"><p>Microsoft SQL Server 2014</p></td>
 <td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
@@ -359,6 +364,8 @@ You must install SQL Server with the **SQL\_Latin1\_General\_CP1\_CI\_AS** coll
 </tbody>
 </table>
 
+**Note**  
+In order to support SQL 2016 you must install the March 2017 Servicing Release for MDOP https://www.microsoft.com/en-us/download/details.aspx?id=54967  and to support SQL 2017 you must install the July 2018 Servicing Release for MDOP https://www.microsoft.com/en-us/download/details.aspx?id=57157. In general stay current by always using the most recent servicing update as it also includes all bugfixes and new features.
  
 
 ### <a href="" id="bkmk-sql-stand-alone-ramreqs"></a>SQL Server processor, RAM, and disk space requirements – Stand-alone topology
@@ -462,6 +469,12 @@ The following table lists the operating systems that are supported for MBAM Clie
 </tr>
 </thead>
 <tbody>
+<tr class="even">
+    <td align="left"><p>Windows 10 IoT</p></td>
+    <td align="left"><p>Enterprise</p></td>
+    <td align="left"><p></p></td>
+    <td align="left"><p>32-bit or 64-bit</p></td>
+</tr>  
 <tr class="odd">
 <td align="left"><p>Windows 10</p></td>
 <td align="left"><p>Enterprise</p></td>
@@ -516,6 +529,12 @@ The following table lists the operating systems that are supported for MBAM Grou
 </tr>
 </thead>
 <tbody>
+ <tr class="even">
+      <td align="left"><p>Windows 10 IoT</p></td>
+      <td align="left"><p>Enterprise</p></td>
+      <td align="left"><p></p></td>
+      <td align="left"><p>32-bit or 64-bit</p></td>
+ </tr>
 <tr class="odd">
 <td align="left"><p>Windows 10</p></td>
 <td align="left"><p>Enterprise</p></td>

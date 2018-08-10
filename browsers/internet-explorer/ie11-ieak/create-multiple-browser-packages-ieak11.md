@@ -1,8 +1,8 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Steps to create multiple versions of your custom browser if you support more than 1 version of Windows, more than 1 language, or have different features in each package.
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: 4c5f3503-8c69-4691-ae97-1523091ab333
 title: Create multiple versions of your custom package using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)

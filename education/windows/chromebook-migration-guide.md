@@ -4,10 +4,11 @@ description: In this guide you will learn how to migrate a Google Chromebook-bas
 ms.assetid: 7A1FA48A-C44A-4F59-B895-86D4D77F8BEA
 keywords: migrate, automate, device, Chromebook migration
 ms.prod: w10
+ms.technology: Windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu, devices
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: craigash
 ms.author: celested
 ms.date: 10/13/2017

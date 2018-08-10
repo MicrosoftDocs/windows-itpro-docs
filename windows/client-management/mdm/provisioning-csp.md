@@ -6,7 +6,7 @@ ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: MariciaAlforque
 ms.date: 06/26/2017
 ---
 
@@ -40,7 +40,7 @@ The full URL for the discovery service.
 <a href="" id="provisioning-enrollments-upn-secret"></a>**Provisioning/Enrollments/*UPN*/Secret**  
 This information is dependent on the AuthPolicy being used. Possible values:
 
--   Password string for on-premise authentication enrollment
+-   Password string for on-premises authentication enrollment
 -   Federated security token for federated enrollment
 -   Certificate thumb print for certificated based enrollment
 

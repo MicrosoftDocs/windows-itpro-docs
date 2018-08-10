@@ -4,7 +4,7 @@ description: Microsoft Windows Defender Device Guard is a feature set that consi
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: brianlic-msft
 ms.date: 02/20/2018
 ---

@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 10/16/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 04/30/2018
 ---
 
 
@@ -27,7 +27,7 @@ The **Device performance & health** section contains information about hardware,
 The [Windows 10 IT pro troubleshooting topic](https://docs.microsoft.com/en-us/windows/client-management/windows-10-support-solutions), and the main [Windows 10 documentation library](https://docs.microsoft.com/en-us/windows/windows-10/) can also be helpful for resolving issues.
 
 
-In Windows 10, version 1709, the section can be hidden from users of the machine. This can be useful if you don't want employees in your organization to see or have access to user-configured options for the features shown in the section.
+In Windows 10, version 1709 and later, the section can be hidden from users of the machine. This can be useful if you don't want employees in your organization to see or have access to user-configured options for the features shown in the section.
 
 
 ## Hide the Device performance & health section
@@ -39,13 +39,11 @@ This can only be done in Group Policy.
 >[!IMPORTANT]
 >### Requirements
 >
->You must have Windows 10, version 1709 (the Fall Creators Update). The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
+>You must have Windows 10, version 1709 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
-
-4.  Click **Policies** then **Administrative templates**.
+3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
 5.  Expand the tree to **Windows components > Windows Defender Security Center > Device performance and health**.
 

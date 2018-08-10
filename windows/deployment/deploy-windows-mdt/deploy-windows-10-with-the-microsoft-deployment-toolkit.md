@@ -5,9 +5,9 @@ ms.assetid: 837f009c-617e-4b3f-9028-2246067ee0fb
 keywords: deploy, tools, configure, script
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
-author: mtniehaus
+author: greg-lindsay
 ms.pagetype: mdt
 ms.date: 10/16/2017
 ---

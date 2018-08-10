@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
-ms.date: 04/24/2018
+ms.localizationpriority: medium
+ms.date: 07/16/2018
 ---
 
 # Configure alert notifications in Windows Defender ATP
@@ -23,32 +23,36 @@ ms.date: 04/24/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
 
 You can configure Windows Defender ATP to send email notifications to specified recipients for new alerts. This feature enables you to identify a group of individuals who will immediately be informed and can act on alerts based on their severity.
 
 > [!NOTE]
-> Only users with full access can configure email notifications.
+> Only users with 'Manage security settings' permissions can configure email notifications. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications.
 
-You can set the alert severity levels that trigger notifications. When you turn enable the email notifications feature, it’s set to high and medium alerts by default.
+You can set the alert severity levels that trigger notifications. You can also add or remove recipients of the email notification. New recipients get notified about alerts encountered after they are added. For more information about alerts, see [View and organize the Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md).
 
-You can also add or remove recipients of the email notification. New recipients get notified about alerts encountered after they are added. For more information about alerts, see [View and organize the Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md).
+If you're using role-based access control (RBAC), recipients will only receive notifications based on the machine groups that were configured in the notification rule.
+Users with the proper permission can only create, edit, or delete notifications that are limited to their machine group management scope.
+Only users assigned to the Global administrator role can manage notification rules that are configured for all machine groups.
 
 The email notification includes basic information about the alert and a link to the portal where you can do further investigation.
+
 
 ## Create rules for alert notifications
 You can create rules that determine the machines and alert severities to send email notifications for and the notification recipients.
 
 
-1. In the navigation pane, select **Settings** > **General** > **Alert notifications**.
+1. In the navigation pane, select **Settings** > **Alert notifications**.
 
 2. Click **Add notification rule**.
 
 3.	Specify the General information:
-    - **Rule name**
-    - **Machines** - Choose whether to notify recipients for all alerts on all machines or on selected machine group. If you choose to only send on a selected machine group, make sure that the machine group has been created. For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md).
+    - **Rule name** - Specify a name for the notification rule.
+    - **Include organization name** - Specify the customer name that appears on the email notification.
+    - **Include tenant-specific portal link** - Adds a link with the tenant ID to allow access to a specific tenant.
+    - **Machines** - Choose whether to notify recipients for alerts on all machines (Global administrator role only) or on selected machine groups. For more information, see [Create and manage machine groups](machine-groups-windows-defender-advanced-threat-protection.md).
     - **Alert severity** - Choose the alert severity level
 
 4. Click **Next**.
@@ -68,7 +72,7 @@ Here's an example email notification:
 
 2. Update the General and Recipient tab information.
 
-3. CLick **Save notification rule**.
+3. Click **Save notification rule**.
 
 
 ## Delete notification rule
@@ -76,6 +80,7 @@ Here's an example email notification:
 1. Select the notification rule you'd like to delete.
 
 2. Click **Delete**.
+
 
 ## Troubleshoot email notifications for alerts
 This section lists various issues that you may encounter when using email notifications for alerts.

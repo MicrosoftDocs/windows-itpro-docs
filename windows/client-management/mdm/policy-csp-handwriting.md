@@ -5,8 +5,8 @@ ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
-ms.date: 03/12/2018
+author: MariciaAlforque
+ms.date: 08/09/2018
 ---
 
 # Policy CSP - Handwriting
@@ -44,7 +44,7 @@ ms.date: 03/12/2018
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>

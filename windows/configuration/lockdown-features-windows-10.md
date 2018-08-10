@@ -8,7 +8,9 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerms
-ms.localizationpriority: high
+ms.author: jdecker
+ms.topic: article
+ms.localizationpriority: medium
 ms.date: 07/27/2017
 ---
 
@@ -50,10 +52,10 @@ Many of the lockdown features available in Windows Embedded 8.1 Industry have be
 <td align="left"><p>Keyboard filter is added in Windows 10, version 1511. As in Windows Embedded Industry 8.1, Keyboard Filter is an optional component that can be turned on via <strong>Turn Windows Features On/Off</strong>. Keyboard Filter (in addition to the WMI configuration previously available) will be configurable through Windows Imaging and Configuration Designer (ICD) in the SMISettings path.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Shell Launcher](https://go.microsoft.com/fwlink/p/?LinkId=626676): launch a Classic Windows application on sign-on</p></td>
+<td align="left"><p>[Shell Launcher](https://go.microsoft.com/fwlink/p/?LinkId=626676): launch a Windows desktop application on sign-on</p></td>
 <td align="left">[Shell Launcher](https://go.microsoft.com/fwlink/p/?LinkId=618603)</td>
 <td align="left"><p>Shell Launcher continues in Windows 10. It is now configurable in Windows ICD under the <strong>SMISettings</strong> category.</p>
-<p>Learn [how to use Shell Launcher to create a kiosk device](https://go.microsoft.com/fwlink/p/?LinkId=626922) that runs a Classic Windows application.</p></td>
+<p>Learn [how to use Shell Launcher to create a kiosk device](https://go.microsoft.com/fwlink/p/?LinkId=626922) that runs a Windows desktop application.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>[Application Launcher]( https://go.microsoft.com/fwlink/p/?LinkId=626675): launch a Universal Windows Platform (UWP) app on sign-on</p></td>

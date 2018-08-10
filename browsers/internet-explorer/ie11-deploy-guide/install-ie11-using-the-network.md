@@ -1,8 +1,8 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to install the Internet Explorer 11 update using your network
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: 85f6429d-947a-4031-8f93-e26110a35828
 title: Install Internet Explorer 11 (IE11) using your network (Internet Explorer 11 for IT Pros)

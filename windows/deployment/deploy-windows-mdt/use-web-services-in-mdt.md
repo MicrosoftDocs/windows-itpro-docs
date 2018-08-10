@@ -5,10 +5,10 @@ ms.assetid: 8f47535e-0551-4ccb-8f02-bb97539c6522
 keywords: deploy, web apps
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.pagetype: mdt
 ms.sitesec: library
-author: mtniehaus
+author: greg-lindsay
 ms.date: 07/27/2017
 ---
 

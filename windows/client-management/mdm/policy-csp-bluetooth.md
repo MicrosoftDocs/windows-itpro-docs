@@ -5,14 +5,12 @@ ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
-ms.date: 04/06/2018
+author: MariciaAlforque
+ms.date: 08/08/2018
 ---
 
 # Policy CSP - Bluetooth
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -61,7 +59,7 @@ ms.date: 04/06/2018
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -115,7 +113,7 @@ The following list shows the supported values:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -169,7 +167,7 @@ The following list shows the supported values:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
@@ -221,7 +219,7 @@ The following list shows the supported values:
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -238,22 +236,16 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. This policy allows the IT admin to block users on these managed devices from using Quick Pair and other proximity based scenarios.
+Added in Windows 10, version 1803. This policy allows the IT admin to block users on these managed devices from using Swift Pair and other proximity based scenarios.
 
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:  
 
--   0 - Disallow. Block users on these managed devices from using Quick Pair and other proximity based scenarios
--   1 - Allow. Allow users on these managed devices to use Quick Pair and other proximity based scenarios
+-   0 - Disallow. Block users on these managed devices from using Swift Pair and other proximity based scenarios
+-   1 - Allow. Allow users on these managed devices to use Swift Pair and other proximity based scenarios
 
 <!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -275,7 +267,7 @@ The following list shows the supported values:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -322,7 +314,7 @@ If this policy is not set or it is deleted, the default local radio name is used
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -447,30 +439,4 @@ Footnote: * The Surface pen uses the HID over GATT profile
 
 {00001105-0000-1000-8000-00805F9B34FB};{00000008-0000-1000-8000-00805F9B34FB};{0000111E-0000-1000-8000-00805F9B34FB};{00001800-0000-1000-8000-00805F9B34FB};{0000180A-0000-1000-8000-00805F9B34FB};{00001813-0000-1000-8000-00805F9B34FB}
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Bluetooth policies supported by Windows Holographic for Business  
-
--   [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)  
--   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)  
--   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)  
-<!--EndHoloLens-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>Bluetooth policies supported by IoT Core  
-
--   [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)  
--   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)  
--   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)  
--   [Bluetooth/ServicesAllowedList](#bluetooth-servicesallowedlist)  
-<!--EndIoTCore-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>Bluetooth policies supported by Microsoft Surface Hub  
-
--   [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)  
--   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)  
--   [Bluetooth/AllowPrepairing](#bluetooth-allowprepairing)  
--   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)  
--   [Bluetooth/ServicesAllowedList](#bluetooth-servicesallowedlist)  
-<!--EndSurfaceHub-->
 

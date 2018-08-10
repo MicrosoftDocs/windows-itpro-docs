@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: DaniHalfin
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.author: daniha
 ms.date: 07/27/2017
 ---
@@ -338,6 +338,10 @@ The **Ring 4 Broad business users** deployment ring has now been configured. Fin
 1.  In the GPMC, select the **Windows Update for Business - CBB2** policy.
 
 2. In **Security Filtering** on the **Scope** tab, remove the default **AUTHENTICATED USERS** security group, and add the **Ring 5 Broad business users #2** group.
+
+## Known issues
+The following article describes the known challenges that can occur when you manage a Windows 10 Group policy client base:
+- [Known issues managing a Windows 10 Group Policy client in Windows Server 2012 R2](https://support.microsoft.com/en-us/help/4015786/known-issues-managing-a-windows-10-group-policy-client-in-windows-serv)
 
 ## Related topics
 

@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
@@ -19,7 +19,7 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 Get actions done on a machine.
 
@@ -47,7 +47,7 @@ If successful, this method returns 200, Ok response code with the *MachineAction
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -55,7 +55,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/testwdatppreview/machineactions/2e9da30d-27f6-4208-81f2-9cd3d67893ba
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 

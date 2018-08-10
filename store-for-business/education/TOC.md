@@ -26,7 +26,7 @@
 ### [Manage access to private store](/microsoft-store/manage-access-to-private-store?toc=/microsoft-store/education/toc.json)
 ### [Manage private store settings](/microsoft-store/manage-private-store-settings?toc=/microsoft-store/education/toc.json)
 ### [Configure MDM provider](/microsoft-store/configure-mdm-provider-microsoft-store-for-business?toc=/microsoft-store/education/toc.json)
-### [Manage Windows device deployment with Windows AutoPilot Deployment](/microsoft-store/add-profile-to-devices?toc=/microsoft-store/education/toc.json)
+### [Manage Windows device deployment with Windows Autopilot Deployment](/microsoft-store/add-profile-to-devices?toc=/microsoft-store/education/toc.json)
 ### [Microsoft Store for Business and Education PowerShell module - preview](/microsoft-store/microsoft-store-for-business-education-powershell-module?toc=/microsoft-store/education/toc.json)
 ### [Manage software purchased with Microsoft Products and Services agreement in Microsoft Store for Business](/microsoft-store/manage-mpsa-software-microsoft-store-for-business?toc=/microsoft-store/education/toc.json)
 ## [Device Guard signing portal](/microsoft-store/device-guard-signing-portal?toc=/microsoft-store/education/toc.json)

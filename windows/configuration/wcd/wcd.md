@@ -7,7 +7,8 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 10/09/2017
+ms.topic: article
+ms.date: 07/19/2018
 ---
 
 # Windows Configuration Designer provisioning settings (reference)
@@ -18,6 +19,7 @@ This section describes the settings that you can configure in [provisioning pack
 
 | Setting group | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
+[AccountManagement](wcd-accountmanagement.md) |  |  |  | X |  |
 | [Accounts](wcd-accounts.md) | X | X | X | X | X |
 | [ADMXIngestion](wcd-admxingestion.md) | X | | | | |
 | [ApplicationManagement](wcd-applicationmanagement.md) |  |  |  |  | X |
@@ -60,6 +62,7 @@ This section describes the settings that you can configure in [provisioning pack
 | [Personalization](wcd-personalization.md) | X |  |  |  |  |
 | [Policies](wcd-policies.md) | X | X | X | X | X |
 | [ProvisioningCommands](wcd-provisioningcommands.md) | X |  |  |  |  |
+[RcsPresence](wcd-rcspresence.md) |  | X |  |  |  |
 | [SharedPC](wcd-sharedpc.md) | X |  |  |  |  |
 | [Shell](wcd-shell.md) |  | X |  |  |  |
 | [SMISettings](wcd-smisettings.md) | X |  |  |  |  |
@@ -71,10 +74,11 @@ This section describes the settings that you can configure in [provisioning pack
 | [TakeATest](wcd-takeatest.md) | X |  |  |  |  |
 | [TextInput](wcd-textinput.md) |  | X |  |  |  |
 | [Theme](wcd-theme.md) |  | X |  |  |  |
-| [UnifiedWriteFilter](wcd-unifiedwritefilter.md) | X |  |  |  |  |
+| [UnifiedWriteFilter](wcd-unifiedwritefilter.md) | X |  |  |  | X |
 | [UniversalAppInstall](wcd-universalappinstall.md) | X | X | X | X | X |
 | [UniversalAppUninstall](wcd-universalappuninstall.md) | X | X | X | X | X |
 | [WeakCharger](wcd-weakcharger.md) |X | X | X | X |  |
+| [WindowsHelloForBusiness](wcd-windowshelloforbusiness.md) | X |  |  |  |  |
 | [WindowsTeamSettings](wcd-windowsteamsettings.md) |  |  | X |  |  |
 | [WLAN](wcd-wlan.md) |  |  |  | X |  |
 | [Workplace](wcd-workplace.md) |X | X | X | X | X |

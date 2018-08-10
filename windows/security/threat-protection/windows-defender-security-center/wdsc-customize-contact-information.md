@@ -9,16 +9,16 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 10/16/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 04/30/2018
 ---
 
 # Customize the Windows Defender Security Center app for your organization
 
 **Applies to**
 
-- Windows 10, version 1709
+- Windows 10, version 1709 and later
 
 **Audience**
 
@@ -44,7 +44,7 @@ Users can click on the displayed information to initiate a support request:
 
 ## Requirements
 
-You must have Windows 10, version 1709 (the Fall Creators Update). The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
+You must have Windows 10, version 1709 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
 
 ## Use Group Policy to enable and customize contact information
 
@@ -54,9 +54,7 @@ This can only be done in Group Policy.
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
-
-4.  Click **Policies** then **Administrative templates**.
+3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
 5.  Expand the tree to **Windows components > Windows Defender Security Center > Enterprise Customization**.
 

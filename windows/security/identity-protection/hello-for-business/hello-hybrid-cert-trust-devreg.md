@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
-localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 03/26/2018
 ---
 # Configure Device Registration for Hybrid Windows Hello for Business
@@ -253,7 +253,7 @@ The definition helps you to verify whether the values are present or if you need
  
 #### Issue objectSID of the computer account on-premises
 
-**`http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid`** - This claim must contain the the **objectSid** value of the on-premises computer account. In AD FS, you can add an issuance transform rule that looks like this:
+**`http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid`** - This claim must contain the **objectSid** value of the on-premises computer account. In AD FS, you can add an issuance transform rule that looks like this:
 
     @RuleName = "Issue objectSID for domain-joined computers"
     c1:[

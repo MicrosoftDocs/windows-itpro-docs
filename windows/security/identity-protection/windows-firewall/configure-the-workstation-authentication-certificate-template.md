@@ -6,8 +6,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: brianlic-msft
-ms.date: 04/19/2017
+author: Justinha
+ms.date: 07/30/2018
 ---
 
 # Configure the Workstation Authentication Certificate Template
@@ -36,7 +36,7 @@ To complete these procedures, you must be a member of both the Domain Admins gro
 
 6.  Click the **Subject Name** tab. Make sure that **Build from this Active Directory information** is selected. In **Subject name format**, select **Fully distinguished name**.
 
-7.  Click the **Request Handling** tab. You must determine the best minimum key size for your environment. Large key sizes provide better security, but they can affect server performance. We recommended that you use the default setting of 2048.
+7.  Click the **Cryptography** tab. You must determine the best minimum key size for your environment. Large key sizes provide better security, but they can affect server performance. We recommended that you use the default setting of 2048.
 
 8.  Click the **Security** tab. In **Group or user names**, click **Domain Computers**, under **Allow**, select **Enroll** and **Autoenroll**, and then click **OK**.
 

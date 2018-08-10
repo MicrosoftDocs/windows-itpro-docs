@@ -5,15 +5,17 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 title: Security enhancements for Microsoft Edge (Microsoft Edge for IT Pros)
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 10/16/2017
+ms.author: pashort
+author: shortpatti
 ---
 
 # Security enhancements for Microsoft Edge
 
 >Applies to: Windows 10, Windows 10 Mobile
 
-Microsoft Edge is designed with significant security improvements, helping to defend people from increasingly sophisticated and prevalent web-based attacks against Windows.
+Microsoft Edge is designed with improved security in mind, helping to defend people from increasingly sophisticated and prevalent web-based attacks against Windows.
 
 ## Help to protect against web-based security threats
 While most websites are safe, some sites have been designed to steal personal information or gain access to your system’s resources. Thieves by nature don’t care about rules, and will use any means to take advantage of victims, most often using trickery or hacking:

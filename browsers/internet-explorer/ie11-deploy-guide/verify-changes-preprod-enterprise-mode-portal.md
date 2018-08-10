@@ -1,9 +1,9 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Details about how to make sure your change request info is accurate within the pre-production environment of the Enterprise Mode Site List Portal.
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 title: Verify your changes using the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

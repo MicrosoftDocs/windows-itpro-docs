@@ -2,12 +2,11 @@
 title: Local management Surface Hub settings
 description: How to manage Surface Hub settings with Settings.
 keywords: manage Surface Hub, Surface Hub settings
-ms.prod: w10
-ms.mktglfcycl: manage
+ms.prod: surface-hub
 ms.sitesec: library
-ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
+ms.topic: article
 ms.date: 07/27/2017
 ms.localizationpriority: medium
 ---

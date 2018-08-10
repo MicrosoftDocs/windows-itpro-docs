@@ -5,10 +5,10 @@ ms.assetid: 29a421d1-12d2-414e-86dc-25b62f5238a7
 keywords: rules, script
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-author: mtniehaus
+author: greg-lindsay
 ms.date: 07/27/2017
 ---
 

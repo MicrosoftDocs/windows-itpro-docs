@@ -5,7 +5,7 @@ ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: MariciaAlforque
 ms.date: 03/12/2018
 ---
 
@@ -201,14 +201,14 @@ ADMX Info:
 <!--Description-->
 Added in Windows 10, version 1709. Boolean policy to disable the visibility of the credential provider that triggers the PC refresh on a device. This policy does not actually trigger the refresh. The admin user is required to authenticate to trigger the refresh on the target device.
 
-The Windows 10 Automatic ReDeployment feature allows admin to reset devices to a known good managed state while preserving the management enrollment. After the automatic redeployment is triggered the devices are for ready for use by information workers or students.
+The Autopilot Reset feature allows admin to reset devices to a known good managed state while preserving the management enrollment. After the Autopilot Reset is triggered the devices are for ready for use by information workers or students.
 
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 - Enable the visibility of the credentials for Windows 10 Automatic ReDeployment
-- 1 - Disable visibility of the credentials for Windows 10 Automatic ReDeployment
+- 0 - Enable the visibility of the credentials for Autopilot Reset
+- 1 - Disable visibility of the credentials for Autopilot Reset
 
 <!--/SupportedValues-->
 <!--/Policy-->

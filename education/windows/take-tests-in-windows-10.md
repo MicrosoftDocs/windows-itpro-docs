@@ -3,10 +3,11 @@ title: Take tests in Windows 10
 description: Learn how to set up and use the Take a Test app.
 keywords: take a test, test taking, school, how to, use Take a Test
 ms.prod: w10
+ms.technology: Windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: CelesteDG
 ms.author: celested
 ms.date: 10/16/2017

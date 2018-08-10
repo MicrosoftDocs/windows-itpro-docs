@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
@@ -19,7 +19,7 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 Retrieves all machines related to a specific alert.
 
@@ -48,7 +48,7 @@ If alert not found or machine not found - 404 Not Found.
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/testwdatppreview/alerts/{id}/machine
 Content-type: application/json
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 

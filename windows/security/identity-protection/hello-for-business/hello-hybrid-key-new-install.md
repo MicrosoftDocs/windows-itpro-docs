@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
-localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 03/26/2018
 ---
 # Windows Hello for Business Key Trust New Installation
@@ -60,7 +60,7 @@ Sign-in using _Enterprise Admin_ equivalent credentials on Windows Server 2012 o
 1. Open an elevated Windows PowerShell prompt.
 2. Use the following command to install the Active Directory Certificate Services role.   
     ```PowerShell
-    Add-WindowsFeature Adcs-Cert-Authority -IncludeManageTools
+    add-windowsfeature adcs-cert-authority -IncludeManagementTools
     ```
 
 3. Use the following command to configure the Certificate Authority using a basic certificate authority configuration.   
@@ -80,11 +80,11 @@ If you do not have an existing public key infrastructure, please review [Certifi
 ### Section Review ###
 
 > [!div class="checklist"]
-> *  Miniumum Windows Server 2012 Certificate Authority.
+> *  Minimum Windows Server 2012 Certificate Authority.
 > *  Enterprise Certificate Authority.
 > *  Functioning public key infrastructure.
 > *  Root certifcate authority certificate (Azure AD Joined devices).
-> *  Highly availalbe certificate revoication list (Azure AD Joined devices).
+> *  Highly available certificate revocation list (Azure AD Joined devices).
   
 ## Azure Active Directory ##
 You’ve prepared your Active Directory.  Hybrid Windows Hello for Business deployment needs Azure Active Directory to host your cloud-based identities. 

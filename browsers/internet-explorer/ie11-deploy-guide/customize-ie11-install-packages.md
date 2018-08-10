@@ -1,8 +1,8 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Customize Internet Explorer 11 installation packages
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: 10a14a09-673b-4f8b-8d12-64036135e7fd
 title: Customize Internet Explorer 11 installation packages (Internet Explorer 11 for IT Pros)

@@ -6,7 +6,7 @@ ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: MariciaAlforque
 ms.date: 08/11/2017
 ---
 
@@ -62,7 +62,7 @@ The following topics describe the end-to-end enrollment process using various au
 
 ## Enrollment support for domain-joined devices
  
-Devices that are joined to an on-premise Active Directory can enroll into MDM via the Work access page in **Settings**. However, the enrollment can only target the user enrolled with user-specific policies. Device targeted policies will continue to impact all users of the device.
+Devices that are joined to an on-premises Active Directory can enroll into MDM via the Work access page in **Settings**. However, the enrollment can only target the user enrolled with user-specific policies. Device targeted policies will continue to impact all users of the device.
 
 ## Disable MDM enrollments
 

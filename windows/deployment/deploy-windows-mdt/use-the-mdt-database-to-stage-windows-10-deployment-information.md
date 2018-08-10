@@ -6,9 +6,9 @@ ms.pagetype: mdt
 keywords: database, permissions, settings, configure, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
-author: mtniehaus
+author: greg-lindsay
 ms.date: 07/27/2017
 ---
 

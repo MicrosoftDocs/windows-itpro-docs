@@ -1,8 +1,8 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to set up automatic detection for DHCP or DNS servers using IEAK 11 in your organization.
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: c6bfe7c4-f452-406f-b47e-b7f0d8c44ae1
 title: Set up auto detection for DHCP or DNS servers using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)

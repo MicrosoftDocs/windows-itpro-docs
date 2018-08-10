@@ -1,5 +1,5 @@
 ---
-title: Create a Windows 10 kiosk that runs multiple apps (Windows 10)
+title: Set up a multi-app kiosk  (Windows 10)
 description: Learn how to configure a kiosk device running Windows 10 so that users can only run a few specific apps.
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
 keywords: ["lockdown", "app restrictions", "applocker"]
@@ -8,33 +8,36 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerms
-ms.localizationpriority: high
-ms.date: 02/08/2018
+ms.localizationpriority: medium
+ms.date: 07/30/2018
 ms.author: jdecker
+ms.topic: article
 ---
 
-# Create a Windows 10 kiosk that runs multiple apps
+# Set up a multi-app kiosk
 
 
 **Applies to**
 
 -   Windows 10 Pro, Enterprise, and Education
 
-A [kiosk device](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) has been expanded to make it easy for administrators to create kiosks that run more than one app. 
 
-The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access. 
+A [kiosk device](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) was expanded to make it easy for administrators to create kiosks that run more than one app. In Windows 10, version 1803, you can also:
+
+- Configure [a single-app kiosk profile](#profile) in your XML file.
+- Assign [group accounts to a config profile](#config-for-group-accounts).
+- Configure [an account to sign in automatically](#config-for-autologon-account).
+
+The benefit of a kiosk with desktop that runs only one or more specified apps is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access. 
 
 >[!WARNING]
->The assigned access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app assigned access configuration is applied on the device, [certain policies](#policies-set-by-multi-app-kiosk-configuration) are enforced system-wide, and will impact other users on the device. Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the policies enforced via assigned access.
+>The assigned access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app assigned access configuration is applied on the device, [certain policies](kiosk-policies.md) are enforced system-wide, and will impact other users on the device. Deleting the kiosk configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the policies enforced via assigned access.
 
 You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provisioning package](#provision).
 
 <span id="intune"/>
 ## Configure a kiosk in Microsoft Intune
 
-Watch how to use Intune to configure a multi-app kiosk.
-
->[!VIDEO https://www.microsoft.com/videoplayer/embed/ce9992ab-9fea-465d-b773-ee960b990c4a?autoplay=false]
 
 1. [Generate the Start layout for the kiosk device.](#startlayout)
 2. In the Microsoft Azure portal, search for **Intune** or go to **More services** > **Intune**.
@@ -43,22 +46,23 @@ Watch how to use Intune to configure a multi-app kiosk.
 5. Select **Create profile**.
 6. Enter a friendly name for the profile.
 7. Select **Windows 10 and later** for the platform.
-8. Select **Device restrictions** for the profile type.
-9. Select **Kiosk**.
-10. In **Kiosk Mode**, select **Multi app kiosk**.
-11. Select **Add** to define a configuration, which specifies the apps that will run and the layout for the Start menu.
+8. Select **Kiosk (Preview)** for the profile type.
+9. Select **Kiosk - 1 setting available**.
+10. Select **Add** to define a configuration, which specifies the apps that will run and the layout for the Start menu.
 12. Enter a friendly name for the configuration.
-13. Select an app type, either **Win32 App** for a classic desktop application or **UWP App** for a Universal Windows Platform app.
-  - For **Win32 App**, enter the fully qualified pathname of the executable, with respect to the device.
-  - For **UWP App**, enter the Application User Model ID for an installed app.
+10. In **Kiosk Mode**, select **Multi app kiosk**.
+13. Select an app type.
+  - For **Add Win32 app**, enter a friendly name for the app in **App Name**, and enter the path to the app executable in **Identifier**.
+  - For **Add managed apps**, select an app that you manage through Intune.
+  - For **Add app by AUMID**, enter the Application User Model ID (AUMID) for an installed UWP app.
 14. Select whether to enable the taskbar.
 15. Browse to and select the Start layout XML file that you generated in step 1.
 16. Add one or more accounts. When the account signs in, only the apps defined in the configuration will be available.
 17. Select **OK**. You can add additional configurations or finish.
 18. Assign the profile to a device group to configure the devices in that group as kiosks.
 
-
-
+>[!NOTE]
+>Managed apps are apps that are in the Microsoft Store for Business that is synced with your Intune subscription.
 
 
 ## Configure a kiosk using a provisioning package
@@ -72,12 +76,12 @@ Watch how to use a provisioning package to configure a multi-app kiosk.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
 
-If you don't want to use a provisioning package, you can deploy the configuration XML file using [mobile device management (MDM)](#alternate-methods) or you can configure assigned access using the [MDM Bridge WMI Provider](#bridge).
+If you don't want to use a provisioning package, you can deploy the configuration XML file using [mobile device management (MDM)](#alternate-methods) or you can configure assigned access using the [MDM Bridge WMI Provider](kiosk-mdm-bridge.md).
 
 ### Prerequisites
 
-- Windows Configuration Designer (Windows 10, version 1709)
-- The kiosk device must be running Windows 10 (S, Pro, Enterprise, or Education), version 1709
+- Windows Configuration Designer (Windows 10, version 1709 or later)
+- The kiosk device must be running Windows 10 (S, Pro, Enterprise, or Education), version 1709 or later
 
 >[!NOTE]
 >For devices running versions of Windows 10 earlier than version 1709, you can [create AppLocker rules](lock-down-windows-10-applocker.md) to configure a multi-app kiosk. 
@@ -121,7 +125,12 @@ You can start your file by pasting the following XML (or any other examples in t
 
 #### Profile
 
-A profile section in the XML has the following entries: 
+There are two types of profiles that you can specify in the XML:
+
+- **Lockdown profile**: Users assigned a lockdown profile will see the desktop in tablet mode with the specific apps on the Start screen.
+- **Kiosk profile**: New in Windows 10, version 1803, this profile replaces the KioskModeApp node of the [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp). Users assigned a kiosk profile will not see the desktop, but only the kiosk app running in full-screen mode.
+
+A lockdown profile section in the XML has the following entries: 
 
 - [**Id**](#id) 
 
@@ -130,6 +139,13 @@ A profile section in the XML has the following entries:
 - [**StartLayout**](#startlayout)
 
 - [**Taskbar**](#taskbar)
+
+A kiosk profile in the XML has the following entries:
+
+- [**Id**](#id) 
+
+- [**KioskModeApp**](#kioskmodeapp)
+
 
 
 ##### Id
@@ -144,7 +160,7 @@ The profile **Id** is a GUID attribute to uniquely identify the profile. You can
 
 ##### AllowedApps
 
-**AllowedApps** is a list of applications that are allowed to run. Apps can be Universal Windows Platform (UWP) apps or Classic Windows desktop apps. 
+**AllowedApps** is a list of applications that are allowed to run. Apps can be Universal Windows Platform (UWP) apps or Windows desktop applications. 
 
 Based on the purpose of the kiosk device, define the list of applications that are allowed to run. This list can contain both UWP apps and desktop apps. When the mult-app kiosk configuration is applied to a device, AppLocker rules will be generated to allow the apps that are listed in the configuration.
 
@@ -250,15 +266,55 @@ The following example hides the taskbar:
 >[!NOTE]
 >This is different from the **Automatically hide the taskbar** option in tablet mode, which shows the taskbar when swiping up from or moving the mouse pointer down to the bottom of the screen. Setting **ShowTaskbar** as **false** will always keep the taskbar hidden. 
 
+##### KioskModeApp 
+
+**KioskModeApp** is used for a [kiosk profile](#profile) only. Enter the AUMID for a single app. You can only specify one kiosk profile in the XML.
+
+```xml
+<KioskModeApp AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"/>
+```
+
+>[!IMPORTANT]
+>The kiosk profile is designed for public-facing kiosk devices. We recommend that you use a local, non-administrator account. If the device is connected to your company network, using a domain or Azure Active Direcotry account could potentially compromise confidential information.  
+
+
 #### Configs
 
 Under **Configs**, define which user account will be associated with the profile. When this user account signs in on the device, the associated assigned access profile will be enforced, including the allowed apps, Start layout, and taskbar configuration, as well as other local group policies or mobile device management (MDM) policies set as part of the multi-app experience. 
 
-The full multi-app assigned access experience can only work for non-admin users. It’s not supported to associate an admin user with the assigned access profile; doing this in the XML file will result in unexpected/unsupported experiences when this admin user signs in.  
+The full multi-app assigned access experience can only work for non-admin users. It’s not supported to associate an admin user with the assigned access profile; doing this in the XML file will result in unexpected/unsupported experiences when this admin user signs in. 
 
+You can assign:
 
+- [A local standard user account that signs in automatically](#config-for-autologon-account) (Applies to Windows 10, version 1803 only)
+- [An individual account, which can be local, domain, or Azure Active Directory (Azure AD)](#config-for-individual-accounts)
+- [A group account, which can be local, Active Directory (domain), or Azure AD](#config-for-group-accounts) (Applies to Windows 10, version 1803 only) 
 
-The account can be local, domain, or Azure Active Directory (Azure AD). Groups are not supported.
+>[!NOTE]
+>Configs that specify group accounts cannot use a kiosk profile, only a lockdown profile. If a group is configured to a kiosk profile, the CSP will reject the request.  
+
+##### Config for AutoLogon Account
+
+When you use `<AutoLogonAccount>` and the configuration is applied to a device, the specified account (managed by Assigned Access) is created on the device as a local standard user account. The specified account is signed in automatically after restart.
+
+On domain-joined devices, local user accounts aren't shown on the sign-in screen by default. To show the **AutoLogonAccount** on the sign-in screen, enable the following Group Policy setting: **Computer Configuration > Administrative Templates > System > Logon > Enumerate local users on domain-joined computers**. (The corresponding MDM policy setting is [WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers in the Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-enumeratelocalusersondomainjoinedcomputers).)
+
+```xml
+<Configs>
+  <Config>
+    <AutoLogonAccount/>
+    <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+  </Config>
+</Configs> 
+```
+
+>[!IMPORTANT]
+>When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature does not work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows}(https://support.microsoft.com/help/324737/how-to-turn-on-automatic-logon-in-windows).
+
+##### Config for individual accounts
+
+Individual accounts are specified using `<Account>`. 
+
 - Local account can be entered as `machinename\account` or `.\account` or just `account`.
 - Domain account should be entered as `domain\account`.
 - Azure AD account must be specified in this format: `AzureAD\{email address}`. **AzureAD** must be provided AS IS (consider it’s a fixed domain name), then follow with the Azure AD email address, e.g. **AzureAD\someone@contoso.onmicrosoft.com**.
@@ -284,10 +340,43 @@ Before applying the multi-app configuration, make sure the specified user accoun
 
 
 
+##### Config for group accounts
+
+Group accounts are specified using `<UserGroup>`. Nested groups are not supported. For example, if user A is member of Group 1, Group 1 is member of Group 2, and Group 2 is used in `<Config/>`, user A will not have the kiosk experience. 
+
+- Local group: Specify the group type as **LocalGroup** and put the group name in Name attribute. 
+
+  ```xml
+  <Config> 
+    <UserGroup Type="LocalGroup" Name="mygroup" /> 
+    <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/> 
+</Config> 
+  ```
+- Domain group: Both security and distribution groups are supported. Specify the group type as **ActiveDirectoryGroup**. Use the domain name as the prefix in the name attribute.
+
+  ```xml
+  <Config> 
+    <UserGroup Type="ActiveDirectoryGroup" Name="mydomain\mygroup" /> 
+    <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/> 
+</Config> 
+  ```
+
+- Azure AD group: Use the group object ID from the Azure portal to uniquely identify the group in the Name attribute. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as **AzureActiveDirectoryGroup**.
+
+  ```xml
+  <Config> 
+    <UserGroup Type="AzureActiveDirectoryGroup" Name="a8d36e43-4180-4ac5-a627-fb8149bba1ac" /> 
+    <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/> 
+</Config> 
+  ```
+
+  >[!NOTE]
+  >If an Azure AD group is configured with a lockdown profile on a device, a user in the Azure AD group must change their password (after the account has been created with default password on the portal) before they can sign in to this device. If the user uses the default password to sign in to the device, the user will be immediately signed out. 
+
 <span id="add-xml" />
 ### Add XML file to provisioning package
 
-Before you add the XML file to a provisioning package, you can [validate your configuration XML against the XSD](multi-app-kiosk-xml.md#xsd-for-assignedaccess-configuration-xml).
+Before you add the XML file to a provisioning package, you can [validate your configuration XML against the XSD](kiosk-xml.md#xsd-for-assignedaccess-configuration-xml).
 
 Use the Windows Configuration Designer tool to create a provisioning package. [Learn how to install Windows Configuration Designer.](provisioning-packages/provisioning-install-icd.md)
 
@@ -350,6 +439,8 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 Provisioning packages can be applied to a device during the first-run experience (out-of-box experience or "OOBE") and after ("runtime").
 
+>[!TIP]
+>In addition to the methods below, you can use the PowerShell comdlet [install-provisioningpackage](https://docs.microsoft.com/powershell/module/provisioning/Install-ProvisioningPackage?view=win10-ps) with `-LogsDirectoryPath` to get logs for the operation.
 
 #### During initial setup, from a USB drive
 
@@ -387,10 +478,7 @@ Provisioning packages can be applied to a device during the first-run experience
 
 
 
-### Validate provisioning
 
--	Go to **Settings** > **Accounts** > **Access work or school**, and then click **Add or remove a provisioning package**. You should see a list of packages that were applied to the device, including the one you applied for the multi-app configuration.
-- Optionally, run Event Viewer (eventvwr.exe) and look through logs under **Applications and Services Logs** > **Microsoft** > **Windows** > **Provisioning-Diagnostics-Provider** > **Admin**.
 
 
 <span id="alternate-methods" />
@@ -404,147 +492,9 @@ If your device is enrolled with a MDM server which supports applying the assigne
 The OMA-URI for multi-app policy is `./Device/Vendor/MSFT/AssignedAccess/Configuration`.
 
 
-<span id="bridge" />
-## Use MDM Bridge WMI Provider to configure assigned access
-
-Environments that use WMI can use the [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224.aspx) to configure the MDM_AssignedAccess class. See [PowerShell Scripting with WMI Bridge Provider](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/using-powershell-scripting-with-the-wmi-bridge-provider) for more details about using a PowerShell script to configure AssignedAccess. 
-
-Here’s an example to set AssignedAccess configuration:
-
-1. Download the [psexec tool](https://technet.microsoft.com/sysinternals/bb897553.aspx).  
-2. Run `psexec.exe -i -s cmd.exe`.
-3. In the command prompt launched by psexec.exe, enter `powershell.exe` to open PowerShell. 
-4. Execute the following script:
-
-```ps
-$nameSpaceName="root\cimv2\mdm\dmmap"
-$className="MDM_AssignedAccess"
-$obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
-$obj.Configuration = @"
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
-&lt;AssignedAccessConfiguration xmlns=&quot;http://schemas.microsoft.com/AssignedAccess/2017/config&quot;&gt;
-  &lt;Profiles&gt;
-    &lt;Profile Id=&quot;{9A2A490F-10F6-4764-974A-43B19E722C23}&quot;&gt;
-      &lt;AllAppsList&gt;
-        &lt;AllowedApps&gt;
-          &lt;App AppUserModelId=&quot;Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic&quot; /&gt;
-          &lt;App AppUserModelId=&quot;Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo&quot; /&gt;
-          &lt;App AppUserModelId=&quot;Microsoft.Windows.Photos_8wekyb3d8bbwe!App&quot; /&gt;
-          &lt;App AppUserModelId=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
-          &lt;App AppUserModelId=&quot;Microsoft.WindowsCalculator_8wekyb3d8bbwe!App&quot; /&gt;
-          &lt;App DesktopAppPath=&quot;%windir%\system32\mspaint.exe&quot; /&gt;
-          &lt;App DesktopAppPath=&quot;C:\Windows\System32\notepad.exe&quot; /&gt;
-        &lt;/AllowedApps&gt;
-      &lt;/AllAppsList&gt;
-      &lt;StartLayout&gt;
-        &lt;![CDATA[&lt;LayoutModificationTemplate xmlns:defaultlayout=&quot;http://schemas.microsoft.com/Start/2014/FullDefaultLayout&quot; xmlns:start=&quot;http://schemas.microsoft.com/Start/2014/StartLayout&quot; Version=&quot;1&quot; xmlns=&quot;http://schemas.microsoft.com/Start/2014/LayoutModification&quot;&gt;
-                      &lt;LayoutOptions StartTileGroupCellWidth=&quot;6&quot; /&gt;
-                      &lt;DefaultLayoutOverride&gt;
-                        &lt;StartLayoutCollection&gt;
-                          &lt;defaultlayout:StartLayout GroupCellWidth=&quot;6&quot;&gt;
-                            &lt;start:Group Name=&quot;Group1&quot;&gt;
-                              &lt;start:Tile Size=&quot;4x4&quot; Column=&quot;0&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic&quot; /&gt;
-                              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;2&quot; AppUserModelID=&quot;Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo&quot; /&gt;
-                              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.Windows.Photos_8wekyb3d8bbwe!App&quot; /&gt;
-                              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;4&quot; AppUserModelID=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
-                              &lt;start:Tile Size=&quot;4x2&quot; Column=&quot;0&quot; Row=&quot;4&quot; AppUserModelID=&quot;Microsoft.WindowsCalculator_8wekyb3d8bbwe!App&quot; /&gt;
-                            &lt;/start:Group&gt;
-                            &lt;start:Group Name=&quot;Group2&quot;&gt;
-                              &lt;start:DesktopApplicationTile Size=&quot;2x2&quot; Column=&quot;2&quot; Row=&quot;0&quot; DesktopApplicationLinkPath=&quot;%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk&quot; /&gt;
-                              &lt;start:DesktopApplicationTile Size=&quot;2x2&quot; Column=&quot;0&quot; Row=&quot;0&quot; DesktopApplicationLinkPath=&quot;%APPDATA%\Microsoft\Windows\Start Menu\Programs\Accessories\Notepad.lnk&quot; /&gt;
-                            &lt;/start:Group&gt;
-                          &lt;/defaultlayout:StartLayout&gt;
-                        &lt;/StartLayoutCollection&gt;
-                      &lt;/DefaultLayoutOverride&gt;
-                    &lt;/LayoutModificationTemplate&gt;
-                ]]&gt;
-      &lt;/StartLayout&gt;
-      &lt;Taskbar ShowTaskbar=&quot;true&quot;/&gt;
-    &lt;/Profile&gt;
-  &lt;/Profiles&gt;
-  &lt;Configs&gt;
-    &lt;Config&gt;
-      &lt;Account&gt;MultiAppKioskUser&lt;/Account&gt;
-      &lt;DefaultProfile Id=&quot;{9A2A490F-10F6-4764-974A-43B19E722C23}&quot;/&gt;
-    &lt;/Config&gt;
-  &lt;/Configs&gt;
-&lt;/AssignedAccessConfiguration&gt;
-"@
- 
-Set-CimInstance -CimInstance $obj
-```
-
-
-## Validate multi-app kiosk configuration
-
-Sign in with the assigned access user account you specified in the configuration to check out the multi-app experience. 
-
->[!NOTE] 
->The setting will take effect the next time the assigned access user signs in. If that user account is signed in when you apply the configuration, make sure the user signs out and signs back in to validate the experience. 
-
-The following sections explain what to expect on a multi-app kiosk.
-
-### App launching and switching experience
-
-In the multi-app mode, to maximize the user productivity and streamline the experience, an app will be always launched in full screen when the users click the tile on the Start. The users can minimize and close the app, but cannot resize the app window.  
-
-The users can switch apps just as they do today in Windows. They can use the Task View button, Alt + Tab hotkey, and the swipe in from the left gesture to view all the open apps in task view. They can click the Windows button to show Start, from which they can open apps, and they can switch to an opened app by clicking it on the taskbar. 
-
-### Start changes
-
-When the assigned access user signs in, you should see a restricted Start experience:
-- Start gets launched in full screen and prevents the end user from accessing the desktop. 
-- Start shows the layout aligned with what you defined in the multi-app configuration XML. 
-- Start prevents the end user from changing the tile layout.
-  - The user cannot resize, reposition, and unpin the tiles.
-  - The user cannot pin additional tiles on the start.
-- Start hides **All Apps** list.
-- Start hides all the folders on Start (including File Explorer, Settings, Documents, Downloads, Music, Pictures, Videos, HomeGroup, Network, and Personal folders). 
-- Only **User** and **Power** buttons are available. (You can control whether to show the **User/Power** buttons using [existing policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start).) 
-- Start hides **Change account settings** option under **User** button.
-
-### Taskbar changes
-
-If the applied multi-app configuration enables taskbar, when the assigned access user signs in, you should see a restricted Taskbar experience:
-- Disables context menu of Start button (Quick Link)
-- Disables context menu of taskbar
-- Prevents the end user from changing the taskbar
-- Disables Cortana and Search Windows
-- Hides notification icons and system icons, e.g. Action Center, People, Windows Ink Workspace
-- Allows the end user to view the status of the network connection and power state, but disables the flyout of **Network/Power** to prevent end user from changing the settings
-
-### Blocked hotkeys
-
-The multi-app mode blocks the following hotkeys, which are not relevant for the lockdown experience. 
-
-| Hotkey | Action |
-| --- | --- |
-| Windows logo key  + A	 | Open Action center |
-| Windows logo key  + Shift + C |	Open Cortana in listening mode |
-| Windows logo key  + D	| Display and hide the desktop |
-| Windows logo key  + Alt + D	| Display and hide the date and time on the desktop |
-| Windows logo key  + E	| Open File Explorer |
-| Windows logo key  + F |	Open Feedback Hub |
-| Windows logo key  + G	| Open Game bar when a game is open |
-| Windows logo key  + I	| Open Settings |
-| Windows logo key  + J |	Set focus to a Windows tip when one is available. |
-| Windows logo key  + O	| Lock device orientation |
-| Windows logo key  + Q	 | Open search |
-| Windows logo key  + R	| Open the Run dialog box |
-| Windows logo key  + S	| Open search |
-| Windows logo key  + X	| Open the Quick Link menu |
-| Windows logo key  + comma (,) |	Temporarily peek at the desktop |
-| Windows logo key  + Ctrl + F |	Search for PCs (if you're on a network) |
 
 
 
-### Locked-down Ctrl+Alt+Del screen
-
-The multi-app mode removes options (e.g. **Change a password**, **Task Manager**, **Network**) in the Ctrl+Alt+Del screen to ensure the users cannot access the functionalities that are not allowed in the lockdown experience. 
-
-### Auto-trigger touch keyboard
-
-In the multi-app mode, the touch keyboard will be automatically triggered when there is an input needed and no physical keyboard is attached on touch-enabled devices. You don’t need to configure any other setting to enforce this behavior. 
 
 
 
@@ -602,7 +552,7 @@ Lock the Taskbar	 |	Enabled
 Prevent users from adding or removing toolbars |		Enabled
 Prevent users from resizing the taskbar	 |	Enabled
 Remove frequent programs list from the Start Menu |		Enabled
-Remove Pinned programs from the taskbar	 |	Enabled
+Remove ‘Map Network Drive’ and ‘Disconnect Network Drive’ | Enabled
 Remove the Security and Maintenance icon	 |	Enabled
 Turn off all balloon notifications |		Enabled
 Turn off feature advertisement balloon notifications	 |	Enabled
@@ -626,9 +576,19 @@ Some of the MDM policies based on the [Policy configuration service provider (CS
 Setting	| 	Value	| System-wide
  --- | --- | ---
 [Experience/AllowCortana](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowcortana)		| 0 - Not allowed	| 	Yes
+[Start/AllowPinnedFolderDocuments](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderdocuments) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Start/AllowPinnedFolderDownloads](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderdownloads) |	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Start/AllowPinnedFolderFileExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderfileexplorer) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Start/AllowPinnedFolderHomeGroup](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderhomegroup) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Start/AllowPinnedFolderMusic](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldermusic) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Start/AllowPinnedFolderNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldernetwork) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Start/AllowPinnedFolderPersonalFolder](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderpersonalfolder) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Start/AllowPinnedFolderPictures](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderpictures) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
 [Start/AllowPinnedFolderSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldersettings)	| 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
-Start/HidePeopleBar		| 1 - True (hide)	| 	No
-[Start/HideChangeAccountSettings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-start#start-hidechangeaccountsettings)		| 1 - True (hide) | Yes
+[Start/AllowPinnedFolderVideos](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldervideos) | 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+Start/DisableContextMenus | 1 - Context menus are hidden for Start apps | No
+[Start/HidePeopleBar](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-hidepeoplebar)		| 1 - True (hide)	| 	No
+[Start/HideChangeAccountSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-hidechangeaccountsettings)		| 1 - True (hide) | Yes
 [WindowsInkWorkspace/AllowWindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace#windowsinkworkspace-allowwindowsinkworkspace)	| 	0 - Access to ink workspace is disabled and the feature is turned off	| 	Yes
 [Start/StartLayout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-startlayout)	| Configuration dependent	| 	No
 [WindowsLogon/DontDisplayNetworkSelectionUI](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-dontdisplaynetworkselectionui)	| 	&lt;Enabled/&gt;	| 	Yes
@@ -636,7 +596,7 @@ Start/HidePeopleBar		| 1 - True (hide)	| 	No
 <span id="lnk-files" />
 ## Provision .lnk files using Windows Configuration Designer
 
-First, create your desktop app's shortcut file by installing the app on a test device. Right-click the installed application, and choose **Send to** > **Desktop (create shortcut)**. Rename the shortcut to `<appName>.lnk`
+First, create your desktop app's shortcut file by installing the app on a test device, using the default installation location. Right-click the installed application, and choose **Send to** > **Desktop (create shortcut)**. Rename the shortcut to `<appName>.lnk`
 
 Next, create a batch file with two commands. If the desktop app is already installed on the target device, skip the first command for MSI install. 
 
@@ -647,6 +607,13 @@ copy <appName>.lnk "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs\<app
 
 In Windows Configuration Designer, under **ProvisioningCommands** > **DeviceContext**:
 
-- Under **CommandFiles**, upload your batch file, your .lnk file, and your desktop app installation file 
-- Under **CommandLine**, enter cmd /c *FileName*.bat
+- Under **CommandFiles**, upload your batch file, your .lnk file, and your desktop app installation file.
 
+  >[!IMPORTANT]
+  >Paste the full file path to the .lnk file in the **CommandFiles** field. If you browse to and select the .lnk file, the file path will be changed to the path of the target of the .lnk.
+
+- Under **CommandLine**, enter `cmd /c *FileName*.bat`.
+
+## Other methods
+
+Environments that use WMI can use the [MDM Bridge WMI Provider to configure a kiosk](kiosk-mdm-bridge.md).

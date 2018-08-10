@@ -2,12 +2,11 @@
 title: Microsoft Surface Hub admin guide
 description: Documents related to the Microsoft Surface Hub.
 ms.assetid: 69C99E91-1441-4318-BCAF-FE8207420555
-ms.prod: w10
-ms.mktglfcycl: explore
+ms.prod: surface-hub
 ms.sitesec: library
-ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
+ms.topic: article
 ms.date: 09/07/2017
 ms.localizationpriority: medium
 ---
@@ -51,4 +50,11 @@ In some ways, adding your new Surface Hub is just like adding any other Microsof
 | [Change history for Surface Hub](change-history-surface-hub.md) | This topic lists new and updated topics in the Surface Hub documentation library. |
 
 
+
+## Additional resources
+
+- [Surface Hub update history](https://support.microsoft.com/help/4037666/surface-surface-hub-update-history)
+- [Surface IT Pro Blog](https://blogs.technet.microsoft.com/surface/)
+- [Surface Playlist of videos](https://www.youtube.com/playlist?list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ)
+- [Microsoft Surface on Twitter](https://twitter.com/surface)
 

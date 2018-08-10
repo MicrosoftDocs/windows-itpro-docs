@@ -2,12 +2,11 @@
 title: How Surface Hub addresses Wi-Fi Direct security issues
 description: This topic provides guidance on Wi-Fi Direct security risks.
 keywords: change history
-ms.prod: w10
-ms.mktglfcycl: manage
+ms.prod: surface-hub
 ms.sitesec: library
-ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
+ms.topic: article
 ms.date: 07/27/2017
 ms.localizationpriority: medium
 ---

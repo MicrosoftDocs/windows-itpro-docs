@@ -3,12 +3,14 @@ title: Enable PEAP, EAP-FAST, and Cisco LEAP on Surface devices (Surface)
 description: Find out how to enable support for PEAP, EAP-FAST, or Cisco LEAP protocols on your Surface device.
 ms.assetid: A281EFA3-1552-467D-8A21-EB151E58856D
 keywords: network, wireless, device, deploy, authentication, protocol
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: miladCA
+ms.author: jdecker
+ms.topic: article
 ms.date: 07/27/2017
 ---
 

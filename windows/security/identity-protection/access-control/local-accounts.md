@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.date: 04/19/2017
+ms.date: 07/30/2018
 ---
 
 # Local Accounts
@@ -92,7 +92,7 @@ The Administrator account cannot be deleted or removed from the Administrators g
 
 **Security considerations**
 
-Because the Administrator account is known to exist on many versions of the Windows operating system, it is a best practice to disable the Administrator account when possible to make it more difficult for malicious users to gain access to to the server or client computer.
+Because the Administrator account is known to exist on many versions of the Windows operating system, it is a best practice to disable the Administrator account when possible to make it more difficult for malicious users to gain access to the server or client computer.
 
 You can rename the Administrator account. However, a renamed Administrator account continues to use the same automatically assigned security identifier (SID), which can be discovered by malicious users. For more information about how to rename or disable a user account, see [Disable or activate a local user account](http://technet.microsoft.com/library/cc732112.aspx) and [Rename a local user account](http://technet.microsoft.com/library/cc725595.aspx).
 
@@ -114,11 +114,11 @@ Even when the Administrator account has been disabled, it can still be used to g
 
 ### <a href="" id="sec-guest"></a>Guest account
 
-The Guest account (SID S-1-5-32-546) is disabled by default on installation. The Guest account lets occasional or one-time users, who do not have an account on the computer, temporarily sign in to the local server or client computer with limited user rights. By default, the Guest account has a blank password. Because the Guest account can provide anonymous access, it is a security risk. For this reason, it is a best practice to leave the Guest account disabled, unless its use is entirely necessary.
+The Guest account is disabled by default on installation. The Guest account lets occasional or one-time users, who do not have an account on the computer, temporarily sign in to the local server or client computer with limited user rights. By default, the Guest account has a blank password. Because the Guest account can provide anonymous access, it is a security risk. For this reason, it is a best practice to leave the Guest account disabled, unless its use is entirely necessary.
 
 **Account group membership**
 
-By default, the Guest account is the only member of the default Guests group, which lets a user sign in to a server. On occasion, an administrator who is a member of the Administrators group can set up a user with a Guest account on one or more computers.
+By default, the Guest account is the only member of the default Guests group (SID S-1-5-32-546), which lets a user sign in to a server. On occasion, an administrator who is a member of the Administrators group can set up a user with a Guest account on one or more computers.
 
 **Security considerations**
 

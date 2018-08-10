@@ -6,7 +6,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
-ms.date: 4/26/2018
+ms.author: TrudyHa
+ms.topic: conceptual
+ms.date: 07/31/2018
 ---
 
 # Microsoft Store for Business and Education release history
@@ -14,6 +16,18 @@ ms.date: 4/26/2018
 Microsoft Store for Business and Education regularly releases new and improved feaures. Here's a summary of new or updated features in previous releases. 
 
 Looking for info on the latest release? Check out [What's new in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md) 
+
+## June 2018
+- **Change order within private store collection** - Continuing our focus on improvements for private store, now you can customize the order of products in each private store collection. 
+- **Performance improvements in private store** - We continue to work on performance improvements in the private store. Now, most products new to your inventory are available in your private store within 15 minutes of adding them. [Get more info](https://docs.microsoft.com/microsoft-store/manage-private-store-settings#private-store-performance)
+
+## May 2018
+- **Immersive Reader app available in Microsoft Store for Education** - This app is a free tool that uses proven techniques to improve reading and writing for people regardless of their age or ability. You can add the app to your private store, so students can easily install and use it.  
+
+## April 2018
+- **Assign apps to larger groups** - We're making it easier for admins to assign apps to groups of people. Admins can assign licenses to groups of any size, and include subgroups within those groups. We’ll figure out who’s in those groups, and assign licenses to people in the groups (skipping people who already have licenses). Along the way, we’ll let you know how many licenses are needed, and provide an estimate on the time required to assign licenses.
+- **Change collection order in private store** - Private store collections make it easy for groups of people to find the apps that they need. Now, you can customize the order of your private store collections. 
+- **Office 365 subscription management** -  We know that sometimes customers need to cancel a subscription. While we don't want to lose a customer, we want the process for managing subscriptions to be easy. Now, you can delete your Office 365 subscription without calling Support. From Microsoft Store for Business and Education, you can request to delete an Office 365 subscription. We'll wait three days before permanently deleting the subscription. In case of a mistake, customers are welcome to reactivate subscriptions during the three-day period.
 
 ## March 2018
 - **Performance improvements in private store** - We've made it significantly faster for you to udpate the private store. Many changes to the private store are available immediately after you make them. [Get more info](https://docs.microsoft.com/microsoft-store/manage-private-store-settings#private-store-performance)
@@ -43,7 +57,7 @@ Looking for info on the latest release? Check out [What's new in Microsoft Store
 
 ## September 2017
 
-- **Manage Windows device deployment with Windows AutoPilot Deployment** - In Microsoft Store for Business, you can manage devices for your organization and apply an AutoPilot deployment profile to your devices. When people in your organization run the out-of-box experience on the device, the profile configures Windows, based on the AutoPilot deployment profile you applied to the device. [Get more info](add-profile-to-devices.md)
+- **Manage Windows device deployment with Windows Autopilot Deployment** - In Microsoft Store for Business, you can manage devices for your organization and apply an Autopilot deployment profile to your devices. When people in your organization run the out-of-box experience on the device, the profile configures Windows, based on the Autopilot deployment profile you applied to the device. [Get more info](add-profile-to-devices.md)
 - **Request an app** - People in your organization can reqest additional licenses for apps in your private store, and then Admins or Purchasers can make the purchases. [Get more info](https://docs.microsoft.com/microsoft-store/acquire-apps-microsoft-store-for-business#request-apps)
 - **My organization** - **My organization** shows you all Agreements that apply to your organization. You can also update profile info for you org, such as mailing address and email associated with your account.
 - **Manage prepaid Office 365 subscriptions** - Office 365 prepaid subscriptions can be redeemed using a prepaid token. Tokens are available through 3rd-party businesses, outside of Microsoft Store for Business or the Office 365 Admin portal. After redemming prepaid subscriptions, Admins can add more licenses or extend the subscription's expiration date.

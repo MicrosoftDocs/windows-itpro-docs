@@ -5,10 +5,10 @@ ms.assetid: 3bd1cf92-81e5-48dc-b874-0f5d9472e5a5
 ms.pagetype: mdt
 keywords: deploy, image, customize, task sequence
 ms.prod: w10
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: mtniehaus
+author: greg-lindsay
 ms.date: 07/27/2017
 ---
 

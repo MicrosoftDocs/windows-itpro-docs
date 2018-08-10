@@ -5,7 +5,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: jdeckerms
-ms.localizationpriority: high
+ms.author: jdecker
+ms.topic: article
+ms.localizationpriority: medium
 ms.date: 07/27/2017
 ---
 

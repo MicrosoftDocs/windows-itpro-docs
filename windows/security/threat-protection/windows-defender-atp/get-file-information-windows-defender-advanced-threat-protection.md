@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
@@ -19,7 +19,7 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 
 Retrieves a file by identifier Sha1, Sha256, or MD5.
@@ -50,7 +50,7 @@ If file does not exist - 404 Not Found.
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/testwdatppreview/files/{id}
 Content-type: application/json
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 

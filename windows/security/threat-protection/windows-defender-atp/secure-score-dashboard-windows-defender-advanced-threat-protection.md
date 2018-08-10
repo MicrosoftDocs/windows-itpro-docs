@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 04/24/2018
 ---
 
@@ -22,7 +22,7 @@ ms.date: 04/24/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-sadashboard-abovefoldlink) 
 
@@ -297,6 +297,9 @@ For more information, see [Windows Defender Firewall with Advanced Security](htt
 ### BitLocker optimization
 For a machine to be considered "well configured", it must comply to a minimum baseline configuration setting. This tile shows you a specific list of actions you must apply on endpoints so that the minimum baseline configuration setting for BitLocker is fulfilled. 
 
+>[!IMPORTANT]
+>This security control is only applicable for machines with Windows 10, version 1803 or later.
+
 #### Minimum baseline configuration setting for BitLocker
 - Ensure all supported internal drives are encrypted
 - Ensure that all suspended protection on drives resume protection 
@@ -323,7 +326,7 @@ For a machine to be considered "well configured", it must comply to a minimum ba
 Machines are considered "well configured" for Windows Defender Credential Guard if the following requirements are met:
 
 - Hardware and software prerequisites are met
-- Windows Defender Credential Guard is turned on on compatible machines
+- Windows Defender Credential Guard is turned on compatible machines
 
 
 ##### Recommended actions:

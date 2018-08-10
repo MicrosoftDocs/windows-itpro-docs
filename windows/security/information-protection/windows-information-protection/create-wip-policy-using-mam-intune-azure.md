@@ -5,9 +5,9 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: eross-msft
-ms.author: lizross
-ms.date: 10/13/2017
+author: justinha
+ms.author: justinha
+ms.date: 08/08/2018
 localizationpriority: medium
 ---
 
@@ -26,13 +26,18 @@ By using Microsoft Intune with Mobile application management (MAM), organization
 - Remove enterprise data from employee's devices
 - Report on mobile app inventory and track usage
 
->[!NOTE]
->This topic covers creating a Windows Information Protection (WIP) policy for organizations using a mobile application management (MAM) solution to deploy your WIP policy to Intune apps without device enrollment. If you are already managing devices by using a Mobile Device Management (MDM) solution, you must follow the instructions in the [Create a Windows Information Protection (WIP) with enrollment policy using the Azure portal for Microsoft Intune](create-wip-policy-using-intune-azure.md) topic.
+## Alternative steps if you already manage devices with MDM
+
+This topic covers creating a Windows Information Protection (WIP) policy for organizations using a mobile application management (MAM) solution to deploy your WIP policy to Intune apps without device enrollment. If you are already managing devices by using a Mobile Device Management (MDM) solution, see [Create a Windows Information Protection (WIP) with enrollment policy using the Azure portal for Microsoft Intune](create-wip-policy-using-intune-azure.md).
+
+If the same user and device are targeted for both MAM-only (without device enrollment) policy and MDM policy, the MDM policy (with device enrollement) will be applied to devices joined to Azure AD. For personal devices that are workplace-joined (that is, added by using **Settings** > **Email & accounts** > **Add a work or school account**), the MAM-only policy will be preferred but it's possible to upgrade the device management to MDM in **Settings**. 
+
+Windows Home edition only supports WIP for MAM-only; upgrading to MDM policy on Home edition will revoke WIP-protected data access. 
 
 ## Prerequisites to using MAM with Windows Information Protection (WIP)
-Before you can create your WIP policy with MAM, you must first set up your MAM provider. For more info about how to do this, see the [Get ready to configure app protection policies for Windows 10](https://docs.microsoft.com/en-us/intune-classic/deploy-use/get-ready-to-configure-app-protection-policies-for-windows-10) topic.
+Before you can create your WIP policy with MAM, you need to [set up your MAM provider](https://docs.microsoft.com/intune-classic/deploy-use/get-ready-to-configure-app-protection-policies-for-windows-10).
 
-Additionally, you must have an [Azure AD Premium license](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-licensing-what-is) and be running at least Windows 10, version 1703 on your device.
+Additionally, you must have an [Azure AD Premium license](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-what-is) and be running at least Windows 10, version 1703 on your device.
 
 >[!Important]
 >WIP doesn't support multi-identity. Only one managed identity can exist at a time.
@@ -62,7 +67,7 @@ After you’ve set up Intune for your organization, you must create a WIP-specif
         ![Microsoft Intune management console: Create your new policy in the Add a policy blade](images/wip-azure-add-policy.png)
 
         >[!Important]
-        >Choosing **Without enrollment** only applies for organizations using MAM. If you're using MDM, you must use these instructions, [Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune](create-wip-policy-using-intune-azure.md), instead.
+        >Choosing **Without enrollment** only applies for organizations using MAM. If you're using MDM, see [Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune](create-wip-policy-using-intune-azure.md).
 
 4.  Click **Create**.
     
@@ -132,7 +137,7 @@ If you don't know the publisher or product name for your Store app, you can find
 **To find the publisher and product name values for Store apps without installing them**
 1.	Go to the [Microsoft Store for Business](https://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, *Microsoft Power BI*.
 
-2.	Copy the ID value from the app URL. For example, Microsoft Power BI ID URL is https://www.microsoft.com/en-us/store/p/microsoft-power-bi/9nblgggzlxn1, and you'd copy the ID value, `9nblgggzlxn1`.
+2.	Copy the ID value from the app URL. For example, Microsoft Power BI ID URL is https://www.microsoft.com/store/p/microsoft-power-bi/9nblgggzlxn1, and you'd copy the ID value, `9nblgggzlxn1`.
 
 3.	In a browser, run the Microsoft Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values. For example, run https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9nblgggzlxn1/applockerdata, where `9nblgggzlxn1` is replaced with your ID value.
 
@@ -256,6 +261,7 @@ Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the 
 For this example, we’re going to add an AppLocker XML file to the **Allowed apps** list. You’ll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
 
 **To create a list of Allowed apps using the AppLocker tool**
+
 1.	Open the Local Security Policy snap-in (SecPol.msc).
     
 2.	In the left blade, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**.
@@ -371,7 +377,7 @@ In the **Required settings** blade you must pick your Windows Information Protec
 ### Manage the WIP protection mode for your enterprise data
 After you've added the apps you want to protect with WIP, you'll need to apply a management and protection mode.
 
-We recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your allowed apps list. After you're done, you can change to your final enforcement policy, **Hide Overrides**.
+We recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your allowed apps list. After you're done, you can change to your final enforcement policy, **Block**.
 
 >[!NOTE]
 >For info about how to collect your audit log files, see [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md).
@@ -386,7 +392,7 @@ We recommend that you start with **Silent** or **Allow Overrides** while verifyi
 
     |Mode |Description |
     |-----|------------|
-    |Hide Overrides |WIP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise.|
+    |Block |WIP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise.|
     |Allow Overrides |WIP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log. For info about how to collect your audit log files, see [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md).|
     |Silent |WIP runs silently, logging inappropriate data sharing, without blocking anything that would’ve been prompted for employee interaction while in Allow Override mode. Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still stopped.|
     |Off (not recommended) |WIP is turned off and doesn't help to protect or audit your data.<br><br>After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that your previous decryption and policy info isn’t automatically reapplied if you turn WIP protection back on.|
@@ -444,7 +450,7 @@ There are no default locations included with WIP, you must add each of your netw
         <tr>
             <td>Cloud Resources</td>
             <td><strong>With proxy:</strong> contoso.sharepoint.com,contoso.internalproxy1.com|<br>contoso.visualstudio.com,contoso.internalproxy2.com<br><br><strong>Without proxy:</strong> contoso.sharepoint.com|contoso.visualstudio.com</td>
-            <td>Specify the cloud resources to be treated as corporate and protected by WIP.<br><br>For each cloud resource, you may also optionally specify a proxy server from your Internal proxy servers list to route traffic for this cloud resource. Be aware that all traffic routed through your Internal proxy servers is considered enterprise.<br><br>If you have multiple resources, you must separate them using the "|" delimiter. If you don’t use proxy servers, you must also include the "," delimiter just before the "|". For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;</code>.<br><br><strong>Important</strong><br>In some cases, such as when an app connects directly to a cloud resource through an IP address, Windows can’t tell whether it’s attempting to connect to an enterprise cloud resource or to a personal site. In this case, Windows blocks the connection by default. To stop Windows from automatically blocking these connections, you can add the <code>/&#42;AppCompat&#42;/</code> string to the setting. For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;|/&#42;AppCompat&#42;/</code>.<br><br>When using this string, we recommend that you also turn on [Azure Active Directory Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access), using the <strong>Domain joined or marked as compliant</strong> option, which blocks apps from accessing any enterprise cloud resources that are protected by conditional access.</td>
+            <td>Specify the cloud resources to be treated as corporate and protected by WIP.<br><br>For each cloud resource, you may also optionally specify a proxy server from your Internal proxy servers list to route traffic for this cloud resource. Be aware that all traffic routed through your Internal proxy servers is considered enterprise.<br><br>If you have multiple resources, you must separate them using the "|" delimiter. If you don’t use proxy servers, you must also include the "," delimiter just before the "|". For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;</code>.<br><br><strong>Important</strong><br>In some cases, such as when an app connects directly to a cloud resource through an IP address, Windows can’t tell whether it’s attempting to connect to an enterprise cloud resource or to a personal site. In this case, Windows blocks the connection by default. To stop Windows from automatically blocking these connections, you can add the <code>/&#42;AppCompat&#42;/</code> string to the setting. For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;|/&#42;AppCompat&#42;/</code>.<br><br>When using this string, we recommend that you also turn on [Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access), using the <strong>Domain joined or marked as compliant</strong> option, which blocks apps from accessing any enterprise cloud resources that are protected by conditional access.</td>
         </tr>
         <tr>
             <td>Network domain names</td>
@@ -549,14 +555,17 @@ After you've decided where your protected apps can access enterprise data on you
     - **MDM discovery URL.** Lets the **Windows Settings** > **Accounts** > **Access work or school** sign-in offer an **Upgrade to MDM** link. Additionally, this lets you switch to another MDM provider, so that Microsoft Intune can manage MAM, while the new MDM provider manages the MDM devices. By default, this is specified to use Microsoft Intune.
 
 #### Choose to set up Azure Rights Management with WIP
-WIP can integrate with Microsoft Azure Rights Management to enable secure sharing of files by using removable drives such as USB drives. For more info about Azure Rights Management, see [Microsoft Azure Rights Management](https://products.office.com/en-us/business/microsoft-azure-rights-management). To integrate Azure Rights Management with WIP, you must already have Azure Rights Management set up.
+WIP can integrate with Microsoft Azure Rights Management to enable secure sharing of files by using removable drives such as USB drives. For more info about Azure Rights Management, see [Microsoft Azure Rights Management](https://products.office.com/business/microsoft-azure-rights-management). To integrate Azure Rights Management with WIP, you must already have Azure Rights Management set up.
 
 To configure WIP to use Azure Rights Management, you must set the **AllowAzureRMSForEDP** MDM setting to **1** in Microsoft Intune. This setting tells WIP to encrypt files copied to removable drives with Azure Rights Management, so they can be shared amongst your employees on computers running at least Windows 10, version 1703.
 
 Optionally, if you don’t want everyone in your organization to be able to share your enterprise data, you can set the **RMSTemplateIDForEDP** MDM setting to the **TemplateID** of the Azure Rights Management template used to encrypt the data. You must make sure to mark the template with the **EditRightsData** option. 
 
+>[!IMPORTANT]
+>Curly braces -- {} -- are required around the RMS Template ID.
+
 >[!NOTE]
->For more info about setting the **AllowAzureRMSForEDP** and the **RMSTemplateIDForEDP** MDM settings, see the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterprisedataprotection-csp) topic. For more info about setting up and using a custom template, see [Configuring custom templates for the Azure Rights Management service](https://docs.microsoft.com/en-us/information-protection/deploy-use/configure-custom-templates) topic.
+>For more info about setting the **AllowAzureRMSForEDP** and the **RMSTemplateIDForEDP** MDM settings, see the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterprisedataprotection-csp) topic. For more info about setting up and using a custom template, see [Configuring custom templates for the Azure Rights Management service](https://docs.microsoft.com/information-protection/deploy-use/configure-custom-templates) topic.
 
 ### Choose whether to use and configure Windows Hello for Business
 You can turn on Windows Hello for Business, letting your employees use it as a sign-in method for their devices.
@@ -639,11 +648,11 @@ After you’ve created your policy, you'll need to deploy it to your employees. 
 
 ## Related topics
 
-- [Implement server-side support for mobile application management on Windows](https://docs.microsoft.com/en-us/windows/client-management/mdm/implement-server-side-mobile-application-management) 
+- [Implement server-side support for mobile application management on Windows](https://docs.microsoft.com/windows/client-management/mdm/implement-server-side-mobile-application-management) 
 
 - [Microsoft Intune - Mobile Application Management (MAM) standalone blog post](https://blogs.technet.microsoft.com/cbernier/2016/01/05/microsoft-intune-mobile-application-management-mam-standalone/)
 
-- [MAM-supported apps](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)
+- [MAM-supported apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)
 
 - [General guidance and best practices for Windows Information Protection (WIP)](guidance-and-best-practices-wip.md)
 

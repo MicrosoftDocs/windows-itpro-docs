@@ -6,7 +6,7 @@ ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: MariciaAlforque
 ms.date: 09/05/2017
 ---
 
@@ -610,7 +610,7 @@ Authorization:Bearer <Azure AD User Token Inserted here>
 Additional claims may be present in the Azure AD token, such as:
 
 -   User - user currently logged in
--   Device compliance - value set the the MDM service into Azure
+-   Device compliance - value set the MDM service into Azure
 -   Device ID - identifies the device that is checking in
 -   Tenant ID
 
@@ -683,6 +683,8 @@ For a sample that illustrates how an MDM can obtain an access token using OAuth 
 ### Use Azure AD Graph API
 
 The following sample REST API call illustrates how an MDM can use the Azure AD Graph API to report compliance status of a device currently being managed by it.
+
+> **Note**  This is only applicable for approved MDM apps on Windows 10 devices.
 
 ``` syntax
 Sample Graph API Request: 

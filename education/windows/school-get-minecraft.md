@@ -5,12 +5,14 @@ keywords: Minecraft, Education Edition, IT admins, acquire
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: trudyha
 searchScope:
   - Store
 ms.author: trudyha
 ms.date: 1/5/2018
+ms.technology: Windows
+ms.topic: conceptual
 ---
 
 # For IT administrators - get Minecraft: Education Edition

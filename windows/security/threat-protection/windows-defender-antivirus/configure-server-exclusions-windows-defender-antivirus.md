@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 07/27/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 05/17/2018
 ---
 
 # Configure exclusions in Windows Defender AV on Windows Server
@@ -55,15 +55,16 @@ In Windows Server 2016 the predefined exclusions delivered by definition updates
 > [!WARNING]
 > Opting out of automatic exclusions may adversely impact performance, or result in data corruption. The exclusions that are delivered automatically are optimized for Windows Server 2016 roles.
 
+> [!NOTE]
+> This setting is only supported on Windows Server 2016. While this setting exists in Windows 10, it doesn't have an effect on exclusions.
+
 You can disable the auto-exclusions lists with Group Policy, PowerShell cmdlets, and WMI.
 
 **Use Group Policy to disable the auto-exclusions list on Windows Server 2016:**
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
-
-4.  Click **Policies** then **Administrative templates**.
+3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
 5.  Expand the tree to **Windows components > Windows Defender Antivirus > Exclusions**.
 
@@ -89,9 +90,6 @@ DisableAutoExclusions
 
 See the following for more information and allowed parameters:
 - [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
-
-
-
 
 
 ## List of automatic exclusions

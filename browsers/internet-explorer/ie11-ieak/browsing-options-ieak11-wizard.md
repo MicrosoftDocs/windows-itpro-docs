@@ -1,8 +1,8 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Browsing Options page in the IEAK 11 Customization Wizard to manage items in the Favorites, Favorites Bar, and Feeds section.
-author: eross-msft
+author: shortpatti
 ms.prod: ie111
 ms.assetid: d6bd71ba-5df3-4b8c-8bb5-dcbc50fd974e
 title: Use the Browsing Options page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)

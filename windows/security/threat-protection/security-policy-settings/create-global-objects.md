@@ -76,6 +76,16 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
+The **Create global objects** user right is required for a user account to create global objects in Remote Desktop sessions. Users can still create session-specfic objects without being assigned this user right. Assigning this right can be a security risk.
+
+By default, members of the **Administrators** group, the System account, and services that are started by the Service Control Manager are assigned the **Create global objects** user right. Users who are added to the **Remote Desktop Users** group also have this user right. 
+
+### Countermeasure
+
+When non-administrators need to access a server using Remote Desktop, add the users to the **Remote Desktop Users** group rather than assining them this user right.
+
+### Vulnerability
+
 >**Caution:**  A user account that is given this user right has complete control over the system, and it can lead to the system being compromised. We highly recommend that you do not assign this right to any user accounts.
  
 Windows examines a user's access token to determine the level of the user's privileges. Access tokens are built when users log on to the local device or connect to a remote device over a network. When you revoke a privilege, the change is immediately recorded, but the change is not reflected in the user's access token until the next time the user logs on or connects. Users with the ability to create or modify tokens can change the level of access for any currently logged on account. They could escalate their privileges or create a denial-of-service (DoS) condition.

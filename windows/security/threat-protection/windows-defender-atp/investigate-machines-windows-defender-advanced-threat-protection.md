@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
-ms.date: 04/24/2018
+ms.localizationpriority: medium
+ms.date: 08/01/2018
 ---
 
 # Investigate machines in the Windows Defender ATP Machines list
@@ -164,12 +164,22 @@ You can add tags on machines using the following ways:
 ### Add machine tags by setting a registry key value
 Add tags on machines which can be used as a filter in Machines list view. You can limit the machines in the list by selecting the Tag filter on the Machines list.
 
+>[!NOTE]
+> Applicable only on the following machines:
+>- Windows 10, version 1709 or later
+>- Windows Server, version 1803 or later
+>- Windows Server 2016
+>- Windows Server 2012 R2 
+
 Machines with similar tags can be handy when you need to apply contextual action on a specific list of machines. 
 
 Use the following registry key entry to add a tag on a machine:
 
 -	Registry key: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`
 -	Registry key value (string): Group
+
+>[!NOTE]
+>The device tag is part of the machine information report that’s generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new machine information report. 
 
 
 ### Add machine tags using the portal

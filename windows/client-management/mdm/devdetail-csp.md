@@ -6,11 +6,14 @@ ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
-ms.date: 08/25/2017
+author: MariciaAlforque
+ms.date: 07/11/2018
 ---
 
 # DevDetail CSP
+
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The DevDetail configuration service provider handles the management object which provides device-specific parameters to the OMA DM server. These device parameters are not sent from the client to the server automatically, but can be queried by servers using OMA DM commands.
 
@@ -140,7 +143,12 @@ The following diagram shows the DevDetail configuration service provider managem
 <a href="" id="ext-microsoft-totalram"></a>**Ext/Microsoft/TotalRAM**  
 <p style="margin-left: 20px">Added in Windows 10, version 1511. Integer that specifies the total available memory in MB on the device (may be less than total physical memory).
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
+
+<a href="" id="ext-microsoft-smbiosserialnumber"></a>**Ext/Microsoft/SMBIOSSerialNumber**  
+Added in Windows 10, next major version. SMBIOS Serial Number of the device.
+
+Value type is string. Supported operation is Get.
 
 <a href="" id="ext-wlanmacaddress"></a>**Ext/WLANMACAddress**  
 <p style="margin-left: 20px">The MAC address of the active WLAN connection, as a 12-digit hexadecimal number.

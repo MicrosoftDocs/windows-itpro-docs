@@ -5,8 +5,8 @@ ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
-ms.date: 03/12/2018
+author: MariciaAlforque
+ms.date: 08/09/2018
 ---
 
 # Policy CSP - Security
@@ -46,6 +46,9 @@ ms.date: 03/12/2018
     <a href="#security-preventautomaticdeviceencryptionforazureadjoineddevices">Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices</a>
   </dd>
   <dd>
+    <a href="#security-recoveryenvironmentauthentication">Security/RecoveryEnvironmentAuthentication</a>
+  </dd>
+  <dd>
     <a href="#security-requiredeviceencryption">Security/RequireDeviceEncryption</a>
   </dd>
   <dd>
@@ -76,7 +79,7 @@ ms.date: 03/12/2018
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -176,7 +179,7 @@ The following list shows the supported values:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -232,7 +235,7 @@ The following list shows the supported values:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -282,7 +285,7 @@ The following list shows the supported values:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -395,7 +398,7 @@ The following list shows the supported values:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
@@ -451,7 +454,7 @@ The following list shows the supported values:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -491,7 +494,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="security-requiredeviceencryption"></a>**Security/RequireDeviceEncryption**  
+<a href="" id="security-recoveryenvironmentauthentication"></a>**Security/RecoveryEnvironmentAuthentication**  
 
 <!--SupportedSKUs-->
 <table>
@@ -506,6 +509,87 @@ The following list shows the supported values:
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 10, next major version. This policy controls the Admin Authentication requirement in RecoveryEnvironment.
+
+Supported values:  
+-  0 - Default: Keep using default(current) behavior
+-  1 - RequireAuthentication: Admin Authentication is always required for components in RecoveryEnvironment
+-  2 - NoRequireAuthentication: Admin Authentication is not required for components in RecoveryEnvironment
+
+<!--/Description-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+**Validation procedure**
+
+The validation requires a check whether Refresh ("Keep my files") and Reset ("Remove everything") requires admin authentication in WinRE.
+The process of starting Push Button Reset (PBR) in WinRE:
+
+1. Open a cmd as Administrator, run command "reagentc /boottore" and restart the OS to boot to WinRE.
+1. OS should boot to the blue screen of WinRE UI, go through TroubleShoot -> Reset this PC, it should show two options: "Keep my files" and "Remove everything".
+
+If the MDM policy is set to "Default" (0) or does not exist, the admin authentication flow should work as default behavior:  
+
+1. Start PBR in WinRE, choose "Keep my files", it should pop up admin authentication.
+1. Click "<-" (right arrow) button and choose "Remove everything", it should not pop up admin authentication and just go to PBR options.
+
+If the MDM policy is set to "RequireAuthentication" (1)
+
+1. Start PBR in WinRE, choose "Keep my files", it should pop up admin authentication.
+1. Click "<-" (right arrow) button and choose "Remove everything", it should also pop up admin authentication.
+
+If the MDM policy is set to "NoRequireAuthentication" (2)
+
+1. Start PBR in WinRE, choose "Keep my files", it should not pop up admin authentication.
+1. Go through PBR options and click "cancel" at final confirmation page, wait unit the UI is back.
+1. Click "TroubleShoot" -> "Reset this PC" again, choose "Remove everything", it should not pop up admin authentication neither.
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="security-requiredeviceencryption"></a>**Security/RequireDeviceEncryption**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -563,7 +647,7 @@ The following list shows the supported values:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -613,7 +697,7 @@ The following list shows the supported values:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -663,34 +747,9 @@ Footnote:
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
+-   5 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
 
-<!--StartEAS-->
-## <a href="" id="eas"></a>Security policies that can be set using Exchange Active Sync (EAS)  
 
--   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
-<!--EndEAS-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Security policies supported by Windows Holographic for Business  
-
--   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
-<!--EndHoloLens-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>Security policies supported by IoT Core  
-
--   [Security/AllowAddProvisioningPackage](#security-allowaddprovisioningpackage)  
--   [Security/AllowRemoveProvisioningPackage](#security-allowremoveprovisioningpackage)  
--   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
--   [Security/RequireProvisioningPackageSignature](#security-requireprovisioningpackagesignature)  
-<!--EndIoTCore-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>Security policies supported by Microsoft Surface Hub  
-
--   [Security/RequireProvisioningPackageSignature](#security-requireprovisioningpackagesignature)  
--   [Security/RequireRetrieveHealthCertificateOnBoot](#security-requireretrievehealthcertificateonboot)  
-<!--EndSurfaceHub-->
 

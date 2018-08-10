@@ -5,10 +5,10 @@ ms.assetid: 2de86c55-ced9-4078-b280-35e0329aea9c
 keywords: deploy, script
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-author: mtniehaus
+author: greg-lindsay
 ms.date: 07/27/2017
 ---
 

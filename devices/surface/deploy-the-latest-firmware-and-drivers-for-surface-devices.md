@@ -3,7 +3,7 @@ title: Download the latest firmware and drivers for Surface devices (Surface)
 description: This article provides a list of the available downloads for Surface devices and links to download the drivers and firmware for your device.
 ms.assetid: 7662BF68-8BF7-43F7-81F5-3580A770294A
 keywords: update Surface, newest, latest, download, firmware, driver, tablet, hardware, device
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
@@ -11,6 +11,7 @@ ms.sitesec: library
 author: brecords
 ms.date: 12/07/2017
 ms.author: jdecker
+ms.topic: article
 ---
 
 # Download the latest firmware and drivers for Surface devices

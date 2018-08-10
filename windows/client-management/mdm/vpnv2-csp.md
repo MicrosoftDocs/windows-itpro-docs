@@ -6,7 +6,7 @@ ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: MariciaAlforque
 ms.date: 11/01/2017
 ---
 
@@ -255,7 +255,14 @@ An optional flag to enable Always On mode. This will automatically connect the V
 
 > **Note**  Always On only works for the active profile. The first profile provisioned that can be auto triggered will automatically be set as active.
 
- 
+Preserving user Always On preference
+
+Windows has a feature to preserve a user’s AlwaysOn preference.  In the event that a user manually unchecks the “Connect    automatically” checkbox, Windows will remember this user preference for this profile name by adding the profile name to the value AutoTriggerDisabledProfilesList.  
+Should a management tool remove/add the same profile name back and set AlwaysOn to true, Windows will not check the box if the profile name exists in the below registry value in order to preserve user preference.
+Key: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasMan\Config
+Value: AutoTriggerDisabledProfilesList
+Type: REG_MULTI_SZ
+
 
 Valid values:
 

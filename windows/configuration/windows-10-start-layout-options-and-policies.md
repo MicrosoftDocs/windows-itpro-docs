@@ -7,8 +7,10 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
-ms.localizationpriority: high
-ms.date: 10/31/2017
+ms.author: jdecker
+ms.topic: article
+ms.localizationpriority: medium
+ms.date: 06/19/2018
 ---
 
 # Manage Windows 10 Start and taskbar layout
@@ -27,7 +29,9 @@ Organizations might want to deploy a customized Start and taskbar configuration 
 >
 >Start and taskbar configuration can be applied to devices running Windows 10 Pro, version 1703.
 >
->Using the layout modification XML to configure Start is not supported with roaming user profiles. For more information, see [Deploy Roaming User Profiles](https://technet.microsoft.com/library/jj649079.aspx).
+>For information on using the layout modification XML to configure Start with roaming user profiles, see [Deploy Roaming User Profiles](https://docs.microsoft.com/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#step-7-optionally-specify-a-start-layout-for-windows-10-pcs).
+>
+>Using CopyProfile for Start menu customization in Windows 10 isn't supported. For more information [Customize the Default User Profile by Using CopyProfile](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/customize-the-default-user-profile-by-using-copyprofile)
 
 
 
@@ -47,7 +51,7 @@ The following table lists the different parts of Start and any applicable policy
 | User tile | MDM: **Start/HideUserTile**</br>**Start/HideSwitchAccount**</br>**Start/HideSignOut**</br>**Start/HideLock**</br>**Start/HideChangeAccountSettings**</br></br>Group Policy: **Remove Logoff on the Start menu** | none  |
 | Most used | MDM: **Start/HideFrequentlyUsedApps**</br></br>Group Policy: **Remove frequent programs from the Start menu** | **Settings** &gt; **Personalization** &gt; **Start** &gt; **Show most used apps** |
 | Suggestions</br>-and-</br>Dynamically inserted app tile | MDM: **Allow Windows Consumer Features**</br></br>Group Policy: **Computer Configuration\Administrative Templates\Windows Components\Cloud Content\Turn off Microsoft consumer experiences**</br></br>**Note:** This policy also enables or disables notifications for a user's Microsoft account and app tiles from Microsoft dynamically inserted in the default Start menu. | **Settings** &gt; **Personalization** &gt; **Start** &gt; **Occasionally show suggestions in Start** |
-| Recently added | MDM: **Start/HideRecentlyAddedApps** | **Settings** &gt; **Personalization** &gt; **Start** &gt; **Show recently added apps** |
+| Recently added | MDM: **Start/HideRecentlyAddedApps**<br>Group Policy: **Computer configuration**\\**Administrative Template**\\**Start Menu and Taskbar**\\**Remove "Recently Added" list from Start Menu** (for Windows 10, version 1803) | **Settings** &gt; **Personalization** &gt; **Start** &gt; **Show recently added apps** |
 | Pinned folders | MDM: **AllowPinnedFolder** | **Settings** &gt; **Personalization** &gt; **Start** &gt; **Choose which folders appear on Start** |
 | Power | MDM: **Start/HidePowerButton**</br>**Start/HideHibernate**</br>**Start/HideRestart**</br>**Start/HideShutDown**</br>**Start/HideSleep**</br></br>Group Policy: **Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands** | none |
 | Start layout | MDM: **Start layout**</br>**ImportEdgeAssets**</br></br>Group Policy: **Prevent users from customizing their Start screen**</br></br>**Note:** When a full Start screen layout is imported with Group Policy or MDM, the users cannot pin, unpin, or uninstall apps from the Start screen. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to the Start screen. When a partial Start screen layout is imported, users cannot change the tile groups applied by the partial layout, but can modify other tile groups and create their own.</br></br>**Start layout** policy can be used to pin apps to the taskbar based on an XML File that you provide. Users will be able to change the order of pinned apps, unpin apps, and pin additional apps to the taskbar. | none |
@@ -106,6 +110,16 @@ The new taskbar layout for upgrades to Windows 10, version 1607 or later, will a
 * New apps specified in updated layout file are pinned to right of user's pinned apps.
   
 [Learn how to configure Windows 10 taskbar](configure-windows-10-taskbar.md).
+
+## Start layout configuration errors
+
+If your Start layout customization is not applied as expected, open **Event Viewer** and navigate to **Applications and Services Log** > **Microsoft** > **Windows** > **ShellCommon-StartLayoutPopulation** > **Operational**, and check for one of the following events:
+
+- **Event 22** is logged when the xml is malformed, meaning the specified file simply isn’t valid xml.   This can occur if the file has extra spaces or unexpected characters, or if the file is not saved in the UTF8 format.
+- **Event 64**  is logged when the xml is valid, but has unexpected values. This can happen when the desired configuration is not understood or source is not found such as a missing or misspelled .lnk.
+
+ 
+
 
 ## Related topics
 

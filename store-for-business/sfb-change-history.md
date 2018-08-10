@@ -7,8 +7,9 @@ ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
+ms.topic: conceptual
 ms.date: 4/26/2018
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Change history for Microsoft Store for Business and Microsoft Store for Education  
@@ -49,7 +50,7 @@ ms.localizationpriority: high
 
 | New or changed topic | Description |
 | --- | --- |
-| [Manage Windows device deployment with Windows AutoPilot Deployment](add-profile-to-devices.md) | Update. Add profile settings with supported build info.  |
+| [Manage Windows device deployment with Windows Autopilot Deployment](add-profile-to-devices.md) | Update. Add profile settings with supported build info.  |
 | [What's New in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md) | Update |
 
 ## September 2017
@@ -78,7 +79,7 @@ ms.localizationpriority: high
  
 | New or changed topic | Description |
 | -------------------- | ----------- |
-| [Manage Windows device deployment with Windows AutoPilot Deployment](add-profile-to-devices.md) | New. Information about Windows AutoPilot Deployment Program and how it is used in Microsoft Store for Business and Education.  |
+| [Manage Windows device deployment with Windows Autopilot Deployment](add-profile-to-devices.md) | New. Information about Windows Autopilot Deployment Program and how it is used in Microsoft Store for Business and Education.  |
 | [Microsoft Store for Business and Education overview - supported markets](https://docs.microsoft.com/en-us/microsoft-store/windows-store-for-business-overview#supported-markets) | Updates for added market support. |
  
 

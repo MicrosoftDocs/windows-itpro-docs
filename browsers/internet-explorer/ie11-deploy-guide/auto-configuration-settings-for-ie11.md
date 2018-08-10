@@ -1,9 +1,9 @@
 ---
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: networking
 description: Auto configuration settings for Internet Explorer 11
-author: eross-msft
+author: shortpatti
 ms.prod: ie11
 ms.assetid: 90308d59-45b9-4639-ab1b-497e5ba19023
 title: Auto configuration settings for Internet Explorer 11 (Internet Explorer 11 for IT Pros)

@@ -5,12 +5,21 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
-ms.date: 02/12/2018
+ms.author: jdecker
+ms.topic: article
+ms.date: 05/15/2018
 ---
 
 # Change history for Surface documentation
 
 This topic lists new and updated topics in the Surface documentation library.
+
+## May 2018
+
+|New or changed topic | Description |
+| --- | --- |
+|[Microsoft Surface Data Eraser](microsoft-surface-data-eraser.md) | Added version 3.2.58.0 information  |
+|[Surface device compatibility with Windows 10 Long-Term Servicing Channel (LTSC)](surface-device-compatibility-with-windows-10-ltsc.md) | Removed note box around content  |
 
 ## February 2018
 
@@ -23,7 +32,7 @@ This topic lists new and updated topics in the Surface documentation library.
 
 |New or changed topic | Description |
 | --- | --- |
-|[Windows AutoPilot and Surface devices](windows-autopilot-and-surface-devices.md) | New article  |
+|[Windows Autopilot and Surface devices](windows-autopilot-and-surface-devices.md) | New article  |
 |[Microsoft Surface Data Eraser](microsoft-surface-data-eraser.md) | Added version 3.2.45.0 information  |
 |[Surface device compatibility with Windows 10 Long-Term Servicing Channel (LTSC)](surface-device-compatibility-with-windows-10-ltsc.md) | Updated Current Branch (CB) or Current Branch for Business (CBB) servicing options with Semi-Annual Channel (SAC) information  |
 |[Wake On LAN for Surface devices](wake-on-lan-for-surface-devices.md) | Added Surface Book 2, Surface Laptop, Surface Pro, Surface Pro with LTE Advanced, and Surface Pro information  |

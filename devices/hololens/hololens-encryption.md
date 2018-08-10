@@ -1,11 +1,12 @@
 ---
 title: Enable Bitlocker encryption for HoloLens (HoloLens)
 description: Enable Bitlocker device encryption to protect files stored on the HoloLens  
-ms.prod: w10
+ms.prod: hololens
 ms.mktglfcycl: manage
-ms.pagetype: hololens, devices
 ms.sitesec: library
 author: jdeckerms
+ms.author: jdecker
+ms.topic: article
 ms.localizationpriority: medium
 ms.date: 12/20/2017
 ---
@@ -55,7 +56,7 @@ Provisioning packages are files created by the Windows Configuration Designer to
 
 ### Create a provisioning package that upgrades the Windows Holographic edition
 
-1.	[Create a provisioning package for HoloLens.](hololens-provisioning.md#create-a-provisioning-package-for-hololens)
+1.	[Create a provisioning package for HoloLens.](hololens-provisioning.md)
 
 2.  Go to **Runtime settings** > **Policies** > **Security**, and select **RequireDeviceEncryption**.
 

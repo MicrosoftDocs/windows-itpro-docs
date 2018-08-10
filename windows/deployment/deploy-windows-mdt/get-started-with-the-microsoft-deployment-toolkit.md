@@ -5,10 +5,10 @@ ms.assetid: a256442c-be47-4bb9-a105-c831f58ce3ee
 keywords: deploy, image, feature, install, tools
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-author: mtniehaus
+author: greg-lindsay
 ms.date: 07/27/2017
 ---
 

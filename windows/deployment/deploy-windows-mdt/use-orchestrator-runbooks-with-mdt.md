@@ -5,10 +5,10 @@ ms.assetid: 68302780-1f6f-4a9c-9407-b14371fdce3f
 keywords: web services, database
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-author: mtniehaus
+author: greg-lindsay
 ms.date: 07/27/2017
 ---
 
@@ -168,7 +168,6 @@ Figure 32. The ready-made task sequence.
 [Simulate a Windows10 deployment in a test environment](simulate-a-windows-10-deployment-in-a-test-environment.md)
 
 [Use the MDT database to stage Windows 10 deployment information](use-the-mdt-database-to-stage-windows-10-deployment-information.md)
-
 
 [Assign applications using roles in MDT](assign-applications-using-roles-in-mdt.md)
 

@@ -9,8 +9,9 @@ ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 09/27/2017
+ms.date: 07/30/2018
 ms.author: jdecker
+ms.topic: article
 ---
 
 # Troubleshoot multi-app kiosk
@@ -30,7 +31,7 @@ For example:
 
 **Troubleshooting steps**
 
-1. [Verify that the provisioning package is applied successfully](lock-down-windows-10-to-specific-apps.md#validate-provisioning).
+1. [Verify that the provisioning package is applied successfully](kiosk-validate.md).
 2. Verify that the account (config) is mapped to a profile in the configuration XML file.
 3. Verify that the configuration XML file is authored and formatted correctly. Correct any configuration errors, then create and apply a new provisioning package. Sign out and sign in again to check the new configuration.
 

@@ -2,13 +2,15 @@
 title: Step by step Surface Deployment Accelerator (Surface)
 description: This article shows you how to install Microsoft Surface Deployment Accelerator (SDA), configure a deployment share for the deployment of Windows to Surface devices, and perform a deployment to Surface devices.
 ms.assetid: A944FB9C-4D81-4868-AFF6-B9D1F5CF1032
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: deploy, configure
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: miladCA
+ms.author: jdecker
+ms.topic: article
 ms.date: 07/27/2017
 ---
 

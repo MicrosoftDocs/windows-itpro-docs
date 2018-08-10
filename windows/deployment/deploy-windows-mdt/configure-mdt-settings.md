@@ -5,10 +5,10 @@ ms.assetid: d3e1280c-3d1b-4fad-8ac4-b65dc711f122
 keywords: customize, customization, deploy, features, tools
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-author: mtniehaus
+author: greg-lindsay
 ms.date: 07/27/2017
 ---
 

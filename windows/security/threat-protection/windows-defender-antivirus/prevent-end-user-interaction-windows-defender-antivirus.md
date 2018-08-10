@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: iaanw
-ms.author: iawilt
-ms.date: 08/26/2017
+author: andreabichsel
+ms.author: v-anbic
+ms.date: 04/30/2018
 ---
 
 # Prevent users from seeing or interacting with the Windows Defender AV user interface
@@ -56,7 +56,7 @@ In earlier versions of Windows 10, the setting will hide the Windows Defender cl
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration**.
 
-4.  Click **Policies** then **Administrative templates**.
+4.  Click **Administrative templates**.
 
 5.  Expand the tree to **Windows components > Windows Defender Antivirus > Client interface**.
 
@@ -76,7 +76,7 @@ You can prevent users from pausing scans. This can be helpful to ensure schedule
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration**.
 
-4.  Click **Policies** then **Administrative templates**.
+4.  Click **Administrative templates**.
 
 5.  Expand the tree to **Windows components > Windows Defender Antivirus > Scan**.
 

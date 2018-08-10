@@ -6,14 +6,67 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: jdeckerms
-ms.date: 04/13/2018
+ms.author: jdecker
+ms.topic: article
+ms.date: 08/03/2018
 ---
 
 # Change history for Configure Windows 10
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
+
+## August 2018
+
+New or changed topic | Description
+--- | ---
+[Guidelines for choosing an app for assigned access (kiosk mode)](guidelines-for-assigned-access-app.md) | Added instructions for specifying multiple URLs in configuration settings for Kiosk Browser.
+
+## July 2018
+
+New or changed topic | Description 
+--- | ---
+[Configure kiosks and child topics](kiosk-methods.md) | Reorganized the information for configuring kiosks into new topics, and moved [Set up shared or guest PC with Windows 10](set-up-shared-or-guest-pc.md).
+
+## June 2018
+
+New or changed topic | Description
+--- | ---
+[Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](setup-kiosk-digital-signage.md) and [Create a Windows 10 kiosk that runs multiple apps](lock-down-windows-10-to-specific-apps.md)  | Updated instructions for using Microsoft Intune to configure a kiosk. Added instructions for showing local accounts on the sign-in screen for domain-joined devices.
+[Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md) | Added new Group Policy to remove "Recently added" list from Start menu.
+|[Add image for secondary tiles](start-secondary-tiles.md#using-mdm) | Updated mobile device management (MDM) instructions. |
+
+## May 2018
+
+New or changed topic | Description
+--- | ---
+[Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md) | Added note that Wi-Fi Sense is no longer available.
+Topics about Windows 10 diagnostic data | Moved to [Windows Privacy](https://docs.microsoft.com/windows/privacy/).
+[Guidelines for choosing an app for assigned access (kiosk mode)](guidelines-for-assigned-access-app.md) | Added information on Kiosk Browser settings and URL filtering.
+[Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md) | Added details of event log entries to check for when customization is not applied as expected.
+[Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](setup-kiosk-digital-signage.md) | Added Active Directory domain account to provisioning method.
+
+## RELEASE: Windows 10, version 1803
+
+The topics in this library have been updated for Windows 10, version 1803. The following new topics have been added:
+
+- Windows Configuration Designer setting: [AccountManagement](wcd/wcd-accountmanagement.md)
+- Windows Configuration Designer setting: [RcsPresence](wcd/wcd-rcspresence.md)
+
+The following topics were moved into the [Privacy](/windows/privacy/index) library:
+
+- [Configure Windows diagnostic data in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization)
+- [Diagnostic Data Viewer Overview](/windows/privacy/diagnostic-data-viewer-overview)
+- [Windows 10, version 1803 basic level Windows diagnostic events and fields](/windows/privacy/basic-level-windows-diagnostic-events-and-fields)
+- [Windows 10, version 1709 basic level Windows diagnostic events and fields](/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1709)
+- [Windows 10, version 1703 basic level Windows diagnostic events and fields](/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1703)
+- [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)
+- [Windows 10, version 1709 diagnostic data for the Full level](/windows/privacy/windows-diagnostic-data)
+- [Windows 10, version 1703 diagnostic data for the Full level](/windows/privacy/windows-diagnostic-data-1703)
+- [Beginning your General Data Protection Regulation (GDPR) journey for Windows 10](/windows/privacy/gdpr-win10-whitepaper)
+- [Manage connections from Windows operating system components to Microsoft services](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
+- [Manage Windows 10 connection endpoints](/windows/privacy/manage-windows-endpoints-version-1709)
 
 ## April 2018
 
@@ -27,7 +80,7 @@ New or changed topic | Description
 New or changed topic | Description
 --- | ---
 [Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md) and [Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md) | Added events and fields that were added in the March update.
-Set up a kiosk on Windows 10 Pro, Enterprise, or Education | Renamed it [Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education](setup-kiosk-digital-signage.md) and reorganized the information to make the choices clearer.
+Set up a kiosk on Windows 10 Pro, Enterprise, or Education | Renamed it **Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education** and reorganized the information to make the choices clearer.
 
 
 ## February 2018

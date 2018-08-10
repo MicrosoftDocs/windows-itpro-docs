@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
@@ -19,7 +19,7 @@ ms.date: 12/08/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 Get a URI that allows downloading of an investigation package.
 
@@ -28,7 +28,7 @@ Users need to have Security administrator or Global admin directory roles.
 
 ## HTTP request
 ```
-POST /testwdatppreview/machineactions/{id}/getPackageUri
+GET /testwdatppreview/machineactions/{id}/getPackageUri
 ```
 
 ## Request headers
@@ -48,7 +48,7 @@ If successful, this method returns 200, Ok response code with object that holds 
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/testwdatppreview/machineactions/7327b54fd718525c
 
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 

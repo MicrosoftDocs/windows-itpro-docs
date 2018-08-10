@@ -3,10 +3,19 @@
 ## [BitLocker](bitlocker\bitlocker-overview.md)
 ### [Overview of BitLocker Device Encryption in Windows 10](bitlocker\bitlocker-device-encryption-overview-windows-10.md)
 ### [BitLocker frequently asked questions (FAQ)](bitlocker\bitlocker-frequently-asked-questions.md)
+#### [Overview and requirements](bitlocker\bitlocker-overview-and-requirements-faq.md)
+#### [Upgrading](bitlocker\bitlocker-upgrading-faq.md)
+#### [Deployment and administration](bitlocker\bitlocker-deployment-and-administration-faq.md)
+#### [Key management](bitlocker\bitlocker-key-management-faq.md)
+#### [BitLocker To Go](bitlocker\bitlocker-to-go-faq.md)
+#### [Active Directory Domain Services](bitlocker\bitlocker-and-adds-faq.md)
+#### [Security](bitlocker\bitlocker-security-faq.md)
+#### [BitLocker Network Unlock](bitlocker\bitlocker-network-unlock-faq.md)
+#### [General](bitlocker\bitlocker-using-with-other-programs-faq.md)
 ### [Prepare your organization for BitLocker: Planning and policies](bitlocker\prepare-your-organization-for-bitlocker-planning-and-policies.md)
 ### [BitLocker basic deployment](bitlocker\bitlocker-basic-deployment.md)
 ### [BitLocker: How to deploy on Windows Server 2012 and later](bitlocker\bitlocker-how-to-deploy-on-windows-server.md)
-### [BitLocker: Management recommendations for enterprises](bitlocker\bitlocker-management-for-enterprises.md)
+### [BitLocker: Management for enterprises](bitlocker\bitlocker-management-for-enterprises.md)
 ### [BitLocker: How to enable Network Unlock](bitlocker\bitlocker-how-to-enable-network-unlock.md)
 ### [BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker](bitlocker\bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md)
 ### [BitLocker: Use BitLocker Recovery Password Viewer](bitlocker\bitlocker-use-bitlocker-recovery-password-viewer.md)
@@ -19,6 +28,7 @@
 #### [Choose the Right BitLocker Countermeasure](bitlocker\choose-the-right-bitlocker-countermeasure.md)
 ### [Protecting cluster shared volumes and storage area networks with BitLocker](bitlocker\protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md)
 
+## [Encrypted Hard Drive](encrypted-hard-drive.md)
 
 ## [Protect your enterprise data using Windows Information Protection (WIP)](windows-information-protection\protect-enterprise-data-using-wip.md)
 ### [Create a Windows Information Protection (WIP) policy using Microsoft Intune](windows-information-protection\overview-create-wip-policy.md)
@@ -42,4 +52,22 @@
 #### [Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)](windows-information-protection\app-behavior-with-wip.md)
 #### [Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)](windows-information-protection\recommended-network-definitions-for-wip.md)
 #### [Using Outlook Web Access with Windows Information Protection (WIP)](windows-information-protection\using-owa-with-wip.md)
+### [Fine-tune Windows Information Protection (WIP) with WIP Learning](windows-information-protection\wip-learning.md)
+
+## [Secure the Windows 10 boot process](secure-the-windows-10-boot-process.md)
+
+## [Trusted Platform Module](tpm/trusted-platform-module-top-node.md)
+### [Trusted Platform Module Overview](tpm/trusted-platform-module-overview.md)
+### [TPM fundamentals](tpm/tpm-fundamentals.md)
+### [How Windows 10 uses the TPM](tpm/how-windows-uses-the-tpm.md)
+### [TPM Group Policy settings](tpm/trusted-platform-module-services-group-policy-settings.md)
+### [Back up the TPM recovery information to AD DS](tpm/backup-tpm-recovery-information-to-ad-ds.md)
+### [Manage TPM commands](tpm/manage-tpm-commands.md)
+### [Manage TPM lockout](tpm/manage-tpm-lockout.md)
+### [Change the TPM owner password](tpm/change-the-tpm-owner-password.md)
+### [View status, clear, or troubleshoot the TPM](tpm/initialize-and-configure-ownership-of-the-tpm.md)
+### [Understanding PCR banks on TPM 2.0 devices](tpm/switch-pcr-banks-on-tpm-2-0-devices.md)
+### [TPM recommendations](tpm/tpm-recommendations.md)
+
+
 

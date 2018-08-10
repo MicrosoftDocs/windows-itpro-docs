@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 04/24/2018
 ---
 
@@ -23,7 +23,7 @@ ms.date: 04/24/2018
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationefileuploads-abovefoldlink)
 
@@ -35,15 +35,13 @@ For example, if you add *exe* and *bat* as file or attachment extension names, t
 
 ## Add file extension names and attachment extension names.
 
-1. In the navigation pane, select **Settings** > **Rules** > **Automation file uploads**. 
+1. In the navigation pane, select **Settings** > **Automation file uploads**. 
 
 2. Toggle the content analysis setting between **On** and **Off**.
 
 3. Configure the following extension names and separate extension names with a comma:
    - **File extension names** -  Suspicious files except email attachments will be submitted for additional inspection
-   - **Attachment extension names** - Suspicious email attachments with these extension names will be submitted for additional inspection
-
-
+  
 
 ## Related topics
 - [Manage automation allowed/blocked lists](manage-automation-allowed-blocked-list-windows-defender-advanced-threat-protection.md)

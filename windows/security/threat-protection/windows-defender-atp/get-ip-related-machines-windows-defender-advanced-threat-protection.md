@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 12/08/2017
 ---
 
@@ -42,7 +42,7 @@ If IP or machines do not exist - 404 Not Found.
 
 ## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
@@ -51,7 +51,7 @@ GET https://graph.microsoft.com/testwdatppreview/ips/{id}/machines
 Content-type: application/json
 ```
 
-Response
+**Response**
 
 Here is an example of the response.
 
