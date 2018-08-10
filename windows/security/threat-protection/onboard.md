@@ -1,5 +1,5 @@
 ---
-title: 
+title: Configure Windows Defender ATP 
 description: 
 keywords: 
 search.product: eADQiWindows 10XVcnh
@@ -13,9 +13,11 @@ ms.localizationpriority: high
 ms.date: 07/01/2018
 ---
 
-# Onboard and configure machines to Windows Defender ATP
+# Configure Windows Defender ATP 
 
-Onboard to the sensor, configure the indivual capabilities in Windows Defender ATP. 
+Configure all the Windows Defender ATP capabilities to get the best security protection for your organization. 
+
 
 ## In this section 
-table for configure to the parent nodes for each 
+[Onboard machines to Windows Defender Security Center](windows-defender-atp/onboard-configure-windows-defender-advanced-threat-protection) | Onboard machines to the platform.
+[Configure attack surface reduction capabilities](configure-attack-surface-reduction.md)
