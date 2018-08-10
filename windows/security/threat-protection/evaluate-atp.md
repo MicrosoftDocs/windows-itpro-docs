@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/12/2018
+ms.date: 08/10/2018
 ---
 
 # Evaluate Windows Defender ATP capabilities
@@ -27,7 +27,7 @@ These capabilities help prevent attacks and exploitations from infecting your or
 - [Evaluate network protection](windows-defender-exploit-guard/evaluate-exploit-protection.md)
 - [Evaluate controlled folder access](evaluate-controlled-folder-access.md)
 
-## Evaluate Next Gen Protection
+## Evaluate next gen Protection
 Next gen protections help detect and block the latest threats.
 - [Evaluate antivirus](windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
@@ -42,7 +42,7 @@ Next gen protections help detect and block the latest threats.
 - [Learn about improving your security posture](windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection.md)
 
 ## Advanced hunting
-[Learn how to build your own advanced hunting queries](windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection.md)
+- [Learn how to build your own advanced hunting queries](windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection.md)
 
 ## See Also
 [Get started with Windows Defender Advanced Threat Protection](get-started.md)
