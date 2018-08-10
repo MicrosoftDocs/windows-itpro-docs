@@ -16,6 +16,30 @@ ms.date: 09/12/2018
 ## Get started with Windows Defender Advanced Threat Protection
 Learn about the minimum requirements and initial steps you need to take to get started with Windows Defender ATP.
 
+The following capabilities are available across multiple products that make up the Windows Defender ATP platform. 
+
+**Attack surface reduction**<br>
+The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
+
+**Next generation protection**<br>
+To further reinforce the security perimeter of your network, Windows Defender ATP uses next generation protection designed to catch all types of emerging threats.
+
+**Endpoint protection and response**<br>
+Endpoint protection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
+
+**Auto investigation and remediation**<br>
+In conjunction with being able to quickly respond to advanced attacks, Windows Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
+
+**Security posture**<br>
+Windows Defender ATP provides a security posture capability to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security state of your network.
+
+**Advanced hunting**<br>
+
+
+**Management and APIs**<br>
+
+
+**Microsoft threat protection**<br>
 
 ## In this section 
 
