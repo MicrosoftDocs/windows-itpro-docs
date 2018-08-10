@@ -14,17 +14,15 @@
 #### [Assign user access to the portal](windows-defender-atp\assign-portal-access-windows-defender-advanced-threat-protection.md)
 
 #### [Evaluate Windows Defender ATP](evaluate-atp.md)
-##### [ASR](windows-defender-exploit-guard\evaluate-windows-defender-exploit-guard.md)
-###### [Hardware-based isolation](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
-###### [Application control](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
-###### [Exploit protection](windows-defender-exploit-guard\evaluate-exploit-protection.md)
-###### [Network Protection](windows-defender-exploit-guard\evaluate-network-protection.md)
-###### [Controlled folder access](windows-defender-exploit-guard\evaluate-controlled-folder-access.md)
-###### [ASR controls](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
-###### [Auditing mode](windows-defender-exploit-guard\audit-windows-defender-exploit-guard.md)
-###### [Network firewall](windows-firewall\evaluating-windows-firewall-with-advanced-security-design-examples.md)
-##### [Next gen protection](windows-defender-antivirus\evaluate-windows-defender-antivirus.md)
 
+##### [Hardware-based isolation](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
+##### [Application control](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
+##### [Exploit protection](windows-defender-exploit-guard\evaluate-exploit-protection.md)
+##### [Network Protection](windows-defender-exploit-guard\evaluate-network-protection.md)
+##### [Controlled folder access](windows-defender-exploit-guard\evaluate-controlled-folder-access.md)
+##### [Next gen protection](windows-defender-antivirus\evaluate-windows-defender-antivirus.md)
+##### [ASR controls](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
+##### [Network firewall](windows-firewall\evaluating-windows-firewall-with-advanced-security-design-examples.md)
 
 
 ### [Onboard and configure machines to Windows Defender ATP](onboard.md)
