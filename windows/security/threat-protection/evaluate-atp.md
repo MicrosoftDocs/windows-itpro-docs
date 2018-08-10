@@ -23,7 +23,6 @@ You can also evaluate the different security capabilities in Windows Defender AT
 ## Evaluate attack surface reduction
 These capabilities help prevent attacks and exploitations from infecting your organization.
 - [Evaluate attack surface reduction](./windows-defender-exploit-guard/evaluate-attack-surface-reduction.md)
-
 - [Evaluate exploit protection](windows-defender-exploit-guard/evaluate-exploit-protection.md)
 - [Evaluate network protection](windows-defender-exploit-guard/evaluate-exploit-protection.md)
 - [Evaluate controlled folder access](evaluate-controlled-folder-access.md)
