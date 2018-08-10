@@ -21,3 +21,4 @@ Configure all the Windows Defender ATP capabilities to get the best security pro
 ## In this section 
 [Onboard machines to Windows Defender Security Center](windows-defender-atp/onboard-configure-windows-defender-advanced-threat-protection) | Onboard machines to the platform.
 [Configure attack surface reduction capabilities](configure-attack-surface-reduction.md)
+[Configure next generation protection]()
