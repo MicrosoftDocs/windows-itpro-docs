@@ -58,48 +58,40 @@
 
 
 
+#### [Configure next generation protection](windows-defender-antivirus\windows-defender-antivirus-in-windows-10.md)
+##### [Next generation protection in Windows Server 2016](windows-defender-antivirus\windows-defender-antivirus-on-windows-server-2016.md)
+##### [Antivirus compatibility](windows-defender-antivirus\windows-defender-antivirus-compatibility.md)
+###### [Use limited periodic scanning](windows-defender-antivirus\limited-periodic-scanning-windows-defender-antivirus.md)
+##### [Deploy next generation protection](windows-defender-antivirus\deploy-manage-report-windows-defender-antivirus.md)
+###### [Deploy and enable next generation protection](windows-defender-antivirus\deploy-windows-defender-antivirus.md)
+###### [Deployment guide for VDI environments](windows-defender-antivirus\deployment-vdi-windows-defender-antivirus.md)
+##### [Report on next generation protection](windows-defender-antivirus\report-monitor-windows-defender-antivirus.md)
+###### [Troubleshoot antivirus reporting in Update Compliance](windows-defender-antivirus\troubleshoot-reporting.md)
+##### [Manage updates and apply baselines](windows-defender-antivirus\manage-updates-baselines-windows-defender-antivirus.md)
+###### [Manage protection and definition updates](windows-defender-antivirus\manage-protection-updates-windows-defender-antivirus.md)
+###### [Manage when protection updates should be downloaded and applied](windows-defender-antivirus\manage-protection-update-schedule-windows-defender-antivirus.md)
+###### [Manage updates for endpoints that are out of date](windows-defender-antivirus\manage-outdated-endpoints-windows-defender-antivirus.md)
+###### [Manage event-based forced updates](windows-defender-antivirus\manage-event-based-updates-windows-defender-antivirus.md)
+###### [Manage updates for mobile devices and VMs](windows-defender-antivirus\manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
 
-
-
-
-
-
-
-#### [Configure Next generation protection](windows-defender-antivirus\windows-defender-antivirus-in-windows-10.md)
-##### [Windows Defender AV on Windows Server 2016](windows-defender-antivirus\windows-defender-antivirus-on-windows-server-2016.md)
-##### [Windows Defender Antivirus compatibility](windows-defender-antivirus\windows-defender-antivirus-compatibility.md)
-###### [Use limited periodic scanning in Windows Defender AV](windows-defender-antivirus\limited-periodic-scanning-windows-defender-antivirus.md)
-
-##### [Deploy, manage updates, and report on Windows Defender Antivirus](windows-defender-antivirus\deploy-manage-report-windows-defender-antivirus.md)
-###### [Deploy and enable Windows Defender Antivirus](windows-defender-antivirus\deploy-windows-defender-antivirus.md)
-####### [Deployment guide for VDI environments](windows-defender-antivirus\deployment-vdi-windows-defender-antivirus.md)
-###### [Report on Windows Defender Antivirus protection](windows-defender-antivirus\report-monitor-windows-defender-antivirus.md)
-####### [Troubleshoot Windows Defender Antivirus reporting in Update Compliance](windows-defender-antivirus\troubleshoot-reporting.md)
-###### [Manage updates and apply baselines](windows-defender-antivirus\manage-updates-baselines-windows-defender-antivirus.md)
-####### [Manage protection and definition updates](windows-defender-antivirus\manage-protection-updates-windows-defender-antivirus.md)
-####### [Manage when protection updates should be downloaded and applied](windows-defender-antivirus\manage-protection-update-schedule-windows-defender-antivirus.md)
-####### [Manage updates for endpoints that are out of date](windows-defender-antivirus\manage-outdated-endpoints-windows-defender-antivirus.md)
-####### [Manage event-based forced updates](windows-defender-antivirus\manage-event-based-updates-windows-defender-antivirus.md)
-####### [Manage updates for mobile devices and VMs](windows-defender-antivirus\manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
-
-##### [Customize, initiate, and review the results of scans and remediation](windows-defender-antivirus\customize-run-review-remediate-scans-windows-defender-antivirus.md)
-###### [Configure and validate exclusions in Windows Defender AV scans](windows-defender-antivirus\configure-exclusions-windows-defender-antivirus.md)
+##### [Manage scans and remediation](windows-defender-antivirus\customize-run-review-remediate-scans-windows-defender-antivirus.md)
+###### [Configure and validate exclusions in antivirus scans](windows-defender-antivirus\configure-exclusions-windows-defender-antivirus.md)
 ####### [Configure and validate exclusions based on file name, extension, and folder location](windows-defender-antivirus\configure-extension-file-exclusions-windows-defender-antivirus.md)
 ####### [Configure and validate exclusions for files opened by processes](windows-defender-antivirus\configure-process-opened-file-exclusions-windows-defender-antivirus.md)
-####### [Configure exclusions in Windows Defender AV on Windows Server 2016](windows-defender-antivirus\configure-server-exclusions-windows-defender-antivirus.md)
-###### [Configure scanning options in Windows Defender AV](windows-defender-antivirus\configure-advanced-scan-types-windows-defender-antivirus.md)
+####### [Configure antivirus exclusions on Windows Server 2016](windows-defender-antivirus\configure-server-exclusions-windows-defender-antivirus.md)
+###### [Configure scanning options](windows-defender-antivirus\configure-advanced-scan-types-windows-defender-antivirus.md)
 ###### [Configure remediation for scans](windows-defender-antivirus\configure-remediation-windows-defender-antivirus.md)
 ###### [Configure scheduled scans](windows-defender-antivirus\scheduled-catch-up-scans-windows-defender-antivirus.md)
 ###### [Configure and run scans](windows-defender-antivirus\run-scan-windows-defender-antivirus.md)
 ###### [Review scan results](windows-defender-antivirus\review-scan-results-windows-defender-antivirus.md)
-###### [Run and review the results of a Windows Defender Offline scan](windows-defender-antivirus\windows-defender-offline.md)
-##### [Restore quarantined files in Windows Defender AV](windows-defender-antivirus\restore-quarantined-files-windows-defender-antivirus.md)
-##### [Manage Windows Defender AV in your business](windows-defender-antivirus\configuration-management-reference-windows-defender-antivirus.md)
-###### [Use Group Policy settings to configure and manage Windows Defender AV](windows-defender-antivirus\use-group-policy-windows-defender-antivirus.md)
-###### [Use System Center Configuration Manager and Microsoft Intune to configure and manage Windows Defender AV](windows-defender-antivirus\use-intune-config-manager-windows-defender-antivirus.md)
-###### [Use PowerShell cmdlets to configure and manage Windows Defender AV](windows-defender-antivirus\use-powershell-cmdlets-windows-defender-antivirus.md)
-###### [Use Windows Management Instrumentation (WMI) to configure and manage Windows Defender AV](windows-defender-antivirus\use-wmi-windows-defender-antivirus.md)
-###### [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender AV](windows-defender-antivirus\command-line-arguments-windows-defender-antivirus.md)
+###### [Run and review the results of an offline scan](windows-defender-antivirus\windows-defender-offline.md)
+###### [Restore quarantined files](windows-defender-antivirus\restore-quarantined-files-windows-defender-antivirus.md)
+##### [Manage next generation protection in your business](windows-defender-antivirus\configuration-management-reference-windows-defender-antivirus.md)
+###### [Use Microsoft Intune and System Center Configuration Manager to manage next generation protection](windows-defender-antivirus\use-intune-config-manager-windows-defender-antivirus.md)
+###### [Use Group Policy settings to manage next generation protection](windows-defender-antivirus\use-group-policy-windows-defender-antivirus.md)
+###### [Use PowerShell cmdlets to manage next generation protection](windows-defender-antivirus\use-powershell-cmdlets-windows-defender-antivirus.md)
+###### [Use Windows Management Instrumentation (WMI) to manage next generation protection](windows-defender-antivirus\use-wmi-windows-defender-antivirus.md)
+###### [Use the mpcmdrun.exe command line tool to manage next generation protection](windows-defender-antivirus\command-line-arguments-windows-defender-antivirus.md)
 
 
 

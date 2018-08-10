@@ -16,15 +16,6 @@ ms.date: 04/30/2018
 
 # Run and review the results of a Windows Defender Offline scan
 
-
-**Applies to:**
-
-- Windows 10, version 1607 and later
-
-**Audience**
-
-- Enterprise security administrators
-
 **Manageability available with**
 
 - Group Policy

@@ -16,22 +16,15 @@ ms.date: 04/30/2018
 
 # Manage the schedule for when protection updates should be downloaded and applied
 
-**Applies to**
--   Windows 10
-
-**Audience**
-
-- Network administrators
-
 **Manageability available with**
 
-- Group Policy
 - System Center Configuration Manager
+- Group Policy
 - PowerShell cmdlets
 - Windows Management Instruction (WMI)
 
 
-Windows Defender AV lets you determine when it should look for and download updates.
+Next generation protection lets you determine when it should look for and download updates.
 
 You can schedule updates for your endpoints by: 
 
@@ -40,24 +33,6 @@ You can schedule updates for your endpoints by:
 - Specifying the time to check for protection updates
 
 You can also randomize the times when each endpoint checks and downloads protection updates. See the [Schedule scans](scheduled-catch-up-scans-windows-defender-antivirus.md) topic for more information.
-
-**Use Group Policy to schedule protection updates:**
-
-> [!IMPORTANT]
-> By default, Windows Defender AV will check for an update 15 minutes before the time of any scheduled scans. Enabling these settings will override that default.
-
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
-
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
-
-4.  Click **Policies** then **Administrative templates**.
-
-5.  Expand the tree to **Windows components > Windows Defender Antivirus > Signature Updates** and configure the following settings:
-
-    1.  Double-click the **Specify the interval to check for definition updates** setting and set the option to **Enabled**. Enter the number of hours between updates. Click **OK**.
-    2. Double-click the **Specify the day of the week to check for definition updates** setting and set the option to **Enabled**. Enter the day of the week to check for updates. Click **OK**.
-    3. Double-click the **Specify the time to check for definition updates** setting and set the option to **Enabled**. Enter the time when updates should be checked. The time is based on the local time of the endpoint. Click **OK**.
-
 
 **Use Configuration Manager to schedule protection updates:**
 
@@ -72,6 +47,24 @@ You can also randomize the times when each endpoint checks and downloads protect
 4. To check and download updates on a continual interval, Set **Check for Endpoint Protection definitions at a specific interval...** to the number of hours that should occur between updates.
 
 5.	[Deploy the updated policy as usual](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
+
+**Use Group Policy to schedule protection updates:**
+
+> [!IMPORTANT]
+> By default, antivirus will check for an update 15 minutes before the time of any scheduled scans. Enabling these settings will override that default.
+
+1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+
+3.  In the **Group Policy Management Editor** go to **Computer configuration**.
+
+4.  Click **Policies** then **Administrative templates**.
+
+5.  Expand the tree to **Windows components > Windows Defender Antivirus > Signature Updates** and configure the following settings:
+
+    1.  Double-click the **Specify the interval to check for definition updates** setting and set the option to **Enabled**. Enter the number of hours between updates. Click **OK**.
+    2. Double-click the **Specify the day of the week to check for definition updates** setting and set the option to **Enabled**. Enter the day of the week to check for updates. Click **OK**.
+    3. Double-click the **Specify the time to check for definition updates** setting and set the option to **Enabled**. Enter the time when updates should be checked. The time is based on the local time of the endpoint. Click **OK**.
+
 
 
 **Use PowerShell cmdlets to schedule protection updates:**
@@ -102,13 +95,12 @@ See the following for more information and allowed parameters:
 
 ## Related topics
 
-- [Deploy, manage updates, and report on Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
-- [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
-- [Manage Windows Defender Antivirus protection and definition updates](manage-protection-updates-windows-defender-antivirus.md)
+- [Deploy next generation protection](deploy-manage-report-windows-defender-antivirus.md)
+- [Manage next generation protection updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
 - [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
 - [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
 - [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Next generation protection in Windows 10](windows-defender-antivirus-in-windows-10.md)
 
 
 

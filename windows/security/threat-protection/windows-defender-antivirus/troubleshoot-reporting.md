@@ -14,24 +14,16 @@ ms.author: v-anbic
 ms.date: 04/30/2018
 ---
 
-# Troubleshoot Windows Defender Antivirus reporting in Update Compliance
+# Troubleshoot antivirus reporting in Update Compliance
 
-**Applies to:**
-
-- Windows 10
-
-**Audience**
-
-- IT administrators
-
-When you use [Windows Analytics Update Compliance to obtain reporting into the protection status of machines or endpoints](/windows/deployment/update/update-compliance-using#wdav-assessment) in your network that are using Windows Defender Antivirus, you may encounter problems or issues.
+When you use [Windows Analytics Update Compliance to obtain reporting into the protection status of machines or endpoints](/windows/deployment/update/update-compliance-using#wdav-assessment) in your network that are using next generation protection, you may encounter problems or issues.
 
 Typically, the most common indicators of a problem are:
 - You only see a small number or subset of all the devices you were expecting to see
 - You do not see any devices at all
 - The reports and information you do see is outdated (older than a few days)
 
-For common error codes and event IDs related to the Windows Defender AV service that are not related to Update Compliance, see the [Windows Defender Antivirus events](troubleshoot-windows-defender-antivirus.md) topic. 
+For common error codes and event IDs related to the antivirus service that are not related to Update Compliance, see [Antivirus events](troubleshoot-windows-defender-antivirus.md). 
 
 There are three steps to troubleshooting these problems:
 
@@ -40,12 +32,12 @@ There are three steps to troubleshooting these problems:
 3. Submit support logs
 
 >[!IMPORTANT]
->It typically takes 3 days for devices to start appearing in Update Compliance
+>It typically takes 3 days for devices to start appearing in Update Compliance.
 
 
 ## Confirm pre-requisites
 
-In order for devices to properly show up in Update Compliance, you have to meet certain pre-requisites for both the Update Compliance service and for Windows Defender AV protection:
+In order for devices to properly show up in Update Compliance, you have to meet certain pre-requisites for both the Update Compliance service and for next generation protection:
 
 >[!div class="checklist"]
 >- Endpoints are using Windows Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Windows Defender AV to disable itself](windows-defender-antivirus-compatibility.md) and the endpoint will not be reported in Update Compliance.
@@ -66,5 +58,5 @@ If the above pre-requisites have all been met, you may need to proceed to the ne
 
 ## Related topics
 
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
-- [Deploy, manage updates, and report on Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
+- [Next generation protection in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Deploy next generation protection](deploy-manage-report-windows-defender-antivirus.md)
