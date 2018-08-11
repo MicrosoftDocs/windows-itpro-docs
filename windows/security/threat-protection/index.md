@@ -22,7 +22,7 @@ The following capabilities are available across multiple products that make up t
 <th style="text-align:left"><a href="#asr">Attack surface reduction</a></th>
 <th style="text-align:left"><a href="#ngp">Next generation protection</a></th>
 <th style="text-align:left"><a href="#edr">Endpoint detection and response</a></th>
-<th style="text-align:left"><a href="#ai">Auto investigation</ai></th>
+<th style="text-align:left"><a href="#ai">Auto investigation</a></th>
 <th style="text-align:left"><a href="#sp">Security posture</a></th>
 <th style="text-align:left"><a href="#ah">Advanced hunting</a></th>
 </tr>
