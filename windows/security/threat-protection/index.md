@@ -17,14 +17,13 @@ Windows Defender Advanced Threat Protection (ATP) is a unified platform for prev
 The following capabilities are available across multiple products that make up the Windows Defender ATP platform. 
 
 <table border=10>
-<thead>
 <tr>
-<th style="text-align:left"><a href="#asr">Attack surface reduction</a></th>
-<th style="text-align:left"><a href="#ngp">Next generation protection</a></th>
-<th style="text-align:left"><a href="#edr">Endpoint detection and response</a></th>
-<th style="text-align:left"><a href="#ai">Auto investigation</ai></th>
-<th style="text-align:left"><a href="#sp">Security posture</a></th>
-<th style="text-align:left"><a href="#ah">Advanced hunting</a></th>
+<td><a href="#asr"><b>Attack surface reduction</b></a></td>
+<td><a href="#ngp"><b>Next generation protection</b></a></td>
+<td><a href="#edr"><b>Endpoint detection and response</b></a></td>
+<td><a href="#ai"><b>Auto investigation</b></a></td>
+<td><a href="#sp"><b>Security posture</b></a></td>
+<td><a href="#ah"><b>Advanced hunting</b></a></td>
 </tr>
 <tr>
 <td colspan=6 bgcolor="#A9A9A9" style="text-align:center"><b>Management and APIs</b></td>
@@ -32,7 +31,6 @@ The following capabilities are available across multiple products that make up t
 <tr>
 <td colspan=6 bgcolor="#A9A9A9" style="text-align:center"><b>Microsoft threat protection</b></td>
 </tr>
-</thead>
 </table>
 
 **Attack surface reduction**<br>
